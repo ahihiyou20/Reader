@@ -1,0 +1,130 @@
+{
+  "slug": "working-hours",
+  "status": "published",
+  "publishAt": "2026-09-23T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "work",
+    "working hours",
+    "economic history",
+    "leisure",
+    "productivity"
+  ],
+  "title": {
+    "en": "Are we working more than ever? The data says no",
+    "vi": "Ta có đang làm việc nhiều hơn bao giờ hết? Dữ liệu nói không"
+  },
+  "hook": {
+    "en": "Busy calendars, late emails and talk of burnout can make it feel as if we are all working harder than any generation before us. But the history of working hours tells a very different story. In the 19th century, people in today's rich countries worked [p:60 to 70 hours a week]. What changed, and why does it matter?",
+    "vi": "Lịch kín mít, email đêm khuya và chuyện kiệt sức có thể khiến ta cảm thấy mình đang làm việc vất vả hơn mọi thế hệ trước. Nhưng lịch sử giờ làm việc kể một câu chuyện rất khác. Vào thế kỷ 19, người lao động ở những nước nay đã giàu làm việc [p:60 đến 70 giờ mỗi tuần]. Điều gì đã thay đổi, và vì sao điều đó quan trọng?"
+  },
+  "sections": [
+    {
+      "heading_en": "A gruelling starting point",
+      "heading_vi": "Một điểm xuất phát khắc nghiệt",
+      "body_en": "Economic historians Michael Huberman and Chris Minns gathered evidence from historical records and national accounts to estimate working hours since 1870 {huberman-2007}. In that year, workers in most early-industrialised countries worked [p:more than 3,000 hours] a year. That is the same as a gruelling 60 to 70 hours a week, for 50 weeks a year. There were no long weekends and few holidays. For most of these workers, life outside the factory, workshop or field was squeezed into Sundays and the few hours left between work and sleep {owid-hours}.",
+      "body_vi": "Hai nhà sử học kinh tế Michael Huberman và Chris Minns đã tập hợp bằng chứng từ hồ sơ lịch sử và tài khoản quốc gia để ước tính giờ làm việc từ năm 1870 {huberman-2007}. Năm đó, người lao động ở phần lớn các nước công nghiệp hoá sớm làm việc [p:hơn 3.000 giờ] mỗi năm. Con số này tương đương 60 đến 70 giờ mỗi tuần đầy cực nhọc, trong 50 tuần mỗi năm. Không có những kỳ nghỉ cuối tuần dài và hầu như không có ngày lễ. Với phần lớn những người lao động ấy, cuộc sống ngoài nhà máy, xưởng thợ hay đồng ruộng bị dồn vào ngày Chủ nhật và vài giờ ít ỏi còn lại giữa làm việc và giấc ngủ {owid-hours}."
+    },
+    {
+      "heading_en": "Cut roughly in half",
+      "heading_vi": "Giảm đi khoảng một nửa",
+      "body_en": "Since then, those extreme hours have been [g:roughly cut in half]. In Germany, annual working hours fell by nearly 60%, from more than 3,000 in the late 19th century to fewer than 1,500 in the 2010s. In the UK, the drop was around 40%. Put another way, workers before this change worked as many hours between January and July as a typical worker does today in an entire year. The decline came in stages: slowly from 1870 to 1913, then sharply between the two World Wars, and then more gradually after a rise in hours during and just after the Second World War.",
+      "body_vi": "Từ đó đến nay, những giờ làm việc cực độ ấy đã [g:giảm đi khoảng một nửa]. Ở Đức, số giờ làm việc mỗi năm giảm gần 60%, từ hơn 3.000 giờ cuối thế kỷ 19 xuống dưới 1.500 giờ trong thập niên 2010. Ở Anh, mức giảm khoảng 40%. Nói cách khác, trước sự thay đổi này, người lao động làm từ tháng Một đến tháng Bảy đã bằng số giờ một người lao động điển hình hôm nay làm trong cả năm. Sự sụt giảm diễn ra theo từng chặng: chậm từ 1870 đến 1913, rồi mạnh giữa hai cuộc Thế chiến, rồi chậm dần sau khi giờ làm tăng lên trong và ngay sau Thế chiến thứ hai."
+    },
+    {
+      "heading_en": "From six days to five",
+      "heading_vi": "Từ sáu ngày xuống năm ngày",
+      "body_en": "Where did the time come from? Partly from shorter days. Economist Dora Costa found that in the 1880s the typical American worker laboured [y:10 hours a day, 6 days a week] {costa-2000}. By 1920, the working day had fallen to 8 hours, still for 6 days. By 1940, the typical schedule was 8 hours a day, 5 days a week. For decades, workers had one regular day off, usually Sunday; around the 1940s, two days off became normal. After that, further reductions came mostly from more vacations, holidays, sick days, personal leave and earlier retirement.",
+      "body_vi": "Thời gian ấy đến từ đâu? Một phần từ ngày làm việc ngắn hơn. Nhà kinh tế học Dora Costa phát hiện rằng vào thập niên 1880, người lao động Mỹ điển hình làm [y:10 giờ mỗi ngày, 6 ngày mỗi tuần] {costa-2000}. Đến năm 1920, ngày làm việc giảm xuống 8 giờ, vẫn trong 6 ngày. Đến năm 1940, lịch làm việc điển hình là 8 giờ mỗi ngày, 5 ngày mỗi tuần. Trong nhiều thập kỷ, người lao động có một ngày nghỉ cố định, thường là Chủ nhật; khoảng những năm 1940, nghỉ hai ngày trở thành bình thường. Sau đó, mức giảm tiếp theo chủ yếu đến từ thêm kỳ nghỉ phép, ngày lễ, ngày nghỉ ốm, nghỉ việc riêng và nghỉ hưu sớm hơn."
+    },
+    {
+      "heading_en": "More holidays",
+      "heading_vi": "Nhiều ngày nghỉ hơn",
+      "body_en": "Holidays and vacations grew too. Across early-industrialised countries, the number of days off for vacations and national holidays rose steadily between 1870 and 2000. The **Netherlands** is a striking example: workers there went from about [y:4 days off] a year in 1870 to almost [g:38 days off] in 2000. What drove these changes? Researchers point to several factors, including rising **productivity**, which allowed workers to produce more in less time, and laws and agreements that limited working hours. Higher incomes also meant that many people could choose to trade some extra pay for more free time.",
+      "body_vi": "Số ngày lễ và kỳ nghỉ cũng tăng lên. Ở các nước công nghiệp hoá sớm, số ngày nghỉ phép và nghỉ lễ tăng đều đặn từ 1870 đến 2000. **Hà Lan** là một ví dụ nổi bật: người lao động ở đây từ chỗ có khoảng [y:4 ngày nghỉ] mỗi năm vào 1870 đã có gần [g:38 ngày nghỉ] vào năm 2000. Điều gì thúc đẩy những thay đổi này? Các nhà nghiên cứu chỉ ra nhiều yếu tố, gồm **năng suất** tăng, cho phép người lao động làm ra nhiều hơn trong thời gian ít hơn, cùng các luật lệ và thoả thuận giới hạn giờ làm. Thu nhập cao hơn cũng giúp nhiều người có thể đổi một phần tiền lương để lấy thêm thời gian rảnh."
+    },
+    {
+      "heading_en": "Not the same everywhere",
+      "heading_vi": "Không nơi nào giống nơi nào",
+      "body_en": "Since 1950, the picture has become more varied. In some countries, such as Germany, hours kept falling steeply. In others, such as the **United States**, the decline has [y:levelled off] in recent decades. Some countries show an upside-down U shape: in **South Korea**, hours rose sharply between 1950 and 1980 as the economy industrialised, then fell again from the mid-1980s. In **China**, hours actually rose in the 1990s and early 2000s before levelling off. And within countries, there are large differences between jobs, industries and income groups.",
+      "body_vi": "Từ năm 1950, bức tranh trở nên đa dạng hơn. Ở một số nước, như Đức, giờ làm tiếp tục giảm mạnh. Ở những nước khác, như **Hoa Kỳ**, đà giảm đã [y:chững lại] trong những thập kỷ gần đây. Một số nước có hình chữ U ngược: ở **Hàn Quốc**, giờ làm tăng vọt từ 1950 đến 1980 khi nền kinh tế công nghiệp hoá, rồi lại giảm từ giữa thập niên 1980. Ở **Trung Quốc**, giờ làm thậm chí tăng trong thập niên 1990 và đầu những năm 2000 trước khi chững lại. Và ngay trong mỗi nước, giữa các nghề, ngành và nhóm thu nhập cũng có khác biệt lớn."
+    },
+    {
+      "heading_en": "Can we trust the numbers?",
+      "heading_vi": "Có thể tin những con số này không?",
+      "body_en": "Measuring working hours is difficult, especially across centuries. Historical records and surveys have limits, so all of these estimates come with a [y:margin of error]. But the authors point out that the changes over time are far larger than the uncertainty at any single moment. Whatever the exact figures, the average worker in a rich country today really does work many fewer hours than the average worker 150 years ago. Our feeling of being busier than ever may say more about how work spills into our phones and evenings than about the total hours we work.",
+      "body_vi": "Đo giờ làm việc rất khó, nhất là khi trải dài qua nhiều thế kỷ. Hồ sơ lịch sử và khảo sát đều có giới hạn, nên mọi ước tính này đều đi kèm [y:sai số]. Nhưng các tác giả chỉ ra rằng những thay đổi theo thời gian lớn hơn nhiều so với độ bất định ở bất kỳ thời điểm nào. Dù con số chính xác là bao nhiêu, người lao động bình thường ở một nước giàu hôm nay thực sự làm ít giờ hơn nhiều so với người lao động bình thường 150 năm trước. Cảm giác bận rộn hơn bao giờ hết có lẽ nói lên nhiều hơn về việc công việc tràn vào điện thoại và buổi tối của ta, chứ không phải về tổng số giờ ta làm việc."
+    },
+    {
+      "heading_en": "Why time is part of progress",
+      "heading_vi": "Vì sao thời gian là một phần của tiến bộ",
+      "body_en": "Why does this matter? Economists usually measure progress by **output**: how much an economy produces. But as Diane Coyle and Leonard Nakamura argue, a fuller picture must also include how people are able to [g:use their time], since paid work is only one of many activities in a life. Hours freed from work become time for family, rest, learning and play. The progress is real, but uneven: huge inequalities remain within and between countries. The question for the future is how gains in productivity, including from new technologies, will be shared as time as well as money.",
+      "body_vi": "Vì sao điều này quan trọng? Các nhà kinh tế thường đo tiến bộ bằng **sản lượng**: một nền kinh tế làm ra được bao nhiêu. Nhưng như Diane Coyle và Leonard Nakamura lập luận, một bức tranh đầy đủ hơn còn phải tính đến việc con người có thể [g:sử dụng thời gian của mình] ra sao, vì công việc được trả lương chỉ là một trong nhiều hoạt động của đời người. Những giờ được giải phóng khỏi công việc trở thành thời gian cho gia đình, nghỉ ngơi, học tập và vui chơi. Tiến bộ là có thật, nhưng không đồng đều: bất bình đẳng lớn vẫn tồn tại trong và giữa các quốc gia. Câu hỏi cho tương lai là thành quả năng suất, kể cả từ công nghệ mới, sẽ được chia sẻ thế nào, dưới dạng thời gian chứ không chỉ tiền bạc."
+    }
+  ],
+  "keyPoint": {
+    "en": "Free time is like [p:a salary paid in hours]: it rose quietly for 150 years, so we barely notice it. When you feel overworked, ask *where your hours actually go* and deliberately protect the time that progress won for you.",
+    "vi": "Thời gian rảnh giống như [p:một khoản lương trả bằng giờ]: nó tăng âm thầm suốt 150 năm, nên ta hầu như không để ý. Khi thấy mình làm việc quá sức, hãy hỏi *giờ của bạn thực sự đi đâu* và chủ động bảo vệ khoảng thời gian mà tiến bộ đã giành về cho bạn."
+  },
+  "applySteps": {
+    "en": [
+      "Track how many hours you spend on paid work and work messages for one week.",
+      "Ask a grandparent how many days a week they worked at your age and how many holidays they had.",
+      "Choose one evening this week with no work messages at all and notice how it feels."
+    ],
+    "vi": [
+      "Ghi lại số giờ bạn dành cho công việc được trả lương và tin nhắn công việc trong một tuần.",
+      "Hỏi ông bà xem khi bằng tuổi bạn, họ làm việc mấy ngày một tuần và có bao nhiêu ngày nghỉ.",
+      "Chọn một buổi tối trong tuần này hoàn toàn không đọc tin nhắn công việc và để ý cảm giác của bạn."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-hours",
+      "label": "Our World in Data (2020)",
+      "url": "https://ourworldindata.org/working-more-than-ever"
+    },
+    {
+      "id": "huberman-2007",
+      "label": "Huberman & Minns (2007)",
+      "url": "https://doi.org/10.1016/j.eeh.2007.03.002"
+    },
+    {
+      "id": "costa-2000",
+      "label": "Costa (2000)",
+      "url": "https://doi.org/10.1086/209954"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/working-hours.webp",
+    "provider": "unsplash",
+    "author": "Vladimir Kudinov",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/KBX9XHk266s"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-are-we-working-more-than-ever",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Charlie Giattino",
+      "Esteban Ortiz-Ospina"
+    ],
+    "originalTitle": "Are we working more than ever?",
+    "originalUrl": "https://ourworldindata.org/working-more-than-ever",
+    "publisher": "Our World in Data",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "context added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAQBQCdASoQABwAPu1iqU2ppaOiMAgBMB2JZQC/P3gN0E5sLJteH9//O5OlVC+hq8sAAP7mJ3Smn64Lll2dMYYU4gn56KjenaCGTQgHSOUZiLSQ9iXDSirQdEhGcUWaMpDwK5eYyMH874Nlx8em5UiP6MMBsLkHMOL6Ae1+wHPwuCHFdQ7qNqA2gw5t1zdM6g4VTP94VRDfscOSYbofDcQhH0k1KdUOSEbr83qX/7SpsAAA",
+  "dominant": "#2b242b"
+}
