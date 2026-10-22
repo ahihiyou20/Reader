@@ -1,0 +1,134 @@
+{
+  "slug": "atomic-clocks",
+  "status": "published",
+  "publishAt": "2026-09-27T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "atomic clocks",
+    "time",
+    "physics",
+    "GPS",
+    "measurement"
+  ],
+  "title": {
+    "en": "How atomic clocks keep the world on time",
+    "vi": "Đồng hồ nguyên tử giữ nhịp cho thế giới như thế nào"
+  },
+  "hook": {
+    "en": "If you checked the time on your phone today, used GPS or sent a message, you relied on the steady beat of atoms. Atomic clocks are so precise that the best ones would not have gained or lost [p:a single second since the Big Bang]. How do scientists turn the tiniest building blocks of matter into the most accurate timekeepers ever made?",
+    "vi": "Nếu hôm nay bạn xem giờ trên điện thoại, dùng GPS hay gửi một tin nhắn, bạn đã dựa vào nhịp đập đều đặn của các nguyên tử. Đồng hồ nguyên tử chính xác đến mức những chiếc tốt nhất sẽ không nhanh hay chậm [p:dù chỉ một giây kể từ Vụ Nổ Lớn]. Các nhà khoa học đã biến những viên gạch nhỏ nhất của vật chất thành những cỗ máy đo thời gian chính xác nhất từng có như thế nào?"
+  },
+  "sections": [
+    {
+      "heading_en": "What every clock needs",
+      "heading_vi": "Mọi chiếc đồng hồ đều cần gì",
+      "body_en": "At its core, every clock has two parts: something that **oscillates**, ticking with a steady beat, and something that counts those beats and shows the time {nist-clocks}. For most of history, the oscillator was a human-made object: the swinging pendulum of a grandfather clock, or the vibrating quartz crystal in a wristwatch or laptop. But these have two problems. No two pendulums or crystals are exactly alike, so no two clocks tick exactly the same. And they [y:drift]: one tick is slightly different from the next, because temperature, wear and other conditions keep changing them.",
+      "body_vi": "Về cốt lõi, mọi chiếc đồng hồ đều có hai phần: một thứ **dao động**, tích tắc theo nhịp đều đặn, và một thứ đếm các nhịp ấy rồi hiển thị thời gian {nist-clocks}. Trong phần lớn lịch sử, bộ dao động là vật do con người chế tạo: quả lắc đung đưa của chiếc đồng hồ cây, hay tinh thể thạch anh rung trong đồng hồ đeo tay và máy tính xách tay. Nhưng chúng có hai vấn đề. Không có hai quả lắc hay hai tinh thể nào giống hệt nhau, nên không có hai chiếc đồng hồ nào chạy y như nhau. Và chúng [y:bị trôi]: nhịp này hơi khác nhịp sau, vì nhiệt độ, sự hao mòn và các điều kiện khác liên tục tác động lên chúng."
+    },
+    {
+      "heading_en": "Atoms make perfect ticks",
+      "heading_vi": "Nguyên tử tạo ra nhịp hoàn hảo",
+      "body_en": "Atoms solve both problems. They have no manufactured parts, they do not wear out or slow down, and [g:all atoms of a given type are identical]. A cesium atom in a lab in Colorado behaves exactly like one in Paris or Tokyo. Quantum physics tells us that atoms absorb and give off light only at specific frequencies, a bit like a guitar string that can only play certain notes. Light tuned to these atomic frequencies produces ticks billions of times more stable than any pendulum or crystal. NIST scientists even suggest that an advanced civilisation on another planet would probably measure time with atoms too.",
+      "body_vi": "Nguyên tử giải quyết cả hai vấn đề. Chúng không có bộ phận chế tạo nào, không hao mòn hay chạy chậm lại, và [g:mọi nguyên tử cùng loại đều giống hệt nhau]. Một nguyên tử xêzi trong phòng thí nghiệm ở Colorado hành xử y hệt một nguyên tử ở Paris hay Tokyo. Vật lý lượng tử cho biết nguyên tử chỉ hấp thụ và phát ra ánh sáng ở những tần số nhất định, hơi giống một dây đàn chỉ chơi được vài nốt nhất định. Ánh sáng được chỉnh đúng các tần số nguyên tử này tạo ra những nhịp ổn định hơn mọi quả lắc hay tinh thể hàng tỷ lần. Các nhà khoa học của NIST thậm chí cho rằng một nền văn minh tiên tiến ở hành tinh khác hẳn cũng đo thời gian bằng nguyên tử."
+    },
+    {
+      "heading_en": "Pushing a swing at the right moment",
+      "heading_vi": "Đẩy xích đu đúng lúc",
+      "body_en": "To build a clock, scientists first separate individual atoms from almost everything else, then bathe them in carefully tuned light. The key idea is **resonance**. Think of pushing a child on a swing. If you push each time the swing reaches its highest point, it goes [y:higher and higher], because your pushes match its natural rhythm. Push at random moments and it barely moves. Atoms are similar. When the light's frequency is close to the atom's own resonant frequency, the atom absorbs energy and jumps to a different internal energy state, often called a *quantum jump*.",
+      "body_vi": "Để chế tạo đồng hồ, các nhà khoa học trước hết tách từng nguyên tử khỏi gần như mọi thứ khác, rồi chiếu vào chúng thứ ánh sáng được tinh chỉnh cẩn thận. Ý tưởng then chốt là **cộng hưởng**. Hãy nghĩ tới việc đẩy một em bé trên xích đu. Nếu bạn đẩy mỗi khi xích đu lên điểm cao nhất, nó sẽ bay [y:ngày càng cao], vì cú đẩy khớp với nhịp tự nhiên của nó. Đẩy vào những lúc ngẫu nhiên thì nó hầu như không nhúc nhích. Nguyên tử cũng tương tự. Khi tần số ánh sáng gần với tần số cộng hưởng của chính nguyên tử, nguyên tử hấp thụ năng lượng và nhảy sang một trạng thái năng lượng bên trong khác, thường gọi là *bước nhảy lượng tử*."
+    },
+    {
+      "heading_en": "Counting 9,192,631,770 waves",
+      "heading_vi": "Đếm 9.192.631.770 con sóng",
+      "body_en": "So what actually ticks? The **light waves** themselves. Scientists slowly tune the light while measuring how many atoms make the quantum jump. When the largest number of atoms respond, the light has reached the resonant frequency. Then the clock counts the crests and troughs of that light and turns the count into seconds. For cesium, an atom often used in clocks, one second equals [p:9,192,631,770 cycles]. Since 1967, this has been the official definition of the second used around the world {bipm-second}. The second is no longer defined by the movement of the Earth, but by the behaviour of atoms.",
+      "body_vi": "Vậy thực ra thứ gì đang tích tắc? Chính là **sóng ánh sáng**. Các nhà khoa học chỉnh ánh sáng từ từ trong lúc đo xem bao nhiêu nguyên tử thực hiện bước nhảy lượng tử. Khi số nguyên tử phản ứng nhiều nhất, ánh sáng đã đạt tần số cộng hưởng. Sau đó, đồng hồ đếm các đỉnh và đáy của ánh sáng ấy và đổi số đếm thành giây. Với xêzi, loại nguyên tử thường dùng trong đồng hồ, một giây bằng [p:9.192.631.770 chu kỳ]. Từ năm 1967, đây là định nghĩa chính thức của giây được dùng trên toàn thế giới {bipm-second}. Giây không còn được định nghĩa bằng chuyển động của Trái Đất mà bằng hành vi của nguyên tử."
+    },
+    {
+      "heading_en": "From 1949 to the Big Bang test",
+      "heading_vi": "Từ năm 1949 đến phép thử Vụ Nổ Lớn",
+      "body_en": "Because atoms are perfect, an atomic clock is only as good as its lasers, electronics and other parts. The first atomic clock, built in 1949 at the US National Bureau of Standards, now NIST, was [y:hardly better] than the electronic clocks of the day. But atomic clocks have improved at an astonishing rate. Today's best clocks are billions of times more accurate than any other kind of clock. If one had been running since the Big Bang, about 13.8 billion years ago, it would now be off by [g:less than a second].",
+      "body_vi": "Vì nguyên tử là hoàn hảo, một chiếc đồng hồ nguyên tử chỉ tốt bằng tia laser, linh kiện điện tử và các bộ phận khác của nó. Chiếc đồng hồ nguyên tử đầu tiên, chế tạo năm 1949 tại Cục Tiêu chuẩn Quốc gia Hoa Kỳ, nay là NIST, [y:chẳng tốt hơn bao nhiêu] so với đồng hồ điện tử thời đó. Nhưng đồng hồ nguyên tử đã tiến bộ với tốc độ đáng kinh ngạc. Những chiếc tốt nhất hiện nay chính xác hơn mọi loại đồng hồ khác hàng tỷ lần. Nếu một chiếc như vậy đã chạy từ Vụ Nổ Lớn, khoảng 13,8 tỷ năm trước, đến nay nó sẽ lệch [g:chưa tới một giây]."
+    },
+    {
+      "heading_en": "Hidden in everyday life",
+      "heading_vi": "Ẩn mình trong đời sống hằng ngày",
+      "body_en": "Atomic time is everywhere, even if we never see it. Phone and internet networks are synchronised by it, and stock trades are stamped with it. **GPS** depends on it completely. Each GPS satellite carries atomic clocks and broadcasts the exact time; your phone works out where you are from how long those signals took to arrive. Because radio signals travel at the speed of light, an error of just one millionth of a second would put you about [p:300 metres] off. Without atomic clocks, the maps on our phones would quickly become useless.",
+      "body_vi": "Thời gian nguyên tử có mặt khắp nơi, dù ta chẳng bao giờ thấy nó. Mạng điện thoại và internet được đồng bộ bằng nó, và các giao dịch chứng khoán được đóng dấu thời gian bằng nó. **GPS** hoàn toàn phụ thuộc vào nó. Mỗi vệ tinh GPS mang theo đồng hồ nguyên tử và phát đi thời gian chính xác; điện thoại của bạn tính vị trí dựa trên thời gian các tín hiệu ấy cần để tới nơi. Vì sóng vô tuyến truyền đi với tốc độ ánh sáng, chỉ cần sai một phần triệu giây là vị trí sẽ lệch khoảng [p:300 mét]. Không có đồng hồ nguyên tử, bản đồ trên điện thoại sẽ nhanh chóng trở nên vô dụng."
+    },
+    {
+      "heading_en": "Clocks that feel gravity",
+      "heading_vi": "Những chiếc đồng hồ cảm nhận được trọng lực",
+      "body_en": "The newest clocks are so precise that they reveal a strange prediction of Einstein's relativity: time runs at different speeds depending on gravity. In 2010, NIST researchers showed that a clock raised by just [y:33 centimetres] ticked measurably faster than one below it {chou-2010}. In 2022, a team in Colorado detected the difference across a cloud of atoms about [y:one millimetre] tall {bothwell-2022}. Such clocks could one day help map Earth's interior, detect tiny changes in sea level or test the laws of physics. A tool built to tell the time has become a tool for exploring the universe.",
+      "body_vi": "Những chiếc đồng hồ mới nhất chính xác đến mức hé lộ một dự đoán kỳ lạ của thuyết tương đối Einstein: thời gian trôi nhanh chậm khác nhau tuỳ theo trọng lực. Năm 2010, các nhà nghiên cứu NIST chứng minh rằng một chiếc đồng hồ được nâng cao chỉ [y:33 cm] đã chạy nhanh hơn chiếc bên dưới một cách đo được {chou-2010}. Năm 2022, một nhóm ở Colorado phát hiện ra khác biệt ấy ngay trong một đám nguyên tử cao khoảng [y:một milimét] {bothwell-2022}. Những chiếc đồng hồ như vậy một ngày nào đó có thể giúp lập bản đồ lòng đất, phát hiện những thay đổi nhỏ của mực nước biển hay kiểm nghiệm các định luật vật lý. Một công cụ sinh ra để xem giờ đã trở thành công cụ khám phá vũ trụ."
+    }
+  ],
+  "keyPoint": {
+    "en": "Precision often comes from [p:finding something that never changes] and measuring against it, as atoms replaced pendulums. In your own work, look for a *stable reference*, such as a clear standard, a checklist or a benchmark, instead of trusting a feeling that drifts from day to day.",
+    "vi": "Độ chính xác thường đến từ việc [p:tìm ra một thứ không bao giờ thay đổi] rồi đo đạc dựa vào nó, như nguyên tử đã thay thế quả lắc. Trong công việc của bạn, hãy tìm một *mốc tham chiếu ổn định*, như một tiêu chuẩn rõ ràng, một danh sách kiểm tra hay một thước đo chuẩn, thay vì tin vào cảm giác vốn thay đổi từng ngày."
+  },
+  "applySteps": {
+    "en": [
+      "Compare the time on an old wall clock with your phone today and again in a week to see the drift.",
+      "Push a swing or a pendulum toy at different rhythms and notice when resonance makes it grow.",
+      "Turn off location services for an hour and notice how many apps quietly depend on GPS timing."
+    ],
+    "vi": [
+      "So giờ trên một chiếc đồng hồ treo tường cũ với điện thoại hôm nay và sau một tuần để thấy độ trôi.",
+      "Đẩy xích đu hoặc một con lắc đồ chơi theo nhiều nhịp khác nhau và để ý lúc cộng hưởng khiến nó dao động mạnh dần.",
+      "Tắt dịch vụ định vị trong một giờ và để ý xem bao nhiêu ứng dụng âm thầm phụ thuộc vào thời gian GPS."
+    ]
+  },
+  "references": [
+    {
+      "id": "nist-clocks",
+      "label": "NIST: How do atomic clocks work?",
+      "url": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work"
+    },
+    {
+      "id": "bipm-second",
+      "label": "BIPM: The second",
+      "url": "https://www.bipm.org/en/si-base-units/second"
+    },
+    {
+      "id": "chou-2010",
+      "label": "Chou et al. (2010)",
+      "url": "https://doi.org/10.1126/science.1192720"
+    },
+    {
+      "id": "bothwell-2022",
+      "label": "Bothwell et al. (2022)",
+      "url": "https://doi.org/10.1038/s41586-021-04349-7"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/atomic-clocks.webp",
+    "provider": "unsplash",
+    "author": "petradr",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/8hgm6mKK04U"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "nist-gov-how-do-atomic-clocks-work",
+    "license": "PD",
+    "authors": [
+      "NIST"
+    ],
+    "originalTitle": "How Do Atomic Clocks Work?",
+    "originalUrl": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work",
+    "publisher": "NIST",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "context added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JaQAD4nIbFeBMD9mj1fu/+U8OgAD+qhpqgMQYk9sM65gWIgPiwFs8FspvuRheOP7KLlnqzV1QWwuVed365vVU/zjvxqaGluZ81puAfwIzuFI7DeWXDStsXCajrpfUSJnAA+FKQufY9UPaTqfvjqUctkTf3lTzKL2KC2bHSPCxTwxlXjlcUu00sDqndP88IBwa/LukDIr+gXlp+n+ot5ZiQEjjuQ2MA78Rg3W/x/t2Cy7Bbb3o5ShVDzr63k+8/Eo8AAAA",
+  "dominant": "#606060"
+}

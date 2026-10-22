@@ -33,6 +33,9 @@ export const SOURCES: Record<string, SourceRule> = {
   'www.nia.nih.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'National Institute on Aging' },
   'newsinhealth.nih.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NIH News in Health' },
   'www.cdc.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'CDC' },
+  'www.gps.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'GPS.gov' },
+  'www.energy.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'U.S. Department of Energy' },
+  'www.nist.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NIST' },
   'globalvoices.org': { adapter: 'readability', group: 1, license: 'CC-BY-3.0', publisher: 'Global Voices' },
   'learningenglish.voanews.com': {
     adapter: 'readability',
