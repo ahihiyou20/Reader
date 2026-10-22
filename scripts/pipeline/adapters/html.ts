@@ -5,7 +5,7 @@ import type { ImportedSection } from './types';
 const SKIP = 'script, style, noscript, figure, figcaption, table, aside, nav, footer, form, button, iframe, svg, video, audio, sup.reference, .reference, .mw-editsection, .hatnote, .navbox, .infobox, .thumb, .gallery, .mw-references-wrap, .reflist, .metadata, .noprint, .shortdescription, .sr-only';
 const BLOCK = new Set(['P', 'LI', 'BLOCKQUOTE', 'DD']);
 const HEADINGS = new Set(['H2', 'H3', 'H4']);
-const DROP_HEADINGS = /^(references?|notes?|see also|external links|further reading|bibliography|sources|footnotes|citations?|related|acknowledg(e)?ments?|glossary|link to learning|conflict of interest|author contributions?|funding|cite this work|past versions|reuse this work( freely)?|endnotes|keep reading|related (research|articles|charts|topics)|about the authors?|more resources|share this|tài liệu tham khảo|xem thêm|liên kết ngoài|chú thích)$/i;
+const DROP_HEADINGS = /^(references?|notes?|see also|external links|further reading|bibliography|sources|footnotes|citations?|related|acknowledg(e)?ments?|glossary|link to learning|conflict of interest|author contributions?|funding|cite this work|past versions|reuse this work( freely)?|endnotes|keep reading|related (research|articles|charts|topics)|about the authors?|more resources|share this|ai tool statement|young reviewers?|original source article|tài liệu tham khảo|xem thêm|liên kết ngoài|chú thích)$/i;
 
 /** Escape characters that mean something in Reader markup. */
 export const escapeMarkup = (s: string) => s.replace(/([\\*[\]{}])/g, '\\$1');
