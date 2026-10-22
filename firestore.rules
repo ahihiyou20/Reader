@@ -1,0 +1,140 @@
+rules_version = '2';
+// Reader — Firestore Security Rules (docs/06 §3.5). All writes come from clients (Spark plan, no
+// Cloud Functions), so the rules carry the business logic: counters move by ±1 and only together
+// with the matching like/save document, the streak can only stay, grow by one or restart at one.
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function signedIn() { return request.auth != null; }
+    function isMe(uid) { return signedIn() && request.auth.uid == uid; }
+    // A guest who links Google keeps the same uid; the linked identity shows up in the token.
+    function isGoogle() { return signedIn() && request.auth.token.firebase.identities.keys().hasAny(['google.com']); }
+    function isMod() { return signedIn() && exists(/databases/$(db)/documents/moderators/$(request.auth.uid)); }
+    function myDoc(sub, id) { return /databases/$(db)/documents/users/$(request.auth.uid)/$(sub)/$(id); }
+    function changed() { return request.resource.data.diff(resource.data).affectedKeys(); }
+    function isString(v, min, max) { return v is string && v.size() >= min && v.size() <= max; }
+    function delta(field, d) {
+      return changed().hasOnly([field])
+        && request.resource.data[field] == resource.data.get(field, 0) + d
+        && request.resource.data[field] >= 0;
+    }
+
+    // ---------- Users ----------
+    function validStreak(s) {
+      return s is map && s.keys().hasOnly(['current', 'longest', 'lastReadDate'])
+        && s.current is int && s.current >= 0 && s.longest is int && s.longest >= s.current
+        && (s.lastReadDate == null || (s.lastReadDate is string && s.lastReadDate.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')));
+    }
+    function validProfile(d) {
+      return d.keys().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'createdAt', 'lastActiveAt'])
+        && (d.displayName == null || isString(d.displayName, 1, 60))
+        && (d.photoURL == null || isString(d.photoURL, 1, 1000))
+        && d.isAnonymous == !isGoogle()
+        && d.lang in ['en', 'vi']
+        && isString(d.timezone, 1, 64)
+        && validStreak(d.streak)
+        && d.stats is map && d.stats.keys().hasOnly(['articlesRead']) && d.stats.articlesRead is int
+        && d.stats.articlesRead >= 0 && d.stats.articlesRead <= 100000;
+    }
+
+    match /users/{uid} {
+      allow read, delete: if isMe(uid);
+      allow create: if isMe(uid) && validProfile(request.resource.data)
+        && request.resource.data.streak.current == 0 && request.resource.data.stats.articlesRead == 0
+        && request.resource.data.createdAt == request.time;
+      allow update: if isMe(uid) && validProfile(request.resource.data)
+        && changed().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'lastActiveAt'])
+        && (request.resource.data.streak.current == resource.data.streak.current
+            || request.resource.data.streak.current == resource.data.streak.current + 1
+            || request.resource.data.streak.current == 1);
+
+      match /likes/{slug} {
+        allow read, delete: if isMe(uid);
+        allow create, update: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
+      }
+      match /saves/{slug} {
+        allow read, delete: if isMe(uid);
+        allow create, update: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
+      }
+      match /progress/{slug} {
+        allow read, delete: if isMe(uid);
+        allow create, update: if isMe(uid)
+          && request.resource.data.keys().hasOnly(['lastSection', 'completed', 'completedAt', 'applyDone', 'updatedAt'])
+          && (!('lastSection' in request.resource.data) || (request.resource.data.lastSection is int && request.resource.data.lastSection >= 0 && request.resource.data.lastSection < 50))
+          && (!('applyDone' in request.resource.data) || (request.resource.data.applyDone is list && request.resource.data.applyDone.size() <= 3));
+      }
+      match /readDays/{day} {
+        allow read, delete: if isMe(uid);
+        allow create, update: if isMe(uid) && day.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
+          && request.resource.data.keys().hasOnly(['slugs']) && request.resource.data.slugs is list && request.resource.data.slugs.size() <= 200;
+      }
+      match /commentLikes/{key} {
+        allow read, delete: if isMe(uid);
+        allow create: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'id', 'createdAt'])
+          && key == request.resource.data.slug + '__' + request.resource.data.id;
+      }
+    }
+
+    // ---------- Counters ----------
+    match /counters/{slug} {
+      allow read: if true;
+      allow create: if signedIn() && request.resource.data.keys().size() == 1 && (
+           (request.resource.data.get('likes', 0) == 1 && existsAfter(myDoc('likes', slug)))
+        || (request.resource.data.get('saves', 0) == 1 && existsAfter(myDoc('saves', slug)))
+        || request.resource.data.get('shares', 0) == 1
+        || (request.resource.data.get('comments', 0) == 1 && isGoogle()));
+      allow update: if signedIn() && (
+           (delta('likes', 1) && existsAfter(myDoc('likes', slug)))
+        || (delta('likes', -1) && !existsAfter(myDoc('likes', slug)))
+        || (delta('saves', 1) && existsAfter(myDoc('saves', slug)))
+        || (delta('saves', -1) && !existsAfter(myDoc('saves', slug)))
+        || delta('shares', 1)
+        || (isGoogle() && (delta('comments', 1) || delta('comments', -1))));
+    }
+
+    // ---------- Comments ----------
+    match /comments/{slug}/items/{id} {
+      allow read: if resource.data.status == 'visible' || isMod() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow create: if isGoogle()
+        && request.resource.data.keys().hasOnly(['uid', 'displayName', 'photoURL', 'text', 'lang', 'status', 'likeCount', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && isString(request.resource.data.displayName, 1, 60)
+        && (request.resource.data.photoURL == null || isString(request.resource.data.photoURL, 1, 1000))
+        && isString(request.resource.data.text, 1, 500)
+        && request.resource.data.lang in ['en', 'vi']
+        && request.resource.data.status == 'visible'
+        && request.resource.data.likeCount == 0
+        && request.resource.data.createdAt == request.time;
+      allow update: if (isMod() && changed().hasOnly(['status']) && request.resource.data.status in ['visible', 'hidden'])
+        || (signedIn() && resource.data.uid == request.auth.uid && changed().hasOnly(['displayName', 'photoURL'])
+            && request.resource.data.displayName == 'Deleted user' && request.resource.data.photoURL == null)
+        || (signedIn() && delta('likeCount', 1) && existsAfter(myDoc('commentLikes', slug + '__' + id)))
+        || (signedIn() && delta('likeCount', -1) && !existsAfter(myDoc('commentLikes', slug + '__' + id)));
+      allow delete: if (signedIn() && resource.data.uid == request.auth.uid) || isMod();
+    }
+    // Your own comments across all articles (export and account deletion).
+    match /{path=**}/items/{id} {
+      allow read: if signedIn() && resource.data.uid == request.auth.uid;
+    }
+
+    // ---------- Posts sent with the + button ----------
+    match /submissions/{id} {
+      allow read: if signedIn() && resource.data.uid == request.auth.uid;
+      allow create: if isGoogle()
+        && request.resource.data.keys().hasOnly(['uid', 'displayName', 'title', 'hook', 'sections', 'references', 'coverUrl', 'lang', 'status', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'pending'
+        && isString(request.resource.data.displayName, 1, 60)
+        && isString(request.resource.data.title, 1, 120)
+        && isString(request.resource.data.hook, 1, 1200)
+        && request.resource.data.sections is list && request.resource.data.sections.size() >= 1 && request.resource.data.sections.size() <= 10
+        && request.resource.data.references is list && request.resource.data.references.size() <= 20
+        && request.resource.data.coverUrl is string && request.resource.data.coverUrl.size() <= 500
+        && request.resource.data.lang in ['en', 'vi']
+        && request.resource.data.createdAt == request.time;
+    }
+
+    match /moderators/{uid} {
+      allow read: if isMe(uid);
+    }
+  }
+}

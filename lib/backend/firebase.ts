@@ -231,6 +231,8 @@ export function createFirebaseBackend(): Backend {
   }
 
   async function writeProfileAfterGoogle(u: User) {
+    // Refresh the ID token so the Rules see the newly linked Google identity.
+    await u.getIdToken(true).catch(() => {});
     const ref = userRef(u.uid);
     const snap = await getDoc(ref);
     const mapped = mapUser(u);
