@@ -1,0 +1,129 @@
+{
+  "slug": "twice-as-long",
+  "status": "published",
+  "publishAt": "2026-10-08T00:00:00.000Z",
+  "category": "history",
+  "tags": [
+    "life expectancy",
+    "health",
+    "history",
+    "demography",
+    "progress"
+  ],
+  "title": {
+    "en": "Twice as long: how life expectancy doubled everywhere",
+    "vi": "Dài gấp đôi: tuổi thọ đã tăng gấp đôi ở khắp nơi ra sao"
+  },
+  "hook": {
+    "en": "Imagine a world map coloured red wherever people could expect to live fewer than 40 years. In 1800, that map would be [p:red everywhere]. No country, rich or poor, had escaped early death. Two centuries later, a newborn anywhere in the world can expect to live more than twice as long. How did that happen, and what does it tell us?",
+    "vi": "Hãy hình dung một tấm bản đồ thế giới tô đỏ ở bất cứ nơi nào người dân chỉ có thể sống dưới 40 năm. Năm 1800, tấm bản đồ ấy sẽ [p:đỏ rực ở mọi nơi]. Không quốc gia nào, giàu hay nghèo, thoát được cái chết sớm. Hai thế kỷ sau, một em bé sinh ra ở bất cứ đâu trên thế giới có thể sống lâu hơn gấp đôi. Điều đó đã xảy ra như thế nào, và nó cho ta biết gì?"
+  },
+  "sections": [
+    {
+      "heading_en": "A red map in 1800",
+      "heading_vi": "Tấm bản đồ đỏ năm 1800",
+      "body_en": "Demographic research suggests that at the beginning of the 19th century, [p:no country in the world] had a life expectancy longer than 40 years {riley-2005}. Almost everyone lived in **extreme poverty**, medical knowledge was very limited, and in every country our ancestors had to prepare for an early death. Globally, a newborn could expect to live [y:less than 30 years] on average. This was not the misfortune of a few unlucky places. It was the normal human condition, shared by farmers and kings, in Europe, Asia, Africa and the Americas alike.",
+      "body_vi": "Các nghiên cứu nhân khẩu học cho thấy vào đầu thế kỷ 19, [p:không quốc gia nào trên thế giới] có tuổi thọ trung bình quá 40 năm {riley-2005}. Gần như mọi người sống trong **nghèo cùng cực**, hiểu biết y khoa còn rất hạn chế, và ở mọi nước, tổ tiên chúng ta phải chuẩn bị cho một cái chết sớm. Trên toàn cầu, một em bé sơ sinh trung bình chỉ có thể sống [y:chưa tới 30 năm]. Đây không phải nỗi bất hạnh của vài nơi kém may mắn. Đó là thân phận bình thường của con người, chung cho cả nông dân lẫn vua chúa, ở châu Âu, châu Á, châu Phi cũng như châu Mỹ."
+    },
+    {
+      "heading_en": "What the number really means",
+      "heading_vi": "Con số ấy thực sự có nghĩa là gì",
+      "body_en": "A **life expectancy** of 30 does not mean that most adults died at 30. It is an average across everyone born, and in the past it was pulled down by the huge number of children who died very young. Many people who survived childhood went on to live into their fifties or sixties. That is why falling child mortality mattered so much for the rise in life expectancy. But Roser stresses that the story was [g:not only about children]: as health improved, life expectancy increased at all ages, for the young, the middle-aged and the old.",
+      "body_vi": "**Tuổi thọ trung bình** (*life expectancy*) 30 năm không có nghĩa là phần lớn người lớn qua đời ở tuổi 30. Đó là con số trung bình của tất cả những người được sinh ra, và trong quá khứ nó bị kéo xuống bởi số trẻ em chết yểu rất lớn. Nhiều người sống sót qua tuổi thơ vẫn sống tới tuổi năm mươi hay sáu mươi. Vì thế, việc giảm tử vong trẻ em có ý nghĩa rất lớn với sự gia tăng tuổi thọ. Nhưng Roser nhấn mạnh rằng câu chuyện [g:không chỉ xoay quanh trẻ em]: khi sức khoẻ được cải thiện, tuổi thọ tăng lên ở mọi lứa tuổi, từ người trẻ, người trung niên đến người già."
+    },
+    {
+      "heading_en": "The seal is broken",
+      "heading_vi": "Phong ấn bị phá vỡ",
+      "body_en": "Over the next 150 years, *some* parts of the world achieved substantial health improvements. In Roser's view, this was a landmark: it was the [g:first time in human history] that entire populations enjoyed sustained improvements in health {owid-twice}. After millennia of stagnation in terrible health conditions, the seal was finally broken. Better food, cleaner water, sanitation, vaccines and, later, antibiotics all played a part. Yet these gains were not shared evenly. For a long time, they stayed in the countries that had started to grow richer first.",
+      "body_vi": "Trong 150 năm tiếp theo, *một số* nơi trên thế giới đạt được những cải thiện lớn về sức khoẻ. Theo Roser, đây là một cột mốc: lần [g:đầu tiên trong lịch sử loài người], cả một cộng đồng dân cư được hưởng sự cải thiện sức khoẻ bền vững {owid-twice}. Sau hàng thiên niên kỷ trì trệ trong điều kiện sức khoẻ tồi tệ, phong ấn cuối cùng đã bị phá vỡ. Thực phẩm tốt hơn, nước sạch hơn, vệ sinh, vắc-xin và về sau là kháng sinh đều góp phần. Tuy vậy, thành quả không được chia đều. Trong một thời gian dài, chúng chỉ ở lại những nước bắt đầu giàu lên trước."
+    },
+    {
+      "heading_en": "The divided world of 1950",
+      "heading_vi": "Thế giới chia cắt năm 1950",
+      "body_en": "By 1950, a [p:global divide] had opened. The life expectancy of newborns was already over 60 years in Europe, North America, Oceania, Japan and parts of South America. Elsewhere, a newborn could expect to live only around 30 years. The inequality was enormous: people in **Norway** had a life expectancy of 72 years, while in **Mali** it was 26. Africa as a whole averaged only 36 years, while people in other regions could expect to live more than twice as long. Where you were born decided, more than anything else, how long you would live.",
+      "body_vi": "Đến năm 1950, một [p:hố sâu toàn cầu] đã mở ra. Tuổi thọ của trẻ sơ sinh đã vượt 60 năm ở châu Âu, Bắc Mỹ, châu Đại Dương, Nhật Bản và một phần Nam Mỹ. Ở những nơi khác, một em bé chỉ có thể sống khoảng 30 năm. Bất bình đẳng vô cùng lớn: người dân **Na Uy** có tuổi thọ 72 năm, trong khi ở **Mali** con số này là 26. Châu Phi nói chung chỉ đạt trung bình 36 năm, trong khi người dân ở các khu vực khác có thể sống lâu hơn gấp đôi. Nơi bạn được sinh ra quyết định, hơn mọi thứ khác, việc bạn sống được bao lâu."
+    },
+    {
+      "heading_en": "An outdated picture",
+      "heading_vi": "Một bức tranh đã lỗi thời",
+      "body_en": "Many of us still picture the world as divided as it was in 1950. But in health, the world has changed fast. Today, most people can expect to live as long as those in the very richest countries in 1950. The United Nations estimated a global average life expectancy of [g:72.6 years] in 2019 {un-wpp}. That is higher than in any country in 1950: the healthiest country then was Norway, at 72.3 years. In other words, the average person on Earth today can expect a longer life than someone born in the best place in the world just a few generations ago.",
+      "body_vi": "Nhiều người trong chúng ta vẫn hình dung thế giới bị chia cắt như năm 1950. Nhưng về sức khoẻ, thế giới đã thay đổi rất nhanh. Ngày nay, phần lớn mọi người có thể sống lâu bằng người dân ở những nước giàu nhất năm 1950. Liên Hợp Quốc ước tính tuổi thọ trung bình toàn cầu năm 2019 là [g:72,6 năm] {un-wpp}. Con số này cao hơn bất kỳ quốc gia nào vào năm 1950: nước có sức khoẻ tốt nhất khi đó là Na Uy, với 72,3 năm. Nói cách khác, một người bình thường trên Trái Đất hôm nay có thể sống lâu hơn người sinh ra ở nơi tốt nhất thế giới chỉ vài thế hệ trước."
+    },
+    {
+      "heading_en": "The biggest gains for the worst off",
+      "heading_vi": "Người thiệt thòi nhất tiến xa nhất",
+      "body_en": "In recent decades, every region of the world has made substantial progress, and it was the regions [y:worst off in 1950] that achieved the biggest gains. The divided world has been narrowing. Globally, life expectancy rose from less than 30 years to over 72, so after two centuries of progress we can expect to live [g:more than twice as long] as our ancestors. And this was not achieved in a few places only. In **every world region**, people today can expect to live more than twice as long as people there did two hundred years ago.",
+      "body_vi": "Trong những thập kỷ gần đây, mọi khu vực trên thế giới đều tiến bộ đáng kể, và chính những khu vực [y:khó khăn nhất năm 1950] lại đạt được bước tiến lớn nhất. Thế giới chia cắt đang dần thu hẹp khoảng cách. Trên toàn cầu, tuổi thọ tăng từ dưới 30 lên trên 72 năm, nên sau hai thế kỷ tiến bộ, chúng ta có thể sống [g:lâu hơn gấp đôi] tổ tiên mình. Và điều đó không chỉ đạt được ở vài nơi. Ở **mọi khu vực trên thế giới**, người dân ngày nay có thể sống lâu hơn gấp đôi so với người ở chính nơi đó hai trăm năm trước."
+    },
+    {
+      "heading_en": "Proof of what is possible",
+      "heading_vi": "Bằng chứng cho điều có thể làm được",
+      "body_en": "None of this means the job is done. The large health inequalities that remain today show that we can still do [y:much better]. A child born in the countries with the lowest life expectancy can still expect a much shorter life than a child born in the healthiest ones. But Roser draws an encouraging lesson: the almost unbelievable progress of the last two centuries, achieved by the entire world, should be [g:encouragement enough] to see what is possible. Long lives were once a privilege of no one, then of a few. They can become the norm for everyone.",
+      "body_vi": "Không có điều nào ở trên nghĩa là công việc đã xong. Những bất bình đẳng lớn về sức khoẻ còn tồn tại hôm nay cho thấy chúng ta vẫn có thể làm [y:tốt hơn nhiều]. Một đứa trẻ sinh ra ở những nước có tuổi thọ thấp nhất vẫn có thể sống ngắn hơn nhiều so với một đứa trẻ ở những nước khoẻ mạnh nhất. Nhưng Roser rút ra một bài học đáng khích lệ: tiến bộ gần như khó tin mà cả thế giới đạt được trong hai thế kỷ qua [g:đủ để khích lệ] chúng ta thấy điều gì là khả thi. Sống lâu từng không phải đặc quyền của ai, rồi trở thành đặc quyền của số ít. Nó có thể trở thành điều bình thường với mọi người."
+    }
+  ],
+  "keyPoint": {
+    "en": "Our picture of the world often lags behind reality, like [p:starlight from a star that has already changed]. Before you judge a country or a region, check *recent data* rather than the image you formed years ago. The biggest progress often happens exactly where we expect it least.",
+    "vi": "Hình dung của chúng ta về thế giới thường đi sau thực tế, giống như [p:ánh sáng từ một ngôi sao đã đổi khác từ lâu]. Trước khi đánh giá một quốc gia hay khu vực, hãy kiểm tra *dữ liệu gần đây* thay vì hình ảnh bạn hình thành từ nhiều năm trước. Tiến bộ lớn nhất thường xảy ra đúng ở nơi ta ít ngờ nhất."
+  },
+  "applySteps": {
+    "en": [
+      "Guess the life expectancy in three countries you know, then check the real figures and see how far off you were.",
+      "Ask your grandparents how many people they knew who died young, and compare it with your own life.",
+      "Pick one region you think of as 'poor' and look up how its life expectancy has changed since 1950."
+    ],
+    "vi": [
+      "Đoán tuổi thọ trung bình ở ba quốc gia bạn biết, rồi tra con số thật để xem mình lệch bao nhiêu.",
+      "Hỏi ông bà xem họ từng biết bao nhiêu người qua đời khi còn trẻ, rồi so sánh với cuộc sống của bạn.",
+      "Chọn một khu vực bạn vẫn nghĩ là 'nghèo' và tra xem tuổi thọ ở đó đã thay đổi thế nào từ năm 1950."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-twice",
+      "label": "Our World in Data (2018)",
+      "url": "https://ourworldindata.org/life-expectancy-globally"
+    },
+    {
+      "id": "riley-2005",
+      "label": "Riley (2005)",
+      "url": "https://doi.org/10.1111/j.1728-4457.2005.00083.x"
+    },
+    {
+      "id": "un-wpp",
+      "label": "UN World Population Prospects",
+      "url": "https://population.un.org/wpp/"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/twice-as-long.webp",
+    "provider": "unsplash",
+    "author": "petradr",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/8hgm6mKK04U"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-twice-as-long-life-expectancy-around-the-world",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Max Roser"
+    ],
+    "originalTitle": "Twice as long — life expectancy around the world",
+    "originalUrl": "https://ourworldindata.org/life-expectancy-globally",
+    "publisher": "Our World in Data",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "context added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JaQAD4nIbFeBMD9mj1fu/+U8OgAD+qhpqgMQYk9sM65gWIgPiwFs8FspvuRheOP7KLlnqzV1QWwuVed365vVU/zjvxqaGluZ81puAfwIzuFI7DeWXDStsXCajrpfUSJnAA+FKQufY9UPaTqfvjqUctkTf3lTzKL2KC2bHSPCxTwxlXjlcUu00sDqndP88IBwa/LukDIr+gXlp+n+ot5ZiQEjjuQ2MA78Rg3W/x/t2Cy7Bbb3o5ShVDzr63k+8/Eo8AAAA",
+  "dominant": "#606060"
+}

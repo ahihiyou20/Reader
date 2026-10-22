@@ -1,0 +1,75 @@
+{
+  "sections": [
+    {
+      "heading": "Humans and livestock make up 95% of the world’s mammal biomass; wild mammals are just 5%.",
+      "paragraphs": [
+        "A diverse range of mammals once roamed the planet. This changed dramatically with the arrival of humans, who have become the dominant species through our own populations, as well as the animals we breed and raise for food.",
+        "There are various ways to compare the distribution or abundance of different types of mammals. One way is to compare them based on the *number* of individuals. In these terms, very small animals vastly outnumber larger animals, but this doesn’t necessarily give us an idea of how much ecological and biological resources different animals use.",
+        "Another metric that ecologists often use is biomass — the total weight of all animals of a given species. This not only takes into account the number of animals but also factors in their size.1 It gives more weight to larger animals at higher levels of the ecological “pyramid”: these rely on well-functioning bases below them.",
+        "Let’s then look at the breakdown of the global mammal kingdom in these terms.2 It’s shown in the chart below. This data is sourced from the study by Lior Greenspoon and colleagues.3",
+        "Each square represents one percent of the world’s mammal biomass, including both land and marine animals. For context, that 1% is equal to around 11 million tonnes.",
+        "The dominance of humans is clear. We account for more than one-third of mammal biomass. Our biomass is more than seven times greater than all wild mammals combined.",
+        "Our livestock and pets, which are primarily cattle, account for 59%.",
+        "That leaves just 5% as wild mammals, which includes thousands of different species, from elephants and deer to lions and whales.",
+        "Beyond the totals for humans, livestock, and wild animals, there are a few striking comparisons that we found surprising. Farmed pigs weigh as much as all of the world’s whales, orcas, sea otters, seals, and dolphins combined. All the dogs in the world, including pets and feral dogs, weigh as much as all wild mammals on land."
+      ]
+    },
+    {
+      "heading": "Chickens and other poultry outweigh wild birds",
+      "paragraphs": [
+        "When we show people the chart above, one question often comes up: what about chickens? Of course, chickens are not mammals. But we can make a similar comparison between poultry and wild birds.",
+        "Like mammals, poultry livestock collectively weigh much more than all the world’s wild birds. You can see this in the next chart.4",
+        "The *size* of the difference between poultry and wild birds, though, is much less certain than it is for humans and livestock versus wild mammals. That’s because estimates for the number of wild birds vary a lot.",
+        "Our biomass is more than seven times greater than all wild mammals combined.",
+        "The underlying study that this data comes from uses several methods to estimate the weight of wild birds globally. The different techniques yield quite different estimates: 5 million tonnes in one, and 24 million tonnes in the other. They take the geometric mean of the two, which is their final estimate shown below. It suggests that poultry weigh more than twice as much as wild birds.",
+        "But this result is clearly very sensitive to the choice of methodology. If we used the “5 million tonnes” figure, then wild birds would account for just 14%. If we assumed 24 million tonnes, they’d be 44%. We explain this uncertainty in more detail in our appendix at the end of this article.",
+        "Using any method, the overall direction of the result is the same: chickens and other livestock birds weigh more than their wild cousins."
+      ]
+    },
+    {
+      "heading": "Wild mammals have declined, but the total amount of mammal biomass has increased a lot",
+      "paragraphs": [
+        "How did humans come to dominate the mammal kingdom?",
+        "A huge decline in the number and size of wild mammals has played a major role. Estimates suggest that the biomass of wild mammals has declined by roughly 85% over the last 100,000 years, and particularly since the migration of human populations across the planet.5",
+        "But that’s not the only reason. It’s not that the abundance of wild mammals was replaced one by one by humans and livestock. In fact, human activity has dramatically increased the total amount of mammal biomass on the planet.",
+        "Around 100,000 years ago, the total biomass of land mammals summed up to approximately 120 million tonnes, essentially all of it in the form of *wild* animals.6 By 10,000 years ago, this had fallen to 90 million tonnes. But the most dramatic changes followed the advent of agriculture. Wild mammal populations and biomass continued to decline, while human and livestock populations gradually increased.",
+        "By 1850, the total mammal biomass on land — including wild animals, humans, and livestock — had increased to an estimated 250 million tonnes.7 Since then, this has continued to increase rapidly. Today, mammals weigh roughly 1100 million tonnes, which represents a quadrupling since 1850. Wild mammals declined, but this was more than offset by the huge rise in biomass of humans and farmed mammals.",
+        "Farmed pigs weigh as much as all of the world’s whales, orcas, sea otters, seals, and dolphins combined.",
+        "Humans achieved this by harnessing external resources and energy inputs that weren’t available to wild animal populations before. We’ve used fossil fuels and agricultural innovations to harness synthetic fertilizers. We’ve engineered extremely productive crop varieties that grow much faster — and supply more energy — than conventional plants. We’ve cleared land to make space for raising livestock at higher densities than you’d find them in the wild. Essentially, we’ve added huge amounts of energy to the system that was there in the absence of human populations.",
+        "But while the mammal kingdom is more “vast” than ever before, this has, at least so far, come at the cost of diversity. Wild mammals have shrunk not just in relative terms, but also in absolute terms."
+      ]
+    },
+    {
+      "heading": "Appendix: Estimation methods and uncertainties",
+      "paragraphs": [
+        "In the sections below, we detail the methods and figures that the authors of the scientific papers used in producing the statistics shown in this article. We do this to help make the work and methodology more transparent and understandable.",
+        "Unless otherwise stated, the methods we’re describing are those of the paper by Lior Greenspoon et al. (2023).8",
+        "To calculate the biomass of humans, the authors take global population figures for 2021 from the UN Population Division’s World Population Prospects and multiply this by an age-weighted average body mass of 50 kilograms per person. This is relatively small for an adult, but when averaged across children and adults, it seems like a reasonable estimate.",
+        "In 2021, the global population was around 7.95 billion. Multiplying by 50 kilograms gives a total weight of 398 million tonnes.",
+        "To calculate the biomass of farm livestock, the authors take livestock population figures for 2018 from the Food and Agriculture Organization of the United Nations. The data for all animals, excluding cattle and pigs, is available here. The data for cattle and pigs is here.",
+        "To get the total mass of these animals, they multiply each type by their average respective weight in different world regions. These weights come from this inventory guideline report from the Intergovernmental Panel on Climate Change (IPCC), and are listed here.",
+        "The authors produce biomass estimates for four types of pets: dogs, cats, rats, and mice. You can find their table of assumptions and estimates here.",
+        "For **dogs**, the global population is estimated to be 987 million. This comes from the chapter “The dog-human-wildlife interface: assessing the scope of the problem” in the book *Free-Ranging Dogs and Wildlife Conservation*.",
+        "This includes domesticated and feral dogs (which is where a lot of the uncertainty comes from). For example, around one-quarter of the global total comes from rural China, where there is approximately one dog for every 2.9 humans.",
+        "We were initially skeptical about these figures and found it difficult to trace the exact source for each estimate. However, upon further examination of the literature, commonly cited figures range from approximately 700 to 900 million.",
+        "We therefore cautiously concluded that a population estimate of 1 billion does not seem unreasonable, although it’s on the higher end.",
+        "To get a total weight, they assume an average weight of 22 kilograms per dog.9 For context, this is roughly the weight of an average Border Collie, Australian Shepherd, or English Springer Spaniel.",
+        "In the original study, Greenspoon et al. (2023) give a final estimate of 20 million tonnes. We find it plausible that it falls within the range of 15 to 20 million tonnes, so their estimate is on the higher end.",
+        "For **cats**, they assume a global population of 600 million, and an average mass of 3.75 kilograms.10 Based on personal experience, this seems like a fair estimate for the average cat. The total biomass of cats — at 2.3 million tonnes — is not large enough to feature in the main graphic in this article.",
+        "The same is true for rats and mice, which collectively weigh an order of magnitude less.",
+        "The estimates of wild mammal biomass have the largest uncertainty.",
+        "In a separate article, we look at the distribution of wild mammals specifically, using the estimates from this paper. There, we provide more detail on population estimates and their methodologies.",
+        "But briefly, the authors use global population reports — which give estimates of the total number of animals — for roughly 6% of land mammal species. They then use the average weights of these animals to calculate their biomass. The biomass of the remaining wild land mammal species was estimated using a Support Vector Regression model. It might seem odd to base total estimates based on records for just 6% of species, but this small fraction dominates total mammal biomass; the remaining 94% make up a relatively small fraction.",
+        "This does introduce significant uncertainty; however, the overall conclusions of this article and the visualization would not change under different assumptions. Wild mammals’ share of total biomass might change by as much as a few percentage points in either direction, but the fact that they make up far less than 10% remains true.",
+        "Unlike the mammal figures, the data for poultry and wild birds comes from the earlier article by Bar-On et al. (2018).5",
+        "They calculated the biomass of **wild birds** using two slightly different sources and methodologies. In the first, they used wild bird population figures from a 1997 paper by Gaston and Blackburn, who extrapolated bird densities (the number of birds per unit area) across different environments and regions to derive a global total.11 Using slightly different models and extrapolations gave a similar figure of around 200 to 400 billion wild birds globally.",
+        "To calculate the combined *weight* of these birds, they used data on the relationship between bird population density and body weight among British birds.12 Based on this, they arrived at a weighted average of around 80 grams per bird. If we multiply this by 300 billion (the mid-point population estimate), we get a weight of 24 million tonnes.13",
+        "They also applied another methodology, using the individual mass and population densities of around 900 bird species, then extrapolating that out to all known bird species. This gave a result of 5 million tonnes.",
+        "In their paper, they took the geometric mean of the two estimates (24 million and 5 million) to get a final estimate of 11 million tonnes.",
+        "The fact that the two methodologies yielded pretty different results — the first being more than four times higher — highlights the level of uncertainty in these wild population estimates. Just to make this even clearer: a more recent paper produced a much lower estimate of wild bird abundance of just 50 billion.14 However, the uncertainty was huge, ranging from 3.9 billion to 2.1 *trillion,* resulting in a strong response from other researchers.15",
+        "They calculated the weight of **poultry** in a similar way to other livestock species (see the section above on “Livestock”). They took population figures from the Food and Agriculture Organization of the United Nations and multiplied them by their respective weights, detailed in this inventory guideline report from the Intergovernmental Panel on Climate Change (IPCC). This gave a result of around 30 million tonnes.",
+        "The final result is, then, very sensitive to the assumptions made in these comparisons. Using any of the estimates, poultry outweigh wild birds. However, using the 24 million tonnes for wild birds from the first methodology means the gap is relatively close. Using the 5 million tonnes figure would mean that wild birds were just 14% of total bird biomass."
+      ]
+    }
+  ]
+}

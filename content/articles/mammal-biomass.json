@@ -1,0 +1,129 @@
+{
+  "slug": "mammal-biomass",
+  "status": "published",
+  "publishAt": "2026-10-09T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "biodiversity",
+    "wildlife",
+    "livestock",
+    "ecology",
+    "environment"
+  ],
+  "title": {
+    "en": "Wild mammals are just 5% of all mammals on Earth",
+    "vi": "Thú hoang dã chỉ chiếm 5% khối lượng loài thú trên Trái Đất"
+  },
+  "hook": {
+    "en": "Picture all the mammals on Earth on one giant scale: every elephant, whale, lion and deer, every person, cow and pig. Which side would weigh the most? The answer surprises most people. Humans and our livestock make up about [p:95% of all mammal weight]. Every wild mammal species together accounts for just 5%.",
+    "vi": "Hãy hình dung toàn bộ loài thú trên Trái Đất được đặt lên một chiếc cân khổng lồ: mọi con voi, cá voi, sư tử và hươu nai, mọi con người, bò và lợn. Bên nào sẽ nặng nhất? Câu trả lời khiến phần lớn mọi người bất ngờ. Con người và gia súc của chúng ta chiếm khoảng [p:95% tổng khối lượng loài thú]. Tất cả các loài thú hoang dã cộng lại chỉ chiếm 5%."
+  },
+  "sections": [
+    {
+      "heading_en": "Weighing life",
+      "heading_vi": "Cân đo sự sống",
+      "body_en": "There are several ways to compare animals. One is to count individuals, but then tiny creatures vastly outnumber large ones, which says little about how much of the planet's resources each group uses. Ecologists therefore often use **biomass**: the total weight of all animals of a given kind. It accounts for both the number of animals and their size {owid-biomass}. Biomass gives more weight to large animals near the top of the ecological pyramid, which depend on a healthy base below them. On this measure, the mammal kingdom looks very different from what most of us imagine.",
+      "body_vi": "Có nhiều cách để so sánh các loài động vật. Một cách là đếm số cá thể, nhưng khi đó những sinh vật tí hon áp đảo hoàn toàn các loài lớn, và điều này nói rất ít về lượng tài nguyên mà mỗi nhóm sử dụng. Vì thế, các nhà sinh thái học thường dùng **sinh khối** (*biomass*): tổng khối lượng của mọi cá thể thuộc một loài. Sinh khối tính đến cả số lượng lẫn kích thước của con vật {owid-biomass}. Nó đặt trọng số lớn hơn cho các loài to lớn ở gần đỉnh tháp sinh thái, vốn phụ thuộc vào một nền tảng khoẻ mạnh bên dưới. Theo thước đo này, vương quốc loài thú trông rất khác với hình dung của đa số chúng ta."
+    },
+    {
+      "heading_en": "Humans: a third of the scale",
+      "heading_vi": "Con người: một phần ba bàn cân",
+      "body_en": "The study behind these numbers, by Lior Greenspoon and colleagues, splits all mammal biomass into small squares of 1%, each equal to about 11 million tonnes {greenspoon-2023}. The dominance of humans is clear. We account for [p:more than one-third] of all mammal biomass. To estimate it, the authors multiplied the 2021 world population of about 7.95 billion by an average body mass of 50 kilograms, which is low for an adult but reasonable once children are included. That gives roughly 398 million tonnes of people, [y:more than seven times] the weight of all wild mammals combined.",
+      "body_vi": "Nghiên cứu đứng sau những con số này, của Lior Greenspoon và cộng sự, chia toàn bộ sinh khối loài thú thành các ô nhỏ 1%, mỗi ô tương đương khoảng 11 triệu tấn {greenspoon-2023}. Sự thống trị của con người hiện rõ. Chúng ta chiếm [p:hơn một phần ba] tổng sinh khối loài thú. Để ước tính, các tác giả nhân dân số thế giới năm 2021, khoảng 7,95 tỷ người, với khối lượng cơ thể trung bình 50 kg, con số thấp so với người lớn nhưng hợp lý khi tính cả trẻ em. Kết quả là khoảng 398 triệu tấn người, [y:nặng hơn bảy lần] toàn bộ thú hoang dã cộng lại."
+    },
+    {
+      "heading_en": "Cattle, pigs and a few surprises",
+      "heading_vi": "Bò, lợn và vài điều bất ngờ",
+      "body_en": "Our livestock and pets, mostly **cattle**, make up about [p:59%] of mammal biomass. That leaves just 5% for wild mammals, which includes thousands of species, from elephants and deer to lions and whales. The researchers found some striking comparisons. Farmed pigs weigh as much as [y:all the world's whales], orcas, sea otters, seals and dolphins combined. And all the dogs in the world, pets and strays together, weigh about as much as all wild land mammals. Cats, by contrast, at around 2.3 million tonnes, are too light to show up in the main chart.",
+      "body_vi": "Gia súc và vật nuôi của chúng ta, chủ yếu là **bò**, chiếm khoảng [p:59%] sinh khối loài thú. Phần còn lại cho thú hoang dã chỉ là 5%, bao gồm hàng nghìn loài, từ voi, hươu đến sư tử và cá voi. Các nhà nghiên cứu tìm thấy vài phép so sánh đáng kinh ngạc. Lợn nuôi nặng ngang [y:toàn bộ cá voi trên thế giới], cộng thêm cá voi sát thủ, rái cá biển, hải cẩu và cá heo. Còn tất cả chó trên thế giới, cả chó nhà lẫn chó hoang, nặng xấp xỉ toàn bộ thú hoang trên cạn. Ngược lại, mèo, với khoảng 2,3 triệu tấn, nhẹ đến mức không hiện lên trong biểu đồ chính."
+    },
+    {
+      "heading_en": "Birds tell a similar story",
+      "heading_vi": "Loài chim cũng kể câu chuyện tương tự",
+      "body_en": "Chickens are not mammals, but a similar comparison works for birds. **Poultry**, at around 30 million tonnes, weighs more than all the world's wild birds {bar-on-2018}. Here the size of the gap is much less certain, because estimates of wild birds vary a lot: one method gives 5 million tonnes, another 24 million. Researchers took a middle value of about 11 million tonnes, which suggests poultry outweighs wild birds by more than two to one. Whichever method you choose, though, the direction is the same: [y:farmed birds outweigh their wild cousins].",
+      "body_vi": "Gà không phải là thú, nhưng phép so sánh tương tự cũng áp dụng được cho chim. **Gia cầm**, với khoảng 30 triệu tấn, nặng hơn toàn bộ chim hoang dã trên thế giới {bar-on-2018}. Ở đây, mức chênh lệch kém chắc chắn hơn nhiều, vì các ước tính về chim hoang dã dao động rất lớn: một phương pháp cho ra 5 triệu tấn, phương pháp khác là 24 triệu tấn. Các nhà nghiên cứu lấy một giá trị ở giữa, khoảng 11 triệu tấn, cho thấy gia cầm nặng gấp hơn hai lần chim hoang dã. Dù chọn phương pháp nào, xu hướng vẫn như nhau: [y:chim nuôi nặng hơn họ hàng hoang dã của chúng]."
+    },
+    {
+      "heading_en": "How wild mammals declined",
+      "heading_vi": "Thú hoang dã đã suy giảm ra sao",
+      "body_en": "How did humans come to dominate the mammal kingdom? A huge decline in wild mammals is part of the answer. Estimates suggest that the biomass of wild mammals has fallen by roughly [p:85% over the last 100,000 years], especially as humans spread across the planet. About 100,000 years ago, land mammals weighed around 120 million tonnes, almost all of it wild. By 10,000 years ago, this had fallen to 90 million tonnes. The most dramatic changes followed the start of **agriculture**: wild populations kept shrinking, while humans and livestock slowly grew.",
+      "body_vi": "Làm thế nào con người lại thống trị vương quốc loài thú? Sự suy giảm mạnh của thú hoang dã là một phần câu trả lời. Các ước tính cho thấy sinh khối thú hoang dã đã giảm khoảng [p:85% trong 100.000 năm qua], nhất là khi con người lan ra khắp hành tinh. Khoảng 100.000 năm trước, thú trên cạn nặng khoảng 120 triệu tấn, gần như toàn bộ là thú hoang. Đến 10.000 năm trước, con số này giảm còn 90 triệu tấn. Những thay đổi mạnh mẽ nhất đến sau khi **nông nghiệp** ra đời: quần thể hoang dã tiếp tục thu hẹp, trong khi con người và gia súc dần tăng lên."
+    },
+    {
+      "heading_en": "A heavier planet",
+      "heading_vi": "Một hành tinh nặng hơn",
+      "body_en": "Humans did not simply replace wild animals one for one. In fact, we have [y:greatly increased] the total weight of mammals on Earth. By 1850, land mammals, including humans and livestock, weighed an estimated 250 million tonnes. Today, mammals weigh roughly 1,100 million tonnes, a fourfold increase since 1850. We did this by adding energy the wild never had: **fossil fuels**, synthetic fertilisers, crop varieties that grow much faster, and cleared land where livestock are raised far more densely than animals live in nature. Wild mammals shrank, but farmed ones grew far more.",
+      "body_vi": "Con người không đơn giản là thay thế từng con thú hoang. Trên thực tế, chúng ta đã [y:làm tăng mạnh] tổng khối lượng loài thú trên Trái Đất. Đến năm 1850, thú trên cạn, kể cả người và gia súc, nặng ước tính 250 triệu tấn. Ngày nay, loài thú nặng khoảng 1.100 triệu tấn, gấp bốn lần so với năm 1850. Chúng ta làm được điều đó bằng cách bổ sung nguồn năng lượng mà thiên nhiên hoang dã chưa từng có: **nhiên liệu hoá thạch**, phân bón tổng hợp, giống cây trồng lớn nhanh hơn nhiều, và đất được khai hoang để chăn nuôi gia súc với mật độ dày hơn hẳn mật độ động vật sống trong tự nhiên. Thú hoang co lại, nhưng thú nuôi tăng lên nhiều hơn thế."
+    },
+    {
+      "heading_en": "Bigger, but less diverse",
+      "heading_vi": "To hơn, nhưng kém đa dạng",
+      "body_en": "So the mammal kingdom is more vast than ever before, but so far this has come [p:at the cost of diversity]. Wild mammals have shrunk not just as a share of the total, but in absolute terms. The figures are uncertain: wild mammals are the hardest group to count, and the authors estimated most species with a model. Yet the main conclusion holds under different assumptions. Wild mammals might be a few percentage points more or less, but they still make up [g:far less than 10%] of the total. The question for this century is whether we can feed ourselves and leave more room for the wild.",
+      "body_vi": "Như vậy, vương quốc loài thú rộng lớn hơn bao giờ hết, nhưng cho đến nay điều đó [p:phải trả giá bằng sự đa dạng]. Thú hoang dã không chỉ thu hẹp về tỷ lệ mà còn giảm về số lượng tuyệt đối. Các con số vẫn còn bất định: thú hoang là nhóm khó đếm nhất, và các tác giả phải ước tính phần lớn các loài bằng mô hình. Dù vậy, kết luận chính vẫn đứng vững dưới nhiều giả định khác nhau. Tỷ lệ thú hoang có thể chênh vài điểm phần trăm, nhưng vẫn [g:thấp hơn 10% rất nhiều]. Câu hỏi của thế kỷ này là liệu chúng ta có thể nuôi sống chính mình mà vẫn chừa thêm chỗ cho thiên nhiên hoang dã hay không."
+    }
+  ],
+  "keyPoint": {
+    "en": "The living world is like [p:a house we slowly filled with our own furniture]: it is fuller than ever, yet there is less room for anyone else. Changes in *how we produce food*, especially meat, decide how much space is left for wild animals.",
+    "vi": "Thế giới sống giống như [p:một ngôi nhà ta dần lấp đầy bằng đồ đạc của mình]: nó chật hơn bao giờ hết, nhưng chỗ cho người khác lại ít đi. Những thay đổi trong *cách chúng ta sản xuất thực phẩm*, nhất là thịt, quyết định còn bao nhiêu không gian cho động vật hoang dã."
+  },
+  "applySteps": {
+    "en": [
+      "Guess the share of wild mammals before showing this fact to a friend, and see how close they get.",
+      "Try one meal a week that replaces beef with beans, lentils or chicken, and notice how it feels.",
+      "Find one local group that protects wildlife habitat near you and read what it does."
+    ],
+    "vi": [
+      "Đố một người bạn đoán tỷ lệ thú hoang dã trước khi cho họ biết con số này, xem họ đoán sát đến đâu.",
+      "Thử mỗi tuần một bữa thay thịt bò bằng đậu, đậu lăng hoặc thịt gà, và để ý cảm nhận của bạn.",
+      "Tìm một tổ chức ở địa phương đang bảo vệ môi trường sống của động vật hoang dã và đọc xem họ làm gì."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-biomass",
+      "label": "Our World in Data (2025)",
+      "url": "https://ourworldindata.org/wild-mammals-birds-biomass"
+    },
+    {
+      "id": "greenspoon-2023",
+      "label": "Greenspoon et al. (2023)",
+      "url": "https://doi.org/10.1073/pnas.2204892120"
+    },
+    {
+      "id": "bar-on-2018",
+      "label": "Bar-On, Phillips & Milo (2018)",
+      "url": "https://doi.org/10.1073/pnas.1711842115"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/mammal-biomass.webp",
+    "provider": "unsplash",
+    "author": "E+N Photographies",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/GYumuBnTqKc"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-almost-all-of-the-world-s-mammal-biomass-is-humans-and-livest",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Hannah Ritchie",
+      "Fiona Spooner"
+    ],
+    "originalTitle": "Almost all of the world’s mammal biomass is humans and livestock",
+    "originalUrl": "https://ourworldindata.org/wild-mammals-birds-biomass",
+    "publisher": "Our World in Data",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQAwCdASoQABwAPu1iqU2ppaQiMAgBMB2JQBdgAdkljbo0xtWJtIAA/tYUag2YxxvQ04Wi5Vod0lUUceN0aMM7D5IAk3o0wVT/Qu9aJZzTihyl9F6zgyW8YkoY0WzbVIRZOlJ6xJzwIZ1lpZhkfZaemKqIQBqM4l448zJfsYxlEJf2LsAAAA==",
+  "dominant": "#4c4435"
+}
