@@ -21,6 +21,7 @@ export function EngageView({ article, item, active, view }: { article: ArticleCl
   const startFeed = useUI((s) => s.startFeed);
   const [draft, setDraft] = useState('');
   const input = useRef<HTMLInputElement>(null);
+  const head = useRef<HTMLDivElement>(null);
   const comments = useComments(article.slug, active && view === 2, active && view >= 1);
   const count = useUser((s) => countsFor(s, item.slug, article.counts).comments);
   const shown = Math.max(count, comments.items.length);
@@ -34,14 +35,23 @@ export function EngageView({ article, item, active, view }: { article: ArticleCl
     <>
       <div className="escroll">
         <ApplyCard article={article} />
-        <div className="chead">
+        <div className="chead" ref={head}>
           <MessageCircle className="ic" aria-hidden="true" />
           <span>{t('comments', { n: shown })}</span>
         </div>
         <CommentList state={comments} onReply={reply} />
       </div>
       <div className="ebottom">
-        <CommentForm slug={article.slug} draft={draft} setDraft={setDraft} inputRef={input} onPosted={comments.add} />
+        <CommentForm
+          slug={article.slug}
+          draft={draft}
+          setDraft={setDraft}
+          inputRef={input}
+          onPosted={(c) => {
+            comments.add(c);
+            requestAnimationFrame(() => head.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }));
+          }}
+        />
         <div className="ctarow">
           <button className="cta" type="button" onClick={() => openOverlay('explore')}>
             {t('exploreNow')}

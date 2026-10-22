@@ -1,6 +1,7 @@
 'use client';
 // SCR-02 Details: sections with focus/dim, collapsing header, KEY POINT, sources, dots (FR-05..FR-09).
-import { m, useMotionValue, useTransform } from 'framer-motion';
+import { MDiv, MH2 } from '@/components/Motion';
+import { useMotionValue, useTransform } from 'framer-motion';
 import { ChevronDown, ChevronsRight, Library } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
@@ -215,7 +216,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
       </div>
 
       <div className="dhead">
-        <m.div className="prow" style={{ y: prowY }}>
+        <MDiv className="prow" style={{ y: prowY }}>
           <button className="pill dpill" type="button" onClick={() => scrollToBlock(0)}>
             {t('details')}
           </button>
@@ -223,15 +224,15 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             {t('toEngage')}
             <ChevronsRight className="ic" aria-hidden="true" />
           </button>
-        </m.div>
-        <m.h2 className="btitle" style={{ y: titleY, opacity: titleO }}>
+        </MDiv>
+        <MH2 className="btitle" style={{ y: titleY, opacity: titleO }}>
           {title}
           {fallback && <span className="enonly">{t('enOnly')}</span>}
-        </m.h2>
-        <m.div className="stitle" style={{ opacity: stickyO }} aria-hidden="true">
+        </MH2>
+        <MDiv className="stitle" style={{ opacity: stickyO }} aria-hidden="true">
           {title}
-        </m.div>
-        <m.div className="arow" style={{ y: rowY, scale: rowS }}>
+        </MDiv>
+        <MDiv className="arow" style={{ y: rowY, scale: rowS }}>
           <ActionButton kind="like" size="md" count={counts.likes} on={liked} label={t('likeAria', { n: counts.likes })} onPress={() => toggleLike(slug)} />
           <ActionButton kind="save" size="md" count={counts.saves} on={saved} label={t('saveAria', { n: counts.saves })} onPress={() => toggleSave(slug)} />
           <ActionButton kind="share" size="md" count={counts.shares} label={t('shareAria', { n: counts.shares })} onPress={() => shareArticle(slug, title)} />
@@ -242,7 +243,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             label={t('commentAria', { n: counts.comments })}
             onPress={() => setArticleView(slug, 2)}
           />
-        </m.div>
+        </MDiv>
       </div>
 
       <div className="dfoot">

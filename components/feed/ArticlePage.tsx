@@ -1,5 +1,6 @@
 'use client';
-import { m, useTransform } from 'framer-motion';
+import { MDiv } from '@/components/Motion';
+import { useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useArticle } from '@/lib/data';
@@ -67,29 +68,29 @@ export function ArticlePage({
         <div className="layer sharp">
           <CoverMedia cover={item.cover} priority={priority} playing={active && view < 2 && visible} />
         </div>
-        <m.div className="layer blur" style={{ opacity: blur }}>
+        <MDiv className="layer blur" style={{ opacity: blur }}>
           {(built || active) && <CoverMedia cover={item.cover} blurred />}
           <div className="dim" />
-        </m.div>
-        <m.div className="layer eng" style={{ opacity: eng }} />
+        </MDiv>
+        <MDiv className="layer eng" style={{ opacity: eng }} />
         <div className="grain" />
       </div>
-      <m.div className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
-        <m.div className="view cover" style={{ opacity: o0 }} aria-hidden={view !== 0}>
+      <MDiv className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
+        <MDiv className="view cover" style={{ opacity: o0 }} aria-hidden={view !== 0}>
           <CoverView item={item} titleId={titleId} title={title} />
-        </m.div>
-        <m.div className="view details" style={{ opacity: o1 }} aria-hidden={view !== 1}>
+        </MDiv>
+        <MDiv className="view details" style={{ opacity: o1 }} aria-hidden={view !== 1}>
           {built &&
             (article ? (
               <DetailsView article={article} item={item} active={active} view={view} />
             ) : (
               <DetailsSkeleton item={item} error={isError} onRetry={() => refetch()} />
             ))}
-        </m.div>
-        <m.div className="view engage" style={{ opacity: o2 }} aria-hidden={view !== 2}>
+        </MDiv>
+        <MDiv className="view engage" style={{ opacity: o2 }} aria-hidden={view !== 2}>
           {built && article && <EngageView article={article} item={item} active={active} view={view} />}
-        </m.div>
-      </m.div>
+        </MDiv>
+      </MDiv>
     </section>
   );
 }

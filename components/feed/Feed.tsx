@@ -2,7 +2,8 @@
 // FeedPager (vertical, between articles) + ArticlePager (horizontal, cover ⇄ details ⇄ comments & apply).
 // Gesture rules: docs/02 §5 and docs/03 §5 — axis lock at 10 px, 1:1 tracking, momentum projection,
 // velocity handoff, rubber-band at the edges, interruptible at any time.
-import { m } from 'framer-motion';
+
+import { MDiv } from '@/components/Motion';
 import { useEffect, useRef, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
@@ -266,7 +267,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
 
   return (
     <div className="feed" ref={ref} role="feed" aria-busy={false} aria-label={t('appName')}>
-      <m.div className="track" style={{ y: feedY }} ref={(el) => registerFade('feed', el)}>
+      <MDiv className="track" style={{ y: feedY }} ref={(el) => registerFade('feed', el)}>
         {pages.map((i) =>
           i < items.length ? (
             <ArticlePage
@@ -282,7 +283,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
             <EndCard key="__end" top={i * h} />
           ),
         )}
-      </m.div>
+      </MDiv>
     </div>
   );
 }
