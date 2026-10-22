@@ -5,8 +5,8 @@ import { assertFails, assertSucceeds, initializeTestEnvironment, type RulesTestE
 import { addDoc, collection, deleteDoc, doc, getDoc, increment, serverTimestamp, setDoc, updateDoc, writeBatch } from 'firebase/firestore';
 
 let env: RulesTestEnvironment;
-const guestClaims = { firebase: { sign_in_provider: 'anonymous', identities: {} } };
-const googleClaims = { firebase: { sign_in_provider: 'google.com', identities: { 'google.com': ['1234'] } } };
+const guestClaims = { firebase: { sign_in_provider: 'anonymous' as const, identities: {} } };
+const googleClaims = { firebase: { sign_in_provider: 'google.com' as const, identities: { 'google.com': ['1234'] } } };
 const guest = () => env.authenticatedContext('guest', guestClaims).firestore();
 const alice = () => env.authenticatedContext('alice', googleClaims).firestore();
 const mod = () => env.authenticatedContext('mod', googleClaims).firestore();
