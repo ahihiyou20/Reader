@@ -15,7 +15,15 @@ async function main() {
   const buf = Buffer.from(await res.arrayBuffer());
   const out = path.join('public', 'covers', `${slug}.webp`);
   await fs.mkdir(path.dirname(out), { recursive: true });
-  await sharp(buf).rotate().resize(1080, 1920, { fit: 'cover', position: position === 'attention' ? sharp.strategy.attention : position }).webp({ quality: 74 }).toFile(out);
+  // Keep covers light for phones: step the quality down until the file is under ~220 KB.
+  const resized = await sharp(buf).rotate().resize(1080, 1920, { fit: 'cover', position: position === 'attention' ? sharp.strategy.attention : position }).toBuffer();
+  let quality = 74;
+  let data = await sharp(resized).webp({ quality }).toBuffer();
+  while (data.length > 220_000 && quality > 40) {
+    quality -= 8;
+    data = await sharp(resized).webp({ quality }).toBuffer();
+  }
+  await fs.writeFile(out, data);
   const ph = await placeholderFor(out);
   const file = path.join('content', 'articles', `${slug}.json`);
   const a = JSON.parse(await fs.readFile(file, 'utf8'));

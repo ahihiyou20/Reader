@@ -1,0 +1,138 @@
+{
+  "slug": "loneliness-epidemic",
+  "status": "published",
+  "publishAt": "2026-10-15T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "loneliness",
+    "living alone",
+    "ageing",
+    "social connection",
+    "media"
+  ],
+  "title": {
+    "en": "Is there really a loneliness epidemic?",
+    "vi": "Có thật đang có một 'đại dịch cô đơn'?"
+  },
+  "hook": {
+    "en": "Thousands of newspaper articles agree that rich countries are living through a 'loneliness epidemic'. The word *epidemic* suggests that things are getting rapidly worse. But what happens when you actually check the surveys that have asked people, year after year and generation after generation, how lonely they feel? The answer is surprisingly different from the headlines.",
+    "vi": "Hàng nghìn bài báo cùng khẳng định các nước giàu đang trải qua một 'đại dịch cô đơn'. Từ *đại dịch* gợi ý rằng tình hình đang xấu đi rất nhanh. Nhưng điều gì xảy ra khi ta thật sự kiểm tra các cuộc khảo sát đã hỏi mọi người, năm này qua năm khác và thế hệ này qua thế hệ khác, rằng họ cô đơn đến mức nào? Câu trả lời khác xa các dòng tít một cách bất ngờ."
+  },
+  "sections": [
+    {
+      "heading_en": "Alone is not the same as lonely",
+      "heading_vi": "Ở một mình không giống với cô đơn",
+      "body_en": "It is true that more people around the world now live alone. But researcher **Esteban Ortiz-Ospina** points out that [p:aloneness and loneliness are not the same] {owid-2019}. How much time someone spends alone is not a good predictor of whether they feel lonely or have weak social support. Social connections with friends and family matter for our health, emotional welfare and even material well-being, so loneliness is a real problem. That is exactly why, he argues, the conversation about it should rest on [g:facts rather than slogans]. Headlines about an 'epidemic', in his words, are both wrong and unhelpful.",
+      "body_vi": "Đúng là ngày càng nhiều người trên thế giới sống một mình. Nhưng nhà nghiên cứu **Esteban Ortiz-Ospina** chỉ ra rằng [p:ở một mình và cô đơn không phải là một] {owid-2019}. Thời gian một người ở một mình không dự báo tốt việc họ có thấy cô đơn hay thiếu chỗ dựa hay không. Mối liên hệ với bạn bè và gia đình quan trọng cho sức khoẻ, cảm xúc và cả đời sống vật chất của chúng ta, nên cô đơn là vấn đề thật. Chính vì vậy, theo ông, cuộc trò chuyện về nó cần dựa trên [g:sự thật thay vì khẩu hiệu]. Theo lời ông, những tiêu đề về 'đại dịch' vừa sai vừa vô ích."
+    },
+    {
+      "heading_en": "Young people say they are lonelier",
+      "heading_vi": "Người trẻ nói họ cô đơn hơn",
+      "body_en": "One statistic is often used as evidence. In England's **Community Life Survey** {ons}, people aged 16 to 24 are the most likely to feel lonely, with [p:10% feeling lonely 'often or always'], compared with [p:3%] of those aged 65 and over. Many people link loneliness with old age, so this may seem surprising, but surveys in New Zealand, Japan and the US show the same pattern. So yes: in rich countries, younger people are more likely to report feeling lonely. Does that mean loneliness is rising?",
+      "body_vi": "Một con số thường được dùng làm bằng chứng. Trong **Khảo sát Đời sống Cộng đồng** của Anh {ons}, người từ 16 đến 24 tuổi là nhóm hay thấy cô đơn nhất, với [p:10% cảm thấy cô đơn 'thường xuyên hoặc luôn luôn'], so với [p:3%] ở người từ 65 tuổi trở lên. Nhiều người gắn cô đơn với tuổi già nên điều này có vẻ bất ngờ, nhưng các khảo sát ở New Zealand, Nhật Bản và Mỹ cho thấy cùng một xu hướng. Vậy đúng là ở các nước giàu, người trẻ dễ nói mình cô đơn hơn. Nhưng điều đó có nghĩa cô đơn đang gia tăng không?"
+    },
+    {
+      "heading_en": "A snapshot cannot show a trend",
+      "heading_vi": "Một bức ảnh chụp không cho thấy xu hướng",
+      "body_en": "The answer is no. Comparing young and old people at one moment, a **cross-sectional** comparison, says nothing about change over time, because loneliness is not constant across a lifetime. To know whether loneliness is growing, we must separate two questions. First, do people become lonelier [y:as they age]? Second, are people of the same age lonelier [y:today than in the past]? Only data that follows the same people for years, or that asks successive generations the same question, can answer them, and only then can we say anything meaningful about change.",
+      "body_vi": "Câu trả lời là không. So sánh người trẻ và người già tại một thời điểm, tức phép so sánh **cắt ngang** (*cross-sectional*), không nói gì về sự thay đổi theo thời gian, vì mức độ cô đơn không cố định suốt đời người. Muốn biết cô đơn có đang tăng hay không, ta phải tách thành hai câu hỏi. Thứ nhất, con người có cô đơn hơn [y:khi già đi] không? Thứ hai, những người cùng độ tuổi có cô đơn [y:hơn ngày xưa] không? Chỉ dữ liệu theo dõi cùng một nhóm người trong nhiều năm, hoặc hỏi các thế hệ kế tiếp cùng một câu, mới trả lời được, và chỉ khi đó ta mới nói được điều gì có ý nghĩa về sự thay đổi."
+    },
+    {
+      "heading_en": "Loneliness across a lifetime",
+      "heading_vi": "Cô đơn qua một đời người",
+      "body_en": "Psychologist [y:Louise Hawkley] and colleagues followed Americans over 50 for years {hawkley-2019}. Loneliness tended to [g:decrease from 50 until about 75], then rose again. The rise after 75 was explained by declining health and the loss of a partner; once these were taken into account, loneliness kept falling into the oldest ages. Two forces seem to be at work. As we age, our expectations adapt and we choose company that makes us feel good. But illness and loss push the other way, and in advanced old age they win.",
+      "body_vi": "Nhà tâm lý học [y:Louise Hawkley] và cộng sự theo dõi người Mỹ trên 50 tuổi trong nhiều năm {hawkley-2019}. Mức độ cô đơn có xu hướng [g:giảm từ 50 đến khoảng 75 tuổi], rồi tăng trở lại. Sự gia tăng sau 75 tuổi được giải thích bởi sức khoẻ suy giảm và việc mất người bạn đời; khi tính đến các yếu tố này, cô đơn vẫn tiếp tục giảm tới những năm cuối đời. Dường như có hai lực cùng tác động. Khi già đi, kỳ vọng của ta thay đổi và ta chọn những người khiến mình thấy dễ chịu. Nhưng bệnh tật và mất mát kéo theo hướng ngược lại, và ở tuổi rất cao, chúng chiếm ưu thế."
+    },
+    {
+      "heading_en": "No lonelier than their parents",
+      "heading_vi": "Không cô đơn hơn thế hệ cha mẹ",
+      "body_en": "Hawkley's team also compared generations. Americans born in 1948–1965 were [p:no more likely to feel lonely] than those born in 1920–1947 at the same age, and older adults did not become lonelier between 2005 and 2016. In Sweden, surveys of people aged 85, 90 and 95 found no rise in loneliness over ten years, and surveys of older adults in Finland, Germany and England point the same way. The idea that each new generation is lonelier than the last, perhaps because more people live alone, simply does not show up in these data.",
+      "body_vi": "Nhóm của Hawkley cũng so sánh giữa các thế hệ. Người Mỹ sinh năm 1948–1965 [p:không hề dễ cô đơn hơn] những người sinh năm 1920–1947 khi ở cùng độ tuổi, và người cao tuổi cũng không cô đơn hơn trong giai đoạn 2005–2016. Ở Thuỵ Điển, các khảo sát với người 85, 90 và 95 tuổi không thấy cô đơn tăng lên trong mười năm, và các khảo sát người cao tuổi ở Phần Lan, Đức và Anh cũng cho kết quả tương tự. Ý tưởng rằng mỗi thế hệ mới lại cô đơn hơn thế hệ trước, có lẽ vì nhiều người sống một mình hơn, đơn giản là không xuất hiện trong các dữ liệu này."
+    },
+    {
+      "heading_en": "What about teenagers?",
+      "heading_vi": "Còn thanh thiếu niên thì sao?",
+      "body_en": "Psychologists [y:Kali Trzesniewski] and [y:Brent Donnellan] studied surveys of American high-school seniors from 1976 to 2006 {trzesniewski-2010}. Newer classes were not more likely to report loneliness than earlier ones. A later analysis of the same survey, covering all age groups, found [g:no sign of rising loneliness] and even a very small decline among high-school students {clark-2014}. The change was so small that the trend is effectively flat. In 2018 *The Economist* reasoned that isolation seemed to be increasing, 'so loneliness may be too'. The evidence suggests that this reasoning is wrong.",
+      "body_vi": "Hai nhà tâm lý học [y:Kali Trzesniewski] và [y:Brent Donnellan] phân tích các khảo sát học sinh năm cuối trung học ở Mỹ từ 1976 đến 2006 {trzesniewski-2010}. Các khoá sau không dễ nói mình cô đơn hơn các khoá trước. Một phân tích sau này trên cùng bộ khảo sát, bao gồm mọi lứa tuổi, [g:không thấy dấu hiệu cô đơn gia tăng] và thậm chí ghi nhận mức giảm rất nhỏ ở học sinh trung học {clark-2014}. Thay đổi nhỏ đến mức xu hướng gần như đi ngang. Năm 2018, tạp chí *The Economist* lập luận rằng sự cô lập có vẻ đang tăng, 'nên cô đơn có lẽ cũng vậy'. Bằng chứng cho thấy lập luận đó sai."
+    },
+    {
+      "heading_en": "Real problem, wrong headline",
+      "heading_vi": "Vấn đề có thật, tiêu đề thì sai",
+      "body_en": "None of this means loneliness should be ignored. People who suffer from it need support, and large social changes such as the rise of living alone raise real policy questions. But Ortiz-Ospina argues that inaccurate, over-simplified stories make these challenges harder to understand. As he puts it, there is an [p:epidemic of headlines] about a loneliness epidemic, yet no empirical support for the claim that loneliness is increasing, let alone [g:spreading at epidemic rates].",
+      "body_vi": "Điều này không có nghĩa nên phớt lờ chuyện cô đơn. Những người đang chịu đựng nó cần được hỗ trợ, và những thay đổi xã hội lớn như việc nhiều người sống một mình đặt ra các câu hỏi chính sách thật sự. Nhưng Ortiz-Ospina cho rằng những câu chuyện thiếu chính xác và quá đơn giản khiến các thách thức này khó hiểu hơn. Như ông viết, đang có một [p:đại dịch tiêu đề] về đại dịch cô đơn, trong khi không có bằng chứng thực nghiệm nào cho thấy cô đơn đang tăng, càng không phải [g:lây lan như một đại dịch]."
+    }
+  ],
+  "keyPoint": {
+    "en": "A single survey is like a [p:photo of a crowd]: it shows who is standing where, not who is moving. Before believing that something is 'on the rise', ask *does this data follow the same people or the same age group over time, or is it just one snapshot?*",
+    "vi": "Một cuộc khảo sát đơn lẻ giống như [p:bức ảnh chụp đám đông]: nó cho thấy ai đang đứng ở đâu, chứ không cho thấy ai đang di chuyển. Trước khi tin rằng điều gì đó 'đang gia tăng', hãy hỏi *dữ liệu này có theo dõi cùng một nhóm người hoặc cùng độ tuổi qua thời gian không, hay chỉ là một bức ảnh chụp?*"
+  },
+  "applySteps": {
+    "en": [
+      "Next time a headline says something is 'rising', find out whether the data compares the same group over time.",
+      "Send a message today to one person you have not spoken to in a while.",
+      "Notice the difference between time you spend alone by choice and moments you feel lonely, and write one down."
+    ],
+    "vi": [
+      "Lần tới khi một tiêu đề nói điều gì đó 'đang tăng', hãy tìm hiểu xem dữ liệu có so sánh cùng một nhóm qua thời gian không.",
+      "Hôm nay, nhắn tin cho một người bạn đã lâu không trò chuyện.",
+      "Để ý sự khác nhau giữa lúc bạn chủ động ở một mình và lúc bạn thấy cô đơn, rồi ghi lại một khoảnh khắc."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-2019",
+      "label": "Our World in Data (2019)",
+      "url": "https://ourworldindata.org/loneliness-epidemic"
+    },
+    {
+      "id": "ons",
+      "label": "ONS Community Life Survey",
+      "url": "https://www.gov.uk/government/collections/community-life-survey--2"
+    },
+    {
+      "id": "hawkley-2019",
+      "label": "Psychology and Aging (2019)",
+      "url": "https://doi.org/10.1037/pag0000365"
+    },
+    {
+      "id": "trzesniewski-2010",
+      "label": "Perspectives Psych. Sci. (2010)",
+      "url": "https://doi.org/10.1177/1745691609356789"
+    },
+    {
+      "id": "clark-2014",
+      "label": "PSPB (2014)",
+      "url": "https://doi.org/10.1177/0146167214557007"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/loneliness-epidemic.webp",
+    "provider": "unsplash",
+    "author": "Mikael Kristenson",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/3f4sQIums6k"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-is-there-a-loneliness-epidemic",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Esteban Ortiz-Ospina"
+    ],
+    "originalTitle": "Is there a loneliness epidemic?",
+    "originalUrl": "https://ourworldindata.org/loneliness-epidemic",
+    "publisher": "Our World in Data",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoQABwAPu1orU6ppiSiMAgBMB2JZQDG9GlhShFmcdjvwAAA/vuv5Lybu160s67Uogg1K3KFXDkUFZp3uA/kUusWW7ZZ8LV+SZvMWLokGMcx0NnR/6Io0nwwAo2CpD6CRbCB6IxXbjmR3KqU9hi3qdQAAAA=",
+  "dominant": "#7c7672"
+}
