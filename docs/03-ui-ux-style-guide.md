@@ -62,15 +62,17 @@ Font: **Inter** (Google Fonts, subset `latin` + `vietnamese`), fallback `-apple-
 
 | Token | Size / Line height | Weight | Letter spacing | Dùng cho |
 |-------|-------------------|--------|----------------|----------|
-| `display` | 34 / 38 | 800 | -0.02em | Tiêu đề Cover (CMP-08) |
-| `title-lg` | 28 / 34 | 700 | -0.01em | H2 trong bài ("The problem is not you, it is biology") |
-| `title-md` | 22 / 28 | 700 | -0.01em | Tiêu đề Details (khi chưa cuộn), tiêu đề màn hình |
-| `hook` | 26 / 36 | 600 | -0.01em | Section 1 (hook) |
-| `body` | 19 / 30 | 500 | 0 | Đoạn văn bài viết |
-| `body-sm` | 16 / 24 | 500 | 0 | KEY POINT, bình luận |
+| `display` | 31 / 39 | 800 | -0.025em | Tiêu đề Cover (CMP-08) |
+| `title-lg` | 20 / 25 | 700 | -0.015em | H2 trong bài ("The problem is not you, it is biology") |
+| `title-md` | 21 / 27 | 700 | -0.015em | Tiêu đề Details (khi chưa cuộn), tiêu đề Apply, tiêu đề sheet |
+| `hook` | 20 / 28.5 | 600 | -0.012em | Section 1 (hook) |
+| `body` | 15.5 / 26 | 500 | 0 | Đoạn văn bài viết |
+| `body-sm` | 15 / 23.5 | 500 | 0 | KEY POINT, bình luận, bước Apply |
 | `label` | 15 / 20 | 600 | 0 | Tiêu đề nhỏ dính (sticky), pill "Details", tên user |
 | `meta` | 13 / 18 | 500 | 0.01em | Số đếm, "Swipe to…", `[Source · N]` |
 | `overline` | 12 / 16 | 700 | 0.12em, uppercase | "KEY POINT" |
+
+Các cỡ chữ trên đã được đo lại từ screenshot/video tham chiếu và dùng trong `prototype/reader-demo.html`. Kích thước nút đo được: rail Cover 50px, ActionRow Details 40px (thu còn 32px), nút tìm kiếm/chat ở đáy 50px, nút + 66px ở Cover và thu còn ~52px ở Details.
 
 Highlight chip giữ nguyên cỡ chữ của đoạn chứa nó. In đậm dùng weight 700, nghiêng dùng *italic* thật của Inter.
 

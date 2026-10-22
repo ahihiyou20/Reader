@@ -1,0 +1,1195 @@
+<title>Reader Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..800;1,14..32,400..700&display=swap">
+<style>
+/* Layout: full-bleed phone app; on wide screens it sits in a 390×844 device frame with notes beside it.
+   Single dark look on purpose (clone of a dark-only reading app). Tokens mirror docs/03-ui-ux-style-guide.md. */
+:root {
+  --bg: #0B0B0F;
+  --stage: #08080B;
+  --fg: #FFFFFF;
+  --fg2: rgba(255, 255, 255, 0.72);
+  --fg3: rgba(255, 255, 255, 0.52);
+  --pink: #FF3D8B;
+  --violet: #8B5CF6;
+  --kp: #FF9A4D;
+  --save: #FACC15;
+  --sheet: #16161D;
+  --hl-y: rgba(196, 160, 30, 0.50);
+  --hl-p: rgba(214, 48, 88, 0.48);
+  --hl-g: rgba(52, 150, 82, 0.50);
+  --hl-c: rgba(255, 255, 255, 0.15);
+  --grad-brand: linear-gradient(135deg, #FF3D8B 0%, #8B5CF6 55%, #60A5FA 100%);
+  --grad-cta: linear-gradient(90deg, #F472B6 0%, #A78BFA 55%, #6366F1 100%);
+  --grad-engage: linear-gradient(180deg, #DA4690 0%, #C34BB0 36%, #9D5BE0 70%, #6F7DF2 100%);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --font: "Inter", -apple-system, "SF Pro Text", Roboto, "Segoe UI", sans-serif;
+  --sat: 0px;
+  --sab: 0px;
+  color-scheme: dark;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--stage);
+  color: var(--fg);
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+[hidden] { display: none !important; }
+body { font-family: var(--font); font-optical-sizing: auto; -webkit-font-smoothing: antialiased; }
+button {
+  font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
+  touch-action: manipulation; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+:focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; }
+input { font: 500 16px var(--font); color: var(--fg); }
+.ic { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.ic.f { fill: currentColor; }
+
+/* Stage & device frame */
+.stage { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; gap: 56px;
+  background: radial-gradient(60% 50% at 50% 40%, #17121c 0%, var(--stage) 70%); }
+.phone { position: relative; width: 390px; height: 844px; flex: none; overflow: hidden; background: var(--bg);
+  border-radius: 54px; box-shadow: 0 0 0 10px #1b1b21, 0 0 0 11px #2c2c34, 0 40px 90px rgba(0, 0, 0, 0.65);
+  --sat: 47px; --sab: 20px; isolation: isolate; transform-origin: center; }
+.stage:not(.framed) .phone { position: fixed; inset: 0; width: auto; height: auto; border-radius: 0; box-shadow: none;
+  --sat: env(safe-area-inset-top, 0px); --sab: env(safe-area-inset-bottom, 0px); transform: none !important; }
+.statusbar { position: absolute; top: 0; left: 0; right: 0; height: 47px; z-index: 80; display: flex; align-items: center;
+  justify-content: space-between; padding: 4px 30px 0 46px; font: 600 16px var(--font); pointer-events: none; }
+.statusbar .r { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.homebar { position: absolute; bottom: 7px; left: 50%; width: 134px; height: 5px; margin-left: -67px; border-radius: 3px;
+  background: rgba(255, 255, 255, 0.85); z-index: 80; pointer-events: none; }
+.stage:not(.framed) .statusbar, .stage:not(.framed) .homebar { display: none; }
+.notes { display: none; width: 290px; color: var(--fg2); font: 400 14px/22px var(--font); }
+.stage.wide .notes { display: block; }
+.notes h1 { margin: 0 0 6px; color: var(--fg); font: 700 22px/28px var(--font); letter-spacing: -0.01em; }
+.notes p { margin: 0 0 16px; }
+.notes dl { display: grid; grid-template-columns: auto 1fr; gap: 10px 14px; margin: 0 0 18px; }
+.notes dt { color: var(--fg); font-weight: 600; white-space: nowrap; }
+.notes dd { margin: 0; }
+.notes kbd { display: inline-block; min-width: 20px; padding: 1px 6px; border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px; font: 600 12px/18px var(--font); text-align: center; color: var(--fg); }
+.notes .small { font-size: 12.5px; color: var(--fg3); }
+
+/* Feed */
+.feed { position: absolute; inset: 0; overflow: hidden; }
+.track { position: absolute; inset: 0; will-change: transform; }
+.article { position: absolute; left: 0; width: 100%; height: 100%; overflow: hidden; }
+.bg, .layer, .art { position: absolute; inset: 0; }
+.bg { overflow: hidden; }
+.art svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.layer.blur, .layer.eng { opacity: 0; will-change: opacity; }
+.layer.blur .art { filter: blur(10px) brightness(0.5) saturate(1.1); transform: scale(1.12); }
+.layer.blur .dim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11, 11, 15, 0.25), rgba(11, 11, 15, 0.5) 55%, rgba(11, 11, 15, 0.78)); }
+.layer.eng { background: radial-gradient(70% 30% at 80% 8%, rgba(255, 140, 200, 0.35), transparent 70%), var(--grad-engage); }
+.grain { position: absolute; inset: 0; pointer-events: none; opacity: 0.16; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.art-decide { background: radial-gradient(70% 40% at 15% 18%, rgba(130, 110, 95, 0.55), transparent 70%),
+  radial-gradient(60% 40% at 92% 26%, rgba(95, 80, 70, 0.5), transparent 70%),
+  linear-gradient(180deg, #2b2421 0%, #3a2c26 34%, #3a1613 68%, #1d0907 100%); }
+.art-dopa { background: radial-gradient(45% 28% at 52% 50%, rgba(255, 61, 139, 0.45), transparent 72%),
+  radial-gradient(60% 40% at 25% 22%, rgba(40, 120, 160, 0.45), transparent 70%),
+  linear-gradient(180deg, #06161f 0%, #0a2230 50%, #130a20 100%); }
+.art-sleep { background: radial-gradient(40% 22% at 76% 18%, rgba(243, 233, 198, 0.22), transparent 70%),
+  linear-gradient(180deg, #0a1030 0%, #121a44 45%, #0b0f24 100%); }
+.art-habit { background: radial-gradient(50% 30% at 78% 30%, rgba(250, 204, 21, 0.22), transparent 70%),
+  linear-gradient(180deg, #0c1a12 0%, #142a1c 50%, #1d1a0c 100%); }
+
+.views { position: absolute; inset: 0; will-change: transform; }
+.view { position: absolute; top: 0; bottom: 0; width: 100%; }
+.view.cover { left: 0; touch-action: none; }
+.view.details { left: 100%; touch-action: pan-y; }
+.view.engage { left: 200%; touch-action: pan-y; }
+
+/* Shared controls */
+.cb { display: grid; place-items: center; border-radius: 50%; background: rgba(28, 28, 34, 0.38);
+  border: 1.5px solid rgba(255, 255, 255, 0.28); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  color: var(--fg); transition: transform 120ms var(--ease-out), background-color 120ms var(--ease-out); }
+.cb:active { transform: scale(0.95); background-color: rgba(70, 70, 80, 0.5); }
+.pill { height: 38px; padding: 0 24px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(22, 22, 28, 0.45); border: 1px solid rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); font: 600 16px var(--font);
+  transition: transform 120ms var(--ease-out); }
+.pill:active { transform: scale(0.97); }
+.hint { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; color: var(--fg2); font: 600 14px var(--font); white-space: nowrap; }
+.hint .ic { width: 18px; height: 18px; }
+.act { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.act .n { font: 500 14px/18px var(--font); color: var(--fg2); font-variant-numeric: tabular-nums; }
+.act.lg .cb { width: 50px; height: 50px; }
+.act.lg .ic { width: 26px; height: 26px; }
+.act.md .cb { width: 40px; height: 40px; }
+.act.md .ic { width: 20px; height: 20px; }
+.act.md .n { font-size: 13px; line-height: 16px; }
+.act[data-act="share"] .ic { stroke-width: 1.7; }
+.act.on[data-act="like"] .ic { color: var(--pink); }
+.act.on[data-act="save"] .ic { color: var(--save); }
+
+/* Cover */
+.cover .scrim { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.32) 70%, rgba(0, 0, 0, 0.6) 100%); }
+.crow { position: absolute; left: 16px; right: 16px; top: calc(41.8% - 20px); height: 40px; display: flex; align-items: center; }
+.gridbtn { width: 36px; height: 36px; }
+.gridbtn .ic { width: 20px; height: 20px; }
+.epill { margin-left: 46px; padding: 0 12px 0 24px; height: 42px; font-size: 17px; }
+.epill .cmp { position: relative; display: grid; }
+.epill .cmp .ic { width: 26px; height: 26px; }
+.epill .dot { position: absolute; top: -2px; right: -3px; width: 9px; height: 9px; border-radius: 50%; background: var(--pink); }
+.ctitle { position: absolute; left: 18px; top: calc(41.8% + 38px); width: 68%; margin: 0; cursor: pointer;
+  font: 800 31px/39px var(--font); letter-spacing: -0.025em; text-wrap: balance; }
+.ctitle span { padding: 0 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  background: linear-gradient(90deg, rgba(255, 92, 150, 0.52), rgba(255, 92, 150, 0.16));
+  text-shadow: 0 0 14px rgba(255, 80, 150, 0.75), 0 0 2px rgba(255, 255, 255, 0.4); }
+.rail { position: absolute; right: 14px; top: calc(41.8% + 85px); display: flex; flex-direction: column; gap: 26px; }
+
+/* Details */
+.dscroll { position: absolute; inset: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none;
+  padding: calc(var(--sat) + 363px) 16px 360px;
+  -webkit-mask-image: linear-gradient(180deg, transparent calc(var(--sat) + 190px), #000 calc(var(--sat) + 226px), #000 calc(100% - 200px), rgba(0, 0, 0, 0.3) calc(100% - 120px));
+  mask-image: linear-gradient(180deg, transparent calc(var(--sat) + 190px), #000 calc(var(--sat) + 226px), #000 calc(100% - 200px), rgba(0, 0, 0, 0.3) calc(100% - 120px)); }
+.dscroll::-webkit-scrollbar { display: none; }
+.sec { opacity: 0.32; transition: opacity 250ms var(--ease-out); margin-bottom: 28px; }
+.sec.on { opacity: 1; }
+.sec h3 { margin: 0 0 10px; font: 700 20px/25px var(--font); letter-spacing: -0.015em; text-wrap: balance; }
+.sec p { margin: 0; font: 500 15.5px/26px var(--font); }
+.sec.hook p { font: 600 20px/28.5px var(--font); letter-spacing: -0.012em; }
+.sec b { font-weight: 700; }
+.hl, .cite { border-radius: 5px; padding: 1px 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.hl.y { background: var(--hl-y); }
+.hl.p { background: var(--hl-p); }
+.hl.g { background: var(--hl-g); }
+.cite { background: var(--hl-c); color: rgba(255, 255, 255, 0.84); font-size: 0.9em; cursor: pointer; }
+.kp { position: relative; overflow: hidden; padding: 18px 18px 20px 21px; border-radius: 14px;
+  background: linear-gradient(180deg, rgba(150, 40, 80, 0.32), rgba(30, 16, 26, 0) 55%), rgba(26, 16, 24, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.08); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+  transition: transform 250ms var(--ease-out), opacity 250ms var(--ease-out); }
+.kp::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--grad-brand); }
+.kp.wait { opacity: 0; transform: translateY(16px); }
+.kp-l { display: flex; align-items: center; gap: 9px; margin-bottom: 12px; color: var(--kp); font: 700 11.5px var(--font); letter-spacing: 0.12em; }
+.kp-l span { font-size: 15px; letter-spacing: 0; }
+.kp p { margin: 0; font: 500 15px/23.5px var(--font); }
+.srcline { display: flex; align-items: center; gap: 8px; margin-top: 26px; color: var(--fg3); font: 500 13px var(--font); }
+.srcline .ic { width: 16px; height: 16px; }
+.dhead { position: absolute; inset: 0 0 auto 0; height: 0; z-index: 2; pointer-events: none; }
+.dhead .prow, .dhead .arow { pointer-events: auto; }
+.prow { position: absolute; left: 16px; right: 16px; top: calc(var(--sat) + 152px); display: flex; align-items: center; will-change: transform; }
+.dpill { height: 36px; padding: 0 26px; font-size: 15.5px; }
+.btitle { position: absolute; left: 16px; right: 16px; top: calc(var(--sat) + 201px); margin: 0;
+  font: 700 21px/27px var(--font); letter-spacing: -0.015em; text-wrap: balance; will-change: transform, opacity; }
+.stitle { position: absolute; left: 16px; right: 16px; top: calc(var(--sat) + 109px); opacity: 0;
+  font: 700 15px/20px var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.arow { position: absolute; left: 22px; top: calc(var(--sat) + 265px); display: flex; gap: 29px; transform-origin: left top; will-change: transform; }
+.dfoot { position: absolute; left: 0; right: 0; bottom: calc(var(--sab) + 68px); z-index: 2; display: flex; flex-direction: column;
+  align-items: center; gap: 10px; pointer-events: none; }
+.nextbtn { width: 46px; height: 46px; background: rgba(28, 28, 32, 0.82); border-color: rgba(255, 255, 255, 0.12); pointer-events: auto; }
+.nextbtn .ic { width: 28px; height: 28px; stroke-width: 3; }
+.dots { display: flex; gap: 8px; }
+.dots i { width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, 0.4); transition: background-color 200ms var(--ease-out); }
+.dots i.on { background: #fff; }
+
+/* Comments & Apply */
+.escroll { position: absolute; top: 0; left: 0; right: 0; bottom: calc(var(--sab) + 232px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none;
+  padding: calc(var(--sat) + 74px) 16px 28px;
+  -webkit-mask-image: linear-gradient(180deg, transparent calc(var(--sat) + 52px), #000 calc(var(--sat) + 70px), #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(180deg, transparent calc(var(--sat) + 52px), #000 calc(var(--sat) + 70px), #000 calc(100% - 28px), transparent); }
+.escroll::-webkit-scrollbar { display: none; }
+.apply { padding: 20px 20px 16px; border-radius: 20px; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.16); }
+.apply h3 { margin: 0 0 4px; font: 700 21px/27px var(--font); letter-spacing: -0.015em; text-wrap: balance; }
+.asub { margin: 0 0 8px; font: 500 14px/20px var(--font); color: rgba(255, 255, 255, 0.82); }
+.step { display: flex; gap: 12px; align-items: flex-start; width: 100%; padding: 9px 0; text-align: left; font: 500 15px/22px var(--font); }
+.chk { flex: none; width: 24px; height: 24px; margin-top: -1px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.9);
+  display: grid; place-items: center; transition: background-color 150ms var(--ease-out); }
+.chk .ic { width: 14px; height: 14px; stroke-width: 3.2; opacity: 0; color: #B5459F; transition: opacity 150ms var(--ease-out); }
+.step[aria-pressed="true"] .chk { background: #fff; }
+.step[aria-pressed="true"] .chk .ic { opacity: 1; }
+.step[aria-pressed="true"] .stx { opacity: 0.72; text-decoration: line-through; text-decoration-color: rgba(255, 255, 255, 0.5); }
+.abadge { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 6px 12px; border-radius: 999px;
+  background: #fff; color: #A63C93; font: 700 13px var(--font); }
+.abadge .ic { width: 15px; height: 15px; stroke-width: 3; }
+.chead { display: flex; align-items: center; gap: 8px; margin: 26px 0 10px; font: 600 15px var(--font); }
+.chead .ic { width: 18px; height: 18px; }
+.cempty { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 30px 0; color: rgba(255, 255, 255, 0.8); font: 500 14px var(--font); }
+.cempty .ic { width: 40px; height: 40px; opacity: 0.6; stroke-width: 1.6; }
+.citem { display: flex; gap: 12px; padding: 10px 0; }
+.cav { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font: 700 13px var(--font); color: #1a1020; }
+.cmeta { font: 600 14px var(--font); }
+.cmeta span { margin-left: 6px; font-weight: 500; font-size: 12px; color: rgba(255, 255, 255, 0.7); }
+.ctext { margin: 3px 0 0; font: 500 14.5px/21px var(--font); overflow-wrap: anywhere; }
+.ebottom { position: absolute; left: 12px; right: 12px; bottom: calc(var(--sab) + 6px); display: flex; flex-direction: column; gap: 12px; }
+.cform { position: relative; height: 50px; border-radius: 999px; background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.18); }
+.cin { width: 100%; height: 100%; box-sizing: border-box; padding: 0 56px 0 22px; border: 0; background: none; outline: none; text-align: center; border-radius: 999px; }
+.cin::placeholder { color: rgba(255, 255, 255, 0.78); }
+.cin:focus { text-align: left; }
+.cform:focus-within { box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); }
+.csend { position: absolute; right: 5px; top: 5px; width: 40px; height: 40px; border-radius: 50%; background: #fff; color: #A63C93;
+  display: grid; place-items: center; opacity: 0; transform: scale(0.95); transition: opacity 150ms var(--ease-out), transform 150ms var(--ease-out); }
+.cform:focus-within .csend { opacity: 1; transform: none; }
+.csend .ic { width: 18px; height: 18px; }
+.ctarow { display: flex; gap: 10px; }
+.cta { flex: 1; height: 46px; border-radius: 999px; background: var(--grad-cta); display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font: 600 16.5px var(--font); box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3); transition: transform 120ms var(--ease-out); }
+.cta:active, .ctaside:active { transform: scale(0.97); }
+.cta .ic { width: 22px; height: 22px; }
+.ctaside { width: 26px; height: 46px; border-radius: 999px; background: rgba(40, 24, 70, 0.85); transition: transform 120ms var(--ease-out); }
+.banner { position: relative; display: flex; align-items: center; gap: 16px; padding: 16px 40px 16px 16px; border-radius: 22px;
+  background: rgba(54, 44, 110, 0.42); border: 1px solid rgba(255, 255, 255, 0.18); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.phone.nobanner .banner { display: none; }
+.blogo { display: flex; flex-direction: column; align-items: center; gap: 4px; padding-right: 16px; border-right: 1px solid rgba(255, 255, 255, 0.18); }
+.blogo b { font: 800 25px/30px var(--font); letter-spacing: -0.03em; background: var(--grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.badge { padding: 2px 9px; border-radius: 999px; background: var(--save); color: #1a1406; font: 700 10.5px/16px var(--font); }
+.btext { flex: 1; min-width: 0; }
+.bt1 { font: 700 15px/19px var(--font); }
+.bt2 { margin-top: 4px; font: 500 12px var(--font); color: rgba(255, 255, 255, 0.75); }
+.bt2 b { color: #FF6FAE; }
+.bar { height: 4px; margin-top: 8px; border-radius: 2px; background: rgba(255, 255, 255, 0.2); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--grad-cta); }
+.bx { position: absolute; top: 50%; right: 10px; width: 30px; height: 30px; margin-top: -15px; display: grid; place-items: center; color: rgba(255, 255, 255, 0.75); }
+.bx .ic { width: 18px; height: 18px; }
+
+/* Chrome */
+.topbar { position: absolute; left: 0; right: 0; top: calc(var(--sat) + 4px); height: 46px; z-index: 30; display: flex; align-items: center; gap: 10px; padding: 0 22px 0 16px; }
+.avatar { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font: 700 13px var(--font);
+  background: linear-gradient(135deg, #f6c28b, #d97757 60%, #7a3e2a); box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.55); }
+.uname { min-width: 0; max-width: 112px; margin-left: 4px; font: 600 16px var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.streak { display: flex; align-items: center; gap: 5px; margin-left: 8px; font: 700 17px var(--font); font-variant-numeric: tabular-nums; }
+.fire { font-size: 21px; line-height: 1; display: inline-block; }
+.snum { display: inline-block; height: 21px; overflow: hidden; }
+.snum span { display: block; line-height: 21px; }
+.tb-ic { width: 36px; height: 36px; display: grid; place-items: center; transition: transform 120ms var(--ease-out); }
+.tb-ic:active { transform: scale(0.92); }
+.tb-ic.bell .ic { transform: rotate(-18deg); }
+.lang { margin-left: auto; height: 36px; padding: 0 11px 0 15px; display: flex; align-items: center; gap: 6px; border-radius: 999px;
+  background: rgba(18, 18, 24, 0.38); border: 1px solid rgba(255, 255, 255, 0.14); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+  font: 600 17px var(--font); transition: background-color 200ms var(--ease-out), transform 120ms var(--ease-out); }
+.lang:active { transform: scale(0.96); }
+.lang .ic { width: 16px; height: 16px; stroke-width: 2.4; }
+.phone.on-engage .lang { background: rgba(80, 10, 56, 0.6); }
+.bnav { position: absolute; left: 0; right: 0; bottom: calc(var(--sab) + 6px); height: 66px; z-index: 30; pointer-events: none; will-change: transform; }
+.nb { position: absolute; top: 50%; pointer-events: auto; display: grid; place-items: center; border-radius: 50%; transition: transform 120ms var(--ease-out); }
+.nb.side { width: 50px; height: 50px; margin-top: -25px; background: rgba(22, 22, 26, 0.74); border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.nb.side:active { transform: scale(0.95); }
+#nbSearch { left: calc(50% - 120px); }
+#nbSearch .ic { width: 24px; height: 24px; stroke-width: 2.4; }
+#nbChat { left: calc(50% + 70px); }
+#nbChat .ic { width: 26px; height: 26px; }
+.plusw { position: absolute; left: 50%; top: 50%; width: 66px; height: 66px; margin: -33px 0 0 -33px; pointer-events: auto; will-change: transform; }
+.nb.plus { inset: 0; top: 0; width: 66px; height: 66px; color: #111; border: 3.5px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box, var(--grad-brand) border-box;
+  box-shadow: 0 0 18px rgba(255, 61, 139, 0.45), 0 0 32px rgba(139, 92, 246, 0.35); }
+.nb.plus:active { transform: scale(0.95); }
+.nb.plus .ic { width: 32px; height: 32px; stroke-width: 2.8; }
+
+.lmenu { position: absolute; z-index: 60; top: calc(var(--sat) + 10px); right: 26px; width: 224px; padding: 8px 0; border-radius: 22px;
+  background: rgba(92, 22, 72, 0.8); border: 1px solid rgba(255, 255, 255, 0.12); -webkit-backdrop-filter: blur(28px) saturate(140%); backdrop-filter: blur(28px) saturate(140%);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35); transform-origin: calc(100% - 34px) 20px; opacity: 0; transform: scale(0.95); pointer-events: none;
+  transition: opacity 150ms var(--ease-out), transform 150ms var(--ease-out); }
+.lmenu.open { opacity: 1; transform: none; pointer-events: auto; transition-duration: 180ms; }
+.lmenu button { display: flex; align-items: center; gap: 10px; width: 100%; height: 46px; padding: 0 18px; font: 600 16.5px var(--font); }
+.lmenu button:active { background: rgba(255, 255, 255, 0.08); }
+.lmenu .ck { width: 18px; display: grid; }
+.lmenu .ck .ic { width: 18px; height: 18px; stroke-width: 2.6; visibility: hidden; }
+.lmenu [aria-checked="true"] .ck .ic { visibility: visible; }
+
+.msgs { position: absolute; inset: 0; z-index: 45; will-change: transform; transform: translate3d(100%, 0, 0); touch-action: pan-y;
+  background: linear-gradient(180deg, rgba(16, 16, 20, 0.6) 0, rgba(28, 28, 33, 0.97) calc(var(--sat) + 150px), #1c1c21 100%);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.mhead { position: absolute; left: 16px; right: 16px; top: calc(var(--sat) + 140px); display: flex; align-items: center; justify-content: space-between; }
+.mback { width: 40px; height: 40px; }
+.mback .ic { width: 22px; height: 22px; }
+.mpill { display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 24px; border-radius: 999px; background: rgba(255, 255, 255, 0.12); font: 700 18px var(--font); }
+.mpill i { width: 14px; height: 14px; border-radius: 50%; background: #fff; }
+.mempty { position: absolute; left: 0; right: 0; top: 62%; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--fg2); font: 500 14px var(--font); }
+.mav { width: 56px; height: 56px; border-radius: 50%; background: #3A3A42; display: grid; place-items: center; color: #9a9aa6; }
+.mav .ic { width: 28px; height: 28px; }
+
+.scrim { position: absolute; inset: 0; z-index: 54; background: rgba(0, 0, 0, 0.5); opacity: 0; pointer-events: none; transition: opacity 200ms var(--ease-out); }
+.scrim.on { opacity: 1; pointer-events: auto; }
+.sheet { position: absolute; left: 0; right: 0; bottom: 0; z-index: 55; max-height: 82%; display: flex; flex-direction: column;
+  background: var(--sheet); border-radius: 26px 26px 0 0; border-top: 1px solid rgba(255, 255, 255, 0.08); will-change: transform; }
+.sgrab { flex: none; height: 26px; display: grid; place-items: center; touch-action: none; cursor: grab; }
+.sgrab i { width: 38px; height: 5px; border-radius: 3px; background: rgba(255, 255, 255, 0.25); }
+.sbody { overflow-y: auto; overscroll-behavior: contain; padding: 4px 16px calc(var(--sab) + 22px); }
+.sbody h2 { margin: 0 0 14px; font: 700 20px/26px var(--font); letter-spacing: -0.01em; }
+.sinput { width: 100%; box-sizing: border-box; height: 46px; padding: 0 16px 0 44px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-opacity='.6' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") 16px 50% / 18px no-repeat; outline: none; }
+.sinput:focus { border-color: rgba(255, 255, 255, 0.35); }
+.terms { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; }
+.chip { height: 34px; padding: 0 14px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.1); font: 600 14px var(--font); }
+.chip.term { background: var(--hl-p); border-color: transparent; }
+.chip[aria-pressed="true"] { background: #fff; color: #111; }
+.rlist { display: flex; flex-direction: column; margin-top: 8px; }
+.ritem { display: flex; align-items: center; gap: 14px; padding: 10px 0; text-align: left; width: 100%; }
+.thumb { position: relative; flex: none; width: 58px; height: 58px; border-radius: 12px; overflow: hidden; }
+.rtitle { font: 600 15px/20px var(--font); }
+.rmeta { margin-top: 3px; font: 500 12.5px var(--font); color: var(--fg3); }
+.rnone { padding: 24px 0; color: var(--fg3); text-align: center; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.card { position: relative; aspect-ratio: 3 / 4; max-width: 100%; border-radius: 16px; overflow: hidden; text-align: left; transition: transform 120ms var(--ease-out); }
+.card:active { transform: scale(0.97); }
+.card .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.75)); }
+.card .ct { position: absolute; left: 12px; right: 12px; bottom: 30px; font: 700 15px/19px var(--font); letter-spacing: -0.01em; }
+.card .cl { position: absolute; left: 12px; bottom: 10px; display: flex; align-items: center; gap: 4px; font: 500 12px var(--font); color: var(--fg2); }
+.card .cl .ic { width: 13px; height: 13px; }
+.srcs { margin: 0; padding: 0 0 0 22px; display: flex; flex-direction: column; gap: 12px; }
+.srcs li { font: 600 15px/21px var(--font); }
+.srcs span { display: block; font: 500 13px/18px var(--font); color: var(--fg3); }
+.soon { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 8px 8px 4px; }
+.soon .ico { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: rgba(255, 255, 255, 0.08); }
+.soon .ico .ic { width: 28px; height: 28px; }
+.soon p { margin: 0; color: var(--fg2); font: 500 14.5px/21px var(--font); max-width: 30ch; }
+.soon .cta { width: 100%; margin-top: 10px; }
+
+.toast { position: absolute; left: 50%; bottom: calc(var(--sab) + 150px); z-index: 70; max-width: calc(100% - 48px); padding: 10px 16px; border-radius: 999px;
+  background: rgba(20, 20, 28, 0.92); border: 1px solid rgba(255, 255, 255, 0.1); font: 600 14px var(--font); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  opacity: 0; transform: translate(-50%, 16px); pointer-events: none; transition: opacity 180ms var(--ease-out), transform 180ms var(--ease-out); }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+.bigheart { position: absolute; z-index: 40; width: 96px; height: 96px; color: var(--pink); pointer-events: none; filter: drop-shadow(0 6px 18px rgba(255, 61, 139, 0.5)); }
+.bigheart .ic { width: 96px; height: 96px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sec, .kp, .toast, .lmenu, .dots i { transition-duration: 1ms; }
+  .kp.wait { transform: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .pill, .cb, .nb.side, .lang, .kp, .banner, .lmenu { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .cb, .pill, .lang { background-color: rgba(20, 20, 28, 0.92); }
+}
+</style>
+
+<div class="stage" id="stage">
+  <div class="phone" id="phone">
+    <div class="feed" id="feed" role="feed"><div class="track" id="track"></div></div>
+
+    <header class="topbar">
+      <div class="avatar" aria-hidden="true">MA</div>
+      <span class="uname">Minh Anh Nguyễn</span>
+      <div class="streak" id="streak" aria-label="Streak"><span class="fire" id="fire">🔥</span><span class="snum"><span id="snum">1</span></span></div>
+      <button class="tb-ic bell" data-act="bell" aria-label="Notifications" data-ic="bell"></button>
+      <button class="tb-ic" data-act="explore" aria-label="Explore" data-ic="compass"></button>
+      <button class="lang" id="langBtn" data-act="lang" aria-haspopup="menu" aria-expanded="false"><span id="langLabel">en</span><span data-ic="down"></span></button>
+    </header>
+
+    <nav class="bnav" id="bnav">
+      <button class="nb side" id="nbSearch" data-act="search" aria-label="Search" data-ic="search"></button>
+      <div class="plusw" id="plusw"><button class="nb plus" data-act="plus" aria-label="Create post" data-ic="plus"></button></div>
+      <button class="nb side" id="nbChat" data-act="chat" aria-label="Messages" data-ic="chat"></button>
+    </nav>
+
+    <div class="lmenu" id="lmenu" role="menu" aria-label="Language">
+      <button role="menuitemradio" data-act="pickLang" data-l="vi" aria-checked="false"><span class="ck" data-ic="check"></span><span>🇻🇳</span>Tiếng Việt</button>
+      <button role="menuitemradio" data-act="pickLang" data-l="en" aria-checked="true"><span class="ck" data-ic="check"></span><span>🇺🇸</span>English</button>
+    </div>
+
+    <div class="msgs" id="msgs" role="dialog" aria-label="Messages" inert>
+      <div class="mhead">
+        <button class="cb mback" data-act="msgClose" aria-label="Back" data-ic="left"></button>
+        <div class="mpill"><span data-t="messages">Messages</span><i></i></div>
+        <button class="tb-ic" aria-label="Friends" data-ic="users"></button>
+      </div>
+      <div class="mempty"><div class="mav" data-ic="user"></div><span data-t="noConv">No conversations yet</span></div>
+    </div>
+
+    <div class="scrim" id="scrim" data-act="sheetClose"></div>
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" hidden><div class="sgrab"><i></i></div><div class="sbody" id="sbody"></div></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="statusbar" aria-hidden="true"><span>10:28</span><span class="r">
+      <svg width="18" height="12" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="#fff"/><rect x="5" y="5.5" width="3" height="6.5" rx="1" fill="#fff"/><rect x="10" y="3" width="3" height="9" rx="1" fill="#fff" opacity=".35"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#fff" opacity=".35"/></svg>
+      5G
+      <svg width="27" height="13" viewBox="0 0 27 13"><rect x=".5" y=".5" width="23" height="12" rx="3.5" fill="none" stroke="#fff" opacity=".5"/><rect x="2" y="2" width="20" height="9" rx="2" fill="#fff"/><rect x="25" y="4.5" width="1.6" height="4" rx=".8" fill="#fff" opacity=".5"/></svg>
+    </span></div>
+    <div class="homebar"></div>
+  </div>
+
+  <aside class="notes">
+    <h1>Reader prototype</h1>
+    <p>Bản demo giao diện để so với app gốc. Kéo bằng chuột giống như vuốt trên điện thoại, hoặc dùng phím và con lăn.</p>
+    <dl>
+      <dt>Kéo ↑ ↓</dt><dd>Đổi bài (ở màn bìa)</dd>
+      <dt>Kéo ← →</dt><dd>Bìa ⇄ Chi tiết ⇄ Bình luận &amp; Áp dụng</dd>
+      <dt><kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd></dt><dd>Như trên, không có animation</dd>
+      <dt>Nhấp đúp</dt><dd>Thích bài (vào nền ảnh ở màn bìa)</dd>
+      <dt>Đọc tới Key Point</dt><dd>Giữ thẻ trên màn hình 2 giây, chuỗi 🔥 tăng lên 2</dd>
+      <dt>en ⌄</dt><dd>Đổi ngôn ngữ, giữ nguyên bài và đoạn đang đọc</dd>
+    </dl>
+    <p class="small">Ảnh nền là hình minh hoạ tạm, không phải ảnh của app gốc. Mở link này trên điện thoại để thử cử chỉ vuốt thật.</p>
+  </aside>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+// ---------- Icons (Lucide paths) ----------
+const ICON = {
+  heart: '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>',
+  save: '<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>',
+  share: '<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>',
+  comment: '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>',
+  chat: '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" fill="currentColor"/><circle cx="8" cy="12" r="1.4" fill="#18181c" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="#18181c" stroke="none"/><circle cx="16" cy="12" r="1.4" fill="#18181c" stroke="none"/>',
+  search: '<circle cx="11" cy="11" r="7.5"/><path d="m20.5 20.5-4.2-4.2"/>',
+  plus: '<path d="M5 12h14"/><path d="M12 5v14"/>',
+  compass: '<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>',
+  bell: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" fill="currentColor"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>',
+  grid: '<rect width="7" height="7" x="3" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="3" rx="1.5"/><rect width="7" height="7" x="14" y="14" rx="1.5"/><rect width="7" height="7" x="3" y="14" rx="1.5"/>',
+  chevrons: '<path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/>',
+  down: '<path d="m6 9 6 6 6-6"/>',
+  left: '<path d="m15 18-6-6 6-6"/>',
+  library: '<path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>',
+  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+  user: '<circle cx="12" cy="8" r="5" fill="currentColor"/><path d="M20 21a8 8 0 0 0-16 0Z" fill="currentColor"/>',
+  x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  arrowc: '<circle cx="12" cy="12" r="10" fill="currentColor" stroke="none"/><path d="M8 12h8" stroke="#7C6CF0"/><path d="m12 16 4-4-4-4" stroke="#7C6CF0"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  pen: '<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+  bubbles: '<path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/>'
+};
+const FILLED = new Set(['heart', 'save', 'comment', 'user']);
+const ic = (n, extra = '') => `<svg class="ic${FILLED.has(n) ? ' f' : ''}${extra ? ' ' + extra : ''}" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+document.querySelectorAll('[data-ic]').forEach(el => { el.insertAdjacentHTML('beforeend', ic(el.dataset.ic)); });
+
+// ---------- Content ----------
+const UI = {
+  en: {
+    details: 'Details', toDetails: 'Swipe to Details', toEngage: 'Swipe to Comments & Apply', explore: 'Explore', exploreTitle: 'Explore',
+    keyPoint: 'KEY POINT', source: n => `[Source · ${n}]`, applyTitle: 'Turn what you read into what you do.', applySub: 'Three small steps from this article',
+    applied: 'Applied', comments: n => `${n} Comment${n === 1 ? '' : 's'}`, noComments: 'No comments yet', writeComment: 'Write a comment',
+    exploreNow: 'Explore now', viewAll: 'View comments from everyone!', left: (r, t) => `Only <b>${r}</b> /${t} left`, founding: 'Founding',
+    messages: 'Messages', noConv: 'No conversations yet', copied: 'Link copied', streakUp: n => `🔥 ${n}-day streak!`,
+    appliedToast: 'Nice. You turned reading into action.', caughtUp: "You're all caught up", soon: 'Share your own insights',
+    soonSub: 'Writing your own posts is coming soon. We can tell you when it opens.', notify: 'Notify me', notified: "We'll let you know",
+    searchPh: 'Search articles or terms', noResults: q => `No articles found for “${q}”`, sources: 'Sources', all: 'All', read: n => `${n} min read`,
+    justNow: 'just now', like: 'Like', save: 'Save', share: 'Share', comment: 'Comments', next: 'Next section', goEngage: 'Go to Comments & Apply',
+    popular: 'Popular terms', you: 'Minh Anh'
+  },
+  vi: {
+    details: 'Chi tiết', toDetails: 'Vuốt để xem chi tiết', toEngage: 'Vuốt để bình luận & áp dụng', explore: 'Khám phá', exploreTitle: 'Khám phá',
+    keyPoint: 'Ý CHÍNH', source: n => `[Nguồn · ${n}]`, applyTitle: 'Biến điều bạn đọc thành điều bạn làm.', applySub: 'Ba bước nhỏ từ bài viết này',
+    applied: 'Đã áp dụng', comments: n => `${n} bình luận`, noComments: 'Chưa có bình luận', writeComment: 'Viết bình luận',
+    exploreNow: 'Khám phá ngay', viewAll: 'Xem bình luận của mọi người!', left: (r, t) => `Chỉ còn <b>${r}</b> /${t} suất`, founding: 'Sáng lập',
+    messages: 'Tin nhắn', noConv: 'Chưa có cuộc trò chuyện', copied: 'Đã sao chép liên kết', streakUp: n => `🔥 Chuỗi ${n} ngày!`,
+    appliedToast: 'Tuyệt. Bạn đã biến điều đọc thành hành động.', caughtUp: 'Bạn đã xem hết thông báo', soon: 'Chia sẻ góc nhìn của bạn',
+    soonSub: 'Tính năng tự đăng bài sắp ra mắt. Chúng tôi sẽ báo khi mở.', notify: 'Báo cho tôi', notified: 'Chúng tôi sẽ báo cho bạn',
+    searchPh: 'Tìm bài viết hoặc thuật ngữ', noResults: q => `Không tìm thấy bài cho “${q}”`, sources: 'Nguồn', all: 'Tất cả', read: n => `${n} phút đọc`,
+    justNow: 'vừa xong', like: 'Thích', save: 'Lưu', share: 'Chia sẻ', comment: 'Bình luận', next: 'Đoạn tiếp theo', goEngage: 'Sang bình luận & áp dụng',
+    popular: 'Thuật ngữ phổ biến', you: 'Minh Anh'
+  }
+};
+
+const A = [
+  {
+    id: 'decisions', art: 'decide', cat: { en: 'Psychology', vi: 'Tâm lý học' },
+    counts: { likes: 329, saves: 170, shares: 30 },
+    title: { en: 'How to make smarter decisions more easily?', vi: 'Làm sao để ra quyết định sáng suốt hơn một cách dễ dàng?' },
+    keywords: 'decision fatigue confirmation bias anchoring kahneman bezos quyet dinh thien kien',
+    sections: [
+      { hook: true,
+        en: 'Have you ever stood at an important crossroads, changing jobs, moving homes, or ending a relationship, and just stayed frozen there, unable to take a single step? It was not because you lacked information. It was not because you were not smart enough. It was because your brain was quietly playing its own game.',
+        vi: 'Bạn đã bao giờ đứng trước một ngã rẽ quan trọng, đổi việc, chuyển nhà hay kết thúc một mối quan hệ, và cứ đứng sững ở đó, không thể bước nổi một bước? Không phải vì bạn thiếu thông tin. Không phải vì bạn không đủ thông minh. Mà vì bộ não của bạn đang lặng lẽ chơi trò chơi của riêng nó.' },
+      { h: { en: 'The problem is not you, it is biology', vi: 'Vấn đề không nằm ở bạn, mà ở sinh học' },
+        en: 'According to data from {CNBC (2025)}, an adult makes around [p:35,000 decisions a day]. Every choice, from what to eat to which email to answer first, draws from the same limited pool of mental energy. By evening, that pool runs dry, a state researchers call **decision fatigue**.',
+        vi: 'Theo dữ liệu từ {CNBC (2025)}, một người trưởng thành đưa ra khoảng [p:35.000 quyết định mỗi ngày]. Mỗi lựa chọn, từ ăn gì đến trả lời email nào trước, đều rút từ cùng một nguồn năng lượng tinh thần có hạn. Đến tối, nguồn đó cạn, trạng thái mà các nhà nghiên cứu gọi là **mệt mỏi quyết định** (*decision fatigue*).' },
+      { en: 'Nobel Prize-winning psychologist **Daniel Kahneman**, in his book *Thinking, Fast and Slow* [y:(2011)], describes two modes of thinking: **System 1** operates fast, automatically, and intuitively, while **System 2** is slow, conscious, and analytical. About [p:95% of everyday decisions] are driven by System 1. That is not inherently bad, but it makes us vulnerable to **cognitive biases**.',
+        vi: 'Nhà tâm lý học đoạt giải Nobel **Daniel Kahneman**, trong cuốn *Tư duy nhanh và chậm* [y:(2011)], mô tả hai chế độ tư duy: **Hệ thống 1** vận hành nhanh, tự động và theo trực giác, còn **Hệ thống 2** chậm, có ý thức và phân tích. Khoảng [p:95% quyết định hằng ngày] do Hệ thống 1 dẫn dắt. Điều đó không hẳn xấu, nhưng khiến ta dễ mắc **thiên kiến nhận thức** (*cognitive biases*).' },
+      { en: 'Research on {PMC/NIH (2022)} highlights two of the most common biases: **confirmation bias**, which causes you to [p:unconsciously seek out information that supports what you already believe], ignoring contradicting evidence; and **anchoring bias**, which causes you to [p:rely too heavily on the first number or opinion you hear]. When you look back at a poor decision from your past, you will almost always find one of them.',
+        vi: 'Nghiên cứu trên {PMC/NIH (2022)} chỉ ra hai thiên kiến phổ biến nhất: **thiên kiến xác nhận** (*confirmation bias*), khiến bạn [p:vô thức tìm thông tin ủng hộ điều mình đã tin] và phớt lờ bằng chứng trái ngược; và **hiệu ứng mỏ neo** (*anchoring bias*), khiến bạn [p:dựa quá nhiều vào con số hay ý kiến đầu tiên nghe được]. Nhìn lại một quyết định tồi trong quá khứ, bạn gần như luôn thấy một trong hai.' },
+      { h: { en: 'Not every decision deserves the same level of thinking', vi: 'Không phải quyết định nào cũng đáng nghĩ ở cùng một mức' },
+        en: 'In Amazon\'s 2016 shareholder letter, [y:Jeff Bezos] divided decisions into two types: **"one-way doors"**, which are irreversible and require careful consideration; and **"two-way doors"**, which can be reversed and should be decided quickly. Most decisions in life belong to [g:the second type], yet we treat them as if they were the first. That is the root cause of **analysis paralysis**.',
+        vi: 'Trong thư gửi cổ đông Amazon năm 2016, [y:Jeff Bezos] chia quyết định thành hai loại: **"cửa một chiều"**, không thể đảo ngược và cần cân nhắc kỹ; và **"cửa hai chiều"**, có thể quay lại và nên quyết nhanh. Phần lớn quyết định trong đời thuộc [g:loại thứ hai], vậy mà ta lại đối xử với chúng như loại thứ nhất. Đó là gốc rễ của **tê liệt vì phân tích** (*analysis paralysis*).' },
+      { h: { en: 'A good decision does not guarantee a good outcome, and that is completely normal', vi: 'Quyết định tốt không đảm bảo kết quả tốt, và điều đó hoàn toàn bình thường' },
+        en: 'Decision-making expert **Annie Duke**, author of *Thinking in Bets*, calls this mistake [p:"resulting"]: judging the quality of a decision based on its outcome. In reality, a decision made with complete information can still lead to [p:an undesirable outcome] due to [p:random factors]. The goal is not a perfect decision. The goal is **the decision with the best probability** given the conditions you are working with.',
+        vi: 'Chuyên gia ra quyết định **Annie Duke**, tác giả *Thinking in Bets*, gọi sai lầm này là [p:"resulting"]: đánh giá chất lượng quyết định dựa trên kết quả. Thực tế, một quyết định có đủ thông tin vẫn có thể dẫn tới [p:kết quả không mong muốn] vì [p:yếu tố ngẫu nhiên]. Mục tiêu không phải là quyết định hoàn hảo, mà là **quyết định có xác suất tốt nhất** trong điều kiện bạn đang có.' }
+    ],
+    kp: { en: 'Making smarter decisions is like [p:learning to drive]. At first, you have to think through every single move. Over time, it becomes a reflex. Start with something small today: with your next decision, ask yourself, *is this a one-way door or a two-way door?*',
+          vi: 'Ra quyết định sáng suốt giống như [p:học lái xe]. Lúc đầu, bạn phải nghĩ từng thao tác. Dần dần, nó trở thành phản xạ. Hãy bắt đầu từ việc nhỏ hôm nay: với quyết định tiếp theo, tự hỏi *đây là cửa một chiều hay cửa hai chiều?*' },
+    sources: [
+      ['CNBC', 'Decision-making estimate · 2025'], ['Kahneman, Thinking, Fast and Slow', 'Farrar, Straus and Giroux · 2011'],
+      ['PMC/NIH review on cognitive biases', 'PubMed Central · 2022'], ['Amazon 2016 Letter to Shareholders', 'Amazon · 2016'],
+      ['Duke, Thinking in Bets', 'Portfolio · 2018'], ['APA on decision fatigue', 'American Psychological Association · 2023'],
+      ['Baumeister et al., Ego depletion', 'J. Personality and Social Psychology · 1998'], ['Tversky & Kahneman, Judgment under Uncertainty', 'Science · 1974'],
+      ['Nickerson, Confirmation bias', 'Review of General Psychology · 1998'], ['Harvard Business Review on decision quality', 'HBR · 2020']
+    ],
+    apply: {
+      en: ['Before your next decision, label it: one-way door or two-way door. If two-way, decide in under 2 minutes.', 'Write down one piece of evidence that could prove your current opinion wrong.', 'Move tomorrow\'s most important decision to the first 2 hours of your morning.'],
+      vi: ['Trước quyết định tiếp theo, gắn nhãn: cửa một chiều hay hai chiều. Nếu hai chiều, quyết trong dưới 2 phút.', 'Viết ra một bằng chứng có thể chứng minh ý kiến hiện tại của bạn là sai.', 'Dời quyết định quan trọng nhất ngày mai vào 2 giờ đầu buổi sáng.']
+    },
+    comments: []
+  },
+  {
+    id: 'dopamine', art: 'dopa', cat: { en: 'Science', vi: 'Khoa học' },
+    counts: { likes: 1204, saves: 486, shares: 92 },
+    title: { en: 'Why can\'t you stop scrolling?', vi: 'Vì sao bạn không thể ngừng lướt?' },
+    keywords: 'dopamine reward scrolling skinner berridge variable schedule luot thuong',
+    sections: [
+      { hook: true,
+        en: 'You open your phone to check one message. Twenty minutes later you are still scrolling, and you cannot remember a single thing you saw. That is not a lack of willpower. It is a reward system doing exactly what it evolved to do.',
+        vi: 'Bạn mở điện thoại để xem một tin nhắn. Hai mươi phút sau bạn vẫn đang lướt, và không nhớ nổi mình vừa xem gì. Đó không phải do thiếu ý chí. Đó là hệ thống tưởng thưởng của não đang làm đúng việc nó được tiến hoá để làm.' },
+      { h: { en: 'Dopamine is about wanting, not liking', vi: 'Dopamine là về muốn, không phải thích' },
+        en: 'Dopamine neurons fire most strongly when a reward is [p:better than expected] {Schultz (1997)}. Psychologist **Kent Berridge** later showed that dopamine drives **wanting**, not **liking** {Berridge & Robinson (1998)}: it makes you want to look again, while the pleasure of looking stays small.',
+        vi: 'Các tế bào thần kinh dopamine phát tín hiệu mạnh nhất khi phần thưởng [p:tốt hơn mong đợi] {Schultz (1997)}. Nhà tâm lý học **Kent Berridge** sau đó chỉ ra rằng dopamine thúc đẩy cảm giác **muốn** (*wanting*), chứ không phải **thích** (*liking*) {Berridge & Robinson (1998)}: nó khiến bạn muốn xem tiếp, trong khi niềm vui khi xem vẫn rất nhỏ.' },
+      { h: { en: 'Unpredictable rewards are the strongest', vi: 'Phần thưởng khó đoán là mạnh nhất' },
+        en: 'In the 1950s, **B. F. Skinner** found that animals pressed a lever most persistently when rewards came on a [y:variable schedule] {Skinner (1957)}. A feed where the next post might be great, or might be dull, works the same way. Each swipe is a small bet.',
+        vi: 'Những năm 1950, **B. F. Skinner** phát hiện động vật nhấn cần bền bỉ nhất khi phần thưởng đến theo [y:lịch ngẫu nhiên] (*variable schedule*) {Skinner (1957)}. Một bảng tin mà bài tiếp theo có thể rất hay, cũng có thể nhạt, hoạt động y hệt. Mỗi lần vuốt là một lần đặt cược nhỏ.' },
+      { h: { en: 'Endless means no stopping cue', vi: 'Vô tận nghĩa là không có điểm dừng' },
+        en: 'Endless feeds remove the **stopping cues**, like the end of a chapter or an episode, that normally tell your brain a task is finished. Without them, the decision to stop has to come from you, every single time. [g:Adding a stopping cue back] is often enough to break the loop.',
+        vi: 'Bảng tin vô tận xoá đi các **tín hiệu dừng** (*stopping cues*), như hết một chương sách hay hết một tập phim, vốn báo cho não biết việc đã xong. Thiếu chúng, quyết định dừng lại phải đến từ bạn, mỗi lần một. [g:Tự tạo lại một tín hiệu dừng] thường là đủ để thoát vòng lặp.' }
+    ],
+    kp: { en: 'Your feed works like a slot machine that pays out in information. You don\'t have to delete it. Give yourself a [p:stopping cue] instead: decide *how many* posts you will read before you open the app.',
+          vi: 'Bảng tin hoạt động như một máy đánh bạc trả thưởng bằng thông tin. Bạn không cần xoá nó. Hãy tự tạo một [p:tín hiệu dừng]: quyết định *sẽ đọc bao nhiêu bài* trước khi mở app.' },
+    sources: [['Schultz, Dayan & Montague, A neural substrate of prediction and reward', 'Science · 1997'], ['Berridge & Robinson, The role of dopamine in reward', 'Brain Research Reviews · 1998'], ['Ferster & Skinner, Schedules of Reinforcement', 'Appleton-Century-Crofts · 1957']],
+    apply: {
+      en: ['Before opening a feed, say out loud how many posts you will read.', 'Turn off non-essential notifications for one day.', 'Keep your phone in another room for the first 30 minutes after waking up.'],
+      vi: ['Trước khi mở bảng tin, nói thành tiếng số bài bạn sẽ đọc.', 'Tắt thông báo không cần thiết trong một ngày.', 'Để điện thoại ở phòng khác trong 30 phút đầu sau khi thức dậy.']
+    },
+    comments: [
+      { n: 'Lan Chi', c: '#F9A8D4', ago: '2h', x: 'Đặt trước số bài sẽ đọc nghe đơn giản mà hiệu quả thật.' },
+      { n: 'Huy', c: '#93C5FD', ago: '5h', x: 'The stopping cue idea is the useful part for me.' }
+    ]
+  },
+  {
+    id: 'sleep', art: 'sleep', cat: { en: 'Health', vi: 'Sức khoẻ' },
+    counts: { likes: 875, saves: 402, shares: 61 },
+    title: { en: 'What does your brain do with memories while you sleep?', vi: 'Não bạn làm gì với ký ức khi bạn ngủ?' },
+    keywords: 'sleep memory hippocampus nap rem deep sleep giac ngu tri nho',
+    sections: [
+      { hook: true,
+        en: 'You study until midnight, sleep five hours, and walk into the exam feeling like everything has leaked out. It probably has. The hours you cut were the hours your brain needed to save the work.',
+        vi: 'Bạn học tới nửa đêm, ngủ năm tiếng, rồi bước vào phòng thi với cảm giác mọi thứ đã trôi mất. Có lẽ đúng là vậy. Những giờ ngủ bạn cắt đi chính là lúc não cần để lưu lại những gì đã học.' },
+      { h: { en: 'Sleep is when memories get filed', vi: 'Giấc ngủ là lúc ký ức được lưu trữ' },
+        en: 'During **deep sleep**, the **hippocampus** replays the day\'s experiences and passes them to the cortex for long-term storage {Rasch & Born (2013)}. Without that replay, new memories stay [p:fragile and easy to lose].',
+        vi: 'Trong **giấc ngủ sâu**, **hồi hải mã** (*hippocampus*) phát lại trải nghiệm trong ngày và chuyển chúng sang vỏ não để lưu trữ lâu dài {Rasch & Born (2013)}. Thiếu quá trình phát lại này, ký ức mới vẫn [p:mong manh và dễ mất].' },
+      { h: { en: 'A tired brain struggles to learn new things', vi: 'Não thiếu ngủ khó học điều mới' },
+        en: 'In one study, people who skipped a night of sleep showed [p:weaker hippocampal activity] while learning and remembered less of what they had studied {Yoo et al. (2007)}.',
+        vi: 'Trong một nghiên cứu, người thức trắng một đêm có [p:hoạt động hồi hải mã yếu hơn] khi học và nhớ được ít hơn những gì đã học {Yoo et al. (2007)}.' },
+      { h: { en: 'Even a nap helps', vi: 'Ngủ trưa cũng có ích' },
+        en: 'A 60–90 minute nap that included deep and REM sleep produced [g:as much improvement on a visual learning task] as a full night of sleep {Mednick et al. (2003)}.',
+        vi: 'Một giấc ngủ trưa 60–90 phút có cả giấc ngủ sâu và REM giúp [g:cải thiện một bài học thị giác ngang với cả đêm ngủ] {Mednick et al. (2003)}.' }
+    ],
+    kp: { en: 'Think of sleep as the [p:save button] for what you learned today. Studying late and sleeping less is like writing a long document and closing it without saving. *Protect the hours before your alarm, not just the hours at your desk.*',
+          vi: 'Hãy coi giấc ngủ là [p:nút lưu] cho những gì bạn học hôm nay. Thức khuya học và ngủ ít giống như viết một tài liệu dài rồi đóng lại mà không lưu. *Hãy bảo vệ những giờ trước khi chuông báo thức reo, không chỉ những giờ ngồi bàn học.*' },
+    sources: [['Rasch & Born, About sleep\'s role in memory', 'Physiological Reviews · 2013'], ['Yoo et al., A deficit in the ability to form new human memories without sleep', 'Nature Neuroscience · 2007'], ['Mednick et al., Sleep-dependent learning: a nap is as good as a night', 'Nature Neuroscience · 2003']],
+    apply: {
+      en: ['Review the hardest material in the evening, then sleep instead of studying more.', 'Keep the same wake-up time for the next 7 days.', 'If you study in the morning, try a nap after lunch.'],
+      vi: ['Ôn phần khó nhất vào buổi tối, rồi đi ngủ thay vì học thêm.', 'Giữ cùng một giờ thức dậy trong 7 ngày tới.', 'Nếu học buổi sáng, thử ngủ trưa sau bữa trưa.']
+    },
+    comments: []
+  },
+  {
+    id: 'habits', art: 'habit', cat: { en: 'Productivity', vi: 'Năng suất' },
+    counts: { likes: 2318, saves: 1102, shares: 240 },
+    title: { en: 'Compound interest works on habits too', vi: 'Lãi kép cũng áp dụng cho thói quen' },
+    keywords: 'habits atomic habits james clear lally 66 days tiny habits fogg thoi quen',
+    sections: [
+      { hook: true,
+        en: 'Reading 10 pages a day sounds like nothing. In a year it is about 3,650 pages, or roughly a dozen books. Small actions look useless on any single day. Their value only shows up over time.',
+        vi: 'Đọc 10 trang mỗi ngày nghe chẳng đáng là bao. Sau một năm, đó là khoảng 3.650 trang, tương đương chừng một chục cuốn sách. Những hành động nhỏ trông vô ích ở từng ngày riêng lẻ. Giá trị của chúng chỉ lộ ra theo thời gian.' },
+      { h: { en: '1% better, compounded', vi: 'Tốt hơn 1%, nhân lên mỗi ngày' },
+        en: 'In *Atomic Habits* [y:(2018)], **James Clear** points out that improving 1% a day compounds to about [p:37 times better] after a year (1.01^365 ≈ 37.8). The math is idealized, but the shape is real: progress is slow at first, then speeds up.',
+        vi: 'Trong *Atomic Habits* [y:(2018)], **James Clear** chỉ ra rằng tiến bộ 1% mỗi ngày sẽ nhân lên thành khoảng [p:37 lần] sau một năm (1,01^365 ≈ 37,8). Phép tính này lý tưởng hoá, nhưng hình dạng là thật: tiến bộ chậm lúc đầu, rồi tăng tốc.' },
+      { h: { en: 'Habits take longer than 21 days', vi: 'Thói quen cần lâu hơn 21 ngày' },
+        en: 'A study at University College London {Lally et al. (2010)} followed people building a new daily habit. It took an average of [p:66 days] for the behaviour to become automatic, with a range from 18 to 254 days. Missing a single day [g:did not ruin the process].',
+        vi: 'Một nghiên cứu tại University College London {Lally et al. (2010)} theo dõi người xây dựng một thói quen hằng ngày mới. Trung bình mất [p:66 ngày] để hành vi trở nên tự động, dao động từ 18 đến 254 ngày. Bỏ lỡ một ngày [g:không làm hỏng cả quá trình].' },
+      { h: { en: 'Make it small enough to start', vi: 'Làm đủ nhỏ để bắt đầu' },
+        en: 'Behaviour scientist **BJ Fogg** recommends shrinking a new habit until it takes [p:under 30 seconds], then attaching it to something you already do {Fogg (2019)}: "After I pour my coffee, I will read one page."',
+        vi: 'Nhà khoa học hành vi **BJ Fogg** khuyên thu nhỏ thói quen mới tới mức chỉ mất [p:dưới 30 giây], rồi gắn nó vào việc bạn vốn đã làm {Fogg (2019)}: "Sau khi rót cà phê, tôi sẽ đọc một trang."' }
+    ],
+    kp: { en: 'Habits work like a savings account: the early deposits feel pointless, and that is exactly when most people quit. Pick [p:one tiny habit] and protect the streak, not the size. *What is the smallest version you could do today?*',
+          vi: 'Thói quen giống một tài khoản tiết kiệm: những lần gửi đầu tiên có vẻ vô nghĩa, và đó chính là lúc hầu hết mọi người bỏ cuộc. Hãy chọn [p:một thói quen thật nhỏ] và giữ chuỗi, đừng lo về độ lớn. *Phiên bản nhỏ nhất bạn có thể làm hôm nay là gì?*' },
+    sources: [['Clear, Atomic Habits', 'Avery · 2018'], ['Lally et al., How are habits formed', 'European Journal of Social Psychology · 2010'], ['Fogg, Tiny Habits', 'Houghton Mifflin Harcourt · 2019']],
+    apply: {
+      en: ['Choose one habit and shrink it to under 30 seconds.', 'Write the rule: “After I ___, I will ___.”', 'Mark every day you do it on a calendar.'],
+      vi: ['Chọn một thói quen và thu nhỏ nó xuống dưới 30 giây.', 'Viết quy tắc: “Sau khi tôi ___, tôi sẽ ___.”', 'Đánh dấu mỗi ngày bạn làm được lên lịch.']
+    },
+    comments: [{ n: 'Thu Trang', c: '#FDE68A', ago: '1d', x: '66 ngày, không phải 21. Giờ mình hiểu vì sao hay bỏ giữa chừng.' }]
+  }
+];
+
+// Placeholder art (not photos from the reference app).
+const ART = {
+  decide: `<svg viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <pattern id="dc-b" width="64" height="30" patternUnits="userSpaceOnUse"><path d="M0 1H64M0 16H64M1 1V16M33 16V30" stroke="rgba(255,236,220,.13)" stroke-width="2.5" fill="none"/></pattern>
+      <radialGradient id="dc-s" cx=".5" cy=".15" r=".9"><stop offset="0" stop-color="#9a2e1e"/><stop offset=".55" stop-color="#5c160e"/><stop offset="1" stop-color="#240705"/></radialGradient>
+      <radialGradient id="dc-h" cx=".42" cy=".28" r=".75"><stop offset="0" stop-color="#4a3326"/><stop offset=".45" stop-color="#22150f"/><stop offset="1" stop-color="#0d0705"/></radialGradient>
+      <linearGradient id="dc-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".75" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <mask id="dc-m"><rect width="390" height="844" fill="url(#dc-f)"/></mask>
+      <filter id="dc-bl"><feGaussianBlur stdDeviation="3"/></filter>
+    </defs>
+    <g mask="url(#dc-m)"><rect x="-80" y="-40" width="560" height="700" fill="url(#dc-b)" transform="rotate(-9 195 300)"/></g>
+    <g filter="url(#dc-bl)">
+      <path d="M-10 844 C 0 690 50 610 150 585 L 240 585 C 340 610 392 690 400 844 Z" fill="url(#dc-s)"/>
+      <rect x="166" y="500" width="58" height="100" rx="22" fill="#2a140d"/>
+      <ellipse cx="136" cy="452" rx="10" ry="19" fill="#3a2016"/><ellipse cx="254" cy="452" rx="10" ry="19" fill="#3a2016"/>
+      <path d="M195 336 C 240 336 262 372 262 420 C 262 470 236 512 195 516 C 154 512 128 470 128 420 C 128 372 150 336 195 336 Z" fill="url(#dc-h)"/>
+      <path d="M140 400 C 150 352 180 338 205 340 C 232 342 252 360 256 396 C 236 372 214 366 195 368 C 172 370 152 380 140 400 Z" fill="#5a3a26" opacity=".55"/>
+    </g></svg>`,
+  dopa: `<svg viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="dp-s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff5fa2"/><stop offset=".6" stop-color="#8b5cf6"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+      <filter id="dp-g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    </defs>
+    <g transform="rotate(-12 195 420)">
+      <rect x="118" y="250" width="160" height="320" rx="28" fill="url(#dp-s)" opacity=".75" filter="url(#dp-g)"/>
+      <rect x="128" y="262" width="140" height="296" rx="24" fill="#0b0f1e" stroke="url(#dp-s)" stroke-width="3"/>
+      <rect x="146" y="300" width="104" height="70" rx="10" fill="url(#dp-s)" opacity=".55"/>
+      <rect x="146" y="384" width="80" height="8" rx="4" fill="#fff" opacity=".35"/><rect x="146" y="400" width="96" height="8" rx="4" fill="#fff" opacity=".2"/>
+      <rect x="146" y="430" width="104" height="70" rx="10" fill="url(#dp-s)" opacity=".35"/>
+    </g>
+    <circle cx="300" cy="230" r="16" fill="#ff3d8b" opacity=".8" filter="url(#dp-g)"/><circle cx="300" cy="230" r="9" fill="#ff3d8b"/>
+    <circle cx="80" cy="610" r="12" fill="#60a5fa" opacity=".7" filter="url(#dp-g)"/><circle cx="80" cy="610" r="6" fill="#60a5fa"/></svg>`,
+  sleep: `<svg viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice">
+    <defs><filter id="sl-g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+      <linearGradient id="sl-h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2558"/><stop offset="1" stop-color="#070a1a"/></linearGradient></defs>
+    <circle cx="296" cy="160" r="60" fill="#f3e9c6" opacity=".5" filter="url(#sl-g)"/>
+    <circle cx="296" cy="160" r="44" fill="#f6eed2"/><circle cx="276" cy="146" r="44" fill="#121a44"/>
+    <g fill="#fff"><circle cx="60" cy="120" r="1.6"/><circle cx="140" cy="80" r="1.2"/><circle cx="200" cy="200" r="1.4"/><circle cx="90" cy="260" r="1"/><circle cx="350" cy="300" r="1.3"/><circle cx="40" cy="380" r="1.1"/><circle cx="220" cy="120" r="1"/><circle cx="170" cy="320" r="1.2" opacity=".7"/></g>
+    <path d="M0 640 C 90 590 170 600 240 630 S 360 640 390 600 V 844 H 0 Z" fill="url(#sl-h)"/>
+    <path d="M0 720 C 120 680 230 700 390 670 V 844 H 0 Z" fill="#060816"/></svg>`,
+  habit: `<svg viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice">
+    <defs><filter id="hb-g" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="8"/></filter>
+      <linearGradient id="hb-l" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#22c55e"/><stop offset="1" stop-color="#facc15"/></linearGradient></defs>
+    <g stroke="rgba(255,255,255,.07)" stroke-width="1"><path d="M0 200H390M0 320H390M0 440H390M0 560H390M0 680H390M80 0V844M180 0V844M280 0V844"/></g>
+    <path d="M20 760 C 160 755 250 700 300 560 S 360 260 380 150" fill="none" stroke="url(#hb-l)" stroke-width="10" opacity=".6" filter="url(#hb-g)"/>
+    <path d="M20 760 C 160 755 250 700 300 560 S 360 260 380 150" fill="none" stroke="url(#hb-l)" stroke-width="3.5"/>
+    <g fill="#facc15"><circle cx="120" cy="752" r="5"/><circle cx="230" cy="700" r="5"/><circle cx="300" cy="560" r="6"/><circle cx="352" cy="330" r="7"/></g></svg>`
+};
+const artHTML = k => `<div class="art art-${k}">${ART[k]}</div>`;
+
+// ---------- Helpers ----------
+const $ = (s, r = document) => r.querySelector(s);
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const rich = s => esc(s)
+  .replace(/\{([^}]+)\}/g, '<span class="cite" data-act="sources" role="button" tabindex="0">$1</span>')
+  .replace(/\[(y|p|g):([^\]]+)\]/g, '<span class="hl $1">$2</span>')
+  .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+  .replace(/\*(.+?)\*/g, '<i>$1</i>');
+const fmt = n => n < 1000 ? String(n) : n < 10000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K' : Math.round(n / 1000) + 'K';
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+const words = a => a.sections.reduce((n, s) => n + s.en.split(/\s+/).length, 0) + a.kp.en.split(/\s+/).length;
+
+const st = {
+  lang: 'en', idx: 0, pos: A.map(() => 0), sec: A.map(() => 0), liked: {}, saved: {}, shared: {}, streak: 1, streakUp: false,
+  done: {}, kpShown: {}, applied: A.map(() => [false, false, false]), appliedToast: {}, comments: A.map(a => a.comments.slice()), cat: 'all'
+};
+const T = () => UI[st.lang];
+const tx = o => o[st.lang] || o.en;
+
+// ---------- Spring & motion values ----------
+const project = (v, d = 0.998) => (v / 1000) * d / (1 - d);
+const rubber = (o, dim, c = 0.55) => (o * dim * c) / (dim + c * Math.abs(o));
+const rb = (v, min, max, dim) => v > max ? max + rubber(v - max, dim) : v < min ? min - rubber(min - v, dim) : v;
+function mv(v, render) {
+  return { v, anim: null, set(x) { this.v = x; render(x); }, stop() { if (this.anim) { this.anim.stop(); this.anim = null; } } };
+}
+// bounce/duration → stiffness/damping, the same mapping Motion uses (mass 1).
+function springTo(m, to, opts = {}, done) {
+  m.stop();
+  if (reduce.matches) { m.set(to); if (done) done(); return; }
+  const { velocity = 0, bounce = 0, duration = 0.4 } = opts;
+  const k = (2 * Math.PI / duration) ** 2, c = 4 * Math.PI * (1 - bounce) / duration;
+  let x = m.v, v = velocity, last = performance.now(), id = 0;
+  const step = t => {
+    const dt = Math.min(0.032, (t - last) / 1000); last = t;
+    for (let i = 0; i < 4; i++) { const h = dt / 4; v += (-k * (x - to) - c * v) * h; x += v * h; }
+    if (Math.abs(v) < 4 && Math.abs(x - to) < 0.4) { m.anim = null; m.set(to); if (done) done(); return; }
+    m.set(x); id = requestAnimationFrame(step);
+  };
+  id = requestAnimationFrame(step);
+  m.anim = { stop: () => cancelAnimationFrame(id) };
+}
+const springFor = v => Math.abs(v) >= 500 ? { velocity: v, bounce: 0.15, duration: 0.4 } : { velocity: v, bounce: 0, duration: 0.4 };
+const fade = el => { el.animate([{ opacity: 0.35 }, { opacity: 1 }], { duration: 150, easing: 'ease-out' }); };
+
+// ---------- Layout ----------
+const stage = $('#stage'), phone = $('#phone'), feed = $('#feed'), track = $('#track');
+const bnav = $('#bnav'), plusw = $('#plusw'), msgs = $('#msgs'), sheet = $('#sheet'), sbody = $('#sbody'), scrim = $('#scrim'), lmenu = $('#lmenu');
+let W = 390, H = 844, S = 1;
+function fit() {
+  const framed = innerWidth >= 440 && innerHeight >= 520 && !(matchMedia('(pointer: coarse)').matches && innerWidth < 760);
+  stage.classList.toggle('framed', framed);
+  stage.classList.toggle('wide', framed && innerWidth >= 900);
+  if (framed) { S = Math.min(1, (innerHeight - 40) / 866, (innerWidth - 40) / 412); phone.style.transform = `scale(${S})`; }
+  else { S = 1; phone.style.transform = ''; }
+  W = phone.clientWidth; H = phone.clientHeight;
+}
+
+const arts = [];
+const feedY = mv(0, y => { track.style.transform = `translate3d(0,${y}px,0)`; });
+const viewX = A.map((_, i) => mv(0, x => renderView(i, x)));
+const msgX = mv(0, x => { msgs.style.transform = `translate3d(${x}px,0,0)`; });
+const sheetY = mv(0, y => { sheet.style.transform = `translate3d(0,${y}px,0)`; });
+
+function renderView(i, x) {
+  const a = arts[i]; if (!a) return;
+  const p = -x / W;
+  a.views.style.transform = `translate3d(${x}px,0,0)`;
+  a.blur.style.opacity = clamp(p, 0, 1);
+  a.eng.style.opacity = clamp(p - 1, 0, 1);
+  a.vEls.forEach((el, j) => { el.style.opacity = 1 - 0.4 * clamp(Math.abs(p - j), 0, 1); });
+  if (i === st.idx) chrome(p);
+}
+function chrome(p) {
+  bnav.style.transform = `translate3d(0,${clamp(p - 1, 0, 1) * 140}px,0)`;
+  plusw.style.transform = `scale(${1 - 0.22 * clamp(p, 0, 1)})`;
+  phone.classList.toggle('on-engage', p > 1.5);
+}
+
+// ---------- Rendering ----------
+function act(k, i, size) {
+  const icon = { like: 'heart', save: 'save', share: 'share', comment: 'comment' }[k];
+  return `<div class="act ${size}" data-act="${k}" data-i="${i}"><button class="cb" aria-label="${T()[k]}">${ic(icon)}</button><span class="n">0</span></div>`;
+}
+function commentsHTML(i) {
+  const list = st.comments[i];
+  if (!list.length) return `<div class="cempty">${ic('bubbles')}<span>${T().noComments}</span></div>`;
+  return list.map(c => `<div class="citem"><div class="cav" style="background:${c.c}">${esc(c.n[0])}</div><div><div class="cmeta">${esc(c.n)}<span>${c.ago || T().justNow}</span></div><p class="ctext">${esc(c.x)}</p></div></div>`).join('');
+}
+function articleHTML(a, i) {
+  const t = T(), title = esc(tx(a.title)), n = a.sections.length + 1;
+  const secs = a.sections.map((s, k) => `<div class="sec${s.hook ? ' hook' : ''}" data-k="${k}">${s.h ? `<h3>${esc(tx(s.h))}</h3>` : ''}<p>${rich(tx(s))}</p></div>`).join('');
+  const steps = tx(a.apply).map((s, k) => `<button class="step" data-act="step" data-k="${k}" aria-pressed="${st.applied[i][k]}"><span class="chk">${ic('check')}</span><span class="stx">${esc(s)}</span></button>`).join('');
+  return `<section class="article" data-i="${i}" style="top:${i * 100}%" aria-label="${title}">
+  <div class="bg"><div class="layer sharp">${artHTML(a.art)}</div><div class="layer blur">${artHTML(a.art)}<div class="dim"></div></div><div class="layer eng"></div><div class="grain"></div></div>
+  <div class="views">
+    <div class="view cover">
+      <div class="scrim"></div>
+      <div class="crow">
+        <button class="cb gridbtn" data-act="explore" aria-label="${t.exploreTitle}">${ic('grid')}</button>
+        <button class="pill epill" data-act="explore"><span>${t.explore}</span><span class="cmp">${ic('compass')}<i class="dot"></i></span></button>
+        <button class="hint" data-act="toDetails">${t.toDetails}${ic('chevrons')}</button>
+      </div>
+      <h2 class="ctitle" data-act="toDetails"><span>${title}</span></h2>
+      <div class="rail">${act('like', i, 'lg')}${act('save', i, 'lg')}${act('share', i, 'lg')}</div>
+    </div>
+    <div class="view details">
+      <div class="dscroll">${secs}
+        <div class="sec last" data-k="${a.sections.length}">
+          <div class="kp${st.kpShown[i] ? '' : ' wait'}"><div class="kp-l"><span>💡</span>${t.keyPoint}</div><p>${rich(tx(a.kp))}</p></div>
+          <button class="srcline" data-act="sources">${ic('library')}<span>${t.source(a.sources.length)}</span></button>
+        </div>
+      </div>
+      <div class="dhead">
+        <div class="prow"><button class="pill dpill" data-act="top">${t.details}</button><button class="hint" data-act="toEngage">${t.toEngage}${ic('chevrons')}</button></div>
+        <h2 class="btitle">${title}</h2>
+        <div class="stitle" aria-hidden="true">${title}</div>
+        <div class="arow">${act('like', i, 'md')}${act('save', i, 'md')}${act('share', i, 'md')}${act('comment', i, 'md')}</div>
+      </div>
+      <div class="dfoot"><button class="cb nextbtn" data-act="next" aria-label="${t.next}">${ic('down')}</button><div class="dots">${'<i></i>'.repeat(n)}</div></div>
+    </div>
+    <div class="view engage">
+      <div class="escroll">
+        <div class="apply"><h3>${t.applyTitle}</h3><p class="asub">${t.applySub}</p>${steps}
+          <div class="abadge"${st.applied[i].every(Boolean) ? '' : ' hidden'}>${ic('check')}${t.applied}</div></div>
+        <div class="chead">${ic('comment')}<span class="ccount">${t.comments(st.comments[i].length)}</span></div>
+        <div class="clist">${commentsHTML(i)}</div>
+      </div>
+      <div class="ebottom">
+        <form class="cform" data-i="${i}"><input class="cin" id="cin-${a.id}" name="comment" maxlength="500" autocomplete="off" enterkeyhint="send" placeholder="${t.writeComment}" aria-label="${t.writeComment}"><button class="csend" type="submit" aria-label="Send">${ic('share')}</button></form>
+        <div class="ctarow"><button class="cta" data-act="explore">${t.exploreNow}${ic('arrowc')}</button><button class="ctaside" data-act="explore" aria-label="${t.exploreTitle}"></button></div>
+        <div class="banner"><div class="blogo"><b>Reader</b><span class="badge">${t.founding}</span></div>
+          <div class="btext"><div class="bt1">${t.viewAll}</div><div class="bt2">${t.left(128, 300)}</div><div class="bar"><i style="width:${(300 - 128) / 300 * 100}%"></i></div></div>
+          <button class="bx" data-act="closeBanner" aria-label="Close">${ic('x')}</button></div>
+      </div>
+    </div>
+  </div></section>`;
+}
+
+let observers = [];
+function renderFeed() {
+  observers.forEach(o => o.disconnect()); observers = [];
+  track.innerHTML = A.map(articleHTML).join('');
+  arts.length = 0;
+  [...track.children].forEach((el, i) => {
+    const a = {
+      el, views: $('.views', el), blur: $('.layer.blur', el), eng: $('.layer.eng', el), vEls: [...el.querySelectorAll('.view')],
+      scroll: $('.dscroll', el), prow: $('.prow', el), btitle: $('.btitle', el), stitle: $('.stitle', el), arow: $('.arow', el),
+      dots: [...el.querySelectorAll('.dots i')], next: $('.nextbtn', el), kp: $('.kp', el), secs: [...el.querySelectorAll('.sec')]
+    };
+    arts.push(a);
+    const io = new IntersectionObserver(ents => {
+      ents.forEach(en => en.target.classList.toggle('on', en.isIntersecting));
+      updateDots(i);
+    }, { root: a.scroll, rootMargin: '-28% 0px -40% 0px' });
+    a.secs.forEach(s => io.observe(s));
+    let timer = 0;
+    const kio = new IntersectionObserver(ents => {
+      const en = ents[ents.length - 1];
+      if (en.isIntersecting) {
+        a.kp.classList.remove('wait'); st.kpShown[i] = true;
+        clearTimeout(timer); timer = setTimeout(() => complete(i), 2000);
+      } else clearTimeout(timer);
+    }, { root: a.scroll, threshold: 0.4 });
+    kio.observe(a.kp);
+    observers.push(io, kio);
+    let raf = 0;
+    a.scroll.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; collapse(i); }); }, { passive: true });
+    syncActs(i);
+  });
+  place();
+  arts.forEach((a, i) => {
+    if (st.sec[i] > 0) { const s = a.secs[st.sec[i]]; a.scroll.scrollTop = s.offsetTop - H * 0.32; }
+    collapse(i); updateDots(i);
+  });
+}
+function place() {
+  feedY.stop(); feedY.set(-st.idx * H);
+  viewX.forEach((m, i) => { m.stop(); m.set(-st.pos[i] * W); });
+}
+function collapse(i) {
+  const a = arts[i], q = clamp(a.scroll.scrollTop / 120, 0, 1);
+  a.prow.style.transform = `translate3d(0,${-90 * q}px,0)`;
+  a.btitle.style.transform = `translate3d(0,${-110 * q}px,0)`;
+  a.btitle.style.opacity = clamp(1 - q * 1.6, 0, 1);
+  a.stitle.style.opacity = clamp((q - 0.4) / 0.6, 0, 1);
+  a.arow.style.transform = `translate3d(0,${-127 * q}px,0) scale(${1 - 0.2 * q})`;
+}
+function updateDots(i) {
+  const a = arts[i];
+  const on = a.secs.filter(s => s.classList.contains('on'));
+  if (on.length) st.sec[i] = +on[on.length - 1].dataset.k;
+  a.dots.forEach((d, k) => d.classList.toggle('on', k === st.sec[i]));
+  const last = st.sec[i] >= a.secs.length - 1;
+  a.next.innerHTML = ic(last ? 'chevrons' : 'down');
+  a.next.setAttribute('aria-label', last ? T().goEngage : T().next);
+}
+function syncActs(i) {
+  const a = A[i];
+  phone.querySelectorAll(`.act[data-i="${i}"]`).forEach(el => {
+    const k = el.dataset.act; let n = 0, on = false;
+    if (k === 'like') { on = !!st.liked[i]; n = a.counts.likes + (on ? 1 : 0); }
+    else if (k === 'save') { on = !!st.saved[i]; n = a.counts.saves + (on ? 1 : 0); }
+    else if (k === 'share') n = a.counts.shares + (st.shared[i] || 0);
+    else n = st.comments[i].length;
+    el.classList.toggle('on', on);
+    el.querySelector('.n').textContent = fmt(n);
+    if (k === 'like' || k === 'save') el.querySelector('button').setAttribute('aria-pressed', on);
+  });
+}
+function applyUI() {
+  document.documentElement.lang = st.lang;
+  phone.querySelectorAll('[data-t]').forEach(el => { el.textContent = T()[el.dataset.t]; });
+  $('#langLabel').textContent = st.lang;
+  lmenu.querySelectorAll('[data-l]').forEach(b => b.setAttribute('aria-checked', b.dataset.l === st.lang));
+}
+
+// ---------- Navigation ----------
+function goArticle(t, v = 0, instant = false) {
+  t = clamp(t, 0, A.length - 1);
+  const changed = t !== st.idx;
+  st.idx = t;
+  chrome(-viewX[t].v / W);
+  if (instant || reduce.matches) { feedY.stop(); feedY.set(-t * H); if (changed && !instant) fade(feed); return; }
+  springTo(feedY, -t * H, springFor(v));
+}
+function setView(i, t, v = 0, instant = false) {
+  t = clamp(t, 0, 2);
+  const changed = t !== st.pos[i];
+  st.pos[i] = t;
+  if (instant || reduce.matches) { viewX[i].stop(); viewX[i].set(-t * W); if (changed && !instant) fade(arts[i].views); return; }
+  springTo(viewX[i], -t * W, springFor(v));
+}
+function pick(cur, v, size, idx, min, max) {
+  let t = Math.abs(v) >= 500 ? idx + (v < 0 ? 1 : -1) : Math.round(-(cur + project(v)) / size);
+  return clamp(clamp(t, idx - 1, idx + 1), min, max);
+}
+function jumpTo(i) { st.pos[i] = 0; viewX[i].stop(); viewX[i].set(0); goArticle(i); }
+function nextSection(i) {
+  const a = arts[i], cur = st.sec[i];
+  if (cur >= a.secs.length - 1) { setView(i, 2); return; }
+  const s = a.secs[cur + 1];
+  a.scroll.scrollTo({ top: s.offsetTop - H * 0.32, behavior: reduce.matches ? 'auto' : 'smooth' });
+}
+
+// ---------- Feed gesture: axis lock, 1:1 tracking, momentum projection, velocity handoff ----------
+let g = null, justDragged = false, lastTap = null;
+const markDragged = () => { justDragged = true; setTimeout(() => { justDragged = false; }, 60); };
+function velocity(samples, now, key) {
+  const s = samples.filter(q => now - q.t <= 100);
+  if (s.length < 2) return 0;
+  const a = s[0], b = s[s.length - 1];
+  return (b[key] - a[key]) / S / Math.max(0.008, (b.t - a.t) / 1000);
+}
+feed.addEventListener('pointerdown', e => {
+  if (e.button > 0 || e.target.closest('input, form')) return;
+  const i = st.idx;
+  feedY.stop(); viewX[i].stop();
+  g = { id: e.pointerId, x0: e.clientX, y0: e.clientY, axis: null, i, fy: feedY.v, vx: viewX[i].v, smp: [{ t: e.timeStamp, x: e.clientX, y: e.clientY }], target: e.target };
+});
+window.addEventListener('pointermove', e => {
+  if (!g || e.pointerId !== g.id) return;
+  g.smp.push({ t: e.timeStamp, x: e.clientX, y: e.clientY });
+  if (g.smp.length > 20) g.smp.shift();
+  const dx = (e.clientX - g.x0) / S, dy = (e.clientY - g.y0) / S;
+  if (!g.axis) {
+    if (Math.hypot(dx, dy) < 10) return;
+    g.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+    if (g.axis === 'y' && st.pos[g.i] !== 0) { g = null; return; }
+    g.x0 = e.clientX; g.y0 = e.clientY;
+    try { feed.setPointerCapture(e.pointerId); } catch (_) {}
+    return;
+  }
+  if (g.axis === 'x') viewX[g.i].set(rb(g.vx + dx, -2 * W, 0, W));
+  else feedY.set(rb(g.fy + dy, -(A.length - 1) * H, 0, H));
+});
+function endGesture(e) {
+  if (!g || e.pointerId !== g.id) return;
+  const G = g; g = null;
+  if (!G.axis) {
+    if (e.type === 'pointerup') onTap(e, G);
+    else { setView(G.i, st.pos[G.i]); goArticle(st.idx); }
+    return;
+  }
+  markDragged();
+  if (G.axis === 'x') {
+    const v = velocity(G.smp, e.timeStamp, 'x');
+    setView(G.i, pick(viewX[G.i].v, v, W, st.pos[G.i], 0, 2), v);
+  } else {
+    const v = velocity(G.smp, e.timeStamp, 'y');
+    goArticle(pick(feedY.v, v, H, st.idx, 0, A.length - 1), v);
+  }
+}
+window.addEventListener('pointerup', endGesture);
+window.addEventListener('pointercancel', endGesture);
+function onTap(e, G) {
+  if (!G.target.closest('.cover') || G.target.closest('button, .ctitle, .rail, .crow')) { setView(G.i, st.pos[G.i]); goArticle(st.idx); return; }
+  setView(G.i, st.pos[G.i]); goArticle(st.idx);
+  if (lastTap && e.timeStamp - lastTap.t < 320 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 40) {
+    lastTap = null;
+    if (!st.liked[st.idx]) toggleLike(st.idx);
+    bigHeart(e);
+  } else lastTap = { t: e.timeStamp, x: e.clientX, y: e.clientY };
+}
+let wheelLock = 0;
+feed.addEventListener('wheel', e => {
+  const i = st.idx, now = performance.now();
+  const horiz = Math.abs(e.deltaX) > Math.abs(e.deltaY);
+  if (!horiz && st.pos[i] !== 0) return;
+  e.preventDefault();
+  if (now < wheelLock) return;
+  const d = horiz ? e.deltaX : e.deltaY;
+  if (Math.abs(d) < 12) return;
+  wheelLock = now + 650;
+  if (horiz) setView(i, st.pos[i] + Math.sign(d)); else goArticle(i + Math.sign(d));
+}, { passive: false });
+addEventListener('keydown', e => {
+  if (e.target.closest && e.target.closest('input')) return;
+  if (!sheet.hidden || msgX.v < W - 1) { if (e.key === 'Escape') { closeSheet(); closeMsgs(); } return; }
+  const i = st.idx;
+  if (e.key === 'ArrowDown' && st.pos[i] === 0) { e.preventDefault(); goArticle(i + 1, 0, true); }
+  else if (e.key === 'ArrowUp' && st.pos[i] === 0) { e.preventDefault(); goArticle(i - 1, 0, true); }
+  else if (e.key === 'ArrowRight') setView(i, st.pos[i] + 1, 0, true);
+  else if (e.key === 'ArrowLeft') setView(i, st.pos[i] - 1, 0, true);
+  else if (e.key === 'l' || e.key === 'L') toggleLike(i);
+  else if (e.key === 's' || e.key === 'S') toggleSave(i);
+});
+
+// Drag-to-dismiss for the messages panel (x) and sheets (y).
+function dismissable(el, m, axis, size, onClose, onStay, accept) {
+  let d = null;
+  el.addEventListener('pointerdown', e => {
+    if (accept && !accept(e)) return;
+    m.stop();
+    d = { id: e.pointerId, p0: axis === 'x' ? e.clientX : e.clientY, o0: axis === 'x' ? e.clientY : e.clientX, base: m.v, lock: null, smp: [] };
+  });
+  el.addEventListener('pointermove', e => {
+    if (!d || d.id !== e.pointerId) return;
+    const p = axis === 'x' ? e.clientX : e.clientY, o = axis === 'x' ? e.clientY : e.clientX;
+    const dm = (p - d.p0) / S, dor = (o - d.o0) / S;
+    if (!d.lock) {
+      if (Math.hypot(dm, dor) < 10) return;
+      if (Math.abs(dor) > Math.abs(dm)) { d = null; return; }
+      d.lock = true; d.p0 = p; try { el.setPointerCapture(e.pointerId); } catch (_) {}
+      return;
+    }
+    let v = d.base + dm; if (v < 0) v = -rubber(-v, size());
+    m.set(v); d.smp.push({ t: e.timeStamp, p });
+  });
+  const up = e => {
+    if (!d || d.id !== e.pointerId) return;
+    const D = d; d = null;
+    if (!D.lock) return;
+    markDragged();
+    const v = velocity(D.smp, e.timeStamp, 'p');
+    (v > 500 || m.v + project(v) > size() / 2) ? onClose(v) : onStay(v);
+  };
+  el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
+}
+
+// ---------- Actions ----------
+function pop(el) { if (!reduce.matches && el) el.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.22)' }, { transform: 'scale(1)' }], { duration: 340, easing: 'cubic-bezier(.34,1.56,.64,1)' }); }
+function toggleLike(i) {
+  st.liked[i] = !st.liked[i]; syncActs(i);
+  if (st.liked[i]) phone.querySelectorAll(`.act[data-i="${i}"][data-act="like"] svg`).forEach(pop);
+}
+function toggleSave(i) {
+  st.saved[i] = !st.saved[i]; syncActs(i);
+  if (st.saved[i] && !reduce.matches) phone.querySelectorAll(`.act[data-i="${i}"][data-act="save"] svg`).forEach(s => s.animate([{ transform: 'translateY(-3px)' }, { transform: 'none' }], { duration: 150, easing: 'cubic-bezier(.23,1,.32,1)' }));
+}
+function share(i) {
+  try { navigator.clipboard.writeText(location.href).catch(() => {}); } catch (_) {}
+  st.shared[i] = (st.shared[i] || 0) + 1; syncActs(i); toast(T().copied);
+}
+function bigHeart(e) {
+  const r = phone.getBoundingClientRect();
+  const h = document.createElement('div');
+  h.className = 'bigheart'; h.innerHTML = ic('heart');
+  h.style.left = (e.clientX - r.left) / S + 'px'; h.style.top = (e.clientY - r.top) / S + 'px';
+  phone.appendChild(h);
+  const frames = reduce.matches
+    ? [{ transform: 'translate(-50%,-50%)', opacity: 1 }, { transform: 'translate(-50%,-50%)', opacity: 0 }]
+    : [{ transform: 'translate(-50%,-50%) scale(.6) rotate(-12deg)', opacity: 0 }, { transform: 'translate(-50%,-50%) scale(1.1) rotate(-6deg)', opacity: 1, offset: 0.3 },
+       { transform: 'translate(-50%,-58%) scale(1) rotate(-6deg)', opacity: 1, offset: 0.65 }, { transform: 'translate(-50%,-90%) scale(1) rotate(-6deg)', opacity: 0 }];
+  h.animate(frames, { duration: 900, easing: 'cubic-bezier(.23,1,.32,1)' }).onfinish = () => h.remove();
+}
+function complete(i) {
+  if (st.done[i]) return;
+  st.done[i] = true;
+  if (st.streakUp) return;
+  st.streakUp = true; st.streak += 1;
+  const num = $('#snum');
+  num.textContent = st.streak;
+  if (!reduce.matches) {
+    num.animate([{ transform: 'translateY(100%)' }, { transform: 'none' }], { duration: 260, easing: 'cubic-bezier(.23,1,.32,1)' });
+    pop($('#fire'));
+  }
+  try { navigator.vibrate && navigator.vibrate(10); } catch (_) {}
+  toast(T().streakUp(st.streak));
+}
+function toggleStep(i, k, el) {
+  st.applied[i][k] = !st.applied[i][k];
+  el.setAttribute('aria-pressed', st.applied[i][k]);
+  if (st.applied[i][k]) pop(el.querySelector('.chk'));
+  const all = st.applied[i].every(Boolean);
+  $('.abadge', arts[i].el).hidden = !all;
+  if (all && !st.appliedToast[i]) { st.appliedToast[i] = true; toast(T().appliedToast); }
+}
+let tt = 0;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 2200); }
+
+// Language
+function toggleLang(force) {
+  const open = force !== undefined ? force : !lmenu.classList.contains('open');
+  lmenu.classList.toggle('open', open);
+  $('#langBtn').setAttribute('aria-expanded', open);
+}
+function setLang(l) {
+  toggleLang(false);
+  if (l === st.lang) return;
+  st.lang = l; applyUI(); renderFeed();
+}
+document.addEventListener('pointerdown', e => { if (lmenu.classList.contains('open') && !e.target.closest('.lmenu, .lang')) toggleLang(false); });
+
+// Messages
+function openMsgs() { msgs.inert = false; springTo(msgX, 0, { duration: 0.4 }); }
+function closeMsgs(v = 0) { springTo(msgX, W, { velocity: v, duration: 0.4 }, () => { msgs.inert = true; }); }
+dismissable(msgs, msgX, 'x', () => W, v => closeMsgs(v), v => springTo(msgX, 0, { velocity: v, bounce: 0.2, duration: 0.3 }), e => !e.target.closest('button'));
+
+// Sheets
+function openSheet(html, after) {
+  sbody.innerHTML = html; sheet.hidden = false; scrim.classList.add('on');
+  sheetY.set(sheet.offsetHeight);
+  springTo(sheetY, 0, { duration: 0.4 });
+  if (after) after();
+}
+function closeSheet(v = 0) {
+  if (sheet.hidden) return;
+  scrim.classList.remove('on');
+  springTo(sheetY, sheet.offsetHeight, { velocity: v, duration: 0.3 }, () => { sheet.hidden = true; sbody.innerHTML = ''; });
+}
+dismissable(sheet, sheetY, 'y', () => sheet.offsetHeight, v => closeSheet(v), v => springTo(sheetY, 0, { velocity: v, bounce: 0.2, duration: 0.3 }), e => !!e.target.closest('.sgrab'));
+
+const meta = i => `${tx(A[i].cat)} · ${T().read(Math.max(1, Math.round(words(A[i]) / 230)))}`;
+const thumb = i => `<div class="thumb">${artHTML(A[i].art)}</div>`;
+function resultsHTML(q) {
+  const nq = norm(q.trim());
+  const hits = A.map((a, i) => i).filter(i => !nq || norm(A[i].title.en + ' ' + A[i].title.vi + ' ' + A[i].keywords).includes(nq));
+  if (!hits.length) return `<div class="rnone">${esc(T().noResults(q))}</div>`;
+  return hits.map(i => `<button class="ritem" data-act="open" data-to="${i}">${thumb(i)}<div><div class="rtitle">${esc(tx(A[i].title))}</div><div class="rmeta">${esc(meta(i))}</div></div></button>`).join('');
+}
+function openSearch() {
+  const terms = st.lang === 'vi' ? ['mệt mỏi quyết định', 'thiên kiến', 'dopamine', 'giấc ngủ'] : ['decision fatigue', 'confirmation bias', 'dopamine', 'habits'];
+  openSheet(`<h2>${T().exploreTitle === 'Explore' ? 'Search' : 'Tìm kiếm'}</h2>
+    <input class="sinput" id="sq" type="search" enterkeyhint="search" autocomplete="off" placeholder="${T().searchPh}" aria-label="${T().searchPh}">
+    <div class="terms" aria-label="${T().popular}">${terms.map(t => `<button class="chip term" data-act="term">${esc(t)}</button>`).join('')}</div>
+    <div class="rlist" id="rlist">${resultsHTML('')}</div>`, () => {
+    const q = $('#sq');
+    q.addEventListener('input', () => { $('#rlist').innerHTML = resultsHTML(q.value); });
+    q.focus({ preventScroll: true });
+  });
+}
+function exploreGrid() {
+  return A.map((a, i) => i).filter(i => st.cat === 'all' || A[i].id === st.cat).map(i => `<button class="card" data-act="open" data-to="${i}">${artHTML(A[i].art)}<div class="shade"></div><div class="ct">${esc(tx(A[i].title))}</div><div class="cl">${ic('heart')}${fmt(A[i].counts.likes + (st.liked[i] ? 1 : 0))}</div></button>`).join('');
+}
+function openExplore() {
+  const chips = [['all', T().all], ...A.map(a => [a.id, tx(a.cat)])];
+  openSheet(`<h2>${T().exploreTitle}</h2><div class="terms">${chips.map(([id, n]) => `<button class="chip" data-act="cat" data-c="${id}" aria-pressed="${st.cat === id}">${esc(n)}</button>`).join('')}</div><div class="grid" id="egrid">${exploreGrid()}</div>`);
+}
+function openSources(i) {
+  openSheet(`<h2>${T().sources}</h2><ol class="srcs">${A[i].sources.map(([n, d]) => `<li>${esc(n)}<span>${esc(d)}</span></li>`).join('')}</ol>`);
+}
+function openCreate() {
+  openSheet(`<div class="soon"><div class="ico">${ic('pen')}</div><h2>${T().soon}</h2><p>${T().soonSub}</p><button class="cta" data-act="notify">${T().notify}</button></div>`);
+}
+
+phone.addEventListener('click', e => { if (justDragged) { e.stopPropagation(); e.preventDefault(); } }, true);
+phone.addEventListener('click', e => {
+  const el = e.target.closest('[data-act]'); if (!el) return;
+  const art = el.closest('.article'); const i = art ? +art.dataset.i : st.idx;
+  switch (el.dataset.act) {
+    case 'like': toggleLike(i); break;
+    case 'save': toggleSave(i); break;
+    case 'share': share(i); break;
+    case 'comment': case 'toEngage': setView(i, 2); break;
+    case 'toDetails': setView(i, 1); break;
+    case 'top': arts[i].scroll.scrollTo({ top: 0, behavior: reduce.matches ? 'auto' : 'smooth' }); break;
+    case 'next': nextSection(i); break;
+    case 'sources': openSources(i); break;
+    case 'step': toggleStep(i, +el.dataset.k, el); break;
+    case 'closeBanner': phone.classList.add('nobanner'); break;
+    case 'explore': openExplore(); break;
+    case 'search': openSearch(); break;
+    case 'plus': openCreate(); break;
+    case 'chat': openMsgs(); break;
+    case 'msgClose': closeMsgs(); break;
+    case 'bell': toast(T().caughtUp); break;
+    case 'lang': toggleLang(); break;
+    case 'pickLang': setLang(el.dataset.l); break;
+    case 'sheetClose': closeSheet(); break;
+    case 'open': closeSheet(); jumpTo(+el.dataset.to); break;
+    case 'notify': closeSheet(); toast(T().notified); break;
+    case 'term': { const q = $('#sq'); q.value = el.textContent; $('#rlist').innerHTML = resultsHTML(q.value); break; }
+    case 'cat': st.cat = el.dataset.c; sbody.querySelectorAll('[data-act="cat"]').forEach(c => c.setAttribute('aria-pressed', c.dataset.c === st.cat)); $('#egrid').innerHTML = exploreGrid(); break;
+  }
+});
+phone.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.classList.contains('cite')) { e.preventDefault(); e.target.click(); }
+});
+phone.addEventListener('submit', e => {
+  const f = e.target.closest('.cform'); if (!f) return;
+  e.preventDefault();
+  const i = +f.dataset.i, inp = f.querySelector('input'), v = inp.value.trim();
+  if (!v) return;
+  st.comments[i].unshift({ n: T().you, c: '#F0ABFC', x: v });
+  inp.value = ''; inp.blur();
+  const a = arts[i];
+  $('.clist', a.el).innerHTML = commentsHTML(i);
+  $('.ccount', a.el).textContent = T().comments(st.comments[i].length);
+  syncActs(i);
+  const first = $('.citem', a.el);
+  if (first && !reduce.matches) first.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 200, easing: 'cubic-bezier(.23,1,.32,1)' });
+});
+
+// ---------- Boot ----------
+fit();
+applyUI();
+renderFeed();
+msgX.set(W);
+addEventListener('resize', () => { fit(); place(); if (msgs.inert) msgX.set(W); });
+})();
+</script>
