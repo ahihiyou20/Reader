@@ -1,14 +1,19 @@
 'use client';
-import { QueryClient, useQuery } from '@tanstack/react-query';
+// Static JSON (public/data) with a tiny in-memory cache. The files change only on deploy,
+// so each one is fetched once per session; failures can be retried.
+import { useCallback, useSyncExternalStore } from 'react';
 import type MiniSearch from 'minisearch';
 import type { ArticleClient, Category, FeedFile } from '@/lib/content/types';
 import { SEARCH_OPTIONS, type SearchDoc } from '@/lib/search';
 
-export const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: { staleTime: Infinity, gcTime: 30 * 60_000, retry: 2, refetchOnWindowFocus: false },
-  },
-});
+interface Entry<T> {
+  status: 'loading' | 'success' | 'error';
+  data?: T;
+  promise?: Promise<T>;
+}
+const cache = new Map<string, Entry<unknown>>();
+const subs = new Map<string, Set<() => void>>();
+const notify = (key: string) => subs.get(key)?.forEach((fn) => fn());
 
 async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url, { cache: 'no-cache' });
@@ -16,28 +21,70 @@ async function getJson<T>(url: string): Promise<T> {
   return (await res.json()) as T;
 }
 
+function load<T>(key: string, fn: () => Promise<T>, force = false): Promise<T> {
+  const cur = cache.get(key) as Entry<T> | undefined;
+  if (cur && !force && cur.status !== 'error') return cur.promise ?? Promise.resolve(cur.data as T);
+  const promise = fn().then(
+    (data) => {
+      cache.set(key, { status: 'success', data });
+      notify(key);
+      return data;
+    },
+    (e) => {
+      cache.set(key, { status: 'error' });
+      notify(key);
+      throw e;
+    },
+  );
+  cache.set(key, { status: 'loading', promise, data: cur?.data });
+  notify(key);
+  return promise;
+}
+
+export function setData<T>(key: string, data: T) {
+  cache.set(key, { status: 'success', data });
+  notify(key);
+}
+
+function useResource<T>(key: string | null, fn: () => Promise<T>) {
+  const subscribe = useCallback(
+    (cb: () => void) => {
+      if (!key) return () => {};
+      let set = subs.get(key);
+      if (!set) subs.set(key, (set = new Set()));
+      set.add(cb);
+      if (!cache.has(key)) load(key, fn).catch(() => {});
+      return () => set!.delete(cb);
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [key],
+  );
+  const entry = useSyncExternalStore(
+    subscribe,
+    () => (key ? (cache.get(key) as Entry<T> | undefined) : undefined),
+    () => undefined,
+  );
+  return {
+    data: entry?.data,
+    isError: entry?.status === 'error',
+    isLoading: !entry || entry.status === 'loading',
+    refetch: () => (key ? load(key, fn, true).catch(() => undefined) : undefined),
+  };
+}
+
 export const fetchFeed = () => getJson<FeedFile>('/data/feed.json');
 export const fetchArticle = (slug: string) => getJson<ArticleClient>(`/data/articles/${encodeURIComponent(slug)}.json`);
-export const fetchCategories = () => getJson<Category[]>('/data/categories.json');
-export const fetchTerms = () => getJson<string[]>('/data/terms.json');
 
-export const articleQuery = (slug: string) => ({ queryKey: ['article', slug], queryFn: () => fetchArticle(slug) });
-
-export function useFeed() {
-  return useQuery({ queryKey: ['feed'], queryFn: fetchFeed });
-}
-export function useCategories() {
-  return useQuery({ queryKey: ['categories'], queryFn: fetchCategories });
-}
-export function useTerms() {
-  return useQuery({ queryKey: ['terms'], queryFn: fetchTerms });
-}
+export const useFeed = () => useResource('feed', fetchFeed);
+export const useCategories = () => useResource('categories', () => getJson<Category[]>('/data/categories.json'));
+export const useTerms = () => useResource('terms', () => getJson<string[]>('/data/terms.json'));
 export function useArticle(slug: string | undefined, enabled = true) {
-  return useQuery({ ...articleQuery(slug ?? ''), enabled: Boolean(slug) && enabled });
+  return useResource(slug && enabled ? `article:${slug}` : null, () => fetchArticle(slug!));
 }
+export const setArticleData = (a: ArticleClient) => setData(`article:${a.slug}`, a);
 
 export function prefetchArticle(slug: string) {
-  return queryClient.prefetchQuery(articleQuery(slug));
+  return load(`article:${slug}`, () => fetchArticle(slug)).catch(() => undefined);
 }
 
 let search: Promise<MiniSearch<SearchDoc>> | null = null;

@@ -1,8 +1,7 @@
 'use client';
-import { QueryClientProvider } from '@tanstack/react-query';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
-import { queryClient } from '@/lib/data';
+import { setArticleData } from '@/lib/data';
 import { startSession } from '@/lib/actions';
 import { detectLang, translate } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
@@ -29,11 +28,9 @@ export interface PreviewData {
 
 export function ReaderApp({ initialSlug, preview, children }: { initialSlug?: string; preview?: PreviewData; children?: React.ReactNode }) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <Shell initialSlug={initialSlug} preview={preview}>
-        {children}
-      </Shell>
-    </QueryClientProvider>
+    <Shell initialSlug={initialSlug} preview={preview}>
+      {children}
+    </Shell>
   );
 }
 
@@ -42,9 +39,9 @@ function Shell({ initialSlug, preview, children }: { initialSlug?: string; previ
   const app = useRef<HTMLDivElement>(null);
   const [heart, setHeart] = useState<{ x: number; y: number; id: number } | null>(null);
   const previewItems = useRef<FeedItem[] | undefined>(undefined);
-  if (preview) {
-    queryClient.setQueryData(['article', preview.article.slug], preview.article);
-    if (previewItems.current?.[0] !== preview.item) previewItems.current = [preview.item];
+  if (preview && previewItems.current?.[0] !== preview.item) {
+    setArticleData(preview.article);
+    previewItems.current = [preview.item];
   }
   const items = useFeedList(preview ? previewItems.current : undefined);
 

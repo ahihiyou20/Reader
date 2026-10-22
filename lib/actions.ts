@@ -27,7 +27,7 @@ const CACHE = (uid: string) => `reader.userdata.${uid}`;
 const REFRESH_AFTER = 30 * 60_000;
 let started = false;
 let currentUid: string | null = null;
-let userWaiters: Array<(u: AuthUser) => void> = [];
+const userWaiters: Array<(u: AuthUser) => void> = [];
 
 function applyData(d: UserData) {
   useUser.setState({

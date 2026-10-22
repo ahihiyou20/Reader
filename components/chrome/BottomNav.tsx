@@ -1,5 +1,5 @@
 'use client';
-import { motion, useTransform } from 'framer-motion';
+import { m, useTransform } from 'framer-motion';
 import { MessageCircleMore, Plus, Search } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { needsGoogle } from '@/lib/actions';
@@ -16,11 +16,11 @@ export function BottomNav() {
   const plusScale = useTransform(chromeP, (p) => 1 - 0.22 * clamp(p, 0, 1));
   const keyboard = useKeyboardOpen();
   return (
-    <motion.nav className="bnav" style={{ y: keyboard ? 160 : y }} aria-label={t('home')}>
+    <m.nav className="bnav" style={{ y: keyboard ? 160 : y }} aria-label={t('home')}>
       <button className="nb side search" type="button" aria-label={t('search')} onClick={() => openOverlay('search')}>
         <Search className="ic" strokeWidth={2.4} aria-hidden="true" />
       </button>
-      <motion.div className="plusw" style={{ scale: plusScale }}>
+      <m.div className="plusw" style={{ scale: plusScale }}>
         <button
           className="nb plus"
           type="button"
@@ -31,11 +31,11 @@ export function BottomNav() {
         >
           <Plus className="ic" strokeWidth={2.8} aria-hidden="true" />
         </button>
-      </motion.div>
+      </m.div>
       <button className="nb side chat" type="button" aria-label={t('messages')} onClick={() => openOverlay('messages')}>
         <MessageCircleMore className="ic" aria-hidden="true" />
       </button>
-    </motion.nav>
+    </m.nav>
   );
 }
 

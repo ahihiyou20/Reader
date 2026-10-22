@@ -1,7 +1,7 @@
 'use client';
 // Panels slide in from the right and close back to the right; sheets rise from the bottom.
 // Both track the finger 1:1 when dragged to dismiss and hand the release velocity to the spring.
-import { animate, motion, useMotionValue, useTransform, type MotionValue } from 'framer-motion';
+import { animate, m, useMotionValue, useTransform, type MotionValue } from 'framer-motion';
 import { X, ChevronLeft } from 'lucide-react';
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { clamp, prefersReducedMotion, project, rubberband, sampleVelocity, spring } from '@/lib/motion';
@@ -163,7 +163,7 @@ export function Panel({
 
   if (!mounted) return null;
   return (
-    <motion.div
+    <m.div
       ref={setRef}
       className={`panel ${className}`}
       style={{ x }}
@@ -183,7 +183,7 @@ export function Panel({
         </div>
       )}
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -246,15 +246,15 @@ export function Sheet({ open, onClose, label, children }: { open: boolean; onClo
   if (!mounted) return null;
   return (
     <>
-      <motion.div className="backdrop" style={{ opacity: backdrop }} onClick={onClose} aria-hidden="true" />
-      <motion.div ref={setRef} className="sheet" style={{ y }} role="dialog" aria-modal="true" aria-label={label} inert={!open || undefined}>
+      <m.div className="backdrop" style={{ opacity: backdrop }} onClick={onClose} aria-hidden="true" />
+      <m.div ref={setRef} className="sheet" style={{ y }} role="dialog" aria-modal="true" aria-label={label} inert={!open || undefined}>
         <div className="sgrab" aria-hidden="true">
           <i />
         </div>
         <div className="sbody" ref={body}>
           {children}
         </div>
-      </motion.div>
+      </m.div>
     </>
   );
 }
