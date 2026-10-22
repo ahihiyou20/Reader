@@ -34,6 +34,8 @@ Bài viết ~400–600 từ, chia 5–7 section; mỗi section là một "trang"
 
 ## 2. Phạm vi
 
+> **Nguyên tắc: Reader miễn phí hoàn toàn.** Không có paywall, không giới hạn số bài/ngày, không khoá bình luận hay bài luyện tập sau đăng nhập trả phí. Đăng nhập chỉ cần để đồng bộ dữ liệu cá nhân và để viết bình luận.
+
 | Hạng mục | MVP | v1.1 | Later |
 |----------|:---:|:----:|:-----:|
 | Feed lướt dọc (Cover view) | ✅ | | |
@@ -47,7 +49,6 @@ Bài viết ~400–600 từ, chia 5–7 section; mỗi section là một "trang"
 | Messages panel (UI + empty state) | ✅ (UI) | Chat 1-1 thật | Nhóm thảo luận |
 | Notifications (in-app list) | | ✅ | Web Push |
 | Create post (+): soạn bài cá nhân | Nút hiển thị, mở "Coming soon" | Soạn & đăng bài | Kiểm duyệt cộng đồng |
-| Banner "Founding member" (giới hạn suất) | ✅ | | |
 | Light mode | | | ✅ |
 | Quiz cuối bài, TTS đọc bài | | | ✅ |
 
@@ -134,13 +135,13 @@ Là người đọc, tôi muốn vuốt lên/xuống để chuyển sang bài k�
 - Ô "Write a comment" dạng pill; tối đa 500 ký tự; gửi bằng nút ➤ hoặc Enter. Chưa đăng nhập → Login sheet.
 - Bình luận được hiển thị ngay (optimistic) và tăng `counts.comments`.
 
-**FR-18 — Explore CTA & banner Founding member**
+**FR-18 — Explore CTA**
 - Nút "Explore now ➜" (gradient) mở Explore (SCR-04).
-- Banner "View comments from everyone! Only {remaining}/{total} left" với progress bar (đã dùng/total) và nút ✕ đóng (ẩn 7 ngày). Đây là ưu đãi Founding member: user đăng ký trong số suất giới hạn được gắn badge "Founding". Số suất đọc từ `config/founding`.
+- **Không có paywall.** App gốc có banner "View comments from everyone! Only 128/300 left" để giới hạn quyền dùng; Reader **bỏ hẳn** phần này. Mọi người dùng đọc không giới hạn số bài, xem toàn bộ bình luận, làm toàn bộ bài luyện tập IELTS, không có suất giới hạn hay gói trả phí.
 
 ### 3.5 Auth & Profile (SCR-07, SCR-08)
 
-**FR-19 — Google Sign-In**
+**FR-19 — Google Sign-In** *(chi tiết và luồng đầy đủ ở [07-auth.md](./07-auth.md); khi khác nhau, theo 07)*
 - Đăng nhập bằng Google (Firebase Auth, popup trên desktop, redirect trên iOS PWA). Lần đầu tạo document `users/{uid}` với tên, avatar, `lang` mặc định theo trình duyệt.
 - Không bắt buộc đăng nhập để đọc; bắt buộc để like/save/comment/streak đồng bộ.
 - Header hiển thị avatar + tên (cắt "…" khi dài). Chạm avatar mở Profile: thống kê (streak hiện tại, dài nhất, số bài đã đọc), tab Saved / Liked, nút đăng xuất.
@@ -152,7 +153,7 @@ Là người đọc, tôi muốn vuốt lên/xuống để chuyển sang bài k�
 - Ngày đọc đầu tiên: streak = 1. Đọc vào ngày liền kề sau `lastReadDate`: streak + 1. Đọc cùng ngày: không đổi. Bỏ ≥ 1 ngày: reset về 1 khi đọc lại.
 - Khi streak tăng: icon 🔥 nảy (scale 1 → 1.3 → 1) và toast "🔥 {n}-day streak!".
 - Header hiển thị 🔥 + số; nếu hôm nay chưa đọc, icon hiển thị grayscale 60%.
-- Chưa đăng nhập: streak lưu localStorage, merge lên server khi đăng nhập (lấy giá trị lớn hơn).
+- Chưa đăng nhập: người dùng là khách ẩn danh (Firebase Anonymous Auth), streak lưu trên server theo uid khách và được giữ nguyên khi nâng cấp lên Google (07 §3.2).
 
 ### 3.7 Song ngữ (CMP-03)
 

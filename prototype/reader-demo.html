@@ -191,7 +191,7 @@ input { font: 500 16px var(--font); color: var(--fg); }
 .dots i.on { background: #fff; }
 
 /* Comments & Apply */
-.escroll { position: absolute; top: 0; left: 0; right: 0; bottom: calc(var(--sab) + 232px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none;
+.escroll { position: absolute; top: 0; left: 0; right: 0; bottom: calc(var(--sab) + 124px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none;
   padding: calc(var(--sat) + 74px) 16px 28px;
   -webkit-mask-image: linear-gradient(180deg, transparent calc(var(--sat) + 52px), #000 calc(var(--sat) + 70px), #000 calc(100% - 28px), transparent);
   mask-image: linear-gradient(180deg, transparent calc(var(--sat) + 52px), #000 calc(var(--sat) + 70px), #000 calc(100% - 28px), transparent); }
@@ -234,20 +234,6 @@ input { font: 500 16px var(--font); color: var(--fg); }
 .cta:active, .ctaside:active { transform: scale(0.97); }
 .cta .ic { width: 22px; height: 22px; }
 .ctaside { width: 26px; height: 46px; border-radius: 999px; background: rgba(40, 24, 70, 0.85); transition: transform 120ms var(--ease-out); }
-.banner { position: relative; display: flex; align-items: center; gap: 16px; padding: 16px 40px 16px 16px; border-radius: 22px;
-  background: rgba(54, 44, 110, 0.42); border: 1px solid rgba(255, 255, 255, 0.18); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
-.phone.nobanner .banner { display: none; }
-.blogo { display: flex; flex-direction: column; align-items: center; gap: 4px; padding-right: 16px; border-right: 1px solid rgba(255, 255, 255, 0.18); }
-.blogo b { font: 800 25px/30px var(--font); letter-spacing: -0.03em; background: var(--grad-brand); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.badge { padding: 2px 9px; border-radius: 999px; background: var(--save); color: #1a1406; font: 700 10.5px/16px var(--font); }
-.btext { flex: 1; min-width: 0; }
-.bt1 { font: 700 15px/19px var(--font); }
-.bt2 { margin-top: 4px; font: 500 12px var(--font); color: rgba(255, 255, 255, 0.75); }
-.bt2 b { color: #FF6FAE; }
-.bar { height: 4px; margin-top: 8px; border-radius: 2px; background: rgba(255, 255, 255, 0.2); overflow: hidden; }
-.bar i { display: block; height: 100%; background: var(--grad-cta); }
-.bx { position: absolute; top: 50%; right: 10px; width: 30px; height: 30px; margin-top: -15px; display: grid; place-items: center; color: rgba(255, 255, 255, 0.75); }
-.bx .ic { width: 18px; height: 18px; }
 
 /* Chrome */
 .topbar { position: absolute; left: 0; right: 0; top: calc(var(--sat) + 4px); height: 46px; z-index: 30; display: flex; align-items: center; gap: 10px; padding: 0 22px 0 16px; }
@@ -355,7 +341,7 @@ input { font: 500 16px var(--font); color: var(--fg); }
   .kp.wait { transform: none; }
 }
 @media (prefers-reduced-transparency: reduce) {
-  .pill, .cb, .nb.side, .lang, .kp, .banner, .lmenu { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .pill, .cb, .nb.side, .lang, .kp, .lmenu { -webkit-backdrop-filter: none; backdrop-filter: none; }
   .cb, .pill, .lang { background-color: rgba(20, 20, 28, 0.92); }
 }
 </style>
@@ -458,8 +444,7 @@ const UI = {
     details: 'Details', toDetails: 'Swipe to Details', toEngage: 'Swipe to Comments & Apply', explore: 'Explore', exploreTitle: 'Explore',
     keyPoint: 'KEY POINT', source: n => `[Source · ${n}]`, applyTitle: 'Turn what you read into what you do.', applySub: 'Three small steps from this article',
     applied: 'Applied', comments: n => `${n} Comment${n === 1 ? '' : 's'}`, noComments: 'No comments yet', writeComment: 'Write a comment',
-    exploreNow: 'Explore now', viewAll: 'View comments from everyone!', left: (r, t) => `Only <b>${r}</b> /${t} left`, founding: 'Founding',
-    messages: 'Messages', noConv: 'No conversations yet', copied: 'Link copied', streakUp: n => `🔥 ${n}-day streak!`,
+    exploreNow: 'Explore now', messages: 'Messages', noConv: 'No conversations yet', copied: 'Link copied', streakUp: n => `🔥 ${n}-day streak!`,
     appliedToast: 'Nice. You turned reading into action.', caughtUp: "You're all caught up", soon: 'Share your own insights',
     soonSub: 'Writing your own posts is coming soon. We can tell you when it opens.', notify: 'Notify me', notified: "We'll let you know",
     searchPh: 'Search articles or terms', noResults: q => `No articles found for “${q}”`, sources: 'Sources', all: 'All', read: n => `${n} min read`,
@@ -470,8 +455,7 @@ const UI = {
     details: 'Chi tiết', toDetails: 'Vuốt để xem chi tiết', toEngage: 'Vuốt để bình luận & áp dụng', explore: 'Khám phá', exploreTitle: 'Khám phá',
     keyPoint: 'Ý CHÍNH', source: n => `[Nguồn · ${n}]`, applyTitle: 'Biến điều bạn đọc thành điều bạn làm.', applySub: 'Ba bước nhỏ từ bài viết này',
     applied: 'Đã áp dụng', comments: n => `${n} bình luận`, noComments: 'Chưa có bình luận', writeComment: 'Viết bình luận',
-    exploreNow: 'Khám phá ngay', viewAll: 'Xem bình luận của mọi người!', left: (r, t) => `Chỉ còn <b>${r}</b> /${t} suất`, founding: 'Sáng lập',
-    messages: 'Tin nhắn', noConv: 'Chưa có cuộc trò chuyện', copied: 'Đã sao chép liên kết', streakUp: n => `🔥 Chuỗi ${n} ngày!`,
+    exploreNow: 'Khám phá ngay', messages: 'Tin nhắn', noConv: 'Chưa có cuộc trò chuyện', copied: 'Đã sao chép liên kết', streakUp: n => `🔥 Chuỗi ${n} ngày!`,
     appliedToast: 'Tuyệt. Bạn đã biến điều đọc thành hành động.', caughtUp: 'Bạn đã xem hết thông báo', soon: 'Chia sẻ góc nhìn của bạn',
     soonSub: 'Tính năng tự đăng bài sắp ra mắt. Chúng tôi sẽ báo khi mở.', notify: 'Báo cho tôi', notified: 'Chúng tôi sẽ báo cho bạn',
     searchPh: 'Tìm bài viết hoặc thuật ngữ', noResults: q => `Không tìm thấy bài cho “${q}”`, sources: 'Nguồn', all: 'Tất cả', read: n => `${n} phút đọc`,
@@ -792,9 +776,6 @@ function articleHTML(a, i) {
       <div class="ebottom">
         <form class="cform" data-i="${i}"><input class="cin" id="cin-${a.id}" name="comment" maxlength="500" autocomplete="off" enterkeyhint="send" placeholder="${t.writeComment}" aria-label="${t.writeComment}"><button class="csend" type="submit" aria-label="Send">${ic('share')}</button></form>
         <div class="ctarow"><button class="cta" data-act="explore">${t.exploreNow}${ic('arrowc')}</button><button class="ctaside" data-act="explore" aria-label="${t.exploreTitle}"></button></div>
-        <div class="banner"><div class="blogo"><b>Reader</b><span class="badge">${t.founding}</span></div>
-          <div class="btext"><div class="bt1">${t.viewAll}</div><div class="bt2">${t.left(128, 300)}</div><div class="bar"><i style="width:${(300 - 128) / 300 * 100}%"></i></div></div>
-          <button class="bx" data-act="closeBanner" aria-label="Close">${ic('x')}</button></div>
       </div>
     </div>
   </div></section>`;
@@ -1151,7 +1132,6 @@ phone.addEventListener('click', e => {
     case 'next': nextSection(i); break;
     case 'sources': openSources(i); break;
     case 'step': toggleStep(i, +el.dataset.k, el); break;
-    case 'closeBanner': phone.classList.add('nobanner'); break;
     case 'explore': openExplore(); break;
     case 'search': openSearch(); break;
     case 'plus': openCreate(); break;

@@ -42,7 +42,7 @@ reader/
 │  ├─ reader/       DetailsView, ArticleSection, RichText, InlineChip, KeyPointCard,
 │  │                SourceLine, SourceSheet, PageDots, ScrollDownButton, ActionRow
 │  ├─ engage/       CommentsApplyView, ApplyCard, CommentList, CommentInput,
-│  │                ExploreCTA, FoundingBanner
+│  │                ExploreCTA
 │  ├─ explore/      CategoryChips, ArticleGrid, SearchBox, SearchResults
 │  └─ social/       MessagesPanel, LoginSheet, NotificationsSheet
 ├─ lib/
@@ -62,6 +62,8 @@ reader/
 ```
 
 ## 3. Data model (Firestore)
+
+> Bản đầy đủ và mới nhất của data model (thêm nguồn bài, pipeline nội dung, bài luyện tập IELTS, từ vựng) nằm ở [06-database.md](./06-database.md). Mục này giữ bản tóm tắt ban đầu; khi hai nơi khác nhau, theo 06.
 
 ```ts
 // lib/richtext.ts
@@ -113,7 +115,6 @@ interface UserDoc {
   timezone: string;                   // 'Asia/Ho_Chi_Minh' (Intl.DateTimeFormat().resolvedOptions().timeZone)
   streak: { current: number; longest: number; lastReadDate: string | null }; // 'YYYY-MM-DD' theo timezone user
   stats: { articlesRead: number };
-  founding: boolean;
   waitlistCreate?: boolean;
   createdAt: Timestamp;
 }
@@ -129,7 +130,6 @@ interface UserDoc {
 | `articles/{id}/comments/{commentId}` | `uid, displayName, photoURL, text, lang, likeCount, createdAt` | |
 | `conversations/{id}` | `members[], lastMessage, updatedAt` | v1.1 |
 | `users/{uid}/notifications/{id}` | `type, payload, read, createdAt` | v1.1 |
-| `config/founding` | `total: 300, claimed: 172` | Banner "Only {total−claimed}/{total} left" |
 | `categories/{id}` | `name: Localized<string>, emoji, order, hasNew` | |
 
 ### Index
@@ -187,7 +187,7 @@ export function nextStreak(
 ```
 - Trigger: sự kiện `article_complete` (FR-09) → client gọi callable Function `completeArticle({ articleId, timezone })`. Function tính `today` theo timezone gửi lên (validate là IANA hợp lệ), chạy `nextStreak` trong transaction, ghi `progress`, `readDays`, `stats.articlesRead`. Trả về streak mới để UI animate.
 - Hiển thị: nếu `lastReadDate` < hôm qua → header hiển thị 0 (streak đã mất) dù chưa ghi lại server.
-- Khách (chưa login): `localStorage['reader.streak']` dùng cùng `nextStreak`; khi login, Function `mergeGuestStreak` lấy bản có `lastReadDate` mới hơn, nếu bằng nhau lấy `current` lớn hơn.
+- Khách: đăng nhập ẩn danh (Anonymous Auth) nên streak được tính trên server giống người dùng Google. Khi nâng cấp lên Google, uid giữ nguyên; nếu tài khoản Google đã tồn tại thì `mergeGuest` gộp dữ liệu (xem [07-auth.md](./07-auth.md) §3.2).
 
 ### 4.5 Tiến độ đọc & hoàn thành
 - `DetailsView` theo dõi section focus (IntersectionObserver, xem CMP-09) → debounce 1s ghi `progress.lastSectionIndex`.
@@ -314,8 +314,8 @@ Bật **Firebase App Check** (reCAPTCHA Enterprise) để chặn spam counter `s
 | Function | Loại | Việc |
 |----------|------|------|
 | `completeArticle` | callable | Streak + progress + readDays + stats (§4.4) |
-| `mergeGuestStreak` | callable | Gộp streak khách khi login |
-| `onUserCreate` | Auth trigger | Tạo `users/{uid}`; nếu `config/founding.claimed < total` thì `founding = true` và tăng `claimed` (transaction) |
+| `mergeGuest` | callable | Gộp dữ liệu khách vào tài khoản Google có sẵn (07 §3.2) |
+| `onUserCreate` | Auth trigger | Tạo `users/{uid}` với giá trị mặc định |
 | `onCommentCreate` | Firestore trigger | `counts.comments += 1` |
 | `onCommentDelete` | Firestore trigger | `counts.comments -= 1` |
 | `recomputeRank` | scheduled 1h | Cập nhật `rank` |
@@ -348,7 +348,7 @@ Khi implement component có motion/gesture, dùng các skill đã cài: `apple-d
 | **M1** Feed + Cover | FeedPager dọc, CoverView (media nền, scrim, CoverTitle, ActionRail tĩnh), TopBar, BottomNav, dữ liệu từ seed local | FR-01, 02, 04, 24 · CMP-01, 04, 05, 07, 08, 14 | Vuốt dọc snap mượt giữa ≥ 3 bài seed; trông giống screenshot 2 |
 | **M2** Details reader | ArticlePager ngang, DetailsView, RichText + InlineChip, ArticleSection focus/dim, KeyPointCard, SourceLine/Sheet, PageDots, ScrollDownButton, header thu gọn | FR-03, 05–08 · CMP-06, 09–13 | Trông giống screenshot 1 & video 0–8s; chip đúng màu; dots theo section |
 | **M3** Firebase + interactions | Firestore thật, seed script, Like/Save/Share optimistic, formatCount, double-tap like | FR-10–13 · CMP-04–06 | Counter đổi đúng sau reload; Rules test (emulator) pass |
-| **M4** Comments & Apply | CommentsApplyView gradient, ApplyCard, CommentList realtime, CommentInput, ExploreCTA, FoundingBanner | FR-14–18 · CMP-15–19 | Giống video 9–15s; 2 tab trình duyệt thấy comment realtime |
+| **M4** Comments & Apply | CommentsApplyView gradient, ApplyCard, CommentList realtime, CommentInput, ExploreCTA | FR-14–18 · CMP-15–18 | Giống video 9–15s; 2 tab trình duyệt thấy comment realtime |
 | **M5** Auth + Streak + Profile | Google Sign-In, LoginSheet, onUserCreate, completeArticle, StreakBadge animation, Profile | FR-09, 19, 20 · CMP-02, 23 · SCR-07 | Unit test `nextStreak` (cùng ngày, liền kề, cách ngày, đổi timezone); streak tăng khi đọc xong |
 | **M6** i18n | Message catalog đầy đủ, LangSwitcher + dropdown, nội dung song ngữ, giữ vị trí khi đổi | FR-21 · CMP-03 | Đổi en↔vi không mất bài/section; giống dropdown trong video |
 | **M7** Explore & Search | SCR-04, SCR-05, keywords normalize, recent searches | FR-22, 23 | Tìm "thien kien" ra bài có "thiên kiến" |

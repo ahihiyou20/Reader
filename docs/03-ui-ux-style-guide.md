@@ -226,12 +226,8 @@ Mỗi component: anatomy → kích thước → states → motion → FR liên q
 - Bên phải là nút phụ hình viên thuốc 28×60 nền `rgba(30,20,50,0.85)` (mở danh sách bài liên quan).
 - FR-18.
 
-### CMP-19 FoundingBanner
-- Card radius 24, nền `rgba(40,30,70,0.55)` + blur-md, viền 1px trắng 15%, padding 16.
-- Trái: logo chữ **"Reader"** (gradient `--grad-brand`, 30px 800) + badge "Founding" (nền `#FACC15`, chữ đen 11px 700, radius pill).
-- Phải: "View comments from everyone!" (`label` 16px) · "Only **128** /300 left" (`meta`, số màu `--accent-pink`) · progress bar cao 4px (nền trắng 20%, fill `--grad-cta`, width = (total − remaining)/total).
-- Nút ✕ 20px góc phải.
-- FR-18.
+### CMP-19 (đã bỏ)
+- FoundingBanner của app gốc là paywall giới hạn suất dùng. Reader miễn phí nên **không** có component này. Vùng đó dành cho danh sách bình luận.
 
 ### CMP-20 Skeleton
 - Khối bo radius tương ứng, nền `rgba(255,255,255,0.14)`, shimmer gradient chạy 1.4s. Dùng cho Apply, comments, lưới Explore.
@@ -329,11 +325,6 @@ Wireframe trên khung 390×844 (tọa độ y ước lượng, tính từ đỉn
 │ (        Write a comment        )    │ CommentInput
 │                                      │
 │ [   Explore now  ➜   ]  [▮]          │ ExploreCTA
-│ ┌────────────────────────────────┐   │
-│ │ Reader   View comments from    │ ✕ │ FoundingBanner
-│ │ Founding everyone!             │   │
-│ │          Only 128 /300 left ━━─│   │
-│ └────────────────────────────────┘   │
 └──────────────────────────────────────┘
 ```
 - Không có BottomNav. Cuộn dọc toàn trang; CommentInput dính đáy khi bàn phím mở.
