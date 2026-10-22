@@ -1,0 +1,133 @@
+{
+  "slug": "cell-messages-aging",
+  "status": "published",
+  "publishAt": "2026-10-18T00:00:00.000Z",
+  "category": "health",
+  "tags": [
+    "ageing",
+    "chronic disease",
+    "cell biology",
+    "medicine",
+    "receptors"
+  ],
+  "title": {
+    "en": "Could cell messages help treat the diseases of ageing?",
+    "vi": "Tín hiệu tế bào có thể giúp chữa bệnh tuổi già?"
+  },
+  "hook": {
+    "en": "Think of an older person you know who takes several pills every day: one for blood pressure, one for blood sugar, others for pain, sleep or memory. Each pill has its own job. But what if many of these diseases share [y:deeper roots] inside ageing cells? A family of tiny cell 'doorbells' may help explain why chronic illnesses so often arrive together.",
+    "vi": "Hãy nghĩ về một người lớn tuổi bạn quen phải uống nhiều loại thuốc mỗi ngày: một viên cho huyết áp, một viên cho đường huyết, những viên khác cho cơn đau, giấc ngủ hay trí nhớ. Mỗi viên thuốc có một nhiệm vụ riêng. Nhưng nếu nhiều căn bệnh ấy có chung [y:gốc rễ sâu xa] bên trong những tế bào đang lão hoá thì sao? Một họ 'chuông cửa' tí hon của tế bào có thể giúp giải thích vì sao các bệnh mạn tính thường kéo đến cùng nhau."
+  },
+  "sections": [
+    {
+      "heading_en": "Diseases that pile up",
+      "heading_vi": "Những căn bệnh chồng chất",
+      "body_en": "A **chronic disease** lasts a long time and needs ongoing care. Heart disease, type 2 diabetes, cancer, Alzheimer's and Parkinson's are examples. They affect different parts of the body, yet all become more common with age, and older people often have [p:several at once] {frym-gpcr}. Most medicines target one specific problem. But as we age, cells have more trouble with basic tasks: using energy, repairing damage and calming **inflammation**, the body's response to injury or infection. If these problems happen in several body systems at the same time, they may explain why chronic diseases so often appear together.",
+      "body_vi": "**Bệnh mạn tính** kéo dài và cần được chăm sóc liên tục. Bệnh tim, tiểu đường type 2, ung thư, Alzheimer và Parkinson là những ví dụ. Chúng ảnh hưởng tới các bộ phận khác nhau của cơ thể, nhưng đều trở nên phổ biến hơn theo tuổi tác, và người cao tuổi thường mắc [p:nhiều bệnh cùng lúc] {frym-gpcr}. Phần lớn thuốc nhắm vào một vấn đề cụ thể. Nhưng khi ta già đi, tế bào gặp khó khăn hơn với các nhiệm vụ cơ bản: sử dụng năng lượng, sửa chữa tổn thương và làm dịu **viêm**, tức phản ứng của cơ thể trước chấn thương hay nhiễm trùng. Nếu những trục trặc này xảy ra ở nhiều hệ cơ quan cùng lúc, chúng có thể giải thích vì sao các bệnh mạn tính thường xuất hiện cùng nhau."
+    },
+    {
+      "heading_en": "Doorbells on the cell",
+      "heading_vi": "Những chiếc chuông cửa trên tế bào",
+      "body_en": "Cells constantly receive messages from the rest of the body telling them when to use energy, grow or calm inflammation. They catch these messages with **receptors**, proteins that recognise one kind of message molecule. Many receptors sit in the cell's outer membrane, with one part facing out and another reaching inside. They work [y:like a doorbell]: pressing the button outside sends a signal into the house. When a message attaches on the outside, the receptor passes the information in, and the cell responds. Immune cells, heart cells and brain cells each listen for different messages, depending on their jobs.",
+      "body_vi": "Tế bào liên tục nhận thông điệp từ phần còn lại của cơ thể, cho chúng biết khi nào cần dùng năng lượng, phát triển hay làm dịu viêm. Chúng bắt các thông điệp này bằng **thụ thể** (*receptor*), những protein nhận diện một loại phân tử tín hiệu nhất định. Nhiều thụ thể nằm trên màng ngoài tế bào, một phần hướng ra ngoài và một phần vươn vào trong. Chúng hoạt động [y:giống chiếc chuông cửa]: nhấn nút bên ngoài sẽ gửi tín hiệu vào trong nhà. Khi một thông điệp gắn vào phía ngoài, thụ thể truyền thông tin vào trong và tế bào phản hồi. Tế bào miễn dịch, tế bào tim và tế bào não lắng nghe những thông điệp khác nhau, tuỳ theo nhiệm vụ của chúng."
+    },
+    {
+      "heading_en": "A thread stitched seven times",
+      "heading_vi": "Sợi chỉ khâu qua bảy lần",
+      "body_en": "One important family is the **G protein-coupled receptors**, or GPCRs. The human body has [p:more than 800 types] {fredriksson-2003}. Some help us smell and taste; many others work deep inside the body. Each GPCR is a long molecule that crosses the cell membrane seven times, like a thread stitched back and forth through cloth. When a message such as a hormone attaches outside, the receptor changes shape slightly. That small change switches on a helper inside the cell, the **G protein**, which passes the message along a chain of other proteins. In the end, the cell may use energy differently, release a chemical or calm inflammation.",
+      "body_vi": "Một họ quan trọng là **thụ thể bắt cặp với protein G**, gọi tắt là GPCR. Cơ thể người có [p:hơn 800 loại] {fredriksson-2003}. Một số giúp ta ngửi và nếm; nhiều loại khác làm việc sâu bên trong cơ thể. Mỗi GPCR là một phân tử dài xuyên qua màng tế bào bảy lần, như sợi chỉ khâu đi khâu lại qua tấm vải. Khi một thông điệp, chẳng hạn một hormone, gắn vào phía ngoài, thụ thể hơi đổi hình dạng. Thay đổi nhỏ ấy bật một 'trợ thủ' bên trong tế bào là **protein G**, và nó chuyển tiếp thông điệp qua một chuỗi protein khác. Cuối cùng, tế bào có thể dùng năng lượng theo cách khác, tiết ra một chất hoá học hoặc làm dịu viêm."
+    },
+    {
+      "heading_en": "A network, not a list",
+      "heading_vi": "Một mạng lưới, không phải danh sách",
+      "body_en": "GPCRs are busy all over the body. When you eat, some help you taste food and others control how you handle sugar. During stress or exercise, others adjust heart rate, blood pressure and how fast you burn energy. After an injury, still others guide immune cells to the right place, and in the brain they carry messages for movement, motivation and learning. Because body systems are connected, these signals [y:overlap and influence one another], forming what scientists call **GPCR networks**. As we age, GPCR signalling may shift in several systems at once, and if the network stops working smoothly, several diseases may appear together.",
+      "body_vi": "GPCR hoạt động khắp cơ thể. Khi bạn ăn, một số giúp bạn cảm nhận vị, số khác điều khiển cách cơ thể xử lý đường. Khi căng thẳng hay vận động, những GPCR khác điều chỉnh nhịp tim, huyết áp và tốc độ đốt năng lượng. Sau chấn thương, lại có những GPCR dẫn tế bào miễn dịch tới đúng chỗ, còn trong não, chúng truyền thông điệp cho vận động, động lực và học tập. Vì các hệ cơ quan liên kết với nhau, những tín hiệu này [y:chồng lấn và tác động lẫn nhau], tạo thành cái mà các nhà khoa học gọi là **mạng lưới GPCR**. Khi ta già đi, tín hiệu GPCR có thể thay đổi ở nhiều hệ cùng lúc, và nếu mạng lưới không còn vận hành trơn tru, nhiều bệnh có thể xuất hiện cùng nhau."
+    },
+    {
+      "heading_en": "Already a major drug target",
+      "heading_vi": "Vốn đã là đích tác dụng chính của thuốc",
+      "body_en": "GPCRs are not new to medicine. Nearly [g:40% of current medicines] act on them, including drugs for high blood pressure, allergies, asthma, migraine, pain, Parkinson's and type 2 diabetes {alhosaini-2021}. Most of these were designed to fix one problem by changing one main signal: blocking a signal that is too strong or boosting one that is too weak. Yet in chronic disease, problems feed each other. Cells that struggle to use energy repair damage less well, damaged tissue sends distress signals that keep inflammation going, and long-lasting inflammation stresses cells even more. Treating only one signal may not be enough.",
+      "body_vi": "GPCR không xa lạ với y học. Gần [g:40% số thuốc hiện nay] tác động lên chúng, gồm thuốc trị cao huyết áp, dị ứng, hen suyễn, đau nửa đầu, giảm đau, Parkinson và tiểu đường type 2 {alhosaini-2021}. Phần lớn các thuốc này được thiết kế để xử lý một vấn đề bằng cách thay đổi một tín hiệu chính: chặn tín hiệu quá mạnh hoặc tăng cường tín hiệu quá yếu. Nhưng ở bệnh mạn tính, các vấn đề nuôi dưỡng lẫn nhau. Tế bào khó sử dụng năng lượng thì sửa chữa tổn thương kém hơn, mô bị tổn thương phát tín hiệu báo động khiến tình trạng viêm kéo dài, và viêm kéo dài lại gây thêm áp lực cho tế bào. Chỉ điều trị một tín hiệu có thể là chưa đủ."
+    },
+    {
+      "heading_en": "Tuning, not switching",
+      "heading_vi": "Tinh chỉnh, không chỉ bật tắt",
+      "body_en": "Many drugs switch a receptor fully on or fully off. But two different molecules can attach to the same GPCR and [y:bend it in slightly different ways]: one shape may lead to a helpful response, another to side effects. If scientists understand these shapes in enough detail, they may design medicines that guide a receptor towards the response they want. Computer tools help. **AlphaFold**, for example, can predict the shapes of proteins, including GPCRs {jumper-2021}. Researchers also hope to find single treatments that ease several linked problems at once, or to pair a GPCR medicine with another aimed at inflammation or tissue repair.",
+      "body_vi": "Nhiều loại thuốc bật thụ thể lên hoàn toàn hoặc tắt hẳn. Nhưng hai phân tử khác nhau có thể gắn vào cùng một GPCR và [y:uốn nó theo những cách hơi khác nhau]: một hình dạng dẫn tới phản ứng có lợi, hình dạng khác gây tác dụng phụ. Nếu hiểu đủ chi tiết về các hình dạng này, các nhà khoa học có thể thiết kế thuốc dẫn thụ thể tới đúng phản ứng mong muốn. Công cụ máy tính hỗ trợ đắc lực. Chẳng hạn, **AlphaFold** có thể dự đoán hình dạng của protein, kể cả GPCR {jumper-2021}. Các nhà nghiên cứu cũng hy vọng tìm ra những phương pháp điều trị đơn lẻ làm dịu nhiều vấn đề liên quan cùng lúc, hoặc kết hợp một thuốc nhắm vào GPCR với thuốc khác nhằm vào viêm hay sửa chữa mô."
+    },
+    {
+      "heading_en": "Medicine that fits the person",
+      "heading_vi": "Y học vừa vặn với từng người",
+      "body_en": "People do not all age the same way. In one older adult, the biggest changes may involve blood vessels and energy use; in another, inflammation or brain signals. Doctors would need **biomarkers**, measurements such as blood pressure or blood sugar, to see what is changing in each person. In future, they may combine blood tests, genes, medical records and wearable devices, with AI helping to find patterns, and even test treatments on a *digital twin*, a computer model of part of a patient's body. There is still [p:a lot to learn], but the hope is to manage several diseases of ageing in a more coordinated way.",
+      "body_vi": "Không phải ai cũng lão hoá giống nhau. Ở người này, thay đổi lớn nhất có thể liên quan tới mạch máu và việc dùng năng lượng; ở người khác lại là viêm hay tín hiệu não. Bác sĩ sẽ cần các **dấu ấn sinh học** (*biomarker*), những chỉ số như huyết áp hay đường huyết, để thấy điều gì đang thay đổi ở từng người. Trong tương lai, họ có thể kết hợp xét nghiệm máu, gen, hồ sơ bệnh án và thiết bị đeo, với AI giúp tìm ra quy luật, thậm chí thử nghiệm phác đồ trên một *bản sao số*, mô hình máy tính của một phần cơ thể bệnh nhân. Vẫn còn [p:rất nhiều điều phải tìm hiểu], nhưng hy vọng là có thể kiểm soát nhiều bệnh tuổi già theo cách phối hợp hơn."
+    }
+  ],
+  "keyPoint": {
+    "en": "The body is less like [p:a row of separate machines] and more like an orchestra: when the conductor's signals drift, several sections go out of tune at once. When an older relative has many conditions, remember they may share *common roots*, and ask doctors how the treatments fit together.",
+    "vi": "Cơ thể không giống [p:một dãy máy móc tách rời] mà giống một dàn nhạc hơn: khi tín hiệu của nhạc trưởng lệch đi, nhiều bè cùng lạc điệu một lúc. Khi người thân lớn tuổi mắc nhiều bệnh, hãy nhớ rằng chúng có thể có *chung gốc rễ*, và hỏi bác sĩ xem các loại thuốc phối hợp với nhau ra sao."
+  },
+  "applySteps": {
+    "en": [
+      "Help an older relative make an up-to-date list of every medicine they take, with doses.",
+      "Bring that list to their next doctor's visit and ask whether any medicines overlap or interact.",
+      "Pick one habit that supports several body systems at once, such as a daily walk, and try it for a week."
+    ],
+    "vi": [
+      "Giúp một người thân lớn tuổi lập danh sách cập nhật mọi loại thuốc họ đang dùng, kèm liều lượng.",
+      "Mang danh sách đó tới lần khám tiếp theo và hỏi bác sĩ xem có thuốc nào trùng lặp hay tương tác không.",
+      "Chọn một thói quen hỗ trợ nhiều hệ cơ quan cùng lúc, như đi bộ mỗi ngày, và thử trong một tuần."
+    ]
+  },
+  "references": [
+    {
+      "id": "frym-gpcr",
+      "label": "Maudsley (2026)",
+      "url": "https://doi.org/10.3389/frym.2026.1966959"
+    },
+    {
+      "id": "fredriksson-2003",
+      "label": "Fredriksson et al. (2003)",
+      "url": "https://doi.org/10.1124/mol.63.6.1256"
+    },
+    {
+      "id": "alhosaini-2021",
+      "label": "Alhosaini et al. (2021)",
+      "url": "https://doi.org/10.1016/j.jsps.2021.04.015"
+    },
+    {
+      "id": "jumper-2021",
+      "label": "Jumper et al. (2021)",
+      "url": "https://doi.org/10.1038/s41586-021-03819-2"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/cell-messages-aging.webp",
+    "provider": "unsplash",
+    "author": "Dominik Martin",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/JYFmYif4n70"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "kids-frontiersin-org-could-cell-messages-help-treat-diseases-of-aging",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Stuart Maudsley"
+    ],
+    "originalTitle": "Could Cell Messages Help Treat Diseases of Aging?",
+    "originalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1966959",
+    "publisher": "Frontiers for Young Minds",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoQABwAPu1qrU8ppiQiMAgBMB2JYgC7AGlfhPll5p7/Ya5m/IBMAAD++WmCnlGq9j8wt8sx9ublrbNTzm3vmbEWmL2i1Q52mrm2NsfwQmHsOwvHZx9y8dsqTuRn5IS6J0qyjfxeLhmtxfJBg7pwKLEuhnH/7W46vaQ+AAAA",
+  "dominant": "#7e756d"
+}

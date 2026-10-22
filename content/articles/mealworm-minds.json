@@ -1,0 +1,136 @@
+{
+  "slug": "mealworm-minds",
+  "status": "published",
+  "publishAt": "2026-10-17T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "animal cognition",
+    "insects",
+    "decision-making",
+    "animal welfare",
+    "food"
+  ],
+  "title": {
+    "en": "Can an insect larva change its mind?",
+    "vi": "Ấu trùng côn trùng có thể đổi ý không?"
+  },
+  "hook": {
+    "en": "Do you think only humans can make smart choices? A team of Italian scientists put tiny mealworm larvae into a maze to find out. First the larvae learned where their favourite food was hidden. Then that food was made bitter. What the hungry larvae did next suggests that even [p:the smallest animals] may act on purpose.",
+    "vi": "Bạn có nghĩ chỉ con người mới đưa ra được những lựa chọn thông minh? Một nhóm nhà khoa học Ý đã đặt những ấu trùng sâu bột tí hon vào một mê cung để tìm hiểu. Đầu tiên, ấu trùng học được nơi giấu món ăn ưa thích. Sau đó, món ăn ấy bị làm cho đắng. Những gì các ấu trùng đói làm tiếp theo cho thấy ngay cả [p:những con vật nhỏ bé nhất] cũng có thể hành động có chủ đích."
+  },
+  "sections": [
+    {
+      "heading_en": "Acting on purpose",
+      "heading_vi": "Hành động có chủ đích",
+      "body_en": "Imagine two friends, Alex and Jamie, who both love strawberry sweets. One day, each eats a sweet that looks and smells the same as usual but tastes bitter. Next time Alex sees one, he leaves it. Jamie keeps eating them. Alex has learned that the sweet is [y:no longer worth it] and changed his behaviour. Psychologists call this **goal-directed behaviour**: linking an action to its result and changing what you do when you no longer want that result {frym-mealworm}. It differs from a habit or a reflex, which keeps running whether or not the result is still useful.",
+      "body_vi": "Hãy tưởng tượng hai người bạn, Alex và Jamie, đều mê kẹo dâu. Một hôm, mỗi người ăn một viên kẹo trông và có mùi y như mọi khi nhưng lại đắng. Lần sau thấy kẹo, Alex bỏ qua. Jamie vẫn tiếp tục ăn. Alex đã nhận ra viên kẹo [y:không còn đáng ăn nữa] và thay đổi hành vi. Các nhà tâm lý học gọi đây là **hành vi hướng mục tiêu** (*goal-directed behaviour*): gắn một hành động với kết quả của nó và thay đổi việc mình làm khi không còn muốn kết quả ấy {frym-mealworm}. Nó khác với thói quen hay phản xạ, vốn cứ tiếp diễn dù kết quả còn hữu ích hay không."
+    },
+    {
+      "heading_en": "Two conditions",
+      "heading_vi": "Hai điều kiện",
+      "body_en": "How can we tell whether an animal acts on purpose? Scientists look for two things. First, the animal must understand that its actions have consequences, the **cause–effect principle**. Second, the consequence must be something the animal actually wants, a goal. So an animal acts on purpose when it knows what its actions lead to and chooses them in order to get the results it desires. This is different from a frog snapping at anything small that moves. That frog is not choosing: it [y:reacts automatically], whatever the result.",
+      "body_vi": "Làm sao biết một con vật có hành động có chủ đích hay không? Các nhà khoa học tìm kiếm hai điều. Thứ nhất, con vật phải hiểu rằng hành động của nó dẫn tới hệ quả, gọi là **nguyên tắc nhân quả**. Thứ hai, hệ quả đó phải là thứ con vật thực sự mong muốn, tức một mục tiêu. Như vậy, một con vật hành động có chủ đích khi nó biết hành động của mình dẫn tới đâu và chọn chúng để đạt được kết quả mong muốn. Điều này khác với một con ếch đớp bất cứ thứ gì nhỏ và chuyển động. Con ếch ấy không lựa chọn: nó [y:phản ứng tự động], bất kể kết quả ra sao."
+    },
+    {
+      "heading_en": "The rat experiment",
+      "heading_vi": "Thí nghiệm trên chuột",
+      "body_en": "Decades ago, scientists tested this in rats with the **outcome-devaluation test** {adams-dickinson-1981}. First, rats learned to press a lever to get tasty food. Then the food was changed so that it made them feel sick, but this time no lever was available, so the rats could not connect the lever with feeling ill. Later, when the lever came back, the rats [g:avoided pressing it]. They must have remembered two separate things: the lever gives food, and that food now makes them sick. Like Alex, they adjusted their behaviour to the new value of the reward.",
+      "body_vi": "Nhiều thập kỷ trước, các nhà khoa học đã kiểm chứng điều này trên chuột bằng **phép thử giảm giá trị phần thưởng** (*outcome-devaluation test*) {adams-dickinson-1981}. Đầu tiên, chuột học cách nhấn cần gạt để nhận thức ăn ngon. Sau đó, thức ăn bị thay đổi để khiến chúng thấy khó chịu, nhưng lúc này không có cần gạt, nên chuột không thể liên hệ cần gạt với cảm giác ốm. Về sau, khi cần gạt xuất hiện trở lại, lũ chuột [g:tránh nhấn nó]. Hẳn chúng đã nhớ hai điều riêng biệt: cần gạt cho thức ăn, và thức ăn ấy giờ khiến chúng ốm. Giống như Alex, chúng điều chỉnh hành vi theo giá trị mới của phần thưởng."
+    },
+    {
+      "heading_en": "Meet the mealworm",
+      "heading_vi": "Làm quen với sâu bột",
+      "body_en": "**Mealworms** are the larvae of a beetle. They are easy to raise in containers of wheat bran, with pieces of apple or carrot for water. They are fed to pets and fish and, because they are rich in protein, they are increasingly eaten by people too. They are also smarter than they look. Male mealworm beetles change their behaviour depending on [y:how many rivals] are around, which shows they can compare small quantities {carazo-2012}. And memories formed by larvae can survive their transformation into adult beetles, so early experiences are not simply erased.",
+      "body_vi": "**Sâu bột** là ấu trùng của một loài bọ cánh cứng. Chúng dễ nuôi trong hộp chứa cám lúa mì, kèm vài miếng táo hoặc cà rốt để cung cấp nước. Sâu bột được dùng làm thức ăn cho thú cưng và cá, và vì giàu đạm, con người cũng ngày càng ăn chúng nhiều hơn. Chúng còn thông minh hơn vẻ ngoài. Bọ sâu bột đực thay đổi hành vi tuỳ theo [y:số lượng đối thủ] xung quanh, cho thấy chúng có thể so sánh các số lượng nhỏ {carazo-2012}. Và ký ức hình thành ở giai đoạn ấu trùng có thể tồn tại qua quá trình biến thái thành bọ trưởng thành, nên trải nghiệm thuở nhỏ không đơn giản bị xoá sạch."
+    },
+    {
+      "heading_en": "A maze and a bitter apple",
+      "heading_vi": "Mê cung và quả táo đắng",
+      "body_en": "The team adapted the rat test for larvae. First, each larva was placed five times in a **Y-shaped maze** and learned to find apple in one branch. Next, outside the maze, the larvae were fed bitter food, made with lemon juice. For half of them, it was the same apple they had searched for; for the others, a different food. Finally, the larvae returned to the maze, now empty, so that only memory could guide them. The larvae that had tasted bitter apple [g:avoided its branch], while the others kept visiting it. They behaved as if they could predict what their choice would bring.",
+      "body_vi": "Nhóm nghiên cứu điều chỉnh thí nghiệm trên chuột cho phù hợp với ấu trùng. Đầu tiên, mỗi ấu trùng được thả năm lần vào một **mê cung hình chữ Y** và học cách tìm táo ở một nhánh. Tiếp theo, bên ngoài mê cung, ấu trùng được cho ăn thức ăn đắng, pha bằng nước chanh. Với một nửa số ấu trùng, đó chính là táo chúng từng đi tìm; với nửa còn lại, đó là một món khác. Cuối cùng, ấu trùng được thả lại vào mê cung, lúc này không còn thức ăn, để chỉ trí nhớ dẫn đường. Những con đã nếm táo đắng [g:tránh nhánh đó], trong khi những con còn lại vẫn tiếp tục ghé vào. Chúng hành xử như thể có thể đoán trước lựa chọn của mình sẽ dẫn tới điều gì."
+    },
+    {
+      "heading_en": "Small brains, flexible choices",
+      "heading_vi": "Bộ não nhỏ, lựa chọn linh hoạt",
+      "body_en": "The researchers conclude that mealworms can make **flexible decisions** rather than simply react to their surroundings. This matters because animals often face trade-offs, like a bird choosing between feeding in a risky open field or staying safely in its nest and going hungry. To choose well, an animal must weigh needs such as hunger and safety. Finding goal-directed behaviour in larvae suggests they are [g:smarter than we thought]. The authors do not claim mealworms deserve special treatment compared with other insects, but their result adds to growing evidence that even small invertebrates can act flexibly.",
+      "body_vi": "Các nhà nghiên cứu kết luận rằng sâu bột có thể đưa ra **quyết định linh hoạt** thay vì chỉ phản ứng với môi trường. Điều này quan trọng vì động vật thường phải đánh đổi, như một con chim phải chọn giữa kiếm ăn ở cánh đồng trống đầy rủi ro hay ở yên trong tổ an toàn mà chịu đói. Để chọn đúng, con vật phải cân nhắc các nhu cầu như đói và an toàn. Việc phát hiện hành vi hướng mục tiêu ở ấu trùng cho thấy chúng [g:thông minh hơn ta tưởng]. Các tác giả không cho rằng sâu bột đáng được đối xử đặc biệt hơn các loài côn trùng khác, nhưng kết quả của họ bổ sung vào kho bằng chứng ngày càng lớn rằng ngay cả động vật không xương sống nhỏ bé cũng có thể hành động linh hoạt."
+    },
+    {
+      "heading_en": "Smart snacks and new rules",
+      "heading_vi": "Món ăn vặt thông minh và quy định mới",
+      "body_en": "Mealworms are mostly studied as food: a sustainable source of protein that could help with global food challenges. But if they show signs of a complex mental life and can experience stress, the way they are farmed could affect both their [y:welfare and their quality] as food {barrett-2023}. In Europe, specific laws on experiments protect vertebrates and cephalopods such as octopuses, but not insects. If more evidence like this appears, new rules may be needed to treat these 'tiny thinkers' ethically. Understanding how animals think, the authors say, is the first step towards deciding how we use and care for them.",
+      "body_vi": "Sâu bột chủ yếu được nghiên cứu như một nguồn thực phẩm: nguồn đạm bền vững có thể giúp giải quyết các thách thức lương thực toàn cầu. Nhưng nếu chúng có dấu hiệu của đời sống tinh thần phức tạp và có thể bị căng thẳng, cách chúng được nuôi có thể ảnh hưởng tới cả [y:phúc lợi lẫn chất lượng] của chúng khi làm thực phẩm {barrett-2023}. Ở châu Âu, các luật riêng về thí nghiệm bảo vệ động vật có xương sống và động vật chân đầu như bạch tuộc, nhưng không bảo vệ côn trùng. Nếu có thêm bằng chứng như thế này, có thể cần những quy định mới để đối xử có đạo đức với các 'nhà tư tưởng tí hon' này. Theo các tác giả, hiểu cách động vật suy nghĩ là bước đầu tiên để quyết định ta sử dụng và chăm sóc chúng ra sao."
+    }
+  ],
+  "keyPoint": {
+    "en": "A habit is like [p:a train on fixed rails]; a goal-directed choice is like a driver who can turn when the road changes. Notice which of your own routines still run even after their reward has gone, and ask whether *you would still choose them today*.",
+    "vi": "Thói quen giống như [p:đoàn tàu chạy trên đường ray cố định]; lựa chọn hướng mục tiêu giống như người lái xe có thể rẽ khi con đường thay đổi. Hãy để ý những thói quen của chính bạn vẫn tiếp diễn dù phần thưởng đã không còn, và tự hỏi liệu *hôm nay bạn có còn chọn chúng không*."
+  },
+  "applySteps": {
+    "en": [
+      "Write down one daily habit and ask what reward it gave you when it started.",
+      "Watch a pet or a bird for five minutes and note one moment where it seems to make a choice.",
+      "Read the label of one insect-based food and compare its protein with a meat you often eat."
+    ],
+    "vi": [
+      "Ghi ra một thói quen hằng ngày và tự hỏi nó từng mang lại phần thưởng gì khi mới bắt đầu.",
+      "Quan sát một con thú cưng hoặc một chú chim trong năm phút và ghi lại một khoảnh khắc nó dường như đang lựa chọn.",
+      "Đọc nhãn một sản phẩm làm từ côn trùng và so sánh lượng đạm với một loại thịt bạn hay ăn."
+    ]
+  },
+  "references": [
+    {
+      "id": "frym-mealworm",
+      "label": "Chiandetti, Dissegna & Turatto (2026)",
+      "url": "https://doi.org/10.3389/frym.2026.1681331"
+    },
+    {
+      "id": "adams-dickinson-1981",
+      "label": "Adams & Dickinson (1981)",
+      "url": "https://doi.org/10.1080/14640748108400816"
+    },
+    {
+      "id": "carazo-2012",
+      "label": "Carazo, Fernández-Perea & Font (2012)",
+      "url": "https://doi.org/10.3389/fpsyg.2012.00502"
+    },
+    {
+      "id": "barrett-2023",
+      "label": "Barrett et al. (2023)",
+      "url": "https://doi.org/10.1163/23524588-20230104"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/mealworm-minds.webp",
+    "provider": "unsplash",
+    "author": "Steven Spassov",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/tVIqMgGlAG0"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "kids-frontiersin-org-can-an-insect-larva-change-its-mind",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Cinzia Chiandetti",
+      "Andrea Dissegna",
+      "Massimo Turatto"
+    ],
+    "originalTitle": "Can An Insect Larva Change Its Mind?",
+    "originalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1681331",
+    "publisher": "Frontiers for Young Minds",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "example added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZAABHtprKAowfrMRTy5zkZgA/vhNVjf6rpmWm/ayrjQX1P2QhQ9Okb0PzmVAI2+RmlyRmJjLJ7hQFikkzEBwG1sPOF4nFH9TqzrSWOoBkwJ1kUH+cHcdE1jMzSnUz/50chykWWfDnCvuBnub5fc3K/yXtPVhUjAd1BPGXuD1tfoAdAsAAA==",
+  "dominant": "#4b4250"
+}
