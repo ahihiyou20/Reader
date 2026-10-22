@@ -3,6 +3,7 @@ import { motion, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useArticle } from '@/lib/data';
+import { shadeFor } from '@/lib/format';
 import { pick } from '@/lib/i18n';
 import { clamp } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
@@ -54,7 +55,7 @@ export function ArticlePage({
   return (
     <section
       className="article"
-      style={{ top, ['--dominant' as string]: item.cover.dominant }}
+      style={{ top, ['--dominant' as string]: item.cover.dominant, ['--shade' as string]: shadeFor(item.cover.dominant) }}
       role="article"
       aria-labelledby={titleId}
       aria-posinset={index + 1}

@@ -123,8 +123,9 @@
     "type": "image",
     "url": "/covers/smarter-decisions.webp",
     "provider": "unsplash",
-    "author": "TBD",
-    "license": "Unsplash License"
+    "author": "Jake Melara",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/bA68bHUS9mA"
   },
   "origin": {
     "group": 4,
@@ -134,5 +135,7 @@
     ],
     "changes": []
   },
-  "seed": true
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwC7AGk/bt32Aau5/1TYcAAA/vTjNnsNzLxEIOGJ0V5XasHEx37m3Jh7g0Gl+13YHSgTzGTsk5SJ1XdLDBmeiOwwO/XAjeDZ9MyU2qrfmNW1vRALMa45WW1BvcAOLb7NSOtX+I6nyFm6nBonbM1Fa4AAAA==",
+  "dominant": "#696e77"
 }

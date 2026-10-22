@@ -9,6 +9,7 @@ import { track } from '@/lib/analytics';
 import { isFallback, pick } from '@/lib/i18n';
 import { clamp, prefersReducedMotion } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
+import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { ActionButton } from '../ActionButton';
 import { RichText } from '../RichText';
@@ -23,7 +24,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const openSheet = useUI((s) => s.openSheet);
   const liked = useUser((s) => Boolean(s.likes[item.slug]));
   const saved = useUser((s) => Boolean(s.saves[item.slug]));
-  const counts = useUser((s) => countsFor(s, item.slug, article.counts));
+  const counts = useUser(useShallow((s) => countsFor(s, item.slug, article.counts)));
   const slug = article.slug;
 
   const scroll = useRef<HTMLDivElement>(null);
@@ -38,12 +39,14 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const fallback = lang === 'vi' && !article.hasVi;
 
   // Header collapse follows the scroll position directly (no timers).
+  // Collapsed positions are fixed under the top bar; the expanded offset (gap) depends on screen height.
+  const gap = clamp(layout.h * 0.18, 100, 152);
   const q = useMotionValue(0);
-  const prowY = useTransform(q, (v) => -90 * v);
+  const prowY = useTransform(q, (v) => (1 - v) * (gap - 62));
   const titleY = useTransform(q, (v) => -110 * v);
   const titleO = useTransform(q, (v) => clamp(1 - v * 1.6, 0, 1));
   const stickyO = useTransform(q, (v) => clamp((v - 0.4) / 0.6, 0, 1));
-  const rowY = useTransform(q, (v) => -127 * v);
+  const rowY = useTransform(q, (v) => (1 - v) * (gap - 25));
   const rowS = useTransform(q, (v) => 1 - 0.2 * v);
 
   useEffect(() => {

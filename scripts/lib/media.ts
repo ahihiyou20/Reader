@@ -26,9 +26,11 @@ export async function saveMediaCache() {
 
 export async function placeholderFor(input: Buffer | string): Promise<{ blurDataURL: string; dominant: string }> {
   const img = sharp(input).rotate();
-  const { dominant } = await img.clone().stats();
+  // Average colour, darkened a little: it shows behind the image while it loads, under white text.
+  const { channels } = await img.clone().stats();
+  const mean = channels.slice(0, 3).map((c) => Math.round(c.mean * 0.7));
   const tiny = await img.clone().resize(16, 28, { fit: 'cover' }).webp({ quality: 40 }).toBuffer();
-  const hex = '#' + [dominant.r, dominant.g, dominant.b].map((v) => v.toString(16).padStart(2, '0')).join('');
+  const hex = '#' + mean.map((v) => v.toString(16).padStart(2, '0')).join('');
   return { blurDataURL: `data:image/webp;base64,${tiny.toString('base64')}`, dominant: hex };
 }
 

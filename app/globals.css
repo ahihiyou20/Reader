@@ -370,7 +370,10 @@ select {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(
+  /* --shade darkens bright photos so white text keeps its contrast (NFR-04) */
+  background:
+    linear-gradient(rgba(0, 0, 0, var(--shade, 0)), rgba(0, 0, 0, var(--shade, 0))),
+    linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.42) 0%,
     rgba(0, 0, 0, 0) 20%,
@@ -452,10 +455,10 @@ select {
 .rail {
   position: absolute;
   right: 14px;
-  top: calc(41.8% + 85px);
+  bottom: calc(var(--sab) + 104px);
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: clamp(14px, 3dvh, 26px);
 }
 .cmeta {
   position: absolute;
@@ -510,19 +513,18 @@ select {
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-width: none;
-  padding: calc(var(--sat) + var(--d-top)) 16px 360px;
-  --d-top: clamp(300px, 43dvh, 363px);
+  padding: calc(var(--sat) + var(--d-gap) + 211px) 16px 360px;
   -webkit-mask-image: linear-gradient(
     180deg,
-    transparent calc(var(--sat) + var(--d-top) - 173px),
-    #000 calc(var(--sat) + var(--d-top) - 137px),
+    transparent calc(var(--sat) + 190px),
+    #000 calc(var(--sat) + 226px),
     #000 calc(100% - 200px),
     rgba(0, 0, 0, 0.3) calc(100% - 120px)
   );
   mask-image: linear-gradient(
     180deg,
-    transparent calc(var(--sat) + var(--d-top) - 173px),
-    #000 calc(var(--sat) + var(--d-top) - 137px),
+    transparent calc(var(--sat) + 190px),
+    #000 calc(var(--sat) + 226px),
     #000 calc(100% - 200px),
     rgba(0, 0, 0, 0.3) calc(100% - 120px)
   );
@@ -650,6 +652,9 @@ select {
   height: 0;
   z-index: 2;
   pointer-events: none;
+}
+.view.details {
+  /* Gap between the top bar and the Details pill when the header is expanded (152 px on a 844 px screen). */
   --d-gap: clamp(100px, 18dvh, 152px);
 }
 .dhead .prow,
@@ -661,7 +666,7 @@ select {
   position: absolute;
   left: 16px;
   right: 16px;
-  top: calc(var(--sat) + var(--d-gap));
+  top: calc(var(--sat) + 62px);
   display: flex;
   align-items: center;
   will-change: transform;
@@ -700,7 +705,7 @@ select {
   position: absolute;
   left: 16px;
   right: 16px;
-  top: calc(var(--sat) + var(--d-gap) - 43px);
+  top: calc(var(--sat) + 109px);
   opacity: 0;
   font: 700 15px/20px var(--font-sans);
   white-space: nowrap;
@@ -710,7 +715,7 @@ select {
 .arow {
   position: absolute;
   left: 22px;
-  top: calc(var(--sat) + var(--d-gap) + 113px);
+  top: calc(var(--sat) + 138px);
   display: flex;
   gap: 29px;
   transform-origin: left top;
@@ -1473,7 +1478,7 @@ select {
 }
 
 /* ---------- Sheets (bottom) ---------- */
-.scrim {
+.backdrop {
   position: absolute;
   inset: 0;
   z-index: 54;

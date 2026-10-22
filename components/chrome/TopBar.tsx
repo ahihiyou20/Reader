@@ -1,9 +1,8 @@
 'use client';
 import { BellRing, ChevronDown, Compass, UserRound } from 'lucide-react';
-import { animate } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { displayStreak, localDate } from '@/lib/streak';
-import { prefersReducedMotion, spring } from '@/lib/motion';
+import { prefersReducedMotion } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
 import { useT } from '../hooks';
@@ -73,7 +72,10 @@ function StreakBadge({ onPress }: { onPress: () => void }) {
       return;
     }
     if (prefersReducedMotion()) return;
-    if (fire.current) animate(fire.current, { scale: [1, 1.35, 1] }, spring.pop);
+    fire.current?.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.35)' }, { transform: 'scale(1)' }], {
+      duration: 420,
+      easing: 'cubic-bezier(.34,1.56,.64,1)',
+    });
     num.current?.animate([{ transform: 'translateY(100%)' }, { transform: 'translateY(0)' }], {
       duration: 300,
       easing: 'cubic-bezier(.23,1,.32,1)',

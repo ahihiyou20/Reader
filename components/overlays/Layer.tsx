@@ -246,7 +246,7 @@ export function Sheet({ open, onClose, label, children }: { open: boolean; onClo
   if (!mounted) return null;
   return (
     <>
-      <motion.div className="scrim" style={{ opacity: backdrop }} onClick={onClose} aria-hidden="true" />
+      <motion.div className="backdrop" style={{ opacity: backdrop }} onClick={onClose} aria-hidden="true" />
       <motion.div ref={setRef} className="sheet" style={{ y }} role="dialog" aria-modal="true" aria-label={label} inert={!open || undefined}>
         <div className="sgrab" aria-hidden="true">
           <i />

@@ -4,6 +4,7 @@ import type { FeedItem } from '@/lib/content/types';
 import { formatCount } from '@/lib/format';
 import { pick } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
+import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { useCategoryName } from '../feed/CoverView';
 
@@ -13,7 +14,7 @@ export function coverThumb(item: FeedItem) {
 
 export function ArticleCard({ item, onOpen, showCategory = true }: { item: FeedItem; onOpen: () => void; showCategory?: boolean }) {
   const lang = useUI((s) => s.lang);
-  const counts = useUser((s) => countsFor(s, item.slug, item.counts));
+  const counts = useUser(useShallow((s) => countsFor(s, item.slug, item.counts)));
   const cat = useCategoryName(item.category);
   return (
     <button className="card" type="button" onClick={onOpen} style={{ ['--dominant' as string]: item.cover.dominant }}>

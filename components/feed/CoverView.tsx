@@ -6,6 +6,7 @@ import { useCategories } from '@/lib/data';
 import { shareArticle, toggleLike, toggleSave } from '@/lib/actions';
 import { pick } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
+import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { ActionButton } from '../ActionButton';
 import { useT } from '../hooks';
@@ -19,8 +20,7 @@ export function CoverView({ item, titleId, title }: { item: FeedItem; titleId: s
   const openOverlay = useUI((s) => s.openOverlay);
   const liked = useUser((s) => Boolean(s.likes[item.slug]));
   const saved = useUser((s) => Boolean(s.saves[item.slug]));
-  const counts = useUser((s) => countsFor(s, item.slug, item.counts));
-  const categories = useCategoryName(item.category);
+  const counts = useUser(useShallow((s) => countsFor(s, item.slug, item.counts)));
   // SwipeHint nudges three times on the first article only (docs/03 CMP-07).
   const [nudge] = useState(() => {
     if (hintShown) return false;
@@ -71,11 +71,6 @@ export function CoverView({ item, titleId, title }: { item: FeedItem; titleId: s
           label={t('shareAria', { n: counts.shares })}
           onPress={() => shareArticle(item.slug, pick(item.title, lang) ?? '')}
         />
-      </div>
-      <div className="cmeta" aria-hidden="true">
-        {categories && <span className="tag">{categories}</span>}
-        <span>{t('minRead', { n: item.readingMinutes })}</span>
-        {lang === 'vi' && !item.hasVi && <span className="tag">{t('enOnly')}</span>}
       </div>
     </>
   );

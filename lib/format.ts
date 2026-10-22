@@ -23,3 +23,12 @@ export function timeAgo(date: Date | number, lang: Lang, now = Date.now()): stri
   if (s < 7 * 86400) return translate(lang, 'daysAgo', { n: Math.floor(s / 86400) });
   return new Date(date).toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US', { day: 'numeric', month: 'short' });
 }
+
+/** Extra darkening for bright covers, from the cover's average colour (0 for dark photos, up to 0.32). */
+export function shadeFor(hex: string | undefined): number {
+  const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex ?? '');
+  if (!m) return 0.1;
+  const [r, g, b] = [m[1], m[2], m[3]].map((x) => parseInt(x, 16) / 255);
+  const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return Math.round(Math.min(0.32, Math.max(0, (lum - 0.16) * 0.85)) * 100) / 100;
+}
