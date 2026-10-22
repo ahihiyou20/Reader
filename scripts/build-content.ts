@@ -42,7 +42,16 @@ async function main() {
 
   for (const file of files) {
     const raw = await readJson<unknown>(path.join(dir, file));
-    const res = validateArticle(raw, { categories: categories.map((c) => c.id) });
+    // Same checks as the validate workflow, including the licence of the imported source and the
+    // word-for-word rule for CC BY-ND (group 3) articles.
+    const sourceId = (raw as { origin?: { sourceId?: string } }).origin?.sourceId;
+    const source = sourceId ? await readJson<{ license?: string } | null>(path.join(CONTENT, 'sources', `${sourceId}.json`), null) : null;
+    const rawText = sourceId ? await readJson<{ body?: string[] } | null>(path.join(CONTENT, 'raw', `${sourceId}.json`), null) : null;
+    const res = validateArticle(raw, {
+      categories: categories.map((c) => c.id),
+      sourceLicense: source?.license,
+      rawBody: rawText?.body,
+    });
     const slug = (raw as { slug?: string }).slug ?? file;
     const errors = res.issues.filter((i) => i.level === 'error');
     const a = res.article;

@@ -1,0 +1,35 @@
+# Step 9: 00:05 Vietnam time — bake counters, pick up scheduled articles, clean guests on Sundays.
+name: Daily
+on:
+  schedule:
+    - cron: '5 17 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: content-bot
+  cancel-in-progress: false
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm tsx scripts/pipeline/daily.ts
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+      - name: Commit counts
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/generated
+          git diff --cached --quiet || (git commit -m "pipeline: daily counts" && git push)
+      - name: Rebuild (counts and scheduled articles)
+        env:
+          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "CF_PAGES_DEPLOY_HOOK is not set"; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Build triggered"

@@ -1,0 +1,32 @@
+# Step 8: call the Cloudflare Pages deploy hook only when the live site would change.
+name: Deploy
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - id: check
+        run: pnpm tsx scripts/pipeline/deploy-check.ts "${{ github.event.before }}" "${{ github.sha }}"
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+      - name: Trigger Cloudflare Pages build
+        if: steps.check.outputs.needed == 'true' || github.event_name == 'workflow_dispatch'
+        env:
+          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "CF_PAGES_DEPLOY_HOOK is not set"; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Build triggered"

@@ -1,0 +1,51 @@
+# Steps 2–4: import new backlog links (saved from the CMS) or a URL given by hand.
+name: Import sources
+on:
+  push:
+    branches: [main]
+    paths: ['content/backlog/**']
+  workflow_dispatch:
+    inputs:
+      url: { description: 'Source URL', required: false }
+      category: { description: 'Category id', required: false, default: science }
+permissions:
+  contents: write
+concurrency:
+  group: content-bot
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Import
+        id: import
+        continue-on-error: true
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          URL: ${{ inputs.url }}
+          CATEGORY: ${{ inputs.category }}
+        run: |
+          if [ -n "$URL" ]; then pnpm tsx scripts/pipeline/import.ts --url "$URL" --category "$CATEGORY"
+          else pnpm tsx scripts/pipeline/import.ts --pending; fi
+      - name: Gemini suggestions (optional, skipped without a key)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: |
+          slugs=$(git status --porcelain content/articles | awk '{print $2}' | xargs -r -n1 basename | sed 's/\.json$//')
+          [ -n "$slugs" ] && pnpm tsx scripts/pipeline/ai-suggest.ts $slugs || true
+      - name: Check
+        run: pnpm tsx scripts/pipeline/validate.ts
+      - name: Commit drafts
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content
+          git diff --cached --quiet || (git commit -m "pipeline: import from backlog" && git push)

@@ -1,0 +1,32 @@
+# Step 5 (optional): Gemini free tier suggestions, resumed every 6 hours when the quota ran out.
+name: AI suggestions
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      slugs: { description: 'Article slugs, space separated', required: false }
+permissions:
+  contents: write
+concurrency:
+  group: content-bot
+  cancel-in-progress: false
+jobs:
+  suggest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm tsx scripts/pipeline/ai-suggest.ts --queue ${{ inputs.slugs }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+      - name: Commit
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content
+          git diff --cached --quiet || (git commit -m "pipeline: ai suggestions" && git push)

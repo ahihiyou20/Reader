@@ -1,0 +1,78 @@
+{
+  "slug": "the-world-is-awful-the-world-is-much-better-the-world-can-be",
+  "status": "draft",
+  "previewUrl": "https://reader.pages.dev/preview?slug=the-world-is-awful-the-world-is-much-better-the-world-can-be",
+  "category": "society",
+  "tags": [],
+  "title": {
+    "en": "The world is awful. The world is much better. The world can be much better."
+  },
+  "hook": {
+    "en": "The world is awful. The world is much better. The world can be much better. All three statements are true at the same time."
+  },
+  "sections": [
+    {
+      "body_en": "Discussions about the state of the world too often focus on the first statement: The news highlights what is going wrong, rarely mentioning the positive developments in our country or the world as a whole.\n\nA pushback on this narrative takes it to the other extreme, which is equally damaging. Solely communicating the progress that the world has achieved becomes unhelpful, or even repugnant, when it glosses over the problems people are facing."
+    },
+    {
+      "body_en": "If we only see the problems and only hear what is going wrong, we have no hope that the future can be better. If we only hear about progress and what is going right, we become complacent and lose sight of the problems the world is facing. Both of these narrow perspectives have the same consequence: they leave us doing nothing — they are worldviews that paralyze us.\n\nIt’s hard to resist falling for only one of these perspectives. But to see that a better world is possible, we need to see that both are true at the same time: the world is awful, and the world is much better."
+    },
+    {
+      "body_en": "To illustrate what I mean, I will use the example of one of humanity’s biggest tragedies: the daily deaths of thousands of children.\n\nWhat is true for child mortality is true for many other large problems. Humanity faces many problems where things have improved over time, which are still terrible, and for which we know that things can get better.1"
+    },
+    {
+      "heading_en": "The world is awful",
+      "body_en": "Globally, 4.4% of all children die before they are 15 years old. This is the data for 2021, the latest available year.\n\nThis means that 5.9 million children die every year. These are 16,000 dead children on any average day, 11 children every minute.2\n\nClearly, a world where thousands of tragedies happen every single day is awful."
+    },
+    {
+      "heading_en": "The world is much better",
+      "body_en": "History’s big lesson is that things change. But it is hard to imagine how dire living conditions once were, making it difficult to grasp just how much the world has changed.\n\nData can help to bring the scale of change to mind. Historians estimate that in the past, around *half* of all children died. This was true until the 19th century no matter where in the world a child was born.3\n\nIt’s hard to imagine, but child mortality in the very worst-off places today is *much* better than anywhere in the past. In Niger, the country with the highest mortality today, about 14% of all children die.4 Just a few generations ago, the mortality rate was more than three times as high, even in the best-off places.5"
+    },
+    {
+      "body_en": "What we learn from our history is that it is possible to change the world. Unfortunately, long-run data on how living conditions have changed is rarely studied in school and rarely reported in the media. As a result, many are entirely unaware of even the most fundamental positive developments in the world.\n\nBut this fact — that it is possible to change the world and achieve extraordinary progress for entire societies — is something that *everyone* should know. If we don’t know about humanity’s most meaningful achievements, then it’s no surprise that we have little trust in ourselves and no hope that we can achieve a better future."
+    },
+    {
+      "heading_en": "The world can be much better",
+      "body_en": "Progress over time shows that it was possible to change the world in the past, but one may wonder if this progress can continue into the future. Perhaps we were born at that unlucky moment in history at which progress has to come to a halt?\n\nStudying the global data suggests that the answer is no. It is possible to make the world a better place.\n\nOne way to see this is to look at the places in the world with the best living conditions today. The best-off places show that extremely low child mortality is not just a possibility but already a reality."
+    },
+    {
+      "body_en": "The world region where children have the best chance of surviving childhood is the European Union. The mortality rate in the EU is 0.47% — 99.53% of all children survive childhood.6\n\nTo see how much better the world can be, we can ask what the world would look like if this became a reality *everywhere*. What if children around the world would be as well off as children in the EU? The answer is that *five million* fewer children would die every year.7\n\nThe global death toll would decline from 5.9 million to 0.6 million."
+    },
+    {
+      "body_en": "Of course, the child mortality rate in the EU is still too high, and there is no reason that progress should stop there. Cancers like leukemia and brain tumors kill hundreds of children, even in today’s richest countries. We should strive to find ways to prevent these tragic deaths.\n\nHowever, the largest opportunities to prevent the pain and suffering of children are in the poorer countries. There, we know not only that things *can* be better but *how* to make them better."
+    },
+    {
+      "body_en": "You can use this research on how to make the world a better place to make a difference yourself. I recommend relying on research published by the nonprofit organization GiveWell.org. GiveWell’s team spent years identifying the most cost-effective charities so that your donation can have the biggest positive impact on the lives of others. Several of the recommended charities focus on improving the health of children, giving you the opportunity to contribute to the progress against child mortality.\n\n*Millions* of child deaths are preventable. We know that it is possible to make the world a better place."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Our World in Data (2022)",
+      "url": "https://ourworldindata.org/much-better-awful-can-be-better"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/icons/og.png",
+    "provider": "own",
+    "author": "Reader",
+    "license": "CC BY 4.0"
+  },
+  "coverCandidates": [],
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-the-world-is-awful-the-world-is-much-better-the-world-can-be",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Max Roser"
+    ],
+    "originalTitle": "The world is awful. The world is much better. The world can be much better.",
+    "originalUrl": "https://ourworldindata.org/much-better-awful-can-be-better",
+    "publisher": "Our World in Data",
+    "changes": [
+      "divided into sections",
+      "shortened"
+    ]
+  }
+}

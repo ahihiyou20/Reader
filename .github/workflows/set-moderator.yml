@@ -1,0 +1,21 @@
+name: Set moderator
+on:
+  workflow_dispatch:
+    inputs:
+      who: { description: 'Firebase uid or email', required: true }
+      remove: { description: 'Remove the role instead', type: boolean, default: false }
+permissions:
+  contents: read
+jobs:
+  set:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm tsx scripts/pipeline/set-moderator.ts "$WHO" ${{ inputs.remove && '--remove' || '' }}
+        env:
+          WHO: ${{ inputs.who }}
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}

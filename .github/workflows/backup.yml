@@ -1,0 +1,22 @@
+# Weekly Firestore export kept as a private workflow artifact for 90 days (never committed).
+name: Backup
+on:
+  schedule:
+    - cron: '17 18 * * 6'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm tsx scripts/pipeline/backup.ts backup
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+      - uses: actions/upload-artifact@v4
+        with: { name: firestore-backup, path: backup, retention-days: 90 }

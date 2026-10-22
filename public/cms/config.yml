@@ -1,0 +1,223 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.231.0/schema/sveltia-cms.json
+# Reader editorial CMS (docs/05 §6.2). Every Save is a commit to main; only status "published"
+# articles reach the app, and only after the deploy workflow runs (docs/05 step 8).
+backend:
+  name: github
+  repo: ahihiyou20/Reader
+  branch: main
+  # GitHub OAuth through the free sveltia-cms-auth Worker (docs/05 step 0.4). Editors can also
+  # sign in with a personal access token from the login screen.
+  base_url: https://sveltia-cms-auth.example.workers.dev
+  commit_messages:
+    create: 'content: create {{collection}} “{{slug}}”'
+    update: 'content: update {{collection}} “{{slug}}”'
+    delete: 'content: delete {{collection}} “{{slug}}”'
+
+site_url: https://reader.pages.dev
+display_url: https://reader.pages.dev
+logo_url: /icons/icon-192.png
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: articles
+    label: Articles
+    label_singular: Article
+    description: >-
+      Bài viết hiện trên app. Cú pháp trong ô nội dung: **đậm**, *nghiêng*, [y:vàng], [p:hồng], [g:xanh lá],
+      {id-nguồn} cho chip nguồn. Mở link Preview để xem bài giống hệt trong app trước khi đặt status = published.
+    folder: content/articles
+    format: json
+    extension: json
+    create: true
+    identifier_field: slug
+    slug: '{{slug}}'
+    summary: '{{status}} · {{title.en}}'
+    sortable_fields: [slug, status, category, publishAt]
+    view_filters:
+      - { label: Drafts, field: status, pattern: draft }
+      - { label: In review, field: status, pattern: review }
+      - { label: Published, field: status, pattern: published }
+      - { label: Seed (needs review), field: seed, pattern: true }
+    view_groups:
+      - { label: Status, field: status }
+      - { label: Category, field: category }
+    fields:
+      - name: previewUrl
+        label: Preview
+        widget: string
+        required: false
+        hint: 'https://reader.pages.dev/preview?slug=<slug> — đọc thẳng file trên GitHub, không cần build.'
+      - name: status
+        label: Trạng thái
+        widget: select
+        options: [draft, review, published, unpublished]
+        default: draft
+      - name: publishAt
+        label: Ngày đăng
+        widget: datetime
+        required: false
+        hint: Bắt buộc khi status = published. Bài lên app vào lần build đầu tiên sau thời điểm này.
+      - { name: slug, label: Slug, widget: string, pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'chữ thường, số và dấu gạch ngang'] }
+      - name: category
+        label: Chủ đề
+        widget: select
+        options:
+          - { label: Psychology, value: psychology }
+          - { label: Science, value: science }
+          - { label: Economics, value: economics }
+          - { label: Society, value: society }
+          - { label: Health, value: health }
+          - { label: Productivity, value: productivity }
+          - { label: History, value: history }
+          - { label: Technology, value: technology }
+      - { name: tags, label: Thẻ (cho tìm kiếm), widget: list, required: false }
+      - name: title
+        label: Tiêu đề
+        widget: object
+        fields:
+          - { name: en, label: English, widget: string }
+          - { name: vi, label: Tiếng Việt, widget: string, required: false }
+      - name: hook
+        label: Đoạn mở (hook)
+        widget: object
+        hint: 40–80 từ.
+        fields:
+          - { name: en, label: English, widget: text }
+          - { name: vi, label: Tiếng Việt, widget: text, required: false }
+      - name: sections
+        label: Các section
+        label_singular: Section
+        widget: list
+        summary: '{{fields.heading_en}}'
+        hint: 5–7 section, mỗi section tối đa 130 từ; tổng 700–950 từ.
+        fields:
+          - { name: heading_en, label: Heading EN, widget: string, required: false }
+          - { name: heading_vi, label: Heading VI, widget: string, required: false }
+          - { name: body_en, label: Nội dung EN, widget: text, hint: '**đậm** *nghiêng* [y:vàng] [p:hồng] [g:xanh] {id-nguồn}' }
+          - { name: body_vi, label: Nội dung VI, widget: text, required: false }
+      - name: keyPoint
+        label: KEY POINT
+        widget: object
+        hint: 40–60 từ, một ẩn dụ đời thường và một câu hỏi hành động.
+        fields:
+          - { name: en, label: English, widget: text }
+          - { name: vi, label: Tiếng Việt, widget: text, required: false }
+      - name: applySteps
+        label: 3 bước Apply
+        widget: object
+        fields:
+          - { name: en, label: English, widget: list, min: 3, max: 3 }
+          - { name: vi, label: Tiếng Việt, widget: list, required: false, max: 3 }
+      - name: references
+        label: Nguồn trong bài (chip)
+        label_singular: Nguồn
+        widget: list
+        summary: '{{fields.label}}'
+        fields:
+          - { name: id, label: 'Id (dùng trong {id})', widget: string }
+          - { name: label, label: Chữ trên chip, widget: string, hint: 'Ví dụ: PNAS (2011)' }
+          - { name: url, label: Link, widget: string }
+      - name: cover
+        label: Ảnh bìa
+        widget: object
+        hint: Chọn trong trang Preview (danh sách ứng viên), rồi dán URL vào đây cùng tên tác giả và giấy phép.
+        fields:
+          - { name: type, label: Loại, widget: select, options: [image, video], default: image }
+          - { name: url, label: URL, widget: string }
+          - { name: poster, label: Poster (video), widget: string, required: false }
+          - { name: provider, label: Nguồn ảnh, widget: select, options: [unsplash, pexels, wikimedia, nasa, openverse, source, own] }
+          - { name: author, label: Tác giả, widget: string }
+          - { name: authorUrl, label: Link tác giả, widget: string, required: false }
+          - { name: license, label: Giấy phép, widget: string }
+          - { name: sourceUrl, label: Link trang ảnh, widget: string, required: false }
+          - { name: unsplashDownloadLocation, widget: hidden }
+      - name: origin
+        label: Nguồn gốc và giấy phép
+        widget: object
+        collapsed: true
+        hint: Pipeline điền sẵn khi import. Bài tự viết thì chọn nhóm 4 và giấy phép Reader-CC-BY-4.0.
+        fields:
+          - name: group
+            label: Nhóm nguồn
+            widget: select
+            options:
+              - { label: '1 · CC BY / public domain', value: 1 }
+              - { label: '2 · CC BY-SA (Wikipedia)', value: 2 }
+              - { label: '3 · CC BY-ND, chỉ nguyên văn', value: 3 }
+              - { label: '4 · Tự viết', value: 4 }
+            default: 4
+          - name: license
+            label: Giấy phép
+            widget: select
+            options: [CC-BY-4.0, CC-BY-3.0, CC-BY-SA-4.0, CC-BY-ND-4.0, PD, Reader-CC-BY-4.0]
+            default: Reader-CC-BY-4.0
+          - { name: authors, label: Tác giả, widget: list, min: 1 }
+          - { name: originalTitle, label: Tiêu đề gốc, widget: string, required: false }
+          - { name: originalUrl, label: Link gốc, widget: string, required: false }
+          - { name: publisher, label: Nhà xuất bản, widget: string, required: false }
+          - { name: changes, label: Thay đổi so với bản gốc, widget: list, required: false }
+          - { name: permission, label: Bằng chứng được phép (nếu cần), widget: string, required: false }
+          - { name: sourceId, widget: hidden }
+          - { name: submissionId, widget: hidden }
+      - name: ai
+        label: Phần AI gợi ý
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { name: reviewed, label: Đã kiểm tra phần AI gợi ý, widget: boolean, default: false }
+          - { name: fields, label: Các phần do AI gợi ý, widget: list, required: false }
+          - { name: model, widget: hidden }
+      - { name: seed, label: 'Bài seed (bỏ tick sau khi đã kiểm tra số liệu và bản dịch)', widget: boolean, required: false, default: false }
+      - { name: coverCandidates, widget: hidden }
+      - { name: blurDataURL, widget: hidden }
+      - { name: dominant, widget: hidden }
+      - { name: wordCount, widget: hidden }
+
+  - name: backlog
+    label: Backlog
+    label_singular: Link nguồn
+    description: Dán link bài nguồn (OpenStax, Our World in Data, Frontiers for Young Minds, NASA, Wikipedia…). Workflow import sẽ tạo bản nháp.
+    folder: content/backlog
+    format: json
+    extension: json
+    create: true
+    identifier_field: url
+    slug: '{{year}}{{month}}{{day}}-{{uuid_short}}'
+    summary: '{{status}} · {{url}}'
+    fields:
+      - { name: url, label: URL nguồn, widget: string }
+      - name: category
+        label: Chủ đề
+        widget: select
+        options: [psychology, science, economics, society, health, productivity, history, technology]
+      - { name: note, label: Ghi chú cho người biên tập, widget: text, required: false }
+      - { name: status, label: Trạng thái, widget: select, options: [ready, importing, imported, failed], default: ready }
+      - { name: slug, label: Bài đã tạo, widget: string, required: false }
+      - { name: error, label: Lỗi import, widget: text, required: false }
+
+  - name: settings
+    label: Cài đặt
+    files:
+      - name: categories
+        label: Chủ đề
+        file: content/categories.json
+        format: json
+        fields:
+          - name: categories
+            label: Chủ đề
+            widget: list
+            root: true
+            summary: '{{fields.emoji}} {{fields.name.en}}'
+            fields:
+              - { name: id, label: Id, widget: string }
+              - name: name
+                label: Tên
+                widget: object
+                fields:
+                  - { name: en, label: English, widget: string }
+                  - { name: vi, label: Tiếng Việt, widget: string }
+              - { name: emoji, label: Emoji, widget: string }
+              - { name: order, label: Thứ tự, widget: number, value_type: int }
+              - { name: hasNew, label: Có bài mới (chấm đỏ), widget: boolean, required: false }
