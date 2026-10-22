@@ -1,19 +1,25 @@
 # 02 — Technical Specifications
 
-> Stack đã chốt: **Next.js PWA + Firebase**. Tài liệu này mô tả kiến trúc, data model, logic cốt lõi và lộ trình triển khai theo milestone.
+> Stack đã chốt: **Next.js PWA (static export) + Firebase gói Spark + Cloudflare Pages**, chạy **100% miễn phí** (không Cloud Functions, không Cloud Storage, không AI trả phí).
+>
+> **Thứ tự ưu tiên khi các tài liệu khác nhau:** [05](./05-content-pipeline.md) (nội dung), [06](./06-database.md) (dữ liệu và hosting) và [07](./07-auth.md) (đăng nhập) mới hơn tài liệu này. Gesture, motion, cấu trúc component và milestone M0–M8 ở đây vẫn giữ nguyên.
 
 ## 1. Tech stack
 
 | Lớp | Lựa chọn | Lý do |
 |-----|----------|-------|
-| Framework | **Next.js 15** (App Router, React 19, TypeScript strict) | SSR/ISR cho SEO bài viết, route `/a/[slug]` chia sẻ được |
+| Framework | **Next.js 15** (App Router, React 19, TypeScript strict), `output: 'export'` | Site tĩnh: trang `/a/[slug]` được prerender lúc build (SEO, chia sẻ), host miễn phí |
 | Styling | **Tailwind CSS v4** + CSS variables (xem style guide §7) | Token tập trung, dễ chỉnh |
 | Animation & gesture | **Framer Motion** (`motion`, `useMotionValue`, `animate`) + **@use-gesture/react** | Spring, drag có velocity, khóa trục |
 | Icon | **lucide-react** | Khớp bộ icon app gốc |
 | State UI | **Zustand** | Feed index, view hiện tại, ngôn ngữ, sheet mở |
-| Data fetching | **TanStack Query v5** + Firebase SDK | Cache, infinite query cho feed, optimistic update |
-| i18n | **next-intl** | Message catalog en/vi, locale cookie |
-| Backend | **Firebase**: Auth (Google), Firestore, Storage, Cloud Functions (Node 20), Analytics | Realtime comments, auth nhanh |
+| Data fetching | **TanStack Query v5**: JSON tĩnh (`/data/*.json`) cho bài; Firebase SDK cho dữ liệu người dùng | Cache, optimistic update |
+| i18n | **next-intl** (chế độ static export, prefix `/en`, `/vi`) | Message catalog en/vi |
+| Hosting | **Cloudflare Pages** + Pages Functions (proxy `/__/auth`) | Free tier không giới hạn băng thông (06 §1) |
+| Backend | **Firebase gói Spark**: Auth (Anonymous + Google), Firestore. Không dùng Functions/Storage | Miễn phí, không cần thẻ |
+| Tác vụ nền | **GitHub Actions** (import nội dung, kiểm tra PR, job hằng đêm bằng Admin SDK) | Miễn phí cho repo public |
+| Tìm kiếm | **MiniSearch** trên chỉ mục JSON tĩnh | Không cần server |
+| AI (tùy chọn) | **Gemini API free tier**, chỉ chạy trong GitHub Actions | 05 §6 |
 | PWA | **Serwist** (`@serwist/next`) | Service worker, precache, runtime cache ảnh/bài |
 | Test | **Vitest** + Testing Library (unit), **Playwright** (E2E, viewport 390×844, emulate iPhone 14) | |
 | Lint/format | ESLint (next config) + Prettier | |
@@ -55,7 +61,9 @@ reader/
 ├─ messages/        en.json, vi.json
 ├─ content/seed/    *.json bài mẫu (xem 04-content-sample.md)
 ├─ scripts/         seed.ts (đẩy content/seed lên Firestore)
-├─ functions/       Cloud Functions (onCommentCreate, onArticleComplete, scheduled jobs)
+├─ functions/       Cloudflare Pages Functions (chỉ proxy /__/auth và OAuth cho CMS)
+├─ content/         Nội dung bài (JSON) — xem 06 §2
+├─ .github/workflows/  import, kiểm tra PR, job hằng đêm
 ├─ firestore.rules
 ├─ firestore.indexes.json
 └─ tests/           unit/, e2e/
@@ -185,9 +193,9 @@ export function nextStreak(
   return { current, longest: Math.max(s.longest, current), lastReadDate: today, changed: true };
 }
 ```
-- Trigger: sự kiện `article_complete` (FR-09) → client gọi callable Function `completeArticle({ articleId, timezone })`. Function tính `today` theo timezone gửi lên (validate là IANA hợp lệ), chạy `nextStreak` trong transaction, ghi `progress`, `readDays`, `stats.articlesRead`. Trả về streak mới để UI animate.
+- Trigger: sự kiện `article_complete` (FR-09) → **client** tính `today` theo timezone của thiết bị, chạy `nextStreak`, rồi ghi một batch gồm `users/{uid}.streak`, `readDays/{today}`, `progress/{slug}`, `stats.articlesRead`. Security Rules giới hạn mức thay đổi streak (06 §3.5). Không có Cloud Function.
 - Hiển thị: nếu `lastReadDate` < hôm qua → header hiển thị 0 (streak đã mất) dù chưa ghi lại server.
-- Khách: đăng nhập ẩn danh (Anonymous Auth) nên streak được tính trên server giống người dùng Google. Khi nâng cấp lên Google, uid giữ nguyên; nếu tài khoản Google đã tồn tại thì `mergeGuest` gộp dữ liệu (xem [07-auth.md](./07-auth.md) §3.2).
+- Khách: đăng nhập ẩn danh (Anonymous Auth) nên streak lưu trong Firestore giống người dùng Google. Khi nâng cấp lên Google, uid giữ nguyên; nếu tài khoản Google đã tồn tại thì client gộp dữ liệu (xem [07-auth.md](./07-auth.md) §3.2).
 
 ### 4.5 Tiến độ đọc & hoàn thành
 - `DetailsView` theo dõi section focus (IntersectionObserver, xem CMP-09) → debounce 1s ghi `progress.lastSectionIndex`.
@@ -309,20 +317,22 @@ service cloud.firestore {
 ```
 Bật **Firebase App Check** (reCAPTCHA Enterprise) để chặn spam counter `shares`.
 
-## 7. Cloud Functions
+## 7. Logic phía server
 
-| Function | Loại | Việc |
-|----------|------|------|
-| `completeArticle` | callable | Streak + progress + readDays + stats (§4.4) |
-| `mergeGuest` | callable | Gộp dữ liệu khách vào tài khoản Google có sẵn (07 §3.2) |
-| `onUserCreate` | Auth trigger | Tạo `users/{uid}` với giá trị mặc định |
-| `onCommentCreate` | Firestore trigger | `counts.comments += 1` |
-| `onCommentDelete` | Firestore trigger | `counts.comments -= 1` |
-| `recomputeRank` | scheduled 1h | Cập nhật `rank` |
+Không dùng Cloud Functions (cần gói Blaze). Logic được chia lại như sau (chi tiết ở 06 §3.2–3.3):
+
+| Trước đây | Bây giờ |
+|-----------|---------|
+| `completeArticle` | Batch ghi trên client + Rules |
+| `mergeGuest` | Gộp trên client (07 §3.2) |
+| `onUserCreate` | Client tạo `users/{uid}` lần đầu |
+| `onCommentCreate/Delete` | Batch trên client tăng/giảm `counters/{slug}.comments` |
+| `recomputeRank` | Xếp feed lúc build, dùng `counts.json` do job đêm tạo ra |
+| Dọn khách, thống kê câu hỏi, gán moderator | GitHub Actions + Admin SDK |
 
 ## 8. Media & hiệu năng
 
-- Ảnh cover: lưu Storage, kích thước gốc 1080×2340 WebP/AVIF, dùng `next/image` (`fill`, `sizes="100vw"`, `priority` cho bài đầu), `placeholder="blur"` với `blurDataURL`.
+- Ảnh cover: hotlink từ Unsplash/Pexels/Wikimedia với tham số kích thước của từng CDN (Unsplash có `w`, `q`, `fm=webp`); `next/image` dùng `unoptimized` vì site tĩnh không có image optimizer; `placeholder` là `blurDataURL` sinh lúc build.
 - Video cover: MP4 H.264 ≤ 2MB, 720p, 6–10s loop, kèm `poster`. Thuộc tính `muted autoPlay loop playsInline preload="metadata"`.
 - Nền Details: tái dùng cùng element ảnh/video của Cover, áp `filter: blur(24px) brightness(0.6)` + `transform: scale(1.1)` (tránh viền mờ) — không tải lại media.
 - Chỉ animate `transform`/`opacity`; `will-change: transform` chỉ trên 3 trang đang mount của pager (không đặt toàn cục).
@@ -349,7 +359,7 @@ Khi implement component có motion/gesture, dùng các skill đã cài: `apple-d
 | **M2** Details reader | ArticlePager ngang, DetailsView, RichText + InlineChip, ArticleSection focus/dim, KeyPointCard, SourceLine/Sheet, PageDots, ScrollDownButton, header thu gọn | FR-03, 05–08 · CMP-06, 09–13 | Trông giống screenshot 1 & video 0–8s; chip đúng màu; dots theo section |
 | **M3** Firebase + interactions | Firestore thật, seed script, Like/Save/Share optimistic, formatCount, double-tap like | FR-10–13 · CMP-04–06 | Counter đổi đúng sau reload; Rules test (emulator) pass |
 | **M4** Comments & Apply | CommentsApplyView gradient, ApplyCard, CommentList realtime, CommentInput, ExploreCTA | FR-14–18 · CMP-15–18 | Giống video 9–15s; 2 tab trình duyệt thấy comment realtime |
-| **M5** Auth + Streak + Profile | Google Sign-In, LoginSheet, onUserCreate, completeArticle, StreakBadge animation, Profile | FR-09, 19, 20 · CMP-02, 23 · SCR-07 | Unit test `nextStreak` (cùng ngày, liền kề, cách ngày, đổi timezone); streak tăng khi đọc xong |
+| **M5** Auth + Streak + Profile | Anonymous + Google Sign-In, LoginSheet, proxy `/__/auth`, streak batch trên client, StreakBadge animation, Profile | FR-09, 19, 20 · CMP-02, 23 · SCR-07 | Unit test `nextStreak` (cùng ngày, liền kề, cách ngày, đổi timezone); streak tăng khi đọc xong |
 | **M6** i18n | Message catalog đầy đủ, LangSwitcher + dropdown, nội dung song ngữ, giữ vị trí khi đổi | FR-21 · CMP-03 | Đổi en↔vi không mất bài/section; giống dropdown trong video |
 | **M7** Explore & Search | SCR-04, SCR-05, keywords normalize, recent searches | FR-22, 23 | Tìm "thien kien" ra bài có "thiên kiến" |
 | **M8** Social shell + PWA polish | MessagesPanel, Create sheet, Notifications sheet, offline, reduced-motion, a11y audit, Lighthouse | FR-25–27 · NFR-01–07 | Lighthouse PWA pass, Performance ≥ 90 mobile, a11y ≥ 95 |
@@ -357,7 +367,7 @@ Khi implement component có motion/gesture, dùng các skill đã cài: `apple-d
 ## 11. Kiểm thử
 
 - **Unit**: `nextStreak`, `formatCount`, `readingTime`, normalize search, RichText renderer (snapshot đúng class chip).
-- **Rules**: `@firebase/rules-unit-testing` trên emulator: không thể tăng likes +2, không ghi streak từ client, comment > 500 ký tự bị chặn.
+- **Rules**: `@firebase/rules-unit-testing` trên emulator: không thể tăng likes +2, streak không nhảy quá 1, khách không viết được bình luận, comment > 500 ký tự bị chặn.
 - **E2E (Playwright, iPhone 14)**: vuốt dọc đổi bài (`page.mouse` drag), vuốt ngang qua 3 view, like → số tăng, đổi ngôn ngữ giữ section, viết comment (Auth emulator), streak tăng sau khi đọc tới KEY POINT.
 - **Visual**: screenshot Playwright của SCR-01/02/03 lưu làm baseline sau khi đã duyệt so với ảnh tham chiếu.
 
@@ -367,10 +377,12 @@ Khi implement component có motion/gesture, dùng các skill đã cài: `apple-d
 NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
 NEXT_PUBLIC_FIREBASE_APP_ID=
-NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY=
-FIREBASE_SERVICE_ACCOUNT_JSON=        # chỉ server (SSR, seed script)
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=         # One Tap
 NEXT_PUBLIC_USE_EMULATORS=true        # dev
+# Chỉ trong GitHub Actions secrets (không bao giờ ở client):
+FIREBASE_SERVICE_ACCOUNT_JSON=        # job đêm, seed
+GEMINI_API_KEY=                       # tùy chọn, 05 §6
+CF_PAGES_DEPLOY_HOOK=                 # trigger build hằng ngày
 ```

@@ -1,356 +1,324 @@
-# 06 — Database
+# 06 — Kiến trúc dữ liệu và hosting (100% miễn phí)
 
-> Bản đầy đủ của data model, thay cho phần tóm tắt ở [02-technical-specs.md §3](./02-technical-specs.md#3-data-model-firestore). Bổ sung so với bản cũ: nguồn bài, pipeline, bài luyện tập IELTS, từ vựng, báo lỗi, phân quyền biên tập viên; bỏ dữ liệu "founding" (paywall).
+> Thay cho data model ở [02-technical-specs.md §3](./02-technical-specs.md#3-data-model-firestore) và các phần dùng Cloud Functions trong 02. Ràng buộc: **không gói trả phí, không cần thẻ thanh toán.** Mọi con số giới hạn free tier dưới đây cần kiểm tra lại trên trang giá chính thức trước khi triển khai, vì các nhà cung cấp hay thay đổi.
 
-## 1. Các kho dữ liệu
-
-| Kho | Dùng cho | Lý do |
-|-----|----------|-------|
-| **Cloud Firestore** | Toàn bộ dữ liệu app: bài, câu hỏi, người dùng, tương tác, bình luận, pipeline | Realtime cho bình luận, đọc offline, Security Rules, đi cùng Firebase Auth |
-| **Cloud Storage** | Snapshot văn bản nguồn, ảnh/video cover đã tối ưu, file export | File lớn không nên nằm trong Firestore |
-| **Typesense** (Firebase extension "Search Firestore with Typesense") | Tìm kiếm toàn văn, không dấu, sửa lỗi gõ, lọc theo chủ đề/trình độ | Firestore không có full-text search; `array-contains-any` trên keywords chỉ đủ cho giai đoạn đầu |
-| **BigQuery** | Analytics (export từ Firebase Analytics) và export Firestore định kỳ | Phân tích retention, tỷ lệ đọc hết, độ khó câu hỏi |
-| **Secret Manager** | `ANTHROPIC_API_KEY`, key Unsplash/Pexels, key Typesense admin | Không để secret trong code hay biến môi trường công khai |
-
-Chọn Firestore thay vì Postgres vì app đã chốt Firebase (Auth, realtime, offline). Các truy vấn cần JOIN (thống kê, báo cáo) chạy trên BigQuery, không chạy trên Firestore.
-
-## 2. Sơ đồ quan hệ
+## 1. Tổng quan
 
 ```mermaid
-erDiagram
-  CATEGORY ||--o{ ARTICLE : groups
-  TOPIC ||--o| ARTICLE : "becomes"
-  TOPIC ||--o{ PIPELINE_RUN : "produced by"
-  ARTICLE ||--|| QUIZ : has
-  ARTICLE }o--o{ SOURCE : cites
-  ARTICLE }o--o{ VOCAB : "glossary"
-  ARTICLE ||--o{ COMMENT : has
-  ARTICLE ||--o{ ARTICLE_DRAFT : "versions"
-  USER ||--o{ LIKE : ""
-  USER ||--o{ SAVE : ""
-  USER ||--o{ PROGRESS : ""
-  USER ||--o{ READ_DAY : ""
-  USER ||--o{ QUIZ_ATTEMPT : ""
-  USER ||--o{ SAVED_WORD : ""
-  USER ||--o{ COMMENT : writes
-  COMMENT ||--o{ REPORT : "flagged by"
+flowchart TB
+  subgraph Git["GitHub repo (public)"]
+    C[content/articles/*.json<br/>content/sources/*.json]
+    CODE[Next.js app]
+  end
+  subgraph GA["GitHub Actions (free)"]
+    IMP[Import + kiểm tra PR]
+    NIGHT[Job hằng đêm:<br/>bake counts, dọn khách,<br/>thống kê câu hỏi]
+  end
+  subgraph CF["Cloudflare (free)"]
+    PAGES[Pages: site tĩnh<br/>+ JSON bài + chỉ mục tìm kiếm]
+    PF[Pages Functions:<br/>proxy /__/auth, OAuth cho CMS]
+  end
+  subgraph FB["Firebase Spark (free)"]
+    AUTH[Auth: Anonymous + Google]
+    FS[(Firestore: dữ liệu người dùng,<br/>tương tác, bình luận)]
+  end
+  C --> GA --> PAGES
+  CODE --> PAGES
+  NIGHT <--> FS
+  NIGHT --> C
+  APP[App trên điện thoại] --> PAGES
+  APP --> PF --> AUTH
+  APP --> AUTH
+  APP <--> FS
 ```
 
-## 3. Collections
+| Thành phần | Dịch vụ | Free tier (kiểm tra lại) | Vai trò |
+|-----------|---------|--------------------------|---------|
+| Site + nội dung | **Cloudflare Pages** | Băng thông và request tĩnh không giới hạn; 500 build/tháng; tối đa 20.000 file mỗi site | Next.js `output: 'export'` (site tĩnh), file JSON bài, chỉ mục tìm kiếm, file từ vựng |
+| Hàm nhỏ | **Cloudflare Pages Functions** (Workers) | 100.000 request/ngày | Proxy `/__/auth/*` cho đăng nhập Google, OAuth GitHub cho CMS |
+| Đăng nhập | **Firebase Authentication** (gói Spark, **không** nâng cấp lên Identity Platform) | Google và Anonymous miễn phí | 07 |
+| Dữ liệu người dùng | **Cloud Firestore** (gói Spark) | Khoảng 50.000 lần đọc, 20.000 lần ghi, 20.000 lần xoá mỗi ngày; 1 GiB lưu trữ | Like, lưu, tiến độ, streak, luyện tập, từ đã lưu, bình luận |
+| Tác vụ nền | **GitHub Actions** | Không giới hạn phút cho repo public | Import, kiểm tra PR, Gemini (tùy chọn), job hằng đêm bằng Firebase Admin SDK |
+| Ảnh/video | Unsplash, Pexels, Wikimedia (hotlink) | Miễn phí, có ghi công | Không dùng Firebase Storage (cần gói Blaze) |
+| Analytics | **Cloudflare Web Analytics** | Miễn phí, không cookie | Lượt xem trang; sự kiện trong app thì đếm qua Firestore counters |
 
-Quy ước: `Timestamp` là Firestore Timestamp; `Lang = 'en' | 'vi'`; `Localized<T> = { en: T; vi?: T }`. Mọi interface đặt trong `lib/schema.ts` và có Zod schema tương ứng, dùng chung cho app, Cloud Functions và pipeline.
+**Không dùng**: Cloud Functions, Cloud Storage, Typesense, BigQuery, Secret Manager. Các dịch vụ này cần gói Blaze (có thẻ) hoặc tốn phí.
 
-### 3.1 Rich text (cập nhật)
+Lý do tách như vậy: **nội dung bài là dữ liệu tĩnh**, ai cũng đọc giống nhau, nên phục vụ từ CDN (miễn phí, không giới hạn) thay vì Firestore (giới hạn 50.000 lần đọc/ngày). Firestore chỉ giữ những thứ riêng của từng người hoặc thay đổi liên tục.
+
+## 2. Nội dung tĩnh trong Git
+
+### 2.1 Cấu trúc thư mục
+
+```
+content/
+├─ backlog.yaml                 # việc cần làm (05 §4.2)
+├─ categories.json
+├─ sources/<sourceId>.json      # metadata nguồn + giấy phép + điều khoản lúc import
+├─ raw/<id>.json                # văn bản đã import (để đối chiếu, kiểm tra ND)
+├─ articles/<slug>.json         # bài đã adapt (EN + VI nếu có) + quiz
+└─ vocab/                       # NAWL, NGSL, dữ liệu Wiktionary đã lọc
+public/data/                    # do script build sinh ra, KHÔNG sửa tay
+├─ feed.json                    # danh sách bài rút gọn, đã sắp xếp
+├─ articles/<slug>.json         # bản dùng cho client
+├─ counts.json                  # bộ đếm like/save/share/comment, bake hằng đêm
+├─ search-index.json            # chỉ mục MiniSearch
+└─ vocab/<lemma>.json
+```
+
+### 2.2 Schema bài (`content/articles/<slug>.json`)
+
+Mọi schema định nghĩa bằng Zod trong `lib/schema.ts`, dùng chung cho app, script và CI.
 
 ```ts
-export type InlineNode =
+type Lang = 'en' | 'vi';
+type Localized<T> = { en: T; vi?: T };
+
+type InlineNode =
   | { t: 'text'; v: string }
   | { t: 'bold'; v: string }
   | { t: 'italic'; v: string }
   | { t: 'hl'; v: string; color: 'yellow' | 'pink' | 'green' }
-  | { t: 'cite'; v: string; sourceId: string }              // chip nguồn "CNBC (2025)"
-  | { t: 'vocab'; v: string; lemma: string };               // MỚI: từ trong glossary, gạch chân chấm
-export type RichParagraph = InlineNode[];
-```
+  | { t: 'cite'; v: string; sourceId: string }
+  | { t: 'vocab'; v: string; lemma: string };          // từ có popover nghĩa
+type RichParagraph = InlineNode[];
 
-Pipeline sinh ra **markup** ngắn gọn (`**bold**`, `*italic*`, `[p:…]`, `{cite}`, `[[vocab:lemma|text]]`), giống prototype. Trước khi lưu, Cloud Function parse markup sang `InlineNode[]` và validate, để client không phải parse markup.
-
-### 3.2 `articles/{articleId}`, bài đã xuất bản (read model cho feed)
-
-```ts
 interface Article {
-  id: string;                        // = slug, ví dụ 'smarter-decisions'
   slug: string;
-  status: 'scheduled' | 'published' | 'unpublished';
-  publishAt: Timestamp;              // feed chỉ hiện bài có publishAt <= now
-  categoryId: string;                // 'psychology'
-  ieltsTopic: string;                // 'Psychology & Behaviour'
-  level: 'B2' | 'C1' | 'C2';
+  status: 'draft' | 'published';
+  publishAt: string;                                    // ISO; build bỏ qua bài chưa tới ngày
+  categoryId: string;
+  ieltsTopic: string;
+  level: 'B1' | 'B2' | 'C1' | 'C2';
   tags: string[];
-  keywords: string[];                // chuẩn hoá không dấu, lowercase (fallback khi chưa có Typesense)
-  cover: {
-    type: 'image' | 'video';
-    url: string; poster?: string; blurDataURL: string; dominant: string;
-    provider: 'unsplash' | 'pexels' | 'wikimedia' | 'nasa' | 'own';
-    author?: string; authorUrl?: string; license: string; sourceUrl?: string;
-  };
+  keywords: string[];                                   // cho tìm kiếm
+  cover: { type: 'image' | 'video'; url: string; poster?: string; blurDataURL: string; dominant: string;
+           provider: 'unsplash' | 'pexels' | 'wikimedia' | 'nasa' | 'source' | 'own';
+           author?: string; authorUrl?: string; license: string; sourceUrl?: string };
   title: Localized<string>;
   standfirst: Localized<RichParagraph>;
-  paragraphs: Array<{
-    label: string;                   // 'A' … 'H'
-    heading?: Localized<string>;
-    body: Localized<RichParagraph>;
-  }>;
-  keyPoint: Localized<RichParagraph>;
-  applySteps: Localized<string[]>;   // đúng 3
-  glossary: string[];                // lemma → vocab/{lemma}
-  sources: Array<{ id: string; label: string; publisher: string; year: number; url: string; license: string }>; // denormalize từ sources/
-  hasQuiz: boolean;
-  wordCount: number;                 // standfirst + body, bản EN
-  readingMinutes: number;
-  counts: { likes: number; saves: number; shares: number; comments: number; quizAttempts: number };
-  rank: number;                      // điểm xếp feed, cập nhật mỗi giờ
-  disclaimer?: 'health' | 'finance';
-  version: number;                   // tăng mỗi lần xuất bản lại
-  reviewedAt: Timestamp;
-  reviewedBy: string;                // uid biên tập viên
-  publishedAt: Timestamp;
-  updatedAt: Timestamp;
+  paragraphs: Array<{ label: string; heading?: Localized<string>; body: Localized<RichParagraph> }>;
+  keyPoint?: Localized<RichParagraph>;
+  applySteps?: Localized<string[]>;
+  glossary: string[];                                   // lemma
+  origin: {
+    group: 1 | 2 | 3 | 4;                               // nhóm nguồn ở 05 §2
+    sourceId: string;                                   // content/sources/<id>.json
+    license: 'CC-BY-4.0' | 'CC-BY-3.0' | 'CC-BY-SA-4.0' | 'CC-BY-ND-4.0' | 'CC-BY-NC-ND' | 'PD' | 'Reader-CC-BY-4.0';
+    authors: string[];
+    originalTitle: string; originalUrl: string;
+    changes: string[];                                  // ["shortened", "divided into lettered paragraphs"]
+    permission?: string;                                // link bằng chứng tác giả đồng ý (nhóm 3, bản dịch)
+  };
+  references: Array<{ id: string; label: string; url: string }>;   // chip nguồn trong bài
+  quiz?: Quiz;
+  ai?: { model: string; fields: string[]; reviewedBy: string };    // nếu có gợi ý Gemini đã duyệt
+  wordCount: number; readingMinutes: number;
+  reviewedAt: string; reviewedBy: string;               // GitHub username
 }
-```
 
-Kích thước ước tính một bài: EN + VI khoảng 2.000 từ, cộng metadata, khoảng 30–40 KB, thấp hơn nhiều so với giới hạn 1 MB của mỗi document Firestore.
-
-### 3.3 `quizzes/{articleId}`, bài luyện tập
-
-```ts
 interface Quiz {
-  articleId: string;
-  version: number;                   // khớp article.version
-  timeLimitSec: number;              // mặc định 1200
+  timeLimitSec: number;
   groups: Array<{
-    type: 'tfng' | 'matching_headings' | 'sentence_completion' | 'multiple_choice';
-    instructions: Localized<string>; // "Do the following statements agree with…"
-    headings?: Array<{ id: string; text: string }>;           // cho matching_headings (i, ii, iii…)
+    type: 'tfng' | 'matching_headings' | 'sentence_completion' | 'multiple_choice' | 'gap_fill' | 'matching_information';
+    instructions: Localized<string>;
+    headings?: Array<{ id: string; text: string }>;
+    wordBank?: string[];
     questions: Array<{
-      id: string;                    // 'q1'
-      prompt: string;                // câu hỏi (EN)
-      paragraphLabel?: string;       // matching_headings: đoạn cần ghép
-      options?: Array<{ id: string; text: string }>;          // multiple_choice
-      answer: string;                // 'TRUE' | 'FALSE' | 'NOT GIVEN' | option id | heading id | chuỗi
-      acceptedAnswers?: string[];    // sentence_completion: các cách viết được chấp nhận
-      wordLimit?: number;            // 2
-      explanation: Localized<string>;
-      evidence?: { paragraphLabel: string; start: number; end: number }; // vị trí ký tự trong body EN
+      id: string; prompt: string; paragraphLabel?: string;
+      options?: Array<{ id: string; text: string }>;
+      answer: string; acceptedAnswers?: string[]; wordLimit?: number;
+      explanation?: Localized<string>;
+      evidence?: { paragraphLabel: string; start: number; end: number };
+      generatedBy: 'rule' | 'editor' | 'community' | 'gemini';
     }>;
   }>;
-  stats: { attempts: number; avgScore: number; perQuestion: Record<string, { correct: number; total: number }> };
 }
 ```
 
-App miễn phí và đây là luyện tập, không phải thi thật, nên đáp án nằm ngay trong document và được chấm trên client. `stats` do Cloud Function cập nhật khi có `quizAttempts` mới, dùng để phát hiện câu quá dễ hoặc mơ hồ (tỷ lệ đúng < 20% hoặc > 95%).
+### 2.3 Build
 
-### 3.4 `sources/{sourceId}`
+- `scripts/build-content.ts` chạy trước `next build`. Script này validate mọi file, bỏ bài `draft` hoặc chưa tới `publishAt`, rồi sinh `public/data/*`. Mỗi bài có trang tĩnh `/a/<slug>` (tốt cho SEO và chia sẻ).
+- **Xếp feed** lúc build: bài mới cộng điểm, cộng điểm tương tác từ `counts.json`, đan xen các chủ đề.
+- **Xuất bản theo lịch**: GitHub Action hằng ngày trigger build (Cloudflare Pages deploy hook), để bài có `publishAt` hôm nay lên site.
+- **Tìm kiếm**: chỉ mục **MiniSearch** gồm title EN/VI, standfirst, keywords, heading. Dùng hàm chuẩn hoá bỏ dấu tiếng Việt, nên gõ "thien kien" ra "thiên kiến". Tìm hoàn toàn trên client, không cần server.
 
-```ts
-interface Source {
-  id: string;                        // hash của URL đã chuẩn hoá hoặc DOI
-  url: string; doi?: string;
-  title: string; publisher: string; authors?: string[]; year: number;
-  provider: 'wikipedia' | 'openalex' | 'europepmc' | 'pubmed' | 'arxiv' | 'crossref' | 'owid' | 'gov' | 'gutenberg' | 'web';
-  license: 'CC0' | 'CC-BY' | 'CC-BY-SA' | 'CC-BY-ND' | 'CC-BY-NC-SA' | 'PD' | 'copyrighted-facts-only' | 'unknown';
-  usage: 'full-text' | 'abstract' | 'facts-only';
-  isPreprint?: boolean;
-  snapshotPath?: string;             // gs://…/sources/{id}.txt (chỉ admin đọc được)
-  retrievedAt: Timestamp;
-  usedBy: string[];                  // articleIds
-}
-```
+## 3. Firestore (gói Spark): chỉ dữ liệu động
 
-### 3.5 `topics/{topicId}`, backlog chủ đề
+### 3.1 Collections
 
 ```ts
-interface Topic {
-  title: string; angle?: string;     // góc tiếp cận
-  categoryId: string; ieltsTopic: string; targetLevel: 'B2' | 'C1' | 'C2';
-  origin: 'editor' | 'wikipedia-trending' | 'openalex';
-  priority: 1 | 2 | 3;
-  status: 'backlog' | 'in_pipeline' | 'in_review' | 'published' | 'rejected';
-  possibleDuplicateOf?: string;      // articleId
-  articleId?: string;
-  createdBy: string; createdAt: Timestamp;
-}
-```
-
-### 3.6 `articleDrafts/{draftId}` và `pipelineRuns/{runId}` (chỉ admin)
-
-```ts
-interface ArticleDraft {
-  topicId: string; articleId?: string;     // có khi sửa bài đã xuất bản
-  round: number;                            // vòng sửa
-  content: Omit<Article, 'counts' | 'rank' | 'status' | 'publishAt' | 'reviewedAt' | 'reviewedBy' | 'publishedAt' | 'updatedAt' | 'version'>;
-  quiz: Omit<Quiz, 'stats' | 'version'>;
-  facts: Array<{ id: string; statement: string; sourceId: string; citedText: string; isNumber: boolean; confidence: 'high' | 'medium' | 'low' }>;
-  sentenceFacts: Record<string, string[]>; // "A:2" (đoạn A, câu 2) → factIds
-  checks: {
-    unsupportedClaims: Array<{ where: string; text: string; severity: 'high' | 'medium' | 'low' }>;
-    overlap: Array<{ where: string; ngram: string; sourceId: string }>;
-    lengthOk: boolean; levelComputed: string; blindAnswerMismatches: string[]; translationIssues: string[];
-  };
-  review: { status: 'pending' | 'approved' | 'changes_requested' | 'rejected'; notes?: string; by?: string; at?: Timestamp };
-  createdAt: Timestamp;
-}
-
-interface PipelineRun {
-  topicId: string; draftId?: string;
-  step: 'research' | 'facts' | 'draft' | 'verify' | 'translate' | 'practice' | 'blind' | 'done';
-  status: 'queued' | 'running' | 'waiting_batch' | 'failed' | 'needs_human' | 'done';
-  batchId?: string;                         // Message Batches id
-  attempts: Record<string, number>;
-  usage: Array<{ step: string; model: string; inputTokens: number; outputTokens: number; cacheReadTokens: number; batch: boolean; costUsd: number }>;
-  error?: { step: string; message: string };
-  createdAt: Timestamp; updatedAt: Timestamp; expireAt: Timestamp; // TTL 180 ngày
-}
-```
-
-### 3.7 `categories/{id}`, `vocab/{lemma}`, `config/app`
-
-```ts
-interface Category { name: Localized<string>; emoji: string; order: number; ieltsTopics: string[]; articleCount: number }
-
-interface Vocab {
-  lemma: string;                     // 'phenomenon'
-  pos: string; ipa: string;
-  definition: string;                // EN, đơn giản
-  translation: string;               // VI
-  awlSublist?: number;               // 1–10
-  cefr?: 'B1' | 'B2' | 'C1' | 'C2';
-  examples: Array<{ articleId: string; sentence: string }>;
-}
-
-interface AppConfig {               // config/app
-  minClientVersion: string;
-  feedPageSize: number;              // 10
-  featuredCategoryIds: string[];
-}
-```
-
-### 3.8 `users/{uid}` và các subcollection
-
-```ts
+// users/{uid}
 interface UserDoc {
-  displayName: string; photoURL: string | null; email: string | null;
-  isAnonymous: boolean;              // khách (xem 07)
-  lang: Lang;
-  timezone: string;
-  targetBand?: number;               // 6.5, 7.0 … (onboarding, tùy chọn)
-  interests: string[];               // categoryIds
+  displayName: string | null; photoURL: string | null;
+  isAnonymous: boolean;
+  lang: Lang; timezone: string;
+  targetBand?: number; interests: string[];
   streak: { current: number; longest: number; lastReadDate: string | null };
   stats: { articlesRead: number; quizAttempts: number; wordsSaved: number };
   createdAt: Timestamp; lastActiveAt: Timestamp;
 }
 ```
 
-| Subcollection | Document ID | Fields | Ai ghi |
-|---------------|-------------|--------|--------|
-| `likes` | articleId | `createdAt` | client (chủ) |
-| `saves` | articleId | `createdAt` | client (chủ) |
-| `progress` | articleId | `lastParagraph, completed, completedAt, applyDone: boolean[3]` | client: `lastParagraph`, `applyDone`; Function: `completed*` |
-| `readDays` | `YYYY-MM-DD` | `articles: string[]` | Function |
-| `quizAttempts` | auto | `articleId, quizVersion, answers: Record<qid,string>, correct: string[], score, total, durationSec, createdAt` | client tạo, không sửa |
-| `words` | lemma | `articleId, createdAt, reviewAt?, ease?` | client (chủ) |
-| `notifications` | auto | `type, payload, read, createdAt` | Function (v1.1) |
+| Path | Document ID | Fields | Ghi chú |
+|------|-------------|--------|---------|
+| `users/{uid}/likes` | slug | `createdAt` | |
+| `users/{uid}/saves` | slug | `createdAt` | |
+| `users/{uid}/progress` | slug | `lastParagraph, completed, completedAt, applyDone[3]` | |
+| `users/{uid}/readDays` | `YYYY-MM-DD` | `slugs: string[]` | Lịch streak |
+| `users/{uid}/quizAttempts` | auto | `slug, answers, correct[], score, total, durationSec, createdAt` | Tạo xong không sửa |
+| `users/{uid}/words` | lemma | `slug, createdAt, reviewAt?, ease?` | |
+| `counters/{slug}` | slug | `likes, saves, shares, comments` | Bộ đếm sống |
+| `comments/{slug}/items/{id}` | auto | `uid, displayName, photoURL, text, lang, status, createdAt` | |
+| `reports/{id}` | auto | `kind, slug, commentId?, reason, note, uid, status, createdAt` | Báo bình luận hoặc báo lỗi nội dung |
+| `questionSuggestions/{id}` | auto | `slug, type, prompt, answer, explanation, uid, status, createdAt` | 05 §5.2 |
+| `submissions/{id}` | auto | `title, body, sources, uid, status, createdAt` | Bài cộng đồng gửi từ nút + |
+| `moderators/{uid}` | uid | `role: 'moderator' \| 'admin'` | Danh sách ai được ẩn bình luận; chỉ Admin SDK ghi |
 
-### 3.9 Bình luận và báo lỗi
+Bài và câu hỏi **không** nằm trong Firestore (chúng ở JSON tĩnh).
 
-```ts
-// articles/{articleId}/comments/{commentId}
-interface Comment {
-  uid: string; displayName: string; photoURL: string | null;   // denormalize lúc tạo
-  text: string;                      // 1–500 ký tự
-  lang: Lang;
-  likeCount: number;
-  status: 'visible' | 'hidden';      // hidden khi bị kiểm duyệt
-  createdAt: Timestamp;
-}
+### 3.2 Logic chạy trên client thay cho Cloud Functions
 
-// reports/{reportId}: báo bình luận hoặc báo lỗi nội dung
-interface Report {
-  kind: 'comment' | 'content_error';
-  articleId: string; commentId?: string;
-  reason: 'spam' | 'abuse' | 'wrong_fact' | 'typo' | 'translation' | 'other';
-  note?: string;
-  uid: string; createdAt: Timestamp;
-  status: 'open' | 'resolved' | 'dismissed'; resolvedBy?: string;
-}
+| Việc | Cách làm | Rules bảo vệ |
+|------|----------|--------------|
+| Like/save | Transaction: tạo/xoá `users/{uid}/likes/{slug}` và `counters/{slug}.likes ± 1` | Chỉ ±1, và phải có/không có doc like tương ứng (`existsAfter`) |
+| Share | `counters/{slug}.shares + 1` | Chỉ +1; cần đăng nhập (kể cả khách) |
+| Bình luận | Batch: tạo comment + `counters/{slug}.comments + 1` | Cần tài khoản Google; độ dài 1–500; `existsAfter` cho comment |
+| Streak | Client tính `nextStreak` (02 §4.4), batch ghi `users/{uid}.streak` + `readDays/{date}` | `current` chỉ được giữ nguyên, tăng 1, hoặc về 1; `readDays/{lastReadDate}` phải tồn tại sau batch. Gian lận streak trên app miễn phí không gây hại, nên kiểm tra ở mức này là đủ |
+| Kết quả luyện tập | Chấm trên client, tạo `quizAttempts` | `score <= total`, không cho sửa |
+| Gộp dữ liệu khách → Google | Client làm (07 §3.2) | Chỉ ghi vào uid của chính mình |
+| Xoá tài khoản | Client xoá các subcollection của mình, rồi `user.delete()` (07 §7) | Chủ sở hữu được xoá |
+
+### 3.3 Job hằng đêm (GitHub Actions + Firebase Admin SDK)
+
+Service account JSON lưu trong **GitHub Actions secrets**. Các job:
+
+1. **Bake counts**: đọc `counters/*` (mỗi bài 1 lần đọc), ghi `public/data/counts.json`, commit và trigger build. Feed hiển thị số đếm của đêm qua mà không tốn lượt đọc Firestore.
+2. **Dọn khách**: xoá user ẩn danh không hoạt động sau 60 ngày (Admin Auth API + xoá dữ liệu).
+3. **Thống kê câu hỏi**: collection-group query các `quizAttempts` tạo trong 24 giờ qua, cộng dồn tỷ lệ đúng từng câu vào `content/stats/quiz.json` để biên tập viên tìm câu quá dễ hoặc mơ hồ.
+4. **Gán quyền moderator**: workflow chạy tay `set-moderator.yml` (nhập email) ghi `moderators/{uid}`.
+5. **Sao lưu**: export các collection nhỏ ra JSON, upload thành artifact của workflow (giữ 30 ngày) hoặc commit vào một repo private.
+
+### 3.4 Ngân sách lượt đọc/ghi (để ở lại gói miễn phí)
+
+Ước tính cho một phiên điển hình (đọc 5 bài, mở bình luận 1 lần, làm 1 bài luyện tập):
+
+| Thao tác | Đọc | Ghi |
+|----------|----:|----:|
+| Tải hồ sơ + streak lúc mở app | 1 | 0–1 |
+| Trạng thái like/save của 5 bài (query theo slug trong `likes`, `saves`) | ~2–10 | 0 |
+| Bộ đếm sống khi mở Details (5 bài) | 5 | 0 |
+| Mở bình luận 1 bài (`get`, limit 20, không giữ listener) | ~20 | 0 |
+| Like 2 bài, lưu 1 bài | 3 | 6 |
+| Hoàn thành 1 bài (streak, readDays, progress) | 1 | 3 |
+| Làm 1 bài luyện tập | 0 | 1 |
+| **Tổng** | **~35–40** | **~10** |
+
+50.000 lượt đọc/ngày ÷ ~40 ≈ **1.200–1.500 người dùng hoạt động/ngày** trước khi chạm trần đọc; trần ghi 20.000/ngày ÷ ~10 ≈ 2.000. Các cách giữ trong ngân sách:
+
+- Feed và số đếm lấy từ JSON tĩnh; chỉ đọc bộ đếm sống khi người dùng mở Details.
+- Bật **offline persistence** của Firestore (cache IndexedDB) để không đọc lại tài liệu đã có.
+- Bình luận dùng `get()` có phân trang; chỉ bật `onSnapshot` khi tab bình luận đang mở.
+- Khi gần trần quota (Firestore trả lỗi `resource-exhausted`), app vẫn đọc bài được bình thường; chỉ like/bình luận tạm báo "thử lại sau".
+
+Nếu app vượt mức này, hướng đi (khi đó mới cần quyết định chi phí): chuyển bộ đếm sang Cloudflare Workers KV/D1 (free tier riêng), hoặc nâng Firebase lên Blaze.
+
+### 3.5 Security Rules (chính)
+
 ```
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function signedIn() { return request.auth != null; }
+    function isMe(uid) { return signedIn() && request.auth.uid == uid; }
+    function isGoogle() { return signedIn() && request.auth.token.firebase.sign_in_provider == 'google.com'; }
+    function isMod() { return signedIn() && exists(/databases/$(db)/documents/moderators/$(request.auth.uid)); }
+    function onlyDelta(field, d) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly([field])
+        && request.resource.data[field] == resource.data[field] + d;
+    }
 
-Bình luận không cần đăng nhập để **xem** (miễn phí, không giới hạn). Cần đăng nhập Google để **viết**, chống spam.
+    match /users/{uid} {
+      allow read, create, delete: if isMe(uid);
+      allow update: if isMe(uid)
+        && request.resource.data.diff(resource.data).affectedKeys()
+             .hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'targetBand', 'interests', 'streak', 'stats', 'lastActiveAt'])
+        && (request.resource.data.streak.current == resource.data.streak.current
+            || request.resource.data.streak.current == resource.data.streak.current + 1
+            || request.resource.data.streak.current == 1);
+      match /quizAttempts/{a} {
+        allow read, delete: if isMe(uid);
+        allow create: if isMe(uid) && request.resource.data.score <= request.resource.data.total;
+      }
+      match /{sub}/{doc} {
+        allow read, write: if isMe(uid) && sub in ['likes', 'saves', 'progress', 'readDays', 'words'];
+      }
+    }
 
-## 4. Truy vấn chính và index
+    match /counters/{slug} {
+      allow read: if true;
+      allow create: if signedIn() && request.resource.data.keys().hasOnly(['likes', 'saves', 'shares', 'comments']);
+      allow update: if signedIn() && (
+           (onlyDelta('likes', 1)  && existsAfter(/databases/$(db)/documents/users/$(request.auth.uid)/likes/$(slug)))
+        || (onlyDelta('likes', -1) && !existsAfter(/databases/$(db)/documents/users/$(request.auth.uid)/likes/$(slug)))
+        || (onlyDelta('saves', 1)  && existsAfter(/databases/$(db)/documents/users/$(request.auth.uid)/saves/$(slug)))
+        || (onlyDelta('saves', -1) && !existsAfter(/databases/$(db)/documents/users/$(request.auth.uid)/saves/$(slug)))
+        || onlyDelta('shares', 1)
+        || (isGoogle() && onlyDelta('comments', 1)));
+    }
 
-| Màn hình | Truy vấn | Composite index |
-|----------|----------|-----------------|
-| Feed | `articles where status=='published' && publishAt<=now orderBy rank desc limit 10` | `status ASC, rank DESC` |
-| Feed theo chủ đề | `… && categoryId==x orderBy rank desc` | `status, categoryId, rank DESC` |
-| Explore theo trình độ | `… && level==x orderBy publishedAt desc` | `status, level, publishedAt DESC` |
-| Search (trước khi có Typesense) | `… && keywords array-contains-any [tokens]` | `status, keywords (array), rank DESC` |
-| Bình luận | `comments where status=='visible' orderBy createdAt desc limit 20` | `status, createdAt DESC` |
-| Saved / Liked | `users/{uid}/saves orderBy createdAt desc` → batch get `articles` | mặc định |
-| Lịch sử luyện tập | `users/{uid}/quizAttempts orderBy createdAt desc` | mặc định |
-| Hàng đợi duyệt | `articleDrafts where review.status=='pending' orderBy createdAt` | `review.status, createdAt` |
-| Báo cáo mở | `reports where status=='open' orderBy createdAt` | `status, createdAt` |
+    match /comments/{slug}/items/{id} {
+      allow read: if resource.data.status == 'visible' || isMod();
+      allow create: if isGoogle()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'visible'
+        && request.resource.data.text is string
+        && request.resource.data.text.size() >= 1 && request.resource.data.text.size() <= 500
+        && request.resource.data.createdAt == request.time;
+      allow update: if isMod() && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']);
+      allow delete: if (signedIn() && resource.data.uid == request.auth.uid) || isMod();
+    }
 
-Lọc `publishAt <= now` cùng `orderBy rank` cần thêm bất đẳng thức trên một field khác field sắp xếp. Để tránh, Function **publisher** (chạy mỗi 5 phút) chuyển `scheduled → published` khi tới giờ, nên feed chỉ cần lọc `status == 'published'`.
-
-## 5. Bộ đếm
-
-- `counts.*` dùng `FieldValue.increment` trong transaction cùng document like/save (xem 02 §4.2).
-- Firestore khuyến nghị khoảng 1 lần ghi/giây cho mỗi document. Khi một bài vượt ngưỡng này (theo dõi bằng log), chuyển sang **distributed counter** (extension "Distributed Counter", 10 shard) cho bài đó.
-- `counts.comments`, `counts.quizAttempts`, `quizzes.stats` do Cloud Function cập nhật từ trigger.
-
-## 6. Security Rules (bổ sung vào bản ở 02 §6)
-
-```
-function isStaff() { return request.auth != null && request.auth.token.role in ['editor', 'admin']; }
-function isGoogleUser() { return request.auth != null && request.auth.token.firebase.sign_in_provider == 'google.com'; }
-
-match /articles/{id} {
-  allow read: if resource.data.status == 'published' || isStaff();
-  // counters như bản cũ; còn lại chỉ Function/Admin SDK ghi
-  match /comments/{cid} {
-    allow read: if resource.data.status == 'visible' || isStaff();
-    allow create: if isGoogleUser()
-      && request.resource.data.uid == request.auth.uid
-      && request.resource.data.status == 'visible'
-      && request.resource.data.text is string
-      && request.resource.data.text.size() >= 1 && request.resource.data.text.size() <= 500
-      && request.resource.data.createdAt == request.time;
-    allow update: if isStaff();                                  // ẩn/hiện
-    allow delete: if request.auth.uid == resource.data.uid || isStaff();
+    match /reports/{id} {
+      allow create: if signedIn() && request.resource.data.uid == request.auth.uid && request.resource.data.status == 'open';
+      allow read, update: if isMod();
+    }
+    match /questionSuggestions/{id} {
+      allow create: if isGoogle() && request.resource.data.uid == request.auth.uid && request.resource.data.status == 'pending';
+      allow read, update: if isMod();
+    }
+    match /submissions/{id} {
+      allow create: if isGoogle() && request.resource.data.uid == request.auth.uid && request.resource.data.status == 'pending';
+      allow read: if isMod() || (signedIn() && resource.data.uid == request.auth.uid);
+      allow update: if isMod();
+    }
+    match /moderators/{uid} { allow read: if isMe(uid); }   // chỉ Admin SDK ghi
   }
 }
-match /quizzes/{id}       { allow read: if true; }
-match /categories/{id}    { allow read: if true; }
-match /vocab/{id}         { allow read: if true; }
-match /config/{id}        { allow read: if true; }
-match /sources/{id}       { allow read: if isStaff(); }          // bài viết đã denormalize nguồn cần hiển thị
-match /topics/{id}        { allow read, write: if isStaff(); }
-match /articleDrafts/{id} { allow read, write: if isStaff(); }
-match /pipelineRuns/{id}  { allow read: if isStaff(); }          // chỉ Function ghi
-match /reports/{id} {
-  allow create: if request.auth != null && request.resource.data.uid == request.auth.uid
-                && request.resource.data.status == 'open';
-  allow read, update: if isStaff();
-}
-match /users/{uid}/quizAttempts/{a} {
-  allow read: if request.auth.uid == uid;
-  allow create: if request.auth.uid == uid
-    && request.resource.data.score is int && request.resource.data.score <= request.resource.data.total
-    && request.resource.data.createdAt == request.time;
-}
-match /users/{uid}/words/{w} { allow read, write: if request.auth.uid == uid; }
 ```
 
-Cloud Storage: `sources/**` chỉ `isStaff()` đọc; `covers/**` đọc công khai, chỉ Function ghi.
+Rules được test bằng `@firebase/rules-unit-testing` trên Firestore Emulator (miễn phí, chạy trong GitHub Actions).
 
-Rules được test bằng `@firebase/rules-unit-testing` trên emulator. Các ca bắt buộc: khách ẩn danh không viết được bình luận; người dùng không đọc được `articleDrafts`; không sửa được `quizAttempts`; không tự tăng `likes` lên 2.
+### 3.6 Index
 
-## 7. Vòng đời dữ liệu và vận hành
+| Truy vấn | Index |
+|----------|-------|
+| `comments/{slug}/items where status=='visible' orderBy createdAt desc` | `status ASC, createdAt DESC` |
+| `users/{uid}/quizAttempts orderBy createdAt desc` | mặc định |
+| collection group `quizAttempts where createdAt > X` (job đêm) | collection-group index trên `createdAt` |
+| `reports where status=='open' orderBy createdAt` | `status, createdAt` |
 
-| Mục | Chính sách |
-|-----|-----------|
-| Sao lưu | Export Firestore hằng ngày ra Cloud Storage (managed export), giữ 30 ngày |
-| TTL | `pipelineRuns` 180 ngày (`expireAt`); snapshot nguồn giữ khi còn bài dùng tới |
-| Xoá tài khoản | Callable `deleteAccount` xoá `users/{uid}` và toàn bộ subcollection; bình luận đổi thành tác giả "Deleted user" (giữ ngữ cảnh thảo luận) hoặc xoá theo lựa chọn của người dùng; xoá Auth user (xem 07) |
-| Tài khoản khách bỏ dở | Function hằng tuần xoá user ẩn danh không hoạt động sau 60 ngày |
-| Môi trường | 3 Firebase project: `reader-dev` (emulator + seed), `reader-staging`, `reader-prod` |
-| Seed | `scripts/seed.ts` đọc `content/seed/*.json`, validate bằng Zod, ghi bằng Admin SDK |
-| Migration | Mỗi thay đổi schema có script `scripts/migrations/NNN-*.ts`, chạy idempotent; field `schemaVersion` trong `config/app` |
+## 4. Môi trường
 
-## 8. Typesense (search)
+| Môi trường | Firebase | Cloudflare | Ghi chú |
+|------------|----------|------------|---------|
+| Local | Emulator Suite (Auth + Firestore) | `next dev` | Seed từ `content/` |
+| Preview | project `reader-dev` (Spark) | Preview deployment theo từng PR | Miễn phí |
+| Production | project `reader-prod` (Spark) | Production branch `main` | |
 
-- Collection `articles`: `id, title_en, title_vi, standfirst_en, body_en (plain), keywords, categoryId, level, rank, publishedAt`.
-- Đồng bộ bằng extension Firestore → Typesense (chỉ document `status == 'published'`).
-- Client tìm bằng **search-only API key có scoped filter** `status:published`, tạo từ Function và lưu trong `config/app`. Key admin chỉ nằm trong Secret Manager.
-- Tiếng Việt: bật `locale: 'vi'`; ngoài ra lưu trường đã bỏ dấu để tìm "thien kien" ra "thiên kiến".
+## 5. Quyền riêng tư và vòng đời dữ liệu
+
+- Dữ liệu cá nhân chỉ nằm trong Firestore (`users/{uid}`, bình luận). Nội dung tĩnh không chứa dữ liệu người dùng.
+- Xoá tài khoản: client xoá toàn bộ dữ liệu của mình; bình luận chuyển thành "Deleted user" hoặc bị xoá theo lựa chọn (07 §7).
+- Khách không hoạt động 60 ngày bị dọn bởi job đêm.
+- Không gửi dữ liệu người dùng cho Gemini hay bên thứ ba nào.

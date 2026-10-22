@@ -1,169 +1,150 @@
-# 07 — Đăng nhập và tài khoản
+# 07 — Đăng nhập và tài khoản (Google, 100% miễn phí)
 
-> Thay cho FR-19 trong PRD. Mục tiêu: **đọc ngay không cần đăng nhập**, nhưng mọi tiến độ (like, lưu, streak, luyện tập) đều được giữ lại và gộp vào tài khoản khi người dùng đăng nhập bằng Google.
+> Thay cho FR-19 trong PRD. Chạy trên **Firebase Authentication gói Spark** (không nâng cấp lên Identity Platform) cùng site tĩnh trên Cloudflare Pages ([06](./06-database.md)). **Không dùng Cloud Functions** (cần gói Blaze), nên mọi logic tài khoản chạy trên client và được Security Rules bảo vệ; việc quản trị chạy bằng GitHub Actions.
 
 ## 1. Phương thức
 
-| Phương thức | Giai đoạn | Ghi chú |
-|-------------|-----------|---------|
-| **Khách (Firebase Anonymous Auth)** | MVP | Tự động, không có màn hình. Có `uid` thật nên dữ liệu lưu được trên server |
-| **Google** | MVP, **bắt buộc** | Firebase Auth `GoogleAuthProvider`, scope `openid email profile` |
-| Google One Tap | MVP (Android/Chrome desktop) | Google Identity Services, rồi `signInWithCredential` |
-| Email link (passwordless) | v1.1 | Cho người không dùng Google |
-| Sign in with Apple | Khi có app iOS native | App Store yêu cầu khi app native có đăng nhập Google |
+| Phương thức | Giai đoạn | Chi phí | Ghi chú |
+|-------------|-----------|---------|---------|
+| **Khách** (Anonymous Auth) | MVP | 0 | Tự động, không có màn hình; có uid thật nên dữ liệu được lưu |
+| **Google** | MVP, **bắt buộc** | 0 | `GoogleAuthProvider`, scope `openid email profile` |
+| Google One Tap (Google Identity Services) | MVP, trên Android/Chrome | 0 | Lấy ID token rồi `signInWithCredential` |
+| Email link | v1.1 | Gói Spark có giới hạn số email/ngày; kiểm tra trước | Cho người không dùng Google |
 
-Không dùng mật khẩu (giảm rủi ro bảo mật và thao tác "quên mật khẩu").
+Không dùng đăng nhập bằng số điện thoại (SMS tốn phí) và không dùng mật khẩu.
 
 ## 2. Quyền theo trạng thái
 
 | Hành động | Khách | Google |
 |-----------|:-----:|:------:|
-| Đọc bài, xem bình luận, làm bài luyện tập, đổi ngôn ngữ | ✅ | ✅ |
-| Like, lưu bài, streak, lưu từ, lịch sử luyện tập | ✅ (lưu theo uid khách, chỉ trên thiết bị này) | ✅ (đồng bộ mọi thiết bị) |
-| Viết bình luận, báo lỗi | ❌ (mở LoginSheet) | ✅ |
-| Hồ sơ công khai (tên, ảnh) | ❌ | ✅ |
-| /admin | ❌ | Chỉ khi có custom claim `role` |
+| Đọc bài, xem bình luận, luyện tập, tra từ, đổi ngôn ngữ | ✅ | ✅ |
+| Like, lưu bài, streak, lưu từ, lịch sử luyện tập | ✅ (chỉ trên thiết bị này) | ✅ (mọi thiết bị) |
+| Viết bình luận, đề xuất câu hỏi, gửi bài | ❌ (mở LoginSheet) | ✅ |
+| Báo lỗi/báo bình luận | ✅ | ✅ |
+| Ẩn bình luận (moderator) | ❌ | Khi có `moderators/{uid}` |
+| Duyệt và xuất bản bài | Qua GitHub (quyền merge repo), không qua app | |
 
-App miễn phí, nên đăng nhập chỉ để đồng bộ dữ liệu và chống spam bình luận, không mở khoá nội dung nào.
+App miễn phí, nên đăng nhập chỉ để đồng bộ dữ liệu và chống spam, không mở khoá nội dung nào.
 
 ## 3. Luồng
 
-### 3.1 Lần đầu mở app
+### 3.1 Mở app lần đầu
 
-```mermaid
-sequenceDiagram
-  participant U as Người dùng
-  participant A as App (Next.js PWA)
-  participant F as Firebase Auth
-  participant DB as Firestore
-  U->>A: Mở app
-  A->>F: onAuthStateChanged
-  alt chưa có phiên
-    A->>F: signInAnonymously()
-    F-->>A: uid khách
-    A->>DB: tạo users/{uid} (isAnonymous: true) qua onUserCreate
-  end
-  A-->>U: Hiện feed ngay (không chờ đăng nhập)
-```
+1. App tải feed tĩnh ngay, không chờ Auth.
+2. Song song: `onAuthStateChanged`. Nếu chưa có phiên thì `signInAnonymously()`.
+3. Lần đầu có uid: client tạo `users/{uid}` với giá trị mặc định (`isAnonymous: true`, `streak: {current: 0, longest: 0, lastReadDate: null}`, `lang` theo trình duyệt, `timezone` từ `Intl`).
 
-Feed không chờ Auth: trang đầu được render sẵn trên server (SSR), Auth khởi động song song.
+### 3.2 Nâng cấp khách lên Google
 
-### 3.2 Nâng cấp khách thành tài khoản Google (giữ nguyên uid)
+**Trường hợp A: tài khoản Google chưa từng dùng Reader** (phổ biến nhất)
 
-1. Người dùng chạm "Continue with Google" (LoginSheet, avatar ở header, hoặc khi thử viết bình luận).
-2. App gọi `linkWithPopup(currentUser, googleProvider)` hoặc `linkWithRedirect` (bảng 3.3).
-3. **Thành công:** uid giữ nguyên, toàn bộ like, streak, luyện tập vẫn còn. Function `onUserLinked` (callable gọi sau khi link) cập nhật `users/{uid}`: `isAnonymous: false`, `displayName`, `photoURL`, `email`.
-4. **Lỗi `auth/credential-already-in-use`** (tài khoản Google này đã dùng Reader ở thiết bị khác):
-   - Lấy credential từ lỗi (`GoogleAuthProvider.credentialFromError`) rồi `signInWithCredential`.
-   - Gọi callable `mergeGuest({ guestUid })`. Server kiểm tra caller là chủ tài khoản đích và uid khách còn tồn tại, rồi gộp: likes/saves/words lấy hợp; progress lấy bản tiến xa hơn; streak lấy bản có `lastReadDate` mới hơn, nếu cùng ngày thì lấy `current` lớn hơn; quizAttempts chuyển sang. Sau đó xoá user khách.
-   - Để chứng minh quyền sở hữu uid khách, client gửi kèm **ID token của phiên khách** lấy ngay trước khi đăng nhập Google; server `verifyIdToken` token này.
-5. Toast: "Signed in as {name}. Your progress is saved."
+- `linkWithPopup(user, provider)` hoặc `linkWithRedirect` (3.3). Uid giữ nguyên, dữ liệu còn nguyên.
+- Client cập nhật `users/{uid}`: `isAnonymous: false`, `displayName`, `photoURL`.
 
-### 3.3 Chọn popup hay redirect theo môi trường
+**Trường hợp B: lỗi `auth/credential-already-in-use`** (tài khoản Google đã có dữ liệu từ thiết bị khác). Không có server, nên gộp trên client:
+
+1. **Trước khi** đổi tài khoản, đọc toàn bộ dữ liệu khách vào bộ nhớ (likes, saves, progress, readDays, words, quizAttempts, streak). Dữ liệu này nhỏ và phần lớn đã có trong cache offline.
+2. Lưu tạm bản sao vào IndexedDB (`pendingMerge`), phòng khi trang bị tải lại giữa chừng (luồng redirect).
+3. `signInWithCredential(GoogleAuthProvider.credentialFromError(err))` để vào tài khoản Google.
+4. Ghi gộp vào uid Google bằng batch (tối đa 500 thao tác mỗi batch; chia nhiều batch nếu cần):
+   - likes, saves, words: lấy hợp.
+   - progress: lấy bản `completed` hoặc `lastParagraph` lớn hơn.
+   - readDays: hợp các ngày; tính lại streak từ danh sách ngày bằng `nextStreak`.
+   - quizAttempts: thêm vào.
+   - counters: **không** cộng lại like trùng (chỉ tăng counter cho những like mới thật sự với tài khoản Google).
+5. Xoá `pendingMerge`. Dữ liệu và user khách cũ được job đêm dọn (06 §3.3); client không xoá được user khách sau khi đã rời phiên đó.
+6. Toast: "Signed in as {name}. Your progress has been merged."
+
+### 3.3 Popup hay redirect
 
 | Môi trường | Cách đăng nhập | Lý do |
 |------------|---------------|-------|
-| Desktop browser | `signInWithPopup` / `linkWithPopup` | Nhanh, không rời trang |
-| Chrome Android / Chrome desktop | Google One Tap (GIS, có FedCM), rồi `signInWithCredential(GoogleAuthProvider.credential(idToken))`; fallback bằng popup | Một chạm, không mở cửa sổ |
-| Safari iOS, **PWA standalone** (đã thêm vào màn hình chính) | `signInWithRedirect` / `linkWithRedirect` + `getRedirectResult` khi load lại | Popup trong chế độ standalone hay bị chặn hoặc không trả kết quả về app |
-| In-app browser (Facebook, Zalo, TikTok…) | Hiện hướng dẫn "Mở trong Safari/Chrome" + nút copy link | Google chặn OAuth trong webview nhúng (`disallowed_useragent`) |
+| Desktop browser | `signInWithPopup` / `linkWithPopup` | Không rời trang |
+| Chrome Android, Chrome desktop | **Google One Tap** → `signInWithCredential(GoogleAuthProvider.credential(idToken))`; fallback popup | Một chạm |
+| Safari iOS và **PWA standalone** | `signInWithRedirect` / `linkWithRedirect` + `getRedirectResult` khi tải lại | Popup trong chế độ standalone hay hỏng |
+| In-app browser (Zalo, Facebook, TikTok…) | Hướng dẫn "Mở trong Safari/Chrome" + nút copy link | Google chặn OAuth trong webview (`disallowed_useragent`) |
 
-Phát hiện bằng `matchMedia('(display-mode: standalone)')`, `navigator.standalone` và user agent của in-app browser. Đây là ngoại lệ hợp lệ cho việc dò user agent, vì không có API tính năng nào thay thế được.
+### 3.4 Cho redirect hoạt động: proxy `/__/auth` trên Cloudflare (miễn phí)
 
-### 3.4 Bắt buộc cho redirect: authDomain cùng domain với app
+Safari và Chrome chặn lưu trữ bên thứ ba, nên redirect chỉ ổn định khi `authDomain` **trùng domain của app**. Site chạy trên Cloudflare Pages, không phải Firebase Hosting, nên dùng một **Pages Function** proxy đường dẫn auth sang Firebase:
 
-Safari và Chrome chặn lưu trữ bên thứ ba, nên `signInWithRedirect` chỉ hoạt động ổn định khi `authDomain` trùng domain của app. Chọn một trong hai cách:
+```ts
+// functions/__/auth/[[path]].ts  (Cloudflare Pages Functions)
+export const onRequest: PagesFunction = async ({ request }) => {
+  const url = new URL(request.url);
+  const target = new URL(url.pathname + url.search, 'https://<project-id>.firebaseapp.com');
+  return fetch(new Request(target, request));
+};
+```
 
-- **A. Deploy trên Firebase Hosting (App Hosting) với custom domain**, ví dụ `reader.app`, và đặt `authDomain: 'reader.app'`. Handler `/__/auth/*` có sẵn.
-- **B. Deploy trên Vercel/khác**: thêm rewrite trong `next.config.ts`:
-  ```ts
-  async rewrites() {
-    return [{ source: '/__/auth/:path*', destination: 'https://<project-id>.firebaseapp.com/__/auth/:path*' }];
-  }
-  ```
-  Rồi đặt `authDomain` = domain của app.
+- Đặt `authDomain` = domain của app (ví dụ `reader.pages.dev` hoặc domain riêng).
+- Thêm `https://<domain>/__/auth/handler` vào **Authorized redirect URIs** của OAuth client (Google Cloud Console), và thêm domain vào **Authorized domains** (Firebase Auth).
+- Mỗi lần đăng nhập chỉ tốn vài request, nằm trong quota 100.000 request/ngày miễn phí của Workers.
 
-Với cả hai cách: thêm `https://reader.app/__/auth/handler` vào **Authorized redirect URIs** của OAuth client trong Google Cloud Console, và thêm domain vào **Authorized domains** trong Firebase Auth.
+Domain: `*.pages.dev` miễn phí. Domain riêng tốn phí đăng ký (không bắt buộc).
 
-## 4. Cấu hình Google Cloud / Firebase (checklist)
+## 4. Cấu hình (checklist, đều miễn phí)
 
-1. Firebase Console → Authentication → Sign-in method: bật **Google** và **Anonymous**.
+1. Firebase Console (gói **Spark**) → Authentication → bật **Google** và **Anonymous**. **Không** bấm nâng cấp lên Identity Platform.
 2. Google Cloud → OAuth consent screen:
-   - User type **External**; tên app "Reader"; email hỗ trợ; logo 120×120.
-   - Link **Privacy Policy** và **Terms** (trang `/privacy`, `/terms` trong app).
-   - Authorized domains: domain của app.
-   - Scopes: chỉ `openid`, `email`, `profile` (không nhạy cảm, không cần security assessment).
-   - Chuyển trạng thái **In production**; nộp **brand verification** để logo và tên hiện trên màn hình chọn tài khoản.
-3. OAuth client (Web): JavaScript origins = domain prod + `http://localhost:3000`; redirect URIs như 3.4.
-4. Client ID Web dùng cho Google One Tap (`NEXT_PUBLIC_GOOGLE_CLIENT_ID`).
-5. Bật **App Check** (reCAPTCHA Enterprise) cho Firestore, Functions, Storage.
-6. Ba project dev/staging/prod có OAuth client riêng.
+   - External; tên "Reader"; email hỗ trợ; logo.
+   - Link `/privacy` và `/terms` (trang tĩnh trong app).
+   - Scopes chỉ `openid`, `email`, `profile` (không nhạy cảm, không phải thẩm định bảo mật).
+   - Chuyển **In production**; nộp brand verification (miễn phí) để tên và logo hiện đúng.
+3. OAuth Web client: JavaScript origins = domain prod + `http://localhost:3000`; redirect URI như 3.4.
+4. `NEXT_PUBLIC_GOOGLE_CLIENT_ID` cho One Tap.
+5. **App Check** với reCAPTCHA v3 (có hạn mức miễn phí; kiểm tra quota hiện hành) để giảm spam ghi vào Firestore. Bật chế độ "monitor" trước, "enforce" sau khi ổn định.
 
-## 5. Phiên đăng nhập phía server
+## 5. Không có phiên phía server
 
-- Client giữ phiên bằng Firebase Auth SDK (IndexedDB persistence).
-- Cần dữ liệu cá nhân khi SSR (ví dụ đánh dấu bài đã lưu ngay trong HTML đầu) hoặc bảo vệ `/admin`:
-  - Route `POST /api/session` nhận ID token, gọi Admin SDK `createSessionCookie` (14 ngày), set cookie `__session` (`HttpOnly`, `Secure`, `SameSite=Lax`).
-  - `middleware.ts` chặn `/admin/**`: verify session cookie (`checkRevoked: true`) và `role` trong claims.
-  - `POST /api/session/logout` xoá cookie và `revokeRefreshTokens` khi cần.
-  - Chống CSRF: chỉ nhận `POST` có header `X-Requested-With` và kiểm tra `Origin`.
-- MVP có thể bỏ SSR cá nhân hoá (feed SSR công khai, cá nhân hoá trên client), nhưng `/admin` **phải** có kiểm tra phía server.
+Site là Next.js **static export**: không có SSR, middleware hay cookie phiên. Cá nhân hoá (bài đã lưu, streak) hiển thị trên client sau khi Auth sẵn sàng; trước đó hiện skeleton nhỏ. Không có trang quản trị nằm trong app; việc biên tập làm qua GitHub/Sveltia CMS (05 §4.4), và CMS đăng nhập bằng GitHub OAuth qua một Cloudflare Worker (miễn phí).
 
-## 6. Phân quyền biên tập
+## 6. Moderator
 
-- Custom claim `role: 'editor' | 'admin'`, gán bằng script `scripts/set-role.ts <email> <role>` (Admin SDK) hoặc trang quản lý trong /admin (chỉ `admin`).
-- Rules dùng `request.auth.token.role` (xem 06 §6). Sau khi gán role, client gọi `getIdToken(true)` để nhận claim mới.
+- Danh sách moderator nằm trong `moderators/{uid}` (Firestore), do workflow GitHub Actions `set-moderator.yml` ghi bằng Admin SDK.
+- Moderator thấy menu "Hide" trên bình luận và mục "Reports" trong Profile; Rules kiểm tra `exists(moderators/{uid})`.
 
-## 7. Hồ sơ và xoá tài khoản
+## 7. Hồ sơ, đăng xuất, xoá tài khoản
 
-- **Profile** (SCR-07): avatar và tên từ Google (sửa được tên hiển thị), ngôn ngữ, band mục tiêu, chủ đề quan tâm, thống kê streak/bài đã đọc/luyện tập.
-- **Đăng xuất**: `signOut()`. Sau đó app tự `signInAnonymously()` lại để tiếp tục đọc; dữ liệu cũ vẫn nằm trong tài khoản Google.
-- **Xoá tài khoản** (Profile → Settings → Delete account), có màn xác nhận ngay trong app (không dùng `confirm()`):
-  - Callable `deleteAccount`: xoá `users/{uid}` và subcollection, xử lý bình luận theo lựa chọn (ẩn danh hoá hoặc xoá), rồi `admin.auth().deleteUser(uid)`.
-  - Nếu Firebase yêu cầu đăng nhập lại gần đây (`auth/requires-recent-login`), app `reauthenticateWithPopup/Redirect` rồi gọi lại.
-- **Xuất dữ liệu** (v1.1): callable tạo file JSON gồm hồ sơ, likes, saves, lịch sử luyện tập, bình luận.
+- **Profile**: avatar và tên từ Google (sửa được tên hiển thị), ngôn ngữ, band mục tiêu, chủ đề quan tâm, thống kê.
+- **Đăng xuất**: `signOut()`, rồi tự `signInAnonymously()` để tiếp tục đọc.
+- **Xoá tài khoản** (có màn xác nhận ngay trong app):
+  1. Hỏi: bình luận của bạn xoá luôn hay giữ dưới tên "Deleted user"?
+  2. Client xoá các subcollection `users/{uid}/*` theo batch, xử lý bình luận theo lựa chọn (cần index `uid` trên collection group `items`), giảm counters tương ứng, rồi xoá `users/{uid}`.
+  3. `user.delete()`. Nếu Firebase báo `auth/requires-recent-login`, gọi `reauthenticateWithPopup/Redirect` rồi chạy lại.
+  4. Nếu bước nào lỗi giữa chừng, job đêm tìm dữ liệu mồ côi (uid không còn trong Auth) và xoá nốt.
+- **Xuất dữ liệu**: client gom dữ liệu của chính mình thành file JSON để tải về (chạy trong trình duyệt, không cần server).
 
 ## 8. Quyền riêng tư
 
-- Chỉ thu thập: tên, email, ảnh đại diện từ Google, cùng dữ liệu sử dụng trong app.
-- Trang `/privacy` nêu mục đích, thời gian lưu, quyền xoá và quyền xuất dữ liệu, theo **Nghị định 13/2023/NĐ-CP** về bảo vệ dữ liệu cá nhân và chính sách Google API User Data.
-- Lần đăng nhập đầu tiên hiện một dòng đồng ý kèm link Privacy/Terms ngay dưới nút "Continue with Google".
-- Analytics không gửi email hay tên; chỉ dùng uid đã băm.
+- Chỉ thu thập tên, email, ảnh từ Google và dữ liệu dùng app.
+- Trang `/privacy` nêu mục đích, thời gian lưu, quyền xoá và xuất dữ liệu, theo Nghị định 13/2023/NĐ-CP và chính sách Google API User Data.
+- Dưới nút đăng nhập có dòng đồng ý kèm link Privacy/Terms.
+- Không gửi dữ liệu người dùng cho Gemini. Analytics dùng Cloudflare Web Analytics (không cookie).
 
-## 9. UI (cập nhật CMP-23 LoginSheet)
+## 9. UI (CMP-23 LoginSheet)
 
 - Tiêu đề: "Save your progress" / "Lưu tiến độ của bạn".
-- Mô tả: "Sign in to sync your streak, saved articles and practice history across devices." App miễn phí nên không nói gì về mở khoá nội dung.
-- Nút chính: "Continue with Google" (nền trắng, logo G đúng chuẩn thương hiệu Google). Nút phụ: "Not now".
-- Trạng thái và lỗi:
+- Mô tả: "Sign in to sync your streak, saved articles and practice history across devices."
+- Nút chính: "Continue with Google" (theo hướng dẫn thương hiệu Google). Nút phụ: "Not now".
 
 | Mã / tình huống | Thông báo |
 |-----------------|-----------|
-| `auth/popup-closed-by-user`, `auth/cancelled-popup-request` | Không báo gì, đóng spinner |
+| `auth/popup-closed-by-user`, `auth/cancelled-popup-request` | Không báo |
 | `auth/popup-blocked` | Tự chuyển sang redirect |
 | `auth/network-request-failed` | "No connection. Check your internet and try again." |
-| `auth/credential-already-in-use` | Chạy luồng gộp 3.2 bước 4, hiện "Merging your progress…" |
+| `auth/credential-already-in-use` | Chạy luồng 3.2 B, hiện "Merging your progress…" |
 | In-app browser | "Google sign-in doesn't work inside this app. Open Reader in Safari or Chrome." + nút copy link |
-| Lỗi khác | "Couldn't sign in. Try again." + mã lỗi nhỏ để hỗ trợ |
+| `resource-exhausted` (hết quota Firestore trong ngày) | "Reader is busy right now. Your reading still works; try saving again later." |
+| Khác | "Couldn't sign in. Try again." + mã lỗi nhỏ |
 
-## 10. Kiểm thử
+## 10. Kiểm thử (miễn phí)
 
-- Firebase **Auth Emulator** cho dev và E2E (Playwright đăng nhập bằng tài khoản giả của emulator).
+- Firebase Emulator Suite (Auth + Firestore) chạy local và trong GitHub Actions; Playwright đăng nhập bằng tài khoản giả của emulator.
 - Ca bắt buộc:
-  1. Khách like 2 bài, đọc xong 1 bài (streak 1), rồi đăng nhập Google: uid giữ nguyên, dữ liệu còn đủ.
-  2. Thiết bị B đã có tài khoản Google (streak 5). Khách ở thiết bị A có streak 1, đăng nhập cùng tài khoản: dữ liệu gộp đúng, streak 5, user khách bị xoá.
-  3. Khách không viết được bình luận (Rules từ chối).
-  4. Truy cập `/admin` không có role thì nhận 403 từ middleware.
+  1. Khách like 2 bài và có streak 1, rồi link Google: uid giữ nguyên, dữ liệu đủ.
+  2. Thiết bị B đã có streak 5 với tài khoản Google; khách ở A đăng nhập cùng tài khoản: dữ liệu gộp đúng, counters không bị cộng trùng.
+  3. Tải lại trang giữa luồng redirect: `pendingMerge` vẫn được gộp.
+  4. Khách bị Rules từ chối khi viết bình luận.
   5. Xoá tài khoản thì không còn document nào dưới `users/{uid}`.
-- Kiểm tra thủ công trên **máy thật**: iPhone (Safari và PWA standalone), Android Chrome (One Tap), in-app browser Zalo/Facebook.
-
-## 11. Cloud Functions liên quan
-
-| Function | Loại | Việc |
-|----------|------|------|
-| `onUserCreate` | Auth trigger | Tạo `users/{uid}` mặc định (`isAnonymous` theo provider) |
-| `onUserLinked` | Callable | Cập nhật hồ sơ sau khi khách link Google |
-| `mergeGuest` | Callable | Gộp dữ liệu khách vào tài khoản có sẵn (3.2) |
-| `deleteAccount` | Callable | Xoá tài khoản và dữ liệu (7) |
-| `cleanupGuests` | Scheduled hằng tuần | Xoá khách không hoạt động sau 60 ngày |
-| `setRole` | Callable (chỉ `admin`) | Gán custom claim |
+- Thử tay trên máy thật: iPhone (Safari và PWA standalone), Android Chrome (One Tap), in-app browser Zalo/Facebook.

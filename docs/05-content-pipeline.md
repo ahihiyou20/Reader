@@ -1,271 +1,231 @@
-# 05 — Nguồn bài viết, văn phong IELTS và pipeline nội dung
+# 05 — Nguồn bài viết, văn phong IELTS và quy trình nội dung (100% miễn phí)
 
-> Phạm vi: lấy nội dung từ đâu, viết theo văn phong nào, quy trình sản xuất bài (AI hỗ trợ + biên tập viên duyệt), bài luyện tập IELTS, chi phí và lộ trình. Data model chi tiết ở [06-database.md](./06-database.md), đăng nhập ở [07-auth.md](./07-auth.md).
+> Ràng buộc: **không dùng Claude API, không dùng dịch vụ trả phí nào.** AI chỉ là phần phụ và chỉ dùng **Gemini API gói miễn phí**. App phải chạy đầy đủ kể cả khi không có AI. Kiến trúc lưu trữ và hosting miễn phí ở [06-database.md](./06-database.md), đăng nhập ở [07-auth.md](./07-auth.md).
 
 ## 1. Quyết định chính
 
 | Vấn đề | Quyết định |
 |--------|-----------|
-| Mô hình kinh doanh | **Miễn phí hoàn toàn**, không paywall, không giới hạn bài/ngày. |
-| Ai viết bài | **Claude viết bản nháp từ các nguồn đã thu thập**, sau đó **biên tập viên duyệt và sửa** trước khi xuất bản. Không bài nào lên app mà chưa có người duyệt. |
-| Văn phong | **IELTS Academic Reading** là văn phong chung cho mọi bài (mục 2). |
-| Nguồn | Ưu tiên nguồn mở có giấy phép rõ ràng (Wikipedia, OpenAlex, Europe PMC, dữ liệu chính phủ, Our World in Data). Báo chí và sách còn bản quyền chỉ dùng để lấy **dữ kiện**, kèm link, không chép câu chữ (mục 4). |
-| Viết lại, không chép | Mọi câu trong bài đều là câu viết mới. Có kiểm tra tự động độ trùng với nguồn (mục 6). |
-| Song ngữ | Bản gốc tiếng Anh (vì người học IELTS cần đọc tiếng Anh). Bản tiếng Việt do Claude dịch, biên tập viên kiểm tra. |
-| Luyện tập | Mỗi bài có một bộ câu hỏi kiểu IELTS (10–14 câu) và danh sách từ vựng học thuật. |
-| Model | `claude-opus-5-5` cho mọi bước (mục 5.2). |
+| Nguồn bài | **Bài có sẵn mang giấy phép mở** (CC BY, CC BY-SA, public domain), được rút gọn và chia đoạn theo khuôn IELTS. Không tự "viết mới bằng AI" làm nguồn chính. |
+| Lý do | Bài đọc IELTS thật vốn lấy từ đúng loại nguồn này (sách giáo khoa, tạp chí khoa học phổ thông, báo nghiên cứu). Nội dung do con người viết, đã có nguồn, không lo AI bịa, chi phí 0 đồng. |
+| AI | **Gemini API free tier, tùy chọn**: gợi ý bản dịch tiếng Việt, câu hỏi True/False/Not Given, câu KEY POINT. Mọi output đều qua người duyệt. Hết quota thì quy trình vẫn chạy, chỉ thiếu phần gợi ý. |
+| Câu hỏi luyện tập | Phần lớn **sinh bằng quy tắc** (matching headings, điền từ, điền số liệu), không cần AI (mục 5). |
+| Duyệt và xuất bản | Bài là file JSON trong **GitHub repo**. Mỗi bài mới là một Pull Request; duyệt xong merge thì site tự build lại. GitHub đóng vai trò CMS miễn phí. |
+| Đóng góp cộng đồng | Nút **+** cho người dùng gửi bài tự viết (CC BY 4.0) hoặc gợi ý nguồn; được duyệt như trên. |
 
-## 2. Văn phong IELTS Academic Reading (house style)
+## 2. Nguồn bài viết
 
-### 2.1 Đặc điểm cần bắt chước
+### 2.1 Nhóm 1: được đăng lại, rút gọn và dịch (CC BY, public domain)
 
-Bài đọc IELTS Academic lấy từ sách, tạp chí, báo khoa học phổ thông, viết cho người đọc không chuyên. Một đề thi có 3 bài, tổng 2.150–2.750 từ, 40 câu, 60 phút; mỗi bài khoảng 700–1.000 từ. Những đặc điểm Reader sẽ giữ:
+Đây là nguồn chính. Chỉ cần ghi công đúng cách.
 
-- **Văn phong học thuật, ngôi thứ ba**, trung tính. Không xưng "bạn" trong thân bài.
-- **Đoạn văn có nhãn chữ cái** A, B, C… (dùng cho dạng câu hỏi *Matching information*, *Matching headings*).
-- **Dẫn nguồn theo người và tổ chức**: "Professor Daniel Kahneman of Princeton University argued that…", "A 2010 study at University College London found…".
-- **Rào đón (hedging)**: *suggests, appears to, it is widely thought that, there is some evidence that*.
-- **Nhiều quan điểm**: có ý kiến trái chiều, có phần "tuy nhiên", có giới hạn của nghiên cứu.
-- **Diễn tiến lịch sử hoặc lập luận** rõ ràng: bối cảnh → phát hiện → tranh luận → ứng dụng.
-- **Số liệu, năm, tên riêng** đủ dày để ra câu hỏi điền từ.
-- **Từ vựng học thuật**: dùng tự nhiên các từ trong Academic Word List (AWL), như *phenomenon, significant, interpret, constrain*.
+| Nguồn | Giấy phép | Nội dung hợp với IELTS | Cách lấy |
+|-------|-----------|------------------------|----------|
+| **OpenStax** (sách giáo khoa đại học: Psychology, Biology, Sociology, Economics, Astronomy, US History, Anatomy…) | CC BY 4.0 (kiểm tra từng cuốn) | Rất giống văn phong IELTS: học thuật, có số liệu, có nghiên cứu được dẫn tên | Repo GitHub `openstax/osbooks-*` (định dạng CNXML) |
+| **Our World in Data**, các bài phân tích | CC BY 4.0 | Môi trường, dân số, y tế, kinh tế, có số liệu dày | Trang bài viết; dữ liệu và biểu đồ qua grapher |
+| **Frontiers for Young Minds** | CC BY | Khoa học do nhà khoa học viết cho người trẻ, câu đơn giản (B1–B2) | Website, có XML/PDF từng bài |
+| **eLife**: phần *digest* của bài nghiên cứu | CC BY 4.0 (giấy phép của eLife; kiểm tra trên từng bài) | Tóm tắt khoa học cho người không chuyên | Repo `elifesciences/elife-article-xml` (JATS XML) |
+| **PLOS**: phần *Author summary* | CC BY 4.0 | Tóm tắt nghiên cứu y sinh dễ hiểu | API/corpus `allofplos` |
+| **Cơ quan chính phủ Mỹ**: NIH *News in Health*, NASA Science, NOAA, USGS, National Park Service | Public domain (tác phẩm của chính phủ liên bang Mỹ); ảnh của bên thứ ba thì không | Sức khoẻ, vũ trụ, khí hậu, địa chất, lịch sử | HTML trên trang chính thức |
+| **VOA Learning English** (kho bài cũ) | Theo hướng dẫn của thư viện Georgetown: văn bản là public domain, phải ghi công `learningenglish.voanews.com`; ảnh AP/Reuters có bản quyền riêng | Bài tiếng Anh đã phân cấp độ cho người học | Website; tình trạng hoạt động năm 2026 không chắc chắn, nên kiểm tra trước khi dựa vào |
+| **Global Voices** | CC BY 3.0 | Văn hoá, xã hội, nhiều quốc gia | Website, RSS |
+| **Project Gutenberg / Standard Ebooks** | Public domain (tại Mỹ) | Tiểu luận và sách khoa học kinh điển (Darwin, Faraday…) | Gutendex API, repo của Standard Ebooks |
 
-### 2.2 Cấu trúc bài trong Reader
+### 2.2 Nhóm 2: được rút gọn và dịch, nhưng **bài phái sinh phải giữ CC BY-SA**
 
-| Thành phần | Quy tắc | Hiển thị trong app |
-|-----------|---------|--------------------|
-| `title` | ≤ 12 từ, có thể là câu hỏi | Tiêu đề Cover |
-| `standfirst` | 40–70 từ, gợi tò mò; được phép đặt câu hỏi, vẫn ở ngôi thứ ba | Đoạn hook chữ lớn ở đầu Details |
-| `paragraphs` A–G | 6–8 đoạn, mỗi đoạn 90–130 từ, tổng thân bài 700–950 từ | Mỗi đoạn là một section; nhãn chữ cái nhỏ màu `--fg3` trước đoạn |
-| `heading` của đoạn | Tùy chọn, ≤ 10 từ | H2 ở chế độ đọc thường; **ẩn** ở chế độ luyện thi |
-| `keyPoint` | 40–60 từ, ẩn dụ đời thường + một câu hỏi hành động. Được xưng "you" (đây là phần của app, không phải bài thi) | Thẻ KEY POINT |
-| `applySteps` | Đúng 3 bước, bắt đầu bằng động từ | Màn Comments & Apply |
-| `glossary` | 8–12 từ học thuật có trong bài | Gạch chân chấm trong bài; chạm để xem nghĩa |
-| `practice` | 10–14 câu, 3–4 dạng | Tab "Practice" (mục 3) |
-| `sources` | 3–10 nguồn | `[Source · N]` và sheet Sources |
+| Nguồn | Ghi chú |
+|-------|---------|
+| **Wikipedia** (EN), **Simple English Wikipedia** (dễ hơn, B1–B2) | Dùng các bài *Featured* và *Good articles* vì chất lượng cao. Bài Reader làm từ Wikipedia mang giấy phép **CC BY-SA 4.0** và hiển thị rõ |
+| **Wikipedia tiếng Việt** | Có thể dùng bài tiếng Việt cùng chủ đề làm "bản đọc thêm" (không phải bản dịch 1:1) |
+| **Wikibooks, Wikiversity** | Bài học có cấu trúc |
 
-Trình độ mục tiêu: **B2–C1** (band 6.0–7.5). Mỗi bài gắn `level` (`B2`, `C1`, `C2`), tính từ độ dài câu trung bình, tỷ lệ từ AWL và từ ngoài 5.000 từ thông dụng, rồi biên tập viên xác nhận.
+### 2.3 Nhóm 3: chỉ đăng lại **nguyên văn**, không dịch, không cắt
 
-### 2.3 Ví dụ (đoạn mở của bài mẫu, viết lại theo văn phong IELTS)
+| Nguồn | Điều khoản chính |
+|-------|------------------|
+| **The Conversation** | CC BY-ND 4.0. Bản dịch và việc cắt bớt bị tính là bài phái sinh, **cần tác giả đồng ý**. Phải ghi tác giả, trường, link về bài gốc. Bản UK còn cấm đăng lại có hệ thống toàn bộ bài. Đọc trang *Republishing guidelines* của từng edition trước khi dùng |
+| **ProPublica** | CC BY-NC-ND: không sửa, không thương mại |
 
-> **Why do capable people freeze at important crossroads?**
->
-> *Faced with a new job offer or a move abroad, many otherwise decisive people find themselves unable to act. Psychologists increasingly argue that the cause lies less in a lack of information than in the way the human brain processes choice.*
->
-> **A** It has been estimated that an adult makes thousands of decisions every day, from trivial choices about food to consequential ones about work and relationships. Researchers studying what has become known as *decision fatigue* suggest that each of these choices draws on a limited pool of mental resources. By the end of the day, the quality of judgement appears to decline measurably, although the size of the effect remains a subject of debate.
->
-> **B** In *Thinking, Fast and Slow* (2011), the Nobel laureate Daniel Kahneman distinguished between two modes of thought. …
+Cách dùng nhóm 3 trong Reader: chỉ hiển thị bản **tiếng Anh nguyên văn**, không highlight hay thêm KEY POINT vào thân bài. Câu hỏi luyện tập và từ vựng được đặt ở tab riêng. Nếu muốn có bản tiếng Việt, liên hệ tác giả xin phép (The Conversation có nút *Contact* trên trang tác giả) và lưu bằng chứng đồng ý trong repo.
 
-So với bản cũ: con số "35.000 quyết định" (ước tính phổ biến, không có nghiên cứu gốc chắc chắn) được viết thành "thousands of decisions", và có thêm câu rào đón "remains a subject of debate". Bài viết theo IELTS phải tuân thủ đúng mức độ chắc chắn mà nguồn cho phép.
+### 2.4 Nhóm 4: nội dung tự viết
 
-### 2.4 Lưu ý thương hiệu
+- **Biên tập viên và cộng đồng** viết bài mới theo khuôn IELTS (mục 3) qua nút **+** trong app (gửi vào hàng đợi) hoặc PR trên GitHub. Bài tự viết mang giấy phép **CC BY 4.0** của Reader; người viết đồng ý điều khoản khi gửi.
+- Người viết phải ghi nguồn cho mọi số liệu, theo quy tắc ở PRD §5.
 
-IELTS là nhãn hiệu của British Council, IDP và Cambridge University Press & Assessment. Reader ghi là "IELTS-style practice", không dùng logo, không nói là đề thi chính thức, và có dòng miễn trừ trong màn Practice và trang About.
+### 2.5 Không dùng
 
-## 3. Luyện tập kiểu IELTS (tính năng mới)
+- Báo chí và sách còn bản quyền (CNBC, BBC, sách của Kahneman…): **không đăng lại**, chỉ được dẫn link khi bài tự viết cần nguồn.
+- Đề IELTS thật (Cambridge IELTS…): có bản quyền.
+- Nội dung không ghi rõ giấy phép.
 
-### 3.1 Dạng câu hỏi (giai đoạn 1)
+### 2.6 Ảnh và video nền (miễn phí)
 
-| Dạng | Số câu/bài | Ghi chú tạo đề |
-|------|-----------|----------------|
-| True / False / Not Given | 4–5 | Mỗi đáp án NOT GIVEN phải được kiểm chứng là bài không nhắc tới (bước blind-answer, mục 6) |
-| Matching headings | 1 câu cho mỗi đoạn được chọn (4–6 đoạn) | Danh sách heading phải viết khác heading đang hiển thị, kèm 2–3 heading gây nhiễu |
-| Sentence completion | 3–4 | "NO MORE THAN TWO WORDS AND/OR A NUMBER"; đáp án là cụm có nguyên văn trong bài |
-| Multiple choice | 2–3 | 4 lựa chọn, 1 đúng |
+| Nguồn | Điều kiện |
+|-------|-----------|
+| **Unsplash API** | Miễn phí; phải hotlink ảnh từ Unsplash, ghi tên tác giả, gọi endpoint download khi dùng |
+| **Pexels API** | Miễn phí, có cả **video**; khuyến khích ghi công |
+| **Wikimedia Commons** | Theo giấy phép từng file; lưu `author`, `license` |
+| **NASA Image and Video Library** | Phần lớn public domain |
+| Ảnh đi kèm bài nguồn | Chỉ dùng khi ảnh cùng giấy phép với bài (ảnh trong OpenStax, eLife thường là CC BY; ảnh AP/Reuters trong bài VOA thì **không**) |
 
-Giai đoạn 2: *Matching information*, *Summary completion*, *Yes / No / Not Given* (quan điểm tác giả), và **Mock test**: 3 bài, 40 câu, 60 phút, quy đổi band ước tính.
+Không lưu ảnh trên Firebase Storage (cần gói trả phí). Ảnh được hotlink từ nguồn hoặc lưu nhỏ gọn trong repo.
 
-### 3.2 Trải nghiệm
+## 3. Khuôn bài IELTS áp dụng cho bài nguồn
 
-- Màn thứ ba (vuốt trái từ Details) đổi thành **"Practice & Apply"**, có segmented control 3 tab: **Practice · Apply · Comments**.
-- Bắt đầu Practice: bài đọc chuyển sang **exam view**, gồm nhãn đoạn A–G, ẩn heading và highlight, chữ đen-trắng dễ đọc. Đồng hồ đếm giờ tùy chọn (mặc định 20 phút).
-- Nộp bài: chấm ngay trên client (đáp án nằm trong `quizzes/{articleId}`, xem 06). Mỗi câu có giải thích và **câu bằng chứng** (đoạn + vị trí ký tự); chạm vào thì cuộn tới và tô sáng câu đó trong bài.
-- Lưu lượt làm vào `users/{uid}/quizAttempts`; trang Profile có thống kê theo dạng câu hỏi (ví dụ: TFNG đúng 62%) để người học biết điểm yếu.
-- So khớp sentence completion: bỏ phân biệt hoa thường, bỏ dấu câu, chấp nhận các đáp án thay thế trong `acceptedAnswers`.
+Bài nguồn thường dài hơn hoặc không đúng hình dạng IELTS. Bước **adapt** (làm bằng tay hoặc với trợ giúp của script) đưa bài về khuôn:
 
-### 3.3 Từ vựng
+| Thành phần | Quy tắc |
+|-----------|---------|
+| `title` | Giữ tiêu đề gốc hoặc đặt lại (≤ 12 từ). Với nhóm 3 thì giữ nguyên |
+| `standfirst` | 40–70 từ: lấy đoạn mở của bài gốc, hoặc biên tập viên viết một câu dẫn |
+| `paragraphs` A–G | 6–8 đoạn liên tiếp, **700–950 từ**. Với nhóm 1–2: chọn một đoạn liền mạch của bài/chương, cho phép cắt câu thừa và gộp đoạn ngắn. Mỗi thay đổi được liệt kê trong `changes` để ghi công |
+| `heading` | Lấy từ tiêu đề mục của bài gốc (OpenStax, Wikipedia đều có), dùng luôn cho câu hỏi matching headings |
+| Highlight | Biên tập viên đánh dấu tối đa 3 cụm mỗi đoạn (không áp dụng cho nhóm 3) |
+| `keyPoint` | Biên tập viên viết (Gemini có thể gợi ý); không áp dụng cho nhóm 3 |
+| `applySteps` | 3 bước, biên tập viên viết; tùy chọn cho bài khoa học thuần |
+| `level` | Tính tự động (mục 5.4) |
+| `attribution` | Sinh tự động, hiển thị cuối bài: *"Adapted from 'Decision Making' by Rose M. Spielman et al., OpenStax Psychology 2e, CC BY 4.0. Changes: shortened, divided into lettered paragraphs, questions added."* |
 
-- Từ trong `glossary` được gạch chân chấm. Chạm vào mở popover gồm từ loại, phiên âm IPA, nghĩa tiếng Anh, nghĩa tiếng Việt, ví dụ trong bài và nhãn AWL/CEFR.
-- Nút "Lưu từ" thêm vào `users/{uid}/words`. Giai đoạn 2: ôn tập flashcard theo lặp lại ngắt quãng (spaced repetition).
+Chế độ đọc thường giữ nguyên giao diện của prototype (H2, highlight, KEY POINT). Chế độ **exam view** khi luyện tập ẩn heading và highlight, chỉ hiện nhãn đoạn A–G (FR-28).
 
-### 3.4 Functional requirements bổ sung
+IELTS là nhãn hiệu của British Council, IDP và Cambridge University Press & Assessment. Reader ghi "IELTS-style practice", không dùng logo, có dòng miễn trừ.
 
-| ID | Yêu cầu |
-|----|---------|
-| FR-28 | Hiển thị nhãn đoạn A–G trước mỗi section; exam view ẩn heading và highlight. |
-| FR-29 | Bộ câu hỏi theo 4 dạng ở 3.1, chấm điểm, giải thích, cuộn tới câu bằng chứng. |
-| FR-30 | Lưu lịch sử làm bài và thống kê theo dạng câu hỏi. |
-| FR-31 | Popover từ vựng và lưu từ. |
-| FR-32 | Bộ lọc Explore theo trình độ (B2/C1/C2) và chủ đề IELTS (mục 4.3). |
+## 4. Quy trình nội dung
 
-## 4. Nguồn nội dung
-
-### 4.1 Nguyên tắc pháp lý và đạo đức
-
-1. **Viết mới, không chép.** Dữ kiện và ý tưởng không thuộc bản quyền, còn câu chữ thì có. Claude chỉ nhận **danh sách dữ kiện kèm trích dẫn** (mục 5, bước 3) để viết, không nhận nguyên văn bài nguồn ở bước viết.
-2. **Ghi nguồn mọi dữ kiện**: tên, nhà xuất bản, năm, URL/DOI trong `sources`.
-3. **Tôn trọng giấy phép và điều khoản**: gọi API chính thức, gửi `User-Agent` có email liên hệ, tuân thủ rate limit và robots.txt, không cào nội dung sau paywall.
-4. **Chỉ dùng tóm tắt (abstract) cho bài báo khoa học trả phí.** Toàn văn chỉ dùng khi giấy phép cho phép (Open Access, CC BY).
-5. **Trích dẫn nguyên văn** chỉ tối đa 1 câu ngắn, có ngoặc kép và ghi tên tác giả, và chỉ khi câu đó thật sự cần.
-6. **Chủ đề sức khoẻ**: kèm dòng "Thông tin tham khảo, không thay thế tư vấn y tế"; chỉ dùng nguồn y khoa có bình duyệt hoặc cơ quan y tế.
-
-### 4.2 Danh sách nguồn
-
-| Nhóm | Nguồn | Giấy phép | Dùng để | Cách lấy |
-|------|-------|-----------|---------|----------|
-| **A. Nguồn mở, dữ kiện tổng quan** | Wikipedia (EN, VI) | CC BY-SA 4.0 | Bối cảnh, dữ kiện, tìm chủ đề hot | Wikimedia REST API (summary, page HTML, `feed/featured` "most read") |
-| | Our World in Data | CC BY 4.0 | Số liệu, biểu đồ | Tải CSV/grapher API |
-| | Cơ quan chính phủ Mỹ: NASA, NIH, CDC, NOAA | Phần lớn là public domain | Khoa học, sức khoẻ, môi trường, vũ trụ | Trang chính thức, API của NASA |
-| | Project Gutenberg | Public domain | Sách kinh điển, lịch sử tư tưởng | Gutendex API |
-| **B. Nghiên cứu khoa học** | OpenAlex | CC0 (metadata, abstract) | Tìm bài nghiên cứu theo chủ đề, số trích dẫn, abstract | OpenAlex REST API (kiểm tra yêu cầu API key và rate limit hiện hành) |
-| | Europe PMC / PubMed Central OA | Theo từng bài (nhiều bài CC BY) | Abstract, toàn văn Open Access y sinh và tâm lý | Europe PMC REST API |
-| | PubMed (NCBI E-utilities) | Abstract để tham khảo | Abstract y sinh | E-utilities API |
-| | arXiv | Theo từng bài | Vật lý, CS, AI (ghi rõ là *preprint*) | arXiv API |
-| | Crossref | Metadata mở | Kiểm tra DOI, năm, tạp chí | Crossref REST API |
-| **C. Chỉ lấy dữ kiện + link** | Báo chí: Reuters, BBC, The Guardian, CNBC… | Bản quyền | Tin mới, số liệu thời sự | Claude `web_search` với `allowed_domains`, người duyệt kiểm tra lại |
-| | The Conversation | CC BY-ND 4.0 (không được sửa) | Bài của nhà nghiên cứu, gợi ý chủ đề | Chỉ lấy dữ kiện vì Reader luôn viết lại |
-| | WHO | Thường là CC BY-NC-SA 3.0 IGO | Số liệu y tế toàn cầu | Chỉ lấy dữ kiện + link |
-| | Sách còn bản quyền | Bản quyền | Ý tưởng chính của tác giả (Kahneman, Clear…) | Không tóm tắt từng chương; chỉ nêu ý chính kèm tên sách và năm |
-| **D. Ảnh/video nền** | Unsplash API | Unsplash License (ghi công tác giả, hotlink, gọi endpoint download) | Ảnh cover | Cần đăng ký app production |
-| | Pexels API | Pexels License (khuyến khích ghi công) | Ảnh và **video** cover | API key |
-| | Wikimedia Commons | Theo từng file | Ảnh lịch sử, khoa học | Lưu `license`, `author` cho từng file |
-| | NASA Image Library | Phần lớn public domain | Vũ trụ | API |
-
-### 4.3 Tìm chủ đề (topic discovery)
-
-- **Danh sách chủ đề IELTS kinh điển** làm xương sống: Education, Environment & Climate, Technology & AI, Health & Medicine, Psychology & Behaviour, Urban Planning, Archaeology & History, Animals & Biology, Space, Language & Linguistics, Business & Economics, Food & Agriculture, Energy, Art & Culture.
-- **Tự động gợi ý** (Cloud Function chạy hằng ngày):
-  - Wikipedia "most read" và các bài đang được chỉnh sửa nhiều, để tìm chủ đề đang được quan tâm.
-  - OpenAlex: các nghiên cứu được trích dẫn nhiều trong 12 tháng gần nhất thuộc các concept trên.
-  - Lọc trùng với kho bài: so khớp từ khoá đã chuẩn hoá giữa tiêu đề và keywords (hệ số Jaccard > 0,5 thì đánh dấu "có thể trùng").
-- **Biên tập viên** chọn chủ đề từ backlog, đặt mức ưu tiên và trình độ mục tiêu.
-
-## 5. Pipeline sản xuất bài
-
-### 5.1 Sơ đồ
+### 4.1 Sơ đồ
 
 ```mermaid
 flowchart LR
-  T[Topic backlog] -->|editor chọn| R[1. Research<br/>thu thập nguồn]
-  R --> S[(Source snapshots<br/>Cloud Storage)]
-  S --> F[2. Fact sheet<br/>Claude + citations]
-  F --> D[3. Draft IELTS<br/>structured output]
-  D --> V[4. Verify<br/>đối chiếu dữ kiện]
-  V -->|lỗi| D
-  V --> X[5. Translate VI]
-  V --> Q[6. Practice + glossary]
-  Q --> B[7. Blind answer check]
-  B -->|lệch đáp án| Q
-  X --> H[8. Human review<br/>/admin]
-  B --> H
-  H -->|approve| P[9. Publish]
-  H -->|request changes| D
+  A[Chọn nguồn<br/>backlog.yaml] --> B[Import script<br/>GitHub Actions]
+  B --> C[Normalize<br/>tách đoạn, đếm từ]
+  C --> D[Adapt IELTS<br/>biên tập viên]
+  D --> E[Sinh câu hỏi<br/>theo quy tắc]
+  E --> G{Gemini free<br/>còn quota?}
+  G -->|có| H[Gợi ý: bản dịch VI,<br/>TFNG, KEY POINT]
+  G -->|không| I[Bỏ qua]
+  H --> PR[Mở Pull Request]
+  I --> PR
+  PR --> R[Duyệt trên GitHub<br/>hoặc Sveltia CMS]
+  R -->|merge| CI[CI kiểm tra + build]
+  CI --> CF[Cloudflare Pages<br/>xuất bản]
 ```
 
-Điều phối: mỗi bước là một Cloud Function (Node 20, TypeScript) nhận job từ **Cloud Tasks**. Trạng thái lưu ở `pipelineRuns/{runId}` (xem 06). Mỗi bước idempotent: chạy lại cùng một input thì ghi đè cùng output. Retry tối đa 3 lần, backoff theo cấp số nhân. **Cloud Scheduler** khởi động lô hằng đêm.
+### 4.2 Các bước
 
-### 5.2 Model và tính năng Claude API
+| # | Bước | Ai/cái gì làm | Output |
+|---|------|---------------|--------|
+| 1 | **Backlog** | Biên tập viên thêm dòng vào `content/backlog.yaml` (nguồn, URL, chủ đề IELTS, trình độ mục tiêu) hoặc người dùng gợi ý qua app | Danh sách việc |
+| 2 | **Import** | Script `scripts/import/<source>.ts` chạy trong GitHub Actions (thủ công hoặc theo lịch). Mỗi nguồn có một adapter: OpenStax (CNXML), eLife (JATS XML), Wikipedia (REST `page/html`), Gutenberg (text), HTML (dùng Readability) | `content/raw/<id>.json`: văn bản sạch, các mục, tác giả, giấy phép, URL |
+| 3 | **Normalize** | Script | Tách đoạn, đếm từ, gợi ý đoạn 700–950 từ phù hợp nhất (liền mạch, có heading) |
+| 4 | **Adapt** | Biên tập viên chỉnh trong CMS: chọn đoạn, cắt, đặt standfirst, highlight, KEY POINT | `content/articles/<slug>.json` (bản EN) |
+| 5 | **Câu hỏi theo quy tắc** | Script (mục 5) | `quiz` trong file bài |
+| 6 | **Gợi ý bằng Gemini** (tùy chọn) | Script gọi Gemini free tier, có hàng đợi và theo dõi quota | Các field có cờ `"aiSuggested": true` để người duyệt kiểm tra |
+| 7 | **Pull Request** | GitHub Action tự mở PR | PR kèm báo cáo kiểm tra |
+| 8 | **Duyệt** | Biên tập viên (người có quyền merge) | Merge, hoặc yêu cầu sửa |
+| 9 | **Build và xuất bản** | Cloudflare Pages build lại site tĩnh | Bài lên app; chỉ mục tìm kiếm được tạo lại |
 
-- **Model:** `claude-opus-5-5` (1M context, $4 / $20 cho mỗi triệu token input/output) cho mọi bước. Nếu sau này muốn giảm chi phí cho các bước khối lượng lớn (dịch, blind-answer), có thể đổi sang `claude-sonnet-5-5` hoặc `claude-haiku-5-5`. Đó là quyết định của bạn và nên đo chất lượng trước khi đổi.
-- **Effort** đặt trong `output_config.effort`. Default của Opus 5.5 là `medium`, nên ghi rõ cho từng bước: research `medium`, fact sheet `high`, draft `high`, verify `high`, translate `medium`, practice `high`, blind-answer `low`. Thinking luôn bật (adaptive); không gửi `budget_tokens`.
-- **SDK:** `@anthropic-ai/sdk` (TypeScript). Request dài thì dùng streaming và `finalMessage()`.
-- **Message Batches API** (rẻ hơn 50%, chạy bất đồng bộ) cho các bước 2–7 của lô hằng đêm. Kết quả trả về không theo thứ tự nên luôn ghép theo `custom_id = "{runId}:{step}"`.
-- **Structured outputs** (`output_config.format` với JSON schema) cho các bước 3, 4, 5, 6, 7, để output khớp đúng schema ở 06 rồi validate thêm bằng Zod.
-- **Citations** (`citations: {enabled: true}` trên các khối `document` chứa nguồn) cho bước 2. Mỗi dữ kiện nhận về đều có `cited_text` và vị trí trong nguồn. Lưu ý: citations **không dùng chung được** với `output_config.format`, nên bước 2 đọc trích dẫn từ các khối text trả về rồi tự chuyển thành JSON.
-- **Web search / web fetch** (`web_search_20260209`, `web_fetch_20260209`) ở bước 1 để tìm thêm nguồn báo chí, giới hạn bằng `allowed_domains` theo danh sách nhóm C. Kết quả lỗi của server tool vẫn trả về HTTP 200 kèm `error_code`, nên phải kiểm tra.
-- **Prompt caching**: phần system prompt (house style ở mục 2 + rubric + schema) cố định và đặt đầu tiên, dùng `cache_control`. Fact sheet của một bài được cache để dùng lại ở bước 3, 4, 6. Không đưa timestamp hay ID thay đổi theo request vào phần prefix.
-- **Refusal**: luôn kiểm tra `stop_reason` trước khi đọc nội dung. Bật fallback phía server (`fallbacks: "default"` với beta `server-side-fallback-2026-07-01`). Nếu vẫn `refusal` thì đánh dấu run `needs_human`.
-- **Không dùng** forced `tool_choice` (`any`/`tool` báo lỗi 400 trên Opus 5.5); thay bằng structured outputs.
-- `ANTHROPIC_API_KEY` lưu trong **Secret Manager**, chỉ Cloud Functions đọc được. Client không bao giờ gọi Claude trực tiếp.
+### 4.3 Kiểm tra tự động trên PR (GitHub Actions, miễn phí)
 
-### 5.3 Chi tiết từng bước
+| Kiểm tra | Ngưỡng |
+|----------|--------|
+| Schema JSON (Zod) | Đạt |
+| `license` thuộc danh sách cho phép và khớp nhóm nguồn | Đạt |
+| Nhóm 3 (ND): thân bài **giống hệt** bản gốc đã import | 100% |
+| Có `attribution` và link gốc | Đạt |
+| Độ dài | Standfirst 40–70 từ; 6–8 đoạn; thân bài 700–950 từ (nhóm 3 được miễn) |
+| Câu hỏi | Mỗi đáp án điền từ có trong bài; matching headings có đủ heading gây nhiễu |
+| Field `aiSuggested` | Phải được người duyệt chuyển thành `false` (đã kiểm tra) trước khi merge |
+| Ảnh cover | Có `author` và `license` |
 
-| # | Bước | Input | Output | Ghi chú |
-|---|------|-------|--------|---------|
-| 1 | Research | Topic, level, category | 5–15 `sources` + snapshot văn bản (Cloud Storage `sources/{sourceId}.txt`) | Gọi API của nguồn A/B trước, `web_search` sau. Lưu `license` cho từng nguồn. Loại nguồn không rõ giấy phép |
-| 2 | Fact sheet | Snapshot nguồn dạng `document` + citations | 25–60 `facts`: `{id, statement, sourceId, citedText, location, confidence, isNumber}` | Prompt yêu cầu nêu cả quan điểm trái chiều và giới hạn của nghiên cứu |
-| 3 | Draft | Fact sheet (không có nguyên văn nguồn) + house style | `ArticleDraft` JSON: title, standfirst, paragraphs A–G (body dạng rich markup), mỗi câu có dữ kiện gắn `factIds`, keyPoint, applySteps, keywords, level | Không được nêu số, tên hay năm nào không có trong fact sheet |
-| 4 | Verify | Draft + fact sheet + `citedText` | Danh sách `issues`: câu không có dữ kiện hỗ trợ, khẳng định quá mức nguồn, sai số/năm | Có lỗi nghiêm trọng thì quay lại bước 3 (tối đa 2 vòng), sau đó chuyển cho người |
-| 5 | Translate VI | Draft đã qua verify + glossary thuật ngữ | Bản VI giữ nguyên markup, số, tên riêng | Thuật ngữ lần đầu xuất hiện giữ tiếng Anh trong ngoặc nghiêng |
-| 6 | Practice + glossary | Bản EN | `Quiz` JSON (mục 3.1) với `evidence` cho từng câu; `glossary` 8–12 từ | Đáp án sentence completion phải là chuỗi có trong bài |
-| 7 | Blind answer | Chỉ bài EN + câu hỏi (không có đáp án) | Đáp án của model | So với đáp án gốc; lệch câu nào thì tạo lại câu đó (tối đa 2 vòng), vẫn lệch thì chuyển cho người |
-| 8 | Human review | Mọi output + báo cáo kiểm tra | `approved` / `changes_requested` / `rejected` | Checklist ở mục 6.2 |
-| 9 | Publish | Bản đã duyệt | `articles/{id}` + `quizzes/{id}` + index tìm kiếm | Chọn ảnh/video cover, đặt lịch xuất bản |
+### 4.4 CMS miễn phí
 
-## 6. Kiểm soát chất lượng
+- **Cách 1, đơn giản nhất:** sửa file JSON ngay trên GitHub web, mỗi bài một PR.
+- **Cách 2, cho biên tập viên không rành kỹ thuật:** **Sveltia CMS** (mã nguồn mở, git-based, tương thích cấu hình Decap CMS) đặt ở `/cms`. Biên tập viên đăng nhập bằng GitHub; luồng OAuth chạy trên một Cloudflare Worker miễn phí. CMS hiển thị form theo schema bài, có preview, và khi lưu thì tạo commit/PR.
 
-### 6.1 Kiểm tra tự động (chạy sau bước 4–7, kết quả hiển thị trong /admin)
+## 5. Luyện tập IELTS không cần AI
 
-| Kiểm tra | Ngưỡng đạt |
-|----------|-----------|
-| Mọi số, năm, tên người/tổ chức trong bài đều gắn `factIds` | 100% |
-| Verify không còn lỗi mức `high` | 0 lỗi |
-| **Độ trùng với nguồn** (n-gram 8 từ, chuẩn hoá chữ thường) | Không có chuỗi 8 từ nào trùng với snapshot nguồn, trừ tên riêng và trích dẫn có ngoặc kép |
-| Độ dài | Standfirst 40–70 từ; 6–8 đoạn; thân bài 700–950 từ |
-| Trình độ | `level` tính được khớp `level` mục tiêu ± 1 bậc |
-| Blind answer | Khớp 100% đáp án |
-| Bản dịch | Số lượng số, năm, tên riêng khớp bản EN; markup cân bằng |
-| Câu hỏi NOT GIVEN | Bước verify xác nhận bài không nhắc tới |
+### 5.1 Sinh câu hỏi theo quy tắc
 
-### 6.2 Checklist người duyệt
+| Dạng | Cách sinh tự động | Chất lượng |
+|------|-------------------|-----------|
+| **Matching headings** | Lấy heading gốc của các mục (OpenStax, Wikipedia có sẵn), đảo thứ tự, thêm 2–3 heading gây nhiễu từ bài khác cùng chủ đề | Tốt; biên tập viên có thể viết lại heading cho khó hơn |
+| **Sentence completion** (NO MORE THAN TWO WORDS AND/OR A NUMBER) | Chọn câu chứa số liệu, năm, tên riêng hoặc thuật ngữ in đậm; khoét 1–2 từ đó; diễn đạt lại phần đầu câu là tùy chọn | Khá; nên diễn đạt lại một chút để không phải tìm từ y hệt |
+| **Vocabulary gap-fill** | Khoét các từ thuộc NAWL trong một đoạn, cho danh sách từ để chọn | Tốt cho luyện từ vựng |
+| **Matching information** ("Which paragraph contains…") | Lấy câu chứa dữ kiện đặc trưng trong mỗi đoạn, diễn đạt lại ngắn | Cần người diễn đạt lại; script chỉ đề xuất câu |
+| **True/False/Not Given, Multiple choice** | Không sinh tự động được tốt: **biên tập viên viết**, Gemini có thể gợi ý (mục 6) | Phụ thuộc người viết |
 
-- Dữ kiện đúng và nguồn mở ra được (bấm thử ít nhất các nguồn của số liệu).
-- Không có khẳng định y khoa hay tài chính nào dễ gây hiểu lầm.
-- Văn phong IELTS: ngôi thứ ba, có rào đón, có quan điểm trái chiều.
-- Câu hỏi không mơ hồ; đáp án TFNG chỉ có một cách hiểu.
-- Bản tiếng Việt tự nhiên và thuật ngữ đúng.
-- Ảnh cover đúng giấy phép và có ghi công.
-- Đặt `reviewedAt`. Bài sức khoẻ và công nghệ tự nhắc duyệt lại sau 12 tháng.
+Mục tiêu mỗi bài: 10–14 câu thuộc ít nhất 3 dạng. Nếu chưa đủ câu TFNG thì bài vẫn xuất bản với các dạng còn lại.
 
-### 6.3 Sau khi xuất bản
+### 5.2 Đóng góp câu hỏi
 
-- Người dùng có thể **báo lỗi nội dung** (menu "…" trên bài → "Report an error"), vào hàng đợi `reports`.
-- Bài có tỷ lệ đọc hết thấp hoặc nhiều báo lỗi được đưa vào hàng sửa.
+Người dùng đã đăng nhập có thể **đề xuất câu hỏi** cho một bài (form trong tab Practice). Đề xuất lưu vào Firestore `questionSuggestions`, biên tập viên chọn câu tốt và đưa vào file bài qua PR.
 
-## 7. Công cụ biên tập (/admin)
+### 5.3 Từ vựng (nguồn mở)
 
-Route `/admin` trong cùng app Next.js, chỉ người có custom claim `editor` hoặc `admin` (xem 07):
+| Dữ liệu | Giấy phép | Dùng cho |
+|---------|-----------|----------|
+| **NAWL**, New Academic Word List (~960 từ) | CC BY-SA 4.0 | Đánh dấu từ học thuật, câu hỏi gap-fill |
+| **NGSL**, New General Service List (~2.800 từ) | CC BY-SA 4.0 | Tính độ khó: từ ngoài NGSL và NAWL được coi là khó |
+| **Wiktionary** (dữ liệu trích sẵn của kaikki.org) | CC BY-SA 4.0 | Định nghĩa tiếng Anh, IPA, bản dịch tiếng Việt (khi có) |
 
-- **Backlog chủ đề**: thêm/sửa, ưu tiên, nguồn gợi ý.
-- **Hàng đợi duyệt**: xem bản nháp cạnh fact sheet và nguồn; tô màu câu theo `factIds`; xem diff giữa các vòng.
-- **Trình sửa** dạng form theo đúng schema, có preview giống app (dùng lại component của prototype).
-- **Báo cáo pipeline**: token và chi phí từng run, lỗi, số vòng lặp.
-- **Kiểm duyệt bình luận**: hàng đợi `reports`, ẩn/xoá bình luận.
+Script build tạo `public/data/vocab/<lemma>.json` cho các từ xuất hiện trong bài; app tải khi người dùng chạm vào từ.
 
-## 8. Chi phí ước tính (Claude API)
+### 5.4 Tính trình độ tự động
 
-Giả định cho một bài, giá `claude-opus-5-5` là $4 / $20 cho mỗi triệu token; bước 2–7 chạy qua Batch API (giảm 50%). Token output đã gồm phần thinking.
+`level` dựa trên: độ dài câu trung bình, tỷ lệ từ ngoài NGSL, tỷ lệ từ NAWL, chỉ số Flesch–Kincaid. Ngưỡng ban đầu: B2 nếu FK grade ≤ 11 và từ ngoài NGSL ≤ 6%; C1 nếu ≤ 14 và ≤ 10%; còn lại C2. Biên tập viên chỉnh lại và ngưỡng được hiệu chỉnh sau 30 bài đầu.
 
-| Bước | Input | Output | Chi phí |
-|------|------:|-------:|-------:|
-| 1 Research (thường, có web search) | 40K | 4K | ~$0.24 + phí web search |
-| 2 Fact sheet (batch) | 30K | 4K | ~$0.10 |
-| 3 Draft (batch) | 12K | 8K | ~$0.10 |
-| 4 Verify (batch) | 15K | 4K | ~$0.07 |
-| 5 Translate (batch) | 6K | 6K | ~$0.07 |
-| 6 Practice + glossary (batch) | 8K | 6K | ~$0.08 |
-| 7 Blind answer (batch) | 4K | 2K | ~$0.03 |
-| **Tổng**, cộng ~30% cho các vòng sửa | | | **≈ $0.9 / bài** |
+## 6. Gemini API (gói miễn phí, tùy chọn)
 
-Ở mức 150 bài/tháng, chi phí khoảng **$135/tháng** cho Claude, chưa gồm Firebase. Đây là ước tính; số thật lấy từ `usage` lưu trong `pipelineRuns` sau 20 bài đầu. Prompt caching sẽ giảm thêm phần input.
+### 6.1 Dùng vào việc gì
 
-## 9. Lộ trình (nối tiếp M0–M8 ở 02)
+| Việc | Được dùng cho nhóm nguồn | Ghi chú |
+|------|-------------------------|---------|
+| Gợi ý **bản dịch tiếng Việt** | 1, 2, 4 | Không dùng cho nhóm 3 (ND) |
+| Gợi ý câu **TFNG, multiple choice** | 1, 2, 3, 4 | Câu hỏi là nội dung riêng của Reader, không sửa bài gốc |
+| Gợi ý **KEY POINT**, câu **diễn đạt lại** cho sentence completion | 1, 2, 4 | |
+| Gợi ý **3 bước Apply** | 1, 2, 4 | |
+
+Không dùng Gemini để **viết bài** hay **tạo số liệu**. Thân bài luôn đến từ nguồn do con người viết.
+
+### 6.2 Giới hạn và cách vận hành
+
+- Google không công bố một con số cố định cho free tier. Giới hạn (RPM, TPM, RPD) hiển thị theo từng project trong Google AI Studio, và theo các nguồn tổng hợp thì đã nhiều lần bị giảm. Các model Pro hầu như đã chuyển sang gói trả phí. **Thiết kế coi Gemini là thứ có thể biến mất bất cứ lúc nào.**
+- Chỉ dùng model **Flash** hoặc **Flash-Lite** đang có trong free tier. Tên model đặt trong biến cấu hình (`GEMINI_MODEL`), không hard-code.
+- Chạy **trong GitHub Actions**, không chạy từ app của người dùng. Có hàng đợi (`content/ai-queue.json`), giới hạn số request mỗi lần chạy, và khi gặp lỗi 429 thì dừng và để lần chạy sau làm tiếp.
+- **Không bao giờ gửi dữ liệu người dùng** cho Gemini. Prompt ở free tier có thể được Google dùng để cải thiện sản phẩm; nội dung gửi đi chỉ là văn bản có giấy phép mở.
+- Key lưu trong **GitHub Actions secrets** (`GEMINI_API_KEY`), không có trong code client.
+- Mỗi output được đánh dấu `aiSuggested: true`, và CI không cho merge khi người duyệt chưa xác nhận (4.3).
+
+### 6.3 Khi không có AI
+
+| Phần | Thay thế |
+|------|----------|
+| Bản tiếng Việt | Tình nguyện viên dịch qua PR; hoặc dùng bài Wikipedia tiếng Việt cùng chủ đề làm "Đọc thêm"; hoặc chỉ có tiếng Anh, kèm popover từ vựng có nghĩa tiếng Việt |
+| TFNG | Biên tập viên hoặc cộng đồng viết (5.2) |
+| KEY POINT, Apply | Biên tập viên viết; nếu trống thì app ẩn phần này |
+
+Nút đổi ngôn ngữ `en/vi` vẫn đổi toàn bộ giao diện sang tiếng Việt. Bài chưa có bản VI thì hiện tag "Chỉ có tiếng Anh" và giữ nội dung tiếng Anh (FR-21).
+
+## 7. Nhịp sản xuất và lộ trình
+
+Không có chi phí theo bài, nên giới hạn là thời gian của biên tập viên: khoảng 30–45 phút cho mỗi bài (chọn đoạn, highlight, kiểm tra câu hỏi).
 
 | M | Phạm vi | Definition of Done |
 |---|---------|-------------------|
-| **M9** Content model + seed thủ công | Schema mới (06), 20 bài viết tay theo văn phong IELTS cho 8 chủ đề, nhãn đoạn A–G | 20 bài hiển thị đúng trên app, có `sources` đầy đủ |
-| **M10** Pipeline v1 | Bước 1–7, `pipelineRuns`, Batch API, kiểm tra tự động 6.1 | Tạo 10 bài thử, ≥ 8 bài qua kiểm tra tự động; chi phí thực tế có trong báo cáo |
-| **M11** /admin | Backlog, hàng đợi duyệt, trình sửa, publish | Biên tập viên duyệt và xuất bản một bài từ đầu tới cuối không cần dev |
-| **M12** IELTS Practice | Tab Practice, exam view, chấm điểm, lịch sử, từ vựng | FR-28–FR-31; E2E làm bài và xem giải thích |
-| **M13** Mở rộng | Topic discovery tự động, mock test 3 bài, flashcard | 60 bài khi ra mắt, sau đó 3–5 bài/ngày |
+| **M9** Content-in-git | Schema bài ở 06, thư mục `content/`, build tĩnh, attribution tự động, 15 bài làm tay từ OpenStax, Wikipedia và NIH News in Health | 15 bài hiển thị đúng; CI kiểm tra giấy phép chạy |
+| **M10** Importers | Adapter cho OpenStax, Wikipedia, eLife, Gutenberg, HTML (Readability); normalize; gợi ý đoạn 700–950 từ | Import 1 bài mỗi nguồn trong 1 lệnh |
+| **M11** Luyện tập | Sinh câu hỏi theo quy tắc, tab Practice, exam view, chấm điểm, lịch sử | FR-28–FR-30 |
+| **M12** Từ vựng | NAWL/NGSL/Wiktionary, popover, lưu từ, tính trình độ | FR-31, FR-32 |
+| **M13** CMS + cộng đồng | Sveltia CMS, gợi ý câu hỏi và gửi bài từ app, Gemini (tùy chọn) | Biên tập viên không rành kỹ thuật xuất bản được một bài |
+| Ra mắt | 50 bài thuộc 8 chủ đề IELTS, sau đó 3–5 bài/tuần | |
 
-## 10. Rủi ro
+## 8. Rủi ro
 
 | Rủi ro | Giảm thiểu |
 |--------|-----------|
-| AI bịa dữ kiện | Chỉ viết từ fact sheet có trích dẫn; bước verify; blind answer; người duyệt |
-| Vi phạm bản quyền | Không đưa nguyên văn vào bước viết; kiểm tra n-gram; nguồn nhóm C chỉ lấy dữ kiện; lưu giấy phép |
-| Số liệu lan truyền nhưng không có gốc (như "35.000 quyết định/ngày") | Prompt yêu cầu tìm nguồn gốc; không có nguồn sơ cấp thì viết ở mức "it has been estimated", hoặc bỏ |
-| Nội dung lỗi thời | `reviewedAt` và nhắc duyệt lại sau 12 tháng |
-| Chi phí tăng | Batch API, caching, đo chi phí từng run, ngân sách tháng có cảnh báo |
-| Nhầm là đề thi IELTS chính thức | Ghi "IELTS-style", có dòng miễn trừ, không dùng logo |
+| Dùng sai giấy phép | Trường `license` bắt buộc, CI chặn giấy phép ngoài danh sách, nhóm 3 bị kiểm tra không sửa đổi, attribution tự động |
+| Nguồn đổi điều khoản (như VOA, The Conversation) | Lưu ngày import và bản điều khoản tại thời điểm import trong `sources/`; xem lại mỗi 6 tháng |
+| Bài nguồn lỗi thời (sách giáo khoa vài năm tuổi) | Ưu tiên ấn bản mới; có trường `reviewedAt`; người dùng báo lỗi được |
+| Gemini free bị giảm hoặc ngừng | App không phụ thuộc Gemini (6.3) |
+| Thiếu biên tập viên | Bắt đầu với nguồn cần ít chỉnh sửa nhất (OpenStax, Simple Wikipedia, Frontiers for Young Minds); cho cộng đồng đóng góp |
