@@ -12,9 +12,9 @@ Bộ tài liệu này là đầu vào để lập trình từng module. Giao di�
 | 2 | [03-ui-ux-style-guide.md](./03-ui-ux-style-guide.md) | Design tokens, typography, component specs (CMP), screen specs (SCR) với wireframe, motion, accessibility | Frontend, Design |
 | 3 | [02-technical-specs.md](./02-technical-specs.md) | Stack, kiến trúc thư mục, data model Firestore, rich-text format, gesture state machine, streak, security rules, lộ trình milestone | Frontend, Backend |
 | 4 | [04-content-sample.md](./04-content-sample.md) | Bài mẫu đầy đủ EN + VI, dạng JSON đúng schema, dùng làm seed & test fixture | Tất cả |
-| 5 | [05-content-pipeline.md](./05-content-pipeline.md) | Nguồn bài có giấy phép mở, khuôn IELTS Reading, câu hỏi sinh theo quy tắc, Gemini free (tùy chọn), duyệt qua GitHub, lộ trình M9–M13 | Tất cả |
+| 5 | [05-content-pipeline.md](./05-content-pipeline.md) | Phạm vi (chỉ tính năng app gốc), nguồn bài có giấy phép mở, **pipeline 10 bước** từ backlog → import → biên tập bằng form (Sveltia CMS) → kiểm tra → xuất bản, cấu hình CMS và workflow | Tất cả |
 | 6 | [06-database.md](./06-database.md) | Kiến trúc 100% miễn phí: nội dung tĩnh trong Git + Cloudflare Pages, Firestore Spark cho dữ liệu người dùng, Rules, ngân sách quota | Backend, Frontend |
-| 7 | [07-auth.md](./07-auth.md) | Khách ẩn danh + đăng nhập Google, gộp dữ liệu, cấu hình OAuth, phiên server, xoá tài khoản | Backend, Frontend |
+| 7 | [07-auth.md](./07-auth.md) | Khách ẩn danh + đăng nhập Google, gộp dữ liệu trên client, proxy `/__/auth`, xoá tài khoản | Backend, Frontend |
 
 ## Quy ước ID
 
@@ -34,7 +34,9 @@ Mỗi FR tham chiếu đến SCR/CMP liên quan; mỗi CMP liệt kê FR mà nó
 - **Tên app:** Reader.
 - **Ngôn ngữ nội dung:** song ngữ Anh / Việt, chuyển ngay trên header.
 - **Theme:** chỉ Dark mode ở MVP (giống app gốc).
-- **Miễn phí hoàn toàn:** không paywall, không giới hạn bài đọc, bình luận hay bài luyện tập. Banner "Only 128/300 left" của app gốc đã bị bỏ.
+- **Phạm vi:** chỉ clone các tính năng app gốc có; không thêm tính năng mới.
+- **Miễn phí hoàn toàn:** không paywall, không giới hạn bài đọc hay bình luận. Banner "Only 128/300 left" của app gốc đã bị bỏ.
+- **Repo public; biên tập viên sửa bài bằng form của Sveltia CMS.**
 - **Chi phí vận hành 0 đồng:** Cloudflare Pages + Firebase gói Spark + GitHub Actions; không Cloud Functions, không Claude API; AI chỉ là Gemini free tier và là tùy chọn.
 - **Nội dung:** bài có giấy phép mở (OpenStax, Wikipedia, Our World in Data, Frontiers for Young Minds, eLife, NIH…) được adapt theo khuôn IELTS Academic Reading và được biên tập viên duyệt qua GitHub.
 - **Đăng nhập:** khách ẩn danh tự động + Google.

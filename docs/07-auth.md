@@ -17,10 +17,9 @@ Không dùng đăng nhập bằng số điện thoại (SMS tốn phí) và khô
 
 | Hành động | Khách | Google |
 |-----------|:-----:|:------:|
-| Đọc bài, xem bình luận, luyện tập, tra từ, đổi ngôn ngữ | ✅ | ✅ |
-| Like, lưu bài, streak, lưu từ, lịch sử luyện tập | ✅ (chỉ trên thiết bị này) | ✅ (mọi thiết bị) |
-| Viết bình luận, đề xuất câu hỏi, gửi bài | ❌ (mở LoginSheet) | ✅ |
-| Báo lỗi/báo bình luận | ✅ | ✅ |
+| Đọc bài, xem bình luận, tìm kiếm, đổi ngôn ngữ | ✅ | ✅ |
+| Like, lưu bài, streak, tick bước Apply | ✅ (chỉ trên thiết bị này) | ✅ (mọi thiết bị) |
+| Viết bình luận, gửi bài (+) | ❌ (mở LoginSheet) | ✅ |
 | Ẩn bình luận (moderator) | ❌ | Khi có `moderators/{uid}` |
 | Duyệt và xuất bản bài | Qua GitHub (quyền merge repo), không qua app | |
 
@@ -43,14 +42,13 @@ App miễn phí, nên đăng nhập chỉ để đồng bộ dữ liệu và ch�
 
 **Trường hợp B: lỗi `auth/credential-already-in-use`** (tài khoản Google đã có dữ liệu từ thiết bị khác). Không có server, nên gộp trên client:
 
-1. **Trước khi** đổi tài khoản, đọc toàn bộ dữ liệu khách vào bộ nhớ (likes, saves, progress, readDays, words, quizAttempts, streak). Dữ liệu này nhỏ và phần lớn đã có trong cache offline.
+1. **Trước khi** đổi tài khoản, đọc toàn bộ dữ liệu khách vào bộ nhớ (likes, saves, progress, readDays, streak). Dữ liệu này nhỏ và phần lớn đã có trong cache offline.
 2. Lưu tạm bản sao vào IndexedDB (`pendingMerge`), phòng khi trang bị tải lại giữa chừng (luồng redirect).
 3. `signInWithCredential(GoogleAuthProvider.credentialFromError(err))` để vào tài khoản Google.
 4. Ghi gộp vào uid Google bằng batch (tối đa 500 thao tác mỗi batch; chia nhiều batch nếu cần):
-   - likes, saves, words: lấy hợp.
+   - likes, saves: lấy hợp.
    - progress: lấy bản `completed` hoặc `lastParagraph` lớn hơn.
    - readDays: hợp các ngày; tính lại streak từ danh sách ngày bằng `nextStreak`.
-   - quizAttempts: thêm vào.
    - counters: **không** cộng lại like trùng (chỉ tăng counter cho những like mới thật sự với tài khoản Google).
 5. Xoá `pendingMerge`. Dữ liệu và user khách cũ được job đêm dọn (06 §3.3); client không xoá được user khách sau khi đã rời phiên đó.
 6. Toast: "Signed in as {name}. Your progress has been merged."
@@ -102,11 +100,11 @@ Site là Next.js **static export**: không có SSR, middleware hay cookie phiên
 ## 6. Moderator
 
 - Danh sách moderator nằm trong `moderators/{uid}` (Firestore), do workflow GitHub Actions `set-moderator.yml` ghi bằng Admin SDK.
-- Moderator thấy menu "Hide" trên bình luận và mục "Reports" trong Profile; Rules kiểm tra `exists(moderators/{uid})`.
+- Moderator thấy menu "Hide" trên mỗi bình luận; Rules kiểm tra `exists(moderators/{uid})`.
 
 ## 7. Hồ sơ, đăng xuất, xoá tài khoản
 
-- **Profile**: avatar và tên từ Google (sửa được tên hiển thị), ngôn ngữ, band mục tiêu, chủ đề quan tâm, thống kê.
+- **Profile**: avatar và tên từ Google (sửa được tên hiển thị), ngôn ngữ, streak, bài đã lưu, bài đã gửi và trạng thái.
 - **Đăng xuất**: `signOut()`, rồi tự `signInAnonymously()` để tiếp tục đọc.
 - **Xoá tài khoản** (có màn xác nhận ngay trong app):
   1. Hỏi: bình luận của bạn xoá luôn hay giữ dưới tên "Deleted user"?
@@ -125,7 +123,7 @@ Site là Next.js **static export**: không có SSR, middleware hay cookie phiên
 ## 9. UI (CMP-23 LoginSheet)
 
 - Tiêu đề: "Save your progress" / "Lưu tiến độ của bạn".
-- Mô tả: "Sign in to sync your streak, saved articles and practice history across devices."
+- Mô tả: "Sign in to sync your streak and saved articles across devices, comment and share your own posts."
 - Nút chính: "Continue with Google" (theo hướng dẫn thương hiệu Google). Nút phụ: "Not now".
 
 | Mã / tình huống | Thông báo |

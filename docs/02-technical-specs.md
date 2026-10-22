@@ -71,7 +71,7 @@ reader/
 
 ## 3. Data model (Firestore)
 
-> Bản đầy đủ và mới nhất của data model (thêm nguồn bài, pipeline nội dung, bài luyện tập IELTS, từ vựng) nằm ở [06-database.md](./06-database.md). Mục này giữ bản tóm tắt ban đầu; khi hai nơi khác nhau, theo 06.
+> Bản đầy đủ và mới nhất của data model (nội dung tĩnh trong Git, Firestore gói Spark, bài người dùng gửi) nằm ở [06-database.md](./06-database.md). Mục này giữ bản tóm tắt ban đầu; khi hai nơi khác nhau, theo 06.
 
 ```ts
 // lib/richtext.ts

@@ -34,7 +34,9 @@ Bài viết ~400–600 từ, chia 5–7 section; mỗi section là một "trang"
 
 ## 2. Phạm vi
 
-> **Nguyên tắc: Reader miễn phí hoàn toàn.** Không có paywall, không giới hạn số bài/ngày, không khoá bình luận hay bài luyện tập sau đăng nhập trả phí. Đăng nhập chỉ cần để đồng bộ dữ liệu cá nhân và để viết bình luận.
+> **Nguyên tắc: Reader miễn phí hoàn toàn.** Không có paywall, không giới hạn số bài/ngày, không khoá bình luận sau đăng nhập trả phí. Đăng nhập chỉ cần để đồng bộ dữ liệu cá nhân, viết bình luận và gửi bài.
+>
+> **Nguyên tắc: chỉ clone tính năng app gốc có.** Không thêm tính năng mới (luyện tập IELTS, từ vựng…) ở giai đoạn này. Phạm vi chi tiết ở [05 §1](./05-content-pipeline.md#1-phạm-vi).
 
 | Hạng mục | MVP | v1.1 | Later |
 |----------|:---:|:----:|:-----:|
@@ -48,7 +50,7 @@ Bài viết ~400–600 từ, chia 5–7 section; mỗi section là một "trang"
 | Explore theo danh mục + Search từ khóa | ✅ | | |
 | Messages panel (UI + empty state) | ✅ (UI) | Chat 1-1 thật | Nhóm thảo luận |
 | Notifications (in-app list) | | ✅ | Web Push |
-| Create post (+): soạn bài cá nhân | Nút hiển thị, mở "Coming soon" | Soạn & đăng bài | Kiểm duyệt cộng đồng |
+| Create post (+): đăng bài cá nhân | Form gửi bài → biên tập viên duyệt (05 bước 10) | Trình soạn có highlight | |
 | Light mode | | | ✅ |
 | Quiz cuối bài, TTS đọc bài | | | ✅ |
 
@@ -137,7 +139,7 @@ Là người đọc, tôi muốn vuốt lên/xuống để chuyển sang bài k�
 
 **FR-18 — Explore CTA**
 - Nút "Explore now ➜" (gradient) mở Explore (SCR-04).
-- **Không có paywall.** App gốc có banner "View comments from everyone! Only 128/300 left" để giới hạn quyền dùng; Reader **bỏ hẳn** phần này. Mọi người dùng đọc không giới hạn số bài, xem toàn bộ bình luận, làm toàn bộ bài luyện tập IELTS, không có suất giới hạn hay gói trả phí.
+- **Không có paywall.** App gốc có banner "View comments from everyone! Only 128/300 left" để giới hạn quyền dùng; Reader **bỏ hẳn** phần này. Mọi người dùng đọc không giới hạn số bài, xem toàn bộ bình luận, không có suất giới hạn hay gói trả phí.
 
 ### 3.5 Auth & Profile (SCR-07, SCR-08)
 
@@ -176,7 +178,7 @@ Là người đọc, tôi muốn vuốt lên/xuống để chuyển sang bài k�
 
 **FR-24 — Bottom navigation** (CMP-14): 3 nút tròn nổi 🔍 / ➕ / 💬, luôn hiển thị trên Cover & Details, ẩn trong SCR-03 (thay bằng input bình luận).
 
-**FR-25 — Create post (+)**: MVP mở sheet "Coming soon — share your own insights" + nút "Notify me" (lưu `users/{uid}.waitlistCreate = true`). v1.1: trình soạn bài với section, highlight, nguồn.
+**FR-25 — Create post (+)**: người dùng đã đăng nhập Google mở form gồm tiêu đề, đoạn mở, các section, nguồn, link ảnh cover. Gửi → `submissions/{id}` (`pending`) → vào hàng duyệt của biên tập viên (05 bước 10). Profile hiện trạng thái bài đã gửi (`pending`, `published`, `rejected`). Khách bấm + thì mở LoginSheet.
 
 **FR-26 — Messages panel** (SCR-06): slide-in từ phải, header pill "Messages ●" + icon bạn bè; MVP hiển thị empty state "No conversations yet".
 
