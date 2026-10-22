@@ -1,0 +1,67 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reader — a TikTok-style reading app for short, sourced, bilingual articles. Free and open.",
+  "license": "MIT",
+  "packageManager": "pnpm@10.18.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "CONTENT_DEV=1 tsx scripts/build-content.ts && next dev",
+    "content": "tsx scripts/build-content.ts",
+    "build": "pnpm content && next build && tsx scripts/build-sw.ts",
+    "start": "npx serve out",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:rules": "firebase emulators:exec --only firestore --project demo-reader \"vitest run --config vitest.rules.config.ts\"",
+    "test:e2e": "playwright test",
+    "validate": "tsx scripts/pipeline/validate.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.104.5",
+    "firebase": "12.19.0",
+    "framer-motion": "12.43.0",
+    "lucide-react": "0.577.0",
+    "minisearch": "7.2.0",
+    "next": "15.5.28",
+    "react": "19.2.9",
+    "react-dom": "19.2.9",
+    "zustand": "5.0.16"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@firebase/rules-unit-testing": "5.0.2",
+    "@mozilla/readability": "0.6.0",
+    "@playwright/test": "1.56.1",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "15.5.28",
+    "fast-xml-parser": "5.11.2",
+    "firebase-admin": "13.10.0",
+    "firebase-tools": "15.34.1",
+    "jsdom": "26.1.0",
+    "prettier": "3.9.10",
+    "sharp": "0.35.5",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7",
+    "zod": "4.6.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "unrs-resolver",
+      "protobufjs",
+      "re2"
+    ]
+  }
+}

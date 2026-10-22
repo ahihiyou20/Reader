@@ -1,0 +1,10 @@
+[
+  { "id": "psychology", "name": { "en": "Psychology", "vi": "Tâm lý học" }, "emoji": "🧠", "order": 1 },
+  { "id": "science", "name": { "en": "Science", "vi": "Khoa học" }, "emoji": "🔬", "order": 2 },
+  { "id": "economics", "name": { "en": "Economics", "vi": "Kinh tế" }, "emoji": "📈", "order": 3 },
+  { "id": "society", "name": { "en": "Society", "vi": "Xã hội" }, "emoji": "🌍", "order": 4 },
+  { "id": "health", "name": { "en": "Health", "vi": "Sức khỏe" }, "emoji": "🫀", "order": 5 },
+  { "id": "productivity", "name": { "en": "Productivity", "vi": "Năng suất" }, "emoji": "⚡", "order": 6 },
+  { "id": "history", "name": { "en": "History", "vi": "Lịch sử" }, "emoji": "🏛️", "order": 7 },
+  { "id": "technology", "name": { "en": "Technology", "vi": "Công nghệ" }, "emoji": "💡", "order": 8 }
+]

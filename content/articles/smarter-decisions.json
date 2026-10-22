@@ -1,0 +1,138 @@
+{
+  "slug": "smarter-decisions",
+  "status": "published",
+  "publishAt": "2026-10-20T00:00:00.000Z",
+  "category": "psychology",
+  "tags": [
+    "decision making",
+    "cognitive bias",
+    "decision fatigue",
+    "confirmation bias",
+    "anchoring",
+    "one-way door"
+  ],
+  "title": {
+    "en": "How to make smarter decisions more easily?",
+    "vi": "Làm sao để đưa ra quyết định sáng suốt hơn một cách dễ dàng?"
+  },
+  "hook": {
+    "en": "Have you ever stood at an important crossroads, changing jobs, moving homes, or ending a relationship, and just stayed frozen there, unable to take a single step? It was not because you lacked information. It was not because you were not smart enough. It was because your brain was quietly playing its own game.",
+    "vi": "Bạn đã bao giờ đứng trước một ngã rẽ quan trọng, như đổi việc, chuyển nhà hay kết thúc một mối quan hệ, rồi cứ đứng sững ở đó, không bước nổi một bước? Không phải vì bạn thiếu thông tin. Không phải vì bạn chưa đủ thông minh. Mà vì bộ não của bạn đang lặng lẽ chơi trò chơi của riêng nó."
+  },
+  "sections": [
+    {
+      "heading_en": "The problem is not you, it is biology",
+      "heading_vi": "Vấn đề không nằm ở bạn, mà ở sinh học",
+      "body_en": "A widely repeated estimate says an adult makes around [p:35,000 decisions a day]. Nobody has counted them precisely, but even a fraction of that is a heavy load. In a well-known study of parole hearings {danziger-2011}, judges granted about [p:65% of requests] at the start of a session; the rate fell towards zero just before a break and recovered after it. Later work argued that the order of cases explains part of this pattern, but the lesson survives: a tired mind drifts towards the default option. Researchers call this drain **decision fatigue**.",
+      "body_vi": "Một ước tính được nhắc đi nhắc lại cho rằng mỗi người trưởng thành đưa ra khoảng [p:35.000 quyết định mỗi ngày]. Chưa ai đếm chính xác, nhưng chỉ một phần nhỏ con số đó cũng đã là gánh nặng. Trong một nghiên cứu nổi tiếng về các phiên xét ân xá {danziger-2011}, thẩm phán chấp thuận khoảng [p:65% số đơn] ở đầu phiên; tỷ lệ này tụt gần về 0 ngay trước giờ nghỉ rồi hồi lại sau đó. Những nghiên cứu sau cho rằng thứ tự xét hồ sơ giải thích được một phần, nhưng bài học vẫn đứng vững: bộ óc mệt mỏi sẽ trôi về phương án mặc định. Các nhà nghiên cứu gọi hiện tượng hao mòn này là **mệt mỏi quyết định** (*decision fatigue*)."
+    },
+    {
+      "heading_en": "More options, less satisfaction",
+      "heading_vi": "Càng nhiều lựa chọn, càng ít hài lòng",
+      "body_en": "Choice itself can be a burden. In a famous supermarket experiment {iyengar-2000}, shoppers who passed a table of [p:24 jams] were more likely to stop and taste, but only about 3% bought a jar, compared with about 30% of those who saw just six. Later reviews found that this **choice overload** effect varies a great deal from one situation to another {scheibehenne-2010}. Still, it captures a familiar feeling: when every option looks similar, picking one feels like losing all the others.",
+      "body_vi": "Bản thân việc lựa chọn cũng có thể là gánh nặng. Trong một thí nghiệm nổi tiếng ở siêu thị {iyengar-2000}, người mua đi qua quầy bày [p:24 loại mứt] dễ dừng lại nếm thử hơn, nhưng chỉ khoảng 3% mua một hũ, so với khoảng 30% ở nhóm chỉ thấy sáu loại. Các tổng quan sau này cho thấy hiệu ứng **quá tải lựa chọn** (*choice overload*) thay đổi rất nhiều tùy hoàn cảnh {scheibehenne-2010}. Dù vậy, nó mô tả đúng một cảm giác quen thuộc: khi mọi phương án trông na ná nhau, chọn một cái giống như đánh mất tất cả những cái còn lại."
+    },
+    {
+      "heading_en": "Two systems in one head",
+      "heading_vi": "Hai hệ thống trong một bộ não",
+      "body_en": "Nobel Prize-winning psychologist **Daniel Kahneman**, in *Thinking, Fast and Slow* [y:(2011)] {kahneman-2011}, describes two modes of thinking. **System 1** is fast, automatic and intuitive; **System 2** is slow, deliberate and analytical. Kahneman describes System 2 as lazy: it checks System 1's answers only when something feels obviously wrong. He argues that [p:most of our everyday judgments] come from System 1. That is not a flaw: it lets us cross a busy street or read a face in a fraction of a second. But the mental shortcuts it relies on also leave us open to **cognitive biases**.",
+      "body_vi": "Nhà tâm lý học đoạt giải Nobel **Daniel Kahneman**, trong cuốn *Tư duy nhanh và chậm* [y:(2011)] {kahneman-2011}, mô tả hai chế độ tư duy. **Hệ thống 1** nhanh, tự động và theo trực giác; **Hệ thống 2** chậm, có chủ đích và mang tính phân tích. Kahneman mô tả Hệ thống 2 là kẻ lười: nó chỉ kiểm tra câu trả lời của Hệ thống 1 khi có điều gì đó rõ ràng không ổn. Ông cho rằng [p:phần lớn phán đoán hằng ngày] của chúng ta đến từ Hệ thống 1. Đó không phải khuyết điểm: nhờ nó, ta băng qua con phố đông xe hay đọc được nét mặt người khác trong tích tắc. Nhưng những lối tắt tư duy mà nó dựa vào cũng khiến ta dễ mắc **thiên kiến nhận thức** (*cognitive biases*)."
+    },
+    {
+      "body_en": "Two of the best documented are **confirmation bias** and **anchoring**. A classic review {nickerson-1998} describes confirmation bias as the habit of [p:seeking evidence that supports what we already believe] while discounting the rest. Anchoring was shown by **Amos Tversky** and Kahneman {tversky-1974}: people who first saw a random number on a wheel of fortune let it [p:pull their estimates] towards that number, even though they knew it meant nothing. Look back at a poor decision and you will often find one of the two at work.",
+      "body_vi": "Hai thiên kiến được ghi nhận rõ nhất là **thiên kiến xác nhận** (*confirmation bias*) và **hiệu ứng mỏ neo** (*anchoring*). Một bài tổng quan kinh điển {nickerson-1998} mô tả thiên kiến xác nhận là thói quen [p:tìm bằng chứng ủng hộ điều mình đã tin] và xem nhẹ phần còn lại. Hiệu ứng mỏ neo được **Amos Tversky** và Kahneman chứng minh {tversky-1974}: những người vừa thấy một con số ngẫu nhiên trên vòng quay may mắn để nó [p:kéo ước đoán của họ] về gần con số ấy, dù biết rõ nó chẳng có ý nghĩa gì. Nhìn lại một quyết định tồi, bạn thường sẽ thấy một trong hai thiên kiến này."
+    },
+    {
+      "heading_en": "Not every decision deserves the same effort",
+      "heading_vi": "Không phải quyết định nào cũng đáng nghĩ như nhau",
+      "body_en": "In his 2015 letter to shareholders {amazon-2015}, [y:Jeff Bezos] split decisions into two types. **One-way doors** are consequential and hard to reverse, so they deserve slow, careful thought. **Two-way doors** can be undone: if the choice turns out badly, you simply walk back through. Bezos warned that most decisions are [g:the second type], yet organisations tend to treat them all like the first, which makes them slow. People do the same, and the result is **analysis paralysis**: hours spent on choices that could be reversed in minutes.",
+      "body_vi": "Trong lá thư gửi cổ đông năm 2015 {amazon-2015}, [y:Jeff Bezos] chia quyết định thành hai loại. **Cửa một chiều** có hệ quả lớn và khó đảo ngược, nên cần suy nghĩ chậm và kỹ. **Cửa hai chiều** thì làm lại được: nếu lựa chọn không ổn, bạn chỉ việc bước ngược trở ra. Bezos cảnh báo rằng phần lớn quyết định thuộc [g:loại thứ hai], vậy mà các tổ chức thường đối xử với tất cả như loại thứ nhất, khiến mọi thứ chậm lại. Mỗi người chúng ta cũng vậy, và kết quả là **tê liệt vì phân tích** (*analysis paralysis*): hàng giờ dành cho những lựa chọn có thể đảo ngược trong vài phút."
+    },
+    {
+      "heading_en": "A good decision can still have a bad outcome",
+      "heading_vi": "Quyết định tốt vẫn có thể cho kết quả xấu",
+      "body_en": "Former professional poker player **Annie Duke**, author of *Thinking in Bets* [y:(2018)] {duke-2018}, calls one common mistake [p:\"resulting\"]: judging the quality of a decision by how it turned out. A careful choice made with the best information available can still end badly because of luck, and a reckless one can end well. A useful test is to ask: knowing only what I knew then, would I make the same choice again? The aim is not a perfect decision but **the decision with the best odds** given what you know, followed by an honest look at what was skill and what was chance.",
+      "body_vi": "Cựu tay chơi poker chuyên nghiệp **Annie Duke**, tác giả cuốn *Thinking in Bets* [y:(2018)] {duke-2018}, gọi một sai lầm phổ biến là [p:\"resulting\"]: đánh giá chất lượng quyết định dựa vào kết quả của nó. Một lựa chọn cẩn trọng với thông tin tốt nhất vẫn có thể kết thúc tệ vì may rủi, còn một lựa chọn liều lĩnh vẫn có thể suôn sẻ. Một phép thử hữu ích là tự hỏi: nếu chỉ biết những gì mình biết lúc đó, mình có chọn lại như vậy không? Mục tiêu không phải là quyết định hoàn hảo, mà là **quyết định có xác suất tốt nhất** với những gì bạn biết, sau đó thành thật nhìn lại đâu là kỹ năng, đâu là may mắn."
+    },
+    {
+      "heading_en": "Small habits, sharper choices",
+      "heading_vi": "Thói quen nhỏ, lựa chọn sắc bén",
+      "body_en": "None of this requires a new personality. Save your hardest choices for a time when you are rested, rather than the end of a long day. Cut trivial decisions with routines, such as a fixed breakfast or a default reply to common requests. Before committing to a view, write down one piece of evidence that [g:could prove you wrong]. And when a choice feels overwhelming, ask whether it is really a one-way door. Some people even set a limit: two minutes for a two-way door, a night's sleep for a one-way door. Most of the time, the honest answer frees you to [g:decide and move on].",
+      "body_vi": "Bạn không cần thay đổi tính cách để làm được những điều này. Hãy dành những lựa chọn khó nhất cho lúc đầu óc còn tỉnh táo, thay vì cuối một ngày dài. Cắt bớt quyết định vụn vặt bằng thói quen cố định, như bữa sáng quen thuộc hay câu trả lời mặc định cho những đề nghị thường gặp. Trước khi chốt một quan điểm, hãy viết ra một bằng chứng [g:có thể chứng minh bạn sai]. Và khi một lựa chọn khiến bạn choáng ngợp, hãy tự hỏi nó có thật là cửa một chiều không. Có người còn tự đặt giới hạn: hai phút cho cửa hai chiều, một đêm ngủ cho cửa một chiều. Phần lớn thời gian, câu trả lời thành thật sẽ giúp bạn [g:quyết rồi bước tiếp]."
+    }
+  ],
+  "keyPoint": {
+    "en": "Making smarter decisions is like [p:learning to drive]. At first, you have to think through every single move. Over time, it becomes a reflex. Start with something small today: with your next decision, ask yourself, *is this a one-way door or a two-way door?*",
+    "vi": "Ra quyết định sáng suốt giống như [p:học lái xe]. Lúc đầu, bạn phải nghĩ kỹ từng thao tác. Dần dần, nó trở thành phản xạ. Hãy bắt đầu từ việc nhỏ ngay hôm nay: với quyết định tiếp theo, tự hỏi *đây là cửa một chiều hay cửa hai chiều?*"
+  },
+  "applySteps": {
+    "en": [
+      "Before your next decision, label it: one-way door or two-way door. If it is two-way, decide within two minutes.",
+      "Write down one piece of evidence that could prove your current opinion wrong.",
+      "Move tomorrow's most important decision to a time when you are rested, before small choices pile up."
+    ],
+    "vi": [
+      "Trước quyết định tiếp theo, hãy gắn nhãn: cửa một chiều hay cửa hai chiều. Nếu là hai chiều, quyết trong vòng hai phút.",
+      "Viết ra một bằng chứng có thể chứng minh ý kiến hiện tại của bạn là sai.",
+      "Dời quyết định quan trọng nhất ngày mai sang lúc bạn tỉnh táo, trước khi các lựa chọn vụn vặt dồn lại."
+    ]
+  },
+  "references": [
+    {
+      "id": "danziger-2011",
+      "label": "PNAS (2011)",
+      "url": "https://doi.org/10.1073/pnas.1018033108"
+    },
+    {
+      "id": "iyengar-2000",
+      "label": "JPSP (2000)",
+      "url": "https://doi.org/10.1037/0022-3514.79.6.995"
+    },
+    {
+      "id": "scheibehenne-2010",
+      "label": "J. Consumer Research (2010)",
+      "url": "https://doi.org/10.1086/651235"
+    },
+    {
+      "id": "kahneman-2011",
+      "label": "Kahneman (2011)",
+      "url": "https://us.macmillan.com/books/9780374533557/thinkingfastandslow"
+    },
+    {
+      "id": "nickerson-1998",
+      "label": "Rev. Gen. Psychology (1998)",
+      "url": "https://doi.org/10.1037/1089-2680.2.2.175"
+    },
+    {
+      "id": "tversky-1974",
+      "label": "Science (1974)",
+      "url": "https://doi.org/10.1126/science.185.4157.1124"
+    },
+    {
+      "id": "amazon-2015",
+      "label": "Amazon (2015)",
+      "url": "https://ir.aboutamazon.com/annual-reports-proxies-and-shareholder-letters/default.aspx"
+    },
+    {
+      "id": "duke-2018",
+      "label": "Duke (2018)",
+      "url": "https://www.penguinrandomhouse.com/books/552885/thinking-in-bets-by-annie-duke/"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/smarter-decisions.webp",
+    "provider": "unsplash",
+    "author": "TBD",
+    "license": "Unsplash License"
+  },
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Reader editors"
+    ],
+    "changes": []
+  },
+  "seed": true
+}
