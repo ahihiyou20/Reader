@@ -1,0 +1,132 @@
+{
+  "slug": "multitasking-myth",
+  "status": "published",
+  "publishAt": "2026-09-29T00:00:00.000Z",
+  "category": "productivity",
+  "tags": [
+    "multitasking",
+    "attention",
+    "focus",
+    "smartphones",
+    "productivity"
+  ],
+  "title": {
+    "en": "The multitasking myth: why switching costs more than you think",
+    "vi": "Huyền thoại đa nhiệm: vì sao chuyển việc tốn kém hơn bạn tưởng"
+  },
+  "hook": {
+    "en": "Answering emails during a meeting, texting while walking, keeping a video on while studying: many of us feel that doing several things at once saves time. Decades of research suggest that, for tasks that need real attention, the brain does not truly multitask. It [p:switches back and forth], and every switch has a price that we rarely notice.",
+    "vi": "Trả lời email trong lúc họp, nhắn tin khi đi bộ, mở video trong lúc học: nhiều người trong chúng ta cảm thấy làm nhiều việc cùng lúc giúp tiết kiệm thời gian. Nhiều thập kỷ nghiên cứu cho thấy, với những việc cần sự chú ý thật sự, bộ não không thực sự đa nhiệm. Nó [p:chuyển qua chuyển lại], và mỗi lần chuyển đều có một cái giá mà ta hiếm khi nhận ra."
+  },
+  "sections": [
+    {
+      "heading_en": "One spotlight, many tasks",
+      "heading_vi": "Một ngọn đèn, nhiều việc",
+      "body_en": "We can walk and talk at the same time, because walking is so practised that it needs almost no attention. But when two tasks both need careful thought, such as writing an email and following a conversation, the brain handles them one at a time. Attention works less like a floodlight and more like [y:a single spotlight] that has to be moved. What feels like multitasking is usually rapid **task switching**. Each switch is fast, so it feels free. But studies that time people carefully find that the costs add up, especially when the tasks are complex or unfamiliar.",
+      "body_vi": "Chúng ta có thể vừa đi vừa nói chuyện, vì việc đi bộ đã thuần thục đến mức gần như không cần chú ý. Nhưng khi cả hai việc đều đòi hỏi suy nghĩ cẩn thận, như viết email và theo dõi một cuộc trò chuyện, bộ não xử lý từng việc một. Sự chú ý ít giống đèn pha chiếu rộng mà giống [y:một ngọn đèn rọi duy nhất] phải di chuyển qua lại. Thứ ta cảm nhận là đa nhiệm thường là **chuyển đổi nhiệm vụ** liên tục. Mỗi lần chuyển diễn ra nhanh, nên có cảm giác như không tốn gì. Nhưng những nghiên cứu đo thời gian cẩn thận cho thấy chi phí cộng dồn lại, nhất là khi nhiệm vụ phức tạp hoặc lạ lẫm."
+    },
+    {
+      "heading_en": "The hidden switching cost",
+      "heading_vi": "Chi phí chuyển đổi bị che giấu",
+      "body_en": "In laboratory experiments, Joshua Rubinstein, David Meyer and Jeffrey Evans asked people to switch between different kinds of tasks, such as solving maths problems and sorting shapes. Every switch slowed people down, and the [p:time lost grew] when the tasks were more complex or less familiar {rubinstein-2001}. The researchers suggest that the brain has to do two things each time: change its goal, then load the rules for the new task. Each switch may cost only a fraction of a second, but across a day of constant switching between messages, documents and tabs, those fractions can add up to a lot of lost focus.",
+      "body_vi": "Trong các thí nghiệm, Joshua Rubinstein, David Meyer và Jeffrey Evans yêu cầu người tham gia chuyển qua lại giữa các loại nhiệm vụ khác nhau, như giải toán và phân loại hình khối. Mỗi lần chuyển đều làm họ chậm lại, và [p:thời gian bị mất tăng lên] khi nhiệm vụ phức tạp hơn hoặc ít quen thuộc hơn {rubinstein-2001}. Các nhà nghiên cứu cho rằng mỗi lần như vậy bộ não phải làm hai việc: đổi mục tiêu, rồi nạp các quy tắc cho nhiệm vụ mới. Mỗi lần chuyển có thể chỉ tốn một phần nhỏ của giây, nhưng qua cả một ngày liên tục chuyển giữa tin nhắn, tài liệu và các tab, những phần nhỏ ấy có thể cộng lại thành rất nhiều sự tập trung bị mất."
+    },
+    {
+      "heading_en": "Thoughts that stay behind",
+      "heading_vi": "Những suy nghĩ ở lại phía sau",
+      "body_en": "Switching costs more than time. Management researcher Sophie Leroy found that when people leave one task unfinished to start another, part of their mind [y:stays with the first task]. She called this **attention residue** {leroy-2009}. In her studies, people who still had thoughts about a previous task performed worse on the next one. The effect was strongest when the first task was left incomplete. That is why a 'quick look' at a message in the middle of deep work can disturb you for much longer than the few seconds it takes to read it.",
+      "body_vi": "Chuyển việc không chỉ tốn thời gian. Nhà nghiên cứu quản trị Sophie Leroy phát hiện rằng khi bỏ dở một việc để bắt đầu việc khác, một phần tâm trí ta [y:vẫn ở lại với việc đầu tiên]. Bà gọi đây là **phần dư chú ý** (*attention residue*) {leroy-2009}. Trong các nghiên cứu của bà, những người vẫn còn suy nghĩ về nhiệm vụ trước làm nhiệm vụ tiếp theo kém hơn. Hiệu ứng mạnh nhất khi nhiệm vụ đầu tiên còn dang dở. Đó là lý do 'liếc nhanh' một tin nhắn giữa lúc đang làm việc sâu có thể khiến bạn xao nhãng lâu hơn nhiều so với vài giây cần để đọc nó."
+    },
+    {
+      "heading_en": "Faster, but more stressed",
+      "heading_vi": "Nhanh hơn, nhưng căng thẳng hơn",
+      "body_en": "Do interruptions make us slower? Not always. In a study by Gloria Mark and colleagues, people who were interrupted while writing emails actually [g:finished in less time] than people who were not {mark-2008}. But there was a catch. To make up for the interruptions, they worked faster and harder, and they reported more stress, frustration, time pressure and effort. In other words, constant interruptions may not always show up in how much we get done, but they show up in how we feel. Over weeks and months, that extra strain matters for wellbeing.",
+      "body_vi": "Bị ngắt quãng có khiến ta chậm hơn không? Không phải lúc nào cũng vậy. Trong một nghiên cứu của Gloria Mark và cộng sự, những người bị ngắt quãng khi đang viết email lại [g:hoàn thành nhanh hơn] những người không bị làm phiền {mark-2008}. Nhưng có một điều kiện. Để bù cho những lần bị ngắt, họ làm nhanh hơn và gắng sức hơn, đồng thời cho biết căng thẳng, bực bội, áp lực thời gian và mức nỗ lực đều cao hơn. Nói cách khác, sự ngắt quãng liên tục có thể không luôn hiện ra trong khối lượng công việc, nhưng nó hiện ra trong cảm xúc của ta. Qua nhiều tuần, nhiều tháng, áp lực tăng thêm ấy ảnh hưởng tới sức khoẻ tinh thần."
+    },
+    {
+      "heading_en": "Heavy multitaskers are not better at it",
+      "heading_vi": "Người đa nhiệm nhiều không hề giỏi hơn",
+      "body_en": "Surely people who multitask a lot become good at it? A Stanford study compared heavy and light 'media multitaskers', people who often use several media at once, such as messaging while watching videos. Surprisingly, heavy multitaskers did [p:worse] on tests of switching between tasks {ophir-2009}. They were also more easily distracted by irrelevant information. The researchers suggested that heavy multitaskers may be more drawn to everything around them, rather than focusing on what matters for the task. The study shows a link, not proof of cause, but it challenges the idea that practice makes perfect here.",
+      "body_vi": "Chắc hẳn người hay đa nhiệm sẽ trở nên giỏi việc đó? Một nghiên cứu ở Đại học Stanford so sánh những người 'đa nhiệm truyền thông' nhiều và ít, tức những người thường dùng nhiều phương tiện cùng lúc, như nhắn tin trong khi xem video. Thật bất ngờ, nhóm đa nhiệm nhiều lại làm [p:kém hơn] trong các bài kiểm tra chuyển đổi nhiệm vụ {ophir-2009}. Họ cũng dễ bị phân tâm bởi thông tin không liên quan hơn. Các nhà nghiên cứu cho rằng người đa nhiệm nhiều có thể bị mọi thứ xung quanh thu hút, thay vì tập trung vào điều quan trọng với nhiệm vụ. Nghiên cứu chỉ cho thấy mối liên hệ chứ chưa chứng minh nhân quả, nhưng nó thách thức quan niệm 'luyện nhiều sẽ giỏi' trong trường hợp này."
+    },
+    {
+      "heading_en": "When the cost is safety",
+      "heading_vi": "Khi cái giá là sự an toàn",
+      "body_en": "Sometimes switching costs are not just about productivity. In a driving simulator study, people who talked on a mobile phone [p:missed more traffic signals] and reacted more slowly to the ones they did notice {strayer-2001}. Importantly, this was true for both hand-held and hands-free phones, which suggests the problem is not the hands but the attention the conversation demands. Listening to the radio or an audiobook did not cause the same problems. A phone conversation pulls on the same limited attention that safe driving needs, and the road does not wait for us to switch back.",
+      "body_vi": "Đôi khi chi phí chuyển đổi không chỉ là chuyện năng suất. Trong một nghiên cứu dùng mô phỏng lái xe, những người nói chuyện điện thoại [p:bỏ lỡ nhiều tín hiệu giao thông hơn] và phản ứng chậm hơn với những tín hiệu họ nhận ra {strayer-2001}. Điều quan trọng là kết quả đúng cho cả điện thoại cầm tay lẫn tai nghe rảnh tay, cho thấy vấn đề không nằm ở đôi tay mà ở sự chú ý mà cuộc trò chuyện đòi hỏi. Nghe radio hay sách nói không gây ra vấn đề tương tự. Một cuộc gọi điện thoại kéo cùng nguồn chú ý hữu hạn mà việc lái xe an toàn cần đến, và con đường không chờ ta chuyển sự chú ý trở lại."
+    },
+    {
+      "heading_en": "Protecting your focus",
+      "heading_vi": "Bảo vệ sự tập trung",
+      "body_en": "You do not need to cut yourself off from the world to work better. Try **batching**: check messages at set times instead of whenever they arrive. Work on one important task in a focused block, such as 25 to 50 minutes, with notifications off. Before switching, write a quick note about where you stopped, which may help your mind let go of the unfinished task. Some studies also suggest that simply having your phone [y:in another room] can make it easier to concentrate {ward-2017}, though later research has found mixed results. The aim is not perfection, but fewer unnecessary switches.",
+      "body_vi": "Bạn không cần tách mình khỏi thế giới để làm việc tốt hơn. Hãy thử **gom việc**: xem tin nhắn vào những giờ cố định thay vì mỗi khi có tin đến. Làm một việc quan trọng trong một khối thời gian tập trung, chẳng hạn 25 đến 50 phút, với thông báo đã tắt. Trước khi chuyển việc, hãy ghi nhanh chỗ mình đang dừng, điều có thể giúp tâm trí buông việc dang dở. Một số nghiên cứu cũng gợi ý rằng chỉ cần để điện thoại [y:ở phòng khác] là đã dễ tập trung hơn {ward-2017}, dù các nghiên cứu sau đó cho kết quả không thống nhất. Mục tiêu không phải hoàn hảo, mà là bớt đi những lần chuyển việc không cần thiết."
+    }
+  ],
+  "keyPoint": {
+    "en": "Your attention is like [p:a single pair of hands]: you can juggle, but every catch takes effort and some balls drop. For work that matters, give it *one block of time with one task*, and let messages wait for their own turn.",
+    "vi": "Sự chú ý của bạn giống như [p:chỉ có một đôi tay]: bạn có thể tung hứng, nhưng mỗi lần bắt đều tốn sức và sẽ có quả rơi. Với những việc quan trọng, hãy dành cho nó *một khối thời gian với đúng một việc*, và để tin nhắn chờ đến lượt của chúng."
+  },
+  "applySteps": {
+    "en": [
+      "Turn off non-essential notifications for one focused 30-minute block today.",
+      "Choose two or three fixed times to check messages tomorrow and stick to them.",
+      "Before you switch tasks, write one line about where you stopped and what comes next."
+    ],
+    "vi": [
+      "Tắt các thông báo không cần thiết trong một khối tập trung 30 phút hôm nay.",
+      "Chọn hai hoặc ba khung giờ cố định để xem tin nhắn vào ngày mai và giữ đúng lịch đó.",
+      "Trước khi chuyển việc, viết một dòng về chỗ bạn đang dừng và bước tiếp theo là gì."
+    ]
+  },
+  "references": [
+    {
+      "id": "rubinstein-2001",
+      "label": "Rubinstein, Meyer & Evans (2001)",
+      "url": "https://doi.org/10.1037/0096-1523.27.4.763"
+    },
+    {
+      "id": "leroy-2009",
+      "label": "Leroy (2009)",
+      "url": "https://doi.org/10.1016/j.obhdp.2009.04.002"
+    },
+    {
+      "id": "mark-2008",
+      "label": "Mark, Gudith & Klocke (2008)",
+      "url": "https://doi.org/10.1145/1357054.1357072"
+    },
+    {
+      "id": "ophir-2009",
+      "label": "Ophir, Nass & Wagner (2009)",
+      "url": "https://doi.org/10.1073/pnas.0903620106"
+    },
+    {
+      "id": "strayer-2001",
+      "label": "Strayer & Johnston (2001)",
+      "url": "https://doi.org/10.1111/1467-9280.00386"
+    },
+    {
+      "id": "ward-2017",
+      "label": "Ward et al. (2017)",
+      "url": "https://doi.org/10.1086/691462"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/multitasking-myth.webp",
+    "provider": "unsplash",
+    "author": "Jonathan Velasquez",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/4mta-DkJUAg"
+  },
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Reader editors"
+    ],
+    "changes": []
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoQABwAPu1kq04ppaQiMAgBMB2JZQCdBGmYO7YpqrX2pZo/RCS2HAD+xgErlBgtRlxQCu+v1nsXQempjbXvEHGXUrjR1NUXN9MwoTrxUz/yuhRax+1l0tNXSXShdcWMLGL9wGbTk02uEtTQE4Z43u+YprZH2J4SvAA=",
+  "dominant": "#6b615c"
+}
