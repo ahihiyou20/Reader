@@ -1,0 +1,129 @@
+{
+  "slug": "exoplanets",
+  "status": "published",
+  "publishAt": "2026-10-11T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "exoplanets",
+    "astronomy",
+    "space",
+    "NASA",
+    "telescopes"
+  ],
+  "title": {
+    "en": "More planets than stars: how we find worlds beyond the Sun",
+    "vi": "Nhiều hành tinh hơn cả sao: cách ta tìm thế giới ngoài Hệ Mặt Trời"
+  },
+  "hook": {
+    "en": "For most of history, the only planets anyone knew circled our own Sun. Today astronomers have confirmed thousands more, and NASA's Kepler telescope showed that our galaxy holds [p:more planets than stars]. These worlds are too far and too faint to photograph easily, so how do scientists find them, and how do they choose their strange names?",
+    "vi": "Trong phần lớn lịch sử, những hành tinh duy nhất con người biết đều quay quanh Mặt Trời của chúng ta. Ngày nay, các nhà thiên văn đã xác nhận thêm hàng nghìn hành tinh khác, và kính viễn vọng Kepler của NASA cho thấy thiên hà của chúng ta có [p:nhiều hành tinh hơn cả số sao]. Những thế giới ấy quá xa và quá mờ để dễ dàng chụp ảnh, vậy các nhà khoa học tìm ra chúng bằng cách nào, và đặt cho chúng những cái tên kỳ lạ ra sao?"
+  },
+  "sections": [
+    {
+      "heading_en": "Worlds around other stars",
+      "heading_vi": "Những thế giới quanh các ngôi sao khác",
+      "body_en": "An **exoplanet** is a planet outside our solar system, usually orbiting another star in our galaxy. Most of those discovered so far lie in a relatively small part of the Milky Way, within thousands of light-years of us, because that is as far as current telescopes can probe. A light-year, the distance light travels in a year, is about [y:9.46 trillion kilometres] {nasa-exo}. Even the closest known exoplanet, **Proxima Centauri b**, is about four light-years away. At that distance, a planet is a tiny, dark speck next to a star that is billions of times brighter.",
+      "body_vi": "**Ngoại hành tinh** (*exoplanet*) là hành tinh nằm ngoài Hệ Mặt Trời, thường quay quanh một ngôi sao khác trong thiên hà của chúng ta. Phần lớn những hành tinh được phát hiện tới nay nằm trong một vùng khá nhỏ của Ngân Hà, trong phạm vi vài nghìn năm ánh sáng quanh ta, vì đó là giới hạn mà kính viễn vọng hiện nay có thể quan sát. Một năm ánh sáng, quãng đường ánh sáng đi trong một năm, dài khoảng [y:9,46 nghìn tỷ km] {nasa-exo}. Ngay cả ngoại hành tinh gần nhất được biết, **Proxima Centauri b**, cũng cách ta khoảng bốn năm ánh sáng. Ở khoảng cách ấy, một hành tinh chỉ là đốm tối tí hon bên cạnh một ngôi sao sáng hơn nó hàng tỷ lần."
+    },
+    {
+      "heading_en": "Watching a star dim",
+      "heading_vi": "Theo dõi một ngôi sao mờ đi",
+      "body_en": "Scientists commonly use five methods to find exoplanets, but two do most of the work. The first is the **transit method**. When a planet passes directly between us and its star, it blocks a little of the starlight, and for a short time the star [y:looks slightly dimmer]. The change is tiny, but repeated at regular intervals it reveals a planet in orbit. The time between dips tells astronomers how long the planet's year is, and the size of the dip hints at how big the planet is compared with its star.",
+      "body_vi": "Các nhà khoa học thường dùng năm phương pháp để tìm ngoại hành tinh, nhưng hai phương pháp đảm nhận phần lớn công việc. Thứ nhất là **phương pháp quá cảnh** (*transit*). Khi một hành tinh đi ngang qua giữa ta và ngôi sao của nó, nó che bớt một chút ánh sáng, và trong chốc lát ngôi sao [y:trông mờ đi một chút]. Thay đổi này rất nhỏ, nhưng khi lặp lại đều đặn, nó tiết lộ một hành tinh đang quay quanh. Khoảng thời gian giữa các lần mờ cho biết một năm của hành tinh dài bao lâu, còn mức độ mờ gợi ý hành tinh lớn cỡ nào so với ngôi sao."
+    },
+    {
+      "heading_en": "Watching a star wobble",
+      "heading_vi": "Theo dõi một ngôi sao chao đảo",
+      "body_en": "The second main technique is the **radial velocity method**. A planet does not simply circle its star; both pull on each other, so the star makes a small wobble in space. When the star moves towards us, its light is shifted slightly [g:towards blue]; when it moves away, the light shifts towards red. By measuring these tiny colour shifts in a star's spectrum, astronomers can detect planets they cannot see. In 1995, this method revealed the first planet found orbiting a Sun-like star, 51 Pegasi b {mayor-1995}, a discovery later honoured with a Nobel Prize.",
+      "body_vi": "Kỹ thuật chính thứ hai là **phương pháp vận tốc xuyên tâm** (*radial velocity*). Hành tinh không chỉ đơn giản quay quanh ngôi sao; cả hai hút lẫn nhau, nên ngôi sao chao đảo nhẹ trong không gian. Khi ngôi sao tiến về phía ta, ánh sáng của nó lệch nhẹ [g:về phía xanh lam]; khi lùi xa, ánh sáng lệch về phía đỏ. Bằng cách đo những thay đổi màu sắc nhỏ xíu này trong quang phổ của sao, các nhà thiên văn phát hiện được những hành tinh mà họ không nhìn thấy. Năm 1995, phương pháp này đã tìm ra hành tinh đầu tiên quay quanh một ngôi sao giống Mặt Trời, 51 Pegasi b {mayor-1995}, một khám phá về sau được vinh danh bằng giải Nobel."
+    },
+    {
+      "heading_en": "Telescopes built to hunt",
+      "heading_vi": "Những kính viễn vọng chuyên săn tìm",
+      "body_en": "The first hint of an exoplanet dates back to 1917, though no one understood it until 2014, and the first confirmed detections came only in the 1990s. Then discoveries grew rapidly with NASA's **Kepler Space Telescope**, designed to find Earth-sized planets in the *habitable zone*, the region around a star where water could stay liquid: not too hot, not too cold. Kepler was retired in 2018, but its data have revealed [p:more than 2,700 confirmed planets]. Its successor, **TESS**, launched in 2018 to search the brightest nearby dwarf stars, and the James Webb Space Telescope now reads starlight that has passed through planets' atmospheres.",
+      "body_vi": "Dấu hiệu đầu tiên của một ngoại hành tinh có từ năm 1917, dù mãi đến năm 2014 người ta mới hiểu ý nghĩa của nó, và những phát hiện được xác nhận đầu tiên chỉ đến vào thập niên 1990. Sau đó, số khám phá tăng vọt nhờ **kính viễn vọng không gian Kepler** của NASA, được thiết kế để tìm hành tinh cỡ Trái Đất trong *vùng có thể sống được*, khu vực quanh ngôi sao nơi nước có thể tồn tại ở dạng lỏng: không quá nóng, không quá lạnh. Kepler nghỉ hưu năm 2018, nhưng dữ liệu của nó đã giúp xác nhận [p:hơn 2.700 hành tinh]. Người kế nhiệm, **TESS**, được phóng năm 2018 để khảo sát những sao lùn sáng nhất ở gần, còn kính viễn vọng không gian James Webb hiện đọc được ánh sáng sao đã đi qua bầu khí quyển của các hành tinh."
+    },
+    {
+      "heading_en": "Seven worlds around one star",
+      "heading_vi": "Bảy thế giới quanh một ngôi sao",
+      "body_en": "One of the most exciting finds is **TRAPPIST-1**, a small, cool star about 40 light-years away. Using NASA's Spitzer Space Telescope and telescopes on the ground, astronomers found that it hosts [g:seven rocky, Earth-sized planets] {gillon-2017}. Several of them orbit in or near the habitable zone, which makes the system one of the best places to study whether rocky worlds around other stars could have water on their surfaces. Spitzer was not even designed to search for exoplanets, but its infrared instruments made it an excellent planet explorer, a reminder that great discoveries sometimes come from unexpected tools.",
+      "body_vi": "Một trong những phát hiện thú vị nhất là **TRAPPIST-1**, một ngôi sao nhỏ và lạnh cách ta khoảng 40 năm ánh sáng. Nhờ kính viễn vọng không gian Spitzer của NASA cùng các kính viễn vọng trên mặt đất, các nhà thiên văn phát hiện nó có [g:bảy hành tinh đá cỡ Trái Đất] {gillon-2017}. Một số hành tinh quay trong hoặc gần vùng có thể sống được, khiến hệ này trở thành một trong những nơi tốt nhất để tìm hiểu liệu các thế giới đá quanh những ngôi sao khác có thể có nước trên bề mặt hay không. Spitzer thậm chí không được thiết kế để tìm ngoại hành tinh, nhưng các thiết bị hồng ngoại của nó đã biến nó thành một nhà thám hiểm hành tinh xuất sắc, lời nhắc rằng những khám phá lớn đôi khi đến từ công cụ không ngờ tới."
+    },
+    {
+      "heading_en": "Candidates, and a job for amateurs",
+      "heading_vi": "Ứng viên, và việc cho người nghiệp dư",
+      "body_en": "Not every signal is a planet. An **exoplanet candidate** is a likely planet spotted by a telescope but not yet proven to exist, and some turn out to be *false positives*. A planet counts as confirmed once it is verified by further observations with two other telescopes. Thousands of candidates are waiting, but telescope time is precious and sorting targets takes a lot of computing. This is where [g:amateur scientists] can help. Working with NASA data, volunteers can spot small dips in brightness that computers might miss, and some have even discovered new planets themselves.",
+      "body_vi": "Không phải tín hiệu nào cũng là hành tinh. **Ứng viên ngoại hành tinh** là hành tinh có khả năng tồn tại do kính viễn vọng phát hiện nhưng chưa được chứng minh, và một số hoá ra là *dương tính giả*. Một hành tinh được coi là đã xác nhận khi được kiểm chứng bằng các quan sát bổ sung từ hai kính viễn vọng khác. Hàng nghìn ứng viên đang chờ, nhưng thời gian dùng kính viễn vọng rất quý và việc chọn mục tiêu tốn nhiều sức máy tính. Đây là lúc [g:các nhà khoa học nghiệp dư] có thể giúp sức. Làm việc với dữ liệu của NASA, các tình nguyện viên có thể nhận ra những lần sụt sáng nhỏ mà máy tính bỏ lỡ, và một số người thậm chí đã tự mình phát hiện hành tinh mới."
+    },
+    {
+      "heading_en": "Earth would be 'Sun d'",
+      "heading_vi": "Trái Đất sẽ tên là 'Sun d'",
+      "body_en": "Exoplanet names look complicated, but they follow a logic. Take **Kepler-16 b**. The first part is usually the telescope or survey that found the system, here Kepler. The number is the order in which the star was catalogued. The lowercase letter stands for the planet, in the order it was found, starting with *b*, since the star itself counts as the unspoken 'A'. If several planets are found at once, the closest to the star gets *b*. Stars get capital letters and planets get lowercase ones. So if aliens catalogued our solar system, with Mercury as *b*, Earth would be [y:Sun d].",
+      "body_vi": "Tên các ngoại hành tinh trông có vẻ phức tạp, nhưng chúng tuân theo một logic. Lấy ví dụ **Kepler-16 b**. Phần đầu thường là tên kính viễn vọng hoặc chương trình khảo sát đã tìm ra hệ, ở đây là Kepler. Con số là thứ tự ngôi sao được đưa vào danh mục. Chữ cái thường đại diện cho hành tinh, theo thứ tự được phát hiện, bắt đầu từ *b*, vì bản thân ngôi sao được ngầm coi là 'A'. Nếu nhiều hành tinh được tìm thấy cùng lúc, hành tinh gần sao nhất mang chữ *b*. Sao dùng chữ in hoa, hành tinh dùng chữ thường. Vậy nếu người ngoài hành tinh lập danh mục Hệ Mặt Trời của chúng ta, với Sao Thuỷ là *b*, Trái Đất sẽ mang tên [y:Sun d]."
+    }
+  ],
+  "keyPoint": {
+    "en": "Finding exoplanets is like [p:knowing someone is home because the curtains move]: you rarely see the planet, only its effect on the star. The same habit helps in daily life: when the cause is hidden, *look for small, repeating patterns* before you draw a conclusion.",
+    "vi": "Tìm ngoại hành tinh giống như [p:biết có người ở nhà vì rèm cửa lay động]: hiếm khi ta thấy được hành tinh, chỉ thấy tác động của nó lên ngôi sao. Thói quen ấy cũng hữu ích trong đời sống: khi nguyên nhân bị che giấu, hãy *tìm những quy luật nhỏ lặp đi lặp lại* trước khi rút ra kết luận."
+  },
+  "applySteps": {
+    "en": [
+      "Hold a coin in front of a lamp across the room and watch how little the light changes as it passes.",
+      "Work out the exoplanet-style name of Mars in our solar system and check it with a friend.",
+      "Look up a citizen-science project that lets volunteers search telescope data for planets."
+    ],
+    "vi": [
+      "Cầm một đồng xu trước ngọn đèn ở đầu kia căn phòng và quan sát ánh sáng thay đổi ít ỏi thế nào khi đồng xu đi qua.",
+      "Tìm tên kiểu ngoại hành tinh cho Sao Hoả trong Hệ Mặt Trời và kiểm tra lại với một người bạn.",
+      "Tìm một dự án khoa học công dân cho phép tình nguyện viên tìm hành tinh trong dữ liệu kính viễn vọng."
+    ]
+  },
+  "references": [
+    {
+      "id": "nasa-exo",
+      "label": "NASA Science: Exoplanets in depth",
+      "url": "https://science.nasa.gov/exoplanets/facts/"
+    },
+    {
+      "id": "mayor-1995",
+      "label": "Mayor & Queloz (1995)",
+      "url": "https://doi.org/10.1038/378355a0"
+    },
+    {
+      "id": "gillon-2017",
+      "label": "Gillon et al. (2017)",
+      "url": "https://doi.org/10.1038/nature21360"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/exoplanets.webp",
+    "provider": "unsplash",
+    "author": "ahmadreza sajadi",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/55xd_uiUYEE"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "science-nasa-gov-in-depth-nasa-science",
+    "license": "PD",
+    "authors": [
+      "Alicia Cermak"
+    ],
+    "originalTitle": "Exoplanets: In Depth",
+    "originalUrl": "https://science.nasa.gov/exoplanets/facts/",
+    "publisher": "NASA",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "context added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQBACdASoQABwAPu1orU6ppiSiMAgBMB2JQBOmUAFI1wsVCL8+ACauoAD+/KiA78b4CdMKdB2U+uCSnYYpxgFORZiePXZWkoAAAA==",
+  "dominant": "#141822"
+}

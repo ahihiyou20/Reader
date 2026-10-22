@@ -1,0 +1,134 @@
+{
+  "slug": "black-hole-anatomy",
+  "status": "published",
+  "publishAt": "2026-10-19T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "black holes",
+    "astronomy",
+    "space",
+    "physics",
+    "NASA"
+  ],
+  "title": {
+    "en": "The anatomy of a black hole",
+    "vi": "Giải phẫu một hố đen"
+  },
+  "hook": {
+    "en": "A black hole gives off no light at all, so how can astronomers study one? The answer lies in everything around it: a glowing disk of gas, rings of bent light, a billion-degree cloud and jets that stretch across a galaxy. Take a guided tour of a black hole, from the outside in, all the way to the point where [p:physics itself breaks down].",
+    "vi": "Hố đen không phát ra chút ánh sáng nào, vậy các nhà thiên văn nghiên cứu nó bằng cách nào? Câu trả lời nằm ở mọi thứ xung quanh nó: một đĩa khí rực sáng, những vòng ánh sáng bị bẻ cong, một đám mây nóng hàng tỷ độ và những luồng phun trải dài khắp thiên hà. Hãy cùng du hành qua một hố đen, từ ngoài vào trong, tới tận điểm mà [p:chính vật lý học cũng bất lực]."
+  },
+  "sections": [
+    {
+      "heading_en": "Not really a hole",
+      "heading_vi": "Không thực sự là một cái hố",
+      "body_en": "Despite the name, black holes are not holes. They are huge amounts of matter packed into [y:very tiny spaces], so dense that their gravity traps everything that comes too close {nasa-bh}. They are also not what science fiction often suggests. They are not wormholes, offering shortcuts to other places or universes. And they are not cosmic vacuum cleaners that suck in everything around them. From far enough away, a black hole's gravity behaves just like that of any other object with the same mass. If the Sun were replaced by a black hole of equal mass, Earth would keep the same orbit.",
+      "body_vi": "Dù mang tên như vậy, hố đen không phải là một cái hố. Chúng là lượng vật chất khổng lồ bị nén vào [y:những không gian cực nhỏ], đặc đến mức lực hấp dẫn giữ chặt mọi thứ tiến lại quá gần {nasa-bh}. Chúng cũng không giống những gì phim khoa học viễn tưởng thường gợi ý. Chúng không phải lỗ sâu đục, lối tắt tới nơi khác hay vũ trụ khác. Và chúng cũng không phải máy hút bụi vũ trụ hút mọi thứ xung quanh. Từ đủ xa, lực hấp dẫn của hố đen hoạt động y như của bất kỳ vật thể nào có cùng khối lượng. Nếu Mặt Trời bị thay bằng một hố đen có khối lượng bằng nó, Trái Đất vẫn giữ nguyên quỹ đạo."
+    },
+    {
+      "heading_en": "The point of no return",
+      "heading_vi": "Điểm không thể quay đầu",
+      "body_en": "The **event horizon** is what makes a black hole black. We can think of it as the black hole's surface, though it is not solid like Earth's. Inside this boundary, the speed needed to escape is greater than the speed of light, which is as fast as anything can go {nasa-anatomy}. So whatever crosses the event horizon is [p:trapped forever], even light. Because no light escapes, black holes neither shine nor reflect, and nothing that happens inside can reach an outside observer. Astronomers can still find them, though, thanks to light from matter that has not yet fallen in.",
+      "body_vi": "**Chân trời sự kiện** (*event horizon*) là thứ khiến hố đen trở nên đen. Ta có thể coi nó là bề mặt của hố đen, dù nó không rắn như bề mặt Trái Đất. Bên trong ranh giới này, vận tốc cần thiết để thoát ra lớn hơn tốc độ ánh sáng, vốn là tốc độ nhanh nhất có thể {nasa-anatomy}. Vì vậy, bất cứ thứ gì vượt qua chân trời sự kiện đều [p:bị giam vĩnh viễn], kể cả ánh sáng. Do không có ánh sáng nào thoát ra, hố đen không phát sáng cũng không phản xạ, và không gì xảy ra bên trong có thể đến được với người quan sát bên ngoài. Dù vậy, các nhà thiên văn vẫn tìm ra chúng nhờ ánh sáng từ vật chất chưa rơi vào."
+    },
+    {
+      "heading_en": "A glowing whirlpool",
+      "heading_vi": "Một xoáy nước rực sáng",
+      "body_en": "The main source of light near a black hole is the **accretion disk**. Black holes grow by consuming matter, called *accretion*, and by merging with other black holes. A black hole may pull gas from a companion star, or from stars that stray too close. The gas settles into a [y:hot, bright, rapidly spinning disk] and slowly spirals inwards until it falls across the event horizon. Seen up close, the disk would look strangely bent, with humps above and below the black hole. Its gravity warps space-time, so light from the far side of the disk is bent around it, an effect called **gravitational lensing**.",
+      "body_vi": "Nguồn sáng chính gần một hố đen là **đĩa bồi tụ** (*accretion disk*). Hố đen lớn lên bằng cách nuốt vật chất, gọi là *bồi tụ*, và bằng cách sáp nhập với hố đen khác. Một hố đen có thể hút khí từ ngôi sao đồng hành, hoặc từ những ngôi sao lạc tới quá gần. Khí ấy tụ thành [y:một đĩa nóng, sáng rực và quay rất nhanh] rồi từ từ xoáy vào trong cho tới khi rơi qua chân trời sự kiện. Nhìn gần, chiếc đĩa sẽ có hình dạng cong kỳ lạ, với những chỗ gồ lên phía trên và phía dưới hố đen. Lực hấp dẫn làm cong không-thời gian, nên ánh sáng từ phía xa của đĩa bị bẻ vòng qua nó, hiệu ứng gọi là **thấu kính hấp dẫn**."
+    },
+    {
+      "heading_en": "A shadow ringed with light",
+      "heading_vi": "Một cái bóng viền ánh sáng",
+      "body_en": "The event horizon captures any light passing through it, and the warped space around it bends light away. Together, these effects create a dark zone called the **event horizon shadow**, roughly [g:twice as big] as the black hole's actual surface. At its edge, from every angle, thin rings of light appear. These rings are multiple, highly distorted images of the accretion disk, made by light that circles the black hole several times before escaping to us; the closer to the black hole, the thinner and fainter they get. In 2019, the Event Horizon Telescope captured the first image of such a shadow, in the galaxy M87 {eht-2019}.",
+      "body_vi": "Chân trời sự kiện nuốt mọi ánh sáng đi qua nó, còn không gian bị bẻ cong xung quanh lại làm lệch hướng ánh sáng. Kết hợp lại, hai hiệu ứng tạo nên một vùng tối gọi là **bóng chân trời sự kiện**, lớn [g:gấp khoảng hai lần] bề mặt thật của hố đen. Ở rìa vùng tối, từ mọi góc nhìn, xuất hiện những vòng sáng mảnh. Đó là nhiều ảnh bị méo mạnh của đĩa bồi tụ, tạo thành bởi ánh sáng đi vòng quanh hố đen vài lần trước khi thoát đến chúng ta; càng gần hố đen, các vòng càng mảnh và mờ. Năm 2019, Kính viễn vọng Chân trời Sự kiện đã chụp được hình ảnh đầu tiên của một cái bóng như thế, trong thiên hà M87 {eht-2019}."
+    },
+    {
+      "heading_en": "One side brighter than the other",
+      "heading_vi": "Một bên sáng hơn bên kia",
+      "body_en": "From most angles, one side of the accretion disk looks brighter than the other. Near the black hole, the disk spins so fast that an effect from **Einstein's theory of relativity** becomes visible. Light from the part of the disk moving towards us becomes [y:brighter and bluer], while light from the side moving away becomes dimmer and redder. Astronomers call this *Doppler beaming*. It is the light version of something you hear every day: the pitch and volume of a siren rise as an ambulance approaches and fall as it passes. The black hole's jets show this effect even more dramatically.",
+      "body_vi": "Từ hầu hết các góc nhìn, một bên của đĩa bồi tụ trông sáng hơn bên kia. Gần hố đen, chiếc đĩa quay nhanh đến mức một hiệu ứng trong **thuyết tương đối của Einstein** trở nên rõ rệt. Ánh sáng từ phần đĩa đang tiến về phía ta trở nên [y:sáng hơn và xanh hơn], còn ánh sáng từ phía đang lùi xa thì mờ hơn và đỏ hơn. Các nhà thiên văn gọi đây là *hiệu ứng chùm Doppler*. Đó là phiên bản ánh sáng của điều bạn nghe mỗi ngày: tiếng còi xe cứu thương cao và to dần khi xe tiến lại, rồi trầm và nhỏ đi khi xe chạy qua. Các luồng phun của hố đen còn thể hiện hiệu ứng này ngoạn mục hơn."
+    },
+    {
+      "heading_en": "Billion-degree clouds and giant jets",
+      "heading_vi": "Mây nóng tỷ độ và luồng phun khổng lồ",
+      "body_en": "Above the inner disk sits the **corona**, which has been called one of the most extreme environments in the universe. Strong magnetic fields create a thin, turbulent cloud heated to [p:a billion degrees], where particles orbit at nearly the speed of light and give off powerful X-rays. Nearby, something even stranger can happen. A small amount of material heading for the black hole may be redirected into two **jets** blasting away in opposite directions at close to the speed of light. Jets from the supermassive black holes at the centres of big galaxies can stretch for [y:hundreds of thousands of light-years].",
+      "body_vi": "Phía trên phần trong của đĩa là **quầng corona** (*corona*), được gọi là một trong những môi trường khắc nghiệt nhất vũ trụ. Từ trường mạnh tạo ra một đám mây mỏng, hỗn loạn, nóng tới [p:một tỷ độ], nơi các hạt quay quanh hố đen với tốc độ gần bằng ánh sáng và phát ra tia X cực mạnh. Gần đó, một điều còn kỳ lạ hơn có thể xảy ra. Một lượng nhỏ vật chất đang lao về hố đen có thể bị chuyển hướng thành hai **luồng phun** bắn ra theo hai hướng ngược nhau với tốc độ gần bằng ánh sáng. Luồng phun từ các hố đen siêu khối lượng ở tâm những thiên hà lớn có thể dài tới [y:hàng trăm nghìn năm ánh sáng]."
+    },
+    {
+      "heading_en": "Where physics runs out",
+      "heading_vi": "Nơi vật lý cạn lời",
+      "body_en": "At the very centre, **general relativity** predicts a *singularity*, a point where matter is crushed to infinite density. It is the final destination for anything that crosses the event horizon. But no one knows whether it is a real physical object or just a mathematical one. Its prediction may mark [p:the limits of relativity], where quantum effects become important in a fuller theory of gravity. Meanwhile, the evidence for black holes keeps growing. By tracking stars orbiting the centre of our own galaxy, astronomers showed that the Milky Way hosts a supermassive black hole, a discovery that won the [g:2020 Nobel Prize in Physics] {nobel-2020}.",
+      "body_vi": "Ở chính tâm, **thuyết tương đối rộng** dự đoán có một *điểm kỳ dị*, nơi vật chất bị nén tới mật độ vô hạn. Đó là điểm đến cuối cùng của mọi thứ vượt qua chân trời sự kiện. Nhưng không ai biết nó là một vật thể vật lý có thật hay chỉ là một khái niệm toán học. Việc lý thuyết dự đoán ra nó có thể đánh dấu [p:giới hạn của thuyết tương đối], nơi các hiệu ứng lượng tử trở nên quan trọng trong một lý thuyết hấp dẫn hoàn chỉnh hơn. Trong khi đó, bằng chứng về hố đen ngày càng nhiều. Bằng cách theo dõi các ngôi sao quay quanh tâm thiên hà của chúng ta, các nhà thiên văn đã chứng minh Ngân Hà chứa một hố đen siêu khối lượng, phát hiện mang về [g:giải Nobel Vật lý năm 2020] {nobel-2020}."
+    }
+  ],
+  "keyPoint": {
+    "en": "Studying a black hole is like [p:finding a hidden whirlpool by watching the leaves] that spin around it. When you cannot observe something directly, look for its *effects on everything nearby*: that is how much of science learns about the invisible.",
+    "vi": "Nghiên cứu hố đen giống như [p:tìm một xoáy nước ẩn bằng cách quan sát những chiếc lá] xoay quanh nó. Khi không thể quan sát trực tiếp một điều gì đó, hãy tìm *tác động của nó lên mọi thứ xung quanh*: đó là cách khoa học tìm hiểu phần lớn những gì vô hình."
+  },
+  "applySteps": {
+    "en": [
+      "Look up the 2019 image of the black hole in M87 and find the shadow and the bright ring.",
+      "Listen to a passing siren and notice how its pitch changes, then link it to Doppler beaming.",
+      "Explain to a friend in one minute why a black hole is not a cosmic vacuum cleaner."
+    ],
+    "vi": [
+      "Tra hình ảnh hố đen trong thiên hà M87 năm 2019 và tìm ra cái bóng cùng vòng sáng.",
+      "Lắng nghe một tiếng còi xe chạy qua, để ý cao độ thay đổi thế nào, rồi liên hệ với hiệu ứng chùm Doppler.",
+      "Giải thích cho một người bạn trong một phút vì sao hố đen không phải máy hút bụi vũ trụ."
+    ]
+  },
+  "references": [
+    {
+      "id": "nasa-anatomy",
+      "label": "NASA Science: Black hole anatomy",
+      "url": "https://science.nasa.gov/universe/black-holes/anatomy/"
+    },
+    {
+      "id": "nasa-bh",
+      "label": "NASA Science: Black holes",
+      "url": "https://science.nasa.gov/universe/black-holes/"
+    },
+    {
+      "id": "eht-2019",
+      "label": "Event Horizon Telescope Collaboration (2019)",
+      "url": "https://doi.org/10.3847/2041-8213/ab0ec7"
+    },
+    {
+      "id": "nobel-2020",
+      "label": "Nobel Prize in Physics 2020",
+      "url": "https://www.nobelprize.org/prizes/physics/2020/summary/"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/black-hole-anatomy.webp",
+    "provider": "unsplash",
+    "author": "Greg Rakozy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "science-nasa-gov-anatomy-nasa-science",
+    "license": "PD",
+    "authors": [
+      "Jeanette Kazmierczak"
+    ],
+    "originalTitle": "Anatomy of a Black Hole",
+    "originalUrl": "https://science.nasa.gov/universe/black-holes/anatomy/",
+    "publisher": "NASA",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "context added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JbACdL1yFpcZLEAlX9dRH7Lfd5wAA/v4b11EflK2V8xhRlHzLvQIlsIOu2XN14KFpJxrrdeR7ZxhogoXI7UKCaS6F2hfkxKCnPhCpKfCUh5T8hBRwnUSfeKaqOgAA",
+  "dominant": "#51382f"
+}
