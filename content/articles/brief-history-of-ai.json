@@ -1,0 +1,129 @@
+{
+  "slug": "brief-history-of-ai",
+  "status": "published",
+  "publishAt": "2026-09-26T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "artificial intelligence",
+    "computing",
+    "history",
+    "technology",
+    "future"
+  ],
+  "title": {
+    "en": "The brief history of artificial intelligence",
+    "vi": "Lịch sử ngắn ngủi của trí tuệ nhân tạo"
+  },
+  "hook": {
+    "en": "Mobile phones in the 1990s were bricks with tiny green screens, and two decades earlier computers stored data on punch cards. Today, AI systems recognise faces, translate languages and create pictures from a sentence. In an essay written in late 2022, Max Roser traced how fast this happened, and why [p:the most profound changes may still be ahead].",
+    "vi": "Điện thoại di động thập niên 1990 to như cục gạch với màn hình xanh tí hon, và hai thập kỷ trước đó, máy tính lưu dữ liệu trên thẻ đục lỗ. Ngày nay, các hệ thống AI nhận diện khuôn mặt, dịch ngôn ngữ và vẽ tranh từ một câu mô tả. Trong một bài luận viết cuối năm 2022, Max Roser lần lại tốc độ của những thay đổi ấy, và giải thích vì sao [p:những biến đổi sâu sắc nhất có thể vẫn còn ở phía trước]."
+  },
+  "sections": [
+    {
+      "heading_en": "A mouse in a maze",
+      "heading_vi": "Chú chuột trong mê cung",
+      "body_en": "Computers have become so much part of daily life that it is easy to forget how new they are. The first digital computers were invented only [y:about eight decades ago] {owid-ai}. From the start, some computer scientists wanted to make machines as intelligent as humans. One early example was **Theseus**, built by Claude Shannon in 1950: a remote-controlled mouse that could find its way out of a maze and remember the route. It was a clever toy with very limited abilities. Within one human lifetime, its descendants would learn to see, listen, write and draw.",
+      "body_vi": "Máy tính đã trở thành một phần quen thuộc của đời sống đến mức ta dễ quên rằng chúng còn rất mới. Những chiếc máy tính số đầu tiên chỉ mới ra đời [y:khoảng tám thập kỷ trước] {owid-ai}. Ngay từ đầu, một số nhà khoa học máy tính đã muốn tạo ra những cỗ máy thông minh như con người. Một ví dụ sớm là **Theseus**, do Claude Shannon chế tạo năm 1950: một chú chuột điều khiển từ xa có thể tìm đường ra khỏi mê cung và ghi nhớ lộ trình. Đó là một món đồ chơi thông minh nhưng khả năng rất hạn chế. Chỉ trong một đời người, những 'hậu duệ' của nó đã học được cách nhìn, nghe, viết và vẽ."
+    },
+    {
+      "heading_en": "Catching up with humans on tests",
+      "heading_vi": "Bắt kịp con người trong các bài kiểm tra",
+      "body_en": "Researchers track progress with standard tests in areas such as handwriting recognition, speech recognition and reading comprehension. In Roser's chart, each AI system starts at -100 and human performance is set at zero {kiela-2021}. Around 2012, no machine could reliably recognise language or images at a human level. A decade later, AI systems [g:beat humans] on the tests in all of these areas. Roser adds an important warning: outside standardised tests, performance was mixed, and in some real situations AI still did much worse than people. Even so, image and speech recognition became cheap enough to run on ordinary phones.",
+      "body_vi": "Các nhà nghiên cứu theo dõi tiến bộ bằng những bài kiểm tra chuẩn trong các lĩnh vực như nhận dạng chữ viết tay, nhận dạng giọng nói và đọc hiểu. Trong biểu đồ của Roser, mỗi hệ thống AI bắt đầu ở mức -100 và năng lực của con người được đặt ở mức 0 {kiela-2021}. Khoảng năm 2012, chưa máy nào nhận dạng ngôn ngữ hay hình ảnh ở mức con người một cách đáng tin cậy. Một thập kỷ sau, các hệ thống AI đã [g:vượt con người] trong các bài kiểm tra ở tất cả những lĩnh vực đó. Roser thêm một lời cảnh báo quan trọng: ngoài các bài kiểm tra chuẩn, kết quả không đồng đều, và trong một số tình huống thực tế, AI vẫn kém con người nhiều. Dù vậy, nhận dạng hình ảnh và giọng nói đã rẻ đến mức chạy được trên điện thoại thông thường."
+    },
+    {
+      "heading_en": "From blurry faces to any picture",
+      "heading_vi": "Từ khuôn mặt mờ nhoè đến bất kỳ bức tranh nào",
+      "body_en": "AI also learned to create images. In 2014, the best AI-generated face was a small, pixelated black-and-white image. Just [y:three years later], AI systems could produce faces that were hard to tell apart from photographs, of people who do not exist. Newer models went further, turning almost any written description into a picture. Roser's example was the prompt 'A Pomeranian is sitting on the King's throne wearing a crown. Two tiger soldiers are standing next to the throne.' Within seconds, an AI produced a photorealistic image of exactly that scene.",
+      "body_vi": "AI cũng học được cách tạo ra hình ảnh. Năm 2014, khuôn mặt tốt nhất do AI tạo ra chỉ là một bức ảnh đen trắng nhỏ, vỡ hạt. Chỉ [y:ba năm sau], các hệ thống AI đã có thể tạo ra những khuôn mặt khó phân biệt với ảnh chụp, của những người không hề tồn tại. Các mô hình mới hơn còn tiến xa hơn, biến gần như mọi đoạn mô tả bằng chữ thành tranh. Ví dụ của Roser là câu lệnh 'Một chú chó Pomeranian đội vương miện ngồi trên ngai vua. Hai người lính hổ đứng cạnh ngai.' Chỉ trong vài giây, AI đã tạo ra một bức ảnh như thật về đúng cảnh ấy."
+    },
+    {
+      "heading_en": "Machines that use language",
+      "heading_vi": "Những cỗ máy biết dùng ngôn ngữ",
+      "body_en": "Progress in language was just as striking. Roser showed how Google's **PaLM** system could explain jokes, including an anti-joke designed to confuse the listener. Language AI had already entered daily life: emails were auto-completed, huge amounts of text were translated, videos were transcribed automatically and students used language models for homework. When Roser wrote in 2022, he noted that AI could [y:not yet produce long, coherent texts] and wondered whether progress would slow. Soon afterwards, chatbots built on large language models became used by millions of people, a reminder of how quickly forecasts in this field can age.",
+      "body_vi": "Tiến bộ về ngôn ngữ cũng đáng kinh ngạc không kém. Roser cho thấy hệ thống **PaLM** của Google có thể giải thích những câu đùa, kể cả một câu 'phản đùa' được tạo ra để làm người nghe bối rối. AI ngôn ngữ đã đi vào đời sống hằng ngày: email được tự động gợi ý, khối lượng văn bản khổng lồ được dịch, video được chép lời tự động và học sinh dùng mô hình ngôn ngữ để làm bài tập. Khi viết vào năm 2022, Roser nhận xét rằng AI [y:chưa viết được văn bản dài và mạch lạc], và tự hỏi liệu tiến bộ có chậm lại không. Không lâu sau, các chatbot dựa trên mô hình ngôn ngữ lớn đã được hàng triệu người sử dụng, lời nhắc rằng các dự báo trong lĩnh vực này có thể lỗi thời nhanh đến mức nào."
+    },
+    {
+      "heading_en": "AI is already here",
+      "heading_vi": "AI đã ở đây rồi",
+      "body_en": "Roser's list of everyday uses is long. When you book a flight, an algorithm often decides the price; at the airport, AI systems monitor activity; on the plane, they help the pilot. AI increasingly helps decide who gets a loan, welfare or a job, and even who is released from jail. **Recommender systems** choose what we see on social media and online shops. Some governments use AI for surveillance, and some have bought autonomous weapons. AI is a [p:dual-use technology]: it can serve extremely good goals and extraordinarily bad ones, so everyone needs to understand what is happening.",
+      "body_vi": "Danh sách ứng dụng hằng ngày của Roser rất dài. Khi bạn đặt vé máy bay, một thuật toán thường quyết định giá vé; ở sân bay, hệ thống AI giám sát hoạt động; trên máy bay, chúng hỗ trợ phi công. AI ngày càng góp phần quyết định ai được vay tiền, nhận trợ cấp hay được tuyển dụng, thậm chí ai được ra tù. **Hệ thống gợi ý** chọn những gì ta thấy trên mạng xã hội và cửa hàng trực tuyến. Một số chính phủ dùng AI để giám sát, và một số đã mua vũ khí tự hành. AI là [p:công nghệ lưỡng dụng]: nó có thể phục vụ những mục tiêu cực kỳ tốt đẹp lẫn cực kỳ tồi tệ, nên ai cũng cần hiểu điều gì đang diễn ra."
+    },
+    {
+      "heading_en": "The engine: more and more computation",
+      "heading_vi": "Động cơ: sức tính toán ngày càng lớn",
+      "body_en": "What drove this progress? Three ingredients matter for systems that learn from data: algorithms, training data and **training computation**, measured in FLOP, where one FLOP is a single addition or multiplication of two decimal numbers. For about six decades, the computation used to train AI doubled roughly [y:every 20 months], in line with Moore's Law. Since about 2010, it has doubled roughly [p:every six months] {sevilla-2022}. The results add up quickly: PaLM's training used more than five million times the computation of AlexNet, the record holder just ten years earlier.",
+      "body_vi": "Điều gì thúc đẩy tiến bộ này? Với các hệ thống học từ dữ liệu, có ba thành phần quan trọng: thuật toán, dữ liệu huấn luyện và **sức tính toán dùng để huấn luyện**, đo bằng FLOP, trong đó một FLOP là một phép cộng hoặc nhân hai số thập phân. Trong khoảng sáu thập kỷ, sức tính toán dùng để huấn luyện AI tăng gấp đôi khoảng [y:mỗi 20 tháng], khớp với định luật Moore. Từ khoảng năm 2010, nó tăng gấp đôi khoảng [p:mỗi sáu tháng] {sevilla-2022}. Kết quả cộng dồn rất nhanh: việc huấn luyện PaLM dùng sức tính toán gấp hơn năm triệu lần AlexNet, hệ thống giữ kỷ lục chỉ mười năm trước đó."
+    },
+    {
+      "heading_en": "What might come next",
+      "heading_vi": "Điều gì có thể đến tiếp theo",
+      "body_en": "Researchers study these trends to think about the future. AI researcher Ajeya Cotra asked when the computation used to train an AI might match that of the human brain. In 2022, she estimated a [p:50% chance] that such 'transformative AI' would be developed by 2040. Other forecasters, using different methods, reached broadly similar conclusions, though such predictions are highly uncertain. Roser's conclusion is not a forecast but a call: a technology this powerful should not be left to experts alone. Because it will shape our lives, we should all try to understand where it is heading and [g:take part in the debate] about how it is used.",
+      "body_vi": "Các nhà nghiên cứu phân tích những xu hướng này để suy nghĩ về tương lai. Nhà nghiên cứu AI Ajeya Cotra đặt câu hỏi khi nào sức tính toán dùng để huấn luyện một AI có thể ngang với bộ não con người. Năm 2022, bà ước tính có [p:50% khả năng] loại 'AI mang tính chuyển đổi' như vậy sẽ ra đời trước năm 2040. Những nhà dự báo khác, dùng phương pháp khác, đưa ra kết luận nhìn chung tương tự, dù các dự báo như thế rất bất định. Kết luận của Roser không phải một lời tiên đoán mà là một lời kêu gọi: một công nghệ mạnh mẽ như vậy không nên chỉ để cho giới chuyên gia. Vì nó sẽ định hình cuộc sống của chúng ta, tất cả chúng ta nên cố hiểu nó đang đi về đâu và [g:tham gia cuộc thảo luận] về cách sử dụng nó."
+    }
+  ],
+  "keyPoint": {
+    "en": "AI's progress is like [p:compound interest]: doubling every few months looks slow at first and then suddenly enormous. Do not judge the future by today's tools. Try new AI tools *with curiosity and a critical eye*, and form your own view about how they should be used.",
+    "vi": "Tiến bộ của AI giống như [p:lãi kép]: tăng gấp đôi sau mỗi vài tháng, ban đầu trông chậm rồi bỗng trở nên khổng lồ. Đừng đánh giá tương lai bằng công cụ của hôm nay. Hãy thử các công cụ AI mới *với sự tò mò và con mắt phản biện*, và tự hình thành quan điểm về cách chúng nên được sử dụng."
+  },
+  "applySteps": {
+    "en": [
+      "List three moments today when an algorithm may have made a choice for you, such as a feed or a price.",
+      "Ask an AI tool a question you already know well and check its answer carefully for errors.",
+      "Discuss with a friend one use of AI you welcome and one you would want limited."
+    ],
+    "vi": [
+      "Liệt kê ba khoảnh khắc trong hôm nay mà một thuật toán có thể đã lựa chọn thay bạn, như bảng tin hay giá cả.",
+      "Hỏi một công cụ AI một câu mà bạn đã biết rõ và kiểm tra kỹ câu trả lời xem có sai sót không.",
+      "Bàn với một người bạn về một ứng dụng AI bạn hoan nghênh và một ứng dụng bạn muốn bị hạn chế."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-ai",
+      "label": "Our World in Data (2022)",
+      "url": "https://ourworldindata.org/brief-history-of-ai"
+    },
+    {
+      "id": "kiela-2021",
+      "label": "Kiela et al. (2021)",
+      "url": "https://doi.org/10.18653/v1/2021.naacl-main.324"
+    },
+    {
+      "id": "sevilla-2022",
+      "label": "Sevilla et al. (2022)",
+      "url": "https://doi.org/10.1109/IJCNN55064.2022.9891914"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/brief-history-of-ai.webp",
+    "provider": "unsplash",
+    "author": "Florian Klauer",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-the-brief-history-of-artificial-intelligence-the-world-has-ch",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Max Roser"
+    ],
+    "originalTitle": "The brief history of artificial intelligence: the world has changed fast — what might be next?",
+    "originalUrl": "https://ourworldindata.org/brief-history-of-ai",
+    "publisher": "Our World in Data",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "context added",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoQABwAPu1orU6ppiSiMAgBMB2JaQAAW+92v8GTMNVuphf0AP7qgkYpw/ae6VPK84gTXeFVqpjYZSj9BCXuf8scezX7cND/CdhpjryH5BTBlE3Tf4dKCkdb3gAAAA==",
+  "dominant": "#8c8c8c"
+}

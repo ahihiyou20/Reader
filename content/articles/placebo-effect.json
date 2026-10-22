@@ -1,0 +1,143 @@
+{
+  "slug": "placebo-effect",
+  "status": "published",
+  "publishAt": "2026-09-25T00:00:00.000Z",
+  "category": "health",
+  "tags": [
+    "placebo",
+    "medicine",
+    "clinical trials",
+    "pain",
+    "expectations"
+  ],
+  "title": {
+    "en": "The placebo effect: what a sugar pill can and cannot do",
+    "vi": "Hiệu ứng giả dược: viên thuốc đường làm được gì và không làm được gì"
+  },
+  "hook": {
+    "en": "A sugar pill contains no medicine, yet people who take one sometimes report feeling better. This is often described as the mind healing the body. The reality is more interesting and more limited. Placebos can change how we [y:feel] some symptoms, especially pain, but there is little evidence that they change the disease itself.",
+    "vi": "Một viên thuốc đường không chứa chút dược chất nào, vậy mà người uống đôi khi lại thấy khá hơn. Điều này thường được mô tả là tâm trí chữa lành cơ thể. Thực tế thú vị hơn nhưng cũng hạn chế hơn. Giả dược có thể thay đổi cách ta [y:cảm nhận] một số triệu chứng, nhất là cơn đau, nhưng có rất ít bằng chứng cho thấy chúng thay đổi được chính căn bệnh."
+  },
+  "sections": [
+    {
+      "heading_en": "'I shall please'",
+      "heading_vi": "'Tôi sẽ làm hài lòng'",
+      "body_en": "A **placebo** is a treatment that is designed to look real but has no medical effect of its own: a sugar pill, a saltwater injection or even a fake operation. The Latin word means [y:'I shall please'] {wiki-placebo}. In the 18th century, doctors used the word for remedies given more to please patients than to help them. One French doctor, asked whether a fashionable new remedy was worth taking, reportedly replied: 'Take it, Madame, and hurry while it still cures.' He understood that people's belief in a treatment could fade, and its apparent power with it.",
+      "body_vi": "**Giả dược** (*placebo*) là một phương pháp điều trị được thiết kế trông như thật nhưng tự nó không có tác dụng y học nào: một viên thuốc đường, một mũi tiêm nước muối hay thậm chí một ca phẫu thuật giả. Từ Latinh này có nghĩa là [y:'tôi sẽ làm hài lòng'] {wiki-placebo}. Vào thế kỷ 18, các bác sĩ dùng từ này cho những phương thuốc nhằm làm bệnh nhân vui lòng hơn là giúp họ khỏi bệnh. Tương truyền, khi được hỏi có nên dùng một phương thuốc mới đang thịnh hành, một bác sĩ người Pháp đã đáp: 'Thưa bà, cứ dùng đi, và nhanh lên kẻo nó hết công hiệu.' Ông hiểu rằng niềm tin của người bệnh vào một phương pháp có thể phai nhạt, và 'sức mạnh' bề ngoài của nó cũng phai theo."
+    },
+    {
+      "heading_en": "Why trials need placebos",
+      "heading_vi": "Vì sao thử nghiệm lâm sàng cần giả dược",
+      "body_en": "Today, placebos are essential in **randomised clinical trials**. One group of patients gets the new treatment, and another gets a placebo that looks identical. Ideally, neither the patients nor the doctors know who got which, because expectations can influence results. Researchers distinguish two terms. The *placebo response* is any change seen in the placebo group. The [g:placebo effect] is only the part of that change that would not have happened with no treatment at all. Much of the placebo response is not caused by the pill: people recover naturally, symptoms come and go, and unusually bad days tend to be followed by better ones.",
+      "body_vi": "Ngày nay, giả dược không thể thiếu trong các **thử nghiệm lâm sàng ngẫu nhiên**. Một nhóm bệnh nhân nhận phương pháp điều trị mới, nhóm còn lại nhận giả dược trông y hệt. Lý tưởng nhất, cả bệnh nhân lẫn bác sĩ đều không biết ai nhận gì, vì kỳ vọng có thể ảnh hưởng tới kết quả. Các nhà nghiên cứu phân biệt hai khái niệm. *Phản ứng giả dược* là mọi thay đổi thấy được ở nhóm dùng giả dược. [g:Hiệu ứng giả dược] chỉ là phần thay đổi sẽ không xảy ra nếu hoàn toàn không điều trị. Phần lớn phản ứng giả dược không do viên thuốc gây ra: người bệnh tự hồi phục, triệu chứng lúc tăng lúc giảm, và những ngày tệ bất thường thường được nối tiếp bởi những ngày khá hơn."
+    },
+    {
+      "heading_en": "Mostly pain, not disease",
+      "heading_vi": "Chủ yếu là cơn đau, không phải bệnh",
+      "body_en": "How powerful is the placebo effect when it is measured carefully? In 2001, Asbjørn Hróbjartsson and Peter Gøtzsche reviewed trials that compared placebo with no treatment across 40 medical conditions. The only area where placebos showed a clear effect was [p:pain] {hrobjartsson-2001}. A larger review in 2010 reached a similar conclusion: placebo effects appeared mainly in outcomes that patients report themselves, such as pain and nausea, and placebos did not seem to affect the underlying disease {hrobjartsson-2010}. Some researchers have criticised these reviews, but they remain an important check on exaggerated claims.",
+      "body_vi": "Hiệu ứng giả dược mạnh đến đâu khi được đo lường cẩn thận? Năm 2001, Asbjørn Hróbjartsson và Peter Gøtzsche đã tổng hợp các thử nghiệm so sánh giả dược với không điều trị ở 40 bệnh lý khác nhau. Lĩnh vực duy nhất giả dược cho thấy tác dụng rõ ràng là [p:cơn đau] {hrobjartsson-2001}. Một tổng quan lớn hơn năm 2010 đi đến kết luận tương tự: hiệu ứng giả dược chủ yếu xuất hiện ở những chỉ số do bệnh nhân tự báo cáo, như đau và buồn nôn, và giả dược dường như không tác động tới căn bệnh bên dưới {hrobjartsson-2010}. Một số nhà nghiên cứu đã phê bình các tổng quan này, nhưng chúng vẫn là phép kiểm tra quan trọng trước những tuyên bố phóng đại."
+    },
+    {
+      "heading_en": "Pain relief made by the brain",
+      "heading_vi": "Thuốc giảm đau do não tự tạo",
+      "body_en": "For pain, the placebo effect has a real biological basis. In 1978, researchers showed that placebo pain relief could be blocked by naloxone, a drug that stops the body's natural **opioids** from working {levine-1978}. In other words, expecting relief can trigger the brain to release its own painkillers. Expectations also strengthen real medicines. In 'open versus hidden' studies, patients received the same painkiller either openly, from a doctor at the bedside, or secretly, by a hidden machine. The drug worked [g:considerably better] when patients knew they were receiving it {colloca-2004}.",
+      "body_vi": "Với cơn đau, hiệu ứng giả dược có cơ sở sinh học thực sự. Năm 1978, các nhà nghiên cứu chứng minh rằng tác dụng giảm đau của giả dược có thể bị chặn bởi naloxone, một loại thuốc ngăn các **chất giống thuốc phiện tự nhiên** (*opioid*) của cơ thể hoạt động {levine-1978}. Nói cách khác, chờ đợi sự dễ chịu có thể khiến não tiết ra thuốc giảm đau của chính nó. Kỳ vọng cũng làm thuốc thật hiệu quả hơn. Trong các nghiên cứu 'công khai so với bí mật', bệnh nhân nhận cùng một loại thuốc giảm đau, hoặc công khai do bác sĩ tiêm bên giường bệnh, hoặc bí mật qua một máy truyền giấu kín. Thuốc hiệu quả [g:hơn hẳn] khi bệnh nhân biết mình đang được dùng thuốc {colloca-2004}."
+    },
+    {
+      "heading_en": "Ritual, care and the nocebo",
+      "heading_vi": "Nghi thức, sự quan tâm và hiệu ứng 'nocebo'",
+      "body_en": "The way a placebo is given matters. Studies suggest that more pills can work better than fewer, capsules better than tablets, and injections better than capsules. A doctor who is warm, caring and confident seems to strengthen the effect. Expectations can also work in reverse. When people expect a treatment to harm them, they may develop side effects from an inactive substance. This is called the **nocebo effect**, from the Latin for 'I shall harm'. People who are more anxious tend to be [y:more prone to nocebo effects], while optimists tend to show stronger placebo responses.",
+      "body_vi": "Cách đưa giả dược có ý nghĩa quan trọng. Các nghiên cứu gợi ý rằng uống nhiều viên có thể hiệu quả hơn ít viên, viên nang hiệu quả hơn viên nén, và tiêm hiệu quả hơn viên nang. Một bác sĩ ấm áp, ân cần và tự tin dường như làm hiệu ứng mạnh hơn. Kỳ vọng cũng có thể tác động theo chiều ngược lại. Khi người ta nghĩ một phương pháp sẽ gây hại, họ có thể gặp tác dụng phụ từ một chất không có hoạt tính. Hiện tượng này gọi là **hiệu ứng nocebo**, từ tiếng Latinh nghĩa là 'tôi sẽ gây hại'. Những người hay lo âu thường [y:dễ gặp hiệu ứng nocebo hơn], còn người lạc quan thường có phản ứng giả dược mạnh hơn."
+    },
+    {
+      "heading_en": "Placebos without deception?",
+      "heading_vi": "Giả dược mà không lừa dối?",
+      "body_en": "Giving patients fake pills without telling them raises serious ethical problems. It brings [p:dishonesty] into the relationship between doctor and patient and bypasses informed consent. It can also delay proper diagnosis and treatment. Surprisingly, some researchers have tested **open-label placebos**, where patients are told clearly that the pill contains no medicine. A 2021 review of these trials found a significant, though modest, benefit compared with no treatment {wernsdorff-2021}. The authors warn that the research is still in its infancy, with small studies, so these results should be treated with caution.",
+      "body_vi": "Đưa thuốc giả cho bệnh nhân mà không nói cho họ biết đặt ra những vấn đề đạo đức nghiêm trọng. Nó đưa [p:sự thiếu trung thực] vào mối quan hệ giữa bác sĩ và bệnh nhân và bỏ qua sự đồng ý có hiểu biết. Nó cũng có thể làm chậm việc chẩn đoán và điều trị đúng. Đáng ngạc nhiên là một số nhà nghiên cứu đã thử **giả dược công khai**, tức nói rõ với bệnh nhân rằng viên thuốc không chứa dược chất. Một tổng quan năm 2021 về các thử nghiệm này cho thấy lợi ích có ý nghĩa thống kê, dù khiêm tốn, so với không điều trị {wernsdorff-2021}. Các tác giả cảnh báo rằng lĩnh vực nghiên cứu này còn non trẻ, với những nghiên cứu nhỏ, nên cần thận trọng với các kết quả."
+    },
+    {
+      "heading_en": "What this means for us",
+      "heading_vi": "Điều này có ý nghĩa gì với chúng ta",
+      "body_en": "The placebo effect is real, but it is not magic. It can ease how we experience pain and some other symptoms, yet it does not shrink tumours or cure infections. That is why critics argue it is wrong to promote ineffective treatments because they 'make people feel better': they may [p:delay treatment that works]. Some doctors suggest a better use of the evidence: combine effective medicine with the things that boost expectations honestly, such as clear explanations, kindness and trust. As one physician put it, a good doctor should be able to pass on a placebo effect [g:through compassion].",
+      "body_vi": "Hiệu ứng giả dược là có thật, nhưng nó không phải phép màu. Nó có thể làm dịu cách ta cảm nhận cơn đau và một số triệu chứng khác, nhưng không làm teo khối u hay chữa khỏi nhiễm trùng. Vì thế, những người phê bình cho rằng thật sai lầm khi quảng bá các phương pháp vô hiệu chỉ vì chúng 'khiến người ta thấy dễ chịu hơn': chúng có thể [p:làm chậm việc điều trị thật sự hiệu quả]. Một số bác sĩ gợi ý một cách dùng bằng chứng tốt hơn: kết hợp thuốc có hiệu quả với những điều nâng cao kỳ vọng một cách trung thực, như giải thích rõ ràng, sự tử tế và lòng tin. Như một bác sĩ từng nói, một bác sĩ giỏi có thể truyền hiệu ứng giả dược [g:bằng lòng trắc ẩn]."
+    }
+  ],
+  "keyPoint": {
+    "en": "Expectations work like [p:a volume knob on how we feel symptoms], not a switch that cures disease. Use that knowledge wisely: trust treatments that are *proven to work*, and let calm, honest care turn the volume of pain and worry down.",
+    "vi": "Kỳ vọng giống như [p:núm chỉnh âm lượng cho cảm nhận về triệu chứng], chứ không phải công tắc chữa khỏi bệnh. Hãy dùng hiểu biết này một cách khôn ngoan: tin vào những phương pháp *đã được chứng minh hiệu quả*, và để sự chăm sóc điềm tĩnh, trung thực vặn nhỏ âm lượng của cơn đau và nỗi lo."
+  },
+  "applySteps": {
+    "en": [
+      "Next time you read about a 'miracle' remedy, check whether it was compared with a placebo in a trial.",
+      "When you take a medicine that works, take a moment to understand how it helps you.",
+      "Notice one symptom you feel more strongly when you are anxious, and try a calming routine."
+    ],
+    "vi": [
+      "Lần tới khi đọc về một phương thuốc 'thần kỳ', hãy kiểm tra xem nó đã được so sánh với giả dược trong thử nghiệm chưa.",
+      "Khi dùng một loại thuốc có hiệu quả, hãy dành chút thời gian tìm hiểu nó giúp bạn như thế nào.",
+      "Để ý một triệu chứng bạn cảm thấy rõ hơn khi lo lắng, và thử một thói quen giúp bình tĩnh."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-placebo",
+      "label": "Wikipedia: Placebo",
+      "url": "https://en.wikipedia.org/wiki/Placebo"
+    },
+    {
+      "id": "hrobjartsson-2001",
+      "label": "Hróbjartsson & Gøtzsche (2001)",
+      "url": "https://doi.org/10.1056/NEJM200105243442106"
+    },
+    {
+      "id": "hrobjartsson-2010",
+      "label": "Hróbjartsson & Gøtzsche (2010)",
+      "url": "https://doi.org/10.1002/14651858.CD003974.pub3"
+    },
+    {
+      "id": "levine-1978",
+      "label": "Levine, Gordon & Fields (1978)",
+      "url": "https://doi.org/10.1016/S0140-6736(78)92762-9"
+    },
+    {
+      "id": "colloca-2004",
+      "label": "Colloca et al. (2004)",
+      "url": "https://doi.org/10.1016/S1474-4422(04)00908-1"
+    },
+    {
+      "id": "wernsdorff-2021",
+      "label": "von Wernsdorff et al. (2021)",
+      "url": "https://doi.org/10.1038/s41598-021-83148-6"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/placebo-effect.webp",
+    "provider": "unsplash",
+    "author": "veeterzy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/OJJIaFZOeX4"
+  },
+  "origin": {
+    "group": 2,
+    "sourceId": "en-wikipedia-org-placebo",
+    "license": "CC-BY-SA-4.0",
+    "authors": [
+      "Wikipedia contributors"
+    ],
+    "originalTitle": "Placebo",
+    "originalUrl": "https://en.wikipedia.org/wiki/Placebo",
+    "publisher": "Wikipedia",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "rewritten for clarity",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdFQAmlUBv5dWbR89VfIAA/SG/F15d2oW0L9QQpR+6LNJTnKUD8n5tVRRoBPZLlS4NfJYEffWdYBSS73kx27xVmvPqhWElfoj7uSZuoTgx30fB2Q2SHqq6g+Lvkd7Dk39wX+YnMWzdBXvQlkO0Gsub++sheEsczVucyUi+e9BHLr9IGsIc2ryf36rJO6B/y+3HZ+M+6z+/BeRAMAAA",
+  "dominant": "#712736"
+}
