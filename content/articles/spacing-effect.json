@@ -1,0 +1,122 @@
+{
+  "slug": "spacing-effect",
+  "status": "published",
+  "publishAt": "2026-10-05T00:00:00.000Z",
+  "category": "productivity",
+  "tags": [
+    "learning",
+    "memory",
+    "study skills",
+    "spacing effect",
+    "testing effect"
+  ],
+  "title": {
+    "en": "Study less, remember more: the spacing effect",
+    "vi": "Học ít hơn, nhớ lâu hơn: hiệu ứng giãn cách"
+  },
+  "hook": {
+    "en": "The night before an exam, many of us reread our notes again and again, and it feels like it works. A few days later, most of it is gone. More than a century of memory research points to a better way, and it takes no extra time. The secret is not how long you study, but [p:when you study and how you check yourself].",
+    "vi": "Đêm trước kỳ thi, nhiều người trong chúng ta đọc đi đọc lại ghi chép, và cảm giác như nó có hiệu quả. Vài ngày sau, phần lớn đã quên sạch. Hơn một thế kỷ nghiên cứu về trí nhớ chỉ ra một cách tốt hơn, mà không tốn thêm thời gian. Bí quyết không nằm ở việc học bao lâu, mà ở [p:học vào lúc nào và tự kiểm tra ra sao]."
+  },
+  "sections": [
+    {
+      "heading_en": "A scientist who tested himself",
+      "heading_vi": "Nhà khoa học tự làm thí nghiệm trên mình",
+      "body_en": "In the 1880s, the German psychologist **Hermann Ebbinghaus** ran one of the first careful studies of memory, using himself as the only subject. He memorised long lists of nonsense syllables, such as 'DAX' or 'BOK', so that meaning could not help him, and then measured how fast he forgot them. He found that forgetting is [y:fast at first and then slows down], a pattern now called the **forgetting curve**. He also noticed something useful: spreading his practice over several days helped him relearn lists faster than cramming the same practice into one sitting. This became known as the *spacing effect*.",
+      "body_vi": "Vào thập niên 1880, nhà tâm lý học người Đức **Hermann Ebbinghaus** thực hiện một trong những nghiên cứu cẩn trọng đầu tiên về trí nhớ, với chính mình là đối tượng duy nhất. Ông học thuộc những danh sách dài các âm tiết vô nghĩa, như 'DAX' hay 'BOK', để ý nghĩa không giúp được gì, rồi đo xem mình quên nhanh đến đâu. Ông nhận thấy việc quên diễn ra [y:rất nhanh lúc đầu rồi chậm dần], quy luật nay được gọi là **đường cong lãng quên**. Ông cũng phát hiện một điều hữu ích: chia việc luyện tập ra nhiều ngày giúp ông học lại danh sách nhanh hơn so với dồn cùng lượng luyện tập vào một buổi. Điều này được biết đến là *hiệu ứng giãn cách*."
+    },
+    {
+      "heading_en": "Hundreds of experiments agree",
+      "heading_vi": "Hàng trăm thí nghiệm cùng đồng thuận",
+      "body_en": "Ebbinghaus was one man studying nonsense words, so is the effect real for everyone? In 2006, a team led by Nicholas Cepeda combined the results of [g:more than 300 experiments] on learning words and facts {cepeda-2006}. The pattern was remarkably consistent. When people spread their study sessions out over time, which researchers call *distributed practice*, they remembered more later than when they packed the same amount of study into a single block, called *massed practice*. The total study time was the same. Only the timing was different, and the timing alone made a clear difference.",
+      "body_vi": "Ebbinghaus chỉ là một người nghiên cứu những từ vô nghĩa, vậy hiệu ứng này có đúng với mọi người không? Năm 2006, một nhóm do Nicholas Cepeda dẫn đầu đã tổng hợp kết quả của [g:hơn 300 thí nghiệm] về việc học từ và kiến thức {cepeda-2006}. Quy luật nhất quán đến đáng kinh ngạc. Khi người ta chia các buổi học ra theo thời gian, gọi là *luyện tập phân tán*, họ nhớ được nhiều hơn về sau so với khi dồn cùng lượng học vào một khối, gọi là *luyện tập dồn nén*. Tổng thời gian học như nhau. Chỉ có thời điểm là khác, và riêng thời điểm đã tạo ra khác biệt rõ rệt."
+    },
+    {
+      "heading_en": "How long should the gap be?",
+      "heading_vi": "Nên giãn cách bao lâu?",
+      "body_en": "If spacing helps, how far apart should sessions be? In a large online study, more than 1,300 people learned a set of obscure facts, reviewed them after gaps of up to several months, and were tested up to a year later {cepeda-2008}. The best gap depended on [y:how long you want to remember]. To remember something for about a week, reviewing after a day or so worked best. To remember it for a year, a gap of about three weeks was better. The researchers' practical advice: if in doubt, a gap that is too long usually costs less than one that is too short.",
+      "body_vi": "Nếu giãn cách có ích, các buổi học nên cách nhau bao xa? Trong một nghiên cứu trực tuyến quy mô lớn, hơn 1.300 người học một loạt kiến thức ít ai biết, ôn lại sau những khoảng cách lên tới vài tháng, và được kiểm tra muộn nhất là một năm sau {cepeda-2008}. Khoảng cách tốt nhất phụ thuộc vào [y:việc bạn muốn nhớ trong bao lâu]. Để nhớ một điều trong khoảng một tuần, ôn lại sau chừng một ngày là tốt nhất. Để nhớ trong một năm, khoảng cách ba tuần lại hiệu quả hơn. Lời khuyên thực tế của các nhà nghiên cứu: nếu phân vân, khoảng cách hơi dài thường ít thiệt hơn khoảng cách quá ngắn."
+    },
+    {
+      "heading_en": "Testing beats rereading",
+      "heading_vi": "Tự kiểm tra hiệu quả hơn đọc lại",
+      "body_en": "Timing is half the story; the other half is what you do in each session. In a classic experiment, students read short science passages. Some read them several times; others read once and then repeatedly wrote down everything they could recall. Five minutes later, rereading looked better. But [p:one week later], the picture flipped: students who had practised recalling remembered about 61% of the ideas, compared with 40% for those who only reread {roediger-2006}. Pulling information out of memory strengthens it far more than putting it in again. Psychologists call this the **testing effect**.",
+      "body_vi": "Thời điểm chỉ là một nửa câu chuyện; nửa còn lại là bạn làm gì trong mỗi buổi học. Trong một thí nghiệm kinh điển, sinh viên đọc những đoạn văn khoa học ngắn. Một nhóm đọc đi đọc lại nhiều lần; nhóm khác đọc một lần rồi liên tục viết ra mọi điều mình nhớ được. Năm phút sau, việc đọc lại có vẻ tốt hơn. Nhưng [p:một tuần sau], bức tranh đảo ngược: sinh viên luyện nhớ lại ghi nhớ được khoảng 61% ý chính, so với 40% ở nhóm chỉ đọc lại {roediger-2006}. Lôi thông tin ra khỏi trí nhớ củng cố nó mạnh hơn nhiều so với nạp lại nó. Các nhà tâm lý học gọi đây là **hiệu ứng kiểm tra**."
+    },
+    {
+      "heading_en": "Why cramming feels better",
+      "heading_vi": "Vì sao học dồn có cảm giác hiệu quả hơn",
+      "body_en": "If spacing and testing work so well, why do so many of us cram and reread? Because they [y:feel easier]. When you reread a page you saw ten minutes ago, everything looks familiar, and that fluency feels like learning. Spaced practice feels harder, because you have forgotten a little and must work to recall it. But that effort is exactly what makes the memory stronger. Researchers call this kind of challenge a *desirable difficulty*. The trap is that our sense of how well we are learning is often [p:a poor guide] to how much we will actually remember.",
+      "body_vi": "Nếu giãn cách và tự kiểm tra hiệu quả đến vậy, sao nhiều người vẫn học dồn và đọc lại? Vì chúng [y:có cảm giác dễ hơn]. Khi bạn đọc lại một trang vừa xem mười phút trước, mọi thứ đều quen thuộc, và sự trôi chảy ấy tạo cảm giác như đang học. Luyện tập giãn cách khó hơn, vì bạn đã quên đi một chút và phải cố gắng nhớ lại. Nhưng chính nỗ lực đó làm trí nhớ vững chắc hơn. Các nhà nghiên cứu gọi kiểu thử thách này là *khó khăn đáng có*. Cái bẫy là cảm nhận của ta về mức độ mình đang học tốt thường [p:là chỉ dẫn kém tin cậy] cho lượng kiến thức ta thật sự nhớ được."
+    },
+    {
+      "heading_en": "What works, and what does not",
+      "heading_vi": "Điều gì hiệu quả, điều gì không",
+      "body_en": "In 2013, a group of psychologists reviewed ten popular study techniques to see which ones the evidence supports {dunlosky-2013}. Only two earned their top rating: **practice testing** and **distributed practice**. Both worked for learners of different ages, for many kinds of material, and over long delays. Some of the most common habits did poorly. *Highlighting* and *rereading* were rated as having [p:low utility], because they gave little benefit beyond simply reading the material once. That does not mean highlighting is useless, but it should not be the main way you study.",
+      "body_vi": "Năm 2013, một nhóm nhà tâm lý học đã đánh giá mười kỹ thuật học phổ biến để xem kỹ thuật nào được bằng chứng ủng hộ {dunlosky-2013}. Chỉ hai kỹ thuật đạt mức đánh giá cao nhất: **luyện tập bằng kiểm tra** và **luyện tập phân tán**. Cả hai đều hiệu quả với người học ở nhiều độ tuổi, với nhiều loại nội dung, và sau những khoảng thời gian dài. Một số thói quen phổ biến nhất lại cho kết quả kém. *Tô sáng* và *đọc lại* bị xếp vào nhóm [p:ít hữu ích], vì chúng mang lại rất ít lợi ích so với chỉ đọc tài liệu một lần. Điều đó không có nghĩa tô sáng vô dụng, nhưng nó không nên là cách học chính của bạn."
+    },
+    {
+      "heading_en": "Putting it into practice",
+      "heading_vi": "Áp dụng vào thực tế",
+      "body_en": "You can use these findings with very little change to your routine. Instead of one long session, split the same time into [g:shorter sessions spread over several days]. Start each session by trying to recall what you learned last time, before you look at your notes: write a quick summary, answer flashcards or explain the idea aloud. Check what you missed, then focus there. Mix older topics into newer ones so that old material keeps coming back. Flashcard apps that schedule reviews automatically are built on exactly these ideas, but a notebook and a calendar work too.",
+      "body_vi": "Bạn có thể áp dụng những phát hiện này mà hầu như không cần thay đổi thói quen. Thay vì một buổi học dài, hãy chia cùng lượng thời gian ấy thành [g:nhiều buổi ngắn trải ra vài ngày]. Mở đầu mỗi buổi bằng việc cố nhớ lại những gì đã học lần trước, trước khi nhìn vào ghi chép: viết nhanh một bản tóm tắt, trả lời thẻ ghi nhớ hoặc giải thích ý tưởng thành tiếng. Kiểm tra những chỗ bạn quên rồi tập trung vào đó. Đan xen chủ đề cũ vào chủ đề mới để kiến thức cũ liên tục quay lại. Các ứng dụng thẻ ghi nhớ tự lên lịch ôn tập được xây dựng đúng trên những ý tưởng này, nhưng một cuốn sổ và cuốn lịch cũng đủ dùng."
+    }
+  ],
+  "keyPoint": {
+    "en": "Memory works like [p:a path through a field]: walking it once a day for a week wears it in far better than walking it seven times in one afternoon. Space your study out, and start every session by *recalling before you reread*.",
+    "vi": "Trí nhớ giống như [p:lối mòn băng qua cánh đồng]: mỗi ngày đi qua một lần trong một tuần sẽ in dấu rõ hơn nhiều so với đi bảy lần trong một buổi chiều. Hãy giãn cách việc học, và bắt đầu mỗi buổi bằng *nhớ lại trước khi đọc lại*."
+  },
+  "applySteps": {
+    "en": [
+      "Before your next study session, spend three minutes writing down everything you remember from the last one.",
+      "Split one long study block this week into three short sessions on different days.",
+      "Turn five key ideas from this article into question cards and test yourself in two days."
+    ],
+    "vi": [
+      "Trước buổi học tiếp theo, dành ba phút ghi ra mọi điều bạn còn nhớ từ buổi trước.",
+      "Chia một buổi học dài trong tuần này thành ba buổi ngắn vào các ngày khác nhau.",
+      "Biến năm ý chính trong bài này thành thẻ câu hỏi và tự kiểm tra sau hai ngày."
+    ]
+  },
+  "references": [
+    {
+      "id": "cepeda-2006",
+      "label": "Cepeda et al. (2006)",
+      "url": "https://doi.org/10.1037/0033-2909.132.3.354"
+    },
+    {
+      "id": "cepeda-2008",
+      "label": "Cepeda et al. (2008)",
+      "url": "https://doi.org/10.1111/j.1467-9280.2008.02209.x"
+    },
+    {
+      "id": "roediger-2006",
+      "label": "Roediger & Karpicke (2006)",
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x"
+    },
+    {
+      "id": "dunlosky-2013",
+      "label": "Dunlosky et al. (2013)",
+      "url": "https://doi.org/10.1177/1529100612453266"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/spacing-effect.webp",
+    "provider": "unsplash",
+    "author": "James Tarbotton",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/gm18kqu9TxQ"
+  },
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Reader editors"
+    ],
+    "changes": []
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQAAXFh2UCuGkpXr45FTegAA/n5TZcIslMUyzikTra60U1CRj7e+tvAO6cjT/w+FROcX3EeVeG9zs+1skevTcc4NwHXTBOC0wrI06lXX57VeYITpdO9jNtwzzcREHIgTHkJ38HgfPIhMQy4AAA==",
+  "dominant": "#3f4640"
+}
