@@ -1,0 +1,52 @@
+{
+  "sections": [
+    {
+      "heading": "Abstract",
+      "paragraphs": [
+        "What makes a good school? How can schools be improved? I explore these question in my research. My work looks at schools—specifically, what makes some schools teach math and reading better. I also study how schools influence students’ chances of going to college and how this affects their future earnings. In this article, I share key findings on how school systems can be improved.",
+        "**Professor Joshua D. Angrist won the Nobel Prize in Economics in 2021, jointly with Professors David and Guido W. Imbens, for their methodological contributions to the analysis of causal relationships.**"
+      ]
+    },
+    {
+      "heading": "Understanding Cause and Effect",
+      "paragraphs": [
+        "My research looks at how people’s decisions shape their lives. I ask practical questions like: Do smaller classes help students get better grades? How do job markets determine wages? I always try to find the “why” behind what we see.",
+        "Quantitative research on economic questions is called econometrics. Econometricians look for cause-and-effect relationships in the world around us. We create tools to help find useful answers. Let me show you how I have used these tools to study schools."
+      ]
+    },
+    {
+      "heading": "Are Smaller Classes Better Than Large Classes?",
+      "paragraphs": [
+        "Do smaller classes help kids learn? That is the million-dollar question. Parents, teachers, and students often believe smaller classes create better learning environments. But smaller classes cost more. Schools need more teachers and classrooms. This means higher taxes. So we need to ask: is cutting class size worth the cost?",
+        "In the 1990s, while working at Hebrew University in Jerusalem, I studied this question. I looked at how class size affected fourth and fifth graders in Israel. Israeli schools had very large classes back then. A quick look at the data shows students in bigger classes actually had higher test scores. But this is misleading. What is really going on?",
+        "We call this omitted variables bias. This means we left out some important facts that can give us the wrong idea about how class size affects test scores. In this case, the largest classes were in city schools. City families tend to be wealthier and better educated. Also, children with disabilities or language problems were often put in smaller classes. These kids typically had lower test scores. So students in large and small classes are not comparable. The city kids tend to do well regardless of class size. So how can we tell if smaller classes really help?"
+      ]
+    },
+    {
+      "heading": "Comparing Apples to Apples",
+      "paragraphs": [
+        "The ideal research strategy is a randomized trial. This means assigning students to different class sizes by chance, so the groups are similar in every other way. This way, students in both groups have similar family backgrounds, learning abilities, and language skills. No hidden factors mess up our results. But in real life, randomly assigning kids like this faces strong objections from parents and schools.",
+        "Here is where I got lucky. In Israel, some students ended up in different class sizes almost by chance. Finding these natural experiments is one of my specialties as an econometrician. I look for real-world situations that mimic the random experiments we would like to run but cannot.",
+        "My colleague Victor Lavy and I discovered a perfect natural experiment in Israeli schools. They followed a rule limiting classes to forty students maximum. We called this Maimonides’ rule after a 12th-century scholar \\[1\\]. The rule worked like this: If a school had forty fifth-graders, they would be in one big class. But add just one more kid, and the class had to split in two, dropping the average size to twenty students per class. This forty-student cutoff created a great research opportunity. It gave us our natural experiment.",
+        "This rule lets us compare “apples to apples”—similar kids who just happen to be in different size classes, typically about 20–25 pupils in the smaller classes and 35–40 pupils in the larger classes. Our results show clearly: smaller classes produce higher test scores \\[1\\]. Is this improvement worth the extra cost? No definite answer exists. We cannot measure the full costs vs. long-term benefits for society. But because schools can reduce class size relatively easily, it is worth considering."
+      ]
+    },
+    {
+      "heading": "Improving Schooling Quality",
+      "paragraphs": [
+        "At MIT, my colleagues and I run a research center called Blueprint Labs where we tackle ambitious projects. One project involves New York City’s school system, which serves about one million students. New York publishes basic school quality measures: average test scores, graduation rates, and college attendance. Families use this information to choose schools across the city.",
+        "The problem is that measuring school quality is tricky. Schools serving wealthy families look better because these students tend to do well anywhere. This creates the same bias problem we saw with class sizes. Our project develops better ways for New York to measure school quality. We are creating methods to solve the bias problem and give more accurate estimates. Then we test how families use this information to choose schools.",
+        "This project excites me because it applies ideas I have developed over 30 years to a real-world situation. We will start with middle schools, giving hundreds of thousands of families new information about school quality. This improves schooling especially for low-income children. As an economist, I believe better schools are the best way to reduce poverty."
+      ]
+    },
+    {
+      "heading": "Recommendations For Young Minds",
+      "paragraphs": [
+        "My career rewards me. I do work that I love. But it was not always easy. In high school, I was a poor student. I disliked homework and left school in 11th grade with minimal credentials. When I got to college, I barely knew any math. This made my first economics courses challenging. But I found economics so interesting that I worked hard to catch up.",
+        "Math continued to trouble me throughout college and graduate school. At the start of my PhD, I struggled with advanced math. I failed exams, which was frustrating and exhausting. My love for economics drove me to put in the time and eventually close the gap. Based on this experience, my advice is simple: do not worry too much if you are falling behind. If you find something interesting, that interest will drive you to get the tools you need.",
+        "Later in my career, I faced different challenges. I became interested in natural experiments for studying cause and effect. My colleague Guido Imbens and I developed a theory about extracting information from these situations \\[2, 3\\]. We thought our work was important, but many colleagues disagreed. Our early papers were rejected by journals, which was frustrating.",
+        "We pushed forward. About 10 years later, people started to see our theory’s value. It took another decade for the approach to become widely used. Eventually, in 2021, Guido and I won a Nobel Prize for this work. We proved our critics wrong, but it took persistence. My message to aspiring scholars: academic success requires playing the long game!"
+      ]
+    }
+  ]
+}

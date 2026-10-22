@@ -1,0 +1,128 @@
+{
+  "slug": "invent-our-way-out",
+  "status": "published",
+  "publishAt": "2026-10-14T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "economic growth",
+    "innovation",
+    "history",
+    "GDP",
+    "technology"
+  ],
+  "title": {
+    "en": "Can we invent our way out of our challenges?",
+    "vi": "Liệu ta có thể phát minh để vượt qua thách thức?"
+  },
+  "hook": {
+    "en": "Joel Mokyr won the 2025 Nobel Prize in Economics for explaining what it takes for technology to keep economies growing {nobel-2025}. Yet he is wary of any sentence that begins with 'history teaches us'. In a short essay for young readers, he explains what growth really means, why GDP can mislead, and why he still believes that [g:innovation can solve problems].",
+    "vi": "Joel Mokyr đoạt giải Nobel Kinh tế năm 2025 nhờ làm rõ những điều kiện để công nghệ giúp nền kinh tế tăng trưởng bền lâu {nobel-2025}. Thế nhưng ông lại dè chừng mọi câu mở đầu bằng 'lịch sử dạy chúng ta rằng'. Trong một bài viết ngắn cho độc giả trẻ, ông giải thích tăng trưởng thực sự là gì, vì sao GDP có thể đánh lừa, và vì sao ông vẫn tin rằng [g:đổi mới có thể giải quyết vấn đề]."
+  },
+  "sections": [
+    {
+      "heading_en": "Why study the past?",
+      "heading_vi": "Vì sao phải nghiên cứu quá khứ?",
+      "body_en": "Humans are the only species that studies its own history. Mokyr jokes that his very smart dog has no idea there were dogs a hundred years ago; she mostly cares about her next treat. Some people hope history can predict the future, but he is [y:sceptical]: the past does not repeat itself, especially when technology changes so fast. He studies it because the past is **richer and more diverse** than the present {frym-mokyr}. A biologist who studied only living animals would miss most species that ever lived. In the same way, economies have taken many forms, and studying them shows possibilities we might never notice today.",
+      "body_vi": "Con người là loài duy nhất nghiên cứu lịch sử của chính mình. Mokyr đùa rằng chú chó rất thông minh của ông chẳng hề biết một trăm năm trước cũng có chó; nó chủ yếu quan tâm tới món thưởng tiếp theo. Có người mong lịch sử giúp dự đoán tương lai, nhưng ông [y:hoài nghi]: quá khứ không lặp lại, nhất là khi công nghệ thay đổi nhanh như hiện nay. Ông nghiên cứu quá khứ vì nó **phong phú và đa dạng hơn** hiện tại {frym-mokyr}. Một nhà sinh học chỉ nghiên cứu các loài đang sống sẽ bỏ lỡ phần lớn các loài từng tồn tại. Tương tự, nền kinh tế từng có nhiều hình thái, và tìm hiểu chúng giúp ta thấy những khả năng mà hôm nay có thể không bao giờ nhận ra."
+    },
+    {
+      "heading_en": "What growth means",
+      "heading_vi": "Tăng trưởng nghĩa là gì",
+      "body_en": "When economists talk about **economic growth**, they usually mean that a country produces more goods and services over time. This is often measured with *gross domestic product* (GDP), adjusted for changing prices so that it reflects how much is produced rather than how prices move. Since about 1800, many countries began a long trend of GDP per person growing by roughly [g:1–2% a year]. That may sound small, but year after year it adds up to enormous change. As more countries joined this pattern, the world's total output grew larger and larger over time.",
+      "body_vi": "Khi các nhà kinh tế nói về **tăng trưởng kinh tế**, họ thường muốn nói một quốc gia sản xuất ra nhiều hàng hoá và dịch vụ hơn theo thời gian. Điều này thường được đo bằng *tổng sản phẩm quốc nội* (GDP), đã điều chỉnh theo biến động giá cả để phản ánh lượng sản xuất chứ không phải sự thay đổi của giá. Từ khoảng năm 1800, nhiều quốc gia bắt đầu một xu hướng dài hạn khi GDP bình quân đầu người tăng khoảng [g:1–2% mỗi năm]. Nghe có vẻ nhỏ, nhưng năm này qua năm khác, nó cộng dồn thành những thay đổi khổng lồ. Khi ngày càng nhiều nước bắt nhịp, tổng sản lượng của thế giới ngày càng lớn hơn."
+    },
+    {
+      "heading_en": "What GDP misses",
+      "heading_vi": "Những gì GDP bỏ sót",
+      "body_en": "Yet GDP does not always show how good life is. **Anaesthesia**, invented in the mid-1800s, barely changed GDP, but imagine surgery without it. Mokyr loves classical music: in 1850, hearing it meant going to a concert or learning an instrument, while today a few dollars a month buys almost any recording ever made. Both are huge gains that hardly appear in the statistics. Some things raise GDP [p:without making life better]. During World War II, the US economy grew fast by building tanks and planes, but ordinary people did not live better. GDP is useful, Mokyr says, but an incomplete measure of wellbeing.",
+      "body_vi": "Tuy vậy, GDP không phải lúc nào cũng cho thấy cuộc sống tốt đẹp đến đâu. **Thuốc gây mê**, phát minh vào giữa thế kỷ 19, gần như không làm GDP thay đổi, nhưng hãy thử hình dung một ca phẫu thuật không có nó. Mokyr rất yêu nhạc cổ điển: năm 1850, muốn nghe nhạc phải đến buổi hoà nhạc hoặc tự học chơi đàn, còn ngày nay chỉ vài đô la mỗi tháng là nghe được gần như mọi bản thu từng có. Cả hai đều là bước tiến lớn nhưng hầu như không hiện lên trong số liệu. Có những thứ làm GDP tăng [p:mà không làm cuộc sống tốt hơn]. Trong Thế chiến II, kinh tế Mỹ tăng trưởng nhanh nhờ sản xuất xe tăng và máy bay, nhưng người dân thường không sống tốt hơn. Theo Mokyr, GDP hữu ích nhưng chưa đo đầy đủ chất lượng sống."
+    },
+    {
+      "heading_en": "Three kinds of innovation",
+      "heading_vi": "Ba kiểu đổi mới",
+      "body_en": "For Mokyr, growth is driven mainly by **innovation**: finding better ways to make things, or making new things. He describes three types. *Product innovation* creates something that did not exist, like the first modern car built by Karl Benz in 1885. *Process innovation* makes the same thing with fewer resources: Henry Ford's Model T, introduced in 1908, was built in large numbers with standard parts and machines. *Quality innovation* improves an existing product. Compare a 1960 car with a modern one, which has [g:automatic braking], more safety features, better sound and needs fewer repairs {mokyr-2015}.",
+      "body_vi": "Với Mokyr, tăng trưởng chủ yếu đến từ **đổi mới**: tìm cách tốt hơn để làm ra mọi thứ, hoặc làm ra những thứ mới. Ông mô tả ba kiểu. *Đổi mới sản phẩm* tạo ra thứ chưa từng tồn tại, như chiếc ô tô hiện đại đầu tiên do Karl Benz chế tạo năm 1885. *Đổi mới quy trình* làm ra cùng một thứ với ít nguồn lực hơn: mẫu Model T của Henry Ford, ra mắt năm 1908, được sản xuất hàng loạt bằng linh kiện tiêu chuẩn và máy móc. *Đổi mới chất lượng* cải tiến một sản phẩm sẵn có. Hãy so một chiếc xe năm 1960 với xe hiện đại, có [g:phanh tự động], nhiều tính năng an toàn hơn, âm thanh tốt hơn và ít phải sửa chữa hơn {mokyr-2015}."
+    },
+    {
+      "heading_en": "The dark side of new technology",
+      "heading_vi": "Mặt tối của công nghệ mới",
+      "body_en": "Innovation can also cause harm. In Mokyr's view, some recent technological changes have concentrated [p:extreme wealth] in the hands of a few people who lead very large companies, and that wealth can buy political influence, a serious risk for democracies. He also argues that **social media** has deepened political divisions, because platforms earn more from clicks, and extreme or false content attracts clicks. A further problem is speed. Technology is accelerating, but institutions, the rules and organisations that help societies work, can take [y:decades to change]. He admits he does not know whether they will adapt fast enough.",
+      "body_vi": "Đổi mới cũng có thể gây hại. Theo Mokyr, một số thay đổi công nghệ gần đây đã dồn [p:khối tài sản khổng lồ] vào tay một nhóm nhỏ người đứng đầu các công ty rất lớn, và khối tài sản ấy có thể mua ảnh hưởng chính trị, một nguy cơ nghiêm trọng với các nền dân chủ. Ông cũng cho rằng **mạng xã hội** đã khoét sâu chia rẽ chính trị, vì các nền tảng kiếm nhiều tiền hơn từ lượt nhấp, mà nội dung cực đoan hoặc sai sự thật lại thu hút lượt nhấp. Một vấn đề khác là tốc độ. Công nghệ đang tăng tốc, nhưng thể chế, tức các quy tắc và tổ chức giúp xã hội vận hành, có thể mất [y:hàng thập kỷ mới thay đổi]. Ông thừa nhận mình không biết liệu chúng có thích nghi kịp hay không."
+    },
+    {
+      "heading_en": "Two big challenges",
+      "heading_vi": "Hai thách thức lớn",
+      "body_en": "Mokyr points to two great challenges: **climate change**, and ageing societies in which people have fewer children and live longer, so fewer workers must support more older adults. In both cases, he believes the answer will be [g:technological innovation]. At the 2025 Nobel ceremonies in Stockholm, the chemistry prize went to scientists whose discovery could help capture large amounts of carbon dioxide from the air and store it fairly cheaply. For ageing, robots and automation might help in nursing homes, deliver groceries to people who cannot walk and provide some medical services now given by doctors.",
+      "body_vi": "Mokyr chỉ ra hai thách thức lớn: **biến đổi khí hậu**, và những xã hội già hoá, nơi người ta sinh ít con hơn và sống lâu hơn, nên ít người lao động hơn phải gánh nhiều người cao tuổi hơn. Trong cả hai trường hợp, ông tin rằng lời giải sẽ là [g:đổi mới công nghệ]. Tại lễ trao giải Nobel năm 2025 ở Stockholm, giải Hoá học thuộc về các nhà khoa học có phát hiện giúp thu giữ lượng lớn carbon dioxide từ không khí và lưu trữ khá rẻ. Với vấn đề già hoá, robot và tự động hoá có thể hỗ trợ trong viện dưỡng lão, giao đồ ăn cho người không đi lại được và cung cấp một số dịch vụ y tế hiện do bác sĩ đảm nhận."
+    },
+    {
+      "heading_en": "Can, not will",
+      "heading_vi": "Có thể, chứ không chắc chắn",
+      "body_en": "Mokyr chooses his words carefully. Technology has solved enormous problems in the past, but he is not bold enough to say we [y:will definitely] solve future ones just because we solved earlier ones. What he will say is that we **can** solve them through innovation. He ends with advice that sounds trivial but, he insists, is surprisingly effective: [p:do not do stupid things]. If more people and more countries followed that rule, we would be better able to use innovation to drive growth that truly improves human wellbeing, and to face the big challenges of our time.",
+      "body_vi": "Mokyr chọn từ ngữ rất cẩn trọng. Công nghệ từng giải quyết những vấn đề khổng lồ trong quá khứ, nhưng ông không đủ táo bạo để nói rằng chúng ta [y:chắc chắn sẽ] giải quyết các vấn đề tương lai chỉ vì đã từng làm được. Điều ông dám nói là chúng ta **có thể** giải quyết chúng nhờ đổi mới. Ông kết thúc bằng một lời khuyên nghe có vẻ tầm thường nhưng, theo ông, hiệu quả đến bất ngờ: [p:đừng làm những điều ngu ngốc]. Nếu nhiều người và nhiều quốc gia hơn làm theo nguyên tắc đó, chúng ta sẽ có khả năng tốt hơn để dùng đổi mới thúc đẩy tăng trưởng thực sự nâng cao đời sống con người, và đối mặt với những thách thức lớn của thời đại."
+    }
+  ],
+  "keyPoint": {
+    "en": "Think of GDP as [p:a bathroom scale for an economy]: useful, but it cannot tell muscle from fat. When you judge progress, ask *what actually makes daily life healthier, safer and more enjoyable*, and remember that the same invention can help and harm at once.",
+    "vi": "Hãy coi GDP như [p:chiếc cân sức khoẻ của một nền kinh tế]: hữu ích, nhưng không phân biệt được cơ với mỡ. Khi đánh giá tiến bộ, hãy hỏi *điều gì thực sự giúp cuộc sống hằng ngày khoẻ hơn, an toàn hơn và vui hơn*, và nhớ rằng cùng một phát minh có thể vừa giúp ích vừa gây hại."
+  },
+  "applySteps": {
+    "en": [
+      "List one invention that made your life better but probably costs you almost nothing.",
+      "Before sharing a shocking post online, check where it came from and who benefits from your click.",
+      "Pick one product you use and decide whether its last big change was a product, process or quality innovation."
+    ],
+    "vi": [
+      "Liệt kê một phát minh giúp cuộc sống của bạn tốt hơn nhưng gần như chẳng tốn của bạn đồng nào.",
+      "Trước khi chia sẻ một bài đăng gây sốc, hãy kiểm tra nguồn gốc của nó và ai được lợi từ lượt nhấp của bạn.",
+      "Chọn một sản phẩm bạn đang dùng và xác định thay đổi lớn gần nhất của nó là đổi mới sản phẩm, quy trình hay chất lượng."
+    ]
+  },
+  "references": [
+    {
+      "id": "frym-mokyr",
+      "label": "Mokyr (2026)",
+      "url": "https://doi.org/10.3389/frym.2026.1787869"
+    },
+    {
+      "id": "mokyr-2015",
+      "label": "Mokyr, Vickers & Ziebarth (2015)",
+      "url": "https://doi.org/10.1257/jep.29.3.31"
+    },
+    {
+      "id": "nobel-2025",
+      "label": "Nobel Prize in Economic Sciences 2025",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2025/summary/"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/invent-our-way-out.webp",
+    "provider": "unsplash",
+    "author": "Rayi Christian Wicaksono",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/6PF6DaiWz48"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "kids-frontiersin-org-can-we-invent-our-way-out-of-challenges",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Joel Mokyr"
+    ],
+    "originalTitle": "Can We Invent Our Way Out of Challenges?",
+    "originalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1787869",
+    "publisher": "Frontiers for Young Minds",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoQABwAPu1kqU2ppaQiMAgBMB2JaQABHvtqu3uCc9TSF70aAAD++IpZWRGLjCH7YR64M7BTPBdLezB09D0XNYK43+O27mdyoLETyp9C5yf+VjlipND7ktCeiWBPIfmsJuihVJ6uglHY5HcH0NNitqrdfavUMPdKt7oNL7UCAAA=",
+  "dominant": "#5c5c5c"
+}

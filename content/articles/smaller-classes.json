@@ -1,0 +1,128 @@
+{
+  "slug": "smaller-classes",
+  "status": "published",
+  "publishAt": "2026-10-16T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "education",
+    "schools",
+    "economics",
+    "research methods",
+    "causality"
+  ],
+  "title": {
+    "en": "Do smaller classes really help? A Nobel economist's answer",
+    "vi": "Lớp học nhỏ có thực sự tốt hơn? Câu trả lời của một nhà kinh tế đoạt Nobel"
+  },
+  "hook": {
+    "en": "Parents, teachers and students often believe that smaller classes mean better learning. But smaller classes cost money: more teachers, more classrooms, higher taxes. Is it worth it? Joshua Angrist, who shared the 2021 Nobel Prize in Economics, found a clever way to answer that question, thanks to a rule written by a [y:12th-century scholar].",
+    "vi": "Phụ huynh, giáo viên và học sinh thường tin rằng lớp học nhỏ đồng nghĩa với học tốt hơn. Nhưng lớp nhỏ thì tốn kém: thêm giáo viên, thêm phòng học, thuế cao hơn. Liệu có đáng không? Joshua Angrist, người cùng nhận giải Nobel Kinh tế năm 2021, đã tìm ra một cách khéo léo để trả lời câu hỏi đó, nhờ một quy tắc do [y:một học giả thế kỷ 12] đặt ra."
+  },
+  "sections": [
+    {
+      "heading_en": "Looking for the 'why'",
+      "heading_vi": "Đi tìm câu hỏi 'vì sao'",
+      "body_en": "Angrist studies how people's decisions shape their lives. He asks practical questions: do smaller classes help students get better grades? How do job markets set wages? His field is **econometrics**, the use of data to find [g:cause-and-effect relationships] in economic life {frym-angrist}. That sounds simple, but it is hard. Two things can move together without one causing the other. Econometricians build tools to separate real causes from mere coincidences, and schools turned out to be one of the best places to test those tools.",
+      "body_vi": "Angrist nghiên cứu cách các quyết định của con người định hình cuộc đời họ. Ông đặt những câu hỏi thực tế: lớp nhỏ có giúp học sinh đạt điểm cao hơn không? Thị trường lao động xác định mức lương thế nào? Lĩnh vực của ông là **kinh tế lượng** (*econometrics*), dùng dữ liệu để tìm [g:quan hệ nhân quả] trong đời sống kinh tế {frym-angrist}. Nghe thì đơn giản, nhưng thực ra rất khó. Hai thứ có thể cùng thay đổi mà thứ này không hề gây ra thứ kia. Các nhà kinh tế lượng xây dựng công cụ để tách nguyên nhân thật khỏi sự trùng hợp, và trường học hoá ra là một trong những nơi tốt nhất để thử nghiệm các công cụ ấy."
+    },
+    {
+      "heading_en": "A misleading first look",
+      "heading_vi": "Cái nhìn đầu tiên dễ gây hiểu lầm",
+      "body_en": "In the 1990s, Angrist studied fourth and fifth graders in Israel, where classes were very large at the time. A quick look at the data showed something surprising: students in [y:bigger classes had higher test scores]. But this was misleading. The largest classes were in city schools, where families tended to be wealthier and better educated. Meanwhile, children with disabilities or language difficulties were often placed in smaller classes. Economists call this **omitted variables bias**: leaving out important facts gives you the wrong idea. City children tended to do well whatever the size of their class.",
+      "body_vi": "Vào thập niên 1990, Angrist nghiên cứu học sinh lớp bốn và lớp năm ở Israel, nơi các lớp học khi đó rất đông. Thoạt nhìn, dữ liệu cho thấy một điều bất ngờ: học sinh [y:lớp đông lại có điểm thi cao hơn]. Nhưng điều này dễ gây hiểu lầm. Các lớp đông nhất nằm ở trường thành phố, nơi các gia đình thường khá giả và có học vấn cao hơn. Trong khi đó, trẻ khuyết tật hoặc gặp khó khăn về ngôn ngữ thường được xếp vào lớp nhỏ hơn. Các nhà kinh tế gọi đây là **sai lệch do biến bị bỏ sót** (*omitted variables bias*): bỏ qua những yếu tố quan trọng sẽ khiến ta hiểu sai. Trẻ ở thành phố thường học tốt dù lớp đông hay vắng."
+    },
+    {
+      "heading_en": "The ideal experiment",
+      "heading_vi": "Thí nghiệm lý tưởng",
+      "body_en": "The best way to find out would be a **randomised trial**: assign students to small or large classes [y:by chance], so that the groups are alike in every other way, from family background to learning ability. Then no hidden factor could spoil the result. In real life, though, parents and schools strongly object to having children assigned at random. So Angrist looks for **natural experiments**, real situations that happen to mimic the random experiments researchers would like to run but cannot. Finding them, he says, is one of his specialities.",
+      "body_vi": "Cách tốt nhất để tìm ra câu trả lời là một **thử nghiệm ngẫu nhiên**: xếp học sinh vào lớp nhỏ hoặc lớp lớn [y:một cách tình cờ], để các nhóm giống nhau ở mọi mặt khác, từ hoàn cảnh gia đình đến khả năng học tập. Khi đó, không yếu tố ẩn nào làm sai lệch kết quả. Tuy nhiên, ngoài đời thực, phụ huynh và nhà trường phản đối mạnh việc xếp trẻ một cách ngẫu nhiên. Vì vậy, Angrist đi tìm những **thí nghiệm tự nhiên**, các tình huống có thật tình cờ mô phỏng được thí nghiệm ngẫu nhiên mà nhà nghiên cứu muốn làm nhưng không thể. Ông nói việc tìm ra chúng là một trong những sở trường của mình."
+    },
+    {
+      "heading_en": "Maimonides' rule",
+      "heading_vi": "Quy tắc Maimonides",
+      "body_en": "With his colleague Victor Lavy, Angrist found a perfect natural experiment. Israeli schools followed a rule that limited classes to [p:40 students]. They named it *Maimonides' rule*, after the 12th-century scholar {angrist-lavy-1999}. If a school had 40 fifth graders, they formed one big class. Add just one more child, and the class had to split in two, dropping the average size to about 20. This cut-off let them compare [g:apples with apples]: similar children who simply happened to land in classes of about 20 to 25 pupils or about 35 to 40.",
+      "body_vi": "Cùng đồng nghiệp Victor Lavy, Angrist đã tìm ra một thí nghiệm tự nhiên hoàn hảo. Các trường ở Israel tuân theo quy định giới hạn mỗi lớp tối đa [p:40 học sinh]. Họ đặt tên nó là *quy tắc Maimonides*, theo tên học giả thế kỷ 12 {angrist-lavy-1999}. Nếu một trường có 40 học sinh lớp năm, các em học chung một lớp lớn. Chỉ cần thêm một em nữa, lớp phải tách làm đôi, sĩ số trung bình giảm còn khoảng 20. Ngưỡng cắt này cho phép họ [g:so sánh táo với táo]: những đứa trẻ tương tự nhau, chỉ tình cờ rơi vào lớp khoảng 20 đến 25 em hoặc khoảng 35 đến 40 em."
+    },
+    {
+      "heading_en": "What they found",
+      "heading_vi": "Họ đã tìm ra điều gì",
+      "body_en": "The results were clear: [g:smaller classes produce higher test scores]. Is the improvement worth the extra cost? Angrist is honest that no definite answer exists, because we cannot measure all the costs and long-term benefits for society. But since schools can reduce class size relatively easily, he thinks it is worth considering. Today, at MIT's **Blueprint Labs**, he works with New York City's school system, which serves about a million students, to measure school quality better. Schools serving wealthy families look better simply because their students do well anywhere, the same bias problem as before.",
+      "body_vi": "Kết quả rất rõ ràng: [g:lớp nhỏ hơn mang lại điểm thi cao hơn]. Liệu sự cải thiện đó có xứng với chi phí tăng thêm? Angrist thẳng thắn thừa nhận chưa có câu trả lời chắc chắn, vì ta không thể đo hết mọi chi phí và lợi ích lâu dài cho xã hội. Nhưng vì trường học có thể giảm sĩ số tương đối dễ dàng, ông cho rằng điều này đáng cân nhắc. Hiện nay, tại **Blueprint Labs** của MIT, ông làm việc với hệ thống trường học của thành phố New York, phục vụ khoảng một triệu học sinh, để đo chất lượng trường học chính xác hơn. Những trường phục vụ gia đình khá giả trông tốt hơn chỉ vì học sinh của họ học tốt ở bất cứ đâu, vẫn là vấn đề sai lệch như trước."
+    },
+    {
+      "heading_en": "A poor student who won a Nobel",
+      "heading_vi": "Cậu học trò kém đoạt giải Nobel",
+      "body_en": "Angrist's own path was not smooth. In high school he was a [p:poor student]: he disliked homework and left school in 11th grade with few qualifications. When he reached college he barely knew any maths, which made his first economics courses hard. But he found economics so interesting that he worked hard to catch up. Maths kept troubling him, and early in his PhD he failed exams. His advice is simple: [g:do not worry too much] if you are falling behind. If you find something interesting, that interest will drive you to get the tools you need.",
+      "body_vi": "Con đường của chính Angrist không hề bằng phẳng. Thời trung học, ông là [p:một học sinh kém]: ghét làm bài tập về nhà và rời trường năm lớp 11 với rất ít bằng cấp. Khi vào đại học, ông gần như không biết gì về toán, khiến những môn kinh tế đầu tiên trở nên rất khó. Nhưng ông thấy kinh tế học thú vị đến mức đã nỗ lực hết sức để đuổi kịp. Toán học tiếp tục làm khó ông, và vào đầu chương trình tiến sĩ, ông đã trượt nhiều bài thi. Lời khuyên của ông rất đơn giản: [g:đừng quá lo lắng] nếu bạn đang tụt lại phía sau. Nếu bạn tìm thấy điều mình hứng thú, chính niềm hứng thú ấy sẽ thôi thúc bạn trang bị những công cụ cần thiết."
+    },
+    {
+      "heading_en": "Playing the long game",
+      "heading_vi": "Kiên trì đường dài",
+      "body_en": "Later, Angrist and his colleague Guido Imbens developed a theory for extracting cause and effect from natural experiments {angrist-imbens-1996}. They believed it mattered, but many colleagues disagreed, and their early papers were [y:rejected by journals]. They kept going. About ten years later, people began to see the value of their theory, and it took another decade for the approach to become widely used. In 2021, Angrist and Imbens shared the Nobel Prize with David Card. As an economist, Angrist believes better schools are the best way to reduce poverty. His message to young scholars: success requires [g:playing the long game].",
+      "body_vi": "Về sau, Angrist và đồng nghiệp Guido Imbens xây dựng một lý thuyết để rút ra quan hệ nhân quả từ các thí nghiệm tự nhiên {angrist-imbens-1996}. Họ tin nó quan trọng, nhưng nhiều đồng nghiệp không đồng tình, và những bài báo đầu tiên của họ [y:bị các tạp chí từ chối]. Họ vẫn kiên trì. Khoảng mười năm sau, người ta bắt đầu thấy giá trị của lý thuyết này, và phải thêm một thập kỷ nữa phương pháp mới được dùng rộng rãi. Năm 2021, Angrist và Imbens cùng nhận giải Nobel với David Card. Là một nhà kinh tế, Angrist tin rằng trường học tốt hơn là cách hiệu quả nhất để giảm nghèo. Thông điệp của ông gửi các nhà nghiên cứu trẻ: thành công đòi hỏi [g:sự kiên trì đường dài]."
+    }
+  ],
+  "keyPoint": {
+    "en": "A simple comparison can fool you, like [p:judging a doctor by how healthy their patients are] when the healthiest people choose them. Before you conclude that one thing causes another, pause and ask *who ended up in each group, and why*.",
+    "vi": "Một phép so sánh đơn giản có thể đánh lừa bạn, giống như [p:đánh giá bác sĩ qua sức khoẻ bệnh nhân của họ] trong khi người khoẻ nhất lại chọn đúng bác sĩ ấy. Trước khi kết luận điều này gây ra điều kia, hãy dừng lại và hỏi *ai đã rơi vào từng nhóm, và vì sao*."
+  },
+  "applySteps": {
+    "en": [
+      "Find a news headline that claims one thing causes another and list one hidden factor that could explain it.",
+      "Think of a subject you struggle with and name one thing about it you genuinely find interesting.",
+      "Ask a teacher or parent how many students were in their class at your age and what difference it made."
+    ],
+    "vi": [
+      "Tìm một tiêu đề báo khẳng định điều này gây ra điều kia và liệt kê một yếu tố ẩn có thể giải thích nó.",
+      "Nghĩ về một môn học bạn đang gặp khó và gọi tên một điều ở nó mà bạn thật sự thấy thú vị.",
+      "Hỏi một thầy cô hoặc phụ huynh xem lớp của họ có bao nhiêu học sinh khi họ bằng tuổi bạn, và điều đó tạo khác biệt gì."
+    ]
+  },
+  "references": [
+    {
+      "id": "frym-angrist",
+      "label": "Angrist (2026)",
+      "url": "https://doi.org/10.3389/frym.2026.1662646"
+    },
+    {
+      "id": "angrist-lavy-1999",
+      "label": "Angrist & Lavy (1999)",
+      "url": "https://doi.org/10.1162/003355399556061"
+    },
+    {
+      "id": "angrist-imbens-1996",
+      "label": "Angrist, Imbens & Rubin (1996)",
+      "url": "https://doi.org/10.2307/2291629"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/smaller-classes.webp",
+    "provider": "unsplash",
+    "author": "Patrick Tomasso",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/Oaqk7qqNh_c"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "kids-frontiersin-org-making-schools-better",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Joshua Angrist"
+    ],
+    "originalTitle": "Making Schools Better",
+    "originalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1662646",
+    "publisher": "Frontiers for Young Minds",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoQABwAPu1kqk4ppaQiMAgBMB2JYwCdMoAB82nisH/zjlpP0AD81oHGlL+W58PRcqvGVobqontligGF+NTM1pX6s1v2xWHaUfvwiVfgi51+KLSnLk3LnPTgjsZ3A3n4GW0eE1v/5gt5dKjToM+SwPIB7yyF0tE+YEC4GnPrdb5ClEQVf2efwAAA",
+  "dominant": "#79695f"
+}

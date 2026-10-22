@@ -1,0 +1,139 @@
+{
+  "slug": "sleep-temperature",
+  "status": "published",
+  "publishAt": "2026-10-13T00:00:00.000Z",
+  "category": "health",
+  "tags": [
+    "sleep",
+    "temperature",
+    "health",
+    "habits",
+    "climate"
+  ],
+  "title": {
+    "en": "Too hot, too cold or just right: temperature and sleep",
+    "vi": "Quá nóng, quá lạnh hay vừa đủ: nhiệt độ và giấc ngủ"
+  },
+  "hook": {
+    "en": "You probably know the usual sleep advice: a regular bedtime, a dark room, no screens late at night. But there is one factor many people overlook, even though it can keep you tossing and turning for hours. It is the [y:temperature of your bedroom]. As summers get hotter, understanding how heat and cold shape our sleep matters more than ever.",
+    "vi": "Có lẽ bạn đã quen với những lời khuyên về giấc ngủ: đi ngủ đúng giờ, phòng tối, không dùng màn hình khi đã khuya. Nhưng có một yếu tố nhiều người bỏ qua, dù nó có thể khiến bạn trằn trọc hàng giờ. Đó là [y:nhiệt độ phòng ngủ]. Khi mùa hè ngày càng nóng, hiểu được nóng và lạnh định hình giấc ngủ ra sao càng trở nên quan trọng."
+  },
+  "sections": [
+    {
+      "heading_en": "Two kinds of sleep",
+      "heading_vi": "Hai kiểu ngủ",
+      "body_en": "Sleep is made of two main types. **NREM sleep** is the sleep you enter first when you go to bed. It has three stages, each deeper than the last, and the deepest is called *slow-wave sleep*, which supports memory and the immune system and helps you feel refreshed the next day. **REM sleep** brings intense brain activity and rapid eye movements, and it is when most dreaming happens. It matters for brain development and for [y:processing emotions] {frym-sleep}. Each night, you cycle through these stages several times before you wake up.",
+      "body_vi": "Giấc ngủ gồm hai kiểu chính. **Giấc ngủ NREM** là giấc ngủ bạn bước vào đầu tiên khi lên giường. Nó có ba giai đoạn, giai đoạn sau sâu hơn giai đoạn trước, và giai đoạn sâu nhất gọi là *giấc ngủ sóng chậm*, giúp củng cố trí nhớ, hỗ trợ hệ miễn dịch và khiến bạn thấy sảng khoái vào hôm sau. **Giấc ngủ REM** đi kèm hoạt động não mạnh mẽ và chuyển động mắt nhanh, và đây là lúc phần lớn giấc mơ xuất hiện. Nó quan trọng cho sự phát triển của não và việc [y:xử lý cảm xúc] {frym-sleep}. Mỗi đêm, bạn đi qua các giai đoạn này vài lần trước khi thức dậy."
+    },
+    {
+      "heading_en": "What is the best temperature?",
+      "heading_vi": "Nhiệt độ nào là tốt nhất?",
+      "body_en": "Your body temperature and the room temperature are the two main parts of your **thermal environment** for sleep, but airflow, bedding and nightclothes matter too. Finding one perfect number has proven difficult. In laboratories, people sleeping with minimal clothing and no bedding slept best at about 29°C. At home, with blankets and pyjamas, that is probably too warm. Studies in real homes found that sleep was best between [g:20 and 28°C] {lan-lian-2016}. Season and humidity change how warm a room feels, and people differ: women, for example, are more sensitive to temperature changes.",
+      "body_vi": "Thân nhiệt và nhiệt độ phòng là hai thành phần chính của **môi trường nhiệt** khi ngủ, nhưng luồng gió, chăn gối và đồ ngủ cũng có vai trò. Việc tìm ra một con số hoàn hảo hoá ra rất khó. Trong phòng thí nghiệm, khi ngủ với rất ít quần áo và không đắp chăn, người ta ngủ ngon nhất ở khoảng 29°C. Ở nhà, với chăn và đồ ngủ, mức này có lẽ quá ấm. Các nghiên cứu trong nhà ở thực tế cho thấy giấc ngủ tốt nhất trong khoảng [g:20 đến 28°C] {lan-lian-2016}. Mùa và độ ẩm làm thay đổi cảm giác nóng lạnh, và mỗi người mỗi khác: chẳng hạn, phụ nữ nhạy cảm hơn với thay đổi nhiệt độ."
+    },
+    {
+      "heading_en": "When the room is wrong",
+      "heading_vi": "Khi căn phòng không phù hợp",
+      "body_en": "Even short periods of heat or cold during the night can [p:disrupt sleep]. Temperatures above or below the comfortable range increase the time it takes to fall asleep, which scientists call *sleep onset latency*. Warmer rooms also reduce the total amount of sleep, and people who sleep in them say they did not sleep well. Heat can break up both slow-wave sleep and REM sleep, while cold mainly affects REM. Waking up often lowers your **sleep efficiency**, the share of time in bed that you actually spend asleep, and it is highest when the room is within the comfortable range.",
+      "body_vi": "Ngay cả những khoảng nóng hoặc lạnh ngắn trong đêm cũng có thể [p:phá vỡ giấc ngủ]. Nhiệt độ cao hơn hoặc thấp hơn khoảng dễ chịu làm tăng thời gian cần để chìm vào giấc ngủ, điều mà các nhà khoa học gọi là *độ trễ khởi phát giấc ngủ*. Phòng ấm hơn cũng làm giảm tổng thời gian ngủ, và người ngủ trong đó cho biết họ ngủ không ngon. Nóng có thể làm gián đoạn cả giấc ngủ sóng chậm lẫn REM, còn lạnh chủ yếu ảnh hưởng tới REM. Thức giấc nhiều lần làm giảm **hiệu quả giấc ngủ**, tức tỷ lệ thời gian nằm trên giường mà bạn thực sự ngủ, và hiệu quả này cao nhất khi phòng ở trong khoảng dễ chịu."
+    },
+    {
+      "heading_en": "Why dreams are fragile",
+      "heading_vi": "Vì sao giấc mơ mong manh",
+      "body_en": "Why is REM sleep so easily disturbed by changes in temperature? During REM, your muscles are temporarily paralysed, a state called **atonia**. This stops you from acting out your dreams, but it also means your body cannot [y:shiver or sweat] to adjust to heat or cold, as it would during NREM sleep or when you are awake. On top of that, the brain area that senses and controls temperature is less sensitive during REM {okamoto-mizuno-2012}. So a room that slowly heats up or cools down at night hits your dream sleep hardest.",
+      "body_vi": "Vì sao giấc ngủ REM lại dễ bị nhiệt độ làm xáo trộn đến vậy? Trong giai đoạn REM, cơ bắp của bạn tạm thời bị tê liệt, trạng thái gọi là **mất trương lực cơ** (*atonia*). Điều này giúp bạn không làm theo giấc mơ, nhưng cũng có nghĩa là cơ thể không thể [y:run lên hay đổ mồ hôi] để thích nghi với nóng lạnh như khi ở giấc ngủ NREM hay lúc thức. Thêm vào đó, vùng não cảm nhận và điều chỉnh nhiệt độ cũng kém nhạy hơn trong REM {okamoto-mizuno-2012}. Vì thế, một căn phòng nóng dần hoặc lạnh dần trong đêm ảnh hưởng nặng nhất tới giấc ngủ mơ của bạn."
+    },
+    {
+      "heading_en": "Warm up to cool down",
+      "heading_vi": "Làm ấm để hạ nhiệt",
+      "body_en": "What about the half-hour before bed? In one clever study, people spent 30 minutes at 23°C, 26°C or 29°C, then all slept in a room set at 24°C while their brain waves were recorded. Those who had spent the time before bed in the [g:warmest room] fell asleep faster, woke up less and slept longer {zhang-2019}. They also felt more satisfied with their sleep and found it easier to wake up. Other mammals do something similar: cats curl up on warm blankets, mice build warmer nests when it gets cold, and chimpanzees choose warm shelters.",
+      "body_vi": "Còn nửa giờ trước khi ngủ thì sao? Trong một nghiên cứu khéo léo, người tham gia ở 30 phút trong phòng 23°C, 26°C hoặc 29°C, sau đó tất cả cùng ngủ trong phòng đặt ở 24°C trong khi sóng não được ghi lại. Những người trải qua quãng thời gian trước khi ngủ trong [g:phòng ấm nhất] ngủ nhanh hơn, ít thức giấc hơn và ngủ lâu hơn {zhang-2019}. Họ cũng hài lòng hơn với giấc ngủ và thấy dậy dễ hơn. Các loài thú khác cũng làm điều tương tự: mèo cuộn mình trên chăn ấm, chuột làm tổ ấm hơn khi trời lạnh, còn tinh tinh chọn nơi trú ẩn ấm áp."
+    },
+    {
+      "heading_en": "The thermostat in your brain",
+      "heading_vi": "Bộ điều nhiệt trong não bạn",
+      "body_en": "Temperature and sleep are linked because they share a control centre. The brain area involved in sleep, the **hypothalamus**, also controls body temperature. Your body stays around 37°C, but it is usually a little higher during the day and starts to fall in the evening. Sleep becomes more likely when the hypothalamus senses this drop, which happens as heat escapes through the skin of your [y:hands and feet] {harding-2019}. Warming up before bed starts this heat loss, which helps switch on sleep-promoting brain cells. A room or bedding that traps heat can block it.",
+      "body_vi": "Nhiệt độ và giấc ngủ gắn bó với nhau vì chúng có chung một trung tâm điều khiển. Vùng não liên quan đến giấc ngủ, **vùng dưới đồi** (*hypothalamus*), cũng điều khiển thân nhiệt. Cơ thể bạn giữ ở khoảng 37°C, nhưng thường cao hơn một chút vào ban ngày và bắt đầu giảm vào buổi tối. Giấc ngủ dễ đến hơn khi vùng dưới đồi cảm nhận được sự sụt giảm này, diễn ra khi nhiệt thoát ra qua da [y:bàn tay và bàn chân] {harding-2019}. Làm ấm cơ thể trước khi ngủ sẽ khởi động quá trình thoát nhiệt ấy, giúp kích hoạt các tế bào não thúc đẩy giấc ngủ. Một căn phòng hay bộ chăn giữ nhiệt quá mức có thể cản trở điều đó."
+    },
+    {
+      "heading_en": "Setting the stage for sleep",
+      "heading_vi": "Chuẩn bị cho giấc ngủ",
+      "body_en": "The authors conclude that a bedroom with the right temperature can be [g:as important as a regular bedtime routine]. Temperature swings make it harder to fall asleep and reduce total sleep, especially REM sleep. Small habits help. Before bed, a warm bath, a warm blanket or suitable nightclothes can shorten the journey into sleep. In summer, keeping the bedroom cool and well ventilated can prevent heat from waking you up. As climate change brings more hot nights to more people, paying attention to the [p:temperature of where we sleep] is becoming part of looking after our health.",
+      "body_vi": "Các tác giả kết luận rằng một phòng ngủ có nhiệt độ phù hợp có thể [g:quan trọng ngang với thói quen đi ngủ đúng giờ]. Nhiệt độ dao động khiến ta khó ngủ hơn và làm giảm tổng thời gian ngủ, nhất là giấc ngủ REM. Những thói quen nhỏ có thể giúp ích. Trước khi ngủ, tắm nước ấm, đắp chăn ấm hoặc mặc đồ ngủ phù hợp có thể rút ngắn hành trình vào giấc ngủ. Vào mùa hè, giữ phòng ngủ mát và thông thoáng có thể ngăn cái nóng đánh thức bạn. Khi biến đổi khí hậu mang thêm nhiều đêm nóng tới nhiều người hơn, để ý tới [p:nhiệt độ nơi ta ngủ] đang trở thành một phần của việc chăm sóc sức khoẻ."
+    }
+  ],
+  "keyPoint": {
+    "en": "Falling asleep is like [p:a train that departs when the temperature drops]: your body needs to shed heat through your hands and feet. Warm up a little before bed, then sleep in a room that is *comfortably cool, not cold*, and keep it steady through the night.",
+    "vi": "Chìm vào giấc ngủ giống như [p:một chuyến tàu chỉ khởi hành khi nhiệt độ hạ xuống]: cơ thể cần toả nhiệt qua bàn tay và bàn chân. Hãy làm ấm người một chút trước khi ngủ, rồi ngủ trong căn phòng *mát dễ chịu chứ không lạnh*, và giữ nhiệt độ ổn định suốt đêm."
+  },
+  "applySteps": {
+    "en": [
+      "Check your bedroom temperature tonight and note whether it falls between 20 and 28°C.",
+      "Take a warm shower or put on warm socks 30 minutes before bed for three nights.",
+      "On hot nights, open a window or use a fan to keep air moving rather than piling on bedding."
+    ],
+    "vi": [
+      "Tối nay hãy kiểm tra nhiệt độ phòng ngủ và ghi lại xem nó có nằm trong khoảng 20 đến 28°C không.",
+      "Trong ba đêm, hãy tắm nước ấm hoặc đi tất ấm 30 phút trước khi ngủ.",
+      "Vào những đêm nóng, hãy mở cửa sổ hoặc bật quạt cho không khí lưu thông thay vì đắp nhiều chăn."
+    ]
+  },
+  "references": [
+    {
+      "id": "frym-sleep",
+      "label": "Gardner & Hadjimarkou (2026)",
+      "url": "https://doi.org/10.3389/frym.2026.1649370"
+    },
+    {
+      "id": "lan-lian-2016",
+      "label": "Lan & Lian (2016)",
+      "url": "https://doi.org/10.1016/j.buildenv.2016.01.017"
+    },
+    {
+      "id": "okamoto-mizuno-2012",
+      "label": "Okamoto-Mizuno & Mizuno (2012)",
+      "url": "https://doi.org/10.1186/1880-6805-31-14"
+    },
+    {
+      "id": "zhang-2019",
+      "label": "Zhang, Cao & Zhu (2019)",
+      "url": "https://doi.org/10.1016/j.buildenv.2018.11.035"
+    },
+    {
+      "id": "harding-2019",
+      "label": "Harding, Franks & Wisden (2019)",
+      "url": "https://doi.org/10.3389/fnins.2019.00336"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/sleep-temperature.webp",
+    "provider": "unsplash",
+    "author": "Vashishtha Jogi",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "kids-frontiersin-org-too-hot-too-cold-or-just-right-the-effects-of-temperature-o",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Jack R. Gardner",
+      "Maria M. Hadjimarkou"
+    ],
+    "originalTitle": "Too Hot, Too Cold, or Just Right? The Effects of Temperature on Sleep",
+    "originalUrl": "https://kids.frontiersin.org/articles/10.3389/frym.2026.1649370",
+    "publisher": "Frontiers for Young Minds",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JbACdOQAAeqvXh2k+RDKdAAD++SsyWiXgnJ2aTsn8UA5WZ60j59hd9Wv8lNREtGb9G+ZEBtFymm8t4Cxn8rAZKugAAA==",
+  "dominant": "#043814"
+}
