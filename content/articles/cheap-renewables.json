@@ -1,0 +1,134 @@
+{
+  "slug": "cheap-renewables",
+  "status": "published",
+  "publishAt": "2026-10-12T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "renewable energy",
+    "solar power",
+    "learning curve",
+    "Wright's law",
+    "Moore's law",
+    "electricity prices"
+  ],
+  "title": {
+    "en": "Why did renewables become so cheap so fast?",
+    "vi": "Vì sao năng lượng tái tạo rẻ đi nhanh đến vậy?"
+  },
+  "hook": {
+    "en": "In 1956, one watt of solar power cost about $1,865. At that price, a single panel of the kind people now put on their roofs would have cost more than half a million dollars. Today, power from new solar and wind farms is cheaper than power from new coal plants in most of the world. How did a space-age luxury become the cheapest electricity on Earth?",
+    "vi": "Năm 1956, một watt điện mặt trời có giá khoảng 1.865 đô la. Với mức giá đó, một tấm pin loại người ta vẫn lắp trên mái nhà hôm nay sẽ tốn hơn nửa triệu đô la. Giờ đây, điện từ các trang trại năng lượng mặt trời và gió mới đã rẻ hơn điện từ nhà máy than mới ở phần lớn thế giới. Làm sao một món xa xỉ của thời đại vũ trụ lại trở thành nguồn điện rẻ nhất hành tinh?"
+  },
+  "sections": [
+    {
+      "heading_en": "Why the world still burns fossil fuels",
+      "heading_vi": "Vì sao thế giới vẫn đốt nhiên liệu hoá thạch",
+      "body_en": "Coal, oil and gas still provide [p:79% of the world's energy] {roser-2020}. They account for 87% of global CO₂ emissions, and the air pollution they cause kills about [p:3.6 million people] every year, roughly six times the death toll of all murders, wars and terrorist attacks combined. Renewables and nuclear power are orders of magnitude safer and cleaner. So why do fossil fuels dominate? Economist **Max Roser** gives a blunt answer: in the past, they were simply [y:cheaper] than every alternative.",
+      "body_vi": "Than, dầu và khí vẫn cung cấp [p:79% năng lượng của thế giới] {roser-2020}. Chúng chiếm 87% lượng phát thải CO₂ toàn cầu, và ô nhiễm không khí do chúng gây ra giết chết khoảng [p:3,6 triệu người] mỗi năm, gấp khoảng sáu lần tổng số người chết vì giết người, chiến tranh và khủng bố cộng lại. Năng lượng tái tạo và điện hạt nhân an toàn và sạch hơn nhiều bậc. Vậy vì sao nhiên liệu hoá thạch vẫn thống trị? Nhà kinh tế học **Max Roser** trả lời thẳng: trong quá khứ, chúng đơn giản là [y:rẻ hơn] mọi lựa chọn khác."
+    },
+    {
+      "heading_en": "A fair way to compare prices",
+      "heading_vi": "Cách so sánh giá cho công bằng",
+      "body_en": "Coal supplies 37% of the world's electricity and gas another 24%. To compare power plants on equal terms, analysts use the **levelised cost of energy** (*LCOE*) {lazard}. Imagine you are about to build a power station: the LCOE is the minimum price your customers must pay for the plant to [g:break even over its lifetime]. It includes building the plant, buying fuel and running it. It leaves out system-wide costs, such as storage for times when the wind drops, but it decides which plants investors are willing to build.",
+      "body_vi": "Than cung cấp 37% điện năng thế giới, khí đốt thêm 24%. Để so sánh các nhà máy điện một cách công bằng, giới phân tích dùng **chi phí năng lượng quy dẫn** (*levelised cost of energy, LCOE*) {lazard}. Hãy hình dung bạn sắp xây một nhà máy điện: LCOE là mức giá thấp nhất khách hàng phải trả để nhà máy [g:hoà vốn trong suốt vòng đời]. Con số này gồm chi phí xây dựng, mua nhiên liệu và vận hành. Nó chưa tính chi phí của cả hệ thống, như lưu trữ điện khi trời lặng gió, nhưng chính nó quyết định nhà đầu tư sẵn sàng xây loại nhà máy nào."
+    },
+    {
+      "heading_en": "A price collapse without subsidies",
+      "heading_vi": "Giá sụp đổ, không cần trợ giá",
+      "body_en": "Fifteen years ago it was not even close: solar power was more than three times as expensive as coal. Electricity from large solar farms cost [p:$496 per megawatt-hour] in 2009; within 15 years its price fell by [p:88%], and these figures are without subsidies. Roser offers a comparison: if a flat that rented for $2,500 a month in 2009 had become cheaper at the same pace, it would cost about $300 by 2024. Builders noticed. In 2019, renewables made up [g:72% of all new power capacity] added worldwide.",
+      "body_vi": "Mười lăm năm trước, hai bên còn chưa thể so: điện mặt trời đắt hơn điện than hơn ba lần. Điện từ các trang trại điện mặt trời lớn có giá [p:496 đô la mỗi megawatt-giờ] năm 2009; trong 15 năm, giá giảm [p:88%], và đây là con số chưa có trợ giá. Roser đưa ra một phép so sánh: nếu một căn hộ thuê 2.500 đô la mỗi tháng năm 2009 rẻ đi với tốc độ tương tự, đến năm 2024 nó chỉ còn khoảng 300 đô la. Các nhà đầu tư đã nhận ra điều đó. Năm 2019, năng lượng tái tạo chiếm [g:72% công suất điện mới] được bổ sung trên toàn thế giới."
+    },
+    {
+      "heading_en": "When the fuel arrives for free",
+      "heading_vi": "Khi nhiên liệu tự tìm đến",
+      "body_en": "The cost of fossil and nuclear power depends mostly on two things: the fuel and the cost of running the plant. Renewable plants are different. Their fuel does not have to be dug out of the ground; [g:the wind and the sunlight come to them]. What sets the price of renewable power is the cost of *the technology itself*. So to understand why solar power became cheap, we need to understand why solar panels did. In 1956, one watt of capacity cost $1,865 in today's money, which puts a modern 320-watt panel at [p:$596,800].",
+      "body_vi": "Giá điện hoá thạch và hạt nhân phụ thuộc chủ yếu vào hai thứ: nhiên liệu và chi phí vận hành nhà máy. Nhà máy năng lượng tái tạo thì khác. Nhiên liệu của chúng không phải đào lên từ lòng đất; [g:gió và nắng tự tìm đến]. Thứ quyết định giá điện tái tạo là chi phí của *chính công nghệ*. Vì vậy, muốn hiểu vì sao điện mặt trời rẻ đi, ta phải hiểu vì sao tấm pin mặt trời rẻ đi. Năm 1956, mỗi watt công suất có giá 1.865 đô la (quy theo giá hiện nay), tức một tấm pin 320 watt ngày nay sẽ có giá [p:596.800 đô la]."
+    },
+    {
+      "heading_en": "From satellites to lighthouses",
+      "heading_vi": "Từ vệ tinh đến hải đăng",
+      "body_en": "At that price, solar should have died. It survived because it found a niche where cost hardly mattered: space. In 1958, solar cells powered the [y:Vanguard I] satellite. That early demand meant panels were produced, and production taught manufacturers how to make them better and cheaper, a classic case of **learning by doing**. In the 1970s, falling prices brought solar down to Earth, first to places far from the grid: lighthouses, remote railway crossings and [g:fridges for vaccines]. In 1976 a module still cost $106 per watt.",
+      "body_vi": "Với mức giá đó, điện mặt trời lẽ ra đã chết yểu. Nó sống sót vì tìm được một thị trường ngách gần như không quan tâm đến giá: không gian. Năm 1958, pin mặt trời cấp điện cho vệ tinh [y:Vanguard I]. Nhu cầu ban đầu đó khiến pin được sản xuất, và việc sản xuất dạy các nhà máy cách làm pin tốt hơn và rẻ hơn, một ví dụ kinh điển của **học qua làm** (*learning by doing*). Những năm 1970, giá giảm đưa điện mặt trời xuống mặt đất, trước hết là những nơi xa lưới điện: hải đăng, các nút giao đường sắt hẻo lánh và [g:tủ lạnh bảo quản vắc-xin]. Năm 1976, một tấm pin vẫn có giá 106 đô la mỗi watt."
+    },
+    {
+      "heading_en": "The learning curve",
+      "heading_vi": "Đường cong học tập",
+      "body_en": "What followed was a **virtuous cycle**: more panels meant lower prices, and lower prices opened new uses, which meant more panels. For over four decades, every doubling of the world's installed solar capacity cut module prices by the same share, about [p:20.2%]. This is the technology's **learning rate**, and the result was a fall from $106 to $0.38 per watt, a decline of [p:99.6%]. No single breakthrough did this. Bigger factories, more efficient cells, cheaper silicon and endless small improvements added up. Early subsidies helped too: paying more early let everyone [g:pay less later].",
+      "body_vi": "Sau đó là một **vòng tròn tích cực**: nhiều tấm pin hơn thì giá thấp hơn, giá thấp hơn mở ra ứng dụng mới, và lại cần thêm nhiều tấm pin. Suốt hơn bốn thập kỷ, mỗi lần tổng công suất điện mặt trời lắp đặt trên thế giới tăng gấp đôi, giá tấm pin lại giảm cùng một tỷ lệ, khoảng [p:20,2%]. Đó là **tốc độ học** (*learning rate*) của công nghệ này, và kết quả là giá giảm từ 106 xuống 0,38 đô la mỗi watt, tức giảm [p:99,6%]. Không có đột phá đơn lẻ nào làm được điều đó. Nhà máy lớn hơn, tế bào hiệu quả hơn, silicon rẻ hơn và vô số cải tiến nhỏ đã cộng dồn lại. Trợ giá ban đầu cũng góp phần: trả nhiều hơn lúc đầu giúp mọi người [g:trả ít hơn về sau]."
+    },
+    {
+      "heading_en": "Wright's law and what comes next",
+      "heading_vi": "Định luật Wright và chặng đường phía trước",
+      "body_en": "In 1936, aerospace engineer [y:Theodore Paul Wright] noticed the same pattern in aircraft production {wright-1936}: each doubling of experience cut costs by a fixed share. **Moore's law** for computer chips can be seen as a special case. Studying factories in the Second World War, when demand did not depend on prices, researchers found that experience really does [g:drive costs down] {lafond-2022}. Fossil fuel prices do not follow such curves, so the gap should keep widening. Most new demand for electricity will come from poorer countries, which could grow on cheap, clean power.",
+      "body_vi": "Năm 1936, kỹ sư hàng không [y:Theodore Paul Wright] nhận thấy quy luật tương tự trong ngành sản xuất máy bay {wright-1936}: mỗi lần kinh nghiệm tích luỹ tăng gấp đôi, chi phí giảm một tỷ lệ cố định. **Định luật Moore** về chip máy tính có thể xem là một trường hợp đặc biệt của nó. Khi nghiên cứu các nhà máy trong Thế chiến II, lúc nhu cầu không phụ thuộc vào giá, các nhà nghiên cứu thấy rằng kinh nghiệm thực sự [g:kéo chi phí xuống] {lafond-2022}. Giá nhiên liệu hoá thạch không đi theo những đường cong như vậy, nên khoảng cách sẽ tiếp tục nới rộng. Phần lớn nhu cầu điện mới sẽ đến từ các nước nghèo hơn, nơi có thể phát triển nhờ nguồn điện rẻ và sạch."
+    }
+  ],
+  "keyPoint": {
+    "en": "A technology on a learning curve is like a [p:snowball rolling downhill]: the more it is used, the cheaper it gets, and the cheaper it gets, the more it is used. When you judge a new technology, ask *not only what it costs today, but how fast its price falls each time production doubles.*",
+    "vi": "Một công nghệ đi theo đường cong học tập giống như [p:quả cầu tuyết lăn xuống dốc]: càng được dùng nhiều thì càng rẻ, và càng rẻ thì càng được dùng nhiều. Khi đánh giá một công nghệ mới, hãy hỏi *không chỉ giá hôm nay là bao nhiêu, mà giá giảm nhanh thế nào mỗi lần sản lượng tăng gấp đôi.*"
+  },
+  "applySteps": {
+    "en": [
+      "Look up how your country or city produces most of its electricity, and what share comes from coal and gas.",
+      "Pick one product you use, such as an LED bulb or a phone battery, and check how its price has changed over the last 15 years.",
+      "Before calling a new technology 'too expensive', ask how its price has moved each time its production doubled."
+    ],
+    "vi": [
+      "Tra xem quốc gia hoặc thành phố của bạn sản xuất điện chủ yếu từ đâu, và bao nhiêu phần trăm đến từ than và khí.",
+      "Chọn một món đồ bạn dùng, như bóng đèn LED hay pin điện thoại, và xem giá của nó đã thay đổi thế nào trong 15 năm qua.",
+      "Trước khi nói một công nghệ mới là 'quá đắt', hãy hỏi giá của nó đã biến động ra sao mỗi lần sản lượng tăng gấp đôi."
+    ]
+  },
+  "references": [
+    {
+      "id": "roser-2020",
+      "label": "Our World in Data (2020)",
+      "url": "https://ourworldindata.org/cheap-renewables-growth"
+    },
+    {
+      "id": "lazard",
+      "label": "Lazard LCOE+",
+      "url": "https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/"
+    },
+    {
+      "id": "wright-1936",
+      "label": "Wright (1936)",
+      "url": "https://doi.org/10.2514/8.155"
+    },
+    {
+      "id": "lafond-2022",
+      "label": "J. Economic History (2022)",
+      "url": "https://doi.org/10.1017/s0022050722000249"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "/covers/cheap-renewables.webp",
+    "provider": "unsplash",
+    "author": "Andrea Boldizsar",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/BwgKUh9tN84"
+  },
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-why-did-renewables-become-so-cheap-so-fast",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Max Roser"
+    ],
+    "originalTitle": "Why did renewables become so cheap so fast?",
+    "originalUrl": "https://ourworldindata.org/cheap-renewables-growth",
+    "publisher": "Our World in Data",
+    "changes": [
+      "shortened",
+      "divided into sections",
+      "lightly edited",
+      "highlights added",
+      "key point and apply steps added",
+      "translated to Vietnamese"
+    ]
+  },
+  "seed": true,
+  "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoQABwAPu1orU2ppqSiMAgBMB2JZACsLoABLehDz2fv3Z4luAD+7FqpQu9gwVBN4LDq8IeBICP3ztmSW56DZ807f/BBbT2ft1ZL/jmZqJ8yfDHOyn3IoBSmxHUgJo2f/NGIbIbM35QvbpSvID4ExXm8arKnagAA",
+  "dominant": "#4e6070"
+}
