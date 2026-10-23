@@ -43,7 +43,7 @@ Làm bằng service account `claude@reader-app-512514` (Owner) qua API, không q
 
 1. Hoàn tất Firebase (README §1–2):
    - Google Cloud → APIs & Services → Credentials → *Web client (auto created by Google Service)*: thêm Authorized JavaScript origins `https://reader-xtm.pages.dev`, `http://localhost:3000` và Authorized redirect URI `https://reader-xtm.pages.dev/__/auth/handler`. Thiếu bước này thì đăng nhập Google trên site lỗi `redirect_uri_mismatch`.
-   - (Nên làm) reCAPTCHA v3 site key cho App Check → biến `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`.
+   - App Check: đã tạo key reCAPTCHA Enterprise `6LejJP0tAAAAAP9sdGU0fiaifnGGRGNcuM6S8D4p` (kiểu score, tên miền `reader-xtm.pages.dev`, `localhost`), đăng ký vào App Check (ngưỡng 0.5) và đặt làm mặc định trong `deploy.yml`. Chưa enforce: theo dõi tỉ lệ request verified 1–2 ngày rồi bật Enforce cho Cloud Firestore.
    - Secret `FIREBASE_SERVICE_ACCOUNT_JSON`: nên tạo service account riêng (ví dụ `reader-actions`) chỉ với `roles/datastore.user` và `roles/firebaseauth.admin` (đủ cho các script: đọc/ghi Firestore, `listUsers`, xoá khách, gán moderator), thay vì dùng tài khoản Owner.
 2. Deploy Worker `sveltia-cms-auth` và sửa `base_url` trong `public/cms/config.yml` (đang là địa chỉ mẫu).
 3. Thêm secrets GitHub Actions: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` (cần cho bài tự động), `FIREBASE_SERVICE_ACCOUNT_JSON`, `BACKUP_PASSPHRASE` (tùy chọn `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY`), biến `SITE_URL=https://reader-xtm.pages.dev`, và bật *Allow GitHub Actions to create and approve pull requests*.

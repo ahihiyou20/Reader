@@ -170,8 +170,8 @@ export function createFirebaseBackend(): Backend {
   }
   if (env.recaptchaSiteKey && !env.useEmulators) {
     import('firebase/app-check')
-      .then(({ initializeAppCheck, ReCaptchaV3Provider }) =>
-        initializeAppCheck(app, { provider: new ReCaptchaV3Provider(env.recaptchaSiteKey), isTokenAutoRefreshEnabled: true }),
+      .then(({ initializeAppCheck, ReCaptchaEnterpriseProvider }) =>
+        initializeAppCheck(app, { provider: new ReCaptchaEnterpriseProvider(env.recaptchaSiteKey), isTokenAutoRefreshEnabled: true }),
       )
       .catch(() => {});
   }

@@ -93,7 +93,7 @@ Domain: `*.pages.dev` miễn phí. Domain riêng tốn phí đăng ký (không b
    - Chuyển **In production**; nộp brand verification (miễn phí) để tên và logo hiện đúng.
 3. OAuth Web client: JavaScript origins = domain prod + `http://localhost:3000`; redirect URI như 3.4.
 4. `NEXT_PUBLIC_GOOGLE_CLIENT_ID` cho One Tap.
-5. **App Check** với reCAPTCHA v3 (có hạn mức miễn phí; kiểm tra quota hiện hành) để giảm spam ghi vào Firestore. Bật chế độ "monitor" trước, "enforce" sau khi ổn định.
+5. **App Check** với reCAPTCHA Enterprise (Google Cloud Fraud Defense; reCAPTCHA Classic v3 đã ngừng nhận đăng ký mới trong App Check; có hạn mức miễn phí; kiểm tra quota hiện hành) để giảm spam ghi vào Firestore. Bật chế độ "monitor" trước, "enforce" sau khi ổn định.
 
 ## 5. Không có phiên phía server
 

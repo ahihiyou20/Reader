@@ -62,7 +62,7 @@ pnpm start        # phục vụ out/ tại http://localhost:4173 (clean URL như
    pnpm exec firebase login
    pnpm exec firebase deploy --only firestore --project <project-id>
    ```
-4. (Nên làm) App Check → reCAPTCHA v3, lấy site key.
+4. App Check → reCAPTCHA Enterprise (đã làm: key `6LejJP0tAAAAAP9sdGU0fiaifnGGRGNcuM6S8D4p`). reCAPTCHA Classic v3 không còn dùng được cho App Check.
 5. Project settings → thêm Web app, lấy `apiKey`, `appId`.
 6. Authentication → Settings → Authorized domains: thêm tên miền site (ví dụ `reader-xtm.pages.dev`).
 
