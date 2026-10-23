@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { addHighlight, safeMarkup } from '../../scripts/pipeline/compose';
 import { trimToFit } from '../../scripts/pipeline/create';
-import { normalizeUrl, parseFeed, pickRoundRobin, type FeedSource } from '../../scripts/pipeline/feeds';
+import { forgetGeminiFailures, normalizeUrl, parseFeed, pickRoundRobin, type FeedSource } from '../../scripts/pipeline/feeds';
+import { MODEL, isSetupFailure } from '../../scripts/pipeline/gemini';
 import { splitLong } from '../../scripts/pipeline/import';
 import { inputFromForm, parseIssueForm } from '../../scripts/pipeline/issue';
 import { groupForLicense, normalizeLicense } from '../../scripts/pipeline/licenses';
@@ -42,6 +43,30 @@ describe('feeds', () => {
     const first = pickRoundRobin(feeds, c, 6);
     const backup = pickRoundRobin(feeds, c, 20, 2, new Set(first.map((p) => p.item.url)));
     expect(backup.map((p) => p.item.title)).toEqual(['b1', 'b2', 'c2', 'a3', 'c3', 'a4', 'c4']);
+  });
+});
+
+describe('gemini', () => {
+  it('defaults to a model that is still offered to new keys', () => {
+    if (!process.env.GEMINI_MODEL) expect(MODEL).toBe('gemini-3.5-flash-lite');
+  });
+  it('tells setup failures (retired model, bad key) from per-article ones', () => {
+    const retired = '{"error":{"code":404,"message":"This model models/gemini-2.5-flash-lite is no longer available to new users."}}';
+    expect(isSetupFailure(404, retired)).toBe(true);
+    expect(isSetupFailure(400, '{"error":{"message":"API key not valid. Please pass a valid API key."}}')).toBe(true);
+    expect(isSetupFailure(403, 'PERMISSION_DENIED')).toBe(true);
+    expect(isSetupFailure(400, '{"error":{"message":"Request contains an invalid argument: contents too long"}}')).toBe(false);
+    expect(isSetupFailure(500, 'internal')).toBe(false);
+  });
+  it('retries links that failed only because Gemini was unusable', () => {
+    const at = '2026-10-23T00:00:00Z';
+    const seen = {
+      'https://a/1': { at, feed: 'a', error: 'Gemini 404: {"error":{"code":404}}' },
+      'https://a/2': { at, feed: 'a', error: 'Gemini gemini-3.5-flash-lite 403: denied' },
+      'https://a/3': { at, feed: 'a', error: '403 Forbidden — https://a/3' },
+      'https://a/4': { at, feed: 'a', slug: 'done' },
+    };
+    expect(Object.keys(forgetGeminiFailures(seen))).toEqual(['https://a/3', 'https://a/4']);
   });
 });
 

@@ -7,7 +7,7 @@ import path from 'node:path';
 import { XMLParser } from 'fast-xml-parser';
 import type { ArticleSource } from '../../lib/content/types';
 import { type Created, type Mode, SkipError, createArticle, modeFor } from './create';
-import { QuotaError, hasGemini } from './gemini';
+import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
 import { CONTENT, dirs, httpText, jobSummary, listJson, readJson, setOutput, writeJson } from './lib';
 
 export interface FeedSource {
@@ -46,6 +46,12 @@ interface SeenEntry {
   error?: string;
 }
 type State = { seen: Record<string, SeenEntry> };
+
+/** Links that failed only because Gemini itself was unusable (retired model, bad key, outage) get another try. */
+export function forgetGeminiFailures(seen: Record<string, SeenEntry>) {
+  for (const [k, v] of Object.entries(seen)) if (v.error && /^Gemini\b/.test(v.error)) delete seen[k];
+  return seen;
+}
 
 export const CONFIG_FILE = path.join(CONTENT, 'feeds.json');
 export const STATE_FILE = path.join(dirs.generated, 'feed-state.json');
@@ -185,6 +191,7 @@ async function main() {
   const limit = Math.min(Number(flag('limit') ?? config.maxPerDay ?? 20), config.maxPerDay ?? 20);
   const dry = args.includes('--dry-run');
   const state = await readJson<State>(STATE_FILE, { seen: {} });
+  forgetGeminiFailures(state.seen);
   const cutoff = Date.now() - (config.maxAgeDays ?? 14) * 86400_000;
   const known = await knownUrls();
 
@@ -232,6 +239,7 @@ async function main() {
 
   const created: Created[] = [];
   const failed: string[] = [];
+  let setupError: Error | undefined;
   const start = Date.now();
   for (const { feed, item } of [...picked, ...backup]) {
     if (created.length >= limit) break;
@@ -243,6 +251,12 @@ async function main() {
       state.seen[item.url] = { at: new Date().toISOString(), feed: feed.id, slug: c.slug };
       console.log(`✓ ${c.slug} (${feed.id})`);
     } catch (e) {
+      if (e instanceof GeminiSetupError) {
+        // Nothing can succeed until the model or key is fixed; keep the link unseen and fail the run.
+        setupError = e;
+        console.error(`Stopping: ${e.message}`);
+        break;
+      }
       if (e instanceof QuotaError || e instanceof SkipError) {
         console.log(`Stopping: ${(e as Error).message}`);
         break;
@@ -267,6 +281,7 @@ async function main() {
   const out = flag('report');
   if (out) await fs.writeFile(out, report + '\n');
   await setOutput('created', String(created.length));
+  if (setupError) throw new Error(`Gemini is not usable, set the GEMINI_MODEL variable or check GEMINI_API_KEY: ${setupError.message}`);
 }
 
 if (process.argv[1]?.endsWith('feeds.ts'))
