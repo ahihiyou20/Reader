@@ -21,6 +21,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: a.title.en,
     description,
     alternates: { canonical: `/a/${slug}` },
+    // Verbatim (group 3) and summary (group 5) pages point to the original; keep them out of search.
+    ...(a.origin.group === 3 || a.origin.group === 5 ? { robots: { index: false, follow: true } } : {}),
     openGraph: { type: 'article', title: a.title.en, description, images: image ? [image] : undefined, publishedTime: a.publishedAt },
     twitter: { card: 'summary_large_image', title: a.title.en, description, images: image ? [image] : undefined },
   };

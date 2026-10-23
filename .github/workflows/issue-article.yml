@@ -1,0 +1,63 @@
+# Quick upload (docs/05 §9): an "Add article" issue (.github/ISSUE_TEMPLATE/add-article.yml) becomes a
+# pull request with the new article. Only the owner and collaborators can trigger it. The issue text
+# reaches the scripts through environment variables only, never through the shell command line.
+name: Add article from issue
+on:
+  issues:
+    types: [opened, reopened]
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+concurrency:
+  group: issue-${{ github.event.issue.number }}
+  cancel-in-progress: true
+jobs:
+  add:
+    if: >-
+      (startsWith(github.event.issue.title, '[Bài mới]') || contains(github.event.issue.labels.*.name, 'add-article')) &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NUMBER: ${{ github.event.issue.number }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Write the article
+        id: make
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: pnpm tsx scripts/pipeline/issue.ts --report "$RUNNER_TEMP/report.md"
+      - name: Open the pull request
+        if: steps.make.outputs.ok == 'true'
+        env:
+          SLUG: ${{ steps.make.outputs.slug }}
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="bot/issue-$NUMBER"
+          git checkout -B "$branch"
+          git add content
+          git commit -q -m "content: add $SLUG (#$NUMBER)"
+          git push --force origin "$branch"
+          { cat "$RUNNER_TEMP/report.md"; echo; echo "Closes #$NUMBER"; } > "$RUNNER_TEMP/body.md"
+          existing=$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then gh pr edit "$existing" --body-file "$RUNNER_TEMP/body.md"; url=$(gh pr view "$existing" --json url --jq .url)
+          else url=$(gh pr create --base main --head "$branch" --title "Bài mới: $SLUG" --body-file "$RUNNER_TEMP/body.md"); fi
+          echo "" >> "$RUNNER_TEMP/report.md"
+          echo "Pull request: $url" >> "$RUNNER_TEMP/report.md"
+      - name: Reply on the issue
+        if: always()
+        run: |
+          [ -s "$RUNNER_TEMP/report.md" ] || echo "Bot gặp lỗi, xem log workflow: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" > "$RUNNER_TEMP/report.md"
+          gh issue comment "$NUMBER" --body-file "$RUNNER_TEMP/report.md"

@@ -193,7 +193,7 @@ export function ProfilePanel() {
           </button>
         </div>
         <p className="fine" style={{ marginTop: 22 }}>
-          <a href="/privacy">{t('privacy')}</a> · <a href="/terms">{t('terms')}</a>
+          <a href="/about">{t('about')}</a> · <a href="/privacy">{t('privacy')}</a> · <a href="/terms">{t('terms')}</a>
         </p>
       </div>
     </Panel>

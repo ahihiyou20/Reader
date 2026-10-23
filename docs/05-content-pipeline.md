@@ -26,7 +26,7 @@
 
 | Nhóm | Nguồn | Giấy phép | Được làm gì |
 |------|-------|-----------|-------------|
-| **1. Nguồn chính** | **OpenStax** | ⚠️ Kiểm tra ngày 2026-10-22: phần lớn sách là **CC BY-NC-SA 4.0** (pipeline từ chối); chỉ vài cuốn như *Physics*, *Life, Liberty, and the Pursuit of Happiness* là CC BY 4.0 | Rút gọn, chia section, highlight, dịch; ghi công |
+| **1. Nguồn chính** | **OpenStax** | Kiểm tra ngày 2026-10-22: phần lớn sách là **CC BY-NC-SA 4.0** (vào nhóm 2); chỉ vài cuốn như *Physics*, *Life, Liberty, and the Pursuit of Happiness* là CC BY 4.0 | Rút gọn, chia section, highlight, dịch; ghi công |
 | | **Our World in Data** (bài phân tích) | CC BY 4.0 | như trên |
 | | **Frontiers for Young Minds** | CC BY | như trên |
 | | **eLife** (phần digest), **PLOS** (Author summary) | CC BY 4.0 | như trên |
@@ -34,11 +34,14 @@
 | | **Project Gutenberg / Standard Ebooks** | Public domain | như trên |
 | | **Global Voices** | CC BY 3.0 | như trên |
 | | **VOA Learning English** (kho bài cũ) | Văn bản public domain theo hướng dẫn của thư viện Georgetown; ảnh AP/Reuters thì không. Tình trạng năm 2026 chưa chắc chắn | như trên |
-| **2. Share-alike** | **Wikipedia**, **Simple English Wikipedia** (bài *Featured/Good*) | CC BY-SA 4.0 | Như nhóm 1, nhưng bài Reader làm ra cũng mang **CC BY-SA 4.0** |
-| **3. Chỉ nguyên văn** | **The Conversation** | CC BY-ND 4.0; dịch hoặc cắt bớt cần tác giả đồng ý | Chỉ đăng bản tiếng Anh nguyên văn; không highlight trong thân bài; KEY POINT và Apply là phần riêng của Reader |
-| **4. Tự viết** | Biên tập viên; người dùng qua nút **+** | CC BY 4.0 của Reader | Toàn quyền |
+| **2. Share-alike** | **Wikipedia**, **Simple English Wikipedia** (bài *Featured/Good*), sách OpenStax CC BY-NC-SA | CC BY-SA 4.0 / CC BY-NC-SA 4.0 | Như nhóm 1, nhưng bài Reader làm ra cũng mang **đúng giấy phép đó** |
+| **3. Chỉ nguyên văn** | **The Conversation** | CC BY-ND 4.0 / CC BY-NC-ND 4.0; dịch hoặc cắt bớt cần tác giả đồng ý | Chỉ đăng bản tiếng Anh nguyên văn; không highlight trong thân bài; KEY POINT, Apply và **tóm tắt tiếng Việt** (`summary.vi`) là phần riêng của Reader |
+| **4. Tự viết** | Biên tập viên (CMS hoặc form Issue); người dùng qua nút **+** | CC BY 4.0 của Reader | Toàn quyền |
+| **5. Tóm tắt + link** | Mọi trang còn bản quyền (Psyche, Quanta, Knowable, Nautilus, Big Think, NPR, ScienceDaily…) | `Copyright` (giữ nguyên quyền của tác giả) | Reader **tự viết** bản tóm tắt ngắn (2–5 section, 150–400 từ, tối đa 450), không chép câu, trích dẫn ≤ 8 từ, nút **Đọc bài gốc** nổi bật; không lưu văn bản gốc trong repo; trang có `noindex` và không vào sitemap |
 
-**Không dùng:** báo chí và sách còn bản quyền (chỉ được dẫn link làm nguồn trong bài tự viết), đề IELTS thật, nội dung không rõ giấy phép.
+**Vì sao nhận giấy phép NC:** Reader là dự án cá nhân, phi thương mại (cho chủ repo và vài người bạn), nên điều kiện NonCommercial được đáp ứng. Nếu sau này có thu phí hay quảng cáo thì phải bỏ các bài NC.
+
+**Không dùng:** chép nguyên văn hay dịch bài còn bản quyền, đề IELTS thật. Bài nhóm 3 và 5 có `noindex` để trang Reader không cạnh tranh với bài gốc trên công cụ tìm kiếm.
 
 **Ảnh cover:** Unsplash API (hotlink, ghi tên tác giả, gọi endpoint download khi dùng), Pexels API (có cả video), Wikimedia Commons, NASA. Không dùng Firebase Storage.
 
@@ -225,7 +228,9 @@ Mỗi lần **Save** là một commit lên `main`. Trang preview đọc file JSO
 | Có `origin` đầy đủ (tác giả, link gốc, giấy phép, thay đổi) | Lỗi |
 | Cover có `author` và `license` | Lỗi |
 | `ai.reviewed == true` nếu có field AI | Lỗi (khi `status = published`) |
-| Độ dài: hook 40–80 từ; 5–7 section; 700–950 từ (trừ nhóm 3) | Cảnh báo |
+| Độ dài: hook 40–80 từ; 5–7 section; 700–950 từ (trừ nhóm 3 và 5) | Cảnh báo |
+| Nhóm 5: có link gốc; dưới 450 từ (lỗi), 2–5 section và 150–400 từ (cảnh báo) | Lỗi / cảnh báo |
+| Giấy phép khớp nhóm: 1 = CC BY / CC BY-NC / PD; 2 = SA; 3 = ND; 4 = Reader-CC-BY-4.0 | Lỗi |
 | Đủ 3 bước Apply, có KEY POINT | Cảnh báo |
 | Thiếu bản tiếng Việt | Thông tin |
 
@@ -235,19 +240,20 @@ Mỗi lần **Save** là một commit lên `main`. Trang preview đọc file JSO
 ### Bước 8. Xuất bản (`deploy.yml` → Cloudflare Pages)
 
 - Biên tập viên đặt `status: published` và `publishAt` (mặc định hôm nay), rồi Save.
-- `deploy.yml` chạy khi có push lên `main` và quyết định có cần build hay không. Gọi deploy hook khi:
+- `deploy.yml` chạy khi có push lên `main` và quyết định có cần build hay không. Nếu cần, nó build ngay trong GitHub Actions và tải `out/` lên Cloudflare Pages bằng Wrangler (secret `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`; project mặc định `reader`, đổi bằng biến `CF_PAGES_PROJECT`). Project nối Git thì dùng `CF_PAGES_DEPLOY_HOOK` thay thế. Build khi:
   - có thay đổi ngoài `content/` (code), hoặc
   - có bài mà `status` hiện tại hoặc trước đó là `published` (đăng mới, sửa bài đang đăng, gỡ bài), hoặc
   - `categories.json` thay đổi.
 - Sửa bản nháp → **không build**.
-- Cloudflare build (`scripts/build-content.ts` rồi `next build`) mất khoảng 2–3 phút. Sau đó bài lên app; feed, chỉ mục tìm kiếm và trang `/a/<slug>` được tạo lại.
+- Build (`scripts/build-content.ts` rồi `next build`) mất khoảng 2–3 phút. Sau đó bài lên app; feed, chỉ mục tìm kiếm và trang `/a/<slug>` được tạo lại.
+- Commit do bot đẩy bằng `GITHUB_TOKEN` không kích hoạt push event, nên các workflow khác gọi `gh workflow run deploy.yml`.
 - Với ảnh Unsplash: `deploy.yml` gọi endpoint `download` của ảnh cover lần đầu bài được xuất bản (theo điều khoản API Unsplash).
 
 ### Bước 9. Hằng ngày (`daily.yml`, cron 17:05 UTC = 00:05 giờ Việt Nam)
 
 1. **Bake counts**: Admin SDK đọc `counters/*` → ghi `content/generated/counts.json` → commit.
-2. **Bài hẹn giờ**: nếu có bài `published` mà `publishAt` = hôm nay → gọi deploy hook.
-3. Gọi deploy hook (một lần cho cả 1 và 2).
+2. **Bài hẹn giờ**: bài `published` có `publishAt` đã tới sẽ lên app ở lần build này.
+3. Chạy `deploy.yml` (một lần cho cả 1 và 2).
 4. Chủ nhật: dọn tài khoản khách không hoạt động > 60 ngày (07).
 
 ### Bước 10. Bài người dùng gửi qua nút + (`submissions.yml`, mỗi 6 giờ)
@@ -255,6 +261,23 @@ Mỗi lần **Save** là một commit lên `main`. Trang preview đọc file JSO
 - Trong app, người dùng đã đăng nhập Google mở **Create post**: tiêu đề, nội dung (section), nguồn, ảnh (URL Unsplash/Pexels). Bài lưu vào Firestore `submissions/{id}` với `status: pending`.
 - Workflow đọc các submission `pending` (Admin SDK), tạo `content/articles/<slug>.json` với `status: review`, `origin.group: 4`, `origin.authors: [displayName]`, rồi đặt submission thành `imported`.
 - Biên tập viên duyệt như bước 6–8. Khi xuất bản hoặc từ chối, workflow cập nhật `submissions/{id}.status` (`published`/`rejected`) để người gửi thấy trạng thái trong Profile.
+
+### Bước 11. Bài tự động hằng ngày (`feeds.yml`, cron 23:17 UTC = 06:17 giờ Việt Nam)
+
+- Nguồn nằm trong `content/feeds.json` (sửa được trong CMS → Cài đặt → Nguồn tự động): mỗi feed RSS/Atom có `category` (hoặc `auto` để Gemini chọn chủ đề), `mode` (`adapt`, `verbatim`, `summary`), `max` bài mỗi lần, lọc `include`/`exclude` theo tiêu đề, `maxWords` cho bài nguyên văn.
+- `scripts/pipeline/feeds.ts` lấy các mục **chưa thấy** và **mới hơn 14 ngày**, xen kẽ giữa các feed (round-robin), tối đa **`maxPerDay` = 20 bài/ngày**. Link đã xem (kể cả link lỗi) lưu ở `content/generated/feed-state.json` 180 ngày nên không bị lấy lại.
+- Mỗi link đi qua `scripts/pipeline/create.ts`:
+  - domain có trong `licenses.ts` → import như bước 2–4; giấy phép đọc được quyết định nhóm 1/2/3; Gemini (`compose.ts`) thêm bản tiếng Việt, KEY POINT, 3 bước Apply, tối đa 2 highlight mỗi section (chỉ nhận highlight khi chữ hiển thị không đổi) và thẻ tìm kiếm. Nhóm 3 chỉ được thêm tóm tắt tiếng Việt, KEY POINT và Apply;
+  - domain khác → nhóm 5: đọc trang bằng Readability, gửi văn bản cho Gemini để viết bản tóm tắt, **không lưu** văn bản gốc. Không có `GEMINI_API_KEY` thì bỏ qua các feed tóm tắt;
+  - ảnh bìa: Unsplash/Pexels nếu có key, NASA cho chủ đề khoa học, nếu không thì ảnh Unsplash chọn sẵn theo chủ đề qua `picsum.photos` (hotlink, không làm phình repo).
+- Bài được ghi `status: published` và `ai.reviewed: true` rồi commit vào nhánh **`bot/new-articles`** và **một** pull request "Bài mới từ nguồn tự động" (cập nhật thêm mỗi ngày nếu chưa merge). **Merge = duyệt và đăng.** Muốn bỏ bài nào thì xoá file của bài đó trong pull request. Đóng pull request không merge = bỏ cả đợt.
+- Cần bật Settings → Actions → General → **Allow GitHub Actions to create and approve pull requests**.
+
+### Bước 12. Thêm nhanh bằng form Issue (`issue-article.yml`)
+
+- Mở **Issues → New issue → Thêm bài viết**, dán link (hoặc dán văn bản tự viết), chọn chủ đề và cách đăng (mặc định tự động theo giấy phép).
+- Chỉ chủ repo, thành viên và collaborator kích hoạt được; nội dung issue chỉ đi vào script qua biến môi trường.
+- Bot tạo nhánh `bot/issue-<số>`, mở pull request "Closes #<số>" kèm link preview, rồi bình luận kết quả (hoặc lỗi) vào issue. Merge pull request = đăng bài và tự đóng issue.
 
 ### Sửa và gỡ bài
 
@@ -272,14 +295,19 @@ content/
 ├─ raw/<sourceId>.json
 ├─ articles/<slug>.json
 ├─ categories.json
+├─ feeds.json                      # nguồn RSS/Atom tự động, maxPerDay = 20
 ├─ ai-queue.json
-└─ generated/counts.json           # do daily.yml ghi, không sửa tay
+└─ generated/counts.json, feed-state.json   # do bot ghi, không sửa tay
 scripts/pipeline/
 ├─ import.ts      # --url <url> --category <id> | --pending | <backlog id>
 ├─ adapters/      openstax, wikipedia, elife, plos, readability (OWID, FYM, NASA, NIH, CDC…), gutenberg, conversation, html
-├─ licenses.ts    # bảng domain → adapter, nhóm, giấy phép; từ chối NC/ND ngoài nhóm 3
-├─ lib.ts   select-window.ts (700–950 từ)   cover.ts (Unsplash/Pexels/NASA)
-├─ ai-suggest.ts  # Gemini, tùy chọn
+├─ licenses.ts    # bảng domain → adapter, nhóm, giấy phép; giấy phép quyết định nhóm (SA → 2, ND → 3)
+├─ lib.ts   select-window.ts (700–950 từ)   cover.ts (Unsplash/Pexels/NASA/picsum)
+├─ gemini.ts      # gọi Gemini free tier (JSON schema, giãn cách 4,5 s)
+├─ compose.ts     # dịch, KEY POINT, Apply, highlight, tóm tắt nhóm 5, bài từ văn bản tự viết
+├─ create.ts      # một bài từ link hoặc văn bản (dùng chung cho feeds và issue)
+├─ feeds.ts       # bài tự động hằng ngày   issue.ts  # form Issue   pr-body.ts
+├─ ai-suggest.ts  # Gemini cho bài nhập tay, tùy chọn
 ├─ validate.ts    # --issue (đồng bộ GitHub Issue), --strict
 ├─ submissions.ts daily.ts set-moderator.ts backup.ts deploy-check.ts admin.ts
 scripts/build-content.ts           # sinh public/data/* trước next build
@@ -287,8 +315,9 @@ scripts/dev/picsum-cover.ts        # tải ảnh bìa Unsplash (qua picsum), né
 public/cms/index.html, config.yml  # Sveltia CMS ghim phiên bản 0.231.0
 functions/__/auth/[[path]].ts      # proxy đăng nhập (07)
 .github/workflows/
-├─ ci.yml  import.yml  ai-suggest.yml  validate.yml
+├─ ci.yml  import.yml  ai-suggest.yml  validate.yml  feeds.yml  issue-article.yml
 └─ deploy.yml  daily.yml  submissions.yml  set-moderator.yml  backup.yml
+.github/ISSUE_TEMPLATE/add-article.yml
 ```
 
 ### 6.2 Cấu hình CMS (rút gọn)

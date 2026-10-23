@@ -1,0 +1,91 @@
+# Daily articles (docs/05 §9): read content/feeds.json, write up to 20 new articles and keep them in
+# one rolling pull request from bot/new-articles. Nothing is published until the pull request is merged.
+# Needs Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+name: Daily articles
+on:
+  schedule:
+    - cron: '17 23 * * *'
+  workflow_dispatch:
+    inputs:
+      limit: { description: 'Most articles in this run (≤ maxPerDay in content/feeds.json)', required: false, default: '20' }
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: content-bot
+  cancel-in-progress: false
+env:
+  BRANCH: bot/new-articles
+jobs:
+  feeds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Prepare the bot branch
+        id: branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          pr=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          echo "pr=$pr" >> "$GITHUB_OUTPUT"
+          state=content/generated/feed-state.json
+          if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null; then
+            git fetch origin "$BRANCH"
+            # Links the bot has already looked at, even if their pull request was closed.
+            git show "origin/$BRANCH:$state" > "$RUNNER_TEMP/state.json" 2>/dev/null || true
+            if [ -n "$pr" ]; then
+              git checkout -B "$BRANCH" "origin/$BRANCH"
+              git merge --no-edit origin/main || { git merge --abort; git checkout -B "$BRANCH" origin/main; }
+            else
+              git checkout -B "$BRANCH" origin/main
+            fi
+          else
+            git checkout -B "$BRANCH" origin/main
+          fi
+          if [ -s "$RUNNER_TEMP/state.json" ]; then
+            node -e '
+              const fs = require("fs");
+              const [a, b] = process.argv.slice(1).map((f) => { try { return JSON.parse(fs.readFileSync(f, "utf8")).seen || {}; } catch { return {}; } });
+              fs.mkdirSync("content/generated", { recursive: true });
+              fs.writeFileSync(process.argv[2], JSON.stringify({ seen: { ...a, ...b } }, null, 2) + "\n");
+            ' "$RUNNER_TEMP/state.json" "$state"
+          fi
+      - name: Write articles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          LIMIT: ${{ inputs.limit || '20' }}
+        run: pnpm tsx scripts/pipeline/feeds.ts --limit "$LIMIT" --report "$RUNNER_TEMP/report.md"
+      - name: Check
+        run: pnpm tsx scripts/pipeline/validate.ts
+      - name: Commit and open or update the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ steps.branch.outputs.pr }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          git add content
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          git commit -q -m "content: daily articles $(date -u +%F)"
+          git push --force-with-lease origin "HEAD:$BRANCH"
+          if [ -z "$(git diff --name-only --diff-filter=A origin/main...HEAD -- content/articles)" ]; then
+            echo "Only the feed state changed."; exit 0
+          fi
+          pnpm -s tsx scripts/pipeline/pr-body.ts origin/main > "$RUNNER_TEMP/body.md"
+          if [ -n "$PR" ]; then
+            gh pr edit "$PR" --body-file "$RUNNER_TEMP/body.md"
+          else
+            gh pr create --base main --head "$BRANCH" --title "Bài mới từ nguồn tự động" --body-file "$RUNNER_TEMP/body.md" \
+              || echo "::warning::Could not open the pull request. Enable Settings → Actions → General → Allow GitHub Actions to create and approve pull requests."
+          fi

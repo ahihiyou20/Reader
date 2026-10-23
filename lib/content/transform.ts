@@ -9,8 +9,12 @@ const LICENSE_NAME: Record<string, string> = {
   'CC-BY-3.0': 'CC BY 3.0',
   'CC-BY-SA-4.0': 'CC BY-SA 4.0',
   'CC-BY-ND-4.0': 'CC BY-ND 4.0',
+  'CC-BY-NC-4.0': 'CC BY-NC 4.0',
+  'CC-BY-NC-SA-4.0': 'CC BY-NC-SA 4.0',
+  'CC-BY-NC-ND-4.0': 'CC BY-NC-ND 4.0',
   PD: 'Public domain',
   'Reader-CC-BY-4.0': 'CC BY 4.0',
+  Copyright: 'All rights reserved',
 };
 export const licenseName = (l: string) => LICENSE_NAME[l] ?? l;
 
@@ -41,14 +45,21 @@ export function buildAttribution(a: ArticleSource): Localized<string> {
   if (o.group === 4) {
     return { en: `Written by ${by} for Reader. Licensed ${lic}.`, vi: `Bài do ${byVi} viết cho Reader. Giấy phép ${lic}.` };
   }
+  if (o.group === 5) {
+    const src = `${title} by ${by}${pub}`;
+    return {
+      en: `Reader's own summary of ${src}. The original is not reproduced here: read it in full at the source.`,
+      vi: `Bản tóm tắt của Reader về ${title} của ${byVi}${pub}. Bài gốc không được đăng lại ở đây: hãy đọc đầy đủ tại nguồn.`,
+    };
+  }
   if (o.group === 3) {
     return {
       en: `Republished from ${o.publisher ?? 'the original publisher'} under ${lic}. ${title} by ${by}.`,
       vi: `Đăng lại nguyên văn từ ${o.publisher ?? 'nhà xuất bản gốc'} theo giấy phép ${lic}. ${title} của ${byVi}.`,
     };
   }
-  const shareAlike = o.group === 2 ? ' This Reader article is also available under CC BY-SA 4.0.' : '';
-  const shareAlikeVi = o.group === 2 ? ' Bài Reader này cũng được cấp phép CC BY-SA 4.0.' : '';
+  const shareAlike = o.group === 2 ? ` This Reader article is also available under ${lic}.` : '';
+  const shareAlikeVi = o.group === 2 ? ` Bài Reader này cũng được cấp phép ${lic}.` : '';
   const en = `Adapted from ${title} by ${by}${pub}, ${lic}.${changes.length ? ` Changes: ${changes.join(', ')}.` : ''}${shareAlike}`;
   const vi = `Phỏng theo ${title} của ${byVi}${pub}, giấy phép ${lic}.${
     changes.length ? ` Thay đổi: ${changes.map((c) => CHANGE_VI[c] ?? c).join(', ')}.` : ''
@@ -59,6 +70,13 @@ export function buildAttribution(a: ArticleSource): Localized<string> {
 function rich(src: Localized<string> | undefined, refs: Map<string, string>): Localized<Rich> | undefined {
   if (!src?.en) return undefined;
   const out: Localized<Rich> = { en: parseRich(src.en, { refs }).rich };
+  if (src.vi?.trim()) out.vi = parseRich(src.vi, { refs }).rich;
+  return out;
+}
+
+/** Group 3 summaries may exist in Vietnamese only (the English reader has the full text). */
+function summaryRich(src: { en?: string; vi?: string }, refs: Map<string, string>): Localized<Rich> {
+  const out: Localized<Rich> = { en: src.en?.trim() ? parseRich(src.en, { refs }).rich : [] };
   if (src.vi?.trim()) out.vi = parseRich(src.vi, { refs }).rich;
   return out;
 }
@@ -90,6 +108,7 @@ export function toClient(a: ArticleSource, counts: Counts = ZERO_COUNTS, extra: 
     applySteps: a.applySteps?.en.length
       ? { en: a.applySteps.en, ...(a.applySteps.vi?.length ? { vi: a.applySteps.vi } : {}) }
       : undefined,
+    summary: a.origin.group === 3 && (a.summary?.en?.trim() || a.summary?.vi?.trim()) ? summaryRich(a.summary, refs) : undefined,
     references: a.references,
     cover: {
       type: a.cover.type,

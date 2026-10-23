@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: content-bot
   cancel-in-progress: false
@@ -29,7 +30,5 @@ jobs:
           git diff --cached --quiet || (git commit -m "pipeline: daily counts" && git push)
       - name: Rebuild (counts and scheduled articles)
         env:
-          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
-        run: |
-          if [ -z "$HOOK" ]; then echo "CF_PAGES_DEPLOY_HOOK is not set"; exit 0; fi
-          curl -fsS -X POST "$HOOK" > /dev/null && echo "Build triggered"
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

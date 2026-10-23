@@ -34,6 +34,10 @@ pnpm start        # phục vụ out/ tại http://localhost:4173 (clean URL như
 
 ## Thêm và sửa bài
 
+- **Tự động mỗi ngày**: workflow `feeds.yml` đọc các nguồn RSS trong `content/feeds.json` (NASA, Our World in Data, The Conversation, Global Voices, Wikipedia, USGS, và các trang chỉ được tóm tắt như Psyche, Quanta, Knowable…), viết **tối đa 20 bài/ngày** và gom vào **một pull request** `bot/new-articles`. Merge = đăng; xoá file của bài nào trong pull request để bỏ bài đó. Sửa nguồn trong CMS → Cài đặt → Nguồn tự động.
+- **Thêm nhanh**: Issues → New issue → **Thêm bài viết**, dán link (hoặc văn bản bạn tự viết). Bot mở pull request kèm link preview và trả lời ngay trong issue.
+- **Cách bot đăng theo giấy phép**: nguồn mở (CC BY, CC BY-NC, public domain, CC BY-SA) → phỏng theo, có tiếng Việt; CC BY-ND → nguyên văn kèm tóm tắt tiếng Việt; trang còn bản quyền → Reader tự viết **bản tóm tắt ngắn + nút “Đọc bài gốc”**, không lưu văn bản gốc, trang có `noindex`. Reader là dự án cá nhân phi thương mại nên nhận được giấy phép NC.
+- **Gemini** (`GEMINI_API_KEY`, gói miễn phí) viết bản tiếng Việt, KEY POINT, 3 bước Apply, highlight và bản tóm tắt. Không có key: bài nguồn mở vẫn được tạo (chỉ tiếng Anh), các feed tóm tắt bị bỏ qua. Chỉ gửi văn bản bài viết, không bao giờ gửi dữ liệu người dùng.
 - **Bằng form**: mở `/cms` (Sveltia CMS) và đăng nhập bằng GitHub. Mỗi bài là một file JSON trong `content/articles/`; xem trước tại `/preview?slug=<slug>` trước khi xuất bản.
 - **Import từ URL** (nguồn có trong bảng giấy phép `scripts/pipeline/licenses.ts`):
   ```bash
@@ -58,25 +62,42 @@ pnpm start        # phục vụ out/ tại http://localhost:4173 (clean URL như
    ```
 4. (Nên làm) App Check → reCAPTCHA v3, lấy site key.
 5. Project settings → thêm Web app, lấy `apiKey`, `appId`.
-6. Authentication → Settings → Authorized domains: thêm tên miền site (ví dụ `reader.pages.dev`).
+6. Authentication → Settings → Authorized domains: thêm tên miền site (ví dụ `reader-xtm.pages.dev`).
 
 ### 2. Google OAuth (One Tap và đăng nhập redirect)
 
 Trong Google Cloud Console của cùng project → APIs & Services → Credentials → OAuth client (Web):
 
-- Authorized JavaScript origins: `https://<tên-miền>` và `http://localhost:3000`.
-- Authorized redirect URIs: `https://<tên-miền>/__/auth/handler`.
+- Authorized JavaScript origins: `https://reader-xtm.pages.dev` và `http://localhost:3000`.
+- Authorized redirect URIs: `https://reader-xtm.pages.dev/__/auth/handler`.
+
+**Branding (Google Auth Platform → Branding), để publish app:**
+
+| Mục | Điền |
+|-----|------|
+| App name | `Reader` (đúng tên hiện trên site) |
+| User support email | email của bạn (chỉ hiện cho người đăng nhập) |
+| App logo | `public/icons/logo-120.png` (120×120 PNG) |
+| App home page | `https://reader-xtm.pages.dev/about` |
+| Privacy policy | `https://reader-xtm.pages.dev/privacy` |
+| Terms of service | `https://reader-xtm.pages.dev/terms` |
+| Authorized domains | `reader-xtm.pages.dev` |
+| Developer contact | email của bạn |
+
+- **Xác minh tên miền**: Google Search Console → thêm property URL prefix `https://reader-xtm.pages.dev` → chọn **HTML tag** → chép giá trị `content="…"` vào biến GitHub `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` → chạy lại workflow **Deploy** → bấm Verify.
+- **Data access**: chỉ thêm scope `openid`, `email`, `profile` (không phải scope nhạy cảm, nên không cần Google thẩm định bảo mật).
+- **Audience**: chọn *External*. Nếu chỉ vài người bạn dùng, có thể để **Testing** và thêm email của họ vào *Test users* (tối đa 100); muốn ai cũng đăng nhập được thì bấm **Publish app**. Logo và tên app chỉ hiện trên màn hình đồng ý sau khi Google duyệt branding (thường vài ngày).
 
 ### 3. Cloudflare Pages
 
-1. Tạo project Pages kết nối repo này. Build command `pnpm build`, output directory `out`, biến `NODE_VERSION=22`.
-2. Environment variables (Production):
-   - `NEXT_PUBLIC_FIREBASE_API_KEY`, `NEXT_PUBLIC_FIREBASE_PROJECT_ID`, `NEXT_PUBLIC_FIREBASE_APP_ID`
-   - `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` = **tên miền site** (không phải `*.firebaseapp.com`), để đăng nhập chạy được trên Safari/PWA qua proxy `/__/auth`
-   - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `NEXT_PUBLIC_GOOGLE_CLIENT_ID`, `NEXT_PUBLIC_SITE_URL`
-   - `FIREBASE_PROJECT_ID` (cho Pages Function `functions/__/auth/[[path]].ts`)
-   - tùy chọn `NEXT_PUBLIC_CF_ANALYTICS_TOKEN`
-3. Tắt build tự động cho mỗi commit (Settings → Builds → Branch control) và tạo **Deploy hook**. Workflow `deploy.yml` chỉ gọi hook khi site thật sự thay đổi, để nằm trong quota 500 build/tháng.
+Site đang chạy ở **https://reader-xtm.pages.dev** (project `reader`, tải lên trực tiếp bằng Wrangler, không nối Git).
+
+1. GitHub → Settings → Secrets and variables → Actions → thêm secret `CLOUDFLARE_API_TOKEN` (quyền *Cloudflare Pages: Edit*) và `CLOUDFLARE_ACCOUNT_ID`. Từ đó `deploy.yml` build trong GitHub Actions và tải lên mỗi khi site thật sự thay đổi.
+2. Biến build (GitHub → *Variables*, vì build chạy trong Actions): `SITE_URL=https://reader-xtm.pages.dev`, `NEXT_PUBLIC_FIREBASE_API_KEY`, `NEXT_PUBLIC_FIREBASE_PROJECT_ID`, `NEXT_PUBLIC_FIREBASE_APP_ID`, `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` = **`reader-xtm.pages.dev`** (không phải `*.firebaseapp.com`, để đăng nhập chạy trên Safari/PWA qua proxy `/__/auth`), `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `NEXT_PUBLIC_GOOGLE_CLIENT_ID`, `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, tùy chọn `NEXT_PUBLIC_CF_ANALYTICS_TOKEN`.
+3. Cloudflare dashboard → Workers & Pages → `reader` → Settings → Variables: `FIREBASE_PROJECT_ID` (cho Pages Function `functions/__/auth/[[path]].ts`).
+4. Deploy tay từ máy: `pnpm build && pnpm dlx wrangler@4.148.0 pages deploy out --project-name reader --branch main`.
+
+Nếu muốn Cloudflare tự build từ Git thay vì Wrangler: tạo project mới nối repo (build `pnpm build`, output `out`, `NODE_VERSION=22`), tắt build tự động, tạo **Deploy hook** và lưu vào secret `CF_PAGES_DEPLOY_HOOK`.
 
 ### 4. Đăng nhập CMS bằng GitHub
 
@@ -91,11 +112,15 @@ Settings → Secrets and variables → Actions:
 | Tên | Loại | Dùng cho |
 |-----|------|----------|
 | `FIREBASE_SERVICE_ACCOUNT_JSON` | secret | Đồng bộ số đếm hằng đêm, dọn tài khoản khách, bài người dùng gửi, sao lưu, gán moderator |
-| `CF_PAGES_DEPLOY_HOOK` | secret | Build lại site |
+| `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | secret | Tải site lên Cloudflare Pages (`deploy.yml`) |
+| `CF_PAGES_DEPLOY_HOOK` | secret, thay thế | Chỉ khi project Pages nối Git |
 | `BACKUP_PASSPHRASE` | secret | Mật khẩu mã hoá bản sao lưu hằng tuần (bắt buộc nếu muốn chạy `backup.yml`; thiếu thì job dừng chứ không tải bản rõ lên) |
-| `GEMINI_API_KEY` | secret, tùy chọn | Gợi ý bản dịch/KEY POINT cho biên tập viên (không bao giờ gửi dữ liệu người dùng) |
+| `GEMINI_API_KEY` | secret, nên có | Bản tiếng Việt, KEY POINT, Apply, highlight, bản tóm tắt cho bài tự động (không bao giờ gửi dữ liệu người dùng). Lấy miễn phí ở Google AI Studio |
 | `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY` | secret, tùy chọn | Gợi ý ảnh bìa khi import |
-| `GEMINI_MODEL`, `SITE_URL` | variable | Tên model Gemini, địa chỉ site |
+| `GEMINI_MODEL`, `SITE_URL`, `CF_PAGES_PROJECT` | variable | Tên model Gemini, địa chỉ site, tên project Pages (mặc định `reader`) |
+| `NEXT_PUBLIC_*` | variable | Cấu hình Firebase, OAuth, xác minh Google cho bản build (mục 3) |
+
+Thêm: Settings → Actions → General → **Workflow permissions** → bật **Allow GitHub Actions to create and approve pull requests** (để bot mở pull request bài mới).
 
 Không bao giờ commit dữ liệu người dùng hay bản sao lưu vào repo. Vì repo public nên **mọi người đăng nhập GitHub đều tải được artifact**: `backup.yml` mã hoá bản export bằng GPG (AES-256) với `BACKUP_PASSPHRASE` trước khi lưu thành artifact 90 ngày. Giải nén: `gpg -d firestore-backup.tar.gz.gpg | tar -xz`.
 
@@ -107,7 +132,7 @@ Không bao giờ commit dữ liệu người dùng hay bản sao lưu vào repo.
 ## Cấu trúc
 
 ```
-app/          trang Next.js (feed, /a/[slug], /preview, /privacy, /terms)
+app/          trang Next.js (feed, /a/[slug], /preview, /about, /privacy, /terms)
 components/   feed, reader (Details), engage (Comments & Apply), chrome, overlays
 lib/          content model, backend (Firebase / demo), i18n, motion, search, streak
 content/      bài viết JSON, nguồn đã import, danh mục
@@ -119,4 +144,4 @@ docs/         PRD, đặc tả kỹ thuật, style guide, pipeline, database, au
 
 ## Giấy phép nội dung
 
-Mỗi bài ghi rõ nguồn, tác giả, giấy phép và các thay đổi ở cuối phần Chi tiết. Bài adapt từ nguồn CC BY giữ giấy phép gốc; bài từ Wikipedia mang CC BY-SA 4.0; bài do Reader tự viết dùng CC BY 4.0. Ảnh bìa từ Unsplash theo Unsplash License, ghi tên tác giả.
+Mỗi bài ghi rõ nguồn, tác giả, giấy phép và các thay đổi ở cuối phần Chi tiết. Bài adapt từ nguồn CC BY / CC BY-NC giữ giấy phép gốc; bài từ Wikipedia mang CC BY-SA 4.0 (OpenStax: CC BY-NC-SA 4.0); bài nguyên văn giữ CC BY-ND; bài tóm tắt nguồn có bản quyền chỉ chứa lời của Reader và link tới bài gốc; bài do Reader tự viết dùng CC BY 4.0. Ảnh bìa từ Unsplash theo Unsplash License, ghi tên tác giả.

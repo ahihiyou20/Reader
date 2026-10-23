@@ -14,19 +14,32 @@
 - **Nội dung ra mắt**: **30 bài** song ngữ EN + VI, 8 chủ đề (science 7, economics 4, health 4, history 3, psychology 3, productivity 3, society 3, technology 3), mỗi bài 700–950 từ, 7 section, KEY POINT, 3 bước Apply, nguồn có DOI đã kiểm tra trên Crossref, ảnh bìa webp tự host có ghi công. Tất cả có cờ `seed: true`.
 - **Test**: 42 unit, 21 Security Rules (emulator), 9 E2E (Playwright, `tests/e2e/reader.spec.ts`). Build, lint, typecheck sạch. JS tải lần đầu 190 KB.
 - **Tài liệu**: README thiết lập (Firebase, OAuth, Cloudflare Pages, CMS auth, secrets); docs 02/05/06/07 cập nhật theo code.
-- **MCP**: `.mcp.json` cài 5 server tham chiếu (memory, sequential-thinking, fetch, git, filesystem).
+- **MCP**: `.mcp.json` cài 5 server tham chiếu (memory, sequential-thinking, fetch, git, filesystem) cùng `codegraph` (đồ thị code, chạy `npx @colbymchenry/codegraph init` ở phiên mới để tạo chỉ mục) và `context-mode` (giữ dữ liệu lớn ngoài ngữ cảnh, tìm kiếm FTS5).
+
+## Pipeline v2 và deploy (2026-10-23)
+
+- **Bài tự động**: `content/feeds.json` (14 nguồn, 13 đang bật), `scripts/pipeline/feeds.ts` + `create.ts` + `compose.ts` + `gemini.ts`, workflow `feeds.yml` (06:17 giờ Việt Nam). Tối đa **20 bài/ngày**, gom vào một pull request `bot/new-articles`; merge = đăng. Đã chạy thử thật (không có Gemini key): 5 bài từ NASA, Our World in Data, Global Voices, Wikipedia, USGS; một bài The Conversation dài 2.460 từ bị bỏ vì vượt giới hạn nguyên văn 1.500 từ.
+- **Form Issue** `.github/ISSUE_TEMPLATE/add-article.yml` + `issue-article.yml`: dán link hoặc văn bản → pull request kèm preview; chỉ owner/member/collaborator.
+- **Content model**: nhận giấy phép NC (CC BY-NC, CC BY-NC-SA, CC BY-NC-ND) vì site phi thương mại; giấy phép quyết định nhóm; **nhóm 5** (tóm tắt + link, `license: Copyright`, ≤ 450 từ, không lưu văn bản gốc); trường `summary.vi` cho bài nhóm 3.
+- **Giao diện**: nhãn "Tóm tắt của Reader · <nguồn>" và nút **Đọc bài gốc đầy đủ** cho nhóm 5; khung "Tóm tắt tiếng Việt" ở đầu bài nhóm 3 khi đọc tiếng Việt; `noindex` và loại khỏi sitemap cho nhóm 3 và 5.
+- **Branding cho Google OAuth**: trang `/about` song ngữ (trang chủ app trên màn hình đồng ý), logo `public/icons/logo-120.png`, thẻ xác minh `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, checklist trong README §2.
+- **Deploy**: project Cloudflare Pages `reader` → **https://reader-xtm.pages.dev**, tải lên bằng Wrangler; `deploy.yml` build trong Actions khi có secret `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`.
+- **Sửa lỗi phát hiện khi soát**: ở tiếng Việt, hàng nút trên Cover rộng hơn màn hình 375px, chạm nút gợi ý làm cả bài lệch ngang 21px; nay `.article` và `.view` dùng `overflow: clip`, nhãn rút gọn "Vuốt xem chi tiết". Test E2E vuốt bị chập chờn (có từ trước): vuốt 40% chiều cao chỉ qua trang nhờ vận tốc, mà máy bận thì sự kiện nhấc tay đến trễ > 100 ms; test nay vuốt 60%.
+- **Test**: 54 unit (thêm feed, giấy phép, highlight, form Issue, nhóm 5), 10 E2E.
 
 ## Việc cần người làm (không tự động được)
 
-1. Tạo project Firebase, OAuth client, project Cloudflare Pages và điền biến môi trường (README §Đưa lên mạng). Trước khi có, site chạy chế độ demo.
+1. Tạo project Firebase, OAuth client và điền biến môi trường (project Cloudflare Pages đã có) (README §Đưa lên mạng). Trước khi có, site chạy chế độ demo.
 2. Deploy Worker `sveltia-cms-auth` và sửa `base_url` trong `public/cms/config.yml` (đang là địa chỉ mẫu).
-3. Thêm secrets GitHub Actions: `FIREBASE_SERVICE_ACCOUNT_JSON`, `CF_PAGES_DEPLOY_HOOK`, `BACKUP_PASSPHRASE` (và tùy chọn `GEMINI_API_KEY`, `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY`).
-4. Biên tập viên đọc lại 30 bài seed (nhất là bản tiếng Việt) rồi bỏ cờ `seed`.
-5. Chọn giấy phép cho mã nguồn (repo chưa có file `LICENSE`).
+3. Thêm secrets GitHub Actions: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` (cần cho bài tự động), `FIREBASE_SERVICE_ACCOUNT_JSON`, `BACKUP_PASSPHRASE` (tùy chọn `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY`), biến `SITE_URL=https://reader-xtm.pages.dev`, và bật *Allow GitHub Actions to create and approve pull requests*.
+4. Điền branding trên Google Auth Platform và xác minh tên miền (README §2).
+5. Biên tập viên đọc lại 30 bài seed (nhất là bản tiếng Việt) rồi bỏ cờ `seed`.
+6. Chọn giấy phép cho mã nguồn (repo chưa có file `LICENSE`).
 
 ## Chưa kiểm chứng được trong môi trường phát triển
 
 - Đăng nhập Google thật (popup, redirect qua `/__/auth`, One Tap), App Check và các workflow cần secret: chỉ test được bằng emulator/chế độ demo.
+- Phần do Gemini viết (dịch, tóm tắt nhóm 5, highlight) và hai workflow `feeds.yml`, `issue-article.yml` trên GitHub: môi trường phát triển không có `GEMINI_API_KEY`, nên mới chạy thử nhánh không có Gemini; logic ráp bài có unit test.
 - Cảm giác gesture trên máy thật iOS/Android (E2E dùng touch giả lập qua DevTools).
 - Lighthouse trên site đã deploy.
 
@@ -35,7 +48,7 @@
 - **i18n**: không dùng next-intl và không có prefix `/en`, `/vi`; ngôn ngữ đổi tức thì trên client (giữ nguyên bài và section), lưu ở `localStorage` + cookie `NEXT_LOCALE`.
 - **Chuyển view ngang**: dùng kiểu trượt cạnh nhau + mờ dần như prototype đã duyệt, thay cho parallax 0.3× (parallax làm hai view chồng chữ lên nhau).
 - **Sao lưu**: artifact của repo public tải được bởi mọi tài khoản GitHub, nên `backup.yml` mã hoá GPG trước khi tải lên và dừng nếu thiếu `BACKUP_PASSPHRASE`.
-- **Giấy phép OpenStax**: metadata trong các repo `openstax/osbooks-*` (kiểm tra 2026-10-22) cho thấy phần lớn sách là **CC BY-NC-SA 4.0**, chỉ vài cuốn (Physics, Life Liberty and the Pursuit of Happiness) là CC BY 4.0. Pipeline từ chối NC theo mặc định.
+- **Giấy phép OpenStax**: metadata trong các repo `openstax/osbooks-*` (kiểm tra 2026-10-22) cho thấy phần lớn sách là **CC BY-NC-SA 4.0**, chỉ vài cuốn (Physics, Life Liberty and the Pursuit of Happiness) là CC BY 4.0. Từ 2026-10-23 pipeline nhận NC (site phi thương mại): sách CC BY-NC-SA vào nhóm 2.
 
 ## Phụ lục: ứng viên ảnh bìa (Unsplash qua picsum.photos)
 

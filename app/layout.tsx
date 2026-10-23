@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   },
   openGraph: { type: 'website', siteName: 'Reader', images: ['/icons/og.png'] },
   twitter: { card: 'summary_large_image' },
+  ...(env.googleSiteVerification ? { verification: { google: env.googleSiteVerification } } : {}),
 };
 
 export const viewport: Viewport = {

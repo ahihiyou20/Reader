@@ -24,11 +24,29 @@ interface Backlog {
 
 const SCIENCE = new Set(['science', 'technology']);
 
+/** Split a paragraph that is longer than `limit` words at sentence ends. */
+export function splitLong(p: string, limit = 130): string[] {
+  if (wordCount(p) <= limit) return [p];
+  // A sentence ends at . ! ? (plus a closing quote) followed by a space and a capital letter.
+  const sentences = p.split(/(?<=[.!?]["”’)]?)\s+(?=[\p{Lu}“"‘(])/u);
+  const out: string[] = [];
+  let cur = '';
+  for (const s of sentences) {
+    if (cur && wordCount(`${cur} ${s}`) > limit) {
+      out.push(cur);
+      cur = '';
+    }
+    cur = cur ? `${cur} ${s}` : s;
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+
 function chunk(s: { heading?: string; paragraphs: string[] }, limit = 130) {
   const out: Array<{ heading?: string; paragraphs: string[] }> = [];
   let cur: { heading?: string; paragraphs: string[] } = { heading: s.heading, paragraphs: [] };
   let n = 0;
-  for (const p of s.paragraphs) {
+  for (const p of s.paragraphs.flatMap((x) => splitLong(x, limit))) {
     const w = wordCount(p);
     if (cur.paragraphs.length && n + w > limit) {
       out.push(cur);
@@ -50,8 +68,11 @@ export async function draftFrom(src: Imported, category: string, sourceId: strin
   const verbatim = src.group === 3;
   const win = verbatim ? { sections: src.sections, needsTrim: false, shortened: false, words: 0 } : selectWindow(src.sections);
   const [first, ...rest] = win.sections;
-  const hook = first.paragraphs[0];
-  const firstRest = first.paragraphs.slice(1);
+  // The hook is the opening paragraph, or the first few when the opening is very short.
+  let take = 1;
+  while (take < first.paragraphs.length && wordCount(first.paragraphs.slice(0, take).join(' ')) < 40 && wordCount(first.paragraphs.slice(0, take + 1).join(' ')) <= 80) take++;
+  const hook = first.paragraphs.slice(0, take).join('\n\n');
+  const firstRest = first.paragraphs.slice(take);
   const grouped = [...(firstRest.length ? [{ heading: undefined as string | undefined, paragraphs: firstRest }] : []), ...rest];
   // Reader sections are short (≤ 130 words): split long source sections at paragraph boundaries.
   const sections = (verbatim ? grouped : grouped.flatMap((s) => chunk(s))).map((s) => ({
@@ -61,7 +82,7 @@ export async function draftFrom(src: Imported, category: string, sourceId: strin
   const slug = await uniqueSlug(src.title);
   const changes = verbatim ? [] : ['divided into sections', ...(win.shortened ? ['shortened'] : [])];
   const query = `${src.title.split(/[:?—–-]/)[0]} ${category}`.slice(0, 80);
-  const candidates: CoverSource[] = await findCovers(query, { videos: true, nasa: SCIENCE.has(category) });
+  const candidates: CoverSource[] = await findCovers(query, { videos: true, nasa: SCIENCE.has(category), category });
   const cover: CoverSource = candidates[0] ?? {
     type: 'image',
     url: '/icons/og.png',
@@ -98,34 +119,40 @@ export async function draftFrom(src: Imported, category: string, sourceId: strin
   return { article, needsTrim: win.needsTrim };
 }
 
+/** Import a licensed source: keep its metadata and raw text, and write a draft article. */
+export async function importSource(url: string, category: string): Promise<{ article: ArticleSource; needsTrim: boolean; src: Imported }> {
+  const src = await importUrl(url);
+  if (!ALLOWED_LICENSES.includes(src.license)) throw new Error(`Licence ${src.license} is not allowed`);
+  if (!src.sections.length) throw new Error('No text found');
+  const sourceId = slugify(`${new URL(url).hostname.replace(/^www\./, '')}-${src.title}`, 80);
+  await writeJson(path.join(dirs.sources, `${sourceId}.json`), {
+    id: sourceId,
+    url,
+    title: src.title,
+    authors: src.authors,
+    publisher: src.publisher,
+    year: src.year,
+    license: src.license,
+    licenseUrl: src.licenseUrl,
+    group: src.group,
+    termsUrl: src.termsUrl,
+    importedAt: new Date().toISOString(),
+  });
+  const { article, needsTrim } = await draftFrom(src, category, sourceId);
+  await writeJson(path.join(dirs.raw, `${sourceId}.json`), {
+    sections: src.sections,
+    // Group 3 (CC BY-ND): the article text must stay identical to this (checked by validate).
+    ...(src.group === 3 ? { body: rawBodyOf(article) } : {}),
+  });
+  await writeJson(path.join(dirs.articles, `${article.slug}.json`), article);
+  return { article, needsTrim, src };
+}
+
 async function run(url: string, category: string, backlogFile?: string) {
   const backlog = backlogFile ? await readJson<Backlog>(backlogFile) : null;
   if (backlog && backlogFile) await writeJson(backlogFile, { ...backlog, status: 'importing', error: undefined });
   try {
-    const src = await importUrl(url);
-    if (!ALLOWED_LICENSES.includes(src.license)) throw new Error(`Licence ${src.license} is not allowed`);
-    if (!src.sections.length) throw new Error('No text found');
-    const sourceId = slugify(`${new URL(url).hostname.replace(/^www\./, '')}-${src.title}`, 80);
-    await writeJson(path.join(dirs.sources, `${sourceId}.json`), {
-      id: sourceId,
-      url,
-      title: src.title,
-      authors: src.authors,
-      publisher: src.publisher,
-      year: src.year,
-      license: src.license,
-      licenseUrl: src.licenseUrl,
-      group: src.group,
-      termsUrl: src.termsUrl,
-      importedAt: new Date().toISOString(),
-    });
-    const { article, needsTrim } = await draftFrom(src, category, sourceId);
-    await writeJson(path.join(dirs.raw, `${sourceId}.json`), {
-      sections: src.sections,
-      // Group 3 (CC BY-ND): the article text must stay identical to this (checked by validate).
-      ...(src.group === 3 ? { body: rawBodyOf(article) } : {}),
-    });
-    await writeJson(path.join(dirs.articles, `${article.slug}.json`), article);
+    const { article, needsTrim, src } = await importSource(url, category);
     if (backlog && backlogFile) await writeJson(backlogFile, { ...backlog, status: 'imported', slug: article.slug, error: undefined });
     const check = validateArticle(article);
     const lines = [

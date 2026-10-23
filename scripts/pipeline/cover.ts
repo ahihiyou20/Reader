@@ -1,5 +1,6 @@
 // Cover candidates (docs/05 step 4): Unsplash and Pexels when API keys are set, NASA's image library
-// (public domain, no key) for science topics. The first candidate becomes the cover.
+// (public domain, no key) for science topics, and otherwise Unsplash photos picked by topic through
+// picsum.photos (no key). The first candidate becomes the cover.
 import type { CoverSource } from '../../lib/content/types';
 import { placeholderFor } from '../lib/media';
 import { http, httpJson } from './lib';
@@ -28,7 +29,7 @@ interface NasaItem {
   links?: Array<{ href: string; rel: string }>;
 }
 
-export async function findCovers(query: string, opts: { videos?: boolean; nasa?: boolean } = {}): Promise<CoverSource[]> {
+export async function findCovers(query: string, opts: { videos?: boolean; nasa?: boolean; category?: string } = {}): Promise<CoverSource[]> {
   const out: CoverSource[] = [];
   const q = encodeURIComponent(query);
   if (process.env.UNSPLASH_ACCESS_KEY) {
@@ -72,7 +73,7 @@ export async function findCovers(query: string, opts: { videos?: boolean; nasa?:
       console.warn('pexels:', (e as Error).message);
     }
   }
-  if (opts.nasa || out.length === 0) {
+  if (opts.nasa) {
     try {
       const r = await httpJson<{ collection: { items: NasaItem[] } }>(`https://images-api.nasa.gov/search?q=${q}&media_type=image`);
       for (const it of r.collection.items.slice(0, 4)) {
@@ -92,7 +93,56 @@ export async function findCovers(query: string, opts: { videos?: boolean; nasa?:
       console.warn('nasa:', (e as Error).message);
     }
   }
+  if (out.length === 0) out.push(...(await picsumCovers(query, opts.category)));
   return out.slice(0, 6);
+}
+
+/** Hand-picked Unsplash photos (served by picsum.photos) per topic: docs/08, appendix. */
+export const PICSUM_BY_CATEGORY: Record<string, number[]> = {
+  psychology: [473, 661, 563, 203, 255, 768, 680, 338, 497, 978],
+  science: [681, 683, 825, 537, 724, 903, 974, 1022, 967, 716, 700, 384, 1053, 523, 564, 1032, 829],
+  economics: [576, 382, 1078, 692, 348, 729, 955],
+  health: [488, 292, 1080, 841, 839, 1077, 425, 766],
+  productivity: [832, 444, 1073, 24, 367, 357, 175, 535],
+  history: [193, 1040, 819, 442],
+  technology: [182, 403, 885, 486, 366, 504, 816, 373],
+  society: [596, 390, 259, 331, 576, 382],
+};
+
+function hash(s: string) {
+  let h = 2166136261;
+  for (const c of s) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  return h >>> 0;
+}
+
+/** Up to three picsum candidates for a topic, starting at a spot chosen by the query. */
+const usedPicsum = new Set<number>();
+
+export async function picsumCovers(query: string, category = 'science'): Promise<CoverSource[]> {
+  const all = PICSUM_BY_CATEGORY[category] ?? PICSUM_BY_CATEGORY.science;
+  // Prefer photos not used yet in this run, so a day's articles do not share covers.
+  const fresh = all.filter((id) => !usedPicsum.has(id));
+  const ids = fresh.length >= 3 ? fresh : all;
+  const start = hash(query) % ids.length;
+  usedPicsum.add(ids[start]);
+  const out: CoverSource[] = [];
+  for (let k = 0; k < Math.min(3, ids.length); k++) {
+    const id = ids[(start + k) % ids.length];
+    try {
+      const info = await httpJson<{ author: string; url: string }>(`https://picsum.photos/id/${id}/info`);
+      out.push({
+        type: 'image',
+        url: `https://picsum.photos/id/${id}/1080/1920`,
+        provider: 'unsplash',
+        author: info.author,
+        license: 'Unsplash License',
+        sourceUrl: info.url,
+      });
+    } catch (e) {
+      console.warn('picsum:', (e as Error).message);
+    }
+  }
+  return out;
 }
 
 /** Blur placeholder and average colour from a remote image (a small rendition is enough). */
@@ -100,7 +150,11 @@ export async function remotePlaceholder(cover: CoverSource): Promise<{ blurDataU
   const url = cover.type === 'video' ? cover.poster : cover.url;
   if (!url) return {};
   try {
-    const small = cover.provider === 'unsplash' ? url.replace(/w=\d+/, 'w=64').replace(/h=\d+/, 'h=114') : url;
+    const small = url.startsWith('https://picsum.photos/')
+      ? url.replace(/\/\d+\/\d+$/, '/36/64')
+      : cover.provider === 'unsplash'
+        ? url.replace(/w=\d+/, 'w=64').replace(/h=\d+/, 'h=114')
+        : url;
     const res = await http(small);
     if (!res.ok) return {};
     return await placeholderFor(Buffer.from(await res.arrayBuffer()));

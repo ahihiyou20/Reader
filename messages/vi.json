@@ -4,7 +4,7 @@
   "guest": "Khách",
   "explore": "Khám phá",
   "exploreTitle": "Khám phá",
-  "toDetails": "Vuốt để xem chi tiết",
+  "toDetails": "Vuốt xem chi tiết",
   "details": "Chi tiết",
   "toEngage": "Vuốt để bình luận & áp dụng",
   "keyPoint": "Ý CHÍNH",
@@ -168,5 +168,10 @@
   "doubleTapHint": "Chạm hai lần để thích",
   "playVideo": "Phát video",
   "pauseVideo": "Dừng video",
-  "home": "Trang chủ"
+  "home": "Trang chủ",
+  "viSummary": "Tóm tắt tiếng Việt",
+  "readerSummary": "Tóm tắt của Reader · {publisher}",
+  "readOriginal": "Đọc bài gốc đầy đủ",
+  "readOriginalSub": "trên {publisher}",
+  "about": "Giới thiệu"
 }

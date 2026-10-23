@@ -13,8 +13,8 @@ backend:
     update: 'content: update {{collection}} “{{slug}}”'
     delete: 'content: delete {{collection}} “{{slug}}”'
 
-site_url: https://reader.pages.dev
-display_url: https://reader.pages.dev
+site_url: https://reader-xtm.pages.dev
+display_url: https://reader-xtm.pages.dev
 logo_url: /icons/icon-192.png
 media_folder: public/uploads
 public_folder: /uploads
@@ -47,7 +47,7 @@ collections:
         label: Preview
         widget: string
         required: false
-        hint: 'https://reader.pages.dev/preview?slug=<slug> — đọc thẳng file trên GitHub, không cần build.'
+        hint: 'https://reader-xtm.pages.dev/preview?slug=<slug> — đọc thẳng file trên GitHub, không cần build.'
       - name: status
         label: Trạng thái
         widget: select
@@ -90,7 +90,7 @@ collections:
         label_singular: Section
         widget: list
         summary: '{{fields.heading_en}}'
-        hint: 5–7 section, mỗi section tối đa 130 từ; tổng 700–950 từ.
+        hint: 5–7 section, mỗi section tối đa 130 từ; tổng 700–950 từ (bài tóm tắt nhóm 5 — 2–5 section, 150–400 từ).
         fields:
           - { name: heading_en, label: Heading EN, widget: string, required: false }
           - { name: heading_vi, label: Heading VI, widget: string, required: false }
@@ -109,6 +109,15 @@ collections:
         fields:
           - { name: en, label: English, widget: list, min: 3, max: 3 }
           - { name: vi, label: Tiếng Việt, widget: list, required: false, max: 3 }
+      - name: summary
+        label: Tóm tắt tiếng Việt (chỉ nhóm 3)
+        widget: object
+        required: false
+        collapsed: true
+        hint: Bài nhóm 3 (ND) không được dịch, nên người đọc tiếng Việt thấy bản tóm tắt do Reader tự viết ở đầu bài.
+        fields:
+          - { name: vi, label: Tiếng Việt, widget: text, required: false }
+          - { name: en, label: English (không bắt buộc), widget: text, required: false }
       - name: references
         label: Nguồn trong bài (chip)
         label_singular: Nguồn
@@ -136,21 +145,24 @@ collections:
         label: Nguồn gốc và giấy phép
         widget: object
         collapsed: true
-        hint: Pipeline điền sẵn khi import. Bài tự viết thì chọn nhóm 4 và giấy phép Reader-CC-BY-4.0.
+        hint: >-
+          Pipeline điền sẵn khi import. Bài tự viết: nhóm 4, giấy phép Reader-CC-BY-4.0. Bài tóm tắt nguồn có bản quyền:
+          nhóm 5, giấy phép Copyright, 2–5 section, dưới 450 từ, bắt buộc có link gốc.
         fields:
           - name: group
             label: Nhóm nguồn
             widget: select
             options:
-              - { label: '1 · CC BY / public domain', value: 1 }
-              - { label: '2 · CC BY-SA (Wikipedia)', value: 2 }
-              - { label: '3 · CC BY-ND, chỉ nguyên văn', value: 3 }
+              - { label: '1 · CC BY / CC BY-NC / public domain', value: 1 }
+              - { label: '2 · CC BY-SA / CC BY-NC-SA (Wikipedia, OpenStax)', value: 2 }
+              - { label: '3 · CC BY-ND / CC BY-NC-ND, chỉ nguyên văn', value: 3 }
               - { label: '4 · Tự viết', value: 4 }
+              - { label: '5 · Tóm tắt + link (nguồn có bản quyền)', value: 5 }
             default: 4
           - name: license
             label: Giấy phép
             widget: select
-            options: [CC-BY-4.0, CC-BY-3.0, CC-BY-SA-4.0, CC-BY-ND-4.0, PD, Reader-CC-BY-4.0]
+            options: [CC-BY-4.0, CC-BY-3.0, CC-BY-SA-4.0, CC-BY-ND-4.0, CC-BY-NC-4.0, CC-BY-NC-SA-4.0, CC-BY-NC-ND-4.0, PD, Reader-CC-BY-4.0, Copyright]
             default: Reader-CC-BY-4.0
           - { name: authors, label: Tác giả, widget: list, min: 1 }
           - { name: originalTitle, label: Tiêu đề gốc, widget: string, required: false }
@@ -221,3 +233,33 @@ collections:
               - { name: emoji, label: Emoji, widget: string }
               - { name: order, label: Thứ tự, widget: number, value_type: int }
               - { name: hasNew, label: Có bài mới (chấm đỏ), widget: boolean, required: false }
+      - name: feeds
+        label: Nguồn tự động
+        file: content/feeds.json
+        format: json
+        description: >-
+          Bot đọc các nguồn này mỗi ngày và mở một pull request chứa bài mới (tối đa maxPerDay bài). Merge pull
+          request = đăng. Chế độ: adapt (nguồn giấy phép mở), verbatim (CC BY-ND), summary (mọi trang khác, cần Gemini).
+        fields:
+          - { name: maxPerDay, label: Tối đa mỗi ngày, widget: number, value_type: int, default: 20, min: 1, max: 20 }
+          - { name: maxAgeDays, label: Bỏ qua bài cũ hơn (ngày), widget: number, value_type: int, default: 14 }
+          - name: feeds
+            label: Feed
+            label_singular: Feed
+            widget: list
+            summary: '{{fields.name}} · {{fields.mode}} · {{fields.category}}'
+            fields:
+              - { name: id, label: Id, widget: string }
+              - { name: name, label: Tên, widget: string }
+              - { name: url, label: URL RSS/Atom, widget: string }
+              - name: category
+                label: Chủ đề
+                widget: select
+                options: [auto, psychology, science, economics, society, health, productivity, history, technology]
+              - { name: mode, label: Cách đăng, widget: select, options: [adapt, verbatim, summary] }
+              - { name: max, label: Tối đa mỗi lần, widget: number, value_type: int, default: 2, required: false }
+              - { name: include, label: Chỉ lấy tiêu đề khớp (regex), widget: string, required: false }
+              - { name: exclude, label: Bỏ tiêu đề khớp (regex), widget: string, required: false }
+              - { name: maxWords, label: Số từ tối đa (bài nguyên văn), widget: number, value_type: int, required: false }
+              - { name: resolve, label: Cách lấy link, widget: select, options: [wikipedia-featured], required: false }
+              - { name: enabled, label: Bật, widget: boolean, default: true }

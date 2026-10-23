@@ -22,6 +22,8 @@ async function main() {
   await sharp(Buffer.from(mark(192, 0, 42))).png().toFile('public/icons/icon-192.png');
   await sharp(Buffer.from(mark(512, 70, 0))).png().toFile('public/icons/maskable-512.png');
   await sharp(Buffer.from(mark(180, 0, 0))).png().toFile('public/icons/apple-touch-icon.png');
+  // Google OAuth consent screen logo: square 120×120 PNG, no transparency.
+  await sharp(Buffer.from(mark(120, 0, 0))).flatten({ background: '#0B0B0F' }).png().toFile('public/icons/logo-120.png');
   const og = `
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs><radialGradient id="r" cx=".3" cy=".3" r=".9"><stop offset="0" stop-color="#3b1640"/><stop offset="1" stop-color="#0B0B0F"/></radialGradient>

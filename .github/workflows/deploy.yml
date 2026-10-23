@@ -1,4 +1,8 @@
-# Step 8: call the Cloudflare Pages deploy hook only when the live site would change.
+# Step 8: build the site and upload it to Cloudflare Pages, only when the live site would change.
+# Direct upload with Wrangler needs the CLOUDFLARE_API_TOKEN (Pages: Edit) and CLOUDFLARE_ACCOUNT_ID
+# secrets; a Pages project connected to Git can instead use the CF_PAGES_DEPLOY_HOOK secret.
+# Other workflows start this one with `gh workflow run deploy.yml` (pushes made by the bot token do
+# not trigger push events).
 name: Deploy
 on:
   push:
@@ -12,6 +16,10 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
@@ -23,10 +31,28 @@ jobs:
         run: pnpm tsx scripts/pipeline/deploy-check.ts "${{ github.event.before }}" "${{ github.sha }}"
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
-      - name: Trigger Cloudflare Pages build
-        if: steps.check.outputs.needed == 'true' || github.event_name == 'workflow_dispatch'
+      - name: Build
+        if: (steps.check.outputs.needed == 'true' || github.event_name == 'workflow_dispatch') && env.CLOUDFLARE_API_TOKEN != ''
         env:
-          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ vars.NEXT_PUBLIC_FIREBASE_API_KEY }}
+          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ vars.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }}
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_PROJECT_ID }}
+          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_APP_ID }}
+          NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ vars.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_CLIENT_ID }}
+          NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }}
+          NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ vars.NEXT_PUBLIC_CF_ANALYTICS_TOKEN }}
+        run: pnpm build
+      - name: Upload to Cloudflare Pages
+        if: (steps.check.outputs.needed == 'true' || github.event_name == 'workflow_dispatch')
+        env:
+          PROJECT: ${{ vars.CF_PAGES_PROJECT || 'reader' }}
         run: |
-          if [ -z "$HOOK" ]; then echo "CF_PAGES_DEPLOY_HOOK is not set"; exit 0; fi
-          curl -fsS -X POST "$HOOK" > /dev/null && echo "Build triggered"
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            pnpm dlx wrangler@4.148.0 pages deploy out --project-name "$PROJECT" --branch main --commit-hash "$GITHUB_SHA" --commit-message "$(git log -1 --format=%s)"
+          elif [ -n "$HOOK" ]; then
+            curl -fsS -X POST "$HOOK" > /dev/null && echo "Build triggered"
+          else
+            echo "::warning::Set CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID (or CF_PAGES_DEPLOY_HOOK) to deploy."
+          fi

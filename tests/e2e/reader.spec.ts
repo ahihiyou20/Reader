@@ -53,7 +53,9 @@ async function swipe(page: Page, from: { x: number; y: number }, to: { x: number
 test('swipes move between articles and views', async ({ page }) => {
   await openFeed(page);
   const { width, height } = page.viewportSize()!;
-  await swipe(page, { x: width / 2, y: height * 0.7 }, { x: width / 2, y: height * 0.3 });
+  // More than half a screen, so the page turns by distance even if a busy machine delays the
+  // release past the 100 ms velocity window (a slow drag under half a screen springs back).
+  await swipe(page, { x: width / 2, y: height * 0.82 }, { x: width / 2, y: height * 0.22 });
   await expect.poll(() => topOf(page, 2)).toBeLessThan(2);
 
   await swipe(page, { x: width * 0.8, y: height / 2 }, { x: width * 0.2, y: height / 2 });
@@ -109,10 +111,22 @@ test('article pages are readable without JavaScript', async ({ request }) => {
   expect(html).toContain('Surprising facts about our Moon');
 });
 
-test('privacy and terms pages load', async ({ page }) => {
-  for (const path of ['/privacy', '/terms']) {
+test('about, privacy and terms pages load (Google OAuth branding)', async ({ page }) => {
+  for (const path of ['/about', '/privacy', '/terms']) {
     const res = await page.goto(path);
     expect(res?.ok()).toBeTruthy();
     await expect(page.locator('h1').first()).toBeVisible();
   }
+  await page.goto('/about');
+  await expect(page.locator('a[href="/privacy"]').first()).toBeVisible();
+  const logo = await page.request.get('/icons/logo-120.png');
+  expect(logo.ok()).toBeTruthy();
+});
+
+test('tapping the Details hint does not shift the screen sideways', async ({ page }) => {
+  await page.goto('/a/smarter-decisions');
+  await page.locator('section.article').first().locator('.view.cover .hint').first().click();
+  await page.waitForTimeout(800);
+  const shifted = await page.evaluate(() => [...document.querySelectorAll('*')].some((e) => e.scrollLeft > 0));
+  expect(shifted).toBe(false);
 });

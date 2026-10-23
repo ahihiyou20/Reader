@@ -2,6 +2,7 @@
 import { articleSourceSchema } from './schema';
 import { citedIds, countWords, highlightCount, parseRich, plainText } from './markup';
 import type { ArticleSource } from './types';
+import { NO_DERIVATIVES, SHARE_ALIKE } from './types';
 
 export type Level = 'error' | 'warning' | 'info';
 export interface Issue {
@@ -24,6 +25,10 @@ export const LIMITS = {
   highlightsPerSection: 3,
   keyPointWords: [40, 60] as const,
   titleWords: 12,
+  /** Group 5 (summary + link): short enough that it never replaces the original. */
+  summarySections: [2, 5] as const,
+  summaryWords: [150, 400] as const,
+  summaryMaxWords: 450,
 };
 
 export function totalWords(a: Pick<ArticleSource, 'hook' | 'sections' | 'references'>): number {
@@ -68,6 +73,8 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
   });
   check('keyPoint.en', a.keyPoint?.en);
   check('keyPoint.vi', a.keyPoint?.vi);
+  check('summary.en', a.summary?.en);
+  check('summary.vi', a.summary?.vi);
 
   if (opts.categories && !opts.categories.includes(a.category)) err('category', `Unknown category "${a.category}"`);
 
@@ -75,9 +82,13 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
   const o = a.origin;
   if (o.group !== 4 && !o.originalUrl) err('origin.originalUrl', 'Link to the original is required');
   if (o.group !== 4 && !o.originalTitle) err('origin.originalTitle', 'Original title is required');
-  if (o.group === 2 && o.license !== 'CC-BY-SA-4.0') err('origin.license', 'Share-alike sources must keep CC BY-SA 4.0');
-  if (o.group === 3 && o.license !== 'CC-BY-ND-4.0') err('origin.license', 'Group 3 sources are CC BY-ND 4.0');
+  if (o.group === 1 && (SHARE_ALIKE.includes(o.license) || NO_DERIVATIVES.includes(o.license) || ['Copyright', 'Reader-CC-BY-4.0'].includes(o.license)))
+    err('origin.license', 'Group 1 sources are CC BY, CC BY-NC or public domain');
+  if (o.group === 2 && !SHARE_ALIKE.includes(o.license)) err('origin.license', 'Share-alike sources must keep CC BY-SA 4.0 or CC BY-NC-SA 4.0');
+  if (o.group === 3 && !NO_DERIVATIVES.includes(o.license)) err('origin.license', 'Group 3 sources are CC BY-ND 4.0 or CC BY-NC-ND 4.0');
   if (o.group === 4 && o.license !== 'Reader-CC-BY-4.0') err('origin.license', 'Self-written articles use Reader-CC-BY-4.0');
+  if (o.group === 5 && o.license === 'Reader-CC-BY-4.0') err('origin.license', 'Group 5 records the licence of the summarised original');
+  if (a.summary && o.group !== 3) warn('summary', 'The summary field is only shown for group 3 (verbatim) articles');
   if ((o.group === 1 || o.group === 2) && o.changes.length === 0) err('origin.changes', 'List the changes made to the source');
   if (opts.sourceLicense && opts.sourceLicense !== o.license)
     err('origin.license', `Licence ${o.license} does not match the imported source (${opts.sourceLicense})`);
@@ -104,7 +115,14 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
   // Length and structure (warnings: the editor decides)
   const words = totalWords(a);
   const hookWords = countWords(plainText(a.hook.en, refIds));
-  if (o.group !== 3) {
+  if (o.group === 5) {
+    // Summary + link: Reader's own words, kept short so the original stays the place to read it.
+    if (words > LIMITS.summaryMaxWords) err('sections', `${words} words: a summary must stay under ${LIMITS.summaryMaxWords} words`);
+    else if (words < LIMITS.summaryWords[0] || words > LIMITS.summaryWords[1])
+      warn('sections', `${words} words in total (aim for ${LIMITS.summaryWords.join('–')})`);
+    if (a.sections.length < LIMITS.summarySections[0] || a.sections.length > LIMITS.summarySections[1])
+      warn('sections', `${a.sections.length} sections (aim for ${LIMITS.summarySections.join('–')})`);
+  } else if (o.group !== 3) {
     if (hookWords < LIMITS.hookWords[0] || hookWords > LIMITS.hookWords[1])
       warn('hook.en', `Hook has ${hookWords} words (aim for ${LIMITS.hookWords.join('–')})`);
     if (a.sections.length < LIMITS.sections[0] || a.sections.length > LIMITS.sections[1])
@@ -140,6 +158,7 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
     (a.keyPoint?.en && !a.keyPoint.vi) ||
     (a.applySteps?.en.length && !a.applySteps.vi?.length);
   if (missingVi && o.group !== 3) info('vi', 'Vietnamese version is incomplete (readers will see "EN only")');
+  if (o.group === 3 && !a.summary?.vi?.trim()) info('summary.vi', 'Add a Vietnamese summary for readers who switch to Vietnamese');
 
   return { ok: !issues.some((i) => i.level === 'error'), issues, wordCount: words, article: a };
 }

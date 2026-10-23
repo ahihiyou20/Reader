@@ -77,7 +77,7 @@ export const onRequest: PagesFunction<{ FIREBASE_PROJECT_ID: string }> = async (
 
 - Đặt biến môi trường `FIREBASE_PROJECT_ID` trong Cloudflare Pages (Settings → Environment variables). `public/_routes.json` giới hạn Function chỉ chạy cho `/__/auth/*`, các đường dẫn khác vẫn là file tĩnh.
 
-- Đặt `authDomain` = domain của app (ví dụ `reader.pages.dev` hoặc domain riêng).
+- Đặt `authDomain` = domain của app (ví dụ `reader-xtm.pages.dev` hoặc domain riêng).
 - Thêm `https://<domain>/__/auth/handler` vào **Authorized redirect URIs** của OAuth client (Google Cloud Console), và thêm domain vào **Authorized domains** (Firebase Auth).
 - Mỗi lần đăng nhập chỉ tốn vài request, nằm trong quota 100.000 request/ngày miễn phí của Workers.
 

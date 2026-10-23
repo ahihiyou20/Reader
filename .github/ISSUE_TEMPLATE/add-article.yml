@@ -1,0 +1,60 @@
+# Quick upload (docs/05 §9): an editor opens this form, the "Add article" workflow turns it into a
+# pull request with the new article and a preview link. Only the repo owner and collaborators can
+# trigger it; anyone else's issue is ignored.
+name: Thêm bài viết
+description: Dán link hoặc nội dung, bot sẽ tạo bài và mở pull request để bạn duyệt.
+title: '[Bài mới] '
+labels: [add-article]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Điền **link** hoặc **nội dung** (một trong hai). Bot tự chọn cách đăng theo giấy phép của nguồn:
+        - nguồn giấy phép mở (NASA, Wikipedia, Our World in Data…): phỏng theo, có bản tiếng Việt;
+        - The Conversation (CC BY-ND): đăng nguyên văn kèm tóm tắt tiếng Việt;
+        - mọi trang khác: Reader tự viết **bản tóm tắt ngắn + link** tới bài gốc (cần `GEMINI_API_KEY`).
+
+        Khi bot xong, nó bình luận link preview và pull request. **Merge pull request = đăng bài.**
+  - type: input
+    id: url
+    attributes:
+      label: Link bài gốc
+      placeholder: https://…
+  - type: textarea
+    id: text
+    attributes:
+      label: Hoặc dán nội dung bạn tự viết
+      description: Văn bản của chính bạn (tiếng Anh hoặc tiếng Việt). Để trống nếu đã điền link.
+  - type: input
+    id: title
+    attributes:
+      label: Tiêu đề (không bắt buộc)
+  - type: dropdown
+    id: category
+    attributes:
+      label: Chủ đề
+      options:
+        - Tự chọn (auto)
+        - Psychology · Tâm lý học
+        - Science · Khoa học
+        - Economics · Kinh tế
+        - Society · Xã hội
+        - Health · Sức khỏe
+        - Productivity · Năng suất
+        - History · Lịch sử
+        - Technology · Công nghệ
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Cách đăng
+      options:
+        - Tự động theo giấy phép (khuyên dùng)
+        - Phỏng theo (chỉ nguồn giấy phép mở)
+        - Nguyên văn (nguồn CC BY-ND)
+        - Tóm tắt + link
+      default: 0
+    validations:
+      required: true

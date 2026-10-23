@@ -2,10 +2,16 @@
 import { JSDOM } from 'jsdom';
 import type { ImportedSection } from './types';
 
-const SKIP = 'script, style, noscript, figure, figcaption, table, aside, nav, footer, form, button, iframe, svg, video, audio, sup.reference, .reference, .mw-editsection, .hatnote, .navbox, .infobox, .thumb, .gallery, .mw-references-wrap, .reflist, .metadata, .noprint, .shortdescription, .sr-only';
+const SKIP = 'script, style, noscript, figure, figcaption, table, aside, nav, footer, form, button, iframe, svg, video, audio, sup.reference, .reference, a.ref, a[href^="#"] > sup, sup > a[href^="#"], .mw-editsection, .hatnote, .navbox, .infobox, .thumb, .gallery, .mw-references-wrap, .reflist, .metadata, .noprint, .shortdescription, .sr-only';
 const BLOCK = new Set(['P', 'LI', 'BLOCKQUOTE', 'DD']);
 const HEADINGS = new Set(['H2', 'H3', 'H4']);
-const DROP_HEADINGS = /^(references?|notes?|see also|external links|further reading|bibliography|sources|footnotes|citations?|related|acknowledg(e)?ments?|glossary|link to learning|conflict of interest|author contributions?|funding|cite this work|past versions|reuse this work( freely)?|endnotes|keep reading|related (research|articles|charts|topics)|about the authors?|more resources|share this|ai tool statement|young reviewers?|original source article|tài liệu tham khảo|xem thêm|liên kết ngoài|chú thích)$/i;
+const DROP_HEADINGS = /^(references?|notes?|see also|external links|further reading|bibliography|sources|footnotes|citations?|related|acknowledg(e)?ments?|glossary|link to learning|conflict of interest|author contributions?|funding|cite this work|past versions|reuse this work( freely)?|endnotes|keep reading|you may also be interested in:?|stay up-to-date.*|related terms|explore more|more from nasa|discover more topics.*|related (research|articles|charts|topics)|about the authors?|more resources|share this|ai tool statement|young reviewers?|original source article|tài liệu tham khảo|xem thêm|liên kết ngoài|chú thích)$/i;
+
+/** A heading that is only a date (NASA puts reference lists under one). */
+const DATE_HEADING = /^(\w+ \d{1,2}, \d{4}|\d{1,2} \w+ \d{4}|\d{4}-\d{2}-\d{2})$/;
+/** Page furniture that Readability sometimes keeps as paragraphs. */
+const JUNK_PARAGRAPH = /^(\d+\s*min(ute)?s?\s+read|share|print|email|advertisement|read more|listen to this article.*|image credit:.*)$/i;
+const LEAD_IN = /^(Image of the Day for \w+ \d{1,2}, \d{4})\s+/;
 
 /** Escape characters that mean something in Reader markup. */
 export const escapeMarkup = (s: string) => s.replace(/([\\*[\]{}])/g, '\\$1');
@@ -61,13 +67,13 @@ export function htmlToSections(html: string, opts: { plain?: boolean; baseUrl?: 
     const tag = node.tagName;
     if (HEADINGS.has(tag)) {
       const heading = clean(node.textContent ?? '');
-      dropping = DROP_HEADINGS.test(heading);
+      dropping = DROP_HEADINGS.test(heading) || DATE_HEADING.test(heading);
       if (!dropping && heading) sections.push({ heading, paragraphs: [] });
     } else if (BLOCK.has(tag) && !dropping) {
       // nested lists/paragraphs are handled by their own entries
       if (!(tag === 'P' && node.closest('li')) && !(tag === 'LI' && node.querySelector('p'))) {
-        const text = clean(inline(node, Boolean(opts.plain)));
-        if (text && /\p{L}/u.test(text)) sections[sections.length - 1].paragraphs.push(tag === 'LI' ? `• ${text}` : text);
+        const text = clean(inline(node, Boolean(opts.plain))).replace(LEAD_IN, '');
+        if (text && /\p{L}/u.test(text) && !JUNK_PARAGRAPH.test(text)) sections[sections.length - 1].paragraphs.push(tag === 'LI' ? `• ${text}` : text);
       }
     }
     node = walker.nextNode() as Element | null;

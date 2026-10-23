@@ -12,7 +12,7 @@ export const dirs = {
   generated: path.join(CONTENT, 'generated'),
 };
 
-export const SITE_URL = (process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL ?? 'https://reader.pages.dev').replace(/\/$/, '');
+export const SITE_URL = (process.env.SITE_URL ?? process.env.NEXT_PUBLIC_SITE_URL ?? 'https://reader-xtm.pages.dev').replace(/\/$/, '');
 export const USER_AGENT = `ReaderContentPipeline/1.0 (+https://github.com/${process.env.GITHUB_REPOSITORY ?? 'ahihiyou20/Reader'})`;
 
 export async function readJson<T>(file: string, fallback?: T): Promise<T> {

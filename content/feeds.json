@@ -1,0 +1,29 @@
+{
+  "maxPerDay": 20,
+  "maxAgeDays": 14,
+  "feeds": [
+    { "id": "nasa-science", "name": "NASA Science", "url": "https://science.nasa.gov/feed/", "category": "science", "mode": "adapt", "max": 3, "exclude": "^APOD|proposer|solicitation|ROSES|opportunit|funding|job", "enabled": true },
+    { "id": "owid", "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "category": "auto", "mode": "adapt", "max": 2, "enabled": true },
+    { "id": "conversation", "name": "The Conversation", "url": "https://theconversation.com/global/articles.atom", "category": "auto", "mode": "verbatim", "max": 3, "maxWords": 1500, "exclude": "election|Trump|Putin|Netanyahu|ceasefire|minister|parliament|senate|congress|tariff|budget", "enabled": true },
+    { "id": "global-voices", "name": "Global Voices", "url": "https://globalvoices.org/feed/", "category": "society", "mode": "adapt", "max": 2, "enabled": true },
+    {
+      "id": "wikipedia-featured",
+      "name": "Wikipedia — Today's featured article",
+      "url": "https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom",
+      "category": "auto",
+      "mode": "adapt",
+      "max": 1,
+      "resolve": "wikipedia-featured",
+      "enabled": true
+    },
+    { "id": "usgs", "name": "U.S. Geological Survey", "url": "https://www.usgs.gov/news/all/feed", "category": "science", "mode": "adapt", "max": 1, "enabled": true },
+    { "id": "psyche", "name": "Psyche", "url": "https://psyche.co/feed", "category": "psychology", "mode": "summary", "max": 2, "enabled": true },
+    { "id": "quanta", "name": "Quanta Magazine", "url": "https://www.quantamagazine.org/feed/", "category": "science", "mode": "summary", "max": 1, "enabled": true },
+    { "id": "knowable", "name": "Knowable Magazine", "url": "https://knowablemagazine.org/rss", "category": "auto", "mode": "summary", "max": 2, "enabled": true },
+    { "id": "nautilus", "name": "Nautilus", "url": "https://nautil.us/feed/", "category": "auto", "mode": "summary", "max": 1, "enabled": true },
+    { "id": "big-think", "name": "Big Think", "url": "https://bigthink.com/feed/", "category": "auto", "mode": "summary", "max": 1, "enabled": true },
+    { "id": "npr-health", "name": "NPR Health", "url": "https://feeds.npr.org/1128/rss.xml", "category": "health", "mode": "summary", "max": 1, "enabled": true },
+    { "id": "sciencedaily", "name": "ScienceDaily", "url": "https://www.sciencedaily.com/rss/top/science.xml", "category": "science", "mode": "summary", "max": 1, "enabled": true },
+    { "id": "vnexpress-khoa-hoc", "name": "VnExpress Khoa học", "url": "https://vnexpress.net/rss/khoa-hoc.rss", "category": "science", "mode": "summary", "max": 1, "enabled": false }
+  ]
+}

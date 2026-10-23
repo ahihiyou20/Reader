@@ -2,7 +2,7 @@
 // SCR-02 Details: sections with focus/dim, collapsing header, KEY POINT, sources, dots (FR-05..FR-09).
 import { MDiv, MH2 } from '@/components/Motion';
 import { useMotionValue, useTransform } from 'framer-motion';
-import { ChevronDown, ChevronsRight, Library } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, ChevronsRight, Library } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
@@ -173,11 +173,22 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
     secs.current[k] = el;
   };
   const kpText = pick(article.keyPoint, lang);
+  const o = article.origin;
+  // Group 3 cannot be translated: Vietnamese readers get Reader's own summary above the original text.
+  const viSummary = lang === 'vi' && o.group === 3 ? article.summary?.vi : undefined;
+  const publisher = o.publisher ?? (o.originalUrl ? new URL(o.originalUrl).hostname.replace(/^www\./, '') : '');
 
   return (
     <>
       <div className="dscroll" ref={scroll}>
         <div className={`sec hook${focus.has(0) ? ' on' : ''}`} data-k={0} ref={setRef(0)} lang={isFallback(article.hook, lang) ? 'en' : undefined}>
+          {o.group === 5 && <p className="glabel">{t('readerSummary', { publisher })}</p>}
+          {viSummary && viSummary.length > 0 && (
+            <div className="vsum" lang="vi">
+              <p className="glabel">{t('viSummary')}</p>
+              <RichText rich={viSummary} onCite={cite} />
+            </div>
+          )}
           <RichText rich={pick(article.hook, lang)} onCite={cite} />
         </div>
         {article.sections.map((s, i) => {
@@ -207,6 +218,15 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             </div>
           )}
           {!kpText && <div ref={kp} />}
+          {o.group === 5 && o.originalUrl && (
+            <a className="orig" href={o.originalUrl} target="_blank" rel="noopener noreferrer">
+              <span>
+                {t('readOriginal')}
+                <small>{t('readOriginalSub', { publisher })}</small>
+              </span>
+              <ArrowUpRight className="ic" aria-hidden="true" />
+            </a>
+          )}
           <button className="srcline" type="button" onClick={() => openSheet({ kind: 'sources', slug })}>
             <Library className="ic" aria-hidden="true" />
             <span>{t('source', { n: article.references.length })}</span>

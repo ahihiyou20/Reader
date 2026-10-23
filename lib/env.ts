@@ -9,9 +9,11 @@ export const env = {
   recaptchaSiteKey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? '',
   googleClientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? '',
   useEmulators: process.env.NEXT_PUBLIC_USE_EMULATORS === 'true',
-  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://reader.pages.dev').replace(/\/$/, ''),
+  siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://reader-xtm.pages.dev').replace(/\/$/, ''),
   repo: process.env.NEXT_PUBLIC_REPO ?? 'ahihiyou20/Reader',
   repoBranch: process.env.NEXT_PUBLIC_REPO_BRANCH ?? 'main',
+  /** Google Search Console "HTML tag" token: proves the domain for the OAuth consent screen. */
+  googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? '',
   cfAnalyticsToken: process.env.NEXT_PUBLIC_CF_ANALYTICS_TOKEN ?? '',
   buildId: process.env.NEXT_PUBLIC_BUILD_ID ?? 'dev',
 };

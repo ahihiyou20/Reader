@@ -372,8 +372,9 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY=         # App Check (reCAPTCHA v3)
 NEXT_PUBLIC_GOOGLE_CLIENT_ID=           # One Tap
+NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=   # thẻ xác minh Google Search Console (branding OAuth)
 NEXT_PUBLIC_USE_EMULATORS=false
-NEXT_PUBLIC_SITE_URL=https://reader.pages.dev
+NEXT_PUBLIC_SITE_URL=https://reader-xtm.pages.dev
 NEXT_PUBLIC_REPO=ahihiyou20/Reader      # /preview đọc bài nháp từ repo này
 NEXT_PUBLIC_REPO_BRANCH=main
 NEXT_PUBLIC_CF_ANALYTICS_TOKEN=         # Cloudflare Web Analytics (tùy chọn)
@@ -383,8 +384,9 @@ FIREBASE_PROJECT_ID=                    # proxy /__/auth → <id>.firebaseapp.co
 
 # Chỉ trong GitHub Actions secrets (không bao giờ ở client):
 FIREBASE_SERVICE_ACCOUNT_JSON=          # job đêm, submissions, backup, set-moderator
-CF_PAGES_DEPLOY_HOOK=                   # build lại site hằng ngày / khi nội dung đổi
+CLOUDFLARE_API_TOKEN=, CLOUDFLARE_ACCOUNT_ID=   # deploy.yml tải out/ lên Pages bằng Wrangler
+CF_PAGES_DEPLOY_HOOK=                   # thay thế, chỉ khi project Pages nối Git
 BACKUP_PASSPHRASE=                      # mã hoá bản sao lưu (artifact của repo public ai cũng tải được)
-GEMINI_API_KEY=                         # tùy chọn, 05 §6 (biến GEMINI_MODEL ở Actions variables)
+GEMINI_API_KEY=                         # nên có: bài tự động hằng ngày, form Issue (05 bước 11–12); GEMINI_MODEL ở variables
 UNSPLASH_ACCESS_KEY=, PEXELS_API_KEY=   # tùy chọn, tìm ảnh bìa khi import
 ```

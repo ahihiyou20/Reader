@@ -18,8 +18,33 @@ export type Rich = InlineNode[][];
 
 export type ArticleStatus = 'draft' | 'review' | 'published' | 'unpublished';
 export type CoverProvider = 'unsplash' | 'pexels' | 'wikimedia' | 'nasa' | 'openverse' | 'source' | 'own';
-export type License = 'CC-BY-4.0' | 'CC-BY-3.0' | 'CC-BY-SA-4.0' | 'CC-BY-ND-4.0' | 'PD' | 'Reader-CC-BY-4.0';
-export const ALLOWED_LICENSES: License[] = ['CC-BY-4.0', 'CC-BY-3.0', 'CC-BY-SA-4.0', 'CC-BY-ND-4.0', 'PD', 'Reader-CC-BY-4.0'];
+export type License =
+  | 'CC-BY-4.0'
+  | 'CC-BY-3.0'
+  | 'CC-BY-SA-4.0'
+  | 'CC-BY-ND-4.0'
+  | 'CC-BY-NC-4.0'
+  | 'CC-BY-NC-SA-4.0'
+  | 'CC-BY-NC-ND-4.0'
+  | 'PD'
+  | 'Reader-CC-BY-4.0'
+  | 'Copyright';
+export const ALLOWED_LICENSES: License[] = [
+  'CC-BY-4.0',
+  'CC-BY-3.0',
+  'CC-BY-SA-4.0',
+  'CC-BY-ND-4.0',
+  'CC-BY-NC-4.0',
+  'CC-BY-NC-SA-4.0',
+  'CC-BY-NC-ND-4.0',
+  'PD',
+  'Reader-CC-BY-4.0',
+  'Copyright',
+];
+/** Content groups (docs/05 §2): 1 adapt, 2 share-alike, 3 verbatim (no derivatives), 4 written for Reader, 5 summary + link. */
+export type ContentGroup = 1 | 2 | 3 | 4 | 5;
+export const SHARE_ALIKE: License[] = ['CC-BY-SA-4.0', 'CC-BY-NC-SA-4.0'];
+export const NO_DERIVATIVES: License[] = ['CC-BY-ND-4.0', 'CC-BY-NC-ND-4.0'];
 
 export interface Reference {
   id: string;
@@ -51,13 +76,15 @@ export interface ArticleSource {
   sections: Array<{ heading_en?: string; heading_vi?: string; body_en: string; body_vi?: string }>;
   keyPoint?: Localized<string>;
   applySteps?: Localized<string[]>;
+  /** Group 3 only: Reader's own short summary, shown to Vietnamese readers because the text cannot be translated. */
+  summary?: { en?: string; vi?: string };
   references: Reference[];
   cover: CoverSource;
   coverCandidates?: CoverSource[];
   blurDataURL?: string;
   dominant?: string;
   origin: {
-    group: 1 | 2 | 3 | 4;
+    group: ContentGroup;
     sourceId?: string;
     submissionId?: string;
     license: License;
@@ -106,6 +133,7 @@ export interface ArticleClient {
   sections: Array<{ heading?: Localized<string>; body: Localized<Rich> }>;
   keyPoint?: Localized<Rich>;
   applySteps?: Localized<string[]>;
+  summary?: Localized<Rich>;
   references: Reference[];
   cover: CoverClient;
   origin: ArticleSource['origin'];

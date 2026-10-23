@@ -53,8 +53,8 @@ export function CoverView({ item, titleId, title }: { item: FeedItem; titleId: s
             <i className="dot" />
           </span>
         </button>
-        <button className={`hint${nudge ? ' nudge' : ''}`} type="button" onClick={toDetails}>
-          {t('toDetails')}
+        <button className={`hint${nudge ? ' nudge' : ''}`} type="button" onClick={toDetails} aria-label={t('toDetails')}>
+          <span className="hint-t">{t('toDetails')}</span>
           <ChevronsRight className="ic" aria-hidden="true" />
         </button>
       </div>

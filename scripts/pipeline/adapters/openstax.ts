@@ -1,5 +1,5 @@
 // OpenStax: CNXML from the book's GitHub repository (openstax/osbooks-*). The licence is read from
-// the book's collection metadata; most books are CC BY-NC-SA 4.0, which the pipeline refuses.
+// the book's collection metadata; most books are CC BY-NC-SA 4.0 (group 2), a few CC BY 4.0.
 import { XMLParser } from 'fast-xml-parser';
 import { httpText } from '../lib';
 import { normalizeLicense } from '../licenses';
@@ -89,7 +89,7 @@ export async function importOpenStax(ctx: AdapterContext): Promise<Imported> {
   const collectionXml = await httpText(raw(repo, `collections/${book}.collection.xml`));
   const license = normalizeLicense(collectionXml.match(/<md:license url="([^"]+)"/)?.[1]);
   const licenseUrl = collectionXml.match(/<md:license url="([^"]+)"/)?.[1];
-  if (!license) throw new Error(`OpenStax book "${book}" is licensed ${licenseUrl ?? 'unknown'}, which Reader cannot use (non-commercial or unknown)`);
+  if (!license) throw new Error(`OpenStax book "${book}" is licensed ${licenseUrl ?? 'unknown'}, which Reader does not recognise`);
   const bookTitle = collectionXml.match(/<md:title>([^<]+)<\/md:title>/)?.[1] ?? book;
   // The n-th chapter is the n-th top-level subcollection; section 0 is the chapter introduction.
   const chapters = [...collectionXml.matchAll(/<col:subcollection>([\s\S]*?)<\/col:subcollection>/g)].map((c) =>

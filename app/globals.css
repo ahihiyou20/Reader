@@ -181,6 +181,8 @@ select {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  /* clip, not just hide: focusing a control near the edge must not scroll the page sideways */
+  overflow: clip;
   contain: strict;
 }
 .bg,
@@ -250,6 +252,8 @@ select {
   top: 0;
   bottom: 0;
   width: 100%;
+  /* each view stays inside its own screen (the cover's nudging hint must not peek into Details) */
+  overflow: clip;
 }
 .view.cover {
   left: 0;
@@ -392,6 +396,7 @@ select {
   align-items: center;
 }
 .gridbtn {
+  flex: none;
   width: 36px;
   height: 36px;
 }
@@ -400,10 +405,31 @@ select {
   height: 20px;
 }
 .epill {
+  flex: none;
   margin-left: 46px;
   padding: 0 12px 0 24px;
   height: 42px;
   font-size: 17px;
+}
+.crow .hint {
+  min-width: 0;
+  padding-left: 8px;
+}
+/* Narrow phones, longer Vietnamese label: keep the row inside the screen. */
+@media (max-width: 400px) {
+  .epill {
+    margin-left: 14px;
+    padding: 0 10px 0 18px;
+    font-size: 16px;
+  }
+  .crow .hint {
+    font-size: 13px;
+  }
+}
+@media (max-width: 340px) {
+  .crow .hint-t {
+    display: none;
+  }
 }
 .epill .cmp {
   position: relative;
@@ -628,6 +654,53 @@ select {
 .kp p {
   margin: 0;
   font: 500 15px/23.5px var(--font-sans);
+}
+.glabel {
+  margin: 0 0 10px;
+  color: var(--kp);
+  font: 700 11.5px var(--font-sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.vsum {
+  margin-bottom: 22px;
+  padding: 14px 16px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.vsum p:not(.glabel) {
+  margin: 0;
+  font: 500 16px/25px var(--font-sans);
+}
+.orig {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 14px 18px;
+  min-height: 56px;
+  border-radius: 999px;
+  background: var(--grad-cta);
+  color: #fff;
+  font: 700 15px/1.2 var(--font-sans);
+  text-decoration: none;
+  transition: transform var(--dur-press) var(--ease-out);
+}
+.orig:active {
+  transform: scale(0.97);
+}
+.orig small {
+  display: block;
+  margin-top: 2px;
+  font: 500 12px/1.2 var(--font-sans);
+  opacity: 0.85;
+}
+.orig .ic {
+  flex: none;
+  width: 22px;
+  height: 22px;
 }
 .srcline {
   display: flex;
@@ -2290,6 +2363,11 @@ select {
   padding: calc(var(--sat) + 28px) 20px calc(var(--sab) + 48px);
   font: 400 16px/27px var(--font-sans);
   color: rgba(255, 255, 255, 0.86);
+}
+.about-logo {
+  display: block;
+  margin: 8px 0 18px;
+  border-radius: 22px;
 }
 .doc h1 {
   font: 800 30px/36px var(--font-sans);

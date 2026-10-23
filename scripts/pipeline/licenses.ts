@@ -1,7 +1,10 @@
 // Which sources the pipeline may import, and under which licence (docs/05 §2).
-// A domain that is not listed here is refused. Licences read from the source itself win over the
+// A domain that is not listed here can only be used in summary mode (group 5: Reader's own summary
+// plus a link; the source text is never stored). Licences read from the source itself win over the
 // table when the adapter can read them (OpenStax, eLife, PLOS, Wikipedia).
+// Reader is a personal, non-commercial site, so NonCommercial (NC) licences are accepted.
 import type { License } from '../../lib/content/types';
+import { NO_DERIVATIVES, SHARE_ALIKE } from '../../lib/content/types';
 
 export type Group = 1 | 2 | 3;
 export interface SourceRule {
@@ -13,7 +16,7 @@ export interface SourceRule {
 }
 
 export const SOURCES: Record<string, SourceRule> = {
-  'openstax.org': { adapter: 'openstax', group: 1, publisher: 'OpenStax', note: 'Licence read per book; most books are CC BY-NC-SA 4.0 and are refused.' },
+  'openstax.org': { adapter: 'openstax', group: 1, publisher: 'OpenStax', note: 'Licence read per book; most books are CC BY-NC-SA 4.0 (group 2).' },
   'en.wikipedia.org': { adapter: 'wikipedia', group: 2, license: 'CC-BY-SA-4.0', publisher: 'Wikipedia' },
   'simple.wikipedia.org': { adapter: 'wikipedia', group: 2, license: 'CC-BY-SA-4.0', publisher: 'Simple English Wikipedia' },
   'vi.wikipedia.org': { adapter: 'wikipedia', group: 2, license: 'CC-BY-SA-4.0', publisher: 'Wikipedia tiếng Việt' },
@@ -54,16 +57,25 @@ export function ruleFor(url: string): SourceRule | null {
   return SOURCES[host] ?? SOURCES[host.replace(/^www\./, '')] ?? null;
 }
 
-/** Map a licence name or URL found in a source to our identifiers. Unknown or NC licences return null. */
+/** Map a licence name or URL found in a source to our identifiers. Unknown licences return null. */
 export function normalizeLicense(text: string | undefined | null): License | null {
   if (!text) return null;
   const t = text.toLowerCase().replace(/\s+/g, ' ');
-  if (/-nc|noncommercial|non-commercial/.test(t)) return null;
   if (/publicdomain|public domain|cc0|zero\/1\.0/.test(t)) return 'PD';
-  if (/by-sa|sharealike|share-alike/.test(t)) return /4\.0/.test(t) || !/\d\.\d/.test(t) ? 'CC-BY-SA-4.0' : null;
-  if (/by-nd|noderiv/.test(t)) return 'CC-BY-ND-4.0';
+  const nc = /by-nc|[- ]nc[- /]|noncommercial|non-commercial/.test(t);
+  const v4 = /4\.0/.test(t) || !/\d\.\d/.test(t);
+  if (/-sa\b|by-sa|sharealike|share-alike/.test(t)) return v4 ? (nc ? 'CC-BY-NC-SA-4.0' : 'CC-BY-SA-4.0') : null;
+  if (/-nd\b|by-nd|noderiv/.test(t)) return v4 ? (nc ? 'CC-BY-NC-ND-4.0' : 'CC-BY-ND-4.0') : null;
+  if (nc) return v4 ? 'CC-BY-NC-4.0' : null;
   if (/licenses\/by\/4\.0|cc by 4\.0|attribution 4\.0/.test(t)) return 'CC-BY-4.0';
   if (/licenses\/by\/3\.0|cc by 3\.0|attribution 3\.0/.test(t)) return 'CC-BY-3.0';
   if (/creative ?commons attribution|cc[- ]by\b/.test(t)) return 'CC-BY-4.0';
   return null;
+}
+
+/** Share-alike licences go to group 2, no-derivatives to group 3, the rest can be adapted (group 1). */
+export function groupForLicense(l: License): Group {
+  if (SHARE_ALIKE.includes(l)) return 2;
+  if (NO_DERIVATIVES.includes(l)) return 3;
+  return 1;
 }
