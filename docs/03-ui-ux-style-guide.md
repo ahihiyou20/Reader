@@ -164,14 +164,14 @@ Mỗi component: anatomy → kích thước → states → motion → FR liên q
 
 ### CMP-08 CoverTitle
 - Text `display`, tối đa 4 dòng, max-width 72% chiều rộng (chừa chỗ cho rail).
-- Mỗi dòng có nền `--grad-title-hl` (dùng `box-decoration-break: clone; display:inline; padding: 0 4px`), kèm `text-shadow: 0 0 18px rgba(255,61,139,0.55)` tạo hiệu ứng glow như screenshot 2.
+- Mỗi dòng là một "ống neon" bóng (`box-decoration-break: clone; display:inline; padding: 0 5px`): nền hồng đậm `rgba(255,46,132,.86) → rgba(255,61,139,.32)`, vệt bóng trắng ở nửa trên dòng, viền sáng `inset 0 1px 0` ở mép trên, quầng `box-shadow` hồng; chữ có lõi trắng + glow hồng nhiều lớp (`text-shadow` 1/6/16/34px). Glow tĩnh, không pulse.
 - Vị trí: đỉnh tiêu đề cách đỉnh màn hình ~47% (≈ 400px), ngay dưới hàng Grid/Explore/SwipeHint (cách 28px).
 - FR-02.
 
 ### CMP-09 ArticleSection
 - Props: `variant: 'hook' | 'body'`, `heading?`, `body: RichText`.
 - `hook` dùng `hook` typography; `body` dùng `body`. H2 dùng `title-lg`.
-- **Focus/dim**: IntersectionObserver với `rootMargin: "-20% 0px -40% 0px"`; section trong vùng → opacity 1; ngoài vùng → opacity 0.35 (`transition: opacity 250ms var(--ease-out)`). Highlight chip trong section mờ cũng mờ theo.
+- **Focus/dim (độ sâu trường ảnh)**: mỗi lúc chỉ **một** khối được focus — khối cắt vạch đọc ở 42% chiều cao màn hình (khối cuối khi đã cuộn tới đáy). Khối focus: opacity 1, không blur, `text-shadow` tối nhẹ để nổi khỏi ảnh nền. Khối kề bên: opacity 0.36, `scale(0.97)`, `blur(0.6px)`; các khối xa hơn: opacity 0.26, `scale(0.955)`, `blur(1.2px)`; `transform-origin` mép trái. Transition opacity/filter 300ms, transform 400ms `--ease-out`. Reduced motion: chỉ cross-fade opacity 200ms; tăng tương phản: opacity 0.55, không blur. Highlight chip trong section mờ cũng mờ theo.
 - FR-05, FR-06.
 
 ### CMP-10 InlineChip

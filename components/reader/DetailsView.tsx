@@ -31,7 +31,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const scroll = useRef<HTMLDivElement>(null);
   const secs = useRef<Array<HTMLDivElement | null>>([]);
   const kp = useRef<HTMLDivElement>(null);
-  const [focus, setFocus] = useState<Set<number>>(() => new Set([0]));
+  const [focus, setFocus] = useState(0);
   const [current, setCurrent] = useState(0);
   const [kpShown, setKpShown] = useState(false);
 
@@ -79,25 +79,36 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug]);
 
-  // CMP-09: the section in the reading band is bright, the others dim.
+  // CMP-09: one block is in focus at a time, the one crossing the reading line (42% down the screen);
+  // the others recede (dim, slightly smaller and softer). State changes only when the focus moves.
   useEffect(() => {
     const root = scroll.current;
     if (!root) return;
-    const inBand = new Set<number>();
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const en of entries) {
-          const k = Number((en.target as HTMLElement).dataset.k);
-          if (en.isIntersecting) inBand.add(k);
-          else inBand.delete(k);
-        }
-        setFocus(new Set(inBand));
-        if (inBand.size) setCurrent(Math.max(...inBand));
-      },
-      { root, rootMargin: '-28% 0px -40% 0px' },
-    );
-    secs.current.forEach((s) => s && io.observe(s));
-    return () => io.disconnect();
+    let raf = 0;
+    const pick = () => {
+      raf = 0;
+      const line = root.scrollTop + root.clientHeight * 0.42;
+      const atBottom = root.scrollTop + root.clientHeight >= root.scrollHeight - 2;
+      let k = 0;
+      for (let i = 0; i < secs.current.length; i++) {
+        const s = secs.current[i];
+        if (s && s.offsetTop <= line) k = i;
+      }
+      if (atBottom) k = secs.current.length - 1;
+      setFocus(k);
+      setCurrent(k);
+    };
+    const on = () => {
+      if (!raf) raf = requestAnimationFrame(pick);
+    };
+    pick();
+    root.addEventListener('scroll', on, { passive: true });
+    window.addEventListener('resize', on);
+    return () => {
+      root.removeEventListener('scroll', on);
+      window.removeEventListener('resize', on);
+      cancelAnimationFrame(raf);
+    };
   }, [blocks]);
 
   useEffect(() => {
@@ -169,6 +180,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
 
   const dots = useMemo(() => Math.min(blocks, MAX_DOTS), [blocks]);
   const dotOn = blocks <= MAX_DOTS ? current : Math.round((current / (blocks - 1)) * (MAX_DOTS - 1));
+  const depth = (k: number) => (k === focus ? ' on' : Math.abs(k - focus) === 1 ? ' near' : '');
   const setRef = (k: number) => (el: HTMLDivElement | null) => {
     secs.current[k] = el;
   };
@@ -181,7 +193,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   return (
     <>
       <div className="dscroll" ref={scroll}>
-        <div className={`sec hook${focus.has(0) ? ' on' : ''}`} data-k={0} ref={setRef(0)} lang={isFallback(article.hook, lang) ? 'en' : undefined}>
+        <div className={`sec hook${depth(0)}`} data-k={0} ref={setRef(0)} lang={isFallback(article.hook, lang) ? 'en' : undefined}>
           {o.group === 5 && <p className="glabel">{t('readerSummary', { publisher })}</p>}
           {viSummary && viSummary.length > 0 && (
             <div className="vsum" lang="vi">
@@ -197,7 +209,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
           return (
             <div
               key={k}
-              className={`sec${focus.has(k) ? ' on' : ''}`}
+              className={`sec${depth(k)}`}
               data-k={k}
               ref={setRef(k)}
               lang={isFallback(s.body, lang) ? 'en' : undefined}
@@ -207,7 +219,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             </div>
           );
         })}
-        <div className={`sec last${focus.has(blocks - 1) ? ' on' : ''}`} data-k={blocks - 1} ref={setRef(blocks - 1)}>
+        <div className={`sec last${depth(blocks - 1)}`} data-k={blocks - 1} ref={setRef(blocks - 1)}>
           {kpText && (
             <div className={`kp${kpShown ? '' : ' wait'}`} ref={kp} lang={isFallback(article.keyPoint, lang) ? 'en' : undefined}>
               <div className="kp-l">

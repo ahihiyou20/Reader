@@ -465,14 +465,26 @@ select {
   -webkit-box-orient: vertical;
   overflow: visible;
 }
+/* Glossy neon: each line is a lit pink tube (saturated fill, specular sheen on the upper half, a bright
+   top edge) and the letters carry a white core with a layered pink bloom. Static, never pulsing. */
 .ctitle span {
-  padding: 0 4px;
+  padding: 0 5px;
+  border-radius: 4px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  background: linear-gradient(90deg, rgba(255, 92, 150, 0.52), rgba(255, 92, 150, 0.16));
+  color: #fff;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 46%, rgba(255, 255, 255, 0) 54%),
+    linear-gradient(90deg, rgba(255, 46, 132, 0.86) 0%, rgba(255, 61, 139, 0.6) 62%, rgba(255, 61, 139, 0.32) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 220, 236, 0.55),
+    0 0 18px rgba(255, 61, 139, 0.42),
+    0 0 42px rgba(255, 61, 139, 0.22);
   text-shadow:
-    0 0 14px rgba(255, 80, 150, 0.75),
-    0 0 2px rgba(255, 255, 255, 0.4);
+    0 0 1px rgba(255, 255, 255, 0.9),
+    0 0 6px rgba(255, 196, 224, 0.85),
+    0 0 16px rgba(255, 61, 139, 0.9),
+    0 0 34px rgba(255, 61, 139, 0.55);
 }
 .ctitle.long {
   font-size: 27px;
@@ -558,13 +570,32 @@ select {
 .dscroll::-webkit-scrollbar {
   display: none;
 }
+/* Depth of field (CMP-09): the block being read sits in front, sharp and lifted off the cover image;
+   its neighbours recede a little, the rest further. Only opacity, transform and a small blur animate
+   (composite-only; blur stays ≤ 1.2px for Safari). Scaling from the left edge keeps lines aligned. */
 .sec {
-  opacity: 0.32;
-  transition: opacity var(--dur-medium) var(--ease-out);
   margin-bottom: 28px;
+  opacity: 0.26;
+  transform: scale(0.955);
+  transform-origin: 0 50%;
+  filter: blur(1.2px);
+  transition:
+    opacity 300ms var(--ease-out),
+    transform 400ms var(--ease-out),
+    filter 300ms var(--ease-out);
+}
+.sec.near {
+  opacity: 0.36;
+  transform: scale(0.97);
+  filter: blur(0.6px);
 }
 .sec.on {
   opacity: 1;
+  transform: none;
+  filter: none;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.35),
+    0 4px 18px rgba(0, 0, 0, 0.45);
 }
 .sec h3 {
   margin: 0 0 10px;
@@ -2411,7 +2442,13 @@ select {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* Focus still reads as a short cross-fade; no scaling or blur. */
   .sec,
+  .sec.near {
+    transform: none;
+    filter: none;
+    transition: opacity 200ms ease;
+  }
   .kp,
   .toast,
   .lmenu,
@@ -2454,8 +2491,10 @@ select {
     background-color: rgba(10, 10, 14, 0.96);
     border-color: rgba(255, 255, 255, 0.4);
   }
-  .sec {
+  .sec,
+  .sec.near {
     opacity: 0.55;
+    filter: none;
   }
 }
 @keyframes citem-in {
