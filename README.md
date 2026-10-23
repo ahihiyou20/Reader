@@ -129,6 +129,15 @@ Không bao giờ commit dữ liệu người dùng hay bản sao lưu vào repo.
 - Đăng nhập Google một lần trên site, rồi chạy workflow **Set moderator** với email của bạn để có quyền ẩn bình luận.
 - Bật branch protection cho `main` (cấm force-push và xoá).
 
+## Làm việc với Claude Code
+
+`.mcp.json` và `.claude/settings.json` bật sẵn hai MCP server cho mọi phiên:
+
+- **codegraph**: đồ thị code để tra cứu và xem phạm vi ảnh hưởng trước khi sửa. Mỗi phiên, hook `SessionStart` (`.claude/hooks/session-start.sh`) tự cài bản ghim nếu thiếu, rồi tạo hoặc đồng bộ chỉ mục `.codegraph/` (không commit) ở chế độ nền.
+- **context-mode**: giữ output lớn ngoài ngữ cảnh và tìm kiếm FTS5. Các hook của nó (`.claude/hooks/context-mode.sh`) gắn vào PreToolUse, PostToolUse, PreCompact, UserPromptSubmit, SessionStart và Stop.
+
+Telemetry của codegraph bị tắt (`DO_NOT_TRACK=1`). Muốn tắt hook: `/hooks` trong Claude Code, hoặc xoá khối `hooks` trong `.claude/settings.json`.
+
 ## Cấu trúc
 
 ```

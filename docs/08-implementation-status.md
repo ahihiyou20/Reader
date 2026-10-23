@@ -14,7 +14,7 @@
 - **Nội dung ra mắt**: **30 bài** song ngữ EN + VI, 8 chủ đề (science 7, economics 4, health 4, history 3, psychology 3, productivity 3, society 3, technology 3), mỗi bài 700–950 từ, 7 section, KEY POINT, 3 bước Apply, nguồn có DOI đã kiểm tra trên Crossref, ảnh bìa webp tự host có ghi công. Tất cả có cờ `seed: true`.
 - **Test**: 42 unit, 21 Security Rules (emulator), 9 E2E (Playwright, `tests/e2e/reader.spec.ts`). Build, lint, typecheck sạch. JS tải lần đầu 190 KB.
 - **Tài liệu**: README thiết lập (Firebase, OAuth, Cloudflare Pages, CMS auth, secrets); docs 02/05/06/07 cập nhật theo code.
-- **MCP**: `.mcp.json` cài 5 server tham chiếu (memory, sequential-thinking, fetch, git, filesystem) cùng `codegraph` (đồ thị code, chạy `npx @colbymchenry/codegraph init` ở phiên mới để tạo chỉ mục) và `context-mode` (giữ dữ liệu lớn ngoài ngữ cảnh, tìm kiếm FTS5).
+- **MCP**: `.mcp.json` cài 5 server tham chiếu (memory, sequential-thinking, fetch, git, filesystem) cùng `codegraph` (đồ thị code) và `context-mode` (giữ dữ liệu lớn ngoài ngữ cảnh, tìm kiếm FTS5), bật mặc định qua `.claude/settings.json`; hook `SessionStart` tự cài, dựng chỉ mục codegraph và nối các hook của context-mode.
 
 ## Pipeline v2 và deploy (2026-10-23)
 
