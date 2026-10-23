@@ -27,9 +27,25 @@
 - **Sửa lỗi phát hiện khi soát**: ở tiếng Việt, hàng nút trên Cover rộng hơn màn hình 375px, chạm nút gợi ý làm cả bài lệch ngang 21px; nay `.article` và `.view` dùng `overflow: clip`, nhãn rút gọn "Vuốt xem chi tiết". Test E2E vuốt bị chập chờn (có từ trước): vuốt 40% chiều cao chỉ qua trang nhờ vận tốc, mà máy bận thì sự kiện nhấc tay đến trễ > 100 ms; test nay vuốt 60%.
 - **Test**: 54 unit (thêm feed, giấy phép, highlight, form Issue, nhóm 5), 10 E2E.
 
+## Firebase (2026-10-23)
+
+Làm bằng service account `claude@reader-app-512514` (Owner) qua API, không qua console:
+
+- **Project** Google Cloud `reader-app-512514` (số 427872189161) đã thêm Firebase, gói Spark. Đã bật API: Firebase, Firestore, Identity Toolkit, Firebase Rules, App Check, IAM, API Keys, Cloud Resource Manager.
+- **Firestore** `(default)`, chế độ Native, vùng **`asia-southeast1`** (Singapore, gần người đọc Việt Nam nhất; không đổi được sau khi tạo), bật chống xoá. Đã deploy `firestore.rules` và `firestore.indexes.json`.
+- **Web app** `Reader`: `apiKey=AIzaSyD7aHQ1QK7-2lQrK4DAadQnoG7R1dXAWpk`, `appId=1:427872189161:web:9bf2ffe3c95507b5234e78`, `projectId=reader-app-512514`. Các giá trị này công khai theo thiết kế của Firebase (nằm trong bundle JS).
+- **Cloudflare Pages** `reader`: đã đặt `FIREBASE_PROJECT_ID=reader-app-512514` cho production và preview; có hiệu lực từ lần deploy tới.
+- **Authentication chưa khởi tạo**: API chỉ khởi tạo được bằng cách nâng lên Identity Platform, trái với chủ trương gói Spark, nên cần bấm *Get started* trong console (bước 1 dưới đây).
+
 ## Việc cần người làm (không tự động được)
 
-1. Tạo project Firebase, OAuth client và điền biến môi trường (project Cloudflare Pages đã có) (README §Đưa lên mạng). Trước khi có, site chạy chế độ demo.
+1. Hoàn tất Firebase (README §1–2):
+   - Firebase Console → Authentication → **Get started**, bật **Anonymous** và **Google** (bật Google sẽ tự tạo OAuth client Web).
+   - Authentication → Settings → Authorized domains: thêm `reader-xtm.pages.dev`.
+   - Google Cloud → Credentials → OAuth client *Web client (auto created by Google Service)*: thêm origins `https://reader-xtm.pages.dev`, `http://localhost:3000` và redirect URI `https://reader-xtm.pages.dev/__/auth/handler`; chép Client ID vào `NEXT_PUBLIC_GOOGLE_CLIENT_ID`.
+   - (Nên làm) reCAPTCHA v3 site key cho App Check → `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`.
+   - Biến GitHub Actions: `NEXT_PUBLIC_FIREBASE_API_KEY`, `NEXT_PUBLIC_FIREBASE_APP_ID`, `NEXT_PUBLIC_FIREBASE_PROJECT_ID=reader-app-512514`, `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=reader-xtm.pages.dev` (giá trị ở mục Firebase phía trên). Chỉ đặt sau khi Authentication đã bật, nếu không site rời chế độ demo mà chưa đăng nhập được.
+   - Secret `FIREBASE_SERVICE_ACCOUNT_JSON`: nên tạo service account riêng (ví dụ `reader-actions`) chỉ với `roles/datastore.user` và `roles/firebaseauth.admin` (đủ cho các script: đọc/ghi Firestore, `listUsers`, xoá khách, gán moderator), thay vì dùng tài khoản Owner.
 2. Deploy Worker `sveltia-cms-auth` và sửa `base_url` trong `public/cms/config.yml` (đang là địa chỉ mẫu).
 3. Thêm secrets GitHub Actions: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` (cần cho bài tự động), `FIREBASE_SERVICE_ACCOUNT_JSON`, `BACKUP_PASSPHRASE` (tùy chọn `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY`), biến `SITE_URL=https://reader-xtm.pages.dev`, và bật *Allow GitHub Actions to create and approve pull requests*.
 4. Điền branding trên Google Auth Platform và xác minh tên miền (README §2).
