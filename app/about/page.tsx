@@ -5,7 +5,7 @@ import { env } from '@/lib/env';
 // App home page for the Google OAuth consent screen (README §2): says what Reader is, what Google
 // sign-in is used for, and links to the privacy policy and terms.
 export const metadata: Metadata = {
-  title: 'About Reader · Giới thiệu',
+  title: 'About · Giới thiệu',
   description: 'Reader is a free, non-commercial reading app: short, sourced articles in English and Vietnamese, one swipe at a time.',
   alternates: { canonical: '/about' },
 };
