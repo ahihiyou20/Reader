@@ -38,6 +38,10 @@ describe('feeds', () => {
     ]);
     expect(pickRoundRobin(feeds, c, 6).map((p) => p.item.title)).toEqual(['a0', 'b0', 'c0', 'a1', 'c1', 'a2']);
     expect(pickRoundRobin(feeds, c, 20)).toHaveLength(9);
+    // Backup queue: doubled shares, without the links already picked.
+    const first = pickRoundRobin(feeds, c, 6);
+    const backup = pickRoundRobin(feeds, c, 20, 2, new Set(first.map((p) => p.item.url)));
+    expect(backup.map((p) => p.item.title)).toEqual(['b1', 'b2', 'c2', 'a3', 'c3', 'a4', 'c4']);
   });
 });
 

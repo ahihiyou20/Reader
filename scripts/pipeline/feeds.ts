@@ -120,9 +120,16 @@ function resolveLink(feed: FeedSource, item: FeedItem): string {
 
 /**
  * Round-robin across feeds: the first unseen item of each feed, then the second… until `limit`.
- * `candidates` maps feed id → its items in feed order (newest first).
+ * `candidates` maps feed id → its items in feed order (newest first). `capScale` multiplies each
+ * feed's `max`; links in `skip` are passed over (used to build a backup queue after the first pick).
  */
-export function pickRoundRobin(feeds: FeedSource[], candidates: Map<string, FeedItem[]>, limit: number) {
+export function pickRoundRobin(
+  feeds: FeedSource[],
+  candidates: Map<string, FeedItem[]>,
+  limit: number,
+  capScale = 1,
+  skip: ReadonlySet<string> = new Set(),
+) {
   const picked: Array<{ feed: FeedSource; item: FeedItem }> = [];
   const taken = new Map<string, number>();
   const seen = new Set<string>();
@@ -130,11 +137,12 @@ export function pickRoundRobin(feeds: FeedSource[], candidates: Map<string, Feed
     let any = false;
     for (const feed of feeds) {
       const items = candidates.get(feed.id) ?? [];
-      if (round >= items.length || (taken.get(feed.id) ?? 0) >= (feed.max ?? 3)) continue;
+      if (round >= items.length || (taken.get(feed.id) ?? 0) >= (feed.max ?? 3) * capScale) continue;
       any = true;
       const item = items[round];
       if (seen.has(item.url)) continue;
       seen.add(item.url);
+      if (skip.has(item.url)) continue;
       picked.push({ feed, item });
       taken.set(feed.id, (taken.get(feed.id) ?? 0) + 1);
       if (picked.length >= limit) break;
@@ -213,7 +221,10 @@ async function main() {
     }
   }
 
+  // Links that fail (too long, no licence, fetch error) are replaced from a backup queue, where each
+  // feed may give up to twice its usual share, so a run still reaches `limit` articles when it can.
   const picked = pickRoundRobin(feeds, candidates, limit);
+  const backup = pickRoundRobin(feeds, candidates, limit * 2, 2, new Set(picked.map((p) => p.item.url)));
   if (dry) {
     for (const p of picked) console.log(`- [${p.feed.id}/${p.feed.mode}] ${p.item.title} — ${p.item.url}`);
     return;
@@ -222,10 +233,11 @@ async function main() {
   const created: Created[] = [];
   const failed: string[] = [];
   const start = Date.now();
-  for (const [i, { feed, item }] of picked.entries()) {
+  for (const { feed, item } of [...picked, ...backup]) {
+    if (created.length >= limit) break;
     try {
       // A minute apart, so the feed keeps the order of this run.
-      const publishAt = new Date(start + (picked.length - i) * 60_000).toISOString();
+      const publishAt = new Date(start + (limit - created.length) * 60_000).toISOString();
       const c = await createArticle({ url: item.url, category: feed.category, mode: feed.mode, publishAt, maxWords: feed.maxWords });
       created.push(c);
       state.seen[item.url] = { at: new Date().toISOString(), feed: feed.id, slug: c.slug };
