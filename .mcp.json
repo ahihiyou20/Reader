@@ -43,6 +43,28 @@
         "@modelcontextprotocol/server-filesystem",
         "${PWD}"
       ]
+    },
+    "codegraph": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@colbymchenry/codegraph",
+        "serve",
+        "--mcp"
+      ],
+      "env": {
+        "DO_NOT_TRACK": "1",
+        "CODEGRAPH_TELEMETRY": "0"
+      }
+    },
+    "context-mode": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "context-mode"
+      ]
     }
   }
 }
