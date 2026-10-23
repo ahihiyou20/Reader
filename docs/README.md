@@ -15,6 +15,7 @@ Bộ tài liệu này là đầu vào để lập trình từng module. Giao di�
 | 5 | [05-content-pipeline.md](./05-content-pipeline.md) | Phạm vi (chỉ tính năng app gốc), nguồn bài có giấy phép mở, **pipeline 10 bước** từ backlog → import → biên tập bằng form (Sveltia CMS) → kiểm tra → xuất bản, cấu hình CMS và workflow | Tất cả |
 | 6 | [06-database.md](./06-database.md) | Kiến trúc 100% miễn phí: nội dung tĩnh trong Git + Cloudflare Pages, Firestore Spark cho dữ liệu người dùng, Rules, ngân sách quota | Backend, Frontend |
 | 7 | [07-auth.md](./07-auth.md) | Khách ẩn danh + đăng nhập Google, gộp dữ liệu trên client, proxy `/__/auth`, xoá tài khoản | Backend, Frontend |
+| 8 | [08-implementation-status.md](./08-implementation-status.md) | Trạng thái triển khai, việc cần người làm, quyết định thay đổi so với kế hoạch | Tất cả |
 
 ## Quy ước ID
 

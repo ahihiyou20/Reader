@@ -43,7 +43,7 @@ App miễn phí, nên đăng nhập chỉ để đồng bộ dữ liệu và ch�
 **Trường hợp B: lỗi `auth/credential-already-in-use`** (tài khoản Google đã có dữ liệu từ thiết bị khác). Không có server, nên gộp trên client:
 
 1. **Trước khi** đổi tài khoản, đọc toàn bộ dữ liệu khách vào bộ nhớ (likes, saves, progress, readDays, streak). Dữ liệu này nhỏ và phần lớn đã có trong cache offline.
-2. Lưu tạm bản sao vào IndexedDB (`pendingMerge`), phòng khi trang bị tải lại giữa chừng (luồng redirect).
+2. Lưu tạm bản sao vào `localStorage` (khoá `reader.pendingMerge`), phòng khi trang bị tải lại giữa chừng (luồng redirect).
 3. `signInWithCredential(GoogleAuthProvider.credentialFromError(err))` để vào tài khoản Google.
 4. Ghi gộp vào uid Google bằng batch (tối đa 500 thao tác mỗi batch; chia nhiều batch nếu cần):
    - likes, saves: lấy hợp.
@@ -68,12 +68,14 @@ Safari và Chrome chặn lưu trữ bên thứ ba, nên redirect chỉ ổn đ�
 
 ```ts
 // functions/__/auth/[[path]].ts  (Cloudflare Pages Functions)
-export const onRequest: PagesFunction = async ({ request }) => {
+export const onRequest: PagesFunction<{ FIREBASE_PROJECT_ID: string }> = async ({ request, env }) => {
   const url = new URL(request.url);
-  const target = new URL(url.pathname + url.search, 'https://<project-id>.firebaseapp.com');
+  const target = new URL(url.pathname + url.search, `https://${env.FIREBASE_PROJECT_ID}.firebaseapp.com`);
   return fetch(new Request(target, request));
 };
 ```
+
+- Đặt biến môi trường `FIREBASE_PROJECT_ID` trong Cloudflare Pages (Settings → Environment variables). `public/_routes.json` giới hạn Function chỉ chạy cho `/__/auth/*`, các đường dẫn khác vẫn là file tĩnh.
 
 - Đặt `authDomain` = domain của app (ví dụ `reader.pages.dev` hoặc domain riêng).
 - Thêm `https://<domain>/__/auth/handler` vào **Authorized redirect URIs** của OAuth client (Google Cloud Console), và thêm domain vào **Authorized domains** (Firebase Auth).

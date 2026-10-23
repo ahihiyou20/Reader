@@ -26,11 +26,11 @@
 
 | Nhóm | Nguồn | Giấy phép | Được làm gì |
 |------|-------|-----------|-------------|
-| **1. Nguồn chính** | **OpenStax** (Psychology, Biology, Sociology, Economics, Astronomy…) | CC BY 4.0 (kiểm tra từng cuốn) | Rút gọn, chia section, highlight, dịch; ghi công |
+| **1. Nguồn chính** | **OpenStax** | ⚠️ Kiểm tra ngày 2026-10-22: phần lớn sách là **CC BY-NC-SA 4.0** (pipeline từ chối); chỉ vài cuốn như *Physics*, *Life, Liberty, and the Pursuit of Happiness* là CC BY 4.0 | Rút gọn, chia section, highlight, dịch; ghi công |
 | | **Our World in Data** (bài phân tích) | CC BY 4.0 | như trên |
 | | **Frontiers for Young Minds** | CC BY | như trên |
 | | **eLife** (phần digest), **PLOS** (Author summary) | CC BY 4.0 | như trên |
-| | **NIH News in Health, NASA Science, NOAA, USGS, National Park Service** | Public domain (tác phẩm của chính phủ liên bang Mỹ; ảnh bên thứ ba thì không) | như trên |
+| | **NIH (NIMH, NHLBI, NIA, News in Health), CDC, NASA Science, NOAA, USGS, National Park Service, NIST, Bộ Năng lượng Mỹ, GPS.gov** | Public domain (tác phẩm của chính phủ liên bang Mỹ; ảnh bên thứ ba thì không) | như trên |
 | | **Project Gutenberg / Standard Ebooks** | Public domain | như trên |
 | | **Global Voices** | CC BY 3.0 | như trên |
 | | **VOA Learning English** (kho bài cũ) | Văn bản public domain theo hướng dẫn của thư viện Georgetown; ảnh AP/Reuters thì không. Tình trạng năm 2026 chưa chắc chắn | như trên |
@@ -41,6 +41,10 @@
 **Không dùng:** báo chí và sách còn bản quyền (chỉ được dẫn link làm nguồn trong bài tự viết), đề IELTS thật, nội dung không rõ giấy phép.
 
 **Ảnh cover:** Unsplash API (hotlink, ghi tên tác giả, gọi endpoint download khi dùng), Pexels API (có cả video), Wikimedia Commons, NASA. Không dùng Firebase Storage.
+
+**Thực tế lúc ra mắt (30 bài):** 12 bài Our World in Data, 5 bài Frontiers for Young Minds, 4 bài NASA, 1 bài NPS, 1 bài CDC, 1 bài NIST (nhóm 1), 1 bài Wikipedia (nhóm 2), 5 bài tự viết từ nghiên cứu có DOI (nhóm 4). Mọi bài có cờ `seed: true` để biên tập viên rà lại trước khi bỏ cờ. Ảnh bìa lấy từ Unsplash qua `picsum.photos` (không cần API key), tự host dạng webp ≤ 220 KB bằng `scripts/dev/picsum-cover.ts <slug> <id>`, kèm ảnh mờ placeholder và màu chủ đạo.
+
+**Quy tắc tham khảo:** mọi DOI trong `references` phải được kiểm tra trên Crossref trước khi đăng (khi soạn bài ra mắt đã bắt được vài DOI viết theo trí nhớ bị sai).
 
 ## 3. Khuôn bài (ánh xạ vào giao diện app gốc)
 
@@ -271,16 +275,20 @@ content/
 ├─ ai-queue.json
 └─ generated/counts.json           # do daily.yml ghi, không sửa tay
 scripts/pipeline/
-├─ import.ts   adapters/*.ts   licenses.ts
-├─ normalize.ts   select-window.ts   cover.ts
-├─ ai-suggest.ts   validate.ts
-└─ submissions.ts   daily.ts
+├─ import.ts      # --url <url> --category <id> | --pending | <backlog id>
+├─ adapters/      openstax, wikipedia, elife, plos, readability (OWID, FYM, NASA, NIH, CDC…), gutenberg, conversation, html
+├─ licenses.ts    # bảng domain → adapter, nhóm, giấy phép; từ chối NC/ND ngoài nhóm 3
+├─ lib.ts   select-window.ts (700–950 từ)   cover.ts (Unsplash/Pexels/NASA)
+├─ ai-suggest.ts  # Gemini, tùy chọn
+├─ validate.ts    # --issue (đồng bộ GitHub Issue), --strict
+├─ submissions.ts daily.ts set-moderator.ts backup.ts deploy-check.ts admin.ts
 scripts/build-content.ts           # sinh public/data/* trước next build
-public/cms/index.html, config.yml
+scripts/dev/picsum-cover.ts        # tải ảnh bìa Unsplash (qua picsum), nén webp, ghi credit vào bài
+public/cms/index.html, config.yml  # Sveltia CMS ghim phiên bản 0.231.0
 functions/__/auth/[[path]].ts      # proxy đăng nhập (07)
 .github/workflows/
-├─ import.yml  ai-suggest.yml  validate.yml
-└─ deploy.yml  daily.yml  submissions.yml
+├─ ci.yml  import.yml  ai-suggest.yml  validate.yml
+└─ deploy.yml  daily.yml  submissions.yml  set-moderator.yml  backup.yml
 ```
 
 ### 6.2 Cấu hình CMS (rút gọn)

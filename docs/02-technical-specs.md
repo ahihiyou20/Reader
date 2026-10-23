@@ -6,67 +6,70 @@
 
 ## 1. Tech stack
 
-| Lớp | Lựa chọn | Lý do |
-|-----|----------|-------|
-| Framework | **Next.js 15** (App Router, React 19, TypeScript strict), `output: 'export'` | Site tĩnh: trang `/a/[slug]` được prerender lúc build (SEO, chia sẻ), host miễn phí |
-| Styling | **Tailwind CSS v4** + CSS variables (xem style guide §7) | Token tập trung, dễ chỉnh |
-| Animation & gesture | **Framer Motion** (`motion`, `useMotionValue`, `animate`) + **@use-gesture/react** | Spring, drag có velocity, khóa trục |
-| Icon | **lucide-react** | Khớp bộ icon app gốc |
-| State UI | **Zustand** | Feed index, view hiện tại, ngôn ngữ, sheet mở |
-| Data fetching | **TanStack Query v5**: JSON tĩnh (`/data/*.json`) cho bài; Firebase SDK cho dữ liệu người dùng | Cache, optimistic update |
-| i18n | **next-intl** (chế độ static export, prefix `/en`, `/vi`) | Message catalog en/vi |
-| Hosting | **Cloudflare Pages** + Pages Functions (proxy `/__/auth`) | Free tier không giới hạn băng thông (06 §1) |
-| Backend | **Firebase gói Spark**: Auth (Anonymous + Google), Firestore. Không dùng Functions/Storage | Miễn phí, không cần thẻ |
-| Tác vụ nền | **GitHub Actions** (import nội dung, kiểm tra PR, job hằng đêm bằng Admin SDK) | Miễn phí cho repo public |
-| Tìm kiếm | **MiniSearch** trên chỉ mục JSON tĩnh | Không cần server |
-| AI (tùy chọn) | **Gemini API free tier**, chỉ chạy trong GitHub Actions | 05 §6 |
-| PWA | **Serwist** (`@serwist/next`) | Service worker, precache, runtime cache ảnh/bài |
-| Test | **Vitest** + Testing Library (unit), **Playwright** (E2E, viewport 390×844, emulate iPhone 14) | |
-| Lint/format | ESLint (next config) + Prettier | |
-| Package manager | pnpm | |
+> Bảng dưới là **những gì đã được cài đặt thật** (cập nhật sau khi triển khai). Các thay đổi so với bản kế hoạch ban đầu được ghi ở cột "Ghi chú" và ở [08](./08-implementation-status.md).
+
+| Lớp | Lựa chọn | Ghi chú |
+|-----|----------|---------|
+| Framework | **Next.js 15** (App Router, React 19, TypeScript strict), `output: 'export'` | Trang `/a/[slug]` được prerender lúc build (SEO, chia sẻ, đọc được khi tắt JS) |
+| Styling | **Tailwind CSS v4** + CSS variables trong `app/globals.css` (style guide §7) | Phần lớn style là CSS port từ prototype đã duyệt |
+| Animation & gesture | **Framer Motion** (chỉ `motionValue`, `animate`, `useTransform`) + **pointer events tự viết** (`components/feed/Feed.tsx`, `components/overlays/Layer.tsx`) | Không dùng `@use-gesture`. `components/Motion.tsx` gắn MotionValue thẳng vào DOM (không dùng `motion.div`/`LazyMotion`) để giữ bundle < 200 KB |
+| Icon | **lucide-react** | |
+| State UI | **Zustand 5** (`stores/ui.ts`, `stores/user.ts`) | Selector trả về object phải bọc `useShallow` |
+| Data fetching | **Cache tự viết** trên `useSyncExternalStore` (`lib/data.ts`) cho JSON tĩnh; Firebase SDK cho dữ liệu người dùng | Bỏ TanStack Query để giảm ~13 KB |
+| i18n | **Catalog tự viết** (`lib/i18n.ts`, `messages/en.json`, `messages/vi.json`, số nhiều `_one`/`_other`) | Không có prefix `/en`, `/vi`; đổi ngôn ngữ tức thì trên client, lưu `localStorage` + cookie `NEXT_LOCALE` |
+| Hosting | **Cloudflare Pages** + Pages Function proxy `/__/auth/*` (`functions/__/auth/[[path]].ts`) | 06 §1 |
+| Backend | **Firebase gói Spark**: Auth (Anonymous + Google), Firestore, App Check. Không dùng Functions/Storage | Nạp lười (dynamic import) sau lần vẽ đầu. Khi chưa cấu hình Firebase, app chạy **chế độ demo** với `lib/backend/local.ts` (lưu trong trình duyệt) |
+| Tác vụ nền | **GitHub Actions** (import, kiểm tra PR, đồng bộ số đếm, submissions, backup, deploy) | Miễn phí cho repo public |
+| Tìm kiếm | **MiniSearch** trên `public/data/search-index.json`, gập dấu tiếng Việt | Không cần server |
+| AI (tùy chọn) | **Gemini API free tier**, chỉ chạy trong GitHub Actions, chỉ gợi ý cho biên tập viên | 05 §6 |
+| PWA | **Service worker tự sinh** (`scripts/build-sw.ts` → `out/sw.js`) | Không dùng Serwist: precache shell, stale-while-revalidate cho bài, cache-first cho ảnh |
+| Test | **Vitest** (unit + Security Rules trên emulator), **Playwright** (E2E, Chromium, viewport iPhone 13) | `pnpm test`, `pnpm test:rules`, `pnpm test:e2e` (cần `pnpm build` trước) |
+| Lint/format | ESLint 9 (flat config, next) + Prettier | |
+| Package manager | pnpm 10 | |
 
 ## 2. Cấu trúc thư mục
 
 ```
 reader/
 ├─ app/
-│  ├─ [locale]/
-│  │  ├─ layout.tsx              # font Inter, providers, TopBar, BottomNav
-│  │  ├─ page.tsx                # Feed (SCR-01/02/03)
-│  │  ├─ a/[slug]/page.tsx       # Deep link: feed bắt đầu từ bài slug
-│  │  ├─ explore/page.tsx        # SCR-04
-│  │  ├─ search/page.tsx         # SCR-05
-│  │  ├─ profile/page.tsx        # SCR-07
-│  │  └─ login/page.tsx          # SCR-08
-│  ├─ api/og/[slug]/route.tsx    # Ảnh OG cho share
-│  ├─ manifest.ts
-│  └─ sw.ts                      # Serwist
+│  ├─ layout.tsx                 # font Inter (opsz), metadata, viewport, Cloudflare Web Analytics
+│  ├─ page.tsx                   # Feed (SCR-01/02/03) — render <ReaderApp/>
+│  ├─ a/[slug]/page.tsx          # Deep link + bài prerender (#seo) cho SEO/không JS
+│  ├─ preview/                   # Xem trước bài từ GitHub/CMS (biên tập viên)
+│  ├─ privacy/, terms/           # Trang pháp lý song ngữ
+│  ├─ manifest.ts, robots.ts, sitemap.ts, not-found.tsx
+│  └─ globals.css
 ├─ components/
-│  ├─ primitives/   CircleIconButton, PillButton, Sheet, Toast, Skeleton
-│  ├─ chrome/       TopBar, StreakBadge, LangSwitcher, BottomNav
-│  ├─ feed/         FeedPager, ArticlePager, CoverView, ActionRail, CoverTitle, Background
-│  ├─ reader/       DetailsView, ArticleSection, RichText, InlineChip, KeyPointCard,
-│  │                SourceLine, SourceSheet, PageDots, ScrollDownButton, ActionRow
-│  ├─ engage/       CommentsApplyView, ApplyCard, CommentList, CommentInput,
-│  │                ExploreCTA
-│  ├─ explore/      CategoryChips, ArticleGrid, SearchBox, SearchResults
-│  └─ social/       MessagesPanel, LoginSheet, NotificationsSheet
+│  ├─ ReaderApp.tsx              # Ghép feed, chrome, overlay, sheet
+│  ├─ Motion.tsx                 # MDiv/MNav/MH2: gắn MotionValue vào style DOM
+│  ├─ RichText.tsx, ActionButton.tsx, CoverMedia.tsx, icons.tsx, hooks.ts
+│  ├─ feed/       Feed (pager 2 chiều), ArticlePage, CoverView, EndCard, nav.ts, useFeedList.ts
+│  ├─ reader/     DetailsView (section focus/dim, header co lại, KEY POINT, dots)
+│  ├─ engage/     EngageView (Apply steps, bình luận, CTA)
+│  ├─ chrome/     TopBar (+ StreakBadge), BottomNav, LangMenu, Toast, Avatar, BigHeart
+│  └─ overlays/   Layer (Panel/Sheet kéo để đóng), Explore, Search, Messages, Notifications,
+│                 Profile, Create, Sheets (Login, Sources, DeleteAccount), ArticleCard
 ├─ lib/
-│  ├─ firebase/     client.ts, auth.ts, articles.ts, interactions.ts, comments.ts, users.ts
-│  ├─ streak.ts     # hàm thuần tính streak (unit-test)
-│  ├─ format.ts     # formatCount, readingTime
-│  ├─ richtext.ts   # types + helper
-│  └─ analytics.ts
-├─ stores/          ui.ts (Zustand)
-├─ messages/        en.json, vi.json
-├─ content/seed/    *.json bài mẫu (xem 04-content-sample.md)
-├─ scripts/         seed.ts (đẩy content/seed lên Firestore)
-├─ functions/       Cloudflare Pages Functions (chỉ proxy /__/auth và OAuth cho CMS)
-├─ content/         Nội dung bài (JSON) — xem 06 §2
-├─ .github/workflows/  import, kiểm tra PR, job hằng đêm
-├─ firestore.rules
-├─ firestore.indexes.json
-└─ tests/           unit/, e2e/
+│  ├─ content/    types, markup (parser), schema (zod), validate, transform, rank
+│  ├─ backend/    types (interface Backend), firebase.ts, local.ts (demo), onetap.ts, index.ts
+│  ├─ actions.ts  # like/save/share/comment/streak/đăng nhập… gọi backend + optimistic UI
+│  ├─ data.ts     # cache JSON tĩnh + prefetch
+│  ├─ i18n.ts, motion.ts, search.ts, streak.ts, format.ts, analytics.ts, env.ts
+│  └─ server/     content.ts (đọc dữ liệu lúc build cho trang SSG)
+├─ stores/        ui.ts, user.ts (Zustand)
+├─ messages/      en.json, vi.json
+├─ content/       articles/*.json, categories.json, sources/, raw/, backlog/, generated/ — xem 05, 06 §2
+├─ public/        covers/ (webp tự host), icons/, cms/ (Sveltia CMS), _headers, _routes.json
+├─ scripts/
+│  ├─ build-content.ts           # content/ → public/data/*
+│  ├─ build-sw.ts                # sinh out/sw.js
+│  ├─ serve.mjs                  # server tĩnh có clean URL (pnpm start, E2E)
+│  ├─ pipeline/                  # import, adapters, licenses, validate, submissions, daily, backup…
+│  └─ dev/                       # make-icons.ts, picsum-cover.ts
+├─ functions/     Cloudflare Pages Functions (proxy /__/auth)
+├─ .github/workflows/  ci, validate, import, ai-suggest, deploy, daily, submissions, set-moderator, backup
+├─ firestore.rules, firestore.indexes.json, firebase.json
+└─ tests/         unit/, rules/, e2e/
 ```
 
 ## 3. Data model (Firestore)
@@ -147,36 +150,19 @@ interface UserDoc {
 ## 4. Luồng dữ liệu chính
 
 ### 4.1 Feed
-- `useInfiniteQuery(['feed', category])` → query `articles where status=='published' [and category==x] orderBy rank desc limit 10 startAfter(cursor)`.
-- SSR trang đầu (2 bài) qua Firebase Admin trong Server Component để LCP nhanh; phần còn lại client-side.
-- Prefetch: khi `activeIndex` đổi, `<link rel="preload">` ảnh cover bài +1, +2; với video tạo `<video preload="metadata">` ẩn.
-- Thứ tự feed MVP: `rank = publishedAt score + 0.3 * log(likes+saves*2+shares*3)` (Cloud Function cập nhật mỗi giờ). Loại bài đã đọc xong (lọc client bằng `progress`).
+- Lúc build, `scripts/build-content.ts` đọc `content/articles/*.json`, kiểm tra (`lib/content/validate.ts`) rồi sinh `public/data/feed.json` (thứ tự đã xếp), `articles/<slug>.json`, `categories.json`, `search-index.json`, `terms.json`.
+- Thứ tự (`lib/content/rank.ts`): `score = 100 / (1 + tuổi_ngày / 14) + 8 · log10(1 + likes + 2·saves + 3·shares + 2·comments)`, số đếm lấy từ `content/generated/counts.json` (job hằng đêm đồng bộ từ Firestore); sau đó xen kẽ để hai bài liền nhau khác chủ đề.
+- Trên client (`components/feed/useFeedList.ts`): lọc theo chủ đề đang chọn, đẩy bài đã đọc xong xuống cuối, đưa bài deep link (`/a/<slug>`) lên đầu. Danh sách giữ nguyên trong lúc đọc.
+- Chỉ render 3 trang (trước, hiện tại, sau). Khi đổi bài, prefetch JSON bài +1, +2, −1 và ảnh bìa (`lib/data.ts`).
 
 ### 4.2 Interactions (like/save/share)
-```ts
-// lib/firebase/interactions.ts
-async function toggleLike(uid: string, articleId: string, liked: boolean) {
-  await runTransaction(db, async (tx) => {
-    const likeRef = doc(db, 'users', uid, 'likes', articleId);
-    const artRef = doc(db, 'articles', articleId);
-    const snap = await tx.get(likeRef);
-    if (liked && !snap.exists()) {
-      tx.set(likeRef, { createdAt: serverTimestamp() });
-      tx.update(artRef, { 'counts.likes': increment(1) });
-    } else if (!liked && snap.exists()) {
-      tx.delete(likeRef);
-      tx.update(artRef, { 'counts.likes': increment(-1) });
-    }
-  });
-}
-```
-- UI dùng `useMutation` với `onMutate` cập nhật cache trước (optimistic), `onError` rollback + toast.
-- Share: `navigator.share` → khi resolve gọi `increment(1)` cho `counts.shares` (không cần đăng nhập; Rules cho phép +1 shares công khai, có rate-limit qua App Check).
+- `lib/actions.ts` cập nhật Zustand trước (optimistic), rồi gọi `Backend` (`lib/backend/firebase.ts` hoặc `local.ts`); lỗi thì hoàn tác và hiện toast.
+- Firebase: một `writeBatch` tạo/xoá `users/{uid}/likes/{slug}` và `increment(±1)` vào `counters/{slug}`; Security Rules dùng `existsAfter` để chỉ cho phép ±1 khớp với tài liệu like/save (06 §3).
+- Like/save cần đăng nhập Google (khách ẩn danh được mời đăng nhập); share chỉ cần ẩn danh. Số đếm hiển thị = số trong `feed.json` lúc build + số sống đọc khi mở Details (`loadLiveCounts`).
 
 ### 4.3 Comments
-- `onSnapshot(query(collection(db,'articles',id,'comments'), orderBy('createdAt','desc'), limit(20)))`.
-- Tạo comment: client `addDoc`; Function `onCommentCreate` tăng `counts.comments`, tạo notification (v1.1).
-- Text: trim, 1–500 ký tự, render dạng text thuần (React tự escape).
+- Đọc trang đầu `comments/{slug}/items` theo `createdAt desc` khi mở view Comments & Apply; thích/ẩn/xoá bình luận theo Rules (06 §3).
+- Tạo comment: batch gồm comment mới + `increment(1)` cho `counters/{slug}.comments`; text 1–500 ký tự, render text thuần.
 
 ### 4.4 Streak
 
@@ -202,13 +188,13 @@ export function nextStreak(
 - Hoàn thành khi: KeyPointCard visible ≥ 40% liên tục 2s, **hoặc** tổng thời gian ở Details ≥ `0.6 * wordCount / 230` phút. Chỉ bắn 1 lần mỗi bài.
 
 ### 4.6 i18n
-- Route `app/[locale]` với `locale ∈ {en, vi}`; middleware next-intl đọc cookie `NEXT_LOCALE` → `Accept-Language` → mặc định `en`.
-- Đổi ngôn ngữ trên header: `router.replace(pathname, { locale })` với `scroll: false`; Zustand giữ `activeArticleIndex`, `view`, `sectionIndex` nên vị trí được giữ (FR-21). Đồng thời ghi `users/{uid}.lang`.
-- Nội dung bài lấy `field[locale] ?? field.en`; nếu fallback thì gắn tag "EN only".
+- Không có route theo ngôn ngữ. `lib/i18n.ts` chọn ngôn ngữ theo `localStorage['reader.lang']` → cookie `NEXT_LOCALE` → `navigator.language` → `en`.
+- Đổi ngôn ngữ trong LangMenu chỉ đổi state Zustand: bài, view và section đang đọc được giữ nguyên (FR-21). Người đã đăng nhập được ghi `users/{uid}.lang`.
+- Nội dung bài lấy `field[lang] ?? field.en`; nếu fallback thì gắn nhãn "EN only" và `lang="en"` cho đoạn đó.
 
 ### 4.7 Search
-- Chuẩn hóa query: lowercase, bỏ dấu (`normalize('NFD').replace(/\p{Diacritic}/gu,'')`), tách token, lấy tối đa 10 token → `where('keywords','array-contains-any', tokens)`.
-- Client chấm điểm lại (số token khớp, khớp ở title) rồi sắp xếp. Đủ cho MVP < 5.000 bài; khi lớn hơn chuyển sang Algolia/Typesense (extension Firebase).
+- `lib/search.ts`: MiniSearch nạp lười `search-index.json` khi mở panel; gập dấu (`normalize('NFD')`, bỏ dấu, `đ → d`) cho cả chỉ mục và truy vấn, khớp tiền tố + mờ (fuzzy) nhẹ, ưu tiên tiêu đề > thuật ngữ > nội dung.
+- Thuật ngữ phổ biến (`terms.json`) lấy từ tag của các bài; lịch sử tìm kiếm lưu cục bộ.
 
 ## 5. Gesture & navigation state machine
 
@@ -227,7 +213,7 @@ Feed là **pager 2 chiều**:
                                            ↑/↓ = cuộn nội dung   ↑/↓ = cuộn trang
 ```
 
-**Quy tắc gesture** (dùng `useDrag` của @use-gesture, theo skill `apple-design` và style guide §5):
+**Quy tắc gesture** (pointer events tự viết trong `components/feed/Feed.tsx`, theo skill `apple-design` và style guide §5):
 1. **Khóa trục**: `axis: 'lock'` với ngưỡng 10px (hysteresis) — trục được chọn theo chuyển động đầu tiên, sau đó bám 1:1.
 2. **Motion value, không React state**: offset gắn vào `useMotionValue` (`x` của ArticlePager, `y` của FeedPager) và render qua `style={{ transform }}`. Không `setState` mỗi frame.
 3. **Ngắt được**: khi `pointerdown` trong lúc đang snap, gọi `.stop()` trên animation, đọc giá trị motion value hiện tại làm điểm bắt đầu kéo (không nhảy về target).
@@ -282,7 +268,7 @@ service cloud.firestore {
       allow update: if (signedIn() && (onlyCounter('likes', 1) || onlyCounter('likes', -1)
                                     || onlyCounter('saves', 1) || onlyCounter('saves', -1)))
                     || onlyCounter('shares', 1);
-      // counts.comments do Cloud Function (Admin SDK) cập nhật
+      // Bản phác thảo cũ. Rules thật nằm ở firestore.rules (số đếm ở counters/{slug}, xem 06 §3).
 
       match /comments/{cid} {
         allow read: if true;
@@ -354,7 +340,7 @@ Khi implement component có motion/gesture, dùng các skill đã cài: `apple-d
 
 | M | Phạm vi | FR / CMP | DoD riêng |
 |---|---------|----------|-----------|
-| **M0** Scaffold | Next.js + Tailwind v4 + tokens (style guide §7), mobile-native baseline (style guide §8), motion tokens (§5.2), font Inter, next-intl khung, Firebase client, Serwist, ESLint/Prettier, Vitest, Playwright, seed JSON local | — | `pnpm dev` chạy; trang `/en` nền `#0B0B0F`; test mẫu pass |
+| **M0** Scaffold | Next.js + Tailwind v4 + tokens (style guide §7), mobile-native baseline (style guide §8), motion tokens (§5.2), font Inter, i18n tự viết, Firebase client (nạp lười), service worker tự sinh, ESLint/Prettier, Vitest, Playwright, nội dung JSON local | — | `pnpm dev` chạy; trang `/` nền `#0B0B0F`; test mẫu pass |
 | **M1** Feed + Cover | FeedPager dọc, CoverView (media nền, scrim, CoverTitle, ActionRail tĩnh), TopBar, BottomNav, dữ liệu từ seed local | FR-01, 02, 04, 24 · CMP-01, 04, 05, 07, 08, 14 | Vuốt dọc snap mượt giữa ≥ 3 bài seed; trông giống screenshot 2 |
 | **M2** Details reader | ArticlePager ngang, DetailsView, RichText + InlineChip, ArticleSection focus/dim, KeyPointCard, SourceLine/Sheet, PageDots, ScrollDownButton, header thu gọn | FR-03, 05–08 · CMP-06, 09–13 | Trông giống screenshot 1 & video 0–8s; chip đúng màu; dots theo section |
 | **M3** Firebase + interactions | Firestore thật, seed script, Like/Save/Share optimistic, formatCount, double-tap like | FR-10–13 · CMP-04–06 | Counter đổi đúng sau reload; Rules test (emulator) pass |
@@ -366,23 +352,39 @@ Khi implement component có motion/gesture, dùng các skill đã cài: `apple-d
 
 ## 11. Kiểm thử
 
-- **Unit**: `nextStreak`, `formatCount`, `readingTime`, normalize search, RichText renderer (snapshot đúng class chip).
-- **Rules**: `@firebase/rules-unit-testing` trên emulator: không thể tăng likes +2, streak không nhảy quá 1, khách không viết được bình luận, comment > 500 ký tự bị chặn.
-- **E2E (Playwright, iPhone 14)**: vuốt dọc đổi bài (`page.mouse` drag), vuốt ngang qua 3 view, like → số tăng, đổi ngôn ngữ giữ section, viết comment (Auth emulator), streak tăng sau khi đọc tới KEY POINT.
-- **Visual**: screenshot Playwright của SCR-01/02/03 lưu làm baseline sau khi đã duyệt so với ảnh tham chiếu.
+| Lệnh | Nội dung | Số test hiện có |
+|------|----------|-----------------|
+| `pnpm test` | Unit (Vitest): markup parser, validate bài, search (gập dấu), streak (cùng ngày, liền kề, cách ngày, đổi timezone), format | 42 |
+| `pnpm test:rules` | Security Rules trên Firestore emulator (cần Java 21): like ±1 khớp tài liệu, streak chỉ +1 hoặc về 1, khách không bình luận được, comment > 500 ký tự bị chặn, chỉ moderator ẩn được bình luận… | 21 |
+| `pnpm test:e2e` | Playwright (Chromium, viewport iPhone 13) trên `out/` qua `scripts/serve.mjs`: feed mở, phím mũi tên, vuốt bằng touch thật (CDP), like được nhớ sau reload, đổi sang tiếng Việt, tìm "black hole" rồi mở bài, deep link `/a/<slug>`, HTML prerender đọc được không cần JS, trang privacy/terms | 9 |
+
+CI (`.github/workflows/ci.yml`) chạy lần lượt typecheck → lint → unit → rules → build → E2E.
 
 ## 12. Biến môi trường
 
+Xem `.env.example`. Để trống khối Firebase thì app chạy **chế độ demo** (dữ liệu chỉ lưu trong trình duyệt).
+
 ```
 NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=       # tên miền site (Pages) để proxy /__/auth, xem 07 §2
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=
 NEXT_PUBLIC_FIREBASE_APP_ID=
-NEXT_PUBLIC_RECAPTCHA_SITE_KEY=
-NEXT_PUBLIC_GOOGLE_CLIENT_ID=         # One Tap
-NEXT_PUBLIC_USE_EMULATORS=true        # dev
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=         # App Check (reCAPTCHA v3)
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=           # One Tap
+NEXT_PUBLIC_USE_EMULATORS=false
+NEXT_PUBLIC_SITE_URL=https://reader.pages.dev
+NEXT_PUBLIC_REPO=ahihiyou20/Reader      # /preview đọc bài nháp từ repo này
+NEXT_PUBLIC_REPO_BRANCH=main
+NEXT_PUBLIC_CF_ANALYTICS_TOKEN=         # Cloudflare Web Analytics (tùy chọn)
+
+# Cloudflare Pages (biến môi trường của Pages Function):
+FIREBASE_PROJECT_ID=                    # proxy /__/auth → <id>.firebaseapp.com
+
 # Chỉ trong GitHub Actions secrets (không bao giờ ở client):
-FIREBASE_SERVICE_ACCOUNT_JSON=        # job đêm, seed
-GEMINI_API_KEY=                       # tùy chọn, 05 §6
-CF_PAGES_DEPLOY_HOOK=                 # trigger build hằng ngày
+FIREBASE_SERVICE_ACCOUNT_JSON=          # job đêm, submissions, backup, set-moderator
+CF_PAGES_DEPLOY_HOOK=                   # build lại site hằng ngày / khi nội dung đổi
+BACKUP_PASSPHRASE=                      # mã hoá bản sao lưu (artifact của repo public ai cũng tải được)
+GEMINI_API_KEY=                         # tùy chọn, 05 §6 (biến GEMINI_MODEL ở Actions variables)
+UNSPLASH_ACCESS_KEY=, PEXELS_API_KEY=   # tùy chọn, tìm ảnh bìa khi import
 ```

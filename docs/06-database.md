@@ -187,7 +187,7 @@ Messages (chat) và Notifications: ở MVP chỉ có giao diện và empty state
 | `daily.yml` (Chủ nhật) | Hằng tuần | Xoá khách không hoạt động > 60 ngày; dọn dữ liệu mồ côi |
 | `submissions.yml` | Mỗi 6 giờ | Chuyển `submissions` pending thành draft trong repo; cập nhật trạng thái khi bài được đăng hoặc bị từ chối |
 | `set-moderator.yml` | Chạy tay | Ghi `moderators/{uid}` |
-| `backup.yml` | Hằng tuần | Export `users`, `counters`, `comments`, `submissions` ra JSON, lưu làm artifact của workflow (90 ngày); **không** commit dữ liệu người dùng vào repo public |
+| `backup.yml` | Hằng tuần | Export toàn bộ Firestore ra JSON, **mã hoá GPG (AES-256) bằng secret `BACKUP_PASSPHRASE`** rồi mới lưu làm artifact (90 ngày), vì artifact của repo public tải được bởi bất kỳ ai đăng nhập GitHub; thiếu secret thì job dừng. **Không** commit dữ liệu người dùng vào repo public |
 
 ### 3.4 Ngân sách quota
 
@@ -298,6 +298,6 @@ Có thể thêm project `reader-dev` (Spark, miễn phí) nếu cần môi trư�
 
 ## 5. Quyền riêng tư
 
-- Dữ liệu cá nhân chỉ nằm trong Firestore; repo public không chứa dữ liệu người dùng (backup lưu làm artifact riêng, không commit).
+- Dữ liệu cá nhân chỉ nằm trong Firestore; repo public không chứa dữ liệu người dùng (backup được mã hoá rồi mới lưu làm artifact, không commit).
 - Bài người dùng gửi qua nút + được `submissions.yml` commit vào repo public ở trạng thái `review` (chưa lên app), chỉ kèm tên hiển thị, không kèm email hay uid. Form gửi bài báo trước rằng bài sẽ công khai theo CC BY 4.0.
 - Không gửi dữ liệu người dùng cho Gemini hay bên thứ ba.
