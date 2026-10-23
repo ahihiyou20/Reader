@@ -53,7 +53,7 @@ pnpm start        # phục vụ out/ tại http://localhost:4173 (clean URL như
 
 ### 1. Firebase (gói Spark)
 
-> Project đang dùng: **`reader-app-512514`**. Bước 1, 3, 5 đã làm (Firestore ở `asia-southeast1`, rules và index đã deploy, Web app `Reader` đã tạo); xem docs/08 §Firebase để biết giá trị cấu hình và các bước còn lại.
+> Project đang dùng: **`reader-app-512514`**. Bước 1–3, 5, 6 đã làm (Auth Anonymous + Google, Firestore ở `asia-southeast1`, rules và index, Web app `Reader`, authorized domain); cấu hình web nằm sẵn trong `deploy.yml`; xem docs/08 §Firebase để biết giá trị cấu hình và các bước còn lại.
 
 1. Tạo project trên [Firebase Console](https://console.firebase.google.com/), **không** nâng cấp gói.
 2. Authentication → bật **Google** và **Anonymous**.

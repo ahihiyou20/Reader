@@ -35,16 +35,15 @@ Làm bằng service account `claude@reader-app-512514` (Owner) qua API, không q
 - **Firestore** `(default)`, chế độ Native, vùng **`asia-southeast1`** (Singapore, gần người đọc Việt Nam nhất; không đổi được sau khi tạo), bật chống xoá. Đã deploy `firestore.rules` và `firestore.indexes.json`.
 - **Web app** `Reader`: `apiKey=AIzaSyD7aHQ1QK7-2lQrK4DAadQnoG7R1dXAWpk`, `appId=1:427872189161:web:9bf2ffe3c95507b5234e78`, `projectId=reader-app-512514`. Các giá trị này công khai theo thiết kế của Firebase (nằm trong bundle JS).
 - **Cloudflare Pages** `reader`: đã đặt `FIREBASE_PROJECT_ID=reader-app-512514` cho production và preview; có hiệu lực từ lần deploy tới.
-- **Authentication chưa khởi tạo**: API chỉ khởi tạo được bằng cách nâng lên Identity Platform, trái với chủ trương gói Spark, nên cần bấm *Get started* trong console (bước 1 dưới đây).
+- **Authentication**: Anonymous và Google đã bật (OAuth client Web tự tạo `427872189161-p1r7um1joia6jk05nssq6qbcv91tt6us`); authorized domains thêm `reader-xtm.pages.dev`.
+- **Deploy**: `deploy.yml` có sẵn cấu hình web công khai làm giá trị mặc định (biến GitHub cùng tên ghi đè được), nên không cần đặt biến `NEXT_PUBLIC_FIREBASE_*`. CI và E2E vẫn build ở chế độ demo. Đã deploy tay bằng Wrangler; kiểm tra trên site thật: `/__/auth/handler` trả 200, đăng nhập khách tạo được uid, Firestore đọc/ghi 200, console không lỗi.
+- **Còn thiếu cho đăng nhập Google**: OAuth client chưa có redirect URI `https://reader-xtm.pages.dev/__/auth/handler` (Google trả `redirect_uri_mismatch`), và chưa có origin cho One Tap. Không sửa được qua API.
 
 ## Việc cần người làm (không tự động được)
 
 1. Hoàn tất Firebase (README §1–2):
-   - Firebase Console → Authentication → **Get started**, bật **Anonymous** và **Google** (bật Google sẽ tự tạo OAuth client Web).
-   - Authentication → Settings → Authorized domains: thêm `reader-xtm.pages.dev`.
-   - Google Cloud → Credentials → OAuth client *Web client (auto created by Google Service)*: thêm origins `https://reader-xtm.pages.dev`, `http://localhost:3000` và redirect URI `https://reader-xtm.pages.dev/__/auth/handler`; chép Client ID vào `NEXT_PUBLIC_GOOGLE_CLIENT_ID`.
-   - (Nên làm) reCAPTCHA v3 site key cho App Check → `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`.
-   - Biến GitHub Actions: `NEXT_PUBLIC_FIREBASE_API_KEY`, `NEXT_PUBLIC_FIREBASE_APP_ID`, `NEXT_PUBLIC_FIREBASE_PROJECT_ID=reader-app-512514`, `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=reader-xtm.pages.dev` (giá trị ở mục Firebase phía trên). Chỉ đặt sau khi Authentication đã bật, nếu không site rời chế độ demo mà chưa đăng nhập được.
+   - Google Cloud → APIs & Services → Credentials → *Web client (auto created by Google Service)*: thêm Authorized JavaScript origins `https://reader-xtm.pages.dev`, `http://localhost:3000` và Authorized redirect URI `https://reader-xtm.pages.dev/__/auth/handler`. Thiếu bước này thì đăng nhập Google trên site lỗi `redirect_uri_mismatch`.
+   - (Nên làm) reCAPTCHA v3 site key cho App Check → biến `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`.
    - Secret `FIREBASE_SERVICE_ACCOUNT_JSON`: nên tạo service account riêng (ví dụ `reader-actions`) chỉ với `roles/datastore.user` và `roles/firebaseauth.admin` (đủ cho các script: đọc/ghi Firestore, `listUsers`, xoá khách, gán moderator), thay vì dùng tài khoản Owner.
 2. Deploy Worker `sveltia-cms-auth` và sửa `base_url` trong `public/cms/config.yml` (đang là địa chỉ mẫu).
 3. Thêm secrets GitHub Actions: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `GEMINI_API_KEY` (cần cho bài tự động), `FIREBASE_SERVICE_ACCOUNT_JSON`, `BACKUP_PASSPHRASE` (tùy chọn `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY`), biến `SITE_URL=https://reader-xtm.pages.dev`, và bật *Allow GitHub Actions to create and approve pull requests*.

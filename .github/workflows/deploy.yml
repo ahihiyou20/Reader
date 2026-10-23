@@ -31,16 +31,18 @@ jobs:
         run: pnpm tsx scripts/pipeline/deploy-check.ts "${{ github.event.before }}" "${{ github.sha }}"
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+      # Public Firebase web config (project reader-app-512514); it ships in the JS bundle by design.
+      # Repository variables of the same name override these defaults.
       - name: Build
         if: (steps.check.outputs.needed == 'true' || github.event_name == 'workflow_dispatch') && env.CLOUDFLARE_API_TOKEN != ''
         env:
-          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
-          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ vars.NEXT_PUBLIC_FIREBASE_API_KEY }}
-          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ vars.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN }}
-          NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_PROJECT_ID }}
-          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_APP_ID }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL || 'https://reader-xtm.pages.dev' }}
+          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ vars.NEXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyD7aHQ1QK7-2lQrK4DAadQnoG7R1dXAWpk' }}
+          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ vars.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || 'reader-xtm.pages.dev' }}
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_PROJECT_ID || 'reader-app-512514' }}
+          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_APP_ID || '1:427872189161:web:9bf2ffe3c95507b5234e78' }}
           NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ vars.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
-          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_CLIENT_ID }}
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '427872189161-p1r7um1joia6jk05nssq6qbcv91tt6us.apps.googleusercontent.com' }}
           NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }}
           NEXT_PUBLIC_CF_ANALYTICS_TOKEN: ${{ vars.NEXT_PUBLIC_CF_ANALYTICS_TOKEN }}
         run: pnpm build
