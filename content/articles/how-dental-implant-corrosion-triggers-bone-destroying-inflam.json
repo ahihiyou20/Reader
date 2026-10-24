@@ -1,0 +1,123 @@
+{
+  "slug": "how-dental-implant-corrosion-triggers-bone-destroying-inflam",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=how-dental-implant-corrosion-triggers-bone-destroying-inflam",
+  "category": "science",
+  "tags": [
+    "dental implants",
+    "immunology",
+    "bone health",
+    "bacteria"
+  ],
+  "title": {
+    "en": "How Dental Implant Corrosion Triggers Bone-Destroying Inflammation",
+    "vi": "Cách sự ăn mòn răng giả kích hoạt tình trạng viêm phá hủy xương"
+  },
+  "hook": {
+    "en": "Millions of people rely on dental implants to replace missing teeth, yet up to twenty percent develop a severe bone-damaging infection called peri-implantitis {source}. Standard antibiotics frequently fail to cure this condition. Scientists at the Rutgers School of Dental Medicine have now discovered that microscopic titanium particles released from corroded implants hijack immune cells, trapping them in a state of chronic inflammation that destroys the jawbone.",
+    "vi": "Hàng triệu người dựa vào răng giả để thay thế răng mất, thế nhưng có tới 20% phát triển một bệnh nhiễm trùng nghiêm trọng phá hủy xương gọi là viêm quanh trụ răng (*peri-implantitis*) {source}. Kháng sinh thông thường thường không chữa khỏi tình trạng này. Các nhà khoa học tại Trường Nha khoa Đại học Rutgers nay đã phát hiện ra rằng các hạt titan vi mô được phóng thích từ răng giả bị ăn mòn thao túng các tế bào miễn dịch, bẫy chúng trong trạng thái viêm mạn tính phá hủy xương hàm."
+  },
+  "sections": [
+    {
+      "heading_en": "The Hidden Threat of Metal Particles",
+      "heading_vi": "Mối đe dọa ẩn giấu từ các hạt kim loại",
+      "body_en": "Researchers found that oral bacteria slowly erode the metal surface of implants, generating billions of microscopic titanium fragments. Routine dental cleaning tools can also scrape the metal if improper instruments are used. These tiny particles attract bacterial toxins, creating a deceptive target that white blood cells attempt to consume but cannot digest, leading to prolonged and excessive inflammation.",
+      "body_vi": "Các nhà nghiên cứu phát hiện ra rằng vi khuẩn trong khoang miệng dần dần ăn mòn bề mặt kim loại của răng giả, tạo ra hàng tỷ mảnh titan vi mô. Các dụng cụ vệ sinh nha khoa thông thường cũng có thể làm xước kim loại nếu dùng sai công cụ. Những hạt nhỏ này hút các độc tố vi khuẩn, tạo ra một mục tiêu đánh lừa mà tế bào bạch cầu cố gắng tiêu thụ nhưng không thể tiêu hóa, dẫn đến tình trạng viêm nhiễm kéo dài và quá mức."
+    },
+    {
+      "heading_en": "Immune Cells Hijacked by Titanium",
+      "heading_vi": "Tế bào miễn dịch bị titan thao túng",
+      "body_en": "When macrophages attempt to engulf the titanium fragments coated in toxins, they become trapped in a dysfunctional state. Instead of clearing the infection, these immune cells produce high levels of inflammatory signaling proteins. Consequently, their ability to fight actual bacteria drops significantly, leaving the surrounding tissue defenseless while the chronic immune reaction steadily deteriorates the supporting jawbone.",
+      "body_vi": "Khi các đại thực bào (*macrophages*) cố gắng bao bọc các mảnh titan được phủ độc tố, chúng bị mắc kẹt trong trạng thái rối loạn chức năng. Thay vì dọn dẹp nhiễm trùng, các tế bào miễn dịch này sản xuất ra mức protein truyền tín hiệu viêm cao. Do đó, khả năng chống lại vi khuẩn thực sự của chúng giảm đáng kể, khiến mô xung quanh không được bảo vệ trong khi phản ứng miễn dịch mạn tính làm suy giảm dần xương hàm nâng đỡ."
+    },
+    {
+      "heading_en": "A Potential New Treatment Target",
+      "heading_vi": "Một mục tiêu điều trị mới tiềm năng",
+      "body_en": "Investigations revealed that a specific calcium channel inside macrophages drives this destructive inflammatory response. When scientists genetically disabled this pathway in mice, the animals successfully resisted the disease, producing fewer inflammatory molecules and clearing bacteria effectively. This breakthrough identifies a promising new drug target to treat infections by modulating the immune response rather than relying only on antibiotics.",
+      "body_vi": "Các cuộc điều tra tiết lộ rằng một kênh canxi (*calcium channel*) cụ thể bên trong đại thực bào thúc đẩy phản ứng viêm hủy diệt này. Khi các nhà khoa học vô hiệu hóa con đường này về mặt di truyền ở chuột, những con vật đã chống chọi thành công với bệnh, tạo ra ít phân tử viêm hơn và loại bỏ vi khuẩn hiệu quả. Bước đột phá này xác định một mục tiêu dùng thuốc đầy hứa hẹn mới để điều trị nhiễm trùng bằng cách điều hòa phản ứng miễn dịch thay vì chỉ dựa vào thuốc kháng sinh."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261022081314.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/681/1080/1920",
+    "provider": "unsplash",
+    "author": "Axel  Antas-Bergkvist",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Dental implants can hijack your immune system, scientists discover",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/10/261022081314.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of titanium particles as Trojan horses that trick your immune guard cells into fighting ghosts while bacteria invade. How can you ensure your next dental cleaning protects your implants?",
+    "vi": "Hãy coi các hạt titan giống như những con ngựa thành Tro-gia đánh lừa các tế bào bảo vệ miễn dịch của bạn chiến đấu với bóng ma trong khi vi khuẩn xâm nhập. Làm thế nào bạn có thể đảm bảo lần vệ sinh răng tiếp theo bảo vệ được răng giả của mình?"
+  },
+  "applySteps": {
+    "en": [
+      "Schedule regular dental checkups to monitor the health of your gum tissues.",
+      "Ask your dentist to use nonabrasive cleaning tools specifically designed for implants.",
+      "Maintain daily oral hygiene to reduce bacteria accumulation around the implant base."
+    ],
+    "vi": [
+      "Lên lịch khám răng định kỳ để theo dõi sức khỏe các mô nướu của bạn.",
+      "Yêu cầu nha sĩ sử dụng các dụng cụ làm sạch không mài mòn được thiết kế riêng cho răng giả.",
+      "Duy trì vệ sinh răng miệng hàng ngày để giảm sự tích tụ vi khuẩn quanh chân răng giả."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/681/1080/1920",
+      "provider": "unsplash",
+      "author": "Axel  Antas-Bergkvist",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/683/1080/1920",
+      "provider": "unsplash",
+      "author": "ahmadreza sajadi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/55xd_uiUYEE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/537/1080/1920",
+      "provider": "unsplash",
+      "author": "Juskteez Vu",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/TIrXot28Znc"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoQABwAPu1krU6ppaSiMAgBMB2JYwCdAGlfiyV5SZkyAAD++ufQuR8FdHQPs+xhNWBABdXu/lH99SGXccG6j9IAAAA=",
+  "dominant": "#192532",
+  "publishAt": "2026-10-24T01:49:51.275Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
