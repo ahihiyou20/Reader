@@ -1,0 +1,131 @@
+{
+  "slug": "how-malaria-parasites-infiltrate-human-blood-cells",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=how-malaria-parasites-infiltrate-human-blood-cells",
+  "category": "science",
+  "tags": [
+    "malaria",
+    "biology",
+    "parasites",
+    "microscopy",
+    "health"
+  ],
+  "title": {
+    "en": "How Malaria Parasites Infiltrate Human Blood Cells",
+    "vi": "Cách Ký Sinh Trùng Sốt Rét Xâm Nhập Tế Bào Máu Người"
+  },
+  "hook": {
+    "en": "Malaria has plagued humanity for centuries, killing hundreds of thousands annually. Scientists have finally captured the deadly Plasmodium parasite breaking into red blood cells in unprecedented detail, revealing a microscopic gateway that could transform how we fight this ancient disease.",
+    "vi": "Sốt rét đã hoành hành nhân loại trong nhiều thế kỷ, cướp đi sinh mạng của hàng trăm nghìn người mỗi năm cuối cùng các nhà khoa học đã ghi lại được khoảnh khắc ký sinh trùng Plasmodium chết người đột nhập vào tế bào hồng cầu với độ chi tiết chưa từng có, hé lộ một cửa ngõ vi mô có thể thay đổi cách chúng ta chống lại căn bệnh cổ xưa này."
+  },
+  "sections": [
+    {
+      "heading_en": "The Elusive Gateway",
+      "heading_vi": "Cổng Vào Bí Ẩn",
+      "body_en": "For generations, the complex life cycle of the malaria parasite remained elusive. Researchers knew that single-celled Plasmodium microbes invade red blood cells by creating a temporary ring structure known as the moving junction. This microscopic portal allows the parasite to slip inside before sealing without a trace in under a minute, making it historically impossible to capture with older imaging tools.",
+      "body_vi": "Trong nhiều thế hệ, vòng đời phức tạp của ký sinh trùng sốt rét vẫn là một điều bí ẩn. Các nhà nghiên cứu biết rằng sinh vật đơn bào Plasmodium xâm nhập tế bào hồng cầu bằng cách tạo ra một cấu trúc vòng tạm thời gọi là vòng di động (*moving junction*). Cổng vi mô này cho phép ký sinh trùng lọt vào bên trong trước khi khít lại mà không để lại dấu vết trong chưa đầy một phút, khiến việc ghi lại bằng các công cụ hình ảnh cũ trở nên bất khả thi trong lịch sử."
+    },
+    {
+      "heading_en": "Membrane Remodeling",
+      "heading_vi": "Tái Cấu Trúc Màng Tế Bào",
+      "body_en": "Using advanced cryo-electron microscopy, a team of researchers mapped the moving junction at the exact moment of invasion {source}. The parasite injects specific proteins that form a dense wedge beneath the host membrane. These proteins generate electrostatic forces and pressure, deforming the membrane and forcing it to bow inward, allowing the invader to slip through effortlessly.",
+      "body_vi": "Sử dụng kính hiển vi điện tử lạnh hiện đại, một nhóm nghiên cứu đã lập bản đồ vòng di động ngay tại thời điểm xâm nhập {source}. Ký sinh trùng tiêm các loại protein cụ thể tạo thành một lớp đệm dày bên dưới màng tế bào chủ. Các protein này tạo ra lực tĩnh điện và áp suất, làm biến dạng màng và buộc nó uông cong vào trong, cho phép kẻ xâm nhập lọt qua một cách dễ dàng."
+    },
+    {
+      "heading_en": "Inside the Host Cell",
+      "heading_vi": "Bên Trong Tế Bào Chủ",
+      "body_en": "Once safely inside, the parasite completely redecorates its new home. It feeds on hemoglobin and stretches the cytoplasm, effectively turning an empty cell into a functional apartment. It also alters the cell exterior to stick to blood vessel walls, helping it evade detection by the spleen and the immune system while it multiplies rapidly.",
+      "body_vi": "Khi đã ở bên trong an toàn, ký sinh trùng hoàn toàn cải tạo ngôi nhà mới của mình. Nó ăn huyết sắc tố và kéo dài tế bào chất, biến một tế bào trống rỗng thành một căn hộ tiện nghi. Nó cũng thay đổi bề mặt bên ngoài của tế bào để bám vào thành mạch máu, giúp nó tránh bị phát hiện bởi lá lách và hệ thống miễn dịch trong lúc sinh sôi nảy nở nhanh chóng."
+    },
+    {
+      "heading_en": "New Treatment Avenues",
+      "heading_vi": "Con Đường Điều Trị Mới",
+      "body_en": "This detailed view of the invasion machinery offers a promising new target for medicine. By blocking the moving junction, future treatments could stop the parasite in its tracks. Because similar parasites use identical machinery, this discovery might eventually lead to broad-spectrum defenses against multiple infectious diseases.",
+      "body_vi": "Góc nhìn chi tiết về cơ chế xâm nhập này mang lại một mục tiêu mới đầy hứa hẹn cho y học. Bằng cách chặn vòng di động, các phương pháp điều trị trong tương lai có thể ngăn chặn ký sinh trùng ngay từ đầu. Vì các loại ký sinh trùng tương tự sử dụng cơ chế y hệt, khám phá này cuối cùng có thể dẫn đến các biện pháp phòng vệ phổ rộng chống lại nhiều bệnh truyền nhiễm."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Quanta Magazine (2026)",
+      "url": "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/1032/1080/1920",
+    "provider": "unsplash",
+    "author": "NASA",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/E7q00J_8N7A"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Joanna Thompson October 23",
+      "2026"
+    ],
+    "originalTitle": "Malaria Parasite Caught in the Act of Breaking and Entering",
+    "originalUrl": "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023",
+    "publisher": "Quanta Magazine",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like a master burglar slipping through a specialized security door, the malaria parasite forces open a brief window into our cells. How might blocking this tiny portal change the future of global medicine?",
+    "vi": "Giống như một tên trộm bậc thầy lẻn qua một cánh cửa an ninh chuyên dụng, ký sinh trùng sốt rét mở ép một khoảng thời gian ngắn vào các tế bào của chúng ta. Việc chặn cổng vi mô này có thể thay đổi tương lai của y học toàn cầu như thế nào?"
+  },
+  "applySteps": {
+    "en": [
+      "Learn about malaria transmission and prevention methods in tropical regions.",
+      "Support global health initiatives focused on developing novel parasitic treatments.",
+      "Stay informed on breakthroughs in cryo-electron microscopy and structural biology."
+    ],
+    "vi": [
+      "Tìm hiểu về cách lây truyền và các phương pháp phòng chống sốt rét ở vùng nhiệt đới.",
+      "Hỗ trợ các sáng kiến y tế toàn cầu tập trung phát triển các phương pháp điều trị ký sinh trùng mới.",
+      "Cập nhật thông tin về các bước đột phá trong kính hiển vi điện tử lạnh và sinh học cấu trúc."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1032/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E7q00J_8N7A"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/829/1080/1920",
+      "provider": "unsplash",
+      "author": "Drew Hays",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/681/1080/1920",
+      "provider": "unsplash",
+      "author": "Axel  Antas-Bergkvist",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAwCdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdABohlf0CkD3QAP47UhognyXHXSHcfOq7PK9ZFgTQoHqBbDnXpHgqs0oJNtQUUQlmcD23Gq9Ltg0SGyNX9HXk/JSpyjJ134HLBnILpB6dHbNi+aN0QilJoLgQfJMcRZ32nHRJqqBz/T5hYAAA",
+  "dominant": "#624834",
+  "publishAt": "2026-10-23T17:07:57.037Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}

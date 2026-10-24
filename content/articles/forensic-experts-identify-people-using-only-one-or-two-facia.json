@@ -1,0 +1,129 @@
+{
+  "slug": "forensic-experts-identify-people-using-only-one-or-two-facia",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=forensic-experts-identify-people-using-only-one-or-two-facia",
+  "category": "science",
+  "tags": [
+    "facial recognition",
+    "forensic science",
+    "artificial intelligence",
+    "psychology"
+  ],
+  "title": {
+    "en": "Forensic Experts Identify People Using Only One or Two Facial Features",
+    "vi": "Chuyên gia pháp y nhận dạng con người chỉ bằng một vài đặc điểm khuôn mặt"
+  },
+  "hook": {
+    "en": "Artificial intelligence struggles with facial recognition in messy real-world conditions, but trained human specialists operate differently. A recent study reveals that federal forensic experts can accurately match obscured faces using barely any visual information at all, shedding light on how we might improve both human training and future technology {source}.",
+    "vi": "Trí tuệ nhân tạo gặp khó khăn với việc nhận dạng khuôn mặt trong điều kiện thực tế lộn xộn, nhưng các chuyên gia con người được đào tạo lại hoạt động khác biệt. Một nghiên cứu gần đây cho thấy các chuyên gia pháp y liên bang có thể khớp khuôn mặt bị che một cách chính xác mà không cần nhiều thông tin hình ảnh {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Testing Facial Experts",
+      "heading_vi": "Kiểm tra chuyên gia",
+      "body_en": "Researchers at the National Institute of Standards and Technology tested twenty-seven federal forensic facial specialists. These experts examined images containing two similar faces and one hidden face. Their task was to match the obscured person by removing coverings from nine distinct facial areas, earning points for using as few clues as possible.",
+      "body_vi": "Các nhà nghiên cứu từ Viện Tiêu chuẩn và Công nghệ Quốc gia đã thử nghiệm hai mươi bảy chuyên gia nhận dạng khuôn mặt pháp y (*forensic facial specialists*) của liên bang. Những chuyên gia này kiểm tra hình ảnh gồm hai khuôn mặt giống nhau và một mặt bị che khuất. Nhiệm vụ của họ là khớp người bị che bằng cách bỏ lớp phủ từ chín khu vực trên mặt."
+    },
+    {
+      "heading_en": "Surprising Accuracy",
+      "heading_vi": "Độ chính xác bất ngờ",
+      "body_en": "The specialists achieved a remarkable success rate. They correctly identified the hidden individual ninety percent of the time after uncovering just one or two features. Study author Carina Hahn noted her surprise at how effectively these professionals extracted unique identity details from such minimal visual data.",
+      "body_vi": "Các chuyên gia đạt tỷ lệ thành công đáng kinh ngạc. Họ xác định đúng cá nhân bị che khuất chín mươi phần trăm số lần sau khi chỉ mở một hoặc hai đặc điểm. Tác giả nghiên cứu Carina Hahn ghi nhận sự ngạc nhiên về cách những chuyên gia này trích xuất chi tiết nhận dạng từ dữ liệu tối thiểu."
+    },
+    {
+      "heading_en": "Ears and Foreheads",
+      "heading_vi": "Tai và trán",
+      "body_en": "Ears emerged as the absolute favorite feature to uncover, proving exceptionally useful for correct identification. Along with ears, researchers found that foreheads were unexpectedly linked to the highest accuracy levels, while chins and necks provided the least assistance during the matching process.",
+      "body_vi": "Tai nổi lên là đặc điểm yêu thích nhất để mở, chứng tỏ cực kỳ hữu ích cho việc nhận dạng chính xác. Cùng với tai, các nhà nghiên cứu nhận thấy trán liên quan bất ngờ đến mức độ chính xác cao nhất, trong khi cằm và cổ hỗ trợ ít nhất."
+    },
+    {
+      "heading_en": "Flexible Strategy",
+      "heading_vi": "Chiến lược linh hoạt",
+      "body_en": "Beyond specific features, the team highlighted the remarkable adaptability of the specialists. Instead of following rigid rules, they adjusted their strategy based on the unique face presented to them. This flexible approach could eventually help developers train better artificial intelligence recognition systems.",
+      "body_vi": "Ngoài các đặc điểm cụ thể, nhóm nghiên cứu nhấn mạnh khả năng thích ứng (*adaptability*) đáng chú ý của các chuyên gia. Thay vì tuân theo quy tắc cứng nhắc, họ điều chỉnh chiến lược dựa trên khuôn mặt độc đáo trước mắt. Cách tiếp cận linh hoạt này có thể giúp cải thiện trí tuệ nhân tạo (*artificial intelligence*)."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "nautil.us (2026)",
+      "url": "https://nautil.us/forensic-facial-specialists-can-identify-people-using-just-a-couple-facial-features-1286039"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/1022/1080/1920",
+    "provider": "unsplash",
+    "author": "Vashishtha Jogi",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Jake Currie"
+    ],
+    "originalTitle": "Forensic Facial Specialists Can Identify People Using Just a Couple Facial Features",
+    "originalUrl": "https://nautil.us/forensic-facial-specialists-can-identify-people-using-just-a-couple-facial-features-1286039",
+    "publisher": "nautil.us",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like a detective solving a mystery with only a single footprint, these specialists extract massive amounts of identity from tiny clues. [p:Can you spot someone you know by looking only at their ears?] *Adaptability is often more powerful than rigid rules.*",
+    "vi": "Giống như thám tử giải quyết vụ án chỉ với một dấu giày duy nhất, các chuyên gia này trích xuất lượng lớn nhận dạng từ manh mối nhỏ. [p:Bạn có thể nhận ra người quen nếu chỉ nhìn vào tai họ không?] *Khả năng thích ứng thường mạnh mẽ hơn các quy tắc cứng nhắc.*"
+  },
+  "applySteps": {
+    "en": [
+      "Examine your own face in a mirror to identify which features stand out the most.",
+      "Observe how people use unique physical traits like ears or eyebrows to recognize others.",
+      "Consider how artificial intelligence might be trained using flexible human strategies."
+    ],
+    "vi": [
+      "Quan sát khuôn mặt của chính bạn trong gương để xác định đặc điểm nào nổi bật nhất.",
+      "Lưu ý cách mọi người dùng các đặc điểm thể chất độc đáo như tai hoặc lông mày để nhận diện.",
+      "Xem xét cách trí tuệ nhân tạo có thể được huấn luyện bằng các chiến lược linh hoạt của con người."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1022/1080/1920",
+      "provider": "unsplash",
+      "author": "Vashishtha Jogi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/716/1080/1920",
+      "provider": "unsplash",
+      "author": "Matthew Kosloski",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BT_BUEwjeQg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoQABwAPu1iqk4ppaQiMAgBMB2JbACdAGlfj17benAhV7sy2AAA/vkZ8yNUFiCJQaZY29bltdPf+zreVX+Sl/sOkZmTH76zu3oYuDTG5m4uLULbsAA=",
+  "dominant": "#033714",
+  "publishAt": "2026-10-23T17:06:57.037Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
