@@ -1,0 +1,155 @@
+{
+  "slug": "the-global-food-and-water-security-support-analysis-data-gfs",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=the-global-food-and-water-security-support-analysis-data-gfs",
+  "category": "science",
+  "tags": [
+    "gfsad",
+    "agriculture",
+    "remote sensing",
+    "artificial intelligence",
+    "water security"
+  ],
+  "title": {
+    "en": "The Global Food-and-Water Security-support Analysis Data (GFSAD) Project held its 5th Workshop",
+    "vi": "Dự án Dữ liệu Hỗ trợ An ninh Lương thực và Nước Toàn cầu (GFSAD) tổ chức Hội thảo lần thứ 5"
+  },
+  "hook": {
+    "en": "On October 15-16, 2026, the Global Food-and-Water Security-support Analysis Data (GFSAD) Project Workshop was held at the U.S. Geological Survey (USGS) Flagstaff Science Center in Flagstaff, Arizona. The workshop brought together scientists, researchers, and collaborators from the USGS, Bay Area Environmental Research Institute (BAERI), San Diego State University (SDSU), and Northern Arizona University (NAU) to review accomplishments, discuss ongoing research, showcase new scientific developments, evaluate products and publications, and chart future directions for the GFSAD program.",
+    "vi": "Vào ngày 15-16 tháng 10 năm 2026, Hội thảo Dự án Dữ liệu Hỗ trợ An ninh Lương thực và Nước Toàn cầu (GFSAD) đã được tổ chức tại Trung tâm Khoa học Flagstaff thuộc Khảo sát Địa chất Hoa Kỳ (USGS) ở Flagstaff, Arizona. Hội thảo quy tụ các nhà khoa học, nhà nghiên cứu và cộng tác viên từ USGS, Viện Nghiên cứu Môi trường Vùng Vịnh (BAERI), Đại học Tiểu bang San Diego (SDSU) và Đại học Bắc Arizona (NAU) nhằm đánh giá các thành tựu, thảo luận về nghiên cứu đang tiến hành, trưng bày các phát triển khoa học mới, đánh giá các sản phẩm và ấn phẩm, đồng thời vạch ra các hướng đi tương lai cho chương trình GFSAD."
+  },
+  "sections": [
+    {
+      "body_en": "The GFSAD project is a major NASA-funded Earth Action Agriculture initiative, formerly supported through NASA's Making Earth System Data Records for Use in Research Environments (MEaSUREs) Program, with complementary support from the USGS. The project aims to develop global agricultural information products at [y:30-meter and increasingly 10-meter spatial resolutions] using satellite remote sensing, cloud computing, advanced machine learning, and artificial intelligence. Its overarching goal is to provide scientifically rigorous geospatial information on multiple cropland products, irrigation, crop water productivity, and agricultural dynamics to support global food security, water security, climate adaptation, and sustainable resource management.",
+      "body_vi": "Dự án GFSAD là một Sáng kiến Nông nghiệp Hành động Trái Đất lớn do NASA tài trợ, trước đây được hỗ trợ thông qua Chương trình Ghi chép Dữ liệu Hệ thống Trái Đất vì Môi trường Nghiên cứu (MEaSUREs) của NASA, với sự hỗ trợ bổ sung từ USGS. Dự án nhằm mục đích phát triển các sản phẩm thông tin nông nghiệp toàn cầu ở độ phân giải không gian 30 mét và ngày càng tăng lên 10 mét bằng cách sử dụng viễn thám vệ tinh (*satellite remote sensing*), điện toán đám mây (*cloud computing*), học máy nâng cao (*advanced machine learning*) và trí tuệ nhân tạo (*artificial intelligence*). Mục tiêu tổng thể của dự án là cung cấp thông tin không gian địa lý (*geospatial information*) có độ khắt khe về khoa học về nhiều sản phẩm đất trồng trọt, thủy lợi, năng suất nước cây trồng và động lực học nông nghiệp để hỗ trợ an ninh lương thực toàn cầu, an ninh nguồn nước, thích ứng với biến đổi khí hậu và quản lý tài nguyên bền vững."
+    },
+    {
+      "body_en": "The workshop highlighted the remarkable progress made by the GFSAD program over the past decade. A major foundational achievement has been the development of the [y:Global Cropland Extent Product (GCEP30)], the first global cropland map at 30-meter resolution derived from Landsat time-series data. This effort involved multiple international mapping teams and independent validation groups, resulting in numerous NASA Earthdata releases, journal articles, a USGS Professional Paper, and a body of research that has received thousands of scientific citations worldwide. Building on these foundations, the project has expanded into a new generation of products addressing cropland extent, crop intensity, irrigated and rainfed agriculture, crop water productivity, and AI-enabled Earth observation analytics.",
+      "body_vi": "Hội thảo đã làm nổi bật những tiến bộ đáng chú ý mà chương trình GFSAD đạt được trong thập kỷ qua. Một thành tựu nền tảng lớn là việc phát triển Sản phẩm Mức độ Phổ biến Đất trồng trọt Toàn cầu (GCEP30), bản đồ đất trồng trọt toàn cầu đầu tiên ở độ phân giải 30 mét được rút ra từ dữ liệu chuỗi thời gian Landsat. Nỗ lực này liên quan đến nhiều nhóm lập bản đồ quốc tế và các nhóm xác thực độc lập, dẫn đến nhiều ấn bản NASA Earthdata, các bài báo tạp chí, một Ấn phẩm Chuyên khảo của USGS và một lượng lớn nghiên cứu đã nhận được hàng nghìn trích dẫn khoa học trên toàn thế giới. Dựa trên nền tảng này, dự án đã mở rộng sang thế hệ sản phẩm mới giải quyết phạm vi đất trồng trọt, cường độ cây trồng, nông nghiệp tưới tiêu và nhờ nước trời, năng suất nước cây trồng và phân tích quan sát Trái Đất hỗ trợ bởi trí tuệ nhân tạo."
+    },
+    {
+      "body_en": "One of the major themes of the workshop was the transition from traditional satellite image analysis toward geospatial foundation models and artificial intelligence. Multiple presentations demonstrated how Google DeepMind's [p:AlphaEarth Foundation satellite embeddings], consisting of 64-dimensional AI-generated representations at 10-meter resolution, are transforming cropland mapping. These embeddings integrate information from Landsat, Sentinel-1, Sentinel-2, ALOS-PALSAR, elevation models, climate datasets, and other Earth observation sources into compact, analysis-ready geospatial information layers. Workshop discussions emphasized that foundation models represent a paradigm shift in agricultural monitoring, enabling more accurate, scalable, and transferable mapping of cropland extent, irrigation status, crop intensity, and crop types worldwide.",
+      "body_vi": "Một trong những chủ đề lớn của hội thảo là sự chuyển đổi từ phân tích hình ảnh vệ tinh truyền thống sang các mô hình nền tảng không gian địa lý (*geospatial foundation models*) và trí tuệ nhân tạo. Nhiều bài thuyết trình đã chứng minh cách các lớp nhúng vệ tinh AlphaEarth Foundation của Google DeepMind, bao gồm các đại diện do trí tuệ nhân tạo tạo ra 64 chiều ở độ phân giải 10 mét, đang chuyển đổi việc lập bản đồ đất trồng trọt. Các lớp nhúng này tích hợp thông tin từ Landsat, Sentinel-1, Sentinel-2, ALOS-PALSAR, các mô hình độ cao, bộ dữ liệu khí hậu và các nguồn quan sát Trái Đất khác thành các lớp thông tin không gian địa lý nhỏ gọn, sẵn sàng phân tích. Các cuộc thảo luận tại hội thảo nhấn mạnh rằng các mô hình nền tảng đại diện cho một sự thay đổi mô hình (*paradigm shift*) trong việc giám sát nông nghiệp, cho phép lập bản đồ chính xác hơn, có khả năng mở rộng và chuyển giao cao hơn đối với phạm vi đất trồng trọt, tình trạng tưới tiêu, cường độ cây trồng và các loại cây trồng trên toàn thế giới."
+    },
+    {
+      "body_en": "Significant attention was devoted to the development of next-generation 10-meter agricultural products. Researchers presented ongoing work on [y:Global Cropland Extent Product Version 2 (GCEP10)], which seeks to improve upon earlier 30-meter products by reducing omission and commission errors while better capturing fragmented smallholder agriculture and rapidly changing agricultural landscapes. In this context, the Landsat-Derived Rainfed and Irrigated Area Product at 30 m for the Conterminous United States for the Year 2020 Version 2 (LGRIP30 CONUS 2020 V2) was discussed. Participants highlighted both the scientific advances embodied in the product and the recognition it received through the ASPRS ESRI Award for Best Scientific Paper in GIS.",
+      "body_vi": "Sự chú ý đáng kể đã được dành cho việc phát triển các sản phẩm nông nghiệp 10 mét thế hệ tiếp theo. Các nhà nghiên cứu đã trình bày công việc đang tiến hành về Sản phẩm Mức độ Phổ biến Đất trồng trọt Toàn cầu Phiên bản 2 (GCEP10), nhằm mục đích cải thiện các sản phẩm 30 mét trước đó bằng cách giảm lỗi bỏ sót và lỗi hoa hồng trong khi nắm bắt tốt hơn nông nghiệp hộ tiểu điền bị phân mảnh và cảnh quan nông nghiệp đang thay đổi nhanh chóng. Trong bối cảnh này, Sản phẩm Khu vực Tưới tiêu và Nhờ nước trời Dẫn xuất từ Landsat ở độ phân giải 30m cho Vùng Lục địa Hoa Kỳ Phiên bản 2 (LGRIP30 CONUS 2020 V2) đã được thảo luận. Những người tham gia đã nhấn mạnh cả những tiến bộ khoa học thể hiện trong sản phẩm và sự công nhận mà nó nhận được thông qua Giải thưởng ASPRS ESRI cho Bài báo Khoa học Xuất sắc nhất trong lĩnh vực GIS."
+    },
+    {
+      "body_en": "The workshop also celebrated the release of the Landsat-derived Global Crop Intensity Product (LGCIP30) for 2020. These products quantify single-, double-, triple-, and continuous-cropping patterns across multiple world regions and provide important insights into agricultural intensification and land-use dynamics. Results from Brazil, southwestern South America, North America, and Africa demonstrated encouraging classification accuracies while also revealing important challenges associated with annual agricultural change, validation datasets, and temporal transferability of machine-learning models.",
+      "body_vi": "Hội thảo cũng kỷ niệm việc phát hành Sản phẩm Cường độ Cây trồng Toàn cầu Dẫn xuất từ Landsat (LGCIP30) cho năm 2020. Các sản phẩm này định lượng các mô hình trồng đơn, trồng kép, trồng ba và trồng liên tục trên nhiều khu vực trên thế giới và cung cấp những hiểu biết quan trọng về cường độ hóa nông nghiệp và động lực sử dụng đất. Kết quả từ Brazil, Tây Nam Nam Mỹ, Bắc America và Châu Phi đã chứng minh độ chính xác phân loại đáng khích lệ đồng thời hé lộ những thách thức quan trọng liên quan đến sự thay đổi nông nghiệp hàng năm, các tập dữ liệu xác thực và khả năng chuyển giao theo thời gian của các mô hình học máy."
+    },
+    {
+      "body_en": "[p:Africa emerged as a major focus area] for advancing agricultural mapping from 30-meter to 10-meter resolution through the use of AI-derived Google DeepMind AlphaEarth Foundation (AEF) data. Researchers highlighted efforts to synthesize multiple existing cropland products, quantify mapping uncertainties, and develop AI-assisted classifications using AlphaEarth embeddings and machine-learning approaches. Two major Africa products were completed and presented: (1) the AlphaEarth Foundation Derived Global Cropland Extent Product at 10 m for Africa for the Year 2020 Version 2 (AEF-GCEP10 Africa 2020 V2), and (2) the AlphaEarth Foundation Derived Global Rainfed and Irrigated Cropland Product at 10 m for Africa for the Year 2020 Version 2 (AEFGRIP10 Africa 2020 V2).",
+      "body_vi": "Châu Phi nổi lên như một khu vực trọng điểm lớn để thúc đẩy việc lập bản đồ nông nghiệp từ độ phân giải 30 mét lên 10 mét thông qua việc sử dụng dữ liệu Nền tảng AlphaEarth (AEF) do trí tuệ nhân tạo dẫn xuất. Các nhà nghiên cứu nhấn mạnh những nỗ lực tổng hợp nhiều sản phẩm đất trồng trọt hiện có, định lượng độ bất định trong lập bản đồ và phát triển các phân loại hỗ trợ bởi trí tuệ nhân tạo sử dụng các lớp nhúng AlphaEarth và phương pháp học máy. Hai sản phẩm lớn của Châu Phi đã hoàn thành và được trình bày: (1) Sản phẩm Mức độ Phổ biến Đất trồng trọt Toàn cầu Dẫn xuất từ Nền tảng AlphaEarth ở độ phân giải 10m cho Châu Phi năm 2020 Phiên bản 2 (AEF-GCEP10 Africa 2020 V2), và (2) Sản phẩm Đất trồng trọt Tưới tiêu và Nhờ nước trời Toàn cầu Dẫn xuất từ Nền tảng AlphaEarth ở độ phân giải 10m cho Châu Phi năm 2020 Phiên bản 2 (AEFGRIP10 Africa 2020 V2)."
+    },
+    {
+      "body_en": "These efforts are laying the foundation for globally consistent 10-meter cropland, irrigated-area, and rainfed-area products by integrating existing datasets, AI-derived embeddings, cloud computing, machine learning, and rigorous validation approaches. Results from Africa demonstrated the strong potential of these methods for improving agricultural and water-use assessments, particularly in regions dominated by fragmented smallholder farming systems.",
+      "body_vi": "Những nỗ lực này đang đặt nền móng cho các sản phẩm đất trồng trọt, khu vực tưới tiêu và khu vực nhờ nước trời 10 mét có tính nhất quán toàn cầu bằng cách tích hợp các tập dữ liệu hiện có, các lớp nhúng do trí tuệ nhân tạo dẫn xuất, điện toán đám mây, học máy và các phương pháp xác thực nghiêm ngặt. Kết quả từ Châu Phi đã chứng minh tiềm năng mạnh mẽ của các phương pháp này trong việc cải thiện các đánh giá về nông nghiệp và sử dụng nước, đặc biệt là ở các khu vực bị chi phối bởi các hệ thống canh tác tiểu điền bị phân mảnh."
+    },
+    {
+      "body_en": "South Asia emerged as another major focus area. Presentations detailed the development of SouthAsiaCEP10 and SAIR10 products, which use AlphaEarth embeddings, Sentinel imagery, and advanced machine-learning methods to map cropland extent and distinguish irrigated from rainfed agriculture at 10-meter resolution. Researchers highlighted the challenges of irrigation mapping in South Asia, including monsoon cloud cover, mixed cropping systems, paddy rice cultivation, fragmented farm ownership, seasonal irrigation practices, and highly heterogeneous agricultural landscapes. Preliminary results indicate substantial improvements in identifying cropland and irrigation patterns while reducing uncertainties associated with earlier 30-meter products.",
+      "body_vi": "Nam Á nổi lên như một khu vực trọng điểm lớn khác. Các bài thuyết trình chi tiết về việc phát triển các sản phẩm SouthAsiaCEP10 và SAIR10, sử dụng các lớp nhúng AlphaEarth, hình ảnh Sentinel và các phương pháp học máy nâng cao để lập bản đồ phạm vi đất trồng trọt và phân biệt nông nghiệp tưới tiêu với nông nghiệp nhờ nước trời ở độ phân giải 10 mét. Các nhà nghiên cứu nhấn mạnh những thách thức của việc lập bản đồ tưới tiêu ở Nam Á, bao gồm mây che phủ mùa gió mùa, hệ thống trồng trọt hỗn hợp, canh tác lúa nước, quyền sở hữu trang trại bị phân mảnh, thực hành tưới tiêu theo mùa và cảnh quan nông nghiệp rất không đồng nhất (*heterogeneous*). Kết quả sơ bộ cho thấy những cải thiện đáng kể trong việc xác định đất trồng trọt và các mô hình tưới tiêu đồng thời giảm bớt những bất định liên quan đến các sản phẩm 30 mét trước đó."
+    },
+    {
+      "body_en": "Another important area highlighted during the workshop was [y:crop water productivity] (CWP), often referred to as \"crop per drop.\" The WGSC team examined methods for integrating field measurements, satellite remote sensing, and evapotranspiration estimates to quantify agricultural productivity relative to water consumed. Studies conducted in California's Central Valley demonstrated the use of PlanetScope, Sentinel-2, Landsat, and OpenET datasets to characterize crop water productivity and estimate potential water savings. Findings indicated that improvements in crop water productivity could lead to substantial [g:agricultural water conservation] while providing a scientific basis for evaluating future water-banking opportunities.",
+      "body_vi": "Một lĩnh vực quan trọng khác được nhấn mạnh trong hội thảo là năng suất nước cây trồng, thường được gọi là \"cây trồng trên mỗi giọt nước\" (*crop per drop*). Nhóm WGSC đã kiểm tra các phương pháp tích hợp các phép đo thực địa, viễn thám vệ tinh và các ước tính thoát hơi nước (*evapotranspiration*) để định lượng năng suất nông nghiệp tương ứng với lượng nước tiêu thụ. Các nghiên cứu được thực hiện tại Thung lũng Trung tâm của California đã chứng minh việc sử dụng các tập dữ liệu PlanetScope, Sentinel-2, Landsat và OpenET để đặc trưng hóa năng suất nước cây trồng và ước tính tiềm năng tiết kiệm nước. Các phát hiện chỉ ra rằng những cải thiện về năng suất nước cây trồng có thể dẫn đến việc bảo tồn nước nông nghiệp đáng kể đồng thời cung cấp cơ sở khoa học để đánh giá các cơ hội ngân hàng nước trong tương lai."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/centers/western-geographic-science-center/news/global-food-and-water-security-support-analysis-0"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images-assets.nasa.gov/image/NHQ202211040038/NHQ202211040038~medium.jpg",
+    "provider": "nasa",
+    "author": "NASA/Keegan Barber",
+    "license": "Public domain (NASA)",
+    "sourceUrl": "https://images.nasa.gov/details/NHQ202211040038"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/NHQ202211040038/NHQ202211040038~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA/Keegan Barber",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/NHQ202211040038"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/NHQ202211040027/NHQ202211040027~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA/Keegan Barber",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/NHQ202211040027"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/NHQ202211040030/NHQ202211040030~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA/Keegan Barber",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/NHQ202211040030"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/NHQ202211040040/NHQ202211040040~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA/Keegan Barber",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/NHQ202211040040"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAACwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOmUBcAGuxjlisnsS6syMlGO3WAAP7iRHmVg6FN9FPDfaQ9iEFe+Qva5MbRSOvhWLe/ZJJAf+2F/MB+lS55wattf8nDLXdQMZgkxAbaO5U1ax7//Tq24Oz6exzA6WAcWQnvqK+nSlu/V1bC5hbYCN0Dl8q8QmnWkXJW7+VAvjmUNZyqR7+yM73UTMzatDx8TISSPFkGqBTg4VsobdmPA5E4EKgwyE/KWpiWhqRPL+AA",
+  "dominant": "#48474c",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-the-global-food-and-water-security-support-analysis-data-gfsad-project",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "The Global Food-and-Water Security-support Analysis Data (GFSAD) Project held its 5th Workshop",
+    "originalUrl": "https://www.usgs.gov/centers/western-geographic-science-center/news/global-food-and-water-security-support-analysis-0",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Just as a detailed map helps a traveler navigate uncharted terrain, advanced satellite data and AI provide the clarity needed to manage our planet's food and water resources. How can local communities leverage these global tools to improve their own agricultural planning? [p:Use high-resolution mapping data to support sustainable farming and water conservation in your region.]",
+    "vi": "Giống như một bản đồ chi tiết giúp lữ khách định hướng vùng đất chưa biết, dữ liệu vệ tinh tiên tiến và trí tuệ nhân tạo cung cấp độ rõ nét cần thiết để quản lý tài nguyên lương thực và nước của hành tinh chúng ta. [p:Làm thế nào các cộng đồng địa phương có thể tận dụng các công cụ toàn cầu này để cải thiện kế hoạch nông nghiệp của chính họ?] Hãy sử dụng dữ liệu bản đồ độ phân giải cao để hỗ trợ canh tác bền vững và bảo tồn nước trong khu vực của bạn."
+  },
+  "applySteps": {
+    "en": [
+      "Explore open-source agricultural datasets like GFSAD to analyze local crop patterns.",
+      "Review regional water productivity metrics to identify potential water conservation savings.",
+      "Investigate the use of cloud computing and satellite imagery for monitoring farm sustainability."
+    ],
+    "vi": [
+      "Khám phá các tập dữ liệu nông nghiệp mã nguồn mở như GFSAD để phân tích các mô hình cây trồng địa phương.",
+      "Xem xét các số liệu về năng suất nước trong khu vực để xác định tiềm năng tiết kiệm và bảo tồn nước.",
+      "Nghiên cứu việc sử dụng điện toán đám mây và hình ảnh vệ tính để theo dõi tính bền vững của trang trại."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-25T01:18:59.042Z"
+}

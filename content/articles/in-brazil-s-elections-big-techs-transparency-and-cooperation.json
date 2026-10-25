@@ -1,0 +1,147 @@
+{
+  "slug": "in-brazil-s-elections-big-techs-transparency-and-cooperation",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=in-brazil-s-elections-big-techs-transparency-and-cooperation",
+  "category": "society",
+  "tags": [
+    "brazil elections",
+    "big tech",
+    "social media",
+    "transparency",
+    "artificial intelligence"
+  ],
+  "title": {
+    "en": "In Brazil’s elections, big techs’ transparency and cooperation policies translate as governance washing, according to this expert",
+    "vi": "Trong bầu cử tại Brazil, các chính sách minh bạch và hợp tác của công nghệ lớn chỉ là vỏ bọc, theo chuyên gia này"
+  },
+  "hook": {
+    "en": "Art by Global Voices, created in Canva Pro.",
+    "vi": "Tranh minh họa bởi Global Voices, tạo trên Canva Pro."
+  },
+  "sections": [
+    {
+      "body_en": "Amid a series of corruption scandals, the [y:2026 general election] in Brazil is also flooded with headlines about social media companies’ role in the campaign. Users supporting the candidacy of Luiz Inácio Lula da Silva, the incumbent center-left candidate running for re-election, have been reporting a sudden drop in their Instagram Stories views when posting about politics. They say that Meta AI refused to generate images featuring Lula’s name and party number, while delivering the same request for Flávio Bolsonaro, his far-right opponent and the son of the imprisoned former president Jair Bolsonaro.",
+      "body_vi": "Giữa hàng loạt bê bối tham nhũng, cuộc tổng tuyển cử năm 2026 tại Brazil cũng tràn ngập các tiêu đề báo chí về vai trò của các công ty mạng xã hội trong chiến dịch tranh cử. Những người ủng hộ đương kim ứng viên trung tả Luiz Inácio Lula da Silva tái tranh cử đã báo cáo về việc lượng người xem trên Instagram Stories của họ giảm đột ngột khi đăng bài về chính trị. Họ cho biết Meta AI từ chối tạo hình ảnh có tên và số hiệu đảng của ông Lula, nhưng lại đáp ứng yêu cầu tương tự đối với Flávio Bolsonaro, đối thủ cực hữu và là con trai của cựu tổng thống bị giam giữ Jair Bolsonaro."
+    },
+    {
+      "body_en": "On October 16, Meta admitted [p:technical problems] on its platforms which affected how pro-Lula content was delivered to users. As reported by the Associated Press, despite acknowledging “global technical glitches, strict anti-fraud measures, and regulatory compliance rather than targeted suppression,” the company that owns Instagram, WhatsApp and Facebook denied any political bias.\n\nLula filed a complaint against Meta accusing the company of using biased algorithms and AI restrictions to favor Bolsonaro in the run-up to the election, with a judge from the country’s top electoral court ruling that Meta must adopt measures to ensure equal treatment.",
+      "body_vi": "Vào ngày 16 tháng 10, Meta đã thừa nhận các vấn đề kỹ thuật trên nền tảng của mình, gây ảnh hưởng đến cách nội dung ủng hộ ông Lula được phân phối đến người dùng. Theo Associated Press, dù thừa nhận \"các trục trặc kỹ thuật toàn cầu, biện pháp chống gian lận nghiêm ngặt và tuân thủ quy định thay vì có ý đồ ngăn chặn có chủ đích\", công ty sở hữu Instagram, WhatsApp và Facebook vẫn phủ nhận mọi thiên kiến chính trị (*political bias*).\n\nÔng Lula đã đệ đơn kiện Meta, cáo buộc công ty này sử dụng các thuật toán thiên vị (*biased algorithms*) và các hạn chế AI nhằm ưu ái ông Bolsonaro trước thềm bầu cử. Một thẩm phán thuộc tòa án tối cao bầu cử của nước này đã phán quyết rằng Meta phải áp dụng các biện pháp đảm bảo đối xử công bằng."
+    },
+    {
+      "body_en": "With an estimated population of [y:214 million], Brazil is an important market for social media platforms. It ranks as the second country by number of WhatsApp users and saw the internet become a key component of Jair Bolsonaro’s ascent around 10 years ago.\n\nTo understand the current election scenario, Global Voices spoke to Nicole Sanchotene, project coordinator at NetLab, a research laboratory at Rio de Janeiro’s Federal University (UFRJ) that has been publishing reports on the impact of big tech on the electoral campaign. The conversation has been edited for length and clarity.\n\n**Global Voices: What have you identified in NetLab’s recent reports about the elections?**",
+      "body_vi": "Với ước tính dân số 214 triệu người, Brazil là một thị trường quan trọng đối với các nền tảng mạng xã hội. Nước này đứng thứ hai về số lượng người dùng WhatsApp và từng chứng kiến internet trở thành yếu tố cốt lõi trong sự trỗi dậy của Jair Bolsonaro khoảng 10 năm trước.\n\nĐể hiểu rõ hơn về tình hình bầu cử hiện tại, Global Voices đã phỏng vấn Nicole Sanchotene, điều phối viên dự án tại NetLab – một phòng thí nghiệm nghiên cứu thuộc Đại học Liên bang Rio de Janeiro (UFRJ) chuyên công bố các báo cáo về tác động của các công ty công nghệ lớn đối với chiến dịch tranh cử. Cuộc trò chuyện đã được biên tập để ngắn gọn và dễ hiểu hơn.\n\n**Global Voices: Các chị đã xác định được những gì trong các báo cáo gần đây của NetLab về cuộc bầu cử?**"
+    },
+    {
+      "body_en": "**Nicole Sanchotene:** É muito difícil avaliar o impacto e os possíveis efeitos para a disputa eleitoral e para a percepção das pessoas. O problema central que a gente tem apontado é sobre transparência, uma certa normalização de possíveis ilícitos eleitorais, pontos que são consenso na resolução do TSE (Tribunal Superior Eleitoral) e não estamos vendo cumprimento pleno das plataformas. O Kwai, que é uma plataforma com ampla adesão no Brasil, tem mais de 60 milhões de usuários, é bastante usado pelas classes C e D, fez uma parceria com o TSE e não está adequado. Não atende a requisitos básicos, a biblioteca de anúncios político-eleitorais tem falhas no tipo de dado que entrega. A gente tem chamado essas práticas de [p:transparência de fachada].",
+      "body_vi": "**Nicole Sanchotene:** Thật rất khó để đánh giá tác động và những hệ lụy có thể xảy ra đối với cuộc đua bầu cử cũng như nhận thức của người dân. Vấn đề cốt lõi mà chúng tôi chỉ ra là sự minh bạch, sự bình thường hóa nhất định đối với các hành vi vi phạm bầu cử tiềm ẩn – những điểm vốn đã đạt được đồng thuận trong nghị quyết của TSE (Tòa án Tối cao Bầu cử) nhưng chúng tôi lại không thấy các nền tảng tuân thủ đầy đủ. Kwai, một nền tảng có độ phủ sóng rộng rãi tại Brazil với hơn 60 triệu người dùng và được sử dụng nhiều bởi tầng lớp C và D, đã hợp tác với TSE nhưng vẫn chưa đạt chuẩn. Nền tảng này không đáp ứng các yêu cầu cơ bản; thư viện quảng cáo chính trị - bầu cử của họ có nhiều lỗi về dữ liệu cung cấp. Chúng tôi gọi những thực tiễn này là [p:transparência de fachada] (sự minh bạch bề ngoài)."
+    },
+    {
+      "body_en": "Cada uma das plataformas tem um problema específico. Seja por dados incompletos, seja pela veiculação ou recomendação de conteúdo que não deveria ser recomendado. O que a gente vê é que elas não estão respeitando plenamente o que é exigido pelas [y:normas brasileiras] para garantir um mínimo de condições de igualdade para os candidatos, condições que permitam um ambiente de informação, de propaganda, seguro para os usuários e para a disputa eleitoral.",
+      "body_vi": "Mỗi nền tảng đều gặp phải một vấn đề cụ thể. Dù là do thiếu hụt dữ liệu, hay do việc phát tán và đề xuất nội dung lẽ ra không nên được đề xuất. Những gì chúng tôi nhìn thấy là họ không tuân thủ đầy đủ các [y:normas brasileiras] (quy định của Brazil) nhằm đảm bảo các điều kiện tối thiểu về sự bình đẳng cho các ứng viên, những điều kiện cho phép duy trì một môi trường thông tin và tuyên truyền an toàn cho người dùng cũng như cho cuộc đua bầu cử."
+    },
+    {
+      "body_en": "**Nicole Sanchotene:** É muito difícil avaliar o impacto e os possíveis efeitos para a disputa eleitoral e para a percepção das pessoas. O problema central que a gente tem apontado é sobre transparência, uma certa normalização de possíveis ilícitos eleitorais, pontos que são consenso na resolução do TSE (Tribunal Superior Eleitoral) e não estamos vendo cumprimento pleno das plataformas.\n\nO Kwai, que é uma plataforma com ampla adesão no Brasil, tem mais de 60 milhões de usuários, é bastante usado pelas classes C e D, fez uma parceria com o TSE e não está adequado. Não atende a requisitos básicos, a biblioteca de anúncios político-eleitorais tem falhas no tipo de dado que entrega. A gente tem chamado essas práticas de [p:transparência de fachada].",
+      "body_vi": "**Nicole Sanchotene:** Thật rất khó để đánh giá tác động và những hệ lụy có thể xảy ra đối với cuộc đua bầu cử cũng như nhận thức của người dân. Vấn đề cốt lõi mà chúng tôi chỉ ra là sự minh bạch, sự bình thường hóa nhất định đối với các hành vi vi phạm bầu cử tiềm ẩn – những điểm vốn đã đạt được đồng thuận trong nghị quyết của TSE (Tòa án Tối cao Bầu cử) nhưng chúng tôi lại không thấy các nền tảng tuân thủ đầy đủ.\n\nKwai, một nền tảng có độ phủ sóng rộng rãi tại Brazil với hơn 60 triệu người dùng và được sử dụng nhiều bởi tầng lớp C và D, đã hợp tác với TSE nhưng vẫn chưa đạt chuẩn. Nền tảng này không đáp ứng các yêu cầu cơ bản; thư viện quảng cáo chính trị - bầu cử của họ có nhiều lỗi về dữ liệu cung cấp. Chúng tôi gọi những thực tiễn này là [p:transparência de fachada] (sự minh bạch bề ngoài)."
+    },
+    {
+      "body_en": "Cada uma das plataformas tem um problema específico. Seja por dados incompletos, seja pela veiculação ou recomendação de conteúdo que não deveria ser recomendado. O que a gente vê é que elas não estão respeitando plenamente o que é exigido pelas [y:normas brasileiras] para garantir um mínimo de condições de igualdade para os candidatos, condições que permitam um ambiente de informação, de propaganda, seguro para os usuários e para a disputa eleitoral.",
+      "body_vi": "Mỗi nền tảng đều gặp phải một vấn đề cụ thể. Dù là do thiếu hụt dữ liệu, hay do việc phát tán và đề xuất nội dung lẽ ra không nên được đề xuất. Những gì chúng tôi nhìn thấy là họ không tuân thủ đầy đủ các [y:normas brasileiras] (quy định của Brazil) nhằm đảm bảo các điều kiện tối thiểu về sự bình đẳng cho các ứng viên, những điều kiện cho phép duy trì một môi trường thông tin và tuyên truyền an toàn cho người dùng cũng như cho cuộc đua bầu cử."
+    },
+    {
+      "body_en": "**Nicole Sanchotene:** It’s hard to evaluate the impact and possible effects on the running and on people’s perception. The central issue that we’ve been pointing to is transparency, a certain normalization of possible illicit electoral practices, issues that were agreed upon in the TSE \\[Superior Electoral Court, Brazil's top electoral court\\] resolution, and we are not seeing the platforms comply fully. Kwai, a platform with widespread adoption in Brazil, with over 60 million users and largely used by “C and D classes” \\[lower income groups and the basis of the socio-economic pyramid\\], partnered with the electoral court, and it’s not suitable yet. It doesn't meet basic requirements; their library for political-electoral ads has flaws in the data delivered. We have been calling this a ‘[p:façade of transparency].’",
+      "body_vi": "**Nicole Sanchotene:** Thật khó để đánh giá tác động và những hệ lụy có thể xảy ra đối với cuộc đua và nhận thức của người dân. Vấn đề trung tâm mà chúng tôi đã chỉ ra là sự minh bạch, sự bình thường hóa nhất định đối với các hành vi vi phạm bầu cử tiềm ẩn – những vấn đề đã được đồng thuận trong nghị quyết của TSE [Tòa án Tối cao Bầu cử, tòa án bầu cử hàng đầu của Brazil], và chúng tôi không thấy các nền tảng tuân thủ đầy đủ. Kwai, một nền tảng được áp dụng rộng rãi tại Brazil với hơn 60 triệu người dùng và được sử dụng chủ yếu bởi \"tầng lớp C và D\" [các nhóm thu nhập thấp và là nền tảng của kim tự tháp kinh tế xã hội], đã hợp tác với tòa án bầu cử, nhưng vẫn chưa phù hợp. Nền tảng này không đáp ứng các yêu cầu cơ bản; thư viện quảng cáo chính trị - bầu cử của họ có lỗi về dữ liệu được cung cấp. Chúng tôi gọi đây là [p:façade of transparency] (vỏ bọc minh bạch)."
+    },
+    {
+      "body_en": "Each platform has a [y:specific issue]. Incomplete data, the publishing or recommendation of content that shouldn't be recommended. What we are seeing is that they are not fully abiding by Brazilian norms to guarantee minimum conditions of equality for the candidates, nor conditions that allow an information and publicty environment safe for users and the electoral running itself.\n\n**Nicole Sanchotene:** It’s hard to evaluate the impact and possible effects on the running and on people’s perception. The central issue that we’ve been pointing to is transparency, a certain normalization of possible illicit electoral practices, issues that were agreed upon in the TSE \\[Superior Electoral Court, Brazil's top electoral court\\] resolution, and we are not seeing the platforms comply fully.",
+      "body_vi": "Mỗi nền tảng có một vấn đề cụ thể. Dữ liệu không đầy đủ, việc công bố hoặc đề xuất nội dung không nên được khuyến khích. Những gì chúng tôi đang thấy là họ không tuân thủ đầy đủ các quy định của Brazil để đảm bảo các điều kiện tối thiểu về sự bình đẳng cho các ứng viên, hay các điều kiện cho phép một môi trường thông tin và công khai an toàn cho người dùng và chính cuộc đua bầu cử.\n\n**Nicole Sanchotene:** Thật khó để đánh giá tác động và những hệ lụy có thể xảy ra đối với cuộc đua và nhận thức của người dân. Vấn đề trung tâm mà chúng tôi đã chỉ ra là sự minh bạch, sự bình thường hóa nhất định đối với các hành vi vi phạm bầu cử tiềm ẩn – những vấn đề đã được đồng thuận trong nghị quyết của TSE [Tòa án Tối cao Bầu cử, tòa án bầu cử hàng đầu của Brazil], và chúng tôi không thấy các nền tảng tuân thủ đầy đủ."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Global Voices (2026)",
+      "url": "https://globalvoices.org/2026/10/24/in-brazils-elections-big-techs-transparency-and-cooperation-policies-translate-as-governance-washing-according-to-this-expert"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/331/1080/1920",
+    "provider": "unsplash",
+    "author": "Thong Vo",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/331/1080/1920",
+      "provider": "unsplash",
+      "author": "Thong Vo",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/576/1080/1920",
+      "provider": "unsplash",
+      "author": "Steven Lewis",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/dmHnXJ-5ilQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/382/1080/1920",
+      "provider": "unsplash",
+      "author": "RayBay",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoQABwAPu1iqk2ppaQiMAgBMB2JaQAAUl+qFo7YaAu2HXwAAP7xEpIgJXDwgd/HCdqLY8XPk+f4xIpC86PzT0qx4WLxhrPYKPtLOO5etqFAhKZMOjmzGUIXj+z9MY0C+4+vZMNM69n73iPBXkv1Mpu8XOr1CrsWfO8ex4AZbvsRyjWfiNbHQiuvEKAAAA==",
+  "dominant": "#414444",
+  "origin": {
+    "group": 1,
+    "sourceId": "globalvoices-org-in-brazil-s-elections-big-techs-transparency-and-cooperation-po",
+    "license": "CC-BY-3.0",
+    "authors": [
+      "Fernanda Canofre"
+    ],
+    "originalTitle": "In Brazil’s elections, big techs’ transparency and cooperation policies translate as governance washing, according to this expert",
+    "originalUrl": "https://globalvoices.org/2026/10/24/in-brazils-elections-big-techs-transparency-and-cooperation-policies-translate-as-governance-washing-according-to-this-expert",
+    "publisher": "Global Voices",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Big tech companies act like a polished storefront hiding an empty shop when they promise cooperation while failing basic rules. How can users hold social media algorithms accountable during crucial democratic votes?",
+    "vi": "Các công ty công nghệ lớn giống như một mặt tiền bóng bẩy che giấu cửa hàng trống rỗng khi họ hứa hẹn hợp tác nhưng lại phớt lờ các quy tắc cơ bản. Làm thế nào người dùng có thể bắt các thuật toán mạng xã hội phải chịu trách nhiệm trong các cuộc bỏ phiếu dân chủ quan trọng?"
+  },
+  "applySteps": {
+    "en": [
+      "Check official political advertising libraries on social media platforms for data transparency.",
+      "Report suspicious algorithmic behavior or content suppression during election cycles.",
+      "Verify information from multiple independent news sources to avoid platform bias."
+    ],
+    "vi": [
+      "Kiểm tra thư viện quảng cáo chính trị chính thức trên các nền tảng mạng xã hội để xem tính minh bạch của dữ liệu.",
+      "Báo cáo hành vi thuật toán đáng ngờ hoặc tình trạng chặn nội dung trong chu kỳ bầu cử.",
+      "Xác minh thông tin từ nhiều nguồn tin độc lập để tránh thiên kiến từ nền tảng."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-25T01:22:59.042Z"
+}
