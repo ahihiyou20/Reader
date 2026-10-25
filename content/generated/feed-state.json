@@ -20,15 +20,30 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/universe-dark-energy"
     },
+    "https://bigthink.com/starts-with-a-bang/invisibility-cloak-183582": {
+      "at": "2026-10-25T01:15:29.637Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/invisibility-cloak-183582"
+    },
     "https://bigthink.com/starts-with-a-bang/solve-mysteries-largest-black-holes": {
       "at": "2026-10-23T16:47:55.482Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/solve-mysteries-largest-black-holes"
     },
+    "https://bigthink.com/starts-with-a-bang/stellar-streams-dark-universe": {
+      "at": "2026-10-25T01:14:29.174Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/stellar-streams-dark-universe"
+    },
     "https://bigthink.com/strange-maps/roman-road-networks": {
       "at": "2026-10-24T01:44:24.071Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/strange-maps/roman-road-networks"
+    },
+    "https://en.wikipedia.org/wiki/Ancient_Cappadocian_language": {
+      "at": "2026-10-25T01:15:13.925Z",
+      "feed": "wikipedia-featured",
+      "slug": "ancient-cappadocian-language"
     },
     "https://en.wikipedia.org/wiki/Easy_on_Me": {
       "at": "2026-10-23T17:01:00.184Z",
@@ -40,10 +55,20 @@
       "feed": "wikipedia-featured",
       "slug": "french-battleship-brennus"
     },
+    "https://en.wikipedia.org/wiki/London_Monster": {
+      "at": "2026-10-25T01:15:55.322Z",
+      "feed": "wikipedia-featured",
+      "slug": "london-monster"
+    },
     "https://en.wikipedia.org/wiki/RAAF_area_commands": {
       "at": "2026-10-23T16:56:46.998Z",
       "feed": "wikipedia-featured",
       "slug": "raaf-area-commands"
+    },
+    "https://en.wikipedia.org/wiki/The_Demi-Virgin": {
+      "at": "2026-10-25T01:13:23.421Z",
+      "feed": "wikipedia-featured",
+      "slug": "the-demi-virgin"
     },
     "https://en.wikipedia.org/wiki/The_Hunger_(collection)": {
       "at": "2026-10-24T01:40:16.821Z",
@@ -60,6 +85,11 @@
       "feed": "global-voices",
       "slug": "venezuela-faces-a-deepening-energy-crisis-as-protests-grow"
     },
+    "https://globalvoices.org/2026/10/22/what-telecoms-leave-behind-when-they-exit-a-country": {
+      "at": "2026-10-25T01:15:49.503Z",
+      "feed": "global-voices",
+      "slug": "what-telecoms-leave-behind-when-they-exit-a-country"
+    },
     "https://globalvoices.org/2026/10/23/complementary-forces-why-activism-needs-art-to-drive-action": {
       "at": "2026-10-23T16:56:37.275Z",
       "feed": "global-voices",
@@ -74,6 +104,16 @@
       "at": "2026-10-23T16:58:34.665Z",
       "feed": "global-voices",
       "slug": "independent-journalism-under-siege-in-georgia"
+    },
+    "https://globalvoices.org/2026/10/24/big-tech-and-authoritarian-states-belarus": {
+      "at": "2026-10-25T01:13:17.492Z",
+      "feed": "global-voices",
+      "slug": "big-tech-and-authoritarian-states-belarus"
+    },
+    "https://globalvoices.org/2026/10/24/in-brazils-elections-big-techs-transparency-and-cooperation-policies-translate-as-governance-washing-according-to-this-expert": {
+      "at": "2026-10-25T01:14:54.944Z",
+      "feed": "global-voices",
+      "slug": "in-brazil-s-elections-big-techs-transparency-and-cooperation"
     },
     "https://knowablemagazine.org/content/article/health-disease/2026/rise-in-aging-doctors-spurs-questions-patient-safety": {
       "at": "2026-10-23T16:48:54.039Z",
@@ -105,6 +145,11 @@
       "feed": "nautilus",
       "slug": "forensic-experts-identify-people-using-only-one-or-two-facia"
     },
+    "https://nautil.us/how-multiple-births-can-accelerate-a-mothers-biological-age-1286063": {
+      "at": "2026-10-25T01:14:29.135Z",
+      "feed": "nautilus",
+      "slug": "how-multiple-births-accelerate-biological-aging-in-mothers"
+    },
     "https://nautil.us/ice-age-europeans-were-more-connected-than-we-thought-1286066": {
       "at": "2026-10-24T01:44:23.991Z",
       "feed": "nautilus",
@@ -124,6 +169,11 @@
       "at": "2026-10-23T16:47:06.483Z",
       "feed": "nautilus",
       "error": "Only 151 words readable (paywall or script-only page?)"
+    },
+    "https://nautil.us/was-this-the-exact-date-of-van-goghs-starry-night-1286057": {
+      "at": "2026-10-25T01:15:29.593Z",
+      "feed": "nautilus",
+      "slug": "decoding-the-exact-date-of-van-gogh-s-starry-night"
     },
     "https://ourworldindata.org/when-do-people-experience-mental-health-conditions-for-the-first-time": {
       "at": "2026-10-23T16:55:53.801Z",
@@ -145,6 +195,11 @@
       "feed": "psyche",
       "slug": "why-romantic-relationships-matter-more-to-men-than-women"
     },
+    "https://psyche.co/notes-to-self/why-sunlight-is-vital-to-our-physical-and-mental-health": {
+      "at": "2026-10-25T01:14:17.711Z",
+      "feed": "psyche",
+      "slug": "revisiting-the-sun-why-moderate-exposure-may-benefit-health"
+    },
     "https://psyche.co/turning-points/why-i-wrote-mad-letters-to-celebrities-on-my-mothers-behalf": {
       "at": "2026-10-24T01:40:30.157Z",
       "feed": "psyche",
@@ -154,6 +209,26 @@
       "at": "2026-10-23T16:47:28.645Z",
       "feed": "psyche",
       "error": "Only 151 words readable (paywall or script-only page?)"
+    },
+    "https://psyche.co/videos/i-take-silly-very-seriously-a-kinetic-sculptors-credo-of-creation": {
+      "at": "2026-10-25T01:14:55.157Z",
+      "feed": "psyche",
+      "error": "Only 192 words readable (paywall or script-only page?)"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-26-oct-2026": {
+      "at": "2026-10-25T01:13:02.013Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-2-nov-2026": {
+      "at": "2026-10-25T01:15:00.072Z",
+      "feed": "nasa-science",
+      "slug": "galaxies-sig-seminar-2-nov-2026"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/hwo-sig-seminar-28-oct-2026": {
+      "at": "2026-10-25T01:14:40.719Z",
+      "feed": "nasa-science",
+      "error": "Only 17 words of text found"
     },
     "https://science.nasa.gov/blogs/swift/2026/10/23/nasas-swift-mission-ends-ahead-of-re-entry": {
       "at": "2026-10-24T01:41:31.997Z",
@@ -165,10 +240,20 @@
       "feed": "nasa-science",
       "slug": "el-nino-then-and-now"
     },
+    "https://theconversation.com/a-critical-flaw-affecting-70-of-all-websites-has-the-cybersecurity-world-panicked-294941": {
+      "at": "2026-10-25T01:14:46.906Z",
+      "feed": "conversation",
+      "slug": "a-critical-flaw-affecting-70-of-all-websites-has-the-cyberse"
+    },
     "https://theconversation.com/americas-death-penalty-why-executions-are-rising-again-294709": {
       "at": "2026-10-23T16:58:54.393Z",
       "feed": "conversation",
       "slug": "america-s-death-penalty-why-executions-are-rising-again"
+    },
+    "https://theconversation.com/from-elite-spies-to-gig-economy-operatives-the-changing-face-of-russian-sabotage-294285": {
+      "at": "2026-10-25T01:13:08.247Z",
+      "feed": "conversation",
+      "slug": "from-elite-spies-to-gig-economy-operatives-the-changing-face"
     },
     "https://theconversation.com/hokusais-great-wave-is-one-of-46-prints-of-mount-fuji-seeing-them-together-changes-everything-294801": {
       "at": "2026-10-24T01:41:11.473Z",
@@ -189,6 +274,11 @@
       "at": "2026-10-23T16:56:11.077Z",
       "feed": "conversation",
       "slug": "the-crucible-arthur-miller-s-morality-tale-was-as-much-a-rea"
+    },
+    "https://theconversation.com/the-problem-with-shane-gilliss-joke-isnt-just-sexism-its-sex-work-stigma-294529": {
+      "at": "2026-10-25T01:15:06.229Z",
+      "feed": "conversation",
+      "slug": "the-problem-with-shane-gillis-s-joke-isn-t-just-sexism-it-s"
     },
     "https://theconversation.com/unlocking-the-secrets-of-the-dragon-man-skull-and-what-it-reveals-about-human-evolution-291321": {
       "at": "2026-10-23T16:46:44.321Z",
@@ -225,6 +315,11 @@
       "feed": "nasa-science",
       "slug": "chapea-2-audio-log-4"
     },
+    "https://www.npr.org/2026/10/22/nx-s1-6010506/5-simple-ways-to-relieve-the-aches-and-pains-of-sitting-at-a-desk-all-day": {
+      "at": "2026-10-25T01:15:35.804Z",
+      "feed": "npr-health",
+      "slug": "simple-ways-to-relieve-desk-job-discomfort"
+    },
     "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak": {
       "at": "2026-10-24T01:40:49.328Z",
       "feed": "npr-health",
@@ -240,6 +335,11 @@
       "feed": "npr-health",
       "slug": "how-a-say-no-retreat-can-reclaim-your-time"
     },
+    "https://www.npr.org/2026/10/24/nx-s1-6014612/medicare-advantage-open-enrollment-cancelled-plan": {
+      "at": "2026-10-25T01:14:34.366Z",
+      "feed": "npr-health",
+      "slug": "millions-lose-medicare-advantage-as-insurers-quit-markets"
+    },
     "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019": {
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
@@ -249,6 +349,11 @@
       "at": "2026-10-24T01:44:19.152Z",
       "feed": "quanta",
       "slug": "why-artificial-intelligence-benchmarks-are-broken-and-how-to"
+    },
+    "https://www.quantamagazine.org/how-do-fungi-keep-the-planet-healthy-20261015": {
+      "at": "2026-10-25T01:14:23.871Z",
+      "feed": "quanta",
+      "slug": "the-hidden-underground-networks-that-power-our-planet"
     },
     "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023": {
       "at": "2026-10-23T16:57:05.140Z",
@@ -275,10 +380,25 @@
       "feed": "sciencedaily",
       "slug": "japan-s-underwater-supervolcano-is-slowly-refilling-with-fre"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261023023734.htm": {
+      "at": "2026-10-25T01:15:42.801Z",
+      "feed": "sciencedaily",
+      "slug": "nasa-s-asteroid-samples-reveal-ancient-solar-system-secrets"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261023023738.htm": {
+      "at": "2026-10-25T01:14:38.891Z",
+      "feed": "sciencedaily",
+      "slug": "hidden-safety-bias-in-language-challenges-decades-of-science"
+    },
     "https://www.usgs.gov/centers/eesc/news/usgs-eastern-ecological-science-center-2026-society-environmental-toxicology-and": {
       "at": "2026-10-24T01:44:13.224Z",
       "feed": "usgs",
       "error": "Unterminated string in JSON at position 273752 (line 2 column 273751)"
+    },
+    "https://www.usgs.gov/centers/western-geographic-science-center/news/global-food-and-water-security-support-analysis-0": {
+      "at": "2026-10-25T01:15:24.175Z",
+      "feed": "usgs",
+      "slug": "the-global-food-and-water-security-support-analysis-data-gfs"
     },
     "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-kilauea-summit-monitoring-overflight-8": {
       "at": "2026-10-24T01:40:24.424Z",
@@ -294,6 +414,11 @@
       "at": "2026-10-23T16:56:49.709Z",
       "feed": "usgs",
       "slug": "volcano-watch-a-look-back-at-recent-kilauea-eruptions-and-in"
+    },
+    "https://www.usgs.gov/programs/climate-adaptation-science-centers/news/summer-drought-may-increase-human-bear": {
+      "at": "2026-10-25T01:14:12.315Z",
+      "feed": "usgs",
+      "slug": "summer-drought-may-increase-human-bear-interactions"
     }
   }
 }
