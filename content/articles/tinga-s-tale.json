@@ -1,0 +1,121 @@
+{
+  "slug": "tinga-s-tale",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=tinga-s-tale",
+  "category": "science",
+  "tags": [
+    "mars",
+    "geology",
+    "rover",
+    "space"
+  ],
+  "title": {
+    "en": "Tinga’s Tale",
+    "vi": "Câu chuyện của Tinga"
+  },
+  "hook": {
+    "en": "Mars 2020 Mission Team Members\n\nOct 26, 2026\n\nArticle\n\nWritten by Margaret Deahn, Ph.D. candidate at Purdue University\n\nOct. 19, 2026",
+    "vi": "Thành viên Nhóm Sứ mệnh Mars 2020\n\nNgày 26 tháng 10 năm 2026\n\nBài viết\n\nĐược viết bởi Margaret Deahn, nghiên cứu sinh tại Đại học Purdue\n\nNgày 19 tháng 10 năm 2026"
+  },
+  "sections": [
+    {
+      "body_en": "Once upon a time, NASA’s Mars 2020 rover investigated the southern border of “Idubi,” an outcrop composed primarily of an [y:igneous mineral] geologists call olivine. The rover’s “eyes” captured a very exciting geologic feature during its traverse — a contact between distinct rock types that could tell a story about the history of this region. This contact is clearly observed at a target named “Tinga.”",
+      "body_vi": "Ngày xửa ngày xưa, xe tự hành Mars 2020 của NASA đã khảo sát biên giới phía nam của \"Idubi\", một thể lộ đá bao gồm chủ yếu là một khoáng vật mác-ma (*[y:igneous mineral]*) mà các nhà địa chất gọi là olivin. Đôi mắt của xe tự hành đã ghi lại một đặc điểm địa chất rất thú vị trong hành trình di chuyển của nó — một điểm tiếp xúc giữa các loại đá khác nhau có thể kể câu chuyện về lịch sử của vùng này. Điểm tiếp xúc này được quan sát rõ ràng tại một mục tiêu có tên là \"Tinga\"."
+    },
+    {
+      "body_en": "At “Tinga,” there are distinct geologic units in close contact with one another. The lowermost unit is likely a polymict (made of many types of rocks) [p:breccia] (made of angular clasts). Breccia is generally formed by violent geologic processes such as an impact event — this breccia may have been formed by an impact similar to the one that created Jezero crater — or even Jezero itself! See a recent rover blog post for more information on the potential breccia in this region.\n\nHowever, breccia is only the first chapter in the story of our target “Tinga.”",
+      "body_vi": "Tại \"Tinga\", có các đơn vị địa chất riêng biệt tiếp xúc gần gũi với nhau. Đơn vị thấp nhất có thể là đá dăm kết (*[p:breccia]*) hỗn hợp được cấu thành từ nhiều loại đá với các mảnh góc cạnh. Dăm kết thường hình thành bởi các quá trình địa chất bạo lực như một sự kiện va chạm — dăm kết này có thể được hình thành bởi một vụ va chạm tương tự như vụ đã tạo ra miệng cất Jezero — hoặc thậm chí là chính Jezero! Xem một bài đăng blog gần đây của xe tự hành để biết thêm thông tin về dăm kết tiềm năng trong khu vực này. Tuy nhiên, dăm kết chỉ là chương đầu tiên trong câu chuyện về mục tiêu \"Tinga\" của chúng ta."
+    },
+    {
+      "body_en": "The higher-standing, dark rocks could be associated with the nearby [y:olivine-bearing unit] at “Idubi,” which also appears to extend onto the plains beyond the Jezero crater rim. These dark rocks at “Tinga” may be part of this olivine-bearing unit, or they may represent a part of the breccia that was heated, or “baked,” when it came in contact with the hot rocks of “Idubi.” Further in situ investigation of this particular outcrop is needed to determine how the high-standing rocks we observe at this contact are related to this broader unit.\n\n“Tinga” tells a tale about distinct geologic events that occurred just outside Jezero’s crater rim, and the Mars 2020 rover will continue to reveal Jezero’s origin story and exciting geologic history.",
+      "body_vi": "Các lớp đá sẫm màu cao hơn có thể liên quan đến đơn vị chứa olivin (*[y:olivine-bearing unit]*) ở gần đó tại \"Idubi\", đơn vị này cũng dường như mở rộng ra các vùng đồng bằng ngoài vành miệng hố Jezero. Những lớp đá sẫm màu này tại \"Tinga\" có thể là một phần của đơn vị chứa olivin này, hoặc chúng có thể đại diện cho một phần của dăm kết đã được nung nóng hoặc nung chín khi tiếp xúc với các lớp đá nóng của \"Idubi\". Cần có thêm cuộc điều tra tại chỗ về thể lộ đặc biệt này để xác định cách các lớp đá cao mà chúng ta quan sát thấy tại điểm tiếp xúc này liên quan đến đơn vị rộng lớn hơn này. \"Tinga\" kể một câu chuyện về các sự kiện địa chất riêng biệt xảy ra ngay bên ngoài vành miệng hố Jezero, và xe tự hành Mars 2020 sẽ tiếp tục tiết lộ câu chuyện nguồn gốc và lịch sử địa chất thú vị của Jezero."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "NASA (2026)",
+      "url": "https://science.nasa.gov/blog/tingas-tale"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/523/1080/1920",
+    "provider": "unsplash",
+    "author": "Harman Abiwardani",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/WLUHO9A_xik"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/523/1080/1920",
+      "provider": "unsplash",
+      "author": "Harman Abiwardani",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/WLUHO9A_xik"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/564/1080/1920",
+      "provider": "unsplash",
+      "author": "Sebastian Boguszewicz",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1032/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E7q00J_8N7A"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoQABwAPu1yrU+pp6QiMAgBMB2JQBOgDTP4du78YqqVTaO8AADN3/rDuSqejbniWqzHZx+tvBKNkYmUnfGIJK+H2p8lLKKh84+0R5ZmtsEUgRMdQ7M8HRvfMGbapa12AQAAAA==",
+  "dominant": "#555850",
+  "origin": {
+    "group": 1,
+    "sourceId": "science-nasa-gov-tinga-s-tale",
+    "license": "PD",
+    "authors": [
+      "Stephen Carney"
+    ],
+    "originalTitle": "Tinga’s Tale",
+    "originalUrl": "https://science.nasa.gov/blog/tingas-tale",
+    "publisher": "NASA",
+    "changes": [
+      "divided into sections",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like reading pages of an ancient history book, analyzing rock contacts at Tinga reveals past planetary events. Can you imagine what stories hidden beneath the surface of Mars might tell us about the origins of our solar system? [p:Uncover planetary secrets by examining geological formations.]",
+    "vi": "Giống như đọc từng trang của một cuốn sách lịch sử cổ đại, việc phân tích các điểm tiếp xúc của đá tại Tinga tiết lộ các sự kiện hành tinh trong quá khứ. Bạn có thể tưởng tượng những câu chuyện ẩn giấu bên dưới bề mặt sao Hỏa sẽ cho chúng ta biết điều gì về nguồn gốc của hệ mặt trời không? [p:Khám phá các bí mật hành tinh bằng cách kiểm tra các cấu trúc địa chất.]"
+  },
+  "applySteps": {
+    "en": [
+      "Examine photographs of Martian rock formations taken by the Mars 2020 rover.",
+      "Compare the visual characteristics of the lower breccia unit with the upper dark rocks.",
+      "Read the recent rover blog post to learn more about regional breccia."
+    ],
+    "vi": [
+      "Xem xét các bức ảnh về các cấu trúc đá trên sao Hỏa được chụp bởi xe tự hành Mars 2020.",
+      "So sánh các đặc điểm trực quan của tầng dăm kết phía dưới với các lớp đá sẫm màu phía trên.",
+      "Đọc bài viết trên blog gần đây của xe tự hành để tìm hiểu thêm về dăm kết trong khu vực."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-27T02:15:45.227Z"
+}

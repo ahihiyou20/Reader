@@ -1,0 +1,84 @@
+{
+  "sections": [
+    {
+      "heading": "And does this crowd out funding for other aid projects?",
+      "paragraphs": [
+        "This is a question I’ve had for a while. I care a lot about climate change. I also care a lot about basic health and development programs in the world’s poorest countries — vitamin supplementation, nutrition programs, antiretroviral treatment for HIV, and bed nets treated against malaria.",
+        "These two priorities could easily come into conflict. With a fixed aid budget, every dollar spent on climate programs is one less dollar for everything else. And with large cuts to foreign aid in the last few years, that budget is shrinking.",
+        "For a long time, I didn’t have good data to see whether this tension was real. But someone recently pointed me to the RioMarkers database, which tags aid projects according to whether they target environmental outcomes under the Rio Conventions (which include biodiversity, climate change mitigation, climate change adaptation, and desertification).",
+        "Using it, we’ve constructed data on the amount of development aid allocated to climate-related projects, and how that compares with aid for other causes.",
+        "The headline statistic is that around one-fifth of development aid is now coded as climate-related.",
+        "But the “climate-related” label is not as straightforward as it might seem. Some of these projects look like ones that would have happened regardless of climate change. Untangling how many matters for anyone concerned about where aid is being spent, regardless of whether their focus is on health, development, or climate."
+      ]
+    },
+    {
+      "heading": "How much foreign aid is climate-related?",
+      "paragraphs": [
+        "Development aid comes in two forms. *Bilateral* aid flows from one country directly to another. *Multilateral* aid has a middleman; donors pool money with international organizations such as the World Bank or the World Health Organization, which then run programs themselves.",
+        "The RioMarkers database covers only **bilateral aid**, which makes up around **90% of global development aid**. That’s what I’ll focus on here.",
+        "In 2024, donors committed around $210 billion as bilateral aid.",
+        "Around 31% of that went to things that aren’t specific to a project, such as hosting refugees in donor countries, administration, budget support, and debt relief. These can’t be coded as climate or non-climate-related projects, and are termed “non-allocable aid”. This is shown in the chart.",
+        "The remaining 69%, around $145 billion, went to specific projects. The second bar breaks this down into climate- and non-climate-related projects.",
+        "Around **one-third** of this funding — $50 billion — was committed to climate-related projects in 2024.",
+        "These projects can fall into two categories. **Mitigation** aims to reduce or avoid greenhouse gas emissions; think investments in clean energy, stopping deforestation, or low-carbon transport. **Adaptation** helps countries deal with the impacts of climate change: flood defenses, drought-resilient crops, or more reliable water supplies.",
+        "The headline statistic is that around one-fifth of development aid is now coded as climate-related.",
+        "Many projects count as both; they make communities more resilient to disasters while reducing emissions at the same time. Restoring mangroves, for example, can protect coastlines during storms, but also store carbon.",
+        "The second bar shows the split between mitigation-only, adaptation-only, and both. It’s roughly even, with mitigation-only projects making up slightly more than the others.",
+        "Putting all of this together, in 2024, climate-related projects made up:",
+        "• a third of bilateral, project-specific aid;",
+        "• almost one-quarter of all bilateral aid (including the non-allocable parts);",
+        "• around one-fifth of all development aid.",
+        "This last number assumes that no multilateral aid is given to climate projects, which seems unlikely. So the true share is probably slightly higher."
+      ]
+    },
+    {
+      "heading": "How has the amount spent on climate aid changed over time?",
+      "paragraphs": [
+        "The RioMarkers data goes back to 2010. Then, around $22 billion globally was committed to climate-related projects. It’s worth noting that a significant share — around a third — of allocable aid wasn’t screened for being climate-related, so this is likely to be an underestimate.",
+        "The share of allocable aid that wasn’t screened declined substantially in the early 2010s and has remained below 10% since 2014.",
+        "By 2024, climate-related aid had increased to $50 billion.",
+        "You can see this in the chart below, which again breaks global bilateral project aid into climate and non-climate-related projects.",
+        "Total development aid, though, has also increased over this period. What if we look at the *share* of aid going to climate programs?",
+        "You can see this relative breakdown in the chart below. In 2010, around 18% went to climate-related projects (which, again, might be an underestimate for the reason above). By 2024, it had grown to 34%.",
+        "The type of projects has also changed. In 2010, most climate funding was allocated to mitigation projects. But over time, adaptation has become more prominent, and today, programs that include *some* form of adaptation outspend those focused solely on mitigation."
+      ]
+    },
+    {
+      "heading": "What counts as climate-related aid?",
+      "paragraphs": [
+        "What does this 34% figure for 2024 actually include?",
+        "The RioMarkers database not only codes a project as mitigation or adaptation, but also as having climate change as its primary or secondary objective. A project with climate as its main objective probably wouldn’t exist in a world without climate change. One with it as secondary might still go ahead for other reasons; the climate benefits are a bonus.",
+        "As you can see in the chart, more than half of climate-related funding goes to projects where it’s only a secondary objective. All funding for these projects is counted in its full value, not just the share we might attribute to climate.",
+        "It’s hard to know the counterfactual, but many of these programs would probably have gone ahead regardless. If we only counted projects with climate as their main objective, climate’s share of bilateral project aid would fall from 34% to 13%.",
+        "Looking at individual projects in the database, we started to see why drawing this line is complicated.",
+        "Japan committed around $310 million to Iraq for its Samawah Water Supply Improvement Project, which is building climate-resilient water infrastructure in a drought-prone area. It’s tagged as an adaptation project, with climate as the main objective. But basic water supplies in a region prone to drought seem like a core development need. Perhaps it would have been funded anyway.",
+        "France provided $122 million to Tanzania to build its Kakono hydroelectric power plant. It provides low-carbon electricity, which has an obvious link to climate. In the database, climate is coded as a primary objective. But access to energy is a development goal in and of itself. High-income countries were funding energy infrastructure projects in low- and middle-income countries, long before aid statistics had a climate tag attached.",
+        "Finally, South Korea provided $163 million for a hospital and training center in Tanzania. Building a hospital and healthcare facilities is a fairly standard development aid project. But because it’s built with energy efficiency and low-carbon design in mind, it’s counted as mitigation as a secondary objective. It doesn’t exist to tackle climate change, but all of this $163 million counts as climate-related aid.",
+        "There are many similar cases where it’s hard to disentangle whether climate change is *the* reason aid was given, or it’s just a label put on a project that would have gone ahead anyway."
+      ]
+    },
+    {
+      "heading": "What’s still not clear",
+      "paragraphs": [
+        "Ideally, all of this climate funding would be additional: funding for everything else could stay the same, and new money would be available for climate change. But that scenario seems unlikely. Many countries view climate finance as part of their overseas commitments, not as something on top.",
+        "That leaves two concerns, which pull in opposite directions.",
+        "The first is **displacement**: climate projects could divert funding from more traditional ones. Clean energy infrastructure could crowd out antimalarial bed nets, or anti-deforestation projects could divert money from maternal nutrition programs.",
+        "The second is **relabeling**: traditional aid programs with a climate code attached. Donor countries have often committed to climate finance in addition to their aid spending, not instead of it. If this is simply an exercise in relabeling, they are ticking off these commitments without providing any new money.",
+        "For example, when a new hospital gets a climate tag for being energy efficient, no bed nets are lost, but no new climate money is generated either.",
+        "My guess is that both are happening. That more than half of climate funding has it as a secondary objective gives some evidence of this. But this data can’t tell us how much of each is happening.",
+        "Answering that would need a detailed analysis of historical aid projects: how they compare with modern ones, and how aid allocations to non-climate sectors, such as health, infrastructure, and humanitarian response, have changed as the climate’s share has grown.",
+        "If anyone is interested in taking this on, please do. With so much aid now tagged with a climate label, and global budgets shrinking, it’s a question with an important answer.",
+        "If you want to dig deeper into answering this question, looking at country-specific data can be useful. It allows us to see who is giving aid to climate-related projects, and who is receiving it.",
+        "One way to understand how much relabeling is happening is to look at the full history of aid projects in one or two individual countries. Were the same types of projects — hydroelectric plants or railway lines — being built in the 1970s and 1980s, just without a climate finance label attached? Or have the types of projects genuinely changed?",
+        "Here, I’ll present only the summary statistics at a country level. This may raise more questions than it answers, but I think it is still a useful entry point for further analysis.",
+        "Below, you can see, for a range of donor countries, the share of the development aid they provide that is climate-related. In recent years, South Korea’s share has risen sharply, sometimes to more than 60% to climate projects. In Japan, it ranges from around 50% to as much as 80%. France also gives more than 40%.",
+        "Contrast that with the United States and Canada, which tend to allocate less than a fifth.",
+        "One question that would need detailed project-by-project analysis is whether this reflects genuine differences in their aid portfolios, or whether the latter countries are just less likely to flag infrastructure or clean energy projects as climate finance.",
+        "Look at which countries *receive* aid for climate-related projects, and what stands out is how many are middle-income countries, rather than the poorest. Climate-related projects dominate aid spending in Brazil and India, for example. You can see this in the chart below.",
+        "Climate-related finance accounts for a smaller share of development spending in low-income countries, but it’s not insignificant: in Uganda, for example, it has increased to almost 50%. In Madagascar, too.",
+        "Again, it’s worth digging into these examples at a project-specific level. As we saw earlier, a new hospital in Tanzania was coded as climate-related because it was built with a low-carbon design. If this is common across low- or lower-middle-income countries, traditional health and development projects may still dominate, with little displacement by climate finance.",
+        "That raises two important questions. First, tensions between countries: how much aid for the poorest countries might be crowded out by spending on climate projects in middle-income ones? Second, tensions within a given country: are climate and other development projects really in conflict, or are the same projects still going ahead, just with a climate label?"
+      ]
+    }
+  ]
+}

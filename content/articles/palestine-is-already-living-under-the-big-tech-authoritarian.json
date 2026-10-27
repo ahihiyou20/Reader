@@ -1,0 +1,151 @@
+{
+  "slug": "palestine-is-already-living-under-the-big-tech-authoritarian",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=palestine-is-already-living-under-the-big-tech-authoritarian",
+  "category": "society",
+  "tags": [
+    "big tech",
+    "palestine",
+    "artificial intelligence",
+    "surveillance",
+    "information control"
+  ],
+  "title": {
+    "en": "Palestine is already living under the Big Tech authoritarianism the world is being sold",
+    "vi": "Palestine đã và đang sống dưới bóng chủ nghĩa độc tài Big Tech mà thế giới đang dần bị bán cho"
+  },
+  "hook": {
+    "en": "The same architecture extends beyond weapons. At 7amleh, we have documented how platforms suppress Palestinian speech, how state-linked actors use commercial platforms to shape information environments, and how Meta profits from content and accounts tied to illegal settlement expansion and violent rhetoric against Palestinians.",
+    "vi": "Cùng một kiến trúc kiểm soát đang lan rộng ra ngoài vũ khí. Tại 7amleh, chúng tôi đã ghi lại cách các nền tảng đàn áp tiếng nói của người Palestine, cách các tác nhân liên kết với nhà nước sử dụng các nền tảng thương mại để định hình môi trường thông tin, và cách Meta thu lợi từ nội dung cũng như tài khoản gắn liền với việc mở rộng khu định cư phi pháp và những lời lẽ bạo lực chống lại người Palestine."
+  },
+  "sections": [
+    {
+      "body_en": "Two studies in Digital Domination make the point from different angles. One examines the Israeli government’s use of [y:Google advertising] to place its preferred narratives in front of people searching for information. Another examines algorithmic voice surveillance, showing how Palestinian speech itself is captured as data for systems of control.\n\nThis is where [p:digital erasure becomes inseparable from physical violence]. The destruction of Gaza also threatens the evidence and memory through which Palestinians can establish what was done to them. Platforms have removed or restricted documentation of Israeli violence, while physical archives, cultural records, cemeteries and the evidence beneath Gaza’s rubble have been destroyed or put at risk.",
+      "body_vi": "Hai nghiên cứu trong tác phẩm *Digital Domination* đã làm rõ vấn đề từ những góc nhìn khác nhau. Một nghiên cứu xem xét việc chính phủ Israel sử dụng [y:Google advertising] để đưa các câu chuyện ưa thích của họ lên trước những người đang tìm kiếm thông tin. Nghiên cứu thứ hai xem xét việc giám sát giọng nói bằng thuật toán, cho thấy cách chính tiếng nói của người Palestine bị thu thập làm dữ liệu cho các hệ thống kiểm soát.\n\nĐây là nơi [p:sự xóa sổ kỹ thuật số trở nên gắn liền không thể tách rời với bạo lực thể xác]. Việc tàn phá Gaza đồng thời đe dọa bằng chứng và ký ức qua đó người Palestine có thể chứng minh những gì đã gây ra cho họ. Các nền tảng đã gỡ bỏ hoặc hạn chế tài liệu về bạo lực của Israel, trong khi các kho lưu trữ vật lý, hồ sơ văn hóa, nghĩa trang và các bằng chứng nằm bên dưới đống đổ nát của Gaza đã bị phá hủy hoặc đặt vào tình trạng nguy hiểm."
+    },
+    {
+      "body_en": "The UN refugee agency UNRWA ran a covert [y:10-month operation] to smuggle millions of documents out of Gaza and East Jerusalem, amid fears that the originals, and even their digital copies, could be seized or destroyed. This September, the UN Special Rapporteur on the occupied Palestinian territory, Francesca Albanese, warned that Israel’s clearance of Gaza’s rubble could destroy evidence of atrocity crimes, and called it unacceptable that Gaza’s reconstruction be conditioned on the erasure of its past and the evidence needed to secure justice for its victims.",
+      "body_vi": "Cơ quan tị nạn Liên Hợp Quốc UNRWA đã thực hiện một chiến dịch bí mật kéo dài [y:10-month operation] để đưa lậu hàng triệu tài liệu ra khỏi Gaza và Đông Jerusalem, giữa những lo ngại rằng các bản gốc, và thậm chí cả bản sao kỹ thuật số của chúng, có thể bị tịch thu hoặc phá hủy. Tháng Chín này, Báo cáo viên Đặc biệt của Liên Hợp Quốc về vùng lãnh thổ Palestine bị chiếm đóng, Francesca Albanese, đã cảnh báo rằng việc Israel dọn sạch đống đổ nát ở Gaza có thể phá hủy bằng chứng về các tội ác tànatrocity, đồng thời gọi việc để công cuộc tái thiết Gaza bị chi phối bởi sự xóa sổ quá khứ và các bằng chứng cần thiết để đem lại công lý cho các nạn nhân là điều không thể chấp nhận được."
+    },
+    {
+      "body_en": "The problem, therefore, goes far beyond whether a post stays online. It concerns who retains the power to document reality, preserve history and establish evidence after violence has taken place. We have described this wider process as [p:platformicide]: the destruction and denial of the digital spaces through which Palestinians communicate, organise, document and preserve collective memory.",
+      "body_vi": "Do đó, vấn đề vượt xa câu hỏi liệu một bài đăng có được giữ lại trên mạng hay không. Nó liên quan đến việc ai giữ quyền ghi lại thực tế, bảo tồn lịch sử và thiết lập bằng chứng sau khi bạo lực đã diễn ra. Chúng tôi đã mô tả quá trình rộng lớn hơn này là [p:platformicide]: sự phá hủy và chối bỏ các không gian kỹ thuật số mà qua đó người Palestine giao tiếp, tổ chức, ghi lại và bảo tồn ký ức tập trung."
+    },
+    {
+      "heading_en": "Epistemic power",
+      "body_en": "Now the same problem is entering the systems through which people increasingly access knowledge.\n\nLarge language models and AI agents are becoming intermediaries between people and information, yet they are acutely vulnerable to manipulation. Microsoft’s security researchers have documented “[y:AI recommendation poisoning],” in which companies embed hidden instructions that plant persistent biases in AI assistants’ memory, with 31 companies across 14 industries identified.\n\nSalesforce researchers found that web-search agents fed authoritative-looking false content will reproduce it as fact: in controlled tests, around 80 percent of queries returned the attacker’s preferred answer, and in more realistic conditions, with poisoned documents buried among more than 100,000 clean ones, nearly one in four did.",
+      "heading_vi": "Bây giờ, vấn đề tương tự đang xâm nhập vào các hệ thống mà qua đó con người ngày càng tiếp cận tri thức.\n\nCác mô hình ngôn ngữ lớn và tác nhân trí tuệ nhân tạo đang trở thành trung gian giữa con người và thông tin, tuy nhiên chúng lại vô cùng dễ bị thao túng. Các nhà nghiên cứu bảo mật của Microsoft đã ghi lại hiện tượng “[y:AI recommendation poisoning]”, trong đó các công ty cài cắm các hướng dẫn ẩn nhằm gieo rắc những thành kiến bền vững vào trí nhớ của trợ lý AI, với 31 công ty trên 14 ngành công nghiệp được xác định.\n\nCác nhà nghiên cứu của Salesforce phát hiện ra rằng các tác nhân tìm kiếm trên web nếu bị cung cấp nội dung giả mạo có vẻ đáng tin cậy thì sẽ tái tạo lại nó như một sự thật: trong các thử nghiệm có kiểm soát, khoảng 80% các truy vấn trả về câu trả lời mà kẻ tấn công ưu tiên, và trong các điều kiện thực tế hơn, với các tài liệu độc hại được ngụy trang giữa hơn 100.000 tài liệu sạch, gần một phần tư số truy vấn đã mắc bẫy.",
+      "body_vi": "Quyền lực nhận thức"
+    },
+    {
+      "body_en": "For Palestine, this is not hypothetical. Drop Site News reported that Israel awarded a [y:USD 46.5 million contract] to Brad Parscale’s firm Clock Tower X to build networks of websites and blog posts aimed at shaping what chatbots tell users about Gaza, content written for machines rather than readers. Journalists have since put leading chatbots to the test to see how far the campaign has reached.\n\nA society already subjected to censorship, propaganda, data extraction and the destruction of evidence is now entering an information environment in which people increasingly depend on AI systems to tell them what is true, what happened and what matters, and in which the party responsible for the violence is paying to shape those answers.",
+      "body_vi": "Đối với Palestine, đây không phải là điều giả định. Tờ Drop Site News đưa tin rằng Israel đã trao hợp đồng trị giá [y:USD 46.5 million contract] cho công ty Clock Tower X của Brad Parscale nhằm xây dựng các mạng lưới trang web và bài đăng blog nhằm định hình những gì chatbot nói với người dùng về Gaza, nội dung được viết cho máy móc thay vì cho độc giả. Kể từ đó, các nhà báo đã đưa các chatbot hàng đầu vào thử nghiệm để xem chiến dịch đã vươn xa đến đâu.\n\nMột xã hội vốn đã phải chịu được sự kiểm duyệt, tuyên truyền, trích xuất dữ liệu và tàn phá bằng chứng nay đang bước vào một môi trường thông tin nơi con người ngày càng phụ thuộc vào hệ thống AI để cho họ biết điều gì là thật, điều gì đã xảy ra và điều gì quan trọng, và trong đó bên chịu trách nhiệm cho bạo lực lại đang trả tiền để định hình những câu trả lời đó."
+    },
+    {
+      "body_en": "The danger is not only inaccurate information. It is the concentration of epistemic power in systems whose training data, retrieval mechanisms and decision-making processes remain largely opaque. Information manipulation can move from suppressing a Palestinian post to shaping what an AI system retrieves, remembers, or presents as knowledge.",
+      "body_vi": "Mối nguy hiểm không chỉ nằm ở thông tin không chính xác. Đó là sự tập trung quyền lực nhận thức vào các hệ thống có dữ liệu huấn luyện, cơ chế truy xuất và quá trình ra quyết định phần lớn vẫn nằm trong vòng bí mật. Sự thao túng thông tin có thể chuyển từ việc đàn áp một bài đăng của người Palestine sang việc định hình những gì hệ thống AI truy xuất, ghi nhớ hoặc trình bày dưới dạng tri thức."
+    },
+    {
+      "heading_en": "A warning to heed",
+      "body_en": "Meanwhile, the technologies and companies enabling these systems are becoming embedded in public life elsewhere. In the UK, Palantir’s [y:GBP 330 million] National Health Service (NHS) contract led a parliamentary committee to call the company’s growing public-sector role “an unacceptable point of weakness”, and the government is now reviewing the contract amid pressure to use a break clause in 2027. In the United States, Amnesty International has documented how technology from Palantir and Babel Street is used to monitor and target migrants and people speaking out for Palestinian rights.",
+      "heading_vi": "Trong khi đó, các công nghệ và công ty tạo điều kiện cho các hệ thống này đang ngày càng bám rễ sâu vào đời sống công cộng ở những nơi khác. Tại Anh, hợp đồng trị giá [y:GBP 330 million] của Palantir với Dịch vụ Y tế Quốc gia (NHS) đã khiến một ủy ban quốc hội gọi vai trò ngày càng lớn của công ty này trong khu vực công là “một điểm yếu không thể chấp nhận được”, và chính phủ hiện đang xem xét lại hợp đồng dưới áp lực phải sử dụng điều khoản phá vỡ hợp đồng vào năm 2027. Tại Hoa Kỳ, Tổ chức Ân xá Quốc tế đã ghi lại cách công nghệ từ Palantir và Babel Street được sử dụng để giám sát và nhắm mục tiêu vào những người di cư cũng như những người lên tiếng vì quyền lợi của người Palestine.",
+      "body_vi": "Một lời cảnh báo cần lưu ý"
+    },
+    {
+      "body_en": "These developments should be understood as part of a wider transformation in how power is organised. Palestine shows what happens when data, surveillance infrastructure, artificial intelligence and corporate power are [p:integrated into systems of domination]. It also shows how quickly technologies developed in one context travel into another, stripped of the political conditions of their making and repackaged as innovation, efficiency, security or digital transformation.",
+      "body_vi": "Những diễn biến này nên được hiểu là một phần của sự chuyển đổi rộng lớn hơn trong cách tổ chức quyền lực. Palestine cho thấy điều gì xảy ra khi dữ liệu, cơ sở hạ tầng giám sát, trí tuệ nhân tạo và sức mạnh doanh nghiệp được [p:integrated into systems of domination]. Nó cũng cho thấy các công nghệ phát triển trong một bối cảnh có thể di chuyển nhanh chóng sang một bối cảnh khác như thế nào, bị tước bỏ các điều kiện chính trị cấu thành nên chúng và được đóng gói lại thành sự đổi mới, hiệu quả, an ninh hoặc chuyển đổi kỹ thuật số."
+    },
+    {
+      "body_en": "The authoritarianism of the digital age does not require every state to build its own surveillance apparatus. It can purchase one. It does not require governments to control every source of information. It can [p:outsource the infrastructure] through which information is filtered, ranked and delivered. It does not require violence to disappear from public view. It can make violence more scalable, more automated and harder to attribute.\n\nPalestinians are already living with the consequences. The rest of the world should heed the warning before these systems become too deeply embedded in its own institutions to challenge.\n\nJalal Abukhater is a human rights advocate based in Jerusalem and Policy Manager at 7amleh, The Arab Center for the Advancement of Social Media.",
+      "body_vi": "Chủ nghĩa độc chuyên của kỷ đại kỹ thuật số không đòi hỏi mọi quốc gia phải tự xây dựng bộ máy giám sát của riêng mình. Nó có thể mua một bộ máy như vậy. Nó không đòi hỏi các chính phủ phải kiểm soát mọi nguồn thông tin. Nó có thể [p:outsource the infrastructure] thông qua đó thông tin được lọc, xếp hạng và phân phối. Nó không đòi hỏi bạo lực phải biến mất khỏi tầm mắt công chúng. Nó có thể làm cho bạo lực trở nên dễ mở rộng quy mô hơn, tự động hóa hơn và khó quy trách nhiệm hơn.\n\nNgười Palestine đã phải sống chung với hậu quả này. Phần còn lại của thế giới nên chú ý đến lời cảnh báo trước khi các hệ thống này bám rễ quá sâu vào các thể chế của chính họ đến mức không thể thách thức.\n\nJalal Abukhater là một nhà vận động nhân quyền có trụ sở tại Jerusalem và là Quản lý Chính sách tại 7amleh, Trung tâm Ả Rập Thúc đẩy Truyền thông Xã hội."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Global Voices (2026)",
+      "url": "https://globalvoices.org/2026/10/21/palestine-is-already-living-under-the-big-tech-authoritarianism-the-world-is-being-sold"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/382/1080/1920",
+    "provider": "unsplash",
+    "author": "RayBay",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/382/1080/1920",
+      "provider": "unsplash",
+      "author": "RayBay",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/596/1080/1920",
+      "provider": "unsplash",
+      "author": "Paul Proshin",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/0jgAnkgYwBE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/390/1080/1920",
+      "provider": "unsplash",
+      "author": "Brooklyn Morgan",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/vlSyS1VLCoQ"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoQABwAPu1orU2ppqSiMAgBMB2JZwDCgGlg7N/IwxUNaz1ARc1wAP781g4gb+qJxgUZybhMwn/2ERtV+lIfBKsky2bOJ5wpVb1D1PgvcpvHbLhXC2LOOpaBwfwCWsD23nOzB1tvcM9zx0BRHfZBUrJnoeLxik+J2ukW1SBAiYFwQABTGJQyBoUJK6SnbxxlDxYlqp1NYFzNzSrAAAA=",
+  "dominant": "#555459",
+  "origin": {
+    "group": 1,
+    "sourceId": "globalvoices-org-palestine-is-already-living-under-the-big-tech-authoritarianism",
+    "license": "CC-BY-3.0",
+    "authors": [
+      "Guest Contributor"
+    ],
+    "originalTitle": "Palestine is already living under the Big Tech authoritarianism the world is being sold",
+    "originalUrl": "https://globalvoices.org/2026/10/21/palestine-is-already-living-under-the-big-tech-authoritarianism-the-world-is-being-sold",
+    "publisher": "Global Voices",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Just as a cracked foundation quietly shifts an entire house, automated surveillance and biased algorithms slowly distort our reality. How can you verify the sources behind the information you consume today? [p:Expose hidden biases by questioning automated answers and cross-checking facts.]",
+    "vi": "Giống như một nền móng nứt lặng lẽ làm dịch chuyển cả ngôi nhà, hệ thống giám sát tự động và các thuật toán sai lệch đang từ từ bóp méo thực tế của chúng ta. Làm thế nào bạn có thể xác minh các nguồn gốc đằng sau thông tin mình tiếp nhận hôm nay? [p:Vạch trần những thành kiến ẩn giấu bằng cách đặt câu hỏi cho các câu trả lời tự động và đối chiếu sự thật.]"
+  },
+  "applySteps": {
+    "en": [
+      "Audit your reliance on AI assistants and automated tools for news, historical facts, and daily information.",
+      "Cross-reference online searches and AI-generated answers with primary sources and independent journalism.",
+      "Support organizations and digital archives dedicated to preserving documentation and collective memory."
+    ],
+    "vi": [
+      "Kiểm tra lại sự phụ thuộc của bạn vào các trợ lý trí tuệ nhân tạo và công cụ tự động cho tin tức, sự kiện lịch sử và thông tin hàng ngày.",
+      "Đối chiếu các kết quả tìm kiếm trực tuyến và câu trả lời do AI tạo ra với các nguồn chính thống và báo chí độc lập.",
+      "Ủng hộ các tổ chức và kho lưu trữ kỹ thuật số dành riêng cho việc bảo tồn tài liệu và ký ức tập thể."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-27T02:08:45.227Z"
+}
