@@ -15,6 +15,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/collections/made-in-our-image"
     },
+    "https://bigthink.com/perception-box/you-have-more-control-over-reality-than-you-think": {
+      "at": "2026-10-27T02:10:09.845Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/perception-box/you-have-more-control-over-reality-than-you-think"
+    },
     "https://bigthink.com/philosophy/healing-the-cartesian-wound": {
       "at": "2026-10-26T01:15:37.717Z",
       "feed": "big-think",
@@ -45,6 +50,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/stellar-streams-dark-universe"
     },
+    "https://bigthink.com/starts-with-a-bang/travel-through-universe-1g": {
+      "at": "2026-10-27T02:13:25.552Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/travel-through-universe-1g"
+    },
     "https://bigthink.com/strange-maps/roman-road-networks": {
       "at": "2026-10-24T01:44:24.071Z",
       "feed": "big-think",
@@ -60,10 +70,20 @@
       "feed": "wikipedia-featured",
       "slug": "ancient-cappadocian-language"
     },
+    "https://en.wikipedia.org/wiki/Battle_of_Schliengen": {
+      "at": "2026-10-27T02:09:34.811Z",
+      "feed": "wikipedia-featured",
+      "error": "Unterminated string in JSON at position 239011 (line 2 column 239010)"
+    },
     "https://en.wikipedia.org/wiki/Easy_on_Me": {
       "at": "2026-10-23T17:01:00.184Z",
       "feed": "wikipedia-featured",
       "error": "Unterminated string in JSON at position 391688 (line 2 column 391687)"
+    },
+    "https://en.wikipedia.org/wiki/Eyebrow_Talk": {
+      "at": "2026-10-27T02:13:54.982Z",
+      "feed": "wikipedia-featured",
+      "slug": "eyebrow-talk"
     },
     "https://en.wikipedia.org/wiki/French_battleship_Brennus": {
       "at": "2026-10-24T01:41:57.330Z",
@@ -95,10 +115,20 @@
       "feed": "wikipedia-featured",
       "slug": "the-hunger-collection"
     },
+    "https://en.wikipedia.org/wiki/The_Kinks": {
+      "at": "2026-10-27T02:13:12.704Z",
+      "feed": "wikipedia-featured",
+      "slug": "the-kinks"
+    },
     "https://en.wikipedia.org/wiki/Thuggee": {
       "at": "2026-10-26T01:16:08.080Z",
       "feed": "wikipedia-featured",
       "slug": "thuggee"
+    },
+    "https://globalvoices.org/2026/10/21/palestine-is-already-living-under-the-big-tech-authoritarianism-the-world-is-being-sold": {
+      "at": "2026-10-27T02:13:46.901Z",
+      "feed": "global-voices",
+      "slug": "palestine-is-already-living-under-the-big-tech-authoritarian"
     },
     "https://globalvoices.org/2026/10/21/protest-as-a-pillar-of-democracy": {
       "at": "2026-10-26T01:15:58.389Z",
@@ -155,6 +185,21 @@
       "feed": "global-voices",
       "slug": "queer-mediums-of-the-cult-of-maria-lionza-are-redefining-the"
     },
+    "https://globalvoices.org/2026/10/26/volunteers-from-poland-remember-how-poles-opened-their-homes-to-ukrainian-refugees-in-2022": {
+      "at": "2026-10-27T02:07:09.394Z",
+      "feed": "global-voices",
+      "slug": "volunteers-from-poland-remember-how-poles-opened-their-homes"
+    },
+    "https://globalvoices.org/2026/10/26/vote-young-yet-govern-much-later-west-african-youths-struggle-for-power": {
+      "at": "2026-10-27T02:12:47.708Z",
+      "feed": "global-voices",
+      "slug": "vote-young-yet-govern-much-later-west-african-youth-s-strugg"
+    },
+    "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
+      "at": "2026-10-27T02:10:03.993Z",
+      "feed": "knowable",
+      "error": "403 Forbidden — https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/rise-in-aging-doctors-spurs-questions-patient-safety": {
       "at": "2026-10-23T16:48:54.039Z",
       "feed": "knowable",
@@ -200,6 +245,11 @@
       "feed": "nautilus",
       "slug": "ice-age-europeans-shared-genes-across-vast-distances"
     },
+    "https://nautil.us/inside-the-mind-of-a-narcissist-1286095": {
+      "at": "2026-10-27T02:13:25.452Z",
+      "feed": "nautilus",
+      "slug": "inside-the-brains-of-people-with-narcissistic-traits"
+    },
     "https://nautil.us/is-this-the-first-corporate-psychopath-1286033": {
       "at": "2026-10-23T17:02:01.472Z",
       "feed": "nautilus",
@@ -214,6 +264,11 @@
       "at": "2026-10-24T01:40:42.837Z",
       "feed": "nautilus",
       "slug": "mother-bats-experience-rapid-heart-rate-increases-upon-heari"
+    },
+    "https://nautil.us/spike-thumbed-dino-discovered-in-the-united-kingdom-1286098": {
+      "at": "2026-10-27T02:10:09.787Z",
+      "feed": "nautilus",
+      "slug": "new-plant-eating-dinosaur-discovered-in-england-museum-colle"
     },
     "https://nautil.us/these-are-the-most-stunning-weather-photos-of-the-year-1286043": {
       "at": "2026-10-23T16:47:06.483Z",
@@ -230,6 +285,11 @@
       "feed": "nautilus",
       "slug": "researchers-reveal-facial-features-of-mysterious-denisovans"
     },
+    "https://ourworldindata.org/how-much-development-aid-is-spent-on-climate-change": {
+      "at": "2026-10-27T02:06:55.421Z",
+      "feed": "owid",
+      "slug": "how-much-development-aid-is-spent-on-climate-change"
+    },
     "https://ourworldindata.org/when-do-people-experience-mental-health-conditions-for-the-first-time": {
       "at": "2026-10-23T16:55:53.801Z",
       "feed": "owid",
@@ -244,6 +304,16 @@
       "at": "2026-10-23T16:56:59.288Z",
       "feed": "psyche",
       "slug": "do-we-really-share-thoughts-when-we-communicate"
+    },
+    "https://psyche.co/ideas/everyone-says-they-have-anxiety-clinical-anxiety-is-different": {
+      "at": "2026-10-27T02:09:58.798Z",
+      "feed": "psyche",
+      "slug": "everyday-anxiety-versus-clinical-illness"
+    },
+    "https://psyche.co/ideas/how-mental-disorders-play-havoc-with-our-motivation": {
+      "at": "2026-10-27T02:12:53.403Z",
+      "feed": "psyche",
+      "slug": "why-mental-health-conditions-disrupt-human-motivation"
     },
     "https://psyche.co/ideas/what-life-in-denmark-shows-about-the-power-of-emotional-safety": {
       "at": "2026-10-26T01:14:30.204Z",
@@ -315,6 +385,11 @@
       "feed": "nasa-science",
       "error": "Only 17 words of text found"
     },
+    "https://science.nasa.gov/blog/tingas-tale": {
+      "at": "2026-10-27T02:12:58.138Z",
+      "feed": "nasa-science",
+      "slug": "tinga-s-tale"
+    },
     "https://science.nasa.gov/blogs/swift/2026/10/23/nasas-swift-mission-ends-ahead-of-re-entry": {
       "at": "2026-10-24T01:41:31.997Z",
       "feed": "nasa-science",
@@ -324,6 +399,16 @@
       "at": "2026-10-23T16:57:59.314Z",
       "feed": "nasa-science",
       "slug": "el-nino-then-and-now"
+    },
+    "https://science.nasa.gov/people/kayla-rillo-armstrong": {
+      "at": "2026-10-27T02:10:23.517Z",
+      "feed": "nasa-science",
+      "error": "Only 146 words of text found"
+    },
+    "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis": {
+      "at": "2026-10-27T02:06:47.522Z",
+      "feed": "nasa-science",
+      "error": "Only 154 words of text found"
     },
     "https://theconversation.com/a-critical-flaw-affecting-70-of-all-websites-has-the-cybersecurity-world-panicked-294941": {
       "at": "2026-10-25T01:14:46.906Z",
@@ -360,6 +445,11 @@
       "feed": "conversation",
       "slug": "how-k-dramas-use-africa-as-a-backdrop-to-boost-south-korea-s"
     },
+    "https://theconversation.com/in-opting-for-lula-brazil-made-a-conservative-choice-to-elect-a-man-of-the-left-over-one-of-the-far-right-295217": {
+      "at": "2026-10-27T02:06:59.365Z",
+      "feed": "conversation",
+      "slug": "in-opting-for-lula-brazil-made-a-conservative-choice-to-elec"
+    },
     "https://theconversation.com/japans-expensive-funerals-and-declining-birth-rates-are-transforming-ancestral-traditions-292861": {
       "at": "2026-10-26T01:15:12.339Z",
       "feed": "conversation",
@@ -380,10 +470,20 @@
       "feed": "conversation",
       "slug": "the-problem-with-shane-gillis-s-joke-isn-t-just-sexism-it-s"
     },
+    "https://theconversation.com/the-upside-of-untidiness-why-a-little-mess-can-be-good-for-your-home-294343": {
+      "at": "2026-10-27T02:12:20.361Z",
+      "feed": "conversation",
+      "error": "Unterminated string in JSON at position 72659 (line 2 column 72658)"
+    },
     "https://theconversation.com/unlocking-the-secrets-of-the-dragon-man-skull-and-what-it-reveals-about-human-evolution-291321": {
       "at": "2026-10-23T16:46:44.321Z",
       "feed": "conversation",
       "error": "2460 words: too long to republish word for word (limit 1500)"
+    },
+    "https://theconversation.com/we-changed-the-system-how-serbian-students-ended-alexander-vucics-12-years-in-power-295119": {
+      "at": "2026-10-27T02:13:04.158Z",
+      "feed": "conversation",
+      "slug": "we-changed-the-system-how-serbian-students-ended-alexander-v"
     },
     "https://theconversation.com/youth-protests-across-europe-the-overlapping-crises-facing-gen-z-294754": {
       "at": "2026-10-24T01:40:01.768Z",
@@ -455,6 +555,16 @@
       "feed": "npr-health",
       "slug": "u-s-faces-severe-measles-resurgence-with-cases-doubling"
     },
+    "https://www.npr.org/2026/10/26/nx-s1-6000653/special-education-teacher-shortage": {
+      "at": "2026-10-27T02:10:14.887Z",
+      "feed": "npr-health",
+      "slug": "inside-the-daily-realities-of-special-education-teachers"
+    },
+    "https://www.npr.org/2026/10/26/nx-s1-6013568/mercks-melanoma-vaccine-trial-shows-reduced-recurrence-or-death-from-skin-cancer": {
+      "at": "2026-10-27T02:13:31.248Z",
+      "feed": "npr-health",
+      "slug": "new-cancer-vaccine-trial-shows-promise-against-melanoma"
+    },
     "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019": {
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
@@ -469,6 +579,11 @@
       "at": "2026-10-25T01:14:23.871Z",
       "feed": "quanta",
       "slug": "the-hidden-underground-networks-that-power-our-planet"
+    },
+    "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026": {
+      "at": "2026-10-27T02:10:03.798Z",
+      "feed": "quanta",
+      "slug": "the-topological-shape-of-voting-paradoxes"
     },
     "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023": {
       "at": "2026-10-23T16:57:05.140Z",
@@ -520,6 +635,16 @@
       "feed": "sciencedaily",
       "slug": "low-dose-aspirin-may-cut-dementia-risk-for-some"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261025073055.htm": {
+      "at": "2026-10-27T02:13:36.830Z",
+      "feed": "sciencedaily",
+      "slug": "ancient-eclipse-record-reveals-secrets-of-earth-and-sun"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261025222848.htm": {
+      "at": "2026-10-27T02:10:20.507Z",
+      "feed": "sciencedaily",
+      "slug": "how-aerobic-exercise-physically-rewires-the-nervous-system-o"
+    },
     "https://www.usgs.gov/centers/eesc/news/usgs-eastern-ecological-science-center-2026-society-environmental-toxicology-and": {
       "at": "2026-10-24T01:44:13.224Z",
       "feed": "usgs",
@@ -540,6 +665,11 @@
       "feed": "usgs",
       "error": "Only 75 words of text found"
     },
+    "https://www.usgs.gov/news/state-news-release/media-alert-low-level-flights-image-geology-over-western-idaho": {
+      "at": "2026-10-27T02:13:19.817Z",
+      "feed": "usgs",
+      "slug": "media-alert-low-level-flights-to-image-geology-over-western"
+    },
     "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-kilauea-summit-monitoring-overflight-8": {
       "at": "2026-10-24T01:40:24.424Z",
       "feed": "usgs",
@@ -554,6 +684,11 @@
       "at": "2026-10-23T16:56:49.709Z",
       "feed": "usgs",
       "slug": "volcano-watch-a-look-back-at-recent-kilauea-eruptions-and-in"
+    },
+    "https://www.usgs.gov/observatories/yvo/news/crystal-clues-case-lava-creek-tuffs-missing-members": {
+      "at": "2026-10-27T02:09:51.480Z",
+      "feed": "usgs",
+      "slug": "crystal-clues-the-case-of-the-lava-creek-tuff-s-missing-memb"
     },
     "https://www.usgs.gov/programs/climate-adaptation-science-centers/news/summer-drought-may-increase-human-bear": {
       "at": "2026-10-25T01:14:12.315Z",

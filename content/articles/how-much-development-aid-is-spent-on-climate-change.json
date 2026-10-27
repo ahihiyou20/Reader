@@ -1,0 +1,134 @@
+{
+  "slug": "how-much-development-aid-is-spent-on-climate-change",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=how-much-development-aid-is-spent-on-climate-change",
+  "category": "economics",
+  "tags": [
+    "climate aid",
+    "development aid",
+    "riomarkers",
+    "climate change"
+  ],
+  "title": {
+    "en": "How much development aid is spent on climate change?",
+    "vi": "Viện trợ phát triển dành bao nhiêu cho biến đổi khí hậu?"
+  },
+  "hook": {
+    "en": "This is a question I’ve had for a while. I care a lot about climate change. I also care a lot about basic health and development programs in the world’s poorest countries — vitamin supplementation, nutrition programs, antiretroviral treatment for HIV, and bed nets treated against malaria.",
+    "vi": "Đây là câu hỏi mà tôi trăn trở từ lâu. Tôi rất quan tâm đến biến đổi khí hậu. Tôi cũng rất quan tâm đến các chương trình y tế và phát triển cơ bản tại các quốc gia nghèo nhất thế giới — bổ sung vitamin, các chương trình dinh dưỡng, điều trị kháng virus cho người nhiễm HIV, và màn ngủ được tẩm hóa chất chống sốt rét."
+  },
+  "sections": [
+    {
+      "body_en": "These two priorities could easily come into conflict. With a fixed aid budget, every dollar spent on climate programs is one less dollar for everything else. And with large cuts to foreign aid in the last few years, that budget is shrinking.\n\nFor a long time, I didn’t have good data to see whether this tension was real. But someone recently pointed me to the RioMarkers database, which tags aid projects according to whether they target environmental outcomes under the Rio Conventions (which include biodiversity, climate change mitigation, climate change adaptation, and desertification).\n\nUsing it, we’ve constructed data on the amount of development aid allocated to climate-related projects, and how that compares with aid for other causes."
+    },
+    {
+      "body_en": "The headline statistic is that around one-fifth of development aid is now coded as climate-related.\n\nBut the “climate-related” label is not as straightforward as it might seem. Some of these projects look like ones that would have happened regardless of climate change. Untangling how many matters for anyone concerned about where aid is being spent, regardless of whether their focus is on health, development, or climate."
+    },
+    {
+      "heading_en": "How much foreign aid is climate-related?",
+      "body_en": "Development aid comes in two forms. *Bilateral* aid flows from one country directly to another. *Multilateral* aid has a middleman; donors pool money with international organizations such as the World Bank or the World Health Organization, which then run programs themselves.\n\nThe RioMarkers database covers only **bilateral aid**, which makes up around **90% of global development aid**. That’s what I’ll focus on here.\n\nIn 2024, donors committed around $210 billion as bilateral aid.\n\nAround 31% of that went to things that aren’t specific to a project, such as hosting refugees in donor countries, administration, budget support, and debt relief. These can’t be coded as climate or non-climate-related projects, and are termed “non-allocable aid”. This is shown in the chart."
+    },
+    {
+      "body_en": "The remaining 69%, around $145 billion, went to specific projects. The second bar breaks this down into climate- and non-climate-related projects.\n\nAround **one-third** of this funding — $50 billion — was committed to climate-related projects in 2024.\n\nThese projects can fall into two categories. **Mitigation** aims to reduce or avoid greenhouse gas emissions; think investments in clean energy, stopping deforestation, or low-carbon transport. **Adaptation** helps countries deal with the impacts of climate change: flood defenses, drought-resilient crops, or more reliable water supplies.\n\nThe headline statistic is that around one-fifth of development aid is now coded as climate-related.\n\nMany projects count as both; they make communities more resilient to disasters while reducing emissions at the same time. Restoring mangroves, for example, can protect coastlines during storms, but also store carbon."
+    },
+    {
+      "body_en": "The second bar shows the split between mitigation-only, adaptation-only, and both. It’s roughly even, with mitigation-only projects making up slightly more than the others.\n\nPutting all of this together, in 2024, climate-related projects made up:\n\n• a third of bilateral, project-specific aid;\n\n• almost one-quarter of all bilateral aid (including the non-allocable parts);\n\n• around one-fifth of all development aid.\n\nThis last number assumes that no multilateral aid is given to climate projects, which seems unlikely. So the true share is probably slightly higher."
+    },
+    {
+      "heading_en": "How has the amount spent on climate aid changed over time?",
+      "body_en": "The RioMarkers data goes back to 2010. Then, around $22 billion globally was committed to climate-related projects. It’s worth noting that a significant share — around a third — of allocable aid wasn’t screened for being climate-related, so this is likely to be an underestimate.\n\nThe share of allocable aid that wasn’t screened declined substantially in the early 2010s and has remained below 10% since 2014.\n\nBy 2024, climate-related aid had increased to $50 billion.\n\nYou can see this in the chart below, which again breaks global bilateral project aid into climate and non-climate-related projects.\n\nTotal development aid, though, has also increased over this period. What if we look at the *share* of aid going to climate programs?"
+    },
+    {
+      "body_en": "You can see this relative breakdown in the chart below. In 2010, around 18% went to climate-related projects (which, again, might be an underestimate for the reason above). By 2024, it had [y:grown to 34%].\n\nThe type of projects has also changed. In 2010, most climate funding was allocated to mitigation projects. But over time, adaptation has become more prominent, and today, programs that include *some* form of adaptation outspend those focused solely on mitigation."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Our World in Data (2026)",
+      "url": "https://ourworldindata.org/how-much-development-aid-is-spent-on-climate-change"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/382/1080/1920",
+    "provider": "unsplash",
+    "author": "RayBay",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/382/1080/1920",
+      "provider": "unsplash",
+      "author": "RayBay",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1078/1080/1920",
+      "provider": "unsplash",
+      "author": "Vladimir Kudinov",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/KBX9XHk266s"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/692/1080/1920",
+      "provider": "unsplash",
+      "author": "Nicolai Berntsen",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/2Qm47LI0W1c"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoQABwAPu1orU2ppqSiMAgBMB2JZwDCgGlg7N/IwxUNaz1ARc1wAP781g4gb+qJxgUZybhMwn/2ERtV+lIfBKsky2bOJ5wpVb1D1PgvcpvHbLhXC2LOOpaBwfwCWsD23nOzB1tvcM9zx0BRHfZBUrJnoeLxik+J2ukW1SBAiYFwQABTGJQyBoUJK6SnbxxlDxYlqp1NYFzNzSrAAAA=",
+  "dominant": "#555459",
+  "origin": {
+    "group": 1,
+    "sourceId": "ourworldindata-org-how-much-development-aid-is-spent-on-climate-change",
+    "license": "CC-BY-4.0",
+    "authors": [
+      "Hannah Ritchie",
+      "Pablo Arriagada"
+    ],
+    "originalTitle": "How much development aid is spent on climate change?",
+    "originalUrl": "https://ourworldindata.org/how-much-development-aid-is-spent-on-climate-change",
+    "publisher": "Our World in Data",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Development aid operates like a finite pie where every slice given to climate change leaves less for health and poverty. How can we ensure that vital global health programs do not suffer as environmental funding grows?",
+    "vi": "Viện trợ phát triển hoạt động giống như một chiếc bánh có hạn, trong đó mỗi phần dành cho biến đổi khí hậu sẽ làm giảm phần dành cho y tế và nghèo đói. Làm thế nào chúng ta có thể đảm bảo rằng các chương trình y tế toàn cầu quan trọng không bị ảnh hưởng khi nguồn vốn môi trường tăng lên?"
+  },
+  "applySteps": {
+    "en": [
+      "Examine official aid statistics in the RioMarkers database to see how funds are allocated.",
+      "Distinguish between climate mitigation and adaptation projects in your analysis.",
+      "Evaluate whether climate funding conflicts with basic health and development programs."
+    ],
+    "vi": [
+      "Kiểm tra số liệu viện trợ chính thức trong cơ sở dữ liệu RioMarkers để xem nguồn vốn được phân bổ như thế nào.",
+      "Phân biệt giữa các dự án giảm nhẹ (*mitigation*) và thích ứng (*adaptation*) với biến đổi khí hậu trong phân tích của bạn.",
+      "Đánh giá xem việc tài trợ cho khí hậu có mâu thuẫn với các chương trình y tế và phát triển cơ bản hay không."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-27T02:26:45.227Z"
+}
