@@ -1,0 +1,123 @@
+{
+  "slug": "simulating-the-universe-s-first-two-billion-years",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=simulating-the-universe-s-first-two-billion-years",
+  "category": "science",
+  "tags": [
+    "astronomy",
+    "simulation",
+    "universe",
+    "cosmology"
+  ],
+  "title": {
+    "en": "Simulating the Universe's First Two Billion Years",
+    "vi": "Mô phỏng hai tỷ năm đầu tiên của vũ trụ"
+  },
+  "hook": {
+    "en": "Researchers have unveiled one of the most detailed digital models of the cosmos, capturing the critical period following the Big Bang {source}. This massive virtual universe helps scientists interpret groundbreaking data from advanced instruments like the James Webb Space Telescope, offering fresh insights into how galaxies and stars first formed.",
+    "vi": "Các nhà nghiên cứu đã hé lộ một trong những mô hình kỹ thuật số chi tiết nhất về vũ vụ, ghi lại giai đoạn quan trọng sau Vụ Nổ Lớn (*Big Bang*). Vũ trụ ảo khổng lồ này giúp các nhà khoa học giải thích dữ liệu đột phá từ các công cụ tiên tiến như Kính viễn vọng Không gian James Webb, mang lại những góc nhìn mới mẻ về cách các thiên hà và ngôi sao hình thành."
+  },
+  "sections": [
+    {
+      "heading_en": "Recreating Cosmic History",
+      "heading_vi": "Tái tạo lịch sử vũ trụ",
+      "body_en": "Developed by experts at the Center for Astrophysics, a new computational model named Lumina tracks the complex interplay between ordinary matter, radiation, and invisible forces across vast cosmic distances. By spanning a volume significantly larger than previous projects, the system allows researchers to examine how the earliest galaxies interacted with massive surrounding gas clouds over immense timescales.",
+      "body_vi": "Được phát triển bởi các chuyên gia tại Trung tâm Vật lý thiên văn, một mô hình tính toán mới mang tên Lumina theo dõi sự tương tác phức tạp giữa vật chất thông thường, bức xạ và các lực vô hình trên khoảng cách vũ trụ lớn. Bằng cách bao phủ một thể tích lớn hơn đáng kể so với các dự án trước đây, hệ thống cho phép các nhà nghiên cứu kiểm tra cách các thiên hà sớm nhất tương tác với các đám mây khí khổng lồ xung quanh trong suốt khoảng thời gian vô tận."
+    },
+    {
+      "heading_en": "Tracking Helium Transformation",
+      "heading_vi": "Theo dõi sự biến đổi của heli",
+      "body_en": "A key breakthrough of this project is its ability to track the transformation of helium on a massive scale while simultaneously [p:modeling the surrounding environment]. This unprecedented detail lets astronomers investigate the relationship between evolving luminous structures and the gas filling interstellar space, marking a major step forward in understanding cosmic evolution.",
+      "body_vi": "Một bước đột phá quan trọng của dự án này là khả năng theo dõi sự biến đổi của nguyên tố heli (*helium*) trên quy mô lớn trong khi đồng thời [p:mô phỏng môi trường xung quanh]. Chi tiết chưa từng có này cho phép các nhà thiên hà học nghiên cứu mối quan hệ giữa các cấu trúc phát sáng đang tiến hóa và lớp khí lấp đầy không gian giữa các vì sao, đánh dấu một bước tiến lớn trong việc hiểu về sự tiến hóa của vũ trụ."
+    },
+    {
+      "heading_en": "Supercomputing Powerhouse",
+      "heading_vi": "Sức mạnh siêu máy tính",
+      "body_en": "Generating this virtual cosmos required immense computing capacity, utilizing thousands of advanced processors on one of the planet's speediest supercomputers. This extraordinary processing strength enabled the team to simulate an exceptionally wide region without losing the fine resolution necessary to observe individual star-forming zones and black holes.",
+      "body_vi": "Việc tạo ra vũ trụ ảo này đòi hỏi năng lực điện toán khổng lồ, sử dụng hàng nghìn bộ xử lý tiên tiến trên một trong những siêu máy tính (*supercomputer*) nhanh nhất hành tinh. Sức mạnh xử lý phi thường này đã cho phép nhóm nghiên cứu mô phỏng một vùng rộng lớn đặc biệt mà không làm mất đi độ phân giải chi tiết cần thiết để quan sát từng khu vực hình thành sao và lỗ đen (*black hole*)."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261026225600.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/974/1080/1920",
+    "provider": "unsplash",
+    "author": "Greg Rakozy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Smithsonian scientists just recreated the first 2 billion years of the Universe",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/10/261026225600.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like a master blueprint helping engineers understand a vast skyscraper, this simulation acts as a guide to decode the universe's oldest secrets. Can you imagine what new discoveries await as astronomers test these theories against real telescope images?",
+    "vi": "Giống như một bản thiết kế tổng thể giúp các kỹ sư hiểu về một tòa nhà chọc trời khổng lồ, mô hình này đóng vai trò như một cẩm nang dẫn đường để giải mã những bí mật cổ xưa nhất của vũ trụ. Bạn có thể tưởng tượng những khám phá mới nào đang chờ đón khi các nhà thiên hà học kiểm tra các lý thuyết này với hình ảnh kính viễn vọng thực tế không?"
+  },
+  "applySteps": {
+    "en": [
+      "Compare the new simulation data with existing telescope observations",
+      "Identify any unexpected differences in cosmic evolution theories",
+      "Explore educational resources about early galaxy formation"
+    ],
+    "vi": [
+      "So sánh dữ liệu mô phỏng mới với các quan sát từ kính viễn vọng hiện có",
+      "Xác định bất kỳ sự khác biệt bất ngờ nào trong các lý thuyết tiến hóa vũ trụ",
+      "Khám phá các tài nguyên giáo dục về sự hình thành thiên hà sớm"
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/974/1080/1920",
+      "provider": "unsplash",
+      "author": "Greg Rakozy",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/716/1080/1920",
+      "provider": "unsplash",
+      "author": "Matthew Kosloski",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BT_BUEwjeQg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwBACdASoQABwAPu1kqU2ppaQiMAgBMB2JYwCdMoMzGOSh5aJNw3SV+y7lBAAAAP773Qz/YLhT57YnFO0i8CurRbwwUzbG47tgA8zABLhujHuNiLOQ+7tI6u+5eMGfmlqn7JShJaAAAA==",
+  "dominant": "#3b3134",
+  "publishAt": "2026-10-28T02:20:51.028Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}

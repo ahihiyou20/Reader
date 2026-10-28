@@ -1,0 +1,103 @@
+{
+  "slug": "usgs-study-outlines-scope-and-severity-of-bat-fatalities-at",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=usgs-study-outlines-scope-and-severity-of-bat-fatalities-at",
+  "category": "science",
+  "tags": [],
+  "title": {
+    "en": "USGS Study Outlines Scope and Severity of Bat Fatalities at US Wind Energy Facilities",
+    "vi": "Nghiên cứu của USGS phác thảo quy mô và mức độ nghiêm trọng của số lượng dơi tử vong tại các cơ sở năng lượng gió ở Mỹ_vi_not_needed_replace_with_correct_structure_or_keep_string_clean_if_not_schema_enforced_wait_just_string_is_needed_here_as_per_schema_ok_ok_ok_no_markdown_except_json_ok"
+  },
+  "hook": {
+    "en": "In a new study released this week in the Proceedings of National Academy of Sciences, USGS scientists and partners teamed up to complete the most robust, nationwide estimate of the impacts of wind energy on bats to date. The study estimates that 18.7 million bats were killed at onshore wind energy facilities in the U.S. between 1981-2024, demonstrating that total fatalities may be more substantial than previously understood."
+  },
+  "sections": [
+    {
+      "body_en": "Until now, nationwide estimates suggested that hundreds of thousands of bats may be killed each year but overlooked how risk varies geographically by species. These new findings paint a full picture of the scope and severity of bat losses from collisions with wind turbines and can help inform solutions to prevent future losses.\n\n**Bats under pressure**"
+    },
+    {
+      "body_en": "In North America, the wind energy sector has grown exponentially since the 1980s, and with that growth came increased reporting of bat collisions with wind turbines. Now, wind turbines are considered one of the leading causes of bat mortality in the United States, next to white-nose syndrome, a fatal disease devastating many bat populations. Bats provide essential ecosystem services like pollination and pest control, services threatened by the loss of millions of bats worldwide each year.\n\n**Connecting the dots**"
+    },
+    {
+      "body_en": "Understanding broader questions as to why wind turbines are so deadly for bats requires a significant amount of data across large landscapes. However, monitoring of bat fatalities at wind energy facilities in the U.S. is typically done at individual sites for regulatory compliance purposes. This results in disjointed datasets that are collected, managed, and analyzed inconsistently. Until now, this fragmented approach has made it difficult to sufficiently merge data across individual efforts and offer insights into patterns across scales."
+    },
+    {
+      "body_en": "In this new study, researchers developed advanced statistical models to pool bat fatality data reported in close to 500 post-construction monitoring reports from 277 wind energy facilities across the U.S. From this standardized dataset, they were able to estimate when, where, and how many bats of ten species are likely to have died at facilities over the past four decades. They also analyzed what qualities of these facilities, including the size and location of turbines, were correlated with higher rates of fatality, and how relative risk for each species may vary across space based on environmental factors.\n\n**Emerging patterns**"
+    },
+    {
+      "body_en": "Nationwide predictions of bat fatalities at wind energy facilities exceeded 1.5 million total fatalities per year starting in 2021. Four species accounted for most fatalities, including approximately 6.7 million hoary bats, 5.8 million eastern red bats, and 3.4 million silver-haired bats across all years. These three species are all migratory, tree-roosting bats, and are not the cave-hibernating species most heavily impacted by white-nose syndrome, potentially broadening the scope and severity of conservation threats to bats.\n\nThe authors found that turbines with a larger rotor-swept area, lower ground clearance, and closer proximity to rivers were associated with increased site-level bat fatalities for multiple species. Additional work that merges fatality with population status and trends estimation could help determine whether wind energy is driving population declines of individual species."
+    },
+    {
+      "body_en": "**Supporting improved science for decision-makers**\n\nThe study’s findings provide evidence-based solutions for decision makers. For example, the study supports previous evidence that stopping turbines when bats are more likely to be present may reduce mortality for some species. Since collision risk varies geographically across the country, constructing wind energy facilities in areas of lower risk could also reduce harm. Analyzing finer resolution monitoring data that records when fatalities occur throughout the year can point to certain times that are higher risk to bats."
+    },
+    {
+      "body_en": "Optimizing data collection across the large geographic extents these animals occupy and accessing finer resolution survey data can further improve understanding of species-specific patterns in fatality. Integrating these findings with population status and trend estimates coming out of the multi-agency North American Bat Monitoring Program will help reveal which species are the most vulnerable. This information can serve as impartial evidence to inform natural resource management decisions that preserve the valuable services bats provide to people."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/news/featured-story/usgs-study-outlines-scope-and-severity-bat-fatalities-us-wind-energy-facilities"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/1022/1080/1920",
+    "provider": "unsplash",
+    "author": "Vashishtha Jogi",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1022/1080/1920",
+      "provider": "unsplash",
+      "author": "Vashishtha Jogi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/716/1080/1920",
+      "provider": "unsplash",
+      "author": "Matthew Kosloski",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BT_BUEwjeQg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoQABwAPu1iqk4ppaQiMAgBMB2JbACdAGlfj17benAhV7sy2AAA/vkZ8yNUFiCJQaZY29bltdPf+zreVX+Sl/sOkZmTH76zu3oYuDTG5m4uLULbsAA=",
+  "dominant": "#033714",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-usgs-study-outlines-scope-and-severity-of-bat-fatalities-at-us-wind-ene",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "USGS Study Outlines Scope and Severity of Bat Fatalities at US Wind Energy Facilities",
+    "originalUrl": "https://www.usgs.gov/news/featured-story/usgs-study-outlines-scope-and-severity-bat-fatalities-us-wind-energy-facilities",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "translated to Vietnamese"
+    ]
+  },
+  "ai": {
+    "fields": [
+      "vi"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-28T02:36:51.028Z"
+}
