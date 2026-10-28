@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "paragraphs": [
+        "Former president of Venezuela Nicolás Maduro with current Interim President Delcy Rodríguez and Chinese ambassador in Venezuela Lan Hu. Photo by Probox. Used with permission.",
+        "*This article was originally published by ProBox on September 21, 2026. An edited version is republished by Global Voices thanks to a media partnership agreement. It is also* *part of Global Voices’ October 2026 Spotlight series, “Big Tech and Authoritarianism.” You can support this coverage by donating here.*",
+        "Venezuela may be one step away from becoming one of the first countries outside the People’s Republic of China to adopt the new generation of Chinese artificial intelligence systems for mass surveillance and political control, according to a report from the Australian Strategic Policy Institute (ASPI).",
+        "The report reveals that in July 2025, the Venezuelan government signed a memorandum of understanding with iFlytek, a Chinese company that has been on the U.S. trade sanctions list since 2019 for its role in the repression of Muslim minorities in Xinjiang. The agreement to jointly develop Artificial intelligence in Venezuela was negotiated by Delcy Rodríguez, then vice president and now Venezuela’s interim president.",
+        "The report was written by Fergus Ryan, Bethany Allen, and Nathan Attrill of ASPI’s Cybersecurity, Technology, and Security Program, along with external contributors Mariví Marín (executive director of ProBox), Shannon van Sant, and analyst Alex Colville. The report was published in September 2026 by the Australian Strategic Policy Institute, with funding from the Human Rights Foundation."
+      ]
+    },
+    {
+      "heading": "An infrastructure that was already in place",
+      "paragraphs": [
+        "The report, titled “Warning Signals: Venezuela and the Risk of Chinese AI-Enabled Digital Authoritarianism”, documents that Venezuela doesn’t need to build a surveillance system from scratch — it already has one, built largely on Chinese technology through importing cameras, networks, identity systems and command centres from Chinese firms in the past two decades.",
+        "While the resulting architecture is fragmented, unevenly deployed and technically constrained, ASPI's researchers identified six interconnected technological layers in the imported surveillance system: telecommunications, digital identity, central databases, video surveillance, internet control, and now, analytics and artificial intelligence. All of them were built or enhanced with support from companies such as Huawei, ZTE, CEIEC, Hikvision, and Dahua.",
+        "Graphic made by Probox. Used with permission.",
+        "At the core of this system’s identity layer is the Carnet de la Patria (Homeland Card), a digital ID linked to social benefits. The report states it had 21.8 million registered users as of January 2023—roughly three-quarters of Venezuela’s population—and served as many as 14.2 million people each month. A layer of central databases could cross-reference identity information, biometric data, and social welfare data.",
+        "The report also describes a network of video surveillance and command centres (such as the VEN911 and SIMA systems) capable of monitoring public spaces and coordinating responses in real time, and a telecommunications infrastructure that, by channelling a large portion of the country’s data traffic, functions as an additional checkpoint.",
+        "While the above technologies were imported through separate contracts, they reinforce one another and form a partially connected surveillance system, enabling government agencies to identify, monitor, and take action regarding citizens’ behaviour."
+      ]
+    },
+    {
+      "heading": "What changes with the integration of AI?",
+      "paragraphs": [
+        "According to the report, iFlytek's AI technology will further integrate the pre-existing layers of surveillance infrastructure into a more comprehensive system, making it faster, more scalable, and harder to evade.",
+        "Facial recognition, voice identification, and automated database cross-referencing tools could be used to identify, locate, and profile individuals without any visible human action, such as attending a protest.",
+        "iFlytek is one of the world’s leading providers of voice recognition and content moderation technology. The same report explains that the company promotes a product capable of detecting “more than 100 types” of politically sensitive content in voice messages, and that its technology is integrated into China’s judicial and censorship system.",
+        "iFlytek itself already sells a voiceprint identification service that compares recordings against a database to identify a person among thousands; this is precisely the same technology the company has provided to public security authorities in Xinjiang, according to ASPI's report.",
+        "If that capability were combined with the network of cameras and the identity records in the Carnet de la Patria, the risk is that the government would no longer need to rely on someone’s visible participation in a protest to identify them, and could instead preemptively flag individuals based on patterns of association, movement, or activity on social media even before any specific incident occurs.",
+        "Added to all this is a pattern of opacity. As has been the case for years with technology agreements between Venezuela and the People’s Republic of China, the details of the memorandum with iFlytek have not been made public in their entirety; this makes it difficult to ascertain the actual scope of the agreement, which is why the report recommends demanding the full publication of these agreements.",
+        "Despite this lack of transparency, there is at least one precedent that the government itself has publicly acknowledged. In January 2025, the National Chamber of Popular Self-Government was launched—a command center that centralizes information from thousands of community councils and districts across the country—which Maduro described as operating “with Chinese technology and artificial intelligence.”",
+        "The agreement with iFlytek was signed months before Maduro’s capture by U.S. forces in January 2026. Delcy Rodríguez, who negotiated it directly at the time, now serves as the U.S.-backed interim president. However, the report notes that during her tenure, the Venezuelan surveillance apparatus has not been dismantled. This is the same conclusion reached by the UN International Fact-Finding Mission, which documented that the surveillance infrastructure remained in place following the change in government.",
+        "The authors argue that, despite this, there is a window of opportunity. The interim government’s current dependence on the U.S. could be used to demand the cancellation of the memorandum with iFlytek before this technological escalation is implemented."
+      ]
+    },
+    {
+      "heading": "What can be done?",
+      "paragraphs": [
+        "Given the risks that China’s technological cooperation poses to human rights in Venezuela, the report offers seven recommendations:",
+        "• Support Venezuelan civil society by increasing funding, protection, and training in digital security for organizations and journalists under threat, and by expediting humanitarian visas for those who are being persecuted.",
+        "• Provide free access to AI tools so that civil society can circumvent censorship and protect itself from government surveillance.",
+        "• The U.S. should demand that Rodríguez immediately cancel the memorandum with iFlytek, before it is fully integrated into the surveillance systems.",
+        "• Have the Secretary of State press Rodríguez to dismantle the current surveillance system, including the “Carnet de la Patria”.",
+        "• Plan for liberal reform by drafting privacy laws and oversight mechanisms now, in preparation for when political openness emerges.",
+        "• Impose sanctions for abuse of surveillance by expanding penalties to include officials and companies that facilitate digital repression.",
+        "• Establish security standards for foreign AI used by governments, including independent evaluation and transparency about the origin of the models."
+      ]
+    }
+  ]
+}

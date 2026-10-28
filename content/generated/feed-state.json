@@ -10,6 +10,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/books/safer-book"
     },
+    "https://bigthink.com/books/sniff-book": {
+      "at": "2026-10-28T02:21:43.462Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/books/sniff-book"
+    },
     "https://bigthink.com/collections/made-in-our-image": {
       "at": "2026-10-26T01:14:36.769Z",
       "feed": "big-think",
@@ -29,6 +34,11 @@
       "at": "2026-10-23T16:48:31.512Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/full-interview/spotting-narcissism-durvasula"
+    },
+    "https://bigthink.com/series/the-big-think-interview/belonging-pseudo-self": {
+      "at": "2026-10-28T02:25:14.916Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/belonging-pseudo-self"
     },
     "https://bigthink.com/series/the-big-think-interview/universe-dark-energy": {
       "at": "2026-10-23T16:57:10.539Z",
@@ -59,6 +69,16 @@
       "at": "2026-10-24T01:44:24.071Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/strange-maps/roman-road-networks"
+    },
+    "https://bigthink.com/the-well/the-consciousness-theory-that-connects-you-to-everything": {
+      "at": "2026-10-28T02:25:40.265Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/the-well/the-consciousness-theory-that-connects-you-to-everything"
+    },
+    "https://en.wikipedia.org/wiki/1986_New_York_Mets_season": {
+      "at": "2026-10-28T02:21:19.680Z",
+      "feed": "wikipedia-featured",
+      "slug": "1986-new-york-mets-season"
     },
     "https://en.wikipedia.org/wiki/1986%E2%80%9387_Gillingham_F.C._season": {
       "at": "2026-10-26T01:15:28.782Z",
@@ -104,6 +124,11 @@
       "at": "2026-10-23T16:56:46.998Z",
       "feed": "wikipedia-featured",
       "slug": "raaf-area-commands"
+    },
+    "https://en.wikipedia.org/wiki/Second_Battle_of_Newtonia": {
+      "at": "2026-10-28T02:24:40.469Z",
+      "feed": "wikipedia-featured",
+      "error": "Unterminated string in JSON at position 206405 (line 2 column 206404)"
     },
     "https://en.wikipedia.org/wiki/The_Demi-Virgin": {
       "at": "2026-10-25T01:13:23.421Z",
@@ -195,6 +220,16 @@
       "feed": "global-voices",
       "slug": "vote-young-yet-govern-much-later-west-african-youth-s-strugg"
     },
+    "https://globalvoices.org/2026/10/27/fish-scarcity-tar-balls-and-displaced-dolphins-the-hidden-costs-of-offshore-platforms-in-cameroon-waters": {
+      "at": "2026-10-28T02:22:17.714Z",
+      "feed": "global-voices",
+      "slug": "fish-scarcity-tar-balls-and-stranded-dolphins-the-hidden-cos"
+    },
+    "https://globalvoices.org/2026/10/27/warning-signals-venezuela-and-the-risk-of-ai-powered-chinese-digital-authoritarianism": {
+      "at": "2026-10-28T02:21:00.767Z",
+      "feed": "global-voices",
+      "slug": "warning-signals-venezuela-and-the-risk-of-ai-powered-chinese"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -270,10 +305,20 @@
       "feed": "nautilus",
       "slug": "new-plant-eating-dinosaur-discovered-in-england-museum-colle"
     },
+    "https://nautil.us/theres-a-new-international-food-pyramid-in-town-1286121": {
+      "at": "2026-10-28T02:25:40.177Z",
+      "feed": "nautilus",
+      "slug": "an-international-team-unveils-a-new-research-backed-food-pyr"
+    },
     "https://nautil.us/these-are-the-most-stunning-weather-photos-of-the-year-1286043": {
       "at": "2026-10-23T16:47:06.483Z",
       "feed": "nautilus",
       "error": "Only 151 words readable (paywall or script-only page?)"
+    },
+    "https://nautil.us/this-prehistoric-creature-is-the-only-ocean-dwelling-amphibian-ever-discovered-1286127": {
+      "at": "2026-10-28T02:25:14.783Z",
+      "feed": "nautilus",
+      "slug": "ancient-marine-amphibian-discovered-in-china"
     },
     "https://nautil.us/was-this-the-exact-date-of-van-goghs-starry-night-1286057": {
       "at": "2026-10-25T01:15:29.593Z",
@@ -284,6 +329,11 @@
       "at": "2026-10-26T01:15:37.642Z",
       "feed": "nautilus",
       "slug": "researchers-reveal-facial-features-of-mysterious-denisovans"
+    },
+    "https://nautil.us/what-can-we-learn-about-happiness-from-the-people-who-study-it-1286130": {
+      "at": "2026-10-28T02:21:43.382Z",
+      "feed": "nautilus",
+      "slug": "what-decades-of-happiness-research-reveal-about-a-good-life"
     },
     "https://ourworldindata.org/how-much-development-aid-is-spent-on-climate-change": {
       "at": "2026-10-27T02:06:55.421Z",
@@ -315,6 +365,11 @@
       "feed": "psyche",
       "slug": "why-mental-health-conditions-disrupt-human-motivation"
     },
+    "https://psyche.co/ideas/on-japans-shinkansen-trains-pork-buns-split-reality-in-two": {
+      "at": "2026-10-28T02:22:24.524Z",
+      "feed": "psyche",
+      "slug": "why-shinkansen-pork-buns-spark-fierce-social-disputes"
+    },
     "https://psyche.co/ideas/what-life-in-denmark-shows-about-the-power-of-emotional-safety": {
       "at": "2026-10-26T01:14:30.204Z",
       "feed": "psyche",
@@ -340,6 +395,11 @@
       "feed": "psyche",
       "slug": "writing-for-my-mother"
     },
+    "https://psyche.co/videos/a-bangkok-cabbie-finds-balance-in-a-thrilling-street-sport": {
+      "at": "2026-10-28T02:25:33.911Z",
+      "feed": "psyche",
+      "error": "Only 125 words readable (paywall or script-only page?)"
+    },
     "https://psyche.co/videos/dont-reduce-emotions-to-biology-theyre-contingent-and-emergent": {
       "at": "2026-10-26T01:15:04.471Z",
       "feed": "psyche",
@@ -354,6 +414,11 @@
       "at": "2026-10-25T01:14:55.157Z",
       "feed": "psyche",
       "error": "Only 192 words readable (paywall or script-only page?)"
+    },
+    "https://psyche.co/videos/one-mans-10-year-mission-to-film-a-plane-engulfed-by-the-moon": {
+      "at": "2026-10-28T02:21:34.869Z",
+      "feed": "psyche",
+      "error": "Only 153 words readable (paywall or script-only page?)"
     },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-2-nov-2026": {
       "at": "2026-10-26T01:13:51.530Z",
@@ -390,10 +455,20 @@
       "feed": "nasa-science",
       "slug": "tinga-s-tale"
     },
+    "https://science.nasa.gov/blogs/notes-from-the-field/2026/10/27/adventures-in-wildfire-smoke-stratospheric-ballooning": {
+      "at": "2026-10-28T02:22:04.447Z",
+      "feed": "nasa-science",
+      "slug": "adventures-in-wildfire-smoke-stratospheric-ballooning"
+    },
     "https://science.nasa.gov/blogs/swift/2026/10/23/nasas-swift-mission-ends-ahead-of-re-entry": {
       "at": "2026-10-24T01:41:31.997Z",
       "feed": "nasa-science",
       "error": "Only 211 words of text found"
+    },
+    "https://science.nasa.gov/blogs/uvex/2026/10/27/nasas-uvex-space-telescope-successfully-passes-key-milestone": {
+      "at": "2026-10-28T02:25:54.258Z",
+      "feed": "nasa-science",
+      "error": "Only 190 words of text found"
     },
     "https://science.nasa.gov/earth/earth-observatory/el-nino-then-and-now": {
       "at": "2026-10-23T16:57:59.314Z",
@@ -424,6 +499,11 @@
       "at": "2026-10-23T16:58:54.393Z",
       "feed": "conversation",
       "slug": "america-s-death-penalty-why-executions-are-rising-again"
+    },
+    "https://theconversation.com/anthropics-record-us-2-trillion-stock-market-listing-highlights-the-growing-risks-for-all-of-us-295243": {
+      "at": "2026-10-28T02:20:50.792Z",
+      "feed": "conversation",
+      "error": "Unterminated string in JSON at position 65624 (line 2 column 65623)"
     },
     "https://theconversation.com/frances-casseurs-why-the-term-fails-to-do-justice-to-the-extent-of-looting-and-spiralling-unrest-294805": {
       "at": "2026-10-26T01:13:58.680Z",
@@ -460,6 +540,11 @@
       "feed": "conversation",
       "slug": "napoleon-can-be-partly-blamed-for-gen-z-s-weightlifting-obse"
     },
+    "https://theconversation.com/terror-of-kings-why-the-1066-appearance-of-halleys-comet-terrified-the-medieval-world-293296": {
+      "at": "2026-10-28T02:26:01.052Z",
+      "feed": "conversation",
+      "slug": "terror-of-kings-why-the-1066-appearance-of-halley-s-comet-te"
+    },
     "https://theconversation.com/the-crucible-arthur-millers-morality-tale-was-as-much-a-reaction-to-his-own-marital-failings-as-it-was-to-the-red-scare-294832": {
       "at": "2026-10-23T16:56:11.077Z",
       "feed": "conversation",
@@ -485,6 +570,16 @@
       "feed": "conversation",
       "slug": "we-changed-the-system-how-serbian-students-ended-alexander-v"
     },
+    "https://theconversation.com/whats-the-difference-between-green-yellow-and-red-capsicums-its-more-than-what-you-see-292116": {
+      "at": "2026-10-28T02:22:39.502Z",
+      "feed": "conversation",
+      "slug": "what-s-the-difference-between-green-yellow-and-red-capsicums"
+    },
+    "https://theconversation.com/why-ultra-orthodox-parties-hold-so-much-sway-in-israeli-politics-294218": {
+      "at": "2026-10-28T02:22:07.579Z",
+      "feed": "conversation",
+      "slug": "why-ultra-orthodox-parties-hold-so-much-sway-in-israeli-poli"
+    },
     "https://theconversation.com/youth-protests-across-europe-the-overlapping-crises-facing-gen-z-294754": {
       "at": "2026-10-24T01:40:01.768Z",
       "feed": "conversation",
@@ -494,6 +589,11 @@
       "at": "2026-10-23T16:48:42.349Z",
       "feed": "nasa-science",
       "error": "Only 124 words of text found"
+    },
+    "https://www.nasa.gov/marshall-marshall-space-flight-missions-office-of-data-science-and-informatics-odsi-publications": {
+      "at": "2026-10-28T02:18:52.116Z",
+      "feed": "nasa-science",
+      "error": "No text found"
     },
     "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions": {
       "at": "2026-10-24T01:39:52.448Z",
@@ -509,6 +609,11 @@
       "at": "2026-10-23T16:58:49.474Z",
       "feed": "nasa-science",
       "slug": "nasa-invites-media-to-2026-von-braun-space-exploration-sympo"
+    },
+    "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation": {
+      "at": "2026-10-28T02:22:32.845Z",
+      "feed": "nasa-science",
+      "slug": "nasa-invites-media-to-crew-completion-of-yearlong-mars-simul"
     },
     "https://www.nasa.gov/podcasts/houston-we-have-a-podcast/chapea-2-audio-log-4": {
       "at": "2026-10-23T16:55:34.781Z",
@@ -564,6 +669,21 @@
       "at": "2026-10-27T02:13:31.248Z",
       "feed": "npr-health",
       "slug": "new-cancer-vaccine-trial-shows-promise-against-melanoma"
+    },
+    "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine": {
+      "at": "2026-10-28T02:25:21.751Z",
+      "feed": "npr-health",
+      "slug": "fastest-spreading-ebola-outbreak-surpasses-ten-thousand-case"
+    },
+    "https://www.npr.org/2026/10/27/nx-s1-6009462-e1/some-people-with-meat-allergies-from-alpha-gal-syndrome-turn-to-exotic-alternatives": {
+      "at": "2026-10-28T02:21:50.106Z",
+      "feed": "npr-health",
+      "slug": "finding-safe-red-meat-alternatives-after-tick-borne-allergie"
+    },
+    "https://www.npr.org/2026/10/27/nx-s1-6010370/el-nino-floods-nairobi-green-army": {
+      "at": "2026-10-28T02:25:46.299Z",
+      "feed": "npr-health",
+      "slug": "nairobi-mobilizes-green-army-to-fight-severe-el-nino-floods"
     },
     "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019": {
       "at": "2026-10-24T01:40:35.485Z",
@@ -645,6 +765,21 @@
       "feed": "sciencedaily",
       "slug": "how-aerobic-exercise-physically-rewires-the-nervous-system-o"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261026225600.htm": {
+      "at": "2026-10-28T02:25:52.627Z",
+      "feed": "sciencedaily",
+      "slug": "simulating-the-universe-s-first-two-billion-years"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261026225603.htm": {
+      "at": "2026-10-28T02:25:27.726Z",
+      "feed": "sciencedaily",
+      "slug": "james-webb-spots-scorching-planet-protected-by-giant-sunscre"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261026225606.htm": {
+      "at": "2026-10-28T02:21:54.670Z",
+      "feed": "sciencedaily",
+      "slug": "common-anti-inflammatory-medications-may-help-dangerous-viru"
+    },
     "https://www.usgs.gov/centers/eesc/news/usgs-eastern-ecological-science-center-2026-society-environmental-toxicology-and": {
       "at": "2026-10-24T01:44:13.224Z",
       "feed": "usgs",
@@ -655,10 +790,20 @@
       "feed": "usgs",
       "error": "Only 215 words of text found"
     },
+    "https://www.usgs.gov/centers/sawsc/news/sawsc-hydrologist-presents-biennial-okefenokee-science-symposium": {
+      "at": "2026-10-28T02:25:08.482Z",
+      "feed": "usgs",
+      "slug": "sawsc-hydrologist-presents-at-the-biennial-okefenokee-scienc"
+    },
     "https://www.usgs.gov/centers/western-geographic-science-center/news/global-food-and-water-security-support-analysis-0": {
       "at": "2026-10-25T01:15:24.175Z",
       "feed": "usgs",
       "slug": "the-global-food-and-water-security-support-analysis-data-gfs"
+    },
+    "https://www.usgs.gov/news/featured-story/usgs-study-outlines-scope-and-severity-bat-fatalities-us-wind-energy-facilities": {
+      "at": "2026-10-28T02:21:34.540Z",
+      "feed": "usgs",
+      "slug": "usgs-study-outlines-scope-and-severity-of-bat-fatalities-at"
     },
     "https://www.usgs.gov/news/national-news-release/usgs-releases-assessment-undiscovered-natural-gas-resources-alaskas": {
       "at": "2026-10-26T01:14:24.726Z",
@@ -669,6 +814,11 @@
       "at": "2026-10-27T02:13:19.817Z",
       "feed": "usgs",
       "slug": "media-alert-low-level-flights-to-image-geology-over-western"
+    },
+    "https://www.usgs.gov/observatories/hvo/news/new-publication-geochemistry-kilauea-lava-fountains": {
+      "at": "2026-10-28T02:25:33.599Z",
+      "feed": "usgs",
+      "error": "Only 12 words of text found"
     },
     "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-kilauea-summit-monitoring-overflight-8": {
       "at": "2026-10-24T01:40:24.424Z",

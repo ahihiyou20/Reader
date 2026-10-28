@@ -1,0 +1,138 @@
+{
+  "slug": "adventures-in-wildfire-smoke-stratospheric-ballooning",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=adventures-in-wildfire-smoke-stratospheric-ballooning",
+  "category": "science",
+  "tags": [
+    "wildfire smoke",
+    "stratospheric ballooning",
+    "pyrocumulonimbus",
+    "atmospheric science"
+  ],
+  "title": {
+    "en": "Adventures in Wildfire Smoke Stratospheric Ballooning",
+    "vi": "Những cuộc phiêu lưu thả khinh khí cầu tầng bình lưu săn khói cháy rừng"
+  },
+  "hook": {
+    "en": "Our first excitement of the summer came on July 15, 2026, when Jean-Paul contacted us about a pyroCb smoke plume that he and Rubel were tracking. They predicted that the plume was coming right over southern Minnesota! Geostationary satellite images confirmed that the plume was following the predicted path. With that confirmation, Rubel began running the beefier Langley Trajectory Model (LaTM) simulations to give us a more precise window of opportunity.",
+    "vi": "Sự hào hứng đầu tiên của mùa hè đến vào ngày [y:15 tháng 7, 2026], khi Jean-Paul liên lạc với chúng tôi về một đám khói bão lửa (*pyroCb*) mà anh và Rubel đang theo dõi. Họ dự đoán rằng đám khói đang bay thẳng đến khu vực [y:phía nam Minnesota]! Các hình ảnh vệ tinh địa tĩnh đã xác nhận rằng đám khói đang di chuyển theo đúng lộ trình dự đoán. Với sự xác nhận đó, Rubel bắt đầu chạy mô hình Quỹ đạo Langley (*Langley Trajectory Model*) chi tiết hơn để cung cấp cho chúng tôi một khoảng thời gian cơ hội chính xác hơn."
+  },
+  "sections": [
+    {
+      "body_en": "Each additional simulation predicted the plume crossing Minnesota and we even got a visual clue: “I woke early, and I could see a red sun in front of me while taking my dog for a walk,” remarked Jean-Paul. Clearly, something was in the air, and Jean-Paul’s observation boded well for us: Virginia, where Jean-Paul lives, was in the path of the predicted trajectory the pyroCb plume would follow before it looped around toward Minnesota."
+    },
+    {
+      "body_en": "Our first official flight began with a [y:1 a.m. alarm]. According to Rubel’s LaTM predictions, we had a small window to act. The plume was traveling over the southern border of Minnesota, a two-hour drive away, but would be gone by about 7 a.m. on Friday, July 17. So, toting the equipment we had calibrated and packed on Thursday afternoon, we arrived at the lab in the middle of the night to load everything into two rental vans.\n\nIt was a peaceful drive to the launch site; not many people cruise the streets at 3 a.m.! We set up our equipment in a [y:Walmart parking lot] in Austin, Minnesota, with Isaiah and Lani assembling the ground stations and Ellie and Varsha prepping the POPC and the radiosondes for flight."
+    },
+    {
+      "body_en": "We dressed in our yellow fire-resistant hoodies and headlamps and inflated the balloon. Because launching during the night comes with extra regulations, we waited until the clock hit [y:5:10 a.m.] to release the balloon, its recovery siren beeping as the stack soared above the parking lot and out of sight.\n\nDuring the flight Lani and Ellie stayed at the launch site to run the ground station, monitoring the radiosonde packets to ensure the POPC was collecting data. The mosquitos attacked in swarms, but the sunrise made it worth it!"
+    },
+    {
+      "body_en": "Isaiah, Varsha, and James went chasing, but not without a quick breakfast stop first. They followed the trajectory of the balloon, cross-referencing the GPS location with the predicted trajectory, and arrived in time to watch the balloon land in a cornfield just over the border in northern Iowa at [y:7:20 a.m.] Being able to arrive in time to watch a balloon that we had launched also land was a rare treat! Isaiah and Varsha waded through the wet stalks of corn, following the audio siren, and updated coordinates from the trackers, and recovered the payloads successfully."
+    },
+    {
+      "body_en": "But finding the stack was only the beginning! We wouldn’t know until after we arrived back at the lab and extracted the data from the POPC whether or not we had intercepted the wildfire smoke plume. There was certainly anticipation in the air as we drove back to the Twin Cities, but it was dampened by the exhaustion of the early wake-up call."
+    },
+    {
+      "body_en": "At the lab, Isaiah downloaded the raw POPC and iMet data and ran it through a parser script created by Jean-Paul that combined the flight characteristics (such as altitude) of the iMet with the aerosol counts and concentrations from the POPC. Graphs revealed a massive spike in aerosol count and concentration [y:between 5 and 6 miles] (8 and 10 kilometers), the exact altitude range we had predicted the smoke would be in. We had intercepted our first wildfire smoke plume!\n\nIn some ways, this first flight was also a test flight. It was preparation for higher-impact flights where we could coordinate operations and compare data with other projects studying atmospheric smoke, such as INSPYRE, and contribute even more to the small but growing knowledge of pyroCbs."
+    },
+    {
+      "heading_en": "Second “Real” Flight: August 12, 2026",
+      "body_en": "The second smoke plume we sampled originated from the Widemouth 2 wildfire in Utah. It had produced a pyroCb on August 2, over a week earlier, and the INSPYRE team had successfully flown their NCAR GV aircraft into the smoke plume the next day, collecting aerosol data between 39,000 and 44,000 feet (12 and 13 kilometers) in altitude. We felt that it was important to try to sample this same plume because NASA could benefit from seeing the evolution of aerosol concentration as the days went by. It was agreed that the plume had spread out so much that it would cover the entire southern half of Minnesota on the morning and afternoon of August 12."
+    },
+    {
+      "body_en": "The Smokestack team launched the balloon from Glencoe Silver Lake Public School. This launch presented a difficulty: we were without our professor! Nevertheless, after a slight struggle with getting our onboard flight computer working, we rigged up the stack, set up the ground stations, and inflated the balloon. At 12:20 p.m. local time, our stack was in the air with the POPC running and both radiosondes transmitting data.\n\nThe balloon was in the air for just over 2 hours, following a southeastern trajectory right into the plume, and reaching a maximum altitude of [y:102,000 feet] (31 kilometers) before landing in a Wanamingo, Minnesota, soybean field not far from the road, making recovery easy."
+    },
+    {
+      "body_en": "Back at the lab, our data analysis showed a spike in the aerosol concentration [y:between 6 and 8 miles] (9 and 13 kilometers), which meant that the smoke plume was likely caught. It was much less concentrated at the altitude that we caught it at, indicating that the plume itself was much older. It will require more work to fully verify the origin of the plume."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "NASA (2026)",
+      "url": "https://science.nasa.gov/blogs/notes-from-the-field/2026/10/27/adventures-in-wildfire-smoke-stratospheric-ballooning"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/1053/1080/1920",
+    "provider": "unsplash",
+    "author": "Anna Popović",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1053/1080/1920",
+      "provider": "unsplash",
+      "author": "Anna Popović",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/523/1080/1920",
+      "provider": "unsplash",
+      "author": "Harman Abiwardani",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/WLUHO9A_xik"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/564/1080/1920",
+      "provider": "unsplash",
+      "author": "Sebastian Boguszewicz",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwAIEC6LFZ6ZrFqW81NmcAAA/uqr/PE1fynh0XCzr53ckTF+MfJ6ev56J35Z9p60yu5yTxeCtrqftDvVCjrWRRjCwGe5UoOntuNimSNYD6b4xKvUvdb3vv12B5HE1VH8cGeERuIPWRBQ+u+mSwWM301Y9MD94IPWUnh9P+Ys2JL39MoAAA==",
+  "dominant": "#6c7c79",
+  "origin": {
+    "group": 1,
+    "sourceId": "science-nasa-gov-adventures-in-wildfire-smoke-stratospheric-ballooning",
+    "license": "PD",
+    "authors": [
+      "Christina Campen"
+    ],
+    "originalTitle": "Adventures in Wildfire Smoke Stratospheric Ballooning",
+    "originalUrl": "https://science.nasa.gov/blogs/notes-from-the-field/2026/10/27/adventures-in-wildfire-smoke-stratospheric-ballooning",
+    "publisher": "NASA",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Chasing stratospheric smoke plumes with weather balloons is like threading a moving needle in the dark using only math and teamwork. What complex data can you track today to catch a fleeting opportunity tomorrow?",
+    "vi": "Việc săn lùng các đám khói tầng bình lưu bằng khinh khí cầu thời tiết cũng giống như luồn một chiếc kim đang di chuyển trong bóng tối chỉ bằng toán học và tinh thần đồng đội. Bạn có thể theo dõi dữ liệu phức tạp nào hôm nay để nắm bắt cơ hội mong manh vào ngày mai?"
+  },
+  "applySteps": {
+    "en": [
+      "Check satellite images or tracking data to find a smoke plume or weather event near your location.",
+      "Calibrate and pack your tracking and data-collection equipment before heading to the launch site.",
+      "Monitor the ground station packets during the flight to ensure instruments are actively collecting data."
+    ],
+    "vi": [
+      "Kiểm tra hình ảnh vệ tinh hoặc dữ liệu theo dõi để tìm đám khói hoặc hiện tượng thời tiết gần khu vực của bạn.",
+      "Hiệu chuẩn và đóng gói thiết bị theo dõi và thu thập dữ liệu trước khi đến địa điểm phóng.",
+      "Theo dõi các gói tin từ trạm mặt đất trong suốt chuyến bay để đảm bảo các thiết bị đang tích cực thu thập dữ liệu."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-28T02:32:51.028Z"
+}
