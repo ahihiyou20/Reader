@@ -20,6 +20,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/collections/made-in-our-image"
     },
+    "https://bigthink.com/mini-philosophy/3-ways-to-find-and-nurture-better-friendships": {
+      "at": "2026-10-29T02:31:47.161Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/mini-philosophy/3-ways-to-find-and-nurture-better-friendships"
+    },
     "https://bigthink.com/perception-box/you-have-more-control-over-reality-than-you-think": {
       "at": "2026-10-27T02:10:09.845Z",
       "feed": "big-think",
@@ -35,6 +40,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/full-interview/spotting-narcissism-durvasula"
     },
+    "https://bigthink.com/series/the-big-think-interview/acedia-phones-contagion": {
+      "at": "2026-10-29T02:36:48.144Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/acedia-phones-contagion"
+    },
     "https://bigthink.com/series/the-big-think-interview/belonging-pseudo-self": {
       "at": "2026-10-28T02:25:14.916Z",
       "feed": "big-think",
@@ -44,6 +54,11 @@
       "at": "2026-10-23T16:57:10.539Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/universe-dark-energy"
+    },
+    "https://bigthink.com/starts-with-a-bang/five-divisions-how-far-space": {
+      "at": "2026-10-29T02:37:28.883Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/five-divisions-how-far-space"
     },
     "https://bigthink.com/starts-with-a-bang/invisibility-cloak-183582": {
       "at": "2026-10-25T01:15:29.637Z",
@@ -94,6 +109,11 @@
       "at": "2026-10-27T02:09:34.811Z",
       "feed": "wikipedia-featured",
       "error": "Unterminated string in JSON at position 239011 (line 2 column 239010)"
+    },
+    "https://en.wikipedia.org/wiki/Chimacum_Creek": {
+      "at": "2026-10-29T02:30:38.738Z",
+      "feed": "wikipedia-featured",
+      "slug": "chimacum-creek"
     },
     "https://en.wikipedia.org/wiki/Easy_on_Me": {
       "at": "2026-10-23T17:01:00.184Z",
@@ -230,6 +250,16 @@
       "feed": "global-voices",
       "slug": "warning-signals-venezuela-and-the-risk-of-ai-powered-chinese"
     },
+    "https://globalvoices.org/2026/10/28/bangladesh-weighs-tougher-cyber-law-as-ai-generated-abuse-targets-women": {
+      "at": "2026-10-29T02:36:24.361Z",
+      "feed": "global-voices",
+      "error": "Unterminated string in JSON at position 65594 (line 2 column 65593)"
+    },
+    "https://globalvoices.org/2026/10/28/support-global-voices-spotlight-justice-as-infrastructure": {
+      "at": "2026-10-29T02:30:34.672Z",
+      "feed": "global-voices",
+      "error": "Unterminated string in JSON at position 393034 (line 2 column 393033)"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -250,6 +280,11 @@
       "feed": "knowable",
       "error": "403 Forbidden — https://knowablemagazine.org/content/article/living-world/2026/why-animal-blood-comes-in-different-colors"
     },
+    "https://knowablemagazine.org/content/article/mind/2026/when-scammers-target-seniors": {
+      "at": "2026-10-29T02:31:41.672Z",
+      "feed": "knowable",
+      "error": "403 Forbidden — https://knowablemagazine.org/content/article/mind/2026/when-scammers-target-seniors"
+    },
     "https://knowablemagazine.org/content/article/physical-world/2026/alpine-rock-glaciers-persist-even-in-warming-world": {
       "at": "2026-10-23T16:47:28.797Z",
       "feed": "knowable",
@@ -264,6 +299,11 @@
       "at": "2026-10-26T01:16:32.239Z",
       "feed": "nautilus",
       "slug": "rare-fossil-sheds-light-on-the-ancient-origins-of-snakes"
+    },
+    "https://nautil.us/dead-star-offers-a-glimpse-into-our-solar-systems-future-1286164": {
+      "at": "2026-10-29T02:31:47.081Z",
+      "feed": "nautilus",
+      "slug": "dead-star-offers-a-glimpse-into-our-solar-system-s-future"
     },
     "https://nautil.us/forensic-facial-specialists-can-identify-people-using-just-a-couple-facial-features-1286039": {
       "at": "2026-10-23T16:57:10.451Z",
@@ -305,6 +345,11 @@
       "feed": "nautilus",
       "slug": "new-plant-eating-dinosaur-discovered-in-england-museum-colle"
     },
+    "https://nautil.us/the-quest-for-wisdom-in-turbulent-times-1286156": {
+      "at": "2026-10-29T02:37:28.803Z",
+      "feed": "nautilus",
+      "slug": "the-quest-for-wisdom-in-modern-life"
+    },
     "https://nautil.us/theres-a-new-international-food-pyramid-in-town-1286121": {
       "at": "2026-10-28T02:25:40.177Z",
       "feed": "nautilus",
@@ -319,6 +364,11 @@
       "at": "2026-10-28T02:25:14.783Z",
       "feed": "nautilus",
       "slug": "ancient-marine-amphibian-discovered-in-china"
+    },
+    "https://nautil.us/vultures-help-eliminate-pathogens-bird-flu-could-eliminate-them-1286160": {
+      "at": "2026-10-29T02:36:48.017Z",
+      "feed": "nautilus",
+      "slug": "vultures-face-h5n1-threat"
     },
     "https://nautil.us/was-this-the-exact-date-of-van-goghs-starry-night-1286057": {
       "at": "2026-10-25T01:15:29.593Z",
@@ -384,6 +434,11 @@
       "at": "2026-10-25T01:14:17.711Z",
       "feed": "psyche",
       "slug": "revisiting-the-sun-why-moderate-exposure-may-benefit-health"
+    },
+    "https://psyche.co/portraits/ellah-wakatama-the-godmother-of-african-books": {
+      "at": "2026-10-29T02:30:51.802Z",
+      "feed": "psyche",
+      "slug": "shaping-the-african-literary-canon"
     },
     "https://psyche.co/turning-points/transitioning-made-me-happy-but-it-came-with-a-high-price": {
       "at": "2026-10-26T01:16:26.163Z",
@@ -505,6 +560,16 @@
       "feed": "conversation",
       "error": "Unterminated string in JSON at position 65624 (line 2 column 65623)"
     },
+    "https://theconversation.com/as-french-protests-escalate-into-riots-they-may-prove-a-gift-for-marine-le-pens-right-wing-party-294673": {
+      "at": "2026-10-29T02:37:59.486Z",
+      "feed": "conversation",
+      "slug": "as-french-protests-escalate-into-riots-they-may-prove-a-gift"
+    },
+    "https://theconversation.com/eus-new-arctic-strategy-signals-shift-in-its-geopolitical-mindset-294978": {
+      "at": "2026-10-29T02:34:28.204Z",
+      "feed": "conversation",
+      "slug": "eu-s-new-arctic-strategy-signals-shift-in-its-geopolitical-m"
+    },
     "https://theconversation.com/frances-casseurs-why-the-term-fails-to-do-justice-to-the-extent-of-looting-and-spiralling-unrest-294805": {
       "at": "2026-10-26T01:13:58.680Z",
       "feed": "conversation",
@@ -530,6 +595,11 @@
       "feed": "conversation",
       "slug": "in-opting-for-lula-brazil-made-a-conservative-choice-to-elec"
     },
+    "https://theconversation.com/israel-has-voted-but-what-comes-next-dissecting-a-messy-ballot-and-coalition-building-process-295404": {
+      "at": "2026-10-29T02:28:40.825Z",
+      "feed": "conversation",
+      "slug": "israel-has-voted-but-what-comes-next-dissecting-a-messy-ball"
+    },
     "https://theconversation.com/japans-expensive-funerals-and-declining-birth-rates-are-transforming-ancestral-traditions-292861": {
       "at": "2026-10-26T01:15:12.339Z",
       "feed": "conversation",
@@ -539,6 +609,16 @@
       "at": "2026-10-24T01:41:41.924Z",
       "feed": "conversation",
       "slug": "napoleon-can-be-partly-blamed-for-gen-z-s-weightlifting-obse"
+    },
+    "https://theconversation.com/primes-carrie-miniseries-expands-stephen-kings-story-but-weakens-its-central-horror-294512": {
+      "at": "2026-10-29T02:40:02.974Z",
+      "feed": "conversation",
+      "slug": "prime-s-carrie-miniseries-expands-stephen-king-s-story-but-w"
+    },
+    "https://theconversation.com/private-equity-is-buying-up-more-methadone-clinics-access-to-the-lifesaving-drug-isnt-getting-easier-286927": {
+      "at": "2026-10-29T02:36:26.870Z",
+      "feed": "conversation",
+      "error": "2279 words: too long to republish word for word (limit 1500)"
     },
     "https://theconversation.com/terror-of-kings-why-the-1066-appearance-of-halleys-comet-terrified-the-medieval-world-293296": {
       "at": "2026-10-28T02:26:01.052Z",
@@ -585,6 +665,21 @@
       "feed": "conversation",
       "slug": "youth-protests-across-europe-the-overlapping-crises-facing-g"
     },
+    "https://www.nasa.gov/aeronautics/nasa-challenge-drone-entrepreneur": {
+      "at": "2026-10-29T02:39:55.936Z",
+      "feed": "nasa-science",
+      "error": "Unterminated string in JSON at position 264442 (line 2 column 264441)"
+    },
+    "https://www.nasa.gov/blogs/quesst/2026/10/28/nasa-celebrates-a-year-of-progress-since-first-x-59-flight": {
+      "at": "2026-10-29T02:36:25.880Z",
+      "feed": "nasa-science",
+      "error": "Only 241 words of text found"
+    },
+    "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy": {
+      "at": "2026-10-29T02:37:46.734Z",
+      "feed": "nasa-science",
+      "error": "Only 188 words of text found"
+    },
     "https://www.nasa.gov/image-article/spirals-edge": {
       "at": "2026-10-23T16:48:42.349Z",
       "feed": "nasa-science",
@@ -615,10 +710,20 @@
       "feed": "nasa-science",
       "slug": "nasa-invites-media-to-crew-completion-of-yearlong-mars-simul"
     },
+    "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory": {
+      "at": "2026-10-29T02:28:35.197Z",
+      "feed": "nasa-science",
+      "slug": "nasa-welcomes-vietnam-as-newest-artemis-accords-signatory"
+    },
     "https://www.nasa.gov/podcasts/houston-we-have-a-podcast/chapea-2-audio-log-4": {
       "at": "2026-10-23T16:55:34.781Z",
       "feed": "nasa-science",
       "slug": "chapea-2-audio-log-4"
+    },
+    "https://www.nasa.gov/podcasts/small-steps-giant-leaps/episode-185-nasas-flight-dynamics-facility": {
+      "at": "2026-10-29T02:33:56.905Z",
+      "feed": "nasa-science",
+      "error": "Unterminated string in JSON at position 222755 (line 2 column 222754)"
     },
     "https://www.npr.org/2026/10/22/nx-s1-6010506/5-simple-ways-to-relieve-the-aches-and-pains-of-sitting-at-a-desk-all-day": {
       "at": "2026-10-25T01:15:35.804Z",
@@ -685,6 +790,21 @@
       "feed": "npr-health",
       "slug": "nairobi-mobilizes-green-army-to-fight-severe-el-nino-floods"
     },
+    "https://www.npr.org/2026/10/28/nx-s1-6019319/caregiving-costs-aarp-affordability": {
+      "at": "2026-10-29T02:36:53.011Z",
+      "feed": "npr-health",
+      "slug": "the-hidden-financial-burden-of-family-caregiving"
+    },
+    "https://www.npr.org/2026/10/28/nx-s1-6019613/organ-donor-ethics-risk": {
+      "at": "2026-10-29T02:37:34.319Z",
+      "feed": "npr-health",
+      "slug": "us-organ-transplant-system-relaxes-strict-donor-firewall-rul"
+    },
+    "https://www.npr.org/2026/10/28/nx-s1-6021030/peptides-compounding-enforcement": {
+      "at": "2026-10-29T02:31:52.964Z",
+      "feed": "npr-health",
+      "slug": "us-government-policy-shifts-on-popular-wellness-peptides"
+    },
     "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019": {
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
@@ -699,6 +819,11 @@
       "at": "2026-10-25T01:14:23.871Z",
       "feed": "quanta",
       "slug": "the-hidden-underground-networks-that-power-our-planet"
+    },
+    "https://www.quantamagazine.org/how-spiders-spin-silk-dope-into-natures-toughest-material-20261028": {
+      "at": "2026-10-29T02:31:41.462Z",
+      "feed": "quanta",
+      "slug": "unlocking-the-molecular-secrets-of-spider-silk"
     },
     "https://www.quantamagazine.org/how-voting-is-like-a-klein-bottle-20261026": {
       "at": "2026-10-27T02:10:03.798Z",
@@ -780,6 +905,26 @@
       "feed": "sciencedaily",
       "slug": "common-anti-inflammatory-medications-may-help-dangerous-viru"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261027063659.htm": {
+      "at": "2026-10-29T02:37:45.656Z",
+      "feed": "sciencedaily",
+      "slug": "artemis-i-reveals-surprising-radiation-levels-near-the-moon"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261027063707.htm": {
+      "at": "2026-10-29T02:37:05.192Z",
+      "feed": "sciencedaily",
+      "slug": "hidden-biofluorescence-discovered-in-toxic-european-salamand"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261027063824.htm": {
+      "at": "2026-10-29T02:31:59.496Z",
+      "feed": "sciencedaily",
+      "slug": "autistic-brains-process-faces-differently-from-early-childho"
+    },
+    "https://www.usgs.gov/centers/eesc/news/slime-trail-how-usgs-edna-efforts-are-revealing-what-lives-deep-gulf": {
+      "at": "2026-10-29T02:37:14.509Z",
+      "feed": "usgs",
+      "slug": "the-slime-trail-how-usgs-edna-efforts-are-revealing-what-liv"
+    },
     "https://www.usgs.gov/centers/eesc/news/usgs-eastern-ecological-science-center-2026-society-environmental-toxicology-and": {
       "at": "2026-10-24T01:44:13.224Z",
       "feed": "usgs",
@@ -789,6 +934,11 @@
       "at": "2026-10-26T01:15:31.646Z",
       "feed": "usgs",
       "error": "Only 215 words of text found"
+    },
+    "https://www.usgs.gov/centers/fort-collins-science-center/news/branching-out-new-study-reveals-when-invasive-pythons-take": {
+      "at": "2026-10-29T02:30:43.894Z",
+      "feed": "usgs",
+      "slug": "branching-out-new-study-reveals-when-invasive-pythons-take-t"
     },
     "https://www.usgs.gov/centers/sawsc/news/sawsc-hydrologist-presents-biennial-okefenokee-science-symposium": {
       "at": "2026-10-28T02:25:08.482Z",
@@ -809,6 +959,11 @@
       "at": "2026-10-26T01:14:24.726Z",
       "feed": "usgs",
       "error": "Only 75 words of text found"
+    },
+    "https://www.usgs.gov/news/state-news-release/media-alert-low-level-flights-image-geology-over-eastern-oregon": {
+      "at": "2026-10-29T02:36:33.694Z",
+      "feed": "usgs",
+      "slug": "media-alert-low-level-flights-to-image-geology-over-eastern"
     },
     "https://www.usgs.gov/news/state-news-release/media-alert-low-level-flights-image-geology-over-western-idaho": {
       "at": "2026-10-27T02:13:19.817Z",

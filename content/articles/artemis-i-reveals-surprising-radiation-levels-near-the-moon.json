@@ -1,0 +1,130 @@
+{
+  "slug": "artemis-i-reveals-surprising-radiation-levels-near-the-moon",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=artemis-i-reveals-surprising-radiation-levels-near-the-moon",
+  "category": "science",
+  "tags": [
+    "nasa",
+    "artemis",
+    "radiation",
+    "moon",
+    "astronomy"
+  ],
+  "title": {
+    "en": "Artemis I Reveals Surprising Radiation Levels Near the Moon",
+    "vi": "Sứ mệnh Artemis I hé lộ mức bức xạ đáng ngạc nhiên gần Mặt Trăng"
+  },
+  "hook": {
+    "en": "Recent measurements from the Artemis I mission around the Moon offer fresh insights into space radiation using tiny experimental crystals. Researchers discovered that lunar radiation exposure differs significantly from low Earth orbit, yet the contrast is less extreme than previously assumed. These findings help scientists better prepare for upcoming crewed missions into deep space.",
+    "vi": "Các phép đo gần đây từ sứ mệnh Artemis I quanh Mặt Trăng mang lại cái nhìn mới mẻ về bức xạ không gian bằng các tinh thể thử nghiệm nhỏ bé. Các nhà nghiên cứu phát hiện ra rằng phơi nhiễm bức xạ ở mặt trăng khác biệt đáng kể so với quỹ đạo Trái Đất thấp, song sự đối lập lại ít cực đoan hơn dự đoán."
+  },
+  "sections": [
+    {
+      "heading_en": "Tiny Crystals Track Space Radiation",
+      "heading_vi": "Tinh thể nhỏ theo dõi bức xạ không gian",
+      "body_en": "During the uncrewed Orion flight, experimental fluorescent lithium fluoride detectors inside human-shaped mannequins recorded particle tracks. Developed in Poland, these passive devices function similarly to photographic film {source}. Instead of requiring chemical etching like traditional plastic detectors, the crystals allow direct examination of radiation paths under a standard microscope when illuminated with blue light.",
+      "body_vi": "Trong chuyến bay Orion không người lái, các thiết bị dò huỳnh quang bằng tinh thể lithium fluoride (*lithium fluoride*) bên trong các hình nơ-ron thử nghiệm đã ghi lại vạch hạt. Được phát triển tại Ba Lan, những thiết bị thụ động này hoạt động tương tự như phim chụp ảnh {source}. Thay vì đòi hỏi ăn mòn hóa học như thiết bị truyền thống, các tinh thể cho phép kiểm tra trực tiếp đường đi của bức xạ dưới kính hiển vi khi chiếu sáng bằng ánh sáng xanh."
+    },
+    {
+      "heading_en": "Overcoming Analytical Complexity",
+      "heading_vi": "Vượt qua độ phức tạp phân tích",
+      "body_en": "Interpreting deep space radiation is uniquely challenging because particles arrive unpredictably from all directions across vast energy ranges. To address complex track angles and background interference, scientists developed sophisticated calibration software. This mathematical correction reduced measurement discrepancies to within fifteen percent compared to established detector technologies while revealing previously undetectable low-energy particle events.",
+      "body_vi": "Việc giải mã bức xạ không gian sâu gặp nhiều thách thức vì các hạt đến một cách khó lường từ mọi hướng với nhiều mức năng lượng rộng. Để xử lý các góc vạch phức tạp và nhiễu nền, các nhà khoa học đã phát triển phần mềm hiệu chuẩn tinh vi. Phương pháp chỉnh sửa toán học này giúp giảm sai số đo lường xuống trong vòng mười lăm phần trăm so với công nghệ cũ."
+    },
+    {
+      "heading_en": "Lunar Versus Orbital Radiation",
+      "heading_vi": "Bức xạ mặt trăng so với quỹ đạo",
+      "body_en": "Comparing lunar data with the International Space Station revealed distinct environmental differences. Low Earth orbit radiation features concentrated doses from trapped Van Allen belt protons. Near the Moon, this specific contribution vanishes, replaced by high-energy galactic particles {source}. Because these cosmic rays pass entirely through the human body, they deposit doses uniformly rather than unevenly.",
+      "body_vi": "So sánh dữ liệu mặt trăng với Trạm Vũ trụ Quốc tế cho thấy sự khác biệt rõ rệt về môi trường. Bức xạ quỹ đạo Trái Đất thấp có liều lượng tập trung từ proton vành đai Van Allen. Gần Mặt Trăng, đóng góp này biến mất, được thay thế bởi các hạt thiên hà năng lượng cao {source}. Do những tia vũ trụ này xuyên qua cơ thể người, chúng phân bổ liều lượng đồng đều hơn."
+    },
+    {
+      "heading_en": "Implications for Future Spaceflight",
+      "heading_vi": "Ý nghĩa cho chuyến bay vũ trụ tương lai",
+      "body_en": "Surprisingly, total radiation near the Moon exceeds orbital levels, but the increase remains smaller than intuitive assumptions suggested. The compact lithium fluoride detectors proved highly effective at monitoring these environments. Their small size, broad energy sensitivity, and neutron-detection capabilities make them promising tools for safeguarding future astronauts on extended space journeys.",
+      "body_vi": "Đáng ngạc nhiên là tổng bức xạ gần Mặt Trăng vượt mức quỹ đạo, nhưng sự gia tăng vẫn nhỏ hơn dự đoán trực giác. Các thiết bị dò lithium fluoride nhỏ gọn tỏ ra rất hiệu quả trong việc theo dõi các môi trường này. Kích thước nhỏ và khả năng phát hiện neutron biến chúng thành công cụ đầy hứa hẹn để bảo vệ các phi hành gia tương lai."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261027063659.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/967/1080/1920",
+    "provider": "unsplash",
+    "author": "NASA",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "NASA’s Artemis I mission reveals surprising radiation levels near the Moon",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/10/261027063659.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like tiny photographic film capturing invisible light footprints, these experimental crystals reveal hidden environmental hazards. How can understanding space radiation help us design safer habitats for upcoming interplanetary travelers? [p:Tiny crystals help measure hidden space radiation safely.]",
+    "vi": "Giống như những cuộn phim chụp ảnh nhỏ ghi lại dấu vết ánh sáng vô hình, các tinh thể thử nghiệm này phơi bày mối nguy hiểm môi trường ẩn giấu. Việc hiểu rõ bức xạ không gian có thể giúp chúng ta thiết kế môi trường sống an toàn hơn cho các du khách liên hành tinh tương lai ra sao? [p:Tinh thể nhỏ giúp đo lường bức xạ không gian ẩn giấu một cách an toàn.]"
+  },
+  "applySteps": {
+    "en": [
+      "Examine how compact monitoring devices can measure invisible environmental factors around you.",
+      "Identify unfamiliar technical terms in scientific news to deepen your understanding of space exploration.",
+      "Review basic physics concepts related to radiation and energy particles online."
+    ],
+    "vi": [
+      "Khảo sát cách các thiết bị theo dõi nhỏ gọn có thể đo lường các yếu tố môi trường vô hình xung quanh bạn.",
+      "Xác định các thuật ngữ kỹ thuật lạ trong tin tức khoa học để đào sâu hiểu biết về thám hiểm không gian.",
+      "Ôn tập các khái niệm vật lý cơ bản liên quan đến bức xạ và hạt năng lượng trực tuyến."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/716/1080/1920",
+      "provider": "unsplash",
+      "author": "Matthew Kosloski",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BT_BUEwjeQg"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/700/1080/1920",
+      "provider": "unsplash",
+      "author": "John Cobb",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/6btEyS3AJrI"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACdMoADT5eILAYwqM2RZRwQAP7kCiDLf7SjUpxhQsXy3/lkaQwp7I3AmDHO3jbJ30FIgGy7GwH8A2ns5Vw7FtiS62DcA0aNkQVP5uRGPyeHeBcM649iXMdbIvmZkWjVa+u+BxI0ROFCLKJq+RO5dX7SrG8QgAA=",
+  "dominant": "#535c62",
+  "publishAt": "2026-10-29T02:31:30.299Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
