@@ -1,0 +1,27 @@
+{
+  "sections": [
+    {
+      "paragraphs": [
+        "In December 2026, SNS topics will become available for Landsat Calibration Parameter (CPF), Bias Parameter (BPF), and Response Linearization Look Up Table (RLUT) files.",
+        "**Upon the release of the SNS topics, the legacy** **Really Simple Syndication** **(RSS) feeds and notifications for the CPF and BPF files will be discontinued.** Additionally, while the RSS feeds for the RLUTs and the Landsat Collection 2 data and science products will be available for some time, these will be also discontinued in the near future**.**",
+        "Users are encouraged to begin using Amazon SNS topics now to ensure current workflows, applications, scripts, or services that currently rely on the RSS feeds will continue to work successfully, and users will receive information seamlessly.",
+        "**What Landsat users need to know and what to do**",
+        "Amazon SNS provides a more reliable, scalable, and flexible distribution method for automated updates, and aligns with the Amazon Web Service (AWS) cloud infrastructure that has stored the Landsat Collection 2 data archive since 2020.",
+        "To utilize the SNS topics, Landsat users will need to set up an AWS account and a supported SNS subscription method to receive updates. New accounts can be created at the Amazon Web Services webpage and users are encouraged to review the information to set up a successful subscription.",
+        "Once logged in, users can search the SNS console for the Landsat SNS topics listed below and set up the preferred endpoint to receive the notifications.",
+        "These SNS topics are available now:",
+        "• **Landsat 8, Landsat 9 Level-1 and Level-2 products**arn:aws:sns:us-west-2:673253540267:public-c2-notify-v2",
+        "• **Landsat 8, Landsat 9 Level-3 science products**arn:aws:sns:us-west-2:673253540267:public-c2-level-3-tile-notify-v2",
+        "• **Landsat U.S. Analysis Ready Data (ARD) products**arn:aws:sns:us-west-2:673253540267:public-c2-ard-tile-notify-v2",
+        "These SNS topics will become available in December 2026:",
+        "• **Landsat Calibration Parameter Files (CPF)**arn:aws:sns:us-west-2:673253540267:public-cpf-notify",
+        "• **Landsat Bias Parameter Files (BPF)**arn:aws:sns:us-west-2:673253540267:public-bpf-notify",
+        "• **Response Linearization Look Up Tables (RLUT)**arn:aws:sns:us-west-2:673253540267:public-rlut-notify",
+        "**Utilizing Cloud Storage**",
+        "Users who intend to automatically store or process Landsat notifications, such as scripts that download ancillary files or trigger downstream workflows, may want to configure an S3 bucket. This is not required to receive notifications but is useful for automated pipelines. Visit the Amazon Web Services webpage to learn more about this process.",
+        "Visit the Landsat Commercial Cloud Access webpage to learn more about using the AWS commercial cloud services with Landsat data and science products.",
+        "*Return to all Landsat Headlines*"
+      ]
+    }
+  ]
+}

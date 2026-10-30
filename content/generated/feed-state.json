@@ -35,6 +35,16 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/philosophy/healing-the-cartesian-wound"
     },
+    "https://bigthink.com/series/conversations/joe-folley-stop-trying-to-find-yourself": {
+      "at": "2026-10-30T02:41:49.847Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/series/conversations/joe-folley-stop-trying-to-find-yourself"
+    },
+    "https://bigthink.com/series/full-interview/mimetic-desire-contagion": {
+      "at": "2026-10-30T02:45:12.149Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/series/full-interview/mimetic-desire-contagion"
+    },
     "https://bigthink.com/series/full-interview/spotting-narcissism-durvasula": {
       "at": "2026-10-23T16:48:31.512Z",
       "feed": "big-think",
@@ -79,6 +89,11 @@
       "at": "2026-10-27T02:13:25.552Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/travel-through-universe-1g"
+    },
+    "https://bigthink.com/starts-with-a-bang/who-discovered-dark-matter-fritz-zwicky-vera-rubin": {
+      "at": "2026-10-30T02:42:38.047Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/who-discovered-dark-matter-fritz-zwicky-vera-rubin"
     },
     "https://bigthink.com/strange-maps/roman-road-networks": {
       "at": "2026-10-24T01:44:24.071Z",
@@ -134,6 +149,11 @@
       "at": "2026-10-26T01:14:17.992Z",
       "feed": "wikipedia-featured",
       "slug": "hongwu-emperor"
+    },
+    "https://en.wikipedia.org/wiki/John_Adams": {
+      "at": "2026-10-30T02:40:50.749Z",
+      "feed": "wikipedia-featured",
+      "error": "Unterminated string in JSON at position 240346 (line 2 column 240345)"
     },
     "https://en.wikipedia.org/wiki/London_Monster": {
       "at": "2026-10-25T01:15:55.322Z",
@@ -260,6 +280,21 @@
       "feed": "global-voices",
       "error": "Unterminated string in JSON at position 393034 (line 2 column 393033)"
     },
+    "https://globalvoices.org/2026/10/29/a-digital-publication-sheds-light-on-turkeys-prison-system": {
+      "at": "2026-10-30T02:38:45.274Z",
+      "feed": "global-voices",
+      "slug": "a-digital-publication-sheds-light-on-turkey-s-prison-system"
+    },
+    "https://globalvoices.org/2026/10/29/a-myanmar-journalists-reflection-when-other-peoples-pain-becomes-part-of-you": {
+      "at": "2026-10-30T02:42:21.339Z",
+      "feed": "global-voices",
+      "slug": "a-myanmar-journalist-s-reflection-when-other-people-s-pain-b"
+    },
+    "https://globalvoices.org/2026/10/29/in-albania-rural-youth-are-campaigning-to-solve-local-environmental-problems": {
+      "at": "2026-10-30T02:44:49.983Z",
+      "feed": "global-voices",
+      "error": "Unterminated string in JSON at position 241753 (line 2 column 241752)"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -305,6 +340,11 @@
       "feed": "nautilus",
       "slug": "dead-star-offers-a-glimpse-into-our-solar-system-s-future"
     },
+    "https://nautil.us/dear-human-poetry-might-save-us-from-the-apocalypse-1286192": {
+      "at": "2026-10-30T02:42:37.985Z",
+      "feed": "nautilus",
+      "slug": "how-poetry-and-science-unite-to-address-climate-change"
+    },
     "https://nautil.us/forensic-facial-specialists-can-identify-people-using-just-a-couple-facial-features-1286039": {
       "at": "2026-10-23T16:57:10.451Z",
       "feed": "nautilus",
@@ -335,10 +375,20 @@
       "feed": "nautilus",
       "slug": "how-lsd-speeds-up-brain-rhythms-and-creates-fractal-patterns"
     },
+    "https://nautil.us/men-who-eat-more-plant-based-protein-have-higher-testosterone-levels-1286187": {
+      "at": "2026-10-30T02:45:12.009Z",
+      "feed": "nautilus",
+      "slug": "plant-based-protein-may-boost-male-testosterone-levels"
+    },
     "https://nautil.us/mother-bats-hearts-quicken-when-they-hear-babys-cries-1286069": {
       "at": "2026-10-24T01:40:42.837Z",
       "feed": "nautilus",
       "slug": "mother-bats-experience-rapid-heart-rate-increases-upon-heari"
+    },
+    "https://nautil.us/our-planets-lungs-are-suffering-1286196": {
+      "at": "2026-10-30T02:41:49.723Z",
+      "feed": "nautilus",
+      "slug": "the-amazon-rainforest-may-become-a-carbon-source"
     },
     "https://nautil.us/spike-thumbed-dino-discovered-in-the-united-kingdom-1286098": {
       "at": "2026-10-27T02:10:09.787Z",
@@ -425,6 +475,11 @@
       "feed": "psyche",
       "slug": "why-emotional-safety-shapes-everyday-life-in-denmark"
     },
+    "https://psyche.co/ideas/when-giving-up-teaches-you-more-than-persevering-ever-could": {
+      "at": "2026-10-30T02:41:37.387Z",
+      "feed": "psyche",
+      "slug": "the-hidden-value-of-quitting-our-goals"
+    },
     "https://psyche.co/ideas/why-romantic-relationships-matter-more-to-men-than-to-women": {
       "at": "2026-10-23T16:58:44.153Z",
       "feed": "psyche",
@@ -495,6 +550,11 @@
       "feed": "nasa-science",
       "error": "Only 17 words of text found"
     },
+    "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/ammb-stig-seminar-2-nov-2026": {
+      "at": "2026-10-30T02:45:34.533Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
     "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/gr-sig-seminar-30-oct-2026": {
       "at": "2026-10-26T01:15:07.775Z",
       "feed": "nasa-science",
@@ -520,6 +580,11 @@
       "feed": "nasa-science",
       "error": "Only 211 words of text found"
     },
+    "https://science.nasa.gov/blogs/tracers/2026/10/29/nasas-tracers-first-results-offers-peek-into-violent-magnetic-process": {
+      "at": "2026-10-30T02:50:39.166Z",
+      "feed": "nasa-science",
+      "slug": "nasa-s-tracers-first-results-offers-peek-into-violent-magnet"
+    },
     "https://science.nasa.gov/blogs/uvex/2026/10/27/nasas-uvex-space-telescope-successfully-passes-key-milestone": {
       "at": "2026-10-28T02:25:54.258Z",
       "feed": "nasa-science",
@@ -530,15 +595,30 @@
       "feed": "nasa-science",
       "slug": "el-nino-then-and-now"
     },
+    "https://science.nasa.gov/event/meeting-national-space-club-scholars": {
+      "at": "2026-10-30T02:45:29.923Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
     "https://science.nasa.gov/people/kayla-rillo-armstrong": {
       "at": "2026-10-27T02:10:23.517Z",
       "feed": "nasa-science",
       "error": "Only 146 words of text found"
     },
+    "https://science.nasa.gov/photojournal/map-showing-potential-origins-of-martian-meteorite-teghaza-001": {
+      "at": "2026-10-30T02:38:31.680Z",
+      "feed": "nasa-science",
+      "error": "Only 109 words of text found"
+    },
     "https://science.nasa.gov/photojournal/nasas-perseverance-views-dust-at-neretva-vallis": {
       "at": "2026-10-27T02:06:47.522Z",
       "feed": "nasa-science",
       "error": "Only 154 words of text found"
+    },
+    "https://science.nasa.gov/photojournal/slice-of-martian-meteorite-teghaza-001": {
+      "at": "2026-10-30T02:42:05.516Z",
+      "feed": "nasa-science",
+      "error": "Only 118 words of text found"
     },
     "https://theconversation.com/a-critical-flaw-affecting-70-of-all-websites-has-the-cybersecurity-world-panicked-294941": {
       "at": "2026-10-25T01:14:46.906Z",
@@ -590,6 +670,11 @@
       "feed": "conversation",
       "slug": "how-k-dramas-use-africa-as-a-backdrop-to-boost-south-korea-s"
     },
+    "https://theconversation.com/how-porn-became-so-extreme-and-how-its-shaping-the-sex-lives-of-young-people-293851": {
+      "at": "2026-10-30T02:38:35.921Z",
+      "feed": "conversation",
+      "slug": "how-porn-became-so-extreme-and-how-it-s-shaping-the-sex-live"
+    },
     "https://theconversation.com/in-opting-for-lula-brazil-made-a-conservative-choice-to-elect-a-man-of-the-left-over-one-of-the-far-right-295217": {
       "at": "2026-10-27T02:06:59.365Z",
       "feed": "conversation",
@@ -619,6 +704,11 @@
       "at": "2026-10-29T02:36:26.870Z",
       "feed": "conversation",
       "error": "2279 words: too long to republish word for word (limit 1500)"
+    },
+    "https://theconversation.com/spains-high-speed-train-network-is-plagued-by-old-signalling-systems-they-may-have-caused-the-deadly-crash-295465": {
+      "at": "2026-10-30T02:42:09.978Z",
+      "feed": "conversation",
+      "slug": "spain-s-high-speed-train-network-is-plagued-by-old-signallin"
     },
     "https://theconversation.com/terror-of-kings-why-the-1066-appearance-of-halleys-comet-terrified-the-medieval-world-293296": {
       "at": "2026-10-28T02:26:01.052Z",
@@ -675,6 +765,16 @@
       "feed": "nasa-science",
       "error": "Only 241 words of text found"
     },
+    "https://www.nasa.gov/blogs/spacestation/2026/10/29/spacewalkers-install-roll-out-solar-arrays-for-power-generation": {
+      "at": "2026-10-30T02:45:31.287Z",
+      "feed": "nasa-science",
+      "error": "Only 228 words of text found"
+    },
+    "https://www.nasa.gov/centers-and-facilities/johnson/halloween-aboard-the-international-space-station": {
+      "at": "2026-10-30T02:42:23.280Z",
+      "feed": "nasa-science",
+      "error": "Only 148 words of text found"
+    },
     "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy": {
       "at": "2026-10-29T02:37:46.734Z",
       "feed": "nasa-science",
@@ -710,6 +810,11 @@
       "feed": "nasa-science",
       "slug": "nasa-invites-media-to-crew-completion-of-yearlong-mars-simul"
     },
+    "https://www.nasa.gov/news-release/nasa-names-troy-asher-armstrong-flight-research-center-director": {
+      "at": "2026-10-30T02:50:46.686Z",
+      "feed": "nasa-science",
+      "slug": "nasa-names-troy-asher-armstrong-flight-research-center-direc"
+    },
     "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory": {
       "at": "2026-10-29T02:28:35.197Z",
       "feed": "nasa-science",
@@ -724,6 +829,11 @@
       "at": "2026-10-29T02:33:56.905Z",
       "feed": "nasa-science",
       "error": "Unterminated string in JSON at position 222755 (line 2 column 222754)"
+    },
+    "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found": {
+      "at": "2026-10-30T02:50:30.339Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://www.npr.org/2026/10/22/nx-s1-6010506/5-simple-ways-to-relieve-the-aches-and-pains-of-sitting-at-a-desk-all-day": {
       "at": "2026-10-25T01:15:35.804Z",
@@ -805,6 +915,21 @@
       "feed": "npr-health",
       "slug": "us-government-policy-shifts-on-popular-wellness-peptides"
     },
+    "https://www.npr.org/2026/10/29/nx-s1-5996687/anhedonia-quiz-high-functioning-depression": {
+      "at": "2026-10-30T02:42:45.806Z",
+      "feed": "npr-health",
+      "slug": "spotting-the-silent-sister-of-depression-and-loss-of-joy"
+    },
+    "https://www.npr.org/2026/10/29/nx-s1-6017986/election-midterm-healthcare-transgender": {
+      "at": "2026-10-30T02:45:18.594Z",
+      "feed": "npr-health",
+      "slug": "missouri-campaign-uses-deep-canvassing-to-protect-transgende"
+    },
+    "https://www.npr.org/2026/10/29/nx-s1-6020451/avian-flu-penguins-pathogen-antarctica-cholera": {
+      "at": "2026-10-30T02:41:57.254Z",
+      "feed": "npr-health",
+      "slug": "researchers-solve-mystery-of-mass-penguin-deaths-in-antarcti"
+    },
     "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019": {
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
@@ -819,6 +944,11 @@
       "at": "2026-10-25T01:14:23.871Z",
       "feed": "quanta",
       "slug": "the-hidden-underground-networks-that-power-our-planet"
+    },
+    "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029": {
+      "at": "2026-10-30T02:41:44.203Z",
+      "feed": "quanta",
+      "slug": "capturing-the-unseen-imaging-the-universe-s-most-elusive-bla"
     },
     "https://www.quantamagazine.org/how-spiders-spin-silk-dope-into-natures-toughest-material-20261028": {
       "at": "2026-10-29T02:31:41.462Z",
@@ -920,6 +1050,21 @@
       "feed": "sciencedaily",
       "slug": "autistic-brains-process-faces-differently-from-early-childho"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261028232715.htm": {
+      "at": "2026-10-30T02:45:27.628Z",
+      "feed": "sciencedaily",
+      "slug": "nasa-s-juno-reveals-jupiter-s-complex-shield-against-solar-w"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261028232719.htm": {
+      "at": "2026-10-30T02:42:51.898Z",
+      "feed": "sciencedaily",
+      "slug": "challenging-dark-energy-with-einstein-s-equations"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261028234238.htm": {
+      "at": "2026-10-30T02:42:04.240Z",
+      "feed": "sciencedaily",
+      "slug": "popular-sugar-substitutes-linked-to-accelerated-brain-aging"
+    },
     "https://www.usgs.gov/centers/eesc/news/slime-trail-how-usgs-edna-efforts-are-revealing-what-lives-deep-gulf": {
       "at": "2026-10-29T02:37:14.509Z",
       "feed": "usgs",
@@ -950,6 +1095,16 @@
       "feed": "usgs",
       "slug": "the-global-food-and-water-security-support-analysis-data-gfs"
     },
+    "https://www.usgs.gov/landsat-missions/news/modernizing-landsat-notifications-sns-topics-replace-rss-feeds": {
+      "at": "2026-10-30T02:45:06.421Z",
+      "feed": "usgs",
+      "slug": "modernizing-landsat-notifications-sns-topics-replace-rss-fee"
+    },
+    "https://www.usgs.gov/mission-areas/ecosystems/news/towards-continental-conservation-a-metapopulation-strategy-support": {
+      "at": "2026-10-30T02:41:10.220Z",
+      "feed": "usgs",
+      "slug": "towards-continental-conservation-a-metapopulation-strategy-t"
+    },
     "https://www.usgs.gov/news/featured-story/usgs-study-outlines-scope-and-severity-bat-fatalities-us-wind-energy-facilities": {
       "at": "2026-10-28T02:21:34.540Z",
       "feed": "usgs",
@@ -979,6 +1134,11 @@
       "at": "2026-10-24T01:40:24.424Z",
       "feed": "usgs",
       "slug": "photo-video-chronology-kilauea-summit-monitoring-overflight"
+    },
+    "https://www.usgs.gov/observatories/hvo/news/volcano-minute-a-quiet-eruption-beneath-pacific": {
+      "at": "2026-10-30T02:42:29.630Z",
+      "feed": "usgs",
+      "slug": "volcano-minute-a-quiet-eruption-beneath-the-pacific"
     },
     "https://www.usgs.gov/observatories/hvo/news/volcano-minute-patterns-eruptions-and-intrusions-kilauea": {
       "at": "2026-10-23T17:01:43.252Z",
