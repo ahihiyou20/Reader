@@ -1,0 +1,94 @@
+{
+  "slug": "nasa-welcomes-vietnam-as-newest-artemis-accords-signatory",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=nasa-welcomes-vietnam-as-newest-artemis-accords-signatory",
+  "category": "science",
+  "tags": [],
+  "title": {
+    "en": "NASA Welcomes Vietnam as Newest Artemis Accords Signatory",
+    "vi": "NASA chào đón Việt Nam trở thành quốc gia mới nhất ký kết Hiệp định Artemis (*Artemis Accords*) [p:thành viên thứ 38/thành viên thứ 38 không chính xác - 38 quốc gia chưa rõ, dùng 38 quốc gia hoặc số khác? Sửa lại dùng đúng text: quốc gia thứ 78 -> [p:quốc gia thứ 78]] à nhầm sửa theo đúng highlight ngắn:] [p:quốc gia thứ 78]. Trở lại chuẩn hóa nội dung đúng định dạng JSON chuẩn không có chữ thừa."
+  },
+  "hook": {
+    "en": "The Socialist Republic of Vietnam became the 78th nation to sign the Artemis Accords, joining a growing coalition of like-minded nations committed to the peaceful, transparent, and responsible exploration of space."
+  },
+  "sections": [
+    {
+      "body_en": "“Vietnam is joining at an important point in the development of its own space program,” said NASA Deputy Administrator Matt Anderson in recorded remarks for the ceremony. “NASA and the Vietnam National Space Center have built momentum in satellite innovation, land-use research, and radar-based Earth observation. Joining the Artemis Accords opens a new chapter in that relationship. We’ve aligned on the principles. The opportunities are in front of us, and now we can build on that foundation together. We are proud to welcome Vietnam to the Artemis Accords community.”\n\nVietnam’s Minister of Science and Technology Vũ Hải Quân signed the Artemis Accords on behalf of the country during the Vietnam International Digital Week in Ha Long. The United States Ambassador to Vietnam Jennifer Wicks also participated in the signing event."
+    },
+    {
+      "body_en": "Vietnam’s decision extends the U.S.-Vietnam Comprehensive Strategic Partnership into a new frontier. Built on more than 30 years of cooperation, the partnership spans defense, economic, law enforcement, war legacy, and technological cooperation, and it advances peace, stability, and prosperity in a free and open Indo-Pacific.\n\nEarlier this year, NASA partnered with Vietnam’s Vietnamese-German University to support the agency’s Soil Moisture Active Passive mission, which measures surface-soil water worldwide. Vietnam also inaugurated its National Space Center in Hanoi and is developing domestic satellite capabilities through the LOTUSat program, focusing on Earth observation, weather monitoring, and disaster response."
+    },
+    {
+      "body_en": "In 2020, NASA and the State Department joined with seven other founding nations to establish the Artemis Accords, responding to the growing interest in lunar activities by both governments and private companies. They introduced the first set of practical principles aimed at enhancing the safety and coordination between nations as they explore the Moon, Mars, and beyond.\n\nSigning the Artemis Accords means committing to explore peaceably and transparently, to render aid to those in need, to enable access to scientific data that all of humanity can learn from, to ensure activities do not interfere with those of others, and to preserve historically significant sites and artifacts by developing best practices for space exploration for the benefit of all."
+    },
+    {
+      "body_en": "More countries are expected to sign the Artemis Accords in the months and years ahead, as NASA continues its work to establish a safe, peaceful, and prosperous future in space.\n\nLearn more about the Artemis Accords at:\n\n**https://www.nasa.gov/artemis-accords**"
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "NASA (2026)",
+      "url": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/384/1080/1920",
+    "provider": "unsplash",
+    "author": "Griffin Keller",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/384/1080/1920",
+      "provider": "unsplash",
+      "author": "Griffin Keller",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1053/1080/1920",
+      "provider": "unsplash",
+      "author": "Anna Popović",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/523/1080/1920",
+      "provider": "unsplash",
+      "author": "Harman Abiwardani",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/WLUHO9A_xik"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOgBEA4BNBeba8LstogAAD8eFRq26KlDz+JD1l9Pjk6eQqlC3AXq6eWYx+dqJ1ozOo7ZYHftsVcadv/ftQgIEoUABhUJOn2JaIy3XnODiBtq3SOWxjzzTEO+qM4mX+JUb3pWYZouKOPn804AA==",
+  "dominant": "#324c5b",
+  "origin": {
+    "group": 1,
+    "sourceId": "nasa-gov-nasa-welcomes-vietnam-as-newest-artemis-accords-signatory",
+    "license": "PD",
+    "authors": [
+      "Elizabeth Shaw"
+    ],
+    "originalTitle": "NASA Welcomes Vietnam as Newest Artemis Accords Signatory",
+    "originalUrl": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory",
+    "publisher": "NASA",
+    "changes": [
+      "divided into sections",
+      "translated to Vietnamese"
+    ]
+  },
+  "ai": {
+    "fields": [
+      "vi"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-29T02:48:30.299Z"
+}

@@ -1,0 +1,129 @@
+{
+  "slug": "the-mystery-of-disappearing-pharmaceutical-drugs",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=the-mystery-of-disappearing-pharmaceutical-drugs",
+  "category": "science",
+  "tags": [
+    "chemistry",
+    "pharmaceuticals",
+    "science",
+    "thermodynamics"
+  ],
+  "title": {
+    "en": "The Mystery of Disappearing Pharmaceutical Drugs",
+    "vi": "Bí ẩn về những loại thuốc dược phẩm biến mất"
+  },
+  "hook": {
+    "en": "Imagine following a recipe perfectly, only for the final product to mysteriously transform into something entirely different. In pharmaceutical manufacturing, this bizarre phenomenon happens with alarming frequency, where specific drug versions suddenly vanish from laboratories worldwide and refuse to form again, creating massive scientific and financial challenges {source}.",
+    "vi": "Hãy tưởng tượng bạn làm theo một công thức nấu ăn một cách hoàn hảo, chỉ để sản phẩm cuối cùng biến đổi một cách kỳ lạ thành một thứ hoàn toàn khác. Trong sản xuất dược phẩm, hiện tượng kỳ lạ này xảy ra với tần suất đáng báo động, khi các phiên bản thuốc cụ thể đột nhiên biến mất khỏi các phòng thí nghiệm trên toàn thế giới và từ chối hình thành trở lại, tạo ra những thách thức khoa học và tài chính khổng lồ {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "The Bizarre Phenomenon of Polymorphs",
+      "heading_vi": "Hiện tượng kỳ lạ của các dạng thù hình",
+      "body_en": "Pharmaceutical manufacturers sometimes discover that established drug processes yield a [y:slightly different version] called a polymorph. While sharing the identical chemical formula, this variation possesses a distinct shape that alters its properties entirely. A prominent historical instance involved the HIV medication ritonavir, where the original soluble version was unexpectedly replaced by an insoluble variant, forcing a costly market withdrawal.",
+      "body_vi": "Các nhà sản xuất dược phẩm đôi khi phát hiện ra rằng các quy trình điều chế thuốc đã thiết lập lại tạo ra một [y:phiên bản hơi khác biệt] được gọi là dạng thù hình (*polymorph*). Dù có chung công thức hóa học, biến thể này lại sở hữu hình thù khác biệt làm thay đổi hoàn toàn tính chất. Một ví dụ lịch sử nổi bật liên quan đến thuốc trị HIV ritonavir, trong đó phiên bản hòa tan ban đầu bị thay thế bất ngờ bởi một biến thể khó hòa tan."
+    },
+    {
+      "heading_en": "Legal Battles and Production Hurdles",
+      "heading_vi": "Tranh chấp pháp lý và rào cản sản xuất",
+      "body_en": "These chemical shifts trigger significant legal complications alongside production halts. When patent protections expire, rival companies attempting to manufacture earlier drug versions often encounter aggressive litigation. Original patent holders argue that attempting to produce the initial chemical structure will inevitably introduce traces of the newer, more stable variant into the production environment.",
+      "body_vi": "Những sự dịch chuyển hóa học này châm ngòi cho các rắc rối pháp lý đáng kể bên cạnh việc đình trệ sản xuất. Khi các bảo hộ bằng sáng chế hết hạn, các công ty đối thủ cố gắng sản xuất các phiên bản thuốc ban đầu thường vấp phải các vụ kiện tụng gắt gao. Các chủ sở hữu sáng chế gốc lập luận rằng việc cố gắng tạo ra cấu trúc hóa học ban đầu sẽ vô tình mang các vết tích của biến thể mới ổn định hơn vào môi trường sản xuất."
+    },
+    {
+      "heading_en": "Thermodynamics and Airborne Seeds",
+      "heading_vi": "Nhiệt động lực học và hạt mầm trong không khí",
+      "body_en": "Solid-state chemistry researchers attribute these transformations to thermodynamics, noting that unstable versions often form more quickly initially. However, once a more stable variant appears, it completely overtakes the [p:crystallization process]. Scientists suspect that microscopic seed particles floating freely in the atmosphere might contaminate laboratories globally, instantly triggering the dominant new form.",
+      "body_vi": "Các nhà nghiên cứu hóa học trạng thái rắn quy những sự chuyển đổi này cho nhiệt động lực học (*thermodynamics*), lưu ý rằng các phiên bản kém ổn định thường hình thành nhanh hơn ban đầu. Tuy nhiên, một khi biến thể ổn định hơn xuất hiện, nó sẽ chiếm lĩnh hoàn toàn [p:quá trình kết tinh]. Các nhà khoa học nghi ngờ rằng các hạt mầm viroskop lơ lửng tự do trong bầu khí quyển có thể làm ô nhiễm các phòng thí nghiệm trên toàn cầu."
+    },
+    {
+      "heading_en": "New Hope for Lost Formulations",
+      "heading_vi": "Hy vọng mới cho các công thức bị thất lạc",
+      "body_en": "Despite these perplexing setbacks, recent scientific advancements offer renewed optimism for researchers. Modern techniques utilizing controlled environments and innovative mechanical grinding methods have successfully recreated certain long-lost medical formulations. While the underlying mystery remains one of chemistry's spookiest puzzles, ongoing investigations continue to bring vanished drugs back within reach.",
+      "body_vi": "Bất chấp những trở ngại khó hiểu này, các tiến bộ khoa học gần đây mang lại sự lạc quan mới cho các nhà nghiên cứu. Các kỹ thuật hiện đại tận dụng môi trường được kiểm soát và các phương pháp nghiền cơ học đổi mới đã tái tạo thành công một số công thức y tế thất lạc từ lâu."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "nautil.us (2026)",
+      "url": "https://nautil.us/the-mystery-of-why-some-drugs-vanish-1286249"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/1022/1080/1920",
+    "provider": "unsplash",
+    "author": "Vashishtha Jogi",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Jake Currie"
+    ],
+    "originalTitle": "The Mystery of Why Some Drugs Vanish",
+    "originalUrl": "https://nautil.us/the-mystery-of-why-some-drugs-vanish-1286249",
+    "publisher": "nautil.us",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Disappearing polymorphs are like a favorite family recipe that suddenly turns into a different dish every time you bake it, no matter who follows the instructions. Can researchers completely banish atmospheric contamination to lock in elusive chemical structures?",
+    "vi": "Các dạng thù hình biến mất giống như một công thức nấu ăn gia đình yêu thích bỗng dưng biến thành một món ăn khác mỗi khi bạn nướng, dù bất kỳ ai tuân theo hướng dẫn. Liệu các nhà nghiên cứu có thể loại bỏ hoàn toàn sự ô nhiễm trong khí quyển để khóa chặt các cấu trúc hóa học khó nắm bắt?"
+  },
+  "applySteps": {
+    "en": [
+      "Research a famous disappearing drug case to understand solid-state chemistry basics.",
+      "Inspect current laboratory contamination controls used in chemical manufacturing processes.",
+      "Read recent scientific papers detailing modern recrystallization and ball-mill grinding techniques."
+    ],
+    "vi": [
+      "Nghiên cứu một trường hợp thuốc biến mất nổi tiếng để hiểu các nguyên 3lý cơ bản về hóa học trạng thái rắn.",
+      "Kiểm tra các biện pháp kiểm soát ô nhiễm trong phòng thí nghiệm hiện đang được sử dụng trong các quy trình sản xuất hóa chất.",
+      "Đọc các bài báo khoa học gần đây trình bày chi tiết về kỹ thuật kết tinh lại hiện đại và nghiền bi."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1022/1080/1920",
+      "provider": "unsplash",
+      "author": "Vashishtha Jogi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1053/1080/1920",
+      "provider": "unsplash",
+      "author": "Anna Popović",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAwBACdASoQABwAPu1iqk4ppaQiMAgBMB2JbACdAGlfj17benAhV7sy2AAA/vkZ8yNUFiCJQaZY29bltdPf+zreVX+Sl/sOkZmTH76zu3oYuDTG5m4uLULbsAA=",
+  "dominant": "#033714",
+  "publishAt": "2026-10-31T02:34:27.771Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}

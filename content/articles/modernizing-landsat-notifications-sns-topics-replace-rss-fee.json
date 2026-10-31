@@ -1,0 +1,126 @@
+{
+  "slug": "modernizing-landsat-notifications-sns-topics-replace-rss-fee",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=modernizing-landsat-notifications-sns-topics-replace-rss-fee",
+  "category": "science",
+  "tags": [
+    "landsat",
+    "aws",
+    "sns",
+    "cloud storage",
+    "rss"
+  ],
+  "title": {
+    "en": "Modernizing Landsat Notifications: SNS Topics Replace RSS Feeds",
+    "vi": "Hiện đại hóa Thông báo Landsat: Chủ đề SNS Thay thế Nguồn cấp dữ liệu RSS"
+  },
+  "hook": {
+    "en": "In December 2026, SNS topics will become available for Landsat Calibration Parameter (CPF), Bias Parameter (BPF), and Response Linearization Look Up Table (RLUT) files.",
+    "vi": "Vào tháng 12 năm 2026, các chủ đề SNS sẽ có sẵn cho các tệp Hiệu chuẩn Thông số Landsat (CPF), Thông số Sai lệch (BPF) và Bảng tra cứu Tuyến tính Phản hồi (RLUT)."
+  },
+  "sections": [
+    {
+      "body_en": "**Upon the release of the SNS topics, the legacy** **Really Simple Syndication** **(RSS) feeds and notifications for the CPF and BPF files will be discontinued.** Additionally, while the [p:RSS feeds] for the RLUTs and the Landsat Collection 2 data and science products will be available for some time, these will be also discontinued in the near future**.**\n\nUsers are encouraged to begin using Amazon SNS topics now to ensure current workflows, applications, scripts, or services that currently rely on the RSS feeds will continue to work successfully, and users will receive information seamlessly.\n\n**What Landsat users need to know and what to do**",
+      "body_vi": "Khi các chủ đề SNS được phát hành, các nguồn cấp dữ liệu RSS (Really Simple Syndication) cũ và thông báo cho tệp CPF và BPF sẽ ngừng hoạt động. Ngoài ra, trong khi nguồn cấp dữ liệu RSS cho RLUT và dữ liệu Landsat Tập hợp 2 cùng các sản phẩm khoa học vẫn hoạt động trong một thời gian, chúng cũng sẽ bị dừng trong tương lai gần.\n\nNgười dùng được khuyến khích bắt đầu sử dụng các chủ đề Amazon SNS ngay bây giờ để đảm bảo các quy trình làm việc, ứng dụng, tập lệnh hoặc dịch vụ hiện tại phụ thuộc vào nguồn cấp dữ liệu RSS tiếp tục hoạt động thành công và nhận thông tin liền mạch.\n\nNhững điều người dùng Landsat cần biết và cần làm"
+    },
+    {
+      "body_en": "[p:Amazon SNS] provides a more reliable, scalable, and flexible distribution method for automated updates, and aligns with the Amazon Web Service (AWS) cloud infrastructure that has stored the Landsat Collection 2 data archive since [y:2020].\n\nTo utilize the SNS topics, Landsat users will need to set up an AWS account and a supported SNS subscription method to receive updates. New accounts can be created at the Amazon Web Services webpage and users are encouraged to review the information to set up a successful subscription.\n\nOnce logged in, users can search the SNS console for the Landsat SNS topics listed below and set up the preferred endpoint to receive the notifications.\n\nThese SNS topics are available now:\n\n• **Landsat 8, Landsat 9 Level-1 and Level-2 products**arn:aws:sns:us-west-2:673253540267:public-c2-notify-v2",
+      "body_vi": "Amazon SNS cung cấp phương thức phân phối đáng tin cậy, có thể mở rộng và linh hoạt hơn cho các bản cập nhật tự động, đồng thời phù hợp với cơ sở hạ tầng đám mây Amazon Web Services (AWS) đã lưu trữ kho lưu trữ dữ liệu Landsat Tập hợp 2 kể từ năm [y:2020].\n\nĐể sử dụng các chủ đề SNS, người dùng Landsat sẽ cần thiết lập tài khoản AWS và phương thức đăng ký SNS được hỗ trợ để nhận cập nhật. Tài khoản mới có thể được tạo tại trang web Amazon Web Services và người dùng được khuyến khích xem xét thông tin để thiết lập đăng ký thành công.\n\nSau khi đăng nhập, người dùng có thể tìm kiếm trong bảng điều khiển SNS để tìm các chủ đề SNS của Landsat được liệt kê bên dưới và thiết lập điểm cuối ưu tiên để nhận thông báo.\n\nCác chủ đề SNS này hiện đã có sẵn:\n\n• Sản phẩm Cấp độ 1 và Cấp độ 2 của Landsat 8, Landsat 9: arn:aws:sns:us-west-2:673253540267:public-c2-notify-v2"
+    },
+    {
+      "body_en": "• **Landsat 8, Landsat 9 Level-3 science products**arn:aws:sns:us-west-2:673253540267:public-c2-level-3-tile-notify-v2\n\n• **Landsat U.S. Analysis Ready Data (ARD) products**arn:aws:sns:us-west-2:673253540267:public-c2-ard-tile-notify-v2\n\nThese SNS topics will become available in [y:December 2026]:\n\n• **Landsat Calibration Parameter Files (CPF)**arn:aws:sns:us-west-2:673253540267:public-cpf-notify\n\n• **Landsat Bias Parameter Files (BPF)**arn:aws:sns:us-west-2:673253540267:public-bpf-notify\n\n• **Response Linearization Look Up Tables (RLUT)**arn:aws:sns:us-west-2:673253540267:public-rlut-notify\n\n**Utilizing Cloud Storage**\n\nUsers who intend to automatically store or process Landsat notifications, such as scripts that download ancillary files or trigger downstream workflows, may want to configure an [g:S3 bucket]. This is not required to receive notifications but is useful for automated pipelines. Visit the Amazon Web Services webpage to learn more about this process.",
+      "body_vi": "• Sản phẩm khoa học Cấp độ 3 của Landsat 8, Landsat 9: arn:aws:sns:us-west-2:673253540267:public-c2-level-3-tile-notify-v2\n\n• Sản phẩm Dữ liệu Sẵn sàng Phân tích (ARD) tại Hoa Kỳ của Landsat: arn:aws:sns:us-west-2:673253540267:public-c2-ard-tile-notify-v2\n\nCác chủ đề SNS này sẽ có sẵn vào tháng 12 năm 2026:\n\n• Tệp Thông số Hiệu chuẩn Landsat (CPF): arn:aws:sns:us-west-2:673253540267:public-cpf-notify\n\n• Tệp Thông số Sai lệch Landsat (BPF): arn:aws:sns:us-west-2:673253540267:public-bpf-notify\n\n• Bảng tra cứu Tuyến tính Phản hồi (RLUT): arn:aws:sns:us-west-2:673253540267:public-rlut-notify\n\nSử dụng Lưu trữ Đám mây\n\nNgười dùng có ý định tự động lưu trữ hoặc xử lý các thông báo Landsat, chẳng hạn như tập lệnh tải xuống tệp phụ trợ hoặc kích hoạt quy trình làm việc hạ nguồn, có thể muốn cấu hình một thùng chứa S3 (S3 bucket). Điều này không bắt buộc để nhận thông báo nhưng rất hữu ích cho các đường ống tự động. Truy cập trang web Amazon Web Services để tìm hiểu thêm về quy trình này."
+    },
+    {
+      "body_en": "Visit the Landsat Commercial Cloud Access webpage to learn more about using the AWS commercial cloud services with Landsat data and science products.\n\n*Return to all Landsat Headlines*",
+      "body_vi": "Truy cập trang web Truy cập Đám mây Thương mại Landsat để tìm hiểu thêm về việc sử dụng các dịch vụ đám mây thương mại AWS với dữ liệu Landsat và các sản phẩm khoa học.\n\nQuay lại tất cả Tiêu điểm Landsat"
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/landsat-missions/news/modernizing-landsat-notifications-sns-topics-replace-rss-feeds"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/1053/1080/1920",
+    "provider": "unsplash",
+    "author": "Anna Popović",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1053/1080/1920",
+      "provider": "unsplash",
+      "author": "Anna Popović",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/564/1080/1920",
+      "provider": "unsplash",
+      "author": "Sebastian Boguszewicz",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/681/1080/1920",
+      "provider": "unsplash",
+      "author": "Axel  Antas-Bergkvist",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwAIEC6LFZ6ZrFqW81NmcAAA/uqr/PE1fynh0XCzr53ckTF+MfJ6ev56J35Z9p60yu5yTxeCtrqftDvVCjrWRRjCwGe5UoOntuNimSNYD6b4xKvUvdb3vv12B5HE1VH8cGeERuIPWRBQ+u+mSwWM301Y9MD94IPWUnh9P+Ys2JL39MoAAA==",
+  "dominant": "#6c7c79",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-modernizing-landsat-notifications-sns-topics-replace-rss-feeds",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "Modernizing Landsat Notifications: SNS Topics Replace RSS Feeds",
+    "originalUrl": "https://www.usgs.gov/landsat-missions/news/modernizing-landsat-notifications-sns-topics-replace-rss-feeds",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Migrating from legacy RSS feeds to modern Amazon SNS topics ensures your automated Landsat data workflows stay connected to the cloud. Have you updated your notification endpoints yet?",
+    "vi": "Việc chuyển đổi từ nguồn cấp dữ liệu RSS cũ sang các chủ đề [p:Amazon SNS hiện đại] đảm bảo quy trình dữ liệu Landsat tự động của bạn luôn kết nối với đám mây. Bạn đã cập nhật điểm cuối thông báo của mình chưa?"
+  },
+  "applySteps": {
+    "en": [
+      "Create an Amazon Web Services account to access cloud infrastructure.",
+      "Search the SNS console for Landsat SNS topics to receive updates.",
+      "Configure an optional S3 bucket to automate downloading or processing."
+    ],
+    "vi": [
+      "Tạo tài khoản Amazon Web Services để truy cập hạ tầng điện toán đám mây.",
+      "Tìm kiếm bảng điều khiển SNS để chọn các chủ đề SNS Landsat và nhận thông báo cập nhật.",
+      "Cấu hình một thùng chứa S3 tùy chọn để tự động hóa việc tải xuống hoặc xử lý."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-10-30T02:44:29.258Z"
+}
