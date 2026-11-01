@@ -1,0 +1,149 @@
+{
+  "slug": "when-chatbots-become-answer-engines-ai-geopolitics-and-truth",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=when-chatbots-become-answer-engines-ai-geopolitics-and-truth",
+  "category": "society",
+  "tags": [
+    "artificial intelligence",
+    "geopolitics",
+    "information integrity",
+    "chatbots",
+    "misinformation"
+  ],
+  "title": {
+    "en": "When chatbots become ‘answer engines’: AI, geopolitics and truth",
+    "vi": "Khi chatbot trở thành “cỗ máy trả lời”: AI, địa chính trị và sự thật"
+  },
+  "hook": {
+    "en": "LLMs are designed to generate text that sounds convincing. They produce fluent and coherent responses, but these qualities do not guarantee verified truth. If something reads clearly and authoritatively, it feels reliable.\n\nBut in geopolitics, plausibility is not enough.\n\nUnlike traditional information sources, chatbots do not simply retrieve facts. They also interpret, prioritise and frame information in ways shaped by their training data and the technological environments in which they operate.",
+    "vi": "Các mô hình ngôn ngữ lớn (*LLMs*) được thiết kế để tạo ra văn bản nghe có vẻ thuyết phục. Chúng tạo ra các phản hồi trôi chảy và mạch lạc, nhưng những phẩm chất này không đảm bảo sự thật đã được kiểm chứng. Nếu một nội dung đọc có vẻ rõ ràng và mang tính thẩm quyền, nó sẽ tạo cảm giác đáng tin cậy.\n\nNhưng trong địa chính trị, tính hợp lý (*plausibility*) là chưa đủ.\n\nKhông giống như các nguồn thông tin truyền thống, chatbot không chỉ đơn thuần truy xuất dữ liệu thực tế. Chúng còn diễn giải, ưu tiên và đóng khung thông tin theo những cách chịu sự chi phối từ dữ liệu huấn luyện và môi trường công nghệ mà chúng vận hành."
+  },
+  "sections": [
+    {
+      "body_en": "This was one of the central questions guiding our research.",
+      "body_vi": "Đây là một trong những câu hỏi cốt lõi định hướng cho nghiên cứu của chúng tôi."
+    },
+    {
+      "heading_en": "What our research revealed",
+      "body_en": "[y:In 2025], I led a research team at Action for Democratic Society/Hibrid.info that examined how three widely used AI chatbots responded to sensitive political and historical questions: ChatGPT (launched in the United States), DeepSeek Chat (launched in China), and Alice (launched in Russia).\n\nThe study, titled “The Chatbot Version of Truth,” analysed what kind of “truth” these systems produce when people use them as shortcut information sources for specific topics concerning Kosovo, critical issues related to the Western Balkans (WB) and global comparative topics.\n\nThe team developed [y:100 standardised prompts] covering issues such as the independence of Kosovo, the war legacy, international recognition, EU integration of West Balkan countries, memory politics, regional disputes, and global comparative questions like Crimea, Cyprus, or other contested territories.",
+      "heading_vi": "Nghiên cứu của chúng tôi đã tiết lộ điều gì",
+      "body_vi": "Vào năm 2025, tôi đã lãnh đạo một nhóm nghiên cứu tại tổ chức Action for Democratic Society/Hibrid.info nhằm xem xét cách ba chatbot AI được sử dụng rộng rãi phản hồi trước các câu hỏi chính trị và lịch sử nhạy cảm: ChatGPT (ra mắt tại Hoa Kỳ), DeepSeek Chat (ra mắt tại Trung Quốc) và Alice (ra mắt tại Nga).\n\nNghiên cứu có tựa đề “Phiên bản sự thật của Chatbot” (*The Chatbot Version of Truth*) đã phân tích loại “sự thật” nào mà các hệ thống này tạo ra khi mọi người sử dụng chúng làm nguồn thông tin lối tắt cho các chủ đề cụ thể liên quan đến Kosovo, các vấn đề quan trọng về Tây Balkan (WB) và các chủ đề so sánh toàn cầu.\n\nNhóm nghiên cứu đã phát triển 100 lời nhắc chuẩn hóa (*standardized prompts*) bao gồm các vấn đề như nền độc lập của Kosovo, di sản chiến tranh, sự công nhận quốc tế, hội nhập EU của các quốc gia Tây Balkan, chính trị ký ức (*memory politics*), tranh chấp khu vực và các câu hỏi so sánh toàn cầu như Crimea, Síp, hoặc các vùng lãnh thổ tranh chấp khác."
+    },
+    {
+      "body_en": "A separate account was created in each chatbot for every thematic area, and each prompt was entered separately into a new chat, to avoid previous answers influencing the next one. The responses were then checked for factual accuracy and compared for semantic similarity. Semi-structured interviews with experts were also conducted, which were used to verify and interpret the experimental findings.\n\nInitially, the results suggested a positive picture: most answers were broadly accurate, with ChatGPT and DeepSeek Chat demonstrating the highest and most consistent accuracy. However, both systems still produced inaccuracies, elements of hallucination, and interpretive variations. Alice showed a weaker performance, with the highest number of refusals to answer, thematic evasions, and ideological deviations, particularly on politically sensitive topics.",
+      "body_vi": "Một tài khoản riêng biệt đã được tạo trong mỗi chatbot cho từng lĩnh vực chủ đề và mỗi lời nhắc được nhập riêng vào một đoạn chat mới để tránh việc các câu trả lời trước ảnh hưởng đến câu trả lời tiếp theo. Các phản hồi sau đó được kiểm tra độ chính xác thực tế và so sánh về độ tương đồng ngữ nghĩa (*semantic similarity*). Các cuộc phỏng vấn bán cấu trúc (*semi-structured interviews*) với các chuyên gia cũng được tiến hành để xác minh và giải thích các phát hiện thực nghiệm.\n\nBan đầu, kết quả cho thấy một bức tranh tích cực: phần lớn các câu trả lời đều có độ chính xác cao nói chung, trong đó ChatGPT và DeepSeek Chat thể hiện độ chính xác cao nhất và ổn định nhất. Tuy nhiên, cả hai hệ thống vẫn tạo ra những điểm thiếu chính xác, các yếu tố ảo giác (*hallucination*) và các biến thể diễn giải. Alice cho thấy hiệu suất yếu hơn, với số lượng từ chối trả lời, né tránh chủ đề và sai lệch ý thức hệ nhiều nhất, đặc biệt là về các chủ đề nhạy cảm chính trị."
+    },
+    {
+      "body_en": "Performance of the chatbots in the 100 tested prompts by accuracy categories. Graph by hibrid.info, used with permission.\n\nBut accuracy alone does not tell the full story.\n\nOne of the clearest findings was that none of the tested systems could be considered a fully neutral or consistently reliable reference point for geopolitical issues.\n\nThe semantic similarity analysis showed that ChatGPT and DeepSeek Chat often produced very similar formulations, especially on Kosovo and regional topics, suggesting a shared way of structuring narratives. Alice, by contrast, deviated more strongly in both wording and emphasis.\n\nFrom a user's perspective, this leads to a simple but troubling conclusion: the same question can produce [p:different versions of political reality] depending on which chatbot is used.",
+      "body_vi": "Hiệu suất của các chatbot trong 100 lời nhắc đã kiểm tra theo các danh mục độ chính xác. Biểu đồ bởi hibrid.info, được sử dụng với sự cho phép.\n\nNhưng độ chính xác thôi chưa đủ để kể toàn bộ câu chuyện.\n\nMột trong những phát hiện rõ ràng nhất là không có hệ thống nào được kiểm tra có thể được coi là điểm tham chiếu hoàn toàn trung lập hoặc đáng tin cậy nhất quán cho các vấn đề địa chính trị.\n\nPhân tích độ tương đồng ngữ nghĩa cho thấy ChatGPT và DeepSeek Chat thường tạo ra các công thức diễn đạt rất giống nhau, đặc biệt là về Kosovo và các chủ đề khu vực, cho thấy một cách cấu trúc tường thuật chung. Ngược lại, Alice lệch hướng mạnh mẽ hơn cả về từ ngữ lẫn trọng tâm.\n\nTừ góc độ người dùng, điều này dẫn đến một kết luận đơn giản nhưng đáng lo ngại: cùng một câu hỏi có thể tạo ra các phiên bản thực tế chính trị khác nhau tùy thuộc vào chatbot được sử dụng."
+    },
+    {
+      "heading_en": "When location changes the answer",
+      "body_en": "In a second part of the study, the team tested whether the user’s location influences the responses. The same three sensitive questions were asked from six Western Balkan countries: Kosovo, Albania, North Macedonia, Montenegro, Serbia, and Bosnia and Herzegovina.\n\nThe findings showed that geography can matter.\n\nChatGPT and DeepSeek Chat remained relatively stable in wording and meaning, although some variations appeared on particularly contested topics. Alice, however, behaved differently: in some countries it answered in Russian, in others it refused to answer entirely, and in some cases it mixed languages within a single response, despite all prompts being submitted in English.\n\nThe analysis also identified differences in semantic similarity between responses from different countries, including some with contrasting historical and political perspectives.",
+      "heading_vi": "Khi vị trí làm thay đổi câu trả lời",
+      "body_vi": "Trong phần thứ hai của nghiên cứu, nhóm đã kiểm tra xem vị trí của người dùng có ảnh hưởng đến phản hồi hay không. Cùng ba câu hỏi nhạy cảm đã được đặt ra từ sáu quốc gia Tây Balkan: Kosovo, Albania, Bắc Macedonia, Montenegro, Serbia và Bosnia-Herzegovina.\n\nCác phát hiện cho thấy địa lý có thể đóng vai trò quan trọng.\n\nChatGPT và DeepSeek Chat duy trì sự ổn định tương đối về từ ngữ và ý nghĩa, mặc dù một số biến thể xuất hiện ở các chủ đề đặc biệt gây tranh cãi. Tuy nhiên, Alice lại có hành vi khác: ở một số quốc gia, hệ thống này trả lời bằng tiếng Nga, ở những quốc gia khác thì từ chối trả lời hoàn toàn, và trong một số trường hợp, nó trộn lẫn nhiều ngôn ngữ trong một phản hồi duy nhất, mặc dù tất cả các lời nhắc đều được gửi bằng tiếng Anh.\n\nPhân tích cũng xác định sự khác biệt về độ tương đồng ngữ nghĩa giữa các phản hồi từ các quốc gia khác nhau, bao gồm cả một số quốc gia có quan điểm lịch sử và chính trị trái ngược nhau."
+    },
+    {
+      "body_en": "This may sound like a technical detail, but the implications are practical. Similar questions asked from different locations may produce answers that differ in language, emphasis or completeness.\n\nMuch like digital maps can look different depending on which country they are opened from, [p:AI-generated explanations of political reality can also shift with geography].\n\nFor users, this means that the information they receive may depend not only on what they ask, but also on which system they use and where they access it.",
+      "body_vi": "Điều này có vẻ giống như một chi tiết kỹ thuật, nhưng hàm ý của nó lại mang tính thực tế. Các câu hỏi tương tự được đặt ra từ các vị trí khác nhau có thể tạo ra câu trả lời khác nhau về ngôn ngữ, trọng tâm hoặc tính đầy đủ.\n\nGiống như bản đồ kỹ thuật số có thể trông khác nhau tùy thuộc vào quốc gia mà chúng được mở ra, các giải thích do AI tạo ra về thực tế chính trị cũng có thể thay đổi theo địa lý.\n\nĐối với người dùng, điều này có nghĩa là thông tin họ nhận được có thể không chỉ phụ thuộc vào những gì họ hỏi, mà còn phụ thuộc vào hệ thống nào họ sử dụng và nơi họ truy cập hệ thống đó."
+    },
+    {
+      "heading_en": "A new layer in the information environment",
+      "body_en": "Authoritarian influence over information is often associated with censorship, propaganda and restrictions on independent journalism. AI chatbots introduce another dimension to how political narratives are encountered and reproduced.\n\nThese systems do not simply provide information. Through differences in accuracy, framing and contextual adaptation, they can influence how political and historical realities are presented to users.\n\nWhen AI systems are trained on unbalanced data, filtered through political constraints or designed to produce fluent responses without guaranteeing factual accuracy, they risk becoming quiet amplifiers of distorted realities – not necessarily because they are designed to promote a particular narrative, but because of how information is selected, processed and presented.\n\nThis is particularly relevant in information environments where foreign manipulation, propaganda and historical revisionism are already present.",
+      "heading_vi": "Một tầng lớp mới trong môi trường thông tin",
+      "body_vi": "Sự can thiệp củaauthoritarianism (chế độ độc tài) vào thông tin thường gắn liền với kiểm duyệt, tuyên truyền và các hạn chế đối với báo chí độc lập. Chatbot AI giới thiệu một chiều kích khác về cách các tường thuật chính trị được tiếp cận và tái sản xuất.\n\nNhững hệ thống này không chỉ đơn thuần cung cấp thông tin. Thông qua sự khác biệt về độ chính xác, cách đóng khung và sự thích ứng theo ngữ cảnh, chúng có thể ảnh hưởng đến cách thực tế chính trị và lịch sử được trình bày trước người dùng.\n\nKhi các hệ thống AI được huấn luyện trên dữ liệu mất cân bằng, bị lọc qua các ràng buộc chính trị hoặc được thiết kế để tạo ra các phản hồi trôi chảy mà không đảm bảo độ chính xác thực tế, chúng có nguy cơ trở thành những bộ khuếch đại thầm lặng của những thực tế bị bóp méo – không nhất thiết vì chúng được thiết kế để thúc đẩy một tường thuật cụ thể, mà vì cách thông tin được lựa chọn, xử lý và trình bày.\n\nĐiều này đặc biệt có liên quan trong các môi trường thông tin nơi sự thao túng từ nước ngoài, tuyên truyền và chủ nghĩa xét lại lịch sử (*historical revisionism*) đã hiện hữu."
+    },
+    {
+      "body_en": "The research does not establish direct coordination between chatbot developers and political actors. Nor does it suggest that every inaccurate response reflects deliberate manipulation.\n\nRather, it highlights a broader concern: systems developed and controlled by powerful technology companies increasingly mediate access to political knowledge, while the processes shaping their answers remain difficult for ordinary users to examine.\n\nThe way these systems present information is therefore not merely a technical issue. It also raises questions about transparency, accountability and the influence of technology platforms over public understanding.",
+      "body_vi": "Nghiên cứu không thiết lập sự phối hợp trực tiếp giữa các nhà phát triển chatbot và các tác nhân chính trị. Nghi cũng không ngụ ý rằng mọi phản hồi thiếu chính xác đều phản ánh sự thao túng có chủ ý.\n\nThay vào đó, nghiên cứu này làm nổi bật một mối quan tâm rộng lớn hơn: các hệ thống được phát triển và kiểm soát bởi các công ty công nghệ hùng mạnh ngày càng làm trung gian cho quyền truy cập vào kiến thức chính trị, trong khi các quá trình định hình câu trả lời của chúng vẫn khó để những người dùng thông thường xem xét.\n\nDo đó, cách các hệ thống này trình bày thông tin không chỉ đơn thuần là vấn đề kỹ thuật. Nó còn dấy lên các câu hỏi về tính minh bạch, trách nhiệm giải trình và ảnh hưởng của các nền tảng công nghệ đối với sự thấu hiểu của công chúng."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Global Voices (2026)",
+      "url": "https://globalvoices.org/2026/10/30/when-chatbots-become-answer-engines-ai-geopolitics-and-truth"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/259/1080/1920",
+    "provider": "unsplash",
+    "author": "Namphuong Van",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/hfIheOEJp9M"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/259/1080/1920",
+      "provider": "unsplash",
+      "author": "Namphuong Van",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/hfIheOEJp9M"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/331/1080/1920",
+      "provider": "unsplash",
+      "author": "Thong Vo",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/576/1080/1920",
+      "provider": "unsplash",
+      "author": "Steven Lewis",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/dmHnXJ-5ilQ"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwAwCdASoQABwAPu1iqk2ppaQiMAgBMB2JYwAAW8eb/VKwBGNPA3tAAP7vwdu4FYPrsNJ0waopcJjNS/aCQvDSQ04lSjDpY+sL8gVsF3yL3hVlNmGlvr6KeyS20i2H6fbWw41B/ErDDMN7eApp54uGCHrJS7Id3SkYTXDjneJ6knWqCX/t4yiYyPj7iKnr4iM65cxfHWSsC/gy4nJ6ogAA",
+  "dominant": "#746b6e",
+  "origin": {
+    "group": 1,
+    "sourceId": "globalvoices-org-when-chatbots-become-answer-engines-ai-geopolitics-and-truth",
+    "license": "CC-BY-3.0",
+    "authors": [
+      "Guest Contributor"
+    ],
+    "originalTitle": "When chatbots become ‘answer engines’: AI, geopolitics and truth",
+    "originalUrl": "https://globalvoices.org/2026/10/30/when-chatbots-become-answer-engines-ai-geopolitics-and-truth",
+    "publisher": "Global Voices",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Chatbots are like charismatic tour guides who know a city well, but quietly insert their own biases and map adjustments into every story they tell. When asking an AI about sensitive geopolitical issues, [p:always double-check its version of reality against independent sources].",
+    "vi": "Chatbot giống như những hướng dẫn viên du lịch có sức hút, am hiểu thành phố nhưng lại ngấm ngầm lồng ghép những thiên kiến và sự điều chỉnh bản đồ của riêng họ vào mọi câu chuyện họ kể. Khi hỏi AI về các vấn đề địa chính trị nhạy cảm, [p:hãy luôn kiểm tra kỹ phiên bản thực tế của nó so với các nguồn độc lập]."
+  },
+  "applySteps": {
+    "en": [
+      "Test the same political or historical question across different AI chatbots to compare their answers.",
+      "Access your preferred chatbot from a different region or network to check if geography alters the response.",
+      "Verify chatbot claims against traditional, reliable information sources before accepting them as truth."
+    ],
+    "vi": [
+      "Thử nghiệm cùng một câu hỏi chính trị hoặc lịch sử trên các chatbot AI khác nhau để so sánh câu trả lời.",
+      "Truy cập chatbot ưa thích của bạn từ một khu vực hoặc mạng lưới khác để kiểm tra xem vị trí địa lý có làm thay đổi phản hồi hay không.",
+      "Xác minh các tuyên bố của chatbot bằng các nguồn thông tin truyền thống, đáng tin cậy trước khi chấp nhận chúng là sự thật."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-01T02:28:24.452Z"
+}

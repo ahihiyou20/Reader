@@ -150,6 +150,11 @@
       "feed": "wikipedia-featured",
       "error": "Unterminated string in JSON at position 391688 (line 2 column 391687)"
     },
+    "https://en.wikipedia.org/wiki/Europejara": {
+      "at": "2026-11-01T02:15:52.332Z",
+      "feed": "wikipedia-featured",
+      "slug": "europejara"
+    },
     "https://en.wikipedia.org/wiki/Eyebrow_Talk": {
       "at": "2026-10-27T02:13:54.982Z",
       "feed": "wikipedia-featured",
@@ -315,6 +320,26 @@
       "feed": "global-voices",
       "error": "Unterminated string in JSON at position 241753 (line 2 column 241752)"
     },
+    "https://globalvoices.org/2026/10/30/how-one-haitian-entrepreneur-found-success-by-supporting-all-things-local": {
+      "at": "2026-11-01T02:21:48.986Z",
+      "feed": "global-voices",
+      "error": "Unterminated string in JSON at position 152282 (line 2 column 152281)"
+    },
+    "https://globalvoices.org/2026/10/30/how-the-streets-and-a-social-media-army-led-lula-to-a-historic-win-in-brazil": {
+      "at": "2026-11-01T02:19:06.665Z",
+      "feed": "global-voices",
+      "slug": "how-the-streets-and-a-social-media-army-led-lula-to-a-histor"
+    },
+    "https://globalvoices.org/2026/10/30/when-chatbots-become-answer-engines-ai-geopolitics-and-truth": {
+      "at": "2026-11-01T02:16:29.337Z",
+      "feed": "global-voices",
+      "slug": "when-chatbots-become-answer-engines-ai-geopolitics-and-truth"
+    },
+    "https://globalvoices.org/2026/10/31/in-kazakhstan-rural-women-are-forming-collectives-to-improve-their-livelihoods": {
+      "at": "2026-11-01T02:15:42.520Z",
+      "feed": "global-voices",
+      "slug": "in-kazakhstan-rural-women-are-forming-collectives-to-improve"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -355,6 +380,11 @@
       "feed": "nautilus",
       "slug": "rare-fossil-sheds-light-on-the-ancient-origins-of-snakes"
     },
+    "https://nautil.us/can-you-recognize-the-subject-of-this-years-microscopic-photography-contest-winner-1286224": {
+      "at": "2026-11-01T02:19:14.509Z",
+      "feed": "nautilus",
+      "error": "Only 117 words readable (paywall or script-only page?)"
+    },
     "https://nautil.us/dead-star-offers-a-glimpse-into-our-solar-systems-future-1286164": {
       "at": "2026-10-29T02:31:47.081Z",
       "feed": "nautilus",
@@ -369,6 +399,11 @@
       "at": "2026-10-23T16:57:10.451Z",
       "feed": "nautilus",
       "slug": "forensic-experts-identify-people-using-only-one-or-two-facia"
+    },
+    "https://nautil.us/how-a-sick-chicken-revolutionized-cancer-research-1286219": {
+      "at": "2026-11-01T02:18:51.543Z",
+      "feed": "nautilus",
+      "slug": "how-a-sick-chicken-transformed-modern-cancer-research"
     },
     "https://nautil.us/how-multiple-births-can-accelerate-a-mothers-biological-age-1286063": {
       "at": "2026-10-25T01:14:29.135Z",
@@ -434,6 +469,11 @@
       "at": "2026-10-23T16:47:06.483Z",
       "feed": "nautilus",
       "error": "Only 151 words readable (paywall or script-only page?)"
+    },
+    "https://nautil.us/this-bizarre-jurassic-squid-swam-the-ancient-seas-of-wyoming-1286238": {
+      "at": "2026-11-01T02:16:00.540Z",
+      "feed": "nautilus",
+      "slug": "giant-jurassic-squid-relative-discovered-in-ancient-wyoming"
     },
     "https://nautil.us/this-prehistoric-creature-is-the-only-ocean-dwelling-amphibian-ever-discovered-1286127": {
       "at": "2026-10-28T02:25:14.783Z",
@@ -585,6 +625,11 @@
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
     },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-announcements-30-oct-2026": {
+      "at": "2026-11-01T02:16:14.919Z",
+      "feed": "nasa-science",
+      "error": "Only 234 words of text found"
+    },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-2-nov-2026": {
       "at": "2026-10-25T01:15:00.072Z",
       "feed": "nasa-science",
@@ -645,6 +690,11 @@
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
     },
+    "https://science.nasa.gov/mission/crave": {
+      "at": "2026-11-01T02:15:27.594Z",
+      "feed": "nasa-science",
+      "error": "Only 182 words of text found"
+    },
     "https://science.nasa.gov/people/kayla-rillo-armstrong": {
       "at": "2026-10-27T02:10:23.517Z",
       "feed": "nasa-science",
@@ -664,6 +714,11 @@
       "at": "2026-10-30T02:42:05.516Z",
       "feed": "nasa-science",
       "error": "Only 118 words of text found"
+    },
+    "https://theconversation.com/70-years-ago-the-suez-crisis-exposed-british-relative-decline-today-the-iran-conflict-could-be-doing-the-same-for-the-us-292833": {
+      "at": "2026-11-01T02:15:34.895Z",
+      "feed": "conversation",
+      "slug": "70-years-ago-the-suez-crisis-exposed-british-relative-declin"
     },
     "https://theconversation.com/a-critical-flaw-affecting-70-of-all-websites-has-the-cybersecurity-world-panicked-294941": {
       "at": "2026-10-25T01:14:46.906Z",
@@ -745,6 +800,11 @@
       "feed": "conversation",
       "slug": "japan-s-expensive-funerals-and-declining-birth-rates-are-tra"
     },
+    "https://theconversation.com/medieval-ghost-stories-featured-rotten-flesh-the-walking-dead-and-spoon-stealing-spirits-294984": {
+      "at": "2026-11-01T02:19:38.654Z",
+      "feed": "conversation",
+      "slug": "medieval-ghost-stories-featured-rotten-flesh-the-walking-dea"
+    },
     "https://theconversation.com/napoleon-can-be-partly-blamed-for-gen-zs-weightlifting-obsession-heres-why-293288": {
       "at": "2026-10-24T01:41:41.924Z",
       "feed": "conversation",
@@ -775,6 +835,11 @@
       "feed": "conversation",
       "slug": "the-crucible-arthur-miller-s-morality-tale-was-as-much-a-rea"
     },
+    "https://theconversation.com/the-female-scream-is-now-an-all-powerful-cry-in-horror-films-293273": {
+      "at": "2026-11-01T02:21:56.745Z",
+      "feed": "conversation",
+      "slug": "the-female-scream-is-now-an-all-powerful-cry-in-horror-films"
+    },
     "https://theconversation.com/the-problem-with-shane-gilliss-joke-isnt-just-sexism-its-sex-work-stigma-294529": {
       "at": "2026-10-25T01:15:06.229Z",
       "feed": "conversation",
@@ -795,6 +860,11 @@
       "feed": "conversation",
       "slug": "we-changed-the-system-how-serbian-students-ended-alexander-v"
     },
+    "https://theconversation.com/werewolf-mice-ghostly-frogs-and-zombie-cockroaches-the-animal-versions-of-our-halloween-horrors-294284": {
+      "at": "2026-11-01T02:16:42.531Z",
+      "feed": "conversation",
+      "slug": "werewolf-mice-ghostly-frogs-and-zombie-cockroaches-the-anima"
+    },
     "https://theconversation.com/what-animal-bones-in-malawi-teach-us-about-the-social-lives-of-people-long-ago-281660": {
       "at": "2026-10-31T02:30:32.694Z",
       "feed": "conversation",
@@ -809,6 +879,11 @@
       "at": "2026-10-28T02:22:39.502Z",
       "feed": "conversation",
       "slug": "what-s-the-difference-between-green-yellow-and-red-capsicums"
+    },
+    "https://theconversation.com/who-mapped-africa-debunking-the-myth-that-europeans-alone-plotted-the-continent-293657": {
+      "at": "2026-11-01T02:16:20.174Z",
+      "feed": "conversation",
+      "slug": "who-mapped-africa-debunking-the-myth-that-europeans-alone-pl"
     },
     "https://theconversation.com/why-ultra-orthodox-parties-hold-so-much-sway-in-israeli-politics-294218": {
       "at": "2026-10-28T02:22:07.579Z",
@@ -835,6 +910,11 @@
       "feed": "nasa-science",
       "error": "Only 228 words of text found"
     },
+    "https://www.nasa.gov/blogs/spacestation/2026/10/30/space-crops-and-advanced-tech-wrap-up-week-following-spacewalk": {
+      "at": "2026-11-01T02:19:32.623Z",
+      "feed": "nasa-science",
+      "slug": "space-crops-and-advanced-tech-wrap-up-week-following-spacewa"
+    },
     "https://www.nasa.gov/centers-and-facilities/johnson/halloween-aboard-the-international-space-station": {
       "at": "2026-10-30T02:42:23.280Z",
       "feed": "nasa-science",
@@ -849,6 +929,11 @@
       "at": "2026-10-29T02:37:46.734Z",
       "feed": "nasa-science",
       "error": "Only 188 words of text found"
+    },
+    "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head": {
+      "at": "2026-11-01T02:21:51.212Z",
+      "feed": "nasa-science",
+      "error": "Only 92 words of text found"
     },
     "https://www.nasa.gov/image-article/spirals-edge": {
       "at": "2026-10-23T16:48:42.349Z",
@@ -884,6 +969,11 @@
       "at": "2026-10-30T02:50:46.686Z",
       "feed": "nasa-science",
       "slug": "nasa-names-troy-asher-armstrong-flight-research-center-direc"
+    },
+    "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants": {
+      "at": "2026-11-01T02:16:36.187Z",
+      "feed": "nasa-science",
+      "slug": "nasa-releases-max-power-key-events-for-media-participants"
     },
     "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory": {
       "at": "2026-10-29T02:28:35.197Z",
@@ -1000,6 +1090,11 @@
       "feed": "npr-health",
       "slug": "us-government-policy-shifts-on-popular-wellness-peptides"
     },
+    "https://www.npr.org/2026/10/29/nx-s1-5995636/refugees-in-11-states-are-losing-medicaid-coverage": {
+      "at": "2026-11-01T02:19:20.891Z",
+      "feed": "npr-health",
+      "slug": "eleven-states-strip-medicaid-from-refugee-children-and-mothe"
+    },
     "https://www.npr.org/2026/10/29/nx-s1-5996687/anhedonia-quiz-high-functioning-depression": {
       "at": "2026-10-30T02:42:45.806Z",
       "feed": "npr-health",
@@ -1029,6 +1124,16 @@
       "at": "2026-10-31T02:27:13.116Z",
       "feed": "npr-health",
       "slug": "youth-ai-chatbot-use-surges-along-with-mental-health-concern"
+    },
+    "https://www.npr.org/2026/10/31/g-s1-150698/drone-photo-award-winners": {
+      "at": "2026-11-01T02:16:07.319Z",
+      "feed": "npr-health",
+      "slug": "stunning-winners-of-the-2026-siena-drone-photo-awards"
+    },
+    "https://www.npr.org/2026/10/31/nx-s1-6023200/do-you-have-seasonal-affective-disorder-how-to-tell-and-what-to-do-about-it": {
+      "at": "2026-11-01T02:18:57.298Z",
+      "feed": "npr-health",
+      "slug": "understanding-and-coping-with-seasonal-affective-disorder"
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -1175,6 +1280,11 @@
       "feed": "sciencedaily",
       "slug": "mystery-seahorse-lookalikes-discovered-in-deep-australian-wa"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261029072142.htm": {
+      "at": "2026-11-01T02:19:25.674Z",
+      "feed": "sciencedaily",
+      "slug": "blood-test-reveals-alzheimer-s-risk-years-before-symptoms-em"
+    },
     "https://www.sciencedaily.com/releases/2026/10/261030002922.htm": {
       "at": "2026-10-31T02:31:02.333Z",
       "feed": "sciencedaily",
@@ -1184,6 +1294,16 @@
       "at": "2026-10-31T02:27:19.708Z",
       "feed": "sciencedaily",
       "slug": "astronauts-upgrade-international-space-station-power-system"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261030002935.htm": {
+      "at": "2026-11-01T02:19:02.756Z",
+      "feed": "sciencedaily",
+      "slug": "physicists-recreate-big-bang-matter-using-tiny-oxygen-collis"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261030003022.htm": {
+      "at": "2026-11-01T02:16:12.802Z",
+      "feed": "sciencedaily",
+      "slug": "ancient-moroccan-wall-rewrites-north-african-history"
     },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
@@ -1280,15 +1400,30 @@
       "feed": "usgs",
       "slug": "volcano-watch-a-look-back-at-recent-kilauea-eruptions-and-in"
     },
+    "https://www.usgs.gov/observatories/hvo/news/volcano-watch-ruby-seamount-a-glimpse-secret-life-a-submarine-volcano": {
+      "at": "2026-11-01T02:18:45.627Z",
+      "feed": "usgs",
+      "error": "Unterminated string in JSON at position 266218 (line 2 column 266217)"
+    },
     "https://www.usgs.gov/observatories/yvo/news/crystal-clues-case-lava-creek-tuffs-missing-members": {
       "at": "2026-10-27T02:09:51.480Z",
       "feed": "usgs",
       "slug": "crystal-clues-the-case-of-the-lava-creek-tuff-s-missing-memb"
     },
+    "https://www.usgs.gov/programs/climate-adaptation-science-centers/news/podcast-explores-links-between-storms-and-invasive": {
+      "at": "2026-11-01T02:15:55.197Z",
+      "feed": "usgs",
+      "error": "Only 238 words of text found"
+    },
     "https://www.usgs.gov/programs/climate-adaptation-science-centers/news/summer-drought-may-increase-human-bear": {
       "at": "2026-10-25T01:14:12.315Z",
       "feed": "usgs",
       "slug": "summer-drought-may-increase-human-bear-interactions"
+    },
+    "https://www.usgs.gov/programs/cmhrp/news/usgs-monitors-californias-coastal-hazards-during-2026-2027-el-nino-event": {
+      "at": "2026-11-01T02:19:14.388Z",
+      "feed": "usgs",
+      "slug": "usgs-monitors-california-s-coastal-hazards-during-the-2026-2"
     },
     "https://www.usgs.gov/programs/national-cooperative-geologic-mapping-program/news/2026-best-student-geologic-map": {
       "at": "2026-10-26T01:16:20.075Z",

@@ -1,0 +1,76 @@
+{
+  "sections": [
+    {
+      "paragraphs": [
+        "Hyrije Mehmeti presenting research report “The Chatbot Version of Truth” at Hibrid.info international expert conference held on 16 December 2025 in Prishtina, Kosovo. Photo by Global Voices, CC BY 3.0.",
+        "**By Hyrie Mehmeti**",
+        "*This article by Hyrije Mehmeti combines and adapts material from the author's earlier work, including an article* *published in German by the European Journalism Observatory**. It draws on the 2025 ADS/Hibrid.info research report* *The Chatbot Version of Truth**. It is also part of Global Voices’ October 2026 Spotlight series, “Big Tech and Authoritarianism.” In this Spotlight, we explore how Big Tech facilitates and hinders authoritarian governments and practices, and how these choices influence the Global South. You can support this coverage by donating here.*",
+        "For many people today, asking a chatbot a question feels as natural as opening a search engine once did. “Is Kosovo an independent state?” “What happened in Srebrenica?” “Is Crimea part of Ukraine or Russia?” — these are no longer questions reserved for history books, court rulings, or newsrooms. They are typed into chat windows that respond in seconds, in fluent, confident language, often with the tone of an all-knowing guide.",
+        "That confidence is exactly what makes large language model (LLM) chatbots so attractive, and so risky at the same time.",
+        "Alongside social media platforms and online news outlets, AI chatbots are increasingly functioning as reference tools, offering summaries of complex political and historical subjects, often without users verifying the information they receive.",
+        "This shift matters particularly in regions such as the Western Balkans, where history, statehood and war legacies remain politically contested. The way these issues are explained and framed is therefore not only a question of factual accuracy, but also of narrative influence."
+      ]
+    },
+    {
+      "heading": "When “plausible” beats “true”",
+      "paragraphs": [
+        "LLMs are designed to generate text that sounds convincing. They produce fluent and coherent responses, but these qualities do not guarantee verified truth. If something reads clearly and authoritatively, it feels reliable.",
+        "But in geopolitics, plausibility is not enough.",
+        "Unlike traditional information sources, chatbots do not simply retrieve facts. They also interpret, prioritise and frame information in ways shaped by their training data and the technological environments in which they operate.",
+        "This was one of the central questions guiding our research."
+      ]
+    },
+    {
+      "heading": "What our research revealed",
+      "paragraphs": [
+        "In 2025, I led a research team at Action for Democratic Society/Hibrid.info that examined how three widely used AI chatbots responded to sensitive political and historical questions: ChatGPT (launched in the United States), DeepSeek Chat (launched in China), and Alice (launched in Russia).",
+        "The study, titled “The Chatbot Version of Truth,” analysed what kind of “truth” these systems produce when people use them as shortcut information sources for specific topics concerning Kosovo, critical issues related to the Western Balkans (WB) and global comparative topics.",
+        "The team developed 100 standardised prompts covering issues such as the independence of Kosovo, the war legacy, international recognition, EU integration of West Balkan countries, memory politics, regional disputes, and global comparative questions like Crimea, Cyprus, or other contested territories.",
+        "A separate account was created in each chatbot for every thematic area, and each prompt was entered separately into a new chat, to avoid previous answers influencing the next one. The responses were then checked for factual accuracy and compared for semantic similarity. Semi-structured interviews with experts were also conducted, which were used to verify and interpret the experimental findings.",
+        "Initially, the results suggested a positive picture: most answers were broadly accurate, with ChatGPT and DeepSeek Chat demonstrating the highest and most consistent accuracy. However, both systems still produced inaccuracies, elements of hallucination, and interpretive variations. Alice showed a weaker performance, with the highest number of refusals to answer, thematic evasions, and ideological deviations, particularly on politically sensitive topics.",
+        "Performance of the chatbots in the 100 tested prompts by accuracy categories. Graph by hibrid.info, used with permission.",
+        "But accuracy alone does not tell the full story.",
+        "One of the clearest findings was that none of the tested systems could be considered a fully neutral or consistently reliable reference point for geopolitical issues.",
+        "The semantic similarity analysis showed that ChatGPT and DeepSeek Chat often produced very similar formulations, especially on Kosovo and regional topics, suggesting a shared way of structuring narratives. Alice, by contrast, deviated more strongly in both wording and emphasis.",
+        "From a user's perspective, this leads to a simple but troubling conclusion: the same question can produce different versions of political reality depending on which chatbot is used."
+      ]
+    },
+    {
+      "heading": "When location changes the answer",
+      "paragraphs": [
+        "In a second part of the study, the team tested whether the user’s location influences the responses. The same three sensitive questions were asked from six Western Balkan countries: Kosovo, Albania, North Macedonia, Montenegro, Serbia, and Bosnia and Herzegovina.",
+        "The findings showed that geography can matter.",
+        "ChatGPT and DeepSeek Chat remained relatively stable in wording and meaning, although some variations appeared on particularly contested topics. Alice, however, behaved differently: in some countries it answered in Russian, in others it refused to answer entirely, and in some cases it mixed languages within a single response, despite all prompts being submitted in English.",
+        "The analysis also identified differences in semantic similarity between responses from different countries, including some with contrasting historical and political perspectives.",
+        "This may sound like a technical detail, but the implications are practical. Similar questions asked from different locations may produce answers that differ in language, emphasis or completeness.",
+        "Much like digital maps can look different depending on which country they are opened from, AI-generated explanations of political reality can also shift with geography.",
+        "For users, this means that the information they receive may depend not only on what they ask, but also on which system they use and where they access it."
+      ]
+    },
+    {
+      "heading": "A new layer in the information environment",
+      "paragraphs": [
+        "Authoritarian influence over information is often associated with censorship, propaganda and restrictions on independent journalism. AI chatbots introduce another dimension to how political narratives are encountered and reproduced.",
+        "These systems do not simply provide information. Through differences in accuracy, framing and contextual adaptation, they can influence how political and historical realities are presented to users.",
+        "When AI systems are trained on unbalanced data, filtered through political constraints or designed to produce fluent responses without guaranteeing factual accuracy, they risk becoming quiet amplifiers of distorted realities – not necessarily because they are designed to promote a particular narrative, but because of how information is selected, processed and presented.",
+        "This is particularly relevant in information environments where foreign manipulation, propaganda and historical revisionism are already present.",
+        "The research does not establish direct coordination between chatbot developers and political actors. Nor does it suggest that every inaccurate response reflects deliberate manipulation.",
+        "Rather, it highlights a broader concern: systems developed and controlled by powerful technology companies increasingly mediate access to political knowledge, while the processes shaping their answers remain difficult for ordinary users to examine.",
+        "The way these systems present information is therefore not merely a technical issue. It also raises questions about transparency, accountability and the influence of technology platforms over public understanding."
+      ]
+    },
+    {
+      "heading": "Beyond accuracy: The question of accountability",
+      "paragraphs": [
+        "The findings of “The Chatbot Version of Truth*”* do not suggest that AI chatbots are useless or inherently misleading. Most of the responses examined were broadly accurate.",
+        "But being accurate most of the time does not make a system consistently reliable, particularly when questions concern sensitive political or historical events.",
+        "Developers and platform providers should increase transparency about data sources, model development and the mechanisms used to verify responses. Independent, region-specific testing is also necessary to identify systematic biases, inaccuracies and gaps in information.",
+        "For journalists, researchers and users, verification remains essential. Comparing chatbot outputs with multiple trusted sources, recognising omissions and questioning how information is framed are increasingly important parts of media and AI literacy.",
+        "Nearly a year after the publication of our research, its central message remains relevant: AI chatbots are becoming everyday intermediaries in how people seek and consume information, but they are not neutral mirrors of reality.",
+        "The challenge is not simply whether these systems can provide quick answers. It is whether those answers are accurate, sufficiently contextualised and open to scrutiny.",
+        "Because, in the end, the most dangerous kind of misinformation is not necessarily the one that looks obviously false, but the one that sounds smooth, reasonable and just plausible enough to pass as “the answer.”",
+        "*Hyrije Mehmeti is a media and communications professional and a PhD candidate in Media and Communication at South East European University. She also teaches in the Department of Journalism at the University of Prishtina. She led the ADS/Hibrid.info research “The Chatbot Version of Truth” while serving as Head of Editorial and Programme Coordination at the organisation.*"
+      ]
+    }
+  ]
+}
