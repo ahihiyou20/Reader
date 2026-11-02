@@ -1,0 +1,136 @@
+{
+  "slug": "landsat-science-team-tracking-snow-crucial-in-water-supply-m",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=landsat-science-team-tracking-snow-crucial-in-water-supply-m",
+  "category": "science",
+  "tags": [
+    "landsat",
+    "snow tracking",
+    "remote sensing",
+    "water management"
+  ],
+  "title": {
+    "en": "Landsat Science Team: Tracking Snow Crucial in Water Supply Monitoring",
+    "vi": "Nhóm Khoa học Landsat: Theo dõi tuyết đóng vai trò quan trọng trong giám sát nguồn nước"
+  },
+  "hook": {
+    "en": "One member of the 2026-2030 Landsat Science Team, Edward (Ned) Bair, is hoping to improve Landsat’s ability to track snow to better inform water managers.",
+    "vi": "Một thành viên của Nhóm Khoa học Landsat giai đoạn 2026-2030, Edward (Ned) Bair, đang hy vọng cải thiện khả năng theo dõi tuyết của Landsat để cung cấp thông tin tốt hơn cho các nhà quản lý nguồn nước."
+  },
+  "sections": [
+    {
+      "body_en": "“They depend on snow cover products and need Landsat to do things like proper snow cloud discrimination. The surface reflectance that goes into the snow cover products is very important. All of this leads to actionable water management decisions—from large to small operations,” said Bair, a scientist at Leidos and researcher with the University of California, Santa Barbara (UCSB).\n\nWhile Landsat has been the gold standard for remote sensing over the past five decades, there’s a pressing need for better snow tracking, Bair said. A [y:2018 Decadal Survey], by the National Academies of Sciences, Engineering and Medicine said tracking snow accumulation, melt and sublimation was one of the most important priorities."
+    },
+    {
+      "body_en": "So, Bair hopes that when [y:Landsat 10] launches, no earlier than 2031, with 26 spectral bands, including new bands designed for snow and ice observation, it will improve the remote sensing community’s ability to track snow.\n\n“The legacy of Landsat, at 54 years, is an incredible legacy, and I’d like to see it continue for another 54 years. The USGS is in charge of monitoring the nation’s water resources, and snow is an important part of that, in the western United States especially,” Bair said. “I want to do my best to make sure those observations continue. I’ve been especially impressed with USGS’ outreach for new approaches and innovations.”"
+    },
+    {
+      "heading_en": "A new approach and validation site",
+      "body_en": "This is Bair’s first term on the Landsat Science Team, but he is no stranger to working on science teams, including the NASA MODIS-VIIRS Science Team. He hopes that experience can pay dividends when it comes to his time on the Landsat Science Team.\n\n“I’ve also worked with NOAA and various other government agencies, so I have a pretty good idea from these science teams about how this process goes, and what motivates people to be here. I’m looking forward to making that contribution here,” Bair said."
+    },
+    {
+      "body_en": "To do that, Bair will contribute work he’s used throughout his career, including the Snow Property Inversion for Remote Sensing ([p:SPIReS]), an open-source validated approach to snow mapping. SPIReS estimates snow grain size and concentrations of light absorbing particles, providing information about snow pollution and its effects on water supplies and the environment.\n\n“The user community needs reliable snow observations,” Bair said.\n\nHis proposal also calls for a designated snow ground validation site for Landsat on Mammoth Mountain in California. The site, formerly called the Cold Regions Research and Engineering Laboratory and UCSB Energy Site (CUES), and now named [y:The Jeff Dozier Snow Study Site], is situated at 9,633 feet. According to Bair, it is “the most advanced snow energy balance site in the world.”"
+    },
+    {
+      "body_en": "“The inclusion of \\[The Jeff Dozier Snow Study Site\\] as a designated long-term ground-validation site will enable Landsat snow products to be systematically evaluated in a more complex environment,” Bair wrote in a proposal for funding.\n\nThe Jeff Dozier Snow Study Site has hosted snow measurements relevant to remote sensing since the 1970s. It has a deep and persistent snowpack from November to March, subject to light absorbing particle pollution. The site aims to advance the utility of Landsat products for snow hydrology, water resources and global climate applications.\n\nBair’s goals on the Landsat Science Team include the operationalizing the SPIReS algorithm and having the Jeff Dozier Snow Study Site remain as the leading energy balance site for remote sensing and validation."
+    },
+    {
+      "body_en": "“With Landsat particularly, there are a lot of tricky things including bright targets, and snow is the brightest natural substance,” Bair said. “I would like to see, of course, a successful launch and a continuation of the Landsat program beyond, and I’m honored to be a part of that.”"
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/landsat-missions/news/landsat-science-team-tracking-snow-crucial-water-supply-monitoring"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+    "provider": "nasa",
+    "author": "NASA_Kim Shiflett",
+    "license": "Public domain (NASA)",
+    "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1420/2013-1420~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1420"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1426/2013-1426~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1426"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1418/2013-1418~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1418"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JagC7AYyMscOFT0d/7viQwQobhD4AAP76Y+uX2mr2lTFxVjISBUCH7nK6GkX4egx/dM/U+yiAbpHst+iGGONWfRwgVtiVXAQn20zpx2FJf5jhThn/8WTkJiBNugzZLJgu2zh5pqDvywHZvLMMGOJq0Y8vMlmRxVDgJjXv5a334VN4cvuDVuvpUOXLuhiRzrQAAA==",
+  "dominant": "#3d393d",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-landsat-science-team-tracking-snow-crucial-in-water-supply-monitoring",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "Landsat Science Team: Tracking Snow Crucial in Water Supply Monitoring",
+    "originalUrl": "https://www.usgs.gov/landsat-missions/news/landsat-science-team-tracking-snow-crucial-water-supply-monitoring",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Just as a thermometer helps a doctor monitor a fever, satellite tracking of snow acts as a vital health check for our water supplies. How can you better monitor your own daily water footprint?",
+    "vi": "Giống như nhiệt kế giúp bác sĩ theo dõi cơn sốt, việc theo dõi tuyết bằng vệ tinh đóng vai trò như một đợt kiểm tra sức khỏe quan trọng cho nguồn nước của chúng ta. Bạn có thể làm gì để theo dõi tốt hơn lượng nước tiêu thụ hằng ngày của chính mình?"
+  },
+  "applySteps": {
+    "en": [
+      "Identify local water resource reports in your area to understand how snowmelt impacts your supply.",
+      "Explore open-source environmental mapping tools like SPIReS to see how satellite data tracks snow pollution.",
+      "Support regional water conservation initiatives that utilize remote sensing data for management."
+    ],
+    "vi": [
+      "Xác định các báo cáo tài nguyên nước tại địa phương để hiểu tác động của băng tuyết tan đối với nguồn cung.",
+      "Khám phá các công cụ bản đồ môi trường mã nguồn mở như SPIReS để xem dữ liệu vệ tinh theo dõi ô nhiễm tuyết như thế nào.",
+      "Ủy thác hoặc hỗ trợ các sáng kiến bảo tồn nước khu vực tận dụng dữ liệu viễn thám để quản lý."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-02T02:45:37.461Z"
+}

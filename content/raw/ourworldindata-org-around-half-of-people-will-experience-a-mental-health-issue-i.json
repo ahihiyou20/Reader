@@ -1,0 +1,39 @@
+{
+  "sections": [
+    {
+      "heading": "What is someone’s risk of developing depression, anxiety, or other mental health issues at some point in their life?",
+      "paragraphs": [
+        "How common are mental health issues? International health statistics often publish estimates on the share of people who have a mental health disorder at a given point in time. For example, the Global Burden of Disease study estimates that in 2023, 5% of people in the United States had depression.",
+        "But people can develop a mental health issue at any stage of their life, or experience recurring episodes over their lifetime.",
+        "These statistics don’t tell us anything about what share of people will *ever* experience a mental health problem. That’s the question I want to answer in this article.",
+        "To do this, I’ll use data from a 2023 study by John McGrath and colleagues, which drew on data from 29 countries to model what share of people develop mental disorders over their lives.",
+        "This data came from World Mental Health Surveys, conducted between 2001 and 2022. In these surveys, more than 150,000 people are asked in face-to-face interviews about their history of specific mental health disorders. These are structured diagnostic interviews, and from there, researchers can understand the prevalence of these disorders and when they tend to begin in someone’s life.",
+        "As these interviews include people at very different stages in their lives, they can help build up a model of how the cumulative risk of a mental illness develops with age. For example, what share of people have experienced depression by the age of 15, 30, or 50?",
+        "For many, their first experience is young — in childhood, adolescence, or early adulthood. In a previous article, I looked at the age at which people tend to develop mental health issues for the first time.",
+        "In the chart below, you can see these cumulative risk curves for men and women across four mental health disorders: depression, anxiety disorders, bipolar disorder, and alcohol dependence and abuse. Age is shown on the horizontal axis, and the cumulative risk on the vertical axis.",
+        "In the first panel, for example, you can see that by the age of 75, one in three women has experienced depression at some point in their lives. One in five men has.",
+        "By age 30, it’s only around half as many, which tells us that roughly half of those who will ever experience depression have their first episode before 30, and half after.",
+        "From this chart, you can also see clear sex differences. Depression and anxiety are more common in women than in men, but alcohol dependence and abuse are the opposite. Men and women are equally likely to experience bipolar disorder."
+      ]
+    },
+    {
+      "heading": "How likely is someone to experience a mental health disorder in their lifetime?",
+      "paragraphs": [
+        "With these cumulative risk curves, we can return to our original question: what share of people will develop a particular mental health disorder in their lifetime?",
+        "The chart below answers this question, showing the share of men and women who will experience different mental health disorders by the age of 75.",
+        "Anxiety disorders encapsulate a range of conditions, including generalized anxiety, phobias, panic disorder, social anxiety, and post-traumatic stress disorder (PTSD). Almost one in three women and nearly one in five men will experience at least one of these in their lifetime.",
+        "Mood disorders include both depression and bipolar disorder. More than one in three women and one in four men will experience at least one of these. The sex gap here is explained by differences in rates of depression, rather than bipolar disorder.",
+        "Depression and anxiety are more common in women than in men, but alcohol dependence and abuse are the opposite.",
+        "Finally, we see that substance use disorders — whether that’s alcohol or other drugs — are the opposite. They’re more common among men. Alcohol or drug abuse has a much less stringent definition, so its rates are far higher than dependence on a particular substance.",
+        "People can often experience multiple mental health disorders in their lifetime. It’s fairly common that someone with depression also experiences anxiety, or that someone with an addiction to alcohol has a history of depression or PTSD. So, to estimate the share of people who will experience *any* mental health disorder in their lifetime, we can’t just add all of these shares together.",
+        "The authors do provide a separate estimate, though, and conclude that around **half of people can expect to develop** **at least one** **of the mental health disorders** studied in this article by the time they’re 75.",
+        "The main takeaway from this article is that mental health issues are incredibly common. Around half will develop at least one of these disorders by the age of 75. Even for specific issues, such as depression or anxiety, one in three women will experience it at some stage.",
+        "But there’s reason to expect that these figures are actually conservative, and the true lifetime risk could be even higher.",
+        "This is because these studies rely on people recalling previous mental health episodes. Most people can do this reasonably well, particularly in structured diagnostic interviews. But in older generations, in particular, recall can be an issue.",
+        "My colleague Saloni Dattani wrote about this in detail for the lifetime risk of depression. She presents the headline result that around one in three women and one in five men in the United States experience depression by the age of 65. But she also highlights various studies in other high-income countries that find even higher figures, particularly when they attempt to adjust for this “recall bias”.",
+        "John McGrath and colleagues — the authors of the meta-analysis used in this article — also flag this as a limitation in our understanding of lifetime risk.",
+        "It therefore seems fair to frame these results as conservative. The true share could be higher."
+      ]
+    }
+  ]
+}

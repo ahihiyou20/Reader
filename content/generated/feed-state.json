@@ -190,6 +190,11 @@
       "feed": "wikipedia-featured",
       "error": "Unterminated string in JSON at position 206405 (line 2 column 206404)"
     },
+    "https://en.wikipedia.org/wiki/Sovetsky_Soyuz-class_battleship": {
+      "at": "2026-11-02T02:34:03.836Z",
+      "feed": "wikipedia-featured",
+      "slug": "sovetsky-soyuz-class-battleship"
+    },
     "https://en.wikipedia.org/wiki/The_Demi-Virgin": {
       "at": "2026-10-25T01:13:23.421Z",
       "feed": "wikipedia-featured",
@@ -425,6 +430,11 @@
       "feed": "nautilus",
       "slug": "the-17th-century-shipwreck-and-the-first-corporate-psychopat"
     },
+    "https://nautil.us/ketamines-role-in-alleged-cornell-rape-highlights-flood-of-psychoactive-drugs-on-campus-1286212": {
+      "at": "2026-11-02T02:34:16.788Z",
+      "feed": "nautilus",
+      "slug": "the-rising-danger-of-ketamine-and-campus-assaults"
+    },
     "https://nautil.us/lsd-may-speed-up-brain-activity-and-make-it-fractal-1286030": {
       "at": "2026-10-26T01:14:36.717Z",
       "feed": "nautilus",
@@ -509,6 +519,11 @@
       "at": "2026-10-31T02:27:07.162Z",
       "feed": "nautilus",
       "slug": "zombie-bacteria-might-purify-future-sewers"
+    },
+    "https://ourworldindata.org/around-half-of-people-will-experience-a-mental-health-issue-in-their-lifetime": {
+      "at": "2026-11-02T02:33:47.312Z",
+      "feed": "owid",
+      "slug": "around-half-of-people-will-experience-a-mental-health-issue"
     },
     "https://ourworldindata.org/how-much-development-aid-is-spent-on-climate-change": {
       "at": "2026-10-27T02:06:55.421Z",
@@ -760,6 +775,11 @@
       "feed": "conversation",
       "slug": "from-elite-spies-to-gig-economy-operatives-the-changing-face"
     },
+    "https://theconversation.com/harry-kane-wins-ballon-dor-a-victory-for-sportsmanship-over-celebrity-295281": {
+      "at": "2026-11-02T02:34:32.712Z",
+      "feed": "conversation",
+      "slug": "harry-kane-wins-ballon-d-or-a-victory-for-sportsmanship-over"
+    },
     "https://theconversation.com/hokusais-great-wave-is-one-of-46-prints-of-mount-fuji-seeing-them-together-changes-everything-294801": {
       "at": "2026-10-24T01:41:11.473Z",
       "feed": "conversation",
@@ -784,6 +804,11 @@
       "at": "2026-10-27T02:06:59.365Z",
       "feed": "conversation",
       "slug": "in-opting-for-lula-brazil-made-a-conservative-choice-to-elec"
+    },
+    "https://theconversation.com/indonesias-el-nino-driven-peat-fires-are-choking-the-region-and-releasing-centuries-of-stored-carbon-294838": {
+      "at": "2026-11-02T02:33:54.904Z",
+      "feed": "conversation",
+      "slug": "indonesia-s-el-nino-driven-peat-fires-are-choking-the-region"
     },
     "https://theconversation.com/is-sexual-objectification-hard-wired-our-study-used-electrical-brain-stimulation-to-find-out-294925": {
       "at": "2026-10-31T02:31:37.023Z",
@@ -1135,6 +1160,21 @@
       "feed": "npr-health",
       "slug": "understanding-and-coping-with-seasonal-affective-disorder"
     },
+    "https://www.npr.org/2026/11/01/nx-s1-6022240/has-trump-kept-his-promises-to-the-maha-movement": {
+      "at": "2026-11-02T02:34:46.299Z",
+      "feed": "npr-health",
+      "slug": "assessing-the-trump-administration-s-progress-on-the-maha-ag"
+    },
+    "https://www.npr.org/2026/11/01/nx-s1-6023423/aca-open-enrollment-health-insurance": {
+      "at": "2026-11-02T02:35:07.263Z",
+      "feed": "npr-health",
+      "slug": "key-updates-for-affordable-care-act-health-insurance-shopper"
+    },
+    "https://www.npr.org/2026/11/01/nx-s1-6025502/stroke-acronym-be-fast": {
+      "at": "2026-11-02T02:34:22.029Z",
+      "feed": "npr-health",
+      "slug": "recognize-stroke-signs-quickly-to-save-lives"
+    },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
       "feed": "quanta",
@@ -1305,6 +1345,21 @@
       "feed": "sciencedaily",
       "slug": "ancient-moroccan-wall-rewrites-north-african-history"
     },
+    "https://www.sciencedaily.com/releases/2026/10/261031011638.htm": {
+      "at": "2026-11-02T02:35:12.978Z",
+      "feed": "sciencedaily",
+      "slug": "ancient-egyptian-fossil-challenges-theories-of-human-and-ape"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261031013035.htm": {
+      "at": "2026-11-02T02:34:51.966Z",
+      "feed": "sciencedaily",
+      "slug": "common-pesticide-linked-to-significantly-higher-parkinson-s"
+    },
+    "https://www.sciencedaily.com/releases/2026/10/261031221201.htm": {
+      "at": "2026-11-02T02:34:27.725Z",
+      "feed": "sciencedaily",
+      "slug": "forgotten-particle-may-explain-why-the-universe-exists"
+    },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
       "feed": "usgs",
@@ -1339,6 +1394,21 @@
       "at": "2026-10-25T01:15:24.175Z",
       "feed": "usgs",
       "slug": "the-global-food-and-water-security-support-analysis-data-gfs"
+    },
+    "https://www.usgs.gov/landsat-missions/news/landsat-science-team-dead-vegetation-tells-a-story": {
+      "at": "2026-11-02T02:34:11.783Z",
+      "feed": "usgs",
+      "slug": "landsat-science-team-dead-vegetation-tells-a-story"
+    },
+    "https://www.usgs.gov/landsat-missions/news/landsat-science-team-landsat-10-improve-harmful-algal-bloom-monitoring": {
+      "at": "2026-11-02T02:35:01.607Z",
+      "feed": "usgs",
+      "slug": "landsat-science-team-landsat-10-to-improve-harmful-algal-blo"
+    },
+    "https://www.usgs.gov/landsat-missions/news/landsat-science-team-tracking-snow-crucial-water-supply-monitoring": {
+      "at": "2026-11-02T02:34:40.048Z",
+      "feed": "usgs",
+      "slug": "landsat-science-team-tracking-snow-crucial-in-water-supply-m"
     },
     "https://www.usgs.gov/landsat-missions/news/modernizing-landsat-notifications-sns-topics-replace-rss-feeds": {
       "at": "2026-10-30T02:45:06.421Z",
