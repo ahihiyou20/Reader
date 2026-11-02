@@ -1,0 +1,156 @@
+{
+  "slug": "landsat-science-team-dead-vegetation-tells-a-story",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=landsat-science-team-dead-vegetation-tells-a-story",
+  "category": "science",
+  "tags": [
+    "landsat 10",
+    "satellite imaging",
+    "vegetation",
+    "drought",
+    "remote sensing"
+  ],
+  "title": {
+    "en": "Landsat Science Team: Dead Vegetation Tells a Story",
+    "vi": "Đội ngũ khoa học Landsat: Thực vật chết kể câu chuyện gì"
+  },
+  "hook": {
+    "en": "However, tracking NPV across landscapes ranging from cropland to forested acres on a large scale requires more than fieldwork or even drones, although those do help. To cover this much range it really takes a satellite. Landsat 8 and Landsat 9, managed by the U.S. Geological Survey can see a lot from space, but the next planned Landsat satellite could help investigate and make sense of dead vegetation.",
+    "vi": "Tuy nhiên, việc theo dõi thực vật không quang hợp (*non-photosynthetic vegetation* - NPV) trên các cảnh quan rộng lớn từ đất nông nghiệp đến rừng cây đòi hỏi nhiều hơn là công việc thực địa hay thậm chí là máyδ bay không người lái (*drone*). Để bao phủ phạm vi lớn như vậy, thực sự cần đến một vệ tinh. Landsat 8 và Landsat 9 do Cơ quan Khảo sát Địa chất Hoa Kỳ quản lý có thể nhìn thấy rất nhiều từ không gian, nhưng vệ tinh Landsat dự kiến tiếp theo có thể giúp điều tra và làm sáng tỏ về thực vật chết."
+  },
+  "sections": [
+    {
+      "body_en": "Dennison is excited for [y:Landsat 10], which is expected to launch in 2031, nearly 60 years after the Landsat satellite's first launch. He, along with Campbell, are members of the Landsat Science Team. The team provides scientific and technical evaluations to the USGS and NASA to support the continued success of the Landsat remote-sensing satellite program.",
+      "body_vi": "Dennison rất hào hứng với [y:Landsat 10], dự kiến ra mắt vào năm 2031, gần 60 năm sau lần phóng vệ tinh Landsat đầu tiên. Ông cùng với Campbell là thành viên của Nhóm Khoa học Landsat (*Landsat Science Team*). Nhóm cung cấp các đánh giá khoa học và kỹ thuật cho USGS và NASA nhằm hỗ trợ sự thành công tiếp tục của chương trình vệ tinh vi thám (*remote-sensing*) Landsat."
+    },
+    {
+      "body_en": "Landsat 10 will have [y:26 spectral bands], an increase from the current 11 on both Landsat 8 and Landsat 9. The spectral region currently measured by the SWIR2 band, will be divided into three narrower bands at 20-meter spatial resolution. The narrower bands will provide greater sensitivity to molecular absorption features, while the smaller pixels will reveal finer details on the ground. These improvements will support applications such as [g:crop residue mapping], moisture assessment and more.\n\n“Landsat 10 is going to have excellent bands for being able to monitor NPV over time and help us learn about drought stress and how vegetation responds to it,” Dennison said.",
+      "body_vi": "[y:Landsat 10] sẽ có [y:26 spectral bands], tăng từ 11 dải hiện tại trên cả Landsat 8 và Landsat 9. Vùng phổ hiện đang được đo bằng dải SWIR2 sẽ được chia thành ba dải hẹp hơn với độ phân giải không gian 20 mét. Các dải hẹp hơn sẽ cung cấp độ nhạy cao hơn đối với các đặc điểm hấp thụ phân tử, trong khi các điểm ảnh nhỏ hơn sẽ tiết lộ các chi tiết tinh tế hơn trên mặt đất. Những cải tiến này sẽ hỗ trợ các ứng dụng như [g:crop residue mapping], đánh giá độ ẩm và nhiều thứ khác. Dennison cho biết Landsat 10 sẽ có các dải tuyệt vời để theo dõi NPV theo thời gian."
+    },
+    {
+      "body_en": "Those bands can also help scientists [p:monitor tree mortality], which has increased in some regions in recent years due to insect attacks, drought, disease and increased fire activity.\n\n“Despite some evidence towards increased tree mortality, we don’t really have a great way to precisely track it over space and time: Landsat 10 will provide an unprecedented opportunity to do so,” Campbell said.\n\nAnd as droughts have become an increasing concern across the world, tracking NPV can also be used to monitor fire danger, Dennison said.",
+      "body_vi": "Các dải đó cũng có thể giúp các nhà khoa học [p:monitor tree mortality], hiện đã gia tăng ở một số khu vực trong những năm gần đây do côn trùng tấn công, hạn hán, dịch bệnh và hoạt động cháy rừng gia tăng. Campbell cho biết Landsat 10 sẽ cung cấp cơ hội chưa từng có để theo dõi chính xác tình trạng này qua không gian và thời gian. Khi hạn hán trở thành mối lo ngại ngày càng tăng trên toàn thế giới, việc theo dõi NPV cũng có thể được sử dụng để giám sát nguy cơ cháy rừng."
+    },
+    {
+      "body_en": "“Right now, we have a pretty good idea where it’s drier than normal, but we can’t always see the impacts: Where are trees dying because of a combination of drought and insects? Or where is the vegetation drying up faster than normal so fire danger is increased much earlier than it usually would be?” Dennison said. “If we could map these things and see the changes over time, then we can better understand these impacts, and also better be able to model them and anticipate them when they occur in the future in response to drought.”\n\nIn their work related to the Landsat Science Team, Dennison and Campbell have these objectives:\n\n• Collect an extensive [g:NPV cover training] and test dataset\n\n• Develop a robust NPV cover algorithm",
+      "body_vi": "Dennison cho biết hiện tại chúng ta có ý tưởng khá rõ về nơi khô hạn hơn bình thường, nhưng không phải lúc nào cũng thấy được các tác động. Trong công việc liên quan đến Nhóm Khoa học Landsat, Dennison và Campbell có các mục tiêu là [g:NPV cover training] và kiểm thử tập dữ liệu, cũng như phát triển thuật toán che phủ NPV mạnh mẽ."
+    },
+    {
+      "body_en": "• Test algorithm accuracy and biases\n\n• Develop an algorithm to compare Landsat 10 SWIR2 data with earlier Landsat missions",
+      "body_vi": "Các mục tiêu tiếp theo bao gồm kiểm tra độ chính xác và sai số của thuật toán, cùng với việc phát triển một thuật toán để so sánh dữ liệu SWIR2 của Landsat 10 với các sứ mệnh Landsat trước đó."
+    },
+    {
+      "heading_en": "How they’ll collect data",
+      "body_en": "The challenge is that NPV often occurs at scales much smaller than a current Landsat pixel. Although Landsat satellite data can cover large regions, each pixel represents a broad area containing a mix of vegetation types.\n\n“Non-photosynthetic vegetation occurs at really fine scales,” Campbell said. “So, in a strange way, even though we want to map this at a national, or regional, or global scale, we really first need to map it at a very fine scale.”",
+      "body_vi": "heading_vi: Cách họ thu thập dữ liệu\nbody_vi: Thách thức là NPV thường xuất hiện ở các quy mô nhỏ hơn nhiều so với một pixel Landsat hiện tại. Mặc dù dữ liệu vệ tinh Landsat có thể bao phủ các vùng rộng lớn, mỗi pixel đại diện cho một khu vực rộng lớn chứa nhiều loại thực vật kết hợp."
+    },
+    {
+      "body_en": "To do that, the two will use a multi-sensor, multi-scale approach to develop an [p:artificial intelligence algorithm] using data from drones and satellites to simulate Landsat 10 bands and make non-photosynthetic cover predictions. They plan to map NPV in a variety of land cover types, from forests to grasslands to harvested fields across the United States.",
+      "body_vi": "Để làm được điều đó, hai nhà khoa học sẽ sử dụng phương pháp đa cảm biến, đa quy mô để phát triển một [p:artificial intelligence algorithm] sử dụng dữ liệu từ máy bay không người lái và vệ tinh nhằm mô phỏng các dải của Landsat 10. Họ dự định lập bản đồ NPV ở nhiều loại lớp phủ đất khác nhau trên khắp Hoa Kỳ."
+    },
+    {
+      "heading_en": "What would success look like?",
+      "body_en": "Dennison said the process of choosing the bands to track NPV started [y:five years ago]. While the Landsat 10 launch is still several years out; he’s starting to see progress.\n\n“We’re going to see those bands get into hardware, being launched into space and develop the applications that we need to better monitor non-photosynthetic vegetation globally,” Dennison said. “So, seeing that full cycle through and trying to understand how we can best enable the public benefits coming from these new bands from Landsat 10, is what’s going to be really rewarding for me.”\n\nCampbell has used Landsat data throughout his career and hopes Landsat 10’s new capabilities will expand the mission’s aim in assisting solutions for forest managers, wildfire teams and more.",
+      "body_vi": "heading_vi: Thành công sẽ trông như thế nào?\nbody_vi: Dennison cho biết quá trình chọn các dải để theo dõi NPV đã bắt đầu từ [y:five years ago]. Mặc dù việc phóng Landsat 10 vẫn còn vài năm nữa, ông đã bắt đầu thấy những tiến bộ. Việc nhìn thấy toàn bộ chu kỳ đó được hiện thực hóa sẽ mang lại phần thưởng thực sự cho ông."
+    },
+    {
+      "body_en": "“A successful term on the Landsat Science Team would be one that continues to build support for those who study and work in forests and fire,” Campbell said. “Landsat has historically, and hopefully will continue, to represent a critical source of data for those communities.”",
+      "body_vi": "Campbell cho biết một nhiệm kỳ thành công trong Nhóm Khoa học Landsat sẽ là nhiệm kỳ tiếp tục xây dựng sự hỗ trợ cho những người nghiên cứu và làm việc trong lĩnh vực rừng và lửa. Landsat đã và hy vọng sẽ tiếp tục là nguồn dữ liệu quan trọng cho các cộng đồng đó."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/landsat-missions/news/landsat-science-team-dead-vegetation-tells-a-story"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+    "provider": "nasa",
+    "author": "NASA_Kim Shiflett",
+    "license": "Public domain (NASA)",
+    "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1420/2013-1420~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1420"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1426/2013-1426~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1426"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1418/2013-1418~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1418"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JagC7AYyMscOFT0d/7viQwQobhD4AAP76Y+uX2mr2lTFxVjISBUCH7nK6GkX4egx/dM/U+yiAbpHst+iGGONWfRwgVtiVXAQn20zpx2FJf5jhThn/8WTkJiBNugzZLJgu2zh5pqDvywHZvLMMGOJq0Y8vMlmRxVDgJjXv5a334VN4cvuDVuvpUOXLuhiRzrQAAA==",
+  "dominant": "#3d393d",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-landsat-science-team-dead-vegetation-tells-a-story",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "Landsat Science Team: Dead Vegetation Tells a Story",
+    "originalUrl": "https://www.usgs.gov/landsat-missions/news/landsat-science-team-dead-vegetation-tells-a-story",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of Landsat 10 as an upgraded planetary health monitor taking ultra-detailed vitals from space. How might your local community use advanced satellite data to better anticipate severe droughts and mitigate wildfire risks before disaster strikes?",
+    "vi": "Hãy coi Landsat 10 như một thiết bị theo dõi sức khỏe hành tinh được nâng cấp, đo lường các chỉ số sinh tồn siêu chi tiết từ ngoài không gian. Cộng đồng địa phương của bạn có thể sử dụng dữ liệu vệ tinh tiên tiến như thế nào để dự đoán tốt hơn các đợt hạn hán nghiêm trọng và giảm thiểu nguy cơ cháy rừng trước khi thảm họa xảy ra?"
+  },
+  "applySteps": {
+    "en": [
+      "Review recent satellite data trends regarding local vegetation and drought conditions in your area.",
+      "Map out small-scale changes in dead or dry plant matter using available online mapping tools.",
+      "Share observations on localized wildfire risks or tree mortality with community environmental groups."
+    ],
+    "vi": [
+      "Xem xét xu hướng dữ liệu vệ tinh gần đây về tình hình thảm thực vật và hạn hán tại địa phương.",
+      "Lập bản đồ các thay đổi quy mô nhỏ đối với thực vật khô hoặc chết bằng các công cụ bản đồ trực tuyến có sẵn.",
+      "Chia sẻ các quan sát về nguy cơ cháy rừng cục bộ hoặc tình trạng cây chết với các nhóm môi trường cộng đồng."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-02T02:50:37.461Z"
+}

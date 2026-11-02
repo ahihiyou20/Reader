@@ -1,0 +1,38 @@
+{
+  "sections": [
+    {
+      "paragraphs": [
+        "However, tracking NPV across landscapes ranging from cropland to forested acres on a large scale requires more than fieldwork or even drones, although those do help. To cover this much range it really takes a satellite. Landsat 8 and Landsat 9, managed by the U.S. Geological Survey can see a lot from space, but the next planned Landsat satellite could help investigate and make sense of dead vegetation.",
+        "Dennison is excited for Landsat 10, which is expected to launch in 2031, nearly 60 years after the Landsat satellite's first launch. He, along with Campbell, are members of the Landsat Science Team. The team provides scientific and technical evaluations to the USGS and NASA to support the continued success of the Landsat remote-sensing satellite program.",
+        "Landsat 10 will have 26 spectral bands, an increase from the current 11 on both Landsat 8 and Landsat 9. The spectral region currently measured by the SWIR2 band, will be divided into three narrower bands at 20-meter spatial resolution. The narrower bands will provide greater sensitivity to molecular absorption features, while the smaller pixels will reveal finer details on the ground. These improvements will support applications such as crop residue mapping, moisture assessment and more.",
+        "“Landsat 10 is going to have excellent bands for being able to monitor NPV over time and help us learn about drought stress and how vegetation responds to it,” Dennison said.",
+        "Those bands can also help scientists monitor tree mortality, which has increased in some regions in recent years due to insect attacks, drought, disease and increased fire activity.",
+        "“Despite some evidence towards increased tree mortality, we don’t really have a great way to precisely track it over space and time: Landsat 10 will provide an unprecedented opportunity to do so,” Campbell said.",
+        "And as droughts have become an increasing concern across the world, tracking NPV can also be used to monitor fire danger, Dennison said.",
+        "“Right now, we have a pretty good idea where it’s drier than normal, but we can’t always see the impacts: Where are trees dying because of a combination of drought and insects? Or where is the vegetation drying up faster than normal so fire danger is increased much earlier than it usually would be?” Dennison said. “If we could map these things and see the changes over time, then we can better understand these impacts, and also better be able to model them and anticipate them when they occur in the future in response to drought.”",
+        "In their work related to the Landsat Science Team, Dennison and Campbell have these objectives:",
+        "• Collect an extensive NPV cover training and test dataset",
+        "• Develop a robust NPV cover algorithm",
+        "• Test algorithm accuracy and biases",
+        "• Develop an algorithm to compare Landsat 10 SWIR2 data with earlier Landsat missions"
+      ]
+    },
+    {
+      "heading": "How they’ll collect data",
+      "paragraphs": [
+        "The challenge is that NPV often occurs at scales much smaller than a current Landsat pixel. Although Landsat satellite data can cover large regions, each pixel represents a broad area containing a mix of vegetation types.",
+        "“Non-photosynthetic vegetation occurs at really fine scales,” Campbell said. “So, in a strange way, even though we want to map this at a national, or regional, or global scale, we really first need to map it at a very fine scale.”",
+        "To do that, the two will use a multi-sensor, multi-scale approach to develop an artificial intelligence algorithm using data from drones and satellites to simulate Landsat 10 bands and make non-photosynthetic cover predictions. They plan to map NPV in a variety of land cover types, from forests to grasslands to harvested fields across the United States."
+      ]
+    },
+    {
+      "heading": "What would success look like?",
+      "paragraphs": [
+        "Dennison said the process of choosing the bands to track NPV started five years ago. While the Landsat 10 launch is still several years out; he’s starting to see progress.",
+        "“We’re going to see those bands get into hardware, being launched into space and develop the applications that we need to better monitor non-photosynthetic vegetation globally,” Dennison said. “So, seeing that full cycle through and trying to understand how we can best enable the public benefits coming from these new bands from Landsat 10, is what’s going to be really rewarding for me.”",
+        "Campbell has used Landsat data throughout his career and hopes Landsat 10’s new capabilities will expand the mission’s aim in assisting solutions for forest managers, wildfire teams and more.",
+        "“A successful term on the Landsat Science Team would be one that continues to build support for those who study and work in forests and fire,” Campbell said. “Landsat has historically, and hopefully will continue, to represent a critical source of data for those communities.”"
+      ]
+    }
+  ]
+}

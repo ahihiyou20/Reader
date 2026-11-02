@@ -1,0 +1,146 @@
+{
+  "slug": "landsat-science-team-landsat-10-to-improve-harmful-algal-blo",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=landsat-science-team-landsat-10-to-improve-harmful-algal-blo",
+  "category": "science",
+  "tags": [
+    "landsat",
+    "water quality",
+    "algal blooms",
+    "satellite monitoring"
+  ],
+  "title": {
+    "en": "Landsat Science Team: Landsat 10 to Improve Harmful Algal Bloom Monitoring",
+    "vi": "Nhóm Khoa học Landsat: Landsat 10 cải thiện việc giám sát tình trạng tảo nở hoa độc hại"
+  },
+  "hook": {
+    "en": "Some HABs (e.g., cyanobacteria) produce dangerous toxins which can cause illness or even death in humans and livestock, while others cause harm to the environment by accumulating excessive biomass, which limits light availability and consumes oxygen during decomposition. These blooms threaten freshwater and coastal waters including lakes, reservoirs, rivers, ponds and bays.",
+    "vi": "Một số loài tảo nở hoa độc hại (ví dụ: vi khuẩn lam (*cyanobacteria*)) sản sinh ra các độc tố nguy hiểm có thể gây bệnh hoặc thậm chí tử vong cho con người và vật nuôi, trong khi những loài khác gây hại cho môi trường bằng cách tích tụ sinh khối quá mức, làm hạn chế ánh sáng và tiêu thụ oxy trong quá trình phân hủy. Những hiện tượng này đe dọa nguồn nước ngọt và vùng nước ven biển bao gồm hồ, hồ chứa, sông, ao và vịnh."
+  },
+  "sections": [
+    {
+      "body_en": "They are a growing threat to aquatic ecosystems with [y:all 50 states reporting HABs], signaling the need for improved methods to monitor water quality.\n\nTo do that, water quality managers increasingly use satellite observations to complement field sampling and monitor blooms across large areas. One member of the 2026-2030 Landsat Science Team, Ryan O’Shea, hopes new technologies can advance that mission. When Landsat 10 launches, which is expected in 2031, it will be equipped with [y:26 spectral bands], 15 more than either Landsat 8 or 9. New and refined bands in the red, violet, orange, red-edge and near infrared spectral regions will improve observations of water quality and aquatic ecosystems.",
+      "body_vi": "Chúng đang trở thành mối đe dọa ngày càng lớn đối với các hệ sinh thái dưới nước khi tất cả 50 tiểu bang đều ghi nhận tình trạng tảo nở hoa, báo hiệu nhu cầu cần có các phương pháp cải tiến để giám sát chất lượng nước.\n\nĐể làm được điều đó, các nhà quản lý chất lượng nước ngày càng sử dụng các quan sát từ vệ tinh (satellite observations) để bổ sung cho việc lấy mẫu thực địa và theo dõi hiện tượng này trên các khu vực rộng lớn. Một thành viên của Nhóm Khoa học Landsat giai đoạn 2026-2030, Ryan O’Shea, hy vọng các công nghệ mới có thể thúc đẩy sứ mệnh đó. Khi vệ tinh Landsat 10 được phóng, dự kiến vào năm 2031, nó sẽ được trang bị 26 dải quang phổ (spectral bands), nhiều hơn 15 dải so với Landsat 8 hoặc 9. Các dải mới và được cải tiến ở các vùng quang phổ đỏ, tím, cam, biên đỏ và cận hồng ngoại sẽ cải thiện việc quan sát chất lượng nước và hệ sinh thái dưới nước."
+    },
+    {
+      "body_en": "O’Shea will develop and refine an [p:end-to-end processing pipeline] to monitor freshwater and coastal ecosystems using current and future satellite imagery. O’Shea, a lead research scientist at Science Systems and Applications Inc., brings a wealth of expertise to the team, including experience from previous research supporting the U.S. Geological Survey (USGS) and NASA’s Landsat program.\n\nHe, along with co-investigators, Dr. Akash Ashapure and Dr. Arun Saranathan, and project personnel William Wainwright, contributed to research funded through the 2018-2023 Landsat Science Team with Dr. Nima Pahlevan by developing and validating machine-learning based atmospheric correction and water quality parameter retrieval algorithms.",
+      "body_vi": "O’Shea sẽ phát triển và hoàn thiện một quy trình xử lý khép kín (end-to-end processing pipeline) để giám sát các hệ sinh thái nước ngọt và ven biển bằng hình ảnh vệ tinh hiện tại và tương lai. O’Shea, nhà khoa học nghiên cứu chính tại công ty Science Systems and Applications Inc., mang lại bề dày chuyên môn cho nhóm, bao gồm kinh nghiệm từ các nghiên cứu trước đây hỗ trợ Khảo sát Địa chất Hoa Kỳ (U.S. Geological Survey - USGS) và chương trình Landsat của NASA.\n\nÔng, cùng với các đồng điều tra viên là Tiến sĩ Akash Ashapure và Tiến sĩ Arun Saranathan, cùng nhân sự dự án William Wainwright, đã đóng góp vào nghiên cứu được tài trợ thông qua Nhóm Khoa học Landsat 2018-2023 cùng với Tiến sĩ Nima Pahlevan bằng cách phát triển và xác thực các thuật toán hiệu chỉnh khí quyển và thu hồi thông số chất lượng nước dựa trên học máy (machine-learning)."
+    },
+    {
+      "body_en": "“As part of the team previously, I saw the algorithms that we were developing were doing really well at monitoring these fine spatial scales, and I wanted to see that work continue and I’m also really excited about Landsat 10’s capabilities. We’re going to be able to get down to 20-meter scales so we can monitor these harmful algal blooms at fine scales to help monitor small inland bodies as well as tributaries,” O’Shea said.\n\n“I joined the team for the [p:societal benefit],” he added.",
+      "body_vi": "“Là một thành viên của nhóm trước đây, tôi thấy các thuật toán mà chúng tôi đang phát triển hoạt động rất hiệu quả trong việc giám sát các tỷ lệ không gian nhỏ này, và tôi muốn thấy công việc đó tiếp tục đồng thời cũng rất hào hứng với các tính năng của Landsat 10. Chúng ta sẽ có thể đạt được tỷ lệ 20 mét để có thể giám sát các vụ tảo nở hoa độc hại này ở tỷ lệ chi tiết nhằm hỗ trợ giám sát các vùng nước nội địa nhỏ cũng như các phụ lưu,” O’Shea cho biết.\n\n“Tôi tham gia nhóm vì lợi ích xã hội (societal benefit),” ông nói thêm."
+    },
+    {
+      "heading_en": "Challenges",
+      "body_en": "O’Shea’s proposal builds upon Landsat 8 and 9’s capabilities of detecting algal blooms with sufficient spatial and spectral resolution for consistent water quality monitoring. However, their limited spectral coverage makes it difficult to [p:distinguish cyanobacteria] from other phytoplankton, O'Shea said. Landsat 10’s additional spectral bands are expected to improve the consistency and accuracy of bloom monitoring.\n\n“With Landsat 8 and 9, we’re able to get chlorophyll concentration, a pigment that’s a broad indicator of the general biomass of microscopic aquatic plants. But with more specific information that’s going to be available on Landsat 10 and these new bands, we can start to get cyanobacteria data. That can inform water quality managers if these blooms are potentially toxic,” O’Shea said.",
+      "body_vi": "Đề xuất của O’Shea dựa trên khả năng phát hiện tảo nở hoa của Landsat 8 và 9 với độ phân giải không gian và quang phổ đủ để giám sát chất lượng nước nhất quán. Tuy nhiên, phạm vi quang phổ hạn chế của chúng khiến việc phân biệt vi khuẩn lam (cyanobacteria) với các loài thực vật phù du (phytoplankton) khác trở nên khó khăn, ông O’Shea cho biết. Các dải quang phổ bổ sung của Landsat 10 dự kiến sẽ cải thiện tính nhất quán và độ chính xác của việc giám sát hiện tượng này.\n\n“Với Landsat 8 và 9, chúng tôi có thể thu được nồng độ diệp lục (chlorophyll), một sắc tố là chỉ báo rộng về tổng sinh khối của thực vật thủy sinh viroskop. Nhưng với thông tin cụ thể hơn sẽ có sẵn trên Landsat 10 và các dải mới này, chúng tôi có thể bắt đầu lấy dữ liệu về vi khuẩn lam. Điều đó có thể thông báo cho các nhà quản lý chất lượng nước biết liệu những đợt nở hoa này có khả năng độc hại hay không,” O’Shea cho biết."
+    },
+    {
+      "body_en": "• Updating the Satellite-based Tool for Rapid Evaluation of Aquatic environMents (STREAM) website to support advanced harmonized products.\n\nO’Shea is focusing on improving and validating the accuracy of the algorithms and [g:expanding the geographic coverage] of the algorithms beyond North America and Europe.\n\n“I’m doing a lot of work with stakeholders to see how well our algorithms perform in their region and also evaluating a bunch of different algorithms,” O’Shea said. “The accuracy and proof of success help them trust in our algorithms and use it to better direct their resources.”\n\nAs research progresses ahead of the Landsat 10 launch, O’Shea said the focus is also on the harmonization of observations from both Landsat and Europe’s Sentinel-2 and Sentinel-3 satellites.",
+      "body_vi": "• Cập nhật trang web Công cụ dựa trên vệ tinh để Đánh giá Nhanh các Môi trường Thủy sinh (STREAM) để hỗ trợ các sản phẩm hài hòa nâng cao.\n\nO’Shea đang tập trung cải thiện và xác thực độ chính xác của các thuật toán, đồng thời mở rộng phạm vi địa lý (geographic coverage) của các thuật toán vượt ra ngoài Bắc Mỹ và Châu Âu.\n\n“Tôi đang làm việc rất nhiều với các bên liên quan để xem thuật toán của chúng tôi hoạt động tốt như thế nào ở khu vực của họ và cũng đánh giá một loạt các thuật toán khác nhau,” O’Shea nói. “Độ chính xác và bằng chứng thành công giúp họ tin tưởng vào các thuật toán của chúng tôi và sử dụng nó để định hướng tốtτεr cho các nguồn lực của họ.”\n\nKhi nghiên cứu tiến triển trước khi phóng Landsat 10, O’Shea cho biết trọng tâm cũng đặt vào việc hài hòa hóa các quan sát từ cả Landsat và các vệ tinh Sentinel-2, Sentinel-3 của Châu Âu."
+    },
+    {
+      "body_en": "“We’re doing a final push on harmonization between sensors and trying to get similar retrievals from Landsat and Sentinel so we can combine these two together in a time series to get [y:higher temporal resolutions]. This will allow water quality managers to have more consistent observations they can work with,” O’Shea said.\n\nAs a member of the Landsat Science Team, O’Shea hopes he can bring a voice to the aquatic community.",
+      "body_vi": "“Chúng tôi đang thực hiện nỗ lực cuối cùng để hài hòa hóa giữa các cảm biến và cố gắng thu được các kết quả tương tự từ Landsat và Sentinel để chúng ta có thể kết hợp hai loại này lại với nhau trong chuỗi thời gian nhằm đạt được độ phân giải thời gian cao hơn (higher temporal resolutions). Điều này sẽ cho phép các nhà quản lý chất lượng nước có được các quan sát nhất quán hơn để làm việc,” O’Shea cho biết.\n\nLà thành viên của Nhóm Khoa học Landsat, O’Shea hy vọng ông có thể mang lại tiếng nói cho cộng đồng thủy sinh."
+    },
+    {
+      "body_en": "“Big picture, I see myself [p:advocating for aquatic applications]. I know the Landsat Science Team focuses mainly on terrestrial applications, so just making sure that I advocate for design decisions that help support aquatic users in the long term. I’m also hoping to improve our stakeholder use of online platforms so they can integrate it with their decision-making capabilities to better direct their resources,” O’Shea said.",
+      "body_vi": "“Bức tranh toàn cảnh, tôi thấy mình đang vận động cho các ứng dụng thủy sinh (advocating for aquatic applications). Tôi biết Nhóm Khoa học Landsat tập trung chủ yếu vào các ứng dụng trên cạn, vì vậy chỉ cần đảm bảo rằng tôi vận động cho các quyết định thiết kế giúp hỗ trợ người dùng dưới nước trong dài hạn. Tôi cũng hy vọng cải thiện việc sử dụng các nền tảng trực tuyến của các bên liên quan để họ có thể tích hợp nó với khả năng ra quyết định của mình nhằm định hướng tốt hơn cho các nguồn lực của họ,” O’Shea cho biết."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/landsat-missions/news/landsat-science-team-landsat-10-improve-harmful-algal-bloom-monitoring"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+    "provider": "nasa",
+    "author": "NASA_Kim Shiflett",
+    "license": "Public domain (NASA)",
+    "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1420/2013-1420~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1420"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1426/2013-1426~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1426"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/2013-1418/2013-1418~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA_Kim Shiflett",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/2013-1418"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JagC7AYyMscOFT0d/7viQwQobhD4AAP76Y+uX2mr2lTFxVjISBUCH7nK6GkX4egx/dM/U+yiAbpHst+iGGONWfRwgVtiVXAQn20zpx2FJf5jhThn/8WTkJiBNugzZLJgu2zh5pqDvywHZvLMMGOJq0Y8vMlmRxVDgJjXv5a334VN4cvuDVuvpUOXLuhiRzrQAAA==",
+  "dominant": "#3d393d",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-landsat-science-team-landsat-10-to-improve-harmful-algal-bloom-monitori",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "Landsat Science Team: Landsat 10 to Improve Harmful Algal Bloom Monitoring",
+    "originalUrl": "https://www.usgs.gov/landsat-missions/news/landsat-science-team-landsat-10-improve-harmful-algal-bloom-monitoring",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of satellite monitoring as a high-tech pair of glasses that brings blurry water safety data into sharp focus. How can local water managers better use these advanced tools to protect public health?",
+    "vi": "Hãy coi việc giám sát qua vệ tinh như một cặp kính công nghệ cao giúp làm rõ nét các dữ liệu an toàn về nước vốn đang mờ nhạt. Các nhà quản lý nguồn nước địa phương có thể tận dụng những công cụ tiên tiến này như thế nào để bảo vệ sức khỏe cộng đồng?"
+  },
+  "applySteps": {
+    "en": [
+      "Explore current satellite imagery tools like STREAM to check water quality in your local area.",
+      "Review data on harmful algal blooms to understand their impact on freshwater and coastal ecosystems.",
+      "Share information about water monitoring resources with local environmental stakeholders."
+    ],
+    "vi": [
+      "Khám phá các công cụ hình ảnh vệ tinh hiện tại như STREAM để kiểm tra chất lượng nước ở khu vực địa phương của bạn.",
+      "Xem xét dữ liệu về các vụ tảo nở hoa độc hại để hiểu tác động của chúng đối với hệ sinh thái nước ngọt và ven biển.",
+      "Chia sẻ thông tin về các nguồn lực giám sát nước với các bên liên quan về môi trường tại địa phương."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-02T02:42:37.461Z"
+}
