@@ -1,0 +1,129 @@
+{
+  "slug": "plants-fall-for-optical-illusions-too",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=plants-fall-for-optical-illusions-too",
+  "category": "science",
+  "tags": [
+    "botany",
+    "neuroscience",
+    "illusion",
+    "biology"
+  ],
+  "title": {
+    "en": "Plants Fall for Optical Illusions Too",
+    "vi": "Thực vật cũng mắc lừa ảo ảnh quang học"
+  },
+  "hook": {
+    "en": "You might feel frustrated when your brain fails to see through a trick, but you are not alone. Recent research reveals that even organisms completely devoid of a nervous system can experience visual deception {source}. Scientists have discovered that sunflowers process light cues in ways that mimic how human brains get fooled by sensory tricks, revealing surprising similarities across living kingdoms.",
+    "vi": "Bạn có thể cảm thấy thất bại khi bộ não không nhìn thấu được một thủ thuật thị giác, nhưng bạn không cô độc. Nghiên cứu gần đây cho thấy ngay cả những sinh vật hoàn toàn không có hệ thần kinh cũng có thể trải qua sự lừa dối thị giác {source}. Các nhà khoa học đã phát hiện ra rằng hoa hướng dương xử lý tín hiệu ánh sáng theo những cách bắt chước cách bộ não con người bị đánh lừa bởi các mẹo giác quan, hé lộ những điểm tương đồng đáng kinh ngạc giữa các giới sinh vật."
+  },
+  "sections": [
+    {
+      "heading_en": "Scattered Sensors",
+      "heading_vi": "Cảm biến phân tán",
+      "body_en": "A group of researchers at Tel Aviv University explored how flora interpret visual cues. Unlike humans who rely on facial eyes, these organisms possess a dispersed network of light receptors distributed across their entire body, particularly along their stems. This decentralized sensory structure gathers data from the surroundings differently, yet it still encounters processing quirks reminiscent of neurological blind spots.",
+      "body_vi": "Một nhóm các nhà nghiên cứu tại Đại học Tel Aviv đã khám phá cách thực vật diễn giải các tín hiệu thị giác. Khác với con người dựa vào mắt trên khuôn mặt, những sinh vật này sở hữu mạng lưới thụ thể ánh sáng phân bố khắp cơ thể, đặc biệt dọc theo thân cây. Cấu trúc cảm giác phi tập trung này thu thập dữ liệu từ môi trường xung quanh theo cách khác, nhưng vẫn gặp phải những điểm kỳ lạ trong xử lý gợi nhớ đến các điểm mù thần kinh."
+    },
+    {
+      "heading_en": "Conflicting Beams",
+      "heading_vi": "Chùm sáng xung đột",
+      "body_en": "To test how these organisms handle directional signals, botanists experimented with sunflowers exposed to various illumination setups. When subjected to two opposing beams of identical brightness alongside a third weaker perpendicular source, an unexpected reaction occurred. The specimen remarkably leaned toward the weaker illumination, as if the two brighter opposing signals completely neutralized each other's influence.",
+      "body_vi": "Để kiểm tra cách các sinh vật này xử lý tín hiệu định hướng, các nhà thực vật học đã thí nghiệm với hoa hướng dương tiếp xúc với các thiết lập chiếu sáng khác nhau. Khi chịu tác động của hai chùm sáng đối diện có độ sáng giống nhau cùng với nguồn thứ ba yếu hơn vuông góc, một phản ứng bất ngờ đã xảy ra. Mẫu vật đáng chú ý đã nghiêng về phía ánh sáng yếu hơn, như thể hai tín hiệu sáng đối diện hoàn toàn triệt tiêu ảnh hưởng lẫn nhau."
+    },
+    {
+      "heading_en": "Mathematical Missteps",
+      "heading_vi": "Sai số toán học",
+      "body_en": "The root cause lies in how light signals get converted internally. Rather than calculating raw brightness directly, the organism sums up directional vectors after conversion occurs. Because this translation operates non-linearly, opposing forces can cancel one another out, triggering a misinterpretation of the environment {p:that mirrors our own visual tricks}.",
+      "body_vi": "Nguyên nhân gốc rễ nằm ở cách các tín hiệu ánh sáng được chuyển đổi bên trong. Thay vì tính toán trực tiếp độ sáng thô, sinh vật tổng hợp các véc-tơ hướng sau khi quá trình chuyển đổi diễn ra. Vì sự dịch chuyển này hoạt động phi tuyến tính, các lực đối lập có thể triệt tiêu lẫn nhau, kích hoạt sự hiểu lầm về môi trường {p:phản chiếu các mẹo thị giác của chính chúng ta}."
+    },
+    {
+      "heading_en": "Broader Implications",
+      "heading_vi": "Ý nghĩa rộng hơn",
+      "body_en": "This discovery suggests that physical layout alone shapes perception. Study author Yasmine Meroz notes that decentralized sensory architecture dictates how living systems react to their surroundings. This foundational rule likely extends far beyond flora, potentially applying to single cells and bacteria that similarly rely on distributed sensory frameworks.",
+      "body_vi": "Khám phá này cho thấy bố cục vật lý đơn thuần định hình nhận thức. Tác giả nghiên cứu Yasmine Meroz lưu ý rằng kiến trúc cảm giác phi tập trung quyết định cách các hệ thống sống phản ứng với môi trường xung quanh. Quy tắc nền tảng này có thể mở rộng vượt xa thực vật, có khả năng áp dụng cho các tế bào đơn và vi khuẩn cũng phụ thuộc vào các khung cảm giác phân tán tương tự."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "nautil.us (2026)",
+      "url": "https://nautil.us/plants-experience-optical-illusions-too-1286328"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/974/1080/1920",
+    "provider": "unsplash",
+    "author": "Greg Rakozy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Jake Currie"
+    ],
+    "originalTitle": "Plants Experience Optical Illusions, Too",
+    "originalUrl": "https://nautil.us/plants-experience-optical-illusions-too-1286328",
+    "publisher": "nautil.us",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like a compass needle spinning wildly between competing magnets, living systems process environmental signals through geometry rather than raw math. [p:Can the physical layout of your own sensory organs trick your understanding of reality just as easily?]",
+    "vi": "Giống như kim la bàn quay cuồng giữa các nam châm cạnh tranh, các hệ thống sống xử lý tín hiệu môi trường thông qua hình học thay vì toán học thô. [p:Liệu bố cục vật lý của các cơ quan cảm giác của chính bạn có thể đánh lừa sự hiểu biết của bạn về thực tế một cách dễ dàng như vậy không?]"
+  },
+  "applySteps": {
+    "en": [
+      "Observe a potted plant near a window to notice how its stems lean toward incoming light.",
+      "Change the light angle by rotating the pot slightly to watch stem readjustment.",
+      "Compare this slow physical movement to how your own eyes adjust to sudden brightness shifts."
+    ],
+    "vi": [
+      "Quan sát một chậu cây gần cửa sổ để nhận thấy thân cây nghiêng về phía ánh sáng chiếu vào.",
+      "Thay đổi góc chiếu sáng bằng cách xoay nhẹ chậu cây để xem thân cây điều chỉnh lại.",
+      "So sánh chuyển động vật lý chậm này với cách mắt bạn tự điều chỉnh trước những thay đổi độ sáng đột ngột."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/974/1080/1920",
+      "provider": "unsplash",
+      "author": "Greg Rakozy",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1022/1080/1920",
+      "provider": "unsplash",
+      "author": "Vashishtha Jogi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwBACdASoQABwAPu1kqU2ppaQiMAgBMB2JYwCdMoMzGOSh5aJNw3SV+y7lBAAAAP773Qz/YLhT57YnFO0i8CurRbwwUzbG47tgA8zABLhujHuNiLOQ+7tI6u+5eMGfmlqn7JShJaAAAA==",
+  "dominant": "#3b3134",
+  "publishAt": "2026-11-04T03:16:53.731Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
