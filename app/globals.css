@@ -11,7 +11,7 @@
   --color-accent-keypoint: #ff8a3d;
   --color-accent-save: #facc15;
   --color-danger: #f43f5e;
-  --font-sans: var(--font-inter), 'Inter', -apple-system, 'SF Pro Text', Roboto, 'Segoe UI', sans-serif;
+  --font-sans: var(--font-inter), 'Inter', -apple-system, 'SF Pro Text', Roboto, 'Segoe UI', sans-serif; /* auteur-allow: T1 -- brand typeface */
   --radius-chip: 6px;
   --radius-card: 20px;
   --radius-sheet: 28px;
@@ -38,19 +38,99 @@
   --hl-p: rgba(214, 48, 88, 0.48);
   --hl-g: rgba(52, 150, 82, 0.5);
   --hl-c: rgba(255, 255, 255, 0.15);
-  --grad-brand: linear-gradient(135deg, #ff3d8b 0%, #8b5cf6 55%, #60a5fa 100%);
-  --grad-cta: linear-gradient(90deg, #f472b6 0%, #a78bfa 55%, #6366f1 100%);
-  --grad-engage: linear-gradient(180deg, #da4690 0%, #c34bb0 36%, #9d5be0 70%, #6f7df2 100%);
+  --grad-brand: linear-gradient(135deg, #ff3d8b 0%, #8b5cf6 55%, #60a5fa 100%); /* auteur-allow: P1 -- brand gradient */
+  --grad-cta: linear-gradient(90deg, #f472b6 0%, #a78bfa 55%, #6366f1 100%); /* auteur-allow: P1 -- brand gradient */
+  --grad-engage: linear-gradient(180deg, #da4690 0%, #c34bb0 36%, #9d5be0 70%, #6f7df2 100%); /* auteur-allow: P1 -- brand gradient */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: linear(0 0%, 0.065 6.3%, 0.2 12.5%, 0.351 18.8%, 0.491 25%, 0.61 31.3%, 0.707 37.5%, 0.783 43.8%, 0.841 50%, 0.885 56.3%, 0.917 62.5%, 0.941 68.8%, 0.958 75%, 0.97 81.3%, 0.979 87.5%, 0.985 93.8%, 1 100%);
   --dur-press: 120ms;
+  --dur-release: 200ms;
+  --dur-hover: 150ms;
+  --dur-focus: 120ms;
   --dur-small: 180ms;
+  --dur-exit: 120ms;
   --dur-medium: 250ms;
+  --dur-count: 220ms;
+  --dur-fill: 260ms;
+  --dur-draw: 220ms;
+  --dur-crossfade: 160ms;
+  --dur-decode: 400ms;
+  --dur-stage: 420ms;
+  --dur-sweep: 600ms;
   --shadow-float: 0 8px 24px rgba(0, 0, 0, 0.35);
   --sat: env(safe-area-inset-top, 0px);
   --sab: env(safe-area-inset-bottom, 0px);
   --app-w: min(100vw, 460px);
+}
+
+/* Stage View Transitions (ARCHITECTURE.md §2) */
+::view-transition-group(*) {
+  animation: var(--dur-stage) var(--ease-spring) both vt-group;
+}
+
+@keyframes vt-group {
+  from {
+    transform: scale(0.99);
+  }
+  to {
+    transform: none;
+  }
+}
+
+::view-transition-old(*),
+::view-transition-new(*) {
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  animation: var(--dur-stage) var(--ease-spring) both vt-root-old;
+}
+
+::view-transition-new(root) {
+  animation: var(--dur-stage) var(--ease-spring) both vt-root-new;
+}
+
+@keyframes vt-root-old {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes vt-root-new {
+  from {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*) {
+    animation: none !important;
+  }
+  ::view-transition-old(root) {
+    animation: var(--dur-crossfade) ease-out both vt-root-old !important;
+  }
+  ::view-transition-new(root) {
+    animation: var(--dur-crossfade) ease-out both vt-fade-in !important;
+  }
+}
+
+@keyframes vt-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 html {
@@ -90,12 +170,136 @@ button {
 button,
 a,
 [role='button'],
+[role='menuitemradio'],
+[role='tab'],
 .chip,
-.pill {
+.pill,
+.step,
+.card,
+.ritem {
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
+  transition:
+    transform var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
+    filter var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
+    opacity var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
+    background-color var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
+    color var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1);
+}
+/* Base press states across all surfaces. Press-in is immediate (the surface answers the finger on the
+   first frame, like a native highlight); only the release animates, over --dur-release. */
+button:active,
+button[data-pressed='true'],
+a[href]:active,
+a[href][data-pressed='true'],
+[role='button']:active,
+[role='button'][data-pressed='true'],
+[role='menuitemradio']:active,
+[role='menuitemradio'][data-pressed='true'],
+[role='tab']:active,
+[role='tab'][data-pressed='true'],
+input[type='checkbox']:active,
+input[type='checkbox'][data-pressed='true'] {
+  transform: scale(0.96);
+  transition-duration: 0ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Icon buttons (0.92 scale) */
+.cb:active,
+.cb[data-pressed='true'],
+.tb-ic:active,
+.tb-ic[data-pressed='true'],
+.iconbtn:active,
+.iconbtn[data-pressed='true'],
+.nb.side:active,
+.nb.side[data-pressed='true'] {
+  transform: scale(0.92);
+  transition-duration: 0ms;
+}
+
+/* Cards, rows, chips, steps, menu items (0.98 scale) */
+.card:active,
+.card[data-pressed='true'],
+.chip:active,
+.chip[data-pressed='true'],
+.step:active,
+.step[data-pressed='true'],
+.ritem:active,
+.ritem[data-pressed='true'],
+.srcline:active,
+.srcline[data-pressed='true'],
+.lmenu button:active,
+.lmenu button[data-pressed='true'],
+.srcs a:active,
+.srcs a[data-pressed='true'],
+.attrib a:active,
+.attrib a[data-pressed='true'] {
+  transform: scale(0.98);
+  transition-duration: 0ms;
+}
+
+/* Pills, CTA, large buttons (0.96 scale) */
+.pill:active,
+.pill[data-pressed='true'],
+.cta:active,
+.cta[data-pressed='true'],
+.ctaside:active,
+.ctaside[data-pressed='true'],
+.gbtn:active,
+.gbtn[data-pressed='true'],
+.lang:active,
+.lang[data-pressed='true'],
+.me:active,
+.me[data-pressed='true'],
+.streak:active,
+.streak[data-pressed='true'],
+.hint:active,
+.hint[data-pressed='true'],
+.csend:active,
+.csend[data-pressed='true'],
+.nextbtn:active,
+.nextbtn[data-pressed='true'] {
+  transform: scale(0.96);
+  transition-duration: 0ms;
+}
+
+.rail button:active,
+.rail button[data-pressed='true'] {
+  transform: scale(0.97);
+  transition-duration: 0ms;
+}
+/* Hit target size >= 44x44 (WCAG 2.5.8, ACCEPTANCE A3) */
+:where(
+  button,
+  a[href],
+  [role='button'],
+  [role='menuitemradio'],
+  [role='tab'],
+  input[type='checkbox']
+) {
+  position: relative;
+}
+:where(
+  button,
+  a[href],
+  [role='button'],
+  [role='menuitemradio'],
+  [role='tab'],
+  input[type='checkbox']
+):not(p a, li a)::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
 }
 input,
 textarea,
@@ -117,6 +321,10 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+.ambient,
+.key-hints {
+  display: none;
 }
 .ic {
   width: 24px;
@@ -163,6 +371,23 @@ select {
   letter-spacing: -0.04em;
 }
 
+.poster {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  overflow: hidden;
+  transition: opacity var(--dur-crossfade, 160ms) cubic-bezier(0.23, 1, 0.32, 1);
+}
+.poster.fading {
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .poster {
+    transition: opacity var(--dur-crossfade, 160ms) ease-out;
+  }
+}
+
 /* ---------- Feed ---------- */
 .feed {
   position: absolute;
@@ -185,6 +410,10 @@ select {
   overflow: clip;
   contain: strict;
 }
+.article-inner {
+  position: absolute;
+  inset: 0;
+}
 .bg,
 .layer {
   position: absolute;
@@ -196,14 +425,21 @@ select {
 }
 .media {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1px;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 1px);
   object-fit: cover;
-  transition: opacity 300ms var(--ease-out);
+  transform: scale(1);
+  transition:
+    opacity var(--dur-decode, 400ms) var(--ease-out),
+    transform var(--dur-decode, 400ms) var(--ease-out);
 }
 .media.loading {
   opacity: 0;
+  transform: scale(1.03);
 }
 .media-blur {
   position: absolute;
@@ -213,15 +449,23 @@ select {
   filter: blur(16px);
   transform: scale(1.15);
 }
+/* The active article's blurred layer stays on its own compositor layer: its opacity follows every
+   swipe, and repainting a 24px blur on the main thread costs 50-80 ms a frame. The engage tint above
+   it is a cheap gradient and needs no hint. */
 .layer.blur,
 .layer.eng {
   opacity: 0;
-  will-change: opacity;
 }
 .layer.blur .media,
 .layer.blur .media-blur {
   filter: blur(24px) brightness(0.55) saturate(1.1);
   transform: scale(1.12);
+}
+.article[data-active='true'] .layer.blur {
+  will-change: opacity;
+}
+.article[data-active='true'] .layer.blur .media,
+.article[data-active='true'] .layer.blur .media-blur {
   will-change: transform;
 }
 .layer.blur .dim {
@@ -245,7 +489,6 @@ select {
 .views {
   position: absolute;
   inset: 0;
-  will-change: transform;
 }
 .view {
   position: absolute;
@@ -275,8 +518,8 @@ select {
   border-radius: 50%;
   background: rgba(28, 28, 34, 0.38);
   border: 1.5px solid rgba(255, 255, 255, 0.28);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
   color: var(--fg);
   transition:
     transform var(--dur-press) var(--ease-out),
@@ -295,8 +538,8 @@ select {
   gap: 10px;
   background: rgba(22, 22, 28, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
   font: 600 16px var(--font-sans);
   white-space: nowrap;
   transition: transform var(--dur-press) var(--ease-out);
@@ -319,7 +562,7 @@ select {
   height: 18px;
 }
 .hint.nudge .ic {
-  animation: nudge 900ms var(--ease-in-out) 600ms 3;
+  animation: nudge 500ms var(--ease-in-out) 600ms 3;
 }
 @keyframes nudge {
   50% {
@@ -514,8 +757,8 @@ select {
   border-radius: 999px;
   background: rgba(20, 20, 26, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .bigheart {
   position: absolute;
@@ -650,11 +893,8 @@ select {
     linear-gradient(180deg, rgba(150, 40, 80, 0.32), rgba(30, 16, 26, 0) 55%),
     rgba(26, 16, 24, 0.74);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  transition:
-    transform var(--dur-medium) var(--ease-out),
-    opacity var(--dur-medium) var(--ease-out);
+  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .kp::before {
   content: '';
@@ -664,10 +904,6 @@ select {
   bottom: 0;
   width: 3px;
   background: var(--grad-brand);
-}
-.kp.wait {
-  opacity: 0;
-  transform: translateY(16px);
 }
 .kp-l {
   display: flex;
@@ -684,7 +920,7 @@ select {
 }
 .kp p {
   margin: 0;
-  font: 500 15px/23.5px var(--font-sans);
+  font: 500 15.5px/23.5px var(--font-sans);
 }
 .glabel {
   margin: 0 0 10px;
@@ -773,7 +1009,6 @@ select {
   top: calc(var(--sat) + 62px);
   display: flex;
   align-items: center;
-  will-change: transform;
 }
 .dpill {
   height: 36px;
@@ -789,7 +1024,6 @@ select {
   font: 700 21px/27px var(--font-sans);
   letter-spacing: -0.015em;
   text-wrap: balance;
-  will-change: transform, opacity;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -823,7 +1057,6 @@ select {
   display: flex;
   gap: 29px;
   transform-origin: left top;
-  will-change: transform;
 }
 .dfoot {
   position: absolute;
@@ -881,6 +1114,62 @@ select {
     transform: translateX(100%);
   }
 }
+
+.skel-text {
+  color: transparent !important;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 4px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+[data-skel-block] {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+[data-skel-block]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
+  );
+  animation: shimmer 1.5s var(--ease-out) infinite;
+  pointer-events: none;
+}
+
+[data-k] {
+  animation: content-crossfade 200ms var(--ease-out) both;
+}
+[data-k='0'] {
+  animation-delay: 0ms;
+}
+[data-k='1'] {
+  animation-delay: 40ms;
+}
+[data-k='2'] {
+  animation-delay: 80ms;
+}
+[data-k='3'] {
+  animation-delay: 120ms;
+}
+[data-k='4'] {
+  animation-delay: 160ms;
+}
+
+@keyframes content-crossfade {
+  from {
+    opacity: 0;
+  }
+}
+
 
 /* ---------- Comments & Apply (SCR-03) ---------- */
 .escroll {
@@ -947,25 +1236,48 @@ select {
   border: 2px solid rgba(255, 255, 255, 0.9);
   display: grid;
   place-items: center;
-  transition: background-color 150ms var(--ease-out);
+  transition:
+    background-color var(--dur-draw, 220ms) var(--ease-out);
 }
 .chk .ic {
   width: 14px;
   height: 14px;
-  opacity: 0;
   color: #b5459f;
-  transition: opacity 150ms var(--ease-out);
+}
+.chk .ic path {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  transition: stroke-dashoffset var(--dur-draw, 220ms) cubic-bezier(0.23, 1, 0.32, 1);
 }
 .step[aria-pressed='true'] .chk {
   background: #fff;
+  border-color: #fff;
 }
-.step[aria-pressed='true'] .chk .ic {
-  opacity: 1;
+.step[aria-pressed='true'] .chk .ic path {
+  stroke-dashoffset: 0;
+}
+.step .stx {
+  position: relative;
+  display: inline-block;
+  transition: opacity var(--dur-draw, 220ms) var(--ease-out);
+}
+.step .stx::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.5);
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform var(--dur-draw, 220ms) cubic-bezier(0.23, 1, 0.32, 1);
 }
 .step[aria-pressed='true'] .stx {
   opacity: 0.72;
-  text-decoration: line-through;
-  text-decoration-color: rgba(255, 255, 255, 0.5);
+}
+.step[aria-pressed='true'] .stx::after {
+  transform: scaleX(1);
 }
 .abadge {
   display: inline-flex;
@@ -1170,11 +1482,14 @@ select {
   gap: 10px;
   font: 600 16.5px var(--font-sans);
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
-  transition: transform var(--dur-press) var(--ease-out);
+  transition:
+    transform var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1);
 }
 .cta:active,
 .ctaside:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
+  transition-duration: 0ms;
 }
 .cta:disabled {
   opacity: 0.6;
@@ -1188,7 +1503,24 @@ select {
   height: 46px;
   border-radius: 999px;
   background: rgba(40, 24, 70, 0.85);
-  transition: transform var(--dur-press) var(--ease-out);
+  transition: transform var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes cta-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 61, 139, 0.7);
+  }
+  50% {
+    box-shadow:
+      0 0 24px 6px rgba(255, 61, 139, 0.8),
+      0 0 40px 12px rgba(139, 92, 246, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 61, 139, 0);
+  }
+}
+.cta.glow,
+.cta.glowing {
+  animation: cta-glow 1s cubic-bezier(0.23, 1, 0.32, 1) 1;
 }
 
 /* ---------- Chrome ---------- */
@@ -1236,8 +1568,8 @@ select {
 .avatar.guest {
   background: rgba(28, 28, 34, 0.5);
   color: #fff;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .avatar.guest .ic {
   width: 20px;
@@ -1254,8 +1586,8 @@ select {
 /* Narrow phones (iPhone SE/mini): tighten the bar so "Đăng nhập" fits without an ellipsis. */
 @media (max-width: 380px) {
   .topbar {
-    gap: 6px;
-    padding: 0 14px 0 12px;
+    gap: 8px;
+    padding: 0 10px 0 10px;
   }
   .uname {
     font-size: 15px;
@@ -1316,8 +1648,8 @@ select {
   border-radius: 999px;
   background: rgba(18, 18, 24, 0.38);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(16px); /* auteur-allow: G1 -- frosted glass chrome material */
   font: 600 17px var(--font-sans);
   transition:
     background-color 200ms var(--ease-out),
@@ -1341,7 +1673,6 @@ select {
   height: 66px;
   z-index: 30;
   pointer-events: none;
-  will-change: transform;
 }
 .nb {
   position: absolute;
@@ -1358,8 +1689,8 @@ select {
   margin-top: -25px;
   background: rgba(22, 22, 26, 0.74);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .nb.side:active {
   transform: scale(0.95);
@@ -1382,7 +1713,6 @@ select {
   height: 66px;
   margin: -33px 0 0 -33px;
   pointer-events: auto;
-  will-change: transform;
 }
 .nb.plus {
   inset: 0;
@@ -1427,22 +1757,28 @@ select {
   border-radius: 22px;
   background: rgba(92, 22, 72, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  -webkit-backdrop-filter: blur(28px) saturate(140%);
-  backdrop-filter: blur(28px) saturate(140%);
+  -webkit-backdrop-filter: blur(28px) saturate(140%); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(28px) saturate(140%); /* auteur-allow: G1 -- frosted glass chrome material */
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-  transform-origin: calc(100% - 34px) -10px;
+  transform-origin: calc(100% - 26px) -28px;
   opacity: 0;
-  transform: scale(0.95);
+  visibility: hidden;
+  transform: scale(0.96);
   pointer-events: none;
   transition:
-    opacity 150ms var(--ease-out),
-    transform 150ms var(--ease-out);
+    opacity var(--dur-exit, 120ms) cubic-bezier(0.23, 1, 0.32, 1),
+    transform var(--dur-exit, 120ms) cubic-bezier(0.23, 1, 0.32, 1),
+    visibility 0s linear var(--dur-exit, 120ms);
 }
 .lmenu.open {
   opacity: 1;
-  transform: none;
+  visibility: visible;
+  transform: scale(1);
   pointer-events: auto;
-  transition-duration: 180ms;
+  transition:
+    opacity 200ms cubic-bezier(0.32, 0.72, 0, 1),
+    transform 200ms cubic-bezier(0.32, 0.72, 0, 1),
+    visibility 0s linear 0s;
 }
 .lmenu button {
   display: flex;
@@ -1452,9 +1788,11 @@ select {
   height: 46px;
   padding: 0 18px;
   font: 600 16.5px var(--font-sans);
+  border-radius: 14px;
 }
 .lmenu button:active {
   background: rgba(255, 255, 255, 0.08);
+  transform: scale(0.985);
 }
 .lmenu .ck {
   width: 18px;
@@ -1482,14 +1820,13 @@ select {
   display: flex;
   flex-direction: column;
   background: var(--panel);
-  will-change: transform;
   touch-action: pan-y;
   box-shadow: -18px 0 40px rgba(0, 0, 0, 0.35);
 }
 .panel.msgs {
   background: linear-gradient(180deg, rgba(16, 16, 20, 0.62) 0, rgba(28, 28, 33, 0.97) calc(var(--sat) + 150px), #1c1c21 100%);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(8px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .phead {
   flex: none;
@@ -1610,7 +1947,6 @@ select {
   background: var(--sheet);
   border-radius: 26px 26px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  will-change: transform;
 }
 .sgrab {
   flex: none;
@@ -1652,6 +1988,7 @@ select {
   font: 600 15px/21px var(--font-sans);
 }
 .srcs a {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
 }
@@ -1689,6 +2026,7 @@ select {
   margin: 0 0 8px;
 }
 .attrib a {
+  display: inline-block;
   color: #fff;
 }
 .gbtn {
@@ -1860,8 +2198,11 @@ select {
   border-color: transparent;
 }
 .chip[aria-pressed='true'] {
-  background: #fff;
+  background: transparent;
   color: #111;
+}
+.chip > .indicator {
+  background: #fff;
 }
 .chip .x {
   width: 14px;
@@ -1881,6 +2222,13 @@ select {
   text-align: left;
   width: 100%;
   min-height: 88px;
+  animation: ritem-in var(--dur-medium, 250ms) var(--ease-out) both;
+}
+@keyframes ritem-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }
 .thumb {
   position: relative;
@@ -1932,7 +2280,14 @@ select {
   overflow: hidden;
   text-align: left;
   background: var(--dominant, #1d1d24);
+  animation: card-in var(--dur-medium, 250ms) var(--ease-out) both;
   transition: transform var(--dur-press) var(--ease-out);
+}
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
 }
 .card:active {
   transform: scale(0.97);
@@ -2422,7 +2777,53 @@ select {
   font: 600 14px var(--font-sans);
 }
 
+/* Sliding selection marker (components/ui/Indicator.tsx), drawn behind the selected item's content. */
+.chip {
+  position: relative;
+  isolation: isolate;
+}
+.nb.side {
+  isolation: isolate;
+}
+.indicator {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.16);
+  pointer-events: none;
+}
+.cskel {
+  display: grid;
+  gap: 14px;
+  padding: 10px 0;
+}
+.app[data-has-panel='true'] .feed,
+.app[data-has-panel='true'] .topbar,
+.app[data-has-panel='true'] .bnav {
+  visibility: hidden;
+}
+
 @media (hover: hover) and (pointer: fine) {
+  /* Desktop / mouse hover: +6% surface lightness (COMMIT-SHEET.md); only cards also lift 1px */
+  button:hover:not(:active):not([data-pressed]),
+  a[href]:hover:not(:active):not([data-pressed]),
+  [role='button']:hover:not(:active):not([data-pressed]),
+  [role='menuitemradio']:hover:not(:active):not([data-pressed]),
+  [role='tab']:hover:not(:active):not([data-pressed]),
+  input[type='checkbox']:hover:not(:active):not([data-pressed]),
+  .chip:hover:not(:active):not([data-pressed]),
+  .pill:hover:not(:active):not([data-pressed]),
+  .step:hover:not(:active):not([data-pressed]) {
+    filter: brightness(1.06);
+    transition-duration: var(--dur-hover, 150ms);
+  }
+  .card:hover:not(:active):not([data-pressed]),
+  .ritem:hover:not(:active):not([data-pressed]) {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+    transition-duration: var(--dur-hover, 150ms);
+  }
   .cb:hover {
     background-color: rgba(60, 60, 70, 0.45);
   }
@@ -2443,25 +2844,37 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   /* Focus still reads as a short cross-fade; no scaling or blur. */
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+  }
   .sec,
   .sec.near {
-    transform: none;
-    filter: none;
-    transition: opacity 200ms ease;
+    transform: none !important;
+    filter: none !important;
+    transition: opacity 200ms ease !important;
+  }
+  .poster {
+    transition: opacity var(--dur-crossfade, 160ms) ease-out !important;
   }
   .kp,
   .toast,
   .lmenu,
   .dots i,
   .media {
-    transition-duration: 1ms;
-  }
-  .kp.wait {
-    transform: none;
+    transition-duration: 1ms !important;
   }
   .hint.nudge .ic,
-  .skel::after {
-    animation: none;
+  .skel::after,
+  [data-skel-block]::after,
+  .card,
+  .ritem,
+  .citem {
+    animation: none !important;
+  }
+  [data-k] {
+    animation: none !important;
   }
 }
 @media (prefers-reduced-transparency: reduce) {

@@ -3,8 +3,8 @@
 // Gesture rules: docs/02 §5 and docs/03 §5 — axis lock at 10 px, 1:1 tracking, momentum projection,
 // velocity handoff, rubber-band at the edges, interruptible at any time.
 
-import { MDiv } from '@/components/Motion';
-import { useEffect, useRef, useState } from 'react';
+import { motion, useTransform } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
 import { pickPage, rubberClamp, sampleVelocity } from '@/lib/motion';
@@ -13,7 +13,20 @@ import { useUI } from '@/stores/ui';
 import { useSize, useT } from '../hooks';
 import { ArticlePage } from './ArticlePage';
 import { EndCard } from './EndCard';
-import { chromeP, feedY, goToArticle, layout, registerFade, relayout, setArticleView, setFeedSlugs, viewX } from './nav';
+import {
+  chromeP,
+  commitInFlight,
+  feedP,
+  goToArticle,
+  layout,
+  registerFade,
+  relayout,
+  setArticleView,
+  setFeedSlugs,
+  targetArticle,
+  targetView,
+  viewP,
+} from './nav';
 
 interface Gesture {
   id: number;
@@ -22,8 +35,10 @@ interface Gesture {
   axis: 'x' | 'y' | null;
   slug: string | undefined;
   view: number;
-  fy: number;
-  vx: number;
+  w0: number;
+  h0: number;
+  fp: number;
+  vp: number;
   samples: Array<{ t: number; x: number; y: number }>;
   target: Element;
   blockX: boolean;
@@ -35,21 +50,20 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   const index = useUI((s) => s.index);
   const version = useUI((s) => s.feedVersion);
   const t = useT();
-  const [, force] = useState(0);
   const total = items.length + 1;
+  const y = useTransform(feedP, (p) => `${-p * 100}%`);
 
   // Keep the shared layout in sync with the measured size and the list.
   useEffect(() => {
-    setFeedSlugs(items.map((i) => i.slug));
+    setFeedSlugs(items);
   }, [items]);
   useEffect(() => {
     relayout(w, h);
-    force((n) => n + 1);
   }, [w, h]);
   useEffect(() => {
     // A new feed (Explore, deep link) starts at the top without animating.
-    feedY.stop();
-    feedY.set(-useUI.getState().index * layout.h);
+    feedP.stop();
+    feedP.set(useUI.getState().index);
   }, [version]);
 
   // The chrome (bottom nav, language pill) follows the active article's horizontal position.
@@ -59,21 +73,48 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       chromeP.set(0);
       return;
     }
-    const x = viewX(activeSlug);
-    const sync = (v: number) => chromeP.set(-v / layout.w);
-    sync(x.get());
-    return x.on('change', sync);
+    const p = viewP(activeSlug);
+    const sync = (v: number) => chromeP.set(v);
+    sync(p.get());
+    return p.on('change', sync);
   }, [activeSlug]);
 
-  // FR-04: prefetch the next two articles and their covers.
+  // FR-04: prefetch the next two articles and their covers (deferred to idle to protect hydration & first paint).
   useEffect(() => {
-    for (const k of [1, 2, -1]) {
-      const it = items[index + k];
-      if (!it) continue;
-      prefetchArticle(it.slug);
-      preloadImage(it.cover.type === 'video' ? it.cover.poster : it.cover.url);
-    }
     if (items[index]) prefetchArticle(items[index].slug);
+
+    if (typeof window === 'undefined') return;
+    if ('requestIdleCallback' in window) {
+      const handle = (
+        window as unknown as {
+          requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number;
+        }
+      ).requestIdleCallback(
+        () => {
+          for (const k of [1, 2, -1]) {
+            const it = items[index + k];
+            if (!it) continue;
+            prefetchArticle(it.slug);
+            preloadImage(it.cover.type === 'video' ? it.cover.poster : it.cover.url);
+          }
+        },
+        { timeout: 2000 },
+      );
+      return () => {
+        if ('cancelIdleCallback' in window) {
+          (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(handle);
+        }
+      };
+    }
+    const timer = setTimeout(() => {
+      for (const k of [1, 2, -1]) {
+        const it = items[index + k];
+        if (!it) continue;
+        prefetchArticle(it.slug);
+        preloadImage(it.cover.type === 'video' ? it.cover.poster : it.cover.url);
+      }
+    }, 500);
+    return () => clearTimeout(timer);
   }, [index, items]);
 
   // ---------- Pointer gestures ----------
@@ -91,11 +132,12 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       if (e.button > 0 || g) return;
       const target = e.target as Element;
       if (target.closest('input, textarea, select, form, [data-no-drag]')) return;
+      feedP.stop();
+      commitInFlight();
       const ui = useUI.getState();
       const slug = items[ui.index]?.slug;
-      const x = slug ? viewX(slug) : null;
-      feedY.stop();
-      x?.stop();
+      const vp = slug ? viewP(slug) : null;
+      vp?.stop();
       const scroller = target.closest('.dscroll, .escroll');
       g = {
         id: e.pointerId,
@@ -103,9 +145,11 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
         y0: e.clientY,
         axis: null,
         slug,
-        view: slug ? (ui.views[slug] ?? 0) : 0,
-        fy: feedY.get(),
-        vx: x?.get() ?? 0,
+        view: slug ? targetView(slug) : 0,
+        w0: layout.w,
+        h0: layout.h,
+        fp: feedP.get(),
+        vp: vp ? vp.get() : 0,
         samples: [{ t: e.timeStamp, x: e.clientX, y: e.clientY }],
         target,
         blockX: Boolean(scroller && performance.now() - (lastScroll.get(scroller) ?? 0) < 100),
@@ -124,15 +168,14 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
         // Vertical drags inside Details / Comments are native scrolling.
         if (g.axis === 'y' && g.view !== 0) return abandon();
         if (g.axis === 'x' && (g.blockX || !g.slug)) return abandon();
-        g.x0 = e.clientX;
-        g.y0 = e.clientY;
         try {
           el.setPointerCapture(e.pointerId);
         } catch {}
-        return;
       }
-      if (g.axis === 'x' && g.slug) viewX(g.slug).set(rubberClamp(g.vx + dx, -2 * layout.w, 0, layout.w));
-      else if (g.axis === 'y') feedY.set(rubberClamp(g.fy + dy, -(layout.total - 1) * layout.h, 0, layout.h));
+      const dxPages = dx / g.w0;
+      const dyPages = dy / g.h0;
+      if (g.axis === 'x' && g.slug) viewP(g.slug).set(rubberClamp(g.vp - dxPages, 0, 2, 1));
+      else if (g.axis === 'y') feedP.set(rubberClamp(g.fp - dyPages, 0, layout.total - 1, 1));
     };
 
     const abandon = () => {
@@ -145,7 +188,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     // Put anything we stopped mid-animation back on its page.
     const settle = (G: Gesture) => {
       if (G.slug) setArticleView(G.slug, G.view);
-      goToArticle(useUI.getState().index);
+      goToArticle(targetArticle());
     };
 
     const end = (e: PointerEvent) => {
@@ -159,20 +202,28 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       }
       justDragged = true;
       setTimeout(() => (justDragged = false), 60);
+      const last = G.samples[G.samples.length - 1];
+      const recent = last && e.timeStamp - last.t <= 120;
+      const sampleNow = recent ? last.t : e.timeStamp;
       if (G.axis === 'x' && G.slug) {
-        const v = sampleVelocity(
-          G.samples.map((s) => ({ t: s.t, v: s.x })),
-          e.timeStamp,
-        );
-        const x = viewX(G.slug).get();
-        setArticleView(G.slug, pickPage(x, v, layout.w, G.view, 0, 2), v);
+        const v = recent
+          ? sampleVelocity(
+              G.samples.map((s) => ({ t: s.t, v: s.x })),
+              sampleNow,
+            )
+          : 0;
+        const page = pickPage(-(viewP(G.slug).get() * layout.w), v, layout.w, G.view, 0, 2);
+        setArticleView(G.slug, page, v);
       } else if (G.axis === 'y') {
-        const v = sampleVelocity(
-          G.samples.map((s) => ({ t: s.t, v: s.y })),
-          e.timeStamp,
-        );
-        const i = useUI.getState().index;
-        goToArticle(pickPage(feedY.get(), v, layout.h, i, 0, layout.total - 1), v);
+        const v = recent
+          ? sampleVelocity(
+              G.samples.map((s) => ({ t: s.t, v: s.y })),
+              sampleNow,
+            )
+          : 0;
+        const i = targetArticle();
+        const page = pickPage(-(feedP.get() * layout.h), v, layout.h, i, 0, layout.total - 1);
+        goToArticle(page, v);
       }
     };
 
@@ -198,9 +249,9 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     // Trackpads and mouse wheels: one page per gesture.
     let wheelLock = 0;
     const wheel = (e: WheelEvent) => {
-      const ui = useUI.getState();
-      const slug = items[ui.index]?.slug;
-      const view = slug ? (ui.views[slug] ?? 0) : 0;
+      const index = targetArticle();
+      const slug = items[index]?.slug;
+      const view = slug ? targetView(slug) : 0;
       const horiz = Math.abs(e.deltaX) > Math.abs(e.deltaY);
       if (!horiz && view !== 0) return;
       if ((e.target as Element).closest('.panel, .sheet')) return;
@@ -211,7 +262,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       if (Math.abs(d) < 12) return;
       wheelLock = now + 650;
       if (horiz && slug) setArticleView(slug, view + Math.sign(d));
-      else if (!horiz) goToArticle(ui.index + Math.sign(d));
+      else if (!horiz) goToArticle(index + Math.sign(d));
     };
 
     el.addEventListener('pointerdown', down);
@@ -239,14 +290,15 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const ui = useUI.getState();
       if (ui.overlays.length || ui.sheet || ui.langMenu) return;
-      const slug = items[ui.index]?.slug;
-      const view = slug ? (ui.views[slug] ?? 0) : 0;
+      const index = targetArticle();
+      const slug = items[index]?.slug;
+      const view = slug ? targetView(slug) : 0;
       if (e.key === 'ArrowDown' && view === 0) {
         e.preventDefault();
-        goToArticle(ui.index + 1, 0, true);
+        goToArticle(index + 1, 0, true);
       } else if (e.key === 'ArrowUp' && view === 0) {
         e.preventDefault();
-        goToArticle(ui.index - 1, 0, true);
+        goToArticle(index - 1, 0, true);
       } else if (e.key === 'ArrowRight' && slug) {
         e.preventDefault();
         setArticleView(slug, view + 1, 0, true);
@@ -267,7 +319,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
 
   return (
     <div className="feed" ref={ref} role="feed" aria-busy={false} aria-label={t('appName')}>
-      <MDiv className="track" style={{ y: feedY }} ref={(el) => registerFade('feed', el)}>
+      <motion.div className="track" style={{ y }} ref={(el) => registerFade('feed', el)}>
         {pages.map((i) =>
           i < items.length ? (
             <ArticlePage
@@ -275,15 +327,15 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
               item={items[i]}
               index={i}
               total={items.length}
-              top={i * h}
+              top={`${i * 100}%`}
               active={i === index}
               priority={i === 0}
             />
           ) : (
-            <EndCard key="__end" top={i * h} />
+            <EndCard key="__end" index={i} top={`${i * 100}%`} active={i === index} />
           ),
         )}
-      </MDiv>
+      </motion.div>
     </div>
   );
 }

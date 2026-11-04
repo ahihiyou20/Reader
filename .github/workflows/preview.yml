@@ -1,0 +1,57 @@
+# Preview every pull request on Cloudflare Pages before it is merged. Each PR gets its own alias,
+# https://pr-<number>.reader-xtm.pages.dev, refreshed on every push to the PR branch. Merging into
+# main then publishes the production site through deploy.yml.
+# Uses the same CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secrets as deploy.yml. Pull requests from
+# forks get no secrets, so they are skipped.
+name: Preview
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+  pull-requests: write
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+jobs:
+  preview:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      ALIAS: pr-${{ github.event.pull_request.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      # Same public web config as deploy.yml. Google sign-in only works on the production domain
+      # (the preview host is not an authorized OAuth domain); guest mode works everywhere.
+      - name: Build
+        env:
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL || 'https://reader-xtm.pages.dev' }}
+          NEXT_PUBLIC_FIREBASE_API_KEY: ${{ vars.NEXT_PUBLIC_FIREBASE_API_KEY || 'AIzaSyD7aHQ1QK7-2lQrK4DAadQnoG7R1dXAWpk' }}
+          NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{ vars.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN || 'reader-xtm.pages.dev' }}
+          NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_PROJECT_ID || 'reader-app-512514' }}
+          NEXT_PUBLIC_FIREBASE_APP_ID: ${{ vars.NEXT_PUBLIC_FIREBASE_APP_ID || '1:427872189161:web:9bf2ffe3c95507b5234e78' }}
+          NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ vars.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || '6LejJP0tAAAAAP9sdGU0fiaifnGGRGNcuM6S8D4p' }}
+          NEXT_PUBLIC_GOOGLE_CLIENT_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '427872189161-p1r7um1joia6jk05nssq6qbcv91tt6us.apps.googleusercontent.com' }}
+        run: pnpm build
+      - name: Upload preview to Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          PROJECT: ${{ vars.CF_PAGES_PROJECT || 'reader' }}
+        run: |
+          pnpm dlx wrangler@4.148.0 pages deploy out --project-name "$PROJECT" --branch "$ALIAS" \
+            --commit-hash "${{ github.event.pull_request.head.sha }}" --commit-message "PR #${{ github.event.pull_request.number }}"
+          echo "Preview: https://$ALIAS.reader-xtm.pages.dev" >> "$GITHUB_STEP_SUMMARY"
+      - name: Link the preview on the pull request
+        if: env.CLOUDFLARE_API_TOKEN != '' && github.event.action == 'opened'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" --repo "${{ github.repository }}" \
+            --body "Preview: https://$ALIAS.reader-xtm.pages.dev (updates on every push to this branch)"

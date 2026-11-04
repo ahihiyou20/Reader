@@ -19,7 +19,10 @@ export function LangMenu() {
   const setOpen = useUI((s) => s.setLangMenu);
   const first = useRef<HTMLButtonElement>(null);
   useEffect(() => {
-    if (!open) return;
+    if (!open) {
+      first.current?.blur();
+      return;
+    }
     first.current?.focus({ preventScroll: true });
     const key = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
     window.addEventListener('keydown', key);
@@ -28,7 +31,7 @@ export function LangMenu() {
   return (
     <>
       {open && <div className="click-shield" onPointerDown={() => setOpen(false)} />}
-      <div className={`lmenu${open ? ' open' : ''}`} role="menu" aria-label={t('language')} aria-hidden={!open} inert={!open || undefined}>
+      <div className={`lmenu${open ? ' open' : ''}`} role="menu" aria-label={t('language')} aria-hidden={!open}>
         {OPTIONS.map((o, i) => (
           <button
             key={o.lang}

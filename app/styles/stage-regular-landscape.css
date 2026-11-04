@@ -1,0 +1,430 @@
+/* Stage regular-landscape (desktop, laptop, tablet sideways) */
+
+html[data-stage='regular-landscape'] .app {
+  width: 100vw;
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 0;
+}
+
+/* Chrome scaling */
+html[data-stage='regular-landscape'] .topbar {
+  height: 60px;
+  top: calc(var(--sat) + 8px);
+  padding: 0 40px;
+}
+
+html[data-stage='regular-landscape'] .me {
+  max-width: 240px;
+  gap: 8px;
+}
+
+html[data-stage='regular-landscape'] .avatar {
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+}
+
+html[data-stage='regular-landscape'] .uname {
+  font-size: 17px;
+}
+
+html[data-stage='regular-landscape'] .streak {
+  font-size: 18px;
+  gap: 6px;
+}
+
+html[data-stage='regular-landscape'] .tb-ic {
+  width: 44px;
+  height: 44px;
+}
+
+html[data-stage='regular-landscape'] .tb-ic .ic {
+  width: 26px;
+  height: 26px;
+}
+
+html[data-stage='regular-landscape'] .lang {
+  height: 44px;
+  padding: 0 16px 0 18px;
+  font-size: 17px;
+}
+
+/* Dock / BottomNav (centered, 260px tight) */
+html[data-stage='regular-landscape'] .bnav {
+  left: calc(50% - 130px);
+  right: auto;
+  width: 260px;
+  bottom: calc(var(--sab) + 20px);
+  height: 66px;
+}
+
+/* Cover view: full-bleed media within stage; .ctitle at most 55% width; .rail on right; .crow clear of rail */
+html[data-stage='regular-landscape'] .crow {
+  left: 48px;
+  right: auto;
+  width: 55%;
+  max-width: 55%;
+  height: 44px;
+  top: calc(41.8% - 22px);
+}
+
+html[data-stage='regular-landscape'] .gridbtn {
+  width: 44px;
+  height: 44px;
+}
+
+html[data-stage='regular-landscape'] .gridbtn .ic {
+  width: 24px;
+  height: 24px;
+}
+
+html[data-stage='regular-landscape'] .epill {
+  height: 44px;
+  font-size: 17px;
+  padding: 0 18px 0 24px;
+}
+
+html[data-stage='regular-landscape'] .crow .hint {
+  font-size: 15px;
+}
+
+html[data-stage='regular-landscape'] .ctitle {
+  left: 48px;
+  right: auto;
+  width: auto;
+  max-width: 55%;
+  top: calc(41.8% + 44px);
+  font-size: 40px;
+  line-height: 50px;
+}
+
+html[data-stage='regular-landscape'] .rail {
+  right: 36px;
+  bottom: calc(var(--sab) + 110px);
+  gap: 24px;
+}
+
+html[data-stage='regular-landscape'] .cmeta {
+  left: 48px;
+  bottom: calc(var(--sab) + 110px);
+  font-size: 14px;
+}
+
+/* Ambient outside the stage */
+html[data-stage='regular-landscape'] .ambient {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--stage);
+}
+
+html[data-stage='regular-landscape'] .ambient-layer {
+  position: absolute;
+  inset: -15%;
+  width: 130%;
+  height: 130%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(80px) saturate(1.3) brightness(0.65);
+  opacity: 0;
+  transition: opacity var(--dur-decode, 400ms) var(--ease-out);
+}
+
+html[data-stage='regular-landscape'] .ambient-layer.active {
+  opacity: 0.6;
+}
+
+html[data-stage='regular-landscape'] .ambient-dim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(5, 5, 7, 0.75) 100%);
+}
+
+/* Keyboard hint chips */
+html[data-stage='regular-landscape'] .key-hints {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html[data-stage='regular-landscape'] .key-hints {
+    display: flex;
+    position: absolute;
+    left: 48px;
+    bottom: calc(var(--sab) + 24px);
+    z-index: 25;
+    pointer-events: none;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 440px;
+  }
+}
+
+html[data-stage='regular-landscape'] .key-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px 4px 6px;
+  border-radius: 6px;
+  background: rgba(18, 18, 24, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
+  font: 500 12px var(--font-sans);
+  color: var(--fg2);
+}
+
+html[data-stage='regular-landscape'] .key-cap {
+  display: inline-grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font: 700 11px/18px var(--font-sans);
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+html[data-stage='regular-landscape'] .key-text {
+  font-size: 12px;
+  line-height: 1;
+}
+
+/* Details view (split stage) */
+html[data-stage='regular-landscape'] .dhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 38%;
+  height: auto;
+  pointer-events: none;
+  z-index: 5;
+}
+
+html[data-stage='regular-landscape'] [data-region='details-head'] {
+  position: absolute !important;
+  left: 48px !important;
+  right: 24px !important;
+  top: calc(var(--sat) + 84px) !important;
+  height: 340px !important;
+  pointer-events: none;
+}
+
+html[data-stage='regular-landscape'] .dhead .prow {
+  left: 48px;
+  right: 24px;
+  top: calc(var(--sat) + 84px);
+  transform: none !important;
+}
+
+html[data-stage='regular-landscape'] .dpill {
+  height: 44px;
+  padding: 0 28px;
+  font-size: 16px;
+}
+
+html[data-stage='regular-landscape'] .dhead .hint {
+  font-size: 15px;
+}
+
+html[data-stage='regular-landscape'] .dhead .btitle {
+  left: 48px;
+  right: 24px;
+  top: calc(var(--sat) + 148px);
+  font-size: 32px;
+  line-height: 40px;
+  -webkit-line-clamp: 4;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+html[data-stage='regular-landscape'] .dhead .stitle {
+  display: none !important;
+}
+
+html[data-stage='regular-landscape'] .dhead .arow {
+  left: 48px;
+  top: calc(var(--sat) + 360px);
+  gap: 24px;
+  transform: none !important;
+}
+
+/* Details reading column on the right 62% */
+html[data-stage='regular-landscape'] .dscroll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 38%;
+  right: 0;
+  width: 62%;
+  overflow-y: auto;
+  padding: calc(var(--sat) + 84px) 48px 180px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0px,
+    #000 64px,
+    #000 calc(100% - 170px),
+    transparent calc(100% - 40px)
+  );
+  mask-image: linear-gradient(
+    180deg,
+    transparent 0px,
+    #000 64px,
+    #000 calc(100% - 170px),
+    transparent calc(100% - 40px)
+  );
+}
+
+html[data-stage='regular-landscape'] .sec {
+  max-width: 64ch;
+  width: 100%;
+}
+
+html[data-stage='regular-landscape'] .sec p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+html[data-stage='regular-landscape'] .sec.hook p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* Details footer at the foot of the right column */
+html[data-stage='regular-landscape'] .dfoot {
+  left: 38%;
+  right: 0;
+  bottom: calc(var(--sab) + 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+html[data-stage='regular-landscape'] .nextbtn {
+  width: 52px;
+  height: 52px;
+}
+
+/* Engage view (split stage: Apply on left 38%, comments + composer on right 62%) */
+html[data-stage='regular-landscape'] .escroll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+html[data-stage='regular-landscape'] .eleft {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 38%;
+  overflow-y: auto;
+  padding: calc(var(--sat) + 84px) 24px calc(var(--sab) + 40px) 48px;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+html[data-stage='regular-landscape'] .eleft::-webkit-scrollbar {
+  display: none;
+}
+
+html[data-stage='regular-landscape'] .apply {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+html[data-stage='regular-landscape'] .step {
+  min-height: 48px;
+  padding: 12px 0;
+  margin-bottom: 6px;
+}
+
+html[data-stage='regular-landscape'] .eright {
+  position: absolute;
+  top: 0;
+  bottom: calc(var(--sab) + 120px);
+  left: 38%;
+  right: 0;
+  width: 62%;
+  overflow-y: auto;
+  padding: calc(var(--sat) + 84px) 48px 24px 28px;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0px,
+    #000 32px,
+    #000 calc(100% - 32px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    180deg,
+    transparent 0px,
+    #000 32px,
+    #000 calc(100% - 32px),
+    transparent 100%
+  );
+}
+
+html[data-stage='regular-landscape'] .eright::-webkit-scrollbar {
+  display: none;
+}
+
+html[data-stage='regular-landscape'] .chead {
+  margin-top: 0;
+  max-width: 64ch;
+}
+
+html[data-stage='regular-landscape'] .clist,
+html[data-stage='regular-landscape'] .cempty {
+  max-width: 64ch;
+  width: 100%;
+}
+
+html[data-stage='regular-landscape'] .ebottom {
+  position: absolute;
+  left: calc(38% + 28px);
+  width: calc(62% - 76px);
+  max-width: 64ch;
+  bottom: calc(var(--sab) + 20px);
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+html[data-stage='regular-landscape'] .ebottom .cform {
+  flex: 1;
+  min-width: 0;
+}
+
+html[data-stage='regular-landscape'] .ebottom .ctarow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex: none;
+}

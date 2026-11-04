@@ -28,10 +28,12 @@ jobs:
         run: pnpm test:rules
       - name: Build
         run: pnpm build
-      - name: End-to-end (Playwright, iPhone viewport)
+      # Frame timing needs a GPU; hosted runners have none, so it is measured on real hardware
+      # (tests/qa/edge-perf.mjs) instead.
+      - name: End-to-end (Playwright)
         run: |
           pnpm exec playwright install --with-deps chromium
-          pnpm test:e2e
+          pnpm test:e2e --grep-invert "frame intervals p95"
       - uses: actions/upload-artifact@v4
         if: failure()
         with: { name: playwright-report, path: playwright-report, retention-days: 7 }

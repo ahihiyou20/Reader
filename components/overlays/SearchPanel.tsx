@@ -5,6 +5,7 @@ import type { FeedItem } from '@/lib/content/types';
 import { loadSearch, useFeed, useTerms } from '@/lib/data';
 import { track } from '@/lib/analytics';
 import { pick } from '@/lib/i18n';
+import { prefersReducedMotion } from '@/lib/motion';
 import { markMatches } from '@/lib/search';
 import { useUI } from '@/stores/ui';
 import { useCategoryName } from '../feed/CoverView';
@@ -38,8 +39,48 @@ export function SearchPanel() {
   const dq = useDebounced(q.trim(), 250);
   const [recent, setRecent] = useState<string[]>([]);
   const [hits, setHits] = useState<FeedItem[] | null>(null);
+  const [staggerCount, setStaggerCount] = useState(0);
   const input = useRef<HTMLInputElement>(null);
   const bySlug = useMemo(() => new Map((feed?.items ?? []).map((i) => [i.slug, i])), [feed]);
+
+  useEffect(() => {
+    if (!hits || !hits.length) {
+      setStaggerCount(0);
+      return;
+    }
+    if (prefersReducedMotion()) {
+      setStaggerCount(hits.length);
+      return;
+    }
+    let rafId: number;
+    let active = true;
+    let lastTime = 0;
+    let count = 0;
+
+    const loop = (now: number) => {
+      if (!active) return;
+      if (!lastTime) {
+        lastTime = now;
+        count = 1;
+        setStaggerCount(1);
+      } else if (now - lastTime >= 40) {
+        lastTime = now;
+        count++;
+        setStaggerCount(count);
+        if (count >= hits.length) return;
+      }
+      rafId = requestAnimationFrame(loop);
+    };
+
+    rafId = requestAnimationFrame(loop);
+
+    return () => {
+      active = false;
+      cancelAnimationFrame(rafId);
+    };
+  }, [hits]);
+
+  const visibleHits = hits && staggerCount > 0 ? hits.slice(0, staggerCount) : [];
 
   useEffect(() => {
     if (!open) return;
@@ -186,7 +227,7 @@ export function SearchPanel() {
               <>
                 <div className="label">{t('results', { n: hits.length })}</div>
                 <div className="rlist">
-                  {hits.map((i) => (
+                  {visibleHits.map((i) => (
                     <ResultItem key={i.slug} item={i} q={dq} onOpen={() => openItem(i)} />
                   ))}
                 </div>

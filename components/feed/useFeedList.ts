@@ -27,9 +27,23 @@ export function useFeedList(override?: FeedItem[]): FeedItem[] | undefined {
     let items = data.items;
     if (category) items = items.filter((i) => i.category === category);
     const progress = useUser.getState().progress;
-    items = [...items.filter((i) => !progress[i.slug]?.completed), ...items.filter((i) => progress[i.slug]?.completed)];
+    if (Object.keys(progress).length > 0) {
+      const uncompleted: FeedItem[] = [];
+      const completed: FeedItem[] = [];
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        if (progress[item.slug]?.completed) {
+          completed.push(item);
+        } else {
+          uncompleted.push(item);
+        }
+      }
+      if (completed.length > 0) {
+        items = [...uncompleted, ...completed];
+      }
+    }
     const start = startSlug ?? first.current;
-    if (start) {
+    if (start && items[0]?.slug !== start) {
       const it = data.items.find((i) => i.slug === start);
       if (it) items = [it, ...items.filter((i) => i.slug !== start)];
     }

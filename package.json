@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "CONTENT_DEV=1 tsx scripts/build-content.ts && next dev",
     "content": "tsx scripts/build-content.ts",
-    "build": "pnpm content && next build && tsx scripts/build-sw.ts",
+    "build": "pnpm content && node scripts/covers.mjs && next build && tsx scripts/build-sw.ts",
     "start": "node scripts/serve.mjs out",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",

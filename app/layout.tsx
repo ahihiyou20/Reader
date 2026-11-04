@@ -1,8 +1,12 @@
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
+import { stageScript } from '@/lib/stage';
 import { env } from '@/lib/env';
 import './globals.css';
+import './styles/stage-compact-landscape.css';
+import './styles/stage-regular-portrait.css';
+import './styles/stage-regular-landscape.css';
 
 const inter = Inter({
   subsets: ['latin', 'vietnamese'],
@@ -45,6 +49,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: stageScript }} />
+        <link rel="preconnect" href="https://picsum.photos" />
+        <link rel="preconnect" href="https://fastly.picsum.photos" />
         <link rel="preload" href="/data/feed.json" as="fetch" crossOrigin="anonymous" />
         <link rel="preload" href="/data/categories.json" as="fetch" crossOrigin="anonymous" />
       </head>

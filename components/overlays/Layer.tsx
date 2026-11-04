@@ -122,14 +122,18 @@ export function Panel({
     if (!mounted) return;
     const w = width();
     if (open) {
-      if (x.get() > w) x.set(w);
-      if (prefersReducedMotion()) x.set(0);
-      else animate(x, 0, spring.default);
+      if (prefersReducedMotion()) {
+        x.set(0);
+      } else {
+        if (x.get() > w) x.set(w);
+        animate(x, 0, spring.default);
+      }
     } else {
       if (prefersReducedMotion()) {
-        x.set(w);
         unmount();
-      } else animate(x, w, { ...spring.default, onComplete: unmount });
+      } else {
+        animate(x, w, { ...spring.default, onComplete: unmount });
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, mounted]);
@@ -199,6 +203,33 @@ export function Sheet({ open, onClose, label, children }: { open: boolean; onClo
 
   useEffect(() => {
     if (!mounted) return;
+    const feed = document.querySelector<HTMLElement>('.feed');
+    const sheet = ref.current;
+    const h = Math.max(1, height());
+
+    const update = (currY: number) => {
+      const progress = clamp(1 - currY / h, 0, 1);
+      const s = 0.98 + 0.02 * progress;
+      if (sheet) {
+        sheet.style.transform = currY === 0 && Math.abs(s - 1) < 0.001 ? '' : `translate3d(0, ${currY}px, 0) scale(${s})`;
+      }
+      if (feed) {
+        const fs = 1 - 0.04 * progress;
+        feed.style.transform = Math.abs(fs - 1) < 0.001 ? '' : `scale(${fs})`;
+      }
+    };
+
+    update(y.get());
+    const off = y.on('change', update);
+
+    return () => {
+      off();
+      if (feed) feed.style.transform = '';
+    };
+  }, [mounted, y]);
+
+  useEffect(() => {
+    if (!mounted) return;
     const h = height();
     if (open) {
       if (y.get() > h) y.set(h);
@@ -248,14 +279,22 @@ export function Sheet({ open, onClose, label, children }: { open: boolean; onClo
   return (
     <>
       <MDiv className="backdrop" style={{ opacity: backdrop }} onClick={onClose} aria-hidden="true" />
-      <MDiv ref={setRef} className="sheet" style={{ y }} role="dialog" aria-modal="true" aria-label={label} inert={!open || undefined}>
+      <div
+        ref={setRef}
+        className="sheet"
+        role="dialog"
+        aria-modal="true"
+        aria-label={label}
+        inert={!open || undefined}
+        style={{ willChange: 'transform' }}
+      >
         <div className="sgrab" aria-hidden="true">
           <i />
         </div>
         <div className="sbody" ref={body}>
           {children}
         </div>
-      </MDiv>
+      </div>
     </>
   );
 }

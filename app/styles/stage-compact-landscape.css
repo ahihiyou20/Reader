@@ -1,0 +1,429 @@
+/* Stage: compact-landscape (w >= h, h < 560).
+   All rules scoped under html[data-stage='compact-landscape'].
+   Split stage per ARCHITECTURE.md §1:
+   - Full width stage (.app).
+   - TopBar 44px tall.
+   - BottomNav becomes a vertical glass dock on the left edge inside safe-area-left.
+   - Action rail on the right edge inside safe-area-right.
+   - Cover: title and row bottom-left within 55% width, clear of dock and rail.
+   - Details: split stage, left 38% holds sticky dhead (pill, title, actions),
+     right 62% is reading column (dscroll) with top/bottom mask and dfoot.
+   - Engage: split stage, Apply steps on left, comments & composer on right.
+*/
+
+/* Shell */
+html[data-stage='compact-landscape'] .app {
+  width: 100vw;
+  left: 0;
+  margin-left: 0;
+  max-width: none;
+  box-shadow: none;
+}
+
+/* Chrome: TopBar */
+html[data-stage='compact-landscape'] .topbar {
+  top: 0;
+  height: 44px;
+  padding: 0 calc(env(safe-area-inset-right, 0px) + 16px) 0 calc(env(safe-area-inset-left, 0px) + 16px);
+  box-sizing: border-box;
+}
+
+/* Chrome: BottomNav (Dock) */
+html[data-stage='compact-landscape'] .bnav {
+  position: absolute;
+  left: env(safe-area-inset-left, 0px);
+  right: auto;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  width: 56px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-radius: 28px;
+  background: rgba(22, 22, 26, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
+  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
+  pointer-events: auto;
+  z-index: 30;
+  box-sizing: border-box;
+}
+
+html[data-stage='compact-landscape'] .bnav .plusw {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  inset: auto !important;
+  margin: 0 !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: none !important;
+  transform: none !important;
+}
+
+html[data-stage='compact-landscape'] .bnav .nb,
+html[data-stage='compact-landscape'] .bnav .nb.side,
+html[data-stage='compact-landscape'] .bnav .nb.search,
+html[data-stage='compact-landscape'] .bnav .nb.chat,
+html[data-stage='compact-landscape'] .bnav .nb.plus {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  inset: auto !important;
+  margin: 0 !important;
+  width: 44px !important;
+  height: 44px !important;
+  flex: none !important;
+}
+
+html[data-stage='compact-landscape'] .bnav .nb.side {
+  background: transparent;
+  border: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+/* Hide dock when viewing Engage (Comments & Apply) */
+html[data-stage='compact-landscape'] .app[data-engage='true'] .bnav {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+  transform: translateY(-50%) translateX(-120px) !important;
+}
+
+/* Cover View: Rail */
+html[data-stage='compact-landscape'] .rail {
+  position: absolute;
+  right: calc(env(safe-area-inset-right, 0px) + 8px);
+  left: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 20;
+}
+
+/* Cover View: Row & Title */
+html[data-stage='compact-landscape'] .crow {
+  position: absolute;
+  left: calc(env(safe-area-inset-left, 0px) + 64px);
+  right: auto;
+  top: auto;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 100px);
+  max-width: 55%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+html[data-stage='compact-landscape'] .crow .epill {
+  margin-left: 0;
+  height: 38px;
+  font-size: 15px;
+}
+
+html[data-stage='compact-landscape'] .ctitle {
+  position: absolute;
+  left: calc(env(safe-area-inset-left, 0px) + 64px);
+  right: auto;
+  top: auto;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 20px);
+  width: auto;
+  max-width: 55%;
+  font-size: 22px;
+  line-height: 28px;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+html[data-stage='compact-landscape'] .cmeta {
+  left: calc(env(safe-area-inset-left, 0px) + 64px);
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 148px);
+}
+
+/* Key hints and ambient glow are only for regular-landscape */
+html[data-stage='compact-landscape'] .key-hints,
+html[data-stage='compact-landscape'] [data-region='key-hints'],
+html[data-stage='compact-landscape'] [data-region='ambient'] {
+  display: none !important;
+}
+
+/* Details View: Split stage */
+html[data-stage='compact-landscape'] .dhead {
+  position: absolute;
+  left: calc(env(safe-area-inset-left, 0px) + 56px);
+  width: calc(38% - env(safe-area-inset-left, 0px) - 56px);
+  max-width: calc(38% - env(safe-area-inset-left, 0px) - 56px);
+  top: 44px;
+  height: calc(100% - 44px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 16px 12px 16px 16px;
+  box-sizing: border-box;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+html[data-stage='compact-landscape'] [data-region='details-head'] {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none !important;
+}
+
+html[data-stage='compact-landscape'] .dhead .prow {
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  transform: none !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+html[data-stage='compact-landscape'] .dhead .dpill {
+  height: 32px;
+  padding: 0 16px;
+  font-size: 14px;
+  flex: none;
+}
+
+html[data-stage='compact-landscape'] .dhead .prow .hint {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  color: transparent !important;
+  padding: 0;
+  min-width: 36px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  flex: none;
+}
+
+html[data-stage='compact-landscape'] .dhead .prow .hint .ic {
+  width: 20px;
+  height: 20px;
+  color: var(--fg2);
+  flex: none;
+}
+
+html[data-stage='compact-landscape'] .dhead .btitle {
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  width: 100% !important;
+  margin: 0 !important;
+  transform: none !important;
+  opacity: 1 !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  font-size: clamp(13px, 2.2vw, 17px) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.015em !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  box-sizing: border-box;
+}
+
+html[data-stage='compact-landscape'] .dhead .stitle {
+  display: none !important;
+}
+
+html[data-stage='compact-landscape'] .dhead .arow {
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  transform: none !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  display: flex !important;
+  gap: 8px !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box;
+}
+
+html[data-stage='compact-landscape'] .dscroll {
+  position: absolute;
+  left: 38%;
+  right: auto;
+  top: 44px;
+  width: 62%;
+  height: calc(100% - 44px);
+  padding: 20px 24px 24px;
+  box-sizing: border-box;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 20px, #000 calc(100% - 40px), transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 20px, #000 calc(100% - 40px), transparent);
+}
+
+html[data-stage='compact-landscape'] .dfoot {
+  position: absolute;
+  left: 38%;
+  width: 62%;
+  right: auto;
+  bottom: calc(var(--sab) + 8px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* Details: Typography (Body text >= 16px) */
+html[data-stage='compact-landscape'] .sec p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Engage View: Split stage */
+html[data-stage='compact-landscape'] .escroll {
+  position: absolute;
+  top: 44px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+html[data-stage='compact-landscape'] .eleft {
+  position: absolute;
+  left: calc(env(safe-area-inset-left, 0px) + 16px);
+  top: 0;
+  bottom: 0;
+  width: calc(38% - env(safe-area-inset-left, 0px) - 20px);
+  overflow-y: auto;
+  padding: 12px 0 calc(var(--sab) + 24px);
+  box-sizing: border-box;
+}
+
+html[data-stage='compact-landscape'] .apply {
+  padding: 12px 14px 10px;
+  border-radius: 16px;
+}
+
+html[data-stage='compact-landscape'] .apply h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 2px;
+}
+
+html[data-stage='compact-landscape'] .asub {
+  font-size: 12.5px;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+html[data-stage='compact-landscape'] .step {
+  min-height: 44px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4px 0;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+html[data-stage='compact-landscape'] .eright {
+  position: absolute;
+  left: 38%;
+  right: calc(env(safe-area-inset-right, 0px) + 16px);
+  top: 0;
+  bottom: 58px;
+  overflow-y: auto;
+  padding: 12px 0 16px;
+  box-sizing: border-box;
+}
+
+html[data-stage='compact-landscape'] .eright .chead {
+  margin-top: 0;
+}
+
+html[data-stage='compact-landscape'] .ebottom {
+  position: absolute;
+  left: 38%;
+  right: calc(env(safe-area-inset-right, 0px) + 16px);
+  bottom: calc(var(--sab) + 8px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+html[data-stage='compact-landscape'] .ebottom .cform {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+}
+
+html[data-stage='compact-landscape'] .ebottom .cin {
+  font-size: 13.5px;
+  padding: 0 42px 0 14px;
+  text-align: left;
+}
+
+html[data-stage='compact-landscape'] .ebottom .cin::placeholder {
+  font-size: 13.5px;
+}
+
+html[data-stage='compact-landscape'] .ebottom .csend {
+  width: 34px;
+  height: 34px;
+  top: 4px;
+  right: 4px;
+}
+
+html[data-stage='compact-landscape'] .ebottom .ctarow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: none;
+}
+
+html[data-stage='compact-landscape'] .ebottom .cta {
+  height: 42px;
+  padding: 0 10px;
+  font-size: 12.5px;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+html[data-stage='compact-landscape'] .ebottom .ctaside {
+  width: 24px;
+  height: 42px;
+}

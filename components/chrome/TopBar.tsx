@@ -1,10 +1,13 @@
 'use client';
 import { BellRing, ChevronDown, Compass, UserRound } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import { animate } from 'framer-motion';
+import { CountRoll } from '@/components/ui/CountRoll';
 import { displayStreak, localDate } from '@/lib/streak';
-import { prefersReducedMotion } from '@/lib/motion';
+import { prefersReducedMotion, spring } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
+import { preloadExplore, preloadProfile, preloadSheets, preloadSocial } from '../overlays/preload';
 import { useT } from '../hooks';
 import { Avatar } from './Avatar';
 
@@ -19,11 +22,23 @@ export function TopBar() {
   const signedIn = !!user && !user.isAnonymous;
 
   return (
-    <header className="topbar">
+    <header className="topbar" data-region="topbar" style={{ viewTransitionName: 'top-bar' }}>
       <button
         className="me"
         type="button"
         onClick={() => (signedIn ? openOverlay('profile') : useUI.getState().openSheet({ kind: 'login', reason: 'generic' }))}
+        onPointerDown={() => {
+          preloadProfile();
+          preloadSheets();
+        }}
+        onMouseEnter={() => {
+          preloadProfile();
+          preloadSheets();
+        }}
+        onFocus={() => {
+          preloadProfile();
+          preloadSheets();
+        }}
         aria-label={signedIn ? t('profile') : t('signIn')}
       >
         {signedIn ? (
@@ -35,11 +50,30 @@ export function TopBar() {
         )}
         <span className="uname">{signedIn ? name : t('signIn')}</span>
       </button>
-      <StreakBadge onPress={() => openOverlay('profile')} />
-      <button className="tb-ic bell" type="button" aria-label={t('notifications')} onClick={() => openOverlay('notifications')}>
+      <StreakBadge
+        onPress={() => openOverlay('profile')}
+        onPreload={preloadProfile}
+      />
+      <button
+        className="tb-ic bell"
+        type="button"
+        aria-label={t('notifications')}
+        onClick={() => openOverlay('notifications')}
+        onPointerDown={preloadSocial}
+        onMouseEnter={preloadSocial}
+        onFocus={preloadSocial}
+      >
         <BellRing className="ic" aria-hidden="true" />
       </button>
-      <button className="tb-ic" type="button" aria-label={t('explore')} onClick={() => openOverlay('explore')}>
+      <button
+        className="tb-ic"
+        type="button"
+        aria-label={t('explore')}
+        onClick={() => openOverlay('explore')}
+        onPointerDown={preloadExplore}
+        onMouseEnter={preloadExplore}
+        onFocus={preloadExplore}
+      >
         <Compass className="ic" aria-hidden="true" />
       </button>
       <button
@@ -47,7 +81,7 @@ export function TopBar() {
         type="button"
         aria-haspopup="menu"
         aria-expanded={langMenu}
-        aria-label={t('language')}
+        aria-label={`${t('language')}, ${lang}`}
         onClick={() => setLangMenu(!langMenu)}
       >
         <span>{lang}</span>
@@ -58,41 +92,40 @@ export function TopBar() {
 }
 
 /** CMP-02: 🔥 + count; grey until today's reading is done; pops when the streak grows. */
-function StreakBadge({ onPress }: { onPress: () => void }) {
+function StreakBadge({ onPress, onPreload }: { onPress: () => void; onPreload?: () => void }) {
   const t = useT();
   const streak = useUser((s) => s.streak);
   const bump = useUser((s) => s.streakBump);
   const { value, readToday } = displayStreak(streak, localDate());
   const fire = useRef<HTMLSpanElement>(null);
-  const num = useRef<HTMLSpanElement>(null);
   const first = useRef(true);
+
   useEffect(() => {
     if (first.current) {
       first.current = false;
       return;
     }
     if (prefersReducedMotion()) return;
-    fire.current?.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.35)' }, { transform: 'scale(1)' }], {
-      duration: 420,
-      easing: 'cubic-bezier(.34,1.56,.64,1)',
-    });
-    num.current?.animate([{ transform: 'translateY(100%)' }, { transform: 'translateY(0)' }], {
-      duration: 300,
-      easing: 'cubic-bezier(.23,1,.32,1)',
-    });
+    if (fire.current) {
+      animate(fire.current, { scale: [1, 1.35, 1] }, spring.pop);
+    }
   }, [bump]);
+
   return (
     <button
       className={`streak${readToday ? '' : ' pending'}`}
       type="button"
       onClick={onPress}
+      onPointerDown={onPreload}
+      onMouseEnter={onPreload}
+      onFocus={onPreload}
       aria-label={`${t('streakAria', { n: value })}${readToday ? '' : `. ${t('streakPending')}`}`}
     >
       <span className="fire" ref={fire} aria-hidden="true">
         🔥
       </span>
       <span className="snum" aria-hidden="true">
-        <span ref={num}>{value}</span>
+        <CountRoll value={value} />
       </span>
     </button>
   );

@@ -1,11 +1,12 @@
 'use client';
 import { Bookmark, Heart, MessageCircle, Send } from 'lucide-react';
-import { useRef } from 'react';
-import { formatCount } from '@/lib/format';
-import { prefersReducedMotion } from '@/lib/motion';
+import { useEffect, useRef } from 'react';
+import { CountRoll } from '@/components/ui/CountRoll';
+import { tap } from '@/lib/haptics';
+import { dur, prefersReducedMotion, spring } from '@/lib/motion';
+import { animate, useMotionValue } from 'framer-motion';
 
 const ICONS = { like: Heart, save: Bookmark, share: Send, comment: MessageCircle };
-const FILLED = new Set(['like', 'save', 'comment']);
 
 export function ActionButton({
   kind,
@@ -24,19 +25,51 @@ export function ActionButton({
 }) {
   const Icon = ICONS[kind];
   const ref = useRef<HTMLButtonElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+  const fillSvgRef = useRef<SVGSVGElement>(null);
+  const scale = useMotionValue(1);
+
+  useEffect(() => {
+    return scale.on('change', (s) => {
+      const transform = s === 1 ? '' : `scale(${s})`;
+      if (svgRef.current) svgRef.current.style.transform = transform;
+      if (fillSvgRef.current) fillSvgRef.current.style.transform = transform;
+    });
+  }, [scale]);
+
   const press = () => {
-    const el = ref.current?.firstElementChild as HTMLElement | null;
-    if (el && !prefersReducedMotion()) {
-      if (kind === 'like' && !on)
-        el.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.22)' }, { transform: 'scale(1)' }], {
-          duration: 340,
-          easing: 'cubic-bezier(.34,1.56,.64,1)',
-        });
-      if (kind === 'save' && !on)
-        el.animate([{ transform: 'translateY(-3px)' }, { transform: 'none' }], { duration: 150, easing: 'cubic-bezier(.23,1,.32,1)' });
+    if (kind === 'like' || kind === 'save') {
+      tap();
+      if (!prefersReducedMotion()) {
+        if (scale.get() > 1.02) {
+          animate(scale, 1, spring.pop);
+        } else {
+          animate(scale, 1.06, {
+            ...spring.pop,
+            onComplete: () => {
+              animate(scale, 1, spring.pop);
+            },
+          });
+        }
+      }
     }
     onPress();
   };
+
+  const reduced = prefersReducedMotion();
+  const fillStyle =
+    kind === 'like'
+      ? {
+          clipPath: on ? 'circle(100% at 50% 50%)' : 'circle(0% at 50% 50%)',
+          transition: reduced ? 'none' : `clip-path ${dur.fill}ms cubic-bezier(0.16, 1, 0.3, 1)`,
+        }
+      : kind === 'save'
+        ? {
+            clipPath: on ? 'inset(0 0 0% 0)' : 'inset(0 0 100% 0)',
+            transition: reduced ? 'none' : `clip-path ${dur.fill}ms cubic-bezier(0.16, 1, 0.3, 1)`,
+          }
+        : undefined;
+
   return (
     <div className={`act ${size} ${kind}${on ? ' on' : ''}`}>
       <button
@@ -47,10 +80,31 @@ export function ActionButton({
         aria-pressed={kind === 'like' || kind === 'save' ? Boolean(on) : undefined}
         onClick={press}
       >
-        <Icon className={`ic${FILLED.has(kind) ? ' fill' : ''}`} strokeWidth={kind === 'share' ? 1.7 : 2} aria-hidden="true" />
+        <span style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Icon
+            ref={svgRef}
+            className={`ic${kind === 'comment' ? ' fill' : ''}`}
+            strokeWidth={kind === 'share' ? 1.7 : 2}
+            aria-hidden="true"
+          />
+          {(kind === 'like' || kind === 'save') && (
+            <Icon
+              ref={fillSvgRef}
+              className="ic fill"
+              strokeWidth={2}
+              aria-hidden="true"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                pointerEvents: 'none',
+                ...fillStyle,
+              }}
+            />
+          )}
+        </span>
       </button>
       <span className="n" aria-hidden="true">
-        {formatCount(count)}
+        <CountRoll value={count} />
       </span>
     </div>
   );

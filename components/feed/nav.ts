@@ -2,35 +2,27 @@
 // Imperative navigation shared by the feed gestures, buttons and keyboard (docs/02 §5).
 // Offsets live in motion values, never in React state, so dragging does not re-render.
 import { animate, motionValue, type MotionValue } from 'framer-motion';
-import { startTransition } from 'react';
 import { clamp, prefersReducedMotion, springFor } from '@/lib/motion';
 import { useUI, type View } from '@/stores/ui';
 
 export const layout = { w: 390, h: 844, total: 1 };
-export const feedY = motionValue(0);
+export const feedP = motionValue(0);
 /** 0 = cover, 1 = details, 2 = comments & apply, for the active article (drives the chrome). */
 export const chromeP = motionValue(0);
 
-const xs = new Map<string, MotionValue<number>>();
-export function viewX(slug: string): MotionValue<number> {
-  let x = xs.get(slug);
-  if (!x) {
-    x = motionValue(-(useUI.getState().views[slug] ?? 0) * layout.w);
-    xs.set(slug, x);
+const ps = new Map<string, MotionValue<number>>();
+export function viewP(slug: string): MotionValue<number> {
+  let p = ps.get(slug);
+  if (!p) {
+    p = motionValue<number>(useUI.getState().views[slug] ?? 0);
+    ps.set(slug, p);
   }
-  return x;
+  return p;
 }
 
 export function relayout(w: number, h: number) {
   layout.w = w;
   layout.h = h;
-  const { index, views } = useUI.getState();
-  feedY.stop();
-  feedY.set(-index * h);
-  for (const [slug, x] of xs) {
-    x.stop();
-    x.set(-(views[slug] ?? 0) * w);
-  }
 }
 
 const fadeEls = new Map<string, HTMLElement>();
@@ -42,39 +34,76 @@ function fade(key: string) {
   fadeEls.get(key)?.animate([{ opacity: 0.35 }, { opacity: 1 }], { duration: 150, easing: 'ease-out' });
 }
 
+// Gestures settle on a spring that runs on the main thread. The store (index, view) changes only once
+// the spring has landed: committing it at release mounts the next article mid-slide, which blocks the
+// main thread for 100 ms or more on phones and makes the slide stall, then jump (seen in iOS Safari).
+// While a slide is in flight, gestures read the target from targetArticle() / targetView().
+let inFlightTarget: number | null = null;
+export function targetArticle(): number {
+  return inFlightTarget ?? useUI.getState().index;
+}
+
+/** A new touch interrupts the slide: commit its target now so the pages around it are mounted. */
+export function commitInFlight() {
+  if (inFlightTarget === null) return;
+  const t = inFlightTarget;
+  inFlightTarget = null;
+  useUI.getState().setIndex(t);
+}
+
+const viewTargets = new Map<string, View>();
+export function targetView(slug: string): View {
+  return viewTargets.get(slug) ?? useUI.getState().views[slug] ?? 0;
+}
+
 export function goToArticle(target: number, velocity = 0, instant = false) {
   const ui = useUI.getState();
   const t = clamp(target, 0, Math.max(0, layout.total - 1));
   const changed = t !== ui.index;
-  if (changed) startTransition(() => useUI.getState().setIndex(t));
+  const velocityInPages = -velocity / Math.max(1, layout.h);
   if (instant || prefersReducedMotion()) {
-    feedY.stop();
-    feedY.set(-t * layout.h);
+    inFlightTarget = null;
+    feedP.stop();
+    feedP.set(t);
+    if (changed) ui.setIndex(t);
     if (changed && !instant) fade('feed');
     return;
   }
-  animate(feedY, -t * layout.h, springFor(velocity));
+  inFlightTarget = t;
+  animate(feedP, t, { ...springFor(velocity), velocity: velocityInPages }).then(() => {
+    if (inFlightTarget !== t) return;
+    inFlightTarget = null;
+    useUI.getState().setIndex(t);
+  });
 }
 
 export function setArticleView(slug: string, target: number, velocity = 0, instant = false) {
   const t = clamp(target, 0, 2) as View;
-  const x = viewX(slug);
+  const p = viewP(slug);
   const changed = t !== (useUI.getState().views[slug] ?? 0);
-  useUI.getState().setView(slug, t);
+  const velocityInPages = -velocity / Math.max(1, layout.w);
   if (instant || prefersReducedMotion()) {
-    x.stop();
-    x.set(-t * layout.w);
+    viewTargets.delete(slug);
+    p.stop();
+    p.set(t);
+    useUI.getState().setView(slug, t);
     if (changed && !instant) fade(slug);
     return;
   }
-  animate(x, -t * layout.w, springFor(velocity));
+  viewTargets.set(slug, t);
+  animate(p, t, { ...springFor(velocity), velocity: velocityInPages }).then(() => {
+    if (viewTargets.get(slug) !== t) return;
+    viewTargets.delete(slug);
+    useUI.getState().setView(slug, t);
+  });
 }
 
-export function activeSlug(): string | undefined {
-  return currentItems[useUI.getState().index];
+let currentItems: readonly { slug: string }[] | string[] = [];
+export function setFeedSlugs(items: string[] | readonly { slug: string }[]) {
+  currentItems = items;
+  layout.total = items.length + 1; // + end card
 }
-let currentItems: string[] = [];
-export function setFeedSlugs(slugs: string[]) {
-  currentItems = slugs;
-  layout.total = slugs.length + 1; // + end card
+export function activeSlug(): string | undefined {
+  const item = currentItems[useUI.getState().index];
+  return typeof item === 'string' ? item : item?.slug;
 }

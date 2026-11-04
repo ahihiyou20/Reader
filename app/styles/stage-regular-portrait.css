@@ -1,0 +1,233 @@
+/* Stage regular-portrait (tablet upright, e.g. 820x1180) */
+
+html[data-stage='regular-portrait'] .app {
+  width: 100vw;
+  max-width: none;
+  left: 0;
+  margin-left: 0;
+  transform: none;
+}
+
+/* Chrome scaling */
+html[data-stage='regular-portrait'] .topbar {
+  height: 60px;
+  top: calc(var(--sat) + 8px);
+  padding: 0 28px 0 24px;
+}
+
+html[data-stage='regular-portrait'] .me {
+  max-width: 220px;
+  gap: 8px;
+}
+
+html[data-stage='regular-portrait'] .avatar {
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+}
+
+html[data-stage='regular-portrait'] .uname {
+  font-size: 17px;
+}
+
+html[data-stage='regular-portrait'] .streak {
+  font-size: 18px;
+  gap: 6px;
+}
+
+html[data-stage='regular-portrait'] .tb-ic {
+  width: 44px;
+  height: 44px;
+}
+
+html[data-stage='regular-portrait'] .tb-ic .ic {
+  width: 26px;
+  height: 26px;
+}
+
+html[data-stage='regular-portrait'] .lang {
+  height: 44px;
+  padding: 0 16px 0 18px;
+  font-size: 17px;
+}
+
+/* Dock / BottomNav */
+html[data-stage='regular-portrait'] .bnav {
+  left: calc(50% - 130px);
+  right: auto;
+  width: 260px;
+  bottom: calc(var(--sab) + 16px);
+  height: 66px;
+}
+
+/* Cover view */
+html[data-stage='regular-portrait'] .ctitle {
+  left: 32px;
+  max-width: 560px;
+  width: calc(100% - 120px);
+  font-size: 38px;
+  line-height: 48px;
+  top: calc(41.8% + 44px);
+}
+
+html[data-stage='regular-portrait'] .crow {
+  left: 32px;
+  right: 88px;
+  height: 44px;
+  top: calc(41.8% - 22px);
+}
+
+html[data-stage='regular-portrait'] .gridbtn {
+  width: 44px;
+  height: 44px;
+}
+
+html[data-stage='regular-portrait'] .gridbtn .ic {
+  width: 24px;
+  height: 24px;
+}
+
+html[data-stage='regular-portrait'] .epill {
+  height: 44px;
+  font-size: 17px;
+  padding: 0 18px 0 24px;
+}
+
+html[data-stage='regular-portrait'] .crow .hint {
+  font-size: 15px;
+}
+
+html[data-stage='regular-portrait'] .rail {
+  right: 28px;
+  bottom: calc(var(--sab) + 110px);
+  gap: 22px;
+}
+
+html[data-stage='regular-portrait'] .cmeta {
+  left: 32px;
+  bottom: calc(var(--sab) + 110px);
+  font-size: 14px;
+}
+
+/* Details view */
+html[data-stage='regular-portrait'] .dhead {
+  left: 32px;
+  right: 32px;
+  max-width: 66ch;
+  margin-inline: auto;
+}
+
+html[data-stage='regular-portrait'] .dscroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--sat) + var(--d-gap, 152px) + 220px) 32px 360px;
+}
+
+html[data-stage='regular-portrait'] .sec {
+  max-width: 66ch;
+  width: 100%;
+  margin-inline: auto;
+}
+
+html[data-stage='regular-portrait'] .sec p {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+html[data-stage='regular-portrait'] .sec.hook p {
+  font-size: 21px;
+  line-height: 31px;
+}
+
+html[data-stage='regular-portrait'] .prow {
+  left: 0;
+  right: 0;
+  max-width: none;
+  margin-inline: 0;
+  padding-inline: 4px;
+}
+
+html[data-stage='regular-portrait'] .dpill {
+  height: 44px;
+  padding: 0 28px;
+  font-size: 16px;
+}
+
+html[data-stage='regular-portrait'] .dhead .hint {
+  font-size: 15px;
+}
+
+html[data-stage='regular-portrait'] .btitle {
+  left: 0;
+  right: 0;
+  max-width: none;
+  margin-inline: 0;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+html[data-stage='regular-portrait'] .stitle {
+  left: 0;
+  right: 0;
+}
+
+html[data-stage='regular-portrait'] .arow {
+  left: 0;
+  right: auto;
+}
+
+html[data-stage='regular-portrait'] [data-region='details-head'] {
+  top: calc(var(--sat) + 72px) !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+html[data-stage='regular-portrait'] .dfoot {
+  bottom: calc(var(--sab) + 88px);
+}
+
+html[data-stage='regular-portrait'] .nextbtn {
+  width: 52px;
+  height: 52px;
+}
+
+/* Engage view */
+html[data-stage='regular-portrait'] .escroll {
+  padding: calc(var(--sat) + 84px) 32px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html[data-stage='regular-portrait'] .apply,
+html[data-stage='regular-portrait'] .chead,
+html[data-stage='regular-portrait'] .clist,
+html[data-stage='regular-portrait'] .cempty {
+  max-width: 66ch;
+  width: 100%;
+}
+
+html[data-stage='regular-portrait'] .step {
+  min-height: 48px;
+  padding: 12px 0;
+  margin-bottom: 6px;
+}
+
+html[data-stage='regular-portrait'] .ebottom {
+  left: 0;
+  right: 0;
+  max-width: 66ch;
+  margin-inline: auto;
+  padding-inline: 16px;
+  bottom: calc(var(--sab) + 16px);
+}
+
+/* Hide ambient and key hints on regular portrait */
+html[data-stage='regular-portrait'] .ambient {
+  display: none;
+}
+
+html[data-stage='regular-portrait'] .key-hints {
+  display: none;
+}
