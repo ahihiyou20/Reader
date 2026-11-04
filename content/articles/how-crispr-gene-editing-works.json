@@ -1,0 +1,105 @@
+{
+  "slug": "how-crispr-gene-editing-works",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "crispr",
+    "genetics",
+    "genome editing",
+    "bacteria",
+    "nobel prize"
+  ],
+  "title": {
+    "en": "How CRISPR gene editing works, from bacterial defence to lab tool",
+    "vi": "CRISPR chỉnh sửa gen thế nào: từ phòng thủ của vi khuẩn đến công cụ phòng thí nghiệm"
+  },
+  "hook": {
+    "en": "Bacteria get infected by viruses too, and some of them keep a record of past attacks in their own DNA. When the same virus returns, they use that record to find its genes and cut them apart. In 2020 the Nobel Prize in Chemistry went to two researchers who turned this defence into [p:a programmable pair of genetic scissors].",
+    "vi": "Vi khuẩn cũng bị virus tấn công, và một số loài giữ bản ghi về các cuộc tấn công cũ ngay trong DNA của mình. Khi virus ấy quay lại, chúng dùng bản ghi đó để tìm gen của virus và cắt rời. Năm 2020, giải Nobel Hóa học được trao cho hai nhà nghiên cứu đã biến cơ chế phòng thủ này thành [p:một cặp kéo di truyền có thể lập trình]."
+  },
+  "sections": [
+    {
+      "heading_en": "A memory built into bacteria",
+      "heading_vi": "Bộ nhớ có sẵn trong vi khuẩn",
+      "body_en": "CRISPR-Cas9 was adapted from a natural system that bacteria use as an immune defence. When a virus infects a bacterium, the bacterium captures small pieces of the virus's DNA and inserts them into its own DNA in a particular pattern, forming segments called CRISPR arrays {medline-crispr}. The arrays let the bacterium remember the virus, or close relatives of it. The name is short for clustered regularly interspaced short palindromic repeats, plus the enzyme that does the cutting: CRISPR-associated protein 9.",
+      "body_vi": "CRISPR-Cas9 được phát triển từ một hệ thống tự nhiên mà vi khuẩn dùng làm hàng rào miễn dịch. Khi virus nhiễm vào vi khuẩn, vi khuẩn bắt lấy những mảnh DNA nhỏ của virus và chèn vào DNA của mình theo một khuôn mẫu nhất định, tạo thành các đoạn gọi là dãy CRISPR {medline-crispr}. Các dãy này giúp vi khuẩn ghi nhớ virus đó hoặc họ hàng gần của nó. Tên gọi là viết tắt của chuỗi lặp đối xứng ngắn xen cách đều đặn thành cụm (*clustered regularly interspaced short palindromic repeats*), cộng với enzyme thực hiện việc cắt: protein 9 liên kết CRISPR."
+    },
+    {
+      "heading_en": "How the bacterial defence runs",
+      "heading_vi": "Hàng rào phòng thủ vận hành thế nào",
+      "body_en": "If the same virus attacks again, the bacterium makes RNA segments from its CRISPR arrays. These segments recognise and attach to specific regions of the virus's DNA. The bacterium then uses Cas9, or a similar enzyme, to cut the viral DNA apart, which disables the virus {medline-crispr}. The key point is that the RNA is [p:the address] and the enzyme is the blade. Change the address, and the same blade can be sent to a different place in a genome.",
+      "body_vi": "Nếu cùng loại virus tấn công lần nữa, vi khuẩn tạo ra các đoạn RNA từ dãy CRISPR của mình. Các đoạn này nhận ra và bám vào những vùng cụ thể trong DNA của virus. Sau đó vi khuẩn dùng Cas9, hoặc một enzyme tương tự, để cắt rời DNA virus, làm virus mất khả năng gây hại {medline-crispr}. Điểm mấu chốt là RNA đóng vai [p:địa chỉ] còn enzyme là lưỡi dao. Đổi địa chỉ, cùng một lưỡi dao có thể được gửi tới một chỗ khác trong bộ gen."
+    },
+    {
+      "heading_en": "A surprise in a harmful bacterium",
+      "heading_vi": "Bất ngờ từ một loài vi khuẩn có hại",
+      "body_en": "The Royal Swedish Academy of Sciences describes the discovery as unexpected. Emmanuelle Charpentier was studying Streptococcus pyogenes, one of the bacteria that cause the most harm to humanity, when she found a previously unknown molecule called tracrRNA. Her work showed it is part of the ancient bacterial immune system known as CRISPR/Cas, which disarms viruses by cleaving their DNA. She published the finding in [y:2011] and began working with biochemist Jennifer Doudna in the same year {nobel-2020}.",
+      "body_vi": "Viện Hàn lâm Khoa học Hoàng gia Thụy Điển mô tả phát hiện này là điều bất ngờ. Emmanuelle Charpentier đang nghiên cứu Streptococcus pyogenes, một trong những loài vi khuẩn gây hại nhiều nhất cho nhân loại, thì tìm ra một phân tử chưa từng biết gọi là tracrRNA. Công trình của bà cho thấy đó là một phần của hệ miễn dịch cổ xưa của vi khuẩn mang tên CRISPR/Cas, vô hiệu hóa virus bằng cách cắt DNA của chúng. Bà công bố phát hiện vào năm [y:2011] và cùng năm đó bắt đầu hợp tác với nhà hóa sinh Jennifer Doudna {nobel-2020}."
+    },
+    {
+      "heading_en": "Turning it into a tool",
+      "heading_vi": "Biến nó thành công cụ",
+      "body_en": "Charpentier and Doudna recreated the bacterial scissors in a test tube and simplified their molecular parts so that they were easier to use. They then reprogrammed the scissors {nobel-2020}. Researchers now build a small piece of RNA with a short guide sequence that binds to a chosen target in a cell's DNA, and attach it to the Cas9 enzyme. In the cell, the guide finds the intended sequence and Cas9 cuts the DNA at that spot, mirroring the bacterial process {medline-crispr}. Other enzymes, such as Cpf1, can be used in place of Cas9.",
+      "body_vi": "Charpentier và Doudna tái tạo cặp kéo của vi khuẩn trong ống nghiệm và đơn giản hóa các thành phần phân tử để dễ sử dụng hơn. Sau đó họ lập trình lại cặp kéo {nobel-2020}. Giờ đây các nhà nghiên cứu tạo một đoạn RNA nhỏ có chuỗi dẫn đường ngắn bám vào một mục tiêu đã chọn trong DNA của tế bào, rồi gắn nó với enzyme Cas9. Trong tế bào, chuỗi dẫn đường tìm đúng trình tự mong muốn và Cas9 cắt DNA tại điểm đó, tái hiện quá trình ở vi khuẩn {medline-crispr}. Các enzyme khác, như Cpf1, cũng có thể dùng thay Cas9."
+    },
+    {
+      "heading_en": "What happens after the cut",
+      "heading_vi": "Chuyện gì xảy ra sau nhát cắt",
+      "body_en": "The cut is only the first step. After the DNA is cut, researchers rely on the cell's own DNA repair system to add, remove or change genetic material at that location {medline-crispr}. MedlinePlus says CRISPR-Cas9 has drawn excitement because it is faster, cheaper, more accurate and more efficient than other genome editing methods. The Nobel announcement states it makes it possible to change the code of life [y:over a few weeks]. Possible uses include treating conditions such as sickle cell disease, and researchers hope it may help with cancer, heart disease and HIV.",
+      "body_vi": "Nhát cắt chỉ là bước đầu. Sau khi DNA bị cắt, các nhà nghiên cứu dựa vào hệ thống sửa chữa DNA của chính tế bào để thêm, bớt hoặc thay đổi vật liệu di truyền tại vị trí đó {medline-crispr}. MedlinePlus cho biết CRISPR-Cas9 gây hào hứng vì nhanh hơn, rẻ hơn, chính xác hơn và hiệu quả hơn các phương pháp chỉnh sửa bộ gen khác. Thông báo giải Nobel nêu rằng nó giúp thay đổi mã của sự sống [y:trong vài tuần]. Các ứng dụng có thể gồm điều trị những bệnh như bệnh hồng cầu hình liềm, và các nhà nghiên cứu hy vọng nó có thể hỗ trợ cả ung thư, bệnh tim và HIV."
+    },
+    {
+      "heading_en": "Edits that stay, and edits that are inherited",
+      "heading_vi": "Chỉnh sửa ở lại và chỉnh sửa di truyền",
+      "body_en": "Most genome edits are made in somatic cells, which are all cells except eggs and sperm. Those changes stay in particular tissues and are not passed to the next generation. Changes to egg, sperm or embryo genes could be inherited, and that raises ethical questions, including whether the technology should be used to enhance normal traits such as height or intelligence. Because of ethical and safety concerns, editing germline cells and embryos is [y:currently illegal] in the United States and many other countries {medline-crispr}.",
+      "body_vi": "Phần lớn các chỉnh sửa bộ gen được thực hiện ở tế bào soma, tức mọi tế bào trừ trứng và tinh trùng. Những thay đổi ấy nằm trong các mô nhất định và không truyền sang thế hệ sau. Thay đổi ở gen của trứng, tinh trùng hoặc phôi có thể được di truyền, và điều đó đặt ra các câu hỏi đạo đức, trong đó có việc có nên dùng công nghệ này để tăng cường những đặc điểm bình thường như chiều cao hay trí thông minh hay không. Vì các lo ngại về đạo đức và an toàn, việc chỉnh sửa tế bào dòng mầm và phôi hiện [y:là bất hợp pháp] ở Hoa Kỳ và nhiều nước khác {medline-crispr}."
+    }
+  ],
+  "keyPoint": {
+    "en": "CRISPR-Cas9 is a bacterial immune defence turned into a laboratory tool. A short guide RNA finds a chosen DNA sequence, the Cas9 enzyme cuts it, and the cell's own repair system makes the change. Edits to ordinary body cells stay with one person, while edits to eggs, sperm or embryos raise ethical limits.",
+    "vi": "CRISPR-Cas9 là hàng rào miễn dịch của vi khuẩn được biến thành công cụ phòng thí nghiệm. Một RNA dẫn đường ngắn tìm trình tự DNA đã chọn, enzyme Cas9 cắt nó, và hệ thống sửa chữa của tế bào thực hiện thay đổi. Chỉnh sửa ở tế bào cơ thể thông thường chỉ ở lại với một người, còn chỉnh sửa ở trứng, tinh trùng hoặc phôi đặt ra những giới hạn đạo đức."
+  },
+  "applySteps": {
+    "en": [
+      "Read the MedlinePlus page on genome editing and note the difference between somatic and germline edits.",
+      "Look up the 2020 Nobel Prize in Chemistry announcement and find the sentence describing the genetic scissors.",
+      "Ask yourself which uses of gene editing you would support, and which you would limit, and write down why."
+    ],
+    "vi": [
+      "Đọc trang MedlinePlus về chỉnh sửa bộ gen và ghi lại sự khác nhau giữa chỉnh sửa tế bào soma và tế bào dòng mầm.",
+      "Tìm thông báo giải Nobel Hóa học 2020 và tìm câu mô tả cặp kéo di truyền.",
+      "Tự hỏi bạn ủng hộ những ứng dụng chỉnh sửa gen nào, muốn giới hạn những ứng dụng nào, và viết ra lý do."
+    ]
+  },
+  "references": [
+    {
+      "id": "medline-crispr",
+      "label": "MedlinePlus Genetics, Genome editing and CRISPR-Cas9",
+      "url": "https://medlineplus.gov/genetics/understanding/genomicresearch/genomeediting/"
+    },
+    {
+      "id": "nobel-2020",
+      "label": "Nobel Prize in Chemistry 2020, press release",
+      "url": "https://www.nobelprize.org/prizes/chemistry/2020/press-release/"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/how-crispr-gene-editing-works.webp",
+    "provider": "unsplash",
+    "author": "Nithya Ramanujam",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/fTKetYpEKNQ"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAADQAwCdASoQABwAPu1kqU2ppaQiMAgBMB2JZQCuHYvg3pDLaNO6Q8AA/Mt2XONde+he3C7SE4axqZZJbn3vi6U5pJFb5rDdZvrFPP8YvTIOCn13mIfNZCjwTr2zOaYSrWpy+fkni0GSkTXV4tn9UDzjAeHZXu0vRv1/8/5m8/9CVY3q1Me/HuYejwAd3FrEgMRrDwAA",
+  "dominant": "#63615f"
+}

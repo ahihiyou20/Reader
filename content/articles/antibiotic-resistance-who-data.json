@@ -1,0 +1,105 @@
+{
+  "slug": "antibiotic-resistance-who-data",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "health",
+  "tags": [
+    "antibiotics",
+    "antimicrobial resistance",
+    "infection",
+    "who",
+    "public health"
+  ],
+  "title": {
+    "en": "Antibiotic resistance in numbers: what the WHO data show",
+    "vi": "Kháng kháng sinh qua các con số: dữ liệu của WHO cho thấy gì"
+  },
+  "hook": {
+    "en": "In 2023, about [y:1 in 6] laboratory-confirmed bacterial infections worldwide resisted the antibiotics used to treat them. Between 2018 and 2023 resistance rose in more than 40 percent of the pathogen and drug combinations the World Health Organization monitors. The figures come from the WHO fact sheet on antimicrobial resistance, and they say a good deal about who carries the burden.",
+    "vi": "Năm 2023, khoảng [y:1 trên 6] ca nhiễm khuẩn được xác nhận bằng xét nghiệm trên toàn thế giới đã kháng lại các kháng sinh dùng để điều trị. Từ năm 2018 đến 2023, tình trạng kháng thuốc tăng ở hơn 40 phần trăm các tổ hợp mầm bệnh và thuốc mà Tổ chức Y tế Thế giới theo dõi. Các số liệu này đến từ bản thông tin của WHO về kháng thuốc kháng khuẩn, và chúng nói lên khá nhiều điều về việc ai đang gánh gánh nặng này."
+  },
+  "sections": [
+    {
+      "heading_en": "What resistance means",
+      "heading_vi": "Kháng thuốc nghĩa là gì",
+      "body_en": "Antimicrobial resistance occurs when bacteria, viruses, fungi and parasites no longer respond to the medicines made to treat them. The WHO names the misuse and overuse of antimicrobials as the drivers of drug-resistant pathogens {who-amr}. When a drug stops working, infections become harder or impossible to treat, which raises the risk of spreading disease, severe illness, disability and death. Drug-resistant infections also affect animals and plants, and they reduce farm productivity, which threatens food security.",
+      "body_vi": "Kháng thuốc kháng khuẩn xảy ra khi vi khuẩn, virus, nấm và ký sinh trùng không còn đáp ứng với các thuốc sinh ra để điều trị chúng. WHO nêu việc lạm dụng và dùng thuốc kháng khuẩn quá mức là nguyên nhân thúc đẩy các mầm bệnh kháng thuốc {who-amr}. Khi một loại thuốc ngừng tác dụng, nhiễm trùng khó điều trị hơn hoặc không thể điều trị, làm tăng nguy cơ lây bệnh, bệnh nặng, tàn tật và tử vong. Nhiễm trùng kháng thuốc cũng ảnh hưởng đến động vật và cây trồng, và làm giảm năng suất nông trại, đe dọa an ninh lương thực."
+    },
+    {
+      "heading_en": "How large the problem is",
+      "heading_vi": "Vấn đề lớn đến đâu",
+      "body_en": "Bacterial resistance was associated with more than [y:4.7 million deaths] worldwide in 2021, according to the WHO. In 2023, one in six lab-confirmed bacterial infections causing common infections in people was resistant to antibiotic treatment. The trend is upward: between 2018 and 2023 resistance increased in over 40 percent of the pathogen and antibiotic combinations tracked, at an average annual rise of 5 to 15 percent {who-amr}. The wording matters. Deaths are described as associated with resistance, which is not the same as all being caused by it.",
+      "body_vi": "Theo WHO, kháng thuốc ở vi khuẩn có liên quan đến hơn [y:4,7 triệu ca tử vong] trên thế giới vào năm 2021. Năm 2023, cứ sáu ca nhiễm khuẩn thông thường ở người được xác nhận bằng xét nghiệm thì có một ca kháng với điều trị kháng sinh. Xu hướng đang đi lên: từ 2018 đến 2023, tình trạng kháng thuốc tăng ở hơn 40 phần trăm các tổ hợp mầm bệnh và kháng sinh được theo dõi, với mức tăng trung bình hằng năm từ 5 đến 15 phần trăm {who-amr}. Cách dùng từ rất quan trọng. Các ca tử vong được mô tả là có liên quan đến kháng thuốc, điều này không đồng nghĩa với việc tất cả đều do nó gây ra."
+    },
+    {
+      "heading_en": "An uneven burden",
+      "heading_vi": "Gánh nặng không đồng đều",
+      "body_en": "Resistance is not spread evenly. The WHO estimates it is highest in the South-East Asia and Eastern Mediterranean Regions, where [y:1 in 3] reported infections were resistant. It is also more common and getting worse where health systems lack the capacity to diagnose or treat bacterial pathogens. Drug-resistant Gram-negative bacteria are becoming more dangerous worldwide, with the greatest burden falling on countries least equipped to respond {who-amr}.",
+      "body_vi": "Kháng thuốc không phân bố đồng đều. WHO ước tính tình trạng này cao nhất ở Khu vực Đông Nam Á và Đông Địa Trung Hải, nơi [y:1 trên 3] ca nhiễm được báo cáo là kháng thuốc. Nó cũng phổ biến hơn và đang xấu đi ở những nơi hệ thống y tế thiếu năng lực chẩn đoán hoặc điều trị mầm bệnh vi khuẩn. Vi khuẩn Gram âm kháng thuốc đang ngày càng nguy hiểm trên toàn thế giới, và gánh nặng lớn nhất đổ lên các nước ít được trang bị để ứng phó nhất {who-amr}."
+    },
+    {
+      "heading_en": "Two infections in focus",
+      "heading_vi": "Hai bệnh nhiễm trùng cần chú ý",
+      "body_en": "Gonorrhoea shows how fast options can narrow. Resistance to the antibiotic ciprofloxacin is very high at 75 percent, while resistance to ceftriaxone is still low globally but rising in some regions, which threatens the first-choice treatment. Tuberculosis is a second case. Multidrug-resistant TB does not respond to isoniazid and rifampicin, the two most effective first-line drugs. In 2024 an estimated [y:3.2%] of people with a first episode of TB had a drug-resistant form, compared with 16 percent of those who had been treated before {who-amr}.",
+      "body_vi": "Bệnh lậu cho thấy các lựa chọn có thể thu hẹp nhanh thế nào. Mức kháng kháng sinh ciprofloxacin rất cao, ở 75 phần trăm, trong khi mức kháng ceftriaxone trên toàn cầu vẫn thấp nhưng đang tăng ở một số khu vực, đe dọa phác đồ điều trị ưu tiên. Bệnh lao là trường hợp thứ hai. Lao đa kháng thuốc không đáp ứng với isoniazid và rifampicin, hai thuốc hàng đầu hiệu quả nhất. Năm 2024, ước tính [y:3,2%] số người mắc lao lần đầu có thể lao kháng thuốc, so với 16 phần trăm ở những người từng được điều trị trước đó {who-amr}."
+    },
+    {
+      "heading_en": "The cost and the pipeline",
+      "heading_vi": "Chi phí và nguồn thuốc mới",
+      "body_en": "The WHO projects that, at the current level of action, treating resistant bacterial infections alone will cost US$412 billion a year up to 2035, with a further US$443 billion a year in lost productivity. Too few new antibiotics are being developed to replace those that no longer work. Use patterns add to the pressure: so-called Watch antibiotics, which carry a higher risk of resistance, made up roughly 45 percent of use, and over 70 percent in nearly a third of countries {who-amr}.",
+      "body_vi": "WHO dự báo rằng, với mức hành động hiện nay, riêng việc điều trị nhiễm khuẩn kháng thuốc sẽ tốn 412 tỷ đô la Mỹ mỗi năm cho đến 2035, cộng thêm 443 tỷ đô la Mỹ mỗi năm do mất năng suất. Có quá ít kháng sinh mới được phát triển để thay thế những loại không còn tác dụng. Thói quen sử dụng làm tăng áp lực: các kháng sinh nhóm Theo dõi (*Watch*), có nguy cơ kháng thuốc cao hơn, chiếm khoảng 45 phần trăm lượng dùng, và trên 70 phần trăm tại gần một phần ba số nước {who-amr}."
+    },
+    {
+      "heading_en": "What it means for patients",
+      "heading_vi": "Điều này có ý nghĩa gì với người bệnh",
+      "body_en": "The UK's National Health Service says overuse of antibiotics in recent years has made them less effective and led to the emergence of so-called superbugs. These are bacterial strains resistant to many antibiotics, including MRSA and the bacteria that cause multidrug-resistant TB. Antibiotics are no longer routinely used for chest infections, ear infections in children or sore throats. They also do not work on [g:viral infections]. The NHS names its biggest worry as new strains that no existing antibiotic can treat {nhs-ar}.",
+      "body_vi": "Dịch vụ Y tế Quốc gia Anh (NHS) cho biết việc lạm dụng kháng sinh trong những năm gần đây khiến chúng kém hiệu quả hơn và dẫn đến sự xuất hiện của cái gọi là siêu vi khuẩn. Đó là những chủng vi khuẩn kháng nhiều loại kháng sinh, gồm MRSA và vi khuẩn gây lao đa kháng thuốc. Kháng sinh không còn được dùng thường quy cho nhiễm trùng ngực, nhiễm trùng tai ở trẻ em hay đau họng. Chúng cũng không có tác dụng với [g:nhiễm trùng do virus]. NHS nêu mối lo lớn nhất là những chủng mới mà không loại kháng sinh nào hiện có điều trị được {nhs-ar}."
+    }
+  ],
+  "keyPoint": {
+    "en": "About one in six bacterial infections worldwide resisted antibiotics in 2023, and resistance is rising in over 40 percent of monitored combinations. The burden falls hardest where health systems are weakest. Antibiotics do not work on viruses, so using them only when a doctor finds a bacterial cause helps protect the drugs we still have.",
+    "vi": "Khoảng một trên sáu ca nhiễm khuẩn trên thế giới kháng kháng sinh năm 2023, và tình trạng kháng thuốc đang tăng ở hơn 40 phần trăm các tổ hợp được theo dõi. Gánh nặng đổ nặng nhất lên nơi hệ thống y tế yếu nhất. Kháng sinh không có tác dụng với virus, nên chỉ dùng khi bác sĩ xác định có nguyên nhân do vi khuẩn giúp bảo vệ những thuốc mà ta còn có."
+  },
+  "applySteps": {
+    "en": [
+      "Next time you have a cough or sore throat, ask your doctor whether the cause is bacterial or viral before asking for antibiotics.",
+      "Read the NHS page on antibiotic resistance and note which common infections no longer get antibiotics as a routine.",
+      "Look up the WHO fact sheet and find the resistance figure for your own region."
+    ],
+    "vi": [
+      "Lần tới khi bạn ho hoặc đau họng, hãy hỏi bác sĩ nguyên nhân là vi khuẩn hay virus trước khi xin kháng sinh.",
+      "Đọc trang của NHS về kháng kháng sinh và ghi lại những bệnh nhiễm trùng thường gặp nào không còn được dùng kháng sinh thường quy.",
+      "Tra bản thông tin của WHO và tìm số liệu kháng thuốc cho khu vực của bạn."
+    ]
+  },
+  "references": [
+    {
+      "id": "who-amr",
+      "label": "WHO, Antimicrobial resistance fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+    },
+    {
+      "id": "nhs-ar",
+      "label": "NHS, Antibiotic resistance",
+      "url": "https://www.nhs.uk/conditions/antibiotics/antibiotic-antimicrobial-resistance/"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/antibiotic-resistance-who-data.webp",
+    "provider": "unsplash",
+    "author": "Shane Colella",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/znM0ujn2RUA"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoQABwAPu1orU2ppqSiMAgBMB2JbAC7ACHe3mHtk7/DoDUaTAAA/t6Qr7qi5Zp2nr0PFylhUp1XyzgBfzVEkb9JpzJ1yQex7+B8foDNDWQ4pT7DSjfPBH4ngDyWz7X5DI/j7xgOTm/0WrQyZEMHzo44cL6Y96GKQ6nMAAAA",
+  "dominant": "#786452"
+}

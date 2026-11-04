@@ -1,0 +1,105 @@
+{
+  "slug": "dunning-kruger-effect-what-it-says",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "psychology",
+  "tags": [
+    "overconfidence",
+    "self-assessment",
+    "metacognition",
+    "cognitive bias",
+    "psychology"
+  ],
+  "title": {
+    "en": "What the Dunning–Kruger effect actually says",
+    "vi": "Hiệu ứng Dunning–Kruger thực sự nói gì"
+  },
+  "hook": {
+    "en": "In 1999 two psychologists gave students tests of humor, grammar and logic, then asked how well they thought they had done. Those in the bottom quarter scored around the [y:12th percentile] but guessed they sat at the [y:62nd]. The result turned into a meme about overconfident fools, yet the research claims something narrower, and its explanation is still argued over.",
+    "vi": "Năm 1999, hai nhà tâm lý học cho sinh viên làm các bài kiểm tra về óc hài hước, ngữ pháp và logic, rồi hỏi họ nghĩ mình làm tốt đến đâu. Nhóm một phần tư thấp nhất đạt điểm quanh [y:phân vị thứ 12] nhưng lại đoán mình đứng ở [y:phân vị thứ 62]. Kết quả ấy hóa thành trò đùa về những kẻ tự tin thái quá, trong khi nghiên cứu khẳng định điều hẹp hơn nhiều, và lời giải thích cho nó vẫn còn tranh cãi."
+  },
+  "sections": [
+    {
+      "heading_en": "The experiment",
+      "heading_vi": "Thí nghiệm",
+      "body_en": "Justin Kruger and David Dunning ran four studies with undergraduates. Each student took a test, then estimated their own score and how they ranked against other students. Across the tests of humor, grammar and logic, participants in the bottom quartile [y:grossly overestimated] their performance and ability {kruger-1999}. Their scores put them in the 12th percentile. They placed themselves in the 62nd. The authors opened from a broader observation: people tend to hold overly favorable views of their abilities in many social and intellectual domains.",
+      "body_vi": "Justin Kruger và David Dunning thực hiện bốn nghiên cứu với sinh viên đại học. Mỗi sinh viên làm một bài kiểm tra, rồi ước tính điểm của mình và thứ hạng so với các sinh viên khác. Qua các bài kiểm tra về óc hài hước, ngữ pháp và logic, những người thuộc nhóm một phần tư thấp nhất đã [y:đánh giá quá cao hẳn] thành tích và năng lực của mình {kruger-1999}. Điểm số xếp họ ở phân vị thứ 12. Họ tự xếp mình ở phân vị thứ 62. Các tác giả xuất phát từ một quan sát rộng hơn: con người có xu hướng giữ quan điểm quá thuận lợi về năng lực của mình trong nhiều lĩnh vực xã hội và trí tuệ."
+    },
+    {
+      "heading_en": "A double burden",
+      "heading_vi": "Gánh nặng kép",
+      "body_en": "Why would weaker performers misjudge themselves so badly? The authors proposed a **dual burden**. People who are unskilled reach wrong answers and make poor choices, and the same lack of skill robs them of the ability to see the errors {kruger-1999}. Part of learning a skill is learning to tell a good performance from a bad one. Someone who has not learned that yet has no yardstick for their own work {wiki-dk}. This is called the metacognitive explanation, because it concerns thinking about one's own thinking.",
+      "body_vi": "Vì sao người yếu hơn lại tự đánh giá sai nhiều đến vậy? Các tác giả đề xuất một **gánh nặng kép** (*dual burden*). Người thiếu kỹ năng đi đến đáp án sai và đưa ra lựa chọn kém, và chính sự thiếu kỹ năng ấy cướp đi khả năng nhận ra lỗi {kruger-1999}. Một phần của việc học kỹ năng là học cách phân biệt màn thể hiện tốt với màn thể hiện tệ. Ai chưa học được điều đó thì không có thước đo cho chính bài làm của mình {wiki-dk}. Cách giải thích này gọi là giải thích siêu nhận thức (*metacognitive*), vì nó nói về việc suy nghĩ về chính suy nghĩ của mình."
+    },
+    {
+      "heading_en": "Teaching closed the gap",
+      "heading_vi": "Dạy học thu hẹp khoảng cách",
+      "body_en": "The authors also report a test of that account. When the researchers improved participants' skills, those participants became better at recognising the limits of their abilities {kruger-1999}. The finding is a little odd: learning more made people [g:less sure] of themselves, because they could finally see what they had missed. A later reading of the literature adds an indirect argument of the same kind, noting that training people in logical reasoning helps them judge their own performance more accurately {wiki-dk}.",
+      "body_vi": "Các tác giả cũng báo cáo một phép thử cho cách giải thích này. Khi các nhà nghiên cứu nâng kỹ năng của người tham gia, những người đó nhận ra giới hạn năng lực của mình tốt hơn {kruger-1999}. Phát hiện này hơi lạ: học nhiều hơn khiến người ta [g:bớt chắc chắn] về bản thân, vì cuối cùng họ đã thấy được những gì mình bỏ sót. Một tổng hợp về sau bổ sung lập luận gián tiếp cùng hướng, ghi nhận rằng việc huấn luyện lập luận logic giúp người ta đánh giá thành tích của mình chính xác hơn {wiki-dk}."
+    },
+    {
+      "heading_en": "What it does not say",
+      "heading_vi": "Điều nó không nói",
+      "body_en": "In popular culture the effect is often retold as a claim that people of low intelligence are more confident than clever people. That is a misreading. The effect describes overconfidence by people who are unskilled in a particular area {wiki-dk}. The same person can be an expert in one field and a beginner in another. Some researchers also use the term for the opposite pattern, in which highly skilled people underestimate their standing relative to others. The label belongs to a task, not to a type of person.",
+      "body_vi": "Trong văn hóa đại chúng, hiệu ứng này thường bị kể lại thành lời khẳng định rằng người kém thông minh tự tin hơn người thông minh. Đó là cách hiểu sai. Hiệu ứng mô tả sự tự tin thái quá của những người thiếu kỹ năng trong một lĩnh vực cụ thể {wiki-dk}. Cùng một người có thể là chuyên gia ở lĩnh vực này và là người mới ở lĩnh vực khác. Một số nhà nghiên cứu còn dùng thuật ngữ này cho kiểu ngược lại, khi người có kỹ năng cao đánh giá thấp vị trí của mình so với người khác. Cái nhãn gắn với một nhiệm vụ, không gắn với một loại người."
+    },
+    {
+      "heading_en": "A statistical challenge",
+      "heading_vi": "Một thách thức từ thống kê",
+      "body_en": "Not everyone accepts the metacognitive story. Gilles Gignac and Marcin Zajenkowski argue that two familiar statistical patterns can explain most of the data: regression toward the mean, and the better-than-average effect {wiki-dk}. The second is the habit of rating oneself above average. In one example, the average IQ is 100, yet people on average think theirs is 115. Simulated data built from only those two patterns produce almost the same correlation between real and self-rated ability as actual experiments do. On this view the pattern is largely a [p:statistical artifact], not proof that incompetence hides itself.",
+      "body_vi": "Không phải ai cũng chấp nhận câu chuyện siêu nhận thức. Gilles Gignac và Marcin Zajenkowski lập luận rằng hai quy luật thống kê quen thuộc có thể giải thích phần lớn dữ liệu: hồi quy về giá trị trung bình (*regression toward the mean*) và hiệu ứng tốt-hơn-mức-trung-bình (*better-than-average effect*) {wiki-dk}. Quy luật thứ hai là thói quen tự xếp mình trên mức trung bình. Trong một ví dụ, IQ trung bình là 100, nhưng người ta trung bình cho rằng IQ của mình là 115. Dữ liệu mô phỏng chỉ dựng từ hai quy luật ấy cho ra tương quan giữa năng lực thật và năng lực tự đánh giá gần như giống các thí nghiệm thực. Theo quan điểm này, mô hình đó phần lớn là [p:một hiện tượng nhân tạo của thống kê], chứ không chứng minh rằng sự kém cỏi tự che giấu mình."
+    },
+    {
+      "heading_en": "Where the evidence stands",
+      "heading_vi": "Bằng chứng hiện đứng ở đâu",
+      "body_en": "Attempts to measure metacognitive ability directly have not settled the matter. Some findings suggest that poor performers do have reduced metacognitive sensitivity, though it is unclear whether it is large enough to explain the effect. Another study concluded that unskilled people lack information, while the quality of their metacognitive processing matches that of skilled people {wiki-dk}. So the overestimate itself is well documented, and its cause remains open.",
+      "body_vi": "Những nỗ lực đo trực tiếp năng lực siêu nhận thức chưa giải quyết được vấn đề. Một số phát hiện gợi ý rằng người thể hiện kém quả có độ nhạy siêu nhận thức thấp hơn, nhưng chưa rõ mức đó có đủ lớn để giải thích hiệu ứng hay không. Một nghiên cứu khác kết luận rằng người thiếu kỹ năng thiếu thông tin, còn chất lượng xử lý siêu nhận thức của họ ngang với người có kỹ năng {wiki-dk}. Vì vậy, việc đánh giá quá cao đã được ghi nhận rõ, còn nguyên nhân của nó thì vẫn còn bỏ ngỏ."
+    }
+  ],
+  "keyPoint": {
+    "en": "People who score low on a task often rate themselves well above their result, and that gap is documented. Whether the cause is a missing skill for spotting mistakes or largely a statistical pattern is still disputed. Use it as a reason to check your own work against an outside standard, not as a label for other people.",
+    "vi": "Người điểm thấp ở một nhiệm vụ thường tự chấm mình cao hơn kết quả thật khá nhiều, và khoảng cách ấy đã được ghi nhận. Nguyên nhân là thiếu kỹ năng nhận ra lỗi hay phần lớn là một quy luật thống kê thì vẫn còn tranh cãi. Hãy dùng nó như lý do để đối chiếu bài làm của mình với chuẩn bên ngoài, chứ không phải cái nhãn dán lên người khác."
+  },
+  "applySteps": {
+    "en": [
+      "Before your next test or review, write down the score you expect, then compare it with the real result.",
+      "Ask someone who does the task well to rate one piece of your work against a clear checklist.",
+      "After a month of practising a new skill, rate yourself again and note whether your estimate went up or down."
+    ],
+    "vi": [
+      "Trước bài kiểm tra hay buổi đánh giá tiếp theo, hãy ghi ra điểm bạn kỳ vọng rồi so với kết quả thật.",
+      "Nhờ một người làm việc này giỏi chấm một sản phẩm của bạn theo một danh sách tiêu chí rõ ràng.",
+      "Sau một tháng luyện một kỹ năng mới, hãy tự chấm lại và xem ước tính của bạn tăng hay giảm."
+    ]
+  },
+  "references": [
+    {
+      "id": "kruger-1999",
+      "label": "Kruger & Dunning (1999)",
+      "url": "https://doi.org/10.1037/0022-3514.77.6.1121"
+    },
+    {
+      "id": "wiki-dk",
+      "label": "Dunning–Kruger effect, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/dunning-kruger-effect-what-it-says.webp",
+    "provider": "unsplash",
+    "author": "Alejandro Escamilla",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/du_OrQAA4r0"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoQABwALrV2u12jqampiYC0SxgGN6IiBAQ2y6omeLcIAAD4y2enhz5hDXxEgO7yp1MgFcjsAUQsumbohsf/HGJQfOxyeti0EZPIi87gAHpkTbK+7mAAAA==",
+  "dominant": "#69706b"
+}

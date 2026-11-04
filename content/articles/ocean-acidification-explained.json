@@ -1,0 +1,99 @@
+{
+  "slug": "ocean-acidification-explained",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "oceans",
+    "carbon dioxide",
+    "climate",
+    "marine life",
+    "chemistry"
+  ],
+  "title": {
+    "en": "Ocean acidification, explained: what CO2 does to seawater",
+    "vi": "Axit hóa đại dương: CO2 làm gì với nước biển"
+  },
+  "hook": {
+    "en": "The ocean absorbs about 30 percent of the carbon dioxide released into the atmosphere. That sounds like a favour, and in one sense it is. But dissolved CO2 changes the water itself. The US Environmental Protection Agency reports that the sea is now about [y:25% more acidic] than before the 1700s, an increase it says is greater than at any other time in the last 2 million years.",
+    "vi": "Đại dương hấp thụ khoảng 30 phần trăm lượng carbon dioxide thải vào khí quyển. Nghe như một ân huệ, và ở một khía cạnh thì đúng vậy. Nhưng CO2 hòa tan làm thay đổi chính nước biển. Cơ quan Bảo vệ Môi trường Hoa Kỳ cho biết biển hiện [y:có tính axit cao hơn khoảng 25%] so với trước thế kỷ 18, mức tăng mà cơ quan này nói là lớn hơn bất kỳ thời điểm nào trong 2 triệu năm qua."
+  },
+  "sections": [
+    {
+      "heading_en": "Where the CO2 goes",
+      "heading_vi": "CO2 đi đâu",
+      "body_en": "For more than 200 years, the amount of carbon dioxide in the atmosphere has risen because of fossil fuel burning and changes in land use. The ocean takes up about 30 percent of the CO2 released, so as the level in the air rises, the level in the sea rises with it {noaa-acid}. NOAA defines **ocean acidification** as a reduction in the pH of the ocean over an extended period of time, caused mainly by this uptake of CO2 from the air. Seawater is not turning into acid in the everyday sense. Its pH is falling, which means it is moving toward the acidic end of the scale.",
+      "body_vi": "Hơn 200 năm qua, lượng carbon dioxide trong khí quyển tăng lên do đốt nhiên liệu hóa thạch và thay đổi cách sử dụng đất. Đại dương hấp thụ khoảng 30 phần trăm lượng CO2 thải ra, nên khi mức trong không khí tăng thì mức trong biển cũng tăng theo {noaa-acid}. NOAA định nghĩa **axit hóa đại dương** (*ocean acidification*) là sự giảm pH của đại dương trong một thời gian dài, chủ yếu do việc hấp thụ CO2 từ không khí. Nước biển không biến thành axit theo nghĩa thường ngày. pH của nó đang giảm, nghĩa là nó đang dịch về phía có tính axit của thang đo."
+    },
+    {
+      "heading_en": "The chemistry",
+      "heading_vi": "Phản ứng hóa học",
+      "body_en": "When CO2 dissolves in seawater, a series of chemical reactions follows. The result is a higher concentration of hydrogen ions, and hydrogen ions are what make water more acidic {noaa-acid}. The same reactions have a second effect: carbonate ions become relatively less abundant. That loss matters because carbonate is a building block for sea shells and coral skeletons. So one change in the water, extra CO2, produces two problems at once, more acidity and [p:less carbonate to build with].",
+      "body_vi": "Khi CO2 hòa tan trong nước biển, một chuỗi phản ứng hóa học xảy ra. Kết quả là nồng độ ion hydro tăng, và chính ion hydro làm nước có tính axit hơn {noaa-acid}. Các phản ứng đó còn có tác động thứ hai: ion carbonate trở nên tương đối ít hơn. Mất mát này quan trọng vì carbonate là vật liệu xây nên vỏ sò và bộ xương san hô. Như vậy một thay đổi trong nước, thêm CO2, tạo ra hai vấn đề cùng lúc: tính axit cao hơn và [p:ít carbonate hơn để xây dựng]."
+    },
+    {
+      "heading_en": "Shells under pressure",
+      "heading_vi": "Vỏ dưới áp lực",
+      "body_en": "Many ocean plants and animals make their shells and skeletons from calcium carbonate, which they form by combining calcium and carbonate dissolved in seawater {epa-oa}. Higher acidity slows the growth of those structures. Under severe conditions it can dissolve them faster than they form. The EPA lists clams, oysters, scallops, mussels, corals, starfish, sea urchins and sea butterflies (pteropods) among the vulnerable groups. NOAA adds deep sea corals and calcareous plankton to the list of calcifying organisms that find shells harder to build and maintain {noaa-acid}.",
+      "body_vi": "Nhiều loài thực vật và động vật biển làm vỏ và bộ xương từ calcium carbonate, chất mà chúng tạo ra bằng cách kết hợp calcium và carbonate hòa tan trong nước biển {epa-oa}. Tính axit cao hơn làm chậm sự phát triển của các cấu trúc này. Trong điều kiện nghiêm trọng, nó có thể hòa tan chúng nhanh hơn tốc độ chúng hình thành. EPA liệt kê ngao, hàu, sò điệp, trai, san hô, sao biển, nhím biển và bướm biển (*pteropod*) trong các nhóm dễ tổn thương. NOAA bổ sung san hô nước sâu và sinh vật phù du vôi vào danh sách các sinh vật vôi hóa thấy việc xây dựng và duy trì vỏ khó hơn {noaa-acid}."
+    },
+    {
+      "heading_en": "The energy bill",
+      "heading_vi": "Hóa đơn năng lượng",
+      "body_en": "Animals also need the right chemistry inside their bodies. If seawater falls outside the range an organism tolerates, its body must spend more energy keeping its fluids in balance {epa-oa}. Many can compensate, but the energy is taken from other uses, such as growing muscle or shell. Scientists have found that mussels, sea urchins and crabs begin to [y:dissolve their own shells] to counter the higher acidity in their body fluids. An animal that survives can therefore still end up in poorer health, with less energy left to grow.",
+      "body_vi": "Động vật cũng cần đúng điều kiện hóa học bên trong cơ thể. Nếu nước biển vượt ra ngoài khoảng mà một sinh vật chịu được, cơ thể nó phải tiêu tốn nhiều năng lượng hơn để giữ dịch cơ thể cân bằng {epa-oa}. Nhiều loài bù đắp được, nhưng năng lượng ấy bị lấy từ những việc khác, như nuôi cơ hoặc vỏ. Các nhà khoa học thấy rằng trai, nhím biển và cua bắt đầu [y:hòa tan chính vỏ của mình] để đối phó với tính axit cao hơn trong dịch cơ thể. Vì vậy một con vật sống sót vẫn có thể có sức khỏe kém hơn, với ít năng lượng còn lại để lớn lên."
+    },
+    {
+      "heading_en": "Effects beyond shells",
+      "heading_vi": "Tác động vượt ngoài vỏ",
+      "body_en": "Animals without shells are affected too. NOAA notes that certain fish lose some of their ability to detect predators in more acidic water. When organisms are put at risk in this way, the whole food web may be at risk {noaa-acid}. The EPA adds a third concern from laboratory studies: animals higher up the food chain may be harmed because they feed on the sensitive organisms below them. These are results from experiments and monitoring, so how each ecosystem responds in the open sea will vary with the species and the place.",
+      "body_vi": "Những loài không có vỏ cũng bị ảnh hưởng. NOAA ghi nhận rằng một số loài cá mất một phần khả năng phát hiện kẻ săn mồi trong nước có tính axit cao hơn. Khi các sinh vật bị đặt vào rủi ro theo cách này, cả mạng lưới thức ăn có thể gặp rủi ro {noaa-acid}. EPA nêu thêm mối lo thứ ba từ các nghiên cứu trong phòng thí nghiệm: những động vật ở bậc cao hơn trong chuỗi thức ăn có thể bị hại vì chúng ăn các sinh vật nhạy cảm ở dưới. Đây là kết quả từ thí nghiệm và quan trắc, nên mỗi hệ sinh thái ngoài biển khơi sẽ phản ứng khác nhau tùy loài và tùy nơi."
+    }
+  ],
+  "keyPoint": {
+    "en": "Because the ocean absorbs about 30 percent of the CO2 we release, its chemistry is shifting. Seawater is becoming more acidic and holds fewer carbonate ions, which makes shells and coral skeletons harder to build. The same extra CO2 that warms the air is also changing the water that marine life lives in.",
+    "vi": "Vì đại dương hấp thụ khoảng 30 phần trăm lượng CO2 chúng ta thải ra, hóa học của nó đang thay đổi. Nước biển trở nên có tính axit hơn và chứa ít ion carbonate hơn, khiến vỏ và bộ xương san hô khó hình thành hơn. Chính lượng CO2 dư làm ấm không khí cũng đang đổi thay nước mà sinh vật biển sống trong đó."
+  },
+  "applySteps": {
+    "en": [
+      "Look up the pH page of NOAA's ocean acidification resources and read how pH is measured at sea.",
+      "Find where your electricity comes from this week and note one change that would cut the CO2 behind it.",
+      "Next time you eat shellfish, find out whether the supplier publishes where it was grown."
+    ],
+    "vi": [
+      "Tìm trang về pH trong tài liệu axit hóa đại dương của NOAA và đọc cách pH được đo ngoài biển.",
+      "Tuần này hãy tìm xem điện nhà bạn đến từ đâu và ghi lại một thay đổi có thể giảm lượng CO2 đằng sau nó.",
+      "Lần tới khi ăn hải sản có vỏ, hãy xem nhà cung cấp có công bố nơi nuôi hay không."
+    ]
+  },
+  "references": [
+    {
+      "id": "noaa-acid",
+      "label": "NOAA, What is ocean acidification?",
+      "url": "https://oceanservice.noaa.gov/facts/acidification.html"
+    },
+    {
+      "id": "epa-oa",
+      "label": "US EPA, Effects of ocean and coastal acidification on marine life",
+      "url": "https://www.epa.gov/ocean-acidification/effects-ocean-and-coastal-acidification-marine-life"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/ocean-acidification-explained.webp",
+    "provider": "unsplash",
+    "author": "Paul Jarvis",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/3MtiSMdnoCo"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOmUAFI1fHpFsYd7Xmd4AD++rjVa65XhpS6Mbfrs5us8NjKNlQB4ycyD3lNgdRIVjnXsn9Oh4wicUGBIYHZzh1r0gdAOqZ0EAT6bGY2ka0a4yAWuigA",
+  "dominant": "#727f84"
+}

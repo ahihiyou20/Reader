@@ -1,0 +1,105 @@
+{
+  "slug": "how-gps-knows-where-you-are",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "gps",
+    "navigation",
+    "satellites",
+    "atomic clocks",
+    "relativity"
+  ],
+  "title": {
+    "en": "How GPS knows where you are",
+    "vi": "GPS biết bạn đang ở đâu bằng cách nào"
+  },
+  "hook": {
+    "en": "Each GPS satellite broadcasts its own position and the time. A receiver on the ground, such as the one in your phone, works out where it is by [p:measuring how long those signals took to arrive]. NASA says the system gives meter-level position and time accurate to about 10 nanoseconds, anywhere on Earth, at any hour.",
+    "vi": "Mỗi vệ tinh GPS phát vị trí của chính nó và thời gian. Một máy thu trên mặt đất, như chiếc trong điện thoại của bạn, tính ra mình đang ở đâu bằng cách [p:đo thời gian các tín hiệu đó đến nơi]. NASA cho biết hệ thống cho vị trí cỡ mét và thời gian chính xác đến khoảng 10 nano giây, ở mọi nơi trên Trái Đất, vào mọi giờ."
+  },
+  "sections": [
+    {
+      "heading_en": "Three parts of one system",
+      "heading_vi": "Ba phần của một hệ thống",
+      "body_en": "NASA describes GPS as a space-based radio-navigation system owned by the US government and operated by the US Air Force. It has three parts. The space segment is a constellation of at least [y:24 satellites] spread over six orbital planes, flying at about 20,200 kilometres and circling the Earth every 12 hours. The control segment is a network of ground stations that monitor and maintain the satellites. The user segment is the receivers that process the signals and calculate position and time {nasa-gps}. Today the constellation has over 30 operational satellites.",
+      "body_vi": "NASA mô tả GPS là hệ thống dẫn đường vô tuyến trên không gian do chính phủ Hoa Kỳ sở hữu và Không quân Hoa Kỳ vận hành. Hệ thống có ba phần. Phần không gian là một chòm ít nhất [y:24 vệ tinh] chia trên sáu mặt phẳng quỹ đạo, bay ở độ cao khoảng 20.200 km và quay quanh Trái Đất mỗi 12 giờ. Phần điều khiển là mạng các trạm mặt đất theo dõi và duy trì vệ tinh. Phần người dùng là các máy thu xử lý tín hiệu và tính vị trí cùng thời gian {nasa-gps}. Hiện nay chòm vệ tinh có hơn 30 vệ tinh đang hoạt động."
+    },
+    {
+      "heading_en": "Time becomes distance",
+      "heading_vi": "Thời gian trở thành khoảng cách",
+      "body_en": "Each satellite carries redundant atomic clocks. At regular intervals it transmits its own position and the time of transmission, and receivers on the ground pick the signals up. The receiver then determines its position by calculating how long the signals took to reach it {nasa-gps}. Radio waves travel at a known speed, so a delay can be converted into a distance. Because the signals move so fast, a timing error of even a few microseconds would put a fix far off, which is why the satellites need such precise clocks.",
+      "body_vi": "Mỗi vệ tinh mang các đồng hồ nguyên tử dự phòng. Cứ sau những khoảng đều đặn, nó phát vị trí của mình và thời điểm phát, và các máy thu trên mặt đất bắt tín hiệu. Máy thu sau đó xác định vị trí của nó bằng cách tính tín hiệu mất bao lâu để đến nơi {nasa-gps}. Sóng vô tuyến truyền với tốc độ đã biết, nên độ trễ có thể quy đổi thành khoảng cách. Vì tín hiệu di chuyển rất nhanh, sai lệch thời gian dù chỉ vài micro giây cũng đẩy vị trí lệch rất xa, đó là lý do các vệ tinh cần đồng hồ chính xác đến vậy."
+    },
+    {
+      "heading_en": "Einstein in orbit",
+      "heading_vi": "Einstein trên quỹ đạo",
+      "body_en": "Clocks on the satellites do not tick at the same rate as clocks on the ground. Special and general relativity predicted that, as seen from Earth, GPS satellite clocks run [y:38 microseconds] per day faster than clocks on the surface {wiki-gps}. The idea of using atomic clocks in orbit to test general relativity had been proposed as far back as 1955 by Friedwardt Winterberg. That offset is about 3,800 times the 10 nanoseconds of timing accuracy that NASA quotes.",
+      "body_vi": "Đồng hồ trên vệ tinh không chạy cùng nhịp với đồng hồ dưới mặt đất. Thuyết tương đối hẹp và rộng dự đoán rằng, khi nhìn từ Trái Đất, đồng hồ trên vệ tinh GPS chạy nhanh hơn đồng hồ trên mặt đất [y:38 micro giây] mỗi ngày {wiki-gps}. Ý tưởng dùng đồng hồ nguyên tử trên quỹ đạo để kiểm tra thuyết tương đối rộng đã được Friedwardt Winterberg đề xuất từ năm 1955. Độ lệch đó lớn gấp khoảng 3.800 lần độ chính xác thời gian 10 nano giây mà NASA nêu."
+    },
+    {
+      "heading_en": "From Sputnik to a full constellation",
+      "heading_vi": "Từ Sputnik đến chòm vệ tinh đầy đủ",
+      "body_en": "The origin of GPS lies in the Sputnik era. Scientists could follow the satellite by the shift in its radio signal known as the Doppler effect, which became the foundational idea of modern GPS {nasa-gps}. The US Naval Research Laboratory then launched its Timation satellites, and the third, in 1974, carried the first atomic clock into orbit. Ten Block I prototype satellites were launched between 1978 and 1985, and the 24-satellite constellation became operational in [y:1993] {wiki-gps}. The Department of Defense built it for the military.",
+      "body_vi": "Nguồn gốc của GPS nằm ở thời đại Sputnik. Các nhà khoa học có thể theo dõi vệ tinh qua sự dịch chuyển trong tín hiệu vô tuyến của nó, gọi là hiệu ứng Doppler, và nó trở thành ý tưởng nền tảng của GPS hiện đại {nasa-gps}. Sau đó Phòng thí nghiệm Nghiên cứu Hải quân Hoa Kỳ phóng các vệ tinh Timation, và chiếc thứ ba, năm 1974, mang đồng hồ nguyên tử đầu tiên lên quỹ đạo. Mười vệ tinh nguyên mẫu Block I được phóng từ 1978 đến 1985, và chòm 24 vệ tinh đi vào hoạt động năm [y:1993] {wiki-gps}. Bộ Quốc phòng xây dựng nó cho quân đội."
+    },
+    {
+      "heading_en": "A deliberate error, then none",
+      "heading_vi": "Một sai số có chủ ý, rồi không còn",
+      "body_en": "At first, the best-quality signal was reserved for military use. Civilian signals were deliberately degraded in a policy called Selective Availability, which limited civilian accuracy to an average of about 100 metres. Military receivers could correct the error. The US enacted a law ordering Selective Availability switched off on 1 May 2000, and in 2007 the government announced that the next generation of satellites would not include the feature {wiki-gps}. Without it, GPS was accurate to about [y:5 metres].",
+      "body_vi": "Lúc đầu, tín hiệu chất lượng tốt nhất được dành cho quân sự. Tín hiệu dân sự bị cố ý làm suy giảm theo chính sách gọi là Khả dụng có chọn lọc (*Selective Availability*), giới hạn độ chính xác dân sự ở mức trung bình khoảng 100 mét. Máy thu quân sự có thể hiệu chỉnh sai số này. Hoa Kỳ ban hành luật yêu cầu tắt Khả dụng có chọn lọc vào ngày 1 tháng 5 năm 2000, và năm 2007 chính phủ thông báo thế hệ vệ tinh kế tiếp sẽ không có tính năng này {wiki-gps}. Khi không còn nó, GPS chính xác khoảng [y:5 mét]."
+    },
+    {
+      "heading_en": "Beyond the road",
+      "heading_vi": "Vượt ra ngoài mặt đường",
+      "body_en": "GPS serves national defence, homeland security, civil, commercial and scientific needs, according to NASA, and the agency uses it in space too. NASA has developed GPS receivers that fly on spacecraft; one from Goddard Space Flight Center flew on the 2009 Hubble servicing mission and was judged very successful {nasa-gps}. The system is still being upgraded. As of March 2026, 21 satellites broadcast the newer L5 signal, which is considered pre-operational until all 24 are available in 2027 {wiki-gps}.",
+      "body_vi": "GPS phục vụ nhu cầu quốc phòng, an ninh nội địa, dân sự, thương mại và khoa học, theo NASA, và cơ quan này cũng dùng nó trong không gian. NASA đã phát triển các máy thu GPS bay trên tàu vũ trụ; một máy từ Trung tâm Bay Không gian Goddard bay trong sứ mệnh bảo trì Hubble năm 2009 và được đánh giá là rất thành công {nasa-gps}. Hệ thống vẫn đang được nâng cấp. Tính đến tháng 3 năm 2026, 21 vệ tinh phát tín hiệu L5 mới hơn, được coi là chưa chính thức hoạt động cho đến khi cả 24 vệ tinh sẵn sàng vào năm 2027 {wiki-gps}."
+    }
+  ],
+  "keyPoint": {
+    "en": "Satellites broadcast their position and the time, and your receiver turns the delay of each signal into a distance. That only works because satellite atomic clocks are extremely precise and corrected for relativity. Accuracy for civilians improved to about 5 metres once the deliberate error was switched off in 2000.",
+    "vi": "Vệ tinh phát vị trí và thời gian, còn máy thu của bạn biến độ trễ của mỗi tín hiệu thành khoảng cách. Điều đó chỉ hoạt động vì đồng hồ nguyên tử trên vệ tinh cực kỳ chính xác và được hiệu chỉnh theo thuyết tương đối. Độ chính xác cho dân thường được cải thiện lên khoảng 5 mét khi sai số có chủ ý bị tắt năm 2000."
+  },
+  "applySteps": {
+    "en": [
+      "Turn off your phone's mobile data and Wi-Fi, open a maps app outdoors, and see whether it still finds your position.",
+      "Look up how many GPS satellites your phone can see right now, using a satellite-status app.",
+      "Find a map of the six orbital planes and place where one satellite is passing overhead at this moment."
+    ],
+    "vi": [
+      "Tắt dữ liệu di động và Wi-Fi trên điện thoại, mở ứng dụng bản đồ ngoài trời và xem nó có còn tìm ra vị trí của bạn không.",
+      "Dùng một ứng dụng trạng thái vệ tinh để xem điện thoại của bạn đang thấy bao nhiêu vệ tinh GPS.",
+      "Tìm sơ đồ sáu mặt phẳng quỹ đạo và xác định chỗ một vệ tinh đang bay qua đầu vào lúc này."
+    ]
+  },
+  "references": [
+    {
+      "id": "nasa-gps",
+      "label": "NASA, GPS",
+      "url": "https://www.nasa.gov/directorates/somd/space-communications-navigation-program/gps/"
+    },
+    {
+      "id": "wiki-gps",
+      "label": "Global Positioning System, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Global_Positioning_System"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/how-gps-knows-where-you-are.webp",
+    "provider": "unsplash",
+    "author": "Guillaume",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/_DA3D5P71qs"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQAwCdASoQABwAPu1kqk4ppaQiMAgBMB2JYwAAg/AchHJpoAD+7+Out0izoPesGppS74B4yXrT6+mYrX3AgpVIdOJ4EfQ/BEAAAA==",
+  "dominant": "#1a1c0e"
+}

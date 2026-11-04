@@ -1,0 +1,110 @@
+{
+  "slug": "peak-end-rule-how-we-remember",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "psychology",
+  "tags": [
+    "memory",
+    "decision making",
+    "kahneman",
+    "experience",
+    "psychology"
+  ],
+  "title": {
+    "en": "The peak–end rule: why endings shape memory",
+    "vi": "Quy tắc đỉnh–cuối: vì sao kết thúc định hình ký ức"
+  },
+  "hook": {
+    "en": "In a 1993 experiment, volunteers chose to repeat a trial in which their hand sat in cold water for 90 seconds over one lasting 60 seconds. The longer trial held 30 extra seconds of discomfort. It was preferred because it ended slightly better. Memory seems to keep [p:two moments of an experience], the most intense and the last, and mostly drop the rest.",
+    "vi": "Trong một thí nghiệm năm 1993, các tình nguyện viên chọn lặp lại lần thử ngâm tay trong nước lạnh 90 giây thay vì lần 60 giây. Lần dài hơn có thêm 30 giây khó chịu. Nó được ưa hơn vì kết thúc dễ chịu hơn một chút. Trí nhớ dường như giữ lại [p:hai khoảnh khắc của một trải nghiệm], khoảnh khắc mãnh liệt nhất và khoảnh khắc cuối cùng, còn phần lớn phần còn lại thì bỏ đi."
+  },
+  "sections": [
+    {
+      "heading_en": "The cold-water trials",
+      "heading_vi": "Những lần ngâm tay trong nước lạnh",
+      "body_en": "Daniel Kahneman, Barbara Fredrickson, Charles Schreiber and Donald Redelmeier asked participants to put a hand in 14 °C water for 60 seconds. In a second trial the other hand stayed in the water for [y:90 seconds]: the first 60 at 14 °C, then 30 more as the temperature rose to 15 °C. Participants were then allowed to choose which trial to repeat. Most were more willing to repeat the longer one, even though it involved more time in uncomfortable water {wiki-peakend}. The authors concluded that people picked it because they liked the memory better.",
+      "body_vi": "Daniel Kahneman, Barbara Fredrickson, Charles Schreiber và Donald Redelmeier yêu cầu người tham gia nhúng một bàn tay vào nước 14 °C trong 60 giây. Ở lần thử thứ hai, bàn tay còn lại ở trong nước [y:90 giây]: 60 giây đầu ở 14 °C, rồi thêm 30 giây khi nhiệt độ tăng lên 15 °C. Sau đó người tham gia được chọn lần thử nào để làm lại. Phần lớn sẵn lòng lặp lại lần dài hơn, dù nó nghĩa là ở trong nước khó chịu lâu hơn {wiki-peakend}. Các tác giả kết luận rằng người ta chọn nó vì thích ký ức về nó hơn."
+    },
+    {
+      "heading_en": "Two snapshots, not a total",
+      "heading_vi": "Hai bức ảnh chụp nhanh, không phải tổng số",
+      "body_en": "The **peak–end rule** says people judge an experience mostly by how they felt at its most intense point and at its end, rather than by the sum or average of every moment {wiki-peakend}. It holds whether the experience was pleasant or unpleasant. Other information is not erased, but it goes largely unused. That includes how long the experience lasted. The idea grows out of the snapshot model of Fredrickson and Kahneman, in which memory works from a few representative moments of what happened.",
+      "body_vi": "**Quy tắc đỉnh–cuối** (*peak–end rule*) cho rằng người ta đánh giá một trải nghiệm chủ yếu qua cảm giác ở điểm mãnh liệt nhất và ở lúc kết thúc, chứ không qua tổng hay trung bình của mọi khoảnh khắc {wiki-peakend}. Điều này đúng dù trải nghiệm dễ chịu hay khó chịu. Các thông tin khác không bị xóa, nhưng phần lớn không được dùng đến, kể cả việc trải nghiệm kéo dài bao lâu. Ý tưởng này phát triển từ mô hình ảnh chụp nhanh của Fredrickson và Kahneman, trong đó trí nhớ làm việc dựa trên vài khoảnh khắc tiêu biểu của những gì đã xảy ra."
+    },
+    {
+      "heading_en": "Duration barely counts",
+      "heading_vi": "Thời lượng gần như không được tính",
+      "body_en": "Fredrickson and Kahneman tested this with film clips. In one experiment 32 people watched pleasant and aversive clips that differed in length and intensity, giving ratings in real time and an overall judgment afterwards. A second experiment used 96 people who ranked the clips later. Clip length had only a [y:small effect] on the overall judgments, and the effect shrank further when people judged from memory {fredrickson-1993}. The authors called this duration neglect. Judgments tracked a weighted average of snapshots, as if time did not matter.",
+      "body_vi": "Fredrickson và Kahneman kiểm tra điều này bằng các đoạn phim ngắn. Ở một thí nghiệm, 32 người xem các đoạn phim dễ chịu và khó chịu khác nhau về độ dài và cường độ, vừa chấm cảm xúc theo thời gian thực vừa đưa ra đánh giá chung sau đó. Thí nghiệm thứ hai có 96 người xếp hạng các đoạn phim vào lúc sau. Độ dài đoạn phim chỉ có [y:ảnh hưởng nhỏ] lên các đánh giá chung, và ảnh hưởng ấy còn giảm hơn khi người ta đánh giá từ trí nhớ {fredrickson-1993}. Các tác giả gọi đó là sự bỏ qua thời lượng (*duration neglect*). Đánh giá bám theo trung bình có trọng số của các ảnh chụp nhanh, như thể thời gian không quan trọng."
+    },
+    {
+      "heading_en": "Medical procedures",
+      "heading_vi": "Các thủ thuật y tế",
+      "body_en": "The rule was also tested in clinics. In a 1996 study Kahneman and Redelmeier asked patients to appraise colonoscopy or lithotripsy procedures. Patients judged the discomfort by the worst moment and the final moment, whatever the length of the procedure {wiki-peakend}. A later study randomly gave colonoscopy patients either a standard procedure or one in which the scope stayed in place, unmoved, for [y:three extra minutes], which felt uncomfortable but not painful. Patients who had the longer procedure rated their experience as less unpleasant.",
+      "body_vi": "Quy tắc này cũng được thử ở bệnh viện. Trong nghiên cứu năm 1996, Kahneman và Redelmeier yêu cầu bệnh nhân đánh giá các thủ thuật nội soi đại tràng hoặc tán sỏi. Bệnh nhân đánh giá mức khó chịu theo khoảnh khắc tệ nhất và khoảnh khắc cuối, bất kể thủ thuật kéo dài bao lâu {wiki-peakend}. Một nghiên cứu sau đó chia ngẫu nhiên bệnh nhân nội soi đại tràng vào nhóm làm thủ thuật chuẩn hoặc nhóm mà ống soi được giữ nguyên, không di chuyển, thêm [y:ba phút], gây cảm giác khó chịu nhưng không đau. Bệnh nhân làm thủ thuật dài hơn đánh giá trải nghiệm của mình ít khó chịu hơn."
+    },
+    {
+      "heading_en": "A catch for doctors",
+      "heading_vi": "Một vướng mắc cho bác sĩ",
+      "body_en": "A better memory could make people more willing to return for repeat procedures, such as follow-up screenings. Yet adding a gentler stretch to the end still adds time on the table, so the patient endures more discomfort than strictly needed {wiki-peakend}. Doctors and patients face a choice between the less painful procedure and the one remembered more kindly. A 2025 ethical analysis argues that exploiting the rule this way may fail to respect patient autonomy if patients are not told what is being done and why {armitage-2025}.",
+      "body_vi": "Ký ức tốt hơn có thể khiến người ta sẵn lòng quay lại cho các thủ thuật lặp lại, như tầm soát theo dõi. Nhưng việc thêm một đoạn nhẹ nhàng ở cuối vẫn kéo dài thời gian nằm trên bàn, nên bệnh nhân chịu khó chịu nhiều hơn mức cần thiết {wiki-peakend}. Bác sĩ và bệnh nhân phải chọn giữa thủ thuật ít đau hơn và thủ thuật được nhớ lại dễ chịu hơn. Một phân tích đạo đức năm 2025 lập luận rằng việc khai thác quy tắc này theo cách đó có thể không tôn trọng quyền tự quyết của bệnh nhân nếu họ không được cho biết điều gì đang được làm và vì sao {armitage-2025}."
+    },
+    {
+      "heading_en": "Limits of the rule",
+      "heading_vi": "Giới hạn của quy tắc",
+      "body_en": "The rule applies only to experiences with a clear beginning and end {wiki-peakend}. Kahneman and Ziv Carmon also found a boundary condition: when real-time feelings depend on expectations, and those expectations are not met, they are discounted afterwards. The rule describes how memory tends to behave, not a law that overrides every other factor. It does offer one practical lesson for anything you plan, from a meeting to a holiday: [g:the final minutes] carry unusual weight in what people take away.",
+      "body_vi": "Quy tắc này chỉ áp dụng cho những trải nghiệm có điểm bắt đầu và kết thúc rõ ràng {wiki-peakend}. Kahneman và Ziv Carmon cũng tìm ra một điều kiện biên: khi cảm xúc theo thời gian thực phụ thuộc vào kỳ vọng và những kỳ vọng ấy không được đáp ứng, chúng bị giảm trọng lượng về sau. Quy tắc mô tả cách trí nhớ thường vận hành, chứ không phải định luật lấn át mọi yếu tố khác. Nó đem lại một bài học thực tế cho bất cứ điều gì bạn lên kế hoạch, từ một cuộc họp đến một kỳ nghỉ: [g:những phút cuối] có sức nặng khác thường trong những gì người ta mang về."
+    }
+  ],
+  "keyPoint": {
+    "en": "People remember an experience mostly through its most intense moment and its ending, and give little weight to how long it lasted. Experiments with cold water, film clips and colonoscopies point the same way. When you plan something people will remember, design its ending as carefully as its middle.",
+    "vi": "Người ta nhớ một trải nghiệm chủ yếu qua khoảnh khắc mãnh liệt nhất và đoạn kết, và ít tính đến việc nó kéo dài bao lâu. Các thí nghiệm với nước lạnh, đoạn phim và nội soi đại tràng đều chỉ cùng một hướng. Khi lên kế hoạch cho điều gì mà người khác sẽ nhớ, hãy thiết kế đoạn kết cẩn thận như phần giữa."
+  },
+  "applySteps": {
+    "en": [
+      "End your next meeting or lesson with one clear, positive moment, such as a short summary of what was agreed.",
+      "After a hard task, note what the final minutes were like before deciding whether you would do it again.",
+      "Next time you review a past experience, ask what the most intense moment was, and check whether it distorts your overall verdict."
+    ],
+    "vi": [
+      "Kết thúc buổi họp hoặc bài giảng tiếp theo bằng một khoảnh khắc rõ ràng và tích cực, chẳng hạn một bản tóm tắt ngắn những gì đã thống nhất.",
+      "Sau một việc khó, hãy ghi lại những phút cuối ra sao trước khi quyết định có làm lại hay không.",
+      "Lần tới khi nhìn lại một trải nghiệm, hãy hỏi khoảnh khắc mãnh liệt nhất là gì, và xem nó có làm méo nhận định chung của bạn không."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-peakend",
+      "label": "Peak–end rule, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule"
+    },
+    {
+      "id": "fredrickson-1993",
+      "label": "Fredrickson & Kahneman (1993)",
+      "url": "https://doi.org/10.1037/0022-3514.65.1.45"
+    },
+    {
+      "id": "armitage-2025",
+      "label": "Armitage (2025)",
+      "url": "https://doi.org/10.1111/jep.70264"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/peak-end-rule-how-we-remember.webp",
+    "provider": "unsplash",
+    "author": "Yoni Kaplan-Nadel",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/iJnZwLBOB1I"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoQABwAPu1mq04ppaQiMAgBMB2JZgCdMoRwAIM+XXLVl4AA/vs5tki27ECLPH0ezKa+ETniAFRk9euJbOR5ijnTpEX/DTmqnal3WE3VK6km3bIBJ0XzZajYkZpcmdfaP6QAAA==",
+  "dominant": "#7a6050"
+}

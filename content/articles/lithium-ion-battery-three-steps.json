@@ -1,0 +1,105 @@
+{
+  "slug": "lithium-ion-battery-three-steps",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "batteries",
+    "lithium-ion",
+    "nobel prize",
+    "energy storage",
+    "chemistry"
+  ],
+  "title": {
+    "en": "How the lithium-ion battery was built in three steps",
+    "vi": "Pin lithium-ion được tạo ra qua ba bước như thế nào"
+  },
+  "hook": {
+    "en": "The battery in your phone came out of the oil crisis of the 1970s. Researchers looking for fossil-fuel-free energy technology built a battery that gave just over [y:two volts] but was too explosive to be viable. It took two more breakthroughs, one in 1980 and one in 1985, before a commercial version reached shops in 1991. In 2019 the three chemists behind these steps shared a Nobel Prize.",
+    "vi": "Viên pin trong điện thoại của bạn ra đời từ cuộc khủng hoảng dầu mỏ thập niên 1970. Các nhà nghiên cứu tìm công nghệ năng lượng không dùng nhiên liệu hóa thạch đã chế tạo một viên pin cho hơn [y:hai vôn] một chút nhưng quá dễ nổ để dùng được. Phải thêm hai đột phá, một vào năm 1980 và một vào năm 1985, thì một phiên bản thương mại mới ra cửa hàng năm 1991. Năm 2019, ba nhà hóa học đứng sau các bước này cùng nhận giải Nobel."
+  },
+  "sections": [
+    {
+      "heading_en": "Step one: a cathode with room for lithium",
+      "heading_vi": "Bước một: catốt có chỗ cho lithium",
+      "body_en": "Stanley Whittingham was working on fossil-fuel-free energy technologies during the oil crisis. While studying superconductors he found an extremely energy-rich material and used it to make a new cathode in a lithium battery. It was made of titanium disulphide, which at a molecular level has spaces that can house lithium ions, a process called intercalation {nobel-2019}. The anode used metallic lithium, which has a strong drive to release electrons. The result was a battery with a potential of just over two volts.",
+      "body_vi": "Stanley Whittingham khi đó đang nghiên cứu các công nghệ năng lượng không dùng nhiên liệu hóa thạch trong cuộc khủng hoảng dầu mỏ. Trong lúc nghiên cứu chất siêu dẫn, ông tìm thấy một vật liệu giàu năng lượng đặc biệt và dùng nó làm catốt mới trong pin lithium. Catốt làm từ titan disulfua, ở cấp độ phân tử có những khoảng trống chứa được ion lithium, một quá trình gọi là xen kẽ (*intercalation*) {nobel-2019}. Anốt dùng lithium kim loại, chất có xu hướng mạnh nhả electron. Kết quả là một viên pin có hiệu điện thế chỉ hơn hai vôn."
+    },
+    {
+      "heading_en": "Why it never sold",
+      "heading_vi": "Vì sao nó không bán được",
+      "body_en": "Metallic lithium is reactive, and the battery was too explosive to be viable {nobel-2019}. Wikipedia adds that the cells were prone to spontaneously catch fire because of the metallic lithium inside, and that Exxon discontinued development of the lithium–titanium disulphide battery {wiki-liion}. The design showed that intercalation could work. The remaining task was to find materials that made the idea safe and gave more voltage.",
+      "body_vi": "Lithium kim loại có tính phản ứng cao, và viên pin quá dễ nổ để dùng được {nobel-2019}. Wikipedia bổ sung rằng các tế bào pin dễ tự bốc cháy vì lithium kim loại bên trong, và Exxon đã ngừng phát triển loại pin lithium–titan disulfua {wiki-liion}. Thiết kế đó cho thấy xen kẽ có thể hoạt động. Việc còn lại là tìm vật liệu làm ý tưởng an toàn và cho điện áp cao hơn."
+    },
+    {
+      "heading_en": "Step two: a better cathode",
+      "heading_vi": "Bước hai: catốt tốt hơn",
+      "body_en": "John Goodenough predicted that a metal oxide would give the cathode more potential than a metal sulphide. After a systematic search, in 1980 he showed that cobalt oxide with lithium ions intercalated in it could produce as much as [y:four volts] {nobel-2019}. That is about double the first battery. Wikipedia notes that his lithium cobalt oxide has a similar layered structure to the earlier material but offers higher voltage and much more stability in air {wiki-liion}.",
+      "body_vi": "John Goodenough dự đoán rằng một oxit kim loại sẽ cho catốt hiệu điện thế cao hơn sunfua kim loại. Sau một cuộc tìm kiếm có hệ thống, năm 1980 ông chứng minh rằng cobalt oxit có xen ion lithium có thể tạo ra tới [y:bốn vôn] {nobel-2019}. Đó là khoảng gấp đôi viên pin đầu tiên. Wikipedia ghi nhận lithium cobalt oxit của ông có cấu trúc lớp tương tự vật liệu trước nhưng cho điện áp cao hơn và ổn định hơn nhiều trong không khí {wiki-liion}."
+    },
+    {
+      "heading_en": "Step three: drop the metal",
+      "heading_vi": "Bước ba: bỏ kim loại",
+      "body_en": "With Goodenough's cathode as a base, Akira Yoshino built the first commercially viable lithium-ion battery in 1985. Instead of reactive lithium, his anode used petroleum coke, a carbon material that, like the cathode's cobalt oxide, can intercalate lithium ions. The result was a lightweight, hardwearing battery that could be charged hundreds of times before its performance fell {nobel-2019}. A Sony and Asahi Kasei team led by Yoshio Nishi brought it to market in 1991 {wiki-liion}.",
+      "body_vi": "Lấy catốt của Goodenough làm nền, Akira Yoshino chế tạo viên pin lithium-ion khả thi về thương mại đầu tiên vào năm 1985. Thay vì lithium dễ phản ứng, anốt của ông dùng than cốc dầu mỏ, một vật liệu carbon mà cũng như cobalt oxit ở catốt, có thể xen ion lithium. Kết quả là viên pin nhẹ, bền, sạc được hàng trăm lần trước khi hiệu năng suy giảm {nobel-2019}. Một nhóm của Sony và Asahi Kasei do Yoshio Nishi dẫn đầu đưa nó ra thị trường năm 1991 {wiki-liion}."
+    },
+    {
+      "heading_en": "How it works now",
+      "heading_vi": "Nó hoạt động thế nào",
+      "body_en": "The Nobel committee points to the key design idea. A lithium-ion battery does not rely on chemical reactions that break down its electrodes. Instead, lithium ions flow back and forth between the anode and the cathode {nobel-2019}. Both electrodes hold lithium ions in their structure, so charging and discharging move ions from one to the other. The Academy states that the batteries have been used for portable electronics, long-range electric cars and storing energy from solar and wind power.",
+      "body_vi": "Ủy ban Nobel chỉ ra ý tưởng thiết kế then chốt. Pin lithium-ion không dựa vào các phản ứng hóa học làm hỏng điện cực. Thay vào đó, ion lithium chảy qua lại giữa anốt và catốt {nobel-2019}. Cả hai điện cực đều giữ ion lithium trong cấu trúc, nên sạc và xả là chuyển ion từ điện cực này sang điện cực kia. Viện Hàn lâm nêu rằng các viên pin này đã được dùng cho thiết bị điện tử di động, ô tô điện đi xa và lưu trữ năng lượng từ điện mặt trời và điện gió."
+    },
+    {
+      "heading_en": "Costs and open problems",
+      "heading_vi": "Chi phí và vấn đề còn lại",
+      "body_en": "In the three decades after 1991, Li-ion batteries became about three times denser in volume energy and ten times cheaper, according to Wikipedia {wiki-liion}. The technology still has problems. Cells contain flammable electrolytes, so they can be a fire or explosion hazard. Lithium mining uses a lot of water, often in arid regions, and cobalt, used in some chemistries, can be a conflict mineral.",
+      "body_vi": "Trong ba thập kỷ sau 1991, pin Li-ion có mật độ năng lượng theo thể tích tăng khoảng ba lần và rẻ đi mười lần, theo Wikipedia {wiki-liion}. Công nghệ vẫn còn vấn đề. Các tế bào chứa chất điện phân dễ cháy, nên có thể gây nguy cơ cháy nổ. Khai thác lithium dùng nhiều nước, thường ở vùng khô hạn, và cobalt, dùng trong một số loại hóa học pin, có thể là khoáng sản xung đột."
+    }
+  ],
+  "keyPoint": {
+    "en": "The lithium-ion battery came in three steps: Whittingham's cathode that holds lithium ions, Goodenough's cobalt oxide cathode with up to four volts, and Yoshino's carbon anode that replaced reactive lithium metal. It stores energy by moving ions between electrodes, and it reached the market in 1991.",
+    "vi": "Pin lithium-ion ra đời qua ba bước: catốt giữ ion lithium của Whittingham, catốt cobalt oxit của Goodenough đạt tới bốn vôn, và anốt carbon của Yoshino thay cho lithium kim loại dễ phản ứng. Nó lưu trữ năng lượng bằng cách chuyển ion giữa các điện cực, và ra thị trường năm 1991."
+  },
+  "applySteps": {
+    "en": [
+      "Check the label on your phone or laptop battery and find out its chemistry and capacity.",
+      "Find out where your local electronics recycling point is, and take one dead battery there.",
+      "Read the Nobel Prize announcement for 2019 and find the sentence on why metallic lithium was dropped."
+    ],
+    "vi": [
+      "Xem nhãn trên pin điện thoại hoặc laptop của bạn và tìm hiểu loại hóa học và dung lượng của nó.",
+      "Tìm điểm thu gom tái chế đồ điện tử ở địa phương và mang một viên pin hỏng đến đó.",
+      "Đọc thông báo giải Nobel 2019 và tìm câu nói về lý do bỏ lithium kim loại."
+    ]
+  },
+  "references": [
+    {
+      "id": "nobel-2019",
+      "label": "Nobel Prize in Chemistry 2019, press release",
+      "url": "https://www.nobelprize.org/prizes/chemistry/2019/press-release/"
+    },
+    {
+      "id": "wiki-liion",
+      "label": "Lithium-ion battery, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lithium-ion_battery"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/lithium-ion-battery-three-steps.webp",
+    "provider": "unsplash",
+    "author": "Vadim Sherbakov",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/osSryggkso4"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQAwCdASoQABwAPu1iqU2ppaOiMAgBMB2JZwAD4/IMiS0jxyRR1AAA/rI+hOIHyBdJaa5+rSNZG/w8Oeh28FPRwdDeqjaQAt2zW4Bem+TuG0KekIg19pnvCI51glZUo22RrymjqtvUDmNe+YJ7OO6PC9uFP/BrZObDLOTctIWdB2lcrEdFA2Qo//fLg+g0UbS/z97SKzfQrcRxyvoACDvYfakaW9OmRv7tPg0X5v2fzWOMRrP1TCzoXAAAAA==",
+  "dominant": "#7b7b78"
+}
