@@ -59,3 +59,18 @@ export const MARKUP_RULES =
 
 export const VI_STYLE =
   'Write natural Vietnamese for educated adult readers, not word-for-word. Keep each English technical term in italics in brackets after its first Vietnamese use, e.g. thiên kiến xác nhận (*confirmation bias*).';
+
+/**
+ * House writing rules, distilled from the avoid-ai-writing and creative-writing (llm-writing) skills
+ * the editors use. Every prompt that writes prose for readers includes them.
+ */
+export const WRITING_RULES = [
+  'Writing rules (they apply to every field you write, in both languages):',
+  '- Write for the reader of the app, who knows nothing yet. Each section makes one move; lead with the finding, then the evidence. Cut any sentence that only fills space.',
+  '- Explain how things work instead of naming them. Back each claim with the number, name, date or example from the source. Never invent a specific, a quote, an experience or an opinion the source does not contain; if a detail is missing, leave it out.',
+  '- Keep the source\'s level of certainty: say "may" only where the source hedges, and say plainly what is unknown.',
+  '- Banned words and phrases: delve, landscape (as a metaphor), tapestry, realm, paradigm, embark, beacon, testament to, robust, comprehensive, cutting-edge, leverage, pivotal, underscores, meticulous, seamless, game-changer, watershed moment, nestled, vibrant, thriving, showcasing, deep dive, unpack, bustling, intricate, ever-evolving, holistic, actionable, impactful, at its core, interplay, "it\'s worth noting", "notably", "moreover", "furthermore", "additionally", "in today\'s…", "in an era where", "when it comes to", "at the end of the day", "in conclusion", "in summary", "the future looks bright", "only time will tell", "experts say" without naming them.',
+  '- No "not X, but Y" pairs where one half carries the meaning, no lists of three by habit, no closing line that restates the article or predicts a bright future, no rhetorical questions as openers, no exclamation marks, at most one em dash per section, and bold only on the one phrase that matters.',
+  '- Vary sentence length because the content varies, not by chopping sentences into fragments. Use plain verbs ("is", "has") rather than "serves as", "boasts", "features".',
+  '- Vietnamese: the same rules apply. Avoid stock openers and fillers such as "Trong thời đại…", "Không thể phủ nhận…", "đóng vai trò quan trọng", "Tóm lại", "Có thể nói", "không chỉ… mà còn…" used by habit, and translated-sounding noun stacks; write the way a Vietnamese science journalist would.',
+].join('\n');
