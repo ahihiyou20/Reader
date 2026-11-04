@@ -20,6 +20,14 @@ own pull request; this routine does not touch it.
   DOI), government agencies (NIH, CDC, NASA, NOAA, USGS, NIST), Our World in Data, Wikipedia for
   history, reputable science journalism. Never cite a page you have not read.
 - Every number, name, date and quote must come from a source; a fact you cannot source is cut.
+- Some sites block the cloud session (seen 2026-11-04: PubMed, CDC, FDA, BLS, Britannica). Reach
+  papers through the Europe PMC API (`https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=…&resultType=core&format=json`,
+  which returns abstracts and DOIs), and use WHO, NHS, NOAA, NASA, NIST, USGS, Our World in Data,
+  nobelprize.org, national statistics offices and Wikipedia. Pick topics whose sources you can open.
+- Research enough per topic to fill 700 words with sourced facts; if a topic is thin, choose
+  another topic instead of publishing a short article.
+- Keep going until 20 articles pass validation or about 90 minutes have passed; work in batches
+  (research 5 topics, write 5, validate) so a slow source does not stall the whole run.
 - Write in your own words. Do not copy sentences; quotations stay under 8 words.
 
 ## 3. Write
