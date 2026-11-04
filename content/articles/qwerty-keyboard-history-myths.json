@@ -1,0 +1,104 @@
+{
+  "slug": "qwerty-keyboard-history-myths",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "qwerty",
+    "keyboards",
+    "typewriters",
+    "design history"
+  ],
+  "title": {
+    "en": "Why your keyboard is QWERTY, and what we actually know",
+    "vi": "Vì sao bàn phím của bạn là QWERTY, và điều ta thật sự biết"
+  },
+  "hook": {
+    "en": "The layout on your phone and laptop dates to a typewriter sold from [y:1874]. A popular story says it was scrambled to stop typebars jamming. The evidence for that is thin, and the better-documented story is one of [p:trial and error, a business deal and a sales trick that nobody has proved].",
+    "vi": "Bố cục trên điện thoại và laptop của bạn bắt nguồn từ một chiếc máy đánh chữ bán từ [y:năm 1874]. Một câu chuyện phổ biến nói rằng nó bị xáo trộn để tránh kẹt cần chữ. Bằng chứng cho điều đó mỏng, và câu chuyện có tài liệu tốt hơn là về [p:thử và sai, một thương vụ và một mẹo bán hàng chưa ai chứng minh]."
+  },
+  "sections": [
+    {
+      "heading_en": "Alphabetical at first",
+      "heading_vi": "Ban đầu xếp theo bảng chữ cái",
+      "body_en": "Christopher Latham Sholes, a newspaper editor and printer in Kenosha, Wisconsin, filed a patent in October 1867 for an early writing machine built with Carlos Glidden and Samuel Soulé. The first model had a piano-like keyboard with two rows of characters in alphabetical order. For the next five years Sholes tried many rearrangements by trial and error {wiki-qwerty}. By April 1870 he had a four-row, upper-case keyboard that was close to the modern layout and had moved the vowels A, E, I, O, U and Y to the upper row.",
+      "body_vi": "Christopher Latham Sholes, một biên tập viên báo và thợ in ở Kenosha, Wisconsin, nộp bằng sáng chế tháng 10 năm 1867 cho một máy viết thời kỳ đầu, chế tạo cùng Carlos Glidden và Samuel Soulé. Mẫu đầu tiên có bàn phím giống đàn piano với hai hàng ký tự xếp theo thứ tự bảng chữ cái. Suốt năm năm sau đó, Sholes thử nhiều cách sắp xếp lại bằng thử và sai {wiki-qwerty}. Đến tháng 4 năm 1870, ông có bàn phím bốn hàng, chữ hoa, gần với bố cục hiện đại và đã chuyển các nguyên âm A, E, I, O, U và Y lên hàng trên."
+    },
+    {
+      "heading_en": "A sale to Remington",
+      "heading_vi": "Thương vụ bán cho Remington",
+      "body_en": "In 1873 Sholes's backer James Densmore sold the manufacturing rights for the Sholes Glidden Type-Writer to E. Remington and Sons. Remington's mechanics finalised the keyboard within a few months and made several adjustments, including putting the R key where the period key had been {wiki-qwerty}. Vestiges of the original alphabetical layout remain in the home row sequence D, F, G, H, J, K, L. The layout spread with the Remington No. 2 of 1878, the first typewriter with a Shift key for upper and lower case.",
+      "body_vi": "Năm 1873, nhà tài trợ của Sholes là James Densmore bán quyền sản xuất máy Sholes Glidden Type-Writer cho E. Remington and Sons. Thợ máy của Remington hoàn thiện bàn phím trong vài tháng và thực hiện vài điều chỉnh, gồm đặt phím R vào vị trí trước đây của phím dấu chấm {wiki-qwerty}. Dấu vết của bố cục bảng chữ cái ban đầu còn ở dãy phím hàng giữa D, F, G, H, J, K, L. Bố cục lan rộng cùng chiếc Remington số 2 năm 1878, máy đánh chữ đầu tiên có phím Shift cho chữ hoa và chữ thường."
+    },
+    {
+      "heading_en": "The jam story",
+      "heading_vi": "Chuyện kẹt cần chữ",
+      "body_en": "The popular explanation is that QWERTY keeps commonly paired letters far apart inside the machine so typebars would not clash. The source treats that as possibly invented, or even incorrect {wiki-qwerty}. Two other ideas exist. One credits the letter-pair frequency study of Amos Densmore, brother of the backer, but others consider this conjecture unfounded. The other says the groupings came from the feedback of American Morse telegraph operators, who noted that E and R often go together in English. Neither has been settled.",
+      "body_vi": "Cách giải thích phổ biến là QWERTY đặt các chữ hay đi cặp xa nhau bên trong máy để cần chữ không va nhau. Nguồn tham khảo coi điều này có thể là bịa đặt, hoặc thậm chí không đúng {wiki-qwerty}. Còn hai ý tưởng khác. Một ý cho rằng nhờ nghiên cứu tần suất cặp chữ của Amos Densmore, anh trai của nhà tài trợ, nhưng những người khác coi giả thuyết này không có căn cứ. Ý kia nói rằng cách nhóm chữ đến từ phản hồi của các điện báo viên Morse Mỹ, những người nhận thấy E và R thường đi cùng nhau trong tiếng Anh. Chưa ý nào được chốt."
+    },
+    {
+      "heading_en": "The salesman's trick",
+      "heading_vi": "Mẹo của người bán hàng",
+      "body_en": "Another story explains why R sits in the top row: it let salesmen impress customers by typing the brand name \"TYPE WRITER\" from a single row. This is supposed but not formally substantiated {wiki-qwerty}. The sources do not let us choose between the stories: the exact reason for each placement is not documented.",
+      "body_vi": "Một câu chuyện khác giải thích vì sao R nằm ở hàng trên: nó giúp người bán gây ấn tượng với khách bằng cách gõ tên hiệu \"TYPE WRITER\" chỉ từ một hàng phím. Điều này chỉ là giả định và chưa được chứng minh chính thức {wiki-qwerty}. Các nguồn không cho phép ta chọn giữa các câu chuyện: lý do chính xác cho từng vị trí không có tài liệu."
+    },
+    {
+      "heading_en": "The challenger that never won",
+      "heading_vi": "Đối thủ chưa bao giờ thắng",
+      "body_en": "August Dvorak and his brother-in-law William Dealey patented a layout in 1936 as a faster, more ergonomic option, based on letter frequencies and the physiology of the hand. Supporters claim fewer errors and less finger motion. Dvorak has not replaced QWERTY, and the most pointed-to reasons are that QWERTY was popular 60 years earlier and that Dvorak's advantages are debated and relatively small {wiki-dvorak}. ANSI recognised Dvorak as an alternative standard in 1982.",
+      "body_vi": "August Dvorak và anh rể William Dealey đăng ký bằng sáng chế một bố cục năm 1936 như lựa chọn nhanh hơn, công thái học hơn, dựa trên tần suất chữ cái và sinh lý của bàn tay. Những người ủng hộ cho rằng ít lỗi và ít chuyển động ngón tay hơn. Dvorak chưa thay được QWERTY, và các lý do hay được nêu nhất là QWERTY đã phổ biến trước đó 60 năm và ưu điểm của Dvorak còn tranh cãi và tương đối nhỏ {wiki-dvorak}. ANSI công nhận Dvorak là một tiêu chuẩn thay thế vào năm 1982."
+    },
+    {
+      "heading_en": "Why it stayed",
+      "heading_vi": "Vì sao nó ở lại",
+      "body_en": "QWERTY remains the de facto standard on computers as of 2026 {wiki-qwerty}. Most major operating systems, including Windows, macOS, Linux, iOS and Android, let you switch to Dvorak, so the barrier is not technical {wiki-dvorak}. The sources point to QWERTY's 60-year head start and to Dvorak's small, debated gains as the main reasons it stayed. Europe uses modified versions, QWERTZ for German and AZERTY for French.",
+      "body_vi": "QWERTY vẫn là chuẩn thực tế trên máy tính tính đến năm 2026 {wiki-qwerty}. Hầu hết hệ điều hành lớn, gồm Windows, macOS, Linux, iOS và Android, cho phép chuyển sang Dvorak, nên rào cản không phải kỹ thuật {wiki-dvorak}. Các nguồn chỉ ra lợi thế đi trước 60 năm của QWERTY và lợi ích nhỏ, còn tranh cãi của Dvorak là những lý do chính khiến nó ở lại. Châu Âu dùng các phiên bản sửa đổi, QWERTZ cho tiếng Đức và AZERTY cho tiếng Pháp."
+    }
+  ],
+  "keyPoint": {
+    "en": "QWERTY came from years of trial and error and a sale to Remington in 1873. The famous [p:anti-jam story is unproven], and so is the salesman's trick. The main reasons it stayed are its 60-year head start and the small, debated gains of the best-known alternative.",
+    "vi": "QWERTY đến từ nhiều năm thử và sai và thương vụ bán cho Remington năm 1873. Câu chuyện nổi tiếng về chống kẹt [p:chưa được chứng minh], và mẹo của người bán hàng cũng vậy. Lý do chính khiến nó ở lại là lợi thế đi trước 60 năm và lợi ích nhỏ, còn tranh cãi của đối thủ nổi tiếng nhất."
+  },
+  "applySteps": {
+    "en": [
+      "Try the Dvorak layout for ten minutes in your system settings, then switch back.",
+      "Next time you hear a neat origin story, search for who first wrote it down.",
+      "Look at your home row: D, F, G, H, J, K, L still run in the original alphabetical order."
+    ],
+    "vi": [
+      "Thử bố cục Dvorak mười phút trong cài đặt hệ thống, rồi đổi lại.",
+      "Lần tới nghe một câu chuyện nguồn gốc gọn ghẽ, hãy tìm xem ai viết nó ra đầu tiên.",
+      "Nhìn hàng phím giữa của bạn: D, F, G, H, J, K, L vẫn chạy theo thứ tự bảng chữ cái ban đầu."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-qwerty",
+      "label": "Wikipedia: QWERTY",
+      "url": "https://en.wikipedia.org/wiki/QWERTY"
+    },
+    {
+      "id": "wiki-dvorak",
+      "label": "Wikipedia: Dvorak keyboard layout",
+      "url": "https://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/qwerty-keyboard-history-myths.webp",
+    "provider": "unsplash",
+    "author": "Vadim Sherbakov",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/Hi9GSwWkCJk"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAwBACdASoQABwAPu1kqU2ppaQiMAgBMB2JYwCdMoAKRpWCXnerrXyVoAAA/vkwawrpuuofrzQHhh39/Ss55oqEwgv15d6x2vi+i3Ob4iwPBtZCGglkgva7uJk3h1rzIlrdn5t0IG5W4jTgHGio42j+fAE453ZXYlUAAA==",
+  "dominant": "#3c3b3b"
+}

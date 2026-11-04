@@ -1,0 +1,113 @@
+{
+  "slug": "tardigrades-survival-and-dsup-protein",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "tardigrades",
+    "extremophiles",
+    "radiation",
+    "dna damage"
+  ],
+  "title": {
+    "en": "Tardigrades: how a half-millimetre animal survives radiation",
+    "vi": "Gấu nước: con vật nửa milimét sống sót qua phóng xạ thế nào"
+  },
+  "hook": {
+    "en": "A tardigrade is usually about half a millimetre long, has eight legs and lives in moss. It can also survive extreme heat and cold, dehydration, radiation and exposure to outer space. One protein it makes, called Dsup, [p:cut DNA damage by about 40 percent] in human cells that were engineered to produce it.",
+    "vi": "Một con gấu nước thường dài khoảng nửa milimét, có tám chân và sống trong rêu. Nó còn sống sót qua nóng lạnh cực đoan, mất nước, phóng xạ và cả không gian vũ trụ. Một protein nó tạo ra, gọi là Dsup, [p:làm giảm khoảng 40 phần trăm tổn thương DNA] ở tế bào người được cho biểu hiện protein này."
+  },
+  "sections": [
+    {
+      "heading_en": "A small animal with a long history",
+      "heading_vi": "Con vật nhỏ với lịch sử dài",
+      "body_en": "Tardigrades were first described in 1773 by the German zoologist Johann August Ephraim Goeze, who called them \"little water bears\". In 1776 the Italian biologist Lazzaro Spallanzani named the group Tardigrada, \"slow walkers\" {wiki-tardigrade}. About [y:1,500 species] are known. The earliest fossil comes from the Cambrian, around 500 million years ago. Most adults measure 0.05 to 0.5 mm, and the largest species reach 1.3 mm.",
+      "body_vi": "Gấu nước được mô tả lần đầu năm 1773 bởi nhà động vật học người Đức Johann August Ephraim Goeze, người gọi chúng là \"gấu nước nhỏ\". Năm 1776, nhà sinh học người Ý Lazzaro Spallanzani đặt tên nhóm là Tardigrada, nghĩa là \"kẻ đi chậm\" {wiki-tardigrade}. Hiện biết khoảng [y:1.500 loài]. Hóa thạch sớm nhất có từ kỷ Cambri, khoảng 500 triệu năm trước. Phần lớn con trưởng thành dài 0,05 đến 0,5 mm, và loài lớn nhất đạt 1,3 mm."
+    },
+    {
+      "heading_en": "A body built without the usual parts",
+      "heading_vi": "Cơ thể thiếu những bộ phận quen thuộc",
+      "body_en": "A tardigrade has a short, plump body, four pairs of legs ending in claws or sticky pads, and a cuticle it sheds as it moults. It has no lungs, gills or blood vessels, so oxygen moves by diffusion through the cuticle and body cavity. It feeds by piercing prey or plant cells with two stylets made of the mineral aragonite and sucking out the fluid {wiki-tardigrade}. Despite the simple build, one species has been trained by classical conditioning to curl up when it sees a blue light paired with a small shock, which shows that tardigrades can learn.",
+      "body_vi": "Gấu nước có thân ngắn, mập, bốn đôi chân tận cùng bằng móng hoặc đệm dính, và lớp biểu bì mà nó lột khi thay xác. Nó không có phổi, mang hay mạch máu, nên oxy đi vào bằng khuếch tán qua biểu bì và khoang cơ thể. Nó ăn bằng cách dùng hai chiếc kim làm từ khoáng chất aragonit để chọc vào con mồi hoặc tế bào thực vật rồi hút chất lỏng {wiki-tardigrade}. Dù cấu tạo đơn giản, một loài đã được huấn luyện bằng điều kiện hóa cổ điển để cuộn tròn khi thấy ánh sáng xanh đi kèm cú sốc điện nhỏ, cho thấy gấu nước có thể học."
+    },
+    {
+      "heading_en": "What it can endure",
+      "heading_vi": "Nó chịu đựng được gì",
+      "body_en": "Individual species can survive extreme temperatures and pressures, air deprivation, radiation, dehydration and starvation that would quickly kill most other animals, and some have survived exposure to space {wiki-tardigrade}. A 2025 review reports that tardigrades routinely endure radiation doses above [y:5 kGy] {cui-2025}. A 2026 review adds that the molecular basis of their stress tolerance was long elusive, and that RNA sequencing is now identifying genes tied to antioxidant defence, DNA protection and repair, and protein folding {kamilari-2026}.",
+      "body_vi": "Một số loài có thể sống sót qua nhiệt độ và áp suất cực đoan, thiếu không khí, phóng xạ, mất nước và nhịn đói mà sẽ nhanh chóng giết chết phần lớn động vật khác, và một số từng sống sót khi tiếp xúc với không gian {wiki-tardigrade}. Một bài tổng quan năm 2025 báo cáo rằng gấu nước thường chịu được liều phóng xạ trên [y:5 kGy] {cui-2025}. Một bài tổng quan năm 2026 bổ sung rằng cơ sở phân tử của khả năng chịu stress này từng rất khó nắm bắt, và việc giải trình tự RNA nay đang xác định các gen gắn với phòng thủ chống oxy hóa, bảo vệ và sửa chữa DNA, và cuộn gập protein {kamilari-2026}."
+    },
+    {
+      "heading_en": "Dsup, a protein that shields DNA",
+      "heading_vi": "Dsup, protein che chắn DNA",
+      "body_en": "The best characterised of these molecules is the damage suppressor protein, Dsup. It associates with chromatin, the packaged form of DNA, and reduces strand breaks caused by hydroxyl radicals, which radiation produces. It also limits the formation of pyrimidine dimers, a type of damage caused by ultraviolet light {goto-2026}. In human cells engineered to express Dsup, DNA damage fell by roughly [y:40 percent] and survival after irradiation improved. That shows part of the tardigrade's protection can work in mammalian cells.",
+      "body_vi": "Phân tử được nghiên cứu kỹ nhất trong số này là protein ức chế tổn thương, Dsup. Nó gắn với chromatin, dạng đóng gói của DNA, và làm giảm các đứt gãy sợi do gốc hydroxyl, thứ mà phóng xạ tạo ra. Nó còn hạn chế sự hình thành dimer pyrimidin, một loại tổn thương do tia cực tím gây ra {goto-2026}. Ở tế bào người được tạo ra để biểu hiện Dsup, tổn thương DNA giảm khoảng [y:40 phần trăm] và tỷ lệ sống sau chiếu xạ tăng. Điều đó cho thấy một phần cơ chế bảo vệ của gấu nước có thể hoạt động ở tế bào động vật có vú."
+    },
+    {
+      "heading_en": "From curiosity to possible medicine",
+      "heading_vi": "Từ sự tò mò đến thuốc có thể có",
+      "body_en": "Researchers are exploring Dsup-based approaches to protect healthy tissue during radiotherapy, preserve biological material and improve resilience in high-radiation settings such as space missions {goto-2026}. The authors stress that further work, including tests in living animals, is needed before such uses are established. A separate 2026 paper proposes delivering mRNA that codes for Dsup into frozen animal cells destined for a possible lunar biorepository {hagedorn-2026}. These are proposals, not products.",
+      "body_vi": "Các nhà nghiên cứu đang khám phá các hướng dùng Dsup để bảo vệ mô lành trong xạ trị, bảo quản vật liệu sinh học và tăng khả năng chống chịu ở môi trường bức xạ cao như các sứ mệnh không gian {goto-2026}. Các tác giả nhấn mạnh cần thêm nghiên cứu, gồm thử nghiệm trên động vật sống, trước khi những ứng dụng như vậy được xác lập. Một bài báo khác năm 2026 đề xuất đưa mRNA mã hóa Dsup vào tế bào động vật đông lạnh dành cho một kho lưu trữ sinh học trên Mặt Trăng {hagedorn-2026}. Đây là các đề xuất, chưa phải sản phẩm."
+    }
+  ],
+  "keyPoint": {
+    "en": "Tardigrades survive radiation partly because they make proteins such as Dsup that [p:shield DNA from breaks]. Human cells given Dsup showed about 40 percent less damage. The medical uses are still under study and not yet proven, so treat claims about radiation-proof humans with caution.",
+    "vi": "Gấu nước sống sót qua phóng xạ một phần nhờ chúng tạo các protein như Dsup giúp [p:che chắn DNA khỏi đứt gãy]. Tế bào người được trang bị Dsup cho thấy tổn thương ít hơn khoảng 40 phần trăm. Các ứng dụng y học vẫn đang được nghiên cứu và chưa được chứng minh, nên hãy thận trọng với những tuyên bố về con người chống phóng xạ."
+  },
+  "applySteps": {
+    "en": [
+      "Collect a pinch of moss and look for tardigrades under a low-power microscope.",
+      "Read the abstract of one tardigrade review in the references and note what is proven versus proposed.",
+      "Next time you read \"indestructible animal\", check which stress was tested and at what dose."
+    ],
+    "vi": [
+      "Lấy một nhúm rêu và tìm gấu nước dưới kính hiển vi độ phóng đại thấp.",
+      "Đọc phần tóm tắt của một bài tổng quan về gấu nước trong tài liệu tham khảo và ghi lại điều gì đã chứng minh, điều gì mới đề xuất.",
+      "Lần tới đọc \"con vật bất khả chiến bại\", hãy kiểm tra loại stress nào được thử và ở liều nào."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-tardigrade",
+      "label": "Wikipedia: Tardigrade",
+      "url": "https://en.wikipedia.org/wiki/Tardigrade"
+    },
+    {
+      "id": "goto-2026",
+      "label": "Goto et al. (2026)",
+      "url": "https://doi.org/10.4329/wjr.v18.i5.119372"
+    },
+    {
+      "id": "kamilari-2026",
+      "label": "Kamilari et al. (2026)",
+      "url": "https://doi.org/10.1111/mec.70471"
+    },
+    {
+      "id": "hagedorn-2026",
+      "label": "Hagedorn et al. (2026)",
+      "url": "https://doi.org/10.1093/jhered/esag030"
+    },
+    {
+      "id": "cui-2025",
+      "label": "Cui et al. (2025)",
+      "url": "https://doi.org/10.3389/fphar.2025.1713914"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/tardigrades-survival-and-dsup-protein.webp",
+    "provider": "unsplash",
+    "author": "Paul Jarvis",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/P7Lh0usGcuk"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACwBQCdASoQABwAPu1iqU2ppaOiMAgBMB2JbAC7MoR4HtA2gNJqzmLcC6psf8BznC4ZuNllWwAA/n2c3n+PrQuWOxN0VJKSi132PgGcGO7t69T4wYgNAybtpLoTzb4ry2jdy9DXhhGGi030ulC2fXTCeoF/reiU32NRX7nyub7XjWsNrPpConLws37NRZykh4Y5w9XGtc3LRpthWwUGaZ+MjirtItYRxp/mL1KkB2ZwMpX4reSeGKn4aBAAAA==",
+  "dominant": "#5e562b"
+}

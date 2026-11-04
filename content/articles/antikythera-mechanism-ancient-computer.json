@@ -1,0 +1,98 @@
+{
+  "slug": "antikythera-mechanism-ancient-computer",
+  "status": "published",
+  "publishAt": "2026-11-04T00:00:00.000Z",
+  "category": "history",
+  "tags": [
+    "antikythera mechanism",
+    "ancient greece",
+    "astronomy",
+    "archaeology"
+  ],
+  "title": {
+    "en": "The Antikythera mechanism: a Greek computer from a shipwreck",
+    "vi": "Cơ chế Antikythera: chiếc máy tính Hy Lạp từ xác tàu đắm"
+  },
+  "hook": {
+    "en": "In 1901 sponge divers' haul from a Roman wreck included a lump of corroded bronze. Inside it were gears. The device, built in the 2nd century BC, is the oldest known analogue computer, and [p:nothing of similar complexity appears again] until the 14th century in western Europe.",
+    "vi": "Năm 1901, mẻ hàng thợ lặn bọt biển vớt lên từ một xác tàu La Mã có một cục đồng bị ăn mòn. Bên trong có bánh răng. Thiết bị này, chế tạo vào thế kỷ 2 TCN, là máy tính tương tự lâu đời nhất được biết, và [p:không có thứ gì phức tạp tương đương xuất hiện lại] cho đến thế kỷ 14 ở Tây Âu."
+  },
+  "sections": [
+    {
+      "heading_en": "Found by sponge divers",
+      "heading_vi": "Do thợ lặn bọt biển tìm thấy",
+      "body_en": "Captain Dimitrios Kontos and a crew of sponge divers from the island of Symi found the wreck in early 1900. It was a Roman cargo ship lying [y:45 metres] down off Point Glyphadia on the Greek island of Antikythera. The expedition with the Hellenic Royal Navy recovered statues, pottery, glassware, jewellery, coins and, probably in July 1901, the mechanism {wiki-antikythera}. It looked like a lump of corroded bronze and wood and sat unnoticed for two years.",
+      "body_vi": "Thuyền trưởng Dimitrios Kontos cùng đoàn thợ lặn bọt biển từ đảo Symi tìm thấy xác tàu vào đầu năm 1900. Đó là một tàu chở hàng La Mã nằm ở độ sâu [y:45 mét] ngoài mũi Glyphadia, trên đảo Antikythera của Hy Lạp. Cuộc thám hiểm cùng Hải quân Hoàng gia Hy Lạp vớt lên tượng, đồ gốm, thủy tinh, trang sức, tiền xu và, có lẽ vào tháng 7 năm 1901, cỗ máy {wiki-antikythera}. Nó trông như một cục đồng và gỗ bị ăn mòn và nằm không ai để ý suốt hai năm."
+    },
+    {
+      "heading_en": "The gear that gave it away",
+      "heading_vi": "Chiếc bánh răng làm lộ bí mật",
+      "body_en": "In 1902, during a visit to the National Archaeological Museum in Athens, the politician Spyridon Stais noticed a gear in the lump. His cousin Valerios Stais, the museum director, made the first study of the fragment {wiki-antikythera}. Today it survives in 82 separate fragments, four of them with gears. The largest gear is about 13 cm across and originally had 223 teeth. The wooden case was roughly 34 by 18 by 9 cm.",
+      "body_vi": "Năm 1902, trong lúc thăm Bảo tàng Khảo cổ học Quốc gia ở Athens, chính trị gia Spyridon Stais nhận ra một bánh răng trong cục đồng. Anh họ ông, Valerios Stais, giám đốc bảo tàng, thực hiện nghiên cứu đầu tiên về mảnh vật này {wiki-antikythera}. Ngày nay nó còn lại thành 82 mảnh rời, bốn mảnh có bánh răng. Bánh răng lớn nhất rộng khoảng 13 cm và ban đầu có 223 răng. Hộp gỗ có kích thước khoảng 34 × 18 × 9 cm."
+    },
+    {
+      "heading_en": "Seeing inside with X-rays",
+      "heading_vi": "Nhìn vào bên trong bằng tia X",
+      "body_en": "In 2005 a team from Cardiff University led by Mike Edmunds used X-ray tomography and high-resolution surface scanning on the fragments. The scans suggested [y:35 meshing bronze gears], 30 of them still visible, and let the team read faint inscriptions from the outer casing {wiki-antikythera}. Freeth and colleagues published the reconstruction in Nature in 2006, doubling the number of deciphered inscriptions {freeth-2006}.",
+      "body_vi": "Năm 2005, một nhóm của Đại học Cardiff do Mike Edmunds dẫn đầu dùng chụp cắt lớp tia X và quét bề mặt độ phân giải cao lên các mảnh. Ảnh quét cho thấy [y:35 bánh răng đồng ăn khớp], 30 chiếc vẫn còn thấy được, và cho phép nhóm đọc những dòng chữ mờ trên vỏ ngoài {wiki-antikythera}. Freeth cùng các đồng nghiệp công bố bản dựng lại trên tạp chí Nature năm 2006, nhân đôi số dòng chữ đã giải mã {freeth-2006}."
+    },
+    {
+      "heading_en": "What it calculated",
+      "heading_vi": "Nó tính toán điều gì",
+      "body_en": "The gearing tracked the movements of the Moon and Sun through the zodiac and predicted eclipses. The 2006 study found that eclipse prediction rested on Babylonian arithmetic-progression cycles {freeth-2006}. The mechanism also modelled the Moon's uneven speed, which is faster at its closest point to Earth than at its farthest. That irregularity was studied by the astronomer Hipparchus of Rhodes in the 2nd century BC, and the authors found a mechanical realisation of his theory in the gears. It also tracked the four-year cycle of athletic games like the Olympics.",
+      "body_vi": "Hệ bánh răng theo dõi chuyển động của Mặt Trăng và Mặt Trời qua các cung hoàng đạo và dự đoán nhật thực, nguyệt thực. Nghiên cứu năm 2006 thấy việc dự đoán thực dựa trên các chu kỳ cấp số cộng của người Babylon {freeth-2006}. Cỗ máy cũng mô phỏng tốc độ không đều của Mặt Trăng: nhanh hơn ở điểm gần Trái Đất nhất so với điểm xa nhất. Sự bất thường đó được nhà thiên văn Hipparchus xứ Rhodes nghiên cứu vào thế kỷ 2 TCN, và các tác giả tìm thấy trong bánh răng một hiện thực hóa cơ học của lý thuyết của ông. Nó còn theo dõi chu kỳ bốn năm của các kỳ thi đấu thể thao như Olympic."
+    },
+    {
+      "heading_en": "How old is it?",
+      "heading_vi": "Nó bao nhiêu tuổi?",
+      "body_en": "The wreck has been dated by several lines of evidence to about 70 to 60 BC, so the device is older. Estimates of its construction run from about 205 BC to 87 BC, or between 150 and 100 BC {wiki-antikythera}. In 2022 researchers proposed that its initial calibration, not its construction, could date to [y:23 December 178 BC]. Other experts suggest 204 BC. How it ended up on a cargo ship is unknown.",
+      "body_vi": "Xác tàu được xác định niên đại khoảng 70 đến 60 TCN qua nhiều bằng chứng, nên thiết bị còn cũ hơn. Các ước tính về thời điểm chế tạo dao động từ khoảng 205 TCN đến 87 TCN, hoặc giữa 150 và 100 TCN {wiki-antikythera}. Năm 2022, các nhà nghiên cứu đề xuất rằng việc hiệu chỉnh ban đầu của nó, chứ không phải lúc chế tạo, có thể rơi vào [y:ngày 23 tháng 12 năm 178 TCN]. Các chuyên gia khác đề xuất 204 TCN. Không rõ vì sao nó có mặt trên một chiếc tàu chở hàng."
+    }
+  ],
+  "keyPoint": {
+    "en": "The Antikythera mechanism shows that Hellenistic craftsmen could build [p:precise geared models of the sky] more than 2,000 years ago. It predicted eclipses and the Moon's uneven speed. Much remains uncertain: its exact date, its missing parts, and how it came to be on a cargo ship.",
+    "vi": "Cơ chế Antikythera cho thấy thợ thủ công thời Hy Lạp hóa đã chế tạo được [p:mô hình bầu trời bằng bánh răng chính xác] hơn 2.000 năm trước. Nó dự đoán nhật thực, nguyệt thực và tốc độ không đều của Mặt Trăng. Nhiều điều vẫn chưa chắc: niên đại chính xác, các bộ phận thất lạc và vì sao nó có mặt trên tàu chở hàng."
+  },
+  "applySteps": {
+    "en": [
+      "Look up the replica or scan images of the fragments from the National Archaeological Museum in Athens.",
+      "Watch the Moon over a week and note that it does not move at an even pace.",
+      "Next time you see \"first of its kind\", ask what evidence supports the date."
+    ],
+    "vi": [
+      "Tìm hình ảnh bản sao hoặc ảnh quét các mảnh của Bảo tàng Khảo cổ học Quốc gia ở Athens.",
+      "Quan sát Mặt Trăng trong một tuần và để ý rằng nó di chuyển không đều.",
+      "Lần tới thấy cụm \"đầu tiên thuộc loại này\", hãy hỏi bằng chứng nào chống lưng cho niên đại."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-antikythera",
+      "label": "Wikipedia: Antikythera mechanism",
+      "url": "https://en.wikipedia.org/wiki/Antikythera_mechanism"
+    },
+    {
+      "id": "freeth-2006",
+      "label": "Freeth et al. (2006), Nature",
+      "url": "https://doi.org/10.1038/nature05357"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/antikythera-mechanism-ancient-computer.webp",
+    "provider": "unsplash",
+    "author": "Vadim Sherbakov",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/osSryggkso4"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQAwCdASoQABwAPu1iqU2ppaOiMAgBMB2JZwAD4/IMiS0jxyRR1AAA/rI+hOIHyBdJaa5+rSNZG/w8Oeh28FPRwdDeqjaQAt2zW4Bem+TuG0KekIg19pnvCI51glZUo22RrymjqtvUDmNe+YJ7OO6PC9uFP/BrZObDLOTctIWdB2lcrEdFA2Qo//fLg+g0UbS/z97SKzfQrcRxyvoACDvYfakaW9OmRv7tPg0X5v2fzWOMRrP1TCzoXAAAAA==",
+  "dominant": "#7b7b78"
+}
