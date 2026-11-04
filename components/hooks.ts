@@ -1,6 +1,9 @@
 'use client';
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { translate, type MessageKey, type Vars } from '@/lib/i18n';
+import { stageOf, STAGES, type Stage } from '@/lib/stage';
+import { withStageTransition } from '@/lib/transition';
 import { useUI } from '@/stores/ui';
 
 export const useIsoLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect;
@@ -81,4 +84,38 @@ export function useMounted() {
   const [m, setM] = useState(false);
   useEffect(() => setM(true), []);
   return m;
+}
+
+export function useStageSync() {
+  useEffect(() => {
+    const root = document.documentElement;
+    const initial = root.getAttribute('data-stage') as Stage | null;
+    if (initial && STAGES.includes(initial)) {
+      useUI.getState().setStage(initial);
+    } else {
+      const s = stageOf(window.innerWidth, window.innerHeight);
+      root.setAttribute('data-stage', s);
+      useUI.getState().setStage(s);
+    }
+
+    const sync = () => {
+      const next = stageOf(window.innerWidth, window.innerHeight);
+      if (next !== useUI.getState().stage) {
+        void withStageTransition(() => {
+          flushSync(() => {
+            root.setAttribute('data-stage', next);
+            useUI.getState().setStage(next);
+          });
+        });
+      }
+    };
+
+    window.addEventListener('resize', sync);
+    const vv = window.visualViewport;
+    vv?.addEventListener('resize', sync);
+    return () => {
+      window.removeEventListener('resize', sync);
+      vv?.removeEventListener('resize', sync);
+    };
+  }, []);
 }

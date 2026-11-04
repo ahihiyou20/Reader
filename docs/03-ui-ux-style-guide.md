@@ -448,6 +448,16 @@ Nền Cover (ảnh) **không** có Ken Burns; video nền là chuyển động d
 - Kiểm tra gesture trên **máy thật** (iPhone qua Safari Web Inspector, Android qua `chrome://inspect`), gồm một máy đời cũ. Device emulation của Chrome không tái hiện được cảm giác chạm, tap delay, safe area hay bàn phím ảo.
 - Xem lại vào hôm sau với mắt mới.
 
+### 5.9 Stage, xoay màn hình và vi tương tác (2026-11)
+
+Hợp đồng chi tiết nằm ở `ARCHITECTURE.md` và `COMMIT-SHEET.md`; mục này tóm tắt cho người thiết kế.
+
+- **Bốn stage theo kích thước, không theo thiết bị** (`lib/stage.ts`): `compact-portrait` (dọc, rộng < 600px) giữ nguyên thiết kế điện thoại; `regular-portrait` (tablet dọc) dàn toàn chiều rộng, cột đọc 60–72 ký tự; `compact-landscape` (cao < 560px) và `regular-landscape` chia đôi màn hình: cột trái là danh tính bài (pill, tiêu đề, ActionRow) hoặc các bước Apply, cột phải là cột đọc hoặc bình luận. BottomNav thành dock dọc bên trái ở màn ngang; desktop có ambient (ảnh bìa mờ) ở lề và chip phím tắt khi dùng chuột.
+- **Xoay màn hình**: vị trí lưu theo đơn vị trang nên không bao giờ hiện nhầm bài; đổi stage chạy trong View Transition, các phần tử có tên (tiêu đề cover, rail, ảnh, dock, top bar, đầu Details, cột đọc) bay từ chỗ cũ sang chỗ mới trong 420ms bằng spring, stage "lắng" từ 0.985 về 1. Dòng đang đọc được giữ nguyên (neo ở 42% chiều cao, lệch ≤ 32px). Reduced motion: chỉ crossfade ≤ 160ms.
+- **Vi tương tác**: mọi control co lại ngay khi chạm (0.96 cho nút tròn, 0.98 cho thẻ), nhả ra thì giãn về trong 200ms; hover chỉ có với chuột: nút và pill chỉ sáng nền, riêng thẻ nhấc 1px (theo cách Apple làm, đo trên trang Apple Books); vùng chạm ≥ 44px bằng `::before`; số đếm cuộn từng chữ số (`CountRoll`); chỉ báo đang chọn trượt bằng `layoutId` (`Indicator`); tim và bookmark là spring ngắt được, tô màu bằng clip-path; sheet modal hiện lên và lớp dưới lùi lại; toast vuốt xuống để tắt; bình luận mới bay vào danh sách; dấu tick tự vẽ.
+- **Đọc**: thanh tiến độ mảnh trong header (scaleX), "còn X phút" cuộn số, KEY POINT quét một lần, tiêu đề mục "lắng" khi lần đầu được focus; không phát lại khi cuộn ngược.
+- **Tải**: poster tĩnh (ảnh bìa và tiêu đề bài đầu) có sẵn trong HTML, hiện cả khi tắt JS; ảnh bìa màn đầu tự host dạng WebP 480/768/1080 (`scripts/covers.mjs`); skeleton đúng hình nội dung; ảnh mờ dần vào khi decode xong.
+
 ## 6. Accessibility & i18n UX
 
 - Chữ luôn nằm trên scrim; kiểm tra tương phản với ảnh sáng nhất trong bộ seed (≥ 4.5:1 cho body).

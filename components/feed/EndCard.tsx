@@ -4,13 +4,36 @@ import { useUI } from '@/stores/ui';
 import { useT } from '../hooks';
 import { goToArticle } from './nav';
 
-export function EndCard({ top }: { top: number }) {
+export function EndCard({
+  top,
+  index,
+  active = false,
+}: {
+  top?: string | number;
+  index?: number;
+  active?: boolean;
+}) {
   const t = useT();
   const openOverlay = useUI((s) => s.openOverlay);
   const category = useUI((s) => s.category);
   const startFeed = useUI((s) => s.startFeed);
+  const resolvedTop =
+    index !== undefined
+      ? `${index * 100}%`
+      : typeof top === 'string'
+        ? top
+        : top !== undefined
+          ? `${top}px`
+          : undefined;
+
   return (
-    <section className="article" style={{ top }} aria-label={t('endTitle')}>
+    <section
+      className="article"
+      data-slug="__end"
+      data-active={active ? 'true' : 'false'}
+      style={{ top: resolvedTop }}
+      aria-label={t('endTitle')}
+    >
       <div className="endcard">
         <div className="logo-mark" aria-hidden="true">
           R

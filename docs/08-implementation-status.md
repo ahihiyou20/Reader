@@ -39,6 +39,15 @@ Làm bằng service account `claude@reader-app-512514` (Owner) qua API, không q
 - **Deploy**: `deploy.yml` có sẵn cấu hình web công khai làm giá trị mặc định (biến GitHub cùng tên ghi đè được), nên không cần đặt biến `NEXT_PUBLIC_FIREBASE_*`. CI và E2E vẫn build ở chế độ demo. Đã deploy tay bằng Wrangler; kiểm tra trên site thật: `/__/auth/handler` trả 200, đăng nhập khách tạo được uid, Firestore đọc/ghi 200, console không lỗi.
 - **Còn thiếu cho đăng nhập Google**: OAuth client chưa có redirect URI `https://reader-xtm.pages.dev/__/auth/handler` (Google trả `redirect_uri_mismatch`), và chưa có origin cho One Tap. Không sửa được qua API.
 
+## Responsive và motion (2026-11-04)
+
+Làm theo vòng antigravity-master (Claude thiết kế và kiểm tra, Gemini viết phần lớn code tới khi hết quota tuần; phần cuối Claude tự làm theo yêu cầu). Tiêu chí ở `ACCEPTANCE.md`, nhật ký kiểm tra ở `CINEMA-QA.md`.
+
+- Xong: 4 stage, xoay màn hình bằng View Transition (0 khung hiện nhầm bài, giữ dòng đang đọc), layout chia đôi cho màn ngang/tablet/desktop, vi tương tác cho mọi control (census 100%), hiệu ứng đọc, poster tĩnh, ảnh bìa màn đầu tự host, a11y 100.
+- Đo trên GPU thật (Edge trên Windows): mọi cử chỉ p95 ≤ 15ms, xoay không có tác vụ dài. Headless Chromium trong WSL không có GPU nên không dùng để đo khung hình.
+- Lighthouse: desktop 96; mobile 62 (giả lập) / 70 (throttling thật). LCP mobile đã về 2,9s với throttling thật; phần còn lại là thời gian chạy runtime Next.js và React khi CPU bị giảm 4 lần (khoảng 650ms), cần quyết định riêng nếu muốn đạt 90.
+- Test mới: `tests/e2e/{responsive,rotation,interactions,motion-quality,loading,reading,perf,visual}.spec.ts`, `tests/qa/*`; `tests/e2e/reader.spec.ts` chỉ đổi locator `section[aria-posinset]` thành `[aria-posinset]` (ARIA không cho thuộc tính này trên `section`).
+
 ## Việc cần người làm (không tự động được)
 
 1. Hoàn tất Firebase (README §1–2):

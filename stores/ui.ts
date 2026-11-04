@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import type { Lang } from '@/lib/content/types';
+import type { Stage } from '@/lib/stage';
 
 export type View = 0 | 1 | 2;
 export type Overlay = 'explore' | 'search' | 'messages' | 'notifications' | 'profile' | 'create';
@@ -22,6 +23,7 @@ interface UIState {
   startSlug: string | null;
   feedVersion: number;
   toast: { id: number; text: string } | null;
+  stage: Stage;
   setLang(lang: Lang): void;
   setIndex(i: number): void;
   setView(slug: string, v: View): void;
@@ -33,6 +35,7 @@ interface UIState {
   setLangMenu(open: boolean): void;
   startFeed(opts: { category: string | null; slug?: string | null }): void;
   showToast(text: string): void;
+  setStage(stage: Stage): void;
 }
 
 let toastId = 0;
@@ -49,6 +52,7 @@ export const useUI = create<UIState>((set) => ({
   startSlug: null,
   feedVersion: 0,
   toast: null,
+  stage: 'compact-portrait',
   setLang: (lang) => set({ lang }),
   setIndex: (index) => set({ index }),
   setView: (slug, v) => set((s) => (s.views[slug] === v ? s : { views: { ...s.views, [slug]: v } })),
@@ -62,4 +66,5 @@ export const useUI = create<UIState>((set) => ({
   startFeed: ({ category, slug = null }) =>
     set((s) => ({ category, startSlug: slug, index: 0, feedVersion: s.feedVersion + 1, overlays: [] })),
   showToast: (text) => set({ toast: { id: ++toastId, text } }),
+  setStage: (stage) => set((s) => (s.stage === stage ? s : { stage })),
 }));

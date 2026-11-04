@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { ReaderApp } from '@/components/ReaderApp';
+import { COVER_SIZES } from '@/lib/covers';
+import { readOptCovers } from '@/lib/covers-server';
 import { richToText } from '@/lib/content/markup';
 import { readArticle, readFeed } from '@/lib/server/content';
 
@@ -28,16 +30,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+function posterVariant(url: string): string {
+  const match = url.match(/\/id\/(\d+)/);
+  return match ? `https://picsum.photos/id/${match[1]}/540/960` : url;
+}
+
 /** Deep link: the feed starts with this article. The text is also rendered for crawlers and no-JS readers. */
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const a = readArticle(slug);
   if (!a) notFound();
-  const cover = a.cover.type === 'video' ? a.cover.poster : a.cover.url;
+  const coverSrc = a.cover.type === 'video' ? (a.cover.poster ?? a.cover.url) : a.cover.url;
+  const covers = readOptCovers();
+  const opt = covers[slug];
+  const posterCoverSrc = opt?.src ?? (coverSrc ? posterVariant(coverSrc) : undefined);
+  const title = a.title.en;
   return (
     <>
-      {cover && <link rel="preload" as="image" href={cover} fetchPriority="high" />}
-      <ReaderApp initialSlug={slug}>
+      {posterCoverSrc && (
+        <link rel="preload" as="image" href={posterCoverSrc} imageSrcSet={opt?.srcSet} imageSizes={opt ? COVER_SIZES : undefined} fetchPriority="high" />
+      )}
+      <ReaderApp initialSlug={slug} covers={covers} poster={posterCoverSrc ? { coverSrc: posterCoverSrc, srcSet: opt?.srcSet, title, slug } : undefined}>
         <article id="seo" className="sr-only">
           <h1>{a.title.en}</h1>
           <p>{richToText(a.hook.en)}</p>

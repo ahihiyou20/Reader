@@ -9,12 +9,25 @@ import { useUI } from '@/stores/ui';
 import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { ActionButton } from '../ActionButton';
+import { preloadExplore } from '../overlays/preload';
 import { useT } from '../hooks';
 import { setArticleView } from './nav';
 
 let hintShown = false;
 
-export function CoverView({ item, titleId, title }: { item: FeedItem; titleId: string; title: string }) {
+export function CoverView({
+  item,
+  titleId,
+  title,
+  active,
+  view = 0,
+}: {
+  item: FeedItem;
+  titleId: string;
+  title: string;
+  active?: boolean;
+  view?: number;
+}) {
   const t = useT();
   const lang = useUI((s) => s.lang);
   const openOverlay = useUI((s) => s.openOverlay);
@@ -42,11 +55,26 @@ export function CoverView({ item, titleId, title }: { item: FeedItem; titleId: s
   return (
     <>
       <div className="scrim" />
-      <div className="crow">
-        <button className="cb gridbtn" type="button" aria-label={t('exploreTitle')} onClick={() => openOverlay('explore')}>
+      <div className="crow" data-region="cover-row">
+        <button
+          className="cb gridbtn"
+          type="button"
+          aria-label={t('exploreTitle')}
+          onClick={() => openOverlay('explore')}
+          onPointerDown={preloadExplore}
+          onMouseEnter={preloadExplore}
+          onFocus={preloadExplore}
+        >
           <LayoutGrid className="ic" aria-hidden="true" />
         </button>
-        <button className="pill epill" type="button" onClick={() => openOverlay('explore')}>
+        <button
+          className="pill epill"
+          type="button"
+          onClick={() => openOverlay('explore')}
+          onPointerDown={preloadExplore}
+          onMouseEnter={preloadExplore}
+          onFocus={preloadExplore}
+        >
           <span>{t('explore')}</span>
           <span className="cmp">
             <Compass className="ic" strokeWidth={1.8} aria-hidden="true" />
@@ -58,20 +86,28 @@ export function CoverView({ item, titleId, title }: { item: FeedItem; titleId: s
           <ChevronsRight className="ic" aria-hidden="true" />
         </button>
       </div>
-      <h2 className={`ctitle${long ? ' long' : ''}`} id={titleId} onClick={toDetails}>
+      <h2
+        className={`ctitle${long ? ' long' : ''}`}
+        id={titleId}
+        onClick={toDetails}
+        data-region="cover-title"
+        style={active ? { viewTransitionName: 'cover-title' } : undefined}
+      >
         <span>{title}</span>
       </h2>
-      <div className="rail">
-        <ActionButton kind="like" size="lg" count={counts.likes} on={liked} label={t('likeAria', { n: counts.likes })} onPress={() => toggleLike(item.slug)} />
-        <ActionButton kind="save" size="lg" count={counts.saves} on={saved} label={t('saveAria', { n: counts.saves })} onPress={() => toggleSave(item.slug)} />
-        <ActionButton
-          kind="share"
-          size="lg"
-          count={counts.shares}
-          label={t('shareAria', { n: counts.shares })}
-          onPress={() => shareArticle(item.slug, pick(item.title, lang) ?? '')}
-        />
-      </div>
+      {(active ?? true) && view === 0 && (
+        <div className="rail" data-region="rail" style={active ? { viewTransitionName: 'action-rail' } : undefined}>
+          <ActionButton kind="like" size="lg" count={counts.likes} on={liked} label={t('likeAria', { n: counts.likes })} onPress={() => toggleLike(item.slug)} />
+          <ActionButton kind="save" size="lg" count={counts.saves} on={saved} label={t('saveAria', { n: counts.saves })} onPress={() => toggleSave(item.slug)} />
+          <ActionButton
+            kind="share"
+            size="lg"
+            count={counts.shares}
+            label={t('shareAria', { n: counts.shares })}
+            onPress={() => shareArticle(item.slug, pick(item.title, lang) ?? '')}
+          />
+        </div>
+      )}
     </>
   );
 }

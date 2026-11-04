@@ -109,3 +109,18 @@ export function preloadImage(url: string | undefined) {
   img.decoding = 'async';
   img.src = url;
 }
+
+export function decodeImage(src: string): Promise<void> {
+  if (typeof window === 'undefined' || !src) return Promise.resolve();
+  const img = new Image();
+  img.decoding = 'async';
+  img.src = src;
+  if (typeof img.decode === 'function') {
+    return img.decode().catch(() => {});
+  }
+  return new Promise<void>((resolve) => {
+    img.onload = () => resolve();
+    img.onerror = () => resolve();
+  });
+}
+

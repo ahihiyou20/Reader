@@ -1,6 +1,6 @@
 'use client';
 import { MDiv } from '@/components/Motion';
-import { useTransform } from 'framer-motion';
+import { motion, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useArticle } from '@/lib/data';
@@ -9,28 +9,29 @@ import { pick } from '@/lib/i18n';
 import { clamp } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
 import { CoverMedia } from '../CoverMedia';
+import { optCover } from '@/lib/covers';
 import { DetailsSkeleton, DetailsView } from '../reader/DetailsView';
 import { EngageView } from '../engage/EngageView';
 import { CoverView } from './CoverView';
-import { layout, registerFade, viewX } from './nav';
+import { registerFade, viewP } from './nav';
 
 export function ArticlePage({
   item,
   index,
   total,
-  top,
+  top: _top,
   active,
   priority,
 }: {
   item: FeedItem;
   index: number;
   total: number;
-  top: number;
+  top?: string | number;
   active: boolean;
   priority: boolean;
 }) {
-  const x = viewX(item.slug);
-  const p = useTransform(x, (v) => -v / layout.w);
+  const p = viewP(item.slug);
+  const x = useTransform(p, (v) => `${-v * 100}%`);
   const blur = useTransform(p, (v) => clamp(v, 0, 1));
   const eng = useTransform(p, (v) => clamp(v - 1, 0, 1));
   const o0 = useTransform(p, (v) => 1 - 0.4 * clamp(Math.abs(v), 0, 1));
@@ -56,41 +57,69 @@ export function ArticlePage({
   return (
     <section
       className="article"
-      style={{ top, ['--dominant' as string]: item.cover.dominant, ['--shade' as string]: shadeFor(item.cover.dominant) }}
-      role="article"
-      aria-labelledby={titleId}
-      aria-posinset={index + 1}
-      aria-setsize={total}
-      lang={lang === 'vi' && item.title.vi ? 'vi' : 'en'}
+      data-slug={item.slug}
+      data-active={active ? 'true' : 'false'}
+      style={{
+        top: `${index * 100}%`,
+        ['--dominant' as string]: item.cover.dominant,
+        ['--shade' as string]: shadeFor(item.cover.dominant),
+      }}
       inert={!active || undefined}
     >
-      <div className="bg">
-        <div className="layer sharp">
-          <CoverMedia cover={item.cover} priority={priority} playing={active && view < 2 && visible} />
+      <div
+        className="article-inner"
+        role="article"
+        aria-labelledby={titleId}
+        aria-posinset={index + 1}
+        aria-setsize={total}
+        lang={lang === 'vi' && item.title.vi ? 'vi' : 'en'}
+      >
+        <div className="bg">
+          <div className="layer sharp" style={active ? { viewTransitionName: 'cover-media' } : undefined}>
+            <CoverMedia cover={item.cover} opt={optCover(item.slug)} priority={priority} playing={active && view < 2 && visible} />
+          </div>
+          <MDiv className="layer blur" style={{ opacity: blur }}>
+            {(built || active) && <CoverMedia cover={item.cover} opt={optCover(item.slug)} blurred />}
+            <div className="dim" />
+          </MDiv>
+          <MDiv className="layer eng" style={{ opacity: eng }} />
+          <div className="grain" />
         </div>
-        <MDiv className="layer blur" style={{ opacity: blur }}>
-          {(built || active) && <CoverMedia cover={item.cover} blurred />}
-          <div className="dim" />
-        </MDiv>
-        <MDiv className="layer eng" style={{ opacity: eng }} />
-        <div className="grain" />
+        <motion.div className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
+          <MDiv
+            className="view cover"
+            data-view={view === 0 ? 'cover' : undefined}
+            style={{ opacity: o0 }}
+            aria-hidden={view !== 0}
+            inert={view !== 0 || undefined}
+          >
+            <CoverView item={item} titleId={titleId} title={title} active={active} view={view} />
+          </MDiv>
+          <MDiv
+            className="view details"
+            data-view={view === 1 ? 'details' : undefined}
+            style={{ opacity: o1 }}
+            aria-hidden={view !== 1}
+            inert={view !== 1 || undefined}
+          >
+            {built &&
+              (article ? (
+                <DetailsView article={article} item={item} active={active} view={view} />
+              ) : (
+                <DetailsSkeleton item={item} error={isError} onRetry={() => refetch()} />
+              ))}
+          </MDiv>
+          <MDiv
+            className="view engage"
+            data-view={view === 2 ? 'engage' : undefined}
+            style={{ opacity: o2 }}
+            aria-hidden={view !== 2}
+            inert={view !== 2 || undefined}
+          >
+            {built && article && <EngageView article={article} item={item} active={active} view={view} />}
+          </MDiv>
+        </motion.div>
       </div>
-      <MDiv className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
-        <MDiv className="view cover" style={{ opacity: o0 }} aria-hidden={view !== 0}>
-          <CoverView item={item} titleId={titleId} title={title} />
-        </MDiv>
-        <MDiv className="view details" style={{ opacity: o1 }} aria-hidden={view !== 1}>
-          {built &&
-            (article ? (
-              <DetailsView article={article} item={item} active={active} view={view} />
-            ) : (
-              <DetailsSkeleton item={item} error={isError} onRetry={() => refetch()} />
-            ))}
-        </MDiv>
-        <MDiv className="view engage" style={{ opacity: o2 }} aria-hidden={view !== 2}>
-          {built && article && <EngageView article={article} item={item} active={active} view={view} />}
-        </MDiv>
-      </MDiv>
     </section>
   );
 }

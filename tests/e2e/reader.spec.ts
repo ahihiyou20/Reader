@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-const article = (page: Page, n: number) => page.locator(`section[aria-posinset="${n}"]`);
+const article = (page: Page, n: number) => page.locator(`[aria-posinset="${n}"]`);
 
 async function openFeed(page: Page, path = '/') {
   await page.goto(path);

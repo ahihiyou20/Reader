@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import type { CoverClient } from '@/lib/content/types';
+import { COVER_SIZES, type OptCover } from '@/lib/covers';
 
 /** Full-bleed cover image or muted looping video (FR-02). */
 export function CoverMedia({
@@ -8,19 +9,43 @@ export function CoverMedia({
   playing,
   priority,
   blurred,
+  active,
+  opt,
 }: {
   cover: CoverClient;
+  opt?: OptCover;
   playing?: boolean;
   priority?: boolean;
   blurred?: boolean;
+  active?: boolean;
 }) {
-  const [loaded, setLoaded] = useState(false);
+  const [decoded, setDecoded] = useState(Boolean(priority));
   const video = useRef<HTMLVideoElement>(null);
   const img = useRef<HTMLImageElement>(null);
 
+  const shouldDecode = Boolean(priority || active || playing || blurred);
+
   useEffect(() => {
-    if (img.current?.complete && img.current.naturalWidth) setLoaded(true);
-  }, []);
+    if (!shouldDecode || decoded) return;
+    const el = img.current;
+    if (!el) return;
+
+    let cancelled = false;
+    const markDecoded = () => {
+      if (!cancelled) setDecoded(true);
+    };
+
+    if (el.complete && el.naturalWidth) {
+      if ('decode' in el) {
+        el.decode().then(markDecoded).catch(markDecoded);
+      } else {
+        markDecoded();
+      }
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [shouldDecode, decoded]);
 
   useEffect(() => {
     const v = video.current;
@@ -40,35 +65,48 @@ export function CoverMedia({
         {placeholder}
         <video
           ref={video}
-          className={`media${loaded ? '' : ' loading'}`}
+          className={`media${decoded ? '' : ' loading'}`}
           src={cover.url}
           poster={cover.poster}
           muted
           loop
           playsInline
           preload={priority ? 'auto' : 'metadata'}
-          onLoadedData={() => setLoaded(true)}
+          onLoadedData={() => {
+            if (shouldDecode) setDecoded(true);
+          }}
           aria-hidden="true"
         />
       </>
     );
   }
-  const src = cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url;
+  const src = opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
   if (!src) return placeholder;
   return (
     <>
       {placeholder}
       <img
         ref={img}
-        className={`media${loaded ? '' : ' loading'}`}
+        className={`media${decoded ? '' : ' loading'}`}
         src={src}
+        srcSet={opt?.srcSet}
+        sizes={opt ? COVER_SIZES : undefined}
         alt=""
         decoding="async"
         draggable={false}
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : 'auto'}
-        onLoad={() => setLoaded(true)}
+        onLoad={() => {
+          if (!shouldDecode) return;
+          const el = img.current;
+          if (el && 'decode' in el) {
+            el.decode().then(() => setDecoded(true)).catch(() => setDecoded(true));
+          } else {
+            setDecoded(true);
+          }
+        }}
       />
     </>
   );
 }
+
