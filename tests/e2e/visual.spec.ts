@@ -11,7 +11,8 @@ for (const vp of VISUAL_VIEWPORTS) {
     const context = await newQaContext(browser, vp, { deviceScaleFactor: 1 });
     const page = await context.newPage();
     try {
-      await page.goto('/');
+      // Pinned to one article: the feed order changes every day as new articles are published.
+      await page.goto('/a/around-half-of-people-will-experience-a-mental-health-issue');
       await expect(page.locator('.view.cover .ctitle').first()).toBeVisible();
       await page.evaluate(() => document.fonts.ready);
       await page.waitForTimeout(1000);

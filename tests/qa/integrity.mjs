@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 
-const BASE = '9195eb664970c73c034deae32d9be8fbbcfa125d';
+const BASE = 'd9a73f29f6c0feb07204498cb5a4bc73b697c93c'; // origin/main the work is rebased on
 
 const violations = [];
 

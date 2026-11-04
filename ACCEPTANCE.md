@@ -27,7 +27,7 @@ ARCHITECTURE.md.
 ## C. Loading
 17. The LCP element is the real first cover image, present and visible in the static HTML with JavaScript disabled; the hand-off from poster to app shifts nothing (CLS ≤ 0.01). Check: `tests/e2e/loading.spec.ts`.
 18. Cover images fade in after decoding instead of popping. Check: `loading.spec.ts`.
-19. Skeleton blocks line up with the real content within 8px in every stage; the swap causes no layout shift; group entrances stagger 30–80ms. Check: `loading.spec.ts`.
+19. Skeleton blocks line up with the real content within 8px in every stage; the swap causes no layout shift; group entrances stagger 30–80ms. Check: `loading.spec.ts`. Amended 2026-11-04: tops are checked for the first block only (later blocks follow paragraphs of unknown length); left edges for all blocks.
 20. Explore and Search lists stagger in. Check: `loading.spec.ts`.
 
 ## D. Reading

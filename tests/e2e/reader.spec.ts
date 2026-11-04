@@ -30,7 +30,8 @@ test('arrow keys move between articles and views', async ({ page }) => {
 
   await page.keyboard.press('ArrowRight');
   await expect(second.locator('.view.engage')).toHaveAttribute('aria-hidden', 'false');
-  await expect(second.getByText('Turn what you read into what you do.')).toBeVisible();
+  // The Apply card only exists for articles with apply steps, so check the comments header instead.
+  await expect(second.locator('.view.engage .chead')).toBeVisible();
 
   await page.keyboard.press('ArrowUp');
   await expect.poll(() => topOf(page, 2)).toBeLessThan(2);
