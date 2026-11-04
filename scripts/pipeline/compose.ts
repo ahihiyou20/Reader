@@ -6,7 +6,7 @@
 // Every result is checked: markup must parse, highlights must not change the words.
 import type { ArticleSource, HlColor } from '../../lib/content/types';
 import { parseRich, plainText } from '../../lib/content/markup';
-import { MARKUP_RULES, MODEL, VI_STYLE, geminiJson } from './gemini';
+import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiJson } from './gemini';
 
 const S = { type: 'STRING' } as const;
 const LIST = { type: 'ARRAY', items: S } as const;
@@ -84,6 +84,7 @@ export async function enrich(a: ArticleSource, opts: { categories?: string[] } =
   const prompt = [
     'You help the editors of Reader, a free, non-commercial app of short, sourced articles in English and Vietnamese.',
     `The text uses ${MARKUP_RULES}`,
+    WRITING_RULES,
     want.highlights
       ? 'highlights: in each section pick at most 2 short phrases (2–7 words) worth noticing — a key number, a surprising finding, a term. Copy each phrase EXACTLY as it appears in that section body (same characters, no markup), with the 0-based section index; color yellow for facts and numbers, pink for the main idea, green for a practical tip.'
       : '',
@@ -225,6 +226,7 @@ export async function summarize(page: { title: string; publisher: string; text: 
   const prompt = [
     'You write for Reader, a free, non-commercial app of short, sourced articles in English and Vietnamese.',
     `The original below is copyrighted, so Reader only publishes its own short summary with a link to it. Write that summary in your own words: never copy a sentence, no quotation longer than 8 words, do not reproduce lists or tables. Keep every number, name and claim faithful to the original and add nothing that is not in it. The original may be in English or Vietnamese; write both languages either way.`,
+    WRITING_RULES,
     `Use ${MARKUP_RULES} The only reference id is {source}: cite it once, right after the main finding. Use at most 2 highlights per section.`,
     'title_en: a clear title of at most 12 words (it may differ from the original). hook_en: 40–70 words that make the reader want to know more. sections: 3 or 4 sections with short headings, 50–90 words each; the whole summary (hook plus sections) stays between 200 and 380 English words. Give every field a Vietnamese version (_vi). ' +
       VI_STYLE,
@@ -245,6 +247,7 @@ export async function fromText(text: string, hint?: string, categories?: string[
   const prompt = [
     'You help the editors of Reader, a free, non-commercial app of short articles in English and Vietnamese.',
     'Below is text an editor wrote. Shape it into a Reader article: keep the editor\'s ideas, facts and voice, fix only clarity and grammar, and do not add facts. The text may be in English or Vietnamese; write both languages either way.',
+    WRITING_RULES,
     `Use ${MARKUP_RULES} There are no reference ids: do not write any {…} chips. Use at most 2 highlights per section.`,
     'title_en: at most 12 words. hook_en: 40–80 words. sections: 5–7 sections with short headings, each at most 130 words (fewer sections if the text is short; never pad). Give every field a Vietnamese version (_vi). ' + VI_STYLE,
     `Write ${KEY_POINT}`,
