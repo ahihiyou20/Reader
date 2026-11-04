@@ -4,14 +4,10 @@ import type { APIRequestContext, Browser, BrowserContext, Locator, Page } from '
 import type { FeedItem } from '@/lib/content/types';
 import { MOTION_SAMPLER_SCRIPT } from './motion-sampler';
 
-const coversDir = path.resolve(process.cwd(), 'public/covers');
-const coverFiles = fs.existsSync(coversDir) ? fs.readdirSync(coversDir).sort() : [];
-const firstCoverName = coverFiles[0] || 'atomic-clocks.webp';
-const firstCoverPath = path.join(coversDir, firstCoverName);
-const coverBytes = fs.existsSync(firstCoverPath) ? fs.readFileSync(firstCoverPath) : Buffer.alloc(0);
-const coverExt = path.extname(firstCoverName).toLowerCase();
-const coverContentType =
-  coverExt === '.webp' ? 'image/webp' : coverExt === '.png' ? 'image/png' : 'image/jpeg';
+// Every cover image in the QA tests is this one fixture (a copy of the atomic-clocks cover the visual
+// baselines were taken with), so results never depend on which articles are published that day.
+const coverBytes = fs.readFileSync(path.resolve(process.cwd(), 'tests/qa/fixtures/cover.webp'));
+const coverContentType = 'image/webp';
 
 export interface QaContextOptions {
   readonly reducedMotion?: 'reduce' | 'no-preference';
@@ -46,9 +42,9 @@ export async function newQaContext(
   await context.route('**/*', async (route) => {
     const url = new URL(route.request().url());
     const local = url.hostname === 'localhost' || url.hostname === '127.0.0.1';
-    // Self-hosted cover variants (scripts/covers.mjs) get the same fixture as remote covers, so
-    // screenshots do not depend on which photo the build step downloaded.
-    if (local && !url.pathname.startsWith('/covers/opt/')) {
+    // Self-hosted covers (public/covers, including the scripts/covers.mjs variants) get the same
+    // fixture as remote covers, so screenshots do not depend on which articles are published.
+    if (local && !url.pathname.startsWith('/covers/')) {
       await route.continue();
       return;
     }
