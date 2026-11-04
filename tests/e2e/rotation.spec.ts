@@ -300,6 +300,15 @@ function checkViewTransitions(vtRecords: Array<{ pseudo: string; duration: numbe
 }
 
 
+// A device rotation (the screen orientation flips on a touch device) is animated by the system, so the
+// app switches layout without its own View Transition; window resizes keep the morph (scenario 3).
+function checkNoStageMorph(vtRecords: Array<{ pseudo: string; duration: number }>): void {
+  const groups = vtRecords
+    .map((r) => r.pseudo.match(/^::view-transition-group\((.+)\)$/)?.[1])
+    .filter((name) => name && name !== 'root');
+  expect(groups).toEqual([]);
+}
+
 test.describe('rotation tests', () => {
   test('scenario 1: cover of 3rd article rotates 844x390 and back', async ({ browser }) => {
     const context = await newQaContext(browser, {
@@ -336,7 +345,7 @@ test.describe('rotation tests', () => {
         type QAWindow = Window & { __qaVTRecords?: Array<{ pseudo: string; duration: number }> };
         return (window as unknown as QAWindow).__qaVTRecords || [];
       });
-      checkViewTransitions(vtRecords);
+      checkNoStageMorph(vtRecords);
 
       await page.evaluate(() => {
         type QAWindow = Window & { __qaVTRecords?: Array<{ pseudo: string; duration: number }> };

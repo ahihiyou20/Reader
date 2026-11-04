@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { translate, type MessageKey, type Vars } from '@/lib/i18n';
-import { stageOf, STAGES, type Stage } from '@/lib/stage';
+import { isLandscape, stageOf, STAGES, type Stage } from '@/lib/stage';
 import { withStageTransition } from '@/lib/transition';
 import { useUI } from '@/stores/ui';
 
@@ -98,23 +98,37 @@ export function useStageSync() {
       useUI.getState().setStage(s);
     }
 
+    // A device rotation is already animated by the system. A View Transition on top of it captures a
+    // half-rotated snapshot and flashes it (iOS Safari fires several resizes while it rotates), so a
+    // rotation only switches the layout; the morph is kept for window resizes (desktop, split view).
+    const coarse = window.matchMedia('(pointer: coarse)');
+    let orientation = screen.orientation?.type;
+    let rotatedAt = -Infinity;
+    const onRotate = () => (rotatedAt = performance.now());
+
     const sync = () => {
       const next = stageOf(window.innerWidth, window.innerHeight);
-      if (next !== useUI.getState().stage) {
-        void withStageTransition(() => {
-          flushSync(() => {
-            root.setAttribute('data-stage', next);
-            useUI.getState().setStage(next);
-          });
+      const current = useUI.getState().stage;
+      const type = screen.orientation?.type;
+      if (type !== orientation || (coarse.matches && isLandscape(next) !== isLandscape(current))) onRotate();
+      orientation = type;
+      if (next === current) return;
+      const apply = () =>
+        flushSync(() => {
+          root.setAttribute('data-stage', next);
+          useUI.getState().setStage(next);
         });
-      }
+      if (performance.now() - rotatedAt < 1000) apply();
+      else void withStageTransition(apply);
     };
 
     window.addEventListener('resize', sync);
+    window.addEventListener('orientationchange', onRotate);
     const vv = window.visualViewport;
     vv?.addEventListener('resize', sync);
     return () => {
       window.removeEventListener('resize', sync);
+      window.removeEventListener('orientationchange', onRotate);
       vv?.removeEventListener('resize', sync);
     };
   }, []);

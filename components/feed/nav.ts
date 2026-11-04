@@ -34,28 +34,46 @@ function fade(key: string) {
   fadeEls.get(key)?.animate([{ opacity: 0.35 }, { opacity: 1 }], { duration: 150, easing: 'ease-out' });
 }
 
+// Gestures settle on a spring that runs on the main thread. The store (index, view) changes only once
+// the spring has landed: committing it at release mounts the next article mid-slide, which blocks the
+// main thread for 100 ms or more on phones and makes the slide stall, then jump (seen in iOS Safari).
+// While a slide is in flight, gestures read the target from targetArticle() / targetView().
 let inFlightTarget: number | null = null;
 export function targetArticle(): number {
   return inFlightTarget ?? useUI.getState().index;
 }
 
+/** A new touch interrupts the slide: commit its target now so the pages around it are mounted. */
+export function commitInFlight() {
+  if (inFlightTarget === null) return;
+  const t = inFlightTarget;
+  inFlightTarget = null;
+  useUI.getState().setIndex(t);
+}
+
+const viewTargets = new Map<string, View>();
+export function targetView(slug: string): View {
+  return viewTargets.get(slug) ?? useUI.getState().views[slug] ?? 0;
+}
+
 export function goToArticle(target: number, velocity = 0, instant = false) {
   const ui = useUI.getState();
   const t = clamp(target, 0, Math.max(0, layout.total - 1));
-  inFlightTarget = t;
   const changed = t !== ui.index;
-  if (changed) useUI.getState().setIndex(t);
   const velocityInPages = -velocity / Math.max(1, layout.h);
   if (instant || prefersReducedMotion()) {
+    inFlightTarget = null;
     feedP.stop();
     feedP.set(t);
-    inFlightTarget = null;
+    if (changed) ui.setIndex(t);
     if (changed && !instant) fade('feed');
     return;
   }
-  const anim = animate(feedP, t, { ...springFor(velocity), velocity: velocityInPages });
-  anim.then(() => {
-    if (inFlightTarget === t) inFlightTarget = null;
+  inFlightTarget = t;
+  animate(feedP, t, { ...springFor(velocity), velocity: velocityInPages }).then(() => {
+    if (inFlightTarget !== t) return;
+    inFlightTarget = null;
+    useUI.getState().setIndex(t);
   });
 }
 
@@ -63,15 +81,21 @@ export function setArticleView(slug: string, target: number, velocity = 0, insta
   const t = clamp(target, 0, 2) as View;
   const p = viewP(slug);
   const changed = t !== (useUI.getState().views[slug] ?? 0);
-  useUI.getState().setView(slug, t);
   const velocityInPages = -velocity / Math.max(1, layout.w);
   if (instant || prefersReducedMotion()) {
+    viewTargets.delete(slug);
     p.stop();
     p.set(t);
+    useUI.getState().setView(slug, t);
     if (changed && !instant) fade(slug);
     return;
   }
-  animate(p, t, { ...springFor(velocity), velocity: velocityInPages });
+  viewTargets.set(slug, t);
+  animate(p, t, { ...springFor(velocity), velocity: velocityInPages }).then(() => {
+    if (viewTargets.get(slug) !== t) return;
+    viewTargets.delete(slug);
+    useUI.getState().setView(slug, t);
+  });
 }
 
 let currentItems: readonly { slug: string }[] | string[] = [];

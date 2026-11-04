@@ -13,7 +13,20 @@ import { useUI } from '@/stores/ui';
 import { useSize, useT } from '../hooks';
 import { ArticlePage } from './ArticlePage';
 import { EndCard } from './EndCard';
-import { chromeP, feedP, goToArticle, layout, registerFade, relayout, setArticleView, setFeedSlugs, viewP } from './nav';
+import {
+  chromeP,
+  commitInFlight,
+  feedP,
+  goToArticle,
+  layout,
+  registerFade,
+  relayout,
+  setArticleView,
+  setFeedSlugs,
+  targetArticle,
+  targetView,
+  viewP,
+} from './nav';
 
 interface Gesture {
   id: number;
@@ -119,10 +132,11 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       if (e.button > 0 || g) return;
       const target = e.target as Element;
       if (target.closest('input, textarea, select, form, [data-no-drag]')) return;
+      feedP.stop();
+      commitInFlight();
       const ui = useUI.getState();
       const slug = items[ui.index]?.slug;
       const vp = slug ? viewP(slug) : null;
-      feedP.stop();
       vp?.stop();
       const scroller = target.closest('.dscroll, .escroll');
       g = {
@@ -131,7 +145,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
         y0: e.clientY,
         axis: null,
         slug,
-        view: slug ? (ui.views[slug] ?? 0) : 0,
+        view: slug ? targetView(slug) : 0,
         w0: layout.w,
         h0: layout.h,
         fp: feedP.get(),
@@ -174,7 +188,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     // Put anything we stopped mid-animation back on its page.
     const settle = (G: Gesture) => {
       if (G.slug) setArticleView(G.slug, G.view);
-      goToArticle(useUI.getState().index);
+      goToArticle(targetArticle());
     };
 
     const end = (e: PointerEvent) => {
@@ -207,7 +221,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
               sampleNow,
             )
           : 0;
-        const i = useUI.getState().index;
+        const i = targetArticle();
         const page = pickPage(-(feedP.get() * layout.h), v, layout.h, i, 0, layout.total - 1);
         goToArticle(page, v);
       }
@@ -235,9 +249,9 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     // Trackpads and mouse wheels: one page per gesture.
     let wheelLock = 0;
     const wheel = (e: WheelEvent) => {
-      const ui = useUI.getState();
-      const slug = items[ui.index]?.slug;
-      const view = slug ? (ui.views[slug] ?? 0) : 0;
+      const index = targetArticle();
+      const slug = items[index]?.slug;
+      const view = slug ? targetView(slug) : 0;
       const horiz = Math.abs(e.deltaX) > Math.abs(e.deltaY);
       if (!horiz && view !== 0) return;
       if ((e.target as Element).closest('.panel, .sheet')) return;
@@ -248,7 +262,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       if (Math.abs(d) < 12) return;
       wheelLock = now + 650;
       if (horiz && slug) setArticleView(slug, view + Math.sign(d));
-      else if (!horiz) goToArticle(ui.index + Math.sign(d));
+      else if (!horiz) goToArticle(index + Math.sign(d));
     };
 
     el.addEventListener('pointerdown', down);
@@ -276,14 +290,15 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const ui = useUI.getState();
       if (ui.overlays.length || ui.sheet || ui.langMenu) return;
-      const slug = items[ui.index]?.slug;
-      const view = slug ? (ui.views[slug] ?? 0) : 0;
+      const index = targetArticle();
+      const slug = items[index]?.slug;
+      const view = slug ? targetView(slug) : 0;
       if (e.key === 'ArrowDown' && view === 0) {
         e.preventDefault();
-        goToArticle(ui.index + 1, 0, true);
+        goToArticle(index + 1, 0, true);
       } else if (e.key === 'ArrowUp' && view === 0) {
         e.preventDefault();
-        goToArticle(ui.index - 1, 0, true);
+        goToArticle(index - 1, 0, true);
       } else if (e.key === 'ArrowRight' && slug) {
         e.preventDefault();
         setArticleView(slug, view + 1, 0, true);
