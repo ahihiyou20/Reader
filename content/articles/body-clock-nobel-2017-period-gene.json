@@ -1,0 +1,114 @@
+{
+  "slug": "body-clock-nobel-2017-period-gene",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "health",
+  "tags": [
+    "circadian rhythm",
+    "sleep",
+    "genetics",
+    "shift work"
+  ],
+  "title": {
+    "en": "Inside the body clock: the gene that keeps time",
+    "vi": "Bên trong đồng hồ sinh học: gen giữ nhịp thời gian"
+  },
+  "hook": {
+    "en": "Every cell in your body keeps a rough 24-hour schedule, and the Nobel Prize in 2017 went to three scientists who found how. In fruit flies they isolated a gene called period and showed that its protein [p:builds up at night and is broken down by day]. The same logic runs in humans, and when the clock and the environment disagree, health can suffer.",
+    "vi": "Mỗi tế bào trong cơ thể bạn giữ một lịch trình khoảng 24 giờ, và giải Nobel năm 2017 trao cho ba nhà khoa học đã tìm ra cách nó chạy. Ở ruồi giấm, họ tách được một gen tên là period và chứng minh rằng protein của nó [p:tích tụ vào ban đêm và bị phân hủy vào ban ngày]. Cùng một logic ấy chạy ở con người, và khi đồng hồ và môi trường bất đồng, sức khỏe có thể bị ảnh hưởng."
+  },
+  "sections": [
+    {
+      "heading_en": "A clock that predicts the day",
+      "heading_vi": "Một chiếc đồng hồ dự đoán ngày",
+      "body_en": "Life on Earth is adapted to the rotation of the planet. For a long time scientists knew that organisms, humans included, have an internal clock that helps them anticipate the rhythm of the day, but not how it worked {nobel-2017}. The clock regulates behaviour, hormone levels, sleep, body temperature and metabolism. It is not a simple reaction to daylight. The laureates describe a self-sustaining clockwork inside the cell, an internal rhythm that continues on its own, which is why people who fly across time zones feel out of step with the local day, and why the clock can be studied apart from the sun.",
+      "body_vi": "Sự sống trên Trái Đất thích nghi với chuyển động quay của hành tinh. Từ lâu các nhà khoa học biết rằng sinh vật, kể cả con người, có một chiếc đồng hồ bên trong giúp chúng đoán trước nhịp của ngày, nhưng chưa biết nó chạy ra sao {nobel-2017}. Đồng hồ này điều hòa hành vi, nồng độ hormone, giấc ngủ, thân nhiệt và chuyển hóa. Nó không phải một phản ứng đơn giản với ánh sáng ban ngày. Các nhà khoa học đoạt giải mô tả một cơ chế đồng hồ tự duy trì bên trong tế bào, một nhịp bên trong tự tiếp diễn, vì thế người bay qua nhiều múi giờ thấy lệch nhịp với ngày địa phương, và vì thế đồng hồ có thể được nghiên cứu tách khỏi mặt trời."
+    },
+    {
+      "heading_en": "Finding the gene in fruit flies",
+      "heading_vi": "Tìm gen ở ruồi giấm",
+      "body_en": "In the 1970s Seymour Benzer and his student Ronald Konopka showed that mutations in one unknown gene disrupted the circadian clock of flies, and they named it period {nobel-2017}. In 1984 Jeffrey Hall and Michael Rosbash, working together at Brandeis University, and Michael Young at the Rockefeller University isolated it. Hall and Rosbash then found that PER, the protein the gene encodes, accumulated during the night and was degraded during the day. Its level therefore rises and falls over 24 hours, in step with the daily rhythm. A number moving up and down on a daily schedule was the first visible gear of the clock.",
+      "body_vi": "Thập niên 1970, Seymour Benzer và học trò Ronald Konopka chứng minh rằng đột biến ở một gen chưa biết làm rối loạn đồng hồ sinh học của ruồi, và họ đặt tên nó là period {nobel-2017}. Năm 1984, Jeffrey Hall và Michael Rosbash, cùng làm việc tại Đại học Brandeis, và Michael Young tại Đại học Rockefeller đã tách được nó. Hall và Rosbash sau đó thấy PER, protein do gen này mã hóa, tích tụ vào ban đêm và bị phân hủy vào ban ngày. Nồng độ của nó vì thế lên xuống trong 24 giờ, cùng nhịp với nhịp ngày. Một con số lên xuống theo lịch hằng ngày là bánh răng đầu tiên nhìn thấy được của chiếc đồng hồ."
+    },
+    {
+      "heading_en": "A loop that switches itself off",
+      "heading_vi": "Một vòng lặp tự tắt",
+      "body_en": "Hall and Rosbash proposed that PER blocks the activity of its own gene, an inhibitory feedback loop that yields a cyclic rhythm {nobel-2017}. When the gene is active, it makes messenger RNA, which is used to build PER protein in the cell's cytoplasm. PER then builds up in the nucleus, where it blocks the gene. As PER is broken down, the block lifts, and the cycle begins again. A puzzle remained: how does PER reach the nucleus? In 1994 Young found a second clock gene, timeless, and in 1998 another, doubletime, which regulates how PER accumulates.",
+      "body_vi": "Hall và Rosbash đề xuất rằng PER chặn hoạt động của chính gen của nó, một vòng phản hồi ức chế tạo ra nhịp tuần hoàn {nobel-2017}. Khi gen hoạt động, nó tạo RNA thông tin, dùng để dựng protein PER trong tế bào chất. PER sau đó tích tụ trong nhân, nơi nó chặn gen. Khi PER bị phân hủy, sự chặn được gỡ và chu kỳ bắt đầu lại. Một câu đố còn lại: PER đến nhân bằng cách nào? Năm 1994 Young tìm thấy một gen đồng hồ thứ hai, timeless, và năm 1998 một gen khác, doubletime, điều hòa cách PER tích tụ."
+    },
+    {
+      "heading_en": "The human clock runs a little long",
+      "heading_vi": "Đồng hồ của người chạy hơi dài",
+      "body_en": "Humans use similar principles, and a large share of our genes is regulated by the clock {nobel-2017}. In controlled lighting, the intrinsic period of the human pacemaker averages 24.18 hours in both young and older people, with a tight spread {czeisler-1999}. Earlier work had reported periods as long as 25 hours, but those measurements were confounded by light exposure. The authors say the finding matters for understanding disrupted sleep in older people.",
+      "body_vi": "Con người dùng những nguyên lý tương tự, và một phần lớn gen của ta được đồng hồ điều hòa {nobel-2017}. Trong điều kiện ánh sáng được kiểm soát, chu kỳ nội tại của bộ phát nhịp ở người trung bình là 24,18 giờ ở cả người trẻ và người lớn tuổi, với độ phân tán hẹp {czeisler-1999}. Các nghiên cứu trước đó từng báo cáo chu kỳ dài tới 25 giờ, nhưng những phép đo ấy bị nhiễu do ánh sáng. Các tác giả cho biết phát hiện này quan trọng để hiểu giấc ngủ rối loạn ở người lớn tuổi."
+    },
+    {
+      "heading_en": "When clock and calendar disagree",
+      "heading_vi": "Khi đồng hồ và lịch bất đồng",
+      "body_en": "The Nobel committee notes that our wellbeing is affected when there is a mismatch between the external environment and the internal clock, as in jet lag, and that chronic misalignment is linked, by indications, with increased risk of various diseases {nobel-2017}. Night shift work is a longer mismatch. A 2026 review of healthcare workers says circadian misalignment is an independent risk factor for cardiometabolic disease, not only a side effect of lost sleep, and reports a dose-response relationship between night-shift exposure and cardiometabolic risk {ye-2026}. A cross-sectional analysis of 3,578 US adults found more autoimmune thyroiditis in shift workers, with an odds ratio of 1.69, which shows an association and not a cause {li-2026}.",
+      "body_vi": "Ủy ban Nobel lưu ý rằng sức khỏe của ta bị ảnh hưởng khi có sự lệch giữa môi trường bên ngoài và đồng hồ bên trong, như khi bị lệch múi giờ, và có dấu hiệu cho thấy sự lệch nhịp mạn tính liên quan đến nguy cơ nhiều bệnh tăng lên {nobel-2017}. Làm ca đêm là một sự lệch kéo dài hơn. Một bài tổng quan năm 2026 về nhân viên y tế nói rằng sự lệch nhịp sinh học là một yếu tố nguy cơ độc lập đối với bệnh tim chuyển hóa, không chỉ là hệ quả phụ của việc mất ngủ, và báo cáo mối quan hệ liều đáp ứng giữa mức tiếp xúc ca đêm và nguy cơ tim chuyển hóa {ye-2026}. Một phân tích cắt ngang trên 3.578 người trưởng thành Mỹ thấy viêm tuyến giáp tự miễn nhiều hơn ở người làm ca, với tỷ số chênh 1,69, điều cho thấy mối liên quan chứ không phải nguyên nhân {li-2026}."
+    },
+    {
+      "heading_en": "What this means for daily life",
+      "heading_vi": "Điều này nghĩa là gì cho cuộc sống hằng ngày",
+      "body_en": "The research does not give a prescription for everyone. The review of night-shift work says that advice is moving from one-size-fits-all rules to individual approaches based on a person's circadian type {ye-2026}. What it supports is modest: the body keeps its own time, light and routine adjust it, and regular, predictable schedules cost it less than irregular ones. If you must work nights, the evidence points to tailoring your plan, and to seeing a doctor about long-term risks rather than guessing. Be sceptical of anyone who promises a perfect schedule for every body.",
+      "body_vi": "Nghiên cứu không đưa ra một đơn thuốc cho mọi người. Bài tổng quan về làm ca đêm nói rằng lời khuyên đang chuyển từ quy tắc chung cho mọi người sang cách tiếp cận cá nhân dựa trên kiểu nhịp sinh học của từng người {ye-2026}. Điều nó ủng hộ là khiêm tốn: cơ thể giữ thời gian riêng của nó, ánh sáng và thói quen điều chỉnh nó, và lịch trình đều đặn, dễ đoán tốn cơ thể ít hơn lịch thất thường. Nếu bạn buộc phải làm đêm, bằng chứng gợi ý nên điều chỉnh kế hoạch cho riêng mình, và gặp bác sĩ về nguy cơ dài hạn thay vì đoán. Hãy hoài nghi ai hứa hẹn một lịch trình hoàn hảo cho mọi cơ thể."
+    }
+  ],
+  "keyPoint": {
+    "en": "Your cells carry a self-running clock, built from a gene whose protein switches the gene off and then fades, giving a 24-hour cycle. [p:Keep your light, meals and sleep at regular times] so the clock and the day agree, and talk to a doctor if you work nights.",
+    "vi": "Tế bào của bạn mang một chiếc đồng hồ tự chạy, dựng từ một gen mà protein của nó tắt gen rồi phai đi, tạo ra chu kỳ 24 giờ. [p:Giữ ánh sáng, bữa ăn và giấc ngủ vào những giờ đều đặn] để đồng hồ và ngày khớp nhau, và hãy hỏi bác sĩ nếu bạn làm ca đêm."
+  },
+  "applySteps": {
+    "en": [
+      "Get outdoor light within an hour of waking for the next seven days.",
+      "Fix your wake-up time within a 30-minute window, including weekends.",
+      "Dim screens and bright lights in the hour before bed and note how you sleep."
+    ],
+    "vi": [
+      "Ra ngoài đón ánh sáng trong vòng một giờ sau khi thức dậy trong bảy ngày tới.",
+      "Đặt giờ thức dậy trong khung 30 phút, kể cả cuối tuần.",
+      "Giảm độ sáng màn hình và đèn trong một giờ trước khi ngủ và ghi lại giấc ngủ của bạn."
+    ]
+  },
+  "references": [
+    {
+      "id": "nobel-2017",
+      "label": "Nobel Prize in Physiology or Medicine 2017: press release",
+      "url": "https://www.nobelprize.org/prizes/medicine/2017/press-release/"
+    },
+    {
+      "id": "czeisler-1999",
+      "label": "Czeisler et al. (1999)",
+      "url": "https://doi.org/10.1126/science.284.5423.2177"
+    },
+    {
+      "id": "ye-2026",
+      "label": "Ye et al. (2026)",
+      "url": "https://doi.org/10.3389/fpubh.2026.1934083"
+    },
+    {
+      "id": "li-2026",
+      "label": "Li, Peng & Liao (2026)",
+      "url": "https://doi.org/10.1097/md.0000000000050583"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/body-clock-nobel-2017-period-gene.webp",
+    "provider": "unsplash",
+    "author": "Kenneth Thewissen",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/D76DklsG-5U"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBACdASoQABwAPu1iqk4ppaQiMAgBMB2JagCdMoACN7r/iPGFH/ThwAD6JOHfng//z/3QVkUgDFwWMgfYHQms1MKUxDlUP36VEwvpJYtMHPcUptZfM1hJz4BA3lEMYpudCTexKHTcMruDIRRa7dA9ylhPg+VttVW9ej/H9ksg7qa6EbXOhXRd0DQr3jix2IgAN97wAAA=",
+  "dominant": "#6f582a"
+}

@@ -1,0 +1,110 @@
+{
+  "slug": "packet-switching-origin-of-internet",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "internet",
+    "networks",
+    "arpanet",
+    "history of computing"
+  ],
+  "title": {
+    "en": "Packet switching: the idea underneath the internet",
+    "vi": "Chuyển mạch gói: ý tưởng nằm dưới internet"
+  },
+  "hook": {
+    "en": "Every web page you load is chopped into small packets that travel separately and are put back together at the other end. The idea was invented twice, independently: by Paul Baran at RAND in the early 1960s and by Donald Davies in Britain in 1965. [p:Davies gave it the name packet switching], and the ARPANET adopted it in 1967.",
+    "vi": "Mỗi trang web bạn tải được cắt thành những gói nhỏ đi riêng và được ghép lại ở đầu bên kia. Ý tưởng được phát minh hai lần, độc lập: bởi Paul Baran tại RAND đầu thập niên 1960 và bởi Donald Davies ở Anh năm 1965. [p:Davies đặt cho nó cái tên chuyển mạch gói], và ARPANET áp dụng nó năm 1967."
+  },
+  "sections": [
+    {
+      "heading_en": "What a packet is",
+      "heading_vi": "Gói tin là gì",
+      "body_en": "Packet switching groups data into short messages of fixed format, called packets, which are sent over a network {wiki-packet}. A packet has a header, which directs it to its destination, and a payload, which is extracted there. Resources are used only as needed: a channel is occupied for the duration of the packet and then freed for other traffic. Packets are received, buffered, queued and forwarded by switches and routers, so delay and throughput vary with link capacity and load. It is the primary basis for data communications in computer networks worldwide.",
+      "body_vi": "Chuyển mạch gói gom dữ liệu thành những thông điệp ngắn có định dạng cố định, gọi là gói tin, rồi gửi qua mạng {wiki-packet}. Một gói có phần đầu, chỉ hướng đến đích, và phần tải, được lấy ra ở đó. Tài nguyên chỉ được dùng khi cần: một kênh bị chiếm trong thời gian của gói rồi được giải phóng cho lưu lượng khác. Các gói được nhận, đệm, xếp hàng và chuyển tiếp bởi bộ chuyển mạch và bộ định tuyến, nên độ trễ và thông lượng thay đổi theo dung lượng đường truyền và tải. Nó là nền tảng chính của truyền thông dữ liệu trong các mạng máy tính trên toàn thế giới."
+    },
+    {
+      "heading_en": "Circuit switching, the old way",
+      "heading_vi": "Chuyển mạch kênh, cách cũ",
+      "body_en": "The older model was circuit switching, used in the telephone network, where each call is given a dedicated end-to-end connection for its duration {wiki-arpanet}. Circuit switching pre-allocates dedicated bandwidth to each session at a constant bit rate and latency. In billed services it charges per unit of connection time even when no data moves, while packet switching may charge per unit of information sent {wiki-packet}. Baran's ideas contradicted the established principle of pre-allocating bandwidth, which is part of why they found little resonance among network builders at first.",
+      "body_vi": "Mô hình cũ hơn là chuyển mạch kênh, dùng trong mạng điện thoại, trong đó mỗi cuộc gọi được cấp một kết nối đầu cuối dành riêng trong suốt thời gian gọi {wiki-arpanet}. Chuyển mạch kênh cấp trước băng thông dành riêng cho từng phiên với tốc độ bit và độ trễ không đổi. Ở các dịch vụ tính phí, nó tính theo đơn vị thời gian kết nối kể cả khi không có dữ liệu chạy, còn chuyển mạch gói có thể tính theo đơn vị thông tin gửi đi {wiki-packet}. Ý tưởng của Baran đi ngược nguyên tắc cấp phát băng thông trước, một phần lý do ban đầu nó ít được những người xây mạng hưởng ứng."
+    },
+    {
+      "heading_en": "Baran's survivable network",
+      "heading_vi": "Mạng sống sót của Baran",
+      "body_en": "In the late 1950s the US Air Force built a wide area network for the SAGE radar defence system and, seeing its weaknesses, wanted a network that could survive a nuclear attack {wiki-packet}. Paul Baran at the RAND Corporation proposed three ideas: a decentralised network with multiple paths between any two points, user messages divided into message blocks, and delivery by store-and-forward switching. He first presented it to the Air Force in the summer of 1961, and RAND published it in 1962 and 1964. His focus was voice messages carried by low-cost electronic switches.",
+      "body_vi": "Cuối thập niên 1950, Không quân Mỹ xây một mạng diện rộng cho hệ thống phòng thủ radar SAGE và, nhận ra những điểm yếu của nó, muốn một mạng có thể sống sót sau một cuộc tấn công hạt nhân {wiki-packet}. Paul Baran tại RAND Corporation đề xuất ba ý tưởng: một mạng phân tán với nhiều đường đi giữa hai điểm bất kỳ, thông điệp người dùng chia thành các khối thông điệp, và chuyển bằng chuyển mạch lưu và chuyển tiếp. Ông trình bày lần đầu với Không quân vào mùa hè năm 1961, và RAND công bố năm 1962 và 1964. Trọng tâm của ông là tin nhắn thoại do các bộ chuyển mạch điện tử giá rẻ mang."
+    },
+    {
+      "heading_en": "Davies names it",
+      "heading_vi": "Davies đặt tên",
+      "body_en": "Donald Davies at Britain's National Physical Laboratory came to the idea on his own in 1965, after conversations about time-sharing with remote computers {wiki-packet}. His insight was to use short, fixed-format messages at high transmission rates. He coined the term packet switching and proposed a commercial nationwide data network in the UK. After his 1966 talk, someone from the Ministry of Defence told him about Baran's work. Davies also assumed that all users would provide their own error control, which is what became known as the end-to-end principle. His NPL network began service in 1970 after a pilot in early 1969.",
+      "body_vi": "Donald Davies tại Phòng thí nghiệm Vật lý Quốc gia của Anh tự đến với ý tưởng năm 1965, sau những cuộc trao đổi về chia sẻ thời gian với máy tính từ xa {wiki-packet}. Hiểu biết của ông là dùng những thông điệp ngắn, định dạng cố định ở tốc độ truyền cao. Ông đặt thuật ngữ chuyển mạch gói và đề xuất một mạng dữ liệu thương mại toàn quốc ở Anh. Sau bài nói năm 1966 của ông, một người từ Bộ Quốc phòng cho ông biết về công trình của Baran. Davies cũng giả định rằng mọi người dùng sẽ tự lo kiểm soát lỗi, điều về sau được gọi là nguyên lý đầu cuối. Mạng NPL của ông bắt đầu hoạt động năm 1970 sau một thử nghiệm đầu năm 1969."
+    },
+    {
+      "heading_en": "Would it be fast enough?",
+      "heading_vi": "Liệu nó có đủ nhanh?",
+      "body_en": "A key question was whether a store-and-forward network could answer a human user quickly. Leonard Kleinrock had applied queueing theory to message switching in his 1961 to 1962 doctoral work and published it as a book in 1964 {wiki-packet}. Davies used Kleinrock's techniques in his 1966 paper to argue there was an ample margin between the system's estimated performance and the response time a user needed. A packet switch itself has four components: input ports, output ports, a routing processor and a switching fabric. Kleinrock later led the UCLA centre that measured and modelled packet switching in the ARPANET.",
+      "body_vi": "Một câu hỏi then chốt là liệu một mạng lưu và chuyển tiếp có thể đáp ứng nhanh cho người dùng hay không. Leonard Kleinrock đã áp dụng lý thuyết hàng đợi vào chuyển mạch thông điệp trong luận án tiến sĩ 1961 đến 1962 và xuất bản thành sách năm 1964 {wiki-packet}. Davies dùng các kỹ thuật của Kleinrock trong bài báo năm 1966 để lập luận rằng có một biên độ rộng giữa hiệu năng ước tính của hệ thống và thời gian đáp ứng người dùng cần. Bản thân một bộ chuyển mạch gói có bốn thành phần: cổng vào, cổng ra, bộ xử lý định tuyến và ma trận chuyển mạch. Kleinrock sau đó dẫn dắt trung tâm UCLA đo lường và mô hình hóa chuyển mạch gói trong ARPANET."
+    },
+    {
+      "heading_en": "The October 1967 conference",
+      "heading_vi": "Hội nghị tháng 10 năm 1967",
+      "body_en": "Roger Scantlebury of Davies's team presented their work, and cited Baran's, at the Symposium on Operating Systems Principles in October 1967 {wiki-packet}. There he proposed packet switching for the ARPANET and persuaded Larry Roberts that the economics were favourable. Straight afterwards, Roberts built Davies's ideas into the ARPANET design and asked Baran for input. Davies had even chosen some of the same parameters as Baran, such as a packet size of 1,024 bits. The sequence shows how a technical idea can travel by chance meetings: three people on two continents arrived at the same design.",
+      "body_vi": "Roger Scantlebury trong nhóm của Davies trình bày công trình của họ, và dẫn công trình của Baran, tại Hội thảo Nguyên lý Hệ điều hành tháng 10 năm 1967 {wiki-packet}. Ở đó ông đề xuất chuyển mạch gói cho ARPANET và thuyết phục Larry Roberts rằng kinh tế có lợi. Ngay sau đó, Roberts đưa các ý tưởng của Davies vào thiết kế ARPANET và hỏi ý kiến Baran. Davies thậm chí đã chọn một số tham số giống Baran, như kích thước gói 1.024 bit. Chuỗi sự kiện cho thấy một ý tưởng kỹ thuật có thể lan đi qua những cuộc gặp tình cờ: nhiều người ở hai châu lục đã đến cùng một thiết kế."
+    },
+    {
+      "heading_en": "From ARPANET to the internet",
+      "heading_vi": "Từ ARPANET đến internet",
+      "body_en": "The ARPANET was the first wide-area packet-switched network with distributed control, and one of the first to use TCP/IP {wiki-arpanet}. Bob Taylor started the project in 1966, and Bolt Beranek & Newman won the contract in 1969 to build the Interface Message Processors, with the design led by Bob Kahn. The first computers were connected in 1969, and the network was declared operational in 1971. Version 4 of TCP/IP went into production use on 1 January 1983. The ARPANET was formally decommissioned in 1990, after private-sector networks had grown into what we call the internet.",
+      "body_vi": "ARPANET là mạng chuyển mạch gói diện rộng đầu tiên có điều khiển phân tán, và là một trong những mạng đầu tiên dùng TCP/IP {wiki-arpanet}. Bob Taylor khởi xướng dự án năm 1966, và Bolt Beranek & Newman trúng thầu năm 1969 để xây các Bộ xử lý thông điệp giao diện, với thiết kế do Bob Kahn dẫn dắt. Những máy tính đầu tiên được nối năm 1969, và mạng được tuyên bố hoạt động năm 1971. Phiên bản 4 của TCP/IP được đưa vào sử dụng thực tế ngày 1 tháng 1 năm 1983. ARPANET chính thức ngừng hoạt động năm 1990, sau khi các mạng khu vực tư nhân đã lớn thành thứ ta gọi là internet."
+    }
+  ],
+  "keyPoint": {
+    "en": "Packet switching splits data into addressed packets that share links and are reassembled at the destination. [p:It was invented independently by Baran and Davies,] and the ARPANET carried it into the internet. Compared with a dedicated circuit, it uses a channel only while a packet is in transit.",
+    "vi": "Chuyển mạch gói tách dữ liệu thành các gói có địa chỉ, dùng chung đường truyền và được ghép lại ở đích. [p:Nó được Baran và Davies phát minh độc lập,] và ARPANET đưa nó vào internet. So với một kênh dành riêng, nó chỉ dùng kênh khi có gói đang truyền."
+  },
+  "applySteps": {
+    "en": [
+      "Run a traceroute to a website and count the hops between you and it.",
+      "Look up the difference between a router and a switch and find yours at home.",
+      "Read one primary account of the 1967 conference, such as Scantlebury's or Roberts's papers."
+    ],
+    "vi": [
+      "Chạy lệnh traceroute tới một trang web và đếm số chặng giữa bạn và nó.",
+      "Tìm hiểu khác biệt giữa bộ định tuyến và bộ chuyển mạch rồi tìm cái ở nhà bạn.",
+      "Đọc một bản ghi chép gốc về hội nghị năm 1967, như bài của Scantlebury hay Roberts."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-packet",
+      "label": "Wikipedia: Packet switching",
+      "url": "https://en.wikipedia.org/wiki/Packet_switching"
+    },
+    {
+      "id": "wiki-arpanet",
+      "label": "Wikipedia: ARPANET",
+      "url": "https://en.wikipedia.org/wiki/ARPANET"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/packet-switching-origin-of-internet.webp",
+    "provider": "unsplash",
+    "author": "Zugr",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/asrWX-lU3RE"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoQABwAPu1iqk2ppaQiMAgBMB2JZwDImdwAyoqdes+mb/5TAoAA/fobOXtBiZc5xtOC6+e7waVNXesaiqZaJenMhwaopPUh9eTnqAFBUXN2lLpRt7L6TlUHu9xqdO8s24Se6/VRMKadRZiVVCm8BxXptKjMgmQBQgPBS2QDV3Mz7Qo3rXNlYAAA",
+  "dominant": "#545456"
+}

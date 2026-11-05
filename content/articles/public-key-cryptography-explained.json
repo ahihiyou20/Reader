@@ -1,0 +1,115 @@
+{
+  "slug": "public-key-cryptography-explained",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "cryptography",
+    "security",
+    "internet",
+    "encryption"
+  ],
+  "title": {
+    "en": "Public-key cryptography: how strangers share secrets",
+    "vi": "Mật mã khóa công khai: người lạ chia sẻ bí mật thế nào"
+  },
+  "hook": {
+    "en": "Until the mid-1970s every cipher worked the same way: sender and receiver shared one secret key, which had to be delivered safely first. Public-key cryptography broke that rule with a pair of keys, one of which can be published openly. It now protects secure websites and email, and [p:a quantum computer could break many of today's schemes], which is why standards are changing.",
+    "vi": "Cho đến giữa thập niên 1970, mọi hệ mật mã đều chạy theo cùng một cách: người gửi và người nhận dùng chung một khóa bí mật, và khóa ấy phải được giao đến an toàn trước. Mật mã khóa công khai phá luật ấy bằng một cặp khóa, trong đó một khóa có thể công bố công khai. Nay nó bảo vệ các trang web và thư điện tử an toàn, và [p:một máy tính lượng tử có thể phá nhiều cơ chế hiện nay], nên các tiêu chuẩn đang thay đổi."
+  },
+  "sections": [
+    {
+      "heading_en": "The problem of the shared key",
+      "heading_vi": "Vấn đề của khóa dùng chung",
+      "body_en": "Before the mid-1970s, all cipher systems used symmetric keys: the sender and recipient used the same secret key, which had to be exchanged securely first, for instance over a secure channel {wiki-pkc}. That requirement is never trivial. It becomes unmanageable as the number of participants grows, because every possible pair of users needs a separate key if messages are to stay secret from the others. It is also hard when no secure channel exists, or when keys should be changed often. Traditionally the answer was physical, such as key lists carried by a trusted courier {wiki-dh}.",
+      "body_vi": "Trước giữa thập niên 1970, mọi hệ mật mã đều dùng khóa đối xứng: người gửi và người nhận dùng cùng một khóa bí mật, khóa ấy phải được trao đổi an toàn từ trước, chẳng hạn qua một kênh an toàn {wiki-pkc}. Yêu cầu đó chưa bao giờ đơn giản. Nó trở nên không thể quản lý khi số người tham gia tăng, vì mỗi cặp người dùng có thể có đều cần một khóa riêng nếu tin nhắn phải giữ kín với những người khác. Nó cũng khó khi không có kênh an toàn, hoặc khi cần đổi khóa thường xuyên. Theo truyền thống, câu trả lời là vật lý, như danh sách khóa do một người đưa tin đáng tin mang đi {wiki-dh}."
+    },
+    {
+      "heading_en": "Two keys instead of one",
+      "heading_vi": "Hai khóa thay vì một",
+      "body_en": "A public-key system uses a pair: a public key and a matching private key {wiki-pkc}. The pair comes from algorithms based on one-way functions, mathematical problems that are easy in one direction and hard to reverse. The public key can be spread widely without harming security. Only the private key must be kept secret. With public-key encryption, anyone can encrypt a message with the public key but only the holder of the private key can decrypt it. The source gives an example: a journalist publishes a public key on a website so sources can send secret messages.",
+      "body_vi": "Một hệ khóa công khai dùng một cặp: khóa công khai và khóa riêng tương ứng {wiki-pkc}. Cặp khóa đến từ các thuật toán dựa trên hàm một chiều, những bài toán dễ theo một hướng và khó đảo ngược. Khóa công khai có thể được phổ biến rộng mà không hại đến an ninh. Chỉ khóa riêng phải giữ bí mật. Với mã hóa khóa công khai, ai cũng có thể mã hóa một thông điệp bằng khóa công khai nhưng chỉ người giữ khóa riêng mới giải mã được. Nguồn đưa ví dụ: một nhà báo đăng khóa công khai trên trang web để các nguồn tin gửi thông điệp bí mật."
+    },
+    {
+      "heading_en": "Signatures: proof without secrecy",
+      "heading_vi": "Chữ ký: bằng chứng mà không cần bí mật",
+      "body_en": "The other main use is the digital signature. A sender uses a private key together with a message to create a signature, and anyone with the public key can check that it matches the message {wiki-pkc}. A forger without the private key cannot produce a pair that passes. A software publisher can put a public key in installed software and later sign updates with the private key, so a computer can confirm an update is genuine. The source warns about the limits: public-key encryption conceals content, but not metadata such as when a message was sent or how long it was, and it tells the recipient nothing about the sender.",
+      "body_vi": "Ứng dụng chính còn lại là chữ ký số. Người gửi dùng khóa riêng cùng với thông điệp để tạo chữ ký, và bất kỳ ai có khóa công khai cũng kiểm tra được chữ ký khớp với thông điệp {wiki-pkc}. Kẻ giả mạo không có khóa riêng không thể tạo ra một cặp vượt qua kiểm tra. Một nhà phát hành phần mềm có thể đặt khóa công khai trong phần mềm đã cài và sau đó ký các bản cập nhật bằng khóa riêng, để máy tính xác nhận bản cập nhật là thật. Nguồn cảnh báo về giới hạn: mã hóa khóa công khai che giấu nội dung, nhưng không che siêu dữ liệu như thời điểm gửi hay độ dài, và nó không cho người nhận biết gì về người gửi."
+    },
+    {
+      "heading_en": "A history with a secret chapter",
+      "heading_vi": "Một lịch sử có chương bí mật",
+      "body_en": "Whitfield Diffie and Martin Hellman published their key-exchange method in 1976, which lets two parties with no prior contact establish a shared secret over an insecure channel {wiki-dh}. Hellman later said that Ralph Merkle deserved equal credit for the idea of public-key distribution, and suggested calling it Diffie-Hellman-Merkle. The RSA cryptosystem followed shortly after. In 1997 it was revealed that James Ellis, Clifford Cocks and Malcolm Williamson of Britain's GCHQ had shown in 1969 how public-key cryptography could be done. The work was kept secret for decades.",
+      "body_vi": "Whitfield Diffie và Martin Hellman công bố phương pháp trao đổi khóa của họ năm 1976, cho phép hai bên chưa từng liên lạc thiết lập một bí mật chung qua một kênh không an toàn {wiki-dh}. Hellman sau đó nói Ralph Merkle xứng đáng được ghi công ngang bằng cho ý tưởng phân phối khóa công khai, và đề nghị gọi là Diffie-Hellman-Merkle. Hệ mật RSA theo sau không lâu. Năm 1997 người ta tiết lộ rằng James Ellis, Clifford Cocks và Malcolm Williamson của cơ quan GCHQ của Anh đã chỉ ra từ năm 1969 cách thực hiện mật mã khóa công khai. Công trình này được giữ bí mật hàng chục năm."
+    },
+    {
+      "heading_en": "Why the web mixes both kinds",
+      "heading_vi": "Vì sao web trộn cả hai loại",
+      "body_en": "Public-key algorithms are usually far more computationally expensive than symmetric ones, so protocols combine them {wiki-pkc}. A public-key exchange sets up a symmetric key, and that key encrypts the rest of the session. This hybrid design is used by PGP, SSH and the SSL and TLS family, and it spares the two sides from sharing a key in advance. Some TLS modes use ephemeral keys, which are discarded once the exchange is complete, which gives forward secrecy: a later theft of a long-term key cannot unlock earlier traffic {wiki-dh}.",
+      "body_vi": "Các thuật toán khóa công khai thường tốn tính toán hơn nhiều so với thuật toán đối xứng, nên các giao thức kết hợp cả hai {wiki-pkc}. Một lần trao đổi khóa công khai thiết lập một khóa đối xứng, và khóa đó mã hóa phần còn lại của phiên. Thiết kế lai này được PGP, SSH và họ SSL và TLS dùng, và nó giúp hai bên không phải chia sẻ khóa từ trước. Một số chế độ TLS dùng khóa tạm thời, bị hủy khi trao đổi xong, mang lại bí mật chuyển tiếp: việc đánh cắp khóa dài hạn về sau không thể mở khóa lưu lượng trước đó {wiki-dh}."
+    },
+    {
+      "heading_en": "Where it can fail",
+      "heading_vi": "Nó có thể hỏng ở đâu",
+      "body_en": "The main risk is simply that a private key becomes known {wiki-pkc}. A second is the man-in-the-middle attack, where someone swaps a public key for their own, so you need a way to trust that a key belongs to its claimed owner. Certificate authorities serve that role for TLS, while PGP uses a web of trust. Research published in October 2015 suggested that many Diffie-Hellman parameters then in use were too weak against well-funded attackers {wiki-dh}. Choosing good algorithms and long enough keys matters, and some past schemes, such as the knapsack scheme, were later broken.",
+      "body_vi": "Rủi ro chính đơn giản là khóa riêng bị lộ {wiki-pkc}. Rủi ro thứ hai là tấn công xen giữa, khi ai đó thay một khóa công khai bằng khóa của mình, nên bạn cần cách để tin rằng một khóa thuộc về chủ nhân được nêu. Các tổ chức cấp chứng thư đảm nhận vai trò đó cho TLS, còn PGP dùng mạng lưới tin cậy. Nghiên cứu công bố tháng 10 năm 2015 gợi ý rằng nhiều tham số Diffie-Hellman đang dùng khi đó quá yếu trước kẻ tấn công được tài trợ lớn {wiki-dh}. Chọn thuật toán tốt và khóa đủ dài là quan trọng, và một số cơ chế trước đây, như cơ chế knapsack, về sau bị phá."
+    },
+    {
+      "heading_en": "The quantum problem",
+      "heading_vi": "Vấn đề lượng tử",
+      "body_en": "With quantum computing, many asymmetric algorithms are considered vulnerable, and quantum-resistant schemes are being developed {wiki-pkc}. In August 2024, the US standards body NIST released the first three finalised post-quantum standards, covering general encryption and digital signatures {nist-2024}. It had chosen four algorithms in 2022: CRYSTALS-Kyber, CRYSTALS-Dilithium, Sphincs+ and FALCON. The standards address the two essential tasks of encryption on public networks and identity checks by signature. This is a long migration. The point is that the mathematics beneath secure websites is not permanent.",
+      "body_vi": "Với máy tính lượng tử, nhiều thuật toán bất đối xứng được coi là dễ tổn thương, và các cơ chế kháng lượng tử đang được phát triển {wiki-pkc}. Tháng 8 năm 2024, cơ quan tiêu chuẩn Mỹ NIST công bố ba tiêu chuẩn mật mã hậu lượng tử đầu tiên đã hoàn thiện, bao gồm mã hóa chung và chữ ký số {nist-2024}. Năm 2022 cơ quan này đã chọn bốn thuật toán: CRYSTALS-Kyber, CRYSTALS-Dilithium, Sphincs+ và FALCON. Các tiêu chuẩn hướng đến hai tác vụ thiết yếu là mã hóa trên mạng công cộng và xác minh danh tính bằng chữ ký. Đây là một cuộc chuyển đổi dài. Điều đáng nhớ là phần toán học bên dưới các trang web an toàn không phải vĩnh cửu."
+    }
+  ],
+  "keyPoint": {
+    "en": "Public-key cryptography lets strangers share secrets and verify signatures because [p:one key can be public while the other stays private]. The web uses it to set up fast symmetric keys. Its security rests on mathematical problems that quantum computers may solve, so standards are changing.",
+    "vi": "Mật mã khóa công khai cho phép người lạ chia sẻ bí mật và xác minh chữ ký vì [p:một khóa có thể công khai trong khi khóa kia giữ riêng.] Web dùng nó để thiết lập các khóa đối xứng nhanh. An ninh của nó dựa trên những bài toán mà máy tính lượng tử có thể giải, nên các tiêu chuẩn đang thay đổi."
+  },
+  "applySteps": {
+    "en": [
+      "Click the padlock on a website and look at which organisation issued its certificate.",
+      "Check if your messaging app lets you compare key fingerprints with a contact.",
+      "Keep a private key or recovery phrase offline, and never share it by message."
+    ],
+    "vi": [
+      "Nhấp vào biểu tượng ổ khóa trên một trang web và xem tổ chức nào cấp chứng thư của nó.",
+      "Kiểm tra xem ứng dụng nhắn tin của bạn có cho so sánh dấu vân tay khóa với một người liên hệ không.",
+      "Giữ khóa riêng hoặc cụm từ khôi phục ngoại tuyến, và đừng bao giờ gửi nó qua tin nhắn."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-pkc",
+      "label": "Wikipedia: Public-key cryptography",
+      "url": "https://en.wikipedia.org/wiki/Public-key_cryptography"
+    },
+    {
+      "id": "wiki-dh",
+      "label": "Wikipedia: Diffie–Hellman key exchange",
+      "url": "https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange"
+    },
+    {
+      "id": "nist-2024",
+      "label": "NIST (2024)",
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/public-key-cryptography-explained.webp",
+    "provider": "unsplash",
+    "author": "Nadir Balcikli",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/wE9nUW7tMmk"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAwCdASoQABwAPu1kq04ppaQiMAgBMB2JaQABNKaW1YgAAP74q3pF4Ev0cHpne5xcp0c+9OZOAAAA",
+  "dominant": "#9a9a9a"
+}
