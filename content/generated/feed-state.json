@@ -20,6 +20,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/books/sniff-book"
     },
+    "https://bigthink.com/books/the-persuasive-leader": {
+      "at": "2026-11-05T03:32:13.037Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/books/the-persuasive-leader"
+    },
     "https://bigthink.com/collections/made-in-our-image": {
       "at": "2026-10-26T01:14:36.769Z",
       "feed": "big-think",
@@ -44,6 +49,11 @@
       "at": "2026-10-26T01:15:37.717Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/philosophy/healing-the-cartesian-wound"
+    },
+    "https://bigthink.com/plus/reinvention-of-corporate-learning": {
+      "at": "2026-11-05T03:34:29.682Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/plus/reinvention-of-corporate-learning"
     },
     "https://bigthink.com/series/conversations/joe-folley-stop-trying-to-find-yourself": {
       "at": "2026-10-30T02:41:49.847Z",
@@ -79,6 +89,11 @@
       "at": "2026-10-23T16:57:10.539Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/universe-dark-energy"
+    },
+    "https://bigthink.com/starts-with-a-bang/fake-einstein-quote-affordability-crisis": {
+      "at": "2026-11-05T03:34:08.243Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/fake-einstein-quote-affordability-crisis"
     },
     "https://bigthink.com/starts-with-a-bang/five-divisions-how-far-space": {
       "at": "2026-10-29T02:37:28.883Z",
@@ -204,6 +219,11 @@
       "at": "2026-10-25T01:15:55.322Z",
       "feed": "wikipedia-featured",
       "slug": "london-monster"
+    },
+    "https://en.wikipedia.org/wiki/Nikolai_Kulikovsky": {
+      "at": "2026-11-05T03:31:39.296Z",
+      "feed": "wikipedia-featured",
+      "slug": "nikolai-kulikovsky"
     },
     "https://en.wikipedia.org/wiki/RAAF_area_commands": {
       "at": "2026-10-23T16:56:46.998Z",
@@ -370,6 +390,11 @@
       "feed": "global-voices",
       "slug": "in-kazakhstan-rural-women-are-forming-collectives-to-improve"
     },
+    "https://globalvoices.org/2026/11/02/brazilian-lefts-quest-to-tame-meta-a-narrative-of-denouncement-and-resistance": {
+      "at": "2026-11-05T03:34:23.736Z",
+      "feed": "global-voices",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://globalvoices.org/2026/11/02/in-kosovo-a-new-app-makes-reporting-problems-to-the-government-fast-and-easy": {
       "at": "2026-11-04T03:10:30.351Z",
       "feed": "global-voices",
@@ -384,6 +409,16 @@
       "at": "2026-11-04T03:07:43.703Z",
       "feed": "global-voices",
       "error": "Unterminated string in JSON at position 286213 (line 2 column 286212)"
+    },
+    "https://globalvoices.org/2026/11/04/the-scandals-and-suspects-surrounding-flavio-bolsonaro-according-to-the-brazilian-press": {
+      "at": "2026-11-05T03:31:34.909Z",
+      "feed": "global-voices",
+      "slug": "the-scandals-and-suspects-surrounding-flavio-bolsonaro-accor"
+    },
+    "https://globalvoices.org/2026/11/04/tracing-the-recruitment-trap-behind-russias-war": {
+      "at": "2026-11-05T03:33:32.904Z",
+      "feed": "global-voices",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
@@ -434,6 +469,11 @@
       "at": "2026-10-26T01:16:32.239Z",
       "feed": "nautilus",
       "slug": "rare-fossil-sheds-light-on-the-ancient-origins-of-snakes"
+    },
+    "https://nautil.us/archaeologists-unravel-an-88-year-old-murder-mystery-1286358": {
+      "at": "2026-11-05T03:34:08.207Z",
+      "feed": "nautilus",
+      "slug": "archaeologists-re-examine-a-1938-british-murder-mystery"
     },
     "https://nautil.us/can-you-recognize-the-subject-of-this-years-microscopic-photography-contest-winner-1286224": {
       "at": "2026-11-01T02:19:14.509Z",
@@ -520,6 +560,11 @@
       "feed": "nautilus",
       "slug": "new-plant-eating-dinosaur-discovered-in-england-museum-colle"
     },
+    "https://nautil.us/the-female-iron-age-queen-who-helped-bring-britain-to-its-knees-1286361": {
+      "at": "2026-11-05T03:32:13.001Z",
+      "feed": "nautilus",
+      "slug": "archaeologist-argues-ancient-british-king-verica-was-actuall"
+    },
     "https://nautil.us/the-mystery-of-why-some-drugs-vanish-1286249": {
       "at": "2026-10-31T02:30:50.481Z",
       "feed": "nautilus",
@@ -574,6 +619,11 @@
       "at": "2026-10-28T02:21:43.382Z",
       "feed": "nautilus",
       "slug": "what-decades-of-happiness-research-reveal-about-a-good-life"
+    },
+    "https://nautil.us/what-happened-when-neuroscientists-started-a-mouse-fight-club-1286353": {
+      "at": "2026-11-05T03:34:29.639Z",
+      "feed": "nautilus",
+      "slug": "princeton-neuroscientists-study-how-watching-fights-changes"
     },
     "https://nautil.us/why-your-shrink-should-prescribe-exercise-1286325": {
       "at": "2026-11-04T03:08:18.702Z",
@@ -659,6 +709,11 @@
       "at": "2026-10-29T02:30:51.802Z",
       "feed": "psyche",
       "slug": "shaping-the-african-literary-canon"
+    },
+    "https://psyche.co/turning-points/how-a-revelation-at-home-made-me-rethink-delusion": {
+      "at": "2026-11-05T03:31:53.788Z",
+      "feed": "psyche",
+      "slug": "reframing-delusions-and-identity"
     },
     "https://psyche.co/turning-points/my-er-regulars-spat-at-me-and-opened-my-mind": {
       "at": "2026-10-31T02:29:18.111Z",
@@ -794,6 +849,11 @@
       "at": "2026-11-01T02:15:27.594Z",
       "feed": "nasa-science",
       "error": "Only 182 words of text found"
+    },
+    "https://science.nasa.gov/mission/voyager/voyager-1/shine-bright-for-voyagers-light-day": {
+      "at": "2026-11-05T03:33:27.407Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://science.nasa.gov/people/kayla-rillo-armstrong": {
       "at": "2026-10-27T02:10:23.517Z",
@@ -1085,10 +1145,30 @@
       "feed": "nasa-science",
       "error": "Unterminated string in JSON at position 154189 (line 2 column 154188)"
     },
+    "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon": {
+      "at": "2026-11-05T03:34:38.853Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations": {
       "at": "2026-10-24T01:41:04.105Z",
       "feed": "nasa-science",
       "slug": "nasa-s-artemis-iii-mission-to-test-future-moon-lander-operat"
+    },
+    "https://www.nasa.gov/nasa-glenn-research-center-shadowing-days": {
+      "at": "2026-11-05T03:33:42.200Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": {
+      "at": "2026-11-05T03:34:57.862Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.nasa.gov/news-release/nasa-announces-x-70-experimental-aircraft-to-advance-flight-research": {
+      "at": "2026-11-05T03:31:31.754Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium": {
       "at": "2026-10-23T16:58:49.474Z",
@@ -1120,10 +1200,30 @@
       "feed": "nasa-science",
       "error": "Only 154 words of text found"
     },
+    "https://www.nasa.gov/people/kaylin-bugbee": {
+      "at": "2026-11-05T03:35:08.951Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.nasa.gov/people/manil-maskey": {
+      "at": "2026-11-05T03:35:04.610Z",
+      "feed": "nasa-science",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://www.nasa.gov/people/peter-b-tran": {
       "at": "2026-10-31T02:30:29.249Z",
       "feed": "nasa-science",
       "slug": "peter-b-tran"
+    },
+    "https://www.nasa.gov/people/pontus-olofsson": {
+      "at": "2026-11-05T03:35:00.825Z",
+      "feed": "nasa-science",
+      "error": "Only 175 words of text found"
+    },
+    "https://www.nasa.gov/people/sean-gregory": {
+      "at": "2026-11-05T03:34:59.355Z",
+      "feed": "nasa-science",
+      "error": "Only 169 words of text found"
     },
     "https://www.nasa.gov/people/shon-r-grabbe": {
       "at": "2026-10-31T02:26:35.279Z",
@@ -1250,6 +1350,11 @@
       "feed": "npr-health",
       "slug": "researchers-solve-mystery-of-mass-penguin-deaths-in-antarcti"
     },
+    "https://www.npr.org/2026/10/30/nx-s1-5995422/2026-midterms-florida-healthcare-aca": {
+      "at": "2026-11-05T03:34:13.066Z",
+      "feed": "npr-health",
+      "slug": "florida-voters-head-to-polls-amid-healthcare-coverage-losses"
+    },
     "https://www.npr.org/2026/10/30/nx-s1-6020514/florida-sees-spike-in-dengue-fever-cases": {
       "at": "2026-10-31T02:30:55.734Z",
       "feed": "npr-health",
@@ -1300,6 +1405,11 @@
       "feed": "npr-health",
       "slug": "mrna-vaccine-pioneer-defies-lethal-pancreatic-cancer"
     },
+    "https://www.npr.org/2026/11/04/nx-s1-6017757/democrats-republicans-doctors-acton-andrews-blue-wave": {
+      "at": "2026-11-05T03:32:15.896Z",
+      "feed": "npr-health",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
       "feed": "quanta",
@@ -1344,6 +1454,11 @@
       "at": "2026-10-23T16:57:05.140Z",
       "feed": "quanta",
       "slug": "how-malaria-parasites-infiltrate-human-blood-cells"
+    },
+    "https://www.quantamagazine.org/new-research-tests-whether-ai-models-know-their-own-thoughts-20261104": {
+      "at": "2026-11-05T03:31:59.757Z",
+      "feed": "quanta",
+      "slug": "can-ai-models-inspect-their-own-thoughts"
     },
     "https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021": {
       "at": "2026-10-23T17:01:49.890Z",
@@ -1505,10 +1620,30 @@
       "feed": "sciencedaily",
       "slug": "hera-spacecraft-approaches-target-asteroids"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261104012248.htm": {
+      "at": "2026-11-05T03:34:35.639Z",
+      "feed": "sciencedaily",
+      "slug": "flexible-connectors-unlock-new-crystal-structures"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261104012254.htm": {
+      "at": "2026-11-05T03:34:18.120Z",
+      "feed": "sciencedaily",
+      "slug": "nasa-explores-commercial-options-to-save-the-hubble-space-te"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261104012256.htm": {
+      "at": "2026-11-05T03:32:33.169Z",
+      "feed": "sciencedaily",
+      "slug": "physicists-confirm-third-type-of-magnetism"
+    },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
       "feed": "usgs",
       "slug": "a-true-halloween-story-treat-the-dirt-on-oppy-s-demise"
+    },
+    "https://www.usgs.gov/centers/california-water-science-center/news/wildfires-increased-feather-river-water-flow": {
+      "at": "2026-11-05T03:34:02.607Z",
+      "feed": "usgs",
+      "slug": "wildfires-increased-feather-river-water-flow"
     },
     "https://www.usgs.gov/centers/eesc/news/slime-trail-how-usgs-edna-efforts-are-revealing-what-lives-deep-gulf": {
       "at": "2026-10-29T02:37:14.509Z",
@@ -1539,6 +1674,11 @@
       "at": "2026-11-04T03:03:16.045Z",
       "feed": "usgs",
       "error": "Unterminated string in JSON at position 65630 (line 2 column 65629)"
+    },
+    "https://www.usgs.gov/centers/werc/news/mercury-exposure-northern-elephant-seal-pups-utero-high-and-affected-oceanic": {
+      "at": "2026-11-05T03:31:47.809Z",
+      "feed": "usgs",
+      "slug": "mercury-exposure-to-northern-elephant-seal-pups-in-utero-is"
     },
     "https://www.usgs.gov/centers/western-geographic-science-center/news/global-food-and-water-security-support-analysis-0": {
       "at": "2026-10-25T01:15:24.175Z",

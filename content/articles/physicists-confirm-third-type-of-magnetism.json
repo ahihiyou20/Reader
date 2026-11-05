@@ -1,0 +1,123 @@
+{
+  "slug": "physicists-confirm-third-type-of-magnetism",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=physicists-confirm-third-type-of-magnetism",
+  "category": "science",
+  "tags": [
+    "magnetism",
+    "physics",
+    "spintronics",
+    "materials"
+  ],
+  "title": {
+    "en": "Physicists Confirm Third Type of Magnetism",
+    "vi": "Các nhà vật lý xác nhận loại từ tính thứ ba"
+  },
+  "hook": {
+    "en": "For ninety years, science recognized only two classes of magnetism. Researchers have now confirmed a third category that bridges both traditional types, opening new paths for electronics and quantum devices.",
+    "vi": "Trong chín mươi thập kỷ, khoa học chỉ công nhận hai lớp từ tính. Các nhà nghiên cứu giờ đây đã xác nhận loại thứ ba kết hợp cả hai loại truyền thống, mở ra con đường mới cho điện tử và thiết bị lượng tử."
+  },
+  "sections": [
+    {
+      "heading_en": "Two Old Categories",
+      "heading_vi": "Hai loại từ tính cũ",
+      "body_en": "Physicists traditionally divided magnetic materials into ferromagnets and antiferromagnets. Ferromagnets align electron spins in the same direction, while antiferromagnets point neighboring spins in opposite directions so their fields cancel out. Researchers at the SLAC National Accelerator Laboratory found conclusive proof of altermagnetism, a distinct magnetic phase combining traits from both groups . {source}",
+      "body_vi": "Các nhà vật lý học từ lâu chia vật liệu từ tính thành vật liệu sắt từ (ferromagnets) và vật liệu phản sắt từ (antiferromagnets). Vật liệu sắt từ sắp xếp các spin electron cùng hướng, trong khi vật liệu phản sắt từ hướng các spin lân cận ngược chiều nhau để triệt tiêu từ trường. Các nhà nghiên cứu tại Phòng thí nghiệm Máy gia tốc Quốc gia SLAC đã tìm thấy bằng chứng thuyết phục về hiện tượng siêu từ tính (altermagnetism), một pha từ tính riêng biệt kết hợp đặc tính của cả hai nhóm ."
+    },
+    {
+      "heading_en": "Revealing Chirality",
+      "heading_vi": "Phát hiện tính bất đối xứng",
+      "body_en": "The team focused on manganese telluride, a material long classified as a simple antiferromagnet. Using polarized X-rays at the European Synchrotron Radiation Facility, scientists measured how the material scattered light. The results revealed chirality, a distinctive asymmetry in its magnetic structure resembling a spiral staircase. This property provided the missing signature needed to establish the existence of the new magnetic phase.",
+      "body_vi": "Nhóm nghiên cứu tập trung vào telu-rít mangan (*manganese telluride*), một vật liệu từ lâu được phân loại là chất phản sắt từ đơn giản. Bằng cách sử dụng tia X phân cực tại Cơ시설 Bức xạ Đồng bộ Châu Âu, các nhà khoa học đo lường cách vật liệu này tán xạ ánh sáng. Kết quả cho thấy tính bất đối xứng (*chirality*) trong cấu trúc từ tính giống như một chiếc cầu thang xoắn ốc, cung cấp dấu hiệu còn thiếu để xác lập sự tồn tại của pha từ tính mới."
+    },
+    {
+      "heading_en": "Future Applications",
+      "heading_vi": "Ứng dụng trong tương lai",
+      "body_en": "Altermagnets feature opposing spins that produce no overall magnetization, protecting data from external magnetic fields. At the same time, their unique electronic structure allows them to generate spin-polarized currents for reading stored information. This combination could help engineers design faster computer memory, more secure quantum devices, and energy-efficient data centers.",
+      "body_vi": "Vật liệu siêu từ tính có các spin đối lập không tạo ra từ tính tổng thể, giúp bảo vệ dữ liệu khỏi các từ trường bên ngoài. Đồng thời, cấu trúc điện tử độc đáo của chúng cho phép tạo ra dòng điện phân cực spin (*spin-polarized currents*) để đọc thông tin lưu trữ. Sự kết hợp này có thể giúp các kỹ sư thiết kế bộ nhớ máy tính nhanh hơn và trung tâm dữ liệu tiết kiệm năng lượng hơn."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261104012256.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/903/1080/1920",
+    "provider": "unsplash",
+    "author": "Greg Rakozy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "SLAC scientists find conclusive proof of a mysterious third type of magnetism",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261104012256.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Altermagnetism acts like a bridge connecting two separate islands. [p:Can mastering this third magnetic state solve current limits in computer memory?]",
+    "vi": "Siêu từ tính giống như một cây cầu nối liền hai hòn đảo riêng biệt. [p:Liệu việc làm chủ trạng thái từ tính thứ ba này có thể giải quyết các giới hạn hiện tại trong bộ nhớ máy tính không?]"
+  },
+  "applySteps": {
+    "en": [
+      "Identify a piece of electronic equipment you use daily.",
+      "Read about current spintronics research online for ten minutes.",
+      "List one way quantum devices differ from standard electronics."
+    ],
+    "vi": [
+      "Xác định một thiết bị điện tử bạn sử dụng hàng ngày.",
+      "Đọc về nghiên cứu điện tử spin hiện tại trực tuyến trong mười phút.",
+      "Liệt kê một điểm khác biệt giữa thiết bị lượng tử và điện tử tiêu chuẩn."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/903/1080/1920",
+      "provider": "unsplash",
+      "author": "Greg Rakozy",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/967/1080/1920",
+      "provider": "unsplash",
+      "author": "NASA",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/700/1080/1920",
+      "provider": "unsplash",
+      "author": "John Cobb",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/6btEyS3AJrI"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAACQBACdASoQABwAPu1oqk6ppiQiMAgBMB2JbACdL1yFpcimWhcPbPa2Gd+6W0gA/v3iycbsvIqBA7afuIfoNn9O9da5OCHHdG6RYW3FeBgSoUXA6GR2oUEzld+gJ2gSSAgMi7cYFTGrGBc9HxGnW4+9Lo2DHOZFgAA=",
+  "dominant": "#513830",
+  "publishAt": "2026-11-05T03:45:27.571Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
