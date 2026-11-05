@@ -1,0 +1,120 @@
+{
+  "slug": "sunk-cost-fallacy-bygones",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "psychology",
+  "tags": [
+    "decision making",
+    "sunk cost",
+    "bias",
+    "commitment"
+  ],
+  "title": {
+    "en": "The sunk cost fallacy: why we finish what we should drop",
+    "vi": "Ngụy biện chi phí chìm: vì sao ta cố hoàn thành điều nên bỏ"
+  },
+  "hook": {
+    "en": "Economic theory has a blunt rule: money, time or effort already spent should not change what you do next, because nothing you decide now can get it back. People break the rule constantly. A 2026 experiment found that even [p:cognitive effort already spent] made volunteers more willing to spend more. This is the sunk cost effect, and it is easier to name than to resist.",
+    "vi": "Kinh tế học có một quy tắc phũ phàng: tiền bạc, thời gian hay công sức đã bỏ ra không nên ảnh hưởng đến việc bạn làm tiếp, vì không quyết định nào bây giờ lấy lại được chúng. Con người phá quy tắc ấy liên tục. Một thí nghiệm năm 2026 cho thấy ngay cả [p:nỗ lực trí óc đã tiêu tốn] cũng khiến người tham gia sẵn sàng bỏ thêm nữa. Đó là hiệu ứng chi phí chìm, dễ gọi tên hơn là dễ cưỡng lại."
+  },
+  "sections": [
+    {
+      "heading_en": "What a sunk cost is",
+      "heading_vi": "Chi phí chìm là gì",
+      "body_en": "A sunk cost is a cost that has been incurred and cannot be recovered. Classical economics contrasts it with prospective costs, which can still be avoided by choosing differently {wiki-sunk}. The textbook conclusion is the bygones principle: only future consequences matter, so past spending is irrelevant to a rational decision. Economists sometimes call the sunk part 'water under the bridge'. The principle does not say the past was a mistake. It says that, at the moment of choosing, the past is the same whichever option you pick, so it cannot favour one option over another.",
+      "body_vi": "Chi phí chìm (*sunk cost*) là khoản chi đã phát sinh và không thể thu hồi. Kinh tế học cổ điển đặt nó đối lập với chi phí tương lai, thứ vẫn có thể tránh được nếu chọn khác đi {wiki-sunk}. Kết luận trong sách giáo khoa là nguyên tắc 'chuyện đã rồi' (*bygones principle*): chỉ hệ quả trong tương lai mới quan trọng, nên khoản đã tiêu không liên quan đến một quyết định hợp lý. Các nhà kinh tế đôi khi gọi phần chìm ấy là 'nước đã chảy qua cầu'. Nguyên tắc không nói quá khứ là sai lầm. Nó nói rằng ở thời điểm chọn lựa, quá khứ giống nhau dù bạn chọn phương án nào, nên nó không thể nghiêng cán cân về phía nào."
+    },
+    {
+      "heading_en": "A worked example",
+      "heading_vi": "Một ví dụ cụ thể",
+      "body_en": "The standard example is a factory projected to cost $100 million and to be worth $120 million. After $30 million is spent, the projected value drops to $65 million {wiki-sunk}. Finishing needs $70 million more for a project now worth $65 million, so the company should stop. If the value had instead fallen to $75 million, finishing would still pay, because $75 million exceeds the remaining $70 million. The $30 million is gone in both cases. The decision comes from comparing what is still to be spent with what is still to be gained.",
+      "body_vi": "Ví dụ kinh điển là một nhà máy dự kiến tốn 100 triệu đô la và có giá trị 120 triệu đô la. Sau khi chi 30 triệu đô la, giá trị dự báo tụt xuống còn 65 triệu {wiki-sunk}. Hoàn thành cần thêm 70 triệu đô la cho một dự án nay chỉ đáng 65 triệu, nên công ty nên dừng. Nếu giá trị chỉ tụt xuống 75 triệu đô la thì hoàn thành vẫn có lợi, vì 75 triệu lớn hơn 70 triệu còn phải chi. Khoản 30 triệu đô la mất đi trong cả hai trường hợp. Quyết định đến từ việc so phần còn phải chi với phần còn có thể thu."
+    },
+    {
+      "heading_en": "How the fallacy shows up",
+      "heading_vi": "Ngụy biện này xuất hiện thế nào",
+      "body_en": "People often reverse the logic and treat past investment as a reason to continue. The usual wording is 'throwing good money after bad' {wiki-sunk}. In experiments on committed relationships, people who had invested money or time in a relationship were more likely to keep it going and to put more time into it {wiki-sunk}. The same reasoning is used to argue that a war must go on so that earlier losses are not in vain, and it keeps people feeding scams they already doubt. In each case the investment is real, but it is not an argument about what comes next.",
+      "body_vi": "Con người thường đảo ngược logic ấy và coi khoản đầu tư trong quá khứ là lý do để tiếp tục. Cách nói quen thuộc là 'ném thêm tiền tốt vào món nợ xấu' {wiki-sunk}. Trong các thí nghiệm về những mối quan hệ gắn bó, người đã bỏ tiền hoặc thời gian vào quan hệ có xu hướng duy trì nó nhiều hơn và dành cho nó nhiều thời gian hơn {wiki-sunk}. Cách lập luận tương tự được dùng để nói rằng một cuộc chiến phải tiếp diễn để những mất mát trước đó không vô ích, và nó khiến người ta tiếp tục rót tiền vào những trò lừa đảo mà họ đã ngờ vực. Trường hợp nào khoản đầu tư cũng có thật, nhưng nó không phải là lập luận cho điều sẽ làm tiếp."
+    },
+    {
+      "heading_en": "It reaches beyond money",
+      "heading_vi": "Hiệu ứng không dừng ở tiền",
+      "body_en": "Evidence for sunk costs of money has long been solid, while evidence for non-monetary costs was mixed. Bogdanov and colleagues tested effort directly, in two experiments with 36 and 89 adults {bogdanov-2026}. Prior effort made people more willing to invest further effort, and the pull was stronger when the extra effort needed was high. Their conclusion is that past effort changes present choices and that models of effort-based decisions need to account for it. This matches everyday experience: the more hours a person has put into a degree or a draft, the harder it feels to walk away.",
+      "body_vi": "Bằng chứng về chi phí chìm bằng tiền từ lâu đã vững, còn bằng chứng về chi phí phi tiền tệ thì lẫn lộn. Bogdanov và cộng sự kiểm tra trực tiếp yếu tố công sức, qua hai thí nghiệm với 36 và 89 người trưởng thành {bogdanov-2026}. Công sức đã bỏ ra khiến người ta sẵn sàng đầu tư thêm công sức, và lực kéo mạnh hơn khi phần việc cần làm thêm lớn. Họ kết luận rằng công sức trong quá khứ làm thay đổi lựa chọn hiện tại, và các mô hình quyết định dựa trên công sức cần tính đến điều này. Điều đó khớp với trải nghiệm đời thường: càng dành nhiều giờ cho một tấm bằng hay một bản thảo, việc bỏ đi càng khó."
+    },
+    {
+      "heading_en": "Other people's effort counts too",
+      "heading_vi": "Công sức của người khác cũng có tác dụng",
+      "body_en": "A 2025 preprint, not yet peer reviewed, ran four pre-registered experiments with 1,481 participants {mattei-2025}. It found that another person's earlier effort increased commitment to a course of action, even when the effort was not wasted and could be put to a new use. In one experiment the other person's effort pulled harder than the participant's own. The authors suggest social expectations may drive this. Because the work has not been through review, treat it as an early signal that the fallacy is not only about wanting to avoid waste.",
+      "body_vi": "Một bản thảo tiền công bố năm 2025, chưa qua bình duyệt, thực hiện bốn thí nghiệm đăng ký trước với 1.481 người tham gia {mattei-2025}. Nó cho thấy công sức trước đó của người khác làm tăng cam kết theo đuổi một hướng đi, kể cả khi công sức ấy không bị lãng phí và có thể dùng cho mục đích mới. Ở một thí nghiệm, công sức của người khác kéo mạnh hơn công sức của chính người tham gia. Các tác giả gợi ý kỳ vọng xã hội có thể là nguyên nhân. Vì công trình chưa qua bình duyệt, hãy xem nó là tín hiệu ban đầu rằng ngụy biện này không chỉ xuất phát từ nỗi sợ lãng phí."
+    },
+    {
+      "heading_en": "A caution about the evidence",
+      "heading_vi": "Một lưu ý về bằng chứng",
+      "body_en": "Not every classic result is as firm as it sounds. Two experiments with 395 participants tested the well-known written scenarios used in sunk cost research, including ones from Arkes and Blumer in 1985 {bialek-2025}. Internal consistency was poor, with reliability coefficients between 0.14 and 0.57, and the scenarios correlated only weakly with each other. The authors conclude that the scenarios may not measure one single trait. The bias itself is well documented, but a person's score on a questionnaire is a weak guide to how they will behave when real money or effort is at stake.",
+      "body_vi": "Không phải kết quả kinh điển nào cũng chắc như người ta tưởng. Hai thí nghiệm với 395 người tham gia kiểm tra các tình huống viết sẵn quen thuộc trong nghiên cứu chi phí chìm, trong đó có những tình huống của Arkes và Blumer năm 1985 {bialek-2025}. Độ nhất quán nội tại kém, với hệ số tin cậy từ 0,14 đến 0,57, và các tình huống chỉ tương quan yếu với nhau. Các tác giả kết luận rằng những tình huống ấy có thể không đo cùng một đặc điểm. Bản thân thiên kiến được ghi nhận rõ, nhưng điểm của một người trên bảng câu hỏi là chỉ báo yếu cho cách họ hành xử khi có tiền hay công sức thật bị đặt cược."
+    },
+    {
+      "heading_en": "Using the idea in practice",
+      "heading_vi": "Dùng ý tưởng này trong thực tế",
+      "body_en": "The bygones principle gives a simple test: if you were starting from today with no history, would you choose this option? Economists note that continuing can be rational for reasons that sit outside the project itself, such as a manager's reputation for persistence or private information that outsiders lack {wiki-sunk}. That is a useful distinction. The error is not in finishing a project; it is in finishing it because of what it has already cost. When you can state a forward-looking reason, such as a payoff that still exceeds the remaining price, the fallacy is not at work.",
+      "body_vi": "Nguyên tắc 'chuyện đã rồi' cho một phép thử đơn giản: nếu bắt đầu từ hôm nay mà không có lịch sử, bạn có chọn phương án này không? Các nhà kinh tế lưu ý rằng tiếp tục đôi khi vẫn hợp lý vì những lý do nằm ngoài dự án, như danh tiếng kiên trì của một nhà quản lý hay thông tin riêng mà người ngoài không có {wiki-sunk}. Đó là một phân biệt hữu ích. Lỗi không nằm ở việc hoàn thành một dự án, mà ở việc hoàn thành nó vì nó đã tốn bao nhiêu. Khi bạn nêu được một lý do hướng về tương lai, như khoản lợi vẫn lớn hơn phần giá còn lại, thì ngụy biện không hoạt động."
+    }
+  ],
+  "keyPoint": {
+    "en": "Money, time and effort already spent cannot be recovered, so they should not decide what you do next. [p:Judge the choice by what is still to be paid and gained.] Notice the pull toward finishing, ask whether you would start this today, and let a project end if the answer is no.",
+    "vi": "Tiền bạc, thời gian và công sức đã tiêu thì không thu hồi được, nên chúng không nên quyết định việc bạn làm tiếp. [p:Hãy đánh giá lựa chọn theo phần còn phải trả và phần còn được hưởng.] Nhận ra lực kéo muốn hoàn thành, tự hỏi hôm nay mình có bắt đầu việc này không, và nếu câu trả lời là không thì hãy để dự án kết thúc."
+  },
+  "applySteps": {
+    "en": [
+      "Pick one thing you keep doing only because you started it, and ask whether you would begin it today.",
+      "List what finishing still costs and what it still gives, leaving out everything already spent.",
+      "Set a stop point before your next project starts, such as a date or a budget, and write it down."
+    ],
+    "vi": [
+      "Chọn một việc bạn chỉ đang làm tiếp vì đã lỡ bắt đầu, và tự hỏi hôm nay bạn có bắt đầu nó không.",
+      "Liệt kê việc hoàn thành còn tốn gì và còn mang lại gì, bỏ qua mọi thứ đã tiêu.",
+      "Đặt một điểm dừng trước khi bắt đầu dự án tiếp theo, chẳng hạn một ngày hoặc một ngân sách, và viết ra giấy."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-sunk",
+      "label": "Wikipedia: Sunk cost",
+      "url": "https://en.wikipedia.org/wiki/Sunk_cost"
+    },
+    {
+      "id": "bogdanov-2026",
+      "label": "Bogdanov et al. (2026)",
+      "url": "https://doi.org/10.1016/j.cognition.2026.106628"
+    },
+    {
+      "id": "mattei-2025",
+      "label": "Mattei & Michael (2025, preprint)",
+      "url": "https://doi.org/10.31234/osf.io/5h3gt_v1"
+    },
+    {
+      "id": "bialek-2025",
+      "label": "Białek & Biesiada (2025)",
+      "url": "https://doi.org/10.3390/brainsci15080808"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/sunk-cost-fallacy-bygones.webp",
+    "provider": "unsplash",
+    "author": "Kholodnitskiy Maksim",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/n6TWNDfyPwk"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JQBdkGQQU6UdNZMtbGN+/Dptfx0AA/v4xpetseiDIWWxUwdK+H4Gbi/lCVc0x27LXriorma/fINr1hF772nuQa1iBeroOFV8BoiQXyHqlicCVSgkk7tjlyFbn88qjvTf7QVbhWIHSYJu2cwMrBCR/Z1tR5hZhneKwo+NFGImnJYanXPz2ppgn4AA=",
+  "dominant": "#6d6a65"
+}

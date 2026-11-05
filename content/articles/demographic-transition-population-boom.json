@@ -1,0 +1,110 @@
+{
+  "slug": "demographic-transition-population-boom",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "population",
+    "demography",
+    "fertility",
+    "mortality"
+  ],
+  "title": {
+    "en": "The demographic transition: why population booms are temporary",
+    "vi": "Chuyển đổi nhân khẩu học: vì sao bùng nổ dân số chỉ là tạm thời"
+  },
+  "hook": {
+    "en": "Falling death rates alone do not make a population grow. What matters is timing: deaths fall first, births fall later, and the gap between them is the population boom. Sweden's records, which start in 1749, show it clearly, and [p:country after country is moving to a world where population is stagnant because of low fertility].",
+    "vi": "Chỉ riêng tỷ lệ chết giảm không làm dân số tăng. Điều quan trọng là thời điểm: tỷ lệ chết giảm trước, tỷ lệ sinh giảm sau, và khoảng cách giữa hai thời điểm đó là cuộc bùng nổ dân số. Số liệu của Thụy Điển, bắt đầu từ năm 1749, cho thấy rõ điều này, và [p:hết nước này đến nước khác đang chuyển sang một thế giới nơi dân số đứng yên vì mức sinh thấp]."
+  },
+  "sections": [
+    {
+      "heading_en": "Timing, not levels",
+      "heading_vi": "Thời điểm, không phải mức độ",
+      "body_en": "Population growth is determined by births and deaths, and both have fallen across the world {owid-dt}. But if they fell at the same time, the population would not grow. What is crucial is the order. The demographic transition is the model that explains why countries go through a period of rapid growth, and Our World in Data calls it one of the great insights of demography. Historically it describes a shift from high rates of birth and death to low ones, as societies gain technology, education, especially for women, and economic development {wiki-demographic}.",
+      "body_vi": "Tăng dân số do sinh và tử quyết định, và cả hai đã giảm trên khắp thế giới {owid-dt}. Nhưng nếu cả hai giảm cùng lúc thì dân số sẽ không tăng. Điều then chốt là thứ tự. Chuyển đổi nhân khẩu học là mô hình giải thích vì sao các nước trải qua một giai đoạn tăng nhanh, và Our World in Data gọi nó là một trong những hiểu biết lớn của nhân khẩu học. Về lịch sử, nó mô tả sự chuyển từ tỷ lệ sinh và tử cao sang thấp, khi xã hội có thêm công nghệ, giáo dục, đặc biệt cho phụ nữ, và phát triển kinh tế {wiki-demographic}."
+    },
+    {
+      "heading_en": "Stage one and two: balance, then boom",
+      "heading_vi": "Giai đoạn một và hai: cân bằng, rồi bùng nổ",
+      "body_en": "In stage one, birth and death rates are both high and roughly balanced, so growth is very slow. Societies stayed here for millennia, and the encyclopedia puts growth at under 0.05% since the Agricultural Revolution more than 10,000 years ago {wiki-demographic}. In stage two, death rates fall, first for children, thanks to better food, sanitation and public health, but birth rates stay high {owid-dt}. Population then starts to grow fast. In Europe the fall in death rates began in the late 18th century in the north-west and spread south and east over about the next 100 years.",
+      "body_vi": "Ở giai đoạn một, tỷ lệ sinh và tử đều cao và gần cân bằng, nên tăng trưởng rất chậm. Các xã hội ở lại đây hàng thiên niên kỷ, và bách khoa toàn thư ghi mức tăng dưới 0,05% kể từ Cách mạng Nông nghiệp hơn 10.000 năm trước {wiki-demographic}. Ở giai đoạn hai, tỷ lệ chết giảm, trước hết ở trẻ em, nhờ thực phẩm, vệ sinh và y tế công cộng tốt hơn, nhưng tỷ lệ sinh vẫn cao {owid-dt}. Dân số bắt đầu tăng nhanh. Ở châu Âu, tỷ lệ chết giảm bắt đầu từ cuối thế kỷ XVIII ở phía tây bắc và lan sang phía nam và đông trong khoảng 100 năm sau đó."
+    },
+    {
+      "heading_en": "Stage three: births fall",
+      "heading_vi": "Giai đoạn ba: tỷ lệ sinh giảm",
+      "body_en": "Then the birth rate drops and growth slows. Our World in Data names three drivers: parents adapt to lower child mortality and have fewer children, structural change makes children less economically valuable, and as women gain more power in society and partnerships, they tend on average to have fewer children {owid-dt}. The encyclopedia adds access to contraception, urbanisation and more schooling. It also warns that contraceptives were not widely used in the 19th century, so the early birth decline was caused partly by a change of values {wiki-demographic}.",
+      "body_vi": "Rồi tỷ lệ sinh giảm và tăng trưởng chậm lại. Our World in Data nêu ba động lực: cha mẹ thích nghi với tỷ lệ tử vong trẻ em thấp hơn nên sinh ít con hơn, thay đổi cơ cấu khiến con cái bớt giá trị về kinh tế, và khi phụ nữ có thêm quyền lực trong xã hội và trong quan hệ đôi lứa, họ trung bình có xu hướng sinh ít con hơn {owid-dt}. Bách khoa toàn thư bổ sung việc tiếp cận biện pháp tránh thai, đô thị hóa và nhiều năm đi học hơn. Nó cũng lưu ý rằng biện pháp tránh thai chưa được dùng rộng rãi ở thế kỷ XIX, nên sự giảm sinh ban đầu một phần do thay đổi giá trị {wiki-demographic}."
+    },
+    {
+      "heading_en": "Sweden: 250 years of records",
+      "heading_vi": "Thụy Điển: 250 năm số liệu",
+      "body_en": "Sweden's statistical office, the Tabellverket, started recording in 1749, so the country has one of the longest series {owid-dt}. Around 1800 the death rate began to fall, mainly because of better health and living standards, especially for children. Birth rates stayed at a constant pre-modern level until the 1860s. For decades the gap between births and deaths made the population increase. Only later did the birth rate fall too. The chart OWID shows for Germany, Sweden, Chile, Mauritius and China follows the same order: mortality first, then fertility.",
+      "body_vi": "Cơ quan thống kê của Thụy Điển, Tabellverket, bắt đầu ghi chép từ năm 1749, nên nước này có một trong những chuỗi số liệu dài nhất {owid-dt}. Quanh năm 1800 tỷ lệ chết bắt đầu giảm, chủ yếu nhờ sức khỏe và mức sống tốt hơn, đặc biệt cho trẻ em. Tỷ lệ sinh giữ ở mức tiền hiện đại cho đến thập niên 1860. Trong nhiều thập kỷ, khoảng cách giữa sinh và tử làm dân số tăng. Chỉ sau đó tỷ lệ sinh mới giảm. Biểu đồ OWID cho Đức, Thụy Điển, Chile, Mauritius và Trung Quốc theo cùng thứ tự: tử vong trước, rồi sinh sản."
+    },
+    {
+      "heading_en": "A pattern that crosses cultures",
+      "heading_vi": "Một khuôn mẫu xuyên các nền văn hóa",
+      "body_en": "OWID says the order, a fall in the death rate followed by a fall in the birth rate, is observed with great regularity and is largely independent of the culture or religion of the population {owid-dt}. The five countries on its chart come from Europe, Latin America, Africa and Asia, and all show a first decline in mortality that starts the boom and a later decline in fertility that ends it. The population boom is a temporary event. In the past, populations were stagnant because of high mortality. Now more and more are stagnant because of low fertility.",
+      "body_vi": "OWID cho biết thứ tự này, tỷ lệ chết giảm rồi đến tỷ lệ sinh giảm, được quan sát thấy rất đều đặn và phần lớn không phụ thuộc vào văn hóa hay tôn giáo của dân cư {owid-dt}. Năm nước trên biểu đồ của họ đến từ châu Âu, Mỹ Latinh, châu Phi và châu Á, và tất cả đều cho thấy sự giảm tử vong đầu tiên khởi động bùng nổ và sự giảm sinh sản sau đó kết thúc nó. Bùng nổ dân số là một sự kiện tạm thời. Trước đây dân số đứng yên vì tử vong cao. Nay ngày càng nhiều nước đứng yên vì mức sinh thấp."
+    },
+    {
+      "heading_en": "Limits of the model",
+      "heading_vi": "Giới hạn của mô hình",
+      "body_en": "The model is a description, not a law. The encyclopedia says it is often imprecise for individual countries because of local social, political and economic factors, and scholars debate whether industrialisation and higher incomes lower fertility or the reverse {wiki-demographic}. John Caldwell argued that fertility decline in the Third World does not depend on industrialisation and can precede it. In stage four, birth rates may fall below replacement level, as in Germany, Italy and Japan, which leads to a shrinking population. The model tells us the order of events, and leaves open what happens afterwards.",
+      "body_vi": "Mô hình là một sự mô tả, không phải một định luật. Bách khoa toàn thư nói nó thường thiếu chính xác với từng nước do các yếu tố xã hội, chính trị và kinh tế địa phương, và các học giả tranh luận liệu công nghiệp hóa và thu nhập cao làm giảm sinh hay ngược lại {wiki-demographic}. John Caldwell lập luận rằng sự giảm sinh ở Thế giới thứ ba không phụ thuộc vào công nghiệp hóa và có thể đi trước nó. Ở giai đoạn bốn, tỷ lệ sinh có thể xuống dưới mức thay thế, như ở Đức, Ý và Nhật Bản, dẫn tới dân số thu hẹp. Mô hình cho ta thấy thứ tự các sự kiện, và để ngỏ điều xảy ra sau đó."
+    },
+    {
+      "heading_en": "Where the theory came from",
+      "heading_vi": "Lý thuyết đến từ đâu",
+      "body_en": "The theory rests on an interpretation of demographic history developed in 1930 by the American demographer Warren Thompson. The Frenchman Adolphe Landry made similar observations around 1934, and in the 1940s and 1950s Frank Notestein built a more formal version {wiki-demographic}. By 2009 a negative link between fertility and industrial development had become one of the most widely accepted findings in social science. Among the first groups to go through the transition were the Jews of Bohemia and Moravia in the 18th century.",
+      "body_vi": "Lý thuyết dựa trên một cách diễn giải lịch sử nhân khẩu do nhà nhân khẩu học Mỹ Warren Thompson phát triển năm 1930. Adolphe Landry người Pháp có những quan sát tương tự quanh năm 1934, và trong thập niên 1940 và 1950 Frank Notestein xây dựng một phiên bản chính thức hơn {wiki-demographic}. Đến năm 2009, mối liên hệ nghịch giữa mức sinh và phát triển công nghiệp đã trở thành một trong những phát hiện được chấp nhận rộng rãi nhất trong khoa học xã hội. Trong số những nhóm đầu tiên trải qua chuyển đổi này có người Do Thái ở Bohemia và Moravia vào thế kỷ XVIII."
+    }
+  ],
+  "keyPoint": {
+    "en": "A population grows fast when deaths fall before births do. [p:The boom is temporary because fertility later falls too,] driven by lower child mortality, changing economies and women's greater power. The pattern holds across very different cultures, though the model is only a description.",
+    "vi": "Dân số tăng nhanh khi tỷ lệ chết giảm trước tỷ lệ sinh. [p:Bùng nổ chỉ là tạm thời vì sau đó mức sinh cũng giảm,] do tử vong trẻ em thấp hơn, nền kinh tế thay đổi và phụ nữ có thêm quyền lực. Khuôn mẫu này đúng ở nhiều nền văn hóa rất khác nhau, dù mô hình chỉ là một sự mô tả."
+  },
+  "applySteps": {
+    "en": [
+      "Look up birth and death rates for your country over the past 100 years and mark when each began to fall.",
+      "Ask an older relative how many siblings they had and why families were that size.",
+      "Find one country now in stage two and one in stage four and compare their age pyramids."
+    ],
+    "vi": [
+      "Tra tỷ lệ sinh và tử của nước bạn trong 100 năm qua và đánh dấu khi mỗi chỉ số bắt đầu giảm.",
+      "Hỏi một người thân lớn tuổi họ có bao nhiêu anh chị em và vì sao các gia đình có quy mô như vậy.",
+      "Tìm một nước hiện ở giai đoạn hai và một nước ở giai đoạn bốn rồi so tháp tuổi của họ."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-dt",
+      "label": "Our World in Data: Demographic transition",
+      "url": "https://ourworldindata.org/demographic-transition"
+    },
+    {
+      "id": "wiki-demographic",
+      "label": "Wikipedia: Demographic transition",
+      "url": "https://en.wikipedia.org/wiki/Demographic_transition"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/demographic-transition-population-boom.webp",
+    "provider": "unsplash",
+    "author": "Wojtek Witkowski",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/1fpyA_z2woY"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JQBdgMXOWpfdkFS/b5+USAAD+/SvWZhkryH+jbEzTsKqU57152lYO9VBXy+1Gm4E1pDSBvGIaPZiMPYRW7yJJ1zUavAZQaL+WiGD/2eEbrN/W+T9izlDRFrJ4AtwQNbdkR7FZ5ovtc67W03NBWFDSN/Rr4O9RqfPjgc68P8AAAA==",
+  "dominant": "#5b656c"
+}

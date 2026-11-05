@@ -1,0 +1,104 @@
+{
+  "slug": "comparative-advantage-ricardo-example",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "trade",
+    "opportunity cost",
+    "ricardo",
+    "specialisation"
+  ],
+  "title": {
+    "en": "Comparative advantage: why trade pays even for the best producer",
+    "vi": "Lợi thế so sánh: vì sao thương mại có lợi ngay cả với người sản xuất giỏi nhất"
+  },
+  "hook": {
+    "en": "If one country makes everything more efficiently than another, what could it gain by trading? In 1817 David Ricardo answered with an example of English cloth and Portuguese wine, and the answer is still called one of the most powerful and counter-intuitive ideas in economics. [p:What matters is not who is better at a task but what each side gives up to do it.]",
+    "vi": "Nếu một nước làm mọi thứ hiệu quả hơn nước khác, thì nó được gì khi buôn bán? Năm 1817, David Ricardo trả lời bằng một ví dụ về vải của Anh và rượu vang của Bồ Đào Nha, và câu trả lời ấy vẫn được xem là một trong những ý tưởng mạnh mẽ và trái trực giác nhất của kinh tế học. [p:Điều quan trọng không phải ai giỏi hơn ở một việc, mà là mỗi bên phải từ bỏ điều gì để làm việc ấy.]"
+  },
+  "sections": [
+    {
+      "heading_en": "Three ideas that are easy to confuse",
+      "heading_vi": "Ba ý tưởng dễ nhầm lẫn",
+      "body_en": "Absolute advantage means being more productive overall. Competitive advantage means outperforming rivals in a market. Comparative advantage is something else: the principle that gains from trade arise when each party puts more of its labour and other resources into the activity with the lowest opportunity cost, and gets the rest through trade {wiki-comparative}. Opportunity cost is the value of the best alternative given up when a choice is made {wiki-opportunity}. It is not limited to money. Lost time or forgone pleasure also count. The key move is to measure each activity by what it costs in other activities, not by hours alone.",
+      "body_vi": "Lợi thế tuyệt đối nghĩa là năng suất cao hơn nói chung. Lợi thế cạnh tranh nghĩa là vượt các đối thủ trên thị trường. Lợi thế so sánh là một điều khác: nguyên lý rằng lợi ích từ thương mại xuất hiện khi mỗi bên dồn nhiều lao động và nguồn lực hơn vào hoạt động có chi phí cơ hội thấp nhất, rồi lấy phần còn lại qua trao đổi {wiki-comparative}. Chi phí cơ hội (*opportunity cost*) là giá trị của phương án tốt nhất bị bỏ lại khi ta đưa ra một lựa chọn {wiki-opportunity}. Nó không chỉ là tiền. Thời gian mất đi hay niềm vui bị bỏ qua cũng tính. Bước then chốt là đo mỗi hoạt động bằng cái nó tốn ở các hoạt động khác, chứ không chỉ bằng số giờ."
+    },
+    {
+      "heading_en": "Where the idea came from",
+      "heading_vi": "Ý tưởng đến từ đâu",
+      "body_en": "Adam Smith, in 1776, argued for buying from abroad what a foreign country can supply more cheaply than we can make it {wiki-comparative}. That is the case of absolute advantage. Robert Torrens gave a first definition of comparative advantage in 1808 and used the term in 1815, and an anonymous 1814 pamphlet already contained the earliest recorded formulation. Ricardo then set out the theory in his 1817 book On the Principles of Political Economy and Taxation. He assumed that capital and labour do not move between countries, and that productivity differs between them. Within those assumptions each country can consume more by exporting the good where it has the comparative edge.",
+      "body_vi": "Adam Smith, năm 1776, lập luận rằng nên mua từ nước ngoài thứ mà họ cung cấp rẻ hơn ta tự làm {wiki-comparative}. Đó là trường hợp lợi thế tuyệt đối. Robert Torrens đưa ra định nghĩa đầu tiên về lợi thế so sánh năm 1808 và dùng thuật ngữ này năm 1815, còn một cuốn sách mỏng vô danh năm 1814 đã chứa cách diễn đạt sớm nhất được ghi lại. Sau đó Ricardo trình bày lý thuyết trong cuốn On the Principles of Political Economy and Taxation năm 1817. Ông giả định rằng vốn và lao động không di chuyển giữa các nước, và năng suất giữa các nước khác nhau. Trong những giả định ấy, mỗi nước có thể tiêu dùng nhiều hơn bằng cách xuất khẩu hàng mà mình có lợi thế so sánh."
+    },
+    {
+      "heading_en": "Ricardo's numbers",
+      "heading_vi": "Các con số của Ricardo",
+      "body_en": "In the modern restatement of his example, England can spend 100 hours of labour on one unit of cloth or on 5/6 of a unit of wine. Portugal can spend 100 hours on 10/9 of a unit of cloth or on 10/8 of a unit of wine {wiki-comparative}. Portugal is better at both goods, since it produces more per hour. Yet the rankings differ. England gives up 5/6 of a unit of wine for each unit of cloth, while Portugal gives up 9/8. Cloth is relatively cheaper to make in England, and wine is relatively cheaper to make in Portugal. Absolute productivity says Portugal should make everything. Opportunity cost says otherwise.",
+      "body_vi": "Trong cách phát biểu lại hiện đại cho ví dụ của ông, nước Anh có thể dành 100 giờ lao động cho một đơn vị vải hoặc cho 5/6 đơn vị rượu. Bồ Đào Nha có thể dành 100 giờ cho 10/9 đơn vị vải hoặc 10/8 đơn vị rượu {wiki-comparative}. Bồ Đào Nha giỏi hơn ở cả hai món, vì làm ra nhiều hơn mỗi giờ. Tuy vậy thứ bậc khác nhau. Nước Anh bỏ 5/6 đơn vị rượu cho mỗi đơn vị vải, còn Bồ Đào Nha bỏ 9/8. Vải tương đối rẻ để làm ở Anh, còn rượu tương đối rẻ để làm ở Bồ Đào Nha. Năng suất tuyệt đối bảo Bồ Đào Nha nên làm mọi thứ. Chi phí cơ hội nói ngược lại."
+    },
+    {
+      "heading_en": "Counting the gain",
+      "heading_vi": "Đếm phần lợi",
+      "body_en": "Without trade, England needs 220 hours of work to produce and consume one unit each of cloth and wine, and Portugal needs 170 hours {wiki-comparative}. Now let each country specialise. England spends its 220 hours on cloth and makes 2.2 units. Portugal spends its 170 hours on wine and makes 2.125 units. If England swaps one unit of cloth for between 5/6 and 9/8 of a unit of wine, both sides can consume at least one unit of each good, with some left over. Between them the two countries end up with more cloth and more wine than before, from the same total labour.",
+      "body_vi": "Nếu không có thương mại, nước Anh cần 220 giờ làm việc để sản xuất và tiêu dùng mỗi thứ một đơn vị vải và rượu, còn Bồ Đào Nha cần 170 giờ {wiki-comparative}. Bây giờ cho mỗi nước chuyên môn hóa. Nước Anh dành 220 giờ cho vải và làm ra 2,2 đơn vị. Bồ Đào Nha dành 170 giờ cho rượu và làm ra 2,125 đơn vị. Nếu Anh đổi một đơn vị vải lấy từ 5/6 đến 9/8 đơn vị rượu, cả hai bên có thể tiêu dùng ít nhất một đơn vị mỗi loại, mà vẫn dư một ít. Gộp lại, hai nước có nhiều vải hơn và nhiều rượu hơn trước, từ cùng một tổng lao động."
+    },
+    {
+      "heading_en": "Why both sides can agree on a price",
+      "heading_vi": "Vì sao hai bên có thể đồng ý một mức giá",
+      "body_en": "The range from 5/6 to 9/8 is the terms of trade. A good traded between two specialising countries will have a price that falls between each side's opportunity costs {wiki-comparative}. Outside that range, one country would do better making the good itself. Inside it, both do better by trading. Which point in the range is reached depends on demand and supply in the world market, and the model does not predict it. What the model does show is that mutual gains exist whenever opportunity costs differ, and it does not need either side to be the more productive one.",
+      "body_vi": "Khoảng từ 5/6 đến 9/8 là điều kiện thương mại (*terms of trade*). Giá của một hàng hóa được trao đổi giữa hai nước chuyên môn hóa sẽ nằm giữa chi phí cơ hội của mỗi bên {wiki-comparative}. Ngoài khoảng đó, một nước sẽ có lợi hơn nếu tự làm. Trong khoảng đó, cả hai có lợi hơn khi trao đổi. Điểm nào trong khoảng sẽ đạt được phụ thuộc vào cung và cầu trên thị trường thế giới, và mô hình không dự đoán điều đó. Điều mô hình cho thấy là lợi ích chung tồn tại bất cứ khi nào chi phí cơ hội khác nhau, và nó không đòi hỏi bên nào phải là bên năng suất hơn."
+    },
+    {
+      "heading_en": "What the model leaves out",
+      "heading_vi": "Mô hình bỏ qua điều gì",
+      "body_en": "The example is deliberately simple. It has two countries, two goods and one input, labour. Capital and labour stay at home, and the model says nothing about who in each country gains or loses when production shifts. A later proof reported in the same source needs fewer assumptions and extends to many goods, many countries and more than one factor of production {wiki-comparative}, so the core result is not a quirk of the two-country case. The same logic works inside a household or a firm. If one person is faster at everything, it still pays to assign them the task where their lead is biggest.",
+      "body_vi": "Ví dụ này được cố ý làm đơn giản. Nó có hai nước, hai hàng hóa và một yếu tố đầu vào là lao động. Vốn và lao động ở yên trong nước, và mô hình không nói gì về việc ai trong mỗi nước được hay mất khi sản xuất dịch chuyển. Một cách chứng minh về sau, được cùng nguồn ghi lại, cần ít giả định hơn và mở rộng cho nhiều hàng hóa, nhiều nước và hơn một yếu tố sản xuất {wiki-comparative}, nên kết quả cốt lõi không phải là nét riêng của trường hợp hai nước. Cùng logic ấy áp dụng trong một gia đình hay một công ty. Nếu một người làm gì cũng nhanh hơn, giao cho họ việc mà họ vượt trội nhất vẫn có lợi."
+    }
+  ],
+  "keyPoint": {
+    "en": "Trade and specialisation pay when opportunity costs differ, even if one side is better at everything. [p:Compare what each choice gives up, not how fast each side works.] The same test helps when deciding what to do yourself and what to hand to someone else.",
+    "vi": "Thương mại và chuyên môn hóa có lợi khi chi phí cơ hội khác nhau, kể cả khi một bên giỏi hơn ở mọi thứ. [p:Hãy so sánh điều mỗi lựa chọn phải bỏ lại, chứ không phải bên nào làm nhanh hơn.] Phép thử ấy cũng giúp bạn quyết định nên tự làm gì và giao gì cho người khác."
+  },
+  "applySteps": {
+    "en": [
+      "List two tasks you do each week and write down what you give up each time you do them.",
+      "Pick one task to hand over or drop, based on what it costs you in other work.",
+      "Redo Ricardo's table with your own numbers, such as hours to cook and to clean for you and a housemate."
+    ],
+    "vi": [
+      "Liệt kê hai việc bạn làm mỗi tuần và ghi lại bạn phải bỏ gì mỗi lần làm.",
+      "Chọn một việc để giao lại hoặc bỏ, dựa trên cái giá của nó với các việc khác của bạn.",
+      "Làm lại bảng của Ricardo với số liệu của bạn, ví dụ số giờ nấu ăn và dọn dẹp của bạn và một người ở chung."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-comparative",
+      "label": "Wikipedia: Comparative advantage",
+      "url": "https://en.wikipedia.org/wiki/Comparative_advantage"
+    },
+    {
+      "id": "wiki-opportunity",
+      "label": "Wikipedia: Opportunity cost",
+      "url": "https://en.wikipedia.org/wiki/Opportunity_cost"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/comparative-advantage-ricardo-example.webp",
+    "provider": "unsplash",
+    "author": "Anton Sulsky",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/fj0tFloTPGQ"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoQABwAPu1kqU4ppaOiMAgBMB2JbACw7GlhmJX6F/OuvIWcAP7AHosd+arHHfyOd6T4v/cf2R/ezp+N+Nj8t7Ir3qwUtwLDtwAAAA==",
+  "dominant": "#315959"
+}

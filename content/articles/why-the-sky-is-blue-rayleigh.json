@@ -1,0 +1,104 @@
+{
+  "slug": "why-the-sky-is-blue-rayleigh",
+  "status": "published",
+  "publishAt": "2026-11-05T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "optics",
+    "atmosphere",
+    "light",
+    "rayleigh"
+  ],
+  "title": {
+    "en": "Why the sky is blue, and the sunset is red",
+    "vi": "Vì sao bầu trời xanh còn hoàng hôn thì đỏ"
+  },
+  "hook": {
+    "en": "The sky is blue because air scatters short wavelengths of sunlight far more than long ones. Scattering by tiny particles varies with the inverse fourth power of wavelength, so halving the wavelength multiplies the scattering by sixteen. The explanation took centuries to settle, from Leonardo da Vinci's guess around 1506 to [p:Lord Rayleigh's 1899 result for individual molecules].",
+    "vi": "Bầu trời xanh vì không khí tán xạ ánh sáng mặt trời bước sóng ngắn mạnh hơn rất nhiều so với bước sóng dài. Sự tán xạ bởi các hạt nhỏ tỷ lệ nghịch với lũy thừa bốn của bước sóng, nên giảm bước sóng một nửa thì tán xạ tăng mười sáu lần. Lời giải thích mất nhiều thế kỷ mới ngã ngũ, từ phỏng đoán của Leonardo da Vinci quanh năm 1506 đến [p:kết quả năm 1899 của Lord Rayleigh cho từng phân tử]."
+  },
+  "sections": [
+    {
+      "heading_en": "Light bounced off air",
+      "heading_vi": "Ánh sáng bật khỏi không khí",
+      "body_en": "Rayleigh scattering is the deflection of light by particles much smaller than its wavelength, such as the nitrogen and oxygen molecules in air {wiki-rayleigh}. The light wave drives the charges in each molecule, which then radiates a little of the light in new directions. Because the scattering is inversely proportional to the fourth power of the wavelength, blue light is scattered far more than red. The same source gives the conditions: particles smaller than about a tenth of the wavelength. It occurs in transparent solids and liquids too, but is most prominent in gases. It is called elastic scattering, because the photon changes direction without being absorbed and keeps its wavelength {wiki-diffuse}.",
+      "body_vi": "Tán xạ Rayleigh là sự làm lệch ánh sáng bởi các hạt nhỏ hơn nhiều so với bước sóng của nó, như các phân tử nitơ và oxy trong không khí {wiki-rayleigh}. Sóng ánh sáng làm các điện tích trong mỗi phân tử dao động, rồi phân tử phát lại một phần ánh sáng theo hướng mới. Vì tán xạ tỷ lệ nghịch với lũy thừa bốn của bước sóng, ánh sáng xanh bị tán xạ mạnh hơn ánh sáng đỏ rất nhiều. Cùng nguồn cho biết điều kiện: hạt nhỏ hơn khoảng một phần mười bước sóng. Nó cũng xảy ra trong chất rắn và chất lỏng trong suốt, nhưng rõ nhất ở chất khí. Đây là tán xạ đàn hồi, vì photon đổi hướng mà không bị hấp thụ và giữ nguyên bước sóng {wiki-diffuse}."
+    },
+    {
+      "heading_en": "How much light goes astray",
+      "heading_vi": "Bao nhiêu ánh sáng bị lệch hướng",
+      "body_en": "The amount is small for a short path but adds up across the atmosphere. For nitrogen at green wavelength of 532 nanometres, the scattered fraction is about one hundred-thousandth for every metre of air at normal pressure, based on roughly 2 × 10^25 molecules in each cubic metre {wiki-rayleigh}. Over the whole atmosphere the effect is large. About 23% of the direct sunlight is removed from the solar beam by scattering, and around two-thirds of that scattered portion reaches the ground as diffuse skylight {wiki-diffuse}. That scattered light is what we see when we look away from the Sun.",
+      "body_vi": "Lượng này nhỏ trên một quãng ngắn nhưng cộng dồn qua cả bầu khí quyển. Với nitơ ở bước sóng xanh lục 532 nanomet, phần bị tán xạ là khoảng một phần trăm nghìn trên mỗi mét không khí ở áp suất thường, dựa trên khoảng 2 × 10^25 phân tử trong mỗi mét khối {wiki-rayleigh}. Trên toàn bầu khí quyển, hiệu ứng này lớn. Khoảng 23% ánh sáng mặt trời trực tiếp bị tách khỏi chùm tia bởi tán xạ, và khoảng hai phần ba lượng bị tán xạ ấy tới mặt đất dưới dạng ánh sáng trời khuếch tán {wiki-diffuse}. Ánh sáng tán xạ đó là thứ ta thấy khi nhìn ra xa Mặt Trời."
+    },
+    {
+      "heading_en": "Why not violet?",
+      "heading_vi": "Vì sao không phải màu tím?",
+      "body_en": "Violet has an even shorter wavelength than blue, so it scatters more. The sky is not violet because the light reaching our eyes is a mixture of wavelengths. The indirect blue and violet from the whole sky is processed by the human eye as a combination of blue and white {wiki-rayleigh}. The colour we perceive resembles a pure blue of 474 to 476 nanometres mixed with white light, that is, an unsaturated blue {wiki-diffuse}. The sky's blue is pale because the scattering is strongest for short wavelengths yet still contains the other colours, which the eye adds back in.",
+      "body_vi": "Màu tím có bước sóng còn ngắn hơn màu xanh, nên tán xạ mạnh hơn. Bầu trời không tím vì ánh sáng đến mắt ta là hỗn hợp nhiều bước sóng. Ánh sáng xanh lam và tím gián tiếp từ khắp bầu trời được mắt người xử lý như sự kết hợp của xanh và trắng {wiki-rayleigh}. Màu ta cảm nhận giống một màu xanh đơn sắc 474 đến 476 nanomet trộn với ánh sáng trắng, tức một màu xanh không bão hòa {wiki-diffuse}. Màu xanh của bầu trời nhạt vì tán xạ mạnh nhất ở bước sóng ngắn nhưng vẫn chứa các màu khác, và mắt cộng chúng lại."
+    },
+    {
+      "heading_en": "Why sunsets turn red",
+      "heading_vi": "Vì sao hoàng hôn chuyển đỏ",
+      "body_en": "At sunrise and sunset, sunlight arrives almost tangentially to the ground, so its path through the atmosphere is much longer {wiki-diffuse}. Most of the blue and green is scattered out of the line of sight before it reaches you. What remains is the long-wavelength light, which is why the low Sun and the clouds it lights look orange to red. At twilight the low Sun takes on a yellowish to reddish hue because the scattered blue is missing from its light {wiki-rayleigh}. The same process that colours the daytime sky blue removes blue from the direct beam. Nothing new is added at sunset. The light that gives us a red evening is the light the scattering left behind.",
+      "body_vi": "Lúc bình minh và hoàng hôn, ánh sáng mặt trời tới gần như song song với mặt đất, nên quãng đường qua khí quyển dài hơn nhiều {wiki-diffuse}. Phần lớn ánh sáng xanh lam và xanh lục bị tán xạ ra khỏi đường nhìn trước khi tới bạn. Phần còn lại là ánh sáng bước sóng dài, nên Mặt Trời thấp và những đám mây nó chiếu sáng trông cam đến đỏ. Lúc chạng vạng Mặt Trời thấp có sắc vàng đến đỏ vì ánh sáng của nó thiếu phần xanh đã bị tán xạ {wiki-rayleigh}. Chính quá trình làm bầu trời ban ngày xanh cũng lấy mất màu xanh khỏi chùm tia trực tiếp. Hoàng hôn không thêm gì mới. Thứ ánh sáng cho ta buổi chiều đỏ là phần ánh sáng mà tán xạ để lại."
+    },
+    {
+      "heading_en": "From Leonardo to Rayleigh",
+      "heading_vi": "Từ Leonardo đến Rayleigh",
+      "body_en": "Around 1506 to 1510, Leonardo da Vinci conjectured that small particles in the air scatter sunlight to make the sky blue {wiki-rayleigh}. In 1869 John Tyndall noticed that light scattering off tiny particles in purified air was faintly blue. He suggested this explained the sky but could not say why blue was preferred, and dust could not account for the intensity. In 1871 Lord Rayleigh published two papers on the colour and polarisation of skylight. In 1881 he showed that his equations followed from the electromagnetic theory of light. In 1899 he showed they applied to single molecules, which set the basic model for the colour of the sky.",
+      "body_vi": "Khoảng năm 1506 đến 1510, Leonardo da Vinci phỏng đoán rằng các hạt nhỏ trong không khí tán xạ ánh sáng mặt trời làm bầu trời xanh {wiki-rayleigh}. Năm 1869, John Tyndall nhận thấy ánh sáng tán xạ khỏi các hạt cực nhỏ trong không khí đã lọc sạch có sắc xanh nhạt. Ông cho rằng điều này giải thích bầu trời nhưng không nói được vì sao màu xanh được ưu tiên, và bụi không giải thích được cường độ. Năm 1871, Lord Rayleigh công bố hai bài báo về màu sắc và sự phân cực của ánh sáng bầu trời. Năm 1881, ông chứng minh các phương trình của mình suy ra được từ lý thuyết điện từ của ánh sáng. Năm 1899, ông chỉ ra chúng áp dụng cho từng phân tử, điều thiết lập mô hình cơ bản cho màu bầu trời."
+    },
+    {
+      "heading_en": "An overcast day and the plants beneath",
+      "heading_vi": "Ngày u ám và cây cối bên dưới",
+      "body_en": "Under an overcast sky there is no direct sunlight, and all light is diffused skylight {wiki-diffuse}. The same source says that after the Mount Pinatubo eruption in June 1991, studies suggested diffuse light could reach leaves under the canopy and so allow more efficient photosynthesis across the whole plant than clear skies with direct sun, which cast shadows on understory leaves. The result is a reminder that scattered light is not just a matter of colour. It changes how light is spread through a forest, and so how plants make use of it.",
+      "body_vi": "Dưới bầu trời u ám không có ánh sáng mặt trời trực tiếp, và toàn bộ ánh sáng là ánh sáng trời khuếch tán {wiki-diffuse}. Cùng nguồn cho biết sau vụ phun trào núi Pinatubo tháng 6 năm 1991, các nghiên cứu gợi ý ánh sáng khuếch tán có thể chiếu tới lá dưới tán rừng và nhờ đó giúp quang hợp trên toàn cây hiệu quả hơn so với bầu trời quang có nắng trực tiếp, vốn đổ bóng lên lá tầng dưới. Kết quả nhắc ta rằng ánh sáng tán xạ không chỉ là chuyện màu sắc. Nó thay đổi cách ánh sáng phân bố trong rừng, và do đó cách cây tận dụng nó."
+    }
+  ],
+  "keyPoint": {
+    "en": "The sky is blue because air scatters short wavelengths of sunlight much more than long ones, and our eyes add the rest to give a pale blue. [p:At sunset the longer path removes blue from the direct beam,] leaving orange and red.",
+    "vi": "Bầu trời xanh vì không khí tán xạ ánh sáng mặt trời bước sóng ngắn mạnh hơn nhiều so với bước sóng dài, và mắt ta cộng thêm phần còn lại để cho ra màu xanh nhạt. [p:Lúc hoàng hôn, quãng đường dài hơn lấy mất ánh sáng xanh khỏi chùm tia trực tiếp,] để lại cam và đỏ."
+  },
+  "applySteps": {
+    "en": [
+      "Look at the sky at noon and at sunset, and note where the colour changes along the horizon.",
+      "Compare the sky colour on a clear day and under overcast cloud, and note how shadows differ.",
+      "Photograph the sky in the same place at different times of day and compare the colours."
+    ],
+    "vi": [
+      "Nhìn bầu trời lúc giữa trưa và lúc hoàng hôn, và ghi lại màu thay đổi ở đâu dọc chân trời.",
+      "So màu bầu trời ngày quang với lúc mây phủ, và để ý bóng đổ khác nhau thế nào.",
+      "Chụp bầu trời ở cùng một chỗ vào các giờ khác nhau và so màu."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-rayleigh",
+      "label": "Wikipedia: Rayleigh scattering",
+      "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+    },
+    {
+      "id": "wiki-diffuse",
+      "label": "Wikipedia: Diffuse sky radiation",
+      "url": "https://en.wikipedia.org/wiki/Diffuse_sky_radiation"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/why-the-sky-is-blue-rayleigh.webp",
+    "provider": "unsplash",
+    "author": "Linh Nguyen",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/xjXz8GKXcTI"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoQABwALrV2u12jqampiYC0S2AE6ZQjgAKjwUV0KdkoD9AA/tpA8ePKeA1wxty/q6u6Uif+FmzW1dgOgWyFzm+wXjDlbdkZL38VXKpw7VmuhTaspYAAAA==",
+  "dominant": "#5a756c"
+}
