@@ -4,7 +4,8 @@ import dynamic from 'next/dynamic';
 import { LazyMotion } from 'framer-motion';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { setArticleData } from '@/lib/data';
-import { startSession } from '@/lib/actions';
+import { restoreCachedUser } from '@/lib/actions';
+import { getBackend } from '@/lib/backend';
 import { detectLang, translate } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
 import { Ambient } from './chrome/Ambient';
@@ -29,6 +30,8 @@ const SearchPanel = dynamic(() => import('./overlays/SearchPanel').then((m) => m
 const Sheets = dynamic(() => import('./overlays/Sheets').then((m) => m.Sheets), { ssr: false });
 const MessagesPanel = dynamic(() => import('./overlays/SocialPanels').then((m) => m.MessagesPanel), { ssr: false });
 const NotificationsPanel = dynamic(() => import('./overlays/SocialPanels').then((m) => m.NotificationsPanel), { ssr: false });
+/** Long enough to stay clear of loading and the first swipes; a reader's tap starts it sooner. */
+const BACKEND_IDLE_START_MS = 8000;
 const motionFeatures = () => import('@/lib/motion-features').then((m) => m.default);
 
 export interface PreviewData {
@@ -119,8 +122,12 @@ function Shell({
       return setTimeout(cb, 500);
     };
 
+    // The backend starts on the reader's first action (lib/backend), on a pending sign-in redirect,
+    // or once the page has been quiet for a while, so that sign-in state and live counts are ready.
+    if (sessionStorage.getItem('reader.redirecting')) getBackend();
+    const quietStart = setTimeout(() => runIdle(() => getBackend()), BACKEND_IDLE_START_MS);
     runIdle(() => {
-      startSession();
+      restoreCachedUser();
       if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production' && !preview) {
         navigator.serviceWorker.register('/sw.js').catch(() => {});
       }
@@ -129,7 +136,10 @@ function Shell({
 
     const offline = () => useUI.getState().showToast(translate(useUI.getState().lang, 'offline'));
     window.addEventListener('offline', offline);
-    return () => window.removeEventListener('offline', offline);
+    return () => {
+      clearTimeout(quietStart);
+      window.removeEventListener('offline', offline);
+    };
   }, [initialSlug, preview]);
 
   useEffect(() => {

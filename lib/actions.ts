@@ -1,6 +1,6 @@
 'use client';
 // User actions: optimistic updates in the stores, then the backend (Firestore or local).
-import { getBackend, isInAppBrowser, preferRedirect, backendKind } from '@/lib/backend';
+import { backendKind, backendStarted, getBackend, isInAppBrowser, onBackendStart, preferRedirect } from '@/lib/backend';
 import { BackendError, type AuthUser, type UserData } from '@/lib/backend/types';
 import type { Counts, Lang } from '@/lib/content/types';
 import { track } from '@/lib/analytics';
@@ -24,6 +24,7 @@ export function errorMessage(e: unknown): string {
 // ---------- Session ----------
 
 const CACHE = (uid: string) => `reader.userdata.${uid}`;
+const LAST_UID = 'reader.lastUid';
 const REFRESH_AFTER = 30 * 60_000;
 let started = false;
 let currentUid: string | null = null;
@@ -63,6 +64,20 @@ function persistCache() {
   if (!uid) return;
   try {
     localStorage.setItem(CACHE(uid), JSON.stringify({ at: Date.now(), data: snapshotData() }));
+    localStorage.setItem(LAST_UID, uid);
+  } catch {}
+}
+
+/**
+ * Show this device's last known reading data (progress, streak, likes) at load, before the backend
+ * starts: the feed can put finished articles last and the header can show the streak without Firebase.
+ */
+export function restoreCachedUser() {
+  useUser.setState({ backend: backendKind });
+  try {
+    const uid = localStorage.getItem(LAST_UID);
+    const cached = uid ? (JSON.parse(localStorage.getItem(CACHE(uid)) ?? 'null') as { data: UserData } | null) : null;
+    if (cached && !useUser.getState().user) applyData(cached.data);
   } catch {}
 }
 
@@ -86,7 +101,9 @@ async function refreshUserData(force = false) {
   }
 }
 
-export function startSession() {
+onBackendStart(startSession);
+
+function startSession() {
   if (started) return;
   started = true;
   useUser.setState({ backend: backendKind });
@@ -121,6 +138,7 @@ export function startSession() {
 }
 
 function whenUser(timeout = 10_000): Promise<AuthUser> {
+  getBackend(); // a reader action: start the backend if it has not started yet
   const u = useUser.getState().user;
   if (u) return Promise.resolve(u);
   return new Promise((resolve, reject) => {
@@ -143,7 +161,8 @@ function bump(slug: string, field: keyof Counts, d: number) {
 
 const liveLoaded = new Set<string>();
 export async function loadLiveCounts(slug: string) {
-  if (liveLoaded.has(slug)) return;
+  // Reading alone does not start the backend; until it runs, the build-time counts are shown.
+  if (liveLoaded.has(slug) || !backendStarted()) return;
   liveLoaded.add(slug);
   const b = await getBackend();
   const c = await b.getCounts(slug).catch(() => null);
