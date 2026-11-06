@@ -5,6 +5,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/books/4-hilarious-ancient-greek-comedies"
     },
+    "https://bigthink.com/books/dna-profiling": {
+      "at": "2026-11-06T03:34:34.025Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/books/dna-profiling"
+    },
     "https://bigthink.com/books/mapping-the-brain": {
       "at": "2026-11-04T03:03:30.944Z",
       "feed": "big-think",
@@ -100,6 +105,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/five-divisions-how-far-space"
     },
+    "https://bigthink.com/starts-with-a-bang/how-far-away-stars": {
+      "at": "2026-11-06T03:37:23.710Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/how-far-away-stars"
+    },
     "https://bigthink.com/starts-with-a-bang/invisibility-cloak-183582": {
       "at": "2026-10-25T01:15:29.637Z",
       "feed": "big-think",
@@ -135,6 +145,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/who-discovered-dark-matter-fritz-zwicky-vera-rubin"
     },
+    "https://bigthink.com/strange-maps/antique-sources-for-portolan-charts": {
+      "at": "2026-11-06T03:32:30.903Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/strange-maps/antique-sources-for-portolan-charts"
+    },
     "https://bigthink.com/strange-maps/roman-road-networks": {
       "at": "2026-10-24T01:44:24.071Z",
       "feed": "big-think",
@@ -169,6 +184,11 @@
       "at": "2026-10-27T02:09:34.811Z",
       "feed": "wikipedia-featured",
       "error": "Unterminated string in JSON at position 239011 (line 2 column 239010)"
+    },
+    "https://en.wikipedia.org/wiki/Bill_Madden_(soldier)": {
+      "at": "2026-11-06T03:30:13.609Z",
+      "feed": "wikipedia-featured",
+      "slug": "bill-madden-soldier"
     },
     "https://en.wikipedia.org/wiki/Chimacum_Creek": {
       "at": "2026-10-29T02:30:38.738Z",
@@ -420,6 +440,21 @@
       "feed": "global-voices",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
+    "https://globalvoices.org/2026/11/05/unmarried-chinese-women-are-rewriting-the-marriage-script": {
+      "at": "2026-11-06T03:37:17.204Z",
+      "feed": "global-voices",
+      "slug": "unmarried-chinese-women-are-rewriting-the-marriage-script"
+    },
+    "https://globalvoices.org/2026/11/05/what-comes-after-networked-authoritarianism": {
+      "at": "2026-11-06T03:34:13.001Z",
+      "feed": "global-voices",
+      "slug": "what-comes-after-networked-authoritarianism"
+    },
+    "https://globalvoices.org/2026/11/06/global-voices-condemns-the-attacks-on-albanian-fact-checking-service-faktoje": {
+      "at": "2026-11-06T03:30:05.547Z",
+      "feed": "global-voices",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -445,6 +480,11 @@
       "feed": "knowable",
       "error": "403 Forbidden — https://knowablemagazine.org/content/article/living-world/2026/why-animal-blood-comes-in-different-colors"
     },
+    "https://knowablemagazine.org/content/article/living-world/2026/why-did-pregnancy-evolve-in-animals": {
+      "at": "2026-11-06T03:32:25.978Z",
+      "feed": "knowable",
+      "error": "403 Forbidden — https://knowablemagazine.org/content/article/living-world/2026/why-did-pregnancy-evolve-in-animals"
+    },
     "https://knowablemagazine.org/content/article/mind/2026/when-scammers-target-seniors": {
       "at": "2026-10-29T02:31:41.672Z",
       "feed": "knowable",
@@ -469,6 +509,11 @@
       "at": "2026-10-26T01:16:32.239Z",
       "feed": "nautilus",
       "slug": "rare-fossil-sheds-light-on-the-ancient-origins-of-snakes"
+    },
+    "https://nautil.us/ancient-dna-may-reveal-the-surprising-roots-of-english-and-other-germanic-languages-1286400": {
+      "at": "2026-11-06T03:32:30.817Z",
+      "feed": "nautilus",
+      "slug": "ancient-dna-links-the-roots-of-germanic-languages-to-unknown"
     },
     "https://nautil.us/archaeologists-unravel-an-88-year-old-murder-mystery-1286358": {
       "at": "2026-11-05T03:34:08.207Z",
@@ -559,6 +604,16 @@
       "at": "2026-10-27T02:10:09.787Z",
       "feed": "nautilus",
       "slug": "new-plant-eating-dinosaur-discovered-in-england-museum-colle"
+    },
+    "https://nautil.us/switching-to-this-healthier-version-of-salt-could-save-around-3-million-lives-a-year-1286385": {
+      "at": "2026-11-06T03:34:33.915Z",
+      "feed": "nautilus",
+      "slug": "replacing-regular-salt-with-potassium-mix-could-save-million"
+    },
+    "https://nautil.us/the-evolutionary-arc-from-pigeon-brains-to-machine-consciousness-1286380": {
+      "at": "2026-11-06T03:37:23.661Z",
+      "feed": "nautilus",
+      "slug": "the-evolutionary-link-between-animal-minds-and-artificial-in"
     },
     "https://nautil.us/the-female-iron-age-queen-who-helped-bring-britain-to-its-knees-1286361": {
       "at": "2026-11-05T03:32:13.001Z",
@@ -655,6 +710,11 @@
       "feed": "psyche",
       "slug": "how-to-overcome-task-paralysis-using-goal-management-trainin"
     },
+    "https://psyche.co/guides/how-to-take-notes-that-actually-help-you-learn": {
+      "at": "2026-11-06T03:32:25.922Z",
+      "feed": "psyche",
+      "slug": "how-to-take-notes-that-actually-help-you-learn"
+    },
     "https://psyche.co/ideas/can-you-ever-really-think-what-someone-else-is-thinking": {
       "at": "2026-10-23T16:56:59.288Z",
       "feed": "psyche",
@@ -699,6 +759,11 @@
       "at": "2026-10-23T16:58:44.153Z",
       "feed": "psyche",
       "slug": "why-romantic-relationships-matter-more-to-men-than-women"
+    },
+    "https://psyche.co/notes-to-self/the-perils-of-stopping-an-activity-that-forms-your-identity": {
+      "at": "2026-11-06T03:34:18.599Z",
+      "feed": "psyche",
+      "slug": "when-injury-forces-runners-to-stop"
     },
     "https://psyche.co/notes-to-self/why-sunlight-is-vital-to-our-physical-and-mental-health": {
       "at": "2026-10-25T01:14:17.711Z",
@@ -845,6 +910,51 @@
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
     },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-1355": {
+      "at": "2026-11-06T03:37:33.928Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-214": {
+      "at": "2026-11-06T03:38:04.595Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-5217": {
+      "at": "2026-11-06T03:27:59.986Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-5893": {
+      "at": "2026-11-06T03:37:42.110Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-6457": {
+      "at": "2026-11-06T03:37:47.890Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-6649": {
+      "at": "2026-11-06T03:37:57.320Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-6842": {
+      "at": "2026-11-06T03:32:43.515Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-7025": {
+      "at": "2026-11-06T03:34:20.826Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/exoplanets/star-catalog/toi-7176": {
+      "at": "2026-11-06T03:37:30.815Z",
+      "feed": "nasa-science",
+      "error": "Only 23 words of text found"
+    },
     "https://science.nasa.gov/mission/crave": {
       "at": "2026-11-01T02:15:27.594Z",
       "feed": "nasa-science",
@@ -905,10 +1015,30 @@
       "feed": "conversation",
       "slug": "as-french-protests-escalate-into-riots-they-may-prove-a-gift"
     },
+    "https://theconversation.com/black-michiganders-helped-push-abdul-el-sayed-to-victory-but-the-numbers-show-he-was-less-popular-with-this-key-voting-bloc-than-some-other-democratic-candidates-289777": {
+      "at": "2026-11-06T03:33:13.568Z",
+      "feed": "conversation",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://theconversation.com/booker-prize-2026-a-diverse-list-to-inspire-all-sorts-of-readers-six-experts-review-the-nominees-295103": {
       "at": "2026-11-04T03:07:56.652Z",
       "feed": "conversation",
       "slug": "booker-prize-2026-a-diverse-list-to-inspire-all-sorts-of-rea"
+    },
+    "https://theconversation.com/born-in-aussie-or-nz-playing-for-the-pacific-the-startling-demographics-of-the-rugby-league-world-cup-295966": {
+      "at": "2026-11-06T03:30:01.081Z",
+      "feed": "conversation",
+      "error": "Unterminated string in JSON at position 83715 (line 2 column 83714)"
+    },
+    "https://theconversation.com/can-democracy-be-taught-brazil-is-about-to-find-out-295238": {
+      "at": "2026-11-06T03:38:05.622Z",
+      "feed": "conversation",
+      "error": "1936 words: too long to republish word for word (limit 1500)"
+    },
+    "https://theconversation.com/delayed-international-support-has-hampered-efforts-to-contain-and-treat-ebola-in-the-democratic-republic-of-congo-295610": {
+      "at": "2026-11-06T03:37:32.815Z",
+      "feed": "conversation",
+      "slug": "delayed-international-support-has-hampered-efforts-to-contai"
     },
     "https://theconversation.com/eus-new-arctic-strategy-signals-shift-in-its-geopolitical-mindset-294978": {
       "at": "2026-10-29T02:34:28.204Z",
@@ -955,6 +1085,11 @@
       "feed": "conversation",
       "error": "Unterminated string in JSON at position 65591 (line 2 column 65590)"
     },
+    "https://theconversation.com/i-study-polling-failures-this-time-pollsters-were-mostly-right-if-not-precise-295433": {
+      "at": "2026-11-06T03:37:46.500Z",
+      "feed": "conversation",
+      "slug": "i-study-polling-failures-this-time-pollsters-were-mostly-rig"
+    },
     "https://theconversation.com/in-opting-for-lula-brazil-made-a-conservative-choice-to-elect-a-man-of-the-left-over-one-of-the-far-right-295217": {
       "at": "2026-10-27T02:06:59.365Z",
       "feed": "conversation",
@@ -985,6 +1120,11 @@
       "feed": "conversation",
       "slug": "medieval-ghost-stories-featured-rotten-flesh-the-walking-dea"
     },
+    "https://theconversation.com/midterms-are-bad-for-incumbents-and-even-worse-when-energy-prices-are-high-295287": {
+      "at": "2026-11-06T03:37:56.016Z",
+      "feed": "conversation",
+      "slug": "midterms-are-bad-for-incumbents-and-even-worse-when-energy-p"
+    },
     "https://theconversation.com/napoleon-can-be-partly-blamed-for-gen-zs-weightlifting-obsession-heres-why-293288": {
       "at": "2026-10-24T01:41:41.924Z",
       "feed": "conversation",
@@ -1009,6 +1149,11 @@
       "at": "2026-10-28T02:26:01.052Z",
       "feed": "conversation",
       "slug": "terror-of-kings-why-the-1066-appearance-of-halley-s-comet-te"
+    },
+    "https://theconversation.com/the-binance-hack-exploited-familiar-weaknesses-all-organisations-should-learn-from-it-295627": {
+      "at": "2026-11-06T03:37:40.917Z",
+      "feed": "conversation",
+      "slug": "the-binance-hack-exploited-familiar-weaknesses-all-organisat"
     },
     "https://theconversation.com/the-crucible-arthur-millers-morality-tale-was-as-much-a-reaction-to-his-own-marital-failings-as-it-was-to-the-red-scare-294832": {
       "at": "2026-10-23T16:56:11.077Z",
@@ -1040,6 +1185,11 @@
       "feed": "conversation",
       "slug": "we-changed-the-system-how-serbian-students-ended-alexander-v"
     },
+    "https://theconversation.com/we-used-ancient-dna-to-track-the-origins-and-spread-of-the-germanic-and-celtic-languages-new-research-295786": {
+      "at": "2026-11-06T03:38:03.446Z",
+      "feed": "conversation",
+      "slug": "we-used-ancient-dna-to-track-the-origins-and-spread-of-the-g"
+    },
     "https://theconversation.com/werewolf-mice-ghostly-frogs-and-zombie-cockroaches-the-animal-versions-of-our-halloween-horrors-294284": {
       "at": "2026-11-01T02:16:42.531Z",
       "feed": "conversation",
@@ -1049,6 +1199,11 @@
       "at": "2026-10-31T02:30:32.694Z",
       "feed": "conversation",
       "slug": "what-animal-bones-in-malawi-teach-us-about-the-social-lives"
+    },
+    "https://theconversation.com/what-the-us-midterms-result-means-for-the-ukraine-war-295705": {
+      "at": "2026-11-06T03:34:26.952Z",
+      "feed": "conversation",
+      "slug": "what-the-us-midterms-result-means-for-the-ukraine-war"
     },
     "https://theconversation.com/what-we-leave-behind-is-not-as-important-as-how-weve-lived-remembering-actor-patrick-stewart-295542": {
       "at": "2026-10-31T02:29:11.895Z",
@@ -1410,6 +1565,11 @@
       "feed": "npr-health",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
+    "https://www.npr.org/2026/11/05/nx-s1-6027635/exercise-workout-teenagers-adolescents-gender-gap": {
+      "at": "2026-11-06T03:32:36.853Z",
+      "feed": "npr-health",
+      "slug": "global-study-reveals-most-teenagers-fail-to-exercise-enough"
+    },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
       "feed": "quanta",
@@ -1620,6 +1780,21 @@
       "feed": "sciencedaily",
       "slug": "hera-spacecraft-approaches-target-asteroids"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261103003157.htm": {
+      "at": "2026-11-06T03:37:29.077Z",
+      "feed": "sciencedaily",
+      "slug": "permanent-daylight-saving-time-risks-children-s-morning-safe"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261103003207.htm": {
+      "at": "2026-11-06T03:34:39.711Z",
+      "feed": "sciencedaily",
+      "slug": "clogged-filters-rewrite-oil-refining-rules"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261104004909.htm": {
+      "at": "2026-11-06T03:32:41.787Z",
+      "feed": "sciencedaily",
+      "slug": "stanford-ai-discovery-points-to-new-weight-loss-molecule"
+    },
     "https://www.sciencedaily.com/releases/2026/11/261104012248.htm": {
       "at": "2026-11-05T03:34:35.639Z",
       "feed": "sciencedaily",
@@ -1755,6 +1930,11 @@
       "feed": "usgs",
       "slug": "volcano-minute-a-quiet-eruption-beneath-the-pacific"
     },
+    "https://www.usgs.gov/observatories/hvo/news/volcano-minute-how-tall-fountain": {
+      "at": "2026-11-06T03:34:28.852Z",
+      "feed": "usgs",
+      "error": "Only 246 words of text found"
+    },
     "https://www.usgs.gov/observatories/hvo/news/volcano-minute-patterns-eruptions-and-intrusions-kilauea": {
       "at": "2026-10-23T17:01:43.252Z",
       "feed": "usgs",
@@ -1769,6 +1949,11 @@
       "at": "2026-11-01T02:18:45.627Z",
       "feed": "usgs",
       "error": "Unterminated string in JSON at position 266218 (line 2 column 266217)"
+    },
+    "https://www.usgs.gov/observatories/hvo/news/volcano-watch-such-great-heights-measuring-kilaueas-lava-fountains": {
+      "at": "2026-11-06T03:32:19.812Z",
+      "feed": "usgs",
+      "error": "Unterminated string in JSON at position 303911 (line 2 column 303910)"
     },
     "https://www.usgs.gov/observatories/yvo/news/crystal-clues-case-lava-creek-tuffs-missing-members": {
       "at": "2026-10-27T02:09:51.480Z",
