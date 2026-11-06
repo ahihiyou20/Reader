@@ -49,12 +49,17 @@ export function lintArticle(a: ArticleSource): LintIssue[];
 
 ### lib/backend/index.ts (frontend)
 ```ts
-/** Starts the backend once; the only path that may create Firebase. Marks 'reader:backend-start'. */
-export function ensureBackend(reason: 'intent' | 'idle' | 'auth-redirect'): Promise<Backend>;
+/** Starts the backend on the first call (marks 'reader:backend-start'); later calls share it. */
+export function getBackend(): Promise<Backend>;
+export function backendStarted(): boolean;
+/** Runs fn once the backend has started (right away if it already has). */
+export function onBackendStart(fn: () => void): void;
 ```
-`getBackend()` keeps its signature but must not start the backend by itself before
-`ensureBackend` ran (callers that need it go through `ensureBackend('intent')`). A pending
-`/__/auth` redirect result (sessionStorage flag) starts it at load with reason `auth-redirect`.
+As built (replaces the planned `ensureBackend(reason)`): only reader actions call `getBackend()`
+(like, save, share, comment, sign-in, profile), plus a pending sign-in redirect (sessionStorage
+flag) at load and an 8 s quiet timer in ReaderApp. Reading never starts it: live counts wait
+(`loadLiveCounts` returns while `!backendStarted()`), section progress waits in the local cache
+and is saved through `onBackendStart`, analytics queue until it starts.
 
 ### Data files
 - `/data/feed-head.json`: `{ builtAt, total, items: FeedItem[] }`, the first 40 ranked items.
@@ -84,45 +89,57 @@ Positive hits for: "delve", "tapestry", "In today's fast-paced world", "In concl
 em dashes in 100 words, `[y:` in a title field. No findings on five group-4 articles from
 content/articles (pick: how-habits-form and four other `origin.group === 4` files, fixed list).
 
-### tests/unit/feeds-run.test.ts (A5)
-Run the feeds step function (export a `runFeeds(opts)` from feeds.ts that takes injected
-`fetchFeed`, `fetchPage`, output dir) on 2 fixture feeds into a temp dir with stubbed Gemini
-replies; every written article passes `validateArticle` with no errors and `lintProse` with no
-findings; rejected URLs land in the returned state.
+### tests/unit/feeds-select.test.ts (A5)
+As built: the selection step is the exported `selectArticles(feeds, candidates, opts)` (round-robin
+pool, hard rules, triage, near-duplicate check against existing titles); the test runs it on
+fixture candidates with a stubbed Gemini reply and checks picks, rejections and categories. Writing
+and validation of articles stay covered by gemini-structured, prose-lint and `pnpm validate`.
 
 ### tests/unit/content-lint.test.ts (B6)
 `lintArticle` flags each junk pattern on a crafted article and is silent on how-habits-form.
 
 ### tests/e2e/latency.spec.ts (C8, C9) — Playwright project `qa`
 - Load `/`, record requests. Wait 6 s without input: no `reader:backend-start` performance mark;
-  first `/data/` request is `feed-head.json`, its transfer size (served compressed) ≤ 25 KB.
-- Tap the like button: mark exists within 1 s.
-- Swipe (ArrowDown) 45 times: active slug changes every time, no console errors.
+  first `/data/` request is `feed-head.json`, gzip size of out/data/feed-head.json ≤ 25 KB.
+- Tap the like button: mark exists within 1 s and the button stays pressed (the data loaded by
+  the starting backend must not undo the optimistic like).
+- feed.json is requested within 5 s; swipe (ArrowDown) 45 times: active slug changes every time,
+  at least one slug is outside the head, no console errors.
+- Writes `test-results/qa/latency.json` `{ backendBeforeInteraction, feedHeadKbGz }`.
 
 ### tests/qa/continuity.ts + tests/e2e/continuity.spec.ts (D12–D17) — project `continuity`
-Recorder: injected rAF loop storing per frame `{t, trackY, viewsX (active), activeSlug, shownSlug
-(article whose rect covers the viewport centre), coverRatio (fraction of viewport covered by the
-target article), titleRect, layoutShift}`; uses `PerformanceObserver('layout-shift')`.
-Detectors (pure functions, unit-tested inside the spec file with synthetic series): `jumps`,
-`reversals`, `wrongFrames`, `layoutShift`. Screencast detector: CDP `Page.startScreencast`
-(jpeg, every frame) during each scenario, decode with `sharp` (already a devDependency) to 32×32
-luma, flag frames > 30% pixels with luma < 12 and transient mean-luma jumps > 35% that revert
-within 2 frames.
+Recorder (as built): injected rAF loop storing per frame `{t, w, h, active, tops (top of every
+mounted article by slug), coverLeft (active article's cover view), coverage (share of the viewport
+height covered by articles)}` plus the layout-shift sum.
+Detectors (pure, unit-tested in tests/unit/continuity-detectors.test.ts with synthetic frames):
+- jump: a step > 48 px and > 3× both neighbouring steps, on the article the scenario ends on;
+  not checked while a finger is down (+20 ms), because the page follows the finger and Chrome
+  batches several moves into one frame;
+- reversal: more than one change of direction after the last release (one spring overshoot is
+  allowed);
+- gap: a frame with < 99% of the viewport covered by articles;
+- wrong-article: final active slug differs from the expected one, or (steady scenarios) any frame
+  shows another active article;
+- layout-shift: sum > 0.001, except in rotation scenarios (a resize reflows everything; coverage
+  and the active article are what a rotation must keep).
+Screencast detector: CDP `Page.startScreencast` (jpeg, max 200 px), decoded with `sharp`; flags
+a mean-brightness jump > 35% that reverts within 2 frames, or near-black area (luma < 8) 30 points
+above the first frame (the theme is dark, so an absolute threshold would always fire).
 Scenarios at 390×844 touch (each also with `Emulation.setCPUThrottlingRate` 4):
 fast flick up, slow drag 30% then release, drag down then reverse to up, three ArrowDown in
 100 ms, horizontal swipe Cover→Details→Engage→Cover, like tap during a settle, iOS-style
 rotation (390×844 → 844×844 → 844×390 within 120 ms, then 844×340 after 300 ms to mimic the
 toolbar), rotation reversed mid-transition, rotation while Details is scrolled 50%.
-Allowed discontinuities: none except the frame where the viewport size changes (positions are
-compared in page units there).
-Writes `test-results/qa/continuity.json` `{ violations, byScenario }` for the metric.
+Extra scenario (found while building): the full feed arriving in the middle of a drag (the
+request is held by a route and released half way). Allowed discontinuities: the first frame after
+each viewport resize. Each scenario writes `test-results/qa/continuity/<name>-cpu<rate>.json`
+`{ scenario, cpu, violations, frames }`; the metric sums violations over all 20 files.
 
 ### Infrastructure (WP0)
 - `scripts/serve.mjs`: gzip/brotli by Accept-Encoding for text types; Cache-Control like
   `public/_headers`.
-- `tests/qa/metric.mjs`: add `feed-head-kb-gz` (gzip size of out/data/feed-head.json),
-  `continuity-violations` (from continuity.json), `backend-before-interaction` (from a
-  latency.json the latency spec writes). Keep `first-load-js`.
+- `tests/qa/metric.mjs`: add `feed-head-kb-gz` and `backend-before-interaction` (from
+  latency.json), `continuity-violations` (sum over test-results/qa/continuity/*.json, 20 files). Keep `first-load-js`.
 - `playwright.config.ts`: add project `continuity` (Chromium, testMatch continuity.spec.ts);
   `qa` also matches latency.spec.ts. Try `pnpm exec playwright install webkit`; if it runs in
   WSL, add a `continuity-webkit` project (no CDP parts: skip screencast and throttling there).

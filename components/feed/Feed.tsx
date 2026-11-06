@@ -53,10 +53,14 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   const total = items.length + 1;
   const y = useTransform(feedP, (p) => `${-p * 100}%`);
 
-  // Keep the shared layout in sync with the measured size and the list.
+  // Keep the shared layout in sync with the measured size and the list. The gesture handlers read
+  // the list through a ref: re-binding them when the full feed replaces the head would drop a drag
+  // in progress and leave the page stuck where the finger let go.
+  const live = useRef({ items, onDoubleTap });
   useEffect(() => {
     setFeedSlugs(items);
-  }, [items]);
+    live.current = { items, onDoubleTap };
+  }, [items, onDoubleTap]);
   useEffect(() => {
     relayout(w, h);
   }, [w, h]);
@@ -135,7 +139,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       feedP.stop();
       commitInFlight();
       const ui = useUI.getState();
-      const slug = items[ui.index]?.slug;
+      const slug = live.current.items[ui.index]?.slug;
       const vp = slug ? viewP(slug) : null;
       vp?.stop();
       const scroller = target.closest('.dscroll, .escroll');
@@ -235,7 +239,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
         lastTap = null;
         toggleLike(G.slug, true);
         const r = el.getBoundingClientRect();
-        onDoubleTap(e.clientX - r.left, e.clientY - r.top);
+        live.current.onDoubleTap(e.clientX - r.left, e.clientY - r.top);
       } else lastTap = { t: e.timeStamp, x: e.clientX, y: e.clientY };
     };
 
@@ -250,7 +254,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     let wheelLock = 0;
     const wheel = (e: WheelEvent) => {
       const index = targetArticle();
-      const slug = items[index]?.slug;
+      const slug = live.current.items[index]?.slug;
       const view = slug ? targetView(slug) : 0;
       const horiz = Math.abs(e.deltaX) > Math.abs(e.deltaY);
       if (!horiz && view !== 0) return;
@@ -280,7 +284,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       el.removeEventListener('click', swallowClick, true);
       el.removeEventListener('wheel', wheel);
     };
-  }, [items, onDoubleTap]);
+  }, []);
 
   // ---------- Keyboard (NFR-04): instant, no animation ----------
   useEffect(() => {

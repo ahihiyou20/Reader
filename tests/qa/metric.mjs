@@ -48,7 +48,12 @@ switch (metricName) {
     }
     try {
       const html = fs.readFileSync(indexPath, 'utf8');
-      const matches = [...html.matchAll(/<script[^>]*src="([^"]+)"/g)];
+      // `nomodule` scripts (Next's legacy polyfills) are never downloaded by module-capable
+      // browsers, and Next's own "First Load JS" leaves them out too.
+      const matches = [...html.matchAll(/<script[^>]*>/g)]
+        .filter((m) => !/\bnomodule\b/i.test(m[0]))
+        .map((m) => m[0].match(/src="([^"]+)"/))
+        .filter(Boolean);
       let totalBytes = 0;
       for (const m of matches) {
         const src = m[1].replace(/^\//, '');
@@ -140,6 +145,42 @@ switch (metricName) {
       }
     }
     console.log(totalWrongFrames);
+    break;
+  }
+
+  case 'feed-head-kb-gz':
+  case 'feed_head_kb_gz':
+  case 'backend-before-interaction':
+  case 'backend_before_interaction':
+  case 'continuity-violations':
+  case 'continuity_violations': {
+    const indexMtime = getIndexMtime();
+    if (metricName.startsWith('continuity')) {
+      // One file per scenario and CPU rate, written by tests/e2e/continuity.spec.ts.
+      const dir = path.resolve(process.cwd(), 'test-results/qa/continuity');
+      const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json')) : [];
+      if (files.length < 20) fail(metricName, `expected 20 scenario results in ${dir}, found ${files.length}`);
+      let total = 0;
+      for (const f of files) {
+        checkFreshness(path.join(dir, f), indexMtime);
+        const v = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')).violations;
+        if (!Array.isArray(v)) fail(metricName, `Missing violations in ${f}`);
+        total += v.length;
+      }
+      console.log(total);
+      break;
+    }
+    const file = 'latency.json';
+    const key = metricName.startsWith('feed') ? 'feedHeadKbGz' : 'backendBeforeInteraction';
+    const filePath = path.resolve(process.cwd(), `test-results/qa/${file}`);
+    checkFreshness(filePath, indexMtime);
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (typeof data[key] !== 'number' || !Number.isFinite(data[key])) fail(metricName, `Missing ${key} in ${file}`);
+      console.log(data[key]);
+    } catch (e) {
+      fail(metricName, e.message);
+    }
     break;
   }
 

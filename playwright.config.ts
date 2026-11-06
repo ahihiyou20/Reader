@@ -32,7 +32,16 @@ export default defineConfig({
     },
     {
       name: 'qa',
-      testMatch: /(responsive|rotation|interactions|motion-quality|loading|reading|visual)\.spec\.ts/,
+      testMatch: /(responsive|rotation|interactions|motion-quality|loading|reading|visual|latency)\.spec\.ts/,
+      use: {
+        browserName: 'chromium',
+        baseURL: 'http://localhost:4173',
+        trace: 'retain-on-failure',
+      },
+    },
+    {
+      name: 'continuity',
+      testMatch: /continuity\.spec\.ts/,
       use: {
         browserName: 'chromium',
         baseURL: 'http://localhost:4173',

@@ -1,7 +1,8 @@
 import { execSync } from 'node:child_process';
 import fs from 'node:fs';
 
-const BASE = 'd9a73f29f6c0feb07204498cb5a4bc73b697c93c'; // origin/main the work is rebased on
+// Round 2 starts from the audit branch (PR #15, audit/ponytail). Round 1 used d9a73f2 on main.
+const BASE = '00b180d'; // ci: Node 24 actions, pin the e2e runner, run CI on bot pull requests
 
 const violations = [];
 
@@ -20,7 +21,23 @@ function checkAllowedPath(file) {
     normalized === 'package.json' ||
     // The user asked for PR previews and merge-to-deploy (2026-11-04).
     normalized === '.github/workflows/ci.yml' ||
-    normalized === '.github/workflows/preview.yml'
+    normalized === '.github/workflows/preview.yml' ||
+    // Round 2 plan: the bot (triage, structured Gemini output, prose lint, Firecrawl) and its workflows.
+    normalized === '.github/workflows/feeds.yml' ||
+    normalized === '.github/workflows/import.yml' ||
+    normalized === '.github/workflows/issue-article.yml' ||
+    // Round 2 plan: the lazy backend entry point and the content lint.
+    normalized === 'lib/backend/index.ts' ||
+    normalized === 'lib/content/lint.ts' ||
+    normalized === 'lib/content/types.ts'
+  ) {
+    return true;
+  }
+  // Round 2 plan: content repair and demotion, the pipeline, the feed head, the local server.
+  if (
+    normalized.startsWith('content/') ||
+    normalized.startsWith('scripts/pipeline/') ||
+    ['scripts/build-content.ts', 'scripts/build-sw.ts', 'scripts/content-lint.ts', 'scripts/serve.mjs'].includes(normalized)
   ) {
     return true;
   }
@@ -62,7 +79,7 @@ for (const file of allChanged) {
 }
 
 // 2. pnpm-lock.yaml must equal BASE; package.json may differ only in scripts.build, which may only gain
-// the conductor-approved cover step (`node scripts/covers.mjs`).
+// the conductor-approved cover step (`node scripts/covers.mjs`), and the round 2 `content:lint` script.
 try {
   const lockDiff = execSync(`git diff ${BASE} -- pnpm-lock.yaml`, { encoding: 'utf8' });
   if (lockDiff.trim().length > 0) {
@@ -72,7 +89,8 @@ try {
   const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
   const baseBuild = basePkg.scripts.build;
   const allowedBuild = baseBuild.replace('pnpm content && ', 'pnpm content && node scripts/covers.mjs && ');
-  const normalize = (p) => JSON.stringify({ ...p, scripts: { ...p.scripts, build: '' } });
+  const normalize = (p) =>
+    JSON.stringify({ ...p, scripts: { ...p.scripts, build: '', 'content:lint': 'tsx scripts/content-lint.ts' } });
   if (normalize(pkg) !== normalize(basePkg)) {
     violations.push('package.json has changed outside scripts.build compared to BASE');
   }

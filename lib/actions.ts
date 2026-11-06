@@ -30,12 +30,21 @@ let started = false;
 let currentUid: string | null = null;
 const userWaiters: Array<(u: AuthUser) => void> = [];
 
+// Likes and saves written by this device but not yet confirmed. Loaded data can predate them
+// (the first tap is what starts the backend), so they are laid over it until the write settles.
+const pending = { likes: new Map<string, boolean>(), saves: new Map<string, boolean>() };
+function withPending(key: 'likes' | 'saves', list: string[]) {
+  const set = new Set(list);
+  pending[key].forEach((on, slug) => (on ? set.add(slug) : set.delete(slug)));
+  return Object.fromEntries([...set].map((s) => [s, true as const]));
+}
+
 function applyData(d: UserData) {
   useUser.setState({
     displayName: d.displayName,
     photoURL: d.photoURL,
-    likes: Object.fromEntries(d.likes.map((s) => [s, true as const])),
-    saves: Object.fromEntries(d.saves.map((s) => [s, true as const])),
+    likes: withPending('likes', d.likes),
+    saves: withPending('saves', d.saves),
     progress: d.progress,
     readDays: d.readDays,
     streak: d.streak,
@@ -114,8 +123,11 @@ function startSession() {
         return;
       }
       const changed = u.uid !== currentUid;
+      // Counts and submissions belong to an account: drop them when it switches. The first user of
+      // the session keeps the deltas of taps made while it loaded (often the tap that started it).
+      const switched = changed && currentUid !== null;
       currentUid = u.uid;
-      useUser.setState({ user: u, ready: true, ...(changed ? { deltas: {}, live: {}, submissions: null } : {}) });
+      useUser.setState({ user: u, ready: true, ...(switched ? { deltas: {}, live: {}, submissions: null } : {}) });
       if (!useUser.getState().displayName && u.displayName) useUser.setState({ displayName: u.displayName });
       if (!useUser.getState().photoURL && u.photoURL) useUser.setState({ photoURL: u.photoURL });
       userWaiters.splice(0).forEach((fn) => fn(u));
@@ -169,7 +181,9 @@ export async function loadLiveCounts(slug: string) {
   if (!c) return;
   useUser.setState((s) => {
     const deltas = { ...s.deltas };
-    delete deltas[slug]; // live counts already include this device's earlier writes
+    // Live counts include this device's finished writes, not one still in flight (the tap that
+    // started the backend), so its delta stays until the next load.
+    if (!pending.likes.has(slug) && !pending.saves.has(slug)) delete deltas[slug];
     return { live: { ...s.live, [slug]: c }, deltas };
   });
 }
@@ -191,12 +205,17 @@ async function toggle(key: 'likes' | 'saves', slug: string, force?: boolean) {
   flip(key, slug, on);
   bump(slug, key, on ? 1 : -1);
   track(key === 'likes' ? 'like' : 'save', { articleId: slug, on });
+  pending[key].set(slug, on);
   try {
     await whenUser();
     const b = await getBackend();
     await (key === 'likes' ? b.setLike(slug, on) : b.setSave(slug, on));
+    if (pending[key].get(slug) === on) pending[key].delete(slug);
+    // Counts loaded while the write was in flight kept its delta; reload them now it has landed.
+    if (liveLoaded.delete(slug)) loadLiveCounts(slug);
     persistCache();
   } catch (e) {
+    if (pending[key].get(slug) === on) pending[key].delete(slug);
     flip(key, slug, !on);
     bump(slug, key, on ? -1 : 1);
     // Refused because this device's list is stale (liked or unliked elsewhere): reload the real state.
@@ -251,13 +270,18 @@ export function rememberSection(slug: string, index: number) {
   clearTimeout(sectionTimers.get(slug));
   sectionTimers.set(
     slug,
-    setTimeout(async () => {
+    setTimeout(() => {
       sectionTimers.delete(slug);
       persistCache();
-      try {
-        await whenUser();
-        await (await getBackend()).saveProgress(slug, index);
-      } catch {}
+      // Scrolling through an article is not a reason to load Firebase: the position waits in the
+      // local cache and is saved once the backend starts for something else.
+      onBackendStart(async () => {
+        try {
+          await whenUser();
+          const latest = useUser.getState().progress[slug]?.lastSection ?? index;
+          await (await getBackend()).saveProgress(slug, latest);
+        } catch {}
+      });
     }, 1000),
   );
 }
