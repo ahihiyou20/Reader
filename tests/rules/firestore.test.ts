@@ -86,6 +86,37 @@ describe('counters', () => {
     b.set(doc(db, 'counters/a1'), { likes: increment(2) }, { merge: true });
     await assertFails(b.commit());
   });
+  it('the same like is counted once', async () => {
+    const db = guest();
+    const b = writeBatch(db);
+    b.set(doc(db, 'users/guest/likes/a1'), { slug: 'a1', createdAt: serverTimestamp() });
+    b.set(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true });
+    await assertSucceeds(b.commit());
+    await assertFails(setDoc(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true }));
+    const again = writeBatch(db);
+    again.set(doc(db, 'users/guest/likes/a1'), { slug: 'a1', createdAt: serverTimestamp() });
+    again.set(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true });
+    await assertFails(again.commit());
+  });
+  it("cannot take away other readers' likes", async () => {
+    await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { likes: 5 }));
+    await assertFails(setDoc(doc(guest(), 'counters/a1'), { likes: increment(-1) }, { merge: true }));
+  });
+  it('account deletion: 9 unlikes with their counters fit in one batch', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      for (let i = 0; i < 9; i++) {
+        await setDoc(doc(ctx.firestore(), `users/guest/likes/s${i}`), { slug: `s${i}`, createdAt: new Date() });
+        await setDoc(doc(ctx.firestore(), `counters/s${i}`), { likes: 1 });
+      }
+    });
+    const db = guest();
+    const b = writeBatch(db);
+    for (let i = 0; i < 9; i++) {
+      b.delete(doc(db, `users/guest/likes/s${i}`));
+      b.set(doc(db, `counters/s${i}`), { likes: increment(-1) }, { merge: true });
+    }
+    await assertSucceeds(b.commit());
+  });
   it('FR-12: anyone signed in can add a share', async () => {
     await assertSucceeds(setDoc(doc(guest(), 'counters/a1'), { shares: increment(1) }, { merge: true }));
     await assertSucceeds(setDoc(doc(guest(), 'counters/a1'), { shares: increment(1) }, { merge: true }));
@@ -129,6 +160,7 @@ describe('comments', () => {
     b.set(doc(db, 'users/guest/commentLikes/a1__c1'), { slug: 'a1', id: 'c1', createdAt: serverTimestamp() });
     b.update(doc(db, 'comments/a1/items/c1'), { likeCount: increment(1) });
     await assertSucceeds(b.commit());
+    await assertFails(updateDoc(doc(db, 'comments/a1/items/c1'), { likeCount: increment(1) }));
   });
   it('only moderators hide comments', async () => {
     await assertFails(updateDoc(doc(guest(), 'comments/a1/items/c1'), { status: 'hidden' }));

@@ -180,7 +180,9 @@ async function toggle(key: 'likes' | 'saves', slug: string, force?: boolean) {
   } catch (e) {
     flip(key, slug, !on);
     bump(slug, key, on ? -1 : 1);
-    toast(errorMessage(e));
+    // Refused because this device's list is stale (liked or unliked elsewhere): reload the real state.
+    if (e instanceof BackendError && e.code === 'permission') refreshUserData(true);
+    else toast(errorMessage(e));
   }
 }
 

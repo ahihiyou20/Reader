@@ -134,17 +134,21 @@ function read<T>(key: string): T | null {
   }
 }
 
-/** Splits writes into batches of at most 450 operations. */
+/** Splits writes into batches of at most `max` operations. */
 class Batcher {
   private batches: WriteBatch[] = [];
   private n = 0;
-  constructor(private db: Firestore) {}
-  get batch(): WriteBatch {
-    if (!this.batches.length || this.n >= 450) {
+  constructor(
+    private db: Firestore,
+    private max = 450,
+  ) {}
+  /** A batch with room for `ops` more writes, so writes the Rules check together stay together. */
+  take(ops = 1): WriteBatch {
+    if (!this.batches.length || this.n + ops > this.max) {
       this.batches.push(writeBatch(this.db));
       this.n = 0;
     }
-    this.n++;
+    this.n += ops;
     return this.batches[this.batches.length - 1];
   }
   async commit() {
@@ -279,8 +283,8 @@ export function createFirebaseBackend(): Backend {
     };
     const b = new Batcher(db);
     // Counters are not touched: the guest's likes were already counted once.
-    for (const slug of g.likes) if (!have.likes.has(slug)) b.batch.set(sub(uid, 'likes', slug), { slug, createdAt: serverTimestamp() });
-    for (const slug of g.saves) if (!have.saves.has(slug)) b.batch.set(sub(uid, 'saves', slug), { slug, createdAt: serverTimestamp() });
+    for (const slug of g.likes) if (!have.likes.has(slug)) b.take().set(sub(uid, 'likes', slug), { slug, createdAt: serverTimestamp() });
+    for (const slug of g.saves) if (!have.saves.has(slug)) b.take().set(sub(uid, 'saves', slug), { slug, createdAt: serverTimestamp() });
     let completed = 0;
     const allProgress = new Map(have.progress);
     for (const [slug, p] of Object.entries(g.progress)) {
@@ -291,11 +295,11 @@ export function createFirebaseBackend(): Backend {
         applyDone: [0, 1, 2].map((i) => Boolean(cur.applyDone?.[i] || p.applyDone?.[i])),
       };
       allProgress.set(slug, merged);
-      b.batch.set(sub(uid, 'progress', slug), merged, { merge: true });
+      b.take().set(sub(uid, 'progress', slug), merged, { merge: true });
     }
     for (const p of allProgress.values()) if (p.completed) completed++;
     for (const [day, slugs] of Object.entries(g.readDays)) {
-      if (slugs.length) b.batch.set(sub(uid, 'readDays', day), { slugs: arrayUnion(...slugs) }, { merge: true });
+      if (slugs.length) b.take().set(sub(uid, 'readDays', day), { slugs: arrayUnion(...slugs) }, { merge: true });
     }
     // Rebuild the streak from the union of reading days, within what the Rules allow (same, +1 or 1).
     const today = localDate();
@@ -307,7 +311,7 @@ export function createFirebaseBackend(): Backend {
       next = { ...rebuilt, longest: Math.max(rebuilt.longest, current.longest, g.streak.longest) };
     else if (rebuilt.current > current.current && rebuilt.lastReadDate)
       next = { current: current.current + 1, longest: Math.max(current.longest, current.current + 1, g.streak.longest), lastReadDate: rebuilt.lastReadDate };
-    b.batch.update(userRef(uid), { streak: next, 'stats.articlesRead': Math.max(completed, userSnap.data()?.stats?.articlesRead ?? 0) });
+    b.take().update(userRef(uid), { streak: next, 'stats.articlesRead': Math.max(completed, userSnap.data()?.stats?.articlesRead ?? 0) });
     await b.commit();
     store(PENDING_MERGE, null);
   }
@@ -733,15 +737,22 @@ export function createFirebaseBackend(): Backend {
       const uid = u.uid;
       try {
         const b = new Batcher(db);
+        // Each counter write costs the Rules one document read and a batch may use 20 (21 pairs are
+        // refused): 9 pairs per batch.
+        const pairs = new Batcher(db, 18);
         const names = ['likes', 'saves', 'progress', 'readDays', 'commentLikes'] as const;
         const snaps = await Promise.all(names.map((n) => getDocs(collection(db, 'users', uid, n))));
         snaps.forEach((snap, i) => {
           for (const d of snap.docs) {
             const name = names[i];
-            b.batch.delete(d.ref);
-            if (name === 'likes' || name === 'saves') b.batch.set(counterRef(d.id), { [name]: increment(-1) }, { merge: true });
+            if (name === 'likes' || name === 'saves') {
+              const batch = pairs.take(2);
+              batch.delete(d.ref);
+              batch.set(counterRef(d.id), { [name]: increment(-1) }, { merge: true });
+            } else b.take().delete(d.ref);
           }
         });
+        await pairs.commit();
         await b.commit();
         if (!u.isAnonymous) {
           const mine = await getDocs(query(collectionGroup(db, 'items'), where('uid', '==', uid)));
@@ -749,9 +760,10 @@ export function createFirebaseBackend(): Backend {
           for (const d of mine.docs) {
             const slug = d.ref.parent.parent?.id;
             if (deleteComments) {
-              c.batch.delete(d.ref);
-              if (slug && d.data().status === 'visible') c.batch.set(counterRef(slug), { comments: increment(-1) }, { merge: true });
-            } else c.batch.update(d.ref, { displayName: 'Deleted user', photoURL: null });
+              const batch = c.take(2);
+              batch.delete(d.ref);
+              if (slug && d.data().status === 'visible') batch.set(counterRef(slug), { comments: increment(-1) }, { merge: true });
+            } else c.take().update(d.ref, { displayName: 'Deleted user', photoURL: null });
           }
           await c.commit();
         }
