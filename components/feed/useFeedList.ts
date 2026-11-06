@@ -11,9 +11,9 @@ import { useUser } from '@/stores/user';
  * The list stays stable while reading (it does not re-sort when progress changes).
  */
 export function useFeedList(override?: FeedItem[]): FeedItem[] | undefined {
-  const { data } = useFeed();
-  const category = useUI((s) => s.category);
   const startSlug = useUI((s) => s.startSlug);
+  const { data } = useFeed(startSlug);
+  const category = useUI((s) => s.category);
   const version = useUI((s) => s.feedVersion);
   const ready = useUser((s) => s.ready);
   // Once the reader's progress is known, re-sort a single time if they have not moved yet.

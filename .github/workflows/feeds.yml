@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 concurrency:
   group: content-bot
   cancel-in-progress: false
@@ -21,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with: { fetch-depth: 0 }
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v5
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
       - name: Prepare the bot branch
@@ -64,6 +65,7 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           SITE_URL: ${{ vars.SITE_URL }}
           LIMIT: ${{ inputs.limit || '20' }}
         run: pnpm tsx scripts/pipeline/feeds.ts --limit "$LIMIT" --report "$RUNNER_TEMP/report.md"
@@ -89,3 +91,5 @@ jobs:
             gh pr create --base main --head "$BRANCH" --title "Bài mới từ nguồn tự động" --body-file "$RUNNER_TEMP/body.md" \
               || echo "::warning::Could not open the pull request. Enable Settings → Actions → General → Allow GitHub Actions to create and approve pull requests."
           fi
+          # Pushes made with GITHUB_TOKEN start no pull_request runs, so ask for the checks explicitly.
+          gh workflow run ci.yml --ref "$BRANCH"

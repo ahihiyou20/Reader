@@ -168,5 +168,7 @@ export interface Category {
 
 export interface FeedFile {
   builtAt: string;
+  /** Number of items in the full feed (feed-head.json holds only the first ones). */
+  total?: number;
   items: FeedItem[];
 }

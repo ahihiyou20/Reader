@@ -1,7 +1,7 @@
 'use client';
 // Static JSON (public/data) with a tiny in-memory cache. The files change only on deploy,
 // so each one is fetched once per session; failures can be retried.
-import { useCallback, useSyncExternalStore } from 'react';
+import { useCallback, useEffect, useState, useSyncExternalStore } from 'react';
 import type MiniSearch from 'minisearch';
 import type { ArticleClient, Category, FeedFile } from '@/lib/content/types';
 import { SEARCH_OPTIONS, type SearchDoc } from '@/lib/search';
@@ -73,9 +73,30 @@ function useResource<T>(key: string | null, fn: () => Promise<T>) {
 }
 
 export const fetchFeed = () => getJson<FeedFile>('/data/feed.json');
+const fetchFeedHead = () => getJson<FeedFile>('/data/feed-head.json');
 export const fetchArticle = (slug: string) => getJson<ArticleClient>(`/data/articles/${encodeURIComponent(slug)}.json`);
 
-export const useFeed = () => useResource('feed', fetchFeed);
+/**
+ * The feed: the small head file first (the first ranked items, preloaded in the HTML), then the full
+ * list once the browser is idle. The full list starts with the same items, so nothing on screen moves.
+ */
+export function useFeed(needSlug?: string | null) {
+  const head = useResource('feed-head', fetchFeedHead);
+  const [wantFull, setWantFull] = useState(() => cache.get('feed')?.status === 'success');
+  const headComplete = head.data !== undefined && (head.data.total ?? head.data.items.length) <= head.data.items.length;
+  // A link to an article outside the head needs the full list before anything is shown, or the
+  // feed would open on another article and jump.
+  const missing = Boolean(needSlug && head.data && !headComplete && !head.data.items.some((i) => i.slug === needSlug));
+  useEffect(() => {
+    if (wantFull || !head.data || headComplete) return;
+    const idle = (window as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+    const id = idle ? idle(() => setWantFull(true), { timeout: 3000 }) : window.setTimeout(() => setWantFull(true), 1500);
+    return () => (idle ? (window as unknown as { cancelIdleCallback: (n: number) => void }).cancelIdleCallback(id) : clearTimeout(id));
+  }, [wantFull, head.data, headComplete]);
+  const full = useResource(wantFull || missing ? 'feed' : null, fetchFeed);
+  if (missing && !full.data) return { ...full, data: undefined };
+  return full.data ? full : head;
+}
 export const useCategories = () => useResource('categories', () => getJson<Category[]>('/data/categories.json'));
 export const useTerms = () => useResource('terms', () => getJson<string[]>('/data/terms.json'));
 export function useArticle(slug: string | undefined, enabled = true) {

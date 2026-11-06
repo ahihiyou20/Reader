@@ -99,7 +99,8 @@ export interface Backend {
   ensureProfile(lang: Lang): Promise<void>;
   setLike(slug: string, on: boolean): Promise<void>;
   setSave(slug: string, on: boolean): Promise<void>;
-  addShare(slug: string): Promise<void>;
+  /** Counts the reader's share of this article once; false when it was already counted. */
+  addShare(slug: string): Promise<boolean>;
   getCounts(slug: string): Promise<Counts | null>;
   listComments(slug: string, cursor?: unknown | null, pageSize?: number): Promise<CommentPage>;
   watchComments(slug: string, onChange: (items: CommentDoc[]) => void, pageSize?: number): () => void;

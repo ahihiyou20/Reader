@@ -1,6 +1,7 @@
 {
   "maxPerDay": 20,
   "maxAgeDays": 14,
+  "triage": { "minScore": 6, "perCategory": 3, "dupThreshold": 0.6 },
   "feeds": [
     { "id": "nasa-science", "name": "NASA Science", "url": "https://science.nasa.gov/feed/", "category": "science", "mode": "adapt", "max": 3, "exclude": "^APOD|proposer|solicitation|ROSES|opportunit|funding|job", "enabled": true },
     { "id": "owid", "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "category": "auto", "mode": "adapt", "max": 2, "enabled": true },
@@ -14,8 +15,7 @@
       "mode": "adapt",
       "max": 1,
       "resolve": "wikipedia-featured",
-      "enabled": true
-    },
+      "enabled": true, "minScore": 8 },
     { "id": "usgs", "name": "U.S. Geological Survey", "url": "https://www.usgs.gov/news/all/feed", "category": "science", "mode": "adapt", "max": 1, "enabled": true },
     { "id": "psyche", "name": "Psyche", "url": "https://psyche.co/feed", "category": "psychology", "mode": "summary", "max": 2, "enabled": true },
     { "id": "quanta", "name": "Quanta Magazine", "url": "https://www.quantamagazine.org/feed/", "category": "science", "mode": "summary", "max": 1, "enabled": true },

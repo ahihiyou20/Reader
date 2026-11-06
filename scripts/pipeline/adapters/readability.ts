@@ -2,7 +2,7 @@
 // NIH institutes, Global Voices, VOA): Mozilla Readability extracts the article body.
 import { Readability } from '@mozilla/readability';
 import { JSDOM } from 'jsdom';
-import { httpText } from '../lib';
+import { fetchPageHtml } from '../firecrawl';
 import { clean, htmlToSections } from './html';
 import type { AdapterContext, Imported, ImportedSection } from './types';
 
@@ -27,7 +27,7 @@ export interface Page {
 
 /** Fetch a page and extract its article body, byline and date (no licence check). */
 export async function readPage(url: string, opts: { plain?: boolean } = {}): Promise<Page> {
-  const html = await httpText(url);
+  const html = await fetchPageHtml(url);
   const dom = new JSDOM(html, { url });
   const doc = dom.window.document;
   const meta = (sel: string) => doc.querySelector(sel)?.getAttribute('content')?.trim() || undefined;

@@ -173,8 +173,8 @@ Messages (chat) và Notifications: ở MVP chỉ có giao diện và empty state
 | Việc | Cách làm | Rules bảo vệ |
 |------|----------|--------------|
 | Like/save | Transaction: tạo/xoá `users/{uid}/likes/{slug}` + `counters/{slug}.likes ± 1` | Chỉ ±1, khớp với việc doc like tồn tại hay không (`existsAfter`) |
-| Share | `counters/{slug}.shares + 1` | Chỉ +1 |
-| Bình luận | Batch: tạo comment + `counters/{slug}.comments + 1` | Tài khoản Google; 1–500 ký tự |
+| Share | Batch: tạo `users/{uid}/shares/{slug}` + `counters/{slug}.shares + 1` | Chỉ +1 khi doc share vừa được tạo, nên mỗi người chỉ được tính một lần cho mỗi bài |
+| Bình luận | Batch: tạo comment + `counters/{slug}.comments + 1` kèm `lastComment` = id comment; xoá hoặc ẩn comment đang hiện thì −1 cùng `lastComment` | Tài khoản Google; 1–500 ký tự; bộ đếm chỉ đổi khi đúng comment đó được tạo, xoá hoặc ẩn trong cùng batch |
 | Streak | Client tính `nextStreak` (02 §4.4), batch ghi `users/{uid}.streak`, `readDays/{date}`, `progress/{slug}`, `stats` | Streak chỉ giữ nguyên, +1, hoặc về 1 |
 | Gửi bài (+) | Tạo `submissions/{id}` với `status: pending` | Tài khoản Google; giới hạn độ dài |
 | Gộp dữ liệu khách → Google, xoá tài khoản | 07 §3.2, §7 | Chỉ ghi/xoá dữ liệu của chính mình |
@@ -241,14 +241,16 @@ service cloud.firestore {
 
     match /counters/{slug} {
       allow read: if true;
-      allow create: if signedIn() && request.resource.data.keys().hasOnly(['likes', 'saves', 'shares', 'comments']);
+      // Bản đầy đủ, đang chạy: firestore.rules (added/removed, commentDelta).
+      allow create: if signedIn() && request.resource.data.keys().hasOnly(['likes', 'saves', 'shares', 'comments', 'lastComment']);
       allow update: if signedIn() && (
            (onlyDelta('likes', 1)  && existsAfter(myDoc('likes', slug)))
         || (onlyDelta('likes', -1) && !existsAfter(myDoc('likes', slug)))
         || (onlyDelta('saves', 1)  && existsAfter(myDoc('saves', slug)))
         || (onlyDelta('saves', -1) && !existsAfter(myDoc('saves', slug)))
-        || onlyDelta('shares', 1)
-        || (isGoogle() && (onlyDelta('comments', 1) || onlyDelta('comments', -1))));
+        || (onlyDelta('shares', 1) && added('shares', slug))
+        || commentDelta(slug, 1)
+        || commentDelta(slug, -1));
     }
 
     match /comments/{slug}/items/{id} {

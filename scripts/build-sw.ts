@@ -26,7 +26,7 @@ async function main() {
         (f.startsWith('/_next/static/') && /\.(js|css|woff2)$/.test(f)) ||
         ['/index.html', '/404.html', '/privacy.html', '/terms.html', '/manifest.webmanifest'].includes(f) ||
         f.startsWith('/icons/') ||
-        ['/data/feed.json', '/data/categories.json', '/data/terms.json'].includes(f),
+        ['/data/feed-head.json', '/data/feed.json', '/data/categories.json', '/data/terms.json'].includes(f),
     );
   const hash = crypto.createHash('sha1');
   for (const f of shell.sort()) hash.update(f + (await fs.stat(path.join(OUT, f))).size);

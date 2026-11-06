@@ -1,6 +1,7 @@
 // NFR-08 events. Page views come from Cloudflare Web Analytics (no cookies). Custom events go to
 // Firebase Analytics only when a measurement id is configured; otherwise they are dropped
 // (and printed in development).
+import { onBackendStart } from '@/lib/backend';
 import { env } from '@/lib/env';
 
 export type EventName =
@@ -30,15 +31,18 @@ export function track(name: EventName, payload: Payload = {}) {
   queue.push([name, payload]);
   if (loading) return;
   loading = true;
-  Promise.all([import('firebase/app'), import('firebase/analytics')])
-    .then(async ([{ getApps, getApp }, a]) => {
-      if (!(await a.isSupported())) return;
-      // The backend creates the default app; wait for it instead of creating a second one.
-      for (let i = 0; i < 50 && !getApps().length; i++) await new Promise((r) => setTimeout(r, 200));
-      if (!getApps().length) return;
-      const analytics = a.getAnalytics(getApp());
-      sink = (n, p) => a.logEvent(analytics, n as string, p);
-      for (const [n, p] of queue.splice(0)) sink(n, p);
-    })
-    .catch(() => {});
+  // Events wait in the queue until the backend has started (it creates the Firebase app), so the
+  // analytics SDK never loads during the first paint.
+  onBackendStart(() =>
+    Promise.all([import('firebase/app'), import('firebase/analytics')])
+      .then(async ([{ getApps, getApp }, a]) => {
+        if (!(await a.isSupported())) return;
+        for (let i = 0; i < 50 && !getApps().length; i++) await new Promise((r) => setTimeout(r, 200));
+        if (!getApps().length) return;
+        const analytics = a.getAnalytics(getApp());
+        sink = (n, p) => a.logEvent(analytics, n as string, p);
+        for (const [n, p] of queue.splice(0)) sink(n, p);
+      })
+      .catch(() => {}),
+  );
 }

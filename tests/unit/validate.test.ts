@@ -61,6 +61,17 @@ describe('validateArticle (docs/05 step 7)', () => {
   it('flags unknown categories', () => {
     expect(validateArticle(seed, { categories: ['science'] }).ok).toBe(false);
   });
+  it('rejects Vietnamese titles and headings that are runaway text or carry markup', () => {
+    const a = structuredClone(seed);
+    a.title.vi = `${a.title.vi} `.repeat(20);
+    expect(validateArticle(a).issues.map((i) => i.field)).toContain('title.vi');
+    a.title.vi = 'Quyết định tốt hơn [y:ngay]';
+    expect(validateArticle(a).issues.map((i) => i.field)).toContain('title.vi');
+    const b = structuredClone(seed);
+    b.sections[0].heading_en = 'Covers';
+    b.sections[0].heading_vi = 'Một số số báo có hình khỏa thân trên bìa, do một họa sĩ nổi tiếng vẽ.';
+    expect(validateArticle(b).issues.map((i) => i.field)).toContain('sections.0.heading_vi');
+  });
 });
 
 describe('toClient', () => {
