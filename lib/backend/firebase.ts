@@ -504,10 +504,18 @@ export function createFirebaseBackend(): Backend {
     },
 
     async addShare(slug) {
-      me();
-      await setDoc(counterRef(slug), { shares: increment(1) }, { merge: true }).catch((e) => {
+      const u = me();
+      const b = writeBatch(db);
+      b.set(sub(u.uid, 'shares', slug), { slug, createdAt: serverTimestamp() });
+      b.set(counterRef(slug), { shares: increment(1) }, { merge: true });
+      try {
+        await b.commit();
+        return true;
+      } catch (e) {
+        // The Rules refuse a second share document: this reader's share was counted before.
+        if (mapError(e).code === 'permission') return false;
         throw mapError(e);
-      });
+      }
     },
 
     async getCounts(slug) {
@@ -571,7 +579,7 @@ export function createFirebaseBackend(): Backend {
       const b = writeBatch(db);
       const data = { uid: u.uid, displayName: name, photoURL: u.photoURL ?? null, text, lang, status: 'visible', likeCount: 0, createdAt: serverTimestamp() };
       b.set(ref, data);
-      b.set(counterRef(slug), { comments: increment(1) }, { merge: true });
+      b.set(counterRef(slug), { comments: increment(1), lastComment: ref.id }, { merge: true });
       await b.commit().catch((e) => {
         throw mapError(e);
       });
@@ -580,19 +588,24 @@ export function createFirebaseBackend(): Backend {
 
     async deleteComment(slug, id) {
       requireGoogle();
-      const b = writeBatch(db);
-      b.delete(doc(db, 'comments', slug, 'items', id));
-      b.set(counterRef(slug), { comments: increment(-1) }, { merge: true });
-      await b.commit().catch((e) => {
+      const ref = doc(db, 'comments', slug, 'items', id);
+      try {
+        // The counter counts visible comments, so a hidden one leaves it as it is.
+        const visible = (await getDoc(ref)).data()?.status === 'visible';
+        const b = writeBatch(db);
+        b.delete(ref);
+        if (visible) b.set(counterRef(slug), { comments: increment(-1), lastComment: id }, { merge: true });
+        await b.commit();
+      } catch (e) {
         throw mapError(e);
-      });
+      }
     },
 
     async hideComment(slug, id) {
       requireGoogle();
       const b = writeBatch(db);
       b.update(doc(db, 'comments', slug, 'items', id), { status: 'hidden' });
-      b.set(counterRef(slug), { comments: increment(-1) }, { merge: true });
+      b.set(counterRef(slug), { comments: increment(-1), lastComment: id }, { merge: true });
       await b.commit().catch((e) => {
         throw mapError(e);
       });
@@ -697,10 +710,11 @@ export function createFirebaseBackend(): Backend {
       const u = me();
       const dump = async (name: string) =>
         Object.fromEntries((await getDocs(collection(db, 'users', u.uid, name))).docs.map((d) => [d.id, d.data()]));
-      const [profile, likes, saves, progress, readDays, commentLikes, comments, submissions] = await Promise.all([
+      const [profile, likes, saves, shares, progress, readDays, commentLikes, comments, submissions] = await Promise.all([
         getDoc(userRef(u.uid)),
         dump('likes'),
         dump('saves'),
+        dump('shares'),
         dump('progress'),
         dump('readDays'),
         dump('commentLikes'),
@@ -713,6 +727,7 @@ export function createFirebaseBackend(): Backend {
         profile: profile.data() ?? null,
         likes,
         saves,
+        shares,
         progress,
         readDays,
         commentLikes,
@@ -740,7 +755,7 @@ export function createFirebaseBackend(): Backend {
         // Each counter write costs the Rules one document read and a batch may use 20 (21 pairs are
         // refused): 9 pairs per batch.
         const pairs = new Batcher(db, 18);
-        const names = ['likes', 'saves', 'progress', 'readDays', 'commentLikes'] as const;
+        const names = ['likes', 'saves', 'shares', 'progress', 'readDays', 'commentLikes'] as const;
         const snaps = await Promise.all(names.map((n) => getDocs(collection(db, 'users', uid, n))));
         snaps.forEach((snap, i) => {
           for (const d of snap.docs) {
@@ -757,14 +772,18 @@ export function createFirebaseBackend(): Backend {
         if (!u.isAnonymous) {
           const mine = await getDocs(query(collectionGroup(db, 'items'), where('uid', '==', uid)));
           const c = new Batcher(db);
+          // Like the unlike pairs above: each counter write reads its comment, 9 pairs per batch.
+          const commentPairs = new Batcher(db, 18);
           for (const d of mine.docs) {
             const slug = d.ref.parent.parent?.id;
-            if (deleteComments) {
-              const batch = c.take(2);
+            if (!deleteComments) c.take().update(d.ref, { displayName: 'Deleted user', photoURL: null });
+            else if (slug && d.data().status === 'visible') {
+              const batch = commentPairs.take(2);
               batch.delete(d.ref);
-              if (slug && d.data().status === 'visible') batch.set(counterRef(slug), { comments: increment(-1) }, { merge: true });
-            } else c.take().update(d.ref, { displayName: 'Deleted user', photoURL: null });
+              batch.set(counterRef(slug), { comments: increment(-1), lastComment: d.id }, { merge: true });
+            } else c.take().delete(d.ref);
           }
+          await commentPairs.commit();
           await c.commit();
         }
         await deleteDoc(userRef(uid));

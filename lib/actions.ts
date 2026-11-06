@@ -216,7 +216,8 @@ export async function shareArticle(slug: string, title: string) {
   track('share', { articleId: slug });
   try {
     await whenUser();
-    await (await getBackend()).addShare(slug);
+    // A reader's shares of one article count once; take back the optimistic +1 for a repeat.
+    if (!(await (await getBackend()).addShare(slug))) bump(slug, 'shares', -1);
   } catch {
     /* the share itself worked; the counter is best effort */
   }

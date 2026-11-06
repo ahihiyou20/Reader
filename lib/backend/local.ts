@@ -12,6 +12,7 @@ interface Store {
   profile: { displayName: string | null; photoURL: string | null; lang?: Lang; streak: Streak; articlesRead: number };
   likes: string[];
   saves: string[];
+  shares: string[];
   progress: UserData['progress'];
   readDays: Record<string, string[]>;
   commentLikes: string[];
@@ -28,6 +29,7 @@ function fresh(): Store {
     profile: { displayName: null, photoURL: null, streak: { ...EMPTY_STREAK }, articlesRead: 0 },
     likes: [],
     saves: [],
+    shares: [],
     progress: {},
     readDays: {},
     commentLikes: [],
@@ -134,8 +136,10 @@ export function createLocalBackend(): Backend {
       save();
     },
     async addShare(slug) {
+      if (!toggle(s.shares, slug, true)) return false;
       bump(slug, 'shares', 1);
       save();
+      return true;
     },
     async getCounts() {
       return null;

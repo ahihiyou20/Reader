@@ -22,6 +22,22 @@ service cloud.firestore {
     // (existsAfter on a document written in the same batch is free), so clients send at most 9 pairs.
     function added(sub, id) { return !exists(myDoc(sub, id)) && existsAfter(myDoc(sub, id)); }
     function removed(sub, id) { return exists(myDoc(sub, id)) && !existsAfter(myDoc(sub, id)); }
+    // The comment counter counts visible comments. Each write that moves it names the comment in
+    // `lastComment`: +1 when that comment is created in the same write, -1 when a visible one is
+    // deleted or hidden in it.
+    function commentDoc(slug, id) { return /databases/$(db)/documents/comments/$(slug)/items/$(id); }
+    function commentCreated(slug, id) { return !exists(commentDoc(slug, id)) && existsAfter(commentDoc(slug, id)); }
+    function commentRemoved(slug, id) {
+      return exists(commentDoc(slug, id)) && get(commentDoc(slug, id)).data.status == 'visible'
+        && (!existsAfter(commentDoc(slug, id)) || getAfter(commentDoc(slug, id)).data.status == 'hidden');
+    }
+    function commentDelta(slug, d) {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['comments', 'lastComment'])
+        && request.resource.data.comments == resource.data.get('comments', 0) + d
+        && request.resource.data.comments >= 0
+        && request.resource.data.lastComment is string
+        && (d == 1 ? commentCreated(slug, request.resource.data.lastComment) : commentRemoved(slug, request.resource.data.lastComment));
+    }
 
     // ---------- Users ----------
     function validStreak(s) {
@@ -60,6 +76,11 @@ service cloud.firestore {
         allow read, delete: if isMe(uid);
         allow create, update: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
       }
+      // One per article the reader has shared: the share counter counts readers, not taps.
+      match /shares/{slug} {
+        allow read, delete: if isMe(uid);
+        allow create: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
+      }
       match /progress/{slug} {
         allow read, delete: if isMe(uid);
         allow create, update: if isMe(uid)
@@ -82,18 +103,20 @@ service cloud.firestore {
     // ---------- Counters ----------
     match /counters/{slug} {
       allow read: if true;
-      allow create: if signedIn() && request.resource.data.keys().size() == 1 && (
-           (request.resource.data.get('likes', 0) == 1 && added('likes', slug))
-        || (request.resource.data.get('saves', 0) == 1 && added('saves', slug))
-        || request.resource.data.get('shares', 0) == 1
-        || (request.resource.data.get('comments', 0) == 1 && isGoogle()));
+      allow create: if signedIn() && (
+           (request.resource.data.keys().hasOnly(['likes']) && request.resource.data.likes == 1 && added('likes', slug))
+        || (request.resource.data.keys().hasOnly(['saves']) && request.resource.data.saves == 1 && added('saves', slug))
+        || (request.resource.data.keys().hasOnly(['shares']) && request.resource.data.shares == 1 && added('shares', slug))
+        || (request.resource.data.keys().hasOnly(['comments', 'lastComment']) && request.resource.data.comments == 1
+            && request.resource.data.lastComment is string && commentCreated(slug, request.resource.data.lastComment)));
       allow update: if signedIn() && (
            (delta('likes', 1) && added('likes', slug))
         || (delta('likes', -1) && removed('likes', slug))
         || (delta('saves', 1) && added('saves', slug))
         || (delta('saves', -1) && removed('saves', slug))
-        || delta('shares', 1)
-        || (isGoogle() && (delta('comments', 1) || delta('comments', -1))));
+        || (delta('shares', 1) && added('shares', slug))
+        || commentDelta(slug, 1)
+        || commentDelta(slug, -1));
     }
 
     // ---------- Comments ----------
