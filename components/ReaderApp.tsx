@@ -30,7 +30,8 @@ const SearchPanel = dynamic(() => import('./overlays/SearchPanel').then((m) => m
 const Sheets = dynamic(() => import('./overlays/Sheets').then((m) => m.Sheets), { ssr: false });
 const MessagesPanel = dynamic(() => import('./overlays/SocialPanels').then((m) => m.MessagesPanel), { ssr: false });
 const NotificationsPanel = dynamic(() => import('./overlays/SocialPanels').then((m) => m.NotificationsPanel), { ssr: false });
-/** Long enough to stay clear of loading and the first swipes; a reader's tap starts it sooner. */
+/** Long enough to stay clear of loading and the first swipes; a reader's tap starts it sooner.
+ *  The hidden panels are mounted at the same moment. */
 const BACKEND_IDLE_START_MS = 8000;
 const motionFeatures = () => import('@/lib/motion-features').then((m) => m.default);
 
@@ -77,9 +78,14 @@ function Shell({
   const [heart, setHeart] = useState<{ x: number; y: number; id: number } | null>(null);
   const [fading, setFading] = useState(false);
   const [deferred, setDeferred] = useState(false);
+  // The panels behind the top and bottom bars are loaded and mounted ahead of time once the page has
+  // been quiet, like the backend, so their code and render do not compete with the first screens (a
+  // finger on a bar button starts loading that panel); opening one mounts them at once.
+  const [panelsReady, setPanelsReady] = useState(false);
   const hasOverlay = useUI((s) => s.overlays.length > 0 || s.sheet !== null || s.langMenu);
   const hasPanel = useUI((s) => s.overlays.length > 0);
   const shouldMountDeferred = deferred || hasOverlay;
+  const shouldMountPanels = panelsReady || hasOverlay;
   const previewItems = useRef<FeedItem[] | undefined>(undefined);
   if (preview && previewItems.current?.[0] !== preview.item) {
     setArticleData(preview.article);
@@ -125,13 +131,20 @@ function Shell({
     // The backend starts on the reader's first action (lib/backend), on a pending sign-in redirect,
     // or once the page has been quiet for a while, so that sign-in state and live counts are ready.
     if (sessionStorage.getItem('reader.redirecting')) getBackend();
-    const quietStart = setTimeout(() => runIdle(() => getBackend()), BACKEND_IDLE_START_MS);
+    const quietStart = setTimeout(
+      () =>
+        runIdle(() => {
+          getBackend();
+          preloadOverlays();
+          setPanelsReady(true);
+        }),
+      BACKEND_IDLE_START_MS,
+    );
     runIdle(() => {
       restoreCachedUser();
       if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production' && !preview) {
         navigator.serviceWorker.register('/sw.js').catch(() => {});
       }
-      preloadOverlays();
     });
 
     const offline = () => useUI.getState().showToast(translate(useUI.getState().lang, 'offline'));
@@ -141,6 +154,17 @@ function Shell({
       window.removeEventListener('offline', offline);
     };
   }, [initialSlug, preview]);
+
+  // Escape closes a panel the reader opened before its code arrived (each panel handles Escape
+  // itself once mounted).
+  useEffect(() => {
+    const key = (e: KeyboardEvent) => {
+      const ui = useUI.getState();
+      if (e.key === 'Escape' && ui.overlays.length && !document.querySelector('.panel')) ui.closeOverlay();
+    };
+    window.addEventListener('keydown', key);
+    return () => window.removeEventListener('keydown', key);
+  }, []);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -233,14 +257,18 @@ function Shell({
           <>
             <KeyHints />
             <LangMenu />
+            <Sheets />
+            <Toast />
+          </>
+        )}
+        {shouldMountPanels && (
+          <>
             <ExplorePanel />
             <SearchPanel />
             <MessagesPanel />
             <NotificationsPanel />
             <ProfilePanel />
             <CreatePanel />
-            <Sheets />
-            <Toast />
           </>
         )}
         {children}
