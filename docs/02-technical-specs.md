@@ -162,7 +162,7 @@ interface UserDoc {
 
 ### 4.3 Comments
 - Đọc trang đầu `comments/{slug}/items` theo `createdAt desc` khi mở view Comments & Apply; thích/ẩn/xoá bình luận theo Rules (06 §3).
-- Tạo comment: batch gồm comment mới + `increment(1)` cho `counters/{slug}.comments`; text 1–500 ký tự, render text thuần.
+- Tạo comment: batch gồm comment mới + `increment(1)` cho `counters/{slug}.comments` cùng `lastComment` = id comment (Rules kiểm comment đó vừa được tạo); xoá hoặc ẩn comment đang hiện thì −1 theo cách tương tự; text 1–500 ký tự, render text thuần.
 
 ### 4.4 Streak
 
