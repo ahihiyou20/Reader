@@ -1,0 +1,111 @@
+{
+  "slug": "moores-law-1965-forecast-industry-target",
+  "status": "published",
+  "publishAt": "2026-11-06T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "Moore's law",
+    "semiconductors",
+    "computing",
+    "Gordon Moore",
+    "technology history"
+  ],
+  "title": {
+    "en": "Moore’s law: a 1965 forecast that became an industry target",
+    "vi": "Định luật Moore: dự báo năm 1965 trở thành mục tiêu của cả ngành"
+  },
+  "hook": {
+    "en": "In 1965 Gordon Moore, a research director at a semiconductor company, predicted how fast the number of components on a chip would grow. The forecast became known as Moore’s law. It was an observation, not a guarantee, and the industry turned it into a target it worked to meet.",
+    "vi": "Năm 1965, Gordon Moore, giám đốc nghiên cứu của một công ty bán dẫn, dự đoán số linh kiện trên một con chip sẽ tăng nhanh đến mức nào. Dự đoán ấy được biết đến với tên Định luật Moore. Đó là một quan sát chứ không phải lời đảm bảo, và cả ngành đã biến nó thành một mục tiêu để theo đuổi."
+  },
+  "sections": [
+    {
+      "heading_en": "A forecast for a magazine anniversary",
+      "heading_vi": "Một dự báo cho số kỷ niệm của tạp chí",
+      "body_en": "The idea had earlier roots. In 1959, Douglas Engelbart studied the projected downscaling of integrated circuits, and he presented his findings at a 1960 conference where Moore was in the audience {moore-wiki}. In 1965 Moore, then director of research and development at Fairchild Semiconductor, was asked by Electronics magazine to contribute to its thirty-fifth anniversary issue {moore-wiki}. His answer was a brief article titled “Cramming more components onto integrated circuits” {moore-wiki}. Moore later described the forecast as a wild extrapolation of a trend he expected to continue for about ten years {moore-wiki}. [y:He speculated that by 1975 a single chip could hold as many as 65,000 components.] {moore-wiki}",
+      "body_vi": "Ý tưởng này đã có từ trước. Năm 1959, Douglas Engelbart nghiên cứu về việc thu nhỏ kích thước mạch tích hợp theo dự kiến, và ông trình bày kết quả tại một hội nghị năm 1960 có Moore ngồi trong khán phòng {moore-wiki}. Năm 1965, Moore, khi đó là giám đốc nghiên cứu và phát triển của Fairchild Semiconductor, được tạp chí Electronics mời viết cho số kỷ niệm ba mươi lăm năm của tạp chí {moore-wiki}. Câu trả lời của ông là một bài viết ngắn mang tên “Nhồi thêm linh kiện vào mạch tích hợp” {moore-wiki}. Sau này Moore mô tả dự báo ấy là một phép ngoại suy liều lĩnh về một xu hướng mà ông kỳ vọng sẽ kéo dài khoảng mười năm {moore-wiki}. [y:Ông suy đoán rằng đến năm 1975, một con chip có thể chứa tới 65.000 linh kiện.] {moore-wiki}"
+    },
+    {
+      "heading_en": "Doubling every year, then every two",
+      "heading_vi": "Gấp đôi mỗi năm, rồi mỗi hai năm",
+      "body_en": "Moore’s 1965 observation was that the number of components per integrated circuit had been doubling every year {moore-wiki}. In 1975, at the IEEE International Electron Devices Meeting, he revised the forecast. Complexity would keep doubling each year until about 1980, and after that it would double approximately every two years {moore-wiki}. In the later version the growth is a compound annual rate of 41 per cent {moore-wiki}. The term “Moore’s law” came shortly afterwards, popularised by Carver Mead, a Caltech professor {moore-wiki}. A historian of the law invokes Stigler’s law of eponymy to note that many people in the field already knew about the regular doubling {moore-wiki}.",
+      "body_vi": "Quan sát năm 1965 của Moore là số linh kiện trên mỗi mạch tích hợp đã tăng gấp đôi mỗi năm {moore-wiki}. Năm 1975, tại Hội nghị Quốc tế về Thiết bị Điện tử của IEEE, ông điều chỉnh dự báo. Độ phức tạp sẽ tiếp tục tăng gấp đôi mỗi năm đến khoảng năm 1980, và sau đó tăng gấp đôi khoảng mỗi hai năm {moore-wiki}. Trong phiên bản sau, tốc độ tăng là 41% mỗi năm theo lãi kép {moore-wiki}. Thuật ngữ “Định luật Moore” xuất hiện ngay sau đó, được phổ biến bởi Carver Mead, giáo sư tại Caltech {moore-wiki}. Một sử gia về định luật này viện dẫn định luật Stigler về tên gọi để chỉ ra rằng nhiều người trong ngành đã biết về sự tăng gấp đôi đều đặn {moore-wiki}."
+    },
+    {
+      "heading_en": "Why the pace held",
+      "heading_vi": "Vì sao tốc độ được duy trì",
+      "body_en": "In his 1975 talk, Moore listed several factors behind the exponential growth. One was the arrival of metal–oxide–semiconductor (MOS) technology. Another was that die sizes grew while defect densities fell, so manufacturers could work with larger areas without losing yield. The third was finer minimum dimensions. He also pointed to what he called “circuit and device cleverness” {moore-wiki}. [p:The growth came from several improvements at once, not from a single breakthrough.]",
+      "body_vi": "Trong bài nói năm 1975, Moore liệt kê nhiều yếu tố đứng sau sự tăng trưởng theo cấp số nhân. Một yếu tố là sự xuất hiện của công nghệ bán dẫn oxit kim loại (MOS). Một yếu tố khác là kích thước khuôn chip lớn dần trong khi mật độ khuyết tật giảm, nên nhà sản xuất có thể làm việc trên diện tích lớn hơn mà không mất hiệu suất. Yếu tố thứ ba là các kích thước tối thiểu được thu nhỏ hơn. Ông cũng nhắc đến điều mà ông gọi là “sự khéo léo của mạch và linh kiện” {moore-wiki}. [p:Sự tăng trưởng đến từ nhiều cải tiến cùng lúc, chứ không phải từ một đột phá duy nhất.]"
+    },
+    {
+      "heading_en": "From forecast to industry target",
+      "heading_vi": "Từ dự báo thành mục tiêu của ngành",
+      "body_en": "Moore’s law eventually came to be widely accepted as a goal for the semiconductor industry {moore-wiki}. The prediction became a target for miniaturisation in the industry, and it has had wide influence in many areas of technological change {gordon-wiki}. Later, David House combined these effects and deduced that chip performance would roughly double every 18 months {moore-wiki}. Because of Dennard scaling, the same gains came without higher power, so the energy efficiency of silicon chips also roughly doubled every 18 months {moore-wiki}. Dennard scaling ended in the 2000s {moore-wiki}. That figure describes performance, while Moore’s original observation concerned the number of components. The two claims are related, but they are not the same.",
+      "body_vi": "Định luật Moore về sau được chấp nhận rộng rãi như một mục tiêu của ngành bán dẫn {moore-wiki}. Dự báo trở thành mục tiêu thu nhỏ linh kiện trong ngành, và có ảnh hưởng rộng tới nhiều lĩnh vực thay đổi công nghệ {gordon-wiki}. Sau này, David House kết hợp các tác động trên và suy ra hiệu năng chip sẽ tăng gấp đôi khoảng mỗi 18 tháng {moore-wiki}. Nhờ hiệu ứng Dennard, các cải tiến này không kéo theo mức tiêu thụ điện cao hơn, nên hiệu quả năng lượng của chip silicon cũng khoảng tăng gấp đôi mỗi 18 tháng {moore-wiki}. Hiệu ứng Dennard kết thúc vào những năm 2000 {moore-wiki}. Con số này mô tả hiệu năng, trong khi quan sát gốc của Moore nói về số lượng linh kiện. Hai nhận định có liên quan, nhưng không giống nhau."
+    },
+    {
+      "heading_en": "A slowdown since about 2010",
+      "heading_vi": "Chậm lại từ khoảng năm 2010",
+      "body_en": "Transistor counts grew by more than seven orders of magnitude in less than five decades {moore-wiki}. Microprocessor architects report that since around 2010, semiconductor advancement has slowed industry-wide below the pace predicted by Moore’s law {moore-wiki}. [y:The slowdown is measured against the predicted pace, not against the 1965 figure.] Brian Krzanich, a former chief executive of Intel, cited Moore’s 1975 revision as a precedent for the current deceleration {moore-wiki}.",
+      "body_vi": "Số bóng bán dẫn đã tăng hơn bảy bậc độ lớn trong chưa đầy năm thập kỷ {moore-wiki}. Các kiến trúc sư bộ vi xử lý báo cáo rằng từ khoảng năm 2010, tiến bộ bán dẫn trên toàn ngành đã chậm hơn nhịp độ mà Định luật Moore dự báo {moore-wiki}. [y:Sự chậm lại được đo bằng nhịp độ dự báo, chứ không phải bằng con số năm 1965.] Brian Krzanich, cựu giám đốc điều hành của Intel, đã viện dẫn bản điều chỉnh năm 1975 của Moore như một tiền lệ cho sự chậm lại hiện nay {moore-wiki}."
+    },
+    {
+      "heading_en": "The man and the company",
+      "heading_vi": "Con người và công ty",
+      "body_en": "Gordon Earle Moore, born on 3 January 1929, died on 24 March 2023. He was an American businessman, scientist and engineer, and he co-founded Fairchild Semiconductor and Intel {gordon-wiki}. In July 1968 Robert Noyce and Moore founded NM Electronics, which later became Intel {gordon-wiki}. He was elected to the National Academy of Engineering in 1976 for work on semiconductor devices, from transistors to microprocessors {gordon-wiki}. He was chairman and chief executive of Intel from April 1979 until April 1987 {gordon-wiki}. The historical record notes that Moore’s empirical evidence did not imply the trend would continue {moore-wiki}. [p:A forecast describes what has happened so far, and it has to be tested again as the evidence changes.]",
+      "body_vi": "Gordon Earle Moore sinh ngày 3 tháng 1 năm 1929 và mất ngày 24 tháng 3 năm 2023. Ông là doanh nhân, nhà khoa học và kỹ sư người Mỹ, đồng sáng lập Fairchild Semiconductor và Intel {gordon-wiki}. Tháng 7 năm 1968, Robert Noyce và Moore thành lập NM Electronics, sau này trở thành Intel {gordon-wiki}. Năm 1976, ông được bầu vào Viện Hàn lâm Kỹ thuật Quốc gia Mỹ nhờ đóng góp cho linh kiện bán dẫn, từ bóng bán dẫn đến bộ vi xử lý {gordon-wiki}. Từ tháng 4 năm 1979 đến tháng 4 năm 1987, ông là chủ tịch kiêm giám đốc điều hành của Intel {gordon-wiki}. Theo ghi nhận lịch sử, bằng chứng thực nghiệm của Moore không hàm ý rằng xu hướng sẽ tiếp tục {moore-wiki}. [p:Một dự báo mô tả những gì đã xảy ra, và phải được kiểm chứng lại khi bằng chứng thay đổi.]"
+    },
+    {
+      "heading_en": "A trend that became a law",
+      "heading_vi": "Một xu hướng trở thành định luật",
+      "body_en": "Moore’s 1965 prediction has held since 1975, and it has since become known as a law {moore-wiki}. The record describes the longer-term rate as more uncertain, though there is no reason to believe it will not stay nearly constant for at least ten years {moore-wiki}. [y:The name “law” describes a long-running pattern, not a guarantee.]",
+      "body_vi": "Dự báo năm 1965 của Moore đã đúng từ năm 1975 đến nay, và từ đó được gọi là định luật {moore-wiki}. Tài liệu mô tả tốc độ dài hạn là khó đoán hơn, dù không có lý do để tin rằng nó sẽ không gần như ổn định trong ít nhất mười năm {moore-wiki}. [y:Chữ “luật” mô tả một quy luật kéo dài, chứ không phải lời bảo đảm.]"
+    }
+  ],
+  "keyPoint": {
+    "en": "Gordon Moore’s 1965 observation was that the number of components per chip doubled every year. He revised it in 1975 to every two years, and the industry adopted the pattern as a goal. Since about 2010, advancement has run below that pace.",
+    "vi": "Quan sát năm 1965 của Gordon Moore cho rằng số linh kiện trên mỗi chip tăng gấp đôi mỗi năm. Năm 1975 ông điều chỉnh thành mỗi hai năm, và ngành đã lấy nhịp độ đó làm mục tiêu. Từ khoảng năm 2010, tiến bộ đã chậm hơn nhịp độ ấy."
+  },
+  "applySteps": {
+    "en": [
+      "Find published transistor counts for one chip from the 1970s and one from today, then estimate how many doublings separate them.",
+      "Write one sentence on what would have to keep holding for the doubling pattern to continue.",
+      "List one technology prediction you have heard and mark which parts are measured and which are assumed."
+    ],
+    "vi": [
+      "Tìm số bóng bán dẫn đã công bố của một chip từ thập niên 1970 và một chip ngày nay, rồi ước tính có bao nhiêu lần tăng gấp đôi nằm giữa chúng.",
+      "Viết một câu về điều gì phải tiếp tục đúng để mô hình tăng gấp đôi còn kéo dài.",
+      "Liệt kê một dự báo công nghệ bạn từng nghe và đánh dấu phần nào đã được đo, phần nào là giả định."
+    ]
+  },
+  "references": [
+    {
+      "id": "moore-wiki",
+      "label": "Moore’s law, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Moore%27s_law"
+    },
+    {
+      "id": "gordon-wiki",
+      "label": "Gordon Moore, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gordon_Moore"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/moores-law-1965-forecast-industry-target.webp",
+    "provider": "unsplash",
+    "author": "Sebastian Muller",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/VLdaxYyXJvw"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACdMoRwACnK1dzkBu9QcyIyGduqAP7r3xY0nz05wzw7embwN4cMQWtmIPFC/eVKCOmp8GytCX7Exlu0peg+a8+y+SjH1zMiIJarcUluXPxMXcUJOpM4KvvVR0F8w1uS3khRmPfxFJ9Iebw2SUsUOky5lwjoDKQQN+/ks4dfJMUzIy5vZ99Enhkp/08wWkc66EAA",
+  "dominant": "#695a5c"
+}
