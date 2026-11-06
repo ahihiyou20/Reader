@@ -31,6 +31,14 @@ export const LIMITS = {
   summaryMaxWords: 450,
 };
 
+/**
+ * A Vietnamese title or heading renders as plain text: one short line, no Reader markup. Gemini
+ * sometimes returns a runaway paragraph, markup or a swapped section body in these fields.
+ */
+export function isCleanLine(vi: string, en: string): boolean {
+  return !/[*[\]{}\n\r]|_(?:vi|en)\b/.test(vi) && vi.length <= en.length * 2 + 40;
+}
+
 export function totalWords(a: Pick<ArticleSource, 'hook' | 'sections' | 'references'>): number {
   const refs = Object.fromEntries((a.references ?? []).map((r) => [r.id, r.label]));
   return [a.hook.en, ...a.sections.map((s) => s.body_en)].reduce((n, s) => n + countWords(plainText(s, refs)), 0);
@@ -137,6 +145,11 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
     });
   }
   if (countWords(a.title.en) > LIMITS.titleWords) warn('title.en', `Title is longer than ${LIMITS.titleWords} words`);
+  if (a.title.vi && !isCleanLine(a.title.vi, a.title.en)) err('title.vi', 'Vietnamese title must be one short plain line (no markup)');
+  a.sections.forEach((s, i) => {
+    if (s.heading_vi && !isCleanLine(s.heading_vi, s.heading_en ?? ''))
+      err(`sections.${i}.heading_vi`, 'Vietnamese heading must be one short plain line (no markup)');
+  });
   if (!a.keyPoint?.en?.trim()) warn('keyPoint', 'Add a KEY POINT');
   else {
     const n = countWords(plainText(a.keyPoint.en, refIds));

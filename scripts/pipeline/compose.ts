@@ -6,7 +6,11 @@
 // Every result is checked: markup must parse, highlights must not change the words.
 import type { ArticleSource, HlColor } from '../../lib/content/types';
 import { parseRich, plainText } from '../../lib/content/markup';
+import { isCleanLine } from '../../lib/content/validate';
 import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiJson } from './gemini';
+
+/** A Vietnamese title or heading from Gemini is kept only when it is one clean line. */
+const viLine = (vi: string | undefined, en: string) => (vi?.trim() && isCleanLine(vi.trim(), en) ? vi.trim() : undefined);
 
 const S = { type: 'STRING' } as const;
 const LIST = { type: 'ARRAY', items: S } as const;
@@ -89,7 +93,7 @@ export async function enrich(a: ArticleSource, opts: { categories?: string[] } =
       ? 'highlights: in each section pick at most 2 short phrases (2–7 words) worth noticing — a key number, a surprising finding, a term. Copy each phrase EXACTLY as it appears in that section body (same characters, no markup), with the 0-based section index; color yellow for facts and numbers, pink for the main idea, green for a practical tip.'
       : '',
     want.vi
-      ? `Translate title, hook and every section (heading and body) into Vietnamese. ${VI_STYLE} Return sections_vi in the same order and count as the input.${want.highlights ? ' Wrap the Vietnamese words matching each of your highlights in the same [y:…]/[p:…]/[g:…] markup.' : ''}`
+      ? `Translate title, hook and every section (heading and body) into Vietnamese. ${VI_STYLE} title_vi and each heading_vi are plain text on one line, about as long as the English, with no markup and no bracketed English terms. Return sections_vi in the same order and count as the input.${want.highlights ? ' Wrap the Vietnamese words matching each of your highlights in the same [y:…]/[p:…]/[g:…] markup.' : ''}`
       : '',
     want.summary
       ? 'This article must be republished word for word, so it is not translated. Write summary_vi: Reader\'s own Vietnamese summary of it in 60–120 words, in your own words, with no quotation longer than 8 words.'
@@ -140,14 +144,19 @@ export async function enrich(a: ArticleSource, opts: { categories?: string[] } =
     }
   }
   if (want.vi) {
-    a.title.vi ??= s.title_vi?.trim() || undefined;
+    a.title.vi ??= viLine(s.title_vi, a.title.en);
     a.hook.vi ??= safeMarkup(s.hook_vi, refs);
     if (s.sections_vi?.length === a.sections.length)
-      a.sections = a.sections.map((sec, i) => ({
-        ...sec,
-        heading_vi: sec.heading_vi ?? (sec.heading_en ? s.sections_vi![i].heading_vi?.trim() || undefined : undefined),
-        body_vi: sec.body_vi ?? safeMarkup(s.sections_vi![i].body_vi, refs),
-      }));
+      a.sections = a.sections.map((sec, i) => {
+        let { heading_vi: h, body_vi: b } = s.sections_vi![i];
+        // The model sometimes swaps a section's heading and body.
+        if (sec.heading_en && h && b && !viLine(h, sec.heading_en) && viLine(b, sec.heading_en)) [h, b] = [b, h];
+        return {
+          ...sec,
+          heading_vi: sec.heading_vi ?? (sec.heading_en ? viLine(h, sec.heading_en) : undefined),
+          body_vi: sec.body_vi ?? safeMarkup(b, refs),
+        };
+      });
     fields.push('vi');
     if (!a.origin.changes.includes('translated to Vietnamese') && a.origin.group !== 4) a.origin.changes.push('translated to Vietnamese');
   }
@@ -206,16 +215,20 @@ export function applyWritten(a: ArticleSource, w: Written, categories?: string[]
   const category = pickCategory(w.category, categories);
   if (category) a.category = category;
   const refs = new Map(a.references.map((r) => [r.id, r.label]));
-  a.title = { en: w.title_en.trim(), ...(w.title_vi?.trim() ? { vi: w.title_vi.trim() } : {}) };
+  const titleVi = viLine(w.title_vi, w.title_en.trim());
+  a.title = { en: w.title_en.trim(), ...(titleVi ? { vi: titleVi } : {}) };
   a.hook = { en: safeMarkup(w.hook_en, refs)!, ...(w.hook_vi?.trim() ? { vi: safeMarkup(w.hook_vi, refs) } : {}) };
   a.sections = w.sections
     .filter((s) => s.body_en?.trim())
-    .map((s) => ({
-      ...(s.heading_en?.trim() ? { heading_en: s.heading_en.trim() } : {}),
-      ...(s.heading_en?.trim() && s.heading_vi?.trim() ? { heading_vi: s.heading_vi.trim() } : {}),
-      body_en: safeMarkup(s.body_en, refs)!,
-      ...(s.body_vi?.trim() ? { body_vi: safeMarkup(s.body_vi, refs) } : {}),
-    }));
+    .map((s) => {
+      const headingVi = s.heading_en?.trim() ? viLine(s.heading_vi, s.heading_en.trim()) : undefined;
+      return {
+        ...(s.heading_en?.trim() ? { heading_en: s.heading_en.trim() } : {}),
+        ...(headingVi ? { heading_vi: headingVi } : {}),
+        body_en: safeMarkup(s.body_en, refs)!,
+        ...(s.body_vi?.trim() ? { body_vi: safeMarkup(s.body_vi, refs) } : {}),
+      };
+    });
   if (w.keyPoint_en?.trim()) a.keyPoint = { en: safeMarkup(w.keyPoint_en, refs)!, ...(w.keyPoint_vi?.trim() ? { vi: safeMarkup(w.keyPoint_vi, refs) } : {}) };
   if (w.applySteps_en?.length === 3) a.applySteps = { en: w.applySteps_en, ...(w.applySteps_vi?.length === 3 ? { vi: w.applySteps_vi } : {}) };
   if (w.tags?.length) a.tags = w.tags.map((t) => t.toLowerCase().trim()).filter(Boolean).slice(0, 5);
