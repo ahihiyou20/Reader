@@ -28,6 +28,13 @@ function checkAllowedPath(file) {
     normalized === '.github/workflows/issue-article.yml' ||
     // Round 2 plan: the lazy backend entry point and the content lint.
     normalized === 'lib/backend/index.ts' ||
+    // PR #15 audit item 8 (user asked to continue it, 2026-11-06): comment and share counters
+    // in the Rules and the client writes that match them, plus the CMS script hash.
+    normalized === 'firestore.rules' ||
+    normalized === 'lib/backend/firebase.ts' ||
+    normalized === 'lib/backend/local.ts' ||
+    normalized === 'lib/backend/types.ts' ||
+    normalized === 'public/cms/index.html' ||
     normalized === 'lib/content/lint.ts' ||
     normalized === 'lib/content/types.ts'
   ) {
