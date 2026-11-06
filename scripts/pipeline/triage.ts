@@ -76,7 +76,11 @@ const SUMMARY_RULES: Array<[RegExp, string]> = [
 export function hardReject(c: Candidate): string | null {
   const title = c.title.trim();
   for (const [re, why] of TITLE_RULES) if (re.test(title)) return why;
-  if (c.summary) for (const [re, why] of SUMMARY_RULES) if (re.test(c.summary)) return why;
+  // Summary rules only judge the first sentence when it defines the title itself ("X is a 1987 film…").
+  const first = c.summary?.replace(/<[^>]+>/g, ' ').trim().split(/(?<=[.!?])\s/)[0] ?? '';
+  const subject = title.replace(/\s*\(.*\)$/, '').toLowerCase().slice(0, 16);
+  if (subject && first.toLowerCase().replace(/^the /, '').startsWith(subject.replace(/^the /, '')))
+    for (const [re, why] of SUMMARY_RULES) if (re.test(first)) return why;
   if (title.split(/\s+/).filter(Boolean).length < 4 && !c.summary?.trim()) return 'title too short and no summary';
   return null;
 }
