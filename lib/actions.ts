@@ -274,16 +274,25 @@ export function rememberSection(slug: string, index: number) {
       sectionTimers.delete(slug);
       persistCache();
       // Scrolling through an article is not a reason to load Firebase: the position waits in the
-      // local cache and is saved once the backend starts for something else.
-      onBackendStart(async () => {
-        try {
-          await whenUser();
-          const latest = useUser.getState().progress[slug]?.lastSection ?? index;
-          await (await getBackend()).saveProgress(slug, latest);
-        } catch {}
-      });
+      // local cache and is saved once the backend starts for something else (once per article).
+      if (!progressToSave.size) onBackendStart(saveProgressNow);
+      progressToSave.add(slug);
     }, 1000),
   );
+}
+
+const progressToSave = new Set<string>();
+async function saveProgressNow() {
+  const slugs = [...progressToSave];
+  progressToSave.clear();
+  try {
+    await whenUser();
+    const b = await getBackend();
+    for (const slug of slugs) {
+      const last = useUser.getState().progress[slug]?.lastSection;
+      if (last !== undefined) await b.saveProgress(slug, last);
+    }
+  } catch {}
 }
 
 const completedToday = new Set<string>();
