@@ -1,6 +1,7 @@
 'use client';
 import { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
+import { LazyMotion } from 'framer-motion';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { setArticleData } from '@/lib/data';
 import { startSession } from '@/lib/actions';
@@ -28,6 +29,7 @@ const SearchPanel = dynamic(() => import('./overlays/SearchPanel').then((m) => m
 const Sheets = dynamic(() => import('./overlays/Sheets').then((m) => m.Sheets), { ssr: false });
 const MessagesPanel = dynamic(() => import('./overlays/SocialPanels').then((m) => m.MessagesPanel), { ssr: false });
 const NotificationsPanel = dynamic(() => import('./overlays/SocialPanels').then((m) => m.NotificationsPanel), { ssr: false });
+const motionFeatures = () => import('@/lib/motion-features').then((m) => m.default);
 
 export interface PreviewData {
   item: FeedItem;
@@ -189,24 +191,28 @@ function Shell({
     }
   }, [ready, fading]);
 
+  // Both branches share the LazyMotion root, so React keeps the poster's <img> (the LCP element) when the
+  // app takes over instead of remounting the whole tree.
   if (!ready || !items) {
     return (
-      <div className="app">
-        {poster ? (
-          <Poster {...poster} />
-        ) : (
-          <div className="splash" aria-busy="true">
-            <div className="splash-logo" aria-hidden="true">
-              R
+      <LazyMotion features={motionFeatures}>
+        <div className="app">
+          {poster ? (
+            <Poster {...poster} />
+          ) : (
+            <div className="splash" aria-busy="true">
+              <div className="splash-logo" aria-hidden="true">
+                R
+              </div>
             </div>
-          </div>
-        )}
-        {children}
-      </div>
+          )}
+          {children}
+        </div>
+      </LazyMotion>
     );
   }
   return (
-    <>
+    <LazyMotion features={motionFeatures}>
       <div className="app" ref={app} data-has-panel={hasPanel ? 'true' : undefined}>
         {poster && <Poster {...poster} fading={fading} />}
         <TopBar />
@@ -230,6 +236,6 @@ function Shell({
         {children}
       </div>
       {shouldMountDeferred && <Ambient items={items} />}
-    </>
+    </LazyMotion>
   );
 }

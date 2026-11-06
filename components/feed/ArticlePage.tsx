@@ -1,6 +1,6 @@
 'use client';
 import { MDiv } from '@/components/Motion';
-import { motion, useTransform } from 'framer-motion';
+import { m, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useArticle } from '@/lib/data';
@@ -85,7 +85,7 @@ export function ArticlePage({
           <MDiv className="layer eng" style={{ opacity: eng }} />
           <div className="grain" />
         </div>
-        <motion.div className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
+        <m.div className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
           <MDiv
             className="view cover"
             data-view={view === 0 ? 'cover' : undefined}
@@ -118,7 +118,7 @@ export function ArticlePage({
           >
             {built && article && <EngageView article={article} item={item} active={active} view={view} />}
           </MDiv>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

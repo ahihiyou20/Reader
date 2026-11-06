@@ -3,7 +3,7 @@
 // Gesture rules: docs/02 §5 and docs/03 §5 — axis lock at 10 px, 1:1 tracking, momentum projection,
 // velocity handoff, rubber-band at the edges, interruptible at any time.
 
-import { motion, useTransform } from 'framer-motion';
+import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
@@ -319,7 +319,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
 
   return (
     <div className="feed" ref={ref} role="feed" aria-busy={false} aria-label={t('appName')}>
-      <motion.div className="track" style={{ y }} ref={(el) => registerFade('feed', el)}>
+      <m.div className="track" style={{ y }} ref={(el) => registerFade('feed', el)}>
         {pages.map((i) =>
           i < items.length ? (
             <ArticlePage
@@ -335,7 +335,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
             <EndCard key="__end" index={i} top={`${i * 100}%`} active={i === index} />
           ),
         )}
-      </motion.div>
+      </m.div>
     </div>
   );
 }
