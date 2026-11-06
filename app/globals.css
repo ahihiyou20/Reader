@@ -884,6 +884,12 @@ select {
   font-weight: 500;
   cursor: pointer;
 }
+/* An inline span ignores transform, so the shared press scale never shows here: answer with the tint. */
+.cite:active,
+.cite[data-pressed='true'] {
+  background: rgba(255, 255, 255, 0.28);
+  transition-duration: 0ms;
+}
 .kp {
   position: relative;
   overflow: hidden;
