@@ -36,6 +36,7 @@ jobs:
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: pnpm tsx scripts/pipeline/issue.ts --report "$RUNNER_TEMP/report.md"
       - name: Open the pull request

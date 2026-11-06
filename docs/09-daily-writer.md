@@ -13,8 +13,17 @@ own pull request; this routine does not touch it.
 - Avoid topics already covered: compare titles, slugs and tags against `content/articles/*.json`.
 - Mix kinds: a recent finding, an explainer of how something works, a piece of history, a practical
   topic backed by research, a data story.
+- Use the same bar as the feed bot (`scripts/pipeline/triage.ts`): pick a topic only if a curious
+  general reader would still find it worth knowing in a year and the article can explain a mechanism
+  or evidence. Skip announcements, events, personnel news, awards, sports seasons, film or album
+  plots, and biographies of people a general reader has no reason to know.
 
 ## 2. Find sources
+
+- **Read every source page through Firecrawl** (the `firecrawl` connector attached to the routine:
+  its search and scrape tools return clean markdown and get past JavaScript and bot walls). Use
+  WebFetch/WebSearch only when Firecrawl fails or its monthly credits run out, and say so in the
+  commit message. The feed bot does the same through the Firecrawl API (`scripts/pipeline/firecrawl.ts`).
 
 - Each article rests on **2–4 real sources you have opened and read**: peer-reviewed papers (with
   DOI), government agencies (NIH, CDC, NASA, NOAA, USGS, NIST), Our World in Data, Wikipedia for
@@ -57,7 +66,9 @@ Shape (match `content/articles/how-habits-form.json`, a group 4 article):
 - `slug`: lowercase words joined by hyphens, at most 60 characters, unique.
 
 Revise each article once against the skills before saving: read it as a first-time reader, cut
-filler, check every claim against its source.
+filler, check every claim against its source. Then run
+`pnpm tsx scripts/pipeline/prose-lint-cli.ts content/articles/<slug>.json` and rewrite every flagged
+sentence (banned words, stock phrases, repeated phrases, extra em dashes, markup in titles).
 
 ## 4. Covers
 

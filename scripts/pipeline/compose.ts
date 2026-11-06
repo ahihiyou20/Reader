@@ -5,18 +5,24 @@
 //   fromText()    — group 4: text an editor pasted into the issue form, shaped into a Reader article.
 // Every result is checked: markup must parse, highlights must not change the words.
 import type { ArticleSource, HlColor } from '../../lib/content/types';
-import { parseRich, plainText } from '../../lib/content/markup';
+import { z } from 'zod';
+import { countWords, parseRich, plainText } from '../../lib/content/markup';
 import { isCleanLine } from '../../lib/content/validate';
-import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiJson } from './gemini';
+import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiStructured } from './gemini';
 
 /** A Vietnamese title or heading from Gemini is kept only when it is one clean line. */
 const viLine = (vi: string | undefined, en: string) => (vi?.trim() && isCleanLine(vi.trim(), en) ? vi.trim() : undefined);
 
-const S = { type: 'STRING' } as const;
-const LIST = { type: 'ARRAY', items: S } as const;
-const SECTION_VI = { type: 'OBJECT', properties: { heading_vi: S, body_vi: S }, required: ['body_vi'] } as const;
-const SECTION = { type: 'OBJECT', properties: { heading_en: S, heading_vi: S, body_en: S, body_vi: S }, required: ['body_en', 'body_vi'] } as const;
-const HIGHLIGHT = { type: 'OBJECT', properties: { section: { type: 'INTEGER' }, text: S, color: { type: 'STRING', enum: ['yellow', 'pink', 'green'] } }, required: ['section', 'text'] } as const;
+// Reply schemas: sent to Gemini as JSON Schema and checked with zod before anything is written.
+const words = (s: string) => countWords(plainText(s));
+const wordRange = (min: number, max: number, label: string) =>
+  z.string().refine((s) => words(s) >= min && words(s) <= max, `${label} must be ${min}–${max} words`);
+const plainLine = (maxWords: number, label: string) =>
+  z.string().refine((s) => !/[*[\]{}\n]/.test(s) && words(s) >= 1 && words(s) <= maxWords, `${label}: one plain line of at most ${maxWords} words, no markup`);
+const viLineOf = (en: string, label: string) => z.string().refine((s) => isCleanLine(s.trim(), en), `${label}: one plain Vietnamese line about as long as "${en.slice(0, 80)}", no markup`);
+const threeSteps = z.array(z.string().refine((s) => words(s) >= 3 && words(s) <= 30, 'each step is 3–30 words')).length(3);
+const tagList = z.array(z.string().min(2).max(40)).min(3).max(5);
+const categoryOf = (ids?: string[]) => (ids?.length ? z.enum(ids as [string, ...string[]]) : z.string());
 
 const CODE: Record<HlColor, string> = { yellow: 'y', pink: 'p', green: 'g' };
 
@@ -69,6 +75,44 @@ interface EnrichOut {
   category?: string;
 }
 
+function enrichSchema(a: ArticleSource, categories?: string[]): z.ZodType<EnrichOut> {
+  return z.object({
+    title_vi: viLineOf(a.title.en, 'title_vi').optional(),
+    hook_vi: z.string().min(1).optional(),
+    sections_vi: z
+      .preprocess(
+        // The model sometimes swaps a section's heading and body: put them back before checking.
+        (list) =>
+          Array.isArray(list)
+            ? list.map((x: { heading_vi?: string; body_vi?: string }, i) => {
+                const en = a.sections[i]?.heading_en;
+                const swapped = en && x?.heading_vi && x?.body_vi && !viLine(x.heading_vi, en) && viLine(x.body_vi, en);
+                return swapped ? { ...x, heading_vi: x.body_vi, body_vi: x.heading_vi } : x;
+              })
+            : list,
+        z.array(z.object({ heading_vi: z.string().optional(), body_vi: z.string().min(1) })).length(a.sections.length),
+      )
+      .superRefine((list, ctx) =>
+        list.forEach((x, i) => {
+          const en = a.sections[i];
+          if (x.heading_vi && !isCleanLine(x.heading_vi.trim(), en?.heading_en ?? ''))
+            ctx.addIssue({ code: 'custom', path: [i, 'heading_vi'], message: `heading_vi ${i}: one plain line translating "${en?.heading_en ?? ''}", not the body` });
+          if (en && words(x.body_vi) < words(en.body_en) * 0.4)
+            ctx.addIssue({ code: 'custom', path: [i, 'body_vi'], message: `body_vi ${i} must translate the whole body of section ${i}` });
+        }),
+      )
+      .optional(),
+    keyPoint_en: wordRange(40, 60, 'keyPoint_en').optional(),
+    keyPoint_vi: z.string().min(1).optional(),
+    applySteps_en: threeSteps.optional(),
+    applySteps_vi: threeSteps.optional(),
+    highlights: z.array(z.object({ section: z.number().int().min(0), text: z.string().min(3).max(80), color: z.enum(['yellow', 'pink', 'green']).optional() })).optional(),
+    tags: tagList.optional(),
+    summary_vi: wordRange(60, 120, 'summary_vi').optional(),
+    category: categoryOf(categories).optional(),
+  });
+}
+
 const categoryRule = (ids: string[]) => `category: the one id from this list that fits the article best: ${ids.join(', ')}.`;
 const pickCategory = (c: string | undefined, ids: string[] | undefined) => (c && ids?.includes(c.trim().toLowerCase()) ? c.trim().toLowerCase() : undefined);
 
@@ -107,22 +151,7 @@ export async function enrich(a: ArticleSource, opts: { categories?: string[] } =
   ]
     .filter(Boolean)
     .join('\n\n');
-  const s = await geminiJson<EnrichOut>(prompt, {
-    type: 'OBJECT',
-    properties: {
-      title_vi: S,
-      hook_vi: S,
-      sections_vi: { type: 'ARRAY', items: SECTION_VI },
-      keyPoint_en: S,
-      keyPoint_vi: S,
-      applySteps_en: LIST,
-      applySteps_vi: LIST,
-      highlights: { type: 'ARRAY', items: HIGHLIGHT },
-      tags: LIST,
-      summary_vi: S,
-      category: S,
-    },
-  });
+  const { value: s } = await geminiStructured<EnrichOut>({ prompt, schema: enrichSchema(a, opts.categories) });
   const category = pickCategory(s.category, opts.categories);
   if (category) a.category = category;
   const refs = new Map(a.references.map((r) => [r.id, r.label]));
@@ -148,9 +177,7 @@ export async function enrich(a: ArticleSource, opts: { categories?: string[] } =
     a.hook.vi ??= safeMarkup(s.hook_vi, refs);
     if (s.sections_vi?.length === a.sections.length)
       a.sections = a.sections.map((sec, i) => {
-        let { heading_vi: h, body_vi: b } = s.sections_vi![i];
-        // The model sometimes swaps a section's heading and body.
-        if (sec.heading_en && h && b && !viLine(h, sec.heading_en) && viLine(b, sec.heading_en)) [h, b] = [b, h];
+        const { heading_vi: h, body_vi: b } = s.sections_vi![i];
         return {
           ...sec,
           heading_vi: sec.heading_vi ?? (sec.heading_en ? viLine(h, sec.heading_en) : undefined),
@@ -192,23 +219,40 @@ export interface Written {
   category?: string;
 }
 
-const WRITTEN_SCHEMA = {
-  type: 'OBJECT',
-  properties: {
-    title_en: S,
-    title_vi: S,
-    hook_en: S,
-    hook_vi: S,
-    sections: { type: 'ARRAY', items: SECTION },
-    keyPoint_en: S,
-    keyPoint_vi: S,
-    applySteps_en: LIST,
-    applySteps_vi: LIST,
-    tags: LIST,
-    category: S,
-  },
-  required: ['title_en', 'hook_en', 'sections'],
-};
+/** A whole article written by Gemini (groups 4 and 5); `hook` and section counts depend on the job. */
+function writtenSchema(opts: { hook: [number, number]; sections: [number, number]; categories?: string[] }): z.ZodType<Written> {
+  return z
+    .object({
+      title_en: plainLine(12, 'title_en'),
+      title_vi: z.string().optional(),
+      hook_en: wordRange(opts.hook[0], opts.hook[1], 'hook_en'),
+      hook_vi: z.string().optional(),
+      sections: z
+        .array(z.object({ heading_en: plainLine(10, 'heading_en').optional(), heading_vi: z.string().optional(), body_en: z.string().min(1), body_vi: z.string().optional() }))
+        .min(opts.sections[0])
+        .max(opts.sections[1]),
+      keyPoint_en: wordRange(40, 60, 'keyPoint_en').optional(),
+      keyPoint_vi: z.string().optional(),
+      applySteps_en: threeSteps.optional(),
+      applySteps_vi: threeSteps.optional(),
+      tags: tagList.optional(),
+      category: categoryOf(opts.categories).optional(),
+    })
+    .superRefine((w, ctx) => {
+      if (w.title_vi && !isCleanLine(w.title_vi.trim(), w.title_en))
+        ctx.addIssue({ code: 'custom', path: ['title_vi'], message: 'title_vi: one plain Vietnamese line about as long as title_en, no markup' });
+      w.sections.forEach((x, i) => {
+        if (x.heading_vi && !isCleanLine(x.heading_vi.trim(), x.heading_en ?? ''))
+          ctx.addIssue({ code: 'custom', path: ['sections', i, 'heading_vi'], message: `sections ${i} heading_vi: one plain line translating heading_en` });
+      });
+    });
+}
+
+/** A reply missing the core fields cannot become an article. */
+function whole(w: Partial<Written>, dropped: string[]): Written {
+  if (!w.title_en || !w.hook_en || !w.sections?.length) throw new Error(`Gemini reply unusable after a retry (${dropped.join(', ')})`);
+  return w as Written;
+}
 
 /** Apply a Gemini-written article to a draft, checking its markup. */
 export function applyWritten(a: ArticleSource, w: Written, categories?: string[]) {
@@ -252,7 +296,8 @@ export async function summarize(page: { title: string; publisher: string; text: 
   ]
     .filter(Boolean)
     .join('\n\n');
-  return geminiJson<Written>(prompt, WRITTEN_SCHEMA);
+  const r = await geminiStructured<Written>({ prompt, schema: writtenSchema({ hook: [35, 80], sections: [2, 5], categories }) });
+  return whole(r.value, r.dropped);
 }
 
 /** Group 4: an editor's own text (from the issue form), lightly shaped into a Reader article. */
@@ -273,5 +318,50 @@ export async function fromText(text: string, hint?: string, categories?: string[
   ]
     .filter(Boolean)
     .join('\n\n');
-  return geminiJson<Written>(prompt, WRITTEN_SCHEMA);
+  const r = await geminiStructured<Written>({ prompt, schema: writtenSchema({ hook: [30, 90], sections: [1, 7], categories }) });
+  return whole(r.value, r.dropped);
+}
+
+/** Read or write an article prose field by its proseFields() path, e.g. `sections.2.body_vi`. */
+function fieldRef(a: ArticleSource, p: string): { get: () => string | undefined; set: (v: string) => void } | undefined {
+  const m = p.match(/^(title|hook|keyPoint)\.(en|vi)$/);
+  if (m) {
+    const [, key, lang] = m as unknown as [string, 'title' | 'hook' | 'keyPoint', 'en' | 'vi'];
+    return { get: () => a[key]?.[lang], set: (v) => (a[key] = { ...a[key]!, [lang]: v }) };
+  }
+  const s = p.match(/^sections\.(\d+)\.(heading_en|heading_vi|body_en|body_vi)$/);
+  const sec = s ? a.sections[Number(s[1])] : undefined;
+  if (!s || !sec) return undefined;
+  const key = s[2] as 'heading_en' | 'heading_vi' | 'body_en' | 'body_vi';
+  return { get: () => sec[key], set: (v) => (sec[key] = v) };
+}
+
+/**
+ * One Gemini pass that rewrites only the fields prose-lint flagged. A rewrite is kept only when its
+ * markup parses, a plain field stays plain, and the field no longer trips the same rules.
+ */
+export async function reviseProse(a: ArticleSource, findings: Array<{ field: string; rule: string; text: string }>): Promise<number> {
+  const paths = [...new Set(findings.map((f) => f.field))].filter((p) => fieldRef(a, p)?.get());
+  if (!paths.length) return 0;
+  const refs = new Map(a.references.map((r) => [r.id, r.label]));
+  const prompt = [
+    'You edit Reader articles. Rewrite only the fields below to remove the listed problems. Keep the meaning, every number, name and date, the language of each field, and its Reader markup.',
+    `Reader markup: ${MARKUP_RULES}`,
+    WRITING_RULES,
+    ...paths.map((p) => `Field ${p} — problems: ${findings.filter((f) => f.field === p).map((f) => `${f.rule} "${f.text}"`).join('; ')}\n${fieldRef(a, p)!.get()}`),
+  ].join('\n\n');
+  const schema = z.object({ fields: z.array(z.object({ path: z.enum(paths as [string, ...string[]]), text: z.string().min(1) })) });
+  const { value } = await geminiStructured({ prompt, schema, temperature: 0.2 });
+  let changed = 0;
+  for (const f of value.fields ?? []) {
+    const ref = fieldRef(a, f.path)!;
+    const plain = /^title\.|heading_/.test(f.path);
+    const text = plain ? f.text.trim() : safeMarkup(f.text, refs);
+    if (!text || (plain && /[*[\]{}\n]/.test(text))) continue;
+    const before = findings.filter((x) => x.field === f.path).map((x) => x.text.toLowerCase());
+    if (before.some((t) => text.toLowerCase().includes(t))) continue;
+    ref.set(text);
+    changed++;
+  }
+  return changed;
 }
