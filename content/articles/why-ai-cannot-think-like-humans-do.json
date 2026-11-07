@@ -1,0 +1,126 @@
+{
+  "slug": "why-ai-cannot-think-like-humans-do",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=why-ai-cannot-think-like-humans-do",
+  "category": "technology",
+  "tags": [
+    "artificial intelligence",
+    "cognitive science",
+    "machine learning",
+    "world models"
+  ],
+  "title": {
+    "en": "Why AI cannot ‘think’ like humans do"
+  },
+  "hook": {
+    "en": "Today’s artificial intelligence technologies have become remarkably good at generating text and ideas that seem profoundly human. Chatbots powered by large language models such as ChatGPT, Claude, Google Gemini and Perplexity AI can write poems, brainstorm and find solutions to complex problems."
+  },
+  "sections": [
+    {
+      "body_en": "The developers of these products drew heavily on the human brain for inspiration, creating artificial neural networks based on the workings of human neurons. Their systems now produce outputs that often resemble the outputs of human thinking.\n\nAI and the human mind, however, do not work the same way. Similar results do not necessarily mean similar processes.\n\n“World models” are an emerging technology that could help AI systems move closer to human “thinking” by helping them learn to anticipate what might happen and use that prediction to act. Still, AI will not perceive, learn or understand the world as humanity does.\n\nRead more: Cyber attacks? Bioterrorism? To ‘Pace the Frontier’ of AI effectively, we must improve our anticipatory thinking"
+    },
+    {
+      "heading_en": "A falling cup, a complex prediction",
+      "body_en": "Imagine reaching for a cup at the edge of a counter. The cup may fall and smash if you misjudge the distance, grip it too loosely or move too quickly.\n\nFor humans, grabbing a cup like this is routine. Yet this simple action relies on the complex ability to anticipate what might happen next. Our minds constantly try to stay one step ahead by understanding events and their causes. We can foresee the mess that would result from moving an overfilled cup or imagine a sofa getting stuck in a doorway even before we buy it.\n\nThese predictions draw on expectations that form when we interact with the world. What we anticipate can, in turn, impact how we perceive the world and how we act.\n\nOne influential family of theories, known as predictive processing, proposes that perception works partly in this way. The brain generates expectations, compares them to the information it receives and makes adjustments when the two don’t match.\n\nLet’s return to the example of the cup. Imagine reaching for an empty cup that you believe to be full. Your hand, expecting a heavier object, lifts it with more force than necessary. The cup rises abruptly and feels almost weightless. That mismatch provides feedback that helps correct the movement and update your estimate of its weight.\n\nWhat we anticipate shapes our actions, and what happens next updates our expectations. All this happens just to pick up a cup."
+    },
+    {
+      "heading_en": "Does AI predict differently?",
+      "body_en": "Even for today’s robots, reliably manipulating cups can require extensive training and simulation. The challenge involves learning how the physical world behaves and predicting the consequences of an action.\n\nChatbots using large language models also make predictions, but of a different kind. They learn to predict the next word or fragment of text. This apparently simple way of predicting can nevertheless produce remarkably capable systems able to solve complex problems.\n\nTake the sentence: “A hand bumps a cup near the edge of a table. The cup…” Having learned patterns from enormous amounts of data, a chatbot might continue with “tips over the edge and falls to the floor.” It can do so by predicting patterns from a dataset and without ever physically handling a cup.\n\nHowever, being able to describe plausible outcomes does not necessarily mean a chatbot has learned why they happen."
+    },
+    {
+      "heading_en": "Teaching a robot to anticipate",
+      "body_en": "This is where world models kick in — a broad family of AI approaches that aim to predict how situations evolve and, in some cases, how actions may change them. These models can learn from videos, simulations or recordings of what robots see and do.\n\nFor a domestic robot, this could mean anticipating that gripping too tightly might break the cup, or that a wrong movement could tip it over.\n\nBy incorporating actions, motion and sensory information, preliminary research shows these systems can help connect predictions with what happens in the physical world.\n\nA world model could eventually make the same predictions we do about a cup. And as it learns from actions and sensory feedback, the resemblance to us may become increasingly hard to ignore. Still, arriving at the same prediction does not tell us what knowledge supports it or how that knowledge was acquired."
+    },
+    {
+      "heading_en": "Same prediction, same cognition?",
+      "body_en": "To us, a cup is not only a cylinder on a table. It can be graspable, breakable, yours, mine, too hot or almost falling. Our understanding connects the cup’s physical properties to a network of possible actions and consequences.\n\nPredicting that the cup will fall reveals only a small part of that understanding.\n\nAnd this understanding develops quite early. Studies suggest that infants just a few months old already have basic expectations about how physical objects behave. Child-development researcher Jean Piaget proposed that children build knowledge through acting on the world. As this knowledge develops, they become able to mentally anticipate consequences without having to carry out each action.\n\nFor humans, learning involves more than accumulating information about cups. It involves connecting experiences when reaching for one, feeling its weight, seeing it spill and eventually imagining what might happen without even having to try it.\n\nUsing world models, AI can also learn from actions and sensory feedback, in addition to videos, simulations and other data. Like humans, they can learn to interact with the world. The question is how their experiences contribute to the knowledge they build and use.\n\nAI could definitely come closer to anticipating what might happen and using that prediction to act. This alone, however, does not show that AI perceives, learns or understands the world as we do.\n\nAs AI gets better at replicating the results of human cognition, distinguishing performance from process will only become more important."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "The Conversation (2026)",
+      "url": "https://theconversation.com/why-ai-cannot-think-like-humans-do-293188"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/403/1080/1920",
+    "provider": "unsplash",
+    "author": "Sergey Zolkin",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/403/1080/1920",
+      "provider": "unsplash",
+      "author": "Sergey Zolkin",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/885/1080/1920",
+      "provider": "unsplash",
+      "author": "Dustin Lee",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/jLwVAUtLOAQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/486/1080/1920",
+      "provider": "unsplash",
+      "author": "Florian Klauer",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwAIEC5mzNNDAaLmWd8aAAD+P3ZAsKafM/eXldNS1aBiQz4yZHx0u8HNgMYg5h2TZ2KAwqBlZLa0XxElHm0rldr7DFItHtKh3B8xDpfPp69NIDankDyfn+vJy2IgKNfZsVK5/jK0McN9XEZS91d95NoyRV7DgMt/zNTqB/x37Oo3Xp5sdbJ8je2Gqh2mLjVKrUTB5N7rpso/gAASJPtYIRHwDoACGGsu4Swa0AA=",
+  "dominant": "#3f4443",
+  "origin": {
+    "group": 3,
+    "sourceId": "theconversation-com-why-ai-cannot-think-like-humans-do",
+    "license": "CC-BY-ND-4.0",
+    "authors": [
+      "Didier Camilo Olarte Gonzalez",
+      "Pier-Luc de Chantal"
+    ],
+    "originalTitle": "Why AI cannot ‘think’ like humans do",
+    "originalUrl": "https://theconversation.com/why-ai-cannot-think-like-humans-do-293188",
+    "publisher": "The Conversation",
+    "changes": [
+      "key point and apply steps added"
+    ]
+  },
+  "summary": {
+    "vi": "Bai viet xem xet su khac biet co ban giua cach con nguoi va tri tue nhan tao xu ly thong tin. Con nguoi xay dung nhan thuc thong qua trai nghiem vat ly va kha nang du an truoc hau qua cua hanh dong. Nguoc lai, cac mo hinh ngon ngu lon du doan tu ngu dua tren du lieu chu khong he trai nghiem the gioi thuc. Mac du cac cong nghệ mo hinh the gioi moi giup AI du doan tot hon, ket qua giong nhau khong dong nghia voi qua trình nhan thuc giong nhau."
+  },
+  "keyPoint": {
+    "en": "Like a navigator relying on a map rather than walking the terrain, AI predicts words without experiencing the physical world. [p:Can an algorithm truly understand what it describes]? Pause to examine how you learn through physical touch and sensory feedback before assuming silicon mimics human thought.",
+    "vi": "Giống như người điều hướng dựa vào bản đồ thay vì đi thực tế, AI dự đoán từ ngữ mà không trải nghiệm thế giới vật lý. [p:Liệu một thuật toán có thực sự hiểu điều nó mô tả]? Hãy dừng lại để xem xét cách bạn học qua xúc giác và phản hồi giác quan trước khi cho rằng silicon bắt chước tư duy con người."
+  },
+  "applySteps": {
+    "en": [
+      "Observe a physical action you perform routinely today.",
+      "List three sensory details you noticed during that action.",
+      "Compare your physical feedback with how software processes data."
+    ],
+    "vi": [
+      "Quan sát một hành động vật lý bạn thực hiện thường ngày hôm nay.",
+      "Liệt kê ba chi tiết giác quan bạn nhận thấy trong hành động đó.",
+      "So sánh phản hồi vật lý của bạn với cách phần mềm xử lý dữ liệu."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-07T03:09:04.007Z"
+}
