@@ -2,15 +2,31 @@ import { firebaseConfigured } from '@/lib/env';
 import type { Backend } from './types';
 
 let promise: Promise<Backend> | null = null;
+const onStart: Array<() => void> = [];
 
-/** The Firebase SDK is code-split and only loaded when the site is configured for it. */
+/**
+ * The backend (Firebase, with its auth, Firestore cache and App Check) is the heaviest script on the
+ * page, so it starts only when the reader needs it: a tap on something that reads or writes their
+ * data, a pending sign-in redirect, or a quiet moment well after the first paint (ReaderApp).
+ * Every caller goes through here; the first call starts it and marks 'reader:backend-start'.
+ */
 export function getBackend(): Promise<Backend> {
   if (!promise) {
+    performance.mark('reader:backend-start');
     promise = firebaseConfigured
       ? import('./firebase').then((m) => m.createFirebaseBackend())
       : import('./local').then((m) => m.createLocalBackend());
+    queueMicrotask(() => onStart.splice(0).forEach((fn) => fn()));
   }
   return promise;
+}
+
+export const backendStarted = () => promise !== null;
+
+/** Run `fn` once, when the backend starts (right away if it already has). */
+export function onBackendStart(fn: () => void) {
+  if (promise) queueMicrotask(fn);
+  else onStart.push(fn);
 }
 
 export const backendKind = firebaseConfigured ? 'firebase' : 'local';

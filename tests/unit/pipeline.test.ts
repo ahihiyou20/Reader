@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest';
-import { addHighlight, safeMarkup } from '../../scripts/pipeline/compose';
+import { describe, expect, it, vi } from 'vitest';
+import { addHighlight, enrich, safeMarkup } from '../../scripts/pipeline/compose';
 import { trimToFit } from '../../scripts/pipeline/create';
 import { forgetGeminiFailures, normalizeUrl, parseFeed, pickRoundRobin, type FeedSource } from '../../scripts/pipeline/feeds';
 import { MODEL, isSetupFailure } from '../../scripts/pipeline/gemini';
@@ -107,6 +107,36 @@ describe('compose helpers', () => {
     } as unknown as ArticleSource;
     expect(trimToFit(a)).toBe(true);
     expect(totalWords(a)).toBeLessThanOrEqual(950);
+  });
+  it('keeps Gemini Vietnamese titles and headings only as clean lines, and unswaps heading and body', async () => {
+    const reply = {
+      title_vi: 'Bìa tạp chí (*Covers*) [y:bìa] và câu chuyện của nó',
+      hook_vi: 'Mở đầu bằng tiếng Việt.',
+      sections_vi: [{ heading_vi: 'Một số số báo có hình khỏa thân trên bìa, do họa sĩ vẽ.', body_vi: 'Bìa' }],
+    };
+    const env = process.env.GEMINI_API_KEY;
+    process.env.GEMINI_API_KEY = 'test';
+    vi.stubGlobal('fetch', async () => new Response(JSON.stringify({ candidates: [{ content: { parts: [{ text: JSON.stringify(reply) }] } }] })));
+    try {
+      const a = {
+        title: { en: 'Covers' },
+        hook: { en: 'An opening.' },
+        sections: [{ heading_en: 'Covers', body_en: 'Some issues featured nudity on their covers, drawn by an artist.' }],
+        keyPoint: { en: 'x' },
+        applySteps: { en: ['a', 'b', 'c'] },
+        tags: ['t'],
+        references: [],
+        origin: { group: 1, changes: [] },
+      } as unknown as ArticleSource;
+      await enrich(a);
+      expect(a.title.vi).toBeUndefined();
+      expect(a.sections[0].heading_vi).toBe('Bìa');
+      expect(a.sections[0].body_vi).toBe(reply.sections_vi[0].heading_vi);
+    } finally {
+      vi.unstubAllGlobals();
+      if (env === undefined) delete process.env.GEMINI_API_KEY;
+      else process.env.GEMINI_API_KEY = env;
+    }
   });
 });
 

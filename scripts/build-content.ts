@@ -17,6 +17,8 @@ const ROOT = process.cwd();
 const CONTENT = path.join(ROOT, 'content');
 const OUT = path.join(ROOT, 'public', 'data');
 const includeDrafts = process.env.INCLUDE_DRAFTS === '1';
+/** Items in /data/feed-head.json: enough for the first minutes of swiping, a few KB whatever the catalogue size. */
+const FEED_HEAD = 40;
 
 async function readJson<T>(file: string, fallback?: T): Promise<T> {
   try {
@@ -83,7 +85,10 @@ async function main() {
   await fs.rm(OUT, { recursive: true, force: true });
   await fs.mkdir(path.join(OUT, 'articles'), { recursive: true });
   const builtAt = new Date(now).toISOString();
-  await fs.writeFile(path.join(OUT, 'feed.json'), JSON.stringify({ builtAt, items: ranked.map(toFeedItem) }));
+  const items = ranked.map(toFeedItem);
+  // The app paints and starts swiping from the head; the full list arrives after the first paint.
+  await fs.writeFile(path.join(OUT, 'feed-head.json'), JSON.stringify({ builtAt, total: items.length, items: items.slice(0, FEED_HEAD) }));
+  await fs.writeFile(path.join(OUT, 'feed.json'), JSON.stringify({ builtAt, total: items.length, items }));
   await fs.writeFile(path.join(OUT, 'categories.json'), JSON.stringify(categories));
   for (const c of ranked) await fs.writeFile(path.join(OUT, 'articles', `${c.slug}.json`), JSON.stringify(c));
 

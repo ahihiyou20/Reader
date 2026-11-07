@@ -160,9 +160,13 @@ async function runPressCensusOnSurface(
       const s = window.getComputedStyle(el);
       if (s.visibility === 'hidden' || s.display === 'none') continue;
 
-      const cx = rect.x + rect.width / 2;
-      const cy = rect.y + rect.height / 2;
-      if (cx < 0 || cx > window.innerWidth || cy < 0 || cy > window.innerHeight) continue;
+      // The census taps the rounded centre: skip what a finger cannot reach there (off screen, such as a
+      // chip whose centre sits on the bottom edge, or under other chrome).
+      const cx = Math.round(rect.x + rect.width / 2);
+      const cy = Math.round(rect.y + rect.height / 2);
+      if (cx < 0 || cx >= window.innerWidth || cy < 0 || cy >= window.innerHeight) continue;
+      const hit = document.elementFromPoint(cx, cy);
+      if (!hit || !el.contains(hit)) continue;
 
       let curr: HTMLElement | null = el;
       let op = 1;

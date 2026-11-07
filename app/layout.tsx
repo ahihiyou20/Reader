@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: stageScript }} />
         <link rel="preconnect" href="https://picsum.photos" />
         <link rel="preconnect" href="https://fastly.picsum.photos" />
-        <link rel="preload" href="/data/feed.json" as="fetch" crossOrigin="anonymous" />
+        <link rel="preload" href="/data/feed-head.json" as="fetch" crossOrigin="anonymous" />
         <link rel="preload" href="/data/categories.json" as="fetch" crossOrigin="anonymous" />
       </head>
       <body>

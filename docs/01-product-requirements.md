@@ -116,7 +116,7 @@ Là người đọc, tôi muốn vuốt lên/xuống để chuyển sang bài k�
 - Toggle lưu bài; icon đổi màu vàng (#FACC15) khi đã lưu. Bài đã lưu xem được trong Profile (SCR-07) tab "Saved".
 
 **FR-12 — Share**
-- Dùng Web Share API (title + URL `/a/{slug}`); fallback: copy link + toast "Link copied". Mỗi lần share thành công tăng `counts.shares`.
+- Dùng Web Share API (title + URL `/a/{slug}`); fallback: copy link + toast "Link copied". Lần share thành công đầu tiên của mỗi người với một bài tăng `counts.shares` (số người đã share, không phải số lần bấm).
 
 **FR-13 — Định dạng số đếm**
 - `< 1000` hiển thị nguyên; `1.2K`, `12K`, `1.2M`. Áp dụng cho mọi counter.

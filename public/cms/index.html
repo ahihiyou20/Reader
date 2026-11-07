@@ -8,7 +8,13 @@
     <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <!-- Sveltia CMS, pinned so a beta release cannot change the editors' form unexpectedly. Upgrade on purpose. -->
-    <script src="https://unpkg.com/@sveltia/cms@0.231.0/dist/sveltia-cms.js"></script>
+    <!-- Sveltia CMS, pinned so a beta release cannot change the editors' form unexpectedly. Upgrade on purpose,
+         and update the integrity hash with it: this page runs with the editor's GitHub access, so a changed
+         file on the CDN must not load. -->
+    <script
+      src="https://unpkg.com/@sveltia/cms@0.231.0/dist/sveltia-cms.js"
+      integrity="sha384-CDqPKMOyWBx0moN+f5XwjURyMigoIE3owP1zp7KvVDJcC9xMVPI6VrB6GJrJQPlK"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

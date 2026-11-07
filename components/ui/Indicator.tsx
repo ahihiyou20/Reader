@@ -1,5 +1,5 @@
 'use client';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { prefersReducedMotion, spring } from '@/lib/motion';
 
 /**
@@ -8,7 +8,7 @@ import { prefersReducedMotion, spring } from '@/lib/motion';
  */
 export function Indicator({ layoutId, className = '' }: { layoutId: string; className?: string }) {
   return (
-    <motion.span
+    <m.span
       layoutId={layoutId}
       className={`indicator ${className}`}
       data-indicator=""

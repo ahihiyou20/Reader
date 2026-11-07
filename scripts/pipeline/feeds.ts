@@ -1,13 +1,17 @@
-// Daily articles (docs/05 §9): read the RSS/Atom feeds in content/feeds.json, pick unseen recent items
-// round-robin across feeds (at most `maxPerDay`, 20 by default) and turn each into an article with
-// scripts/pipeline/create.ts. The workflow puts the result in one pull request; merging it publishes.
+// Daily articles (docs/05 §9): read the RSS/Atom feeds in content/feeds.json, keep unseen recent items,
+// let triage.ts choose the ones worth an article (rules, then one Gemini scoring call), turn each into
+// an article with scripts/pipeline/create.ts, and check its prose (prose-lint.ts, one revision pass).
+// The workflow puts the result in one pull request; merging it publishes.
 //   pnpm tsx scripts/pipeline/feeds.ts [--limit 20] [--dry-run] [--report report.md]
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { XMLParser } from 'fast-xml-parser';
 import type { ArticleSource } from '../../lib/content/types';
 import { type Created, type Mode, SkipError, createArticle, modeFor } from './create';
+import { reviseProse } from './compose';
 import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
+import { lintProse, plainFieldsOf, proseFields, type ProseFinding } from './prose-lint';
+import { type Candidate, triage } from './triage';
 import { CONTENT, dirs, httpText, jobSummary, listJson, readJson, setOutput, writeJson } from './lib';
 
 export interface FeedSource {
@@ -26,11 +30,14 @@ export interface FeedSource {
   maxWords?: number;
   /** How to find the article link: the Wikipedia "Today's featured article" feed links to a feed page. */
   resolve?: 'wikipedia-featured';
+  /** Triage bar for this feed when it is stricter than the default. */
+  minScore?: number;
 }
 export interface FeedConfig {
   maxPerDay: number;
   /** Items older than this are ignored (default 14 days). */
   maxAgeDays?: number;
+  triage?: { minScore?: number; perCategory?: number; dupThreshold?: number };
   feeds: FeedSource[];
 }
 export interface FeedItem {
@@ -158,13 +165,68 @@ export function pickRoundRobin(
   return picked;
 }
 
-async function knownUrls(): Promise<Set<string>> {
-  const out = new Set<string>();
+async function knownArticles(): Promise<{ urls: Set<string>; titles: string[] }> {
+  const urls = new Set<string>();
+  const titles: string[] = [];
   for (const f of await listJson(dirs.articles)) {
     const a = await readJson<ArticleSource>(path.join(dirs.articles, f));
-    if (a.origin.originalUrl) out.add(normalizeUrl(a.origin.originalUrl));
+    if (a.origin.originalUrl) urls.add(normalizeUrl(a.origin.originalUrl));
+    titles.push(a.title.en);
   }
-  return out;
+  return { urls, titles };
+}
+
+const lintArticleProse = (a: ArticleSource): ProseFinding[] =>
+  (['en', 'vi'] as const).flatMap((lang) => {
+    const fields = proseFields(a, lang);
+    return lintProse(fields, lang, { plainFields: plainFieldsOf(fields) });
+  });
+
+/** Lint a new article's prose; one Gemini revision pass; what still fails keeps it in review. */
+async function checkProse(slug: string): Promise<string[]> {
+  const file = path.join(dirs.articles, `${slug}.json`);
+  const a = await readJson<ArticleSource>(file);
+  let findings = lintArticleProse(a);
+  if (findings.length && hasGemini()) {
+    await reviseProse(a, findings);
+    findings = lintArticleProse(a);
+  }
+  if (findings.length) a.status = 'review';
+  await writeJson(file, a);
+  return findings.map((f) => `${f.field}: ${f.rule} “${f.text}”`);
+}
+
+/**
+ * Feed items in round-robin order (so a fallback without a model stays fair across feeds), then
+ * triage. Returns the picks with their feed, best first; the run takes as many as it needs.
+ */
+export async function selectArticles(
+  feeds: FeedSource[],
+  candidates: Map<string, FeedItem[]>,
+  opts: { limit: number; existingTitles: string[]; categories: string[]; triage?: FeedConfig['triage'] },
+) {
+  const order = pickRoundRobin(feeds, candidates, opts.limit * 4, 2);
+  const byUrl = new Map(order.map((p) => [p.item.url, p]));
+  const cands: Candidate[] = order.map(({ feed, item }) => ({
+    url: item.url,
+    title: item.title,
+    summary: item.summary,
+    feedId: feed.id,
+    category: feed.category === 'auto' ? undefined : feed.category,
+  }));
+  const { picked, rejected } = await triage(cands, {
+    minScore: opts.triage?.minScore ?? 6,
+    perCategory: opts.triage?.perCategory ?? 3,
+    dupThreshold: opts.triage?.dupThreshold ?? 0.6,
+    limit: opts.limit * 2,
+    existingTitles: opts.existingTitles,
+    categories: opts.categories,
+    minScoreByFeed: Object.fromEntries(feeds.filter((f) => f.minScore !== undefined).map((f) => [f.id, f.minScore!])),
+  });
+  return {
+    picked: picked.map((s) => ({ ...byUrl.get(s.url)!, category: s.category, why: `${s.score}/10 ${s.kind}: ${s.reason}` })),
+    rejected,
+  };
 }
 
 const GROUP_LABEL: Record<number, string> = { 1: 'phỏng theo', 2: 'phỏng theo (SA)', 3: 'nguyên văn', 4: 'tự viết', 5: 'tóm tắt + link' };
@@ -193,7 +255,8 @@ async function main() {
   const state = await readJson<State>(STATE_FILE, { seen: {} });
   forgetGeminiFailures(state.seen);
   const cutoff = Date.now() - (config.maxAgeDays ?? 14) * 86400_000;
-  const known = await knownUrls();
+  const { urls: known, titles } = await knownArticles();
+  const categories = (await readJson<Array<{ id: string }>>(path.join(CONTENT, 'categories.json'))).map((c) => c.id);
 
   const feeds = config.feeds.filter((f) => f.enabled !== false && (f.mode !== 'summary' || hasGemini()));
   const skippedSummary = config.feeds.filter((f) => f.enabled !== false && f.mode === 'summary' && !hasGemini());
@@ -228,12 +291,15 @@ async function main() {
     }
   }
 
-  // Links that fail (too long, no licence, fetch error) are replaced from a backup queue, where each
-  // feed may give up to twice its usual share, so a run still reaches `limit` articles when it can.
-  const picked = pickRoundRobin(feeds, candidates, limit);
-  const backup = pickRoundRobin(feeds, candidates, limit * 2, 2, new Set(picked.map((p) => p.item.url)));
+  // Triage returns up to twice `limit`: links that fail (too long, no licence, fetch error) are
+  // replaced by the next best, so a run still reaches `limit` articles when it can.
+  const { picked, rejected } = await selectArticles(feeds, candidates, { limit, existingTitles: titles, categories, triage: config.triage });
+  const feedOf = new Map(feeds.flatMap((f) => (candidates.get(f.id) ?? []).map((it) => [it.url, f.id] as const)));
+  for (const r of rejected) state.seen[r.url] = { at: new Date().toISOString(), feed: feedOf.get(r.url) ?? '?', error: `triage: ${r.reason}` };
+  console.log(`Triage: ${picked.length} picked, ${rejected.length} rejected.`);
   if (dry) {
-    for (const p of picked) console.log(`- [${p.feed.id}/${p.feed.mode}] ${p.item.title} — ${p.item.url}`);
+    for (const p of picked) console.log(`- [${p.feed.id}/${p.feed.mode}] ${p.item.title} (${p.why}) — ${p.item.url}`);
+    for (const r of rejected) console.log(`  ✗ ${r.url}: ${r.reason}`);
     return;
   }
 
@@ -241,12 +307,13 @@ async function main() {
   const failed: string[] = [];
   let setupError: Error | undefined;
   const start = Date.now();
-  for (const { feed, item } of [...picked, ...backup]) {
+  for (const { feed, item, category } of picked) {
     if (created.length >= limit) break;
     try {
       // A minute apart, so the feed keeps the order of this run.
       const publishAt = new Date(start + (limit - created.length) * 60_000).toISOString();
-      const c = await createArticle({ url: item.url, category: feed.category, mode: feed.mode, publishAt, maxWords: feed.maxWords });
+      const c = await createArticle({ url: item.url, category, mode: feed.mode, publishAt, maxWords: feed.maxWords });
+      for (const note of await checkProse(c.slug)) c.issues.push({ level: 'warning', field: 'prose', message: `kept in review: ${note}` });
       created.push(c);
       state.seen[item.url] = { at: new Date().toISOString(), feed: feed.id, slug: c.slug };
       console.log(`✓ ${c.slug} (${feed.id})`);
@@ -289,3 +356,4 @@ if (process.argv[1]?.endsWith('feeds.ts'))
     console.error(e);
     process.exit(1);
   });
+

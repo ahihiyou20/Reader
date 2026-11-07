@@ -1,6 +1,6 @@
 'use client';
 import { MDiv } from '@/components/Motion';
-import { motion, useTransform } from 'framer-motion';
+import { m, useTransform } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useArticle } from '@/lib/data';
@@ -39,11 +39,22 @@ export function ArticlePage({
   const o2 = useTransform(p, (v) => 1 - 0.4 * clamp(Math.abs(v - 2), 0, 1));
   const lang = useUI((s) => s.lang);
   const view = useUI((s) => s.views[item.slug] ?? 0);
-  // Details and Comments are only built for the article in front of the reader (and kept afterwards).
-  const [built, setBuilt] = useState(active);
+  // Details and Comments are only built for the article in front of the reader (and kept afterwards),
+  // once the browser is idle, so the first screen does not pay for a whole article it may never open.
+  // A horizontal drag builds them at once.
+  const [built, setBuilt] = useState(() => active && p.get() > 0.001);
   useEffect(() => {
-    if (active) setBuilt(true);
-  }, [active]);
+    if (!active || built) return;
+    const build = () => setBuilt(true);
+    const off = p.on('change', (v) => v > 0.001 && build());
+    const ric = (window as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+    const id = ric ? ric(build, { timeout: 1200 }) : window.setTimeout(build, 300);
+    return () => {
+      off();
+      if (ric) (window as unknown as { cancelIdleCallback: (n: number) => void }).cancelIdleCallback(id);
+      else clearTimeout(id);
+    };
+  }, [active, built, p]);
   const { data: article, isError, refetch } = useArticle(item.slug, built || active);
   const [visible, setVisible] = useState(true);
   useEffect(() => {
@@ -85,7 +96,7 @@ export function ArticlePage({
           <MDiv className="layer eng" style={{ opacity: eng }} />
           <div className="grain" />
         </div>
-        <motion.div className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
+        <m.div className="views" style={{ x }} ref={(el) => registerFade(item.slug, el)}>
           <MDiv
             className="view cover"
             data-view={view === 0 ? 'cover' : undefined}
@@ -118,7 +129,7 @@ export function ArticlePage({
           >
             {built && article && <EngageView article={article} item={item} active={active} view={view} />}
           </MDiv>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

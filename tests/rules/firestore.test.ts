@@ -86,9 +86,49 @@ describe('counters', () => {
     b.set(doc(db, 'counters/a1'), { likes: increment(2) }, { merge: true });
     await assertFails(b.commit());
   });
-  it('FR-12: anyone signed in can add a share', async () => {
-    await assertSucceeds(setDoc(doc(guest(), 'counters/a1'), { shares: increment(1) }, { merge: true }));
-    await assertSucceeds(setDoc(doc(guest(), 'counters/a1'), { shares: increment(1) }, { merge: true }));
+  it('the same like is counted once', async () => {
+    const db = guest();
+    const b = writeBatch(db);
+    b.set(doc(db, 'users/guest/likes/a1'), { slug: 'a1', createdAt: serverTimestamp() });
+    b.set(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true });
+    await assertSucceeds(b.commit());
+    await assertFails(setDoc(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true }));
+    const again = writeBatch(db);
+    again.set(doc(db, 'users/guest/likes/a1'), { slug: 'a1', createdAt: serverTimestamp() });
+    again.set(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true });
+    await assertFails(again.commit());
+  });
+  it("cannot take away other readers' likes", async () => {
+    await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { likes: 5 }));
+    await assertFails(setDoc(doc(guest(), 'counters/a1'), { likes: increment(-1) }, { merge: true }));
+  });
+  it('account deletion: 9 unlikes with their counters fit in one batch', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      for (let i = 0; i < 9; i++) {
+        await setDoc(doc(ctx.firestore(), `users/guest/likes/s${i}`), { slug: `s${i}`, createdAt: new Date() });
+        await setDoc(doc(ctx.firestore(), `counters/s${i}`), { likes: 1 });
+      }
+    });
+    const db = guest();
+    const b = writeBatch(db);
+    for (let i = 0; i < 9; i++) {
+      b.delete(doc(db, `users/guest/likes/s${i}`));
+      b.set(doc(db, `counters/s${i}`), { likes: increment(-1) }, { merge: true });
+    }
+    await assertSucceeds(b.commit());
+  });
+  it('FR-12: a share is counted once per reader, with its share document', async () => {
+    const db = guest();
+    await assertFails(setDoc(doc(db, 'counters/a1'), { shares: increment(1) }, { merge: true }));
+    const share = () => {
+      const b = writeBatch(db);
+      b.set(doc(db, 'users/guest/shares/a1'), { slug: 'a1', createdAt: serverTimestamp() });
+      b.set(doc(db, 'counters/a1'), { shares: increment(1) }, { merge: true });
+      return b.commit();
+    };
+    await assertSucceeds(share());
+    await assertFails(share());
+    await assertFails(setDoc(doc(db, 'counters/a1'), { shares: increment(1) }, { merge: true }));
   });
   it('signed-out visitors cannot write', async () => {
     await assertFails(setDoc(doc(env.unauthenticatedContext().firestore(), 'counters/a1'), { shares: increment(1) }, { merge: true }));
@@ -111,9 +151,65 @@ describe('comments', () => {
   });
   it('a Google user comments and bumps the counter', async () => {
     const db = alice();
+    const ref = doc(collection(db, 'comments/a1/items'));
     const b = writeBatch(db);
-    b.set(doc(collection(db, 'comments/a1/items')), comment('alice'));
-    b.set(doc(db, 'counters/a1'), { comments: increment(1) }, { merge: true });
+    b.set(ref, comment('alice'));
+    b.set(doc(db, 'counters/a1'), { comments: increment(1), lastComment: ref.id }, { merge: true });
+    await assertSucceeds(b.commit());
+  });
+  it('the comment counter moves only with a comment created or removed in the same write', async () => {
+    const db = alice();
+    await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { comments: 3 }));
+    const counter = doc(db, 'counters/a1');
+    await assertFails(setDoc(counter, { comments: increment(1) }, { merge: true }));
+    await assertFails(setDoc(counter, { comments: increment(1), lastComment: 'nope' }, { merge: true }));
+    await assertFails(setDoc(counter, { comments: increment(1), lastComment: 'c1' }, { merge: true }));
+    await assertFails(setDoc(counter, { comments: increment(-1), lastComment: 'c1' }, { merge: true }));
+    const ref = doc(collection(db, 'comments/a1/items'));
+    const two = writeBatch(db);
+    two.set(ref, comment('alice'));
+    two.set(counter, { comments: increment(2), lastComment: ref.id }, { merge: true });
+    await assertFails(two.commit());
+  });
+  it('deleting a visible comment takes one off the counter, once', async () => {
+    await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { comments: 1 }));
+    const db = alice();
+    const b = writeBatch(db);
+    b.delete(doc(db, 'comments/a1/items/c1'));
+    b.set(doc(db, 'counters/a1'), { comments: increment(-1), lastComment: 'c1' }, { merge: true });
+    await assertSucceeds(b.commit());
+    const again = writeBatch(db);
+    again.delete(doc(db, 'comments/a1/items/c1'));
+    again.set(doc(db, 'counters/a1'), { comments: increment(-1), lastComment: 'c1' }, { merge: true });
+    await assertFails(again.commit());
+  });
+  it('a moderator hiding a comment takes one off; a hidden comment is not taken off again', async () => {
+    await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { comments: 2 }));
+    const m = mod();
+    const hide = writeBatch(m);
+    hide.update(doc(m, 'comments/a1/items/c1'), { status: 'hidden' });
+    hide.set(doc(m, 'counters/a1'), { comments: increment(-1), lastComment: 'c1' }, { merge: true });
+    await assertSucceeds(hide.commit());
+    const db = alice();
+    const del = writeBatch(db);
+    del.delete(doc(db, 'comments/a1/items/c1'));
+    del.set(doc(db, 'counters/a1'), { comments: increment(-1), lastComment: 'c1' }, { merge: true });
+    await assertFails(del.commit());
+    await assertSucceeds(deleteDoc(doc(db, 'comments/a1/items/c1')));
+  });
+  it('account deletion: 9 comments with their counters fit in one batch', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      for (let i = 0; i < 9; i++) {
+        await setDoc(doc(ctx.firestore(), `comments/s${i}/items/x${i}`), { ...comment('alice'), createdAt: new Date() });
+        await setDoc(doc(ctx.firestore(), `counters/s${i}`), { comments: 1 });
+      }
+    });
+    const db = alice();
+    const b = writeBatch(db);
+    for (let i = 0; i < 9; i++) {
+      b.delete(doc(db, `comments/s${i}/items/x${i}`));
+      b.set(doc(db, `counters/s${i}`), { comments: increment(-1), lastComment: `x${i}` }, { merge: true });
+    }
     await assertSucceeds(b.commit());
   });
   it('comments are 500 characters at most', async () => {
@@ -129,6 +225,7 @@ describe('comments', () => {
     b.set(doc(db, 'users/guest/commentLikes/a1__c1'), { slug: 'a1', id: 'c1', createdAt: serverTimestamp() });
     b.update(doc(db, 'comments/a1/items/c1'), { likeCount: increment(1) });
     await assertSucceeds(b.commit());
+    await assertFails(updateDoc(doc(db, 'comments/a1/items/c1'), { likeCount: increment(1) }));
   });
   it('only moderators hide comments', async () => {
     await assertFails(updateDoc(doc(guest(), 'comments/a1/items/c1'), { status: 'hidden' }));
