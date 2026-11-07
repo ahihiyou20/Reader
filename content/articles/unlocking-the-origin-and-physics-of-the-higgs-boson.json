@@ -1,0 +1,119 @@
+{
+  "slug": "unlocking-the-origin-and-physics-of-the-higgs-boson",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=unlocking-the-origin-and-physics-of-the-higgs-boson",
+  "category": "science",
+  "tags": [
+    "higgs boson",
+    "particle physics",
+    "standard model",
+    "cern"
+  ],
+  "title": {
+    "en": "Unlocking the Origin and Physics of the Higgs Boson",
+    "vi": "Khám phá Nguồn gốc và Vật lý của Hạt Higgs"
+  },
+  "hook": {
+    "en": "The Higgs boson stands as the final puzzle piece of the Standard Model of particle physics {source}. Found at CERN in 2012, this unique particle emerges from a fundamental field that shapes the mass of the Universe. Understanding its origins requires looking back to the hot Big Bang.",
+    "vi": "Hạt Higgs là mảnh ghép cuối cùng của Mô hình Chuẩn trong vật lý hạt {source}. Được phát hiện tại CERN vào năm 2012, hạt độc đáo này xuất hiện từ một trường cơ bản định hình khối lượng của Vũ trụ. Việc hiểu rõ nguồn gốc của nó đòi hỏi phải nhìn lại Vụ nổ Lớn nóng bỏng."
+  },
+  "sections": [
+    {
+      "heading_en": "Early Universe and Symmetry",
+      "heading_vi": "Vũ trụ Sơ khai và Tính đối xứng",
+      "body_en": "During the early stages of the hot Big Bang, the Universe possessed massless fermions alongside four massless bosons known as the W1, W2, W3, and B. The Higgs field existed in a restored symmetry state resembling the peak of a hat, where all directions appeared equivalent.",
+      "body_vi": "Trong giai đoạn đầu của Vụ nổ Lớn nóng bỏng, Vũ trụ sở hữu các fermion không có khối lượng cùng với bốn boson không có khối lượng được gọi là W1, W2, W3 và B. Trường Higgs tồn tại ở trạng thái đối xứng được khôi phục giống như đỉnh của một chiếc mũ, nơi mọi hướng đều trông tương đương."
+    },
+    {
+      "heading_en": "The Electroweak Transition",
+      "heading_vi": "Chuyển pha Điện yếu",
+      "body_en": "A critical transition occurred when the Universe cooled through an energy-equivalent of about 250 GeV, roughly a picosecond after the start of the hot Big Bang. This electroweak phase transition caused the Higgs mechanism to spontaneously break the unified electroweak force into separate electromagnetic and weak nuclear forces.",
+      "body_vi": "Một chuyển đổi quan trọng xảy ra khi Vũ trụ nguội đi qua mức năng lượng tương đương khoảng 250 GeV, khoảng một picosecond sau khi Vụ nổ Lớn bắt đầu. Chuyển pha điện yếu này khiến cơ chế Higgs tự động phá vỡ lực điện yếu thống nhất thành các lực điện từ và lực hạt nhân yếu riêng biệt."
+    },
+    {
+      "heading_en": "Birth of the Higgs Boson",
+      "heading_vi": "Sự ra đời của Hạt Higgs",
+      "body_en": "Symmetry breaking produced four scalar components. Three combined with electroweak bosons to form massive W-and-Z bosons while leaving one combination as the massless photon. The final remaining degree of freedom oscillated radially to create the massive Higgs boson {source}.",
+      "body_vi": "Sự phá vỡ đối xứng tạo ra bốn thành phần vô hướng. Ba thành phần kết hợp với các boson điện yếu để tạo thành các boson W và Z có khối lượng trong khi để lại một tổ hợp làm photon không có khối lượng. Bậc tự do cuối cùng còn lại dao động theo hướng bán kính để tạo ra hạt Higgs có khối lượng {source}."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Big Think (2026)",
+      "url": "https://bigthink.com/starts-with-a-bang/explain-higgs-boson-in-depth"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/903/1080/1920",
+    "provider": "unsplash",
+    "author": "Greg Rakozy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Ethan Siegel"
+    ],
+    "originalTitle": "Ask Ethan: Can you explain the Higgs boson in depth?",
+    "originalUrl": "https://bigthink.com/starts-with-a-bang/explain-higgs-boson-in-depth",
+    "publisher": "Big Think",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review the elementary particles listed in the Standard Model.",
+      "Recall that mass arises from field interactions rather than simple cutting.",
+      "Read further books on quantum fields to deepen your knowledge."
+    ],
+    "vi": [
+      "Xem lại các hạt cơ bản được liệt kê trong Mô hình Chuẩn.",
+      "Nhớ lại rằng khối lượng phát sinh từ sự tương tác trường thay vì việc cắt nhỏ đơn giản.",
+      "Đọc thêm sách về các trường lượng tử để đào sâu kiến thức của bạn."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/903/1080/1920",
+      "provider": "unsplash",
+      "author": "Greg Rakozy",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/974/1080/1920",
+      "provider": "unsplash",
+      "author": "Greg Rakozy",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1022/1080/1920",
+      "provider": "unsplash",
+      "author": "Vashishtha Jogi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAACQBACdASoQABwAPu1oqk6ppiQiMAgBMB2JbACdL1yFpcimWhcPbPa2Gd+6W0gA/v3iycbsvIqBA7afuIfoNn9O9da5OCHHdG6RYW3FeBgSoUXA6GR2oUEzld+gJ2gSSAgMi7cYFTGrGBc9HxGnW4+9Lo2DHOZFgAA=",
+  "dominant": "#513830",
+  "publishAt": "2026-11-07T03:10:04.007Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
