@@ -60,6 +60,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/plus/reinvention-of-corporate-learning"
     },
+    "https://bigthink.com/science-tech/will-ai-make-life-less-meaningful-a-survey-finds-optimism-hinges-on-whether-humans-keep-control": {
+      "at": "2026-11-08T02:32:45.795Z",
+      "feed": "big-think",
+      "slug": "artificial-intelligence-threatens-human-meaning-unless-peopl"
+    },
     "https://bigthink.com/series/conversations/darby-saxbe-dad-brain": {
       "at": "2026-11-07T02:51:45.552Z",
       "feed": "big-think",
@@ -69,6 +74,11 @@
       "at": "2026-10-30T02:41:49.847Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/conversations/joe-folley-stop-trying-to-find-yourself"
+    },
+    "https://bigthink.com/series/full-interview/life-machine-frank": {
+      "at": "2026-11-08T02:32:14.146Z",
+      "feed": "big-think",
+      "error": "Only 123 words readable (paywall or script-only page?)"
     },
     "https://bigthink.com/series/full-interview/mimetic-desire-contagion": {
       "at": "2026-10-30T02:45:12.149Z",
@@ -225,6 +235,11 @@
       "feed": "wikipedia-featured",
       "slug": "eyebrow-talk"
     },
+    "https://en.wikipedia.org/wiki/Formula,_Vol._1": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 1: Album release details and sales charts are entertainment promotion rather than substantive reading material."
+    },
     "https://en.wikipedia.org/wiki/French_battleship_Brennus": {
       "at": "2026-10-24T01:41:57.330Z",
       "feed": "wikipedia-featured",
@@ -254,6 +269,11 @@
       "at": "2026-11-05T03:31:39.296Z",
       "feed": "wikipedia-featured",
       "slug": "nikolai-kulikovsky"
+    },
+    "https://en.wikipedia.org/wiki/Premise": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 2: Basic logical definitions of premises from an encyclopedia introduction are too rudimentary for Reader."
     },
     "https://en.wikipedia.org/wiki/RAAF_area_commands": {
       "at": "2026-10-23T16:56:46.998Z",
@@ -475,6 +495,11 @@
       "feed": "global-voices",
       "error": "triage: score 4: A current news report regarding a political figure's return from exile."
     },
+    "https://globalvoices.org/2026/11/07/how-people-in-montenegro-are-making-their-country-cleaner": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "global-voices",
+      "error": "triage: score 4: Local waste management efforts in Montenegro are too narrow and news-focused for general global readers."
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -564,6 +589,11 @@
       "at": "2026-10-30T02:42:37.985Z",
       "feed": "nautilus",
       "slug": "how-poetry-and-science-unite-to-address-climate-change"
+    },
+    "https://nautil.us/earths-rocks-have-a-missing-layer-spanning-up-to-a-billion-years-1286417": {
+      "at": "2026-11-08T02:32:13.543Z",
+      "feed": "nautilus",
+      "slug": "earth-s-missing-rock-layers-explained-by-deep-mantle-process"
     },
     "https://nautil.us/forensic-facial-specialists-can-identify-people-using-just-a-couple-facial-features-1286039": {
       "at": "2026-10-23T16:57:10.451Z",
@@ -856,9 +886,9 @@
       "error": "Only 153 words readable (paywall or script-only page?)"
     },
     "https://psyche.co/videos/to-break-a-bad-habit-try-telling-yourself-a-different-story": {
-      "at": "2026-11-07T02:51:36.916Z",
+      "at": "2026-11-08T02:32:02.842Z",
       "feed": "psyche",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+      "slug": "change-your-narrative-to-break-bad-habits"
     },
     "https://psyche.co/videos/why-we-see-faces-in-unexpected-places-and-what-it-says-about-us": {
       "at": "2026-10-31T02:26:55.108Z",
@@ -1100,6 +1130,11 @@
       "feed": "conversation",
       "error": "1936 words: too long to republish word for word (limit 1500)"
     },
+    "https://theconversation.com/climate-change-is-undermining-our-health-and-the-burden-falls-heaviest-on-women-295355": {
+      "at": "2026-11-08T02:33:10.276Z",
+      "feed": "conversation",
+      "slug": "climate-change-is-undermining-our-health-and-the-burden-fall"
+    },
     "https://theconversation.com/delayed-international-support-has-hampered-efforts-to-contain-and-treat-ebola-in-the-democratic-republic-of-congo-295610": {
       "at": "2026-11-06T03:37:32.815Z",
       "feed": "conversation",
@@ -1119,6 +1154,11 @@
       "at": "2026-10-25T01:13:08.247Z",
       "feed": "conversation",
       "slug": "from-elite-spies-to-gig-economy-operatives-the-changing-face"
+    },
+    "https://theconversation.com/godzilla-minus-zero-is-incredibly-loud-who-decides-on-the-cinema-volume-and-is-it-safe-295864": {
+      "at": "2026-11-08T02:33:39.123Z",
+      "feed": "conversation",
+      "slug": "godzilla-minus-zero-is-incredibly-loud-who-decides-on-the-ci"
     },
     "https://theconversation.com/harry-kane-wins-ballon-dor-a-victory-for-sportsmanship-over-celebrity-295281": {
       "at": "2026-11-02T02:34:32.712Z",
@@ -1190,6 +1230,11 @@
       "feed": "conversation",
       "error": "triage: score 3: This is a legal and cultural news piece about a specific verdict rather than an enduring scientific or historical explainer."
     },
+    "https://theconversation.com/king-arthur-and-ramayana-ancient-stories-that-speak-to-the-moral-dilemmas-of-todays-leaders-294175": {
+      "at": "2026-11-08T02:33:23.783Z",
+      "feed": "conversation",
+      "slug": "king-arthur-and-ramayana-ancient-stories-that-speak-to-the-m"
+    },
     "https://theconversation.com/medieval-ghost-stories-featured-rotten-flesh-the-walking-dead-and-spoon-stealing-spirits-294984": {
       "at": "2026-11-01T02:19:38.654Z",
       "feed": "conversation",
@@ -1204,6 +1249,11 @@
       "at": "2026-10-24T01:41:41.924Z",
       "feed": "conversation",
       "slug": "napoleon-can-be-partly-blamed-for-gen-z-s-weightlifting-obse"
+    },
+    "https://theconversation.com/nasas-swift-telescope-has-burned-up-months-after-a-robot-sent-to-save-it-failed-heres-why-its-so-hard-to-boost-a-satellite-295538": {
+      "at": "2026-11-08T02:32:58.949Z",
+      "feed": "conversation",
+      "slug": "nasa-s-swift-telescope-has-burned-up-months-after-a-robot-se"
     },
     "https://theconversation.com/primes-carrie-miniseries-expands-stephen-kings-story-but-weakens-its-central-horror-294512": {
       "at": "2026-10-29T02:40:02.974Z",
@@ -1385,6 +1435,11 @@
       "feed": "nasa-science",
       "error": "No text found"
     },
+    "https://www.nasa.gov/mission/promise": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: Payload details of specific lunar rover components serve as institutional project promotion."
+    },
     "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions": {
       "at": "2026-10-24T01:39:52.448Z",
       "feed": "nasa-science",
@@ -1415,6 +1470,11 @@
       "feed": "nasa-science",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
+    "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: NASA awards and institutional project announcements are promotional and lack lasting general interest."
+    },
     "https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium": {
       "at": "2026-10-23T16:58:49.474Z",
       "feed": "nasa-science",
@@ -1434,6 +1494,11 @@
       "at": "2026-11-01T02:16:36.187Z",
       "feed": "nasa-science",
       "slug": "nasa-releases-max-power-key-events-for-media-participants"
+    },
+    "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "nasa-science",
+      "error": "triage: score 1: An open call for astronaut applications is a recruitment announcement lacking general educational value."
     },
     "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory": {
       "at": "2026-10-29T02:28:35.197Z",
@@ -1664,6 +1729,16 @@
       "at": "2026-11-07T02:51:04.007Z",
       "feed": "npr-health",
       "error": "triage: score 4: A political news update on shifting legislative strategies regarding global health aid."
+    },
+    "https://www.npr.org/2026/11/07/g-s1-152225/princess-diana-honor-menstruation-stigma": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "npr-health",
+      "error": "triage: score 2: An award announcement for a teen activist is personnel promotion rather than an explanatory article."
+    },
+    "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack": {
+      "at": "2026-11-08T02:32:35.911Z",
+      "feed": "npr-health",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -1910,10 +1985,20 @@
       "feed": "sciencedaily",
       "slug": "physicists-confirm-third-type-of-magnetism"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261105224542.htm": {
+      "at": "2026-11-08T02:32:24.111Z",
+      "feed": "sciencedaily",
+      "slug": "researchers-find-dinosaur-blood-preserved-for-115-million-ye"
+    },
     "https://www.sciencedaily.com/releases/2026/11/261105224545.htm": {
       "at": "2026-11-07T02:51:44.535Z",
       "feed": "sciencedaily",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261105224547.htm": {
+      "at": "2026-11-08T02:31:52.716Z",
+      "feed": "sciencedaily",
+      "error": "triage: score 2: Monthly stargazing calendars are transient events rather than evergreen conceptual explainers."
     },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
