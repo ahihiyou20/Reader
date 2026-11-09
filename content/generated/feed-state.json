@@ -285,6 +285,11 @@
       "feed": "wikipedia-featured",
       "error": "Unterminated string in JSON at position 206405 (line 2 column 206404)"
     },
+    "https://en.wikipedia.org/wiki/SoHo_Weekly_News": {
+      "at": "2026-11-09T02:41:36.168Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 2: This is a brief historical encyclopedia entry about a defunct local newspaper."
+    },
     "https://en.wikipedia.org/wiki/Sovetsky_Soyuz-class_battleship": {
       "at": "2026-11-02T02:34:03.836Z",
       "feed": "wikipedia-featured",
@@ -565,6 +570,11 @@
       "feed": "nautilus",
       "slug": "archaeologists-re-examine-a-1938-british-murder-mystery"
     },
+    "https://nautil.us/astonishing-find-fossilized-dinosaur-blood-in-a-115-million-year-old-specimen-1286412": {
+      "at": "2026-11-09T02:41:36.168Z",
+      "feed": "nautilus",
+      "error": "triage: score 2: This is a near-repeat of an existing Reader article on dinosaur blood preservation."
+    },
     "https://nautil.us/can-you-recognize-the-subject-of-this-years-microscopic-photography-contest-winner-1286224": {
       "at": "2026-11-01T02:19:14.509Z",
       "feed": "nautilus",
@@ -699,6 +709,11 @@
       "at": "2026-11-01T02:16:00.540Z",
       "feed": "nautilus",
       "slug": "giant-jurassic-squid-relative-discovered-in-ancient-wyoming"
+    },
+    "https://nautil.us/this-photo-of-the-iss-next-to-jupiter-was-two-years-in-the-making-1286407": {
+      "at": "2026-11-09T02:42:22.033Z",
+      "feed": "nautilus",
+      "slug": "photographer-captures-rare-alignment-of-space-station-and-ju"
     },
     "https://nautil.us/this-prehistoric-creature-is-the-only-ocean-dwelling-amphibian-ever-discovered-1286127": {
       "at": "2026-10-28T02:25:14.783Z",
@@ -1095,6 +1110,11 @@
       "feed": "conversation",
       "slug": "africa-s-bats-could-survive-climate-change-if-they-can-find"
     },
+    "https://theconversation.com/agatha-christie-a-world-of-mystery-is-a-brilliant-exploration-of-the-life-of-the-queen-of-crime-295778": {
+      "at": "2026-11-09T02:41:36.168Z",
+      "feed": "conversation",
+      "error": "triage: score 3: This is a book review of a biography about Agatha Christie."
+    },
     "https://theconversation.com/americas-death-penalty-why-executions-are-rising-again-294709": {
       "at": "2026-10-23T16:58:54.393Z",
       "feed": "conversation",
@@ -1154,6 +1174,11 @@
       "at": "2026-10-25T01:13:08.247Z",
       "feed": "conversation",
       "slug": "from-elite-spies-to-gig-economy-operatives-the-changing-face"
+    },
+    "https://theconversation.com/from-wales-to-finland-minority-language-speakers-still-face-prejudice-289007": {
+      "at": "2026-11-09T02:42:37.385Z",
+      "feed": "conversation",
+      "slug": "from-wales-to-finland-minority-language-speakers-still-face"
     },
     "https://theconversation.com/godzilla-minus-zero-is-incredibly-loud-who-decides-on-the-cinema-volume-and-is-it-safe-295864": {
       "at": "2026-11-08T02:33:39.123Z",
@@ -1300,6 +1325,11 @@
       "feed": "conversation",
       "error": "Unterminated string in JSON at position 72659 (line 2 column 72658)"
     },
+    "https://theconversation.com/traces-of-dinosaur-blood-found-in-world-first-discovery-286450": {
+      "at": "2026-11-09T02:41:36.168Z",
+      "feed": "conversation",
+      "error": "triage: score 2: This is a near-repeat of candidate 8 and an existing Reader article about ancient dinosaur blood."
+    },
     "https://theconversation.com/unlocking-the-secrets-of-the-dragon-man-skull-and-what-it-reveals-about-human-evolution-291321": {
       "at": "2026-10-23T16:46:44.321Z",
       "feed": "conversation",
@@ -1360,6 +1390,11 @@
       "feed": "conversation",
       "slug": "why-ai-cannot-think-like-humans-do"
     },
+    "https://theconversation.com/why-do-blind-people-and-musicians-hear-pitch-better-new-research-suggests-they-have-less-internal-noise-294114": {
+      "at": "2026-11-09T02:41:57.089Z",
+      "feed": "conversation",
+      "slug": "why-do-blind-people-and-musicians-hear-pitch-better-new-rese"
+    },
     "https://theconversation.com/why-mark-carney-is-still-betting-big-on-europe-295647": {
       "at": "2026-11-07T02:51:04.007Z",
       "feed": "conversation",
@@ -1369,6 +1404,11 @@
       "at": "2026-10-28T02:22:07.579Z",
       "feed": "conversation",
       "slug": "why-ultra-orthodox-parties-hold-so-much-sway-in-israeli-poli"
+    },
+    "https://theconversation.com/yes-the-cop-climate-talks-are-far-from-perfect-but-they-still-hold-the-power-for-change-295350": {
+      "at": "2026-11-09T02:41:36.168Z",
+      "feed": "conversation",
+      "error": "triage: score 4: This opinion piece offers general commentary on climate talks without deep explanatory mechanisms."
     },
     "https://theconversation.com/youth-protests-across-europe-the-overlapping-crises-facing-gen-z-294754": {
       "at": "2026-10-24T01:40:01.768Z",
@@ -1459,6 +1499,11 @@
       "at": "2026-11-05T03:33:42.200Z",
       "feed": "nasa-science",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge": {
+      "at": "2026-11-09T02:41:36.168Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: This is a student contest announcement and institutional promotion."
     },
     "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications": {
       "at": "2026-11-05T03:34:57.862Z",
@@ -1736,9 +1781,9 @@
       "error": "triage: score 2: An award announcement for a teen activist is personnel promotion rather than an explanatory article."
     },
     "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack": {
-      "at": "2026-11-08T02:32:35.911Z",
+      "at": "2026-11-09T02:42:30.929Z",
       "feed": "npr-health",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+      "error": "Gemini reply unusable after a retry (hook_en)"
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -1999,6 +2044,16 @@
       "at": "2026-11-08T02:31:52.716Z",
       "feed": "sciencedaily",
       "error": "triage: score 2: Monthly stargazing calendars are transient events rather than evergreen conceptual explainers."
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261106174535.htm": {
+      "at": "2026-11-09T02:42:08.457Z",
+      "feed": "sciencedaily",
+      "slug": "ancient-fossils-reveal-a-surprising-twist-in-ocean-evolution"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261106174537.htm": {
+      "at": "2026-11-09T02:41:45.036Z",
+      "feed": "sciencedaily",
+      "slug": "researchers-map-a-fundamental-space-time-limit-for-electrons"
     },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
