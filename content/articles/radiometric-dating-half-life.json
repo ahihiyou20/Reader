@@ -1,0 +1,105 @@
+{
+  "slug": "radiometric-dating-half-life",
+  "status": "published",
+  "publishAt": "2026-11-10T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "radiometric dating",
+    "half-life",
+    "geology",
+    "isotopes",
+    "earth history"
+  ],
+  "title": {
+    "en": "How a half-life turns decaying atoms into a geologic clock",
+    "vi": "Chu kỳ bán rã biến nguyên tử phân rã thành đồng hồ địa chất ra sao"
+  },
+  "hook": {
+    "en": "Geologists can put dates on rocks, not just order them. Certain radioactive atoms decay at [p:fixed, known rates], so counting the parent and daughter atoms in a rock can show how long ago it formed. The method rests on a simple idea that is hard to apply, because the measurements involve very small amounts of matter.",
+    "vi": "Các nhà địa chất có thể đặt niên đại cho đá, chứ không chỉ sắp xếp chúng theo thứ tự. Một số nguyên tử phóng xạ phân rã với [p:tốc độ cố định và đã biết], nên đếm số nguyên tử mẹ và nguyên tử con trong một mẫu đá có thể cho biết nó hình thành cách đây bao lâu. Ý tưởng cơ bản đơn giản, nhưng áp dụng thì khó, vì phép đo làm việc với lượng vật chất rất nhỏ."
+  },
+  "sections": [
+    {
+      "heading_en": "Isotopes and decay",
+      "heading_vi": "Đồng vị và sự phân rã",
+      "body_en": "Atoms of the same element can have different numbers of neutrons. Those variants are called isotopes. In radioactive decay, an isotope, the parent, loses particles from its nucleus and becomes an isotope of a new element, the daughter {usgs-decay}. The rate is expressed as a half-life, the time it takes for half of a sample to decay {usgs-decay}. Most radioactive isotopes lose their radioactivity within days or years. A few decay slowly, and those are the ones used as geologic clocks {usgs-decay}.",
+      "body_vi": "Các nguyên tử của cùng một nguyên tố có thể khác nhau về số neutron. Những biến thể đó gọi là đồng vị. Trong phân rã phóng xạ, một đồng vị, gọi là mẹ, phát ra hạt từ hạt nhân và trở thành một đồng vị của nguyên tố mới, gọi là con {usgs-decay}. Tốc độ phân rã được biểu thị bằng [p:chu kỳ bán rã] (*half-life*), tức thời gian để một nửa mẫu phân rã {usgs-decay}. Hầu hết đồng vị phóng xạ mất hết tính phóng xạ trong vài ngày hoặc vài năm. Chỉ một số ít phân rã chậm, và chính chúng được dùng làm đồng hồ địa chất {usgs-decay}."
+    },
+    {
+      "heading_en": "The clocks in use",
+      "heading_vi": "Những đồng hồ đang được dùng",
+      "body_en": "The USGS lists the parent and daughter pairs most often used to date ancient rocks. Uranium-238 decays to lead-206 with a half-life of [y:4.5 billion years]. Potassium-40 decays to argon-40 with a half-life of 1.25 billion years. Rubidium-87 decays to strontium-87 with a half-life of 48.8 billion years {usgs-decay}. Carbon-14, with a half-life of 5,730 years, suits much younger material. Its short half-life lets it date events in the recent past {usgs-radiometric}. Each pair has its own half-life, so each suits a different span of time {usgs-decay}.",
+      "body_vi": "USGS liệt kê các cặp mẹ và con thường dùng để tuổi đá cổ. Uranium-238 phân rã thành chì-206 với chu kỳ bán rã [y:4,5 tỷ năm]. Kali-40 phân rã thành argon-40 với chu kỳ bán rã 1,25 tỷ năm. Rubidi-87 phân rã thành stronti-87 với chu kỳ bán rã 48,8 tỷ năm {usgs-decay}. Carbon-14, với chu kỳ bán rã 5.730 năm, phù hợp với vật liệu trẻ hơn nhiều. Chu kỳ ngắn của nó cho phép xác định niên đại các sự kiện gần đây hơn {usgs-radiometric}. Mỗi cặp có chu kỳ bán rã riêng, nên mỗi cặp phù hợp với một khoảng thời gian khác nhau {usgs-decay}."
+    },
+    {
+      "heading_en": "The age equation",
+      "heading_vi": "Phương trình tuổi",
+      "body_en": "The age relation is t = (1/δ) ln(1 + D/P). Here t is the age, D is the number of daughter atoms today, P is the number of parent atoms today, and δ is the decay constant {usgs-decay}. The decay constant follows from the half-life through t½ = ln 2 / δ {usgs-decay}. The formula is short. The hard part is the laboratory work, because the principal difficulty is measuring very small amounts of isotopes precisely {usgs-decay}. Analytical methods are used to count the parent and daughter isotopes in each specimen {usgs-decay}.",
+      "body_vi": "Quan hệ tuổi là t = (1/δ) ln(1 + D/P). Ở đây t là tuổi, D là số nguyên tử con hiện có, P là số nguyên tử mẹ hiện có, và δ là hằng số phân rã {usgs-decay}. Hằng số phân rã suy ra từ chu kỳ bán rã qua công thức t½ = ln 2 / δ {usgs-decay}. Công thức ngắn gọn. Phần khó nằm ở công việc trong phòng thí nghiệm, vì trở ngại chính là đo chính xác những lượng đồng vị rất nhỏ {usgs-decay}. Các phương pháp phân tích được dùng để đếm số đồng vị mẹ và con trong từng mẫu {usgs-decay}."
+    },
+    {
+      "heading_en": "A method built over a century",
+      "heading_vi": "Một phương pháp được xây dựng suốt hơn một thế kỷ",
+      "body_en": "The idea dates to 1905, when Lord Rutherford first suggested using radioactivity to measure geologic time directly. In 1907, B. B. Boltwood of Yale published a list of ages based on radioactivity. Boltwood's numbers were later revised, but they correctly showed that geologic time is measured in hundreds of millions to thousands of millions of years {usgs-decay}. The USGS dates precise radiometric dating to after 1950 {usgs-decay}. The USGS notes that Rutherford made this first clear suggestion after defining the structure of the atom {usgs-decay}.",
+      "body_vi": "Ý tưởng này bắt đầu từ năm 1905, khi Lord Rutherford lần đầu đề xuất dùng phóng xạ để đo trực tiếp thời gian địa chất. Năm 1907, B. B. Boltwood của Đại học Yale công bố danh sách tuổi dựa trên phóng xạ. Các con số của Boltwood sau này được điều chỉnh, nhưng chúng đã đúng khi cho thấy thời gian địa chất được tính bằng hàng trăm triệu đến hàng tỷ năm {usgs-decay}. USGS cho biết việc định tuổi phóng xạ chính xác được thực hiện từ sau năm 1950 {usgs-decay}. USGS ghi nhận rằng Rutherford đưa ra gợi ý rõ ràng đầu tiên này sau khi đã xác định cấu trúc của nguyên tử {usgs-decay}."
+    },
+    {
+      "heading_en": "Thousands of dated rocks",
+      "heading_vi": "Hàng nghìn mẫu đá đã được định tuổi",
+      "body_en": "The USGS says literally thousands of dated materials now bracket episodes in Earth's history {usgs-decay}. The method has also been refined. Scientists revise points on the time scale as they learn more about how isotopes behave in the crust, so the chart shows the present state of knowledge rather than a final answer {usgs-decay}. Before precise dates existed, geologists grouped Earth's history into relative units such as eras and periods, based on the life and disturbances recorded in rocks {usgs-decay}.",
+      "body_vi": "USGS cho biết hiện có hàng nghìn mẫu vật đã được định tuổi, khoanh vùng các giai đoạn trong lịch sử Trái Đất {usgs-decay}. Phương pháp cũng được tinh chỉnh liên tục. Các nhà khoa học điều chỉnh các mốc trên thang thời gian khi hiểu rõ hơn cách đồng vị hoạt động trong vỏ Trái Đất, nên biểu đồ phản ánh hiểu biết hiện tại chứ không phải đáp án cuối cùng {usgs-decay}. Trước khi có niên đại chính xác, các nhà địa chất đã chia lịch sử Trái Đất thành các đơn vị tương đối như đại và kỷ, dựa trên sự sống và các biến động được ghi trong đá {usgs-decay}."
+    },
+    {
+      "heading_en": "Choosing a clock for the job",
+      "heading_vi": "Chọn đồng hồ phù hợp với việc cần làm",
+      "body_en": "Each parent isotope suits a different span of time. Uranium-235 decays to lead-207 with a half-life of 704 million years, while samarium-147 decays to neodymium-143 with a half-life of 106 billion years {usgs-decay}. Thorium-232 decays to lead-208 with a half-life of 14.0 billion years {usgs-decay}. The USGS lists these parent and daughter pairs as the ones most commonly used to date ancient rocks {usgs-decay}. Radiocarbon is the exception, because its short half-life suits recent events {usgs-radiometric}.",
+      "body_vi": "Mỗi đồng vị mẹ phù hợp với một khoảng thời gian khác nhau. Uranium-235 phân rã thành chì-207 với chu kỳ bán rã 704 triệu năm, còn samarium-147 phân rã thành neodymium-143 với chu kỳ bán rã 106 tỷ năm {usgs-decay}. Thorium-232 phân rã thành chì-208 với chu kỳ bán rã 14,0 tỷ năm {usgs-decay}. USGS liệt kê các cặp mẹ và con này là những cặp thường được dùng nhất để định tuổi đá cổ {usgs-decay}. Radiocarbon là ngoại lệ, vì chu kỳ bán rã ngắn của nó phù hợp với các sự kiện gần đây {usgs-radiometric}."
+    }
+  ],
+  "keyPoint": {
+    "en": "[p:A radioactive atom behaves like a clock that runs at a known rate, so the ratio of daughter to parent atoms records elapsed time.] The idea is simple, the laboratory work is hard, and geologists revise the time scale as knowledge improves, so it is a working estimate rather than a final answer.",
+    "vi": "[p:Một nguyên tử phóng xạ hoạt động như chiếc đồng hồ chạy với tốc độ đã biết, nên tỷ lệ giữa nguyên tử con và nguyên tử mẹ ghi lại thời gian đã trôi qua.] Ý tưởng đơn giản, công việc trong phòng thí nghiệm khó, và các nhà địa chất điều chỉnh thang thời gian khi hiểu biết tiến bộ, nên đây là một ước lượng đang hoàn thiện chứ không phải đáp án cuối cùng."
+  },
+  "applySteps": {
+    "en": [
+      "Calculate how much of a carbon-14 sample would remain after one half-life of 5,730 years, and after two.",
+      "Find the geologic age of a rock near you on a geological map, and note whether the age is given as a radiometric date or only as a relative period.",
+      "Read the USGS table and note which parent isotope suits a rock older than one billion years."
+    ],
+    "vi": [
+      "Tính xem sau một chu kỳ bán rã 5.730 năm và sau hai chu kỳ, còn lại bao nhiêu carbon-14 trong một mẫu.",
+      "Tìm tuổi địa chất của một tảng đá gần bạn trên bản đồ địa chất, và ghi xem tuổi đó là niên đại phóng xạ hay chỉ là một giai đoạn tương đối.",
+      "Đọc bảng của USGS và ghi lại đồng vị mẹ nào phù hợp để định tuổi một tảng đá cổ hơn một tỷ năm."
+    ]
+  },
+  "references": [
+    {
+      "id": "usgs-decay",
+      "label": "USGS: Geologic Age, using radioactive decay to determine geologic age",
+      "url": "https://www.usgs.gov/educational-resources/geologic-age-using-radioactive-decay-determine-geologic-age"
+    },
+    {
+      "id": "usgs-radiometric",
+      "label": "USGS Geologic Time: Radiometric Time Scale",
+      "url": "https://pubs.usgs.gov/gip/geotime/radiometric.html"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/radiometric-dating-half-life.webp",
+    "provider": "unsplash",
+    "author": "Paul Jarvis",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/I_9ILwtsl_k"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBgbjSrttuy9Z/eYe8kmFgD+/IXbdUCNuBaGj3UhQFlDBJzU8kekzNRotuLJu8uJ2oTc9dk2yHQyGAAhPEuqtUhJp3dyonAx6t7PJ+l0GYUXsurtSkdOa2SYXvOE/IXQAA==",
+  "dominant": "#5c5956"
+}
