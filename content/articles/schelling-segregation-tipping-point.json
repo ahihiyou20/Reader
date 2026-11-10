@@ -1,0 +1,111 @@
+{
+  "slug": "schelling-segregation-tipping-point",
+  "status": "published",
+  "publishAt": "2026-11-10T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "segregation",
+    "tipping point",
+    "schelling model",
+    "neighbourhoods",
+    "social dynamics"
+  ],
+  "title": {
+    "en": "Schelling's tipping point: why mild preferences can segregate a city",
+    "vi": "Điểm lật của Schelling: vì sao những ưa thích nhẹ cũng có thể phân tách một thành phố"
+  },
+  "hook": {
+    "en": "In a 1971 paper, Thomas Schelling showed that extreme segregation can arise from individual preferences in social interaction, with no single decision to segregate anyone. His model's key feature is a [p:tipping point], a level beyond which a neighbourhood changes suddenly rather than gradually.",
+    "vi": "Trong một bài báo năm 1971, Thomas Schelling cho thấy sự phân tách cực đoan có thể nảy sinh từ những ưa thích cá nhân trong tương tác xã hội, mà không cần ai ra một quyết định phân tách. Điểm then chốt của mô hình là [p:điểm lật], một mức mà sau đó khu phố thay đổi đột ngột thay vì dần dần."
+  },
+  "sections": [
+    {
+      "heading_en": "A line each household will not cross",
+      "heading_vi": "Một ngưỡng mà mỗi hộ không muốn vượt qua",
+      "body_en": "Schelling's model assumes that one group is indifferent to neighbourhoods where its share stays below a threshold, but unwilling to accept a share above it {card-tipping}. Below that threshold a neighbourhood is stable. If an injection of newcomers pushes the share above the threshold, the whole group leaves, and the neighbourhood becomes almost entirely the other group {card-tipping}. The change is discontinuous, so a small shift can produce a large one. Such preferences are often described by a tolerance threshold, the largest share of neighbours of another type that a person will accept {aps-tipping}.",
+      "body_vi": "Mô hình của Schelling giả định rằng một nhóm không quan tâm đến khu phố mà tỷ lệ của họ vẫn dưới một ngưỡng, nhưng không chấp nhận tỷ lệ vượt ngưỡng đó {card-tipping}. Dưới ngưỡng này khu phố ổn định. Nếu một làn sóng người mới đẩy tỷ lệ vượt ngưỡng, cả nhóm sẽ rời đi, và khu phố gần như hoàn toàn thuộc về nhóm kia {card-tipping}. Sự thay đổi này không liên tục, nên một dịch chuyển nhỏ có thể tạo ra một thay đổi lớn. Những ưa thích như vậy thường được mô tả bằng một ngưỡng dung nạp, tức tỷ lệ láng giềng thuộc nhóm khác lớn nhất mà một người chấp nhận {aps-tipping}."
+    },
+    {
+      "heading_en": "An unstable point between two stable ones",
+      "heading_vi": "Một điểm bất ổn nằm giữa hai trạng thái ổn định",
+      "body_en": "The tipping point works like an unstable equilibrium. A neighbourhood sitting just below it can stay put, while one just above it gets pushed toward the other extreme. The paper's authors describe this as a cascade of white flight once the minority share exceeds the tipping point {card-tipping}. In their empirical analysis they find rapid declines in the majority population just beyond the point, which is the pattern the model predicts {card-tipping}.",
+      "body_vi": "Điểm lật hoạt động như một trạng thái cân bằng bất ổn. Khu phố nằm ngay dưới điểm này có thể đứng yên, còn khu phố nằm ngay trên nó bị đẩy về phía cực đối diện. Các tác giả bài báo mô tả đây là một chuỗi rời bỏ hàng loạt khi tỷ lệ nhóm thiểu số vượt điểm lật {card-tipping}. Trong phân tích thực nghiệm, họ thấy dân số nhóm đa số giảm nhanh ngay sau điểm này, đúng như mô hình dự đoán {card-tipping}."
+    },
+    {
+      "heading_en": "Mild preferences, strong results",
+      "heading_vi": "Ưa thích nhẹ, kết quả mạnh",
+      "body_en": "Schelling-type models show that a mild in-group preference is enough to produce segregation {aps-tipping}. People do not need to want full separation. Even if agents prefer perfect integration, a best-response dynamic, in which people move only when they gain, can still lead to segregation {aps-tipping}. Individual choices that each look reasonable can add up to a collective pattern nobody chose.",
+      "body_vi": "Kết luận chính của các mô hình kiểu Schelling là một ưa thích nhẹ đối với nhóm của mình cũng đủ tạo ra sự phân tách {aps-tipping}. Mọi người không cần muốn tách biệt hoàn toàn. Ngay cả khi các tác nhân ưa thích sự hòa nhập hoàn toàn, một quy trình phản ứng tốt nhất, trong đó người ta chỉ chuyển đi khi có lợi, vẫn có thể dẫn đến phân tách {aps-tipping}. Những lựa chọn cá nhân nào cũng có vẻ hợp lý có thể cộng lại thành một kiểu hình tập thể mà không ai đã chọn."
+    },
+    {
+      "heading_en": "Testing the tipping in real cities",
+      "heading_vi": "Thử nghiệm điểm lật ở các thành phố thật",
+      "body_en": "The paper's authors test whether real neighbourhoods show the tipping pattern. They find that tipping points vary by city and are correlated across successive decades {card-tipping}. The change in population appears to shift relatively abruptly in a small region around the point {card-tipping}. The authors also show that the estimated jump shrinks when they control more flexibly for distance from the tipping point, so the sharpness of the break depends on how the test is set up {card-tipping}.",
+      "body_vi": "Các tác giả bài báo kiểm tra xem các khu phố thật có cho thấy mẫu hình điểm lật hay không. Họ thấy điểm lật khác nhau giữa các thành phố và có tương quan qua các thập kỷ liên tiếp {card-tipping}. Dân số dường như thay đổi tương đối đột ngột trong một vùng nhỏ quanh điểm này {card-tipping}. Các tác giả cũng cho thấy mức nhảy được ước tính sẽ giảm khi kiểm soát linh hoạt hơn khoảng cách tới điểm lật, nên độ sắc nét của bước ngoặt phụ thuộc vào cách kiểm định được thiết lập {card-tipping}."
+    },
+    {
+      "heading_en": "What the model cannot measure",
+      "heading_vi": "Điều mô hình không đo được",
+      "body_en": "A model can show a mechanism, but the boundaries in real data are messy. The paper's authors note that neighbourhoods do not correspond perfectly to the areas that enter residents' preferences {card-tipping}. The authors also conclude that the tipping behaviour they identify is driven by preferences over neighbourhood composition, and that these preferences are the key determinant of the dynamics {card-tipping}. Measuring those preferences directly is harder than fitting a curve to population counts. The authors also relate where the tipping point sits in each city to the racial attitudes of white residents {card-tipping}.",
+      "body_vi": "Một mô hình có thể chỉ ra cơ chế, nhưng ranh giới trong dữ liệu thật rất lộn xộn. Các tác giả bài báo lưu ý rằng khu phố không trùng khớp hoàn hảo với những vùng ảnh hưởng đến sở thích của cư dân {card-tipping}. Các tác giả cũng kết luận rằng hành vi điểm lật họ xác định được thúc đẩy bởi sở thích về thành phần cư dân khu phố, và các sở thích này là yếu tố quyết định chính của động lực đó {card-tipping}. Đo trực tiếp những sở thích đó khó hơn nhiều so với việc khớp một đường cong vào số liệu dân số. Các tác giả cũng liên hệ vị trí điểm lật ở mỗi thành phố với thái độ về chủng tộc của cư dân da trắng {card-tipping}."
+    },
+    {
+      "heading_en": "Why the mechanism matters",
+      "heading_vi": "Vì sao cơ chế này quan trọng",
+      "body_en": "Schelling's model explains why a neighbourhood can flip quickly even though each household follows a simple rule. It also explains why tipping points can differ by place. The useful question is therefore not only what people prefer, but how close a neighbourhood sits to its threshold, and what a small change in its composition sets off.",
+      "body_vi": "Mô hình của Schelling giải thích vì sao một khu phố có thể đổi hẳn nhanh chóng ngay cả khi mỗi hộ chỉ theo một quy tắc đơn giản. Nó cũng giải thích vì sao điểm lật có thể khác nhau giữa các nơi. Câu hỏi hữu ích vì thế không chỉ là người ta thích gì, mà còn là khu phố đang nằm cách ngưỡng của mình bao xa, và một thay đổi nhỏ về thành phần cư dân sẽ kích hoạt điều gì."
+    },
+    {
+      "heading_en": "Open neighbourhoods",
+      "heading_vi": "Các khu phố mở",
+      "body_en": "A recent APS paper extends Schelling's approach to open neighbourhoods, where the number of residents is not fixed, although the number of houses is {aps-tipping}. Its title names the central point, symmetric preferences with asymmetric outcomes: the same mild preferences can produce very different neighbourhoods {aps-tipping}. Modelling moves as reactions, in which residents leave or arrive, also helps the model avoid frozen states in which the system gets stuck {aps-tipping}. In the model, each site is either empty or holds a resident of one of two types {aps-tipping}.",
+      "body_vi": "Một bài báo gần đây trên APS mở rộng cách tiếp cận của Schelling sang các khu phố mở, nơi số cư dân không cố định, dù số nhà thì có {aps-tipping}. Tiêu đề bài báo nêu điểm cốt lõi là các ưa thích đối xứng dẫn đến kết quả bất đối xứng: cùng những ưa thích nhẹ có thể tạo ra các khu phố rất khác nhau {aps-tipping}. Mô hình hóa các chuyển động như phản ứng, trong đó cư dân rời đi hoặc đến nơi, cũng giúp mô hình tránh các trạng thái đóng băng, nơi hệ thống bị kẹt {aps-tipping}. Trong mô hình, mỗi ô hoặc trống, hoặc có một cư dân thuộc một trong hai loại {aps-tipping}."
+    }
+  ],
+  "keyPoint": {
+    "en": "[p:A small, shared preference can produce a sudden tipping point, so the outcome can be far more extreme than the preferences behind it.] Real neighbourhoods are harder to measure than the model, and the tipping points differ from city to city.",
+    "vi": "[p:Một ưa thích nhỏ được nhiều người cùng chia sẻ có thể tạo ra một điểm lật đột ngột, nên kết quả có thể cực đoan hơn nhiều so với các ưa thích đứng sau.] Các khu phố thật khó đo hơn mô hình, và điểm lật khác nhau giữa các thành phố."
+  },
+  "applySteps": {
+    "en": [
+      "Read the title and journal of Schelling's 1971 paper as cited in the Card paper, and restate its central claim in one sentence of your own.",
+      "Draw a row of twenty squares, colour ten of them two different colours, and move a square whenever most of its neighbours are another colour. Watch the row for fifty moves.",
+      "Compare the boundary of a neighbourhood you know on two maps from different decades, and note whether the population mix changed."
+    ],
+    "vi": [
+      "Đọc tên và tạp chí của bài báo năm 1971 của Schelling như được trích trong bài của Card, và viết lại luận điểm chính bằng một câu của riêng bạn.",
+      "Vẽ một hàng hai mươi ô vuông, tô màu mười ô bằng hai màu khác nhau, và chuyển một ô sang chỗ trống mỗi khi phần lớn ô lân cận có màu khác. Quan sát hàng đó trong năm mươi lượt.",
+      "So sánh ranh giới của một khu phố bạn biết trên hai bản đồ của hai thập kỷ khác nhau, và ghi lại cơ cấu dân cư có thay đổi không."
+    ]
+  },
+  "references": [
+    {
+      "id": "card-tipping",
+      "label": "Tipping and the Dynamics of Segregation (working paper, Berkeley)",
+      "url": "https://davidcard.berkeley.edu/papers/segr-nbhood.pdf"
+    },
+    {
+      "id": "aps-tipping",
+      "label": "Tipping dynamics in an open-city segregation model, Physical Review Research",
+      "url": "https://link.aps.org/doi/10.1103/4qgg-wz64"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/schelling-segregation-tipping-point.webp",
+    "provider": "unsplash",
+    "author": "Aleks Dorohovich",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/nJdwUHmaY8A"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoQABwAPu1kqk4ppaQiMAgBMB2JaACdMoACbQaRgSPqfNYpoQAA/uAAy+jq+3LHUQnrbN9VK5+OjqEDVmJvSAyuLemszmwjv6atXoL6LtTOvBwd783yh4/yK8mP5JsYPMynF3OTFrx3X2Hx8JM65G+QkdvuX3OY1tQUD+a0rihI0snf9/i/6d1vqVrV8eCqwButmQrDXoZmvhswoAA=",
+  "dominant": "#998a7f"
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "bank-runs-deposit-insurance",
+  "status": "published",
+  "publishAt": "2026-11-10T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "bank runs",
+    "deposit insurance",
+    "banking",
+    "financial crisis",
+    "liquidity"
+  ],
+  "title": {
+    "en": "Why a rumour can sink a sound bank, and how runs stop",
+    "vi": "Vì sao một tin đồn có thể đánh sập ngân hàng lành mạnh, và điều gì ngăn được cơn hoảng loạn"
+  },
+  "hook": {
+    "en": "Imagine a bank that is sound, but whose depositors suddenly believe it is not. They all rush to withdraw, and the bank must sell its loans early, often at a loss. This is a bank run. A 1983 model by Douglas Diamond and Philip Dybvig showed that [p:a rumour can be enough to start one], whether or not the rumour is true.",
+    "vi": "Hãy tưởng tượng một ngân hàng vẫn lành mạnh, nhưng người gửi tiền đột nhiên tin rằng nó không còn an toàn. Tất cả cùng rút tiền, và ngân hàng phải bán khoản vay sớm, thường với lỗ. Đây là một [p:cơn bank run] (*bank run*), tức cơn ồ ạt rút tiền khỏi ngân hàng. Mô hình năm 1983 của Douglas Diamond và Philip Dybvig cho thấy [p:chỉ một tin đồn cũng đủ để khởi phát nó], dù tin đồn đúng hay sai."
+  },
+  "sections": [
+    {
+      "heading_en": "Borrowing short, lending long",
+      "heading_vi": "Vay ngắn hạn, cho vay dài hạn",
+      "body_en": "Banks do something useful that also makes them fragile. Depositors can withdraw their money whenever they like, while a bank's loans go to long-term projects. The model's bank turns long-term investments into accounts that can be withdrawn at short notice {nobel-2022}. That is how banks create liquidity for savers. If a long project is stopped early, though, its returns are very low, so the bank's promise to pay on demand holds only while most depositors leave their money in place. Banks are sometimes criticised for creating money, but in this model that is precisely why they exist {nobel-2022}.",
+      "body_vi": "Ngân hàng làm một việc hữu ích, nhưng cũng khiến chúng dễ tổn thương. Người gửi tiền có thể rút tiền bất cứ lúc nào, trong khi khoản vay của ngân hàng đổ vào các dự án dài hạn, sinh lời chậm. Ngân hàng trong mô hình biến các khoản đầu tư dài hạn thành tài khoản có thể rút trong thời gian ngắn {nobel-2022}. Đó là cách ngân hàng tạo thanh khoản cho người tiết kiệm. Tuy vậy, nếu một dự án dài hạn bị dừng sớm, lợi nhuận thu về rất thấp, nên lời hứa trả tiền theo yêu cầu chỉ đứng vững khi phần lớn người gửi để tiền yên chỗ. Ngân hàng đôi khi bị chỉ trích vì tạo ra tiền, nhưng theo mô hình này, đó chính là lý do chúng tồn tại {nobel-2022}."
+    },
+    {
+      "heading_en": "How a rumour becomes a run",
+      "heading_vi": "Từ tin đồn đến cơn ồ ạt rút tiền",
+      "body_en": "Depositors cannot easily check the bank's loans, so a rumour of failure can spread faster than the facts. Once some people start to withdraw, it becomes rational for everyone to follow, because a late depositor may lose the money for good. Investopedia describes this as a self-fulfilling prophecy {investopedia}. The bank then sells assets quickly, and the losses from those fire sales can cause the collapse that depositors feared {nobel-2022}.",
+      "body_vi": "Người gửi tiền khó tự kiểm tra các khoản vay của ngân hàng, nên một tin đồn về sự sụp đổ có thể lan nhanh hơn sự thật. Khi một số người bắt đầu rút, mọi người khác cũng có lý do để làm theo, vì người đến muộn có thể mất hẳn số tiền. Investopedia gọi đây là một lời tiên tri tự ứng nghiệm {investopedia}. Ngân hàng khi ấy phải bán tài sản gấp, và khoản lỗ từ việc bán vội có thể dẫn đến chính sự sụp đổ mà người gửi tiền lo sợ {nobel-2022}."
+    },
+    {
+      "heading_en": "Why insurance stops the run",
+      "heading_vi": "Vì sao bảo hiểm tiền gửi ngăn được cơn hoảng loạn",
+      "body_en": "The model's fix is a government guarantee on deposits. When depositors know the state will repay them, they have no reason to rush when a rumour starts, so [g:the run never begins] {nobel-2022}. Investopedia notes that the FDIC in the United States was founded after the Great Depression, and that deposit insurance has since reduced bank runs and failures by supporting public confidence {investopedia}. In theory, the insurance may never need to be used, because its existence prevents the run. Investopedia adds that Diamond and Dybvig present deposit insurance as a better approach than suspending convertibility, the alternative they considered {investopedia}.",
+      "body_vi": "Lời giải của mô hình là một cam kết bảo đảm tiền gửi từ nhà nước. Khi người gửi biết nhà nước sẽ hoàn trả tiền, họ không có lý do để chạy đua khi tin đồn xuất hiện, nên [g:cơn ồ ạt rút tiền không bắt đầu] {nobel-2022}. Investopedia ghi nhận rằng FDIC ở Mỹ được lập sau Đại suy thoái, và bảo hiểm tiền gửi từ đó đã giảm các cơn bank run và số ngân hàng đổ vỡ nhờ củng cố niềm tin của công chúng {investopedia}. Về lý thuyết, bảo hiểm có thể không bao giờ phải dùng đến, vì chính sự tồn tại của nó đã ngăn cơn hoảng loạn. Investopedia cũng cho biết Diamond và Dybvig xem bảo hiểm tiền gửi là cách tiếp cận tốt hơn so với đình chỉ khả năng hoàn trả, phương án mà họ đã cân nhắc {investopedia}."
+    },
+    {
+      "heading_en": "The insurance has a price",
+      "heading_vi": "Bảo hiểm cũng có cái giá",
+      "body_en": "Insurance changes incentives. The Nobel committee notes that deposit insurance does not always work as intended. It may encourage banks to take risky bets, with taxpayers paying if those bets go badly {nobel-2022}. Investopedia makes a similar point: depositors who trust the system may let banks take on excessive risk, because a run becomes less likely {investopedia}. Good regulation therefore has to limit risk-taking as well as prevent panic.",
+      "body_vi": "Bảo hiểm làm thay đổi động cơ hành xử. Ủy ban Nobel lưu ý rằng bảo hiểm tiền gửi không phải lúc nào cũng vận hành như mong đợi. Nó có thể khuyến khích ngân hàng đặt cược rủi ro, còn người nộp thuế phải gánh hậu quả nếu các cược đó thua {nobel-2022}. Investopedia cũng nêu một ý tương tự: người gửi tin vào hệ thống có thể để ngân hàng nhận rủi ro quá mức, vì cơn bank run trở nên ít khả năng xảy ra hơn {investopedia}. Vì vậy, quy định tốt phải hạn chế việc chấp nhận rủi ro, không chỉ ngăn hoảng loạn."
+    },
+    {
+      "heading_en": "Who watches the bank",
+      "heading_vi": "Ai giám sát ngân hàng",
+      "body_en": "The model also explains why banks exist at all. A bank checks its borrowers after lending, which lowers the cost of moving savings into productive investment {nobel-2022}. One conclusion of Diamond's article is that depositors do not need to monitor the bank closely, because of how banks are organised {nobel-2022}. That is why a single rumour can sink a bank, even though ordinary depositors could never audit its loans.",
+      "body_vi": "Mô hình cũng giải thích vì sao ngân hàng tồn tại. Ngân hàng kiểm tra người vay sau khi cho vay, giúp giảm chi phí đưa tiền tiết kiệm vào các khoản đầu tư sinh lợi {nobel-2022}. Một kết luận trong bài báo của Diamond là người gửi tiền không cần giám sát ngân hàng sát sao, nhờ cách ngân hàng được tổ chức {nobel-2022}. Đó cũng là lý do một tin đồn có thể đánh sập ngân hàng, dù người gửi bình thường không thể tự kiểm toán các khoản vay của nó."
+    },
+    {
+      "heading_en": "A starting point, not a full map",
+      "heading_vi": "Điểm xuất phát, không phải bản đồ đầy đủ",
+      "body_en": "The Nobel committee describes the 1983 work as the foundation of modern bank regulation, which aims to keep the financial system stable {nobel-2022}. The committee also says regulation cannot always keep pace with a financial system that changes quickly {nobel-2022}. The model shows why runs happen and how insurance helps. It does not settle how much risk a bank should be allowed to take.",
+      "body_vi": "Ủy ban Nobel mô tả công trình năm 1983 là nền tảng của quy định ngân hàng hiện đại, nhằm giữ cho hệ thống tài chính ổn định {nobel-2022}. Ủy ban cũng cho rằng quy định không phải lúc nào cũng theo kịp một hệ thống tài chính thay đổi nhanh {nobel-2022}. Mô hình giải thích vì sao cơn bank run xảy ra và bảo hiểm giúp ích thế nào. Nó không trả lời được câu hỏi ngân hàng nên được phép chấp nhận bao nhiêu rủi ro."
+    },
+    {
+      "heading_en": "Why good borrowers can still fail",
+      "heading_vi": "Vì sao người vay tốt vẫn có thể thất bại",
+      "body_en": "Lending carries risk even when it is done well. The Nobel committee notes that borrowers who did their jobs well and wasted no money can still go bankrupt, which creates unnecessary costs for society {nobel-2022}. Banks therefore check borrowers at the start and follow each investment as it progresses {nobel-2022}. Diamond and Dybvig show that acting as an intermediary reduces the costs of bankruptcy and of monitoring {nobel-2022}. The discipline has a limit, though: a bank that cuts corners on monitoring risks large losses, and then cannot repay its depositors {nobel-2022}.",
+      "body_vi": "Cho vay luôn mang rủi ro, kể cả khi làm đúng. Ủy ban Nobel lưu ý rằng người vay làm ăn tốt và không lãng phí tiền vẫn có thể phá sản, và điều đó tạo ra chi phí không cần thiết cho xã hội {nobel-2022}. Vì vậy ngân hàng kiểm tra người vay ngay từ đầu và theo dõi từng khoản đầu tư khi nó tiến triển {nobel-2022}. Diamond và Dybvig cho thấy vai trò trung gian của ngân hàng làm giảm chi phí phá sản và chi phí giám sát {nobel-2022}. Tuy vậy, kỷ luật này có giới hạn: một ngân hàng cắt xén việc giám sát sẽ đối mặt thua lỗ lớn, rồi không thể trả tiền cho người gửi {nobel-2022}."
+    }
+  ],
+  "keyPoint": {
+    "en": "A bank's promise to repay on demand holds only while most depositors do not ask at once. [p:Deposit insurance works because it removes the reason to rush], but the same guarantee can encourage risk, so it needs rules to keep banks careful.",
+    "vi": "Lời hứa trả tiền theo yêu cầu của ngân hàng chỉ đứng vững khi không quá nhiều người cùng đòi tiền. [p:Bảo hiểm tiền gửi có tác dụng vì nó loại bỏ lý do phải chạy đua], nhưng chính sự bảo đảm đó lại có thể khuyến khích rủi ro, nên cần luật lệ để ngân hàng vẫn thận trọng."
+  },
+  "applySteps": {
+    "en": [
+      "Check whether the bank where you hold savings is covered by a government deposit guarantee, and find out the limit.",
+      "Write down how much of your money you could reach within a day if you needed it.",
+      "Read the Nobel Prize explainer on banks and note the one sentence that describes the run."
+    ],
+    "vi": [
+      "Kiểm tra xem ngân hàng nơi bạn gửi tiết kiệm có được nhà nước bảo đảm tiền gửi không, và tìm hiểu mức bảo đảm.",
+      "Ghi lại bao nhiêu tiền trong tài khoản của bạn có thể rút trong một ngày nếu cần.",
+      "Đọc bài giải thích của giải Nobel về ngân hàng và ghi lại câu mô tả cơn bank run."
+    ]
+  },
+  "references": [
+    {
+      "id": "nobel-2022",
+      "label": "Nobel Prize: Economic Sciences 2022, popular information",
+      "url": "https://www.nobelprize.org/prizes/economic-sciences/2022/popular-information/"
+    },
+    {
+      "id": "investopedia",
+      "label": "Investopedia: Diamond-Dybvig Model",
+      "url": "https://www.investopedia.com/diamond-dybrig-model-theory-of-bank-runs-6892094"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/bank-runs-deposit-insurance.webp",
+    "provider": "unsplash",
+    "author": "Alejandro Escamilla",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/Dl6jeyfihLk"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBACdASoQABwAPu1iqk4ppaQiMAgBMB2JZACnFYw8tkqNDOWAlAvEPxKg7gAA/vRf+muWzE98AeW52T1advEiLJBikrFmeWuxSDIVzY/2Mri7AWmSNuN+bs/8KWAML6FN0qUfQeq59RyErLqOe+9UfowB3P/n4g80WCG+ik2H99uZzMQD7bHkjANUs/4avoBwxHWjCHAZpaH+2Md0psYUITPi4RvuWhiW0hLKFp2gP019KkIOAAAA",
+  "dominant": "#444041"
+}

@@ -1,0 +1,111 @@
+{
+  "slug": "baumol-cost-disease",
+  "status": "published",
+  "publishAt": "2026-11-10T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "baumol effect",
+    "services",
+    "wages",
+    "productivity",
+    "health care"
+  ],
+  "title": {
+    "en": "Why services keep getting more expensive, even when nothing speeds up",
+    "vi": "Vì sao dịch vụ ngày càng đắt dù công việc không nhanh hơn"
+  },
+  "hook": {
+    "en": "Haircuts, childcare, legal advice and concert tickets have grown dearer over the decades, while manufactured goods have grown cheaper. William Baumol and William Bowen explained part of this in the 1960s. Their idea, now called Baumol's cost disease, is that when some sectors become more productive and wages rise everywhere, [p:sectors that cannot speed up their work must pay more for the same labour].",
+    "vi": "Cắt tóc, giữ trẻ, tư vấn pháp lý và vé hòa nhạc đều đắt lên qua nhiều thập kỷ, trong khi hàng hóa sản xuất lại rẻ đi. William Baumol và William Bowen đã giải thích một phần hiện tượng này từ những năm 1960. Ý tưởng của họ, nay gọi là [p:bệnh chi phí Baumol] (*Baumol's cost disease*), là khi một số ngành tăng năng suất và lương tăng khắp nơi, các ngành không thể làm việc nhanh hơn phải trả nhiều hơn cho cùng một sức lao động."
+  },
+  "sections": [
+    {
+      "heading_en": "The same bandage, a higher wage",
+      "heading_vi": "Cùng một băng gạc, mức lương cao hơn",
+      "body_en": "Consider a string quartet. Baumol argued that a musician playing a piece in the twentieth century was no more productive than one playing it a century earlier. The piece was neither shorter nor easier to learn {baumol-ebsco}. Yet musicians' wages rose. Wages in manufacturing had risen with productivity, and arts groups could not keep good performers on lower pay. Care work follows the same pattern: a nurse takes about as long to change a bandage as it did [y:in 1966] {baumol-wiki}.",
+      "body_vi": "Hãy lấy một tứ tấu đàn dây. Baumol lập luận rằng một nhạc công chơi một bản nhạc vào thế kỷ hai mươi không có năng suất cao hơn người chơi cùng bản đó một thế kỷ trước. Bản nhạc không ngắn hơn và cũng không dễ học hơn {baumol-ebsco}. Thế nhưng thù lao của nhạc công vẫn tăng. Lương trong công nghiệp chế tạo đã tăng cùng năng suất, và các đoàn nghệ thuật không thể giữ được nghệ sĩ giỏi nếu trả thấp hơn. Chăm sóc y tế cũng vậy: một y tá thay băng hôm nay vẫn mất thời gian như [y:năm 1966] {baumol-wiki}."
+    },
+    {
+      "heading_en": "Two sectors, one labour market",
+      "heading_vi": "Hai ngành, một thị trường lao động",
+      "body_en": "Baumol's 1967 model has two sectors. In one, output per worker stays fixed. In the other, productivity grows steadily. Workers go wherever pay is higher, so the stagnant sector must match the wages of the fast one, even though it produces no more per person. Its **unit cost** then rises. The fast sector's unit cost stays flat, because its wages and output grow together {baumol-wiki}. [p:The gap compounds: while productivity keeps diverging, the slow sector's costs keep climbing.] Goods industries follow a different pattern: workers there keep becoming more productive as their tools and equipment improve {baumol-wiki}.",
+      "body_vi": "Mô hình hai ngành của Baumol năm 1967 có một ngành mà sản lượng trên mỗi lao động không đổi và một ngành mà năng suất tăng đều. Người lao động đi về phía nơi trả lương cao hơn, nên ngành đình trệ phải trả ngang lương ngành nhanh, dù không làm ra nhiều hơn trên mỗi người. Khi đó **chi phí đơn vị** của ngành đình trệ tăng lên. Chi phí đơn vị của ngành nhanh thì đứng yên, vì lương và sản lượng cùng tăng {baumol-wiki}. [p:Khoảng cách này cộng dồn: khi năng suất còn tách xa nhau, chi phí của ngành chậm còn tiếp tục leo lên.] Ngành hàng hóa đi theo hướng khác: công nhân ở đó tiếp tục năng suất hơn khi công cụ và thiết bị được cải tiến {baumol-wiki}."
+    },
+    {
+      "heading_en": "Why the poor feel it first",
+      "heading_vi": "Vì sao người nghèo cảm nhận trước",
+      "body_en": "Baumol noted that these rising costs fall most heavily on poorer households {baumol-wiki}. Goods can get cheaper while the services people need, such as care for children or elderly relatives, become harder to afford. Health care is the usual example. Wikipedia's summary of one study says new technology does not allow large productivity gains for health professionals, and that new tools can even raise spending, because more patients get tested and more specialists must be trained {baumol-wiki}.",
+      "body_vi": "Baumol nhận xét rằng chi phí tăng này đè nặng nhất lên các hộ nghèo {baumol-wiki}. Hàng hóa có thể rẻ đi trong khi những dịch vụ thiết yếu, như chăm con nhỏ hay người già, lại khó chi trả hơn. Y tế là ví dụ thường được nhắc tới. Tóm lược của Wikipedia về một nghiên cứu cho biết công nghệ mới không cho phép tăng năng suất lớn ở nhân viên y tế, và các công cụ mới còn có thể làm chi tiêu tăng, vì nhiều bệnh nhân được xét nghiệm hơn và phải đào tạo thêm chuyên gia {baumol-wiki}."
+    },
+    {
+      "heading_en": "How much of the bill it explains",
+      "heading_vi": "Hiệu ứng này giải thích được bao nhiêu hóa đơn",
+      "body_en": "Not everyone agrees the effect explains most of the rise in health spending. A study of Canadian health care by Rossen and Faroque, published in 2016, found that the cost disease was a relatively minor contributor. Technical progress in health care and rising incomes were the bigger drivers {baumol-wiki}. The effect is one force among several, and its weight has to be measured for each service rather than assumed. A 2021 study of China found that the cost disease had a significant positive effect on health spending growth, so its size varies by country {baumol-wiki}.",
+      "body_vi": "Không phải ai cũng đồng ý rằng hiệu ứng này giải thích phần lớn mức tăng chi tiêu y tế. Một nghiên cứu về y tế Canada của Rossen và Faroque, công bố năm 2016, cho rằng bệnh chi phí chỉ là nguyên nhân khá nhỏ. Tiến bộ kỹ thuật trong y tế và thu nhập tăng mới là những động lực lớn hơn {baumol-wiki}. Đây là một lực trong số nhiều lực, và mức độ ảnh hưởng của nó cần được đo cho từng dịch vụ, không nên giả định trước. Một nghiên cứu năm 2021 về Trung Quốc cho thấy bệnh chi phí có tác động dương đáng kể lên tốc độ tăng chi tiêu y tế, nên quy mô ảnh hưởng khác nhau giữa các nước {baumol-wiki}."
+    },
+    {
+      "heading_en": "Not every rise is the wage gap",
+      "heading_vi": "Không phải mọi mức tăng đều do khoảng cách lương",
+      "body_en": "The effect does not excuse every price increase. EBSCO notes that in many labour-intensive services, costs have grown faster than wages, and that some organisations push their own costs up {baumol-ebsco}. The model explains why labour-heavy services become relatively dearer. It does not say how much of a given bill comes from wages, and that needs the cost data of each provider. EBSCO gives the arts as an example: ticket prices must rise to pay performers, which can clash with a mission to serve audiences with varied means {baumol-ebsco}.",
+      "body_vi": "Hiệu ứng này không biện minh cho mọi đợt tăng giá. EBSCO ghi nhận rằng ở nhiều dịch vụ dùng nhiều lao động, chi phí tăng nhanh hơn lương, và một số tổ chức tự đẩy chi phí của mình lên {baumol-ebsco}. Mô hình giải thích vì sao dịch vụ nặng lao động tương đối đắt hơn. Nó không cho biết bao nhiêu phần trong một hóa đơn là tiền lương, và câu hỏi đó cần dữ liệu chi phí của từng đơn vị cung cấp. EBSCO lấy nghệ thuật làm ví dụ: giá vé phải tăng để trả cho nghệ sĩ, điều này có thể xung đột với sứ mệnh phục vụ khán giả có điều kiện khác nhau {baumol-ebsco}."
+    },
+    {
+      "heading_en": "What the model predicts",
+      "heading_vi": "Mô hình dự đoán điều gì",
+      "body_en": "If productivity keeps diverging, the model has no ceiling on the cost gap. In the two-sector version, if the output ratio between sectors is held constant, more and more workers move into the stagnant sector over time {baumol-wiki}. Baumol's warning was that progress in one sector adds to the costs of the others, unless wages in the stagnant sectors can be held fixed, which he judged very unlikely {baumol-wiki}.",
+      "body_vi": "Nếu năng suất tiếp tục tách xa nhau, mô hình không đặt trần cho khoảng cách chi phí. Trong phiên bản hai ngành, nếu tỷ lệ sản lượng giữa hai ngành được giữ cố định, ngày càng nhiều lao động chuyển sang ngành đình trệ theo thời gian {baumol-wiki}. Cảnh báo của Baumol là tiến bộ ở một ngành làm tăng chi phí của các ngành khác, trừ khi lương ở các ngành đình trệ được giữ cố định, điều mà ông cho là rất khó xảy ra {baumol-wiki}."
+    },
+    {
+      "heading_en": "Services that help the rest of the economy",
+      "heading_vi": "Những dịch vụ giúp phần còn lại của nền kinh tế",
+      "body_en": "Not every stagnant service is a drag. Wikipedia notes that many services produce intermediate inputs for manufacturing. If they do, their growth can lift the productivity of the shrinking factory sector, so overall productivity may still rise {baumol-wiki}. The economist Maurizio Pugno argues that stagnant services such as education and healthcare build human capital, which supports growth and offsets part of the negative effect {baumol-wiki}. The cost disease is a real pressure, but it is not a verdict on every service. Some services did speed up in the late 1990s, largely through total factor productivity {baumol-wiki}.",
+      "body_vi": "Không phải dịch vụ đình trệ nào cũng kéo lùi nền kinh tế. Wikipedia lưu ý rằng nhiều dịch vụ tạo ra đầu vào trung gian cho ngành chế tạo. Nếu đúng vậy, sự tăng trưởng của chúng có thể nâng năng suất của khu vực sản xuất đang thu hẹp, nên năng suất tổng thể vẫn có thể tăng {baumol-wiki}. Nhà kinh tế Maurizio Pugno cho rằng các dịch vụ đình trệ như giáo dục và y tế tạo ra vốn con người, góp phần thúc đẩy tăng trưởng và bù lại một phần tác động tiêu cực {baumol-wiki}. Áp lực chi phí là có thật, nhưng nó không phải là phán quyết cho mọi dịch vụ. Một số dịch vụ vẫn tăng năng suất: cuối những năm 1990, mức tăng phần lớn đến từ năng suất nhân tố tổng hợp {baumol-wiki}."
+    }
+  ],
+  "keyPoint": {
+    "en": "[p:Labour-heavy services get dearer because other sectors pay their workers more, not because they became less efficient.] A nurse or a musician can do the same work in the same time and still cost more. Check how much of a price rise comes from wages, and how much from other causes.",
+    "vi": "[p:Dịch vụ nặng lao động đắt lên vì các ngành khác trả lương cho người lao động cao hơn, chứ không phải vì chúng kém hiệu quả đi.] Một y tá hay một nhạc công vẫn làm việc đó trong cùng thời gian và vẫn tốn kém hơn. Hãy xem bao nhiêu phần của một đợt tăng giá đến từ tiền lương, và bao nhiêu đến từ nguyên nhân khác."
+  },
+  "applySteps": {
+    "en": [
+      "Pick one service you pay for and find how its price has changed over the last twenty years.",
+      "Compare that change with a manufactured good you buy often, such as a phone or a shirt.",
+      "Ask what the provider delivers per hour now compared with then, and whether the work could be done faster."
+    ],
+    "vi": [
+      "Chọn một dịch vụ bạn đang trả tiền và tìm xem giá của nó đã đổi thế nào trong hai mươi năm qua.",
+      "So sánh mức thay đổi đó với một hàng hóa sản xuất bạn mua thường xuyên, như điện thoại hay áo sơ mi.",
+      "Hỏi xem hiện nay người cung cấp làm được bao nhiêu việc mỗi giờ so với trước, và công việc đó có thể làm nhanh hơn không."
+    ]
+  },
+  "references": [
+    {
+      "id": "baumol-wiki",
+      "label": "Wikipedia: Baumol effect",
+      "url": "https://en.wikipedia.org/wiki/Baumol_effect"
+    },
+    {
+      "id": "baumol-ebsco",
+      "label": "EBSCO Research Starters: Baumol's cost disease",
+      "url": "https://www.ebsco.com/research-starters/economics/baumols-cost-disease/"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/baumol-cost-disease.webp",
+    "provider": "unsplash",
+    "author": "Alejandro Escamilla",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/LNRyGwIJr5c"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoQABwAPu1iqk2ppaQiMAgBMB2JYgCdAYwc3ZMbjBArfjIDQbPKAAD+8tlvwI32CGgzAZJOlovvNvOw9KKPqa9xu43OPAAf5VuZ1H20b04Pj16CWa+yJJmN/zAxmJRlqglHiZ/1mNrHkMgFA3sOpbz4AchciyL6tVuRc0BGhpsN0pmSHXOo6bRwd4p23R837w54zmYSXBzpi93TAanbOAAA",
+  "dominant": "#433a35"
+}

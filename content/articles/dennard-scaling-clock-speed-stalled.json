@@ -1,0 +1,111 @@
+{
+  "slug": "dennard-scaling-clock-speed-stalled",
+  "status": "published",
+  "publishAt": "2026-11-10T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "dennard scaling",
+    "processors",
+    "moore's law",
+    "power density",
+    "semiconductors"
+  ],
+  "title": {
+    "en": "Why CPU clock speeds stopped rising around 2005",
+    "vi": "Vì sao tốc độ xung nhịp CPU ngừng tăng quanh năm 2005"
+  },
+  "hook": {
+    "en": "For decades, each new generation of chips ran faster than the last. Around 2005 that stopped, and clock speeds settled at roughly 4 to 6 GHz. Transistors were not running out, since their numbers kept growing. What failed was a 1974 scaling rule, and [p:heat became the limit] on how fast a processor could run.",
+    "vi": "Trong nhiều thập kỷ, mỗi thế hệ chip mới chạy nhanh hơn thế hệ trước. Quanh năm 2005 điều đó ngừng lại, và tốc độ xung nhịp ổn định ở mức khoảng 4 đến 6 GHz. Bóng bán dẫn không hết đi, vì số lượng của chúng vẫn tăng. Điều thất bại là một quy luật thu nhỏ năm 1974, và [p:nhiệt trở thành giới hạn] cho tốc độ của bộ xử lý."
+  },
+  "sections": [
+    {
+      "heading_en": "A rule for shrinking",
+      "heading_vi": "Quy luật thu nhỏ",
+      "body_en": "In 1974, Robert Dennard and colleagues at IBM described how MOSFET transistors could be shrunk. Their rule, now called Dennard scaling, says that as transistors get smaller, their power density stays constant, so power use stays in proportion to area {wiki-dennard}. Each generation reduced linear features by about 0.7 times, which roughly doubled transistor density {bohr-2007}. Smaller devices were expected to switch faster and use less power {bohr-2007}.",
+      "body_vi": "Năm 1974, Robert Dennard cùng các cộng sự tại IBM mô tả cách thu nhỏ bóng bán dẫn MOSFET. Quy luật của họ, nay gọi là thu nhỏ Dennard, nói rằng khi bóng bán dẫn nhỏ đi, mật độ công suất của chúng giữ nguyên, nên mức tiêu thụ điện tỷ lệ với diện tích {wiki-dennard}. Mỗi thế hệ giảm kích thước dài khoảng 0,7 lần, làm mật độ bóng bán dẫn gần như tăng gấp đôi {bohr-2007}. Các linh kiện nhỏ hơn được kỳ vọng chuyển trạng thái nhanh hơn và tiêu thụ ít điện hơn {bohr-2007}."
+    },
+    {
+      "heading_en": "What the rule promised",
+      "heading_vi": "Quy luật hứa hẹn điều gì",
+      "body_en": "Wikipedia works through one generation. Dimensions shrink by 30 per cent, so the area of a device falls by 51 per cent. Capacitance and voltage fall too, and clock frequency can rise by about 40 per cent {wiki-dennard}. Power per transistor drops by about 51 per cent. The result is that power per unit area stays the same, or the number of transistors can double with no rise in power {wiki-dennard}. [y:Faster clocks] came almost for free. Bohr adds that the rule gave the industry a specific scaling formula for continuing Moore's law {bohr-2007}.",
+      "body_vi": "Wikipedia trình bày một thế hệ cụ thể. Kích thước giảm 30 phần trăm, nên diện tích mỗi linh kiện giảm 51 phần trăm. Điện dung và điện áp cũng giảm, và tần số xung nhịp có thể tăng khoảng 40 phần trăm {wiki-dennard}. Công suất trên mỗi bóng bán dẫn giảm khoảng 51 phần trăm. Kết quả là công suất trên mỗi đơn vị diện tích giữ nguyên, hoặc số bóng bán dẫn có thể tăng gấp đôi mà công suất không tăng {wiki-dennard}. [y:Xung nhịp nhanh hơn] gần như có được miễn phí. Bohr cho biết quy luật này cho ngành một công thức thu nhỏ cụ thể để tiếp tục định luật Moore {bohr-2007}."
+    },
+    {
+      "heading_en": "The assumption that failed",
+      "heading_vi": "Giả định đã thất bại",
+      "body_en": "Dennard's law assumed that the transistor's threshold voltage would scale down along with the operating voltage. It ignored sub-threshold leakage, which was a tiny part of chip power in the 1970s {bohr-2007}. After thirty years of scaling, leakage had risen by at least a thousandfold {bohr-2007}. Gate oxides also neared the likely limit of silicon dioxide. Intel's 65 nm transistors used an oxide about 1.2 nm thick, roughly five atomic layers, where direct tunnelling current becomes a noticeable share of chip power {bohr-2007}.",
+      "body_vi": "Quy luật Dennard giả định điện áp ngưỡng của bóng bán dẫn sẽ giảm cùng điện áp làm việc. Nó bỏ qua dòng rò dưới ngưỡng, vốn là phần rất nhỏ trong công suất chip những năm 1970 {bohr-2007}. Sau ba mươi năm thu nhỏ, dòng rò đã tăng ít nhất gấp nghìn lần {bohr-2007}. Lớp oxit cổng cũng tiến gần giới hạn có thể có của silicon dioxide. Bóng bán dẫn 65 nm của Intel dùng lớp oxit dày khoảng 1,2 nm, tức khoảng năm lớp nguyên tử, nơi dòng xuyên hầm trực tiếp trở thành phần đáng kể trong công suất chip {bohr-2007}."
+    },
+    {
+      "heading_en": "The power wall",
+      "heading_vi": "Bức tường công suất",
+      "body_en": "Wikipedia says Dennard scaling appears to have broken down from around 2005 to 2007. Leakage current and threshold voltage do not shrink with size, so power density rose as devices scaled down. This became the \"power wall\", which led Intel to cancel the Tejas and Jayhawk processors in 2004 {wiki-dennard}. Since 2005, clock frequency has stagnated at [y:4 to 6 GHz], with power per CPU rated at 100 W thermal design power {wiki-dennard}.",
+      "body_vi": "Wikipedia cho biết thu nhỏ Dennard dường như đã đổ vỡ từ khoảng năm 2005 đến 2007. Dòng rò và điện áp ngưỡng không giảm theo kích thước, nên mật độ công suất tăng khi linh kiện thu nhỏ. Hiện tượng này được gọi là 'bức tường công suất', và khiến Intel hủy hai dòng vi xử lý Tejas và Jayhawk năm 2004 {wiki-dennard}. Từ năm 2005, tần số xung nhịp đình trệ ở mức [y:4 đến 6 GHz], và công suất mỗi CPU được ghi ở mức 100 W công suất thiết kế nhiệt {wiki-dennard}."
+    },
+    {
+      "heading_en": "More cores, fewer active parts",
+      "heading_vi": "Nhiều nhân hơn, ít phần hoạt động hơn",
+      "body_en": "Manufacturers turned to multicore processors as the alternative. More cores improve many workloads, but they add switching elements that raise total power, so only part of an integrated circuit can be active at a time. The rest is called dark silicon {wiki-dennard}. Interconnects were another limit. Bohr notes that scaled wires do not speed up, because lower capacitance is offset by higher resistance {bohr-2007}.",
+      "body_vi": "Các hãng chuyển sang bộ xử lý nhiều nhân như một lựa chọn thay thế. Nhiều nhân giúp ích cho nhiều khối lượng công việc, nhưng thêm các phần tử chuyển trạng thái làm tổng công suất tăng, nên tại một thời điểm chỉ một phần mạch tích hợp có thể hoạt động. Phần còn lại được gọi là silicon tối {wiki-dennard}. Dây dẫn cũng là một giới hạn khác. Bohr lưu ý rằng dây thu nhỏ không nhanh hơn, vì điện dung giảm bị bù bởi điện trở tăng {bohr-2007}."
+    },
+    {
+      "heading_en": "The spirit of the rule",
+      "heading_vi": "Tinh thần của quy luật",
+      "body_en": "Bohr writes that the letter of Dennard's law can no longer be followed, but its spirit remains in the industry's research {bohr-2007}. Transistor counts kept growing, and Moore's law, the doubling of transistors on a chip about every two years, continued to guide planning {wiki-dennard}. Performance per joule has also grown, but estimates suggest that growth is slowing {wiki-dennard}. Faster clocks were the easy gain, and that gain is gone.",
+      "body_vi": "Bohr viết rằng con chữ của quy luật Dennard không còn áp dụng được nữa, nhưng tinh thần của nó vẫn còn trong nghiên cứu của ngành {bohr-2007}. Số bóng bán dẫn vẫn tiếp tục tăng, và định luật Moore, tức số bóng bán dẫn trên chip tăng gấp đôi khoảng hai năm một lần, vẫn định hướng kế hoạch {wiki-dennard}. Hiệu năng trên mỗi jun cũng tăng, nhưng các ước tính cho thấy tốc độ tăng đang chậm lại {wiki-dennard}. Xung nhịp nhanh hơn là lợi ích dễ đạt được, và lợi ích đó đã hết."
+    },
+    {
+      "heading_en": "A roadmap that set the pace",
+      "heading_vi": "Một lộ trình định nhịp cho cả ngành",
+      "body_en": "Bohr describes Dennard's paper as a roadmap, giving the industry a method for setting targets for coming generations {bohr-2007}. Each generation reduced minimum feature size by about 0.7 times. During the 1970s and 1980s new generations arrived roughly every three years, and from the mid-1990s roughly every two years {bohr-2007}. The clock gains of those decades depended on the scaling that later failed {wiki-dennard}.",
+      "body_vi": "Bohr mô tả bài báo của Dennard như một lộ trình, cho ngành một phương pháp đặt mục tiêu cho các thế hệ tiếp theo {bohr-2007}. Mỗi thế hệ giảm kích thước đặc trưng tối thiểu khoảng 0,7 lần. Trong những năm 1970 và 1980, các thế hệ mới xuất hiện khoảng ba năm một lần, và từ giữa những năm 1990 khoảng hai năm một lần {bohr-2007}. Những đợt tăng xung nhịp của các thập kỷ đó phụ thuộc vào quy luật thu nhỏ về sau đã thất bại {wiki-dennard}."
+    }
+  ],
+  "keyPoint": {
+    "en": "[p:Clock speeds stalled because shrinking transistors stopped cutting power per unit area, so heat became the limit.] Chipmakers responded with more cores, which help many workloads, and most CPU makers now focus on this approach, but only part of a modern chip can be active at once.",
+    "vi": "[p:Xung nhịp đình trệ vì việc thu nhỏ bóng bán dẫn không còn giảm công suất trên mỗi đơn vị diện tích, nên nhiệt trở thành giới hạn.] Các hãng đáp lại bằng nhiều nhân, giúp ích cho nhiều khối lượng công việc, và phần lớn nhà sản xuất CPU đã tập trung vào hướng này, nhưng tại một thời điểm chỉ một phần chip hiện đại có thể hoạt động."
+  },
+  "applySteps": {
+    "en": [
+      "Look up the clock speed and core count of the processor in your computer or phone.",
+      "Find a published spec sheet for a processor from about 2005 and compare its clock speed and core count with yours.",
+      "Find the thermal design power of your processor and compare it with the roughly 100 W that Wikipedia gives for CPUs since 2005."
+    ],
+    "vi": [
+      "Tra cứu xung nhịp và số nhân của bộ xử lý trong máy tính hoặc điện thoại của bạn.",
+      "Tìm bảng thông số đã công bố của một bộ xử lý khoảng năm 2005 và so sánh xung nhịp, số nhân với máy của bạn.",
+      "Tìm công suất thiết kế nhiệt (TDP) của bộ xử lý và so sánh với mức khoảng 100 W mà Wikipedia nêu cho CPU từ năm 2005."
+    ]
+  },
+  "references": [
+    {
+      "id": "wiki-dennard",
+      "label": "Wikipedia: Dennard scaling",
+      "url": "https://en.wikipedia.org/wiki/Dennard_scaling"
+    },
+    {
+      "id": "bohr-2007",
+      "label": "Bohr (2007), A 30 Year Retrospective on Dennard's MOSFET Scaling Paper, IEEE SSCS Newsletter",
+      "url": "http://www.eng.auburn.edu/~agrawvd/COURSE/READING/LOWP/Boh07.pdf"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/dennard-scaling-clock-speed-stalled.webp",
+    "provider": "unsplash",
+    "author": "Alejandro Escamilla",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/xII7efH1G6o"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoQABwAPu1iqk2ppaQiMAgBMB2JQBakKABWdAerkb+gAoH5YgAA/pG/HSOGOjBp//s95BeJ/5+qPJqejwCm0SiM04CPqQL/vyvIHOalW2Bz3p6Sd+zG/hINZkITfahiwYJgdts3Bb/wJWkGLNga9ekbke8U7L0tAIAAAA==",
+  "dominant": "#554e4a"
+}

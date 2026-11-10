@@ -1,0 +1,111 @@
+{
+  "slug": "john-snow-broad-street-pump",
+  "status": "published",
+  "publishAt": "2026-11-10T00:00:00.000Z",
+  "category": "history",
+  "tags": [
+    "john snow",
+    "cholera",
+    "epidemiology",
+    "public health",
+    "london"
+  ],
+  "title": {
+    "en": "How John Snow traced a cholera outbreak to one water pump",
+    "vi": "Cách John Snow truy ra nguồn dịch tả từ một chiếc vòi nước công cộng"
+  },
+  "hook": {
+    "en": "In late August 1854, cholera began killing people in a few days in Soho, London. The physician John Snow argued that the source was [p:the water from one public pump], not the foul air that most people blamed. The parish removed the pump's handle, and the epidemic faded. The method he used, comparing who got sick with what they drank, still underlies disease investigation today.",
+    "vi": "Cuối tháng Tám năm 1854, bệnh tả bắt đầu cướp đi sinh mạng người dân ở Soho, London chỉ trong vài ngày. Bác sĩ John Snow lập luận rằng nguồn gốc là [p:nước từ một vòi nước công cộng], chứ không phải thứ không khí độc mà nhiều người đổ lỗi. Giáo khu tháo tay cầm vòi nước, và dịch dần lắng xuống. Phương pháp ông dùng, so sánh người bị bệnh với thứ họ uống, vẫn là nền tảng của điều tra dịch bệnh ngày nay."
+  },
+  "sections": [
+    {
+      "heading_en": "A theory of bad air",
+      "heading_vi": "Thuyết không khí độc",
+      "body_en": "The prevailing view held that cholera came from miasma, poisonous vapours rising from foul smells {wiki-snow}. Snow doubted it. He had seen cholera in a coal-mining village as a young apprentice, and by 1849 he had published his view that the disease spread through contaminated water {wiki-snow}. The germ theory that would later explain it was still a minority view. Louis Pasteur proposed it only in 1861 {wiki-snow}. Snow did not know the exact agent, but the pattern of illness pointed to water.",
+      "body_vi": "Quan điểm chủ đạo cho rằng bệnh tả sinh ra từ khí độc, hơi bốc lên từ mùi hôi thối {wiki-snow}. Snow nghi ngờ điều đó. Ông từng thấy bệnh tả khi còn là học trò học nghề y ở một làng khai thác than, và đến năm 1849 đã công bố quan điểm rằng bệnh lan qua nước bị ô nhiễm {snow-pmc}. Thuyết vi trùng, về sau giải thích được bệnh này, khi đó vẫn là quan điểm thiểu số. Louis Pasteur mới đưa ra thuyết này vào năm 1861 {wiki-snow}. Snow chưa biết chính xác tác nhân, nhưng hình thái bệnh chỉ về phía nước."
+    },
+    {
+      "heading_en": "Mapping the deaths",
+      "heading_vi": "Vẽ bản đồ những ca tử vong",
+      "body_en": "After 31 August, Snow saw the deaths cluster around the Broad Street pump. He drew a dot map and divided the streets into areas closest to each pump. The area nearest the Broad Street pump had the highest cholera rate {wiki-snow}. He also went door to door. [y:61 of the dead] had drunk the pump's water, either regularly or sometimes {snow-pmc}.",
+      "body_vi": "Sau ngày 31 tháng Tám, Snow thấy các ca tử vong tập trung quanh vòi nước phố Broad. Ông vẽ bản đồ chấm và chia đường phố thành các vùng gần từng vòi nước nhất. Vùng gần vòi nước phố Broad có tỷ lệ mắc bệnh tả cao nhất {wiki-snow}. Ông cũng đi từng nhà hỏi thăm. [y:61 người đã mất] từng uống nước từ vòi này, thường xuyên hoặc thỉnh thoảng {snow-pmc}."
+    },
+    {
+      "heading_en": "The groups that were spared",
+      "heading_vi": "Những nhóm không bị ảnh hưởng",
+      "body_en": "Some people near the pump were spared, and their habits explained why. The Poland Street workhouse had its own pump-well. Of 535 inmates, only five died of cholera, although houses around it had many deaths {snow-pmc}. More than seventy workers at a nearby brewery did not fall ill. They did not drink the water, and the brewery had its own deep well {snow-pmc}. Each exception matched the same rule: [g:people who drank water from the Broad Street pump got sick].",
+      "body_vi": "Một số người sống gần vòi nước vẫn không bị bệnh, và thói quen của họ giải thích điều đó. Nhà tế bần phố Poland có giếng riêng. Trong số 535 người ở đó, chỉ năm người chết vì bệnh tả, trong khi nhiều nhà xung quanh có nhiều ca tử vong {snow-pmc}. Hơn bảy mươi công nhân của một xưởng bia gần đó không bị bệnh. Họ không uống nước này, và xưởng có giếng sâu riêng {snow-pmc}. Mỗi trường hợp ngoại lệ đều khớp với cùng một quy luật: [g:người uống nước từ vòi phố Broad đã bị bệnh]."
+    },
+    {
+      "heading_en": "The handle comes off",
+      "heading_vi": "Tay cầm bị tháo",
+      "body_en": "Snow presented his findings to the local parish board. Many in the parish did not believe him, but the handle of the pump was removed the following day {snow-pmc}. The epidemic was already slowing, partly because residents had fled. By 10 September more than 300 people had died, and during the following week three quarters of the residents of the area had left {wiki-snow}. Snow himself was cautious, because most of the population had already fled and he hesitated to draw conclusions from a neighbourhood that had emptied {wiki-snow}.",
+      "body_vi": "Snow trình bày phát hiện của mình với hội đồng giáo khu. Nhiều người trong giáo khu không tin ông, nhưng tay cầm vòi nước đã bị tháo vào ngày hôm sau {snow-pmc}. Dịch vốn đã chậm lại, một phần vì người dân bỏ đi. Đến ngày 10 tháng Chín, hơn 300 người đã chết, và trong tuần sau đó, ba phần tư cư dân khu vực này đã rời đi {wiki-snow}. Chính Snow cũng thận trọng, vì phần lớn dân cư đã bỏ đi và ông ngần ngại rút ra kết luận từ một khu phố đã vắng người {wiki-snow}."
+    },
+    {
+      "heading_en": "A test on two water companies",
+      "heading_vi": "Một phép thử trên hai công ty cấp nước",
+      "body_en": "Snow's stronger evidence came from the water companies. Southwark and Vauxhall drew its supply from a stretch of the Thames polluted with sewage, while Lambeth had moved its intake upstream. Snow showed that houses served by Southwark and Vauxhall had a cholera death rate fourteen times that of houses served by Lambeth {wiki-snow}. Because both companies served rich and poor alike in the same streets, the comparison was close to a natural experiment {wiki-snow}.",
+      "body_vi": "Bằng chứng mạnh hơn của Snow đến từ các công ty cấp nước. Southwark và Vauxhall lấy nước từ một đoạn sông Thames ô nhiễm nước thải, còn Lambeth đã chuyển điểm lấy nước lên thượng nguồn. Snow chỉ ra rằng các nhà được Southwark và Vauxhall cấp nước có tỷ lệ tử vong do tả cao gấp mười bốn lần các nhà được Lambeth cấp nước {wiki-snow}. Vì hai công ty phục vụ cả người giàu lẫn người nghèo trên cùng các con phố, phép so sánh gần như một thí nghiệm tự nhiên {wiki-snow}."
+    },
+    {
+      "heading_en": "What the pump did not solve",
+      "heading_vi": "Điều chiếc vòi không giải quyết được",
+      "body_en": "Removing the handle barely touched the wider epidemic, which went on to claim nearly 3,000 lives in the city {wiki-snow}. Officials had acted under urgent pressure, and afterwards many rejected Snow's theory. Accepting it meant accepting that disease passed by a route most people found too unpleasant to contemplate {wiki-snow}. London's real fix came later. After the Great Stink, Bazalgette's sewers were laid along the Thames in 1864 {snow-pmc}.",
+      "body_vi": "Việc tháo tay cầm gần như không làm thay đổi dịch bệnh rộng lớn hơn, khi bệnh còn cướp đi gần 3.000 sinh mạng trong thành phố {wiki-snow}. Chính quyền hành động dưới áp lực khẩn cấp, và sau đó nhiều người bác bỏ thuyết của Snow. Chấp nhận nó đồng nghĩa với việc chấp nhận bệnh lây theo con đường mà đa số người thấy quá khó chịu để nghĩ tới {wiki-snow}. Giải pháp thật sự cho London đến sau đó. Sau 'Đại hôi thối' trên sông Thames, hệ thống cống của Bazalgette được xây dọc sông vào năm 1864 {snow-pmc}."
+    },
+    {
+      "heading_en": "Checking the theory elsewhere",
+      "heading_vi": "Kiểm chứng thuyết ở những nơi khác",
+      "body_en": "Snow tested his idea beyond Soho. In Deptford, residents found their water had turned impure, and Snow concluded that a leak let sewage seep into the supply, much like the Broad Street case {wiki-snow}. In a later check, cholera stopped in London prisons only a few days after they switched to cleaner water {wiki-snow}. The Broad Street well itself was later found to sit three feet from an old cesspit that had begun leaking faecal bacteria {wiki-snow}.",
+      "body_vi": "Snow kiểm tra ý tưởng của mình vượt ra ngoài Soho. Ở Deptford, cư dân thấy nước của họ đã trở nên ô nhiễm, và Snow kết luận rằng một chỗ rò rỉ đã để nước thải thấm vào nguồn cấp, giống như trường hợp phố Broad {wiki-snow}. Trong một lần kiểm tra sau đó, bệnh tả ở các nhà tù London ngừng lại chỉ vài ngày sau khi họ chuyển sang nguồn nước sạch hơn {wiki-snow}. Giếng phố Broad sau này còn được phát hiện nằm cách một hố xí cũ ba feet, và hố này đã bắt đầu rò rỉ vi khuẩn từ phân {wiki-snow}."
+    }
+  ],
+  "keyPoint": {
+    "en": "[p:Snow traced a disease to its source by mapping who fell ill and comparing groups that drank different water.] His map and his comparisons still underpin outbreak investigation, but officials rejected his explanation for years. A clear pattern can point to a cause long before anyone can explain the mechanism.",
+    "vi": "[p:Snow truy ra nguồn bệnh bằng cách vẽ bản đồ những người đổ bệnh và so sánh các nhóm uống nước khác nhau.] Bản đồ và phép so sánh của ông vẫn là nền tảng để điều tra ổ dịch, nhưng chính quyền đã bác bỏ lời giải thích của ông trong nhiều năm. Một quy luật rõ ràng có thể chỉ ra nguyên nhân rất lâu trước khi ai đó giải thích được cơ chế."
+  },
+  "applySteps": {
+    "en": [
+      "List the people you know who were sick last month and what they had in common, such as a meal, a drink or a place.",
+      "Find out where your home's drinking water comes from and whether the supply has changed recently.",
+      "Read the NIH chapter on Snow's work and note which comparison he used to test his idea."
+    ],
+    "vi": [
+      "Liệt kê những người bạn biết đã bị ốm tháng trước và điểm chung của họ, như bữa ăn, đồ uống hay địa điểm.",
+      "Tìm xem nước uống ở nhà bạn lấy từ đâu và nguồn cấp có thay đổi gần đây không.",
+      "Đọc chương của NIH về công trình của Snow và ghi lại phép so sánh ông dùng để kiểm tra giả thuyết."
+    ]
+  },
+  "references": [
+    {
+      "id": "snow-pmc",
+      "label": "Tulchinsky (2018), John Snow, Cholera, the Broad Street Pump (NIH/PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7150208/"
+    },
+    {
+      "id": "wiki-snow",
+      "label": "Wikipedia: 1854 Broad Street cholera outbreak",
+      "url": "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/john-snow-broad-street-pump.webp",
+    "provider": "unsplash",
+    "author": "Paul Jarvis",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/NYDo21ssGao"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAwBACdASoQABwAPu1Ct1apoqakGAEwHYljAKj1iwTtcN26XUjZ9AjzlmgA/uNQIdxxWdahvu8OZ7rd2baULIFRvzgva9eXLbaoX3y5fmxFzDppNBJlS/q/onVHvQ7dFKRHNWbtDkts6sctdE6U97l+mTy0Kzbq+jZdC5fw/s6C8opFWYPRCzX0ej3h/7ZLg19LfwQmFRLsxI6tcp58/N2LhOxLVAMJJmH51iQA",
+  "dominant": "#3d4a45"
+}
