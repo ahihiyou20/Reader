@@ -1,0 +1,133 @@
+{
+  "slug": "where-do-those-mesmerizing-beautiful-blue-colors-in-yellowst",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=where-do-those-mesmerizing-beautiful-blue-colors-in-yellowst",
+  "category": "science",
+  "tags": [
+    "yellowstone",
+    "optics",
+    "geysers",
+    "chemistry"
+  ],
+  "title": {
+    "en": "Where do those mesmerizing beautiful blue colors in Yellowstone’s pools come from?",
+    "vi": "Nguồn gốc màu xanh kỳ diệu của các hồ nước tại Yellowstone"
+  },
+  "hook": {
+    "en": "*Yellowstone Caldera Chronicles is a weekly column written by scientists and collaborators of the Yellowstone Volcano Observatory. This week's contribution is from Laura Dobeck, chemist with the U.S. Geological Survey and Montana State University.*",
+    "vi": "Bài viết thuộc chuyên mục hàng tuần của Đài quan sát Núi lửa Yellowstone, do nhà hóa học Laura Dobeck thực hiện."
+  },
+  "sections": [
+    {
+      "body_en": "While standing on a boardwalk or trail in one of Yellowstone’s thermal areas, you might admire the view of a spectacular blue pool or milky blue-white hot spring. But where does this color come from? And how do you perceive blue—or any color for that matter?\n\nConsider the source of light. The distribution of light intensity and colors that depart the sun 93 million miles away from us are not the same as those that reach Earth’s surface. Sunlight must pass through Earth’s atmosphere, which contains molecules like water, ozone, and carbon dioxide. These molecules absorb specific wavelengths of the electromagnetic spectrum emitted by the sun, essentially acting as a filter."
+    },
+    {
+      "body_en": "Some fraction of light that hits the surface of the pool is reflected back off the water’s surface, but let’s consider what happens to the light that enters the pool. Just as various molecules in the atmosphere absorb light, water in liquid form absorbs light as well. The red, orange and yellow end of the visible light spectrum is absorbed more strongly than blue light. The longer the distance the light has to travel through the water, the more absorption there will be. Maybe you’ve noticed this if you’ve ever been swimming in the ocean—as you go deeper the world becomes a palette of washed-out blues."
+    },
+    {
+      "body_en": "In order for light to travel back to your eyes after its journey into the pool, it must reflect off the bottom of the pool to complete the trip. In features like the very hot alkaline-chloride Sapphire Pool in Biscuit Basin, the bottom is light grey or whitish because the pool’s floor is made of [y:silica sinter], and so it is highly reflective and does not absorb light. The hot water that fills Sapphire Pool contains quite a bit of dissolved silica that it picked up when the water circulated through the underlying rock, much of which is composed of high-silica rhyolitic lava flows and ash deposits from past volcanic eruptions."
+    },
+    {
+      "body_en": "In many of Yellowstone’s geyser basins, you can see this type of rock, often called geyserite, deposited near geysers and hot springs, like on the apron of Old Faithful or slowly constructing the structure of Castle Geyser.\n\nYou may be wondering where the colors of the famous colorful microbial mats of Yellowstone fit in. Sapphire Pool has a temperature near its vent of [y:~200 °F (93 °C)]. Because the upper temperature limit for the photosynthetic microorganisms in Yellowstone hot springs is about 72 °C (162 °F), Sapphire Pool is too hot to support the microbes responsible for many of the colors found in places like Grand Prismatic Spring or Morning Glory Pool. That’s why the crystal-blue color of Yellowstone hot springs is a good indicator of very high temperatures."
+    },
+    {
+      "body_en": "Now let’s consider why Sapphire Pool and pools of Porcelain Basin in Norris Geyser Basin are both blue, but the pools in Porcelain Basin have an opalescent, milky quality. The milkiness is due to the presence of colloidal silica (tiny particles only a fraction of a millimeter in size) in the water. Under the right conditions, including rapid cooling as the water comes up from depth, evaporation, and changes in acidity, the dissolved silica in the water can clump together. If the clusters are just the right size, they can stay suspended in the water and float, like dust motes in a sunbeam. This physical size also just happens to interact (in a process called Tyndall scattering) with the blue wavelength of light. Voila!"
+    },
+    {
+      "body_en": "Interestingly enough, it doesn’t so much matter what the particles are made of. Rather, it is their physical size that is important. For instance, lakes like Lake Louise and Peyto Lake in Banff National Park, Canada, demonstrate this stunning effect. Glaciers have scoured and ground up rock of the surrounding mountains to clay- and silt-sized particles commonly called glacial flour. When these are washed into the lakes, the particles are suspended and scatter the blue light, creating the same milky-blue conditions that can also occur in Yellowstone hot springs."
+    },
+    {
+      "body_en": "Another example of scattering by particles of this size, but of a completely different composition, is in your refrigerator. The bluish tinge of skim milk or diluted milk arises from scattering of blue light by fat and protein globules of just this size.\n\nSo, the next time you are admiring a Yellowstone hot spring, give a little thought and appreciation to the conditions that came together to produce the wonderful sight. And how ephemeral (like so many things in Yellowstone) these jewels are. Enjoy the moment!\n\n**Additional reading**: For an impressive quantitative model capable of reproducing the colors of Yellowstone’s pools (including the colorful microbial mats!), check out some of the scientific papers from Dr. Joseph Shaw’s Montana State University group.\n\n• https://opg.optica.org/ao/abstract.cfm?URI=ao-54-4-B128"
+    },
+    {
+      "body_en": "• https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9793/1/Colors-of-the-Yellowstone-thermal-pools-for-teaching-optics/10.1117/12.2223177.full"
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "U.S. Geological Survey (2026)",
+      "url": "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/829/1080/1920",
+    "provider": "unsplash",
+    "author": "Drew Hays",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/829/1080/1920",
+      "provider": "unsplash",
+      "author": "Drew Hays",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/681/1080/1920",
+      "provider": "unsplash",
+      "author": "Axel  Antas-Bergkvist",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/683/1080/1920",
+      "provider": "unsplash",
+      "author": "ahmadreza sajadi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/55xd_uiUYEE"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACdMoMYDiABY84xGckqKME7HjgA/oMqcT7vaQbiGn1XEWa497v8qCnA/gFSAbtFfgc4LOBbJDpqvKtvnZx/S4sc4m67xNMmEJ33/rXFXU/digg+C6iVrvntugwLUAHq7GCVghUdS80r9UhY779MdjXx68k+o+q1ZMrmBfk+WTofzBA1l92lgU4L/0ve0g2HGXfX6xkRYAAA",
+  "dominant": "#514c4d",
+  "origin": {
+    "group": 1,
+    "sourceId": "usgs-gov-where-do-those-mesmerizing-beautiful-blue-colors-in-yellowstone-s-pools",
+    "license": "PD",
+    "authors": [
+      "U.S. Geological Survey"
+    ],
+    "originalTitle": "Where do those mesmerizing beautiful blue colors in Yellowstone’s pools come from?",
+    "originalUrl": "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come",
+    "publisher": "U.S. Geological Survey",
+    "changes": [
+      "divided into sections",
+      "highlights added",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Like milk scattering light with tiny fat globules, water and suspended silica particles in Yellowstone pools filter out red wavelengths to reflect striking blue colors. Next time you observe a natural spring, notice how physical particle size shapes the colors you see.",
+    "vi": "Giống như sữa tán xạ ánh sáng bằng các hạt chất béo nhỏ, nước và các hạt silica lơ lửng trong các hồ Yellowstone lọc bỏ bước sóng đỏ để phản chiếu màu xanh lam nổi bật. Lần tới khi quan sát một con suối tự nhiên, hãy chú ý cách kích thước hạt vật lý định hình màu sắc bạn nhìn thấy."
+  },
+  "applySteps": {
+    "en": [
+      "Observe a natural body of water to check for color variations.",
+      "Compare the temperature of the thermal pool with known biological limits.",
+      "Read scientific papers on optical modeling of natural waters."
+    ],
+    "vi": [
+      "Quan sát một vùng nước tự nhiên để kiểm tra sự biến đổi màu sắc.",
+      "So sánh nhiệt độ của hồ nhiệt dịch với giới hạn sinh học đã biết.",
+      "Đọc các tài liệu khoa học về mô hình quang học của nước tự nhiên."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "highlights",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-10T04:57:46.812Z"
+}

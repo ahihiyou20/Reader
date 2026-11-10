@@ -1,0 +1,125 @@
+{
+  "slug": "nasa-s-swift-telescope-has-burned-up-months-after-a-robot-se",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=nasa-s-swift-telescope-has-burned-up-months-after-a-robot-se",
+  "category": "technology",
+  "tags": [
+    "spacecraft",
+    "satellite",
+    "orbit",
+    "nasa"
+  ],
+  "title": {
+    "en": "NASA’s Swift telescope has burned up, months after a robot sent to save it failed – here’s why it’s so hard to boost a satellite"
+  },
+  "hook": {
+    "en": "NASA’s Neil Gehrels Swift Observatory took its last look at the sky on Oct. 20, 2026, while orbiting about 171 miles (275 kilometers) above Earth. NASA ended the telescope’s mission three days later, because Swift had sunk so low that drag from the thin air there meant its telescopes couldn’t hold steady. The telescope reentered the atmosphere on Nov. 4 above the North Sumatra region of Indonesia and largely burned up, an abrupt ending to two decades spent observing powerful cosmic explosions."
+  },
+  "sections": [
+    {
+      "body_en": "Swift’s reentry comes after a failed rescue mission in the summer of 2026. LINK, a commercial robotic spacecraft sent to raise Swift into a safer orbit, reentered Earth’s atmosphere in September. The machine designed to save a falling satellite burned up first.\n\nAs a Ph.D. candidate in aerospace engineering, I know that rescuing satellites is hard. I research how spacecraft approach and capture satellites, including objects that tumble uncontrollably.\n\nSwift’s loss points to a new hazard for the young industry that repairs, refuels and moves spacecraft around in orbit. If something goes wrong, the spacecraft doing the rescuing can become another problem."
+    },
+    {
+      "heading_en": "The rescuer started spinning",
+      "body_en": "The plan was for LINK to approach Swift, grab it with one of its three robotic arms and fire its thrusters to push the telescope back up to about 373 miles (600 kilometers) above Earth’s surface, where it could keep observing for years.\n\nIn late July, LINK lost two of its three reaction wheels, which are heavy wheels inside a spacecraft that help it turn without using fuel. That loss, combined with problems with its propulsion system, sent the spacecraft into an uncontrolled spin.\n\nWithout working wheels, a spacecraft steers with its thrusters instead, and every burn spends propellant.\n\nEngineers eventually slowed LINK’s rotation by firing its thrusters against the spin. NASA reported in August that they had cut its spin from about nine degrees per second to roughly one and a half degrees per second.\n\nNASA and Katalyst Space, LINK’s builder, called off the capture and boost later in August. The team still flew LINK within 7.5 to 9 miles (12 to 15 kilometers) of Swift, where it deployed LINK’s three robotic arms and tested its electric thrusters. It never got close enough to grab the telescope."
+    },
+    {
+      "heading_en": "Fuel is the rescue budget",
+      "body_en": "A servicing spacecraft, like LINK, launches with a finite supply of propellant. Engineers split that fuel supply among the mission’s jobs, from reaching the target and approaching it safely to capturing it and moving it to a new orbit. They also pack some extra fuel in case of surprises.\n\nThink of a tow truck that burns most of its gas getting itself out of a ditch. Even if it reaches a broken-down car, it may not have enough fuel left to tow it home.\n\nThat scenario is close to what happened to LINK. Even after engineers brought its spin under control, Katalyst said the spacecraft no longer had enough propellant to capture Swift and raise its orbit safely.\n\nA fuel budget that covers only the planned steps leaves nothing for recovering from a fault. But every extra pound of propellant also makes a spacecraft heavier, and heavier spacecraft cost more to launch and take more fuel to move."
+    },
+    {
+      "heading_en": "Speed buys time and costs backup",
+      "body_en": "Starting in 2024, solar activity swelled Earth’s upper atmosphere, and the extra drag pulled Swift down faster than expected. Once NASA saw how quickly Swift was falling, the agency had to move fast to try to save the observatory. Space missions typically take years to develop and launch, but in this case, a slow, conventional development program risked arriving too late.\n\nNASA awarded Katalyst a US$30 million contract in September 2025. The company had less than a year to design, build, test and launch LINK. LINK launched on July 3, 2026.\n\nSpeed comes with trade-offs. In engineering, a compressed schedule can leave less time for repeated testing, building spare hardware and planning recovery options. Public reports do not say whether that trade-off played any part in LINK’s faults.\n\nNASA has said that even though LINK didn’t succeed, the effort gave the agency experience in quickly building, launching and operating a servicing spacecraft. Engineers also showed they could upload new control software to steady a damaged servicing spacecraft with the hardware it had left. And LINK tested its arms and fired all three thrusters at once in orbit."
+    },
+    {
+      "heading_en": "What comes next",
+      "body_en": "While Swift was the most pressing case for a boost mission, it’s not the only one. NASA’s Hubble Space Telescope could one day use a similar boost, and news reports suggested it would have been next in line had this mission worked.\n\nFuture missions are pursuing two complementary approaches for rescuing satellites. Astroscale’s ELSA-M is built to capture satellites that carry a docking plate installed before launch, which would make it easier for a rescuer to snag and boost them if the satellite eventually got into trouble. The European Space Agency’s ClearSpace-1 is planned for 2029 and aims to capture the Proba-1 satellite, which doesn’t have a docking plate or anything to help ClearSpace-1 capture it, and remove it from orbit.\n\nLINK’s mission showed that a rescue takes more than a robotic arm and enough thrust to reach a target. It also takes a servicer spacecraft that can stay stable, recover from its own faults and keep enough propellant reserved to finish the job. In Swift’s case, the rescuer fell short before the rescue could begin."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "The Conversation (2026)",
+      "url": "https://theconversation.com/nasas-swift-telescope-has-burned-up-months-after-a-robot-sent-to-save-it-failed-heres-why-its-so-hard-to-boost-a-satellite-295538"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/816/1080/1920",
+    "provider": "unsplash",
+    "author": "Jordan McQueen",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/1eWaod96d3k"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/816/1080/1920",
+      "provider": "unsplash",
+      "author": "Jordan McQueen",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/1eWaod96d3k"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/182/1080/1920",
+      "provider": "unsplash",
+      "author": "Andrea Boldizsar",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BwgKUh9tN84"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/403/1080/1920",
+      "provider": "unsplash",
+      "author": "Sergey Zolkin",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JZQABFjxIKQOW3x5zWheOJTgAAP79v54P0MfEFPvwLPGW2KrpKsC5cTEidES18IWJfj6m7/suc6Lvl9FgZNnu0j4bpu0IfJ05VoaGQ77Z4Nnfy+35rDAOefCqRVlYQvlviaw/v0Hy4DXn8GW3OR2e20sSU91jh+ive5oeV1+F02Jcj2+MgelNOME+3TPIAAA=",
+  "dominant": "#7a6d65",
+  "origin": {
+    "group": 3,
+    "sourceId": "theconversation-com-nasa-s-swift-telescope-has-burned-up-months-after-a-robot-se",
+    "license": "CC-BY-ND-4.0",
+    "authors": [
+      "Wanjiku Chebet Kanjumba"
+    ],
+    "originalTitle": "NASA’s Swift telescope has burned up, months after a robot sent to save it failed – here’s why it’s so hard to boost a satellite",
+    "originalUrl": "https://theconversation.com/nasas-swift-telescope-has-burned-up-months-after-a-robot-sent-to-save-it-failed-heres-why-its-so-hard-to-boost-a-satellite-295538",
+    "publisher": "The Conversation",
+    "changes": [
+      "key point and apply steps added"
+    ]
+  },
+  "summary": {
+    "vi": "Kính thiên văn Swift của NASA đã bốc cháy khi tái gia nhập khí quyển sau khi kết thúc sứ mệnh kéo dài hai thập kỷ. Một sứ mệnh cứu hộ thương mại bằng robot mang tên LINK đã được triển khai để nâng quỹ đạo của Swift nhưng thất bại do sự cố hệ thống quay và cạn kiệt nhiên liệu. Sự việc này làm nổi bật những rủi ro và thách thức kỹ thuật lớn trong việc cứu hộ các vệ tinh đang rơi trên quỹ đạo Trái Đất."
+  },
+  "keyPoint": {
+    "en": "Think of a rescue mission like a tow truck that burns most of its fuel just reaching a stranded vehicle, leaving nothing for the actual haul. How can future space agencies build better fuel margins into rapid-response satellite rescue programs without increasing launch costs beyond practical limits?",
+    "vi": "Hãy tưởng tượng một sứ mệnh cứu hộ giống như một chiếc xe cứu hộ tiêu hao phần lớn nhiên liệu chỉ để đến được phương tiện gặp nạn, không còn đủ cho việc kéo xe về. Làm thế nào các cơ quan vũ trụ trong tương lai có thể xây dựng biên độ nhiên liệu tốt hơn cho các chương trình cứu hộ vệ tinh phản ứng nhanh mà không làm tăng chi phí phóng vượt quá giới hạn thực tế?"
+  },
+  "applySteps": {
+    "en": [
+      "Review technical project timelines to identify where compressed schedules might remove crucial system testing phases.",
+      "Calculate available fuel reserves against unexpected operational resistance before starting high-risk intervention tasks.",
+      "Inspect mechanical redundancy options on automated hardware to prepare for sudden stabilization failures in orbit."
+    ],
+    "vi": [
+      "Xem xét mốc thời gian dự án kỹ thuật để xác định nơi lịch trình bị nén có thể loại bỏ các giai đoạn kiểm tra hệ thống quan trọng.",
+      "Tính toán lượng dự trữ nhiên liệu khả dụng so với lực cản vận hành bất ngờ trước khi bắt đầu các nhiệm vụ can thiệp rủi ro cao.",
+      "Kiểm tra các tùy chọn dự phòng cơ học trên phần cứng tự động để chuẩn bị cho các sự cố ổn định đột ngột trên quỹ đạo."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-08T02:47:52.716Z"
+}
