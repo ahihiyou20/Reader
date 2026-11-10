@@ -35,6 +35,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/collections/made-in-our-image"
     },
+    "https://bigthink.com/history-society/inside-the-lucas-museum-of-narrative-art": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "big-think",
+      "error": "triage: score 4: Musings on legacy and succession tied broadly to an artistic project."
+    },
     "https://bigthink.com/mind-behavior/why-smart-people-stay-stuck-in-research-mode": {
       "at": "2026-10-31T02:27:07.194Z",
       "feed": "big-think",
@@ -44,6 +49,11 @@
       "at": "2026-10-29T02:31:47.161Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/mini-philosophy/3-ways-to-find-and-nurture-better-friendships"
+    },
+    "https://bigthink.com/perception-box/are-you-really-who-you-think-you-are": {
+      "at": "2026-11-10T04:40:34.091Z",
+      "feed": "big-think",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://bigthink.com/perception-box/you-have-more-control-over-reality-than-you-think": {
       "at": "2026-10-27T02:10:09.845Z",
@@ -505,6 +515,21 @@
       "feed": "global-voices",
       "error": "triage: score 4: Local waste management efforts in Montenegro are too narrow and news-focused for general global readers."
     },
+    "https://globalvoices.org/2026/11/09/big-tech-ai-and-the-quiet-expansion-of-digital-surveillance-in-nigeria": {
+      "at": "2026-11-10T04:41:15.440Z",
+      "feed": "global-voices",
+      "slug": "big-tech-ai-and-the-quiet-expansion-of-digital-surveillance"
+    },
+    "https://globalvoices.org/2026/11/09/from-a-quiet-life-to-the-terror-of-armed-gangs-the-story-of-haitis-kenscoff-district": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "global-voices",
+      "error": "triage: score 2: Report on gang violence in a specific district is timely reporting rather than foundational insight."
+    },
+    "https://globalvoices.org/2026/11/09/the-dreamer-who-wants-the-world-to-read-nepali-literature": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "global-voices",
+      "error": "triage: score 4: Profile of an individual promoting Nepali literature, leaning toward cultural promotion."
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -609,6 +634,11 @@
       "at": "2026-10-23T16:57:10.451Z",
       "feed": "nautilus",
       "slug": "forensic-experts-identify-people-using-only-one-or-two-facia"
+    },
+    "https://nautil.us/how-a-bedroom-air-filter-could-keep-your-blood-sugar-in-check-1286480": {
+      "at": "2026-11-10T04:40:29.524Z",
+      "feed": "nautilus",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://nautil.us/how-a-sick-chicken-revolutionized-cancer-research-1286219": {
       "at": "2026-11-01T02:18:51.543Z",
@@ -945,6 +975,11 @@
       "feed": "nasa-science",
       "error": "Only 234 words of text found"
     },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/cosmic-origins-at-aas-249-jan-2026": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "nasa-science",
+      "error": "triage: score 1: Academic conference schedule announcement without scientific findings."
+    },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/galaxies-sig-seminar-2-nov-2026": {
       "at": "2026-10-25T01:15:00.072Z",
       "feed": "nasa-science",
@@ -957,6 +992,16 @@
     },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-10-nov-2026": {
       "at": "2026-11-07T02:51:04.007Z",
+      "feed": "nasa-science",
+      "error": "triage: event notice"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ir-stig-seminar-8-dec-2026": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "nasa-science",
+      "error": "triage: event notice"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/nasa-astrophysics-town-hall-13-nov-2026": {
+      "at": "2026-11-10T04:38:46.811Z",
       "feed": "nasa-science",
       "error": "triage: event notice"
     },
@@ -984,6 +1029,21 @@
       "at": "2026-10-26T01:14:51.148Z",
       "feed": "nasa-science",
       "error": "Only 17 words of text found"
+    },
+    "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/nasa-astrophysics-town-hall-13-nov-2026": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "nasa-science",
+      "error": "triage: event notice"
+    },
+    "https://science.nasa.gov/blog/curiosity-blog-sols-5050-5055-its-nazca-our-49th-drill-hole": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Routine operational log from a Mars rover mission."
+    },
+    "https://science.nasa.gov/blog/curiosity-blog-sols-5056-5062-charging-back-up": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Routine engineering blog post about a Mars rover recharging batteries."
     },
     "https://science.nasa.gov/blog/tingas-tale": {
       "at": "2026-10-27T02:12:58.138Z",
@@ -1095,6 +1155,11 @@
       "feed": "nasa-science",
       "error": "Only 118 words of text found"
     },
+    "https://theconversation.com/5-ways-countries-stymie-climate-negotiations-without-actually-saying-no-295589": {
+      "at": "2026-11-10T04:41:27.619Z",
+      "feed": "conversation",
+      "error": "1510 words: too long to republish word for word (limit 1500)"
+    },
     "https://theconversation.com/70-years-ago-the-suez-crisis-exposed-british-relative-decline-today-the-iran-conflict-could-be-doing-the-same-for-the-us-292833": {
       "at": "2026-11-01T02:15:34.895Z",
       "feed": "conversation",
@@ -1150,10 +1215,20 @@
       "feed": "conversation",
       "error": "1936 words: too long to republish word for word (limit 1500)"
     },
+    "https://theconversation.com/can-gadi-eisenkot-turn-the-disaster-bloc-into-israels-next-government-295859": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "conversation",
+      "error": "triage: score 3: Israeli domestic politics and coalition formation is current news rather than enduring knowledge."
+    },
     "https://theconversation.com/climate-change-is-undermining-our-health-and-the-burden-falls-heaviest-on-women-295355": {
       "at": "2026-11-08T02:33:10.276Z",
       "feed": "conversation",
       "slug": "climate-change-is-undermining-our-health-and-the-burden-fall"
+    },
+    "https://theconversation.com/cop-31-west-africas-climate-plans-put-a-price-on-ruined-roads-and-crops-how-to-add-invisible-losses-294627": {
+      "at": "2026-11-10T04:41:40.192Z",
+      "feed": "conversation",
+      "slug": "cop-31-west-africa-s-climate-plans-put-a-price-on-ruined-roa"
     },
     "https://theconversation.com/delayed-international-support-has-hampered-efforts-to-contain-and-treat-ebola-in-the-democratic-republic-of-congo-295610": {
       "at": "2026-11-06T03:37:32.815Z",
@@ -1209,6 +1284,11 @@
       "at": "2026-10-31T02:26:44.666Z",
       "feed": "conversation",
       "slug": "how-the-sphinx-is-helping-answer-a-riddle-about-extinct-croc"
+    },
+    "https://theconversation.com/how-women-bore-the-consequences-of-the-first-world-war-in-british-india-289672": {
+      "at": "2026-11-10T04:40:57.324Z",
+      "feed": "conversation",
+      "slug": "how-women-bore-the-consequences-of-the-first-world-war-in-br"
     },
     "https://theconversation.com/human-speech-follows-the-same-patterns-as-birdsong-new-research-295030": {
       "at": "2026-11-04T03:05:45.912Z",
@@ -1279,6 +1359,11 @@
       "at": "2026-11-08T02:32:58.949Z",
       "feed": "conversation",
       "slug": "nasa-s-swift-telescope-has-burned-up-months-after-a-robot-se"
+    },
+    "https://theconversation.com/paraguays-bank-collapse-brought-down-a-president-and-exposed-as-myth-the-nations-status-as-a-dubai-of-south-america-296112": {
+      "at": "2026-11-10T04:40:48.293Z",
+      "feed": "conversation",
+      "slug": "paraguay-s-2026-banking-crisis-differs-from-precedents"
     },
     "https://theconversation.com/primes-carrie-miniseries-expands-stephen-kings-story-but-weakens-its-central-horror-294512": {
       "at": "2026-10-29T02:40:02.974Z",
@@ -1780,10 +1865,15 @@
       "feed": "npr-health",
       "error": "triage: score 2: An award announcement for a teen activist is personnel promotion rather than an explanatory article."
     },
-    "https://www.npr.org/2026/11/07/nx-s1-6026379/lpa-drug-lipoproteina-heart-attack": {
-      "at": "2026-11-09T02:42:30.929Z",
+    "https://www.npr.org/2026/11/08/nx-s1-6017801/air-ambulance-service-rural-healthcare-staffing": {
+      "at": "2026-11-10T04:41:26.145Z",
       "feed": "npr-health",
-      "error": "Gemini reply unusable after a retry (hook_en)"
+      "slug": "air-ambulance-services-rethink-medicine-in-the-sky"
+    },
+    "https://www.npr.org/2026/11/09/nx-s1-6032732/trump-medicaid-health-nebraska-work-insurance": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "npr-health",
+      "error": "triage: score 3: Administrative issues with Medicaid work requirements in Nebraska are local policy news."
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -1799,6 +1889,11 @@
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
       "slug": "artificial-intelligence-achieves-breakthrough-on-major-mathe"
+    },
+    "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109": {
+      "at": "2026-11-10T04:39:09.701Z",
+      "feed": "quanta",
+      "error": "Gemini reply unusable after a retry (hook_en)"
     },
     "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016": {
       "at": "2026-10-24T01:44:19.152Z",
@@ -2055,6 +2150,16 @@
       "feed": "sciencedaily",
       "slug": "researchers-map-a-fundamental-space-time-limit-for-electrons"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261108233100.htm": {
+      "at": "2026-11-10T04:39:20.700Z",
+      "feed": "sciencedaily",
+      "slug": "how-the-brain-learns-to-love-bitter-coffee"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261108233103.htm": {
+      "at": "2026-11-10T04:40:26.555Z",
+      "feed": "sciencedaily",
+      "slug": "alzheimer-s-mutations-may-affect-nerves-outside-the-brain"
+    },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
       "feed": "usgs",
@@ -2170,6 +2275,11 @@
       "feed": "usgs",
       "error": "Only 199 words of text found"
     },
+    "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-episode-56-lava-fountaining-summit-kilauea": {
+      "at": "2026-11-10T04:38:46.812Z",
+      "feed": "usgs",
+      "error": "triage: event notice"
+    },
     "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-kilauea-summit-monitoring-overflight-8": {
       "at": "2026-10-24T01:40:24.424Z",
       "feed": "usgs",
@@ -2214,6 +2324,11 @@
       "at": "2026-11-04T03:10:41.270Z",
       "feed": "usgs",
       "slug": "picturing-the-unimaginable-two-artists-early-journey-into-ye"
+    },
+    "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come": {
+      "at": "2026-11-10T04:40:16.944Z",
+      "feed": "usgs",
+      "slug": "where-do-those-mesmerizing-beautiful-blue-colors-in-yellowst"
     },
     "https://www.usgs.gov/programs/climate-adaptation-science-centers/news/podcast-explores-links-between-storms-and-invasive": {
       "at": "2026-11-01T02:15:55.197Z",
