@@ -35,6 +35,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/collections/made-in-our-image"
     },
+    "https://bigthink.com/history-society/admiral-yamamoto": {
+      "at": "2026-11-11T02:51:06.420Z",
+      "feed": "big-think",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://bigthink.com/history-society/inside-the-lucas-museum-of-narrative-art": {
       "at": "2026-11-10T04:38:46.812Z",
       "feed": "big-think",
@@ -114,6 +119,11 @@
       "at": "2026-10-28T02:25:14.916Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/belonging-pseudo-self"
+    },
+    "https://bigthink.com/series/the-big-think-interview/origin-life-universe": {
+      "at": "2026-11-11T02:49:44.930Z",
+      "feed": "big-think",
+      "error": "Only 96 words readable (paywall or script-only page?)"
     },
     "https://bigthink.com/series/the-big-think-interview/universe-dark-energy": {
       "at": "2026-10-23T16:57:10.539Z",
@@ -290,6 +300,11 @@
       "feed": "wikipedia-featured",
       "slug": "raaf-area-commands"
     },
+    "https://en.wikipedia.org/wiki/Regulus_(Turner)": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 3: Wikipedia featured article description of a 19th-century painting."
+    },
     "https://en.wikipedia.org/wiki/Second_Battle_of_Newtonia": {
       "at": "2026-10-28T02:24:40.469Z",
       "feed": "wikipedia-featured",
@@ -324,6 +339,11 @@
       "at": "2026-10-26T01:16:08.080Z",
       "feed": "wikipedia-featured",
       "slug": "thuggee"
+    },
+    "https://en.wikipedia.org/wiki/U.S._Route_101": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 3: Wikipedia anniversary summary of a US highway."
     },
     "https://en.wikipedia.org/wiki/Zombie_Nightmare": {
       "at": "2026-10-31T02:26:52.318Z",
@@ -530,10 +550,30 @@
       "feed": "global-voices",
       "error": "triage: score 4: Profile of an individual promoting Nepali literature, leaning toward cultural promotion."
     },
+    "https://globalvoices.org/2026/11/10/ex-lawmaker-sentenced-to-12-5-years-in-prison-in-closed-door-trial-in-macau": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "global-voices",
+      "error": "triage: score 3: News report on a legal sentencing under national security laws in Macau."
+    },
+    "https://globalvoices.org/2026/11/10/in-ukraine-youth-are-finding-their-voices-in-the-digital-democracy": {
+      "at": "2026-11-11T02:51:28.536Z",
+      "feed": "global-voices",
+      "slug": "in-ukraine-youth-are-finding-their-voices-in-the-digital-dem"
+    },
+    "https://globalvoices.org/2026/11/11/estoring-social-media-access-comes-at-a-cost-in-gabon": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "global-voices",
+      "error": "triage: score 3: Brief report on social media restrictions in Gabon."
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
       "error": "403 Forbidden — https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients"
+    },
+    "https://knowablemagazine.org/content/article/health-disease/2026/discoveries-about-power-of-innate-immune-system": {
+      "at": "2026-11-11T02:49:45.256Z",
+      "feed": "knowable",
+      "error": "Only 82 words readable (paywall or script-only page?)"
     },
     "https://knowablemagazine.org/content/article/health-disease/2026/disease-sniffing-tests-get-closer-to-reality": {
       "at": "2026-11-04T03:07:50.162Z",
@@ -630,6 +670,11 @@
       "feed": "nautilus",
       "slug": "earth-s-missing-rock-layers-explained-by-deep-mantle-process"
     },
+    "https://nautil.us/famous-fossil-could-be-rosetta-stone-for-hidden-hominin-diversity-1286535": {
+      "at": "2026-11-11T02:50:47.504Z",
+      "feed": "nautilus",
+      "slug": "famous-taung-child-skull-reveals-hidden-hominin-diversity"
+    },
     "https://nautil.us/forensic-facial-specialists-can-identify-people-using-just-a-couple-facial-features-1286039": {
       "at": "2026-10-23T16:57:10.451Z",
       "feed": "nautilus",
@@ -669,6 +714,11 @@
       "at": "2026-11-02T02:34:16.788Z",
       "feed": "nautilus",
       "slug": "the-rising-danger-of-ketamine-and-campus-assaults"
+    },
+    "https://nautil.us/lean-muscle-mass-isnt-a-cure-all-for-metabolic-health-1286540": {
+      "at": "2026-11-11T02:50:06.886Z",
+      "feed": "nautilus",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://nautil.us/lsd-may-speed-up-brain-activity-and-make-it-fractal-1286030": {
       "at": "2026-10-26T01:14:36.717Z",
@@ -810,6 +860,11 @@
       "feed": "owid",
       "slug": "when-do-people-experience-mental-health-conditions-for-the-f"
     },
+    "https://psyche.co/guides/how-to-help-someone-whose-thinking-seems-delusional": {
+      "at": "2026-11-11T02:50:03.803Z",
+      "feed": "psyche",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+    },
     "https://psyche.co/guides/how-to-overcome-task-paralysis": {
       "at": "2026-10-24T01:41:30.406Z",
       "feed": "psyche",
@@ -849,6 +904,11 @@
       "at": "2026-11-04T03:07:49.948Z",
       "feed": "psyche",
       "slug": "understanding-civic-grief-and-democratic-decay"
+    },
+    "https://psyche.co/ideas/the-ethics-of-having-a-good-time-at-disney-world-florida": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "psyche",
+      "error": "triage: score 4: Philosophical essay on enjoying theme parks owned by large corporations."
     },
     "https://psyche.co/ideas/what-life-in-denmark-shows-about-the-power-of-emotional-safety": {
       "at": "2026-10-26T01:14:30.204Z",
@@ -904,6 +964,11 @@
       "at": "2026-10-28T02:25:33.911Z",
       "feed": "psyche",
       "error": "Only 125 words readable (paywall or script-only page?)"
+    },
+    "https://psyche.co/videos/a-grand-filmmaking-experiment-traces-intersecting-lives-in-los-angeles": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "psyche",
+      "error": "triage: score 3: Promotional description for a short documentary about Los Angeles."
     },
     "https://psyche.co/videos/dont-reduce-emotions-to-biology-theyre-contingent-and-emergent": {
       "at": "2026-10-26T01:15:04.471Z",
@@ -1155,6 +1220,11 @@
       "feed": "nasa-science",
       "error": "Only 118 words of text found"
     },
+    "https://theconversation.com/10-years-after-leonard-cohens-passing-his-grappling-with-the-divine-lives-on-295955": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "conversation",
+      "error": "triage: score 4: Reflections on a musician's spiritual themes years after their passing."
+    },
     "https://theconversation.com/5-ways-countries-stymie-climate-negotiations-without-actually-saying-no-295589": {
       "at": "2026-11-10T04:41:27.619Z",
       "feed": "conversation",
@@ -1234,6 +1304,11 @@
       "at": "2026-11-06T03:37:32.815Z",
       "feed": "conversation",
       "slug": "delayed-international-support-has-hampered-efforts-to-contai"
+    },
+    "https://theconversation.com/economic-coercion-once-ousted-irans-leader-but-that-was-the-1950s-dont-expect-a-repeat-today-294628": {
+      "at": "2026-11-11T02:51:52.396Z",
+      "feed": "conversation",
+      "slug": "economic-coercion-once-ousted-iran-s-leader-but-that-was-the"
     },
     "https://theconversation.com/eus-new-arctic-strategy-signals-shift-in-its-geopolitical-mindset-294978": {
       "at": "2026-10-29T02:34:28.204Z",
@@ -1365,6 +1440,11 @@
       "feed": "conversation",
       "slug": "paraguay-s-2026-banking-crisis-differs-from-precedents"
     },
+    "https://theconversation.com/plagiarism-is-a-kind-of-theft-but-it-is-also-a-question-of-honour-281857": {
+      "at": "2026-11-11T02:51:55.062Z",
+      "feed": "conversation",
+      "error": "1523 words: too long to republish word for word (limit 1500)"
+    },
     "https://theconversation.com/primes-carrie-miniseries-expands-stephen-kings-story-but-weakens-its-central-horror-294512": {
       "at": "2026-10-29T02:40:02.974Z",
       "feed": "conversation",
@@ -1389,6 +1469,11 @@
       "at": "2026-11-06T03:37:40.917Z",
       "feed": "conversation",
       "slug": "the-binance-hack-exploited-familiar-weaknesses-all-organisat"
+    },
+    "https://theconversation.com/the-cop31-climate-summit-is-betting-on-electrification-but-still-needs-a-plan-to-ditch-fossil-fuels-295493": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "conversation",
+      "error": "triage: event notice"
     },
     "https://theconversation.com/the-crucible-arthur-millers-morality-tale-was-as-much-a-reaction-to-his-own-marital-failings-as-it-was-to-the-red-scare-294832": {
       "at": "2026-10-23T16:56:11.077Z",
@@ -1530,6 +1615,11 @@
       "feed": "nasa-science",
       "slug": "space-crops-and-advanced-tech-wrap-up-week-following-spacewa"
     },
+    "https://www.nasa.gov/blogs/spacestation/2026/11/10/microbiology-spacesuits-and-cargo-mission-preps-keep-crew-busy": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Routine daily log of astronaut tasks aboard the International Space Station."
+    },
     "https://www.nasa.gov/centers-and-facilities/johnson/halloween-aboard-the-international-space-station": {
       "at": "2026-10-30T02:42:23.280Z",
       "feed": "nasa-science",
@@ -1605,6 +1695,11 @@
       "feed": "nasa-science",
       "error": "triage: score 3: NASA awards and institutional project announcements are promotional and lack lasting general interest."
     },
+    "https://www.nasa.gov/news-release/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: NASA promotional notice for an anniversary spacecraft milestone event."
+    },
     "https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium": {
       "at": "2026-10-23T16:58:49.474Z",
       "feed": "nasa-science",
@@ -1629,6 +1724,11 @@
       "at": "2026-11-08T02:31:52.716Z",
       "feed": "nasa-science",
       "error": "triage: score 1: An open call for astronaut applications is a recruitment announcement lacking general educational value."
+    },
+    "https://www.nasa.gov/news-release/nasa-to-welcome-expedition-74-astronauts-home-at-space-center-houston": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Press release about an upcoming public astronaut homecoming event."
     },
     "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory": {
       "at": "2026-10-29T02:28:35.197Z",
@@ -1679,6 +1779,11 @@
       "at": "2026-10-29T02:33:56.905Z",
       "feed": "nasa-science",
       "error": "Unterminated string in JSON at position 222755 (line 2 column 222754)"
+    },
+    "https://www.nasa.gov/podcasts/small-steps-giant-leaps/episode-186-supercomputing": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: Institutional NASA news update about supercomputing facilities."
     },
     "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found": {
       "at": "2026-10-30T02:50:30.339Z",
@@ -1875,6 +1980,16 @@
       "feed": "npr-health",
       "error": "triage: score 3: Administrative issues with Medicaid work requirements in Nebraska are local policy news."
     },
+    "https://www.npr.org/2026/11/10/g-s1-152641/get-in-loser-broadways-newest-mean-girls-are-ready-to-insult-and-enlighten-you": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "npr-health",
+      "error": "triage: score 2: Culture interview about a closing Broadway play."
+    },
+    "https://www.npr.org/2026/11/10/g-s1-152693/healthcare-ethiopia-conflict-emergency-room": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "npr-health",
+      "error": "triage: score 4: News reporting on the immediate impacts of conflict on an emergency room."
+    },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
       "feed": "quanta",
@@ -1889,11 +2004,6 @@
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
       "slug": "artificial-intelligence-achieves-breakthrough-on-major-mathe"
-    },
-    "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109": {
-      "at": "2026-11-10T04:39:09.701Z",
-      "feed": "quanta",
-      "error": "Gemini reply unusable after a retry (hook_en)"
     },
     "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016": {
       "at": "2026-10-24T01:44:19.152Z",
@@ -1939,6 +2049,11 @@
       "at": "2026-10-23T17:01:49.890Z",
       "feed": "quanta",
       "slug": "stunning-microscopic-images-reveal-the-secret-life-inside-ce"
+    },
+    "https://www.quantamagazine.org/the-case-for-a-bubble-at-lifes-start-20261110": {
+      "at": "2026-11-11T02:49:43.960Z",
+      "feed": "quanta",
+      "slug": "did-cell-membranes-spark-the-origin-of-life"
     },
     "https://www.sciencedaily.com/releases/2026/10/261022081312.htm": {
       "at": "2026-10-24T01:44:34.074Z",
@@ -2160,6 +2275,16 @@
       "feed": "sciencedaily",
       "slug": "alzheimer-s-mutations-may-affect-nerves-outside-the-brain"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261109205415.htm": {
+      "at": "2026-11-11T02:50:53.365Z",
+      "feed": "sciencedaily",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261110042532.htm": {
+      "at": "2026-11-11T02:50:25.879Z",
+      "feed": "sciencedaily",
+      "slug": "researchers-discover-34-million-year-old-giant-rodent-fossil"
+    },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
       "feed": "usgs",
@@ -2239,6 +2364,11 @@
       "at": "2026-10-28T02:21:34.540Z",
       "feed": "usgs",
       "slug": "usgs-study-outlines-scope-and-severity-of-bat-fatalities-at"
+    },
+    "https://www.usgs.gov/news/national-news-release/usgs-awards-17-million-26-states-preserve-data-energy-groundwater": {
+      "at": "2026-11-11T02:49:18.866Z",
+      "feed": "usgs",
+      "error": "triage: score 2: Government grant announcement for geological data preservation."
     },
     "https://www.usgs.gov/news/national-news-release/usgs-releases-assessment-undiscovered-natural-gas-resources-alaskas": {
       "at": "2026-10-26T01:14:24.726Z",
