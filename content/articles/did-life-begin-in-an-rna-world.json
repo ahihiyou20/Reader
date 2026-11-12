@@ -1,0 +1,120 @@
+{
+  "slug": "did-life-begin-in-an-rna-world",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=did-life-begin-in-an-rna-world",
+  "category": "science",
+  "tags": [
+    "rna world",
+    "origins of life",
+    "ribozymes",
+    "molecular biology"
+  ],
+  "title": {
+    "en": "Did Life Begin in an RNA World?",
+    "vi": "Sự sống có khởi nguồn từ một thế giới RNA không?"
+  },
+  "hook": {
+    "en": "Life on Earth may have started about 4 billion years ago through self-replicating molecules {source}. Scientists long suspected that RNA played this foundational role because it stores genetic data and acts as a chemical catalyst. However, proving how these fragile chains arose and evolved remains a major scientific puzzle.",
+    "vi": "Sự sống trên Trái Đất có thể bắt đầu từ khoảng 4 tỷ năm trước nhờ các phân tử tự nhân bản {source}. Các nhà khoa học từng nghi ngờ RNA đóng vai trò nền tảng này vì nó lưu trữ dữ liệu di truyền và hoạt động như một chất xúc tác hóa học. Tuy nhiên, việc chứng minh các chuỗi mỏng manh này hình thành và tiến hóa ra sao vẫn là một bài toán khó."
+  },
+  "sections": [
+    {
+      "heading_en": "The Ribozyme Discovery",
+      "heading_vi": "Khám phá về ribozyme",
+      "body_en": "In the late 1980s, researchers discovered that certain RNAs can act as catalysts, which they named ribozymes {source}. This dual ability to carry genetic sequences and drive reactions led physicist Walter Gilbert to propose the RNA world hypothesis {source}. Later in 1996, scientists created a ribozyme that could stitch nucleotides together, raising hopes for self-sustaining molecular replication.",
+      "body_vi": "Vào cuối những năm 1980, các nhà nghiên cứu phát hiện ra một số RNA có thể đóng vai trò chất xúc tác, họ đặt tên chúng là ribozyme {source}. Khả năng kép này giúp mang trình tự di truyền và thúc đẩy các phản ứng, khiến nhà vật lý Walter Gilbert đề xuất giả thuyết thế giới RNA {source}. Sau đó vào năm 1996, các nhà khoa học tạo ra một ribozyme có thể khâu các nucleotide lại với nhau, thắp lên hy vọng về việc nhân bản phân tử tự duy trì."
+    },
+    {
+      "heading_en": "Mutations and Obstacles",
+      "heading_vi": "Đột biến và trở ngại",
+      "body_en": "Replication inevitably brings mutation errors, opening a path to Darwinian selection {source}. Yet in 2019, biologist Gerald Joyce found that evolving synthetic ribozymes usually lost their catalytic behavior after mutations {source}. Functional ribozymes typically span hundreds of nucleotides, whereas spontaneous assemblies on early Earth only yielded tiny chains of 10 to 15 nucleotides.",
+      "body_vi": "Quá trình nhân bản chắc chắn tạo ra lỗi đột biến, mở ra con đường cho chọn lọc tự nhiên (*Darwinian selection*) {source}. Dù vậy vào năm 2019, nhà sinh học Gerald Joyce nhận thấy các ribozyme tổng hợp đang tiến hóa thường mất đi hành vi xúc tác sau các đột biến {source}. Hơn nữa, các ribozyme chức năng thường kéo dài hàng trăm nucleotide, trong khi các sự hình thành tự phát trên Trái Đất nguyên thủy chỉ tạo ra các chuỗi rất nhỏ từ 10 đến 15 nucleotide."
+    },
+    {
+      "heading_en": "Tiny Replicators",
+      "heading_vi": "Những bản sao rất nhỏ",
+      "body_en": "Recent work by biologist Philipp Holliger showed that self-replicating RNAs can be much smaller {source}. His team found a 45-nucleotide molecule named QT45 that can copy other strands {source}. Finding three such small RNAs among 10 trillion sequences suggests this copying ability might be common enough to appear in a primordial soup.",
+      "body_vi": "Công trình gần đây của nhà sinh học Philipp Holliger cho thấy các RNA tự nhân bản có thể nhỏ hơn nhiều {source}. Nhóm của ông tìm thấy một phân tử dài 45 nucleotide tên là QT45 có khả năng sao chép các sợi khác {source}. Việc tìm thấy ba RNA nhỏ như vậy trong số 10 nghìn tỷ trình tự cho thấy khả năng sao chép này có thể đủ phổ biến để xuất hiện trong một loại súp nguyên thủy."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Quanta Magazine (2026)",
+      "url": "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/384/1080/1920",
+    "provider": "unsplash",
+    "author": "Griffin Keller",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Philip Ball November 9",
+      "2026"
+    ],
+    "originalTitle": "Did Life Begin in an RNA World?",
+    "originalUrl": "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109",
+    "publisher": "Quanta Magazine",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review the basic biology of RNA and its dual functions.",
+      "Compare the sizes of synthetic versus natural ribozymes.",
+      "Examine the environmental conditions of the early Earth."
+    ],
+    "vi": [
+      "Xem xét sinh học cơ bản của RNA và các chức năng kép của nó.",
+      "So sánh kích thước của ribozyme tổng hợp với ribozyme tự nhiên.",
+      "Kiểm tra các điều kiện môi trường của Trái Đất thời kỳ đầu."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/384/1080/1920",
+      "provider": "unsplash",
+      "author": "Griffin Keller",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/1053/1080/1920",
+      "provider": "unsplash",
+      "author": "Anna Popović",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/523/1080/1920",
+      "provider": "unsplash",
+      "author": "Harman Abiwardani",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/WLUHO9A_xik"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOgBEA4BNBeba8LstogAAD8eFRq26KlDz+JD1l9Pjk6eQqlC3AXq6eWYx+dqJ1ozOo7ZYHftsVcadv/ftQgIEoUABhUJOn2JaIy3XnODiBtq3SOWxjzzTEO+qM4mX+JUb3pWYZouKOPn804AA==",
+  "dominant": "#324c5b",
+  "publishAt": "2026-11-12T04:07:45.854Z",
+  "ai": {
+    "fields": [
+      "summary",
+      "vi",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
+}
