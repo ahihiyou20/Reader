@@ -1,0 +1,109 @@
+{
+  "slug": "crispr-cas9-from-bacterial-defence-to-gene-editing",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "CRISPR",
+    "gene editing",
+    "bacteria",
+    "molecular biology"
+  ],
+  "title": {
+    "en": "CRISPR-Cas9: how bacterial immunity became a gene-editing tool",
+    "vi": "CRISPR-Cas9: từ hệ miễn dịch của vi khuẩn đến công cụ chỉnh sửa gen"
+  },
+  "hook": {
+    "en": "CRISPR-Cas9 began as part of how bacteria defend themselves against viruses. In 2012, Emmanuelle Charpentier and Jennifer Doudna showed that the system could cut targeted DNA, a discovery that earned them the 2020 Nobel Prize in Chemistry. Since then, the tool has spread through basic research, crop breeding and cancer work, although the hope of curing inherited disease is still a hope.",
+    "vi": "CRISPR-Cas9 bắt đầu như một phần trong cách vi khuẩn tự vệ trước virus. Năm 2012, Emmanuelle Charpentier và Jennifer Doudna cho thấy hệ thống này có thể cắt DNA theo đích định sẵn, phát hiện đưa họ tới Giải Nobel Hóa học 2020. Từ đó, công cụ này lan sang nghiên cứu cơ bản, chọn tạo giống cây trồng và nghiên cứu ung thư, dù hy vọng chữa các bệnh di truyền vẫn mới chỉ là hy vọng."
+  },
+  "sections": [
+    {
+      "heading_en": "An immune system in bacteria",
+      "heading_vi": "Một hệ miễn dịch trong vi khuẩn",
+      "body_en": "The Nobel committee describes CRISPR/Cas as an ancient immune system in bacteria, one that disarms viruses by cleaving their DNA {nobel-press}. Charpentier's work showed that a molecule called tracrRNA is part of that bacterial immune system {nobel-press}.",
+      "body_vi": "Ủy ban Nobel mô tả CRISPR/Cas là một hệ miễn dịch cổ xưa của vi khuẩn, có khả năng vô hiệu hóa virus bằng cách cắt DNA của chúng {nobel-press}. Nghiên cứu của Charpentier cho thấy một phân tử gọi là tracrRNA là một phần của hệ miễn dịch đó {nobel-press}."
+    },
+    {
+      "heading_en": "A cut that needed two parts",
+      "heading_vi": "Một nhát cắt cần hai thành phần",
+      "body_en": "Earlier, researchers believed that tracrRNA was needed only to help process the CRISPR RNA into its active form. Once the Cas9 protein had access to tracrRNA, the DNA molecule was cut into two parts. The Nobel background presents this as the result the researchers had been waiting for {nobel-popular}.",
+      "body_vi": "Trước đó, các nhà nghiên cứu cho rằng tracrRNA chỉ cần để giúp xử lý RNA của CRISPR thành dạng hoạt động. Khi protein Cas9 tiếp cận được tracrRNA, phân tử DNA bị cắt thành hai đoạn. Tài liệu phổ biến của Nobel coi đây là kết quả mà các nhà nghiên cứu đã chờ đợi {nobel-popular}."
+    },
+    {
+      "heading_en": "The 2012 evidence",
+      "heading_vi": "Bằng chứng năm 2012",
+      "body_en": "A review of the work notes that Doudna and Charpentier published the first evidence that the CRISPR system could cut targeted bacterial DNA in June 2012 {jci-review}. The finding was that the system could cut targeted DNA, which is the property that makes it usable as a tool.",
+      "body_vi": "Một bài tổng quan về công trình này ghi nhận rằng Doudna và Charpentier công bố bằng chứng đầu tiên cho thấy hệ thống CRISPR có thể cắt DNA vi khuẩn theo đích vào tháng 6 năm 2012 {jci-review}. Phát hiện này cho thấy hệ thống có thể cắt DNA theo đích, và đó là tính chất khiến nó dùng được như một công cụ."
+    },
+    {
+      "heading_en": "From scissors to everyday tools",
+      "heading_vi": "Từ kéo cắt đến công cụ thường ngày",
+      "body_en": "The Nobel committee says that the CRISPR/Cas9 genetic scissors have revolutionised molecular life sciences, and that their use has exploded since 2012 {nobel-press}. The popular background adds that the tool has brought new opportunities for plant breeding and is contributing to innovative cancer therapies {nobel-popular}. These are the areas where the tool already changes practice, rather than only promises to.",
+      "body_vi": "Ủy ban Nobel nói rằng kéo cắt gen CRISPR/Cas9 đã cách mạng hóa khoa học sự sống phân tử, và việc sử dụng nó bùng nổ kể từ năm 2012 {nobel-press}. Tài liệu phổ biến bổ sung rằng công cụ này mở ra cơ hội mới cho chọn tạo giống cây trồng và đang góp phần vào các liệu pháp ung thư mới {nobel-popular}. Đây là những lĩnh vực công cụ đã làm thay đổi thực hành, chứ không chỉ hứa hẹn."
+    },
+    {
+      "heading_en": "A promise still ahead",
+      "heading_vi": "Một lời hứa vẫn còn ở phía trước",
+      "body_en": "The popular background says the technology may make the dream of curing inherited diseases come true {nobel-popular}. Note the hedge: may. The claim describes a possibility the technology is aiming at, and the Nobel material does not say that it has been achieved for any particular disease. Readers should treat cure claims as statements about a goal until the evidence shows otherwise.",
+      "body_vi": "Tài liệu phổ biến nói công nghệ này có thể biến giấc mơ chữa các bệnh di truyền thành hiện thực {nobel-popular}. Hãy để ý từ \"có thể\". Đây là mô tả một khả năng mà công nghệ đang nhắm tới, và tài liệu Nobel không nói nó đã đạt được cho bệnh cụ thể nào. Người đọc nên coi các khẳng định về chữa khỏi là mục tiêu, cho đến khi bằng chứng cho thấy khác."
+    },
+    {
+      "heading_en": "Reading a gene-editing claim",
+      "heading_vi": "Đọc một khẳng định về chỉnh sửa gen",
+      "body_en": "A claim about gene editing can describe a lab result, an animal study, or a human treatment, and the three carry very different weight. [g:Before you repeat a headline, check which of the three it describes, and whether the source is a trial report or a description of a goal.] That single check separates most of the confusion in public discussion of the technology.",
+      "body_vi": "Một khẳng định về chỉnh sửa gen có thể mô tả kết quả trong phòng thí nghiệm, nghiên cứu trên động vật, hoặc điều trị trên người, và ba loại này có trọng lượng rất khác nhau. [g:Trước khi lặp lại một tiêu đề, hãy kiểm tra nó mô tả loại nào trong ba loại đó, và nguồn là báo cáo thử nghiệm hay mô tả một mục tiêu.] Một kiểm tra đơn giản này cũng gỡ được phần lớn nhầm lẫn trong thảo luận công chúng về công nghệ."
+    }
+  ],
+  "keyPoint": {
+    "en": "CRISPR-Cas9 started as a bacterial defence that cuts viral DNA. Doudna and Charpentier showed in 2012 that the cut could be aimed, and the tool now shapes work in crops and medicine, though the promised cures are still a goal.",
+    "vi": "CRISPR-Cas9 bắt đầu như một cơ chế tự vệ của vi khuẩn, cắt DNA của virus. Doudna và Charpentier cho thấy năm 2012 nhát cắt có thể được nhắm định hướng, và công cụ này nay định hình công việc trong cây trồng và y học, dù các liệu pháp chữa khỏi được hứa hẹn vẫn là một mục tiêu."
+  },
+  "applySteps": {
+    "en": [
+      "Read the first paragraph of the Nobel press release, and write down who won the 2020 prize and for what discovery.",
+      "Find one current report on a gene-editing treatment, and note whether it describes a trial, an approved product or a laboratory result.",
+      "Explain in one sentence to someone else the difference between CRISPR as a bacterial defence and CRISPR as a gene-editing tool."
+    ],
+    "vi": [
+      "Đọc đoạn đầu của thông cáo báo chí Nobel, và ghi lại ai đoạt giải năm 2020 và vì phát hiện nào.",
+      "Tìm một báo cáo hiện tại về một liệu pháp chỉnh sửa gen, và ghi lại báo cáo đó mô tả một thử nghiệm, một sản phẩm đã được phê duyệt hay một kết quả trong phòng thí nghiệm.",
+      "Giải thích cho người khác trong một câu sự khác nhau giữa CRISPR như cơ chế tự vệ của vi khuẩn và CRISPR như công cụ chỉnh sửa gen."
+    ]
+  },
+  "references": [
+    {
+      "id": "nobel-press",
+      "label": "Nobel Prize, Press release: The Nobel Prize in Chemistry 2020",
+      "url": "https://www.nobelprize.org/prizes/chemistry/2020/press-release/"
+    },
+    {
+      "id": "nobel-popular",
+      "label": "Nobel Prize, The Nobel Prize in Chemistry 2020, popular information",
+      "url": "https://www.nobelprize.org/prizes/chemistry/2020/popular-information/"
+    },
+    {
+      "id": "jci-review",
+      "label": "Uyhazi (2021), A CRISPR view of the 2020 Nobel Prize in Chemistry, JCI",
+      "url": "https://www.jci.org/articles/view/145214"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/crispr-cas9-from-bacterial-defence-to-gene-editing.webp",
+    "provider": "unsplash",
+    "author": "Mike Wilson",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/rM7B4DheQc0"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoQABwAPu1krU2ppaSiMAgBMB2JZQABFblbMyM6Y5g0dFAAAP5kDeQrK/xMGetn5cPVg9KkApS2X1heTzjx96/U8J9/68n9HUCf9NooMv+TINq8VIPmHSN/CrczvEAA",
+  "dominant": "#57585b"
+}

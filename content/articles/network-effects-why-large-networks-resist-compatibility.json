@@ -1,0 +1,104 @@
+{
+  "slug": "network-effects-why-large-networks-resist-compatibility",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "network effects",
+    "competition",
+    "compatibility",
+    "market structure"
+  ],
+  "title": {
+    "en": "Network effects: why the big network resists compatibility",
+    "vi": "Hiệu ứng mạng: vì sao mạng lớn chống lại khả năng tương thích"
+  },
+  "hook": {
+    "en": "For some products, the value to each user rises with the number of other users. In a 1985 paper, Michael Katz and Carl Shapiro showed that firms with large networks often oppose making their systems compatible with rivals, even when compatibility would raise total welfare. Smaller firms, in turn, may push for compatibility even when it costs society more than it gains.",
+    "vi": "Với một số sản phẩm, giá trị đối với mỗi người dùng tăng theo số người dùng khác. Trong một bài báo năm 1985, Michael Katz và Carl Shapiro chỉ ra rằng các hãng có mạng lớn thường phản đối việc làm hệ thống của họ tương thích với đối thủ, ngay cả khi tương thích sẽ làm tăng phúc lợi tổng thể. Ngược lại, các hãng nhỏ có thể đòi tương thích dù xét về tổng thể, nó tốn kém cho xã hội hơn lợi ích mang lại."
+  },
+  "sections": [
+    {
+      "heading_en": "Value that depends on other users",
+      "heading_vi": "Giá trị phụ thuộc vào người dùng khác",
+      "body_en": "Katz and Shapiro describe products for which the utility a user derives from consumption increases with the number of other agents consuming the good {katz-shapiro-1985}. Their examples include car service networks, where foreign manufacturers' sales were initially held back by thinner networks of experienced service providers {katz-shapiro-1985}. The scope of the network varies. For a car, it may be one firm's sales. For computers that share an operating system, it can be a coalition of firms {katz-shapiro-1985}.",
+      "body_vi": "Katz và Shapiro mô tả các sản phẩm mà [p:lợi ích] người dùng nhận được tăng theo số người khác cùng tiêu dùng hàng hóa đó {katz-shapiro-1985}. Ví dụ của họ gồm mạng dịch vụ sửa xe, nơi doanh số của các hãng ô tô nước ngoài ban đầu bị kìm lại vì mạng lưới thợ có kinh nghiệm còn mỏng {katz-shapiro-1985}. Phạm vi của mạng khác nhau. Với ô tô, nó có thể chỉ là doanh số của một hãng. Với máy tính cùng dùng một hệ điều hành, nó có thể là một liên minh các hãng {katz-shapiro-1985}."
+    },
+    {
+      "heading_en": "Expectations decide the market",
+      "heading_vi": "Kỳ vọng quyết định thị trường",
+      "body_en": "Consumers must decide what to buy before the final size of each network is known, so they form expectations about it {katz-shapiro-1985}. If the expectations are fulfilled, the expected network size equals the actual one. The paper shows that network effects give rise to demand-side economies of scale, and that these depend on consumer expectations. Several sets of fulfilled expectations can be consistent with the market, so a market with network effects can have more than one outcome {katz-shapiro-1985}.",
+      "body_vi": "Người tiêu dùng phải quyết định mua trước khi biết quy mô cuối cùng của mỗi mạng, nên họ hình thành kỳ vọng về nó {katz-shapiro-1985}. Nếu kỳ vọng được ứng nghiệm, quy mô mạng kỳ vọng bằng quy mô thực tế. Bài báo cho thấy hiệu ứng mạng tạo ra [p:lợi thế quy mô phía cầu] (*demand-side economies of scale*), và lợi thế này phụ thuộc vào kỳ vọng của người tiêu dùng. Nhiều bộ kỳ vọng được ứng nghiệm có thể cùng tồn tại trên thị trường, nên một thị trường có hiệu ứng mạng có thể có hơn một kết cục {katz-shapiro-1985}."
+    },
+    {
+      "heading_en": "Compatibility sets the network's edge",
+      "heading_vi": "Tương thích quyết định biên của mạng",
+      "body_en": "The key question is which products count as one network. If two firms' systems are interlinked, or compatible, the aggregate number of subscribers forms the relevant network. If they are incompatible, as with Telex and cable in the paper's example, each firm's own subscriber base is the network {katz-shapiro-1985}. Compatibility is therefore a decision that firms can make, and it changes the size of the network each customer joins.",
+      "body_vi": "Câu hỏi then chốt là những sản phẩm nào được tính là một mạng. Nếu hệ thống của hai hãng liên kết được, hay tương thích, thì tổng số thuê bao tạo thành mạng liên quan. Nếu không tương thích, như Telex và cáp (*cable*) trong ví dụ của bài báo, thì mạng của mỗi hãng chỉ là nhóm thuê bao riêng của hãng đó {katz-shapiro-1985}. Vì vậy, tương thích là một quyết định mà các hãng có thể đưa ra, và nó thay đổi quy mô mạng mà mỗi khách hàng tham gia."
+    },
+    {
+      "heading_en": "Who gains from connecting",
+      "heading_vi": "Ai được lợi khi kết nối",
+      "body_en": "The paper's central finding concerns incentives. Firms with good reputations or large existing networks tend to oppose compatibility, even when welfare increases because of it. Firms with small networks or weak reputations tend to favour compatibility, even in some cases where its social costs exceed its benefits {katz-shapiro-1985}. Overall, the firms' joint incentive to produce compatible goods is lower than the social incentive {katz-shapiro-1985}.",
+      "body_vi": "Phát hiện trung tâm của bài báo nói về động cơ. Các hãng có uy tín tốt hoặc mạng hiện có lớn thường phản đối tương thích, ngay cả khi phúc lợi tăng nhờ điều đó. Các hãng có mạng nhỏ hoặc uy tín yếu thường ủng hộ tương thích, thậm chí trong một số trường hợp chi phí xã hội của nó lớn hơn lợi ích {katz-shapiro-1985}. Nhìn chung, động cơ chung của các hãng để sản xuất hàng hóa tương thích thấp hơn động cơ xã hội {katz-shapiro-1985}."
+    },
+    {
+      "heading_en": "An example from computing",
+      "heading_vi": "Một ví dụ từ máy tính",
+      "body_en": "The paper contrasts two cases. Personal computers that share the CP/M operating system could run common programs across several brands, so the relevant network for a program spans the market {katz-shapiro-1985}. Quadraphonic audio discs were different: records made for one player type could not be played on another, so the network for a given brand covered only the brands that used the same technology {katz-shapiro-1985}. The difference between a common standard and a split market is exactly the compatibility choice the model studies.",
+      "body_vi": "Bài báo đối chiếu hai trường hợp. Máy tính cá nhân dùng chung hệ điều hành CP/M có thể chạy các chương trình chung trên nhiều thương hiệu, nên mạng liên quan của một chương trình trải rộng khắp thị trường {katz-shapiro-1985}. Đĩa âm thanh bốn kênh thì khác: đĩa làm cho loại máy này không chơi được trên loại máy khác, nên mạng của một thương hiệu chỉ gồm các thương hiệu dùng cùng công nghệ {katz-shapiro-1985}. Khác biệt giữa một chuẩn chung và một thị trường bị chia cắt chính là lựa chọn tương thích mà mô hình nghiên cứu."
+    },
+    {
+      "heading_en": "What the model leaves out",
+      "heading_vi": "Mô hình bỏ qua điều gì",
+      "body_en": "The model is a partial equilibrium, with no income effects and consumers who buy at most one unit of one brand {katz-shapiro-1985}. It is static, so it does not show how network sizes grow over time. The authors note that the qualitative results hold if firms can commit to network sizes before consumers buy, which is a useful check on how much the timing assumption matters {katz-shapiro-1985}.",
+      "body_vi": "Mô hình là cân bằng từng phần, không có hiệu ứng thu nhập, và người tiêu dùng mua nhiều nhất một đơn vị của một thương hiệu {katz-shapiro-1985}. Nó là mô hình tĩnh, nên không cho thấy quy mô mạng tăng theo thời gian thế nào. Các tác giả ghi nhận rằng các kết quả định tính vẫn đúng nếu các hãng có thể cam kết quy mô mạng trước khi người tiêu dùng mua, một kiểm tra hữu ích về mức độ quan trọng của giả định thời điểm {katz-shapiro-1985}."
+    }
+  ],
+  "keyPoint": {
+    "en": "A product can gain value as more people use it, and under those conditions the firm with the largest network may gain by staying incompatible, even when connecting everyone would make society better off. Ask who a standard helps before assuming it is neutral.",
+    "vi": "Một sản phẩm có thể tăng giá trị khi có nhiều người dùng hơn, và trong điều kiện đó, hãng có mạng lớn nhất có thể được lợi khi giữ tính không tương thích, ngay cả khi kết nối tất cả mọi người sẽ khiến xã hội tốt hơn. Trước khi cho rằng một chuẩn là trung lập, hãy hỏi nó có lợi cho ai."
+  },
+  "applySteps": {
+    "en": [
+      "Name one product you use whose usefulness depends on other people using it, and identify the network it belongs to.",
+      "Check whether that product works with a competitor's version, and note what the answer suggests about the owner's incentives.",
+      "Before choosing between two platforms, count how many people you need to reach and which platform they already use."
+    ],
+    "vi": [
+      "Nêu một sản phẩm bạn dùng mà giá trị phụ thuộc vào người khác cũng dùng nó, và xác định mạng mà nó thuộc về.",
+      "Kiểm tra xem sản phẩm đó có làm việc được với phiên bản của đối thủ không, và ghi lại câu trả lời gợi ý điều gì về động cơ của chủ sở hữu.",
+      "Trước khi chọn giữa hai nền tảng, đếm xem bạn cần liên lạc với bao nhiêu người và họ đang dùng nền tảng nào."
+    ]
+  },
+  "references": [
+    {
+      "id": "katz-shapiro-1985",
+      "label": "Katz & Shapiro (1985), Network Externalities, Competition, and Compatibility, American Economic Review",
+      "url": "https://www.jstor.org/stable/1814809"
+    },
+    {
+      "id": "katz-shapiro-ssrn",
+      "label": "Katz & Shapiro (1985), NET Institute copy",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID1303641_code1720.pdf?abstractid=1303641"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/network-effects-why-large-networks-resist-compatibility.webp",
+    "provider": "unsplash",
+    "author": "William Hook",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/93Ep1dhTd2s"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoQABwAPu1kqU4ppaOiMAgBMB2JZVefTKATi47OgSdBiQAA/uj3ItPvk8aDdYY+WYLDHiikjW98i8JFQHDq6SHMbLHFeCcmdPDs0wo3yXNIkNA+ruo4bqBTqpOJoK6gWyv2pKBgAAA=",
+  "dominant": "#283b2b"
+}

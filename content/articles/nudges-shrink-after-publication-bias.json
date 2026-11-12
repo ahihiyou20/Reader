@@ -1,0 +1,109 @@
+{
+  "slug": "nudges-shrink-after-publication-bias",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "psychology",
+  "tags": [
+    "nudges",
+    "publication bias",
+    "behaviour change",
+    "meta-analysis"
+  ],
+  "title": {
+    "en": "Nudges look weaker once publication bias is corrected",
+    "vi": "Gợi ý hành vi yếu đi khi hiệu chỉnh thiên lệch công bố"
+  },
+  "hook": {
+    "en": "A 2022 meta-analysis of nudges reported that small changes to how choices are presented shift behaviour by an average Cohen's d of 0.43. A reanalysis of the same studies, corrected for [p:publication bias], put the average at 0.04, close to zero. The dispute is not about whether one number is right. It is about whether the published record can be trusted.",
+    "vi": "Một phân tích tổng hợp năm 2022 về các gợi ý hành vi (*nudge*) báo cáo rằng những thay đổi nhỏ trong cách trình bày lựa chọn làm thay đổi hành vi, với trung bình Cohen's d = 0,43. Một phân tích lại trên chính các nghiên cứu đó, sau khi hiệu chỉnh [p:thiên lệch công bố] (*publication bias*), cho mức trung bình 0,04, gần bằng không. Tranh cãi không chỉ là con số nào đúng. Nó nằm ở chỗ: có thể tin hồ sơ nghiên cứu đã công bố đến đâu?"
+  },
+  "sections": [
+    {
+      "heading_en": "A sizeable average on paper",
+      "heading_vi": "Một mức trung bình đẹp trên giấy",
+      "body_en": "Choice architecture means changing how options are arranged, such as making a healthy food the default or moving sweets out of sight. In 2022 Mertens and colleagues pooled many studies of these interventions across several domains, including health, food, environment and finance {mertens-2022}. Across the whole set, the uncorrected random-effects estimate was a Cohen's d of [y:0.43]. That figure became the headline: nudges work, and they work in many areas of life.",
+      "body_vi": "*Kiến trúc lựa chọn* (*choice architecture*) là việc thay đổi cách sắp xếp các phương án, chẳng hạn đặt món lành mạnh làm mặc định hoặc đưa đồ ngọt ra khỏi tầm mắt. Năm 2022, Mertens và cộng sự tổng hợp nhiều nghiên cứu về các can thiệp này trong nhiều lĩnh vực, gồm sức khỏe, thực phẩm, môi trường và tài chính {mertens-2022}. Tính trên toàn bộ tập dữ liệu, ước lượng chưa hiệu chỉnh theo mô hình hiệu ứng ngẫu nhiên là [y:d = 0,43]. Con số này trở thành tiêu đề: gợi ý hành vi có tác dụng, và tác dụng ấy xuất hiện ở nhiều lĩnh vực của đời sống."
+    },
+    {
+      "heading_en": "Why small studies inflate the average",
+      "heading_vi": "Vì sao các nghiên cứu nhỏ kéo trung bình lên",
+      "body_en": "The original paper's own funnel plot was lopsided. Studies with low statistical power, which are usually small, reported larger positive effects than the larger studies did, and Egger's test confirmed the pattern with a coefficient of 2.10 {mertens-2022}. A small study that finds nothing is easy to leave in a drawer, while a small study that finds a striking effect is easy to publish. The average then drifts upward, even if no single study was dishonest. The authors accepted that the true effect may be smaller than their estimate. A reader who sees only the headline cannot tell which of the studies were small, which is why the funnel plot matters.",
+      "body_vi": "Biểu đồ phễu (*funnel plot*) trong chính bài báo gốc bị lệch. Các nghiên cứu có [p:sức mạnh thống kê thấp] (*statistical power*), thường là nghiên cứu nhỏ, báo cáo hiệu ứng dương lớn hơn so với các nghiên cứu lớn. Kiểm định Egger xác nhận mẫu hình này với hệ số 2,10 {mertens-2022}. Một nghiên cứu nhỏ không tìm thấy gì dễ bị xếp vào ngăn kéo, còn một nghiên cứu nhỏ tìm thấy hiệu ứng nổi bật thì dễ được đăng. Khi đó trung bình bị kéo lên, dù không nghiên cứu riêng lẻ nào gian dối. Nhóm tác giả thừa nhận hiệu ứng thật có thể nhỏ hơn ước lượng của họ. Người đọc chỉ thấy con số tổng kết sẽ không biết nghiên cứu nào là nhỏ, và đó là lý do biểu đồ phễu quan trọng."
+    },
+    {
+      "heading_en": "Correcting the estimate",
+      "heading_vi": "Hiệu chỉnh ước lượng",
+      "body_en": "Maier and colleagues reanalysed the same data with RoBMA, a Bayesian meta-analysis method. Instead of choosing one bias model, this method averages over models with and without selection for publication, weighting each by how well it fits the data {maier-2022}. The combined estimate fell to [y:0.04], with a 95 per cent interval from 0.00 to 0.14. For the information category, the corrected estimate was 0.00. Their conclusion was that, after correction, no evidence remained that nudges are effective tools for changing behaviour. Both analyses use the same studies, so the gap between 0.43 and 0.04 comes from the correction, not from new data.",
+      "body_vi": "Maier và cộng sự phân tích lại cùng dữ liệu bằng phương pháp RoBMA, một kiểu phân tích tổng hợp Bayes (*Bayesian meta-analysis*). Thay vì chọn một mô hình thiên lệch, phương pháp này lấy trung bình trên nhiều mô hình, có tính đến khả năng nghiên cứu có hiệu ứng yếu đã bị loại khỏi tài liệu, và trọng số của mỗi mô hình phụ thuộc vào mức khớp với dữ liệu {maier-2022}. Ước lượng tổng hợp giảm xuống còn [y:0,04], khoảng tin cậy 95% từ 0,00 đến 0,14. Với nhóm can thiệp cung cấp thông tin, ước lượng hiệu chỉnh là 0,00. Kết luận của họ: sau khi hiệu chỉnh, không còn bằng chứng rằng gợi ý hành vi là công cụ hiệu quả để thay đổi hành vi. Hai phân tích dùng cùng các nghiên cứu, nên khoảng cách giữa 0,43 và 0,04 đến từ việc hiệu chỉnh, không phải từ dữ liệu mới."
+    },
+    {
+      "heading_en": "Not every category fell to zero",
+      "heading_vi": "Không phải nhóm nào cũng về không",
+      "body_en": "The picture is uneven. Structure interventions, which change defaults or layouts, stayed undecided, with a corrected estimate of 0.12 and an interval from 0.00 to 0.43 {maier-2022}. In every category and domain except finance, the studies differed from one another more than chance alone would explain. The reanalysis therefore leaves room for some nudges to work in some settings, even though the average is close to zero. The reanalysis did not show which settings those are.",
+      "body_vi": "Bức tranh không đồng đều. Nhóm can thiệp [p:cấu trúc], tức những can thiệp thay đổi mặc định hoặc cách bố trí, vẫn chưa có kết luận rõ, với ước lượng hiệu chỉnh 0,12 và khoảng từ 0,00 đến 0,43 {maier-2022}. Ở phần lớn nhóm và lĩnh vực, các nghiên cứu cũng khác nhau nhiều hơn mức có thể do ngẫu nhiên. Vì vậy, dù trung bình gần bằng không, phân tích lại vẫn để ngỏ khả năng một số gợi ý hành vi có tác dụng trong một số bối cảnh. Phân tích này không chỉ ra những bối cảnh đó là gì."
+    },
+    {
+      "heading_en": "What the original authors still argue",
+      "heading_vi": "Điều nhóm tác giả gốc vẫn khẳng định",
+      "body_en": "Tobias Brosch, a co-author of the original work, replied that the general conclusion still stands while the true effect is likely smaller than the uncorrected estimate {brosch-2022}. The authors' own sensitivity analysis, which assumed severe bias, gave an effect as low as 0.08 {maier-2022}. Both sides agree that small, selectively reported studies inflate the average. They disagree on how much of the effect survives once that inflation is removed.",
+      "body_vi": "Tobias Brosch, một đồng tác giả của công trình gốc, trả lời rằng kết luận chung vẫn đứng vững, dù hiệu ứng thực có thể nhỏ hơn ước lượng chưa hiệu chỉnh {brosch-2022}. Phân tích độ nhạy của chính nhóm tác giả gốc, giả định thiên lệch nghiêm trọng, cho hiệu ứng thấp tới 0,08 {maier-2022}. Hai bên đồng ý rằng các nghiên cứu nhỏ, được báo cáo có chọn lọc, làm trung bình bị thổi phồng. Họ bất đồng về phần hiệu ứng còn lại sau khi loại bỏ phần thổi phồng đó."
+    },
+    {
+      "heading_en": "How to read a headline effect",
+      "heading_vi": "Cách đọc một con số hiệu ứng",
+      "body_en": "A claim built on many small studies deserves more caution than one built on a few large trials. When you meet a headline effect for a behaviour change tool, [g:check whether the studies were small and whether the average was corrected for publication bias]. A corrected estimate is not a verdict that a tool is useless, but it is a sign that the uncorrected number probably overstates what you will see. Test the tool on your own habit before you rely on it.",
+      "body_vi": "Một kết luận dựa trên nhiều nghiên cứu nhỏ cần thận trọng hơn một kết luận dựa trên vài thử nghiệm lớn. Khi gặp một con số hiệu ứng nổi bật cho công cụ thay đổi hành vi, [g:hãy kiểm tra các nghiên cứu có nhỏ không và trung bình đã được hiệu chỉnh thiên lệch công bố hay chưa]. Ước lượng đã hiệu chỉnh không có nghĩa công cụ vô dụng, nhưng là dấu hiệu rằng con số chưa hiệu chỉnh có thể phóng đại điều bạn sẽ thấy. Hãy thử công cụ trên thói quen của chính bạn trước khi tin tưởng nó."
+    }
+  ],
+  "keyPoint": {
+    "en": "A nudge's headline effect can shrink sharply once studies that found little are counted fairly. The average depends on which results reached print. Before you trust a figure, ask how the estimate was corrected for publication bias, and whether the studies behind it were small.",
+    "vi": "Hiệu ứng nổi bật của một gợi ý hành vi có thể co lại mạnh khi các nghiên cứu cho kết quả yếu được tính công bằng. Trung bình phụ thuộc vào kết quả nào được in ra. Trước khi tin một con số, hãy hỏi ước lượng đã được hiệu chỉnh thiên lệch công bố như thế nào, và các nghiên cứu đứng sau nó có nhỏ hay không."
+  },
+  "applySteps": {
+    "en": [
+      "Find the number behind one nudge you use, and note whether it came from a single study or a pooled average.",
+      "Before you adopt a new default or layout, record the behaviour for two weeks, then change it and record it again.",
+      "Compare the change you measured with the effect the headline promised, and keep the nudge only if the gap is small."
+    ],
+    "vi": [
+      "Tìm con số đứng sau một gợi ý hành vi bạn đang dùng, và ghi chú nó đến từ một nghiên cứu hay từ một trung bình tổng hợp.",
+      "Trước khi áp dụng một mặc định hoặc cách bố trí mới, ghi lại hành vi trong hai tuần, sau đó thay đổi và ghi lại lần nữa.",
+      "So sánh mức thay đổi bạn đo được với hiệu ứng mà tiêu đề hứa hẹn, và chỉ giữ gợi ý nếu khoảng chênh lệch nhỏ."
+    ]
+  },
+  "references": [
+    {
+      "id": "mertens-2022",
+      "label": "Mertens et al. (2022)",
+      "url": "https://doi.org/10.1073/pnas.2107346118"
+    },
+    {
+      "id": "maier-2022",
+      "label": "Maier et al. (2022)",
+      "url": "https://doi.org/10.1073/pnas.2200300119"
+    },
+    {
+      "id": "brosch-2022",
+      "label": "Brosch (2022), reply to Maier et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9351449/"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/nudges-shrink-after-publication-bias.webp",
+    "provider": "unsplash",
+    "author": "Alexey Topolyanskiy",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/-oWyJoSqBRM"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACQBACdASoQABwAPu1mqk4ppaOiMAgBMB2JbACxG175WBLlL2C3QW3hRy5zagAA/uGdRYKAjj46zg6snzo0UXCn08bmh9AqetKV1DUxJFMn5b22A1EMLxtl5cvn7tiDxHQ2/SkTtZzHhKfI0sElc6q/7i0oZ/qK5xvkPb/4Z938ooaczQ/Wc7++hDcW28JeK0OdyX3UBqV1btmSt0OLeqjaIGtTfm/d8GJt9CcV4ZawAA==",
+  "dominant": "#476a81"
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "how-reed-solomon-codes-keep-a-scratched-cd-playing",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "error correction",
+    "coding theory",
+    "compact disc",
+    "data storage"
+  ],
+  "title": {
+    "en": "How Reed–Solomon codes let a scratched CD still play",
+    "vi": "Mã Reed–Solomon giúp đĩa CD có vết xước vẫn phát được thế nào"
+  },
+  "hook": {
+    "en": "A compact disc can carry a scratch and still play without a glitch. The reason is error-correcting code, which adds extra symbols to the data so that a decoder can find and repair damage. One of the most widely used families, Reed–Solomon codes, is built for exactly the kind of damage a scratch causes: a run of errors in a row.",
+    "vi": "Một đĩa compact có thể có vết xước mà vẫn phát mượt. Lý do là mã sửa lỗi (*error-correcting code*), thêm các ký hiệu dư vào dữ liệu để bộ giải mã tìm và sửa hư hỏng. Một họ mã được dùng rộng rãi, mã Reed–Solomon, được thiết kế đúng cho loại hư hỏng do vết xước gây ra: một chuỗi lỗi liền nhau."
+  },
+  "sections": [
+    {
+      "heading_en": "A margin of extra symbols",
+      "heading_vi": "Một khoảng dư các ký hiệu",
+      "body_en": "Reed–Solomon codes operate on a block of data treated as a set of symbols, which are elements of a finite field {rs-wiki}. A code described as RS(n, k) takes k symbols of data and produces n symbols in total. The difference, t = n − k, is the number of check symbols added as a margin {rs-wiki}. The check symbols carry no new information. They exist so that the decoder can test whether the received block still fits the code, and where it does not, locate and fix the damage.",
+      "body_vi": "Mã Reed–Solomon xử lý một khối dữ liệu được coi là tập các ký hiệu, tức là các phần tử của một [p:trường hữu hạn] (*finite field*) {rs-wiki}. Mã RS(n, k) lấy k ký hiệu dữ liệu và tạo ra tổng cộng n ký hiệu. Hiệu số t = n − k là số ký hiệu kiểm tra được thêm vào như một khoảng dự phòng {rs-wiki}. Các ký hiệu kiểm tra không mang thông tin mới. Chúng có mặt để bộ giải mã kiểm tra xem khối nhận được còn khớp với mã hay không, và nếu không khớp thì xác định vị trí và sửa hư hỏng."
+    },
+    {
+      "heading_en": "Detecting versus correcting",
+      "heading_vi": "Phát hiện khác với sửa",
+      "body_en": "The margin can be spent in two ways. With t check symbols, the code can detect any combination of up to t wrong symbols, but it can correct only up to half that number, rounded down, when the positions of the errors are unknown {rs-wiki}. If the decoder is told which symbols are bad, the code acts as an erasure code and can correct up to t of them {rs-wiki}.",
+      "body_vi": "Khoảng dự phòng có thể dùng theo hai cách. Với t ký hiệu kiểm tra, mã có thể phát hiện mọi tổ hợp tối đa t ký hiệu sai, nhưng chỉ sửa được tối đa một nửa số đó, làm tròn xuống, khi vị trí lỗi chưa biết {rs-wiki}. Nếu bộ giải mã được báo ký hiệu nào hỏng, mã hoạt động như [p:mã xóa] (*erasure code*) và sửa được tối đa t ký hiệu {rs-wiki}."
+    },
+    {
+      "heading_en": "Why bursts suit this code",
+      "heading_vi": "Vì sao mã này hợp với lỗi thành chuỗi",
+      "body_en": "A scratch does not flip single bits at random. It damages a stretch of track, so the errors come in a burst. Reed–Solomon codes handle this well because the symbols are groups of bits: a sequence of b + 1 consecutive bit errors can affect at most two symbols, where b is the symbol size {rs-wiki}. A long run of bad bits therefore spoils only a few symbols, and the code can repair those few if the margin is large enough.",
+      "body_vi": "Vết xước không lật ngẫu nhiên từng bit. Nó làm hỏng một đoạn rãnh, nên các lỗi đến thành chuỗi. Mã Reed–Solomon xử lý tốt điều này vì các ký hiệu là nhóm bit: một dãy b + 1 bit lỗi liền nhau có thể ảnh hưởng tới tối đa hai ký hiệu, với b là kích thước ký hiệu {rs-wiki}. Vì vậy, một đoạn dài bit hỏng chỉ làm hỏng vài ký hiệu, và mã có thể sửa các ký hiệu đó nếu khoảng dự phòng đủ lớn."
+    },
+    {
+      "heading_en": "Interleaving on the disc",
+      "heading_vi": "Đan xen dữ liệu trên đĩa",
+      "body_en": "The compact disc system does not rely on a single code. It uses two concatenated Reed–Solomon codes, interleaved cross-wise, with a 28-way convolutional interleaver between the two layers. The combined scheme is called cross-interleaved Reed–Solomon coding, or CIRC {circ-wiki}. The design spreads the effects of one damaged area across many code blocks, so that no single block receives more damage than its margin can repair {circ-wiki}.",
+      "body_vi": "Hệ thống đĩa compact không dựa vào một mã duy nhất. Nó dùng hai mã Reed–Solomon ghép nối, đan xen chéo, với một bộ đan xen tích chập 28 đường giữa hai lớp. Sơ đồ kết hợp này gọi là mã Reed–Solomon đan xen chéo (*CIRC*) {circ-wiki}. Thiết kế này trải hậu quả của một vùng hỏng ra nhiều khối mã, để không khối nào phải chịu hư hỏng vượt quá khoảng dự phòng {circ-wiki}."
+    },
+    {
+      "heading_en": "From a 1960 paper to consumer discs",
+      "heading_vi": "Từ một bài báo năm 1960 đến đĩa tiêu dùng",
+      "body_en": "Irving S. Reed and Gustave Solomon developed the codes in 1960 {rs-wiki}. Their applications later included consumer technologies such as MiniDiscs, CDs and DVDs {rs-wiki}. The same mathematics therefore protects a disc in a living room and data stored elsewhere.",
+      "body_vi": "Irving S. Reed và Gustave Solomon phát triển các mã này năm 1960 {rs-wiki}. Về sau, ứng dụng của chúng bao gồm các công nghệ tiêu dùng như MiniDisc, CD và DVD {rs-wiki}. Vì vậy, cùng một nền toán học bảo vệ một đĩa trong phòng khách cũng như dữ liệu được lưu ở nơi khác."
+    },
+    {
+      "heading_en": "Where the margin runs out",
+      "heading_vi": "Khi khoảng dự phòng cạn",
+      "body_en": "The margin is finite. Once the damage in a block exceeds what the check symbols can handle, the code can no longer guarantee a correct repair. The protection is strong within its limits and gives no guarantee outside them.",
+      "body_vi": "Khoảng dự phòng là hữu hạn. Khi hư hỏng trong một khối vượt quá khả năng xử lý của các ký hiệu kiểm tra, mã không còn đảm bảo được việc sửa đúng. Sự bảo vệ mạnh trong giới hạn của nó và không đảm bảo gì bên ngoài giới hạn đó."
+    }
+  ],
+  "keyPoint": {
+    "en": "Reed–Solomon codes add a fixed margin of check symbols. That margin corrects half as many errors as it has check symbols, or all of them when their positions are known, and it handles bursts especially well. Past the limit, the protection stops.",
+    "vi": "Mã Reed–Solomon thêm một khoảng dự phòng cố định gồm các ký hiệu kiểm tra. Khoảng này sửa được một nửa số lỗi tương ứng với số ký hiệu kiểm tra, hoặc tất cả nếu biết vị trí lỗi, và xử lý đặc biệt tốt các chuỗi lỗi liền nhau. Vượt quá giới hạn, sự bảo vệ dừng lại."
+  },
+  "applySteps": {
+    "en": [
+      "Copy any file you cannot afford to lose to a second location, because error correction repairs damage only up to its limit.",
+      "Use a spare disc to see at what level of visible wear playback starts to stutter, and note how sudden the failure is.",
+      "Explain the difference between detecting and correcting an error to someone else, using the rule of half the check symbols."
+    ],
+    "vi": [
+      "Sao chép mọi tệp bạn không thể mất sang một nơi thứ hai, vì sửa lỗi chỉ khắc phục hư hỏng trong giới hạn của nó.",
+      "Dùng một đĩa dự phòng để xem mức mòn nhìn thấy nào thì bắt đầu phát giật, và ghi lại việc hỏng có đột ngột không.",
+      "Giải thích cho người khác sự khác nhau giữa phát hiện và sửa lỗi, dùng quy tắc một nửa số ký hiệu kiểm tra."
+    ]
+  },
+  "references": [
+    {
+      "id": "rs-wiki",
+      "label": "Wikipedia, Reed–Solomon error correction",
+      "url": "https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction"
+    },
+    {
+      "id": "circ-wiki",
+      "label": "Wikipedia, Cross-interleaved Reed–Solomon coding",
+      "url": "https://en.wikipedia.org/wiki/Cross-interleaved_Reed%E2%80%93Solomon_coding"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/how-reed-solomon-codes-keep-a-scratched-cd-playing.webp",
+    "provider": "unsplash",
+    "author": "Frances Gunn",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/8BmNurlVR6M"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQBACdASoQABwAPu1kqk2ppaQiMAgBMB2JaQABH6c26jDmub4A/QE96TqgAP6qHUoAB8HYRhMKZJRe+ACiE1oBnFWBTYto7RPd15a2EWOoEgKnpLvWAfMpKxOAIHj0HQ1vQCASOWoCkbWpvzaIlL4zAwAAAA==",
+  "dominant": "#606060"
+}

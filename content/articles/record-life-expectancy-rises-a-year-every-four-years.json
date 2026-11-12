@@ -1,0 +1,104 @@
+{
+  "slug": "record-life-expectancy-rises-a-year-every-four-years",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "life expectancy",
+    "demography",
+    "mortality",
+    "longevity"
+  ],
+  "title": {
+    "en": "Record life expectancy has risen about a year every four years",
+    "vi": "Tuổi thọ cao nhất ghi nhận tăng khoảng một năm sau mỗi bốn năm"
+  },
+  "hook": {
+    "en": "The highest recorded female life expectancy has climbed by roughly one year every four years since 1840. Oeppen and Vaupel found that the climb was close to a straight line. Predictions of an upper limit on lifespan have been broken again and again, including a 1928 estimate of the maximum, made with US data, that proved too low.",
+    "vi": "Tuổi thọ nữ giới cao nhất từng được ghi nhận đã tăng khoảng một năm sau mỗi bốn năm kể từ năm 1840. Oeppen và Vaupel nhận thấy đường tăng này gần như là một đường thẳng. Các dự đoán về giới hạn trên của tuổi thọ liên tục bị phá vỡ, kể cả một ước tính năm 1928 về mức tối đa, dựa trên dữ liệu của Mỹ, mà về sau tỏ ra quá thấp."
+  },
+  "sections": [
+    {
+      "heading_en": "From 32 to 71 in a century",
+      "heading_vi": "Từ 32 lên 71 trong một thế kỷ",
+      "body_en": "In 1900 the average life expectancy of a newborn was 32 years. By 2021 it had more than doubled, to 71 years {owid-le}. In 1800, no world region had a life expectancy higher than 40 years {owid-le}. The average rose steadily across all regions, and the increase is the result of advances in medicine and public health, along with improvements in living standards {owid-le}.",
+      "body_vi": "Năm 1900, tuổi thọ trung bình của trẻ sơ sinh là 32 năm. Đến năm 2021, con số này đã hơn gấp đôi, đạt 71 năm {owid-le}. Năm 1800, không khu vực nào trên thế giới có tuổi thọ trung bình cao hơn 40 năm {owid-le}. Mức trung bình tăng đều ở mọi khu vực, và sự tăng này đến từ tiến bộ về y học, y tế công cộng cùng cải thiện đời sống {owid-le}."
+    },
+    {
+      "heading_en": "Not only fewer child deaths",
+      "heading_vi": "Không chỉ là ít trẻ tử vong hơn",
+      "body_en": "A common claim is that life expectancy rose only because child mortality fell. Child mortality did play a large part, but the gains extend to older ages {owid-le}. For example, 15-year-olds in France in 1816 could expect to live to 58 years on average. By 2021, the expectation for 15-year-olds had risen to 83 years. Someone who was 65 in 1816 could expect to live to 76 years, and by 2021 to 86 years {owid-le}.",
+      "body_vi": "Một cách nói phổ biến là tuổi thọ tăng chỉ vì tỷ lệ trẻ em tử vong giảm. Tỷ lệ tử vong ở trẻ em đóng một vai trò lớn, nhưng các cải thiện mở rộng đến cả tuổi cao hơn {owid-le}. Ví dụ, trẻ 15 tuổi ở Pháp năm 1816 có thể kỳ vọng sống trung bình tới 58 tuổi. Đến năm 2021, kỳ vọng của trẻ 15 tuổi đã tăng lên 83 tuổi. Một người 65 tuổi năm 1816 có thể kỳ vọng sống tới 76 tuổi, và đến năm 2021 là 86 tuổi {owid-le}."
+    },
+    {
+      "heading_en": "A record that keeps moving",
+      "heading_vi": "Một kỷ lục liên tục được đẩy lên",
+      "body_en": "Oeppen and Vaupel compiled the highest female life expectancy in each year since 1840. They found that the record climbed at almost three months per year, and the linear fit to the record was very strong, with r² = 0.992 {oeppen-vaupel}. Our World in Data's update describes the same pattern as the record rising by around one year every four years, with Hong Kong at 88 years in 2021 {owid-le}.",
+      "body_vi": "Oeppen và Vaupel tổng hợp tuổi thọ nữ giới cao nhất trong từng năm kể từ 1840. Họ thấy kỷ lục tăng gần ba tháng mỗi năm, và đường khớp tuyến tính của kỷ lục rất chặt, với r² = 0,992 {oeppen-vaupel}. Bản cập nhật của Our World in Data mô tả mẫu hình tương tự: kỷ lục tăng khoảng một năm sau mỗi bốn năm, với Hồng Kông đạt 88 tuổi năm 2021 {owid-le}."
+    },
+    {
+      "heading_en": "Limits that were broken",
+      "heading_vi": "Những giới hạn đã bị phá vỡ",
+      "body_en": "In 1928, the American statistician Louis Dublin used mortality data to estimate the maximum achievable life expectancy. US life expectancy was 57 years at the time, and his estimate for the maximum was 64.8 years {owid-le}. Because he lacked data from New Zealand, he did not know that the limit had already been exceeded there {owid-le}. Several later predictions of a ceiling were broken in the same way {owid-le}.",
+      "body_vi": "Năm 1928, nhà thống kê người Mỹ Louis Dublin dùng dữ liệu tử vong để ước tính tuổi thọ tối đa có thể đạt được. Tuổi thọ của người Mỹ lúc đó là 57 năm, còn ước tính của ông về mức tối đa là 64,8 năm {owid-le}. Vì thiếu dữ liệu của New Zealand, ông không biết giới hạn đã bị vượt qua ở đó {owid-le}. Một số dự đoán sau này về trần tuổi thọ cũng bị phá vỡ theo cách tương tự {owid-le}."
+    },
+    {
+      "heading_en": "Steady progress, not one breakthrough",
+      "heading_vi": "Tiến bộ đều đặn, không phải một cú đột phá",
+      "body_en": "Oeppen and Vaupel argue that improvements in life expectancy should not be seen as the result of one-off breakthroughs, but as a regular stream of continuing progress {oeppen-vaupel}. Our World in Data makes the same point: the record has risen steadily, not in bursts {owid-le}. A steady rate is harder to explain with a single cause, and easier to fit to a long-run trend.",
+      "body_vi": "Oeppen và Vaupel lập luận rằng cải thiện tuổi thọ không nên được xem là kết quả của những cú đột phá riêng lẻ, mà là một dòng tiến bộ liên tục và đều đặn {oeppen-vaupel}. Our World in Data nêu cùng ý: kỷ lục tăng đều đặn, không theo từng đợt {owid-le}. Một tốc độ đều khó giải thích bằng một nguyên nhân duy nhất, và dễ khớp với xu hướng dài hạn hơn."
+    },
+    {
+      "heading_en": "What a period figure assumes",
+      "heading_vi": "Con số theo kỳ giả định điều gì",
+      "body_en": "Period life expectancy summarises death rates across all age groups in one year. It represents the average lifespan of a hypothetical group that experienced those same age-specific death rates throughout its life {owid-le}. A record of the highest figure in a year is therefore a comparison of national snapshots, not a single life. It shows what the best-performing country achieved, not what any particular person will live to.",
+      "body_vi": "Tuổi thọ theo kỳ tổng hợp tỷ lệ tử vong ở mọi nhóm tuổi trong một năm. Nó biểu diễn tuổi thọ trung bình của một nhóm giả định trải qua cùng các tỷ lệ tử vong theo tuổi đó trong suốt cuộc đời {owid-le}. Vì vậy, kỷ lục về con số cao nhất trong một năm là so sánh các bức tranh quốc gia tại một thời điểm, không phải một cuộc đời cụ thể. Nó cho biết quốc gia tốt nhất đạt được gì, không cho biết một người cụ thể sẽ sống đến bao nhiêu tuổi."
+    }
+  ],
+  "keyPoint": {
+    "en": "The highest recorded female life expectancy has climbed about a year every four years, and each predicted ceiling has been passed. Read the record as a comparison of national snapshots, because the period measure assumes today's death rates hold for a whole lifetime.",
+    "vi": "Tuổi thọ nữ giới cao nhất từng ghi nhận đã tăng khoảng một năm sau mỗi bốn năm, và mọi trần dự đoán đều đã bị vượt qua. Hãy đọc kỷ lục như so sánh các bức tranh quốc gia, vì thước đo theo kỳ giả định tỷ lệ tử vong hiện nay giữ nguyên suốt cả đời."
+  },
+  "applySteps": {
+    "en": [
+      "Look up your country's life expectancy for 1950 and for the latest year in a public dataset, and divide the change by the number of years.",
+      "Find out whether that figure is a period measure, and write down the assumption it makes about death rates.",
+      "Compare your country's figure with the highest national figure in the same year, and note the gap."
+    ],
+    "vi": [
+      "Tra tuổi thọ của nước bạn năm 1950 và năm mới nhất trong một bộ dữ liệu công khai, rồi chia mức thay đổi cho số năm.",
+      "Kiểm tra xem con số đó là thước đo theo kỳ hay không, và ghi lại giả định nó đưa ra về tỷ lệ tử vong.",
+      "So sánh con số của nước bạn với con số quốc gia cao nhất trong cùng năm, và ghi lại khoảng cách."
+    ]
+  },
+  "references": [
+    {
+      "id": "owid-le",
+      "label": "Our World in Data, Life Expectancy",
+      "url": "https://ourworldindata.org/life-expectancy"
+    },
+    {
+      "id": "oeppen-vaupel",
+      "label": "Oeppen & Vaupel (2002), Broken Limits to Life Expectancy, Science",
+      "url": "https://user.demogr.mpg.de/jwv/pdf/sciencemay2002.pdf"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/record-life-expectancy-rises-a-year-every-four-years.webp",
+    "provider": "unsplash",
+    "author": "Erez Attias",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/KqVHRmHVwwM"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQC7Ay6pwlk224CFEBLHYVOEAAD+v+hcocJkvvvEzVFVaA07Q86WwonrdcwMpUr0oHxD1hCIC6eQkOxadHZ1L0WBOWqj6w+1c/veih9UmZELcbUDbQFJ4DEiUUUPOah+X5kXE3BetTJB2KFOzc+ozwBmydrB4uK+6oRYBVMUFRj6gJsAAA==",
+  "dominant": "#303334"
+}

@@ -1,0 +1,109 @@
+{
+  "slug": "why-the-sky-is-blue",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "science",
+  "tags": [
+    "light",
+    "atmosphere",
+    "scattering",
+    "physics"
+  ],
+  "title": {
+    "en": "Why the sky is blue: air scatters short waves more",
+    "vi": "Vì sao bầu trời xanh: không khí tán xạ sóng ngắn mạnh hơn"
+  },
+  "hook": {
+    "en": "Sunlight looks white, yet the sky overhead is blue and the Sun turns orange at dusk. The cause is not a blue pigment in the air. Sunlight is a mix of all the colours of the rainbow, and the molecules of the air scatter the short, blue waves in every direction far more than the long, red ones. That one fact explains both the day and the dusk.",
+    "vi": "Ánh sáng mặt trời trông trắng, nhưng bầu trời trên đầu lại xanh và mặt trời chuyển sang màu cam lúc hoàng hôn. Nguyên nhân không phải là một chất màu xanh trong không khí. Ánh sáng mặt trời là hỗn hợp mọi màu cầu vồng, và các phân tử không khí tán xạ sóng ngắn màu xanh theo mọi hướng mạnh hơn nhiều so với sóng dài màu đỏ. Chỉ một sự kiện đó giải thích cả ban ngày lẫn hoàng hôn."
+  },
+  "sections": [
+    {
+      "heading_en": "White light is a mix of colours",
+      "heading_vi": "Ánh sáng trắng là hỗn hợp nhiều màu",
+      "body_en": "Sunlight appears white because it contains every colour of the rainbow. When white light passes through a prism, the colours separate {nasa-blue-sky}. Light travels as waves, and each colour has its own wavelength. Blue light has shorter waves than red light, which means that the waves are smaller and more closely spaced. That difference in wavelength is the starting point for the whole explanation.",
+      "body_vi": "Ánh sáng mặt trời trông trắng vì nó chứa mọi màu của cầu vồng. Khi ánh sáng trắng đi qua lăng kính, các màu tách ra {nasa-blue-sky}. Ánh sáng truyền đi dưới dạng sóng, và mỗi màu có [p:bước sóng] riêng. Sóng ánh sáng xanh ngắn hơn sóng ánh sáng đỏ. Sự khác biệt về bước sóng đó là điểm xuất phát của toàn bộ lời giải thích."
+    },
+    {
+      "heading_en": "Air molecules scatter light in every direction",
+      "heading_vi": "Các phân tử không khí tán xạ ánh sáng theo mọi hướng",
+      "body_en": "Sunlight reaches the atmosphere and is scattered in all directions by the gases and particles in the air. Blue light is scattered by the tiny air molecules more than other colours are, because it travels as shorter, smaller waves {nasa-blue-sky}. This process is called Rayleigh scattering, after the nineteenth-century British physicist Lord Rayleigh {rayleigh-wiki}. Because the blue light is redirected across the whole sky, you see blue coming from every part of it, not only from the Sun's direction.",
+      "body_vi": "Ánh sáng mặt trời đi vào khí quyển và bị các khí và hạt trong không khí tán xạ theo mọi hướng. Ánh sáng xanh bị các phân tử không khí nhỏ li ti tán xạ nhiều hơn các màu khác, vì nó truyền đi dưới dạng sóng ngắn và nhỏ hơn {nasa-blue-sky}. Quá trình này được gọi là [p:tán xạ Rayleigh] (*Rayleigh scattering*), đặt theo tên nhà vật lý người Anh Lord Rayleigh ở thế kỷ XIX {rayleigh-wiki}. Vì ánh sáng xanh bị hướng lại khắp bầu trời, bạn thấy màu xanh đến từ mọi phần của nó, không chỉ từ hướng mặt trời."
+    },
+    {
+      "heading_en": "A fourth-power rule",
+      "heading_vi": "Quy tắc lũy thừa bốn",
+      "body_en": "The strength of this scattering depends steeply on wavelength. For light well below the resonance of the scattering medium, the amount of scattering is inversely proportional to the fourth power of the wavelength {rayleigh-wiki}. Halving a wavelength therefore multiplies the scattering by sixteen. The result is that [y:blue is scattered much more than red] as light moves through air {rayleigh-wiki}. The diffuse light from the sky has a broad peak between roughly 450 and 485 nanometres, the range of blue {diffuse-wiki}.",
+      "body_vi": "Mức tán xạ phụ thuộc mạnh vào bước sóng. Với ánh sáng nằm dưới tần số cộng hưởng của môi trường tán xạ, lượng tán xạ tỉ lệ nghịch với lũy thừa bốn của bước sóng {rayleigh-wiki}. Vì vậy, giảm một nửa bước sóng làm tăng tán xạ lên mười sáu lần. Kết quả là [y:ánh sáng xanh bị tán xạ nhiều hơn hẳn ánh sáng đỏ] khi đi qua không khí {rayleigh-wiki}. Ánh sáng khuếch tán từ bầu trời có một đỉnh rộng khoảng 450 đến 485 nanômét, vùng màu xanh {diffuse-wiki}."
+    },
+    {
+      "heading_en": "Why sunsets turn orange",
+      "heading_vi": "Vì sao hoàng hôn chuyển màu cam",
+      "body_en": "Near the horizon, sunlight has passed through much more air than sunlight overhead has. Along that longer path, the blue light is scattered out of the beam and redirected many times, and the remaining light looks yellow or orange {rayleigh-wiki}. The sky near the horizon fades to a paler blue or white, because light has been scattered and reflected so often that the colours mix again {nasa-blue-sky}. Sunlight coming straight from the Sun keeps its warmer tones for the same reason.",
+      "body_vi": "Gần đường chân trời, ánh sáng mặt trời đã đi qua nhiều không khí hơn so với ánh sáng từ trên đầu. Dọc đường dài đó, ánh sáng xanh bị tách khỏi chùm sáng và bị hướng lại nhiều lần, phần còn lại trông vàng hoặc cam {rayleigh-wiki}. Bầu trời gần chân trời nhạt dần thành xanh nhạt hoặc trắng, vì ánh sáng đã bị tán xạ và phản xạ nhiều đến mức các màu lại trộn vào nhau {nasa-blue-sky}. Ánh sáng đến thẳng từ mặt trời giữ tông ấm hơn vì cùng lý do đó."
+    },
+    {
+      "heading_en": "What the explanation rules out",
+      "heading_vi": "Lời giải thích loại trừ điều gì",
+      "body_en": "Reflection from the ground does not make the sky blue. NASA notes that the Earth's surface also reflects and scatters light, but this mixes the colours and pushes the sky toward white {nasa-blue-sky}. The blue comes from scattering in the air itself, and it is strongest in the light that arrives at a steep angle to the viewer, away from the Sun. That is why the blue looks deepest overhead on a clear day.",
+      "body_vi": "Phản xạ từ mặt đất không làm bầu trời xanh. NASA lưu ý rằng bề mặt Trái Đất cũng phản xạ và tán xạ ánh sáng, nhưng điều đó trộn các màu và đẩy bầu trời về phía trắng {nasa-blue-sky}. Màu xanh đến từ sự tán xạ ngay trong không khí, và mạnh nhất ở ánh sáng đi tới người quan sát theo góc đứng, tránh xa mặt trời. Vì vậy, màu xanh trông đậm nhất ngay trên đầu vào ngày trời quang."
+    },
+    {
+      "heading_en": "A check you can make at dusk",
+      "heading_vi": "Một phép kiểm tra bạn làm được lúc hoàng hôn",
+      "body_en": "The explanation predicts what you should see, and you can check it without equipment. [g:On a clear day, compare the shade of the sky straight overhead with the sky near the horizon, then watch the Sun's colour as it sinks.] The overhead sky should look deeper, and the Sun should turn warmer as its light crosses more air. If your observations do not match, the scattering model is incomplete for your conditions, and that is worth noting.",
+      "body_vi": "Lời giải thích dự đoán điều bạn sẽ thấy, và bạn có thể kiểm tra mà không cần dụng cụ. [g:Vào ngày trời quang, hãy so sánh màu bầu trời ngay trên đầu với bầu trời gần chân trời, rồi quan sát màu mặt trời khi nó lặn.] Bầu trời trên đầu nên trông đậm hơn, và mặt trời nên ấm dần khi ánh sáng đi qua nhiều không khí hơn. Nếu quan sát không khớp, mô hình tán xạ chưa đủ cho điều kiện của bạn, và điều đó đáng ghi lại."
+    }
+  ],
+  "keyPoint": {
+    "en": "The sky is blue because air molecules scatter short wavelengths more strongly than long ones. The effect falls off with the fourth power of wavelength, so the same process that colours the day turns the Sun orange when its light travels through the most air.",
+    "vi": "Bầu trời xanh vì các phân tử không khí tán xạ bước sóng ngắn mạnh hơn bước sóng dài. Hiệu ứng giảm theo lũy thừa bốn của bước sóng, nên cùng một quá trình tạo màu cho ban ngày cũng khiến mặt trời chuyển sang màu cam khi ánh sáng đi qua nhiều không khí nhất."
+  },
+  "applySteps": {
+    "en": [
+      "On a clear day, look straight up and then toward the horizon, and note which part of the sky is deeper blue.",
+      "At sunset, watch the Sun for the last few minutes, and note when its colour changes from white to yellow to orange.",
+      "Repeat the sunset check on a hazy day, and compare how quickly the colour shifts with the clear-day result."
+    ],
+    "vi": [
+      "Vào ngày trời quang, nhìn thẳng lên rồi nhìn về phía chân trời, và ghi lại phần nào của bầu trời xanh đậm hơn.",
+      "Lúc hoàng hôn, quan sát mặt trời trong vài phút cuối và ghi lại khi nào màu của nó chuyển từ trắng sang vàng rồi sang cam.",
+      "Lặp lại phép kiểm tra hoàng hôn vào một ngày có sương mù, và so sánh tốc độ đổi màu với kết quả ngày trời quang."
+    ]
+  },
+  "references": [
+    {
+      "id": "nasa-blue-sky",
+      "label": "NASA Space Place, Why Is the Sky Blue?",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/"
+    },
+    {
+      "id": "rayleigh-wiki",
+      "label": "Wikipedia, Rayleigh scattering",
+      "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+    },
+    {
+      "id": "diffuse-wiki",
+      "label": "Wikipedia, Diffuse sky radiation",
+      "url": "https://en.wikipedia.org/wiki/Diffuse_sky_radiation"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/why-the-sky-is-blue.webp",
+    "provider": "unsplash",
+    "author": "Andrew Ridley",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/Kt5hRENuotI"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQAwCdASoQABwAPu1orU6ppiSiMAgBMB2JZQABHu+bjdDk6c/xtYAA/vx83W8E2E3NdkVMG6HZj0Nlm+RXJCUXx96QWD/fZ5VZkJp249IXYoO3SI3WeVyFwCPaaTFBhzkDpt+P4+8/GyUi6BFl6YY/87/vH6cYcIAAAA==",
+  "dominant": "#575954"
+}

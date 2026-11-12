@@ -1,0 +1,104 @@
+{
+  "slug": "huffman-coding-short-codes-for-common-messages",
+  "status": "published",
+  "publishAt": "2026-11-12T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "data compression",
+    "coding",
+    "algorithms",
+    "information theory"
+  ],
+  "title": {
+    "en": "Huffman coding: short codes for the messages that come up most",
+    "vi": "Mã Huffman: mã ngắn cho những thông điệp xuất hiện nhiều nhất"
+  },
+  "hook": {
+    "en": "In 1952 David A. Huffman published a method for assigning codes to messages so that the average message needs as few digits as possible. The trick is simple to state: frequent messages get short codes and rare messages get longer ones. The paper also shows how to build those codes so that a decoder never needs separators between them.",
+    "vi": "Năm 1952, David A. Huffman công bố một phương pháp gán mã cho các thông điệp sao cho thông điệp trung bình cần ít ký số nhất có thể. Ý tưởng đơn giản để phát biểu: thông điệp xuất hiện thường xuyên được gán mã ngắn, còn thông điệp hiếm được gán mã dài hơn. Bài báo cũng chỉ cách xây dựng các mã đó để bộ giải mã không cần dấu phân cách giữa chúng."
+  },
+  "sections": [
+    {
+      "heading_en": "Why equal-length codes waste digits",
+      "heading_vi": "Vì sao mã cùng độ dài lãng phí",
+      "body_en": "If a source has eight messages that are equally likely, three binary digits per message is the best possible. Real sources are rarely even, though. In Huffman's example, the message probabilities range from 0.20 down to 0.01 {huffman-pdf}. A code that gives every message the same length spends the same digits on the common and the rare, which is wasteful. Huffman's stated aim was a minimum-redundancy code, one constructed so that the average number of coding digits per message is minimised {huffman-ieee}.",
+      "body_vi": "Nếu một nguồn có tám thông điệp đều nhau về khả năng xuất hiện, thì ba chữ số nhị phân cho mỗi thông điệp là tốt nhất có thể. Nhưng các nguồn thực tế hiếm khi đều nhau. Trong ví dụ của Huffman, xác suất các thông điệp dao động từ 0,20 xuống 0,01 {huffman-pdf}. Một mã cho mọi thông điệp cùng độ dài sẽ tốn cùng số chữ số cho cả thông điệp phổ biến lẫn hiếm, và điều đó lãng phí. Mục tiêu được nêu của Huffman là một [p:mã dư thừa tối thiểu] (*minimum-redundancy code*), được xây dựng sao cho số chữ số mã trung bình trên mỗi thông điệp là nhỏ nhất {huffman-ieee}."
+    },
+    {
+      "heading_en": "Give common messages short codes",
+      "heading_vi": "Gán mã ngắn cho thông điệp phổ biến",
+      "body_en": "In the paper's worked table, the message with probability 0.20 receives a two-digit code, while the messages with probability 0.03 and 0.01 receive six-digit codes {huffman-pdf}. The numbers follow the probabilities. A message that appears often saves the most digits when it is short, and a message that appears rarely costs little when it is long. The arithmetic of the average works in favour of the frequent cases.",
+      "body_vi": "Trong bảng ví dụ của bài báo, thông điệp có xác suất 0,20 nhận mã hai chữ số, còn các thông điệp có xác suất 0,03 và 0,01 nhận mã sáu chữ số {huffman-pdf}. Các con số đi theo xác suất. Thông điệp xuất hiện thường xuyên tiết kiệm được nhiều chữ số nhất khi có mã ngắn, còn thông điệp hiếm ít tốn kém khi có mã dài. Phép tính trung bình có lợi cho các trường hợp phổ biến."
+    },
+    {
+      "heading_en": "No separators needed",
+      "heading_vi": "Không cần dấu phân cách",
+      "body_en": "Huffman also required that codes be built so that no extra signal is needed to show where one message code ends and the next begins {huffman-pdf}. A code with this property is called prefix-free, because no code is the beginning of another. A decoder can read digits from left to right and stop as soon as it matches a complete code, without waiting for a marker.",
+      "body_vi": "Huffman cũng yêu cầu các mã được xây dựng sao cho không cần tín hiệu thêm để biết mã của một thông điệp kết thúc ở đâu và mã tiếp theo bắt đầu ở đâu {huffman-pdf}. Mã có tính chất này gọi là [p:không tiền tố] (*prefix-free*), vì không mã nào là phần đầu của mã khác. Bộ giải mã có thể đọc từ trái sang phải và dừng ngay khi khớp một mã hoàn chỉnh, không cần chờ tín hiệu đánh dấu."
+    },
+    {
+      "heading_en": "Building the code by combining",
+      "heading_vi": "Xây dựng mã bằng cách gộp dần",
+      "body_en": "The construction works from the bottom up. The two least probable messages are combined into one composite item, the process repeats with the new list, and the digits are assigned as the items are split back apart. The paper's example says the message marked with an asterisk is combined with others five times, and therefore should be assigned a code length of five digits {huffman-pdf}. A message's code length is thus the number of combinations it survives before it is grouped into the final code.",
+      "body_vi": "Việc xây dựng đi từ dưới lên. Hai thông điệp ít có khả năng nhất được gộp thành một mục hợp thành, quá trình lặp lại với danh sách mới, và các chữ số được gán khi các mục được tách ngược trở lại. Ví dụ trong bài báo nói rằng thông điệp được đánh dấu được gộp với các mục khác năm lần, và vì thế nên được gán mã năm chữ số {huffman-pdf}. Độ dài mã của một thông điệp, nói cách khác, là số lần nó tham gia gộp trước khi thành mã cuối cùng."
+    },
+    {
+      "heading_en": "The average, not the best case",
+      "heading_vi": "Trung bình, không phải trường hợp tốt nhất",
+      "body_en": "The paper reports an average length of 3.42 digits for its 13-message example {huffman-pdf}. A fixed-length code for 13 messages needs four binary digits each, so the Huffman code saves about 0.58 digits per message on average under the stated probabilities. The saving is an average over many messages. A single rare message can still take six digits, and a source whose probabilities change needs a new code.",
+      "body_vi": "Bài báo ghi độ dài trung bình 3,42 chữ số cho ví dụ 13 thông điệp {huffman-pdf}. Một mã cố định độ dài cho 13 thông điệp cần bốn chữ số nhị phân cho mỗi thông điệp, nên với các xác suất đã nêu, mã Huffman tiết kiệm khoảng 0,58 chữ số mỗi thông điệp tính trung bình. Mức tiết kiệm là trung bình trên nhiều thông điệp. Một thông điệp hiếm vẫn có thể cần sáu chữ số, và nguồn có xác suất thay đổi cần một mã mới."
+    },
+    {
+      "heading_en": "What the method depends on",
+      "heading_vi": "Phương pháp phụ thuộc vào điều gì",
+      "body_en": "The method needs the probabilities before it can start. It does not discover them from the data, so a code built on the wrong frequencies gives shorter codes to the wrong messages. The construction guarantees the best average for the probabilities it is given, not for every possible stream of messages. Anyone using it should check how well the assumed frequencies match the real ones.",
+      "body_vi": "Phương pháp cần xác suất trước khi bắt đầu. Nó không tự rút ra xác suất từ dữ liệu, nên một mã xây trên tần suất sai sẽ gán mã ngắn cho nhầm thông điệp. Cách xây dựng bảo đảm trung bình tốt nhất cho các xác suất đã cho, không phải cho mọi luồng thông điệp có thể. Ai dùng phương pháp này nên kiểm tra xem tần suất giả định khớp với tần suất thực tế đến đâu."
+    }
+  ],
+  "keyPoint": {
+    "en": "Huffman's method gives frequent messages short codes and rare messages longer ones, and builds them so no separator is needed. It minimises the average digits per message for the probabilities it is given, so its quality depends on how accurate those probabilities are.",
+    "vi": "Phương pháp Huffman gán mã ngắn cho thông điệp thường gặp và mã dài hơn cho thông điệp hiếm, đồng thời xây dựng mã để không cần dấu phân cách. Nó tối thiểu hóa số chữ số trung bình cho các xác suất đã cho, nên chất lượng phụ thuộc vào độ chính xác của những xác suất đó."
+  },
+  "applySteps": {
+    "en": [
+      "Take a paragraph you wrote, count how often each letter appears, and rank the letters from most to least frequent.",
+      "Sketch a code for the top four letters by hand, giving the most frequent one the shortest code and keeping no code a prefix of another.",
+      "Compute the average code length by multiplying each letter's probability by its code length and adding the results."
+    ],
+    "vi": [
+      "Lấy một đoạn văn bạn đã viết, đếm số lần mỗi chữ cái xuất hiện, và xếp các chữ từ thường gặp nhất đến hiếm nhất.",
+      "Phác thảo tay một mã cho bốn chữ cái đầu, gán mã ngắn nhất cho chữ thường gặp nhất và không để mã nào là tiền tố của mã khác.",
+      "Tính độ dài mã trung bình bằng cách nhân xác suất của mỗi chữ với độ dài mã của nó rồi cộng các kết quả lại."
+    ]
+  },
+  "references": [
+    {
+      "id": "huffman-ieee",
+      "label": "Huffman (1952), A Method for the Construction of Minimum-Redundancy Codes",
+      "url": "https://doi.org/10.1109/JRPROC.1952.273898"
+    },
+    {
+      "id": "huffman-pdf",
+      "label": "Huffman (1952), full text of the paper",
+      "url": "http://compression.ru/download/articles/huff/huffman_1952_minimum-redundancy-codes.pdf"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  },
+  "cover": {
+    "type": "image",
+    "url": "/covers/huffman-coding-short-codes-for-common-messages.webp",
+    "provider": "unsplash",
+    "author": "Vashishtha Jogi",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+  },
+  "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JbACdOQAAeqvXh2k+RDKdAAD++SsyWiXgnJ2aTsn8UA5WZ60j59hd9Wv8lNREtGb9G+ZEBtFymm8t4Cxn8rAZKugAAA==",
+  "dominant": "#043814"
+}
