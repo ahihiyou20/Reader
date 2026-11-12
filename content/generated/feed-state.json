@@ -55,6 +55,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/mini-philosophy/3-ways-to-find-and-nurture-better-friendships"
     },
+    "https://bigthink.com/mini-philosophy/how-to-find-your-way-through-2600-years-of-philosophy": {
+      "at": "2026-11-12T03:51:43.457Z",
+      "feed": "big-think",
+      "slug": "mapping-2-600-years-of-western-philosophy-on-a-single-timeli"
+    },
     "https://bigthink.com/perception-box/are-you-really-who-you-think-you-are": {
       "at": "2026-11-10T04:40:34.091Z",
       "feed": "big-think",
@@ -304,6 +309,11 @@
       "at": "2026-11-11T02:49:18.866Z",
       "feed": "wikipedia-featured",
       "error": "triage: score 3: Wikipedia featured article description of a 19th-century painting."
+    },
+    "https://en.wikipedia.org/wiki/Royal_Gloucestershire_Hussars": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 1: A Wikipedia featured article on a military regiment, which does not fit general reader appeal."
     },
     "https://en.wikipedia.org/wiki/Second_Battle_of_Newtonia": {
       "at": "2026-10-28T02:24:40.469Z",
@@ -565,6 +575,11 @@
       "feed": "global-voices",
       "error": "triage: score 3: Brief report on social media restrictions in Gabon."
     },
+    "https://globalvoices.org/2026/11/11/justice-is-the-infrastructure-the-world-keeps-forgetting": {
+      "at": "2026-11-12T03:50:59.061Z",
+      "feed": "global-voices",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -765,6 +780,11 @@
       "feed": "nautilus",
       "slug": "archaeologist-argues-ancient-british-king-verica-was-actuall"
     },
+    "https://nautil.us/the-four-forces-that-shape-collective-memory-1286569": {
+      "at": "2026-11-12T03:51:32.824Z",
+      "feed": "nautilus",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+    },
     "https://nautil.us/the-mystery-of-why-some-drugs-vanish-1286249": {
       "at": "2026-10-31T02:30:50.481Z",
       "feed": "nautilus",
@@ -835,6 +855,11 @@
       "feed": "nautilus",
       "slug": "princeton-neuroscientists-study-how-watching-fights-changes"
     },
+    "https://nautil.us/whats-all-that-coffee-doing-to-your-gut-1286572": {
+      "at": "2026-11-12T03:51:23.504Z",
+      "feed": "nautilus",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
     "https://nautil.us/why-your-shrink-should-prescribe-exercise-1286325": {
       "at": "2026-11-04T03:08:18.702Z",
       "feed": "nautilus",
@@ -861,9 +886,9 @@
       "slug": "when-do-people-experience-mental-health-conditions-for-the-f"
     },
     "https://psyche.co/guides/how-to-help-someone-whose-thinking-seems-delusional": {
-      "at": "2026-11-11T02:50:03.803Z",
+      "at": "2026-11-12T03:50:15.182Z",
       "feed": "psyche",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+      "slug": "how-to-support-someone-experiencing-delusional-thinking"
     },
     "https://psyche.co/guides/how-to-overcome-task-paralysis": {
       "at": "2026-10-24T01:41:30.406Z",
@@ -919,6 +944,11 @@
       "at": "2026-10-30T02:41:37.387Z",
       "feed": "psyche",
       "slug": "the-hidden-value-of-quitting-our-goals"
+    },
+    "https://psyche.co/ideas/why-patient-influencers-should-come-with-a-health-warning": {
+      "at": "2026-11-12T03:50:48.070Z",
+      "feed": "psyche",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
     },
     "https://psyche.co/ideas/why-romantic-relationships-matter-more-to-men-than-to-women": {
       "at": "2026-10-23T16:58:44.153Z",
@@ -1110,6 +1140,11 @@
       "feed": "nasa-science",
       "error": "triage: score 2: Routine engineering blog post about a Mars rover recharging batteries."
     },
+    "https://science.nasa.gov/blog/curiosity-blog-sols-5063-5069-rocks-and-chips": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Routine rover operational blog post meant for mission logs rather than general readers."
+    },
     "https://science.nasa.gov/blog/tingas-tale": {
       "at": "2026-10-27T02:12:58.138Z",
       "feed": "nasa-science",
@@ -1139,6 +1174,11 @@
       "at": "2026-10-23T16:57:59.314Z",
       "feed": "nasa-science",
       "slug": "el-nino-then-and-now"
+    },
+    "https://science.nasa.gov/earth/earth-observatory/water-surges-into-navajo-reservoir": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: A localized weather event report about reservoir water levels following heavy rain."
     },
     "https://science.nasa.gov/event/meeting-national-space-club-scholars": {
       "at": "2026-10-30T02:45:29.923Z",
@@ -1305,10 +1345,20 @@
       "feed": "conversation",
       "slug": "delayed-international-support-has-hampered-efforts-to-contai"
     },
+    "https://theconversation.com/democrats-are-at-cop31-to-show-that-the-us-has-not-abandoned-the-fight-against-climate-change-296218": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "conversation",
+      "error": "triage: score 2: Episodic political reporting tied to COP31 positioning."
+    },
     "https://theconversation.com/economic-coercion-once-ousted-irans-leader-but-that-was-the-1950s-dont-expect-a-repeat-today-294628": {
       "at": "2026-11-11T02:51:52.396Z",
       "feed": "conversation",
       "slug": "economic-coercion-once-ousted-iran-s-leader-but-that-was-the"
+    },
+    "https://theconversation.com/el-salvador-is-exporting-the-bukele-model-to-haiti-but-the-gang-offensive-is-a-gamble-for-both-nations-296390": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "conversation",
+      "error": "triage: score 3: Too much short-term political maneuvering and regional policy commentary without lasting explanatory depth."
     },
     "https://theconversation.com/eus-new-arctic-strategy-signals-shift-in-its-geopolitical-mindset-294978": {
       "at": "2026-10-29T02:34:28.204Z",
@@ -1565,6 +1615,11 @@
       "feed": "conversation",
       "slug": "why-do-blind-people-and-musicians-hear-pitch-better-new-rese"
     },
+    "https://theconversation.com/why-is-nvidia-so-powerful-in-the-ai-world-and-what-could-jensen-huangs-scandal-really-cost-296257": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "conversation",
+      "error": "triage: score 4: A mix of tech market dominance reporting and personal scandal gossip."
+    },
     "https://theconversation.com/why-mark-carney-is-still-betting-big-on-europe-295647": {
       "at": "2026-11-07T02:51:04.007Z",
       "feed": "conversation",
@@ -1599,6 +1654,11 @@
       "at": "2026-10-29T02:36:25.880Z",
       "feed": "nasa-science",
       "error": "Only 241 words of text found"
+    },
+    "https://www.nasa.gov/blogs/quesst/2026/11/11/x-59-test-pilots-veterans-day": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Veterans Day promotional personnel highlight for NASA test pilots."
     },
     "https://www.nasa.gov/blogs/smallsatellites/2026/11/03/nasa-funded-sspicy-mission-experiences-communications-loss": {
       "at": "2026-11-04T03:03:48.730Z",
@@ -1990,6 +2050,16 @@
       "feed": "npr-health",
       "error": "triage: score 4: News reporting on the immediate impacts of conflict on an emergency room."
     },
+    "https://www.npr.org/2026/11/10/nx-s1-6034519/is-honesty-always-the-best-policy-when-to-speak-up-or-stay-silent": {
+      "at": "2026-11-12T03:51:12.354Z",
+      "feed": "npr-health",
+      "slug": "when-to-speak-up-and-when-to-stay-silent"
+    },
+    "https://www.npr.org/2026/11/11/nx-s1-6037304/ebola-congo-outbreak": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "npr-health",
+      "error": "triage: score 2: Pure breaking disease statistics update without a deep explanatory mechanism."
+    },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
       "feed": "quanta",
@@ -2004,6 +2074,11 @@
       "at": "2026-10-24T01:40:35.485Z",
       "feed": "quanta",
       "slug": "artificial-intelligence-achieves-breakthrough-on-major-mathe"
+    },
+    "https://www.quantamagazine.org/did-life-begin-in-an-rna-world-20261109": {
+      "at": "2026-11-12T03:50:26.959Z",
+      "feed": "quanta",
+      "slug": "did-life-begin-in-an-rna-world"
     },
     "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016": {
       "at": "2026-10-24T01:44:19.152Z",
@@ -2054,6 +2129,11 @@
       "at": "2026-11-11T02:49:43.960Z",
       "feed": "quanta",
       "slug": "did-cell-membranes-spark-the-origin-of-life"
+    },
+    "https://www.quantamagazine.org/what-is-the-metabolism-first-theory-for-the-origin-of-life-20261111": {
+      "at": "2026-11-12T03:49:54.984Z",
+      "feed": "quanta",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
     },
     "https://www.sciencedaily.com/releases/2026/10/261022081312.htm": {
       "at": "2026-10-24T01:44:34.074Z",
@@ -2285,6 +2365,11 @@
       "feed": "sciencedaily",
       "slug": "researchers-discover-34-million-year-old-giant-rodent-fossil"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261110042558.htm": {
+      "at": "2026-11-12T03:50:04.939Z",
+      "feed": "sciencedaily",
+      "slug": "ancient-fossils-reveal-a-possible-female-burial-mystery"
+    },
     "https://www.usgs.gov/centers/astrogeology-science-center/news/a-true-halloween-story-treat-dirt-oppys-demise": {
       "at": "2026-10-31T02:31:06.664Z",
       "feed": "usgs",
@@ -2415,6 +2500,11 @@
       "feed": "usgs",
       "slug": "photo-video-chronology-kilauea-summit-monitoring-overflight"
     },
+    "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-overflight-summit-kilauea": {
+      "at": "2026-11-12T03:49:45.854Z",
+      "feed": "usgs",
+      "error": "triage: event notice"
+    },
     "https://www.usgs.gov/observatories/hvo/news/volcano-minute-a-quiet-eruption-beneath-pacific": {
       "at": "2026-10-30T02:42:29.630Z",
       "feed": "usgs",
@@ -2469,6 +2559,11 @@
       "at": "2026-10-25T01:14:12.315Z",
       "feed": "usgs",
       "slug": "summer-drought-may-increase-human-bear-interactions"
+    },
+    "https://www.usgs.gov/programs/cmhrp/news/california-has-lost-60-its-coastal-dunes-1800s-new-study-finds": {
+      "at": "2026-11-12T03:50:37.450Z",
+      "feed": "usgs",
+      "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
     "https://www.usgs.gov/programs/cmhrp/news/usgs-monitors-californias-coastal-hazards-during-2026-2027-el-nino-event": {
       "at": "2026-11-01T02:19:14.388Z",
