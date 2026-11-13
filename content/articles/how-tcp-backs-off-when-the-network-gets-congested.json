@@ -1,0 +1,100 @@
+{
+  "slug": "how-tcp-backs-off-when-the-network-gets-congested",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "tcp",
+    "congestion control",
+    "networking",
+    "internet",
+    "aimd"
+  ],
+  "title": {
+    "en": "How TCP backs off when the network gets congested",
+    "vi": "TCP giảm tốc thế nào khi mạng bị nghẽn"
+  },
+  "hook": {
+    "en": "Every time a web page loads, your computer sends data faster or slower depending on conditions it cannot see directly. The rule behind most of this, additive increase and multiplicative decrease, was set out by Van Jacobson in 1988. It is simple: speed up gently, and slow down sharply when trouble appears. That asymmetry is why the internet can share limited capacity without a central controller.",
+    "vi": "Mỗi lần một trang web tải, máy tính của bạn gửi dữ liệu nhanh hay chậm tùy vào điều kiện mà nó không thể thấy trực tiếp. Quy tắc đứng sau phần lớn cơ chế này, tăng cộng và giảm nhân (AIMD), được Van Jacobson trình bày năm 1988. Nó đơn giản: tăng tốc từ từ, và giảm mạnh khi có sự cố. Sự bất đối xứng đó là lý do internet có thể chia sẻ năng lực hạn chế mà không cần một bộ điều khiển trung tâm."
+  },
+  "sections": [
+    {
+      "heading_en": "The sender has to guess",
+      "heading_vi": "Người gửi phải đoán",
+      "body_en": "A TCP sender cannot see the network's capacity. It keeps a congestion window, which limits how much data can be in flight without acknowledgement. The sender sets that window from the level of congestion it perceives, reducing it when congestion rises and increasing it when congestion falls {tcp-systems}. The problem is that the sender has to learn about the network from indirect signals, and the main one is loss.",
+      "body_vi": "Bên gửi TCP không thể nhìn thấy năng lực của mạng. Nó duy trì một cửa sổ tắc nghẽn, giới hạn lượng dữ liệu được phép gửi đi mà chưa có xác nhận. Bên gửi đặt cửa sổ đó theo mức tắc nghẽn mà nó cảm nhận, giảm khi tắc nghẽn tăng và tăng khi tắc nghẽn giảm {tcp-systems}. Vấn đề là bên gửi phải tìm hiểu mạng qua các tín hiệu gián tiếp, và tín hiệu chính là gói tin bị mất."
+    },
+    {
+      "heading_en": "Losses are the signal",
+      "heading_vi": "Mất gói tin là tín hiệu",
+      "body_en": "The textbook notes that a dropped packet is usually a sign of congestion, because errors during transmission are rare {tcp-systems}. When a timeout occurs, the sender sets its congestion window to half its previous value. Repeated losses bring the window down further, but it is not allowed to fall below the size of a single packet {tcp-systems}. Halving is a blunt response, which is part of the design, since the goal is a quick retreat from overload.",
+      "body_vi": "Giáo trình ghi nhận rằng gói tin bị rớt thường là dấu hiệu của tắc nghẽn, vì lỗi trong truyền dẫn rất hiếm {tcp-systems}. Khi hết thời gian chờ, bên gửi đặt cửa sổ tắc nghẽn về một nửa giá trị trước đó. Các lần mất liên tiếp làm cửa sổ giảm thêm, nhưng nó không được phép xuống dưới kích thước của một gói tin {tcp-systems}. Việc giảm một nửa là phản ứng thô, và đó là chủ ý của thiết kế, vì mục tiêu là rút lui nhanh khỏi tình trạng quá tải."
+    },
+    {
+      "heading_en": "Slow increase, fast decrease",
+      "heading_vi": "Tăng chậm, giảm nhanh",
+      "body_en": "When packets get through, the window grows by about one packet per round trip. The textbook calls this additive increase, a gentle probe for the level at which congestion begins {tcp-systems}. Jacobson's 1988 paper describes the policy of additive increase and multiplicative decrease, and states that it was the policy implemented in TCP {jacobson-1988}. The name describes the two halves: a steady linear climb and a sharp multiplicative cut.",
+      "body_vi": "Khi các gói tin đến nơi, cửa sổ tăng khoảng một gói tin mỗi vòng khứ hồi. Giáo trình gọi đây là tăng cộng, một cách thăm dò nhẹ nhàng xem tắc nghẽn bắt đầu ở mức nào {tcp-systems}. Bài báo của Jacobson năm 1988 mô tả chính sách tăng cộng và giảm nhân, và nêu rằng đây là chính sách được triển khai trong TCP {jacobson-1988}. Tên gọi phản ánh hai nửa: một đường đi lên tuyến tính đều đặn và một lần cắt nhân mạnh."
+    },
+    {
+      "heading_en": "Why the two halves differ",
+      "heading_vi": "Vì sao hai nửa khác nhau",
+      "body_en": "The textbook explains the asymmetry. Having too large a window has compounding consequences, because congestion makes losses worse, so the sender must step back quickly. Growing the window aggressively would risk the same loss again, so the increase is cautious {tcp-systems}. In short, the scheme probes gently and retreats sharply, which is how it keeps the network near capacity without tipping it into collapse.",
+      "body_vi": "Giáo trình giải thích sự bất đối xứng này. Một cửa sổ quá lớn gây hậu quả cộng dồn, vì tắc nghẽn làm mất gói tin nặng hơn, nên bên gửi phải lùi lại nhanh. Tăng cửa sổ mạnh tay sẽ có nguy cơ lặp lại đúng tổn thất đó, nên việc tăng phải thận trọng {tcp-systems}. Nói ngắn gọn, cơ chế thăm dò nhẹ và rút lui mạnh, nhờ đó mạng giữ gần mức năng lực mà không bị đẩy vào sụp đổ."
+    },
+    {
+      "heading_en": "Fair sharing without a referee",
+      "heading_vi": "Chia sẻ công bằng không cần trọng tài",
+      "body_en": "Wikipedia notes that multiple flows using AIMD converge to use equal amounts of a contended link {tcp-wiki}. That is why many connections sharing a bottleneck tend toward similar rates. None of them coordinates with the others or knows how many are present. Each one reacts only to its own losses, and the shared outcome still tends toward fairness.",
+      "body_vi": "Wikipedia cho biết nhiều luồng dùng AIMD sẽ hội tụ để chiếm lượng băng thông ngang nhau trên một đường truyền bị tranh giành {tcp-wiki}. Đó là lý do nhiều kết nối chung một điểm nghẽn có xu hướng đạt tốc độ tương đương. Không kết nối nào phối hợp với kết nối khác hay biết có bao nhiêu kết nối đang chạy. Mỗi kết nối chỉ phản ứng với các gói tin bị mất của riêng nó, nhưng kết quả chung vẫn hướng tới sự công bằng."
+    },
+    {
+      "heading_en": "What still holds",
+      "heading_vi": "Điều vẫn còn giá trị",
+      "body_en": "Many TCP variants now exist. The Wikipedia entry notes that the AIMD scheme is the algorithm described in RFC 5681 for the congestion avoidance state {tcp-wiki}. Jacobson's rule remains the foundation for understanding why the network slows gracefully rather than collapsing, even though details differ across implementations. A reader who understands the two halves understands most of the core behaviour.",
+      "body_vi": "Hiện nay có nhiều biến thể TCP. Mục Wikipedia cho biết lược đồ AIMD là thuật toán được mô tả trong RFC 5681 cho trạng thái tránh tắc nghẽn {tcp-wiki}. Quy tắc của Jacobson vẫn là nền tảng để hiểu vì sao mạng chậm lại một cách có trật tự thay vì sụp đổ, dù chi tiết khác nhau giữa các cài đặt. Ai hiểu hai nửa của quy tắc đó sẽ nắm được phần lớn hành vi cốt lõi."
+    }
+  ],
+  "keyPoint": {
+    "en": "TCP cannot see network capacity, so it learns about it from losses. [p:It raises its sending rate slowly and cuts it sharply when packets go missing.] Jacobson's rule of additive increase and multiplicative decrease keeps many connections sharing a link without a central controller.",
+    "vi": "TCP không nhìn thấy năng lực của mạng, nên nó học điều đó qua các lần mất gói tin. [p:Nó tăng tốc độ gửi từ từ và giảm mạnh khi gói tin bị mất.] Quy tắc tăng cộng và giảm nhân của Jacobson giúp nhiều kết nối chia sẻ một đường truyền mà không cần bộ điều khiển trung tâm."
+  },
+  "applySteps": {
+    "en": [
+      "Start a large file download and watch the speed for two minutes, noting any sudden drops.",
+      "Read the opening pages of Jacobson's 1988 paper, and list the two rules it names.",
+      "Compare a download on a wired connection with one on Wi-Fi at the same time of day, and note whether the speed changes behave differently."
+    ],
+    "vi": [
+      "Bắt đầu tải một tệp lớn và theo dõi tốc độ trong hai phút, ghi lại mọi lần tụt đột ngột.",
+      "Đọc các trang đầu của bài báo năm 1988 của Jacobson, và liệt kê hai quy tắc mà nó nêu tên.",
+      "So sánh một lần tải qua cáp với một lần tải qua Wi-Fi vào cùng thời điểm trong ngày, và xem các thay đổi tốc độ có khác nhau không."
+    ]
+  },
+  "references": [
+    {
+      "id": "jacobson-1988",
+      "label": "Jacobson (1988), Congestion Avoidance and Control",
+      "url": "https://www.cs.princeton.edu/courses/archive/fall17/cos561/papers/TCP88.pdf"
+    },
+    {
+      "id": "tcp-systems",
+      "label": "Systems Approach: TCP Congestion Control, chapter 4",
+      "url": "https://tcpcc.systemsapproach.org/algorithm.html"
+    },
+    {
+      "id": "tcp-wiki",
+      "label": "Wikipedia: TCP congestion control",
+      "url": "https://en.wikipedia.org/wiki/TCP_congestion_control"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}

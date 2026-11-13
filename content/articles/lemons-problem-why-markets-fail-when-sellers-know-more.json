@@ -1,0 +1,94 @@
+{
+  "slug": "lemons-problem-why-markets-fail-when-sellers-know-more",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "asymmetric information",
+    "adverse selection",
+    "used cars",
+    "market failure"
+  ],
+  "title": {
+    "en": "The lemons problem: why markets can fail when sellers know more",
+    "vi": "Vấn đề xe chanh: vì sao thị trường có thể sụp đổ khi người bán biết nhiều hơn"
+  },
+  "hook": {
+    "en": "A used car can look fine on the lot and still hide a serious fault. The seller usually knows which cars are good, and the buyer often cannot tell. In 1970, economist George Akerlof showed that this gap can push good cars out of a market entirely. The paper calls the poor ones lemons, and his model explains why some markets shrink, or disappear, when quality is hard to see.",
+    "vi": "Một chiếc xe cũ có thể trông ổn ngoài bãi nhưng vẫn giấu lỗi nghiêm trọng. Người bán thường biết chiếc nào tốt, còn người mua thì hay không phân biệt được. Năm 1970, nhà kinh tế George Akerlof chỉ ra rằng khoảng cách hiểu biết này có thể đẩy hẳn những chiếc xe tốt ra khỏi thị trường. Bài báo gọi các xe kém là xe chanh (*lemons*), và mô hình của ông giải thích vì sao một số thị trường thu hẹp, thậm chí biến mất, khi chất lượng khó quan sát."
+  },
+  "sections": [
+    {
+      "heading_en": "One price for two kinds of car",
+      "heading_vi": "Một mức giá cho hai loại xe",
+      "body_en": "Akerlof's setup is simple. Buyers know that some used cars are good and the rest are lemons, and they know roughly how many of each are for sale. What they cannot know before buying is which car is which. The owner, after months of driving, knows far more. [p:Because buyers cannot tell the difference, they will pay only the price of an average car.] Owners of good cars know what their car is worth, so they will not sell at that price. The good cars stay home, the average quality falls, and the price falls with it {akerlof-1970}.",
+      "body_vi": "Mô hình của Akerlof rất đơn giản. Người mua biết trên thị trường có một tỷ lệ xe tốt và phần còn lại là xe chanh, nhưng trước khi mua họ không thể biết chiếc nào thuộc loại nào. Chủ xe, sau nhiều tháng lái, biết xe của mình rõ hơn nhiều. [p:Vì người mua không phân biệt được, họ chỉ sẵn sàng trả mức giá của một chiếc xe trung bình.] Chủ những chiếc xe tốt biết giá trị thật của xe mình, nên họ không chịu bán với mức giá đó. Xe tốt ở lại nhà, chất lượng trung bình giảm, và giá cũng giảm theo {akerlof-1970}."
+    },
+    {
+      "heading_en": "Bad money and bad cars",
+      "heading_vi": "Tiền xấu và xe xấu",
+      "body_en": "Akerlof compared the problem with Gresham's law, the old idea that bad money drives good money out of circulation. The comparison fits only partly. With coins, both buyer and seller can presumably tell a sound coin from a debased one. With used cars, only the seller knows what is really under the bonnet {akerlof-1970}. That one-sided knowledge is what economists call asymmetric information, and it drives the lemons problem. A market needs only one side to know more for the trouble to start.",
+      "body_vi": "Akerlof so sánh vấn đề này với định luật Gresham, ý tưởng lâu đời rằng tiền xấu đẩy tiền tốt ra khỏi lưu thông. Phép so sánh chỉ đúng một phần. Với tiền kim loại, người mua và người bán đều có thể phân biệt đồng thật với đồng kém. Với xe cũ, chỉ người bán biết thật sự chiếc xe ra sao {akerlof-1970}. Sự hiểu biết lệch một phía đó là thứ các nhà kinh tế gọi là *thông tin bất cân xứng* (*asymmetric information*), và nó là động lực của vấn đề xe chanh. Chỉ cần một bên biết nhiều hơn, rắc rối đã có thể bắt đầu."
+    },
+    {
+      "heading_en": "When the market disappears",
+      "heading_vi": "Khi thị trường biến mất",
+      "body_en": "Akerlof also worked through a simpler version in which car quality is spread evenly across a range. In that version, the average quality of the cars offered at any price is half that price, so better cars keep leaving and the average keeps falling. The paper finds that in this case no price produces any trade, even though some owners would sell at prices that some buyers would pay {akerlof-1970}. The model is deliberately stark. Its point is that a market can fail completely, not just run a little less smoothly.",
+      "body_vi": "Akerlof cũng xét một phiên bản đơn giản hơn, trong đó chất lượng xe trải đều trong một khoảng. Trong phiên bản đó, chất lượng trung bình của xe được rao bán ở mỗi mức giá bằng một nửa mức giá ấy, nên xe tốt cứ rời đi và mức trung bình cứ giảm. Bài báo cho thấy trong trường hợp này không có mức giá nào tạo ra giao dịch, dù một số chủ xe sẵn sàng bán với mức giá mà có người mua sẵn sàng trả {akerlof-1970}. Mô hình được dựng rất cứng nhắc. Điểm của nó là thị trường có thể hỏng hoàn toàn, chứ không chỉ vận hành kém trơn tru hơn."
+    },
+    {
+      "heading_en": "The same logic in insurance",
+      "heading_vi": "Logic tương tự trong bảo hiểm",
+      "body_en": "Akerlof applies the same reasoning to insurance. Healthy people may cancel a term policy when premiums rise, while people who expect to claim keep paying. The insurer is left with a riskier group than its price assumed {akerlof-1970}. Economists call this adverse selection. A summary of the paper on Wikipedia describes it as a mechanism that can lead to the collapse of a market {lemons-wiki}.",
+      "body_vi": "Akerlof áp dụng cùng lập luận cho bảo hiểm. Những người khỏe mạnh có thể hủy hợp đồng bảo hiểm kỳ hạn khi phí tăng, trong khi người dự tính sẽ phải bồi thường vẫn tiếp tục đóng phí. Công ty bảo hiểm vì thế phải nhận một nhóm rủi ro cao hơn mức giá đã tính {akerlof-1970}. Các nhà kinh tế gọi hiện tượng này là *chọn lọc bất lợi* (*adverse selection*). Một bản tóm tắt bài báo trên Wikipedia mô tả nó là cơ chế có thể dẫn tới sự sụp đổ của thị trường {lemons-wiki}."
+    },
+    {
+      "heading_en": "What the model leaves out",
+      "heading_vi": "Những gì mô hình bỏ qua",
+      "body_en": "The model is simple on purpose. It assumes a fixed range of qualities and buyers who know only the average. Real markets have ways to reveal quality, and the paper has a section on counteracting institutions that discusses arrangements of this kind. The lesson is narrower than a verdict on used cars. When buyers cannot see quality and sellers can, the average price can push the best goods out, and in the extreme case nothing is traded at all.",
+      "body_vi": "Mô hình cố ý đơn giản. Nó giả định một khoảng chất lượng cố định và người mua chỉ biết mức trung bình. Thị trường thực có nhiều cách làm lộ chất lượng, và bài báo có một mục riêng về các thể chế đối trọng, tức những cơ chế làm giảm thiệt hại. Bài học vì thế hẹp hơn một lời kết án xe cũ. Khi người mua không thấy được chất lượng còn người bán thì thấy, mức giá trung bình có thể đẩy hàng tốt ra ngoài, và trong trường hợp cực đoan thì không có giao dịch nào diễn ra."
+    },
+    {
+      "heading_en": "Closing the gap",
+      "heading_vi": "Thu hẹp khoảng cách thông tin",
+      "body_en": "Anything that lets buyers see quality helps good goods stay in the market. Warranties, return rights and inspection reports do this job in many markets. Akerlof's paper discusses counteracting institutions, the arrangements that reduce the damage {akerlof-1970}. For a buyer, the most practical step is to ask specific questions and look for evidence the seller can be held to before paying.",
+      "body_vi": "Điều gì giúp người mua nhìn thấy chất lượng cũng giúp hàng tốt ở lại thị trường. Bảo hành, quyền trả hàng và báo cáo kiểm tra làm việc này trong nhiều thị trường. Bài báo của Akerlof bàn về các thể chế đối trọng, tức những cơ chế làm giảm thiệt hại {akerlof-1970}. Với người mua, bước thực tế nhất là hỏi những câu cụ thể và tìm bằng chứng mà người bán phải chịu trách nhiệm trước khi trả tiền."
+    }
+  ],
+  "keyPoint": {
+    "en": "When buyers cannot tell good goods from bad, they pay an average price, and sellers of good goods withdraw. [p:That average price pushes out the best goods, and the market can shrink or vanish.] Akerlof's lesson is that a gap in what each side knows can destroy trade, not just make it unfair.",
+    "vi": "Khi người mua không phân biệt được hàng tốt và hàng kém, họ trả một mức giá trung bình, và người bán hàng tốt sẽ rút lui. [p:Mức giá trung bình đó đẩy những món hàng tốt nhất ra khỏi thị trường, và thị trường có thể thu hẹp hoặc biến mất.] Bài học của Akerlof là khoảng cách hiểu biết giữa các bên có thể phá hủy giao dịch, chứ không chỉ làm nó thiếu công bằng."
+  },
+  "applySteps": {
+    "en": [
+      "Before buying a used item, ask the seller one specific question about its history, and note whether the answer is specific or vague.",
+      "Write down the price you would pay for a good example and for a poor one, to see how much the uncertainty costs you.",
+      "Choose sellers who offer a return window or a warranty, since those let you judge quality after the sale."
+    ],
+    "vi": [
+      "Trước khi mua một món đã qua sử dụng, hỏi người bán một câu cụ thể về lịch sử của nó, và ghi lại xem câu trả lời cụ thể hay mơ hồ.",
+      "Viết ra mức giá bạn sẽ trả cho một món tốt và cho một món kém, để thấy sự không chắc chắn khiến bạn mất bao nhiêu.",
+      "Chọn người bán có chính sách đổi trả hoặc bảo hành, vì những điều này cho phép bạn đánh giá chất lượng sau khi mua."
+    ]
+  },
+  "references": [
+    {
+      "id": "akerlof-1970",
+      "label": "Akerlof (1970), The Market for Lemons",
+      "url": "https://doi.org/10.2307/1879431"
+    },
+    {
+      "id": "lemons-wiki",
+      "label": "Wikipedia: The Market for Lemons",
+      "url": "https://en.wikipedia.org/wiki/The_Market_for_Lemons"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}

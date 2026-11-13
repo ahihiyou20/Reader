@@ -1,0 +1,95 @@
+{
+  "slug": "why-new-roads-fill-up-fundamental-law-of-congestion",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "induced demand",
+    "traffic",
+    "urban transport",
+    "road congestion",
+    "economics of cities"
+  ],
+  "title": {
+    "en": "Why new roads fill up: the fundamental law of congestion",
+    "vi": "Vì sao đường mới luôn đông: quy luật cơ bản của tắc nghẽn"
+  },
+  "hook": {
+    "en": "Widening a congested road looks like the obvious fix. Yet a study of US cities found that on interstate highways, driving rose in proportion to the added lanes. Economists Gilles Duranton and Matthew Turner called the pattern a fundamental law of road congestion. New capacity tends to attract new traffic, so the relief that planners expect often does not last.",
+    "vi": "Mở rộng một con đường đang tắc có vẻ là cách sửa hiển nhiên. Thế nhưng một nghiên cứu về các thành phố Mỹ cho thấy trên đường liên bang cao tốc, lượng lái xe tăng tỷ lệ thuận với số làn được thêm. Hai nhà kinh tế Gilles Duranton và Matthew Turner gọi hiện tượng này là quy luật cơ bản của tắc nghẽn đường bộ. Năng lực mới có xu hướng kéo theo lưu lượng mới, nên sự nhẹ bớt mà các nhà quy hoạch kỳ vọng thường không kéo dài."
+  },
+  "sections": [
+    {
+      "heading_en": "What the study measured",
+      "heading_vi": "Nghiên cứu đo điều gì",
+      "body_en": "The authors used data from US cities to relate lane kilometres to vehicle kilometres travelled, or VKT. Their key result is that VKT rises proportionately with roadway lane kilometres for interstate highways, and probably a little less rapidly for other road types {duranton-turner}. In practice, adding capacity does not simply spread the same traffic over more road. It produces more driving, and the extra driving grows with the new road.",
+      "body_vi": "Các tác giả dùng dữ liệu từ các thành phố Mỹ để liên hệ số làn đường tính theo kilômét với số kilômét xe chạy, gọi là VKT. Kết quả chính là VKT tăng tỷ lệ thuận với số kilômét làn đường đối với đường liên bang cao tốc, và có thể tăng chậm hơn một chút với các loại đường khác {duranton-turner}. Trên thực tế, thêm năng lực không chỉ đơn giản là chia lượng xe cũ cho nhiều đường hơn. Nó sinh ra thêm lượng lái xe, và lượng này tăng theo con đường mới."
+    },
+    {
+      "heading_en": "Where the extra driving comes from",
+      "heading_vi": "Lượng xe thêm đến từ đâu",
+      "body_en": "The paper names three sources of the extra driving: residents driving more, increases in commercial traffic, and migration {duranton-turner}. Each one is a change in behaviour or location, not a fixed stream of cars that was waiting to pass. A road that widens makes each trip cheaper in time, which is why the additional trips appear. People take journeys they would otherwise have skipped, and businesses and households respond to the easier route.",
+      "body_vi": "Bài báo nêu ba nguồn của lượng lái xe thêm: cư dân lái nhiều hơn, lưu lượng thương mại tăng, và di cư {duranton-turner}. Mỗi nguồn đều là một thay đổi về hành vi hoặc nơi ở, chứ không phải một dòng xe cố định đang chờ đi qua. Con đường mở rộng làm mỗi chuyến đi tốn ít thời gian hơn, đó là lý do các chuyến đi bổ sung xuất hiện. Người ta đi những chuyến mà trước đây có thể đã bỏ qua, còn doanh nghiệp và hộ gia đình phản ứng với tuyến đường dễ đi hơn."
+    },
+    {
+      "heading_en": "Transit did not change the picture",
+      "heading_vi": "Giao thông công cộng cũng không thay đổi bức tranh",
+      "body_en": "The authors also found no evidence that public transport provision affects VKT. Their conclusion is blunt: increased provision of roads or public transit is unlikely to relieve congestion {duranton-turner}. That is a strong claim, and it applies to the US cities and period the study covers. It is not a prediction about every city, and it does not say that roads or transit have no other value.",
+      "body_vi": "Các tác giả cũng không tìm thấy bằng chứng nào cho thấy việc cung cấp giao thông công cộng ảnh hưởng đến VKT. Kết luận của họ rất thẳng: việc gia tăng đường hay giao thông công cộng khó có thể giảm tắc nghẽn {duranton-turner}. Đó là một khẳng định mạnh, và nó áp dụng cho các thành phố Mỹ và giai đoạn được nghiên cứu. Nó không phải dự đoán cho mọi thành phố, cũng không có nghĩa là đường hay phương tiện công cộng không có giá trị nào khác."
+    },
+    {
+      "heading_en": "A bypass does not drain the old road",
+      "heading_vi": "Đường vòng không hút bớt xe khỏi con đường cũ",
+      "body_en": "A common hope is that a new highway will pull cars off a crowded street. The authors found that increasing lane kilometres for one type of road diverts little traffic from other types of road {duranton-turner}. A bypass, in other words, does not reliably relieve the road it bypasses. The traffic that appears on the new road is largely new driving, rather than a transfer from the old one.",
+      "body_vi": "Một hy vọng phổ biến là đường cao tốc mới sẽ kéo xe khỏi con phố đông. Các tác giả thấy rằng việc tăng số kilômét làn cho một loại đường chỉ chuyển được rất ít lưu lượng sang loại đường khác {duranton-turner}. Nói cách khác, đường vòng không giảm tắc nghẽn một cách đáng tin cậy cho con đường mà nó đi vòng qua. Lưu lượng xuất hiện trên đường mới phần lớn là lượng lái xe mới, chứ không phải chuyển từ đường cũ sang."
+    },
+    {
+      "heading_en": "A later brief repeats the finding",
+      "heading_vi": "Một báo cáo sau đó lặp lại phát hiện này",
+      "body_en": "A 2025 policy brief from the California Air Resources Board cites the Duranton and Turner result and repeats the point that adding lanes to one road type diverts little traffic from others {arb-2025}. The brief treats induced travel as a central issue for planning, which shows how the finding has moved from academic work into transport policy. The evidence is a single line of research, so the brief's agreement is not independent proof.",
+      "body_vi": "Một báo cáo chính sách năm 2025 của Cơ quan Tài nguyên Không khí California trích dẫn kết quả của Duranton và Turner, và nhắc lại rằng thêm làn cho một loại đường chỉ chuyển được ít xe sang các loại khác {arb-2025}. Báo cáo coi lưu lượng sinh ra thêm là một vấn đề trung tâm của quy hoạch, cho thấy phát hiện này đã đi từ nghiên cứu học thuật vào chính sách giao thông. Tuy vậy, đây là một dòng nghiên cứu, nên sự đồng thuận trong báo cáo không phải là bằng chứng độc lập."
+    },
+    {
+      "heading_en": "What the law does not say",
+      "heading_vi": "Quy luật này không nói điều gì",
+      "body_en": "The law describes how driving volumes respond to road capacity. It does not say whether a road is worth building. A road can still serve freight, emergency access or places with no alternative. For a city that wants less congestion, the evidence suggests that adding lanes alone is unlikely to be enough, and the authors' conclusion covers public transit as well.",
+      "body_vi": "Quy luật mô tả cách lượng lái xe phản ứng với năng lực đường. Nó không nói con đường có đáng xây hay không. Một con đường vẫn có thể phục vụ vận tải hàng hóa, xe cứu thương hay những nơi không có lựa chọn khác. Với một thành phố muốn bớt tắc nghẽn, bằng chứng cho thấy chỉ thêm làn thì khó đủ, và kết luận của các tác giả bao gồm cả giao thông công cộng."
+    }
+  ],
+  "keyPoint": {
+    "en": "Adding lanes to a congested road tends to attract driving in proportion to the new capacity. [p:Cheaper trips create new trips, so the extra space is filled.] Duranton and Turner found the effect strong on interstate highways, and concluded that building roads or transit alone is unlikely to relieve congestion.",
+    "vi": "Thêm làn cho một con đường tắc có xu hướng kéo theo lượng lái xe tỷ lệ với năng lực mới. [p:Những chuyến đi rẻ hơn tạo ra chuyến đi mới, nên khoảng trống được lấp đầy.] Duranton và Turner thấy hiệu ứng này mạnh trên đường cao tốc liên bang, và kết luận rằng chỉ xây đường hoặc giao thông công cộng khó có thể giảm tắc nghẽn."
+  },
+  "applySteps": {
+    "en": [
+      "Note the next time a new road opens near you, and count the cars at the same hour three months later.",
+      "Compare your commute with and without your fastest route, and notice how often the time saving changes your choices.",
+      "Read your city's transport plan and check whether it estimates the extra traffic that new capacity would bring."
+    ],
+    "vi": [
+      "Lần tới khi có một con đường mới mở gần nhà, hãy ghi lại số xe vào cùng giờ đó ba tháng sau.",
+      "So sánh quãng đường đi làm khi có và không có tuyến nhanh nhất của bạn, và để ý tần suất thời gian tiết kiệm được làm thay đổi lựa chọn của bạn.",
+      "Đọc kế hoạch giao thông của thành phố và kiểm tra xem nó có ước tính lượng xe tăng thêm do năng lực mới hay không."
+    ]
+  },
+  "references": [
+    {
+      "id": "duranton-turner",
+      "label": "Duranton & Turner (2011), The Fundamental Law of Road Congestion",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.101.6.2616"
+    },
+    {
+      "id": "arb-2025",
+      "label": "California Air Resources Board (2025), Roadway Capacity and Induced Travel policy brief",
+      "url": "https://ww2.arb.ca.gov/sites/default/files/2025-04/Roadway%20Capacity%20and%20Induced%20Travel%20-%202025%20Policy%20Brief.pdf"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}

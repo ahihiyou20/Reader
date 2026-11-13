@@ -1,0 +1,94 @@
+{
+  "slug": "goodharts-law-when-a-measure-becomes-a-target",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "economics",
+  "tags": [
+    "goodhart's law",
+    "metrics",
+    "incentives",
+    "measurement"
+  ],
+  "title": {
+    "en": "Goodhart's law: when a measure becomes a target, it stops measuring",
+    "vi": "Quy luật Goodhart: khi thước đo trở thành mục tiêu, nó không còn đo đúng nữa"
+  },
+  "hook": {
+    "en": "Suppose a government picks one number as the sign that things are going well. Once people know the number matters, they start shaping their behaviour around it. The number can keep rising while the thing it was meant to measure stops improving. Economists call this Goodhart's law, and it shows up well beyond economics, in schools, research and business alike.",
+    "vi": "Giả sử chính phủ chọn một con số làm dấu hiệu cho thấy mọi thứ đang ổn. Khi người ta biết con số đó quan trọng, họ bắt đầu điều chỉnh hành vi để nhắm vào nó. Con số có thể tiếp tục tăng trong khi điều nó định đo lại không còn tốt lên. Các nhà kinh tế gọi đây là quy luật Goodhart, và nó xuất hiện xa hơn kinh tế học, trong giáo dục, nghiên cứu và kinh doanh."
+  },
+  "sections": [
+    {
+      "heading_en": "A warning from monetary policy",
+      "heading_vi": "Một cảnh báo từ chính sách tiền tệ",
+      "body_en": "The law is named after the British economist Charles Goodhart. In a 1975 article on monetary policy in the United Kingdom, he argued that a statistical pattern tends to collapse once policymakers push on it to control outcomes {goodhart-wiki}. His point was not about one central bank. It was about any number that people are asked to steer by, because the pressure to hit it changes the relationship the number was measuring.",
+      "body_vi": "Quy luật được đặt theo tên nhà kinh tế người Anh Charles Goodhart. Trong một bài báo năm 1975 về chính sách tiền tệ ở Vương quốc Anh, ông lập luận rằng một quy luật thống kê có xu hướng sụp đổ khi nhà hoạch định chính sách dùng nó để kiểm soát kết quả {goodhart-wiki}. Ý của ông không chỉ nói về một ngân hàng trung ương. Nó nói về bất kỳ con số nào mà người ta được yêu cầu bám theo, vì áp lực đạt con số đó làm thay đổi mối quan hệ mà con số vốn đo lường."
+    },
+    {
+      "heading_en": "From economics to everything else",
+      "heading_vi": "Từ kinh tế học đến mọi lĩnh vực",
+      "body_en": "The shorter version came later. In 1997, the anthropologist Marilyn Strathern wrote about the misuse of accountability measures in education and put the idea in its now familiar form: once a measure is a target, it stops being a good measure {goodhart-wiki}. A medical education article by Anthony Artino notes that the principle underlying the law is not limited to economics {artino}.",
+      "body_vi": "Phiên bản ngắn gọn hơn ra đời sau đó. Năm 1997, nhà nhân học Marilyn Strathern viết về việc lạm dụng các thước đo trách nhiệm giải trình trong giáo dục, và đưa ý tưởng về dạng quen thuộc hiện nay: khi một thước đo trở thành mục tiêu, nó không còn là thước đo tốt {goodhart-wiki}. Một bài viết về giáo dục y khoa của Anthony Artino lưu ý rằng nguyên lý nằm dưới quy luật này không chỉ giới hạn trong kinh tế {artino}."
+    },
+    {
+      "heading_en": "How the number gets gamed",
+      "heading_vi": "Con số bị 'chơi' như thế nào",
+      "body_en": "Why does a target spoil a measure? A measure is a stand-in: a number that tracks something harder to observe, such as learning, health or stability. Once people are rewarded for moving the number, they have every reason to move the number directly. [p:The stand-in then reflects the effort spent on the number rather than the thing it stood for.] Wikipedia's summary of the law makes the same point: when a feature is picked as an indicator, it stops working as one, because people start to game it {goodhart-wiki}.",
+      "body_vi": "Vì sao mục tiêu lại làm hỏng thước đo? Thước đo là một vật thay thế: một con số theo dõi điều gì đó khó quan sát hơn, như việc học, sức khỏe hay sự ổn định. Khi người ta được thưởng vì làm con số đẹp lên, họ có lý do để tác động trực tiếp vào con số. [p:Khi đó, con số phản ánh công sức bỏ vào chính nó thay vì điều nó từng đại diện.] Tóm tắt về quy luật trên Wikipedia cũng nói điều tương tự: khi một yếu tố được chọn làm chỉ báo, nó thôi là chỉ báo, vì người ta bắt đầu tìm cách chơi với nó {goodhart-wiki}."
+    },
+    {
+      "heading_en": "A case from research",
+      "heading_vi": "Một ví dụ từ nghiên cứu",
+      "body_en": "Wikipedia's entry gives a case from science. The San Francisco Declaration on Research Assessment criticises the way measurement has become a target. The entry reports that the correlation between the h-index and scientific awards has decreased since the h-index came into widespread use {goodhart-wiki}. A metric can stay informative while nobody depends on it heavily. That is hard to keep once it decides budgets, promotions or rankings.",
+      "body_vi": "Mục Wikipedia đưa ra một ví dụ từ khoa học. Tuyên bố San Francisco về đánh giá nghiên cứu phê phán việc đo lường đã trở thành mục tiêu. Mục này cho biết tương quan giữa chỉ số h và các giải thưởng khoa học đã giảm kể từ khi chỉ số h được dùng rộng rãi {goodhart-wiki}. Một thước đo có thể còn cung cấp thông tin khi không ai phụ thuộc quá nhiều vào nó. Điều đó khó giữ được khi nó quyết định ngân sách, thăng tiến hay xếp hạng."
+    },
+    {
+      "heading_en": "Using measures without wrecking them",
+      "heading_vi": "Dùng thước đo mà không làm hỏng nó",
+      "body_en": "The law does not say measures are useless. It says a single number used as a target stops being a clean signal. Careful users watch several indicators, check them against outcomes that are harder to fake, and expect behaviour to shift once people learn the rules. The sources describe the problem clearly, but they do not offer one fix that works everywhere.",
+      "body_vi": "Quy luật không nói rằng thước đo vô dụng. Nó nói rằng một con số duy nhất dùng làm mục tiêu sẽ thôi là tín hiệu sạch. Người dùng cẩn thận theo dõi nhiều chỉ báo, đối chiếu chúng với những kết quả khó làm giả hơn, và chấp nhận rằng hành vi sẽ thay đổi khi người ta biết luật chơi. Các nguồn tài liệu mô tả vấn đề rõ ràng, nhưng không đưa ra một giải pháp nào đúng ở mọi nơi."
+    },
+    {
+      "heading_en": "The same trap in personal goals",
+      "heading_vi": "Cái bẫy tương tự trong mục tiêu cá nhân",
+      "body_en": "Personal goals work the same way. If you count pages read, you may start skimming to hit the count. Track a second measure, such as whether you can explain what you read a week later, so the first number does not run the show. The law applies to any number that carries a reward, whether it is a salary, a grade or a step count.",
+      "body_vi": "Mục tiêu cá nhân cũng vận hành như vậy. Nếu bạn đếm số trang đã đọc, bạn có thể bắt đầu lướt qua để đạt con số. Hãy theo dõi thêm một thước đo thứ hai, chẳng hạn bạn có thể giải thích nội dung đã đọc sau một tuần hay không, để con số đầu tiên không chi phối tất cả. Quy luật áp dụng cho bất kỳ con số nào có kèm phần thưởng, dù là lương, điểm số hay số bước chân."
+    }
+  ],
+  "keyPoint": {
+    "en": "A measure is a stand-in for something harder to see. [p:Once people are rewarded for the stand-in, they change it, and it stops reflecting the thing it was meant to track.] This is why a good indicator can turn bad the moment it becomes a target. Use several measures, and check them against outcomes that are harder to game.",
+    "vi": "Thước đo là vật thay thế cho điều khó nhìn thấy hơn. [p:Khi người ta được thưởng vì vật thay thế đó, họ sẽ thay đổi nó, và nó thôi phản ánh điều mà nó từng theo dõi.] Đó là lý do một chỉ báo tốt có thể trở nên tồi ngay khi nó thành mục tiêu. Hãy dùng nhiều thước đo và đối chiếu chúng với những kết quả khó bị làm giả hơn."
+  },
+  "applySteps": {
+    "en": [
+      "Pick one personal goal, and write down the number you plan to track along with one outcome that matters more.",
+      "Add a second measure for the same goal, so that gaming one does not fool you.",
+      "Review both numbers after four weeks, and note any gap between them."
+    ],
+    "vi": [
+      "Chọn một mục tiêu cá nhân, viết ra con số bạn sẽ theo dõi cùng với một kết quả quan trọng hơn.",
+      "Thêm một thước đo thứ hai cho cùng mục tiêu, để việc chơi với một thước đo không đánh lừa bạn.",
+      "Xem lại cả hai con số sau bốn tuần, và ghi lại mọi khoảng chênh lệch giữa chúng."
+    ]
+  },
+  "references": [
+    {
+      "id": "goodhart-wiki",
+      "label": "Wikipedia: Goodhart's law",
+      "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+    },
+    {
+      "id": "artino",
+      "label": "Artino, PMC7901608 (medical education article)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7901608/"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}

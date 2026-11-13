@@ -1,0 +1,95 @@
+{
+  "slug": "schelling-segregation-mild-preferences-sharp-neighbourhoods",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "society",
+  "tags": [
+    "segregation",
+    "neighbourhoods",
+    "tipping point",
+    "agent-based model",
+    "thomas schelling"
+  ],
+  "title": {
+    "en": "Schelling's segregation model: mild preferences, sharp neighbourhoods",
+    "vi": "Mô hình phân tách của Schelling: thiên hướng nhẹ, khu dân cư phân hóa rõ"
+  },
+  "hook": {
+    "en": "Segregation often looks like the result of deliberate choices. In 1971, Thomas Schelling built a simple model to test whether it needs strong prejudice, and found it does not. In his model, each person wanted only a modest share of neighbours like themselves, yet the map still split into clusters. Mild preferences, repeated across many moves, produced a sharply divided city.",
+    "vi": "Sự phân tách khu dân cư thường trông như kết quả của những lựa chọn có chủ ý. Năm 1971, Thomas Schelling xây dựng một mô hình đơn giản để kiểm tra xem nó có cần định kiến mạnh hay không, và ông thấy là không. Trong mô hình, mỗi người chỉ muốn một tỷ lệ láng giềng giống mình ở mức khiêm tốn, vậy mà bản đồ vẫn tách thành các cụm. Những thiên hướng nhẹ, lặp lại qua nhiều lần di chuyển, đã tạo ra một thành phố phân hóa rõ rệt."
+  },
+  "sections": [
+    {
+      "heading_en": "A grid of counters",
+      "heading_vi": "Một lưới các quân cờ",
+      "body_en": "Schelling's model uses a grid of two kinds of counter, each standing for a household. Each counter looks at its eight surrounding squares and asks how many neighbours share its kind. If that share falls below what it wants, the counter moves to another empty square {schelling-1971}. Nobody in the model plans a division, and no one is ordered to move. The rules are local, and the pattern that results is the thing the model is built to reveal.",
+      "body_vi": "Mô hình của Schelling dùng một lưới gồm hai loại quân cờ, mỗi loại đại diện cho một hộ gia đình. Mỗi quân cờ nhìn tám ô xung quanh và hỏi có bao nhiêu láng giềng cùng loại. Nếu tỷ lệ đó thấp hơn mức nó muốn, quân cờ chuyển sang một ô trống khác {schelling-1971}. Không ai trong mô hình lên kế hoạch chia tách, và cũng không ai bị buộc phải chuyển đi. Các quy tắc chỉ dựa trên khu vực lân cận, và mẫu hình hình thành được chính là điều mô hình được xây để làm lộ ra."
+    },
+    {
+      "heading_en": "How much preference is enough",
+      "heading_vi": "Bao nhiêu thiên hướng là đủ",
+      "body_en": "The striking result concerns the threshold. With equal numbers of the two kinds and eight neighbours per counter, Schelling found that segregation was slight when people wanted about one-third of their neighbours to match them. It became striking when the demand rose to one-half {schelling-1971}. The gap between those two figures is not large, but the outcome changes sharply across it. That is the sense in which mild preferences can produce strong results.",
+      "body_vi": "Kết quả nổi bật liên quan đến ngưỡng. Với số lượng hai loại quân cờ bằng nhau và tám láng giềng cho mỗi quân, Schelling thấy sự phân tách chỉ nhẹ khi người ta muốn khoảng một phần ba láng giềng giống mình. Nó trở nên rõ rệt khi nhu cầu tăng lên một nửa {schelling-1971}. Khoảng cách giữa hai con số đó không lớn, nhưng kết quả thay đổi mạnh qua ranh giới ấy. Đó là ý nghĩa của việc thiên hướng nhẹ có thể tạo ra kết quả mạnh."
+    },
+    {
+      "heading_en": "Tipping points",
+      "heading_vi": "Điểm ngoặt",
+      "body_en": "The paper also describes tipping. Schelling defined it as the point when a recognisable new group enters a neighbourhood in numbers large enough to make the earlier residents begin to leave {schelling-1971}. He cited a Chicago study that found no mixed neighbourhood between 1940 and 1950 in which the change from white to Black occupancy was arrested or reversed. The process, once it starts, does not stop by itself.",
+      "body_vi": "Bài báo cũng mô tả điểm ngoặt. Schelling định nghĩa đó là thời điểm một nhóm mới dễ nhận ra đi vào khu phố với số lượng đủ lớn để cư dân trước đó bắt đầu rời đi {schelling-1971}. Ông dẫn một nghiên cứu ở Chicago, theo đó không có khu dân cư pha trộn nào từ năm 1940 đến 1950 mà quá trình chuyển từ người da trắng sang người da đen bị dừng lại hay đảo ngược. Một khi quá trình bắt đầu, nó không tự dừng lại."
+    },
+    {
+      "heading_en": "Anticipation speeds things up",
+      "heading_vi": "Sự kỳ vọng làm nhanh tiến trình",
+      "body_en": "Schelling noted that residents may respond to the change they expect rather than the change already present. A few early departures can therefore spread the belief that an area is turning, and that belief can move others before the numbers have changed. He also observed that dividing a city into well-defined neighbourhoods can channel demand into one area, which makes tipping more likely {schelling-1971}.",
+      "body_vi": "Schelling lưu ý rằng cư dân có thể phản ứng với sự thay đổi họ kỳ vọng hơn là sự thay đổi đã có sẵn. Vài người rời đi sớm có thể lan truyền niềm tin rằng khu phố đang đổi khác, và niềm tin đó có thể khiến người khác chuyển đi trước khi con số thực sự thay đổi. Ông cũng nhận thấy việc chia thành phố thành các khu dân cư rõ ràng có thể dồn nhu cầu vào một khu vực, và điều đó làm điểm ngoặt dễ xảy ra hơn {schelling-1971}."
+    },
+    {
+      "heading_en": "Mild in-group preference, strong outcome",
+      "heading_vi": "Thiên hướng nội nhóm nhẹ, kết quả mạnh",
+      "body_en": "A widely cited summary of the model makes the same point: a mild in-group preference can still lead to a highly segregated society {schelling-wiki}. The lesson is about mechanism. The model shows that a pattern can appear without anyone choosing it as a whole, so explanations based only on intentions can miss how segregation persists, even when most individuals are not strongly prejudiced.",
+      "body_vi": "Một bản tóm tắt được trích dẫn rộng rãi về mô hình nêu đúng điều này: thiên hướng nội nhóm nhẹ vẫn có thể dẫn tới một xã hội phân tách rất rõ {schelling-wiki}. Bài học nằm ở cơ chế. Mô hình cho thấy một mẫu hình có thể xuất hiện mà không ai chọn nó như một tổng thể, nên các giải thích chỉ dựa vào ý định có thể bỏ sót cách sự phân tách được duy trì."
+    },
+    {
+      "heading_en": "What a toy model cannot tell us",
+      "heading_vi": "Điều một mô hình đồ chơi không thể cho biết",
+      "body_en": "The counters are identical apart from colour, so the model cannot say how much segregation in a real city reflects preference, discrimination or price. Real cities also involve lending, policy and history that a grid leaves out. Schelling used the model to show what is possible, not to measure what is happening. Anyone using it to explain a real neighbourhood needs data the model does not contain.",
+      "body_vi": "Các quân cờ chỉ khác nhau về màu, nên mô hình không thể nói bao nhiêu phần trăm sự phân tách trong một thành phố thật đến từ thiên hướng, phân biệt đối xử hay giá cả. Thành phố thật còn có tín dụng, chính sách và lịch sử mà một lưới không thể hiện được. Schelling dùng mô hình để chỉ ra điều có thể xảy ra, không phải để đo điều đang xảy ra. Ai muốn dùng nó để giải thích một khu dân cư cụ thể cần những dữ liệu mà mô hình không có."
+    }
+  ],
+  "keyPoint": {
+    "en": "Segregation can arise even when each person is fairly tolerant. [p:A small preference, applied again and again, can sort a grid into clusters.] Schelling's model shows that patterns can be produced by local choices no one intended, so policy has to look at the process as well as the outcome.",
+    "vi": "Sự phân tách có thể xuất hiện ngay cả khi mỗi người khá khoan dung. [p:Một thiên hướng nhỏ, áp dụng lặp đi lặp lại, có thể sắp xếp một lưới thành các cụm.] Mô hình của Schelling cho thấy các mẫu hình có thể hình thành từ những lựa chọn cục bộ mà không ai dự định, vì vậy chính sách cần nhìn cả quá trình lẫn kết quả."
+  },
+  "applySteps": {
+    "en": [
+      "Look at a map of your city's neighbourhoods and note which areas have the most uniform populations.",
+      "Pick one place you visit each week, and notice who shares the space and what seems to draw each group there.",
+      "Read one local report on school or housing segregation, and check whether it describes causes or only outcomes."
+    ],
+    "vi": [
+      "Xem bản đồ các khu dân cư trong thành phố của bạn và ghi lại khu nào có dân cư đồng nhất nhất.",
+      "Chọn một nơi bạn ghé thường xuyên mỗi tuần, để ý ai cùng chia sẻ không gian đó và điều gì dường như thu hút từng nhóm đến đây.",
+      "Đọc một báo cáo địa phương về phân tách trường học hoặc nhà ở, và kiểm tra xem báo cáo mô tả nguyên nhân hay chỉ mô tả kết quả."
+    ]
+  },
+  "references": [
+    {
+      "id": "schelling-1971",
+      "label": "Schelling (1971), Dynamic models of segregation",
+      "url": "https://pdodds.w3.uvm.edu/research/papers/others/1971/schelling1971a.pdf"
+    },
+    {
+      "id": "schelling-wiki",
+      "label": "Wikipedia: Schelling's model of segregation",
+      "url": "https://en.wikipedia.org/wiki/Schelling%27s_model_of_segregation"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "memory-errors-in-the-field-soft-errors-are-not-the-whole-story",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "technology",
+  "tags": [
+    "dram",
+    "memory errors",
+    "ecc",
+    "data centres",
+    "reliability"
+  ],
+  "title": {
+    "en": "Memory errors in the field: soft errors are not the whole story",
+    "vi": "Lỗi bộ nhớ trong thực tế: lỗi mềm không phải toàn bộ câu chuyện"
+  },
+  "hook": {
+    "en": "Computer memory can flip a bit, and the usual explanation is radiation from space. For years, much previous work assumed that these soft errors dominated memory failures. A large study of server memory in a production fleet found error rates far higher than earlier estimates, and concluded that soft errors are unlikely to dominate. The finding challenges one of the field's common assumptions.",
+    "vi": "Bộ nhớ máy tính có thể bị lật một bit, và lời giải thích thường gặp là bức xạ từ không gian. Trong nhiều năm, phần lớn công trình trước đó giả định rằng các lỗi mềm này là nguyên nhân chủ yếu của hỏng hóc bộ nhớ. Một nghiên cứu lớn trên bộ nhớ máy chủ trong một đội máy thực tế cho thấy tỷ lệ lỗi cao hơn nhiều so với các ước tính trước đó, và kết luận rằng lỗi mềm khó có thể là nguyên nhân chủ yếu. Phát hiện này thách thức một giả định phổ biến của lĩnh vực."
+  },
+  "sections": [
+    {
+      "heading_en": "Two kinds of memory error",
+      "heading_vi": "Hai loại lỗi bộ nhớ",
+      "body_en": "Memory errors fall into two kinds. Soft errors randomly corrupt bits without leaving physical damage, while hard errors corrupt bits in a repeatable way because of a physical defect {dram-cacm}. Electrical or magnetic interference, including that from cosmic rays, can cause soft errors. Most server memory uses error-correcting codes, which allow detection and correction of one or multiple bit errors {dram-cacm}.",
+      "body_vi": "Lỗi bộ nhớ thuộc hai loại. Lỗi mềm làm hỏng bit một cách ngẫu nhiên mà không để lại hư hại vật lý, còn lỗi cứng làm hỏng bit lặp đi lặp lại do một khiếm khuyết vật lý {dram-cacm}. Nhiễu điện hoặc từ, kể cả nhiễu từ tia vũ trụ, có thể gây lỗi mềm. Phần lớn bộ nhớ máy chủ dùng mã sửa lỗi, cho phép phát hiện và sửa một hoặc nhiều lỗi bit {dram-cacm}."
+    },
+    {
+      "heading_en": "A field study, not a lab test",
+      "heading_vi": "Một nghiên cứu thực địa, không phải thí nghiệm trong phòng",
+      "body_en": "Schroeder, Pinheiro and Weber studied DRAM errors in a large fleet of commodity servers. The paper describes it as the first large-scale study of memory errors in the field {dram-cacm}. Earlier work, by the authors' account, relied mostly on laboratory studies that focused on soft errors {dram-sigmetrics}. Observing real machines in production gave a different picture of what was failing and how often.",
+      "body_vi": "Schroeder, Pinheiro và Weber nghiên cứu lỗi DRAM trên một đội lớn máy chủ phổ thông. Bài báo mô tả đây là nghiên cứu quy mô lớn đầu tiên về lỗi bộ nhớ trong thực tế {dram-cacm}. Theo lời các tác giả, các công trình trước đó chủ yếu dựa vào thí nghiệm trong phòng và chỉ tập trung vào lỗi mềm {dram-sigmetrics}. Quan sát máy thật đang vận hành cho một bức tranh khác về thứ hỏng và tần suất hỏng."
+    },
+    {
+      "heading_en": "Error rates above the estimates",
+      "heading_vi": "Tỷ lệ lỗi cao hơn các ước tính",
+      "body_en": "The authors observed error rates of 25,000 to 70,000 errors per billion device-hours per megabit, which they describe as orders of magnitude higher than previously reported {dram-cacm}. [y:More than 8 percent of memory modules were affected by errors in a given year.] Those figures are the measured core of the paper, and they are the reason its conclusions drew attention.",
+      "body_vi": "Các tác giả ghi nhận tỷ lệ lỗi từ 25.000 đến 70.000 lỗi trên một tỷ giờ thiết bị cho mỗi megabit, và mô tả con số này cao hơn các báo cáo trước đó nhiều bậc độ lớn {dram-cacm}. [y:Hơn 8 phần trăm các thanh bộ nhớ bị lỗi trong một năm.] Đó là phần cốt lõi có số đo của bài báo, và cũng là lý do kết luận của nó thu hút sự chú ý."
+    },
+    {
+      "heading_en": "Soft errors are not the main story",
+      "heading_vi": "Lỗi mềm không phải câu chuyện chính",
+      "body_en": "The surprising conclusion is that error rates are unlikely to be dominated by soft errors {dram-cacm}. The paper notes that much previous work had assumed soft errors were the dominant error mode, so the finding cuts against a widely held view. A design choice based on that assumption may target a cause that is smaller than expected. That is a claim about where effort should go, and the field has to test it rather than accept it on one study.",
+      "body_vi": "Kết luận gây bất ngờ là tỷ lệ lỗi khó có thể do lỗi mềm chi phối {dram-cacm}. Bài báo lưu ý rằng nhiều công trình trước đó đã coi lỗi mềm là kiểu lỗi chủ đạo, nên phát hiện này đi ngược một quan điểm được tin rộng rãi. Một thiết kế dựa trên giả định đó có thể nhắm vào một nguyên nhân nhỏ hơn dự kiến. Đó là một khẳng định về nên đặt nỗ lực vào đâu, và lĩnh vực này cần kiểm tra nó chứ không nên chấp nhận chỉ dựa trên một nghiên cứu."
+    },
+    {
+      "heading_en": "What hard errors imply",
+      "heading_vi": "Lỗi cứng gợi ý điều gì",
+      "body_en": "If errors come from physical defects, the same location can fail repeatedly, because a hard error corrupts bits in a repeatable manner {dram-cacm}. That changes the practical question. Rather than asking only how often radiation strikes, operators can ask whether a module that has already produced errors is likely to keep producing them. The paper does not settle that question, but its data make it worth asking.",
+      "body_vi": "Nếu lỗi đến từ khiếm khuyết vật lý, cùng một vị trí có thể hỏng lặp lại, vì lỗi cứng làm hỏng bit theo cách lặp lại được {dram-cacm}. Điều đó làm thay đổi câu hỏi thực tế. Thay vì chỉ hỏi tia bức xạ đánh trúng bao lâu một lần, người vận hành có thể hỏi liệu một thanh đã từng gây lỗi có tiếp tục gây lỗi hay không. Bài báo không trả lời câu hỏi này, nhưng dữ liệu của nó khiến câu hỏi đáng được đặt ra."
+    },
+    {
+      "heading_en": "How far the result travels",
+      "heading_vi": "Kết quả này áp dụng được đến đâu",
+      "body_en": "The study covers one fleet of commodity servers, so its rates describe that environment. A 2024 study of DRAM errors and cosmic rays in high-performance computing shows the question is still debated, since cosmic rays are widely regarded as a plausible cause there {boixaderas-2024}. The right reading is that the field's assumption deserves a test, not that cosmic rays are irrelevant.",
+      "body_vi": "Nghiên cứu chỉ bao quát một đội máy chủ phổ thông, nên tỷ lệ của nó mô tả môi trường đó. Một nghiên cứu năm 2024 về lỗi DRAM và tia vũ trụ trong điện toán hiệu năng cao cho thấy câu hỏi này vẫn đang được tranh luận, vì tia vũ trụ được coi là một nguyên nhân hợp lý ở đó {boixaderas-2024}. Cách đọc đúng là giả định của lĩnh vực cần được kiểm tra, chứ không phải tia vũ trụ là không đáng kể."
+    }
+  ],
+  "keyPoint": {
+    "en": "Memory errors can come from random radiation or from physical defects, and the two call for different responses. [p:A large field study found error rates far above earlier estimates and suggested soft errors are unlikely to dominate.] Engineers should test assumptions about the cause before designing protection.",
+    "vi": "Lỗi bộ nhớ có thể đến từ bức xạ ngẫu nhiên hoặc từ khiếm khuyết vật lý, và hai nguyên nhân này đòi hỏi cách xử lý khác nhau. [p:Một nghiên cứu thực địa lớn cho thấy tỷ lệ lỗi cao hơn hẳn các ước tính trước đó và gợi ý lỗi mềm khó có thể là nguyên nhân chính.] Các kỹ sư nên kiểm tra giả định về nguyên nhân trước khi thiết kế cơ chế bảo vệ."
+  },
+  "applySteps": {
+    "en": [
+      "Check your computer's diagnostic tool, if it has one, for a memory test, and note what it reports.",
+      "Read the abstract of the 2009 SIGMETRICS paper, and list the two error types it describes.",
+      "Write down one assumption you hold about why computers fail, and check whether a source supports it."
+    ],
+    "vi": [
+      "Kiểm tra công cụ chẩn đoán của máy tính, nếu có, để tìm mục kiểm tra bộ nhớ, và ghi lại kết quả.",
+      "Đọc phần tóm tắt của bài báo SIGMETRICS năm 2009, và liệt kê hai loại lỗi bài báo mô tả.",
+      "Viết ra một giả định bạn đang tin về lý do máy tính hỏng, rồi kiểm tra xem có nguồn nào ủng hộ nó không."
+    ]
+  },
+  "references": [
+    {
+      "id": "dram-cacm",
+      "label": "Schroeder, Pinheiro & Weber, DRAM Errors in the Wild: A Large-Scale Field Study",
+      "url": "https://cacm.acm.org/research/dram-errors-in-the-wild/"
+    },
+    {
+      "id": "dram-sigmetrics",
+      "label": "Schroeder et al. (2009), DRAM Errors in the Wild, SIGMETRICS full text",
+      "url": "https://www.cs.toronto.edu/~bianca/papers/sigmetrics09.pdf"
+    },
+    {
+      "id": "boixaderas-2024",
+      "label": "Boixaderas et al. (2024), DRAM Errors and Cosmic Rays",
+      "url": "https://arxiv.org/html/2407.16487v3"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}

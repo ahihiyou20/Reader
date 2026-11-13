@@ -1,0 +1,95 @@
+{
+  "slug": "planning-fallacy-why-tasks-take-longer-than-we-expect",
+  "status": "published",
+  "publishAt": "2026-11-13T00:00:00.000Z",
+  "category": "psychology",
+  "tags": [
+    "planning fallacy",
+    "forecasting",
+    "optimism bias",
+    "time estimates",
+    "judgement"
+  ],
+  "title": {
+    "en": "The planning fallacy: why we finish later than we expect",
+    "vi": "Ngụy biện lập kế hoạch: vì sao ta thường xong muộn hơn dự kiến"
+  },
+  "hook": {
+    "en": "Ask people how long their own task will take, and the answer is usually too short. Roger Buehler, Dale Griffin and Michael Ross tested this in 1994 by asking students to predict when they would finish real projects. Fewer than half finished in the time they had predicted. The authors traced the gap to how people build the forecast, not to a lack of effort.",
+    "vi": "Hãy hỏi người ta một việc của chính họ sẽ mất bao lâu, và câu trả lời thường ngắn hơn thực tế. Roger Buehler, Dale Griffin và Michael Ross kiểm tra điều này năm 1994 bằng cách yêu cầu sinh viên dự đoán khi nào họ sẽ hoàn thành các dự án thật. Dưới một nửa số người xong đúng thời gian đã dự đoán. Các tác giả quy khoảng chênh lệch này cho cách con người xây dựng dự báo, chứ không phải do thiếu nỗ lực."
+  },
+  "sections": [
+    {
+      "heading_en": "Predictions that run early",
+      "heading_vi": "Những dự đoán luôn quá sớm",
+      "body_en": "The undergraduates predicted completion times for academic and non-academic tasks, and the researchers later checked when the tasks were finished. Predictions were too optimistic across the tasks. Across four prospective studies, fewer than half the participants finished in the time they had originally predicted {buehler-1994}. Students also reported that they had finished about 68 percent of their previous projects later than they had expected.",
+      "body_vi": "Các sinh viên dự đoán thời gian hoàn thành cho những việc học tập và phi học tập, sau đó các nhà nghiên cứu kiểm tra khi nào việc đó thực sự xong. Dự đoán lạc quan quá mức ở mọi loại việc. Qua bốn nghiên cứu theo dõi trước sau, dưới một nửa người tham gia hoàn thành đúng thời gian họ đã dự đoán ban đầu {buehler-1994}. Sinh viên cũng cho biết khoảng 68 phần trăm các dự án trước đó của họ đã xong muộn hơn dự kiến."
+    },
+    {
+      "heading_en": "Plans beat memories",
+      "heading_vi": "Kế hoạch thắng ký ức",
+      "body_en": "Why do people repeat the error? When they made predictions, the participants focused on future scenarios built around their plan, and set aside relevant past experience. The authors ran a study in which the optimistic bias was removed when participants were instructed to connect their predictions with relevant past experiences {buehler-1994}. People, in other words, can know their track record in general without applying it to the task in front of them.",
+      "body_vi": "Vì sao người ta lặp lại sai lầm? Khi dự đoán, người tham gia tập trung vào các viễn cảnh tương lai xây quanh kế hoạch của mình và gạt sang một bên kinh nghiệm quá khứ liên quan. Các tác giả có một nghiên cứu trong đó sự lạc quan thiên lệch biến mất khi người tham gia được yêu cầu liên hệ dự đoán với kinh nghiệm quá khứ phù hợp {buehler-1994}. Nói cách khác, người ta có thể biết chung chung về thành tích của mình mà không áp dụng nó vào việc trước mặt."
+    },
+    {
+      "heading_en": "Explaining away the miss",
+      "heading_vi": "Giải thích để bỏ qua lần trễ",
+      "body_en": "When tasks ran late, people tended to explain the delay in ways that made it seem unusual: external, temporary and specific causes. The authors describe a split between a general belief that predictions are usually unrealistic and a specific expectation for the task at hand {buehler-1994}. Keeping those two beliefs apart lets people admit past misses while still expecting the next task to go well.",
+      "body_vi": "Khi việc bị trễ, người ta thường giải thích sự chậm trễ theo cách làm cho nó có vẻ bất thường: nguyên nhân bên ngoài, tạm thời và cụ thể. Các tác giả mô tả một sự tách rời giữa niềm tin chung rằng dự đoán thường không thực tế và kỳ vọng cụ thể cho việc đang làm {buehler-1994}. Giữ hai niềm tin đó tách biệt cho phép người ta thừa nhận những lần trễ trước đây mà vẫn kỳ vọng việc kế tiếp sẽ suôn sẻ."
+    },
+    {
+      "heading_en": "Other people are more realistic",
+      "heading_vi": "Người khác dự đoán thực tế hơn",
+      "body_en": "Observers forecasting someone else's task made more realistic estimates. The study found that observers overestimated other people's completion times and made greater use of relevant past experiences {buehler-1994}. The bias therefore seems strongest when people forecast their own work. Someone outside the project tends to start from what similar tasks have taken, while the person doing the work starts from the plan.",
+      "body_vi": "Những người quan sát dự báo việc của người khác thì đưa ra ước lượng thực tế hơn. Nghiên cứu cho thấy người quan sát đánh giá quá cao thời gian hoàn thành của người khác và dùng kinh nghiệm quá khứ liên quan nhiều hơn {buehler-1994}. Vì vậy thiên lệch có vẻ mạnh nhất khi người ta dự báo công việc của chính mình. Người ngoài dự án thường bắt đầu từ những gì các việc tương tự đã mất, còn người làm việc thì bắt đầu từ kế hoạch."
+    },
+    {
+      "heading_en": "Where the evidence stops",
+      "heading_vi": "Bằng chứng dừng ở đâu",
+      "body_en": "The study uses undergraduates and short, self-chosen tasks, so its exact size may not carry over to engineers, builders or large projects. The paper does cite earlier work on professional engineers, who also tended to underestimate when equipment overhauls would finish {buehler-1994}. The core claim concerns personal forecasts, and that is the part the evidence supports most directly.",
+      "body_vi": "Nghiên cứu dùng sinh viên và các việc ngắn do người tham gia tự chọn, nên quy mô chính xác của thiên lệch có thể không áp dụng được cho kỹ sư, thợ xây hay các dự án lớn. Bài báo có trích dẫn công trình trước đó về kỹ sư chuyên nghiệp, những người cũng có xu hướng đánh giá thấp thời gian hoàn thành việc đại tu thiết bị {buehler-1994}. Luận điểm cốt lõi nói về dự báo cá nhân, và đây là phần bằng chứng hỗ trợ trực tiếp nhất."
+    },
+    {
+      "heading_en": "A check against your own record",
+      "heading_vi": "Đối chiếu với lịch sử của chính bạn",
+      "body_en": "A practical fix follows from the study. Before committing to a time, list how long similar tasks actually took last time. The authors found that linking a prediction to past experience removed the optimistic bias {buehler-1994}. Treat your first estimate as a draft and compare it with your history before you promise a date to anyone.",
+      "body_vi": "Một cách khắc phục thực tế rút ra từ nghiên cứu. Trước khi cam kết một thời hạn, hãy liệt kê những việc tương tự đã thực sự mất bao lâu trong lần trước. Các tác giả thấy rằng việc gắn dự đoán với kinh nghiệm quá khứ đã loại bỏ thiên lệch lạc quan {buehler-1994}. Hãy coi ước lượng đầu tiên là bản nháp và đối chiếu với lịch sử trước khi hứa một ngày cụ thể với ai đó."
+    }
+  ],
+  "keyPoint": {
+    "en": "People forecast their own tasks from the plan, not from their track record. [p:The plan describes the best path, and the best path is rarely the one that happens.] Buehler and colleagues found that most people finished later than predicted, and that linking the forecast to past experience removed the bias.",
+    "vi": "Người ta dự báo việc của mình dựa trên kế hoạch, chứ không dựa trên lịch sử thực tế. [p:Kế hoạch mô tả con đường tốt nhất, và con đường tốt nhất hiếm khi là con đường thực sự diễn ra.] Buehler và cộng sự thấy phần lớn người ta xong muộn hơn dự đoán, và việc gắn dự báo với kinh nghiệm quá khứ đã loại bỏ thiên lệch."
+  },
+  "applySteps": {
+    "en": [
+      "For your next task, write your estimate, then write how long three similar tasks actually took.",
+      "Move the estimate toward the average of those past durations, rather than keeping the plan-based figure.",
+      "After the task, note the gap between the estimate and the result, so you have a record for next time."
+    ],
+    "vi": [
+      "Với việc tiếp theo, hãy viết ước lượng của bạn, rồi viết ba việc tương tự đã thực sự mất bao lâu.",
+      "Dịch ước lượng về phía trung bình của những khoảng thời gian đó, thay vì giữ con số dựa trên kế hoạch.",
+      "Sau khi xong việc, ghi lại khoảng chênh lệch giữa ước lượng và kết quả, để có dữ liệu cho lần sau."
+    ]
+  },
+  "references": [
+    {
+      "id": "buehler-1994",
+      "label": "Buehler, Griffin & Ross (1994), Exploring the planning fallacy",
+      "url": "https://psycnet.apa.org/record/1995-04284-001"
+    },
+    {
+      "id": "buehler-1994-pdf",
+      "label": "Buehler, Griffin & Ross (1994), full text",
+      "url": "https://web.mit.edu/curhan/www/docs/Articles/biases/67_J_Personality_and_Social_Psychology_366,_1994.pdf"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": [
+      "Claude for Reader"
+    ],
+    "changes": []
+  }
+}
