@@ -18,6 +18,9 @@ export async function wipe(label: string, update: () => void): Promise<void> {
   document.body.append(band);
   running = (async () => {
     try {
+      // The serif is not preloaded: fetch it now so the name never shows in a fallback face.
+      const face = getComputedStyle(name).fontFamily;
+      await Promise.race([document.fonts.load(`italic 400 64px ${face}`, label), new Promise((r) => setTimeout(r, 300))]).catch(() => {});
       await band.animate([{ transform: 'translateX(-102%)' }, { transform: 'translateX(0)' }], { duration: 360, easing: EASE, fill: 'forwards' }).finished;
       update();
       await name.animate([{ opacity: 0, transform: 'translateY(10px)' }, { opacity: 1, transform: 'none' }], { duration: 220, easing: 'ease-out', fill: 'forwards' }).finished;
