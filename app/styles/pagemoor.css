@@ -436,7 +436,7 @@ html[data-stage='compact-portrait'] .pill.listen {
 }
 .ctitle .ta {
   display: -webkit-box !important;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1168,8 +1168,12 @@ html[data-stage$='landscape'] .panel.side {
   }
 }
 
-/* The app frame is never a scroll box: focusing or revealing something off-screen must not move it. */
-.app {
+/* Frames are never scroll boxes: an element scrolled into view (a focused field, a tapped control)
+   must not shift the app, the feed or a page (overflow: hidden still allows that; clip does not). */
+.app,
+.feed,
+.article,
+.bg {
   overflow: clip;
 }
 
@@ -1405,4 +1409,166 @@ html[data-stage='compact-landscape'] .dhead .pill.listen {
   height: 32px;
   padding: 0 12px;
   font-size: 14px;
+}
+
+/* Phones: the cover title shrinks with its length instead of being cut (a 90-character title is
+   about three quarters of the size of a 40-character one), and the accent stays within two lines. */
+html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
+  font-size: clamp(21px, calc(31px - (var(--n, 40) - 40) * 0.16px), 31px);
+  line-height: 1.2;
+}
+html[data-stage='compact-landscape'] .ctitle[class*='t-'] {
+  font-size: clamp(16px, calc(22px - (var(--n, 40) - 40) * 0.1px), 22px);
+  line-height: 1.2;
+  -webkit-line-clamp: none;
+  overflow: visible;
+}
+.ctitle[class*='t-'] .tb {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* Short phones (iPhone SE): less height to share between the title and the bottom bar. */
+@media (max-height: 700px) and (orientation: portrait) {
+  html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
+    font-size: clamp(19px, calc(27px - (var(--n, 40) - 40) * 0.15px), 27px);
+  }
+  html[data-stage='compact-portrait'] .ctitle[class*='t-'] .tb {
+    font-size: 1.8em;
+  }
+}
+/* Landscape phones: the swipe hint goes above the title's column instead of over it, and the photo
+   credit to the bottom corner, clear of the action rail. */
+html[data-stage='compact-landscape'] .crow {
+  top: calc(var(--sat) + 62px);
+  bottom: auto;
+}
+html[data-stage='compact-landscape'] .ccredit {
+  top: auto;
+  bottom: calc(var(--sab) + 8px);
+  right: calc(env(safe-area-inset-right, 0px) + 84px);
+}
+/* Small labels keep a finger-sized hit area without growing. */
+.streak,
+.crow .hint,
+.prow .hint {
+  position: relative;
+}
+.streak::after,
+.crow .hint::after {
+  content: '';
+  position: absolute;
+  inset: -12px -6px;
+}
+
+/* ---------- Phone pass (tests/qa/phone-tour.mjs) ---------- */
+/* Cover title: use the width up to the action rail, so long titles keep all their words. */
+html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
+  width: calc(100% - 100px);
+}
+html[data-stage='compact-portrait'] .ctitle .ta {
+  -webkit-line-clamp: 5;
+}
+/* Short phones: the swipe hint ends before the rail instead of running under the like button. */
+@media (max-height: 700px) and (orientation: portrait) {
+  html[data-stage='compact-portrait'] .crow {
+    right: 84px;
+  }
+}
+/* Audio bar on phones: title and times on their own line, controls under them, the seek bar last.
+   The reading view's next button and dots step aside while it is open. */
+html[data-stage='compact-portrait'] .audiobar {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, auto);
+  grid-template-areas: 'text text text text text text' '. prev play next rate close' 'seek seek seek seek seek seek';
+  row-gap: 6px;
+  padding: 12px 10px 10px 14px;
+}
+html[data-stage='compact-portrait'] .audiobar-text {
+  grid-area: text;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(1) {
+  grid-area: prev;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(2) {
+  grid-area: play;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(3) {
+  grid-area: next;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(4) {
+  grid-area: rate;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(5) {
+  grid-area: close;
+}
+html[data-stage='compact-portrait'] .audiobar-seek {
+  grid-area: seek;
+  position: static;
+  width: 100%;
+}
+.app:has(.audiobar) .dfoot {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur-small) var(--ease-out);
+}
+/* Touch sizes: segmented choices and sliders a finger can hit. */
+.pbody .seg button {
+  height: 40px;
+  padding: 0 14px;
+}
+.range,
+.audiobar-seek {
+  height: 28px;
+  margin: 0;
+}
+.wordpop-src a {
+  padding: 8px 0;
+  margin: -8px 0;
+}
+/* Wider screens keep the one-line bar; the taller slider gets its own strip at the bottom. */
+html:not([data-stage='compact-portrait']) .audiobar {
+  padding-bottom: 26px;
+}
+html:not([data-stage='compact-portrait']) .audiobar-seek {
+  bottom: 0;
+  height: 24px;
+}
+/* Explore on landscape phones: the desktop grid, compacted to the short screen. */
+html[data-stage='compact-landscape'] .panel.explore .phead h2 {
+  font-size: 24px;
+}
+html[data-stage='compact-landscape'] .panel.explore .chips.scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+html[data-stage='compact-landscape'] .panel.explore .chip {
+  height: 32px;
+  font-size: 13px;
+}
+html[data-stage='compact-landscape'] .panel.explore .label {
+  margin: 12px 0 8px;
+}
+html[data-stage='compact-landscape'] .panel.explore .carousel {
+  grid-auto-columns: minmax(180px, calc((100% - 40px) / 5));
+}
+html[data-stage='compact-landscape'] .panel.explore .grid {
+  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  gap: 10px;
+}
+html[data-stage='compact-landscape'] .panel.explore .card .ct,
+html[data-stage='compact-landscape'] .panel.explore .card.wide .ct {
+  font-size: 12.5px;
+  line-height: 16px;
+}
+
+/* Landscape phones: the audio bar sits under the reading column, clear of the title's action row. */
+html[data-stage='compact-landscape'] .audiobar {
+  left: auto;
+  right: calc(env(safe-area-inset-right, 0px) + 12px);
+  bottom: calc(var(--sab) + 10px);
+  width: min(460px, 52%);
+  transform: none;
 }

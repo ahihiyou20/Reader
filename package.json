@@ -20,7 +20,8 @@
     "test:rules": "firebase emulators:exec --only firestore --project demo-reader \"vitest run --config vitest.rules.config.ts\"",
     "test:e2e": "playwright test",
     "validate": "tsx scripts/pipeline/validate.ts",
-    "content:lint": "tsx scripts/content-lint.ts"
+    "content:lint": "tsx scripts/content-lint.ts",
+    "test:tour": "node tests/qa/phone-tour.mjs"
   },
   "dependencies": {
     "firebase": "12.19.0",

@@ -71,6 +71,15 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const prowY = useTransform(q, (v) => (reduced ? 0 : (1 - v) * (gap - 62)));
   const titleY = useTransform(q, (v) => (reduced ? 0 : -110 * v));
   const titleO = useTransform(q, (v) => clamp(1 - v * 1.6, 0, 1));
+  // A faded title must not take the taps meant for the pills it slides over.
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  useEffect(
+    () =>
+      titleO.on('change', (o) => {
+        if (titleRef.current) titleRef.current.style.visibility = o < 0.2 ? 'hidden' : '';
+      }),
+    [titleO],
+  );
   const stickyO = useTransform(q, (v) => clamp((v - 0.4) / 0.6, 0, 1));
   const rowY = useTransform(q, (v) => (reduced ? 0 : (1 - v) * (gap - 25)));
   const rowS = useTransform(q, (v) => (reduced ? 1 : 1 - 0.2 * v));
@@ -568,7 +577,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             <ChevronsRight className="ic" aria-hidden="true" />
           </button>
         </MDiv>
-        <MH2 className="btitle" style={{ y: titleY, opacity: titleO }}>
+        <MH2 className="btitle" ref={titleRef} style={{ y: titleY, opacity: titleO }}>
           {title}
           {fallback && <span className="enonly">{t('enOnly')}</span>}
         </MH2>

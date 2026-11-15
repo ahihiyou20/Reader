@@ -68,7 +68,8 @@ export function CoverView({
         id={titleId}
         onClick={toDetails}
         data-region="cover-title"
-        style={active ? { viewTransitionName: 'cover-title' } : undefined}
+        // Longer titles set smaller (CSS reads --n), so the whole title fits instead of losing words.
+        style={{ ['--n' as string]: title.length, ...(active ? { viewTransitionName: 'cover-title' } : {}) }}
       >
         {/* The trailing space keeps the two lines one phrase for screen readers and text search. */}
         {lead && <span className="ta">{`${lead} `}</span>}
