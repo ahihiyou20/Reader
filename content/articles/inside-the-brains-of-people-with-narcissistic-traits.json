@@ -123,9 +123,40 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "narcissist": "An individual exhibiting excessive self-admiration, grandiosity, and self-centered tendencies.",
+      "clinical diagnosis": "A formal identification of a medical or psychological condition by qualified healthcare professionals.",
+      "grandiosity": "An exaggerated sense of personal superiority, uniqueness, power, or capability.",
+      "adaptive": "Beneficial or advantageous for adjusting and functioning effectively in one's environment.",
+      "faces of narcissism": "A Finnish scientific research project investigating neural mechanisms underlying narcissistic characteristics.",
+      "entitlement": "The assumption or belief that one inherently deserves special treatment, privileges, or status.",
+      "brain scanner": "An imaging machine, such as an fMRI, used to measure and record brain activity.",
+      "synchronized neural activity": "Coordinated brain activation across multiple individuals responding simultaneously to shared stimuli.",
+      "cognitive empathy": "The conscious capacity to understand and represent another person's perspective or thoughts.",
+      "social interpretation": "The process of evaluating, making sense of, and contextualizing social behaviors and interactions.",
+      "divergence": "A deviation or difference from a standard, expected, or shared pattern of response.",
+      "social tracking": "Spontaneously observing and monitoring interpersonal cues and developments during social interactions."
+    },
+    "vi": {
+      "người tự ái": "Cá nhân có đặc điểm đề cao cái tôi và luôn khao khát nhận được sự ngưỡng mộ.",
+      "narcissist": "Từ tiếng Anh chỉ người có tính tự ái cao hoặc mắc hội chứng ái kỷ.",
+      "sự tự mãn": "Cảm giác hài lòng quá mức về bản thân và tự đánh giá mình vượt trội.",
+      "thích ứng": "Khả năng điều chỉnh tâm lý và hành vi để đạt được thành công trong đời sống.",
+      "máy quét não": "Thiết bị chụp hình ảnh y khoa ghi nhận cấu trúc và hoạt động của não bộ.",
+      "sự đồng cảm": "Khả năng thấu hiểu, cảm nhận và chia sẻ trải nghiệm cảm xúc với người khác.",
+      "tính đồng bộ": "Trạng thái các vùng não cùng phối hợp hoạt động nhịp nhàng khi xử lý thông tin.",
+      "vùng não": "Khu vực chuyên biệt trong não chịu trách nhiệm cho các chức năng nhận thức riêng.",
+      "tính tự ái": "Nét tính cách thể hiện sự chú trọng quá mức vào bản thân và danh tiếng.",
+      "diễn giải": "Quá trình suy luận và gán ý nghĩa cho lời nói hoặc hành vi xã hội.",
+      "tự phát": "Phản ứng diễn ra tự nhiên mà không cần hướng dẫn hay định hướng từ bên ngoài.",
+      "tần số": "Ẩn dụ chỉ nhịp điệu và mức độ tương thích trong hoạt động xử lý thông tin."
+    }
   }
 }

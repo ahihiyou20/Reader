@@ -108,10 +108,26 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-27T02:14:45.227Z"
+  "publishAt": "2026-10-27T02:14:45.227Z",
+  "glossary": {
+    "en": {
+      "student list": "The student-led political movement and electoral list that contested and won the Serbian parliamentary elections.",
+      "serbian progressive party": "The ruling populist party in Serbia, led by Alexander Vučić, which was defeated in the parliamentary elections.",
+      "creeping authoritarianism": "The gradual, incremental concentration of power and erosion of democratic institutions and freedoms by a ruling regime.",
+      "procurement process": "The official government procedure for purchasing goods, contracts, or services from external suppliers or contractors.",
+      "despondency": "A state of low spirits or hopelessness regarding the likelihood of achieving political or social change.",
+      "bosniak muslim": "A South Slavic ethnic and religious minority group predominantly residing in the Sandžak region of southwestern Serbia.",
+      "concession speech": "A formal public statement by a political candidate admitting defeat to their opponents after an election.",
+      "pluralism": "A democratic principle advocating for the coexistence and equal participation of diverse political and social groups.",
+      "redress": "Remedy, retribution, or compensation sought to right past grievances, abuses of power, or political injustices.",
+      "organisational assemblage": "A decentralized, flexible structure of collaborating individuals and groups operating without a single centralized leader.",
+      "eu membership": "Official accession to the European Union, requiring prospective member states to meet specific democratic and institutional criteria."
+    }
+  }
 }

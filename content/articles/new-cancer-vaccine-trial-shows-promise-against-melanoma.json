@@ -117,9 +117,38 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "melanoma": "A serious type of skin cancer that develops in pigment-producing cells.",
+      "clinical data": "Medical information and health outcomes collected during scientific patient studies.",
+      "mrna vaccine": "A vaccine using genetic material to train cells to recognize and attack specific disease targets.",
+      "immunotherapy": "A treatment that boosts or trains the patient's immune system to fight disease.",
+      "recurrence": "The return of cancer signs or symptoms after a period of improvement.",
+      "tumor samples": "Tissue specimens removed from a growth to analyze their specific genetic characteristics.",
+      "immune cells": "Defense cells of the body that identify and eliminate pathogens and abnormal cells.",
+      "mutated proteins": "Altered molecular structures produced by genetic changes that distinguish cancer cells from normal cells.",
+      "malignant growths": "Dangerous tumors composed of cancer cells capable of invading surrounding tissues.",
+      "regulatory approval": "Official authorization from government health agencies allowing a medical treatment to be marketed.",
+      "oncologist": "A medical doctor who specializes in diagnosing and treating cancer.",
+      "oncology": "The field of medicine dedicated to the study, diagnosis, and treatment of cancer."
+    },
+    "vi": {
+      "vắc-xin mrna": "Vắc-xin sử dụng vật liệu di truyền để kích thích cơ thể chống lại tế bào ung thư.",
+      "miễn dịch": "Khả năng tự nhiên của cơ thể nhận diện và chống lại bệnh tật hoặc tế bào lạ.",
+      "ung thư da": "Bệnh ác tính khi các tế bào da phát triển bất thường và mất kiểm soát.",
+      "tái phát": "Hiện tượng bệnh ung thư quay trở lại sau một thời gian điều trị.",
+      "cá nhân hóa": "Được bào chế riêng dựa trên đặc điểm khối u của từng người bệnh.",
+      "khối u": "Khối mô hoặc đám tế bào phát triển bất thường trong cơ thể.",
+      "protein đột biến": "Các protein bị biến đổi cấu trúc, chỉ xuất hiện trên tế bào khối u.",
+      "ác tính": "Tính chất nguy hiểm, xâm lấn và có khả năng lan rộng gây tử vong.",
+      "lâm sàng": "Quá trình nghiên cứu, thử nghiệm trực tiếp trên người bệnh.",
+      "ung thư học": "Chuyên ngành y khoa nghiên cứu, chẩn đoán và điều trị bệnh ung thư."
+    }
   }
 }
