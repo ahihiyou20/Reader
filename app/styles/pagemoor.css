@@ -1214,26 +1214,26 @@ html[data-stage$='landscape'] .panel.side {
 }
 
 /* Explore on wide screens: a full-width page, a centred column, as many covers per row as fit. */
-html[data-stage$='landscape'] .panel.explore .pbody {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .pbody {
   padding-left: max(clamp(20px, 3vw, 40px), calc((100% - 1360px) / 2));
   padding-right: max(clamp(20px, 3vw, 40px), calc((100% - 1360px) / 2));
 }
-html[data-stage$='landscape'] .panel.explore .phead {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .phead {
   padding-left: max(clamp(12px, 2.4vw, 32px), calc((100% - 1376px) / 2));
   padding-right: max(clamp(12px, 2.4vw, 32px), calc((100% - 1376px) / 2));
 }
-html[data-stage$='landscape'] .panel.explore .phead h2 {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .phead h2 {
   font: 400 clamp(28px, 2.6vw, 38px)/1 var(--f-anton), Impact, sans-serif;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-html[data-stage$='landscape'] .panel.explore .chips.scroll {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .chips.scroll {
   flex-wrap: wrap;
   overflow: visible;
   margin: 0;
   padding: 2px 0 6px;
 }
-html[data-stage$='landscape'] .panel.explore .carousel {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, calc((100% - 30px) / 4));
@@ -1243,18 +1243,18 @@ html[data-stage$='landscape'] .panel.explore .carousel {
   overflow-x: auto;
   scroll-snap-type: x proximity;
 }
-html[data-stage$='landscape'] .panel.explore .carousel .card.wide {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .carousel .card.wide {
   width: auto;
 }
-html[data-stage$='landscape'] .panel.explore .grid {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .grid {
   grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
   gap: 12px;
 }
-html[data-stage$='landscape'] .panel.explore .card .ct {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .card .ct {
   font-size: 14px;
   line-height: 18px;
 }
-html[data-stage$='landscape'] .panel.explore .card.wide .ct {
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .card.wide .ct {
   font-size: 17px;
   line-height: 22px;
   -webkit-line-clamp: 2;
@@ -1537,29 +1537,29 @@ html:not([data-stage='compact-portrait']) .audiobar-seek {
   height: 24px;
 }
 /* Explore on landscape phones: the desktop grid, compacted to the short screen. */
-html[data-stage='compact-landscape'] .panel.explore .phead h2 {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .phead h2 {
   font-size: 24px;
 }
-html[data-stage='compact-landscape'] .panel.explore .chips.scroll {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .chips.scroll {
   flex-wrap: nowrap;
   overflow-x: auto;
 }
-html[data-stage='compact-landscape'] .panel.explore .chip {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .chip {
   height: 32px;
   font-size: 13px;
 }
-html[data-stage='compact-landscape'] .panel.explore .label {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .label {
   margin: 12px 0 8px;
 }
-html[data-stage='compact-landscape'] .panel.explore .carousel {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .carousel {
   grid-auto-columns: minmax(180px, calc((100% - 40px) / 5));
 }
-html[data-stage='compact-landscape'] .panel.explore .grid {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .grid {
   grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
   gap: 10px;
 }
-html[data-stage='compact-landscape'] .panel.explore .card .ct,
-html[data-stage='compact-landscape'] .panel.explore .card.wide .ct {
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .card .ct,
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .card.wide .ct {
   font-size: 12.5px;
   line-height: 16px;
 }

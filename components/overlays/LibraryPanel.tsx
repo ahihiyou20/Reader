@@ -53,7 +53,7 @@ export function LibraryPanel() {
   };
 
   return (
-    <Panel open={open} onClose={() => closeOverlay('library')} label={t('library')} title={t('library')}>
+    <Panel open={open} onClose={() => closeOverlay('library')} label={t('library')} title={t('library')} className="library">
       <div className="pbody">
         <div className="chips scroll" role="toolbar" aria-label={t('library')}>
           {[{ id: ALL, name: t('libAllSaved'), n: Object.keys(saves).length }, ...collections.map((c) => ({ id: c.id, name: c.name, n: c.slugs.length })), { id: HISTORY, name: t('libHistory'), n: history.length }].map(
