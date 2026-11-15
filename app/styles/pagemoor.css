@@ -266,7 +266,6 @@ select.input {
 /* Audio reading: sized like the Details pill next to it */
 .pill.listen {
   height: 36px;
-  margin-left: 8px;
   padding: 0 16px;
   font-size: 15.5px;
 }
@@ -1295,4 +1294,87 @@ html[data-stage$='landscape'] .panel.explore .card.wide .ct {
 /* Phones: the avatar alone opens the account; its label does not fit beside the logo and icons. */
 html[data-stage='compact-portrait'] .uname {
   display: none;
+}
+
+/* Reading header (stageshow spacing: a fixed 8-12px between controls, words never touching a
+   neighbour, the heading clear of the row above by at least the side inset). */
+.dhead .prow {
+  gap: 10px;
+}
+.dhead .prow .hint {
+  margin-left: auto;
+  padding-left: 2px;
+}
+.dhead .prow .hint[data-fit='icon'] {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(22, 22, 28, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.dhead .prow .hint[data-fit='icon'] .hint-t {
+  width: 0;
+}
+html[data-stage$='landscape'] .dhead .prow .hint[data-fit='icon'],
+html[data-stage='regular-portrait'] .dhead .prow .hint[data-fit='icon'] {
+  width: 44px;
+  height: 44px;
+}
+html[data-stage='compact-portrait'] .dhead .btitle {
+  margin-top: 6px;
+}
+
+/* Language change sweep (lib/wipe.ts) */
+.lang-wipe {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(11, 11, 15, 0) 0%, rgba(11, 11, 15, 0.25) 100%),
+    linear-gradient(115deg, #ff3d8b 0%, #8b5cf6 50%, #3b82f6 100%);
+  transform: translateX(-102%);
+  will-change: transform;
+}
+.lang-wipe span {
+  opacity: 0;
+  color: #fff;
+  font: 400 clamp(44px, 8vw, 120px)/1 var(--f-anton), Impact, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Card image: blurred placeholder underneath, the photo fading in once decoded. */
+.card .cblur {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(14px);
+  transform: scale(1.15);
+}
+.card img {
+  opacity: 0;
+  transition:
+    opacity 380ms var(--ease-out),
+    transform 600ms var(--ease-out);
+}
+.card img.in {
+  opacity: 1;
+}
+/* The Listen pill matches the Details pill beside it on every stage. */
+html[data-stage='regular-landscape'] .pill.listen,
+html[data-stage='regular-portrait'] .pill.listen {
+  height: 44px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+html[data-stage='compact-landscape'] .dhead .pill.listen {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
 }

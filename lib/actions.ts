@@ -426,9 +426,9 @@ export async function setLanguage(lang: Lang) {
   if (useUI.getState().lang === lang) return;
   // Saved first: a reload during the crossfade must keep the choice.
   rememberLang(lang);
-  // Every label changes at once: crossfade the screen rather than letting the text snap.
-  const [{ flushSync }, { withStageTransition }] = await Promise.all([import('react-dom'), import('@/lib/transition')]);
-  await withStageTransition(() => flushSync(() => useUI.getState().setLang(lang)));
+  // Every label changes at once, under a band of colour that sweeps across the screen.
+  const [{ flushSync }, { wipe }, { LANG_NAME }] = await Promise.all([import('react-dom'), import('@/lib/wipe'), import('@/lib/content/types')]);
+  await wipe(LANG_NAME[lang], () => flushSync(() => useUI.getState().setLang(lang)));
   track('lang_switch', { lang });
   if (useUser.getState().user) (await getBackend()).updateProfile({ lang }).catch(() => {});
 }

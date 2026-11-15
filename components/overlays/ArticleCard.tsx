@@ -47,7 +47,17 @@ export function ArticleCard({
       onClick={onOpen}
       style={{ ['--dominant' as string]: item.cover.dominant, ['--i' as string]: Math.min(index, 16) }}
     >
-      <img src={coverThumb(item, wide)} alt="" loading="lazy" decoding="async" draggable={false} />
+      {/* The tiny blurred cover shows at once; the photo fades in over it, or never replaces it if it fails. */}
+      {item.cover.blurDataURL && <span className="cblur" style={{ backgroundImage: `url(${item.cover.blurDataURL})` }} />}
+      <img
+        src={coverThumb(item, wide)}
+        alt=""
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+        onLoad={(e) => e.currentTarget.classList.add('in')}
+        onError={(e) => (e.currentTarget.hidden = true)}
+      />
       <span className="shade" />
       <span className="ct">{pick(item.title, lang)}</span>
       <span className="cl">

@@ -23,7 +23,8 @@ import { useFeedList } from './feed/useFeedList';
 import { useReadingSignals } from './feed/useReadingSignals';
 import { useReading } from '@/stores/reading';
 import { startReadingSync } from '@/lib/reading-sync';
-import { preloadOverlays } from './overlays/preload';
+import { preloadOverlays, warmCovers } from './overlays/preload';
+import { coverThumb } from './overlays/ArticleCard';
 import { useMounted, useStageSync } from './hooks';
 
 const BigHeart = dynamic(() => import('./chrome/BigHeart').then((m) => m.BigHeart), { ssr: false });
@@ -103,6 +104,8 @@ function Shell({
     previewItems.current = [preview.item];
   }
   const items = useFeedList(preview ? previewItems.current : undefined);
+  const itemsRef = useRef(items);
+  itemsRef.current = items;
   useReadingSignals(preview ? undefined : items);
   const readSize = useReading((s) => s.settings.fontSize);
   useEffect(() => (preview ? undefined : startReadingSync()), [preview]);
@@ -156,6 +159,9 @@ function Shell({
           getBackend();
           preloadOverlays();
           setPanelsReady(true);
+          const list = itemsRef.current ?? [];
+          // Explore shows the first cards of the whole list and its trending row: warm those first.
+          warmCovers([...list.slice(0, 60).map((i) => coverThumb(i)), ...list.slice(0, 30).map((i) => coverThumb(i, true))]);
         }),
       BACKEND_IDLE_START_MS,
     );

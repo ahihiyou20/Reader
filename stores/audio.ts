@@ -1,19 +1,26 @@
 // Audio reading with the browser's own voices (Web Speech API): free, offline-capable and available
 // in all five languages on current phones and desktops. One paragraph is one utterance, so pause,
-// skip and seek work per paragraph and long articles do not hit the engines' length limits.
+// skip and seek work per paragraph and long articles do not hit the engines' length limits. Word
+// boundaries keep the place inside a paragraph, so pausing or changing speed resumes mid-paragraph.
 import { create } from 'zustand';
-import { LOCALE, type Lang, type Rich } from '@/lib/content/types';
+import { pick } from '@/lib/i18n';
+import { LOCALE, type ArticleClient, type Lang, type Rich } from '@/lib/content/types';
 import { useReading } from './reading';
 
-interface AudioState {
-  slug: string | null;
+export interface Track {
+  slug: string;
   title: string;
   lang: Lang;
   paras: string[];
+}
+
+interface AudioState extends Track {
   /** Paragraph being read. */
   i: number;
+  /** Characters of that paragraph already read. */
+  offset: number;
   playing: boolean;
-  play(track: { slug: string; title: string; lang: Lang; paras: string[] }): void;
+  play(track: Track): void;
   toggle(): void;
   seek(i: number): void;
   stop(): void;
@@ -25,31 +32,59 @@ export const canSpeak = () => typeof window !== 'undefined' && 'speechSynthesis'
 export const speakable = (r: Rich | undefined): string[] =>
   (r ?? []).map((p) => p.filter((n) => n.t !== 'cite').map((n) => n.v).join('').trim()).filter(Boolean);
 
+/** What is read for an article in a language: title, hook, each heading and body, the key point. */
+export function trackFor(article: ArticleClient, lang: Lang): Track {
+  const title = pick(article.title, lang) ?? '';
+  const paras = [
+    title,
+    ...speakable(pick(article.hook, lang)),
+    ...article.sections.flatMap((s) => [pick(s.heading, lang) ?? '', ...speakable(pick(s.body, lang))]),
+    ...speakable(pick(article.keyPoint, lang)),
+  ].filter(Boolean);
+  // Untranslated blocks fall back to English text, so a partly translated article is read in English.
+  return { slug: article.slug, title, lang: article.langs.includes(lang) ? lang : 'en', paras };
+}
+
 export function voicesFor(lang: Lang): SpeechSynthesisVoice[] {
   if (!canSpeak()) return [];
   return speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().replace('_', '-').startsWith(lang));
 }
 
+/** Speaking pace at 1×, in characters per second (about 165 words a minute); used for the time readout. */
+const CHARS_PER_SECOND = 15;
+
+/** Seconds read and left at the current speed. Estimated: speech engines do not report durations. */
+export function timing(s: Pick<AudioState, 'paras' | 'i' | 'offset'>, rate: number): { elapsed: number; total: number } {
+  const lengths = s.paras.map((p) => p.length);
+  const total = lengths.reduce((a, b) => a + b, 0);
+  const done = lengths.slice(0, s.i).reduce((a, b) => a + b, 0) + s.offset;
+  const cps = CHARS_PER_SECOND * rate;
+  return { elapsed: Math.round(done / cps), total: Math.round(total / cps) };
+}
+
 /** Bumped on every start so callbacks of a cancelled utterance cannot advance the new one. */
 let run = 0;
 
-function speak(i: number) {
+/** Speak paragraph `i` from character `from` (the start of a word). */
+function speak(i: number, from = 0) {
   const s = useAudio.getState();
   const text = s.paras[i];
   const id = ++run;
   speechSynthesis.cancel();
-  if (text === undefined) return useAudio.setState({ playing: false, i: 0 });
+  if (text === undefined) return useAudio.setState({ playing: false, i: 0, offset: 0 });
+  useAudio.setState({ i, offset: from });
   const { rate, voice } = useReading.getState().settings;
-  const u = new SpeechSynthesisUtterance(text);
+  const u = new SpeechSynthesisUtterance(text.slice(from));
   u.lang = LOCALE[s.lang];
   u.rate = rate;
   const chosen = voicesFor(s.lang).find((v) => v.voiceURI === voice[s.lang]);
   if (chosen) u.voice = chosen;
+  u.onboundary = (e) => {
+    if (id === run && e.name !== 'sentence') useAudio.setState({ offset: from + e.charIndex });
+  };
   u.onend = () => {
     if (id !== run) return;
-    const next = useAudio.getState().i + 1;
-    useAudio.setState({ i: next });
-    speak(next);
+    speak(useAudio.getState().i + 1);
   };
   u.onerror = (e) => {
     if (id === run && e.error !== 'interrupted' && e.error !== 'canceled') useAudio.setState({ playing: false });
@@ -57,43 +92,46 @@ function speak(i: number) {
   speechSynthesis.speak(u);
 }
 
+const silence = () => {
+  run++;
+  if (canSpeak()) speechSynthesis.cancel();
+};
+
 export const useAudio = create<AudioState>((set, get) => ({
-  slug: null,
+  slug: '',
   title: '',
   lang: 'en',
   paras: [],
   i: 0,
+  offset: 0,
   playing: false,
   play: (track) => {
     if (!canSpeak() || !track.paras.length) return;
-    set({ ...track, i: 0, playing: true });
+    set({ ...track, i: 0, offset: 0, playing: true });
     speak(0);
   },
   toggle: () => {
-    const { playing, i, slug } = get();
+    const { playing, i, offset, slug } = get();
     if (!slug) return;
-    // Restarting the paragraph is more reliable than speechSynthesis.pause(), which Android ignores.
-    if (playing) {
-      run++;
-      speechSynthesis.cancel();
-    } else speak(i);
+    // Cancel and resume at the last word rather than speechSynthesis.pause(), which Android ignores.
+    if (playing) silence();
+    else speak(i, offset);
     set({ playing: !playing });
   },
   seek: (i) => {
     const { paras, playing } = get();
     const to = Math.max(0, Math.min(paras.length - 1, i));
-    set({ i: to });
+    set({ i: to, offset: 0 });
     if (playing) speak(to);
   },
   stop: () => {
-    run++;
-    if (canSpeak()) speechSynthesis.cancel();
-    set({ slug: null, playing: false, paras: [], i: 0 });
+    silence();
+    set({ slug: '', playing: false, paras: [], i: 0, offset: 0 });
   },
 }));
 
-/** Apply a new rate or voice to what is being read now. */
+/** Apply a new speed or voice from the word being read now, not from the start of the paragraph. */
 export function restartSpeech() {
-  const { playing, i } = useAudio.getState();
-  if (playing) speak(i);
+  const { playing, i, offset } = useAudio.getState();
+  if (playing) speak(i, offset);
 }

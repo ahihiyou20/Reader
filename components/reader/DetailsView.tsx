@@ -18,11 +18,14 @@ import { useT } from '../hooks';
 import { layout, setArticleView } from '../feed/nav';
 import { captureAnchor, restoreScrollTop, type BlockBox, type ReadingAnchor } from '@/lib/reading-anchor';
 import { CountRoll } from '@/components/ui/CountRoll';
-import { canSpeak, speakable, useAudio } from '@/stores/audio';
+import { canSpeak, trackFor, useAudio } from '@/stores/audio';
 import { useTapToDefine } from './WordPop';
 
 const sweptSlugs = new Set<string>();
 
+/** Gap between the pills and the hint, and the room its arrow and spacing take (px). */
+const HINT_GAP = 12;
+const HINT_ICON = 26;
 const MAX_DOTS = 9;
 
 function getBlockBoxes(root: HTMLElement): BlockBox[] {
@@ -305,12 +308,29 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   };
   const kpText = pick(article.keyPoint, lang);
   const define = useTapToDefine(article, lang);
+  // The hint keeps its words only when they fit whole beside the pills (German and French run long);
+  // otherwise it becomes a round arrow button, as on small landscape phones.
+  const hintRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    const btn = hintRef.current;
+    const row = btn?.parentElement;
+    const label = btn?.querySelector<HTMLElement>('.hint-t');
+    if (!btn || !row || !label) return;
+    const fit = () => {
+      const before = btn.previousElementSibling?.getBoundingClientRect().right ?? row.getBoundingClientRect().left;
+      const room = row.getBoundingClientRect().right - before - HINT_GAP;
+      // scrollWidth is the label's full width even while it is clipped or collapsed.
+      btn.dataset.fit = label.scrollWidth + HINT_ICON <= room ? 'text' : 'icon';
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(row);
+    return () => ro.disconnect();
+  }, [lang]);
   const listening = useAudio((s) => s.slug === slug);
   const listen = () => {
     if (listening) return useAudio.getState().toggle();
-    // Read in the language on screen; untranslated blocks fall back to English text.
-    const paras = [title, ...speakable(pick(article.hook, lang)), ...article.sections.flatMap((s) => [pick(s.heading, lang) ?? '', ...speakable(pick(s.body, lang))]), ...speakable(kpText)].filter(Boolean);
-    useAudio.getState().play({ slug, title, lang: article.langs.includes(lang) ? lang : 'en', paras });
+    useAudio.getState().play(trackFor(article, lang));
   };
   const o = article.origin;
   // Group 3 cannot be translated: Vietnamese readers get Reader's own summary above the original text.
@@ -543,7 +563,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
               {t('listen')}
             </button>
           )}
-          <button className="hint" type="button" aria-label={t('toEngage')} onClick={() => setArticleView(slug, 2)}>
+          <button className="hint" ref={hintRef} type="button" aria-label={t('toEngage')} title={t('toEngage')} onClick={() => setArticleView(slug, 2)}>
             <span className="hint-t">{t('toEngage')}</span>
             <ChevronsRight className="ic" aria-hidden="true" />
           </button>
