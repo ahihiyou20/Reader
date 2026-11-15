@@ -88,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Ngành công nghiệp khiêu dâm trực tuyến đang sử dụng các thuật toán để giữ chân người dùng bằng cách liên tục đẩy những nội dung ngày càng cực đoan và bạo lực. Việc tiếp xúc sớm với các nội dung này gây ra những ảnh hưởng tiêu cực sâu sắc đến tâm lý và đời sống tình dục của giới trẻ, làm gia tăng các hành vi bạo lực trong thực tế. Các chính phủ và nhà quản lý đang bắt đầu đưa ra các biện pháp thắt chặt quản lý nhằm ngăn chặn tác hại từ những nội dung độc hại này."
+    "vi": "Ngành công nghiệp khiêu dâm trực tuyến đang sử dụng các thuật toán để giữ chân người dùng bằng cách liên tục đẩy những nội dung ngày càng cực đoan và bạo lực. Việc tiếp xúc sớm với các nội dung này gây ra những ảnh hưởng tiêu cực sâu sắc đến tâm lý và đời sống tình dục của giới trẻ, làm gia tăng các hành vi bạo lực trong thực tế. Các chính phủ và nhà quản lý đang bắt đầu đưa ra các biện pháp thắt chặt quản lý nhằm ngăn chặn tác hại từ những nội dung độc hại này.",
+    "fr": "Propulsée par des algorithmes visant à maximiser l'engagement, la pornographie en ligne diffuse des contenus de plus en plus violents et extrêmes. Des pratiques autrefois marginales, comme la strangulation ou les scénarios incestueux, sont devenues courantes, poussant le Royaume-Uni à en prohiber la détention. Des experts alertent sur cette « normalisation des violences sexuelles » qui affecte directement les adolescents : des études démontrent en effet qu'une exposition précoce altère la perception du consentement et accroît le risque de reproduire ces agressions dans leur propre vie intime.",
+    "de": "Kommerzielle Online-Pornoplattformen setzen gezielt auf Algorithmen, die Nutzer durch immer extremere und verstörendere Inhalte an den Bildschirm fesseln. Was früher eine Randerscheinung war, darunter Darstellungen von Strangulation, Inzest und offener Gewalt, gehört heute zum Mainstream. Recherchen und Aussagen von Betroffenen wie Sängerin Billie Eilish verdeutlichen die gravierenden psychischen Folgen eines verfrühten Konsums. Rechtswissenschaftlerin Clare McGlynn warnt vor der fortschreitenden Normalisierung sexualisierter Gewalt: Studien zeigen einen deutlichen Zusammenhang zwischen exzessivem Pornografiekonsum bei Jugendlichen und problematischem Verhalten im echten Leben. Gesetzliche Verbote extremer Inhalte, wie sie in Großbritannien eingeführt werden, markieren daher einen wichtigen Schritt gegen die toxische Dynamik dieser Plattformen.",
+    "es": "El auge de la pornografía digital extrema responde a modelos de negocio diseñados para retener la atención mediante algoritmos que promueven contenidos cada vez más violentos y explícitos. Especialistas y testimonios de figuras públicas advierten que la exposición temprana y constante a este material normaliza conductas perjudiciales, afectando la vida íntima y la percepción de los límites en los jóvenes. Diversos estudios vinculan este consumo intensivo con riesgos significativos en el comportamiento sexual adolescente, lo que ha impulsado medidas legislativas en países como el Reino Unido para prohibir y sancionar la difusión de material violento."
   },
   "keyPoint": {
     "en": "Algorithmic porn platforms are like a fast-food chain serving increasingly toxic ingredients just to keep you at the table. [p:Can you consciously limit your exposure to digital content that distorts reality]?",
@@ -110,10 +113,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-30T02:58:29.258Z"
+  "publishAt": "2026-10-30T02:58:29.258Z",
+  "glossary": {
+    "en": {
+      "algorithms": "Automated computer systems that select and recommend media content to keep users engaged.",
+      "strangulation": "The act of choking or constricting someone's neck, depicted as extreme sexual content.",
+      "incest porn": "Sexually explicit material depicting acts between family members or people presented as relatives.",
+      "misogynistic": "Reflecting hatred, mistrust, or prejudice against women.",
+      "content studies": "Academic research analyzing the themes, types, and prevalence of material in media.",
+      "civil society groups": "Independent organizations and advocacy groups working outside government to protect public welfare.",
+      "polarising": "Causing people to divide sharply into opposing or extreme viewpoints.",
+      "base instincts": "Primitive, biological urges and basic emotional impulses that drive automatic human reactions.",
+      "risk factor": "A condition or variable that increases the chance of developing negative or harmful outcomes.",
+      "problematic sexual behaviour": "Inappropriate, aggressive, or non-consensual sexual actions that cause harm to oneself or others.",
+      "academic appointment": "An official role or faculty position at a university or research institution.",
+      "rss feed": "A standardized web format used to distribute regularly updated digital content and podcast audio."
+    }
+  }
 }

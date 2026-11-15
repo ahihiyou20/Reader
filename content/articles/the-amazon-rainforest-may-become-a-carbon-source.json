@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "The Amazon Rainforest May Become a Carbon Source",
-    "vi": "Rừng Mưa Amazon Có Thể Trở Thành Nguồn Phát Thải Carbon"
+    "vi": "Rừng Mưa Amazon Có Thể Trở Thành Nguồn Phát Thải Carbon",
+    "fr": "La forêt amazonienne pourrait devenir une source de carbone",
+    "de": "Der Amazonas-Regenwald könnte zur Kohlenstoffquelle werden",
+    "es": "La selva amazónica podría convertirse en una fuente de carbono"
   },
   "hook": {
     "en": "Known globally as the green lungs of our world, the massive Amazon jungle faces a profound transformation. New research reveals that human interference and severe climate pressures are turning this vital natural shield from a carbon absorber into an active carbon emitter, threatening global climate stability {source}.",
-    "vi": "Được biết đến trên toàn cầu như lá phổi xanh của thế giới, khu rừng Amazon rộng lớn đang đối mặt với sự biến đổi sâu sắc. Nghiên cứu mới cho thấy sự can thiệp của con người và áp lực khí hậu khắc nghiệt đang biến lá chắn tự nhiên quan trọng này từ bộ phận hấp thụ carbon thành nguồn phát thải carbon hoạt động, đe dọa sự ổn định khí hậu toàn cầu {source}."
+    "vi": "Được biết đến trên toàn cầu như lá phổi xanh của thế giới, khu rừng Amazon rộng lớn đang đối mặt với sự biến đổi sâu sắc. Nghiên cứu mới cho thấy sự can thiệp của con người và áp lực khí hậu khắc nghiệt đang biến lá chắn tự nhiên quan trọng này từ bộ phận hấp thụ carbon thành nguồn phát thải carbon hoạt động, đe dọa sự ổn định khí hậu toàn cầu {source}.",
+    "fr": "Connue dans le monde entier comme le « poumon vert » de notre planète, l’immense jungle amazonienne traverse une profonde transformation. De nouvelles recherches révèlent que les perturbations humaines et de fortes pressions climatiques transforment ce bouclier naturel vital d’absorbeur de carbone en émetteur actif, menaçant la stabilité du climat mondial {source}.",
+    "de": "Weltweit als die grüne Lunge unserer Erde bekannt, steht der gewaltige Amazonas-Dschungel vor einem tiefgreifenden Wandel. Neue Forschungsergebnisse zeigen, dass menschliche Eingriffe und starker Klimadruck dieses lebenswichtige Schutzschild von einem Kohlenstoffabsorber in einen aktiven Kohlenstoffemittenten verwandeln und damit die weltweite Klimastabilität gefährden {source}.",
+    "es": "Conocida mundialmente como los pulmones verdes de nuestro planeta, la vasta selva amazónica afronta una profunda transformación. Nuevas investigaciones revelan que la interferencia humana y las severas presiones climáticas están transformando este vital escudo natural de un captador de carbono en un emisor activo de carbono, amenazando la estabilidad climática global {source}."
   },
   "sections": [
     {
       "heading_en": "Measuring Air Samples",
       "heading_vi": "Đo Lường Mẫu Không Khí",
       "body_en": "For decades, scientists viewed the vast tropical forest as a reliable mechanism to [p:absorb carbon dioxide] from the air. However, researchers analyzing fifteen years of atmospheric samples discovered a troubling trend. Because thick cloud layers block satellite views and ground stations remain scarce, investigators used airplanes to measure carbon movement directly across the region.",
-      "body_vi": "Trong nhiều thập kỷ, giới khoa học xem khu rừng nhiệt đới rộng lớn này là cơ chế đáng tin cậy để [p:hấp thụ khí carbon dioxide] từ không khí. Tuy nhiên, các nhà nghiên cứu phân tích mẫu khí quyển trong mười lăm năm đã phát hiện xu hướng đáng lo ngại. Do các tầng mây dày che khuất tầm nhìn vệ tinh và trạm mặt đất còn khan hiếm, các nhà điều tra đã dùng máy bay đo lường trực tiếp sự chuyển động của carbon trên toàn khu vực."
+      "body_vi": "Trong nhiều thập kỷ, giới khoa học xem khu rừng nhiệt đới rộng lớn này là cơ chế đáng tin cậy để [p:hấp thụ khí carbon dioxide] từ không khí. Tuy nhiên, các nhà nghiên cứu phân tích mẫu khí quyển trong mười lăm năm đã phát hiện xu hướng đáng lo ngại. Do các tầng mây dày che khuất tầm nhìn vệ tinh và trạm mặt đất còn khan hiếm, các nhà điều tra đã dùng máy bay đo lường trực tiếp sự chuyển động của carbon trên toàn khu vực.",
+      "heading_fr": "Mesurer des échantillons d’air",
+      "body_fr": "Pendant des décennies, les scientifiques ont considéré la vaste forêt tropicale comme un mécanisme fiable pour [p:absorber le dioxyde de carbone] de l’air. Toutefois, des chercheurs analysant quinze années d’échantillons atmosphériques ont mis au jour une évolution inquiétante. Comme une épaisse couverture nuageuse obstrue la vue des satellites et que les stations au sol demeurent rares, les scientifiques ont utilisé des avions afin de mesurer directement les flux de carbone dans toute la région.",
+      "heading_de": "Messung von Luftproben",
+      "body_de": "Jahrzehntelang sahen Forschende den riesigen Tropenwald als verlässlichen Mechanismus an, um aus der Luft [p:Kohlendioxid aufzunehmen]. Die Auswertung von Atmosphärenproben aus fünfzehn Jahren offenbarte jedoch einen beunruhigenden Trend. Weil dichte Wolkenschichten den Blick von Satelliten versperren und Bodenstationen weiterhin rar sind, nutzten die Forschenden Flugzeuge, um die Kohlenstoffbewegungen direkt über der Region zu messen.",
+      "heading_es": "Medición de muestras de aire",
+      "body_es": "Durante décadas, la comunidad científica consideró este vasto bosque tropical como un mecanismo fiable para [p:absorber dióxido de carbono] del aire. Sin embargo, los investigadores que analizaron quince años de muestras atmosféricas descubrieron una tendencia preocupante. Debido a que las densas capas de nubes bloquean la visión de los satélites y las estaciones terrestres siguen siendo escasas, los investigadores utilizaron aviones para medir el movimiento del carbono directamente en toda la región."
     },
     {
       "heading_en": "Analyzing Human Impact",
       "heading_vi": "Phân Tích Tác Động Con Người",
       "body_en": "To understand the shifting balance, the scientific team examined distinct periods characterized by varying weather conditions and human impacts. They compared wet years with minimal disruption against periods marked by intense deforestation and severe climate stressors like droughts and wildfires. Their findings demonstrated that human actions profoundly disrupt the natural ecological balance.",
-      "body_vi": "Để hiểu sự thay đổi cân bằng, đội ngũ khoa học đã xem xét các giai đoạn riêng biệt có điều kiện thời tiết và tác động con người khác nhau. Họ so sánh những năm ẩm ướt ít bị xáo trộn với các giai đoạn chịu nạn phá rừng dữ dội và áp lực khí hậu nghiêm trọng như hạn hán và cháy rừng. Phát hiện của họ chứng minh rằng hành động của con người làm xáo trộn sâu sắc sự cân bằng sinh thái tự nhiên."
+      "body_vi": "Để hiểu sự thay đổi cân bằng, đội ngũ khoa học đã xem xét các giai đoạn riêng biệt có điều kiện thời tiết và tác động con người khác nhau. Họ so sánh những năm ẩm ướt ít bị xáo trộn với các giai đoạn chịu nạn phá rừng dữ dội và áp lực khí hậu nghiêm trọng như hạn hán và cháy rừng. Phát hiện của họ chứng minh rằng hành động của con người làm xáo trộn sâu sắc sự cân bằng sinh thái tự nhiên.",
+      "heading_fr": "Analyser l’impact humain",
+      "body_fr": "Pour comprendre cette rupture d’équilibre, l’équipe scientifique a étudié des périodes distinctes, caractérisées par des conditions météorologiques et des impacts humains variables. Elle a comparé des années humides marquées par de très faibles perturbations à des périodes d’intense déforestation soumises à de sévères facteurs de stress climatique, tels que les sécheresses et les incendies de forêt. Leurs conclusions ont démontré que les activités humaines bouleversent en profondeur l’équilibre écologique naturel.",
+      "heading_de": "Analyse menschlicher Einflüsse",
+      "body_de": "Um das sich verschiebende Gleichgewicht zu verstehen, untersuchte das Forschungsteam verschiedene Zeitspannen, die durch wechselnde Wetterbedingungen und menschliche Einflüsse geprägt waren. Sie verglichen feuchte Jahre mit minimalen Störungen mit Perioden, die von intensiver Abholzung und schweren Klimabelastungen wie Dürren und Waldbränden gezeichnet waren. Ihre Ergebnisse belegten, dass menschliche Eingriffe das natürliche ökologische Gleichgewicht tiefgreifend stören.",
+      "heading_es": "Análisis del impacto humano",
+      "body_es": "Para comprender este equilibrio cambiante, el equipo científico examinó distintos periodos caracterizados por condiciones meteorológicas diversas e impactos humanos variables. Compararon años húmedos con alteraciones mínimas frente a etapas marcadas por una intensa deforestación y severos factores de estrés climático, como sequías e incendios forestales. Sus hallazgos demostraron que las acciones humanas perturban profundamente el equilibrio ecológico natural."
     },
     {
       "heading_en": "A Dangerous Tipping Point",
       "heading_vi": "Điểm Tới Hạn Nguy Hiểm",
       "body_en": "The data revealed that during mild periods with high deforestation, carbon emissions surged significantly. When human destruction coincided with extreme climate pressures, the situation deteriorated further. Consequently, the forest increasingly releases more carbon than it captures, pushing the ecosystem dangerously close to a permanent tipping point that reduces future carbon storage.",
-      "body_vi": "Dữ liệu cho thấy trong các thời kỳ ôn hòa có nạn phá rừng cao, lượng khí thải carbon tăng vọt đáng kể. Khi sự tàn phá của con người trùng khớp với áp lực khí hậu cực đoan, tình hình càng trở nên tồi tệ hơn. Do đó, khu rừng ngày càng thải ra nhiều carbon hơn mức nó giữ lại, đẩy hệ sinh thái đến gần một điểm tới hạn vĩnh viễn làm giảm khả năng lưu trữ carbon trong tương lai."
+      "body_vi": "Dữ liệu cho thấy trong các thời kỳ ôn hòa có nạn phá rừng cao, lượng khí thải carbon tăng vọt đáng kể. Khi sự tàn phá của con người trùng khớp với áp lực khí hậu cực đoan, tình hình càng trở nên tồi tệ hơn. Do đó, khu rừng ngày càng thải ra nhiều carbon hơn mức nó giữ lại, đẩy hệ sinh thái đến gần một điểm tới hạn vĩnh viễn làm giảm khả năng lưu trữ carbon trong tương lai.",
+      "heading_fr": "Un point de bascule dangereux",
+      "body_fr": "Les données ont révélé que, durant les périodes tempérées connaissant une forte déforestation, les émissions de carbone augmentaient considérablement. Lorsque les destructions causées par l’homme ont coïncidé avec des pressions climatiques extrêmes, la situation s’est encore détériorée. Par conséquent, la forêt rejette désormais davantage de carbone qu’elle n’en capture, rapprochant dangereusement l’écosystème d’un point de bascule permanent qui réduit le stockage futur de carbone.",
+      "heading_de": "Ein gefährlicher Kipppunkt",
+      "body_de": "Die Daten zeigten, dass die Kohlenstoffemissionen während milder Perioden mit hoher Entwaldung drastisch anstiegen. Traf die menschliche Zerstörung mit extremem Klimadruck zusammen, verschärfte sich die Lage weiter. Infolgedessen gibt der Wald zunehmend mehr Kohlenstoff ab, als er aufnimmt. Dies rückt das Ökosystem gefährlich nah an einen dauerhaften Kipppunkt heran, der die künftige Kohlenstoffspeicherung verringert.",
+      "heading_es": "Un punto de inflexión peligroso",
+      "body_es": "Los datos revelaron que, durante periodos templados con alta deforestación, las emisiones de carbono aumentaron significativamente. Cuando la destrucción humana coincidió con presiones climáticas extremas, la situación se deterioró aún más. En consecuencia, el bosque libera progresivamente más carbono del que captura, empujando al ecosistema peligrosamente cerca de un punto de inflexión permanente que reduce el almacenamiento futuro de carbono."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of the Amazon as an overloaded sponge that can no longer soak up water. How can your daily habits reduce global carbon footprints?",
-    "vi": "Hãy hình dung Amazon như một miếng bọt biển đã quá tải không thể thấm hút nước thêm nữa. Thói quen hàng ngày nào của bạn có thể làm giảm dấu chân carbon toàn cầu?"
+    "vi": "Hãy hình dung Amazon như một miếng bọt biển đã quá tải không thể thấm hút nước thêm nữa. Thói quen hàng ngày nào của bạn có thể làm giảm dấu chân carbon toàn cầu?",
+    "fr": "Considérez l’Amazonie comme une éponge saturée, incapable d’absorber davantage d’eau. Comment vos habitudes quotidiennes peuvent-elles contribuer à réduire l’empreinte carbone mondiale ?",
+    "de": "Stell dir den Amazonas wie einen überlasteten Schwamm vor, der kein Wasser mehr aufnehmen kann. Wie können deine täglichen Gewohnheiten den globalen CO₂-Fußabdruck verringern?",
+    "es": "Piense en la Amazonía como una esponja sobrecargada que ya no puede absorber más agua. ¿De qué manera pueden sus hábitos diarios reducir la huella de carbono global?"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Đọc bản tóm tắt nghiên cứu đầy đủ trực tuyến",
       "Chia sẻ phát hiện này với một người bạn",
       "Hỗ trợ các tổ chức bảo vệ rừng"
+    ],
+    "fr": [
+      "Lire le résumé complet de l’étude en ligne",
+      "Partager ces conclusions avec un proche",
+      "Soutenir les organisations qui protègent les forêts"
+    ],
+    "de": [
+      "Die vollständige Zusammenfassung der Studie online lesen",
+      "Die Ergebnisse mit einer befreundeten Person teilen",
+      "Organisationen zum Schutz von Wäldern unterstützen"
+    ],
+    "es": [
+      "Leer el resumen completo del estudio en línea",
+      "Compartir los hallazgos con un amigo",
+      "Apoyar a organizaciones dedicadas a la protección de los bosques"
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,82 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "green lungs": "A metaphor for vast forests that absorb carbon dioxide and produce oxygen.",
+      "carbon absorber": "A natural ecosystem that absorbs more carbon from the atmosphere than it releases.",
+      "carbon emitter": "An ecosystem or process that releases more carbon into the atmosphere than it absorbs.",
+      "carbon dioxide": "A greenhouse gas absorbed by plants during photosynthesis and released by burning.",
+      "atmospheric samples": "Air specimens collected to analyze greenhouse gas concentrations and atmospheric composition.",
+      "ground stations": "Land-based observation facilities equipped to monitor weather and atmospheric conditions.",
+      "deforestation": "The clearing or thinning of forests by human activities like logging and agriculture.",
+      "climate stressors": "Extreme environmental pressures resulting from climate change, such as droughts and heatwaves.",
+      "ecological balance": "The stable equilibrium between living organisms and their natural environment.",
+      "carbon emissions": "Carbon dioxide and other greenhouse gases discharged into the atmosphere.",
+      "tipping point": "A critical threshold where small changes cause rapid, irreversible ecological shifts.",
+      "carbon storage": "The natural capture and long-term retention of carbon in forest vegetation and soil."
+    },
+    "vi": {
+      "lá phổi xanh": "Hình ảnh ví von rừng Amazon điều hòa khí quyển và cung cấp dưỡng khí cho Trái Đất.",
+      "hấp thụ carbon": "Hiện tượng cây rừng giữ lại khí carbon từ bầu không khí qua quá trình quang hợp.",
+      "phát thải carbon": "Sự giải phóng các chất khí chứa carbon vào bầu khí quyển của Trái Đất.",
+      "khí carbon dioxide": "Loại khí nhà kính phổ biến giữ nhiệt trong khí quyển, còn được gọi là CO2.",
+      "mẫu khí quyển": "Lượng không khí thu thập được để phân tích các thành phần và nồng độ chất khí.",
+      "nạn phá rừng": "Tình trạng chặt hạ hoặc thiêu rụi cây rừng quy mô lớn do con người gây ra.",
+      "áp lực khí hậu": "Tác động tiêu cực từ các hiện tượng thời tiết cực đoan như nắng nóng và hạn hán.",
+      "cân bằng sinh thái": "Trạng thái ổn định tự nhiên giữa các sinh vật sống và môi trường trong khu rừng.",
+      "khí thải carbon": "Lượng khí carbon thoát ra không khí từ việc đốt rừng hoặc phân hủy hữu cơ.",
+      "điểm tới hạn": "Ngưỡng thay đổi mà khi vượt qua, hệ sinh thái bị tổn hại vĩnh viễn không thể phục hồi.",
+      "dấu chân carbon": "Tổng lượng khí nhà kính phát sinh từ các hoạt động sinh hoạt và sản xuất của con người."
+    },
+    "fr": {
+      "poumon vert": "Métaphore désignant une vaste zone végétale produisant de l’oxygène et absorbant du dioxyde de carbone.",
+      "émetteur actif": "Milieu ou entité qui libère activement du carbone dans l’atmosphère au lieu de le séquestrer.",
+      "dioxyde de carbone": "Gaz à effet de serre majeur absorbé par les végétaux au cours de la photosynthèse.",
+      "échantillons atmosphériques": "Prélèvements d’air servant à analyser la concentration des gaz présents dans l’atmosphère.",
+      "flux de carbone": "Déplacements et échanges de carbone entre la biosphère végétale et l’atmosphère terrestre.",
+      "déforestation": "Destruction et déboisement permanent de massifs forestiers causés par les activités humaines.",
+      "stress climatique": "Contraintes environnementales sévères, telles que les sécheresses, altérant le fonctionnement d’un écosystème.",
+      "équilibre écologique": "État d’harmonie dynamique régissant les relations entre les organismes vivants et leur habitat.",
+      "émissions de carbone": "Rejet de composés carbonés gazeux dans l’atmosphère terrestre.",
+      "point de bascule": "Seuil critique au-delà duquel un écosystème bascule irrémédiablement vers un nouvel état dégradé.",
+      "empreinte carbone": "Volume de gaz à effet de serre généré directement ou indirectement par une activité."
+    },
+    "de": {
+      "kohlenstoffquelle": "Ein System oder Gebiet, das mehr Kohlenstoff an die Atmosphäre abgibt, als es aufnimmt.",
+      "kohlenstoffabsorber": "Ein natürliches Reservoir wie ein Wald, das Kohlendioxid aus der Luft aufnimmt und bindet.",
+      "kohlenstoffemittenten": "Ein Verursacher von Treibhausgasen, der Kohlenstoffdioxid in die Atmosphäre freisetzt.",
+      "klimastabilität": "Der Erhalt des weltweiten Klimagleichgewichts ohne unumkehrbare und extreme Schwankungen.",
+      "atmosphärenproben": "Gesammelte Luftproben aus verschiedenen Höhenschichten zur chemischen Messung von Gasen.",
+      "kohlenstoffbewegungen": "Der Austausch und Transport von Kohlenstoff zwischen Vegetation, Boden und Atmosphäre.",
+      "klimabelastungen": "Schädigende Einflüsse auf die Natur durch extreme Wetterphänomene wie Dürren oder Waldbrände.",
+      "entwaldung": "Die großflächige Abholzung oder Vernichtung von Waldgebieten durch den Menschen.",
+      "kohlenstoffemissionen": "Die Freisetzung von klimawirksamen Gasen wie Kohlendioxid in die Erdatmosphäre.",
+      "kipppunkt": "Eine kritische Schwelle, deren Überschreiten unumkehrbare Veränderungen in einem System auslöst.",
+      "kohlenstoffspeicherung": "Die langfristige Einlagerung von Kohlenstoff in der pflanzlichen Biomasse und im Boden.",
+      "co₂-fußabdruck": "Das Maß für die Gesamtmenge ausgestoßener Treibhausgase durch menschliche Aktivitäten."
+    },
+    "es": {
+      "estabilidad climática": "Condición de equilibrio duradero en los patrones del tiempo y temperaturas a escala planetaria.",
+      "dióxido de carbono": "Gas de efecto invernadero cuya acumulación en la atmósfera contribuye al calentamiento del planeta.",
+      "muestras atmosféricas": "Porciones de aire recolectadas para analizar su composición química y concentración de gases.",
+      "estaciones terrestres": "Instalaciones en superficie equipadas con sensores para registrar datos meteorológicos y calidad del aire.",
+      "deforestación": "Destrucción y tala masiva de bosques provocada por actividades de explotación humana.",
+      "estrés climático": "Presión derivada de anomalías meteorológicas severas que sobrepasan la resistencia natural de un ecosistema.",
+      "incendios forestales": "Fuegos descontrolados que arrasan zonas vegetales y liberan grandes cantidades de carbono almacenado.",
+      "equilibrio ecológico": "Estado de balance dinámico y autorregulación entre los seres vivos y su medio físico.",
+      "emisiones de carbono": "Descarga de gases con carbono a la atmósfera provocada por quemas o degradación ambiental.",
+      "punto de inflexión": "Umbral crítico a partir del cual un ecosistema sufre alteraciones drásticas e irreversibles.",
+      "huella de carbono": "Volumen total de gases de efecto invernadero emitidos directa o indirectamente por actividades humanas."
+    }
   }
 }

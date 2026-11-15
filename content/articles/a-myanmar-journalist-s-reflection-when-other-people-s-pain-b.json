@@ -140,10 +140,39 @@
       "highlights",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-30T02:49:29.258Z"
+  "publishAt": "2026-10-30T02:49:29.258Z",
+  "glossary": {
+    "en": {
+      "source": "A person who provides firsthand information, accounts, or news to a journalist.",
+      "covid-19": "A contagious respiratory illness caused by a coronavirus that sparked a global pandemic.",
+      "political upheaval": "Severe political turbulence and disruption of governance, referring here to the Myanmar crisis.",
+      "livelihood": "A means of earning money to secure basic necessities and support one's daily life.",
+      "media organizations": "Companies or institutions that produce and distribute journalistic content and news reports.",
+      "news presenter": "A broadcast journalist who delivers news reports to audiences on camera or on air.",
+      "exile": "Living outside one's homeland, often forced by political persecution, conflict, or severe danger.",
+      "counseling": "Professional psychological therapy to address emotional trauma, chronic stress, and mental health challenges.",
+      "thb": "Thai baht, the official currency of Thailand.",
+      "usd": "United States dollar, the official currency of the United States."
+    },
+    "vi": {
+      "tê dại": "Trạng thái trơ lì cảm xúc, không còn cảm nhận hay phản ứng trước sự việc đau buồn.",
+      "numbness": "Từ tiếng Anh chỉ sự tê liệt cảm xúc trước những tổn thương tinh thần kéo dài.",
+      "đi thực tế": "Hoạt động đến tận hiện trường đời sống để thu thập thông tin, quan sát và phỏng vấn.",
+      "covid-19": "Đại dịch truyền nhiễm toàn cầu do virus SARS-CoV-2 gây ra bùng phát từ cuối năm 2019.",
+      "kế sinh nhai": "Cách thức, công việc làm để kiếm tiền mưu sinh và nuôi sống bản thân.",
+      "nguồn tài trợ": "Khoản kinh phí hỗ trợ từ các quỹ hoặc tổ chức giúp cơ quan báo chí hoạt động.",
+      "phát thanh viên": "Người trực tiếp phát ngôn, truyền đạt tin tức trên sóng truyền hình hoặc phát thanh.",
+      "lưu vong": "Tình cảnh phải rời bỏ quê hương, sinh sống tạm bợ nơi đất khách quê người.",
+      "counseling": "Từ tiếng Anh chỉ hoạt động tham vấn, trị liệu tâm lý chuyên nghiệp cùng chuyên gia.",
+      "baht": "Đơn vị tiền tệ chính thức được lưu hành tại Thái Lan.",
+      "usd": "Đô la Mỹ, đơn vị tiền tệ chính thức của Hoa Kỳ.",
+      "tác nghiệp": "Thực hiện các nghiệp vụ chuyên môn của phóng viên, nhà báo ở ngoài thực địa."
+    }
+  }
 }

@@ -46,13 +46,11 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://images.unsplash.com/photo-1500099817043-86d46000d58f?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTAyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "url": "https://picsum.photos/id/1080/1080/1920",
     "provider": "unsplash",
-    "author": "Stormseeker",
+    "author": "veeterzy",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/rX12B5uX7QM",
-    "wide": "https://images.unsplash.com/photo-1500099817043-86d46000d58f?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTAyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@sseeker?utm_source=pagemoor&utm_medium=referral"
+    "sourceUrl": "https://unsplash.com/photos/OJJIaFZOeX4"
   },
   "origin": {
     "group": 5,
@@ -117,9 +115,24 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "high-functioning depression": "A state where someone manages daily responsibilities while inwardly experiencing persistent depression and numbness.",
+      "anhedonia": "The reduced ability or inability to experience pleasure and joy in daily activities.",
+      "silent sister": "A quiet, less obvious companion condition to traditional, visible depression.",
+      "cureus": "A peer-reviewed open-access medical journal reporting scientific research findings.",
+      "dsm-5": "The standard diagnostic manual used by clinicians to classify mental health disorders.",
+      "trauma": "Emotional distress resulting from deeply troubling or harmful past experiences.",
+      "diagnostic manual": "An official handbook providing clinical criteria for identifying psychological disorders.",
+      "snaith-hamilton pleasure scale": "A clinical questionnaire used to evaluate a person's capacity to experience pleasure.",
+      "caregivers": "People who provide ongoing support and care for others, such as family members.",
+      "emotional breakdown": "A period of severe mental exhaustion and collapse from prolonged, unaddressed emotional distress."
+    }
   }
 }

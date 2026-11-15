@@ -84,7 +84,10 @@
     ]
   },
   "summary": {
-    "vi": "Nghiên cứu mới đây cho thấy xu hướng nhìn nhận phụ nữ qua lăng kính gợi cảm như một đồ vật không phải là bản năng cố định mà có thể thay đổi tạm thời bằng phương pháp kích thích điện nhẹ lên não bộ. Thí nghiệm trên 76 sinh viên đã chứng minh rằng dòng điện yếu có thể cải thiện khả năng nhận diện hình ảnh của họ. Các nhà khoa học kết luận rằng hiện tượng vật hóa cơ thể giống như một thói quen tâm lý bị chi phối bởi hoàn cảnh và quyền lực hơn là cấu trúc sinh học bẩm sinh."
+    "vi": "Nghiên cứu mới đây cho thấy xu hướng nhìn nhận phụ nữ qua lăng kính gợi cảm như một đồ vật không phải là bản năng cố định mà có thể thay đổi tạm thời bằng phương pháp kích thích điện nhẹ lên não bộ. Thí nghiệm trên 76 sinh viên đã chứng minh rằng dòng điện yếu có thể cải thiện khả năng nhận diện hình ảnh của họ. Các nhà khoa học kết luận rằng hiện tượng vật hóa cơ thể giống như một thói quen tâm lý bị chi phối bởi hoàn cảnh và quyền lực hơn là cấu trúc sinh học bẩm sinh.",
+    "fr": "L'objectivation sexuelle conduit souvent à percevoir autrui comme un assemblage d'éléments corporels plutôt que comme un individu dans sa globalité. Contrairement à l'hypothèse d'un mécanisme biologique immuable, une étude révèle qu'une légère stimulation électrique du front atténue ce biais perceptif : la mémorisation des silhouettes féminines s'en trouve nettement améliorée. Ces observations, conjuguées à l'influence démontrée des rapports de pouvoir et du contexte, indiquent que cette réification ne constitue pas une fatalité neurologique, mais s'apparente plutôt à une habitude cognitive modulable.",
+    "de": "Sexuelle Objektifizierung reduziert Menschen auf bloße Körperteile. In Wahrnehmungstests werden sexualisierte Frauen oft wie leblose Objekte verarbeitet: Das Gehirn erkennt sie aufrecht kaum besser als auf dem Kopf stehend. Eine Studie zeigt nun, dass dieses Muster keineswegs biologisch fest verdrahtet ist. Nach einer zehnminütigen, schwachen elektrischen Hirnstimulation über die Stirn verschwand das Defizit bei der Wiedererkennung aufrechter Frauenbilder vollständig. Zusammen mit früheren Befunden zu Machtverhältnissen deutet dies darauf hin, dass Objektifizierung eine veränderbare Wahrnehmungsgewohnheit darstellt und keine unverrückbare Eigenschaft unseres Sehsinns ist.",
+    "es": "¿Es la cosificación sexual un rasgo inmutable de la mente humana? Un estudio reciente demuestra que esta distorsión visual puede revertirse. Habitualmente, las personas reconocen a las mujeres sexualizadas mediante sus partes corporales aisladas, como si fueran objetos, perdiendo la ventaja perceptual propia de las figuras humanas completas. Sin embargo, aplicar una leve estimulación eléctrica transcraneal en la frente logró suprimir este sesgo y equiparar el reconocimiento de imágenes femeninas con las masculinas. Estos hallazgos, sumados al papel del poder en la percepción social, indican que la cosificación no es un reflejo biológico fijo, sino un hábito maleable que podemos desaprender."
   },
   "keyPoint": {
     "en": "Objectification is like a pair of tinted glasses that distorts how we see others, making us focus on specific parts instead of the whole person. Can you pause today and consciously look for the unique individual traits behind someone's appearance?",
@@ -106,10 +109,28 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-31T02:27:27.771Z"
+  "publishAt": "2026-10-31T02:27:27.771Z",
+  "glossary": {
+    "en": {
+      "sexual objectification": "Treating or viewing a person primarily as a physical object or collection of body parts for sexual use.",
+      "hard-wired": "Inborn, permanent, and fixed in neural circuitry rather than learned or modifiable by experience.",
+      "social neuroscience": "A scientific journal publishing research on how the brain and biological systems guide social behavior.",
+      "upside-down test": "An experiment comparing recognition accuracy of images right-side up versus inverted to assess perceptual processing.",
+      "upright advantage": "The cognitive benefit of recognizing faces or bodies significantly better right-side up than upside down.",
+      "body image": "A person's subjective thoughts, feelings, and perceptions regarding their own physical appearance.",
+      "thatcher illusion": "A phenomenon where flipped facial features appear grotesque upright but look deceptively normal when upside down.",
+      "thatcherised": "Altered so that specific facial features, such as eyes and mouth, are turned upside down.",
+      "brain stimulation": "The application of electrical currents to the scalp to temporarily modulate brain activity and perception.",
+      "placebo": "An inactive control treatment that mimics the physical sensations of brain stimulation without delivering sustained current."
+    }
+  }
 }

@@ -12,12 +12,16 @@
   "title": {
     "en": "Physicist Claims We Will Find Gravitons Before Dark Matter",
     "vi": "Nhà Vật Lý Khẳng Định Chúng Ta Sẽ Tìm Thấy Graviton Trước Vật Chất Tối",
-    "fr": "Un physicien affirme que nous détecterons les gravitons avant la matière noire"
+    "fr": "Un physicien affirme que nous détecterons les gravitons avant la matière noire",
+    "de": "Physiker behauptet: Wir finden Gravitonen vor der Dunklen Materie",
+    "es": "Un físico afirma que hallaremos gravitones antes que materia oscura"
   },
   "hook": {
     "en": "Physicists have long struggled to merge quantum mechanics and gravity. While the hunt for dark matter dominates modern physics, one scientist is building a prototype detector to find the elusive graviton, a theoretical particle that could bridge this massive scientific gap.",
     "vi": "Các nhà vật lý từ lâu đã đấu tranh để hợp nhất cơ học lượng tử và trọng lực. Trong khi cuộc săn lùng vật chất tối chi phối vật lý hiện đại, một nhà khoa học đang chế tạo một mẫu máy dò để tìm kiếm hạt graviton khó nắm bắt, một hạt lý thuyết có thể thu hẹp khoảng cách khoa học khổng lồ này.",
-    "fr": "Les physiciens peinent depuis longtemps à concilier mécanique quantique et gravitation. Alors que la traque de la matière noire domine la physique moderne, un chercheur conçoit un prototype de détecteur afin de débusquer l'insaisissable graviton, une particule théorique susceptible de combler ce fossé scientifique colossal."
+    "fr": "Les physiciens peinent depuis longtemps à concilier mécanique quantique et gravitation. Alors que la traque de la matière noire domine la physique moderne, un chercheur conçoit un prototype de détecteur afin de débusquer l'insaisissable graviton, une particule théorique susceptible de combler ce fossé scientifique colossal.",
+    "de": "Physiker ringen seit Langem damit, die Quantenmechanik mit der Gravitation zu vereinen. Während die Jagd nach Dunkler Materie die moderne Physik beherrscht, baut ein Forscher nun an einem Prototyp-Detektor für das schwer fassbare Graviton – jenes hypothetische Teilchen, das diese fundamentale wissenschaftliche Kluft überbrücken könnte.",
+    "es": "Durante mucho tiempo, la física ha intentado fusionar la mecánica cuántica con la gravedad. Mientras la búsqueda de la materia oscura domina la física moderna, un científico construye un detector prototipo para hallar el esquivo gravitón, una partícula teórica que podría cerrar esta enorme brecha científica."
   },
   "sections": [
     {
@@ -26,7 +30,11 @@
       "body_en": "Quantum physics successfully describes almost every fundamental force except gravity. Traditional assumptions dictated that detecting a single graviton, the hypothetical force carrier of gravity, was completely impossible because gravity only appears significant on massive cosmological scales. However, researchers realized that previous calculations were not optimized, opening a realistic path to isolate individual particles from the vast stream passing through Earth {source}.",
       "body_vi": "Vật lý lượng tử giải thích thành công hầu hết mọi lực cơ bản ngoại trừ trọng lực. Các giả định truyền thống cho rằng việc phát hiện một graviton duy nhất, hạt mang lực giả định của trọng lực, là hoàn toàn bất khả thi vì trọng lực chỉ tỏ ra đáng kể ở các quy mô vũ trụ khổng lồ. Tuy nhiên, các nhà nghiên cứu nhận ra rằng các tính toán trước đây chưa được tối ưu hóa, mở ra con đường thực tế để cô lập từng hạt từ dòng chảy lớn đi qua Trái Đất {source}.",
       "heading_fr": "La particule impossible",
-      "body_fr": "La physique quantique décrit avec brio la quasi-totalité des interactions fondamentales, à l'exception notable de la gravitation. Selon les hypothèses traditionnelles, détecter un unique graviton, le vecteur hypothétique de la gravité, relevait de l'impossible absolu dans la mesure où cette force ne se manifeste puissamment qu'aux échelles cosmologiques géantes. Néanmoins, des chercheurs ont réalisé que les calculs antérieurs n'étaient pas optimisés, ce qui ouvre une voie tangible pour isoler des particules individuelles au sein du flux colossal traversant la Terre {source}."
+      "body_fr": "La physique quantique décrit avec brio la quasi-totalité des interactions fondamentales, à l'exception notable de la gravitation. Selon les hypothèses traditionnelles, détecter un unique graviton, le vecteur hypothétique de la gravité, relevait de l'impossible absolu dans la mesure où cette force ne se manifeste puissamment qu'aux échelles cosmologiques géantes. Néanmoins, des chercheurs ont réalisé que les calculs antérieurs n'étaient pas optimisés, ce qui ouvre une voie tangible pour isoler des particules individuelles au sein du flux colossal traversant la Terre {source}.",
+      "heading_de": "Das unmögliche Teilchen",
+      "body_de": "Die Quantenphysik beschreibt fast jede Grundkraft erfolgreich – außer die Schwerkraft. Lange galt der Nachweis eines einzelnen Gravitons, des hypothetischen Trägerteilchens der Gravitation, als völlig ausgeschlossen, da sich die Schwerkraft erst auf gewaltigen kosmologischen Skalen spürbar bemerkbar macht. Forscher erkannten jedoch, dass bisherige Berechnungen nicht optimiert waren. Dies eröffnet nun einen realistischen Weg, einzelne Teilchen aus dem gigantischen Strom zu isolieren, der die Erde durchdringt {source}.",
+      "heading_es": "La partícula imposible",
+      "body_es": "La física cuántica describe con éxito casi todas las fuerzas fundamentales, excepto la gravedad. Las hipótesis tradicionales dictaban que detectar un único gravitón, el hipotético portador de la interacción gravitatoria, era completamente imposible porque la gravedad solo se manifiesta de forma apreciable a escalas cosmológicas masivas. Sin embargo, los investigadores descubrieron que los cálculos previos no estaban optimizados, lo que abre una vía realista para aislar partículas individuales del inmenso flujo que atraviesa la Tierra {source}."
     },
     {
       "heading_en": "Riding the Tsunami",
@@ -34,7 +42,11 @@
       "body_en": "Much like light waves consist of discrete packets called photons, gravitational waves are composed of countless gravitons exhibiting wave-particle duality. Although these invisible waves wash over our planet constantly like a silent tsunami, a specialized detector can theoretically absorb a single quantum of energy. By measuring this discrete energy change, instruments could capture these elusive particles individually.",
       "body_vi": "Giống như sóng ánh sáng bao gồm các gói rời rạc gọi là hạt photon (*photon*), sóng hấp dẫn (*gravitational wave*) bao gồm vô số hạt graviton (*graviton*) thể hiện tính lưỡng tính sóng hạt (*wave-particle duality*). Mặc dù những sóng vô hình này tràn qua hành tinh của chúng ta liên tục như một cơn sóng thần tĩnh lặng, một thiết bị dò chuyên dụng về mặt lý thuyết có thể hấp thụ một lượng năng lượng duy nhất. Bằng cách đo lường sự thay đổi năng lượng rời rạc này, các dụng cụ có thể bắt giữ những hạt khó nắm bắt này một cách riêng lẻ.",
       "heading_fr": "Surfer sur le tsunami",
-      "body_fr": "À l'instar des ondes lumineuses formées de paquets discrets nommés photons, les ondes gravitationnelles se composent d'innombrables gravitons dotés d'une dualité onde-corpuscule. Bien que ces ondulations invisibles submergent constamment notre planète tel un tsunami silencieux, un détecteur spécialisé pourrait en théorie absorber un unique quantum d'énergie. En mesurant cette infime variation discontinue, des instruments parviendraient à capturer individuellement ces particules fuyantes."
+      "body_fr": "À l'instar des ondes lumineuses formées de paquets discrets nommés photons, les ondes gravitationnelles se composent d'innombrables gravitons dotés d'une dualité onde-corpuscule. Bien que ces ondulations invisibles submergent constamment notre planète tel un tsunami silencieux, un détecteur spécialisé pourrait en théorie absorber un unique quantum d'énergie. En mesurant cette infime variation discontinue, des instruments parviendraient à capturer individuellement ces particules fuyantes.",
+      "heading_de": "Auf dem Tsunami reiten",
+      "body_de": "Ähnlich wie Lichtwellen aus diskreten Energiepaketen namens Photonen bestehen, setzen sich auch Gravitationswellen aus zahllosen Gravitonen zusammen, die dem Welle-Teilchen-Dualismus unterliegen. Obwohl diese unsichtbaren Wellen wie ein stiller Tsunami unentwegt über unseren Planeten hinwegspülen, kann ein spezialisierter Detektor theoretisch ein einzelnes Energiequant absorbieren. Indem Messgeräte diese diskrete Energieänderung erfassen, ließen sich die flüchtigen Teilchen einzeln nachweisen.",
+      "heading_es": "Cabalgar el tsunami",
+      "body_es": "Del mismo modo que las ondas de luz se componen de paquetes discretos llamados fotones, las ondas gravitacionales están formadas por incontables gravitones que presentan dualidad onda-partícula. Aunque estas ondas invisibles barren nuestro planeta de manera incesante como un tsunami silencioso, un detector especializado podría, en teoría, absorber un único cuanto de energía. Al medir este cambio discreto de energía, los instrumentos podrían captar estas escurridizas partículas de forma individual."
     },
     {
       "heading_en": "A Faster Timeline",
@@ -42,7 +54,11 @@
       "body_en": "While building the monumental LIGO observatory took four decades from initial conception to discovery, developing a graviton detector should proceed much faster. Because foundational technologies and methodologies already exist, scientists estimate that a working machine could materialize within a decade or two, potentially leading to a groundbreaking discovery before researchers ever solve the mystery of dark matter.",
       "body_vi": "Trong khi việc xây dựng đài quan sát LIGO (*LIGO*) hoành tráng mất bốn thập kỷ từ khi phác thảo ban đầu đến khi phát hiện, việc phát triển máy dò graviton sẽ diễn ra nhanh hơn nhiều. Bởi vì các công nghệ và phương pháp nền tảng đã tồn tại, các nhà khoa học ước tính một cỗ máy hoạt động được có thể hình thành trong vòng một hoặc hai thập kỷ, có khả năng dẫn đến một phát hiện mang tính bước ngoặt trước khi các nhà nghiên cứu giải được bí ẩn về vật chất tối (*dark matter*).",
       "heading_fr": "Un calendrier plus rapide",
-      "body_fr": "S'il a fallu quatre décennies entre la conception initiale du gigantesque observatoire LIGO et sa première détection, la mise au point d'un détecteur de gravitons promet d'être bien plus véloce. Les technologies de base et les méthodologies existant déjà, les scientifiques estiment qu'un appareil opérationnel pourrait voir le jour d'ici une ou deux décennies, ouvrant la voie à une découverte historique bien avant que le mystère de la matière noire ne soit résolu."
+      "body_fr": "S'il a fallu quatre décennies entre la conception initiale du gigantesque observatoire LIGO et sa première détection, la mise au point d'un détecteur de gravitons promet d'être bien plus véloce. Les technologies de base et les méthodologies existant déjà, les scientifiques estiment qu'un appareil opérationnel pourrait voir le jour d'ici une ou deux décennies, ouvrant la voie à une découverte historique bien avant que le mystère de la matière noire ne soit résolu.",
+      "heading_de": "Ein schnellerer Zeitplan",
+      "body_de": "Während der Bau des monumentalen LIGO-Observatoriums von der ersten Idee bis zum eigentlichen Nachweis vier Jahrzehnte in Anspruch nahm, dürfte die Entwicklung eines Graviton-Detektors deutlich schneller voranschreiten. Da grundlegende Technologien und Verfahren bereits existieren, rechnen Wissenschaftler damit, dass ein funktionsfähiger Apparat binnen ein oder zwei Jahrzehnten Wirklichkeit werden könnte – und damit womöglich für eine bahnbrechende Entdeckung sorgt, noch bevor das Rätsel um die Dunkle Materie gelöst ist.",
+      "heading_es": "Un plazo más breve",
+      "body_es": "Aunque la construcción del monumental observatorio LIGO requirió cuatro décadas desde su concepción inicial hasta el descubrimiento, el desarrollo de un detector de gravitones debería avanzar con mayor rapidez. Dado que las tecnologías y metodologías fundamentales ya existen, la comunidad científica estima que una máquina funcional podría materializarse en una o dos décadas, lo que abriría la puerta a un descubrimiento revolucionario antes de que se resuelva el enigma de la materia oscura."
     }
   ],
   "references": [
@@ -78,7 +94,9 @@
   "keyPoint": {
     "en": "Gravitons are like hidden musical notes buried inside a roaring symphony orchestra. Can you identify one theoretical concept in modern physics that challenges your current understanding of the universe?",
     "vi": "Graviton giống như những nốt nhạc ẩn giấu chìm bên trong một dàn nhạc giao hưởng ầm ầm. Bạn có thể xác định một khái niệm lý thuyết trong vật lý hiện đại thách thức sự hiểu biết hiện tại của bạn về vũ trụ không?",
-    "fr": "Les gravitons s'apparentent à des notes de musique enfouies au cœur d'un orchestre symphonique assourdissant. Sauriez-vous citer un concept théorique de la physique contemporaine qui bouscule votre vision de l'Univers ?"
+    "fr": "Les gravitons s'apparentent à des notes de musique enfouies au cœur d'un orchestre symphonique assourdissant. Sauriez-vous citer un concept théorique de la physique contemporaine qui bouscule votre vision de l'Univers ?",
+    "de": "Gravitonen gleichen verborgenen Tönen, die im tosenden Klang eines Sinfonieorchesters untergehen. Kannst du ein theoretisches Konzept der modernen Physik benennen, das dein derzeitiges Verständnis des Universums herausfordert?",
+    "es": "Los gravitones son como notas musicales ocultas en el estruendo de una orquesta sinfónica. ¿Puede identificar algún concepto teórico de la física moderna que desafíe su comprensión actual del universo?"
   },
   "applySteps": {
     "en": [
@@ -95,6 +113,16 @@
       "Découvrez les théories actuelles de la gravité quantique pour cerner les limites du modèle standard.",
       "Renseignez-vous sur le fonctionnement des observatoires d'ondes gravitationnelles comme LIGO par interférométrie laser.",
       "Parcourez des publications scientifiques récentes consacrées à la quête de la matière noire et des gravitons."
+    ],
+    "de": [
+      "Aktuelle Theorien zur Quantengravitation studieren, um die Grenzen des Standardmodells besser zu verstehen.",
+      "Recherchieren, wie Gravitationswellendetektoren wie LIGO mittels Laserinterferometrie arbeiten.",
+      "Neuere wissenschaftliche Fachartikel über die Suche nach Dunkler Materie und Gravitonen lesen."
+    ],
+    "es": [
+      "Leer sobre las teorías actuales de gravedad cuántica para comprender las limitaciones del modelo estándar.",
+      "Investigar cómo operan los detectores de ondas gravitacionales como LIGO mediante interferometría láser.",
+      "Explorar artículos científicos recientes que debatan sobre la búsqueda de materia oscura y gravitones."
     ]
   },
   "coverCandidates": [
@@ -133,7 +161,9 @@
       "keyPoint",
       "applySteps",
       "en",
-      "fr"
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -177,6 +207,35 @@
       "gravité quantique": "Cadre théorique tentant de réconcilier la relativité générale avec la physique quantique.",
       "modèle standard": "Théorie décrivant l'ensemble des particules élémentaires et leurs interactions, hors gravitation.",
       "interférométrie laser": "Procédé optique mesurant d'infimes variations de distance grâce aux interférences de faisceaux lumineux."
+    },
+    "de": {
+      "quantenmechanik": "Theorie der Physik, die das Verhalten von Materie und Energie auf kleinster atomarer Ebene beschreibt.",
+      "graviton": "Hypothetisches Elementarteilchen, das die Gravitationskraft im Rahmen der Quantenmechanik übertragen soll.",
+      "quantenphysik": "Bereich der Physik, der die Phänomene und Gesetze der Mikrowelt von Atomen und Elementarteilchen erforscht.",
+      "trägerteilchens": "Boson, das eine der fundamentalen Naturkräfte zwischen Teilchen überträgt.",
+      "photonen": "Elementare Quanten oder Lichtteilchen elektromagnetischer Strahlung.",
+      "gravitationswellen": "Wellenartige Stauchungen und Dehnungen der Raumzeit, verursacht durch extreme kosmische Massenbewegungen.",
+      "welle-teilchen-dualismus": "Quantenphysikalisches Prinzip, wonach Teilchen zugleich Eigenschaften von Wellen und Objekten aufweisen.",
+      "energiequant": "Kleinste, nicht weiter teilbare Portion von Energie in einem Quantensystem.",
+      "ligo-observatoriums": "Große Forschungsanlage, die Gravitationswellen mithilfe extrem präziser Laser erfasst.",
+      "quantengravitation": "Theorie, die versucht, die Schwerkraft mit den Prinzipien der Quantenphysik in Einklang zu bringen.",
+      "standardmodells": "Theoretisches Gerüst der Teilchenphysik, das fundamentale Teilchen und Grundkräfte mit Ausnahme der Gravitation beschreibt.",
+      "laserinterferometrie": "Optisches Messverfahren, das Interferenzmuster von Laserstrahlen nutzt, um winzigste Streckenänderungen nachzuweisen."
+    },
+    "es": {
+      "mecánica cuántica": "Rama de la física que estudia el comportamiento de la materia y la energía a escalas subatómicas.",
+      "materia oscura": "Forma hipotética de materia que no emite luz y compone gran parte de la masa del universo.",
+      "gravitón": "Partícula elemental hipotética que transmitiría la fuerza de la gravedad según la física cuántica.",
+      "fuerzas fundamentales": "Interacciones básicas de la naturaleza: gravedad, electromagnetismo y fuerzas nucleares fuerte y débil.",
+      "escalas cosmológicas": "Dimensiones espaciales inmensas correspondientes a la estructura general del universo y sus galaxias.",
+      "fotones": "Partículas elementales o cuantos indivisibles de luz y de radiación electromagnética.",
+      "ondas gravitacionales": "Ondulaciones en el tejido del espacio-tiempo producidas por eventos cósmicos de gran violencia.",
+      "dualidad onda-partícula": "Principio cuántico por el cual entidades físicas muestran comportamientos tanto de ondas como de partículas.",
+      "cuanto de energía": "Cantidad mínima e indivisible de energía que puede absorber o emitir un sistema físico.",
+      "ligo": "Observatorio diseñado para detectar ondas gravitacionales cósmicas mediante haces de luz láser.",
+      "gravedad cuántica": "Campo teórico que busca unificar la mecánica cuántica con la relatividad general.",
+      "modelo estándar": "Teoría fundamental de la física que describe las partículas subatómicas y sus interacciones conocidas.",
+      "interferometría láser": "Técnica de medición de alta precisión basada en la interferencia de ondas de luz láser."
     }
   }
 }

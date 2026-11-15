@@ -124,9 +124,25 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "poets for science": "An organization connecting poets and scientists to address environmental issues through collaborative art.",
+      "environmental crises": "Severe environmental damage and disruptions threatening ecosystems and human wellbeing.",
+      "climate assessments": "Comprehensive scientific evaluations detailing global climate data, trends, and projections.",
+      "natural metaphors": "Literary comparisons using elements of the natural world to explain concepts.",
+      "mycorrhizal networks": "Underground fungal webs that connect plant roots to share nutrients and communicate.",
+      "biological systems": "Complex networks formed by living organisms interacting within their physical environments.",
+      "emotional toll": "The psychological distress, sadness, and exhaustion resulting from confronting environmental crises.",
+      "verse": "Poetic form or rhymed and metered creative writing.",
+      "lichen": "A symbiotic composite organism of fungi and algae that slowly weathers rock into soil.",
+      "activism": "Action to bring about social, political, or environmental change.",
+      "intractable global challenges": "Extremely difficult or stubborn problems that seem impossible to solve."
+    }
   }
 }
