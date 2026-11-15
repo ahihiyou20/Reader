@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/331/1080/1920",
+    "url": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Thong Vo",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ",
+    "wide": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@titi_wanderer?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -86,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Các cuộc thăm dò trước bầu cử giữa kỳ năm 2026 phần lớn đã thành công trong việc chỉ ra xu hướng cử tri, mặc dù vẫn tồn tại một số sai số ở các cuộc đua cụ thể. Tỷ lệ tín nhiệm thấp của tổng thống và các vấn đề kinh tế là những yếu tố chính định hình tâm lý cử tri. Dù các con số dự báo chưa hoàn toàn chính xác ở mọi bang, các cuộc thăm dò tổng thể vẫn phản ánh chính xác xu hướng chung của kết quả bầu cử."
+    "vi": "Các cuộc thăm dò trước bầu cử giữa kỳ năm 2026 phần lớn đã thành công trong việc chỉ ra xu hướng cử tri, mặc dù vẫn tồn tại một số sai số ở các cuộc đua cụ thể. Tỷ lệ tín nhiệm thấp của tổng thống và các vấn đề kinh tế là những yếu tố chính định hình tâm lý cử tri. Dù các con số dự báo chưa hoàn toàn chính xác ở mọi bang, các cuộc thăm dò tổng thể vẫn phản ánh chính xác xu hướng chung của kết quả bầu cử.",
+    "fr": "Lors des élections de mi-mandat de 2026, les instituts de sondage ont su anticiper avec justesse la vague démocrate, rompant ainsi avec plusieurs déconvenues passées. Même si la précision millimétrée a parfois fait défaut dans certaines courses locales, les moyennes globales ont fidèlement reflété l’état de l’électorat. Ce scrutin a par ailleurs confirmé deux règles historiques de la politique américaine : la vulnérabilité du parti présidentiel lors des scrutins intermédiaires et le rôle prédictif d’une faible cote de popularité exécutive, alors plombée par le conflit avec l’Iran et la flambée des carburants. L’analyse électorale gagne ainsi à privilégier les moyennes de sondages plutôt qu’une enquête isolée.",
+    "de": "Bei den US-Zwischenwahlen 2026 haben die Wahlforschungsinstitute die politische Stimmung insgesamt treffend erfasst. Zwar fehlte vielen Vorhersagen die letzte Präzision, und der demokratische Zuspruch wurde in manchen Senatsrennen unterschätzt, doch die Gesamttendenz erwies sich als zutreffend. Bekannte politische Gesetzmäßigkeiten bestätigten sich erneut: Die Regierungspartei erlitt typische Verluste, während Donald Trumps schwache Zustimmungswerte infolge des Konflikts mit dem Iran und hoher Spritpreise das Ergebnis vorzeichneten. Trotz fortbestehender methodischer Herausforderungen bei Stichproben blieben gravierende Fehlprognosen die Ausnahme. Zusammengenommen bildeten die Umfragedurchschnitte den Wählerwillen beachtlich zuverlässig ab.",
+    "es": "¿Cumplieron las encuestas con su propósito en las elecciones intermedias de 2026? A pesar de ciertas discrepancias puntuales en contiendas reñidas, los sondeos anticiparon con acierto el avance demócrata y el descontento hacia el oficialismo republicano. Los resultados confirmaron dos tendencias históricas clave: el desgaste electoral del partido gobernante y el impacto directo de la baja aprobación presidencial en las urnas. Aunque algunos márgenes subestimaron el apoyo a la oposición, los promedios generales reflejaron adecuadamente la dirección del electorado. Lejos de exigir una precisión milimétrica, este desempeño demostró que los sondeos continúan siendo herramientas valiosas para evaluar el clima político."
   },
   "keyPoint": {
     "en": "Polls are like weather forecasts that track the general direction of a storm rather than predicting exact raindrops. How can you weigh multiple forecasts before making a decision?",
@@ -108,10 +113,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-06T03:32:57.521Z"
+  "publishAt": "2026-11-06T03:32:57.521Z",
+  "glossary": {
+    "en": {
+      "preelection polls": "Surveys conducted before an election to gauge voter preferences and anticipate outcomes.",
+      "opinion surveys": "Studies measuring public views by sampling a portion of the population.",
+      "polling misfire": "A significant failure of preelection polls to correctly predict election outcomes.",
+      "midterms": "United States congressional elections held halfway through a president's four-year term.",
+      "approval ratings": "Percentage measures of public support for how an elected leader performs their job.",
+      "realclearpolitics": "A media organization that aggregates and averages political polling data.",
+      "low-propensity voters": "Citizens who are registered to vote but participate infrequently in elections.",
+      "polling averages": "Combined calculations of multiple polls to provide a more reliable estimate.",
+      "outliers": "Poll findings that diverge significantly from the general consensus or trend.",
+      "sampling": "The process of selecting representative individuals from a larger population for a survey.",
+      "election cycle": "The recurring timeframe during which campaigns, fundraising, and voting take place.",
+      "electorate": "The entire group of citizens eligible to vote in an election."
+    }
+  }
 }

@@ -97,11 +97,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "/covers/extreme-poverty.webp",
+    "url": "https://images.unsplash.com/photo-1422651973727-50f085c0b26f?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjExfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Matt Benson",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/rHbob_bEsSs"
+    "sourceUrl": "https://unsplash.com/photos/rHbob_bEsSs",
+    "wide": "https://images.unsplash.com/photo-1422651973727-50f085c0b26f?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjExfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@mattgyver?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 1,

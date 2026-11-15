@@ -49,11 +49,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/331/1080/1920",
+    "url": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Thong Vo",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ",
+    "wide": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@titi_wanderer?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -99,7 +101,10 @@
     ]
   },
   "summary": {
-    "vi": "Tiếng thét trong phim kinh dị thường bị coi là phản xạ tự nhiên, nhưng thực chất đó là một màn trình diễn giọng nói nghệ thuật đầy công phu. Thuật ngữ \"nữ hoàng la hét\" ra đời từ thập niên 1970 để chỉ những nữ diễn viên chuyên đóng vai người sống sót, với Fay Wray là người tiên phong từ năm 1933. Theo thời gian, hình tượng này đã chuyển dịch từ những nạn nhân dễ bị tổn thương sang các nhân vật mạnh mẽ, có quyền lực và đa dạng hơn về sắc tộc, minh chứng rằng tiếng thét trên màn ảnh luôn là một công cụ biểu đạt nghệ thuật giàu sức ảnh hưởng."
+    "vi": "Tiếng thét trong phim kinh dị thường bị coi là phản xạ tự nhiên, nhưng thực chất đó là một màn trình diễn giọng nói nghệ thuật đầy công phu. Thuật ngữ \"nữ hoàng la hét\" ra đời từ thập niên 1970 để chỉ những nữ diễn viên chuyên đóng vai người sống sót, với Fay Wray là người tiên phong từ năm 1933. Theo thời gian, hình tượng này đã chuyển dịch từ những nạn nhân dễ bị tổn thương sang các nhân vật mạnh mẽ, có quyền lực và đa dạng hơn về sắc tộc, minh chứng rằng tiếng thét trên màn ảnh luôn là một công cụ biểu đạt nghệ thuật giàu sức ảnh hưởng.",
+    "fr": "Longtemps réduit à une simple réaction instinctive, le cri dans le cinéma d’horreur relève en réalité d’une véritable performance vocale. Popularisée dès les années 1930 par Fay Wray dans King Kong, la figure de la « scream queen » a façonné l’histoire du genre. Si ces héroïnes ont d’abord incarné des victimes vulnérables ou sexualisées, des actrices comme Jamie Lee Curtis ou Lin Shaye ont fait évoluer cet archétype vers des personnages plus complexes et puissants, défiant les stéréotypes d’âge. Aujourd’hui, une relève diversifiée, portée notamment par Jenna Ortega, redéfinit ce rôle emblématique : loin d’un banal réflexe, le cri féminin s’affirme comme un puissant instrument d’émancipation et d’affirmation artistique.",
+    "de": "Im Horrorkino gilt der Schrei oft als bloßer Schreckensreflex, doch dahinter verbirgt sich anspruchsvolle stimmliche Schauspielkunst. Seit Fay Wrays legendärer Tonaufnahme für King Kong (1933) prägen sogenannte Scream-Queens das Genre. Was einst als Darbietung hilfloser Opfer begann, wandelte sich über Ikonen wie Jamie Lee Curtis grundlegend: Schauspielerinnen wie Lin Shaye brachen mit Alters- und Schönheitskonventionen und verliehen ihren Figuren Autorität und Handlungsstärke. Eine neue Generation um Jenna Ortega und Mia Goth erweitert dieses Erbe heute durch größere Diversität und psychologische Tiefe. Der filmische Schrei hat sich damit von einem Zeichen der Verwundbarkeit zu einem mächtigen Ausdruck weiblicher Selbstbestimmung entwickelt.",
+    "es": "El grito en el cine de terror suele reducirse erróneamente a una reacción refleja, pero constituye una genuina disciplina vocal con profundo impacto psicológico. Desde los orígenes sonoros con Fay Wray hasta figuras icónicas como Jamie Lee Curtis, la llamada «scream queen» ha dejado una huella decisiva. Lejos del simple papel de víctima indefensa, intérpretes como Lin Shaye han redefinido el arquetipo aportando autoridad y madurez, mientras que actrices actuales como Jenna Ortega incorporan mayor diversidad. ¿Es el chillido una mera muestra de vulnerabilidad? Lejos de ello, hoy encarna una expresión artística de poder, resistencia y control narrativo."
   },
   "keyPoint": {
     "en": "Like a musical instrument playing a high note, a cinematic scream is an intentional art form that triggers deep primal reactions. [p:How can you appreciate the hidden vocal skill behind your next favorite movie scene?]",
@@ -121,10 +126,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-01T02:16:24.452Z"
+  "publishAt": "2026-11-01T02:16:24.452Z",
+  "glossary": {
+    "en": {
+      "scream queen": "A female actor famous for prominent roles in horror films, particularly portraying extreme fear, peril, or survival.",
+      "sonic marker": "A distinctive sound used in cinema to signal a particular emotion, theme, or genre convention.",
+      "silent scream": "A visual portrayal of terrified screaming in early cinema before the development of synchronized sound.",
+      "non-linguistic vocalization": "A vocal sound conveying meaning or emotion without the use of words or formal language.",
+      "subcortical mechanisms": "Deep, primitive brain structures that automatically recognize danger and trigger immediate survival reflexes.",
+      "wilhelm scream": "A famous stock sound effect of a man screaming, widely reused across hundreds of films.",
+      "aria of agonies": "A varied repertoire of recorded vocal screams and moans created for a film soundtrack.",
+      "progenitor": "A pioneering figure whose early work originates and defines a lasting archetype or tradition.",
+      "final girl": "A horror movie trope describing the last surviving female character who confronts the villain.",
+      "camp": "An aesthetic style characterized by deliberate theatricality, exaggerated drama, and kitschy humor.",
+      "psychic medium": "An individual believed to communicate with spirits or perceive paranormal forces.",
+      "cultural zeitgeist": "The dominant cultural spirit, ideas, and general mood defining a particular generation or era."
+    }
+  }
 }

@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Blood Test Reveals Alzheimer's Risk Years Before Symptoms Emerge",
-    "vi": "Xét nghiệm máu tiết lộ nguy cơ Alzheimer nhiều năm trước khi xuất hiện triệu chứng"
+    "vi": "Xét nghiệm máu tiết lộ nguy cơ Alzheimer nhiều năm trước khi xuất hiện triệu chứng",
+    "fr": "Un test sanguin révèle le risque d'Alzheimer des années avant les symptômes",
+    "de": "Bluttest zeigt Alzheimer-Risiko Jahre vor den ersten Symptomen",
+    "es": "Un análisis de sangre revela el riesgo de alzhéimer años antes de los síntomas"
   },
   "hook": {
     "en": "A new international study demonstrates that measuring specific blood biomarkers can predict cognitive decline long before memory problems appear. Researchers found that elevated protein levels strongly correlate with future impairment risks, offering a promising window for early intervention {source}.",
-    "vi": "Một nghiên cứu quốc tế mới chứng minh rằng việc đo lường các dấu ấn sinh học trong máu cụ thể có thể dự đoán sự suy giảm nhận thức rất lâu trước khi các vấn đề về trí nhớ xuất hiện. Các nhà nghiên cứu phát hiện ra rằng nồng độ protein tăng cao có mối tương đối mạnh mẽ với các rủi ro suy giảm trong tương lai, mang lại một cơ hội đầy hứa hẹn cho việc can thiệp sớm {source}."
+    "vi": "Một nghiên cứu quốc tế mới chứng minh rằng việc đo lường các dấu ấn sinh học trong máu cụ thể có thể dự đoán sự suy giảm nhận thức rất lâu trước khi các vấn đề về trí nhớ xuất hiện. Các nhà nghiên cứu phát hiện ra rằng nồng độ protein tăng cao có mối tương đối mạnh mẽ với các rủi ro suy giảm trong tương lai, mang lại một cơ hội đầy hứa hẹn cho việc can thiệp sớm {source}.",
+    "fr": "Une nouvelle étude internationale démontre que le dosage de biomarqueurs sanguins spécifiques peut prédire le déclin cognitif bien avant l'apparition des troubles de la mémoire. Les chercheurs ont constaté qu'un taux élevé de protéines est étroitement corrélé au risque futur de déficience, offrant une perspective prometteuse pour une intervention précoce {source}.",
+    "de": "Eine neue internationale Studie zeigt, dass die Bestimmung bestimmter Biomarker im Blut einen kognitiven Abbau vorhersagen kann, lange bevor Gedächtnisprobleme auftreten. Forschende fanden heraus, dass erhöhte Proteinwerte stark mit dem künftigen Risiko für Beeinträchtigungen korrelieren, was ein vielversprechendes Zeitfenster für frühe Interventionen eröffnet {source}.",
+    "es": "Un nuevo estudio internacional demuestra que medir biomarcadores sanguíneos específicos permite predecir el deterioro cognitivo mucho antes de que aparezcan problemas de memoria. Los investigadores descubrieron que los niveles elevados de ciertas proteínas se correlacionan estrechamente con el riesgo futuro de sufrir dificultades cognitivas, lo que ofrece una ventana prometedora para la intervención temprana {source}."
   },
   "sections": [
     {
       "heading_en": "Tracking Biomarkers",
       "heading_vi": "Theo dõi dấu ấn sinh học",
       "body_en": "Scientists evaluated data from multiple global cohorts involving thousands of older adults with normal thinking abilities. Participants provided blood samples analyzed for phosphorylated tau 217 alongside brain imaging scans. This comprehensive tracking over many years allowed experts to map how biological changes translate into individual vulnerability.",
-      "body_vi": "Các nhà khoa học đã đánh giá dữ liệu từ nhiều nhóm nghiên cứu toàn cầu gồm hàng nghìn người lớn tuổi có khả năng tư duy bình thường. Người tham gia cung cấp mẫu máu để phân tích proteinphosphorylated tau 217 (*phosphorylated tau 217*) kết hợp với quét hình ảnh não bộ. Việc theo dõi toàn diện này trong nhiều năm giúp các chuyên gia vạch ra cách các thay đổi sinh học chuyển thành tính dễ bị tổn thương của cá nhân."
+      "body_vi": "Các nhà khoa học đã đánh giá dữ liệu từ nhiều nhóm nghiên cứu toàn cầu gồm hàng nghìn người lớn tuổi có khả năng tư duy bình thường. Người tham gia cung cấp mẫu máu để phân tích proteinphosphorylated tau 217 (*phosphorylated tau 217*) kết hợp với quét hình ảnh não bộ. Việc theo dõi toàn diện này trong nhiều năm giúp các chuyên gia vạch ra cách các thay đổi sinh học chuyển thành tính dễ bị tổn thương của cá nhân.",
+      "heading_fr": "Suivi des biomarqueurs",
+      "body_fr": "Des scientifiques ont analysé les données de plusieurs cohortes internationales regroupant des milliers d'adultes âgés aux facultés cognitives normales. Les participants ont fourni des échantillons sanguins dosés pour la protéine tau phosphorylée 217, complétés par des examens d'imagerie cérébrale. Ce suivi approfondi sur de nombreuses années a permis aux experts de cartographier la façon dont les altérations biologiques se traduisent par une vulnérabilité individuelle.",
+      "heading_de": "Biomarker im Blick",
+      "body_de": "Wissenschaftler werteten Daten aus mehreren weltweiten Kohorten mit Tausenden älteren Erwachsenen mit normaler kognitiver Leistungsfähigkeit aus. Die Teilnehmenden stellten Blutproben zur Verfügung, die neben bildgebenden Verfahren des Gehirns auf phosphoryliertes Tau-217 analysiert wurden. Diese umfassende Beobachtung über viele Jahre hinweg ermöglichte es Fachleuten abzubilden, wie sich biologische Veränderungen in eine individuelle Anfälligkeit übersetzen.",
+      "heading_es": "Seguimiento de biomarcadores",
+      "body_es": "La comunidad científica evaluó datos de múltiples cohortes globales que incluían a miles de adultos mayores con capacidades cognitivas normales. Los participantes proporcionaron muestras de sangre analizadas para detectar tau fosforilada 217, junto con exploraciones de neuroimagen. Este seguimiento exhaustivo durante muchos años permitió a los expertos cartografiar cómo los cambios biológicos se traducen en vulnerabilidad individual."
     },
     {
       "heading_en": "Risk Probabilities",
       "heading_vi": "Xác suất rủi ro",
       "body_en": "Individuals displaying very high biomarker quantities faced significant probabilities of developing cognitive impairment over specific timeframes. While the estimated likelihood reached notable percentages within five and ten years, experts noted that long-term predictions contained fewer observations, making those specific timelines less certain.",
-      "body_vi": "Những cá nhân hiển thị lượng dấu ấn sinh học rất cao phải đối mặt với xác suất đáng kể phát triển tình trạng suy giảm nhận thức trong các khung thời gian cụ thể. Mặc dù khả năng ước tính đạt tỷ lệ đáng chú ý trong vòng năm và mười năm, các chuyên gia lưu ý rằng các dự đoán dài hạn chứa ít quan sát hơn, khiến các mốc thời gian cụ thể đó kém phần chắc chắn hơn."
+      "body_vi": "Những cá nhân hiển thị lượng dấu ấn sinh học rất cao phải đối mặt với xác suất đáng kể phát triển tình trạng suy giảm nhận thức trong các khung thời gian cụ thể. Mặc dù khả năng ước tính đạt tỷ lệ đáng chú ý trong vòng năm và mười năm, các chuyên gia lưu ý rằng các dự đoán dài hạn chứa ít quan sát hơn, khiến các mốc thời gian cụ thể đó kém phần chắc chắn hơn.",
+      "heading_fr": "Probabilités de risque",
+      "body_fr": "Les individus présentant de très fortes concentrations de biomarqueurs présentaient une probabilité significative de développer un déclin cognitif selon des échéances précises. Bien que la probabilité estimée atteigne des pourcentages notables à l'horizon de cinq et dix ans, les experts soulignent que les projections à plus long terme reposent sur moins d'observations, ce qui rend ces échéances plus incertaines.",
+      "heading_de": "Risikowahrscheinlichkeiten",
+      "body_de": "Personen mit sehr hohen Biomarkerkonzentrationen wiesen ein signifikantes Risiko auf, innerhalb bestimmter Zeiträume kognitive Beeinträchtigungen zu entwickeln. Während die geschätzte Wahrscheinlichkeit binnen fünf und zehn Jahren beträchtliche Prozentwerte erreichte, gaben Experten zu bedenken, dass langfristige Vorhersagen auf weniger Beobachtungen beruhten, was diese Zeiträume weniger verlässlich macht.",
+      "heading_es": "Probabilidades de riesgo",
+      "body_es": "Las personas con concentraciones muy elevadas de biomarcadores afrontaron probabilidades significativas de desarrollar deterioro cognitivo en plazos determinados. Aunque la probabilidad estimada alcanzó porcentajes notables en cinco y diez años, los expertos señalaron que las predicciones a largo plazo contaban con menos observaciones, lo que resta certeza a esos cronogramas específicos."
     },
     {
       "heading_en": "Current Limitations",
       "heading_vi": "Hạn chế hiện tại",
       "body_en": "The predictive value of this protein remained robust even after researchers adjusted for traditional genetic factors and brain plaques. Despite these encouraging results, professionals currently advise against routine screening because disease-modifying treatments for asymptomatic populations remain unavailable outside of clinical trials.",
-      "body_vi": "Giá trị dự đoán của loại protein này vẫn vững chắc ngay cả sau khi các nhà nghiên cứu điều chỉnh các yếu tố di truyền truyền thống và mảng bám não (*brain plaques*). Bất chấp những kết quả đáng khích lệ này, các chuyên gia hiện khuyên không nên tầm soát định kỳ vì các phương pháp điều trị làm thay đổi bệnh cho dân số không có triệu chứng vẫn chưa có sẵn bên ngoài các thử nghiệm lâm sàng."
+      "body_vi": "Giá trị dự đoán của loại protein này vẫn vững chắc ngay cả sau khi các nhà nghiên cứu điều chỉnh các yếu tố di truyền truyền thống và mảng bám não (*brain plaques*). Bất chấp những kết quả đáng khích lệ này, các chuyên gia hiện khuyên không nên tầm soát định kỳ vì các phương pháp điều trị làm thay đổi bệnh cho dân số không có triệu chứng vẫn chưa có sẵn bên ngoài các thử nghiệm lâm sàng.",
+      "heading_fr": "Limites actuelles",
+      "body_fr": "La valeur prédictive de cette protéine est restée robuste, même après ajustement par les chercheurs pour les facteurs génétiques traditionnels et les plaques cérébrales. Malgré ces résultats encourageants, les professionnels déconseillent actuellement le dépistage de routine, car les traitements modificateurs de la maladie pour les personnes asymptomatiques ne sont pas disponibles en dehors des essais cliniques.",
+      "heading_de": "Aktuelle Grenzen",
+      "body_de": "Die Vorhersagekraft dieses Proteins erwies sich auch dann als robust, wenn Forschende klassische genetische Faktoren und Plaques im Gehirn berücksichtigten. Trotz dieser ermutigenden Ergebnisse raten Fachkreise derzeit von routinemäßigen Screenings ab, da krankheitsmodifizierende Therapien für Personen ohne Symptome außerhalb klinischer Studien noch nicht verfügbar sind.",
+      "heading_es": "Limitaciones actuales",
+      "body_es": "El valor predictivo de esta proteína se mantuvo sólido incluso después de ajustar factores genéticos tradicionales y placas cerebrales. A pesar de estos resultados alentadores, los profesionales desaconsejan actualmente el cribado sistemático, ya que los tratamientos modificadores de la enfermedad para poblaciones asintomáticas aún no están disponibles fuera de los ensayos clínicos."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/724/1080/1920",
+    "url": "https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Nelly Volkovich",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/ZSMgNjYrHRM"
+    "sourceUrl": "https://unsplash.com/photos/ZSMgNjYrHRM",
+    "wide": "https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@nelly?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Just as a weather forecast helps you prepare for an incoming storm by packing an umbrella, understanding biological risk markers helps you focus on healthy lifestyle habits today. Could proactive wellness routines protect your cognitive future?",
-    "vi": "Giống như dự báo thời tiết giúp bạn chuẩn bị cho cơn bão sắp tới bằng cách mang theo ô, việc hiểu các dấu hiệu rủi ro sinh học giúp bạn tập trung vào thói quen lối sống lành mạnh ngay hôm nay. Liệu các thói quen chăm sóc sức khỏe chủ động có thể bảo vệ tương lai nhận thức của bạn?"
+    "vi": "Giống như dự báo thời tiết giúp bạn chuẩn bị cho cơn bão sắp tới bằng cách mang theo ô, việc hiểu các dấu hiệu rủi ro sinh học giúp bạn tập trung vào thói quen lối sống lành mạnh ngay hôm nay. Liệu các thói quen chăm sóc sức khỏe chủ động có thể bảo vệ tương lai nhận thức của bạn?",
+    "fr": "Tout comme un bulletin météo vous aide à anticiper un orage en prenant un parapluie, comprendre les marqueurs biologiques de risque vous incite à adopter de saines habitudes de vie dès aujourd'hui. Une routine de bien-être proactive pourrait-elle protéger votre avenir cognitif ?",
+    "de": "So wie ein Wetterbericht dir hilft, dich mit einem Regenschirm auf ein aufziehendes Unwetter vorzubereiten, hilft dir das Wissen um biologische Risikomarker, dich schon heute auf gesunde Lebensgewohnheiten zu konzentrieren. Könnten proaktive Gesundheitsroutinen deine kognitive Zukunft schützen?",
+    "es": "Del mismo modo que un pronóstico meteorológico ayuda a prepararse para una tormenta llevando un paraguas, comprender los marcadores de riesgo biológico le permite centrarse hoy en hábitos de vida saludables. ¿Podrían las rutinas proactivas de bienestar proteger su futuro cognitivo?"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Tập thể dục thường xuyên để hỗ trợ sức khỏe não bộ lâu dài.",
       "Duy trì chế độ ăn uống cân bằng giàu thực phẩm bổ dưỡng.",
       "Ưu tiên thói quen ngủ nhất quán vì sức khỏe tổng thể."
+    ],
+    "fr": [
+      "Faire de l'exercice régulièrement pour préserver la santé cérébrale à long terme.",
+      "Adopter une alimentation équilibrée riche en aliments nutritifs.",
+      "Privilégier des horaires de sommeil réguliers pour un bien-être général."
+    ],
+    "de": [
+      "Regelmäßig Sport treiben, um die langfristige Gehirngesundheit zu unterstützen.",
+      "Auf eine ausgewogene Ernährung mit nährstoffreichen Lebensmitteln achten.",
+      "Feste Schlafgewohnheiten für das allgemeine Wohlbefinden priorisieren."
+    ],
+    "es": [
+      "Haga ejercicio con regularidad para favorecer la salud cerebral a largo plazo.",
+      "Mantenga una dieta equilibrada y rica en alimentos nutritivos.",
+      "Priorice hábitos de sueño constantes para el bienestar general."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,79 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "blood biomarkers": "Measurable biological indicators in the bloodstream that reveal the presence or risk of a disease.",
+      "cognitive decline": "A gradual deterioration in mental abilities, such as memory and thinking skills.",
+      "phosphorylated tau 217": "A blood protein biomarker whose elevated levels indicate early brain changes linked to Alzheimer's.",
+      "brain imaging scans": "Diagnostic techniques used to visualize brain structure and identify signs of neurological disease.",
+      "cognitive impairment": "Deficits in thinking, learning, or memory that exceed normal age-related changes.",
+      "genetic factors": "Inherited traits and gene variants that can influence an individual's vulnerability to disease.",
+      "brain plaques": "Abnormal deposits of amyloid protein that accumulate between nerve cells in Alzheimer's disease.",
+      "disease-modifying treatments": "Medications or therapies that target and alter the underlying biological causes of a disease.",
+      "asymptomatic populations": "Groups of individuals who have biological signs of an illness without showing physical symptoms.",
+      "clinical trials": "Controlled research studies evaluating the safety and effectiveness of medical interventions in human participants."
+    },
+    "vi": {
+      "alzheimer": "Bệnh thoái hóa thần kinh tiến triển gây suy giảm trí nhớ và chức năng nhận thức.",
+      "triệu chứng": "Dấu hiệu bệnh lý lâm sàng mà người bệnh cảm nhận hoặc bộc lộ ra ngoài.",
+      "nhận thức": "Khả năng não bộ tiếp nhận, xử lý thông tin, ghi nhớ và đưa ra phán đoán.",
+      "protein": "Đại phân tử sinh học đóng vai trò cấu trúc và chức năng thiết yếu trong cơ thể.",
+      "can thiệp sớm": "Các biện pháp y tế hoặc lối sống được áp dụng sớm nhằm ngăn bệnh tiến triển.",
+      "phosphorylated tau 217": "Dạng biến đổi của protein tau trong máu, dùng làm chỉ dấu nguy cơ bệnh Alzheimer.",
+      "quét hình ảnh": "Kỹ thuật chẩn đoán hình ảnh y khoa nhằm quan sát cấu trúc bên trong não bộ.",
+      "mảng bám não": "Các khối tích tụ protein bất thường giữa các tế bào thần kinh trong bệnh Alzheimer.",
+      "brain plaques": "Thuật ngữ tiếng Anh chỉ các mảng lắng đọng protein gây tổn thương mô não.",
+      "di truyền": "Sự truyền đạt các đặc điểm sinh học hoặc đột biến gen qua các thế hệ.",
+      "tầm soát": "Quy trình kiểm tra y tế để phát hiện mầm bệnh trước khi bộc lộ triệu chứng.",
+      "lâm sàng": "Giai đoạn thăm khám, thử nghiệm hoặc điều trị trực tiếp trên người bệnh thực tế."
+    },
+    "fr": {
+      "biomarqueurs sanguins": "Molécules mesurables dans le sang indiquant un état ou un risque biologique spécifique.",
+      "déclin cognitif": "Diminution progressive des facultés mentales comme la mémoire, le raisonnement ou l'attention.",
+      "cohortes": "Groupes de personnes suivies au cours du temps dans le cadre d'une étude scientifique.",
+      "tau phosphorylée 217": "Protéine mesurable dans le sang servant d'indicateur précoce de la maladie d'Alzheimer.",
+      "imagerie cérébrale": "Examens médicaux permettant de visualiser la structure ou le fonctionnement du cerveau.",
+      "valeur prédictive": "Capacité d'un test médical à anticiper avec exactitude l'apparition future d'une pathologie.",
+      "plaques cérébrales": "Dépôts anormaux de protéines s'accumulant dans les tissus cérébraux.",
+      "dépistage de routine": "Examen médical systématique proposé sans signes cliniques préalables de maladie.",
+      "traitements modificateurs": "Médicaments destinés à freiner ou ralentir la progression biologique d'une maladie.",
+      "asymptomatiques": "Personnes infectées ou atteintes d'une affection mais qui ne présentent aucun symptôme.",
+      "essais cliniques": "Études scientifiques menées chez des volontaires pour évaluer l'efficacité d'un traitement."
+    },
+    "de": {
+      "biomarker": "Messbare biologische Merkmale, die auf normale oder krankhafte Prozesse im Körper hinweisen.",
+      "kognitiven abbau": "Den fortschreitenden Verlust geistiger Fähigkeiten wie Erinnern, Denken und Konzentrieren.",
+      "interventionen": "Gezielte medizinische oder präventive Maßnahmen, um das Auftreten oder Fortschreiten einer Krankheit zu beeinflussen.",
+      "kohorten": "In Studien untersuchte Personengruppen mit gemeinsamen Eigenschaften, die über einen längeren Zeitraum begleitet werden.",
+      "phosphoryliertes tau-217": "Eine veränderte Eiweißform im Blut, die als früher Indikator für Alzheimer gilt.",
+      "bildgebenden verfahren": "Technische Untersuchungsmethoden wie MRT oder PET, die das Gehirn und seine Strukturen bildlich darstellen.",
+      "kognitive beeinträchtigungen": "Einschränkungen der geistigen Leistungsfähigkeit, etwa beim Erinnern, Denken oder bei der Orientierung.",
+      "plaques": "Eiweißablagerungen im Gehirn, die als charakteristisches Kennzeichen einer Alzheimer-Erkrankung gelten.",
+      "screenings": "Systematische Reihenuntersuchungen zur Früherkennung bestimmter Krankheiten bei Menschen ohne Symptome.",
+      "krankheitsmodifizierende therapien": "Behandlungen, die an den Krankheitsursachen ansetzen, um das Fortschreiten einer Erkrankung zu bremsen.",
+      "klinischer studien": "Wissenschaftliche Untersuchungen zur Wirksamkeit und Sicherheit von Behandlungsmethoden an Patientinnen und Patienten."
+    },
+    "es": {
+      "biomarcadores sanguíneos": "Indicadores biológicos medibles en la sangre que revelan el estado de salud o la presencia de enfermedades.",
+      "deterioro cognitivo": "Disminución de capacidades mentales como la memoria, la atención o el razonamiento respecto a niveles previos.",
+      "intervención temprana": "Acciones médicas o terapéuticas aplicadas en fases iniciales para frenar o modificar la evolución patológica.",
+      "cohortes globales": "Grupos de personas de diversos países seguidos en investigaciones para comparar resultados y evolución clínica.",
+      "tau fosforilada 217": "Proteína anómala detectable en sangre vinculada a la formación de lesiones cerebrales típicas del alzhéimer.",
+      "neuroimagen": "Técnicas que obtienen imágenes detalladas del cerebro para evaluar su anatomía, actividad o anomalías patológicas.",
+      "placas cerebrales": "Acumulaciones anormales de proteínas entre las neuronas que interfieren con el funcionamiento cerebral.",
+      "cribado sistemático": "Pruebas diagnósticas aplicadas de forma generalizada a una población sin síntomas aparentes de enfermedad.",
+      "tratamientos modificadores": "Terapias orientadas a ralentizar o alterar el avance subyacente de un trastorno biológico, no solo sus síntomas.",
+      "ensayos clínicos": "Estudios científicos en seres humanos para evaluar la eficacia y seguridad de intervenciones médicas o fármacos."
+    }
   }
 }

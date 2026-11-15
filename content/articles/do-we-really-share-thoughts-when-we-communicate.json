@@ -44,11 +44,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/255/1080/1920",
+    "url": "https://images.unsplash.com/27/grass-trek.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Jon Ottosson",
+    "author": "Jon Flobrant",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/Xg1e5bR_bL4"
+    "sourceUrl": "https://unsplash.com/photos/Xg1e5bR_bL4",
+    "wide": "https://images.unsplash.com/27/grass-trek.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jonflobrant?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

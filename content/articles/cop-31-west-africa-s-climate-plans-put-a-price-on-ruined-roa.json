@@ -41,11 +41,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/955/1080/1920",
+    "url": "https://images.unsplash.com/photo-1422651973727-50f085c0b26f?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjExfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Matt Benson",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/rHbob_bEsSs"
+    "sourceUrl": "https://unsplash.com/photos/rHbob_bEsSs",
+    "wide": "https://images.unsplash.com/photo-1422651973727-50f085c0b26f?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjExfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@mattgyver?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -91,7 +93,10 @@
     ]
   },
   "summary": {
-    "vi": "Nghiên cứu về các chính sách khí hậu tại Burkina Faso, Ghana, Nigeria, Senegal và Sierra Leone cho thấy các kế hoạch hiện tại chủ yếu tập trung vào thiệt hại hạ tầng và nông nghiệp có thể đo lường bằng tiền. Tuy nhiên, các tổn thất về văn hóa, sức khỏe tinh thần và mối liên kết cộng đồng thường bị bỏ quên. Việc ghi nhận những mất mát vô hình này sẽ giúp các chính phủ đưa ra quyết định hỗ trợ phù hợp hơn, đồng thời cải thiện khả năng tiếp cận các quỹ tài chính quốc tế dành cho ứng phó biến đổi khí hậu."
+    "vi": "Nghiên cứu về các chính sách khí hậu tại Burkina Faso, Ghana, Nigeria, Senegal và Sierra Leone cho thấy các kế hoạch hiện tại chủ yếu tập trung vào thiệt hại hạ tầng và nông nghiệp có thể đo lường bằng tiền. Tuy nhiên, các tổn thất về văn hóa, sức khỏe tinh thần và mối liên kết cộng đồng thường bị bỏ quên. Việc ghi nhận những mất mát vô hình này sẽ giúp các chính phủ đưa ra quyết định hỗ trợ phù hợp hơn, đồng thời cải thiện khả năng tiếp cận các quỹ tài chính quốc tế dành cho ứng phó biến đổi khí hậu.",
+    "fr": "Face aux dérèglements climatiques en Afrique de l’Ouest, les plans d’action ciblent avant tout les dommages matériels chiffrables, à l’instar des routes ou des récoltes. Pourtant, les préjudices immatériels demeurent négligés : perte de repères culturels, rupture des liens sociaux et traumatismes psychologiques restent exclus des bilans officiels, alors même qu’ils conditionnent l’accès aux financements internationaux. Pour dépasser la simple réparation d’infrastructures, les gouvernements doivent impliquer directement les populations locales en amont des crises. Documenter le patrimoine non monétaire permettra d’orienter l’aide vers une véritable renaissance communautaire, respectueuse de la dignité humaine.",
+    "de": "Klimapläne in westafrikanischen Staaten wie Ghana oder Senegal konzentrieren sich bisher vor allem auf messbare Schäden an Straßen oder Ernten. Unberücksichtigt bleiben dabei oft immaterielle Folgen wie der Verlust kultureller Stätten, psychische Belastungen oder zerstörte Gemeinschaftsstrukturen. Weil offizielle Schadensberichte über internationale Hilfsgelder und Wiederaufbauprogramme entscheiden, fallen solche unsichtbaren Verluste häufig durch das Raster. Forschende raten den Regierungen daher, bestehende Behörden besser zu vernetzen und lokale Gemeinschaften frühzeitig einzubinden. Indem soziale und kulturelle Werte bereits vor einer Katastrophe systematisch erfasst werden, lässt sich künftige Unterstützung gezielter und bedarfsgerechter gestalten.",
+    "es": "¿Cómo evaluar los daños climáticos que el dinero no puede cuantificar? Los planes frente al cambio climático en África occidental suelen priorizar la reconstrucción de infraestructuras y cultivos, ignorando pérdidas intangibles como el patrimonio cultural, los lazos comunitarios y la salud mental. Al condicionar la ayuda internacional a registros cuantificables, estas dimensiones críticas quedan fuera de las prioridades de recuperación. Para revertir esta situación, los gobiernos deben integrar a las comunidades locales antes de los desastres, identificando sus vínculos sociales y saberes cotidianos. Así, las instituciones existentes podrán coordinar una respuesta integral que no solo repare estructuras físicas, sino que también restaure la dignidad y el tejido social de las poblaciones afectadas."
   },
   "keyPoint": {
     "en": "Think of climate loss like a house fire where insurance pays for the walls, but not for the family photos inside. How can governments expand their damage assessments to include cultural heritage and mental health alongside ruined infrastructure? [p:Measure the invisible losses before disaster strikes].",
@@ -108,10 +113,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-10T04:51:46.812Z"
+  "publishAt": "2026-11-10T04:51:46.812Z",
+  "glossary": {
+    "en": {
+      "cop31": "The 31st United Nations annual climate change conference, held in Türkiye to negotiate global climate action.",
+      "loss and damage": "Unavoidable and irreversible negative impacts of climate change that cannot be prevented, adapted to, or repaired.",
+      "coastal erosion": "The wearing away and loss of coastal land caused by waves, tides, currents, and rising sea levels.",
+      "climate governance": "The institutional policies, legal rules, and decision-making processes used to manage responses to climate change.",
+      "adaptation plans": "Strategic national policies outlining specific actions to adjust to the ongoing and anticipated impacts of climate change.",
+      "cultural erosion": "The gradual loss of a community's shared traditions, cultural heritage, practices, and historical identity.",
+      "non-monetary losses": "Climate disaster impacts that lack a financial price, including emotional trauma, lost heritage, and disrupted relationships.",
+      "civil society": "Collective organisations independent of government and business, including charities and community associations working for the public good.",
+      "social protection": "Government programs and safety nets designed to reduce poverty, vulnerability, and hardship among citizens during crises.",
+      "santiago network": "A UN-backed network connecting vulnerable developing countries with technical experts to address climate-related loss and damage.",
+      "technical assistance": "Specialised practical knowledge, advisory support, and skills provided by experts to help institutions tackle complex problems.",
+      "human mobility": "The movement of people, including displacement, migration, and planned relocation caused by extreme weather or environmental changes."
+    }
+  }
 }

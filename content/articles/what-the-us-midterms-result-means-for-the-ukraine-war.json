@@ -33,11 +33,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/442/1080/1920",
+    "url": "https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Sylwia Bartyzel",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/D2K1UZr4vxk"
+    "sourceUrl": "https://unsplash.com/photos/D2K1UZr4vxk",
+    "wide": "https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@sylwiabartyzel?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -82,7 +84,10 @@
     ]
   },
   "summary": {
-    "vi": "Kết quả bầu cử giữa kỳ tại Mỹ mang lại quyền kiểm soát Quốc hội cho đảng Dân chủ, tạo ra thách thức lớn cho định hướng chính sách đối ngoại của Donald Trump đối với cuộc chiến tại Ukraine. Dù tổng thống nắm giữ nhiều quyền lực trong lĩnh vực này, Quốc hội vẫn có thể gây áp lực đáng kể. Trong khi đó, Nga tìm kiếm cơ hội thông qua các cuộc đàm phán hòa bình, nhưng việc nhượng bộ lãnh thổ vấp phải sự phản đối mạnh mẽ từ các nhà lập pháp Mỹ."
+    "vi": "Kết quả bầu cử giữa kỳ tại Mỹ mang lại quyền kiểm soát Quốc hội cho đảng Dân chủ, tạo ra thách thức lớn cho định hướng chính sách đối ngoại của Donald Trump đối với cuộc chiến tại Ukraine. Dù tổng thống nắm giữ nhiều quyền lực trong lĩnh vực này, Quốc hội vẫn có thể gây áp lực đáng kể. Trong khi đó, Nga tìm kiếm cơ hội thông qua các cuộc đàm phán hòa bình, nhưng việc nhượng bộ lãnh thổ vấp phải sự phản đối mạnh mẽ từ các nhà lập pháp Mỹ.",
+    "fr": "La cuisante défaite des républicains aux élections de mi-mandat affaiblit Donald Trump face à un Congrès désormais contrôlé par les démocrates. Certes, le président conserve d'importantes prérogatives en politique étrangère ; toutefois, sa volonté de réduire le soutien à l'Ukraine se heurte désormais à une opposition résolue. Alors que Moscou pourrait tenter d'exploiter cette vulnérabilité pour promouvoir un accord entre « grandes puissances », la nouvelle majorité parlementaire et une opinion publique américaine très méfiante envers la Russie refusent toute concession territoriale imposée à Kyiv. La marge de manœuvre diplomatique de la Maison-Blanche s'annonce donc particulièrement restreinte.",
+    "de": "Die herben Verluste der Republikaner bei den US-Zwischenwahlen schwächen Donald Trumps politische Handlungsfähigkeit, dürften seinen isolationistischen Kurs jedoch kaum grundlegend ändern. Zwar behält der US-Präsident in der Außenpolitik die maßgebliche Initiative und strebt womöglich rasche Verhandlungen mit Moskau an, doch der erstarkte demokratisch dominierte Kongress kann über Budgetrechte und Kontrollbefugnisse spürbaren Einfluss ausüben. Ein von Trump favorisierter Verständigungsfrieden zulasten Kiews stößt bei den Demokraten sowie Teilen der Bevölkerung, die Russland überwiegend als Gegner betrachten, auf vehementen Widerstand. Trumps Spielraum für weitreichende Zugeständnisse an Wladimir Putin wird damit künftig deutlich enger bemessen sein.",
+    "es": "La contundente derrota del Partido Republicano en las elecciones de medio mandato debilita a Donald Trump frente a un Congreso bajo control demócrata. Aunque el poder ejecutivo retiene amplias facultades en política exterior, el legislativo puede frenar sus iniciativas mediante la supervisión y el control presupuestario. Pese a los intentos de Trump por reducir la ayuda a Ucrania y propiciar un pacto negociado con Rusia, la oposición parlamentaria dificultará cualquier concesión territorial contraria a la soberanía ucraniana. Así, aunque el mandatario busque acelerar un acuerdo de paz, el rumbo del respaldo estadounidense a Kiev enfrentará severos límites institucionales."
   },
   "keyPoint": {
     "en": "US foreign policy is like a heavy vehicle where the president drives and Congress can only tap the brakes. How will changing congressional power affect ongoing military aid to Ukraine?",
@@ -104,10 +109,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-06T03:40:57.521Z"
+  "publishAt": "2026-11-06T03:40:57.521Z",
+  "glossary": {
+    "en": {
+      "midterm elections": "US congressional elections held halfway through a president's four-year term.",
+      "sanctions": "Economic penalties or trade restrictions imposed on a country to compel compliance with international standards.",
+      "subpoena": "To formally order an official to provide testimony or documents to a legislative committee.",
+      "executive branch": "The arm of the US government headed by the president that administers and enforces laws.",
+      "commander-in-chief": "The supreme operational commander of a nation's military forces, held by the US president.",
+      "head of state": "The supreme public and ceremonial representative of an independent nation.",
+      "pew research center": "A nonpartisan American think tank that conducts public opinion polling and demographic research.",
+      "apec": "Asia-Pacific Economic Cooperation, an intergovernmental forum promoting free trade among Pacific Rim economies.",
+      "kremlin": "The Moscow government complex that functions as the executive headquarters of Russia.",
+      "patriot missiles": "Advanced US air defense weapons that intercept incoming enemy aircraft and ballistic missiles.",
+      "ballistic missiles": "Rocket-powered projectiles that follow an unpowered, guided suborbital trajectory to deliver warheads.",
+      "cia": "Central Intelligence Agency, the principal civilian foreign intelligence agency of the US government."
+    }
+  }
 }

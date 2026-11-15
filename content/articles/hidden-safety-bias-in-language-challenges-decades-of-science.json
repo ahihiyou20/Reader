@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/829/1080/1920",
+    "url": "https://images.unsplash.com/photo-1437240443155-612416af4d5a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Drew Hays",
+    "author": "Drew",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0",
+    "wide": "https://images.unsplash.com/photo-1437240443155-612416af4d5a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@dhproductions?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

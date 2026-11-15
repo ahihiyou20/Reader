@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1040/1080/1920",
+    "url": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Rachel Davis",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/tn2rBnvIl9I"
+    "sourceUrl": "https://unsplash.com/photos/tn2rBnvIl9I",
+    "wide": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@rmaedavis?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -86,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết khám phá những tình thế tiến thoái lưỡng nan về đạo đức của các nhà lãnh đạo qua hai tác phẩm kinh điển là sử thi Ramayana của Ấn Độ và truyền thuyết vua Arthur từ nước Anh trung cổ. Cả hai vị vua Rama và Arthur đều phải đối mặt với lựa chọn đau đớn giữa tình cảm cá nhân dành cho người bạn đời và nghĩa vụ duy trì trật tự công lý của vương quốc. Dù cách biệt về thời gian và văn hóa, những câu chuyện này vẫn phản ánh chính xác các cuộc tranh luận hiện đại về quyền lực, trách nhiệm và giới hạn của đạo đức cá nhân trước công chúng."
+    "vi": "Bài viết khám phá những tình thế tiến thoái lưỡng nan về đạo đức của các nhà lãnh đạo qua hai tác phẩm kinh điển là sử thi Ramayana của Ấn Độ và truyền thuyết vua Arthur từ nước Anh trung cổ. Cả hai vị vua Rama và Arthur đều phải đối mặt với lựa chọn đau đớn giữa tình cảm cá nhân dành cho người bạn đời và nghĩa vụ duy trì trật tự công lý của vương quốc. Dù cách biệt về thời gian và văn hóa, những câu chuyện này vẫn phản ánh chính xác các cuộc tranh luận hiện đại về quyền lực, trách nhiệm và giới hạn của đạo đức cá nhân trước công chúng.",
+    "fr": "À travers le *Ramayana* et la légende arthurienne, deux souverains mythiques, Rama et Arthur, sacrifient leur vie affective afin de préserver l’ordre moral de leur royaume. Cette tension universelle entre éthique privée et devoir public éclaire encore les dilemmes contemporains des dirigeants politiques, à l’image des grâces présidentielles récentes accordées par Joe Biden ou Donald Trump. En confrontant loyauté personnelle et exigences civiques, ces récits fondateurs continuent d’interroger notre présent : un dirigeant peut-il dissocier ses devoirs intimes de la justice commune ?",
+    "de": "Sowohl das altindische Epos *Ramayana* als auch die Artussage stellen Herrscher vor ein fundamentales Dilemma: den Konflikt zwischen persönlicher Zuneigung und öffentlicher Pflicht. Rama und König Artus sehen sich gezwungen, ihre Königinnen dem Feuertod zu weihen, um die moralische Glaubwürdigkeit ihrer Rechtsordnung nicht zu untergraben. Diese Zerrissenheit zwischen privater Loyalität und institutioneller Gerechtigkeit besitzt zeitlose Relevanz. Ob bei umstrittenen Begnadigungen durch moderne Staatsoberhäupter oder in zeitgenössischen Romanen über Machtmissbrauch – die alten Mythen liefern zwar keine einfachen Patentrezepte, schärfen jedoch den Blick für die tragischen moralischen Kompromisse von Führungspersönlichkeiten.",
+    "es": "A través del *Ramayana* y la leyenda del rey Arturo, la literatura épica aborda el conflicto entre los afectos personales y las exigencias del deber público. Tanto Rama como Arturo deciden sacrificar a sus reinas en nombre de la justicia y la cohesión social de sus pueblos. Esta encrucijada moral sigue vigente: ¿tienen los gobernantes derecho a una moral privada frente a la ley? Al contrastar estos dilemas milenarios con indultos políticos recientes y ficciones contemporáneas, el texto demuestra que los relatos clásicos no brindan respuestas sencillas, pero continúan iluminando las contradicciones éticas de quienes ejercen el poder."
   },
   "keyPoint": {
     "en": "Like a captain steering a ship through a violent storm, leaders navigate impossible choices between personal loyalty and public duty. [p:Reflect on a recent decision where you balanced personal relationships with strict fairness.] What core values guide your actions when the rules demand a heavy personal sacrifice?",
@@ -108,10 +113,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-08T02:45:52.716Z"
+  "publishAt": "2026-11-08T02:45:52.716Z",
+  "glossary": {
+    "en": {
+      "ramayana": "An ancient Hindu epic recounting prince Rama's quest to rescue his wife Sita from Ravana.",
+      "ayodhya": "The ancient Indian kingdom ruled by Rama as prince and king.",
+      "ravana": "The mythical demon-king who abducted Sita in the Hindu epic Ramayana.",
+      "arthurian legend": "Traditional medieval British stories centered on King Arthur, his knights, and the Round Table.",
+      "round table": "King Arthur's fellowship of knights establishing a system of justice over brute force.",
+      "test by fire": "An ordeal where Sita enters flames to publicly prove her fidelity and virtue.",
+      "ram-rajya": "An ideal state of righteousness and equality before the law established by Rama.",
+      "three worlds": "The cosmological realms of heaven, earth, and underworld before which Rama justifies his actions.",
+      "presidential pardon": "Constitutional authority granted to a president to officially forgive criminal convictions.",
+      "clemency": "Official executive mercy or leniency reducing penalties or forgiving criminal convictions.",
+      "canon": "An established body of literary works traditionally recognized as authoritative cultural classics.",
+      "exposé": "A published journalistic report revealing hidden unethical practices or misconduct."
+    }
+  }
 }

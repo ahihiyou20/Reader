@@ -45,11 +45,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/816/1080/1920",
+    "url": "https://images.unsplash.com/photo-1425315283416-2acc50323ee6?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Jordan McQueen",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/1eWaod96d3k"
+    "sourceUrl": "https://unsplash.com/photos/1eWaod96d3k",
+    "wide": "https://images.unsplash.com/photo-1425315283416-2acc50323ee6?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jordanfmcqueen?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -94,7 +96,10 @@
     ]
   },
   "summary": {
-    "vi": "Kính thiên văn Swift của NASA đã bốc cháy khi tái gia nhập khí quyển sau khi kết thúc sứ mệnh kéo dài hai thập kỷ. Một sứ mệnh cứu hộ thương mại bằng robot mang tên LINK đã được triển khai để nâng quỹ đạo của Swift nhưng thất bại do sự cố hệ thống quay và cạn kiệt nhiên liệu. Sự việc này làm nổi bật những rủi ro và thách thức kỹ thuật lớn trong việc cứu hộ các vệ tinh đang rơi trên quỹ đạo Trái Đất."
+    "vi": "Kính thiên văn Swift của NASA đã bốc cháy khi tái gia nhập khí quyển sau khi kết thúc sứ mệnh kéo dài hai thập kỷ. Một sứ mệnh cứu hộ thương mại bằng robot mang tên LINK đã được triển khai để nâng quỹ đạo của Swift nhưng thất bại do sự cố hệ thống quay và cạn kiệt nhiên liệu. Sự việc này làm nổi bật những rủi ro và thách thức kỹ thuật lớn trong việc cứu hộ các vệ tinh đang rơi trên quỹ đạo Trái Đất.",
+    "fr": "Après deux décennies d'observations cosmiques, le télescope spatial Swift de la NASA s'est désintégré dans l'atmosphère terrestre début novembre 2026. Cette disparition fait suite à l'échec de la mission de sauvetage LINK, développée par Katalyst Space. Victime d'avaries techniques peu après son lancement, l'appareil robotique a épuisé son carburant pour stabiliser sa rotation, ce qui a empêché tout rehaussement d'orbite. Cet épisode met en lumière un défi fondamental de la maintenance en orbite : la moindre anomalie imprévue compromet irrémédiablement des réserves de propulsion très restreintes.",
+    "de": "Nach über zwanzig Jahren im All ist das NASA-Weltraumteleskop Swift im November 2026 in der Erdatmosphäre verglüht. Ein zuvor gestarteter Rettungsversuch mit dem Serviceroboter LINK scheiterte: Durch den Ausfall zweier Reaktionsräder geriet das Rettungsfahrzeug ins Trudeln und verbrauchte beim Abfangen der Rotation so viel Treibstoff, dass die Reserven für das geplante Manöver fehlten. LINK selbst verglühte bereits Wochen zuvor. Der Vorfall unterstreicht die immensen Risiken orbitaler Wartungsmissionen. Unter hohem Zeitdruck entwickelte Rettungssatelliten operieren mit eng kalkulierten Treibstoffbudgets. Unerwartete technische Pannen können dazu führen, dass der Helfer selbst manövrierunfähig wird und die Mission vorzeitig beendet werden muss.",
+    "es": "¿Por qué resulta tan complejo rescatar un satélite en órbita? El telescopio espacial Swift de la NASA se desintegró en la atmósfera en 2026 tras el fracaso de LINK, una nave robótica comercial diseñada por Katalyst Space para elevarlo a una órbita segura. Aunque el vehículo auxiliar logró estabilizar un giro descontrolado provocado por fallas mecánicas, agotó el combustible necesario para completar la captura. Esta experiencia evidencia que la asistencia satelital requiere no solo rapidez de desarrollo, sino también amplias reservas de propelente y redundancia técnica para superar imprevistos sin comprometer la misión."
   },
   "keyPoint": {
     "en": "Think of a rescue mission like a tow truck that burns most of its fuel just reaching a stranded vehicle, leaving nothing for the actual haul. How can future space agencies build better fuel margins into rapid-response satellite rescue programs without increasing launch costs beyond practical limits?",
@@ -116,10 +121,28 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-08T02:47:52.716Z"
+  "publishAt": "2026-11-08T02:47:52.716Z",
+  "glossary": {
+    "en": {
+      "drag": "Atmospheric resistance that slows an orbiting satellite and causes it to lose altitude.",
+      "reentry": "The descent of a spacecraft or satellite back into Earth's atmosphere from space.",
+      "reaction wheels": "Electrically powered spinning wheels inside a spacecraft that control its orientation without consuming fuel.",
+      "propulsion system": "The engines, fuel tanks, and equipment used to steer and move a spacecraft.",
+      "propellant": "Chemical fuel or reaction mass ejected by thrusters to create movement in space.",
+      "electric thrusters": "Spacecraft propulsion devices that use electricity to accelerate propellant for efficient orbital maneuvering.",
+      "servicing spacecraft": "A robotic craft designed to inspect, refuel, repair, or alter the orbit of other satellites.",
+      "fuel budget": "The planned allocation of spacecraft propellant across all scheduled maneuvers and emergency reserves.",
+      "solar activity": "Solar radiation and energetic emissions that heat and expand Earth's upper atmosphere.",
+      "docking plate": "A standardized fixture on a satellite that enables another spacecraft to physically attach to it."
+    }
+  }
 }

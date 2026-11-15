@@ -12,30 +12,54 @@
   ],
   "title": {
     "en": "How a Single Brain Region Controls the Whole-Body Feeling of Sickness",
-    "vi": "Một vùng não duy nhất kiểm soát cảm giác bệnh toàn thân như thế nào"
+    "vi": "Một vùng não duy nhất kiểm soát cảm giác bệnh toàn thân như thế nào",
+    "fr": "Comment une seule région cérébrale gouverne la sensation générale de maladie",
+    "de": "Wie ein einzelnes Gehirnareal das körperweite Krankheitsgefühl steuert",
+    "es": "Cómo una sola región cerebral controla la sensación de malestar general"
   },
   "hook": {
     "en": "When a severe infection hits, your entire body aches and loses its appetite in a state known as sickness syndrome. Scientists have long debated how the brain coordinates this total physical misery, but recent animal research points to a surprising neural hub that generates a universal sense of being unwell.",
-    "vi": "Khi một đợt nhiễm trùng nặng xảy ra, toàn bộ cơ thể bạn đau nhức và mất vị giác trong một trạng thái gọi là hội chứng bệnh lý. Các nhà khoa học từ lâu đã tranh luận về cách bộ não điều phối sự khốn khổ thể xác này, nhưng nghiên cứu mới trên động vật chỉ ra một trung tâm thần kinh đáng ngạc nhiên tạo ra cảm giác không khỏe phổ quát."
+    "vi": "Khi một đợt nhiễm trùng nặng xảy ra, toàn bộ cơ thể bạn đau nhức và mất vị giác trong một trạng thái gọi là hội chứng bệnh lý. Các nhà khoa học từ lâu đã tranh luận về cách bộ não điều phối sự khốn khổ thể xác này, nhưng nghiên cứu mới trên động vật chỉ ra một trung tâm thần kinh đáng ngạc nhiên tạo ra cảm giác không khỏe phổ quát.",
+    "fr": "Lorsqu'une infection sévère survient, le corps tout entier devient douloureux et perd l'appétit, un état connu sous le nom de syndrome de maladie. Les scientifiques ont longtemps débattu de la manière dont le cerveau coordonne cette détresse physique globale, mais des recherches animales récentes mettent en évidence un surprenant centre névralgique qui génère cette sensation universelle de malaise.",
+    "de": "Tritt eine schwere Infektion auf, schmerzt dein ganzer Körper und verliert den Appetit – ein Zustand, der als Krankheitssyndrom bekannt ist. In der Wissenschaft wurde lange darüber debattiert, wie das Gehirn dieses körperliche Elend koordiniert, doch neuere Tierversuche weisen auf einen überraschenden neuronalen Knotenpunkt hin, der ein universelles Unwohlsein erzeugt.",
+    "es": "Cuando sobreviene una infección grave, todo el cuerpo duele y pierde el apetito en un estado conocido como síndrome de malestar. Durante mucho tiempo, la comunidad científica ha debatido cómo coordina el cerebro este sufrimiento físico generalizado, pero investigaciones recientes en animales señalan un sorprendente centro neurálgico que genera una sensación universal de indisposición."
   },
   "sections": [
     {
       "heading_en": "Tracking the Roots of Malaise",
       "heading_vi": "Truy tìm nguồn gốc của sự khó chịu",
       "body_en": "Researchers in Europe modeled inflammatory sickness by injecting mice with a specific immune-signaling compound. The rodents quickly developed fevers, moved slowly, and ate less. Interestingly, their sluggish behavior appeared before fevers peaked, showing that elevated temperature alone did not cause the malaise. Instead, scientists sought the true neural driver behind this overpowering full-body reaction {source}.",
-      "body_vi": "Các nhà nghiên cứu tại châu Âu đã mô phỏng tình trạng viêm bằng cách tiêm một hợp chất báo hiệu miễn dịch vào chuột. Loài gặm nhấm nhanh chóng phát triển cơn sốt, di chuyển chậm chạp và ăn ít hơn. Đáng chú ý, hành vi lờ đờ của chúng xuất hiện trước khi cơn sốt đạt đỉnh, cho thấy nhiệt độ cao không phải là nguyên nhân duy nhất gây ra cảm giác khó chịu này (*malaise*). Thay vào đó, các nhà khoa học đã tìm kiếm động lực thần kinh thực sự đằng sau phản ứng toàn thân áp đảo này {source}."
+      "body_vi": "Các nhà nghiên cứu tại châu Âu đã mô phỏng tình trạng viêm bằng cách tiêm một hợp chất báo hiệu miễn dịch vào chuột. Loài gặm nhấm nhanh chóng phát triển cơn sốt, di chuyển chậm chạp và ăn ít hơn. Đáng chú ý, hành vi lờ đờ của chúng xuất hiện trước khi cơn sốt đạt đỉnh, cho thấy nhiệt độ cao không phải là nguyên nhân duy nhất gây ra cảm giác khó chịu này (*malaise*). Thay vào đó, các nhà khoa học đã tìm kiếm động lực thần kinh thực sự đằng sau phản ứng toàn thân áp đảo này {source}.",
+      "heading_fr": "Retracer les origines du malaise",
+      "body_fr": "Des chercheurs en Europe ont modélisé la maladie inflammatoire en injectant à des souris un composé spécifique de signalisation immunitaire. Les rongeurs ont rapidement développé de la fièvre, ralenti leurs mouvements et diminué leur alimentation. Fait remarquable, leur comportement léthargique s'est manifesté avant le pic fébrile, prouvant que la seule hausse de température n'expliquait pas ce malaise. Les scientifiques se sont dès lors mis en quête du véritable moteur neuronal responsable de cette réaction corporelle envahissante {source}.",
+      "heading_de": "Dem Unwohlsein auf der Spur",
+      "body_de": "Forschende in Europa modellierten entzündliche Erkrankungen, indem sie Mäusen einen spezifischen immunologischen Botenstoff injizierten. Die Nagetiere entwickelten rasch Fieber, bewegten sich träge und fraßen weniger. Interessanterweise trat das verlangsamte Verhalten bereits auf, bevor das Fieber seinen Höchststand erreichte, was zeigte, dass eine erhöhte Temperatur allein das Unwohlsein nicht auslöste. Stattdessen suchte das Forschungsteam nach dem eigentlichen neuronalen Treiber hinter dieser überwältigenden Ganzkörperreaktion {source}.",
+      "heading_es": "En busca del origen del malestar",
+      "body_es": "Un equipo de investigadores en Europa modeló la enfermedad inflamatoria inyectando a ratones un compuesto específico de señalización inmunitaria. Los roedores desarrollaron fiebre rápidamente, se movían con lentitud y comían menos. Curiosamente, su comportamiento aletargado apareció antes de que la fiebre alcanzara su punto máximo, lo que demostró que el aumento de temperatura por sí solo no causaba el malestar. En su lugar, los científicos buscaron el verdadero impulsor neuronal detrás de esta abrumadora reacción de todo el cuerpo {source}."
     },
     {
       "heading_en": "Mapping Neuronal Activity",
       "heading_vi": "Lập bản đồ hoạt động thần kinh",
       "body_en": "Using advanced monitoring techniques, the team recorded electrical activity across hundreds of neurons in multiple brain regions. They focused primarily on the insular cortex, which manages internal body states, and the somatosensory cortex, which handles physical sensations. Analyzing these firing patterns revealed that the insular cortex predicted sickness far more effectively than other areas.",
-      "body_vi": "Sử dụng các kỹ thuật theo dõi tiên tiến, nhóm nghiên cứu đã ghi lại hoạt động điện của hàng trăm tế bào thần kinh ở nhiều vùng não bộ. Họ tập trung chủ yếu vào vỏ não đảo (*insular cortex*), nơi quản lý các trạng thái nội tạng bên trong, và vỏ não cảm giác somatosensory, khu vực xử lý các cảm giác thể chất. Việc phân tích các mô hình kích hoạt này cho thấy vỏ não đảo dự đoán tình trạng bệnh tật hiệu quả hơn nhiều so với các vùng khác."
+      "body_vi": "Sử dụng các kỹ thuật theo dõi tiên tiến, nhóm nghiên cứu đã ghi lại hoạt động điện của hàng trăm tế bào thần kinh ở nhiều vùng não bộ. Họ tập trung chủ yếu vào vỏ não đảo (*insular cortex*), nơi quản lý các trạng thái nội tạng bên trong, và vỏ não cảm giác somatosensory, khu vực xử lý các cảm giác thể chất. Việc phân tích các mô hình kích hoạt này cho thấy vỏ não đảo dự đoán tình trạng bệnh tật hiệu quả hơn nhiều so với các vùng khác.",
+      "heading_fr": "Cartographier l'activité neuronale",
+      "body_fr": "Grâce à des techniques de surveillance avancées, l'équipe a enregistré l'activité électrique de centaines de neurones répartis dans plusieurs régions du cerveau. Elle s'est principalement concentrée sur le cortex insulaire, qui gère les états corporels internes, et sur le cortex somatosensoriel, chargé des sensations physiques. L'analyse de ces profils de décharge a révélé que le cortex insulaire prédisait l'état de maladie bien plus efficacement que les autres zones.",
+      "heading_de": "Kartierung neuronaler Aktivität",
+      "body_de": "Mithilfe fortschrittlicher Überwachungstechniken zeichnete das Team die elektrische Aktivität von hunderten Neuronen in mehreren Gehirnregionen auf. Der Fokus lag primär auf dem insulären Kortex, der innere Körperzustände reguliert, sowie dem somatosensorischen Kortex, der für körperliche Empfindungen zuständig ist. Die Analyse dieser Aktivitätsmuster ergab, dass der insuläre Kortex Krankheit weitaus zuverlässiger vorhersagte als andere Areale.",
+      "heading_es": "Mapeo de la actividad neuronal",
+      "body_es": "Mediante técnicas avanzadas de monitorización, el equipo registró la actividad eléctrica de cientos de neuronas en múltiples regiones cerebrales. Se centraron principalmente en la corteza insular, que gestiona los estados corporales internos, y en la corteza somatosensorial, que procesa las sensaciones físicas. El análisis de estos patrones de disparo reveló que la corteza insular predecía la enfermedad con mucha mayor eficacia que otras áreas."
     },
     {
       "heading_en": "A Unified Brain State",
       "heading_vi": "Trạng thái não bộ thống nhất",
       "body_en": "This discovery indicates that the insular cortex maintains a comprehensive, big-picture awareness of being sick rather than merely processing separate aches and fevers. Because numerous physiological systems must align for survival during an infection, the brain requires a centralized hub to coordinate motivation, temperature, and behavior into one unified state.",
-      "body_vi": "Khám phá này chỉ ra rằng vỏ não đảo duy trì nhận thức toàn diện về việc bị bệnh thay vì chỉ xử lý riêng lẻ các cơn đau nhức hay sốt. Vì nhiều hệ thống sinh lý phải phối hợp nhịp nhàng để sinh tồn trong thời gian nhiễm trùng, bộ não cần một trung tâm tập trung để điều phối động lực, nhiệt độ và hành vi thành một trạng thái thống nhất."
+      "body_vi": "Khám phá này chỉ ra rằng vỏ não đảo duy trì nhận thức toàn diện về việc bị bệnh thay vì chỉ xử lý riêng lẻ các cơn đau nhức hay sốt. Vì nhiều hệ thống sinh lý phải phối hợp nhịp nhàng để sinh tồn trong thời gian nhiễm trùng, bộ não cần một trung tâm tập trung để điều phối động lực, nhiệt độ và hành vi thành một trạng thái thống nhất.",
+      "heading_fr": "Un état cérébral unifié",
+      "body_fr": "Cette découverte indique que le cortex insulaire maintient une perception globale et intégrée de la maladie au lieu de traiter isolément les courbatures et la fièvre. Étant donné que de multiples systèmes physiologiques doivent s'aligner pour assurer la survie face à une infection, le cerveau a besoin d'un centre névralgique pour coordonner la motivation, la température et le comportement en un état unifié.",
+      "heading_de": "Ein einheitlicher Gehirnzustand",
+      "body_de": "Diese Entdeckung deutet darauf hin, dass der insuläre Kortex ein ganzheitliches Gesamtbild des Krankseins aufrechterhält, anstatt lediglich einzelne Schmerzen und Fieberschübe zu verarbeiten. Da sich bei einer Infektion zahlreiche physiologische Systeme für das Überleben aufeinander abstimmen müssen, benötigt das Gehirn ein zentrales Schaltzentrum, um Motivation, Temperatur und Verhalten in einem einzigen, einheitlichen Zustand zu koordinieren.",
+      "heading_es": "Un estado cerebral unificado",
+      "body_es": "Este descubrimiento indica que la corteza insular mantiene una percepción global e integrada de estar enfermo, en lugar de limitarse a procesar dolores y fiebre de manera aislada. Dado que numerosos sistemas fisiológicos deben alinearse para la supervivencia durante una infección, el cerebro necesita un núcleo centralizado para coordinar la motivación, la temperatura y el comportamiento en un único estado unificado."
     }
   ],
   "references": [
@@ -47,11 +71,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/967/1080/1920",
+    "url": "https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "NASA",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo"
+    "sourceUrl": "https://unsplash.com/photos/NuE8Nu3otjo",
+    "wide": "https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@nasa?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -68,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Think of the insular cortex as the master dashboard of a complex vehicle that lights up entirely when any single engine component falters. How might understanding this centralized brain hub change how we someday treat mysterious, chronic feelings of illness?",
-    "vi": "Hãy coi vỏ não đảo giống như bảng điều khiển chính của một cỗ máy phức tạp sáng rực lên hoàn toàn khi bất kỳ bộ phận động cơ đơn lẻ nào gặp trục trặc. Việc hiểu được trung tâm não bộ tập trung này có thể thay đổi cách chúng ta điều trị các cảm giác bệnh tật mãn tính, bí ẩn trong tương lai như thế nào?"
+    "vi": "Hãy coi vỏ não đảo giống như bảng điều khiển chính của một cỗ máy phức tạp sáng rực lên hoàn toàn khi bất kỳ bộ phận động cơ đơn lẻ nào gặp trục trặc. Việc hiểu được trung tâm não bộ tập trung này có thể thay đổi cách chúng ta điều trị các cảm giác bệnh tật mãn tính, bí ẩn trong tương lai như thế nào?",
+    "fr": "Considérez le cortex insulaire comme le tableau de bord principal d'un véhicule complexe, qui s'illumine tout entier dès qu'un seul composant du moteur défaille. En quoi la compréhension de ce centre cérébral stratégique pourrait-elle transformer notre prise en charge future des malaises chroniques et inexpliqués ?",
+    "de": "Man kann sich den insulären Kortex wie das zentrale Armaturenbrett eines komplexen Fahrzeugs vorstellen, das vollständig aufleuchtet, sobald eine einzelne Motorkomponente ausfällt. Wie könnte das Verständnis dieser Steuerzentrale im Gehirn verändern, wie wir eines Tages rätselhafte, chronische Krankheitsgefühle behandeln?",
+    "es": "Imagine la corteza insular como el panel de control principal de un vehículo complejo que se enciende por completo cuando falla cualquier componente del motor. ¿De qué manera comprender este centro cerebral centralizado podría cambiar cómo tratemos algún día los malestares crónicos e inexplicables?"
   },
   "applySteps": {
     "en": [
@@ -80,6 +109,21 @@
       "Nhận biết sự khó chịu thể chất khi cảm thấy mệt mỏi và nghỉ ngơi hoàn toàn.",
       "Quan sát các tín hiệu của cơ thể mà không cố gắng khắc phục ngay lập tức mọi triệu chứng nhỏ.",
       "Tham khảo ý kiến chuyên gia y tế nếu tình trạng mệt mỏi mãn tính hoặc cảm giác khó chịu kéo dài."
+    ],
+    "fr": [
+      "Prenez acte de l'inconfort physique dès les premiers signes de malaise et reposez-vous complètement.",
+      "Observez les signaux envoyés par votre corps sans chercher à neutraliser immédiatement le moindre symptôme.",
+      "Consultez des professionnels de santé si une fatigue chronique ou un malaise persistant inexpliqué s'installe."
+    ],
+    "de": [
+      "Körperliches Unbehagen bei Unwohlsein wahrnehmen und sich vollständig ausruhen.",
+      "Die Signale deines Körpers beobachten, ohne jedes minimale Symptom sofort beheben zu wollen.",
+      "Medizinisches Fachpersonal konsultieren, falls chronische Erschöpfung oder ein rätselhaftes Unwohlsein anhalten."
+    ],
+    "es": [
+      "Reconozca el malestar físico cuando se sienta indispuesto y descanse por completo.",
+      "Observe las señales de su cuerpo sin intentar solucionar cada síntoma menor al instante.",
+      "Consulte con profesionales de la salud si la fatiga crónica o el malestar inexplicable persisten."
     ]
   },
   "coverCandidates": [
@@ -116,9 +160,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "sickness syndrome": "A coordinated set of bodily and behavioral changes, such as fatigue and appetite loss, during an infection.",
+      "malaise": "A general feeling of physical discomfort, sluggishness, or uneasiness throughout the body.",
+      "inflammatory sickness": "Illness and physiological symptoms triggered by the body's immune response to a pathogen or inflammation.",
+      "immune-signaling compound": "A chemical substance used by the immune system to coordinate defensive reactions and signal distress.",
+      "neural hub": "A centralized brain region that coordinates communication and activity across different neural networks.",
+      "neurons": "Specialized nerve cells that transmit electrical and chemical signals within the brain.",
+      "insular cortex": "A brain region that monitors internal bodily conditions and generates an overall feeling of physical well-being or sickness.",
+      "somatosensory cortex": "A brain region responsible for receiving and processing sensory information related to touch, pain, and temperature.",
+      "firing patterns": "Sequences of electrical impulses emitted by neurons to process and transmit information.",
+      "physiological systems": "Interconnected bodily networks, such as temperature regulation and metabolism, that maintain life.",
+      "chronic fatigue": "Persistent, overwhelming tiredness and lack of energy that does not resolve with rest."
+    },
+    "vi": {
+      "nhiễm trùng": "Tình trạng mầm bệnh như vi khuẩn hoặc virus xâm nhập và sinh sôi trong cơ thể.",
+      "viêm": "Phản ứng bảo vệ của hệ miễn dịch trước tổn thương hoặc sự xâm nhập của mầm bệnh.",
+      "miễn dịch": "Hệ thống phòng vệ sinh học giúp cơ thể chống lại tác nhân gây bệnh ngoại lai.",
+      "malaise": "Cảm giác khó chịu, mệt mỏi và không khỏe toàn thân do bệnh tật gây ra.",
+      "hoạt động điện": "Các tín hiệu xung điện do tế bào thần kinh phát ra để truyền đạt thông tin.",
+      "vỏ não đảo": "Vùng não xử lý tín hiệu nội tạng, cảm xúc và điều hòa cảm giác bệnh toàn thân.",
+      "insular cortex": "Tên tiếng Anh của vỏ não đảo, trung tâm thần kinh xử lý các trạng thái nội tại.",
+      "nội tạng": "Các cơ quan bên trong cơ thể như tim, phổi, dạ dày và ruột.",
+      "somatosensory": "Hệ thần kinh cảm giác thân thể, xử lý các kích thích xúc giác, nhiệt độ và đau.",
+      "sinh lý": "Các hoạt động chức năng tự nhiên diễn ra bên trong cơ thể sinh vật sống.",
+      "mãn tính": "Tình trạng bệnh lý kéo dài dai dẳng hoặc thường xuyên tái phát theo thời gian.",
+      "triệu chứng": "Dấu hiệu bất thường biểu hiện sự rối loạn hoặc bệnh tật trong cơ thể."
+    },
+    "fr": {
+      "syndrome de maladie": "Ensemble de réactions comportementales et physiologiques déclenchées par l'organisme en réponse à une infection.",
+      "signalisation immunitaire": "Communication biochimique entre cellules immunitaires pour coordonner la défense de l'organisme face à une menace.",
+      "pic fébrile": "Moment où la température corporelle atteint son niveau le plus élevé durant un épisode de fièvre.",
+      "moteur neuronal": "Mécanisme ou réseau nerveux central qui déclenche et pilote une réponse physiologique ou comportementale.",
+      "cortex insulaire": "Région cérébrale profonde impliquée dans la perception et la régulation des états internes du corps.",
+      "cortex somatosensoriel": "Aire cérébrale responsable du traitement des sensations tactiles, thermiques et douloureuses provenant du corps.",
+      "profils de décharge": "Motifs temporels des impulsions électriques émises par les neurones pour transmettre des informations.",
+      "centre névralgique": "Structure centrale essentielle qui reçoit, intègre et coordonne de multiples flux d'informations critiques.",
+      "systèmes physiologiques": "Ensembles coordonnés d'organes assurant des fonctions vitales comme l'immunité ou la régulation thermique.",
+      "fatigue chronique": "État d'épuisement persistant et invalidant ne disparaissant pas malgré le repos habituel."
+    },
+    "de": {
+      "krankheitssyndrom": "Ein Zustand mit körperlichen und verhaltensbezogenen Veränderungen wie Abgeschlagenheit und Appetitlosigkeit bei Infektionen.",
+      "neuronalen knotenpunkt": "Ein zentraler Bereich im Nervensystem, der Signale bündelt und komplexe Reaktionen steuert.",
+      "immunologischen botenstoff": "Ein körpereigenes Signalmolekül, das Entzündungsreaktionen und die Abwehr im Immunsystem reguliert.",
+      "neuronalen treiber": "Der auslösende Nervenmechanismus im Gehirn, der eine körperliche Reaktion antreibt.",
+      "neuronen": "Nervenzellen, die elektrische Impulse erzeugen und Informationen im Gehirn weiterleiten.",
+      "insulären kortex": "Eine Hirnregion, die innere Körperempfindungen verarbeitet und das Krankheitsgefühl koordiniert.",
+      "somatosensorischen kortex": "Ein Gehirnareal, das Tast-, Schmerz- und Temperaturreize aus dem Körper verarbeitet.",
+      "aktivitätsmuster": "Typische Abfolgen elektrischer Entladungen von Nervenzellen bei bestimmten Zuständen.",
+      "physiologische systeme": "Funktionelle Einheiten des Körpers wie Kreislauf, Immunsystem oder Stoffwechsel.",
+      "chronische erschöpfung": "Ein dauerhafter Zustand starker Müdigkeit und Kraftlosigkeit, der sich durch Ruhe kaum bessert."
+    },
+    "es": {
+      "síndrome de malestar": "Conjunto coordinado de cambios fisiológicos y de comportamiento que experimenta el cuerpo ante una infección.",
+      "centro neurálgico": "Nodo o región cerebral que coordina e integra diversas señales y respuestas fisiológicas en el organismo.",
+      "señalización inmunitaria": "Mecanismo molecular con el que las defensas del organismo transmiten mensajes para coordinar una respuesta inflamatoria.",
+      "comportamiento aletargado": "Estado de lentitud motora y disminución de actividad física producido como respuesta biológica a la enfermedad.",
+      "impulsor neuronal": "Estructura del sistema nervioso responsable de originar y dirigir una respuesta fisiológica determinada.",
+      "corteza insular": "Región del cerebro encargada de supervisar el estado fisiológico interno y la percepción del bienestar corporal.",
+      "corteza somatosensorial": "Área de la corteza cerebral dedicada a registrar y procesar sensaciones físicas como tacto, dolor y temperatura.",
+      "patrones de disparo": "Secuencias de actividad eléctrica con las que las neuronas codifican y transmiten información en el cerebro.",
+      "sistemas fisiológicos": "Redes integradas de órganos y tejidos que coordinan funciones biológicas indispensables para la supervivencia corporal.",
+      "fatiga crónica": "Sensación de agotamiento físico persistente y debilitante que no desaparece con el descanso habitual."
+    }
   }
 }

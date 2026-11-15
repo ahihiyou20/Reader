@@ -47,11 +47,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/829/1080/1920",
+    "url": "https://images.unsplash.com/photo-1437240443155-612416af4d5a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Drew Hays",
+    "author": "Drew",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0",
+    "wide": "https://images.unsplash.com/photo-1437240443155-612416af4d5a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@dhproductions?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -116,9 +118,26 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "genus": "A biological classification category grouping closely related species sharing common structural characteristics.",
+      "convergent evolution": "The process where unrelated species independently develop similar physical traits because they adapt to similar environments.",
+      "australyichthys aegis": "A newly identified tiny fish species from deep southern Australian waters that closely resembles a seahorse.",
+      "sea muppets": "An informal collective nickname given to Australyichthys aegis and its two close fish relatives.",
+      "brood pouch": "A specialized anatomical pouch on male fish used to carry, protect, and incubate developing eggs.",
+      "coronet": "A distinct, crown-like bony structure perched atop the head of true seahorses.",
+      "specimen": "An individual animal collected and preserved as an example for scientific research and museum reference.",
+      "trawl nets": "Large, weighted fishing nets towed through water or across the seabed to capture marine organisms.",
+      "dredges": "Heavy metal equipment dragged along the ocean floor to scoop up bottom-dwelling marine organisms and sediment.",
+      "invertebrate": "Animals that do not possess or develop a backbone or bony spinal column.",
+      "micro-ct scanning": "A high-resolution three-dimensional X-ray imaging technology used to examine internal skeletal structures non-destructively.",
+      "genetic analysis": "The scientific examination of DNA to determine evolutionary relationships, identity, and biological heritage."
+    }
   }
 }

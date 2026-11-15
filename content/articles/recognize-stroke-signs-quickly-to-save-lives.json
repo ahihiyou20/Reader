@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Recognize Stroke Signs Quickly to Save Lives",
-    "vi": "Nhận Biết Nhanh Dấu Hiệu Đột Quỵ Để Cứu Sống Con Người"
+    "vi": "Nhận Biết Nhanh Dấu Hiệu Đột Quỵ Để Cứu Sống Con Người",
+    "fr": "Reconnaître vite les signes d'un AVC pour sauver des vies",
+    "de": "Schlaganfallzeichen rasch erkennen und Leben retten",
+    "es": "Reconocer a tiempo los signos del accidente cerebrovascular para salvar vidas"
   },
   "hook": {
     "en": "When a blood vessel in the brain blocks or bursts, every minute counts {source}. US Senator Chris Murphy recently experienced a sudden stroke at age 53, highlighting how vital it is for everyone to spot early warning signs {source}. Learning a simple medical acronym can help you protect your loved ones from permanent brain damage and ensure a complete recovery {source}.",
-    "vi": "Khi một mạch máu trong não bị tắc hoặc vỡ, mỗi phút đều vô cùng quý giá {source}. Thượng nghị sĩ Mỹ Chris Murphy gần đây đã trải qua một cơn đột quỵ bất ngờ ở tuổi 53, làm nổi bật tầm quan trọng của việc nhận biết các dấu hiệu cảnh báo sớm {source}. Việc học một từ viết tắt y tế đơn giản có thể giúp bạn bảo vệ những người thân yêu khỏi tổn thương não vĩnh viễn và đảm bảo phục hồi hoàn toàn {source}."
+    "vi": "Khi một mạch máu trong não bị tắc hoặc vỡ, mỗi phút đều vô cùng quý giá {source}. Thượng nghị sĩ Mỹ Chris Murphy gần đây đã trải qua một cơn đột quỵ bất ngờ ở tuổi 53, làm nổi bật tầm quan trọng của việc nhận biết các dấu hiệu cảnh báo sớm {source}. Việc học một từ viết tắt y tế đơn giản có thể giúp bạn bảo vệ những người thân yêu khỏi tổn thương não vĩnh viễn và đảm bảo phục hồi hoàn toàn {source}.",
+    "fr": "Lorsqu'un vaisseau sanguin cérébral se bouche ou se rompt, chaque minute compte {source}. Le sénateur américain Chris Murphy a récemment subi un AVC soudain à l'âge de 53 ans, rappelant à quel point il est vital de repérer les signes avant-coureurs {source}. Retenir un simple acronyme médical peut vous aider à protéger vos proches de séquelles cérébrales irréversibles et à favoriser une rémission complète {source}.",
+    "de": "Wenn ein Blutgefäß im Gehirn verstopft oder platzt, zählt jede Minute {source}. Der US-Senator Chris Murphy erlitt kürzlich im Alter von 53 Jahren einen plötzlichen Schlaganfall – ein Vorfall, der verdeutlicht, wie entscheidend es für jeden ist, frühe Warnzeichen zu erkennen {source}. Ein einfaches medizinisches Akronym zu lernen, kann dir helfen, deine Angehörigen vor dauerhaften Hirnschäden zu bewahren und eine vollständige Genesung zu ermöglichen {source}.",
+    "es": "Cuando un vaso sanguíneo en el cerebro se bloquea o se rompe, cada minuto cuenta {source}. El senador estadounidense Chris Murphy sufrió recientemente un accidente cerebrovascular repentino a los 53 años, lo que resalta lo vital que resulta para todos detectar las señales tempranas de advertencia {source}. Aprender un acrónimo médico sencillo puede ayudarle a proteger a sus seres queridos de un daño cerebral permanente y garantizar una recuperación completa {source}."
   },
   "sections": [
     {
       "heading_en": "Understanding the Threat",
       "heading_vi": "Hiểu Về Mối Đe Dọa",
       "body_en": "Senator Chris Murphy noticed numbness in his limb during a sporting event and sought immediate medical help {source}. Medical experts explain that a stroke occurs when blood circulation to the brain gets interrupted, causing oxygen deprivation {source}. This dangerous medical emergency can result in long-term disability or even death if treatment is delayed {source}.",
-      "body_vi": "Thượng nghị sĩ Chris Murphy đã nhận thấy hiện tượng tê ở chi trong một sự kiện thể thao và nhanh chóng tìm kiếm sự trợ giúp y tế {source}. Các chuyên gia y tế giải thích rằng đột quỵ (*stroke*) xảy ra khi tuần hoàn máu lên não bị gián đoạn, gây thiếu hụt oxy {source}. Tình trạng khẩn cấp y tế nguy hiểm này có thể dẫn đến khuyết tật lâu dài hoặc thậm chí tử vong nếu việc điều trị bị trì hoãn {source}."
+      "body_vi": "Thượng nghị sĩ Chris Murphy đã nhận thấy hiện tượng tê ở chi trong một sự kiện thể thao và nhanh chóng tìm kiếm sự trợ giúp y tế {source}. Các chuyên gia y tế giải thích rằng đột quỵ (*stroke*) xảy ra khi tuần hoàn máu lên não bị gián đoạn, gây thiếu hụt oxy {source}. Tình trạng khẩn cấp y tế nguy hiểm này có thể dẫn đến khuyết tật lâu dài hoặc thậm chí tử vong nếu việc điều trị bị trì hoãn {source}.",
+      "heading_fr": "Comprendre la menace",
+      "body_fr": "Le sénateur Chris Murphy a remarqué un engourdissement dans son membre lors d'un événement sportif et a immédiatement consulté un médecin {source}. Les experts médicaux expliquent qu'un accident vasculaire cérébral survient lorsque la circulation sanguine vers le cerveau est interrompue, provoquant un manque d'oxygène {source}. Cette urgence médicale redoutable peut entraîner une invalidité durable, voire la mort, si la prise en charge tarde {source}.",
+      "heading_de": "Die Bedrohung verstehen",
+      "body_de": "Senator Chris Murphy bemerkte während einer Sportveranstaltung ein Taubheitsgefühl in einer Gliedmaße und suchte unverzüglich medizinische Hilfe {source}. Fachleute erklären, dass ein Schlaganfall auftritt, wenn die Blutzirkulation im Gehirn unterbrochen wird, was zu einem Sauerstoffmangel führt {source}. Dieser gefährliche medizinische Notfall kann bei verzögerter Behandlung zu dauerhafter Behinderung oder sogar zum Tod führen {source}.",
+      "heading_es": "Comprender la amenaza",
+      "body_es": "El senador Chris Murphy notó entumecimiento en una extremidad durante un evento deportivo y buscó atención médica inmediata {source}. Los expertos médicos explican que un accidente cerebrovascular ocurre cuando se interrumpe la circulación sanguínea hacia el cerebro, lo que provoca privación de oxígeno {source}. Esta peligrosa emergencia médica puede provocar discapacidad a largo plazo o incluso la muerte si se retrasa el tratamiento {source}."
     },
     {
       "heading_en": "Spotting Early Signs",
       "heading_vi": "Phát Hiện Dấu Hiệu Sớm",
       "body_en": "The American Stroke Association promotes a helpful six-letter memory tool to identify critical symptoms {source}. The first letters stand for balance loss, sudden vision changes, and facial drooping on one side {source}. Checking if someone cannot properly smile or maintain balance helps [p:spot the danger early] before permanent harm occurs {source}.",
-      "body_vi": "Hiệp hội Đột quỵ Hoa Kỳ quảng bá một công cụ ghi nhớ sáu chữ cái hữu ích để nhận diện các triệu chứng quan trọng {source}. Các chữ cái đầu đại diện cho mất thăng bằng, thay đổi thị lực đột ngột và xệ mặt ở một bên {source}. Việc kiểm tra xem ai đó không thể cười bình thường hay giữ thăng bằng giúp [p:phát hiện nguy hiểm sớm] trước khi tổn thương vĩnh viễn xảy ra {source}."
+      "body_vi": "Hiệp hội Đột quỵ Hoa Kỳ quảng bá một công cụ ghi nhớ sáu chữ cái hữu ích để nhận diện các triệu chứng quan trọng {source}. Các chữ cái đầu đại diện cho mất thăng bằng, thay đổi thị lực đột ngột và xệ mặt ở một bên {source}. Việc kiểm tra xem ai đó không thể cười bình thường hay giữ thăng bằng giúp [p:phát hiện nguy hiểm sớm] trước khi tổn thương vĩnh viễn xảy ra {source}.",
+      "heading_fr": "Repérer les signes précurseurs",
+      "body_fr": "L'American Stroke Association préconise un moyen mnémotechnique utile en six lettres pour identifier les symptômes critiques {source}. Les premières lettres correspondent à la perte d'équilibre, aux troubles visuels soudains et à l'affaissement d'un côté du visage {source}. Vérifier si une personne ne parvient pas à sourire correctement ou à garder l'équilibre aide à [p:déceler le danger au plus tôt] avant l'apparition de lésions irréversibles {source}.",
+      "heading_de": "Frühwarnzeichen erkennen",
+      "body_de": "Die American Stroke Association empfiehlt eine hilfreiche sechsstellige Eselsbrücke, um kritische Symptome zu identifizieren {source}. Die ersten Buchstaben stehen für Gleichgewichtsverlust, plötzliche Sehstörungen und einseitige Gesichtslähmung {source}. Zu prüfen, ob jemand nicht mehr richtig lächeln oder das Gleichgewicht halten kann, hilft dabei, [p:die Gefahr frühzeitig zu erkennen], bevor bleibende Schäden entstehen {source}.",
+      "heading_es": "Identificar los primeros signos",
+      "body_es": "La American Stroke Association promueve una útil regla mnemotécnica de seis letras para identificar síntomas críticos {source}. Las primeras letras corresponden a la pérdida de equilibrio, cambios repentinos en la visión y caída facial en un lado del rostro {source}. Comprobar si una persona no puede sonreír adecuadamente o mantener el equilibrio ayuda a [p:detectar el peligro a tiempo] antes de que ocurra un daño permanente {source}."
     },
     {
       "heading_en": "Taking Fast Action",
       "heading_vi": "Hành Động Nhanh Chóng",
       "body_en": "The remaining letters focus on arm weakness, speech difficulty, and the absolute need to act fast {source}. If one limb drifts downward when raised or speech sounds slurred, urgent action is required {source}. [y:Calling emergency services immediately] gives patients the highest survival rates and minimizes long-term neurological damage {source}.",
-      "body_vi": "Các chữ cái còn lại tập trung vào yếu tay, khó nói và nhu cầu cấp thiết phải hành động nhanh chóng {source}. Nếu một chi bị trôi xuống khi giơ lên hoặc giọng nói bị lắp bắp, cần phải hành động khẩn cấp {source}. [y:Gọi dịch vụ khẩn cấp ngay lập tức] mang lại cho bệnh nhân tỷ lệ sống sót cao nhất và giảm thiểu tổn thương thần kinh lâu dài {source}."
+      "body_vi": "Các chữ cái còn lại tập trung vào yếu tay, khó nói và nhu cầu cấp thiết phải hành động nhanh chóng {source}. Nếu một chi bị trôi xuống khi giơ lên hoặc giọng nói bị lắp bắp, cần phải hành động khẩn cấp {source}. [y:Gọi dịch vụ khẩn cấp ngay lập tức] mang lại cho bệnh nhân tỷ lệ sống sót cao nhất và giảm thiểu tổn thương thần kinh lâu dài {source}.",
+      "heading_fr": "Agir sans délai",
+      "body_fr": "Les lettres suivantes ciblent la faiblesse des bras, les difficultés d'élocution et la nécessité absolue d'agir vite {source}. Si un membre retombe lorsqu'il est levé ou si les propos deviennent confus, une intervention immédiate s'impose {source}. [y:Appeler immédiatement les services d'urgence] offre aux patients les meilleures chances de survie et minimise les séquelles neurologiques à long terme {source}.",
+      "heading_de": "Rasches Handeln erforderlich",
+      "body_de": "Die übrigen Buchstaben heben eine Armschwäche, Sprachschwierigkeiten und die unbedingte Notwendigkeit hervor, schnell zu handeln {source}. Wenn ein angehobener Arm nach unten sinkt oder die Sprache verwaschen klingt, ist sofortige Initiative gefordert {source}. [y:Sofort den Notruf zu wählen] sichert Betroffenen die höchsten Überlebenschancen und minimiert langfristige neurologische Schäden {source}.",
+      "heading_es": "Actuar con rapidez",
+      "body_es": "Las letras restantes se centran en la debilidad en los brazos, la dificultad para hablar y la necesidad absoluta de actuar rápido {source}. Si una extremidad cae hacia abajo al levantarla o el habla suena balbuceante, se requiere una acción urgente {source}. [y:Llamar a los servicios de emergencia de inmediato] ofrece a los pacientes las mayores tasas de supervivencia y minimiza el daño neurológico a largo plazo {source}."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/839/1080/1920",
+    "url": "https://images.unsplash.com/photo-1437915015400-137312b61975?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Abigail  Keenan",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/8jqna7aA-vs"
+    "sourceUrl": "https://unsplash.com/photos/8jqna7aA-vs",
+    "wide": "https://images.unsplash.com/photo-1437915015400-137312b61975?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@akeenster?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of a stroke warning sign like a smoke detector blaring in your home—it demands an instant response before a small spark becomes a raging fire. Can you recall the acronym letters right now to protect someone you love? *Act without hesitation.*",
-    "vi": "Hãy nghĩ về dấu hiệu cảnh báo đột quỵ giống như một chiếc còi báo khói đang kêu vang trong nhà bạn—nó đòi hỏi phản ứng ngay lập tức trước khi một tia lửa nhỏ biến thành đám cháy lớn. Bạn có thể nhớ lại các chữ cái trong từ viết tắt ngay bây giờ để bảo vệ người mình yêu thương không? *Hãy hành động không ngần ngại.*"
+    "vi": "Hãy nghĩ về dấu hiệu cảnh báo đột quỵ giống như một chiếc còi báo khói đang kêu vang trong nhà bạn—nó đòi hỏi phản ứng ngay lập tức trước khi một tia lửa nhỏ biến thành đám cháy lớn. Bạn có thể nhớ lại các chữ cái trong từ viết tắt ngay bây giờ để bảo vệ người mình yêu thương không? *Hãy hành động không ngần ngại.*",
+    "fr": "Considérez les signaux d'alerte d'un AVC comme un détecteur de fumée qui hurle chez vous : ils exigent une réaction immédiate avant qu'une étincelle ne se transforme en incendie dévastateur. Vous souvenez-vous des lettres de cet acronyme dès à présent pour protéger un être cher ? *Agissez sans hésitation.*",
+    "de": "Betrachte ein Schlaganfall-Warnzeichen wie einen schrillenden Rauchmelder in deinem Zuhause – es verlangt eine sofortige Reaktion, bevor aus einem winzigen Funken ein verheerendes Feuer wird. Kannst du dir die Buchstaben des Akronyms jetzt ins Gedächtnis rufen, um einen geliebten Menschen zu schützen? *Handle ohne Zögern.*",
+    "es": "Piense en la señal de advertencia de un accidente cerebrovascular como en un detector de humo que suena con fuerza en su hogar: exige una respuesta inmediata antes de que una pequeña chispa se convierta en un incendio devastador. ¿Puede recordar las letras del acrónimo ahora mismo para proteger a alguien a quien ama? *Actúe sin vacilar.*"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Kiểm tra hiện tượng xệ mặt bằng cách yêu cầu người đó cười.",
       "Kiểm tra sức mạnh của tay bằng cách yêu cầu họ giơ cả hai tay lên.",
       "Gọi dịch vụ khẩn cấp ngay lập tức nếu xuất hiện bất kỳ triệu chứng nào."
+    ],
+    "fr": [
+      "Vérifier l'affaissement du visage en demandant à la personne de sourire.",
+      "Tester la force des bras en lui demandant de lever les deux bras.",
+      "Appeler immédiatement les services d'urgence si le moindre symptôme apparaît."
+    ],
+    "de": [
+      "Auf Gesichtslähmung prüfen, indem die betroffene Person um ein Lächeln gebeten wird.",
+      "Die Armkraft testen, indem man die Person bittet, beide Arme anzuheben.",
+      "Sofort den Notruf wählen, sobald auch nur ein Symptom auftritt."
+    ],
+    "es": [
+      "Compruebe si hay caída facial pidiéndole a la persona que sonría.",
+      "Evalúe la fuerza de los brazos pidiéndole que levante ambos brazos.",
+      "Llame a los servicios de emergencia de inmediato si aparece algún síntoma."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,77 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "blood vessel": "An artery or vein carrying blood to tissues such as the brain.",
+      "stroke": "A medical emergency when blood flow to the brain is blocked or interrupted.",
+      "medical acronym": "An abbreviation formed from first letters to easily memorize medical symptoms or procedures.",
+      "numbness": "A lack of physical sensation or feeling in the body or limbs.",
+      "blood circulation": "The continuous movement of blood through the body and brain.",
+      "oxygen deprivation": "A harmful state where brain tissues lack sufficient oxygen to survive.",
+      "american stroke association": "A national organization dedicated to stroke prevention, education, and patient care.",
+      "facial drooping": "Weakness or sagging on one side of the face from muscle or nerve impairment.",
+      "slurred": "Spoken unclearly or indistinctly due to weakness in speech muscles.",
+      "emergency services": "Urgent public responders, such as paramedics and ambulances, providing immediate medical care.",
+      "neurological damage": "Harm to the brain, nerves, or spinal cord impairing bodily functions."
+    },
+    "vi": {
+      "đột quỵ": "Tình trạng mạch máu não bị tắc hoặc vỡ khiến tế bào não thiếu oxy.",
+      "stroke": "Từ tiếng Anh chỉ bệnh đột quỵ hoặc tai biến mạch máu não.",
+      "mạch máu": "Hệ thống ống dẫn vận chuyển máu đi khắp cơ thể để nuôi sống mô.",
+      "tuần hoàn máu": "Quá trình máu lưu thông liên tục để nuôi dưỡng các cơ quan.",
+      "oxy": "Chất khí thiết yếu duy trì sự sống và hoạt động của tế bào.",
+      "triệu chứng": "Biểu hiện bất thường báo hiệu bệnh tật hoặc tình trạng cơ thể tổn thương.",
+      "thị lực": "Khả năng nhìn rõ và nhận biết các hình ảnh của mắt.",
+      "xệ mặt": "Hiện tượng một bên cơ mặt bị chùng do liệt dây thần kinh.",
+      "mất thăng bằng": "Tình trạng cơ thể không thể giữ vững tư thế ổn định khi đứng hoặc đi.",
+      "thần kinh": "Mạng lưới điều khiển và dẫn truyền tín hiệu vận động, cảm giác cơ thể.",
+      "tổn thương não": "Sự hư hại cấu trúc hoặc suy giảm chức năng tế bào não."
+    },
+    "fr": {
+      "avc": "Arrêt soudain de la circulation sanguine cérébrale causé par un caillot ou une rupture d'artère.",
+      "accident vasculaire cérébral": "Interruption de l'apport sanguin au cerveau, privant les cellules nerveuses de leur oxygène vital.",
+      "signes avant-coureurs": "Manifestations précoces signalant la survenue imminente ou naissante d'un problème médical grave.",
+      "engourdissement": "Diminution ou perte temporaire de la sensibilité tactile dans une région corporelle.",
+      "american stroke association": "Organisation médicale américaine dédiée à la prévention, à l'alerte et au traitement des AVC.",
+      "moyen mnémotechnique": "Méthode d'association facilitant la mémorisation d'une liste de symptômes clés.",
+      "affaissement": "Perte de tonus musculaire entraînant la chute visible d'un côté du visage.",
+      "difficultés d'élocution": "Trouble de l'articulation rendant la prononciation confuse, pâteuse ou difficilement compréhensible.",
+      "séquelles neurologiques": "Altérations fonctionnelles ou cognitives durables causées par la destruction de cellules cérébrales.",
+      "acronyme": "Mot composé des lettres initiales de plusieurs termes pour en faciliter la mémorisation."
+    },
+    "de": {
+      "schlaganfall": "Akute Durchblutungsstörung oder Blutung im Gehirn, die zu einem lebensgefährlichen Ausfall von Hirnfunktionen führt.",
+      "blutgefäß": "Röhrenförmige Leitungsbahn im Körper, die das Gehirn und andere Organe mit sauerstoffreichem Blut versorgt.",
+      "akronym": "Aus Anfangsbuchstaben gebildetes Kurzwort, das hier als einprägsame Gedächtnisstütze für Symptome dient.",
+      "blutzirkulation": "Kontinuierlicher Kreislauf des Blutes, der Gehirnzellen ununterbrochen mit Sauerstoff und lebenswichtigen Nährstoffen versorgt.",
+      "sauerstoffmangel": "Kritischer Versorgungsengpass im Gehirngewebe, der innerhalb weniger Minuten zu irreversiblen Zellschäden führt.",
+      "american stroke association": "US-amerikanische Organisation, die sich der Erforschung, Vorbeugung und Aufklärung über Schlaganfälle widmet.",
+      "eselsbrücke": "Merkregel oder Buchstabensystem, um die Warnzeichen eines Schlaganfalls im Ernstfall schnell abrufen zu können.",
+      "gesichtslähmung": "Plötzliche Schwäche oder Herabhängen einer Gesichtshälfte infolge geschädigter Nervenbahnen im Gehirn.",
+      "neurologische schäden": "Bleibende Funktionsstörungen des Gehirns oder Nervensystems, etwa Lähmungen oder Sprachverlust.",
+      "notruf": "Dringende telefonische Alarmierung von Rettungsdiensten zur schnellstmöglichen Einleitung lebensrettender Behandlungen."
+    },
+    "es": {
+      "accidente cerebrovascular": "Lesión cerebral producida por la interrupción del flujo sanguíneo o por la rotura de un vaso encefálico.",
+      "acrónimo": "Término formado por las iniciales de varias palabras para facilitar su retención o pronunciación conjunta.",
+      "entumecimiento": "Pérdida temporal de la sensibilidad táctil o sensación de hormigueo en una región anatómica.",
+      "extremidad": "Parte apendicular del cuerpo humano, como un brazo o una pierna.",
+      "privación de oxígeno": "Disminución o falta de suministro de oxígeno a los tejidos vitales del cerebro.",
+      "american stroke association": "Organización médica estadounidense centrada en la prevención, el estudio y el tratamiento de los ictus.",
+      "regla mnemotécnica": "Estrategia o técnica estructurada para recordar con facilidad una serie de conceptos o pautas.",
+      "caída facial": "Descenso o debilidad de los músculos en una de las mitades de la cara.",
+      "balbuceante": "Articulación de palabras lenta, arrastrada o poco inteligible a causa de dificultades neuromusculares.",
+      "daño neurológico": "Deterioro o lesión funcional de las neuronas o vías del sistema nervioso."
+    }
   }
 }

@@ -45,11 +45,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/403/1080/1920",
+    "url": "https://images.unsplash.com/42/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Sergey Zolkin",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+    "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y",
+    "wide": "https://images.unsplash.com/42/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@szolkin?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -95,7 +97,10 @@
     ]
   },
   "summary": {
-    "vi": "Bai viet xem xet su khac biet co ban giua cach con nguoi va tri tue nhan tao xu ly thong tin. Con nguoi xay dung nhan thuc thong qua trai nghiem vat ly va kha nang du an truoc hau qua cua hanh dong. Nguoc lai, cac mo hinh ngon ngu lon du doan tu ngu dua tren du lieu chu khong he trai nghiem the gioi thuc. Mac du cac cong nghệ mo hinh the gioi moi giup AI du doan tot hon, ket qua giong nhau khong dong nghia voi qua trình nhan thuc giong nhau."
+    "vi": "Bai viet xem xet su khac biet co ban giua cach con nguoi va tri tue nhan tao xu ly thong tin. Con nguoi xay dung nhan thuc thong qua trai nghiem vat ly va kha nang du an truoc hau qua cua hanh dong. Nguoc lai, cac mo hinh ngon ngu lon du doan tu ngu dua tren du lieu chu khong he trai nghiem the gioi thuc. Mac du cac cong nghệ mo hinh the gioi moi giup AI du doan tot hon, ket qua giong nhau khong dong nghia voi qua trình nhan thuc giong nhau.",
+    "fr": "Bien que les intelligences artificielles génératives imitent la pensée humaine de manière spectaculaire, leur fonctionnement demeure fondamentalement différent du nôtre. L'esprit humain s'appuie sur le traitement prédictif, une constante confrontation entre nos attentes et les retours sensoriels de nos interactions physiques avec le réel. À l'inverse, les modèles de langage prédisent des suites statistiques de mots sans éprouver le monde matériel. Si les nouveaux « modèles d'environnement » dotent les robots de capacités d'anticipation physique, reproduire nos prédictions n'équivaut pas à partager notre compréhension. Il convient ainsi de distinguer la performance d'un système du véritable processus cognitif.",
+    "de": "Greifst du nach einer Tasse, passt dein Gehirn Bewegungen anhand ständiger Sinneseindrücke an. Moderne Sprachmodelle erzeugen zwar verblüffend menschlich wirkende Texte, sagen dabei aber lediglich statistische Muster voraus, ohne die Wirklichkeit tatsächlich zu begreifen. Zwar sollen sogenannte Weltmodelle Robotern helfen, physikalische Konsequenzen vorherzusehen und aus Sinneseindrücken zu lernen. Dennoch trennt das bloße Vorhersagen von Ereignissen eine weite Kluft vom echten menschlichen Denken: Während wir Bedeutungen durch aktives Erleben und körperliche Interaktion formen, imitieren Maschinen bisher lediglich das Resultat dieses Prozesses.",
+    "es": "¿Pueden las máquinas pensar realmente como los seres humanos? Aunque los modelos de lenguaje actuales generan respuestas sofisticadas y predicen patrones con asombrosa precisión, sus mecanismos difieren profundamente del pensamiento humano. Mientras las personas comprendemos el entorno mediante la interacción física, la retroalimentación sensorial y la anticipación constante, la inteligencia artificial se limita a procesar datos sin vivencias corporales. Si bien el desarrollo de modelos del mundo busca dotar a los robots de mayor capacidad predictiva sobre la física de los objetos, obtener resultados similares no equivale a poseer una verdadera comprensión. Distinguir entre rendimiento técnico y procesos cognitivos auténticos resulta fundamental."
   },
   "keyPoint": {
     "en": "Like a navigator relying on a map rather than walking the terrain, AI predicts words without experiencing the physical world. [p:Can an algorithm truly understand what it describes]? Pause to examine how you learn through physical touch and sensory feedback before assuming silicon mimics human thought.",
@@ -117,10 +122,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-07T03:09:04.007Z"
+  "publishAt": "2026-11-07T03:09:04.007Z",
+  "glossary": {
+    "en": {
+      "large language models": "AI systems trained on vast text data to generate and understand humanlike text.",
+      "artificial neural networks": "Computational systems inspired by biological brains that recognize patterns and learn from data.",
+      "neurons": "Specialized nerve cells in the brain that transmit information and coordinate thought processes.",
+      "anticipatory thinking": "The cognitive ability to foresee future events, consequences, and risks before they occur.",
+      "predictive processing": "A theory that the brain continuously predicts sensory inputs and updates beliefs based on errors.",
+      "simulation": "A computer-generated imitation of real-world physical environments used for testing and robotic training.",
+      "dataset": "A structured collection of information used to train and evaluate artificial intelligence algorithms.",
+      "world models": "AI systems designed to predict how physical situations unfold and how actions alter them.",
+      "sensory feedback": "Information received through physical senses like touch or vision that guides and corrects actions.",
+      "jean piaget": "A Swiss psychologist who pioneered theories on how children construct knowledge through physical interactions.",
+      "cognition": "Mental processes through which humans acquire knowledge, perceive information, reason, and understand the world."
+    }
+  }
 }

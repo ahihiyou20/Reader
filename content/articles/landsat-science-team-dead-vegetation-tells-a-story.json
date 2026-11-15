@@ -67,11 +67,12 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://images-assets.nasa.gov/image/2013-1419/2013-1419~medium.jpg",
+    "url": "/covers/landsat-science-team-dead-vegetation-tells-a-story.webp",
     "provider": "nasa",
     "author": "NASA_Kim Shiflett",
     "license": "Public domain (NASA)",
-    "sourceUrl": "https://images.nasa.gov/details/2013-1419"
+    "sourceUrl": "https://images.nasa.gov/details/2013-1419",
+    "wide": "/covers/landsat-science-team-dead-vegetation-tells-a-story-wide.webp"
   },
   "coverCandidates": [
     {

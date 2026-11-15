@@ -52,11 +52,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/680/1080/1920",
+    "url": "https://images.unsplash.com/photo-1422544834386-d121ef7c6ea8?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Milada Vigerova",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/kT0tsYZ2YE0"
+    "sourceUrl": "https://unsplash.com/photos/kT0tsYZ2YE0",
+    "wide": "https://images.unsplash.com/photo-1422544834386-d121ef7c6ea8?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@milada_vigerova?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

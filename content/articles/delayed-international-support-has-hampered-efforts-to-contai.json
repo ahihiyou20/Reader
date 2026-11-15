@@ -48,11 +48,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/331/1080/1920",
+    "url": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Thong Vo",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ",
+    "wide": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@titi_wanderer?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -95,9 +97,37 @@
     "changes": []
   },
   "ai": {
-    "fields": [],
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
     "reviewed": false,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-06T03:34:57.521Z"
+  "publishAt": "2026-11-06T03:34:57.521Z",
+  "glossary": {
+    "en": {
+      "epidemiologist": "A public health specialist who investigates the patterns and causes of diseases in populations.",
+      "african union": "A continental organization of 55 African member states that coordinates political, economic, and health initiatives.",
+      "bodily fluids": "Liquids originating inside human bodies, like blood, saliva, or sweat, that transmit the Ebola virus.",
+      "drc": "Democratic Republic of Congo, a Central African nation currently facing a major Ebola outbreak.",
+      "bundibugyo virus": "A rare species of Ebola virus causing the 2026 outbreak, lacking an approved vaccine or treatment.",
+      "sustained transmission": "Ongoing and continuous person-to-person spread of a virus within a community or population.",
+      "imported case": "An infection acquired in another country or area and carried in by a traveler.",
+      "contact tracing": "Identifying and monitoring people who were exposed to an infected person to prevent further transmission.",
+      "who": "World Health Organization, the United Nations agency coordinating international public health responses.",
+      "protective equipment": "Specialized protective clothing and gear worn by health workers to prevent infection from patients.",
+      "africa cdc": "Africa Centres for Disease Control and Prevention, the continental public health agency supporting African nations.",
+      "tumaini vaccine trial": "A clinical research study testing an experimental vaccine against the Bundibugyo Ebola virus in the DRC."
+    }
+  },
+  "summary": {
+    "vi": "Bùng phát tại Cộng hòa Dân chủ Congo năm 2026, dịch Ebola do chủng Bundibugyo gây ra đã trở thành đợt bùng phát (*outbreak*) lớn thứ hai lịch sử. Do chưa có vắc-xin hay phác đồ điều trị đặc hiệu (*specific treatment*), việc ứng phó gặp nhiều khó khăn vì nguồn hỗ trợ quốc tế đến muộn cùng trở ngại từ xung đột và hạ tầng yếu kém. Kiểm soát dịch bệnh không chỉ đòi hỏi nỗ lực truy vết tiếp xúc (*contact tracing*) xuyên biên giới, mà còn phụ thuộc vào việc xây dựng lòng tin cộng đồng để thực hiện mai táng an toàn (*safe burials*).",
+    "fr": "Déclarée en mai 2026 en République démocratique du Congo, une nouvelle épidémie d'Ebola causée par le virus Bundibugyo touche l'Afrique centrale. Face à cette souche dépourvue de vaccin homologué, les conflits armés et l'enclavement géographique compliquent sévèrement la riposte sanitaire. Tirant les leçons de la crise ouest-africaine de 2014, l'auteur rappelle que la confiance des communautés et des enterrements sécurisés s'avèrent indispensables pour briser les chaînes de transmission. Alors que les financements internationaux arrivent tardivement, l'urgence demeure de fournir un appui logistique direct aux soignants : chaque jour compte pour éviter de nouveaux drames.",
+    "de": "In der Demokratischen Republik Kongo breitet sich der zweitgrößte je dokumentierte Ebola-Ausbruch aus. Da der Bundibugyo-Erreger zirkuliert, für den noch kein zugelassener Impfstoff existiert, verschärft sich die Lage dramatisch. Zwar sagten Geberländer Milliarden zu, doch erreichen Hilfen und Güter die Krisenregion oft zu spät, zusätzlich behindert durch bewaffnete Konflikte und mangelhafte Infrastruktur. Der Autor, ein erfahrener Epidemiologe, warnt vor den Folgen verzögerter internationaler Unterstützung. Aus der westafrikanischen Epidemie von 2014 leitet er ab, dass medizinische Maßnahmen nur greifen, wenn betroffene Gemeinschaften aktiv eingebunden werden und Vertrauen zu den Einsatzkräften fassen. Schnelle, verlässliche Hilfe an vorderster Front sowie eine respektvolle Kooperation mit der Bevölkerung seien daher unverzichtbar, um weitere Todesopfer zu verhindern.",
+    "es": "El actual brote de ébola en la República Democrática del Congo, causado por el virus Bundibugyo y sin vacuna aprobada, ya constituye el segundo más mortífero registrado. Aunque diversos donantes internacionales han prometido miles de millones de dólares, la ayuda global llega con demora y recortes acumulados. ¿Cómo frenar eficazmente su avance transfronterizo? La experiencia demuestra que los fondos resultan insuficientes sin la confianza de las comunidades locales, entierros dignos y acceso a zonas con inseguridad. Urge acelerar suministros, rastreo y ensayos clínicos para evitar mayores pérdidas humanas."
+  }
 }

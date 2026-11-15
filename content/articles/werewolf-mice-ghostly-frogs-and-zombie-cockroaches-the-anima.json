@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/564/1080/1920",
+    "url": "https://images.unsplash.com/photo-1416949929422-a1d9c8fe84af?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Sebastian Boguszewicz",
+    "author": "Hikersbay Hikersbay",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg"
+    "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg",
+    "wide": "https://images.unsplash.com/photo-1416949929422-a1d9c8fe84af?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@hikersbay?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -87,7 +89,10 @@
     ]
   },
   "summary": {
-    "vi": "Thế giới tự nhiên chứa đựng nhiều sinh vật có đặc điểm gợi nhớ đến các nhân vật kinh dị trong dịp Halloween. Từ loài chuột đồng biết hú như người sói, tò vò biến gián thành thây ma cho đến chim mỏ đỏ hút máu và ếch thủy tinh trong suốt như bóng ma, tất cả đều tồn tại ngoài đời thực. Dù mang những tập tính có vẻ đáng sợ, những loài động vật này lại đóng vai trò sinh thái cực kỳ quan trọng, giúp kiểm soát dịch hại, duy trì cân bằng tự nhiên và cung cấp các chỉ số sinh thái quý giá cho môi trường."
+    "vi": "Thế giới tự nhiên chứa đựng nhiều sinh vật có đặc điểm gợi nhớ đến các nhân vật kinh dị trong dịp Halloween. Từ loài chuột đồng biết hú như người sói, tò vò biến gián thành thây ma cho đến chim mỏ đỏ hút máu và ếch thủy tinh trong suốt như bóng ma, tất cả đều tồn tại ngoài đời thực. Dù mang những tập tính có vẻ đáng sợ, những loài động vật này lại đóng vai trò sinh thái cực kỳ quan trọng, giúp kiểm soát dịch hại, duy trì cân bằng tự nhiên và cung cấp các chỉ số sinh thái quý giá cho môi trường.",
+    "fr": "Si l’imaginaire d’Halloween peuple nos nuits de monstres et de revenants, la nature abrite des créatures aux mœurs tout aussi stupéfiantes. Souris hurlant à la lune et insensibles aux venins, guêpes zombifiant des blattes ou oiseaux buveurs de sang : bien des espèces rivalisent avec ces mythes horrifiques. Pourtant, ces adaptations singulières ne relèvent pas du cauchemar, mais de mécanismes biologiques cruciaux. Qu’ils régulent les populations d’invertébrés, modifient les sols ou témoignent de la santé des milieux, ces organismes jouent un rôle écologique indispensable au fonctionnement du monde vivant.",
+    "de": "Obwohl Gruselgestalten wie Werwölfe, Zombies oder Vampire meist der Fantasie entspringen, dürfte es dich überraschen, dass die Natur erstaunliche Parallelen bereithält. Scheinbar furchteinflößende Kreaturen – von mondanheulenden Grashüpfermäusen über zombifizierende Juwelwespen bis hin zu blutsaugenden Vögeln und Geisterfröschen – faszinieren durch extreme Anpassungen. Doch hinter diesen makabren Verhaltensweisen verbergen sich essenzielle ökologische Aufgaben. Ob als Räuber, Bestäuber, biologische Schädlingsbekämpfer oder lebendige Umweltindikatoren: Diese Tiere stabilisieren komplexe Nahrungsketten und prägen ihre Lebensräume nachhaltig. Statt bloßen Horrorklischees zu entsprechen, erweisen sich selbst die unheimlichsten Lebewesen als unverzichtbare Bausteine intakter Ökosysteme.",
+    "es": "¿Sabía que los horrores de Halloween existen en la naturaleza? Diversas especies despliegan conductas fascinantes que recuerdan a criaturas fantásticas: roedores que aúllan a la luna y toleran venenos letales, avispas que zombifican cucarachas o camuflan sus nidos con cadáveres, y escarabajos capaces de disparar químicos hirvientes. Aunque estos hábitos parezcan aterradores, cumplen funciones vitales en el equilibrio biológico. Desde el control biológico de plagas hasta la dispersión de nutrientes y la indicación de la salud ambiental, estos animales demuestran que la realidad ecológica supera a la ficción, aportando beneficios invaluables que perduran mucho más allá de la noche de brujas."
   },
   "keyPoint": {
     "en": "Think of nature as a giant, functioning machine where even the spookiest creatures are essential cogs. How does learning about these real-life monsters change your view of local wildlife? [p:Take a moment to appreciate an insect outdoors today.]",
@@ -109,10 +114,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-01T02:26:24.452Z"
+  "publishAt": "2026-11-01T02:26:24.452Z",
+  "glossary": {
+    "en": {
+      "ecosystem engineers": "Organisms that significantly alter, create, or modify habitats within their environment.",
+      "microhabitats": "Small, localized environments with specific conditions suitable for particular organisms.",
+      "biocontrol": "An organism that naturally manages and controls the population of a pest species.",
+      "ungulates": "Hoofed mammals, such as deer, horses, or cattle.",
+      "bombardier beetles": "Beetles that spray hot, noxious chemical mixtures from their abdomens to deter predators.",
+      "hydroquinone": "A chemical compound that reacts violently with hydrogen peroxide to produce defensive heat.",
+      "luciferin": "A light-emitting chemical compound that produces biological glow in certain organisms.",
+      "luciferase": "An enzyme that catalyzes the light-producing chemical reaction in bioluminescent creatures.",
+      "lampyridae": "The biological family of beetles capable of producing light, commonly known as fireflies.",
+      "centrolenidae": "A family of tropical frogs characterized by translucent, ghost-like bodies.",
+      "sensory camouflage": "Disguising a location by masking sensory signals, such as scent, from potential predators.",
+      "ecological indicators": "Species whose health and numbers reveal environmental changes and human impacts on ecosystems."
+    }
+  }
 }

@@ -49,11 +49,12 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://images-assets.nasa.gov/image/KSC-2015-1297/KSC-2015-1297~medium.jpg",
+    "url": "/covers/media-alert-low-level-flights-to-image-geology-over-western.webp",
     "provider": "nasa",
     "author": "NASA KSC",
     "license": "Public domain (NASA)",
-    "sourceUrl": "https://images.nasa.gov/details/KSC-2015-1297"
+    "sourceUrl": "https://images.nasa.gov/details/KSC-2015-1297",
+    "wide": "/covers/media-alert-low-level-flights-to-image-geology-over-western-wide.webp"
   },
   "coverCandidates": [
     {

@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Physicists Confirm Third Type of Magnetism",
-    "vi": "Các nhà vật lý xác nhận loại từ tính thứ ba"
+    "vi": "Các nhà vật lý xác nhận loại từ tính thứ ba",
+    "fr": "Des physiciens confirment un troisième type de magnétisme",
+    "de": "Physiker bestätigen dritte Art des Magnetismus",
+    "es": "Físicos confirman un tercer tipo de magnetismo"
   },
   "hook": {
     "en": "For ninety years, science recognized only two classes of magnetism. Researchers have now confirmed a third category that bridges both traditional types, opening new paths for electronics and quantum devices.",
-    "vi": "Trong chín mươi thập kỷ, khoa học chỉ công nhận hai lớp từ tính. Các nhà nghiên cứu giờ đây đã xác nhận loại thứ ba kết hợp cả hai loại truyền thống, mở ra con đường mới cho điện tử và thiết bị lượng tử."
+    "vi": "Trong chín mươi thập kỷ, khoa học chỉ công nhận hai lớp từ tính. Các nhà nghiên cứu giờ đây đã xác nhận loại thứ ba kết hợp cả hai loại truyền thống, mở ra con đường mới cho điện tử và thiết bị lượng tử.",
+    "fr": "Pendant quatre-vingt-dix ans, la science n'a reconnu que deux catégories de magnétisme. Des chercheurs viennent de confirmer l'existence d'une troisième classe qui fait le pont entre les deux types traditionnels, ouvrant ainsi de nouvelles voies pour l'électronique et les dispositifs quantiques.",
+    "de": "Neunzig Jahre lang kannte die Wissenschaft nur zwei Arten von Magnetismus. Nun haben Forschende eine dritte Kategorie bestätigt, die beide traditionellen Formen verbindet und neue Wege für Elektronik und Quantengeräte eröffnet.",
+    "es": "Durante noventa años, la ciencia reconoció únicamente dos clases de magnetismo. Ahora, un grupo de investigadores ha confirmado una tercera categoría que une ambos tipos tradicionales, abriendo nuevas vías para la electrónica y los dispositivos cuánticos."
   },
   "sections": [
     {
       "heading_en": "Two Old Categories",
       "heading_vi": "Hai loại từ tính cũ",
       "body_en": "Physicists traditionally divided magnetic materials into ferromagnets and antiferromagnets. Ferromagnets align electron spins in the same direction, while antiferromagnets point neighboring spins in opposite directions so their fields cancel out. Researchers at the SLAC National Accelerator Laboratory found conclusive proof of altermagnetism, a distinct magnetic phase combining traits from both groups . {source}",
-      "body_vi": "Các nhà vật lý học từ lâu chia vật liệu từ tính thành vật liệu sắt từ (ferromagnets) và vật liệu phản sắt từ (antiferromagnets). Vật liệu sắt từ sắp xếp các spin electron cùng hướng, trong khi vật liệu phản sắt từ hướng các spin lân cận ngược chiều nhau để triệt tiêu từ trường. Các nhà nghiên cứu tại Phòng thí nghiệm Máy gia tốc Quốc gia SLAC đã tìm thấy bằng chứng thuyết phục về hiện tượng siêu từ tính (altermagnetism), một pha từ tính riêng biệt kết hợp đặc tính của cả hai nhóm ."
+      "body_vi": "Các nhà vật lý học từ lâu chia vật liệu từ tính thành vật liệu sắt từ (ferromagnets) và vật liệu phản sắt từ (antiferromagnets). Vật liệu sắt từ sắp xếp các spin electron cùng hướng, trong khi vật liệu phản sắt từ hướng các spin lân cận ngược chiều nhau để triệt tiêu từ trường. Các nhà nghiên cứu tại Phòng thí nghiệm Máy gia tốc Quốc gia SLAC đã tìm thấy bằng chứng thuyết phục về hiện tượng siêu từ tính (altermagnetism), một pha từ tính riêng biệt kết hợp đặc tính của cả hai nhóm .",
+      "heading_fr": "Deux catégories historiques",
+      "body_fr": "Les physiciens divisaient traditionnellement les matériaux magnétiques en ferromagnétiques et antiferromagnétiques. Les ferromagnétiques alignent les spins des électrons dans la même direction, tandis que les antiferromagnétiques orientent les spins voisins dans des directions opposées, de sorte que leurs champs s'annulent. Des chercheurs du SLAC National Accelerator Laboratory ont apporté la preuve concluante de l'altermagnétisme, une phase magnétique distincte combinant les caractéristiques de ces deux groupes. {source}",
+      "heading_de": "Zwei alte Kategorien",
+      "body_de": "Traditionell teilten Physiker magnetische Materialien in Ferromagnete und Antiferromagnete ein. Ferromagnete richten die Elektronenspins in dieselbe Richtung aus, während Antiferromagnete benachbarte Spins entgegengesetzt ausrichten, sodass sich ihre Felder aufheben. Forschende am SLAC National Accelerator Laboratory fanden nun eindeutige Beweise für den Altermagnetismus – eine eigenständige magnetische Phase, die Eigenschaften beider Gruppen vereint. {source}",
+      "heading_es": "Dos categorías clásicas",
+      "body_es": "Tradicionalmente, los físicos dividían los materiales magnéticos en ferromagnetos y antiferromagnetos. Los ferromagnetos alinean los espines electrónicos en la misma dirección, mientras que los antiferromagnetos orientan los espines vecinos en sentidos opuestos, de modo que sus campos se anulan. Investigadores del SLAC National Accelerator Laboratory hallaron pruebas concluyentes del altermagnetismo, una fase magnética diferenciada que combina rasgos de ambos grupos. {source}"
     },
     {
       "heading_en": "Revealing Chirality",
       "heading_vi": "Phát hiện tính bất đối xứng",
       "body_en": "The team focused on manganese telluride, a material long classified as a simple antiferromagnet. Using polarized X-rays at the European Synchrotron Radiation Facility, scientists measured how the material scattered light. The results revealed chirality, a distinctive asymmetry in its magnetic structure resembling a spiral staircase. This property provided the missing signature needed to establish the existence of the new magnetic phase.",
-      "body_vi": "Nhóm nghiên cứu tập trung vào telu-rít mangan (*manganese telluride*), một vật liệu từ lâu được phân loại là chất phản sắt từ đơn giản. Bằng cách sử dụng tia X phân cực tại Cơ시설 Bức xạ Đồng bộ Châu Âu, các nhà khoa học đo lường cách vật liệu này tán xạ ánh sáng. Kết quả cho thấy tính bất đối xứng (*chirality*) trong cấu trúc từ tính giống như một chiếc cầu thang xoắn ốc, cung cấp dấu hiệu còn thiếu để xác lập sự tồn tại của pha từ tính mới."
+      "body_vi": "Nhóm nghiên cứu tập trung vào telu-rít mangan (*manganese telluride*), một vật liệu từ lâu được phân loại là chất phản sắt từ đơn giản. Bằng cách sử dụng tia X phân cực tại Cơ시설 Bức xạ Đồng bộ Châu Âu, các nhà khoa học đo lường cách vật liệu này tán xạ ánh sáng. Kết quả cho thấy tính bất đối xứng (*chirality*) trong cấu trúc từ tính giống như một chiếc cầu thang xoắn ốc, cung cấp dấu hiệu còn thiếu để xác lập sự tồn tại của pha từ tính mới.",
+      "heading_fr": "Révéler la chiralité",
+      "body_fr": "L'équipe s'est concentrée sur le tellurure de manganèse, un matériau longtemps classé parmi les simples antiferromagnétiques. À l'aide de rayons X polarisés au European Synchrotron Radiation Facility, les scientifiques ont mesuré la manière dont le matériau diffusait la lumière. Les résultats ont révélé une chiralité, une asymétrie caractéristique au sein de sa structure magnétique semblable à un escalier en colimaçon. Cette propriété a fourni la signature manquante nécessaire pour établir l'existence de cette nouvelle phase magnétique.",
+      "heading_de": "Chiralität enthüllt",
+      "body_de": "Das Team konzentrierte sich auf Mangantellurid, ein Material, das lange Zeit als einfacher Antiferromagnet eingestuft wurde. Mithilfe polarisierter Röntgenstrahlung an der European Synchrotron Radiation Facility maßen Forschende, wie das Material Licht streute. Die Ergebnisse offenbarten Chiralität, eine charakteristische Asymmetrie in seiner magnetischen Struktur, die einer Wendeltreppe ähnelt. Diese Eigenschaft lieferte den fehlenden Nachweis für die Existenz der neuen magnetischen Phase.",
+      "heading_es": "Revelación de la quiralidad",
+      "body_es": "El equipo se centró en el telururo de manganeso, un material catalogado durante mucho tiempo como un antiferromagneto simple. Mediante el uso de rayos X polarizados en el European Synchrotron Radiation Facility, los científicos midieron cómo el material dispersaba la luz. Los resultados revelaron quiralidad, una asimetría distintiva en su estructura magnética semejante a una escalera de caracol. Esta propiedad proporcionó la firma faltante necesaria para confirmar la existencia de la nueva fase magnética."
     },
     {
       "heading_en": "Future Applications",
       "heading_vi": "Ứng dụng trong tương lai",
       "body_en": "Altermagnets feature opposing spins that produce no overall magnetization, protecting data from external magnetic fields. At the same time, their unique electronic structure allows them to generate spin-polarized currents for reading stored information. This combination could help engineers design faster computer memory, more secure quantum devices, and energy-efficient data centers.",
-      "body_vi": "Vật liệu siêu từ tính có các spin đối lập không tạo ra từ tính tổng thể, giúp bảo vệ dữ liệu khỏi các từ trường bên ngoài. Đồng thời, cấu trúc điện tử độc đáo của chúng cho phép tạo ra dòng điện phân cực spin (*spin-polarized currents*) để đọc thông tin lưu trữ. Sự kết hợp này có thể giúp các kỹ sư thiết kế bộ nhớ máy tính nhanh hơn và trung tâm dữ liệu tiết kiệm năng lượng hơn."
+      "body_vi": "Vật liệu siêu từ tính có các spin đối lập không tạo ra từ tính tổng thể, giúp bảo vệ dữ liệu khỏi các từ trường bên ngoài. Đồng thời, cấu trúc điện tử độc đáo của chúng cho phép tạo ra dòng điện phân cực spin (*spin-polarized currents*) để đọc thông tin lưu trữ. Sự kết hợp này có thể giúp các kỹ sư thiết kế bộ nhớ máy tính nhanh hơn và trung tâm dữ liệu tiết kiệm năng lượng hơn.",
+      "heading_fr": "Applications futures",
+      "body_fr": "Les altermagnétiques présentent des spins opposés qui ne produisent aucune aimantation globale, ce qui protège les données des champs magnétiques externes. Parallèlement, leur structure électronique singulière leur permet de générer des courants polarisés en spin afin de lire les informations stockées. Cette combinaison pourrait aider les ingénieurs à concevoir des mémoires informatiques plus rapides, des dispositifs quantiques plus sûrs et des centres de données écoénergétiques.",
+      "heading_de": "Zukünftige Anwendungen",
+      "body_de": "Altermagnete zeichnen sich durch entgegengesetzte Spins aus, die nach außen hin keine Magnetisierung erzeugen, wodurch Daten vor externen Magnetfeldern geschützt sind. Gleichzeitig ermöglicht es ihre einzigartige elektronische Struktur, spinpolarisierte Ströme zum Auslesen gespeicherter Informationen zu erzeugen. Diese Kombination könnte Ingenieuren helfen, schnellere Computerspeicher, sicherere Quantengeräte und energieeffizientere Rechenzentren zu entwickeln.",
+      "heading_es": "Aplicaciones futuras",
+      "body_es": "Los altermagnetos presentan espines opuestos que no generan una magnetización neta, lo que protege los datos frente a campos magnéticos externos. Al mismo tiempo, su singular estructura electrónica les permite generar corrientes polarizadas por espín para leer la información almacenada. Esta combinación podría ayudar a los ingenieros a diseñar memorias informáticas más rápidas, dispositivos cuánticos más seguros y centros de datos energéticamente eficientes."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/903/1080/1920",
+    "url": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Greg Rakozy",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I",
+    "wide": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@grakozy?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Altermagnetism acts like a bridge connecting two separate islands. [p:Can mastering this third magnetic state solve current limits in computer memory?]",
-    "vi": "Siêu từ tính giống như một cây cầu nối liền hai hòn đảo riêng biệt. [p:Liệu việc làm chủ trạng thái từ tính thứ ba này có thể giải quyết các giới hạn hiện tại trong bộ nhớ máy tính không?]"
+    "vi": "Siêu từ tính giống như một cây cầu nối liền hai hòn đảo riêng biệt. [p:Liệu việc làm chủ trạng thái từ tính thứ ba này có thể giải quyết các giới hạn hiện tại trong bộ nhớ máy tính không?]",
+    "fr": "L'altermagnétisme agit comme un pont reliant deux îles distinctes. [p:La maîtrise de ce troisième état magnétique permettra-t-elle de surmonter les limites actuelles des mémoires informatiques ?]",
+    "de": "Altermagnetismus wirkt wie eine Brücke, die zwei getrennte Inseln miteinander verbindet. [p:Kann die Beherrschung dieses dritten magnetischen Zustands die derzeitigen Grenzen von Computerspeichern überwinden?]",
+    "es": "El altermagnetismo actúa como un puente que conecta dos islas separadas. [p:¿Podría el dominio de este tercer estado magnético resolver las limitaciones actuales de la memoria informática?]"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Xác định một thiết bị điện tử bạn sử dụng hàng ngày.",
       "Đọc về nghiên cứu điện tử spin hiện tại trực tuyến trong mười phút.",
       "Liệt kê một điểm khác biệt giữa thiết bị lượng tử và điện tử tiêu chuẩn."
+    ],
+    "fr": [
+      "Identifiez un appareil électronique que vous utilisez au quotidien.",
+      "Renseignez-vous en ligne sur les recherches actuelles en spintronique pendant dix minutes.",
+      "Citez une différence entre les dispositifs quantiques et l'électronique classique."
+    ],
+    "de": [
+      "Identifiziere ein elektronisches Gerät, das du täglich nutzt.",
+      "Lies zehn Minuten lang online über aktuelle Spintronik-Forschung.",
+      "Nenne einen Unterschied zwischen Quantengeräten und Standardelektronik."
+    ],
+    "es": [
+      "Identifique un equipo electrónico que utilice a diario.",
+      "Lea en internet sobre la investigación actual en espintrónica durante diez minutos.",
+      "Mencione una forma en que los dispositivos cuánticos se diferencian de la electrónica estándar."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "ferromagnets": "Materials whose electron spins align in the same direction to create a net magnetic field.",
+      "antiferromagnets": "Materials whose neighboring electron spins point in opposite directions, canceling out their magnetic fields.",
+      "electron spins": "Fundamental quantum properties of electrons that give them magnetic orientation.",
+      "altermagnetism": "A third magnetic phase combining opposing spins like antiferromagnets with electronic behaviors like ferromagnets.",
+      "magnetic phase": "A distinct state of matter characterized by a specific arrangement of electron spins.",
+      "manganese telluride": "A compound long seen as an antiferromagnet, used to prove the existence of altermagnetism.",
+      "polarized x-rays": "High-energy light waves vibrating in a specific direction used to measure material structures.",
+      "chirality": "A geometric asymmetry where a magnetic structure cannot be superimposed on its mirror image.",
+      "magnetization": "The net magnetic strength or field produced by aligned spins within a material.",
+      "spin-polarized currents": "Electrical currents made of electrons having mostly the same spin direction.",
+      "quantum devices": "Apparatuses utilizing quantum mechanical properties to store, process, or secure information.",
+      "spintronics": "Technology utilizing electron spin rather than just electric charge to process information."
+    },
+    "vi": {
+      "sắt từ": "Hiện tượng từ tính trong đó các spin electron tự sắp xếp cùng hướng với nhau.",
+      "phản sắt từ": "Trạng thái từ tính trong đó các spin lân cận ngược chiều nhau, triệt tiêu từ trường.",
+      "spin electron": "Mômen động lượng nội tại của electron, tạo ra đặc tính từ của hạt.",
+      "siêu từ tính": "Pha từ tính kết hợp đặc tính của cả vật liệu sắt từ và phản sắt từ.",
+      "slac": "Phòng thí nghiệm máy gia tốc hạt quốc gia nổi tiếng đặt tại Hoa Kỳ.",
+      "pha từ tính": "Trạng thái trật tự từ học riêng biệt của cấu trúc spin trong vật liệu.",
+      "telu-rít mangan": "Hợp chất hóa học được dùng làm vật liệu nghiên cứu phát hiện siêu từ tính.",
+      "chirality": "Tính bất đối xứng cấu trúc không thể chồng khít lên hình ảnh phản chiếu của nó.",
+      "tán xạ": "Hiện tượng sóng ánh sáng bị lệch hướng khi va chạm với vật chất.",
+      "phân cực spin": "Dòng điện trong đó spin của đa số electron cùng hướng về một phía.",
+      "điện tử spin": "Lĩnh vực công nghệ sử dụng cả điện tích và spin electron để lưu trữ dữ liệu."
+    },
+    "fr": {
+      "ferromagnétiques": "Matériaux dont les moments magnétiques s'alignent dans une même direction, créant une aimantation macroscopique.",
+      "antiferromagnétiques": "Matériaux dont les spins voisins s'orientent en sens opposés, annulant toute aimantation globale macroscopique.",
+      "spins": "Propriété quantique intrinsèque des électrons équivalente à un minuscule moment cinétique magnétique.",
+      "altermagnétisme": "Troisième phase magnétique combinant l'absence d'aimantation globale et des propriétés électroniques polarisées.",
+      "tellurure de manganèse": "Composé cristallin dont l'étude a permis d'apporter la preuve de l'état altermagnétique.",
+      "chiralité": "Asymétrie géométrique caractérisant une structure non superposable à son image dans un miroir.",
+      "altermagnétiques": "Altermagnétiques dépourvus d'aimantation nette mais générant des courants polarisés exploitables.",
+      "aimantation globale": "Champ magnétique net résultant de l'addition de l'ensemble des moments magnétiques microscopiques.",
+      "dispositifs quantiques": "Systèmes technologiques exploitant directement les principes de la mécanique quantique pour traiter l'information.",
+      "spintronique": "Technologie exploitant le spin des électrons en complément de leur charge pour stocker des données."
+    },
+    "de": {
+      "ferromagnete": "Materialien, deren Elektronenspins gleichgerichtet sind und die ein dauerhaftes äußeres Magnetfeld erzeugen.",
+      "antiferromagnete": "Materialien mit entgegengesetzt ausgerichteten benachbarten Elektronenspins, deren Magnetfelder sich nach außen hin aufheben.",
+      "elektronenspins": "Quantenmechanischer Eigendrehimpuls von Elektronen, der für magnetische Eigenschaften eines Materials sorgt.",
+      "altermagnetismus": "Dritte magnetische Phase, die Eigenschaften von Ferromagneten und Antiferromagneten miteinander verbindet.",
+      "mangantellurid": "Chemische Verbindung aus Mangan und Tellur, an der die neue magnetische Phase nachgewiesen wurde.",
+      "chiralität": "Spiralförmige Asymmetrie einer magnetischen Struktur, die sich von ihrem Spiegelbild unterscheidet.",
+      "altermagnete": "Materialien mit Altermagnetismus, die keine äußere Magnetisierung besitzen, aber spinpolarisierte Ströme leiten können.",
+      "spinpolarisierte ströme": "Elektrische Ströme, bei denen die Spins der Elektronen vorwiegend in eine einheitliche Richtung ausgerichtet sind.",
+      "quantengeräte": "Technologische Geräte, die quantenmechanische Effekte zur Informationsverarbeitung oder Datenspeicherung nutzen.",
+      "spintronik-forschung": "Wissenschaftsbereich, der neben der elektrischen Ladung auch den Spin von Elektronen für elektronische Bauteile nutzt."
+    },
+    "es": {
+      "ferromagnetos": "Materiales cuyos espines electrónicos se alinean en la misma dirección, generando una magnetización neta apreciable.",
+      "antiferromagnetos": "Materiales magnéticos con espines adyacentes opuestos cuyos campos magnéticos se cancelan entre sí.",
+      "espines electrónicos": "Propiedad cuántica intrínseca de los electrones relacionada con su momento magnético y angular.",
+      "altermagnetismo": "Tercera fase magnética que combina espines opuestos compensados con propiedades electrónicas avanzadas.",
+      "telururo de manganeso": "Material cristalino semiconductor empleado en el estudio para comprobar la existencia del altermagnetismo.",
+      "rayos x polarizados": "Haz electromagnético de alta energía orientado específicamente para analizar estructuras microscópicas y dispersión de luz.",
+      "quiralidad": "Asimetría estructural que impide que una figura se superponga con su imagen reflejada en un espejo.",
+      "altermagnetos": "Materiales que poseen altermagnetismo, útiles para crear memorias más veloces y proteger información almacenada.",
+      "dispositivos cuánticos": "Sistemas electrónicos basados en principios cuánticos para procesar información con mayor velocidad y seguridad.",
+      "espintrónica": "Disciplina que aprovecha el espín electrónico además de su carga para transmitir y almacenar datos."
+    }
   }
 }

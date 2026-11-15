@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/724/1080/1920",
+    "url": "https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Nelly Volkovich",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/ZSMgNjYrHRM"
+    "sourceUrl": "https://unsplash.com/photos/ZSMgNjYrHRM",
+    "wide": "https://images.unsplash.com/photo-1430132594682-16e1185b17c5?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@nelly?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

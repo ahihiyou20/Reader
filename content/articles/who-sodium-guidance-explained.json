@@ -12,47 +12,86 @@
   ],
   "title": {
     "en": "Most of the world eats double the salt WHO advises",
-    "vi": "Phần lớn thế giới ăn gấp đôi lượng muối WHO khuyến nghị"
+    "vi": "Phần lớn thế giới ăn gấp đôi lượng muối WHO khuyến nghị",
+    "fr": "La plupart du monde consomme le double du sel préconisé par l'OMS",
+    "de": "Die Welt isst doppelt so viel Salz, wie die WHO empfiehlt",
+    "es": "La mayoría del mundo consume el doble de sal de lo que aconseja la OMS"
   },
   "hook": {
     "en": "The global average adult ate [y:4,278 mg of sodium] a day in 2021, about [y:11 g of salt]. The World Health Organization recommends less than 5 g. That gap is linked to an estimated [y:1.7 million deaths] a year, and the main health effect WHO names is [p:raised blood pressure, which raises the risk of heart disease].",
-    "vi": "Năm 2021, người trưởng thành trung bình toàn cầu ăn [y:4.278 mg natri] mỗi ngày, tương đương khoảng [y:11 g muối]. Tổ chức Y tế Thế giới khuyến nghị dưới 5 g. Khoảng cách đó liên quan đến ước tính [y:1,7 triệu ca tử vong] mỗi năm, và tác động sức khỏe chính WHO nêu là [p:huyết áp tăng, làm tăng nguy cơ bệnh tim]."
+    "vi": "Năm 2021, người trưởng thành trung bình toàn cầu ăn [y:4.278 mg natri] mỗi ngày, tương đương khoảng [y:11 g muối]. Tổ chức Y tế Thế giới khuyến nghị dưới 5 g. Khoảng cách đó liên quan đến ước tính [y:1,7 triệu ca tử vong] mỗi năm, và tác động sức khỏe chính WHO nêu là [p:huyết áp tăng, làm tăng nguy cơ bệnh tim].",
+    "fr": "En 2021, un adulte consommait en moyenne dans le monde [y:4,278 mg de sodium] par jour, soit environ [y:11 g de sel]. L'Organisation mondiale de la santé recommande moins de 5 g. Cet écart est associé à une estimation de [y:1.7 million de décès] par an, et le principal effet sur la santé mentionné par l'OMS est [p:l'hypertension artérielle, qui accroît le risque de maladie cardiaque].",
+    "de": "Im weltweiten Durchschnitt nahm ein Erwachsener im Jahr 2021 täglich [y:4.278 mg Natrium] zu sich, was etwa [y:11 g Salz] entspricht. Die Weltgesundheitsorganisation empfiehlt weniger als 5 g. Diese Diskrepanz steht mit geschätzten [y:1,7 Millionen Todesfällen] pro Jahr in Verbindung, und als wichtigste gesundheitliche Auswirkung nennt die WHO [p:erhöhten Blutdruck, der das Risiko von Herzerkrankungen steigert].",
+    "es": "En 2021, el adulto promedio en el mundo consumió [y:4.278 mg de sodio] al día, alrededor de [y:11 g de sal]. La Organización Mundial de la Salud recomienda menos de 5 g. Esa diferencia está vinculada a un estimado de [y:1,7 millones de muertes] al año, y el principal efecto sobre la salud señalado por la OMS es [p:el aumento de la presión arterial, lo que eleva el riesgo de padecer cardiopatías]."
   },
   "sections": [
     {
       "heading_en": "Sodium versus salt",
       "heading_vi": "Natri và muối khác nhau thế nào",
       "body_en": "Table salt is sodium chloride, and sodium is the part that matters for blood pressure. WHO states its limit in both units: less than 2,000 mg of sodium a day, which equals less than 5 g of salt, or just under a teaspoon {who-salt}. Sodium itself is an essential nutrient. It helps maintain plasma volume and acid-base balance and carries nerve impulses. A deficiency in healthy people is extremely unlikely, so the practical risk is almost always too much.",
-      "body_vi": "Muối ăn là natri clorua, và natri là phần ảnh hưởng đến huyết áp. WHO nêu giới hạn bằng cả hai đơn vị: dưới 2.000 mg natri mỗi ngày, tương đương dưới 5 g muối, tức chưa đầy một thìa cà phê {who-salt}. Bản thân natri là một chất dinh dưỡng thiết yếu. Nó giúp duy trì thể tích huyết tương, cân bằng axit – bazơ và dẫn truyền xung thần kinh. Người khỏe mạnh gần như không thể thiếu natri, nên rủi ro thực tế hầu như luôn là ăn quá nhiều."
+      "body_vi": "Muối ăn là natri clorua, và natri là phần ảnh hưởng đến huyết áp. WHO nêu giới hạn bằng cả hai đơn vị: dưới 2.000 mg natri mỗi ngày, tương đương dưới 5 g muối, tức chưa đầy một thìa cà phê {who-salt}. Bản thân natri là một chất dinh dưỡng thiết yếu. Nó giúp duy trì thể tích huyết tương, cân bằng axit – bazơ và dẫn truyền xung thần kinh. Người khỏe mạnh gần như không thể thiếu natri, nên rủi ro thực tế hầu như luôn là ăn quá nhiều.",
+      "heading_fr": "Sodium contre sel",
+      "body_fr": "Le sel de table est du chlorure de sodium, et le sodium est l'élément déterminant pour la tension artérielle. L'OMS formule sa limite dans les deux unités : moins de 2,000 mg de sodium par jour, ce qui équivaut à moins de 5 g de sel, soit un peu moins d'une cuillère à café {who-salt}. Le sodium en lui-même est un nutriment essentiel. Il contribue au maintien du volume plasmatique et de l'équilibre acido-basique, et transmet les influx nerveux. Une carence chez une personne en bonne santé est extrêmement improbable ; le risque concret réside donc presque toujours dans un apport excessif.",
+      "heading_de": "Natrium versus Salz",
+      "body_de": "Speisesalz ist Natriumchlorid, und Natrium ist der Bestandteil, der für den Blutdruck ausschlaggebend ist. Die WHO gibt ihren Grenzwert in beiden Einheiten an: weniger als 2.000 mg Natrium pro Tag, was weniger als 5 g Salz oder knapp einem Teelöffel entspricht {who-salt}. Natrium selbst ist ein essenzieller Nährstoff. Es hilft dabei, das Plasmavolumen sowie den Säure-Basen-Haushalt aufrechtzuerhalten, und leitet Nervenimpulse weiter. Ein Mangel ist bei gesunden Menschen extrem unwahrscheinlich, sodass das praktische Risiko fast immer in einem Zuviel liegt.",
+      "heading_es": "El sodio frente a la sal",
+      "body_es": "La sal de mesa es cloruro de sodio, y el sodio es el componente que incide en la presión arterial. La OMS establece su límite en ambas unidades: menos de 2.000 mg de sodio al día, lo que equivale a menos de 5 g de sal, o un poco menos de una cucharadita {who-salt}. El sodio en sí es un nutriente esencial: contribuye a mantener el volumen plasmático y el equilibrio acidobásico, y transmite los impulsos nerviosos. Una deficiencia en personas sanas resulta extremadamente improbable, por lo que el riesgo práctico radica casi siempre en el exceso."
     },
     {
       "heading_en": "How big the gap is",
       "heading_vi": "Khoảng cách lớn đến mức nào",
       "body_en": "WHO says almost all populations consume too much sodium. The 2021 global mean for adults was 4,278 mg a day, which is more than double the recommendation {who-salt}. Averages hide variation, but the point stands that the typical person is far above the limit, not slightly over it.",
-      "body_vi": "WHO nói rằng gần như mọi quần thể đều tiêu thụ quá nhiều natri. Mức trung bình toàn cầu của người trưởng thành năm 2021 là 4.278 mg mỗi ngày, hơn gấp đôi khuyến nghị {who-salt}. Con số trung bình che đi sự khác biệt, nhưng ý chính vẫn đúng: người điển hình vượt xa giới hạn chứ không chỉ vượt chút ít."
+      "body_vi": "WHO nói rằng gần như mọi quần thể đều tiêu thụ quá nhiều natri. Mức trung bình toàn cầu của người trưởng thành năm 2021 là 4.278 mg mỗi ngày, hơn gấp đôi khuyến nghị {who-salt}. Con số trung bình che đi sự khác biệt, nhưng ý chính vẫn đúng: người điển hình vượt xa giới hạn chứ không chỉ vượt chút ít.",
+      "heading_fr": "L'ampleur de l'écart",
+      "body_fr": "L'OMS indique que presque toutes les populations consomment trop de sodium. En 2021, la moyenne mondiale chez les adultes s'élevait à 4,278 mg par jour, soit plus du double de la recommandation {who-salt}. Les moyennes masquent les disparités, mais le constat demeure : l'individu moyen se situe bien au-delà de la limite, et non légèrement au-dessus.",
+      "heading_de": "Wie groß die Kluft ist",
+      "body_de": "Laut WHO konsumieren fast alle Bevölkerungsgruppen zu viel Natrium. Der weltweite Mittelwert für Erwachsene lag 2021 bei 4.278 mg pro Tag, was mehr als das Doppelte der Empfehlung ist {who-salt}. Durchschnittswerte verdecken zwar Unterschiede, doch es bleibt dabei, dass eine typische Person weit über dem Grenzwert liegt und nicht nur geringfügig darüber.",
+      "heading_es": "La magnitud de la brecha",
+      "body_es": "La OMS afirma que casi todas las poblaciones consumen demasiado sodio. La media mundial de 2021 para los adultos fue de 4.278 mg al día, más del doble de la recomendación {who-salt}. Los promedios ocultan las variaciones, pero el hecho de fondo se mantiene: una persona típica se sitúa muy por encima del límite, no apenas por encima."
     },
     {
       "heading_en": "What excess sodium does",
       "heading_vi": "Natri thừa gây ra điều gì",
       "body_en": "The main health effect of a high-sodium diet is raised blood pressure, which increases the risk of cardiovascular disease. In 2024 an estimated [y:1.4 billion adults] aged 30 to 79 had hypertension, and about 44 percent of them did not know it, because high blood pressure often causes no symptoms {who-hypertension}. WHO also associates it with gastric cancer, obesity, osteoporosis, Meniere's disease and kidney disease {who-salt}. For 2023 it estimates that [y:1.7 million deaths] a year were associated with consuming too much sodium. The word \"associated\" matters: the figure counts deaths linked to the exposure, which is not the same as deaths for which salt was the only cause.",
-      "body_vi": "Tác động sức khỏe chính của chế độ ăn nhiều natri là huyết áp tăng, làm tăng nguy cơ bệnh tim mạch. Năm 2024, ước tính [y:1,4 tỷ người trưởng thành] từ 30 đến 79 tuổi bị tăng huyết áp, và khoảng 44 phần trăm trong số đó không biết mình mắc, vì huyết áp cao thường không có triệu chứng {who-hypertension}. WHO còn liên hệ nó với ung thư dạ dày, béo phì, loãng xương, bệnh Meniere và bệnh thận {who-salt}. Cho năm 2023, WHO ước tính [y:1,7 triệu ca tử vong] mỗi năm có liên quan đến việc ăn quá nhiều natri. Từ \"liên quan\" rất quan trọng: con số này đếm các ca tử vong gắn với yếu tố phơi nhiễm, không đồng nghĩa muối là nguyên nhân duy nhất."
+      "body_vi": "Tác động sức khỏe chính của chế độ ăn nhiều natri là huyết áp tăng, làm tăng nguy cơ bệnh tim mạch. Năm 2024, ước tính [y:1,4 tỷ người trưởng thành] từ 30 đến 79 tuổi bị tăng huyết áp, và khoảng 44 phần trăm trong số đó không biết mình mắc, vì huyết áp cao thường không có triệu chứng {who-hypertension}. WHO còn liên hệ nó với ung thư dạ dày, béo phì, loãng xương, bệnh Meniere và bệnh thận {who-salt}. Cho năm 2023, WHO ước tính [y:1,7 triệu ca tử vong] mỗi năm có liên quan đến việc ăn quá nhiều natri. Từ \"liên quan\" rất quan trọng: con số này đếm các ca tử vong gắn với yếu tố phơi nhiễm, không đồng nghĩa muối là nguyên nhân duy nhất.",
+      "heading_fr": "Les effets d'un excès de sodium",
+      "body_fr": "Le principal effet sur la santé d'un régime riche en sodium est l'élévation de la pression artérielle, ce qui accroît le risque de maladies cardiovasculaires. En 2024, selon les estimations, [y:1.4 milliard d'adultes] âgés de 30 à 79 ans souffraient d'hypertension, et environ 44 pour cent d'entre eux l'ignoraient, car une tension artérielle élevée ne provoque souvent aucun symptôme {who-hypertension}. L'OMS l'associe également au cancer gastrique, à l'obésité, à l'ostéoporose, à la maladie de Ménière et aux affections rénales {who-salt}. Pour 2023, elle estime que [y:1.7 million de décès] par an étaient associés à une surconsommation de sodium. Le mot « associé » a son importance : ce chiffre comptabilise les décès liés à cette exposition, ce qui ne signifie pas que le sel en soit l'unique cause.",
+      "heading_de": "Was zu viel Natrium bewirkt",
+      "body_de": "Die wichtigste gesundheitliche Folge einer natriumreichen Ernährung ist erhöhter Blutdruck, der das Risiko von Herz-Kreislauf-Erkrankungen steigert. Im Jahr 2024 litten schätzungsweise [y:1,4 Milliarden Erwachsene] im Alter von 30 bis 79 Jahren an Hypertonie, und etwa 44 Prozent von ihnen wussten nichts davon, weil Bluthochdruck oft keine Symptome verursacht {who-hypertension}. Die WHO bringt ihn zudem mit Magenkrebs, Adipositas, Osteoporose, Morbus Menière und Nierenerkrankungen in Verbindung {who-salt}. Für 2023 schätzt sie, dass [y:1,7 Millionen Todesfälle] pro Jahr mit übermäßigem Natriumkonsum assoziiert waren. Das Wort „assoziiert“ ist dabei von Bedeutung: Die Zahl erfasst Todesfälle, die mit dieser Exposition verknüpft sind – was nicht gleichbedeutend damit ist, dass Salz die alleinige Ursache war.",
+      "heading_es": "Efectos del exceso de sodio",
+      "body_es": "El principal efecto para la salud de una dieta rica en sodio es el aumento de la presión arterial, lo que incrementa el riesgo de sufrir enfermedades cardiovasculares. En 2024, un estimado de [y:1,4 mil millones de adultos] de entre 30 y 79 años padecía hipertensión, y alrededor del 44 por ciento no lo sabía, ya que la presión arterial alta a menudo no presenta síntomas {who-hypertension}. La OMS también lo asocia con el cáncer gástrico, la obesidad, la osteoporosis, la enfermedad de Menière y las nefropatías {who-salt}. Para 2023, calcula que [y:1,7 millones de muertes] al año estuvieron asociadas con el consumo excesivo de sodio. La palabra «asociadas» es importante: la cifra contabiliza los fallecimientos vinculados a dicha exposición, lo cual no equivale a muertes cuya única causa haya sido la sal."
     },
     {
       "heading_en": "Where the sodium hides",
       "heading_vi": "Natri ẩn ở đâu",
       "body_en": "In many high-income countries, and increasingly in low- and middle-income ones, a large share of dietary sodium comes from processed foods. WHO lists bread, processed meat and snack foods, plus condiments such as soy and fish sauce {who-salt}. Sodium also occurs naturally in milk, meat and shellfish, and in sodium glutamate used as an additive. That is why leaving the saltshaker alone only reaches part of the intake. The salt added at the factory is out of the eater's control.",
-      "body_vi": "Ở nhiều nước thu nhập cao, và ngày càng nhiều ở nước thu nhập thấp và trung bình, một phần lớn natri trong khẩu phần đến từ thực phẩm chế biến. WHO nêu bánh mì, thịt chế biến và đồ ăn vặt, cùng các loại gia vị như nước tương và nước mắm {who-salt}. Natri cũng có sẵn tự nhiên trong sữa, thịt và động vật có vỏ, và trong natri glutamat dùng làm phụ gia. Vì vậy, bỏ lọ muối khỏi bàn ăn chỉ chạm tới một phần lượng ăn vào. Muối thêm ở nhà máy nằm ngoài tầm kiểm soát của người ăn."
+      "body_vi": "Ở nhiều nước thu nhập cao, và ngày càng nhiều ở nước thu nhập thấp và trung bình, một phần lớn natri trong khẩu phần đến từ thực phẩm chế biến. WHO nêu bánh mì, thịt chế biến và đồ ăn vặt, cùng các loại gia vị như nước tương và nước mắm {who-salt}. Natri cũng có sẵn tự nhiên trong sữa, thịt và động vật có vỏ, và trong natri glutamat dùng làm phụ gia. Vì vậy, bỏ lọ muối khỏi bàn ăn chỉ chạm tới một phần lượng ăn vào. Muối thêm ở nhà máy nằm ngoài tầm kiểm soát của người ăn.",
+      "heading_fr": "Où se cache le sodium",
+      "body_fr": "Dans de nombreux pays à revenu élevé, et de plus en plus dans les pays à revenu faible ou intermédiaire, une grande partie du sodium alimentaire provient des aliments transformés. L'OMS cite le pain, les viandes transformées et les en-cas, ainsi que des condiments comme la sauce soja ou la sauce de poisson {who-salt}. Le sodium est aussi naturellement présent dans le lait, la viande et les crustacés, ainsi que dans le glutamate de sodium employé comme additif. C'est pourquoi délaisser la salière n'agit que sur une fraction de la consommation. Le sel ajouté en usine échappe au contrôle du consommateur.",
+      "heading_de": "Wo sich das Natrium versteckt",
+      "body_de": "In vielen Ländern mit hohem Einkommen – und zunehmend auch in solchen mit niedrigem und mittlerem Einkommen – stammt ein großer Teil des über die Nahrung aufgenommenen Natriums aus verarbeiteten Lebensmitteln. Die WHO nennt Brot, verarbeitetes Fleisch und Snacks sowie Würzmittel wie Soja- und Fischsauce {who-salt}. Natrium kommt zudem natürlicherweise in Milch, Fleisch und Schalentieren vor sowie in Natriumglutamat, das als Zusatzstoff verwendet wird. Aus diesem Grund erfasst der Verzicht auf den Salzstreuer nur einen Teil der Zufuhr. Das bereits bei der Herstellung hinzugefügte Salz entzieht sich der Kontrolle der Konsumenten.",
+      "heading_es": "Dónde se oculta el sodio",
+      "body_es": "En muchos países de ingresos altos, y cada vez más en los de ingresos bajos y medianos, una gran proporción del sodio en la dieta proviene de alimentos procesados. La OMS menciona el pan, las carnes procesadas y los aperitivos, además de condimentos como las salsas de soja y de pescado {who-salt}. El sodio también se encuentra de forma natural en la leche, la carne y los mariscos, y en el glutamato de sodio utilizado como aditivo. Por ello, apartar el salero solo reduce una parte de la ingesta: la sal agregada en las fábricas queda fuera del control de quien come."
     },
     {
       "heading_en": "What WHO suggests",
       "heading_vi": "WHO gợi ý gì",
       "body_en": "For people, WHO suggests eating mostly fresh, minimally processed food, cooking with little or no added salt, flavouring with herbs and spices, and, if you use table salt, switching to a lower-sodium substitute that contains potassium {who-salt}. For governments it names four best buys: reformulating products to contain less sodium, lower-sodium options in public institutions, front-of-pack labelling, and behaviour change campaigns. WHO puts the return at [y:at least US$12] for every US$1 spent on scaling up sodium reduction.",
-      "body_vi": "Với từng người, WHO gợi ý ăn chủ yếu thực phẩm tươi, ít chế biến, nấu với rất ít hoặc không thêm muối, nêm bằng rau thơm và gia vị, và nếu dùng muối ăn thì chuyển sang loại thay thế ít natri có chứa kali {who-salt}. Với chính phủ, WHO nêu bốn giải pháp hiệu quả nhất: điều chỉnh công thức sản phẩm để giảm natri, cung cấp lựa chọn ít natri ở cơ quan công, ghi nhãn mặt trước bao bì, và truyền thông thay đổi hành vi. WHO ước tính lợi tức [y:ít nhất 12 USD] cho mỗi 1 USD chi để mở rộng các biện pháp giảm natri."
+      "body_vi": "Với từng người, WHO gợi ý ăn chủ yếu thực phẩm tươi, ít chế biến, nấu với rất ít hoặc không thêm muối, nêm bằng rau thơm và gia vị, và nếu dùng muối ăn thì chuyển sang loại thay thế ít natri có chứa kali {who-salt}. Với chính phủ, WHO nêu bốn giải pháp hiệu quả nhất: điều chỉnh công thức sản phẩm để giảm natri, cung cấp lựa chọn ít natri ở cơ quan công, ghi nhãn mặt trước bao bì, và truyền thông thay đổi hành vi. WHO ước tính lợi tức [y:ít nhất 12 USD] cho mỗi 1 USD chi để mở rộng các biện pháp giảm natri.",
+      "heading_fr": "Ce que préconise l'OMS",
+      "body_fr": "À l'échelle individuelle, l'OMS suggère de consommer principalement des aliments frais et peu transformés, de cuisiner avec peu ou pas de sel ajouté, d'assaisonner avec des herbes et des épices et, si l'on utilise du sel de table, de passer à un substitut à teneur réduite en sodium contenant du potassium {who-salt}. Pour les gouvernements, elle désigne quatre interventions très rentables : reformuler les produits pour réduire le sodium, proposer des options moins salées dans les institutions publiques, adopter un étiquetage nutritionnel sur la face avant des emballages et mener des campagnes de sensibilisation. L'OMS évalue le retour sur investissement à [y:au moins US$12] pour chaque US$1 dépensé pour intensifier la réduction du sodium.",
+      "heading_de": "Was die WHO empfiehlt",
+      "body_de": "Für den Einzelnen empfiehlt die WHO, überwiegend frische, minimal verarbeitete Lebensmittel zu essen, mit wenig oder ohne Salzzusatz zu kochen, mit Kräutern und Gewürzen abzuschmecken und, falls du Speisesalz verwendest, auf einen natriumärmeren Ersatz umzusteigen, der Kalium enthält {who-salt}. Für Regierungen benennt sie vier Best Buys: die Reformulierung von Produkten für einen geringeren Natriumgehalt, natriumärmere Angebote in öffentlichen Einrichtungen, Nährwertkennzeichnungen auf der Verpackungsvorderseite sowie Kampagnen zur Verhaltensänderung. Die WHO beziffert den Ertrag auf [y:mindestens 12 US-Dollar] für jeden investierten 1 US-Dollar in den Ausbau der Natriumreduktion.",
+      "heading_es": "Qué aconseja la OMS",
+      "body_es": "Para la población, la OMS sugiere consumir principalmente alimentos frescos y mínimamente procesados, cocinar con poca o ninguna sal añadida, condimentar con hierbas y especias y, si se emplea sal de mesa, sustituirla por una alternativa con menor contenido de sodio que contenga potasio {who-salt}. Para los gobiernos, identifica cuatro «mejores inversiones»: reformular productos para que contengan menos sodio, ofrecer opciones bajas en sodio en instituciones públicas, implementar el etiquetado frontal en los envases y llevar a cabo campañas para modificar hábitos. La OMS sitúa el retorno en [y:al menos US$12] por cada US$1 invertido en la ampliación de programas para reducir el sodio."
     }
   ],
   "keyPoint": {
     "en": "The typical adult eats more than twice the sodium WHO recommends, and [p:most of it comes from processed food and sauces rather than the saltshaker]. Cutting back means reading labels, cooking fresh when you can, and choosing lower-sodium products. WHO also asks governments to push food makers to reformulate.",
-    "vi": "Người trưởng thành điển hình ăn natri nhiều hơn gấp đôi mức WHO khuyến nghị, và [p:phần lớn đến từ thực phẩm chế biến và nước chấm chứ không phải lọ muối]. Giảm bớt nghĩa là đọc nhãn, nấu đồ tươi khi có thể và chọn sản phẩm ít natri. WHO cũng đề nghị chính phủ thúc đẩy nhà sản xuất điều chỉnh công thức."
+    "vi": "Người trưởng thành điển hình ăn natri nhiều hơn gấp đôi mức WHO khuyến nghị, và [p:phần lớn đến từ thực phẩm chế biến và nước chấm chứ không phải lọ muối]. Giảm bớt nghĩa là đọc nhãn, nấu đồ tươi khi có thể và chọn sản phẩm ít natri. WHO cũng đề nghị chính phủ thúc đẩy nhà sản xuất điều chỉnh công thức.",
+    "fr": "L'adulte moyen consomme plus de deux fois la quantité de sodium recommandée par l'OMS, et [p:la majeure partie provient des aliments transformés et des sauces plutôt que de la salière]. Réduire cet apport implique de lire les étiquettes, de cuisiner des produits frais dès que possible et de choisir des aliments à plus faible teneur en sodium. L'OMS demande également aux gouvernements d'inciter les industriels de l'agroalimentaire à reformuler leurs recettes.",
+    "de": "Der typische Erwachsene nimmt mehr als das Doppelte des von der WHO empfohlenen Natriums zu sich, und [p:der Großteil davon stammt aus verarbeiteten Lebensmitteln und Saucen und nicht aus dem Salzstreuer]. Den Konsum zu senken bedeutet, Nährwerttabellen zu lesen, frisch zu kochen, wenn du kannst, und natriumärmere Produkte zu wählen. Zudem fordert die WHO Regierungen auf, Lebensmittelhersteller zu einer Reformulierung ihrer Produkte zu bewegen.",
+    "es": "El adulto promedio consume más del doble del sodio que recomienda la OMS, y [p:la mayor parte proviene de alimentos procesados y salsas, más que del salero]. Reducir el consumo exige leer las etiquetas, cocinar productos frescos siempre que sea posible y elegir alimentos bajos en sodio. La OMS también solicita a los gobiernos presionar a los fabricantes para que reformulen sus productos."
   },
   "applySteps": {
     "en": [
@@ -64,6 +103,21 @@
       "Xem dòng natri trên ba món đóng gói bạn hay ăn và ghi lại món nào cao nhất.",
       "Nấu một bữa trong tuần này với rau thơm hoặc gia vị thay cho muối thêm vào.",
       "Cất lọ muối khỏi bàn ăn một tuần và xem bạn có nhận ra khác biệt không."
+    ],
+    "fr": [
+      "Examinez la ligne indiquant le sodium sur trois aliments emballés que vous consommez souvent et repérez le plus riche en sodium.",
+      "Cuisinez un repas cette semaine en utilisant des herbes ou des épices à la place du sel ajouté.",
+      "Retirez la salière de la table pendant une semaine et observez si vous remarquez la différence."
+    ],
+    "de": [
+      "Schau bei drei verpackten Lebensmitteln, die du häufig isst, auf die Natriumangabe und notiere, welches den höchsten Gehalt aufweist.",
+      "Koche diese Woche eine Mahlzeit mit Kräutern oder Gewürzen anstelle von zusätzlichem Salz.",
+      "Nimm den Salzstreuer für eine Woche vom Tisch und beobachte, ob du einen Unterschied bemerkst."
+    ],
+    "es": [
+      "Revise la cantidad de sodio en tres alimentos envasados que consuma habitualmente y anote cuál presenta la cifra más alta.",
+      "Cocine un plato esta semana con hierbas o especias en lugar de añadir sal.",
+      "Retire el salero de la mesa durante una semana y compruebe si nota la diferencia."
     ]
   },
   "references": [
@@ -95,5 +149,83 @@
     "sourceUrl": "https://unsplash.com/photos/8yqds_91OLw"
   },
   "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JYwAD5AnZzTzMAkpVSPtYGAD+17+HXVJOb/FyyT39AqAfBou6EV4RxPDh//0O1ZqLSIBWya8xX2PtJwe06IoeFuDoCz/bvQvfUPsf/e0tiehzjDpzMu83Mi7xxz9XumX8f8VuQNtpONkGiyQAAA==",
-  "dominant": "#3c4542"
+  "dominant": "#3c4542",
+  "glossary": {
+    "en": {
+      "who": "The United Nations agency coordinating global public health responses, research, and guidelines.",
+      "sodium chloride": "The chemical compound commonly known as table salt, composed of sodium and chlorine.",
+      "plasma volume": "The liquid portion of blood that circulates nutrients, hormones, and proteins throughout the body.",
+      "acid-base balance": "The mechanism maintaining proper acidity and alkalinity levels in bodily fluids for healthy function.",
+      "cardiovascular disease": "A group of disorders affecting the heart and blood vessels, including heart attacks and strokes.",
+      "hypertension": "Persistently elevated blood pressure in the arteries, often occurring without symptoms.",
+      "osteoporosis": "A bone disease causing reduced bone density, making bones weak, brittle, and prone to fractures.",
+      "meniere's disease": "A chronic inner-ear disorder that causes severe dizziness, hearing loss, and ringing in the ear.",
+      "sodium glutamate": "A flavor-enhancing food additive that contributes dietary sodium to packaged and processed foods.",
+      "potassium": "A vital mineral that helps counteract sodium's effects and lower blood pressure.",
+      "best buys": "Highly cost-effective, evidence-based policy actions recommended by health authorities to improve public health."
+    },
+    "vi": {
+      "who": "Tổ chức Y tế Thế giới, cơ quan chuyên môn về y tế của Liên Hợp Quốc.",
+      "natri clorua": "Hợp chất hóa học cấu thành muối ăn thông thường, gồm hai nguyên tố natri và clo.",
+      "huyết tương": "Phần chất lỏng của máu, mang các tế bào máu và chất dinh dưỡng.",
+      "xung thần kinh": "Tín hiệu điện truyền dọc tế bào thần kinh để truyền tải thông tin trong cơ thể.",
+      "bệnh tim mạch": "Nhóm bệnh lý ảnh hưởng đến chức năng và cấu trúc của tim cùng các mạch máu.",
+      "tăng huyết áp": "Tình trạng áp lực dòng máu tác động lên thành động mạch liên tục ở mức cao.",
+      "bệnh meniere": "Rối loạn ở tai trong gây ra các cơn chóng mặt, ù tai và suy giảm thính lực.",
+      "phơi nhiễm": "Tình trạng tiếp xúc với một yếu tố nguy cơ từ môi trường hoặc chế độ ăn.",
+      "natri glutamat": "Chất phụ gia điều vị thường gặp, còn được gọi phổ biến là mì chính hay bột ngọt.",
+      "kali": "Khoáng chất thiết yếu, được dùng để thay thế một phần natri trong muối ăn."
+    },
+    "fr": {
+      "oms": "Organisation mondiale de la santé, agence spécialisée de l'ONU chargée de la santé publique internationale.",
+      "chlorure de sodium": "Composé chimique formant le sel de table, associant sodium et chlore.",
+      "volume plasmatique": "Volume de la composante liquide du sang transportant les cellules sanguines et les nutriments.",
+      "équilibre acido-basique": "Régulation du taux d'acidité et d'alcalinité des fluides corporels pour le bon fonctionnement cellulaire.",
+      "influx nerveux": "Signal électrique transmis le long des neurones permettant la communication au sein du système nerveux.",
+      "hypertension": "Pression anormalement élevée et persistante du sang contre la paroi des artères.",
+      "maladie de ménière": "Affection chronique de l'oreille interne provoquant des vertiges et des pertes auditives.",
+      "glutamate de sodium": "Additif alimentaire exhausteur de goût fréquemment utilisé dans l'industrie agroalimentaire.",
+      "potassium": "Minéral essentiel utilisé dans certains substituts de sel pour limiter les effets du sodium.",
+      "étiquetage nutritionnel": "Information figurant sur l'emballage détaillant la composition nutritionnelle d'un produit alimentaire."
+    },
+    "de": {
+      "natrium": "Lebenswichtiger Mineralstoff zur Regulierung des Flüssigkeitshaushalts, dessen übermäßiger Konsum den Blutdruck steigern kann.",
+      "natriumchlorid": "Chemische Verbindung aus Natrium und Chlor, die den Hauptbestandteil von herkömmlichem Speisesalz bildet.",
+      "plasmavolumen": "Das Flüssigkeitsvolumen des Blutplasmas im Kreislauf, wichtig für die Aufrechterhaltung des Blutdrucks.",
+      "säure-basen-haushalt": "Physiologisches Regulationssystem des Körpers zur Konstanthaltung des pH-Wertes im Blut.",
+      "hypertonie": "Chronischer Bluthochdruck, bei dem die arteriellen Blutdruckwerte dauerhaft krankhaft erhöht sind.",
+      "adipositas": "Starkes Übergewicht mit krankhaft vermehrtem Körperfettanteil, das das Risiko für Folgeerkrankungen erhöht.",
+      "osteoporose": "Chronische Skeletterkrankung mit abnehmender Knochendichte und dadurch gesteigerter Knochenbrüchigkeit.",
+      "morbus menière": "Erkrankung des Innenohrs mit anfallsartigem Drehschwindel, Hörverlust und Ohrgeräuschen.",
+      "natriumglutamat": "Salz der Glutaminsäure, das industriell Lebensmitteln häufig als Geschmacksverstärker zugesetzt wird.",
+      "best buys": "Von der WHO definierte, besonders kostengünstige und wirkungsvolle gesundheitspolitische Interventionen.",
+      "reformulierung": "Anpassung der Rezeptur von verarbeiteten Fertiglebensmitteln, beispielsweise zur Verringerung von Salz oder Zucker.",
+      "who": "Weltgesundheitsorganisation, eine Sonderorganisation der Vereinten Nationen für weltweite Gesundheitsthemen."
+    },
+    "es": {
+      "oms": "Organización Mundial de la Salud, organismo internacional de la ONU especializado en salud pública.",
+      "cloruro de sodio": "Compuesto químico conocido como sal común o de mesa, formado por sodio y cloro.",
+      "volumen plasmático": "Cantidad total de líquido contenido en el plasma sanguíneo, esencial para la presión y circulación.",
+      "equilibrio acidobásico": "Equilibrio entre la acidez y la alcalinidad en el organismo necesario para su óptimo funcionamiento.",
+      "impulsos nerviosos": "Señales eléctricas transmitidas por el sistema nervioso para comunicar información entre células.",
+      "hipertensión": "Afección médica caracterizada por una presión persistentemente elevada de la sangre en las arterias.",
+      "enfermedad de menière": "Trastorno del oído interno que suele provocar episodios de vértigo, pérdida auditiva y zumbidos.",
+      "osteoporosis": "Enfermedad que debilita la estructura y densidad ósea, haciendo los huesos más propensos a fracturas.",
+      "nefropatías": "Término genérico para las diversas enfermedades o daños que perjudican la función de los riñones.",
+      "glutamato de sodio": "Sal sódica del ácido glutámico utilizada en la industria alimentaria para intensificar el sabor.",
+      "etiquetado frontal": "Advertencias nutricionales gráficas y visibles situadas en la parte frontal de los envases.",
+      "potasio": "Mineral esencial que ayuda a regular los fluidos corporales y contrarresta los efectos del sodio."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

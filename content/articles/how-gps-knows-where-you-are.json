@@ -12,53 +12,98 @@
   ],
   "title": {
     "en": "How GPS knows where you are",
-    "vi": "GPS biết bạn đang ở đâu bằng cách nào"
+    "vi": "GPS biết bạn đang ở đâu bằng cách nào",
+    "fr": "Comment le GPS sait où vous êtes",
+    "de": "Wie GPS weiß, wo du bist",
+    "es": "Cómo sabe el GPS dónde te encuentras"
   },
   "hook": {
     "en": "Each GPS satellite broadcasts its own position and the time. A receiver on the ground, such as the one in your phone, works out where it is by [p:measuring how long those signals took to arrive]. NASA says the system gives meter-level position and time accurate to about 10 nanoseconds, anywhere on Earth, at any hour.",
-    "vi": "Mỗi vệ tinh GPS phát vị trí của chính nó và thời gian. Một máy thu trên mặt đất, như chiếc trong điện thoại của bạn, tính ra mình đang ở đâu bằng cách [p:đo thời gian các tín hiệu đó đến nơi]. NASA cho biết hệ thống cho vị trí cỡ mét và thời gian chính xác đến khoảng 10 nano giây, ở mọi nơi trên Trái Đất, vào mọi giờ."
+    "vi": "Mỗi vệ tinh GPS phát vị trí của chính nó và thời gian. Một máy thu trên mặt đất, như chiếc trong điện thoại của bạn, tính ra mình đang ở đâu bằng cách [p:đo thời gian các tín hiệu đó đến nơi]. NASA cho biết hệ thống cho vị trí cỡ mét và thời gian chính xác đến khoảng 10 nano giây, ở mọi nơi trên Trái Đất, vào mọi giờ.",
+    "fr": "Chaque satellite GPS diffuse sa position et l'heure. Un récepteur au sol, comme celui de votre téléphone, détermine où il se trouve en [p:mesurant le temps mis par ces signaux pour arriver]. La NASA précise que le système offre une précision métrique et une heure exacte à environ 10 nanosecondes près, partout sur Terre et à toute heure.",
+    "de": "Jeder GPS-Satellit sendet seine Position und die Uhrzeit aus. Ein Bodenempfänger, etwa in deinem Smartphone, ermittelt seinen Standort, indem er [p:misst, wie lange diese Signale bis zu seinem Empfang unterwegs waren]. Laut der NASA liefert das System weltweit und zu jeder Stunde metergenaue Positionsdaten sowie eine auf etwa 10 Nanosekunden präzise Zeit.",
+    "es": "Cada satélite GPS emite su posición y la hora. Un receptor en tierra, como el de tu teléfono, determina su ubicación [p:midiendo el tiempo que tardaron en llegar esas señales]. La NASA señala que el sistema proporciona una posición métrica y una hora exacta a unos 10 nanosegundos, en cualquier lugar de la Tierra y a cualquier hora."
   },
   "sections": [
     {
       "heading_en": "Three parts of one system",
       "heading_vi": "Ba phần của một hệ thống",
       "body_en": "NASA describes GPS as a space-based radio-navigation system owned by the US government and operated by the US Air Force. It has three parts. The space segment is a constellation of at least [y:24 satellites] spread over six orbital planes, flying at about 20,200 kilometres and circling the Earth every 12 hours. The control segment is a network of ground stations that monitor and maintain the satellites. The user segment is the receivers that process the signals and calculate position and time {nasa-gps}. Today the constellation has over 30 operational satellites.",
-      "body_vi": "NASA mô tả GPS là hệ thống dẫn đường vô tuyến trên không gian do chính phủ Hoa Kỳ sở hữu và Không quân Hoa Kỳ vận hành. Hệ thống có ba phần. Phần không gian là một chòm ít nhất [y:24 vệ tinh] chia trên sáu mặt phẳng quỹ đạo, bay ở độ cao khoảng 20.200 km và quay quanh Trái Đất mỗi 12 giờ. Phần điều khiển là mạng các trạm mặt đất theo dõi và duy trì vệ tinh. Phần người dùng là các máy thu xử lý tín hiệu và tính vị trí cùng thời gian {nasa-gps}. Hiện nay chòm vệ tinh có hơn 30 vệ tinh đang hoạt động."
+      "body_vi": "NASA mô tả GPS là hệ thống dẫn đường vô tuyến trên không gian do chính phủ Hoa Kỳ sở hữu và Không quân Hoa Kỳ vận hành. Hệ thống có ba phần. Phần không gian là một chòm ít nhất [y:24 vệ tinh] chia trên sáu mặt phẳng quỹ đạo, bay ở độ cao khoảng 20.200 km và quay quanh Trái Đất mỗi 12 giờ. Phần điều khiển là mạng các trạm mặt đất theo dõi và duy trì vệ tinh. Phần người dùng là các máy thu xử lý tín hiệu và tính vị trí cùng thời gian {nasa-gps}. Hiện nay chòm vệ tinh có hơn 30 vệ tinh đang hoạt động.",
+      "heading_fr": "Trois composantes pour un seul système",
+      "body_fr": "La NASA décrit le GPS comme un système de radionavigation spatiale appartenant au gouvernement américain et exploité par l'US Air Force. Il se compose de trois parties. Le segment spatial est une constellation d'au moins [y:24 satellites] répartis sur six plans orbitaux, évoluant à environ 20 200 kilomètres d'altitude et faisant le tour de la Terre toutes les 12 heures. Le segment de contrôle est un réseau de stations au sol qui surveillent et maintiennent les satellites. Le segment utilisateur rassemble les récepteurs qui traitent les signaux et calculent la position ainsi que l'heure {nasa-gps}. Aujourd'hui, la constellation compte plus de 30 satellites opérationnels.",
+      "heading_de": "Drei Teile eines Systems",
+      "body_de": "Die NASA beschreibt das GPS als ein weltraumgestütztes Funknavigationssystem im Besitz der US-Regierung, das von der US Air Force betrieben wird. Es besteht aus drei Teilen. Das Raumsegment ist eine Konstellation aus mindestens [y:24 Satelliten], verteilt auf sechs Bahnebenen, die in etwa 20.200 Kilometern Höhe fliegen und die Erde alle 12 Stunden umkreisen. Das Kontrollsegment umfasst ein Netz aus Bodenstationen, welche die Satelliten überwachen und warten. Das Nutzersegment bilden die Empfänger, welche die Signale verarbeiten sowie Position und Uhrzeit berechnen {nasa-gps}. Heute umfasst die Konstellation mehr als 30 aktive Satelliten.",
+      "heading_es": "Tres partes de un mismo sistema",
+      "body_es": "La NASA describe el GPS como un sistema de radionavegación espacial propiedad del gobierno de Estados Unidos y operado por la Fuerza Aérea de ese país. Consta de tres partes. El segmento espacial es una constelación de al menos [y:24 satélites] distribuidos en seis planos orbitales, que vuelan a unos 20.200 kilómetros de altitud y orbitan la Tierra cada 12 horas. El segmento de control es una red de estaciones terrestres encargadas de monitorizar y mantener los satélites. El segmento de usuario lo forman los receptores que procesan las señales y calculan la posición y la hora {nasa-gps}. En la actualidad, la constelación cuenta con más de 30 satélites operativos."
     },
     {
       "heading_en": "Time becomes distance",
       "heading_vi": "Thời gian trở thành khoảng cách",
       "body_en": "Each satellite carries redundant atomic clocks. At regular intervals it transmits its own position and the time of transmission, and receivers on the ground pick the signals up. The receiver then determines its position by calculating how long the signals took to reach it {nasa-gps}. Radio waves travel at a known speed, so a delay can be converted into a distance. Because the signals move so fast, a timing error of even a few microseconds would put a fix far off, which is why the satellites need such precise clocks.",
-      "body_vi": "Mỗi vệ tinh mang các đồng hồ nguyên tử dự phòng. Cứ sau những khoảng đều đặn, nó phát vị trí của mình và thời điểm phát, và các máy thu trên mặt đất bắt tín hiệu. Máy thu sau đó xác định vị trí của nó bằng cách tính tín hiệu mất bao lâu để đến nơi {nasa-gps}. Sóng vô tuyến truyền với tốc độ đã biết, nên độ trễ có thể quy đổi thành khoảng cách. Vì tín hiệu di chuyển rất nhanh, sai lệch thời gian dù chỉ vài micro giây cũng đẩy vị trí lệch rất xa, đó là lý do các vệ tinh cần đồng hồ chính xác đến vậy."
+      "body_vi": "Mỗi vệ tinh mang các đồng hồ nguyên tử dự phòng. Cứ sau những khoảng đều đặn, nó phát vị trí của mình và thời điểm phát, và các máy thu trên mặt đất bắt tín hiệu. Máy thu sau đó xác định vị trí của nó bằng cách tính tín hiệu mất bao lâu để đến nơi {nasa-gps}. Sóng vô tuyến truyền với tốc độ đã biết, nên độ trễ có thể quy đổi thành khoảng cách. Vì tín hiệu di chuyển rất nhanh, sai lệch thời gian dù chỉ vài micro giây cũng đẩy vị trí lệch rất xa, đó là lý do các vệ tinh cần đồng hồ chính xác đến vậy.",
+      "heading_fr": "Le temps devient une distance",
+      "body_fr": "Chaque satellite embarque des horloges atomiques redondantes. À intervalles réguliers, il transmet sa position et l'heure de l'émission, et les récepteurs au sol captent ces signaux. Le récepteur détermine ensuite sa position en calculant le temps que les signaux ont mis pour lui parvenir {nasa-gps}. Les ondes radio se propageant à une vitesse connue, ce délai peut être converti en distance. Comme les signaux voyagent extrêmement vite, une erreur de synchronisation de seulement quelques microsecondes fausserait considérablement la position, ce qui explique pourquoi les satellites requièrent des horloges aussi précises.",
+      "heading_de": "Aus Zeit wird Entfernung",
+      "body_de": "Jeder Satellit führt redundante Atomuhren mit. In regelmäßigen Abständen sendet er seine eigene Position und den Sendezeitpunkt, während Empfänger am Boden diese Signale erfassen. Der Empfänger ermittelt anschließend seinen Standort, indem er berechnet, wie lange die Signale bis zu ihm gebraucht haben {nasa-gps}. Da sich Radiowellen mit bekannter Geschwindigkeit ausbreiten, lässt sich die zeitliche Verzögerung in eine Entfernung umrechnen. Wegen der enormen Signalgeschwindigkeit würde schon ein Zeitfehler von wenigen Mikrosekunden die Positionsbestimmung meilenweit verfehlen – weshalb die Satelliten so exakte Uhren benötigen.",
+      "heading_es": "El tiempo se convierte en distancia",
+      "body_es": "Cada satélite transporta relojes atómicos redundantes. A intervalos regulares, emite su posición y la hora de transmisión, y los receptores en tierra captan las señales. El receptor determina entonces su ubicación calculando cuánto tardaron las señales en llegar {nasa-gps}. Las ondas de radio viajan a una velocidad conocida, de modo que el retardo puede transformarse en una distancia. Dado que las señales viajan a gran velocidad, un error de sincronización de apenas unos microsegundos desviaría notablemente la posición estimada, motivo por el cual los satélites precisan relojes tan exactos."
     },
     {
       "heading_en": "Einstein in orbit",
       "heading_vi": "Einstein trên quỹ đạo",
       "body_en": "Clocks on the satellites do not tick at the same rate as clocks on the ground. Special and general relativity predicted that, as seen from Earth, GPS satellite clocks run [y:38 microseconds] per day faster than clocks on the surface {wiki-gps}. The idea of using atomic clocks in orbit to test general relativity had been proposed as far back as 1955 by Friedwardt Winterberg. That offset is about 3,800 times the 10 nanoseconds of timing accuracy that NASA quotes.",
-      "body_vi": "Đồng hồ trên vệ tinh không chạy cùng nhịp với đồng hồ dưới mặt đất. Thuyết tương đối hẹp và rộng dự đoán rằng, khi nhìn từ Trái Đất, đồng hồ trên vệ tinh GPS chạy nhanh hơn đồng hồ trên mặt đất [y:38 micro giây] mỗi ngày {wiki-gps}. Ý tưởng dùng đồng hồ nguyên tử trên quỹ đạo để kiểm tra thuyết tương đối rộng đã được Friedwardt Winterberg đề xuất từ năm 1955. Độ lệch đó lớn gấp khoảng 3.800 lần độ chính xác thời gian 10 nano giây mà NASA nêu."
+      "body_vi": "Đồng hồ trên vệ tinh không chạy cùng nhịp với đồng hồ dưới mặt đất. Thuyết tương đối hẹp và rộng dự đoán rằng, khi nhìn từ Trái Đất, đồng hồ trên vệ tinh GPS chạy nhanh hơn đồng hồ trên mặt đất [y:38 micro giây] mỗi ngày {wiki-gps}. Ý tưởng dùng đồng hồ nguyên tử trên quỹ đạo để kiểm tra thuyết tương đối rộng đã được Friedwardt Winterberg đề xuất từ năm 1955. Độ lệch đó lớn gấp khoảng 3.800 lần độ chính xác thời gian 10 nano giây mà NASA nêu.",
+      "heading_fr": "Einstein en orbite",
+      "body_fr": "Les horloges des satellites ne battent pas au même rythme que celles au sol. Les relativités restreinte et générale prédisaient que, vues depuis la Terre, les horloges des satellites GPS avancent de [y:38 microsecondes] par jour par rapport aux horloges au sol {wiki-gps}. L'idée d'utiliser des horloges atomiques en orbite pour tester la relativité générale avait été proposée dès 1955 par Friedwardt Winterberg. Ce décalage représente environ 3 800 fois les 10 nanosecondes de précision temporelle citées par la NASA.",
+      "heading_de": "Einstein im Orbit",
+      "body_de": "Uhren an Bord der Satelliten ticken nicht im selben Takt wie Uhren am Boden. Die spezielle und allgemeine Relativitätstheorie sagten voraus, dass die Uhren der GPS-Satelliten von der Erde aus betrachtet täglich um [y:38 Mikrosekunden] schneller gehen als Uhren auf der Erdoberfläche {wiki-gps}. Die Idee, Atomuhren im Orbit zur Überprüfung der allgemeinen Relativitätstheorie einzusetzen, formulierte Friedwardt Winterberg bereits 1955. Dieser Gangunterschied entspricht etwa dem 3.800-Fachen der von der NASA genannten Zeitgenauigkeit von 10 Nanosekunden.",
+      "heading_es": "Einstein en órbita",
+      "body_es": "Los relojes de los satélites no avanzan al mismo ritmo que los de la superficie terrestre. La relatividad especial y la general predijeron que, vistos desde la Tierra, los relojes de los satélites GPS se adelantan [y:38 microsegundos] al día respecto a los de la superficie {wiki-gps}. La idea de emplear relojes atómicos en órbita para poner a prueba la relatividad general ya había sido propuesta en 1955 por Friedwardt Winterberg. Dicho desfase equivale a unas 3.800 veces los 10 nanosegundos de precisión temporal que cita la NASA."
     },
     {
       "heading_en": "From Sputnik to a full constellation",
       "heading_vi": "Từ Sputnik đến chòm vệ tinh đầy đủ",
       "body_en": "The origin of GPS lies in the Sputnik era. Scientists could follow the satellite by the shift in its radio signal known as the Doppler effect, which became the foundational idea of modern GPS {nasa-gps}. The US Naval Research Laboratory then launched its Timation satellites, and the third, in 1974, carried the first atomic clock into orbit. Ten Block I prototype satellites were launched between 1978 and 1985, and the 24-satellite constellation became operational in [y:1993] {wiki-gps}. The Department of Defense built it for the military.",
-      "body_vi": "Nguồn gốc của GPS nằm ở thời đại Sputnik. Các nhà khoa học có thể theo dõi vệ tinh qua sự dịch chuyển trong tín hiệu vô tuyến của nó, gọi là hiệu ứng Doppler, và nó trở thành ý tưởng nền tảng của GPS hiện đại {nasa-gps}. Sau đó Phòng thí nghiệm Nghiên cứu Hải quân Hoa Kỳ phóng các vệ tinh Timation, và chiếc thứ ba, năm 1974, mang đồng hồ nguyên tử đầu tiên lên quỹ đạo. Mười vệ tinh nguyên mẫu Block I được phóng từ 1978 đến 1985, và chòm 24 vệ tinh đi vào hoạt động năm [y:1993] {wiki-gps}. Bộ Quốc phòng xây dựng nó cho quân đội."
+      "body_vi": "Nguồn gốc của GPS nằm ở thời đại Sputnik. Các nhà khoa học có thể theo dõi vệ tinh qua sự dịch chuyển trong tín hiệu vô tuyến của nó, gọi là hiệu ứng Doppler, và nó trở thành ý tưởng nền tảng của GPS hiện đại {nasa-gps}. Sau đó Phòng thí nghiệm Nghiên cứu Hải quân Hoa Kỳ phóng các vệ tinh Timation, và chiếc thứ ba, năm 1974, mang đồng hồ nguyên tử đầu tiên lên quỹ đạo. Mười vệ tinh nguyên mẫu Block I được phóng từ 1978 đến 1985, và chòm 24 vệ tinh đi vào hoạt động năm [y:1993] {wiki-gps}. Bộ Quốc phòng xây dựng nó cho quân đội.",
+      "heading_fr": "De Spoutnik à une constellation complète",
+      "body_fr": "L'origine du GPS remonte à l'ère de Spoutnik. Les scientifiques pouvaient suivre le satellite grâce au décalage de son signal radio, connu sous le nom d'effet Doppler, qui devint le principe fondateur du GPS moderne {nasa-gps}. L'US Naval Research Laboratory a ensuite lancé ses satellites Timation, dont le troisième, en 1974, emporta la première horloge atomique en orbite. Dix prototypes de satellites Block I ont été lancés entre 1978 et 1985, et la constellation de 24 satellites est devenue opérationnelle en [y:1993] {wiki-gps}. Le département de la Défense l'avait construite pour les forces armées.",
+      "heading_de": "Von Sputnik zur vollständigen Konstellation",
+      "body_de": "Die Anfänge des GPS reichen in die Sputnik-Ära zurück. Wissenschaftler konnten den Satelliten anhand der Frequenzverschiebung seines Funksignals orten – dem Doppler-Effekt –, was zur Grundidee des modernen GPS wurde {nasa-gps}. Das US Naval Research Laboratory startete daraufhin seine Timation-Satelliten, von denen der dritte 1974 die erste Atomuhr in den Orbit trug. Zehn Prototypen der Serie Block I folgten zwischen 1978 und 1985, und [y:1993] ging die aus 24 Satelliten bestehende Konstellation in den Regelbetrieb {wiki-gps}. Das Department of Defense hatte das System ursprünglich für das Militär aufgebaut.",
+      "heading_es": "De Sputnik a una constelación completa",
+      "body_es": "El origen del GPS se remonta a la era del Sputnik. Los científicos lograron rastrear el satélite mediante la variación en su señal de radio conocida como efecto Doppler, que se convirtió en la idea fundacional del GPS moderno {nasa-gps}. Posteriormente, el Laboratorio de Investigación Naval de Estados Unidos lanzó sus satélites Timation, y el tercero, en 1974, llevó el primer reloj atómico a la órbita. Entre 1978 y 1985 se lanzaron diez satélites prototipo Block I, y la constelación de 24 satélites pasó a estar operativa en [y:1993] {wiki-gps}. El Departamento de Defensa lo construyó con fines militares."
     },
     {
       "heading_en": "A deliberate error, then none",
       "heading_vi": "Một sai số có chủ ý, rồi không còn",
       "body_en": "At first, the best-quality signal was reserved for military use. Civilian signals were deliberately degraded in a policy called Selective Availability, which limited civilian accuracy to an average of about 100 metres. Military receivers could correct the error. The US enacted a law ordering Selective Availability switched off on 1 May 2000, and in 2007 the government announced that the next generation of satellites would not include the feature {wiki-gps}. Without it, GPS was accurate to about [y:5 metres].",
-      "body_vi": "Lúc đầu, tín hiệu chất lượng tốt nhất được dành cho quân sự. Tín hiệu dân sự bị cố ý làm suy giảm theo chính sách gọi là Khả dụng có chọn lọc (*Selective Availability*), giới hạn độ chính xác dân sự ở mức trung bình khoảng 100 mét. Máy thu quân sự có thể hiệu chỉnh sai số này. Hoa Kỳ ban hành luật yêu cầu tắt Khả dụng có chọn lọc vào ngày 1 tháng 5 năm 2000, và năm 2007 chính phủ thông báo thế hệ vệ tinh kế tiếp sẽ không có tính năng này {wiki-gps}. Khi không còn nó, GPS chính xác khoảng [y:5 mét]."
+      "body_vi": "Lúc đầu, tín hiệu chất lượng tốt nhất được dành cho quân sự. Tín hiệu dân sự bị cố ý làm suy giảm theo chính sách gọi là Khả dụng có chọn lọc (*Selective Availability*), giới hạn độ chính xác dân sự ở mức trung bình khoảng 100 mét. Máy thu quân sự có thể hiệu chỉnh sai số này. Hoa Kỳ ban hành luật yêu cầu tắt Khả dụng có chọn lọc vào ngày 1 tháng 5 năm 2000, và năm 2007 chính phủ thông báo thế hệ vệ tinh kế tiếp sẽ không có tính năng này {wiki-gps}. Khi không còn nó, GPS chính xác khoảng [y:5 mét].",
+      "heading_fr": "Une erreur délibérée, puis plus rien",
+      "body_fr": "Au départ, le signal de meilleure qualité était réservé aux militaires. Les signaux civils étaient délibérément dégradés par une politique baptisée « Selective Availability », qui limitait la précision civile à une moyenne d'environ 100 mètres. Les récepteurs militaires pouvaient corriger l'erreur. Les États-Unis ont promulgué une loi ordonnant l'arrêt de la Selective Availability le 1er mai 2000, et en 2007, le gouvernement a annoncé que la prochaine génération de satellites n'intégrerait pas cette fonction {wiki-gps}. Sans elle, le GPS atteignait une précision d'environ [y:5 mètres].",
+      "heading_de": "Erst ein gezielter Fehler, dann keiner mehr",
+      "body_de": "Anfangs blieb das hochwertigste Signal dem Militär vorbehalten. Zivile Signale wurden über eine Richtlinie namens Selective Availability bewusst verfälscht, was die zivile Genauigkeit auf durchschnittlich etwa 100 Meter begrenzte. Militärische Empfänger konnten diesen Fehler herausrechnen. Die USA erließen schließlich ein Gesetz, das die Abschaltung der Selective Availability zum 1. Mai 2000 festlegte, und 2007 kündigte die Regierung an, dass künftige Satellitengenerationen diese Funktion gar nicht mehr besitzen würden {wiki-gps}. Ohne sie erreichte das GPS eine Genauigkeit von etwa [y:5 Metern].",
+      "heading_es": "Un error deliberado, luego ninguno",
+      "body_es": "En un principio, la señal de mejor calidad estaba reservada al uso militar. Las señales civiles se degradaban deliberadamente mediante una política denominada Disponibilidad Selectiva, que limitaba la precisión para los usuarios civiles a un promedio cercano a los 100 metros. Los receptores militares podían corregir dicho error. Estados Unidos aprobó una ley que ordenó desactivar la Disponibilidad Selectiva el 1 de mayo de 2000, y en 2007 el gobierno anunció que la siguiente generación de satélites prescindiría de esa función {wiki-gps}. Sin ella, el GPS alcanzó una precisión cercana a los [y:5 metros]."
     },
     {
       "heading_en": "Beyond the road",
       "heading_vi": "Vượt ra ngoài mặt đường",
       "body_en": "GPS serves national defence, homeland security, civil, commercial and scientific needs, according to NASA, and the agency uses it in space too. NASA has developed GPS receivers that fly on spacecraft; one from Goddard Space Flight Center flew on the 2009 Hubble servicing mission and was judged very successful {nasa-gps}. The system is still being upgraded. As of March 2026, 21 satellites broadcast the newer L5 signal, which is considered pre-operational until all 24 are available in 2027 {wiki-gps}.",
-      "body_vi": "GPS phục vụ nhu cầu quốc phòng, an ninh nội địa, dân sự, thương mại và khoa học, theo NASA, và cơ quan này cũng dùng nó trong không gian. NASA đã phát triển các máy thu GPS bay trên tàu vũ trụ; một máy từ Trung tâm Bay Không gian Goddard bay trong sứ mệnh bảo trì Hubble năm 2009 và được đánh giá là rất thành công {nasa-gps}. Hệ thống vẫn đang được nâng cấp. Tính đến tháng 3 năm 2026, 21 vệ tinh phát tín hiệu L5 mới hơn, được coi là chưa chính thức hoạt động cho đến khi cả 24 vệ tinh sẵn sàng vào năm 2027 {wiki-gps}."
+      "body_vi": "GPS phục vụ nhu cầu quốc phòng, an ninh nội địa, dân sự, thương mại và khoa học, theo NASA, và cơ quan này cũng dùng nó trong không gian. NASA đã phát triển các máy thu GPS bay trên tàu vũ trụ; một máy từ Trung tâm Bay Không gian Goddard bay trong sứ mệnh bảo trì Hubble năm 2009 và được đánh giá là rất thành công {nasa-gps}. Hệ thống vẫn đang được nâng cấp. Tính đến tháng 3 năm 2026, 21 vệ tinh phát tín hiệu L5 mới hơn, được coi là chưa chính thức hoạt động cho đến khi cả 24 vệ tinh sẵn sàng vào năm 2027 {wiki-gps}.",
+      "heading_fr": "Bien au-delà des routes",
+      "body_fr": "Le GPS répond aux besoins de la défense nationale, de la sécurité intérieure, civils, commerciaux et scientifiques, selon la NASA, et l'agence l'utilise aussi dans l'espace. La NASA a développé des récepteurs GPS pour engins spatiaux ; l'un d'eux, conçu par le Goddard Space Flight Center, a participé à la mission de maintenance de Hubble en 2009 et s'est avéré très performant {nasa-gps}. Le système continue d'être modernisé. En mars 2026, 21 satellites diffusent le signal L5 plus récent, considéré comme préopérationnel jusqu'à ce que les 24 soient disponibles en 2027 {wiki-gps}.",
+      "heading_de": "Weit über Straßen hinaus",
+      "body_de": "Laut der NASA deckt das GPS Aufgaben der nationalen Verteidigung, der inneren Sicherheit sowie zivile, kommerzielle und wissenschaftliche Anforderungen ab – und die Behörde nutzt es ebenso im Weltraum. Die NASA entwickelte GPS-Empfänger für Raumfahrzeuge; ein Modell des Goddard Space Flight Center flog 2009 bei der Hubble-Wartungsmission mit und bewährte sich hervorragend {nasa-gps}. Das System wird laufend modernisiert. Mit Stand vom März 2026 senden 21 Satelliten das neuere L5-Signal, das bis zur vollständigen Verfügbarkeit von 24 Satelliten im Jahr 2027 als vorbetrieblich eingestuft wird {wiki-gps}.",
+      "heading_es": "Más allá de la carretera",
+      "body_es": "El GPS atiende necesidades de defensa nacional, seguridad interior, civiles, comerciales y científicas, según la NASA, y la propia agencia lo utiliza también en el espacio. La NASA ha desarrollado receptores GPS que viajan a bordo de vehículos espaciales; uno procedente del Centro de Vuelo Espacial Goddard voló en la misión de servicio al Hubble de 2009 y se consideró todo un éxito {nasa-gps}. El sistema continúa modernizándose. A fecha de marzo de 2026, 21 satélites emiten la nueva señal L5, que se considera preoperativa hasta que los 24 satélites estén disponibles en 2027 {wiki-gps}."
     }
   ],
   "keyPoint": {
     "en": "Satellites broadcast their position and the time, and your receiver turns the delay of each signal into a distance. That only works because satellite atomic clocks are extremely precise and corrected for relativity. Accuracy for civilians improved to about 5 metres once the deliberate error was switched off in 2000.",
-    "vi": "Vệ tinh phát vị trí và thời gian, còn máy thu của bạn biến độ trễ của mỗi tín hiệu thành khoảng cách. Điều đó chỉ hoạt động vì đồng hồ nguyên tử trên vệ tinh cực kỳ chính xác và được hiệu chỉnh theo thuyết tương đối. Độ chính xác cho dân thường được cải thiện lên khoảng 5 mét khi sai số có chủ ý bị tắt năm 2000."
+    "vi": "Vệ tinh phát vị trí và thời gian, còn máy thu của bạn biến độ trễ của mỗi tín hiệu thành khoảng cách. Điều đó chỉ hoạt động vì đồng hồ nguyên tử trên vệ tinh cực kỳ chính xác và được hiệu chỉnh theo thuyết tương đối. Độ chính xác cho dân thường được cải thiện lên khoảng 5 mét khi sai số có chủ ý bị tắt năm 2000.",
+    "fr": "Les satellites diffusent leur position et l'heure, et votre récepteur convertit le délai de chaque signal en une distance. Cela ne fonctionne que parce que les horloges atomiques des satellites sont extrêmement précises et corrigées de la relativité. La précision civile s'est améliorée pour atteindre environ 5 mètres une fois l'erreur délibérée désactivée en 2000.",
+    "de": "Satelliten strahlen ihre Position und die Uhrzeit aus, und dein Empfänger berechnet aus der Signallaufzeit die jeweilige Entfernung. Dies funktioniert nur, weil die Atomuhren der Satelliten extrem präzise laufen und relativistische Effekte korrigiert werden. Mit der Abschaltung des absichtlichen Fehlers im Jahr 2000 verbesserte sich die Genauigkeit für zivile Nutzer auf rund 5 Meter.",
+    "es": "Los satélites transmiten su posición y la hora, y el receptor convierte el retardo de cada señal en una distancia. Esto solo funciona porque los relojes atómicos de los satélites son sumamente precisos y están corregidos según la relatividad. La precisión para uso civil mejoró a unos 5 metros tras desactivarse el error deliberado en el año 2000."
   },
   "applySteps": {
     "en": [
@@ -70,6 +115,21 @@
       "Tắt dữ liệu di động và Wi-Fi trên điện thoại, mở ứng dụng bản đồ ngoài trời và xem nó có còn tìm ra vị trí của bạn không.",
       "Dùng một ứng dụng trạng thái vệ tinh để xem điện thoại của bạn đang thấy bao nhiêu vệ tinh GPS.",
       "Tìm sơ đồ sáu mặt phẳng quỹ đạo và xác định chỗ một vệ tinh đang bay qua đầu vào lúc này."
+    ],
+    "fr": [
+      "Désactivez les données mobiles et le Wi-Fi de votre téléphone, ouvrez une application de cartographie en extérieur et vérifiez si elle trouve toujours votre position.",
+      "Regardez combien de satellites GPS votre téléphone capte en ce moment à l'aide d'une application d'état des satellites.",
+      "Trouvez une carte des six plans orbitaux et repérez où un satellite passe au-dessus de vous en ce moment."
+    ],
+    "de": [
+      "Schalte mobile Daten und WLAN auf deinem Smartphone aus, öffne im Freien eine Karten-App und prüfe, ob sie deine Position trotzdem ermittelt.",
+      "Sieh mit einer Satelliten-Status-App nach, wie viele GPS-Satelliten dein Smartphone im Moment empfangen kann.",
+      "Suche nach einer Karte der sechs Bahnebenen und bestimme, welcher Satellit gerade über dir seine Bahn zieht."
+    ],
+    "es": [
+      "Desactiva los datos móviles y el wifi de tu teléfono, abre una aplicación de mapas al aire libre y comprueba si aún localiza tu posición.",
+      "Consulta cuántos satélites GPS detecta tu teléfono en este momento mediante una aplicación de estado de satélites.",
+      "Busca un mapa de los seis planos orbitales e identifica por dónde pasa un satélite sobre tu ubicación en este instante."
     ]
   },
   "references": [
@@ -94,12 +154,94 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/how-gps-knows-where-you-are.webp",
+    "url": "https://images.unsplash.com/13/unsplash_523b2af0710a7_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Guillaume",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/_DA3D5P71qs"
+    "sourceUrl": "https://unsplash.com/photos/_DA3D5P71qs",
+    "wide": "https://images.unsplash.com/13/unsplash_523b2af0710a7_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@guillaume?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABQAwCdASoQABwAPu1kqk4ppaQiMAgBMB2JYwAAg/AchHJpoAD+7+Out0izoPesGppS74B4yXrT6+mYrX3AgpVIdOJ4EfQ/BEAAAA==",
-  "dominant": "#1a1c0e"
+  "dominant": "#1a1c0e",
+  "glossary": {
+    "en": {
+      "nanoseconds": "Units of time equal to one billionth of a second.",
+      "constellation": "A coordinated group of satellites working together to provide global coverage.",
+      "orbital planes": "The flat geometric surfaces defined by the circular paths of orbiting satellites.",
+      "redundant": "Duplicate backup components used to maintain operation if the primary system fails.",
+      "atomic clocks": "Highly accurate timekeeping devices that measure time using vibrations of atoms.",
+      "microseconds": "Units of time equal to one millionth of a second.",
+      "fix": "A calculated geographic position or location determined by navigation equipment.",
+      "general relativity": "Einstein's theory describing how gravity and space-time curvature affect the passage of time.",
+      "doppler effect": "The change in wave frequency caused by motion between the transmitter and receiver.",
+      "selective availability": "An intentional degradation of civilian GPS accuracy formerly imposed by the US military.",
+      "l5 signal": "An advanced civilian GPS radio frequency providing improved accuracy and interference resistance."
+    },
+    "vi": {
+      "gps": "Hệ thống định vị toàn cầu bằng mạng lưới vệ tinh không gian.",
+      "máy thu": "Thiết bị nhận và xử lý tín hiệu từ vệ tinh để xác định vị trí.",
+      "nano giây": "Đơn vị đo thời gian cực nhỏ, bằng một phần một tỷ giây.",
+      "quỹ đạo": "Đường đi tuần hoàn của vệ tinh quay quanh Trái Đất.",
+      "chòm vệ tinh": "Nhóm nhiều vệ tinh hoạt động cùng nhau để phủ sóng toàn cầu.",
+      "độ trễ": "Thời gian truyền tín hiệu vô tuyến từ vệ tinh đến máy thu.",
+      "micro giây": "Đơn vị thời gian bằng một phần một triệu giây.",
+      "thuyết tương đối": "Lý thuyết của Einstein giải thích thời gian thay đổi theo vận tốc và lực hấp dẫn.",
+      "hiệu ứng doppler": "Hiện tượng tần số sóng thay đổi khi nguồn phát chuyển động so với máy thu.",
+      "sputnik": "Vệ tinh nhân tạo đầu tiên bay vào quỹ đạo do Liên Xô chế tạo.",
+      "timation": "Chương trình vệ tinh thử nghiệm đồng hồ nguyên tử đầu tiên trên không gian.",
+      "block i": "Dòng vệ tinh thử nghiệm ban đầu dùng để hoàn thiện hệ thống GPS.",
+      "selective availability": "Tính năng cố ý gây sai số để giảm độ chính xác của GPS dân sự.",
+      "l5": "Tần số tín hiệu GPS dân sự thế hệ mới có độ chính xác cao."
+    },
+    "fr": {
+      "radionavigation spatiale": "Système de localisation et navigation reposant sur des signaux radio émis depuis l'espace.",
+      "segment spatial": "Ensemble des satellites en orbite assurant l'émission des signaux d'un système de navigation.",
+      "plans orbitaux": "Trajectoires géométriques distinctes dans l'espace selon lesquelles sont répartis les satellites en orbite.",
+      "segment de contrôle": "Réseau terrestre chargé de surveiller, corriger et télécommander les satellites d'une constellation.",
+      "segment utilisateur": "Ensemble des terminaux et récepteurs au sol qui traitent les signaux satellitaires.",
+      "horloges atomiques": "Instruments de mesure temporelle d'extrême précision basés sur les oscillations naturelles d'atomes.",
+      "effet doppler": "Variation de la fréquence d'une onde émise causée par le mouvement relatif de l'émetteur.",
+      "selective availability": "Dégradation intentionnelle du signal GPS civil imposée par les autorités américaines jusqu'en 2000.",
+      "signal l5": "Signal radio GPS modernisé conçu pour offrir une précision et une fiabilité renforcées.",
+      "timation": "Série de satellites expérimentaux de la marine américaine précurseurs directs du système GPS."
+    },
+    "de": {
+      "funknavigationssystem": "System zur weltweiten Positionsbestimmung und Navigation auf der Erde mithilfe von Funksignalen aus dem Weltraum.",
+      "raumsegment": "Der weltraumgestützte Teil des GPS, gebildet durch die Gesamtheit aller kreisenden Satelliten.",
+      "bahnebenen": "Die geometrischen Ebenen im All, auf denen sich die Satelliten um die Erde bewegen.",
+      "kontrollsegment": "Netz von Bodenstationen zur Bahnverfolgung, Steuerung, Synchronisation und Wartung der GPS-Satelliten.",
+      "nutzersegment": "Geräte wie Smartphones oder Navigationssysteme, die Satellitensignale empfangen und zur Orts- und Zeitbestimmung auswerten.",
+      "atomuhren": "Hochpräzise Zeitmesser, die atomare Schwingungen als Taktgeber nutzen.",
+      "doppler-effekt": "Frequenzverschiebung von Wellen bei relativer Bewegung zwischen Sender und Empfänger.",
+      "selective availability": "Frühere gezielte künstliche Verschlechterung des zivilen GPS-Signals durch das US-Militär aus Sicherheitsgründen.",
+      "l5-signal": "Ein modernes ziviles GPS-Signal mit höherer Sendeleistung und verbesserter Genauigkeit.",
+      "relativitätstheorie": "Physikalische Theorien Einsteins über die Auswirkungen von Bewegung und Gravitation auf den Gang von Uhren."
+    },
+    "es": {
+      "radionavegación": "Navegación asistida por ondas de radio para calcular la posición geográfica y la hora exacta.",
+      "segmento espacial": "Conjunto de satélites en órbita que transmiten señales continuas hacia los receptores terrestres.",
+      "planos orbitales": "Trayectorias geométricas circulares o elípticas distribuidas en diferentes ángulos alrededor del planeta.",
+      "segmento de control": "Red terrestre de antenas y estaciones encargada de supervisar, corregir y mantener los satélites.",
+      "segmento de usuario": "Equipos receptores que captan y procesan las señales satelitales para calcular coordenadas y hora.",
+      "relojes atómicos": "Instrumentos de máxima precisión temporal regulados por la oscilación periódica de átomos.",
+      "relatividad especial": "Teoría física de Einstein sobre el movimiento relativo y la dilatación temporal a altas velocidades.",
+      "relatividad general": "Teoría de la gravitación de Einstein que demuestra cómo la gravedad altera el transcurso del tiempo.",
+      "efecto doppler": "Variación aparente de la frecuencia de onda causada por el movimiento relativo entre emisor y receptor.",
+      "disponibilidad selectiva": "Degradación intencionada de la precisión de la señal civil implementada inicialmente con fines militares.",
+      "señal l5": "Frecuencia civil moderna de alta potencia diseñada para aplicaciones que exigen mayor fiabilidad.",
+      "nanosegundos": "Unidades de medida del tiempo correspondientes a la milmillonésima fracción de un segundo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

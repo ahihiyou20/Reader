@@ -38,11 +38,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/442/1080/1920",
+    "url": "https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Sylwia Bartyzel",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/D2K1UZr4vxk"
+    "sourceUrl": "https://unsplash.com/photos/D2K1UZr4vxk",
+    "wide": "https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@sylwiabartyzel?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -87,7 +89,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết phơi bày sự thật lịch sử rằng nhiều bản đồ châu Phi thời thuộc địa không chỉ do người châu Âu tự vẽ. Thay vào đó, chúng được xây dựng dựa trên thông tin, hướng dẫn và các bản vẽ thực tế trên mặt đất của người dân và nhà thám hiểm bản địa. Người châu Âu thường ghi nhận công sức này bằng các đường đứt nét hoặc che giấu nguồn gốc địa phương. Những tài liệu mang tính lai tạo này sau đó thậm chí còn được dùng để phân chia thuộc địa, biến tri thức bản địa thành công cụ bành trướng đế quốc mà ít ai nhận ra."
+    "vi": "Bài viết phơi bày sự thật lịch sử rằng nhiều bản đồ châu Phi thời thuộc địa không chỉ do người châu Âu tự vẽ. Thay vào đó, chúng được xây dựng dựa trên thông tin, hướng dẫn và các bản vẽ thực tế trên mặt đất của người dân và nhà thám hiểm bản địa. Người châu Âu thường ghi nhận công sức này bằng các đường đứt nét hoặc che giấu nguồn gốc địa phương. Những tài liệu mang tính lai tạo này sau đó thậm chí còn được dùng để phân chia thuộc địa, biến tri thức bản địa thành công cụ bành trướng đế quốc mà ít ai nhận ra.",
+    "fr": "Longtemps attribuées aux seuls explorateurs occidentaux, les cartes coloniales de l'Afrique résultent en réalité d'une collaboration étroite avec les populations locales. Guides, interprètes et souverains africains ont façonné ces représentations géographiques en décrivant les itinéraires, en corrigeant les mythes européens et en régulant l'accès à leurs territoires. Pourtant, les cartographes coloniaux ont occulté ces contributions cruciales ou les ont reléguées au rang d'informations secondaires en pointillés, au nom d'une prétendue « supériorité » scientifique. Utilisées lors de la conférence de Berlin pour dépecer le continent, ces archives cartographiques révèlent aujourd'hui leur véritable nature : des créations hybrides nées d'échanges interculturels longtemps ignorés.",
+    "de": "Historische Karten Afrikas gelten oft als rein europäische Errungenschaften, doch dieses Bild trügt. Tatsächlich basierte ein Großteil der kolonialzeitlichen Kartografie auf indigenem Wissen. Europäische Forscher wie Duveyrier, Binger oder Marchand waren auf afrikanische Führer, mündliche Routenbeschreibungen und Skizzen im Sand angewiesen; auf manchen Karten stammte die Mehrheit der Wegstrecken von Einheimischen. Auch weiße Flecken spiegelten selten bloßes Nichtwissen wider, sondern entstanden, weil afrikanische Herrscher Europäern den Zugang verwehrten. Historiker begreifen diese Dokumente heute zunehmend als hybride Werke eines komplexen interkulturellen Austauschs. Obwohl europäische Mächte den Ruhm beanspruchten und die Karten zur kolonialen Aufteilung nutzten, steckt in ihnen fundamentales afrikanisches Wissen.",
+    "es": "¿Fueron los exploradores europeos los únicos artífices de los mapas coloniales de África? Durante siglos se atribuyó la cartografía del continente exclusivamente a viajeros occidentales, ocultando el papel determinante de las poblaciones locales. Investigaciones históricas demuestran que gran parte de la información geográfica provino de guías, comerciantes e intérpretes africanos, quienes trazaban rutas sobre la arena o mediante descripciones orales. Cartógrafos como Duveyrier o Marchand incorporaron masivamente estos valiosos testimonios indígenas en sus registros. Paradójicamente, estos mapas híbridos facilitaron la posterior repartición colonial europea durante conferencias decisivas como la de Berlín."
   },
   "keyPoint": {
     "en": "Standard maps are like borrowed architectural blueprints that erase the original builders' names; how can you uncover the overlooked local origins behind famous historical records today?",
@@ -109,10 +114,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-01T02:29:24.452Z"
+  "publishAt": "2026-11-01T02:29:24.452Z",
+  "glossary": {
+    "en": {
+      "projections": "Mathematical methods for representing Earth's curved surface on a flat, two-dimensional map.",
+      "ephemeral": "Short-lived or temporary, such as maps drawn in sand or arranged with straw.",
+      "soldier-surveyors": "Military officers tasked with measuring terrain and drawing geographical maps to aid colonial conquest.",
+      "kong mountains": "A fictional West African mountain range depicted on nineteenth-century European maps before being disproved.",
+      "scientific cartography": "Mapmaking relying on standardized instruments, mathematical calculations, and direct empirical measurements.",
+      "civilizing mission": "A colonial ideology asserting European cultural, technological, and intellectual superiority over colonized peoples.",
+      "compilation maps": "Comprehensive maps created by combining data from diverse expeditions, surveys, and travel reports.",
+      "berlin africa conference": "An 1884–1885 summit where European powers established rules for dividing Africa into colonial territories.",
+      "scramble for africa": "The late nineteenth-century rush by European empires to invade, partition, and colonize African lands.",
+      "hybrid productions": "Artifacts created through the interaction, shared knowledge, and combined efforts of different cultures.",
+      "decolonization": "The historical withdrawal of colonial powers and the restoration of independence to colonized nations."
+    }
+  }
 }

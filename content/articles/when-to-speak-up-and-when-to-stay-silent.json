@@ -11,36 +11,66 @@
   ],
   "title": {
     "en": "When to Speak Up and When to Stay Silent",
-    "vi": "Khi nào nên lên tiếng và khi nào nên giữ im lặng"
+    "vi": "Khi nào nên lên tiếng và khi nào nên giữ im lặng",
+    "fr": "Quand s'exprimer et quand garder le silence",
+    "de": "Wann man sprechen und wann man schweigen sollte",
+    "es": "Cuándo hablar y cuándo guardar silencio"
   },
   "hook": {
     "en": "Deciding whether to voice an opinion is often harder than finding the right words. Social psychologist Vanessa Bohns {source} explains that truth is only useful when it serves a practical purpose, and offers guidance on navigating difficult conversations.",
-    "vi": "Việc quyết định có nên nêu lên quan điểm thường khó khăn hơn việc tìm kiếm từ ngữ phù hợp. Nhà tâm lý học xã hội Vanessa Bohns {source} giải thích rằng sự thật chỉ hữu ích khi nó phục vụ một mục đích thiết thực, đồng thời đưa ra hướng dẫn để vượt qua các cuộc trò chuyện khó khăn."
+    "vi": "Việc quyết định có nên nêu lên quan điểm thường khó khăn hơn việc tìm kiếm từ ngữ phù hợp. Nhà tâm lý học xã hội Vanessa Bohns {source} giải thích rằng sự thật chỉ hữu ích khi nó phục vụ một mục đích thiết thực, đồng thời đưa ra hướng dẫn để vượt qua các cuộc trò chuyện khó khăn.",
+    "fr": "Décider d'exprimer ou non une opinion s'avère souvent plus difficile que de trouver les mots justes. La psychologue sociale Vanessa Bohns {source} explique que la vérité n'est utile que lorsqu'elle poursuit une finalité pratique, et propose des repères pour aborder les conversations délicates.",
+    "de": "Zu entscheiden, ob man seine Meinung äußern sollte, fällt oft schwerer, als die richtigen Worte zu finden. Die Sozialpsychologin Vanessa Bohns {source} erklärt, dass die Wahrheit nur dann nützlich ist, wenn sie einem praktischen Zweck dient, und gibt Orientierung für schwierige Gespräche.",
+    "es": "Decidir si expresar una opinión suele ser más difícil que encontrar las palabras adecuadas. La psicóloga social Vanessa Bohns {source} explica que la verdad solo resulta útil cuando cumple un propósito práctico, y ofrece pautas para abordar conversaciones difíciles."
   },
   "sections": [
     {
       "heading_en": "The Cost of Unpleasant Messages",
       "heading_vi": "Cái giá của thông điệp khó chịu",
       "body_en": "People often avoid giving critical feedback because causing distress to others feels painful. This avoidance behavior has a specific designation known as the [y:MUM effect], which stands for minimizing unpleasant messages. However, careful consideration helps individuals determine when speaking up matters most.",
-      "body_vi": "Mọi người thường tránh đưa ra phản hồi mang tính chỉ trích vì việc gây ra sự khó chịu cho người khác mang lại cảm giác đau đớn. Hành vi né tránh này có một tên gọi cụ thể là [y:hiệu ứng MUM] (*MUM effect*), viết tắt của việc giảm thiểu các thông điệp khó chịu. Tuy nhiên, việc cân nhắc kỹ lưỡng giúp các cá nhân xác định thời điểm lên tiếng là quan trọng nhất."
+      "body_vi": "Mọi người thường tránh đưa ra phản hồi mang tính chỉ trích vì việc gây ra sự khó chịu cho người khác mang lại cảm giác đau đớn. Hành vi né tránh này có một tên gọi cụ thể là [y:hiệu ứng MUM] (*MUM effect*), viết tắt của việc giảm thiểu các thông điệp khó chịu. Tuy nhiên, việc cân nhắc kỹ lưỡng giúp các cá nhân xác định thời điểm lên tiếng là quan trọng nhất.",
+      "heading_fr": "Le coût des messages désagréables",
+      "body_fr": "Les gens évitent souvent d'émettre des critiques parce que peiner autrui s'avère désagréable. Ce comportement d'évitement porte un nom précis : l'[y:effet MUM], qui désigne la minimisation des messages déplaisants. Toutefois, une réflexion attentive aide chacun à discerner les situations où prendre la parole importe le plus.",
+      "heading_de": "Der Preis unangenehmer Botschaften",
+      "body_de": "Menschen vermeiden es oft, kritisches Feedback zu geben, weil es schmerzt, bei anderen Unbehagen auszulösen. Dieses Vermeidungsverhalten trägt eine eigene Bezeichnung, bekannt als der [y:MUM-Effekt], was für „minimizing unpleasant messages“ steht. Sorgfältiges Abwägen hilft Einzelnen jedoch festzustellen, wann es wirklich zählt, sich zu Wort zu melden.",
+      "heading_es": "El costo de los mensajes desagradables",
+      "body_es": "A menudo, las personas evitan ofrecer retroalimentación crítica porque causar malestar a los demás resulta doloroso. Esta conducta de evitación tiene una designación específica conocida como el [y:efecto MUM], que alude a minimizar mensajes desagradables. Sin embargo, una cuidadosa deliberación ayuda a determinar cuándo alzar la voz es fundamental."
     },
     {
       "heading_en": "Evaluating the Value of Information",
       "heading_vi": "Đánh giá giá trị của thông tin",
       "body_en": "Honesty requires instrumental value to be truly effective. Speaking communicates care, but feedback remains unhelpful if it lacks practical steps for improvement. Bohns {source} notes that comments should help someone learn or avoid embarrassment rather than simply express a mean-spirited thought.",
-      "body_vi": "Sự tính chân thực đòi hỏi giá trị thực tế để thực sự hiệu quả. Việc nói chuyện truyền đạt sự quan tâm, nhưng phản hồi vẫn không hữu ích nếu nó thiếu các bước hành động để cải thiện. Bohns {source} lưu ý rằng các nhận xét nên giúp ai đó học hỏi hoặc tránh sự bối rối thay vì chỉ bày tỏ một ý nghĩ kém duyên."
+      "body_vi": "Sự tính chân thực đòi hỏi giá trị thực tế để thực sự hiệu quả. Việc nói chuyện truyền đạt sự quan tâm, nhưng phản hồi vẫn không hữu ích nếu nó thiếu các bước hành động để cải thiện. Bohns {source} lưu ý rằng các nhận xét nên giúp ai đó học hỏi hoặc tránh sự bối rối thay vì chỉ bày tỏ một ý nghĩ kém duyên.",
+      "heading_fr": "Évaluer la valeur de l'information",
+      "body_fr": "Pour être réellement efficace, la franchise doit posséder une valeur instrumentale. Exprimer le fond de sa pensée témoigne d'une attention bienveillante, mais un retour demeure vain s'il ne fournit aucune piste concrète d'amélioration. Bohns {source} rappelle qu'une remarque doit aider autrui à apprendre ou à lui éviter un embarras, plutôt que d'extérioriser une simple pensée blessante.",
+      "heading_de": "Den Wert von Informationen ermitteln",
+      "body_de": "Ehrlichkeit muss einen instrumentellen Nutzen besitzen, um wirklich wirksam zu sein. Ein offenes Wort signalisiert Fürsorge, doch Rückmeldungen bleiben nutzlos, wenn ihnen konkrete Schritte zur Verbesserung fehlen. Bohns {source} betont, dass Anmerkungen jemandem dabei helfen sollten, dazuzulernen oder Peinlichkeiten zu vermeiden, anstatt bloß einen gehässigen Gedanken loszuwerden.",
+      "heading_es": "Evaluar el valor de la información",
+      "body_es": "La honestidad exige un valor instrumental para ser verdaderamente eficaz. Comunicarse denota preocupación, pero la retroalimentación resulta inútil si carece de medidas prácticas orientadas a mejorar. Bohns {source} señala que los comentarios deberían ayudar a alguien a aprender o a evitar pasar vergüenza, en lugar de limitarse a expresar una idea malintencionada."
     },
     {
       "heading_en": "Assessing Desire for Feedback",
       "heading_vi": "Đánh giá mong muốn nhận phản hồi",
       "body_en": "Individuals frequently misjudge how much others appreciate receiving guidance. A [p:2022 survey] demonstrated that people consistently underestimate others' desire for corrections when faced with noticeable smudges on their faces. Most observers stayed silent despite obvious needs.",
-      "body_vi": "Các cá nhân thường đánh giá sai mức độ đánh giá cao việc nhận được sự hướng dẫn của người khác. Một [p:khảo sát năm 2022] (*2022 survey*) đã chứng minh rằng mọi người liên tục đánh giá thấp mong muốn được sửa sai của người khác khi đối mặt với các vết nhòe rõ ràng trên khuôn mặt họ. Hầu hết những người quan sát đều giữ im lặng mặc dù có nhu cầu rõ ràng."
+      "body_vi": "Các cá nhân thường đánh giá sai mức độ đánh giá cao việc nhận được sự hướng dẫn của người khác. Một [p:khảo sát năm 2022] (*2022 survey*) đã chứng minh rằng mọi người liên tục đánh giá thấp mong muốn được sửa sai của người khác khi đối mặt với các vết nhòe rõ ràng trên khuôn mặt họ. Hầu hết những người quan sát đều giữ im lặng mặc dù có nhu cầu rõ ràng.",
+      "heading_fr": "Évaluer le désir d'obtenir des retours",
+      "body_fr": "Chacun sous-estime fréquemment à quel point autrui apprécie d'être guidé. Une [p:enquête de 2022] a ainsi démontré que l'on minimise systématiquement le désir d'autrui de recevoir des remarques correctives face à une tache visible sur le visage. La plupart des témoins ont gardé le silence malgré une nécessité évidente.",
+      "heading_de": "Das Bedürfnis nach Feedback einschätzen",
+      "body_de": "Viele Menschen schätzen häufig falsch ein, wie sehr andere ein hilfreiches Feedback schätzen. Eine [p:Umfrage von 2022] zeigte, dass Personen den Wunsch anderer nach einem Hinweis durchweg unterschätzen, wenn diese sichtbare Flecken im Gesicht haben. Die meisten Beobachter schwiegen trotz offensichtlichen Bedarfs.",
+      "heading_es": "Evaluar el deseo de recibir retroalimentación",
+      "body_es": "Con frecuencia, las personas juzgan mal hasta qué punto los demás aprecian recibir orientación. Una [p:encuesta de 2022] demostró que la gente subestima de manera constante el deseo ajeno de ser corregido ante manchas visibles en el rostro. La mayoría de los observadores optó por guardar silencio a pesar de las necesidades evidentes."
     },
     {
       "heading_en": "Checking Personal Motivations",
       "heading_vi": "Kiểm tra động lực cá nhân",
       "body_en": "Reflecting on personal motivations prevents unwanted interference. Asking permission before sharing ensures recipients retain autonomy over their choices. Bohns {source} emphasizes respecting whatever decision the other person makes regarding the offered insights.",
-      "body_vi": "Việc suy ngẫm về động lực cá nhân giúp ngăn chặn sự can thiệp không mong muốn. Việc xin phép trước khi chia sẻ đảm bảo người nhận giữ được quyền tự chủ đối với các lựa chọn của họ. Bohns {source} nhấn mạnh việc tôn trọng bất kỳ quyết định nào mà người kia đưa ra liên quan đến những góc nhìn được đề xuất."
+      "body_vi": "Việc suy ngẫm về động lực cá nhân giúp ngăn chặn sự can thiệp không mong muốn. Việc xin phép trước khi chia sẻ đảm bảo người nhận giữ được quyền tự chủ đối với các lựa chọn của họ. Bohns {source} nhấn mạnh việc tôn trọng bất kỳ quyết định nào mà người kia đưa ra liên quan đến những góc nhìn được đề xuất.",
+      "heading_fr": "Examiner ses motivations personnelles",
+      "body_fr": "Examiner ses propres motivations évite toute ingérence inopportune. Demander l'autorisation préalable garantit que les destinataires conservent leur autonomie face à leurs choix. Bohns {source} souligne la nécessité de respecter toute décision prise par son interlocuteur vis-à-vis des remarques formulées.",
+      "heading_de": "Eigene Beweggründe überprüfen",
+      "body_de": "Das Nachdenken über persönliche Beweggründe schützt vor unerwünschter Einmischung. Wer vorab um Erlaubnis bittet, stellt sicher, dass das Gegenüber die Autonomie über eigene Entscheidungen behält. Bohns {source} hebt hervor, wie wichtig es ist, jede Entscheidung der anderen Person bezüglich der angebotenen Erkenntnisse zu respektieren.",
+      "heading_es": "Examinar las motivaciones personales",
+      "body_es": "Reflexionar sobre las motivaciones personales previene intromisiones indeseadas. Pedir permiso antes de opinar garantiza que los destinatarios conserven su autonomía frente a sus decisiones. Bohns {source} recalca la importancia de respetar cualquier decisión que tome la otra persona respecto a las observaciones ofrecidas."
     }
   ],
   "references": [
@@ -52,11 +82,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/563/1080/1920",
+    "url": "https://images.unsplash.com/photo-1416862291207-4ca732144d83?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Bec Brown",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/7RIm0GqvvkM"
+    "sourceUrl": "https://unsplash.com/photos/7RIm0GqvvkM",
+    "wide": "https://images.unsplash.com/photo-1416862291207-4ca732144d83?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@bec_brown?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -73,7 +105,10 @@
   },
   "keyPoint": {
     "en": "Deciding to speak up functions like a surgical tool: use it only when it heals rather than cuts. Before sharing feedback, ask yourself if the recipient actually wants to hear it and whether your words will genuinely help them improve their situation.",
-    "vi": "Việc quyết định lên tiếng hoạt động giống như một dụng cụ phẫu thuật: chỉ sử dụng khi nó chữa lành thay vì cắt đứt. Trước khi chia sẻ phản hồi, hãy tự hỏi bản thân xem người nhận có thực sự muốn nghe điều đó hay không và liệu lời nói của bạn có thực sự giúp họ cải thiện tình hình của mình hay không."
+    "vi": "Việc quyết định lên tiếng hoạt động giống như một dụng cụ phẫu thuật: chỉ sử dụng khi nó chữa lành thay vì cắt đứt. Trước khi chia sẻ phản hồi, hãy tự hỏi bản thân xem người nhận có thực sự muốn nghe điều đó hay không và liệu lời nói của bạn có thực sự giúp họ cải thiện tình hình của mình hay không.",
+    "fr": "Prendre la parole fonctionne comme un instrument chirurgical : n'y recourez que pour soigner plutôt que pour blesser. Avant d'émettre un retour, demandez-vous si votre interlocuteur souhaite réellement l'entendre et si vos paroles l'aideront véritablement à améliorer sa situation.",
+    "de": "Die Entscheidung, das Wort zu ergreifen, gleicht einem chirurgischen Instrument: Setze es nur ein, wenn es heilt und nicht verletzt. Frage dich vor einer Rückmeldung, ob die andere Person sie überhaupt hören möchte und ob deine Worte ihr wirklich dabei helfen, ihre Situation zu verbessern.",
+    "es": "Decidir cuándo hablar funciona como un instrumento quirúrgico: utilícelo solo cuando cure en lugar de herir. Antes de compartir retroalimentación, pregúntese si el destinatario realmente desea escucharla y si sus palabras le ayudarán genuinamente a mejorar su situación."
   },
   "applySteps": {
     "en": [
@@ -85,6 +120,21 @@
       "Xác định xem phản hồi sắp tới của bạn có mục đích rõ ràng và thiết thực hay không.",
       "Suy ngẫm về động lực thực sự của bạn để đảm bảo bạn không né tránh sự khó chịu cá nhân.",
       "Hỏi trực tiếp người kia xem họ có muốn nghe suy nghĩ của bạn trước khi nói hay không."
+    ],
+    "fr": [
+      "Déterminez si votre retour à venir poursuit un objectif clair et exploitable.",
+      "Interrogez-vous sur vos motivations profondes afin de vous assurer que vous ne cherchez pas simplement à fuir votre propre inconfort.",
+      "Demandez directement à votre interlocuteur s'il souhaite entendre votre avis avant de prendre la parole."
+    ],
+    "de": [
+      "Prüfe, ob dein geplantes Feedback einen klaren, umsetzbaren Zweck erfüllt.",
+      "Reflektiere deine wahren Beweggründe, um sicherzustellen, dass du nicht bloß eigenem Unbehagen ausweichst.",
+      "Frage dein Gegenüber vorab direkt, ob es deine Gedanken hören möchte."
+    ],
+    "es": [
+      "Identifique si su próxima retroalimentación tiene un propósito claro y procesable.",
+      "Reflexione sobre sus verdaderas motivaciones para asegurarse de no estar rehuyendo la incomodidad personal.",
+      "Pregunte directamente a la otra persona si desea conocer sus comentarios antes de hablar."
     ]
   },
   "coverCandidates": [
@@ -121,9 +171,76 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "social psychologist": "A researcher who studies how individuals are influenced by others and their social environment.",
+      "mum effect": "The psychological tendency to avoid delivering negative or uncomfortable news to prevent distress.",
+      "minimizing unpleasant messages": "The full phrase behind the MUM acronym, describing the habit of withholding negative information.",
+      "avoidance behavior": "Actions taken to evade emotionally distressing situations, uncomfortable conversations, or conflict.",
+      "critical feedback": "Evaluative comments pointing out mistakes or areas where someone needs improvement.",
+      "instrumental value": "Practical usefulness that serves as a direct means toward achieving a helpful outcome.",
+      "mean-spirited": "Motivated by malice, cruelty, or an unkind desire to put someone down.",
+      "autonomy": "The freedom and independence to make one's own choices and control one's actions.",
+      "interference": "Unwanted involvement or intrusion in another person's private affairs or decisions.",
+      "actionable": "Practical enough to be directly applied or translated into immediate action."
+    },
+    "vi": {
+      "hiệu ứng mum": "Xu hướng né tránh hoặc ngần ngại chia sẻ thông tin khó chịu cho người khác.",
+      "tính chân thực": "Sự thẳng thắn bộc lộ suy nghĩ thực tế một cách chân thành và trung thực.",
+      "bước hành động": "Hướng dẫn hoặc biện pháp cụ thể giúp người nhận biết cách cải thiện.",
+      "kém duyên": "Thiếu tinh tế, tế nhị và gây phản cảm trong cách ứng xử giao tiếp.",
+      "bối rối": "Cảm giác lúng túng, ngượng ngùng hoặc khó xử trước mặt người xung quanh.",
+      "đánh giá thấp": "Nhận định mức độ hoặc nhu cầu thực tế của người khác thấp hơn bản chất.",
+      "sửa sai": "Việc được chỉ ra và chỉnh sửa những khuyết điểm hoặc lỗi lầm hiện có.",
+      "vết nhòe": "Dấu vết bẩn hoặc lỗi bề ngoài gây mất thẩm mỹ trên khuôn mặt.",
+      "can thiệp": "Việc xen vào hoặc tham gia sâu vào đời tư hay lựa chọn của người khác.",
+      "quyền tự chủ": "Quyền độc lập tự đưa ra quyết định đối với các lựa chọn của bản thân."
+    },
+    "fr": {
+      "effet mum": "Tendance à taire ou à minimiser les messages déplaisants pour éviter de perturber autrui.",
+      "psychologue sociale": "Spécialiste analysant l'influence des relations sociales sur les comportements individuels.",
+      "valeur instrumentale": "Utilité pratique d'une information servant de moyen concret pour atteindre un résultat.",
+      "embarras": "Sentiment de gêne ou de malaise ressenti en situation sociale.",
+      "remarques correctives": "Observations signalant une anomalie ou une maladresse pour permettre d'y remédier.",
+      "ingérence inopportune": "Intervention non désirée et déplacée dans les choix ou la vie d'une personne.",
+      "autonomie": "Capacité d'un individu à prendre librement ses décisions sans contrainte.",
+      "instrument chirurgical": "Outil hautement précis devant réparer un préjudice sans infliger de blessure inutile.",
+      "exploitable": "Qualifie une recommandation concrète directement utilisable pour progresser.",
+      "inconfort": "Malaise psychologique ou émotionnel ressenti face à une situation difficile."
+    },
+    "de": {
+      "sozialpsychologin": "Wissenschaftlerin, die den Einfluss sozialer Interaktionen auf das Verhalten und Erleben von Individuen erforscht.",
+      "mum-effekt": "Psychologisches Phänomen, bei dem Personen aus Angst vor negativen Reaktionen zögern, schlechte Nachrichten weiterzugeben.",
+      "vermeidungsverhalten": "Verhaltensweisen, die darauf abzielen, unangenehmen Emotionen, Konflikten oder Situationen aus dem Weg zu gehen.",
+      "instrumentellen nutzen": "Den praktischen Wert einer Handlung oder Information zur zielgerichteten Erreichung eines bestimmten Ergebnisses.",
+      "fürsorge": "Aufmerksames, wohlwollendes Verhalten, das auf das Wohlergehen und die Unterstützung anderer ausgerichtet ist.",
+      "umfrage von 2022": "Eine wissenschaftliche Erhebung, die das Kommunikationsverhalten von Menschen bei sichtbaren Korrekturbedarfen untersuchte.",
+      "beweggründe": "Innere Motive, Antriebe oder Ursachen, die eine Person zu einem bestimmten Handeln veranlassen.",
+      "unerwünschter einmischung": "Das ungebetene und als störend empfundene Eingreifen in die persönlichen Belange eines anderen.",
+      "autonomie": "Der Zustand der Selbstbestimmung, Unabhängigkeit und Entscheidungsfreiheit einer Person.",
+      "chirurgischen instrument": "Metapher für ein wirksames Werkzeug, das bei unbedachtem Einsatz verletzen statt helfen kann.",
+      "umsetzbaren zweck": "Ein konkretes, praktisch anwendbares Ziel, das zu einer tatsächlichen Verbesserung führt."
+    },
+    "es": {
+      "psicóloga social": "Especialista que estudia cómo las relaciones sociales influyen en los pensamientos y conductas individuales.",
+      "retroalimentación crítica": "Comentarios evaluativos que señalan fallos o aspectos a corregir en una persona.",
+      "conducta de evitación": "Comportamiento orientado a eludir situaciones que generan incomodidad, estrés o malestar.",
+      "efecto mum": "Tendencia psicológica a evitar o posponer la transmisión de información negativa o desagradable.",
+      "valor instrumental": "Utilidad concreta de una acción para alcanzar un objetivo práctico de mejora.",
+      "intromisiones indeseadas": "Interferencias u opiniones no solicitadas que irrumpen indebidamente en asuntos ajenos.",
+      "autonomía": "Capacidad y derecho individual para decidir y actuar según el propio criterio.",
+      "observaciones ofrecidas": "Comentarios constructivos proporcionados a alguien para guiar sus acciones o decisiones.",
+      "instrumento quirúrgico": "Herramienta que requiere extrema cautela y precisión para sanar sin producir heridas.",
+      "incomodidad personal": "Sensación de tensión o desazón que surge al abordar un asunto comprometido."
+    }
   }
 }

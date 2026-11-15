@@ -11,59 +11,110 @@
   ],
   "title": {
     "en": "Packet switching: the idea underneath the internet",
-    "vi": "Chuyển mạch gói: ý tưởng nằm dưới internet"
+    "vi": "Chuyển mạch gói: ý tưởng nằm dưới internet",
+    "fr": "Commutation de paquets : l'idée fondatrice d'Internet",
+    "de": "Paketvermittlung: die Grundidee des Internets",
+    "es": "Conmutación de paquetes: la idea detrás de internet"
   },
   "hook": {
     "en": "Every web page you load is chopped into small packets that travel separately and are put back together at the other end. The idea was invented twice, independently: by Paul Baran at RAND in the early 1960s and by Donald Davies in Britain in 1965. [p:Davies gave it the name packet switching], and the ARPANET adopted it in 1967.",
-    "vi": "Mỗi trang web bạn tải được cắt thành những gói nhỏ đi riêng và được ghép lại ở đầu bên kia. Ý tưởng được phát minh hai lần, độc lập: bởi Paul Baran tại RAND đầu thập niên 1960 và bởi Donald Davies ở Anh năm 1965. [p:Davies đặt cho nó cái tên chuyển mạch gói], và ARPANET áp dụng nó năm 1967."
+    "vi": "Mỗi trang web bạn tải được cắt thành những gói nhỏ đi riêng và được ghép lại ở đầu bên kia. Ý tưởng được phát minh hai lần, độc lập: bởi Paul Baran tại RAND đầu thập niên 1960 và bởi Donald Davies ở Anh năm 1965. [p:Davies đặt cho nó cái tên chuyển mạch gói], và ARPANET áp dụng nó năm 1967.",
+    "fr": "Chaque page web que vous chargez est découpée en petits paquets qui voyagent séparément avant d'être réassemblés à l'arrivée. L'idée a été inventée deux fois, indépendamment : par Paul Baran à la RAND au début des années 1960 et par Donald Davies en Grande-Bretagne en 1965. [p:Davies lui a donné le nom de commutation de paquets], et l'ARPANET l'a adoptée en 1967.",
+    "de": "Jede Webseite, die du aufrufst, wird in kleine Pakete zerlegt, die getrennt reisen und am anderen Ende wieder zusammengesetzt werden. Die Idee wurde zweimal unabhängig voneinander erfunden: von Paul Baran bei RAND in den frühen 1960er-Jahren und von Donald Davies in Großbritannien im Jahr 1965. [p:Davies gab ihr den Namen Paketvermittlung], und das ARPANET übernahm sie 1967.",
+    "es": "Cada página web que cargas se divide en pequeños paquetes que viajan por separado y se vuelven a ensamblar en el otro extremo. La idea se inventó dos veces, de forma independiente: por Paul Baran en RAND a principios de la década de 1960 y por Donald Davies en Gran Bretaña en 1965. [p:Davies le dio el nombre de conmutación de paquetes], y ARPANET la adoptó en 1967."
   },
   "sections": [
     {
       "heading_en": "What a packet is",
       "heading_vi": "Gói tin là gì",
       "body_en": "Packet switching groups data into short messages of fixed format, called packets, which are sent over a network {wiki-packet}. A packet has a header, which directs it to its destination, and a payload, which is extracted there. Resources are used only as needed: a channel is occupied for the duration of the packet and then freed for other traffic. Packets are received, buffered, queued and forwarded by switches and routers, so delay and throughput vary with link capacity and load. It is the primary basis for data communications in computer networks worldwide.",
-      "body_vi": "Chuyển mạch gói gom dữ liệu thành những thông điệp ngắn có định dạng cố định, gọi là gói tin, rồi gửi qua mạng {wiki-packet}. Một gói có phần đầu, chỉ hướng đến đích, và phần tải, được lấy ra ở đó. Tài nguyên chỉ được dùng khi cần: một kênh bị chiếm trong thời gian của gói rồi được giải phóng cho lưu lượng khác. Các gói được nhận, đệm, xếp hàng và chuyển tiếp bởi bộ chuyển mạch và bộ định tuyến, nên độ trễ và thông lượng thay đổi theo dung lượng đường truyền và tải. Nó là nền tảng chính của truyền thông dữ liệu trong các mạng máy tính trên toàn thế giới."
+      "body_vi": "Chuyển mạch gói gom dữ liệu thành những thông điệp ngắn có định dạng cố định, gọi là gói tin, rồi gửi qua mạng {wiki-packet}. Một gói có phần đầu, chỉ hướng đến đích, và phần tải, được lấy ra ở đó. Tài nguyên chỉ được dùng khi cần: một kênh bị chiếm trong thời gian của gói rồi được giải phóng cho lưu lượng khác. Các gói được nhận, đệm, xếp hàng và chuyển tiếp bởi bộ chuyển mạch và bộ định tuyến, nên độ trễ và thông lượng thay đổi theo dung lượng đường truyền và tải. Nó là nền tảng chính của truyền thông dữ liệu trong các mạng máy tính trên toàn thế giới.",
+      "heading_fr": "Ce qu'est un paquet",
+      "body_fr": "La commutation de paquets regroupe les données en messages courts de format fixe, appelés paquets, qui sont envoyés sur un réseau {wiki-packet}. Un paquet comporte un en-tête, qui l'achemine vers sa destination, et une charge utile, qui y est extraite. Les ressources ne sont utilisées qu'en cas de besoin : un canal est occupé pendant la durée de transmission du paquet, puis libéré pour d'autres flux. Les paquets sont reçus, mis en mémoire tampon, placés en file d'attente et réexpédiés par des commutateurs et des routeurs, de sorte que le délai et le débit varient selon la capacité et la charge des liaisons. Elle constitue le fondement principal de la communication de données sur les réseaux informatiques du monde entier.",
+      "heading_de": "Was ein Paket ist",
+      "body_de": "Die Paketvermittlung fasst Daten in kurzen Nachrichten mit festem Format zusammen, sogenannten Paketen, die über ein Netzwerk übertragen werden {wiki-packet}. Ein Paket besitzt einen Header, der es an sein Ziel leitet, sowie eine Nutzlast, die dort entnommen wird. Ressourcen werden nur nach Bedarf genutzt: Ein Kanal wird für die Dauer des Pakets belegt und anschließend für anderen Verkehr freigegeben. Pakete werden von Switches und Routern empfangen, zwischengespeichert, in Warteschlangen eingereiht und weitergeleitet, sodass Verzögerung und Durchsatz mit der Leitungskapazität und Auslastung variieren. Sie bildet weltweit die wichtigste Grundlage für die Datenkommunikation in Computernetzen.",
+      "heading_es": "¿Qué es un paquete?",
+      "body_es": "La conmutación de paquetes agrupa los datos en mensajes breves de formato fijo, llamados paquetes, que se envían a través de una red {wiki-packet}. Un paquete consta de un encabezado, que lo orienta hacia su destino, y una carga útil, que se extrae allí. Los recursos se utilizan únicamente cuando es necesario: un canal se ocupa durante la duración del paquete y luego se libera para otro tráfico. Los conmutadores y enrutadores reciben, almacenan en búfer, ponen en cola y reenvían los paquetes, por lo que el retardo y el rendimiento varían según la capacidad del enlace y la carga. Constituye la base fundamental de las comunicaciones de datos en las redes informáticas de todo el mundo."
     },
     {
       "heading_en": "Circuit switching, the old way",
       "heading_vi": "Chuyển mạch kênh, cách cũ",
       "body_en": "The older model was circuit switching, used in the telephone network, where each call is given a dedicated end-to-end connection for its duration {wiki-arpanet}. Circuit switching pre-allocates dedicated bandwidth to each session at a constant bit rate and latency. In billed services it charges per unit of connection time even when no data moves, while packet switching may charge per unit of information sent {wiki-packet}. Baran's ideas contradicted the established principle of pre-allocating bandwidth, which is part of why they found little resonance among network builders at first.",
-      "body_vi": "Mô hình cũ hơn là chuyển mạch kênh, dùng trong mạng điện thoại, trong đó mỗi cuộc gọi được cấp một kết nối đầu cuối dành riêng trong suốt thời gian gọi {wiki-arpanet}. Chuyển mạch kênh cấp trước băng thông dành riêng cho từng phiên với tốc độ bit và độ trễ không đổi. Ở các dịch vụ tính phí, nó tính theo đơn vị thời gian kết nối kể cả khi không có dữ liệu chạy, còn chuyển mạch gói có thể tính theo đơn vị thông tin gửi đi {wiki-packet}. Ý tưởng của Baran đi ngược nguyên tắc cấp phát băng thông trước, một phần lý do ban đầu nó ít được những người xây mạng hưởng ứng."
+      "body_vi": "Mô hình cũ hơn là chuyển mạch kênh, dùng trong mạng điện thoại, trong đó mỗi cuộc gọi được cấp một kết nối đầu cuối dành riêng trong suốt thời gian gọi {wiki-arpanet}. Chuyển mạch kênh cấp trước băng thông dành riêng cho từng phiên với tốc độ bit và độ trễ không đổi. Ở các dịch vụ tính phí, nó tính theo đơn vị thời gian kết nối kể cả khi không có dữ liệu chạy, còn chuyển mạch gói có thể tính theo đơn vị thông tin gửi đi {wiki-packet}. Ý tưởng của Baran đi ngược nguyên tắc cấp phát băng thông trước, một phần lý do ban đầu nó ít được những người xây mạng hưởng ứng.",
+      "heading_fr": "La commutation de circuits, l'ancienne méthode",
+      "body_fr": "Le modèle précédent était la commutation de circuits, employée dans le réseau téléphonique, où chaque appel bénéficie d'une liaison dédiée de bout en bout pendant toute sa durée {wiki-arpanet}. La commutation de circuits préalloue une bande passante dédiée à chaque session, avec un débit et une latence constants. Pour les services facturés, la tarification s'effectue par unité de temps de connexion, même lorsqu'aucune donnée ne circule, tandis que la commutation de paquets peut facturer par unité d'information transmise {wiki-packet}. Les idées de Baran contredisaient le principe établi d'allocation préalable de la bande passante, ce qui explique en partie pourquoi elles ont d'abord rencontré peu d'écho auprès des concepteurs de réseaux.",
+      "heading_de": "Leitungsvermittlung, der alte Weg",
+      "body_de": "Das ältere Modell war die im Telefonnetz genutzte Leitungsvermittlung, bei der jedem Gespräch für seine Dauer eine dedizierte Ende-zu-Ende-Verbindung zugewiesen wird {wiki-arpanet}. Die Leitungsvermittlung reserviert jeder Sitzung vorab eine dedizierte Bandbreite mit konstanter Bitrate und Latenz. Bei gebührenpflichtigen Diensten wird pro Zeiteinheit der Verbindung abgerechnet, selbst wenn keine Daten fließen, während bei der Paketvermittlung nach der Menge der gesendeten Informationen abgerechnet werden kann {wiki-packet}. Barans Ideen widersprachen dem etablierten Prinzip der festen Bandbreitenvorbelegung, weshalb sie bei Netzwerkbauern anfangs auf wenig Resonanz stießen.",
+      "heading_es": "Conmutación de circuitos, el modelo tradicional",
+      "body_es": "El modelo anterior era la conmutación de circuitos, utilizada en la red telefónica, donde a cada llamada se le asigna una conexión dedicada de extremo a extremo durante su duración {wiki-arpanet}. La conmutación de circuitos preasigna ancho de banda dedicado a cada sesión con una tasa de bits y una latencia constantes. En los servicios tarificados, se cobra por unidad de tiempo de conexión incluso cuando no se transmiten datos, mientras que la conmutación de paquetes puede cobrar por unidad de información enviada {wiki-packet}. Las ideas de Baran contradecían el principio establecido de preasignar ancho de banda, razón por la cual al principio tuvieron escasa repercusión entre los constructores de redes."
     },
     {
       "heading_en": "Baran's survivable network",
       "heading_vi": "Mạng sống sót của Baran",
       "body_en": "In the late 1950s the US Air Force built a wide area network for the SAGE radar defence system and, seeing its weaknesses, wanted a network that could survive a nuclear attack {wiki-packet}. Paul Baran at the RAND Corporation proposed three ideas: a decentralised network with multiple paths between any two points, user messages divided into message blocks, and delivery by store-and-forward switching. He first presented it to the Air Force in the summer of 1961, and RAND published it in 1962 and 1964. His focus was voice messages carried by low-cost electronic switches.",
-      "body_vi": "Cuối thập niên 1950, Không quân Mỹ xây một mạng diện rộng cho hệ thống phòng thủ radar SAGE và, nhận ra những điểm yếu của nó, muốn một mạng có thể sống sót sau một cuộc tấn công hạt nhân {wiki-packet}. Paul Baran tại RAND Corporation đề xuất ba ý tưởng: một mạng phân tán với nhiều đường đi giữa hai điểm bất kỳ, thông điệp người dùng chia thành các khối thông điệp, và chuyển bằng chuyển mạch lưu và chuyển tiếp. Ông trình bày lần đầu với Không quân vào mùa hè năm 1961, và RAND công bố năm 1962 và 1964. Trọng tâm của ông là tin nhắn thoại do các bộ chuyển mạch điện tử giá rẻ mang."
+      "body_vi": "Cuối thập niên 1950, Không quân Mỹ xây một mạng diện rộng cho hệ thống phòng thủ radar SAGE và, nhận ra những điểm yếu của nó, muốn một mạng có thể sống sót sau một cuộc tấn công hạt nhân {wiki-packet}. Paul Baran tại RAND Corporation đề xuất ba ý tưởng: một mạng phân tán với nhiều đường đi giữa hai điểm bất kỳ, thông điệp người dùng chia thành các khối thông điệp, và chuyển bằng chuyển mạch lưu và chuyển tiếp. Ông trình bày lần đầu với Không quân vào mùa hè năm 1961, và RAND công bố năm 1962 và 1964. Trọng tâm của ông là tin nhắn thoại do các bộ chuyển mạch điện tử giá rẻ mang.",
+      "heading_fr": "Le réseau résilient de Baran",
+      "body_fr": "À la fin des années 1950, l'US Air Force a mis en place un réseau étendu pour le système de défense radar SAGE et, constatant ses faiblesses, a souhaité disposer d'un réseau capable de survivre à une attaque nucléaire {wiki-packet}. Paul Baran, de la RAND Corporation, a proposé trois idées : un réseau décentralisé offrant plusieurs chemins entre deux points quelconques, des messages utilisateurs divisés en blocs de messages et un acheminement par commutation avec stockage et retransmission. Il a d'abord présenté son projet à l'Air Force au cours de l'été 1961, puis la RAND l'a publié en 1962 et 1964. Ses travaux visaient principalement la transmission de messages vocaux au moyen de commutateurs électroniques à bas coût.",
+      "heading_de": "Barans überlebensfähiges Netzwerk",
+      "body_de": "In den späten 1950er-Jahren baute die US Air Force ein Weitverkehrsnetz für das SAGE-Radarverteidigungssystem und wünschte sich angesichts dessen Schwachstellen ein Netz, das einen Atomangriff überstehen könnte {wiki-packet}. Paul Baran von der RAND Corporation schlug drei Ideen vor: ein dezentrales Netzwerk mit mehreren Pfaden zwischen zwei beliebigen Punkten, in Nachrichtenblöcke unterteilte Benutzernachrichten und die Zustellung per Store-and-Forward-Vermittlung. Er präsentierte das Konzept der Air Force erstmals im Sommer 1961, und RAND veröffentlichte es in den Jahren 1962 und 1964. Sein Schwerpunkt lag auf Sprachnachrichten, die über kostengünstige elektronische Vermittlungsknoten übertragen wurden.",
+      "heading_es": "La red resistente de Baran",
+      "body_es": "A finales de la década de 1950, la Fuerza Aérea de los Estados Unidos construyó una red de área amplia para el sistema de defensa por radar SAGE y, tras advertir sus debilidades, buscó una red capaz de sobrevivir a un ataque nuclear {wiki-packet}. Paul Baran, en la RAND Corporation, propuso tres ideas: una red descentralizada con múltiples rutas entre dos puntos cualesquiera, mensajes de usuario divididos en bloques de mensajes y entrega mediante conmutación de almacenamiento y reenvío. La presentó por primera vez a la Fuerza Aérea en el verano de 1961, y RAND la publicó en 1962 y 1964. Su objetivo principal eran los mensajes de voz transmitidos mediante conmutadores electrónicos de bajo coste."
     },
     {
       "heading_en": "Davies names it",
       "heading_vi": "Davies đặt tên",
       "body_en": "Donald Davies at Britain's National Physical Laboratory came to the idea on his own in 1965, after conversations about time-sharing with remote computers {wiki-packet}. His insight was to use short, fixed-format messages at high transmission rates. He coined the term packet switching and proposed a commercial nationwide data network in the UK. After his 1966 talk, someone from the Ministry of Defence told him about Baran's work. Davies also assumed that all users would provide their own error control, which is what became known as the end-to-end principle. His NPL network began service in 1970 after a pilot in early 1969.",
-      "body_vi": "Donald Davies tại Phòng thí nghiệm Vật lý Quốc gia của Anh tự đến với ý tưởng năm 1965, sau những cuộc trao đổi về chia sẻ thời gian với máy tính từ xa {wiki-packet}. Hiểu biết của ông là dùng những thông điệp ngắn, định dạng cố định ở tốc độ truyền cao. Ông đặt thuật ngữ chuyển mạch gói và đề xuất một mạng dữ liệu thương mại toàn quốc ở Anh. Sau bài nói năm 1966 của ông, một người từ Bộ Quốc phòng cho ông biết về công trình của Baran. Davies cũng giả định rằng mọi người dùng sẽ tự lo kiểm soát lỗi, điều về sau được gọi là nguyên lý đầu cuối. Mạng NPL của ông bắt đầu hoạt động năm 1970 sau một thử nghiệm đầu năm 1969."
+      "body_vi": "Donald Davies tại Phòng thí nghiệm Vật lý Quốc gia của Anh tự đến với ý tưởng năm 1965, sau những cuộc trao đổi về chia sẻ thời gian với máy tính từ xa {wiki-packet}. Hiểu biết của ông là dùng những thông điệp ngắn, định dạng cố định ở tốc độ truyền cao. Ông đặt thuật ngữ chuyển mạch gói và đề xuất một mạng dữ liệu thương mại toàn quốc ở Anh. Sau bài nói năm 1966 của ông, một người từ Bộ Quốc phòng cho ông biết về công trình của Baran. Davies cũng giả định rằng mọi người dùng sẽ tự lo kiểm soát lỗi, điều về sau được gọi là nguyên lý đầu cuối. Mạng NPL của ông bắt đầu hoạt động năm 1970 sau một thử nghiệm đầu năm 1969.",
+      "heading_fr": "Davies lui donne un nom",
+      "body_fr": "Donald Davies, du National Physical Laboratory britannique, est parvenu à cette idée de manière autonome en 1965, à la suite d'échanges sur le temps partagé avec des ordinateurs distants {wiki-packet}. Son intuition consistait à utiliser des messages courts au format fixe à des débits de transmission élevés. Il a forgé l'expression commutation de paquets et a proposé un réseau de données commercial à l'échelle nationale au Royaume-Uni. Après sa conférence de 1966, un membre du ministère de la Défense lui a parlé des travaux de Baran. Davies a également supposé que chaque utilisateur assurerait son propre contrôle des erreurs, ce que l'on a appelé par la suite le principe de bout en bout. Son réseau NPL est entré en service en 1970 après une phase pilote au début de 1969.",
+      "heading_de": "Davies gibt ihr einen Namen",
+      "body_de": "Donald Davies am britischen National Physical Laboratory kam 1965 nach Gesprächen über Time-Sharing mit entfernten Computern unabhängig darauf {wiki-packet}. Seine Erkenntnis bestand darin, kurze Nachrichten mit festem Format bei hohen Übertragungsraten einzusetzen. Er prägte den Begriff Paketvermittlung und schlug ein landesweites kommerzielles Datennetz in Großbritannien vor. Nach seinem Vortrag im Jahr 1966 machte ihn jemand aus dem Verteidigungsministerium auf Barans Arbeit aufmerksam. Davies ging zudem davon aus, dass alle Nutzer ihre eigene Fehlerkontrolle durchführen würden – was später als Ende-zu-Ende-Prinzip bekannt wurde. Sein NPL-Netzwerk nahm 1970 nach einem Testlauf Anfang 1969 den regulären Betrieb auf.",
+      "heading_es": "Davies le da nombre",
+      "body_es": "Donald Davies, en el National Physical Laboratory británico, llegó a la misma idea por su cuenta en 1965, tras mantener conversaciones sobre tiempo compartido con ordenadores remotos {wiki-packet}. Su acierto consistió en utilizar mensajes cortos de formato fijo a altas velocidades de transmisión. Acuñó el término conmutación de paquetes y propuso una red de datos comercial de ámbito nacional en el Reino Unido. Tras su conferencia de 1966, alguien del Ministerio de Defensa le habló del trabajo de Baran. Davies también asumió que todos los usuarios proporcionarían su propio control de errores, lo que se conoció como el principio de extremo a extremo. Su red NPL entró en servicio en 1970 tras una prueba piloto a principios de 1969."
     },
     {
       "heading_en": "Would it be fast enough?",
       "heading_vi": "Liệu nó có đủ nhanh?",
       "body_en": "A key question was whether a store-and-forward network could answer a human user quickly. Leonard Kleinrock had applied queueing theory to message switching in his 1961 to 1962 doctoral work and published it as a book in 1964 {wiki-packet}. Davies used Kleinrock's techniques in his 1966 paper to argue there was an ample margin between the system's estimated performance and the response time a user needed. A packet switch itself has four components: input ports, output ports, a routing processor and a switching fabric. Kleinrock later led the UCLA centre that measured and modelled packet switching in the ARPANET.",
-      "body_vi": "Một câu hỏi then chốt là liệu một mạng lưu và chuyển tiếp có thể đáp ứng nhanh cho người dùng hay không. Leonard Kleinrock đã áp dụng lý thuyết hàng đợi vào chuyển mạch thông điệp trong luận án tiến sĩ 1961 đến 1962 và xuất bản thành sách năm 1964 {wiki-packet}. Davies dùng các kỹ thuật của Kleinrock trong bài báo năm 1966 để lập luận rằng có một biên độ rộng giữa hiệu năng ước tính của hệ thống và thời gian đáp ứng người dùng cần. Bản thân một bộ chuyển mạch gói có bốn thành phần: cổng vào, cổng ra, bộ xử lý định tuyến và ma trận chuyển mạch. Kleinrock sau đó dẫn dắt trung tâm UCLA đo lường và mô hình hóa chuyển mạch gói trong ARPANET."
+      "body_vi": "Một câu hỏi then chốt là liệu một mạng lưu và chuyển tiếp có thể đáp ứng nhanh cho người dùng hay không. Leonard Kleinrock đã áp dụng lý thuyết hàng đợi vào chuyển mạch thông điệp trong luận án tiến sĩ 1961 đến 1962 và xuất bản thành sách năm 1964 {wiki-packet}. Davies dùng các kỹ thuật của Kleinrock trong bài báo năm 1966 để lập luận rằng có một biên độ rộng giữa hiệu năng ước tính của hệ thống và thời gian đáp ứng người dùng cần. Bản thân một bộ chuyển mạch gói có bốn thành phần: cổng vào, cổng ra, bộ xử lý định tuyến và ma trận chuyển mạch. Kleinrock sau đó dẫn dắt trung tâm UCLA đo lường và mô hình hóa chuyển mạch gói trong ARPANET.",
+      "heading_fr": "Serait-ce assez rapide ?",
+      "body_fr": "Une question essentielle était de savoir si un réseau à stockage et retransmission pouvait répondre assez vite à un utilisateur humain. Leonard Kleinrock avait appliqué la théorie des files d'attente à la commutation de messages lors de ses travaux de doctorat entre 1961 et 1962, avant de les publier sous forme d'ouvrage en 1964 {wiki-packet}. Davies s'est appuyé sur les méthodes de Kleinrock dans son article de 1966 pour soutenir qu'il existait une marge confortable entre les performances estimées du système et le temps de réponse requis par un utilisateur. Un commutateur de paquets comporte lui-même quatre composants : des ports d'entrée, des ports de sortie, un processeur de routage et une matrice de commutation. Kleinrock a ensuite dirigé le centre de l'UCLA chargé de mesurer et de modéliser la commutation de paquets au sein de l'ARPANET.",
+      "heading_de": "Wäre es schnell genug?",
+      "body_de": "Eine zentrale Frage war, ob ein Store-and-Forward-Netzwerk einem menschlichen Benutzer schnell genug antworten könnte. Leonard Kleinrock hatte in seiner Doktorarbeit von 1961 bis 1962 die Warteschlangentheorie auf die Speichervermittlung angewendet und diese 1964 als Buch veröffentlicht {wiki-packet}. Davies nutzte Kleinrocks Methoden in seiner Veröffentlichung von 1966, um zu belegen, dass zwischen der geschätzten Systemleistung und der von Nutzern benötigten Antwortzeit ein großzügiger Spielraum lag. Ein Paketvermittlungsknoten selbst besteht aus vier Komponenten: Eingangsports, Ausgangsports, einem Routing-Prozessor und einer Switching Fabric. Kleinrock leitete später das UCLA-Zentrum, das die Paketvermittlung im ARPANET vermaß und modellierte.",
+      "heading_es": "¿Sería lo bastante rápida?",
+      "body_es": "Una pregunta clave era si una red de almacenamiento y reenvío podía responder con suficiente rapidez a un usuario humano. Leonard Kleinrock había aplicado la teoría de colas a la conmutación de mensajes en su trabajo doctoral entre 1961 y 1962, publicándolo como libro en 1964 {wiki-packet}. Davies recurrió a las técnicas de Kleinrock en su artículo de 1966 para argumentar que existía un amplio margen entre el rendimiento estimado del sistema y el tiempo de respuesta que requería el usuario. Un conmutador de paquetes en sí consta de cuatro componentes: puertos de entrada, puertos de salida, un procesador de enrutamiento y una matriz de conmutación. Más tarde, Kleinrock dirigió el centro de la UCLA que midió y modeló la conmutación de paquetes en ARPANET."
     },
     {
       "heading_en": "The October 1967 conference",
       "heading_vi": "Hội nghị tháng 10 năm 1967",
       "body_en": "Roger Scantlebury of Davies's team presented their work, and cited Baran's, at the Symposium on Operating Systems Principles in October 1967 {wiki-packet}. There he proposed packet switching for the ARPANET and persuaded Larry Roberts that the economics were favourable. Straight afterwards, Roberts built Davies's ideas into the ARPANET design and asked Baran for input. Davies had even chosen some of the same parameters as Baran, such as a packet size of 1,024 bits. The sequence shows how a technical idea can travel by chance meetings: three people on two continents arrived at the same design.",
-      "body_vi": "Roger Scantlebury trong nhóm của Davies trình bày công trình của họ, và dẫn công trình của Baran, tại Hội thảo Nguyên lý Hệ điều hành tháng 10 năm 1967 {wiki-packet}. Ở đó ông đề xuất chuyển mạch gói cho ARPANET và thuyết phục Larry Roberts rằng kinh tế có lợi. Ngay sau đó, Roberts đưa các ý tưởng của Davies vào thiết kế ARPANET và hỏi ý kiến Baran. Davies thậm chí đã chọn một số tham số giống Baran, như kích thước gói 1.024 bit. Chuỗi sự kiện cho thấy một ý tưởng kỹ thuật có thể lan đi qua những cuộc gặp tình cờ: nhiều người ở hai châu lục đã đến cùng một thiết kế."
+      "body_vi": "Roger Scantlebury trong nhóm của Davies trình bày công trình của họ, và dẫn công trình của Baran, tại Hội thảo Nguyên lý Hệ điều hành tháng 10 năm 1967 {wiki-packet}. Ở đó ông đề xuất chuyển mạch gói cho ARPANET và thuyết phục Larry Roberts rằng kinh tế có lợi. Ngay sau đó, Roberts đưa các ý tưởng của Davies vào thiết kế ARPANET và hỏi ý kiến Baran. Davies thậm chí đã chọn một số tham số giống Baran, như kích thước gói 1.024 bit. Chuỗi sự kiện cho thấy một ý tưởng kỹ thuật có thể lan đi qua những cuộc gặp tình cờ: nhiều người ở hai châu lục đã đến cùng một thiết kế.",
+      "heading_fr": "La conférence d'octobre 1967",
+      "body_fr": "Roger Scantlebury, membre de l'équipe de Davies, a présenté leurs travaux et cité ceux de Baran lors du Symposium on Operating Systems Principles en octobre 1967 {wiki-packet}. Il y a proposé la commutation de paquets pour l'ARPANET et convaincu Larry Roberts de son intérêt économique. Aussitôt après, Roberts a intégré les idées de Davies dans l'architecture de l'ARPANET et a sollicité l'avis de Baran. Davies avait même retenu certains paramètres identiques à ceux de Baran, comme une taille de paquet de 1 024 bits. Cet enchaînement illustre la façon dont une idée technique peut voyager au gré de rencontres fortuites : trois personnes réparties sur deux continents sont parvenues à la même conception.",
+      "heading_de": "Die Konferenz im Oktober 1967",
+      "body_de": "Roger Scantlebury aus Davies’ Team präsentierte ihre Arbeit und zitierte jene von Baran auf dem Symposium on Operating Systems Principles im Oktober 1967 {wiki-packet}. Dort schlug er die Paketvermittlung für das ARPANET vor und überzeugte Larry Roberts von den wirtschaftlichen Vorteilen. Unmittelbar danach integrierte Roberts Davies’ Ideen in das ARPANET-Design und bat Baran um Unterstützung. Davies hatte sogar einige der gleichen Parameter wie Baran gewählt, etwa eine Paketgröße von 1.024 Bit. Diese Abfolge zeigt, wie eine technische Idee durch zufällige Begegnungen wandern kann: Drei Personen auf zwei Kontinenten gelangten zum selben Entwurf.",
+      "heading_es": "La conferencia de octubre de 1967",
+      "body_es": "Roger Scantlebury, del equipo de Davies, presentó su trabajo, citando también el de Baran, en el Symposium on Operating Systems Principles en octubre de 1967 {wiki-packet}. Allí propuso la conmutación de paquetes para ARPANET y convenció a Larry Roberts de que los aspectos económicos resultaban favorables. Inmediatamente después, Roberts incorporó las ideas de Davies al diseño de ARPANET y pidió la opinión de Baran. Davies incluso había elegido algunos de los mismos parámetros que Baran, como un tamaño de paquete de 1024 bits. La secuencia demuestra cómo una idea técnica puede propagarse gracias a encuentros fortuitos: tres personas en dos continentes llegaron al mismo diseño."
     },
     {
       "heading_en": "From ARPANET to the internet",
       "heading_vi": "Từ ARPANET đến internet",
       "body_en": "The ARPANET was the first wide-area packet-switched network with distributed control, and one of the first to use TCP/IP {wiki-arpanet}. Bob Taylor started the project in 1966, and Bolt Beranek & Newman won the contract in 1969 to build the Interface Message Processors, with the design led by Bob Kahn. The first computers were connected in 1969, and the network was declared operational in 1971. Version 4 of TCP/IP went into production use on 1 January 1983. The ARPANET was formally decommissioned in 1990, after private-sector networks had grown into what we call the internet.",
-      "body_vi": "ARPANET là mạng chuyển mạch gói diện rộng đầu tiên có điều khiển phân tán, và là một trong những mạng đầu tiên dùng TCP/IP {wiki-arpanet}. Bob Taylor khởi xướng dự án năm 1966, và Bolt Beranek & Newman trúng thầu năm 1969 để xây các Bộ xử lý thông điệp giao diện, với thiết kế do Bob Kahn dẫn dắt. Những máy tính đầu tiên được nối năm 1969, và mạng được tuyên bố hoạt động năm 1971. Phiên bản 4 của TCP/IP được đưa vào sử dụng thực tế ngày 1 tháng 1 năm 1983. ARPANET chính thức ngừng hoạt động năm 1990, sau khi các mạng khu vực tư nhân đã lớn thành thứ ta gọi là internet."
+      "body_vi": "ARPANET là mạng chuyển mạch gói diện rộng đầu tiên có điều khiển phân tán, và là một trong những mạng đầu tiên dùng TCP/IP {wiki-arpanet}. Bob Taylor khởi xướng dự án năm 1966, và Bolt Beranek & Newman trúng thầu năm 1969 để xây các Bộ xử lý thông điệp giao diện, với thiết kế do Bob Kahn dẫn dắt. Những máy tính đầu tiên được nối năm 1969, và mạng được tuyên bố hoạt động năm 1971. Phiên bản 4 của TCP/IP được đưa vào sử dụng thực tế ngày 1 tháng 1 năm 1983. ARPANET chính thức ngừng hoạt động năm 1990, sau khi các mạng khu vực tư nhân đã lớn thành thứ ta gọi là internet.",
+      "heading_fr": "De l'ARPANET à Internet",
+      "body_fr": "L'ARPANET fut le premier réseau étendu à commutation de paquets doté d'un contrôle distribué, et l'un des premiers à utiliser TCP/IP {wiki-arpanet}. Bob Taylor a lancé le projet en 1966, et Bolt Beranek & Newman a remporté en 1969 le contrat pour construire les Interface Message Processors, sous la direction technique de Bob Kahn. Les premiers ordinateurs ont été connectés en 1969, et le réseau a été déclaré opérationnel en 1971. La version 4 de TCP/IP est entrée en service le 1er janvier 1983. L'ARPANET a été formellement démantelé en 1990, après que les réseaux du secteur privé ont évolué pour devenir ce que nous appelons Internet.",
+      "heading_de": "Vom ARPANET zum Internet",
+      "body_de": "Das ARPANET war das erste paketvermittelte Weitverkehrsnetz mit verteilter Steuerung und eines der ersten, das TCP/IP einsetzte {wiki-arpanet}. Bob Taylor startete das Projekt im Jahr 1966, und Bolt Beranek & Newman erhielt 1969 den Auftrag zum Bau der Interface Message Processors unter der Entwicklungsleitung von Bob Kahn. Die ersten Rechner wurden 1969 angeschlossen, und 1971 wurde das Netz für betriebsbereit erklärt. Version 4 von TCP/IP ging am 1. Januar 1983 in den Produktivbetrieb über. Das ARPANET wurde 1990 offiziell stillgelegt, nachdem privatwirtschaftliche Netze zu dem herangewachsen waren, was wir heute als Internet bezeichnen.",
+      "heading_es": "De ARPANET a internet",
+      "body_es": "ARPANET fue la primera red de área amplia de conmutación de paquetes con control distribuido, y una de las primeras en utilizar TCP/IP {wiki-arpanet}. Bob Taylor inició el proyecto en 1966, y Bolt Beranek & Newman obtuvo el contrato en 1969 para construir los Interface Message Processors, bajo la dirección de diseño de Bob Kahn. Las primeras computadoras se conectaron en 1969 y la red fue declarada operativa en 1971. La versión 4 de TCP/IP entró en funcionamiento en producción el 1 de enero de 1983. ARPANET fue desmantelada formalmente en 1990, después de que las redes del sector privado se hubieran convertido en lo que hoy llamamos internet."
     }
   ],
   "keyPoint": {
     "en": "Packet switching splits data into addressed packets that share links and are reassembled at the destination. [p:It was invented independently by Baran and Davies,] and the ARPANET carried it into the internet. Compared with a dedicated circuit, it uses a channel only while a packet is in transit.",
-    "vi": "Chuyển mạch gói tách dữ liệu thành các gói có địa chỉ, dùng chung đường truyền và được ghép lại ở đích. [p:Nó được Baran và Davies phát minh độc lập,] và ARPANET đưa nó vào internet. So với một kênh dành riêng, nó chỉ dùng kênh khi có gói đang truyền."
+    "vi": "Chuyển mạch gói tách dữ liệu thành các gói có địa chỉ, dùng chung đường truyền và được ghép lại ở đích. [p:Nó được Baran và Davies phát minh độc lập,] và ARPANET đưa nó vào internet. So với một kênh dành riêng, nó chỉ dùng kênh khi có gói đang truyền.",
+    "fr": "La commutation de paquets divise les données en paquets adressés qui partagent des liaisons et sont réassemblés à destination. [p:Elle a été inventée indépendamment par Baran et Davies,] et l'ARPANET l'a transmise à Internet. Par rapport à un circuit dédié, elle n'occupe un canal que pendant le transit d'un paquet.",
+    "de": "Die Paketvermittlung zerlegt Daten in adressierte Pakete, die sich Leitungen teilen und am Zielort wieder zusammengefügt werden. [p:Sie wurde unabhängig voneinander von Baran und Davies erfunden,] und das ARPANET trug sie ins Internet. Im Vergleich zu einer festen Leitung nutzt sie einen Kanal nur, während sich ein Paket auf dem Weg befindet.",
+    "es": "La conmutación de paquetes divide los datos en paquetes direccionados que comparten enlaces y se vuelven a ensamblar en el destino. [p:Fue inventada de forma independiente por Baran y Davies,] y ARPANET la llevó a internet. En comparación con un circuito dedicado, solo utiliza un canal mientras el paquete se encuentra en tránsito."
   },
   "applySteps": {
     "en": [
@@ -75,6 +126,21 @@
       "Chạy lệnh traceroute tới một trang web và đếm số chặng giữa bạn và nó.",
       "Tìm hiểu khác biệt giữa bộ định tuyến và bộ chuyển mạch rồi tìm cái ở nhà bạn.",
       "Đọc một bản ghi chép gốc về hội nghị năm 1967, như bài của Scantlebury hay Roberts."
+    ],
+    "fr": [
+      "Exécutez un traceroute vers un site web et comptez le nombre de sauts entre vous et lui.",
+      "Recherchez la différence entre un routeur et un commutateur, puis repérez le vôtre à la maison.",
+      "Lisez un compte rendu de première main de la conférence de 1967, tel que les articles de Scantlebury ou de Roberts."
+    ],
+    "de": [
+      "Führe ein traceroute zu einer Website aus und zähle die Hops zwischen dir und ihr.",
+      "Schlage den Unterschied zwischen einem Router und einem Switch nach und finde heraus, welches Gerät du zu Hause hast.",
+      "Lies einen Primärbericht über die Konferenz von 1967, beispielsweise die Aufsätze von Scantlebury oder Roberts."
+    ],
+    "es": [
+      "Ejecuta un traceroute hacia un sitio web y cuenta los saltos que hay entre tú y él.",
+      "Consulta la diferencia entre un enrutador y un conmutador y localiza el tuyo en casa.",
+      "Lee un testimonio de primera mano sobre la conferencia de 1967, como los artículos de Scantlebury o Roberts."
     ]
   },
   "references": [
@@ -99,12 +165,95 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/packet-switching-origin-of-internet.webp",
+    "url": "https://images.unsplash.com/13/unsplash_523b6080353ef_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTIyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Zugr",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/asrWX-lU3RE"
+    "sourceUrl": "https://unsplash.com/photos/asrWX-lU3RE",
+    "wide": "https://images.unsplash.com/13/unsplash_523b6080353ef_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTIyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@zugr?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoQABwAPu1iqk2ppaQiMAgBMB2JZwDImdwAyoqdes+mb/5TAoAA/fobOXtBiZc5xtOC6+e7waVNXesaiqZaJenMhwaopPUh9eTnqAFBUXN2lLpRt7L6TlUHu9xqdO8s24Se6/VRMKadRZiVVCm8BxXptKjMgmQBQgPBS2QDV3Mz7Qo3rXNlYAAA",
-  "dominant": "#545456"
+  "dominant": "#545456",
+  "glossary": {
+    "en": {
+      "packet switching": "Dividing data into separate units sent over shared paths and reassembled at their destination.",
+      "header": "The leading part of a packet carrying routing and destination information.",
+      "payload": "The actual data or content carried by a packet, distinct from routing metadata.",
+      "circuit switching": "A networking method dedicating an exclusive, continuous communication path for the duration of a session.",
+      "latency": "The time delay for data to travel across a network from source to destination.",
+      "store-and-forward switching": "A communication technique where data is received entirely, verified or buffered, before being forwarded onward.",
+      "time-sharing": "Sharing computing resources among multiple simultaneous users through rapid switching.",
+      "end-to-end principle": "A design rule stating that network features like error control should be handled by communicating endpoints.",
+      "queueing theory": "The mathematical study of waiting lines, congestion, and delays in processing systems.",
+      "switching fabric": "The internal hardware architecture that directs data from input ports to output ports within a switch.",
+      "interface message processors": "Early packet-switching gateway computers used in ARPANET, serving as ancestors of modern routers.",
+      "tcp/ip": "The fundamental suite of communication protocols used to interconnect network devices on the internet."
+    },
+    "vi": {
+      "chuyển mạch gói": "Phương thức truyền dữ liệu bằng cách chia nhỏ thành các gói độc lập qua mạng.",
+      "gói tin": "Đơn vị dữ liệu nhỏ có định dạng cố định được truyền qua mạng máy tính.",
+      "phần đầu": "Phần chứa thông tin điều khiển và địa chỉ đích của gói tin.",
+      "phần tải": "Phần chứa dữ liệu nội dung thực tế cần gửi đi trong gói tin.",
+      "bộ chuyển mạch": "Thiết bị nhận và chuyển tiếp dữ liệu đến thiết bị đích trong mạng.",
+      "bộ định tuyến": "Thiết bị chuyển tiếp các gói tin giữa các mạng khác nhau để đến đích.",
+      "chuyển mạch kênh": "Phương thức cấp trước kết nối dành riêng cố định trong suốt phiên liên lạc.",
+      "băng thông": "Dung lượng truyền tải dữ liệu tối đa qua một đường truyền mạng.",
+      "mạng diện rộng": "Mạng viễn thông kết nối các máy tính qua phạm vi địa lý rộng lớn.",
+      "sage": "Hệ thống máy tính và radar phòng không của Không quân Mỹ thời Chiến tranh Lạnh.",
+      "arpanet": "Mạng máy tính chuyển mạch gói diện rộng đầu tiên, tiền thân của internet ngày nay.",
+      "tcp/ip": "Bộ giao thức truyền thông tiêu chuẩn kết nối các thiết bị trong mạng internet."
+    },
+    "fr": {
+      "commutation de paquets": "Méthode découpant les données en unités indépendantes acheminées séparément sur le réseau selon les ressources disponibles.",
+      "en-tête": "Début d'un paquet contenant les métadonnées de contrôle nécessaires à son acheminement vers la destination.",
+      "charge utile": "Données utiles transportées par un paquet, par opposition aux informations de service de l'en-tête.",
+      "mémoire tampon": "Espace de stockage temporaire permettant d'attendre le traitement ou la transmission des paquets de données.",
+      "commutation de circuits": "Méthode réservant un canal de communication continu et exclusif entre deux correspondants pendant toute la session.",
+      "bande passante": "Capacité maximale de transmission d'un canal de communication, mesurée en volume de données par seconde.",
+      "temps partagé": "Exploitation simultanée des ressources de calcul d'un ordinateur central par plusieurs utilisateurs distants.",
+      "matrice de commutation": "Dispositif matériel interne reliant les ports d'entrée aux ports de sortie au sein d'un commutateur.",
+      "tcp/ip": "Suite de protocoles de communication standardisée assurant l'adressage et le transport fiable des données sur Internet.",
+      "traceroute": "Outil logiciel mesurant et affichant le chemin et les routeurs intermédiaires parcourus par les paquets."
+    },
+    "de": {
+      "paketvermittlung": "Netzwerkverfahren, bei dem Daten in einzelne Pakete zerlegt und unabhängig über geteilte Leitungen übertragen werden.",
+      "header": "Steuerdaten am Anfang eines Datenpakets, die Zieladresse und Routing-Informationen enthalten.",
+      "nutzlast": "Die eigentlichen Nutzdaten eines Datenpakets, getrennt von organisatorischen Steuerinformationen wie dem Header.",
+      "leitungsvermittlung": "Verfahren, das für die gesamte Dauer einer Verbindung einen exklusiven Übertragungskanal bereitstellt.",
+      "weitverkehrsnetz": "Computernetzwerk, das sich über große geografische Entfernungen, oft Länder oder Kontinente, erstreckt.",
+      "store-and-forward-netzwerk": "Netzwerk, in dem Daten vor der Weiterleitung an jedem Knotenpunkt vollständig empfangen und zwischengespeichert werden.",
+      "time-sharing": "Gleichzeitige Nutzung einer Rechenanlage durch mehrere Benutzer über zeitlich verschachtelte Zuweisung von Rechenzeit.",
+      "ende-zu-ende-prinzip": "Netzwerkarchitektur, bei der Zuverlässigkeit und Fehlerkontrolle von den Endpunkten statt vom Kernnetz ausgeführt werden.",
+      "warteschlangentheorie": "Mathematisches Teilgebiet zur Modellierung von Staus und Wartezeiten bei begrenzten Verarbeitungskapazitäten.",
+      "switching fabric": "Hardware-Architektur im Inneren eines Vermittlungsknotens, die eingehende Datenströme zu den passenden Ausgangsports leitet.",
+      "interface message processors": "Spezielle Vorrechner im ARPANET, die als Vorläufer moderner Router die Datenvermittlung übernahmen.",
+      "tcp/ip": "Grundlegende Protokollfamilie des Internets zur Adressierung und zuverlässigen Übertragung von Datenpaketen."
+    },
+    "es": {
+      "conmutación de paquetes": "Método de transmisión que divide la información en fragmentos discretos antes de enviarlos por la red.",
+      "encabezado": "Parte inicial de un paquete que contiene información de control y la dirección de destino.",
+      "carga útil": "Datos reales transmitidos dentro de un paquete, excluyendo la información de control y encabezados.",
+      "enrutadores": "Dispositivos de red que determinan la ruta óptima para reenviar paquetes hacia su destino.",
+      "conmutación de circuitos": "Técnica que establece un canal de comunicación exclusivo y continuo durante toda la sesión.",
+      "latencia": "Tiempo que tarda un dato en viajar desde el origen hasta su destino en la red.",
+      "almacenamiento y reenvío": "Técnica donde los nodos reciben, almacenan temporalmente y luego transmiten paquetes al siguiente destino.",
+      "tiempo compartido": "Uso concurrente de un ordenador central por múltiples usuarios mediante asignación rápida de turnos.",
+      "teoría de colas": "Estudio matemático de las líneas de espera aplicable a la congestión de datos en redes.",
+      "matriz de conmutación": "Estructura interna de hardware que interconecta físicamente los puertos de un conmutador de paquetes.",
+      "tcp/ip": "Conjunto de protocolos fundamentales que regulan la transmisión y enrutamiento de datos en internet.",
+      "traceroute": "Herramienta de diagnóstico que rastrea y muestra la ruta de los paquetes por la red."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

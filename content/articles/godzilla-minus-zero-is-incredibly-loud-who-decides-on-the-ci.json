@@ -49,11 +49,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/259/1080/1920",
+    "url": "https://images.unsplash.com/27/winter-view.jpeg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjExfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Namphuong Van",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/hfIheOEJp9M"
+    "sourceUrl": "https://unsplash.com/photos/hfIheOEJp9M",
+    "wide": "https://images.unsplash.com/27/winter-view.jpeg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjExfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@namphuong?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -98,7 +100,10 @@
     ]
   },
   "summary": {
-    "vi": "Các bộ phim chiếu rạp hiện đại ngày càng sử dụng âm thanh có dải động rộng và tần số thấp để mang lại trải nghiệm mạnh mẽ, ví dụ như tiếng gầm của Godzilla. Tuy nhiên, các rạp chiếu không bắt buộc phải tuân theo một mức âm lượng cố định mà thường xuyên điều chỉnh tùy theo không gian và khán giả. Mặc dù âm thanh lớn có thể khiến người xem lo lắng về thính giác, các rạp vẫn luôn kiểm soát để đảm bảo không vượt quá giới hạn an toàn pháp lý."
+    "vi": "Các bộ phim chiếu rạp hiện đại ngày càng sử dụng âm thanh có dải động rộng và tần số thấp để mang lại trải nghiệm mạnh mẽ, ví dụ như tiếng gầm của Godzilla. Tuy nhiên, các rạp chiếu không bắt buộc phải tuân theo một mức âm lượng cố định mà thường xuyên điều chỉnh tùy theo không gian và khán giả. Mặc dù âm thanh lớn có thể khiến người xem lo lắng về thính giác, các rạp vẫn luôn kiểm soát để đảm bảo không vượt quá giới hạn an toàn pháp lý.",
+    "fr": "« Les projections en salle de *Godzilla Minus Zero*, notamment au format IMAX, se distinguent par une intensité sonore spectaculaire : cette puissance repose sur une vaste dynamique et l'usage de basses fréquences percutantes plutôt que sur un bruit continu. Bien que les ingénieurs calibrent le mixage selon des normes industrielles, les exploitants de cinéma ajustent librement le volume pour préserver le confort des spectateurs et prévenir les risques auditifs. L'impact du film provient avant tout de la progression dramatique et du contraste acoustique. »",
+    "de": "Moderne Blockbuster wie *Godzilla Minus Zero* beeindrucken im Kino durch enorme Klanggewalt. Dieses intensive Erlebnis beruht vor allem auf einem weiten Dynamikumfang, vielschichtigen Tonspuren und tiefen Frequenzen, die das Publikum physisch spüren kann. Während Studios Soundtracks nach einheitlichen Industriestandards abmischen, passen Kinobetreiber die Lautstärke eigenständig an Raumakustik und Komfort an. Automatische Dezibel-Warnungen von Smartwatches sind dabei meist unbedenklich: Ein gesundheitliches Risiko entsteht nicht durch kurze Pegelspitzen, sondern erst durch anhaltende Lärmbelastungen ab 85 Dezibel.",
+    "es": "¿Por qué ciertas funciones de cine resultan abrumadoramente estruendosas? El impacto sonoro de producciones como Godzilla Minus Zero obedece a un amplio rango dinámico y al uso de frecuencias graves que se perciben físicamente, especialmente en salas con tecnología multicanal como IMAX. Aunque los estudios mezclan el audio conforme a estándares industriales fijados en unos 85 decibelios, los cines conservan la libertad de regular el volumen según su acústica o la comodidad del público. Si bien los relojes inteligentes alertan ante picos de 90 decibelios, el daño auditivo depende de una exposición prolongada a intensidades peligrosas, límites que las salas procuran controlar para resguardar a los espectadores."
   },
   "applySteps": {
     "en": [
@@ -115,10 +120,29 @@
   "ai": {
     "fields": [
       "summary",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-08T02:44:52.716Z"
+  "publishAt": "2026-11-08T02:44:52.716Z",
+  "glossary": {
+    "en": {
+      "decibel": "A standard unit used for measuring the intensity or loudness of sounds.",
+      "dynamic range": "The difference between the quietest and loudest parts of an audio soundtrack.",
+      "subwoofers": "Specialized loudspeakers designed to reproduce very low-frequency audio and deep vibrations.",
+      "double bass": "The largest and lowest-pitched bowed string instrument in the orchestral family.",
+      "reverb": "An acoustic effect simulating sound reflections off surfaces to create a sense of vast space.",
+      "dubbing theatres": "Specialized post-production studios where audio tracks are balanced and mixed for cinema release.",
+      "calibration": "The precise adjustment of audio equipment to standard levels for uniform playback across cinemas.",
+      "reference level": "A standard benchmark volume used to align and calibrate cinema sound systems consistently.",
+      "dba": "A-weighted decibels, an acoustic unit reflecting human ear sensitivity to different sound frequencies.",
+      "dolby atmos": "An advanced surround-sound format providing three-dimensional, spatial audio with overhead sound.",
+      "sound pressure levels": "A physical measure of sound wave intensity, commonly perceived as acoustic volume."
+    }
+  }
 }

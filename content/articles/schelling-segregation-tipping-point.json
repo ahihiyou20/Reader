@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Schelling's tipping point: why mild preferences can segregate a city",
-    "vi": "Điểm lật của Schelling: vì sao những ưa thích nhẹ cũng có thể phân tách một thành phố"
+    "vi": "Điểm lật của Schelling: vì sao những ưa thích nhẹ cũng có thể phân tách một thành phố",
+    "fr": "Point de bascule de Schelling : pourquoi de légères préférences ségrègent une ville",
+    "de": "Schellings Kipppunkt: Warum milde Vorlieben eine Stadt spalten können",
+    "es": "El punto de inflexión de Schelling: por qué preferencias moderadas pueden segregar una ciudad"
   },
   "hook": {
     "en": "In a 1971 paper, Thomas Schelling showed that extreme segregation can arise from individual preferences in social interaction, with no single decision to segregate anyone. His model's key feature is a [p:tipping point], a level beyond which a neighbourhood changes suddenly rather than gradually.",
-    "vi": "Trong một bài báo năm 1971, Thomas Schelling cho thấy sự phân tách cực đoan có thể nảy sinh từ những ưa thích cá nhân trong tương tác xã hội, mà không cần ai ra một quyết định phân tách. Điểm then chốt của mô hình là [p:điểm lật], một mức mà sau đó khu phố thay đổi đột ngột thay vì dần dần."
+    "vi": "Trong một bài báo năm 1971, Thomas Schelling cho thấy sự phân tách cực đoan có thể nảy sinh từ những ưa thích cá nhân trong tương tác xã hội, mà không cần ai ra một quyết định phân tách. Điểm then chốt của mô hình là [p:điểm lật], một mức mà sau đó khu phố thay đổi đột ngột thay vì dần dần.",
+    "fr": "Dans un article de 1971, Thomas Schelling a montré qu'une ségrégation extrême peut émerger des préférences individuelles au cours des interactions sociales, sans qu'aucune décision délibérée de ségrégation n'ait été prise. L'élément clé de son modèle est un [p:point de bascule], un seuil au-delà duquel un quartier change brusquement plutôt que de manière progressive.",
+    "de": "In einer Arbeit aus dem Jahr 1971 zeigte Thomas Schelling, dass extreme Segregation aus individuellen Präferenzen bei sozialer Interaktion entstehen kann, ganz ohne eine zentrale Entscheidung, irgendjemanden auszugrenzen. Das Kernmerkmal seines Modells ist ein [p:Kipppunkt], eine Schwelle, jenseits derer sich ein Viertel schlagartig statt allmählich verändert.",
+    "es": "En un artículo de 1971, Thomas Schelling demostró que la segregación extrema puede surgir de las preferencias individuales en la interacción social, sin que exista una decisión única de segregar a nadie. El rasgo clave de su modelo es un [p:punto de inflexión], un nivel a partir del cual un vecindario cambia de forma repentina y no gradual."
   },
   "sections": [
     {
       "heading_en": "A line each household will not cross",
       "heading_vi": "Một ngưỡng mà mỗi hộ không muốn vượt qua",
       "body_en": "Schelling's model assumes that one group is indifferent to neighbourhoods where its share stays below a threshold, but unwilling to accept a share above it {card-tipping}. Below that threshold a neighbourhood is stable. If an injection of newcomers pushes the share above the threshold, the whole group leaves, and the neighbourhood becomes almost entirely the other group {card-tipping}. The change is discontinuous, so a small shift can produce a large one. Such preferences are often described by a tolerance threshold, the largest share of neighbours of another type that a person will accept {aps-tipping}.",
-      "body_vi": "Mô hình của Schelling giả định rằng một nhóm không quan tâm đến khu phố mà tỷ lệ của họ vẫn dưới một ngưỡng, nhưng không chấp nhận tỷ lệ vượt ngưỡng đó {card-tipping}. Dưới ngưỡng này khu phố ổn định. Nếu một làn sóng người mới đẩy tỷ lệ vượt ngưỡng, cả nhóm sẽ rời đi, và khu phố gần như hoàn toàn thuộc về nhóm kia {card-tipping}. Sự thay đổi này không liên tục, nên một dịch chuyển nhỏ có thể tạo ra một thay đổi lớn. Những ưa thích như vậy thường được mô tả bằng một ngưỡng dung nạp, tức tỷ lệ láng giềng thuộc nhóm khác lớn nhất mà một người chấp nhận {aps-tipping}."
+      "body_vi": "Mô hình của Schelling giả định rằng một nhóm không quan tâm đến khu phố mà tỷ lệ của họ vẫn dưới một ngưỡng, nhưng không chấp nhận tỷ lệ vượt ngưỡng đó {card-tipping}. Dưới ngưỡng này khu phố ổn định. Nếu một làn sóng người mới đẩy tỷ lệ vượt ngưỡng, cả nhóm sẽ rời đi, và khu phố gần như hoàn toàn thuộc về nhóm kia {card-tipping}. Sự thay đổi này không liên tục, nên một dịch chuyển nhỏ có thể tạo ra một thay đổi lớn. Những ưa thích như vậy thường được mô tả bằng một ngưỡng dung nạp, tức tỷ lệ láng giềng thuộc nhóm khác lớn nhất mà một người chấp nhận {aps-tipping}.",
+      "heading_fr": "Une limite qu'aucun ménage ne franchira",
+      "body_fr": "Le modèle de Schelling postule qu'un groupe est indifférent aux quartiers où la proportion de l'autre groupe demeure sous un seuil, mais refuse d'accepter une part supérieure à celui-ci {card-tipping}. Sous ce seuil, le quartier reste stable. Si l'arrivée de nouveaux venus fait franchir ce seuil à cette proportion, l'ensemble du groupe initial s'en va et le quartier est repris presque entièrement par l'autre groupe {card-tipping}. Ce changement est discontinu, si bien qu'une infime variation peut provoquer une mutation majeure. De telles préférences sont souvent décrites au moyen d'un seuil de tolérance, à savoir la proportion maximale de voisins d'un autre type qu'une personne est prête à accepter {aps-tipping}.",
+      "heading_de": "Eine Grenze, die kein Haushalt überschreitet",
+      "body_de": "Schellings Modell nimmt an, dass eine Gruppe Wohnvierteln gegenüber gleichgültig ist, solange ihr Anteil unter einem Schwellenwert bleibt, aber einen Anteil darüber nicht akzeptieren will {card-tipping}. Unterhalb dieses Schwellenwerts ist ein Viertel stabil. Bringt der Zuzug von Neuankömmlingen den Anteil über die Schwelle, verlässt die gesamte Gruppe das Viertel, und die Nachbarschaft besteht fast vollständig aus der anderen Gruppe {card-tipping}. Der Wandel verläuft diskontinuierlich, sodass eine kleine Verschiebung eine gewaltige Veränderung auslösen kann. Solche Präferenzen werden oft durch eine Toleranzschwelle beschrieben: den maximalen Anteil an Nachbarn eines anderen Typs, den eine Person toleriert {aps-tipping}.",
+      "heading_es": "Una línea que ningún hogar cruzará",
+      "body_es": "El modelo de Schelling asume que un grupo se muestra indiferente ante los vecindarios donde su proporción se mantiene por debajo de un umbral, pero no está dispuesto a tolerar una proporción superior a este {card-tipping}. Por debajo de dicho umbral, el vecindario es estable. Si la llegada de nuevos residentes eleva la proporción por encima del umbral, todo el grupo se marcha y el vecindario pasa a estar compuesto casi en su totalidad por el otro grupo {card-tipping}. El cambio es discontinuo, por lo que una pequeña variación puede generar una transformación mayúscula. Este tipo de preferencias se describe a menudo mediante un umbral de tolerancia, es decir, la proporción máxima de vecinos de otro grupo que una persona está dispuesta a aceptar {aps-tipping}."
     },
     {
       "heading_en": "An unstable point between two stable ones",
       "heading_vi": "Một điểm bất ổn nằm giữa hai trạng thái ổn định",
       "body_en": "The tipping point works like an unstable equilibrium. A neighbourhood sitting just below it can stay put, while one just above it gets pushed toward the other extreme. The paper's authors describe this as a cascade of white flight once the minority share exceeds the tipping point {card-tipping}. In their empirical analysis they find rapid declines in the majority population just beyond the point, which is the pattern the model predicts {card-tipping}.",
-      "body_vi": "Điểm lật hoạt động như một trạng thái cân bằng bất ổn. Khu phố nằm ngay dưới điểm này có thể đứng yên, còn khu phố nằm ngay trên nó bị đẩy về phía cực đối diện. Các tác giả bài báo mô tả đây là một chuỗi rời bỏ hàng loạt khi tỷ lệ nhóm thiểu số vượt điểm lật {card-tipping}. Trong phân tích thực nghiệm, họ thấy dân số nhóm đa số giảm nhanh ngay sau điểm này, đúng như mô hình dự đoán {card-tipping}."
+      "body_vi": "Điểm lật hoạt động như một trạng thái cân bằng bất ổn. Khu phố nằm ngay dưới điểm này có thể đứng yên, còn khu phố nằm ngay trên nó bị đẩy về phía cực đối diện. Các tác giả bài báo mô tả đây là một chuỗi rời bỏ hàng loạt khi tỷ lệ nhóm thiểu số vượt điểm lật {card-tipping}. Trong phân tích thực nghiệm, họ thấy dân số nhóm đa số giảm nhanh ngay sau điểm này, đúng như mô hình dự đoán {card-tipping}.",
+      "heading_fr": "Un point instable entre deux équilibres",
+      "body_fr": "Le point de bascule se comporte comme un équilibre instable. Un quartier situé juste en deçà peut demeurer inchangé, tandis qu'un quartier situé juste au-delà est inexorablement poussé vers l'autre extrême. Les auteurs de l'article décrivent ce phénomène comme une fuite des Blancs en cascade dès que la proportion de la minorité dépasse ce point de bascule {card-tipping}. Dans leur analyse empirique, ils constatent un déclin rapide de la population majoritaire dès que le seuil est franchi, ce qui correspond exactement aux prédictions du modèle {card-tipping}.",
+      "heading_de": "Ein instabiler Punkt zwischen zwei stabilen",
+      "body_de": "Der Kipppunkt wirkt wie ein instabiles Gleichgewicht. Ein Viertel knapp darunter kann stabil bleiben, während eines knapp darüber in das andere Extrem getrieben wird. Die Autoren der Studie beschreiben dies als eine Kaskade von White Flight, sobald der Minderheitenanteil den Kipppunkt überschreitet {card-tipping}. In ihrer empirischen Analyse stellen sie kurz hinter diesem Punkt einen raschen Rückgang der Mehrheitsbevölkerung fest – genau jenes Muster, das das Modell vorhersagt {card-tipping}.",
+      "heading_es": "Un punto inestable entre dos estables",
+      "body_es": "El punto de inflexión funciona como un equilibrio inestable. Un vecindario situado justo por debajo de este puede mantenerse sin cambios, mientras que uno situado apenas por encima se ve empujado hacia el otro extremo. Los autores del artículo describen esto como una cascada de éxodo blanco una vez que la proporción de la minoría supera el punto de inflexión {card-tipping}. En su análisis empírico constatan caídas rápidas de la población mayoritaria justo después de ese punto, que es el patrón predicho por el modelo {card-tipping}."
     },
     {
       "heading_en": "Mild preferences, strong results",
       "heading_vi": "Ưa thích nhẹ, kết quả mạnh",
       "body_en": "Schelling-type models show that a mild in-group preference is enough to produce segregation {aps-tipping}. People do not need to want full separation. Even if agents prefer perfect integration, a best-response dynamic, in which people move only when they gain, can still lead to segregation {aps-tipping}. Individual choices that each look reasonable can add up to a collective pattern nobody chose.",
-      "body_vi": "Kết luận chính của các mô hình kiểu Schelling là một ưa thích nhẹ đối với nhóm của mình cũng đủ tạo ra sự phân tách {aps-tipping}. Mọi người không cần muốn tách biệt hoàn toàn. Ngay cả khi các tác nhân ưa thích sự hòa nhập hoàn toàn, một quy trình phản ứng tốt nhất, trong đó người ta chỉ chuyển đi khi có lợi, vẫn có thể dẫn đến phân tách {aps-tipping}. Những lựa chọn cá nhân nào cũng có vẻ hợp lý có thể cộng lại thành một kiểu hình tập thể mà không ai đã chọn."
+      "body_vi": "Kết luận chính của các mô hình kiểu Schelling là một ưa thích nhẹ đối với nhóm của mình cũng đủ tạo ra sự phân tách {aps-tipping}. Mọi người không cần muốn tách biệt hoàn toàn. Ngay cả khi các tác nhân ưa thích sự hòa nhập hoàn toàn, một quy trình phản ứng tốt nhất, trong đó người ta chỉ chuyển đi khi có lợi, vẫn có thể dẫn đến phân tách {aps-tipping}. Những lựa chọn cá nhân nào cũng có vẻ hợp lý có thể cộng lại thành một kiểu hình tập thể mà không ai đã chọn.",
+      "heading_fr": "Légères préférences, effets massifs",
+      "body_fr": "Les modèles inspirés de Schelling démontrent qu'une légère préférence endogroupe suffit à engendrer la ségrégation {aps-tipping}. Il n'est pas nécessaire que les individus recherchent une séparation totale. Même si les agents préfèrent une intégration parfaite, une dynamique de meilleure réponse — selon laquelle les personnes ne déménagent que si elles y gagnent — peut tout de même aboutir à la ségrégation {aps-tipping}. Des choix individuels en apparence raisonnables peuvent ainsi s'agréger en une configuration collective que personne n'a choisie.",
+      "heading_de": "Milde Vorlieben, drastische Folgen",
+      "body_de": "Modelle nach Schellings Vorbild zeigen, dass bereits eine milde Eigengruppen-Präferenz genügt, um Segregation hervorzurufen {aps-tipping}. Die Menschen müssen keineswegs eine vollständige Trennung anstreben. Selbst wenn die Akteure eine perfekte Integration bevorzugen, kann eine Best-Response-Dynamik, bei der Menschen nur umziehen, wenn sie dadurch einen Vorteil erzielen, dennoch zur Segregation führen {aps-tipping}. Individuelle Entscheidungen, die jeweils vernünftig erscheinen, können sich zu einem kollektiven Muster summieren, das niemand gewählt hat.",
+      "heading_es": "Preferencias moderadas, resultados contundentes",
+      "body_es": "Los modelos de tipo Schelling demuestran que una preferencia moderada por el endogrupo basta para generar segregación {aps-tipping}. No es necesario que las personas deseen una separación total. Incluso si los agentes prefieren una integración perfecta, una dinámica de mejor respuesta, en la que las personas solo se mudan cuando obtienen una ganancia, puede conducir igualmente a la segregación {aps-tipping}. Elecciones individuales que parecen razonables por separado pueden confluir en un patrón colectivo que nadie eligió."
     },
     {
       "heading_en": "Testing the tipping in real cities",
       "heading_vi": "Thử nghiệm điểm lật ở các thành phố thật",
       "body_en": "The paper's authors test whether real neighbourhoods show the tipping pattern. They find that tipping points vary by city and are correlated across successive decades {card-tipping}. The change in population appears to shift relatively abruptly in a small region around the point {card-tipping}. The authors also show that the estimated jump shrinks when they control more flexibly for distance from the tipping point, so the sharpness of the break depends on how the test is set up {card-tipping}.",
-      "body_vi": "Các tác giả bài báo kiểm tra xem các khu phố thật có cho thấy mẫu hình điểm lật hay không. Họ thấy điểm lật khác nhau giữa các thành phố và có tương quan qua các thập kỷ liên tiếp {card-tipping}. Dân số dường như thay đổi tương đối đột ngột trong một vùng nhỏ quanh điểm này {card-tipping}. Các tác giả cũng cho thấy mức nhảy được ước tính sẽ giảm khi kiểm soát linh hoạt hơn khoảng cách tới điểm lật, nên độ sắc nét của bước ngoặt phụ thuộc vào cách kiểm định được thiết lập {card-tipping}."
+      "body_vi": "Các tác giả bài báo kiểm tra xem các khu phố thật có cho thấy mẫu hình điểm lật hay không. Họ thấy điểm lật khác nhau giữa các thành phố và có tương quan qua các thập kỷ liên tiếp {card-tipping}. Dân số dường như thay đổi tương đối đột ngột trong một vùng nhỏ quanh điểm này {card-tipping}. Các tác giả cũng cho thấy mức nhảy được ước tính sẽ giảm khi kiểm soát linh hoạt hơn khoảng cách tới điểm lật, nên độ sắc nét của bước ngoặt phụ thuộc vào cách kiểm định được thiết lập {card-tipping}.",
+      "heading_fr": "À l'épreuve des villes réelles",
+      "body_fr": "Les auteurs de l'article vérifient si de vrais quartiers présentent ce schéma de bascule. Ils découvrent que les points de bascule varient d'une ville à l'autre et restent corrélés d'une décennie à l'autre {card-tipping}. L'évolution démographique semble changer de façon relativement abrupte dans une zone étroite autour de ce point {card-tipping}. Les auteurs montrent également que le saut estimé s'atténue lorsqu'ils contrôlent plus souplement la distance au point de bascule ; la netteté de la rupture dépend donc de la configuration du test statistique {card-tipping}.",
+      "heading_de": "Den Kippeffekt in realen Städten testen",
+      "body_de": "Die Autoren der Studie prüfen, ob reale Viertel dieses Kippmuster aufweisen. Sie stellen fest, dass Kipppunkte von Stadt zu Stadt variieren und über aufeinanderfolgende Jahrzehnte hinweg korreliert sind {card-tipping}. Die Bevölkerungszusammensetzung scheint sich in einem schmalen Bereich um den Punkt relativ abrupt zu verändern {card-tipping}. Die Autoren zeigen zudem, dass der geschätzte Sprung schrumpft, wenn flexibler für den Abstand zum Kipppunkt kontrolliert wird; die Schärfe des Strukturbruchs hängt also vom Versuchsaufbau ab {card-tipping}.",
+      "heading_es": "Poner a prueba el punto de inflexión en ciudades reales",
+      "body_es": "Los autores del artículo comprueban si los vecindarios reales muestran el patrón de inflexión. Descubren que los puntos de inflexión varían según la ciudad y están correlacionados a lo largo de décadas sucesivas {card-tipping}. El cambio demográfico parece transformarse de forma relativamente abrupta en una pequeña zona alrededor del punto {card-tipping}. Los autores también demuestran que el salto estimado se reduce cuando controlan con mayor flexibilidad la distancia respecto al punto de inflexión, de modo que la nitidez de la ruptura depende de cómo se plantee la prueba {card-tipping}."
     },
     {
       "heading_en": "What the model cannot measure",
       "heading_vi": "Điều mô hình không đo được",
       "body_en": "A model can show a mechanism, but the boundaries in real data are messy. The paper's authors note that neighbourhoods do not correspond perfectly to the areas that enter residents' preferences {card-tipping}. The authors also conclude that the tipping behaviour they identify is driven by preferences over neighbourhood composition, and that these preferences are the key determinant of the dynamics {card-tipping}. Measuring those preferences directly is harder than fitting a curve to population counts. The authors also relate where the tipping point sits in each city to the racial attitudes of white residents {card-tipping}.",
-      "body_vi": "Một mô hình có thể chỉ ra cơ chế, nhưng ranh giới trong dữ liệu thật rất lộn xộn. Các tác giả bài báo lưu ý rằng khu phố không trùng khớp hoàn hảo với những vùng ảnh hưởng đến sở thích của cư dân {card-tipping}. Các tác giả cũng kết luận rằng hành vi điểm lật họ xác định được thúc đẩy bởi sở thích về thành phần cư dân khu phố, và các sở thích này là yếu tố quyết định chính của động lực đó {card-tipping}. Đo trực tiếp những sở thích đó khó hơn nhiều so với việc khớp một đường cong vào số liệu dân số. Các tác giả cũng liên hệ vị trí điểm lật ở mỗi thành phố với thái độ về chủng tộc của cư dân da trắng {card-tipping}."
+      "body_vi": "Một mô hình có thể chỉ ra cơ chế, nhưng ranh giới trong dữ liệu thật rất lộn xộn. Các tác giả bài báo lưu ý rằng khu phố không trùng khớp hoàn hảo với những vùng ảnh hưởng đến sở thích của cư dân {card-tipping}. Các tác giả cũng kết luận rằng hành vi điểm lật họ xác định được thúc đẩy bởi sở thích về thành phần cư dân khu phố, và các sở thích này là yếu tố quyết định chính của động lực đó {card-tipping}. Đo trực tiếp những sở thích đó khó hơn nhiều so với việc khớp một đường cong vào số liệu dân số. Các tác giả cũng liên hệ vị trí điểm lật ở mỗi thành phố với thái độ về chủng tộc của cư dân da trắng {card-tipping}.",
+      "heading_fr": "Ce que le modèle ne peut mesurer",
+      "body_fr": "Un modèle met en lumière un mécanisme, mais les délimitations dans les données réelles sont imparfaites. Les auteurs soulignent que les quartiers réels ne correspondent pas exactement aux périmètres pris en compte dans les préférences des résidents {card-tipping}. Ils concluent également que le comportement de bascule observé découle des préférences relatives à la composition du quartier, et que celles-ci constituent le déterminant fondamental de cette dynamique {card-tipping}. Mesurer directement ces préférences s'avère bien plus ardu que d'ajuster une courbe sur des recensements de population. Les auteurs établissent en outre un lien entre la valeur du point de bascule dans chaque ville et les attitudes raciales des résidents blancs {card-tipping}.",
+      "heading_de": "Was das Modell nicht messen kann",
+      "body_de": "Ein Modell kann einen Mechanismus veranschaulichen, doch die Grenzen in realen Daten sind unscharf. Die Autoren der Studie merken an, dass reale Stadtviertel nicht exakt den Gebieten entsprechen, die für die Präferenzen der Bewohner ausschlaggebend sind {card-tipping}. Zudem kommen sie zu dem Schluss, dass das von ihnen identifizierte Kippverhalten von Präferenzen bezüglich der Nachbarschaftszusammensetzung getrieben wird und diese Vorlieben die entscheidende Triebfeder der Dynamik sind {card-tipping}. Diese Präferenzen direkt zu messen, ist schwieriger, als eine Kurve an Bevölkerungszahlen anzupassen. Zudem setzen die Autoren die Lage des Kipppunkts in den einzelnen Städten ins Verhältnis zu den ethnischen Einstellungen weißer Bewohner {card-tipping}.",
+      "heading_es": "Lo que el modelo no puede medir",
+      "body_es": "Un modelo puede ilustrar un mecanismo, pero los límites en los datos reales son difusos. Los autores del artículo señalan que los vecindarios no se corresponden a la perfección con las áreas que influyen en las preferencias de los residentes {card-tipping}. También concluyen que el comportamiento de inflexión identificado responde a preferencias sobre la composición del vecindario, y que dichas preferencias constituyen el factor determinante de la dinámica {card-tipping}. Medir tales preferencias de forma directa resulta más complejo que ajustar una curva a los recuentos poblacionales. Además, los autores relacionan la ubicación del punto de inflexión en cada ciudad con las actitudes raciales de los residentes blancos {card-tipping}."
     },
     {
       "heading_en": "Why the mechanism matters",
       "heading_vi": "Vì sao cơ chế này quan trọng",
       "body_en": "Schelling's model explains why a neighbourhood can flip quickly even though each household follows a simple rule. It also explains why tipping points can differ by place. The useful question is therefore not only what people prefer, but how close a neighbourhood sits to its threshold, and what a small change in its composition sets off.",
-      "body_vi": "Mô hình của Schelling giải thích vì sao một khu phố có thể đổi hẳn nhanh chóng ngay cả khi mỗi hộ chỉ theo một quy tắc đơn giản. Nó cũng giải thích vì sao điểm lật có thể khác nhau giữa các nơi. Câu hỏi hữu ích vì thế không chỉ là người ta thích gì, mà còn là khu phố đang nằm cách ngưỡng của mình bao xa, và một thay đổi nhỏ về thành phần cư dân sẽ kích hoạt điều gì."
+      "body_vi": "Mô hình của Schelling giải thích vì sao một khu phố có thể đổi hẳn nhanh chóng ngay cả khi mỗi hộ chỉ theo một quy tắc đơn giản. Nó cũng giải thích vì sao điểm lật có thể khác nhau giữa các nơi. Câu hỏi hữu ích vì thế không chỉ là người ta thích gì, mà còn là khu phố đang nằm cách ngưỡng của mình bao xa, và một thay đổi nhỏ về thành phần cư dân sẽ kích hoạt điều gì.",
+      "heading_fr": "Pourquoi ce mécanisme est essentiel",
+      "body_fr": "Le modèle de Schelling explique pourquoi un quartier peut basculer rapidement alors même que chaque ménage n'applique qu'une règle élémentaire. Il permet aussi de comprendre pourquoi les points de bascule diffèrent selon les lieux. Dès lors, la question pertinente n'est pas seulement de savoir ce que les individus préfèrent, mais à quel point un quartier est proche de son seuil et ce qu'une infime variation de sa composition est susceptible de déclencher.",
+      "heading_de": "Warum der Mechanismus von Bedeutung ist",
+      "body_de": "Schellings Modell erklärt, warum ein Viertel schlagartig kippen kann, obwohl jeder Haushalt einer einfachen Regel folgt. Es begründet auch, warum Kipppunkte ortsabhängig variieren können. Die entscheidende Frage lautet daher nicht nur, was die Menschen bevorzugen, sondern wie nah sich ein Viertel an seiner Schwelle befindet und was eine geringfügige Änderung seiner Zusammensetzung auslöst.",
+      "heading_es": "Por qué importa este mecanismo",
+      "body_es": "El modelo de Schelling explica por qué un vecindario puede transformarse con rapidez aunque cada hogar siga una regla sencilla. Asimismo, explica por qué los puntos de inflexión varían de un lugar a otro. Por lo tanto, la pregunta relevante no radica solo en qué prefiere la gente, sino en cuán cerca se encuentra un vecindario de su umbral y qué desencadena una pequeña alteración en su composición."
     },
     {
       "heading_en": "Open neighbourhoods",
       "heading_vi": "Các khu phố mở",
       "body_en": "A recent APS paper extends Schelling's approach to open neighbourhoods, where the number of residents is not fixed, although the number of houses is {aps-tipping}. Its title names the central point, symmetric preferences with asymmetric outcomes: the same mild preferences can produce very different neighbourhoods {aps-tipping}. Modelling moves as reactions, in which residents leave or arrive, also helps the model avoid frozen states in which the system gets stuck {aps-tipping}. In the model, each site is either empty or holds a resident of one of two types {aps-tipping}.",
-      "body_vi": "Một bài báo gần đây trên APS mở rộng cách tiếp cận của Schelling sang các khu phố mở, nơi số cư dân không cố định, dù số nhà thì có {aps-tipping}. Tiêu đề bài báo nêu điểm cốt lõi là các ưa thích đối xứng dẫn đến kết quả bất đối xứng: cùng những ưa thích nhẹ có thể tạo ra các khu phố rất khác nhau {aps-tipping}. Mô hình hóa các chuyển động như phản ứng, trong đó cư dân rời đi hoặc đến nơi, cũng giúp mô hình tránh các trạng thái đóng băng, nơi hệ thống bị kẹt {aps-tipping}. Trong mô hình, mỗi ô hoặc trống, hoặc có một cư dân thuộc một trong hai loại {aps-tipping}."
+      "body_vi": "Một bài báo gần đây trên APS mở rộng cách tiếp cận của Schelling sang các khu phố mở, nơi số cư dân không cố định, dù số nhà thì có {aps-tipping}. Tiêu đề bài báo nêu điểm cốt lõi là các ưa thích đối xứng dẫn đến kết quả bất đối xứng: cùng những ưa thích nhẹ có thể tạo ra các khu phố rất khác nhau {aps-tipping}. Mô hình hóa các chuyển động như phản ứng, trong đó cư dân rời đi hoặc đến nơi, cũng giúp mô hình tránh các trạng thái đóng băng, nơi hệ thống bị kẹt {aps-tipping}. Trong mô hình, mỗi ô hoặc trống, hoặc có một cư dân thuộc một trong hai loại {aps-tipping}.",
+      "heading_fr": "Des quartiers ouverts",
+      "body_fr": "Un article récent de l'APS étend l'approche de Schelling aux quartiers ouverts, où le nombre d'habitants n'est pas fixe, bien que le nombre de logements le soit {aps-tipping}. Son titre met en avant l'idée maîtresse, à savoir des préférences symétriques aboutissant à des résultats asymétriques : des préférences modérées identiques peuvent engendrer des quartiers totalement dissemblables {aps-tipping}. Modéliser les déménagements comme des réactions, où les résidents partent ou arrivent, évite en outre au modèle de sombrer dans des états figés où le système resterait bloqué {aps-tipping}. Dans ce cadre théorique, chaque emplacement est soit vacant, soit occupé par un habitant appartenant à l'un des deux groupes {aps-tipping}.",
+      "heading_de": "Offene Viertel",
+      "body_de": "Eine aktuelle APS-Studie erweitert Schellings Ansatz auf offene Viertel, in denen die Zahl der Bewohner variabel ist, auch wenn die Zahl der Häuser feststeht {aps-tipping}. Ihr Titel nennt den Kernpunkt – symmetrische Präferenzen mit asymmetrischen Ergebnissen: Dieselben milden Präferenzen können völlig unterschiedliche Viertel hervorbringen {aps-tipping}. Die Modellierung von Umzügen als Reaktionen, bei denen Bewohner fortziehen oder ankommen, bewahrt das Modell zudem vor erstarrten Zuständen, in denen das System blockiert {aps-tipping}. Im Modell ist jeder Standort entweder leer oder von einem Bewohner eines der beiden Typen besetzt {aps-tipping}.",
+      "heading_es": "Vecindarios abiertos",
+      "body_es": "Un artículo reciente de la APS extiende el enfoque de Schelling a vecindarios abiertos, donde el número de residentes no es fijo, aunque sí lo es la cantidad de viviendas {aps-tipping}. Su título enuncia el punto central, preferencias simétricas con resultados asimétricos: las mismas preferencias moderadas pueden dar lugar a vecindarios sumamente distintos {aps-tipping}. Modelar los traslados como reacciones, en las que los residentes se marchan o llegan, ayuda además a que el modelo evite estados congelados en los que el sistema queda bloqueado {aps-tipping}. En el modelo, cada ubicación está vacía o alberga a un residente de uno de dos tipos {aps-tipping}."
     }
   ],
   "keyPoint": {
     "en": "[p:A small, shared preference can produce a sudden tipping point, so the outcome can be far more extreme than the preferences behind it.] Real neighbourhoods are harder to measure than the model, and the tipping points differ from city to city.",
-    "vi": "[p:Một ưa thích nhỏ được nhiều người cùng chia sẻ có thể tạo ra một điểm lật đột ngột, nên kết quả có thể cực đoan hơn nhiều so với các ưa thích đứng sau.] Các khu phố thật khó đo hơn mô hình, và điểm lật khác nhau giữa các thành phố."
+    "vi": "[p:Một ưa thích nhỏ được nhiều người cùng chia sẻ có thể tạo ra một điểm lật đột ngột, nên kết quả có thể cực đoan hơn nhiều so với các ưa thích đứng sau.] Các khu phố thật khó đo hơn mô hình, và điểm lật khác nhau giữa các thành phố.",
+    "fr": "[p:Une préférence modeste et partagée peut engendrer un point de bascule soudain, conduisant à un résultat bien plus extrême que les préférences qui l'ont suscité.] Les quartiers réels sont plus difficiles à mesurer que le modèle théorique, et les points de bascule varient d'une ville à l'autre.",
+    "de": "[p:Eine geringe, geteilte Vorliebe kann einen plötzlichen Kipppunkt herbeiführen, sodass das Gesamtergebnis weitaus extremer ausfällt als die zugrunde liegenden Präferenzen.] Reale Stadtviertel lassen sich schwerer vermessen als das Modell, und die Kipppunkte variieren von Stadt zu Stadt.",
+    "es": "[p:Una preferencia pequeña y compartida puede generar un punto de inflexión repentino, de modo que el resultado final puede ser mucho más extremo que las preferencias que lo originaron.] Los vecindarios reales son más difíciles de medir que el modelo, y los puntos de inflexión difieren de una ciudad a otra."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Đọc tên và tạp chí của bài báo năm 1971 của Schelling như được trích trong bài của Card, và viết lại luận điểm chính bằng một câu của riêng bạn.",
       "Vẽ một hàng hai mươi ô vuông, tô màu mười ô bằng hai màu khác nhau, và chuyển một ô sang chỗ trống mỗi khi phần lớn ô lân cận có màu khác. Quan sát hàng đó trong năm mươi lượt.",
       "So sánh ranh giới của một khu phố bạn biết trên hai bản đồ của hai thập kỷ khác nhau, và ghi lại cơ cấu dân cư có thay đổi không."
+    ],
+    "fr": [
+      "Lisez le titre et le nom de la revue de l'article de 1971 de Schelling, tel que cité dans l'étude de Card, puis reformulez sa thèse centrale en une phrase rédigée par vos soins.",
+      "Dessinez une rangée de vingt cases, coloriez-en dix avec deux couleurs distinctes, puis déplacez une case dès que la majorité de ses voisines sont d'une autre couleur. Observez l'évolution de la rangée pendant cinquante déplacements.",
+      "Comparez les limites d'un quartier que vous connaissez sur deux cartes issues de décennies différentes, et observez si la composition de sa population s'est modifiée."
+    ],
+    "de": [
+      "Lies den in der Card-Studie zitierten Titel und die Fachzeitschrift von Schellings Aufsatz aus dem Jahr 1971 und fasse dessen zentrale These in einem eigenen Satz von dir zusammen.",
+      "Zeichne eine Reihe von zwanzig Quadraten, färbe zehn davon in zwei verschiedenen Farben ein und verschiebe ein Quadrat immer dann, wenn die Mehrheit seiner Nachbarn eine andere Farbe hat. Beobachte die Reihe über fünfzig Züge hinweg.",
+      "Vergleiche die Grenzen eines Viertels, das du kennst, auf zwei Karten aus unterschiedlichen Jahrzehnten und notiere, ob sich die Bevölkerungszusammensetzung verändert hat."
+    ],
+    "es": [
+      "Lea el título y la revista del artículo de 1971 de Schelling citado en el estudio de Card, y reformule su tesis central en una sola frase propia.",
+      "Dibuje una hilera de veinte casillas, pinte diez de ellas de dos colores distintos y mueva una casilla cada vez que la mayoría de sus vecinas sea de otro color. Observe la hilera a lo largo de cincuenta movimientos.",
+      "Compare los límites de un vecindario que conozca en dos mapas de décadas diferentes y observe si cambió la composición demográfica."
     ]
   },
   "references": [
@@ -107,5 +173,78 @@
     "sourceUrl": "https://unsplash.com/photos/nJdwUHmaY8A"
   },
   "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoQABwAPu1kqk4ppaQiMAgBMB2JaACdMoACbQaRgSPqfNYpoQAA/uAAy+jq+3LHUQnrbN9VK5+OjqEDVmJvSAyuLemszmwjv6atXoL6LtTOvBwd783yh4/yK8mP5JsYPMynF3OTFrx3X2Hx8JM65G+QkdvuX3OY1tQUD+a0rihI0snf9/i/6d1vqVrV8eCqwButmQrDXoZmvhswoAA=",
-  "dominant": "#998a7f"
+  "dominant": "#998a7f",
+  "glossary": {
+    "en": {
+      "tipping point": "A threshold beyond which a neighbourhood changes rapidly and completely rather than gradually.",
+      "tolerance threshold": "The largest share of neighbours of another group that an individual will accept before moving.",
+      "discontinuous": "Characterized by abrupt, sudden shifts rather than smooth and steady changes.",
+      "unstable equilibrium": "A delicate balance where a small disturbance pushes the system toward an opposite extreme.",
+      "white flight": "The rapid departure of white residents from a neighbourhood as minority populations increase.",
+      "empirical analysis": "Research evaluating real-world observational data rather than relying purely on theoretical models.",
+      "in-group preference": "An inclination to associate with or live among individuals who share one's own identity.",
+      "best-response dynamic": "A decision rule where individuals relocate only when doing so yields an immediate personal gain.",
+      "open neighbourhoods": "Neighbourhoods where the number of occupants can vary, even though total housing units are fixed.",
+      "frozen states": "Gridlocked situations where no individual can make a beneficial move, leaving the pattern stuck."
+    },
+    "vi": {
+      "thomas schelling": "Nhà kinh tế học phát triển mô hình giải thích hiện tượng phân tách xã hội năm 1971.",
+      "điểm lật": "Ngưỡng tỷ lệ khiến khu phố thay đổi đột ngột về thành phần dân cư.",
+      "phân tách": "Sự chia rẽ dân cư thành các khu vực riêng biệt theo từng nhóm.",
+      "ngưỡng dung nạp": "Tỷ lệ tối đa người nhóm khác trong khu phố mà một người chấp nhận.",
+      "tác nhân": "Cá nhân tham gia đưa ra quyết định chuyển đi hoặc ở lại trong mô hình.",
+      "mức nhảy": "Độ biến động dân số đột ngột xảy ra quanh ngưỡng điểm lật.",
+      "kiểm định": "Phương pháp thống kê dùng để kiểm tra giả thuyết mô hình trên dữ liệu thực.",
+      "khu phố mở": "Khu vực có số lượng dân cư biến động, không cố định theo thời gian.",
+      "bất đối xứng": "Kết quả phân hóa mạnh mẽ dù xuất phát từ những ưa thích ban đầu giống nhau.",
+      "aps": "Hiệp hội Vật lý Hoa Kỳ, nơi xuất bản bài báo nghiên cứu được trích dẫn."
+    },
+    "fr": {
+      "point de bascule": "Seuil critique au-delà duquel un système ou un quartier subit une transformation rapide et irréversible.",
+      "seuil de tolérance": "Part maximale de voisins d'un autre groupe qu'un individu accepte avant de décider de déménager.",
+      "équilibre instable": "État précaire d'où le moindre changement écarte définitivement le système vers une situation différente.",
+      "fuite des blancs": "Départ massif de résidents blancs d'un quartier quand la part de minorités y franchit un seuil.",
+      "préférence endogroupe": "Tendance à privilégier la proximité ou le contact avec les membres de son propre groupe social.",
+      "meilleure réponse": "Décision par laquelle un individu choisit l'option la plus profitable selon le comportement des autres.",
+      "saut estimé": "Mesure statistique de la variation brutale d'une valeur lors du franchissement d'un seuil.",
+      "quartiers ouverts": "Modèle spatial dans lequel la population totale fluctue librement sans nombre fixe d'habitants.",
+      "états figés": "Situations de blocage où plus aucun individu n'est incité à se déplacer.",
+      "préférences symétriques": "Conditions où deux groupes possèdent des règles de choix et de tolérance rigoureusement équivalentes."
+    },
+    "de": {
+      "kipppunkt": "Schwellenwert, ab dem ein System plötzlich von einem stabilen Zustand in einen völlig anderen übergeht.",
+      "segregation": "Die räumliche Entmischung oder getrennte Verteilung verschiedener Bevölkerungsgruppen in einer Stadt.",
+      "toleranzschwelle": "Der maximale Anteil an Nachbarn einer anderen Gruppe, den ein Bewohner in seinem Wohnumfeld akzeptiert.",
+      "instabiles gleichgewicht": "Ein Ruhezustand, der bereits bei minimalen Störungen zusammenbricht und in ein anderes Extrem umschlägt.",
+      "white flight": "Die beschleunigte Abwanderung weißer Bewohner aus Stadtvierteln bei wachsendem Anteil ethnischer Minderheiten.",
+      "eigengruppen-präferenz": "Die Vorliebe von Menschen, mit Angehörigen der eigenen sozialen oder ethnischen Gruppe zusammenzuleben.",
+      "best-response-dynamik": "Ein Entscheidungsverhalten, bei dem Akteure nur umziehen, wenn die Veränderung ihnen einen persönlichen Vorteil bringt.",
+      "offene viertel": "Modellierte Nachbarschaften mit veränderlicher Einwohnerzahl bei einer festen Zahl an verfügbaren Häusern.",
+      "aps-studie": "Eine in einer Fachzeitschrift der American Physical Society veröffentlichte wissenschaftliche Forschungsarbeit.",
+      "symmetrische präferenzen": "Gleichartige Neigungen beider Bevölkerungsgruppen bezüglich des Anteils der jeweils anderen Gruppe im Viertel."
+    },
+    "es": {
+      "punto de inflexión": "Nivel crítico en el que una pequeña variación desencadena una transformación colectiva abrupta del vecindario.",
+      "umbral de tolerancia": "Proporción máxima de vecinos de otro grupo que una persona está dispuesta a aceptar antes de marcharse.",
+      "equilibrio inestable": "Estado en el que una mínima perturbación aleja al sistema de su posición hacia un extremo diferente.",
+      "éxodo blanco": "Emigración masiva de población blanca provocada cuando la proporción de residentes de minorías rebasa cierto nivel.",
+      "endogrupo": "Grupo social con el que una persona se identifica frente a quienes considera ajenos a él.",
+      "mejor respuesta": "Estrategia donde cada individuo actúa únicamente cuando la decisión mejora su situación respecto al estado previo.",
+      "análisis empírico": "Investigación basada en la observación y verificación con datos reales en lugar de meros supuestos teóricos.",
+      "aps": "Sigla de la American Physical Society, prestigiosa organización científica que difunde estudios teóricos y experimentales.",
+      "vecindarios abiertos": "Comunidades donde la cantidad de habitantes puede variar con el flujo constante de llegadas y salidas.",
+      "estados congelados": "Situaciones de bloqueo en las que el sistema se detiene y ningún individuo puede desplazarse."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

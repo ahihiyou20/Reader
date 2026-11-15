@@ -11,59 +11,110 @@
   ],
   "title": {
     "en": "Hedonic adaptation: why good news fades, though not always",
-    "vi": "Thích nghi khoái lạc: vì sao tin vui phai dần, dù không phải lúc nào"
+    "vi": "Thích nghi khoái lạc: vì sao tin vui phai dần, dù không phải lúc nào",
+    "fr": "Adaptation hédonique : pourquoi les bonnes nouvelles s’estompent, mais pas toujours",
+    "de": "Hedonische Adaption: Warum gute Nachrichten verblassen, doch nicht immer",
+    "es": "Adaptación hedónica: por qué las buenas noticias pierden brillo, aunque no siempre"
   },
   "hook": {
     "en": "In 1978, psychologists compared 22 lottery winners with 22 neighbours who had won nothing. The winners were not happier, and they enjoyed small daily pleasures less. The study launched the idea of the hedonic treadmill: we get used to what we have. Later work shows that [p:the treadmill is real but uneven], and that some events leave a lasting mark.",
-    "vi": "Năm 1978, các nhà tâm lý học so sánh 22 người trúng xổ số với 22 người không trúng gì. Người trúng không hạnh phúc hơn, và họ thấy những niềm vui nhỏ hằng ngày kém thú vị hơn. Nghiên cứu ấy khai sinh ý tưởng về 'guồng quay khoái lạc': ta quen dần với những gì mình có. Các công trình sau này cho thấy [p:guồng quay có thật nhưng không đều], và một số biến cố để lại dấu vết lâu dài."
+    "vi": "Năm 1978, các nhà tâm lý học so sánh 22 người trúng xổ số với 22 người không trúng gì. Người trúng không hạnh phúc hơn, và họ thấy những niềm vui nhỏ hằng ngày kém thú vị hơn. Nghiên cứu ấy khai sinh ý tưởng về 'guồng quay khoái lạc': ta quen dần với những gì mình có. Các công trình sau này cho thấy [p:guồng quay có thật nhưng không đều], và một số biến cố để lại dấu vết lâu dài.",
+    "fr": "En 1978, des psychologues ont comparé 22 gagnants de loterie à 22 voisins qui n’avaient rien gagné. Les gagnants n’étaient pas plus heureux et appréciaient moins les petits plaisirs quotidiens. Cette étude a lancé l’idée du tapis roulant hédonique : nous nous habituons à ce que nous avons. Des travaux ultérieurs montrent que [p:ce tapis roulant est bien réel mais inégal], et que certains événements laissent une empreinte durable.",
+    "de": "Im Jahr 1978 verglichen Psychologen 22 Lotteriegewinner mit 22 Nachbarn, die nichts gewonnen hatten. Die Gewinner waren nicht glücklicher und empfanden an kleinen alltäglichen Freuden weniger Vergnügen. Die Studie begründete das Konzept der hedonischen Tretmühle: Wir gewöhnen uns an das, was wir haben. Spätere Untersuchungen zeigen, dass [p:die Tretmühle real, aber ungleichmäßig ist], und dass manche Ereignisse dauerhafte Spuren hinterlassen.",
+    "es": "En 1978, un grupo de psicólogos comparó a 22 ganadores de la lotería con 22 vecinos que no habían ganado nada. Los ganadores no eran más felices y disfrutaban menos de los pequeños placeres cotidianos. El estudio dio origen a la idea de la cinta hedónica: nos acostumbramos a lo que tenemos. Investigaciones posteriores demuestran que [p:la cinta es real pero desigual], y que ciertos acontecimientos dejan una huella duradera."
   },
   "sections": [
     {
       "heading_en": "A famous study with a small sample",
       "heading_vi": "Một nghiên cứu nổi tiếng với mẫu nhỏ",
       "body_en": "Brickman, Coates and Janoff-Bulman interviewed [y:22 major lottery winners] and 22 controls, and compared both groups with [y:29 people paralysed in accidents] {brickman-1978}. The winners did not report being happier than the controls. They also took significantly less pleasure from a series of mundane everyday events. The authors reasoned that a huge win sets a bar that everyday life can no longer clear. This is the contrast effect. The sample is small, so the study is best read as a vivid demonstration of an idea rather than a measurement of how all lottery winners fare.",
-      "body_vi": "Brickman, Coates và Janoff-Bulman phỏng vấn [y:22 người trúng xổ số lớn] và 22 người đối chứng, rồi so cả hai nhóm với [y:29 người bị liệt do tai nạn] {brickman-1978}. Người trúng số không cho biết mình hạnh phúc hơn nhóm đối chứng. Họ cũng thấy một loạt sự việc thường ngày ít thú vị hơn một cách có ý nghĩa thống kê. Các tác giả lý giải rằng một khoản trúng thưởng khổng lồ đặt ra mức chuẩn mà cuộc sống thường ngày không còn với tới nổi. Đó là hiệu ứng tương phản. Mẫu nghiên cứu nhỏ, nên nó đáng được xem như một minh họa sinh động cho một ý tưởng hơn là phép đo về mọi người trúng số."
+      "body_vi": "Brickman, Coates và Janoff-Bulman phỏng vấn [y:22 người trúng xổ số lớn] và 22 người đối chứng, rồi so cả hai nhóm với [y:29 người bị liệt do tai nạn] {brickman-1978}. Người trúng số không cho biết mình hạnh phúc hơn nhóm đối chứng. Họ cũng thấy một loạt sự việc thường ngày ít thú vị hơn một cách có ý nghĩa thống kê. Các tác giả lý giải rằng một khoản trúng thưởng khổng lồ đặt ra mức chuẩn mà cuộc sống thường ngày không còn với tới nổi. Đó là hiệu ứng tương phản. Mẫu nghiên cứu nhỏ, nên nó đáng được xem như một minh họa sinh động cho một ý tưởng hơn là phép đo về mọi người trúng số.",
+      "heading_fr": "Une étude célèbre sur un petit échantillon",
+      "body_fr": "Brickman, Coates et Janoff-Bulman ont interrogé [y:22 grands gagnants de loterie] et 22 témoins, et ont comparé ces deux groupes à [y:29 personnes paralysées lors d’accidents] {brickman-1978}. Les gagnants ne se déclaraient pas plus heureux que les témoins. Ils tiraient également nettement moins de plaisir d’une série d’événements ordinaires du quotidien. Selon les auteurs, un gain colossal place la barre trop haut pour que la vie de tous les jours puisse l’atteindre. C’est l’effet de contraste. L’échantillon étant restreint, cette étude doit plutôt être vue comme l’illustration frappante d’une idée que comme une mesure précise de ce que vivent tous les gagnants de loterie.",
+      "heading_de": "Eine berühmte Studie mit kleiner Stichprobe",
+      "body_de": "Brickman, Coates und Janoff-Bulman befragten [y:22 Hauptgewinner einer Lotterie] sowie 22 Kontrollpersonen und verglichen beide Gruppen mit [y:29 durch Unfälle gelähmten Menschen] {brickman-1978}. Die Gewinner gaben nicht an, glücklicher als die Kontrollgruppe zu sein. Zudem bereiteten ihnen alltägliche Kleinigkeiten deutlich weniger Freude. Die Autoren schlussfolgerten, dass ein riesiger Gewinn die Messlatte so hoch legt, dass das normale Leben sie nicht mehr erreichen kann. Das ist der Kontrasteffekt. Die Stichprobe ist klein, daher versteht man die Studie am besten als anschauliche Demonstration einer Idee und nicht als Messung dessen, wie es allen Lotteriegewinnern ergeht.",
+      "heading_es": "Un estudio célebre con una muestra pequeña",
+      "body_es": "Brickman, Coates y Janoff-Bulman entrevistaron a [y:22 grandes ganadores de la lotería] y a 22 sujetos de control, y compararon a ambos grupos con [y:29 personas con parálisis por accidentes] {brickman-1978}. Los ganadores no manifestaron ser más felices que el grupo de control. Además, obtuvieron significativamente menos placer de una serie de sucesos cotidianos comunes. Los autores argumentaron que un premio enorme fija un listón tan alto que la vida cotidiana ya no logra superar. Este es el efecto de contraste. La muestra es pequeña, por lo que el estudio debe interpretarse más bien como una demostración elocuente de una idea antes que como una medición precisa de la evolución de todos los ganadores de lotería."
     },
     {
       "heading_en": "Two forces: contrast and habituation",
       "heading_vi": "Hai lực kéo: tương phản và quen dần",
       "body_en": "The study rested on adaptation-level theory, which holds that we judge any stimulus against what we have experienced before {brickman-1978}. Two things follow. Contrast makes ordinary pleasures look dull next to a peak experience. Habituation means the new comforts a windfall buys stop feeling new. The term 'hedonic treadmill' itself was coined earlier, by Brickman and Campbell in 1971 {wiki-hedonic}. The picture is of a walker who keeps moving yet stays in the same place: effort and rising income raise expectations at the same pace, so the gain in happiness never accumulates.",
-      "body_vi": "Nghiên cứu dựa trên lý thuyết mức thích nghi, theo đó ta đánh giá mọi kích thích bằng những gì đã trải qua trước đó {brickman-1978}. Từ đây có hai hệ quả. Tương phản khiến niềm vui bình thường trở nên nhạt khi đặt cạnh một trải nghiệm đỉnh cao. Quen dần nghĩa là những tiện nghi mới mà khoản tiền bất ngờ mua được thôi còn mới. Bản thân thuật ngữ 'guồng quay khoái lạc' (*hedonic treadmill*) được Brickman và Campbell đặt ra sớm hơn, năm 1971 {wiki-hedonic}. Hình ảnh ở đây là người đi bộ trên máy chạy: cứ bước mãi mà vẫn đứng yên, vì nỗ lực và thu nhập tăng kéo theo kỳ vọng tăng cùng nhịp, nên phần hạnh phúc có thêm không tích lũy được."
+      "body_vi": "Nghiên cứu dựa trên lý thuyết mức thích nghi, theo đó ta đánh giá mọi kích thích bằng những gì đã trải qua trước đó {brickman-1978}. Từ đây có hai hệ quả. Tương phản khiến niềm vui bình thường trở nên nhạt khi đặt cạnh một trải nghiệm đỉnh cao. Quen dần nghĩa là những tiện nghi mới mà khoản tiền bất ngờ mua được thôi còn mới. Bản thân thuật ngữ 'guồng quay khoái lạc' (*hedonic treadmill*) được Brickman và Campbell đặt ra sớm hơn, năm 1971 {wiki-hedonic}. Hình ảnh ở đây là người đi bộ trên máy chạy: cứ bước mãi mà vẫn đứng yên, vì nỗ lực và thu nhập tăng kéo theo kỳ vọng tăng cùng nhịp, nên phần hạnh phúc có thêm không tích lũy được.",
+      "heading_fr": "Deux forces : le contraste et l’habituation",
+      "body_fr": "L’étude reposait sur la théorie du niveau d’adaptation, selon laquelle nous évaluons tout stimulus en le comparant à ce que nous avons déjà vécu {brickman-1978}. Deux conséquences en découlent. Le contraste rend les plaisirs ordinaires bien ternes à côté d’une expérience exceptionnelle. L’habituation fait que le nouveau confort offert par une manne financière cesse de paraître nouveau. L’expression de « tapis roulant hédonique » a elle-même été forgée plus tôt, par Brickman et Campbell en 1971 {wiki-hedonic}. L’image est celle d’un marcheur qui avance sans cesse tout en restant au même endroit : les efforts et la hausse des revenus augmentent les attentes au même rythme, de sorte que le gain de bonheur ne s’accumule jamais.",
+      "heading_de": "Zwei Kräfte: Kontrast und Gewöhnung",
+      "body_de": "Die Studie stützte sich auf die Adaptationsniveau-Theorie, wonach wir jeden Reiz an dem messen, was wir zuvor erlebt haben {brickman-1978}. Daraus folgt zweierlei. Kontrast lässt alltägliche Freuden neben einem Höhepunkterlebnis verblassen. Gewöhnung bedeutet, dass die neuen Annehmlichkeiten, die ein Geldsegen ermöglicht, sich bald nicht mehr neu anfühlen. Der Begriff hedonische Tretmühle selbst wurde bereits 1971 von Brickman und Campbell geprägt {wiki-hedonic}. Das Bild gleicht einem Spaziergänger, der unentwegt geht und doch auf der Stelle tritt: Anstrengung und steigendes Einkommen treiben die Erwartungen im gleichen Tempo nach oben, sodass der Zuwachs an Glück sich nie summiert.",
+      "heading_es": "Dos fuerzas: contraste y habituación",
+      "body_es": "La investigación se basó en la teoría del nivel de adaptación, la cual sostiene que evaluamos cualquier estímulo en comparación con nuestras experiencias previas {brickman-1978}. De ello se derivan dos consecuencias. El contraste hace que los placeres ordinarios parezcan insulsos frente a una vivencia cumbre. La habituación implica que las nuevas comodidades adquiridas con una ganancia inesperada dejan de sentirse novedosas. El propio término 'cinta hedónica' fue acuñado antes, por Brickman y Campbell en 1971 {wiki-hedonic}. La imagen evoca a un caminante que no deja de avanzar pero permanece en el mismo sitio: el esfuerzo y los mayores ingresos elevan las expectativas al mismo ritmo, de modo que la ganancia de felicidad nunca llega a acumularse."
     },
     {
       "heading_en": "The 'set point' is not zero",
       "heading_vi": "'Điểm cân bằng' không phải là số không",
       "body_en": "Early versions of the theory said people return to hedonic neutrality. Diener, Lucas and Scollon reviewed the later evidence and proposed [p:five revisions] {diener-2006}. Set points are not neutral. They differ between people, partly because of temperament. One person can have several set points, since pleasant feelings, unpleasant feelings and life satisfaction can move in different directions. Set points can change under some conditions. And people differ in how much they adapt to the same event. A 1996 study that followed over a thousand sets of twins for ten years concluded that almost half of the differences in happiness are genetic {wiki-hedonic}.",
-      "body_vi": "Các phiên bản đầu của lý thuyết cho rằng con người quay về trạng thái trung tính. Diener, Lucas và Scollon xem lại bằng chứng về sau và đề xuất [p:năm điều chỉnh] {diener-2006}. Điểm cân bằng không trung tính. Nó khác nhau giữa người này với người kia, một phần do khí chất. Một người có thể có nhiều điểm cân bằng, vì cảm xúc dễ chịu, cảm xúc khó chịu và mức hài lòng với cuộc sống có thể đi theo những hướng khác nhau. Điểm cân bằng có thể thay đổi trong một số điều kiện. Và mỗi người thích nghi với cùng một biến cố ở mức khác nhau. Một nghiên cứu năm 1996 theo dõi hơn một nghìn cặp sinh đôi trong mười năm kết luận rằng gần một nửa khác biệt về hạnh phúc có nguồn gốc di truyền {wiki-hedonic}."
+      "body_vi": "Các phiên bản đầu của lý thuyết cho rằng con người quay về trạng thái trung tính. Diener, Lucas và Scollon xem lại bằng chứng về sau và đề xuất [p:năm điều chỉnh] {diener-2006}. Điểm cân bằng không trung tính. Nó khác nhau giữa người này với người kia, một phần do khí chất. Một người có thể có nhiều điểm cân bằng, vì cảm xúc dễ chịu, cảm xúc khó chịu và mức hài lòng với cuộc sống có thể đi theo những hướng khác nhau. Điểm cân bằng có thể thay đổi trong một số điều kiện. Và mỗi người thích nghi với cùng một biến cố ở mức khác nhau. Một nghiên cứu năm 1996 theo dõi hơn một nghìn cặp sinh đôi trong mười năm kết luận rằng gần một nửa khác biệt về hạnh phúc có nguồn gốc di truyền {wiki-hedonic}.",
+      "heading_fr": "Le « point de consigne » n’est pas à zéro",
+      "body_fr": "Les premières versions de la théorie affirmaient que les individus reviennent à une neutralité hédonique. Diener, Lucas et Scollon ont réexaminé les données ultérieures et proposé [p:cinq révisions] {diener-2006}. Les points de consigne ne sont pas neutres. Ils varient selon les individus, en partie à cause du tempérament. Une même personne peut avoir plusieurs points de consigne, car les émotions agréables, les émotions désagréables et la satisfaction de vivre peuvent évoluer dans des directions distinctes. Les points de consigne peuvent changer sous certaines conditions. De plus, la capacité d’adaptation à un même événement varie d’une personne à l’autre. Une étude de 1996 ayant suivi plus d’un millier de paires de jumeaux pendant dix ans a conclu que près de la moitié des disparités en matière de bonheur sont génétiques {wiki-hedonic}.",
+      "heading_de": "Der Set-Point liegt nicht bei null",
+      "body_de": "Frühe Versionen der Theorie besagten, dass Menschen zu einer hedonischen Neutralität zurückkehren. Diener, Lucas und Scollon sichteten spätere Belege und schlugen [p:fünf Revisionen] vor {diener-2006}. Set-Points sind nicht neutral. Sie unterscheiden sich von Mensch zu Mensch, zum Teil bedingt durch das Temperament. Eine Person kann mehrere Sollwerte haben, da positive Gefühle, negative Gefühle und Lebenszufriedenheit sich in unterschiedliche Richtungen entwickeln können. Set-Points können sich unter bestimmten Bedingungen verändern. Zudem passen sich Menschen unterschiedlich stark an dasselbe Ereignis an. Eine Studie aus dem Jahr 1996, die über tausend Zwillingspaare zehn Jahre lang begleitete, kam zu dem Schluss, dass fast die Hälfte der Unterschiede im Glücksempfinden genetisch bedingt ist {wiki-hedonic}.",
+      "heading_es": "El «punto de ajuste» no es neutro",
+      "body_es": "Las primeras versiones de la teoría afirmaban que las personas regresan a una neutralidad hedónica. Diener, Lucas y Scollon revisaron la evidencia posterior y propusieron [p:cinco revisiones] {diener-2006}. Los puntos de ajuste no son neutros. Varían de una persona a otra, en parte debido al temperamento. Un mismo individuo puede poseer varios puntos de ajuste, ya que los sentimientos agradables, los desagradables y la satisfacción con la vida pueden evolucionar en direcciones distintas. Los puntos de ajuste pueden alterarse en determinadas condiciones. Asimismo, los individuos difieren en el grado en que se adaptan a un mismo hecho. Un estudio de 1996 que dio seguimiento a más de mil pares de gemelos durante diez años concluyó que casi la mitad de las diferencias en la felicidad tienen una base genética {wiki-hedonic}."
     },
     {
       "heading_en": "When adaptation fails: long-term disability",
       "heading_vi": "Khi sự thích nghi không xảy ra: khuyết tật lâu dài",
       "body_en": "Richard Lucas used two national panel surveys, with [y:39,987] and [y:27,406] participants, to follow people before and after they acquired a long-term disability {lucas-2007}. In the first study he tracked 679 such people for about seven years before onset and seven years after. Disability came with moderate to large drops in happiness, between 0.40 and 1.27 standard deviations, and afterwards there was little adaptation. The finding sits awkwardly with the strong treadmill claim. Adaptation does occur for many events, but for some it is slow, partial or absent.",
-      "body_vi": "Richard Lucas dùng hai cuộc khảo sát quốc gia theo dõi dài hạn, với [y:39.987] và [y:27.406] người tham gia, để xem mức hạnh phúc của người trước và sau khi mắc khuyết tật lâu dài {lucas-2007}. Ở nghiên cứu đầu tiên, ông theo dõi 679 người như vậy trong khoảng bảy năm trước và bảy năm sau khi khuyết tật xuất hiện. Khuyết tật đi kèm mức giảm hạnh phúc từ vừa đến lớn, từ 0,40 đến 1,27 độ lệch chuẩn, và sau đó rất ít thích nghi. Kết quả này lệch với phiên bản mạnh của thuyết guồng quay. Nhiều biến cố có sự thích nghi, nhưng với một số biến cố thì nó chậm, chỉ một phần, hoặc không có."
+      "body_vi": "Richard Lucas dùng hai cuộc khảo sát quốc gia theo dõi dài hạn, với [y:39.987] và [y:27.406] người tham gia, để xem mức hạnh phúc của người trước và sau khi mắc khuyết tật lâu dài {lucas-2007}. Ở nghiên cứu đầu tiên, ông theo dõi 679 người như vậy trong khoảng bảy năm trước và bảy năm sau khi khuyết tật xuất hiện. Khuyết tật đi kèm mức giảm hạnh phúc từ vừa đến lớn, từ 0,40 đến 1,27 độ lệch chuẩn, và sau đó rất ít thích nghi. Kết quả này lệch với phiên bản mạnh của thuyết guồng quay. Nhiều biến cố có sự thích nghi, nhưng với một số biến cố thì nó chậm, chỉ một phần, hoặc không có.",
+      "heading_fr": "Quand l’adaptation échoue : le handicap de longue durée",
+      "body_fr": "Richard Lucas a utilisé deux enquêtes par panel nationales, portant sur [y:39 987] et [y:27 406] participants, pour suivre des personnes avant et après la survenue d’un handicap de longue durée {lucas-2007}. Dans la première étude, il a suivi 679 personnes de ce type pendant environ sept ans avant l’apparition du handicap et sept ans après. Le handicap s’accompagnait d’une baisse modérée à importante du bonheur, comprise entre 0,40 et 1,27 écart-type, et l’adaptation ultérieure était minime. Ce constat s’accorde mal avec la thèse forte du tapis roulant. L’adaptation se produit bien pour de nombreux événements, mais pour certains, elle est lente, partielle ou absente.",
+      "heading_de": "Wenn die Anpassung scheitert: Dauerhafte Behinderung",
+      "body_de": "Richard Lucas nutzte zwei nationale Panelbefragungen mit [y:39,987] und [y:27,406] Teilnehmenden, um Personen vor und nach dem Eintritt einer dauerhaften Behinderung zu begleiten {lucas-2007}. In der ersten Studie untersuchte er 679 solcher Betroffenen über etwa sieben Jahre vor und sieben Jahre nach Beginn der Beeinträchtigung. Die Behinderung ging mit moderaten bis deutlichen Einbrüchen des Wohlbefindens einher – zwischen 0,40 und 1,27 Standardabweichungen –, und danach fand kaum eine Gewöhnung statt. Dieser Befund widerspricht der strikten Annahme der Tretmühle. Bei vielen Lebensereignissen tritt Anpassung ein, doch bei manchen erfolgt sie nur langsam, unvollständig oder gar nicht.",
+      "heading_es": "Cuando la adaptación falla: la discapacidad a largo plazo",
+      "body_es": "Richard Lucas recurrió a dos encuestas de panel nacionales, con [y:39,987] y [y:27,406] participantes, para realizar un seguimiento de personas antes y después de contraer una discapacidad de larga duración {lucas-2007}. En el primer estudio siguió a 679 de estas personas durante unos siete años antes del inicio y siete años después. La discapacidad conllevó descensos de moderados a considerables en la felicidad, de entre 0.40 y 1.27 desviaciones estándar, y con posterioridad apenas hubo adaptación. Este hallazgo encaja con dificultad en la tesis tajante de la cinta hedónica. La adaptación se produce ante muchas circunstancias, pero en otras resulta lenta, parcial o nula."
     },
     {
       "heading_en": "Why a rising income can still disappoint",
       "heading_vi": "Vì sao thu nhập tăng vẫn có thể gây thất vọng",
       "body_en": "The treadmill is easiest to see with income and possessions. If a raise lifts the standard you compare yourself with, the pleasure of the raise shrinks as the new salary becomes normal. One pattern described in the literature keeps sensitivity to differences: a person who has habituated to a higher salary is still pleased by a holiday bonus {wiki-hedonic}. In other words, adaptation resets the baseline, not the ability to enjoy a change. Good news that arrives as a surprise, a variation or a step up from the new baseline keeps some of its force.",
-      "body_vi": "Guồng quay dễ thấy nhất ở thu nhập và đồ đạc. Nếu một lần tăng lương nâng chuẩn mà bạn so sánh, niềm vui từ khoản tăng sẽ co lại khi mức lương mới trở thành bình thường. Có một kiểu thích nghi được mô tả trong tài liệu vẫn giữ độ nhạy với sự khác biệt: người đã quen mức lương cao hơn vẫn thấy vui khi nhận thưởng ngày lễ {wiki-hedonic}. Nói cách khác, thích nghi đặt lại đường cơ sở chứ không mất khả năng tận hưởng một thay đổi. Tin vui đến bất ngờ, đa dạng, hoặc là một bước cao hơn so với đường cơ sở mới vẫn giữ được phần nào sức nặng."
+      "body_vi": "Guồng quay dễ thấy nhất ở thu nhập và đồ đạc. Nếu một lần tăng lương nâng chuẩn mà bạn so sánh, niềm vui từ khoản tăng sẽ co lại khi mức lương mới trở thành bình thường. Có một kiểu thích nghi được mô tả trong tài liệu vẫn giữ độ nhạy với sự khác biệt: người đã quen mức lương cao hơn vẫn thấy vui khi nhận thưởng ngày lễ {wiki-hedonic}. Nói cách khác, thích nghi đặt lại đường cơ sở chứ không mất khả năng tận hưởng một thay đổi. Tin vui đến bất ngờ, đa dạng, hoặc là một bước cao hơn so với đường cơ sở mới vẫn giữ được phần nào sức nặng.",
+      "heading_fr": "Pourquoi la hausse des revenus peut malgré tout décevoir",
+      "body_fr": "Le tapis roulant s’observe le plus facilement avec les revenus et les possessions matérielles. Si une augmentation élève le niveau auquel vous vous comparez, le plaisir procuré par cette hausse s’amenuise à mesure que le nouveau salaire devient la norme. Une configuration décrite dans la littérature préserve la sensibilité aux différences : une personne habituée à un salaire plus élevé reste réjouie par une prime de fin d’année {wiki-hedonic}. En d’autres termes, l’adaptation réinitialise le niveau de référence, mais n’annule pas la capacité à apprécier le changement. Une bonne nouvelle qui survient par surprise, apporte une variation ou dépasse ce nouveau point de repère conserve une partie de sa force.",
+      "heading_de": "Warum ein höheres Einkommen dennoch enttäuschen kann",
+      "body_de": "Am deutlichsten zeigt sich die Tretmühle bei Einkommen und Besitz. Wenn eine Gehaltserhöhung den Maßstab anhebt, an dem du dich misst, schrumpft die Freude über das Plus, sobald das neue Gehalt zur Normalität wird. Ein in der Fachliteratur beschriebenes Muster erhält jedoch die Sensibilität für Unterschiede: Eine Person, die sich an ein höheres Gehalt gewöhnt hat, freut sich dennoch über ein Urlaubsgeld {wiki-hedonic}. Mit anderen Worten: Die Gewöhnung setzt die Ausgangslinie zurück, nicht aber die Fähigkeit, sich über eine Veränderung zu freuen. Gute Nachrichten, die als Überraschung, Abwechslung oder Aufwertung gegenüber dem neuen Ausgangsniveau eintreffen, behalten einen Teil ihrer Wirkung.",
+      "heading_es": "Por qué unos mayores ingresos aún pueden decepcionar",
+      "body_es": "La cinta se aprecia con mayor claridad en los ingresos y las posesiones materiales. Si un aumento de sueldo eleva el estándar con el que nos comparamos, el placer que produce disminuye conforme el nuevo salario se normaliza. Un patrón documentado en la bibliografía especializada conserva la sensibilidad ante las diferencias: alguien que ya se ha habituado a una remuneración más alta sigue alegrándose con una gratificación festiva {wiki-hedonic}. En otras palabras, la adaptación reajusta la línea de base, no la capacidad de disfrutar de un cambio. Las buenas noticias que llegan de manera sorpresiva, como una variación o como un paso por encima de la nueva línea de base, conservan parte de su vigor."
     },
     {
       "heading_en": "What the research cannot tell you",
       "heading_vi": "Điều nghiên cứu chưa nói được",
       "body_en": "None of these studies proves that you cannot become happier. Diener and colleagues read the same evidence as [g:grounds for hope that policies and personal choices can reduce misery and raise well-being] {diener-2006}. What the evidence does show is that the size of the effect depends on the event and on the person. A promotion, a purchase and a disability are different kinds of change. A person who expects a new thing to deliver lasting joy will often be disappointed, while one who expects a short lift and plans for it will be less surprised.",
-      "body_vi": "Không nghiên cứu nào trong số này chứng minh rằng bạn không thể hạnh phúc hơn. Diener và cộng sự đọc cùng bằng chứng ấy như [g:cơ sở để hy vọng rằng chính sách và lựa chọn cá nhân có thể giảm khổ đau và tăng sự an lạc] {diener-2006}. Điều bằng chứng thật sự cho thấy là độ lớn của hiệu ứng phụ thuộc vào biến cố và vào con người. Thăng chức, mua sắm và khuyết tật là những loại thay đổi khác nhau. Ai kỳ vọng một thứ mới mang lại niềm vui lâu dài thường sẽ thất vọng, còn ai kỳ vọng một cú nâng ngắn và liệu trước sẽ ít bất ngờ hơn."
+      "body_vi": "Không nghiên cứu nào trong số này chứng minh rằng bạn không thể hạnh phúc hơn. Diener và cộng sự đọc cùng bằng chứng ấy như [g:cơ sở để hy vọng rằng chính sách và lựa chọn cá nhân có thể giảm khổ đau và tăng sự an lạc] {diener-2006}. Điều bằng chứng thật sự cho thấy là độ lớn của hiệu ứng phụ thuộc vào biến cố và vào con người. Thăng chức, mua sắm và khuyết tật là những loại thay đổi khác nhau. Ai kỳ vọng một thứ mới mang lại niềm vui lâu dài thường sẽ thất vọng, còn ai kỳ vọng một cú nâng ngắn và liệu trước sẽ ít bất ngờ hơn.",
+      "heading_fr": "Ce que la recherche ne peut pas vous dire",
+      "body_fr": "Aucune de ces études ne prouve qu’il est impossible de devenir plus heureux. Diener et ses collègues voient au contraire dans ces mêmes données [g:des motifs d’espérer que les politiques et les choix personnels peuvent réduire la détresse et accroître le bien-être] {diener-2006}. Ce que ces données montrent réellement, c’est que l’ampleur de l’effet dépend de l’événement et de l’individu. Une promotion, un achat et un handicap constituent des changements de natures très différentes. Une personne qui attend d’une nouveauté une joie durable sera souvent déçue, tandis que celle qui s’attend à un élan passager et s’y prépare sera moins surprise.",
+      "heading_de": "Was die Forschung dir nicht sagen kann",
+      "body_de": "Keine dieser Studien beweist, dass du nicht glücklicher werden kannst. Diener und Kollegen interpretieren dieselben Daten als [g:Anlass zur Hoffnung, dass Politik und persönliche Entscheidungen Leid mindern und Wohlbefinden steigern können] {diener-2006}. Was die Ergebnisse tatsächlich zeigen, ist, dass das Ausmaß des Effekts vom Ereignis und von der Person abhängt. Eine Beförderung, eine Anschaffung und eine Behinderung sind grundverschiedene Arten von Veränderungen. Wer von einer neuen Sache dauerhaftes Glück erwartet, wird oft enttäuscht; wer hingegen nur mit einem kurzen Auftrieb rechnet und sich darauf einstellt, wird weniger überrascht sein.",
+      "heading_es": "Lo que la investigación no puede asegurar",
+      "body_es": "Ninguna de estas investigaciones demuestra que sea imposible volverse más feliz. Diener y su equipo interpretaron estas mismas pruebas como [g:motivos para la esperanza de que las políticas públicas y las decisiones individuales puedan reducir el sufrimiento e incrementar el bienestar] {diener-2006}. Lo que sí demuestra la evidencia es que la magnitud del efecto depende tanto del suceso como de la persona. Un ascenso laboral, una adquisición y una discapacidad constituyen tipos de cambio disímiles. Quien espera que una novedad le proporcione una alegría duradera a menudo terminará desilusionado, mientras que quien anticipa un impulso breve y planifica en consecuencia se llevará menos sorpresas."
     },
     {
       "heading_en": "What this means for choices",
       "heading_vi": "Điều này nghĩa là gì cho các lựa chọn của bạn",
       "body_en": "Treat the research as a way to set expectations, not as a verdict that effort is pointless. If adaptation is partial, a sensible plan is to spend on things that keep varying, such as time with other people or new places, and to expect little lasting change from items that are simply used every day. It is also fair to say what the studies leave open. The lottery sample was 22 people, the disability studies report an average across many individuals, and your own set point may be higher, lower or more flexible than the average {diener-2006}.",
-      "body_vi": "Hãy dùng nghiên cứu này để đặt kỳ vọng, chứ không phải để kết luận rằng nỗ lực là vô ích. Nếu sự thích nghi chỉ diễn ra một phần, một kế hoạch hợp lý là chi cho những thứ luôn biến đổi, như thời gian bên người khác hay những nơi mới, và đừng mong có thay đổi bền vững từ những món chỉ dùng hằng ngày. Cũng nên nói thẳng điều các nghiên cứu còn bỏ ngỏ. Mẫu người trúng số chỉ có 22 người, các nghiên cứu về khuyết tật báo cáo mức trung bình của nhiều cá nhân, và điểm cân bằng của chính bạn có thể cao hơn, thấp hơn hay linh hoạt hơn mức trung bình {diener-2006}."
+      "body_vi": "Hãy dùng nghiên cứu này để đặt kỳ vọng, chứ không phải để kết luận rằng nỗ lực là vô ích. Nếu sự thích nghi chỉ diễn ra một phần, một kế hoạch hợp lý là chi cho những thứ luôn biến đổi, như thời gian bên người khác hay những nơi mới, và đừng mong có thay đổi bền vững từ những món chỉ dùng hằng ngày. Cũng nên nói thẳng điều các nghiên cứu còn bỏ ngỏ. Mẫu người trúng số chỉ có 22 người, các nghiên cứu về khuyết tật báo cáo mức trung bình của nhiều cá nhân, và điểm cân bằng của chính bạn có thể cao hơn, thấp hơn hay linh hoạt hơn mức trung bình {diener-2006}.",
+      "heading_fr": "Ce que cela implique pour vos choix",
+      "body_fr": "Considérez ces recherches comme un moyen d’ajuster vos attentes, et non comme le constat que tout effort est inutile. Si l’adaptation est partielle, une stratégie judicieuse consiste à consacrer ses ressources à ce qui varie constamment, comme le temps partagé avec autrui ou la découverte de nouveaux lieux, sans attendre de transformation durable d’objets simplement utilisés au quotidien. Il convient également de rappeler ce que ces études laissent en suspens. L’échantillon de la loterie ne comptait que 22 personnes, les études sur le handicap rapportent une moyenne établie sur de nombreux individus, et votre propre point de consigne peut être plus élevé, plus bas ou plus malléable que cette moyenne {diener-2006}.",
+      "heading_de": "Was das für eigene Entscheidungen bedeutet",
+      "body_de": "Betrachte die Forschung als Hilfestellung zur Erwartungssteuerung, nicht als Urteil darüber, dass Anstrengung sinnlos sei. Wenn Anpassung nur unvollständig ist, liegt eine vernünftige Strategie darin, Ressourcen für abwechslungsreiche Erfahrungen aufzuwenden – wie Zeit mit anderen Menschen oder neue Orte – und von Dingen, die man einfach täglich nutzt, wenig dauerhafte Veränderung zu erwarten. Zudem sollte man offen benennen, was die Studien unbeantwortet lassen. Die Lotteriestichprobe umfasste 22 Personen, die Behindertenstudien berichten von einem Durchschnitt über viele Individuen hinweg, und dein eigener Set-Point liegt womöglich höher, niedriger oder flexibler als dieser Mittelwert {diener-2006}.",
+      "heading_es": "Qué implica esto para nuestras decisiones",
+      "body_es": "Conviene abordar estas investigaciones como una pauta para calibrar las expectativas, no como un veredicto de que el esfuerzo carece de sentido. Si la adaptación es parcial, un plan sensato consiste en destinar recursos a experiencias que varíen constantemente, tales como el tiempo con otras personas o la visita a nuevos lugares, y esperar pocas transformaciones duraderas de los objetos que simplemente se usan a diario. También es justo señalar los interrogantes que los estudios dejan abiertos. La muestra sobre la lotería fue de apenas 22 personas, los estudios sobre discapacidad reflejan un promedio entre numerosos individuos, y su propio punto de ajuste puede ser más alto, más bajo o más flexible que la media {diener-2006}."
     }
   ],
   "keyPoint": {
     "en": "People tend to drift back toward a baseline after good or bad news, so [p:the glow of a purchase or a raise fades], but the pull is uneven. Some events, such as long-term disability, leave a lasting change. Expect a short lift from new things, and put effort into what keeps changing, such as time with people.",
-    "vi": "Con người có xu hướng trôi về mức cơ sở sau tin vui hay tin buồn, nên [p:ánh hào quang của một món đồ hay một đợt tăng lương sẽ phai], nhưng lực kéo ấy không đều. Một số biến cố, như khuyết tật lâu dài, để lại thay đổi bền vững. Hãy kỳ vọng một cú nâng ngắn từ đồ mới, và dồn sức cho những điều luôn đổi mới, như thời gian bên người khác."
+    "vi": "Con người có xu hướng trôi về mức cơ sở sau tin vui hay tin buồn, nên [p:ánh hào quang của một món đồ hay một đợt tăng lương sẽ phai], nhưng lực kéo ấy không đều. Một số biến cố, như khuyết tật lâu dài, để lại thay đổi bền vững. Hãy kỳ vọng một cú nâng ngắn từ đồ mới, và dồn sức cho những điều luôn đổi mới, như thời gian bên người khác.",
+    "fr": "On a tendance à revenir vers un niveau de référence après une bonne ou une mauvaise nouvelle, de sorte que [p:l’enthousiasme suscité par un achat ou une augmentation s’estompe], mais cette attraction est inégale. Certains événements, comme un handicap de longue durée, entraînent un changement durable. Attendez-vous à un élan passager face aux nouveautés, et investissez plutôt dans ce qui se renouvelle sans cesse, comme les moments passés avec les autres.",
+    "de": "Nach guten oder schlechten Nachrichten pendeln sich Menschen meist wieder auf einem Ausgangsniveau ein, sodass [p:die Euphorie eines Kaufs oder einer Gehaltserhöhung verblasst], doch dieser Sog wirkt ungleichmäßig. Manche Ereignisse, wie eine dauerhafte Behinderung, hinterlassen bleibende Spuren. Rechne bei Neuem mit einem kurzen Auftrieb und investiere Kraft in das, was im Wandel bleibt – etwa Zeit mit Mitmenschen.",
+    "es": "Las personas tienden a regresar hacia una línea de base tras recibir buenas o malas noticias, de modo que [p:el entusiasmo por una compra o un aumento salarial se desvanece], pero esa atracción es desigual. Ciertos acontecimientos, como una discapacidad a largo plazo, dejan una alteración permanente. Espere un estímulo breve de las cosas nuevas e invierta esfuerzo en aquello que varía constantemente, como compartir tiempo con los demás."
   },
   "applySteps": {
     "en": [
@@ -75,6 +126,21 @@
       "Gọi tên một món đồ hay thành tựu gần đây và chấm xem hiện giờ nó mang lại bao nhiêu niềm vui so với tuần đầu.",
       "Trước lần mua lớn tiếp theo, hãy viết ra cảm giác của bạn sau một tháng và cân xem có xứng với giá không.",
       "Lên kế hoạch cho một trải nghiệm đa dạng, có người cùng chia sẻ trong tuần này thay vì thêm một món đồ."
+    ],
+    "fr": [
+      "Nommez un achat ou un gain récent et évaluez la joie qu’il vous procure aujourd’hui par rapport à la première semaine.",
+      "Avant votre prochain achat important, notez ce que vous ressentirez au bout d’un mois et déterminez si cela en vaut vraiment le prix.",
+      "Planifiez cette semaine une expérience variée et partagée plutôt que l’acquisition d’un nouvel objet."
+    ],
+    "de": [
+      "Benenne einen kürzlichen Kauf oder Erfolg und bewerte, wie viel Freude er dir jetzt im Vergleich zur ersten Woche bereitet.",
+      "Schreibe vor deinem nächsten großen Kauf auf, wie du dich nach einem Monat fühlen wirst, und entscheide, ob es den Preis wert ist.",
+      "Plane für diese Woche ein abwechslungsreiches, gemeinsames Erlebnis anstelle eines weiteren materiellen Gegenstands."
+    ],
+    "es": [
+      "Mencione una compra o logro reciente y califique cuánta alegría le produce ahora en comparación con la primera semana.",
+      "Antes de su próxima compra importante, escriba cómo se sentirá al cabo de un mes y decida si compensa el precio.",
+      "Planifique esta semana una experiencia variada y compartida en lugar de adquirir otro objeto."
     ]
   },
   "references": [
@@ -109,12 +175,93 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/hedonic-adaptation-lottery-winners.webp",
+    "url": "https://images.unsplash.com/11/berries.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Ben Moore",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/pJILiyPdrXI"
+    "sourceUrl": "https://unsplash.com/photos/pJILiyPdrXI",
+    "wide": "https://images.unsplash.com/11/berries.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@benmoore?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQAwCdASoQABwAPu1kqk4ppaQiMAgBMB2JbACdAGlhWTYWkVbw6QAA/vzZl7OcIVuyM907U13sVeQyHPNSP/xbXfsj/kCFUYqaJ9fniD9h674SrSiI6pbIm0ca60PCDaR3FZUKhRknbvEeGue887BeqbT3321/rTgAAA==",
-  "dominant": "#8f755a"
+  "dominant": "#8f755a",
+  "glossary": {
+    "en": {
+      "hedonic treadmill": "The psychological tendency for people to return to a baseline level of happiness despite major life events.",
+      "controls": "Participants in a study who do not receive the experimental condition, used as a baseline for comparison.",
+      "contrast effect": "A phenomenon where an extraordinary experience makes ordinary daily pleasures appear duller and less enjoyable by comparison.",
+      "adaptation-level theory": "A psychological theory proposing that people judge new experiences relative to their past experiences and expectations.",
+      "habituation": "The process whereby emotional response decreases after repeated or continuous exposure to a new stimulus or comfort.",
+      "windfall": "A sudden, unexpected financial gain or piece of good fortune, such as winning a lottery.",
+      "hedonic neutrality": "A balanced emotional state where a person feels neither distinctly happy nor unhappy.",
+      "set point": "A person's natural baseline level of happiness to which they tend to return over time.",
+      "temperament": "An individual's innate, genetically influenced emotional disposition and habitual patterns of feeling.",
+      "panel surveys": "Longitudinal research studies that track and repeatedly interview the same group of participants across many years.",
+      "standard deviations": "Statistical units showing how much individual scores spread out or deviate from an average value.",
+      "baseline": "A reference level of happiness or income against which future changes are judged and experienced."
+    },
+    "vi": {
+      "nhóm đối chứng": "Nhóm dùng để so sánh nhằm xác định tác động thực sự của yếu tố nghiên cứu.",
+      "mức chuẩn": "Tiêu chuẩn hoặc mốc tham chiếu dùng để so sánh và đánh giá các trải nghiệm.",
+      "tương phản": "Hiện tượng trải nghiệm bị giảm giá trị cảm xúc khi đặt cạnh trải nghiệm vượt trội hơn.",
+      "mức thích nghi": "Điểm chuẩn tâm lý hình thành từ quá khứ dùng để đánh giá các kích thích mới.",
+      "hedonic treadmill": "Thuật ngữ chỉ xu hướng con người nhanh chóng quay về mức hạnh phúc cũ sau biến cố.",
+      "điểm cân bằng": "Mức độ hạnh phúc nền tảng ổn định mà một người có xu hướng tự nhiên quay về.",
+      "khí chất": "Đặc tính tâm lý bẩm sinh ảnh hưởng đến cảm xúc và cách phản ứng của mỗi người.",
+      "di truyền": "Sự truyền lại đặc điểm sinh học hoặc tâm lý từ thế hệ trước sang thế hệ sau.",
+      "độ lệch chuẩn": "Chỉ số thống kê đo mức độ phân tán của dữ liệu so với giá trị trung bình.",
+      "độ nhạy": "Khả năng nhận thức và phản hồi trước những thay đổi mới của hoàn cảnh.",
+      "đường cơ sở": "Mức tham chiếu ban đầu dùng làm mốc so sánh cho những biến đổi sau này.",
+      "sự an lạc": "Trạng thái tinh thần bình an, hạnh phúc và thỏa mãn với cuộc sống."
+    },
+    "fr": {
+      "tapis roulant hédonique": "Tendance psychologique à revenir rapidement à un niveau de bonheur stable malgré des événements positifs ou négatifs.",
+      "effet de contraste": "Diminution du plaisir ressenti lors d’événements ordinaires après avoir vécu une expérience exceptionnellement positive.",
+      "niveau d’adaptation": "Point de comparaison interne forgé par les expériences passées, servant à évaluer les situations nouvelles.",
+      "habituation": "Atténuation progressive d’une réaction émotionnelle face à un stimulus répété ou devenu habituel.",
+      "neutralité hédonique": "État d’équilibre psychologique où l’on ne ressent ni plaisir marqué ni déplaisir particulier.",
+      "point de consigne": "Niveau de base individuel et relativement stable de bien-être vers lequel une personne tend à revenir.",
+      "enquêtes par panel": "Études statistiques suivant le même groupe d’individus interrogés à intervalles réguliers sur plusieurs années.",
+      "écart-type": "Mesure statistique évaluant la dispersion des résultats par rapport à la valeur moyenne d’un groupe.",
+      "niveau de référence": "Seuil psychologique habituel servant d’étalon pour apprécier si une nouvelle situation est agréable ou non.",
+      "témoins": "Groupe de contrôle non soumis à la variable étudiée, utilisé pour établir une comparaison rigoureuse."
+    },
+    "de": {
+      "kontrasteffekt": "Verzerrung, bei der ein extremes Erlebnis gewöhnliche Erfahrungen im direkten Vergleich deutlich unscheinbarer wirken lässt.",
+      "adaptationsniveau-theorie": "Theorie, nach der Reize stets im Verhältnis zu früheren Erfahrungen und einem gewohnten Bezugsrahmen bewertet werden.",
+      "gewöhnung": "Psychologischer Prozess, durch den die emotionale Reaktion auf wiederholte oder dauerhafte Reize mit der Zeit nachlässt.",
+      "hedonische tretmühle": "Konzept, wonach Menschen nach positiven oder negativen Lebensereignissen rasch wieder auf ihr ursprüngliches Glücksniveau zurückfallen.",
+      "hedonischen neutralität": "Zustand emotionaler Ausgeglichenheit, in dem weder überwiegend positive noch negative Empfindungen vorherrschen.",
+      "set-points": "Individuelle, teils genetisch vorgeprägte Ausgangswerte für das persönliche Glücksempfinden und Wohlbefinden.",
+      "panelbefragungen": "Wiederholte wissenschaftliche Befragungen derselben Personengruppe über einen längeren Zeitraum hinweg zur Untersuchung von Veränderungen.",
+      "standardabweichungen": "Statistisches Maß für die Streuung individueller Werte um den Mittelwert einer Gruppe.",
+      "ausgangsniveau": "Persönliches Grundniveau des Wohlbefindens, an das sich ein Mensch nach Veränderungen allmählich wieder anpasst.",
+      "erwartungssteuerung": "Bewusstes Abstimmen eigener Erwartungen auf die psychologische Realität menschlicher Anpassungsfähigkeit."
+    },
+    "es": {
+      "adaptación hedónica": "Proceso psicológico por el cual las personas se habitúan a los cambios vitales, retornando a su felicidad habitual.",
+      "cinta hedónica": "Metáfora teórica donde las aspiraciones crecen al mismo ritmo que las mejoras, impidiendo que la felicidad aumente de forma permanente.",
+      "efecto de contraste": "Sesgo donde una vivencia extraordinaria o extrema hace que los placeres cotidianos posteriores parezcan mediocres o insignificantes.",
+      "habituación": "Disminución progresiva de la respuesta emocional o placentera ante la exposición repetida o prolongada a un estímulo.",
+      "teoría del nivel de adaptación": "Principio que sostiene que juzgamos cualquier estímulo o vivencia en comparación con nuestro marco de experiencias previas.",
+      "ganancia inesperada": "Ingreso o ganancia económica repentina, considerable e inesperada, como un premio de lotería o una herencia.",
+      "punto de ajuste": "Nivel basal o promedio biológico y psicológico de bienestar característico de un individuo particular.",
+      "neutralidad hedónica": "Estado hipotético de equilibrio emocional en el que una persona no experimenta ni afecto positivo ni negativo.",
+      "temperamento": "Disposición innata, afectiva y conductual de origen biológico que influye en cómo reaccionamos ante los acontecimientos.",
+      "encuestas de panel": "Investigaciones longitudinales que recopilan datos periódicos de los mismos participantes a lo largo de extensos periodos.",
+      "desviaciones estándar": "Medida estadística que cuantifica cuánto se desvían o dispersan los datos con respecto al valor promedio.",
+      "línea de base": "Nivel de referencia o punto de partida que se reconfigura tras acostumbrarse a una nueva situación vital."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

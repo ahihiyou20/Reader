@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Flow: the state of full absorption, and what drives it",
-    "vi": "Dòng chảy: trạng thái đắm chìm hoàn toàn và điều thúc đẩy nó"
+    "vi": "Dòng chảy: trạng thái đắm chìm hoàn toàn và điều thúc đẩy nó",
+    "fr": "Le flow : l'état d'absorption totale et ses ressorts",
+    "de": "Flow: Der Zustand völliger Vertiefung und was ihn antreibt",
+    "es": "Flujo: el estado de absorción total y qué lo impulsa"
   },
   "hook": {
     "en": "In 1975 the psychologist Mihály Csíkszentmihályi described a state in which a person is fully immersed in an activity, with energised focus and a changed sense of time. People he interviewed said it felt like floating. Recent studies suggest [p:enjoyment of the activity itself] leads into it, though most of that evidence is correlational.",
-    "vi": "Năm 1975, nhà tâm lý học Mihály Csíkszentmihályi mô tả một trạng thái trong đó con người hoàn toàn đắm chìm vào một hoạt động, với sự tập trung tràn đầy năng lượng và cảm giác thời gian thay đổi. Những người ông phỏng vấn nói nó giống như đang trôi. Các nghiên cứu gần đây gợi ý [p:niềm vui với chính hoạt động] dẫn vào trạng thái ấy, dù phần lớn bằng chứng chỉ mang tính tương quan."
+    "vi": "Năm 1975, nhà tâm lý học Mihály Csíkszentmihályi mô tả một trạng thái trong đó con người hoàn toàn đắm chìm vào một hoạt động, với sự tập trung tràn đầy năng lượng và cảm giác thời gian thay đổi. Những người ông phỏng vấn nói nó giống như đang trôi. Các nghiên cứu gần đây gợi ý [p:niềm vui với chính hoạt động] dẫn vào trạng thái ấy, dù phần lớn bằng chứng chỉ mang tính tương quan.",
+    "fr": "En 1975, le psychologue Mihály Csíkszentmihályi a décrit un état dans lequel une personne est totalement immergée dans une activité, portée par une concentration stimulante et une perception altérée du temps. Les personnes qu'il a interrogées disaient avoir l'impression de flotter. Des études récentes suggèrent que [p:le plaisir procuré par l'activité elle-même] y conduit, bien que la plupart de ces données restent corrélationnelles.",
+    "de": "1975 beschrieb der Psychologe Mihály Csíkszentmihályi einen Zustand, in dem ein Mensch mit energiegeladenem Fokus und veränderten Zeitempfinden völlig in einer Tätigkeit aufgeht. Von ihm befragte Personen sagten, es habe sich wie Schweben angefühlt. Neuere Studien legen nahe, dass [p:die Freude an der Tätigkeit selbst] dazu führt, auch wenn die meisten dieser Belege korrelativer Natur sind.",
+    "es": "En 1975, el psicólogo Mihály Csíkszentmihályi describió un estado en el que una persona se sumerge por completo en una actividad, con una concentración enérgica y una percepción alterada del tiempo. Las personas a las que entrevistó afirmaron que se sentía como flotar. Estudios recientes sugieren que [p:el disfrute de la propia actividad] conduce a este estado, aunque la mayor parte de esas pruebas es correlacional."
   },
   "sections": [
     {
       "heading_en": "What flow is",
       "heading_vi": "Dòng chảy là gì",
       "body_en": "Flow is the mental state in which a person performing an activity is fully immersed in energised focus, full involvement and enjoyment, with a transformed sense of time {wiki-flow}. It is a balance between the skill a person has and the challenge of the task. It requires a high level of concentration. The idea was first presented in Csíkszentmihályi's 1975 book Beyond Boredom and Anxiety. The name comes from his interviews, in which people said things like 'It was like floating' and 'I was carried on by the flow'. He became interested after observing artists, especially painters, who lost themselves in their work and ignored food, water and even sleep.",
-      "body_vi": "Dòng chảy là trạng thái tinh thần trong đó người đang làm một hoạt động hoàn toàn đắm chìm trong sự tập trung tràn đầy năng lượng, sự tham gia trọn vẹn và niềm vui, với cảm giác thời gian bị biến đổi {wiki-flow}. Nó là sự cân bằng giữa kỹ năng của một người và thử thách của nhiệm vụ. Nó đòi hỏi mức tập trung cao. Ý tưởng này được trình bày lần đầu trong cuốn Beyond Boredom and Anxiety năm 1975 của Csíkszentmihályi. Tên gọi đến từ các cuộc phỏng vấn của ông, trong đó người ta nói những câu như 'Cảm giác như đang trôi' và 'Tôi được dòng chảy cuốn đi'. Ông quan tâm sau khi quan sát các nghệ sĩ, nhất là họa sĩ, những người quên mình trong công việc và bỏ qua thức ăn, nước uống và thậm chí giấc ngủ."
+      "body_vi": "Dòng chảy là trạng thái tinh thần trong đó người đang làm một hoạt động hoàn toàn đắm chìm trong sự tập trung tràn đầy năng lượng, sự tham gia trọn vẹn và niềm vui, với cảm giác thời gian bị biến đổi {wiki-flow}. Nó là sự cân bằng giữa kỹ năng của một người và thử thách của nhiệm vụ. Nó đòi hỏi mức tập trung cao. Ý tưởng này được trình bày lần đầu trong cuốn Beyond Boredom and Anxiety năm 1975 của Csíkszentmihályi. Tên gọi đến từ các cuộc phỏng vấn của ông, trong đó người ta nói những câu như 'Cảm giác như đang trôi' và 'Tôi được dòng chảy cuốn đi'. Ông quan tâm sau khi quan sát các nghệ sĩ, nhất là họa sĩ, những người quên mình trong công việc và bỏ qua thức ăn, nước uống và thậm chí giấc ngủ.",
+      "heading_fr": "Ce qu'est le flow",
+      "body_fr": "Le flow est l'état mental dans lequel une personne accomplissant une activité est pleinement immergée dans une concentration stimulante, un engagement total et le plaisir, avec une perception transformée du temps {wiki-flow}. Il s'agit d'un équilibre entre les compétences d'une personne et le défi posé par la tâche. Il exige un haut niveau de concentration. L'idée a été exposée pour la première fois en 1975 dans le livre de Csíkszentmihályi, Beyond Boredom and Anxiety. Ce terme découle de ses entretiens, au cours desquels les gens tenaient des propos comme « C'était comme flotter » et « J'étais porté par le flux ». Son intérêt est né de l'observation d'artistes, en particulier de peintres, qui se perdaient dans leur travail au point d'en oublier la nourriture, l'eau et même le sommeil.",
+      "heading_de": "Was Flow ist",
+      "body_de": "Flow ist der mentale Zustand, in dem eine Person beim Ausführen einer Aktivität völlig in energiegeladenem Fokus, voller Hingabe und Freude aufgeht, begleitet von einem transformierten Zeitempfinden {wiki-flow}. Er entsteht aus einem Gleichgewicht zwischen den eigenen Fähigkeiten und den Anforderungen der Aufgabe und erfordert ein hohes Maß an Konzentration. Erstmals vorgestellt wurde das Konzept 1975 in Csíkszentmihályis Buch Beyond Boredom and Anxiety. Die Bezeichnung rührt aus seinen Interviews, in denen Menschen Wendungen verwendeten wie „Es fühlte sich an wie Schweben“ oder „Ich wurde vom Flow getragen“. Sein Interesse wurde geweckt, als er Kunstschaffende, insbesondere Malende, beobachtete, die sich derart in ihr Werk vertieften, dass sie Essen, Trinken und sogar Schlaf vernachlässigten.",
+      "heading_es": "Qué es el flujo",
+      "body_es": "El flujo es el estado mental en el que una persona que realiza una actividad se sumerge por completo en un enfoque enérgico, una implicación total y disfrute, con una percepción transformada del tiempo {wiki-flow}. Se trata de un equilibrio entre la habilidad que posee la persona y el desafío que plantea la tarea. Requiere un alto nivel de concentración. La idea se presentó por primera vez en el libro de Csíkszentmihályi de 1975, Beyond Boredom and Anxiety. El nombre proviene de sus entrevistas, en las que las personas decían cosas como «Era como flotar» o «Me dejaba llevar por el flujo». Su interés surgió tras observar a artistas, en especial a pintores, que se abstraían tanto en su trabajo que ignoraban la comida, el agua e incluso el sueño."
     },
     {
       "heading_en": "The ingredients",
       "heading_vi": "Các thành phần",
       "body_en": "Jeanne Nakamura and Csíkszentmihályi list six factors: intense concentration on the present, a merging of action and awareness, a loss of reflective self-consciousness, a sense of control, a distorted experience of time, and an activity that feels intrinsically rewarding {wiki-flow}. These can appear separately, and only together do they make flow. In 2021 Cameron Norsworthy and colleagues proposed a tidier framework. It separates two antecedents, optimal challenge and high motivation, from three features of the experience itself: absorption, effort-less control and intrinsic reward. Their definition is a state of absorption in which a high degree of control feels more effortless than usual.",
-      "body_vi": "Jeanne Nakamura và Csíkszentmihályi liệt kê sáu yếu tố: tập trung cao độ vào hiện tại, sự hòa nhập giữa hành động và nhận thức, mất đi sự tự ý thức mang tính phản chiếu, cảm giác kiểm soát, trải nghiệm thời gian bị méo, và một hoạt động tự thân đáng thưởng {wiki-flow}. Chúng có thể xuất hiện riêng rẽ, và chỉ khi cùng nhau mới thành dòng chảy. Năm 2021, Cameron Norsworthy và cộng sự đề xuất một khung gọn hơn. Nó tách hai điều kiện đi trước, thử thách tối ưu và động lực cao, khỏi ba đặc điểm của chính trải nghiệm: sự đắm chìm, kiểm soát không cần gắng sức và phần thưởng nội tại. Định nghĩa của họ là một trạng thái đắm chìm trong đó mức kiểm soát cao có cảm giác dễ dàng hơn bình thường."
+      "body_vi": "Jeanne Nakamura và Csíkszentmihályi liệt kê sáu yếu tố: tập trung cao độ vào hiện tại, sự hòa nhập giữa hành động và nhận thức, mất đi sự tự ý thức mang tính phản chiếu, cảm giác kiểm soát, trải nghiệm thời gian bị méo, và một hoạt động tự thân đáng thưởng {wiki-flow}. Chúng có thể xuất hiện riêng rẽ, và chỉ khi cùng nhau mới thành dòng chảy. Năm 2021, Cameron Norsworthy và cộng sự đề xuất một khung gọn hơn. Nó tách hai điều kiện đi trước, thử thách tối ưu và động lực cao, khỏi ba đặc điểm của chính trải nghiệm: sự đắm chìm, kiểm soát không cần gắng sức và phần thưởng nội tại. Định nghĩa của họ là một trạng thái đắm chìm trong đó mức kiểm soát cao có cảm giác dễ dàng hơn bình thường.",
+      "heading_fr": "Les composantes",
+      "body_fr": "Jeanne Nakamura et Csíkszentmihályi recensent six facteurs : une concentration intense sur le présent, la fusion de l'action et de la conscience, la perte de conscience de soi réflexive, un sentiment de contrôle, une perception déformée du temps et une activité intrinsèquement gratifiante {wiki-flow}. Ces facteurs peuvent se manifester isolément, et c'est seulement ensemble qu'ils engendrent le flow. En 2021, Cameron Norsworthy et ses collègues ont proposé un cadre plus clair. Il sépare deux antécédents, le défi optimal et une forte motivation, de trois caractéristiques propres à l'expérience : l'absorption, un contrôle sans effort et la récompense intrinsèque. Leur définition est un état d'absorption au sein duquel un degré élevé de contrôle s'exerce plus facilement que d'ordinaire.",
+      "heading_de": "Die Bestandteile",
+      "body_de": "Jeanne Nakamura und Csíkszentmihályi nennen sechs Faktoren: intensive Konzentration auf die Gegenwart, das Verschmelzen von Handlung und Bewusstsein, der Verlust reflexiver Selbstwahrnehmung, ein Gefühl der Kontrolle, ein verzerrtes Zeiterleben sowie eine Tätigkeit, die als intrinsisch belohnend empfunden wird {wiki-flow}. Diese Merkmale können einzeln auftreten, ergeben jedoch erst gemeinsam den Flow-Zustand. 2021 schlugen Cameron Norsworthy und Kollegen ein übersichtlicheres Modell vor. Es unterscheidet zwei Voraussetzungen – optimale Herausforderung und hohe Motivation – von drei Merkmalen des Erlebens selbst: Vertiefung, mühelose Kontrolle und intrinsische Belohnung. Ihrer Definition zufolge ist Flow ein Zustand der Absorption, in dem sich ein hohes Maß an Kontrolle müheloser als gewohnt anfühlt.",
+      "heading_es": "Los ingredientes",
+      "body_es": "Jeanne Nakamura y Csíkszentmihályi enumeran seis factores: una intensa concentración en el presente, la fusión de acción y conciencia, la pérdida de la autoconciencia reflexiva, una sensación de control, una experiencia distorsionada del tiempo y una actividad que resulta intrínsecamente gratificante {wiki-flow}. Estos factores pueden manifestarse por separado, y solo juntos constituyen el flujo. En 2021, Cameron Norsworthy y sus colaboradores propusieron un marco más ordenado. Este separa dos antecedentes —el desafío óptimo y una alta motivación— de tres rasgos propios de la experiencia en sí: absorción, control sin esfuerzo y recompensa intrínseca. Su definición es la de un estado de absorción en el que un alto grado de control se percibe con mayor naturalidad y menor esfuerzo de lo habitual."
     },
     {
       "heading_en": "Attention is limited",
       "heading_vi": "Sự chú ý là hữu hạn",
       "body_en": "The mind can attend to only a certain amount of information at a time. In his 2004 TED talk Csíkszentmihályi put it at about 110 bits per second, and he said that decoding speech alone takes 40 to 60 bits {wiki-flow}. That is why you cannot hold a conversation and give full attention to something else. In flow, a person is so engrossed in one task that, without deciding to, they lose awareness of time, people, distractions and even bodily needs. The figures come from a talk and not from a laboratory measurement, so treat them as an illustration of a limit, not a precise constant.",
-      "body_vi": "Tâm trí chỉ chú ý được một lượng thông tin nhất định tại một thời điểm. Trong bài nói TED năm 2004, Csíkszentmihályi đặt con số ấy vào khoảng 110 bit mỗi giây, và nói rằng chỉ giải mã lời nói đã tốn 40 đến 60 bit {wiki-flow}. Đó là lý do bạn không thể vừa trò chuyện vừa dành toàn bộ sự chú ý cho việc khác. Trong dòng chảy, một người đắm chìm vào một việc đến mức, không cần quyết định, họ mất nhận thức về thời gian, người xung quanh, sự xao nhãng và thậm chí nhu cầu cơ thể. Các con số đến từ một bài nói chứ không phải phép đo trong phòng thí nghiệm, nên hãy xem chúng như minh họa cho một giới hạn, không phải hằng số chính xác."
+      "body_vi": "Tâm trí chỉ chú ý được một lượng thông tin nhất định tại một thời điểm. Trong bài nói TED năm 2004, Csíkszentmihályi đặt con số ấy vào khoảng 110 bit mỗi giây, và nói rằng chỉ giải mã lời nói đã tốn 40 đến 60 bit {wiki-flow}. Đó là lý do bạn không thể vừa trò chuyện vừa dành toàn bộ sự chú ý cho việc khác. Trong dòng chảy, một người đắm chìm vào một việc đến mức, không cần quyết định, họ mất nhận thức về thời gian, người xung quanh, sự xao nhãng và thậm chí nhu cầu cơ thể. Các con số đến từ một bài nói chứ không phải phép đo trong phòng thí nghiệm, nên hãy xem chúng như minh họa cho một giới hạn, không phải hằng số chính xác.",
+      "heading_fr": "Une attention limitée",
+      "body_fr": "L'esprit ne peut traiter qu'une certaine quantité d'informations à la fois. Lors de sa conférence TED de 2004, Csíkszentmihályi l'évaluait à environ 110 bits par seconde, précisant que le simple décodage de la parole nécessite 40 à 60 bits {wiki-flow}. Voilà pourquoi on ne peut pas soutenir une conversation tout en accordant une attention complète à autre chose. Durant le flow, une personne est tellement absorbée par une tâche que, sans le décider, elle perd conscience du temps, d'autrui, des distractions et même de ses besoins corporels. Ces chiffres provenant d'une intervention orale et non d'une mesure de laboratoire, il convient de les considérer comme l'illustration d'une limite et non comme une constante exacte.",
+      "heading_de": "Aufmerksamkeit ist begrenzt",
+      "body_de": "Das menschliche Gehirn kann zur selben Zeit nur eine begrenzte Menge an Informationen verarbeiten. In seinem TED-Talk von 2004 bezifferte Csíkszentmihályi diese Kapazität auf rund 110 Bits pro Sekunde und erklärte, dass allein das Entschlüsseln gesprochener Sprache 40 bis 60 Bits beanspruche {wiki-flow}. Deshalb kannst du kein Gespräch führen und gleichzeitig einer anderen Sache deine volle Aufmerksamkeit widmen. Im Flow ist ein Mensch so sehr in eine Aufgabe vertieft, dass er ganz ohne bewussten Entschluss das Bewusstsein für Zeit, Mitmenschen, Ablenkungen und sogar körperliche Bedürfnisse verliert. Da diese Zahlen aus einem Vortrag und nicht aus einer Labormessung stammen, sollte man sie als Veranschaulichung einer Grenze betrachten, nicht als exakte Konstante.",
+      "heading_es": "La atención es limitada",
+      "body_es": "La mente solo puede procesar una cantidad determinada de información a la vez. En su charla TED de 2004, Csíkszentmihályi la situó en unos 110 bits por segundo, y afirmó que tan solo descodificar el habla requiere entre 40 y 60 bits {wiki-flow}. Por esa razón no es posible mantener una conversación y prestar total atención a otra cosa. En el flujo, una persona está tan absorta en una tarea que, sin proponérselo, deja de ser consciente del tiempo, de la gente, de las distracciones e incluso de las necesidades corporales. Estas cifras provienen de una charla divulgativa y no de una medición de laboratorio, por lo que deben tomarse como la ilustración de un límite y no como una constante matemática precisa."
     },
     {
       "heading_en": "Flow is not the same as hyperfocus",
       "heading_vi": "Dòng chảy không giống hyperfocus",
       "body_en": "Flow shares features with hyperfocus, but hyperfocus is not always seen positively {wiki-flow}. It can mean spending too much time on a game, or on one aspect of an assignment to the detriment of the whole. It can capture a person so that they look unfocused or start several unfinished projects. The source says it is often mentioned in connection with autism, schizophrenia and ADHD. Flow, by contrast, is most likely at moderate levels of arousal, where a person is neither overwhelmed nor bored. The idea of a personal zone of optimal functioning came from sport psychology. The practical test is whether you finish valued work, not whether you felt absorbed.",
-      "body_vi": "Dòng chảy có những điểm chung với hyperfocus, nhưng hyperfocus không phải lúc nào cũng được nhìn tích cực {wiki-flow}. Nó có thể là dành quá nhiều thời gian cho một trò chơi, hoặc cho một khía cạnh của bài tập đến mức bất lợi cho toàn bộ. Nó có thể cuốn một người đi đến mức trông như mất tập trung hoặc bắt đầu nhiều dự án dang dở. Nguồn nói nó thường được nhắc trong bối cảnh tự kỷ, tâm thần phân liệt và ADHD. Ngược lại, dòng chảy dễ xảy ra nhất ở mức kích thích vừa phải, khi một người không bị quá tải cũng không chán. Ý tưởng về vùng hoạt động tối ưu của mỗi người xuất phát từ tâm lý học thể thao. Phép thử thực tế là bạn có hoàn thành công việc có giá trị hay không, chứ không phải bạn có cảm thấy đắm chìm hay không."
+      "body_vi": "Dòng chảy có những điểm chung với hyperfocus, nhưng hyperfocus không phải lúc nào cũng được nhìn tích cực {wiki-flow}. Nó có thể là dành quá nhiều thời gian cho một trò chơi, hoặc cho một khía cạnh của bài tập đến mức bất lợi cho toàn bộ. Nó có thể cuốn một người đi đến mức trông như mất tập trung hoặc bắt đầu nhiều dự án dang dở. Nguồn nói nó thường được nhắc trong bối cảnh tự kỷ, tâm thần phân liệt và ADHD. Ngược lại, dòng chảy dễ xảy ra nhất ở mức kích thích vừa phải, khi một người không bị quá tải cũng không chán. Ý tưởng về vùng hoạt động tối ưu của mỗi người xuất phát từ tâm lý học thể thao. Phép thử thực tế là bạn có hoàn thành công việc có giá trị hay không, chứ không phải bạn có cảm thấy đắm chìm hay không.",
+      "heading_fr": "Le flow n'est pas l'hyperfocalisation",
+      "body_fr": "Le flow partage des traits avec l'hyperfocalisation, mais celle-ci n'est pas toujours perçue de façon positive {wiki-flow}. Elle peut conduire à passer trop de temps sur un jeu, ou sur un seul volet d'un devoir au détriment de l'ensemble. Elle peut accaparer une personne au point de lui donner l'air déconcentrée ou de l'amener à commencer plusieurs projets inachevés. La source indique qu'elle est souvent évoquée en lien avec l'autisme, la schizophrénie et le TDAH. Le flow, en revanche, survient le plus souvent à des niveaux d'éveil modérés, lorsque l'on n'est ni dépassé ni ennuyé. L'idée d'une zone personnelle de fonctionnement optimal provient de la psychologie du sport. Le test pratique consiste à déterminer si vous menez à bien un travail qui a de la valeur, et non simplement si vous vous êtes senti absorbé.",
+      "heading_de": "Flow ist nicht dasselbe wie Hyperfokus",
+      "body_de": "Flow teilt Eigenschaften mit dem Hyperfokus, doch Hyperfokus wird nicht immer positiv bewertet {wiki-flow}. Er kann bedeuten, zu viel Zeit mit einem Videospiel oder einem einzelnen Detail einer Arbeit zu verbringen, was dem Gesamtergebnis schadet. Er kann jemanden so gefangen nehmen, dass die Person unkonzentriert wirkt oder etliche unvollendete Projekte beginnt. Der Quelle zufolge wird er häufig im Zusammenhang mit Autismus, Schizophrenie und ADHS genannt. Flow hingegen stellt sich am ehesten bei moderater Erregung ein, wenn eine Person weder überfordert noch unterfordert ist. Die Idee einer individuellen Zone optimalen Funktionierens stammt aus der Sportpsychologie. Der praktische Prüfstein ist, ob du wertvolle Arbeit vollendest, nicht ob du dich vertieft gefühlt hast.",
+      "heading_es": "El flujo no es lo mismo que el hiperfoco",
+      "body_es": "El flujo comparte rasgos con el hiperfoco, pero este último no siempre se percibe de forma positiva {wiki-flow}. Puede implicar dedicar un tiempo excesivo a un juego o a un aspecto aislado de una tarea en detrimento del conjunto. Puede atrapar a alguien hasta el punto de que parezca disperso o comience varios proyectos que deja inacabados. La fuente señala que suele mencionarse en relación con el autismo, la esquizofrenia y el TDAH. El flujo, por el contrario, es más probable ante niveles moderados de activación fisiológica, donde la persona no se siente ni abrumada ni aburrida. La noción de una zona individual de funcionamiento óptimo proviene de la psicología del deporte. La prueba práctica radica en si se logra finalizar un trabajo de valor, y no simplemente en si uno se sintió absorto."
     },
     {
       "heading_en": "What recent studies find",
       "heading_vi": "Các nghiên cứu gần đây cho thấy gì",
       "body_en": "A 2026 study of 547 middle-aged and older choir members in China found that emotional regulation and aesthetic engagement with music were associated with flow through intrinsic motivation {yin-2026}. A 2026 survey of 350 university students using fitness apps found that flow mediated the link between app use and exercise behaviour, accounting for 60.4% of the total effect {song-2026}. Both studies are cross-sectional surveys of particular groups in China. They show associations that fit the theory. They cannot show that flow causes exercise, or that the same holds elsewhere.",
-      "body_vi": "Một nghiên cứu năm 2026 trên 547 thành viên dàn hợp xướng trung niên và cao tuổi ở Trung Quốc thấy rằng điều hòa cảm xúc và sự gắn bó thẩm mỹ với âm nhạc có liên quan đến dòng chảy thông qua động lực nội tại {yin-2026}. Một khảo sát năm 2026 trên 350 sinh viên đại học dùng ứng dụng thể dục thấy dòng chảy làm trung gian cho mối liên hệ giữa việc dùng ứng dụng và hành vi tập luyện, chiếm 60,4% tổng hiệu ứng {song-2026}. Cả hai nghiên cứu đều là khảo sát cắt ngang trên những nhóm cụ thể ở Trung Quốc. Chúng cho thấy các mối liên quan phù hợp với lý thuyết. Chúng không thể cho thấy dòng chảy gây ra việc tập luyện, hay điều tương tự đúng ở nơi khác."
+      "body_vi": "Một nghiên cứu năm 2026 trên 547 thành viên dàn hợp xướng trung niên và cao tuổi ở Trung Quốc thấy rằng điều hòa cảm xúc và sự gắn bó thẩm mỹ với âm nhạc có liên quan đến dòng chảy thông qua động lực nội tại {yin-2026}. Một khảo sát năm 2026 trên 350 sinh viên đại học dùng ứng dụng thể dục thấy dòng chảy làm trung gian cho mối liên hệ giữa việc dùng ứng dụng và hành vi tập luyện, chiếm 60,4% tổng hiệu ứng {song-2026}. Cả hai nghiên cứu đều là khảo sát cắt ngang trên những nhóm cụ thể ở Trung Quốc. Chúng cho thấy các mối liên quan phù hợp với lý thuyết. Chúng không thể cho thấy dòng chảy gây ra việc tập luyện, hay điều tương tự đúng ở nơi khác.",
+      "heading_fr": "Les constats des études récentes",
+      "body_fr": "Une étude menée en 2026 auprès de 547 choristes d'âge mûr et âgés en Chine a montré que la régulation émotionnelle et l'engagement esthétique dans la musique étaient associés au flow par l'intermédiaire de la motivation intrinsèque {yin-2026}. Une enquête réalisée en 2026 auprès de 350 étudiants universitaires utilisant des applications de fitness a révélé que le flow jouait un rôle de médiateur entre l'usage de l'application et la pratique sportive, représentant 60,4 % de l'effet total {song-2026}. Ces deux recherches sont des études transversales menées sur des groupes particuliers en Chine. Elles mettent en lumière des corrélations conformes à la théorie. Elles ne sauraient prouver que le flow incite à l'exercice physique, ni que ce constat s'applique ailleurs.",
+      "heading_de": "Was neuere Studien zeigen",
+      "body_de": "Eine Studie aus dem Jahr 2026 an 547 Chormitgliedern mittleren und höheren Alters in China ergab, dass Emotionsregulation und die ästhetische Auseinandersetzung mit Musik über intrinsische Motivation mit Flow zusammenhingen {yin-2026}. Eine Befragung von 350 Studierenden in China, die Fitness-Apps nutzen, zeigte 2026, dass Flow den Zusammenhang zwischen App-Nutzung und Sportverhalten mediierte und 60,4 % des Gesamteffekts ausmachte {song-2026}. Beide Untersuchungen sind Querschnittsstudien an spezifischen Gruppen in China. Sie belegen Zusammenhänge, die zur Theorie passen, können jedoch nicht beweisen, dass Flow sportliche Aktivität verursacht oder dass die Befunde andernorts ebenso gelten.",
+      "heading_es": "Qué revelan los estudios recientes",
+      "body_es": "Un estudio de 2026 realizado con 547 miembros de coros de mediana y avanzada edad en China descubrió que la regulación emocional y la implicación estética con la música estaban asociadas con el flujo a través de la motivación intrínseca {yin-2026}. Una encuesta de 2026 a 350 estudiantes universitarios que utilizaban aplicaciones de entrenamiento físico reveló que el flujo mediaba la relación entre el uso de la aplicación y el hábito de hacer ejercicio, explicando el 60,4 % del efecto total {song-2026}. Ambos estudios son encuestas transversales sobre grupos específicos en China. Muestran asociaciones que concuerdan con la teoría, pero no pueden demostrar que el flujo cause el ejercicio ni que ocurra lo mismo en otros contextos."
     },
     {
       "heading_en": "Setting up the conditions",
       "heading_vi": "Tạo điều kiện",
       "body_en": "Since flow depends on challenge matching skill and on motivation, the setup is within reach. Choose a task that is hard enough to need attention but not so hard that it overwhelms, and one you find rewarding in itself. The research cannot promise flow on demand, and the experience is individual. Each person has their own zone of optimal functioning, so what works for a choir member or a painter may not suit you. Flow research became common in the 1980s and 1990s, with particular interest from schools and business, and the source notes that flow can serve as a way of coping with stress and anxiety when it is found in leisure that matches a person's skills {wiki-flow}.",
-      "body_vi": "Vì dòng chảy phụ thuộc vào thử thách khớp với kỹ năng và vào động lực, việc tạo điều kiện nằm trong tầm tay. Hãy chọn một việc đủ khó để cần sự chú ý nhưng không khó đến mức quá tải, và là việc bạn thấy đáng làm tự thân. Nghiên cứu không thể hứa dòng chảy theo yêu cầu, và trải nghiệm này mang tính cá nhân. Mỗi người có vùng hoạt động tối ưu riêng, nên điều hợp với một thành viên dàn hợp xướng hay một họa sĩ có thể không hợp với bạn. Nghiên cứu về dòng chảy trở nên phổ biến trong thập niên 1980 và 1990, với sự quan tâm đặc biệt từ trường học và giới kinh doanh, và nguồn ghi rằng dòng chảy có thể là cách đối phó với căng thẳng và lo âu khi nó đến từ hoạt động giải trí khớp với kỹ năng của một người {wiki-flow}."
+      "body_vi": "Vì dòng chảy phụ thuộc vào thử thách khớp với kỹ năng và vào động lực, việc tạo điều kiện nằm trong tầm tay. Hãy chọn một việc đủ khó để cần sự chú ý nhưng không khó đến mức quá tải, và là việc bạn thấy đáng làm tự thân. Nghiên cứu không thể hứa dòng chảy theo yêu cầu, và trải nghiệm này mang tính cá nhân. Mỗi người có vùng hoạt động tối ưu riêng, nên điều hợp với một thành viên dàn hợp xướng hay một họa sĩ có thể không hợp với bạn. Nghiên cứu về dòng chảy trở nên phổ biến trong thập niên 1980 và 1990, với sự quan tâm đặc biệt từ trường học và giới kinh doanh, và nguồn ghi rằng dòng chảy có thể là cách đối phó với căng thẳng và lo âu khi nó đến từ hoạt động giải trí khớp với kỹ năng của một người {wiki-flow}.",
+      "heading_fr": "Mettre en place les conditions",
+      "body_fr": "Dans la mesure où le flow dépend de l'adéquation entre le défi et les compétences ainsi que de la motivation, sa mise en œuvre est à portée de main. Choisissez une tâche assez difficile pour réclamer de l'attention sans toutefois vous submerger, et qui vous semble gratifiante en soi. La recherche ne saurait promettre le flow à la demande, et l'expérience reste personnelle. Chaque individu possède sa propre zone de fonctionnement optimal ; ce qui fonctionne pour un choriste ou pour un peintre peut donc ne pas vous convenir. Les recherches sur le flow se sont répandues dans les années 1980 et 1990, suscitant un intérêt tout particulier dans l'enseignement et le monde des affaires, et la source relève que le flow peut servir à affronter le stress et l'anxiété lorsqu'il survient au sein de loisirs adaptés aux compétences de la personne {wiki-flow}.",
+      "heading_de": "Die Voraussetzungen schaffen",
+      "body_de": "Da Flow davon abhängt, dass Herausforderung und Fähigkeiten im Einklang stehen und die Motivation hoch ist, lässt er sich gezielt anbahnen. Wähle eine Aufgabe, die anspruchsvoll genug ist, um deine Aufmerksamkeit zu fordern, dich aber nicht überfordert, und die du an sich als lohnend empfindest. Die Forschung garantiert keinen Flow auf Knopfdruck, denn das Erleben ist individuell. Jeder Mensch hat seine eigene Zone optimalen Funktionierens; was für ein Chormitglied oder eine Malerin funktioniert, passt also womöglich nicht zu dir. In den 1980er- und 1990er-Jahren gewann die Flow-Forschung an Verbreitung, besonders an Schulen und in Unternehmen. Zudem vermerkt die Quelle, dass Flow als Bewältigungsstrategie gegen Stress und Angst dienen kann, wenn er in einer Freizeitbeschäftigung erlebt wird, die zu den eigenen Fähigkeiten passt {wiki-flow}.",
+      "heading_es": "Cómo propiciar las condiciones adecuadas",
+      "body_es": "Dado que el flujo depende de equilibrar el desafío con la habilidad y de la motivación, propiciar estas condiciones está a nuestro alcance. Conviene elegir una tarea lo bastante difícil como para exigir atención, pero no tanto como para abrumar, y que además resulte gratificante por sí misma. Las investigaciones no pueden garantizar el flujo a voluntad, y la experiencia varía en cada individuo. Cada quien tiene su propia zona de funcionamiento óptimo, por lo que aquello que funciona para un corista o un pintor podría no servirle a usted. El estudio del flujo se popularizó en las décadas de 1980 y 1990, con especial interés por parte de escuelas y empresas, y la fuente destaca que el flujo puede servir para afrontar el estrés y la ansiedad cuando se experimenta en actividades de ocio acordes con las capacidades de la persona {wiki-flow}."
     }
   ],
   "keyPoint": {
     "en": "Flow is deep absorption that comes when a task is hard enough to need your full attention but within your skill, and feels rewarding in itself. [p:Choose the task, cut interruptions, and judge it by finished work.] The evidence is mostly survey-based, so expect individual variation.",
-    "vi": "Dòng chảy là sự đắm chìm sâu đến khi một việc đủ khó để cần toàn bộ sự chú ý nhưng vẫn trong tầm kỹ năng của bạn, và tự thân đáng làm. [p:Hãy chọn việc, cắt gián đoạn, và đánh giá bằng công việc đã hoàn thành.] Bằng chứng phần lớn dựa trên khảo sát, nên hãy chờ đợi sự khác biệt giữa từng người."
+    "vi": "Dòng chảy là sự đắm chìm sâu đến khi một việc đủ khó để cần toàn bộ sự chú ý nhưng vẫn trong tầm kỹ năng của bạn, và tự thân đáng làm. [p:Hãy chọn việc, cắt gián đoạn, và đánh giá bằng công việc đã hoàn thành.] Bằng chứng phần lớn dựa trên khảo sát, nên hãy chờ đợi sự khác biệt giữa từng người.",
+    "fr": "Le flow est une absorption profonde qui survient quand une tâche est assez difficile pour exiger toute votre attention tout en restant dans vos compétences, et procure une satisfaction intrinsèque. [p:Choisissez la tâche, coupez les interruptions et jugez le résultat au travail accompli.] Les données étant essentiellement issues d'enquêtes, attendez-vous à des variations individuelles.",
+    "de": "Flow ist tiefe Vertiefung, die entsteht, wenn eine Aufgabe deine volle Aufmerksamkeit fordert, aber deinen Fähigkeiten entspricht und sich an sich lohnend anfühlt. [p:Wähle die Aufgabe gezielt, reduziere Ablenkungen und beurteile den Zustand nach vollendeter Arbeit.] Da die Belege überwiegend auf Befragungen beruhen, solltest du mit individuellen Unterschieden rechnen.",
+    "es": "El flujo es una absorción profunda que surge cuando una tarea es lo bastante exigente como para requerir toda la atención pero acorde a las propias habilidades, y resulta gratificante en sí misma. [p:Elija la tarea, elimine interrupciones y juzgue el resultado por el trabajo terminado.] La evidencia proviene sobre todo de encuestas, por lo que cabe esperar variaciones individuales."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Chọn một việc trong tuần này hơi vượt kỹ năng hiện tại của bạn và dành 60 phút cho nó.",
       "Tắt thông báo trong khoảng đó và ghi lại cảm giác về thời gian sau đó.",
       "Sau đó hãy viết xem bạn có hoàn thành điều định làm không, chứ không chỉ cảm giác có tốt không."
+    ],
+    "fr": [
+      "Choisissez cette semaine une tâche d'un niveau légèrement supérieur à vos compétences actuelles et réservez-lui un créneau de 60 minutes.",
+      "Désactivez les notifications durant ce laps de temps et notez après coup comment vous avez perçu le temps.",
+      "Consignez ensuite par écrit si vous avez accompli ce que vous aviez prévu, et pas seulement si l'expérience a été agréable."
+    ],
+    "de": [
+      "Wähle diese Woche eine Aufgabe, die etwas über deinen aktuellen Fähigkeiten liegt, und reserviere 60 Minuten dafür.",
+      "Schalte Benachrichtigungen für diesen Zeitraum stumm und beobachte danach, wie sich das Verstreichen der Zeit angefühlt hat.",
+      "Notiere anschließend, ob du das geplante Ziel erreicht hast – nicht nur, ob sich die Arbeit gut angefühlt hat."
+    ],
+    "es": [
+      "Elija una tarea esta semana que esté ligeramente por encima de su nivel actual de habilidad y reserve 60 minutos para ella.",
+      "Silencie las notificaciones durante ese intervalo y observe después cómo percibió el paso del tiempo.",
+      "Al finalizar, anote si completó lo que se había propuesto y no solo si la experiencia fue agradable."
     ]
   },
   "references": [
@@ -98,12 +158,92 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/flow-state-csikszentmihalyi.webp",
+    "url": "https://images.unsplash.com/15/swirl.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODgyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vladimir Kramer",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/xzZtV9ED5Bs"
+    "sourceUrl": "https://unsplash.com/photos/xzZtV9ED5Bs",
+    "wide": "https://images.unsplash.com/15/swirl.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODgyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@vladimirkramer?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JZgCdMoR3ACmyQnkUF9RqVQ++TgAA/nb8AyRDsUKmwubW44vqHIqwfwntusmBU9NxaL33CBGvrMzE8AMH9lr+hEzgShP5hXGv924gAAA=",
-  "dominant": "#5b4533"
+  "dominant": "#5b4533",
+  "glossary": {
+    "en": {
+      "correlational": "A statistical relationship showing that variables change together without proving that one causes the other.",
+      "antecedents": "Preceding conditions or factors that trigger or lead into a subsequent state or experience.",
+      "reflective self-consciousness": "Conscious awareness of oneself, including deliberate self-monitoring, doubt, or thinking about one's actions.",
+      "intrinsic reward": "A feeling of satisfaction or pleasure derived directly from performing the activity itself, rather than external incentives.",
+      "bits per second": "A standard rate used to measure how much information the human mind can process each second.",
+      "hyperfocus": "An intense, fixated concentration on an activity that is often difficult to control or shift away from.",
+      "adhd": "Attention deficit hyperactivity disorder, a condition involving persistent difficulty with attention, impulse control, or hyperactivity.",
+      "arousal": "A state of physiological and psychological alertness and readiness to respond.",
+      "emotional regulation": "The ability to monitor, manage, and adjust one's emotional reactions and states.",
+      "aesthetic engagement": "Active, immersive sensory appreciation of artistic qualities such as music or visual art.",
+      "mediated": "Served as an explanatory link or intermediate mechanism connecting two related variables.",
+      "cross-sectional surveys": "Research studies collecting observational data from participants at a single specific point in time."
+    },
+    "vi": {
+      "dòng chảy": "Trạng thái đắm chìm hoàn toàn vào một hoạt động với sự tập trung cao và niềm vui.",
+      "tương quan": "Mối liên hệ cùng thay đổi giữa hai yếu tố nhưng không khẳng định quan hệ nhân quả.",
+      "phản chiếu": "Sự tự quan sát, suy xét và đánh giá lại chính bản thân hoặc hành vi của mình.",
+      "nội tại": "Xuất phát từ bên trong và đem lại sự thỏa mãn từ chính hoạt động đó.",
+      "tự thân": "Bản thân hoạt động đã có giá trị và phần thưởng mà không cần tác nhân bên ngoài.",
+      "bit": "Đơn vị đo lường lượng thông tin cơ bản được tâm trí tiếp nhận và xử lý.",
+      "hằng số": "Một giá trị hoặc đại lượng cố định không bao giờ thay đổi.",
+      "hyperfocus": "Trạng thái tập trung quá mức vào một việc đến mức phớt lờ mọi thứ xung quanh.",
+      "tự kỷ": "Tình trạng rối loạn phát triển ảnh hưởng đến khả năng giao tiếp và tương tác xã hội.",
+      "adhd": "Hội chứng rối loạn tăng động giảm chú ý, gây khó khăn trong việc duy trì tập trung.",
+      "kích thích": "Mức độ hưng phấn hoặc cảnh giác về mặt tâm lý và sinh lý của cơ thể."
+    },
+    "fr": {
+      "flow": "État mental d'absorption profonde et d'engagement total au cours d'une activité enrichissante.",
+      "corrélationnelles": "Qualifie des observations qui révèlent des liens statistiques sans démontrer de relation de cause à effet.",
+      "antécédents": "Conditions ou facteurs préalables indispensables qui favorisent l'émergence d'un état ou d'une expérience.",
+      "bits par seconde": "Unité mesurant le débit d'information que le système cognitif peut traiter par unité de temps.",
+      "hyperfocalisation": "Concentration captive et exclusive sur un point précis, difficile à interrompre et parfois envahissante.",
+      "tdah": "Trouble du déficit de l'attention avec ou sans hyperactivité.",
+      "régulation émotionnelle": "Capacité d'un individu à surveiller, évaluer et moduler ses réactions affectives face aux événements.",
+      "motivation intrinsèque": "Volonté d'agir suscitée par le plaisir et l'intérêt inhérents à l'activité elle-même.",
+      "médiateur": "Variable intermédiaire expliquant le mécanisme par lequel une variable initiale influe sur un résultat.",
+      "études transversales": "Recherches observant simultanément plusieurs variables à un instant précis auprès d'une population définie."
+    },
+    "de": {
+      "flow": "Ein Zustand völliger Vertiefung und Freude bei einer anspruchsvollen, gut beherrschbaren Tätigkeit.",
+      "reflexiver selbstwahrnehmung": "Das ständige, bewusste Beobachten und Bewerten der eigenen Person und Handlungen.",
+      "intrinsisch belohnend": "Eine Aktivität, die aus eigenem Antrieb und Freude an der Sache selbst belohnt.",
+      "bits pro sekunde": "Maßeinheit für die Geschwindigkeit, mit der das Gehirn Informationen verarbeiten kann.",
+      "hyperfokus": "Intensive, teils unkontrollierbare Fixierung auf ein Detail oder Thema unter Ausblendung der Umwelt.",
+      "adhs": "Aufmerksamkeitsdefizit-Hyperaktivitätsstörung, eine neurologische Entwicklungsstörung bezüglich Impulskontrolle und Konzentration.",
+      "zone optimalen funktionierens": "Ein individuelles Erregungs- und Konzentrationsniveau, bei dem eine Person Höchstleistungen erbringt.",
+      "emotionsregulation": "Fähigkeit, eigene emotionale Zustände bewusst wahrzunehmen, zu beeinflussen und zu steuern.",
+      "intrinsische motivation": "Innerer Antrieb, eine Tätigkeit um ihrer selbst willen auszuüben, ohne äußere Anreize.",
+      "querschnittsstudien": "Wissenschaftliche Untersuchungen, die Daten verschiedener Personen zu einem einzigen Erhebungszeitpunkt erfassen.",
+      "mediierte": "Statistischer Vermittlungseffekt, der erklärt, wie eine unabhängige Variable eine abhängige beeinflusst."
+    },
+    "es": {
+      "flujo": "Estado mental de inmersión total, concentración enérgica y disfrute pleno en una actividad.",
+      "autoconciencia reflexiva": "Capacidad de observarse y evaluarse a uno mismo de manera consciente durante una tarea.",
+      "recompensa intrínseca": "Gratificación obtenida por el mero hecho de realizar una actividad, sin incentivos externos.",
+      "bits por segundo": "Unidad que cuantifica la tasa de procesamiento de información en la mente humana.",
+      "hiperfoco": "Fijación atencional intensa en una tarea que puede dificultar atender a otras necesidades.",
+      "tdah": "Siglas del trastorno por déficit de atención con hiperactividad.",
+      "activación fisiológica": "Estado general de alerta física y mental del organismo ante una tarea.",
+      "funcionamiento óptimo": "Nivel de rendimiento en el que una persona alcanza su máxima eficacia.",
+      "regulación emocional": "Habilidad para gestionar y encauzar las emociones de manera adecuada.",
+      "motivación intrínseca": "Impulso de realizar una acción por el interés o satisfacción que genera en sí misma.",
+      "encuestas transversales": "Estudios científicos que recopilan datos de una población en un único momento determinado."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

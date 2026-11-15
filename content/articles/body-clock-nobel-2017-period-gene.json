@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Inside the body clock: the gene that keeps time",
-    "vi": "Bên trong đồng hồ sinh học: gen giữ nhịp thời gian"
+    "vi": "Bên trong đồng hồ sinh học: gen giữ nhịp thời gian",
+    "fr": "Au cœur de l'horloge biologique : le gène qui donne le tempo",
+    "de": "In der inneren Uhr: Das Gen, das die Zeit misst",
+    "es": "Dentro del reloj biológico: el gen que marca el tiempo"
   },
   "hook": {
     "en": "Every cell in your body keeps a rough 24-hour schedule, and the Nobel Prize in 2017 went to three scientists who found how. In fruit flies they isolated a gene called period and showed that its protein [p:builds up at night and is broken down by day]. The same logic runs in humans, and when the clock and the environment disagree, health can suffer.",
-    "vi": "Mỗi tế bào trong cơ thể bạn giữ một lịch trình khoảng 24 giờ, và giải Nobel năm 2017 trao cho ba nhà khoa học đã tìm ra cách nó chạy. Ở ruồi giấm, họ tách được một gen tên là period và chứng minh rằng protein của nó [p:tích tụ vào ban đêm và bị phân hủy vào ban ngày]. Cùng một logic ấy chạy ở con người, và khi đồng hồ và môi trường bất đồng, sức khỏe có thể bị ảnh hưởng."
+    "vi": "Mỗi tế bào trong cơ thể bạn giữ một lịch trình khoảng 24 giờ, và giải Nobel năm 2017 trao cho ba nhà khoa học đã tìm ra cách nó chạy. Ở ruồi giấm, họ tách được một gen tên là period và chứng minh rằng protein của nó [p:tích tụ vào ban đêm và bị phân hủy vào ban ngày]. Cùng một logic ấy chạy ở con người, và khi đồng hồ và môi trường bất đồng, sức khỏe có thể bị ảnh hưởng.",
+    "fr": "Chaque cellule de votre corps suit un cycle d'environ 24 heures, et le prix Nobel de 2017 a récompensé trois scientifiques qui ont découvert comment. Chez la drosophile, ils ont isolé un gène appelé period et montré que sa protéine [p:s'accumule la nuit et se dégrade le jour]. La même logique opère chez l'être humain, et lorsque l'horloge et l'environnement ne concordent plus, la santé peut en pâtir.",
+    "de": "Jede Zelle in deinem Körper folgt einem groben 24-Stunden-Rhythmus, und der Nobelpreis im Jahr 2017 ging an drei Wissenschaftler, die herausfanden, wie das funktioniert. Bei Fruchtfliegen isolierten sie ein Gen namens period und zeigten, dass dessen Protein [p:sich nachts anreichert und tagsüber abgebaut wird]. Derselbe Mechanismus wirkt auch im Menschen, und wenn innere Uhr und Umwelt nicht übereinstimmen, kann die Gesundheit leiden.",
+    "es": "Cada célula de su cuerpo sigue un horario aproximado de 24 horas, y el Premio Nobel de 2017 se otorgó a tres científicos que descubrieron cómo. En moscas de la fruta aislaron un gen llamado period y demostraron que su proteína [p:se acumula durante la noche y se degrada de día]. La misma lógica rige en los seres humanos, y cuando el reloj interno y el entorno discrepan, la salud puede resentirse."
   },
   "sections": [
     {
       "heading_en": "A clock that predicts the day",
       "heading_vi": "Một chiếc đồng hồ dự đoán ngày",
       "body_en": "Life on Earth is adapted to the rotation of the planet. For a long time scientists knew that organisms, humans included, have an internal clock that helps them anticipate the rhythm of the day, but not how it worked {nobel-2017}. The clock regulates behaviour, hormone levels, sleep, body temperature and metabolism. It is not a simple reaction to daylight. The laureates describe a self-sustaining clockwork inside the cell, an internal rhythm that continues on its own, which is why people who fly across time zones feel out of step with the local day, and why the clock can be studied apart from the sun.",
-      "body_vi": "Sự sống trên Trái Đất thích nghi với chuyển động quay của hành tinh. Từ lâu các nhà khoa học biết rằng sinh vật, kể cả con người, có một chiếc đồng hồ bên trong giúp chúng đoán trước nhịp của ngày, nhưng chưa biết nó chạy ra sao {nobel-2017}. Đồng hồ này điều hòa hành vi, nồng độ hormone, giấc ngủ, thân nhiệt và chuyển hóa. Nó không phải một phản ứng đơn giản với ánh sáng ban ngày. Các nhà khoa học đoạt giải mô tả một cơ chế đồng hồ tự duy trì bên trong tế bào, một nhịp bên trong tự tiếp diễn, vì thế người bay qua nhiều múi giờ thấy lệch nhịp với ngày địa phương, và vì thế đồng hồ có thể được nghiên cứu tách khỏi mặt trời."
+      "body_vi": "Sự sống trên Trái Đất thích nghi với chuyển động quay của hành tinh. Từ lâu các nhà khoa học biết rằng sinh vật, kể cả con người, có một chiếc đồng hồ bên trong giúp chúng đoán trước nhịp của ngày, nhưng chưa biết nó chạy ra sao {nobel-2017}. Đồng hồ này điều hòa hành vi, nồng độ hormone, giấc ngủ, thân nhiệt và chuyển hóa. Nó không phải một phản ứng đơn giản với ánh sáng ban ngày. Các nhà khoa học đoạt giải mô tả một cơ chế đồng hồ tự duy trì bên trong tế bào, một nhịp bên trong tự tiếp diễn, vì thế người bay qua nhiều múi giờ thấy lệch nhịp với ngày địa phương, và vì thế đồng hồ có thể được nghiên cứu tách khỏi mặt trời.",
+      "heading_fr": "Une horloge qui anticipe le jour",
+      "body_fr": "La vie sur Terre est adaptée à la rotation de la planète. Depuis longtemps, les scientifiques savaient que les organismes, y compris l'être humain, possèdent une horloge interne qui les aide à anticiper le rythme de la journée, sans pour autant comprendre comment elle fonctionnait {nobel-2017}. Cette horloge régule le comportement, les taux d'hormones, le sommeil, la température corporelle et le métabolisme. Il ne s'agit pas d'une simple réaction à la lumière du jour. Les lauréats décrivent un mécanisme d'horlogerie autonome au cœur de la cellule, un rythme interne qui se maintient de lui-même ; c'est pourquoi les voyageurs traversant plusieurs fuseaux horaires se sentent en décalage avec l'heure locale, et pourquoi cette horloge peut être étudiée indépendamment du Soleil.",
+      "heading_de": "Eine Uhr, die den Tag vorausahnt",
+      "body_de": "Das Leben auf der Erde ist an die Drehung des Planeten angepasst. Lange Zeit wussten Wissenschaftler zwar, dass Organismen – einschließlich des Menschen – eine innere Uhr besitzen, die ihnen hilft, den Tagesrhythmus vorwegzunehmen, aber nicht, wie sie funktionierte {nobel-2017}. Die Uhr reguliert das Verhalten, den Hormonspiegel, den Schlaf, die Körpertemperatur und den Stoffwechsel. Sie ist keine bloße Reaktion auf das Tageslicht. Die Preisträger beschreiben ein sich selbst erhaltendes Uhrwerk im Inneren der Zelle, einen eigenständigen inneren Rhythmus, der von selbst weiterläuft – weshalb Menschen, die Zeitzonen überfliegen, aus dem Takt mit dem Tag vor Ort geraten und warum sich die Uhr unabhängig von der Sonne erforschen lässt.",
+      "heading_es": "Un reloj que anticipa el día",
+      "body_es": "La vida en la Tierra está adaptada a la rotación del planeta. Durante mucho tiempo, la comunidad científica supo que los organismos, incluidos los seres humanos, poseen un reloj interno que les ayuda a anticipar el ritmo del día, pero no cómo funcionaba {nobel-2017}. El reloj regula la conducta, los niveles hormonales, el sueño, la temperatura corporal y el metabolismo. No es una simple reacción a la luz diurna. Los galardonados describen un mecanismo de relojería autosuficiente en el interior de la célula, un ritmo interno que se mantiene por sí mismo, razón por la cual quienes cruzan varios husos horarios en avión se sienten desfasados respecto al día local, y motivo por el que este reloj puede estudiarse con independencia del sol."
     },
     {
       "heading_en": "Finding the gene in fruit flies",
       "heading_vi": "Tìm gen ở ruồi giấm",
       "body_en": "In the 1970s Seymour Benzer and his student Ronald Konopka showed that mutations in one unknown gene disrupted the circadian clock of flies, and they named it period {nobel-2017}. In 1984 Jeffrey Hall and Michael Rosbash, working together at Brandeis University, and Michael Young at the Rockefeller University isolated it. Hall and Rosbash then found that PER, the protein the gene encodes, accumulated during the night and was degraded during the day. Its level therefore rises and falls over 24 hours, in step with the daily rhythm. A number moving up and down on a daily schedule was the first visible gear of the clock.",
-      "body_vi": "Thập niên 1970, Seymour Benzer và học trò Ronald Konopka chứng minh rằng đột biến ở một gen chưa biết làm rối loạn đồng hồ sinh học của ruồi, và họ đặt tên nó là period {nobel-2017}. Năm 1984, Jeffrey Hall và Michael Rosbash, cùng làm việc tại Đại học Brandeis, và Michael Young tại Đại học Rockefeller đã tách được nó. Hall và Rosbash sau đó thấy PER, protein do gen này mã hóa, tích tụ vào ban đêm và bị phân hủy vào ban ngày. Nồng độ của nó vì thế lên xuống trong 24 giờ, cùng nhịp với nhịp ngày. Một con số lên xuống theo lịch hằng ngày là bánh răng đầu tiên nhìn thấy được của chiếc đồng hồ."
+      "body_vi": "Thập niên 1970, Seymour Benzer và học trò Ronald Konopka chứng minh rằng đột biến ở một gen chưa biết làm rối loạn đồng hồ sinh học của ruồi, và họ đặt tên nó là period {nobel-2017}. Năm 1984, Jeffrey Hall và Michael Rosbash, cùng làm việc tại Đại học Brandeis, và Michael Young tại Đại học Rockefeller đã tách được nó. Hall và Rosbash sau đó thấy PER, protein do gen này mã hóa, tích tụ vào ban đêm và bị phân hủy vào ban ngày. Nồng độ của nó vì thế lên xuống trong 24 giờ, cùng nhịp với nhịp ngày. Một con số lên xuống theo lịch hằng ngày là bánh răng đầu tiên nhìn thấy được của chiếc đồng hồ.",
+      "heading_fr": "La découverte du gène chez la drosophile",
+      "body_fr": "Dans les années 1970, Seymour Benzer et son étudiant Ronald Konopka ont montré que des mutations dans un gène alors inconnu perturbaient l'horloge circadienne des mouches, et ils l'ont baptisé period {nobel-2017}. En 1984, Jeffrey Hall et Michael Rosbash, travaillant de concert à l'université Brandeis, ainsi que Michael Young à l'université Rockefeller, l'ont isolé. Hall et Rosbash ont ensuite découvert que PER, la protéine codée par ce gène, s'accumulait pendant la nuit et se dégradait au cours de la journée. Sa concentration oscille donc sur 24 heures, en phase avec le rythme quotidien. Cette quantité qui monte et descend selon un cycle journalier constituait le premier rouage visible de l'horloge.",
+      "heading_de": "Die Entdeckung des Gens bei Fruchtfliegen",
+      "body_de": "In den 1970er-Jahren zeigten Seymour Benzer und sein Student Ronald Konopka, dass Mutationen in einem unbekannten Gen die zirkadiane Uhr von Fliegen störten, und nannten es period {nobel-2017}. Im Jahr 1984 isolierten Jeffrey Hall und Michael Rosbash, die an der Brandeis University zusammenarbeiteten, sowie Michael Young an der Rockefeller University dieses Gen. Hall und Rosbash stellten anschließend fest, dass PER, das von diesem Gen kodierte Protein, sich in der Nacht anreicherte und am Tag abgebaut wurde. Sein Spiegel steigt und fällt somit über 24 Stunden im Einklang mit dem Tagesrhythmus. Ein Messwert, der sich nach einem täglichen Ablaufplan auf und ab bewegte, war das erste sichtbare Zahnrad dieser Uhr.",
+      "heading_es": "El hallazgo del gen en la mosca de la fruta",
+      "body_es": "En la década de 1970, Seymour Benzer y su estudiante Ronald Konopka demostraron que las mutaciones en un gen desconocido alteraban el reloj circadiano de las moscas, y lo llamaron period {nobel-2017}. En 1984, Jeffrey Hall y Michael Rosbash, trabajando juntos en la Universidad Brandeis, y Michael Young, en la Universidad Rockefeller, lo aislaron. Luego, Hall y Rosbash descubrieron que PER, la proteína codificada por el gen, se acumulaba durante la noche y se degradaba durante el día. Por lo tanto, su nivel sube y baja a lo largo de 24 horas, en sincronía con el ritmo diario. Una cifra que oscilaba según un ciclo diario fue el primer engranaje visible del reloj."
     },
     {
       "heading_en": "A loop that switches itself off",
       "heading_vi": "Một vòng lặp tự tắt",
       "body_en": "Hall and Rosbash proposed that PER blocks the activity of its own gene, an inhibitory feedback loop that yields a cyclic rhythm {nobel-2017}. When the gene is active, it makes messenger RNA, which is used to build PER protein in the cell's cytoplasm. PER then builds up in the nucleus, where it blocks the gene. As PER is broken down, the block lifts, and the cycle begins again. A puzzle remained: how does PER reach the nucleus? In 1994 Young found a second clock gene, timeless, and in 1998 another, doubletime, which regulates how PER accumulates.",
-      "body_vi": "Hall và Rosbash đề xuất rằng PER chặn hoạt động của chính gen của nó, một vòng phản hồi ức chế tạo ra nhịp tuần hoàn {nobel-2017}. Khi gen hoạt động, nó tạo RNA thông tin, dùng để dựng protein PER trong tế bào chất. PER sau đó tích tụ trong nhân, nơi nó chặn gen. Khi PER bị phân hủy, sự chặn được gỡ và chu kỳ bắt đầu lại. Một câu đố còn lại: PER đến nhân bằng cách nào? Năm 1994 Young tìm thấy một gen đồng hồ thứ hai, timeless, và năm 1998 một gen khác, doubletime, điều hòa cách PER tích tụ."
+      "body_vi": "Hall và Rosbash đề xuất rằng PER chặn hoạt động của chính gen của nó, một vòng phản hồi ức chế tạo ra nhịp tuần hoàn {nobel-2017}. Khi gen hoạt động, nó tạo RNA thông tin, dùng để dựng protein PER trong tế bào chất. PER sau đó tích tụ trong nhân, nơi nó chặn gen. Khi PER bị phân hủy, sự chặn được gỡ và chu kỳ bắt đầu lại. Một câu đố còn lại: PER đến nhân bằng cách nào? Năm 1994 Young tìm thấy một gen đồng hồ thứ hai, timeless, và năm 1998 một gen khác, doubletime, điều hòa cách PER tích tụ.",
+      "heading_fr": "Une boucle qui s'interrompt d'elle-même",
+      "body_fr": "Hall et Rosbash ont proposé que PER bloque l'activité de son propre gène, formant une boucle de rétroaction inhibitrice qui produit un rythme cyclique {nobel-2017}. Lorsque le gène est actif, il produit de l'ARN messager, qui sert à fabriquer la protéine PER dans le cytoplasme cellulaire. PER s'accumule ensuite dans le noyau, où elle bloque le gène. À mesure que PER se dégrade, le blocage se lève et le cycle recommence. Une énigme persistait : comment PER parvient-elle jusqu'au noyau ? En 1994, Young a découvert un deuxième gène de l'horloge, timeless, puis un autre en 1998, doubletime, qui régule l'accumulation de PER.",
+      "heading_de": "Eine Schleife, die sich selbst abschaltet",
+      "body_de": "Hall und Rosbash schlugen vor, dass PER die Aktivität seines eigenen Gens blockiert – eine hemmende Rückkopplungsschleife, die einen zyklischen Rhythmus erzeugt {nobel-2017}. Wenn das Gen aktiv ist, bildet es Boten-RNA, die im Zytoplasma der Zelle zum Aufbau des PER-Proteins dient. Anschließend reichert sich PER im Zellkern an und blockiert dort das Gen. Wird PER abgebaut, löst sich die Blockade und der Zyklus beginnt von vorn. Ein Rätsel blieb: Wie gelangt PER in den Zellkern? 1994 entdeckte Young ein zweites Uhr-Gen namens timeless und 1998 ein weiteres, doubletime, das steuert, wie sich PER anreichert.",
+      "heading_es": "Un bucle que se desactiva a sí mismo",
+      "body_es": "Hall y Rosbash propusieron que PER bloquea la actividad de su propio gen, un bucle de retroalimentación inhibitoria que genera un ritmo cíclico {nobel-2017}. Cuando el gen está activo, produce ARN mensajero, que se utiliza para sintetizar la proteína PER en el citoplasma de la célula. Luego, PER se acumula en el núcleo celular, donde bloquea el gen. A medida que PER se degrada, el bloqueo desaparece y el ciclo recomienza. Quedaba un enigma: ¿cómo llega PER al núcleo? En 1994 Young descubrió un segundo gen del reloj, timeless, y en 1998 otro más, doubletime, que regula la acumulación de PER."
     },
     {
       "heading_en": "The human clock runs a little long",
       "heading_vi": "Đồng hồ của người chạy hơi dài",
       "body_en": "Humans use similar principles, and a large share of our genes is regulated by the clock {nobel-2017}. In controlled lighting, the intrinsic period of the human pacemaker averages 24.18 hours in both young and older people, with a tight spread {czeisler-1999}. Earlier work had reported periods as long as 25 hours, but those measurements were confounded by light exposure. The authors say the finding matters for understanding disrupted sleep in older people.",
-      "body_vi": "Con người dùng những nguyên lý tương tự, và một phần lớn gen của ta được đồng hồ điều hòa {nobel-2017}. Trong điều kiện ánh sáng được kiểm soát, chu kỳ nội tại của bộ phát nhịp ở người trung bình là 24,18 giờ ở cả người trẻ và người lớn tuổi, với độ phân tán hẹp {czeisler-1999}. Các nghiên cứu trước đó từng báo cáo chu kỳ dài tới 25 giờ, nhưng những phép đo ấy bị nhiễu do ánh sáng. Các tác giả cho biết phát hiện này quan trọng để hiểu giấc ngủ rối loạn ở người lớn tuổi."
+      "body_vi": "Con người dùng những nguyên lý tương tự, và một phần lớn gen của ta được đồng hồ điều hòa {nobel-2017}. Trong điều kiện ánh sáng được kiểm soát, chu kỳ nội tại của bộ phát nhịp ở người trung bình là 24,18 giờ ở cả người trẻ và người lớn tuổi, với độ phân tán hẹp {czeisler-1999}. Các nghiên cứu trước đó từng báo cáo chu kỳ dài tới 25 giờ, nhưng những phép đo ấy bị nhiễu do ánh sáng. Các tác giả cho biết phát hiện này quan trọng để hiểu giấc ngủ rối loạn ở người lớn tuổi.",
+      "heading_fr": "Une horloge humaine légèrement plus longue",
+      "body_fr": "L'être humain s'appuie sur des principes similaires, et une grande part de nos gènes est régulée par cette horloge {nobel-2017}. Sous un éclairage contrôlé, la période intrinsèque du stimulateur circadien humain atteint en moyenne 24,18 heures, aussi bien chez les jeunes que chez les personnes plus âgées, avec une dispersion très resserrée {czeisler-1999}. Des travaux antérieurs avaient rapporté des durées allant jusqu'à 25 heures, mais ces mesures étaient faussées par l'exposition à la lumière. Les auteurs soulignent que ce résultat est essentiel pour comprendre les troubles du sommeil chez les personnes âgées.",
+      "heading_de": "Die menschliche Uhr läuft etwas länger",
+      "body_de": "Der Mensch nutzt ähnliche Prinzipien, und ein großer Teil unserer Gene wird durch die Uhr reguliert {nobel-2017}. Unter kontrollierten Lichtverhältnissen beträgt die intrinsische Periode des menschlichen Schrittmachers sowohl bei jungen als auch bei älteren Menschen durchschnittlich 24,18 Stunden bei geringer Streuung {czeisler-1999}. Frühere Arbeiten hatten Perioden von bis zu 25 Stunden gemeldet, doch diese Messungen wurden durch Lichteinwirkung verfälscht. Den Autoren zufolge ist diese Erkenntnis wichtig, um gestörten Schlaf bei älteren Menschen zu verstehen.",
+      "heading_es": "El reloj humano dura un poco más",
+      "body_es": "Los seres humanos emplean principios similares, y una proporción considerable de nuestros genes está regulada por el reloj {nobel-2017}. Bajo iluminación controlada, el período intrínseco del marcapasos humano promedia 24.18 horas tanto en jóvenes como en personas mayores, con una dispersión estrecha {czeisler-1999}. Investigaciones anteriores habían reportado períodos de hasta 25 horas, pero esas mediciones se vieron confundidas por la exposición a la luz. Los autores afirman que este hallazgo resulta clave para comprender los trastornos del sueño en adultos mayores."
     },
     {
       "heading_en": "When clock and calendar disagree",
       "heading_vi": "Khi đồng hồ và lịch bất đồng",
       "body_en": "The Nobel committee notes that our wellbeing is affected when there is a mismatch between the external environment and the internal clock, as in jet lag, and that chronic misalignment is linked, by indications, with increased risk of various diseases {nobel-2017}. Night shift work is a longer mismatch. A 2026 review of healthcare workers says circadian misalignment is an independent risk factor for cardiometabolic disease, not only a side effect of lost sleep, and reports a dose-response relationship between night-shift exposure and cardiometabolic risk {ye-2026}. A cross-sectional analysis of 3,578 US adults found more autoimmune thyroiditis in shift workers, with an odds ratio of 1.69, which shows an association and not a cause {li-2026}.",
-      "body_vi": "Ủy ban Nobel lưu ý rằng sức khỏe của ta bị ảnh hưởng khi có sự lệch giữa môi trường bên ngoài và đồng hồ bên trong, như khi bị lệch múi giờ, và có dấu hiệu cho thấy sự lệch nhịp mạn tính liên quan đến nguy cơ nhiều bệnh tăng lên {nobel-2017}. Làm ca đêm là một sự lệch kéo dài hơn. Một bài tổng quan năm 2026 về nhân viên y tế nói rằng sự lệch nhịp sinh học là một yếu tố nguy cơ độc lập đối với bệnh tim chuyển hóa, không chỉ là hệ quả phụ của việc mất ngủ, và báo cáo mối quan hệ liều đáp ứng giữa mức tiếp xúc ca đêm và nguy cơ tim chuyển hóa {ye-2026}. Một phân tích cắt ngang trên 3.578 người trưởng thành Mỹ thấy viêm tuyến giáp tự miễn nhiều hơn ở người làm ca, với tỷ số chênh 1,69, điều cho thấy mối liên quan chứ không phải nguyên nhân {li-2026}."
+      "body_vi": "Ủy ban Nobel lưu ý rằng sức khỏe của ta bị ảnh hưởng khi có sự lệch giữa môi trường bên ngoài và đồng hồ bên trong, như khi bị lệch múi giờ, và có dấu hiệu cho thấy sự lệch nhịp mạn tính liên quan đến nguy cơ nhiều bệnh tăng lên {nobel-2017}. Làm ca đêm là một sự lệch kéo dài hơn. Một bài tổng quan năm 2026 về nhân viên y tế nói rằng sự lệch nhịp sinh học là một yếu tố nguy cơ độc lập đối với bệnh tim chuyển hóa, không chỉ là hệ quả phụ của việc mất ngủ, và báo cáo mối quan hệ liều đáp ứng giữa mức tiếp xúc ca đêm và nguy cơ tim chuyển hóa {ye-2026}. Một phân tích cắt ngang trên 3.578 người trưởng thành Mỹ thấy viêm tuyến giáp tự miễn nhiều hơn ở người làm ca, với tỷ số chênh 1,69, điều cho thấy mối liên quan chứ không phải nguyên nhân {li-2026}.",
+      "heading_fr": "Quand l'horloge et l'agenda divergent",
+      "body_fr": "Le comité Nobel souligne que notre bien-être est altéré lorsqu'il existe un décalage entre l'environnement extérieur et l'horloge interne, comme lors d'un décalage horaire, et que plusieurs indices associent une désynchronisation chronique à un risque accru de diverses pathologies {nobel-2017}. Le travail de nuit constitue un décalage plus durable. Une revue de 2026 menée auprès de professionnels de santé indique que le dérèglement circadien est un facteur de risque indépendant de maladie cardiométabolique, et non un simple effet secondaire du manque de sommeil ; elle rapporte une relation dose-réponse entre l'exposition au travail de nuit et le risque cardiométabolique {ye-2026}. Une analyse transversale portant sur 3 578 adultes américains a révélé une fréquence accrue de la thyroïdite auto-immune chez les travailleurs postés, avec un rapport de cotes de 1,69, ce qui témoigne d'une association et non d'un lien de causalité {li-2026}.",
+      "heading_de": "Wenn Uhr und Kalender uneins sind",
+      "body_de": "Das Nobelkomitee stellt fest, dass unser Wohlbefinden leidet, wenn Umwelt und innere Uhr nicht zusammenpassen – wie beim Jetlag –, und Hinweise darauf hindeuten, dass eine chronische Fehlausrichtung mit einem erhöhten Risiko für verschiedene Krankheiten verknüpft ist {nobel-2017}. Nachtschichtarbeit stellt eine länger anhaltende Fehlausrichtung dar. Eine Übersichtsarbeit von 2026 über Beschäftigte im Gesundheitswesen besagt, dass eine zirkadiane Fehlausrichtung ein unabhängiger Risikofaktor für kardiometabolische Erkrankungen ist – nicht nur eine Begleiterscheinung von Schlafmangel – und berichtet von einer Dosis-Wirkungs-Beziehung zwischen Nachtschichten und kardiometabolischem Risiko {ye-2026}. Eine Querschnittsanalyse von 3.578 US-Erwachsenen fand bei Schichtarbeitern häufiger Autoimmunthyreoiditis mit einer Odds Ratio von 1,69, was einen statistischen Zusammenhang und keine Ursache belegt {li-2026}.",
+      "heading_es": "Cuando el reloj y el calendario no coinciden",
+      "body_es": "El comité del Nobel señala que nuestro bienestar se ve afectado cuando existe un desajuste entre el entorno externo y el reloj interno, como ocurre con el jet lag, y que los indicios vinculan el desalineamiento crónico con un mayor riesgo de diversas enfermedades {nobel-2017}. El trabajo en turnos nocturnos supone un desajuste más prolongado. Una revisión de 2026 sobre trabajadores de la salud indica que el desalineamiento circadiano es un factor de riesgo independiente para la enfermedad cardiometabólica, no solo un efecto secundario de la falta de sueño, y documenta una relación dosis-respuesta entre la exposición al trabajo nocturno y el riesgo cardiometabólico {ye-2026}. Un análisis transversal de 3,578 adultos estadounidenses halló una mayor presencia de tiroiditis autoinmune en trabajadores por turnos, con un odds ratio de 1.69, lo que evidencia una asociación y no una causalidad {li-2026}."
     },
     {
       "heading_en": "What this means for daily life",
       "heading_vi": "Điều này nghĩa là gì cho cuộc sống hằng ngày",
       "body_en": "The research does not give a prescription for everyone. The review of night-shift work says that advice is moving from one-size-fits-all rules to individual approaches based on a person's circadian type {ye-2026}. What it supports is modest: the body keeps its own time, light and routine adjust it, and regular, predictable schedules cost it less than irregular ones. If you must work nights, the evidence points to tailoring your plan, and to seeing a doctor about long-term risks rather than guessing. Be sceptical of anyone who promises a perfect schedule for every body.",
-      "body_vi": "Nghiên cứu không đưa ra một đơn thuốc cho mọi người. Bài tổng quan về làm ca đêm nói rằng lời khuyên đang chuyển từ quy tắc chung cho mọi người sang cách tiếp cận cá nhân dựa trên kiểu nhịp sinh học của từng người {ye-2026}. Điều nó ủng hộ là khiêm tốn: cơ thể giữ thời gian riêng của nó, ánh sáng và thói quen điều chỉnh nó, và lịch trình đều đặn, dễ đoán tốn cơ thể ít hơn lịch thất thường. Nếu bạn buộc phải làm đêm, bằng chứng gợi ý nên điều chỉnh kế hoạch cho riêng mình, và gặp bác sĩ về nguy cơ dài hạn thay vì đoán. Hãy hoài nghi ai hứa hẹn một lịch trình hoàn hảo cho mọi cơ thể."
+      "body_vi": "Nghiên cứu không đưa ra một đơn thuốc cho mọi người. Bài tổng quan về làm ca đêm nói rằng lời khuyên đang chuyển từ quy tắc chung cho mọi người sang cách tiếp cận cá nhân dựa trên kiểu nhịp sinh học của từng người {ye-2026}. Điều nó ủng hộ là khiêm tốn: cơ thể giữ thời gian riêng của nó, ánh sáng và thói quen điều chỉnh nó, và lịch trình đều đặn, dễ đoán tốn cơ thể ít hơn lịch thất thường. Nếu bạn buộc phải làm đêm, bằng chứng gợi ý nên điều chỉnh kế hoạch cho riêng mình, và gặp bác sĩ về nguy cơ dài hạn thay vì đoán. Hãy hoài nghi ai hứa hẹn một lịch trình hoàn hảo cho mọi cơ thể.",
+      "heading_fr": "Ce que cela implique au quotidien",
+      "body_fr": "Ces recherches ne proposent pas de formule magique universelle. La synthèse sur le travail de nuit indique que les recommandations abandonnent les règles uniformes au profit d'approches personnalisées, fondées sur le chronotype de chacun {ye-2026}. Ce qu'elle confirme reste mesuré : le corps dispose de son propre rythme, la lumière et la routine le synchronisent, et des horaires réguliers et prévisibles lui coûtent bien moins cher que des plannings erratiques. Si vous devez travailler de nuit, les données scientifiques incitent à adapter votre organisation et à consulter un médecin au sujet des risques à long terme, plutôt que de vous fier au hasard. Restez sceptique face à quiconque vous promet un emploi du temps parfait convenant à tous.",
+      "heading_de": "Was das für den Alltag bedeutet",
+      "body_de": "Die Forschung liefert kein Patentrezept für jedermann. Laut der Übersichtsarbeit zur Nachtschichtarbeit bewegen sich die Empfehlungen weg von Pauschallösungen hin zu individuellen Ansätzen, die sich nach dem zirkadianen Typ des Einzelnen richten {ye-2026}. Was sie stützt, ist bescheiden: Der Körper folgt seiner eigenen Zeit, Licht und Routinen justieren sie nach, und regelmäßige, vorhersehbare Abläufe fordern ihn weniger als unregelmäßige. Wenn du nachts arbeiten musst, sprechen die Belege dafür, deinen Plan individuell anzupassen und bei langfristigen Risiken einen Arzt aufzusuchen, statt nur zu raten. Sei skeptisch gegenüber jedem, der einen perfekten Zeitplan für jeden Körper verspricht.",
+      "heading_es": "Qué significa esto para la vida cotidiana",
+      "body_es": "La investigación no ofrece una receta válida para todo el mundo. La revisión sobre el trabajo en turnos nocturnos señala que las recomendaciones están pasando de pautas generales uniformes a enfoques individualizados según el tipo circadiano de cada persona {ye-2026}. Lo que respalda la evidencia es modesto: el cuerpo marca su propio tiempo, la luz y la rutina lo ajustan, y los horarios regulares y predecibles le suponen un menor desgaste que los irregulares. Si debe trabajar de noche, la evidencia sugiere adaptar su planificación y acudir al médico para evaluar los riesgos a largo plazo en lugar de suponerlos. Desconfíe de quien prometa un horario perfecto para cualquier organismo."
     }
   ],
   "keyPoint": {
     "en": "Your cells carry a self-running clock, built from a gene whose protein switches the gene off and then fades, giving a 24-hour cycle. [p:Keep your light, meals and sleep at regular times] so the clock and the day agree, and talk to a doctor if you work nights.",
-    "vi": "Tế bào của bạn mang một chiếc đồng hồ tự chạy, dựng từ một gen mà protein của nó tắt gen rồi phai đi, tạo ra chu kỳ 24 giờ. [p:Giữ ánh sáng, bữa ăn và giấc ngủ vào những giờ đều đặn] để đồng hồ và ngày khớp nhau, và hãy hỏi bác sĩ nếu bạn làm ca đêm."
+    "vi": "Tế bào của bạn mang một chiếc đồng hồ tự chạy, dựng từ một gen mà protein của nó tắt gen rồi phai đi, tạo ra chu kỳ 24 giờ. [p:Giữ ánh sáng, bữa ăn và giấc ngủ vào những giờ đều đặn] để đồng hồ và ngày khớp nhau, và hãy hỏi bác sĩ nếu bạn làm ca đêm.",
+    "fr": "Vos cellules renferment une horloge autonome, articulée autour d'un gène dont la protéine désactive le gène avant de disparaître, engendrant un cycle de 24 heures. [p:Conservez des horaires réguliers pour la lumière, les repas et le sommeil] afin que l'horloge et le jour concordent, et consultez un médecin si vous travaillez de nuit.",
+    "de": "Deine Zellen tragen eine von selbst ablaufende Uhr in sich – aufgebaut aus einem Gen, dessen Protein das Gen abschaltet und dann zerfällt, was einen 24-Stunden-Zyklus ergibt. [p:Halte regelmäßige Zeiten für Licht, Mahlzeiten und Schlaf ein], damit die innere Uhr und der Tag übereinstimmen, und sprich mit einem Arzt, wenn du nachts arbeitest.",
+    "es": "Sus células albergan un reloj autónomo, constituido a partir de un gen cuya proteína desactiva dicho gen y luego se degrada, completando un ciclo de 24 horas. [p:Mantenga horarios regulares de luz, comidas y sueño] para que el reloj y el día coincidan, y consulte a un médico si trabaja de noche."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Ra ngoài đón ánh sáng trong vòng một giờ sau khi thức dậy trong bảy ngày tới.",
       "Đặt giờ thức dậy trong khung 30 phút, kể cả cuối tuần.",
       "Giảm độ sáng màn hình và đèn trong một giờ trước khi ngủ và ghi lại giấc ngủ của bạn."
+    ],
+    "fr": [
+      "Exposez-vous à la lumière du jour dans l'heure suivant votre réveil au cours des sept prochains jours.",
+      "Fixez votre heure de réveil dans un créneau de 30 minutes, y compris le week-end.",
+      "Tamisez les écrans et les lumières vives pendant l'heure précédant le coucher et observez la qualité de votre sommeil."
+    ],
+    "de": [
+      "Tanke in den nächsten sieben Tagen innerhalb einer Stunde nach dem Aufstehen Tageslicht im Freien.",
+      "Lege deine Aufstehzeit auf ein 30-Minuten-Fenster fest, auch an Wochenenden.",
+      "Dimme in der Stunde vor dem Schlafengehen Bildschirme sowie helles Licht und beobachte, wie du schläfst."
+    ],
+    "es": [
+      "Expóngase a la luz natural durante la primera hora tras levantarse a lo largo de los próximos siete días.",
+      "Fije su hora de levantarse dentro de un margen de 30 minutos, incluidos los fines de semana.",
+      "Atenúe las pantallas y las luces intensas en la hora previa a acostarse y evalúe cómo duerme."
     ]
   },
   "references": [
@@ -103,18 +163,98 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/body-clock-nobel-2017-period-gene.webp",
+    "url": "https://images.unsplash.com/12/till-the-cows-come-home.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjU2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Kenneth Thewissen",
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/D76DklsG-5U",
-    "wide": "/covers/body-clock-nobel-2017-period-gene-wide.webp",
-    "video": {
-      "url": "/covers/video/body-clock-nobel-2017-period-gene.mp4",
-      "wide": "/covers/video/body-clock-nobel-2017-period-gene-wide.mp4",
-      "credit": "Pixabay"
-    }
+    "wide": "https://images.unsplash.com/12/till-the-cows-come-home.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjU2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@kenneththewissen?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBACdASoQABwAPu1iqk4ppaQiMAgBMB2JagCdMoACN7r/iPGFH/ThwAD6JOHfng//z/3QVkUgDFwWMgfYHQms1MKUxDlUP36VEwvpJYtMHPcUptZfM1hJz4BA3lEMYpudCTexKHTcMruDIRRa7dA9ylhPg+VttVW9ej/H9ksg7qa6EbXOhXRd0DQr3jix2IgAN97wAAA=",
-  "dominant": "#6f582a"
+  "dominant": "#6f582a",
+  "glossary": {
+    "en": {
+      "circadian clock": "An internal biological mechanism that regulates an organism's roughly 24-hour cycle of bodily functions.",
+      "period": "A gene discovered in fruit flies that helps regulate the body's daily 24-hour cycle.",
+      "per": "The protein produced by the period gene that builds up overnight and degrades during the day.",
+      "inhibitory feedback loop": "A biological process where a product accumulates and stops its own production until levels fall again.",
+      "messenger rna": "Genetic molecules that carry instructions from DNA to make proteins in a cell.",
+      "timeless": "A clock gene that helps PER protein reach the cell nucleus.",
+      "doubletime": "A clock gene that regulates how PER protein accumulates over time.",
+      "circadian misalignment": "A mismatch between internal biological rhythms and external environmental schedules or behaviors.",
+      "cardiometabolic disease": "A category of diseases combining cardiovascular conditions and metabolic disorders like diabetes.",
+      "autoimmune thyroiditis": "An inflammatory disease where the immune system mistakenly attacks the thyroid gland.",
+      "odds ratio": "A statistical measure comparing the likelihood of an event occurring across two groups.",
+      "circadian type": "An individual's natural tendency to be awake, active, or asleep at particular times."
+    },
+    "vi": {
+      "period": "Gen điều hòa chu kỳ sinh học 24 giờ đầu tiên được phát hiện ở ruồi giấm.",
+      "per": "Protein do gen period mã hóa, tích tụ vào ban đêm và phân hủy ban ngày.",
+      "rna thông tin": "Bản sao mã di truyền từ gen, dùng làm khuôn để tế bào tổng hợp protein.",
+      "tế bào chất": "Vùng chất lỏng bên trong tế bào bao quanh nhân, nơi diễn ra tổng hợp protein.",
+      "timeless": "Gen đồng hồ sinh học thứ hai được phát hiện ở ruồi giấm, giúp hỗ trợ PER.",
+      "doubletime": "Gen điều hòa tốc độ tích tụ và chu kỳ hoạt động của protein PER.",
+      "bộ phát nhịp": "Cơ chế hoặc trung khu sinh học bên trong cơ thể giúp tạo nhịp 24 giờ.",
+      "tim chuyển hóa": "Nhóm bệnh kết hợp giữa rối loạn tim mạch và các rối loạn chuyển hóa.",
+      "liều đáp ứng": "Mối liên hệ giữa mức độ tiếp xúc tác nhân và mức độ ảnh hưởng sinh học.",
+      "tự miễn": "Hiện tượng hệ thống miễn dịch nhận diện nhầm và tự tấn công tế bào cơ thể.",
+      "tỷ số chênh": "Chỉ số thống kê so sánh khả năng xảy ra biến cố giữa hai nhóm.",
+      "đột biến": "Sự thay đổi bất thường trong trình tự DNA cấu tạo nên gen di truyền."
+    },
+    "fr": {
+      "period": "Gène découvert chez la drosophile dont la mutation perturbe le rythme de l'horloge biologique.",
+      "drosophile": "Petite mouche fréquemment employée comme organisme modèle pour les études génétiques.",
+      "circadienne": "Qui concerne les rythmes biologiques dont la période est d'environ vingt-quatre heures.",
+      "per": "Protéine issue du gène period qui s'accumule la nuit et régule l'horloge interne.",
+      "boucle de rétroaction": "Dispositif biologique dans lequel le produit final d'une réaction freine sa propre synthèse.",
+      "arn messager": "Molécule transmettant les instructions d'un gène pour permettre la synthèse d'une protéine.",
+      "cytoplasme": "Région interne de la cellule située hors du noyau, où sont assemblées les protéines.",
+      "timeless": "Gène de l'horloge biologique dont la protéine permet à PER d'entrer dans le noyau.",
+      "doubletime": "Gène intervenant dans la régulation et la stabilité temporelle de la protéine PER.",
+      "stimulateur circadien": "Mécanisme biologique central qui synchronise les fonctions de l'organisme sur 24 heures.",
+      "maladie cardiométabolique": "Pathologie combinant des désordres cardiovasculaires et métaboliques, comme le diabète de type 2.",
+      "thyroïdite auto-immune": "Affection où le système immunitaire attaque la glande thyroïde et altère sa fonction.",
+      "chronotype": "Prédisposition individuelle déterminant les périodes optimales de veille, de sommeil et d'activité."
+    },
+    "de": {
+      "zirkadiane uhr": "Die innere biologische Uhr, die körperliche Prozesse auf einen ungefähren 24-Stunden-Rhythmus abstimmt.",
+      "period": "Ein bei Fruchtfliegen entdecktes Uhr-Gen, das für die zeitliche Steuerung des 24-Stunden-Rhythmus zentral ist.",
+      "per": "Das vom Gen period kodierte Protein, das sich über den Tag rhythmisch auf- und abbaut.",
+      "rückkopplungsschleife": "Ein biologischer Regelkreis, bei dem das Endprodukt eines Prozesses seine eigene Entstehung hemmt oder anregt.",
+      "boten-rna": "Molekulare Abschrift eines Gens, die als Bauanleitung für die Herstellung von Proteinen dient.",
+      "zytoplasma": "Die zelluläre Grundsubstanz außerhalb des Zellkerns, in der viele biochemische Reaktionen ablaufen.",
+      "timeless": "Ein zweites entdecktes Uhr-Gen, dessen Zusammenspiel mit period für den Tagesrhythmus nötig ist.",
+      "doubletime": "Ein Gen, das reguliert, mit welcher Geschwindigkeit sich das PER-Protein in der Zelle anreichert.",
+      "intrinsische periode": "Die natürliche, angeborene Zyklusdauer der inneren Uhr ohne äußere Zeitgeber wie das Sonnenlicht.",
+      "zirkadiane fehlausrichtung": "Der Zustand, wenn der innere biologische Rhythmus zeitlich nicht mit dem äußeren Tagesablauf übereinstimmt.",
+      "autoimmunthyreoiditis": "Eine chronische Entzündung der Schilddrüse, die durch einen Angriff des körpereigenen Immunsystems verursacht wird.",
+      "odds ratio": "Ein statistisches Maß in der Medizin, das die Stärke eines Zusammenhangs zwischen zwei Merkmalen beschreibt."
+    },
+    "es": {
+      "reloj circadiano": "Mecanismo biológico interno que regula las funciones del organismo en ciclos de aproximadamente 24 horas.",
+      "period": "Gen descubierto en moscas cuya actividad y proteína marcan el ritmo diario de las células.",
+      "per": "Proteína codificada por el gen period que oscila a lo largo del día y autorregula el reloj.",
+      "retroalimentación inhibitoria": "Mecanismo por el cual un producto biológico bloquea el proceso que lo genera al alcanzar cierto nivel.",
+      "arn mensajero": "Molécula genética que transmite las instrucciones del ADN al citoplasma para fabricar proteínas específicas.",
+      "timeless": "Gen del reloj celular cuya proteína interactúa con PER para permitir su entrada al núcleo.",
+      "doubletime": "Gen que codifica una proteína encargada de regular el momento en que se acumula PER.",
+      "marcapasos humano": "Estructura biológica interna que genera y coordina los ritmos fisiológicos de aproximadamente 24 horas en humanos.",
+      "jet lag": "Desfase temporal entre el reloj biológico interno y el horario local al viajar entre husos horarios.",
+      "desalineamiento circadiano": "Discrepancia perjudicial entre el reloj biológico de una persona y los horarios de su entorno ambiental.",
+      "enfermedad cardiometabólica": "Trastorno que engloba afecciones cardiovasculares y metabólicas, como diabetes y problemas del corazón.",
+      "odds ratio": "Medida estadística que cuantifica la fuerza de asociación entre una exposición y un resultado de salud."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "How John Snow traced a cholera outbreak to one water pump",
-    "vi": "Cách John Snow truy ra nguồn dịch tả từ một chiếc vòi nước công cộng"
+    "vi": "Cách John Snow truy ra nguồn dịch tả từ một chiếc vòi nước công cộng",
+    "fr": "Comment John Snow a fait remonter une épidémie de choléra à une pompe à eau",
+    "de": "Wie John Snow einen Choleraausbruch zu einer Wasserpumpe zurückverfolgte",
+    "es": "Cómo John Snow rastreó un brote de cólera hasta una bomba de agua"
   },
   "hook": {
     "en": "In late August 1854, cholera began killing people in a few days in Soho, London. The physician John Snow argued that the source was [p:the water from one public pump], not the foul air that most people blamed. The parish removed the pump's handle, and the epidemic faded. The method he used, comparing who got sick with what they drank, still underlies disease investigation today.",
-    "vi": "Cuối tháng Tám năm 1854, bệnh tả bắt đầu cướp đi sinh mạng người dân ở Soho, London chỉ trong vài ngày. Bác sĩ John Snow lập luận rằng nguồn gốc là [p:nước từ một vòi nước công cộng], chứ không phải thứ không khí độc mà nhiều người đổ lỗi. Giáo khu tháo tay cầm vòi nước, và dịch dần lắng xuống. Phương pháp ông dùng, so sánh người bị bệnh với thứ họ uống, vẫn là nền tảng của điều tra dịch bệnh ngày nay."
+    "vi": "Cuối tháng Tám năm 1854, bệnh tả bắt đầu cướp đi sinh mạng người dân ở Soho, London chỉ trong vài ngày. Bác sĩ John Snow lập luận rằng nguồn gốc là [p:nước từ một vòi nước công cộng], chứ không phải thứ không khí độc mà nhiều người đổ lỗi. Giáo khu tháo tay cầm vòi nước, và dịch dần lắng xuống. Phương pháp ông dùng, so sánh người bị bệnh với thứ họ uống, vẫn là nền tảng của điều tra dịch bệnh ngày nay.",
+    "fr": "Fin août 1854, le choléra se mit à tuer en quelques jours dans le quartier de Soho, à Londres. Le médecin John Snow soutint que la source était [p:l'eau d'une pompe publique], et non l'air vicié que la plupart des gens incriminaient. La paroisse retira le bras de la pompe, et l'épidémie s'apaisa. La méthode qu'il employa, comparant les malades à ce qu'ils buvaient, sous-tend encore aujourd'hui les enquêtes épidémiologiques.",
+    "de": "Ende August 1854 begann die Cholera im Londoner Stadtteil Soho innerhalb weniger Tage Menschen zu töten. Der Arzt John Snow vertrat die Auffassung, die Ursache sei [p:das Wasser aus einer öffentlichen Pumpe] und nicht die übel riechende Luft, der die meisten die Schuld gaben. Die Gemeinde entfernte den Schwengel der Pumpe, und die Epidemie ebbte ab. Seine Methode, Erkrankte danach zu vergleichen, was sie getrunken hatten, bildet noch heute die Grundlage epidemiologischer Untersuchungen.",
+    "es": "A finales de agosto de 1854, el cólera comenzó a matar personas en cuestión de días en Soho, Londres. El médico John Snow sostuvo que el origen era [p:el agua de una bomba pública], no el aire viciado al que la mayoría culpaba. La parroquia retiró la palanca de la bomba y la epidemia remitió. El método que empleó, consistente en comparar quién enfermaba con lo que bebía, sigue siendo la base de la investigación epidemiológica actual."
   },
   "sections": [
     {
       "heading_en": "A theory of bad air",
       "heading_vi": "Thuyết không khí độc",
       "body_en": "The prevailing view held that cholera came from miasma, poisonous vapours rising from foul smells {wiki-snow}. Snow doubted it. He had seen cholera in a coal-mining village as a young apprentice, and by 1849 he had published his view that the disease spread through contaminated water {wiki-snow}. The germ theory that would later explain it was still a minority view. Louis Pasteur proposed it only in 1861 {wiki-snow}. Snow did not know the exact agent, but the pattern of illness pointed to water.",
-      "body_vi": "Quan điểm chủ đạo cho rằng bệnh tả sinh ra từ khí độc, hơi bốc lên từ mùi hôi thối {wiki-snow}. Snow nghi ngờ điều đó. Ông từng thấy bệnh tả khi còn là học trò học nghề y ở một làng khai thác than, và đến năm 1849 đã công bố quan điểm rằng bệnh lan qua nước bị ô nhiễm {snow-pmc}. Thuyết vi trùng, về sau giải thích được bệnh này, khi đó vẫn là quan điểm thiểu số. Louis Pasteur mới đưa ra thuyết này vào năm 1861 {wiki-snow}. Snow chưa biết chính xác tác nhân, nhưng hình thái bệnh chỉ về phía nước."
+      "body_vi": "Quan điểm chủ đạo cho rằng bệnh tả sinh ra từ khí độc, hơi bốc lên từ mùi hôi thối {wiki-snow}. Snow nghi ngờ điều đó. Ông từng thấy bệnh tả khi còn là học trò học nghề y ở một làng khai thác than, và đến năm 1849 đã công bố quan điểm rằng bệnh lan qua nước bị ô nhiễm {snow-pmc}. Thuyết vi trùng, về sau giải thích được bệnh này, khi đó vẫn là quan điểm thiểu số. Louis Pasteur mới đưa ra thuyết này vào năm 1861 {wiki-snow}. Snow chưa biết chính xác tác nhân, nhưng hình thái bệnh chỉ về phía nước.",
+      "heading_fr": "La théorie du mauvais air",
+      "body_fr": "L'opinion dominante voulait que le choléra provînt des miasmes, des vapeurs empoisonnées s'élevant des odeurs nauséabondes {wiki-snow}. Snow en doutait. Jeune apprenti, il avait observé le choléra dans un village de mineurs de charbon, et dès 1849, il publia son hypothèse selon laquelle la maladie se propageait par de l'eau contaminée {wiki-snow}. La théorie microbienne qui allait plus tard l'expliquer demeurait très minoritaire. Louis Pasteur ne la formula qu'en 1861 {wiki-snow}. Snow ignorait l'agent exact, mais la répartition des malades désignait l'eau.",
+      "heading_de": "Eine Theorie der schlechten Luft",
+      "body_de": "Die vorherrschende Ansicht besagte, dass die Cholera durch Miasmen ausgelöst werde – giftige Dämpfe, die üblen Gerüchen entstiegen {wiki-snow}. Snow bezweifelte dies. Als junger Lehrling hatte er die Cholera in einem Kohlebergbaudorf miterlebt, und bereits 1849 veröffentlichte er seine Auffassung, dass sich die Krankheit über verunreinigtes Wasser verbreite {wiki-snow}. Die Keimtheorie, die dies später erklären sollte, war damals noch eine Minderheitenmeinung. Louis Pasteur formulierte sie erst 1861 {wiki-snow}. Snow kannte den genauen Erreger nicht, doch das Muster der Erkrankungen wies auf das Wasser hin.",
+      "heading_es": "Una teoría sobre el aire viciado",
+      "body_es": "La postura predominante sostenía que el cólera procedía del miasma, vapores venenosos emanados de malos olores {wiki-snow}. Snow lo dudaba. De joven aprendiz había visto el cólera en un pueblo minero y, para 1849, ya había publicado su postura de que la enfermedad se propagaba mediante agua contaminada {wiki-snow}. La teoría microbiana que más tarde lo explicaría era todavía una postura minoritaria. Louis Pasteur la propuso recién en 1861 {wiki-snow}. Snow no conocía el agente exacto, pero el patrón de la enfermedad apuntaba al agua."
     },
     {
       "heading_en": "Mapping the deaths",
       "heading_vi": "Vẽ bản đồ những ca tử vong",
       "body_en": "After 31 August, Snow saw the deaths cluster around the Broad Street pump. He drew a dot map and divided the streets into areas closest to each pump. The area nearest the Broad Street pump had the highest cholera rate {wiki-snow}. He also went door to door. [y:61 of the dead] had drunk the pump's water, either regularly or sometimes {snow-pmc}.",
-      "body_vi": "Sau ngày 31 tháng Tám, Snow thấy các ca tử vong tập trung quanh vòi nước phố Broad. Ông vẽ bản đồ chấm và chia đường phố thành các vùng gần từng vòi nước nhất. Vùng gần vòi nước phố Broad có tỷ lệ mắc bệnh tả cao nhất {wiki-snow}. Ông cũng đi từng nhà hỏi thăm. [y:61 người đã mất] từng uống nước từ vòi này, thường xuyên hoặc thỉnh thoảng {snow-pmc}."
+      "body_vi": "Sau ngày 31 tháng Tám, Snow thấy các ca tử vong tập trung quanh vòi nước phố Broad. Ông vẽ bản đồ chấm và chia đường phố thành các vùng gần từng vòi nước nhất. Vùng gần vòi nước phố Broad có tỷ lệ mắc bệnh tả cao nhất {wiki-snow}. Ông cũng đi từng nhà hỏi thăm. [y:61 người đã mất] từng uống nước từ vòi này, thường xuyên hoặc thỉnh thoảng {snow-pmc}.",
+      "heading_fr": "Cartographier les décès",
+      "body_fr": "Après le 31 août, Snow constata que les décès se concentraient autour de la pompe de Broad Street. Il dressa une carte de points et divisa les rues en zones selon leur proximité avec chaque pompe. La zone la plus proche de la pompe de Broad Street affichait le taux de choléra le plus élevé {wiki-snow}. Il fit aussi du porte-à-porte. [y:61 des personnes décédées] avaient bu l'eau de la pompe, régulièrement ou occasionnellement {snow-pmc}.",
+      "heading_de": "Kartierung der Todesfälle",
+      "body_de": "Nach dem 31. August bemerkte Snow, dass sich die Todesfälle um die Pumpe in der Broad Street häuften. Er zeichnete eine Punktkarte und teilte die Straßen in Gebiete ein, die jeweils einer bestimmten Pumpe am nächsten lagen. Das Gebiet, das der Pumpe in der Broad Street am nächsten lag, wies die höchste Cholerarate auf {wiki-snow}. Zudem ging er von Tür zu Tür. [y:61 der Verstorbenen] hatten regelmäßig oder gelegentlich Wasser aus dieser Pumpe getrunken {snow-pmc}.",
+      "heading_es": "El mapa de las muertes",
+      "body_es": "Después del 31 de agosto, Snow observó que las muertes se concentraban en torno a la bomba de Broad Street. Dibujó un mapa de puntos y dividió las calles en áreas según la cercanía a cada bomba. La zona más próxima a la bomba de Broad Street presentaba la mayor tasa de cólera {wiki-snow}. También fue puerta por puerta. [y:61 de los fallecidos] habían bebido agua de esa bomba, ya fuera con regularidad o de manera ocasional {snow-pmc}."
     },
     {
       "heading_en": "The groups that were spared",
       "heading_vi": "Những nhóm không bị ảnh hưởng",
       "body_en": "Some people near the pump were spared, and their habits explained why. The Poland Street workhouse had its own pump-well. Of 535 inmates, only five died of cholera, although houses around it had many deaths {snow-pmc}. More than seventy workers at a nearby brewery did not fall ill. They did not drink the water, and the brewery had its own deep well {snow-pmc}. Each exception matched the same rule: [g:people who drank water from the Broad Street pump got sick].",
-      "body_vi": "Một số người sống gần vòi nước vẫn không bị bệnh, và thói quen của họ giải thích điều đó. Nhà tế bần phố Poland có giếng riêng. Trong số 535 người ở đó, chỉ năm người chết vì bệnh tả, trong khi nhiều nhà xung quanh có nhiều ca tử vong {snow-pmc}. Hơn bảy mươi công nhân của một xưởng bia gần đó không bị bệnh. Họ không uống nước này, và xưởng có giếng sâu riêng {snow-pmc}. Mỗi trường hợp ngoại lệ đều khớp với cùng một quy luật: [g:người uống nước từ vòi phố Broad đã bị bệnh]."
+      "body_vi": "Một số người sống gần vòi nước vẫn không bị bệnh, và thói quen của họ giải thích điều đó. Nhà tế bần phố Poland có giếng riêng. Trong số 535 người ở đó, chỉ năm người chết vì bệnh tả, trong khi nhiều nhà xung quanh có nhiều ca tử vong {snow-pmc}. Hơn bảy mươi công nhân của một xưởng bia gần đó không bị bệnh. Họ không uống nước này, và xưởng có giếng sâu riêng {snow-pmc}. Mỗi trường hợp ngoại lệ đều khớp với cùng một quy luật: [g:người uống nước từ vòi phố Broad đã bị bệnh].",
+      "heading_fr": "Les groupes épargnés",
+      "body_fr": "Certains habitants proches de la pompe furent épargnés, et leurs habitudes en expliquaient la raison. L'hospice de travail de Poland Street disposait de son propre puits à pompe. Sur 535 pensionnaires, cinq seulement moururent du choléra, alors que les maisons environnantes comptaient de nombreux morts {snow-pmc}. Plus de soixante-dix ouvriers d'une brasserie voisine ne tombèrent pas malades. Ils ne buvaient pas cette eau, et la brasserie possédait son propre puits profond {snow-pmc}. Chaque exception confirmait la même règle : [g:les personnes qui buvaient l'eau de la pompe de Broad Street tombaient malades].",
+      "heading_de": "Die verschonten Gruppen",
+      "body_de": "Einige Menschen in der Nähe der Pumpe blieben verschont, und ihre Gewohnheiten lieferten die Erklärung dafür. Das Arbeitshaus in der Poland Street verfügte über einen eigenen Brunnen. Von 535 Insassen starben nur fünf an Cholera, obwohl die umliegenden Häuser zahlreiche Todesopfer zu beklagen hatten {snow-pmc}. Mehr als siebzig Arbeiter einer nahegelegenen Brauerei erkrankten überhaupt nicht. Sie tranken das Wasser nicht, und die Brauerei besaß einen eigenen Tiefbrunnen {snow-pmc}. Jede Ausnahme bestätigte dieselbe Regel: [g:Menschen, die Wasser aus der Pumpe in der Broad Street tranken, erkrankten].",
+      "heading_es": "Los grupos que se salvaron",
+      "body_es": "Algunas personas cercanas a la bomba se salvaron, y sus hábitos explicaron el motivo. El hospicio de Poland Street disponía de su propio pozo con bomba. De 535 internos, solo cinco murieron de cólera, aunque las casas de los alrededores sufrieron muchas muertes {snow-pmc}. Más de setenta trabajadores de una cervecería cercana no enfermaron. No bebían esa agua y la cervecería contaba con un pozo profundo propio {snow-pmc}. Cada excepción coincidía con la misma regla: [g:quienes bebían agua de la bomba de Broad Street enfermaban]."
     },
     {
       "heading_en": "The handle comes off",
       "heading_vi": "Tay cầm bị tháo",
       "body_en": "Snow presented his findings to the local parish board. Many in the parish did not believe him, but the handle of the pump was removed the following day {snow-pmc}. The epidemic was already slowing, partly because residents had fled. By 10 September more than 300 people had died, and during the following week three quarters of the residents of the area had left {wiki-snow}. Snow himself was cautious, because most of the population had already fled and he hesitated to draw conclusions from a neighbourhood that had emptied {wiki-snow}.",
-      "body_vi": "Snow trình bày phát hiện của mình với hội đồng giáo khu. Nhiều người trong giáo khu không tin ông, nhưng tay cầm vòi nước đã bị tháo vào ngày hôm sau {snow-pmc}. Dịch vốn đã chậm lại, một phần vì người dân bỏ đi. Đến ngày 10 tháng Chín, hơn 300 người đã chết, và trong tuần sau đó, ba phần tư cư dân khu vực này đã rời đi {wiki-snow}. Chính Snow cũng thận trọng, vì phần lớn dân cư đã bỏ đi và ông ngần ngại rút ra kết luận từ một khu phố đã vắng người {wiki-snow}."
+      "body_vi": "Snow trình bày phát hiện của mình với hội đồng giáo khu. Nhiều người trong giáo khu không tin ông, nhưng tay cầm vòi nước đã bị tháo vào ngày hôm sau {snow-pmc}. Dịch vốn đã chậm lại, một phần vì người dân bỏ đi. Đến ngày 10 tháng Chín, hơn 300 người đã chết, và trong tuần sau đó, ba phần tư cư dân khu vực này đã rời đi {wiki-snow}. Chính Snow cũng thận trọng, vì phần lớn dân cư đã bỏ đi và ông ngần ngại rút ra kết luận từ một khu phố đã vắng người {wiki-snow}.",
+      "heading_fr": "Le bras de la pompe est retiré",
+      "body_fr": "Snow présenta ses conclusions au conseil paroissial local. Beaucoup de ses membres ne le crurent pas, mais le bras de la pompe fut démonté dès le lendemain {snow-pmc}. L'épidémie ralentissait déjà, en partie parce que les habitants avaient fui. Au 10 septembre, plus de 300 personnes étaient mortes, et au cours de la semaine suivante, les trois quarts des résidents du quartier étaient partis {wiki-snow}. Snow lui-même restait prudent, car la majeure partie de la population s'était déjà enfuie et il hésitait à tirer des conclusions d'un quartier qui s'était vidé {wiki-snow}.",
+      "heading_de": "Der Pumpenschwengel wird abmontiert",
+      "body_de": "Snow präsentierte seine Erkenntnisse dem örtlichen Gemeindevorstand. Viele im Gemeindebezirk glaubten ihm nicht, doch der Schwengel der Pumpe wurde bereits am folgenden Tag abmontiert {snow-pmc}. Die Epidemie schwächte sich zu diesem Zeitpunkt bereits ab, teils weil viele Anwohner geflohen waren. Bis zum 10. September waren mehr als 300 Menschen gestorben, und im Laufe der darauffolgenden Woche hatten drei Viertel der Bewohner die Gegend verlassen {wiki-snow}. Snow selbst blieb vorsichtig, da der Großteil der Bevölkerung bereits geflüchtet war und er davor zurückschreckte, voreilige Schlüsse aus einer entvölkerten Nachbarschaft zu ziehen {wiki-snow}.",
+      "heading_es": "La retirada de la palanca",
+      "body_es": "Snow presentó sus hallazgos ante la junta parroquial local. Muchos en la parroquia no le creyeron, pero al día siguiente se retiró la palanca de la bomba {snow-pmc}. La epidemia ya remitía, en parte porque los residentes habían huido. Para el 10 de septiembre habían muerto más de 300 personas y, durante la semana posterior, tres cuartas partes de los residentes de la zona se habían marchado {wiki-snow}. El propio Snow se mostró prudente, ya que la mayor parte de la población había huido y vacilaba en sacar conclusiones de un vecindario que se había vaciado {wiki-snow}."
     },
     {
       "heading_en": "A test on two water companies",
       "heading_vi": "Một phép thử trên hai công ty cấp nước",
       "body_en": "Snow's stronger evidence came from the water companies. Southwark and Vauxhall drew its supply from a stretch of the Thames polluted with sewage, while Lambeth had moved its intake upstream. Snow showed that houses served by Southwark and Vauxhall had a cholera death rate fourteen times that of houses served by Lambeth {wiki-snow}. Because both companies served rich and poor alike in the same streets, the comparison was close to a natural experiment {wiki-snow}.",
-      "body_vi": "Bằng chứng mạnh hơn của Snow đến từ các công ty cấp nước. Southwark và Vauxhall lấy nước từ một đoạn sông Thames ô nhiễm nước thải, còn Lambeth đã chuyển điểm lấy nước lên thượng nguồn. Snow chỉ ra rằng các nhà được Southwark và Vauxhall cấp nước có tỷ lệ tử vong do tả cao gấp mười bốn lần các nhà được Lambeth cấp nước {wiki-snow}. Vì hai công ty phục vụ cả người giàu lẫn người nghèo trên cùng các con phố, phép so sánh gần như một thí nghiệm tự nhiên {wiki-snow}."
+      "body_vi": "Bằng chứng mạnh hơn của Snow đến từ các công ty cấp nước. Southwark và Vauxhall lấy nước từ một đoạn sông Thames ô nhiễm nước thải, còn Lambeth đã chuyển điểm lấy nước lên thượng nguồn. Snow chỉ ra rằng các nhà được Southwark và Vauxhall cấp nước có tỷ lệ tử vong do tả cao gấp mười bốn lần các nhà được Lambeth cấp nước {wiki-snow}. Vì hai công ty phục vụ cả người giàu lẫn người nghèo trên cùng các con phố, phép so sánh gần như một thí nghiệm tự nhiên {wiki-snow}.",
+      "heading_fr": "Le test des deux compagnies des eaux",
+      "body_fr": "La preuve la plus solide de Snow vint des compagnies des eaux. La compagnie Southwark and Vauxhall puisait son approvisionnement dans un tronçon de la Tamise pollué par les eaux usées, tandis que Lambeth avait déplacé sa prise d'eau en amont. Snow démontra que les foyers desservis par Southwark and Vauxhall affichaient un taux de mortalité dû au choléra quatorze fois supérieur à celui des foyers desservis par Lambeth {wiki-snow}. Comme les deux compagnies approvisionnaient indifféremment riches et pauvres dans les mêmes rues, la comparaison s'apparentait à une expérience naturelle {wiki-snow}.",
+      "heading_de": "Ein Test mit zwei Wassergesellschaften",
+      "body_de": "Snows stichhaltigere Beweise stammten von den Wasserversorgungsunternehmen. Southwark and Vauxhall bezog sein Wasser aus einem mit Abwasser verschmutzten Abschnitt der Themse, während Lambeth seine Entnahmestelle flussaufwärts verlegt hatte. Snow wies nach, dass die von Southwark and Vauxhall versorgten Häuser eine vierzehnmal höhere Cholera-Todesrate aufwiesen als jene, die von Lambeth beliefert wurden {wiki-snow}. Da beide Unternehmen in denselben Straßen wohlhabende wie auch arme Haushalte versorgten, kam der Vergleich einem natürlichen Experiment gleich {wiki-snow}.",
+      "heading_es": "Una prueba con dos compañías de agua",
+      "body_es": "La prueba más sólida de Snow procedió de las compañías de agua. Southwark and Vauxhall captaba su suministro en un tramo del Támesis contaminado con aguas residuales, mientras que Lambeth había trasladado su toma río arriba. Snow demostró que las viviendas abastecidas por Southwark and Vauxhall presentaban una tasa de mortalidad por cólera catorce veces superior a la de las abastecidas por Lambeth {wiki-snow}. Dado que ambas compañías prestaban servicio a ricos y pobres por igual en las mismas calles, la comparación equivalía casi a un experimento natural {wiki-snow}."
     },
     {
       "heading_en": "What the pump did not solve",
       "heading_vi": "Điều chiếc vòi không giải quyết được",
       "body_en": "Removing the handle barely touched the wider epidemic, which went on to claim nearly 3,000 lives in the city {wiki-snow}. Officials had acted under urgent pressure, and afterwards many rejected Snow's theory. Accepting it meant accepting that disease passed by a route most people found too unpleasant to contemplate {wiki-snow}. London's real fix came later. After the Great Stink, Bazalgette's sewers were laid along the Thames in 1864 {snow-pmc}.",
-      "body_vi": "Việc tháo tay cầm gần như không làm thay đổi dịch bệnh rộng lớn hơn, khi bệnh còn cướp đi gần 3.000 sinh mạng trong thành phố {wiki-snow}. Chính quyền hành động dưới áp lực khẩn cấp, và sau đó nhiều người bác bỏ thuyết của Snow. Chấp nhận nó đồng nghĩa với việc chấp nhận bệnh lây theo con đường mà đa số người thấy quá khó chịu để nghĩ tới {wiki-snow}. Giải pháp thật sự cho London đến sau đó. Sau 'Đại hôi thối' trên sông Thames, hệ thống cống của Bazalgette được xây dọc sông vào năm 1864 {snow-pmc}."
+      "body_vi": "Việc tháo tay cầm gần như không làm thay đổi dịch bệnh rộng lớn hơn, khi bệnh còn cướp đi gần 3.000 sinh mạng trong thành phố {wiki-snow}. Chính quyền hành động dưới áp lực khẩn cấp, và sau đó nhiều người bác bỏ thuyết của Snow. Chấp nhận nó đồng nghĩa với việc chấp nhận bệnh lây theo con đường mà đa số người thấy quá khó chịu để nghĩ tới {wiki-snow}. Giải pháp thật sự cho London đến sau đó. Sau 'Đại hôi thối' trên sông Thames, hệ thống cống của Bazalgette được xây dọc sông vào năm 1864 {snow-pmc}.",
+      "heading_fr": "Ce que la pompe n'a pas résolu",
+      "body_fr": "Le retrait du bras de la pompe n'eut que peu d'effet sur l'épidémie globale, qui faucha près de 3 000 vies dans la capitale {wiki-snow}. Les autorités avaient agi dans l'urgence, et beaucoup rejetèrent ensuite la théorie de Snow. L'admettre revenait à reconnaître qu'une maladie se transmettait par une voie que la plupart répugnaient à envisager {wiki-snow}. La véritable solution londonienne arriva plus tard. Après la Grande Puanteur, les égouts conçus par Bazalgette furent aménagés le long de la Tamise en 1864 {snow-pmc}.",
+      "heading_de": "Was die Pumpe nicht löste",
+      "body_de": "Das Abmontieren des Schwengels hatte kaum Auswirkungen auf die weiter reichende Epidemie, die in der Stadt letztlich fast 3.000 Menschenleben forderte {wiki-snow}. Die Behörden hatten unter akutem Handlungsdruck gehandelt, und im Nachhinein lehnten viele Snows Theorie ab. Sie anzuerkennen bedeutete einzuräumen, dass sich die Krankheit auf einem Weg übertrug, über den die meisten Menschen lieber gar nicht nachdenken mochten {wiki-snow}. Die eigentliche Lösung für London folgte erst später. Nach dem Great Stink wurden 1864 entlang der Themse Bazalgettes Abwasserkanäle verlegt {snow-pmc}.",
+      "heading_es": "Lo que la bomba no resolvió",
+      "body_es": "Retirar la palanca apenas afectó a la epidemia general, que llegó a cobrarse casi 3000 vidas en la ciudad {wiki-snow}. Las autoridades habían actuado bajo una presión apremiante y, con posterioridad, muchas rechazaron la teoría de Snow. Aceptarla implicaba admitir que la enfermedad se transmitía por una vía que a la mayoría le resultaba demasiado desagradable de contemplar {wiki-snow}. La verdadera solución para Londres llegó después. Tras el Gran Hedor, en 1864 se construyó la red de alcantarillado de Bazalgette a lo largo del Támesis {snow-pmc}."
     },
     {
       "heading_en": "Checking the theory elsewhere",
       "heading_vi": "Kiểm chứng thuyết ở những nơi khác",
       "body_en": "Snow tested his idea beyond Soho. In Deptford, residents found their water had turned impure, and Snow concluded that a leak let sewage seep into the supply, much like the Broad Street case {wiki-snow}. In a later check, cholera stopped in London prisons only a few days after they switched to cleaner water {wiki-snow}. The Broad Street well itself was later found to sit three feet from an old cesspit that had begun leaking faecal bacteria {wiki-snow}.",
-      "body_vi": "Snow kiểm tra ý tưởng của mình vượt ra ngoài Soho. Ở Deptford, cư dân thấy nước của họ đã trở nên ô nhiễm, và Snow kết luận rằng một chỗ rò rỉ đã để nước thải thấm vào nguồn cấp, giống như trường hợp phố Broad {wiki-snow}. Trong một lần kiểm tra sau đó, bệnh tả ở các nhà tù London ngừng lại chỉ vài ngày sau khi họ chuyển sang nguồn nước sạch hơn {wiki-snow}. Giếng phố Broad sau này còn được phát hiện nằm cách một hố xí cũ ba feet, và hố này đã bắt đầu rò rỉ vi khuẩn từ phân {wiki-snow}."
+      "body_vi": "Snow kiểm tra ý tưởng của mình vượt ra ngoài Soho. Ở Deptford, cư dân thấy nước của họ đã trở nên ô nhiễm, và Snow kết luận rằng một chỗ rò rỉ đã để nước thải thấm vào nguồn cấp, giống như trường hợp phố Broad {wiki-snow}. Trong một lần kiểm tra sau đó, bệnh tả ở các nhà tù London ngừng lại chỉ vài ngày sau khi họ chuyển sang nguồn nước sạch hơn {wiki-snow}. Giếng phố Broad sau này còn được phát hiện nằm cách một hố xí cũ ba feet, và hố này đã bắt đầu rò rỉ vi khuẩn từ phân {wiki-snow}.",
+      "heading_fr": "Vérifier la théorie ailleurs",
+      "body_fr": "Snow testa son hypothèse au-delà de Soho. À Deptford, des habitants constatèrent que leur eau s'était altérée, et Snow en déduisit qu'une fuite laissait s'infiltrer des eaux usées dans le réseau de distribution, à l'image du cas de Broad Street {wiki-snow}. Lors d'une vérification ultérieure, le choléra cessa dans les prisons de Londres quelques jours à peine après leur passage à une eau plus propre {wiki-snow}. On découvrit plus tard que le puits de Broad Street se trouvait à seulement trois pieds d'une ancienne fosse d'aisances qui fuyait et laissait échapper des bactéries fécales {wiki-snow}.",
+      "heading_de": "Überprüfung der Theorie an anderen Orten",
+      "body_de": "Snow prüfte seine These auch außerhalb von Soho. In Deptford stellten Anwohner fest, dass ihr Wasser verunreinigt war, und Snow folgerte, dass ein Leck Abwasser in die Versorgung einsickern ließ, ganz ähnlich wie im Fall der Broad Street {wiki-snow}. Bei einer späteren Untersuchung endete die Cholera in Londoner Gefängnissen nur wenige Tage nach der Umstellung auf saubereres Wasser {wiki-snow}. Wie sich später herausstellte, lag der Brunnen in der Broad Street selbst nur drei Fuß von einer alten Sickergrube entfernt, aus der fäkale Bakterien austraten {wiki-snow}.",
+      "heading_es": "Comprobación de la teoría en otros lugares",
+      "body_es": "Snow puso a prueba su idea más allá de Soho. En Deptford, los residentes descubrieron que su agua se había vuelto impura, y Snow concluyó que una fuga permitía que las aguas residuales se filtraran en el suministro, de forma muy parecida al caso de Broad Street {wiki-snow}. En una verificación posterior, el cólera remitió en las prisiones de Londres apenas unos días después de cambiar a un suministro de agua más limpia {wiki-snow}. Más adelante se descubrió que el propio pozo de Broad Street se hallaba a solo tres pies de un antiguo pozo negro que había comenzado a filtrar bacterias fecales {wiki-snow}."
     }
   ],
   "keyPoint": {
     "en": "[p:Snow traced a disease to its source by mapping who fell ill and comparing groups that drank different water.] His map and his comparisons still underpin outbreak investigation, but officials rejected his explanation for years. A clear pattern can point to a cause long before anyone can explain the mechanism.",
-    "vi": "[p:Snow truy ra nguồn bệnh bằng cách vẽ bản đồ những người đổ bệnh và so sánh các nhóm uống nước khác nhau.] Bản đồ và phép so sánh của ông vẫn là nền tảng để điều tra ổ dịch, nhưng chính quyền đã bác bỏ lời giải thích của ông trong nhiều năm. Một quy luật rõ ràng có thể chỉ ra nguyên nhân rất lâu trước khi ai đó giải thích được cơ chế."
+    "vi": "[p:Snow truy ra nguồn bệnh bằng cách vẽ bản đồ những người đổ bệnh và so sánh các nhóm uống nước khác nhau.] Bản đồ và phép so sánh của ông vẫn là nền tảng để điều tra ổ dịch, nhưng chính quyền đã bác bỏ lời giải thích của ông trong nhiều năm. Một quy luật rõ ràng có thể chỉ ra nguyên nhân rất lâu trước khi ai đó giải thích được cơ chế.",
+    "fr": "[p:Snow a identifié la source d'une maladie en cartographiant les malades et en comparant des groupes consommant des eaux différentes.] Sa carte et ses comparaisons étayent toujours les enquêtes épidémiologiques, mais les autorités ont rejeté son explication pendant des années. Une tendance nette peut révéler une cause bien avant qu'on n'en comprenne le mécanisme.",
+    "de": "[p:Snow führte eine Krankheit auf ihren Ursprung zurück, indem er erfasste, wer erkrankte, und Gruppen verglich, die unterschiedliches Wasser tranken.] Seine Karte und seine Vergleiche bilden bis heute das Fundament von Ausbruchsuntersuchungen, doch die Behörden wiesen seine Erklärung jahrelang zurück. Ein klares Muster kann auf eine Ursache hindeuten, lange bevor jemand den genauen Mechanismus erklären kann.",
+    "es": "[p:Snow rastreó una enfermedad hasta su origen cartografiando quién enfermaba y comparando grupos que consumían agua distinta.] Su mapa y sus comparaciones siguen sustentando la investigación de brotes, aunque las autoridades rechazaron su explicación durante años. Un patrón claro puede señalar una causa mucho antes de que se logre explicar el mecanismo."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Liệt kê những người bạn biết đã bị ốm tháng trước và điểm chung của họ, như bữa ăn, đồ uống hay địa điểm.",
       "Tìm xem nước uống ở nhà bạn lấy từ đâu và nguồn cấp có thay đổi gần đây không.",
       "Đọc chương của NIH về công trình của Snow và ghi lại phép so sánh ông dùng để kiểm tra giả thuyết."
+    ],
+    "fr": [
+      "Dressez la liste de vos proches tombés malades le mois dernier et cherchez leurs points communs, comme un repas, une boisson ou un lieu.",
+      "Renseignez-vous sur la provenance de l'eau potable de votre domicile et vérifiez si son approvisionnement a récemment changé.",
+      "Lisez le chapitre des NIH consacré aux travaux de Snow et notez quelle comparaison il a employée pour tester son idée."
+    ],
+    "de": [
+      "Erstelle eine Liste der Personen, die du kennst und die im letzten Monat krank waren, sowie deren Gemeinsamkeiten, etwa eine Mahlzeit, ein Getränk oder ein Ort.",
+      "Finde heraus, woher das Trinkwasser in deinem Zuhause stammt und ob sich die Versorgung in letzter Zeit geändert hat.",
+      "Lies das Kapitel der NIH über Snows Arbeit und notiere dir, welchen Vergleich er heranzog, um seine These zu überprüfen."
+    ],
+    "es": [
+      "Haz una lista de las personas conocidas que hayan enfermado el mes pasado e identifica qué tenían en común, como una comida, una bebida o un lugar.",
+      "Averigua de dónde procede el agua potable de tu hogar y si el suministro ha experimentado cambios recientes.",
+      "Lee el capítulo de los NIH sobre el trabajo de Snow y anota qué comparación utilizó para poner a prueba su idea."
     ]
   },
   "references": [
@@ -100,12 +166,90 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/john-snow-broad-street-pump.webp",
+    "url": "https://images.unsplash.com/2/09.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODkxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Paul Jarvis",
+    "author": "p j",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/NYDo21ssGao"
+    "sourceUrl": "https://unsplash.com/photos/NYDo21ssGao",
+    "wide": "https://images.unsplash.com/2/09.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODkxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@pjrvs?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAwBACdASoQABwAPu1Ct1apoqakGAEwHYljAKj1iwTtcN26XUjZ9AjzlmgA/uNQIdxxWdahvu8OZ7rd2baULIFRvzgva9eXLbaoX3y5fmxFzDppNBJlS/q/onVHvQ7dFKRHNWbtDkts6sctdE6U97l+mTy0Kzbq+jZdC5fw/s6C8opFWYPRCzX0ej3h/7ZLg19LfwQmFRLsxI6tcp58/N2LhOxLVAMJJmH51iQA",
-  "dominant": "#3d4a45"
+  "dominant": "#3d4a45",
+  "glossary": {
+    "en": {
+      "cholera": "A severe bacterial disease causing extreme dehydration and diarrhoea, typically spread through contaminated drinking water.",
+      "parish": "A local administrative and church district responsible for civil governance, public health, and poor relief.",
+      "miasma": "An outdated medical belief that diseases were caused and transmitted by toxic vapours from rotting matter.",
+      "germ theory": "The scientific concept that specific infectious diseases are caused by microscopic organisms invading living hosts.",
+      "dot map": "A thematic map using plotted dots to display the geographic distribution and density of cases or deaths.",
+      "workhouse": "A public institution providing basic shelter and food to destitute people in exchange for manual labour.",
+      "natural experiment": "An observational study where naturally occurring conditions create comparison groups that resemble a controlled experiment.",
+      "great stink": "An 1858 London event where hot weather caused untreated sewage in the Thames to smell overwhelmingly foul.",
+      "cesspit": "An underground pit or tank used to collect household sewage and wastewater before modern sewers existed.",
+      "faecal bacteria": "Microscopic organisms originating in intestinal waste, indicating hazardous sewage contamination when found in water supplies."
+    },
+    "vi": {
+      "bệnh tả": "Bệnh truyền nhiễm đường ruột nguy hiểm gây tiêu chảy cấp và mất nước nghiêm trọng.",
+      "khí độc": "Quan niệm cũ cho rằng hơi ô nhiễm bốc lên từ chất bẩn gây dịch bệnh.",
+      "thuyết vi trùng": "Thuyết y học khẳng định vi sinh vật là nguyên nhân lây truyền bệnh tật.",
+      "bản đồ chấm": "Bản đồ trực quan hóa số liệu bằng các chấm ghi nhận từng ca tử vong.",
+      "nhà tế bần": "Cơ sở từ thiện nuôi dưỡng người nghèo khó và vô gia cư tại Anh.",
+      "giáo khu": "Đơn vị hành chính và tôn giáo quản lý khu dân cư tại Anh thời đó.",
+      "đại hôi thối": "Biến cố ô nhiễm nghiêm trọng khiến sông Thames bốc mùi hôi nồng nặc năm 1858.",
+      "hệ thống cống": "Công trình thoát nước ngầm dẫn nước thải sinh hoạt ra xa khu dân cư.",
+      "tác nhân": "Vi khuẩn hoặc yếu tố trực tiếp tạo ra và làm bùng phát bệnh tật.",
+      "hố xí": "Hầm chứa phân và chất thải sinh hoạt đào thủ công thời xưa.",
+      "ổ dịch": "Khu vực tập trung nhiều ca lây nhiễm bệnh cần được khoanh vùng điều tra."
+    },
+    "fr": {
+      "miasmes": "Émanations autrefois jugées responsables de la transmission de maladies infectieuses par l'air.",
+      "théorie microbienne": "Conception scientifique selon laquelle des micro-organismes provoquent des maladies infectieuses.",
+      "carte de points": "Carte géographique représentant la fréquence ou la localisation de données par des points distincts.",
+      "hospice de travail": "Établissement public britannique hébergeant et faisant travailler les personnes indigentes au XIXe siècle.",
+      "conseil paroissial": "Assemblée locale chargée à l'époque de l'administration civile et religieuse du quartier.",
+      "expérience naturelle": "Situation où les conditions réelles créent spontanément deux groupes comparables sans intervention.",
+      "grande puanteur": "Épisode de pollution extrême à Londres à l'été 1858 dû aux odeurs de la Tamise.",
+      "fosse d'aisances": "Cavité souterraine destinée à recueillir les déjections humaines avant l'avènement des égouts.",
+      "bactéries fécales": "Micro-organismes issus des déjections, indicateurs fréquents de la contamination de l'eau.",
+      "nih": "Agences gouvernementales américaines responsables de la recherche biomédicale et de santé publique."
+    },
+    "de": {
+      "miasmen": "Historische Annahme giftiger Dämpfe aus Fäulnisprozessen als Auslöser verheerender Seuchen.",
+      "keimtheorie": "Wissenschaftliche Lehre, dass Infektionskrankheiten durch mikroskopisch kleine Organismen wie Bakterien hervorgerufen werden.",
+      "punktkarte": "Thematische Karte, die Verteilung und Häufung von Ereignissen mithilfe einzelner Punkte visualisiert.",
+      "arbeitshaus": "Historische Einrichtung in Großbritannien zur Unterbringung und Beschäftigung mittelloser Menschen.",
+      "tiefbrunnen": "Brunnenanlage, die Grundwasser aus tiefer gelegenen Schichten fördert, geschützt vor Verunreinigungen an der Oberfläche.",
+      "natürlichen experiment": "Beobachtbare Realsituation, deren Bedingungen einer wissenschaftlichen Kontrollstudie ähneln, ohne künstlich herbeigeführt worden zu sein.",
+      "great stink": "Ereignis im Sommer 1858 mit unerträglicher Geruchsbelästigung durch ungeklärte Londoner Abwässer in der Themse.",
+      "sickergrube": "Unterirdischer Schacht zur Aufnahme und allmählichen Versickerung ungeklärter menschlicher Fäkalien und Abwässer.",
+      "fäkale bakterien": "Darmbakterien, deren Vorkommen im Trinkwasser eine gefährliche Verunreinigung durch menschliche Fäkalien anzeigt.",
+      "ausbruchsuntersuchungen": "Epidemiologische Ermittlungsmethoden zur Feststellung der Ursachen, Quellen und Übertragungswege plötzlicher Krankheitswellen.",
+      "nih": "National Institutes of Health, die oberste Behörde der USA für biomedizinische Forschung."
+    },
+    "es": {
+      "cólera": "Enfermedad infecciosa intestinal aguda transmitida principalmente por agua contaminada.",
+      "bomba pública": "Mecanismo comunitario manual para extraer agua de un pozo subterráneo.",
+      "miasma": "Antigua creencia de que emanaciones fétidas transmitían enfermedades epidémicas.",
+      "teoría microbiana": "Postulado científico que atribuye las enfermedades infecciosas a microorganismos específicos.",
+      "mapa de puntos": "Representación cartográfica que ubica casos individuales mediante puntos para visualizar concentraciones.",
+      "hospicio": "Institución pública británica de acogida para personas indigentes o sin recursos.",
+      "experimento natural": "Estudio observacional donde las condiciones de exposición se determinan por factores externos imprevistos.",
+      "gran hedor": "Grave episodio de pestilencia en Londres en 1858 provocado por el río Támesis.",
+      "pozo negro": "Excavación subterránea destinada a acumular aguas residuales y excrementos sin tratamiento.",
+      "bacterias fecales": "Microorganismos presentes en desechos intestinales que contaminan fuentes de agua potable.",
+      "nih": "Institutos Nacionales de la Salud, principal agencia de investigación biomédica de Estados Unidos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

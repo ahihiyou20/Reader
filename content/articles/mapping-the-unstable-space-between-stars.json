@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Mapping the Unstable Space Between Stars",
-    "vi": "Bản đồ mới về không gian trống thách thức hình ảnh tĩnh lặng của thiên hà"
+    "vi": "Bản đồ mới về không gian trống thách thức hình ảnh tĩnh lặng của thiên hà",
+    "fr": "Cartographie de l'espace instable entre les étoiles",
+    "de": "Die Kartierung des instabilen Raums zwischen den Sternen",
+    "es": "Cartografía del espacio inestable entre las estrellas"
   },
   "hook": {
     "en": "For decades, scientists viewed the matter between stars as a quiet, unchanging backdrop. Recent three-dimensional maps are challenging that view, revealing that much of the galactic space is actually in a constant state of restless flux. This unexpected discovery could finally solve long-standing mysteries regarding how stars are born in our galaxy {Quanta Magazine}.",
-    "vi": "Trong nhiều thập kỷ, các nhà khoa học coi vật chất giữa các vì sao là một phông nền tĩnh lặng, không thay đổi. Các bản đồ ba chiều gần đây đang thách thức quan điểm đó, tiết lộ rằng phần lớn không gian thiên hà thực sự ở trong trạng thái biến đổi liên tục. Khám phá bất ngờ này cuối cùng có thể giải quyết những bí ẩn lâu nay về cách các ngôi sao được sinh ra trong thiên hà của chúng ta {Quanta Magazine}."
+    "vi": "Trong nhiều thập kỷ, các nhà khoa học coi vật chất giữa các vì sao là một phông nền tĩnh lặng, không thay đổi. Các bản đồ ba chiều gần đây đang thách thức quan điểm đó, tiết lộ rằng phần lớn không gian thiên hà thực sự ở trong trạng thái biến đổi liên tục. Khám phá bất ngờ này cuối cùng có thể giải quyết những bí ẩn lâu nay về cách các ngôi sao được sinh ra trong thiên hà của chúng ta {Quanta Magazine}.",
+    "fr": "Pendant des décennies, les scientifiques ont perçu la matière séparant les étoiles comme une toile de fond calme et immuable. De récentes cartes en trois dimensions remettent en cause cette vision, révélant qu'une grande partie de l'espace galactique est en réalité en perpétuelle effervescence. Cette découverte inattendue pourrait enfin élucider de vieux mystères entourant la formation des étoiles dans notre galaxie {Quanta Magazine}.",
+    "de": "Jahrzehntelang betrachtete die Wissenschaft die Materie zwischen den Sternen als ruhige, unveränderliche Kulisse. Neuere dreidimensionale Karten stellen diese Sichtweise infrage und zeigen, dass sich ein Großteil des galaktischen Raums in einem ständigen, unruhigen Wandel befindet. Diese unerwartete Entdeckung könnte endlich langjährige Rätsel darüber lösen, wie Sterne in unserer Galaxie entstehen {Quanta Magazine}.",
+    "es": "Durante décadas, los científicos consideraron la materia entre las estrellas como un telón de fondo tranquilo e inmutable. Recientes mapas tridimensionales están desafiando esa visión, revelando que gran parte del espacio galáctico se encuentra en realidad en un constante estado de agitación incesante. Este inesperado descubrimiento podría por fin resolver antiguos misterios sobre cómo nacen las estrellas en nuestra galaxia {Quanta Magazine}."
   },
   "sections": [
     {
       "heading_en": "The Two-State View",
       "heading_vi": "Góc nhìn hai trạng thái",
       "body_en": "Space contains a diffuse mist of hydrogen and helium left over from the Big Bang and stellar events. Traditional models assumed this interstellar medium existed in two stable states: cold clouds around 100 kelvins or warm diffuse clouds near 8,000 kelvins. Theorists believed atoms transitioned instantly between these phases, leaving essentially no intermediate material behind in textbooks. {source}",
-      "body_vi": "Không gian chứa một lớp sương mù khuếch tán gồm hydro và heli từ Vụ Nổ Lớn và các sự kiện của sao. Các mô hình truyền thống cho rằng môi trường liên sao (*interstellar medium*) này tồn tại ở hai trạng thái ổn định: mây lạnh khoảng 100 kelvin hoặc mây ấm gần 8.000 kelvin. Các nhà lý thuyết tin rằng nguyên tử chuyển đổi tức thời giữa các pha này."
+      "body_vi": "Không gian chứa một lớp sương mù khuếch tán gồm hydro và heli từ Vụ Nổ Lớn và các sự kiện của sao. Các mô hình truyền thống cho rằng môi trường liên sao (*interstellar medium*) này tồn tại ở hai trạng thái ổn định: mây lạnh khoảng 100 kelvin hoặc mây ấm gần 8.000 kelvin. Các nhà lý thuyết tin rằng nguyên tử chuyển đổi tức thời giữa các pha này.",
+      "heading_fr": "Le modèle à deux états",
+      "body_fr": "L'espace renferme une brume diffuse d'hydrogène et d'hélium issue du Big Bang et de phénomènes stellaires. Les modèles traditionnels supposaient que ce milieu interstellaire existait sous deux états stables : des nuages froids à environ 100 kelvins ou des nuages chauds et diffus avoisinant 8 000 kelvins. Les théoriciens estimaient que les atomes transitaient instantanément d'une phase à l'autre, ne laissant pratiquement aucune matière intermédiaire dans les manuels. {source}",
+      "heading_de": "Das Zwei-Zustände-Modell",
+      "body_de": "Der Weltraum enthält einen diffusen Schleier aus Wasserstoff und Helium – Überbleibsel des Urknalls und stellarer Ereignisse. Traditionelle Modelle gingen davon aus, dass dieses interstellare Medium in zwei stabilen Zuständen existiert: kalte Wolken bei etwa 100 Kelvin oder warme diffuse Wolken bei rund 8.000 Kelvin. Theoretiker nahmen an, dass Atome augenblicklich zwischen diesen Phasen wechselten, sodass in Lehrbüchern praktisch kein Übergangsmaterial beschrieben wurde. {source}",
+      "heading_es": "La visión de dos estados",
+      "body_es": "El espacio contiene una niebla difusa de hidrógeno y helio remanente del Big Bang y de eventos estelares. Los modelos tradicionales asumían que este medio interestelar existía en dos estados estables: nubes frías a unos 100 kelvins o nubes difusas y cálidas cerca de 8.000 kelvins. Los teóricos creían que los átomos pasaban instantáneamente de una fase a otra, sin dejar prácticamente ningún material intermedio en los libros de texto. {source}"
     },
     {
       "heading_en": "New Three-Dimensional Maps",
       "heading_vi": "Bản đồ ba chiều mới",
       "body_en": "New technological advances have transformed how astronomers study this hidden material. By combining massive datasets from space telescopes, researchers mapped both dust density and ultraviolet radiation across thousands of light-years. These advanced three-dimensional models allowed scientists to calculate temperatures throughout our galactic neighborhood with unprecedented precision.",
-      "body_vi": "Những tiến bộ công nghệ mới đã biến đổi cách các nhà thiên văn học nghiên cứu vật liệu ẩn này. Bằng cách kết hợp các tập dữ liệu lớn từ kính viễn thông không gian, các nhà nghiên cứu đã Lập bản đồ mật độ bụi và bức xạ cực tím. Các mô hình ba chiều tiên tiến này cho phép các nhà khoa học tính toán nhiệt độ với độ chính xác chưa từng có."
+      "body_vi": "Những tiến bộ công nghệ mới đã biến đổi cách các nhà thiên văn học nghiên cứu vật liệu ẩn này. Bằng cách kết hợp các tập dữ liệu lớn từ kính viễn thông không gian, các nhà nghiên cứu đã Lập bản đồ mật độ bụi và bức xạ cực tím. Các mô hình ba chiều tiên tiến này cho phép các nhà khoa học tính toán nhiệt độ với độ chính xác chưa từng có.",
+      "heading_fr": "De nouvelles cartes en trois dimensions",
+      "body_fr": "Les progrès technologiques récents ont métamorphosé la manière dont les astronomes étudient cette matière dérobée au regard. En combinant d'immenses jeux de données issus de télescopes spatiaux, des chercheurs ont cartographié tant la densité de poussière que le rayonnement ultraviolet sur des milliers d'années-lumière. Ces modèles tridimensionnels perfectionnés ont permis aux scientifiques de calculer les températures au sein de notre voisinage galactique avec une précision sans précédent.",
+      "heading_de": "Neue dreidimensionale Karten",
+      "body_de": "Neue technologische Fortschritte haben die Art und Weise verändert, wie Astronomen diese verborgene Materie erforschen. Durch die Kombination riesiger Datensätze von Weltraumteleskopen kartierten Forschende sowohl die Staubdichte als auch die Ultraviolettstrahlung über Tausende von Lichtjahren hinweg. Diese fortschrittlichen dreidimensionalen Modelle ermöglichten es der Wissenschaft, Temperaturen in unserer galaktischen Nachbarschaft mit beispielloser Präzision zu berechnen.",
+      "heading_es": "Nuevos mapas tridimensionales",
+      "body_es": "Los nuevos avances tecnológicos han transformado la forma en que los astrónomos estudian este material oculto. Al combinar ingentes conjuntos de datos procedentes de telescopios espaciales, los investigadores cartografiaron tanto la densidad del polvo como la radiación ultravioleta a través de miles de años luz. Estos avanzados modelos tridimensionales permitieron a los científicos calcular las temperaturas en todo nuestro vecindario galáctico con una precisión sin precedentes."
     },
     {
       "heading_en": "A Restless Medium",
       "heading_vi": "Một môi trường không yên tĩnh",
       "body_en": "To the surprise of researchers, the new analysis revealed that forty-one percent of the local interstellar medium sits firmly in a forbidden, unstable zone. Rather than forming a calm backdrop, this midrange material creates massive blankets wrapping around cold clouds. Experts suggest this turbulent churning helps explain why star formation remains remarkably inefficient in galaxies.",
-      "body_vi": "Đến ngạc nhiên của các nhà nghiên cứu, phân tích mới cho thấy bốn mươi mốt phần trăm môi trường liên sao cục bộ nằm chắc chắn trong một vùng không ổn định bị cấm. Thay vì tạo ra một phông nền tĩnh lặng, vật liệu ở mức trung bình này tạo ra các lớp chăn khổng lồ bao bọc quanh các đám mây lạnh."
+      "body_vi": "Đến ngạc nhiên của các nhà nghiên cứu, phân tích mới cho thấy bốn mươi mốt phần trăm môi trường liên sao cục bộ nằm chắc chắn trong một vùng không ổn định bị cấm. Thay vì tạo ra một phông nền tĩnh lặng, vật liệu ở mức trung bình này tạo ra các lớp chăn khổng lồ bao bọc quanh các đám mây lạnh.",
+      "heading_fr": "Un milieu en perpétuel mouvement",
+      "body_fr": "À la grande surprise des chercheurs, cette nouvelle analyse a révélé que quarante et un pour cent du milieu interstellaire local se trouve résolument dans une zone instable et « interdite ». Loin de constituer un arrière-plan paisible, cette matière intermédiaire forme d'immenses manteaux enveloppant les nuages froids. Selon les spécialistes, ce brassage turbulent contribue à expliquer pourquoi la formation stellaire demeure si peu efficace dans les galaxies.",
+      "heading_de": "Ein unruhiges Medium",
+      "body_de": "Zur Überraschung der Forschenden ergab die neue Analyse, dass einundvierzig Prozent des lokalen interstellaren Mediums fest in einer verbotenen, instabilen Zone liegen. Anstatt eine ruhige Kulisse zu bilden, erzeugt dieses Material mittlerer Temperatur gewaltige Hüllen, die sich um kalte Wolken legen. Fachleute vermuten, dass diese turbulente Durchmischung erklärt, warum die Sternentstehung in Galaxien bemerkenswert ineffizient bleibt.",
+      "heading_es": "Un medio inquieto",
+      "body_es": "Para sorpresa de los investigadores, el nuevo análisis reveló que el cuarenta y uno por ciento del medio interestelar local se encuentra firmemente en una zona inestable y prohibida. En lugar de formar un telón de fondo tranquilo, este material intermedio crea enormes mantos que envuelven las nubes frías. Los expertos sugieren que esta turbulenta agitación ayuda a explicar por qué la formación estelar sigue siendo notablemente ineficiente en las galaxias."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/716/1080/1920",
+    "url": "https://images.unsplash.com/reserve/AXx3QORhRDKAMrbb8pX4_photo%202.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Matthew Kosloski",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/BT_BUEwjeQg"
+    "sourceUrl": "https://unsplash.com/photos/BT_BUEwjeQg",
+    "wide": "https://images.unsplash.com/reserve/AXx3QORhRDKAMrbb8pX4_photo%202.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@matthew?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -68,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Think of the space between stars as a bustling [p:metabolic highway] rather than an empty room; how might continuous heating and cooling shape the universe around us?",
-    "vi": "Hãy coi không gian giữa các vì sao như một [p:đường cao tốc trao đổi chất] nhộn nhịp thay vì một căn phòng trống; việc nung nóng và làm mát liên tục có thể định hình vũ trụ xung quanh chúng ta như thế nào?"
+    "vi": "Hãy coi không gian giữa các vì sao như một [p:đường cao tốc trao đổi chất] nhộn nhịp thay vì một căn phòng trống; việc nung nóng và làm mát liên tục có thể định hình vũ trụ xung quanh chúng ta như thế nào?",
+    "fr": "Voyez l'espace entre les étoiles comme une [p:autoroute métabolique] foisonnante plutôt que comme une pièce vide ; comment ces cycles continus de réchauffement et de refroidissement pourraient-ils façonner l'Univers qui nous entoure ?",
+    "de": "Man stelle sich den Raum zwischen den Sternen eher als geschäftige [p:Stoffwechselautobahn] denn als leeren Raum vor; wie könnten kontinuierliches Aufheizen und Abkühlen das Universum um uns herum formen?",
+    "es": "Piense en el espacio entre las estrellas como una bulliciosa [p:autopista metabólica] en lugar de una habitación vacía; ¿cómo podrían el calentamiento y el enfriamiento continuos moldear el universo que nos rodea?"
   },
   "applySteps": {
     "en": [
@@ -80,6 +109,21 @@
       "Xem xét các khám phá mới của kính viễn thông không gian trực tuyến.",
       "So sánh các lý thuyết sách giáo khoa truyền thống với các phát hiện mới.",
       "Thảo luận về cách lập bản đồ thiên hà thay đổi quan点 về không gian."
+    ],
+    "fr": [
+      "Explorer en ligne les récentes découvertes des télescopes spatiaux.",
+      "Comparer les théories classiques des manuels aux nouvelles observations.",
+      "Échanger sur la façon dont la cartographie galactique transforme notre vision de l'espace."
+    ],
+    "de": [
+      "Neueste Entdeckungen von Weltraumteleskopen online recherchieren.",
+      "Traditionelle Lehrbuchtheorien mit den neuen Erkenntnissen vergleichen.",
+      "Diskutieren, wie galaktische Kartierungen den Blick auf den Weltraum verändern."
+    ],
+    "es": [
+      "Examine en línea los descubrimientos recientes de los telescopios espaciales.",
+      "Compare las teorías tradicionales de los libros de texto con los nuevos hallazgos.",
+      "Debata sobre cómo la cartografía galáctica transforma nuestra visión del espacio."
     ]
   },
   "coverCandidates": [
@@ -116,9 +160,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "interstellar medium": "The diffuse matter, mostly gas and dust, filling the space between stars within a galaxy.",
+      "big bang": "The primordial cosmic event marking the origin and initial expansion of the observable universe.",
+      "stellar events": "Astronomical processes involving stars, such as explosions and ejections of enriched material into space.",
+      "kelvins": "The standard scientific base unit of thermodynamic temperature, starting at absolute zero.",
+      "space telescopes": "Astronomical observatories operating in orbit above Earth's atmosphere to collect clear celestial data.",
+      "dust density": "The concentration of microscopic solid grains suspended within a given volume of cosmic space.",
+      "ultraviolet radiation": "High-energy electromagnetic light emitted by hot stars that ionizes and heats surrounding gas.",
+      "light-years": "Astronomical units of distance measuring how far light travels through a vacuum in one year.",
+      "unstable zone": "An intermediate temperature range where cosmic gas cannot settle into thermodynamic equilibrium.",
+      "star formation": "The process by which dense regions within interstellar clouds collapse to create new stars.",
+      "turbulent churning": "Chaotic fluid motion of interstellar gas mixing different thermal phases together."
+    },
+    "vi": {
+      "thiên hà": "Hệ thống khổng lồ gồm hàng tỷ ngôi sao, khí, bụi và vật chất tối.",
+      "hydro": "Nguyên tố hóa học phong phú nhất trong vũ trụ và môi trường liên sao.",
+      "heli": "Nguyên tố khí nhẹ thứ hai trong vũ trụ, hình thành từ Vụ Nổ Lớn.",
+      "vụ nổ lớn": "Biến cố khởi đầu quá trình hình thành và giãn nở của vũ trụ.",
+      "interstellar medium": "Môi trường vật chất gồm khí và bụi nằm giữa các ngôi sao.",
+      "kelvin": "Đơn vị đo nhiệt độ trong thang nhiệt độ tuyệt đối của vật lý.",
+      "nguyên tử": "Hạt vi mô cấu tạo nên các nguyên tố như hydro và heli.",
+      "pha": "Trạng thái tồn tại nhiệt độ và mật độ cụ thể của vật chất.",
+      "mật độ bụi": "Mức độ tập trung của các hạt bụi trong một thể tích không gian.",
+      "cực tím": "Vùng bức xạ điện từ có bước sóng ngắn hơn ánh sáng nhìn thấy.",
+      "trao đổi chất": "Quá trình nung nóng và làm mát luân phiên diễn ra trong không gian."
+    },
+    "fr": {
+      "milieu interstellaire": "Matière gazeuse et poussière occupant l'espace situé entre les étoiles au sein d'une galaxie.",
+      "big bang": "Modèle cosmologique décrivant l'expansion initiale et l'évolution de l'Univers observable.",
+      "kelvins": "Unité de mesure absolue de la température thermodynamique, dont le zéro correspond au zéro absolu.",
+      "rayonnement ultraviolet": "Rayonnement électromagnétique énergétique émis par les étoiles, de longueur d'onde plus courte que la lumière visible.",
+      "années-lumière": "Unité de distance astronomique correspondant au trajet parcouru par la lumière dans le vide en un an.",
+      "voisinage galactique": "Région de la Voie lactée située à proximité directe de notre Système solaire.",
+      "zone instable": "État thermique transitoire dans lequel le gaz ne peut se maintenir durablement en équilibre.",
+      "brassage turbulent": "Mouvements désordonnés et incessants agitant le gaz interstellaire et régulant sa dynamique.",
+      "formation stellaire": "Processus astrophysique par lequel le gaz dense s'effondre sous sa propre gravité pour créer des étoiles.",
+      "autoroute métabolique": "Métaphore illustrant les transferts permanents d'énergie et de matière animant l'espace interstellaire."
+    },
+    "de": {
+      "interstellare medium": "Materie und Strahlung im Raum zwischen den Sternen einer Galaxie.",
+      "kelvin": "Die Basiseinheit der thermodynamischen Temperatur in der Physik.",
+      "diffuse wolken": "Locker verteilte, nicht scharf begrenzte Gasansammlungen im Weltraum.",
+      "weltraumteleskopen": "Teleskope im Erdorbit zur Beobachtung des Alls ohne störende Atmosphäreneinflüsse.",
+      "staubdichte": "Maß für die Konzentration kosmischer Staubpartikel in einem bestimmten Raumvolumen.",
+      "ultraviolettstrahlung": "Energiereiche elektromagnetische Strahlung mit kürzeren Wellenlängen als sichtbares Licht.",
+      "lichtjahren": "Astronomische Längeneinheit für die Strecke, die Licht in einem Jahr zurücklegt.",
+      "instabilen zone": "Temperaturbereich interstellarer Materie, der nach klassischen Modellen thermodynamisch unbeständig ist.",
+      "sternentstehung": "Der Prozess, bei dem dichte Gas- und Staubwolken kollabieren und neue Sterne bilden.",
+      "stoffwechselautobahn": "Metapher für das dynamische, kontinuierliche Aufheizen, Abkühlen und Zirkulieren interstellarer Materie."
+    },
+    "es": {
+      "medio interestelar": "Gas y polvo difuso que ocupan el espacio existente entre las estrellas de una galaxia.",
+      "big bang": "Gran explosión primordial que dio origen a la materia, la energía y la expansión del universo.",
+      "kelvins": "Escala de temperatura absoluta utilizada en astronomía donde el cero representa la ausencia total de calor.",
+      "telescopios espaciales": "Observatorios situados fuera de la atmósfera terrestre para captar imágenes y datos astronómicos con gran nitidez.",
+      "radiación ultravioleta": "Radiación electromagnética de alta energía emitida por estrellas calientes que puede calentar e ionizar el gas.",
+      "años luz": "Unidad astronómica de longitud equivalente a la distancia que la luz recorre en un año terrestre.",
+      "zona inestable": "Régimen físico donde las condiciones térmicas impiden que el gas cósmico alcance un equilibrio permanente.",
+      "formación estelar": "Proceso astrofísico en el que densas nubes de gas colapsan por gravedad hasta encender una estrella.",
+      "autopista metabólica": "Concepto que ilustra cómo la materia interestelar se transforma y circula de forma activa y continua.",
+      "hidrógeno": "Elemento más simple y abundante del universo cósmico, componente primordial del gas interestelar y las estrellas.",
+      "helio": "Gas noble ligero forjado en el universo temprano y producido mediante fusión en el núcleo de las estrellas."
+    }
   }
 }

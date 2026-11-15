@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Why the sky is blue, and the sunset is red",
-    "vi": "Vì sao bầu trời xanh còn hoàng hôn thì đỏ"
+    "vi": "Vì sao bầu trời xanh còn hoàng hôn thì đỏ",
+    "fr": "Pourquoi le ciel est bleu et le coucher de soleil est rouge",
+    "de": "Warum der Himmel blau ist und der Sonnenuntergang rot",
+    "es": "Por qué el cielo es azul y el atardecer es rojo"
   },
   "hook": {
     "en": "The sky is blue because air scatters short wavelengths of sunlight far more than long ones. Scattering by tiny particles varies with the inverse fourth power of wavelength, so halving the wavelength multiplies the scattering by sixteen. The explanation took centuries to settle, from Leonardo da Vinci's guess around 1506 to [p:Lord Rayleigh's 1899 result for individual molecules].",
-    "vi": "Bầu trời xanh vì không khí tán xạ ánh sáng mặt trời bước sóng ngắn mạnh hơn rất nhiều so với bước sóng dài. Sự tán xạ bởi các hạt nhỏ tỷ lệ nghịch với lũy thừa bốn của bước sóng, nên giảm bước sóng một nửa thì tán xạ tăng mười sáu lần. Lời giải thích mất nhiều thế kỷ mới ngã ngũ, từ phỏng đoán của Leonardo da Vinci quanh năm 1506 đến [p:kết quả năm 1899 của Lord Rayleigh cho từng phân tử]."
+    "vi": "Bầu trời xanh vì không khí tán xạ ánh sáng mặt trời bước sóng ngắn mạnh hơn rất nhiều so với bước sóng dài. Sự tán xạ bởi các hạt nhỏ tỷ lệ nghịch với lũy thừa bốn của bước sóng, nên giảm bước sóng một nửa thì tán xạ tăng mười sáu lần. Lời giải thích mất nhiều thế kỷ mới ngã ngũ, từ phỏng đoán của Leonardo da Vinci quanh năm 1506 đến [p:kết quả năm 1899 của Lord Rayleigh cho từng phân tử].",
+    "fr": "Le ciel est bleu parce que l'air diffuse bien plus les courtes longueurs d'onde de la lumière solaire que les grandes. La diffusion par d'infimes particules varie selon l'inverse de la puissance quatre de la longueur d'onde ; ainsi, diviser la longueur d'onde par deux multiplie la diffusion par seize. Il a fallu des siècles pour stabiliser cette explication, de l'intuition de Leonardo da Vinci vers 1506 jusqu'[p:au résultat obtenu en 1899 par Lord Rayleigh pour les molécules individuelles].",
+    "de": "Der Himmel ist blau, weil Luft kurze Wellenlängen des Sonnenlichts weitaus stärker streut als lange. Die Streuung an winzigen Partikeln verhält sich umgekehrt proportional zur vierten Potenz der Wellenlänge; halbiert man also die Wellenlänge, versechzehnfacht sich die Streuung. Bis zu einer schlüssigen Erklärung dauerte es Jahrhunderte – von Leonardo da Vincis Vermutung um 1506 bis zu [p:Lord Rayleighs Ergebnis von 1899 für einzelne Moleküle].",
+    "es": "El cielo es azul porque el aire dispersa las longitudes de onda cortas de la luz solar mucho más que las largas. La dispersión por partículas diminutas varía con la cuarta potencia inversa de la longitud de onda, por lo que reducir a la mitad la longitud de onda multiplica la dispersión por dieciséis. La explicación tardó siglos en consolidarse, desde la conjetura de Leonardo da Vinci alrededor de 1506 hasta [p:el resultado de Lord Rayleigh de 1899 para moléculas individuales]."
   },
   "sections": [
     {
       "heading_en": "Light bounced off air",
       "heading_vi": "Ánh sáng bật khỏi không khí",
       "body_en": "Rayleigh scattering is the deflection of light by particles much smaller than its wavelength, such as the nitrogen and oxygen molecules in air {wiki-rayleigh}. The light wave drives the charges in each molecule, which then radiates a little of the light in new directions. Because the scattering is inversely proportional to the fourth power of the wavelength, blue light is scattered far more than red. The same source gives the conditions: particles smaller than about a tenth of the wavelength. It occurs in transparent solids and liquids too, but is most prominent in gases. It is called elastic scattering, because the photon changes direction without being absorbed and keeps its wavelength {wiki-diffuse}.",
-      "body_vi": "Tán xạ Rayleigh là sự làm lệch ánh sáng bởi các hạt nhỏ hơn nhiều so với bước sóng của nó, như các phân tử nitơ và oxy trong không khí {wiki-rayleigh}. Sóng ánh sáng làm các điện tích trong mỗi phân tử dao động, rồi phân tử phát lại một phần ánh sáng theo hướng mới. Vì tán xạ tỷ lệ nghịch với lũy thừa bốn của bước sóng, ánh sáng xanh bị tán xạ mạnh hơn ánh sáng đỏ rất nhiều. Cùng nguồn cho biết điều kiện: hạt nhỏ hơn khoảng một phần mười bước sóng. Nó cũng xảy ra trong chất rắn và chất lỏng trong suốt, nhưng rõ nhất ở chất khí. Đây là tán xạ đàn hồi, vì photon đổi hướng mà không bị hấp thụ và giữ nguyên bước sóng {wiki-diffuse}."
+      "body_vi": "Tán xạ Rayleigh là sự làm lệch ánh sáng bởi các hạt nhỏ hơn nhiều so với bước sóng của nó, như các phân tử nitơ và oxy trong không khí {wiki-rayleigh}. Sóng ánh sáng làm các điện tích trong mỗi phân tử dao động, rồi phân tử phát lại một phần ánh sáng theo hướng mới. Vì tán xạ tỷ lệ nghịch với lũy thừa bốn của bước sóng, ánh sáng xanh bị tán xạ mạnh hơn ánh sáng đỏ rất nhiều. Cùng nguồn cho biết điều kiện: hạt nhỏ hơn khoảng một phần mười bước sóng. Nó cũng xảy ra trong chất rắn và chất lỏng trong suốt, nhưng rõ nhất ở chất khí. Đây là tán xạ đàn hồi, vì photon đổi hướng mà không bị hấp thụ và giữ nguyên bước sóng {wiki-diffuse}.",
+      "heading_fr": "La lumière rebondit sur l'air",
+      "body_fr": "La diffusion de Rayleigh est la déviation de la lumière par des particules bien plus petites que sa longueur d'onde, telles que les molécules d'azote et d'oxygène de l'air {wiki-rayleigh}. L'onde lumineuse excite les charges de chaque molécule, qui réémet alors une fraction de cette lumière dans de nouvelles directions. Comme la diffusion est inversement proportionnelle à la puissance quatre de la longueur d'onde, la lumière bleue est bien plus diffusée que la rouge. La même source en précise les conditions : des particules de taille inférieure à environ un dixième de la longueur d'onde. Le phénomène se produit aussi dans les solides et liquides transparents, mais se révèle surtout marqué dans les gaz. On parle de diffusion élastique, car le photon change de direction sans être absorbé et conserve sa longueur d'onde {wiki-diffuse}.",
+      "heading_de": "An der Luft gestreutes Licht",
+      "body_de": "Rayleigh-Streuung bezeichnet die Ablenkung von Licht durch Teilchen, die wesentlich kleiner als dessen Wellenlänge sind, etwa die Stickstoff- und Sauerstoffmoleküle in der Luft {wiki-rayleigh}. Die Lichtwelle regt die Ladungen in den einzelnen Molekülen an, welche daraufhin einen Teil des Lichts in neue Richtungen abstrahlen. Da die Streuung umgekehrt proportional zur vierten Potenz der Wellenlänge ist, wird blaues Licht weitaus stärker gestreut als rotes. Dieselbe Quelle nennt die Voraussetzung dafür: Partikel, die kleiner als etwa ein Zehntel der Wellenlänge sind. Dieser Effekt tritt auch in transparenten Festkörpern und Flüssigkeiten auf, zeigt sich jedoch am deutlichsten in Gasen. Dies wird als elastische Streuung bezeichnet, da das Photon seine Richtung ändert, ohne absorbiert zu werden, und seine Wellenlänge beibehält {wiki-diffuse}.",
+      "heading_es": "Luz rebotada en el aire",
+      "body_es": "La dispersión de Rayleigh es la desviación de la luz por partículas mucho más pequeñas que su longitud de onda, como las moléculas de nitrógeno y oxígeno en el aire {wiki-rayleigh}. La onda luminosa desplaza las cargas de cada molécula, la cual reirradia luego una fracción de la luz en nuevas direcciones. Dado que la dispersión es inversamente proporcional a la cuarta potencia de la longitud de onda, la luz azul se dispersa mucho más que la roja. La misma fuente aporta las condiciones: partículas de tamaño inferior a aproximadamente una décima parte de la longitud de onda. También ocurre en sólidos y líquidos transparentes, pero es más prominente en los gases. Se denomina dispersión elástica porque el fotón cambia de dirección sin ser absorbido y conserva su longitud de onda {wiki-diffuse}."
     },
     {
       "heading_en": "How much light goes astray",
       "heading_vi": "Bao nhiêu ánh sáng bị lệch hướng",
       "body_en": "The amount is small for a short path but adds up across the atmosphere. For nitrogen at green wavelength of 532 nanometres, the scattered fraction is about one hundred-thousandth for every metre of air at normal pressure, based on roughly 2 × 10^25 molecules in each cubic metre {wiki-rayleigh}. Over the whole atmosphere the effect is large. About 23% of the direct sunlight is removed from the solar beam by scattering, and around two-thirds of that scattered portion reaches the ground as diffuse skylight {wiki-diffuse}. That scattered light is what we see when we look away from the Sun.",
-      "body_vi": "Lượng này nhỏ trên một quãng ngắn nhưng cộng dồn qua cả bầu khí quyển. Với nitơ ở bước sóng xanh lục 532 nanomet, phần bị tán xạ là khoảng một phần trăm nghìn trên mỗi mét không khí ở áp suất thường, dựa trên khoảng 2 × 10^25 phân tử trong mỗi mét khối {wiki-rayleigh}. Trên toàn bầu khí quyển, hiệu ứng này lớn. Khoảng 23% ánh sáng mặt trời trực tiếp bị tách khỏi chùm tia bởi tán xạ, và khoảng hai phần ba lượng bị tán xạ ấy tới mặt đất dưới dạng ánh sáng trời khuếch tán {wiki-diffuse}. Ánh sáng tán xạ đó là thứ ta thấy khi nhìn ra xa Mặt Trời."
+      "body_vi": "Lượng này nhỏ trên một quãng ngắn nhưng cộng dồn qua cả bầu khí quyển. Với nitơ ở bước sóng xanh lục 532 nanomet, phần bị tán xạ là khoảng một phần trăm nghìn trên mỗi mét không khí ở áp suất thường, dựa trên khoảng 2 × 10^25 phân tử trong mỗi mét khối {wiki-rayleigh}. Trên toàn bầu khí quyển, hiệu ứng này lớn. Khoảng 23% ánh sáng mặt trời trực tiếp bị tách khỏi chùm tia bởi tán xạ, và khoảng hai phần ba lượng bị tán xạ ấy tới mặt đất dưới dạng ánh sáng trời khuếch tán {wiki-diffuse}. Ánh sáng tán xạ đó là thứ ta thấy khi nhìn ra xa Mặt Trời.",
+      "heading_fr": "Quelle proportion de lumière s'égare",
+      "body_fr": "Cette quantité reste infime sur une courte distance, mais s'accumule à l'échelle de l'atmosphère. Pour l'azote à la longueur d'onde verte de 532 nanomètres, la fraction diffusée est d'environ un cent-millième par mètre d'air à pression normale, sur la base d'approximativement 2 × 10^25 molécules par mètre cube {wiki-rayleigh}. Sur l'ensemble de l'atmosphère, l'effet devient considérable. Environ 23 % du rayonnement solaire direct est extrait du faisceau par diffusion, et près des deux tiers de cette fraction diffusée atteignent le sol sous la forme d'un rayonnement diffus du ciel {wiki-diffuse}. C'est cette lumière diffusée que nous percevons lorsque nous ne regardons pas directement le Soleil.",
+      "heading_de": "Wie viel Licht vom Weg abkommt",
+      "body_de": "Auf kurzen Strecken ist der Anteil gering, summiert sich jedoch über die gesamte Atmosphäre auf. Für Stickstoff bei einer grünen Wellenlänge von 532 Nanometer beträgt der gestreute Anteil bei Normaldruck etwa ein Einhunderttausendstel pro Meter Luft, basierend auf rund 2 × 10^25 Molekülen pro Kubikmeter {wiki-rayleigh}. Über die gesamte Atmosphäre hinweg ist der Effekt beträchtlich. Etwa 23 % des direkten Sonnenlichts werden durch Streuung aus den Sonnenstrahlen herausgefiltert, und rund zwei Drittel dieses gestreuten Anteils erreichen als diffuses Himmelslicht den Erdboden {wiki-diffuse}. Dieses gestreute Licht ist es, was wir sehen, wenn wir den Blick von der Sonne abwenden.",
+      "heading_es": "Cuánta luz se desvía",
+      "body_es": "La cantidad es pequeña en un trayecto corto, pero se acumula a través de la atmósfera. En el caso del nitrógeno en la longitud de onda verde de 532 nanómetros, la fracción dispersada es de aproximadamente una cienmilésima por cada metro de aire a presión normal, tomando como base unas 2 × 10^25 moléculas por metro cúbico {wiki-rayleigh}. A lo largo de toda la atmósfera el efecto resulta notable. Cerca del 23% de la luz solar directa se sustrae del haz solar mediante dispersión, y alrededor de dos tercios de esa porción dispersada llega al suelo en forma de luz celeste difusa {wiki-diffuse}. Esa luz dispersada es la que vemos cuando apartamos la vista del Sol."
     },
     {
       "heading_en": "Why not violet?",
       "heading_vi": "Vì sao không phải màu tím?",
       "body_en": "Violet has an even shorter wavelength than blue, so it scatters more. The sky is not violet because the light reaching our eyes is a mixture of wavelengths. The indirect blue and violet from the whole sky is processed by the human eye as a combination of blue and white {wiki-rayleigh}. The colour we perceive resembles a pure blue of 474 to 476 nanometres mixed with white light, that is, an unsaturated blue {wiki-diffuse}. The sky's blue is pale because the scattering is strongest for short wavelengths yet still contains the other colours, which the eye adds back in.",
-      "body_vi": "Màu tím có bước sóng còn ngắn hơn màu xanh, nên tán xạ mạnh hơn. Bầu trời không tím vì ánh sáng đến mắt ta là hỗn hợp nhiều bước sóng. Ánh sáng xanh lam và tím gián tiếp từ khắp bầu trời được mắt người xử lý như sự kết hợp của xanh và trắng {wiki-rayleigh}. Màu ta cảm nhận giống một màu xanh đơn sắc 474 đến 476 nanomet trộn với ánh sáng trắng, tức một màu xanh không bão hòa {wiki-diffuse}. Màu xanh của bầu trời nhạt vì tán xạ mạnh nhất ở bước sóng ngắn nhưng vẫn chứa các màu khác, và mắt cộng chúng lại."
+      "body_vi": "Màu tím có bước sóng còn ngắn hơn màu xanh, nên tán xạ mạnh hơn. Bầu trời không tím vì ánh sáng đến mắt ta là hỗn hợp nhiều bước sóng. Ánh sáng xanh lam và tím gián tiếp từ khắp bầu trời được mắt người xử lý như sự kết hợp của xanh và trắng {wiki-rayleigh}. Màu ta cảm nhận giống một màu xanh đơn sắc 474 đến 476 nanomet trộn với ánh sáng trắng, tức một màu xanh không bão hòa {wiki-diffuse}. Màu xanh của bầu trời nhạt vì tán xạ mạnh nhất ở bước sóng ngắn nhưng vẫn chứa các màu khác, và mắt cộng chúng lại.",
+      "heading_fr": "Pourquoi pas le violet ?",
+      "body_fr": "Le violet possède une longueur d'onde encore plus courte que le bleu, il est donc davantage diffusé. Si le ciel n'est pas violet, c'est parce que la lumière qui parvient à nos yeux forme un mélange de longueurs d'onde. Le bleu et le violet indirects provenant de l'ensemble de la voûte céleste sont interprétés par l'œil humain comme une combinaison de bleu et de blanc {wiki-rayleigh}. La couleur perçue s'apparente à un bleu pur de 474 à 476 nanomètres mélangé à de la lumière blanche, autrement dit un bleu désaturé {wiki-diffuse}. Le bleu du ciel est pâle, car même si la diffusion est maximale pour les courtes longueurs d'onde, elle contient toujours les autres couleurs, que l'œil réintègre au mélange.",
+      "heading_de": "Warum nicht violett?",
+      "body_de": "Violett besitzt eine noch kürzere Wellenlänge als Blau und wird daher noch stärker gestreut. Dass der Himmel nicht violett erscheint, liegt daran, dass das Licht, das unsere Augen erreicht, ein Gemisch verschiedener Wellenlängen ist. Das indirekte Blau und Violett des gesamten Himmels wird vom menschlichen Auge als Kombination aus Blau und Weiß verarbeitet {wiki-rayleigh}. Der von uns wahrgenommene Farbton ähnelt einem reinen Blau von 474 bis 476 Nanometer, vermischt mit weißem Licht – also ein ungesättigtes Blau {wiki-diffuse}. Das Himmelsblau ist blass, weil die Streuung bei kurzen Wellenlängen zwar am stärksten ist, das Licht aber dennoch die übrigen Farben enthält, die das Auge wieder beimischt.",
+      "heading_es": "¿Por qué no violeta?",
+      "body_es": "El violeta tiene una longitud de onda todavía más corta que el azul, por lo que se dispersa más. El cielo no es violeta porque la luz que llega a nuestros ojos es una mezcla de longitudes de onda. El ojo humano procesa el azul y el violeta indirectos procedentes de toda la bóveda celeste como una combinación de azul y blanco {wiki-rayleigh}. El color que percibimos se asemeja a un azul puro de entre 474 y 476 nanómetros mezclado con luz blanca, es decir, un azul insaturado {wiki-diffuse}. El azul del cielo es pálido porque la dispersión es más intensa en las longitudes de onda cortas, pero aún contiene los otros colores, que el ojo reincorpora."
     },
     {
       "heading_en": "Why sunsets turn red",
       "heading_vi": "Vì sao hoàng hôn chuyển đỏ",
       "body_en": "At sunrise and sunset, sunlight arrives almost tangentially to the ground, so its path through the atmosphere is much longer {wiki-diffuse}. Most of the blue and green is scattered out of the line of sight before it reaches you. What remains is the long-wavelength light, which is why the low Sun and the clouds it lights look orange to red. At twilight the low Sun takes on a yellowish to reddish hue because the scattered blue is missing from its light {wiki-rayleigh}. The same process that colours the daytime sky blue removes blue from the direct beam. Nothing new is added at sunset. The light that gives us a red evening is the light the scattering left behind.",
-      "body_vi": "Lúc bình minh và hoàng hôn, ánh sáng mặt trời tới gần như song song với mặt đất, nên quãng đường qua khí quyển dài hơn nhiều {wiki-diffuse}. Phần lớn ánh sáng xanh lam và xanh lục bị tán xạ ra khỏi đường nhìn trước khi tới bạn. Phần còn lại là ánh sáng bước sóng dài, nên Mặt Trời thấp và những đám mây nó chiếu sáng trông cam đến đỏ. Lúc chạng vạng Mặt Trời thấp có sắc vàng đến đỏ vì ánh sáng của nó thiếu phần xanh đã bị tán xạ {wiki-rayleigh}. Chính quá trình làm bầu trời ban ngày xanh cũng lấy mất màu xanh khỏi chùm tia trực tiếp. Hoàng hôn không thêm gì mới. Thứ ánh sáng cho ta buổi chiều đỏ là phần ánh sáng mà tán xạ để lại."
+      "body_vi": "Lúc bình minh và hoàng hôn, ánh sáng mặt trời tới gần như song song với mặt đất, nên quãng đường qua khí quyển dài hơn nhiều {wiki-diffuse}. Phần lớn ánh sáng xanh lam và xanh lục bị tán xạ ra khỏi đường nhìn trước khi tới bạn. Phần còn lại là ánh sáng bước sóng dài, nên Mặt Trời thấp và những đám mây nó chiếu sáng trông cam đến đỏ. Lúc chạng vạng Mặt Trời thấp có sắc vàng đến đỏ vì ánh sáng của nó thiếu phần xanh đã bị tán xạ {wiki-rayleigh}. Chính quá trình làm bầu trời ban ngày xanh cũng lấy mất màu xanh khỏi chùm tia trực tiếp. Hoàng hôn không thêm gì mới. Thứ ánh sáng cho ta buổi chiều đỏ là phần ánh sáng mà tán xạ để lại.",
+      "heading_fr": "Pourquoi les couchers de soleil rougeoient",
+      "body_fr": "Au lever et au coucher du soleil, les rayons arrivent de façon presque tangentielle au sol, si bien que leur trajet à travers l'atmosphère est bien plus long {wiki-diffuse}. La majeure partie du bleu et du vert est dispersée hors de la ligne de visée avant de vous atteindre. Seules subsistent les grandes longueurs d'onde, raison pour laquelle le Soleil rasant et les nuages qu'il éclaire prennent des teintes orange à rouge. Au crépuscule, le Soleil bas adopte une nuance jaunâtre à rougeâtre, car le bleu diffusé a disparu de son spectre direct {wiki-rayleigh}. Le mécanisme même qui colore le ciel diurne en bleu retire ce même bleu du faisceau direct. Rien ne s'ajoute au coucher du soleil : la lumière qui compose un crépuscule rougeoyant n'est que celle que la diffusion a laissée derrière elle.",
+      "heading_de": "Warum Sonnenuntergänge rot werden",
+      "body_de": "Bei Sonnenaufgang und Sonnenuntergang trifft das Sonnenlicht nahezu tangential auf den Boden, weshalb sein Weg durch die Atmosphäre wesentlich länger ist {wiki-diffuse}. Der Großteil des blauen und grünen Lichts wird aus der Sichtlinie gestreut, bevor er dich erreicht. Was übrig bleibt, ist das langwellige Licht – weshalb die tief stehende Sonne und die von ihr beleuchteten Wolken orange bis rot erscheinen. In der Dämmerung nimmt die tief stehende Sonne einen gelblichen bis rötlichen Farbton an, da ihrem Licht das gestreute Blau fehlt {wiki-rayleigh}. Derselbe Vorgang, der den Himmel tagsüber blau färbt, entzieht dem direkten Strahl das Blau. Bei Sonnenuntergang kommt nichts Neues hinzu. Das Licht, das uns einen roten Abend beschert, ist jenes Licht, das die Streuung übrig gelassen hat.",
+      "heading_es": "Por qué los atardeceres se vuelven rojos",
+      "body_es": "Al amanecer y al atardecer, la luz del sol llega casi tangencialmente al suelo, de modo que su recorrido a través de la atmósfera es mucho más largo {wiki-diffuse}. La mayor parte del azul y del verde se dispersa fuera de la línea de visión antes de llegar hasta nosotros. Lo que permanece es la luz de longitud de onda larga, motivo por el cual el Sol bajo y las nubes que ilumina se ven de tonos anaranjados a rojos. Durante el crepúsculo, el Sol en el horizonte adquiere un matiz de amarillento a rojizo debido a que el azul dispersado falta en su luz {wiki-rayleigh}. El mismo proceso que tiñe de azul el cielo diurno sustrae el azul del haz directo. Nada nuevo se añade al atardecer. La luz que nos regala un atardecer rojo es la luz que la dispersión dejó atrás."
     },
     {
       "heading_en": "From Leonardo to Rayleigh",
       "heading_vi": "Từ Leonardo đến Rayleigh",
       "body_en": "Around 1506 to 1510, Leonardo da Vinci conjectured that small particles in the air scatter sunlight to make the sky blue {wiki-rayleigh}. In 1869 John Tyndall noticed that light scattering off tiny particles in purified air was faintly blue. He suggested this explained the sky but could not say why blue was preferred, and dust could not account for the intensity. In 1871 Lord Rayleigh published two papers on the colour and polarisation of skylight. In 1881 he showed that his equations followed from the electromagnetic theory of light. In 1899 he showed they applied to single molecules, which set the basic model for the colour of the sky.",
-      "body_vi": "Khoảng năm 1506 đến 1510, Leonardo da Vinci phỏng đoán rằng các hạt nhỏ trong không khí tán xạ ánh sáng mặt trời làm bầu trời xanh {wiki-rayleigh}. Năm 1869, John Tyndall nhận thấy ánh sáng tán xạ khỏi các hạt cực nhỏ trong không khí đã lọc sạch có sắc xanh nhạt. Ông cho rằng điều này giải thích bầu trời nhưng không nói được vì sao màu xanh được ưu tiên, và bụi không giải thích được cường độ. Năm 1871, Lord Rayleigh công bố hai bài báo về màu sắc và sự phân cực của ánh sáng bầu trời. Năm 1881, ông chứng minh các phương trình của mình suy ra được từ lý thuyết điện từ của ánh sáng. Năm 1899, ông chỉ ra chúng áp dụng cho từng phân tử, điều thiết lập mô hình cơ bản cho màu bầu trời."
+      "body_vi": "Khoảng năm 1506 đến 1510, Leonardo da Vinci phỏng đoán rằng các hạt nhỏ trong không khí tán xạ ánh sáng mặt trời làm bầu trời xanh {wiki-rayleigh}. Năm 1869, John Tyndall nhận thấy ánh sáng tán xạ khỏi các hạt cực nhỏ trong không khí đã lọc sạch có sắc xanh nhạt. Ông cho rằng điều này giải thích bầu trời nhưng không nói được vì sao màu xanh được ưu tiên, và bụi không giải thích được cường độ. Năm 1871, Lord Rayleigh công bố hai bài báo về màu sắc và sự phân cực của ánh sáng bầu trời. Năm 1881, ông chứng minh các phương trình của mình suy ra được từ lý thuyết điện từ của ánh sáng. Năm 1899, ông chỉ ra chúng áp dụng cho từng phân tử, điều thiết lập mô hình cơ bản cho màu bầu trời.",
+      "heading_fr": "De Léonard à Rayleigh",
+      "body_fr": "Entre 1506 et 1510 environ, Leonardo da Vinci émit l'hypothèse que de minuscules particules présentes dans l'air diffusaient la lumière du soleil pour rendre le ciel bleu {wiki-rayleigh}. En 1869, John Tyndall remarqua que la lumière diffusée par d'infimes particules dans un air purifié prenait une faible coloration bleue. Il avança que cela expliquait le ciel, mais ne parvint pas à justifier pourquoi le bleu était privilégié, et les poussières ne pouvaient suffire à expliquer une telle intensité. En 1871, Lord Rayleigh publia deux articles sur la couleur et la polarisation de la lumière céleste. En 1881, il démontra que ses équations découlaient de la théorie électromagnétique de la lumière. En 1899, il établit qu'elles s'appliquaient aux molécules individuelles, posant ainsi le modèle fondamental de la couleur du ciel.",
+      "heading_de": "Von Leonardo bis Rayleigh",
+      "body_de": "Zwischen 1506 und 1510 mutmaßte Leonardo da Vinci, dass winzige Partikel in der Luft das Sonnenlicht streuen und den Himmel dadurch blau färben {wiki-rayleigh}. Im Jahr 1869 bemerkte John Tyndall, dass Licht, das an winzigen Teilchen in gereinigter Luft gestreut wird, schwach bläulich schimmert. Er schlug vor, dass dies den Himmel erkläre, konnte jedoch nicht begründen, warum Blau bevorzugt wird; zudem vermochte Staub die Intensität nicht zu erklären. Im Jahr 1871 veröffentlichte Lord Rayleigh zwei Abhandlungen über die Farbe und Polarisation des Himmelslichts. 1881 zeigte er, dass sich seine Gleichungen aus der elektromagnetischen Lichttheorie ableiten ließen. 1899 wies er nach, dass sie für einzelne Moleküle galten, was das grundlegende Modell für die Farbe des Himmels begründete.",
+      "heading_es": "De Leonardo a Rayleigh",
+      "body_es": "Hacia 1506 a 1510, Leonardo da Vinci conjeturó que pequeñas partículas en el aire dispersaban la luz solar dando al cielo su color azul {wiki-rayleigh}. En 1869, John Tyndall observó que la dispersión de la luz producida por partículas diminutas en aire purificado era tenuemente azulada. Sugirió que esto explicaba el cielo, pero no pudo precisar por qué se favorecía el azul, y el polvo no justificaba la intensidad. En 1871, Lord Rayleigh publicó dos artículos sobre el color y la polarización de la luz celeste. En 1881 demostró que sus ecuaciones se derivaban de la teoría electromagnética de la luz. En 1899 probó que se aplicaban a moléculas individuales, lo que sentó el modelo fundamental para el color del cielo."
     },
     {
       "heading_en": "An overcast day and the plants beneath",
       "heading_vi": "Ngày u ám và cây cối bên dưới",
       "body_en": "Under an overcast sky there is no direct sunlight, and all light is diffused skylight {wiki-diffuse}. The same source says that after the Mount Pinatubo eruption in June 1991, studies suggested diffuse light could reach leaves under the canopy and so allow more efficient photosynthesis across the whole plant than clear skies with direct sun, which cast shadows on understory leaves. The result is a reminder that scattered light is not just a matter of colour. It changes how light is spread through a forest, and so how plants make use of it.",
-      "body_vi": "Dưới bầu trời u ám không có ánh sáng mặt trời trực tiếp, và toàn bộ ánh sáng là ánh sáng trời khuếch tán {wiki-diffuse}. Cùng nguồn cho biết sau vụ phun trào núi Pinatubo tháng 6 năm 1991, các nghiên cứu gợi ý ánh sáng khuếch tán có thể chiếu tới lá dưới tán rừng và nhờ đó giúp quang hợp trên toàn cây hiệu quả hơn so với bầu trời quang có nắng trực tiếp, vốn đổ bóng lên lá tầng dưới. Kết quả nhắc ta rằng ánh sáng tán xạ không chỉ là chuyện màu sắc. Nó thay đổi cách ánh sáng phân bố trong rừng, và do đó cách cây tận dụng nó."
+      "body_vi": "Dưới bầu trời u ám không có ánh sáng mặt trời trực tiếp, và toàn bộ ánh sáng là ánh sáng trời khuếch tán {wiki-diffuse}. Cùng nguồn cho biết sau vụ phun trào núi Pinatubo tháng 6 năm 1991, các nghiên cứu gợi ý ánh sáng khuếch tán có thể chiếu tới lá dưới tán rừng và nhờ đó giúp quang hợp trên toàn cây hiệu quả hơn so với bầu trời quang có nắng trực tiếp, vốn đổ bóng lên lá tầng dưới. Kết quả nhắc ta rằng ánh sáng tán xạ không chỉ là chuyện màu sắc. Nó thay đổi cách ánh sáng phân bố trong rừng, và do đó cách cây tận dụng nó.",
+      "heading_fr": "Ciel couvert et végétation sous-jacente",
+      "body_fr": "Sous un ciel couvert, aucun rayonnement direct n'atteint le sol et toute la clarté provient de la lumière diffuse du ciel {wiki-diffuse}. La même source indique qu'après l'éruption du mont Pinatubo en juin 1991, des études ont suggéré que la lumière diffuse pénétrait sous la canopée pour atteindre les feuilles inférieures, favorisant une photosynthèse globale plus efficace que sous un ciel dégagé en plein soleil, où l'ombre masque le sous-bois. Ce résultat rappelle que la diffusion de la lumière n'est pas qu'une affaire de couleur : elle modifie la pénétration du rayonnement au sein d'une forêt, et par conséquent la façon dont les plantes l'exploitent.",
+      "heading_de": "Ein bedeckter Tag und die Pflanzen darunter",
+      "body_de": "Unter einem bedeckten Himmel gibt es kein direktes Sonnenlicht, und alles Licht ist diffuses Himmelslicht {wiki-diffuse}. Derselben Quelle zufolge legten Studien nach dem Ausbruch des Mount Pinatubo im Juni 1991 nahe, dass diffuses Licht auch Blätter unter dem Kronendach erreichen kann. Dies ermögliche eine effizientere Fotosynthese der gesamten Pflanze als ein klarer Himmel mit direktem Sonnenlicht, der Schatten auf Blätter im Unterholz wirft. Dieses Ergebnis erinnert daran, dass Streulicht nicht bloß eine Frage der Farbe ist. Es verändert die Art und Weise, wie sich Licht in einem Wald verteilt – und damit auch, wie Pflanzen es nutzen.",
+      "heading_es": "Un día nublado y las plantas debajo",
+      "body_es": "Bajo un cielo cubierto no existe luz solar directa y toda la iluminación es luz celeste difusa {wiki-diffuse}. La misma fuente señala que, tras la erupción del monte Pinatubo en junio de 1991, diversos estudios sugirieron que la luz difusa lograba alcanzar hojas situadas bajo el dosel arbóreo, permitiendo una fotosíntesis más eficiente en toda la planta que la de los cielos despejados con sol directo, que proyectan sombras sobre las hojas del sotobosque. El resultado recuerda que la luz dispersada no es solo una cuestión de color: altera el modo en que la luz se propaga en un bosque y, por tanto, cómo la aprovechan las plantas."
     }
   ],
   "keyPoint": {
     "en": "The sky is blue because air scatters short wavelengths of sunlight much more than long ones, and our eyes add the rest to give a pale blue. [p:At sunset the longer path removes blue from the direct beam,] leaving orange and red.",
-    "vi": "Bầu trời xanh vì không khí tán xạ ánh sáng mặt trời bước sóng ngắn mạnh hơn nhiều so với bước sóng dài, và mắt ta cộng thêm phần còn lại để cho ra màu xanh nhạt. [p:Lúc hoàng hôn, quãng đường dài hơn lấy mất ánh sáng xanh khỏi chùm tia trực tiếp,] để lại cam và đỏ."
+    "vi": "Bầu trời xanh vì không khí tán xạ ánh sáng mặt trời bước sóng ngắn mạnh hơn nhiều so với bước sóng dài, và mắt ta cộng thêm phần còn lại để cho ra màu xanh nhạt. [p:Lúc hoàng hôn, quãng đường dài hơn lấy mất ánh sáng xanh khỏi chùm tia trực tiếp,] để lại cam và đỏ.",
+    "fr": "Le ciel est bleu parce que l'air diffuse bien plus les courtes longueurs d'onde de la lumière solaire que les grandes, et nos yeux combinent le reste pour produire un bleu pâle. [p:Au coucher du soleil, ce trajet allongé retire le bleu du faisceau direct,] ne laissant que l'orange et le rouge.",
+    "de": "Der Himmel ist blau, weil Luft kurze Wellenlängen des Sonnenlichts viel stärker streut als lange und unsere Augen den Rest zu einem blassen Blau ergänzen. [p:Beim Sonnenuntergang entzieht der längere Weg dem direkten Strahl das Blau,] sodass Orange und Rot zurückbleiben.",
+    "es": "El cielo es azul porque el aire dispersa las longitudes de onda cortas de la luz solar mucho más que las largas, y nuestros ojos integran el resto para brindar un azul pálido. [p:Al atardecer, el trayecto más largo sustrae el azul del haz directo,] dejando tonos naranjas y rojos."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Nhìn bầu trời lúc giữa trưa và lúc hoàng hôn, và ghi lại màu thay đổi ở đâu dọc chân trời.",
       "So màu bầu trời ngày quang với lúc mây phủ, và để ý bóng đổ khác nhau thế nào.",
       "Chụp bầu trời ở cùng một chỗ vào các giờ khác nhau và so màu."
+    ],
+    "fr": [
+      "Observez le ciel à midi puis au coucher du soleil, et notez les variations de couleur le long de l'horizon.",
+      "Comparez la couleur du ciel par temps clair et sous une couverture nuageuse, en observant la différence d'ombres.",
+      "Photographiez le ciel depuis un même endroit à différents moments de la journée pour en comparer les teintes."
+    ],
+    "de": [
+      "Den Himmel am Mittag und bei Sonnenuntergang betrachten und darauf achten, wo sich die Farbe entlang des Horizonts verändert.",
+      "Die Himmelsfarbe an einem klaren Tag und bei bedecktem Himmel vergleichen und feststellen, wie sich Schatten unterscheiden.",
+      "Den Himmel am selben Ort zu verschiedenen Tageszeiten fotografieren und die Farben vergleichen."
+    ],
+    "es": [
+      "Observe el cielo al mediodía y al atardecer, y fíjese en dónde cambia el color a lo largo del horizonte.",
+      "Compare el color del cielo en un día despejado y bajo un cielo cubierto, y aprecie cómo difieren las sombras.",
+      "Fotografíe el cielo en un mismo punto a diferentes horas del día y compare los colores."
     ]
   },
   "references": [
@@ -100,5 +160,82 @@
     "sourceUrl": "https://unsplash.com/photos/xjXz8GKXcTI"
   },
   "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAwCdASoQABwALrV2u12jqampiYC0S2AE6ZQjgAKjwUV0KdkoD9AA/tpA8ePKeA1wxty/q6u6Uif+FmzW1dgOgWyFzm+wXjDlbdkZL38VXKpw7VmuhTaspYAAAA==",
-  "dominant": "#5a756c"
+  "dominant": "#5a756c",
+  "glossary": {
+    "en": {
+      "rayleigh scattering": "Deflection of light by particles much smaller than its wavelength, scattering shorter wavelengths most.",
+      "elastic scattering": "Scattering where particles deflect light without absorbing it or changing its wavelength.",
+      "photon": "A fundamental particle or quantum unit of light.",
+      "nanometres": "Units of measurement equal to one billionth of a metre, used for wavelengths.",
+      "diffuse skylight": "Sunlight scattered by the atmosphere that arrives indirectly from across the whole sky.",
+      "unsaturated blue": "A pale blue hue resulting from pure blue light mixed with white light.",
+      "tangentially": "At an angle grazing or nearly parallel to the Earth's surface.",
+      "polarisation": "The orientation of the oscillations of light waves in a specific direction.",
+      "canopy": "The high, continuous overhead layer formed by tree crowns in a forest.",
+      "photosynthesis": "The process by which plants use sunlight to synthesize nutrients from carbon dioxide and water.",
+      "understory": "The layer of vegetation and plant leaves growing beneath the forest canopy."
+    },
+    "vi": {
+      "tán xạ rayleigh": "Hiện tượng ánh sáng bị lệch hướng bởi các hạt hoặc phân tử nhỏ hơn bước sóng.",
+      "tán xạ": "Hiện tượng các hạt làm chệch hướng truyền của ánh sáng sang nhiều hướng khác nhau.",
+      "bước sóng": "Khoảng cách giữa hai đỉnh sóng liên tiếp của sóng ánh sáng.",
+      "photon": "Hạt cơ bản cấu thành ánh sáng mang năng lượng và chuyển động định hướng.",
+      "nanomet": "Đơn vị đo độ dài siêu nhỏ, bằng một phần tỷ mét, dùng đo bước sóng.",
+      "khuếch tán": "Sự phân tán ánh sáng ra khắp các hướng khi va chạm với vật chất.",
+      "đơn sắc": "Chỉ có một màu hay một bước sóng ánh sáng duy nhất xác định.",
+      "không bão hòa": "Trạng thái màu sắc bị pha lẫn ánh sáng trắng nên không còn thuần khiết.",
+      "chạng vạng": "Thời điểm ánh sáng mặt trời yếu ớt ngay trước khi mọc hoặc sau khi lặn.",
+      "phân cực": "Hiện tượng các dao động sóng ánh sáng bị giới hạn theo một phương nhất định.",
+      "quang hợp": "Quá trình cây xanh hấp thụ ánh sáng để tổng hợp chất hữu cơ nuôi cây."
+    },
+    "fr": {
+      "diffusion de rayleigh": "Déviation de la lumière par des particules beaucoup plus petites que sa longueur d'onde.",
+      "longueurs d'onde": "Distance séparant deux crêtes d'une onde lumineuse, qui détermine la couleur perçue.",
+      "diffusion élastique": "Diffusion où le photon dévie de trajectoire sans absorption ni changement de longueur d'onde.",
+      "rayonnement diffus": "Lumière solaire dispersée dans toutes les directions par les molécules de l'atmosphère terrestre.",
+      "bleu désaturé": "Teinte bleue mélangée à de la lumière blanche, produisant un bleu affadi ou pâle.",
+      "ligne de visée": "Axe rectiligne reliant l'œil de l'observateur au point observé dans le ciel.",
+      "polarisation": "Orientation privilégiée du plan d'oscillation géométrique de l'onde électromagnétique lumineuse.",
+      "canopée": "Étage supérieur d'une forêt formé par la cime conjointe des grands arbres.",
+      "photosynthèse": "Processus biologique par lequel les végétaux fabriquent de la matière organique grâce à la lumière.",
+      "faisceau direct": "Rayonnement solaire parvenant en ligne directe sans avoir été dévié par l'atmosphère."
+    },
+    "de": {
+      "rayleigh-streuung": "Die Streuung von Licht an Teilchen, die wesentlich kleiner als dessen Wellenlänge sind.",
+      "wellenlänge": "Der räumliche Abstand zwischen zwei aufeinanderfolgenden Wellenbergen elektromagnetischer Strahlung.",
+      "elastische streuung": "Streuvorgang, bei dem Photonen ihre Richtung ändern, ohne Energie zu verlieren oder die Wellenlänge zu verändern.",
+      "photon": "Elementares Teilchen und Quant der elektromagnetischen Strahlung, das die Grundeinheit des Lichts bildet.",
+      "nanometer": "Ein Milliardstel Meter; Maßeinheit zur Angabe der Wellenlänge von sichtbarem Licht.",
+      "diffuses himmelslicht": "Sonnenlicht, das an atmosphärischen Gasmolekülen gestreut wird und gleichmäßig aus allen Himmelsrichtungen einfällt.",
+      "ungesättigtes blau": "Ein blasser Blauton, der durch Beimischung von weißem Licht an Farbreinheit verliert.",
+      "polarisation": "Die geometrische Ausrichtung der Schwingungsebene elektromagnetischer Lichtwellen im Raum.",
+      "fotosynthese": "Biologischer Prozess von Pflanzen zur Umwandlung von Lichtenergie in chemische Energie.",
+      "kronendach": "Das oberste Blattwerk und Astsystem der Bäume in einem Wald.",
+      "unterholz": "Die bodennahe Vegetationsschicht aus Sträuchern, Kräutern und jungen Trieben im Wald."
+    },
+    "es": {
+      "dispersión de rayleigh": "Desviación de la radiación electromagnética producida por partículas u osciladores mucho menores que su longitud de onda.",
+      "longitud de onda": "Distancia espacial entre dos crestas o puntos equivalentes consecutivos de una onda electromagnética.",
+      "dispersión elástica": "Proceso en el que un fotón es desviado sin transferir energía ni modificar su longitud de onda original.",
+      "nanómetros": "Unidades de longitud equivalentes a una milmillonésima de metro, comúnmente empleadas para medir la luz.",
+      "luz celeste difusa": "Radiación solar que llega a la superficie tras ser desviada en múltiples direcciones por la atmósfera.",
+      "azul insaturado": "Tono de azul combinado con luz blanca que reduce la pureza de su color percibido.",
+      "polarización": "Propiedad geométrica de las ondas luminosas que describe la oscilación de su campo eléctrico en un plano determinado.",
+      "teoría electromagnética": "Modelo físico clásico que describe la propagación de la radiación luminosa mediante campos eléctricos y magnéticos oscilantes.",
+      "dosel arbóreo": "Estrato superior continuo formado por las copas de los árboles en una masa forestal o bosque.",
+      "fotosíntesis": "Mecanismo biológico vegetal que aprovecha la energía de la luz solar para sintetizar materia orgánica.",
+      "sotobosque": "Comunidad vegetal formada por matas, arbustos y plantas jóvenes que se desarrolla bajo los árboles de un bosque."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

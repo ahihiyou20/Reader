@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Mapping 2,600 Years of Western Philosophy on a Single Timeline",
-    "vi": "Lập Bản Đồ 2.600 Năm Triết Học Phương Tây Trên Một Dòng Thời Gian"
+    "vi": "Lập Bản Đồ 2.600 Năm Triết Học Phương Tây Trên Một Dòng Thời Gian",
+    "fr": "Cartographier 2 600 ans de philosophie occidentale sur une frise unique",
+    "de": "2.600 Jahre westliche Philosophie auf einer einzigen Zeitleiste",
+    "es": "Mapeo de 2.600 años de filosofía occidental en una sola línea de tiempo"
   },
   "hook": {
     "en": "Starting to study philosophy can feel like standing on a tiny boat in the middle of a vast ocean. A new visual project maps two millennia of thinkers and movements on one shared timeline to help learners see connections {source}.",
-    "vi": "Bắt đầu học triết học có thể giống như đứng trên một chiếc thuyền nhỏ giữa đại dương bao la. Một dự án trực quan mới phác thảo hai thiên niên kỷ các tư tưởng gia và phong trào trên một dòng thời gian chung giúp người học thấy các mối liên hệ {source}."
+    "vi": "Bắt đầu học triết học có thể giống như đứng trên một chiếc thuyền nhỏ giữa đại dương bao la. Một dự án trực quan mới phác thảo hai thiên niên kỷ các tư tưởng gia và phong trào trên một dòng thời gian chung giúp người học thấy các mối liên hệ {source}.",
+    "fr": "S'initier à la philosophie peut donner l'impression d'être sur une frêle embarcation au milieu d'un vaste océan. Un nouveau projet visuel cartographie deux millénaires de penseurs et de courants sur une même frise chronologique pour aider les apprenants à discerner les filiations {source}.",
+    "de": "Der Einstieg in die Philosophie kann sich anfühlen wie eine Fahrt im winzigen Boot mitten auf dem offenen Ozean. Ein neues visuelles Projekt bildet zwei Jahrtausende an Denkenden und Strömungen auf einer gemeinsamen Zeitleiste ab, um Lernenden Zusammenhänge aufzuzeigen {source}.",
+    "es": "Comenzar a estudiar filosofía puede sentirse como estar en un pequeño bote en medio de un vasto océano. Un nuevo proyecto visual mapea dos milenios de pensadores y movimientos en una sola línea cronológica compartida para ayudar a los estudiantes a ver las conexiones {source}."
   },
   "sections": [
     {
       "heading_en": "The Timeline Approach",
       "heading_vi": "Cách Tiếp Cận Theo Dòng Thời Gian",
       "body_en": "Big Think released The Chart of Western Philosophy, designed by Ben Gibson of Pop Chart. The poster traces thoughts from Thales to Žižek. Creators initially considered organizing the layout by the core branches of philosophy like [y:metaphysics] and ethics. Most movements cover multiple branches simultaneously, so the team chose a [p:chronological timeline] layout with specific symbols for each branch.",
-      "body_vi": "Big Think đã phát hành Biểu đồ Triết học phương Tây do Ben Gibson từ Pop Chart thiết kế. Tấm poster lần theo dấu vết các tư tưởng từ Thales đến Žižek. Những người tạo ra ban đầu cân nhắc tổ chức bố cục theo các nhánh chính của triết học như [y:siêu hình học] (*metaphysics*) và đạo đức học. Hầu hết các phong trào bao trùm nhiều nhánh cùng lúc, nên nhóm chọn bố cục [p:dòng thời gian theo thứ tự thời gian] với các ký hiệu cụ thể cho từng nhánh."
+      "body_vi": "Big Think đã phát hành Biểu đồ Triết học phương Tây do Ben Gibson từ Pop Chart thiết kế. Tấm poster lần theo dấu vết các tư tưởng từ Thales đến Žižek. Những người tạo ra ban đầu cân nhắc tổ chức bố cục theo các nhánh chính của triết học như [y:siêu hình học] (*metaphysics*) và đạo đức học. Hầu hết các phong trào bao trùm nhiều nhánh cùng lúc, nên nhóm chọn bố cục [p:dòng thời gian theo thứ tự thời gian] với các ký hiệu cụ thể cho từng nhánh.",
+      "heading_fr": "L'approche chronologique",
+      "body_fr": "Big Think a publié The Chart of Western Philosophy, conçu par Ben Gibson de Pop Chart. L'affiche retrace l'évolution de la pensée de Thalès à Žižek. Les concepteurs avaient d'abord envisagé d'organiser l'ensemble selon les branches fondamentales de la philosophie, telles que la [y:métaphysique] et l'éthique. La plupart des mouvements abordant simultanément plusieurs domaines, l'équipe a opté pour une [p:frise chronologique] associée à des symboles spécifiques pour chaque discipline.",
+      "heading_de": "Der chronologische Ansatz",
+      "body_de": "Big Think veröffentlichte The Chart of Western Philosophy, gestaltet von Ben Gibson von Pop Chart. Das Poster zeichnet Gedankengänge von Thales bis Žižek nach. Die Urheber überlegten zunächst, das Layout nach den Kerngebieten der Philosophie wie [y:Metaphysik] und Ethik zu gliedern. Da die meisten Strömungen jedoch mehrere Disziplinen zugleich abdecken, entschied sich das Team für einen Aufbau als [p:chronologische Zeitleiste] mit eigenen Symbolen für jeden Zweig.",
+      "heading_es": "El enfoque cronológico",
+      "body_es": "Big Think publicó The Chart of Western Philosophy, diseñado por Ben Gibson de Pop Chart. El póster traza el pensamiento desde Thales hasta Žižek. En un principio, los creadores consideraron organizar el diseño según las ramas principales de la filosofía, como la [y:metafísica] y la ética. La mayoría de los movimientos abarcan múltiples ramas de manera simultánea, por lo que el equipo optó por un diseño de [p:línea de tiempo cronológica] con símbolos específicos para cada rama."
     },
     {
       "heading_en": "Filtering Outliers",
       "heading_vi": "Lọc Bỏ Các Yếu Tố Ngoại Vi",
       "body_en": "During research, the team encountered groups that did not fit the core narrative. One example includes the Sophists of ancient Greece. These fifth and fourth century BC tutors focused on rhetoric and public speaking. Plato criticized them as teachers of deception, which shaped the derogatory way the term is used today.",
-      "body_vi": "Trong quá trình nghiên cứu, nhóm gặp những nhóm không khớp với cốt truyện chính. Một ví dụ gồm các nhà ngụy biện của Hy Lạp cổ đại. Các gia sư thế kỷ thứ năm và thứ tư trước Công nguyên này tập trung vào hùng biện và thuyết trình công cộng. Plato chỉ trích họ là những người thầy lừa dối, điều này định hình cách dùng từ mang tính miệt thị ngày nay."
+      "body_vi": "Trong quá trình nghiên cứu, nhóm gặp những nhóm không khớp với cốt truyện chính. Một ví dụ gồm các nhà ngụy biện của Hy Lạp cổ đại. Các gia sư thế kỷ thứ năm và thứ tư trước Công nguyên này tập trung vào hùng biện và thuyết trình công cộng. Plato chỉ trích họ là những người thầy lừa dối, điều này định hình cách dùng từ mang tính miệt thị ngày nay.",
+      "heading_fr": "Écarter les cas marginaux",
+      "body_fr": "Au cours de ses recherches, l'équipe a rencontré des groupes qui ne cadraient pas avec le récit principal. Parmi eux figurent notamment les sophistes de la Grèce antique. Ces précepteurs des cinquième et quatrième siècles avant J.-C. se consacraient à la rhétorique et à l'art oratoire. Platon les a critiqués comme des maîtres de la tromperie, ce qui a forgé le sens péjoratif donné à ce terme aujourd'hui.",
+      "heading_de": "Umgang mit Sonderfällen",
+      "body_de": "Bei den Recherchen stieß das Team auf Strömungen, die nicht in die gängige Erzählung passten. Ein Beispiel dafür sind die Sophisten des antiken Griechenlands. Diese Hauslehrer des 5. und 4. Jahrhunderts v. Chr. konzentrierten sich auf Rhetorik und freie Rede. Platon kritisierte sie als Lehrmeister der Täuschung, was die bis heute abwertende Bedeutung des Begriffs prägte.",
+      "heading_es": "Filtrar casos atípicos",
+      "body_es": "Durante la investigación, el equipo encontró grupos que no encajaban en la narrativa central. Un ejemplo son los sofistas de la antigua Grecia. Estos tutores de los siglos V y IV a. C. se centraban en la retórica y la oratoria. Platón los criticó como maestros del engaño, lo que moldeó el sentido despectivo con el que se utiliza el término hoy en día."
     },
     {
       "heading_en": "Philosophical Disputes",
       "heading_vi": "Tranh Cãi Triết Học",
       "body_en": "Makers discovered a surprising amount of personal conflict among thinkers throughout history. Arthur Schopenhauer insulted Georg Wilhelm Friedrich Hegel as an illiterate charlatan. Voltaire mocked Jean-Jacques Rousseau by stating that reading his essay made people want to walk on all fours. Friedrich Nietzsche similarly dismissed Immanuel Kant as a concept cripple.",
-      "body_vi": "Những người thực hiện phát hiện lượng lớn xung đột cá nhân đáng ngạc nhiên giữa các tư tưởng gia trong lịch sử. Arthur Schopenhauer xúc phạm Georg Wilhelm Friedrich Hegel là kẻ lang băm mù chữ. Voltaire chế nhạo Jean-Jacques Rousseau bằng cách tuyên bố đọc bài luận của ông khiến người ta muốn đi bằng bốn chân. Friedrich Nietzsche cũng bác bỏ Immanuel Kant là kẻ tàn tật về khái niệm."
+      "body_vi": "Những người thực hiện phát hiện lượng lớn xung đột cá nhân đáng ngạc nhiên giữa các tư tưởng gia trong lịch sử. Arthur Schopenhauer xúc phạm Georg Wilhelm Friedrich Hegel là kẻ lang băm mù chữ. Voltaire chế nhạo Jean-Jacques Rousseau bằng cách tuyên bố đọc bài luận của ông khiến người ta muốn đi bằng bốn chân. Friedrich Nietzsche cũng bác bỏ Immanuel Kant là kẻ tàn tật về khái niệm.",
+      "heading_fr": "Querelles philosophiques",
+      "body_fr": "Les concepteurs ont découvert un nombre surprenant de querelles personnelles entre penseurs au fil de l'histoire. Arthur Schopenhauer a ainsi qualifié Georg Wilhelm Friedrich Hegel de charlatan analphabète. Voltaire s'est moqué de Jean-Jacques Rousseau en affirmant que la lecture de son essai donnait envie de marcher à quatre pattes. De même, Friedrich Nietzsche a rejeté Immanuel Kant en le traitant d'estropié du concept.",
+      "heading_de": "Philosophische Fehden",
+      "body_de": "Die Macher stießen im Laufe der Geschichte auf eine überraschende Fülle persönlicher Feindseligkeiten unter Denkern. Arthur Schopenhauer schmähte Georg Wilhelm Friedrich Hegel als ungebildeten Scharlatan. Voltaire spottete über Jean-Jacques Rousseau mit der Bemerkung, beim Lesen seiner Schrift bekomme man Lust, auf allen vieren zu gehen. Friedrich Nietzsche tat Immanuel Kant ganz ähnlich als Begriffskrüppel ab.",
+      "heading_es": "Disputas filosóficas",
+      "body_es": "Los creadores descubrieron una sorprendente cantidad de conflictos personales entre pensadores a lo largo de la historia. Arthur Schopenhauer insultó a Georg Wilhelm Friedrich Hegel llamándolo charlatán analfabeto. Voltaire se burló de Jean-Jacques Rousseau al afirmar que leer su ensayo hacía que la gente quisiera andar a cuatro patas. De manera similar, Friedrich Nietzsche descartó a Immanuel Kant calificándolo de lisiado conceptual."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1073/1080/1920",
+    "url": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Patrick Tomasso",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/Oaqk7qqNh_c"
+    "sourceUrl": "https://unsplash.com/photos/Oaqk7qqNh_c",
+    "wide": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@impatrickt?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -75,6 +101,21 @@
       "Xem xét một dòng thời gian trực quan của các tư tưởng gia lớn để nhận diện các phong trào nền tảng.",
       "Xác định nhánh triết học chính đằng sau một văn bản cụ thể bạn muốn đọc.",
       "So sánh các quan điểm đối lập của hai triết gia đối địch từ cùng một thời kỳ."
+    ],
+    "fr": [
+      "Examiner une frise chronologique des penseurs majeurs pour repérer les mouvements fondateurs.",
+      "Identifier la branche philosophique principale sous-jacente au texte que vous souhaitez lire.",
+      "Comparer les points de vue opposés de deux philosophes rivaux d'une même époque."
+    ],
+    "de": [
+      "Untersuche eine visuelle Zeitleiste bedeutender Denker, um wegweisende Strömungen zu erkennen.",
+      "Bestimme die philosophische Hauptdisziplin hinter einem bestimmten Text, den du lesen möchtest.",
+      "Vergleiche gegensätzliche Standpunkte zweier rivalisierender Philosophen aus derselben Epoche."
+    ],
+    "es": [
+      "Examine una línea de tiempo visual de pensadores destacados para identificar movimientos fundacionales.",
+      "Identifique la rama principal de la filosofía detrás de un texto específico que desee leer.",
+      "Compare las posturas contrastantes de dos filósofos rivales de una misma época."
     ]
   },
   "coverCandidates": [
@@ -111,9 +152,81 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "western philosophy": "The intellectual tradition traced across 2,600 years on the timeline.",
+      "thales": "The ancient Greek thinker marking the starting point of the timeline.",
+      "žižek": "The modern philosopher marking the latest end of the timeline.",
+      "metaphysics": "A branch of philosophy exploring fundamental reality and existence.",
+      "ethics": "A branch of philosophy concerned with moral principles and conduct.",
+      "chronological timeline": "A visual layout arranging philosophical movements sequentially through history.",
+      "sophists": "Ancient Greek tutors who were excluded from the core philosophical timeline.",
+      "rhetoric": "The art of persuasive speaking taught by ancient Greek tutors.",
+      "plato": "An ancient Greek philosopher who criticized the Sophists as deceptive.",
+      "derogatory": "Expressing a critical, negative, or disrespectful judgment.",
+      "charlatan": "A fraud falsely claiming knowledge or skill, used as an insult.",
+      "concept cripple": "A derogatory insult used by Nietzsche to mock Kant's thinking."
+    },
+    "vi": {
+      "siêu hình học": "Nhánh triết học nghiên cứu bản chất nền tảng của thực tại, sự tồn tại và vũ trụ.",
+      "đạo đức học": "Nhánh triết học nghiên cứu các quy tắc luân lý và chuẩn mực hành vi đúng sai.",
+      "thales": "Triết gia Hy Lạp cổ đại, được coi là người đặt nền móng cho triết học phương Tây.",
+      "žižek": "Triết gia và nhà lý luận văn hóa đương đại nổi tiếng người Slovenia.",
+      "nhà ngụy biện": "Các gia sư thời Hy Lạp cổ đại dạy thuật tranh luận, bị chê là lừa dối.",
+      "hùng biện": "Nghệ thuật sử dụng lời nói một cách thuyết phục và lôi cuốn trước công chúng.",
+      "công nguyên": "Kỷ nguyên bắt đầu từ năm được quy ước là Chúa Jesus ra đời.",
+      "plato": "Nhà triết học Hy Lạp cổ đại vĩ đại, học trò của Socrates và thầy của Aristotle.",
+      "arthur schopenhauer": "Triết gia người Đức thế kỷ 19, nổi tiếng với quan điểm triết học bi quan.",
+      "lang băm": "Người chữa bệnh bất hợp pháp, thiếu chuyên môn và thường lừa dối người khác.",
+      "voltaire": "Đại diện tiêu biểu của thời kỳ Khai sáng Pháp, nổi tiếng về tài châm biếm.",
+      "friedrich nietzsche": "Triết gia người Đức thế kỷ 19, nổi tiếng với việc phê phán các giá trị đạo đức.",
+      "immanuel kant": "Triết gia Khai sáng người Đức, có ảnh hưởng sâu sắc đến triết học hiện đại phương Tây."
+    },
+    "fr": {
+      "filiations": "Relations historiques d'héritage intellectuel et de transmission entre différents penseurs ou courants d'idées.",
+      "métaphysique": "Branche philosophique étudiant les principes fondamentaux de la réalité, de l'être et de l'existence.",
+      "éthique": "Discipline philosophique réfléchissant sur les valeurs morales, le bien, la justice et la conduite humaine.",
+      "frise chronologique": "Représentation graphique linéaire ordonnant des penseurs et des événements dans le temps historique.",
+      "sophistes": "Enseignants itinérants de la Grèce antique réputés pour leur maîtrise du discours et de l'argumentation.",
+      "avant j.-c.": "Indication chronologique désignant les siècles précédant le début de l'ère chrétienne.",
+      "rhétorique": "Art du discours et ensemble de techniques visant à persuader ou convaincre un auditoire.",
+      "art oratoire": "Pratique maîtrisée et éloquente de la prise de parole en public.",
+      "charlatan": "Imposteur qui exploite la crédulité d'autrui en se faisant passer pour un savant.",
+      "estropié du concept": "Formule polémique de Nietzsche accusant un philosophe de produire une pensée infirme et abstraite."
+    },
+    "de": {
+      "metaphysik": "Grunddisziplin der Philosophie, die sich mit den fundamentalen Strukturen und Prinzipien der Wirklichkeit befasst.",
+      "ethik": "Philosophische Disziplin, die sich mit den Grundlagen und Kriterien moralischen Urteilens und Handelns beschäftigt.",
+      "sophisten": "Griechische Wanderlehrer der Antike, die gegen Bezahlung Rhetorik, Argumentation und praktische Bildung vermittelten.",
+      "rhetorik": "Die Kunst und Theorie der wirkungsvollen Rede und überzeugenden Argumentation.",
+      "platon": "Antiker griechischer Philosoph, Schüler von Sokrates und Verfasser grundlegender Schriften zur Erkenntnistheorie und Staatsphilosophie.",
+      "scharlatan": "Eine Person, die unberechtigt vorgibt, über besondere Kenntnisse, Fähigkeiten oder Einsichten zu verfügen.",
+      "begriffskrüppel": "Nietzsches polemische Schmähung für Kant, gemünzt auf dessen schwerfällige, abstrakte Begriffsgebäude.",
+      "thales": "Vorsokratischer Naturphilosoph aus Milet, der oft als erster Philosoph des Abendlandes genannt wird.",
+      "žižek": "Zeitgenössischer slowenischer Philosoph und Kulturkritiker, der Psychoanalyse und Philosophie verbindet.",
+      "v. chr.": "Abkürzung für vor Christus zur Datierung von Ereignissen vor Beginn der christlichen Zeitrechnung."
+    },
+    "es": {
+      "filosofía occidental": "Tradición de pensamiento crítico y reflexivo desarrollada principalmente en Europa y América a partir de Grecia.",
+      "metafísica": "Rama de la filosofía que estudia la naturaleza fundamental de la realidad, el ser y la existencia.",
+      "ética": "Rama filosófica que analiza los principios morales, el deber y la distinción entre lo correcto y lo incorrecto.",
+      "casos atípicos": "Grupos o pensadores que no encajan en las narrativas ni en los patrones cronológicos convencionales.",
+      "sofistas": "Maestros griegos de la antigüedad especializados en la enseñanza de la retórica y la persuasión.",
+      "a. c.": "Abreviatura de antes de Cristo, época anterior al inicio del cómputo de la era común.",
+      "retórica": "Disciplina orientada al empleo de técnicas del lenguaje para persuadir, conmover o convencer a los oyentes.",
+      "oratoria": "Arte de expresarse en público con elocuencia para transmitir ideas de manera convincente.",
+      "charlatán analfabeto": "Insulto con el que Schopenhauer acusó a Hegel de farsante desprovisto de verdadera sabiduría.",
+      "lisiado conceptual": "Crítica mordaz de Nietzsche hacia Kant por considerar rígido y defectuoso su aparato conceptual.",
+      "movimientos fundacionales": "Corrientes filosóficas primarias que sentaron las bases conceptuales de escuelas de pensamiento posteriores."
+    }
   }
 }

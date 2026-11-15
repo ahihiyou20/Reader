@@ -12,53 +12,98 @@
   ],
   "title": {
     "en": "Compulsory voting: what Australia's 1924 law did to turnout",
-    "vi": "Bầu cử bắt buộc: đạo luật năm 1924 của Úc đã làm gì với tỷ lệ đi bầu"
+    "vi": "Bầu cử bắt buộc: đạo luật năm 1924 của Úc đã làm gì với tỷ lệ đi bầu",
+    "fr": "Vote obligatoire : l'effet de la loi australienne de 1924 sur la participation",
+    "de": "Wahlpflicht: Was Australiens Gesetz von 1924 für die Beteiligung bewirkte",
+    "es": "Voto obligatorio: el impacto de la ley australiana de 1924 en la participación"
   },
   "hook": {
     "en": "At Australia's 1922 federal election, fewer than 60 percent of voters turned out. Parliament then made voting a legal duty, and at the next election in 1925 turnout rose above [y:91 percent]. According to the Australian Electoral Commission it has never fallen below 90 percent since. The law is still debated, and the arguments on both sides show what compelling people to vote does and does not change.",
-    "vi": "Tại cuộc bầu cử liên bang năm 1922 của Úc, chưa đến 60 phần trăm cử tri đi bỏ phiếu. Sau đó nghị viện biến việc bỏ phiếu thành nghĩa vụ pháp lý, và ở cuộc bầu cử kế tiếp năm 1925, tỷ lệ đi bầu vọt lên trên [y:91 phần trăm]. Theo Ủy ban Bầu cử Úc, con số này chưa từng xuống dưới 90 phần trăm kể từ đó. Đạo luật vẫn còn được tranh luận, và lập luận của cả hai phía cho thấy việc bắt buộc người dân đi bầu thay đổi và không thay đổi điều gì."
+    "vi": "Tại cuộc bầu cử liên bang năm 1922 của Úc, chưa đến 60 phần trăm cử tri đi bỏ phiếu. Sau đó nghị viện biến việc bỏ phiếu thành nghĩa vụ pháp lý, và ở cuộc bầu cử kế tiếp năm 1925, tỷ lệ đi bầu vọt lên trên [y:91 phần trăm]. Theo Ủy ban Bầu cử Úc, con số này chưa từng xuống dưới 90 phần trăm kể từ đó. Đạo luật vẫn còn được tranh luận, và lập luận của cả hai phía cho thấy việc bắt buộc người dân đi bầu thay đổi và không thay đổi điều gì.",
+    "fr": "Lors des élections fédérales australiennes de 1922, moins de 60 pour cent des électeurs se sont déplacés. Le Parlement a ensuite fait du vote une obligation légale, et dès le scrutin suivant, en 1925, la participation a dépassé [y:91 pour cent]. Selon la Commission électorale australienne, elle n'est jamais redescendue sous les 90 pour cent depuis. La loi fait toujours débat, et les arguments de part et d'autre montrent ce que l'obligation de voter change — et ne change pas.",
+    "de": "Bei der australischen Bundeswahl 1922 gaben weniger als 60 Prozent der Wahlberechtigten ihre Stimme ab. Daraufhin machte das Parlament das Wählen zur gesetzlichen Pflicht, und bei der nächsten Wahl 1925 stieg die Beteiligung auf über [y:91 Prozent]. Nach Angaben der Australian Electoral Commission fiel sie seither nie mehr unter 90 Prozent. Das Gesetz ist bis heute umstritten, und die Argumente beider Seiten verdeutlichen, was ein Wahlzwang verändert – und was nicht.",
+    "es": "En las elecciones federales australianas de 1922, menos del 60 por ciento de los votantes acudió a las urnas. El Parlamento convirtió entonces el voto en un deber legal y, en las siguientes elecciones de 1925, la participación superó el [y:91 por ciento]. Según la Comisión Electoral Australiana, desde entonces nunca ha caído por debajo del 90 por ciento. La ley aún genera debate, y los argumentos de ambas partes revelan qué cambia y qué no al obligar a la población a votar."
   },
   "sections": [
     {
       "heading_en": "Nine elections of voluntary voting",
       "heading_vi": "Chín cuộc bầu cử tự nguyện",
       "body_en": "Voting was voluntary at the first nine federal elections in Australia. The Australian Electoral Commission says the main push for change was a fall in turnout from more than 71 percent in 1919 to less than 60 percent in 1922 {aec}. A private member's bill was introduced in the Senate in 1924, and the law took effect before the next election. Australia was not the first to try compulsion in its region. Queensland introduced it in 1915, becoming the first place in the then British Empire to do so.",
-      "body_vi": "Tại chín cuộc bầu cử liên bang đầu tiên của Úc, việc bỏ phiếu là tự nguyện. Ủy ban Bầu cử Úc cho biết động lực chính cho thay đổi là tỷ lệ đi bầu giảm từ hơn 71 phần trăm năm 1919 xuống dưới 60 phần trăm năm 1922 {aec}. Một dự luật của nghị sĩ không thuộc chính phủ được đưa ra tại Thượng viện năm 1924, và luật có hiệu lực trước cuộc bầu cử kế tiếp. Úc không phải nơi đầu tiên trong khu vực thử biện pháp bắt buộc. Queensland đã áp dụng từ năm 1915, trở thành nơi đầu tiên trong Đế quốc Anh khi đó làm như vậy."
+      "body_vi": "Tại chín cuộc bầu cử liên bang đầu tiên của Úc, việc bỏ phiếu là tự nguyện. Ủy ban Bầu cử Úc cho biết động lực chính cho thay đổi là tỷ lệ đi bầu giảm từ hơn 71 phần trăm năm 1919 xuống dưới 60 phần trăm năm 1922 {aec}. Một dự luật của nghị sĩ không thuộc chính phủ được đưa ra tại Thượng viện năm 1924, và luật có hiệu lực trước cuộc bầu cử kế tiếp. Úc không phải nơi đầu tiên trong khu vực thử biện pháp bắt buộc. Queensland đã áp dụng từ năm 1915, trở thành nơi đầu tiên trong Đế quốc Anh khi đó làm như vậy.",
+      "heading_fr": "Neuf élections de vote facultatif",
+      "body_fr": "Le vote était facultatif lors des neuf premières élections fédérales en Australie. Selon la Commission électorale australienne, la principale incitation au changement est venue d'une chute de la participation, passée de plus de 71 pour cent en 1919 à moins de 60 pour cent en 1922 {aec}. Une proposition de loi d'initiative parlementaire a été déposée au Sénat en 1924, et le texte est entré en vigueur avant le scrutin suivant. L'Australie n'était d'ailleurs pas la première à expérimenter la contrainte dans sa région. Le Queensland l'avait instaurée dès 1915, devenant le premier territoire de l'Empire britannique d'alors à franchir le pas.",
+      "heading_de": "Neun Wahlen mit freiwilliger Stimmabgabe",
+      "body_de": "Bei den ersten neun Bundeswahlen in Australien war die Stimmabgabe freiwillig. Laut der Australian Electoral Commission gab vor allem ein Rückgang der Wahlbeteiligung von über 71 Prozent im Jahr 1919 auf unter 60 Prozent im Jahr 1922 den Ausschlag für die Reform {aec}. 1924 wurde ein Initiativgesetzentwurf im Senat eingebracht, und das Gesetz trat noch vor der nächsten Wahl in Kraft. Australien war in seiner Region nicht der erste Vorreiter beim Wahlzwang. Queensland führte ihn bereits 1915 ein und war damit das erste Territorium im damaligen Britischen Empire, das diesen Schritt unternahm.",
+      "heading_es": "Nueve elecciones con voto voluntario",
+      "body_es": "El voto fue voluntario en las nueve primeras elecciones federales de Australia. La Comisión Electoral Australiana afirma que el principal detonante del cambio fue la caída de la participación, que pasó de más del 71 por ciento en 1919 a menos del 60 por ciento en 1922 {aec}. En 1924 se presentó en el Senado un proyecto de ley de iniciativa parlamentaria, y la norma entró en vigor antes de los siguientes comicios. Australia no fue la primera en probar la obligatoriedad en su región: Queensland la implantó en 1915, convirtiéndose en el primer territorio del entonces Imperio británico en hacerlo."
     },
     {
       "heading_en": "A motive of party advantage",
       "heading_vi": "Một động cơ lợi thế đảng phái",
       "body_en": "The Queensland case has an ironic twist. The AEC reports that the Liberal government of Digby Denham seems to have been worried that Labor shop stewards were better at getting voters to the polls, and that compulsion would level the field. Denham lost the 1915 election anyway {aec}.",
-      "body_vi": "Trường hợp Queensland có một nét trớ trêu. AEC ghi lại rằng chính quyền Tự do của Digby Denham dường như lo các đại diện công đoàn của Công đảng giỏi huy động cử tri đến phòng phiếu hơn, và việc bắt buộc sẽ san bằng sân chơi. Dù vậy Denham vẫn thua cuộc bầu cử năm 1915 {aec}."
+      "body_vi": "Trường hợp Queensland có một nét trớ trêu. AEC ghi lại rằng chính quyền Tự do của Digby Denham dường như lo các đại diện công đoàn của Công đảng giỏi huy động cử tri đến phòng phiếu hơn, và việc bắt buộc sẽ san bằng sân chơi. Dù vậy Denham vẫn thua cuộc bầu cử năm 1915 {aec}.",
+      "heading_fr": "Un calcul d'intérêt partisan",
+      "body_fr": "Le cas du Queensland réserve une tournure ironique. L'AEC rapporte que le gouvernement libéral de Digby Denham semblait craindre que les délégués syndicaux travaillistes ne réussissent mieux à mobiliser les électeurs jusqu'aux urnes, et que l'obligation rétablirait l'équilibre. Denham a tout de même perdu les élections de 1915 {aec}.",
+      "heading_de": "Das Motiv des Parteivorteils",
+      "body_de": "Der Fall Queensland weist eine ironische Pointe auf. Wie die AEC berichtet, sorgte sich die liberale Regierung unter Digby Denham offenbar darum, dass Vertrauensleute der Labor Party Wähler erfolgreicher an die Urnen brachten und dass ein Wahlzwang für Chancengleichheit sorgen würde. Denham verlor die Wahl von 1915 dennoch {aec}.",
+      "heading_es": "Un motivo de conveniencia partidista",
+      "body_es": "El caso de Queensland presenta un giro irónico. La AEC señala que el gobierno liberal de Digby Denham parecía temer que los delegados sindicales laboristas movilizaran mejor a los electores hacia las urnas, por lo que la obligatoriedad equilibraría el terreno de juego. De todos modos, Denham perdió las elecciones de 1915 {aec}."
     },
     {
       "heading_en": "What changed in 1925",
       "heading_vi": "Điều thay đổi năm 1925",
       "body_en": "The effect was immediate. Turnout at the 1925 election rose to more than 91 percent {aec}. Wikipedia gives the longer view: before 1924, voluntary voting drew between 47 and 78 percent of eligible voters, while afterwards the figure ran between 91 and 96 percent {wiki-cv}. Venezuela provides a reverse example, where turnout fell from 82 percent to 61 percent in 1993 once compulsion was removed. Of the countries that enforce compulsory voting, Belgium has the oldest system, introduced in 1893 for men and in 1948 for women.",
-      "body_vi": "Tác động diễn ra ngay lập tức. Tỷ lệ đi bầu ở cuộc bầu cử năm 1925 tăng lên hơn 91 phần trăm {aec}. Wikipedia cho cái nhìn dài hạn hơn: trước năm 1924, bầu cử tự nguyện thu hút từ 47 đến 78 phần trăm cử tri đủ điều kiện, còn sau đó con số này dao động từ 91 đến 96 phần trăm {wiki-cv}. Venezuela là ví dụ ngược lại, khi tỷ lệ đi bầu giảm từ 82 xuống 61 phần trăm năm 1993 sau khi bỏ quy định bắt buộc. Trong số các nước thi hành bầu cử bắt buộc, Bỉ có hệ thống lâu đời nhất, áp dụng từ năm 1893 cho nam giới và 1948 cho nữ giới."
+      "body_vi": "Tác động diễn ra ngay lập tức. Tỷ lệ đi bầu ở cuộc bầu cử năm 1925 tăng lên hơn 91 phần trăm {aec}. Wikipedia cho cái nhìn dài hạn hơn: trước năm 1924, bầu cử tự nguyện thu hút từ 47 đến 78 phần trăm cử tri đủ điều kiện, còn sau đó con số này dao động từ 91 đến 96 phần trăm {wiki-cv}. Venezuela là ví dụ ngược lại, khi tỷ lệ đi bầu giảm từ 82 xuống 61 phần trăm năm 1993 sau khi bỏ quy định bắt buộc. Trong số các nước thi hành bầu cử bắt buộc, Bỉ có hệ thống lâu đời nhất, áp dụng từ năm 1893 cho nam giới và 1948 cho nữ giới.",
+      "heading_fr": "Ce qui a changé en 1925",
+      "body_fr": "L'effet a été immédiat. La participation aux élections de 1925 a grimpé à plus de 91 pour cent {aec}. Wikipédia offre une perspective plus large : avant 1924, le vote facultatif mobilisait entre 47 et 78 pour cent des électeurs inscrits, tandis qu'après cette date, le taux s'est maintenu entre 91 et 96 pour cent {wiki-cv}. Le Venezuela offre un contre-exemple frappant, où la participation a chuté de 82 pour cent à 61 pour cent en 1993 une fois l'obligation levée. Parmi les pays qui appliquent le vote obligatoire, la Belgique possède le système le plus ancien, instauré en 1893 pour les hommes et en 1948 pour les femmes.",
+      "heading_de": "Was sich 1925 änderte",
+      "body_de": "Die Wirkung trat unmittelbar ein. Bei der Wahl von 1925 stieg die Wahlbeteiligung auf mehr als 91 Prozent {aec}. Wikipedia liefert den langfristigen Vergleich: Vor 1924 mobilisierte die freiwillige Wahl zwischen 47 und 78 Prozent der Wahlberechtigten, während die Quote danach zwischen 91 und 96 Prozent lag {wiki-cv}. Venezuela bietet ein gegenteiliges Beispiel: Dort fiel die Wahlbeteiligung 1993 nach Abschaffung der Wahlpflicht von 82 Prozent auf 61 Prozent. Unter den Ländern, die eine Wahlpflicht durchsetzen, besitzt Belgien das älteste System, das 1893 für Männer und 1948 für Frauen eingeführt wurde.",
+      "heading_es": "Qué cambió en 1925",
+      "body_es": "El efecto fue inmediato. La participación en las elecciones de 1925 aumentó a más del 91 por ciento {aec}. Wikipedia ofrece una perspectiva más amplia: antes de 1924, el voto voluntario atraía a entre el 47 y el 78 por ciento de los votantes habilitados, mientras que después la cifra osciló entre el 91 y el 96 por ciento {wiki-cv}. Venezuela constituye un contraejemplo: allí la participación cayó del 82 al 61 por ciento en 1993 una vez eliminada la obligatoriedad. Entre los países que aplican el voto obligatorio, Bélgica cuenta con el sistema más antiguo, instaurado en 1893 para los hombres y en 1948 para las mujeres."
     },
     {
       "heading_en": "What the law asks of voters",
       "heading_vi": "Luật yêu cầu gì ở cử tri",
       "body_en": "Australian law states that it is the duty of every elector to vote at each election. In return, the system offers several ways to cast a ballot: postal voting, pre-poll voting, absent voting, voting at Australian missions overseas, and mobile teams that visit hospitals, nursing homes and remote localities {aec}. Penalties are mild. At the 2013 federal election the fine for not voting was up to A$20, and turnout was 92 percent {wiki-cv}. Enforcement varies widely from country to country, and in some countries the penalty is severe while in others it is almost nonexistent.",
-      "body_vi": "Luật Úc quy định mỗi cử tri có nghĩa vụ bỏ phiếu ở mỗi cuộc bầu cử. Đổi lại, hệ thống cung cấp nhiều cách để bỏ phiếu: bỏ phiếu qua bưu điện, bỏ phiếu sớm, bỏ phiếu vắng mặt, bỏ phiếu tại các cơ quan đại diện Úc ở nước ngoài, và các đội lưu động đến bệnh viện, nhà dưỡng lão và vùng xa {aec}. Mức phạt nhẹ. Ở cuộc bầu cử liên bang năm 2013, tiền phạt vì không đi bầu tối đa là 20 đô la Úc, và tỷ lệ đi bầu đạt 92 phần trăm {wiki-cv}. Mức độ thi hành khác nhau rất nhiều giữa các nước, có nơi hình phạt nặng, có nơi gần như không có."
+      "body_vi": "Luật Úc quy định mỗi cử tri có nghĩa vụ bỏ phiếu ở mỗi cuộc bầu cử. Đổi lại, hệ thống cung cấp nhiều cách để bỏ phiếu: bỏ phiếu qua bưu điện, bỏ phiếu sớm, bỏ phiếu vắng mặt, bỏ phiếu tại các cơ quan đại diện Úc ở nước ngoài, và các đội lưu động đến bệnh viện, nhà dưỡng lão và vùng xa {aec}. Mức phạt nhẹ. Ở cuộc bầu cử liên bang năm 2013, tiền phạt vì không đi bầu tối đa là 20 đô la Úc, và tỷ lệ đi bầu đạt 92 phần trăm {wiki-cv}. Mức độ thi hành khác nhau rất nhiều giữa các nước, có nơi hình phạt nặng, có nơi gần như không có.",
+      "heading_fr": "Ce que la loi exige des électeurs",
+      "body_fr": "La législation australienne dispose qu'il est du devoir de chaque électeur de voter à chaque scrutin. En contrepartie, le système propose plusieurs manières d'exprimer son vote : le vote par correspondance, le vote par anticipation, le vote hors circonscription, le vote dans les représentations australiennes à l'étranger, ainsi que des équipes mobiles qui se rendent dans les hôpitaux, les maisons de retraite et les localités isolées {aec}. Les sanctions restent modérées. Lors des élections fédérales de 2013, l'amende pour abstention non justifiée s'élevait au maximum à A$20, et la participation a atteint 92 pour cent {wiki-cv}. L'application de la règle varie considérablement d'un pays à l'autre : dans certains, les peines sont sévères, tandis que dans d'autres, elles sont presque inexistantes.",
+      "heading_de": "Was das Gesetz von den Wählenden verlangt",
+      "body_de": "Das australische Gesetz bestimmt, dass jeder Wahlberechtigte die Pflicht hat, bei jeder Wahl abzustimmen. Im Gegenzug eröffnet das System mehrere Wege zur Stimmabgabe: Briefwahl, vorzeitige Stimmabgabe, Abwesenheitswahl, Stimmabgabe in australischen Auslandsvertretungen sowie mobile Teams, die Krankenhäuser, Pflegeheime und entlegene Orte besuchen {aec}. Die Strafen sind mild. Bei der Bundeswahl 2013 betrug das Bußgeld für Nichtwähler bis zu A$20, und die Wahlbeteiligung lag bei 92 Prozent {wiki-cv}. Die Durchsetzung unterscheidet sich von Land zu Land stark: In einigen Staaten sind die Strafen drakonisch, während sie in anderen kaum existieren.",
+      "heading_es": "Qué exige la ley a los votantes",
+      "body_es": "La legislación australiana establece que votar en cada elección es un deber de todo elector. A cambio, el sistema ofrece diversas modalidades para emitir el sufragio: voto por correo, voto anticipado, voto de electores ausentes, voto en representaciones diplomáticas en el extranjero y equipos móviles que acuden a hospitales, residencias de ancianos y localidades remotas {aec}. Las sanciones son leves. En las elecciones federales de 2013, la multa por no votar era de hasta A$20, y la participación alcanzó el 92 por ciento {wiki-cv}. La aplicación de la norma varía de forma considerable según el país: en algunos las penas son severas, mientras que en otros resultan prácticamente inexistentes."
     },
     {
       "heading_en": "The case for it",
       "heading_vi": "Lý lẽ ủng hộ",
       "body_en": "Supporters argue that low-turnout elections are not random samples of the electorate, so they distort whose preferences count. Higher turnout, they say, gives a more representative result {wiki-cv}. Australian academic Lisa Hill, a supporter, describes a prisoner's dilemma under voluntary systems: for marginalised citizens it can seem rational to stay home, assuming others in the same position will too, which saves scarce time and money but leaves their group unheard. Mild penalties are claimed to be enough to shift this outcome, since the law only needs a [g:modest cost] to change behaviour.",
-      "body_vi": "Người ủng hộ lập luận rằng các cuộc bầu cử có tỷ lệ đi bầu thấp không phải là mẫu ngẫu nhiên của cử tri, nên chúng làm méo việc ý muốn của ai được tính. Tỷ lệ đi bầu cao hơn, theo họ, cho kết quả mang tính đại diện hơn {wiki-cv}. Học giả người Úc Lisa Hill, một người ủng hộ, mô tả một thế tiến thoái lưỡng nan kiểu tù nhân (*prisoner's dilemma*) trong hệ thống tự nguyện: với công dân yếu thế, ở nhà có thể có vẻ hợp lý khi cho rằng những người cùng cảnh ngộ cũng làm vậy, tiết kiệm thời gian và tiền bạc khan hiếm nhưng khiến nhóm của họ không được lắng nghe. Hình phạt nhẹ được cho là đủ để đổi kết quả này, vì luật chỉ cần [g:một cái giá vừa phải] để đổi hành vi."
+      "body_vi": "Người ủng hộ lập luận rằng các cuộc bầu cử có tỷ lệ đi bầu thấp không phải là mẫu ngẫu nhiên của cử tri, nên chúng làm méo việc ý muốn của ai được tính. Tỷ lệ đi bầu cao hơn, theo họ, cho kết quả mang tính đại diện hơn {wiki-cv}. Học giả người Úc Lisa Hill, một người ủng hộ, mô tả một thế tiến thoái lưỡng nan kiểu tù nhân (*prisoner's dilemma*) trong hệ thống tự nguyện: với công dân yếu thế, ở nhà có thể có vẻ hợp lý khi cho rằng những người cùng cảnh ngộ cũng làm vậy, tiết kiệm thời gian và tiền bạc khan hiếm nhưng khiến nhóm của họ không được lắng nghe. Hình phạt nhẹ được cho là đủ để đổi kết quả này, vì luật chỉ cần [g:một cái giá vừa phải] để đổi hành vi.",
+      "heading_fr": "Les arguments en sa faveur",
+      "body_fr": "Ses partisans soutiennent que les scrutins à faible participation ne constituent pas un échantillon représentatif aléatoire du corps électoral, ce qui fausse la prise en compte des préférences politiques. Une participation plus forte permettrait, selon eux, d'obtenir un résultat plus fidèle {wiki-cv}. L'universitaire australienne Lisa Hill, qui défend cette mesure, décrit un dilemme du prisonnier propre aux systèmes facultatifs : pour des citoyens marginalisés, il peut sembler rationnel de s'abstenir en supposant que d'autres dans la même situation en feront autant, ce qui économise un temps et de l'argent précieux, mais réduit leur groupe au silence. De faibles sanctions suffiraient à modifier ce résultat, puisqu'il ne faut à la loi qu'un [g:coût modeste] pour faire évoluer les comportements.",
+      "heading_de": "Die Argumente dafür",
+      "body_de": "Befürworter argumentieren, dass Wahlen mit geringer Beteiligung keine Zufallsstichproben der Wählerschaft darstellen und daher das Bild verzerren, wessen Präferenzen zählen. Eine höhere Beteiligung führe zu einem repräsentativeren Ergebnis {wiki-cv}. Die australische Wissenschaftlerin Lisa Hill, eine Befürworterin, beschreibt ein Gefangenendilemma unter freiwilligen Systemen: Für marginalisierte Bürger könne es rational erscheinen, der Wahl fernzubleiben, da sie annehmen, dass andere in derselben Lage dies ebenfalls tun. Dies spare knappe Zeit und Geld, lasse ihre Gruppe jedoch ungehört. Milde Strafen sollen ausreichen, um diese Dynamik zu verändern, da dem Gesetz schon [g:geringe Kosten] genügen, um das Verhalten zu beeinflussen.",
+      "heading_es": "Los argumentos a favor",
+      "body_es": "Quienes lo defienden sostienen que las elecciones con baja participación no constituyen muestras aleatorias del electorado, por lo que distorsionan qué preferencias se toman en cuenta. Afirman que una mayor concurrencia produce un resultado más representativo {wiki-cv}. La académica australiana Lisa Hill, partidaria de esta medida, describe un dilema del prisionero bajo los sistemas voluntarios: para los ciudadanos marginados puede parecer racional quedarse en casa, asumiendo que otros en su misma situación harán lo mismo, lo que ahorra tiempo y dinero escasos pero deja a su colectivo sin voz. Se argumenta que basta con sanciones leves para modificar este resultado, ya que la ley solo requiere un [g:coste modesto] para alterar el comportamiento."
     },
     {
       "heading_en": "The case against it",
       "heading_vi": "Lý lẽ phản đối",
       "body_en": "Critics raise several objections. One is that compulsory voting compels speech, which they say violates the freedom not to speak {wiki-cv}. Another is quality. Opponents argue that compulsion raises the number of informal votes, meaning ballots that are not completed correctly, which in the House of Representatives rose from 3.0 percent in 1993 to 5.2 percent in 2004. The AEC itself says the link between informal voting and compulsion is difficult to prove, and that most informal votes probably come from misunderstanding the rules {aec}. Enforcement also costs money, since officials must decide whether non-voters had a valid reason.",
-      "body_vi": "Những người chỉ trích nêu ra nhiều phản đối. Một là bầu cử bắt buộc ép buộc phát ngôn, điều mà họ cho là vi phạm quyền tự do không phát biểu {wiki-cv}. Hai là chất lượng. Phe phản đối lập luận rằng sự bắt buộc làm tăng số phiếu không hợp lệ, tức những lá phiếu không điền đúng, mà ở Hạ viện đã tăng từ 3,0 phần trăm năm 1993 lên 5,2 phần trăm năm 2004. Chính AEC nói rằng mối liên hệ giữa phiếu không hợp lệ và sự bắt buộc khó chứng minh, và phần lớn phiếu không hợp lệ có lẽ đến từ việc hiểu sai quy định {aec}. Việc thi hành cũng tốn kém, vì các viên chức phải xét xem người không đi bầu có lý do chính đáng hay không."
+      "body_vi": "Những người chỉ trích nêu ra nhiều phản đối. Một là bầu cử bắt buộc ép buộc phát ngôn, điều mà họ cho là vi phạm quyền tự do không phát biểu {wiki-cv}. Hai là chất lượng. Phe phản đối lập luận rằng sự bắt buộc làm tăng số phiếu không hợp lệ, tức những lá phiếu không điền đúng, mà ở Hạ viện đã tăng từ 3,0 phần trăm năm 1993 lên 5,2 phần trăm năm 2004. Chính AEC nói rằng mối liên hệ giữa phiếu không hợp lệ và sự bắt buộc khó chứng minh, và phần lớn phiếu không hợp lệ có lẽ đến từ việc hiểu sai quy định {aec}. Việc thi hành cũng tốn kém, vì các viên chức phải xét xem người không đi bầu có lý do chính đáng hay không.",
+      "heading_fr": "Les arguments contre",
+      "body_fr": "Les détracteurs soulèvent plusieurs objections. L'une d'elles est que le vote obligatoire contraint à l'expression, ce qui, selon eux, enfreint la liberté de ne pas s'exprimer {wiki-cv}. Une autre concerne la qualité du vote. Les opposants font valoir que la contrainte augmente le nombre de votes nuls ou blancs, c'est-à-dire de bulletins non remplis correctement, dont la proportion à la Chambre des représentants est passée de 3.0 pour cent en 1993 à 5.2 pour cent en 2004. L'AEC affirme elle-même que le lien entre vote nul et obligation demeure difficile à prouver, et que la plupart de ces bulletins résultent sans doute d'une mauvaise compréhension des règles {aec}. L'application de la loi engendre également des coûts, puisque l'administration doit déterminer si les abstentionnistes avaient un motif valable.",
+      "heading_de": "Die Argumente dagegen",
+      "body_de": "Kritiker erheben mehrere Einwände. Einer davon lautet, dass eine Wahlpflicht zum Sprechen zwinge, was nach ihrer Ansicht die Freiheit verletze, sich nicht zu äußern {wiki-cv}. Ein weiterer betrifft die Qualität. Gegner machen geltend, dass der Zwang die Zahl ungültiger Stimmen erhöhe – also Stimmzettel, die nicht ordnungsgemäß ausgefüllt wurden –, deren Anteil im Repräsentantenhaus von 3.0 Prozent im Jahr 1993 auf 5.2 Prozent im Jahr 2004 anstieg. Die AEC selbst erklärt, dass der Zusammenhang zwischen Wahlpflicht und ungültigen Stimmen schwer nachzuweisen sei und die meisten ungültigen Stimmen wohl auf einem Missverständnis der Regeln beruhten {aec}. Auch die Durchsetzung kostet Geld, da Behörden prüfen müssen, ob Nichtwähler einen triftigen Grund hatten.",
+      "heading_es": "Los argumentos en contra",
+      "body_es": "Los detractores plantean diversas objeciones. Una de ellas es que el voto obligatorio impone la expresión política, lo cual, según afirman, vulnera la libertad de no expresarse {wiki-cv}. Otra radica en la calidad del voto. Quienes se oponen sostienen que la obligatoriedad incrementa la cantidad de votos informales —es decir, papeletas que no se rellenan correctamente—, que en la Cámara de Representantes pasaron del 3,0 por ciento en 1993 al 5,2 por ciento en 2004. La propia AEC sostiene que el vínculo entre el voto informal y la obligatoriedad es difícil de demostrar, y que la mayoría de los votos informales probablemente se deben al desconocimiento de las normas {aec}. Además, la aplicación de la ley conlleva costes económicos, ya que los funcionarios deben determinar si quienes se abstuvieron tenían un motivo válido."
     }
   ],
   "keyPoint": {
     "en": "Australia's 1924 law lifted federal turnout from under 60 percent in 1922 to over 91 percent in 1925, with fines as low as A$20. Supporters say the result is a more representative electorate. Critics point to compelled speech and more invalid ballots, and the evidence on that second point is disputed.",
-    "vi": "Đạo luật năm 1924 của Úc nâng tỷ lệ đi bầu liên bang từ dưới 60 phần trăm năm 1922 lên trên 91 phần trăm năm 1925, với tiền phạt chỉ tối đa 20 đô la Úc. Người ủng hộ nói kết quả là một khối cử tri mang tính đại diện hơn. Người chỉ trích nêu việc ép buộc phát ngôn và nhiều phiếu không hợp lệ hơn, và bằng chứng về điểm thứ hai còn gây tranh cãi."
+    "vi": "Đạo luật năm 1924 của Úc nâng tỷ lệ đi bầu liên bang từ dưới 60 phần trăm năm 1922 lên trên 91 phần trăm năm 1925, với tiền phạt chỉ tối đa 20 đô la Úc. Người ủng hộ nói kết quả là một khối cử tri mang tính đại diện hơn. Người chỉ trích nêu việc ép buộc phát ngôn và nhiều phiếu không hợp lệ hơn, và bằng chứng về điểm thứ hai còn gây tranh cãi.",
+    "fr": "La loi australienne de 1924 a fait passer la participation fédérale de moins de 60 pour cent en 1922 à plus de 91 pour cent en 1925, avec des amendes n'excédant pas A$20. Ses partisans affirment que le résultat est un corps électoral plus représentatif. Ses détracteurs dénoncent une parole forcée et une hausse des bulletins nuls, un second point dont la réalité empirique reste contestée.",
+    "de": "Australiens Gesetz von 1924 steigerte die Wahlbeteiligung auf Bundesebene von unter 60 Prozent im Jahr 1922 auf über 91 Prozent im Jahr 1925 – bei Bußgeldern von lediglich A$20. Befürworter heben eine repräsentativere Wählerschaft hervor. Kritiker verweisen auf den Zwang zur Meinungsäußerung sowie auf mehr ungültige Stimmzettel, wobei die Beweislage zum zweiten Punkt umstritten ist.",
+    "es": "La ley australiana de 1924 elevó la participación federal de menos del 60 por ciento en 1922 a más del 91 por ciento en 1925, con multas de tan solo A$20. Quienes la respaldan afirman que el resultado es un electorado más representativo. Los críticos señalan la imposición de la expresión política y un incremento de papeletas no válidas, aunque las pruebas sobre este segundo punto son objeto de controversia."
   },
   "applySteps": {
     "en": [
@@ -70,6 +115,21 @@
       "Tra tỷ lệ đi bầu ở cuộc bầu cử quốc gia gần nhất của nước bạn và so với một nước thi hành bầu cử bắt buộc.",
       "Viết ra một lý do bạn dùng để ủng hộ hoặc phản đối bầu cử bắt buộc, và một sự kiện có thể làm bạn đổi ý.",
       "Tìm hiểu cơ quan bầu cử địa phương cho phép bỏ phiếu sớm hoặc qua bưu điện thế nào, và chia sẻ một lựa chọn với một người bạn."
+    ],
+    "fr": [
+      "Consultez le taux de participation à la dernière élection nationale de votre pays et comparez-le avec celui d'un pays appliquant le vote obligatoire.",
+      "Notez un argument que vous donneriez pour ou contre le vote obligatoire, ainsi qu'un fait susceptible de vous faire changer d'avis.",
+      "Renseignez-vous sur les modalités proposées par votre bureau électoral local pour voter par anticipation ou par correspondance, puis partagez une option avec un proche."
+    ],
+    "de": [
+      "Schlage die Wahlbeteiligung bei der jüngsten nationalen Wahl in deinem Land nach und vergleiche sie mit einem Land, das eine Wahlpflicht durchsetzt.",
+      "Notiere einen Grund, den du für oder gegen eine Wahlpflicht anführen würdest, sowie eine Tatsache, die deine Meinung ändern würde.",
+      "Finde heraus, wie dein lokales Wahlamt die vorzeitige Stimmabgabe oder Briefwahl ermöglicht, und teile eine Option mit einem Freund."
+    ],
+    "es": [
+      "Consulte la tasa de participación en las elecciones nacionales más recientes de su país y compárela con la de un país que aplica el voto obligatorio.",
+      "Escriba una razón que daría a favor o en contra del voto obligatorio y un dato concreto que le haría cambiar de opinión.",
+      "Averigüe de qué manera su oficina electoral local permite votar de forma anticipada o por correo, y comparta una de esas opciones con un amigo."
     ]
   },
   "references": [
@@ -94,12 +154,90 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/compulsory-voting-australia-1924.webp",
+    "url": "https://images.unsplash.com/7/salzburg-x.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODc0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Alex",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/zMz14hsbpuU"
+    "sourceUrl": "https://unsplash.com/photos/zMz14hsbpuU",
+    "wide": "https://images.unsplash.com/7/salzburg-x.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODc0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@alex?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoQABwAPu1qrU8ppiQiMAgBMB2JaQAD5RZlmEgf3MHQ0h2KoAD+/TL4ck735tAje1QZsb/5Z/MDxok95rnLQkqZXKL/0gd11//lh7AqlcoGywjrgEiykptIVJTLWaoK02lT7tVsLYxpnU3uzVwXlmk4v+fMHZtJ+jaqOwgAAAA=",
-  "dominant": "#616161"
+  "dominant": "#616161",
+  "glossary": {
+    "en": {
+      "australian electoral commission": "Australia's independent statutory agency responsible for organizing and conducting federal elections and referendums.",
+      "private member's bill": "A proposed law introduced in parliament by a legislator who is not an executive government minister.",
+      "shop stewards": "Union representatives chosen by fellow workers to represent organized labour in a specific workplace.",
+      "elector": "A citizen who is registered and legally qualified to cast a vote in an election.",
+      "postal voting": "An arrangement allowing electors to cast their ballot by mail rather than visiting a polling place.",
+      "pre-poll voting": "Casting a ballot at an official early voting centre before formal election day.",
+      "absent voting": "Voting on election day outside of one's assigned home electorate or polling location.",
+      "prisoner's dilemma": "A scenario where individuals acting rationally in self-interest produce an outcome worse for everyone than cooperating.",
+      "compulsory voting": "A legal requirement obliging eligible citizens to participate in elections or face a penalty.",
+      "informal votes": "Ballot papers that are not completed properly or left blank, making them invalid to count.",
+      "house of representatives": "The lower chamber of the Australian Parliament, composed of members representing individual electoral divisions."
+    },
+    "vi": {
+      "nghị viện": "Cơ quan lập pháp cao nhất, có quyền ban hành và thông qua các đạo luật quốc gia.",
+      "dự luật": "Bản dự thảo một đạo luật được trình ra cơ quan lập pháp xem xét và thông qua.",
+      "thượng viện": "Viện cấp cao trong hệ thống nghị viện, đại diện cho các bang trong quốc hội liên bang.",
+      "hạ viện": "Viện đại biểu nhân dân trong nghị viện, đại diện trực tiếp cho các cử tri khu vực.",
+      "aec": "Ủy ban Bầu cử Úc, cơ quan độc lập tổ chức và quản lý bầu cử liên bang.",
+      "công đảng": "Chính đảng lớn tại Úc gắn liền với phong trào lao động và các tổ chức công đoàn.",
+      "công đoàn": "Tổ chức đại diện và bảo vệ quyền lợi hợp pháp của người lao động.",
+      "đế quốc anh": "Hệ thống thuộc địa và các vùng lãnh thổ tự trị do chính quyền Anh kiểm soát trước đây.",
+      "bỏ phiếu sớm": "Hình thức cho phép cử tri tham gia bỏ phiếu trước ngày bầu cử chính thức.",
+      "đội lưu động": "Nhóm phụ trách bầu cử trực tiếp đến các địa điểm đặc biệt như bệnh viện để thu phiếu.",
+      "mẫu ngẫu nhiên": "Tập hợp cử tri chọn ngẫu nhiên nhằm đại diện khách quan cho ý kiến toàn thể cử tri.",
+      "prisoner's dilemma": "Thế tiến thoái lưỡng nan trong lý thuyết trò chơi, khi toan tính cá nhân cản trở lợi ích chung."
+    },
+    "fr": {
+      "aec": "Commission électorale australienne, organisme public chargé de l'organisation des élections fédérales.",
+      "vote obligatoire": "Obligation légale faite aux citoyens inscrits de participer aux scrutins sous peine de sanction.",
+      "vote facultatif": "Système électoral où chaque citoyen est libre de voter ou de s'abstenir.",
+      "dilemme du prisonnier": "Situation où des choix individuels rationnels mènent à un résultat collectif défavorable pour tous.",
+      "vote par anticipation": "Possibilité légale d'exprimer son suffrage avant la date officielle du scrutin.",
+      "vote hors circonscription": "Modalité permettant à un électeur de voter en dehors de son bureau habituel.",
+      "vote par correspondance": "Transmission d'un suffrage par la poste plutôt qu'en personne dans l'isoloir.",
+      "chambre des représentants": "Chambre basse du Parlement fédéral australien, où siègent les députés élus.",
+      "délégués syndicaux": "Représentants ouvriers chargés de défendre les salariés et souvent mobilisés par les travaillistes.",
+      "proposition de loi": "Texte législatif déposé par un ou plusieurs parlementaires, et non par le gouvernement."
+    },
+    "de": {
+      "wahlpflicht": "Gesetzliche Verpflichtung für Bürger, an Wahlen teilzunehmen oder einen Stimmzettel abzugeben.",
+      "australian electoral commission": "Unabhängige australische Wahlbehörde, die für die Organisation und Durchführung von Bundeswahlen verantwortlich ist.",
+      "aec": "Offizielle Abkürzung für die australische Wahlkommission Australian Electoral Commission.",
+      "initiativgesetzentwurf": "Gesetzesantrag, der von einzelnen Parlamentsmitgliedern statt von der Regierung eingebracht wird.",
+      "britischen empire": "Ehemaliges britisches Kolonialreich, zu dem Australien historisch als Teil gehörte.",
+      "labor party": "Australische sozialdemokratische Partei mit enger historischer Anbindung an die Gewerkschaften.",
+      "abwesenheitswahl": "Möglichkeit, am Wahltag die Stimme außerhalb des eigenen registrierten Wahlbezirks abzugeben.",
+      "gefangenendilemma": "Spieltheoretisches Problem, bei dem individuelles rationales Handeln zu einem kollektiv unvorteilhaften Ergebnis führt.",
+      "repräsentantenhaus": "Unterhaus des australischen Bundesparlaments, dessen Sitze nach Wahlkreisen vergeben werden.",
+      "ungültiger stimmen": "Stimmzettel, die fehlerhaft, leer oder unvollständig abgegeben wurden und daher nicht zählen."
+    },
+    "es": {
+      "aec": "Organismo público independiente responsable de organizar y supervisar las elecciones federales y referendos en Australia.",
+      "proyecto de ley": "Propuesta legislativa presentada formalmente ante una cámara del parlamento para su debate y eventual aprobación.",
+      "delegados sindicales": "Representantes de los trabajadores sindicalizados encargados de organizar labores laborales y movilizar apoyos políticos.",
+      "votantes habilitados": "Ciudadanos con derecho legal a sufragar inscritos debidamente en el censo electoral.",
+      "voto por correo": "Modalidad de sufragio enviada a distancia mediante el servicio postal sin acudir a la urna.",
+      "voto anticipado": "Procedimiento que permite emitir el sufragio antes del día oficial de las elecciones.",
+      "dilema del prisionero": "Modelo teórico donde decisiones individuales racionales conducen a un resultado colectivo perjudicial o subóptimo.",
+      "votos informales": "Papeletas electorales completadas de forma incorrecta o en blanco que no pueden ser computadas.",
+      "cámara de representantes": "Cámara baja del Parlamento australiano cuyos miembros representan a diferentes distritos electorales.",
+      "voto voluntario": "Régimen electoral en el que acudir a las urnas es optativo para los ciudadanos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Replacing Regular Salt with Potassium Mix Could Save Millions",
-    "vi": "Thay Thế Muối Thường Bằng Hỗn Hợp Kali Có Thể Cứu Sống Hàng Triệu Người"
+    "vi": "Thay Thế Muối Thường Bằng Hỗn Hợp Kali Có Thể Cứu Sống Hàng Triệu Người",
+    "fr": "Remplacer le sel ordinaire par un mélange au potassium pourrait sauver des millions de vies",
+    "de": "Ersatz von Speisesalz durch Kaliummischung könnte Millionen retten",
+    "es": "Sustituir la sal común por una mezcla con potasio podría salvar millones de vidas"
   },
   "hook": {
     "en": "Consuming too much sodium strains your system and drives up blood pressure. A recent study reveals that replacing standard salt with a potassium-enriched alternative [p:may save nearly three million lives annually] worldwide {source}.",
-    "vi": "Tiêu thụ quá nhiều natri làm căng thẳng cơ thể và đẩy huyết áp lên cao. Một nghiên cứu gần đây tiết lộ rằng việc thay thế muối tiêu chuẩn bằng một loại muối giàu kali thay thế [p:có thể cứu sống gần ba triệu người mỗi năm] trên toàn cầu {source}."
+    "vi": "Tiêu thụ quá nhiều natri làm căng thẳng cơ thể và đẩy huyết áp lên cao. Một nghiên cứu gần đây tiết lộ rằng việc thay thế muối tiêu chuẩn bằng một loại muối giàu kali thay thế [p:có thể cứu sống gần ba triệu người mỗi năm] trên toàn cầu {source}.",
+    "fr": "Une consommation excessive de sodium éprouve l’organisme et favorise l’hypertension artérielle. Selon une étude récente, remplacer le sel traditionnel par une formule enrichie en potassium [p:pourrait sauver près de trois millions de vies par an] à l’échelle mondiale {source}.",
+    "de": "Der Konsum von zu viel Natrium belastet deinen Organismus und treibt den Blutdruck in die Höhe. Eine aktuelle Studie zeigt, dass der Ersatz von herkömmlichem Salz durch eine kaliumangereicherte Alternative weltweit [p:jährlich fast drei Millionen Menschenleben retten könnte] {source}.",
+    "es": "Consumir demasiado sodio sobrecarga el organismo y eleva la presión arterial. Un estudio reciente revela que reemplazar la sal común por una alternativa enriquecida con potasio [p:podría salvar casi tres millones de vidas al año] en todo el mundo {source}."
   },
   "sections": [
     {
       "heading_en": "Global Health Impact",
       "heading_vi": "Tác Động Sức Khỏe Toàn Cầu",
       "body_en": "Researchers at The George Institute for Global Health modeled population health effects from swapping regular salt for a potassium-enriched mix. They calculated that worldwide replacement could prevent **2.96 million deaths** each year. The change would also stop 10.17 million new hypertension cases and avoid 69.43 million lost disability-adjusted life years from cardiovascular and chronic kidney conditions.",
-      "body_vi": "Các nhà nghiên cứu tại Viện George về Y tế Toàn cầu đã mô hình hóa tác động sức khỏe cộng đồng khi đổi muối thường sang hỗn hợp giàu kali. Họ tính toán rằng việc thay thế trên toàn thế giới có thể ngăn chặn **2,96 triệu ca tử vong** mỗi năm. Sự thay đổi này cũng ngăn chặn 10,17 triệu trường hợp tăng huyết áp (*hypertension*) mới và tránh mất 69,43 triệu năm sống có điều chỉnh theo bệnh tật do các bệnh tim mạch và thận mãn tính."
+      "body_vi": "Các nhà nghiên cứu tại Viện George về Y tế Toàn cầu đã mô hình hóa tác động sức khỏe cộng đồng khi đổi muối thường sang hỗn hợp giàu kali. Họ tính toán rằng việc thay thế trên toàn thế giới có thể ngăn chặn **2,96 triệu ca tử vong** mỗi năm. Sự thay đổi này cũng ngăn chặn 10,17 triệu trường hợp tăng huyết áp (*hypertension*) mới và tránh mất 69,43 triệu năm sống có điều chỉnh theo bệnh tật do các bệnh tim mạch và thận mãn tính.",
+      "heading_fr": "Impact sanitaire mondial",
+      "body_fr": "Des chercheurs de The George Institute for Global Health ont modélisé les effets sanitaires à grande échelle de la substitution du sel ordinaire par un mélange enrichi en potassium. Leurs calculs révèlent qu’un tel remplacement à l’échelle planétaire pourrait prévenir **2.96 millions de décès** chaque année. Cette mesure permettrait également d’éviter 10.17 millions de nouveaux cas d’hypertension et d’épargner 69.43 millions d’années de vie corrigées de l’incapacité associées aux maladies cardiovasculaires et rénales chroniques.",
+      "heading_de": "Globale Gesundheitsfolgen",
+      "body_de": "Forschende am The George Institute for Global Health modellierten die gesundheitlichen Auswirkungen auf die Bevölkerung, wenn herkömmliches Salz durch eine kaliumangereicherte Mischung ersetzt wird. Sie errechneten, dass ein weltweiter Austausch jedes Jahr **2,96 Millionen Todesfälle** verhindern könnte. Die Umstellung würde zudem 10,17 Millionen neue Fälle von Bluthochdruck abwenden und 69,43 Millionen verlorene behinderungsbereinigte Lebensjahre infolge von Herz-Kreislauf-Erkrankungen und chronischen Nierenerkrankungen vermeiden.",
+      "heading_es": "Impacto en la salud global",
+      "body_es": "Investigadores de The George Institute for Global Health modelaron los efectos en la salud poblacional de sustituir la sal común por una mezcla enriquecida con potasio. Calcularon que este reemplazo a nivel mundial podría prevenir **2.96 millones de muertes** cada año. Este cambio también frenaría 10.17 millones de nuevos casos de hipertensión y evitaría 69.43 millones de años de vida ajustados por discapacidad perdidos debido a afecciones cardiovasculares y renales crónicas."
     },
     {
       "heading_en": "Dietary Adjustments",
       "heading_vi": "Điều Chỉnh Chế Độ Ăn",
       "body_en": "Study author Bruce Neal stated that consuming too much sodium and not enough potassium causes high blood pressure. Switching to potassium-enriched salt addresses both dietary issues simultaneously. Replacing discretionary salt used at home yielded larger life-saving effects than replacing salt used by restaurants and food corporations. Even if solely individuals diagnosed with high blood pressure adopted the switch, it would save over half a million lives.",
-      "body_vi": "Tác giả nghiên cứu Bruce Neal phát biểu rằng tiêu thụ quá nhiều natri (*sodium*) và không đủ kali gây ra huyết áp cao. Chuyển sang muối bổ sung kali giải quyết cả hai vấn đề ăn uống này cùng lúc. Việc thay thế muối tự do dùng tại nhà mang lại hiệu quả cứu sống lớn hơn so với thay thế muối do nhà hàng và các tập đoàn thực phẩm sử dụng. Ngay cả khi chỉ những cá nhân được chẩn đoán tăng huyết áp thực hiện thay đổi này, nó sẽ cứu sống hơn nửa triệu người."
+      "body_vi": "Tác giả nghiên cứu Bruce Neal phát biểu rằng tiêu thụ quá nhiều natri (*sodium*) và không đủ kali gây ra huyết áp cao. Chuyển sang muối bổ sung kali giải quyết cả hai vấn đề ăn uống này cùng lúc. Việc thay thế muối tự do dùng tại nhà mang lại hiệu quả cứu sống lớn hơn so với thay thế muối do nhà hàng và các tập đoàn thực phẩm sử dụng. Ngay cả khi chỉ những cá nhân được chẩn đoán tăng huyết áp thực hiện thay đổi này, nó sẽ cứu sống hơn nửa triệu người.",
+      "heading_fr": "Ajustements alimentaires",
+      "body_fr": "L’auteur de l’étude, Bruce Neal, a déclaré qu’une consommation excessive de sodium associée à un apport insuffisant en potassium provoquait de l’hypertension artérielle. Adopter un sel enrichi en potassium permet de traiter simultanément ces deux problèmes nutritionnels. Le remplacement du sel discrétionnaire utilisé à domicile a eu un impact plus déterminant sur la survie que celui du sel employé par les restaurants et l’industrie agroalimentaire. Même si seules les personnes souffrant d’hypertension diagnostiquée effectuaient cette transition, plus d’un demi-million de vies seraient épargnées.",
+      "heading_de": "Ernährungsanpassungen",
+      "body_de": "Studienautor Bruce Neal erklärte, dass der Konsum von zu viel Natrium und zu wenig Kalium Bluthochdruck verursacht. Der Wechsel zu kaliumangereichertem Salz geht beide Ernährungsprobleme gleichzeitig an. Der Ersatz von eigenhändig verwendetem Salz im Haushalt erzielte größere lebensrettende Effekte als der Austausch von Salz in Restaurants und Lebensmittelkonzernen. Selbst wenn ausschließlich Personen mit diagnostiziertem Bluthochdruck diesen Wechsel vollziehen würden, ließe sich über eine halbe Million Menschenleben retten.",
+      "heading_es": "Ajustes dietéticos",
+      "body_es": "El autor del estudio, Bruce Neal, afirmó que consumir demasiado sodio y no suficiente potasio causa presión arterial alta. Cambiar a sal enriquecida con potasio aborda ambos problemas dietéticos simultáneamente. Sustituir la sal discrecional empleada en el hogar produjo mayores efectos en la salvación de vidas que reemplazar la sal utilizada por restaurantes y corporaciones alimentarias. Incluso si únicamente las personas diagnosticadas con hipertensión adoptaran el cambio, se salvarían más de medio millón de vidas."
     },
     {
       "heading_en": "Risks and Industry Role",
       "heading_vi": "Rủi Ro và Vai Trò Công Nghiệp",
       "body_en": "Excess potassium carries risks such as hyperkalaemia for people with kidney disease. However, the research team found that benefits outweighed risks even among patients with advanced kidney conditions. Realizing maximum benefits requires the food industry in Europe and North America to adopt the alternative, since over 70 percent of salt intake comes from processed items.",
-      "body_vi": "Kali dư thừa đi kèm các rủi ro như tăng kali máu (*hyperkalaemia*) đối với người mắc bệnh thận. Tuy nhiên, nhóm nghiên cứu nhận thấy lợi ích vượt trội hơn rủi ro ngay cả ở những bệnh nhân mắc bệnh thận tiến triển. Việc đạt được lợi ích tối đa đòi hỏi ngành công nghiệp thực phẩm ở Châu Âu và Bắc Mỹ áp dụng giải pháp thay thế, vì hơn 70 phần trăm lượng muối nạp vào đến từ các sản phẩm chế biến sẵn."
+      "body_vi": "Kali dư thừa đi kèm các rủi ro như tăng kali máu (*hyperkalaemia*) đối với người mắc bệnh thận. Tuy nhiên, nhóm nghiên cứu nhận thấy lợi ích vượt trội hơn rủi ro ngay cả ở những bệnh nhân mắc bệnh thận tiến triển. Việc đạt được lợi ích tối đa đòi hỏi ngành công nghiệp thực phẩm ở Châu Âu và Bắc Mỹ áp dụng giải pháp thay thế, vì hơn 70 phần trăm lượng muối nạp vào đến từ các sản phẩm chế biến sẵn.",
+      "heading_fr": "Risques et rôle de l’industrie",
+      "body_fr": "Un excès de potassium présente des risques tels que l’hyperkaliémie chez les personnes atteintes d’une maladie rénale. L’équipe de recherche a néanmoins constaté que les bénéfices l’emportaient sur les risques, y compris chez les patients souffrant d’affections rénales avancées. Pour maximiser ces retombées positives, l’industrie agroalimentaire en Europe et en Amérique du Nord doit impérativement adopter cette solution, puisque plus de 70 % des apports en sel proviennent des produits transformés.",
+      "heading_de": "Risiken und Rolle der Industrie",
+      "body_de": "Ein Überschuss an Kalium birgt Risiken wie eine Hyperkaliämie bei Menschen mit Nierenerkrankungen. Dennoch stellte das Forschungsteam fest, dass der Nutzen die Risiken selbst bei Patienten mit fortgeschrittenen Nierenleiden überwog. Um den maximalen Nutzen zu erzielen, muss auch die Lebensmittelindustrie in Europa und Nordamerika die Alternative übernehmen, da mehr als 70 Prozent der Salzaufnahme aus verarbeiteten Lebensmitteln stammt.",
+      "heading_es": "Riesgos y papel de la industria",
+      "body_es": "El exceso de potasio conlleva riesgos como la hiperpotasemia para las personas con enfermedades renales. Sin embargo, el equipo de investigación descubrió que los beneficios superaban los riesgos, incluso entre pacientes con afecciones renales avanzadas. Lograr los máximos beneficios requiere que la industria alimentaria de Europa y América del Norte adopte esta alternativa, ya que más del 70 por ciento del consumo de sal proviene de alimentos procesados."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/292/1080/1920",
+    "url": "https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjMzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Webvilla",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/hv1MrBzGGNY"
+    "sourceUrl": "https://unsplash.com/photos/hv1MrBzGGNY",
+    "wide": "https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjMzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@webvilla?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of salt as the engine oil of your diet; the wrong kind slowly wears down your system. Will you swap your table salt for a potassium blend today?",
-    "vi": "Hãy coi muối giống như dầu nhớt cho động cơ trong chế độ ăn của bạn; loại không phù hợp sẽ từ từ làm mòn hệ thống của bạn. Bạn có muốn đổi muối ăn của mình lấy hỗn hợp kali ngay hôm nay không?"
+    "vi": "Hãy coi muối giống như dầu nhớt cho động cơ trong chế độ ăn của bạn; loại không phù hợp sẽ từ từ làm mòn hệ thống của bạn. Bạn có muốn đổi muối ăn của mình lấy hỗn hợp kali ngay hôm nay không?",
+    "fr": "Considérez le sel comme l’huile moteur de votre alimentation ; une formule inadaptée use peu à peu votre organisme. Remplacerez-vous votre sel de table par un mélange au potassium dès aujourd’hui ?",
+    "de": "Betrachte Salz wie das Motoröl deiner Ernährung; die falsche Sorte verschleißt deinen Organismus langsam. Tauschst du dein Speisesalz noch heute gegen eine Kaliummischung aus?",
+    "es": "Piense en la sal como el aceite de motor de su dieta; el tipo equivocado desgasta lentamente su organismo. ¿Cambiará hoy su sal de mesa por una mezcla con potasio?"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Kiểm tra nhãn sản phẩm về hàm lượng natri và kali trước khi mua muối.",
       "Trộn ba phần muối ăn với một phần kali clorua để tạo hỗn hợp riêng.",
       "Tham khảo ý kiến bác sĩ trước khi thay đổi chế độ ăn nếu bạn mắc bệnh thận."
+    ],
+    "fr": [
+      "Vérifiez la teneur en sodium et en potassium sur l’étiquette des produits avant d’acheter du sel.",
+      "Mélangez trois parts de sel de table avec une part de chlorure de potassium pour obtenir un mélange personnalisé.",
+      "Consultez votre médecin avant de modifier votre régime alimentaire si vous souffrez d’une maladie rénale."
+    ],
+    "de": [
+      "Prüfe vor dem Salzkauf die Produktetiketten auf ihren Natrium- und Kaliumgehalt.",
+      "Mische drei Teile Speisesalz mit einem Teil Kaliumchlorid für eine eigene Mischung.",
+      "Konsultiere deinen Arzt vor einer Ernährungsumstellung, falls du an einer Nierenerkrankung leidest."
+    ],
+    "es": [
+      "Revise las etiquetas de los productos para verificar el contenido de sodio y potasio antes de comprar sal.",
+      "Mezcle tres partes de sal de mesa con una parte de cloruro de potasio para obtener una mezcla personalizada.",
+      "Consulte con su médico antes de modificar su dieta si padece una enfermedad renal."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,77 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "sodium": "An essential mineral in common salt that can raise blood pressure when consumed in excessive amounts.",
+      "blood pressure": "The physical force exerted by circulating blood against the walls of arteries.",
+      "population health": "The health outcomes, patterns, and distribution of wellness across an entire group of people.",
+      "hypertension": "A chronic medical condition defined by persistently high blood pressure against artery walls.",
+      "cardiovascular": "Relating to the heart and the network of blood vessels throughout the body.",
+      "potassium": "An essential mineral and nutrient that helps regulate fluid balance and lowers blood pressure.",
+      "discretionary salt": "Salt added to food voluntarily by individuals at home during cooking or at the table.",
+      "hyperkalaemia": "A potentially dangerous medical condition involving higher than normal potassium levels in the blood.",
+      "kidney disease": "A medical condition where damaged kidneys cannot filter waste and excess fluids from blood properly.",
+      "potassium chloride": "A salt substitute compound used to enrich foods with potassium while reducing sodium content."
+    },
+    "vi": {
+      "natri": "Khoáng chất trong muối ăn, tiêu thụ nhiều dễ làm huyết áp tăng cao.",
+      "kali": "Khoáng chất thiết yếu hỗ trợ cân bằng điện giải và kiểm soát huyết áp.",
+      "huyết áp": "Áp lực của dòng máu tác động lên thành các động mạch.",
+      "tăng huyết áp": "Tình trạng áp lực máu lên thành động mạch cao hơn mức bình thường.",
+      "hypertension": "Tên tiếng Anh của bệnh tăng huyết áp, huyết áp ở mức cao kéo dài.",
+      "bệnh tim mạch": "Nhóm bệnh lý liên quan đến rối loạn chức năng của tim và mạch máu.",
+      "thận mãn tính": "Trạng thái tổn thương chức năng thận kéo dài và khó có thể phục hồi.",
+      "sodium": "Tên tiếng Anh của natri, nguyên tố chính trong muối ăn hàng ngày.",
+      "tăng kali máu": "Hiện tượng lượng kali trong máu tăng vượt ngưỡng an toàn cho phép.",
+      "hyperkalaemia": "Thuật ngữ tiếng Anh chỉ tình trạng nồng độ kali trong máu tăng cao.",
+      "kali clorua": "Hợp chất muối chứa kali được dùng để thay thế muối ăn natri thông thường."
+    },
+    "fr": {
+      "sodium": "Élément minéral présent dans le sel, dont l’excès favorise l’élévation de la pression artérielle.",
+      "hypertension artérielle": "Pression anormalement élevée du sang dans les artères, augmentant le risque d’accidents cardiovasculaires.",
+      "potassium": "Minéral essentiel aidant à réguler la pression sanguine et à contrecarrer les effets néfastes du sodium.",
+      "sel discrétionnaire": "Sel de table ou de cuisine ajouté individuellement lors de la préparation ou au cours des repas.",
+      "hyperkaliémie": "Concentration excessive de potassium dans le sang, potentiellement dangereuse pour le rythme cardiaque.",
+      "chlorure de potassium": "Composé minéral utilisé comme substitut partiel au chlorure de sodium pour réduire l’apport sodique.",
+      "maladies cardiovasculaires": "Troubles touchant le cœur et les vaisseaux sanguins, comme l’infarctus ou l’accident vasculaire cérébral.",
+      "produits transformés": "Aliments industriels préparés contenant fréquemment des quantités élevées de sel ajouté et de conservateurs.",
+      "maladie rénale": "Détérioration progressive du fonctionnement des reins, limitant notamment l’élimination efficace du potassium.",
+      "bruce neal": "Chercheur et épidémiologiste ayant dirigé les travaux sur les substituts de sel enrichis en potassium."
+    },
+    "de": {
+      "natrium": "Lebensnotwendiger Mineralstoff; ein übermäßiger Verzehr kann jedoch den Blutdruck erhöhen und Herz und Gefäße schädigen.",
+      "kalium": "Wichtiger Mineralstoff für Nerven und Muskeln, der den Blutdruck reguliert und die Wirkung von Natrium ausgleicht.",
+      "kaliumchlorid": "Chemische Verbindung aus Kalium und Chlor, die herkömmliches Kochsalz in Salzmischungen ganz oder teilweise ersetzt.",
+      "hyperkaliämie": "Ein gefährlich erhöhter Kaliumspiegel im Blut, der insbesondere bei Nierenschwäche auftreten und Herzrhythmusstörungen verursachen kann.",
+      "bluthochdruck": "Dauerhaft gesteigerter Druck in den Arterien, der Gefäßwände schädigt und das Risiko schwerer Herz-Kreislauf-Erkrankungen steigert.",
+      "behinderungsbereinigte lebensjahre": "Ein statistisches Maß, das durch vorzeitigen Tod oder krankheitsbedingte Einschränkungen verlorene gesunde Lebensjahre beziffert.",
+      "herz-kreislauf-erkrankungen": "Sammelbegriff für Erkrankungen des Herzens und der Blutgefäße, einschließlich Herzinfarkt, Schlaganfall und Arteriosklerose.",
+      "chronischen nierenerkrankungen": "Lang anhaltende Schädigungen der Nierenfunktion, die unter anderem die Ausscheidung von Stoffen wie Kalium beeinträchtigen.",
+      "verarbeiteten lebensmitteln": "Industriell hergestellte Fertigprodukte, die häufig erhebliche Mengen an zugesetztem Natrium zur Konservierung enthalten.",
+      "kaliummischung": "Eine Salzmischung, bei der Natriumchlorid teilweise durch Kaliumchlorid ersetzt ist, um die Gesundheit zu schonen.",
+      "speisesalz": "Gewöhnliches Kochsalz, das überwiegend aus Natriumchlorid besteht und im Haushalt zum Würzen verwendet wird."
+    },
+    "es": {
+      "sodio": "Mineral presente en la sal que, consumido en exceso, retiene líquidos y eleva la presión arterial.",
+      "potasio": "Mineral esencial que ayuda a relajar los vasos sanguíneos y a contrarrestar los efectos nocivos del sodio.",
+      "presión arterial": "Medida de la fuerza que la sangre ejerce contra las paredes arteriales al circular por el organismo.",
+      "sal común": "Cloruro de sodio tradicional utilizado habitualmente para sazonar y conservar los alimentos.",
+      "hipertensión": "Trastorno caracterizado por niveles persistentemente elevados de presión arterial, factor de riesgo cardiovascular.",
+      "sal discrecional": "Sal añadida voluntariamente por la persona durante la cocción de alimentos o en la mesa.",
+      "hiperpotasemia": "Concentración excesiva de potasio en la sangre que puede causar arritmias o complicaciones cardíacas graves.",
+      "alimentos procesados": "Productos industriales elaborados que con frecuencia contienen cantidades elevadas de sodio, aditivos o conservantes.",
+      "cloruro de potasio": "Compuesto mineral utilizado como sustituto del cloruro de sodio en mezclas de sal enriquecidas con potasio.",
+      "enfermedad renal": "Deterioro progresivo de la función de los riñones para filtrar toxinas, regular minerales y eliminar líquidos."
+    }
   }
 }

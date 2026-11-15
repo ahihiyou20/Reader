@@ -102,11 +102,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "/covers/cell-messages-aging.webp",
+    "url": "https://images.unsplash.com/34/rcaNUh3pQ9GD8w7Iy8qE__DSC0940.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjU5fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Dominik Martin",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/JYFmYif4n70"
+    "sourceUrl": "https://unsplash.com/photos/JYFmYif4n70",
+    "wide": "https://images.unsplash.com/34/rcaNUh3pQ9GD8w7Iy8qE__DSC0940.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjU5fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@dominikmartin?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 1,

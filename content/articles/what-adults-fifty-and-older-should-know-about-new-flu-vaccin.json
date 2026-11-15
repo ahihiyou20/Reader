@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/292/1080/1920",
+    "url": "https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjMzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Webvilla",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/hv1MrBzGGNY"
+    "sourceUrl": "https://unsplash.com/photos/hv1MrBzGGNY",
+    "wide": "https://images.unsplash.com/31/RpgvvtYAQeqAIs1knERU_vegetables.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjMzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@webvilla?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
