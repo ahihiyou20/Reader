@@ -94,7 +94,8 @@ export function CoverMedia({
       {placeholder}
       <img
         ref={img}
-        className={`media${decoded ? '' : ' loading'}`}
+        // Covers without a clip still move: a slow drift across the photo while the cover is on screen.
+        className={`media${decoded ? '' : ' loading'}${playing && !clip ? ' drift' : ''}`}
         src={src}
         srcSet={wide ? undefined : opt?.srcSet}
         sizes={opt && !wide ? COVER_SIZES : undefined}

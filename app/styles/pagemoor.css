@@ -1110,3 +1110,21 @@ html[data-stage$='landscape'] .panel.side {
     opacity: 0;
   }
 }
+
+/* Living covers: a slow, barely noticeable push-in and pan (composite-only), reversing at each end. */
+.media.drift {
+  animation: cover-drift 26s ease-in-out infinite alternate;
+}
+@keyframes cover-drift {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.1) translate3d(-1.6%, -1.2%, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .media.drift {
+    animation: none;
+  }
+}
