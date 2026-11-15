@@ -123,9 +123,40 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "food pyramid": "A visual triangular guide showing recommended proportions of different food groups for a healthy diet.",
+      "dietary guidelines": "Official, evidence-based recommendations on healthy eating patterns to promote wellness and prevent chronic illness.",
+      "carbohydrates": "Macronutrients, such as starches and sugars, that serve as a primary energy source for the body.",
+      "plate model": "A visual nutrition guide illustrating healthy meal proportions using the sections of a dinner plate.",
+      "plant-forward": "An eating style emphasizing plant-based foods while not completely excluding animal products.",
+      "whole grains": "Grains that retain all three original parts—bran, germ, and endosperm—preserving essential nutrients and fiber.",
+      "low-glycemic foods": "Foods that release glucose slowly into the bloodstream, preventing rapid spikes in blood sugar.",
+      "refined grains": "Grains processed to remove the bran and germ, which strips away dietary fiber and nutrients.",
+      "apex": "The topmost tip of the pyramid, designating items that should be consumed least often.",
+      "food environments": "The physical, economic, and social conditions that shape how easily people can obtain and choose food.",
+      "nutrition policies": "Government regulations and initiatives designed to improve public dietary habits and access to healthy food."
+    },
+    "vi": {
+      "kim tự tháp": "Mô hình tháp trực quan hướng dẫn tỷ lệ tiêu thụ các nhóm thực phẩm.",
+      "tinh bột": "Chất bột đường cung cấp năng lượng chính cho cơ thể từ ngũ cốc.",
+      "carbohydrates": "Hợp chất hữu cơ gồm đường, tinh bột và chất xơ cung cấp năng lượng.",
+      "khẩu phần": "Lượng thức ăn quy định cho một người dùng trong một bữa hoặc ngày.",
+      "đĩa ăn": "Mô hình trực quan thể hiện tỷ lệ các nhóm thực phẩm trong bữa ăn.",
+      "ăn tạp": "Chế độ ăn kết hợp cả thực phẩm có nguồn gốc thực vật lẫn động vật.",
+      "whole grains": "Ngũ cốc nguyên hạt giữ lại toàn bộ cám, mầm và nội nhũ.",
+      "đường huyết thấp": "Đặc tính thực phẩm làm tăng nồng độ glucose trong máu chậm và ổn định.",
+      "thịt đỏ": "Thịt của các loài động vật có vú như bò, lợn, cừu.",
+      "đồ ăn nhanh": "Thức ăn chế biến sẵn tiện lợi, thường nhiều calo, đường và chất béo.",
+      "tiếp thị": "Hoạt động quảng cáo và xúc tiến thương mại nhằm thu hút người mua.",
+      "tinh chế": "Thực phẩm đã qua xử lý công nghiệp làm giảm chất xơ tự nhiên.",
+      "mỡ động vật": "Chất béo lấy từ động vật, thường chứa nhiều chất béo bão hòa."
+    }
   }
 }

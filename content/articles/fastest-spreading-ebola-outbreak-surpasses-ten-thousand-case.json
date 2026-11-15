@@ -12,30 +12,54 @@
   ],
   "title": {
     "en": "Fastest-Spreading Ebola Outbreak Surpasses Ten Thousand Cases",
-    "vi": "Dịch Ebola lây lan nhanh kỷ lục vượt mốc mười nghìn ca"
+    "vi": "Dịch Ebola lây lan nhanh kỷ lục vượt mốc mười nghìn ca",
+    "fr": "L'épidémie d'Ebola à la propagation la plus rapide dépasse les dix mille cas",
+    "de": "Rasantester Ebola-Ausbruch übersteigt zehntausend Fälle",
+    "es": "El brote de ébola de más rápida propagación supera los diez mil casos"
   },
   "hook": {
     "en": "The Democratic Republic of Congo faces the most rapid Ebola transmission in recorded history, crossing a grim threshold of ten thousand infections [source]. Driven by an uncommon viral strain and complicated by regional conflict, this crisis strains local medical workers while international solidarity and financial aid lag far behind previous global responses.",
-    "vi": "Cộng hòa Dân chủ Congo đối mặt với đợt lây nhiễm Ebola nhanh nhất trong lịch sử ghi nhận, vượt qua mốc u ám với mười nghìn ca bệnh [source]. Bắt nguồn từ một chủng virus ít gặp và phức tạp bởi xung đột khu vực, cuộc khủng hoảng này gây áp lực nặng nề lên nhân viên y tế bản địa trong khi sự đoàn kết quốc tế và viện trợ tài chính chậm trễ."
+    "vi": "Cộng hòa Dân chủ Congo đối mặt với đợt lây nhiễm Ebola nhanh nhất trong lịch sử ghi nhận, vượt qua mốc u ám với mười nghìn ca bệnh [source]. Bắt nguồn từ một chủng virus ít gặp và phức tạp bởi xung đột khu vực, cuộc khủng hoảng này gây áp lực nặng nề lên nhân viên y tế bản địa trong khi sự đoàn kết quốc tế và viện trợ tài chính chậm trễ.",
+    "fr": "La République démocratique du Congo fait face à la transmission d'Ebola la plus rapide de son histoire, franchissant le cap tragique des dix mille infections [source]. Alimentée par une souche virale inhabituelle et aggravée par des conflits régionaux, cette crise met à rude épreuve le personnel soignant local, tandis que la solidarité internationale et l'aide financière accusent un net retard par rapport aux précédentes mobilisations mondiales.",
+    "de": "Die Demokratische Republik Kongo steht vor der schnellsten Ebola-Übertragung der Geschichte und überschreitet eine düstere Schwelle von zehntausend Infektionen [source]. Ausgelöst durch einen ungewöhnlichen Virusstamm und erschwert durch regionale Konflikte überfordert diese Krise das medizinische Personal vor Ort, während internationale Solidarität und Finanzhilfen weit hinter früheren weltweiten Hilfsmaßnahmen zurückbleiben.",
+    "es": "La República Democrática del Congo se enfrenta a la transmisión de ébola más veloz jamás registrada, superando el sombrío umbral de los diez mil contagios [source]. Impulsada por una cepa viral poco común y agravada por el conflicto regional, esta crisis desborda al personal médico local, mientras que la solidaridad internacional y la ayuda financiera se encuentran muy por detrás de las respuestas globales previas."
   },
   "sections": [
     {
       "heading_en": "Delayed Detection and Strain",
       "heading_vi": "Phát hiện chậm trễ và chủng virus",
       "body_en": "The crisis began months before official declarations, as an unusual strain of the virus circulated silently in remote areas {source}. Diagnostic tools failed to detect this specific variant initially, granting the infection a dangerous head start. Compounding these hurdles, regional instability and foreign aid reductions severely hampered early disease surveillance and international deployment.",
-      "body_vi": "Khủng hoảng bắt đầu nhiều tháng trước khi có tuyên bố chính thức, khi một chủng virus bất thường âm thầm lan truyền tại các vùng hẻo lánh {source}. Các công cụ chẩn đoán ban đầu không thể phát hiện biến thể này, tạo cho mầm bệnh khoảng thời gian bứt phá nguy hiểm. Thêm vào đó, sự bất ổn khu vực và việc cắt giảm viện trợ nước ngoài đã cản trở nghiêm trọng công tác giám sát dịch bệnh (*disease surveillance*) và triển khai quốc tế."
+      "body_vi": "Khủng hoảng bắt đầu nhiều tháng trước khi có tuyên bố chính thức, khi một chủng virus bất thường âm thầm lan truyền tại các vùng hẻo lánh {source}. Các công cụ chẩn đoán ban đầu không thể phát hiện biến thể này, tạo cho mầm bệnh khoảng thời gian bứt phá nguy hiểm. Thêm vào đó, sự bất ổn khu vực và việc cắt giảm viện trợ nước ngoài đã cản trở nghiêm trọng công tác giám sát dịch bệnh (*disease surveillance*) và triển khai quốc tế.",
+      "heading_fr": "Détection tardive et souche virale",
+      "body_fr": "La crise a débuté plusieurs mois avant les déclarations officielles, alors qu'une souche inhabituelle du virus circulait silencieusement dans des zones reculées {source}. Les outils diagnostiques n'ont pas permis de repérer ce variant spécifique au départ, conférant à l'infection une avance périlleuse. Venant aggraver ces obstacles, l'instabilité régionale et la réduction de l'aide étrangère ont lourdement entravé la surveillance épidémiologique précoce et le déploiement international.",
+      "heading_de": "Verzögerte Erkennung und Erregerstamm",
+      "body_de": "Die Krise begann bereits Monate vor offiziellen Erklärungen, als ein ungewöhnlicher Stamm des Virus unbemerkt in abgelegenen Gebieten zirkulierte {source}. Diagnostische Verfahren konnten diese spezifische Variante anfangs nicht nachweisen, was der Infektion einen gefährlichen Vorsprung verschaffte. Zu diesen Hürden kamen regionale Instabilität und gekürzte Auslandshilfen hinzu, die eine frühzeitige Krankheitsüberwachung sowie den internationalen Einsatz gravierend behinderten.",
+      "heading_es": "Detección tardía y la cepa viral",
+      "body_es": "La crisis comenzó meses antes de las declaraciones oficiales, mientras una cepa inusual del virus circulaba en silencio por zonas remotas {source}. Las herramientas de diagnóstico no lograron detectar esta variante específica en un principio, lo que otorgó a la infección una peligrosa ventaja. Para agravar estos obstáculos, la inestabilidad regional y los recortes en la ayuda exterior entorpecieron severamente la vigilancia epidemiológica temprana y el despliegue internacional."
     },
     {
       "heading_en": "Vulnerable Children and Delayed Care",
       "heading_vi": "Trẻ em dễ tổn thương và chậm trễ điều trị",
       "body_en": "Young children bear a devastating toll, with high mortality rates among those under five years old. Although numerous treatment facilities now operate across the region, roughly two-thirds of fatalities occur within local communities. Early symptoms mimic common endemic illnesses, leading many patients to postpone seeking medical help until survival becomes nearly impossible.",
-      "body_vi": "Trẻ nhỏ gánh chịu hậu quả nặng nề với tỷ lệ tử vong cao ở nhóm dưới năm tuổi. Mặc dù nhiều cơ sở điều trị hiện hoạt động khắp vùng, khoảng hai phần ba số ca tử vong diễn ra tại cộng đồng địa phương. Các triệu chứng ban đầu giống với những bệnh lưu hành phổ biến, khiến nhiều người chần chừ tìm kiếm sự chăm sóc y tế (*medical care*) cho đến khi quá muộn."
+      "body_vi": "Trẻ nhỏ gánh chịu hậu quả nặng nề với tỷ lệ tử vong cao ở nhóm dưới năm tuổi. Mặc dù nhiều cơ sở điều trị hiện hoạt động khắp vùng, khoảng hai phần ba số ca tử vong diễn ra tại cộng đồng địa phương. Các triệu chứng ban đầu giống với những bệnh lưu hành phổ biến, khiến nhiều người chần chừ tìm kiếm sự chăm sóc y tế (*medical care*) cho đến khi quá muộn.",
+      "heading_fr": "Enfants vulnérables et soins tardifs",
+      "body_fr": "Les jeunes enfants paient un tribut particulièrement lourd, avec des taux de mortalité élevés chez les moins de cinq ans. Bien que de nombreux centres de traitement soient désormais opérationnels dans la région, environ deux tiers des décès surviennent au sein des communautés locales. Les symptômes précoces ressemblant à ceux de maladies endémiques courantes, beaucoup de patients tardent à consulter un médecin jusqu'à ce que leurs chances de survie deviennent quasi nulles.",
+      "heading_de": "Gefährdete Kinder und verspätete Behandlung",
+      "body_de": "Kleinkinder trifft es verheerend, mit hohen Sterblichkeitsraten bei Kindern unter fünf Jahren. Obwohl mittlerweile zahlreiche Behandlungszentren in der gesamten Region arbeiten, ereignen sich rund zwei Drittel der Todesfälle direkt in den örtlichen Gemeinschaften. Erste Symptome ähneln häufigen endemischen Krankheiten, sodass viele Betroffene die ärztliche Hilfe erst so spät suchen, dass ein Überleben nahezu unmöglich wird.",
+      "heading_es": "Niños vulnerables y atención tardía",
+      "body_es": "Los niños pequeños sufren un impacto devastador, con altas tasas de mortalidad entre los menores de cinco años. Aunque numerosos centros de tratamiento operan actualmente en la región, aproximadamente dos tercios de las muertes ocurren en el seno de las comunidades locales. Los síntomas tempranos se asemejan a los de enfermedades endémicas comunes, lo que lleva a muchos pacientes a posponer la búsqueda de asistencia médica hasta que la supervivencia resulta casi imposible."
     },
     {
       "heading_en": "Community Distrust and Medical Hurdles",
       "heading_vi": "Sự bất tín của cộng đồng và rào cản y tế",
       "body_en": "Widespread skepticism and misinformation severely undermine response efforts, with many residents doubting the disease's existence or questioning responder motives. Furthermore, licensed vaccines and treatments target different viral variants, rendering them ineffective against the current pathogen. Experts warn that basic public health measures and sustained global attention remain vital to stop the epidemic.",
-      "body_vi": "Sự nghi kỵ lan rộng và thông tin sai lệch (*misinformation*) làm suy yếu nghiêm trọng nỗ lực ứng phó, khi nhiều cư dân hoài nghi sự tồn động của căn bệnh hoặc đặt câu hỏi về động cơ của lực lượng hỗ trợ. Hơn nữa, các loại vắc-xin và phương pháp điều trị được cấp phép nhắm vào các biến thể khác, khiến chúng kém hiệu quả trước mầm bệnh hiện tại. Các chuyên gia cảnh báo các biện pháp y tế công cộng cơ bản và sự quan tâm toàn cầu là cốt lõi để chặn đứng dịch bệnh."
+      "body_vi": "Sự nghi kỵ lan rộng và thông tin sai lệch (*misinformation*) làm suy yếu nghiêm trọng nỗ lực ứng phó, khi nhiều cư dân hoài nghi sự tồn động của căn bệnh hoặc đặt câu hỏi về động cơ của lực lượng hỗ trợ. Hơn nữa, các loại vắc-xin và phương pháp điều trị được cấp phép nhắm vào các biến thể khác, khiến chúng kém hiệu quả trước mầm bệnh hiện tại. Các chuyên gia cảnh báo các biện pháp y tế công cộng cơ bản và sự quan tâm toàn cầu là cốt lõi để chặn đứng dịch bệnh.",
+      "heading_fr": "Défiance communautaire et obstacles médicaux",
+      "body_fr": "Le scepticisme généralisé et la désinformation compromettent gravement les interventions de riposte, de nombreux habitants doutant de l'existence de la maladie ou remettant en cause les motivations des soignants. De plus, les vaccins et traitements homologués ciblent d'autres variants viraux, ce qui les rend inefficaces contre l'agent pathogène actuel. Les experts avertissent que des mesures fondamentales de santé publique et une attention internationale constante demeurent essentielles pour endiguer l'épidémie.",
+      "heading_de": "Misstrauen in der Bevölkerung und medizinische Hürden",
+      "body_de": "Weitverbreitete Skepsis und Fehlinformationen untergraben die Gegenmaßnahmen massiv, da viele Einheimische die Existenz der Krankheit anzweifeln oder die Motive der Hilfskräfte hinterfragen. Zudem zielen zugelassene Impfstoffe und Therapien auf andere Virusvarianten ab und wirken daher gegen das aktuelle Pathogen nicht. Fachleute mahnen, dass grundlegende Maßnahmen des öffentlichen Gesundheitswesens sowie anhaltende globale Aufmerksamkeit unerlässlich bleiben, um die Epidemie einzudämmen.",
+      "heading_es": "Desconfianza comunitaria y obstáculos médicos",
+      "body_es": "El escepticismo generalizado y la desinformación debilitan de gravedad las labores de respuesta, pues muchos residentes dudan de la existencia de la enfermedad o cuestionan los motivos de los equipos de auxilio. Además, las vacunas y tratamientos autorizados están dirigidos a otras variantes virales, lo que los vuelve ineficaces contra el patógeno actual. Los expertos advierten que las medidas básicas de salud pública y la atención mundial sostenida siguen siendo vitales para frenar la epidemia."
     }
   ],
   "references": [
@@ -70,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Like a silent underground fire spreading beneath dry brush, unrecognized outbreaks demand urgent collective attention. What steps can you take to support factual health communication in your community?",
-    "vi": "Giống như một đám cháy ngầm âm ỉ lan dưới lớp lá khô, những đợt bùng phát không được nhận diện đòi hỏi sự quan tâm tập thể khẩn cấp. Bạn có thể thực hiện bước nào để hỗ trợ truyền thông y tế xác thực trong cộng đồng của mình?"
+    "vi": "Giống như một đám cháy ngầm âm ỉ lan dưới lớp lá khô, những đợt bùng phát không được nhận diện đòi hỏi sự quan tâm tập thể khẩn cấp. Bạn có thể thực hiện bước nào để hỗ trợ truyền thông y tế xác thực trong cộng đồng của mình?",
+    "fr": "Telle un feu souterrain se propageant sous des broussailles sèches, une flambée épidémique non détectée exige une attention collective urgente. Quelles mesures pouvez-vous prendre afin de favoriser une communication sanitaire fiable au sein de votre communauté ?",
+    "de": "Wie ein lautloser Schwelbrand unter trockenem Unterholz verlangen unerkannte Ausbrüche dringende gemeinsame Wachsamkeit. Welche Schritte kannst du unternehmen, um eine faktenbasierte Gesundheitskommunikation in deinem Umfeld zu unterstützen?",
+    "es": "Al igual que un incendio subterráneo y silencioso que avanza bajo la maleza seca, los brotes inadvertidos exigen una urgente atención colectiva. ¿Qué medidas puede adoptar para respaldar una comunicación sanitaria veraz en su comunidad?"
   },
   "applySteps": {
     "en": [
@@ -82,6 +109,21 @@
       "Xác định các thông tin cập nhật y tế địa phương đáng tin cậy về tình hình lây lan dịch bệnh.",
       "Chia sẻ các thông tin y tế đã được kiểm chứng với bạn bè để giảm bớt tin đồn trong cộng đồng.",
       "Hỗ trợ các sáng kiến y tế công cộng toàn cầu tập trung vào các vùng dễ bị tổn thương."
+    ],
+    "fr": [
+      "Identifier des sources locales fiables d'informations sanitaires sur la transmission des maladies régionales.",
+      "Partager des faits médicaux vérifiés avec votre entourage afin de limiter les rumeurs au sein de la communauté.",
+      "Soutenir les initiatives mondiales de santé publique axées sur les régions vulnérables."
+    ],
+    "de": [
+      "Zuverlässige lokale Gesundheitsmeldungen zur regionalen Krankheitsübertragung ermitteln.",
+      "Verifizierte medizinische Fakten mit Freunden teilen, um Gerüchte in der Gemeinschaft abzubauen.",
+      "Globale Initiativen des öffentlichen Gesundheitswesens unterstützen, die auf gefährdete Regionen ausgerichtet sind."
+    ],
+    "es": [
+      "Identificar actualizaciones sanitarias locales de fuentes fiables sobre la transmisión de enfermedades en la región.",
+      "Compartir datos médicos contrastados con su entorno para frenar los rumores en la comunidad.",
+      "Apoyar iniciativas globales de salud pública orientadas a las regiones más vulnerables."
     ]
   },
   "coverCandidates": [
@@ -119,7 +161,10 @@
       "vi",
       "keyPoint",
       "applySteps",
-      "en"
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -136,6 +181,56 @@
       "pathogen": "A biological agent, such as a virus or bacterium, that causes disease in its host.",
       "public health measures": "Actions and protocols implemented by authorities to prevent disease transmission and protect community health.",
       "epidemic": "A widespread occurrence of an infectious disease in a community at a particular time."
+    },
+    "vi": {
+      "ebola": "Bệnh sốt xuất huyết nguy hiểm do virus gây ra, có tỷ lệ tử vong cao.",
+      "chủng virus": "Phân nhóm cụ thể của virus mang các đặc điểm di truyền riêng biệt.",
+      "chẩn đoán": "Quá trình xác định bệnh dựa trên triệu chứng lâm sàng và xét nghiệm y khoa.",
+      "biến thể": "Phiên bản biến đổi di truyền của virus so với chủng ban đầu.",
+      "mầm bệnh": "Tác nhân sinh học như virus hoặc vi khuẩn có khả năng gây bệnh.",
+      "bệnh lưu hành": "Bệnh thường xuyên hiện diện và lây lan trong một khu vực địa lý cụ thể.",
+      "triệu chứng": "Dấu hiệu bất thường về sức khỏe giúp nhận biết sự hiện diện của bệnh.",
+      "vắc-xin": "Chế phẩm sinh học giúp cơ thể tạo miễn dịch chủ động chống lại mầm bệnh.",
+      "điều trị": "Các biện pháp y tế nhằm chữa lành hoặc làm giảm tác hại của bệnh tật.",
+      "đợt bùng phát": "Sự gia tăng đột ngột và nhanh chóng số ca mắc bệnh trong cộng đồng.",
+      "dịch bệnh": "Sự lây lan nhanh chóng của bệnh truyền nhiễm trên diện rộng."
+    },
+    "fr": {
+      "ebola": "Virus provoquant une fièvre hémorragique grave et souvent mortelle chez l'être humain.",
+      "souche virale": "Variante génétique distincte d'un virus possédant des caractéristiques biologiques spécifiques.",
+      "outils diagnostiques": "Dispositifs ou tests de laboratoire servant à identifier formellement une infection spécifique.",
+      "surveillance épidémiologique": "Suivi continu et systématique des maladies pour détecter et contrôler rapidement les flambées.",
+      "maladies endémiques": "Affections constamment présentes et actives au sein d'une population ou zone géographique précise.",
+      "riposte": "Mobilisation coordonnée de moyens médicaux et logistiques face à une crise sanitaire.",
+      "variants viraux": "Versions mutées d'un virus présentant de légères modifications génétiques par rapport à l'original.",
+      "agent pathogène": "Entité biologique infectieuse, comme un virus ou une bactérie, causant une maladie.",
+      "santé publique": "Ensemble des mesures collectives destinées à préserver et améliorer la santé des populations.",
+      "flambée épidémique": "Hausse soudaine et rapide de l'incidence d'une maladie infectieuse dans une région."
+    },
+    "de": {
+      "ebola-übertragung": "Die Weitergabe des gefährlichen Ebola-Virus von Mensch zu Mensch oder über infektiöse Körperflüssigkeiten.",
+      "virusstamm": "Eine genetische Unterart oder Variante eines Virus mit spezifischen biologischen Eigenschaften.",
+      "krankheitsüberwachung": "Die systematische Erfassung und Beobachtung des Auftretens sowie der Ausbreitung von Infektionskrankheiten.",
+      "sterblichkeitsraten": "Der statistische Anteil der an einer bestimmten Krankheit verstorbenen Personen innerhalb einer Bevölkerungsgruppe.",
+      "behandlungszentren": "Speziell isolierte medizinische Einrichtungen zur Pflege und Therapie von Patientinnen und Patienten mit hochinfektiösen Erkrankungen.",
+      "endemischen krankheiten": "Infektionskrankheiten, die in einer bestimmten geografischen Region dauerhaft und regelmäßig auftreten.",
+      "virusvarianten": "Mutierte Formen eines Virus, die sich genetisch und in ihren Eigenschaften vom ursprünglichen Stamm unterscheiden.",
+      "pathogen": "Ein biologischer Krankheitserreger wie ein Virus, Bakterium oder Pilz, der Infektionen auslösen kann.",
+      "öffentlichen gesundheitswesens": "Staatliche und gesellschaftliche Strukturen zur Förderung, Erhaltung und Überwachung der Gesundheit der Gesamtbevölkerung.",
+      "epidemie": "Eine zeitlich und örtlich begrenzte, überdurchschnittlich starke Häufung von Krankheitsfällen."
+    },
+    "es": {
+      "ébola": "Virus filovírico grave que provoca fiebre hemorrágica y a menudo la muerte en seres humanos.",
+      "cepa viral": "Variante genética específica de un virus con características biológicas o de virulencia particulares.",
+      "herramientas de diagnóstico": "Pruebas y tecnologías médicas empleadas para identificar la presencia de un agente infeccioso específico.",
+      "vigilancia epidemiológica": "Seguimiento y análisis sistemático de la propagación de una enfermedad para guiar intervenciones sanitarias.",
+      "centros de tratamiento": "Instalaciones médicas equipadas específicamente para aislar y brindar atención clínica a pacientes infectados.",
+      "enfermedades endémicas": "Padecimientos habituales o constantes que afectan de forma continua a una población o región geográfica determinada.",
+      "asistencia médica": "Atención profesional y tratamiento clínico brindado a personas enfermas para favorecer su recuperación.",
+      "escepticismo": "Actitud de duda o desconfianza generalizada hacia la realidad del brote o las intervenciones sanitarias.",
+      "desinformación": "Difusión de datos falsos o distorsionados que entorpece la labor médica y confunde a la población.",
+      "patógeno": "Agente biológico, como un virus o bacteria, capaz de causar una enfermedad infecciosa.",
+      "salud pública": "Disciplina enfocada en proteger y mejorar el bienestar sanitario colectivo mediante prevención e intervenciones comunitarias."
     }
   }
 }
