@@ -48,6 +48,15 @@ Làm theo vòng antigravity-master (Claude thiết kế và kiểm tra, Gemini v
 - Lighthouse: desktop 96; mobile 62 (giả lập) / 70 (throttling thật). LCP mobile đã về 2,9s với throttling thật; phần còn lại là thời gian chạy runtime Next.js và React khi CPU bị giảm 4 lần (khoảng 650ms), cần quyết định riêng nếu muốn đạt 90.
 - Test mới: `tests/e2e/{responsive,rotation,interactions,motion-quality,loading,reading,perf,visual}.spec.ts`, `tests/qa/*`; `tests/e2e/reader.spec.ts` chỉ đổi locator `section[aria-posinset]` thành `[aria-posinset]` (ARIA không cho thuộc tính này trên `section`).
 
+## Pagemoor (2026-11-15)
+
+- Đổi tên hiển thị thành Pagemoor, logo mới, màn chào lần đầu, bộ chữ tiêu đề bìa theo chuyên mục (`lib/title.ts`).
+- Menu chính mở từ logo: Dành cho bạn, Khám phá, Thư viện, Hồ sơ, Cài đặt.
+- Nội dung năm ngôn ngữ (en, vi, fr, de, es) và bảng giải nghĩa từ do bot viết (`scripts/pipeline/translate.ts`).
+- Smart Feed, thư viện và bộ sưu tập, lịch sử và thống kê đọc, sách nói, chạm để hiểu từ. Danh sách và file ở README.
+- Chưa làm: đồng bộ dữ liệu đọc theo tài khoản, video bìa, ảnh bìa khổ ngang độ nét cao, hai phần "Pagemoor làm gì" và "Bài nổi bật" của màn chào trong bản phác thảo.
+- Ảnh chuẩn của `tests/e2e/visual.spec.ts` cần chụp lại vì giao diện đã đổi.
+
 ## Việc cần người làm (không tự động được)
 
 1. Hoàn tất Firebase (README §1–2):
