@@ -12,12 +12,16 @@
   "title": {
     "en": "Finding Safe Red Meat Alternatives After Tick-Borne Allergies",
     "vi": "Tìm kiếm các loại thịt thay thế an toàn sau khi mắc dị ứng do ve",
-    "fr": "Trouver des substituts sûrs à la viande rouge après une allergie aux tiques"
+    "fr": "Trouver des substituts sûrs à la viande rouge après une allergie aux tiques",
+    "de": "Sichere Alternativen zu rotem Fleisch nach zeckenbedingten Allergien",
+    "es": "Alternativas seguras a la carne roja tras alergias por garrapatas"
   },
   "hook": {
     "en": "Tick bites can trigger a dangerous condition that ruins the joy of eating traditional steaks and burgers for hundreds of thousands of people. As standard poultry fails to satisfy their cravings for beef, innovative farmers and chefs are turning to an unexpected source: large African birds that offer a safe and flavorful solution {source}.",
     "vi": "Vết cắn từ loài ve có thể kích hoạt một tình trạng nguy hiểm làm mất đi niềm vui thưởng thức các món bít tết và bánh mì kẹp truyền thống của hàng trăm nghìn người. Khi các loại gia cầm thông thường không thể thỏa mãn cơn thèm thịt bò, những nông dân và đầu bếp sáng tạo đang chuyển sang một nguồn hoàn toàn bất ngờ: những loài chim lớn từ châu Phi cung cấp một giải pháp an toàn và đầy hương vị {source}.",
-    "fr": "Les piqûres de tiques peuvent déclencher une affection dangereuse qui prive des centaines de milliers de personnes du plaisir de savourer steaks et hamburgers traditionnels. Alors que la volaille classique ne comble pas leurs envies de bœuf, des éleveurs et des chefs novateurs se tournent vers une ressource inattendue : de grands oiseaux africains offrant une solution savoureuse et sans risque {source}."
+    "fr": "Les piqûres de tiques peuvent déclencher une affection dangereuse qui prive des centaines de milliers de personnes du plaisir de savourer steaks et hamburgers traditionnels. Alors que la volaille classique ne comble pas leurs envies de bœuf, des éleveurs et des chefs novateurs se tournent vers une ressource inattendue : de grands oiseaux africains offrant une solution savoureuse et sans risque {source}.",
+    "de": "Zeckenbisse können eine gefährliche Erkrankung auslösen, die Hunderttausenden Menschen die Freude an klassischen Steaks und Burgern verdirbt. Da gewöhnliches Geflügel ihren Appetit auf Rindfleisch kaum stillt, greifen innovative Landwirte und Küchenchefs auf eine unerwartete Quelle zurück: große afrikanische Laufvögel, die eine sichere und geschmackvolle Lösung bieten {source}.",
+    "es": "Las picaduras de garrapata pueden desencadenar una afección peligrosa que arruina el placer de comer bistecs y hamburguesas tradicionales a cientos de miles de personas. Como las aves de corral comunes no logran satisfacer sus antojos de carne de res, ganaderos y chefs innovadores están recurriendo a una fuente inesperada: grandes aves africanas que ofrecen una solución sabrosa y segura {source}."
   },
   "sections": [
     {
@@ -26,7 +30,11 @@
       "body_en": "Traditional cattle farmer Brent Williams experienced a major life shift after a tick bite caused him to develop a severe mammalian meat allergy {source}. Seeking a substitute that could match the taste of beef, he discovered the unique benefits of raising ostriches {source}. These large, flightless birds provide an alternative that looks and tastes remarkably similar to traditional steak while remaining completely safe from the trigger carbohydrate.",
       "body_vi": "Chủ trang trại nuôi gia súc truyền thống Brent Williams đã trải qua một bước ngoặt lớn sau khi bị côn trùng cắn dẫn đến hội chứng dị ứng thịt động vật có vú (*mammalian meat allergy*) {source}. Để tìm kiếm một loại thực phẩm thay thế có hương vị tương đương thịt bò, ông đã phát hiện ra những lợi ích độc đáo từ việc chăn nuôi đà điểu (*ostriches*) {source}. Những loài chim lớn không biết bay này cung cấp một loại thực phẩm trông và có vị rất giống bít tết truyền thống trong khi vẫn hoàn toàn an toàn.",
       "heading_fr": "La découverte de l'élevage d'autruches",
-      "body_fr": "Éleveur bovin traditionnel, Brent Williams a vu sa vie basculer lorsqu'une piqûre de tique lui a causé une grave allergie à la viande de mammifère {source}. En quête d'un substitut capable d'égaler le goût du bœuf, il a découvert les atouts uniques de l'élevage d'autruches {source}. Ces grands oiseaux inaptes au vol offrent une alternative dont l'aspect et la saveur rappellent étonnamment le steak classique, tout en étant totalement dépourvus du glucide déclencheur."
+      "body_fr": "Éleveur bovin traditionnel, Brent Williams a vu sa vie basculer lorsqu'une piqûre de tique lui a causé une grave allergie à la viande de mammifère {source}. En quête d'un substitut capable d'égaler le goût du bœuf, il a découvert les atouts uniques de l'élevage d'autruches {source}. Ces grands oiseaux inaptes au vol offrent une alternative dont l'aspect et la saveur rappellent étonnamment le steak classique, tout en étant totalement dépourvus du glucide déclencheur.",
+      "heading_de": "Die Entdeckung der Straußenzucht",
+      "body_de": "Der traditionelle Rinderzüchter Brent Williams erlebte einen gravierenden Wendepunkt, nachdem ein Zeckenbiss bei ihm eine schwere Säugetierfleischallergie ausgelöst hatte {source}. Auf der Suche nach einem Ersatz, der dem Geschmack von Rindfleisch nahekommt, entdeckte er die einzigartigen Vorzüge der Straußenzucht {source}. Diese großen, flugunfähigen Vögel liefern eine Alternative, die optisch wie geschmacklich erstaunlich stark an klassisches Steak erinnert und zugleich völlig frei von dem auslösenden Kohlenhydrat ist.",
+      "heading_es": "El descubrimiento de la cría de avestruces",
+      "body_es": "El ganadero tradicional de vacuno Brent Williams experimentó un giro drástico en su vida luego de que una picadura de garrapata le provocara una grave alergia a la carne de mamífero {source}. En busca de un sustituto que pudiera igualar el sabor de la carne de res, descubrió los singulares beneficios de criar avestruces {source}. Estas grandes aves no voladoras ofrecen una alternativa cuyo aspecto y sabor son extraordinariamente similares a los del bistec tradicional, al tiempo que se mantienen completamente libres del carbohidrato desencadenante."
     },
     {
       "heading_en": "Nutritional Value and Allergy Safety",
@@ -34,7 +42,11 @@
       "body_en": "Nutrition experts note that this avian alternative contains all essential amino acids while maintaining a lower fat content than standard beef {source}. The crucial factor for affected individuals is the complete absence of the specific sugar molecule that provokes severe immune system reactions {source}. Because tick populations are expanding across multiple regions, growing numbers of people are developing antibodies against this problematic carbohydrate compound.",
       "body_vi": "Các chuyên gia dinh dưỡng lưu ý rằng loại thịt gia cầm thay thế này chứa tất cả các axit amin thiết kế đồng thời duy trì hàm lượng chất béo thấp hơn so với thịt bò thông thường {source}. Yếu tố quan trọng đối với những người bị ảnh hưởng chính là sự vắng mặt hoàn toàn của phân tử đường cụ thể gây ra các phản ứng hệ thống miễn dịch nghiêm trọng {source}. Do quần thể ve đang mở rộng, ngày càng có nhiều người phát triển kháng thể chống lại hợp chất carbohydrate có vấn đề này.",
       "heading_fr": "Valeur nutritionnelle et sécurité allergène",
-      "body_fr": "Les spécialistes de la nutrition soulignent que cette alternative aviaire renferme tous les acides aminés essentiels, tout en présentant une teneur en matières grasses inférieure à celle du bœuf standard {source}. Le facteur décisif pour les personnes touchées réside dans l'absence totale de la molécule de sucre spécifique qui provoque de violentes réactions du système immunitaire {source}. Les populations de tiques proliférant dans plusieurs régions, un nombre croissant d'individus développent des anticorps contre ce composé glucidique problématique."
+      "body_fr": "Les spécialistes de la nutrition soulignent que cette alternative aviaire renferme tous les acides aminés essentiels, tout en présentant une teneur en matières grasses inférieure à celle du bœuf standard {source}. Le facteur décisif pour les personnes touchées réside dans l'absence totale de la molécule de sucre spécifique qui provoque de violentes réactions du système immunitaire {source}. Les populations de tiques proliférant dans plusieurs régions, un nombre croissant d'individus développent des anticorps contre ce composé glucidique problématique.",
+      "heading_de": "Nährwert und Allergiesicherheit",
+      "body_de": "Ernährungsexperten betonen, dass diese Geflügelalternative alle essenziellen Aminosäuren enthält und gleichzeitig einen geringeren Fettgehalt als herkömmliches Rindfleisch aufweist {source}. Der entscheidende Faktor für Betroffene ist das vollständige Fehlen des spezifischen Zuckermoleküls, das heftige Reaktionen des Immunsystems hervorruft {source}. Da sich Zeckenpopulationen in zahlreichen Regionen ausbreiten, entwickeln immer mehr Menschen Antikörper gegen diese problematische Kohlenhydratverbindung.",
+      "heading_es": "Valor nutricional y seguridad ante alergias",
+      "body_es": "Especialistas en nutrición señalan que esta alternativa aviar contiene todos los aminoácidos esenciales, manteniendo al mismo tiempo un menor contenido de grasa que la carne de res estándar {source}. El factor crucial para las personas afectadas es la ausencia total de la molécula de azúcar específica que provoca graves reacciones del sistema inmunitario {source}. Debido a que las poblaciones de garrapatas se están expandiendo por múltiples regiones, un número creciente de personas está desarrollando anticuerpos contra este problemático compuesto de carbohidratos."
     },
     {
       "heading_en": "Bringing Ostrich to Restaurant Menus",
@@ -42,7 +54,11 @@
       "body_en": "Rural restaurant owners have begun adding these specialty burgers to their menus to accommodate diners searching for safe options {source}. Patrons travel significant distances to enjoy a meal without worrying about hidden contamination or adverse health effects {source}. Strict kitchen protocols ensure safe preparation spaces, allowing customers with dietary restrictions to finally enjoy a satisfying alternative to turkey.",
       "body_vi": "Các chủ nhà hàng vùng nông thôn đã bắt đầu đưa những chiếc bánh mì kẹp đặc sản này vào thực đơn để phục vụ thực khách tìm kiếm các lựa chọn an toàn {source}. Khách hàng phải di chuyển những khoảng cách đáng kể để thưởng thức một bữa ăn mà không phải lo lắng về ô nhiễm chéo hay ảnh hưởng sức khỏe bất lợi {source}. Các quy tắc nhà bếp nghiêm ngặt đảm bảo không gian chuẩn bị an toàn, cho phép khách hàng tận hưởng món ăn thay thế.",
       "heading_fr": "L'arrivée de l'autruche au menu des restaurants",
-      "body_fr": "Des restaurateurs en milieu rural ont commencé à inscrire ces hamburgers de spécialité à leur carte afin d'accueillir les convives en quête d'options sûres {source}. Les clients parcourent de longues distances pour savourer un repas sans redouter de contamination dissimulée ou d'effets néfastes sur leur santé {source}. Des protocoles stricts en cuisine garantissent des zones de préparation sécurisées, permettant aux clients soumis à des restrictions alimentaires de déguster enfin une alternative satisfaisante à la dinde."
+      "body_fr": "Des restaurateurs en milieu rural ont commencé à inscrire ces hamburgers de spécialité à leur carte afin d'accueillir les convives en quête d'options sûres {source}. Les clients parcourent de longues distances pour savourer un repas sans redouter de contamination dissimulée ou d'effets néfastes sur leur santé {source}. Des protocoles stricts en cuisine garantissent des zones de préparation sécurisées, permettant aux clients soumis à des restrictions alimentaires de déguster enfin une alternative satisfaisante à la dinde.",
+      "heading_de": "Straußenfleisch auf den Speisekarten",
+      "body_de": "Gastronomen im ländlichen Raum haben begonnen, solche Spezialburger auf ihre Speisekarten zu setzen, um Gästen auf der Suche nach sicheren Speisen entgegenzukommen {source}. Gäste nehmen weite Wege auf sich, um eine Mahlzeit ohne Sorge vor versteckten Kontaminationen oder gesundheitlichen Beeinträchtigungen zu genießen {source}. Strenge Küchenprotokolle gewährleisten sichere Zubereitungsbereiche, sodass Gäste mit Ernährungseinschränkungen endlich eine schmackhafte Alternative zu Putenfleisch genießen können.",
+      "heading_es": "El avestruz llega a los menús de restaurantes",
+      "body_es": "Propietarios de restaurantes rurales han comenzado a incorporar estas hamburguesas especializadas a sus cartas para atender a comensales en busca de opciones seguras {source}. Los clientes recorren distancias considerables para disfrutar de una comida sin preocuparse por la contaminación oculta o los efectos adversos para la salud {source}. Rigurosos protocolos de cocina garantizan áreas de preparación seguras, lo que permite a clientes con restricciones dietéticas disfrutar por fin de una alternativa satisfactoria al pavo."
     }
   ],
   "references": [
@@ -78,7 +94,9 @@
   "keyPoint": {
     "en": "Navigating a new food allergy is like learning to navigate an unfamiliar city using a completely new map. [p:Can you identify one local restaurant or supplier offering safe alternative proteins near you today?]",
     "vi": "Thích nghi với một chứng dị ứng thực phẩm mới giống như học cách di chuyển trong một thành phố xa lạ bằng một bản đồ hoàn toàn mới. [p:Bạn có thể xác định một nhà hàng hoặc nhà cung cấp địa phương cung cấp protein thay thế an toàn gần bạn ngay hôm nay không?]",
-    "fr": "Faire face à une nouvelle allergie alimentaire équivaut à s'orienter dans une ville inconnue à l'aide d'une carte inédite. [p:Pourriez-vous identifier dès aujourd'hui, près de chez vous, un restaurant local ou un fournisseur proposant des protéines alternatives sûres ?]"
+    "fr": "Faire face à une nouvelle allergie alimentaire équivaut à s'orienter dans une ville inconnue à l'aide d'une carte inédite. [p:Pourriez-vous identifier dès aujourd'hui, près de chez vous, un restaurant local ou un fournisseur proposant des protéines alternatives sûres ?]",
+    "de": "Der Umgang mit einer neuen Nahrungsmittelallergie gleicht dem Versuch, sich mit einer völlig neuen Karte in einer fremden Stadt zurechtzufinden. [p:Kannst du schon heute ein lokales Restaurant oder einen Anbieter in deiner Nähe finden, der sichere alternative Proteine anbietet?]",
+    "es": "Afrontar una nueva alergia alimentaria es como aprender a recorrer una ciudad desconocida con un mapa completamente nuevo. [p:¿Puede identificar hoy un restaurante o proveedor local que ofrezca proteínas alternativas seguras cerca de usted?]"
   },
   "applySteps": {
     "en": [
@@ -95,6 +113,16 @@
       "Renseignez-vous dans votre région pour trouver des élevages d'oiseaux exotiques ou des fournisseurs de viandes de spécialité.",
       "Examinez attentivement les étiquettes des ingrédients afin d'éviter toute exposition accidentelle aux glucides de mammifères.",
       "Interrogez les restaurants locaux sur leurs mesures de sécurité en cuisine concernant la contamination croisée."
+    ],
+    "de": [
+      "Suche in deiner Region nach lokalen Zuchtbetrieben für exotische Vögel oder spezialisierten Fleischlieferanten.",
+      "Prüfe Zutatenlisten sorgfältig, um einen versehentlichen Kontakt mit Kohlenhydraten von Säugetieren zu vermeiden.",
+      "Erkundige dich bei lokalen Restaurants nach Schutzmaßnahmen in der Küche gegen Kreuzkontaminationen."
+    ],
+    "es": [
+      "Averigüe si en su región existen criaderos de aves exóticas o proveedores de carnes especiales.",
+      "Revise atentamente las etiquetas de ingredientes para evitar la exposición accidental a carbohidratos de mamífero.",
+      "Pregunte en los restaurantes locales sobre sus medidas de seguridad en cocina frente a la contaminación cruzada."
     ]
   },
   "coverCandidates": [
@@ -133,7 +161,9 @@
       "keyPoint",
       "applySteps",
       "en",
-      "fr"
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -179,6 +209,30 @@
       "composé glucidique": "Molécule biologique formée de sucres qui déclenche la réaction allergique après sensibilisation par une tique.",
       "restrictions alimentaires": "Contraintes imposant l'éviction de certains aliments pour prévenir de graves réactions immunitaires indésirables.",
       "contamination croisée": "Transfert accidentel de substances allergènes d'un plan de travail ou d'un ingrédient vers un plat préparé."
+    },
+    "de": {
+      "säugetierfleischallergie": "Allergische Reaktion des Immunsystems auf Fleisch von Säugetieren, häufig ausgelöst durch vorangegangene Zeckenbisse.",
+      "straußenzucht": "Die landwirtschaftliche Haltung und Vermehrung von Straußen zur Gewinnung von Fleisch und anderen Produkten.",
+      "essenziellen aminosäuren": "Lebensnotwendige Eiweißbausteine, die der menschliche Körper nicht selbst herstellen kann und über die Nahrung aufnehmen muss.",
+      "zuckermoleküls": "Hier das Kohlenhydrat Alpha-Gal in Säugetierfleisch, das bei Betroffenen allergische Reaktionen auslöst.",
+      "antikörper": "Proteine des körpereigenen Abwehrsystems, die fälschlicherweise auf bestimmte Stoffe wie tierische Kohlenhydrate reagieren.",
+      "kohlenhydratverbindung": "Chemische Struktur aus Zuckermolekülen, die als Allergen bei Säugetierfleischallergien fungiert.",
+      "küchenprotokolle": "Verbindliche Arbeits- und Hygieneanweisungen in der Gastronomie zur Vermeidung von Verunreinigungen und Allergenübertragungen.",
+      "ernährungseinschränkungen": "Notwendige Vorgaben bei der Essensauswahl aufgrund von Allergien, Unverträglichkeiten oder gesundheitlichen Risiken.",
+      "nahrungsmittelallergie": "Eine krankhafte Überempfindlichkeitsreaktion des körpereigenen Immunsystems auf bestimmte Bestandteile der Nahrung.",
+      "kreuzkontaminationen": "Das unbeabsichtigte Übertragen von Allergenen oder Krankheitserregern von einem Lebensmittel auf ein anderes."
+    },
+    "es": {
+      "picaduras de garrapata": "Mordeduras de estos parásitos arácnidos que pueden transmitir patógenos o desencadenar alergias alimentarias.",
+      "carne de mamífero": "Carne procedente de animales mamíferos, como la de res, cerdo o cordero.",
+      "avestruces": "Aves africanas de gran tamaño que no vuelan y producen carne roja similar al vacuno.",
+      "carbohidrato desencadenante": "Molécula de azúcar presente en mamíferos que provoca la reacción alérgica en personas sensibilizadas.",
+      "aminoácidos esenciales": "Componentes básicos de las proteínas que el organismo no produce y debe obtener mediante la dieta.",
+      "molécula de azúcar": "Estructura glucídica específica, como el alfa-gal, causante de la respuesta alérgica a carnes de mamífero.",
+      "anticuerpos": "Proteínas del sistema inmunitario producidas tras la picadura que reaccionan contra ciertos carbohidratos.",
+      "contaminación cruzada": "Transferencia involuntaria de sustancias alergénicas de un alimento a otro durante la preparación en cocina.",
+      "aves no voladoras": "Especies de aves que carecen de la capacidad de volar debido a su anatomía evolutiva.",
+      "restricciones dietéticas": "Limitaciones en el consumo de ciertos alimentos por motivos médicos, como alergias o intolerancias."
     }
   }
 }

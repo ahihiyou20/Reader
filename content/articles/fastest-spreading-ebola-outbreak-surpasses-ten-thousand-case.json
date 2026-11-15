@@ -118,9 +118,24 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "ebola": "A severe, often fatal viral disease causing fever, bleeding, and organ failure.",
+      "viral strain": "A genetic subtype or specific variant of a virus with distinct biological characteristics.",
+      "diagnostic tools": "Tests, equipment, or methods used by medical personnel to identify a specific disease or infection.",
+      "disease surveillance": "The continuous monitoring and collection of health data to track and control disease spread.",
+      "mortality rates": "The proportion of deaths caused by a disease within a specific population or time period.",
+      "endemic illnesses": "Diseases that are regularly found and continuously present within a particular region or population.",
+      "viral variants": "Mutated or altered forms of a virus that differ slightly from the original form.",
+      "pathogen": "A biological agent, such as a virus or bacterium, that causes disease in its host.",
+      "public health measures": "Actions and protocols implemented by authorities to prevent disease transmission and protect community health.",
+      "epidemic": "A widespread occurrence of an infectious disease in a community at a particular time."
+    }
   }
 }
