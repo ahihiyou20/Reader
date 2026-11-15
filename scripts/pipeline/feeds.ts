@@ -1,15 +1,19 @@
 // Daily articles (docs/05 §9): read the RSS/Atom feeds in content/feeds.json, keep unseen recent items,
-// let triage.ts choose the ones worth an article (rules, then one Gemini scoring call), turn each into
-// an article with scripts/pipeline/create.ts, and check its prose (prose-lint.ts, one revision pass).
-// The workflow puts the result in one pull request; merging it publishes.
-//   pnpm tsx scripts/pipeline/feeds.ts [--limit 20] [--dry-run] [--report report.md]
+// let triage.ts choose the ones worth an article (rules, then Gemini scoring), turn each into Reader's
+// own in-depth article with scripts/pipeline/create.ts (research, writing, cover, five languages), and
+// check its prose (prose-lint.ts, one revision pass). When the feeds bring fewer than `minPerDay`,
+// ideas.ts proposes evergreen topics to make up the rest. There is no upper limit unless one is given.
+// The workflow puts the result in one pull request (or on main, when auto-publishing); merging publishes.
+//   pnpm tsx scripts/pipeline/feeds.ts [--min 20] [--limit 0] [--minutes 170] [--jobs 3] [--dry-run] [--report report.md]
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { XMLParser } from 'fast-xml-parser';
 import type { ArticleSource } from '../../lib/content/types';
-import { type Created, type Mode, SkipError, createArticle, modeFor } from './create';
+import { type CreateInput, type Created, type Mode, SkipError, createArticle, modeFor } from './create';
 import { reviseProse } from './compose';
-import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
+import { firecrawlPagesUsed } from './firecrawl';
+import { GeminiSetupError, QuotaError, hasGemini, requestsUsed } from './gemini';
+import { ideaKey, proposeIdeas } from './ideas';
 import { lintProse, plainFieldsOf, proseFields, type ProseFinding } from './prose-lint';
 import { type Candidate, triage } from './triage';
 import { CONTENT, dirs, httpText, jobSummary, listJson, readJson, setOutput, writeJson } from './lib';
@@ -34,7 +38,12 @@ export interface FeedSource {
   minScore?: number;
 }
 export interface FeedConfig {
-  maxPerDay: number;
+  /** A run keeps going (feeds, then ideas) until at least this many articles are written, when it can. */
+  minPerDay?: number;
+  /** Upper bound for one run; 0 or absent: no limit. */
+  maxPerDay?: number;
+  /** Evergreen topics proposed by Gemini when the feeds fall short of minPerDay; `extra` covers failures. */
+  ideas?: { enabled?: boolean; extra?: number };
   /** Items older than this are ignored (default 14 days). */
   maxAgeDays?: number;
   triage?: { minScore?: number; perCategory?: number; dupThreshold?: number };
@@ -165,15 +174,20 @@ export function pickRoundRobin(
   return picked;
 }
 
-async function knownArticles(): Promise<{ urls: Set<string>; titles: string[] }> {
+async function knownArticles(): Promise<{ urls: Set<string>; titles: string[]; counts: Record<string, number> }> {
   const urls = new Set<string>();
   const titles: string[] = [];
+  const counts: Record<string, number> = {};
   for (const f of await listJson(dirs.articles)) {
     const a = await readJson<ArticleSource>(path.join(dirs.articles, f));
     if (a.origin.originalUrl) urls.add(normalizeUrl(a.origin.originalUrl));
+    // Reader's own articles cite the page that suggested them as {source}.
+    const seed = a.references.find((r) => r.id === 'source')?.url;
+    if (seed) urls.add(normalizeUrl(seed));
     titles.push(a.title.en);
+    counts[a.category] = (counts[a.category] ?? 0) + 1;
   }
-  return { urls, titles };
+  return { urls, titles, counts };
 }
 
 const lintArticleProse = (a: ArticleSource): ProseFinding[] =>
@@ -224,7 +238,12 @@ export async function selectArticles(
     minScoreByFeed: Object.fromEntries(feeds.filter((f) => f.minScore !== undefined).map((f) => [f.id, f.minScore!])),
   });
   return {
-    picked: picked.map((s) => ({ ...byUrl.get(s.url)!, category: s.category, why: `${s.score}/10 ${s.kind}: ${s.reason}` })),
+    picked: picked.map((s) => ({
+      ...byUrl.get(s.url)!,
+      category: s.category,
+      why: `${s.score}/10 ${s.kind}: ${s.reason}`,
+      hints: { angle: s.angle, kind: s.kind, wiki: s.wiki, paper: s.paper, photo: s.photo },
+    })),
     rejected,
   };
 }
@@ -243,6 +262,17 @@ export function reportTable(rows: Created[]): string {
   ].join('\n');
 }
 
+interface Job {
+  /** Feed-state key: the normalised link, or ideaKey() for an idea. */
+  key: string;
+  feedId: string;
+  label: string;
+  input: Omit<CreateInput, 'publishAt'>;
+}
+
+const plain = (html?: string) => html?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 600);
+const needsModel = (mode: Mode) => mode === 'summary' || mode === 'write';
+
 async function main() {
   const args = process.argv.slice(2);
   const flag = (n: string) => {
@@ -250,50 +280,57 @@ async function main() {
     return i >= 0 ? args[i + 1] : undefined;
   };
   const config = await readJson<FeedConfig>(CONFIG_FILE);
-  const limit = Math.min(Number(flag('limit') ?? config.maxPerDay ?? 20), config.maxPerDay ?? 20);
+  const minPerDay = Number(flag('min') || config.minPerDay || 20);
+  const capArg = Number(flag('limit') || config.maxPerDay || 0);
+  const cap = capArg > 0 ? capArg : Infinity;
+  const deadline = Date.now() + Number(flag('minutes') || 170) * 60_000;
+  const jobs = Math.max(1, Number(flag('jobs') || 3));
   const dry = args.includes('--dry-run');
   const state = await readJson<State>(STATE_FILE, { seen: {} });
   forgetGeminiFailures(state.seen);
   const cutoff = Date.now() - (config.maxAgeDays ?? 14) * 86400_000;
-  const { urls: known, titles } = await knownArticles();
+  const { urls: known, titles, counts } = await knownArticles();
   const categories = (await readJson<Array<{ id: string }>>(path.join(CONTENT, 'categories.json'))).map((c) => c.id);
 
-  const feeds = config.feeds.filter((f) => f.enabled !== false && (f.mode !== 'summary' || hasGemini()));
-  const skippedSummary = config.feeds.filter((f) => f.enabled !== false && f.mode === 'summary' && !hasGemini());
-  if (skippedSummary.length) console.log(`No GEMINI_API_KEY: skipping summary feeds (${skippedSummary.map((f) => f.id).join(', ')}).`);
+  const feeds = config.feeds.filter((f) => f.enabled !== false && (!needsModel(f.mode) || hasGemini()));
+  const skipped = config.feeds.filter((f) => f.enabled !== false && needsModel(f.mode) && !hasGemini());
+  if (skipped.length) console.log(`No GEMINI_API_KEY: skipping ${skipped.map((f) => f.id).join(', ')}.`);
+  if (!process.env.UNSPLASH_ACCESS_KEY) console.warn('::warning::UNSPLASH_ACCESS_KEY is not set: covers fall back to NASA and picsum.photos until it is.');
 
   const candidates = new Map<string, FeedItem[]>();
-  for (const feed of feeds) {
-    try {
-      const items = parseFeed(await httpText(feed.url));
-      const inc = feed.include ? new RegExp(feed.include, 'i') : null;
-      const exc = feed.exclude ? new RegExp(feed.exclude, 'i') : null;
-      const fresh: FeedItem[] = [];
-      for (const it of items) {
-        const url = resolveLink(feed, it);
-        if (!url || !/^https?:/.test(url)) continue;
-        const key = normalizeUrl(url);
-        if (state.seen[key] || known.has(key)) continue;
-        if (it.date && it.date.getTime() < cutoff) continue;
-        if ((inc && !inc.test(it.title)) || (exc && exc.test(it.title))) continue;
-        try {
-          modeFor(key, feed.mode);
-        } catch (e) {
-          console.warn(`${feed.id}: ${(e as Error).message}`);
-          break;
+  await Promise.all(
+    feeds.map(async (feed) => {
+      try {
+        const items = parseFeed(await httpText(feed.url));
+        const inc = feed.include ? new RegExp(feed.include, 'i') : null;
+        const exc = feed.exclude ? new RegExp(feed.exclude, 'i') : null;
+        const fresh: FeedItem[] = [];
+        for (const it of items) {
+          const url = resolveLink(feed, it);
+          if (!url || !/^https?:/.test(url)) continue;
+          const key = normalizeUrl(url);
+          if (state.seen[key] || known.has(key)) continue;
+          if (it.date && it.date.getTime() < cutoff) continue;
+          if ((inc && !inc.test(it.title)) || (exc && exc.test(it.title))) continue;
+          try {
+            modeFor(key, feed.mode);
+          } catch (e) {
+            console.warn(`${feed.id}: ${(e as Error).message}`);
+            break;
+          }
+          fresh.push({ ...it, url: key });
         }
-        fresh.push({ ...it, url: key });
+        candidates.set(feed.id, fresh);
+        console.log(`${feed.id}: ${items.length} items, ${fresh.length} new`);
+      } catch (e) {
+        console.warn(`${feed.id}: feed failed — ${(e as Error).message}`);
       }
-      candidates.set(feed.id, fresh);
-      console.log(`${feed.id}: ${items.length} items, ${fresh.length} new`);
-    } catch (e) {
-      console.warn(`${feed.id}: feed failed — ${(e as Error).message}`);
-    }
-  }
+    }),
+  );
 
-  // Triage returns up to twice `limit`: links that fail (too long, no licence, fetch error) are
-  // replaced by the next best, so a run still reaches `limit` articles when it can.
-  const { picked, rejected } = await selectArticles(feeds, candidates, { limit, existingTitles: titles, categories, triage: config.triage });
+  // Without a cap, triage still balances categories (perCategory) so one busy feed cannot fill the day.
+  const pool = Number.isFinite(cap) ? cap : 200;
+  const { picked, rejected } = await selectArticles(feeds, candidates, { limit: pool, existingTitles: titles, categories, triage: config.triage });
   const feedOf = new Map(feeds.flatMap((f) => (candidates.get(f.id) ?? []).map((it) => [it.url, f.id] as const)));
   for (const r of rejected) state.seen[r.url] = { at: new Date().toISOString(), feed: feedOf.get(r.url) ?? '?', error: `triage: ${r.reason}` };
   console.log(`Triage: ${picked.length} picked, ${rejected.length} rejected.`);
@@ -305,43 +342,90 @@ async function main() {
 
   const created: Created[] = [];
   const failed: string[] = [];
+  let stopped: string | undefined;
   let setupError: Error | undefined;
+  let inFlight = 0;
+  let seq = 0;
   const start = Date.now();
-  for (const { feed, item, category } of picked) {
-    if (created.length >= limit) break;
+
+  /** Work through jobs a few at a time; Gemini calls stay paced across workers (gemini.ts). */
+  const run = async (queue: Job[]) => {
+    const worker = async () => {
+      for (let job = queue.shift(); job; job = queue.shift()) {
+        if (stopped || created.length + inFlight >= cap || Date.now() > deadline) return;
+        inFlight++;
+        // A minute apart and best first: the feed shows the run's picks in triage order.
+        const publishAt = new Date(start - seq++ * 60_000).toISOString();
+        try {
+          const c = await createArticle({ ...job.input, publishAt });
+          for (const note of await checkProse(c.slug)) c.issues.push({ level: 'warning', field: 'prose', message: `kept in review: ${note}` });
+          created.push(c);
+          state.seen[job.key] = { at: new Date().toISOString(), feed: job.feedId, slug: c.slug };
+          console.log(`✓ ${c.slug} (${job.feedId}, ${c.words} words)`);
+        } catch (e) {
+          if (e instanceof GeminiSetupError) {
+            // Nothing can succeed until the model or key is fixed; keep the link unseen and fail the run.
+            setupError = e;
+            stopped = e.message;
+          } else if (e instanceof QuotaError || e instanceof SkipError) stopped = (e as Error).message;
+          else {
+            const message = (e as Error).message.slice(0, 300);
+            state.seen[job.key] = { at: new Date().toISOString(), feed: job.feedId, error: message };
+            failed.push(`- ${job.label}${job.input.url ? ` (${job.input.url})` : ''}: ${message}`);
+            console.warn(`✗ ${job.label}: ${message}`);
+          }
+        } finally {
+          inFlight--;
+        }
+      }
+    };
+    await Promise.all(Array.from({ length: jobs }, worker));
+  };
+
+  await run(
+    picked.map(({ feed, item, category, hints }) => ({
+      key: item.url,
+      feedId: feed.id,
+      label: item.title,
+      input: { url: item.url, title: item.title, category, mode: feed.mode, maxWords: feed.maxWords, hints: { ...hints, summary: plain(item.summary) } },
+    })),
+  );
+
+  const want = Math.min(cap, minPerDay) - created.length;
+  if (want > 0 && !stopped && Date.now() < deadline && hasGemini() && config.ideas?.enabled !== false) {
     try {
-      // A minute apart, so the feed keeps the order of this run.
-      const publishAt = new Date(start + (limit - created.length) * 60_000).toISOString();
-      const c = await createArticle({ url: item.url, category, mode: feed.mode, publishAt, maxWords: feed.maxWords });
-      for (const note of await checkProse(c.slug)) c.issues.push({ level: 'warning', field: 'prose', message: `kept in review: ${note}` });
-      created.push(c);
-      state.seen[item.url] = { at: new Date().toISOString(), feed: feed.id, slug: c.slug };
-      console.log(`✓ ${c.slug} (${feed.id})`);
+      const ideas = await proposeIdeas(want + (config.ideas?.extra ?? 4), {
+        categories,
+        counts,
+        existingTitles: [...titles, ...created.map((c) => c.title), ...picked.map((p) => p.item.title)],
+        seen: new Set(Object.keys(state.seen)),
+        dupThreshold: config.triage?.dupThreshold ?? 0.6,
+      });
+      console.log(`Feeds gave ${created.length}; writing up to ${ideas.length} articles from topic ideas.`);
+      await run(
+        ideas.map((i) => ({
+          key: ideaKey(i.title),
+          feedId: 'ideas',
+          label: i.title,
+          input: { title: i.title, category: i.category, mode: 'write', hints: { angle: i.angle, kind: i.kind, wiki: i.wiki, paper: i.paper, photo: i.photo } },
+        })),
+      );
     } catch (e) {
-      if (e instanceof GeminiSetupError) {
-        // Nothing can succeed until the model or key is fixed; keep the link unseen and fail the run.
-        setupError = e;
-        console.error(`Stopping: ${e.message}`);
-        break;
-      }
-      if (e instanceof QuotaError || e instanceof SkipError) {
-        console.log(`Stopping: ${(e as Error).message}`);
-        break;
-      }
-      const message = (e as Error).message.slice(0, 300);
-      state.seen[item.url] = { at: new Date().toISOString(), feed: feed.id, error: message };
-      failed.push(`- ${item.title} (${item.url}): ${message}`);
-      console.warn(`✗ ${item.url}: ${message}`);
+      if (e instanceof GeminiSetupError) setupError = e;
+      stopped = (e as Error).message;
     }
   }
+  if (stopped) console.log(`Stopped: ${stopped}`);
 
   const keepAfter = Date.now() - KEEP_SEEN_DAYS * 86400_000;
   for (const [k, v] of Object.entries(state.seen)) if (Date.parse(v.at) < keepAfter) delete state.seen[k];
   await writeJson(STATE_FILE, { seen: Object.fromEntries(Object.entries(state.seen).sort(([a], [b]) => a.localeCompare(b))) });
 
+  const short = created.length < minPerDay ? ` (mục tiêu ${minPerDay}${stopped ? `; dừng: ${stopped.slice(0, 120)}` : Date.now() > deadline ? '; hết thời gian chạy' : '; hết nguồn'})` : '';
   const report = [
-    created.length ? `### ${created.length} bài mới\n\n${reportTable(created)}` : '### Không có bài mới',
-    failed.length ? `\n<details><summary>${failed.length} link không dùng được</summary>\n\n${failed.join('\n')}\n</details>` : '',
+    created.length ? `### ${created.length} bài mới${short}\n\n${reportTable(created)}` : `### Không có bài mới${short}`,
+    `\n<sub>Gemini: ${requestsUsed()} lượt gọi · Firecrawl: ${firecrawlPagesUsed()} trang · ảnh Unsplash: ${process.env.UNSPLASH_ACCESS_KEY ? 'bật' : 'chưa có UNSPLASH_ACCESS_KEY'}</sub>`,
+    failed.length ? `\n<details><summary>${failed.length} chủ đề không viết được</summary>\n\n${failed.join('\n')}\n</details>` : '',
   ].join('\n');
   console.log(report);
   await jobSummary(report);

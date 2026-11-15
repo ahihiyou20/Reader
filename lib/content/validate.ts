@@ -18,10 +18,11 @@ export interface ValidationResult {
 }
 
 export const LIMITS = {
-  hookWords: [40, 80] as const,
-  sections: [5, 7] as const,
-  totalWords: [700, 950] as const,
-  sectionWords: 130,
+  /** Pagemoor articles (groups 1, 2, 4) are in-depth: about 1,000 words and more. */
+  hookWords: [40, 110] as const,
+  sections: [5, 9] as const,
+  totalWords: [1000, 1800] as const,
+  sectionWords: 240,
   highlightsPerSection: 3,
   keyPointWords: [40, 60] as const,
   titleWords: 12,

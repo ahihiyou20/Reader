@@ -6,9 +6,10 @@
 // Every result is checked: markup must parse, highlights must not change the words.
 import type { ArticleSource, HlColor } from '../../lib/content/types';
 import { z } from 'zod';
-import { countWords, parseRich, plainText } from '../../lib/content/markup';
+import { citedIds, countWords, highlightCount, parseRich, plainText } from '../../lib/content/markup';
 import { isCleanLine } from '../../lib/content/validate';
 import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiStructured } from './gemini';
+import type { SourceDoc } from './research';
 
 /** A Vietnamese title or heading from Gemini is kept only when it is one clean line. */
 const viLine = (vi: string | undefined, en: string) => (vi?.trim() && isCleanLine(vi.trim(), en) ? vi.trim() : undefined);
@@ -217,10 +218,20 @@ export interface Written {
   applySteps_vi?: string[];
   tags?: string[];
   category?: string;
+  /** Unsplash search words for the cover photo. */
+  photo?: string;
+  /** Pixabay search words for the motion cover. */
+  video?: string;
 }
 
 /** A whole article written by Gemini (groups 4 and 5); `hook` and section counts depend on the job. */
-function writtenSchema(opts: { hook: [number, number]; sections: [number, number]; categories?: string[] }): z.ZodType<Written> {
+function writtenSchema(opts: {
+  hook: [number, number];
+  sections: [number, number];
+  categories?: string[];
+  /** Further checks for a job; each problem is reported to the model like the others. */
+  more?: (w: Written) => string[];
+}): z.ZodType<Written> {
   return z
     .object({
       title_en: plainLine(12, 'title_en'),
@@ -237,8 +248,12 @@ function writtenSchema(opts: { hook: [number, number]; sections: [number, number
       applySteps_vi: threeSteps.optional(),
       tags: tagList.optional(),
       category: categoryOf(opts.categories).optional(),
+      photo: z.string().max(80).optional(),
+      video: z.string().max(60).optional(),
     })
     .superRefine((w, ctx) => {
+      // Whole-article problems sit at the root: a field-level path would make a second failure delete the field.
+      for (const message of opts.more?.(w) ?? []) ctx.addIssue({ code: 'custom', path: [], message });
       if (w.title_vi && !isCleanLine(w.title_vi.trim(), w.title_en))
         ctx.addIssue({ code: 'custom', path: ['title_vi'], message: 'title_vi: one plain Vietnamese line about as long as title_en, no markup' });
       w.sections.forEach((x, i) => {
@@ -320,6 +335,90 @@ export async function fromText(text: string, hint?: string, categories?: string[
     .join('\n\n');
   const r = await geminiStructured<Written>({ prompt, schema: writtenSchema({ hook: [30, 90], sections: [1, 7], categories }) });
   return whole(r.value, r.dropped);
+}
+
+/** Words a reader reads: reference chips are not counted. */
+export function proseWords(src: string | undefined): number {
+  if (!src?.trim()) return 0;
+  return countWords(
+    parseRich(src)
+      .rich.map((p) => p.filter((n) => n.t !== 'cite').map((n) => n.v).join(''))
+      .join('\n\n'),
+  );
+}
+
+export const writtenWords = (w: Pick<Written, 'hook_en' | 'sections'>) => proseWords(w.hook_en) + w.sections.reduce((n, s) => n + proseWords(s.body_en), 0);
+
+/** Length of a researched article: long enough to explain, short enough to finish in one sitting. */
+export const RESEARCHED_WORDS = { min: 1000, target: [1100, 1400] as const, max: 1800 };
+
+const RESEARCH_TITLE =
+  'title_en: 4–10 words and at most 60 characters, sentence case, plain text. The cover sets the end of the title in a decorative display face, so shape it as "Subject: short vivid payoff" (the payoff after the colon is 2–4 words and at most 26 characters) or as a phrase that ends on a concrete, striking word or two. No question marks, no clickbait, no "everything you need to know".';
+
+export interface ResearchBrief {
+  title: string;
+  /** What the article should explain, from triage. */
+  angle?: string;
+  kind?: string;
+  sources: SourceDoc[];
+  categories?: string[];
+}
+
+/**
+ * Group 4: Reader's own in-depth article on a topic, written from several sources and citing each
+ * with its {id}. English only; translate.ts adds the other languages.
+ */
+export async function writeResearched(b: ResearchBrief): Promise<Written> {
+  const ids = new Set(b.sources.map((d) => d.id));
+  const more = (w: Written): string[] => {
+    const out: string[] = [];
+    const total = writtenWords(w);
+    if (total < RESEARCHED_WORDS.min)
+      out.push(`hook plus sections have ${total} words: write ${RESEARCHED_WORDS.target.join('–')} (each section 130–220 words) by adding explanation, evidence and context from the sources, never filler`);
+    if (total > RESEARCHED_WORDS.max) out.push(`hook plus sections have ${total} words: stay under ${RESEARCHED_WORDS.max - 200}`);
+    w.sections.forEach((x, i) => {
+      if (!x.heading_en?.trim()) out.push(`sections ${i}: give it a heading_en`);
+      const hl = highlightCount(x.body_en);
+      if (hl < 1 || hl > 3) out.push(`sections ${i}: ${hl} highlights; use 1 or 2`);
+      const unknown = citedIds(x.body_en).filter((id) => !ids.has(id));
+      if (unknown.length) out.push(`sections ${i}: unknown reference ids ${unknown.map((id) => `{${id}}`).join(', ')}; use only ${[...ids].map((id) => `{${id}}`).join(', ')}`);
+      if (!citedIds(x.body_en).length) out.push(`sections ${i}: cite the source of its facts with a {reference-id}`);
+    });
+    if (w.title_en.length > 65) out.push(`title_en has ${w.title_en.length} characters: at most 60`);
+    return out;
+  };
+  const prompt = [
+    'You write for Reader (Pagemoor), a free, non-commercial app of in-depth, sourced articles for curious general readers.',
+    `Write an ORIGINAL article in English about the topic below, using only facts from the numbered sources. Combine the sources into one explanation of your own: do not follow any one source's structure, never copy a sentence, keep quotations under 8 words. Every number, name, date and claim must come from a source; where sources disagree or evidence is weak, say so.`,
+    'Depth: explain how the thing works step by step, with concrete numbers and examples; say how it was found out or how it came about; give the evidence and its limits; end on what it means for the reader or what is still unknown. A reader should finish knowing something they can explain to a friend.',
+    WRITING_RULES,
+    `Markup: ${MARKUP_RULES} Cite with the reference ids listed below (${[...ids].map((id) => `{${id}}`).join(', ')}), right after the sentence each supports, in every section; never invent an id. In every section put 1 or 2 highlights of 2–7 words on what a skimming reader must not miss: [y:…] a key fact or number, [p:…] the main idea, [g:…] a practical tip; never a whole sentence. Put **bold** on one phrase in the whole article at most.`,
+    RESEARCH_TITLE,
+    `hook_en: 50–90 words that open with the most surprising fact and make the reader want the rest. sections: 6–8 sections, each with a heading_en of 2–7 plain words and a body_en of 130–220 words in 1–3 paragraphs (a blank line between paragraphs). Hook plus sections: ${RESEARCHED_WORDS.target.join('–')} words, never under ${RESEARCHED_WORDS.min}. Write English only: leave every _vi field out.`,
+    `Write ${KEY_POINT.replace('; keyPoint_vi is its Vietnamese version', '')}`,
+    `Write ${APPLY.replace('; applySteps_vi in the same order', '')}`,
+    `Write ${TAGS}`,
+    'photo: 2–4 concrete English words for an Unsplash photo search that would make a striking cover for this article: things a camera can capture (e.g. "honeybee honeycomb macro", "old printing press type"), never abstract ideas.',
+    'video: 1–3 concrete English words for a Pixabay video search that would make a calm, striking moving cover (e.g. "ocean waves", "clock gears", "city traffic night"), things that move on camera.',
+    b.categories?.length ? categoryRule(b.categories) : '',
+    `Topic: ${b.title}`,
+    b.angle ? `Angle: ${b.angle}` : '',
+    b.kind ? `Kind of article: ${b.kind}` : '',
+    'Sources:',
+    ...b.sources.map((d) => `[${d.id}] ${d.label} <${d.url}>\n${d.text}\n---`),
+  ]
+    .filter(Boolean)
+    .join('\n\n');
+  const r = await geminiStructured<Written>({ prompt, schema: writtenSchema({ hook: [40, 110], sections: [5, 9], categories: b.categories, more }), temperature: 0.4 });
+  const w = whole(r.value, r.dropped);
+  // An unknown chip would make the whole field fall back to plain text: drop the chip, keep the markup.
+  const known = (t: string) => t.replace(/\{([a-z0-9-]+)\}/gi, (m, id: string) => (ids.has(id) ? m : ''));
+  w.hook_en = known(w.hook_en);
+  // translate.ts writes every other language from the English, so a stray _vi field is not kept.
+  w.sections = w.sections.map((x) => ({ ...(x.heading_en ? { heading_en: x.heading_en } : {}), body_en: known(x.body_en) }));
+  if (w.keyPoint_en) w.keyPoint_en = known(w.keyPoint_en);
+  const { title_vi: _t, hook_vi: _h, keyPoint_vi: _k, applySteps_vi: _a, ...en } = w;
+  return en;
 }
 
 /** Read or write an article prose field by its proseFields() path, e.g. `sections.2.body_vi`. */

@@ -17,13 +17,14 @@ async function main() {
   for (const f of files) {
     const a = await readJson<ArticleSource>(path.join(dirs.articles, path.basename(f)));
     const check = validateArticle(a);
-    rows.push({ slug: a.slug, group: a.origin.group, title: a.title.en, words: check.wordCount, url: a.origin.originalUrl, issues: check.issues, ai: a.ai?.fields ?? [] });
+    const url = a.origin.originalUrl ?? a.references.find((r) => r.id === 'source')?.url;
+    rows.push({ slug: a.slug, group: a.origin.group, title: a.title.en, words: check.wordCount, url, issues: check.issues, ai: a.ai?.fields ?? [] });
   }
   console.log(
     [
-      `Bot tìm được **${rows.length} bài mới** từ các nguồn trong \`content/feeds.json\` (tối đa 20 bài/ngày).`,
+      `Bot viết **${rows.length} bài mới** (mỗi bài khoảng 1.000 chữ trở lên, năm ngôn ngữ) từ các chủ đề trong \`content/feeds.json\` và ý tưởng của Gemini, ít nhất 20 bài/ngày, không giới hạn trên.`,
       '',
-      '- **Merge** pull request này = duyệt và đăng tất cả (kể cả phần do Gemini viết: bản tiếng Việt, KEY POINT, Apply, tóm tắt).',
+      '- **Merge** pull request này = duyệt và đăng tất cả (toàn bộ do Gemini viết từ các nguồn trích dẫn trong mỗi bài, cả bản dịch).',
       '- Không muốn bài nào: xoá file `content/articles/<slug>.json` của bài đó trong pull request rồi merge.',
       '- Đóng pull request mà không merge = bỏ cả đợt; bot không lấy lại các link đã xem.',
       '',

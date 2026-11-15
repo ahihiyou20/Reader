@@ -63,12 +63,21 @@ export async function uniqueSlug(base: string): Promise<string> {
   return slug;
 }
 
-export async function http(url: string, init: RequestInit = {}, attempts = 3): Promise<Response> {
+/**
+ * fetch with retries on 429/5xx and network errors. Every attempt has a deadline: a host that hangs
+ * (picsum.photos once answered each request with a 522 after two minutes) must not stall a whole run.
+ */
+export async function http(url: string, init: RequestInit = {}, attempts = 3, timeoutMs = 30_000): Promise<Response> {
   let last: unknown;
   for (let i = 0; i < attempts; i++) {
     try {
-      const res = await fetch(url, { ...init, headers: { 'user-agent': USER_AGENT, ...(init.headers ?? {}) } });
-      if (res.status === 429 || res.status >= 500) {
+      const res = await fetch(url, {
+        ...init,
+        signal: init.signal ?? AbortSignal.timeout(timeoutMs),
+        headers: { 'user-agent': USER_AGENT, ...(init.headers ?? {}) },
+      });
+      // The last answer is returned as it is, so the caller sees the status and the body.
+      if ((res.status === 429 || res.status >= 500) && i < attempts - 1) {
         last = new Error(`${res.status} ${url}`);
         await new Promise((r) => setTimeout(r, 1500 * (i + 1) * (i + 1)));
         continue;

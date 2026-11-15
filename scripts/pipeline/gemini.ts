@@ -11,8 +11,21 @@ import { BANNED_WORDS_EN, STOCK_PHRASES_EN, STOCK_PHRASES_VI } from './prose-lin
 /** GEMINI_VIA=agy sends requests through a signed-in Antigravity CLI instead of an API key (bulk jobs on an editor's machine). */
 const VIA_AGY = process.env.GEMINI_VIA === 'agy';
 export const MODEL = process.env.GEMINI_MODEL || (VIA_AGY ? 'gemini-3.8-flash-high' : 'gemini-3.5-flash-lite');
+/**
+ * Tried in turn when the model in use is overloaded (503, seen for hours on 2026-11-14/15) or out of
+ * free quota: each model has its own free-tier quota. The `-latest` aliases follow Google's renames.
+ */
+const FALLBACK_MODELS = (process.env.GEMINI_FALLBACK_MODELS || 'gemini-flash-lite-latest,gemini-flash-latest')
+  .split(',')
+  .map((m) => m.trim())
+  .filter((m) => m && m !== MODEL);
 /** The free tier allows about 15 requests a minute: keep a gap between calls. */
 const GAP_MS = Number(process.env.GEMINI_GAP_MS ?? 4500);
+/** First wait after a 503 or a timeout; doubled on each retry of the same model. */
+const RETRY_MS = Number(process.env.GEMINI_RETRY_MS ?? 15_000);
+/** A long article in one reply can take a few minutes on a busy model. */
+const REQUEST_TIMEOUT_MS = 240_000;
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export class QuotaError extends Error {}
 /** The model or key cannot work at all (retired model, bad key, API off): no article can succeed, so stop. */
@@ -69,44 +82,101 @@ function viaAgy(text: string, jsonSchema: object): Promise<unknown> {
   );
 }
 
-async function generate(text: string, jsonSchema: object, temperature: number): Promise<unknown> {
-  if (VIA_AGY) return viaAgy(text, jsonSchema);
-  if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is not set');
-  const wait = last + GAP_MS - Date.now();
-  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
-  last = Date.now();
+/** Reserve the next request slot before waiting, so parallel callers stay GAP_MS apart. */
+async function pace() {
+  const at = Math.max(Date.now(), last + GAP_MS);
+  last = at;
+  if (at > Date.now()) await sleep(at - Date.now());
+}
+
+/** Models that cannot serve this run any more: out of quota, retired, or refused by the key. */
+const outOfQuota = new Set<string>();
+const unusable = new Map<string, string>();
+/** A model still overloaded after its retries rests for a while instead of costing every request the same waits. */
+const restingUntil = new Map<string, number>();
+const REST_MS = 10 * 60_000;
+
+/** One request to one model. `retry` means the same model may answer if asked again later. */
+async function callModel(model: string, text: string, jsonSchema: object, temperature: number): Promise<{ ok: true; value: unknown } | { ok: false; retry: boolean; status: number; body: string }> {
+  await pace();
   used++;
   const schemaField = jsonSchemaRejected ? { responseSchema: toOpenApi(jsonSchema) } : { responseJsonSchema: jsonSchema };
-  const res = await http(
-    `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`,
-    {
-      method: 'POST',
-      headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY },
-      body: JSON.stringify({
-        contents: [{ role: 'user', parts: [{ text }] }],
-        generationConfig: { temperature, responseMimeType: 'application/json', ...schemaField },
-      }),
-    },
-    1,
-  );
-  if (res.status === 429) throw new QuotaError('Gemini free-tier quota reached');
+  let res: Response;
+  try {
+    res = await http(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+      {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY! },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text }] }],
+          generationConfig: { temperature, responseMimeType: 'application/json', ...schemaField },
+        }),
+      },
+      1,
+      REQUEST_TIMEOUT_MS,
+    );
+  } catch (e) {
+    return { ok: false, retry: true, status: 0, body: (e as Error).message };
+  }
   if (!res.ok) {
     const body = await res.text();
     if (!jsonSchemaRejected && res.status === 400 && /response_?json_?schema/i.test(body)) {
       jsonSchemaRejected = true;
-      return generate(text, jsonSchema, temperature);
+      return callModel(model, text, jsonSchema, temperature);
     }
-    const msg = `Gemini ${MODEL} ${res.status}: ${body.slice(0, 300)}`;
-    throw isSetupFailure(res.status, body) ? new GeminiSetupError(msg) : new Error(msg);
+    return { ok: false, retry: res.status >= 500, status: res.status, body };
   }
   const data = (await res.json()) as { candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }> };
   const out = data.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!out) throw new Error('Empty Gemini response');
+  if (!out) return { ok: false, retry: true, status: 200, body: 'Empty Gemini response' };
   try {
-    return JSON.parse(out);
+    return { ok: true, value: JSON.parse(out) };
   } catch {
-    return undefined;
+    return { ok: true, value: undefined };
   }
+}
+
+/**
+ * The configured model first, then each fallback. An overloaded model is retried with growing waits;
+ * a model out of quota or unusable is skipped for the rest of the run. Quota on every model ends the
+ * run (QuotaError); every model unusable is a setup problem (GeminiSetupError).
+ */
+async function generate(text: string, jsonSchema: object, temperature: number): Promise<unknown> {
+  if (VIA_AGY) return viaAgy(text, jsonSchema);
+  if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is not set');
+  let lastError = '';
+  for (const model of [MODEL, ...FALLBACK_MODELS]) {
+    if (outOfQuota.has(model) || unusable.has(model) || (restingUntil.get(model) ?? 0) > Date.now()) continue;
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const r = await callModel(model, text, jsonSchema, temperature);
+      if (r.ok) return r.value;
+      lastError = `Gemini ${model} ${r.status}: ${r.body.slice(0, 300)}`;
+      if (r.status === 429) {
+        // A per-minute limit clears within a minute; a daily one does not.
+        if (attempt === 0 && /per.?minute|PerMinute/i.test(r.body)) {
+          await sleep(Math.min(60_000, RETRY_MS * 4));
+          continue;
+        }
+        outOfQuota.add(model);
+        break;
+      }
+      if (isSetupFailure(r.status, r.body)) {
+        unusable.set(model, lastError);
+        break;
+      }
+      if (!r.retry) throw new Error(lastError);
+      if (attempt < 2) await sleep(RETRY_MS * 2 ** attempt);
+    }
+    if (!outOfQuota.has(model) && !unusable.has(model)) {
+      restingUntil.set(model, Date.now() + REST_MS);
+      console.warn(`${lastError.slice(0, 120)}; trying the next model.`);
+    }
+  }
+  const models = [MODEL, ...FALLBACK_MODELS];
+  if (models.every((m) => unusable.has(m))) throw new GeminiSetupError(unusable.get(MODEL) ?? lastError);
+  if (models.every((m) => outOfQuota.has(m) || unusable.has(m))) throw new QuotaError('Gemini free-tier quota reached on every model');
+  throw new Error(lastError || 'Gemini: every model is overloaded; try again later');
 }
 
 export interface StructuredResult<T> {

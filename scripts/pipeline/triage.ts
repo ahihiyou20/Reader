@@ -2,7 +2,7 @@
 // call scores what is left for lasting value to a curious general reader, then a pure selection step
 // balances categories and kinds and drops near-duplicates of articles Reader already has.
 import { z } from 'zod';
-import { geminiStructured, hasGemini } from './gemini';
+import { GeminiSetupError, geminiStructured, hasGemini } from './gemini';
 
 export interface Candidate {
   url: string;
@@ -17,6 +17,14 @@ export interface Scored extends Candidate {
   category: string;
   kind: (typeof KINDS)[number];
   reason: string;
+  /** What Reader's article on it should explain. */
+  angle?: string;
+  /** Wikipedia searches for background. */
+  wiki?: string[];
+  /** Europe PMC search for the research behind it. */
+  paper?: string;
+  /** Unsplash search words for the cover. */
+  photo?: string;
 }
 export interface TriageOptions {
   minScore: number;
@@ -56,6 +64,11 @@ const TITLE_RULES: Array<[RegExp, string]> = [
   ],
   [/\b(obituary|in memoriam|dies at \d+|passes away)\b/i, 'obituary'],
   [/\b(press release|media advisory|newsletter|this week in|weekly roundup|digest)\b/i, 'roundup or press notice'],
+  [
+    /\b(senate|senator|congress(wo)?m[ae]n|parliament(ary)?|lawmakers?|democrats?|republicans?|election|electoral|campaign trail|ballot|ceasefire|impeach\w*|leadership (bid|race|contest))\b/i,
+    'politics',
+  ],
+  [/\b(lawsuit|sues|sued|verdict|indict(ed|ment)|privy council|supreme court|court rul(es|ing)|judge?ments?)\b/i, 'court case'],
   [
     /\((\d{4} )?(film|movie|album|song|single|tv series|television series|episode|video game|band|novel)\)$/i,
     'film, album or show as a subject',
@@ -142,10 +155,15 @@ const RUBRIC = [
   'Score each candidate from 0 to 10 for the value of a Reader article built from it:',
   '- 8–10: a finding, mechanism or piece of history a reader would still find worth knowing in a year, with evidence the article can explain (how it works, what was measured, what it changes).',
   '- 5–7: solid but narrow, local, or mostly news without much to explain.',
-  '- 0–4: announcements, events, personnel, product or institutional promotion, sports results or seasons, entertainment plots, biographies of people a general reader has no reason to know, lists without substance, or anything that would repeat an existing Reader article.',
+  '- 0–4: announcements, events, personnel, product or institutional promotion, politics, elections, court cases, protests and activism news, crime, business deals, sports results or seasons, entertainment plots, biographies of people a general reader has no reason to know, lists without substance, opinion pieces on current affairs, or anything that would repeat an existing Reader article.',
+  'Reader writes its own in-depth article (about 1,200 words) on each pick, researched from Wikipedia, research papers and the web: score lower a topic too thin or too local to fill that with explanation and evidence.',
   'Set reject to true for 0–4. kind: finding (new research result), explainer (how something works), history, practical (research-backed advice), data (a trend told through numbers).',
   'category: the one id from the given list that fits best. reason: one short sentence a human editor can check.',
+  'For every item that is not rejected also give: angle, one sentence on what Reader\'s article will explain (the mechanism, the evidence, the history); wiki, 1–2 English Wikipedia searches for the article\'s background (the general subject, e.g. "Placebo" or "Tardigrade", not the news headline); paper, a short search for peer-reviewed research on it (science, health, psychology, productivity and technology topics); photo, 2–4 concrete English words for an Unsplash photo that would make a striking cover (things a camera can capture).',
 ].join('\n');
+
+/** One Gemini call scores at most this many candidates, so a long list does not make one huge reply. */
+const BATCH = 50;
 
 /** Full step: hard rejects, one batched Gemini call (or a neutral fallback without a key), then pickTriaged. */
 export async function triage(
@@ -172,6 +190,23 @@ export async function triage(
     }));
     return { picked: pickTriaged(scored, opts), rejected };
   }
+  const scored: Scored[] = [];
+  for (let from = 0; from < kept.length; from += BATCH) {
+    const batch = kept.slice(from, from + BATCH);
+    try {
+      scored.push(...(await scoreBatch(batch, opts, rejected)));
+    } catch (e) {
+      if (e instanceof GeminiSetupError) throw e;
+      // An overloaded or exhausted model must not crash the run: these candidates go through on the
+      // rules alone, and the writing step stops by itself if the quota is gone.
+      console.warn(`triage: scoring failed (${(e as Error).message.slice(0, 160)}); keeping ${batch.length} candidates by rule`);
+      scored.push(...batch.map((c) => ({ ...c, score: opts.minScore, category: fallbackCategory(c), kind: 'explainer' as const, reason: 'scoring failed: rule-based pick' })));
+    }
+  }
+  return { picked: pickTriaged(scored, opts), rejected };
+}
+
+async function scoreBatch(kept: Candidate[], opts: TriageOptions, rejected: Array<{ url: string; reason: string }>): Promise<Scored[]> {
   const schema = z.object({
     items: z.array(
       z.object({
@@ -185,6 +220,10 @@ export async function triage(
         kind: z.enum(KINDS),
         reason: z.string().min(3).max(240),
         reject: z.boolean(),
+        angle: z.string().max(300).optional(),
+        wiki: z.array(z.string().min(2).max(80)).max(3).optional(),
+        paper: z.string().max(120).optional(),
+        photo: z.string().max(80).optional(),
       }),
     ),
   });
@@ -203,12 +242,13 @@ export async function triage(
     'Return one item per candidate index.',
   ].join('\n');
   const { value } = await geminiStructured({ prompt, schema, temperature: 0.2 });
+  if (!value.items?.length) throw new Error('no usable scores in the reply');
   const scored: Scored[] = [];
   for (const it of value.items ?? []) {
     const c = kept[it.index];
     if (!c || scored.some((s) => s.url === c.url)) continue;
     if (it.reject) rejected.push({ url: c.url, reason: `score ${it.score}: ${it.reason}` });
-    else scored.push({ ...c, score: it.score, category: it.category, kind: it.kind, reason: it.reason });
+    else scored.push({ ...c, score: it.score, category: it.category, kind: it.kind, reason: it.reason, angle: it.angle, wiki: it.wiki, paper: it.paper, photo: it.photo });
   }
-  return { picked: pickTriaged(scored, opts), rejected };
+  return scored;
 }

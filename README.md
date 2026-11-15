@@ -34,7 +34,10 @@ pnpm start        # phục vụ out/ tại http://localhost:4173 (clean URL như
 
 ## Thêm và sửa bài
 
-- **Tự động mỗi ngày**: workflow `feeds.yml` đọc các nguồn RSS trong `content/feeds.json` (NASA, Our World in Data, The Conversation, Global Voices, Wikipedia, USGS, và các trang chỉ được tóm tắt như Psyche, Quanta, Knowable…), viết **tối đa 20 bài/ngày** và gom vào **một pull request** `bot/new-articles`. Merge = đăng; xoá file của bài nào trong pull request để bỏ bài đó. Sửa nguồn trong CMS → Cài đặt → Nguồn tự động.
+- **Gemini writer mỗi ngày**: workflow `gemini-writer.yml` lấy chủ đề từ khoảng 40 nguồn RSS trong `content/feeds.json` (NASA, ESA, Quanta, ScienceDaily, Psyche, Aeon, WHO, Our World in Data, IMF, MIT News, IEEE Spectrum, Smithsonian, JSTOR Daily, Wikipedia…) và chủ đề do Gemini đề xuất khi thiếu, nghiên cứu từng chủ đề (trang gốc, Wikipedia, Europe PMC, Firecrawl), rồi viết bài **của Reader dài 1.000+ từ**, có highlight và chip nguồn, đủ **năm ngôn ngữ**, ảnh bìa **Unsplash**. **Ít nhất 20 bài/ngày, không giới hạn trên**, gom vào **một pull request** `bot/new-articles` (hoặc đăng thẳng khi biến repo `GEMINI_AUTO_PUBLISH=true`), kèm **bìa động từ video Pixabay**. Merge = đăng; xoá file của bài nào trong pull request để bỏ bài đó. Chi tiết: docs/05 bước 11. Sửa nguồn trong CMS → Cài đặt → Nguồn tự động.
+- **Claude writer mỗi ngày**: scheduled task "Pagemoor daily writer" làm theo `docs/09-daily-writer.md` (ít nhất 20 bài 1.000+ từ, năm ngôn ngữ, ảnh Unsplash và **bìa động từ video Pixabay** qua `scripts/dev/unsplash-cover.ts`, `scripts/dev/motion-cover.ts`), kiểm tra bằng `scripts/pipeline/standard-cli.ts --claude` rồi đẩy thẳng lên `main`.
+- **Hoàn thiện bài mới**: `finish-articles.yml` chạy khi bài mới lên `main` (của cả hai), dịch nốt ngôn ngữ còn thiếu, cắt clip Pixabay còn thiếu, báo cáo theo chuẩn Pagemoor và deploy.
+- **Bổ sung bài ngắn**: scheduled task "Pagemoor article expander" mỗi ngày bổ sung 25 bài dưới 1.000 chữ từ chính nguồn của bài (`docs/10-expand-articles.md`, danh sách: `scripts/pipeline/short-articles.ts`).
 - **Thêm nhanh**: Issues → New issue → **Thêm bài viết**, dán link (hoặc văn bản bạn tự viết). Bot mở pull request kèm link preview và trả lời ngay trong issue.
 - **Cách bot đăng theo giấy phép**: nguồn mở (CC BY, CC BY-NC, public domain, CC BY-SA) → phỏng theo, có tiếng Việt; CC BY-ND → nguyên văn kèm tóm tắt tiếng Việt; trang còn bản quyền → Reader tự viết **bản tóm tắt ngắn + nút “Đọc bài gốc”**, không lưu văn bản gốc, trang có `noindex`. Reader là dự án cá nhân phi thương mại nên nhận được giấy phép NC.
 - **Gemini** (`GEMINI_API_KEY`, gói miễn phí) viết bản tiếng Việt, KEY POINT, 3 bước Apply, highlight và bản tóm tắt. Không có key: bài nguồn mở vẫn được tạo (chỉ tiếng Anh), các feed tóm tắt bị bỏ qua. Chỉ gửi văn bản bài viết, không bao giờ gửi dữ liệu người dùng.
@@ -44,7 +47,7 @@ pnpm start        # phục vụ out/ tại http://localhost:4173 (clean URL như
   pnpm tsx scripts/pipeline/import.ts --url <url> --category <id>
   ```
   Script lưu nguồn vào `content/sources/` và `content/raw/`, chọn đoạn 700–950 từ, chia section ≤ 130 từ và tạo bản nháp. Biên tập viên thêm highlight, KEY POINT, 3 bước Apply và bản tiếng Việt.
-- **Ảnh bìa**: `pnpm tsx scripts/dev/picsum-cover.ts <slug> <picsum-id>` tải ảnh Unsplash (qua picsum.photos, không cần API key), nén webp ≤ 220 KB vào `public/covers/` và ghi tên tác giả vào bài.
+- **Ảnh bìa**: `pnpm tsx scripts/dev/unsplash-cover.ts <slug> <ảnh Unsplash>` gắn ảnh Unsplash từ CDN của Unsplash (dọc + ngang, ghi công tác giả); `--search "<từ khoá>"` liệt kê ảnh chưa bài nào dùng (cần `UNSPLASH_ACCESS_KEY`). Cách cũ `scripts/dev/picsum-cover.ts <slug> <picsum-id>` vẫn còn nhưng picsum.photos hay sập.
 - **Quy tắc nội dung**: xem [`docs/05-content-pipeline.md`](./docs/05-content-pipeline.md) (giấy phép, độ dài, markup `**đậm** *nghiêng* [y|p|g:highlight] {ref-id}`). Mọi DOI phải được kiểm tra trên Crossref.
 
 30 bài ra mắt đều có cờ `"seed": true`: nội dung đã được soạn và kiểm tra nguồn, nhưng nên được một biên tập viên đọc lại rồi mới bỏ cờ.

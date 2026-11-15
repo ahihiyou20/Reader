@@ -22,9 +22,9 @@ interface Photo {
   name: string;
   username: string;
 }
-const PORTRAIT = { width: 1080, height: 1920, quality: 74 };
-const WIDE = { width: 2560, height: 1440, quality: 80 };
-const cdn = (raw: string, box: { width: number; height: number; quality: number }) =>
+export const PORTRAIT = { width: 1080, height: 1920, quality: 74 };
+export const WIDE = { width: 2560, height: 1440, quality: 80 };
+export const cdn = (raw: string, box: { width: number; height: number; quality: number }) =>
   `${raw}${raw.includes('?') ? '&' : '?'}w=${box.width}&h=${box.height}&fit=crop&crop=entropy&q=${box.quality}&fm=webp`;
 
 /** The Unsplash key's hourly quota is used up: stop, run again later. */

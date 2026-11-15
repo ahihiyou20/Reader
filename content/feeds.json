@@ -1,29 +1,66 @@
 {
-  "maxPerDay": 20,
+  "minPerDay": 20,
+  "maxPerDay": 0,
   "maxAgeDays": 14,
-  "triage": { "minScore": 6, "perCategory": 3, "dupThreshold": 0.6 },
+  "triage": { "minScore": 6, "perCategory": 6, "dupThreshold": 0.6 },
+  "ideas": { "enabled": true, "extra": 4 },
   "feeds": [
-    { "id": "nasa-science", "name": "NASA Science", "url": "https://science.nasa.gov/feed/", "category": "science", "mode": "adapt", "max": 3, "exclude": "^APOD|proposer|solicitation|ROSES|opportunit|funding|job", "enabled": true },
-    { "id": "owid", "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "category": "auto", "mode": "adapt", "max": 2, "enabled": true },
-    { "id": "conversation", "name": "The Conversation", "url": "https://theconversation.com/global/articles.atom", "category": "auto", "mode": "verbatim", "max": 3, "maxWords": 1500, "exclude": "election|Trump|Putin|Netanyahu|ceasefire|minister|parliament|senate|congress|tariff|budget", "enabled": true },
-    { "id": "global-voices", "name": "Global Voices", "url": "https://globalvoices.org/feed/", "category": "society", "mode": "adapt", "max": 2, "enabled": true },
+    { "id": "nasa-science", "name": "NASA Science", "url": "https://science.nasa.gov/feed/", "category": "science", "mode": "write", "max": 3, "exclude": "^APOD|proposer|solicitation|ROSES|opportunit|funding|job", "enabled": true },
+    { "id": "esa-space", "name": "ESA Space Science", "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science", "category": "science", "mode": "write", "max": 2, "enabled": true },
+    { "id": "usgs", "name": "U.S. Geological Survey", "url": "https://www.usgs.gov/news/all/feed", "category": "science", "mode": "write", "max": 2, "enabled": true },
+    { "id": "quanta", "name": "Quanta Magazine", "url": "https://www.quantamagazine.org/feed/", "category": "science", "mode": "write", "max": 2, "enabled": true },
+    { "id": "sciencedaily", "name": "ScienceDaily", "url": "https://www.sciencedaily.com/rss/top/science.xml", "category": "science", "mode": "write", "max": 3, "enabled": true },
+    { "id": "sciencenews", "name": "Science News", "url": "https://www.sciencenews.org/feed", "category": "auto", "mode": "write", "max": 3, "enabled": true },
+    { "id": "phys-org", "name": "Phys.org", "url": "https://phys.org/rss-feed/", "category": "science", "mode": "write", "max": 2, "enabled": true },
+    { "id": "ars-science", "name": "Ars Technica Science", "url": "https://feeds.arstechnica.com/arstechnica/science", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "npr-science", "name": "NPR Science", "url": "https://feeds.npr.org/1007/rss.xml", "category": "science", "mode": "write", "max": 2, "enabled": true },
+
+    { "id": "sd-mind-brain", "name": "ScienceDaily Mind & Brain", "url": "https://www.sciencedaily.com/rss/mind_brain.xml", "category": "psychology", "mode": "write", "max": 3, "enabled": true },
+    { "id": "psyche", "name": "Psyche", "url": "https://psyche.co/feed", "category": "psychology", "mode": "write", "max": 2, "enabled": true },
+    { "id": "aeon", "name": "Aeon", "url": "https://aeon.co/feed.rss", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "greater-good", "name": "Greater Good Science Center", "url": "https://greatergood.berkeley.edu/feeds/news", "category": "psychology", "mode": "write", "max": 2, "enabled": true },
+
+    { "id": "sd-health", "name": "ScienceDaily Health & Medicine", "url": "https://www.sciencedaily.com/rss/health_medicine.xml", "category": "health", "mode": "write", "max": 3, "enabled": true },
+    { "id": "npr-health", "name": "NPR Health", "url": "https://feeds.npr.org/1128/rss.xml", "category": "health", "mode": "write", "max": 2, "enabled": true },
+    { "id": "who-news", "name": "World Health Organization", "url": "https://www.who.int/rss-feeds/news-english.xml", "category": "health", "mode": "write", "max": 2, "exclude": "Director-General|appoint|statement|visit|meeting|summit|award", "enabled": true },
+
+    { "id": "owid", "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "category": "auto", "mode": "write", "max": 3, "enabled": true },
+    { "id": "liberty-street", "name": "Liberty Street Economics", "url": "https://libertystreeteconomics.newyorkfed.org/feed/", "category": "economics", "mode": "write", "max": 2, "enabled": true },
+    { "id": "imf-blog", "name": "IMF Blog", "url": "https://www.imf.org/en/Blogs/rss", "category": "economics", "mode": "write", "max": 2, "enabled": true },
+    { "id": "npr-economy", "name": "NPR Economy", "url": "https://feeds.npr.org/1017/rss.xml", "category": "economics", "mode": "write", "max": 2, "enabled": true },
+
+    { "id": "mit-news", "name": "MIT News", "url": "https://news.mit.edu/rss/feed", "category": "auto", "mode": "write", "max": 3, "enabled": true },
+    { "id": "ieee-spectrum", "name": "IEEE Spectrum", "url": "https://spectrum.ieee.org/feeds/feed.rss", "category": "technology", "mode": "write", "max": 2, "enabled": true },
+    { "id": "tech-review", "name": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/", "category": "technology", "mode": "write", "max": 2, "enabled": true },
+    { "id": "sd-computers", "name": "ScienceDaily Computers & Math", "url": "https://www.sciencedaily.com/rss/computers_math.xml", "category": "technology", "mode": "write", "max": 2, "enabled": true },
+
+    { "id": "fs-blog", "name": "Farnam Street", "url": "https://fs.blog/feed/", "category": "productivity", "mode": "write", "max": 2, "enabled": true },
+    { "id": "cal-newport", "name": "Cal Newport", "url": "https://calnewport.com/feed/", "category": "productivity", "mode": "write", "max": 2, "enabled": true },
+
+    { "id": "smithsonian", "name": "Smithsonian Magazine", "url": "https://www.smithsonianmag.com/rss/latest_articles/", "category": "auto", "mode": "write", "max": 3, "enabled": true },
+    { "id": "jstor-daily", "name": "JSTOR Daily", "url": "https://daily.jstor.org/feed/", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "public-domain-review", "name": "The Public Domain Review", "url": "https://publicdomainreview.org/rss.xml", "category": "history", "mode": "write", "max": 1, "enabled": true },
+    { "id": "sd-fossils", "name": "ScienceDaily Fossils & Ruins", "url": "https://www.sciencedaily.com/rss/fossils_ruins.xml", "category": "history", "mode": "write", "max": 2, "enabled": true },
     {
       "id": "wikipedia-featured",
       "name": "Wikipedia — Today's featured article",
       "url": "https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom",
       "category": "auto",
-      "mode": "adapt",
+      "mode": "write",
       "max": 1,
       "resolve": "wikipedia-featured",
-      "enabled": true, "minScore": 8 },
-    { "id": "usgs", "name": "U.S. Geological Survey", "url": "https://www.usgs.gov/news/all/feed", "category": "science", "mode": "adapt", "max": 1, "enabled": true },
-    { "id": "psyche", "name": "Psyche", "url": "https://psyche.co/feed", "category": "psychology", "mode": "summary", "max": 2, "enabled": true },
-    { "id": "quanta", "name": "Quanta Magazine", "url": "https://www.quantamagazine.org/feed/", "category": "science", "mode": "summary", "max": 1, "enabled": true },
-    { "id": "knowable", "name": "Knowable Magazine", "url": "https://knowablemagazine.org/rss", "category": "auto", "mode": "summary", "max": 2, "enabled": true },
-    { "id": "nautilus", "name": "Nautilus", "url": "https://nautil.us/feed/", "category": "auto", "mode": "summary", "max": 1, "enabled": true },
-    { "id": "big-think", "name": "Big Think", "url": "https://bigthink.com/feed/", "category": "auto", "mode": "summary", "max": 1, "enabled": true },
-    { "id": "npr-health", "name": "NPR Health", "url": "https://feeds.npr.org/1128/rss.xml", "category": "health", "mode": "summary", "max": 1, "enabled": true },
-    { "id": "sciencedaily", "name": "ScienceDaily", "url": "https://www.sciencedaily.com/rss/top/science.xml", "category": "science", "mode": "summary", "max": 1, "enabled": true },
-    { "id": "vnexpress-khoa-hoc", "name": "VnExpress Khoa học", "url": "https://vnexpress.net/rss/khoa-hoc.rss", "category": "science", "mode": "summary", "max": 1, "enabled": false }
+      "enabled": true,
+      "minScore": 8
+    },
+
+    { "id": "conversation", "name": "The Conversation", "url": "https://theconversation.com/global/articles.atom", "category": "auto", "mode": "write", "max": 3, "exclude": "election|Trump|Putin|Netanyahu|ceasefire|minister|parliament|senate|congress|tariff|budget", "enabled": true },
+    { "id": "knowable", "name": "Knowable Magazine", "url": "https://knowablemagazine.org/rss", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "nautilus", "name": "Nautilus", "url": "https://nautil.us/feed/", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "big-think", "name": "Big Think", "url": "https://bigthink.com/feed/", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "harvard-gazette", "name": "Harvard Gazette", "url": "https://news.harvard.edu/gazette/feed/", "category": "auto", "mode": "write", "max": 2, "enabled": true },
+    { "id": "atlas-obscura", "name": "Atlas Obscura", "url": "https://www.atlasobscura.com/feeds/latest", "category": "auto", "mode": "write", "max": 1, "enabled": true },
+    { "id": "global-voices", "name": "Global Voices", "url": "https://globalvoices.org/feed/", "category": "society", "mode": "write", "max": 1, "enabled": true },
+    { "id": "sd-society", "name": "ScienceDaily Science & Society", "url": "https://www.sciencedaily.com/rss/science_society.xml", "category": "society", "mode": "write", "max": 2, "enabled": true },
+    { "id": "vnexpress-khoa-hoc", "name": "VnExpress Khoa học", "url": "https://vnexpress.net/rss/khoa-hoc.rss", "category": "science", "mode": "write", "max": 1, "enabled": false }
   ]
 }
