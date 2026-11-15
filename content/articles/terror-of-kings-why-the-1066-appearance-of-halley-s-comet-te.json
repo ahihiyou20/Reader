@@ -90,7 +90,10 @@
     ]
   },
   "summary": {
-    "vi": "Sự xuất hiện của sao chổi Halley vào năm 1066 không chỉ là một hiện tượng thiên văn mà còn được người thời Trung cổ xem là điềm báo thay đổi vương quyền và số phận của Vua Harold. Thông qua các ghi chép lịch sử, bài viết khám phá cách con người thời bấy giờ kết hợp thiên văn học, chiêm tinh học và triết học cổ đại để giải thích các sự kiện trên bầu trời, phản ánh thế giới quan độc đáo của họ về vũ trụ và số phận nhân loại."
+    "vi": "Sự xuất hiện của sao chổi Halley vào năm 1066 không chỉ là một hiện tượng thiên văn mà còn được người thời Trung cổ xem là điềm báo thay đổi vương quyền và số phận của Vua Harold. Thông qua các ghi chép lịch sử, bài viết khám phá cách con người thời bấy giờ kết hợp thiên văn học, chiêm tinh học và triết học cổ đại để giải thích các sự kiện trên bầu trời, phản ánh thế giới quan độc đáo của họ về vũ trụ và số phận nhân loại.",
+    "fr": "En avril 1066, le passage spectaculaire de la comète de Halley marqua profondément l'Occident médiéval. Immortalisé sur la tapisserie de Bayeux, cet astre fut interprété par les contemporains comme un présage céleste annonçant la chute du roi Harold. Dans la cosmologie de l'époque, héritée de l'Antiquité, les mouvements célestes régissaient directement le monde terrestre. Les chroniqueurs normands qualifièrent ainsi l'événement de « terreur des rois » : un signe funeste justifiant la conquête normande. Au-delà de la superstition, cet épisode illustre la manière dont la science médiévale associait l'astronomie et l'astrologie pour donner un sens aux affaires humaines.",
+    "de": "Im Jahr 1066 versetzte das Erscheinen des Halleyschen Kometen die mittelalterliche Welt in Furcht und Schrecken. Auf dem berühmten Teppich von Bayeux als Vorzeichen des Untergangs für König Harold festgehalten, galt das Himmelsphänomen zeitgenössischen Chronisten als unheilvoller Vorbote politischer Umwälzungen. Nach damaliger kosmologischer Auffassung beeinflussten die himmlischen Sphären das irdische Geschehen unmittelbar. Das Zusammenspiel aus überlieferter Gelehrsamkeit, Astrologie und Himmelsbeobachtung prägte eine Zeit, in der astronomische Ereignisse als göttliche Omen verstanden wurden. Spätere mittelalterliche Denker versuchten schließlich, die flüchtigen Kometen mit der vermeintlich unveränderlichen Ordnung des Kosmos theoretisch zu vereinbaren.",
+    "es": "La aparición del cometa Halley en 1066 desató un profundo temor en el mundo medieval, donde los fenómenos celestes se interpretaban como presagios directos sobre los asuntos humanos. Inmortalizado en el tapiz de Bayeux como señal de la inminente caída del rey Harold, el astro fue considerado por cronistas de la época como una advertencia funesta sobre el cambio dinástico y la guerra. En una cosmovisión que entrelazaba la astronomía, la astrología y las concepciones heredadas del cosmos, los eruditos creían que las esferas celestes regían el destino de los reinos, convirtiendo este avistamiento en un temido presagio de calamidades."
   },
   "keyPoint": {
     "en": "Like a weather vane reacting to an invisible wind, medieval minds saw cosmic events as direct commands from the cosmos. [p:What unexpected sign in your daily life are you misinterpreting as a permanent omen?]",
@@ -112,10 +115,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-28T02:19:51.028Z"
+  "publishAt": "2026-10-28T02:19:51.028Z",
+  "glossary": {
+    "en": {
+      "bayeux tapestry": "An embroidered cloth depicting the events leading up to the 1066 Norman conquest of England.",
+      "isti mirant stella": "A Latin phrase meaning these people marvel at the star, embroidered on the Bayeux tapestry.",
+      "regum terror": "A Latin phrase meaning terror of kings, describing comets as fearful omens for rulers.",
+      "portent": "A sign or omen warning of significant, usually disastrous, future events.",
+      "annals": "Historical records of events arranged chronologically year by year.",
+      "pestilence": "A deadly epidemic disease or plague affecting a widespread population.",
+      "superlunary": "The celestial realm beyond the Moon, historically considered perfect, divine, and unchanging.",
+      "ether": "A hypothetical fifth element once believed to fill the heavenly realm above the Moon.",
+      "diurnal motion": "The apparent daily movement of celestial bodies across the sky from east to west.",
+      "sub-lunary": "The earthly region below the Moon, subject to constant change, decay, and mortality.",
+      "natural philosophy": "The historical study of nature and the physical universe prior to modern science.",
+      "sublimated": "Converted or elevated from an earthly state into a celestial, refined substance."
+    }
+  }
 }

@@ -89,7 +89,10 @@
     ]
   },
   "summary": {
-    "vi": "Biến đổi khí hậu không chỉ làm thu hẹp các khu vực có khí hậu phù hợp mà còn tạo ra sự thiếu hụt các hang động trú ẩn cần thiết cho loài dơi ở châu Phi. Nghiên cứu chỉ ra rằng các vùng có khí hậu lý tưởng và các hang động thích hợp hiếm khi trùng lặp nhau. Điều này đặt ra thách thức lớn cho công tác bảo tồn, đòi hỏi các nhà khoa học phải tính đến cả nơi ở thực tế thay vì chỉ dựa vào nhiệt độ và lượng mưa trong tương lai."
+    "vi": "Biến đổi khí hậu không chỉ làm thu hẹp các khu vực có khí hậu phù hợp mà còn tạo ra sự thiếu hụt các hang động trú ẩn cần thiết cho loài dơi ở châu Phi. Nghiên cứu chỉ ra rằng các vùng có khí hậu lý tưởng và các hang động thích hợp hiếm khi trùng lặp nhau. Điều này đặt ra thách thức lớn cho công tác bảo tồn, đòi hỏi các nhà khoa học phải tính đến cả nơi ở thực tế thay vì chỉ dựa vào nhiệt độ và lượng mưa trong tương lai.",
+    "fr": "Face au dérèglement climatique, les chauves-souris cavernicoles d’Afrique subsaharienne affrontent une double menace. Si leur aire de répartition climatique favorable pourrait diminuer jusqu’à 64 % d’ici 2080, l’accès aux abris s’avère encore plus critique : à peine 5 % des zones pourvues de grottes adéquates conserveront un climat hospitalier. De plus, la fragmentation des paysages complique leurs déplacements énergivores entre différents gîtes saisonniers. Cette étude met en lumière un enjeu écologique majeur : pour préserver la biodiversité, anticiper les futures conditions climatiques ne suffit pas ; il est indispensable de veiller à ce que les espèces y trouvent de véritables refuges interconnectés.",
+    "de": "Höhlenbewohnende Fledermäuse im subsaharischen Afrika stehen infolge des Klimawandels vor einer doppelten Herausforderung: Bis 2080 könnten ihre klimatisch geeigneten Lebensräume um bis zu 64 Prozent schrumpfen. Entscheidend ist jedoch, dass ein passendes Klima allein nicht ausreicht. Die Tiere sind für Schutz und Fortpflanzung zwingend auf Höhlen sowie intakte Landschaftskorridore angewiesen. Eine Modellierung zeigt besorgniserregende Ergebnisse: Nur rund fünf Prozent der künftig klimatisch stabilen Gebiete bieten zugleich geeignete Höhlenkomplexe. Zudem erschwert die Zersplitterung der Landschaften den energieintensiven Wechsel zwischen Quartieren. Wirksamer Artenschutz darf daher künftige Klimazonen nicht isoliert betrachten, sondern muss bestehende Felshöhlen und verbindende Wanderkorridore gezielt sichern.",
+    "es": "¿Podrán sobrevivir los murciélagos cavernícolas africanos al cambio climático? Un estudio sobre la familia Miniopteridae en el África subsahariana revela un dilema crítico: aunque ciertas regiones conserven un clima propicio hacia 2070, la presencia de cuevas apenas coincidirá con tales áreas. Solo cerca del 5% de los espacios con cavidades mantendrá condiciones habitables, cifra que cae al 2% al ponderar la vulnerabilidad ambiental. Asimismo, la fragmentación del paisaje entorpece el desplazamiento entre refugios, imponiendo un grave desgaste energético. Proteger a estas especies exige conservar tanto los climas futuros como sus refugios físicos."
   },
   "keyPoint": {
     "en": "Conserving wildlife is like moving to a new city where the weather is nice, but finding that almost all the houses are locked or missing. [p:Can we protect both future climates and actual shelters?] Take time to learn about regional habitat networks.",
@@ -111,10 +114,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-26T01:26:48.312Z"
+  "publishAt": "2026-10-26T01:26:48.312Z",
+  "glossary": {
+    "en": {
+      "vertebrate distributions": "Where animals with backbones live and are geographically spread across regions.",
+      "reproductive rates": "The speed or frequency at which a population produces offspring.",
+      "roosts": "Places where bats rest, sleep, or hibernate, such as caves.",
+      "foraging landscapes": "Areas of land where animals search for food and resources.",
+      "ecology": "The study of relationships between living organisms and their environment.",
+      "sub-saharan africa": "The region of the African continent situated south of the Sahara Desert.",
+      "miniopteridae": "A taxonomic family of small insectivorous bats that roost in caves.",
+      "cave-dwelling": "Habitually living, roosting, or taking shelter inside caves.",
+      "eastern highlands": "A mountainous geographical region extending along eastern Africa.",
+      "fragmented": "Divided into smaller, isolated patches due to roads, farms, or urban development.",
+      "conservation": "Actions and strategies aimed at protecting species and their natural environments."
+    }
+  }
 }

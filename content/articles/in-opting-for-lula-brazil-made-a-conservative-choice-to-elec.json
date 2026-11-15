@@ -81,9 +81,36 @@
     "changes": []
   },
   "ai": {
-    "fields": [],
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
     "reviewed": false,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-27T02:25:45.227Z"
+  "publishAt": "2026-10-27T02:25:45.227Z",
+  "glossary": {
+    "en": {
+      "alternative for germany": "A far-right political party in Germany.",
+      "enough": "A Portuguese far-right political party that opposes immigration and Muslim places of worship.",
+      "pl": "Brazil's conservative Liberal Party, which sponsored Flávio Bolsonaro's presidential campaign.",
+      "project darkness": "A proposed crime-fighting initiative inspired by El Salvador's aggressive security policies.",
+      "tesouraço": "A Portuguese term meaning big cut, referring to drastic reductions in public spending.",
+      "la renga": "An Argentine hard rock band whose song Javier Milei sang at a campaign event.",
+      "misplaced ideas": "A concept describing political or economic ideas inappropriately transplanted into Brazil from abroad.",
+      "habeas corpus": "A legal principle protecting individuals against unlawful detention without trial or formal charge.",
+      "fiscal adjustment": "Government policy measures designed to reduce public budget deficits and manage debt.",
+      "bolsonarism": "The radical right-wing political movement associated with former Brazilian president Jair Bolsonaro.",
+      "vox": "A far-right nationalist political party in Spain led by Santiago Abascal."
+    }
+  },
+  "summary": {
+    "vi": "Trong cuộc bầu cử năm 2026 tại Brazil, cử tri đã đưa ra lựa chọn mang tính bảo thủ (*conservative choice*) khi ủng hộ chính khách cánh tả Lula da Silva. Dù thường được xem là phân cực (*polarization*), cuộc cạnh tranh này thiếu tính đối xứng: Lula theo đường lối trung tả (*center-left*) dung hòa, còn đối thủ Flávio Bolsonaro đại diện cho cánh hữu cực đoan (*far right*) đe dọa thể chế tự do. Đứng trước sự khó lường của phe cực đoan, người dân đã ưu tiên kinh nghiệm quản trị quen thuộc để bảo toàn nền dân chủ đất nước.",
+    "fr": "Lors de l'élection présidentielle de 2026 au Brésil, la victoire de Luiz Inácio Lula da Silva face à Flávio Bolsonaro ne relève pas d'une simple polarisation symétrique. Le sénateur bolsonariste incarnait une extrême droite radicale, inspirée par des modèles autoritaires étrangers et dominée par l'ombre de son père incarcéré. Face au risque d'une dérive extrémiste et au souvenir des émeutes du 8 janvier 2023, les Brésiliens ont fait un choix foncièrement conservateur : ils ont préféré la stabilité éprouvée d'un dirigeant expérimenté à l'imprévisibilité d'un mouvement menaçant les institutions démocratiques.",
+    "de": "Bei den Präsidentschaftswahlen 2026 in Brasilien standen sich der gemäßigte Mitte-Links-Politiker Luiz Inácio Lula da Silva und der rechtsradikale Flávio Bolsonaro gegenüber. Obwohl Bolsonaro sich als gemäßigt inszenieren wollte, spiegelte seine Agenda autoritäre und radikale Vorbilder wie Nayib Bukele, Donald Trump und Javier Milei wider. Lulas Wahlsieg war vor allem eine konservative Entscheidung der brasilianischen Wähler: Angesichts der noch frischen Erinnerungen an den Angriff auf die demokratischen Institutionen im Januar 2023 zog die Bevölkerung die Verlässlichkeit eines erfahrenen Staatsmanns dem unberechenbaren Extremismus des Bolsonaro-Clans vor, um die Demokratie zu sichern.",
+    "es": "¿Fue la contienda presidencial brasileña de 2026 un simple reflejo de polarización simétrica? Para el autor, no hubo tal equilibrio entre Luiz Inácio Lula da Silva y el senador Flávio Bolsonaro. Mientras Lula representaba una opción conocida de centroizquierda moderada, su adversario encarnaba a una ultraderecha global radical, alineada con figuras como Javier Milei y Nayib Bukele. Ante propuestas extremas y la tutela del clan familiar de Jair Bolsonaro, la ciudadanía optó por la prudencia institucional. Más que un giro ideológico, la victoria de Lula constituyó una decisión fundamentalmente conservadora: el electorado prefirió estabilidad predecible y la preservación democrática frente al riesgo del extremismo."
+  }
 }

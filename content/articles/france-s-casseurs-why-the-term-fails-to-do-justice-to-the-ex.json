@@ -80,7 +80,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết phân tích thuật ngữ casseurs tại Pháp, thường dùng để chỉ những kẻ gây rối trong các cuộc biểu tình. Tuy nhiên, nhà xã hội học Paolo Stuppia cho rằng từ này quá mơ hồ và không phản ánh đúng bản chất phức tạp của tình trạng cướp bóc. Hành vi này xuất phát từ nhiều động cơ khác nhau, kết hợp giữa sự bất mãn xã hội lâu năm và khả năng phối hợp nhanh chóng qua mạng xã hội, khiến lực lượng chức năng gặp nhiều khó khăn."
+    "vi": "Bài viết phân tích thuật ngữ casseurs tại Pháp, thường dùng để chỉ những kẻ gây rối trong các cuộc biểu tình. Tuy nhiên, nhà xã hội học Paolo Stuppia cho rằng từ này quá mơ hồ và không phản ánh đúng bản chất phức tạp của tình trạng cướp bóc. Hành vi này xuất phát từ nhiều động cơ khác nhau, kết hợp giữa sự bất mãn xã hội lâu năm và khả năng phối hợp nhanh chóng qua mạng xã hội, khiến lực lượng chức năng gặp nhiều khó khăn.",
+    "fr": "À la suite de pillages récents survenus en marge de mobilisations étudiantes, le sociologue Paolo Stuppia analyse la notion de « casseurs ». Historiquement floue et instrumentalisée par les médias depuis plusieurs décennies, cette étiquette stigmatisante recouvre une réalité composite, souvent plus opportuniste que véritablement idéologique. L’ampleur des dégradations actuelles s’accompagne d’une mutation technologique majeure : l’agilité numérique des jeunes générations, qui utilisent des réseaux aux messages éphémères, complique fortement la tâche des forces de l’ordre face à des groupes mobiles et imprévisibles.",
+    "de": "Nach den Ausschreitungen am Rande französischer Studentenproteste steht der Begriff „casseurs“ erneut im Fokus der Öffentlichkeit. Der Soziologe Paolo Stuppia erklärt, warum dieses Schlagwort der Vielschichtigkeit der jüngsten Plünderungen nicht gerecht wird. Während Sachbeschädigungen früher oft politisch motiviert waren, zeichnen sich aktuelle Vorfälle durch unpolitischen Opportunismus und willkürlich gewählte Ziele aus. Historisch fungiert das Etikett vor allem als Stigmatisierung von Jugendlichen aus Arbeiter- und Vorstadtvierteln. Zugleich erschweren flüchtige soziale Medien und geschlossene Chatgruppen den Sicherheitskräften die Kontrolle, da sich Protestierende rasch und dezentral organisieren.",
+    "es": "¿Hasta qué punto el término *casseurs* describe con rigor los disturbios urbanos en Francia? El sociólogo Paolo Stuppia sostiene que esta etiqueta mediática resulta imprecisa y estigmatizante frente a la complejidad de las protestas actuales. Aunque históricamente ciertos colectivos reivindicaban daños contra símbolos del capitalismo, los saqueos recientes mezclan oportunismo, descontento social y una dispersión inédita facilitada por redes sociales efímeras. Plataformas como Telegram o Snapchat permiten una coordinación sumamente ágil y descentralizada que desborda las estrategias policiales tradicionales. Así, simplificar estos acontecimientos bajo un calificativo genérico impide comprender las verdaderas raíces socioeconómicas del malestar juvenil y los desafíos digitales que transforman la acción colectiva contemporánea."
   },
   "keyPoint": {
     "en": "Like a weather vane spinning in a sudden storm, the vague label of casseurs shifts unpredictably with every new protest. How can we look past media stigmas to understand the real social roots of urban unrest?",
@@ -102,10 +105,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-26T01:33:48.312Z"
+  "publishAt": "2026-10-26T01:33:48.312Z",
+  "glossary": {
+    "en": {
+      "casseurs": "Rioters or vandals who break property and clash with police during protests.",
+      "self-reduction": "The direct seizure or discounted acquisition of goods and essential services by political activists.",
+      "proletarian reappropriation": "The political theft and redistribution of goods from commercial establishments to working-class people.",
+      "alter-globalisation movement": "A social movement opposing corporate globalisation while advocating for human rights and economic justice.",
+      "lumpenproletariat": "A socio-political term for disadvantaged, marginalised youths seen as lacking political ideology or class consciousness.",
+      "racaille": "A pejorative French word meaning rabble, used to insult marginalised youths from suburban housing projects.",
+      "street furniture": "Collective term for public objects installed along roads, including benches, bus shelters, and signs.",
+      "theory of labelling": "A sociological concept explaining how applying negative social tags stigmatises individuals and shapes public perception.",
+      "mouvance autonome": "An anarchist-influenced radical political current known for direct action and autonomous protest tactics.",
+      "situationism": "A revolutionary anti-authoritarian movement critical of advanced capitalism, consumerism, and the spectacle of modern society.",
+      "contrat première embauche": "A controversial French employment law allowing employers to easily dismiss young workers during trial periods.",
+      "black bloc": "A protest tactic where demonstrators wear black clothing and face coverings to maintain anonymity and unity."
+    }
+  }
 }

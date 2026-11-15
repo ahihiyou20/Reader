@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "James Webb Spots Scorching Planet Protected by Giant Sunscreen",
-    "vi": "James Webb Phát Hiện Hành Hành Tinh Dung Nham Được Bảo Vệ Bởi Tấm Chống Nắng Khổng Lồ"
+    "vi": "James Webb Phát Hiện Hành Hành Tinh Dung Nham Được Bảo Vệ Bởi Tấm Chống Nắng Khổng Lồ",
+    "fr": "James Webb repère une planète brûlante protégée par un écran géant",
+    "de": "James Webb entdeckt glühenden Planeten mit gigantischem Sonnenschild",
+    "es": "El James Webb detecta un planeta abrasador protegido por un parasol gigante"
   },
   "hook": {
     "en": "Researchers utilizing the James Webb Space Telescope have uncovered surprising atmospheric activity on a distant, molten world. Despite extreme stellar radiation that should have stripped its gases away billions of years ago, the rocky exoplanet maintains a dense layer of reflective clouds {source}.",
-    "vi": "Các nhà nghiên cứu sử dụng Kính viễn vọng Không gian James Webb đã phát hiện hoạt động khí quyển đáng kinh ngạc trên một thế giới xa xôi, tan chảy. Bất chấp bức xạ sao khắc nghiệt lẽ ra đã cuốn trôi khí của nó từ hàng tỷ năm trước, hành tinh đá này vẫn duy trì một lớp mây phản chiếu dày đặc {source}."
+    "vi": "Các nhà nghiên cứu sử dụng Kính viễn vọng Không gian James Webb đã phát hiện hoạt động khí quyển đáng kinh ngạc trên một thế giới xa xôi, tan chảy. Bất chấp bức xạ sao khắc nghiệt lẽ ra đã cuốn trôi khí của nó từ hàng tỷ năm trước, hành tinh đá này vẫn duy trì một lớp mây phản chiếu dày đặc {source}.",
+    "fr": "Des chercheurs utilisant le télescope spatial James Webb ont mis au jour une surprenante activité atmosphérique sur un monde lointain en fusion. Malgré un rayonnement stellaire extrême qui aurait dû balayer ses gaz il y a des milliards d'années, cette exoplanète rocheuse conserve une épaisse couche de nuages réfléchissants {source}.",
+    "de": "Forschende haben mithilfe des James-Webb-Weltraumteleskops überraschende atmosphärische Aktivität auf einer fernen, geschmolzenen Welt entdeckt. Trotz extremer stellarer Strahlung, die ihre Gase eigentlich vor Milliarden von Jahren hätte abtragen müssen, bewahrt der felsige Exoplanet eine dichte Schicht aus reflektierenden Wolken {source}.",
+    "es": "Un grupo de investigadores que utiliza el telescopio espacial James Webb ha descubierto una sorprendente actividad atmosférica en un mundo lejano y fundido. A pesar de una radiación estelar extrema que debería haber despojado sus gases hace miles de millones de años, este exoplaneta rocoso conserva una densa capa de nubes reflectantes {source}."
   },
   "sections": [
     {
       "heading_en": "A Surprising Atmosphere",
       "heading_vi": "Một Bầu Không Khí Bất Ngờ",
       "body_en": "An international research team monitored the exoplanet TOI-561 b over thirty-seven hours, capturing nearly four complete orbits. Located approximately two hundred eighty light-years from Earth, this world features a permanent dayside covered in molten rock. Scientists previously assumed such high temperatures and intense stellar exposure would completely eliminate any surrounding gas envelope.",
-      "body_vi": "Một nhóm nghiên cứu quốc tế đã theo dõi ngoại hành tinh (*exoplanet*) TOI-561 b trong suốt ba mươi bảy giờ, ghi lại gần bốn quỹ đạo hoàn chỉnh. Nằm cách Trái Đất khoảng hai trăm tám mươi năm ánh sáng, thế giới này có một mặt ban ngày vĩnh cửu phủ đầy đá nóng chảy."
+      "body_vi": "Một nhóm nghiên cứu quốc tế đã theo dõi ngoại hành tinh (*exoplanet*) TOI-561 b trong suốt ba mươi bảy giờ, ghi lại gần bốn quỹ đạo hoàn chỉnh. Nằm cách Trái Đất khoảng hai trăm tám mươi năm ánh sáng, thế giới này có một mặt ban ngày vĩnh cửu phủ đầy đá nóng chảy.",
+      "heading_fr": "Une atmosphère surprenante",
+      "body_fr": "Une équipe de recherche internationale a surveillé l'exoplanète TOI-561 b pendant trente-sept heures, enregistrant près de quatre orbites complètes. Situé à environ deux cent quatre-vingts années-lumière de la Terre, ce monde présente une face diurne permanente recouverte de roche en fusion. Les scientifiques supposaient auparavant que des températures aussi élevées et une exposition stellaire aussi intense anéantiraient entièrement toute enveloppe gazeuse environnante.",
+      "heading_de": "Eine überraschende Atmosphäre",
+      "body_de": "Ein internationales Forschungsteam beobachtete den Exoplaneten TOI-561 b über siebenunddreißig Stunden hinweg und erfasste dabei fast vier vollständige Umläufe. Rund zweihundertachtzig Lichtjahre von der Erde entfernt, weist diese Welt eine permanente, von geschmolzenem Gestein bedeckte Tagseite auf. Wissenschaftler nahmen bislang an, dass derart hohe Temperaturen und die intensive Bestrahlung durch den Stern jegliche umgebende Gashülle vollständig zerstören würden.",
+      "heading_es": "Una atmósfera sorprendente",
+      "body_es": "Un equipo internacional de investigación monitoreó el exoplaneta TOI-561 b durante treinta y siete horas, registrando casi cuatro órbitas completas. Situado a unos doscientos ochenta años luz de la Tierra, este mundo presenta un hemisferio diurno permanente cubierto de roca fundida. Los científicos asumían con anterioridad que temperaturas tan elevadas y una exposición estelar tan intensa habrían eliminado por completo cualquier envoltura gaseosa circundante."
     },
     {
       "heading_en": "Natural Reflective Shield",
       "heading_vi": "Tấm Khiên Phản Xạ Tự Nhiên",
       "body_en": "Measurements indicate that TOI-561 b reflects roughly seventy-five percent of the starlight reaching it. Computer simulations suggest this high reflectivity stems from silicate clouds containing magnesium silicate and silicon dioxide. This natural shield prevents the surface from overheating while winds successfully redistribute thermal energy toward the darker nightside.",
-      "body_vi": "Các phép đo chỉ ra rằng TOI-561 b phản xạ khoảng bảy mươi lăm phần trăm ánh sáng sao chiếu tới nó. Các mô phỏng trên máy tính cho thấy khả năng phản xạ cao này bắt nguồn từ các đám mây silicat chứa magie silicat và silicon dioxide."
+      "body_vi": "Các phép đo chỉ ra rằng TOI-561 b phản xạ khoảng bảy mươi lăm phần trăm ánh sáng sao chiếu tới nó. Các mô phỏng trên máy tính cho thấy khả năng phản xạ cao này bắt nguồn từ các đám mây silicat chứa magie silicat và silicon dioxide.",
+      "heading_fr": "Un bouclier réfléchissant naturel",
+      "body_fr": "Les mesures indiquent que TOI-561 b réfléchit environ soixante-quinze pour cent de la lumière stellaire qui lui parvient. Des simulations informatiques suggèrent que cette réflectivité élevée provient de nuages de silicates contenant du silicate de magnésium et du dioxyde de silicium. Ce bouclier naturel empêche la surface de surchauffer, tandis que des vents redistribuent efficacement l'énergie thermique vers la face nocturne, plus sombre.",
+      "heading_de": "Natürlicher Schutzschild",
+      "body_de": "Messungen zeigen, dass TOI-561 b etwa fünfundsiebzig Prozent des eintreffenden Sternenlichts reflektiert. Computersimulationen legen nahe, dass diese hohe Reflektivität auf Silikatwolken zurückgeht, die Magnesiumsilikat und Siliziumdioxid enthalten. Dieser natürliche Schutzschild verhindert eine Überhitzung der Oberfläche, während Winde thermische Energie erfolgreich auf die dunklere Nachtseite umverteilen.",
+      "heading_es": "Un escudo reflectante natural",
+      "body_es": "Las mediciones indican que TOI-561 b refleja aproximadamente el setenta y cinco por ciento de la luz estelar que recibe. Las simulaciones por computadora sugieren que esta elevada reflectividad proviene de nubes de silicato compuestas por silicato de magnesio y dióxido de silicio. Este escudo natural evita que la superficie se sobrecaliente, mientras que los vientos redistribuyen con éxito la energía térmica hacia el hemisferio nocturno más oscuro."
     },
     {
       "heading_en": "Continuous Replenishment",
       "heading_vi": "Sự Bổ Sung Liên Tục",
       "body_en": "Astrophysicist Dr. Anjali Piette notes that these observations challenge existing planetary theories. One compelling hypothesis suggests that a global ocean of liquid lava acts as a massive volcano, continually releasing new gases to replenish the atmosphere. Future telescope observations at longer wavelengths aim to clarify the exact chemical makeup.",
-      "body_vi": "Nhà vật lý thiên văn Tiến sĩ Anjali Piette lưu ý rằng những quan sát này thách thức các lý thuyết hành tinh hiện tại. Một giả thuyết thuyết phục cho rằng đại dương dung nham lỏng toàn cầu hoạt động như một ngọn núi lửa khổng lồ."
+      "body_vi": "Nhà vật lý thiên văn Tiến sĩ Anjali Piette lưu ý rằng những quan sát này thách thức các lý thuyết hành tinh hiện tại. Một giả thuyết thuyết phục cho rằng đại dương dung nham lỏng toàn cầu hoạt động như một ngọn núi lửa khổng lồ.",
+      "heading_fr": "Un réapprovisionnement continu",
+      "body_fr": "L'astrophysicienne Dr Anjali Piette souligne que ces observations bousculent les théories planétaires existantes. Une hypothèse séduisante avance qu'un océan global de lave liquide agirait comme un gigantesque volcan, libérant continuellement de nouveaux gaz pour réalimenter l'atmosphère. De futures observations au télescope à des longueurs d'onde plus grandes visent à préciser sa composition chimique exacte.",
+      "heading_de": "Kontinuierlicher Nachschub",
+      "body_de": "Die Astrophysikerin Dr. Anjali Piette betont, dass diese Beobachtungen bisherige Planetentheorien infrage stellen. Eine überzeugende Hypothese besagt, dass ein globaler Ozean aus flüssiger Lava wie ein gewaltiger Vulkan wirkt und fortlaufend neue Gase freisetzt, um die Atmosphäre wieder aufzufüllen. Künftige Teleskopbeobachtungen bei längeren Wellenlängen sollen die genaue chemische Zusammensetzung klären.",
+      "heading_es": "Reabastecimiento continuo",
+      "body_es": "La astrofísica Dra. Anjali Piette señala que estas observaciones desafían las teorías planetarias vigentes. Una hipótesis convincente sugiere que un océano global de lava líquida actúa como un volcán masivo, liberando continuamente nuevos gases para reabastecer la atmósfera. Futuras observaciones telescópicas en longitudes de onda más largas buscan esclarecer su composición química exacta."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of this planet as a shiny mirror floating near a massive furnace, bouncing away intense heat to survive. [p:Can a global ocean of molten rock act as an endless volcano that constantly feeds a planet's protective gas layer?]",
-    "vi": "Hãy coi hành tinh này như một chiếc gương sáng bóng trôi nổi gần một lò nung khổng lồ, hất văng sức nóng dữ dội để sinh tồn. [p:Liệu đại dương dung nham nóng chảy toàn cầu có thể hoạt động như một ngọn núi lửa bất tận không ngừng nuôi dưỡng lớp khí bảo vệ của hành tinh không?]"
+    "vi": "Hãy coi hành tinh này như một chiếc gương sáng bóng trôi nổi gần một lò nung khổng lồ, hất văng sức nóng dữ dội để sinh tồn. [p:Liệu đại dương dung nham nóng chảy toàn cầu có thể hoạt động như một ngọn núi lửa bất tận không ngừng nuôi dưỡng lớp khí bảo vệ của hành tinh không?]",
+    "fr": "Voyez cette planète comme un miroir brillant flottant près d'une immense fournaise, renvoyant une chaleur intense pour survivre. [p:Un océan global de roche en fusion peut-il agir comme un volcan permanent alimentant sans cesse la couche de gaz protectrice d'une planète ?]",
+    "de": "Stell dir diesen Planeten wie einen glänzenden Spiegel vor, der nahe an einem gewaltigen Schmelzofen schwebt und extreme Hitze abprallen lässt, um zu überleben. [p:Kann ein globaler Ozean aus geschmolzenem Gestein wie ein endloser Vulkan wirken, der die schützende Gashülle eines Planeten ununterbrochen speist?]",
+    "es": "Imagine este planeta como un espejo brillante que flota junto a un horno colosal, desviando un calor intenso para sobrevivir. [p:¿Puede un océano global de roca fundida actuar como un volcán interminable que nutre sin cesar la capa gaseosa protectora del planeta?]"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Theo dõi các khám phá về sao thông qua cập nhật sứ mệnh kính viễn vọng không gian",
       "So sánh các mô hình khí quyển của ngoại hành tinh khắc nghiệt trực tuyến",
       "Đọc các ấn phẩm tạp chí thiên văn gần đây về những thế giới xa xôi"
+    ],
+    "fr": [
+      "Suivre les découvertes stellaires grâce aux actualités des missions de télescopes spatiaux",
+      "Comparer en ligne les modèles atmosphériques des exoplanètes extrêmes",
+      "Consulter les publications récentes de revues astronomiques sur les mondes lointains"
+    ],
+    "de": [
+      "Verfolge Entdeckungen rund um Sterne über Missions-Updates von Weltraumteleskopen",
+      "Vergleiche Atmosphärenmodelle extremer Exoplaneten im Internet",
+      "Lies aktuelle Veröffentlichungen über ferne Welten in astronomischen Fachzeitschriften"
+    ],
+    "es": [
+      "Seguir los descubrimientos estelares mediante las actualizaciones de misiones de telescopios espaciales",
+      "Comparar en línea modelos atmosféricos de exoplanetas extremos",
+      "Leer publicaciones recientes en revistas astronómicas sobre mundos lejanos"
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,79 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "exoplanet": "A planet located outside our solar system that orbits another star.",
+      "toi-561 b": "A scorching, rocky planet located approximately 280 light-years from Earth.",
+      "stellar radiation": "Intense energy and particles emitted by a star into surrounding space.",
+      "light-years": "A unit of astronomical distance equal to how far light travels in one year.",
+      "dayside": "The side of a planet that permanently faces its host star.",
+      "gas envelope": "The protective layer of gases that surrounds and encloses a celestial body.",
+      "silicate clouds": "Atmospheric cloud layers formed from vaporized rock and mineral particles.",
+      "magnesium silicate": "A rock-forming mineral compound that condenses into reflective clouds in hot atmospheres.",
+      "silicon dioxide": "A common mineral compound made of silicon and oxygen that forms cloud grains.",
+      "thermal energy": "Heat energy carried across the planet from the hot dayside to the nightside.",
+      "nightside": "The side of a planet that faces permanently away from its star in darkness.",
+      "wavelengths": "Specific frequencies of light used by telescopes to detect chemical signatures in atmospheres."
+    },
+    "vi": {
+      "khí quyển": "Lớp chất khí bao bọc xung quanh một hành tinh hoặc thiên thể.",
+      "bức xạ sao": "Năng lượng dưới dạng sóng điện từ và hạt do ngôi sao phát ra.",
+      "hành tinh đá": "Hành tinh có bề mặt rắn cấu tạo chủ yếu từ đá hoặc kim loại.",
+      "ngoại hành tinh": "Hành tinh nằm ngoài Hệ Mặt Trời, quay quanh một ngôi sao khác.",
+      "toi-561 b": "Tên của ngoại hành tinh đá nóng chảy được nghiên cứu trong bài.",
+      "quỹ đạo": "Đường đi trong không gian của một thiên thể quanh thiên thể khác.",
+      "năm ánh sáng": "Đơn vị đo khoảng cách bằng quãng đường ánh sáng đi trong một năm.",
+      "silicat": "Nhóm khoáng vật chứa hợp chất của silic và oxy tạo nên mây đá.",
+      "magie silicat": "Hợp chất khoáng chất của magie, silic và oxy trong khí quyển hành tinh.",
+      "silicon dioxide": "Hợp chất hóa học gồm silic và oxy, còn gọi là silica hoặc thạch anh.",
+      "dung nham": "Đá nóng chảy trào ra hoặc bao phủ bề mặt của một hành tinh."
+    },
+    "fr": {
+      "rayonnement stellaire": "Énergie et flux de particules émis par une étoile vers l'espace.",
+      "exoplanète": "Planète située en dehors du système solaire qui orbite autour d'une étoile.",
+      "face diurne": "Hémisphère d'une planète tourné en permanence vers son étoile hôte.",
+      "enveloppe gazeuse": "Couche de gaz formant l'atmosphère qui entoure un corps céleste.",
+      "réflectivité": "Proportion du rayonnement incident renvoyé par la surface ou l'atmosphère d'une planète.",
+      "silicate de magnésium": "Composé minéral réfractaire présent sous forme de particules dans l'atmosphère de cette planète.",
+      "dioxyde de silicium": "Minéral courant composé de silicium et d'oxygène, formant des nuages hautement réfléchissants.",
+      "énergie thermique": "Chaleur transférée de la face éclairée vers la face obscure par les vents.",
+      "face nocturne": "Côté de la planète qui n'est jamais exposé à la lumière stellaire.",
+      "longueurs d'onde": "Propriété de la lumière permettant d'identifier la composition chimique des gaz atmosphériques observés."
+    },
+    "de": {
+      "james-webb-weltraumteleskop": "Leistungsstarkes weltraumbasiertes Infrarotteleskop zur Erforschung entfernter astronomischer Objekte und früher Galaxien.",
+      "exoplanet": "Ein Planet außerhalb unseres Sonnensystems, der einen anderen Stern umkreist.",
+      "toi-561 b": "Ein extrem heißer Gesteinsplanet, der etwa zweihundertachtzig Lichtjahre von der Erde entfernt ist.",
+      "tagseite": "Die dauerhaft dem Zentralstern zugewandte und ständig beleuchtete Halbkugel eines Planeten.",
+      "reflektivität": "Das Maß dafür, wie viel einfallendes Licht eine Oberfläche oder Wolkenschicht zurückwirft.",
+      "silikatwolken": "Wolken aus mineralischen Partikeln, die bei extrem hohen Temperaturen in Atmosphären kondensieren.",
+      "magnesiumsilikat": "Eine chemische Verbindung aus Magnesium, Silizium und Sauerstoff.",
+      "siliziumdioxid": "Eine chemische Verbindung aus Silizium und Sauerstoff, Hauptbestandteil von Quarz.",
+      "nachtseite": "Die vom Heimatstern dauerhaft abgewandte, finstere Hälfte der Planetenoberfläche.",
+      "wellenlängen": "Räumliche Abstände aufeinanderfolgender Schwingungsmaxima elektromagnetischer Strahlung zur Bestimmung spektraler Signaturen."
+    },
+    "es": {
+      "toi-561 b": "Exoplaneta rocoso ultracaliente que orbita muy cerca de su estrella anfitriona.",
+      "exoplaneta": "Planeta situado fuera de nuestro sistema solar que orbita una estrella diferente.",
+      "radiación estelar": "Energía y partículas emitidas por una estrella hacia el espacio circundante.",
+      "hemisferio diurno": "Lado de un planeta que permanece orientado de forma continua hacia su estrella.",
+      "envoltura gaseosa": "Capa de gases que rodea a un cuerpo celeste; su atmósfera.",
+      "reflectividad": "Fracción de la radiación o luz estelar que una superficie refleja.",
+      "silicato de magnesio": "Compuesto mineral que forma nubes refractarias a temperaturas sumamente elevadas.",
+      "dióxido de silicio": "Compuesto químico presente en minerales que puede condensarse en nubes a altas temperaturas.",
+      "hemisferio nocturno": "Lado de un planeta que permanece en perpetua oscuridad opuesto a su estrella.",
+      "longitudes de onda": "Distancia entre crestas de ondas electromagnéticas utilizadas para analizar firmas químicas espaciales.",
+      "años luz": "Unidad astronómica que mide la distancia recorrida por la luz en un año."
+    }
   }
 }

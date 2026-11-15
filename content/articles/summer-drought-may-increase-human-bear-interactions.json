@@ -87,10 +87,26 @@
   },
   "ai": {
     "fields": [
-      "vi"
+      "vi",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-25T01:29:59.042Z"
+  "publishAt": "2026-10-25T01:29:59.042Z",
+  "glossary": {
+    "en": {
+      "national casc": "National Climate Adaptation Science Center, a federal network researching climate impacts on wildlife.",
+      "american black bears": "A medium-sized bear species native to North America living in wooded areas.",
+      "negative interactions": "Conflicts between people and bears resulting in harm, property damage, or safety hazards.",
+      "wildlife managers": "Professionals who study, manage, and protect wild animal populations and resolve human-animal conflicts.",
+      "bear habitat": "Natural woodland environment where bears find shelter, food, mates, and raise young.",
+      "forest patches": "Continuous blocks of forested land separated by roads, farmland, or developed areas.",
+      "property encroachment": "Incidents where bears enter human-inhabited properties, yards, or buildings.",
+      "attractants": "Human-associated food items, such as trash or birdseed, that lure bears.",
+      "summer drought": "A prolonged lack of precipitation during summer that depletes natural food resources.",
+      "machine learning": "Computer algorithms that analyze data patterns to make predictions about complex phenomena.",
+      "vehicle collisions": "Crashes involving motor vehicles striking bears crossing roadways."
+    }
+  }
 }

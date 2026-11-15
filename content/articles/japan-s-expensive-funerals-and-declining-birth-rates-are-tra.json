@@ -97,7 +97,10 @@
     ]
   },
   "summary": {
-    "vi": "Nhật Bản đang đối mặt với cuộc khủng hoảng tang lễ và mai táng do chi phí ngày càng tăng cao và tình trạng giảm sinh. Những gánh nặng về tài chính lẫn hậu cần trong việc duy trì phần mộ gia đình truyền thống đã thúc đẩy nhiều người tìm đến các giải pháp thay thế hiện đại như chôn cất dưới gốc cây, nhà đựng cốt tự động hoặc đóng cửa phần mộ cũ. Dù các nghi thức có sự thay đổi để thích ứng với nhịp sống đương đại, ý nghĩa của việc duy trì sự kết nối giữa người sống và người đã khuất vẫn luôn được gìn giữ."
+    "vi": "Nhật Bản đang đối mặt với cuộc khủng hoảng tang lễ và mai táng do chi phí ngày càng tăng cao và tình trạng giảm sinh. Những gánh nặng về tài chính lẫn hậu cần trong việc duy trì phần mộ gia đình truyền thống đã thúc đẩy nhiều người tìm đến các giải pháp thay thế hiện đại như chôn cất dưới gốc cây, nhà đựng cốt tự động hoặc đóng cửa phần mộ cũ. Dù các nghi thức có sự thay đổi để thích ứng với nhịp sống đương đại, ý nghĩa của việc duy trì sự kết nối giữa người sống và người đã khuất vẫn luôn được gìn giữ.",
+    "fr": "Au Japon, le déclin démographique et le coût prohibitif des funérailles traditionnelles bouleversent les rites ancestraux. Face aux charges financières et logistiques pesant sur les descendants pour assurer l'entretien perpétuel des tombes, de nombreuses familles choisissent de nouvelles formules. Elles se tournent vers des sépultures arborées (« jumokusō »), des columbariums automatisés ou des ossuaires communs. D'autres optent pour le « hakajimai », la fermeture de la concession familiale afin de transférer les cendres. Ces pratiques inédites permettent d'honorer la mémoire des défunts tout en adaptant les obligations rituelles aux contraintes du monde contemporain.",
+    "de": "In Japan verändern rasant steigende Bestattungskosten und der demografische Wandel die jahrhundertealten Totenrituale. Traditionell erfordern Kremation, Familiengräber und wiederkehrende buddhistische Zeremonien erhebliche finanzielle Mittel sowie eine dauerhafte Grabpflege. Da immer weniger Nachkommen für die Gräber sorgen können und die Gesamtkosten oft mehr als die Hälfte eines durchschnittlichen Jahreseinkommens verschlingen, suchen viele Menschen nach Entlastung. Zunehmend etablieren sich alternative Bestattungsformen: Baumbestattungen („jumokusō“), automatisierte Kolumbarien oder gar Skulpturen aus komprimierter Totenasche („kotsubotoke“). Zudem nutzen viele das sogenannte „hakajimai“, bei dem Familiengräber aufgelöst und Überreste in Gemeinschaftsgräber überführt werden. So bewahren die Menschen das ehrende Gedenken, passen die Bräuche jedoch an die moderne Gesellschaft an.",
+    "es": "En Japón, el elevado coste de los funerales tradicionales y el acelerado declive demográfico han sumido en una crisis a los ritos funerarios ancestrales. Mantener las tumbas familiares impone cargas económicas, logísticas y emocionales cada vez más pesadas sobre descendientes cada vez más escasos. Ante esta realidad, muchas familias optan por alternativas innovadoras para honrar a sus seres queridos sin sobrecargar a las futuras generaciones. Entre estas prácticas destacan los entierros bajo árboles, los columbarios automatizados, los osarios comunes y la clausura definitiva de tumbas. Estas soluciones transforman las viejas costumbres, pero preservan el vínculo espiritual entre vivos y difuntos."
   },
   "keyPoint": {
     "en": "Traditional burial traditions are like a heavy backpack passed down generations, growing too burdensome to carry. *What modern alternative can you explore today to lighten the load for your family?*",
@@ -119,10 +122,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-26T01:24:48.312Z"
+  "publishAt": "2026-10-26T01:24:48.312Z",
+  "glossary": {
+    "en": {
+      "ossuary": "A structure, vault, or container designated as the resting place for human skeletal remains.",
+      "columbarium": "A structure containing niches designed to hold urns storing cremated human remains.",
+      "nōkotsudō": "Permanent Japanese structures or halls where cremated bones and urns are interred in compartments.",
+      "tree burials": "Burials where the deceased's cremated remains or ashes are interred in or around trees.",
+      "jumokusō": "The Japanese term for tree burials, where cremated remains are buried around or under a tree.",
+      "jūrin-gata": "A forest-style cemetery burial where cremated remains enclosed in silk bags are interred into designated land.",
+      "bone buddhas": "Statues of Buddha sculpted from compressed, fine ash made from pulverized human cremated remains.",
+      "kotsubotoke": "The Japanese term for Buddha statues fashioned from the compressed, powdered bone ashes of deceased individuals.",
+      "amida buddha": "The Buddha of Infinite Light, central to Japanese Buddhist death practices and Pure Land rebirth.",
+      "pure land": "A Buddhist celestial domain believed to be conducive to attaining buddhahood and enlightenment after death.",
+      "hakajimai": "The Japanese practice of closing a family grave and reinterring bones to end ongoing maintenance burdens."
+    }
+  }
 }

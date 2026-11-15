@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "What adults fifty and older should know about new flu vaccines",
-    "vi": "Những điều người từ năm mươi tuổi trở lên cần biết về vắc-xin cúm mới"
+    "vi": "Những điều người từ năm mươi tuổi trở lên cần biết về vắc-xin cúm mới",
+    "fr": "Ce que les adultes de cinquante ans et plus doivent savoir sur les nouveaux vaccins antigrippaux",
+    "de": "Was Erwachsene ab fünfzig über neue Grippeimpfstoffe wissen sollten",
+    "es": "Lo que los adultos de cincuenta años o más deben saber sobre las nuevas vacunas contra la gripe"
   },
   "hook": {
     "en": "As influenza activity rises earlier than usual, adults aged fifty and older now have access to a variety of vaccination choices. Experts highlight that getting protected remains vital {source}, and a new RNA-based option brings distinct advantages in speed and effectiveness compared to traditional methods.",
-    "vi": "Khi hoạt động cúm gia tăng sớm hơn thường lệ, những người từ năm mươi tuổi trở lên nay có nhiều lựa chọn vắc-xin đa dạng. Các chuyên gia nhấn mạnh rằng việc được bảo vệ vẫn rất quan trọng {source}, và một lựa chọn dựa trên RNA mới mang lại những ưu điểm rõ rệt về tốc độ và hiệu quả so với các phương pháp truyền thống."
+    "vi": "Khi hoạt động cúm gia tăng sớm hơn thường lệ, những người từ năm mươi tuổi trở lên nay có nhiều lựa chọn vắc-xin đa dạng. Các chuyên gia nhấn mạnh rằng việc được bảo vệ vẫn rất quan trọng {source}, và một lựa chọn dựa trên RNA mới mang lại những ưu điểm rõ rệt về tốc độ và hiệu quả so với các phương pháp truyền thống.",
+    "fr": "Alors que l'activité grippale s'intensifie plus tôt que d'habitude, les adultes âgés de cinquante ans et plus ont désormais accès à divers choix vaccinaux. Les experts soulignent que se faire vacciner demeure primordial {source}, et une nouvelle option à base d'ARN présente des avantages marqués en matière de rapidité et d'efficacité par rapport aux méthodes traditionnelles.",
+    "de": "Da die Influenza-Aktivität früher als gewöhnlich zunimmt, haben Erwachsene ab fünfzig Jahren nun Zugang zu einer Vielzahl an Impfoptionen. Experten betonen, dass ein verlässlicher Schutz weiterhin unerlässlich ist {source}, und eine neue RNA-basierte Option bietet im Vergleich zu herkömmlichen Verfahren deutliche Vorteile bei Tempo und Wirksamkeit.",
+    "es": "A medida que la actividad de la gripe aumenta antes de lo habitual, los adultos de cincuenta años o más cuentan ahora con diversas opciones de vacunación. Los expertos destacan que protegerse sigue siendo fundamental {source}, y una nueva alternativa basada en ARN ofrece claras ventajas en rapidez y eficacia en comparación con los métodos tradicionales."
   },
   "sections": [
     {
       "heading_en": "Traditional versus RNA production",
       "heading_vi": "Sản xuất truyền thống so với RNA",
       "body_en": "Traditional flu vaccines often rely on growing viral pieces inside chicken eggs or vats of cells. This manufacturing method requires months of advance planning because researchers must predict circulating strains far ahead of winter. In contrast, RNA technology allows scientists to quickly select a specific protein [p:and manufacture doses at a much faster scale].",
-      "body_vi": "Vắc-xin cúm truyền thống thường dựa vào việc nuôi cấy các phần của vi-rút trong trứng gà hoặc các bể tế bào. Phương pháp sản xuất này đòi hỏi phải lên kế hoạch trước nhiều tháng vì các nhà nghiên cứu phải dự đoán các chủng đang lưu hành trước mùa đông rất lâu. Ngược lại, công nghệ RNA cho phép các nhà khoa học nhanh chóng chọn ra một loại protein cụ thể [p:và sản xuất các liều lượng với quy mô nhanh hơn nhiều]."
+      "body_vi": "Vắc-xin cúm truyền thống thường dựa vào việc nuôi cấy các phần của vi-rút trong trứng gà hoặc các bể tế bào. Phương pháp sản xuất này đòi hỏi phải lên kế hoạch trước nhiều tháng vì các nhà nghiên cứu phải dự đoán các chủng đang lưu hành trước mùa đông rất lâu. Ngược lại, công nghệ RNA cho phép các nhà khoa học nhanh chóng chọn ra một loại protein cụ thể [p:và sản xuất các liều lượng với quy mô nhanh hơn nhiều].",
+      "heading_fr": "Production traditionnelle contre production à ARN",
+      "body_fr": "Les vaccins antigrippaux traditionnels reposent souvent sur la culture de particules virales dans des œufs de poule ou des cuves de cellules. Ce procédé de fabrication exige des mois de planification préalable, car les chercheurs doivent anticiper les souches en circulation bien avant l'hiver. À l'opposé, la technologie à ARN permet aux scientifiques de cibler rapidement une protéine précise [p:et de produire des doses à une échelle bien plus rapide].",
+      "heading_de": "Traditionelle Herstellung versus RNA-Produktion",
+      "body_de": "Traditionelle Grippeimpfstoffe basieren häufig auf der Vermehrung von Viruspartikeln in Hühnereiern oder Zellkulturbehältern. Diese Herstellungsmethode erfordert eine monatelange Vorplanung, da Forschende zirkulierende Virenstämme lange vor dem Winter vorhersagen müssen. Im Gegensatz dazu ermöglicht die RNA-Technologie es Wissenschaftlern, rasch ein spezifisches Protein auszuwählen [p:und Impfdosen in deutlich kürzerer Zeit in großem Maßstab herzustellen].",
+      "heading_es": "Producción tradicional frente a la basada en ARN",
+      "body_es": "Las vacunas antigripales tradicionales a menudo dependen del cultivo de fragmentos virales dentro de huevos de gallina o tanques de células. Este método de producción exige meses de planificación previa, ya que los investigadores deben predecir las cepas circulantes mucho antes del invierno. Por el contrario, la tecnología de ARN permite a los científicos seleccionar rápidamente una proteína específica [p:y fabricar dosis a una escala mucho más rápida]."
     },
     {
       "heading_en": "Effectiveness and side effects",
       "heading_vi": "Hiệu quả và tác dụng phụ",
       "body_en": "Recent findings reveal that the new RNA flu vaccine is roughly twenty-seven percent more effective than standard-dose alternatives. Currently authorized for individuals aged fifty and older, this shot addresses a demographic facing higher risks of severe illness. Although it offers strong protection, recipients might experience slightly more [p:reactogenicity], such as temporary arm soreness.",
-      "body_vi": "Các phát hiện gần đây cho thấy vắc-xin cúm RNA mới có hiệu quả hơn khoảng hai mươi bảy phần trăm so với các lựa chọn liều tiêu chuẩn. Hiện được cấp phép cho những người từ năm mươi tuổi trở lên, mũi tiêm này giải quyết một nhóm nhân khẩu học đối mặt với rủi ro mắc bệnh nặng cao hơn. Mặc dù nó mang lại sự bảo vệ mạnh mẽ, người nhận có thể trải qua hiện tượng [p:phản ứng sinh miễn dịch] (*reactogenicity*) cao hơn một chút, chẳng hạn như đau cánh tay tạm thời."
+      "body_vi": "Các phát hiện gần đây cho thấy vắc-xin cúm RNA mới có hiệu quả hơn khoảng hai mươi bảy phần trăm so với các lựa chọn liều tiêu chuẩn. Hiện được cấp phép cho những người từ năm mươi tuổi trở lên, mũi tiêm này giải quyết một nhóm nhân khẩu học đối mặt với rủi ro mắc bệnh nặng cao hơn. Mặc dù nó mang lại sự bảo vệ mạnh mẽ, người nhận có thể trải qua hiện tượng [p:phản ứng sinh miễn dịch] (*reactogenicity*) cao hơn một chút, chẳng hạn như đau cánh tay tạm thời.",
+      "heading_fr": "Efficacité et effets secondaires",
+      "body_fr": "Des données récentes révèlent que le nouveau vaccin antigrippal à ARN s'avère environ vingt-sept pour cent plus efficace que les options à dose standard. Actuellement autorisée pour les personnes âgées de cinquante ans et plus, cette injection cible une population confrontée à des risques accrus de maladie grave. Même s'il offre une protection robuste, les personnes vaccinées pourraient éprouver un peu plus de [p:réactogénicité], comme une douleur temporaire au bras.",
+      "heading_de": "Wirksamkeit und Nebenwirkungen",
+      "body_de": "Neuere Erkenntnisse zeigen, dass der neue RNA-Grippeimpstoff rund siebenundzwanzig Prozent wirksamer ist als Standarddosis-Alternativen. Diese Impfung ist derzeit für Personen ab fünfzig Jahren zugelassen und richtet sich an eine Altersgruppe mit erhöhtem Risiko für schwere Krankheitsverläufe. Obwohl sie einen starken Schutz bietet, könnten Geimpfte eine etwas stärkere [p:Reaktogenität] verspüren, wie etwa vorübergehende Schmerzen im Arm.",
+      "heading_es": "Eficacia y efectos secundarios",
+      "body_es": "Hallazgos recientes revelan que la nueva vacuna de ARN contra la gripe es aproximadamente un veintisiete por ciento más eficaz que las alternativas de dosis estándar. Autorizada actualmente para personas de cincuenta años o más, esta inyección atiende a un grupo demográfico que afronta un mayor riesgo de sufrir enfermedades graves. Aunque brinda una protección sólida, los receptores podrían experimentar un poco más de [p:reactogenicidad], como dolor pasajero en el brazo."
     },
     {
       "heading_en": "Addressing safety concerns",
       "heading_vi": "Giải quyết các mối lo ngại về an toàn",
       "body_en": "Safety concerns regarding RNA technology often stem from misunderstandings about how the science operates. Specialists emphasize that these platforms cannot integrate into human DNA. Furthermore, extensive data gathered from widespread use during the pandemic helps reassure the public regarding their long-term reliability and safety.",
-      "body_vi": "Các mối lo ngại về an toàn liên quan đến công nghệ RNA thường xuất phát từ những hiểu lầm về cách thức hoạt động của khoa học này. Các chuyên gia nhấn mạnh rằng các nền tảng này không thể tích hợp vào DNA của con người. Hơn nữa, dữ liệu phong phú được thu thập từ việc sử dụng rộng rãi trong đại dịch giúp trấn an công chúng về độ tin cậy và sự an toàn lâu dài của chúng."
+      "body_vi": "Các mối lo ngại về an toàn liên quan đến công nghệ RNA thường xuất phát từ những hiểu lầm về cách thức hoạt động của khoa học này. Các chuyên gia nhấn mạnh rằng các nền tảng này không thể tích hợp vào DNA của con người. Hơn nữa, dữ liệu phong phú được thu thập từ việc sử dụng rộng rãi trong đại dịch giúp trấn an công chúng về độ tin cậy và sự an toàn lâu dài của chúng.",
+      "heading_fr": "Répondre aux inquiétudes sur la sécurité",
+      "body_fr": "Les craintes relatives à la sécurité de la technologie à ARN découlent souvent d'une mauvaise compréhension de son fonctionnement scientifique. Les spécialistes soulignent que ces plateformes ne peuvent en aucun cas s'intégrer à l'ADN humain. De plus, les données considérables recueillies lors de leur déploiement massif pendant la pandémie contribuent à rassurer le public quant à leur fiabilité et leur sécurité à long terme.",
+      "heading_de": "Umgang mit Sicherheitsbedenken",
+      "body_de": "Sicherheitsbedenken gegenüber der RNA-Technologie rühren häufig von Missverständnissen über die wissenschaftlichen Wirkmechanismen her. Fachleute betonen, dass sich diese Plattformen nicht in die menschliche DNA integrieren können. Darüber hinaus tragen umfangreiche Daten aus dem breiten Einsatz während der Pandemie dazu bei, die Öffentlichkeit hinsichtlich ihrer langfristigen Zuverlässigkeit und Sicherheit zu beruhigen.",
+      "heading_es": "Respuesta a las dudas sobre la seguridad",
+      "body_es": "Las inquietudes en torno a la seguridad de la tecnología de ARN suelen derivarse de malentendidos sobre el funcionamiento de esta ciencia. Los especialistas enfatizan que estas plataformas no pueden integrarse en el ADN humano. Además, los amplios datos recopilados tras su uso generalizado durante la pandemia ayudan a brindar tranquilidad al público respecto a su fiabilidad y seguridad a largo plazo."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of modern vaccine technology as a fast postal service delivering crucial instructions directly to your cellular builders. Which of the available flu shot options best fits your health profile and age group this season?",
-    "vi": "Hãy nghĩ về công nghệ vắc-xin hiện đại như một dịch vụ bưu chính nhanh chóng gửi các hướng dẫn quan trọng trực tiếp đến các tế bào xây dựng của bạn. Lựa chọn vắc-xin cúm nào trong số các lựa chọn hiện có phù hợp nhất với hồ sơ sức khỏe và nhóm tuổi của bạn trong mùa này?"
+    "vi": "Hãy nghĩ về công nghệ vắc-xin hiện đại như một dịch vụ bưu chính nhanh chóng gửi các hướng dẫn quan trọng trực tiếp đến các tế bào xây dựng của bạn. Lựa chọn vắc-xin cúm nào trong số các lựa chọn hiện có phù hợp nhất với hồ sơ sức khỏe và nhóm tuổi của bạn trong mùa này?",
+    "fr": "Considérez la technologie vaccinale moderne comme un service postal rapide livrant des instructions cruciales directement à vos bâtisseurs cellulaires. Parmi les options vaccinales disponibles contre la grippe, laquelle convient le mieux à votre profil de santé et à votre tranche d'âge cette saison ?",
+    "de": "Stell dir moderne Impfstofftechnologie wie einen schnellen Postdienst vor, der entscheidende Anweisungen direkt an deine zellulären Baumeister liefert. Welche der verfügbaren Grippeimpfstoff-Optionen passt in dieser Saison am besten zu deinem Gesundheitsprofil und deiner Altersgruppe?",
+    "es": "Piense en la tecnología moderna de vacunas como un servicio postal rápido que entrega instrucciones cruciales directamente a sus constructores celulares. ¿Cuál de las opciones disponibles contra la gripe se adapta mejor a su perfil de salud y grupo de edad esta temporada?"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Tham khảo ý kiến nhà cung cấp dịch vụ chăm sóc sức khỏe của bạn để thảo luận xem mũi tiêm cúm RNA mới có phù hợp với nhóm tuổi của bạn hay không.",
       "Xem xét các lựa chọn vắc-xin hiện có bao gồm các công thức liều cao và có chất bổ trợ nếu bạn trên sáu mươi lăm tuổi.",
       "Lên lịch tiêm chủng hàng năm của bạn kịp thời để đảm bảo được bảo vệ trước khi hoạt động cúm đỉnh điểm bắt đầu."
+    ],
+    "fr": [
+      "Consultez votre professionnel de santé pour déterminer si le nouveau vaccin antigrippal à ARN convient à votre tranche d'âge.",
+      "Passez en revue les options vaccinales disponibles, notamment les formules à haute dose et avec adjuvant si vous avez plus de soixante-cinq ans.",
+      "Planifiez votre vaccination annuelle sans tarder afin d'assurer votre protection avant le pic d'activité grippale."
+    ],
+    "de": [
+      "Sprich mit deiner Ärztin oder deinem Arzt darüber, ob die neue RNA-Grippeimpfung für deine Altersgruppe geeignet ist.",
+      "Prüfe verfügbare Impfoptionen einschließlich Hochdosis- und adjuvantierter Formulierungen, falls du über fünfundsechzig bist.",
+      "Vereinbare zeitnah deinen Termin für die jährliche Impfung, um bereits vor dem Höhepunkt der Grippewelle geschützt zu sein."
+    ],
+    "es": [
+      "Consulte con su profesional de la salud para evaluar si la nueva vacuna de ARN contra la gripe resulta adecuada para su grupo de edad.",
+      "Revise las opciones de vacunas disponibles, incluidas las fórmulas de dosis alta y con adyuvante si tiene más de sesenta y cinco años.",
+      "Programe oportunamente su vacunación anual para asegurarse protección antes de que comience el pico de actividad gripal."
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,75 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "influenza": "A contagious respiratory viral infection commonly known as the flu that spreads seasonally.",
+      "rna": "Genetic molecules that provide instructions to cells to produce a specific viral protein for immunity.",
+      "circulating strains": "Varieties or subtypes of the flu virus actively spreading among people during a specific season.",
+      "protein": "A specific viral molecule chosen to trigger a protective immune response without causing illness.",
+      "standard-dose": "Conventional vaccine formulations containing regular amounts of viral antigen.",
+      "reactogenicity": "Expected, temporary physical responses to vaccination, such as injection-site soreness or mild fever.",
+      "dna": "The cellular genetic material that RNA vaccines cannot modify or integrate into.",
+      "platforms": "Underlying biotechnology mechanisms or production systems used to develop and deliver vaccines.",
+      "high-dose": "Vaccine formulations containing more antigen to stimulate stronger immune responses in older adults.",
+      "adjuvanted": "Formulated with an added ingredient to boost and strengthen the body's immune response."
+    },
+    "vi": {
+      "rna": "Phân tử mang thông tin hướng dẫn tế bào tạo ra protein kích hoạt miễn dịch.",
+      "vi-rút": "Tác nhân vi mô gây nhiễm trùng và gây bệnh ở sinh vật.",
+      "bể tế bào": "Môi trường nuôi cấy tế bào phục vụ sản xuất sinh phẩm y tế và vắc-xin.",
+      "chủng": "Biến thể di truyền cụ thể của một loài vi-rút gây bệnh.",
+      "protein": "Đại phân tử sinh học đóng vai trò kháng nguyên giúp tạo miễn dịch.",
+      "liều tiêu chuẩn": "Mức liều lượng vắc-xin cơ bản được sử dụng phổ biến cho cộng đồng.",
+      "reactogenicity": "Tác dụng phụ tạm thời sau tiêm như sưng đau tại chỗ hoặc sốt nhẹ.",
+      "dna": "Phân tử lưu trữ thông tin di truyền cốt lõi của tế bào con người.",
+      "đại dịch": "Sự lây lan nhanh chóng của bệnh truyền nhiễm trên quy mô toàn cầu.",
+      "chất bổ trợ": "Thành phần hỗ trợ tăng cường mức độ đáp ứng miễn dịch của cơ thể."
+    },
+    "fr": {
+      "activité grippale": "Intensité de la circulation du virus de la grippe au sein d'une population donnée.",
+      "arn": "Molécule biologique transmettant l'information génétique pour guider la fabrication de protéines ciblées.",
+      "particules virales": "Éléments ou fragments du virus utilisés pour stimuler la réponse du système immunitaire.",
+      "souches": "Variantes génétiques spécifiques du virus de la grippe évoluant chaque année.",
+      "protéine": "Molécule fabriquée par les cellules pour déclencher la production d'anticorps protecteurs.",
+      "dose standard": "Concentration classique d'antigènes administrée dans les vaccins habituels contre la grippe.",
+      "réactogénicité": "Ensemble des réactions physiques temporaires et attendues de l'organisme après une vaccination.",
+      "plateformes": "Technologies de base ou procédés standardisés servant à concevoir et fabriquer des vaccins.",
+      "adn": "Matériel génétique contenant l'ensemble des instructions fondamentales au développement de l'organisme.",
+      "haute dose": "Formulation vaccinale contenant une concentration supérieure d'antigènes pour les personnes âgées.",
+      "adjuvant": "Substance ajoutée à un vaccin pour stimuler et renforcer la réponse immunitaire de l'organisme."
+    },
+    "de": {
+      "influenza-aktivität": "Häufigkeit und Verbreitung von Grippeinfektionen in der Bevölkerung zu einem bestimmten Zeitpunkt.",
+      "rna-technologie": "Verfahren, das Botenmoleküle nutzt, um Zellen zur Bildung schützender Proteine anzuregen.",
+      "zellkulturbehältern": "Künstliche Gefäße zur industriellen Züchtung und Vermehrung biologischer Zellen für Impfstoffe.",
+      "virenstämme": "Genetische Varianten oder Unterarten des Influenzavirus, die saisonal auftreten.",
+      "protein": "Eiweißbaustein des Virus, der dem Immunsystem als Erkennungsmerkmal dient.",
+      "standarddosis-alternativen": "Herkömmliche Grippeimpfstoffe mit der regulären Menge an Antigenen.",
+      "reaktogenität": "Typische, meist harmlose körperliche Reaktionen auf eine Impfung wie Rötung oder Schmerzen.",
+      "dna": "Das Erbmaterial im Zellkern, das die genetischen Baupläne eines Lebewesens speichert.",
+      "viruspartikeln": "Einzelne infektiöse Einheiten oder Bestandteile von Viren zur Antigenproduktion."
+    },
+    "es": {
+      "arn": "Molécula que transporta las instrucciones genéticas para producir proteínas protectoras contra patógenos.",
+      "fragmentos virales": "Partes inocuas de un virus empleadas para estimular una respuesta inmunitaria en el organismo.",
+      "cepas circulantes": "Variantes del virus de la gripe que se propagan activamente entre la población.",
+      "dosis estándar": "Cantidad habitual de antígeno incluida en las vacunas convencionales para inducir inmunidad.",
+      "reactogenicidad": "Reacciones físicas temporales y normales tras la vacunación, como inflamación o dolor local.",
+      "adn": "Molécula que contiene las instrucciones genéticas permanentes y esenciales de los organismos vivos.",
+      "vacunas antigripales": "Preparaciones biológicas diseñadas para prevenir la infección por los virus estacionales de la gripe.",
+      "dosis alta": "Preparación vacunal con mayor cantidad de antígeno para generar una respuesta más fuerte.",
+      "adyuvante": "Componente que refuerza y potencia la respuesta inmune del organismo frente a la vacuna.",
+      "constructores celulares": "Metáfora referida a la maquinaria celular que ensambla proteínas según las instrucciones biológicas."
+    }
   }
 }

@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Mystery Mushroom Triggers Visions of Tiny Humans",
-    "vi": "Nấm bí ẩn kích hoạt ảo giác người tí hon"
+    "vi": "Nấm bí ẩn kích hoạt ảo giác người tí hon",
+    "fr": "Un champignon mystérieux provoque des visions d'humains minuscules",
+    "de": "Rätselhafter Pilz erzeugt Visionen winziger Menschen",
+    "es": "Un misterioso hongo provoca visiones de humanos diminutos"
   },
   "hook": {
     "en": "Consuming certain wild mushrooms causes people in distant regions to witness hundreds of miniature figures interacting with their environment. Recent genetic analysis points toward a biological cause rather than folklore, potentially revealing entirely unknown neurological mechanisms. [source]",
-    "vi": "Việc tiêu thụ một số loại nấm dại khiến người dân ở các vùng xa xôi chứng kiến hàng trăm nhân vật thu nhỏ tương tác với môi trường của họ. Phân tích di truyền gần đây chỉ ra nguyên nhân sinh học thay vì văn hóa dân gian, có thể tiết lộ các cơ chế thần kinh hoàn toàn chưa được biết tới. [source]"
+    "vi": "Việc tiêu thụ một số loại nấm dại khiến người dân ở các vùng xa xôi chứng kiến hàng trăm nhân vật thu nhỏ tương tác với môi trường của họ. Phân tích di truyền gần đây chỉ ra nguyên nhân sinh học thay vì văn hóa dân gian, có thể tiết lộ các cơ chế thần kinh hoàn toàn chưa được biết tới. [source]",
+    "fr": "La consommation de certains champignons sauvages amène des individus de régions éloignées à observer des centaines de silhouettes miniatures interagissant avec leur environnement. De récentes analyses génétiques privilégient une cause biologique plutôt que folklorique, laissant entrevoir des mécanismes neurologiques totalement inconnus. [source]",
+    "de": "Der Verzehr bestimmter Wildpilze führt bei Menschen in weit voneinander entfernten Regionen dazu, dass sie Hunderte winziger Gestalten wahrnehmen, die mit ihrer Umgebung interagieren. Jüngste genetische Analysen deuten eher auf eine biologische Ursache als auf Folklore hin und könnten bisher völlig unbekannte neurologische Mechanismen aufdecken. [source]",
+    "es": "El consumo de ciertos hongos silvestres provoca que personas de regiones distantes presencien cientos de figuras en miniatura que interactúan con su entorno. Recientes análisis genéticos apuntan a una causa biológica más que al folclore, lo que podría revelar mecanismos neurológicos totalmente desconocidos. [source]"
   },
   "sections": [
     {
       "heading_en": "A Century-Old Mystery",
       "heading_vi": "Bí ẩn một thế kỷ",
       "body_en": "Communities across continents have long reported seeing tiny people after eating specific wild fungi. Historically, scientists debated whether cultural beliefs drove these descriptions, known as Lilliputian hallucinations. Modern investigation has traced reports from multiple regions to a single mushroom species, demonstrating remarkable consistency in these unusual visual experiences. {source}",
-      "body_vi": "Các cộng đồng ở các châu lục khác nhau từ lâu đã báo cáo việc nhìn thấy những người tí hon sau khi ăn một số loại nấm dại. Về mặt lịch sử, các nhà khoa học đã tranh luận xem liệu niềm tin văn hóa có thúc đẩy những mô tả này hay không, được gọi là ảo giác người tí hon (*Lilliputian hallucinations*). Nghiên cứu hiện đại đã lần theo dấu vết các báo cáo từ nhiều khu vực khác nhau về một loài nấm duy nhất, cho thấy sự tương đồng đáng kinh ngạc trong những trải nghiệm thị giác bất thường này."
+      "body_vi": "Các cộng đồng ở các châu lục khác nhau từ lâu đã báo cáo việc nhìn thấy những người tí hon sau khi ăn một số loại nấm dại. Về mặt lịch sử, các nhà khoa học đã tranh luận xem liệu niềm tin văn hóa có thúc đẩy những mô tả này hay không, được gọi là ảo giác người tí hon (*Lilliputian hallucinations*). Nghiên cứu hiện đại đã lần theo dấu vết các báo cáo từ nhiều khu vực khác nhau về một loài nấm duy nhất, cho thấy sự tương đồng đáng kinh ngạc trong những trải nghiệm thị giác bất thường này.",
+      "heading_fr": "Un mystère séculaire",
+      "body_fr": "Sur plusieurs continents, des communautés rapportent depuis longtemps voir de minuscules personnes après avoir consommé certains champignons sauvages. Par le passé, les scientifiques se demandaient si des croyances culturelles étaient à l'origine de ces descriptions, qualifiées d'hallucinations lilliputiennes. Des investigations modernes ont relié ces témoignages venus de multiples régions à une seule et même espèce de champignon, mettant en évidence la remarquable cohérence de ces expériences visuelles insolites. {source}",
+      "heading_de": "Ein jahrhundertealtes Rätsel",
+      "body_de": "Gemeinschaften auf verschiedenen Kontinenten berichten seit Langem davon, nach dem Verzehr bestimmter Wildpilze winzige Menschen zu sehen. Historisch diskutierten Wissenschaftler darüber, ob kulturelle Prägungen diese Beschreibungen hervorriefen, die als lilliputanische Halluzinationen bekannt sind. Moderne Untersuchungen führten Berichte aus mehreren Regionen auf eine einzige Pilzart zurück und belegen eine bemerkenswerte Übereinstimmung bei diesen ungewöhnlichen visuellen Erfahrungen. {source}",
+      "heading_es": "Un misterio centenario",
+      "body_es": "Desde hace mucho tiempo, comunidades de distintos continentes han informado haber visto personas diminutas tras ingerir hongos silvestres específicos. Históricamente, los científicos debatían si las creencias culturales motivaban estas descripciones, conocidas como alucinaciones liliputienses. Investigaciones modernas han rastreado informes de múltiples regiones hasta una única especie de hongo, demostrando una notable coherencia en estas inusuales experiencias visuales. {source}"
     },
     {
       "heading_en": "The Genetic Link",
       "heading_vi": "Mối liên kết di truyền",
       "body_en": "Researchers used DNA sequencing to identify Lanmaoa asiatica as the mushroom responsible for these visions in parts of China and the Philippines. Surprisingly, chemical and genetic testing revealed no known psychoactive compounds, including psilocybin. This absence suggests the fungus produces an entirely unrecognized hallucinogenic substance that alters human perception in distinct ways.",
-      "body_vi": "Các nhà nghiên cứu đã sử dụng giải trình tự DNA để xác định Lanmaoa asiatica là loại nấm gây ra những ảo giác này ở các vùng của Trung Quốc và Philippines. Đáng ngạc nhiên là các thử nghiệm hóa học và di truyền không cho thấy bất kỳ hợp chất thần kinh nào được biết đến, kể cả psilocybin. Sự vắng mặt này cho thấy loại nấm này tạo ra một chất gây ảo giác hoàn toàn chưa được thừa nhận làm thay đổi nhận thức của con người theo những cách rõ rệt."
+      "body_vi": "Các nhà nghiên cứu đã sử dụng giải trình tự DNA để xác định Lanmaoa asiatica là loại nấm gây ra những ảo giác này ở các vùng của Trung Quốc và Philippines. Đáng ngạc nhiên là các thử nghiệm hóa học và di truyền không cho thấy bất kỳ hợp chất thần kinh nào được biết đến, kể cả psilocybin. Sự vắng mặt này cho thấy loại nấm này tạo ra một chất gây ảo giác hoàn toàn chưa được thừa nhận làm thay đổi nhận thức của con người theo những cách rõ rệt.",
+      "heading_fr": "Le lien génétique",
+      "body_fr": "Des chercheurs ont eu recours au séquençage de l'ADN pour identifier Lanmaoa asiatica comme le champignon responsable de ces visions dans certaines régions de Chine et des Philippines. De manière surprenante, les analyses chimiques et génétiques n'ont révélé aucun composé psychoactif connu, y compris la psilocybine. Cette absence suggère que ce champignon produit une substance hallucinogène totalement inédite qui altère la perception humaine de façon singulière.",
+      "heading_de": "Die genetische Verbindung",
+      "body_de": "Mithilfe von DNA-Sequenzierung identifizierten Forschende Lanmaoa asiatica als jenen Pilz, der in Teilen Chinas und der Philippinen für diese Visionen verantwortlich ist. Überraschenderweise ergaben chemische und genetische Tests keine bekannten psychoaktiven Verbindungen, auch kein Psilocybin. Dieses Fehlen deutet darauf hin, dass der Pilz eine gänzlich unbekannte halluzinogene Substanz produziert, die die menschliche Wahrnehmung auf ganz eigene Art verändert.",
+      "heading_es": "El vínculo genético",
+      "body_es": "Investigadores utilizaron la secuenciación de ADN para identificar a Lanmaoa asiatica como el hongo responsable de estas visiones en regiones de China y Filipinas. Sorprendentemente, los análisis químicos y genéticos no revelaron compuestos psicoactivos conocidos, incluida la psilocibina. Esta ausencia sugiere que el hongo produce una sustancia alucinógena completamente desconocida que altera la percepción humana de maneras singulares."
     },
     {
       "heading_en": "Insights into the Brain",
       "heading_vi": "Hiểu biết sâu sắc về bộ não",
       "body_en": "Unlike typical drug-induced hallucinations, these figures appear solid and obey physical rules by walking around obstacles and interacting with objects. Scientists hope that isolating the responsible chemical will help clarify how the brain constructs visual reality. This discovery could eventually provide valuable insights into neurological conditions that cause similar complex hallucinations.",
-      "body_vi": "Không giống như những ảo giác do ma túy gây ra thông thường, những hình ảnh này xuất hiện rõ ràng và tuân theo các quy luật vật lý bằng cách đi vòng qua các vật cản và tương tác với các đồ vật. Các nhà khoa học hy vọng rằng việc cô lập chất hóa học chịu trách nhiệm sẽ giúp làm rõ cách bộ não xây dựng thực tế thị giác. Khám phá này cuối cùng có thể cung cấp những hiểu biết có giá trị về các tình trạng thần kinh gây ra những ảo giác phức tạp tương tự."
+      "body_vi": "Không giống như những ảo giác do ma túy gây ra thông thường, những hình ảnh này xuất hiện rõ ràng và tuân theo các quy luật vật lý bằng cách đi vòng qua các vật cản và tương tác với các đồ vật. Các nhà khoa học hy vọng rằng việc cô lập chất hóa học chịu trách nhiệm sẽ giúp làm rõ cách bộ não xây dựng thực tế thị giác. Khám phá này cuối cùng có thể cung cấp những hiểu biết có giá trị về các tình trạng thần kinh gây ra những ảo giác phức tạp tương tự.",
+      "heading_fr": "Des éclairages sur le cerveau",
+      "body_fr": "À la différence des hallucinations classiques induites par des drogues, ces silhouettes semblent tangibles et se plient aux lois de la physique en contournant des obstacles et en interagissant avec des objets. Les scientifiques espèrent que l'isolement de la molécule responsable permettra de mieux comprendre comment le cerveau échafaude la réalité visuelle. Cette découverte pourrait à terme apporter de précieux éclairages sur les affections neurologiques qui engendrent des hallucinations complexes similaires.",
+      "heading_de": "Einblicke in das Gehirn",
+      "body_de": "Anders als typische drogeninduzierte Halluzinationen wirken diese Gestalten körperhaft und folgen physikalischen Gesetzen, indem sie Hindernisse umgehen und mit Gegenständen interagieren. Forschende hoffen, dass die Isolierung der verantwortlichen chemischen Substanz aufklären hilft, wie das Gehirn die visuelle Realität konstruiert. Diese Entdeckung könnte letztlich wertvolle Einblicke in neurologische Erkrankungen liefern, die ähnliche komplexe Halluzinationen hervorrufen.",
+      "heading_es": "Claves sobre el cerebro",
+      "body_es": "A diferencia de las típicas alucinaciones inducidas por drogas, estas figuras parecen sólidas y obedecen leyes físicas al esquivar obstáculos e interactuar con objetos. La comunidad científica confía en que aislar el compuesto químico responsable ayude a esclarecer cómo el cerebro construye la realidad visual. Este descubrimiento podría aportar, con el tiempo, valiosas claves sobre afecciones neurológicas que provocan alucinaciones complejas similares."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Like a master key unlocking a [p:previously hidden door in the brain], this mysterious fungus could reveal new pathways of human perception. Can studying wild mushrooms help decode complex neurological disorders?",
-    "vi": "Giống như chiếc chìa khóa vạn năng mở ra một [p:cánh cửa trước đây được giấu kín trong não bộ], loại nấm bí ẩn này có thể tiết lộ những con đường mới của nhận thức con người. Việc nghiên cứu nấm dại có thể giúp giải mã các rối loạn thần kinh phức tạp không?"
+    "vi": "Giống như chiếc chìa khóa vạn năng mở ra một [p:cánh cửa trước đây được giấu kín trong não bộ], loại nấm bí ẩn này có thể tiết lộ những con đường mới của nhận thức con người. Việc nghiên cứu nấm dại có thể giúp giải mã các rối loạn thần kinh phức tạp không?",
+    "fr": "Telle un passe-partout ouvrant une [p:porte jusqu'alors dérobée du cerveau], ce champignon mystérieux pourrait révéler de nouvelles voies de la perception humaine. L'étude des champignons sauvages peut-elle aider à décrypter des troubles neurologiques complexes ?",
+    "de": "Wie ein Generalschlüssel, der eine [p:bisher verborgene Tür im Gehirn] aufschließt, könnte dieser geheimnisvolle Pilz neue Pfade der menschlichen Wahrnehmung eröffnen. Kann die Erforschung von Wildpilzen dabei helfen, komplexe neurologische Störungen zu entschlüsseln?",
+    "es": "Como una llave maestra que abre una [p:puerta previamente oculta en el cerebro], este misterioso hongo podría revelar nuevas vías de la percepción humana. ¿Puede el estudio de los hongos silvestres ayudar a descifrar complejos trastornos neurológicos?"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Xem xét các hướng dẫn an toàn về nấm dại địa phương trước khi hái lượm.",
       "Tham khảo ý kiến các chuyên gia về nấm học để xác định chính xác các loại nấm vùng.",
       "Xem xét tài liệu khoa học liên quan đến các hợp chất nấm tác động thần kinh."
+    ],
+    "fr": [
+      "Examiner les consignes locales de sécurité sur les champignons sauvages avant toute cueillette.",
+      "Consulter des experts en mycologie pour identifier avec précision les champignons régionaux.",
+      "Consulter la littérature scientifique relative aux composés fongiques neuroactifs."
+    ],
+    "de": [
+      "Vor dem Sammeln lokale Sicherheitsrichtlinien für Wildpilze prüfen.",
+      "Mykologische Fachleute hinzuziehen, um regionale Pilzarten präzise zu bestimmen.",
+      "Fachliteratur über neuroaktive Pilzverbindungen sichten."
+    ],
+    "es": [
+      "Examinar las pautas locales de seguridad sobre hongos silvestres antes de recolectarlos.",
+      "Consultar a expertos en micología para identificar con precisión los hongos de la región.",
+      "Revisar la literatura científica sobre compuestos fúngicos neuroactivos."
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,76 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "lilliputian hallucinations": "Visual perceptions of tiny people or miniature figures that do not actually exist.",
+      "dna sequencing": "A laboratory method used to determine the precise genetic code of an organism.",
+      "lanmaoa asiatica": "A wild mushroom species identified as triggering visions of miniature human figures.",
+      "psychoactive compounds": "Chemical substances that influence brain function and alter perception, thought, or behavior.",
+      "psilocybin": "A natural psychedelic compound found in certain mushrooms that causes visual hallucinations.",
+      "hallucinogenic substance": "A chemical compound capable of producing sensory experiences of things that are not present.",
+      "neurological mechanisms": "Biological processes within the brain and nervous system that govern perception and behavior.",
+      "genetic analysis": "The scientific examination of DNA to understand an organism's biological characteristics.",
+      "mycological": "Relating to the scientific study of fungi and mushrooms.",
+      "neuroactive": "Affecting the structure or function of the nervous system and brain.",
+      "neurological disorders": "Medical conditions that affect the nervous system, including the brain and nerves."
+    },
+    "vi": {
+      "lilliputian hallucinations": "Hiện tượng ảo giác nhìn thấy người hoặc vật thể có kích thước bị thu nhỏ.",
+      "lanmaoa asiatica": "Loài nấm dại gây ra ảo giác nhìn thấy người tí hon.",
+      "psilocybin": "Hoạt chất tự nhiên gây ảo giác thường có trong một số loài nấm.",
+      "nấm học": "Ngành sinh học chuyên nghiên cứu về các loài nấm.",
+      "giải trình tự": "Kỹ thuật sinh học phân tử xác định trật tự sắp xếp vật chất di truyền.",
+      "dna": "Phân tử mang thông tin di truyền của các sinh vật sống.",
+      "ảo giác": "Hiện tượng tri giác thấy những điều không có thật trong thực tế.",
+      "cô lập": "Tách riêng một chất hóa học cụ thể ra khỏi hỗn hợp.",
+      "thị giác": "Giác quan giúp nhận biết và diễn giải ánh sáng, hình ảnh xung quanh.",
+      "di truyền": "Quá trình truyền thông tin sinh học giữa các thế hệ sinh vật."
+    },
+    "fr": {
+      "hallucinations lilliputiennes": "Perceptions visuelles d'êtres vivants ou d'objets à une échelle considérablement réduite.",
+      "séquençage": "Méthode de laboratoire permettant de déterminer la succession précise des bases du code génétique.",
+      "lanmaoa asiatica": "Espèce de champignon sauvage d'Asie responsable d'hallucinations visuelles impliquant des personnages miniatures.",
+      "psychoactif": "Substance modifiant le fonctionnement du système nerveux central, la perception ou l'état de conscience.",
+      "psilocybine": "Composé chimique psychédélique naturel présent dans divers champignons, connu pour ses effets hallucinogènes.",
+      "hallucinogène": "Molécule ou substance capable d'altérer la perception sensorielle et de générer des illusions.",
+      "hallucinations complexes": "Visions hautement détaillées et structurées, comme des silhouettes animées, sans équivalent dans le réel.",
+      "affections neurologiques": "Pathologies médicales touchant le cerveau, la moelle épinière ou les nerfs.",
+      "mycologie": "Étude scientifique et biologique des champignons.",
+      "neuroactifs": "Qualifie des composés capables d'exercer une action physiologique directe sur le système nerveux."
+    },
+    "de": {
+      "lilliputanische halluzinationen": "Sinnestäuschungen, bei denen Betroffene winzige menschenähnliche Gestalten oder Gegenstände wahrnehmen.",
+      "dna-sequenzierung": "Ein Laborverfahren zur Bestimmung der genauen Abfolge von Bausteinen im Erbgut eines Organismus.",
+      "lanmaoa asiatica": "Eine bestimmte Spezies von Wildpilzen, die in Teilen Asiens vorkommt.",
+      "psychoaktiven verbindungen": "Chemische Stoffe, die Vorgänge im Gehirn beeinflussen und Wahrnehmung oder Denken verändern.",
+      "psilocybin": "Ein natürlicher psychoaktiver Stoff mit halluzinogener Wirkung, der in manchen Pilzen vorkommt.",
+      "halluzinogene substanz": "Ein Wirkstoff, der Sinnestäuschungen und grundlegende Veränderungen der Sinneswahrnehmung auslöst.",
+      "drogeninduzierte halluzinationen": "Wahrnehmungstäuschungen, die durch den Konsum berauschender Mittel oder Rauschmittel ausgelöst werden.",
+      "neurologische erkrankungen": "Medizinische Leiden und Störungen, die das menschliche Nervensystem oder das Gehirn betreffen.",
+      "mykologische fachleute": "Wissenschaftlerinnen und Wissenschaftler, die sich auf die Erforschung von Pilzen spezialisiert haben.",
+      "neuroaktive pilzverbindungen": "In Pilzen enthaltene chemische Stoffe, die gezielt auf Nervenzellen und das Gehirn wirken."
+    },
+    "es": {
+      "alucinaciones liliputienses": "Alteración visual en la que se perciben personas u objetos con un tamaño mucho menor que el real.",
+      "lanmaoa asiatica": "Especie de hongo silvestre asiático identificado como causante de visiones con figuras diminutas.",
+      "secuenciación de adn": "Técnica de laboratorio para determinar el orden exacto de las bases genéticas de un organismo.",
+      "psilocibina": "Sustancia química psicoactiva presente en ciertos hongos, conocida por causar alteraciones de la percepción.",
+      "compuestos psicoactivos": "Sustancias químicas que actúan sobre el sistema nervioso central alterando la percepción, el ánimo o la conciencia.",
+      "mecanismos neurológicos": "Procesos biológicos y conexiones del sistema nervioso que regulan el funcionamiento del cerebro.",
+      "sustancia alucinógena": "Agente químico capaz de provocar percepciones o visiones de objetos que no existen en la realidad.",
+      "trastornos neurológicos": "Enfermedades o afecciones médicas que afectan el cerebro, la médula espinal y los nervios del cuerpo.",
+      "micología": "Rama de la biología dedicada al estudio científico de los hongos.",
+      "neuroactivos": "Que tienen la capacidad de interactuar con el sistema nervioso o alterar su actividad biológica."
+    }
   }
 }

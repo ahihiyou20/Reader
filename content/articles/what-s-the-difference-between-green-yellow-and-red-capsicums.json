@@ -93,7 +93,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết giải thích rằng ớt chuông xanh, vàng, cam và đỏ thực chất là cùng một loại quả ở các giai đoạn chín khác nhau. Quá trình chín làm thay đổi sắc tố từ diệp lục sang carotenoid, từ đó quyết định hương vị, độ giòn và giá trị dinh dưỡng riêng của từng loại. Ớt xanh có vị hơi đắng và giòn, ớt vàng và cam ngọt dịu, còn ớt đỏ ngọt đậm và chứa lượng chất chống oxy hóa cao nhất. Việc kết hợp ăn cả loại sống và nấu chín với nhiều màu sắc khác nhau mang lại lợi ích sức khỏe toàn diện."
+    "vi": "Bài viết giải thích rằng ớt chuông xanh, vàng, cam và đỏ thực chất là cùng một loại quả ở các giai đoạn chín khác nhau. Quá trình chín làm thay đổi sắc tố từ diệp lục sang carotenoid, từ đó quyết định hương vị, độ giòn và giá trị dinh dưỡng riêng của từng loại. Ớt xanh có vị hơi đắng và giòn, ớt vàng và cam ngọt dịu, còn ớt đỏ ngọt đậm và chứa lượng chất chống oxy hóa cao nhất. Việc kết hợp ăn cả loại sống và nấu chín với nhiều màu sắc khác nhau mang lại lợi ích sức khỏe toàn diện.",
+    "fr": "Verts, jaunes ou rouges, les poivrons proviennent tous du même fruit cueilli à divers stades de maturation. D’abord vert, croquant et légèrement amer sous l’effet de la chlorophylle, il produit des caroténoïdes en mûrissant, gagnant en tendreté et en saveur sucrée jusqu’à devenir rouge.\n\nCette évolution transforme également son profil nutritionnel : les poivrons jaunes favorisent la santé oculaire grâce à la lutéine, tandis que les rouges concentrent une teneur remarquable en vitamine C et en capsanthine. Qu’ils soient parfaitement calibrés ou dits « imparfaits », combiner les couleurs et varier les cuissons assure un apport optimal en nutriments.",
+    "de": "Vielleicht denkst du, grüne, gelbe und rote Paprika seien unterschiedliche Sorten – tatsächlich handelt es sich um dieselbe Frucht in verschiedenen Reifegraden. Zu Beginn grün und reich an Chlorophyll, schmecken die unreifen Schoten leicht herb und knackig. Mit der Zeit weicht das Blattgrün gelben, orangen und roten Carotinoiden. Die voll ausgereiften roten Früchte hängen am längsten an der Pflanze; sie sind besonders süß und reich an Vitamin C sowie antioxidativem Capsanthin. Grüne und gelbe Paprika punkten wiederum mit Lutein für die Augengesundheit. Eine bunte Mischung aus rohen und gegarten Früchten garantiert den besten Nährstoffmix.",
+    "es": "¿Sabía que los pimientos verdes, amarillos y rojos proceden de la misma planta? Lejos de ser variedades distintas, sus tonalidades responden a fases sucesivas de maduración. Conforme maduran en la mata, la clorofila da paso a diversos carotenoides, transformando su sabor de notas amargas y crujientes a matices profundamente dulces. Esta evolución también altera su perfil nutricional: mientras los verdes y amarillos aportan luteína y zeaxantina para la salud ocular, los rojos concentran más vitamina C y capsantina antioxidante. Además, la cocción potencia ciertos carotenoides a expensas de la vitamina C, por lo que combinar piezas crudas y cocinadas de diferentes colores optimiza sus notables beneficios para el organismo."
   },
   "keyPoint": {
     "en": "Like traffic lights changing phases, bell peppers transform from green to red as they mature. *Which color will you choose for your next meal to balance crispness, sweetness, and nutrition?*",
@@ -115,10 +118,31 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-28T02:27:51.028Z"
+  "publishAt": "2026-10-28T02:27:51.028Z",
+  "glossary": {
+    "en": {
+      "nightshade family": "A plant family, including tomatoes and eggplants, to which capsicums belong.",
+      "capsaicin": "A chemical compound in chilli peppers that triggers heat and pain receptors.",
+      "chlorophyll": "The green plant pigment that conducts photosynthesis and gives unripe capsicums their colour.",
+      "photosynthesis": "The biological process plants use to convert light into energy for growth.",
+      "carotenoids": "Yellow, orange, and red plant pigments that act as antioxidants in ripening capsicums.",
+      "flavonoids": "A group of antioxidant plant compounds that provide health benefits.",
+      "phenolic compounds": "Plant-derived antioxidant substances found in capsicums that help protect health.",
+      "capsanthin": "A red carotenoid pigment with powerful antioxidant activity found in red capsicums.",
+      "beta-carotene": "A carotenoid pigment that the human body converts into vitamin A.",
+      "lutein": "A dietary carotenoid essential for eye health and protecting against vision disorders.",
+      "violaxanthin": "An antioxidant carotenoid pigment present in green, yellow, and orange capsicums.",
+      "zeaxanthin": "An antioxidant carotenoid that supports eye health and helps prevent cataracts.",
+      "polyphenols": "Antioxidant compounds whose availability increases when capsicums are cooked."
+    }
+  }
 }

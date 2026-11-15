@@ -86,7 +86,10 @@
     ]
   },
   "summary": {
-    "vi": "Phong trào do sinh viên lãnh đạo tại Serbia đã giành chiến thắng mang tính bước ngoặt, đánh bại đảng cầm quyền và chấm dứt 12 năm cầm quyền của Tổng thống Alexander Vučić. Xuất phát từ các cuộc biểu tình phản đối tình trạng tham nhũng và vụ sập mái nhà ga gây tử vong, phong trào không có nhà lãnh đạo chính thức này đã vượt qua nỗi sợ hãi và áp lực từ chính quyền để tổ chức các ứng cử viên tranh cử thành công. Kết quả này đánh dấu một bước ngoặt lịch sử đối với nền dân chủ Serbia, mang lại niềm hy vọng lớn lao về sự thay đổi tiến bộ và trách nhiệm giải trình chính trị."
+    "vi": "Phong trào do sinh viên lãnh đạo tại Serbia đã giành chiến thắng mang tính bước ngoặt, đánh bại đảng cầm quyền và chấm dứt 12 năm cầm quyền của Tổng thống Alexander Vučić. Xuất phát từ các cuộc biểu tình phản đối tình trạng tham nhũng và vụ sập mái nhà ga gây tử vong, phong trào không có nhà lãnh đạo chính thức này đã vượt qua nỗi sợ hãi và áp lực từ chính quyền để tổ chức các ứng cử viên tranh cử thành công. Kết quả này đánh dấu một bước ngoặt lịch sử đối với nền dân chủ Serbia, mang lại niềm hy vọng lớn lao về sự thay đổi tiến bộ và trách nhiệm giải trình chính trị.",
+    "fr": "En Serbie, un mouvement citoyen porté par la jeunesse étudiante a remporté une victoire historique aux élections législatives, mettant un terme à douze années de pouvoir autoritaire d'Alexander Vučić. Née de l'indignation populaire après l'effondrement meurtrier de la gare de Novi Sad en 2024, cette coalition sans dirigeant unique a su fédérer la société civile face à la corruption et aux intimidations du régime. Portée par une exigence de justice et d'ouverture démocratique, la « Liste étudiante » a fait triompher l'espoir dans les urnes. Désormais majoritaire, elle doit surmonter un défi de taille : transformer son élan militant en une gouvernance capable d'engager les réformes nécessaires.",
+    "de": "Eine von Studierenden angeführte Bürgerbewegung hat bei den serbischen Parlamentswahlen einen historischen Triumph erzielt und die zwölfjährige Herrschaft von Alexander Vučić beendet. Die parteiunabhängige Initiative formierte sich nach dem tödlichen Einsturz eines Bahnhofsdachs in Novi Sad im Jahr 2024, der Proteste gegen Korruption und Autoritarismus auslöste. Trotz staatlicher Einschüchterung und Anfeindungen gelang es der Protestbewegung, breite Bevölkerungsteile sowie Minderheiten zu einen. Nach dem Wahlsieg steht die Bewegung nun vor der Herausforderung, ohne feste Führungspersönlichkeit eine handlungsfähige Regierung zu bilden und notwendige Reformen für den EU-Beitritt umzusetzen.",
+    "es": "Tras doce años bajo el mandato de Alexander Vučić, un movimiento político liderado por estudiantes serbios obtuvo una histórica mayoría parlamentaria. La movilización surgió a raíz de protestas masivas provocadas por el trágico derrumbe en la estación ferroviaria de Novi Sad en 2024, atribuido a la corrupción institucional. A pesar del acoso callejero, las intimidaciones y las campañas de desinformación, esta iniciativa horizontal y pacífica logró canalizar el descontento ciudadano y sumar la solidaridad de diversas minorías. Ahora, la denominada Lista Estudiantil asume el complejo desafío de transformar una estructura asamblearia en una administración institucional sólida, con el objetivo de consolidar el Estado de derecho e impulsar las reformas democráticas."
   },
   "keyPoint": {
     "en": "Political change is like planting a seed in hardened soil: it requires relentless grassroots pressure and solidarity to break through. [p:What entrenched system in your community can you and your peers challenge today through peaceful, collective action?]",
@@ -108,10 +111,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-27T02:14:45.227Z"
+  "publishAt": "2026-10-27T02:14:45.227Z",
+  "glossary": {
+    "en": {
+      "student list": "The student-led political movement and electoral list that contested and won the Serbian parliamentary elections.",
+      "serbian progressive party": "The ruling populist party in Serbia, led by Alexander Vučić, which was defeated in the parliamentary elections.",
+      "creeping authoritarianism": "The gradual, incremental concentration of power and erosion of democratic institutions and freedoms by a ruling regime.",
+      "procurement process": "The official government procedure for purchasing goods, contracts, or services from external suppliers or contractors.",
+      "despondency": "A state of low spirits or hopelessness regarding the likelihood of achieving political or social change.",
+      "bosniak muslim": "A South Slavic ethnic and religious minority group predominantly residing in the Sandžak region of southwestern Serbia.",
+      "concession speech": "A formal public statement by a political candidate admitting defeat to their opponents after an election.",
+      "pluralism": "A democratic principle advocating for the coexistence and equal participation of diverse political and social groups.",
+      "redress": "Remedy, retribution, or compensation sought to right past grievances, abuses of power, or political injustices.",
+      "organisational assemblage": "A decentralized, flexible structure of collaborating individuals and groups operating without a single centralized leader.",
+      "eu membership": "Official accession to the European Union, requiring prospective member states to meet specific democratic and institutional criteria."
+    }
+  }
 }

@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Nairobi Mobilizes Green Army to Fight Severe El Niño Floods",
-    "vi": "Nairobi huy động Đội quân Xanh chống lũ lụt El Niño nghiêm trọng"
+    "vi": "Nairobi huy động Đội quân Xanh chống lũ lụt El Niño nghiêm trọng",
+    "fr": "Nairobi mobilise l'Armée verte face aux crues d'El Niño",
+    "de": "Nairobi mobilisiert Green Army gegen schwere El-Niño-Fluten",
+    "es": "Nairobi moviliza al Ejército Verde para combatir las graves inundaciones por El Niño"
   },
   "hook": {
     "en": "As Nairobi prepares for potentially record-breaking winter rains, local authorities have deployed thousands of young workers to clear blocked waterways and dismantle unauthorized structures {source}. This proactive campaign aims to protect vulnerable low-income neighborhoods from devastating flash floods, balancing urgent disaster prevention with the economic hardships faced by local residents who depend on informal businesses for their daily survival.",
-    "vi": "Khi Nairobi chuẩn bị đối mặt với những trận mưa mùa đông có khả năng phá kỷ lục, chính quyền địa phương đã triển khai hàng ngàn lao động trẻ để khơi thông các tuyến đường thủy bị tắc nghẽn và tháo dỡ các công trình trái phép {source}. Chiến dịch chủ động này nhằm bảo vệ các khuner dân cư thu nhập thấp dễ bị tổn thương khỏi những trận lũ quét tàn khốc, cân bằng giữa phòng chống thảm họa khẩn cấp và khó khăn kinh tế của người dân."
+    "vi": "Khi Nairobi chuẩn bị đối mặt với những trận mưa mùa đông có khả năng phá kỷ lục, chính quyền địa phương đã triển khai hàng ngàn lao động trẻ để khơi thông các tuyến đường thủy bị tắc nghẽn và tháo dỡ các công trình trái phép {source}. Chiến dịch chủ động này nhằm bảo vệ các khuner dân cư thu nhập thấp dễ bị tổn thương khỏi những trận lũ quét tàn khốc, cân bằng giữa phòng chống thảm họa khẩn cấp và khó khăn kinh tế của người dân.",
+    "fr": "Alors que Nairobi se prépare à des pluies hivernales potentiellement record, les autorités locales ont déployé des milliers de jeunes travailleurs pour dégager les cours d'eau obstrués et démanteler les structures non autorisées {source}. Cette campagne proactive vise à protéger les quartiers défavorisés vulnérables contre des crues soudaines dévastatrices, tout en conciliant la prévention urgente des catastrophes et les difficultés économiques rencontrées par les résidents locaux qui dépendent du secteur informel pour leur survie quotidienne.",
+    "de": "Während sich Nairobi auf potenziell rekordverdächtige Regenfälle vorbereitet, haben die lokalen Behörden Tausende junger Arbeitskräfte eingesetzt, um verstopfte Wasserwege zu räumen und unbefugte Bauten abzureißen {source}. Diese proaktive Kampagne soll bedrohte einkommensschwache Viertel vor verheerenden Sturzfluten schützen – ein Balanceakt zwischen dringlicher Katastrophenprävention und den wirtschaftlichen Nöten von Anwohnern, deren tägliches Überleben von informellen Betrieben abhängt.",
+    "es": "Mientras Nairobi se prepara para unas lluvias invernales potencialmente sin precedentes, las autoridades locales han desplegado a miles de jóvenes trabajadores para despejar cauces obstruidos y desmantelar estructuras no autorizadas {source}. Esta campaña proactiva busca proteger a los barrios vulnerables de bajos ingresos de devastadoras inundaciones repentinas, equilibrando la prevención urgente de desastres con las dificultades económicas de los residentes que dependen del comercio informal para su subsistencia diaria."
   },
   "sections": [
     {
       "heading_en": "Growing Urban Pressures",
       "heading_vi": "Áp lực đô thị gia tăng",
       "body_en": "Nairobi features numerous rivers and streams, making the capital [p:highly prone to flash floods] that have previously claimed over one hundred lives {source}. With population numbers surging past historical design limits, old drainage networks easily overflow during heavy storms. Officials note that infrastructure originally built for two million people now serves a daytime population approaching seven million, severely straining urban capacity.",
-      "body_vi": "Nairobi có nhiều sông suối, khiến thủ đô [p:dễ xảy ra lũ quét] từng cướp đi sinh mạng của hơn một trăm người {source}. Với dân số vượt xa giới hạn thiết kế lịch sử, hệ thống thoát nước cũ dễ dàng tràn bờ trong các trận bão lớn. Các quan chức lưu ý rằng cơ sở hạ tầng ban đầu được xây dựng cho hai triệu người nay phải phục vụ dân số ban ngày gần bảy triệu người."
+      "body_vi": "Nairobi có nhiều sông suối, khiến thủ đô [p:dễ xảy ra lũ quét] từng cướp đi sinh mạng của hơn một trăm người {source}. Với dân số vượt xa giới hạn thiết kế lịch sử, hệ thống thoát nước cũ dễ dàng tràn bờ trong các trận bão lớn. Các quan chức lưu ý rằng cơ sở hạ tầng ban đầu được xây dựng cho hai triệu người nay phải phục vụ dân số ban ngày gần bảy triệu người.",
+      "heading_fr": "Une pression urbaine croissante",
+      "body_fr": "Nairobi est traversée par de nombreux cours d'eau et rivières, rendant la capitale [p:très vulnérable aux crues soudaines] qui ont déjà coûté la vie à plus d'une centaine de personnes par le passé {source}. La population dépassant largement les limites prévues à l'origine, les anciens réseaux de drainage débordent facilement lors des violentes tempêtes. Les autorités soulignent que des infrastructures conçues pour deux millions d'habitants desservent désormais près de sept millions de personnes en journée, mettant la capacité urbaine à rude épreuve.",
+      "heading_de": "Wachsender städtischer Druck",
+      "body_de": "Nairobi ist von zahlreichen Flüssen und Bächen durchzogen, was die Hauptstadt [p:äußerst anfällig für Sturzfluten] macht, die in der Vergangenheit bereits mehr als einhundert Menschenleben forderten {source}. Da die Bevölkerungszahl die historischen Kapazitätsgrenzen längst überschritten hat, laufen alte Entwässerungsnetze bei schweren Unwettern rasch über. Behördenvertreter weisen darauf hin, dass die ursprünglich für zwei Millionen Menschen konzipierte Infrastruktur heute tagsüber rund sieben Millionen Personen versorgt, was die städtischen Ressourcen extrem belastet.",
+      "heading_es": "Crecientes presiones urbanas",
+      "body_es": "Nairobi cuenta con numerosos ríos y arroyos, lo que convierte a la capital en una urbe [p:muy propensa a inundaciones repentinas] que ya se han cobrado más de cien vidas {source}. Dado que la población ha sobrepasado los límites históricos para los que fue diseñada, las antiguas redes de drenaje se desbordan con facilidad durante las tormentas intensas. Las autoridades señalan que una infraestructura construida originalmente para dos millones de personas atiende ahora a una población diurna cercana a los siete millones, lo que sobrecarga severamente la capacidad urbana."
     },
     {
       "heading_en": "The Green Army Response",
       "heading_vi": "Phản ứng của Đội quân Xanh",
       "body_en": "To combat upcoming risks, the county government activated a workforce known as the [g:Green Army] to clear debris and widen drainage ditches {source}. These workers remove accumulated plastic bottles and discarded fabric that typically block stormwater flow. Additionally, teams dismantle illegal structures and food stalls constructed without official permits, as these flimsy buildings face extreme collapse risks during severe weather events.",
-      "body_vi": "Để chống lại các rủi ro sắp tới, chính quyền quận đã huy động lực lượng lao động gọi là [g:Đội quân Xanh (Green Army)] để dọn dẹp rác thải và mở rộng mương thoát nước {source}. Những công nhân này dọn sạch chai nhựa và vải vụn thường chặn dòng chảy nước mưa. Ngoài ra, các đội còn tháo dỡ các công trình trái phép vì những tòa nhà tạm bợ này có nguy cơ sụp đổ cực cao."
+      "body_vi": "Để chống lại các rủi ro sắp tới, chính quyền quận đã huy động lực lượng lao động gọi là [g:Đội quân Xanh (Green Army)] để dọn dẹp rác thải và mở rộng mương thoát nước {source}. Những công nhân này dọn sạch chai nhựa và vải vụn thường chặn dòng chảy nước mưa. Ngoài ra, các đội còn tháo dỡ các công trình trái phép vì những tòa nhà tạm bợ này có nguy cơ sụp đổ cực cao.",
+      "heading_fr": "La riposte de l'Armée verte",
+      "body_fr": "Pour faire face aux risques imminents, le gouvernement du comté a mobilisé des effectifs connus sous le nom d'[g:Armée verte] afin de dégager les débris et d'élargir les fossés de drainage {source}. Ces agents retirent les bouteilles en plastique accumulées ainsi que les résidus textiles qui bloquent habituellement l'évacuation des eaux pluviales. De plus, des équipes démantèlent les structures illégales et les étals de nourriture construits sans permis officiel, car ces constructions précaires s'exposent à des risques majeurs d'effondrement lors d'intempéries extrêmes.",
+      "heading_de": "Einsatz der Green Army",
+      "body_de": "Um den drohenden Gefahren zu begegnen, aktivierte die County-Verwaltung eine als [g:Green Army] bekannte Arbeitsgruppe, um Unrat zu beseitigen und Entwässerungsgräben zu verbreitern {source}. Die Einsatzkräfte entfernen angesammelte Plastikflaschen und weggeworfene Textilien, die typischerweise den Abfluss des Regenwassers blockieren. Zudem reißen Teams illegale Bauten und Essensstände ab, die ohne offizielle Genehmigung errichtet wurden, da diese baufälligen Konstruktionen bei extremen Wetterereignissen akut einsturzgefährdet sind.",
+      "heading_es": "La respuesta del Ejército Verde",
+      "body_es": "Para combatir los riesgos inminentes, el gobierno del condado movilizó a un contingente laboral conocido como el [g:Ejército Verde] a fin de retirar escombros y ensanchar las zanjas de drenaje {source}. Estos trabajadores retiran botellas plásticas acumuladas y telas desechadas que suelen obstruir el flujo de las aguas pluviales. Además, los equipos desmantelan estructuras ilegales y puestos de comida levantados sin permisos oficiales, ya que estas frágiles construcciones afrontan un riesgo extremo de derrumbe durante episodios meteorológicos severos."
     },
     {
       "heading_en": "Economic Tradeoffs and Plans",
       "heading_vi": "Đánh đổi kinh tế và kế hoạch",
       "body_en": "While drainage clearance protects neighborhoods, the demolition of unauthorized kiosks causes immediate financial distress for vendors {source}. Many residents rely on these affordable shops for daily meals and income, creating a painful conflict between flood safety and economic survival. Meanwhile, the federal government supports broader initiatives, including a $385 million plan to upgrade sewers, widen waterways, and build affordable housing by late 2027.",
-      "body_vi": "Trong khi việc khơi thông cống rãnh bảo vệ các khu1 dân cư, việc phá dỡ các ki-ốt trái phép gây khó khăn tài chính ngay lập tức cho người bán hàng {source}. Nhiều cư dân phụ thuộc vào các cửa hàng giá rẻ này để có bữa ăn và thu nhập hàng ngày, tạo ra xung đột giữa an toàn lũ lụt và sinh kế. Trong khi đó, chính quyền liên bang hỗ trợ các sáng kiến rộng lớn hơn."
+      "body_vi": "Trong khi việc khơi thông cống rãnh bảo vệ các khu1 dân cư, việc phá dỡ các ki-ốt trái phép gây khó khăn tài chính ngay lập tức cho người bán hàng {source}. Nhiều cư dân phụ thuộc vào các cửa hàng giá rẻ này để có bữa ăn và thu nhập hàng ngày, tạo ra xung đột giữa an toàn lũ lụt và sinh kế. Trong khi đó, chính quyền liên bang hỗ trợ các sáng kiến rộng lớn hơn.",
+      "heading_fr": "Arbitrages économiques et projets d'avenir",
+      "body_fr": "Si le curage des canalisations protège les quartiers, la démolition des kiosques non autorisés plonge les commerçants dans une détresse financière immédiate {source}. De nombreux habitants dépendent de ces commerces bon marché pour se nourrir et subvenir à leurs besoins, créant un dilemme douloureux entre protection contre les crues et survie économique. En parallèle, le gouvernement fédéral soutient des initiatives de plus grande ampleur, dont un plan de 385 millions de dollars destiné à moderniser les égouts, élargir les cours d'eau et bâtir des logements abordables d'ici fin 2027.",
+      "heading_de": "Wirtschaftliche Konflikte und Zukunftspläne",
+      "body_de": "Während das Freiräumen der Abflüsse ganze Viertel schützt, stürzt der Abriss ungenehmigter Kioske die Händler in akute finanzielle Not {source}. Viele Bewohner sind für ihre täglichen Mahlzeiten und ihr Einkommen auf diese erschwinglichen Läden angewiesen, was zu einem schmerzhaften Konflikt zwischen Hochwasserschutz und wirtschaftlichem Überleben führt. Unterdessen unterstützt die Nationalregierung umfassendere Initiativen, darunter einen 385 Millionen Dollar schweren Plan zur Modernisierung von Abwasserkanälen, zum Ausbau von Wasserläufen und zum Bau bezahlbaren Wohnraums bis Ende 2027.",
+      "heading_es": "Dilemas económicos y planes",
+      "body_es": "Aunque la limpieza de los desagües protege a los vecindarios, la demolición de quioscos no autorizados genera una angustia financiera inmediata para los comerciantes {source}. Muchos residentes dependen de estos comercios asequibles para su alimentación e ingresos diarios, lo que desata un doloroso dilema entre la seguridad ante las inundaciones y la subsistencia económica. Entretanto, el gobierno federal respalda iniciativas más amplias, entre ellas un plan de $385 millones para modernizar el alcantarillado, ensanchar los cauces fluviales y construir viviendas asequibles hacia fines de 2027."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Just as clearing blocked arteries restores healthy blood flow to a human body, clearing urban drains allows stormwater to escape safely. How can your local community better maintain shared drainage systems before the next big storm?",
-    "vi": "Giống như việc làm thông các động mạch bị tắc giúp khôi phục tuần hoàn máu khỏe mạnh cho cơ thể người, việc khơi thông cống rãnh đô thị giúp nước mưa thoát đi an toàn. [p:Cộng đồng địa phương của bạn có thể làm gì để duy trì hệ thống thoát nước chung tốt hơn trước cơn bão lớn tiếp theo?]"
+    "vi": "Giống như việc làm thông các động mạch bị tắc giúp khôi phục tuần hoàn máu khỏe mạnh cho cơ thể người, việc khơi thông cống rãnh đô thị giúp nước mưa thoát đi an toàn. [p:Cộng đồng địa phương của bạn có thể làm gì để duy trì hệ thống thoát nước chung tốt hơn trước cơn bão lớn tiếp theo?]",
+    "fr": "Tout comme le débouchage des artères rétablit une circulation sanguine saine dans le corps humain, le désencombrement des conduits urbains permet d'évacuer les eaux pluviales en toute sécurité. Comment votre communauté locale pourrait-elle mieux entretenir les systèmes communs de drainage avant la prochaine grande tempête ?",
+    "de": "So wie das Freimachen verstopfter Arterien den gesunden Blutfluss im menschlichen Körper wiederherstellt, ermöglicht die Reinigung städtischer Abflüsse das sichere Abfließen von Regenwasser. Wie kann deine Gemeinde gemeinsame Entwässerungssysteme vor dem nächsten großen Unwetter besser instand halten?",
+    "es": "Del mismo modo que desobstruir las arterias restablece un flujo sanguíneo saludable en el cuerpo humano, limpiar los desagües urbanos permite que las aguas pluviales fluyan de forma segura. ¿Cómo podría su comunidad local mantener mejor los sistemas de drenaje compartidos antes de la próxima gran tormenta?"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Kiểm tra các kênh thoát nước ngoài trời địa phương gần nơi bạn ở xem có rác thải và rác nhựa tích tụ không.",
       "Dọn sạch các vật cản nhỏ một cách an toàn để đảm bảo nước mưa có thể chảy tự do khỏi lối đi và móng nhà.",
       "Chuẩn bị bộ dụng cụ cứu trợ khẩn cấp và xác định các tuyến đường sơ tán an toàn trước khi bão mùa đến."
+    ],
+    "fr": [
+      "Inspectez les canaux d'évacuation extérieurs près de votre domicile afin de repérer les débris accumulés et les déchets plastiques.",
+      "Dégagez prudemment les petites obstructions pour que l'eau de pluie puisse s'écouler librement, loin des voies de passage et des fondations.",
+      "Préparez un kit de fournitures d'urgence et repérez des itinéraires d'évacuation sûrs avant l'arrivée des violentes tempêtes saisonnières."
+    ],
+    "de": [
+      "Überprüfe die Entwässerungsgräben in der Nähe deines Wohnorts auf angesammelten Unrat und Plastikmüll.",
+      "Beseitige kleinere Blockaden vorsichtig, damit Regenwasser ungehindert von Gehwegen und Gebäudefundamenten abfließen kann.",
+      "Stelle ein Notfallset zusammen und mache dich mit sicheren Evakuierungsrouten vertraut, bevor schwere saisonale Stürme einsetzen."
+    ],
+    "es": [
+      "Inspeccione los canales de drenaje exteriores cercanos a su residencia en busca de escombros acumulados y desechos plásticos.",
+      "Retire con seguridad las pequeñas obstrucciones para que el agua de lluvia fluya libremente lejos de senderos y cimientos.",
+      "Prepare un kit de suministros de emergencia e identifique rutas seguras de evacuación antes de que comiencen las fuertes tormentas estacionales."
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,76 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "el niño": "A recurring climate pattern causing unusually heavy rainfall and severe storms in East Africa.",
+      "flash floods": "Sudden, intense floods caused by torrential rainfall overwhelming urban drainage systems.",
+      "informal businesses": "Unregistered commercial enterprises and street vendors operating outside official regulations and licensing.",
+      "drainage networks": "Interconnected systems of pipes, ditches, and channels designed to direct storm runoff away.",
+      "urban capacity": "The maximum volume of residents, activities, and infrastructure a city can sustainably handle.",
+      "green army": "A youth workforce organized by Nairobi authorities to clear municipal drainage and waterways.",
+      "drainage ditches": "Open channels dug into the ground to collect and divert excess rainwater.",
+      "stormwater": "Excess surface water generated from heavy rainfall that flows across land and streets.",
+      "kiosks": "Small, makeshift roadside booths where vendors sell everyday goods and food.",
+      "sewers": "Underground pipes carrying away wastewater and surface runoff to prevent flooding.",
+      "waterways": "Natural or artificial channels, such as rivers and streams, through which water flows."
+    },
+    "vi": {
+      "el niño": "Hiện tượng khí hậu gây mưa lớn bất thường và nguy cơ ngập úng nghiêm trọng.",
+      "đội quân xanh": "Lực lượng lao động trẻ được huy động để dọn rác và nạo vét cống rãnh.",
+      "lũ quét": "Hiện tượng nước dâng ngập cực nhanh và dữ dội sau những trận mưa lớn.",
+      "tuyến đường thủy": "Hệ thống sông suối, kênh rạch tự nhiên hoặc nhân tạo dẫn nước trong đô thị.",
+      "cơ sở hạ tầng": "Hệ thống công trình kỹ thuật như cống rãnh, đường sá phục vụ đời sống đô thị.",
+      "mương thoát nước": "Rãnh nhân tạo dùng để dẫn dòng chảy nước mưa, chống ngập úng cục bộ.",
+      "công trình trái phép": "Các kiến trúc, lều lán xây dựng không phép gây cản trở dòng thoát nước.",
+      "cống rãnh": "Hệ thống đường dẫn nước thải và nước mưa công cộng trong khu dân cư.",
+      "ki-ốt": "Quầy bán hàng nhỏ, tạm bợ của các tiểu thương tại khu dân cư.",
+      "sinh kế": "Phương kế kiếm tiền và nguồn thu nhập duy trì cuộc sống hàng ngày.",
+      "động mạch": "Mạch máu chính trong cơ thể, được dùng để ví von với hệ thống cống."
+    },
+    "fr": {
+      "armée verte": "Brigade de jeunes travailleurs déployée à Nairobi pour désencombrer les cours d'eau et fossés de drainage.",
+      "crues soudaines": "Montées torrentielles et brutales des eaux provoquées par de fortes précipitations en un court laps de temps.",
+      "secteur informel": "Activités économiques non déclarées ni encadrées par l'État, assurant la subsistance de nombreux ménages modestes.",
+      "réseaux de drainage": "Canalisations et ouvrages souterrains conçus pour évacuer les eaux de ruissellement et prévenir les inondations urbaines.",
+      "fossés de drainage": "Tranchées creusées pour recueillir et acheminer les eaux de ruissellement loin des zones habitées.",
+      "eaux pluviales": "Eaux provenant des précipitations atmosphériques ruisselant sur le sol et dans les réseaux d'évacuation.",
+      "constructions précaires": "Bâtiments rudimentaires bâtis sans autorisation officielle et particulièrement vulnérables aux intempéries extrêmes.",
+      "curage": "Opération d'assainissement consistant à extraire débris et boues obstruant fossés, conduites ou cours d'eau.",
+      "canaux d'évacuation": "Voies ouvertes guidant les flux d'eau de pluie pour éviter la submersion des quartiers et infrastructures."
+    },
+    "de": {
+      "el-niño-fluten": "Überschwemmungen infolge des Klimaphänomens El Niño, das in Ostafrika zu extremen Starkregenfällen führt.",
+      "sturzfluten": "Plötzliche, reißende Überschwemmungen, die nach heftigen Regenfällen innerhalb kürzester Zeit entstehen.",
+      "green army": "Städtische Initiative in Nairobi, bei der junge Arbeitskräfte Entwässerungskanäle räumen und Hochwasserschutz leisten.",
+      "entwässerungsnetze": "System aus Kanälen, Gräben und Rohren, das Regenwasser sammelt und aus Siedlungsgebieten ableitet.",
+      "county-verwaltung": "Regionale Verwaltungsbehörde in Kenia, zuständig für lokale Infrastruktur und öffentliche Dienstleistungen.",
+      "katastrophenprävention": "Vorbeugende Maßnahmen zur Verringerung von Schäden und Risiken durch drohende Naturkatastrophen.",
+      "entwässerungsgräben": "Offene künstliche Kanäle zur gezielten Ableitung von überschüssigem Niederschlagswasser.",
+      "notfallset": "Zusammenstellung überlebenswichtiger Vorräte wie Wasser, Nahrung und Medikamente für Krisensituationen.",
+      "evakuierungsrouten": "Festgelegte Fluchtwege, über die Menschen ein Gefahrengebiet schnell und sicher verlassen können.",
+      "infrastruktur": "Grundlegende bauliche Anlagen wie Straßen, Kanäle und Leitungen, die das städtische Leben ermöglichen."
+    },
+    "es": {
+      "el niño": "Fenómeno oceánico y atmosférico que altera los patrones meteorológicos y provoca lluvias torrenciales inusuales en África oriental.",
+      "inundaciones repentinas": "Crecidas súbitas y violentas de agua ocasionadas por precipitaciones intensas en lapsos breves.",
+      "comercio informal": "Actividades económicas no registradas oficialmente ni reguladas que sustentan la subsistencia de familias vulnerables.",
+      "redes de drenaje": "Sistemas de canalización diseñados para encauzar y evacuar el exceso de lluvia en áreas urbanas.",
+      "población diurna": "Cantidad de personas que permanecen temporalmente en una ciudad durante el día por trabajo o estudio.",
+      "ejército verde": "Fuerza de trabajo juvenil organizada en Nairobi para limpiar canales pluviales y retirar estructuras riesgosas.",
+      "zanjas de drenaje": "Canales excavados en la tierra para recolectar y desviar el escurrimiento pluvial hacia colectores principales.",
+      "aguas pluviales": "Aguas procedentes de la lluvia que discurren sobre las calles y el suelo urbano.",
+      "quioscos no autorizados": "Puestos de venta callejeros construidos sin licencia oficial ni especificaciones estructurales de seguridad.",
+      "alcantarillado": "Red de tuberías e instalaciones subterráneas para transportar aguas residuales y pluviales fuera de la ciudad."
+    }
   }
 }

@@ -88,7 +88,9 @@
     ]
   },
   "summary": {
-    "vi": "Nga đã thay đổi chiến lược phá hoại bằng cách chuyển từ các điệp viên ưu tú sang sử dụng các điệp viên thời vụ giá rẻ, tuyển dụng qua mạng và trả bằng tiền mã hóa. Các chiến dịch này bao gồm các vụ đốt phá, tấn công mạng và quấy rối cơ sở hạ tầng nhằm gây ra sự hoảng loạn tâm lý và làm kiệt quệ lực lượng an ninh phương Tây. Mặc dù nhiều âm mưu tỏ ra vụng về và thất bại ở cấp độ cá nhân, nhưng tác động tổng thể của chúng vẫn tạo ra mối đe dọa bất ổn lớn."
+    "vi": "Nga đã thay đổi chiến lược phá hoại bằng cách chuyển từ các điệp viên ưu tú sang sử dụng các điệp viên thời vụ giá rẻ, tuyển dụng qua mạng và trả bằng tiền mã hóa. Các chiến dịch này bao gồm các vụ đốt phá, tấn công mạng và quấy rối cơ sở hạ tầng nhằm gây ra sự hoảng loạn tâm lý và làm kiệt quệ lực lượng an ninh phương Tây. Mặc dù nhiều âm mưu tỏ ra vụng về và thất bại ở cấp độ cá nhân, nhưng tác động tổng thể của chúng vẫn tạo ra mối đe dọa bất ổn lớn.",
+    "fr": "Face à l'expulsion massive de ses diplomates après 2022, Moscou a profondément transformé sa stratégie d'ingérence. La Russie délaisse les officiers chevronnés au profit d'agents « ubérisés », recrutés sur des messageries chiffrées et rétribués en cryptomonnaies pour commettre incendies, dégradations ou cyberattaques. Même si ces opérations à bas coût échouent fréquemment sur le plan technique, elles privilégient délibérément le nombre : chaque incident alimente l'inquiétude médiatique et épuise les services de sécurité occidentaux. Du sabotage sous-marin aux intrusions aériennes, cette guerre d'usure érige le désordre psychologique en arme stratégique.",
+    "de": "Russland hat seine Sabotagestrategie gegen den Westen grundlegend verändert. Statt elitärer Geheimdienstoffiziere setzt Moskau zunehmend auf kostengünstige, austauschbare Gelegenheitsakteure, die über Messenger rekrutiert und mit Kryptowährungen bezahlt werden. Zwar scheitern viele Brandstiftungen, Drohnenangriffe oder Sabotageakte an kritischer Infrastruktur auf operativer Ebene, doch das Kalkül geht dennoch auf: Die schiere Masse an Vorfällen bindet Sicherheitskräfte, schürt Verunsicherung in der Bevölkerung und erzeugt mediale Panik. Auch im Cyberraum zielt der Kreml vor allem auf Einschüchterung ab. Westliche Staaten können sich daher nicht auf die Inkompetenz einzelner Täter verlassen."
   },
   "keyPoint": {
     "en": "Think of this new sabotage model like a swarm of low-cost drones: individual failures do not stop the broader psychological campaign of intimidation. What steps can your local community take to improve resilience against unexpected infrastructure disruptions? [p:Hope is not a strategy.]",
@@ -110,10 +112,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-25T01:32:59.042Z"
+  "publishAt": "2026-10-25T01:32:59.042Z",
+  "glossary": {
+    "en": {
+      "sabotage": "Deliberate destruction or disruption aimed at damaging physical infrastructure, systems, or operations.",
+      "distributed computing": "A system architecture using multiple independent, networked components to achieve an overall operational goal.",
+      "diplomatic cover": "The use of official diplomatic postings to shield intelligence officers from host-nation prosecution.",
+      "counterintelligence": "Security measures and activities dedicated to detecting, neutralizing, and preventing hostile foreign espionage.",
+      "proxies": "Third-party agents recruited to carry out hostile operations on behalf of a state sponsor.",
+      "handlers": "Intelligence officers who recruit, supervise, and direct covert agents or freelance operatives.",
+      "gig-economy operatives": "Disposable, low-cost individuals recruited via digital platforms to carry out isolated sabotage tasks.",
+      "cryptocurrency": "Digital currency used to transfer untraceable payments to operatives outside standard banking systems.",
+      "incendiary devices": "Weapons or mechanisms specifically engineered to ignite fires and cause destructive damage.",
+      "critical infrastructure": "Vital physical and digital facilities essential for the functioning of society and the economy.",
+      "plausible deniability": "The ability of state actors to deny involvement in covert actions due to lacking proof.",
+      "hard power": "The deployment of military force, physical coercion, or armed assets to assert national influence.",
+      "electronic interference": "Deliberate disruption or jamming of radio frequencies, radar, communication, or navigation signals."
+    }
+  }
 }
