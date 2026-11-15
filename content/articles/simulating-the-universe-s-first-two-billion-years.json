@@ -12,12 +12,16 @@
   "title": {
     "en": "Simulating the Universe's First Two Billion Years",
     "vi": "Mô phỏng hai tỷ năm đầu tiên của vũ trụ",
-    "fr": "Simuler les deux premiers milliards d'années de l'Univers"
+    "fr": "Simuler les deux premiers milliards d'années de l'Univers",
+    "de": "Simulation der ersten zwei Milliarden Jahre des Universums",
+    "es": "Simulación de los primeros dos mil millones de años del universo"
   },
   "hook": {
     "en": "Researchers have unveiled one of the most detailed digital models of the cosmos, capturing the critical period following the Big Bang {source}. This massive virtual universe helps scientists interpret groundbreaking data from advanced instruments like the James Webb Space Telescope, offering fresh insights into how galaxies and stars first formed.",
     "vi": "Các nhà nghiên cứu đã hé lộ một trong những mô hình kỹ thuật số chi tiết nhất về vũ vụ, ghi lại giai đoạn quan trọng sau Vụ Nổ Lớn (*Big Bang*). Vũ trụ ảo khổng lồ này giúp các nhà khoa học giải thích dữ liệu đột phá từ các công cụ tiên tiến như Kính viễn vọng Không gian James Webb, mang lại những góc nhìn mới mẻ về cách các thiên hà và ngôi sao hình thành.",
-    "fr": "Des chercheurs ont dévoilé l'un des modèles numériques les plus détaillés du cosmos, retraçant la période cruciale qui a suivi le Big Bang {source}. Cet immense univers virtuel aide les scientifiques à interpréter les données révolutionnaires fournies par des instruments de pointe comme le télescope spatial James-Webb, offrant un nouvel éclairage sur la formation des premières étoiles et galaxies."
+    "fr": "Des chercheurs ont dévoilé l'un des modèles numériques les plus détaillés du cosmos, retraçant la période cruciale qui a suivi le Big Bang {source}. Cet immense univers virtuel aide les scientifiques à interpréter les données révolutionnaires fournies par des instruments de pointe comme le télescope spatial James-Webb, offrant un nouvel éclairage sur la formation des premières étoiles et galaxies.",
+    "de": "Forschende haben eines der bisher detailliertesten digitalen Modelle des Kosmos vorgestellt, das die entscheidende Epoche nach dem Urknall erfasst {source}. Dieses gewaltige virtuelle Universum hilft der Wissenschaft dabei, bahnbrechende Daten hochentwickelter Instrumente wie das James-Webb-Weltraumteleskop zu entschlüsseln, und liefert neue Erkenntnisse über die Entstehung der ersten Galaxien und Sterne.",
+    "es": "Un equipo de investigadores ha presentado uno de los modelos digitales más detallados del cosmos, recreando el período crucial posterior al Big Bang {source}. Este inmenso universo virtual ayuda a la comunidad científica a interpretar datos pioneros procedentes de instrumentos avanzados como el telescopio espacial James Webb, aportando nuevas perspectivas sobre los orígenes de las primeras galaxias y estrellas."
   },
   "sections": [
     {
@@ -26,7 +30,11 @@
       "body_en": "Developed by experts at the Center for Astrophysics, a new computational model named Lumina tracks the complex interplay between ordinary matter, radiation, and invisible forces across vast cosmic distances. By spanning a volume significantly larger than previous projects, the system allows researchers to examine how the earliest galaxies interacted with massive surrounding gas clouds over immense timescales.",
       "body_vi": "Được phát triển bởi các chuyên gia tại Trung tâm Vật lý thiên văn, một mô hình tính toán mới mang tên Lumina theo dõi sự tương tác phức tạp giữa vật chất thông thường, bức xạ và các lực vô hình trên khoảng cách vũ trụ lớn. Bằng cách bao phủ một thể tích lớn hơn đáng kể so với các dự án trước đây, hệ thống cho phép các nhà nghiên cứu kiểm tra cách các thiên hà sớm nhất tương tác với các đám mây khí khổng lồ xung quanh trong suốt khoảng thời gian vô tận.",
       "heading_fr": "Recréer l'histoire cosmique",
-      "body_fr": "Développé par des spécialistes du Center for Astrophysics, un nouveau modèle informatique baptisé Lumina simule les interactions complexes entre la matière ordinaire, les rayonnements et les forces invisibles à l'échelle cosmique. En englobant un volume nettement supérieur à celui des simulations précédentes, ce système permet aux chercheurs d'étudier comment les toutes premières galaxies ont interagi avec les gigantesques nuages de gaz environnants sur d'immenses échelles de temps."
+      "body_fr": "Développé par des spécialistes du Center for Astrophysics, un nouveau modèle informatique baptisé Lumina simule les interactions complexes entre la matière ordinaire, les rayonnements et les forces invisibles à l'échelle cosmique. En englobant un volume nettement supérieur à celui des simulations précédentes, ce système permet aux chercheurs d'étudier comment les toutes premières galaxies ont interagi avec les gigantesques nuages de gaz environnants sur d'immenses échelles de temps.",
+      "heading_de": "Rekonstruktion der kosmischen Geschichte",
+      "body_de": "Ein von Fachleuten am Center for Astrophysics entwickeltes Computermodell namens Lumina zeichnet das komplexe Wechselspiel zwischen gewöhnlicher Materie, Strahlung und unsichtbaren Kräften über gewaltige kosmische Distanzen hinweg nach. Da die Simulation ein erheblich größeres Volumen als frühere Projekte abdeckt, ermöglicht sie es Forschenden zu untersuchen, wie die frühesten Galaxien über immense Zeiträume hinweg mit massereichen umgebenden Gaswolken interagierten.",
+      "heading_es": "Recreación de la historia cósmica",
+      "body_es": "Desarrollado por especialistas del Center for Astrophysics, un nuevo modelo computacional denominado Lumina rastrea la compleja interacción entre la materia ordinaria, la radiación y las fuerzas invisibles a lo largo de vastas distancias cósmicas. Al abarcar un volumen notablemente superior al de proyectos previos, el sistema permite analizar cómo interactuaban las primeras galaxias con las densas nubes de gas circundantes a lo largo de inmensos periodos."
     },
     {
       "heading_en": "Tracking Helium Transformation",
@@ -34,7 +42,11 @@
       "body_en": "A key breakthrough of this project is its ability to track the transformation of helium on a massive scale while simultaneously [p:modeling the surrounding environment]. This unprecedented detail lets astronomers investigate the relationship between evolving luminous structures and the gas filling interstellar space, marking a major step forward in understanding cosmic evolution.",
       "body_vi": "Một bước đột phá quan trọng của dự án này là khả năng theo dõi sự biến đổi của nguyên tố heli (*helium*) trên quy mô lớn trong khi đồng thời [p:mô phỏng môi trường xung quanh]. Chi tiết chưa từng có này cho phép các nhà thiên hà học nghiên cứu mối quan hệ giữa các cấu trúc phát sáng đang tiến hóa và lớp khí lấp đầy không gian giữa các vì sao, đánh dấu một bước tiến lớn trong việc hiểu về sự tiến hóa của vũ trụ.",
       "heading_fr": "Suivre la transformation de l'hélium",
-      "body_fr": "L'une des avancées majeures de ce projet réside dans sa capacité à suivre la transformation de l'hélium à très grande échelle tout en [p:modélisant le milieu environnant]. Ce degré de précision inédit permet aux astronomes d'analyser les liens entre l'évolution des structures lumineuses et le gaz présent dans l'espace interstellaire, franchissant ainsi une étape décisive dans la compréhension de l'évolution cosmique."
+      "body_fr": "L'une des avancées majeures de ce projet réside dans sa capacité à suivre la transformation de l'hélium à très grande échelle tout en [p:modélisant le milieu environnant]. Ce degré de précision inédit permet aux astronomes d'analyser les liens entre l'évolution des structures lumineuses et le gaz présent dans l'espace interstellaire, franchissant ainsi une étape décisive dans la compréhension de l'évolution cosmique.",
+      "heading_de": "Die Umwandlung von Helium im Blick",
+      "body_de": "Ein entscheidender Durchbruch dieses Projekts liegt in der Fähigkeit, die Umwandlung von Helium in großem Maßstab nachzuverfolgen und gleichzeitig [p:das umgebende Umfeld zu modellieren]. Dieser beispiellose Detailgrad gestattet es Astronomen, die Beziehung zwischen sich entwickelnden leuchtenden Strukturen und dem Gas im interstellaren Raum zu erforschen – ein bedeutender Fortschritt für das Verständnis der kosmischen Evolution.",
+      "heading_es": "Seguimiento de la transformación del helio",
+      "body_es": "Uno de los mayores avances del proyecto radica en su capacidad para registrar la transformación del helio a gran escala mientras, simultáneamente, [p:modela el entorno circundante]. Este nivel de detalle sin precedentes permite a los astrónomos indagar en el vínculo entre las estructuras luminosas en evolución y el gas presente en el espacio interestelar, lo que supone un hito sustancial en la comprensión de la evolución cósmica."
     },
     {
       "heading_en": "Supercomputing Powerhouse",
@@ -42,7 +54,11 @@
       "body_en": "Generating this virtual cosmos required immense computing capacity, utilizing thousands of advanced processors on one of the planet's speediest supercomputers. This extraordinary processing strength enabled the team to simulate an exceptionally wide region without losing the fine resolution necessary to observe individual star-forming zones and black holes.",
       "body_vi": "Việc tạo ra vũ trụ ảo này đòi hỏi năng lực điện toán khổng lồ, sử dụng hàng nghìn bộ xử lý tiên tiến trên một trong những siêu máy tính (*supercomputer*) nhanh nhất hành tinh. Sức mạnh xử lý phi thường này đã cho phép nhóm nghiên cứu mô phỏng một vùng rộng lớn đặc biệt mà không làm mất đi độ phân giải chi tiết cần thiết để quan sát từng khu vực hình thành sao và lỗ đen (*black hole*).",
       "heading_fr": "La puissance du calcul intensif",
-      "body_fr": "La création de ce cosmos virtuel a exigé une colossale puissance de calcul, mobilisant des milliers de processeurs de pointe sur l'un des superordinateurs les plus rapides au monde. Cette force de traitement exceptionnelle a permis à l'équipe de simuler une région d'une immensité rare sans perdre la haute résolution indispensable à l'observation des trous noirs et des pouponnières d'étoiles."
+      "body_fr": "La création de ce cosmos virtuel a exigé une colossale puissance de calcul, mobilisant des milliers de processeurs de pointe sur l'un des superordinateurs les plus rapides au monde. Cette force de traitement exceptionnelle a permis à l'équipe de simuler une région d'une immensité rare sans perdre la haute résolution indispensable à l'observation des trous noirs et des pouponnières d'étoiles.",
+      "heading_de": "Höchstleistung im Supercomputing",
+      "body_de": "Die Erschaffung dieses virtuellen Kosmos erforderte enorme Rechenkapazitäten und nutzte Tausende moderner Prozessoren auf einem der schnellsten Supercomputer der Welt. Diese außergewöhnliche Rechenleistung ermöglichte es dem Team, eine außergewöhnlich ausgedehnte Region zu simulieren, ohne die feine Auflösung einzubüßen, die nötig ist, um einzelne Sternentstehungsgebiete und Schwarze Löcher zu beobachten.",
+      "heading_es": "Potencia de supercomputación",
+      "body_es": "Generar este cosmos virtual demandó una inmensa capacidad de cálculo, recurriendo a miles de procesadores avanzados en uno de los supercomputadores más rápidos del planeta. Esta extraordinaria potencia de procesamiento permitió simular una región excepcionalmente amplia sin sacrificar la alta resolución imprescindible para observar zonas individuales de formación estelar y agujeros negros."
     }
   ],
   "references": [
@@ -78,7 +94,9 @@
   "keyPoint": {
     "en": "Like a master blueprint helping engineers understand a vast skyscraper, this simulation acts as a guide to decode the universe's oldest secrets. Can you imagine what new discoveries await as astronomers test these theories against real telescope images?",
     "vi": "Giống như một bản thiết kế tổng thể giúp các kỹ sư hiểu về một tòa nhà chọc trời khổng lồ, mô hình này đóng vai trò như một cẩm nang dẫn đường để giải mã những bí mật cổ xưa nhất của vũ trụ. Bạn có thể tưởng tượng những khám phá mới nào đang chờ đón khi các nhà thiên hà học kiểm tra các lý thuyết này với hình ảnh kính viễn vọng thực tế không?",
-    "fr": "À l'image du plan de construction aidant les ingénieurs à appréhender un gigantesque gratte-ciel, cette simulation sert de boussole pour percer les plus anciens mystères de l'Univers. Quelles découvertes fascinantes nous attendent lorsque les astronomes confronteront ces théories aux véritables observations des télescopes ?"
+    "fr": "À l'image du plan de construction aidant les ingénieurs à appréhender un gigantesque gratte-ciel, cette simulation sert de boussole pour percer les plus anciens mystères de l'Univers. Quelles découvertes fascinantes nous attendent lorsque les astronomes confronteront ces théories aux véritables observations des télescopes ?",
+    "de": "Wie ein detaillierter Bauplan, der Ingenieuren hilft, einen riesigen Wolkenkratzer zu verstehen, dient diese Simulation als Leitfaden zur Entschlüsselung der ältesten Geheimnisse des Universums. Kannst du dir vorstellen, welche neuen Entdeckungen bevorstehen, wenn Astronominnen und Astronomen diese Theorien mit echten Teleskopaufnahmen abgleichen?",
+    "es": "Al igual que los planos maestros guían a los ingenieros para comprender un rascacielos descomunal, esta simulación funciona como una guía para descifrar los secretos más antiguos del universo. ¿Se imagina qué nuevos descubrimientos surgirán a medida que los astrónomos contrasten estas teorías con imágenes reales de telescopios?"
   },
   "applySteps": {
     "en": [
@@ -95,6 +113,16 @@
       "Confronter les données de la simulation aux observations actuelles des télescopes",
       "Repérer les anomalies éventuelles dans les théories de l'évolution cosmique",
       "Consulter des ressources pédagogiques sur la formation des premières galaxies"
+    ],
+    "de": [
+      "Die neuen Simulationsdaten mit bestehenden Teleskopbeobachtungen vergleichen",
+      "Unerwartete Abweichungen in Theorien zur kosmischen Evolution identifizieren",
+      "Bildungsmaterialien zur frühen Galaxienentstehung erkunden"
+    ],
+    "es": [
+      "Comparar los datos de la nueva simulación con observaciones telescópicas existentes",
+      "Detectar posibles discrepancias imprevistas en las teorías de la evolución cósmica",
+      "Explorar recursos divulgativos acerca de la formación de las primeras galaxias"
     ]
   },
   "coverCandidates": [
@@ -133,7 +161,9 @@
       "keyPoint",
       "applySteps",
       "en",
-      "fr"
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -178,6 +208,30 @@
       "haute résolution": "Finesse de calcul permettant d'observer des détails géométriques ou physiques très précis.",
       "trous noirs": "Régions de l'espace si denses que rien, pas même la lumière, ne peut s'en échapper.",
       "pouponnières d'étoiles": "Nébuleuses denses de gaz et de poussières où se forment de nouvelles étoiles."
+    },
+    "de": {
+      "urknall": "Der theoretische Anfangspunkt unseres Universums vor etwa 13,8 Milliarden Jahren, aus dem Raum, Zeit und Materie entstanden.",
+      "james-webb-weltraumteleskop": "Ein weltraumgestütztes Infrarot-Observatorium zur Beobachtung der frühesten Sterne und Galaxien des Kosmos.",
+      "center for astrophysics": "Ein gemeinsames Forschungsinstitut der Harvard University und des Smithsonian zur Erforschung astrophysikalischer Phänomene.",
+      "lumina": "Der Name der computergestützten Simulation zur Erforschung der ersten zwei Milliarden Jahre des Universums.",
+      "helium": "Das zweithäufigste chemische Element im Universum, das in großen Mengen während der Entstehung des Kosmos gebildet wurde.",
+      "interstellaren raum": "Der Bereich des Weltalls zwischen den einzelnen Sternen einer Galaxie.",
+      "supercomputer": "Ein extrem leistungsstarker Großrechner zur Bewältigung gewaltiger wissenschaftlicher Datenmengen und Simulationen.",
+      "sternentstehungsgebiete": "Dichte kosmische Wolken aus Gas und Staub, in denen durch Gravitationskollaps neue Sterne entstehen.",
+      "schwarze löcher": "Objekte mit so extrem starker Schwerkraft, dass selbst Licht ihrer Anziehung nicht entkommen kann.",
+      "galaxienentstehung": "Der Prozess, durch den sich Gas und Sterne im frühen Universum zu großen Sternensystemen formten."
+    },
+    "es": {
+      "big bang": "Gran evento inicial que dio origen a la expansión del espacio, el tiempo y la materia.",
+      "materia ordinaria": "Sustancia compuesta por átomos que forma estrellas, planetas y gas, distinta de la materia oscura.",
+      "radiación": "Energía emitida y propagada por el cosmos a través de ondas electromagnéticas o partículas subatómicas.",
+      "lumina": "Modelo computacional diseñado para simular los primeros dos mil millones de años del universo primitivo.",
+      "helio": "Elemento químico gaseoso y ligero formado en grandes proporciones durante las fases tempranas del universo.",
+      "espacio interestelar": "Zona cósmica existente entre las distintas estrellas de una galaxia, ocupada principalmente por gas.",
+      "supercomputadores": "Equipos informáticos con enorme potencia de cálculo utilizados para procesar complejas simulaciones científicas.",
+      "formación estelar": "Proceso astronómico en el que nubes de gas colapsan gravitatoriamente dando nacimiento a estrellas.",
+      "agujeros negros": "Cuerpos celestes con una concentración masiva tan densa que nada puede escapar a su gravedad.",
+      "evolución cósmica": "Proceso histórico de transformación continua del universo y sus estructuras desde su inicio."
     }
   }
 }

@@ -118,9 +118,38 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "voting paradoxes": "Contradictory outcomes where collective democratic choices violate logic despite rational individual voter preferences.",
+      "circular logic loops": "Cycles in group preferences where every candidate can be defeated by another, preventing a clear winner.",
+      "nicolas de condorcet": "An eighteenth-century French thinker who discovered that majority voting can result in circular collective preferences.",
+      "kenneth arrow": "An economist who proved mathematically that no voting system can satisfy all fairness rules simultaneously.",
+      "topology": "A mathematical field studying geometric properties that remain unchanged under continuous deformations like stretching or twisting.",
+      "continuous deformations": "Geometric transformations, such as bending or stretching, that alter a shape without cutting or tearing it.",
+      "ballot rankings": "Voters' ordered preference lists placing candidates from most preferred to least preferred in an election.",
+      "mathematical gluing": "An abstract technique of identifying and joining edges or boundaries of geometric shapes into a single surface.",
+      "klein bottle": "A one-sided mathematical surface with no boundary, where inside and outside cannot be distinguished.",
+      "voter coherence": "The logical consistency of voter preferences, ensuring individual or group choices do not contradict one another.",
+      "fairness criteria": "Core democratic standards that voting systems aim to fulfill to ensure fair and reasonable outcomes."
+    },
+    "vi": {
+      "top học": "Ngành toán học nghiên cứu các tính chất được bảo toàn qua các biến dạng liên tục.",
+      "topology": "Tên tiếng Anh của ngành top học, nghiên cứu không gian qua các biến dạng liên tục.",
+      "nicolas de condorcet": "Nhà tư tưởng Pháp nhận thấy mọi ứng cử viên đều có thể thua trong đối đầu trực diện.",
+      "kenneth arrow": "Nhà kinh tế học chứng minh không thể có hệ thống bầu cử dân chủ nào hoàn hảo.",
+      "vòng lặp logic": "Hiện tượng lựa chọn tập thể tạo thành vòng tròn mâu thuẫn, không thể tìm người thắng.",
+      "ánh xạ": "Phép chuyển đổi các thứ hạng lá phiếu thành các đối tượng hình học.",
+      "vành tròn": "Cấu trúc hình học khép kín đại diện cho chu kỳ bỏ phiếu xuất hiện nghịch lý.",
+      "độ xoắn": "Thao tác vặn hình học cần thiết khi kết nối các dải bề mặt nhằm tránh mâu thuẫn.",
+      "bình klein": "Bề mặt hình học kỳ lạ chỉ có một mặt duy nhất, không phân biệt trong ngoài.",
+      "klein bottle": "Tên tiếng Anh của bình Klein, bề mặt toán học một mặt không có trong ngoài.",
+      "nghịch lý": "Tình huống tự mâu thuẫn phát sinh dù các quy tắc ban đầu đều hợp lý."
+    }
   }
 }
