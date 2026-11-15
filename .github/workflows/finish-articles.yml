@@ -2,7 +2,9 @@
 # push or a merged Gemini pull request, fill the languages and glossaries their writer could not
 # (Gemini), cut the Pixabay clip a writer queued (coverClip) or find one where the Pagemoor standard
 # asks for a motion cover and none is there yet, report every new article against the standard, and
-# deploy. Needs GEMINI_API_KEY and PIXABAY_API_KEY. Pushes made here use GITHUB_TOKEN, so they do not
+# deploy. Clips are stored on Cloudflare R2, and any clip still kept in public/covers/video/ is moved
+# there (run this workflow by hand with no slugs to do only that). Needs GEMINI_API_KEY, PIXABAY_API_KEY,
+# R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY and the variables R2_BUCKET, R2_PUBLIC_URL. Pushes made here use GITHUB_TOKEN, so they do not
 # start this workflow again.
 name: Finish new articles
 on:
@@ -11,13 +13,20 @@ on:
     paths: ['content/articles/**']
   workflow_dispatch:
     inputs:
-      slugs: { description: 'Article slugs, space separated', required: true }
+      slugs: { description: 'Article slugs, space separated (empty: only move clips to R2)', required: false }
 permissions:
   contents: write
   actions: write
 concurrency:
   group: finish-articles
   cancel-in-progress: false
+env:
+  # Motion-cover clips go to Cloudflare R2 (scripts/pipeline/r2.ts); without these, into public/covers/video/.
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ vars.R2_BUCKET }}
+  R2_PUBLIC_URL: ${{ vars.R2_PUBLIC_URL }}
 jobs:
   finish:
     runs-on: ubuntu-latest
@@ -42,10 +51,10 @@ jobs:
           echo "slugs=$slugs" >> "$GITHUB_OUTPUT"
           echo "New articles: ${slugs:-none}"
       - name: Install ffmpeg (motion covers)
-        if: steps.new.outputs.slugs != ''
+        if: steps.new.outputs.slugs != '' || github.event_name == 'workflow_dispatch'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg
       - name: Finish
-        if: steps.new.outputs.slugs != ''
+        if: steps.new.outputs.slugs != '' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
@@ -54,17 +63,17 @@ jobs:
           MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS != 'false' }}
         run: pnpm tsx scripts/pipeline/finish.ts ${{ steps.new.outputs.slugs }}
       - name: Check
-        if: steps.new.outputs.slugs != ''
+        if: steps.new.outputs.slugs != '' || github.event_name == 'workflow_dispatch'
         run: pnpm tsx scripts/pipeline/validate.ts
       - name: Commit
         id: commit
-        if: steps.new.outputs.slugs != ''
+        if: steps.new.outputs.slugs != '' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "reader-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/articles public/covers/video
+          git add -A content/articles public/covers/video
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
-          git commit -q -m "pipeline: finish new articles"
+          git commit -q -m "pipeline: finish new articles, clips on R2"
           for i in 1 2 3 4; do
             git pull --rebase -q origin main && git push origin HEAD:main && break
             sleep $((i * 10))

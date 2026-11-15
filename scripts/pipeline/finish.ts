@@ -3,13 +3,14 @@
 // clip a writer queued in `coverClip`, find one where the Claude writer's standard asks for a motion
 // cover (and the Gemini writer's when MOTION_COVERS=true), then report each article against the
 // Pagemoor standard.
-//   pnpm tsx scripts/pipeline/finish.ts [--report report.md] <slug>...
+// With R2 configured it first moves any clip still kept in public/covers/video/ to R2.
+//   pnpm tsx scripts/pipeline/finish.ts [--report report.md] [<slug>...]
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import type { ArticleSource } from '../../lib/content/types';
 import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
 import { dirs, jobSummary, readJson, writeJson } from './lib';
-import { autoMotion, hasFfmpeg, hasPixabay } from './motion';
+import { autoMotion, hasFfmpeg, hasPixabay, moveClipsToR2 } from './motion';
 import { STANDARDS, articleWords, standardProblems } from './standard';
 import { translateAll } from './translate';
 
@@ -20,6 +21,8 @@ async function main() {
   const at = args.indexOf('--report');
   const reportFile = at >= 0 ? args.splice(at, 2)[1] : undefined;
   const slugs = args.map((s) => path.basename(s, '.json'));
+  const moved = await moveClipsToR2();
+  if (moved.length) console.log(`Moved the motion covers of ${moved.length} articles to R2: ${moved.join(', ')}`);
   const ffmpeg = await hasFfmpeg();
   let translating = hasGemini();
   const rows: string[] = [];
@@ -56,6 +59,7 @@ async function main() {
     console.log(`${slug}: ${done.join('; ') || 'nothing to add'}${problems.length ? ` — still: ${problems.join('; ')}` : ''}`);
     rows.push(`| ${slug} | ${byClaude(a) ? 'Claude' : 'Gemini'} | ${articleWords(a)} | ${done.join('; ') || '—'} | ${problems.join('; ').replace(/\|/g, '/') || '✓'} |`);
   }
+  if (moved.length) await jobSummary(`Chuyển bìa động của ${moved.length} bài lên R2: ${moved.join(', ')}`);
   if (!rows.length) return;
   const report = [`### Hoàn thiện ${rows.length} bài mới`, '', '| Bài | Người viết | Từ | Đã thêm | Còn thiếu |', '|-----|-----------|----|---------|-----------|', ...rows].join('\n');
   await jobSummary(report);
