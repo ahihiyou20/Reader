@@ -3,12 +3,13 @@ import type { Lang } from '@/lib/content/types';
 import type { Stage } from '@/lib/stage';
 
 export type View = 0 | 1 | 2;
-export type Overlay = 'explore' | 'search' | 'messages' | 'notifications' | 'profile' | 'create';
+export type Overlay = 'explore' | 'search' | 'messages' | 'notifications' | 'profile' | 'create' | 'library' | 'settings';
 export type LoginReason = 'comment' | 'create' | 'generic';
 export type Sheet =
   | { kind: 'login'; reason: LoginReason }
   | { kind: 'sources'; slug: string; refId?: string }
   | { kind: 'deleteAccount' }
+  | { kind: 'collect'; slug: string }
   | null;
 
 interface UIState {
@@ -19,6 +20,8 @@ interface UIState {
   overlays: Overlay[];
   sheet: Sheet;
   langMenu: boolean;
+  /** The main navigation drawer. */
+  navOpen: boolean;
   category: string | null;
   startSlug: string | null;
   feedVersion: number;
@@ -48,6 +51,7 @@ export const useUI = create<UIState>((set) => ({
   overlays: [],
   sheet: null,
   langMenu: false,
+  navOpen: false,
   category: null,
   startSlug: null,
   feedVersion: 0,

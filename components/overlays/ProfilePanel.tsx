@@ -1,8 +1,11 @@
 'use client';
-import { Download, Globe, LogOut, Pencil, Trash2, UserRound } from 'lucide-react';
+import { Pencil, Settings, UserRound } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
-import { exportMyData, loadSubmissions, setLanguage, signOut, updateDisplayName } from '@/lib/actions';
-import { useFeed } from '@/lib/data';
+import { loadSubmissions, updateDisplayName } from '@/lib/actions';
+import { pick } from '@/lib/i18n';
+import { affinity } from '@/lib/recommend';
+import { useReading } from '@/stores/reading';
+import { useCategories, useFeed } from '@/lib/data';
 import { displayStreak, lastNDays, localDate } from '@/lib/streak';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
@@ -19,6 +22,7 @@ export function ProfilePanel() {
   const t = useT();
   const open = useUI((s) => s.overlays.includes('profile'));
   const closeOverlay = useUI((s) => s.closeOverlay);
+  const openOverlay = useUI((s) => s.openOverlay);
   const openSheet = useUI((s) => s.openSheet);
   const startFeed = useUI((s) => s.startFeed);
   const lang = useUI((s) => s.lang);
@@ -132,6 +136,8 @@ export function ProfilePanel() {
           ))}
         </div>
 
+        <ReadingStats />
+
         <div className="tabs" role="tablist">
           {(['saved', 'liked', ...(signedIn ? (['posts'] as const) : [])] as Tab[]).map((k) => (
             <button key={k} type="button" role="tab" aria-selected={tab === k} onClick={() => setTab(k)}>
@@ -164,39 +170,85 @@ export function ProfilePanel() {
             <div className="empty-note">{submissions ? t('noPosts') : '…'}</div>
           ))}
 
-        <div className="label">{t('language')}</div>
-        <div className="rowbtn" style={{ borderBottom: 0 }}>
-          <Globe className="ic" aria-hidden="true" />
-          {t('language')}
-          <span className="seg">
-            {(['vi', 'en'] as const).map((l) => (
-              <button key={l} type="button" aria-pressed={lang === l} onClick={() => setLanguage(l)}>
-                {l === 'vi' ? 'Tiếng Việt' : 'English'}
-              </button>
-            ))}
-          </span>
-        </div>
-
-        <div style={{ marginTop: 18 }}>
-          <button className="rowbtn" type="button" onClick={() => exportMyData()}>
-            <Download className="ic" aria-hidden="true" />
-            {t('exportData')}
-          </button>
-          {signedIn && (
-            <button className="rowbtn" type="button" onClick={() => signOut()}>
-              <LogOut className="ic" aria-hidden="true" />
-              {t('signOut')}
-            </button>
-          )}
-          <button className="rowbtn danger" type="button" onClick={() => openSheet({ kind: 'deleteAccount' })}>
-            <Trash2 className="ic" aria-hidden="true" />
-            {t('deleteAccount')}
-          </button>
-        </div>
+        <button className="rowbtn" type="button" style={{ marginTop: 18 }} onClick={() => openOverlay('settings')}>
+          <Settings className="ic" aria-hidden="true" />
+          {t('settings')}
+        </button>
         <p className="fine" style={{ marginTop: 22 }}>
           <a href="/about">{t('about')}</a> · <a href="/privacy">{t('privacy')}</a> · <a href="/terms">{t('terms')}</a>
         </p>
       </div>
     </Panel>
+  );
+}
+
+/** Reading stats, favourite topics, and the interest score behind the For You order. */
+function ReadingStats() {
+  const t = useT();
+  const lang = useUI((s) => s.lang);
+  const { data: cats } = useCategories();
+  const topics = useReading((s) => s.topics);
+  const signals = useReading((s) => s.signals);
+  const history = useReading((s) => s.history);
+  const toggleTopic = useReading((s) => s.toggleTopic);
+  const saved = useUser((s) => Object.keys(s.saves).length);
+  const all = Object.values(signals);
+  const opens = all.reduce((n, x) => n + x.opens, 0);
+  const completes = all.reduce((n, x) => n + x.completes, 0);
+  const minutes = Math.round(all.reduce((n, x) => n + x.ms, 0) / 60000);
+  const scores = (cats ?? []).map((c) => ({ c, ...affinity(signals[c.id], topics.includes(c.id)) })).sort((a, b) => b.score - a.score);
+  const top = Math.max(1, ...scores.map((x) => x.score));
+  return (
+    <>
+      <div className="label">{t('readingStats')}</div>
+      <div className="stats four">
+        <div className="stat">
+          <b>{history.filter((h) => h.done).length}</b>
+          <span>{t('statFinished')}</span>
+        </div>
+        <div className="stat">
+          <b>{minutes}</b>
+          <span>{t('statMinutes')}</span>
+        </div>
+        <div className="stat">
+          <b>{opens ? Math.round((Math.min(completes, opens) / opens) * 100) : 0}%</b>
+          <span>{t('statFinishRate')}</span>
+        </div>
+        <div className="stat">
+          <b>{saved}</b>
+          <span>{t('statSaved')}</span>
+        </div>
+      </div>
+
+      <div className="label">{t('topicsTitle')}</div>
+      <p className="fine">{t('topicsSub')}</p>
+      <div className="chips wrap">
+        {cats?.map((c) => (
+          <button key={c.id} className="chip solid" type="button" aria-pressed={topics.includes(c.id)} onClick={() => toggleTopic(c.id)}>
+            <span aria-hidden="true">{c.emoji}</span>
+            {pick(c.name, lang)}
+          </button>
+        ))}
+      </div>
+
+      <details className="why">
+        <summary>{t('whyTitle')}</summary>
+        <p className="fine">{t('whySub')}</p>
+        {scores.map(({ c, score }) => (
+          <div key={c.id} className="why-row">
+            <span>{pick(c.name, lang)}</span>
+            <i>
+              <i style={{ transform: `scaleX(${Math.max(0, score) / top})` }} />
+            </i>
+            <b>{score.toFixed(1)}</b>
+          </div>
+        ))}
+        <ul className="fine">
+          {(['whyTopic', 'whyTime', 'whyFinish', 'whySave', 'whySkip', 'whyExplore'] as const).map((k) => (
+            <li key={k}>{t(k)}</li>
+          ))}
+        </ul>
+      </details>
+    </>
   );
 }

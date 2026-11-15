@@ -7,6 +7,7 @@ import './globals.css';
 import './styles/stage-compact-landscape.css';
 import './styles/stage-regular-portrait.css';
 import './styles/stage-regular-landscape.css';
+import './styles/pagemoor.css';
 
 const inter = Inter({
   subsets: ['latin', 'vietnamese'],
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-      { url: '/icons/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icons/favicon-48.png', sizes: '48x48', type: 'image/png' },
     ],
     apple: '/icons/apple-touch-icon.png',
   },

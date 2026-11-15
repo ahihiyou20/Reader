@@ -23,6 +23,9 @@ export function TopBar() {
 
   return (
     <header className="topbar" data-region="topbar" style={{ viewTransitionName: 'top-bar' }}>
+      <button className="navbtn" type="button" aria-label={t('menu')} aria-haspopup="menu" onClick={() => useUI.setState({ navOpen: true, langMenu: false })}>
+        <img src="/icons/logo-120.png" alt="" width={34} height={34} draggable={false} />
+      </button>
       <button
         className="me"
         type="button"

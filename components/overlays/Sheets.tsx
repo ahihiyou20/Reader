@@ -1,5 +1,5 @@
 'use client';
-import { Copy, ExternalLink } from 'lucide-react';
+import { Check, Copy, ExternalLink } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { useArticle } from '@/lib/data';
 import { backendKind, isChromeLike, isInAppBrowser } from '@/lib/backend';
@@ -7,6 +7,7 @@ import { cancelOneTap, promptOneTap } from '@/lib/backend/onetap';
 import { deleteAccount, signInWithGoogle } from '@/lib/actions';
 import { pick } from '@/lib/i18n';
 import { licenseName } from '@/lib/content/transform';
+import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
 import { GoogleLogo } from '../icons';
@@ -27,6 +28,9 @@ export function Sheets() {
       </Sheet>
       <Sheet open={sheet?.kind === 'deleteAccount'} onClose={close} label={t('deleteAccountTitle')}>
         <DeleteBody />
+      </Sheet>
+      <Sheet open={sheet?.kind === 'collect'} onClose={close} label={t('libAddTo')}>
+        {sheet?.kind === 'collect' && <CollectBody slug={sheet.slug} />}
       </Sheet>
     </>
   );
@@ -217,6 +221,39 @@ function DeleteBody() {
       <button className="textbtn" type="button" onClick={close}>
         {t('cancel')}
       </button>
+    </div>
+  );
+}
+
+/** Put one saved article into the reader's collections, or start a new collection with it. */
+function CollectBody({ slug }: { slug: string }) {
+  const t = useT();
+  const collections = useReading((s) => s.collections);
+  const { addCollection, toggleInCollection } = useReading.getState();
+  const [name, setName] = useState('');
+  return (
+    <div>
+      <h2>{t('libAddTo')}</h2>
+      {collections.map((c) => (
+        <button key={c.id} className="rowbtn" type="button" role="checkbox" aria-checked={c.slugs.includes(slug)} onClick={() => toggleInCollection(c.id, slug)}>
+          <Check className="ic" style={{ opacity: c.slugs.includes(slug) ? 1 : 0.15 }} aria-hidden="true" />
+          {c.name}
+        </button>
+      ))}
+      <form
+        className="namer"
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (!name.trim()) return;
+          toggleInCollection(addCollection(name), slug);
+          setName('');
+        }}
+      >
+        <input className="input" value={name} maxLength={40} onChange={(e) => setName(e.target.value)} aria-label={t('libCollectionName')} placeholder={t('libNewCollection')} />
+        <button className="pill" type="submit">
+          {t('saveName')}
+        </button>
+      </form>
     </div>
   );
 }

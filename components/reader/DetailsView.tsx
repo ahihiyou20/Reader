@@ -2,7 +2,7 @@
 // SCR-02 Details: sections with focus/dim, collapsing header, KEY POINT, sources, dots (FR-05..FR-09).
 import { MDiv, MH2 } from '@/components/Motion';
 import { useMotionValue, useTransform } from 'framer-motion';
-import { ArrowUpRight, ChevronDown, ChevronsRight, Library } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, ChevronsRight, Headphones, Library } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
@@ -18,6 +18,8 @@ import { useT } from '../hooks';
 import { layout, setArticleView } from '../feed/nav';
 import { captureAnchor, restoreScrollTop, type BlockBox, type ReadingAnchor } from '@/lib/reading-anchor';
 import { CountRoll } from '@/components/ui/CountRoll';
+import { canSpeak, speakable, useAudio } from '@/stores/audio';
+import { useTapToDefine } from './WordPop';
 
 const sweptSlugs = new Set<string>();
 
@@ -296,6 +298,14 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
     secs.current[k] = el;
   };
   const kpText = pick(article.keyPoint, lang);
+  const define = useTapToDefine(article, lang);
+  const listening = useAudio((s) => s.slug === slug);
+  const listen = () => {
+    if (listening) return useAudio.getState().toggle();
+    // Read in the language on screen; untranslated blocks fall back to English text.
+    const paras = [title, ...speakable(pick(article.hook, lang)), ...article.sections.flatMap((s) => [pick(s.heading, lang) ?? '', ...speakable(pick(s.body, lang))]), ...speakable(kpText)].filter(Boolean);
+    useAudio.getState().play({ slug, title, lang: article.langs.includes(lang) ? lang : 'en', paras });
+  };
   const o = article.origin;
   // Group 3 cannot be translated: Vietnamese readers get Reader's own summary above the original text.
   const viSummary = lang !== 'en' && o.group === 3 ? article.summary?.[lang] : undefined;
@@ -390,6 +400,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
         className="dscroll"
         ref={scroll}
         data-region="reading"
+        onClick={define.onClick}
         style={active && view === 1 ? { viewTransitionName: 'reading-col' } : undefined}
       >
         <div className={`sec hook${depth(0)}`} data-k={0} ref={setRef(0)} lang={isFallback(article.hook, lang) ? 'en' : undefined}>
@@ -520,6 +531,12 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
           <button className="pill dpill" type="button" onClick={() => scrollToBlock(0)}>
             {t('details')}
           </button>
+          {canSpeak() && (
+            <button className="pill dpill listen" type="button" aria-pressed={listening} onClick={listen}>
+              <Headphones className="ic" aria-hidden="true" />
+              {t('listen')}
+            </button>
+          )}
           <button className="hint" type="button" onClick={() => setArticleView(slug, 2)}>
             {t('toEngage')}
             <ChevronsRight className="ic" aria-hidden="true" />
@@ -546,6 +563,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
         </MDiv>
       </div>
 
+      {define.pop}
       <div className="dfoot">
         <div data-region="details-foot" style={{ pointerEvents: 'auto' }}>
           <button className="cb nextbtn" type="button" aria-label={atEnd ? t('goEngage') : t('next')} onClick={next}>
