@@ -229,6 +229,11 @@ export function createLocalBackend(): Backend {
     async listMySubmissions() {
       return [...s.submissions];
     },
+    // The local demo has no account: stores/reading.ts already keeps this data in the browser.
+    async loadReading() {
+      return null;
+    },
+    async saveReading() {},
     async exportData() {
       return { exportedAt: new Date().toISOString(), mode: 'local', ...s };
     },

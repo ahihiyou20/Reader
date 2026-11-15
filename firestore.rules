@@ -50,7 +50,7 @@ service cloud.firestore {
         && (d.displayName == null || isString(d.displayName, 1, 60))
         && (d.photoURL == null || isString(d.photoURL, 1, 1000))
         && d.isAnonymous == !isGoogle()
-        && d.lang in ['en', 'vi']
+        && d.lang in ['en', 'vi', 'fr', 'de', 'es']
         && isString(d.timezone, 1, 64)
         && validStreak(d.streak)
         && d.stats is map && d.stats.keys().hasOnly(['articlesRead']) && d.stats.articlesRead is int
@@ -93,6 +93,18 @@ service cloud.firestore {
         allow create, update: if isMe(uid) && day.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
           && request.resource.data.keys().hasOnly(['slugs']) && request.resource.data.slugs is list && request.resource.data.slugs.size() <= 200;
       }
+      // Reading data kept with the account: favourite topics, per-topic signals, history, collections
+      // and reading settings (stores/reading.ts), as one document.
+      match /reading/{id} {
+        allow read, delete: if isMe(uid);
+        allow create, update: if isMe(uid) && id == 'state'
+          && request.resource.data.keys().hasOnly(['topics', 'signals', 'history', 'collections', 'settings', 'updatedAt'])
+          && request.resource.data.topics is list && request.resource.data.topics.size() <= 50
+          && request.resource.data.signals is map && request.resource.data.signals.size() <= 50
+          && request.resource.data.history is list && request.resource.data.history.size() <= 300
+          && request.resource.data.collections is list && request.resource.data.collections.size() <= 100
+          && request.resource.data.settings is map;
+      }
       match /commentLikes/{key} {
         allow read, delete: if isMe(uid);
         allow create: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'id', 'createdAt'])
@@ -128,7 +140,7 @@ service cloud.firestore {
         && isString(request.resource.data.displayName, 1, 60)
         && (request.resource.data.photoURL == null || isString(request.resource.data.photoURL, 1, 1000))
         && isString(request.resource.data.text, 1, 500)
-        && request.resource.data.lang in ['en', 'vi']
+        && request.resource.data.lang in ['en', 'vi', 'fr', 'de', 'es']
         && request.resource.data.status == 'visible'
         && request.resource.data.likeCount == 0
         && request.resource.data.createdAt == request.time;
@@ -157,7 +169,7 @@ service cloud.firestore {
         && request.resource.data.sections is list && request.resource.data.sections.size() >= 1 && request.resource.data.sections.size() <= 10
         && request.resource.data.references is list && request.resource.data.references.size() <= 20
         && request.resource.data.coverUrl is string && request.resource.data.coverUrl.size() <= 500
-        && request.resource.data.lang in ['en', 'vi']
+        && request.resource.data.lang in ['en', 'vi', 'fr', 'de', 'es']
         && request.resource.data.createdAt == request.time;
     }
 

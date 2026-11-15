@@ -22,6 +22,7 @@ import { chromeP } from './feed/nav';
 import { useFeedList } from './feed/useFeedList';
 import { useReadingSignals } from './feed/useReadingSignals';
 import { useReading } from '@/stores/reading';
+import { startReadingSync } from '@/lib/reading-sync';
 import { preloadOverlays } from './overlays/preload';
 import { useMounted, useStageSync } from './hooks';
 
@@ -101,6 +102,7 @@ function Shell({
   const items = useFeedList(preview ? previewItems.current : undefined);
   useReadingSignals(preview ? undefined : items);
   const readSize = useReading((s) => s.settings.fontSize);
+  useEffect(() => (preview ? undefined : startReadingSync()), [preview]);
   // A reader who followed a link to an article came for that article, not for the introduction.
   const showWelcome = useReading((s) => !s.welcomed) && !initialSlug && !preview;
   useEffect(() => {
