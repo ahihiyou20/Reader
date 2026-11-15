@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Why we procrastinate: it is about feelings, not time",
-    "vi": "Vì sao ta trì hoãn: chuyện cảm xúc, không phải thời gian"
+    "vi": "Vì sao ta trì hoãn: chuyện cảm xúc, không phải thời gian",
+    "fr": "Pourquoi nous remettons à plus tard : c’est une question de sentiments, pas de temps",
+    "de": "Warum wir prokrastinieren: Es geht um Gefühle, nicht um Zeit",
+    "es": "Por qué procrastinamos: se trata de sentimientos, no de tiempo"
   },
   "hook": {
     "en": "You know the task matters. You have time to do it. And yet you find yourself tidying your desk, checking messages or watching one more video. Procrastination is often blamed on laziness or poor time management. Psychologists who study it see something different: putting things off is mostly a way of [p:escaping a bad feeling right now].",
-    "vi": "Bạn biết việc đó quan trọng. Bạn có thời gian để làm. Vậy mà bạn lại thấy mình đang dọn bàn, xem tin nhắn hoặc xem thêm một video nữa. Sự trì hoãn thường bị đổ cho lười biếng hay quản lý thời gian kém. Các nhà tâm lý học nghiên cứu về nó lại thấy một điều khác: trì hoãn chủ yếu là cách để [p:trốn tránh một cảm giác khó chịu ngay lúc này]."
+    "vi": "Bạn biết việc đó quan trọng. Bạn có thời gian để làm. Vậy mà bạn lại thấy mình đang dọn bàn, xem tin nhắn hoặc xem thêm một video nữa. Sự trì hoãn thường bị đổ cho lười biếng hay quản lý thời gian kém. Các nhà tâm lý học nghiên cứu về nó lại thấy một điều khác: trì hoãn chủ yếu là cách để [p:trốn tránh một cảm giác khó chịu ngay lúc này].",
+    "fr": "Vous savez que la tâche importe. Vous avez le temps de la faire. Pourtant, vous vous retrouvez à ranger votre bureau, à consulter vos messages ou à regarder une vidéo de plus. On attribue souvent la procrastination à la paresse ou à une mauvaise gestion du temps. Les psychologues qui l’étudient y voient autre chose : reporter les choses est avant tout un moyen d’[p:échapper à un mauvais sentiment immédiat].",
+    "de": "Du weißt, dass die Aufgabe wichtig ist. Du hast Zeit dafür. Und doch ertappst du dich dabei, den Schreibtisch aufzuräumen, Nachrichten zu checken oder noch ein Video anzuschauen. Prokrastination wird oft auf Faulheit oder schlechtes Zeitmanagement geschoben. Psychologen, die sie erforschen, sehen etwas anderes: Das Aufschieben ist meistens eine Möglichkeit, [p:einem schlechten Gefühl im Moment zu entkommen].",
+    "es": "Sabes que la tarea importa. Tienes tiempo para hacerla. Y, sin embargo, te encuentras ordenando tu escritorio, revisando mensajes o viendo un video más. A menudo se culpa a la pereza o a una mala gestión del tiempo de la procrastinación. Los psicólogos que la estudian ven algo diferente: posponer las cosas es sobre todo una forma de [p:escapar de un mal sentimiento en el presente]."
   },
   "sections": [
     {
       "heading_en": "Delay that we know will hurt",
       "heading_vi": "Sự trì hoãn mà ta biết sẽ gây hại",
       "body_en": "Not every delay is procrastination. Waiting for more information before a decision can be wise. Psychologist Piers Steel defines procrastination as [y:voluntarily delaying something we intend to do], even though we expect to be worse off for the delay {steel-2007}. That last part is what makes it strange: we know it will cost us, and we do it anyway. It is also very common. Steel estimated that the large majority of college students procrastinate, and that around 15 to 20 percent of adults do so chronically, in ways that affect their work, health and finances.",
-      "body_vi": "Không phải sự chậm trễ nào cũng là trì hoãn. Chờ thêm thông tin trước khi quyết định có thể là khôn ngoan. Nhà tâm lý học Piers Steel định nghĩa trì hoãn là [y:tự nguyện hoãn lại một việc mình định làm], dù biết rằng mình sẽ chịu thiệt vì sự chậm trễ đó {steel-2007}. Chính vế sau khiến nó trở nên kỳ lạ: ta biết sẽ phải trả giá, mà vẫn làm. Trì hoãn cũng rất phổ biến. Steel ước tính đại đa số sinh viên đại học có trì hoãn, và khoảng 15 đến 20 phần trăm người trưởng thành trì hoãn kinh niên, theo cách ảnh hưởng tới công việc, sức khoẻ và tài chính của họ."
+      "body_vi": "Không phải sự chậm trễ nào cũng là trì hoãn. Chờ thêm thông tin trước khi quyết định có thể là khôn ngoan. Nhà tâm lý học Piers Steel định nghĩa trì hoãn là [y:tự nguyện hoãn lại một việc mình định làm], dù biết rằng mình sẽ chịu thiệt vì sự chậm trễ đó {steel-2007}. Chính vế sau khiến nó trở nên kỳ lạ: ta biết sẽ phải trả giá, mà vẫn làm. Trì hoãn cũng rất phổ biến. Steel ước tính đại đa số sinh viên đại học có trì hoãn, và khoảng 15 đến 20 phần trăm người trưởng thành trì hoãn kinh niên, theo cách ảnh hưởng tới công việc, sức khoẻ và tài chính của họ.",
+      "heading_fr": "Un retard dont nous savons qu'il nous nuira",
+      "body_fr": "Tout report n’est pas de la procrastination. Attendre plus d’informations avant de prendre une décision peut être judicieux. Le psychologue Piers Steel définit la procrastination comme [y:le fait de retarder volontairement une action prévue], alors même que nous nous attendons à en subir les conséquences {steel-2007}. Ce dernier point rend la chose singulière : nous savons que cela nous pénalisera, et nous le faisons quand même. C’est aussi très courant. Steel a estimé qu’une grande majorité d’étudiants procrastinent, et qu’environ 15 à 20 pour cent des adultes le font de manière chronique, d’une façon qui nuit à leur travail, à leur santé et à leurs finances.",
+      "heading_de": "Verzögerung, von der wir wissen, dass sie schadet",
+      "body_de": "Nicht jede Verzögerung ist Prokrastination. Auf mehr Informationen vor einer Entscheidung zu warten, kann klug sein. Der Psychologe Piers Steel definiert Prokrastination als das [y:freiwillige Aufschieben einer beabsichtigten Handlung], obwohl wir erwarten, durch die Verzögerung schlechter dazustehen {steel-2007}. Dieser letzte Teil macht es seltsam: Wir wissen, dass es uns schadet, und tun es trotzdem. Es ist zudem sehr verbreitet. Steel schätzte, dass die große Mehrheit der Studierenden prokrastiniert und dass etwa 15 bis 20 Prozent der Erwachsenen dies chronisch tun, auf Weisen, die ihre Arbeit, ihre Gesundheit und ihre Finanzen beeinträchtigen.",
+      "heading_es": "Una demora que sabemos que dolerá",
+      "body_es": "No toda demora es procrastinación. Esperar más información antes de una decisión puede ser sabio. El psicólogo Piers Steel define la procrastinación como [y:retrasar voluntariamente algo que pretendemos hacer], aun cuando esperamos salir perjudicados por la demora {steel-2007}. Esa última parte es lo que la hace extraña: sabemos que nos costará y aun así lo hacemos. También es muy común. Steel estimó que la gran mayoría de los estudiantes universitarios procrastinan y que entre el 15 y el 20 por ciento de los adultos lo hacen de forma crónica, de maneras que afectan su trabajo, salud y finanzas."
     },
     {
       "heading_en": "What predicts it",
       "heading_vi": "Điều gì dự báo sự trì hoãn",
       "body_en": "Steel combined the results of hundreds of studies to see what makes procrastination more likely. The strongest predictors were not about time at all. People put off tasks that feel **unpleasant**, boring or frustrating. They delay more when the reward is [y:far away], like an exam in a month. They procrastinate more when they doubt they can do the task well, and when they are **impulsive** and easily distracted {steel-2007}. Put together, a dull task with a distant deadline, a vague first step and a phone within reach is almost a recipe for delay.",
-      "body_vi": "Steel đã tổng hợp kết quả của hàng trăm nghiên cứu để xem điều gì khiến ta dễ trì hoãn. Những yếu tố dự báo mạnh nhất hoàn toàn không liên quan đến thời gian. Người ta hoãn những việc có cảm giác **khó chịu**, nhàm chán hoặc gây bực bội. Họ trì hoãn nhiều hơn khi phần thưởng còn [y:ở xa], như một kỳ thi sau một tháng nữa. Họ trì hoãn nhiều hơn khi nghi ngờ khả năng làm tốt của mình, và khi họ **bốc đồng**, dễ bị phân tâm {steel-2007}. Gộp lại, một việc tẻ nhạt với hạn chót còn xa, bước đầu tiên mơ hồ và chiếc điện thoại trong tầm tay gần như là công thức hoàn hảo cho sự trì hoãn."
+      "body_vi": "Steel đã tổng hợp kết quả của hàng trăm nghiên cứu để xem điều gì khiến ta dễ trì hoãn. Những yếu tố dự báo mạnh nhất hoàn toàn không liên quan đến thời gian. Người ta hoãn những việc có cảm giác **khó chịu**, nhàm chán hoặc gây bực bội. Họ trì hoãn nhiều hơn khi phần thưởng còn [y:ở xa], như một kỳ thi sau một tháng nữa. Họ trì hoãn nhiều hơn khi nghi ngờ khả năng làm tốt của mình, và khi họ **bốc đồng**, dễ bị phân tâm {steel-2007}. Gộp lại, một việc tẻ nhạt với hạn chót còn xa, bước đầu tiên mơ hồ và chiếc điện thoại trong tầm tay gần như là công thức hoàn hảo cho sự trì hoãn.",
+      "heading_fr": "Ce qui permet de la prédire",
+      "body_fr": "Steel a combiné les résultats de centaines d’études pour comprendre ce qui rend la procrastination plus probable. Les meilleurs prédicteurs ne concernent pas du tout le temps. Les gens repoussent les tâches qui leur semblent **désagréables**, ennuyeuses ou frustrantes. Ils retardent davantage l’action lorsque la récompense est [y:lointaine], comme un examen dans un mois. Ils procrastinent plus lorsqu’ils doutent de leur capacité à bien accomplir la tâche, et lorsqu’ils sont **impulsifs** et facilement distractibles {steel-2007}. Au final, une tâche ennuyeuse dotée d’une échéance lointaine, d’une première étape floue et d’un téléphone à portée de main constitue presque la recette idéale du retard.",
+      "heading_de": "Was sie vorhersagt",
+      "body_de": "Steel fasste die Ergebnisse Hunderter Studien zusammen, um herauszufinden, was Prokrastination wahrscheinlicher macht. Die stärksten Vorhersagefaktoren hatten überhaupt nichts mit Zeit zu tun. Menschen schieben Aufgaben auf, die sich **unangenehm**, langweilig oder frustrierend anfühlen. Sie schieben mehr auf, wenn die Belohnung [y:weit entfernt] ist, wie eine Prüfung in einem Monat. Sie prokrastinieren mehr, wenn sie daran zweifeln, die Aufgabe gut bewältigen zu können, und wenn sie **impulsiv** und leicht abzulenken sind {steel-2007}. Zusammengefasst sind eine öde Aufgabe mit einer fernen Frist, einem vagen ersten Schritt und einem Smartphone in Reichweite fast ein Rezept für Verzögerung.",
+      "heading_es": "Qué lo predice",
+      "body_es": "Steel combinó los resultados de cientos de estudios para ver qué hace más probable la procrastinación. Los predictores más fuertes no tenían nada que ver con el tiempo. Las personas posponen tareas que se sienten **desagradables**, aburridas o frustrantes. Retrasan más cuando la recompensa está [y:lejana], como un examen dentro de un mes. Procrastinan más cuando dudan de poder hacer bien la tarea y cuando son **impulsivas** y se distrae con facilidad {steel-2007}. En conjunto, una tarea aburrida con una fecha límite lejana, un primer paso vago y un teléfono al alcance de la mano es casi una receta para la demora."
     },
     {
       "heading_en": "Feeling better now, worse later",
       "heading_vi": "Dễ chịu bây giờ, khổ sở về sau",
       "body_en": "Researchers Fuschia Sirois and Timothy Pychyl argue that procrastination is best understood as **short-term mood repair** {sirois-pychyl-2013}. When a task makes us anxious, bored or insecure, avoiding it brings [g:instant relief]. That relief rewards the avoidance, so we are more likely to do it again. Meanwhile, the cost lands on our 'future self', whom we tend to treat almost like a stranger. We happily hand them a pile of stress, as if it were someone else's problem. In this view, procrastination is not a failure of time management but a failure to manage feelings.",
-      "body_vi": "Hai nhà nghiên cứu Fuschia Sirois và Timothy Pychyl cho rằng trì hoãn nên được hiểu là **cách sửa tâm trạng ngắn hạn** {sirois-pychyl-2013}. Khi một việc khiến ta lo lắng, chán nản hay bất an, né tránh nó mang lại [g:sự nhẹ nhõm tức thì]. Cảm giác nhẹ nhõm ấy tưởng thưởng cho việc né tránh, nên lần sau ta càng dễ làm vậy. Trong khi đó, cái giá đổ lên 'bản thân tương lai', người mà ta thường đối xử gần như một người xa lạ. Ta vui vẻ trao cho họ cả đống căng thẳng, như thể đó là chuyện của người khác. Theo cách nhìn này, trì hoãn không phải thất bại trong quản lý thời gian mà là thất bại trong quản lý cảm xúc."
+      "body_vi": "Hai nhà nghiên cứu Fuschia Sirois và Timothy Pychyl cho rằng trì hoãn nên được hiểu là **cách sửa tâm trạng ngắn hạn** {sirois-pychyl-2013}. Khi một việc khiến ta lo lắng, chán nản hay bất an, né tránh nó mang lại [g:sự nhẹ nhõm tức thì]. Cảm giác nhẹ nhõm ấy tưởng thưởng cho việc né tránh, nên lần sau ta càng dễ làm vậy. Trong khi đó, cái giá đổ lên 'bản thân tương lai', người mà ta thường đối xử gần như một người xa lạ. Ta vui vẻ trao cho họ cả đống căng thẳng, như thể đó là chuyện của người khác. Theo cách nhìn này, trì hoãn không phải thất bại trong quản lý thời gian mà là thất bại trong quản lý cảm xúc.",
+      "heading_fr": "Se sentir mieux maintenant, plus mal ensuite",
+      "body_fr": "Les chercheurs Fuschia Sirois et Timothy Pychyl soutiennent que la procrastination se comprend mieux comme une **réparation de l’humeur à court terme** {sirois-pychyl-2013}. Lorsqu’une tâche nous procure de l’anxiété, de l’ennui ou de l’insécurité, l’éviter apporte un [g:soulagement instantané]. Ce soulagement récompense l’évitement, ce qui rend probable sa répétition. Pendant ce temps, le coût retombe sur notre « futur soi », que nous avons tendance à traiter presque comme un étranger. Nous lui refilons joyeusement un tas de stress, comme s’il s’agissait du problème de quelqu’un d’autre. Selon cette vision, la procrastination n’est pas un échec de la gestion du temps, mais un échec de la gestion des sentiments.",
+      "heading_de": "Jetzt besser fühlen, später schlechter",
+      "body_de": "Die Forscherinnen Fuschia Sirois und Timothy Pychyl argumentieren, dass Prokrastination am besten als **kurzfristige Stimmungsreparatur** verstanden wird {sirois-pychyl-2013}. Wenn eine Aufgabe uns ängstlich, gelangweilt oder unsicher macht, bringt das Vermeiden [g:sofortige Erleichterung]. Diese Erleichterung belohnt die Vermeidung, sodass wir es eher wieder tun. Inzwischen landet die Last bei unserem „Zukünftigen Selbst“, das wir fast wie einen Fremden behandeln. Wir überreichen ihm bereitwillig einen Berg von Stress, als wäre es das Problem von jemand anderem. Aus dieser Sicht ist Prokrastination kein Versagen des Zeitmanagements, sondern ein Versagen bei der Bewältigung von Gefühlen.",
+      "heading_es": "Sentirse mejor ahora, peor después",
+      "body_es": "Los investigadores Fuschia Sirois y Timothy Pychyl argumentan que la procrastinación se entiende mejor como una **reparación del estado de ánimo a corto plazo** {sirois-pychyl-2013}. Cuando una tarea nos causa ansiedad, aburrimiento o inseguridad, evitarla trae [g:alivio instantáneo]. Ese alivio recompensa la evitación, por lo que es más probable que lo hagamos de nuevo. Mientras tanto, el costo recae en nuestro «yo del futuro», a quien tendemos a tratar casi como a un extraño. Con gusto le entregamos una pila de estrés, como si fuera el problema de otro. Desde este punto de vista, la procrastinación no es un fallo en la gestión del tiempo, sino un fallo en la gestión de los sentimientos."
     },
     {
       "heading_en": "The bill arrives later",
       "heading_vi": "Hoá đơn đến muộn",
       "body_en": "A well-known study followed university students through a semester. Early on, the procrastinators actually looked better off: they reported [y:less stress] and fewer symptoms of illness than their classmates. But as deadlines arrived, the picture reversed. By the end of the semester, procrastinators reported more stress and more illness, and they earned lower grades {tice-1997}. Across the whole term, they were worse off overall. The short-term comfort was real, but it was borrowed from the future, with interest. This pattern helps explain why procrastination is so tempting: the benefits come first and the costs come later.",
-      "body_vi": "Một nghiên cứu nổi tiếng đã theo dõi sinh viên đại học trong suốt một học kỳ. Ban đầu, những người hay trì hoãn trông có vẻ ổn hơn: họ báo cáo [y:ít căng thẳng hơn] và ít triệu chứng ốm đau hơn bạn cùng lớp. Nhưng khi các hạn chót đến gần, bức tranh đảo ngược. Đến cuối học kỳ, nhóm trì hoãn căng thẳng hơn, ốm nhiều hơn và đạt điểm thấp hơn {tice-1997}. Tính trên cả học kỳ, họ chịu thiệt nhiều hơn. Sự dễ chịu ngắn hạn là có thật, nhưng nó được vay từ tương lai, kèm theo lãi. Quy luật này giúp giải thích vì sao trì hoãn hấp dẫn đến thế: lợi ích đến trước, cái giá đến sau."
+      "body_vi": "Một nghiên cứu nổi tiếng đã theo dõi sinh viên đại học trong suốt một học kỳ. Ban đầu, những người hay trì hoãn trông có vẻ ổn hơn: họ báo cáo [y:ít căng thẳng hơn] và ít triệu chứng ốm đau hơn bạn cùng lớp. Nhưng khi các hạn chót đến gần, bức tranh đảo ngược. Đến cuối học kỳ, nhóm trì hoãn căng thẳng hơn, ốm nhiều hơn và đạt điểm thấp hơn {tice-1997}. Tính trên cả học kỳ, họ chịu thiệt nhiều hơn. Sự dễ chịu ngắn hạn là có thật, nhưng nó được vay từ tương lai, kèm theo lãi. Quy luật này giúp giải thích vì sao trì hoãn hấp dẫn đến thế: lợi ích đến trước, cái giá đến sau.",
+      "heading_fr": "L’addition arrive plus tard",
+      "body_fr": "Une étude bien connue a suivi des étudiants universitaires tout au long d’un semestre. Au début, les procrastinateurs semblaient s’en sortir mieux : ils signalaient [y:moins de stress] et moins de symptômes de maladie que leurs camarades. Mais à mesure que les échéances approchaient, la situation s’inversait. En fin de semestre, les procrastinateurs rapportaient davantage de stress et de maladies, et obtenaient de moins bonnes notes {tice-1997}. Sur l’ensemble de la période, leur situation globale était moins bonne. Le réconfort à court terme était réel, mais il était emprunté au futur avec intérêts. Ce schéma aide à comprendre pourquoi la procrastination est si tentante : les avantages arrivent d’abord et les coûts surviennent ensuite.",
+      "heading_de": "Die Rechnung kommt später",
+      "body_de": "Eine bekannte Studie begleitete Universitätsstudierende über ein Semester hinweg. Zu Beginn schienen die Prokrastinatoren tatsächlich besser dazustehen: Sie berichteten über [y:weniger Stress] und weniger Krankheitssymptome als ihre Kommilitonen. Doch als die Fristen näher rückten, drehte sich das Bild. Am Ende des Semesters berichteten Prokrastinatoren über mehr Stress und mehr Krankheiten und sie erzielten schlechtere Noten {tice-1997}. Über das gesamte Semester hinweg standen sie insgesamt schlechter da. Die kurzfristige Bequemlichkeit war real, aber sie war mit Zinsen aus der Zukunft geliehen. Dieses Muster hilft zu erklären, warum Prokrastination so verlockend ist: Die Vorteile kommen zuerst und die Kosten später.",
+      "heading_es": "La factura llega más tarde",
+      "body_es": "Un estudio conocido siguió a estudiantes universitarios durante un semestre. Al principio, los procrastinadores en realidad parecían estar mejor: informaron de [y:menos estrés] y menos síntomas de enfermedad que sus compañeros. Pero al llegar las fechas límite, el panorama se invertía. Al final del semestre, los procrastinadores informaron de más estrés y más enfermedad, y obtuvieron calificaciones más bajas {tice-1997}. En todo el trimestre, salieron peor parados en general. La comodidad a corto plazo era real, pero estaba tomada prestada del futuro, con intereses. Este patrón ayuda a explicar por qué la procrastinación resulta tan tentadora: los beneficios llegan primero y los costos después."
     },
     {
       "heading_en": "Forgive yourself",
       "heading_vi": "Hãy tha thứ cho bản thân",
       "body_en": "If procrastination is about bad feelings, then beating yourself up may make it worse. One study tested this with first-year students before two midterm exams. Students who reported [g:forgiving themselves] for procrastinating before the first exam procrastinated less before the second one {wohl-2010}. Self-forgiveness seems to reduce the negative feelings attached to the task, so there is less to escape from next time. This is not the same as making excuses. It means admitting the delay, accepting that it happened, and turning attention back to the work without a cloud of guilt.",
-      "body_vi": "Nếu trì hoãn bắt nguồn từ cảm xúc tiêu cực, thì tự trách móc có thể khiến nó tệ hơn. Một nghiên cứu đã kiểm chứng điều này với sinh viên năm nhất trước hai kỳ thi giữa kỳ. Những sinh viên cho biết đã [g:tha thứ cho bản thân] vì trì hoãn trước kỳ thi đầu tiên đã trì hoãn ít hơn trước kỳ thi thứ hai {wohl-2010}. Tự tha thứ dường như làm giảm những cảm xúc tiêu cực gắn với nhiệm vụ, nên lần sau có ít điều để trốn tránh hơn. Điều này không giống với việc bao biện. Nó có nghĩa là thừa nhận sự chậm trễ, chấp nhận rằng nó đã xảy ra, và quay lại với công việc mà không bị mây mù tội lỗi bao phủ."
+      "body_vi": "Nếu trì hoãn bắt nguồn từ cảm xúc tiêu cực, thì tự trách móc có thể khiến nó tệ hơn. Một nghiên cứu đã kiểm chứng điều này với sinh viên năm nhất trước hai kỳ thi giữa kỳ. Những sinh viên cho biết đã [g:tha thứ cho bản thân] vì trì hoãn trước kỳ thi đầu tiên đã trì hoãn ít hơn trước kỳ thi thứ hai {wohl-2010}. Tự tha thứ dường như làm giảm những cảm xúc tiêu cực gắn với nhiệm vụ, nên lần sau có ít điều để trốn tránh hơn. Điều này không giống với việc bao biện. Nó có nghĩa là thừa nhận sự chậm trễ, chấp nhận rằng nó đã xảy ra, và quay lại với công việc mà không bị mây mù tội lỗi bao phủ.",
+      "heading_fr": "Pardonnez-vous",
+      "body_fr": "Si la procrastination relève de mauvais sentiments, s’en vouloir peut aggraver les choses. Une étude a testé cette idée auprès d’étudiants de première année avant deux examens partiels. Les étudiants ayant déclaré [g:se pardonner] d’avoir procrastiné avant le premier examen ont moins procrastiné avant le second {wohl-2010}. L’auto-pardon semble réduire les émotions négatives associées à la tâche, de sorte qu’il y a moins de choses à fuir la fois suivante. Cela ne revient pas à se chercher des excuses. Cela signifie admettre le délai, accepter qu’il ait eu lieu, et ramener son attention sur le travail sans s’encombrer d’un nuage de culpabilité.",
+      "heading_de": "Verzeihe dir selbst",
+      "body_de": "Wenn es bei Prokrastination um schlechte Gefühle geht, dann kann es die Sache verschlimmern, wenn du dich selbst fertig machst. Eine Studie testete dies mit Erstsemesterstudierenden vor zwei Zwischenprüfungen. Studierende, die angaben, sich [g:selbst zu verzeihen], weil sie vor der ersten Prüfung prokrastiniert hatten, prokrastinierten vor der zweiten weniger {wohl-2010}. Selbstergebung scheint die negativen Gefühle zu reduzieren, die mit der Aufgabe verbunden sind, sodass es beim nächsten Mal weniger gibt, dem man entkommen muss. Das ist nicht dasselbe wie Ausreden zu finden. Es bedeutet, das Aufschieben einzugestanden, zu akzeptieren, dass es passiert ist, und die Aufmerksamkeit ohne eine Wolke aus Schuldgefühlen wieder der Arbeit zuzuwenden.",
+      "heading_es": "Perdónate a ti mismo",
+      "body_es": "Si la procrastinación tiene que ver con los malos sentimientos, castigarte a ti mismo puede empeorarla. Un estudio probó esto con estudiantes de primer año antes de dos exámenes parciales. Los estudiantes que informaron [g:perdonarse a sí mismos] por procrastinar antes del primer examen procrastinaron menos antes del segundo {wohl-2010}. El autocastigo o perdón parece reducir los sentimientos negativos unidos a la tarea, por lo que hay menos de qué escapar la próxima vez. Esto no es lo mismo que poner excusas. Significa admitir la demora, aceptar que ocurrió y volver a centrar la atención en el trabajo sin una nube de culpa."
     },
     {
       "heading_en": "A plan quiets the mind",
       "heading_vi": "Một kế hoạch làm tâm trí lắng lại",
       "body_en": "Unfinished tasks tend to nag at us, popping into our thoughts when we try to focus on something else. Experiments by E. J. Masicampo and Roy Baumeister found a simple fix: making a [g:specific plan] for the unfinished goal. When people wrote down exactly when, where and how they would deal with a task, the intrusive thoughts largely disappeared, and they performed better on other tasks, even though they had not done any of the work yet {masicampo-2011}. The brain seems to relax once it trusts that a task has a time and a place.",
-      "body_vi": "Những việc dang dở thường cứ day dứt, chen vào suy nghĩ khi ta cố tập trung vào việc khác. Các thí nghiệm của E. J. Masicampo và Roy Baumeister tìm ra một cách xử lý đơn giản: lập một [g:kế hoạch cụ thể] cho mục tiêu còn dang dở. Khi người tham gia viết ra chính xác họ sẽ xử lý một việc vào lúc nào, ở đâu và bằng cách nào, những suy nghĩ chen ngang phần lớn biến mất, và họ làm các việc khác tốt hơn, dù chưa hề bắt tay vào việc kia {masicampo-2011}. Bộ não dường như thả lỏng khi tin rằng một việc đã có thời gian và địa điểm của nó."
+      "body_vi": "Những việc dang dở thường cứ day dứt, chen vào suy nghĩ khi ta cố tập trung vào việc khác. Các thí nghiệm của E. J. Masicampo và Roy Baumeister tìm ra một cách xử lý đơn giản: lập một [g:kế hoạch cụ thể] cho mục tiêu còn dang dở. Khi người tham gia viết ra chính xác họ sẽ xử lý một việc vào lúc nào, ở đâu và bằng cách nào, những suy nghĩ chen ngang phần lớn biến mất, và họ làm các việc khác tốt hơn, dù chưa hề bắt tay vào việc kia {masicampo-2011}. Bộ não dường như thả lỏng khi tin rằng một việc đã có thời gian và địa điểm của nó.",
+      "heading_fr": "Un plan apaise l’esprit",
+      "body_fr": "Les tâches inachevées ont tendance à nous tarabuster, resurgissant dans nos pensées lorsque nous essayons de nous concentrer sur autre chose. Des expériences menées par E. J. Masicampo et Roy Baumeister ont mis en évidence une solution simple : élaborer un [g:plan précis] pour l’objectif inachevé. Lorsque les participants ont noté exactement quand, où et comment ils traiteraient une tâche, les pensées intrusives ont largement disparu, et ils ont obtenu de meilleurs résultats sur d’autres tâches, bien qu’ils n’aient encore rien réalisé {masicampo-2011}. Le cerveau semble se détendre dès qu’il a l’assurance qu’une tâche a un moment et un lieu attribués.",
+      "heading_de": "Ein Plan beruhigt den Geist",
+      "body_de": "Unvollendete Aufgaben neigen dazu, uns zu plagen und in unseren Gedanken aufzutauchen, wenn wir versuchen, uns auf etwas anderes zu konzentrieren. Experimente von E. J. Masicampo und Roy Baumeister fanden eine einfache Lösung: das Erstellen eines [g:spezifischen Plans] für das unvollendete Ziel. Als die Leute genau aufschrieben, wann, wo und wie sie eine Aufgabe angehen würden, verschwanden die aufdringlichen Gedanken größtenteils und sie schnitten bei anderen Aufgaben besser ab, obwohl sie noch keine Arbeit erledigt hatten {masicampo-2011}. Das Gehirn scheint sich zu entspannen, sobald es darauf vertraut, dass eine Aufgabe eine Zeit und einen Ort hat.",
+      "heading_es": "Un plan aquieta la mente",
+      "body_es": "Las tareas inacabadas tienden a acosarnos, apareciendo en nuestros pensamientos cuando intentamos concentrarnos en otra cosa. Experimentos de E. J. Masicampo y Roy Baumeister encontraron una solución sencilla: hacer un [g:plan específico] para la meta inacabada. Cuando las personas escribieron exactamente cuándo, dónde y cómo abordarían una tarea, los pensamientos intrusivos desaparecieron en gran medida y rindieron mejor en otras tareas, a pesar de no haber hecho nada del trabajo todavía {masicampo-2011}. El cerebro parece relajarse una vez que confía en que una tarea tiene un momento y un lugar."
     },
     {
       "heading_en": "Make starting easy",
       "heading_vi": "Làm cho việc bắt đầu thật dễ",
       "body_en": "Since the hardest moment is usually the start, make the first step [y:almost too small to avoid]: open the document and write one sentence, or read one page. Once you begin, the task often feels less unpleasant than you expected. Turn vague tasks into concrete ones, because 'work on the report' invites delay while 'write the introduction paragraph' does not. Bring rewards closer by breaking big goals into small deadlines. Reduce temptations by putting your phone out of reach. And when you do slip, treat yourself as you would a friend: [g:notice it, forgive it, start again].",
-      "body_vi": "Vì khoảnh khắc khó nhất thường là lúc bắt đầu, hãy khiến bước đầu tiên [y:nhỏ đến mức khó mà né tránh]: mở tài liệu và viết một câu, hoặc đọc một trang. Khi đã bắt đầu, công việc thường bớt khó chịu hơn bạn nghĩ. Biến những việc mơ hồ thành việc cụ thể, vì 'làm báo cáo' dễ khiến ta trì hoãn còn 'viết đoạn mở đầu' thì không. Kéo phần thưởng lại gần bằng cách chia mục tiêu lớn thành nhiều hạn chót nhỏ. Giảm cám dỗ bằng cách để điện thoại ngoài tầm với. Và khi lỡ trượt, hãy đối xử với bản thân như với một người bạn: [g:nhận ra, tha thứ, bắt đầu lại]."
+      "body_vi": "Vì khoảnh khắc khó nhất thường là lúc bắt đầu, hãy khiến bước đầu tiên [y:nhỏ đến mức khó mà né tránh]: mở tài liệu và viết một câu, hoặc đọc một trang. Khi đã bắt đầu, công việc thường bớt khó chịu hơn bạn nghĩ. Biến những việc mơ hồ thành việc cụ thể, vì 'làm báo cáo' dễ khiến ta trì hoãn còn 'viết đoạn mở đầu' thì không. Kéo phần thưởng lại gần bằng cách chia mục tiêu lớn thành nhiều hạn chót nhỏ. Giảm cám dỗ bằng cách để điện thoại ngoài tầm với. Và khi lỡ trượt, hãy đối xử với bản thân như với một người bạn: [g:nhận ra, tha thứ, bắt đầu lại].",
+      "heading_fr": "Faciliter le démarrage",
+      "body_fr": "Puisque le moment le plus difficile est généralement le début, rendez la première étape [y:presque trop infime pour être évitée] : ouvrez le document et écrivez une seule phrase, ou lisez une seule page. Une fois que vous commencez, la tâche paraît souvent moins désagréable que prévu. Transformez les tâches vagues en actions concrètes, car « travailler sur le rapport » incite au report tandis que « rédiger le paragraphe d’introduction » ne le fait pas. Rapprochez les récompenses en subdivisant les grands objectifs en petits délais. Réduisez les tentations en éloignant votre téléphone. Et si vous flanchez, traitez-vous comme vous le feriez avec un ami : [g:constatez-le, pardonnez-le, recommencez].",
+      "heading_de": "Das Starten leicht machen",
+      "body_de": "Da der schwierigste Moment meist der Beginn ist, mache den ersten Schritt [y:fast zu klein, um ihn zu vermeiden]: Öffne das Dokument und schreibe einen Satz oder lies eine Seite. Sobald du beginnst, fühlt sich die Aufgabe oft weniger unangenehm an als erwartet. Mache aus vagen Aufgaben konkrete, denn „am Bericht arbeiten“ lädt zum Aufschieben ein, während „den Einleitungsabschnitt schreiben“ das nicht tut. Bringe Belohnungen näher, indem du große Ziele in kleine Fristen unterteilst. Reduziere Versuchungen, indem du dein Smartphone außer Reichweite legst. Und wenn du doch abrutschst, behandle dich so, wie du einen Freund behandeln würdest: [g:Bemerke es, verzeihe es, beginne von vorn].",
+      "heading_es": "Haz que empezar sea fácil",
+      "body_es": "Dado que el momento más difícil suele ser el inicio, haz que el primer paso sea [y:casi demasiado pequeño para evitarlo]: abre el documento y escribe una frase, o lee una página. Una vez que empiezas, la tarea suele parecer menos desagradable de lo esperado. Convierte las tareas vagas en concretas, porque «trabajar en el informe» invita a la demora, mientras que «escribir el párrafo de introducción» no. Acerca las recompensas dividiendo las grandes metas en pequeños plazos. Reduce las tentaciones alejando tu teléfono. Y cuando falles, trátate como lo harías con un amigo: [g:nótalo, perdónalo, empieza de nuevo]."
     }
   ],
   "keyPoint": {
     "en": "Procrastination is like [p:borrowing calm from your future self] at a high interest rate. Instead of waiting to feel ready, shrink the first step until it is easy, write down *when and where* you will do it, and forgive yourself quickly when you slip.",
-    "vi": "Trì hoãn giống như [p:vay sự bình yên từ bản thân tương lai] với lãi suất cao. Thay vì chờ đến lúc thấy sẵn sàng, hãy thu nhỏ bước đầu tiên cho tới khi nó thật dễ, ghi ra *khi nào và ở đâu* bạn sẽ làm, và nhanh chóng tha thứ cho bản thân khi lỡ trượt."
+    "vi": "Trì hoãn giống như [p:vay sự bình yên từ bản thân tương lai] với lãi suất cao. Thay vì chờ đến lúc thấy sẵn sàng, hãy thu nhỏ bước đầu tiên cho tới khi nó thật dễ, ghi ra *khi nào và ở đâu* bạn sẽ làm, và nhanh chóng tha thứ cho bản thân khi lỡ trượt.",
+    "fr": "La procrastination revient à [p:emprunter du calme à votre futur moi] à un taux d'intérêt élevé. Au lieu d'attendre de vous sentir prêt, réduisez la première étape jusqu'à ce qu'elle devienne facile, écrivez *quand et où* vous l'accomplirez, et pardonnez-vous rapidement en cas de faux pas.",
+    "de": "Prokrastination ist wie das [p:Ausleihen von Ruhe bei deinem zukünftigen Selbst] zu einem hohen Zinssatz. Anstatt darauf zu warten, sich bereit zu fühlen, verkleinere den ersten Schritt, bis er leicht fällt, schreibe auf, *wann und wo* du es tun wirst, und verzeihe dir schnell, wenn du abrutschst.",
+    "es": "La procrastinación es como [p:pedir prestada la calma a tu futuro del mañana] a un alto tipo de interés. En lugar de esperar a sentirte preparado, reduce el primer paso hasta que sea fácil, anota *cuándo y dónde* lo harás y perdónate rápidamente cuando falles."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Chọn một việc bạn đang né tránh và gọi tên cảm giác nó mang lại, như chán nản hay lo lắng.",
       "Ghi ra chính xác khi nào và ở đâu bạn sẽ làm bước đầu tiên dài hai phút của việc đó.",
       "Lần tới khi trì hoãn, hãy nói với bản thân điều bạn sẽ nói với một người bạn, rồi bắt đầu lại."
+    ],
+    "fr": [
+      "Choisissez une tâche que vous évitez et nommez le sentiment qu'elle vous procure, tel que l'ennui ou l'inquiétude.",
+      "Notez précisément quand et où vous réaliserez sa première étape de deux minutes.",
+      "La prochaine fois que vous tarderez, dites-vous ce que vous diriez à un ami, puis recommencez."
+    ],
+    "de": [
+      "Wähle eine Aufgabe, die du vermeidest, und benenne das Gefühl, das sie dir gibt, wie Langeweile oder Sorge.",
+      "Schreibe genau auf, wann und wo du deinen ersten zweiminütigen Schritt machen wirst.",
+      "Das nächste Mal, wenn du aufschiebst, sage dir das, was du zu einem Freund sagen würdest, und beginne dann von vorn."
+    ],
+    "es": [
+      "Elige una tarea que estés evitando y nombra el sentimiento que te produce, como aburrimiento o preocupación.",
+      "Anota exactamente cuándo y dónde darás su primer paso de dos minutos.",
+      "La próxima vez que te demores, dite a ti mismo lo que le dirías a un amigo y luego vuelve a empezar."
     ]
   },
   "references": [
@@ -113,7 +179,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/Lj1S1_KD61k",
     "wide": "https://images.unsplash.com/photo-1416339698674-4f118dd3388b?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzUxMjA2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@ugmonk?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@ugmonk?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "/covers/video/why-we-procrastinate.mp4",
+      "wide": "/covers/video/why-we-procrastinate-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-380917/"
+    }
   },
   "origin": {
     "group": 4,
@@ -125,5 +197,64 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZAAdpKRFAaQMaXeLGnZNGADOE8RmUxV705Muz+B39aRZk3g7lqw5Ex4YFDMQKlB4Wpbn8tG0B05ivW3+fdaSDw5W4DEGlzZ+sEkAh3UmMkkMWZLCqR9/iKTZhr0Ab/6bxyen3UbC1yiSnJ1urU/E7cs0r1h3S79y80Sv/o4pjpErQM7ePP+ZrdqOkcgE2eYmQ7f8ykYOBCjN9VoWzOLSe0BU2uA3rgnbFQSP5dGeCiD767tE+4HXY5S2HgAA",
-  "dominant": "#4a4b43"
+  "dominant": "#4a4b43",
+  "glossary": {
+    "en": {
+      "piers steel": "A psychologist who studied procrastination and combined hundreds of research studies.",
+      "chronic": "Lasting a long time or happening repeatedly, affecting work, health, and finances.",
+      "unpleasant": "Causing discomfort, dislike, or negative feelings.",
+      "impulsive": "Acting suddenly without thinking carefully about the consequences.",
+      "fuschia sirois": "A researcher who argues that procrastination is short-term mood repair.",
+      "timothy pychyl": "A researcher who studies procrastination alongside Fuschia Sirois.",
+      "short-term mood repair": "Using avoidance to quickly feel better by escaping a bad feeling.",
+      "e. j. masicampo": "A researcher who experimented with making specific plans for unfinished goals.",
+      "roy baumeister": "A researcher who studied how specific plans make intrusive thoughts disappear."
+    },
+    "vi": {
+      "trì hoãn": "Hành động tự nguyện hoãn lại việc phải làm dù biết sẽ chịu thiệt.",
+      "bốc đồng": "Tính cách dễ hành động theo cảm xúc nhất thời và dễ bị phân tâm.",
+      "bản thân tương lai": "Hình ảnh chính mình trong tương lai phải gánh chịu hậu quả hiện tại.",
+      "quản lý cảm xúc": "Khả năng nhận biết và điều chỉnh các cảm xúc tiêu cực của bản thân.",
+      "tự tha thứ": "Việc chấp nhận lỗi lầm và thả lỏng cảm giác tội lỗi sau khi trì hoãn.",
+      "kế hoạch cụ thể": "Bản ghi rõ thời gian, địa điểm và cách thức thực hiện một mục tiêu.",
+      "hạn chót": "Mốc thời gian cuối cùng phải hoàn thành một công việc nào đó.",
+      "nhẹ nhõm tức thì": "Cảm giác dễ chịu ngay lập tức khi tránh được một việc khó khăn."
+    },
+    "fr": {
+      "procrastination": "Le fait de reporter volontairement une action prévue malgré les conséquences négatives attendues.",
+      "piers steel": "Psychologue ayant démontré que la procrastination est liée aux émotions plutôt qu'au temps.",
+      "fuschia sirois": "Chercheuse qui étudie la procrastination comme une réparation de l'humeur à court terme.",
+      "timothy pychyl": "Chercheur associé aux travaux sur la gestion des émotions dans la procrastination.",
+      "auto-pardon": "Action de se pardonner pour réduire la culpabilité et la procrastination future.",
+      "e. j. masicampo": "Chercheur ayant étudié l'impact des plans précis sur les pensées intrusives.",
+      "roy baumeister": "Psychologue ayant collaboré sur les recherches concernant la planification des objectifs."
+    },
+    "de": {
+      "prokrastination": "Das freiwillige Aufschieben von beabsichtigten Handlungen trotz negativer Konsequenzen.",
+      "piers steel": "Ein Psychologe, der die Ursachen und Muster der menschlichen Prokrastination erforschte.",
+      "impulsiv": "Handelnd aus dem Moment heraus, leicht ablenkbar und anfällig für spontane Reize.",
+      "kurzfristige stimmungsreparatur": "Das Vermeiden von Aufgaben, um augenblicklich negative Gefühle oder Stress zu lindern.",
+      "fuschia sirois": "Eine Forscherin, die den Zusammenhang zwischen Prokrastination und emotionaler Bewältigung untersucht.",
+      "e. j. masicampo": "Ein Forscher, der zeigte, dass konkrete Pläne aufdringliche Gedanken an unerledigte Aufgaben stoppen."
+    },
+    "es": {
+      "procrastinación": "Acción de retrasar voluntariamente tareas o decisiones importantes a pesar de saber que habrá consecuencias negativas.",
+      "impulsivas": "Personas que actúan de manera precipitada guiadas por estímulos inmediatos en lugar de por la reflexión.",
+      "reparación del estado de ánimo": "Intento inconsciente de aliviar emociones negativas inmediatas mediante la evitación de aquello que las provoca.",
+      "alivio instantáneo": "Sensación de bienestar momentáneo que se obtiene al dejar de hacer o posponer una actividad estresante.",
+      "plan específico": "Estrategia concreta que define de antemano el momento, el lugar y el método para realizar una tarea.",
+      "pensamientos intrusivos": "Ideas o recuerdos recurrentes sobre tareas pendientes que interrumpen la concentración en el momento presente."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

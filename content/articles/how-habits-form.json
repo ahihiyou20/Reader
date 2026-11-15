@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "How habits really form, and why 21 days is a myth",
-    "vi": "Thói quen thực sự hình thành thế nào, và vì sao '21 ngày' là chuyện hoang đường"
+    "vi": "Thói quen thực sự hình thành thế nào, và vì sao '21 ngày' là chuyện hoang đường",
+    "fr": "Comment les habitudes se forment vraiment, et pourquoi 21 jours est un mythe",
+    "de": "Wie Gewohnheiten wirklich entstehen und warum 21 Tage ein Mythos sind",
+    "es": "Cómo se forman realmente los hábitos y por qué los 21 días son un mito"
   },
   "hook": {
     "en": "You may have heard that it takes 21 days to form a habit. It is a comforting number, but research tells a messier and more useful story. Habits are not built by willpower or by counting days. They grow from [p:repeating the same action in the same situation] until the situation starts the action for you.",
-    "vi": "Có thể bạn từng nghe rằng cần 21 ngày để hình thành một thói quen. Đó là một con số dễ chịu, nhưng nghiên cứu kể một câu chuyện phức tạp hơn và hữu ích hơn. Thói quen không được xây bằng ý chí hay bằng việc đếm ngày. Chúng lớn lên từ [p:việc lặp lại cùng một hành động trong cùng một hoàn cảnh] cho tới khi chính hoàn cảnh tự khởi động hành động thay bạn."
+    "vi": "Có thể bạn từng nghe rằng cần 21 ngày để hình thành một thói quen. Đó là một con số dễ chịu, nhưng nghiên cứu kể một câu chuyện phức tạp hơn và hữu ích hơn. Thói quen không được xây bằng ý chí hay bằng việc đếm ngày. Chúng lớn lên từ [p:việc lặp lại cùng một hành động trong cùng một hoàn cảnh] cho tới khi chính hoàn cảnh tự khởi động hành động thay bạn.",
+    "fr": "Vous avez peut-être entendu dire qu'il faut 21 jours pour former une habitude. C'est un chiffre rassurant, mais la recherche raconte une histoire plus complexe et plus utile. Les habitudes ne se construisent pas par la volonté ou en comptant les jours. Elles naissent en [p:répétant la même action dans la même situation] jusqu'à ce que la situation déclenche l'action pour vous.",
+    "de": "Du hast vielleicht gehört, dass es 21 Tage dauert, um eine Gewohnheit zu bilden. Das ist eine beruhigende Zahl, aber die Forschung erzählt eine kompliziertere und nützlichere Geschichte. Gewohnheiten werden nicht durch Willenskraft oder das Zählen von Tagen aufgebaut. Sie wachsen durch [p:wiederholte Ausführung derselben Handlung in derselben Situation], bis die Situation die Handlung für dich startet.",
+    "es": "Es posible que hayas oído que se necesitan 21 días para formar un hábito. Es una cifra reconfortante, pero la investigación cuenta una historia más compleja y útil. Los hábitos no se construyen con fuerza de voluntad ni contando días. Surgen de [p:repetir la misma acción en la misma situación] hasta que la situación desencadena la acción por ti."
   },
   "sections": [
     {
       "heading_en": "Much of life runs on autopilot",
       "heading_vi": "Phần lớn cuộc sống chạy chế độ tự động",
       "body_en": "How much of what we do each day is habit? In one study, people carried diaries and noted what they were doing and thinking at random moments. Around [y:43% of their actions] were performed almost every day in the same place, often while they were thinking about something else {wood-2002}. Brushing teeth, checking a phone, taking the same route home: these behaviours happen with little conscious thought. That is not a weakness. Habits free our attention for new problems. But it also means that changing our behaviour is less about big decisions and more about the small routines we repeat.",
-      "body_vi": "Bao nhiêu phần trong những việc ta làm mỗi ngày là thói quen? Trong một nghiên cứu, người tham gia mang theo nhật ký và ghi lại mình đang làm và nghĩ gì vào những thời điểm ngẫu nhiên. Khoảng [y:43% hành động] của họ được thực hiện gần như mỗi ngày ở cùng một nơi, thường là trong lúc họ đang nghĩ về chuyện khác {wood-2002}. Đánh răng, xem điện thoại, đi cùng một con đường về nhà: những hành vi này diễn ra mà gần như không cần suy nghĩ. Đó không phải là điểm yếu. Thói quen giải phóng sự chú ý để ta xử lý những vấn đề mới. Nhưng điều đó cũng có nghĩa là thay đổi hành vi ít liên quan đến những quyết định lớn mà liên quan nhiều hơn đến những nếp nhỏ ta lặp lại."
+      "body_vi": "Bao nhiêu phần trong những việc ta làm mỗi ngày là thói quen? Trong một nghiên cứu, người tham gia mang theo nhật ký và ghi lại mình đang làm và nghĩ gì vào những thời điểm ngẫu nhiên. Khoảng [y:43% hành động] của họ được thực hiện gần như mỗi ngày ở cùng một nơi, thường là trong lúc họ đang nghĩ về chuyện khác {wood-2002}. Đánh răng, xem điện thoại, đi cùng một con đường về nhà: những hành vi này diễn ra mà gần như không cần suy nghĩ. Đó không phải là điểm yếu. Thói quen giải phóng sự chú ý để ta xử lý những vấn đề mới. Nhưng điều đó cũng có nghĩa là thay đổi hành vi ít liên quan đến những quyết định lớn mà liên quan nhiều hơn đến những nếp nhỏ ta lặp lại.",
+      "heading_fr": "Une grande partie de la vie fonctionne en pilote automatique",
+      "body_fr": "Quelle part de ce que nous faisons chaque jour relève de l'habitude ? Dans une étude, des participants ont tenu des journaux et noté ce qu'ils faisaient et pensaient à des moments aléatoires. Environ [y:43 % de leurs actions] étaient réalisées presque chaque jour au même endroit, souvent alors qu'ils pensaient à autre chose {wood-2002}. Se brosser les dents, consulter son téléphone, emprunter le même trajet pour rentrer : ces comportements se produisent avec peu de conscience. Ce n'est pas une faiblesse. Les habitudes libèrent notre attention pour de nouveaux problèmes. Mais cela signifie aussi que changer notre comportement dépend moins de grandes décisions que des petites routines que nous répétons.",
+      "heading_de": "Ein Großteil des Lebens läuft auf Autopilot",
+      "body_de": "Wie viel von dem, was wir täglich tun, ist Gewohnheit? In einer Studie trugen Menschen Tagebücher und notierten in zufälligen Momenten, was sie taten und dachten. Rund [y:43 % ihrer Handlungen] wurden fast jeden Tag am selben Ort ausgeführt, oft während sie an etwas anderes dachten {wood-2002}. Zähneputzen, das Smartphone überprüfen, denselben Weg nach Hause nehmen: Diese Verhaltensweisen geschehen mit wenig bewusstem Nachdenken. Das ist keine Schwäche. Gewohnheiten geben unsere Aufmerksamkeit für neue Probleme frei. Aber es bedeutet auch, dass die Änderung unseres Verhaltens weniger mit großen Entscheidungen als mit den kleinen Routinen zu tun hat, die wir wiederholen.",
+      "heading_es": "Gran parte de la vida funciona con piloto automático",
+      "body_es": "¿Cuánto de lo que hacemos cada día es un hábito? En un estudio, las personas llevaban diarios y anotaban lo que hacían y pensaban en momentos aleatorios. Alrededor del [y:43% de sus acciones] se realizaban casi todos los días en el mismo lugar, a menudo mientras pensaban en otra cosa {wood-2002}. Cepillarse los dientes, mirar el teléfono, tomar la misma ruta a casa: estos comportamientos ocurren con escaso pensamiento consciente. Eso no es una debilidad. Los hábitos liberan nuestra atención para nuevos problemas. Pero también significa que cambiar nuestro comportamiento depende menos de grandes decisiones y más de las pequeñas rutinas que repetimos."
     },
     {
       "heading_en": "What a habit actually is",
       "heading_vi": "Thói quen thực chất là gì",
       "body_en": "Psychologists define a **habit** as an action that is triggered automatically by a cue in the situation, such as a place, a time of day or something that came just before {wood-neal-2007}. At first, you act because you have a goal: you go for a run because you want to be fitter. With repetition, your brain links the action to the cues around it. Eventually the cue alone, like putting on your shoes after work, is enough to [g:start the behaviour], even if you are not thinking about your goal at all. The goal starts the habit, but the context keeps it going.",
-      "body_vi": "Các nhà tâm lý học định nghĩa **thói quen** là một hành động được kích hoạt tự động bởi một tín hiệu trong hoàn cảnh, như một địa điểm, một thời điểm trong ngày hay một việc vừa xảy ra trước đó {wood-neal-2007}. Ban đầu, bạn hành động vì có mục tiêu: bạn chạy bộ vì muốn khoẻ hơn. Qua nhiều lần lặp lại, bộ não gắn hành động với các tín hiệu xung quanh. Cuối cùng, chỉ riêng tín hiệu, như việc xỏ giày sau giờ làm, cũng đủ để [g:khởi động hành vi], dù bạn chẳng hề nghĩ tới mục tiêu. Mục tiêu khởi đầu thói quen, nhưng hoàn cảnh mới là thứ duy trì nó."
+      "body_vi": "Các nhà tâm lý học định nghĩa **thói quen** là một hành động được kích hoạt tự động bởi một tín hiệu trong hoàn cảnh, như một địa điểm, một thời điểm trong ngày hay một việc vừa xảy ra trước đó {wood-neal-2007}. Ban đầu, bạn hành động vì có mục tiêu: bạn chạy bộ vì muốn khoẻ hơn. Qua nhiều lần lặp lại, bộ não gắn hành động với các tín hiệu xung quanh. Cuối cùng, chỉ riêng tín hiệu, như việc xỏ giày sau giờ làm, cũng đủ để [g:khởi động hành vi], dù bạn chẳng hề nghĩ tới mục tiêu. Mục tiêu khởi đầu thói quen, nhưng hoàn cảnh mới là thứ duy trì nó.",
+      "heading_fr": "Ce qu'est réellement une habitude",
+      "body_fr": "Les psychologues définissent une **habitude** comme une action déclenchée automatiquement par un indice dans la situation, tel qu'un lieu, un moment de la journée ou un événement qui vient de se produire {wood-neal-2007}. Au début, vous agissez par objectif : vous allez courir parce que vous voulez être en meilleure forme. Avec la répétition, votre cerveau associe l'action aux indices environnants. Finalement, l'indice seul, comme enfiler ses chaussures après le travail, suffit à [g:déclencher le comportement], même si vous ne pensez plus du tout à votre objectif. L'objectif initie l'habitude, mais le contexte la fait durer.",
+      "heading_de": "Was eine Gewohnheit tatsächlich ist",
+      "body_de": "Psychologen definieren eine **Gewohnheit** als eine Handlung, die durch einen Reiz in der Situation automatisch ausgelöst wird, wie etwa einen Ort, eine Tageszeit oder etwas, das kurz zuvor geschah {wood-neal-2007}. Zuerst handelst du, weil du ein Ziel hast: Du gehst laufen, weil du fitter werden möchtest. Durch Wiederholung verknüpft dein Gehirn die Handlung mit den Reizen in der Umgebung. Schließlich reicht der Reiz allein, wie das Anziehen der Schuhe nach der Arbeit, aus, um [g:das Verhalten zu starten], selbst wenn du überhaupt nicht mehr über dein Ziel nachdenkst. Das Ziel setzt die Gewohnheit in Gang, aber der Kontext hält sie aufrecht.",
+      "heading_es": "Qué es realmente un hábito",
+      "body_es": "Los psicólogos definen un **hábito** como una acción desencadenada automáticamente por una señal en la situación, como un lugar, una hora del día o algo que acaba de suceder {wood-neal-2007}. Al principio, actúas porque tienes un objetivo: sales a correr porque quieres estar más en forma. Con la repetición, tu cerebro vincula la acción con las señales que la rodean. Con el tiempo, la señal por sí sola, como ponerse los zapatos después del trabajo, basta para [g:iniciar el comportamiento], incluso si no estás pensando en absoluto en tu objetivo. El objetivo pone en marcha el hábito, pero el contexto lo mantiene."
     },
     {
       "heading_en": "Stale popcorn",
       "heading_vi": "Bỏng ngô ôi",
       "body_en": "A memorable experiment shows how strong this link can be. Researchers gave cinema-goers either fresh popcorn or popcorn that was a week old. People who did not usually eat popcorn at the cinema ate less of the stale kind, as you would expect. But people with a strong popcorn habit ate [p:just as much stale popcorn as fresh] {neal-2011}. Their hands kept moving because the cinema cued the habit, not because the food was good. The habit weakened when the setting changed: in a meeting room, or when people ate with their non-dominant hand, they ate less of the stale popcorn.",
-      "body_vi": "Một thí nghiệm đáng nhớ cho thấy mối liên kết này mạnh đến mức nào. Các nhà nghiên cứu phát cho khán giả rạp phim hoặc bỏng ngô mới, hoặc bỏng ngô đã để một tuần. Những người không hay ăn bỏng ngô ở rạp ăn ít bỏng ngô ôi hơn, đúng như dự đoán. Nhưng những người có thói quen ăn bỏng ngô mạnh lại ăn [p:bỏng ngô ôi nhiều y như bỏng ngô mới] {neal-2011}. Tay họ vẫn tiếp tục bốc vì rạp phim kích hoạt thói quen, chứ không phải vì món ăn ngon. Thói quen yếu đi khi bối cảnh thay đổi: trong phòng họp, hoặc khi phải ăn bằng tay không thuận, họ ăn ít bỏng ngô ôi hơn."
+      "body_vi": "Một thí nghiệm đáng nhớ cho thấy mối liên kết này mạnh đến mức nào. Các nhà nghiên cứu phát cho khán giả rạp phim hoặc bỏng ngô mới, hoặc bỏng ngô đã để một tuần. Những người không hay ăn bỏng ngô ở rạp ăn ít bỏng ngô ôi hơn, đúng như dự đoán. Nhưng những người có thói quen ăn bỏng ngô mạnh lại ăn [p:bỏng ngô ôi nhiều y như bỏng ngô mới] {neal-2011}. Tay họ vẫn tiếp tục bốc vì rạp phim kích hoạt thói quen, chứ không phải vì món ăn ngon. Thói quen yếu đi khi bối cảnh thay đổi: trong phòng họp, hoặc khi phải ăn bằng tay không thuận, họ ăn ít bỏng ngô ôi hơn.",
+      "heading_fr": "Du pop-corn rassis",
+      "body_fr": "Une expérience mémorable montre la force de ce lien. Des chercheurs ont donné à des spectateurs de cinéma soit du pop-corn frais, soit du pop-corn vieux d'une semaine. Les personnes qui ne mangeaient pas habituellement de pop-corn au cinéma en ont mangé moins de la variété rassie, comme on pouvait s'y attendre. Mais les personnes ayant une forte habitude du pop-corn en ont mangé [p:autant du rassis que du frais] {neal-2011}. Leurs mains continuaient de bouger parce que le cinéma déclenchait l'habitude, et non parce que la nourriture était bonne. L'habitude s'affaiblissait lorsque le cadre changeait : dans une salle de réunion ou lorsqu'ils mangeaient avec leur main non dominante, ils consommaient moins de pop-corn rassis.",
+      "heading_de": "Abgestandenes Popcorn",
+      "body_de": "Ein einprägsames Experiment zeigt, wie stark diese Verknüpfung sein kann. Forscher gaben Kinobesuchern entweder frisches Popcorn oder solches, das eine Woche alt war. Menschen, die normalerweise kein Popcorn im Kino aßen, aßen erwartungsgemäß weniger von der alten Sorte. Aber Menschen mit einer starken Popcorn-Gewohnheit aßen [p:genauso viel abgestandenes wie frisches Popcorn] {neal-2011}. Ihre Hände bewegten sich weiter, weil das Kino die Gewohnheit auslöste, nicht weil das Essen gut war. Die Gewohnheit schwächte sich ab, als sich die Umgebung änderte: in einem Besprechungsraum oder wenn die Menschen mit ihrer ungewohnten Hand aßen, verzehrten sie weniger von dem alten Popcorn.",
+      "heading_es": "Palomitas de maíz rancias",
+      "body_es": "Un experimento memorable muestra cuán fuerte puede ser este vínculo. Los investigadores dieron a los espectadores de cine palomitas frescas o palomitas de una semana de antigüedad. Las personas que no solían comer palomitas en el cine comieron menos de las rancias, como cabría esperar. Pero las personas con un fuerte hábito de comer palomitas comieron [p:tantas palomitas rancias como frescas] {neal-2011}. Sus manos seguían moviéndose porque el cine activaba el hábito, no porque la comida fuera buena. El hábito se debilitaba cuando cambiaba el entorno: en una sala de reuniones, o cuando la gente comía con la mano no dominante, comían menos palomitas rancias."
     },
     {
       "heading_en": "Not 21 days, but about 66",
       "heading_vi": "Không phải 21 ngày, mà khoảng 66",
       "body_en": "So how long does it take? In a study at University College London, 96 volunteers chose a new healthy behaviour, such as drinking water with lunch or doing sit-ups after morning coffee, and did it every day in the same situation for 12 weeks. Each day they rated how automatic it felt. On average, it took [y:about 66 days] for the behaviour to reach its peak level of automaticity {lally-2010}. But the range was huge, from 18 days to an estimated 254 days. Simple actions became automatic faster than demanding ones, like exercise.",
-      "body_vi": "Vậy cần bao lâu? Trong một nghiên cứu tại Đại học College London, 96 tình nguyện viên chọn một hành vi lành mạnh mới, như uống nước trong bữa trưa hay gập bụng sau cà phê sáng, và thực hiện mỗi ngày trong cùng một hoàn cảnh suốt 12 tuần. Mỗi ngày, họ đánh giá mức độ tự động của hành vi. Trung bình phải mất [y:khoảng 66 ngày] để hành vi đạt mức tự động cao nhất {lally-2010}. Nhưng khoảng dao động rất lớn, từ 18 ngày đến ước tính 254 ngày. Những hành động đơn giản trở nên tự động nhanh hơn những việc đòi hỏi nhiều công sức, như tập thể dục."
+      "body_vi": "Vậy cần bao lâu? Trong một nghiên cứu tại Đại học College London, 96 tình nguyện viên chọn một hành vi lành mạnh mới, như uống nước trong bữa trưa hay gập bụng sau cà phê sáng, và thực hiện mỗi ngày trong cùng một hoàn cảnh suốt 12 tuần. Mỗi ngày, họ đánh giá mức độ tự động của hành vi. Trung bình phải mất [y:khoảng 66 ngày] để hành vi đạt mức tự động cao nhất {lally-2010}. Nhưng khoảng dao động rất lớn, từ 18 ngày đến ước tính 254 ngày. Những hành động đơn giản trở nên tự động nhanh hơn những việc đòi hỏi nhiều công sức, như tập thể dục.",
+      "heading_fr": "Pas 21 jours, mais environ 66",
+      "body_fr": "Alors, combien de temps cela prend-il ? Dans une étude de l'University College London, 96 volontaires ont choisi un nouveau comportement sain, comme boire de l'eau au déjeuner ou faire des abdos après le café du matin, et l'ont pratiqué chaque jour dans la même situation pendant 12 semaines. Chaque jour, ils ont évalué le degré d'automaticité ressenti. En moyenne, il a fallu [y:environ 66 jours] pour que le comportement atteigne son niveau maximal d'automaticité {lally-2010}. Mais la fourchette était très large, allant de 18 jours à environ 254 jours. Les actions simples devenaient automatiques plus rapidement que les actions exigeantes, comme le sport.",
+      "heading_de": "Nicht 21 Tage, sondern etwa 66",
+      "body_de": "Wie lange dauert es also? In einer Studie am University College London wählten 96 Freiwillige ein neues gesundes Verhalten, wie Wasser zum Mittagessen zu trinken oder nach dem Morgenkaffee Sit-ups zu machen, und taten dies 12 Wochen lang jeden Tag in derselben Situation. Jeden Tag bewerteten sie, wie automatisch es sich anfühlte. Im Durchschnitt dauerte es [y:etwa 66 Tage], bis das Verhalten sein Maximum an Automatisierung erreichte {lally-2010}. Die Spanne war jedoch enorm und reichte von 18 Tagen bis zu geschätzten 254 Tagen. Einfache Handlungen wurden schneller automatisch als anspruchsvollere wie Sport.",
+      "heading_es": "No 21 días, sino unos 66",
+      "body_es": "¿Cuánto tiempo lleva entonces? En un estudio del University College de Londres, 96 voluntarios eligieron un nuevo comportamiento saludable, como beber agua con el almuerzo o hacer abdominales después del café matutino, y lo hicieron todos los días en la misma situación durante 12 semanas. Cada día valoraban cuán automático les parecía. De media, tomó [y:unos 66 días] que el comportamiento alcanzara su nivel máximo de automaticidad {lally-2010}. Pero el margen fue enorme, desde 18 días hasta unos 254 días estimados. Las acciones simples se volvieron automáticas más rápido que las exigentes, como el ejercicio."
     },
     {
       "heading_en": "Missing a day is fine",
       "heading_vi": "Lỡ một ngày cũng không sao",
       "body_en": "The same study contains some good news for anyone who has ever broken a streak. Missing a single day [g:did not seriously harm] the habit-building process {lally-2010}. What mattered was getting back to the routine, not being perfect. This is worth remembering, because many people give up entirely after one slip, telling themselves they have failed. In habit terms, one missed day is a small dip on a long curve. The real risk is not the missed day but the story you tell yourself about it, so the best response is simply to [g:do it again tomorrow].",
-      "body_vi": "Cũng nghiên cứu ấy mang đến tin vui cho bất cứ ai từng đứt chuỗi. Bỏ lỡ một ngày [g:không làm tổn hại đáng kể] quá trình hình thành thói quen {lally-2010}. Điều quan trọng là quay lại nếp cũ, chứ không phải hoàn hảo. Điều này đáng ghi nhớ, vì nhiều người bỏ cuộc hoàn toàn sau một lần trượt, tự nhủ rằng mình đã thất bại. Xét về thói quen, một ngày bỏ lỡ chỉ là một chỗ trũng nhỏ trên một đường cong dài. Rủi ro thật sự không nằm ở ngày bị lỡ mà ở câu chuyện bạn tự kể về nó, nên cách đáp lại tốt nhất đơn giản là [g:ngày mai làm tiếp]."
+      "body_vi": "Cũng nghiên cứu ấy mang đến tin vui cho bất cứ ai từng đứt chuỗi. Bỏ lỡ một ngày [g:không làm tổn hại đáng kể] quá trình hình thành thói quen {lally-2010}. Điều quan trọng là quay lại nếp cũ, chứ không phải hoàn hảo. Điều này đáng ghi nhớ, vì nhiều người bỏ cuộc hoàn toàn sau một lần trượt, tự nhủ rằng mình đã thất bại. Xét về thói quen, một ngày bỏ lỡ chỉ là một chỗ trũng nhỏ trên một đường cong dài. Rủi ro thật sự không nằm ở ngày bị lỡ mà ở câu chuyện bạn tự kể về nó, nên cách đáp lại tốt nhất đơn giản là [g:ngày mai làm tiếp].",
+      "heading_fr": "Manquer un jour n'est pas grave",
+      "body_fr": "La même étude apporte une bonne nouvelle pour quiconque a déjà rompu une série. Manquer un seul jour [g:n'a pas nui gravement] au processus de création d'habitude {lally-2010}. Ce qui comptait, c'était de reprendre la routine, et non d'être parfait. Il est bon de s'en souvenir, car beaucoup de gens abandonnent complètement après un faux pas, se disant qu'ils ont échoué. En matière d'habitudes, un jour manqué est une petite baisse sur une longue courbe. Le vrai risque n'est pas le jour manqué mais l'histoire que l'on se raconte à ce sujet, alors la meilleure réaction est simplement de [g:le refaire demain].",
+      "heading_de": "Einen Tag zu verpassen ist in Ordnung",
+      "body_de": "Dieselbe Studie enthält gute Nachrichten für jeden, der schon einmal eine Serie unterbrochen hat. Einen einzelnen Tag auszulassen [g:schadete dem Prozess des Gewohnheitsaufbaus nicht ernsthaft] {lally-2010}. Wichtig war, zur Routine zurückzukehren, nicht perfekt zu sein. Das sollte man sich merken, denn viele Menschen geben nach einem Ausrutscher völlig auf und reden sich ein, versagt zu haben. In Bezug auf Gewohnheiten ist ein verpasster Tag ein kleiner Durchhänger auf einer langen Kurve. Das eigentliche Risiko ist nicht der verpasste Tag, sondern die Geschichte, die du dir darüber erzählst, weshalb die beste Reaktion einfach ist: [g:tu es morgen wieder].",
+      "heading_es": "Fallar un día no pasa nada",
+      "body_es": "El mismo estudio contiene buenas noticias para cualquiera que alguna vez haya roto una racha. Omitir un solo día [g:no perjudicó gravemente] el proceso de creación de hábitos {lally-2010}. Lo que importaba era volver a la rutina, no ser perfecto. Vale la pena recordarlo, porque muchas personas se rinden por completo tras un tropiezo, diciéndose que han fracasado. En términos de hábitos, un día perdido es una pequeña caída en una curva larga. El verdadero riesgo no es el día perdido, sino la historia que te cuentas al respecto, por lo que la mejor respuesta es simplemente [g:hacerlo de nuevo mañana]."
     },
     {
       "heading_en": "The power of 'if–then'",
       "heading_vi": "Sức mạnh của 'nếu–thì'",
       "body_en": "Since habits grow from cues, one of the best tools is to choose the cue deliberately. Psychologists call this an **implementation intention**: a plan in the form 'If situation X happens, then I will do Y'. For example: 'If I finish my morning coffee, then I will do ten push-ups.' A review of 94 studies found that people who made if–then plans were [g:much more likely] to reach their goals than people who only set the goal {gollwitzer-2006}. The plan works because it hands control from your intentions to the situation, which is exactly how habits operate.",
-      "body_vi": "Vì thói quen lớn lên từ tín hiệu, một trong những công cụ tốt nhất là chủ động chọn tín hiệu. Các nhà tâm lý học gọi đây là **ý định thực thi** (*implementation intention*): một kế hoạch có dạng 'Nếu tình huống X xảy ra, thì tôi sẽ làm Y'. Ví dụ: 'Nếu uống xong cà phê sáng, thì tôi sẽ hít đất mười cái.' Một tổng quan gồm 94 nghiên cứu cho thấy những người lập kế hoạch nếu–thì có khả năng đạt mục tiêu [g:cao hơn hẳn] so với người chỉ đặt ra mục tiêu {gollwitzer-2006}. Kế hoạch này hiệu quả vì nó chuyển quyền điều khiển từ ý định sang hoàn cảnh, đúng như cách thói quen vận hành."
+      "body_vi": "Vì thói quen lớn lên từ tín hiệu, một trong những công cụ tốt nhất là chủ động chọn tín hiệu. Các nhà tâm lý học gọi đây là **ý định thực thi** (*implementation intention*): một kế hoạch có dạng 'Nếu tình huống X xảy ra, thì tôi sẽ làm Y'. Ví dụ: 'Nếu uống xong cà phê sáng, thì tôi sẽ hít đất mười cái.' Một tổng quan gồm 94 nghiên cứu cho thấy những người lập kế hoạch nếu–thì có khả năng đạt mục tiêu [g:cao hơn hẳn] so với người chỉ đặt ra mục tiêu {gollwitzer-2006}. Kế hoạch này hiệu quả vì nó chuyển quyền điều khiển từ ý định sang hoàn cảnh, đúng như cách thói quen vận hành.",
+      "heading_fr": "La puissance du « si... alors »",
+      "body_fr": "Puisque les habitudes naissent d'indices, l'un des meilleurs outils consiste à choisir l'indice délibérément. Les psychologues appellent cela une **intention de mise en œuvre** : un plan sous la forme « Si la situation X se produit, alors je ferai Y ». Par exemple : « Si je finis mon café du matin, alors je ferai dix pompes. » Une analyse de 94 études a révélé que les personnes ayant établi des plans si... alors avaient [g:beaucoup plus de chances] d'atteindre leurs objectifs que celles qui s'étaient contentées de fixer un but {gollwitzer-2006}. Le plan fonctionne parce qu'il transfère le contrôle de vos intentions vers la situation, ce qui correspond exactement au mode de fonctionnement des habitudes.",
+      "heading_de": "Die Macht des Wenn-Dann-Prinzips",
+      "body_de": "Da Gewohnheiten aus Reizen entstehen, besteht eines der besten Werkzeuge darin, den Reiz bewusst zu wählen. Psychologen nennen dies eine **Vorsatzbildung**: einen Plan in der Form „Wenn Situation X eintritt, dann werde ich Y tun“. Zum Beispiel: „Wenn ich meinen Morgenkaffee austrinke, werde ich zehn Liegestütze machen.“ Eine Auswertung von 94 Studien ergab, dass Menschen mit Wenn-Dann-Plänen [g:mit viel höherer Wahrscheinlichkeit] ihre Ziele erreichten als Personen, die sich nur ein Ziel gesetzt hatten {lally-2010}. Der Plan funktioniert, weil er die Kontrolle von deinen Absichten an die Situation übergibt, was genau der Funktionsweise von Gewohnheiten entspricht.",
+      "heading_es": "El poder del 'si-entonces'",
+      "body_es": "Dado que los hábitos surgen de las señales, una de las mejores herramientas es elegir la señal deliberadamente. Los psicólogos llaman a esto una **intención de implementación**: un plan con la forma 'Si ocurre la situación X, entonces haré Y'. Por ejemplo: 'Si termino mi café de la mañana, haré diez flexiones'. Una revisión de 94 estudios descubrió que las personas que hacían planes de si-entonces tenían [g:muchas más probabilidades] de alcanzar sus objetivos que las personas que solo establecían el objetivo {gollwitzer-2006}. El plan funciona porque transfiere el control de tus intenciones a la situación, que es exactamente cómo operan los hábitos."
     },
     {
       "heading_en": "Change the setting, not just yourself",
       "heading_vi": "Thay đổi bối cảnh, không chỉ thay đổi bản thân",
       "body_en": "The popcorn study also explains why bad habits are hard to break by willpower alone: the cue keeps firing. A better strategy is to [y:change the setting]. Keep your phone in another room while you work, put fruit where the biscuits used to be, or lay out your running clothes the night before. Big life changes, like moving house or starting a new job, are good moments to start new habits, because old cues disappear. Building a habit, in short, is less like forcing yourself up a hill and more like slowly [g:digging a channel] that your behaviour will flow along.",
-      "body_vi": "Nghiên cứu bỏng ngô cũng giải thích vì sao khó bỏ thói quen xấu chỉ bằng ý chí: tín hiệu vẫn liên tục kích hoạt. Chiến lược tốt hơn là [y:thay đổi bối cảnh]. Để điện thoại ở phòng khác khi làm việc, đặt trái cây vào chỗ trước đây để bánh quy, hoặc chuẩn bị sẵn đồ chạy bộ từ tối hôm trước. Những thay đổi lớn trong đời, như chuyển nhà hay bắt đầu công việc mới, là thời điểm tốt để tạo thói quen mới, vì những tín hiệu cũ biến mất. Xây dựng thói quen ít giống việc ép mình leo dốc mà giống việc từ từ [g:đào một con kênh] để hành vi của bạn tự chảy theo."
+      "body_vi": "Nghiên cứu bỏng ngô cũng giải thích vì sao khó bỏ thói quen xấu chỉ bằng ý chí: tín hiệu vẫn liên tục kích hoạt. Chiến lược tốt hơn là [y:thay đổi bối cảnh]. Để điện thoại ở phòng khác khi làm việc, đặt trái cây vào chỗ trước đây để bánh quy, hoặc chuẩn bị sẵn đồ chạy bộ từ tối hôm trước. Những thay đổi lớn trong đời, như chuyển nhà hay bắt đầu công việc mới, là thời điểm tốt để tạo thói quen mới, vì những tín hiệu cũ biến mất. Xây dựng thói quen ít giống việc ép mình leo dốc mà giống việc từ từ [g:đào một con kênh] để hành vi của bạn tự chảy theo.",
+      "heading_fr": "Changez le cadre, pas seulement vous-même",
+      "body_fr": "L'étude sur le pop-corn explique également pourquoi les mauvaises habitudes sont difficiles à briser par la seule volonté : l'indice continue d'agir. Une meilleure stratégie consiste à [y:changer le cadre]. Gardez votre téléphone dans une autre pièce pendant que vous travaillez, placez des fruits là où se trouvaient les biscuits, ou préparez vos vêtements de course la veille. Les grands changements de vie, comme un déménagement ou un nouvel emploi, sont de bons moments pour initier de nouvelles habitudes, car les vieux indices disparaissent. En somme, construire une habitude ressemble moins à s'efforcer de gravir une colline qu'à [g:creuser lentement un canal] où votre comportement s'écoulera naturellement.",
+      "heading_de": "Ändere die Umgebung, nicht nur dich selbst",
+      "body_de": "Die Popcorn-Studie erklärt auch, warum schlechte Gewohnheiten allein durch Willenskraft schwer zu durchbrechen sind: Der Reiz feuert immer weiter. Eine bessere Strategie ist es, [y:die Umgebung zu verändern]. Bewahre dein Smartphone während der Arbeit in einem anderen Raum auf, lege Obst dorthin, wo früher die Kekse lagen, oder richte deine Laufsachen am Vorabend her. Große Lebensveränderungen wie ein Umzug oder ein neuer Job sind günstige Momente für neue Gewohnheiten, weil alte Reize verschwinden. Kurz gesagt gleicht der Aufbau einer Gewohnheit weniger dem anstrengenden Hinaufzwingen eines Hügels als dem langsamen [g:Graben eines Kanals], in dem dein Verhalten von selbst fließt.",
+      "heading_es": "Cambia el entorno, no solo a ti mismo",
+      "body_es": "El estudio de las palomitas también explica por qué los malos hábitos son difíciles de romper solo con fuerza de voluntad: la señal sigue disparándose. Una estrategia mejor es [y:cambiar el entorno]. Guarda tu teléfono en otra habitación mientras trabajas, pon la fruta donde solían estar las galletas o deja preparada tu ropa de correr la noche anterior. Los grandes cambios en la vida, como mudarse de casa o empezar un nuevo trabajo, son buenos momentos para iniciar nuevos hábitos, porque las señales antiguas desaparecen. Construir un hábito, en resumen, se parece menos a obligarse a subir una colina y más a [g:cavar lentamente un canal] por el que fluirá tu comportamiento."
     }
   ],
   "keyPoint": {
     "en": "A habit is like [p:a path worn into grass]: it forms where you walk the same way, at the same spot, again and again. Pick one cue you already meet every day, attach one small action to it with an *if–then plan*, and expect it to take about two months, not three weeks.",
-    "vi": "Thói quen giống như [p:lối mòn in trên bãi cỏ]: nó hình thành ở nơi bạn đi cùng một cách, tại cùng một chỗ, hết lần này đến lần khác. Hãy chọn một tín hiệu bạn gặp mỗi ngày, gắn một hành động nhỏ vào nó bằng *kế hoạch nếu–thì*, và chuẩn bị tinh thần mất khoảng hai tháng, chứ không phải ba tuần."
+    "vi": "Thói quen giống như [p:lối mòn in trên bãi cỏ]: nó hình thành ở nơi bạn đi cùng một cách, tại cùng một chỗ, hết lần này đến lần khác. Hãy chọn một tín hiệu bạn gặp mỗi ngày, gắn một hành động nhỏ vào nó bằng *kế hoạch nếu–thì*, và chuẩn bị tinh thần mất khoảng hai tháng, chứ không phải ba tuần.",
+    "fr": "Une habitude ressemble à [p:un sentier tracé dans l'herbe] : elle se forme là où vous marchez de la même façon, au même endroit, encore et encore. Choisissez un indice déjà présent chaque jour, associez-y une petite action avec un *plan si... alors*, et attendez-vous à ce que cela prenne environ deux mois, et non trois semaines.",
+    "de": "Eine Gewohnheit gleicht [p:einem in Gras getretenen Pfad]: Sie entsteht dort, immer wieder am selben Ort und auf dieselbe Weise gegangen wird. Wähle einen Reiz, dem du ohnehin täglich begegnest, verknüpfe ihn mit einer kleinen Handlung über einen *Wenn-Dann-Plan* und rechne mit rund zwei Monaten statt drei Wochen Dauer.",
+    "es": "Un hábito es como [p:un sendero marcado en la hierba]: se forma donde caminas de la misma manera, en el mismo lugar, una y otra vez. Elige una señal con la que ya te encuentres todos los días, asóciele una pequeña acción con un *plan de si-entonces* y espera que tarde unos dos meses, no tres semanas."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Viết một kế hoạch nếu–thì cho một thói quen bạn muốn có, dùng một tín hiệu bạn gặp mỗi ngày.",
       "Loại bỏ một tín hiệu của thói quen bạn muốn bỏ, chẳng hạn chuyển một ứng dụng khỏi màn hình chính.",
       "Đánh dấu ngày hôm nay và kiểm tra lại sau 66 ngày xem thói quen đã tự động đến mức nào."
+    ],
+    "fr": [
+      "Rédigez un plan si... alors pour l'habitude souhaitée, en utilisant un indice rencontré chaque jour.",
+      "Supprimez un indice lié à une habitude que vous souhaitez briser, par exemple en retirant une application de votre écran d'accueil.",
+      "Notez la date d'aujourd'hui et faites le point après 66 jours pour évaluer le niveau d'automaticité de l'habitude."
+    ],
+    "de": [
+      "Schreibe einen Wenn-Dann-Plan für eine gewünschte Gewohnheit und nutze dabei einen Reiz, der dir jeden Tag begegnet.",
+      "Entferne einen Reiz für eine unerwünschte Gewohnheit, zum Beispiel indem du eine App vom Startbildschirm verbannst.",
+      "Notiere das heutige Datum und überprüfe nach 66 Tagen, wie automatisch sich die Gewohnheit anfühlt."
+    ],
+    "es": [
+      "Escribe un plan de si-entonces para un hábito que desees, utilizando una señal con la que te encuentres todos los días.",
+      "Elimina una señal de un hábito que quieras romper, como quitar una aplicación de tu pantalla de inicio.",
+      "Anota la fecha de hoy y compruébalo después de 66 días para ver cuán automático se siente el hábito."
     ]
   },
   "references": [
@@ -113,7 +179,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/WI30grRfBnE",
     "wide": "https://images.unsplash.com/photo-1569230919100-d3fd5e1132f4?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@prophsee?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@prophsee?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "/covers/video/how-habits-form.mp4",
+      "wide": "/covers/video/how-habits-form-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-151705/"
+    }
   },
   "origin": {
     "group": 4,
@@ -125,5 +197,68 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwAwCdASoQABwALrV2u12jqampiYC0SxgFR6I//0pv4pPkLVOGgAD91dssX4enTPf56hSiDUDN++Kxkdm0CakSfFxJue7+xnCKpR0135j7tjFrcjYBrto1zCagM6FfFHTRF829Fe/7q2L7+wGUtr4bMOSn0JbePSy+AAAA",
-  "dominant": "#898e8e"
+  "dominant": "#898e8e",
+  "glossary": {
+    "en": {
+      "habit": "An action triggered automatically by a contextual cue.",
+      "implementation intention": "A specific plan formulated as an if-then statement.",
+      "automaticity": "The level to which a behaviour feels effortless and automatic.",
+      "cue": "A trigger in the situation that starts an action.",
+      "context": "The surrounding environment or situation keeping a habit going.",
+      "willpower": "Conscious mental effort used to resist temptation or force action.",
+      "streak": "An unbroken chain of days performing a specific routine.",
+      "routine": "A sequence of actions regularly followed."
+    },
+    "vi": {
+      "thói quen": "Hành động được kích hoạt tự động bởi một tín hiệu trong hoàn cảnh cụ thể.",
+      "ý định thực thi": "Kế hoạch cụ thể có dạng Nếu tình huống X xảy ra, thì tôi sẽ làm Y.",
+      "bối cảnh": "Môi trường xung quanh và các điều kiện tác động đến hành vi con người.",
+      "tín hiệu": "Yếu tố trong hoàn cảnh như địa điểm hay thời điểm giúp kích hoạt hành động.",
+      "hành vi": "Cách mà một cá nhân ứng xử hoặc hành động trong một hoàn cảnh.",
+      "ý chí": "Năng lực tự kiểm soát bản thân để thực hiện mục tiêu đề ra.",
+      "mục tiêu": "Kết quả cụ thể mà một người mong muốn đạt được khi hành động.",
+      "nghiên cứu": "Quá trình khảo sát và phân tích khoa học để tìm ra sự thật khách quan."
+    },
+    "fr": {
+      "habitude": "Action déclenchée automatiquement par un indice dans la situation.",
+      "intention de mise en œuvre": "Plan d'action structuré sous la forme si... alors.",
+      "automaticité": "Niveau de spontanéité et d'absence de réflexion consciente lors d'une action.",
+      "indice": "Élément déclencheur dans l'environnement tel qu'un lieu ou un moment.",
+      "psychologues": "Spécialistes étudiant le comportement humain et les processus mentaux.",
+      "comportement": "Manière d'agir observable face à une situation donnée.",
+      "contexte": "Ensemble des circonstances et des éléments entourant une action.",
+      "volonté": "Faculté mentale mobilisée pour faire un effort conscient."
+    },
+    "de": {
+      "gewohnheit": "Eine Handlung, die durch einen Reiz in der Situation automatisch ausgelöst wird.",
+      "autopilot": "Zustand, in dem Handlungen ohne bewusstem Nachdenken ausgeführt werden.",
+      "vorsatzbildung": "Ein konkreter Wenn-Dann-Plan zur Verhaltenssteuerung in bestimmten Situationen.",
+      "automatisierung": "Das Ausmaß, in dem eine Handlung ohne bewusste Kontrolle abläuft.",
+      "kontext": "Die äußeren Umstände und Reize, die eine Handlung umgeben.",
+      "routine": "Ein regelmäßig und in gleicher Weise wiederholter Handlungsablauf.",
+      "willenskraft": "Die mentale Anstrengung zur Steuerung des eigenen Verhaltens.",
+      "reiz": "Ein äußerer Auslöser in der Situation, der ein Verhalten in Gang setzt."
+    },
+    "es": {
+      "hábito": "Acción desencadenada automáticamente por una señal en la situación debido a la repetición constante.",
+      "intención de implementación": "Plan estructurado bajo la fórmula si-entonces para conectar una situación específica con una acción deliberada.",
+      "automaticidad": "Grado en que un comportamiento se realiza sin necesidad de un pensamiento consciente.",
+      "señal": "Estímulo en el entorno como un lugar, hora o evento que activa de forma automática una conducta.",
+      "contexto": "Entorno físico o situacional que rodea al individuo y mantiene la ejecución de sus rutinas.",
+      "fuerza de voluntad": "Capacidad mental consciente para resistir impulsos o regular la conducta sin depender de rutinas.",
+      "comportamiento": "Acción o respuesta observable que emite una persona ante determinadas circunstancias cotidianas.",
+      "entorno": "Conjunto de circunstancias físicas y externas que rodean a una persona y afectan sus hábitos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

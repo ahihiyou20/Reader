@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Study less, remember more: the spacing effect",
-    "vi": "Học ít hơn, nhớ lâu hơn: hiệu ứng giãn cách"
+    "vi": "Học ít hơn, nhớ lâu hơn: hiệu ứng giãn cách",
+    "fr": "Étudier moins, retenir plus : l'effet d'espacement",
+    "de": "Weniger lernen, mehr behalten: der Spacing-Effekt",
+    "es": "Estudiar menos, recordar más: el efecto del espaciamiento"
   },
   "hook": {
     "en": "The night before an exam, many of us reread our notes again and again, and it feels like it works. A few days later, most of it is gone. More than a century of memory research points to a better way, and it takes no extra time. The secret is not how long you study, but [p:when you study and how you check yourself].",
-    "vi": "Đêm trước kỳ thi, nhiều người trong chúng ta đọc đi đọc lại ghi chép, và cảm giác như nó có hiệu quả. Vài ngày sau, phần lớn đã quên sạch. Hơn một thế kỷ nghiên cứu về trí nhớ chỉ ra một cách tốt hơn, mà không tốn thêm thời gian. Bí quyết không nằm ở việc học bao lâu, mà ở [p:học vào lúc nào và tự kiểm tra ra sao]."
+    "vi": "Đêm trước kỳ thi, nhiều người trong chúng ta đọc đi đọc lại ghi chép, và cảm giác như nó có hiệu quả. Vài ngày sau, phần lớn đã quên sạch. Hơn một thế kỷ nghiên cứu về trí nhớ chỉ ra một cách tốt hơn, mà không tốn thêm thời gian. Bí quyết không nằm ở việc học bao lâu, mà ở [p:học vào lúc nào và tự kiểm tra ra sao].",
+    "fr": "La veille d'un examen, beaucoup d'entre nous relisent leurs notes encore et encore, et l'on a l'impression que cela fonctionne. Quelques jours plus tard, la plus grande partie a disparu. Plus d'un siècle de recherche sur la mémoire indique une meilleure voie, et cela ne prend pas de temps supplémentaire. Le secret ne réside pas dans la durée de vos révisions, mais dans [p:le moment où vous étudiez et la manière dont vous vous testez].",
+    "de": "Die Nacht vor einer Prüfung lesen viele von uns ihre Notizen immer und immer wieder durch, und es fühlt sich an, als würde es funktionieren. Wenige Tage später ist das Meiste weg. Mehr als ein Jahrhundert Gedächtnisforschung zeigt einen besseren Weg, und das kostet keine zusätzliche Zeit. Das Geheimnis ist nicht, wie lange du lernst, sondern [p:wann du lernst und wie du dich selbst überprüfst].",
+    "es": "La noche antes de un examen, muchos de nosotros releemos nuestros apuntes una y otra vez, y parece funcionar. Pocos días después, la mayor parte ha desaparecida. Más de un siglo de investigación sobre la memoria señala un camino mejor, y no toma tiempo extra. El secreto no es cuánto tiempo estudias, sino [p:cuándo estudias y cómo te pones a prueba]."
   },
   "sections": [
     {
       "heading_en": "A scientist who tested himself",
       "heading_vi": "Nhà khoa học tự làm thí nghiệm trên mình",
       "body_en": "In the 1880s, the German psychologist **Hermann Ebbinghaus** ran one of the first careful studies of memory, using himself as the only subject. He memorised long lists of nonsense syllables, such as 'DAX' or 'BOK', so that meaning could not help him, and then measured how fast he forgot them. He found that forgetting is [y:fast at first and then slows down], a pattern now called the **forgetting curve**. He also noticed something useful: spreading his practice over several days helped him relearn lists faster than cramming the same practice into one sitting. This became known as the *spacing effect*.",
-      "body_vi": "Vào thập niên 1880, nhà tâm lý học người Đức **Hermann Ebbinghaus** thực hiện một trong những nghiên cứu cẩn trọng đầu tiên về trí nhớ, với chính mình là đối tượng duy nhất. Ông học thuộc những danh sách dài các âm tiết vô nghĩa, như 'DAX' hay 'BOK', để ý nghĩa không giúp được gì, rồi đo xem mình quên nhanh đến đâu. Ông nhận thấy việc quên diễn ra [y:rất nhanh lúc đầu rồi chậm dần], quy luật nay được gọi là **đường cong lãng quên**. Ông cũng phát hiện một điều hữu ích: chia việc luyện tập ra nhiều ngày giúp ông học lại danh sách nhanh hơn so với dồn cùng lượng luyện tập vào một buổi. Điều này được biết đến là *hiệu ứng giãn cách*."
+      "body_vi": "Vào thập niên 1880, nhà tâm lý học người Đức **Hermann Ebbinghaus** thực hiện một trong những nghiên cứu cẩn trọng đầu tiên về trí nhớ, với chính mình là đối tượng duy nhất. Ông học thuộc những danh sách dài các âm tiết vô nghĩa, như 'DAX' hay 'BOK', để ý nghĩa không giúp được gì, rồi đo xem mình quên nhanh đến đâu. Ông nhận thấy việc quên diễn ra [y:rất nhanh lúc đầu rồi chậm dần], quy luật nay được gọi là **đường cong lãng quên**. Ông cũng phát hiện một điều hữu ích: chia việc luyện tập ra nhiều ngày giúp ông học lại danh sách nhanh hơn so với dồn cùng lượng luyện tập vào một buổi. Điều này được biết đến là *hiệu ứng giãn cách*.",
+      "heading_fr": "Un scientifique qui s'est testé lui-même",
+      "body_fr": "Dans les années 1880, le psychologue allemand **Hermann Ebbinghaus** a mené l'une des premières études rigoureuses sur la mémoire, en prenant pour unique sujet sa propre personne. Il mémorisait de longues listes de syllabes sans signification, telles que « DAX » ou « BOK », afin que le sens ne puisse pas l'aider, puis mesurait la rapidité avec laquelle il les oubliait. Il a découvert que l'oubli est [y:rapide au début puis ralentit], un schéma aujourd'hui appelé la **courbe de l'oubli**. Il a également remarqué un fait utile : répartir ses entraînements sur plusieurs jours l'aidait à réapprendre les listes plus rapidement que de condenser le même entraînement en une seule séance. C'est ce qu'on a appelé l'*effet d'espacement*.",
+      "heading_de": "Ein Wissenschaftler, der sich selbst testete",
+      "body_de": "In den 1880er Jahren führte der deutsche Psychologe **Hermann Ebbinghaus** eine der ersten sorgfältigen Studien zum Gedächtnis durch, wobei er sich selbst als einzigen Probanden nutzte. Er merkte sich lange Listen von sinnlosen Silben wie ,DAX‘ oder ,BOK‘, damit ihm die Bedeutung nicht helfen konnte, und maß dann, wie schnell er sie wieder vergaß. Er stellte fest, dass das Vergessen [y:am Anfang schnell geht und sich dann verlangsamt], ein Muster, das heute als **Vergessekurve** bezeichnet wird. Er bemerkte auch etwas Nützliches: Das Verteilen seiner Übung über mehrere Tage half ihm, Listen schneller wiederzuerlernen, als dieselbe Übung in eine einzige Sitzung zu quetschen. Dies wurde als der *Spacing-Effekt* bekannt.",
+      "heading_es": "Un científico que se puso a prueba",
+      "body_es": "En la década de 1880, el psicólogo alemán **Hermann Ebbinghaus** realizó uno de los primeros estudios minuciosos de la memoria, utilizándose a sí mismo como el único sujeto. Memorizó largas listas de sílabas sin sentido, tales como 'DAX' o 'BOK', para que el significado no pudiera ayudarle, y luego midió la rapidez con la que las olvidaba. Descubrió que el olvido es [y:rápido al principio y luego se desacelera], un patrón que hoy se conoce como la **curva del olvido**. También notó algo útil: espaciar su práctica durante varios días le ayudó a releer listas más rápido que agrupar la misma práctica en una sola sesión. Esto se conoció como el *efecto del espaciamiento*."
     },
     {
       "heading_en": "Hundreds of experiments agree",
       "heading_vi": "Hàng trăm thí nghiệm cùng đồng thuận",
       "body_en": "Ebbinghaus was one man studying nonsense words, so is the effect real for everyone? In 2006, a team led by Nicholas Cepeda combined the results of [g:more than 300 experiments] on learning words and facts {cepeda-2006}. The pattern was remarkably consistent. When people spread their study sessions out over time, which researchers call *distributed practice*, they remembered more later than when they packed the same amount of study into a single block, called *massed practice*. The total study time was the same. Only the timing was different, and the timing alone made a clear difference.",
-      "body_vi": "Ebbinghaus chỉ là một người nghiên cứu những từ vô nghĩa, vậy hiệu ứng này có đúng với mọi người không? Năm 2006, một nhóm do Nicholas Cepeda dẫn đầu đã tổng hợp kết quả của [g:hơn 300 thí nghiệm] về việc học từ và kiến thức {cepeda-2006}. Quy luật nhất quán đến đáng kinh ngạc. Khi người ta chia các buổi học ra theo thời gian, gọi là *luyện tập phân tán*, họ nhớ được nhiều hơn về sau so với khi dồn cùng lượng học vào một khối, gọi là *luyện tập dồn nén*. Tổng thời gian học như nhau. Chỉ có thời điểm là khác, và riêng thời điểm đã tạo ra khác biệt rõ rệt."
+      "body_vi": "Ebbinghaus chỉ là một người nghiên cứu những từ vô nghĩa, vậy hiệu ứng này có đúng với mọi người không? Năm 2006, một nhóm do Nicholas Cepeda dẫn đầu đã tổng hợp kết quả của [g:hơn 300 thí nghiệm] về việc học từ và kiến thức {cepeda-2006}. Quy luật nhất quán đến đáng kinh ngạc. Khi người ta chia các buổi học ra theo thời gian, gọi là *luyện tập phân tán*, họ nhớ được nhiều hơn về sau so với khi dồn cùng lượng học vào một khối, gọi là *luyện tập dồn nén*. Tổng thời gian học như nhau. Chỉ có thời điểm là khác, và riêng thời điểm đã tạo ra khác biệt rõ rệt.",
+      "heading_fr": "Des centaines d'expériences en accord",
+      "body_fr": "Ebbinghaus était un seul homme étudiant des mots sans signification, alors l'effet est-il réel pour tout le monde ? En 2006, une équipe dirigée par Nicholas Cepeda a combiné les résultats de [g:plus de 300 expériences] sur l'apprentissage de mots et de faits {cepeda-2006}. Le schéma s'est révélé remarquable par sa constance. Lorsque les gens répartissent leurs séances d'étude dans le temps, ce que les chercheurs appellent la *pratique distribuée*, ils retiennent davantage par la suite que lorsqu'ils condensent le même volume d'étude en un seul bloc, appelé *pratique massée*. Le temps d'étude total était le même. Seul le minutage différait, et ce minutage à lui seul créait une différence évidente.",
+      "heading_de": "Hunderte von Experimenten stimmen überein",
+      "body_de": "Ebbinghaus war ein einzelner Mann, der sinnlose Wörter untersuchte, gilt der Effekt also für jeden? Im Jahr 2006 fasste ein Team unter der Leitung von Nicholas Cepeda die Ergebnisse von [g:mehr als 300 Experimenten] zum Lernen von Wörtern und Fakten zusammen {cepeda-2006}. Das Muster war erstaunlich konsistent. Wenn Menschen ihre Lerneinheiten über die Zeit verteilen, was Forscher als *verteiltes Lernen* bezeichnen, erinnerten sie sich später an mehr, als wenn sie dieselbe Lernmenge in einen einzigen Block packten, genannt *massiertes Lernen*. Die Gesamt-Lernzeit war dieselbe. Nur das Timing war anders, und allein das Timing machte einen deutlichen Unterschied.",
+      "heading_es": "Cientos de experimentos coinciden",
+      "body_es": "Ebbinghaus era un solo hombre estudiando palabras sin sentido, entonces, ¿es real el efecto para todos? En 2006, un equipo dirigido por Nicholas Cepeda combinó los resultados de [g:más de 300 experimentos] sobre el aprendizaje de palabras y hechos {cepeda-2006}. El patrón fue notablemente consistente. Cuando las personas espaciaban sus sesiones de estudio a lo largo del tiempo, lo que los investigadores llaman *práctica distribuida*, recordaban más tarde que cuando agrupaban la misma cantidad de estudio en un solo bloque, llamado *práctica masiva*. El tiempo total de estudio era el mismo. Solo la sincronización era diferente, y la sincronización por sí sola marcó una clara diferencia."
     },
     {
       "heading_en": "How long should the gap be?",
       "heading_vi": "Nên giãn cách bao lâu?",
       "body_en": "If spacing helps, how far apart should sessions be? In a large online study, more than 1,300 people learned a set of obscure facts, reviewed them after gaps of up to several months, and were tested up to a year later {cepeda-2008}. The best gap depended on [y:how long you want to remember]. To remember something for about a week, reviewing after a day or so worked best. To remember it for a year, a gap of about three weeks was better. The researchers' practical advice: if in doubt, a gap that is too long usually costs less than one that is too short.",
-      "body_vi": "Nếu giãn cách có ích, các buổi học nên cách nhau bao xa? Trong một nghiên cứu trực tuyến quy mô lớn, hơn 1.300 người học một loạt kiến thức ít ai biết, ôn lại sau những khoảng cách lên tới vài tháng, và được kiểm tra muộn nhất là một năm sau {cepeda-2008}. Khoảng cách tốt nhất phụ thuộc vào [y:việc bạn muốn nhớ trong bao lâu]. Để nhớ một điều trong khoảng một tuần, ôn lại sau chừng một ngày là tốt nhất. Để nhớ trong một năm, khoảng cách ba tuần lại hiệu quả hơn. Lời khuyên thực tế của các nhà nghiên cứu: nếu phân vân, khoảng cách hơi dài thường ít thiệt hơn khoảng cách quá ngắn."
+      "body_vi": "Nếu giãn cách có ích, các buổi học nên cách nhau bao xa? Trong một nghiên cứu trực tuyến quy mô lớn, hơn 1.300 người học một loạt kiến thức ít ai biết, ôn lại sau những khoảng cách lên tới vài tháng, và được kiểm tra muộn nhất là một năm sau {cepeda-2008}. Khoảng cách tốt nhất phụ thuộc vào [y:việc bạn muốn nhớ trong bao lâu]. Để nhớ một điều trong khoảng một tuần, ôn lại sau chừng một ngày là tốt nhất. Để nhớ trong một năm, khoảng cách ba tuần lại hiệu quả hơn. Lời khuyên thực tế của các nhà nghiên cứu: nếu phân vân, khoảng cách hơi dài thường ít thiệt hơn khoảng cách quá ngắn.",
+      "heading_fr": "Quel doit être l'intervalle ?",
+      "body_fr": "Si l'espacement aide, à quelle distance les séances doivent-elles être séparées ? Dans le cadre d'une vaste étude en ligne, plus de 1 300 personnes ont appris une série de faits obscurs, les ont révisés après des intervalles allant jusqu'à plusieurs mois, et ont été testées jusqu'à un an plus tard {cepeda-2008}. Le meilleur intervalle dépendait de [y:la durée pendant laquelle vous souhaitez vous souvenir]. Pour se souvenir de quelque chose pendant environ une semaine, réviser après un jour ou deux fonctionnait le mieux. Pour s'en souvenir pendant un an, un intervalle d'environ trois semaines était préférable. Le conseil pratique des chercheurs : en cas de doute, un intervalle trop long coûte généralement moins cher qu'un intervalle trop court.",
+      "heading_de": "Wie lang sollte die Lücke sein?",
+      "body_de": "Wenn Wiederholungen mit Abstand helfen, wie weit sollten Sitzungen auseinanderliegen? In einer großen Onlinestudie lernten mehr als 1.300 Menschen eine Reihe obskurrer Fakten, wiederholten sie nach Lücken von bis zu mehreren Monaten und wurden bis zu einem Jahr später getestet {cepeda-2008}. Die beste Lücke hing davon ab, [y:wie lange du dich erinnern möchtest]. Um sich etwa eine Woche lang an etwas zu erinnern, funktionierte die Wiederholung nach etwa einem Tag am besten. Um sich ein Jahr lang daran zu erinnern, war eine Lücke von etwa drei Wochen besser. Der praktische Rat der Forscher: Im Zweifelsfall kostet eine Lücke, die zu lang ist, meist weniger als eine, die zu kurz ist.",
+      "heading_es": "¿De qué duración debe ser la pausa?",
+      "body_es": "Si el espaciamiento ayuda, ¿qué tan separados deben estar las sesiones? En un gran estudio en línea, más de 1,300 personas aprendieron un conjunto de datos oscuros, los repasaron tras pausas de hasta varios meses y fueron evaluados hasta un año después {cepeda-2008}. La pausa óptima dependía de [y:cuánto tiempo deseas recordar]. Para recordar algo durante aproximadamente una semana, repasar al cabo de un día más o menos funcionaba mejor. Para recordarlo durante un año, una pausa de unas tres semanas era mejor. El consejo práctico de los investigadores: en caso de duda, una pausa demasiado larga suele costar menos que una demasiado corta."
     },
     {
       "heading_en": "Testing beats rereading",
       "heading_vi": "Tự kiểm tra hiệu quả hơn đọc lại",
       "body_en": "Timing is half the story; the other half is what you do in each session. In a classic experiment, students read short science passages. Some read them several times; others read once and then repeatedly wrote down everything they could recall. Five minutes later, rereading looked better. But [p:one week later], the picture flipped: students who had practised recalling remembered about 61% of the ideas, compared with 40% for those who only reread {roediger-2006}. Pulling information out of memory strengthens it far more than putting it in again. Psychologists call this the **testing effect**.",
-      "body_vi": "Thời điểm chỉ là một nửa câu chuyện; nửa còn lại là bạn làm gì trong mỗi buổi học. Trong một thí nghiệm kinh điển, sinh viên đọc những đoạn văn khoa học ngắn. Một nhóm đọc đi đọc lại nhiều lần; nhóm khác đọc một lần rồi liên tục viết ra mọi điều mình nhớ được. Năm phút sau, việc đọc lại có vẻ tốt hơn. Nhưng [p:một tuần sau], bức tranh đảo ngược: sinh viên luyện nhớ lại ghi nhớ được khoảng 61% ý chính, so với 40% ở nhóm chỉ đọc lại {roediger-2006}. Lôi thông tin ra khỏi trí nhớ củng cố nó mạnh hơn nhiều so với nạp lại nó. Các nhà tâm lý học gọi đây là **hiệu ứng kiểm tra**."
+      "body_vi": "Thời điểm chỉ là một nửa câu chuyện; nửa còn lại là bạn làm gì trong mỗi buổi học. Trong một thí nghiệm kinh điển, sinh viên đọc những đoạn văn khoa học ngắn. Một nhóm đọc đi đọc lại nhiều lần; nhóm khác đọc một lần rồi liên tục viết ra mọi điều mình nhớ được. Năm phút sau, việc đọc lại có vẻ tốt hơn. Nhưng [p:một tuần sau], bức tranh đảo ngược: sinh viên luyện nhớ lại ghi nhớ được khoảng 61% ý chính, so với 40% ở nhóm chỉ đọc lại {roediger-2006}. Lôi thông tin ra khỏi trí nhớ củng cố nó mạnh hơn nhiều so với nạp lại nó. Các nhà tâm lý học gọi đây là **hiệu ứng kiểm tra**.",
+      "heading_fr": "Se tester surpasse la relecture",
+      "body_fr": "Le minutage n'est que la moitié de l'histoire ; l'autre moitié consiste en ce que vous faites lors de chaque séance. Dans une expérience classique, des étudiants ont lu de courts passages scientifiques. Certains les ont lus plusieurs fois ; d'autres les ont lus une seule fois, puis ont écrit de mémoire et à plusieurs reprises tout ce qu'ils pouvaient se rappeler. Cinq minutes plus tard, la relecture semblait préférable. Mais [p:une semaine plus tard], la situation s'est inversée : les étudiants qui s'étaient entraînés à se rappeler ont retenu environ 61 % des idées, contre 40 % pour ceux qui s'étaient contentés de relire {roediger-2006}. Extraire l'information de la mémoire la renforce bien plus que de l'y replacer. Les psychologues appellent cela l' **effet de test**.",
+      "heading_de": "Testen schlägt erneutes Lesen",
+      "body_de": "Das Timing ist die halbe Miete; die andere Hälfte ist, was du in jeder Sitzung tust. In einem klassischen Experiment lasen Studenten kurze naturwissenschaftliche Textabschnitte. Einige lasen sie mehrmals; andere lasen sie einmal und schrieben danach wiederholt alles auf, woran sie sich erinnern konnten. Fünf Minuten später sah das erneute Lesen besser aus. Aber [p:eine Woche später] kippte das Bild: Studenten, die das Abrufen geübt hatten, erinnerten sich an etwa 61% der Ideen, verglichen mit 40% bei denjenigen, die nur lasen {roediger-2006}. Informationen aus dem Gedächtnis abzurufen, stärkt es weitaus mehr, als sie wieder hineinzustecken. Psychologen nennen dies den **Abrufeffekt**.",
+      "heading_es": "Probarse supera a releer",
+      "body_es": "La sincronización es la mitad de la historia; la otra mitad es lo que haces en cada sesión. En un experimento clásico, los estudiantes leían pasajes científicos cortos. Algunos los leían varias veces; otros leían una vez y luego escribían repetidamente todo lo que podían recordar. Cinco minutos después, releer parecía mejor. Pero [p:una semana después], el panorama cambió por completo: los estudiantes que habían practicado la recuperación recordaban alrededor del 61% de las ideas, frente al 40% de quienes solo habían releído {roediger-2006}. Extraer información de la memoria la fortalece mucho más que volver a introducirla. Los psicólogos llaman a esto el **efecto de prueba**."
     },
     {
       "heading_en": "Why cramming feels better",
       "heading_vi": "Vì sao học dồn có cảm giác hiệu quả hơn",
       "body_en": "If spacing and testing work so well, why do so many of us cram and reread? Because they [y:feel easier]. When you reread a page you saw ten minutes ago, everything looks familiar, and that fluency feels like learning. Spaced practice feels harder, because you have forgotten a little and must work to recall it. But that effort is exactly what makes the memory stronger. Researchers call this kind of challenge a *desirable difficulty*. The trap is that our sense of how well we are learning is often [p:a poor guide] to how much we will actually remember.",
-      "body_vi": "Nếu giãn cách và tự kiểm tra hiệu quả đến vậy, sao nhiều người vẫn học dồn và đọc lại? Vì chúng [y:có cảm giác dễ hơn]. Khi bạn đọc lại một trang vừa xem mười phút trước, mọi thứ đều quen thuộc, và sự trôi chảy ấy tạo cảm giác như đang học. Luyện tập giãn cách khó hơn, vì bạn đã quên đi một chút và phải cố gắng nhớ lại. Nhưng chính nỗ lực đó làm trí nhớ vững chắc hơn. Các nhà nghiên cứu gọi kiểu thử thách này là *khó khăn đáng có*. Cái bẫy là cảm nhận của ta về mức độ mình đang học tốt thường [p:là chỉ dẫn kém tin cậy] cho lượng kiến thức ta thật sự nhớ được."
+      "body_vi": "Nếu giãn cách và tự kiểm tra hiệu quả đến vậy, sao nhiều người vẫn học dồn và đọc lại? Vì chúng [y:có cảm giác dễ hơn]. Khi bạn đọc lại một trang vừa xem mười phút trước, mọi thứ đều quen thuộc, và sự trôi chảy ấy tạo cảm giác như đang học. Luyện tập giãn cách khó hơn, vì bạn đã quên đi một chút và phải cố gắng nhớ lại. Nhưng chính nỗ lực đó làm trí nhớ vững chắc hơn. Các nhà nghiên cứu gọi kiểu thử thách này là *khó khăn đáng có*. Cái bẫy là cảm nhận của ta về mức độ mình đang học tốt thường [p:là chỉ dẫn kém tin cậy] cho lượng kiến thức ta thật sự nhớ được.",
+      "heading_fr": "Pourquoi le bachotage semble plus agréable",
+      "body_fr": "Si l'espacement et les tests fonctionnent si bien, pourquoi sommes-nous si nombreux à bachoter et à relire ? Parce que ces méthodes [y:semblent plus faciles]. Lorsque vous relisez une page vue dix minutes auparavant, tout paraît familier, et cette aisance ressemble à de l'apprentissage. La pratique espacée paraît plus difficile, car vous avez un peu oublié et devez faire un effort pour vous en souvenir. Mais cet effort est précisément ce qui rend la mémoire plus forte. Les chercheurs qualifient ce type de difficulté de *difficulté souhaitable*. Le piège réside dans le fait que notre sentiment d'apprendre efficacement constitue souvent [p:un mauvais indicateur] de ce dont nous nous souviendrons réellement.",
+      "heading_de": "Warum Pauken sich besser anfühlt",
+      "body_de": "Wenn Abstände und Tests so gut funktionieren, warum pauken und lesen so viele von uns erneut? Weil sie [p:sich einfacher anfühlen]. Wenn du eine Seite liest, die du vor zehn Minuten gesehen hast, kommt dir alles vertraut vor, und diese Flüssigkeit fühlt sich an wie Lernen. Verteiltes Lernen fühlt sich schwerer an, weil du ein wenig vergessen hast und arbeiten musst, um es abzurufen. Aber genau diese Anstrengung stärkt das Gedächtnis. Forscher nennen diese Art von Herausforderung eine *wünschenswerte Schwierigkeit*. Die Falle besteht darin, dass unser Gefühl darüber, wie gut wir lernen, oft [p:ein schlechter Ratgeber] dafür ist, wie viel wir tatsächlich behalten werden.",
+      "heading_es": "Por qué agrupar el estudio se siente mejor",
+      "body_es": "Si el espaciamiento y la prueba funcionan tan bien, ¿por qué muchos de nosotros agrupamos el estudio y releyemos? Porque [y:se siente más fácil]. Cuando reanudas una página que viste hace diez minutos, todo parece familiar, y esa fluidez se siente como aprendizaje. La práctica espaciada se siente más difícil, porque has olvidado un poco y debes esforzarte para recordar. Pero ese esfuerzo es exactamente lo que hace que la memoria sea más fuerte. Los investigadores llaman a este tipo de desafío una *dificultad deseable*. La trampa es que nuestra percepción de qué tan bien estamos aprendiendo suele ser [p:una mala guía] de cuánto recordaremos en realidad."
     },
     {
       "heading_en": "What works, and what does not",
       "heading_vi": "Điều gì hiệu quả, điều gì không",
       "body_en": "In 2013, a group of psychologists reviewed ten popular study techniques to see which ones the evidence supports {dunlosky-2013}. Only two earned their top rating: **practice testing** and **distributed practice**. Both worked for learners of different ages, for many kinds of material, and over long delays. Some of the most common habits did poorly. *Highlighting* and *rereading* were rated as having [p:low utility], because they gave little benefit beyond simply reading the material once. That does not mean highlighting is useless, but it should not be the main way you study.",
-      "body_vi": "Năm 2013, một nhóm nhà tâm lý học đã đánh giá mười kỹ thuật học phổ biến để xem kỹ thuật nào được bằng chứng ủng hộ {dunlosky-2013}. Chỉ hai kỹ thuật đạt mức đánh giá cao nhất: **luyện tập bằng kiểm tra** và **luyện tập phân tán**. Cả hai đều hiệu quả với người học ở nhiều độ tuổi, với nhiều loại nội dung, và sau những khoảng thời gian dài. Một số thói quen phổ biến nhất lại cho kết quả kém. *Tô sáng* và *đọc lại* bị xếp vào nhóm [p:ít hữu ích], vì chúng mang lại rất ít lợi ích so với chỉ đọc tài liệu một lần. Điều đó không có nghĩa tô sáng vô dụng, nhưng nó không nên là cách học chính của bạn."
+      "body_vi": "Năm 2013, một nhóm nhà tâm lý học đã đánh giá mười kỹ thuật học phổ biến để xem kỹ thuật nào được bằng chứng ủng hộ {dunlosky-2013}. Chỉ hai kỹ thuật đạt mức đánh giá cao nhất: **luyện tập bằng kiểm tra** và **luyện tập phân tán**. Cả hai đều hiệu quả với người học ở nhiều độ tuổi, với nhiều loại nội dung, và sau những khoảng thời gian dài. Một số thói quen phổ biến nhất lại cho kết quả kém. *Tô sáng* và *đọc lại* bị xếp vào nhóm [p:ít hữu ích], vì chúng mang lại rất ít lợi ích so với chỉ đọc tài liệu một lần. Điều đó không có nghĩa tô sáng vô dụng, nhưng nó không nên là cách học chính của bạn.",
+      "heading_fr": "Ce qui fonctionne et ce qui ne fonctionne pas",
+      "body_fr": "En 2013, un groupe de psychologues a examiné dix techniques d'étude populaires pour déterminer lesquelles bénéficiaient du soutien des preuves {dunlosky-2013}. Seules deux ont obtenu leur meilleure note : le **test d'entraînement** et la **pratique distribuée**. Toutes deux fonctionnaient pour des apprenants d'âges différents, pour de nombreux types de matières, et sur de longs délais. Certaines des habitudes les plus courantes ont obtenu de piètres résultats. Le *surlignage* et la *relecture* ont été jugés de [p:faible utilité], car ils n'apportaient que peu d'avantages par rapport à une simple lecture unique du matériel. Cela ne signifie pas que le surlignage est inutile, mais il ne devrait pas constituer votre principale méthode d'étude.",
+      "heading_de": "Was funktioniert und was nicht",
+      "body_de": "Im Jahr 2013 überprüfte eine Gruppe von Psychologen zehn beliebte Lerntechniken, um zu sehen, welche davon durch Beweise gestützt werden {dunlosky-2013}. Nur zwei verdienten sich ihre Höchstbewertung: **Praxistests** und **verteiltes Lernen**. Beide funktionierten für Lernende unterschiedlichen Alters, für viele Arten von Material und über lange Verzögerungen hinweg. Einige der häufigsten Gewohnheiten schnitten schlecht ab. *Markieren* und *erneutes Lesen* wurden als von [p:geringem Nutzen] eingestuft, da sie über das einfache einmalige Lesen des Materials hinaus kaum einen Vorteil brachten. Das bedeutet nicht, dass das Markieren nutzlos ist, aber es sollte nicht deine Hauptlernmethode sein.",
+      "heading_es": "Lo que funciona y lo que no",
+      "body_es": "En 2013, un grupo de psicólogos analizó diez técnicas de estudio populares para ver cuáles respalda la evidencia {dunlosky-2013}. Solo dos obtuvieron su máxima calificación: las **pruebas de práctica** y la **práctica distribuida**. Ambas funcionaron para estudiantes de distintas edades, para muchos tipos de material y a lo largo de demoras prolongadas. Algunos de los hábitos más comunes obtuvieron malos resultados. El *subrayado* y la *relectura* fueron calificados con [p:baja utilidad], debido a que ofrecían escaso beneficio más allá de simplemente leer el material una vez. Eso no significa que subrayar sea inútil, pero no debe ser tu principal forma de estudiar."
     },
     {
       "heading_en": "Putting it into practice",
       "heading_vi": "Áp dụng vào thực tế",
       "body_en": "You can use these findings with very little change to your routine. Instead of one long session, split the same time into [g:shorter sessions spread over several days]. Start each session by trying to recall what you learned last time, before you look at your notes: write a quick summary, answer flashcards or explain the idea aloud. Check what you missed, then focus there. Mix older topics into newer ones so that old material keeps coming back. Flashcard apps that schedule reviews automatically are built on exactly these ideas, but a notebook and a calendar work too.",
-      "body_vi": "Bạn có thể áp dụng những phát hiện này mà hầu như không cần thay đổi thói quen. Thay vì một buổi học dài, hãy chia cùng lượng thời gian ấy thành [g:nhiều buổi ngắn trải ra vài ngày]. Mở đầu mỗi buổi bằng việc cố nhớ lại những gì đã học lần trước, trước khi nhìn vào ghi chép: viết nhanh một bản tóm tắt, trả lời thẻ ghi nhớ hoặc giải thích ý tưởng thành tiếng. Kiểm tra những chỗ bạn quên rồi tập trung vào đó. Đan xen chủ đề cũ vào chủ đề mới để kiến thức cũ liên tục quay lại. Các ứng dụng thẻ ghi nhớ tự lên lịch ôn tập được xây dựng đúng trên những ý tưởng này, nhưng một cuốn sổ và cuốn lịch cũng đủ dùng."
+      "body_vi": "Bạn có thể áp dụng những phát hiện này mà hầu như không cần thay đổi thói quen. Thay vì một buổi học dài, hãy chia cùng lượng thời gian ấy thành [g:nhiều buổi ngắn trải ra vài ngày]. Mở đầu mỗi buổi bằng việc cố nhớ lại những gì đã học lần trước, trước khi nhìn vào ghi chép: viết nhanh một bản tóm tắt, trả lời thẻ ghi nhớ hoặc giải thích ý tưởng thành tiếng. Kiểm tra những chỗ bạn quên rồi tập trung vào đó. Đan xen chủ đề cũ vào chủ đề mới để kiến thức cũ liên tục quay lại. Các ứng dụng thẻ ghi nhớ tự lên lịch ôn tập được xây dựng đúng trên những ý tưởng này, nhưng một cuốn sổ và cuốn lịch cũng đủ dùng.",
+      "heading_fr": "Mettre en pratique",
+      "body_fr": "Vous pouvez appliquer ces conclusions en modifiant très peu vos habitudes. Au lieu d'une seule longue séance, divisez le même temps en [g:séances plus courtes réparties sur plusieurs jours]. Commencez chaque séance en essayant de vous rappeler ce que vous avez appris la dernière fois, avant de regarder vos notes : écrivez un bref résumé, répondez à des cartes mémoire ou expliquez l'idée à haute voix. Vérifiez ce qui vous a échappé, puis concentrez-vous sur ces points. Mélangez des sujets plus anciens aux plus récents afin que l'ancien matériel refasse surface. Les applications de cartes mémoire qui planifient les révisions automatiquement reposent exactement sur ces principes, mais un carnet et un calendrier font également l'affaire.",
+      "heading_de": "Die Umsetzung in die Praxis",
+      "body_de": "Du kannst diese Erkenntnisse mit sehr geringen Änderungen an deiner Routine anwenden. Anstelle einer langen Sitzung teilst du dieselbe Zeit in [g:kürzere Sitzungen auf, die sich über mehrere Tage erstrecken]. Beginne jede Sitzung damit, dich zu erinnern, was du das letzte Mal gelernt hast, bevor du in deine Notizen schaust: Schreibe eine kurze Zusammenfassung, beantworte Karteikarten oder erkläre die Idee laut. Überprüfe, was du verpasst hast, und konzentriere dich dann darauf. Mische ältere Themen in neuere ein, damit altes Material immer wieder zurückkommt. Karteikarten-Apps, die Wiederholungen automatisch planen, basieren genau auf diesen Ideen, aber ein Notizbuch und ein Kalender funktionieren auch.",
+      "heading_es": "Llevándolo a la práctica",
+      "body_es": "Puedes utilizar estos hallazgos con muy pocos cambios en tu rutina. En lugar de una sesión larga, divide el mismo tiempo en [g:sesiones más cortas distribuidas a lo largo de varios días]. Comienza cada sesión intentando recordar lo que aprendiste la última vez, antes de mirar tus apuntes: redacta un resumen rápido, responde tarjetas de memoria o explica la idea en voz alta. Revisa lo que omitiste y concéntrate allí. Mezcla temas anteriores con los nuevos para que el material viejo siga reapareciendo. Las aplicaciones de tarjetas de memoria que programan repasos de forma automática se basan exactamente en estas ideas, pero un cuaderno y un calendario también funcionan."
     }
   ],
   "keyPoint": {
     "en": "Memory works like [p:a path through a field]: walking it once a day for a week wears it in far better than walking it seven times in one afternoon. Space your study out, and start every session by *recalling before you reread*.",
-    "vi": "Trí nhớ giống như [p:lối mòn băng qua cánh đồng]: mỗi ngày đi qua một lần trong một tuần sẽ in dấu rõ hơn nhiều so với đi bảy lần trong một buổi chiều. Hãy giãn cách việc học, và bắt đầu mỗi buổi bằng *nhớ lại trước khi đọc lại*."
+    "vi": "Trí nhớ giống như [p:lối mòn băng qua cánh đồng]: mỗi ngày đi qua một lần trong một tuần sẽ in dấu rõ hơn nhiều so với đi bảy lần trong một buổi chiều. Hãy giãn cách việc học, và bắt đầu mỗi buổi bằng *nhớ lại trước khi đọc lại*.",
+    "fr": "La mémoire fonctionne comme [p:un sentier à travers un champ] : l'emprunter une fois par jour pendant une semaine l'entretient bien mieux que de le parcourir sept fois en un seul après-midi. Espacez vos révisions et commencez chaque séance par *l'effort de mémorisation avant la relecture*.",
+    "de": "Das Gedächtnis funktioniert wie [p:ein Pfad durch ein Feld]: Es einmal am Tag für eine Woche zu begehen, prägt es weitaus besser ein, als es an einem Nachmittag siebenmal zu gehen. Verteile dein Lernen und beginne jede Sitzung mit *dem Abrufen vor dem erneuten Lesen*.",
+    "es": "La memoria funciona como [p:un sendero en un campo]: caminarlo una vez al día durante una semana lo marca mucho mejor que recorrerlo siete veces en una sola tarde. Espacia tu estudio e inicia cada sesión *recordando antes de releer*."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Trước buổi học tiếp theo, dành ba phút ghi ra mọi điều bạn còn nhớ từ buổi trước.",
       "Chia một buổi học dài trong tuần này thành ba buổi ngắn vào các ngày khác nhau.",
       "Biến năm ý chính trong bài này thành thẻ câu hỏi và tự kiểm tra sau hai ngày."
+    ],
+    "fr": [
+      "Avant votre prochaine séance d'étude, passez trois minutes à écrire tout ce dont vous vous souvenez de la précédente.",
+      "Divisez un long bloc d'étude de cette semaine en trois courtes séances réparties sur des jours différents.",
+      "Transformez cinq idées clés de cet article en cartes de questions et testez-vous dans deux jours."
+    ],
+    "de": [
+      "Bevor deine nächste Lernsitzung beginnt, verwende drei Minuten darauf, alles aufzuschreiben, woran du dich aus der letzten erinnerst.",
+      "Teile einen langen Lernblock in dieser Woche in drei kurze Sitzungen an verschiedenen Tagen auf.",
+      "Wandle fünf Hauptideen aus diesem Artikel in Fragemöglichkeiten um und teste dich selbst in zwei Tagen."
+    ],
+    "es": [
+      "Antes de tu próxima sesión de estudio, dedica tres minutos a escribir todo lo que recuerdes de la anterior.",
+      "Divide un bloque de estudio largo esta semana en tres sesiones cortas en días diferentes.",
+      "Convierte cinco ideas clave de este artículo en tarjetas de preguntas y ponte a prueba en dos días."
     ]
   },
   "references": [
@@ -108,7 +174,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/gm18kqu9TxQ",
     "wide": "https://images.unsplash.com/38/zEk8RJdmQrqja2XwbjgJ_DSC_2368.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@jamestarbotton?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@jamestarbotton?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "/covers/video/spacing-effect.mp4",
+      "wide": "/covers/video/spacing-effect-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-185096/"
+    }
   },
   "origin": {
     "group": 4,
@@ -120,5 +192,69 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQAAXFh2UCuGkpXr45FTegAA/n5TZcIslMUyzikTra60U1CRj7e+tvAO6cjT/w+FROcX3EeVeG9zs+1skevTcc4NwHXTBOC0wrI06lXX57VeYITpdO9jNtwzzcREHIgTHkJ38HgfPIhMQy4AAA==",
-  "dominant": "#3f4640"
+  "dominant": "#3f4640",
+  "glossary": {
+    "en": {
+      "hermann ebbinghaus": "German psychologist who conducted early pioneering studies on memory and forgetting.",
+      "forgetting curve": "A graph showing how information is lost over time when there is no attempt to retain it.",
+      "spacing effect": "The phenomenon where learning is greater when study is spread out over time.",
+      "distributed practice": "A study strategy where learning sessions are separated by periods of time.",
+      "massed practice": "Studying a large amount of information in a single continuous block of time.",
+      "testing effect": "The finding that long-term memory is increased when learning involves retrieving information.",
+      "desirable difficulty": "A learning task that requires moderate effort, thereby improving long-term retention.",
+      "practice testing": "Using tests or quizzes to actively recall information during the learning process.",
+      "low utility": "Having little practical usefulness or effectiveness for achieving a desired goal."
+    },
+    "vi": {
+      "đường cong lãng quên": "Quy luật cho thấy con người quên kiến thức rất nhanh lúc đầu rồi sau đó tốc độ quên sẽ chậm dần theo thời gian.",
+      "hiệu ứng giãn cách": "Phương pháp chia nhỏ việc học ra nhiều ngày giúp ghi nhớ nhanh và lâu hơn so với dồn toàn bộ thời gian vào một buổi.",
+      "luyện tập phân tán": "Cách sắp xếp các buổi học rải rác theo thời gian để đạt hiệu quả ghi nhớ tối ưu so với việc học dồn.",
+      "luyện tập dồn nén": "Thói quen dồn toàn bộ lượng thời gian học vào một khối duy nhất ngay trước kỳ thi, thường mang lại kết quả kém.",
+      "hiệu ứng kiểm tra": "Hiện tượng việc chủ động lôi thông tin ra khỏi trí nhớ giúp củng cố kiến thức mạnh mẽ hơn so với việc đọc lại.",
+      "khó khăn đáng có": "Những thử thách trong quá trình học tập đòi hỏi nỗ lực gợi nhớ, giúp não bộ xây dựng trí nhớ vững chắc hơn.",
+      "luyện tập bằng kiểm tra": "Kỹ thuật học tập đạt mức đánh giá cao nhất nhờ sử dụng các bài kiểm tra nhỏ để củng cố khả năng nhớ.",
+      "tô sáng": "Thói quen đánh dấu văn bản bằng màu sắc, bị xếp vào nhóm ít hữu ích vì mang lại rất ít lợi ích ôn tập."
+    },
+    "fr": {
+      "courbe de l'oubli": "Schéma montrant que l'oubli est rapide au début après un apprentissage puis ralentit avec le temps.",
+      "pratique distribuée": "Méthode d'apprentissage consistant à répartir les séances d'étude sur plusieurs jours ou semaines.",
+      "pratique massée": "Action de regrouper toute la matière à étudier en un seul bloc intensif de temps.",
+      "effet de test": "Phénomène montrant que rappeler activement des informations renforce la mémoire bien plus que relire.",
+      "difficulté souhaitable": "Défi cognitif qui demande un effort mais rend l'apprentissage et la mémoire beaucoup plus solides.",
+      "test d'entraînement": "Technique consistant à se tester soi-même sur le contenu étudié pour consolider les acquis.",
+      "faible utilité": "Évaluation attribuée à des méthodes d'étude offrant peu de bénéfices réels au-delà d'une simple lecture.",
+      "cartes mémoire": "Outils d'apprentissage comportant une question d'un côté et la réponse de l'autre pour s'auto-évaluer."
+    },
+    "de": {
+      "spacing-effekt": "Das Phänomen, dass verteiltes Lernen über mehrere Tage zu einem besseren langfristigen Erinnerungsvermögen führt als massiertes Pauken.",
+      "vergessekurve": "Das wissenschaftliche Muster, dass das Vergessen neuer Informationen anfangs sehr schnell verläuft und sich im Laufe der Zeit verlangsamt.",
+      "verteiltes lernen": "Lernmethode, bei der die Gesamt-Lernzeit auf mehrere über die Zeit verteilte Sitzungen aufgeteilt wird.",
+      "abrufeffekt": "Der Effekt, dass das aktive Heraussuchen von Informationen aus dem Gedächtnis dieses dauerhaft stärker festigt als passives Lesen.",
+      "wünschenswerte schwierigkeit": "Eine Herausforderung beim Lernen, die sich zwar schwerer anfühlt, aber die Gedächtnisleistung langfristig deutlich erhöht.",
+      "praxistests": "Eine mit Bestnote bewertete Lerntechnik, bei der man das eigene Wissen durch Abrufübungen aktiv prüft.",
+      "massiertes lernen": "Das Zusammenlegen der gesamten Lernzeit in einen einzigen, ununterbrochenen und langen Block.",
+      "markieren": "Das Hervorheben von Textstellen, welches laut Studien als alleinige Lernmethode nur einen sehr geringen Nutzen bringt."
+    },
+    "es": {
+      "curva del olvido": "Patrón que muestra cómo el olvido es rápido al principio y luego disminuye su velocidad de manera gradual.",
+      "efecto del espaciamiento": "Fenómeno en el cual distribuir la práctica en varios días facilita un aprendizaje y recuerdo más eficaces.",
+      "práctica distribuida": "Método de aprendizaje que consiste en separar las sesiones de estudio a lo largo de un tiempo determinado.",
+      "práctica masiva": "Concentración de todo el tiempo de estudio en una única sesión prolongada o bloque continuo.",
+      "efecto de prueba": "Fortalecimiento de la memoria mediante el esfuerzo activo por extraer información previamente aprendida.",
+      "dificultad deseable": "Obstáculo o reto intencional durante el estudio que incrementa el esfuerzo y mejora la retención a largo plazo.",
+      "pruebas de práctica": "Técnica basada en autoevaluarse de manera constante para comprobar y afianzar los conocimientos adquiridos.",
+      "baja utilidad": "Calificación otorgada a métodos de estudio que aportan beneficios mínimos en comparación con su costo en tiempo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

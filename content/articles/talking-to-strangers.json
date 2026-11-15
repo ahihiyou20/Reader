@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Why we underestimate talking to strangers",
-    "vi": "Vì sao ta đánh giá thấp việc trò chuyện với người lạ"
+    "vi": "Vì sao ta đánh giá thấp việc trò chuyện với người lạ",
+    "fr": "Pourquoi nous sous-estimons l'art de parler aux inconnus",
+    "de": "Warum wir unterschätzen, mit Fremden zu sprechen",
+    "es": "Por qué subestimamos hablar con extraños"
   },
   "hook": {
     "en": "On a crowded train, most people stare at their phones or out of the window. Talking to the person next to you feels awkward, and surely they would rather be left alone. A series of clever experiments suggests we have this [p:almost exactly backwards]. Small conversations with strangers tend to go far better than we expect, for both people.",
-    "vi": "Trên một chuyến tàu đông người, phần lớn mọi người dán mắt vào điện thoại hoặc nhìn ra ngoài cửa sổ. Bắt chuyện với người ngồi cạnh có vẻ ngượng ngùng, và hẳn họ chỉ muốn được yên tĩnh. Một loạt thí nghiệm khéo léo cho thấy chúng ta [p:hiểu gần như ngược hoàn toàn]. Những cuộc trò chuyện nhỏ với người lạ thường diễn ra tốt hơn nhiều so với ta tưởng, cho cả hai bên."
+    "vi": "Trên một chuyến tàu đông người, phần lớn mọi người dán mắt vào điện thoại hoặc nhìn ra ngoài cửa sổ. Bắt chuyện với người ngồi cạnh có vẻ ngượng ngùng, và hẳn họ chỉ muốn được yên tĩnh. Một loạt thí nghiệm khéo léo cho thấy chúng ta [p:hiểu gần như ngược hoàn toàn]. Những cuộc trò chuyện nhỏ với người lạ thường diễn ra tốt hơn nhiều so với ta tưởng, cho cả hai bên.",
+    "fr": "Dans un train bondé, la plupart des gens fixent leur téléphone ou regardent par la fenêtre. Parler à la personne assise à côté de vous semble gênant, et sûrement préférerait-elle être laissée tranquille. Une série d'expériences astucieuses suggère que nous avons tout [p:exactement faux]. Les petites conversations avec des inconnus ont tendance à beaucoup mieux se passer que prévu, pour les deux personnes.",
+    "de": "In einem vollen Zug starren die meisten Menschen auf ihre Handys oder aus dem Fenster. Mit der Person neben [p:dir] zu sprechen fühlt sich unangenehm an, und sicher möchte sie lieber in Ruhe gelassen werden. Eine Reihe cleverer Experimente legt nahe, dass wir das [p:fast genau verkehrtherum] sehen. Kleine Gespräche mit Fremden verlaufen tendenziell weitaus besser, als wir erwarten, und zwar für beide Seiten.",
+    "es": "En un tren abarrotado, la mayoría de la gente mira fijamente sus teléfonos o por la ventana. Hablar con la persona de al lado resulta incómodo y, seguramente, preferirían que los dejaran en paz. Una serie de ingeniosos experimentos sugiere que tenemos esto [p:casi exactamente al revés]. Las pequeñas conversaciones con extraños tienden a salir mucho mejor de lo que esperamos, para ambos."
   },
   "sections": [
     {
       "heading_en": "The commuter experiment",
       "heading_vi": "Thí nghiệm trên tàu",
       "body_en": "Psychologists Nicholas Epley and Juliana Schroeder approached commuters on trains and buses in Chicago. Some were asked to start a conversation with a stranger, some to keep to themselves, and some to do whatever they normally did. Before the ride, people predicted that talking would be the [y:least pleasant] option. Afterwards, those who had talked reported the [g:most pleasant] commute of all {epley-2014}. They did not report being less productive either. The only thing standing between them and a better journey was a mistaken forecast about how the conversation would go.",
-      "body_vi": "Hai nhà tâm lý học Nicholas Epley và Juliana Schroeder đã tiếp cận những người đi tàu và xe buýt ở Chicago. Một số được đề nghị bắt chuyện với một người lạ, một số giữ yên lặng, và số còn lại làm như mọi khi. Trước chuyến đi, mọi người dự đoán bắt chuyện sẽ là lựa chọn [y:kém dễ chịu nhất]. Sau chuyến đi, những người đã trò chuyện lại kể rằng hành trình của họ [g:dễ chịu nhất] {epley-2014}. Họ cũng không thấy mình làm việc kém hiệu quả hơn. Thứ duy nhất ngăn họ có một chuyến đi tốt hơn là một dự đoán sai về cuộc trò chuyện sẽ diễn ra thế nào."
+      "body_vi": "Hai nhà tâm lý học Nicholas Epley và Juliana Schroeder đã tiếp cận những người đi tàu và xe buýt ở Chicago. Một số được đề nghị bắt chuyện với một người lạ, một số giữ yên lặng, và số còn lại làm như mọi khi. Trước chuyến đi, mọi người dự đoán bắt chuyện sẽ là lựa chọn [y:kém dễ chịu nhất]. Sau chuyến đi, những người đã trò chuyện lại kể rằng hành trình của họ [g:dễ chịu nhất] {epley-2014}. Họ cũng không thấy mình làm việc kém hiệu quả hơn. Thứ duy nhất ngăn họ có một chuyến đi tốt hơn là một dự đoán sai về cuộc trò chuyện sẽ diễn ra thế nào.",
+      "heading_fr": "L'expérience des navetteurs",
+      "body_fr": "Les psychologues Nicholas Epley et Juliana Schroeder ont abordé des navetteurs dans des trains et des bus à Chicago. Certains devaient entamer une conversation avec un inconnu, d'autres rester tranquilles, et d'autres faire ce qu'ils faisaient d'habitude. Avant le trajet, les gens prédisaient que parler serait l'option la [y:moins agréable]. Après coup, ceux qui avaient parlé ont rapporté le trajet le [g:plus agréable] de tous {epley-2014}. Ils n'ont pas non plus signalé être moins productifs. La seule chose entre eux et un meilleur voyage était une prévision erronée sur le déroulement de la conversation.",
+      "heading_de": "Das Pendler-Experiment",
+      "body_de": "Die Psychologen Nicholas Epley und Juliana Schroeder sprachen Pendler in Zügen und Bussen in Chicago an. Einige wurden gebeten, ein Gespräch mit einem Fremden zu beginnen, einige für sich zu bleiben und andere das zu tun, was sie sonst taten. Vor der Fahrt prognostizierten die Menschen, dass Sprechen die [y:am wenigsten angenehme] Option sein würde. Danach berichteten diejenigen, die gesprochen hatten, von der [g:angenehmsten] Pendelfahrt überhaupt {epley-2014}. Sie berichteten auch nicht, weniger produktiv gewesen zu sein. Das Einzige, was zwischen ihnen und einer besseren Reise stand, war eine irrige Prognose darüber, wie das Gespräch verlaufen würde.",
+      "heading_es": "El experimento del viajero",
+      "body_es": "Los psicólogos Nicholas Epley y Juliana Schroeder abordaron a viajeros en trenes y autobuses en Chicago. A algunos se les pidió que iniciaran una conversación con un extraño, a otros que se mantuvieran al margen y a otros que hicieran lo que hacían normalmente. Antes del viaje, la gente predijo que hablar sería la opción [y:menos placentera]. Después, aquellos que habían hablado informaron haber tenido el viaje [g:más placentero] de todos {epley-2014}. Tampoco informaron ser menos productivos. Lo único que se interponía entre ellos y un mejor viaje era un pronóstico erróneo sobre cómo iría la conversación."
     },
     {
       "heading_en": "Why we stay silent",
       "heading_vi": "Vì sao ta im lặng",
       "body_en": "Why do we get this wrong? In the same research, people believed that strangers would [p:not want to talk] to them, and that the conversation would be hard to start. In reality, almost everyone who tried found the other person willing and friendly. Because everyone assumes others prefer silence, everyone stays silent, and nobody gets the chance to discover they were wrong. Psychologists call this kind of shared mistaken belief *pluralistic ignorance*. A carriage full of people who would all enjoy a chat can sit in silence for the whole journey.",
-      "body_vi": "Vì sao ta lại đoán sai? Trong cùng nghiên cứu, mọi người tin rằng người lạ sẽ [p:không muốn nói chuyện] với họ, và cuộc trò chuyện sẽ khó bắt đầu. Trên thực tế, gần như tất cả những ai thử đều thấy người kia sẵn lòng và thân thiện. Vì ai cũng nghĩ người khác thích im lặng, nên ai cũng im lặng, và không ai có cơ hội phát hiện ra mình đã sai. Các nhà tâm lý học gọi kiểu niềm tin sai lầm chung này là *sự thiếu hiểu biết đa số* (*pluralistic ignorance*). Cả một toa tàu đầy những người đều sẽ thích trò chuyện vẫn có thể ngồi im lặng suốt hành trình."
+      "body_vi": "Vì sao ta lại đoán sai? Trong cùng nghiên cứu, mọi người tin rằng người lạ sẽ [p:không muốn nói chuyện] với họ, và cuộc trò chuyện sẽ khó bắt đầu. Trên thực tế, gần như tất cả những ai thử đều thấy người kia sẵn lòng và thân thiện. Vì ai cũng nghĩ người khác thích im lặng, nên ai cũng im lặng, và không ai có cơ hội phát hiện ra mình đã sai. Các nhà tâm lý học gọi kiểu niềm tin sai lầm chung này là *sự thiếu hiểu biết đa số* (*pluralistic ignorance*). Cả một toa tàu đầy những người đều sẽ thích trò chuyện vẫn có thể ngồi im lặng suốt hành trình.",
+      "heading_fr": "Pourquoi nous restons silencieux",
+      "body_fr": "Pourquoi nous trompons-nous ? Dans la même recherche, les gens croyaient que les inconnus [p:ne voudraient pas leur parler], et que la discussion serait difficile à lancer. En réalité, presque tous ceux qui ont essayé ont trouvé l'autre personne disposée et amicale. Parce que tout le monde suppose que les autres préfèrent le silence, tout le monde se tait, et personne ne découvre qu'il avait tort. Les psychologues appellent ce type de croyance partagée erronée l'*ignorance pluraliste*. Une rame pleine de gens qui aimeraient discuter peut rester silencieuse tout le trajet.",
+      "heading_de": "Warum wir schweigen",
+      "body_de": "Warum liegen wir damit falsch? In derselben Untersuchung glaubten die Menschen, dass Fremde [p:nicht mit ihnen sprechen wollen] würden und dass das Gespräch schwer zu beginnen wäre. In Wirklichkeit erwies sich fast jeder, der es versuchte, als bereitwillig und freundlich. Da jeder annimmt, die anderen bevorzugen Stille, schweigen alle, und niemand bekommt die Chance herauszufinden, dass er falsch lag. Psychologen nennen diese Art von geteiltem Irrglauben *pluralistische Ignoranz*. Ein Waggon voller Menschen, die sich alle über einen Plausch freuen würden, kann die gesamte Fahrt über schweigen.",
+      "heading_es": "Por qué nos quedamos callados",
+      "body_es": "¿Por qué nos equivocamos en esto? En la misma investigación, la gente creía que los extraños [p:no querrían hablar] con ellos y que la conversación sería difícil de empezar. En realidad, casi todos los que lo intentaron encontraron a la otra persona dispuesta y amigable. Como todos asumen que los demás prefieren el silencio, todos guardan silencio y nadie tiene la oportunidad de descubrir que estaban equivocados. Los psicólogos llaman a este tipo de creencia compartida y errónea *ignorancia pluralista*. Un vagón lleno de gente que disfrutaría charlando puede permanecer en silencio durante todo el trayecto."
     },
     {
       "heading_en": "They liked you more than you think",
       "heading_vi": "Họ quý bạn hơn bạn nghĩ",
       "body_en": "Even after a conversation, we misjudge how it went. In studies of what researchers call the **liking gap**, pairs of strangers chatted and then rated how much they liked their partner and how much they thought their partner liked them. Again and again, people [y:underestimated] how much the other person liked them and enjoyed their company {boothby-2018}. While we replay our own awkward moments, the other person is often thinking about how interesting the conversation was. The gap appeared after short chats and even among new university roommates, where it lasted for months.",
-      "body_vi": "Ngay cả sau cuộc trò chuyện, ta vẫn đánh giá sai về nó. Trong các nghiên cứu về điều mà các nhà khoa học gọi là **khoảng cách thiện cảm** (*liking gap*), từng cặp người lạ trò chuyện với nhau rồi chấm điểm mình thích đối phương đến đâu và nghĩ đối phương thích mình đến đâu. Lần này qua lần khác, mọi người [y:đánh giá thấp] mức độ người kia quý mến và thích trò chuyện với mình {boothby-2018}. Trong khi ta tua đi tua lại những khoảnh khắc vụng về của bản thân, người kia thường đang nghĩ cuộc trò chuyện thật thú vị. Khoảng cách này xuất hiện sau những cuộc nói chuyện ngắn, và cả giữa những sinh viên mới ở chung phòng ký túc, nơi nó kéo dài hàng tháng."
+      "body_vi": "Ngay cả sau cuộc trò chuyện, ta vẫn đánh giá sai về nó. Trong các nghiên cứu về điều mà các nhà khoa học gọi là **khoảng cách thiện cảm** (*liking gap*), từng cặp người lạ trò chuyện với nhau rồi chấm điểm mình thích đối phương đến đâu và nghĩ đối phương thích mình đến đâu. Lần này qua lần khác, mọi người [y:đánh giá thấp] mức độ người kia quý mến và thích trò chuyện với mình {boothby-2018}. Trong khi ta tua đi tua lại những khoảnh khắc vụng về của bản thân, người kia thường đang nghĩ cuộc trò chuyện thật thú vị. Khoảng cách này xuất hiện sau những cuộc nói chuyện ngắn, và cả giữa những sinh viên mới ở chung phòng ký túc, nơi nó kéo dài hàng tháng.",
+      "heading_fr": "Ils vous ont apprécié plus que vous ne le pensez",
+      "body_fr": "Même après une conversation, nous jugeons mal son déroulement. Dans des études sur ce que les chercheurs appellent le **fossé d'appréciation**, des paires d'inconnus ont discuté puis évalué combien ils appréciaient leur partenaire et combien ils pensaient que leur partenaire les aimait. Encore et encore, les gens ont [y:sous-estimé] combien l'autre personne les aimait et appréciait leur compagnie {boothby-2018}. Alors que nous rejouons nos propres moments gênants, l'autre personne pense souvent à quel point la conversation était intéressante. Le fossé est apparu après de brèves discussions et même entre de nouveaux colocataires universitaires, où il a duré des mois.",
+      "heading_de": "Sie mochten dich mehr, als du denkst",
+      "body_de": "Selbst nach einem Gespräch schätzen wir falsch ein, wie es gelaufen ist. In Studien zu dem, was Forscher die **Lücke der Beliebtheit** nennen, unterhielten sich Paare von Fremden und bewerteten anschließend, wie sehr sie ihren Partner mochten und wie sehr sie dachten, dass ihr Partner sie mochte. Immer wieder [y:unterschätzten] die Menschen, wie sehr die andere Person sie mochte und ihre Gesellschaft genoss {boothby-2018}. Während wir unsere eigenen ungeschickten Momente wiederholen, denkt die andere Person oft darüber nach, wie interessant das Gespräch war. Die Lücke trat nach kurzen Unterhaltungen und sogar unter neuen Universitätsmitbewohnern auf, wo sie monatelang anhielt.",
+      "heading_es": "Les caíste mejor de lo que piensas",
+      "body_es": "Incluso después de una conversación, juzgamos mal cómo fue. En estudios de lo que los investigadores llaman la **brecha de simpatía**, parejas de extraños charlaron y luego calificaron cuánto les gustaba su compañero y cuánto creían que su compañero les gustaba a ellos. Una y otra vez, la gente [y:subestimó] cuánto le agradaba a la otra persona y cuánto disfrutaba de su compañía {boothby-2018}. Mientras nosotros revivimos nuestros propios momentos incómodos, la otra persona a menudo está pensando en lo interesante que fue la conversación. La brecha apareció después de charlas breves e incluso entre nuevos compañeros de habitación universitarios, donde duró meses."
     },
     {
       "heading_en": "Coffee with a little conversation",
       "heading_vi": "Cà phê kèm vài câu chuyện",
       "body_en": "Do tiny interactions really matter? In one study at a busy coffee shop, Gillian Sandstrom and Elizabeth Dunn asked some customers to be as efficient as possible with the barista, and others to have a genuine moment: smile, make eye contact and have a brief conversation. The customers who chatted left in a [g:better mood] and felt a stronger sense of belonging {sandstrom-2013}. They spent only a few seconds longer at the counter. Efficiency, it seems, can be overrated. Small human moments give us something that a quick transaction cannot.",
-      "body_vi": "Những tương tác nhỏ xíu có thực sự quan trọng? Trong một nghiên cứu tại một quán cà phê đông khách, Gillian Sandstrom và Elizabeth Dunn đề nghị một số khách hàng giao dịch thật nhanh gọn với nhân viên pha chế, và số khác có một khoảnh khắc thật lòng: mỉm cười, nhìn vào mắt và nói vài câu. Những khách đã trò chuyện ra về với [g:tâm trạng tốt hơn] và cảm giác gắn kết mạnh hơn {sandstrom-2013}. Họ chỉ đứng ở quầy lâu hơn vài giây. Có vẻ như sự hiệu quả đôi khi được đánh giá quá cao. Những khoảnh khắc nhỏ giữa người với người mang lại điều mà một giao dịch chớp nhoáng không thể có."
+      "body_vi": "Những tương tác nhỏ xíu có thực sự quan trọng? Trong một nghiên cứu tại một quán cà phê đông khách, Gillian Sandstrom và Elizabeth Dunn đề nghị một số khách hàng giao dịch thật nhanh gọn với nhân viên pha chế, và số khác có một khoảnh khắc thật lòng: mỉm cười, nhìn vào mắt và nói vài câu. Những khách đã trò chuyện ra về với [g:tâm trạng tốt hơn] và cảm giác gắn kết mạnh hơn {sandstrom-2013}. Họ chỉ đứng ở quầy lâu hơn vài giây. Có vẻ như sự hiệu quả đôi khi được đánh giá quá cao. Những khoảnh khắc nhỏ giữa người với người mang lại điều mà một giao dịch chớp nhoáng không thể có.",
+      "heading_fr": "Un café avec un peu de conversation",
+      "body_fr": "De minuscules interactions comptent-elles vraiment ? Dans une étude dans un café fréquenté, Gillian Sandstrom et Elizabeth Dunn ont demandé à certains clients d'être aussi efficaces que possible avec le barista, et à d'autres d'avoir un moment authentique : sourire, faire un contact visuel et avoir une brève discussion. Les clients qui ont bavardé sont partis dans une [g:meilleure humeur] et ont ressenti un plus fort sentiment d'appartenance {sandstrom-2013}. Ils n'ont passé que quelques secondes de plus au comptoir. L'efficacité, semble-t-il, peut être surestimée. Les petits moments humains nous apportent quelque chose qu'une transaction rapide ne peut offrir.",
+      "heading_de": "Kaffee mit ein wenig Gespräch",
+      "body_de": "Haben winzige Interaktionen wirklich eine Bedeutung? In einer Studie in einem geschäftigen Café baten Gillian Sandstrom und Elizabeth Dunn einige Kunden, so effizient wie möglich mit dem Barista zu sein, und andere, einen echten Moment zu erleben: lächeln, Blickkontakt aufnehmen und ein kurzes Gespräch führen. Die Kunden, die sich unterhalten hatten, gingen in einer [g:besseren Stimmung] weg und verspürten ein stärkeres Zugehörigkeitsgefühl {sandstrom-2013}. Sie verbrachten nur wenige Sekunden länger an der Theke. Effizienz kann offenbar überbewertet werden. Kleine menschliche Momente geben uns etwas, das eine schnelle Transaktion nicht bieten kann.",
+      "heading_es": "Café con un poco de conversación",
+      "body_es": "¿De verdad importan las interacciones diminutas? En un estudio realizado en una concurrida cafetería, Gillian Sandstrom y Elizabeth Dunn pidieron a algunos clientes que fueran lo más eficientes posible con el barista y a otros que tuvieran un momento genuino: sonreír, hacer contacto visual y mantener una breve conversación. Los clientes que charlaron se marcharon de [g:mejor humor] y sintieron un mayor sentido de pertenencia {sandstrom-2013}. Pasaron solo unos segundos más en el mostrador. La eficiencia, al parecer, puede estar sobrevalorada. Los pequeños momentos humanos nos dan algo que una transacción rápida no puede ofrecer."
     },
     {
       "heading_en": "The power of weak ties",
       "heading_vi": "Sức mạnh của những mối quan hệ lỏng",
       "body_en": "We usually think happiness comes from close friends and family, and those relationships do matter most. But Sandstrom and Dunn found that **weak ties**, the classmates, neighbours and shop assistants we see but do not know well, also count. On days when people interacted with [y:more weak ties] than usual, they felt happier and more connected {sandstrom-2014}. These light relationships are easy to overlook because each one seems trivial. Together, they form a web of familiar faces that makes a neighbourhood, a school or an office feel like a place where we belong.",
-      "body_vi": "Ta thường nghĩ hạnh phúc đến từ bạn thân và gia đình, và những mối quan hệ ấy đúng là quan trọng nhất. Nhưng Sandstrom và Dunn phát hiện rằng **những mối quan hệ lỏng**, như bạn cùng lớp, hàng xóm hay nhân viên cửa hàng mà ta gặp nhưng không thân, cũng có giá trị. Vào những ngày người ta tương tác với [y:nhiều mối quan hệ lỏng] hơn bình thường, họ thấy hạnh phúc hơn và gắn kết hơn {sandstrom-2014}. Những mối quan hệ nhẹ nhàng này dễ bị bỏ qua vì từng mối có vẻ không đáng kể. Gộp lại, chúng tạo thành một mạng lưới gương mặt quen thuộc khiến khu phố, trường học hay văn phòng trở thành nơi ta thuộc về."
+      "body_vi": "Ta thường nghĩ hạnh phúc đến từ bạn thân và gia đình, và những mối quan hệ ấy đúng là quan trọng nhất. Nhưng Sandstrom và Dunn phát hiện rằng **những mối quan hệ lỏng**, như bạn cùng lớp, hàng xóm hay nhân viên cửa hàng mà ta gặp nhưng không thân, cũng có giá trị. Vào những ngày người ta tương tác với [y:nhiều mối quan hệ lỏng] hơn bình thường, họ thấy hạnh phúc hơn và gắn kết hơn {sandstrom-2014}. Những mối quan hệ nhẹ nhàng này dễ bị bỏ qua vì từng mối có vẻ không đáng kể. Gộp lại, chúng tạo thành một mạng lưới gương mặt quen thuộc khiến khu phố, trường học hay văn phòng trở thành nơi ta thuộc về.",
+      "heading_fr": "Le pouvoir des liens faibles",
+      "body_fr": "Nous pensons généralement que le bonheur vient des amis proches et de la famille, et ces relations comptent le plus. Mais Sandstrom et Dunn ont découvert que les **liens faibles**, les camarades de classe, voisins et commerçants que nous voyons sans bien les connaître, comptent aussi. Les jours où les gens interagissaient avec [y:plus de liens faibles] que d'habitude, ils se sentaient plus heureux et plus connectés {sandstrom-2014}. Ces relations légères sont faciles à négliger car chacune semble anodine. Ensemble, elles forment un réseau de visages familiers qui donne à un quartier, une école ou un bureau l'impression d'un endroit où nous appartenons.",
+      "heading_de": "Die Macht schwacher Bindungen",
+      "body_de": "Wir denken normalerweise, Glück kommt von engen Freunden und Familie, und diese Beziehungen sind am wichtigsten. Aber Sandstrom und Dunn fanden heraus, dass **schwache Bindungen**, die Mitschüler, Nachbarn und Verkäufer, die wir sehen, aber nicht gut kennen, ebenfalls zählen. An Tagen, an denen Menschen mit [y:mehr schwachen Bindungen] als gewöhnlich interagierten, fühlten sie sich glücklicher und verbundener {sandstrom-2014}. Diese leichten Beziehungen sind leicht zu übersehen, da jede einzelne trivial erscheint. Zusammen bilden sie ein Netz vertrauter Gesichter, das ein Viertel, eine Schule oder ein Büro zu einem Ort macht, an dem wir dazugehören.",
+      "heading_es": "El poder de los lazos débiles",
+      "body_es": "Solemos pensar que la felicidad proviene de los amigos cercanos y la familia, y esas relaciones son las que más importan. Pero Sandstrom y Dunn descubrieron que los **lazos débiles**, los compañeros de clase, vecinos y dependientes de tiendas que vemos pero no conocemos bien, también cuentan. Los días en que las personas interactuaban con [y:más lazos débiles] de lo habitual, se sentían más felices y conectadas {sandstrom-2014}. Estas relaciones ligeras son fáciles de pasar por alto porque cada una parece trivial. Juntas, forman una red de rostros familiares que hace que un barrio, una escuela o una oficina se sientan como un lugar al que pertenecemos."
     },
     {
       "heading_en": "Say thank you, it lands better",
       "heading_vi": "Hãy nói lời cảm ơn, nó ý nghĩa hơn bạn nghĩ",
       "body_en": "The same pattern appears with gratitude. In studies by Amit Kumar and Nicholas Epley, people wrote letters thanking someone who had helped them. Writers expected the recipient to feel only mildly pleased and a little awkward. In fact, recipients felt [g:far more surprised and positive] than writers predicted, and much less awkward {kumar-2018}. Writers focused on whether their words were well chosen; recipients focused on the warmth behind them. Underestimating the impact, people often hold back thanks that would have meant a great deal to someone else.",
-      "body_vi": "Quy luật tương tự cũng xuất hiện với lòng biết ơn. Trong các nghiên cứu của Amit Kumar và Nicholas Epley, người tham gia viết thư cảm ơn một người từng giúp đỡ mình. Người viết nghĩ người nhận sẽ chỉ hơi vui và có chút ngượng. Thực tế, người nhận [g:bất ngờ và vui hơn nhiều] so với dự đoán, và ít ngượng hơn hẳn {kumar-2018}. Người viết bận tâm liệu lời lẽ có được chọn kỹ không; người nhận lại chú ý tới sự ấm áp đằng sau. Vì đánh giá thấp tác động ấy, người ta thường giữ lại những lời cảm ơn mà lẽ ra có ý nghĩa rất lớn với người khác."
+      "body_vi": "Quy luật tương tự cũng xuất hiện với lòng biết ơn. Trong các nghiên cứu của Amit Kumar và Nicholas Epley, người tham gia viết thư cảm ơn một người từng giúp đỡ mình. Người viết nghĩ người nhận sẽ chỉ hơi vui và có chút ngượng. Thực tế, người nhận [g:bất ngờ và vui hơn nhiều] so với dự đoán, và ít ngượng hơn hẳn {kumar-2018}. Người viết bận tâm liệu lời lẽ có được chọn kỹ không; người nhận lại chú ý tới sự ấm áp đằng sau. Vì đánh giá thấp tác động ấy, người ta thường giữ lại những lời cảm ơn mà lẽ ra có ý nghĩa rất lớn với người khác.",
+      "heading_fr": "Dites merci, cela résonne mieux",
+      "body_fr": "Le même schéma apparaît avec la gratitude. Dans des études d'Amit Kumar et Nicholas Epley, des gens ont écrit des lettres remerciant quelqu'un qui les avait aidés. Les auteurs s'attendaient à ce que le destinataire se sente à peine flatté et un peu gêné. En fait, les destinataires se sont sentis [g:beaucoup plus surpris et positifs] que ne le prévoyaient les auteurs, et bien moins gênés {kumar-2018}. Les rédacteurs se concentraient sur le choix de leurs mots ; les destinataires se concentraient sur la chaleur qui les motivait. Sous-estimant l'impact, les gens retiennent souvent des remerciements qui auraient signifié beaucoup pour autrui.",
+      "heading_de": "Sag Danke, das kommt besser an",
+      "body_de": "Dasselbe Muster zeigt sich bei Dankbarkeit. In Studien von Amit Kumar und Nicholas Epley schrieben Menschen Briefe, in denen sie jemandem dankten, der ihnen geholfen hatte. Die Schreiber erwarteten, dass der Empfänger sich nur mäßig erfreut und ein wenig unwohl fühlen würde. Tatsächlich fühlten sich die Empfänger [g:viel überraschter und positiver], als die Schreiber vorhergesagt hatten, und weit weniger peinlich berührt {kumar-2018}. Die Schreiber konzentrierten sich darauf, ob ihre Worte gut gewählt waren; die Empfänger konzentrierten sich auf die Wärme dahinter. Da sie die Wirkung unterschätzen, halten Menschen oft Dank zurück, der jemandem anderen viel bedeutet hätte.",
+      "heading_es": "Di gracias, se recibe mejor",
+      "body_es": "El mismo patrón aparece con la gratitud. En estudios realizados por Amit Kumar y Nicholas Epley, la gente escribió cartas agradeciendo a alguien que los había ayudado. Los escritores esperaban que el destinatario se sintiera solo levemente complacido y un poco incómodo. De hecho, los destinatarios se sintieron [g:mucho más sorprendidos y positivos] de lo que los escritores predijeron, y mucho menos incómodos {kumar-2018}. Los escritores se centraron en si sus palabras estaban bien elegidas; los destinatarios se centraron en la calidez detrás de ellas. Al subestimar el impacto, la gente a menudo se retiene de dar gracias que habrían significado mucho para otra persona."
     },
     {
       "heading_en": "A small experiment of your own",
       "heading_vi": "Một thí nghiệm nhỏ của riêng bạn",
       "body_en": "None of this means you must chat with everyone, or that every conversation will go well. Some people really do want quiet, and it is fine to respect that. But the research suggests our default settings are [p:too cautious]. We overestimate rejection and underestimate how much others enjoy connecting. The fix is low-risk: a comment about the weather, a question about what someone is reading, a real thank you to the person serving you. Treat it as an experiment. Most of the time, you will probably find that people are friendlier than your fears predicted.",
-      "body_vi": "Không điều nào ở trên có nghĩa bạn phải bắt chuyện với tất cả mọi người, hay mọi cuộc trò chuyện đều suôn sẻ. Có người thật sự muốn yên tĩnh, và tôn trọng điều đó là hoàn toàn ổn. Nhưng nghiên cứu cho thấy thiết lập mặc định của chúng ta [p:quá dè dặt]. Ta đánh giá quá cao khả năng bị từ chối và đánh giá thấp mức độ người khác thích kết nối. Cách khắc phục ít rủi ro: một câu bình luận về thời tiết, một câu hỏi về cuốn sách ai đó đang đọc, một lời cảm ơn thật lòng với người phục vụ bạn. Hãy coi đó là một thí nghiệm. Phần lớn thời gian, có lẽ bạn sẽ thấy mọi người thân thiện hơn nỗi sợ của mình dự đoán."
+      "body_vi": "Không điều nào ở trên có nghĩa bạn phải bắt chuyện với tất cả mọi người, hay mọi cuộc trò chuyện đều suôn sẻ. Có người thật sự muốn yên tĩnh, và tôn trọng điều đó là hoàn toàn ổn. Nhưng nghiên cứu cho thấy thiết lập mặc định của chúng ta [p:quá dè dặt]. Ta đánh giá quá cao khả năng bị từ chối và đánh giá thấp mức độ người khác thích kết nối. Cách khắc phục ít rủi ro: một câu bình luận về thời tiết, một câu hỏi về cuốn sách ai đó đang đọc, một lời cảm ơn thật lòng với người phục vụ bạn. Hãy coi đó là một thí nghiệm. Phần lớn thời gian, có lẽ bạn sẽ thấy mọi người thân thiện hơn nỗi sợ của mình dự đoán.",
+      "heading_fr": "Une petite expérience personnelle",
+      "body_fr": "Rien de tout cela ne signifie que vous devez bavarder avec tout le monde, ou que chaque conversation réussira. Certaines personnes veulent vraiment du calme, et il est bon de respecter cela. Mais la recherche suggère que nos paramètres par défaut sont [p:trop prudents]. Nous surestimons le rejet et sous-estimons combien les autres aiment se connecter. La solution comporte peu de risques : une remarque sur le temps, une question sur ce que lit quelqu'un, un vrai merci à la personne qui vous sert. Traitez cela comme une expérience. La plupart du temps, vous constaterez probablement que les gens sont plus amicaux que vos peurs ne le prédisaient.",
+      "heading_de": "Ein kleines Experiment in eigener Regie",
+      "body_de": "Nichts davon bedeutet, dass du mit jedem plaudern musst oder dass jedes Gespräch gut verlaufen wird. Manche Menschen wollen wirklich ihre Ruhe, und es ist in Ordnung, das zu respektieren. Aber die Forschung legt nahe, dass unsere Grundeinstellungen [p:zu vorsichtig] sind. Wir überschätzen Ablehnung und unterschätzen, wie sehr andere es genießen, eine Verbindung einzugehen. Die Lösung ist risikoarm: ein Kommentar über das Wetter, eine Frage dazu, was jemand liest, ein echtes Dankeschön an die Person, die dich bedient. Betrachte es als Experiment. Meistens wirst du wahrscheinlich feststellen, dass Menschen freundlicher sind, als deine Ängste vorhergesagt haben.",
+      "heading_es": "Un pequeño experimento propio",
+      "body_es": "Nada de esto significa que debas charlar con todo el mundo, o que cada conversación vaya a salir bien. Algunas personas realmente quieren tranquilidad y está bien respetarlo. Pero la investigación sugiere que nuestros ajustes predeterminados son [p:demasiado cautelosos]. Sobrecestimamos el rechazo y subestimamos cuánto disfrutan otros conectando. La solución es de bajo riesgo: un comentario sobre el clima, una pregunta sobre lo que alguien está leyendo, un agradecimiento real a la persona que te atiende. Trátalo como un experimento. La mayor parte del tiempo, probablemente descubrirás que la gente es más amigable de lo que tus miedos predijeron."
     }
   ],
   "keyPoint": {
     "en": "Our fear of awkward conversations is like [p:a weather forecast that always predicts rain]: it keeps us indoors on sunny days. When you hesitate to speak to someone, remember that they will probably *enjoy it more than you expect*, and so will you.",
-    "vi": "Nỗi sợ những cuộc trò chuyện ngượng ngùng giống như [p:một bản dự báo thời tiết lúc nào cũng báo mưa]: nó giữ ta ở trong nhà cả những ngày nắng đẹp. Khi bạn ngần ngại nói chuyện với ai đó, hãy nhớ rằng có lẽ họ sẽ *thích điều đó hơn bạn tưởng*, và bạn cũng vậy."
+    "vi": "Nỗi sợ những cuộc trò chuyện ngượng ngùng giống như [p:một bản dự báo thời tiết lúc nào cũng báo mưa]: nó giữ ta ở trong nhà cả những ngày nắng đẹp. Khi bạn ngần ngại nói chuyện với ai đó, hãy nhớ rằng có lẽ họ sẽ *thích điều đó hơn bạn tưởng*, và bạn cũng vậy.",
+    "fr": "Notre peur des conversations gênantes ressemble à [p:une météo qui prédit toujours la pluie] : elle nous garde à l'intérieur les jours de soleil. Lorsque vous hésitez à parler à quelqu'un, rappelez-vous qu'il *l'appréciera probablement plus que vous ne l'espérez*, et vous aussi.",
+    "de": "Unsere Angst vor unangenehmen Gesprächen ist wie [p:ein Wetterbericht, der immer Regen voraussagt]: Sie hält uns an sonnigen Tagen drinnen. Wenn du zögerst, mit jemandem zu sprechen, erinnere dich daran, dass es ihnen wahrscheinlich *mehr Spaß macht, als du erwartest*, und dir genauso.",
+    "es": "Nuestro miedo a las conversaciones incómodas es como [p:un pronóstico del tiempo que siempre predice lluvia]: nos mantiene adentro en los días soleados. Cuando dudes en hablar con alguien, recuerda que probablemente *lo disfrutará más de lo que esperas*, y tú también."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Tuần này hãy bắt chuyện ngắn với một người bạn thường gặp nhưng hiếm khi nói chuyện.",
       "Sau một cuộc trò chuyện, ghi lại bạn nghĩ người kia quý mình đến đâu, rồi nhớ đến khoảng cách thiện cảm.",
       "Gửi một tin nhắn cảm ơn hai câu tới một người đã giúp bạn trong năm qua."
+    ],
+    "fr": [
+      "Commencez une courte conversation cette semaine avec quelqu'un que vous voyez souvent mais à qui vous parlez rarement.",
+      "Après une discussion, notez à quel point vous pensez qu'il vous a apprécié, puis rappelez-vous du fossé d'appréciation.",
+      "Envoyez un message de remerciement en deux phrases à quelqu'un qui vous a aidé l'année dernière."
+    ],
+    "de": [
+      "Starte diese Woche ein kurzes Gespräch mit jemandem, den du oft siehst, aber selten sprichst.",
+      "Schreibe nach einem Plausch auf, für wie beliebt sie dich deiner Meinung nach gehalten haben, und erinnere dich dann an die Lücke der Beliebtheit.",
+      "Sende eine Nachricht aus zwei Sätzen als Dankeschön an jemanden, der dir im vergangenen Jahr geholfen hat."
+    ],
+    "es": [
+      "Inicia una conversación corta esta semana con alguien a quien ves a menudo pero con quien rara vez hablas.",
+      "Después de una charla, anota cuánto crees que le caíste bien, luego recuerda la brecha de simpatía.",
+      "Envía un mensaje de agradecimiento de dos frases a alguien que te haya ayudado en el año pasado."
     ]
   },
   "references": [
@@ -113,7 +179,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ",
     "wide": "https://images.unsplash.com/44/E5KMvPp9SsCnqmEGUwAS_2014-08-10%2012.56.40%201.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@danielruswick?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@danielruswick?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "/covers/video/talking-to-strangers.mp4",
+      "wide": "/covers/video/talking-to-strangers-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-1360/"
+    }
   },
   "origin": {
     "group": 4,
@@ -125,5 +197,67 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBACdASoQABwAPu1krU6ppaSiMAgBMB2JYwC7AYuu31gPH0ZT4UqeNE/hC5AA/u0+BbAEtf3shD1MC+34+PdlWtSBsrewdFZabNVyY6L9XQxP09z7jbHRAyg1XS+oFwuCaFAckgWpm72plIo8cLMVtHaFxES4myFw5JtYL09lbUaYM5WN5IIp8k8GXvfMpw/FFzH7ER4Wk7J6SoZdVK3h8bieyj0hfs4g28b/3GkZtJdx41rsQAAA",
-  "dominant": "#767065"
+  "dominant": "#767065",
+  "glossary": {
+    "en": {
+      "commuter": "A person who travels some distance to work on a regular basis.",
+      "pluralistic ignorance": "A situation where most members of a group privately reject a norm, but assume everyone else accepts it.",
+      "liking gap": "The difference between how much you think your conversation partner likes you and how much they actually do.",
+      "barista": "A person who serves in a coffee shop.",
+      "weak ties": "Acquaintances and casual contacts whom we see regularly but do not know well.",
+      "gratitude": "The quality of being thankful and showing appreciation to someone.",
+      "recipient": "A person who receives something that is given or sent.",
+      "psychologists": "Scientists who study the human mind and behavior."
+    },
+    "vi": {
+      "sự thiếu hiểu biết đa số": "Hiện tượng mọi người cùng tin rằng người khác có quan điểm khác mình, dẫn đến việc không ai dám hành động.",
+      "khoảng cách thiện cảm": "Sự lệch pha giữa mức độ thực tế mà người khác thích bạn và mức độ bạn nghĩ họ thích bạn.",
+      "những mối quan hệ lỏng": "Các mối quan hệ xã hội quen biết nhưng không thân thiết như hàng xóm hay nhân viên cửa hàng.",
+      "nicholas epley": "Nhà tâm lý học thực hiện các nghiên cứu về hành vi giao tiếp và tương tác xã hội.",
+      "juliana schroeder": "Nhà nghiên cứu tâm lý học đồng tác giả trong các thí nghiệm về trò chuyện trên phương tiện công cộng.",
+      "gillian sandstrom": "Nhà nghiên cứu tập trung vào tác động của những tương tác nhỏ và mối quan hệ lỏng.",
+      "elizabeth dunn": "Nhà khoa học nghiên cứu về hạnh phúc và sự gắn kết xã hội thông qua các cuộc trò chuyện.",
+      "amit kumar": "Nhà nghiên cứu về tâm lý học hành vi và tác động của lòng biết ơn đối với con người."
+    },
+    "fr": {
+      "ignorance pluraliste": "Croyance partagée erronée où chacun suppose à tort que les autres partagent un avis différent du sien.",
+      "fossé d'appréciation": "Écart systématique entre la façon dont nous pensons être perçus et l'appréciation réelle de notre interlocuteur.",
+      "liens faibles": "Relations superficielles avec des connaissances occasionnelles comme des voisins ou des commerçants.",
+      "navetteurs": "Personnes qui effectuent régulièrement un trajet entre leur domicile et leur lieu de travail.",
+      "barista": "Employé spécialisé dans la préparation et le service de cafés.",
+      "gratitude": "Sentiment de reconnaissance envers quelqu'un qui a apporté de l'aide ou du soutien.",
+      "interaction": "Action réciproque entre deux ou plusieurs personnes lors d'une communication.",
+      "paramètres par défaut": "Réactions automatiques et habituelles face à une situation sociale incertaine."
+    },
+    "de": {
+      "pluralistische ignoranz": "Phänomen, bei dem alle annehmen, andere bevorzugen Stille, weshalb alle schweigen.",
+      "lücke der beliebtheit": "Systematische Unterschätzung, wie sehr das Gegenüber einen nach einem Gespräch mag.",
+      "schwache bindungen": "Bekannte, Nachbarn oder Dienstleister, die man regelmäßig sieht, aber nicht gut kennt.",
+      "pendler": "Menschen, die täglich zur Arbeit oder Schule reisen.",
+      "interaktionen": "Soziale Handlungen und Begegnungen zwischen Menschen.",
+      "barista": "Fachkraft für die Zubereitung von Kaffeegetränken in Cafés.",
+      "effizienz": "Möglichst hoher Nutzen mit geringem Aufwand oder Zeitverlust.",
+      "dankbarkeit": "Gefühl und Ausdruck von Anerkennung für eine erhaltene Hilfe oder Geste."
+    },
+    "es": {
+      "ignorancia pluralista": "Fenómeno en el que un grupo asume erróneamente que todos los demás comparten normas contrarias a sus propios deseos.",
+      "brecha de simpatía": "Discrepancia entre cómo una persona evalúa su propia simpatía y cómo cree que los demás la perciben.",
+      "lazos débiles": "Relaciones superficiales y cotidianas con conocidos, vecinos o dependientes que aportan bienestar a pesar de su levedad.",
+      "nicholas epley": "Psicólogo conductual estadounidense cuyas investigaciones exploran la interacción social y los sesgos sobre los extraños.",
+      "juliana schroeder": "Investigadora que colabora en estudios sobre la psicología de la comunicación y el impacto de hablar con desconocidos.",
+      "gillian sandstrom": "Científica que estudia la felicidad derivada de las interacciones sociales breves y los lazos débiles comunitarios.",
+      "barista": "Profesional especializado en la preparación de café de alta calidad y atención rápida al cliente."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }
