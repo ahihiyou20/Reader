@@ -27,7 +27,8 @@ export const STANDARDS = {
 } satisfies Record<string, Standard>;
 
 const GLOSSARY_MIN = 8;
-const onDisk = (url: string | undefined) => Boolean(url?.startsWith('/') && fs.existsSync(path.join(ROOT, 'public', url)));
+/** A clip on R2 (an absolute URL) or a file in public/. */
+const clipThere = (url: string | undefined) => Boolean(url && (/^https?:/.test(url) || (url.startsWith('/') && fs.existsSync(path.join(ROOT, 'public', url)))));
 
 export const articleWords = (a: Pick<ArticleSource, 'hook' | 'sections'>) => proseWords(a.hook.en) + a.sections.reduce((n, s) => n + proseWords(s.body_en), 0);
 
@@ -57,7 +58,7 @@ export function standardProblems(a: ArticleSource, s: Standard): string[] {
   if (s.groups.length === 1 && !unsplash) out.push('cover is not an Unsplash photo');
   else if (unsplash && !c.wide) out.push('cover has no landscape version');
   // A clip queued in coverClip is cut by finish-articles.yml once the article is on main.
-  if (s.motion && !(onDisk(c.video?.url) && onDisk(c.video?.wide)) && !/pixabay\.com\/videos\//.test(a.coverClip ?? ''))
-    out.push('no motion cover (a Pixabay clip in public/covers/video, or one queued in coverClip)');
+  if (s.motion && !(clipThere(c.video?.url) && clipThere(c.video?.wide)) && !/pixabay\.com\/videos\//.test(a.coverClip ?? ''))
+    out.push('no motion cover (a Pixabay clip, cut or queued in coverClip)');
   return out;
 }

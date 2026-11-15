@@ -6,7 +6,8 @@
 # no upper limit.
 # The articles wait in one rolling pull request from bot/new-articles until it is merged (merging starts
 # finish-articles.yml), or go straight to main when the variable GEMINI_AUTO_PUBLISH is "true".
-# Secrets: GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, PIXABAY_API_KEY (FIRECRAWL_API_KEY optional). Variables
+# Secrets: GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, PIXABAY_API_KEY, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY
+# (FIRECRAWL_API_KEY optional); variables R2_BUCKET and R2_PUBLIC_URL for the clips. Variables
 # (optional): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, FIRECRAWL_MAX_PER_RUN. The pull request needs
 # Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
 name: Gemini writer
@@ -28,6 +29,12 @@ env:
   BRANCH: bot/new-articles
   AUTO_PUBLISH: ${{ vars.GEMINI_AUTO_PUBLISH == 'true' || vars.FEEDS_AUTO_PUBLISH == 'true' }}
   MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS != 'false' }}
+  # Motion-cover clips go to Cloudflare R2 (scripts/pipeline/r2.ts); without these, into public/covers/video/.
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  R2_BUCKET: ${{ vars.R2_BUCKET }}
+  R2_PUBLIC_URL: ${{ vars.R2_PUBLIC_URL }}
 jobs:
   write:
     runs-on: ubuntu-latest
@@ -108,7 +115,7 @@ jobs:
           PR: ${{ steps.branch.outputs.pr }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: |
-          git add content public/covers/video
+          git add -A content public/covers/video
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
           git commit -q -m "content: Gemini articles $(date -u +%F)"
           if [ "$AUTO_PUBLISH" = "true" ]; then
