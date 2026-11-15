@@ -117,9 +117,24 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "white dwarf": "The dense stellar remnant left behind after a sun-like star exhausts its fuel.",
+      "space debris": "Scattered remnants and fragments of shredded planetary matter orbiting in outer space.",
+      "light-years": "An astronomical distance unit equal to the distance light travels in one year.",
+      "stellar evolution": "The life cycle and transformative stages a star experiences over billions of years.",
+      "chemical signatures": "Distinct elemental compositions that reveal the origin and makeup of celestial materials.",
+      "magnesium": "A metallic element commonly found in the rocky composition of planets.",
+      "inner planets": "Rocky celestial bodies orbiting closest to a central star in a planetary system.",
+      "celestial bodies": "Natural physical objects in outer space, including stars, planets, and asteroids.",
+      "planetoid": "A small celestial object resembling a planet, typically larger than an asteroid.",
+      "disc systems": "Flattened, rotating rings of cosmic dust, rubble, and planetary fragments orbiting a star."
+    }
   }
 }

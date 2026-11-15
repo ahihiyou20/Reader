@@ -12,30 +12,54 @@
   ],
   "title": {
     "en": "NASA's Juno Reveals Jupiter's Complex Shield Against Solar Wind",
-    "vi": "Juno của NASA hé lộ chiếc khiên phức tạp của Sao Mộc trước gió mặt trời"
+    "vi": "Juno của NASA hé lộ chiếc khiên phức tạp của Sao Mộc trước gió mặt trời",
+    "fr": "Juno de la NASA révèle le bouclier complexe de Jupiter face au vent solaire",
+    "de": "NASAs Juno enthüllt Jupiters komplexen Schutzschild gegen den Sonnenwind",
+    "es": "Juno de la NASA revela el complejo escudo de Júpiter contra el viento solar"
   },
   "hook": {
     "en": "NASA's Juno spacecraft has uncovered astonishing details about how Jupiter manages solar particle streams {source}. Using advanced measurements, scientists discovered that the largest planet in our solar system utilizes an intricate defense system of multi-frequency waves and secondary shock structures, far outstripping Earth's simpler protective boundary and offering insights into cosmic events.",
-    "vi": "Tàu vũ trụ Juno của NASA vừa hé lộ những chi tiết đáng kinh ngạc về cách Sao Mộc quản lý các dòng hạt mặt trời {source}. Sử dụng các phép đo tiên tiến, các nhà khoa học phát hiện ra rằng hành tinh lớn nhất trong thái dương hệ sở hữu một hệ thống phòng thủ phức tạp gồm các sóng đa tần và cấu trúc sốc thứ cấp, vượt trội hơn nhiều so với ranh giới bảo vệ đơn giản của Trái Đất và mang lại góc nhìn về các sự kiện vũ trụ."
+    "vi": "Tàu vũ trụ Juno của NASA vừa hé lộ những chi tiết đáng kinh ngạc về cách Sao Mộc quản lý các dòng hạt mặt trời {source}. Sử dụng các phép đo tiên tiến, các nhà khoa học phát hiện ra rằng hành tinh lớn nhất trong thái dương hệ sở hữu một hệ thống phòng thủ phức tạp gồm các sóng đa tần và cấu trúc sốc thứ cấp, vượt trội hơn nhiều so với ranh giới bảo vệ đơn giản của Trái Đất và mang lại góc nhìn về các sự kiện vũ trụ.",
+    "fr": "La sonde spatiale Juno de la NASA a révélé des détails stupéfiants sur la façon dont Jupiter gère les flux de particules solaires {source}. Grâce à des mesures avancées, les scientifiques ont découvert que la plus grande planète de notre système solaire utilise un système de défense complexe fait d'ondes multifréquences et de structures de choc secondaires, surpassant de loin la frontière protectrice plus simple de la Terre et offrant de précieux éclairages sur des événements cosmiques.",
+    "de": "Die NASA-Raumsonde Juno hat erstaunliche Details darüber aufgedeckt, wie der Jupiter Ströme solarer Teilchen bewältigt {source}. Anhand hochpräziser Messungen fanden Forschende heraus, dass der größte Planet unseres Sonnensystems ein komplexes Abwehrsystem aus Mehrfrequenzwellen und sekundären Schockstrukturen nutzt. Dieses übertrifft die einfachere Schutzgrenze der Erde bei Weitem und liefert zugleich neue Erkenntnisse über kosmische Ereignisse.",
+    "es": "La nave espacial Juno de la NASA ha revelado detalles asombrosos sobre cómo Júpiter gestiona los flujos de partículas solares {source}. Mediante mediciones avanzadas, los científicos descubrieron que el planeta más grande de nuestro sistema solar utiliza un intrincado sistema de defensa compuesto por ondas multifrecuencia y estructuras de choque secundarias, superando con creces el límite protector más simple de la Tierra y ofreciendo nuevas perspectivas sobre eventos cósmicos."
   },
   "sections": [
     {
       "heading_en": "Multi-Frequency Defense",
       "heading_vi": "Hệ thống phòng thủ đa tần số",
       "body_en": "The spacecraft examined Jupiter's [p:bow shock], an invisible region where solar wind meets the planet's magnetic environment. Unlike Earth, which primarily relies on a single frequency of [g:plasma waves], Jupiter employs a richer harmonic structure. This symphony of multiple frequencies allows the giant planet to slow and heat incoming energetic particles far more effectively.",
-      "body_vi": "Tàu vũ trụ đã khảo sát [p:vùng sốc cung] (*bow shock*) của Sao Mộc, ranh giới vô hình nơi gió mặt trời gặp môi trường từ tính. Không giống Trái Đất, vốn chủ yếu dựa vào một tần số duy nhất của [g:sóng plasma] (*plasma waves*), Sao Mộc sử dụng cấu trúc hài âm phong phú hơn. Bản giao hưởng nhiều tần số này giúp hành tinh khổng lồ làm chậm và làm nóng các hạt năng lượng đến hiệu quả hơn rất nhiều."
+      "body_vi": "Tàu vũ trụ đã khảo sát [p:vùng sốc cung] (*bow shock*) của Sao Mộc, ranh giới vô hình nơi gió mặt trời gặp môi trường từ tính. Không giống Trái Đất, vốn chủ yếu dựa vào một tần số duy nhất của [g:sóng plasma] (*plasma waves*), Sao Mộc sử dụng cấu trúc hài âm phong phú hơn. Bản giao hưởng nhiều tần số này giúp hành tinh khổng lồ làm chậm và làm nóng các hạt năng lượng đến hiệu quả hơn rất nhiều.",
+      "heading_fr": "Défense multifréquence",
+      "body_fr": "La sonde a examiné le [p:choc d'étrave] de Jupiter, une région invisible où le vent solaire rencontre l'environnement magnétique de la planète. Contrairement à la Terre, qui s'appuie principalement sur une fréquence unique d'[g:ondes de plasma], Jupiter emploie une structure harmonique plus riche. Cette symphonie de fréquences multiples permet à la planète géante de ralentir et d'échauffer les particules énergétiques incidentes avec bien plus d'efficacité.",
+      "heading_de": "Abwehr auf mehreren Frequenzen",
+      "body_de": "Die Raumsonde untersuchte Jupiters [p:Bugstoßwelle], eine unsichtbare Region, in der der Sonnenwind auf das magnetische Umfeld des Planeten trifft. Anders als die Erde, die sich vorwiegend auf eine einzelne Frequenz von [g:Plasmawellen] stützt, verfügt der Jupiter über eine reichhaltigere harmonische Struktur. Diese Sinfonie aus mehreren Frequenzen ermöglicht es dem Riesenplaneten, einfallende energiereiche Teilchen weitaus effektiver abzubremsen und aufzuheizen.",
+      "heading_es": "Defensa multifrecuencia",
+      "body_es": "La nave espacial examinó el [p:choque de proa] de Júpiter, una región invisible donde el viento solar se encuentra con el entorno magnético del planeta. A diferencia de la Tierra, que depende principalmente de una única frecuencia de [g:ondas de plasma], Júpiter emplea una estructura armónica más rica. Esta sinfonía de múltiples frecuencias permite que el planeta gigante desacelere y caliente las partículas energéticas entrantes con mucha mayor eficacia."
     },
     {
       "heading_en": "Extra Layers of Protection",
       "heading_vi": "Các lớp bảo vệ bổ sung",
       "body_en": "Before reaching this main boundary, solar particles encounter smaller formations known as shocklets. These extra defense layers provide an additional step in managing the heavy energy load from the Sun. Earth lacks these precursor regions because the impact it faces is considerably less intense compared to the massive Jovian environment.",
-      "body_vi": "Trước khi chạm tới ranh giới chính này, các hạt mặt trời phải đối mặt với những cấu trúc nhỏ hơn gọi là các tiểu sóng sốc (*shocklets*). Các lớp phòng thủ phụ này tạo thêm một bước xử lý tải năng lượng lớn từ Mặt Trời. Trái Đất thiếu các vùng tiền thân này vì tác động mà nó phải chịu kém mãnh liệt hơn đáng kể so với môi trường Sao Mộc đồ sộ."
+      "body_vi": "Trước khi chạm tới ranh giới chính này, các hạt mặt trời phải đối mặt với những cấu trúc nhỏ hơn gọi là các tiểu sóng sốc (*shocklets*). Các lớp phòng thủ phụ này tạo thêm một bước xử lý tải năng lượng lớn từ Mặt Trời. Trái Đất thiếu các vùng tiền thân này vì tác động mà nó phải chịu kém mãnh liệt hơn đáng kể so với môi trường Sao Mộc đồ sộ.",
+      "heading_fr": "Couches de protection supplémentaires",
+      "body_fr": "Avant d'atteindre cette frontière principale, les particules solaires rencontrent de plus petites formations appelées shocklets. Ces couches de protection supplémentaires fournissent une étape additionnelle pour réguler l'intense charge énergétique provenant du Soleil. La Terre est dépourvue de ces zones précurseurs, car l'impact qu'elle subit est nettement moins violent comparé au colossal environnement jovien.",
+      "heading_de": "Zusätzliche Schutzschichten",
+      "body_de": "Bevor sie diese Hauptgrenze erreichen, treffen die solaren Teilchen auf kleinere Formationen, sogenannte Shocklets. Diese zusätzlichen Schutzschichten stellen eine weitere Stufe dar, um die enorme Energielast der Sonne zu bewältigen. Der Erde fehlen derartige Vorläuferregionen, da die Einwirkungen auf sie im Vergleich zum gewaltigen jovianischen Umfeld deutlich weniger intensiv sind.",
+      "heading_es": "Capas adicionales de protección",
+      "body_es": "Antes de alcanzar este límite principal, las partículas solares se topan con formaciones más pequeñas conocidas como microchoques. Estas capas de defensa adicionales proporcionan un paso extra en la gestión de la intensa carga energética proveniente del Sol. La Tierra carece de estas regiones precursoras porque el impacto al que se enfrenta es considerablemente menos intenso en comparación con el colosal entorno joviano."
     },
     {
       "heading_en": "Insights into Exploding Stars",
       "heading_vi": "Góc nhìn về các ngôi sao phát nổ",
       "body_en": "Beyond our solar system, these findings act as a natural laboratory for understanding powerful cosmic phenomena. The physical processes observed around Jupiter share striking similarities with extreme shock waves produced by exploding stars. By studying these dynamics closely, researchers can model cosmic energy transfer much more accurately.",
-      "body_vi": "Ngoài hệ mặt trời của chúng ta, những phát hiện này đóng vai trò như một phòng thí nghiệm tự nhiên để hiểu về các hiện tượng vũ trụ mạnh mẽ. Các quá trình vật lý quan sát được quanh Sao Mộc có những điểm tương đồng nổi bật với các sóng sốc cực đoan do các ngôi sao phát nổ tạo ra. Bằng cách nghiên cứu kỹ các động lực này, các nhà nghiên cứu có thể mô phỏng việc truyền năng lượng vũ trụ chính xác hơn nhiều."
+      "body_vi": "Ngoài hệ mặt trời của chúng ta, những phát hiện này đóng vai trò như một phòng thí nghiệm tự nhiên để hiểu về các hiện tượng vũ trụ mạnh mẽ. Các quá trình vật lý quan sát được quanh Sao Mộc có những điểm tương đồng nổi bật với các sóng sốc cực đoan do các ngôi sao phát nổ tạo ra. Bằng cách nghiên cứu kỹ các động lực này, các nhà nghiên cứu có thể mô phỏng việc truyền năng lượng vũ trụ chính xác hơn nhiều.",
+      "heading_fr": "Un aperçu des étoiles en explosion",
+      "body_fr": "Au-delà de notre système solaire, ces découvertes servent de laboratoire naturel pour appréhender d'intenses phénomènes cosmiques. Les processus physiques observés autour de Jupiter présentent des similarités frappantes avec les ondes de choc extrêmes produites par l'explosion d'étoiles. En étudiant ces dynamiques de près, les chercheurs peuvent modéliser le transfert d'énergie cosmique avec une précision accrue.",
+      "heading_de": "Einblicke in explodierende Sterne",
+      "body_de": "Über unser Sonnensystem hinaus fungieren diese Erkenntnisse als natürliches Laboratorium, um gewaltige kosmische Phänomene besser zu verstehen. Die um den Jupiter beobachteten physikalischen Prozesse weisen verblüffende Ähnlichkeiten mit extremen Stoßwellen auf, wie sie bei Sternexplosionen entstehen. Durch die eingehende Untersuchung dieser Dynamiken können Forschende den kosmischen Energietransfer künftig wesentlich präziser modellieren.",
+      "heading_es": "Perspectivas sobre estrellas en explosión",
+      "body_es": "Más allá de nuestro sistema solar, estos hallazgos actúan como un laboratorio natural para comprender fenómenos cósmicos de gran potencia. Los procesos físicos observados alrededor de Júpiter guardan sorprendentes similitudes con las ondas de choque extremas producidas por estrellas en explosión. Al estudiar estas dinámicas de cerca, los investigadores pueden modelar la transferencia de energía cósmica con mucha mayor precisión."
     }
   ],
   "references": [
@@ -70,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Jupiter's defense system acts like a sophisticated orchestra utilizing diverse musical notes to absorb harsh impacts. How might understanding this planetary shield change our broader comprehension of cosmic energy across the universe?",
-    "vi": "Hệ thống phòng thủ của Sao Mộc hoạt động như một dàn nhạc tinh tế sử dụng nhiều nốt nhạc đa dạng để hấp thụ các tác động khắc nghiệt. Việc thấu hiểu chiếc khiên hành tinh này có thể thay đổi sự hiểu biết rộng hơn của chúng ta về năng lượng vũ trụ trên khắp vũ trụ như thế nào?"
+    "vi": "Hệ thống phòng thủ của Sao Mộc hoạt động như một dàn nhạc tinh tế sử dụng nhiều nốt nhạc đa dạng để hấp thụ các tác động khắc nghiệt. Việc thấu hiểu chiếc khiên hành tinh này có thể thay đổi sự hiểu biết rộng hơn của chúng ta về năng lượng vũ trụ trên khắp vũ trụ như thế nào?",
+    "fr": "Le système de défense de Jupiter agit comme un orchestre sophistiqué tirant parti de diverses notes de musique pour absorber de violents impacts. En quoi la compréhension de ce bouclier planétaire pourrait-elle transformer notre perception globale de l'énergie cosmique à travers l'Univers ?",
+    "de": "Jupiters Schutzsystem wirkt wie ein raffiniertes Orchester, das unterschiedlichste Töne nutzt, um heftige Einwirkungen abzufedern. Inwiefern könnte das Verständnis dieses planetaren Schutzschildes unsere allgemeine Vorstellung von kosmischer Energie im gesamten Universum verändern?",
+    "es": "El sistema de defensa de Júpiter actúa como una sofisticada orquesta que utiliza diversas notas musicales para absorber impactos severos. ¿Cómo podría la comprensión de este escudo planetario transformar nuestro entendimiento general de la energía cósmica en el universo?"
   },
   "applySteps": {
     "en": [
@@ -82,6 +109,21 @@
       "Đọc về các mục tiêu sứ mệnh Juno của NASA trực tuyến.",
       "Tìm kiếm các cập nhật gần đây về từ trường hành tinh.",
       "Thảo luận cách thời tiết không gian ảnh hưởng đến hệ mặt trời."
+    ],
+    "fr": [
+      "Découvrir en ligne les objectifs de la mission Juno de la NASA.",
+      "Rechercher les dernières publications concernant les champs magnétiques planétaires.",
+      "Discuter de la façon dont la météo spatiale influence notre système solaire."
+    ],
+    "de": [
+      "Die Missionsziele von NASAs Juno online nachlesen.",
+      "Nach aktuellen Entwicklungen zu planetaren Magnetfeldern suchen.",
+      "Diskutieren, wie das Weltraumwetter unser Sonnensystem beeinflusst."
+    ],
+    "es": [
+      "Leer en línea sobre los objetivos de la misión Juno de la NASA.",
+      "Buscar actualizaciones recientes sobre los campos magnéticos planetarios.",
+      "Debatir sobre cómo el clima espacial afecta a nuestro sistema solar."
     ]
   },
   "coverCandidates": [
@@ -118,9 +160,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "juno spacecraft": "A NASA space probe designed to orbit and study Jupiter and its surroundings.",
+      "solar wind": "A continuous stream of charged particles released from the Sun into space.",
+      "bow shock": "The boundary region where solar wind slows dramatically against a planet's magnetic field.",
+      "plasma waves": "Oscillations of charged particles and electromagnetic fields moving through space plasma.",
+      "harmonic structure": "A complex arrangement of multiple interrelated frequencies acting together.",
+      "shocklets": "Small, secondary shock waves occurring ahead of the main planetary bow shock.",
+      "precursor regions": "Upstream areas where incoming particles begin slowing down before hitting the main boundary.",
+      "jovian": "Relating to or characteristic of the planet Jupiter.",
+      "magnetic environment": "The region around a planet dominated and protected by its magnetic field.",
+      "shock waves": "Powerful disturbance fronts that rapidly compress and heat surrounding cosmic material.",
+      "cosmic phenomena": "Energetic, large-scale events or processes taking place across the universe.",
+      "space weather": "Variable environmental conditions in space caused by solar radiation and energetic particles."
+    },
+    "vi": {
+      "juno": "Tàu vũ trụ của NASA chuyên thám hiểm và nghiên cứu Sao Mộc.",
+      "nasa": "Cơ quan Hàng không và Vũ trụ Hoa Kỳ điều hành sứ mệnh Juno.",
+      "gió mặt trời": "Dòng các hạt mang điện tích năng lượng cao liên tục phóng ra từ Mặt Trời.",
+      "thái dương hệ": "Hệ hành tinh gồm Mặt Trời và các thiên thể quay quanh nó.",
+      "sóng đa tần": "Các dao động sóng mang nhiều tần số khác nhau giúp cản các hạt năng lượng.",
+      "vùng sốc cung": "Ranh giới nơi gió mặt trời va chạm và giảm tốc trước từ trường hành tinh.",
+      "sóng plasma": "Các dao động sóng lan truyền trong môi trường chất khí ion hóa mang điện tích.",
+      "hạt năng lượng": "Các hạt tích điện mang mức năng lượng rất cao bay đến từ Mặt Trời.",
+      "tiểu sóng sốc": "Những cấu trúc sốc nhỏ phía trước ranh giới chính giúp phân tán bớt năng lượng.",
+      "vùng tiền thân": "Các khu vực phụ trợ nằm phía trước ranh giới phòng thủ chính của hành tinh."
+    },
+    "fr": {
+      "juno": "Sonde spatiale de la NASA envoyée pour explorer l'atmosphère et l'environnement magnétique de Jupiter.",
+      "nasa": "Agence gouvernementale américaine responsable des programmes spatiaux civils et de la recherche aéronautique.",
+      "vent solaire": "Flux continu de particules chargées expulsées par le Soleil à travers le système solaire.",
+      "choc d'étrave": "Frontière invisible où le vent solaire est brutalement ralenti par la magnétosphère planétaire.",
+      "ondes de plasma": "Oscillations électromagnétiques se propageant dans un milieu de particules gazeuses chargées.",
+      "shocklets": "Minuscules structures de choc préliminaires absorbant une partie de l'énergie solaire incidente.",
+      "jovien": "Qui se rapporte directement à la planète géante Jupiter ou à ses environs.",
+      "ondes de choc": "Transitions brutales et compressives créées lorsqu'un fluide dépasse la vitesse du son.",
+      "champs magnétiques": "Zones d'influence magnétique entourant les corps célestes capables de dévier les particules chargées.",
+      "météo spatiale": "Conditions environnementales dynamiques dans l'espace régies par l'activité et le rayonnement solaires."
+    },
+    "de": {
+      "juno": "Eine Raumsonde der NASA zur Erforschung des Planeten Jupiter und seiner Magnetosphäre.",
+      "sonnenwind": "Ein kontinuierlicher Strom geladener Teilchen, die von der oberen Sonnenatmosphäre ins All strömen.",
+      "bugstoßwelle": "Grenzbereich vor einem Planeten, an dem der überschallschnelle Sonnenwind auf das planetare Magnetfeld prallt.",
+      "plasmawellen": "Elektromagnetische oder elektrostatische Wellen, die sich in ionisiertem Gas, sogenanntem Plasma, ausbreiten.",
+      "harmonische struktur": "Ein Schwingungsmuster, das aus mehreren aufeinander abgestimmten Frequenzen und Obertönen besteht.",
+      "shocklets": "Kleinere Schockwellen vor der Hauptstoßfront, die eintreffende Teilchen schrittweise abbremsen und Energie streuen.",
+      "jovianischen": "Den Planeten Jupiter betreffend; vom lateinischen Namen Iuppiter abgeleitetes astronomisches Fachwort.",
+      "stoßwellen": "Abrupte Druck- und Dichtefronten, die sich schneller als die lokale Schallgeschwindigkeit im Medium bewegen.",
+      "energietransfer": "Der physikalische Prozess der Übertragung von Energie von einem Bereich oder Teilchen auf ein anderes.",
+      "weltraumwetter": "Veränderungen der kosmischen Umwelt im Sonnensystem, hauptsächlich verursacht durch Aktivitäten und Ausbrüche der Sonne."
+    },
+    "es": {
+      "juno": "Sonda espacial de la NASA dedicada a estudiar la atmósfera, el origen y la magnetosfera de Júpiter.",
+      "viento solar": "Flujo continuo de partículas cargadas emitidas por la corona solar hacia el espacio interplanetario.",
+      "ondas multifrecuencia": "Oscilaciones electromagnéticas de diversas frecuencias que interactúan de manera simultánea en el medio espacial.",
+      "choque de proa": "Límite donde el viento solar frena bruscamente al colisionar con la magnetosfera del planeta.",
+      "entorno magnético": "Región espacial controlada y protegida por el campo magnético propio de un cuerpo celeste.",
+      "ondas de plasma": "Fluctuaciones periódicas de partículas cargadas y campos electromagnéticos que viajan por un gas ionizado.",
+      "estructura armónica": "Conjunto coordinado de múltiples frecuencias de onda que refuerzan la disipación energética.",
+      "microchoques": "Pequeñas ondas de choque precursoras que absorben energía antes de la barrera defensiva principal.",
+      "entorno joviano": "Zona del espacio dominada por las gigantescas dimensiones y fuerzas magnéticas de Júpiter.",
+      "clima espacial": "Condiciones dinámicas en el espacio causadas por la actividad solar y sus radiaciones.",
+      "campos magnéticos": "Fuerzas invisibles generadas por el planeta que desvían la radiación y partículas cósmicas."
+    }
   }
 }
