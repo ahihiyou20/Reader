@@ -7,7 +7,7 @@ import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
-import { pickPage, rubberClamp, sampleVelocity } from '@/lib/motion';
+import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { useUI } from '@/stores/ui';
 import { useSize, useT } from '../hooks';
@@ -65,9 +65,18 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     relayout(w, h);
   }, [w, h]);
   useEffect(() => {
-    // A new feed (Explore, deep link) starts at the top without animating.
+    // A new feed (Explore, Library, the menu) starts at the top without sliding there; the new first
+    // article comes into focus instead of cutting in.
     feedP.stop();
     feedP.set(useUI.getState().index);
+    if (version > 0 && !prefersReducedMotion())
+      ref.current?.animate(
+        [
+          { opacity: 0, transform: 'scale(1.035)', filter: 'blur(10px)' },
+          { opacity: 1, transform: 'none', filter: 'blur(0)' },
+        ],
+        { duration: 560, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' },
+      );
   }, [version]);
 
   // The chrome (bottom nav, language pill) follows the active article's horizontal position.

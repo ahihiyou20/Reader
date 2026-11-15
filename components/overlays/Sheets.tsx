@@ -10,6 +10,7 @@ import { licenseName } from '@/lib/content/transform';
 import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
+import { CoverCredit } from '../CoverCredit';
 import { GoogleLogo } from '../icons';
 import { useT } from '../hooks';
 import { Sheet } from './Layer';
@@ -137,7 +138,12 @@ function SourcesBody({ slug, refId }: { slug: string; refId?: string }) {
   useEffect(() => {
     if (!refId || !list.current) return;
     const el = list.current.querySelector<HTMLElement>(`[data-ref="${CSS.escape(refId)}"]`);
-    el?.scrollIntoView({ block: 'center' });
+    // Scroll the sheet only: scrollIntoView would also scroll every ancestor, the app frame included,
+    // and the screen behind the sheet would jump.
+    let box = el?.parentElement ?? null;
+    while (box && box.scrollHeight <= box.clientHeight) box = box.parentElement;
+    if (!el || !box || !box.closest('.sheet')) return;
+    box.scrollTop += el.getBoundingClientRect().top - box.getBoundingClientRect().top - (box.clientHeight - el.offsetHeight) / 2;
   }, [refId, a]);
   if (!a) return null;
   const o = a.origin;
@@ -171,17 +177,7 @@ function SourcesBody({ slug, refId }: { slug: string; refId?: string }) {
             </a>
           </p>
         )}
-        <p>
-          {t('coverCredit', { author: a.cover.author, license: a.cover.license })}
-          {a.cover.sourceUrl && (
-            <>
-              {' · '}
-              <a href={a.cover.sourceUrl} target="_blank" rel="noopener noreferrer">
-                {t('openLink')}
-              </a>
-            </>
-          )}
-        </p>
+        <CoverCredit cover={a.cover} />
         <p style={{ margin: 0, opacity: 0.7 }}>{licenseName(o.license)}</p>
       </div>
     </div>

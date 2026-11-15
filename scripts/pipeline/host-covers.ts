@@ -12,8 +12,16 @@ import type { ArticleSource } from '../../lib/content/types';
 import { CONTENT, ROOT, USER_AGENT, dirs, exists, listJson, readJson, writeJson } from './lib';
 
 const OUT = path.join(ROOT, 'public', 'covers');
-/** Unsplash photo id → its CDN base URL, so a photo is asked for once, ever (the free key allows 50 calls an hour). */
+/** Unsplash photo id → CDN base URL and photographer, so a photo is asked for once, ever (a demo key allows 50 calls an hour). */
 const CACHE = path.join(CONTENT, 'generated', 'unsplash-urls.json');
+/** Unsplash API guidelines: every link back to Unsplash carries these. */
+export const UTM = 'utm_source=pagemoor&utm_medium=referral';
+
+interface Photo {
+  raw: string;
+  name: string;
+  username: string;
+}
 const PORTRAIT = { width: 1080, height: 1920, quality: 74 };
 const WIDE = { width: 2560, height: 1440, quality: 80 };
 const cdn = (raw: string, box: { width: number; height: number; quality: number }) =>
@@ -36,22 +44,25 @@ async function download(url: string, headers: Record<string, string> = {}): Prom
   return Buffer.from(await res.arrayBuffer());
 }
 
-let cache: Record<string, string> | undefined;
+// Older entries hold only the URL (string): those photos were already reported as used.
+let cache: Record<string, Photo | string> | undefined;
 
-/** CDN base URL of an Unsplash photo, from the cache or the API (which is then told the photo is used). */
-async function unsplashRaw(photo: string, key: string): Promise<string> {
-  cache ??= await readJson<Record<string, string>>(CACHE, {});
-  if (cache[photo]) return cache[photo];
+/** An Unsplash photo from the cache or the API; the API is told the photo is used the first time. */
+async function unsplashPhoto(photo: string, key: string): Promise<Photo> {
+  cache ??= await readJson<Record<string, Photo | string>>(CACHE, {});
+  const known = cache[photo];
+  if (known && typeof known !== 'string') return known;
   const auth = { authorization: `Client-ID ${key}`, 'accept-version': 'v1' };
   const res = await fetch(`https://api.unsplash.com/photos/${photo}`, { headers: auth, signal: AbortSignal.timeout(30_000) });
   if (res.status === 403 || res.status === 429) throw new RateLimit();
   if (!res.ok) throw new Error(`Unsplash HTTP ${res.status} for ${photo}`);
-  const meta = (await res.json()) as { urls: { raw: string }; links: { download_location: string } };
-  await fetch(meta.links.download_location, { headers: auth, signal: AbortSignal.timeout(30_000) }).catch(() => {});
-  cache[photo] = meta.urls.raw;
+  const meta = (await res.json()) as { urls: { raw: string }; links: { download_location: string }; user: { name: string; username: string } };
+  if (!known) await fetch(meta.links.download_location, { headers: auth, signal: AbortSignal.timeout(30_000) }).catch(() => {});
+  const entry = { raw: meta.urls.raw, name: meta.user.name, username: meta.user.username };
+  cache[photo] = entry;
   await writeJson(CACHE, cache);
   if (res.headers.get('x-ratelimit-remaining') === '0') throw new RateLimit();
-  return meta.urls.raw;
+  return entry;
 }
 
 /** Stock photos are shared by many articles: one pair of files per photo, not per article. */
@@ -84,17 +95,21 @@ async function selfHost(a: ArticleSource): Promise<boolean> {
 /** Returns true when the article file changed. */
 export async function hostCover(a: ArticleSource): Promise<boolean> {
   if (a.cover.type !== 'image') return false;
-  const remote = /^https?:/.test(a.cover.url) && !onUnsplashCdn(a.cover.url);
-  if (!remote && a.cover.wide) return false;
   const key = process.env.UNSPLASH_ACCESS_KEY;
   const photo = a.cover.provider === 'unsplash' ? unsplashId(a.cover.sourceUrl) : undefined;
   if (key && photo) {
-    const raw = await unsplashRaw(photo, key);
-    // A cover already kept in the repo stays the phone image; it only gains the landscape one.
-    if (remote) a.cover.url = cdn(raw, PORTRAIT);
-    a.cover.wide = cdn(raw, WIDE);
+    // Done already: served from Unsplash's CDN with the photographer's profile linked.
+    if (onUnsplashCdn(a.cover.url) && onUnsplashCdn(a.cover.wide) && a.cover.authorUrl?.includes('utm_source')) return false;
+    // The API guidelines ask for the API's own image URLs everywhere, so copies kept in the repo are replaced too.
+    const p = await unsplashPhoto(photo, key);
+    a.cover.url = cdn(p.raw, PORTRAIT);
+    a.cover.wide = cdn(p.raw, WIDE);
+    a.cover.author = p.name;
+    a.cover.authorUrl = `https://unsplash.com/@${p.username}?${UTM}`;
     return true;
   }
+  const remote = /^https?:/.test(a.cover.url) && !onUnsplashCdn(a.cover.url);
+  if (!remote && a.cover.wide) return false;
   return selfHost(a);
 }
 
@@ -103,7 +118,7 @@ async function main() {
   const at = args.indexOf('--limit');
   const limit = at >= 0 ? Number(args.splice(at, 2)[1]) : Infinity;
   const all = args.length ? args.map((s) => `${s}.json`) : await listJson(dirs.articles);
-  // Articles with no usable cover first, then the landscape files for those that have one.
+  // Articles with no usable cover first, then the rest.
   const blank = await Promise.all(all.map(async (f) => /picsum\.photos/.test((await readJson<ArticleSource>(path.join(dirs.articles, f))).cover.url)));
   const files = [...all.filter((_, i) => blank[i]), ...all.filter((_, i) => !blank[i])];
   let done = 0;

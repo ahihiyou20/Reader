@@ -1,5 +1,6 @@
 'use client';
 import { ArrowRight, BookMarked, ChevronLeft, ChevronRight, Globe, Headphones, Pause, Play, Sparkles } from 'lucide-react';
+import { animate } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { pick } from '@/lib/i18n';
@@ -33,22 +34,48 @@ export function Welcome({ items }: { items: FeedItem[] }) {
   const still = useReducedMotion();
   const start = useRef<HTMLButtonElement>(null);
   const root = useRef<HTMLDivElement>(null);
+  const [leaving, setLeaving] = useState(false);
+  /** The chosen article is put in the feed first, then the welcome fades away to reveal it. */
   const done = (slug?: string) => {
-    useReading.getState().setWelcomed(true);
+    if (leaving) return;
     if (slug) useUI.getState().startFeed({ category: null, slug });
+    if (still) return useReading.getState().setWelcomed(true);
+    setLeaving(true);
   };
+  const doneRef = useRef(done);
+  doneRef.current = done;
   useEffect(() => {
     start.current?.focus({ preventScroll: true });
-    const key = (e: KeyboardEvent) => e.key === 'Escape' && done();
+    const key = (e: KeyboardEvent) => e.key === 'Escape' && doneRef.current();
     window.addEventListener('keydown', key);
     return () => window.removeEventListener('keydown', key);
   }, []);
-  const to = (id: string) => root.current?.querySelector(`#${id}`)?.scrollIntoView({ behavior: still ? 'auto' : 'smooth' });
+  /** Glide to a section. Snap points are lifted for the glide, or the browser would cut it short. */
+  const to = (id: string) => {
+    const box = root.current;
+    const target = box?.querySelector<HTMLElement>(`#${id}`);
+    if (!box || !target) return;
+    if (still) return void (box.scrollTop = target.offsetTop);
+    box.style.scrollSnapType = 'none';
+    animate(box.scrollTop, target.offsetTop, {
+      duration: 1.1,
+      ease: [0.65, 0, 0.35, 1],
+      onUpdate: (v) => (box.scrollTop = v),
+      onComplete: () => (box.style.scrollSnapType = ''),
+    });
+  };
   // Covers kept in the repo come first: they show even when a remote image host is slow or down.
   const featured = [...items.filter((i) => coverThumb(i).startsWith('/')), ...items.filter((i) => !coverThumb(i).startsWith('/'))].slice(0, 6);
   const src = portrait ? '/welcome/rain-v' : '/welcome/rain';
   return (
-    <div className="welcome" ref={root} role="dialog" aria-modal="true" aria-label={`${t('wHello')} ${t('wIam')} Pagemoor`}>
+    <div
+      className={`welcome${leaving ? ' leaving' : ''}`}
+      ref={root}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${t('wHello')} ${t('wIam')} Pagemoor`}
+      onAnimationEnd={(e) => e.target === e.currentTarget && leaving && useReading.getState().setWelcomed(true)}
+    >
       <section className="welcome-top">
         {still ? (
           <img className="welcome-bg" src={`${src}-poster.webp`} alt="" />
@@ -59,13 +86,13 @@ export function Welcome({ items }: { items: FeedItem[] }) {
         <header className="welcome-nav">
           <img src="/icons/logo-120.png" alt="" width={40} height={40} />
           <span>Pagemoor</span>
-          <a role="button" tabIndex={0} onClick={() => to('w-what')} onKeyDown={(e) => e.key === 'Enter' && to('w-what')}>
+          <button className="wlink" type="button" onClick={() => to('w-what')}>
             {t('wAbout')}
-          </a>
-          <a role="button" tabIndex={0} onClick={() => to('w-picks')} onKeyDown={(e) => e.key === 'Enter' && to('w-picks')}>
+          </button>
+          <button className="wlink" type="button" onClick={() => to('w-picks')}>
             {t('wFeatured')}
-          </a>
-          <button type="button" onClick={() => done()}>
+          </button>
+          <button className="wskip" type="button" onClick={() => done()}>
             {t('wSkip')}
             <i aria-hidden="true" />
           </button>

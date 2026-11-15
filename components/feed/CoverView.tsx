@@ -1,6 +1,6 @@
 'use client';
 import { splitTitle, titleStyle } from '@/lib/title';
-import { ChevronsRight, Compass, LayoutGrid } from 'lucide-react';
+import { ChevronsRight } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useCategories } from '@/lib/data';
@@ -10,7 +10,7 @@ import { useUI } from '@/stores/ui';
 import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { ActionButton } from '../ActionButton';
-import { preloadExplore } from '../overlays/preload';
+import { CoverCredit } from '../CoverCredit';
 import { useT } from '../hooks';
 import { setArticleView } from './nav';
 
@@ -31,7 +31,6 @@ export function CoverView({
 }) {
   const t = useT();
   const lang = useUI((s) => s.lang);
-  const openOverlay = useUI((s) => s.openOverlay);
   const liked = useUser((s) => Boolean(s.likes[item.slug]));
   const saved = useUser((s) => Boolean(s.saves[item.slug]));
   const counts = useUser(useShallow((s) => countsFor(s, item.slug, item.counts)));
@@ -57,32 +56,8 @@ export function CoverView({
   return (
     <>
       <div className="scrim" />
+      <CoverCredit cover={item.cover} className="ccredit" />
       <div className="crow" data-region="cover-row">
-        <button
-          className="cb gridbtn"
-          type="button"
-          aria-label={t('exploreTitle')}
-          onClick={() => openOverlay('explore')}
-          onPointerDown={preloadExplore}
-          onMouseEnter={preloadExplore}
-          onFocus={preloadExplore}
-        >
-          <LayoutGrid className="ic" aria-hidden="true" />
-        </button>
-        <button
-          className="pill epill"
-          type="button"
-          onClick={() => openOverlay('explore')}
-          onPointerDown={preloadExplore}
-          onMouseEnter={preloadExplore}
-          onFocus={preloadExplore}
-        >
-          <span>{t('explore')}</span>
-          <span className="cmp">
-            <Compass className="ic" strokeWidth={1.8} aria-hidden="true" />
-            <i className="dot" />
-          </span>
-        </button>
         <button className={`hint${nudge ? ' nudge' : ''}`} type="button" onClick={toDetails} aria-label={t('toDetails')}>
           <span className="hint-t">{t('toDetails')}</span>
           <ChevronsRight className="ic" aria-hidden="true" />

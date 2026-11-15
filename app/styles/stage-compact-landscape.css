@@ -131,12 +131,6 @@ html[data-stage='compact-landscape'] .crow {
   gap: 12px;
 }
 
-html[data-stage='compact-landscape'] .crow .epill {
-  margin-left: 0;
-  height: 38px;
-  font-size: 15px;
-}
-
 html[data-stage='compact-landscape'] .ctitle {
   position: absolute;
   left: calc(env(safe-area-inset-left, 0px) + 64px);

@@ -636,33 +636,12 @@ select {
   display: flex;
   align-items: center;
 }
-.gridbtn {
-  flex: none;
-  width: 36px;
-  height: 36px;
-}
-.gridbtn .ic {
-  width: 20px;
-  height: 20px;
-}
-.epill {
-  flex: none;
-  margin-left: 46px;
-  padding: 0 12px 0 24px;
-  height: 42px;
-  font-size: 17px;
-}
 .crow .hint {
   min-width: 0;
   padding-left: 8px;
 }
 /* Narrow phones, longer Vietnamese label: keep the row inside the screen. */
 @media (max-width: 400px) {
-  .epill {
-    margin-left: 14px;
-    padding: 0 10px 0 18px;
-    font-size: 16px;
-  }
   .crow .hint {
     font-size: 13px;
   }
@@ -671,23 +650,6 @@ select {
   .crow .hint-t {
     display: none;
   }
-}
-.epill .cmp {
-  position: relative;
-  display: grid;
-}
-.epill .cmp .ic {
-  width: 26px;
-  height: 26px;
-}
-.epill .dot {
-  position: absolute;
-  top: -2px;
-  right: -3px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--pink);
 }
 .ctitle {
   position: absolute;

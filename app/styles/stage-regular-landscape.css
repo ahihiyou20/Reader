@@ -70,22 +70,6 @@ html[data-stage='regular-landscape'] .crow {
   top: calc(41.8% - 22px);
 }
 
-html[data-stage='regular-landscape'] .gridbtn {
-  width: 44px;
-  height: 44px;
-}
-
-html[data-stage='regular-landscape'] .gridbtn .ic {
-  width: 24px;
-  height: 24px;
-}
-
-html[data-stage='regular-landscape'] .epill {
-  height: 44px;
-  font-size: 17px;
-  padding: 0 18px 0 24px;
-}
-
 html[data-stage='regular-landscape'] .crow .hint {
   font-size: 15px;
 }

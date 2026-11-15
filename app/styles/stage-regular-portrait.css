@@ -77,22 +77,6 @@ html[data-stage='regular-portrait'] .crow {
   top: calc(41.8% - 22px);
 }
 
-html[data-stage='regular-portrait'] .gridbtn {
-  width: 44px;
-  height: 44px;
-}
-
-html[data-stage='regular-portrait'] .gridbtn .ic {
-  width: 24px;
-  height: 24px;
-}
-
-html[data-stage='regular-portrait'] .epill {
-  height: 44px;
-  font-size: 17px;
-  padding: 0 18px 0 24px;
-}
-
 html[data-stage='regular-portrait'] .crow .hint {
   font-size: 15px;
 }

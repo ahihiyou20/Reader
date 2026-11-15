@@ -28,7 +28,7 @@ export function EngageView({ article, item, active, view }: { article: ArticleCl
 
   const reply = (name: string) => {
     setDraft((d) => (d.startsWith(`@${name} `) ? d : `@${name} ${d}`));
-    input.current?.focus();
+    input.current?.focus({ preventScroll: true });
   };
 
   return (

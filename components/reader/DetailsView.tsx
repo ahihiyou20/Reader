@@ -543,8 +543,8 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
               {t('listen')}
             </button>
           )}
-          <button className="hint" type="button" onClick={() => setArticleView(slug, 2)}>
-            {t('toEngage')}
+          <button className="hint" type="button" aria-label={t('toEngage')} onClick={() => setArticleView(slug, 2)}>
+            <span className="hint-t">{t('toEngage')}</span>
             <ChevronsRight className="ic" aria-hidden="true" />
           </button>
         </MDiv>

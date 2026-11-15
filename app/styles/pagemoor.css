@@ -542,7 +542,7 @@ html[data-stage='compact-portrait'] .pill.listen {
   border-radius: 11px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.welcome-nav button,
+.welcome-nav .wskip,
 .welcome-start {
   display: inline-flex;
   align-items: center;
@@ -551,12 +551,12 @@ html[data-stage='compact-portrait'] .pill.listen {
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
-.welcome-nav button {
+.welcome-nav .wskip {
   margin-left: auto;
   min-height: 44px;
   color: rgba(255, 255, 255, 0.85);
 }
-.welcome-nav button i,
+.welcome-nav .wskip i,
 .welcome-start i {
   width: 30px;
   height: 1px;
@@ -573,7 +573,7 @@ html[data-stage='compact-portrait'] .pill.listen {
   color: #111;
 }
 @media (hover: hover) {
-  .welcome-nav button:hover i,
+  .welcome-nav .wskip:hover i,
   .welcome-start:hover i {
     transform: scaleX(1.6);
   }
@@ -705,16 +705,16 @@ html[data-stage$='portrait'] .welcome-body {
 html[data-stage='compact-portrait'] .welcome-picks {
   display: none;
 }
-html[data-stage='compact-portrait'] .welcome-nav button {
+html[data-stage='compact-portrait'] .welcome-nav .wskip {
   font-size: 0;
   gap: 0;
 }
-html[data-stage='compact-portrait'] .welcome-nav button::before {
+html[data-stage='compact-portrait'] .welcome-nav .wskip::before {
   content: '✕';
   font-size: 18px;
   letter-spacing: 0;
 }
-html[data-stage='compact-portrait'] .welcome-nav button i {
+html[data-stage='compact-portrait'] .welcome-nav .wskip i {
   display: none;
 }
 html[data-stage='compact-landscape'] .welcome-info,
@@ -774,18 +774,43 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
   overflow: hidden;
   scroll-snap-align: start;
 }
-.welcome-nav a {
-  margin-left: 14px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.82);
+.welcome-nav .wlink {
+  position: relative;
+  min-height: 44px;
+  margin-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
   font: 600 12px var(--font-sans);
   letter-spacing: 0.24em;
   text-transform: uppercase;
+  transition: color var(--dur-hover) var(--ease-out);
 }
-.welcome-nav a + a {
-  margin-left: 4px;
+.welcome-nav .wlink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0.24em;
+  bottom: 10px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--dur-medium) var(--ease-out);
 }
-html[data-stage='compact-portrait'] .welcome-nav a {
+/* The welcome sits on a film: the app-wide hover brightness filter re-rasterises text over it and
+   makes neighbouring links flicker, so these controls have their own hover. */
+.welcome button:hover {
+  filter: none !important;
+}
+@media (hover: hover) {
+  .welcome-nav .wlink:hover {
+    color: #fff;
+  }
+  .welcome-nav .wlink:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+html[data-stage='compact-portrait'] .welcome-nav .wlink {
   display: none;
 }
 .wlabel {
@@ -1129,4 +1154,145 @@ html[data-stage$='landscape'] .panel.side {
   .media.drift {
     animation: none;
   }
+}
+
+/* Leaving the welcome: it lifts and fades, uncovering the article already waiting in the feed. */
+.welcome.leaving {
+  pointer-events: none;
+  animation: welcome-out 650ms var(--ease-in-out) both;
+}
+@keyframes welcome-out {
+  to {
+    opacity: 0;
+    transform: scale(1.04);
+    filter: blur(6px);
+  }
+}
+
+/* The app frame is never a scroll box: focusing or revealing something off-screen must not move it. */
+.app {
+  overflow: clip;
+}
+
+/* Cover photo credit (Unsplash API guidelines), quiet in the corner under the top bar. */
+.ccredit {
+  position: absolute;
+  z-index: 3;
+  top: calc(var(--sat) + 58px);
+  right: 18px;
+  max-width: 60%;
+  margin: 0;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.62);
+  font: 500 11px/1.4 var(--font-sans);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+.ccredit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 2px;
+}
+@media (hover: hover) {
+  .ccredit a:hover {
+    color: #fff;
+  }
+}
+
+/* Cards arrive one after another (the first 16), whatever the list. */
+.card {
+  animation-delay: calc(var(--i, 0) * 28ms);
+}
+.card.wide {
+  aspect-ratio: 16 / 9;
+}
+.carousel .card.wide {
+  width: 78%;
+}
+
+/* Explore on wide screens: a full-width page, a centred column, as many covers per row as fit. */
+html[data-stage$='landscape'] .panel.explore .pbody {
+  padding-left: max(clamp(20px, 3vw, 40px), calc((100% - 1360px) / 2));
+  padding-right: max(clamp(20px, 3vw, 40px), calc((100% - 1360px) / 2));
+}
+html[data-stage$='landscape'] .panel.explore .phead {
+  padding-left: max(clamp(12px, 2.4vw, 32px), calc((100% - 1376px) / 2));
+  padding-right: max(clamp(12px, 2.4vw, 32px), calc((100% - 1376px) / 2));
+}
+html[data-stage$='landscape'] .panel.explore .phead h2 {
+  font: 400 clamp(28px, 2.6vw, 38px)/1 var(--f-anton), Impact, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+html[data-stage$='landscape'] .panel.explore .chips.scroll {
+  flex-wrap: wrap;
+  overflow: visible;
+  margin: 0;
+  padding: 2px 0 6px;
+}
+html[data-stage$='landscape'] .panel.explore .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, calc((100% - 30px) / 4));
+  gap: 10px;
+  margin: 0;
+  padding: 0 0 6px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+html[data-stage$='landscape'] .panel.explore .carousel .card.wide {
+  width: auto;
+}
+html[data-stage$='landscape'] .panel.explore .grid {
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 12px;
+}
+html[data-stage$='landscape'] .panel.explore .card .ct {
+  font-size: 14px;
+  line-height: 18px;
+}
+html[data-stage$='landscape'] .panel.explore .card.wide .ct {
+  font-size: 17px;
+  line-height: 22px;
+  -webkit-line-clamp: 2;
+}
+@media (hover: hover) {
+  .card img {
+    transition: transform 600ms var(--ease-out);
+  }
+  .card:hover img {
+    transform: scale(1.06);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation-delay: 0ms;
+  }
+  .card:hover img {
+    transform: none;
+  }
+}
+
+/* Long labels (German, French) shorten with an ellipsis instead of running into the text beside them. */
+.prow,
+.crow {
+  min-width: 0;
+}
+.prow .hint,
+.crow .hint {
+  min-width: 0;
+  flex: 0 1 auto;
+}
+.hint .hint-t {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hint .ic {
+  flex: none;
+}
+/* Phones: the avatar alone opens the account; its label does not fit beside the logo and icons. */
+html[data-stage='compact-portrait'] .uname {
+  display: none;
 }

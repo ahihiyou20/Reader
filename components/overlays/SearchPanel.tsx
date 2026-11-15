@@ -86,7 +86,7 @@ export function SearchPanel() {
     if (!open) return;
     setRecent(readRecent());
     loadSearch().catch(() => {});
-    const id = setTimeout(() => input.current?.focus(), 80);
+    const id = setTimeout(() => input.current?.focus({ preventScroll: true }), 80);
     return () => clearTimeout(id);
   }, [open]);
 
@@ -155,7 +155,7 @@ export function SearchPanel() {
               onChange={(e) => setQ(e.target.value)}
             />
             {q && (
-              <button className="clear" type="button" aria-label={t('close')} onClick={() => (setQ(''), input.current?.focus())}>
+              <button className="clear" type="button" aria-label={t('close')} onClick={() => (setQ(''), input.current?.focus({ preventScroll: true }))}>
                 <X className="ic" aria-hidden="true" />
               </button>
             )}
