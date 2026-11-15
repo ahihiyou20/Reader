@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "U.S. Faces Severe Measles Resurgence with Cases Doubling",
-    "vi": "Mỹ đối mặt với làn sóng bùng phát bệnh sởi nghiêm trọng khi số ca nhiễm tăng gấp đôi"
+    "vi": "Mỹ đối mặt với làn sóng bùng phát bệnh sởi nghiêm trọng khi số ca nhiễm tăng gấp đôi",
+    "fr": "Les États-Unis face à une grave résurgence de la rougeole : les cas doublent",
+    "de": "USA erleben schwere Masernwelle bei Verdopplung der Fallzahlen",
+    "es": "EE. UU. enfrenta un grave resurgimiento del sarampión mientras los casos se duplican"
   },
   "hook": {
     "en": "The United States is currently confronting its most severe resurgence of measles in decades, with total infections already exceeding double the count recorded throughout the previous year {source}. Health authorities attribute the rapid transmission largely to low immunization levels, prompting urgent calls for community protection.",
-    "vi": "Hoa Kỳ hiện đang phải đối mặt với đợt bùng phát sởi nghiêm trọng nhất trong nhiều thập kỷ, với tổng số ca nhiễm đã vượt gấp đôi số lượng được ghi nhận trong toàn bộ năm trước {source}. Các cơ quan y tế quy kết việc lây truyền nhanh chóng phần lớn là do mức độ miễn dịch thấp, thúc đẩy các lời kêu gọi khẩn cấp về việc bảo vệ cộng đồng."
+    "vi": "Hoa Kỳ hiện đang phải đối mặt với đợt bùng phát sởi nghiêm trọng nhất trong nhiều thập kỷ, với tổng số ca nhiễm đã vượt gấp đôi số lượng được ghi nhận trong toàn bộ năm trước {source}. Các cơ quan y tế quy kết việc lây truyền nhanh chóng phần lớn là do mức độ miễn dịch thấp, thúc đẩy các lời kêu gọi khẩn cấp về việc bảo vệ cộng đồng.",
+    "fr": "Les États-Unis affrontent actuellement leur plus grave résurgence de la rougeole depuis des décennies, le total des contaminations dépassant déjà le double du bilan enregistré sur l'ensemble de l'année précédente {source}. Les autorités sanitaires attribuent principalement cette transmission rapide au faible niveau d'immunisation, appelant d'urgence à une protection collective.",
+    "de": "Die Vereinigten Staaten erleben derzeit die schwerste Masernwelle seit Jahrzehnten, wobei die Gesamtzahl der Infektionen die Zahlen des gesamten Vorjahres bereits um mehr als das Doppelte übersteigt {source}. Gesundheitsbehörden führen die rasante Ausbreitung vor allem auf niedrige Impfquoten zurück und rufen dringend zum Schutz der Gemeinschaft auf.",
+    "es": "Estados Unidos enfrenta actualmente su resurgimiento de sarampión más grave en décadas, con un total de infecciones que ya supera el doble del recuento registrado a lo largo del año anterior {source}. Las autoridades sanitarias atribuyen la rápida transmisión en gran medida a los bajos niveles de inmunización, lo que ha generado llamados urgentes a la protección comunitaria."
   },
   "sections": [
     {
       "heading_en": "Nationwide Spread",
       "heading_vi": "Sự lây lan trên toàn quốc",
       "body_en": "Official numbers from health agencies indicate that nationwide infections have surpassed four thousand five hundred cases over recent months. The vast majority of individuals who contracted the illness lacked documented immunization protection. States including New York and Utah have also reported significant patient numbers, prompting emergency declarations and intensive monitoring by regional health departments.",
-      "body_vi": "Số liệu chính thức từ các cơ quan y tế cho thấy các ca nhiễm trên toàn quốc đã vượt mốc bốn nghìn năm trăm trường hợp trong những tháng gần đây. Phần lớn những người mắc bệnh đều thiếu hồ sơ bảo vệ bằng vắc-xin (*vaccination*). Các tiểu bang như New York và Utah cũng ghi nhận số lượng bệnh nhân đáng kể, dẫn đến việc ban bố tình trạng khẩn cấp và giám sát chặt chẽ từ các cơ quan y tế khu vực."
+      "body_vi": "Số liệu chính thức từ các cơ quan y tế cho thấy các ca nhiễm trên toàn quốc đã vượt mốc bốn nghìn năm trăm trường hợp trong những tháng gần đây. Phần lớn những người mắc bệnh đều thiếu hồ sơ bảo vệ bằng vắc-xin (*vaccination*). Các tiểu bang như New York và Utah cũng ghi nhận số lượng bệnh nhân đáng kể, dẫn đến việc ban bố tình trạng khẩn cấp và giám sát chặt chẽ từ các cơ quan y tế khu vực.",
+      "heading_fr": "Propagation à l'échelle nationale",
+      "body_fr": "Les données officielles des agences de santé indiquent qu'à l'échelle nationale, les contaminations ont dépassé quatre mille cinq cents cas au cours des derniers mois. La grande majorité des personnes ayant contracté la maladie ne disposaient d'aucune protection vaccinale documentée. Plusieurs États, dont New York et l'Utah, ont également signalé un nombre considérable de patients, entraînant des déclarations d'urgence et une surveillance accrue de la part des services de santé régionaux.",
+      "heading_de": "Landesweite Ausbreitung",
+      "body_de": "Offizielle Zahlen der Gesundheitsbehörden zeigen, dass die landesweiten Infektionen in den vergangenen Monaten viertausendfünfhundert Fälle überschritten haben. Die überwiegende Mehrheit der Erkrankten verfügte über keinen nachgewiesenen Impfschutz. Auch Bundesstaaten wie New York und Utah meldeten erhebliche Patientenzahlen, was zu Notstandserklärungen und einer intensiven Überwachung durch regionale Gesundheitsämter führte.",
+      "heading_es": "Propagación a nivel nacional",
+      "body_es": "Las cifras oficiales de los organismos de salud indican que los contagios a nivel nacional han superado los cuatro mil quinientos casos durante los últimos meses. La gran mayoría de las personas que contrajeron la enfermedad carecían de protección inmunológica documentada. Estados como Nueva York y Utah también han reportado cifras considerables de pacientes, lo que ha motivado declaraciones de emergencia y una vigilancia intensiva por parte de los departamentos regionales de salud."
     },
     {
       "heading_en": "Impact in Pennsylvania",
       "heading_vi": "Tác động tại Pennsylvania",
       "body_en": "Pennsylvania remains one of the hardest-hit regions, confirming over one thousand three hundred infections spanning dozens of counties. Hundreds of patients required hospital care, and several fatalities were documented. Rural areas featuring specific religious populations with traditionally lower immunization rates experienced the most severe local impact and disruption.",
-      "body_vi": "Pennsylvania vẫn là một trong những khu vực chịu ảnh hưởng nặng nề nhất, xác nhận hơn một nghìn ba trăm ca nhiễm trên hàng chục quận hạt. Hàng trăm bệnh nhân cần chăm sóc tại bệnh viện và một số ca tử vong đã được ghi nhận. Các khu vực nông thôn có các cộng đồng tôn giáo đặc thù với tỷ lệ tiêm chủng thấp hơn theo truyền thống đã gánh chịu tác động và gián đoạn cục bộ nghiêm trọng nhất."
+      "body_vi": "Pennsylvania vẫn là một trong những khu vực chịu ảnh hưởng nặng nề nhất, xác nhận hơn một nghìn ba trăm ca nhiễm trên hàng chục quận hạt. Hàng trăm bệnh nhân cần chăm sóc tại bệnh viện và một số ca tử vong đã được ghi nhận. Các khu vực nông thôn có các cộng đồng tôn giáo đặc thù với tỷ lệ tiêm chủng thấp hơn theo truyền thống đã gánh chịu tác động và gián đoạn cục bộ nghiêm trọng nhất.",
+      "heading_fr": "Impact en Pennsylvanie",
+      "body_fr": "La Pennsylvanie demeure l'une des régions les plus durement touchées, confirmant plus de mille trois cents infections réparties sur des dizaines de comtés. Des centaines de patients ont nécessité une hospitalisation et plusieurs décès ont été constatés. Les zones rurales abritant des communautés religieuses spécifiques, aux taux de vaccination traditionnellement plus faibles, ont subi les perturbations et l'impact local les plus sévères.",
+      "heading_de": "Auswirkungen in Pennsylvania",
+      "body_de": "Pennsylvania bleibt eine der am schwersten betroffenen Regionen mit mehr als eintausenddreihundert bestätigten Infektionen in Dutzenden von Bezirken. Hunderte Patienten benötigten eine stationäre Behandlung im Krankenhaus, und mehrere Todesfälle wurden dokumentiert. Ländliche Gebiete mit bestimmten religiösen Gemeinschaften, die traditionell niedrigere Impfraten aufweisen, verzeichneten die gravierendsten lokalen Folgen und Einschränkungen.",
+      "heading_es": "Impacto en Pensilvania",
+      "body_es": "Pensilvania sigue siendo una de las regiones más golpeadas, confirmando más de mil trescientos contagios a lo largo de decenas de condados. Cientos de pacientes requirieron atención hospitalaria y se documentaron varios fallecimientos. Las zonas rurales con poblaciones religiosas específicas que tradicionalmente presentan tasas de inmunización más bajas sufrieron el impacto y las alteraciones locales más graves."
     },
     {
       "heading_en": "Vaccination Response",
       "heading_vi": "Phản ứng tiêm chủng",
       "body_en": "Medical professionals emphasize that immunization remains the most reliable shield against the virus. Standard multi-disease formulas offer exceptionally high protection rates after completing the recommended schedule. Responding to the rising threat, local clinics have administered tens of thousands of doses as public interest in preventive shots surges dramatically.",
-      "body_vi": "Các chuyên gia y tế nhấn mạnh rằng việc tiêm chủng vẫn là chiếc khiên đáng tin cậy nhất chống lại loại virus này. Các công thức phòng nhiều bệnh tiêu chuẩn mang lại tỷ lệ bảo vệ cực kỳ cao sau khi hoàn thành lịch trình khuyến nghị. Đáp ứng mối đe dọa đang gia tăng, các phòng khám địa phương đã quản lý hàng chục nghìn liều khi sự quan tâm của công chúng đối với các mũi tiêm phòng ngừa tăng vọt."
+      "body_vi": "Các chuyên gia y tế nhấn mạnh rằng việc tiêm chủng vẫn là chiếc khiên đáng tin cậy nhất chống lại loại virus này. Các công thức phòng nhiều bệnh tiêu chuẩn mang lại tỷ lệ bảo vệ cực kỳ cao sau khi hoàn thành lịch trình khuyến nghị. Đáp ứng mối đe dọa đang gia tăng, các phòng khám địa phương đã quản lý hàng chục nghìn liều khi sự quan tâm của công chúng đối với các mũi tiêm phòng ngừa tăng vọt.",
+      "heading_fr": "Riposte vaccinale",
+      "body_fr": "Le corps médical souligne que la vaccination constitue le bouclier le plus fiable face au virus. Les vaccins combinés standards offrent des taux d'efficacité exceptionnellement élevés dès lors que le schéma vaccinal recommandé est respecté. Face à cette menace grandissante, les centres de soins locaux ont administré des dizaines de milliers de doses, tandis que l'intérêt de la population pour les injections préventives progresse en flèche.",
+      "heading_de": "Reaktion durch Impfungen",
+      "body_de": "Medizinisches Fachpersonal betont, dass die Immunisierung nach wie vor der verlässlichste Schutzschild gegen das Virus ist. Gängige Mehrfachimpfstoffe bieten nach vollständiger Durchführung des empfohlenen Impfplans außergewöhnlich hohe Schutzraten. Als Reaktion auf die wachsende Bedrohung verabreichten örtliche Kliniken Zehntausende von Impfdosen, während das öffentliche Interesse an vorsorglichen Impfungen sprunghaft ansteigt.",
+      "heading_es": "Respuesta mediante vacunación",
+      "body_es": "Los profesionales médicos enfatizan que la inmunización sigue siendo el escudo más confiable contra el virus. Las fórmulas estándar contra múltiples enfermedades ofrecen tasas de protección excepcionalmente altas tras completar el esquema recomendado. En respuesta a la creciente amenaza, las clínicas locales han administrado decenas de miles de dosis a medida que el interés público en las inyecciones preventivas aumenta drásticamente."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of vaccination as a sturdy firebreak halting a spreading forest wildfire. Are your family's immunization records fully up to date to prevent exposure?",
-    "vi": "Hãy coi việc tiêm chủng giống như một đường vành đai phòng cháy vững chắc ngăn chặn đám cháy rừng đang lan rộng. Liệu hồ sơ miễn dịch của gia đình bạn đã được cập nhật đầy đủ để phòng ngừa phơi nhiễm chưa?"
+    "vi": "Hãy coi việc tiêm chủng giống như một đường vành đai phòng cháy vững chắc ngăn chặn đám cháy rừng đang lan rộng. Liệu hồ sơ miễn dịch của gia đình bạn đã được cập nhật đầy đủ để phòng ngừa phơi nhiễm chưa?",
+    "fr": "Considérez la vaccination comme un coupe-feu robuste capable d'enrayer un incendie de forêt en pleine progression. Le carnet de vaccination de votre famille est-il parfaitement à jour pour prévenir tout risque d'exposition ?",
+    "de": "Stell dir die Impfung wie eine robuste Brandschneise vor, die einen um sich greifenden Waldbrand aufhält. Ist der Impfstatus deiner Familie vollständig aktuell, um einer Ansteckung vorzubeugen?",
+    "es": "Piense en la vacunación como un sólido cortafuegos que detiene la propagación de un incendio forestal. ¿Están los registros de inmunización de su familia completamente al día para prevenir la exposición?"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Kiểm tra hồ sơ tiêm chủng cá nhân của bạn để tìm các mũi tiêm trước đây.",
       "Tham khảo ý kiến nhà cung cấp dịch vụ y tế địa phương về việc nhận các mũi tiêm còn thiếu.",
       "Theo dõi các cập nhật y tế chính thức liên quan đến cảnh báo bùng phát dịch bệnh khu vực."
+    ],
+    "fr": [
+      "Vérifiez vos carnets de vaccination pour faire le point sur vos doses antérieures.",
+      "Consultez un professionnel de santé local pour planifier les injections manquantes.",
+      "Suivez les bulletins sanitaires officiels concernant les alertes épidémiques régionales."
+    ],
+    "de": [
+      "Überprüfe deine persönlichen Impfnachweise auf bisherige Dosen.",
+      "Wende dich an eine örtliche Gesundheitseinrichtung, um fehlende Impfungen nachzuholen.",
+      "Verfolge offizielle Gesundheitsmitteilungen zu regionalen Ausbruchswarnungen."
+    ],
+    "es": [
+      "Revise sus registros personales de inmunización para comprobar las dosis previas.",
+      "Consulte con un profesional de la salud local sobre cómo recibir las vacunas pendientes.",
+      "Siga las actualizaciones sanitarias oficiales sobre alertas de brotes regionales."
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "measles": "A highly contagious viral disease that causes fever and a distinctive red skin rash.",
+      "resurgence": "A substantial increase or revival in disease spread after a period of quiescence.",
+      "transmission": "The passing or spreading of a pathogen from an infected person to another individual.",
+      "immunization": "The process by which an individual is rendered resistant to a specific infectious disease.",
+      "community protection": "Indirect defense against infection occurring when a sufficiently high proportion of individuals are immune.",
+      "emergency declarations": "Formal governmental notices enabling special powers and mobilization of resources to contain a crisis.",
+      "fatalities": "Deaths resulting directly from the contracted viral illness.",
+      "multi-disease formulas": "Vaccines designed to protect individuals against several different infections simultaneously in one dose.",
+      "preventive shots": "Vaccine injections administered proactively to build immunity prior to potential disease exposure.",
+      "firebreak": "A physical barrier preventing fire spread, used metaphorically here for immunization stopping disease transmission.",
+      "vaccination": "Administering a vaccine to stimulate the body's immune system against a particular pathogen."
+    },
+    "vi": {
+      "bệnh sởi": "Bệnh truyền nhiễm cấp tính do virus sởi gây ra, lây lan mạnh qua đường hô hấp.",
+      "lây truyền": "Quá trình mầm bệnh truyền từ người nhiễm sang người lành qua tiếp xúc hoặc không khí.",
+      "miễn dịch": "Khả năng của cơ thể tự chống lại sự xâm nhập và gây hại từ các mầm bệnh.",
+      "vắc-xin": "Chế phẩm sinh học giúp kích thích cơ thể tạo kháng thể chủ động phòng bệnh.",
+      "giám sát": "Theo dõi liên tục diễn biến dịch bệnh để kịp thời đưa ra biện pháp ứng phó.",
+      "quận hạt": "Cấp đơn vị hành chính địa phương dưới tiểu bang tại Hoa Kỳ.",
+      "tiêm chủng": "Việc đưa vắc-xin vào cơ thể để kích thích tạo miễn dịch chủ động phòng bệnh.",
+      "cục bộ": "Chỉ diễn ra hoặc giới hạn trong một phạm vi, khu vực địa phương nhất định.",
+      "virus": "Mầm bệnh siêu vi lây nhiễm chỉ có thể sinh sản khi ở trong tế bào sống.",
+      "phơi nhiễm": "Tình trạng tiếp xúc trực tiếp với mầm bệnh, dẫn đến nguy cơ bị lây nhiễm."
+    },
+    "fr": {
+      "rougeole": "Maladie virale infantile très contagieuse se manifestant par de la fièvre et une éruption cutanée.",
+      "immunisation": "Processus permettant au système immunitaire d'acquérir une résistance protectrice contre une maladie infectieuse.",
+      "protection collective": "Immunité globale d'une population empêchant la transmission d'un virus aux individus les plus vulnérables.",
+      "protection vaccinale": "Défense immunitaire conférée par un vaccin réduisant le risque de développer une forme grave.",
+      "comtés": "Subdivisions territoriales et administratives locales courantes aux États-Unis.",
+      "taux de vaccination": "Pourcentage de personnes immunisées par un vaccin au sein d'une collectivité donnée.",
+      "vaccins combinés": "Préparations vaccinales associant plusieurs antigènes pour immuniser contre plusieurs pathologies en une injection.",
+      "schéma vaccinal": "Calendrier fixant le nombre d'injections et les intervalles nécessaires pour garantir une protection durable.",
+      "injections préventives": "Doses de vaccin administrées par anticipation pour prémunir l'organisme contre de futures infections.",
+      "coupe-feu": "Bande de terrain déboisée stoppant un incendie, métaphore illustrant le barrage dressé par l'immunité.",
+      "carnet de vaccination": "Document médical récapitulant l'ensemble des doses et vaccins déjà administrés à un patient.",
+      "alertes épidémiques": "Mises en garde sanitaires officielles signalant la recrudescence rapide de cas dans une zone."
+    },
+    "de": {
+      "masernwelle": "Plötzliches, massives Auftreten von Erkrankungen durch das hochansteckende Masernvirus.",
+      "impfquoten": "Prozentualer Anteil einer Bevölkerungsgruppe, der gegen einen bestimmten Erreger geimpft ist.",
+      "impfschutz": "Durch Impfung erworbene Widerstandskraft des Körpers gegen eine spezifische Infektionskrankheit.",
+      "notstandserklärungen": "Amtliche Ausrufung eines Ausnahmezustands, um behördliche Befugnisse und Ressourcen freizugeben.",
+      "stationäre behandlung": "Medizinische Versorgung von Erkrankten, die eine Aufnahme und Übernachtung im Krankenhaus erfordert.",
+      "mehrfachimpfstoffe": "Kombinierte Vakzine, die den Organismus zeitgleich gegen mehrere unterschiedliche Infektionskrankheiten schützen.",
+      "impfplans": "Offizielle zeitliche Empfehlung für Schutzimpfungen zur Sicherstellung eines vollständigen Schutzes.",
+      "brandschneise": "Hier als Metapher für eine Schutzbarriere, die das weitere Übergreifen von Infektionen stoppt.",
+      "impfnachweise": "Dokumentierte amtliche Belege wie der Impfpass über bereits erhaltene Schutzimpfungen.",
+      "ausbruchswarnungen": "Behördliche Hinweise auf ein akutes, räumlich gehäuftes Auftreten einer übertragbaren Krankheit."
+    },
+    "es": {
+      "sarampión": "Enfermedad viral muy contagiosa con fiebre y erupciones, prevenible mediante vacunación.",
+      "inmunización": "Adquisición de defensas contra una enfermedad mediante la inoculación de vacunas.",
+      "protección comunitaria": "Inmunidad colectiva que frena la propagación de una infección al vacunar a gran parte de la población.",
+      "declaraciones de emergencia": "Resoluciones de autoridades públicas para habilitar recursos extraordinarios inmediatos ante una crisis sanitaria.",
+      "vigilancia intensiva": "Monitoreo epidemiológico continuo y estricto para detectar, rastrear y contener contagios.",
+      "atención hospitalaria": "Cuidados y asistencia médica especializada prestados a pacientes internados en un hospital.",
+      "esquema recomendado": "Calendario oficial que especifica las dosis y momentos oportunos para aplicar cada vacuna.",
+      "cortafuegos": "Metáfora de una barrera preventiva que detiene el avance de una amenaza o enfermedad infecciosa.",
+      "registros de inmunización": "Historial médico documentado que certifica las vacunas y dosis recibidas por un paciente.",
+      "brotes regionales": "Aumentos repentinos e inusuales de casos de una enfermedad en un área geográfica determinada."
+    }
   }
 }
