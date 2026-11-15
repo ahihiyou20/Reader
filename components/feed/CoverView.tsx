@@ -95,7 +95,8 @@ export function CoverView({
         data-region="cover-title"
         style={active ? { viewTransitionName: 'cover-title' } : undefined}
       >
-        {lead && <span className="ta">{lead}</span>}
+        {/* The trailing space keeps the two lines one phrase for screen readers and text search. */}
+        {lead && <span className="ta">{`${lead} `}</span>}
         <span className="tb">{accent}</span>
       </h2>
       {(active ?? true) && view === 0 && (
