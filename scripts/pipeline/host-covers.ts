@@ -28,6 +28,9 @@ const cdn = (raw: string, box: { width: number; height: number; quality: number 
   `${raw}${raw.includes('?') ? '&' : '?'}w=${box.width}&h=${box.height}&fit=crop&crop=entropy&q=${box.quality}&fm=webp`;
 
 /** The Unsplash key's hourly quota is used up: stop, run again later. */
+/** The photo was removed from Unsplash. */
+class Gone extends Error {}
+
 class RateLimit extends Error {
   constructor() {
     super('Unsplash hourly limit reached');
@@ -55,6 +58,7 @@ async function unsplashPhoto(photo: string, key: string): Promise<Photo> {
   const auth = { authorization: `Client-ID ${key}`, 'accept-version': 'v1' };
   const res = await fetch(`https://api.unsplash.com/photos/${photo}`, { headers: auth, signal: AbortSignal.timeout(30_000) });
   if (res.status === 403 || res.status === 429) throw new RateLimit();
+  if (res.status === 404) throw new Gone(photo);
   if (!res.ok) throw new Error(`Unsplash HTTP ${res.status} for ${photo}`);
   const meta = (await res.json()) as { urls: { raw: string }; links: { download_location: string }; user: { name: string; username: string } };
   if (!known) await fetch(meta.links.download_location, { headers: auth, signal: AbortSignal.timeout(30_000) }).catch(() => {});
@@ -63,6 +67,22 @@ async function unsplashPhoto(photo: string, key: string): Promise<Photo> {
   await writeJson(CACHE, cache);
   if (res.headers.get('x-ratelimit-remaining') === '0') throw new RateLimit();
   return entry;
+}
+
+/** A portrait photo for the article's subject that no other article uses as its cover. */
+async function replacement(a: ArticleSource, key: string): Promise<string | undefined> {
+  const used = new Set(
+    (await Promise.all((await listJson(dirs.articles)).map((f) => readJson<ArticleSource>(path.join(dirs.articles, f))))).map((x) => unsplashId(x.cover.sourceUrl)),
+  );
+  for (const query of [...(a.tags ?? []).slice(0, 2), a.category]) {
+    const q = new URLSearchParams({ query, orientation: 'portrait', per_page: '20', content_filter: 'high' });
+    const res = await fetch(`https://api.unsplash.com/search/photos?${q}`, { headers: { authorization: `Client-ID ${key}`, 'accept-version': 'v1' }, signal: AbortSignal.timeout(30_000) });
+    if (res.status === 403 || res.status === 429) throw new RateLimit();
+    if (!res.ok) continue;
+    const hit = ((await res.json()) as { results: Array<{ id: string }> }).results.find((r) => !used.has(r.id));
+    if (hit) return hit.id;
+  }
+  return undefined;
 }
 
 /** Stock photos are shared by many articles: one pair of files per photo, not per article. */
@@ -101,7 +121,17 @@ export async function hostCover(a: ArticleSource): Promise<boolean> {
     // Done already: served from Unsplash's CDN with the photographer's profile linked.
     if (onUnsplashCdn(a.cover.url) && onUnsplashCdn(a.cover.wide) && a.cover.authorUrl?.includes('utm_source')) return false;
     // The API guidelines ask for the API's own image URLs everywhere, so copies kept in the repo are replaced too.
-    const p = await unsplashPhoto(photo, key);
+    let p: Photo;
+    try {
+      p = await unsplashPhoto(photo, key);
+    } catch (e) {
+      if (!(e instanceof Gone)) throw e;
+      // The photographer removed it: pick another photo on the article's subject.
+      const next = await replacement(a, key);
+      if (!next) throw new Error(`Unsplash photo ${photo} removed and no replacement found`);
+      a.cover.sourceUrl = `https://unsplash.com/photos/${next}`;
+      p = await unsplashPhoto(next, key);
+    }
     a.cover.url = cdn(p.raw, PORTRAIT);
     a.cover.wide = cdn(p.raw, WIDE);
     a.cover.author = p.name;
