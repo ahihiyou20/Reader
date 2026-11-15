@@ -130,10 +130,26 @@
       "highlights",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-28T02:38:51.028Z"
+  "publishAt": "2026-10-28T02:38:51.028Z",
+  "glossary": {
+    "en": {
+      "ceiec": "A Chinese state-owned electronics conglomerate that exports defense, telecommunications, and digital surveillance equipment.",
+      "homeland card": "The English name for Venezuela's digital identity document, used to track citizens and distribute welfare benefits.",
+      "biometric data": "Distinct biological and physical measurements, like facial features or voice patterns, used for automated identity verification.",
+      "ven911": "Venezuela's emergency monitoring and command center system coordinating real-time responses through video surveillance.",
+      "sima": "An integrated monitoring and security system deployed in Venezuela to oversee public spaces.",
+      "iflytek": "A Chinese artificial intelligence company specializing in speech recognition, automated voice monitoring, and censorship systems.",
+      "content moderation": "The screening and filtering of digital communication to detect and restrict prohibited or politically sensitive material.",
+      "voiceprint identification": "Technology that analyzes vocal characteristics in audio recordings to match and identify a specific individual.",
+      "xinjiang": "A region in northwest China known for extensive state surveillance, population tracking, and security monitoring systems.",
+      "hikvision": "A major Chinese state-affiliated manufacturer of video surveillance equipment, security cameras, and automated monitoring software.",
+      "digital repression": "The use of digital technology, monitoring software, and internet controls to intimidate, censor, and control citizens."
+    }
+  }
 }

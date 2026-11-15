@@ -124,9 +124,39 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "artemis i": "NASA's uncrewed spaceflight test around the Moon paving the way for future human lunar missions.",
+      "lithium fluoride detectors": "Crystal devices that record radiation particle tracks without requiring chemical processing or active electrical power.",
+      "mannequins": "Human-shaped test models fitted with sensors to measure how radiation penetrates biological tissue.",
+      "particle tracks": "Microscopic trails left behind by energetic radiation particles traveling through detector materials.",
+      "passive devices": "Measuring instruments that record physical data without requiring an external power source or battery.",
+      "chemical etching": "A chemical treatment traditionally used to make microscopic radiation damage visible in plastic detectors.",
+      "calibration software": "Computer programs adjusting raw detector data to correct for particle angles and background noise.",
+      "low earth orbit": "An orbit relatively close to Earth, extending up to an altitude of around two thousand kilometers.",
+      "van allen belt": "Regions around Earth where the planet's magnetic field traps energetic charged particles like protons.",
+      "cosmic rays": "High-energy particles from deep space that can penetrate spacecraft and human tissue.",
+      "neutron-detection": "The capability to measure uncharged subatomic particles produced during deep-space radiation interactions."
+    },
+    "vi": {
+      "artemis i": "Chuyến bay vũ trụ thử nghiệm không người lái bay quanh Mặt Trăng để đo bức xạ.",
+      "bức xạ": "Các hạt năng lượng cao và sóng vô hình di chuyển trong không gian.",
+      "orion": "Tàu vũ trụ thực hiện chuyến bay thử nghiệm quanh Mặt Trăng trong sứ mệnh Artemis I.",
+      "thiết bị dò": "Dụng cụ dùng để ghi nhận, theo dõi và đo lường hạt bức xạ trong không gian.",
+      "huỳnh quang": "Hiện tượng phát sáng của tinh thể khi được kích thích bằng bức xạ hoặc ánh sáng.",
+      "lithium fluoride": "Loại tinh thể dùng trong thiết bị dò để ghi lại đường đi của hạt bức xạ.",
+      "nhiễu nền": "Các tín hiệu phụ không mong muốn làm ảnh hưởng đến độ chính xác khi đo bức xạ.",
+      "hiệu chuẩn": "Quá trình chỉnh sửa bằng phần mềm để giảm sai số đo lường của thiết bị.",
+      "proton": "Loại hạt tích điện tập trung nhiều ở vành đai bức xạ quanh Trái Đất.",
+      "van allen": "Vành đai bức xạ quanh Trái Đất chứa lượng lớn các hạt proton tập trung.",
+      "tia vũ trụ": "Các hạt thiên hà năng lượng cao từ không gian sâu có thể xuyên qua cơ thể.",
+      "neutron": "Hạt hạ nguyên tử trong bức xạ không gian cần theo dõi để bảo vệ phi hành gia."
+    }
   }
 }
