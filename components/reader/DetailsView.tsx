@@ -538,7 +538,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             {t('details')}
           </button>
           {canSpeak() && (
-            <button className="pill dpill listen" type="button" aria-pressed={listening} onClick={listen}>
+            <button className="pill listen" type="button" aria-pressed={listening} onClick={listen}>
               <Headphones className="ic" aria-hidden="true" />
               {t('listen')}
             </button>

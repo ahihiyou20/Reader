@@ -1,28 +1,34 @@
-// Self-host cover images: a portrait file for phones and a landscape one for wide screens, so a cover
-// never depends on a third-party image host being up (picsum.photos, used for the stock covers, has
-// gone dark before) and is sharp on a desktop.
+// Covers that never go blank and are sharp on a desktop: every article gets a portrait image for
+// phones and a landscape one (about 2560 px) for wide screens.
 //   pnpm tsx --env-file-if-exists=.env.local scripts/pipeline/host-covers.ts [--limit N] [slug…]
-// With UNSPLASH_ACCESS_KEY the original photo comes from the Unsplash API; without it, stock covers are
-// fetched from picsum.photos. An image that cannot be fetched is left as it is and tried again next run.
+// With UNSPLASH_ACCESS_KEY, Unsplash photos are served from Unsplash's own image CDN, cropped to each
+// shape there (the API guidelines ask apps to hotlink and to report each use). Without a key, remote
+// covers are copied into public/covers. picsum.photos, which served the stock covers, has gone dark
+// before; nothing points at it once this has run.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import type { ArticleSource } from '../../lib/content/types';
-import { ROOT, USER_AGENT, dirs, exists, listJson, readJson, writeJson } from './lib';
+import { CONTENT, ROOT, USER_AGENT, dirs, exists, listJson, readJson, writeJson } from './lib';
 
 const OUT = path.join(ROOT, 'public', 'covers');
+/** Unsplash photo id → its CDN base URL, so a photo is asked for once, ever (the free key allows 50 calls an hour). */
+const CACHE = path.join(CONTENT, 'generated', 'unsplash-urls.json');
+const PORTRAIT = { width: 1080, height: 1920, quality: 74 };
+const WIDE = { width: 2560, height: 1440, quality: 80 };
+const cdn = (raw: string, box: { width: number; height: number; quality: number }) =>
+  `${raw}${raw.includes('?') ? '&' : '?'}w=${box.width}&h=${box.height}&fit=crop&crop=entropy&q=${box.quality}&fm=webp`;
 
-/** The Unsplash key's hourly quota is used up (50 an hour for a new app): stop, run again later. */
+/** The Unsplash key's hourly quota is used up: stop, run again later. */
 class RateLimit extends Error {
   constructor() {
     super('Unsplash hourly limit reached');
   }
 }
-const PORTRAIT = { width: 1080, height: 1920, quality: 74 };
-const WIDE = { width: 2560, height: 1440, quality: 80 };
 
 const picsumId = (url: string) => url.match(/picsum\.photos\/id\/(\d+)\//)?.[1];
-const unsplashId = (url: string | undefined) => url?.match(/unsplash\.com\/photos\/(?:[^/]*-)?([A-Za-z0-9_-]{11})\/?$/)?.[1];
+export const unsplashId = (url: string | undefined) => url?.match(/unsplash\.com\/photos\/(?:[^/?#]*-)?([A-Za-z0-9_-]{11})\/?(?:[?#].*)?$/)?.[1];
+const onUnsplashCdn = (url: string | undefined) => !!url && url.startsWith('https://images.unsplash.com/');
 
 async function download(url: string, headers: Record<string, string> = {}): Promise<Buffer> {
   const res = await fetch(url, { headers: { 'user-agent': USER_AGENT, ...headers }, signal: AbortSignal.timeout(30_000) });
@@ -30,24 +36,22 @@ async function download(url: string, headers: Record<string, string> = {}): Prom
   return Buffer.from(await res.arrayBuffer());
 }
 
-/** The largest original we may fetch for this cover, or undefined when there is no source to ask. */
-async function original(a: ArticleSource): Promise<Buffer | undefined> {
-  const key = process.env.UNSPLASH_ACCESS_KEY;
-  const photo = a.cover.provider === 'unsplash' ? unsplashId(a.cover.sourceUrl) : undefined;
-  if (key && photo) {
-    const auth = { authorization: `Client-ID ${key}` };
-    const res = await fetch(`https://api.unsplash.com/photos/${photo}`, { headers: auth, signal: AbortSignal.timeout(30_000) });
-    if (res.status === 403 || res.headers.get('x-ratelimit-remaining') === '0') throw new RateLimit();
-    if (!res.ok) throw new Error(`Unsplash HTTP ${res.status}`);
-    const meta = (await res.json()) as { urls: { raw: string }; links: { download_location: string } };
-    // Unsplash API guidelines: report each download of a photo the app uses.
-    await fetch(meta.links.download_location, { headers: auth }).catch(() => {});
-    return download(`${meta.urls.raw}&w=3200&q=85&fm=jpg`);
-  }
-  const stock = picsumId(a.cover.url);
-  if (stock) return download(`https://picsum.photos/id/${stock}/3200/2400`);
-  if (/^https?:/.test(a.cover.url)) return download(a.cover.url);
-  return undefined;
+let cache: Record<string, string> | undefined;
+
+/** CDN base URL of an Unsplash photo, from the cache or the API (which is then told the photo is used). */
+async function unsplashRaw(photo: string, key: string): Promise<string> {
+  cache ??= await readJson<Record<string, string>>(CACHE, {});
+  if (cache[photo]) return cache[photo];
+  const auth = { authorization: `Client-ID ${key}`, 'accept-version': 'v1' };
+  const res = await fetch(`https://api.unsplash.com/photos/${photo}`, { headers: auth, signal: AbortSignal.timeout(30_000) });
+  if (res.status === 403 || res.status === 429) throw new RateLimit();
+  if (!res.ok) throw new Error(`Unsplash HTTP ${res.status} for ${photo}`);
+  const meta = (await res.json()) as { urls: { raw: string }; links: { download_location: string } };
+  await fetch(meta.links.download_location, { headers: auth, signal: AbortSignal.timeout(30_000) }).catch(() => {});
+  cache[photo] = meta.urls.raw;
+  await writeJson(CACHE, cache);
+  if (res.headers.get('x-ratelimit-remaining') === '0') throw new RateLimit();
+  return meta.urls.raw;
 }
 
 /** Stock photos are shared by many articles: one pair of files per photo, not per article. */
@@ -56,17 +60,16 @@ const baseName = (a: ArticleSource) => {
   return stock ? `stock-${stock}` : a.slug;
 };
 
-/** Returns true when the article file changed. */
-export async function hostCover(a: ArticleSource): Promise<boolean> {
-  if (a.cover.type !== 'image') return false;
+async function selfHost(a: ArticleSource): Promise<boolean> {
   const remote = /^https?:/.test(a.cover.url);
-  if (!remote && a.cover.wide) return false;
   const name = baseName(a);
   const portrait = path.join(OUT, `${name}.webp`);
   const wide = path.join(OUT, `${name}-wide.webp`);
   if (!(await exists(wide)) || (remote && !(await exists(portrait)))) {
-    const image = await original(a);
-    if (!image) return false;
+    const stock = picsumId(a.cover.url);
+    const src = stock ? `https://picsum.photos/id/${stock}/3200/2400` : remote ? a.cover.url : undefined;
+    if (!src) return false;
+    const image = await download(src);
     // A source smaller than the target is kept at its own size rather than blown up.
     const fit = (box: { width: number; height: number }) => sharp(image).rotate().resize({ ...box, fit: 'cover', position: 'attention', withoutEnlargement: true });
     await fs.mkdir(OUT, { recursive: true });
@@ -78,14 +81,31 @@ export async function hostCover(a: ArticleSource): Promise<boolean> {
   return true;
 }
 
+/** Returns true when the article file changed. */
+export async function hostCover(a: ArticleSource): Promise<boolean> {
+  if (a.cover.type !== 'image') return false;
+  const remote = /^https?:/.test(a.cover.url) && !onUnsplashCdn(a.cover.url);
+  if (!remote && a.cover.wide) return false;
+  const key = process.env.UNSPLASH_ACCESS_KEY;
+  const photo = a.cover.provider === 'unsplash' ? unsplashId(a.cover.sourceUrl) : undefined;
+  if (key && photo) {
+    const raw = await unsplashRaw(photo, key);
+    // A cover already kept in the repo stays the phone image; it only gains the landscape one.
+    if (remote) a.cover.url = cdn(raw, PORTRAIT);
+    a.cover.wide = cdn(raw, WIDE);
+    return true;
+  }
+  return selfHost(a);
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const at = args.indexOf('--limit');
   const limit = at >= 0 ? Number(args.splice(at, 2)[1]) : Infinity;
   const all = args.length ? args.map((s) => `${s}.json`) : await listJson(dirs.articles);
-  // Articles with no cover in the repo first, then the landscape files for those that have one.
-  const remoteFirst = await Promise.all(all.map(async (f) => /^https?:/.test((await readJson<ArticleSource>(path.join(dirs.articles, f))).cover.url)));
-  const files = [...all.filter((_, i) => remoteFirst[i]), ...all.filter((_, i) => !remoteFirst[i])];
+  // Articles with no usable cover first, then the landscape files for those that have one.
+  const blank = await Promise.all(all.map(async (f) => /picsum\.photos/.test((await readJson<ArticleSource>(path.join(dirs.articles, f))).cover.url)));
+  const files = [...all.filter((_, i) => blank[i]), ...all.filter((_, i) => !blank[i])];
   let done = 0;
   const failed = new Map<string, number>();
   for (const f of files) {
@@ -108,7 +128,8 @@ async function main() {
       if (/timeout|aborted|ENOTFOUND|ECONNREFUSED|fetch failed/i.test(why) && (failed.get(why) ?? 0) >= 3) break;
     }
   }
-  console.log(`covers: ${done} hosted${failed.size ? `; not fetched — ${[...failed].map(([k, n]) => `${n}× ${k}`).join(', ')}` : ''}`);
+  const left = (await Promise.all(all.map(async (f) => readJson<ArticleSource>(path.join(dirs.articles, f))))).filter((a) => /picsum\.photos/.test(a.cover.url)).length;
+  console.log(`covers: ${done} updated, ${left} still on picsum.photos${failed.size ? `; not fetched — ${[...failed].map(([k, n]) => `${n}× ${k}`).join(', ')}` : ''}`);
 }
 
 if (process.argv[1]?.endsWith('host-covers.ts'))
