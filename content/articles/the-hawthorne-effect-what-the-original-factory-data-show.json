@@ -1,0 +1,93 @@
+{
+  "slug": "the-hawthorne-effect-what-the-original-factory-data-show",
+  "status": "published",
+  "publishAt": "2026-11-15T00:00:00.000Z",
+  "category": "psychology",
+  "tags": ["hawthorne effect", "experiments", "research methods", "workplace", "observer effect"],
+  "title": {
+    "en": "The Hawthorne effect: what the original factory data show",
+    "vi": "Hiệu ứng Hawthorne: dữ liệu gốc của nhà máy cho thấy điều gì"
+  },
+  "hook": {
+    "en": "Ask why workers became more productive in an experiment, and many people will say the Hawthorne effect: people change their behaviour when they know they are being watched. The phrase comes from 1920s factory studies near Chicago. A reanalysis of the original data, long thought lost, found little of the pattern the popular story describes. [p:Being observed may change behaviour, but the lighting data do not show what the famous version claims.]",
+    "vi": "Hỏi vì sao công nhân năng suất hơn trong một thí nghiệm, nhiều người sẽ nhắc đến hiệu ứng Hawthorne (*Hawthorne effect*): con người đổi hành vi khi biết mình đang bị quan sát. Cụm từ này xuất phát từ các nghiên cứu trong nhà máy ở ngoại ô Chicago thập niên 1920. Một phân tích lại dữ liệu gốc, vốn được cho là đã thất lạc, tìm thấy rất ít khuôn mẫu mà câu chuyện phổ biến mô tả. [p:Bị quan sát có thể làm thay đổi hành vi, nhưng dữ liệu về ánh sáng không cho thấy điều phiên bản nổi tiếng khẳng định.]"
+  },
+  "sections": [
+    {
+      "heading_en": "A lighting question in a relay factory",
+      "heading_vi": "Một câu hỏi về ánh sáng trong nhà máy rơ-le",
+      "body_en": "In 1924 the National Research Council began experiments at the Hawthorne Works, a Western Electric plant in Cicero, Illinois. Its question was narrow: does better lighting raise worker productivity? The plant employed roughly 35,000 people. The workers in the three rooms studied were women who assembled relays and wound coils, and the council's committee included Thomas Edison as honorary chairman {levitt-list-2011}. [y:Output was measured as units completed per unit of time] {levitt-list-2011}.",
+      "body_vi": "Năm 1924, Hội đồng Nghiên cứu Quốc gia bắt đầu các thí nghiệm tại Hawthorne Works, một nhà máy của Western Electric ở Cicero, bang Illinois. Câu hỏi của họ hẹp: ánh sáng tốt hơn có làm tăng năng suất lao động không? Nhà máy có khoảng 35.000 người làm việc. Công nhân trong ba phòng được nghiên cứu là phụ nữ lắp ráp rơ-le và quấn cuộn dây, còn ủy ban của hội đồng có Thomas Edison làm chủ tịch danh dự {levitt-list-2011}. [y:Năng suất được đo bằng số đơn vị hoàn thành trong một đơn vị thời gian] {levitt-list-2011}."
+    },
+    {
+      "heading_en": "The data nobody could find",
+      "heading_vi": "Dữ liệu không ai tìm thấy",
+      "body_en": "The lighting experiments were never written up in full, and their records were widely believed to have been destroyed {levitt-list-2011}. Levitt and List traced the data to a microfiche room in a small library in Milwaukee, which held records for one of the three departments, and to a second archive in Boston that held the other two {levitt-list-2011}. [g:Old experiment records can survive in archives, so search before you accept that the data are gone.]",
+      "body_vi": "Các thí nghiệm ánh sáng chưa bao giờ được viết đầy đủ, và hồ sơ của chúng được nhiều người tin là đã bị hủy {levitt-list-2011}. Levitt và List lần ra dữ liệu: một phòng vi phim ở một thư viện nhỏ tại Milwaukee giữ hồ sơ của một trong ba phòng, còn kho lưu trữ ở Boston giữ hai phòng kia {levitt-list-2011}. [g:Hồ sơ thí nghiệm cũ vẫn có thể còn trong kho lưu trữ, nên hãy tìm trước khi cho rằng dữ liệu đã mất.]"
+    },
+    {
+      "heading_en": "Little sign of the famous jump",
+      "heading_vi": "Ít dấu hiệu của cú nhảy nổi tiếng",
+      "body_en": "The popular version holds that every change in light raised output, even when the room got dimmer. Levitt and List found that the claim does not survive the data. [p:There is no systematic evidence that productivity jumped whenever the lighting changed] {levitt-list-2011}. [y:In the first year, output peaked about 10 percent above the pre-experiment baseline] {levitt-list-2011}. Yet changes made on Mondays showed the same pattern on Mondays with no change in light. Weekly cycles, with Saturday output very low, dominated the daily figures.",
+      "body_vi": "Phiên bản phổ biến cho rằng mọi thay đổi ánh sáng đều làm tăng năng suất, kể cả khi căn phòng tối đi. Levitt và List thấy lập luận này không đứng vững trước dữ liệu. [p:Không có bằng chứng hệ thống nào cho thấy năng suất vọt lên mỗi khi ánh sáng thay đổi] {levitt-list-2011}. [y:Trong năm đầu, năng suất đạt đỉnh khoảng 10% trên mức nền trước thí nghiệm] {levitt-list-2011}. Tuy vậy, những ngày thứ Hai không có thay đổi ánh sáng vẫn cho thấy cùng một kiểu biến động. Chu kỳ theo tuần, với năng suất thứ Bảy rất thấp, chi phối phần lớn số liệu hằng ngày."
+    },
+    {
+      "heading_en": "Other rooms also rose",
+      "heading_vi": "Các phòng khác cũng tăng",
+      "body_en": "The second round is harder to read. Only room one was experimented on in the later phase, yet rooms two and three also saw substantial increases in output {levitt-list-2011}. Room one peaked around 20 percent above its pre-experiment baseline, and the other rooms rose too. [y:Across the plant, output per worker rose about 1.4 percent a year while the experiments ran] {levitt-list-2011}. The authors note an alternative: output in room one may have been rising for reasons the data do not capture.",
+      "body_vi": "Giai đoạn sau khó đọc hơn. Khi đó chỉ phòng một được thử nghiệm, nhưng các phòng hai và ba cũng tăng sản lượng đáng kể {levitt-list-2011}. Phòng một đạt đỉnh khoảng 20% trên mức nền trước thí nghiệm, và các phòng khác cũng tăng. [y:Trên toàn nhà máy, năng suất trên mỗi công nhân tăng khoảng 1,4% mỗi năm trong thời gian thí nghiệm] {levitt-list-2011}. Các tác giả nêu một khả năng khác: năng suất phòng một có thể đang tăng vì những lý do mà dữ liệu không ghi nhận."
+    },
+    {
+      "heading_en": "What the regressions show",
+      "heading_vi": "Kết quả hồi quy nói gì",
+      "body_en": "The authors ran regressions that controlled for weather, weekdays, holidays and other factors. [y:In one specification, output was 3 to 4 percent higher while experiments were running] {levitt-list-2011}. That result disappears once room-by-month and month-by-year controls are added. The authors read this as showing there was no abrupt jump when experiments started or stopped. They also say whether the early result reflects longer-term effects or unobserved factors remains an open question, so the evidence for a Hawthorne effect is weak.",
+      "body_vi": "Các tác giả chạy hồi quy có kiểm soát thời tiết, ngày trong tuần, ngày nghỉ lễ và nhiều yếu tố khác. [y:Trong một đặc tả, năng suất cao hơn 3 đến 4% khi thí nghiệm đang diễn ra] {levitt-list-2011}. Kết quả này biến mất khi thêm các biến kiểm soát theo phòng–tháng và tháng–năm. Theo các tác giả, điều đó cho thấy không có cú nhảy đột ngột nào khi thí nghiệm bắt đầu hay kết thúc. Họ cũng nói rằng liệu kết quả ban đầu phản ánh tác động dài hạn hay các yếu tố không quan sát được vẫn là câu hỏi mở, nên bằng chứng cho hiệu ứng Hawthorne còn yếu."
+    },
+    {
+      "heading_en": "What a weaker effect still means",
+      "heading_vi": "Hiệu ứng yếu hơn vẫn có nghĩa gì",
+      "body_en": "Levitt and List do not say that observation has no effect. Their analysis finds subtler signs. Output tended to be higher while manipulations were ongoing, and productivity responded more to the artificial light that experimenters controlled than to natural light {levitt-list-2011}. [g:When you study people, plan for the chance that being studied changes what they do, and design a comparison that controls for it.]",
+      "body_vi": "Levitt và List không kết luận rằng việc bị quan sát không có tác dụng gì. Phân tích của họ thấy những dấu hiệu tinh tế hơn. Năng suất có xu hướng cao hơn khi các thao tác thí nghiệm đang diễn ra, và năng suất phản ứng mạnh hơn với ánh sáng nhân tạo do người thử nghiệm điều khiển so với ánh sáng tự nhiên {levitt-list-2011}. [g:Khi nghiên cứu con người, hãy tính đến khả năng việc bị theo dõi làm thay đổi hành vi, và thiết kế phép so sánh kiểm soát được điều đó.]"
+    },
+    {
+      "heading_en": "How the name stuck",
+      "heading_vi": "Cái tên còn lại sau đó",
+      "body_en": "John R. P. French coined the term in 1953, after studies at the Hawthorne Works that ran from 1924 to 1932 {wikipedia-hawthorne}. Henry Landsberger later suggested that novelty and attention could raise output for a time, and that interpretation was dubbed 'the Hawthorne effect' {wikipedia-hawthorne}. Richard Nisbett has called the effect 'a glorified anecdote', and many studies failed to find it {wikipedia-hawthorne}. A later study by Elton Mayo, with six women, was uncontrolled, so no firm conclusions can be drawn from it {wikipedia-hawthorne}.",
+      "body_vi": "John R. P. French đặt ra thuật ngữ này năm 1953, sau các nghiên cứu tại Hawthorne Works chạy từ 1924 đến 1932 {wikipedia-hawthorne}. Henry Landsberger sau đó cho rằng sự mới lạ và sự chú ý có thể làm năng suất tăng trong một thời gian, và cách diễn giải này được gọi là hiệu ứng Hawthorne {wikipedia-hawthorne}. Nhà tâm lý học Richard Nisbett gọi nó là 'một giai thoại được thổi phồng', và nhiều nghiên cứu không tìm thấy nó {wikipedia-hawthorne}. Một nghiên cứu sau đó của Elton Mayo với sáu phụ nữ không được kiểm soát, nên không thể rút ra kết luận chắc chắn từ đó {wikipedia-hawthorne}."
+    }
+  ],
+  "keyPoint": {
+    "en": "The most famous lighting result from the Hawthorne studies is weaker than its reputation. [p:Observation may still shape behaviour, but the original data show little of the simple jump that the phrase describes.] Treat the effect as a question to test, not a fact to assume.",
+    "vi": "Kết quả nổi tiếng nhất về ánh sáng trong các nghiên cứu Hawthorne yếu hơn danh tiếng của nó. [p:Việc bị quan sát vẫn có thể định hình hành vi, nhưng dữ liệu gốc cho thấy rất ít cú nhảy đơn giản mà cụm từ này mô tả.] Hãy xem hiệu ứng này là một câu hỏi cần kiểm chứng, không phải một sự thật để mặc nhiên chấp nhận."
+  },
+  "applySteps": {
+    "en": [
+      "Before your next experiment, write down how participants will know they are being observed, and whether a control group faces the same observation.",
+      "Ask a colleague or a librarian whether old records from a past project still exist before you assume a dataset is lost.",
+      "Compare an observed group with a group that is watched in the same way but given no new treatment, and note any difference."
+    ],
+    "vi": [
+      "Trước thí nghiệm tiếp theo, hãy viết ra cách người tham gia biết mình đang bị quan sát, và liệu nhóm đối chứng có chịu cùng mức quan sát đó không.",
+      "Hỏi đồng nghiệp hoặc thủ thư xem hồ sơ của một dự án cũ có còn không, trước khi cho rằng bộ dữ liệu đã thất lạc.",
+      "So sánh nhóm được quan sát với một nhóm cũng bị theo dõi theo cách đó nhưng không nhận can thiệp mới, rồi ghi lại mọi khác biệt."
+    ]
+  },
+  "references": [
+    {
+      "id": "levitt-list-2011",
+      "label": "Levitt & List (2011)",
+      "url": "https://doi.org/10.1257/app.3.1.224"
+    },
+    {
+      "id": "wikipedia-hawthorne",
+      "label": "Wikipedia: Hawthorne effect",
+      "url": "https://en.wikipedia.org/wiki/Hawthorne_effect"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": ["Claude for Reader"],
+    "changes": []
+  }
+}

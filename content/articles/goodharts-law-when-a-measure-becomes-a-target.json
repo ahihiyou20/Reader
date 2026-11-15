@@ -1,0 +1,93 @@
+{
+  "slug": "goodharts-law-when-a-measure-becomes-a-target",
+  "status": "published",
+  "publishAt": "2026-11-15T00:00:00.000Z",
+  "category": "economics",
+  "tags": ["incentives", "measurement", "targets", "policy", "accountability"],
+  "title": {
+    "en": "Goodhart's law: why a measure stops working once it becomes a target",
+    "vi": "Luật Goodhart: vì sao một chỉ số mất tác dụng khi nó trở thành mục tiêu"
+  },
+  "hook": {
+    "en": "In 1975, the British economist Charles Goodhart warned that a statistical pattern tends to fall apart once authorities use it to steer policy. The warning became known as Goodhart's law. Its core point is easy to miss: [p:a number that people are rewarded for hitting stops describing what it was meant to describe]. The law now applies well beyond central banks, to exam scores, research output and surveys.",
+    "vi": "Năm 1975, nhà kinh tế người Anh Charles Goodhart cảnh báo rằng một mối quan hệ thống kê ổn định có thể sụp đổ khi nhà chức trách dùng nó để điều hành chính sách. Cảnh báo ấy được gọi là luật Goodhart (*Goodhart's law*). Ý chính của nó dễ bị bỏ qua: [p:một con số mà người ta được thưởng khi đạt được sẽ thôi mô tả đúng điều nó vốn định mô tả]. Luật này nay áp dụng được xa hơn nhiều so với các ngân hàng trung ương, từ điểm thi, số lượng công bố nghiên cứu cho tới khảo sát."
+  },
+  "sections": [
+    {
+      "heading_en": "A pattern that works as a description",
+      "heading_vi": "Một mối quan hệ đúng khi chỉ dùng để mô tả",
+      "body_en": "Goodhart was describing the trouble with running policy through monetary growth targets in Britain. A statistical regularity can be a good description of how an economy behaves. [y:Once pressure is put on it for control purposes, it tends to collapse] {artino-2021}, because the people and institutions involved start responding to the rule. Anthropologist Marilyn Strathern later gave his point the short form that circulates today {wikipedia-goodhart}. That short form applies to any place where a figure is used to decide what happens.",
+      "body_vi": "Goodhart nói về những khó khăn khi điều hành chính sách bằng các mục tiêu tăng trưởng tiền tệ ở nước Anh. Một quy tắc thống kê có thể mô tả khá tốt cách nền kinh tế vận hành. [y:Khi người ta gây áp lực lên nó để kiểm soát, nó có xu hướng sụp đổ] {artino-2021}, vì các cá nhân và tổ chức bắt đầu phản ứng với chính quy tắc đó. Nhà nhân học Marilyn Strathern sau này đặt cho ý ấy dạng ngắn gọn mà người ta vẫn dùng {wikipedia-goodhart}. Dạng ngắn gọn này áp dụng cho mọi nơi một con số được dùng để quyết định điều gì sẽ xảy ra."
+    },
+    {
+      "heading_en": "Why people move the number",
+      "heading_vi": "Vì sao người ta làm con số thay đổi",
+      "body_en": "The mechanism is about incentives. When a figure decides pay, promotion or funding, people have a reason to move it, and the easiest route is often to change what they do rather than what the figure was meant to capture. Donald Campbell made a related argument in a 1979 paper. The more a social indicator is used for decisions, he wrote, the more it is subject to corruption pressures, which distort the processes it was meant to monitor {artino-2021}. [g:Before you set a target, ask what behaviour it will reward.]",
+      "body_vi": "Cơ chế nằm ở động lực khuyến khích. Khi một con số quyết định lương, thăng chức hay tiền tài trợ, người ta có lý do để làm nó thay đổi. Cách dễ nhất thường là đổi điều họ làm, chứ không phải đổi điều con số vốn định đo. Donald Campbell có một lập luận tương tự trong một bài báo năm 1979. Ông viết rằng chỉ số xã hội càng được dùng để ra quyết định thì càng dễ chịu áp lực tham nhũng, và áp lực ấy làm méo chính quá trình mà chỉ số lẽ ra phải theo dõi {artino-2021}. [g:Trước khi đặt mục tiêu, hãy hỏi nó sẽ thưởng cho hành vi nào.]"
+    },
+    {
+      "heading_en": "Exam scores that measure preparation",
+      "heading_vi": "Điểm thi đo cái người ta đã luyện",
+      "body_en": "Medical training gives a concrete case. The *United States Medical Licensing Examination* Step 1 is meant to assess medical knowledge, and residency programmes often use its scores as a stand-in for overall applicant quality when they screen and rank candidates {artino-2021}. Students therefore prepare for the test itself. The editorial argues that the scores then begin to reflect [y:the amount of study time and access to test-preparation resources], rather than the knowledge they were meant to show. That focus can come at the cost of local course exams, small-group work and clinical skills. The number still exists, but it no longer does the job it was chosen for.",
+      "body_vi": "Đào tạo y khoa cho một ví dụ cụ thể. Kỳ thi cấp phép hành nghề y Hoa Kỳ, phần Step 1 (*USMLE Step 1*), được thiết kế để đánh giá kiến thức y khoa, và các chương trình nội trú thường dùng điểm thi này làm thước đo chung cho năng lực ứng viên khi sàng lọc và xếp hạng {artino-2021}. Vì vậy sinh viên chuẩn bị cho chính bài thi. Bài báo cho rằng khi đó điểm số bắt đầu phản ánh [y:thời gian học và khả năng tiếp cận tài liệu luyện thi], thay vì kiến thức mà nó vốn định thể hiện. Sự tập trung ấy có thể lấy mất thời gian của các kỳ thi học phần, học nhóm nhỏ và kỹ năng lâm sàng. Con số vẫn tồn tại, nhưng nó không còn làm đúng việc được chọn để làm."
+    },
+    {
+      "heading_en": "Surveys and publication counts",
+      "heading_vi": "Khảo sát và số lượng bài báo",
+      "body_en": "The editorial describes the same pattern in surveys. The ACGME Resident/Fellow Survey is used to check compliance with work-hour rules. Programme directors know how the answers matter, so they may coach residents on how to respond. [y:Noncompliance may then go undetected], and the survey loses its power to show where a programme needs to improve {artino-2021}. Publication counts follow the same logic. Department chairs and promotion committees use them, which can push researchers towards quantity over quality, through practices such as salami slicing and honorary authorship.",
+      "body_vi": "Bài báo mô tả cùng kiểu vấn đề trong các khảo sát. Khảo sát dành cho học viên nội trú của Hội đồng Kiểm định Đào tạo Sau đại học Y khoa (*ACGME*) được dùng để kiểm tra việc tuân thủ giới hạn giờ làm. Các trưởng chương trình biết câu trả lời quan trọng ra sao, nên họ có thể hướng dẫn học viên cách trả lời. [y:Vi phạm vì thế có thể không bị phát hiện], và khảo sát mất khả năng chỉ ra chương trình cần cải thiện ở đâu {artino-2021}. Số lượng công bố cũng theo logic tương tự. Trưởng khoa và hội đồng xét thăng tiến dùng chỉ số này, nên nhà nghiên cứu có thể chạy theo số lượng hơn chất lượng, qua những thủ thuật như chia nhỏ nghiên cứu (*salami slicing*) và ghi tên tác giả danh dự."
+    },
+    {
+      "heading_en": "An old idea with a new name",
+      "heading_vi": "Một ý cũ mang tên mới",
+      "body_en": "Strathern used the formulation in a 1997 paper on audit in the British university system. She linked the problem to a history of accountability that stretches back to Britain around 1800 {wikipedia-goodhart}. She also noted that targets which look measurable become tempting tools for improvement. The pattern is not confined to economics. The editorial applies the same logic to residency training and medical education {artino-2021}.",
+      "body_vi": "Strathern dùng cách diễn đạt này trong một bài báo năm 1997 về kiểm toán trong hệ thống đại học Anh. Bà gắn vấn đề với lịch sử của trách nhiệm giải trình, một lịch sử được nước Anh gắn với khoảng năm 1800 {wikipedia-goodhart}. Bà cũng lưu ý rằng các mục tiêu có vẻ đo được dễ trở thành công cụ cải thiện đầy cám dỗ. Vấn đề không chỉ thuộc kinh tế học. Bài báo áp dụng cùng logic này cho đào tạo nội trú và giáo dục y khoa {artino-2021}."
+    },
+    {
+      "heading_en": "Targets in government",
+      "heading_vi": "Mục tiêu trong chính phủ",
+      "body_en": "The law was first used to criticise the British government under Margaret Thatcher, which set targets for broad and narrow money {wikipedia-goodhart}. Critics used it to attack that approach, though the law reflects a more general pattern than monetary policy alone. Any agency or company that picks one number and rewards people for moving it faces the same risk.",
+      "body_vi": "Luật này từng được dùng để chỉ trích chính phủ Anh thời Margaret Thatcher, khi chính phủ đặt mục tiêu cho các khối tiền tệ rộng và hẹp {wikipedia-goodhart}. Các nhà phê bình dùng nó để công kích cách làm đó, dù quy luật phản ánh một khuôn mẫu rộng hơn chính sách tiền tệ. Mọi cơ quan hay công ty chọn một con số rồi thưởng cho người làm nó thay đổi đều đối mặt với cùng rủi ro."
+    },
+    {
+      "heading_en": "Using a measure without being ruled by it",
+      "heading_vi": "Dùng một thước đo mà không để nó chi phối",
+      "body_en": "The editorial does not argue for dropping numbers. It recommends asking early which behaviour a measure will reward. A logic model, a diagram of how activities lead to intended effects, can help trace that chain. It also prefers criterion-based assessment, which asks whether a learner meets a standard, over ranking people against one another. And it argues for narrative judgements alongside the numbers, because [g:narrative assessments are harder to manipulate] than a single score {artino-2021}.",
+      "body_vi": "Bài báo không kêu gọi bỏ các con số. Nó khuyên nên hỏi sớm rằng thước đo sẽ thưởng cho hành vi nào. Một mô hình logic, tức sơ đồ cho thấy các hoạt động dẫn tới tác động mong muốn ra sao, có thể giúp lần theo chuỗi đó. Bài báo cũng ưu tiên đánh giá theo tiêu chí, tức xem người học có đạt một chuẩn hay không, thay vì xếp hạng họ với nhau. Và bài báo khuyến nghị kèm theo các nhận định bằng lời bên cạnh con số, vì [g:đánh giá bằng lời khó bị thao túng hơn] một điểm số duy nhất {artino-2021}."
+    }
+  ],
+  "keyPoint": {
+    "en": "A number stops being useful once people are rewarded for moving it. [p:Goodhart's law is a reminder that a target changes the thing it measures.] Before you set one, ask what behaviour it will reward, and keep the number as a clue rather than the goal.",
+    "vi": "Một con số ngừng hữu ích khi người ta được thưởng vì làm nó thay đổi. [p:Luật Goodhart nhắc rằng một mục tiêu làm thay đổi chính điều nó đo lường.] Trước khi đặt mục tiêu, hãy hỏi nó sẽ thưởng cho hành vi nào, và giữ con số như một manh mối chứ không phải đích đến."
+  },
+  "applySteps": {
+    "en": [
+      "Before setting a target, write down the behaviour it will reward.",
+      "Pair each number you track with a short note on what it leaves out.",
+      "After a month, look for the shortcut people took to reach the number."
+    ],
+    "vi": [
+      "Trước khi đặt mục tiêu, hãy viết ra hành vi mà mục tiêu đó sẽ thưởng.",
+      "Đi kèm mỗi con số bạn theo dõi với một ghi chú ngắn về những gì nó bỏ sót.",
+      "Sau một tháng, hãy tìm xem mọi người đã đi đường tắt nào để đạt con số đó."
+    ]
+  },
+  "references": [
+    {
+      "id": "artino-2021",
+      "label": "Mattson, Bushardt & Artino (2021)",
+      "url": "https://doi.org/10.4300/JGME-D-20-01492.1"
+    },
+    {
+      "id": "wikipedia-goodhart",
+      "label": "Wikipedia: Goodhart's law",
+      "url": "https://en.wikipedia.org/wiki/Goodhart%27s_law"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": ["Claude for Reader"],
+    "changes": []
+  }
+}

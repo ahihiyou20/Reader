@@ -1,0 +1,93 @@
+{
+  "slug": "bloom-filters-checking-a-large-set-with-very-few-bits",
+  "status": "published",
+  "publishAt": "2026-11-15T00:00:00.000Z",
+  "category": "technology",
+  "tags": ["data structures", "hashing", "algorithms", "databases", "probability"],
+  "title": {
+    "en": "Bloom filters: checking a large set with very few bits",
+    "vi": "Bộ lọc Bloom: kiểm tra một tập hợp lớn chỉ với vài bit"
+  },
+  "hook": {
+    "en": "Checking whether an item is already in a large collection can mean reading slow storage every time. A Bloom filter answers the question from a small array of bits kept in memory. [p:It never misses an item that was added, but it sometimes reports an item as present when it was never added.]",
+    "vi": "Kiểm tra xem một mục đã có trong một tập hợp lớn hay chưa đôi khi buộc phải đọc bộ nhớ lưu trữ chậm mỗi lần. Bộ lọc Bloom trả lời câu hỏi đó dựa trên một mảng bit nhỏ đặt trong bộ nhớ. [p:Nó không bao giờ bỏ sót một mục đã được thêm vào, nhưng đôi khi báo một mục có mặt dù nó chưa từng được thêm.]"
+  },
+  "sections": [
+    {
+      "heading_en": "A bit array and a few hash functions",
+      "heading_vi": "Một mảng bit và vài hàm băm",
+      "body_en": "A Bloom filter starts as an array of m bits, all set to 0. Alongside it sit k hash functions, each of which turns an item into one position in the array. To add an item, the filter computes its k positions and sets those bits to 1 {christensen-nist}. Burton Howard Bloom introduced the idea in 1970, in a paper on space-time trade-offs in hash coding with allowable errors {christensen-nist}.",
+      "body_vi": "Bộ lọc Bloom bắt đầu từ một mảng gồm m bit, tất cả đều bằng 0. Đi kèm là k hàm băm (*hash functions*), mỗi hàm biến một mục thành một vị trí trong mảng. Để thêm một mục, bộ lọc tính k vị trí của nó rồi đặt các bit ở những vị trí đó thành 1 {christensen-nist}. Burton Howard Bloom đưa ra ý tưởng này năm 1970, trong một bài báo về các đánh đổi không gian–thời gian khi băm có chấp nhận lỗi {christensen-nist}."
+    },
+    {
+      "heading_en": "Why a 'maybe' is still useful",
+      "heading_vi": "Vì sao câu trả lời 'có thể' vẫn hữu ích",
+      "body_en": "To test an item, the filter computes the same k positions. If any of those bits is 0, the item is definitely absent, because adding it would have set every one of them to 1 {wikipedia-bloom}. If all k bits are 1, the item may be present, but other items could have set those bits by chance. [y:False positives are possible, but false negatives are not] {wikipedia-bloom}. The more items are added, the more bits are set, and the more often a 'maybe' turns out to be wrong.",
+      "body_vi": "Để kiểm tra một mục, bộ lọc tính cùng k vị trí đó. Nếu có bất kỳ bit nào ở đó bằng 0, mục ấy chắc chắn không có mặt, vì khi thêm nó, mọi bit đó đã bị đặt thành 1 {wikipedia-bloom}. Nếu cả k bit đều bằng 1, mục ấy có thể có mặt, nhưng các mục khác có thể đã đặt những bit đó do trùng hợp. [y:Dương tính giả (*false positive*) có thể xảy ra, còn âm tính giả (*false negative*) thì không] {wikipedia-bloom}. Càng thêm nhiều mục, càng nhiều bit bị đặt, và câu trả lời 'có thể' càng hay sai."
+    },
+    {
+      "heading_en": "Why it saves so much memory",
+      "heading_vi": "Vì sao tiết kiệm được nhiều bộ nhớ đến thế",
+      "body_en": "A filter keeps only the bits, not the items, so it needs no room for the items themselves {wikipedia-bloom}. [y:A Bloom filter with about a 1% false-positive rate needs roughly 9.6 bits per element, whatever the size of the elements] {wikipedia-bloom}. Storing full strings or records takes far more space, and linked structures add pointer overhead on top. The price is that the filter cannot return the items it holds. It answers only 'definitely absent' or 'probably present'. [g:Use it to skip slow lookups for items that are definitely absent.]",
+      "body_vi": "Bộ lọc chỉ giữ các bit, không giữ bản thân mục, nên không cần chỗ cho chính các mục {wikipedia-bloom}. [y:Một bộ lọc Bloom với tỷ lệ dương tính giả khoảng 1% cần khoảng 9,6 bit cho mỗi phần tử, bất kể kích thước phần tử] {wikipedia-bloom}. Lưu nguyên chuỗi hay bản ghi cần nhiều chỗ hơn hẳn, và các cấu trúc liên kết còn cộng thêm chi phí con trỏ. Cái giá là bộ lọc không trả lại được các mục nó chứa. Nó chỉ trả lời được 'chắc chắn không có' hoặc 'có thể có'. [g:Dùng nó để bỏ qua những lần tra cứu chậm cho các mục chắc chắn không có.]"
+    },
+    {
+      "heading_en": "Deletion is the hard part",
+      "heading_vi": "Xóa mới là phần khó",
+      "body_en": "The simple version cannot remove an item. Clearing one of its bits could erase the evidence for other items that share that bit, which would create false negatives {wikipedia-bloom}. A counting Bloom filter variant can handle removal {wikipedia-bloom}. [g:If your items will be removed, choose a variant that supports removal before you build the system.]",
+      "body_vi": "Phiên bản đơn giản không thể xóa một mục. Việc xóa một bit có thể xóa mất dấu vết của các mục khác dùng chung bit đó, và tạo ra âm tính giả {wikipedia-bloom}. Biến thể bộ lọc Bloom đếm (*counting Bloom filter*) có thể xử lý việc xóa {wikipedia-bloom}. [g:Nếu các mục của bạn sẽ bị xóa, hãy chọn biến thể hỗ trợ xóa trước khi xây dựng hệ thống.]"
+    },
+    {
+      "heading_en": "Getting the size right",
+      "heading_vi": "Chọn đúng kích thước",
+      "body_en": "The false-positive rate depends on the array size m, the number of items n and the number of hash functions k. The rate is (1 − e^(−kn/m))^k, and it is lowest when k is about (m/n) ln 2 {christensen-nist}. The NIST paper also corrects a formula that is widely repeated. The classic expression, usually credited to Bloom, probably first appeared in a 1983 paper by Mullin, and it always predicts too low a rate. For a 32-bit filter, the error can be off by several factors {christensen-nist}. [g:Measure the rate on real data before you trust a size.]",
+      "body_vi": "Tỷ lệ dương tính giả phụ thuộc vào kích thước mảng m, số mục n và số hàm băm k. Tỷ lệ này bằng (1 − e^(−kn/m))^k, và thấp nhất khi k gần bằng (m/n) ln 2 {christensen-nist}. Bài báo của NIST cũng chỉnh lại một công thức được lặp lại rộng rãi. Công thức cổ điển thường được gán cho Bloom, có khả năng xuất hiện lần đầu trong một bài báo năm 1983 của Mullin, và nó luôn dự đoán tỷ lệ thấp hơn thực tế. Với bộ lọc 32 bit, sai số có thể lệch vài lần {christensen-nist}. [g:Hãy đo tỷ lệ trên dữ liệu thật trước khi tin vào một kích thước.]"
+    },
+    {
+      "heading_en": "Why the hash functions matter",
+      "heading_vi": "Vì sao hàm băm quan trọng",
+      "body_en": "The standard analysis assumes the hash functions act like independent random choices. Wikipedia notes that they should be uniformly distributed and independent, and that for larger m and k the independence can be relaxed with a negligible increase in the false-positive rate {wikipedia-bloom}. The NIST authors also separate two averages: one taken over the bits set across many filters, and one taken over each filter's own rate. Only the second matches what an application actually sees {christensen-nist}. [p:The hash functions set the real behaviour of the structure, not just a formula.]",
+      "body_vi": "Phân tích thông thường giả định rằng các hàm băm hoạt động như những lựa chọn ngẫu nhiên độc lập. Wikipedia lưu ý rằng chúng nên phân bố đều và độc lập, và với m, k lớn hơn thì có thể nới lỏng yêu cầu độc lập mà tỷ lệ dương tính giả tăng không đáng kể {wikipedia-bloom}. Các tác giả NIST còn tách hai cách lấy trung bình: một theo số bit được đặt trên nhiều bộ lọc, và một theo tỷ lệ riêng của từng bộ lọc. Chỉ cách thứ hai khớp với những gì ứng dụng thực sự gặp {christensen-nist}. [p:Hàm băm quyết định hành vi thật của cấu trúc, không chỉ là một công thức.]"
+    },
+    {
+      "heading_en": "Where you meet them",
+      "heading_vi": "Nơi ta gặp chúng",
+      "body_en": "Bloom filters are used where a cheap 'maybe' can avoid an expensive lookup. The NIST paper lists uses in databases and network applications, and says Google has used them in the core of its search engine {christensen-nist}. In one example, a key-value store keeps its values on a slow disk, and a filter in memory answers faster. Some unneeded disk reads still happen when the filter reports a false positive, but overall speed improves {wikipedia-bloom}.",
+      "body_vi": "Bộ lọc Bloom được dùng ở những chỗ một câu trả lời 'có thể' rẻ tiền có thể tránh được một lần tra cứu tốn kém. Bài báo của NIST nêu việc dùng trong cơ sở dữ liệu và các ứng dụng mạng, và cho biết Google từng dùng chúng trong lõi công cụ tìm kiếm {christensen-nist}. Trong một ví dụ, một kho khóa–giá trị giữ giá trị trên đĩa chậm, còn bộ lọc trong bộ nhớ trả lời nhanh hơn. Vẫn có một số lần đọc đĩa không cần thiết khi bộ lọc báo dương tính giả, nhưng tốc độ chung vẫn tăng {wikipedia-bloom}."
+    }
+  ],
+  "keyPoint": {
+    "en": "A Bloom filter trades certainty for memory. [p:It can say an item is definitely absent, and it can say an item is probably present.] That is enough to skip slow lookups for absent items, which is where the savings come from.",
+    "vi": "Bộ lọc Bloom đánh đổi sự chắc chắn lấy bộ nhớ. [p:Nó có thể khẳng định một mục chắc chắn vắng mặt, và có thể báo rằng một mục có khả năng hiện diện.] Điều đó đủ để bỏ qua các lần tra cứu chậm cho những mục vắng mặt, và chính ở đó nảy sinh khoản tiết kiệm."
+  },
+  "applySteps": {
+    "en": [
+      "Pick a question you ask often, such as whether a key is already in a cache, and time one full lookup.",
+      "Build a small filter in a language you know, with a bit array and a few hash functions, and load it with a list of words you choose.",
+      "Test it on words that are not in the list, and compare the false-positive rate you measure with the formula (1 − e^(−kn/m))^k."
+    ],
+    "vi": [
+      "Chọn một câu hỏi bạn thường gặp, chẳng hạn một khóa đã có trong bộ nhớ đệm hay chưa, và đo thời gian một lần tra cứu đầy đủ.",
+      "Viết một bộ lọc nhỏ bằng ngôn ngữ bạn quen, gồm một mảng bit và vài hàm băm, rồi nạp vào đó một danh sách từ bạn chọn.",
+      "Thử nghiệm với những từ không có trong danh sách, rồi so sánh tỷ lệ dương tính giả bạn đo được với công thức (1 − e^(−kn/m))^k."
+    ]
+  },
+  "references": [
+    {
+      "id": "wikipedia-bloom",
+      "label": "Wikipedia: Bloom filter",
+      "url": "https://en.wikipedia.org/wiki/Bloom_filter"
+    },
+    {
+      "id": "christensen-nist",
+      "label": "Christensen, Roginsky & Jimeno, A New Analysis of the False-Positive Rate of a Bloom Filter",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=903775"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": ["Claude for Reader"],
+    "changes": []
+  }
+}

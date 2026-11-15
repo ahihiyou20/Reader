@@ -1,0 +1,93 @@
+{
+  "slug": "why-salt-melts-ice-freezing-point-depression",
+  "status": "published",
+  "publishAt": "2026-11-15T00:00:00.000Z",
+  "category": "science",
+  "tags": ["chemistry", "solutions", "freezing point", "colligative properties", "everyday science"],
+  "title": {
+    "en": "Why salt melts ice: freezing-point depression explained",
+    "vi": "Vì sao muối làm tan băng: giải thích hiện tượng hạ điểm đông đặc"
+  },
+  "hook": {
+    "en": "Scatter salt on an icy road and the ice thins out, even though the air is below freezing. The effect has a limit: sodium chloride stops working at roughly −21°C. [p:Dissolved particles make it harder for water to freeze, so the water on the ice stays liquid at a temperature where pure water would turn solid.]",
+    "vi": "Rắc muối lên đường đóng băng, lớp băng sẽ mỏng dần dù không khí đang dưới 0°C. Hiệu ứng này có giới hạn: muối natri clorua ngừng phát huy tác dụng ở khoảng −21°C. [p:Các hạt hòa tan khiến nước khó đông đặc hơn, nên lớp nước trên mặt băng vẫn ở thể lỏng ở nhiệt độ mà nước tinh khiết đã đông thành băng.]"
+  },
+  "sections": [
+    {
+      "heading_en": "Water with a lower freezing point",
+      "heading_vi": "Nước có điểm đông đặc thấp hơn",
+      "body_en": "Pure water freezes at 0°C, or 32°F {britannica-salt}. When salt dissolves, it breaks into ions, and those ions get in the way of the rigid structure that water molecules form when they freeze {britannica-salt}. Wikipedia describes the same effect in terms of vapour pressure. A solution has a lower vapour pressure than the pure solvent, so the solid can only reach balance with it at a lower temperature {wikipedia-fp}.",
+      "body_vi": "Nước tinh khiết đông đặc ở 0°C, tức 32°F {britannica-salt}. Khi muối tan, nó phân ly thành các ion, và các ion này cản trở cấu trúc cứng mà các phân tử nước tạo ra khi đông lại {britannica-salt}. Wikipedia mô tả cùng hiệu ứng qua áp suất hơi. Dung dịch có áp suất hơi thấp hơn dung môi tinh khiết, nên pha rắn chỉ đạt cân bằng với dung dịch ở nhiệt độ thấp hơn {wikipedia-fp}."
+    },
+    {
+      "heading_en": "Two ways to picture the same effect",
+      "heading_vi": "Hai cách hình dung cùng một hiệu ứng",
+      "body_en": "Britannica pictures the salt as an obstacle to bonding, which makes the water molecules harder to lock into ice {britannica-salt}. Wikipedia puts it another way. The added solute does not stop the solvent from freezing. It dilutes the solvent, so fewer molecules are available to freeze at any moment, and balance is reached at a lower temperature {wikipedia-fp}. The two accounts differ in emphasis, but both end with the same lower freezing point.",
+      "body_vi": "Britannica hình dung muối như một trở ngại cho việc liên kết, khiến các phân tử nước khó khóa vào nhau thành băng {britannica-salt}. Wikipedia diễn đạt theo cách khác. Chất tan thêm vào không ngăn dung môi đông lại. Nó làm loãng dung môi, nên ở mỗi thời điểm có ít phân tử sẵn sàng đông hơn, và cân bằng đạt được ở nhiệt độ thấp hơn {wikipedia-fp}. Hai cách giải thích khác nhau về cách nhấn mạnh, nhưng cùng dẫn tới một điểm đông đặc thấp hơn."
+    },
+    {
+      "heading_en": "Why more ions work better",
+      "heading_vi": "Vì sao nhiều ion hiệu quả hơn",
+      "body_en": "The effect depends on how many particles a salt releases. [y:Calcium chloride breaks into three ions, while sodium chloride breaks into two] {britannica-salt}. More ions mean more particles getting in the way of ice bonds, so calcium chloride melts ice more effectively {britannica-salt}. In dilute solutions, the drop depends on the number of dissolved particles rather than their identity, and the formula uses the van 't Hoff factor, the number of particles per formula unit, which is 2 for sodium chloride {wikipedia-fp}.",
+      "body_vi": "Hiệu ứng phụ thuộc vào số hạt mà muối giải phóng. [y:Canxi clorua phân ly thành ba ion, còn natri clorua chỉ thành hai] {britannica-salt}. Nhiều ion hơn nghĩa là nhiều hạt cản trở liên kết của băng hơn, nên canxi clorua làm tan băng hiệu quả hơn {britannica-salt}. Trong dung dịch loãng, mức hạ điểm đông đặc phụ thuộc vào số hạt hòa tan chứ không phụ thuộc vào bản chất của chúng. Công thức dùng hệ số van 't Hoff (*van 't Hoff factor*), tức số hạt trên mỗi đơn vị công thức, và giá trị này bằng 2 với natri clorua {wikipedia-fp}."
+    },
+    {
+      "heading_en": "Where salt stops working, and which salt is used",
+      "heading_vi": "Muối ngừng hiệu quả ở đâu, và loại muối nào được dùng",
+      "body_en": "Road salting relies on this effect, but it has limits. Sodium chloride can lower the freezing point of water to about −21°C, and below the road surface temperature at which it works, other salts are used, such as calcium chloride and magnesium chloride {wikipedia-fp}. Pre-treating roads works because the warmer road surface melts the snow and makes a solution, while bridges, which are colder, typically do not respond to pre-treatment {wikipedia-fp}. Some airports use sodium formate or potassium acetate, because the chlorides corrode metals, especially iron {wikipedia-fp}.",
+      "body_vi": "Việc rải muối trên đường dựa vào hiệu ứng này, nhưng hiệu ứng có giới hạn. Natri clorua có thể hạ điểm đông đặc của nước xuống khoảng −21°C. Khi nhiệt độ mặt đường thấp hơn mức nó còn hiệu quả, người ta dùng các muối khác như canxi clorua và magie clorua {wikipedia-fp}. Phun muối trước khi tuyết rơi hiệu quả vì mặt đường ấm hơn làm tuyết tan và tạo thành dung dịch, còn cầu, vốn lạnh hơn, thường không đáp ứng với cách này {wikipedia-fp}. Một số sân bay dùng natri format hoặc kali axetat, vì các clorua ăn mòn kim loại, nhất là sắt {wikipedia-fp}."
+    },
+    {
+      "heading_en": "A cost for plants and water",
+      "heading_vi": "Cái giá đối với cây cối và nguồn nước",
+      "body_en": "Britannica notes that more than 20 million tons of salt are used each year to melt snow and ice in cold northern regions {britannica-salt}. Chloride is harmful to the environment. It can kill aquatic animals, affect other animal populations through the food web, dehydrate and kill plants, and alter soil composition {britannica-salt}. Some alternatives avoid chloride, but they are much more expensive than sodium chloride or calcium chloride {britannica-salt}. [g:Use de-icing salt sparingly on paths and driveways, where it can reach plants and soil.]",
+      "body_vi": "Britannica cho biết hơn 20 triệu tấn muối được dùng mỗi năm để làm tan tuyết và băng ở các vùng lạnh phía bắc {britannica-salt}. Clorua gây hại cho môi trường. Nó có thể giết động vật dưới nước, tác động tới các quần thể động vật khác qua chuỗi thức ăn, làm cây mất nước và chết, và làm thay đổi thành phần đất {britannica-salt}. Một số chất thay thế không chứa clorua, nhưng chúng đắt hơn nhiều so với natri clorua hay canxi clorua {britannica-salt}. [g:Hãy rải muối làm tan băng có chừng mực trên lối đi và đường vào nhà, nơi muối có thể chạm tới cây và đất.]"
+    },
+    {
+      "heading_en": "The same effect in food, engines and animals",
+      "heading_vi": "Cùng một hiệu ứng trong thực phẩm, động cơ và động vật",
+      "body_en": "The effect keeps ice cream soft below 0°C {wikipedia-fp}. A car's radiator fluid is a mixture of water and ethylene glycol, which keeps the radiator from freezing in winter {wikipedia-fp}. Dissolved solutes also keep sea water liquid below 0°C, and some arctic fish, such as the rainbow smelt, produce glycerol to protect the water inside their bodies {wikipedia-fp}. Milk is tested the same way. Milk with a freezing-point depression above 0.509°C is considered unadulterated, so added water can be detected {wikipedia-fp}.",
+      "body_vi": "Hiệu ứng này giữ cho kem không cứng lại dưới 0°C {wikipedia-fp}. Chất lỏng làm mát trong động cơ ô tô là hỗn hợp nước và etylen glycol, giúp két nước không đóng băng vào mùa đông {wikipedia-fp}. Các chất tan hòa vào cũng giữ nước biển ở thể lỏng dưới 0°C, còn một số loài cá vùng cực, như cá rainbow smelt, tạo ra glycerol để bảo vệ nước trong cơ thể chúng {wikipedia-fp}. Sữa cũng được kiểm tra theo cách tương tự: sữa có độ hạ điểm đông đặc trên 0,509°C được coi là không bị pha thêm nước {wikipedia-fp}."
+    },
+    {
+      "heading_en": "Measuring the drop",
+      "heading_vi": "Đo mức hạ",
+      "body_en": "Because the drop is predictable, it can be used to measure things. Cryoscopy relies on exact freezing-point measurements to determine a solute's molar mass or its degree of dissociation {wikipedia-fp}. The method depends on knowing the solvent's cryoscopic constant, which is a property of the solvent rather than of the solute {wikipedia-fp}. It also needs the van 't Hoff factor, because the number of particles a solute releases sets how far the freezing point drops {wikipedia-fp}.",
+      "body_vi": "Vì mức hạ có thể dự đoán được, nó có thể dùng để đo đạc. Phương pháp đo đông đặc (*cryoscopy*) dựa vào các phép đo điểm đông đặc chính xác để xác định khối lượng mol hoặc mức phân ly của một chất tan {wikipedia-fp}. Phương pháp này cần biết hằng số đông đặc của dung môi, một tính chất của dung môi chứ không phải của chất tan {wikipedia-fp}. Phương pháp này cũng cần biết hệ số van 't Hoff, vì số hạt mà chất tan giải phóng quyết định mức hạ điểm đông đặc {wikipedia-fp}."
+    }
+  ],
+  "keyPoint": {
+    "en": "Salt does not warm the ice. It lowers the temperature at which water freezes, because dissolved particles get in the way of ice forming. [p:The effect depends on how many particles a salt releases, which is why calcium chloride works in colder conditions than sodium chloride.] The same rule keeps ice cream soft and sea water liquid.",
+    "vi": "Muối không làm nóng băng. Nó hạ nhiệt độ mà nước đông đặc, vì các hạt hòa tan cản trở băng hình thành. [p:Hiệu ứng phụ thuộc vào số hạt mà muối giải phóng, đó là lý do canxi clorua vẫn hiệu quả ở nhiệt độ lạnh hơn natri clorua.] Cùng quy tắc ấy giữ kem mềm và nước biển ở thể lỏng."
+  },
+  "applySteps": {
+    "en": [
+      "Put a few spoons of table salt in a small cup of ice water and time how long the ice takes to melt, against a cup with plain water.",
+      "Repeat the test with a second salt, such as calcium chloride, using the same amount of ice and water, and compare the times.",
+      "Read the label of any de-icing product you buy, and check whether it contains chloride before you use it near plants."
+    ],
+    "vi": [
+      "Cho vài thìa muối ăn vào một cốc nhỏ nước đá, rồi đo thời gian băng tan so với một cốc nước lã.",
+      "Lặp lại thí nghiệm với một loại muối khác, như canxi clorua, dùng cùng lượng đá và nước, rồi so sánh thời gian.",
+      "Đọc nhãn của mọi sản phẩm làm tan băng bạn mua, và kiểm tra xem nó có chứa clorua không trước khi dùng gần cây cối."
+    ]
+  },
+  "references": [
+    {
+      "id": "britannica-salt",
+      "label": "Grannan, 'Why Does Salt Melt Ice?', Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/story/why-does-salt-melt-ice"
+    },
+    {
+      "id": "wikipedia-fp",
+      "label": "Wikipedia: Freezing-point depression",
+      "url": "https://en.wikipedia.org/wiki/Freezing-point_depression"
+    }
+  ],
+  "origin": {
+    "group": 4,
+    "license": "Reader-CC-BY-4.0",
+    "authors": ["Claude for Reader"],
+    "changes": []
+  }
+}
