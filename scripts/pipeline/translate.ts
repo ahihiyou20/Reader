@@ -2,6 +2,7 @@
 // Gemini from the English text. One request per article and language. Group 3 (CC BY-ND) text is never
 // translated: it gets a summary in each language instead. Only article text is sent, never user data.
 //   GEMINI_API_KEY=… pnpm tsx scripts/pipeline/translate.ts [--limit N] [--langs fr,de] [slug…]
+//   GEMINI_VIA=agy pnpm tsx scripts/pipeline/translate.ts --jobs 6      (signed-in Antigravity CLI, no key)
 // Without slugs it works through every article that still misses something, newest first, and stops
 // when the quota or --limit is reached; run it again to continue.
 import path from 'node:path';
@@ -165,6 +166,7 @@ async function main() {
     return i >= 0 ? args.splice(i, 2)[1] : undefined;
   };
   const limit = Number(opt('--limit') ?? Infinity);
+  const jobs = Math.max(1, Number(opt('--jobs') ?? 1));
   const langs = (opt('--langs')?.split(',') as Lang[] | undefined)?.filter((l) => LANGS.includes(l)) ?? LANGS;
   const files = args.length ? args.map((s) => path.join(dirs.articles, `${s}.json`)) : (await listJson(dirs.articles)).map((f) => path.join(dirs.articles, f));
   const all = await Promise.all(files.map(async (f) => ({ f, a: await readJson<ArticleSource>(f) })));
@@ -175,22 +177,26 @@ async function main() {
     .slice(0, limit);
   console.log(`${todo.length} of ${all.length} articles need work in ${langs.join(', ')}`);
   let ok = 0;
-  for (const { f, a } of todo) {
-    try {
-      for (const l of langs) {
+  let stopped = false;
+  const queue = [...todo];
+  const worker = async () => {
+    for (let next = queue.shift(); next && !stopped; next = queue.shift()) {
+      const { f, a } = next;
+      try {
         // Saved after every language, so an interrupted run loses at most one request.
-        if (await translateInto(a, l)) await writeJson(f, a);
+        for (const l of langs) if (await translateInto(a, l)) await writeJson(f, a);
+        ok++;
+        console.log(`${ok}/${todo.length} ${a.slug}: ${fullLangs(a).join(' ')}`);
+      } catch (e) {
+        if (e instanceof QuotaError || e instanceof GeminiSetupError) {
+          if (!stopped) console.log(`${(e as Error).message}. Stopped at ${a.slug}; run again to continue.`);
+          stopped = true;
+        } else console.error(`${a.slug}: ${(e as Error).message}`);
       }
-      ok++;
-      console.log(`${a.slug}: ${fullLangs(a).join(' ')}`);
-    } catch (e) {
-      if (e instanceof QuotaError || e instanceof GeminiSetupError) {
-        console.log(`${(e as Error).message}. Stopped at ${a.slug}; run again to continue.`);
-        break;
-      }
-      console.error(`${a.slug}: ${(e as Error).message}`);
     }
-  }
+  };
+  // The free API tier is paced one request at a time; --jobs is for the agy route, which runs requests side by side.
+  await Promise.all(Array.from({ length: jobs }, worker));
   await jobSummary(`Translated ${ok} of ${todo.length} pending articles (${TLANGS.join(', ')} + glossary).`);
 }
 

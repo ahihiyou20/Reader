@@ -1,12 +1,16 @@
 // Gemini free tier (optional), shared by ai-suggest, the daily feeds and the issue intake. Only
 // article text is ever sent: never user data (comments, accounts, reading history).
+import { execFile } from 'node:child_process';
+import os from 'node:os';
 import { z } from 'zod';
 import { http } from './lib';
 import { BANNED_WORDS_EN, STOCK_PHRASES_EN, STOCK_PHRASES_VI } from './prose-lint';
 
 // Google retires model names for new keys (gemini-2.5-flash-lite was closed in 2026-10); override with
 // the GEMINI_MODEL repository variable when this one goes the same way.
-export const MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
+/** GEMINI_VIA=agy sends requests through a signed-in Antigravity CLI instead of an API key (bulk jobs on an editor's machine). */
+const VIA_AGY = process.env.GEMINI_VIA === 'agy';
+export const MODEL = process.env.GEMINI_MODEL || (VIA_AGY ? 'gemini-3.8-flash-high' : 'gemini-3.5-flash-lite');
 /** The free tier allows about 15 requests a minute: keep a gap between calls. */
 const GAP_MS = Number(process.env.GEMINI_GAP_MS ?? 4500);
 
@@ -20,7 +24,7 @@ export function isSetupFailure(status: number, body: string) {
   return status === 400 && /API key|API_KEY|no longer available|not found|not supported|INVALID_ARGUMENT.*model/i.test(body);
 }
 
-export const hasGemini = () => Boolean(process.env.GEMINI_API_KEY);
+export const hasGemini = () => VIA_AGY || Boolean(process.env.GEMINI_API_KEY);
 
 let last = 0;
 let used = 0;
@@ -41,7 +45,32 @@ function toOpenApi(node: unknown): unknown {
   return out;
 }
 
+/** One print-mode run of `agy`, in an empty directory so the agent has nothing but the prompt to work on. */
+function viaAgy(text: string, jsonSchema: object): Promise<unknown> {
+  used++;
+  const t0 = Date.now();
+  return new Promise((resolve, reject) =>
+    execFile(
+      'agy',
+      ['-p', text, '--model', MODEL, '--json-schema', JSON.stringify(jsonSchema), '--output-format', 'json', '--print-timeout', '240s'],
+      { cwd: os.tmpdir(), maxBuffer: 32 * 1024 * 1024, timeout: 300_000 },
+      (err, stdout) => {
+        if (err && !stdout) return reject(/ENOENT/.test(err.message) ? new GeminiSetupError('agy is not installed') : new Error(`agy: ${err.message.slice(0, 300)}`));
+        try {
+          const out = JSON.parse(stdout) as { status?: string; structured_output?: unknown; response?: string };
+          if (/quota|rate.?limit|RESOURCE_EXHAUSTED/i.test(`${out.status} ${out.structured_output ? '' : out.response}`)) return reject(new QuotaError('agy quota reached'));
+          if (process.env.GEMINI_DEBUG) console.error(`agy ${MODEL} ${Math.round((Date.now() - t0) / 1000)}s ${out.status}`);
+          resolve(out.structured_output);
+        } catch {
+          reject(new Error(`agy: unreadable reply ${stdout.slice(0, 200)}`));
+        }
+      },
+    ),
+  );
+}
+
 async function generate(text: string, jsonSchema: object, temperature: number): Promise<unknown> {
+  if (VIA_AGY) return viaAgy(text, jsonSchema);
   if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is not set');
   const wait = last + GAP_MS - Date.now();
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
