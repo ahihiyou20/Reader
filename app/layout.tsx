@@ -3,6 +3,7 @@ import { Allura, Anton, Charm, Cormorant_Garamond, Dancing_Script, Dela_Gothic_O
 import Script from 'next/script';
 import { stageScript } from '@/lib/stage';
 import { env } from '@/lib/env';
+import { SHARE_SIZE, SITE_IMAGE } from '@/lib/share-image';
 import './globals.css';
 import './styles/stage-compact-landscape.css';
 import './styles/stage-regular-portrait.css';
@@ -47,8 +48,17 @@ export const metadata: Metadata = {
     ],
     apple: '/icons/apple-touch-icon.png',
   },
-  openGraph: { type: 'website', siteName: 'Pagemoor', images: ['/icons/og.png'] },
-  twitter: { card: 'summary_large_image' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Pagemoor',
+    title: 'Pagemoor',
+    description: 'One good idea a day, read in three minutes. Free, in five languages, with audio.',
+    url: '/',
+    locale: 'vi_VN',
+    alternateLocale: ['en_US', 'fr_FR', 'de_DE', 'es_ES'],
+    images: [{ url: SITE_IMAGE, ...SHARE_SIZE, alt: 'Pagemoor — Xin chào' }],
+  },
+  twitter: { card: 'summary_large_image', title: 'Pagemoor', images: [SITE_IMAGE] },
   ...(env.googleSiteVerification ? { verification: { google: env.googleSiteVerification } } : {}),
 };
 

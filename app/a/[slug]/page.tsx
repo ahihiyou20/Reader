@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { SHARE_SIZE, shareImage } from '@/lib/share-image';
 import { notFound } from 'next/navigation';
 import { ReaderApp } from '@/components/ReaderApp';
 import { COVER_SIZES } from '@/lib/covers';
@@ -18,15 +19,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const a = readArticle(slug);
   if (!a) return { title: 'Pagemoor' };
   const description = richToText(a.hook.en).slice(0, 180);
-  const image = a.cover.type === 'video' ? a.cover.poster : a.cover.url;
+  const image = { url: shareImage(a), ...SHARE_SIZE, alt: a.title.en };
   return {
     title: a.title.en,
     description,
     alternates: { canonical: `/a/${slug}` },
     // Verbatim (group 3) and summary (group 5) pages point to the original; keep them out of search.
     ...(a.origin.group === 3 || a.origin.group === 5 ? { robots: { index: false, follow: true } } : {}),
-    openGraph: { type: 'article', title: a.title.en, description, images: image ? [image] : undefined, publishedTime: a.publishedAt },
-    twitter: { card: 'summary_large_image', title: a.title.en, description, images: image ? [image] : undefined },
+    openGraph: { type: 'article', siteName: 'Pagemoor', title: a.title.en, description, images: [image], publishedTime: a.publishedAt, url: `/a/${slug}` },
+    twitter: { card: 'summary_large_image', title: a.title.en, description, images: [image] },
   };
 }
 

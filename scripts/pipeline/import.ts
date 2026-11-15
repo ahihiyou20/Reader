@@ -85,9 +85,9 @@ export async function draftFrom(src: Imported, category: string, sourceId: strin
   const candidates: CoverSource[] = await findCovers(query, { videos: true, nasa: SCIENCE.has(category), category });
   const cover: CoverSource = candidates[0] ?? {
     type: 'image',
-    url: '/icons/og.png',
+    url: '/icons/og-pagemoor.jpg',
     provider: 'own',
-    author: 'Reader',
+    author: 'Pagemoor',
     license: 'CC BY 4.0',
   };
   const placeholder = candidates[0] ? await remotePlaceholder(cover) : {};

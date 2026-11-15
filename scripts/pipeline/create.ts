@@ -82,7 +82,7 @@ export function modeFor(url: string, mode: Mode = 'auto'): Exclude<Mode, 'auto'>
 async function covers(title: string, category: string) {
   const query = `${title.split(/[:?—–-]/)[0]} ${category}`.slice(0, 80);
   const candidates: CoverSource[] = await findCovers(query, { videos: true, nasa: SCIENCE.has(category), category });
-  const cover: CoverSource = candidates[0] ?? { type: 'image', url: '/icons/og.png', provider: 'own', author: 'Reader', license: 'CC BY 4.0' };
+  const cover: CoverSource = candidates[0] ?? { type: 'image', url: '/icons/og-pagemoor.jpg', provider: 'own', author: 'Pagemoor', license: 'CC BY 4.0' };
   return { cover, coverCandidates: candidates, ...(candidates[0] ? await remotePlaceholder(cover) : {}) };
 }
 
@@ -122,7 +122,7 @@ function skeleton(slug: string, category: string, origin: ArticleSource['origin'
     hook: { en: '' },
     sections: [],
     references,
-    cover: { type: 'image', url: '/icons/og.png', provider: 'own', author: 'Reader', license: 'CC BY 4.0' },
+    cover: { type: 'image', url: '/icons/og-pagemoor.jpg', provider: 'own', author: 'Pagemoor', license: 'CC BY 4.0' },
     origin,
   };
 }

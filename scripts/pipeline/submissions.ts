@@ -24,7 +24,7 @@ const esc = (s: string) => s.replace(/([\\*[\]{}])/g, '\\$1').trim();
 function coverFrom(url: string | undefined): ArticleSource['cover'] {
   if (url && /^https:\/\/(images\.unsplash\.com|images\.pexels\.com)\//.test(url))
     return { type: 'image', url, provider: url.includes('unsplash') ? 'unsplash' : 'pexels', author: 'Unknown — check before publishing', license: url.includes('unsplash') ? 'Unsplash License' : 'Pexels License', sourceUrl: url };
-  return { type: 'image', url: '/icons/og.png', provider: 'own', author: 'Reader', license: 'CC BY 4.0', ...(url ? { sourceUrl: url } : {}) };
+  return { type: 'image', url: '/icons/og-pagemoor.jpg', provider: 'own', author: 'Pagemoor', license: 'CC BY 4.0', ...(url ? { sourceUrl: url } : {}) };
 }
 
 export function toDraft(id: string, s: Submission, slug: string): ArticleSource {
