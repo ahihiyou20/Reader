@@ -93,9 +93,28 @@
     "changes": []
   },
   "ai": {
-    "fields": [],
+    "fields": [
+      "en"
+    ],
     "reviewed": false,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-28T02:31:51.028Z"
+  "publishAt": "2026-10-28T02:31:51.028Z",
+  "glossary": {
+    "en": {
+      "ultra-orthodox": "Strictly observant branch of Orthodox Judaism emphasizing traditional religious law and full-time Torah study.",
+      "haredi": "Strictly observant traditional Orthodox Jews devoted to full-time Torah study and religious law.",
+      "ashkenazi": "Jewish people whose ancestral origins trace back to Central and Eastern Europe.",
+      "united torah judaism": "An Israeli political alliance representing Ashkenazi ultra-Orthodox Jewish voters in parliament.",
+      "sephardi": "Jewish people whose ancestral roots trace back to the Iberian Peninsula.",
+      "mizrachi": "Jewish people whose ancestral origins trace back to the Middle East and North Africa.",
+      "shas": "An Israeli political party representing Sephardi and Mizrachi ultra-Orthodox Jews.",
+      "knesset": "The national unicameral parliament and supreme legislative body of Israel.",
+      "proportional representation": "An electoral system where parties receive legislative seats in proportion to votes received.",
+      "surplus votes": "Excess votes shared between allied parties to maximize their collective seat allocation.",
+      "electoral threshold": "The minimum percentage of total votes a party must receive to win parliamentary seats.",
+      "reservists": "Citizens who have completed regular military service and remain subject to call-up for duty.",
+      "kahanist": "Far-right, extremist Jewish nationalist groups associated with the ideology of Meir Kahane."
+    }
+  }
 }

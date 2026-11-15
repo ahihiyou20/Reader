@@ -115,10 +115,28 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-28T02:27:51.028Z"
+  "publishAt": "2026-10-28T02:27:51.028Z",
+  "glossary": {
+    "en": {
+      "nightshade family": "A plant family, including tomatoes and eggplants, to which capsicums belong.",
+      "capsaicin": "A chemical compound in chilli peppers that triggers heat and pain receptors.",
+      "chlorophyll": "The green plant pigment that conducts photosynthesis and gives unripe capsicums their colour.",
+      "photosynthesis": "The biological process plants use to convert light into energy for growth.",
+      "carotenoids": "Yellow, orange, and red plant pigments that act as antioxidants in ripening capsicums.",
+      "flavonoids": "A group of antioxidant plant compounds that provide health benefits.",
+      "phenolic compounds": "Plant-derived antioxidant substances found in capsicums that help protect health.",
+      "capsanthin": "A red carotenoid pigment with powerful antioxidant activity found in red capsicums.",
+      "beta-carotene": "A carotenoid pigment that the human body converts into vitamin A.",
+      "lutein": "A dietary carotenoid essential for eye health and protecting against vision disorders.",
+      "violaxanthin": "An antioxidant carotenoid pigment present in green, yellow, and orange capsicums.",
+      "zeaxanthin": "An antioxidant carotenoid that supports eye health and helps prevent cataracts.",
+      "polyphenols": "Antioxidant compounds whose availability increases when capsicums are cooked."
+    }
+  }
 }

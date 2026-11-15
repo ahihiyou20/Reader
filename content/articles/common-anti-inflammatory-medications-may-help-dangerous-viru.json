@@ -117,9 +117,38 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "inflammation": "The body's biological response to tissue damage or illness, often causing redness and swelling.",
+      "pathogens": "Disease-causing microorganisms, such as harmful viruses or bacteria, that infect living organisms.",
+      "influenza": "A contagious viral infection affecting the respiratory tract, commonly referred to as the flu.",
+      "sars-cov-2": "The coronavirus strain that causes the respiratory illness known as COVID-19.",
+      "janus kinase inhibitors": "Medications that block specific immune enzymes to reduce inflammation in autoimmune conditions.",
+      "rheumatoid arthritis": "An autoimmune disease where the immune system attacks joint tissues, causing chronic pain and swelling.",
+      "signaling pathways": "Molecular communication routes within cells that coordinate protective cellular responses and defenses.",
+      "cellular models": "Laboratory-grown cell cultures used by scientists to simulate and study biological processes.",
+      "coronavirus": "A family of viruses causing illnesses ranging from common colds to severe respiratory infections.",
+      "rift valley fever": "A viral infection spread by mosquitoes that primarily affects animals but can also infect humans.",
+      "transmission": "The passing or spread of an infectious agent from one host to another."
+    },
+    "vi": {
+      "kháng viêm": "Khả năng hoặc tác dụng ngăn chặn, làm giảm các phản ứng viêm trong cơ thể.",
+      "mầm bệnh": "Các tác nhân sinh học như virus hoặc vi khuẩn có khả năng xâm nhập và gây bệnh.",
+      "sars-cov-2": "Chủng virus corona gây ra đại dịch viêm đường hô hấp cấp tính COVID-19.",
+      "janus kinase": "Nhóm enzyme nội bào quan trọng tham gia vào con đường dẫn truyền tín hiệu miễn dịch.",
+      "miễn dịch": "Hệ thống bảo vệ tự nhiên của cơ thể giúp chống lại vi sinh vật gây hại.",
+      "truyền tín hiệu": "Quá trình tế bào nhận và truyền thông tin để điều hòa phản ứng sinh học.",
+      "mô lành": "Các mô khỏe mạnh bình thường chưa bị virus tấn công hoặc phá hủy.",
+      "kháng virus": "Khả năng nhận biết, ức chế và ngăn cản virus xâm nhập, nhân lên.",
+      "gen": "Đoạn vật chất di truyền mang chỉ dẫn tạo ra các phân tử bảo vệ cơ thể.",
+      "nhiễm trùng": "Sự xâm nhập và phát triển của các vi sinh vật gây hại trong mô sống.",
+      "tác dụng phụ": "Những hiệu ứng không mong muốn xảy ra ngoài tác dụng điều trị chính của thuốc."
+    }
   }
 }

@@ -123,9 +123,24 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "shinkansen": "High-speed Japanese passenger trains operating between major cities.",
+      "rebukes": "Sharp expressions of disapproval or criticism directed at someone.",
+      "polarised opinions": "Sharply divided viewpoints where two groups hold completely opposing attitudes.",
+      "shared perception": "The assumption that different people experience identical physical environments the exact same way.",
+      "social etiquette": "Customary rules and conventions governing considerate, polite behavior in public spaces.",
+      "food compound": "A specific chemical component within food that produces distinct scents.",
+      "asymmetries": "Differences or imbalances in how two people perceive the exact same sensory input.",
+      "perceptual realities": "Unique internal mental representations of the world formed through individual sensory interpretation.",
+      "sensory burdens": "Physical or psychological distress caused by exposure to overwhelming sensory stimuli.",
+      "olfactory genes": "Genes that regulate the sense of smell and determine individual odor sensitivity."
+    }
   }
 }
