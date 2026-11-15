@@ -153,11 +153,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/tulip-mania-what-really-happened.webp",
+    "url": "https://images.unsplash.com/11/sky-rose.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODI0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Arvee Marie",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/YnfGtpt2gf4"
+    "sourceUrl": "https://unsplash.com/photos/YnfGtpt2gf4",
+    "wide": "https://images.unsplash.com/11/sky-rose.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODI0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@flutterhappy?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACsOUAKjxWqGT2OoEmQ9ixeCryAAP7yWpieXd7dTxT7jV8Kcc340kY4UpzbOuTUinneFUOgxgm/n5edC1fjlhw7qVeJdgJugZGITHqyB/J7cxn6Grz95yTw+lJTkiZfPFh/C6XL47Nr4FHExsLtx1CCT5Wi8t+r6YsUCPD4oYceLdcTnfH3Dxm5/4mwpyELUERoyKWASFWizP2AAA==",
   "dominant": "#676f78",

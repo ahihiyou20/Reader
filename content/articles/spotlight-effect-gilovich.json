@@ -170,11 +170,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/spotlight-effect-gilovich.webp",
+    "url": "https://images.unsplash.com/17/unsplash_5252bb51404f8_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE5fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Daniel Robert",
+    "author": "Daniel Robert Dinu",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/MRxD-J9-4ps"
+    "sourceUrl": "https://unsplash.com/photos/MRxD-J9-4ps",
+    "wide": "https://images.unsplash.com/17/unsplash_5252bb51404f8_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE5fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@gigxels?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBACdASoQABwAPu1qrU8ppiQiMAgBMB2JZQC/OYxso/LHSmTV+u9rFFoHAAD+yG5I6Qu21zyKtXvqwmJEbqsW+omb2lUcFt5qQVHZAFyXJGuHua/lXX0bE1GtEWpNC/y/tpHmSgox+hKMG6cKvcb0H0/BAv/Su77IIOL66ZwS/xbpB/D5Y38/uxY4ZuJ3M/uhYtPHGHHcM/Teo/YX87J2DUUXf5qAAAA=",
   "dominant": "#6c6b6d",

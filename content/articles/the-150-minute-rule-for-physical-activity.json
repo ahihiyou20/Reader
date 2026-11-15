@@ -153,11 +153,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/the-150-minute-rule-for-physical-activity.webp",
+    "url": "https://images.unsplash.com/photo-1451417379553-15d8e8f49cde?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODIxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Patrick Fore",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/V6s1cmE39XM"
+    "sourceUrl": "https://unsplash.com/photos/V6s1cmE39XM",
+    "wide": "https://images.unsplash.com/photo-1451417379553-15d8e8f49cde?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODIxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@patrickian4?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JYgCdLwABz6IomyunGVOFMAD9jP7hGyw3CeOJjMHOZ102VGVXe33dxAv0tvakVQX/rEOMN8UIJVF6SckRK5M9fP0oBMeoAAA=",
   "dominant": "#273b44",

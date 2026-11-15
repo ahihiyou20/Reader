@@ -154,11 +154,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/rosetta-stone-decipherment-hieroglyphs.webp",
+    "url": "https://images.unsplash.com/4/bench-hi-res.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Rodrigo Melo",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/eG3k60PrTGY"
+    "sourceUrl": "https://unsplash.com/photos/eG3k60PrTGY",
+    "wide": "https://images.unsplash.com/4/bench-hi-res.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@rodrigomelo?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoQABwAPu1Ct1apoqakGAEwHYlnAMssYhXNLVd+qahWgAD+9RooJxm811zY/NqCxku7DCRgARKSAY0ymsxa03j/IzgzgmSvIjVOZTbE2K1SFgPuTuhltPgAAXyjKWoyrPLEgG7egAA=",
   "dominant": "#7b7a7a",

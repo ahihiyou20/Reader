@@ -154,11 +154,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/semmelweis-handwashing-vienna-1847.webp",
+    "url": "https://images.unsplash.com/8/les-portes.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE3fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Paul Evans",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/CtkDsu4w-Rs"
+    "sourceUrl": "https://unsplash.com/photos/CtkDsu4w-Rs",
+    "wide": "https://images.unsplash.com/8/les-portes.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE3fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@paulevans?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwAwCdASoQABwAPu1iqU2ppaQiMAgBMB2JZgCdMoABTKGMZtmk1Bn8AM4Fqro2/bqzUzYv+KsYDZDdUG2h7jJ2iIQxrVDI44UNzkfs7Vv7g0CEaiw25X87VJ/CNRds7P6bTI9mDfSwYuQjDx17+9G2rKf5ujQ+V/nfUPca8PZ0Iob/CgCqUuhLQpmV3GAA",
   "dominant": "#594a45",

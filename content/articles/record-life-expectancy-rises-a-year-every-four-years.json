@@ -153,11 +153,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/record-life-expectancy-rises-a-year-every-four-years.webp",
+    "url": "https://images.unsplash.com/photo-1453282716202-de94e528067c?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Erez Attias",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/KqVHRmHVwwM"
+    "sourceUrl": "https://unsplash.com/photos/KqVHRmHVwwM",
+    "wide": "https://images.unsplash.com/photo-1453282716202-de94e528067c?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@erezattias?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQC7Ay6pwlk224CFEBLHYVOEAAD+v+hcocJkvvvEzVFVaA07Q86WwonrdcwMpUr0oHxD1hCIC6eQkOxadHZ1L0WBOWqj6w+1c/veih9UmZELcbUDbQFJ4DEiUUUPOah+X5kXE3BetTJB2KFOzc+ozwBmydrB4uK+6oRYBVMUFRj6gJsAAA==",
   "dominant": "#303334",

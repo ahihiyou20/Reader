@@ -159,11 +159,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/peak-end-rule-how-we-remember.webp",
+    "url": "https://images.unsplash.com/3/man-fishing.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODEwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Yoni Kaplan-Nadel",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/iJnZwLBOB1I"
+    "sourceUrl": "https://unsplash.com/photos/iJnZwLBOB1I",
+    "wide": "https://images.unsplash.com/3/man-fishing.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODEwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@yonikaplannadel?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoQABwAPu1mq04ppaQiMAgBMB2JZgCdMoRwAIM+XXLVl4AA/vs5tki27ECLPH0ezKa+ETniAFRk9euJbOR5ijnTpEX/DTmqnal3WE3VK6km3bIBJ0XzZajYkZpcmdfaP6QAAA==",
   "dominant": "#7a6050",

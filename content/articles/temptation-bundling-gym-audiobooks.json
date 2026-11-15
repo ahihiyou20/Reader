@@ -153,11 +153,13 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/temptation-bundling-gym-audiobooks.webp",
+    "url": "https://images.unsplash.com/photo-1442473483905-95eb436675f1?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODIxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Dikaseva",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/zvf7cZ0PC20"
+    "sourceUrl": "https://unsplash.com/photos/zvf7cZ0PC20",
+    "wide": "https://images.unsplash.com/photo-1442473483905-95eb436675f1?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODIxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@dikaseva?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoQABwAPu1mqk2ppaQiMAgBMB2JYwCdAGmj96zn0lrAOQAA/ueLx6qoOh+AjTvte7q4opQQY86xOMnYFsUi6OuNzexBPgP/SmLN0v1/4aflduA0PexS/BIAAAA=",
   "dominant": "#756756",
