@@ -27,7 +27,7 @@ export const STANDARDS = {
 } satisfies Record<string, Standard>;
 
 const GLOSSARY_MIN = 8;
-/** A clip on R2 (an absolute URL) or a file in public/. */
+/** A clip on Cloudinary (an absolute URL) or a file in public/. */
 const clipThere = (url: string | undefined) => Boolean(url && (/^https?:/.test(url) || (url.startsWith('/') && fs.existsSync(path.join(ROOT, 'public', url)))));
 
 export const articleWords = (a: Pick<ArticleSource, 'hook' | 'sections'>) => proseWords(a.hook.en) + a.sections.reduce((n, s) => n + proseWords(s.body_en), 0);

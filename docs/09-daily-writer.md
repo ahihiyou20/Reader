@@ -132,7 +132,7 @@ from a **Pixabay video** (free to use). Look at `black-hole-anatomy`,
 `the-1952-london-smog-counting-the-dead` and `body-clock-nobel-2017-period-gene` for the feel: one
 slow movement that fits the subject, never busy. Do not generate or animate anything yourself, and
 never commit a video file: you choose the clip, and `finish-articles.yml` downloads it, cuts a
-portrait and a landscape loop and stores them on Cloudflare R2 once the article is on `main`.
+portrait and a landscape loop and stores them on Cloudinary once the article is on `main`.
 
 1. Choose 1–3 words for something that moves on camera and fits the article (e.g. "ocean waves",
    "clock gears", "smoke chimney", "neurons animation").
@@ -160,7 +160,7 @@ portrait and a landscape loop and stores them on Cloudflare R2 once the article 
 4. Commit only the new `content/articles/*.json` files (never a video), as
    `reader-writer <noreply@anthropic.com>`, message `content: daily written articles YYYY-MM-DD`.
 5. `git pull --rebase origin main`, then `git push origin HEAD:main`. `finish-articles.yml` then
-   fills any language still missing (Gemini), cuts the queued Pixabay clips onto R2, and the site is
+   fills any language still missing (Gemini), cuts the queued Pixabay clips onto Cloudinary, and the site is
    deployed.
 
 If an article keeps failing, drop it rather than publishing it broken.

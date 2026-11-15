@@ -1,6 +1,6 @@
 // Chooses the Pixabay video for an article's motion cover: the muted loop the app plays over its cover
 // photo. The choice is recorded in the article (`coverClip`); finish-articles.yml downloads it, cuts a
-// portrait and a landscape loop and stores them on Cloudflare R2 once the article is on main, so no
+// portrait and a landscape loop and stores them on Cloudinary once the article is on main, so no
 // video file is ever committed.
 //   pnpm tsx scripts/dev/motion-cover.ts --search "<words>"                  list unused Pixabay clips (needs PIXABAY_API_KEY)
 //   pnpm tsx scripts/dev/motion-cover.ts <slug> <Pixabay video URL or id> [--preview] [--start <s>]
@@ -40,7 +40,7 @@ async function main() {
   const a = await readJson<ArticleSource>(file);
   a.coverClip = /^https?:/.test(clip) ? clip : `https://pixabay.com/videos/id-${id}/`;
   await writeJson(file, a);
-  console.log(`${slug}: Pixabay video ${id} chosen; finish-articles.yml cuts it and stores it on R2 once the article is on main.`);
+  console.log(`${slug}: Pixabay video ${id} chosen; finish-articles.yml cuts it and stores it on Cloudinary once the article is on main.`);
   if (!preview) return;
   if (!hasPixabay() || !(await hasFfmpeg())) return console.log('No preview: it needs PIXABAY_API_KEY and ffmpeg.');
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'preview-'));

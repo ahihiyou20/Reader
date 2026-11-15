@@ -2,15 +2,15 @@
 // Pixabay's free videos (like the first three, e.g. black-hole-anatomy). Pixabay does not allow
 // hotlinking, so each clip is downloaded, cropped to a portrait clip for phones and a landscape one
 // for wide screens, its last half second cross-faded into its start so it loops, and stored on
-// Cloudflare R2 (r2.ts) so the repository does not grow with every article; without R2 settings the
-// clips go to public/covers/video/ instead. The API needs PIXABAY_API_KEY; ffmpeg must be on the PATH.
+// Cloudinary (cloudinary.ts) so the repository does not grow with every article; without
+// CLOUDINARY_URL the clips go to public/covers/video/ instead. The API needs PIXABAY_API_KEY; ffmpeg must be on the PATH.
 import { execFile } from 'node:child_process';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import type { ArticleSource, CoverVideo } from '../../lib/content/types';
 import { ROOT, USER_AGENT, dirs, listJson, readJson, writeJson } from './lib';
-import { hasR2, onR2, r2Put } from './r2';
+import { hasCloudinary, onCloudinary, uploadVideo } from './cloudinary';
 
 const SECONDS = 6;
 const FPS = 24;
@@ -126,9 +126,9 @@ export async function cutClip(clip: PixabayClip, dir: string, start = 0) {
   await fromClip(input, 'wide', path.join(dir, 'wide.mp4'), from);
 }
 
-/** Store a cut clip: on R2 under a key naming the clip, or in public/covers/video/ without R2. */
+/** Store a cut clip: on Cloudinary under a name naming the clip, or in public/covers/video/ without it. */
 async function store(file: string, name: string): Promise<string> {
-  if (hasR2()) return r2Put(`covers/video/${name}`, await fs.readFile(file), 'video/mp4');
+  if (hasCloudinary()) return uploadVideo(await fs.readFile(file), `pagemoor/covers/${name.replace(/\.mp4$/, '')}`);
   await fs.mkdir(VIDEO_DIR, { recursive: true });
   await fs.copyFile(file, path.join(VIDEO_DIR, name));
   return `/covers/video/${name}`;
@@ -140,7 +140,7 @@ export async function motionCover(a: ArticleSource, clip: PixabayClip, start = 0
   try {
     await cutClip(clip, tmp, start);
     // The clip id in the name keeps a re-cut from reusing a URL readers may have cached.
-    const base = hasR2() ? `${a.slug}-${clip.id}` : a.slug;
+    const base = hasCloudinary() ? `${a.slug}-${clip.id}` : a.slug;
     const url = await store(path.join(tmp, 'portrait.mp4'), `${base}.mp4`);
     const wide = await store(path.join(tmp, 'wide.mp4'), `${base}-wide.mp4`);
     (await clipsInUse()).add(clip.id);
@@ -151,11 +151,11 @@ export async function motionCover(a: ArticleSource, clip: PixabayClip, start = 0
 }
 
 /**
- * Move motion-cover clips still kept in public/covers/video/ to R2 and point their articles at it.
+ * Move motion-cover clips still kept in public/covers/video/ to Cloudinary and point their articles at it.
  * Returns the slugs it changed; the local files are deleted once the article file is written.
  */
-export async function moveClipsToR2(): Promise<string[]> {
-  if (!hasR2()) return [];
+export async function moveClipsOffRepo(): Promise<string[]> {
+  if (!hasCloudinary()) return [];
   const moved: string[] = [];
   for (const f of await listJson(dirs.articles)) {
     const file = path.join(dirs.articles, f);
@@ -164,10 +164,10 @@ export async function moveClipsToR2(): Promise<string[]> {
     if (!v || [v.url, v.wide].every((u) => !u?.startsWith('/covers/video/'))) continue;
     const local: string[] = [];
     const up = async (u: string | undefined) => {
-      if (!u?.startsWith('/covers/video/') || onR2(u)) return u;
+      if (!u?.startsWith('/covers/video/') || onCloudinary(u)) return u;
       const src = path.join(ROOT, 'public', u);
       local.push(src);
-      return r2Put(u.slice(1), await fs.readFile(src), 'video/mp4');
+      return uploadVideo(await fs.readFile(src), `pagemoor/covers/${path.basename(u, '.mp4')}`);
     };
     a.cover.video = { ...v, url: (await up(v.url))!, ...(v.wide ? { wide: await up(v.wide) } : {}) };
     await writeJson(file, a);

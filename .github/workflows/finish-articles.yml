@@ -2,9 +2,9 @@
 # push or a merged Gemini pull request, fill the languages and glossaries their writer could not
 # (Gemini), cut the Pixabay clip a writer queued (coverClip) or find one where the Pagemoor standard
 # asks for a motion cover and none is there yet, report every new article against the standard, and
-# deploy. Clips are stored on Cloudflare R2, and any clip still kept in public/covers/video/ is moved
-# there (run this workflow by hand with no slugs to do only that). Needs GEMINI_API_KEY, PIXABAY_API_KEY,
-# R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY and the variables R2_BUCKET, R2_PUBLIC_URL. Pushes made here use GITHUB_TOKEN, so they do not
+# deploy. Clips are stored on Cloudinary, and any clip still kept in public/covers/video/ is moved
+# there (run this workflow by hand with no slugs to do only that). Needs GEMINI_API_KEY, PIXABAY_API_KEY
+# and CLOUDINARY_URL. Pushes made here use GITHUB_TOKEN, so they do not
 # start this workflow again.
 name: Finish new articles
 on:
@@ -13,7 +13,7 @@ on:
     paths: ['content/articles/**']
   workflow_dispatch:
     inputs:
-      slugs: { description: 'Article slugs, space separated (empty: only move clips to R2)', required: false }
+      slugs: { description: 'Article slugs, space separated (empty: only move clips to Cloudinary)', required: false }
 permissions:
   contents: write
   actions: write
@@ -21,12 +21,8 @@ concurrency:
   group: finish-articles
   cancel-in-progress: false
 env:
-  # Motion-cover clips go to Cloudflare R2 (scripts/pipeline/r2.ts); without these, into public/covers/video/.
-  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
-  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-  R2_BUCKET: ${{ vars.R2_BUCKET }}
-  R2_PUBLIC_URL: ${{ vars.R2_PUBLIC_URL }}
+  # Motion-cover clips go to Cloudinary (scripts/pipeline/cloudinary.ts); without it, into public/covers/video/.
+  CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
 jobs:
   finish:
     runs-on: ubuntu-latest
@@ -73,7 +69,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A content/articles public/covers/video
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
-          git commit -q -m "pipeline: finish new articles, clips on R2"
+          git commit -q -m "pipeline: finish new articles, clips on Cloudinary"
           for i in 1 2 3 4; do
             git pull --rebase -q origin main && git push origin HEAD:main && break
             sleep $((i * 10))
