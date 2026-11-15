@@ -12,36 +12,66 @@
   ],
   "title": {
     "en": "Artemis I Reveals Surprising Radiation Levels Near the Moon",
-    "vi": "Sứ mệnh Artemis I hé lộ mức bức xạ đáng ngạc nhiên gần Mặt Trăng"
+    "vi": "Sứ mệnh Artemis I hé lộ mức bức xạ đáng ngạc nhiên gần Mặt Trăng",
+    "fr": "Artemis I révèle des niveaux de radiation surprenants près de la Lune",
+    "de": "Artemis I enthüllt überraschende Strahlungswerte nahe dem Mond",
+    "es": "Artemis I revela niveles sorprendentes de radiación cerca de la Luna"
   },
   "hook": {
     "en": "Recent measurements from the Artemis I mission around the Moon offer fresh insights into space radiation using tiny experimental crystals. Researchers discovered that lunar radiation exposure differs significantly from low Earth orbit, yet the contrast is less extreme than previously assumed. These findings help scientists better prepare for upcoming crewed missions into deep space.",
-    "vi": "Các phép đo gần đây từ sứ mệnh Artemis I quanh Mặt Trăng mang lại cái nhìn mới mẻ về bức xạ không gian bằng các tinh thể thử nghiệm nhỏ bé. Các nhà nghiên cứu phát hiện ra rằng phơi nhiễm bức xạ ở mặt trăng khác biệt đáng kể so với quỹ đạo Trái Đất thấp, song sự đối lập lại ít cực đoan hơn dự đoán."
+    "vi": "Các phép đo gần đây từ sứ mệnh Artemis I quanh Mặt Trăng mang lại cái nhìn mới mẻ về bức xạ không gian bằng các tinh thể thử nghiệm nhỏ bé. Các nhà nghiên cứu phát hiện ra rằng phơi nhiễm bức xạ ở mặt trăng khác biệt đáng kể so với quỹ đạo Trái Đất thấp, song sự đối lập lại ít cực đoan hơn dự đoán.",
+    "fr": "De récentes mesures issues de la mission Artemis I autour de la Lune offrent un nouvel éclairage sur les rayonnements spatiaux grâce à de minuscules cristaux expérimentaux. Les chercheurs ont découvert que l'exposition aux radiations lunaires diffère notablement de celle en orbite terrestre basse, bien que le contraste soit moins marqué qu'estimé auparavant. Ces observations aident les scientifiques à mieux préparer les prochaines missions habitées vers l'espace lointain.",
+    "de": "Jüngste Messungen der Mission Artemis I rund um den Mond liefern mithilfe winziger experimenteller Kristalle neue Einblicke in die kosmische Strahlung. Forschende stellten fest, dass sich die Strahlenbelastung in Mondnähe deutlich von jener im erdnahen Orbit unterscheidet, der Kontrast jedoch weniger extrem ausfällt als bislang angenommen. Diese Erkenntnisse helfen der Wissenschaft dabei, künftige bemannte Missionen in den tiefen Weltraum besser vorzubereiten.",
+    "es": "Mediciones recientes de la misión Artemis I alrededor de la Luna ofrecen nuevas perspectivas sobre la radiación espacial mediante diminutos cristales experimentales. Los investigadores descubrieron que la exposición a la radiación lunar difiere notablemente de la órbita terrestre baja; no obstante, el contraste es menos extremo de lo que se suponía. Estos hallazgos ayudan a los científicos a prepararse mejor para las próximas misiones tripuladas al espacio profundo."
   },
   "sections": [
     {
       "heading_en": "Tiny Crystals Track Space Radiation",
       "heading_vi": "Tinh thể nhỏ theo dõi bức xạ không gian",
       "body_en": "During the uncrewed Orion flight, experimental fluorescent lithium fluoride detectors inside human-shaped mannequins recorded particle tracks. Developed in Poland, these passive devices function similarly to photographic film {source}. Instead of requiring chemical etching like traditional plastic detectors, the crystals allow direct examination of radiation paths under a standard microscope when illuminated with blue light.",
-      "body_vi": "Trong chuyến bay Orion không người lái, các thiết bị dò huỳnh quang bằng tinh thể lithium fluoride (*lithium fluoride*) bên trong các hình nơ-ron thử nghiệm đã ghi lại vạch hạt. Được phát triển tại Ba Lan, những thiết bị thụ động này hoạt động tương tự như phim chụp ảnh {source}. Thay vì đòi hỏi ăn mòn hóa học như thiết bị truyền thống, các tinh thể cho phép kiểm tra trực tiếp đường đi của bức xạ dưới kính hiển vi khi chiếu sáng bằng ánh sáng xanh."
+      "body_vi": "Trong chuyến bay Orion không người lái, các thiết bị dò huỳnh quang bằng tinh thể lithium fluoride (*lithium fluoride*) bên trong các hình nơ-ron thử nghiệm đã ghi lại vạch hạt. Được phát triển tại Ba Lan, những thiết bị thụ động này hoạt động tương tự như phim chụp ảnh {source}. Thay vì đòi hỏi ăn mòn hóa học như thiết bị truyền thống, các tinh thể cho phép kiểm tra trực tiếp đường đi của bức xạ dưới kính hiển vi khi chiếu sáng bằng ánh sáng xanh.",
+      "heading_fr": "De minuscules cristaux traquent les radiations spatiales",
+      "body_fr": "Pendant le vol inhabité d'Orion, des détecteurs expérimentaux fluorescents au fluorure de lithium placés dans des mannequins anthropomorphes ont enregistré les trajectoires de particules. Conçus en Pologne, ces dispositifs passifs fonctionnent de manière analogue à un film photographique {source}. Au lieu d'exiger une gravure chimique comme les détecteurs traditionnels en plastique, ces cristaux permettent d'examiner directement les traces de radiation au microscope optique standard lorsqu'ils sont éclairés par une lumière bleue.",
+      "heading_de": "Winzige Kristalle erfassen Weltraumstrahlung",
+      "body_de": "Während des unbemannten Flugs der Orion-Kapsel zeichneten experimentelle, fluoreszierende Lithiumfluorid-Detektoren im Inneren menschenähnlicher Puppen Teilchenspuren auf. Diese in Polen entwickelten passiven Messgeräte funktionieren ähnlich wie fotografischer Film {source}. Anstatt wie herkömmliche Kunststoffdetektoren ein chemisches Ätzen zu erfordern, ermöglichen die Kristalle bei Bestrahlung mit blauem Licht die direkte Untersuchung von Strahlungspfaden unter einem Standardmikroskop.",
+      "heading_es": "Diminutos cristales rastrean la radiación espacial",
+      "body_es": "Durante el vuelo no tripulado de Orion, detectores experimentales fluorescentes de fluoruro de litio instalados dentro de maniquíes con forma humana registraron trayectorias de partículas. Desarrollados en Polonia, estos dispositivos pasivos funcionan de manera similar a una película fotográfica {source}. En lugar de requerir un grabado químico como los detectores plásticos tradicionales, los cristales permiten examinar directamente las trayectorias de radiación bajo un microscopio estándar al iluminarse con luz azul."
     },
     {
       "heading_en": "Overcoming Analytical Complexity",
       "heading_vi": "Vượt qua độ phức tạp phân tích",
       "body_en": "Interpreting deep space radiation is uniquely challenging because particles arrive unpredictably from all directions across vast energy ranges. To address complex track angles and background interference, scientists developed sophisticated calibration software. This mathematical correction reduced measurement discrepancies to within fifteen percent compared to established detector technologies while revealing previously undetectable low-energy particle events.",
-      "body_vi": "Việc giải mã bức xạ không gian sâu gặp nhiều thách thức vì các hạt đến một cách khó lường từ mọi hướng với nhiều mức năng lượng rộng. Để xử lý các góc vạch phức tạp và nhiễu nền, các nhà khoa học đã phát triển phần mềm hiệu chuẩn tinh vi. Phương pháp chỉnh sửa toán học này giúp giảm sai số đo lường xuống trong vòng mười lăm phần trăm so với công nghệ cũ."
+      "body_vi": "Việc giải mã bức xạ không gian sâu gặp nhiều thách thức vì các hạt đến một cách khó lường từ mọi hướng với nhiều mức năng lượng rộng. Để xử lý các góc vạch phức tạp và nhiễu nền, các nhà khoa học đã phát triển phần mềm hiệu chuẩn tinh vi. Phương pháp chỉnh sửa toán học này giúp giảm sai số đo lường xuống trong vòng mười lăm phần trăm so với công nghệ cũ.",
+      "heading_fr": "Surmonter la complexité analytique",
+      "body_fr": "Interpréter le rayonnement dans l'espace lointain constitue un défi singulier, car les particules surgissent de manière imprévisible depuis toutes les directions et sur de vastes plages d'énergie. Pour traiter la complexité des angles de trajectoire et le bruit de fond, les scientifiques ont élaboré un logiciel d'étalonnage sophistiqué. Cette correction mathématique a ramené les écarts de mesure à moins de quinze pour cent par rapport aux technologies de détection éprouvées, tout en révélant des événements de particules de faible énergie jusqu'alors indétectables.",
+      "heading_de": "Bewältigung analytischer Komplexität",
+      "body_de": "Die Auswertung kosmischer Strahlung im tiefen Weltraum ist eine besondere Herausforderung, da Teilchen unvorhersehbar aus allen Richtungen und über gewaltige Energiebereiche hinweg eintreffen. Um komplexe Spurwinkel und Hintergrundinterferenzen zu bewältigen, entwickelte das Forschungsteam eine hochentwickelte Kalibrierungssoftware. Diese mathematische Korrektur verringerte die Messabweichungen im Vergleich zu etablierten Detektortechnologien auf unter fünfzehn Prozent und machte zugleich zuvor nicht nachweisbare niederenergetische Teilchenereignisse sichtbar.",
+      "heading_es": "Superación de la complejidad analítica",
+      "body_es": "Interpretar la radiación del espacio profundo plantea un reto singular, ya que las partículas llegan de forma impredecible desde todas direcciones a través de amplios rangos de energía. Para abordar los complejos ángulos de las trayectorias y la interferencia de fondo, los científicos desarrollaron un sofisticado software de calibración. Esta corrección matemática redujo las discrepancias de medición a menos del quince por ciento en comparación con tecnologías de detección consolidadas, revelando al mismo tiempo eventos de partículas de baja energía antes indetectables."
     },
     {
       "heading_en": "Lunar Versus Orbital Radiation",
       "heading_vi": "Bức xạ mặt trăng so với quỹ đạo",
       "body_en": "Comparing lunar data with the International Space Station revealed distinct environmental differences. Low Earth orbit radiation features concentrated doses from trapped Van Allen belt protons. Near the Moon, this specific contribution vanishes, replaced by high-energy galactic particles {source}. Because these cosmic rays pass entirely through the human body, they deposit doses uniformly rather than unevenly.",
-      "body_vi": "So sánh dữ liệu mặt trăng với Trạm Vũ trụ Quốc tế cho thấy sự khác biệt rõ rệt về môi trường. Bức xạ quỹ đạo Trái Đất thấp có liều lượng tập trung từ proton vành đai Van Allen. Gần Mặt Trăng, đóng góp này biến mất, được thay thế bởi các hạt thiên hà năng lượng cao {source}. Do những tia vũ trụ này xuyên qua cơ thể người, chúng phân bổ liều lượng đồng đều hơn."
+      "body_vi": "So sánh dữ liệu mặt trăng với Trạm Vũ trụ Quốc tế cho thấy sự khác biệt rõ rệt về môi trường. Bức xạ quỹ đạo Trái Đất thấp có liều lượng tập trung từ proton vành đai Van Allen. Gần Mặt Trăng, đóng góp này biến mất, được thay thế bởi các hạt thiên hà năng lượng cao {source}. Do những tia vũ trụ này xuyên qua cơ thể người, chúng phân bổ liều lượng đồng đều hơn.",
+      "heading_fr": "Radiations lunaires contre radiations orbitales",
+      "body_fr": "La comparaison des données lunaires avec celles de la Station spatiale internationale a révélé des contrastes environnementaux marqués. En orbite terrestre basse, les rayonnements se caractérisent par des doses concentrées provenant de protons piégés dans les ceintures de Van Allen. Près de la Lune, cet apport spécifique disparaît, remplacé par des particules galactiques de haute énergie {source}. Dans la mesure où ces rayons cosmiques traversent entièrement le corps humain, ils déposent leurs doses de manière uniforme plutôt qu'irrégulière.",
+      "heading_de": "Mondstrahlung im Vergleich zum Erdorbit",
+      "body_de": "Ein Vergleich der Monddaten mit Werten der Internationalen Raumstation legte deutliche Umweltunterschiede offen. Die Strahlung im erdnahen Orbit ist durch konzentrierte Dosen von Protonen geprägt, die im Van-Allen-Gürtel gefangen sind. In Mondnähe entfällt dieser spezifische Beitrag und wird durch hochenergetische galaktische Teilchen ersetzt {source}. Da diese kosmische Strahlung den menschlichen Körper vollständig durchdringt, verteilt sich die Dosis eher gleichmäßig als ungleichmäßig.",
+      "heading_es": "Radiación lunar frente a la orbital",
+      "body_es": "La comparación de los datos lunares con los de la Estación Espacial Internacional reveló notables diferencias ambientales. La radiación en la órbita terrestre baja presenta dosis concentradas de protones atrapados en los cinturones de Van Allen. Cerca de la Luna, esta contribución específica desaparece y es reemplazada por partículas galácticas de alta energía {source}. Debido a que estos rayos cósmicos atraviesan por completo el cuerpo humano, depositan dosis de manera uniforme en lugar de desigual."
     },
     {
       "heading_en": "Implications for Future Spaceflight",
       "heading_vi": "Ý nghĩa cho chuyến bay vũ trụ tương lai",
       "body_en": "Surprisingly, total radiation near the Moon exceeds orbital levels, but the increase remains smaller than intuitive assumptions suggested. The compact lithium fluoride detectors proved highly effective at monitoring these environments. Their small size, broad energy sensitivity, and neutron-detection capabilities make them promising tools for safeguarding future astronauts on extended space journeys.",
-      "body_vi": "Đáng ngạc nhiên là tổng bức xạ gần Mặt Trăng vượt mức quỹ đạo, nhưng sự gia tăng vẫn nhỏ hơn dự đoán trực giác. Các thiết bị dò lithium fluoride nhỏ gọn tỏ ra rất hiệu quả trong việc theo dõi các môi trường này. Kích thước nhỏ và khả năng phát hiện neutron biến chúng thành công cụ đầy hứa hẹn để bảo vệ các phi hành gia tương lai."
+      "body_vi": "Đáng ngạc nhiên là tổng bức xạ gần Mặt Trăng vượt mức quỹ đạo, nhưng sự gia tăng vẫn nhỏ hơn dự đoán trực giác. Các thiết bị dò lithium fluoride nhỏ gọn tỏ ra rất hiệu quả trong việc theo dõi các môi trường này. Kích thước nhỏ và khả năng phát hiện neutron biến chúng thành công cụ đầy hứa hẹn để bảo vệ các phi hành gia tương lai.",
+      "heading_fr": "Les implications pour les futurs vols spatiaux",
+      "body_fr": "De manière surprenante, le niveau global de radiation près de la Lune dépasse celui observé en orbite, mais cette hausse demeure plus modeste que ne le laissaient supposer les intuitions initiales. Les détecteurs compacts au fluorure de lithium se sont révélés particulièrement efficaces pour surveiller ces milieux. Leur taille réduite, leur large sensibilité énergétique et leur aptitude à détecter les neutrons en font des outils prometteurs pour protéger les futurs astronautes lors de longs voyages spatiaux.",
+      "heading_de": "Bedeutung für die künftige Raumfahrt",
+      "body_de": "Überraschenderweise übersteigt die Gesamtstrahlung nahe dem Mond zwar das Niveau im Orbit, doch der Anstieg bleibt geringer als intuitiv vermutet. Die kompakten Lithiumfluorid-Detektoren erwiesen sich bei der Überwachung dieser Umgebungen als äußerst effektiv. Ihre geringe Größe, die breite Energieempfindlichkeit und die Fähigkeit zum Nachweis von Neutronen machen sie zu vielversprechenden Instrumenten zum Schutz künftiger Astronauten auf längeren Raumfahrten.",
+      "heading_es": "Implicaciones para los futuros vuelos espaciales",
+      "body_es": "Sorprendentemente, la radiación total cerca de la Luna supera los niveles orbitales, aunque el incremento sigue siendo menor de lo que sugerían las suposiciones intuitivas. Los detectores compactos de fluoruro de litio demostraron ser muy eficaces para monitorizar estos entornos. Su tamaño reducido, amplia sensibilidad energética y capacidad para detectar neutrones los convierten en herramientas prometedoras para proteger a futuros astronautas en viajes espaciales prolongados."
     }
   ],
   "references": [
@@ -76,7 +106,10 @@
   },
   "keyPoint": {
     "en": "Like tiny photographic film capturing invisible light footprints, these experimental crystals reveal hidden environmental hazards. How can understanding space radiation help us design safer habitats for upcoming interplanetary travelers? [p:Tiny crystals help measure hidden space radiation safely.]",
-    "vi": "Giống như những cuộn phim chụp ảnh nhỏ ghi lại dấu vết ánh sáng vô hình, các tinh thể thử nghiệm này phơi bày mối nguy hiểm môi trường ẩn giấu. Việc hiểu rõ bức xạ không gian có thể giúp chúng ta thiết kế môi trường sống an toàn hơn cho các du khách liên hành tinh tương lai ra sao? [p:Tinh thể nhỏ giúp đo lường bức xạ không gian ẩn giấu một cách an toàn.]"
+    "vi": "Giống như những cuộn phim chụp ảnh nhỏ ghi lại dấu vết ánh sáng vô hình, các tinh thể thử nghiệm này phơi bày mối nguy hiểm môi trường ẩn giấu. Việc hiểu rõ bức xạ không gian có thể giúp chúng ta thiết kế môi trường sống an toàn hơn cho các du khách liên hành tinh tương lai ra sao? [p:Tinh thể nhỏ giúp đo lường bức xạ không gian ẩn giấu một cách an toàn.]",
+    "fr": "À l'instar d'un minuscule film photographique captant des empreintes lumineuses invisibles, ces cristaux expérimentaux révèlent des dangers environnementaux cachés. Comment la compréhension des rayonnements spatiaux peut-elle nous aider à concevoir des habitats plus sûrs pour les futurs voyageurs interplanétaires ? [p:De minuscules cristaux permettent de mesurer en toute sécurité les radiations spatiales invisibles.]",
+    "de": "Wie winzige fotografische Filme, die unsichtbare Lichtspuren festhalten, decken diese experimentellen Kristalle verborgene Umweltgefahren auf. Wie kann ein besseres Verständnis der Weltraumstrahlung dazu beitragen, sicherere Habitate für künftige interplanetare Reisende zu entwerfen? [p:Winzige Kristalle helfen dabei, verborgene Weltraumstrahlung sicher zu messen.]",
+    "es": "Al igual que una diminuta película fotográfica que capta huellas de luz invisible, estos cristales experimentales revelan peligros ambientales ocultos. ¿Cómo puede la comprensión de la radiación espacial ayudarnos a diseñar hábitats más seguros para los futuros viajeros interplanetarios? [p:Diminutos cristales ayudan a medir con seguridad la radiación espacial oculta.]"
   },
   "applySteps": {
     "en": [
@@ -88,6 +121,21 @@
       "Khảo sát cách các thiết bị theo dõi nhỏ gọn có thể đo lường các yếu tố môi trường vô hình xung quanh bạn.",
       "Xác định các thuật ngữ kỹ thuật lạ trong tin tức khoa học để đào sâu hiểu biết về thám hiểm không gian.",
       "Ôn tập các khái niệm vật lý cơ bản liên quan đến bức xạ và hạt năng lượng trực tuyến."
+    ],
+    "fr": [
+      "Observez comment des appareils de mesure compacts peuvent enregistrer des facteurs environnementaux invisibles autour de vous.",
+      "Relevez les termes techniques inconnus dans l'actualité scientifique pour enrichir vos connaissances sur l'exploration spatiale.",
+      "Révisez en ligne les notions élémentaires de physique relatives aux rayonnements et aux particules énergétiques."
+    ],
+    "de": [
+      "Untersuche, wie kompakte Messgeräte unsichtbare Umweltfaktoren um dich herum erfassen können.",
+      "Finde unbekannte Fachbegriffe in wissenschaftlichen Nachrichten, um dein Verständnis der Weltraumforschung zu vertiefen.",
+      "Wiederhole online physikalische Grundbegriffe rund um Strahlung und energiereiche Teilchen."
+    ],
+    "es": [
+      "Examine cómo los dispositivos compactos de monitorización pueden medir factores ambientales invisibles a su alrededor.",
+      "Identifique términos técnicos desconocidos en noticias científicas para profundizar en su comprensión de la exploración espacial.",
+      "Repase en línea conceptos básicos de física relacionados con la radiación y las partículas energéticas."
     ]
   },
   "coverCandidates": [
@@ -125,7 +173,10 @@
       "vi",
       "keyPoint",
       "applySteps",
-      "en"
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -157,6 +208,43 @@
       "van allen": "Vành đai bức xạ quanh Trái Đất chứa lượng lớn các hạt proton tập trung.",
       "tia vũ trụ": "Các hạt thiên hà năng lượng cao từ không gian sâu có thể xuyên qua cơ thể.",
       "neutron": "Hạt hạ nguyên tử trong bức xạ không gian cần theo dõi để bảo vệ phi hành gia."
+    },
+    "fr": {
+      "artemis i": "Mission lunaire inhabitée de la NASA destinée à tester le vaisseau Orion en conditions réelles.",
+      "orion": "Vaisseau spatial conçu pour transporter des équipages humains vers la Lune et dans l'espace lointain.",
+      "fluorure de lithium": "Composé cristallin utilisé pour enregistrer les doses de radiation sans recourir à une alimentation électrique.",
+      "mannequins anthropomorphes": "Modèles reproduisant l'anatomie humaine pour évaluer l'absorption des rayonnements par les tissus biologiques.",
+      "dispositifs passifs": "Instruments de mesure fonctionnant sans source d'énergie externe tout au long de leur exposition.",
+      "gravure chimique": "Traitement corrosif traditionnel révélant les traces laissées par les particules dans certains détecteurs plastiques.",
+      "bruit de fond": "Signaux parasites ou résiduels perturbant la détection précise des rayonnements recherchés.",
+      "protons": "Particules subatomiques chargées positivement, abondantes dans l'espace et piégées près de la Terre.",
+      "rayons cosmiques": "Flux de particules hautement énergétiques d'origine galactique traversant l'espace et les organismes vivants.",
+      "neutrons": "Particules subatomiques sans charge électrique, particulièrement pénétrantes et difficiles à mesurer directement."
+    },
+    "de": {
+      "artemis i": "Unbemannte NASA-Testmission zur Erprobung des Raumschiffs Orion auf einer Flugbahn um den Mond.",
+      "lithiumfluorid-detektoren": "Strahlungsmessgeräte auf Kristallbasis, die Teilchenspuren ohne chemische Vorbehandlung sichtbar machen.",
+      "chemisches ätzen": "Laborverfahren mit Säuren, um mikroskopische Strahlungsspuren in herkömmlichen Detektoren freizulegen.",
+      "kalibrierungssoftware": "Rechenprogramm zur rechnerischen Korrektur von Messfehlern und Verzerrungen bei der Spurauswertung.",
+      "erdnahen orbit": "Höhenbereich knapp oberhalb der Atmosphäre, in dem Raumstationen und Satelliten die Erde umkreisen.",
+      "van-allen-gürtel": "Strahlungszone im Erdmagnetfeld, in der energiereiche geladene Teilchen wie Protonen gefangen sind.",
+      "galaktische teilchen": "Hochenergetische Partikel aus dem Weltall jenseits unseres Sonnensystems.",
+      "kosmische strahlung": "Energiereiche Strahlung aus dem All, die den freien Weltraum durchdringt.",
+      "neutronen": "Elektrisch ungeladene Kernbausteine, deren Nachweis im Weltraum messtechnisch besonders anspruchsvoll ist.",
+      "habitate": "Künstliche, geschützte Wohn- und Arbeitsräume für Menschen auf fernen Himmelskörpern."
+    },
+    "es": {
+      "artemis i": "Programa espacial internacional liderado por la NASA para explorar la Luna y preparar futuras misiones.",
+      "espacio profundo": "Región del cosmos situada más allá de la magnetosfera y de la órbita de la Tierra.",
+      "orion": "Nave espacial diseñada para transportar tripulaciones a destinos lejanos como la Luna.",
+      "fluoruro de litio": "Compuesto químico cristalino utilizado en detectores para registrar y cuantificar dosis de radiación.",
+      "grabado químico": "Técnica corrosiva empleada para revelar trayectorias de partículas subatómicas en detectores plásticos.",
+      "interferencia de fondo": "Señales o perturbaciones no deseadas que alteran la lectura exacta de las partículas analizadas.",
+      "órbita terrestre baja": "Área orbital alrededor de la Tierra donde se ubica la Estación Espacial Internacional.",
+      "estación espacial internacional": "Laboratorio de investigación multinacional que orbita la Tierra a baja altitud.",
+      "rayos cósmicos": "Partículas subatómicas de alta energía provenientes del espacio exterior que bombardean cuerpos astronómicos.",
+      "protones": "Partículas subatómicas con carga eléctrica positiva que componen núcleos atómicos y forman radiación.",
+      "neutrones": "Partículas subatómicas sin carga eléctrica que forman parte del núcleo atómico."
     }
   }
 }
