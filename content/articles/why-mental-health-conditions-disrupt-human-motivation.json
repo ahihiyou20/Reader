@@ -118,9 +118,36 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "schizophrenia": "A psychiatric condition that impairs information processing, decision-making, and motivation.",
+      "depression": "A mental health condition causing persistent low mood and making effort feel excessively burdensome.",
+      "bipolar disorder": "A mental health condition characterized by shifting mood states, including depressive, stable, and manic phases.",
+      "cost-benefit calculations": "Mental evaluations weighing the required effort of an action against its potential reward and probability.",
+      "internal motivation": "The inner psychological drive and willingness to initiate, direct, and sustain actions.",
+      "manic phases": "Periods of abnormally elevated energy, mood, and activity associated with bipolar disorder.",
+      "neurological": "Related to the brain, nervous system, and underlying biological mechanisms governing behavior.",
+      "cognitive barriers": "Mental difficulties in processing information, planning, or decision-making that make completing actions harder.",
+      "cognitive skills": "Mental capabilities that enable a person to think, learn, remember, and process information effectively.",
+      "therapeutic approaches": "Clinical treatment strategies designed to help individuals overcome psychological and motivational difficulties."
+    },
+    "vi": {
+      "động lực": "Yếu tố tâm lý thúc đẩy con người khởi xướng và duy trì các hành động.",
+      "xác suất": "Khả năng xảy ra một kết quả hoặc nhận được phần thưởng khi thực hiện hành vi.",
+      "kiệt sức": "Tình trạng cạn kiệt hoàn toàn năng lượng thể chất và tinh thần do nỗ lực quá mức.",
+      "bệnh lý": "Trạng thái rối loạn bất thường về cấu trúc hoặc chức năng sức khỏe của cơ thể.",
+      "schizophrenia": "Bệnh tâm thần phân liệt, một rối loạn não bộ nặng ảnh hưởng nhận thức và hành vi.",
+      "tích hợp": "Kết hợp các nguồn dữ liệu rời rạc thành một thể thống nhất để não xử lý.",
+      "thần kinh": "Liên quan đến hệ thống não bộ và các đường truyền dẫn truyền tín hiệu sinh học.",
+      "nhận thức": "Quá trình tinh thần tiếp nhận, ghi nhớ, xử lý thông tin và đưa ra phán đoán.",
+      "trị liệu": "Phương pháp can thiệp chuyên môn nhằm cải thiện sức khỏe tinh thần hoặc thể chất.",
+      "tâm thần": "Thuộc về trạng thái hoạt động của tâm trí, suy nghĩ và cảm xúc con người."
+    }
   }
 }

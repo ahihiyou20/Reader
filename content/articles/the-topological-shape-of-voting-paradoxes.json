@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "The Topological Shape of Voting Paradoxes",
-    "vi": "Hình thái top học của các nghịch lý bầu cử"
+    "vi": "Hình thái top học của các nghịch lý bầu cử",
+    "fr": "La forme topologique des paradoxes électoraux",
+    "de": "Die topologische Gestalt von Wahlparadoxien",
+    "es": "La forma topológica de las paradojas electorales"
   },
   "hook": {
     "en": "Translating individual preferences into collective choices has baffled mathematicians for centuries. Now, researchers have linked a stubborn voting puzzle to a bizarre mathematical surface, revealing the geometric limits of democratic decision-making.",
-    "vi": "Việc chuyển đổi sở thích cá nhân thành lựa chọn chung đã làm đau đầu các nhà toán học trong nhiều thế kỷ. Giờ đây, các nhà nghiên cứu đã liên kết một bài toán bầu cử nan giải với một bề mặt toán học kỳ lạ, tiết lộ giới hạn hình học của việc ra quyết định dân chủ."
+    "vi": "Việc chuyển đổi sở thích cá nhân thành lựa chọn chung đã làm đau đầu các nhà toán học trong nhiều thế kỷ. Giờ đây, các nhà nghiên cứu đã liên kết một bài toán bầu cử nan giải với một bề mặt toán học kỳ lạ, tiết lộ giới hạn hình học của việc ra quyết định dân chủ.",
+    "fr": "Traduire les préférences individuelles en choix collectifs déconcerte les mathématiciens depuis des siècles. Désormais, des chercheurs ont relié une énigme électorale tenace à une curieuse surface mathématique, révélant ainsi les limites géométriques de la prise de décision démocratique.",
+    "de": "Individuelle Präferenzen in kollektive Entscheidungen zu übersetzen, beschäftigt die Mathematik seit Jahrhunderten. Nun haben Forschende ein hartnäckiges Abstimmungsrätsel mit einer bizarren mathematischen Fläche verknüpft – und zeigen so die geometrischen Grenzen demokratischer Entscheidungsfindung auf.",
+    "es": "Traducir las preferencias individuales en decisiones colectivas ha desconcertado a los matemáticos durante siglos. Ahora, un grupo de investigadores ha vinculado un persistente enigma electoral con una insólita superficie matemática, revelando los límites geométricos de la toma de decisiones democrática."
   },
   "sections": [
     {
       "heading_en": "The Impossible Majority",
       "heading_vi": "Đa số bất khả thi",
       "body_en": "When elections feature three or more contenders, majorities can accidentally generate circular logic loops. In the late eighteenth century, French thinker Nicolas de Condorcet observed that every candidate could lose a head-to-head matchup against a rival. Decades later, economist Kenneth Arrow proved that no election system can satisfy all basic democratic requirements simultaneously, forcing designers to choose which rule to break {source}.",
-      "body_vi": "Khi các cuộc bầu cử có ba ứng cử viên trở lên, đa số có thể vô tình tạo ra các vòng lặp logic tuần hoàn. Vào cuối thế kỷ mười tám, nhà tư tưởng người Pháp Nicolas de Condorcet nhận thấy rằng mọi ứng cử viên đều có thể thua trong một trận đấu trực diện trước đối thủ. Nhiều thập kỷ sau, nhà kinh tế học Kenneth Arrow đã chứng minh rằng không hệ thống bầu cử nào có thể thỏa mãn đồng thời tất cả các yêu cầu dân chủ cơ bản, buộc các nhà thiết kế phải chọn quy tắc nào để vi phạm {source}."
+      "body_vi": "Khi các cuộc bầu cử có ba ứng cử viên trở lên, đa số có thể vô tình tạo ra các vòng lặp logic tuần hoàn. Vào cuối thế kỷ mười tám, nhà tư tưởng người Pháp Nicolas de Condorcet nhận thấy rằng mọi ứng cử viên đều có thể thua trong một trận đấu trực diện trước đối thủ. Nhiều thập kỷ sau, nhà kinh tế học Kenneth Arrow đã chứng minh rằng không hệ thống bầu cử nào có thể thỏa mãn đồng thời tất cả các yêu cầu dân chủ cơ bản, buộc các nhà thiết kế phải chọn quy tắc nào để vi phạm {source}.",
+      "heading_fr": "L’impossible majorité",
+      "body_fr": "Lorsque les élections mettent en présence au moins trois candidats, les majorités peuvent involontairement engendrer des boucles logiques circulaires. À la fin du dix-huitième siècle, le penseur français Nicolas de Condorcet a observé que chaque prétendant pouvait perdre un duel direct face à un rival. Des décennies plus tard, l’économiste Kenneth Arrow a démontré qu’aucun système électoral ne peut satisfaire simultanément toutes les exigences démocratiques fondamentales, contraignant ainsi les concepteurs à choisir quelle règle enfreindre {source}.",
+      "heading_de": "Die unmögliche Mehrheit",
+      "body_de": "Treten bei einer Wahl drei oder mehr Kandidaten an, können Mehrheiten unbeabsichtigt zirkuläre Logikschleifen erzeugen. Im späten achtzehnten Jahrhundert beobachtete der französische Denker Nicolas de Condorcet, dass jeder Kandidat im direkten Duell gegen einen Rivalen verlieren kann. Jahrzehnte später bewies der Ökonom Kenneth Arrow, dass kein Wahlsystem alle grundlegenden demokratischen Anforderungen zugleich erfüllen kann – was Systemgestalter dazu zwingt, abzuwägen, welche Regel sie verletzen {source}.",
+      "heading_es": "La mayoría imposible",
+      "body_es": "Cuando las elecciones cuentan con tres o más aspirantes, las mayorías pueden generar accidentalmente bucles de lógica circular. A finales del siglo XVIII, el pensador francés Nicolas de Condorcet observó que cualquier candidato podía perder en un enfrentamiento directo contra un rival. Décadas más tarde, el economista Kenneth Arrow demostró que ningún sistema electoral puede satisfacer simultáneamente todos los requisitos democráticos básicos, lo que obliga a los diseñadores a elegir qué regla infringir {source}."
     },
     {
       "heading_en": "Mapping the Ballots",
       "heading_vi": "Lập bản đồ lá phiếu",
       "body_en": "To understand these deadlocks, recent work turns to *topology*, a branch of mathematics examining properties preserved through continuous deformations. By mapping all possible ballot rankings into geometric shapes, researchers previously formed a tube representing standard voting paths, though they initially ignored the problematic circular rims where paradoxes occur.",
-      "body_vi": "Để hiểu rõ các bế tắc này, các nghiên cứu gần đây hướng tới *top học* (*topology*), một nhánh toán học nghiên cứu các tính chất được bảo toàn qua các biến dạng liên tục. Bằng cách ánh xạ tất cả các thứ hạng lá phiếu có thể thành các hình học, các nhà nghiên cứu trước đây đã tạo ra một ống đại diện cho các con đường bỏ phiếu tiêu chuẩn, mặc dù ban đầu họ phớt lờ các vành tròn có vấn đề nơi các nghịch lý xuất hiện."
+      "body_vi": "Để hiểu rõ các bế tắc này, các nghiên cứu gần đây hướng tới *top học* (*topology*), một nhánh toán học nghiên cứu các tính chất được bảo toàn qua các biến dạng liên tục. Bằng cách ánh xạ tất cả các thứ hạng lá phiếu có thể thành các hình học, các nhà nghiên cứu trước đây đã tạo ra một ống đại diện cho các con đường bỏ phiếu tiêu chuẩn, mặc dù ban đầu họ phớt lờ các vành tròn có vấn đề nơi các nghịch lý xuất hiện.",
+      "heading_fr": "Cartographier les scrutins",
+      "body_fr": "Pour appréhender ces impasses, de récents travaux se tournent vers la *topologie*, une branche des mathématiques qui étudie les propriétés préservées lors de déformations continues. En projetant tous les classements possibles de bulletins sur des formes géométriques, des chercheurs avaient auparavant conçu un tube représentant les trajectoires de vote classiques, tout en ignorant au départ les bords circulaires problématiques où surgissent les paradoxes.",
+      "heading_de": "Die Kartierung der Stimmzettel",
+      "body_de": "Um diese Blockaden zu verstehen, greifen neuere Arbeiten auf die *Topologie* zurück – ein Teilgebiet der Mathematik, das Eigenschaften untersucht, die bei kontinuierlichen Verformungen erhalten bleiben. Durch die Abbildung aller denkbaren Rangfolgen auf Stimmzetteln in geometrische Formen konstruierten Forschende zuvor eine Röhre, die übliche Abstimmungsverläufe darstellt; dabei ignorierten sie jedoch zunächst die problematischen kreisförmigen Ränder, an denen Paradoxien auftreten.",
+      "heading_es": "Mapear las papeletas",
+      "body_es": "Para comprender estos bloqueos, investigaciones recientes recurren a la *topología*, una rama de las matemáticas que examina las propiedades que se conservan tras deformaciones continuas. Al proyectar todas las posibles clasificaciones de las papeletas en formas geométricas, diversos investigadores modelaron previamente un tubo que representaba las trayectorias de votación habituales, aunque en un principio ignoraron los problemáticos bordes circulares donde surgen las paradojas."
     },
     {
       "heading_en": "The Klein Bottle Model",
       "heading_vi": "Mô hình bình Klein",
       "body_en": "A team of researchers re-examined those neglected rims and discovered that joining them requires a specific twist to prevent logical contradictions. This clever mathematical gluing creates a *Klein bottle*, a strange surface with only one side and no distinct inside or outside, perfectly mirroring how local voter coherence breaks down globally.",
-      "body_vi": "Một nhóm các nhà nghiên cứu đã xem xét lại các vành bị bỏ quên đó và phát hiện ra rằng việc nối chúng lại đòi hỏi một độ xoắn cụ thể để tránh mâu thuẫn logic. Việc dán toán học thông minh này tạo ra một *bình Klein* (*Klein bottle*), một bề mặt kỳ lạ chỉ có một mặt và không có trong ngoài riêng biệt, phản ánh hoàn hảo cách sự mạch lạc của cử tri cục bộ sụp đổ trên phạm vi toàn cầu."
+      "body_vi": "Một nhóm các nhà nghiên cứu đã xem xét lại các vành bị bỏ quên đó và phát hiện ra rằng việc nối chúng lại đòi hỏi một độ xoắn cụ thể để tránh mâu thuẫn logic. Việc dán toán học thông minh này tạo ra một *bình Klein* (*Klein bottle*), một bề mặt kỳ lạ chỉ có một mặt và không có trong ngoài riêng biệt, phản ánh hoàn hảo cách sự mạch lạc của cử tri cục bộ sụp đổ trên phạm vi toàn cầu.",
+      "heading_fr": "Le modèle de la bouteille de Klein",
+      "body_fr": "Une équipe de chercheurs a réexaminé ces bords délaissés et découvert que leur raccordement exige une torsion singulière afin d’éviter les contradictions logiques. Ce collage mathématique ingénieux engendre une *bouteille de Klein*, une surface étrange dotée d’une seule face, sans intérieur ni extérieur distinct, illustrant parfaitement la façon dont la cohérence locale des électeurs s’effondre à l’échelle globale.",
+      "heading_de": "Das Modell der Kleinschen Flasche",
+      "body_de": "Ein Forschungsteam untersuchte jene vernachlässigten Ränder erneut und entdeckte, dass deren Zusammenfügen eine spezifische Verdrillung erfordert, um logische Widersprüche zu vermeiden. Durch dieses raffinierte mathematische Verkleben entsteht eine *Kleinsche Flasche*, eine sonderbare Fläche mit nur einer Seite und ohne erkennbares Innen oder Außen. Sie spiegelt perfekt wider, wie lokale Stimmigkeit unter Wählenden auf globaler Ebene in sich zusammenfällt.",
+      "heading_es": "El modelo de la botella de Klein",
+      "body_es": "Un equipo de investigadores volvió a examinar esos bordes descartados y descubrió que unirlos requiere una torsión específica para evitar contradicciones lógicas. Esta ingeniosa unión matemática crea una *botella de Klein*, una extraña superficie con un solo lado y sin un interior o exterior diferenciados, lo que refleja a la perfección cómo la coherencia local de los votantes se quiebra a escala global."
     }
   ],
   "references": [
@@ -70,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Voting paradoxes are like trying to fit a [p:three-dimensional puzzle into a flat box], where local pieces fit but the whole layout fails. What underlying values should guide your group when perfect rules are impossible?",
-    "vi": "Nghịch lý bầu cử giống như việc cố gắng nhét một [p:câu đố ba chiều vào một chiếc hộp phẳng], nơi các miếng ghép cục bộ khớp nhưng toàn bộ bố cục lại thất bại. Những giá trị nền tảng nào nên hướng dẫn nhóm của bạn khi các quy tắc hoàn hảo là bất khả thi?"
+    "vi": "Nghịch lý bầu cử giống như việc cố gắng nhét một [p:câu đố ba chiều vào một chiếc hộp phẳng], nơi các miếng ghép cục bộ khớp nhưng toàn bộ bố cục lại thất bại. Những giá trị nền tảng nào nên hướng dẫn nhóm của bạn khi các quy tắc hoàn hảo là bất khả thi?",
+    "fr": "Les paradoxes électoraux s’apparentent à l’assemblage d’un [p:casse-tête tridimensionnel dans une boîte plate], où les pièces s’ajustent localement tandis que la structure globale échoue. Quelles valeurs fondamentales devraient guider votre groupe lorsqu’un système parfait s’avère impossible ?",
+    "de": "Wahlparadoxien ähneln dem Versuch, ein [p:dreidimensionales Puzzle in eine flache Schachtel einzupassen], bei dem einzelne Teile zwar zusammenpassen, das Gesamtbild jedoch scheitert. Welche grundlegenden Werte sollten deine Gruppe leiten, wenn vollkommene Regeln unmöglich sind?",
+    "es": "Las paradojas electorales se asemejan a intentar meter un [p:rompecabezas tridimensional en una caja plana], donde las piezas locales encajan pero la disposición general falla. ¿Qué valores fundamentales deberían guiar a su grupo cuando las reglas perfectas son imposibles?"
   },
   "applySteps": {
     "en": [
@@ -82,6 +109,21 @@
       "Xem xét các phương pháp bỏ phiếu hoặc xếp hạng hiện tại của tổ chức bạn để tìm các vòng lặp logic tiềm ẩn.",
       "Xác định tiêu chí công bằng dân chủ nào mà nhóm bạn sẵn sàng hy sinh.",
       "Thảo luận về các ưu tiên giá trị cơ bản thay vì tranh cãi thuần túy về cơ chế bỏ phiếu."
+    ],
+    "fr": [
+      "Examinez les modes de scrutin ou de classement actuels de votre organisation afin d’y déceler d’éventuelles boucles logiques.",
+      "Identifiez les critères d’équité démocratique que votre groupe est disposé à sacrifier.",
+      "Débattez des priorités éthiques sous-jacentes au lieu de vous quereller uniquement sur les mécanismes de vote."
+    ],
+    "de": [
+      "Überprüfe die aktuellen Abstimmungs- oder Rangordnungsverfahren deiner Organisation auf mögliche logische Schleifen.",
+      "Ermittle, welche demokratischen Fairnesskriterien deine Gruppe zu opfern bereit ist.",
+      "Diskutiere die zugrunde liegenden Werteprioritäten, anstatt rein über die Abstimmungsmechanik zu streiten."
+    ],
+    "es": [
+      "Revise los métodos actuales de votación o clasificación de su organización para detectar posibles bucles lógicos.",
+      "Identifique qué criterios de equidad democrática está dispuesto a sacrificar su grupo.",
+      "Debata las prioridades de valores fundamentales en lugar de discutir exclusivamente sobre la mecánica de votación."
     ]
   },
   "coverCandidates": [
@@ -119,7 +161,10 @@
       "vi",
       "keyPoint",
       "applySteps",
-      "en"
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -150,6 +195,42 @@
       "bình klein": "Bề mặt hình học kỳ lạ chỉ có một mặt duy nhất, không phân biệt trong ngoài.",
       "klein bottle": "Tên tiếng Anh của bình Klein, bề mặt toán học một mặt không có trong ngoài.",
       "nghịch lý": "Tình huống tự mâu thuẫn phát sinh dù các quy tắc ban đầu đều hợp lý."
+    },
+    "fr": {
+      "préférences individuelles": "Classements personnels attribués par chaque électeur aux différents candidats d’une élection.",
+      "boucles logiques": "Situations où des choix contradictoires s’enchaînent sans qu’une issue claire n’émerge.",
+      "nicolas de condorcet": "Penseur et mathématicien français, pionnier de l’étude des paradoxes du vote majoritaire.",
+      "kenneth arrow": "Économiste ayant démontré l’impossibilité d’un scrutin parfait satisfaisant tous les critères démocratiques.",
+      "topologie": "Branche des mathématiques examinant les propriétés géométriques préservées lors d’une déformation continue.",
+      "déformations continues": "Transformations spatiales étirant ou tordant un objet sans le déchirer ni le recoller.",
+      "trajectoires de vote": "Chemins géométriques modélisant l’ensemble des combinaisons de votes envisageables par les électeurs.",
+      "bouteille de klein": "Surface fermée sans bord ne possédant qu’une face, sans intérieur ni extérieur.",
+      "cohérence locale": "Validité logique constatée entre options isolées, susceptible de disparaître à l’échelle collective.",
+      "paradoxes électoraux": "Situations où le résultat d’une élection contredit les préférences réelles des électeurs."
+    },
+    "de": {
+      "topologie": "Mathematisches Teilgebiet, das räumliche Eigenschaften untersucht, die bei stetigen Verformungen wie Dehnen unverändert bleiben.",
+      "kleinsche flasche": "Eine zweidimensionale Fläche ohne Rand, die nur eine Seite besitzt und kein Innen oder Außen unterscheidet.",
+      "nicolas de condorcet": "Französischer Philosoph und Mathematiker, der aufzeigte, dass zyklische Mehrheitsentscheidungen zu unauflösbaren Widersprüchen führen können.",
+      "kenneth arrow": "Wirtschaftswissenschaftler, der bewies, dass kein Wahlsystem gleichzeitig alle grundlegenden Kriterien demokratischer Fairness erfüllen kann.",
+      "wahlparadoxien": "Widersprüchliche Abstimmungsergebnisse, bei denen rationale individuelle Präferenzen kollektiv zu unlogischen oder zirkulären Resultaten führen.",
+      "zirkuläre logikschleifen": "Widersprüchliche Konstellationen, in denen jede Option von einer anderen geschlagen wird und kein eindeutiger Gesamtsieger existiert.",
+      "kontinuierlichen verformungen": "Stufenlose geometrische Veränderungen wie Dehnen, Biegen oder Stauchen, bei denen das Objekt weder zerschnitten noch zerrissen wird.",
+      "verdrillung": "Räumliches Verdrehen einer Fläche vor dem Zusammenfügen, um eine geschlossene mathematische Struktur zu ermöglichen.",
+      "fairnesskriterien": "Grundsätzliche Anforderungen an Wahlsysteme, die eine gerechte und unverzerrte Abbildung des Wählerwillens garantieren sollen.",
+      "abstimmungsmechanik": "Das formale mathematische Regelwerk zur Aggregation individueller Stimmen in eine kollektive Entscheidung."
+    },
+    "es": {
+      "lógica circular": "Razonamiento donde la conclusión está implícita en la premisa, generando una contradicción sin fin.",
+      "nicolas de condorcet": "Filósofo y matemático francés célebre por formular paradojas en la teoría de votación.",
+      "kenneth arrow": "Economista estadounidense que demostró la imposibilidad matemática de diseñar un sistema de votación ideal.",
+      "topología": "Rama matemática que estudia las propiedades de los cuerpos inalteradas por deformaciones continuas.",
+      "deformaciones continuas": "Transformaciones geométricas que estiran o doblan un objeto sin romperlo ni unir partes separadas.",
+      "botella de klein": "Superficie matemática no orientable que posee una sola cara y carece de interior o exterior.",
+      "coherencia local": "Consistencia lógica observable en subconjuntos reducidos de preferencias o elecciones individuales.",
+      "paradojas electorales": "Situaciones contradictorias donde los resultados grupales desafían la coherencia de los votos individuales.",
+      "bucles lógicos": "Secuencias cíclicas de razonamiento que impiden llegar a una decisión o resultado definitivo.",
+      "enfrentamiento directo": "Comparación o duelo electoral individual entre dos candidatos específicos."
     }
   }
 }

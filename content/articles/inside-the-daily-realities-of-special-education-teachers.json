@@ -117,9 +117,27 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "special education": "Instruction and support tailored specifically for students with physical, cognitive, behavioral, or learning differences.",
+      "staffing shortage": "A severe lack of qualified teachers available to fill open instructional positions.",
+      "administrative burdens": "Excessive paperwork, regulatory documentation, and compliance tasks that consume significant working hours.",
+      "special educators": "Certified teachers professionally trained to instruct and support students with disabilities.",
+      "specialized support": "Individualized instructional assistance, accommodations, or therapies adapted to meet unique student needs.",
+      "specialized services": "Targeted educational, therapeutic, or behavioral interventions delivered to eligible students.",
+      "student goals": "Measurable academic, behavioral, or developmental objectives set within individualized learning programs.",
+      "legal education plans": "Mandated formal documents detailing specialized accommodations, services, and instructional goals for a student.",
+      "federal regulations": "National laws and legal mandates governing special education services and school compliance.",
+      "student crises": "Acute emotional, behavioral, or medical emergencies requiring immediate teacher intervention.",
+      "burnout": "Physical, mental, and emotional exhaustion caused by prolonged chronic workplace stress.",
+      "planning periods": "Designated blocks of school time allocated for teachers to prepare lessons, review records, and organize materials.",
+      "teacher retention": "The rate or ability of schools to keep employed teachers in their roles over time."
+    }
   }
 }

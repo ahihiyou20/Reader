@@ -13,12 +13,16 @@
   "title": {
     "en": "New Plant-Eating Dinosaur Discovered in England Museum Collection",
     "vi": "Phát hiện loài khủng long ăn cỏ mới trong bộ sưu tập bảo tàng ở Anh",
-    "fr": "Nouveau dinosaure herbivore découvert dans les collections d'un musée anglais"
+    "fr": "Nouveau dinosaure herbivore découvert dans les collections d'un musée anglais",
+    "de": "Neuer pflanzenfressender Dinosaurier in englischer Museumssammlung entdeckt",
+    "es": "Nuevo dinosaurio herbívoro descubierto en la colección de un museo en Inglaterra"
   },
   "hook": {
     "en": "Many new dinosaur species are not uncovered in distant deserts by sweating researchers {source}. Instead, they quietly wait inside established museum collections until a dedicated student examines them closely. A recent discovery in England reveals a fascinating plant-eater that lived millions of years ago, reminding us that incredible secrets are hiding right on museum shelves.",
     "vi": "Nhiều loài khủng long mới không được phát hiện ở những sa mạc xa xôi bởi những nhà nghiên cứu đang đổ mồ hôi {source}. Thay vào đó, chúng lặng lẽ chờ đợi bên trong các bộ sưu tập bảo tàng lâu đời cho đến khi một sinh viên tận tụy nghiên cứu chúng thật kỹ lưỡng. Một phát hiện gần đây ở Anh hé lộ loài động vật ăn cỏ hấp dẫn từng sống cách đây hàng triệu năm, nhắc nhở chúng ta rằng những bí mật đáng kinh ngạc đang ẩn giấu ngay trên các kệ bảo tàng.",
-    "fr": "De nombreuses nouvelles espèces de dinosaures ne sont pas mises au jour dans des déserts lointains par des chercheurs en sueur {source}. Elles attendent plutôt patiemment au sein des collections de musées établis jusqu'à ce qu'un étudiant consciencieux les examine de près. Une découverte récente en Angleterre révèle un fascinant herbivore qui vivait il y a des millions d'années, nous rappelant que d'incroyables secrets se cachent sur les rayonnages mêmes de nos musées."
+    "fr": "De nombreuses nouvelles espèces de dinosaures ne sont pas mises au jour dans des déserts lointains par des chercheurs en sueur {source}. Elles attendent plutôt patiemment au sein des collections de musées établis jusqu'à ce qu'un étudiant consciencieux les examine de près. Une découverte récente en Angleterre révèle un fascinant herbivore qui vivait il y a des millions d'années, nous rappelant que d'incroyables secrets se cachent sur les rayonnages mêmes de nos musées.",
+    "de": "Viele neue Dinosaurierarten werden keineswegs von schwitzenden Forschenden in fernen Wüsten freigelegt {source}. Stattdessen warten sie unbemerkt in etablierten Museumssammlungen, bis ein engagierter Student sie genau unter die Lupe nimmt. Ein neuer Fund in England enthüllt einen faszinierenden Pflanzenfresser, der vor Jahrmillionen lebte, und erinnert uns daran, dass unglaubliche Geheimnisse direkt in den Regalen der Museen schlummern.",
+    "es": "Muchas especies nuevas de dinosaurios no son descubiertas en desiertos remotos por investigadores sudorosos {source}. En cambio, aguardan en silencio dentro de colecciones consolidadas de museos hasta que algún estudiante dedicado las examina minuciosamente. Un hallazgo reciente en Inglaterra revela a un fascinante herbívoro que vivió hace millones de años, recordándonos que secretos increíbles se ocultan en los propios estantes de los museos."
   },
   "sections": [
     {
@@ -27,7 +31,11 @@
       "body_en": "Researchers recently described a brand-new dinosaur species related to the famous iguanodon after analyzing fossils housed in a collection {source}. This specimen was originally pulled from a clay quarry located in Surrey, England. Scientists named the creature Paludohadros proudlovii to honor a popular former manager of the quarry who died at a young age.",
       "body_vi": "Các nhà nghiên cứu gần đây đã mô tả một loài khủng long hoàn toàn mới có họ hàng với loài iguanodon nổi tiếng sau khi phân tích các hóa thạch được lưu giữ trong một bộ sưu tập (*collection*) {source}. Mẫu vật này ban đầu được khai quật từ một mỏ đá sét nằm ở Surrey, Anh. Các nhà khoa học đã đặt tên cho sinh vật này là Paludohadros proudlovii nhằm vinh danh một cựu quản lý được yêu mến của mỏ đá đã qua đời khi còn trẻ.",
       "heading_fr": "Découvrir des dinosaures dans les musées",
-      "body_fr": "Des chercheurs ont récemment décrit une toute nouvelle espèce de dinosaure apparentée au célèbre iguanodon après avoir analysé des fossiles conservés dans une collection {source}. Ce spécimen avait été initialement extrait d'une carrière d'argile située dans le Surrey, en Angleterre. Les scientifiques ont baptisé la créature Paludohadros proudlovii pour rendre hommage à un ancien directeur très apprécié de la carrière, mort prématurément."
+      "body_fr": "Des chercheurs ont récemment décrit une toute nouvelle espèce de dinosaure apparentée au célèbre iguanodon après avoir analysé des fossiles conservés dans une collection {source}. Ce spécimen avait été initialement extrait d'une carrière d'argile située dans le Surrey, en Angleterre. Les scientifiques ont baptisé la créature Paludohadros proudlovii pour rendre hommage à un ancien directeur très apprécié de la carrière, mort prématurément.",
+      "heading_de": "Dinosaurierfunde im Museum",
+      "body_de": "Forschende beschrieben vor Kurzem eine ganz neue Dinosaurierart, die mit dem berühmten Iguanodon verwandt ist, nachdem sie Fossilien aus einer Sammlung analysiert hatten {source}. Dieses Exemplar wurde einst in einer Tongrube in Surrey, England, geborgen. Wissenschaftler gaben der Kreatur den Namen Paludohadros proudlovii, um einen geschätzten ehemaligen Leiter der Grube zu ehren, der in jungen Jahren verstarb.",
+      "heading_es": "El hallazgo de dinosaurios en los museos",
+      "body_es": "Un equipo de investigadores describió recientemente una especie completamente nueva de dinosaurio emparentada con el famoso iguanodonte, tras analizar fósiles albergados en una colección {source}. Este espécimen fue extraído originalmente de una cantera de arcilla situada en Surrey, Inglaterra. La comunidad científica nombró a la criatura Paludohadros proudlovii en honor al popular exgerente de la cantera, quien falleció a una edad temprana."
     },
     {
       "heading_en": "Size and Ancient Habitat",
@@ -35,7 +43,11 @@
       "body_en": "This plant-eating dinosaur measured over sixteen feet in length and weighed up to 4,400 pounds {source}. Because its bones were still developing, scientists believe the fossil belonged to an immature animal. A fully grown adult of this species could have reached twice that size, making it comparable to a rhinoceros. Its genus name reflects the marshy landscape that covered ancient England during the Cretaceous period.",
       "body_vi": "Loài khủng long ăn thực vật này dài hơn mười sáu feet và nặng tới 4.400 pounds {source}. Vì xương của nó vẫn đang trong quá trình phát triển, các nhà khoa học tin rằng hóa thạch này thuộc về một con vật chưa trưởng thành. Một con trưởng thành hoàn toàn của loài này có thể đạt kích thước gấp đôi, khiến nó có thể so sánh với một con tê giác. Tên chi của nó phản ánh cảnh quan đầm lầy từng bao phủ nước Anh cổ đại trong kỷ Phấn trắng (*Cretaceous period*).",
       "heading_fr": "Taille et habitat préhistorique",
-      "body_fr": "Ce dinosaure herbivore mesurait plus de seize pieds de long et pesait jusqu'à 4 400 livres {source}. Comme ses os étaient encore en croissance, les scientifiques pensent que le fossile appartenait à un animal immature. Un individu adulte de cette espèce aurait pu atteindre le double de cette taille, le rendant comparable à un rhinocéros. Le nom de son genre reflète les paysages marécageux qui recouvraient l'Angleterre ancienne au cours de la période du Crétacé."
+      "body_fr": "Ce dinosaure herbivore mesurait plus de seize pieds de long et pesait jusqu'à 4 400 livres {source}. Comme ses os étaient encore en croissance, les scientifiques pensent que le fossile appartenait à un animal immature. Un individu adulte de cette espèce aurait pu atteindre le double de cette taille, le rendant comparable à un rhinocéros. Le nom de son genre reflète les paysages marécageux qui recouvraient l'Angleterre ancienne au cours de la période du Crétacé.",
+      "heading_de": "Körpergröße und urzeitlicher Lebensraum",
+      "body_de": "Dieser pflanzenfressende Dinosaurier maß über sechzehn Fuß in der Länge und wog bis zu 4.400 Pfund {source}. Da sich die Knochen noch im Wachstum befanden, gehen Wissenschaftler davon aus, dass das Fossil von einem noch nicht ausgewachsenen Tier stammt. Ein ausgewachsenes Exemplar dieser Art hätte doppelt so groß werden können und wäre damit einem Nashorn vergleichbar gewesen. Sein Gattungsname spiegelt die sumpfige Landschaft wider, die das urzeitliche England während der Kreidezeit bedeckte.",
+      "heading_es": "Tamaño y hábitat ancestral",
+      "body_es": "Este dinosaurio herbívoro medía más de dieciséis pies de largo y pesaba hasta 4400 libras {source}. Como sus huesos todavía se encontraban en desarrollo, los científicos consideran que el fósil pertenecía a un animal inmaduro. Un adulto plenamente desarrollado de esta especie podría haber alcanzado el doble de ese tamaño, lo que lo haría comparable a un rinoceronte. El nombre de su género refleja el paisaje pantanoso que cubría la antigua Inglaterra durante el período Cretácico."
     },
     {
       "heading_en": "Dangerous Neighborhoods",
@@ -43,7 +55,11 @@
       "body_en": "Fossils of a meat-eating dinosaur known as Baryonyx were found just one hundred meters away from this [g:herbivore] specimen {source}. Interestingly, the carnivorous dinosaur's final meal contained the remains of a young iguanodontian. This detail suggests that the newly named plant-eater lived in constant danger of being hunted by larger predators roaming the same wetlands.",
       "body_vi": "Các hóa thạch của một loài khủng long ăn thịt được gọi là Baryonyx được tìm thấy chỉ cách mẫu vật [g:động vật ăn thực vật] này một trăm mét {source}. Thật thú vị, bữa ăn cuối cùng của loài khủng long ăn thịt chứa phần còn lại của một con iguanodontian non. Chi tiết này cho thấy loài ăn thực vật mới được đặt tên sống trong mối nguy hiểm liên tục bị săn đuổi bởi những kẻ săn mồi lớn hơn lang thang cùng vùng đất ngập nước đó.",
       "heading_fr": "Un voisinage dangereux",
-      "body_fr": "Des fossiles d'un dinosaure carnivore connu sous le nom de Baryonyx ont été découverts à seulement cent mètres de ce spécimen [g:herbivore] {source}. Fait intéressant, le dernier repas de ce dinosaure carnivore contenait les restes d'un jeune iguanodontien. Ce détail suggère que l'herbivore nouvellement nommé vivait dans la crainte constante d'être chassé par de plus grands prédateurs arpentant ces mêmes zones humides."
+      "body_fr": "Des fossiles d'un dinosaure carnivore connu sous le nom de Baryonyx ont été découverts à seulement cent mètres de ce spécimen [g:herbivore] {source}. Fait intéressant, le dernier repas de ce dinosaure carnivore contenait les restes d'un jeune iguanodontien. Ce détail suggère que l'herbivore nouvellement nommé vivait dans la crainte constante d'être chassé par de plus grands prédateurs arpentant ces mêmes zones humides.",
+      "heading_de": "Gefährliche Nachbarschaft",
+      "body_de": "Fossilien eines als Baryonyx bekannten fleischfressenden Dinosauriers wurden nur einhundert Meter von diesem Exemplar eines [g:Pflanzenfressers] entfernt gefunden {source}. Interessanterweise enthielt die letzte Mahlzeit des Raubsauriers die Überreste eines jungen Vertreters der Iguanodontier. Dieses Detail deutet darauf hin, dass die neu benannte Art in ständiger Gefahr lebte, von größeren Raubtieren gejagt zu werden, die dieselben Feuchtgebiete durchstreiften.",
+      "heading_es": "Vecindarios peligrosos",
+      "body_es": "Se hallaron fósiles de un dinosaurio carnívoro conocido como Baryonyx a tan solo cien metros de distancia de este espécimen [g:herbívoro] {source}. Curiosamente, la última comida de este dinosaurio carnívoro contenía los restos de un joven iguanodontio. Este detalle sugiere que el herbívoro recién nombrado vivía bajo el peligro constante de ser cazado por depredadores más grandes que merodeaban por los mismos humedales."
     }
   ],
   "references": [
@@ -78,7 +94,9 @@
   "keyPoint": {
     "en": "Museum collections are like [p:locked treasure chests] filled with forgotten history. What hidden wonders might your local museum be keeping in storage right now?",
     "vi": "Các bộ sưu tập trong bảo tàng giống như [p:những chiếc rương kho báu bị khóa kín] chứa đầy lịch sử đã bị lãng quên. Bảo tàng địa phương của bạn có thể đang lưu giữ kỳ quan ẩn giấu nào ngay lúc này?",
-    "fr": "Les collections de musées ressemblent à des [p:coffres au trésor verrouillés] regorgeant d'histoire oubliée. Quelles merveilles cachées votre musée local conserve-t-il dans ses réserves en ce moment même ?"
+    "fr": "Les collections de musées ressemblent à des [p:coffres au trésor verrouillés] regorgeant d'histoire oubliée. Quelles merveilles cachées votre musée local conserve-t-il dans ses réserves en ce moment même ?",
+    "de": "Museumssammlungen sind wie [p:verschlossene Schatztruhen] voller vergessener Geschichte. Welche verborgenen Wunder bewahrt dein örtliches Museum wohl gerade in seinen Depots auf?",
+    "es": "Las colecciones de los museos son como [p:cofres del tesoro cerrados con llave] llenos de historia olvidada. ¿Qué maravillas ocultas podría estar guardando en sus depósitos su museo local en este momento?"
   },
   "applySteps": {
     "en": [
@@ -95,6 +113,16 @@
       "Visitez un musée d'histoire naturelle de votre région et examinez attentivement les archives non exposées.",
       "Lisez des descriptions scientifiques de fossiles déjà répertoriés pour repérer des détails passés inaperçus.",
       "Soutenez la recherche paléontologique en partageant des articles pédagogiques sur les découvertes muséales."
+    ],
+    "de": [
+      "Ein örtliches Naturkundemuseum besuchen und einen genauen Blick auf die nicht ausgestellten Archive werfen.",
+      "Wissenschaftliche Beschreibungen früher gesammelter Fossilien lesen, um übersehene Details zu entdecken.",
+      "Die paläontologische Forschung unterstützen, indem man Bildungsartikel über Entdeckungen in Museen teilt."
+    ],
+    "es": [
+      "Visite un museo local de historia natural y examine con detenimiento los archivos no expuestos.",
+      "Lea descripciones científicas de fósiles recolectados anteriormente para detectar detalles pasados por alto.",
+      "Apoye la investigación paleontológica compartiendo artículos educativos sobre descubrimientos en museos."
     ]
   },
   "coverCandidates": [
@@ -141,7 +169,9 @@
       "keyPoint",
       "applySteps",
       "en",
-      "fr"
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.8-flash-medium"
@@ -185,6 +215,30 @@
       "paléontologique": "Qui concerne l'étude scientifique des organismes disparus à travers leurs restes fossiles.",
       "surrey": "Comté du sud de l'Angleterre abritant la carrière d'argile où le fossile fut découvert.",
       "herbivore": "Animal se nourrissant uniquement de matière végétale, servant ici de proie aux carnivores."
+    },
+    "de": {
+      "paludohadros proudlovii": "Neu beschriebene Gattung und Art eines pflanzenfressenden Dinosauriers aus der englischen Kreidezeit.",
+      "iguanodon": "Bekannter pflanzenfressender Dinosaurier der Kreidezeit mit einem auffälligen Daumenstachel.",
+      "iguanodontier": "Gruppe pflanzenfressender Dinosaurier, zu der Iguanodon und nah verwandte Arten zählen.",
+      "baryonyx": "Fleischfressender Raubsaurier der Kreidezeit mit krokodilartiger Schnauze, der Fische und Saurier jagte.",
+      "kreidezeit": "Letzter Zeitabschnitt des Erdmittelalters vor rund 145 bis 66 Millionen Jahren.",
+      "surrey": "Grafschaft im Süden Englands, in der die Knochen des Paludohadros entdeckt wurden.",
+      "gattungsname": "Der erste Teil des wissenschaftlichen Artnamens, welcher die übergeordnete Verwandtschaftsgruppe angibt.",
+      "pflanzenfresser": "Tier oder Saurier, das sich überwiegend oder rein von pflanzlicher Nahrung ernährt.",
+      "tongrube": "Tagebauanlage zur Gewinnung von Tonmineralien für Baustoffe oder Keramik.",
+      "depots": "Lagerräume eines Museums für die fachgerechte Aufbewahrung nicht ausgestellter Sammlungsobjekte."
+    },
+    "es": {
+      "paludohadros proudlovii": "Especie de dinosaurio herbívoro descrita a partir de fósiles conservados en un museo inglés.",
+      "iguanodonte": "Famoso género de dinosaurios herbívoros del Cretácico, caracterizado por grandes púas en los pulgares.",
+      "surrey": "Condado del sureste de Inglaterra donde se extrajeron originalmente los fósiles en una cantera.",
+      "cantera de arcilla": "Explotación a cielo abierto para extraer arcilla, donde se descubrieron los restos fósiles.",
+      "período cretácico": "Último período de la era Mesozoica, caracterizado por una gran diversidad de dinosaurios.",
+      "baryonyx": "Género de dinosaurio terópodo carnívoro adaptado a cazar en zonas acuáticas y humedales.",
+      "iguanodontio": "Dinosaurio herbívoro perteneciente al grupo de los iguanodontios, emparentado con el iguanodonte.",
+      "herbívoro": "Animal cuya alimentación se basa principalmente en el consumo de plantas y materia vegetal.",
+      "espécimen": "Ejemplar fósil preservado en una colección para su análisis y documentación científica.",
+      "humedales": "Ecosistemas de tierras húmedas y pantanosas por los que merodeaban depredadores del Cretácico."
     }
   }
 }
