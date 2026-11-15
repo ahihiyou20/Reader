@@ -1,13 +1,18 @@
-# Daily articles (docs/05 §9): read content/feeds.json, write up to 20 new articles and keep them in
-# one rolling pull request from bot/new-articles. Nothing is published until the pull request is merged.
-# Needs Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+# Daily articles (docs/05 §9): topics from content/feeds.json (and Gemini's topic ideas when the feeds
+# fall short), each researched and written as Reader's own article of 1,000+ words in five languages
+# with an Unsplash cover. At least 20 a day, no upper limit. The articles wait in one rolling pull
+# request from bot/new-articles until it is merged, or go straight to main when the repository variable
+# FEEDS_AUTO_PUBLISH is "true".
+# Needs the secrets GEMINI_API_KEY and UNSPLASH_ACCESS_KEY (FIRECRAWL_API_KEY optional), and for the pull
+# request Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
 name: Daily articles
 on:
   schedule:
     - cron: '17 23 * * *'
   workflow_dispatch:
     inputs:
-      limit: { description: 'Most articles in this run (≤ maxPerDay in content/feeds.json)', required: false, default: '20' }
+      min: { description: 'Keep writing until at least this many articles (feeds, then topic ideas)', required: false, default: '20' }
+      limit: { description: 'Most articles in this run (0: no limit)', required: false, default: '0' }
 permissions:
   contents: write
   pull-requests: write
@@ -17,10 +22,13 @@ concurrency:
   cancel-in-progress: false
 env:
   BRANCH: bot/new-articles
+  AUTO_PUBLISH: ${{ vars.FEEDS_AUTO_PUBLISH == 'true' }}
 jobs:
   feeds:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Each article is researched, written and translated into four languages: about 3 minutes of
+    # Gemini time each, three at a time. The script stops starting new ones after --minutes.
+    timeout-minutes: 200
     steps:
       - uses: actions/checkout@v5
         with: { fetch-depth: 0 }
@@ -42,7 +50,7 @@ jobs:
             git fetch origin "$BRANCH"
             # Links the bot has already looked at, even if their pull request was closed.
             git show "origin/$BRANCH:$state" > "$RUNNER_TEMP/state.json" 2>/dev/null || true
-            if [ -n "$pr" ]; then
+            if [ -n "$pr" ] && [ "$AUTO_PUBLISH" != "true" ]; then
               git checkout -B "$BRANCH" "origin/$BRANCH"
               git merge --no-edit origin/main || { git merge --abort; git checkout -B "$BRANCH" origin/main; }
             else
@@ -63,12 +71,15 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          FIRECRAWL_MAX_PER_RUN: ${{ vars.FIRECRAWL_MAX_PER_RUN }}
           SITE_URL: ${{ vars.SITE_URL }}
-          LIMIT: ${{ inputs.limit || '20' }}
-        run: pnpm tsx scripts/pipeline/feeds.ts --limit "$LIMIT" --report "$RUNNER_TEMP/report.md"
+          MIN: ${{ inputs.min || '20' }}
+          LIMIT: ${{ inputs.limit || '0' }}
+        run: pnpm tsx scripts/pipeline/feeds.ts --min "$MIN" --limit "$LIMIT" --minutes 170 --jobs 3 --report "$RUNNER_TEMP/report.md"
       - name: Check
         run: pnpm tsx scripts/pipeline/validate.ts
       - name: Commit and open or update the pull request
@@ -80,6 +91,15 @@ jobs:
           git add content
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
           git commit -q -m "content: daily articles $(date -u +%F)"
+          if [ "$AUTO_PUBLISH" = "true" ]; then
+            for i in 1 2 3 4; do
+              git pull --rebase -q origin main && git push origin HEAD:main && break
+              sleep $((i * 10))
+            done
+            # Pushes made with GITHUB_TOKEN start no push runs, so ask for the deploy explicitly.
+            gh workflow run deploy.yml --ref main
+            exit 0
+          fi
           git push --force-with-lease origin "HEAD:$BRANCH"
           if [ -z "$(git diff --name-only --diff-filter=A origin/main...HEAD -- content/articles)" ]; then
             echo "Only the feed state changed."; exit 0

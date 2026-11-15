@@ -5,7 +5,7 @@
 import { httpText } from './lib';
 
 /** The free plan has 1,000 credits a month (1 per page): keep one run well inside it. */
-const MAX_PER_RUN = Number(process.env.FIRECRAWL_MAX_PER_RUN ?? 30);
+const MAX_PER_RUN = Number(process.env.FIRECRAWL_MAX_PER_RUN || 30);
 let usedThisRun = 0;
 export const firecrawlPagesUsed = () => usedThisRun;
 
@@ -33,6 +33,40 @@ async function scrapeHtml(url: string): Promise<string | null> {
   } catch (e) {
     console.warn(`Firecrawl failed for ${url} (${(e as Error).message}); fetching directly.`);
     return null;
+  }
+}
+
+export interface SearchHit {
+  url: string;
+  title: string;
+  markdown: string;
+}
+
+/**
+ * Web search with each hit's page as markdown (https://docs.firecrawl.dev/api-reference/endpoint/search).
+ * Each scraped hit costs a credit, so hits count against the same per-run cap as scrapes.
+ */
+export async function firecrawlSearch(query: string, limit = 3): Promise<SearchHit[]> {
+  if (!hasFirecrawl() || usedThisRun + limit > MAX_PER_RUN) return [];
+  usedThisRun += limit;
+  try {
+    const res = await fetch('https://api.firecrawl.dev/v2/search', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: `Bearer ${process.env.FIRECRAWL_API_KEY}` },
+      body: JSON.stringify({ query, limit, scrapeOptions: { formats: ['markdown'], onlyMainContent: true } }),
+      signal: AbortSignal.timeout(120_000),
+    });
+    if (!res.ok) {
+      console.warn(`Firecrawl search ${res.status} for "${query}"`);
+      return [];
+    }
+    const body = (await res.json()) as { data?: { web?: Array<{ url?: string; title?: string; markdown?: string }> } };
+    return (body.data?.web ?? [])
+      .filter((h): h is Required<typeof h> => Boolean(h.url && h.markdown))
+      .map((h) => ({ url: h.url, title: h.title ?? h.url, markdown: h.markdown }));
+  } catch (e) {
+    console.warn(`Firecrawl search failed for "${query}" (${(e as Error).message})`);
+    return [];
   }
 }
 

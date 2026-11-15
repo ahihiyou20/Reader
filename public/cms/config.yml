@@ -238,11 +238,26 @@ collections:
         file: content/feeds.json
         format: json
         description: >-
-          Bot đọc các nguồn này mỗi ngày và mở một pull request chứa bài mới (tối đa maxPerDay bài). Merge pull
-          request = đăng. Chế độ: adapt (nguồn giấy phép mở), verbatim (CC BY-ND), summary (mọi trang khác, cần Gemini).
+          Bot đọc các nguồn này mỗi ngày, viết ít nhất minPerDay bài (thiếu thì thêm chủ đề do Gemini đề xuất) và mở một
+          pull request chứa bài mới. Merge pull request = đăng. Chế độ: write (Reader tự viết bài 1.000+ từ từ nhiều
+          nguồn, năm ngôn ngữ, cần Gemini), adapt (nguồn giấy phép mở), verbatim (CC BY-ND), summary (tóm tắt + link).
         fields:
-          - { name: maxPerDay, label: Tối đa mỗi ngày, widget: number, value_type: int, default: 20, min: 1, max: 20 }
+          - { name: minPerDay, label: Tối thiểu mỗi ngày, widget: number, value_type: int, default: 20, min: 1 }
+          - { name: maxPerDay, label: Tối đa mỗi ngày (0 = không giới hạn), widget: number, value_type: int, default: 0, min: 0 }
           - { name: maxAgeDays, label: Bỏ qua bài cũ hơn (ngày), widget: number, value_type: int, default: 14 }
+          - name: triage
+            label: Chọn bài
+            widget: object
+            fields:
+              - { name: minScore, label: Điểm tối thiểu (0–10), widget: number, value_type: int, default: 6 }
+              - { name: perCategory, label: Tối đa mỗi chủ đề mỗi lượt, widget: number, value_type: int, default: 6 }
+              - { name: dupThreshold, label: Ngưỡng trùng tiêu đề (0–1), widget: number, value_type: float, default: 0.6 }
+          - name: ideas
+            label: Chủ đề do Gemini đề xuất khi thiếu bài
+            widget: object
+            fields:
+              - { name: enabled, label: Bật, widget: boolean, default: true }
+              - { name: extra, label: Đề xuất dư (bù bài lỗi), widget: number, value_type: int, default: 4 }
           - name: feeds
             label: Feed
             label_singular: Feed
@@ -256,10 +271,11 @@ collections:
                 label: Chủ đề
                 widget: select
                 options: [auto, psychology, science, economics, society, health, productivity, history, technology]
-              - { name: mode, label: Cách đăng, widget: select, options: [adapt, verbatim, summary] }
+              - { name: mode, label: Cách đăng, widget: select, options: [write, adapt, verbatim, summary], default: write }
               - { name: max, label: Tối đa mỗi lần, widget: number, value_type: int, default: 2, required: false }
               - { name: include, label: Chỉ lấy tiêu đề khớp (regex), widget: string, required: false }
               - { name: exclude, label: Bỏ tiêu đề khớp (regex), widget: string, required: false }
               - { name: maxWords, label: Số từ tối đa (bài nguyên văn), widget: number, value_type: int, required: false }
               - { name: resolve, label: Cách lấy link, widget: select, options: [wikipedia-featured], required: false }
+              - { name: minScore, label: Điểm tối thiểu riêng, widget: number, value_type: int, required: false }
               - { name: enabled, label: Bật, widget: boolean, default: true }

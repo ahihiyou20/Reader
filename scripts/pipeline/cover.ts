@@ -1,16 +1,78 @@
 // Cover candidates (docs/05 step 4): Unsplash and Pexels when API keys are set, NASA's image library
 // (public domain, no key) for science topics, and otherwise Unsplash photos picked by topic through
 // picsum.photos (no key). The first candidate becomes the cover.
-import type { CoverSource } from '../../lib/content/types';
+import path from 'node:path';
+import type { ArticleSource, CoverSource } from '../../lib/content/types';
 import { placeholderFor } from '../lib/media';
-import { http, httpJson } from './lib';
-
-const UTM = 'utm_source=reader&utm_medium=referral';
+import { PORTRAIT, UTM, WIDE, cdn, unsplashId } from './host-covers';
+import { dirs, http, httpJson, listJson, readJson } from './lib';
 
 interface UnsplashPhoto {
+  id: string;
+  likes?: number;
   urls: { raw: string };
   links: { html: string; download_location: string };
-  user: { name: string; links: { html: string } };
+  user: { name: string; username: string };
+}
+
+/** Unsplash photos already on a cover (other articles, or earlier in this run): every article gets its own. */
+let usedPhotos: Set<string> | undefined;
+async function photosInUse(): Promise<Set<string>> {
+  if (usedPhotos) return usedPhotos;
+  const ids = await Promise.all(
+    (await listJson(dirs.articles)).map(async (f) => unsplashId((await readJson<ArticleSource>(path.join(dirs.articles, f))).cover.sourceUrl)),
+  );
+  usedPhotos = new Set(ids.filter((x): x is string => Boolean(x)));
+  return usedPhotos;
+}
+/** Set when Unsplash refuses for the rest of the hour: the run stops asking. */
+let unsplashResting = false;
+
+/**
+ * Portrait Unsplash photos for a query, the most liked of the most relevant first, none already in use.
+ * Each is served from Unsplash's CDN in both shapes, as the API guidelines ask.
+ */
+export async function unsplashCovers(query: string, n = 4): Promise<CoverSource[]> {
+  const key = process.env.UNSPLASH_ACCESS_KEY;
+  if (!key || unsplashResting) return [];
+  const q = new URLSearchParams({ query, orientation: 'portrait', per_page: '20', content_filter: 'high' });
+  try {
+    const res = await http(`https://api.unsplash.com/search/photos?${q}`, { headers: { authorization: `Client-ID ${key}`, 'accept-version': 'v1' } }, 2, 20_000);
+    if (res.status === 403 || res.status === 429) {
+      unsplashResting = true;
+      console.warn('unsplash: hourly limit reached; later covers come from other sources until the Covers job runs');
+      return [];
+    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    if (Number(res.headers.get('x-ratelimit-remaining') ?? 99) <= 1) unsplashResting = true;
+    const used = await photosInUse();
+    const { results } = (await res.json()) as { results: UnsplashPhoto[] };
+    return results
+      .filter((p) => !used.has(p.id))
+      .slice(0, 10)
+      .sort((a, b) => (b.likes ?? 0) - (a.likes ?? 0))
+      .slice(0, n)
+      .map((p) => ({
+        type: 'image' as const,
+        url: cdn(p.urls.raw, PORTRAIT),
+        wide: cdn(p.urls.raw, WIDE),
+        provider: 'unsplash' as const,
+        author: p.user.name,
+        authorUrl: `https://unsplash.com/@${p.user.username}?${UTM}`,
+        license: 'Unsplash License',
+        sourceUrl: `https://unsplash.com/photos/${p.id}`,
+        unsplashDownloadLocation: p.links.download_location,
+      }));
+  } catch (e) {
+    console.warn('unsplash:', (e as Error).message);
+    return [];
+  }
+}
+
+/** The chosen cover's photo is taken, so a later article in the same run picks another. */
+export async function claimCover(cover: CoverSource) {
+  const id = cover.provider === 'unsplash' ? unsplashId(cover.sourceUrl) : undefined;
+  if (id) (await photosInUse()).add(id);
 }
 interface PexelsPhoto {
   url: string;
@@ -32,27 +94,7 @@ interface NasaItem {
 export async function findCovers(query: string, opts: { videos?: boolean; nasa?: boolean; category?: string } = {}): Promise<CoverSource[]> {
   const out: CoverSource[] = [];
   const q = encodeURIComponent(query);
-  if (process.env.UNSPLASH_ACCESS_KEY) {
-    try {
-      const r = await httpJson<{ results: UnsplashPhoto[] }>(`https://api.unsplash.com/search/photos?query=${q}&orientation=portrait&per_page=6&content_filter=high`, {
-        headers: { authorization: `Client-ID ${process.env.UNSPLASH_ACCESS_KEY}`, 'accept-version': 'v1' },
-      });
-      for (const p of r.results)
-        out.push({
-          type: 'image',
-          // Unsplash requires hotlinking the photo URL it returns (with size parameters).
-          url: `${p.urls.raw}&w=1080&h=1920&fit=crop&crop=entropy&q=72&fm=webp`,
-          provider: 'unsplash',
-          author: p.user.name,
-          authorUrl: `${p.user.links.html}?${UTM}`,
-          license: 'Unsplash License',
-          sourceUrl: `${p.links.html}?${UTM}`,
-          unsplashDownloadLocation: p.links.download_location,
-        });
-    } catch (e) {
-      console.warn('unsplash:', (e as Error).message);
-    }
-  }
+  out.push(...(await unsplashCovers(query)));
   if (process.env.PEXELS_API_KEY) {
     const headers = { authorization: process.env.PEXELS_API_KEY };
     try {
@@ -117,6 +159,8 @@ function hash(s: string) {
 
 /** Up to three picsum candidates for a topic, starting at a spot chosen by the query. */
 const usedPicsum = new Set<number>();
+/** picsum.photos has gone dark for hours at a time: after one failure the run stops asking it. */
+let picsumDown = false;
 
 export async function picsumCovers(query: string, category = 'science'): Promise<CoverSource[]> {
   const all = PICSUM_BY_CATEGORY[category] ?? PICSUM_BY_CATEGORY.science;
@@ -126,10 +170,12 @@ export async function picsumCovers(query: string, category = 'science'): Promise
   const start = hash(query) % ids.length;
   usedPicsum.add(ids[start]);
   const out: CoverSource[] = [];
-  for (let k = 0; k < Math.min(3, ids.length); k++) {
+  for (let k = 0; k < Math.min(3, ids.length) && !picsumDown; k++) {
     const id = ids[(start + k) % ids.length];
     try {
-      const info = await httpJson<{ author: string; url: string }>(`https://picsum.photos/id/${id}/info`);
+      const res = await http(`https://picsum.photos/id/${id}/info`, {}, 1, 10_000);
+      if (!res.ok) throw new Error(`${res.status} https://picsum.photos/id/${id}/info`);
+      const info = (await res.json()) as { author: string; url: string };
       out.push({
         type: 'image',
         url: `https://picsum.photos/id/${id}/1080/1920`,
@@ -139,6 +185,7 @@ export async function picsumCovers(query: string, category = 'science'): Promise
         sourceUrl: info.url,
       });
     } catch (e) {
+      picsumDown = true;
       console.warn('picsum:', (e as Error).message);
     }
   }

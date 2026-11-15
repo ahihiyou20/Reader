@@ -53,9 +53,9 @@
 
 | Field | Quy tắc | Hiện ở |
 |-------|---------|--------|
-| `title` | ≤ 12 từ | Cover, đầu Details |
+| `title` | ≤ 12 từ, nên ≤ 60 ký tự. Cover in phần sau dấu hai chấm (≤ 26 ký tự) hoặc 1–3 chữ cuối bằng font trang trí của danh mục (`lib/title.ts`), nên tiêu đề kết thúc bằng một cụm cụ thể, gợi hình | Cover, đầu Details |
 | `hook` | 40–80 từ, đoạn mở gợi tò mò | Section đầu (chữ lớn) |
-| `sections[]` | 5–7 section, mỗi section ≤ 130 từ, có `heading` tùy chọn; tổng 700–950 từ | Các section có H2 |
+| `sections[]` | 5–7 section, mỗi section ≤ 130 từ, có `heading` tùy chọn; tổng 700–950 từ. Bài Reader tự viết (nhóm 4): 6–8 section có heading, mỗi section 130–220 từ (≤ 240), tổng **1.000–1.800 từ** (nhắm 1.100–1.400) | Các section có H2 |
 | Highlight | ≤ 3 cụm mỗi section: vàng (tên, năm, tổ chức), hồng (số liệu, khái niệm), xanh lá (kết luận) | Chip màu |
 | `references[]` + chip | Mỗi số liệu có chip nguồn | Chip xám, sheet Sources |
 | `keyPoint` | 40–60 từ, một ẩn dụ đời thường + một câu hỏi hành động | Thẻ KEY POINT |
@@ -228,7 +228,7 @@ Mỗi lần **Save** là một commit lên `main`. Trang preview đọc file JSO
 | Có `origin` đầy đủ (tác giả, link gốc, giấy phép, thay đổi) | Lỗi |
 | Cover có `author` và `license` | Lỗi |
 | `ai.reviewed == true` nếu có field AI | Lỗi (khi `status = published`) |
-| Độ dài: hook 40–80 từ; 5–7 section; 700–950 từ (trừ nhóm 3 và 5) | Cảnh báo |
+| Độ dài: hook 40–80 từ; 5–7 section; 700–950 từ (trừ nhóm 3 và 5). Nhóm 4: hook 40–110 từ, 5–9 section ≤ 240 từ, 1.000–1.800 từ | Cảnh báo |
 | Nhóm 5: có link gốc; dưới 450 từ (lỗi), 2–5 section và 150–400 từ (cảnh báo) | Lỗi / cảnh báo |
 | Giấy phép khớp nhóm: 1 = CC BY / CC BY-NC / PD; 2 = SA; 3 = ND; 4 = Reader-CC-BY-4.0 | Lỗi |
 | Đủ 3 bước Apply, có KEY POINT | Cảnh báo |
@@ -264,14 +264,17 @@ Mỗi lần **Save** là một commit lên `main`. Trang preview đọc file JSO
 
 ### Bước 11. Bài tự động hằng ngày (`feeds.yml`, cron 23:17 UTC = 06:17 giờ Việt Nam)
 
-- Nguồn nằm trong `content/feeds.json` (sửa được trong CMS → Cài đặt → Nguồn tự động): mỗi feed RSS/Atom có `category` (hoặc `auto` để Gemini chọn chủ đề), `mode` (`adapt`, `verbatim`, `summary`), `max` bài mỗi lần, lọc `include`/`exclude` theo tiêu đề, `maxWords` cho bài nguyên văn.
-- `scripts/pipeline/feeds.ts` lấy các mục **chưa thấy** và **mới hơn 14 ngày**, xen kẽ giữa các feed, rồi đưa qua bước **chọn bài** (`scripts/pipeline/triage.ts`): luật cứng loại thông báo sự kiện, hội thảo, tin bổ nhiệm, giải thưởng, mùa giải thể thao, phim/album, tin tuyển dụng; phần còn lại được Gemini chấm 0–10 trong **một lượt gọi** theo giá trị lâu dài với người đọc phổ thông, xếp danh mục và loại bài; chỉ lấy bài ≥ `triage.minScore` (6; riêng Wikipedia featured ≥ 8), tối đa `perCategory` bài/danh mục, bỏ bài gần trùng tiêu đề đã có. Không có `GEMINI_API_KEY` thì chỉ dùng luật cứng + xen kẽ. Tối đa **`maxPerDay` = 20 bài/ngày**. Mọi trả lời của Gemini đi qua `geminiStructured` (schema JSON + kiểm tra zod, hỏng thì hỏi lại một lần kèm danh sách lỗi, hỏng nữa thì bỏ đúng trường hỏng). Bài viết xong được soát bằng `prose-lint.ts` (từ cấm, cụm rập khuôn, cụm lặp, em dash, markup trong tiêu đề); còn lỗi thì Gemini sửa một lượt, vẫn lỗi thì bài để trạng thái `review` và ghi chú trong pull request. Link đã xem (kể cả link lỗi) lưu ở `content/generated/feed-state.json` 180 ngày nên không bị lấy lại.
-- Mỗi link đi qua `scripts/pipeline/create.ts`:
-  - domain có trong `licenses.ts` → import như bước 2–4; giấy phép đọc được quyết định nhóm 1/2/3; Gemini (`compose.ts`) thêm bản tiếng Việt, KEY POINT, 3 bước Apply, tối đa 2 highlight mỗi section (chỉ nhận highlight khi chữ hiển thị không đổi) và thẻ tìm kiếm. Nhóm 3 chỉ được thêm tóm tắt tiếng Việt, KEY POINT và Apply;
-  - domain khác → nhóm 5: đọc trang bằng Readability, gửi văn bản cho Gemini để viết bản tóm tắt, **không lưu** văn bản gốc. Không có `GEMINI_API_KEY` thì bỏ qua các feed tóm tắt;
-  - ảnh bìa: Unsplash/Pexels nếu có key, NASA cho chủ đề khoa học, nếu không thì ảnh Unsplash chọn sẵn theo chủ đề qua `picsum.photos` (hotlink, không làm phình repo).
-- Bài được ghi `status: published` và `ai.reviewed: true` rồi commit vào nhánh **`bot/new-articles`** và **một** pull request "Bài mới từ nguồn tự động" (cập nhật thêm mỗi ngày nếu chưa merge). **Merge = duyệt và đăng.** Muốn bỏ bài nào thì xoá file của bài đó trong pull request. Đóng pull request không merge = bỏ cả đợt.
-- Cần bật Settings → Actions → General → **Allow GitHub Actions to create and approve pull requests**.
+- **Số bài:** ít nhất `minPerDay` = **20 bài/ngày**, **không giới hạn trên** (`maxPerDay: 0`; đặt số > 0 nếu muốn chặn). Bot làm hết các chủ đề tốt từ feed; nếu chưa đủ 20 thì `scripts/pipeline/ideas.ts` nhờ Gemini đề xuất thêm chủ đề nền tảng (có bài Wikipedia, có nghiên cứu) cho các danh mục đang ít bài nhất, rồi viết tiếp. Mỗi lượt chạy tối đa 170 phút (`--minutes`), 3 bài song song (`--jobs`); job timeout 200 phút.
+- **Nguồn:** `content/feeds.json` có khoảng 40 feed RSS/Atom phủ cả 8 danh mục (NASA, ESA, USGS, Quanta, ScienceDaily theo chuyên mục, Science News, Phys.org, Ars Technica, NPR, Psyche, Aeon, Greater Good, WHO, Our World in Data, Liberty Street Economics, IMF, MIT News, IEEE Spectrum, MIT Technology Review, Farnam Street, Cal Newport, Smithsonian, JSTOR Daily, Public Domain Review, Wikipedia, The Conversation, Knowable, Nautilus, Big Think, Harvard Gazette, Atlas Obscura, Global Voices…). Mỗi feed có `category` (hoặc `auto` để Gemini chọn), `mode`, `max` bài mỗi lần, lọc `include`/`exclude` theo tiêu đề. Feed nào hỏng chỉ bị bỏ qua và ghi cảnh báo.
+- **Chọn bài** (`scripts/pipeline/triage.ts`): luật cứng loại thông báo sự kiện, hội thảo, tin bổ nhiệm, giải thưởng, chính trị/bầu cử, vụ kiện, mùa giải thể thao, phim/album, tin tuyển dụng; phần còn lại được Gemini chấm 0–10 theo lô 50 mục (giá trị lâu dài với người đọc phổ thông, đủ sâu cho một bài 1.200 từ), xếp danh mục, loại bài, và gợi ý luôn **góc viết**, **truy vấn Wikipedia**, **truy vấn bài báo khoa học** và **từ khoá ảnh**. Chỉ lấy bài ≥ `triage.minScore` (6; Wikipedia featured ≥ 8), tối đa `perCategory` (6) bài/danh mục mỗi lượt, bỏ bài gần trùng tiêu đề đã có. Gemini lỗi lúc chấm thì lô đó đi tiếp theo luật cứng thay vì làm hỏng cả lượt chạy.
+- **Nghiên cứu** (`scripts/pipeline/research.ts`): trang gợi ý chủ đề (qua Firecrawl nếu có key), 1–2 bài Wikipedia (API, không cần key), 1–2 tóm tắt nghiên cứu từ Europe PMC (khoa học, sức khoẻ, tâm lý, năng suất, công nghệ), và khi tư liệu còn mỏng thì tìm thêm trên web bằng Firecrawl search. Mỗi nguồn có id (`source`, `wiki1`, `paper1`, `web1`…) để bài trích dẫn bằng chip. Dưới 2 nguồn hoặc dưới 900 chữ tư liệu thì bỏ chủ đề.
+- **Viết** (`writeResearched` trong `compose.ts`, chế độ `mode: "write"`, nhóm 4, giấy phép Reader-CC-BY-4.0): Gemini viết bài **của Reader** bằng lời riêng từ các nguồn (không chép câu, trích ≤ 8 từ, mọi số liệu phải có nguồn), 6–8 section có heading, **1–2 highlight mỗi section** (`[y:…]` số liệu, `[p:…]` ý chính, `[g:…]` mẹo), chip nguồn ở mọi section, `**đậm**` tối đa một lần, tiêu đề hợp với kiểu chữ trên cover. Bài dưới 1.000 chữ, sai số highlight hoặc chip lạ thì Gemini được hỏi lại một lần kèm danh sách lỗi; vẫn dưới 950 chữ thì bỏ bài.
+- **Năm ngôn ngữ:** `translate.ts` dịch ngay sang tiếng Việt, Pháp, Đức, Tây Ban Nha (giữ highlight và chip) và viết glossary cho cả năm thứ tiếng; phần nào hụt vì quota thì workflow Translations (mỗi 6 giờ) làm tiếp.
+- **Ảnh bìa:** Unsplash API (`UNSPLASH_ACCESS_KEY`) tìm theo từ khoá ảnh Gemini đề xuất, lấy ảnh dọc được thích nhiều nhất trong 10 kết quả liên quan nhất, **không trùng** ảnh bài khác; phục vụ từ CDN của Unsplash ở hai khổ (dọc 1080×1920, ngang 2560×1440), ghi tên và link tác giả, báo lượt tải khi deploy. Không có key thì dùng NASA (chủ đề khoa học) hoặc picsum.photos, sau đó workflow Covers thay dần.
+- **Gemini:** model chính `GEMINI_MODEL` (mặc định `gemini-3.5-flash-lite`), khi quá tải (503) thì thử lại 3 lần rồi chuyển sang model dự phòng `GEMINI_FALLBACK_MODELS` (mặc định `gemini-flash-lite-latest,gemini-flash-latest`, mỗi model có quota free tier riêng); model hết quota được bỏ qua tới cuối lượt. Mọi trả lời đi qua `geminiStructured` (schema JSON + kiểm tra zod, hỏng thì hỏi lại một lần kèm danh sách lỗi, hỏng nữa thì bỏ đúng trường hỏng). Bài viết xong được soát bằng `prose-lint.ts`; còn lỗi thì Gemini sửa một lượt, vẫn lỗi thì bài để `review` và ghi chú trong pull request. Link và ý tưởng đã xem (kể cả lỗi) lưu ở `content/generated/feed-state.json` 180 ngày nên không bị lấy lại; lỗi do Gemini (quá tải, model) thì lượt sau thử lại.
+- Các chế độ cũ `adapt`, `verbatim`, `summary` vẫn dùng được cho từng feed và cho form Issue (bước 12), nhưng bài nhóm 3 chỉ có tiếng Anh, bài nhóm 5 chỉ 150–400 từ.
+- **Đăng:** bài ghi `status: published`, `ai.reviewed: true`, commit vào nhánh **`bot/new-articles`** và **một** pull request "Bài mới từ nguồn tự động" (cập nhật thêm mỗi ngày nếu chưa merge). **Merge = duyệt và đăng.** Muốn bỏ bài nào thì xoá file của bài đó trong pull request. Đặt biến repo **`FEEDS_AUTO_PUBLISH` = `true`** để bot đẩy thẳng lên `main` và deploy luôn, không cần pull request.
+- Cần secret `GEMINI_API_KEY`, `UNSPLASH_ACCESS_KEY` (tuỳ chọn `FIRECRAWL_API_KEY`, `PEXELS_API_KEY`), biến tuỳ chọn `GEMINI_MODEL`, `GEMINI_FALLBACK_MODELS`, `FIRECRAWL_MAX_PER_RUN` (mặc định 30 trang/lượt), và Settings → Actions → General → **Allow GitHub Actions to create and approve pull requests**.
 
 ### Bước 12. Thêm nhanh bằng form Issue (`issue-article.yml`)
 
@@ -295,7 +298,7 @@ content/
 ├─ raw/<sourceId>.json
 ├─ articles/<slug>.json
 ├─ categories.json
-├─ feeds.json                      # nguồn RSS/Atom tự động, maxPerDay = 20
+├─ feeds.json                      # nguồn RSS/Atom tự động, minPerDay = 20, không giới hạn trên
 ├─ ai-queue.json
 └─ generated/counts.json, feed-state.json   # do bot ghi, không sửa tay
 scripts/pipeline/
@@ -304,14 +307,17 @@ scripts/pipeline/
 ├─ licenses.ts    # bảng domain → adapter, nhóm, giấy phép; giấy phép quyết định nhóm (SA → 2, ND → 3)
 ├─ lib.ts   select-window.ts (700–950 từ)   cover.ts (Unsplash/Pexels/NASA/picsum)
 ├─ gemini.ts      # gọi Gemini free tier (JSON schema, giãn cách 4,5 s)
-├─ compose.ts     # dịch, KEY POINT, Apply, highlight, tóm tắt nhóm 5, bài từ văn bản tự viết
+├─ compose.ts     # dịch, KEY POINT, Apply, highlight, tóm tắt nhóm 5, bài từ văn bản tự viết, bài nghiên cứu ≥ 1.000 từ
+├─ research.ts    # nguồn cho bài tự viết: trang gợi ý, Wikipedia, Europe PMC, Firecrawl search
+├─ ideas.ts       # chủ đề nền tảng do Gemini đề xuất khi feed không đủ 20 bài
 ├─ create.ts      # một bài từ link hoặc văn bản (dùng chung cho feeds và issue)
 ├─ feeds.ts       # bài tự động hằng ngày   issue.ts  # form Issue   pr-body.ts
 ├─ ai-suggest.ts  # Gemini cho bài nhập tay, tùy chọn
 ├─ validate.ts    # --issue (đồng bộ GitHub Issue), --strict
 ├─ submissions.ts daily.ts set-moderator.ts backup.ts deploy-check.ts admin.ts
 scripts/build-content.ts           # sinh public/data/* trước next build
-scripts/dev/picsum-cover.ts        # tải ảnh bìa Unsplash (qua picsum), nén webp, ghi credit vào bài
+scripts/dev/unsplash-cover.ts      # ảnh bìa Unsplash (CDN, dọc + ngang, ghi công), --search để tìm ảnh chưa dùng
+scripts/dev/picsum-cover.ts        # cách cũ: ảnh Unsplash qua picsum, nén webp, ghi credit vào bài
 public/cms/index.html, config.yml  # Sveltia CMS ghim phiên bản 0.231.0
 functions/__/auth/[[path]].ts      # proxy đăng nhập (07)
 .github/workflows/
