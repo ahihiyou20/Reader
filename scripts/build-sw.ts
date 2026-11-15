@@ -23,7 +23,8 @@ async function main() {
     .map(rel)
     .filter(
       (f) =>
-        (f.startsWith('/_next/static/') && /\.(js|css|woff2)$/.test(f)) ||
+        // Fonts are left out: only two of the cover title faces are needed at a time, and the fetch handler caches each on first use.
+        (f.startsWith('/_next/static/') && /\.(js|css)$/.test(f)) ||
         ['/index.html', '/404.html', '/privacy.html', '/terms.html', '/manifest.webmanifest'].includes(f) ||
         f.startsWith('/icons/') ||
         ['/data/feed-head.json', '/data/feed.json', '/data/categories.json', '/data/terms.json'].includes(f),

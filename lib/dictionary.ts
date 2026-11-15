@@ -37,7 +37,7 @@ export function glossaryAt(glossary: Record<string, string> | undefined, text: s
 }
 
 const SKIP_HEADING = /etym|étym|etim|pronunc|prononc|phát âm|từ nguyên|aussprache|herkunft|worttrennung/i;
-const NOISE = /^(\d+|IPA|Ejemplo|Sinónimo|Sinónimos|Worttrennung|Aussprache|Hörbeispiele|Reime)\b|:\s*$/i;
+const NOISE = /^\(.*\)$|^(\d+|IPA|Ejemplo|Sinónimo|Sinónimos|Worttrennung|Aussprache|Hörbeispiele|Reime)\b|:\s*$/i;
 
 /** First definition line in a Wiktionary plain-text extract (vi, fr, de, es editions). */
 export function firstDefinition(extract: string, word: string): string | null {

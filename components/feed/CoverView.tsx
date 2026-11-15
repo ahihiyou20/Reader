@@ -1,4 +1,5 @@
 'use client';
+import { splitTitle, titleStyle } from '@/lib/title';
 import { ChevronsRight, Compass, LayoutGrid } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
@@ -50,6 +51,7 @@ export function CoverView({
       } catch {}
   }, [nudge]);
   const long = title.length > 70;
+  const { lead, accent } = splitTitle(title);
   const toDetails = () => setArticleView(item.slug, 1);
 
   return (
@@ -87,13 +89,14 @@ export function CoverView({
         </button>
       </div>
       <h2
-        className={`ctitle${long ? ' long' : ''}`}
+        className={`ctitle t-${titleStyle(item.category)}${long ? ' long' : ''}`}
         id={titleId}
         onClick={toDetails}
         data-region="cover-title"
         style={active ? { viewTransitionName: 'cover-title' } : undefined}
       >
-        <span>{title}</span>
+        {lead && <span className="ta">{lead}</span>}
+        <span className="tb">{accent}</span>
       </h2>
       {(active ?? true) && view === 0 && (
         <div className="rail" data-region="rail" style={active ? { viewTransitionName: 'action-rail' } : undefined}>

@@ -21,6 +21,7 @@ import { setOptCovers, type OptCovers } from '@/lib/covers';
 import { chromeP } from './feed/nav';
 import { useFeedList } from './feed/useFeedList';
 import { useReadingSignals } from './feed/useReadingSignals';
+import { useReading } from '@/stores/reading';
 import { preloadOverlays } from './overlays/preload';
 import { useMounted, useStageSync } from './hooks';
 
@@ -29,6 +30,7 @@ const CreatePanel = dynamic(() => import('./overlays/CreatePanel').then((m) => m
 const ExplorePanel = dynamic(() => import('./overlays/ExplorePanel').then((m) => m.ExplorePanel), { ssr: false });
 const LibraryPanel = dynamic(() => import('./overlays/LibraryPanel').then((m) => m.LibraryPanel), { ssr: false });
 const SettingsPanel = dynamic(() => import('./overlays/SettingsPanel').then((m) => m.SettingsPanel), { ssr: false });
+const Welcome = dynamic(() => import('./chrome/Welcome').then((m) => m.Welcome), { ssr: false });
 const AudioBar = dynamic(() => import('./chrome/AudioBar').then((m) => m.AudioBar), { ssr: false });
 const ProfilePanel = dynamic(() => import('./overlays/ProfilePanel').then((m) => m.ProfilePanel), { ssr: false });
 const SearchPanel = dynamic(() => import('./overlays/SearchPanel').then((m) => m.SearchPanel), { ssr: false });
@@ -98,6 +100,12 @@ function Shell({
   }
   const items = useFeedList(preview ? previewItems.current : undefined);
   useReadingSignals(preview ? undefined : items);
+  const readSize = useReading((s) => s.settings.fontSize);
+  // A reader who followed a link to an article came for that article, not for the introduction.
+  const showWelcome = useReading((s) => !s.welcomed) && !initialSlug && !preview;
+  useEffect(() => {
+    document.documentElement.style.setProperty('--read-size', `${readSize}px`);
+  }, [readSize]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -281,6 +289,7 @@ function Shell({
             <CreatePanel />
           </>
         )}
+        {showWelcome && <Welcome items={items} />}
         {children}
       </div>
       {shouldMountDeferred && <Ambient items={items} />}

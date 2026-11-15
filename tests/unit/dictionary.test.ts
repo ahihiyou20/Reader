@@ -18,6 +18,7 @@ describe('tap to understand', () => {
   it('reads the first definition from Wiktionary page text', () => {
     const vi = '\n== Tiếng Việt ==\n\n\n=== Từ nguyên ===\nÂm Hán-Việt của chữ Hán 吸引.\n\n\n=== Danh từ ===\nhấp dẫn\n\nMột loại lực cơ học được hình thành do các thiên thể tương tác với nhau.\n';
     expect(firstDefinition(vi, 'hấp dẫn')).toMatch(/^Một loại lực cơ học/);
+    expect(firstDefinition('\n== Tiếng Việt ==\n\n=== Giới từ ===\ncủa\n\n(trợ giúp hiển thị và nhập chữ Nôm)\nTừ biểu thị quan hệ sở hữu.\n', 'của')).toBe('Từ biểu thị quan hệ sở hữu.');
     const fr = '\n== Français ==\n\n=== Étymologie ===\n(XIIIe siècle) De l’ancien français orizonte.\n\n=== Nom commun ===\n\nhorizon (h muet) masculin\n\nLigne circulaire dont l’observateur est le centre.\n';
     expect(firstDefinition(fr, 'horizon')).toMatch(/^Ligne circulaire/);
     const de = '\n== Schwerkraft (Deutsch) ==\n\n=== Substantiv, f ===\n\nWorttrennung:\nSchwer·kraft\nBedeutungen:\n[1] Anziehungskraft in Folge der Gravitation\nHerkunft:\n';

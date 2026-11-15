@@ -1,6 +1,7 @@
 'use client';
 import { ExternalLink } from 'lucide-react';
 import { useCallback, useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import type { ArticleClient, Lang } from '@/lib/content/types';
 import { LANGS } from '@/lib/content/types';
 import { glossaryAt, lookup, wordAt, type Meaning } from '@/lib/dictionary';
@@ -80,7 +81,8 @@ export function useTapToDefine(article: ArticleClient, lang: Lang) {
     };
   }, [pop]);
 
-  return { onClick, pop: pop && <WordPop pop={pop} /> };
+  // The article page is transformed and clipped, which would trap a fixed element inside it.
+  return { onClick, pop: pop && createPortal(<WordPop pop={pop} />, document.body) };
 }
 
 function WordPop({ pop }: { pop: Pop }) {

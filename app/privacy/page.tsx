@@ -12,7 +12,7 @@ export default function Privacy() {
     <div className="doc">
       <main>
         <Link className="back" href="/">
-          ← Reader
+          ← Pagemoor
         </Link>
         <h1>Privacy Policy</h1>
         <p>Last updated {UPDATED}. Tiếng Việt ở bên dưới.</p>

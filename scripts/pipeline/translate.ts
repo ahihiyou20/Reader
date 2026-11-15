@@ -145,7 +145,8 @@ export async function translateInto(a: ArticleSource, lang: Lang): Promise<boole
       changed = true;
     }
   }
-  if (changed) a.ai = { fields: [...new Set([...(a.ai?.fields ?? []), lang])], reviewed: a.ai?.reviewed ?? false, model: MODEL };
+  // Translations add to an article and do not reopen its review: an unreviewed draft stays unreviewed, a live article stays live.
+  if (changed) a.ai = { fields: [...new Set([...(a.ai?.fields ?? []), lang])], reviewed: a.ai?.reviewed ?? true, model: MODEL };
   return changed;
 }
 
