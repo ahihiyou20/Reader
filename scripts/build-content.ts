@@ -82,7 +82,8 @@ async function main() {
   }
 
   const ranked = rankFeed(published, now);
-  await fs.rm(OUT, { recursive: true, force: true });
+  // Files are written over the old ones instead of emptying the folder first: a dev server reading
+  // public/data during a rebuild must never find it missing (and covers.json from scripts/covers.mjs stays).
   await fs.mkdir(path.join(OUT, 'articles'), { recursive: true });
   const builtAt = new Date(now).toISOString();
   const items = ranked.map(toFeedItem);
@@ -91,6 +92,8 @@ async function main() {
   await fs.writeFile(path.join(OUT, 'feed.json'), JSON.stringify({ builtAt, total: items.length, items }));
   await fs.writeFile(path.join(OUT, 'categories.json'), JSON.stringify(categories));
   for (const c of ranked) await fs.writeFile(path.join(OUT, 'articles', `${c.slug}.json`), JSON.stringify(c));
+  const live = new Set(ranked.map((c) => `${c.slug}.json`));
+  for (const f of await fs.readdir(path.join(OUT, 'articles'))) if (!live.has(f)) await fs.rm(path.join(OUT, 'articles', f));
 
   const ms = new MiniSearch<SearchDoc>(SEARCH_OPTIONS);
   ms.addAll(

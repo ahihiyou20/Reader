@@ -110,7 +110,8 @@ function StreakBadge({ onPress, onPreload }: { onPress: () => void; onPreload?: 
     }
     if (prefersReducedMotion()) return;
     if (fire.current) {
-      animate(fire.current, { scale: [1, 1.35, 1] }, spring.pop);
+      // A spring takes two keyframes; three made framer-motion throw (and Next's dev overlay cover the page).
+      animate(fire.current, { scale: [1.35, 1] }, spring.pop);
     }
   }, [bump]);
 
