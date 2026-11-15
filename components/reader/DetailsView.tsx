@@ -55,7 +55,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
 
   const blocks = article.sections.length + 2; // hook + sections + key point block
   const title = pick(article.title, lang) ?? '';
-  const fallback = lang === 'vi' && !article.hasVi;
+  const fallback = !article.langs.includes(lang);
 
   // Header collapse follows the scroll position directly (no timers).
   // Collapsed positions are fixed under the top bar; the expanded offset (gap) depends on screen height.
@@ -298,7 +298,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const kpText = pick(article.keyPoint, lang);
   const o = article.origin;
   // Group 3 cannot be translated: Vietnamese readers get Reader's own summary above the original text.
-  const viSummary = lang === 'vi' && o.group === 3 ? article.summary?.vi : undefined;
+  const viSummary = lang !== 'en' && o.group === 3 ? article.summary?.[lang] : undefined;
   const publisher = o.publisher ?? (o.originalUrl ? new URL(o.originalUrl).hostname.replace(/^www\./, '') : '');
 
   return (

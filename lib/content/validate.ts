@@ -1,8 +1,8 @@
 // Content checks shared by build-content, the validate workflow and the preview page (docs/05 step 7).
 import { articleSourceSchema } from './schema';
 import { citedIds, countWords, highlightCount, parseRich, plainText } from './markup';
-import type { ArticleSource } from './types';
-import { NO_DERIVATIVES, SHARE_ALIKE } from './types';
+import type { ArticleSource, Lang, TLang } from './types';
+import { LANG_NAME, LANGS, NO_DERIVATIVES, SHARE_ALIKE, TLANGS } from './types';
 
 export type Level = 'error' | 'warning' | 'info';
 export interface Issue {
@@ -39,6 +39,19 @@ export function isCleanLine(vi: string, en: string): boolean {
   return !/[*[\]{}\n\r]|_(?:vi|en)\b/.test(vi) && vi.length <= en.length * 2 + 40;
 }
 
+/** Languages (besides English) in which nothing the reader sees falls back to English. */
+export function fullLangs(a: ArticleSource): Lang[] {
+  const full = (l: TLang) =>
+    Boolean(
+      a.title[l] &&
+        a.hook[l] &&
+        a.sections.every((s) => s[`body_${l}`] && (!s.heading_en || s[`heading_${l}`])) &&
+        (!a.keyPoint?.en || a.keyPoint[l]) &&
+        (!a.applySteps?.en.length || a.applySteps[l]?.length),
+    );
+  return ['en', ...TLANGS.filter(full)];
+}
+
 export function totalWords(a: Pick<ArticleSource, 'hook' | 'sections' | 'references'>): number {
   const refs = Object.fromEntries((a.references ?? []).map((r) => [r.id, r.label]));
   return [a.hook.en, ...a.sections.map((s) => s.body_en)].reduce((n, s) => n + countWords(plainText(s, refs)), 0);
@@ -73,16 +86,12 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
     if (!src) return;
     for (const e of parseRich(src, { refs: refIds }).errors) err(field, e.message);
   };
-  check('hook.en', a.hook.en);
-  check('hook.vi', a.hook.vi);
-  a.sections.forEach((s, i) => {
-    check(`sections.${i}.body_en`, s.body_en);
-    check(`sections.${i}.body_vi`, s.body_vi);
-  });
-  check('keyPoint.en', a.keyPoint?.en);
-  check('keyPoint.vi', a.keyPoint?.vi);
-  check('summary.en', a.summary?.en);
-  check('summary.vi', a.summary?.vi);
+  for (const l of LANGS) {
+    check(`hook.${l}`, a.hook[l]);
+    a.sections.forEach((s, i) => check(`sections.${i}.body_${l}`, s[`body_${l}`]));
+    check(`keyPoint.${l}`, a.keyPoint?.[l]);
+    check(`summary.${l}`, a.summary?.[l]);
+  }
 
   if (opts.categories && !opts.categories.includes(a.category)) err('category', `Unknown category "${a.category}"`);
 
@@ -109,7 +118,7 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
   if (o.group === 3) {
     const marked = [a.hook.en, ...a.sections.map((s) => s.body_en)].some((s) => /\[[ypg]:|\*\*|\{[a-z0-9]/i.test(s));
     if (marked) err('sections', 'Group 3 text cannot carry highlights or chips');
-    if (a.hook.vi || a.sections.some((s) => s.body_vi)) err('sections', 'Group 3 text cannot be translated without permission');
+    if (TLANGS.some((l) => a.hook[l] || a.sections.some((s) => s[`body_${l}`]))) err('sections', 'Group 3 text cannot be translated without permission');
   }
 
   // Publishing
@@ -145,11 +154,16 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
     });
   }
   if (countWords(a.title.en) > LIMITS.titleWords) warn('title.en', `Title is longer than ${LIMITS.titleWords} words`);
-  if (a.title.vi && !isCleanLine(a.title.vi, a.title.en)) err('title.vi', 'Vietnamese title must be one short plain line (no markup)');
-  a.sections.forEach((s, i) => {
-    if (s.heading_vi && !isCleanLine(s.heading_vi, s.heading_en ?? ''))
-      err(`sections.${i}.heading_vi`, 'Vietnamese heading must be one short plain line (no markup)');
-  });
+  for (const l of TLANGS) {
+    const t = a.title[l];
+    if (t && !isCleanLine(t, a.title.en)) err(`title.${l}`, 'Translated title must be one short plain line (no markup)');
+    a.sections.forEach((s, i) => {
+      const h = s[`heading_${l}`];
+      if (h && !isCleanLine(h, s.heading_en ?? '')) err(`sections.${i}.heading_${l}`, 'Translated heading must be one short plain line (no markup)');
+    });
+    const steps = a.applySteps?.[l];
+    if (steps && steps.length !== a.applySteps!.en.length) warn(`applySteps.${l}`, 'Translated Apply steps do not match the English ones');
+  }
   if (!a.keyPoint?.en?.trim()) warn('keyPoint', 'Add a KEY POINT');
   else {
     const n = countWords(plainText(a.keyPoint.en, refIds));
@@ -157,21 +171,16 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
       warn('keyPoint.en', `KEY POINT has ${n} words (aim for ${LIMITS.keyPointWords.join('–')})`);
   }
   if (!a.applySteps || a.applySteps.en.filter((s) => s.trim()).length !== 3) warn('applySteps', 'Add exactly 3 Apply steps');
-  if (a.applySteps?.vi && a.applySteps.vi.length !== a.applySteps.en.length)
-    warn('applySteps.vi', 'Vietnamese Apply steps do not match the English ones');
 
   const cited = new Set([a.hook.en, ...a.sections.map((s) => s.body_en), a.keyPoint?.en].flatMap((s) => citedIds(s)));
   for (const r of a.references) if (!cited.has(r.id)) info('references', `Reference "${r.id}" is listed but not cited`);
 
-  // Vietnamese
-  const missingVi =
-    !a.title.vi ||
-    !a.hook.vi ||
-    a.sections.some((s) => !s.body_vi || (s.heading_en && !s.heading_vi)) ||
-    (a.keyPoint?.en && !a.keyPoint.vi) ||
-    (a.applySteps?.en.length && !a.applySteps.vi?.length);
-  if (missingVi && o.group !== 3) info('vi', 'Vietnamese version is incomplete (readers will see "EN only")');
-  if (o.group === 3 && !a.summary?.vi?.trim()) info('summary.vi', 'Add a Vietnamese summary for readers who switch to Vietnamese');
+  // Translations
+  const full = fullLangs(a);
+  for (const l of TLANGS) {
+    if (o.group !== 3 && !full.includes(l)) info(l, `${LANG_NAME[l]} version is incomplete (readers will see English)`);
+    if (o.group === 3 && !a.summary?.[l]?.trim()) info(`summary.${l}`, `Add a ${LANG_NAME[l]} summary for readers who switch language`);
+  }
 
   return { ok: !issues.some((i) => i.level === 'error'), issues, wordCount: words, article: a };
 }

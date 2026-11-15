@@ -55,8 +55,8 @@ describe('validateArticle (docs/05 step 7)', () => {
     const a = structuredClone(seed);
     a.origin = { group: 5, license: 'Copyright', authors: ['Ann Lee'], originalTitle: 'Why we nap', originalUrl: 'https://e.com', publisher: 'Psyche', changes: [] };
     const c = toClient(a);
-    expect(c.attribution.en).toMatch(/^Reader's own summary of “Why we nap” by Ann Lee \(Psyche\)/);
-    expect(c.attribution.vi).toMatch(/Bản tóm tắt của Reader/);
+    expect(c.attribution.en).toMatch(/^Pagemoor's own summary of “Why we nap” by Ann Lee \(Psyche\)/);
+    expect(c.attribution.vi).toMatch(/Bản tóm tắt của Pagemoor/);
   });
   it('flags unknown categories', () => {
     expect(validateArticle(seed, { categories: ['science'] }).ok).toBe(false);
@@ -77,9 +77,10 @@ describe('validateArticle (docs/05 step 7)', () => {
 describe('toClient', () => {
   it('parses markup and builds attribution', () => {
     const c = toClient(seed);
-    expect(c.hasVi).toBe(true);
+    expect(c.langs).toEqual(['en', 'vi']);
     expect(c.sections[0].heading?.vi).toBeTruthy();
-    expect(c.attribution.en).toMatch(/Reader/);
+    expect(c.attribution.en).toMatch(/Pagemoor/);
+    expect(c.attribution.fr).toMatch(/Pagemoor/);
     expect(c.readingMinutes).toBeGreaterThan(1);
     expect(c.sections[0].body.en[0].some((n) => n.t === 'cite')).toBe(true);
   });

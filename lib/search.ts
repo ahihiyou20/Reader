@@ -13,10 +13,9 @@ export function fold(s: string): string {
 
 export interface SearchDoc {
   id: string;
-  title_en: string;
-  title_vi: string;
-  hook_en: string;
-  hook_vi: string;
+  /** Every language joined, so a query finds the article whatever language it is typed in. */
+  title: string;
+  hook: string;
   headings: string;
   body: string;
   category: string;
@@ -24,14 +23,14 @@ export interface SearchDoc {
 }
 
 export const SEARCH_OPTIONS: Options<SearchDoc> = {
-  fields: ['title_en', 'title_vi', 'hook_en', 'hook_vi', 'headings', 'body', 'category', 'tags'],
+  fields: ['title', 'hook', 'headings', 'body', 'category', 'tags'],
   storeFields: [],
   processTerm: (term) => {
     const t = fold(term);
     return t.length > 1 ? t : null;
   },
   searchOptions: {
-    boost: { title_en: 3, title_vi: 3, tags: 2.5, headings: 1.5, hook_en: 1.2, hook_vi: 1.2 },
+    boost: { title: 3, tags: 2.5, headings: 1.5, hook: 1.2 },
     prefix: (term) => term.length > 2,
     fuzzy: (term) => (term.length > 4 ? 0.15 : false),
     combineWith: 'AND',

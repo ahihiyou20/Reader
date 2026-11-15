@@ -1,8 +1,16 @@
 // Content types shared by the build script, the preview page and the client (docs/06 §2).
 
-export type Lang = 'en' | 'vi';
-export const LANGS: Lang[] = ['en', 'vi'];
-export type Localized<T> = { en: T; vi?: T };
+export type Lang = 'en' | 'vi' | 'fr' | 'de' | 'es';
+export const LANGS: Lang[] = ['en', 'vi', 'fr', 'de', 'es'];
+/** Languages articles are translated into; English is always the source. */
+export type TLang = Exclude<Lang, 'en'>;
+export const TLANGS: TLang[] = ['vi', 'fr', 'de', 'es'];
+export const LANG_NAME: Record<Lang, string> = { en: 'English', vi: 'Tiếng Việt', fr: 'Français', de: 'Deutsch', es: 'Español' };
+export const LOCALE: Record<Lang, string> = { en: 'en-US', vi: 'vi-VN', fr: 'fr-FR', de: 'de-DE', es: 'es-ES' };
+export type Localized<T> = { en: T } & Partial<Record<TLang, T>>;
+export type SectionSource = { heading_en?: string; body_en: string } & Partial<Record<`heading_${TLang}` | `body_${TLang}`, string>>;
+/** Words the bot explained in context when the article was written: surface form (lowercase) → short meaning. */
+export type Glossary = Partial<Record<Lang, Record<string, string>>>;
 
 export type HlColor = 'yellow' | 'pink' | 'green';
 
@@ -73,11 +81,12 @@ export interface ArticleSource {
   category: string;
   title: Localized<string>;
   hook: Localized<string>;
-  sections: Array<{ heading_en?: string; heading_vi?: string; body_en: string; body_vi?: string }>;
+  sections: SectionSource[];
   keyPoint?: Localized<string>;
   applySteps?: Localized<string[]>;
   /** Group 3 only: Reader's own short summary, shown to Vietnamese readers because the text cannot be translated. */
-  summary?: { en?: string; vi?: string };
+  summary?: Partial<Record<Lang, string>>;
+  glossary?: Glossary;
   references: Reference[];
   cover: CoverSource;
   coverCandidates?: CoverSource[];
@@ -141,8 +150,9 @@ export interface ArticleClient {
   counts: Counts;
   readingMinutes: number;
   wordCount: number;
-  /** true when every visible field has a Vietnamese version */
-  hasVi: boolean;
+  /** Languages in which every visible field is available (always includes en). */
+  langs: Lang[];
+  glossary?: Glossary;
 }
 
 /** One row of public/data/feed.json */
@@ -155,7 +165,7 @@ export interface FeedItem {
   counts: Counts;
   readingMinutes: number;
   sections: number;
-  hasVi: boolean;
+  langs: Lang[];
 }
 
 export interface Category {

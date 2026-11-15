@@ -83,7 +83,7 @@ export function ArticlePage({
         aria-labelledby={titleId}
         aria-posinset={index + 1}
         aria-setsize={total}
-        lang={lang === 'vi' && item.title.vi ? 'vi' : 'en'}
+        lang={lang !== 'en' && item.title[lang] ? lang : 'en'}
       >
         <div className="bg">
           <div className="layer sharp" style={active ? { viewTransitionName: 'cover-media' } : undefined}>

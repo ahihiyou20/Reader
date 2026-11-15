@@ -10,6 +10,7 @@ import { Avatar } from '../chrome/Avatar';
 import { useT } from '../hooks';
 import { ArticleCard } from './ArticleCard';
 import { Panel } from './Layer';
+import { LOCALE } from '@/lib/content/types';
 
 type Tab = 'saved' | 'liked' | 'posts';
 
@@ -50,7 +51,7 @@ export function ProfilePanel() {
   }, [feed, saves, likes, tab]);
 
   const weekday = (d: string) =>
-    new Date(`${d}T12:00:00Z`).toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US', { weekday: 'narrow', timeZone: 'UTC' });
+    new Date(`${d}T12:00:00Z`).toLocaleDateString(LOCALE[lang], { weekday: 'narrow', timeZone: 'UTC' });
 
   return (
     <Panel open={open} onClose={() => closeOverlay('profile')} label={t('profile')} title={t('profile')}>
