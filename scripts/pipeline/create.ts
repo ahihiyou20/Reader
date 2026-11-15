@@ -15,7 +15,7 @@ import { readPage } from './adapters/readability';
 import { RESEARCHED_WORDS, applyWritten, enrich, fromText, summarize, writeResearched, writtenWords } from './compose';
 import { translateAll } from './translate';
 import { claimCover, findCovers, remotePlaceholder } from './cover';
-import { VIDEO_DIR, hasFfmpeg, motionCover } from './motion';
+import { VIDEO_DIR, autoMotion, hasFfmpeg, hasPixabay } from './motion';
 import { gather, materialWords } from './research';
 import { MODEL, hasGemini } from './gemini';
 import { importSource } from './import';
@@ -201,9 +201,10 @@ async function fromResearch(input: CreateInput, categories?: string[]): Promise<
   applyWritten(a, w, categories);
   Object.assign(a, await covers(a.title.en, a.category, w.photo ?? h.photo));
   // Motion covers add two clips to the repository per article, so the Gemini writer makes them only when asked.
-  if (process.env.MOTION_COVERS === 'true' && a.cover.provider !== 'own' && (await hasFfmpeg())) {
+  if (process.env.MOTION_COVERS === 'true' && hasPixabay() && (await hasFfmpeg())) {
     try {
-      a.cover.video = await motionCover(a, { effect: w.motion });
+      const video = await autoMotion(a, [w.video ?? '', w.photo ?? h.photo ?? '', ...(a.tags ?? []).slice(0, 2)]);
+      if (video) a.cover.video = video;
     } catch (e) {
       console.warn(`${a.slug}: no motion cover (${(e as Error).message.slice(0, 160)})`);
     }

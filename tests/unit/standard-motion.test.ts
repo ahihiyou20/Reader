@@ -1,12 +1,11 @@
-// The Pagemoor standard both writers are held to, and motion covers made from a cover photo.
+// The Pagemoor standard both writers are held to, and motion covers cut from Pixabay clips.
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 import type { ArticleSource } from '../../lib/content/types';
-import { generate, fromClip } from '../../scripts/pipeline/motion';
+import { fromClip, pixabayId } from '../../scripts/pipeline/motion';
 import { STANDARDS, standardProblems } from '../../scripts/pipeline/standard';
 
 const words = (n: number) => Array.from({ length: n }, (_, i) => `word${i % 9}`).join(' ');
@@ -54,6 +53,7 @@ describe('standardProblems', () => {
   it('passes a finished article, except the motion cover the Claude writer needs', () => {
     expect(standardProblems(article(), STANDARDS.gemini)).toEqual([]);
     expect(standardProblems(article(), STANDARDS.claude)).toEqual([expect.stringMatching(/motion cover/)]);
+    expect(standardProblems({ ...article(), coverClip: 'https://pixabay.com/videos/ocean-waves-sea-12345/' }, STANDARDS.claude)).toEqual([]);
   });
   it('names what is missing', () => {
     const a = article();
@@ -81,18 +81,23 @@ const ffmpeg = (() => {
 const probe = (f: string) =>
   execFileSync('ffprobe', ['-v', 'error', '-count_frames', '-select_streams', 'v', '-show_entries', 'stream=width,height,nb_read_frames', '-of', 'csv=p=0', f], { encoding: 'utf8' }).trim();
 
+describe('pixabayId', () => {
+  it('reads the id from a Pixabay page URL or takes a bare id', () => {
+    expect(pixabayId('https://pixabay.com/videos/clock-time-spiral-174235/')).toBe(174235);
+    expect(pixabayId('174235')).toBe(174235);
+    expect(pixabayId('https://pixabay.com/videos/')).toBeNaN();
+  });
+});
+
 describe.skipIf(!ffmpeg)('motion covers', () => {
-  it('animates a photo into a 6-second loop in each shape, and loops a stock clip', async () => {
+  it('cuts a clip into a 6-second loop in each shape', async () => {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'motion-test-'));
-    const photo = await sharp({ create: { width: 900, height: 1600, channels: 3, background: { r: 40, g: 70, b: 110 } } }).jpeg().toBuffer();
-    await generate(photo, 'portrait', 'dust', path.join(dir, 'p.mp4'), 'seed');
-    await generate(photo, 'wide', 'fog', path.join(dir, 'w.mp4'), 'seed');
+    // A clip needs half a second more than the loop, for the cross-fade.
+    execFileSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=1280x720:rate=30:duration=8', '-pix_fmt', 'yuv420p', path.join(dir, 's.mp4')]);
+    await fromClip(path.join(dir, 's.mp4'), 'portrait', path.join(dir, 'p.mp4'));
+    await fromClip(path.join(dir, 's.mp4'), 'wide', path.join(dir, 'w.mp4'), 1);
     expect(probe(path.join(dir, 'p.mp4'))).toBe('720,1280,144');
     expect(probe(path.join(dir, 'w.mp4'))).toBe('1280,720,144');
-    // A stock clip needs half a second more than the loop, for the cross-fade.
-    execFileSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'testsrc2=size=1280x720:rate=30:duration=8', '-pix_fmt', 'yuv420p', path.join(dir, 's.mp4')]);
-    await fromClip(path.join(dir, 's.mp4'), 'portrait', path.join(dir, 'c.mp4'));
-    expect(probe(path.join(dir, 'c.mp4'))).toBe('720,1280,144');
     fs.rmSync(dir, { recursive: true, force: true });
   }, 120_000);
 });

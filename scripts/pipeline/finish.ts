@@ -1,14 +1,15 @@
 // Finish new articles once they reach main (workflow finish-articles.yml), whichever writer made them:
-// fill the languages and glossaries the writer could not (Gemini, quota permitting), add the motion
-// cover the Claude writer's standard asks for (and the Gemini writer's when MOTION_COVERS=true), then
-// report each article against the Pagemoor standard.
+// fill the languages and glossaries the writer could not (Gemini, quota permitting), cut the Pixabay
+// clip a writer queued in `coverClip`, find one where the Claude writer's standard asks for a motion
+// cover (and the Gemini writer's when MOTION_COVERS=true), then report each article against the
+// Pagemoor standard.
 //   pnpm tsx scripts/pipeline/finish.ts [--report report.md] <slug>...
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import type { ArticleSource } from '../../lib/content/types';
 import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
 import { dirs, jobSummary, readJson, writeJson } from './lib';
-import { hasFfmpeg, motionCover } from './motion';
+import { autoMotion, hasFfmpeg, hasPixabay } from './motion';
 import { STANDARDS, articleWords, standardProblems } from './standard';
 import { translateAll } from './translate';
 
@@ -36,11 +37,16 @@ async function main() {
         console.warn(`${slug}: translation stopped (${(e as Error).message.slice(0, 160)})`);
       }
     }
-    const wantsMotion = byClaude(a) || process.env.MOTION_COVERS === 'true';
-    if (wantsMotion && !a.cover.video && a.cover.provider === 'unsplash' && ffmpeg) {
+    // A clip the writer chose (coverClip) always; a search on the article's tags where the standard asks for one.
+    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || process.env.MOTION_COVERS === 'true';
+    if (wantsMotion && !a.cover.video && ffmpeg && hasPixabay()) {
       try {
-        a.cover.video = await motionCover(a);
-        done.push('motion cover');
+        const video = await autoMotion(a, [...(a.tags ?? []).slice(0, 3), a.title.en.split(/[:–—]/)[0]]);
+        if (video) {
+          a.cover.video = video;
+          delete a.coverClip;
+          done.push('motion cover (Pixabay)');
+        }
       } catch (e) {
         console.warn(`${slug}: no motion cover (${(e as Error).message.slice(0, 160)})`);
       }

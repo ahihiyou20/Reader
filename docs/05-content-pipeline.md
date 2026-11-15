@@ -228,7 +228,7 @@ Mỗi lần **Save** là một commit lên `main`. Trang preview đọc file JSO
 | Có `origin` đầy đủ (tác giả, link gốc, giấy phép, thay đổi) | Lỗi |
 | Cover có `author` và `license` | Lỗi |
 | `ai.reviewed == true` nếu có field AI | Lỗi (khi `status = published`) |
-| Độ dài: hook 40–80 từ; 5–7 section; 700–950 từ (trừ nhóm 3 và 5). Nhóm 4: hook 40–110 từ, 5–9 section ≤ 240 từ, 1.000–1.800 từ | Cảnh báo |
+| Độ dài (nhóm 1, 2, 4): hook 40–110 từ; 5–9 section ≤ 240 từ; 1.000–1.800 từ | Cảnh báo |
 | Nhóm 5: có link gốc; dưới 450 từ (lỗi), 2–5 section và 150–400 từ (cảnh báo) | Lỗi / cảnh báo |
 | Giấy phép khớp nhóm: 1 = CC BY / CC BY-NC / PD; 2 = SA; 3 = ND; 4 = Reader-CC-BY-4.0 | Lỗi |
 | Đủ 3 bước Apply, có KEY POINT | Cảnh báo |
@@ -270,13 +270,14 @@ Pagemoor có hai quy trình viết bài riêng, cùng một chuẩn (`scripts/pi
 |---|---|---|
 | Chạy ở | GitHub Actions `gemini-writer.yml`, 06:17 giờ Việt Nam | Scheduled task "Pagemoor daily writer" trên claude.ai, 12:40 giờ Việt Nam, theo `docs/09-daily-writer.md` |
 | Số bài | ≥ 20/ngày, không giới hạn trên | ≥ 20/ngày, không giới hạn trên |
-| Bìa động | Tuỳ chọn (biến `GEMINI_MOTION_COVERS=true`) | Bắt buộc mọi bài |
+| Bìa động (Pixabay) | Mặc định bật, tắt bằng biến `GEMINI_MOTION_COVERS=false` | Bắt buộc mọi bài |
 | Đăng | Pull request `bot/new-articles` (hoặc thẳng `main` với `GEMINI_AUTO_PUBLISH=true`) | Đẩy thẳng `main` |
 | Kiểm tra | `standard-cli.ts` (chuẩn `gemini`) báo trong job summary | `standard-cli.ts --claude` phải qua trước khi đẩy |
 
-- **Hoàn thiện** (`finish-articles.yml`, chạy khi bài mới lên `main`): `scripts/pipeline/finish.ts` dịch nốt ngôn ngữ và glossary còn thiếu bằng Gemini, tạo bìa động cho bài Claude (và bài Gemini khi bật) nếu chưa có, báo cáo từng bài theo chuẩn Pagemoor, rồi deploy.
+- **Hoàn thiện** (`finish-articles.yml`, chạy khi bài mới lên `main`): `scripts/pipeline/finish.ts` dịch nốt ngôn ngữ và glossary còn thiếu bằng Gemini, cắt clip Pixabay đã chọn (`coverClip`) hoặc tìm clip theo tag cho bài còn thiếu bìa động, báo cáo từng bài theo chuẩn Pagemoor, rồi deploy.
+- **Bổ sung bài ngắn** (Claude, `docs/10-expand-articles.md`): mỗi ngày 25 bài dưới 1.000 chữ (`scripts/pipeline/short-articles.ts`), bổ sung từ chính nguồn gốc và nguồn tham khảo của bài, không viết lại; nhóm 3 không được sửa.
 - **Chuẩn Pagemoor** cho bài nhóm 4: ≥ 1.000 từ tiếng Anh (Gemini chấp nhận từ 950), 6–8 section có heading, 1–2 highlight và chip nguồn trong mọi section, ≥ 3 nguồn (Gemini ≥ 2), đủ 5 ngôn ngữ, glossary ≥ 8 từ mỗi ngôn ngữ, ảnh Unsplash có bản ngang, và bìa động (bắt buộc với Claude).
-- **Bìa động** (`scripts/pipeline/motion.ts`, CLI `scripts/dev/motion-cover.ts`): clip 6 giây lặp liền mạch, dọc 720×1280 cho điện thoại và ngang 1280×720 cho màn rộng, trong `public/covers/video/`, khoảng 0,3–0,5 MB mỗi clip. Hai cách: dựng từ chính ảnh bìa Unsplash (zoom "thở" nhẹ + một lớp chuyển động: `fog`, `dust`, `stars`, `rain`, `snow`, `glow`, `shimmer`; khung đầu trùng ảnh tĩnh nên lúc clip hiện lên không bị giật), hoặc cắt từ clip stock Pexels/Pixabay (cần `PEXELS_API_KEY` hoặc `PIXABAY_API_KEY`), ghi công "Video: Pexels". Cần ffmpeg. App phát clip đè lên ảnh tĩnh, bỏ qua khi người đọc bật giảm chuyển động hoặc tiết kiệm dữ liệu.
+- **Bìa động** (`scripts/pipeline/motion.ts`, CLI `scripts/dev/motion-cover.ts`): clip **video Pixabay** (miễn phí; Pixabay không cho hotlink nên clip được tải về), cắt thành clip 6 giây lặp liền mạch (nối nửa giây cuối vào đầu), dọc 720×1280 cho điện thoại và ngang 1280×720 cho màn rộng, trong `public/covers/video/`, khoảng 0,3–0,6 MB mỗi clip, ghi công "Video: Pixabay", mỗi clip chỉ dùng cho một bài. Không tự sinh. Cần `PIXABAY_API_KEY` và ffmpeg; không có key thì người viết ghi clip đã chọn vào `coverClip` và `finish-articles.yml` cắt sau. App phát clip đè lên ảnh tĩnh, bỏ qua khi người đọc bật giảm chuyển động hoặc tiết kiệm dữ liệu.
 
 #### Gemini writer (`gemini-writer.yml`, cron 23:17 UTC = 06:17 giờ Việt Nam)
 
@@ -290,8 +291,8 @@ Pagemoor có hai quy trình viết bài riêng, cùng một chuẩn (`scripts/pi
 - **Ảnh bìa:** Unsplash API (`UNSPLASH_ACCESS_KEY`) tìm theo từ khoá ảnh Gemini đề xuất, lấy ảnh dọc được thích nhiều nhất trong 10 kết quả liên quan nhất, **không trùng** ảnh bài khác; phục vụ từ CDN của Unsplash ở hai khổ (dọc 1080×1920, ngang 2560×1440), ghi tên và link tác giả, báo lượt tải khi deploy. Không có key thì dùng NASA (chủ đề khoa học) hoặc picsum.photos, sau đó workflow Covers thay dần.
 - **Gemini:** model chính `GEMINI_MODEL` (mặc định `gemini-3.5-flash-lite`), khi quá tải (503) thì thử lại 3 lần rồi chuyển sang model dự phòng `GEMINI_FALLBACK_MODELS` (mặc định `gemini-flash-lite-latest,gemini-flash-latest`, mỗi model có quota free tier riêng); model hết quota được bỏ qua tới cuối lượt. Mọi trả lời đi qua `geminiStructured` (schema JSON + kiểm tra zod, hỏng thì hỏi lại một lần kèm danh sách lỗi, hỏng nữa thì bỏ đúng trường hỏng). Bài viết xong được soát bằng `prose-lint.ts`; còn lỗi thì Gemini sửa một lượt, vẫn lỗi thì bài để `review` và ghi chú trong pull request. Link và ý tưởng đã xem (kể cả lỗi) lưu ở `content/generated/feed-state.json` 180 ngày nên không bị lấy lại; lỗi do Gemini (quá tải, model) thì lượt sau thử lại.
 - Các chế độ cũ `adapt`, `verbatim`, `summary` vẫn dùng được cho từng feed và cho form Issue (bước 12), nhưng bài nhóm 3 chỉ có tiếng Anh, bài nhóm 5 chỉ 150–400 từ.
-- **Đăng:** bài ghi `status: published`, `ai.reviewed: true`, commit vào nhánh **`bot/new-articles`** và **một** pull request "Bài mới từ nguồn tự động" (cập nhật thêm mỗi ngày nếu chưa merge). **Merge = duyệt và đăng.** Muốn bỏ bài nào thì xoá file của bài đó trong pull request. Đặt biến repo **`GEMINI_AUTO_PUBLISH` = `true`** để bot đẩy thẳng lên `main` và deploy luôn, không cần pull request; **`GEMINI_MOTION_COVERS` = `true`** để mỗi bài có bìa động (tốn thêm khoảng 0,7 MB repo mỗi bài).
-- Cần secret `GEMINI_API_KEY`, `UNSPLASH_ACCESS_KEY` (tuỳ chọn `FIRECRAWL_API_KEY`, `PEXELS_API_KEY`), biến tuỳ chọn `GEMINI_MODEL`, `GEMINI_FALLBACK_MODELS`, `FIRECRAWL_MAX_PER_RUN` (mặc định 30 trang/lượt), và Settings → Actions → General → **Allow GitHub Actions to create and approve pull requests**.
+- **Đăng:** bài ghi `status: published`, `ai.reviewed: true`, commit vào nhánh **`bot/new-articles`** và **một** pull request "Bài mới từ nguồn tự động" (cập nhật thêm mỗi ngày nếu chưa merge). **Merge = duyệt và đăng.** Muốn bỏ bài nào thì xoá file của bài đó trong pull request. Đặt biến repo **`GEMINI_AUTO_PUBLISH` = `true`** để bot đẩy thẳng lên `main` và deploy luôn, không cần pull request; **`GEMINI_MOTION_COVERS` = `false`** để bỏ bìa động Pixabay (mỗi bài tốn thêm khoảng 0,7 MB repo).
+- Cần secret `GEMINI_API_KEY`, `UNSPLASH_ACCESS_KEY`, `PIXABAY_API_KEY` (tuỳ chọn `FIRECRAWL_API_KEY`, `PEXELS_API_KEY`), biến tuỳ chọn `GEMINI_MODEL`, `GEMINI_FALLBACK_MODELS`, `FIRECRAWL_MAX_PER_RUN` (mặc định 30 trang/lượt), và Settings → Actions → General → **Allow GitHub Actions to create and approve pull requests**.
 
 ### Bước 12. Thêm nhanh bằng form Issue (`issue-article.yml`)
 
@@ -327,7 +328,8 @@ scripts/pipeline/
 ├─ compose.ts     # dịch, KEY POINT, Apply, highlight, tóm tắt nhóm 5, bài từ văn bản tự viết, bài nghiên cứu ≥ 1.000 từ
 ├─ research.ts    # nguồn cho bài tự viết: trang gợi ý, Wikipedia, Europe PMC, Firecrawl search
 ├─ ideas.ts       # chủ đề nền tảng do Gemini đề xuất khi feed không đủ 20 bài
-├─ motion.ts      # bìa động: dựng từ ảnh bìa (ffmpeg) hoặc cắt clip stock Pexels/Pixabay
+├─ motion.ts      # bìa động: tìm, tải và cắt clip video Pixabay (ffmpeg)
+├─ short-articles.ts # danh sách bài dưới 1.000 chữ cần bổ sung (docs/10)
 ├─ standard.ts    # chuẩn Pagemoor cho bài nhóm 4 (standard-cli.ts để kiểm tra)
 ├─ finish.ts      # hoàn thiện bài mới trên main: dịch nốt, bìa động, báo cáo chuẩn
 ├─ create.ts      # một bài từ link hoặc văn bản (dùng chung cho feeds và issue)
@@ -337,7 +339,7 @@ scripts/pipeline/
 ├─ submissions.ts daily.ts set-moderator.ts backup.ts deploy-check.ts admin.ts
 scripts/build-content.ts           # sinh public/data/* trước next build
 scripts/dev/unsplash-cover.ts      # ảnh bìa Unsplash (CDN, dọc + ngang, ghi công), --search để tìm ảnh chưa dùng
-scripts/dev/motion-cover.ts        # bìa động cho một bài: --effect <hiệu ứng> | --clip <url> --credit <site>, --preview
+scripts/dev/motion-cover.ts        # bìa động Pixabay cho một bài: <slug> <trang clip>, --search, --preview
 scripts/dev/picsum-cover.ts        # cách cũ: ảnh Unsplash qua picsum, nén webp, ghi credit vào bài
 public/cms/index.html, config.yml  # Sveltia CMS ghim phiên bản 0.231.0
 functions/__/auth/[[path]].ts      # proxy đăng nhập (07)

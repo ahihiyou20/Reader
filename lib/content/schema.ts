@@ -17,7 +17,7 @@ export const coverSchema = z.object({
   sourceUrl: z.string().optional(),
   unsplashDownloadLocation: z.string().optional(),
   wide: z.string().optional(),
-  video: z.object({ url: nonEmpty, wide: z.string().optional(), credit: z.string().optional() }).optional(),
+  video: z.object({ url: nonEmpty, wide: z.string().optional(), credit: z.string().optional(), source: z.string().optional() }).optional(),
 });
 
 export const articleSourceSchema = z.object({
@@ -44,6 +44,7 @@ export const articleSourceSchema = z.object({
   references: z.array(z.object({ id: nonEmpty, label: nonEmpty, url: z.string() })).default([]),
   cover: coverSchema,
   coverCandidates: z.array(coverSchema).optional(),
+  coverClip: z.string().optional(),
   blurDataURL: z.string().optional(),
   dominant: z.string().optional(),
   origin: z.object({

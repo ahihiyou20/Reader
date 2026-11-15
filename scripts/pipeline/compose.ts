@@ -9,7 +9,6 @@ import { z } from 'zod';
 import { citedIds, countWords, highlightCount, parseRich, plainText } from '../../lib/content/markup';
 import { isCleanLine } from '../../lib/content/validate';
 import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiStructured } from './gemini';
-import { EFFECTS, type Effect } from './motion';
 import type { SourceDoc } from './research';
 
 /** A Vietnamese title or heading from Gemini is kept only when it is one clean line. */
@@ -221,8 +220,8 @@ export interface Written {
   category?: string;
   /** Unsplash search words for the cover photo. */
   photo?: string;
-  /** Moving layer for the motion cover. */
-  motion?: Effect;
+  /** Pixabay search words for the motion cover. */
+  video?: string;
 }
 
 /** A whole article written by Gemini (groups 4 and 5); `hook` and section counts depend on the job. */
@@ -250,7 +249,7 @@ function writtenSchema(opts: {
       tags: tagList.optional(),
       category: categoryOf(opts.categories).optional(),
       photo: z.string().max(80).optional(),
-      motion: z.enum(EFFECTS).optional(),
+      video: z.string().max(60).optional(),
     })
     .superRefine((w, ctx) => {
       // Whole-article problems sit at the root: a field-level path would make a second failure delete the field.
@@ -400,7 +399,7 @@ export async function writeResearched(b: ResearchBrief): Promise<Written> {
     `Write ${APPLY.replace('; applySteps_vi in the same order', '')}`,
     `Write ${TAGS}`,
     'photo: 2–4 concrete English words for an Unsplash photo search that would make a striking cover for this article: things a camera can capture (e.g. "honeybee honeycomb macro", "old printing press type"), never abstract ideas.',
-    'motion: the moving layer the cover clip lays over that photo: fog (mist, smoke, the past, mystery), dust (floating specks of light: labs, rooms, everyday scenes), stars (night sky, space), rain, snow (cold, winter), glow (soft moving light: health, technology, ideas, people), shimmer (rippling water or hot air: sea, rivers, heat, climate).',
+    'video: 1–3 concrete English words for a Pixabay video search that would make a calm, striking moving cover (e.g. "ocean waves", "clock gears", "city traffic night"), things that move on camera.',
     b.categories?.length ? categoryRule(b.categories) : '',
     `Topic: ${b.title}`,
     b.angle ? `Angle: ${b.angle}` : '',

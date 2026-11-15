@@ -1,5 +1,5 @@
 // The Pagemoor standard for an article Reader writes itself (group 4), shared by the Gemini writer and
-// the Claude writer: depth, highlights and sources in every section, all five languages with their
+// the Claude writer, and for a short article lengthened from its sources (docs/10): depth, highlights and sources in every section, all five languages with their
 // tap-to-understand glossaries, a credited Unsplash cover in both shapes, and for the Claude writer a
 // motion cover. validate.ts decides what may be published; this decides what is finished.
 import fs from 'node:fs';
@@ -11,6 +11,8 @@ import { proseWords } from './compose';
 import { ROOT } from './lib';
 
 export interface Standard {
+  /** Content groups held to it (docs/05 §2). */
+  groups: number[];
   minWords: number;
   minRefs: number;
   /** A motion cover (cover.video) is required. */
@@ -18,8 +20,10 @@ export interface Standard {
 }
 
 export const STANDARDS = {
-  gemini: { minWords: 950, minRefs: 2, motion: false },
-  claude: { minWords: 1000, minRefs: 3, motion: true },
+  gemini: { groups: [4], minWords: 950, minRefs: 2, motion: false },
+  claude: { groups: [4], minWords: 1000, minRefs: 3, motion: true },
+  /** A short article lengthened from its sources (docs/10): adapted ones keep their own licence group. */
+  expanded: { groups: [1, 2, 4], minWords: 1000, minRefs: 1, motion: false },
 } satisfies Record<string, Standard>;
 
 const GLOSSARY_MIN = 8;
@@ -30,7 +34,7 @@ export const articleWords = (a: Pick<ArticleSource, 'hook' | 'sections'>) => pro
 /** What keeps the article from the standard; empty when it meets it. */
 export function standardProblems(a: ArticleSource, s: Standard): string[] {
   const out: string[] = [];
-  if (a.origin.group !== 4) out.push(`group ${a.origin.group}: only articles written for Pagemoor (group 4) are held to this standard`);
+  if (!s.groups.includes(a.origin.group)) out.push(`group ${a.origin.group}: this standard is for groups ${s.groups.join(', ')}`);
   const words = articleWords(a);
   if (words < s.minWords) out.push(`${words} English words (at least ${s.minWords})`);
   if (a.sections.length < 5 || a.sections.length > 9) out.push(`${a.sections.length} sections (6–8)`);
@@ -48,8 +52,12 @@ export function standardProblems(a: ArticleSource, s: Standard): string[] {
   const thin = LANGS.filter((l) => Object.keys(a.glossary?.[l] ?? {}).length < GLOSSARY_MIN);
   if (thin.length) out.push(`glossary under ${GLOSSARY_MIN} terms in ${thin.join(', ')}`);
   const c = a.cover;
-  if (c.provider !== 'unsplash' || /picsum\.photos/.test(c.url) || !/unsplash\.com\/photos\//.test(c.sourceUrl ?? '')) out.push('cover is not an Unsplash photo');
-  else if (!c.wide) out.push('cover has no landscape version');
-  if (s.motion && !(onDisk(c.video?.url) && onDisk(c.video?.wide))) out.push('no motion cover (portrait and wide clip in public/covers/video)');
+  const unsplash = c.provider === 'unsplash' && !/picsum\.photos/.test(c.url) && /unsplash\.com\/photos\//.test(c.sourceUrl ?? '');
+  // An older article keeps whatever cover it has; the Covers workflow replaces picsum ones.
+  if (s.groups.length === 1 && !unsplash) out.push('cover is not an Unsplash photo');
+  else if (unsplash && !c.wide) out.push('cover has no landscape version');
+  // A clip queued in coverClip is cut by finish-articles.yml once the article is on main.
+  if (s.motion && !(onDisk(c.video?.url) && onDisk(c.video?.wide)) && !/pixabay\.com\/videos\//.test(a.coverClip ?? ''))
+    out.push('no motion cover (a Pixabay clip in public/covers/video, or one queued in coverClip)');
   return out;
 }

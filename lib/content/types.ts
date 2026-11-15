@@ -66,6 +66,8 @@ export interface CoverVideo {
   /** Landscape clip. */
   wide?: string;
   credit?: string;
+  /** The clip's page on the site it comes from (e.g. Pixabay), so no other article reuses it. */
+  source?: string;
 }
 
 export interface CoverSource {
@@ -102,6 +104,8 @@ export interface ArticleSource {
   references: Reference[];
   cover: CoverSource;
   coverCandidates?: CoverSource[];
+  /** A Pixabay video page chosen for the motion cover, waiting for finish-articles.yml to fetch it. */
+  coverClip?: string;
   blurDataURL?: string;
   dominant?: string;
   origin: {

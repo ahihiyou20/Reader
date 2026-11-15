@@ -1,11 +1,12 @@
 # Gemini writer (docs/05 step 11): every day, topics from content/feeds.json, plus Gemini's topic ideas
 # when the feeds fall short, are researched (the page, Wikipedia, Europe PMC, Firecrawl) and written as
 # Pagemoor's own articles of 1,000+ words, with highlights and source chips in every section, all five
-# languages with glossaries, and an Unsplash cover in portrait and landscape; with the variable
-# GEMINI_MOTION_COVERS = "true" each also gets a motion cover. At least 20 a day, no upper limit.
+# languages with glossaries, an Unsplash cover in portrait and landscape, and a motion cover cut from a
+# Pixabay video (set the variable GEMINI_MOTION_COVERS to "false" to skip those). At least 20 a day,
+# no upper limit.
 # The articles wait in one rolling pull request from bot/new-articles until it is merged (merging starts
 # finish-articles.yml), or go straight to main when the variable GEMINI_AUTO_PUBLISH is "true".
-# Secrets: GEMINI_API_KEY, UNSPLASH_ACCESS_KEY (FIRECRAWL_API_KEY, PEXELS_API_KEY optional). Variables
+# Secrets: GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, PIXABAY_API_KEY (FIRECRAWL_API_KEY optional). Variables
 # (optional): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, FIRECRAWL_MAX_PER_RUN. The pull request needs
 # Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
 name: Gemini writer
@@ -26,7 +27,7 @@ concurrency:
 env:
   BRANCH: bot/new-articles
   AUTO_PUBLISH: ${{ vars.GEMINI_AUTO_PUBLISH == 'true' || vars.FEEDS_AUTO_PUBLISH == 'true' }}
-  MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS == 'true' }}
+  MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS != 'false' }}
 jobs:
   write:
     runs-on: ubuntu-latest
@@ -81,6 +82,7 @@ jobs:
           GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           FIRECRAWL_MAX_PER_RUN: ${{ vars.FIRECRAWL_MAX_PER_RUN }}
           SITE_URL: ${{ vars.SITE_URL }}
@@ -89,6 +91,7 @@ jobs:
         run: pnpm tsx scripts/pipeline/feeds.ts --min "$MIN" --limit "$LIMIT" --minutes 170 --jobs 3 --report "$RUNNER_TEMP/report.md"
       - name: Finish this run's articles
         env:
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}

@@ -18,10 +18,11 @@ export interface ValidationResult {
 }
 
 export const LIMITS = {
-  hookWords: [40, 80] as const,
-  sections: [5, 7] as const,
-  totalWords: [700, 950] as const,
-  sectionWords: 130,
+  /** Pagemoor articles (groups 1, 2, 4) are in-depth: about 1,000 words and more. */
+  hookWords: [40, 110] as const,
+  sections: [5, 9] as const,
+  totalWords: [1000, 1800] as const,
+  sectionWords: 240,
   highlightsPerSection: 3,
   keyPointWords: [40, 60] as const,
   titleWords: 12,
@@ -29,8 +30,6 @@ export const LIMITS = {
   summarySections: [2, 5] as const,
   summaryWords: [150, 400] as const,
   summaryMaxWords: 450,
-  /** Group 4 (written for Reader): in-depth articles of about 1,000 words and more. */
-  written: { hookWords: [40, 110] as const, sections: [5, 9] as const, totalWords: [1000, 1800] as const, sectionWords: 240 },
 };
 
 /**
@@ -142,16 +141,15 @@ export function validateArticle(input: unknown, opts: ValidateOptions = {}): Val
     if (a.sections.length < LIMITS.summarySections[0] || a.sections.length > LIMITS.summarySections[1])
       warn('sections', `${a.sections.length} sections (aim for ${LIMITS.summarySections.join('–')})`);
   } else if (o.group !== 3) {
-    const L = o.group === 4 ? LIMITS.written : LIMITS;
-    if (hookWords < L.hookWords[0] || hookWords > L.hookWords[1])
-      warn('hook.en', `Hook has ${hookWords} words (aim for ${L.hookWords.join('–')})`);
-    if (a.sections.length < L.sections[0] || a.sections.length > L.sections[1])
-      warn('sections', `${a.sections.length} sections (aim for ${L.sections.join('–')})`);
-    if (words < L.totalWords[0] || words > L.totalWords[1])
-      warn('sections', `${words} words in total (aim for ${L.totalWords.join('–')})`);
+    if (hookWords < LIMITS.hookWords[0] || hookWords > LIMITS.hookWords[1])
+      warn('hook.en', `Hook has ${hookWords} words (aim for ${LIMITS.hookWords.join('–')})`);
+    if (a.sections.length < LIMITS.sections[0] || a.sections.length > LIMITS.sections[1])
+      warn('sections', `${a.sections.length} sections (aim for ${LIMITS.sections.join('–')})`);
+    if (words < LIMITS.totalWords[0] || words > LIMITS.totalWords[1])
+      warn('sections', `${words} words in total (aim for ${LIMITS.totalWords.join('–')})`);
     a.sections.forEach((s, i) => {
       const n = countWords(plainText(s.body_en, refIds));
-      if (n > L.sectionWords) warn(`sections.${i}.body_en`, `${n} words (max ${L.sectionWords})`);
+      if (n > LIMITS.sectionWords) warn(`sections.${i}.body_en`, `${n} words (max ${LIMITS.sectionWords})`);
       const h = highlightCount(s.body_en);
       if (h > LIMITS.highlightsPerSection) warn(`sections.${i}.body_en`, `${h} highlights (max ${LIMITS.highlightsPerSection})`);
     });

@@ -2,14 +2,14 @@
 
 A scheduled Claude routine ("Pagemoor daily writer") runs this once a day. It finds topics and
 sources, writes **at least 20** original, in-depth Pagemoor articles (group 4, see docs/05 §2) in all
-five languages, each with an Unsplash cover and a **motion cover**, checks them against the Pagemoor
+five languages, each with an Unsplash cover and a **Pixabay motion cover**, checks them against the Pagemoor
 standard, and pushes them to `main`. There is no upper limit: keep going while the quality holds and
 time remains. On `main`, `finish-articles.yml` fills anything left over and `deploy.yml` publishes.
 The Gemini writer (`gemini-writer.yml`, docs/05 step 11) runs separately and opens its own pull
 request; this routine does not touch it, but avoids its topics.
 
 The workflow, in order: topics (§1) → sources (§2) → write (§3) → five languages (§4) → Unsplash
-cover (§5) → motion cover (§6) → standard and checks (§7) → publish (§7).
+cover (§5) → Pixabay motion cover (§6) → standard and checks (§7) → publish (§7).
 
 ## 1. Pick topics
 
@@ -125,42 +125,46 @@ Every article gets its own Unsplash photo; never reuse one another article has (
 The script serves the photo from Unsplash's CDN in portrait and landscape and credits the
 photographer; the download is reported to Unsplash when the article is deployed.
 
-## 6. Motion cover
+## 6. Motion cover (Pixabay)
 
-Every article gets a short muted loop that the app plays over its cover photo (`cover.video`): a
-portrait clip for phones and a landscape one for wide screens in `public/covers/video/`. Look at
+Every article gets a short muted loop that the app plays over its cover photo (`cover.video`), cut
+from a **Pixabay video** (free to use; Pixabay does not allow hotlinking, so the clip is downloaded):
+a portrait clip for phones and a landscape one for wide screens in `public/covers/video/`. Look at
 `black-hole-anatomy`, `the-1952-london-smog-counting-the-dead` and `body-clock-nobel-2017-period-gene`
-for the feel: one slow movement that fits the subject, never busy.
+for the feel: one slow movement that fits the subject, never busy. Do not generate or animate
+anything yourself.
 
-- **From the cover photo** (always possible, no key): pick the moving layer that suits the photo and
-  run `pnpm tsx scripts/dev/motion-cover.ts <slug> --effect <effect> --preview`. Effects: `fog` (mist,
-  smoke, the past, mystery), `dust` (floating specks of light: labs, rooms, everyday scenes), `stars`
-  (night sky, space), `rain`, `snow` (cold, winter), `glow` (soft moving light: health, technology,
-  ideas, people), `shimmer` (rippling water or hot air: sea, rivers, heat, climate). The clip starts
-  on the photo itself, zooms in a little and back, and loops without a seam.
-- **From a stock clip** (when `PEXELS_API_KEY` or `PIXABAY_API_KEY` is set and a clip shows the
-  subject better than the photo can): `pnpm tsx scripts/dev/motion-cover.ts --search "<words>"`, then
-  `pnpm tsx scripts/dev/motion-cover.ts <slug> --clip <file URL> --credit Pexels --preview`
-  (`--start <s>` to skip into the clip). Pexels and Pixabay clips are free to use; the credit shows as
-  "Video: Pexels".
+1. Choose 1–3 words for something that moves on camera and fits the article (e.g. "ocean waves",
+   "clock gears", "smoke chimney", "neurons animation").
+2. Find a clip, used by no other article:
+   - with `PIXABAY_API_KEY` set: `pnpm tsx scripts/dev/motion-cover.ts --search "<words>"`;
+   - without it: scrape `https://pixabay.com/videos/search/<words>/` with Firecrawl (or WebFetch) and
+     open a clip page (`https://pixabay.com/videos/<name>-<id>/`).
+   Prefer calm clips longer than 7 seconds with one clear subject and room for the title; skip clips
+   with text, logos or faces as the subject.
+3. Run `pnpm tsx scripts/dev/motion-cover.ts <slug> <clip page URL> --preview` (`--start <s>` to skip
+   into the clip). With the key it downloads the clip, cuts both shapes, loops them with a half-second
+   cross-fade, credits "Video: Pixabay" and prints a preview image of three frames per clip: open it
+   and look. Without the key it records the clip in the article (`coverClip`) and
+   `finish-articles.yml` cuts it once the article is on `main`.
 
-Open the `--preview` image (three frames of each clip) and look at it: the subject must stay clear and
-the title area readable. If it does not, try another effect or clip. Each clip is about 0.3–0.5 MB.
+Each clip is about 0.3–0.6 MB.
 
 ## 7. Check and publish
 
 1. `pnpm tsx scripts/pipeline/standard-cli.ts --claude <new slugs>` must pass for every new article:
    at least 1,000 English words, 1–2 highlights and a source chip in every section, at least 3
    sources, all five languages, a glossary of 8+ terms per language, an Unsplash cover with its
-   landscape version, and a motion cover. Fix what it lists and run it again.
+   landscape version, and a motion cover (cut, or queued in `coverClip`). Fix what it lists and run
+   it again.
 2. `pnpm validate` must report no errors for the new files; the length warning for group 4 is
    1,000–1,800 words.
 3. `pnpm content` must succeed.
 4. Commit only the new `content/articles/*.json` and `public/covers/video/*.mp4` files, as
    `reader-writer <noreply@anthropic.com>`, message `content: daily written articles YYYY-MM-DD`.
 5. `git pull --rebase origin main`, then `git push origin HEAD:main`. `finish-articles.yml` then
-   fills any language or motion cover still missing (with Gemini and ffmpeg), and the site is deployed.
+   fills any language still missing (Gemini), cuts queued Pixabay clips, and the site is deployed.
 
 If an article keeps failing, drop it (its JSON and its clips) rather than publishing it broken.
 Finish with a short report: how many articles were published, their titles, categories, word counts
-and motion effects, which tool read the sources, and anything dropped and why.
+and Pixabay clips, which tool read the sources, and anything dropped and why.
