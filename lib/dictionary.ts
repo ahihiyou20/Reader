@@ -7,6 +7,8 @@ export interface Meaning {
   meaning: string;
   source: 'glossary' | 'wiktionary';
   url?: string;
+  /** Dictionary form looked up instead of the tapped inflected form. */
+  base?: string;
 }
 
 const isLetter = (ch: string | undefined) => !!ch && /[\p{L}\p{M}\p{N}'’-]/u.test(ch);
@@ -41,7 +43,8 @@ const NOISE = /^\(.*\)$|^(\d+|IPA|Ejemplo|Sinónimo|Sinónimos|Worttrennung|Auss
 
 /** First definition line in a Wiktionary plain-text extract (vi, fr, de, es editions). */
 export function firstDefinition(extract: string, word: string): string | null {
-  const de = extract.match(/Bedeutungen:\n\[1\]\s*(.+)/);
+  // A label such as "intransitiv:" may come before the first numbered sense.
+  const de = extract.match(/Bedeutungen:\n(?:[^\n[]*:\n)?\[1\]\s*(.+)/);
   if (de) return de[1].trim();
   const w = word.toLowerCase();
   let skipping = false;
@@ -64,24 +67,68 @@ export function firstDefinition(extract: string, word: string): string | null {
   return null;
 }
 
-async function wiktionary(word: string, lang: Lang): Promise<Meaning | null> {
+type RestDefinitions = Record<string, Array<{ partOfSpeech?: string; definitions: Array<{ definition: string }> }>>;
+/** Entries that are not a meaning a reader is after ("run": ISO language code). */
+const NOT_A_SENSE = /^(Symbol|Abbreviation|Initialism|Acronym|Letter|Proper noun)$/;
+
+const FORM_OF = 'form-of-definition';
+const restUrl = (word: string) => `https://en.wiktionary.org/api/rest_v1/page/definition/${encodeURIComponent(word)}`;
+
+async function rest(word: string): Promise<RestDefinitions | null> {
+  const res = await fetch(restUrl(word));
+  return res.ok ? ((await res.json()) as RestDefinitions) : null;
+}
+
+/**
+ * The dictionary form of an inflected word ("heated" → "heat", "mangé" → "manger", "ging" → "gehen",
+ * "comiendo" → "comer"), read from the English Wiktionary, which marks every inflected entry with a
+ * link to its lemma in all four languages. Undefined when the word is already a dictionary form.
+ */
+export function lemmaFrom(data: RestDefinitions | null, lang: Lang, word: string): { lemma: string; pos?: string } | undefined {
+  for (const entry of data?.[lang] ?? [])
+    for (const d of entry.definitions) {
+      if (!d.definition.includes(FORM_OF)) continue;
+      const link = d.definition.match(/form-of-definition-link[^>]*>(?:<[^>]+>)*<a [^>]*title="([^"]+)"/);
+      if (link && link[1].toLowerCase() !== word.toLowerCase()) return { lemma: link[1], pos: entry.partOfSpeech };
+    }
+  return undefined;
+}
+
+// Sub-senses come as a nested list after the main sense; the main sense is enough for a popover.
+const textOf = (html: string) =>
+  new DOMParser().parseFromString(html.replace(/<ol[\s\S]*$/, ''), 'text/html').body.textContent?.replace(/\s+/g, ' ').trim() ?? '';
+
+async function wiktionary(word: string, lang: Lang, data?: RestDefinitions | null, pos?: string): Promise<Meaning | null> {
   const url = `https://${lang}.wiktionary.org/wiki/${encodeURIComponent(word)}`;
   if (lang === 'en') {
     // The English edition has a structured endpoint; the others only give page text.
-    const res = await fetch(`https://en.wiktionary.org/api/rest_v1/page/definition/${encodeURIComponent(word)}`);
-    if (!res.ok) return null;
-    const data = (await res.json()) as Record<string, Array<{ definitions: Array<{ definition: string }> }>>;
-    const html = data.en?.flatMap((e) => e.definitions).find((d) => d.definition.replace(/<[^>]+>/g, '').trim())?.definition;
-    const meaning = html && new DOMParser().parseFromString(html, 'text/html').body.textContent?.trim();
+    const entries = ((data ?? (await rest(word)))?.en ?? []).filter((e) => !NOT_A_SENSE.test(e.partOfSpeech ?? ''));
+    // Same part of speech as the tapped form first: "heated" (verb) means the verb "heat", not the noun.
+    const defs = [...entries.filter((e) => e.partOfSpeech === pos), ...entries].flatMap((e) => e.definitions);
+    // Skip "simple past of …" lines: the reader wants what the word means.
+    const html = defs.find((d) => !d.definition.includes(FORM_OF) && d.definition.replace(/<[^>]+>/g, '').trim())?.definition;
+    const meaning = html && textOf(html);
     return meaning ? { term: word, meaning, source: 'wiktionary', url } : null;
   }
   const q = new URLSearchParams({ action: 'query', prop: 'extracts', explaintext: '1', redirects: '1', format: 'json', origin: '*', titles: word });
   const res = await fetch(`https://${lang}.wiktionary.org/w/api.php?${q}`);
   if (!res.ok) return null;
-  const data = (await res.json()) as { query?: { pages?: Record<string, { extract?: string }> } };
-  const extract = Object.values(data.query?.pages ?? {})[0]?.extract;
+  const json = (await res.json()) as { query?: { pages?: Record<string, { extract?: string }> } };
+  const extract = Object.values(json.query?.pages ?? {})[0]?.extract;
   const meaning = extract && firstDefinition(extract, word);
   return meaning ? { term: word, meaning, source: 'wiktionary', url } : null;
+}
+
+/** Look up the dictionary form of `word`; `base` records the change so the reader sees it. */
+async function define(word: string, lang: Lang): Promise<Meaning | null> {
+  // Vietnamese words do not inflect.
+  const data = lang === 'vi' ? null : await rest(word).catch(() => null);
+  const form = lemmaFrom(data, lang, word);
+  if (form) {
+    const m = await wiktionary(form.lemma, lang, undefined, form.pos).catch(() => null);
+    if (m) return { ...m, term: word, base: form.lemma };
+  }
+  return wiktionary(word, lang, lang === 'en' ? data : undefined);
 }
 
 const cache = new Map<string, Promise<Meaning | null>>();
@@ -97,8 +144,8 @@ export function lookup(candidates: string[], lang: Lang): Promise<Meaning | null
       key,
       (async () => {
         for (const c of candidates)
-          for (const form of new Set([c, c.toLowerCase()])) {
-            const m = await wiktionary(form, lang).catch(() => null);
+          for (const form of new Set([c.toLowerCase(), c])) {
+            const m = await define(form, lang).catch(() => null);
             if (m) return m;
           }
         return null;

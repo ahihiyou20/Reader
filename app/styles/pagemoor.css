@@ -1027,3 +1027,86 @@ html[data-stage='compact-portrait'] .wflow > button {
     transition: none;
   }
 }
+
+.wordpop-base {
+  color: var(--fg2);
+  font-style: italic;
+}
+
+/* Top bar icons answer the pointer: the bell swings on its hook when tapped, the compass turns. */
+.tb-ic .ic {
+  transition: transform var(--dur-medium) var(--ease-out);
+}
+.tb-ic.bell .ic {
+  transform-origin: 50% 8%;
+}
+.tb-ic.bell.ring .ic {
+  animation: bell-ring 650ms var(--ease-out);
+}
+@keyframes bell-ring {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(18deg);
+  }
+  32% {
+    transform: rotate(-15deg);
+  }
+  49% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-6deg);
+  }
+  83% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.tb-ic.compass:active .ic {
+  transform: rotate(-35deg);
+}
+@media (hover: hover) {
+  .tb-ic.bell:hover .ic {
+    transform: rotate(-12deg);
+  }
+  .tb-ic.compass:hover .ic {
+    transform: rotate(45deg);
+  }
+  .navbtn:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Notifications and messages: a sheet from the right edge on wide screens, not the whole screen. */
+html[data-stage$='landscape'] .panel.side {
+  left: auto;
+  width: min(420px, 100%);
+  border-left: 1px solid var(--stroke);
+  border-radius: 22px 0 0 22px;
+  box-shadow: -24px 0 60px rgba(0, 0, 0, 0.45);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tb-ic.bell.ring .ic {
+    animation: none;
+  }
+  .tb-ic .ic {
+    transition: none;
+  }
+}
+
+.sheet-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 44;
+  background: rgba(0, 0, 0, 0.4);
+  animation: shade-in var(--dur-medium) var(--ease-out) both;
+}
+@keyframes shade-in {
+  from {
+    opacity: 0;
+  }
+}

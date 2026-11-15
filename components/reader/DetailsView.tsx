@@ -46,6 +46,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const kp = useRef<HTMLDivElement>(null);
   const latestAnchor = useRef<ReadingAnchor | null>(null);
   const [focus, setFocus] = useState(0);
+  const wide = useUI((s) => s.stage.endsWith('landscape'));
   const [current, setCurrent] = useState(0);
 
   const readingProgress = useMotionValue(0);
@@ -293,7 +294,12 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
 
   const dots = useMemo(() => Math.min(blocks, MAX_DOTS), [blocks]);
   const dotOn = blocks <= MAX_DOTS ? current : Math.round((current / (blocks - 1)) * (MAX_DOTS - 1));
-  const depth = (k: number) => (k === focus ? ' on' : Math.abs(k - focus) === 1 ? ' near' : '');
+  // Wide screens show much more text at once, and the block crossing the reading line is often the
+  // second one while the first is still in full view: keep two blocks in focus there.
+  const second = wide ? (focus === 0 ? 1 : focus - 1) : focus;
+  const lo = Math.min(focus, second);
+  const hi = Math.max(focus, second);
+  const depth = (k: number) => (k >= lo && k <= hi ? ' on' : k === lo - 1 || k === hi + 1 ? ' near' : '');
   const setRef = (k: number) => (el: HTMLDivElement | null) => {
     secs.current[k] = el;
   };

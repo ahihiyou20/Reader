@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { firstDefinition, glossaryAt, wordAt } from '@/lib/dictionary';
+import { firstDefinition, glossaryAt, lemmaFrom, wordAt } from '@/lib/dictionary';
 
 describe('tap to understand', () => {
   const text = 'Past the event horizon, light cannot escape.';
@@ -23,8 +23,27 @@ describe('tap to understand', () => {
     expect(firstDefinition(fr, 'horizon')).toMatch(/^Ligne circulaire/);
     const de = '\n== Schwerkraft (Deutsch) ==\n\n=== Substantiv, f ===\n\nWorttrennung:\nSchwer·kraft\nBedeutungen:\n[1] Anziehungskraft in Folge der Gravitation\nHerkunft:\n';
     expect(firstDefinition(de, 'Schwerkraft')).toBe('Anziehungskraft in Folge der Gravitation');
+    expect(firstDefinition('\n== gehen (Deutsch) ==\n\nWorttrennung:\nge·hen, Präteritum: ging\nBedeutungen:\nintransitiv:\n[1] sich schreitend fortbewegen\n', 'gehen')).toBe('sich schreitend fortbewegen');
     const es = '\n== Español ==\n\n=== Etimología 1 ===\nDe aguja y el sufijo -ero.\n\n==== Sustantivo masculino ====\nagujero ¦ plural: agujeros\n\n1\nOrificio de forma aproximadamente circular.\nEjemplo: Es pues el caso.\n';
     expect(firstDefinition(es, 'agujero')).toBe('Orificio de forma aproximadamente circular.');
     expect(firstDefinition('\n== English ==\n\n=== Noun ===\nword\n', 'word')).toBe(null);
+  });
+});
+
+describe('dictionary form', () => {
+  const formOf = (lemma: string, lang: string) =>
+    `<span class="form-of-definition use-with-mention">simple <a href="/wiki/Appendix:Glossary#past_tense" title="Appendix:Glossary">past</a> of <span class="form-of-definition-link"><i class="Latn mention" lang="${lang}"><a rel="mw:WikiLink" href="/wiki/${lemma}#X" title="${lemma}">${lemma}</a></i></span></span>`;
+  it('follows an inflected form to its lemma in the reading language', () => {
+    const data = {
+      en: [{ definitions: [{ definition: formOf('heat', 'en') }] }, { definitions: [{ definition: 'Very angry.' }] }],
+      es: [{ definitions: [{ definition: formOf('comer', 'es') }] }],
+    };
+    expect(lemmaFrom(data, 'en', 'heated')?.lemma).toBe('heat');
+    expect(lemmaFrom(data, 'es', 'comiendo')?.lemma).toBe('comer');
+    expect(lemmaFrom(data, 'fr', 'heated')).toBeUndefined();
+  });
+  it('keeps a word that is already a dictionary form', () => {
+    expect(lemmaFrom({ en: [{ definitions: [{ definition: 'To make warm.' }] }] }, 'en', 'heat')).toBeUndefined();
+    expect(lemmaFrom(null, 'en', 'heat')).toBeUndefined();
   });
 });

@@ -417,13 +417,9 @@ html[data-stage='compact-landscape'] .ebottom .ctarow {
 
 html[data-stage='compact-landscape'] .ebottom .cta {
   height: 42px;
-  padding: 0 10px;
-  font-size: 12.5px;
+  padding: 0 16px;
+  font-size: 13px;
   gap: 5px;
   white-space: nowrap;
 }
 
-html[data-stage='compact-landscape'] .ebottom .ctaside {
-  width: 24px;
-  height: 42px;
-}

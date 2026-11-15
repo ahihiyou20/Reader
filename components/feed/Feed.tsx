@@ -286,7 +286,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     };
   }, []);
 
-  // ---------- Keyboard (NFR-04): instant, no animation ----------
+  // ---------- Keyboard: the same spring as a swipe (instant when the reader asks for reduced motion) ----------
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       const target = e.target as Element | null;
@@ -299,16 +299,16 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       const view = slug ? targetView(slug) : 0;
       if (e.key === 'ArrowDown' && view === 0) {
         e.preventDefault();
-        goToArticle(index + 1, 0, true);
+        goToArticle(index + 1);
       } else if (e.key === 'ArrowUp' && view === 0) {
         e.preventDefault();
-        goToArticle(index - 1, 0, true);
+        goToArticle(index - 1);
       } else if (e.key === 'ArrowRight' && slug) {
         e.preventDefault();
-        setArticleView(slug, view + 1, 0, true);
+        setArticleView(slug, view + 1);
       } else if (e.key === 'ArrowLeft' && slug) {
         e.preventDefault();
-        setArticleView(slug, view - 1, 0, true);
+        setArticleView(slug, view - 1);
       } else if ((e.key === 'l' || e.key === 'L') && slug) toggleLike(slug);
       else if ((e.key === 's' || e.key === 'S') && slug) toggleSave(slug);
     };

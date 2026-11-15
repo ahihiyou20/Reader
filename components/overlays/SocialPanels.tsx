@@ -10,7 +10,7 @@ export function MessagesPanel() {
   const open = useUI((s) => s.overlays.includes('messages'));
   const closeOverlay = useUI((s) => s.closeOverlay);
   return (
-    <Panel open={open} onClose={() => closeOverlay('messages')} label={t('messages')} className="msgs" closeIcon="none">
+    <Panel open={open} onClose={() => closeOverlay('messages')} label={t('messages')} className="msgs side" closeIcon="none">
       <div className="mhead">
         <button className="cb iconbtn" type="button" aria-label={t('back')} onClick={() => closeOverlay('messages')}>
           <svg className="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -42,7 +42,7 @@ export function NotificationsPanel() {
   const open = useUI((s) => s.overlays.includes('notifications'));
   const closeOverlay = useUI((s) => s.closeOverlay);
   return (
-    <Panel open={open} onClose={() => closeOverlay('notifications')} label={t('notifications')} title={t('notifications')}>
+    <Panel open={open} onClose={() => closeOverlay('notifications')} label={t('notifications')} title={t('notifications')} className="side">
       <div className="pbody">
         <div className="mempty" style={{ top: '38%' }}>
           <div className="mav" aria-hidden="true">

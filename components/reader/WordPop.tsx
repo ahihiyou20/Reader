@@ -95,7 +95,10 @@ function WordPop({ pop }: { pop: Pop }) {
   const r = pop.result;
   return (
     <div className="wordpop" role="dialog" aria-label={t('defineTitle', { word: pop.term })} style={style}>
-      <b>{pop.term}</b>
+      <b>
+        {pop.term}
+        {r?.base && <span className="wordpop-base"> → {r.base}</span>}
+      </b>
       <p aria-live="polite">{r === undefined ? t('defineLoading') : r === null ? t('defineNone') : r.meaning}</p>
       {r && (
         <span className="wordpop-src">

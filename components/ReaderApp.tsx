@@ -41,6 +41,7 @@ const NotificationsPanel = dynamic(() => import('./overlays/SocialPanels').then(
 /** Long enough to stay clear of loading and the first swipes; a reader's tap starts it sooner.
  *  The hidden panels are mounted at the same moment. */
 const BACKEND_IDLE_START_MS = 8000;
+const SIDE_SHEETS: Array<string | undefined> = ['notifications', 'messages'];
 const motionFeatures = () => import('@/lib/motion-features').then((m) => m.default);
 
 export interface PreviewData {
@@ -91,7 +92,9 @@ function Shell({
   // finger on a bar button starts loading that panel); opening one mounts them at once.
   const [panelsReady, setPanelsReady] = useState(false);
   const hasOverlay = useUI((s) => s.overlays.length > 0 || s.sheet !== null || s.langMenu);
-  const hasPanel = useUI((s) => s.overlays.length > 0);
+  // Notifications and messages open as a side sheet on wide screens: the feed stays visible beside it.
+  const sideSheet = useUI((s) => s.stage.endsWith('landscape') && SIDE_SHEETS.includes(s.overlays[s.overlays.length - 1]));
+  const hasPanel = useUI((s) => s.overlays.length > 0) && !sideSheet;
   const shouldMountDeferred = deferred || hasOverlay;
   const shouldMountPanels = panelsReady || hasOverlay;
   const previewItems = useRef<FeedItem[] | undefined>(undefined);
@@ -270,6 +273,7 @@ function Shell({
         {heart && <BigHeart key={heart.id} x={heart.x} y={heart.y} onDone={clearHeart} />}
         <BottomNav />
         <SideNav />
+        {sideSheet && <div className="sheet-shade" onPointerDown={() => useUI.getState().closeOverlay()} />}
         {shouldMountDeferred && (
           <>
             <KeyHints />

@@ -61,7 +61,16 @@ export function TopBar() {
         className="tb-ic bell"
         type="button"
         aria-label={t('notifications')}
-        onClick={() => openOverlay('notifications')}
+        onClick={(e) => {
+          preloadSocial();
+          const el = e.currentTarget;
+          // Restart the ring on every tap; the panel follows once the swing has started.
+          el.classList.remove('ring');
+          void el.offsetWidth;
+          el.classList.add('ring');
+          setTimeout(() => openOverlay('notifications'), prefersReducedMotion() ? 0 : 220);
+        }}
+        onAnimationEnd={(e) => e.currentTarget.classList.remove('ring')}
         onPointerDown={preloadSocial}
         onMouseEnter={preloadSocial}
         onFocus={preloadSocial}
@@ -69,7 +78,7 @@ export function TopBar() {
         <BellRing className="ic" aria-hidden="true" />
       </button>
       <button
-        className="tb-ic"
+        className="tb-ic compass"
         type="button"
         aria-label={t('explore')}
         onClick={() => openOverlay('explore')}
