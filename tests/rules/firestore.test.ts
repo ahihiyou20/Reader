@@ -262,3 +262,23 @@ describe('submissions (FR-25)', () => {
     await assertFails(addDoc(collection(alice(), 'submissions'), { ...post('alice'), status: 'published' }));
   });
 });
+
+describe('Pagemoor: five languages and reading data', () => {
+  const state = { topics: ['science'], signals: {}, history: [], collections: [], settings: { fontSize: 18, rate: 1, voice: {} }, updatedAt: serverTimestamp() };
+  it('a profile may use French, German or Spanish, not an unknown language', async () => {
+    await assertSucceeds(updateDoc(doc(alice(), 'users/alice'), { lang: 'fr' }));
+    await assertSucceeds(updateDoc(doc(alice(), 'users/alice'), { lang: 'es' }));
+    await assertFails(updateDoc(doc(alice(), 'users/alice'), { lang: 'xx' }));
+  });
+  it('a reader saves and reads their own reading data', async () => {
+    await assertSucceeds(setDoc(doc(alice(), 'users/alice/reading/state'), state));
+    await assertSucceeds(getDoc(doc(alice(), 'users/alice/reading/state')));
+  });
+  it('nobody else reads or writes it, and it keeps its shape', async () => {
+    await assertFails(getDoc(doc(guest(), 'users/alice/reading/state')));
+    await assertFails(setDoc(doc(guest(), 'users/alice/reading/state'), state));
+    await assertFails(setDoc(doc(alice(), 'users/alice/reading/other'), state));
+    await assertFails(setDoc(doc(alice(), 'users/alice/reading/state'), { ...state, extra: 1 }));
+    await assertFails(setDoc(doc(alice(), 'users/alice/reading/state'), { ...state, history: Array.from({ length: 301 }, (_, i) => ({ slug: `a${i}` })) }));
+  });
+});
