@@ -11,6 +11,7 @@ import { citedIds } from '../../lib/content/markup';
 import { type Issue, totalWords, validateArticle } from '../../lib/content/validate';
 import { readPage } from './adapters/readability';
 import { applyWritten, enrich, fromText, summarize } from './compose';
+import { translateAll } from './translate';
 import { findCovers, remotePlaceholder } from './cover';
 import { MODEL, hasGemini } from './gemini';
 import { importSource } from './import';
@@ -200,6 +201,14 @@ export async function createArticle(input: CreateInput): Promise<Created> {
   else throw new Error('Give a link or paste the text');
 
   const { a, ai } = made;
+  if (hasGemini()) {
+    try {
+      ai.push(...(await translateAll(a)));
+    } catch (e) {
+      // The article is still worth publishing in the languages it has; the translate job fills the rest.
+      console.warn(`${a.slug}: translation incomplete (${(e as Error).message})`);
+    }
+  }
   a.status = 'published';
   a.publishAt = input.publishAt ?? new Date().toISOString();
   // Merging the bot's pull request is the editor's review of the Gemini-written parts.
