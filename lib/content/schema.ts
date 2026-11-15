@@ -16,6 +16,8 @@ export const coverSchema = z.object({
   license: nonEmpty,
   sourceUrl: z.string().optional(),
   unsplashDownloadLocation: z.string().optional(),
+  wide: z.string().optional(),
+  video: z.object({ url: nonEmpty, wide: z.string().optional(), credit: z.string().optional() }).optional(),
 });
 
 export const articleSourceSchema = z.object({

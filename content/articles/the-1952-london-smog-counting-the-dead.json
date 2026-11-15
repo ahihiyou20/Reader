@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "The 1952 London smog: 4,000 deaths, or as many as 12,000",
-    "vi": "Sương khói London 1952: 4.000 ca tử vong, hay tới 12.000"
+    "vi": "Sương khói London 1952: 4.000 ca tử vong, hay tới 12.000",
+    "fr": "Le smog londonien de 1952 : 4 000 morts, ou jusqu’à 12 000",
+    "de": "Der Londoner Smog von 1952: 4.000 Todesopfer oder bis zu 12.000",
+    "es": "El esmog de Londres de 1952: 4000 muertes o hasta 12 000"
   },
   "hook": {
     "en": "In December 1952, a severe air pollution event settled over London. Government medical reports estimated that up to 4,000 people died as a direct result, while modern estimates put the toll at 10,000 to 12,000. The gap between those figures is part of the story, because a death toll depends on what is counted, and when.",
-    "vi": "Tháng 12 năm 1952, một đợt ô nhiễm không khí nghiêm trọng bao phủ London. Các báo cáo y tế của chính phủ ước tính có tới 4.000 người chết do hệ quả trực tiếp, còn các ước tính hiện đại đưa con số lên 10.000 đến 12.000. Khoảng cách giữa các con số này là một phần của câu chuyện, vì số ca tử vong phụ thuộc vào điều gì được đếm, và đếm vào lúc nào."
+    "vi": "Tháng 12 năm 1952, một đợt ô nhiễm không khí nghiêm trọng bao phủ London. Các báo cáo y tế của chính phủ ước tính có tới 4.000 người chết do hệ quả trực tiếp, còn các ước tính hiện đại đưa con số lên 10.000 đến 12.000. Khoảng cách giữa các con số này là một phần của câu chuyện, vì số ca tử vong phụ thuộc vào điều gì được đếm, và đếm vào lúc nào.",
+    "fr": "En décembre 1952, un grave épisode de pollution atmosphérique s’est abattu sur Londres. Les rapports médicaux officiels ont estimé que jusqu’à 4 000 personnes étaient mortes des conséquences directes du phénomène, tandis que les estimations modernes situent le bilan entre 10 000 et 12 000 décès. L’écart entre ces chiffres fait partie intégrante de l’histoire, car un bilan de mortalité dépend de ce qui est comptabilisé, et à quel moment.",
+    "de": "Im Dezember 1952 legte sich eine schwere Luftverschmutzung über London. Amtliche medizinische Berichte schätzten damals, dass bis zu 4.000 Menschen unmittelbar infolgedessen starben, während neuere Schätzungen von 10.000 bis 12.000 Todesopfern ausgehen. Die Diskrepanz zwischen diesen Zahlen ist Teil der Geschichte, denn eine Opferzahl hängt immer davon ab, was erfasst wird und zu welchem Zeitpunkt.",
+    "es": "En diciembre de 1952, un grave episodio de contaminación atmosférica cubrió Londres. Los informes médicos del gobierno calcularon que hasta 4000 personas murieron como consecuencia directa, mientras que las estimaciones modernas sitúan la cifra entre 10 000 y 12 000. La discrepancia entre ambos datos forma parte de la historia, ya que el balance de víctimas mortales depende de qué se cuenta y cuándo."
   },
   "sections": [
     {
       "heading_en": "A smog that cut visibility",
       "heading_vi": "Một đợt sương khói làm giảm tầm nhìn",
       "body_en": "The Great Smog was a severe air pollution event that affected London, England, in December 1952 {great-smog-wiki}. The smog caused major disruption by reducing visibility, which affected travel and daily life across the city {simple-smog}.",
-      "body_vi": "Đợt Sương khói Lớn là một đợt ô nhiễm không khí nghiêm trọng ảnh hưởng đến London, nước Anh, vào tháng 12 năm 1952 {great-smog-wiki}. Sương khói gây gián đoạn lớn vì làm giảm tầm nhìn, ảnh hưởng đến đi lại và sinh hoạt hằng ngày trong thành phố {simple-smog}."
+      "body_vi": "Đợt Sương khói Lớn là một đợt ô nhiễm không khí nghiêm trọng ảnh hưởng đến London, nước Anh, vào tháng 12 năm 1952 {great-smog-wiki}. Sương khói gây gián đoạn lớn vì làm giảm tầm nhìn, ảnh hưởng đến đi lại và sinh hoạt hằng ngày trong thành phố {simple-smog}.",
+      "heading_fr": "Un smog qui réduisit la visibilité",
+      "body_fr": "Le Grand Smog fut un grave épisode de pollution atmosphérique qui a frappé Londres, en Angleterre, en décembre 1952 {great-smog-wiki}. Ce smog a provoqué d’importantes perturbations en réduisant la visibilité, ce qui a paralysé les transports et la vie quotidienne à travers toute la ville {simple-smog}.",
+      "heading_de": "Ein Smog, der die Sicht nahm",
+      "body_de": "Der Große Smog war ein schweres Luftverschmutzungsereignis, das London in England im Dezember 1952 heimsuchte {great-smog-wiki}. Der Smog führte zu massiven Beeinträchtigungen, da die drastisch reduzierte Sicht den Verkehr und das alltägliche Leben in der gesamten Stadt lahmlegte {simple-smog}.",
+      "heading_es": "Un esmog que redujo la visibilidad",
+      "body_es": "El Gran Esmog fue un grave episodio de contaminación atmosférica que afectó a Londres, Inglaterra, en diciembre de 1952 {great-smog-wiki}. La niebla contaminante causó grandes trastornos al reducir la visibilidad, lo que perjudicó el transporte y la vida cotidiana en toda la ciudad {simple-smog}."
     },
     {
       "heading_en": "What the air did to the lungs",
       "heading_vi": "Không khí đã làm tổn thương phổi như thế nào",
       "body_en": "Most of the deaths were caused by respiratory tract infections, from hypoxia, and from mechanical obstruction of the air passages by catarrh and pus arising from lung infections {great-smog-wiki}. Government medical reports in the weeks after the event also recorded about 100,000 people made ill by the smog's effects on the respiratory tract {great-smog-wiki}.",
-      "body_vi": "Phần lớn các ca tử vong do nhiễm trùng đường hô hấp, do thiếu oxy, và do đường thở bị tắc cơ học bởi đờm và mủ sinh ra từ nhiễm trùng phổi {great-smog-wiki}. Các báo cáo y tế của chính phủ trong những tuần sau sự kiện cũng ghi nhận khoảng 100.000 người bị bệnh do tác động của sương khói lên đường hô hấp {great-smog-wiki}."
+      "body_vi": "Phần lớn các ca tử vong do nhiễm trùng đường hô hấp, do thiếu oxy, và do đường thở bị tắc cơ học bởi đờm và mủ sinh ra từ nhiễm trùng phổi {great-smog-wiki}. Các báo cáo y tế của chính phủ trong những tuần sau sự kiện cũng ghi nhận khoảng 100.000 người bị bệnh do tác động của sương khói lên đường hô hấp {great-smog-wiki}.",
+      "heading_fr": "L’impact de l’air sur les poumons",
+      "body_fr": "La plupart des décès ont été causés par des infections des voies respiratoires, par l’hypoxie et par l’obstruction mécanique des voies aériennes due aux catarrhes et au pus résultant d’infections pulmonaires {great-smog-wiki}. Les rapports médicaux gouvernementaux rédigés dans les semaines suivant la catastrophe ont également recensé environ 100 000 personnes rendues malades par les effets du smog sur l’appareil respiratoire {great-smog-wiki}.",
+      "heading_de": "Was die Luft in den Lungen anrichtete",
+      "body_de": "Die meisten Todesfälle wurden durch Infektionen der Atemwege, durch Hypoxie sowie durch die mechanische Verlegung der Atemwege infolge von Katarrh und Eiter aus Lungenentzündungen verursacht {great-smog-wiki}. Amtliche medizinische Berichte in den Wochen nach dem Ereignis verzeichneten zudem rund 100.000 Menschen, die durch die Auswirkungen des Smogs auf die Atemwege erkrankten {great-smog-wiki}.",
+      "heading_es": "Los efectos del aire en los pulmones",
+      "body_es": "La mayoría de las muertes fueron causadas por infecciones de las vías respiratorias, hipoxia y la obstrucción mecánica de las vías aéreas debido al catarro y al pus derivados de infecciones pulmonares {great-smog-wiki}. Los informes médicos gubernamentales de las semanas posteriores al suceso también registraron a unas 100 000 personas enfermas por los efectos del esmog en las vías respiratorias {great-smog-wiki}."
     },
     {
       "heading_en": "Two counts of the dead",
       "heading_vi": "Hai cách đếm số người chết",
       "body_en": "The government estimate, made in the weeks after the event, put the number of direct deaths at up to 4,000 {great-smog-wiki}. A modern estimate puts the figure at 10,000 to 12,000 {great-smog-wiki}. The two numbers differ by a factor of about three. The sources give both numbers without reconciling them, and the difference is a reminder that a death toll for a historical event is an estimate, with its own assumptions.",
-      "body_vi": "Ước tính của chính phủ, đưa ra vài tuần sau sự kiện, cho rằng số ca tử vong trực tiếp có thể tới 4.000 {great-smog-wiki}. Một ước tính hiện đại đưa con số lên 10.000 đến 12.000 {great-smog-wiki}. Hai con số chênh nhau khoảng ba lần. Các nguồn đưa ra cả hai con số mà không đối chiếu chúng, và sự chênh lệch này là lời nhắc rõ ràng nhất rằng con số tử vong của một sự kiện lịch sử là một ước tính, với những giả định riêng."
+      "body_vi": "Ước tính của chính phủ, đưa ra vài tuần sau sự kiện, cho rằng số ca tử vong trực tiếp có thể tới 4.000 {great-smog-wiki}. Một ước tính hiện đại đưa con số lên 10.000 đến 12.000 {great-smog-wiki}. Hai con số chênh nhau khoảng ba lần. Các nguồn đưa ra cả hai con số mà không đối chiếu chúng, và sự chênh lệch này là lời nhắc rõ ràng nhất rằng con số tử vong của một sự kiện lịch sử là một ước tính, với những giả định riêng.",
+      "heading_fr": "Deux décomptes des victimes",
+      "body_fr": "L’estimation gouvernementale, établie dans les semaines consécutives à l’événement, évaluait le nombre de décès directs à un maximum de 4 000 {great-smog-wiki}. Une estimation moderne porte ce chiffre à 10 000 voire 12 000 {great-smog-wiki}. Ces deux données diffèrent d’un facteur d’environ trois. Les sources rapportent les deux nombres sans les réconcilier, et cet écart rappelle que le bilan humain d’un événement historique reste une estimation reposant sur ses propres hypothèses.",
+      "heading_de": "Zwei Zählungen der Toten",
+      "body_de": "Die staatliche Schätzung aus den Wochen unmittelbar nach dem Ereignis bezifferte die Zahl der direkten Todesopfer auf bis zu 4.000 {great-smog-wiki}. Eine moderne Schätzung setzt die Zahl hingegen bei 10.000 bis 12.000 an {great-smog-wiki}. Die beiden Werte weichen um etwa das Dreifache voneinander ab. Die Quellen nennen beide Zahlen, ohne sie miteinander in Einklang zu bringen, und diese Differenz erinnert daran, dass die Opferzahl eines historischen Ereignisses eine Schätzung mit jeweils eigenen Annahmen ist.",
+      "heading_es": "Dos recuentos de víctimas",
+      "body_es": "La estimación del gobierno, realizada en las semanas posteriores al suceso, situó el número de muertes directas en hasta 4000 {great-smog-wiki}. Una estimación moderna eleva la cifra a entre 10 000 y 12 000 {great-smog-wiki}. Ambos números difieren por un factor aproximado de tres. Las fuentes presentan ambas cifras sin conciliar, y la diferencia recuerda que el balance de víctimas de un acontecimiento histórico es una estimación sujeta a sus propias premisas."
     },
     {
       "heading_en": "Ten years later, a smaller smog",
       "heading_vi": "Mười năm sau, một đợt sương khói nhỏ hơn",
       "body_en": "A second episode followed in 1962, about ten years after the Great Smog. That event is estimated to have caused between 300 and 700 deaths {smog-1962}. The 1962 article describes the earlier event as one in which serious air pollution had killed as many as 12,000 people {smog-1962}. The comparison shows how far the toll could vary between two episodes in the same city, and the sources here do not explain the difference in detail.",
-      "body_vi": "Một đợt thứ hai xảy ra năm 1962, khoảng mười năm sau Sương khói Lớn. Đợt đó được ước tính gây ra từ 300 đến 700 ca tử vong {smog-1962}. Bài viết về năm 1962 mô tả đợt trước là một sự kiện ô nhiễm nghiêm trọng đã giết tới 12.000 người {smog-1962}. So sánh này cho thấy số tử vong có thể chênh lệch lớn giữa hai đợt ở cùng một thành phố, và các nguồn ở đây không giải thích chi tiết sự khác biệt đó."
+      "body_vi": "Một đợt thứ hai xảy ra năm 1962, khoảng mười năm sau Sương khói Lớn. Đợt đó được ước tính gây ra từ 300 đến 700 ca tử vong {smog-1962}. Bài viết về năm 1962 mô tả đợt trước là một sự kiện ô nhiễm nghiêm trọng đã giết tới 12.000 người {smog-1962}. So sánh này cho thấy số tử vong có thể chênh lệch lớn giữa hai đợt ở cùng một thành phố, và các nguồn ở đây không giải thích chi tiết sự khác biệt đó.",
+      "heading_fr": "Dix ans plus tard, un smog de moindre ampleur",
+      "body_fr": "Un second épisode s’est produit en 1962, une dizaine d’années après le Grand Smog. Selon les estimations, cet événement aurait causé entre 300 et 700 décès {smog-1962}. L’article de 1962 décrit l’événement antérieur comme une crise où la pollution sévère avait tué jusqu’à 12 000 personnes {smog-1962}. Cette comparaison illustre à quel point le bilan pouvait varier entre deux épisodes survenus dans une même ville, sans que les sources n’expliquent ici cette divergence en détail.",
+      "heading_de": "Zehn Jahre später: ein kleinerer Smog",
+      "body_de": "Eine zweite Episode folgte 1962, etwa zehn Jahre nach dem Großen Smog. Diesem Ereignis fielen Schätzungen zufolge zwischen 300 und 700 Menschen zum Opfer {smog-1962}. Der Artikel von 1962 beschreibt das frühere Ereignis als eine Katastrophe, bei der die schwere Luftverschmutzung bis zu 12.000 Menschen getötet hatte {smog-1962}. Der Vergleich verdeutlicht, wie stark die Opferzahlen zwischen zwei Episoden in derselben Stadt variieren konnten, wobei die vorliegenden Quellen den Unterschied nicht im Detail erklären.",
+      "heading_es": "Diez años después, un esmog menor",
+      "body_es": "En 1962 tuvo lugar un segundo episodio, unos diez años después del Gran Esmog. Se calcula que dicho suceso causó entre 300 y 700 muertes {smog-1962}. El artículo de 1962 describe el evento anterior como uno en el que la grave contaminación atmosférica había provocado la muerte de hasta 12 000 personas {smog-1962}. La comparación demuestra cuánto podía variar el balance de víctimas mortales entre dos episodios en una misma ciudad, y las fuentes citadas no explican en detalle esa diferencia."
     },
     {
       "heading_en": "Reading a death toll",
       "heading_vi": "Đọc một con số tử vong",
       "body_en": "A death toll can mean a direct count, a modelled estimate, or a figure linked to the event without being caused only by it. When you meet a number for a historical disaster, [g:ask what it counts, who produced it, and when, because a figure from the first weeks may differ from one made decades later].",
-      "body_vi": "Một con số tử vong có thể là số đếm trực tiếp, ước tính theo mô hình, hoặc một con số liên quan đến sự kiện mà không hoàn toàn do sự kiện gây ra. Khi gặp một con số về thảm họa lịch sử, [g:hãy hỏi nó đếm cái gì, ai tạo ra nó, và vào thời điểm nào, vì con số từ vài tuần đầu có thể khác con số được đưa ra nhiều thập kỷ sau]."
+      "body_vi": "Một con số tử vong có thể là số đếm trực tiếp, ước tính theo mô hình, hoặc một con số liên quan đến sự kiện mà không hoàn toàn do sự kiện gây ra. Khi gặp một con số về thảm họa lịch sử, [g:hãy hỏi nó đếm cái gì, ai tạo ra nó, và vào thời điểm nào, vì con số từ vài tuần đầu có thể khác con số được đưa ra nhiều thập kỷ sau].",
+      "heading_fr": "Comment interpréter un bilan de mortalité",
+      "body_fr": "Un bilan de mortalité peut désigner un décompte direct, une estimation modélisée ou un chiffre imputé à l’événement sans en découler exclusivement. Face au bilan chiffré d’une catastrophe historique, [g:demandez-vous ce qu’il comptabilise, qui l’a produit et quand, car un chiffre des premières semaines peut différer d’un autre calculé des décennies plus tard].",
+      "heading_de": "Wie man Opferzahlen liest",
+      "body_de": "Eine Opferzahl kann eine direkte Zählung, eine modellierte Schätzung oder ein statistischer Wert sein, der mit dem Ereignis zusammenhängt, ohne allein dadurch verursacht worden zu sein. Wenn du auf eine Zahl zu einer historischen Katastrophe stößt, [g:frage dich, was sie erfasst, wer sie ermittelt hat und wann, denn ein Wert aus den ersten Wochen kann sich von einer Jahrzehnte später erstellten Schätzung unterscheiden].",
+      "heading_es": "Cómo interpretar un balance de víctimas",
+      "body_es": "El balance de víctimas mortales puede referirse a un recuento directo, a una estimación modelizada o a una cifra vinculada al suceso sin que este haya sido su causa exclusiva. Al encontrarse con una cifra sobre una catástrofe histórica, [g:pregúntese qué cuenta, quién la elaboró y cuándo, ya que un dato de las primeras semanas puede diferir de otro obtenido décadas después]."
     },
     {
       "heading_en": "What the sources cannot settle",
       "heading_vi": "Điều các nguồn không thể kết luận",
       "body_en": "The sources give the figures and dates, but they do not settle which estimate is closer to the truth, and they do not quantify how much each factor contributed to the toll. Anyone writing about the event should say both numbers and explain the gap, rather than choosing one as the answer.",
-      "body_vi": "Các nguồn đưa ra con số và mốc thời gian, nhưng không xác định con số nào gần sự thật hơn, và cũng không định lượng được mỗi yếu tố đã góp phần vào tổng số tử vong bao nhiêu. Ai viết về sự kiện này nên nêu cả hai con số và giải thích khoảng cách, thay vì chọn một con số làm đáp án."
+      "body_vi": "Các nguồn đưa ra con số và mốc thời gian, nhưng không xác định con số nào gần sự thật hơn, và cũng không định lượng được mỗi yếu tố đã góp phần vào tổng số tử vong bao nhiêu. Ai viết về sự kiện này nên nêu cả hai con số và giải thích khoảng cách, thay vì chọn một con số làm đáp án.",
+      "heading_fr": "Ce que les sources ne peuvent trancher",
+      "body_fr": "Les sources fournissent les chiffres et les dates, mais elles ne tranchent pas sur l’estimation la plus proche de la vérité, ni ne quantifient la contribution exacte de chaque facteur au bilan. Toute personne relatant cet événement devrait mentionner les deux chiffres et expliciter leur écart, plutôt que d’en retenir un seul comme réponse absolue.",
+      "heading_de": "Was die Quellen nicht klären können",
+      "body_de": "Die Quellen liefern zwar Zahlen und Daten, entscheiden jedoch nicht, welche Schätzung der Wahrheit näher kommt, und sie beziffern nicht, wie stark die einzelnen Faktoren zur Zahl der Toten beigetragen haben. Wer über das Ereignis schreibt, sollte beide Zahlen nennen und die Differenz erklären, anstatt sich für eine einzige Angabe als scheinbar feststehende Antwort zu entscheiden.",
+      "heading_es": "Lo que las fuentes no pueden resolver",
+      "body_es": "Las fuentes aportan las cifras y las fechas, pero no resuelven qué estimación se aproxima más a la verdad ni cuantifican en qué medida contribuyó cada factor al recuento de víctimas. Quien escriba sobre este suceso debería indicar ambos números y explicar la diferencia, en lugar de elegir uno solo como respuesta definitiva."
     }
   ],
   "keyPoint": {
     "en": "The 1952 London smog is recorded with a government count of up to 4,000 deaths and modern estimates of 10,000 to 12,000. The gap shows that a historical death toll depends on what was counted, and when, so both numbers should be stated.",
-    "vi": "Sương khói London năm 1952 được ghi nhận với con số chính phủ đếm tới 4.000 ca tử vong và các ước tính hiện đại từ 10.000 đến 12.000. Khoảng cách cho thấy con số tử vong lịch sử phụ thuộc vào điều được đếm và đếm vào lúc nào, nên cần nêu cả hai con số."
+    "vi": "Sương khói London năm 1952 được ghi nhận với con số chính phủ đếm tới 4.000 ca tử vong và các ước tính hiện đại từ 10.000 đến 12.000. Khoảng cách cho thấy con số tử vong lịch sử phụ thuộc vào điều được đếm và đếm vào lúc nào, nên cần nêu cả hai con số.",
+    "fr": "Le smog de Londres de 1952 est consigné avec un décompte officiel atteignant 4 000 décès et des estimations modernes de 10 000 à 12 000 morts. Cet écart montre que le bilan d’un événement historique dépend de ce qui a été comptabilisé et à quelle date ; les deux chiffres doivent donc être mentionnés conjointement.",
+    "de": "Für den Londoner Smog von 1952 stehen eine behördliche Zählung von bis zu 4.000 Todesopfern und neuere Schätzungen von 10.000 bis 12.000 einander gegenüber. Diese Diskrepanz zeigt, dass historische Opferzahlen davon abhängen, was und wann gezählt wurde – daher sollten stets beide Zahlen genannt werden.",
+    "es": "El esmog de Londres de 1952 consta en los registros con un balance gubernamental de hasta 4000 fallecidos y estimaciones modernas de 10 000 a 12 000. Esta discrepancia demuestra que el número de víctimas de un hecho histórico depende de qué se contó y cuándo, por lo que deben señalarse ambas cifras."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Viết ra hai con số tử vong của đợt sương khói 1952, và nêu trong một câu mỗi con số đếm cái gì.",
       "Tìm một chỉ số chất lượng không khí của khu vực bạn hôm nay, và ghi lại chất ô nhiễm nào được đo và trạm đo ở đâu.",
       "Lần tới khi thấy số tử vong của một sự kiện trong quá khứ, hãy hỏi nó là số đếm trực tiếp hay ước tính, và ai đưa ra nó."
+    ],
+    "fr": [
+      "Notez les deux bilans de mortalité du smog de 1952 et formulez en une phrase ce que chacun d’eux comptabilise.",
+      "Consultez un relevé de la qualité de l’air pour votre région aujourd’hui, en notant le polluant mesuré et l’emplacement de la station de mesure.",
+      "La prochaine fois que vous rencontrerez le bilan d’un événement passé, demandez-vous s’il s’agit d’un décompte direct ou d’une estimation, et par qui il a été établi."
+    ],
+    "de": [
+      "Notiere dir die beiden Opferzahlen für den Smog von 1952 und halte in einem Satz fest, was die jeweilige Zahl erfasst.",
+      "Finde einen aktuellen Luftqualitätsmesswert für deine Region und notiere, welcher Schadstoff gemessen wird und wo die Messstation steht.",
+      "Wenn du das nächste Mal eine Opferzahl für ein vergangenes Ereignis siehst, frage dich, ob es sich um eine direkte Zählung oder eine Schätzung handelt und von wem sie stammt."
+    ],
+    "es": [
+      "Anote las dos cifras de víctimas del esmog de 1952 y defina en una oración qué contabiliza cada una.",
+      "Consulte una medición actual de la calidad del aire en su zona, indicando qué contaminante registra y dónde se ubica la estación.",
+      "La próxima vez que vea una cifra de fallecidos de un acontecimiento pasado, pregúntese si es un recuento directo o una estimación, y quién la calculó."
     ]
   },
   "references": [
@@ -102,8 +162,88 @@
     "provider": "unsplash",
     "author": "Dmitrii Vaccinium",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/Q47eNv_UvfM"
+    "sourceUrl": "https://unsplash.com/photos/Q47eNv_UvfM",
+    "wide": "/covers/the-1952-london-smog-counting-the-dead-wide.webp",
+    "video": {
+      "url": "/covers/video/the-1952-london-smog-counting-the-dead.mp4",
+      "wide": "/covers/video/the-1952-london-smog-counting-the-dead-wide.mp4",
+      "credit": "Pixabay"
+    }
   },
   "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABwBACdASoQABwAPu1kqk4ppaQiMAgBMB2JZACdEf/gu/tUnOpCQe7i4ea0AAD+8SOY+sfeB8NEsb7ALz9uQTremB0igmR8rg9IbofpVi+lGUagljHxDr9lUB1nSgBxfMH7AFJ6Udjk2HtFEqzFtgdKQzFZX8yNKwmMLuWflYghHgAA",
-  "dominant": "#6f5b4f"
+  "dominant": "#6f5b4f",
+  "glossary": {
+    "en": {
+      "great smog": "The severe, deadly air pollution disaster that blanketed London in December 1952.",
+      "smog": "Dense, polluted fog formed by smoke and atmospheric pollutants trapped near the ground.",
+      "hypoxia": "A medical condition where the body or its tissues are deprived of adequate oxygen supply.",
+      "mechanical obstruction": "A physical blockage that prevents air from passing freely through the breathing airways.",
+      "respiratory tract": "The system of organs and passages responsible for breathing, including the nose, throat, and lungs.",
+      "catarrh": "Excessive buildup of thick mucus in the airways caused by inflammation or infection.",
+      "pus": "Thick, yellowish fluid produced by infected tissue that accumulated and clogged victims' airways.",
+      "death toll": "The total number of deaths resulting directly or indirectly from a disaster or event.",
+      "direct count": "A tally of deaths directly recorded and verified by authorities immediately following an event.",
+      "modelled estimate": "A statistical calculation of casualties derived from mathematical models rather than directly observed individual counts."
+    },
+    "vi": {
+      "sương khói lớn": "Thảm họa ô nhiễm không khí cực kỳ nghiêm trọng bao phủ London vào tháng 12 năm 1952.",
+      "sương khói": "Hiện tượng ô nhiễm kết hợp khói bụi và sương mù, làm giảm tầm nhìn nghiêm trọng.",
+      "đường hô hấp": "Hệ thống cơ quan giúp hít thở không khí, bao gồm đường thở và phổi.",
+      "thiếu oxy": "Tình trạng cơ thể hoặc mô không nhận đủ lượng oxy cần thiết để duy trì sự sống.",
+      "đường thở": "Các ống dẫn khí từ mũi, miệng vào phổi để thực hiện quá trình hô hấp.",
+      "tắc cơ học": "Sự bít tắc đường thở do vật chất như đờm mủ chặn lại, không phải do co thắt.",
+      "nhiễm trùng phổi": "Tình trạng các mô phổi bị viêm nhiễm do các tác nhân gây hại xâm nhập.",
+      "giả định": "Các tiền đề hoặc điều kiện chưa chắc chắn được đặt ra làm cơ sở tính toán.",
+      "mô hình": "Phương pháp toán học hoặc thống kê dùng để mô phỏng và ước tính số liệu.",
+      "định lượng": "Xác định rõ mức độ hoặc số lượng đóng góp cụ thể bằng các con số đo lường."
+    },
+    "fr": {
+      "smog": "Brume épaisse et polluante résultant d'un mélange de brouillard et d'émissions industrielles ou urbaines.",
+      "grand smog": "Épisode historique de pollution atmosphérique extrême survenu à Londres en décembre 1952.",
+      "pollution atmosphérique": "Présence dans l'atmosphère de gaz ou de particules toxiques nuisibles à la santé.",
+      "hypoxie": "Oxygénation insuffisante des tissus de l'organisme, pouvant entraîner des défaillances graves.",
+      "obstruction mécanique": "Blocage physique des voies aériennes empêchant l'air de pénétrer convenablement dans les poumons.",
+      "catarrhes": "Inflammation des muqueuses respiratoires accompagnée d'une hypersécrétion de mucus liquide.",
+      "voies respiratoires": "Ensemble des conduits anatomiques acheminant l'air inspiré vers les alvéoles pulmonaires.",
+      "bilan de mortalité": "Nombre total de décès attribués directement ou indirectement à un événement ou sinistre.",
+      "estimation modélisée": "Calcul statistique fondé sur des modèles mathématiques et non sur un recensement exhaustif.",
+      "décompte direct": "Recensement nominatif et exhaustif des victimes fondé sur des constatations matérielles immédiates."
+    },
+    "de": {
+      "smog": "Dichte, gesundheitsschädliche Mischung aus Rauch, Abgasen und Nebel über Ballungsräumen.",
+      "große smog": "Historisches extremes Luftverschmutzungsereignis im Dezember 1952 in London.",
+      "hypoxie": "Sauerstoffmangel im Gewebe oder im gesamten Körper, der lebenswichtige Organfunktionen beeinträchtigt.",
+      "mechanische verlegung": "Physische Verstopfung oder Blockade der Atemwege, meist durch Schleim oder Sekrete.",
+      "katarrh": "Schleimhautentzündung der Atemwege mit erhöhter Sekretabsonderung.",
+      "lungenentzündungen": "Akute Entzündungen des Lungengewebes, meist durch Infektionen ausgelöst.",
+      "opferzahl": "Erfasste oder geschätzte Gesamtzahl der Todesfälle infolge einer Katastrophe.",
+      "modellierte schätzung": "Statistische Hochrechnung von Opferzahlen auf Basis mathematischer Modelle statt direkter Zählung.",
+      "luftverschmutzung": "Verunreinigung der Atemluft durch Ruß, Feinstaub und giftige Gase.",
+      "schadstoff": "Substanz in der Umwelt, die schädliche Auswirkungen auf Lebewesen hat.",
+      "messstation": "Anlage zur Überwachung und Erfassung von Umweltwerten wie der Luftqualität."
+    },
+    "es": {
+      "esmog": "Niebla cargada de humo y partículas contaminantes que reduce la visibilidad y perjudica la salud.",
+      "contaminación atmosférica": "Presencia de sustancias nocivas en el aire que dañan la salud de las personas.",
+      "gran esmog": "Grave episodio de niebla tóxica que afectó a Londres en diciembre de 1952.",
+      "vías respiratorias": "Conductos anatómicos que transportan el aire hacia y desde los pulmones.",
+      "hipoxia": "Deficiencia o falta grave de oxígeno en los tejidos y órganos del cuerpo.",
+      "obstrucción mecánica": "Bloqueo físico que impide el libre paso del aire por los conductos respiratorios.",
+      "catarro": "Secreción densa de moco originada por la inflamación de las vías respiratorias.",
+      "pus": "Líquido espeso de color amarillento generado por el organismo durante una infección.",
+      "balance de víctimas": "Cálculo o cómputo del número de personas fallecidas a causa de una catástrofe.",
+      "estimación modelizada": "Cálculo fundamentado en proyecciones y modelos matemáticos a partir de datos disponibles."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": false,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

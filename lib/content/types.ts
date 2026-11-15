@@ -60,6 +60,14 @@ export interface Reference {
   url: string;
 }
 
+export interface CoverVideo {
+  /** Portrait clip. */
+  url: string;
+  /** Landscape clip. */
+  wide?: string;
+  credit?: string;
+}
+
 export interface CoverSource {
   type: 'image' | 'video';
   url: string;
@@ -70,6 +78,10 @@ export interface CoverSource {
   license: string;
   sourceUrl?: string;
   unsplashDownloadLocation?: string;
+  /** Landscape version of the image (about 2560 px wide) for screens wider than tall. */
+  wide?: string;
+  /** Short muted loop played over the image while the cover is on screen. */
+  video?: CoverVideo;
 }
 
 /** File edited in the CMS: content/articles/<slug>.json. Text fields hold markup (docs/05 §6.3). */
@@ -130,6 +142,8 @@ export interface CoverClient {
   license: string;
   provider: CoverProvider;
   sourceUrl?: string;
+  wide?: string;
+  video?: CoverVideo;
 }
 
 /** public/data/articles/<slug>.json */

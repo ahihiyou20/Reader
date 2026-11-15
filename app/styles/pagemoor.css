@@ -744,3 +744,13 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
     animation: none !important;
   }
 }
+
+/* Cover clip: fades in over the still image once it has frames to show. */
+.media-clip {
+  animation: clip-in 600ms var(--ease-out) 200ms both;
+}
+@keyframes clip-in {
+  from {
+    opacity: 0;
+  }
+}

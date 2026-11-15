@@ -167,6 +167,8 @@ export function toClient(a: ArticleSource, counts: Counts = ZERO_COUNTS, extra: 
       license: a.cover.license,
       provider: a.cover.provider,
       sourceUrl: a.cover.sourceUrl,
+      ...(a.cover.wide ? { wide: a.cover.wide } : {}),
+      ...(a.cover.video ? { video: a.cover.video } : {}),
     },
     origin: a.origin,
     attribution: buildAttribution(a),
