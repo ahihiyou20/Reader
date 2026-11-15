@@ -15,6 +15,7 @@ import { readPage } from './adapters/readability';
 import { RESEARCHED_WORDS, applyWritten, enrich, fromText, summarize, writeResearched, writtenWords } from './compose';
 import { translateAll } from './translate';
 import { claimCover, findCovers, remotePlaceholder } from './cover';
+import { VIDEO_DIR, hasFfmpeg, motionCover } from './motion';
 import { gather, materialWords } from './research';
 import { MODEL, hasGemini } from './gemini';
 import { importSource } from './import';
@@ -107,7 +108,7 @@ async function covers(title: string, category: string, photo?: string) {
 
 /** Remove everything an unfinished article left behind (article, source record, raw text). */
 async function discard(a: ArticleSource) {
-  const files = [path.join(dirs.articles, `${a.slug}.json`)];
+  const files = [path.join(dirs.articles, `${a.slug}.json`), path.join(VIDEO_DIR, `${a.slug}.mp4`), path.join(VIDEO_DIR, `${a.slug}-wide.mp4`)];
   if (a.origin.sourceId) files.push(path.join(dirs.sources, `${a.origin.sourceId}.json`), path.join(dirs.raw, `${a.origin.sourceId}.json`));
   await Promise.all(files.map((f) => fs.rm(f, { force: true })));
 }
@@ -199,6 +200,14 @@ async function fromResearch(input: CreateInput, categories?: string[]): Promise<
   const a = skeleton(await uniqueSlug(w.title_en), category, origin, references);
   applyWritten(a, w, categories);
   Object.assign(a, await covers(a.title.en, a.category, w.photo ?? h.photo));
+  // Motion covers add two clips to the repository per article, so the Gemini writer makes them only when asked.
+  if (process.env.MOTION_COVERS === 'true' && a.cover.provider !== 'own' && (await hasFfmpeg())) {
+    try {
+      a.cover.video = await motionCover(a, { effect: w.motion });
+    } catch (e) {
+      console.warn(`${a.slug}: no motion cover (${(e as Error).message.slice(0, 160)})`);
+    }
+  }
   return { a, ai: ['written', 'keyPoint', 'applySteps'] };
 }
 

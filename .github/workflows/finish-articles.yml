@@ -1,0 +1,75 @@
+# Finish new articles (docs/05 step 11, docs/09 §7): when articles reach main, from the Claude writer's
+# push or a merged Gemini pull request, fill the languages and glossaries their writer could not
+# (Gemini), add a motion cover where the Pagemoor standard asks for one and none is there yet, report
+# every new article against the standard, and deploy. Pushes made here use GITHUB_TOKEN, so they do not
+# start this workflow again.
+name: Finish new articles
+on:
+  push:
+    branches: [main]
+    paths: ['content/articles/**']
+  workflow_dispatch:
+    inputs:
+      slugs: { description: 'Article slugs, space separated', required: true }
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: finish-articles
+  cancel-in-progress: false
+jobs:
+  finish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+        with: { fetch-depth: 0 }
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - name: Find the new articles
+        id: new
+        env:
+          BEFORE: ${{ github.event.before }}
+          SLUGS: ${{ inputs.slugs }}
+        run: |
+          if [ -n "$SLUGS" ]; then slugs="$SLUGS"
+          elif [ -n "$BEFORE" ] && git cat-file -e "$BEFORE" 2>/dev/null; then
+            slugs=$(git diff --name-only --diff-filter=A "$BEFORE" HEAD -- 'content/articles/*.json' | xargs -r -n1 basename | sed 's/\.json$//' | tr '\n' ' ')
+          fi
+          echo "slugs=$slugs" >> "$GITHUB_OUTPUT"
+          echo "New articles: ${slugs:-none}"
+      - name: Install ffmpeg (motion covers)
+        if: steps.new.outputs.slugs != ''
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg
+      - name: Finish
+        if: steps.new.outputs.slugs != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}
+          MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS == 'true' }}
+        run: pnpm tsx scripts/pipeline/finish.ts ${{ steps.new.outputs.slugs }}
+      - name: Check
+        if: steps.new.outputs.slugs != ''
+        run: pnpm tsx scripts/pipeline/validate.ts
+      - name: Commit
+        id: commit
+        if: steps.new.outputs.slugs != ''
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/articles public/covers/video
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -q -m "pipeline: finish new articles"
+          for i in 1 2 3 4; do
+            git pull --rebase -q origin main && git push origin HEAD:main && break
+            sleep $((i * 10))
+          done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

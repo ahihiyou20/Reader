@@ -1,11 +1,14 @@
-# Daily articles (docs/05 §9): topics from content/feeds.json (and Gemini's topic ideas when the feeds
-# fall short), each researched and written as Reader's own article of 1,000+ words in five languages
-# with an Unsplash cover. At least 20 a day, no upper limit. The articles wait in one rolling pull
-# request from bot/new-articles until it is merged, or go straight to main when the repository variable
-# FEEDS_AUTO_PUBLISH is "true".
-# Needs the secrets GEMINI_API_KEY and UNSPLASH_ACCESS_KEY (FIRECRAWL_API_KEY optional), and for the pull
-# request Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
-name: Daily articles
+# Gemini writer (docs/05 step 11): every day, topics from content/feeds.json, plus Gemini's topic ideas
+# when the feeds fall short, are researched (the page, Wikipedia, Europe PMC, Firecrawl) and written as
+# Pagemoor's own articles of 1,000+ words, with highlights and source chips in every section, all five
+# languages with glossaries, and an Unsplash cover in portrait and landscape; with the variable
+# GEMINI_MOTION_COVERS = "true" each also gets a motion cover. At least 20 a day, no upper limit.
+# The articles wait in one rolling pull request from bot/new-articles until it is merged (merging starts
+# finish-articles.yml), or go straight to main when the variable GEMINI_AUTO_PUBLISH is "true".
+# Secrets: GEMINI_API_KEY, UNSPLASH_ACCESS_KEY (FIRECRAWL_API_KEY, PEXELS_API_KEY optional). Variables
+# (optional): GEMINI_MODEL, GEMINI_FALLBACK_MODELS, FIRECRAWL_MAX_PER_RUN. The pull request needs
+# Settings → Actions → General → "Allow GitHub Actions to create and approve pull requests".
+name: Gemini writer
 on:
   schedule:
     - cron: '17 23 * * *'
@@ -22,9 +25,10 @@ concurrency:
   cancel-in-progress: false
 env:
   BRANCH: bot/new-articles
-  AUTO_PUBLISH: ${{ vars.FEEDS_AUTO_PUBLISH == 'true' }}
+  AUTO_PUBLISH: ${{ vars.GEMINI_AUTO_PUBLISH == 'true' || vars.FEEDS_AUTO_PUBLISH == 'true' }}
+  MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS == 'true' }}
 jobs:
-  feeds:
+  write:
     runs-on: ubuntu-latest
     # Each article is researched, written and translated into four languages: about 3 minutes of
     # Gemini time each, three at a time. The script stops starting new ones after --minutes.
@@ -36,6 +40,9 @@ jobs:
       - uses: actions/setup-node@v5
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
+      - name: Install ffmpeg (motion covers)
+        if: env.MOTION_COVERS == 'true'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg
       - name: Prepare the bot branch
         id: branch
         env:
@@ -80,6 +87,16 @@ jobs:
           MIN: ${{ inputs.min || '20' }}
           LIMIT: ${{ inputs.limit || '0' }}
         run: pnpm tsx scripts/pipeline/feeds.ts --min "$MIN" --limit "$LIMIT" --minutes 170 --jobs 3 --report "$RUNNER_TEMP/report.md"
+      - name: Finish this run's articles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}
+        run: |
+          # A language the quota or an overloaded model cut short gets one more try, then the standard report.
+          new=$(git ls-files --others --exclude-standard content/articles | xargs -r -n1 basename | sed 's/\.json$//')
+          if [ -z "$new" ]; then echo "No new articles."; exit 0; fi
+          pnpm tsx scripts/pipeline/finish.ts $new
       - name: Check
         run: pnpm tsx scripts/pipeline/validate.ts
       - name: Commit and open or update the pull request
@@ -88,9 +105,9 @@ jobs:
           PR: ${{ steps.branch.outputs.pr }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: |
-          git add content
+          git add content public/covers/video
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
-          git commit -q -m "content: daily articles $(date -u +%F)"
+          git commit -q -m "content: Gemini articles $(date -u +%F)"
           if [ "$AUTO_PUBLISH" = "true" ]; then
             for i in 1 2 3 4; do
               git pull --rebase -q origin main && git push origin HEAD:main && break
@@ -108,7 +125,7 @@ jobs:
           if [ -n "$PR" ]; then
             gh pr edit "$PR" --body-file "$RUNNER_TEMP/body.md"
           else
-            gh pr create --base main --head "$BRANCH" --title "Bài mới từ nguồn tự động" --body-file "$RUNNER_TEMP/body.md" \
+            gh pr create --base main --head "$BRANCH" --title "Bài mới từ Gemini writer" --body-file "$RUNNER_TEMP/body.md" \
               || echo "::warning::Could not open the pull request. Enable Settings → Actions → General → Allow GitHub Actions to create and approve pull requests."
           fi
           # Pushes made with GITHUB_TOKEN start no pull_request runs, so ask for the checks explicitly.

@@ -1,10 +1,15 @@
-# 09 — Daily writer (Claude routine)
+# 09 — Claude writer (daily routine)
 
-A scheduled Claude routine runs this once a day. It finds topics and sources, writes **at least 20**
-original, in-depth Reader articles (group 4, see docs/05 §2) in all five languages, checks them, and
-pushes them to `main`, which publishes them through `deploy.yml`. There is no upper limit: keep going
-while the quality holds and time remains. The Gemini bot (`feeds.yml`, docs/05 step 11) runs
-separately and opens its own pull request; this routine does not touch it, but avoids its topics.
+A scheduled Claude routine ("Pagemoor daily writer") runs this once a day. It finds topics and
+sources, writes **at least 20** original, in-depth Pagemoor articles (group 4, see docs/05 §2) in all
+five languages, each with an Unsplash cover and a **motion cover**, checks them against the Pagemoor
+standard, and pushes them to `main`. There is no upper limit: keep going while the quality holds and
+time remains. On `main`, `finish-articles.yml` fills anything left over and `deploy.yml` publishes.
+The Gemini writer (`gemini-writer.yml`, docs/05 step 11) runs separately and opens its own pull
+request; this routine does not touch it, but avoids its topics.
+
+The workflow, in order: topics (§1) → sources (§2) → write (§3) → five languages (§4) → Unsplash
+cover (§5) → motion cover (§6) → standard and checks (§7) → publish (§7).
 
 ## 1. Pick topics
 
@@ -120,16 +125,42 @@ Every article gets its own Unsplash photo; never reuse one another article has (
 The script serves the photo from Unsplash's CDN in portrait and landscape and credits the
 photographer; the download is reported to Unsplash when the article is deployed.
 
-## 6. Check and publish
+## 6. Motion cover
 
-1. `pnpm validate` must report no errors for the new files; fix and re-run. The length warning for
-   group 4 is 1,000–1,800 words.
-2. `pnpm content` must succeed.
-3. Commit only the new `content/articles/*.json` files, as `reader-writer <noreply@anthropic.com>`,
-   message `content: daily written articles YYYY-MM-DD`.
-4. `git pull --rebase origin main`, then `git push origin HEAD:main`. The deploy workflow builds and
-   publishes the site.
+Every article gets a short muted loop that the app plays over its cover photo (`cover.video`): a
+portrait clip for phones and a landscape one for wide screens in `public/covers/video/`. Look at
+`black-hole-anatomy`, `the-1952-london-smog-counting-the-dead` and `body-clock-nobel-2017-period-gene`
+for the feel: one slow movement that fits the subject, never busy.
 
-If validation keeps failing for an article, drop that article rather than publishing it broken.
-Finish with a short report: how many articles were published, their titles, categories and word
-counts, which tool read the sources, and anything dropped and why.
+- **From the cover photo** (always possible, no key): pick the moving layer that suits the photo and
+  run `pnpm tsx scripts/dev/motion-cover.ts <slug> --effect <effect> --preview`. Effects: `fog` (mist,
+  smoke, the past, mystery), `dust` (floating specks of light: labs, rooms, everyday scenes), `stars`
+  (night sky, space), `rain`, `snow` (cold, winter), `glow` (soft moving light: health, technology,
+  ideas, people), `shimmer` (rippling water or hot air: sea, rivers, heat, climate). The clip starts
+  on the photo itself, zooms in a little and back, and loops without a seam.
+- **From a stock clip** (when `PEXELS_API_KEY` or `PIXABAY_API_KEY` is set and a clip shows the
+  subject better than the photo can): `pnpm tsx scripts/dev/motion-cover.ts --search "<words>"`, then
+  `pnpm tsx scripts/dev/motion-cover.ts <slug> --clip <file URL> --credit Pexels --preview`
+  (`--start <s>` to skip into the clip). Pexels and Pixabay clips are free to use; the credit shows as
+  "Video: Pexels".
+
+Open the `--preview` image (three frames of each clip) and look at it: the subject must stay clear and
+the title area readable. If it does not, try another effect or clip. Each clip is about 0.3–0.5 MB.
+
+## 7. Check and publish
+
+1. `pnpm tsx scripts/pipeline/standard-cli.ts --claude <new slugs>` must pass for every new article:
+   at least 1,000 English words, 1–2 highlights and a source chip in every section, at least 3
+   sources, all five languages, a glossary of 8+ terms per language, an Unsplash cover with its
+   landscape version, and a motion cover. Fix what it lists and run it again.
+2. `pnpm validate` must report no errors for the new files; the length warning for group 4 is
+   1,000–1,800 words.
+3. `pnpm content` must succeed.
+4. Commit only the new `content/articles/*.json` and `public/covers/video/*.mp4` files, as
+   `reader-writer <noreply@anthropic.com>`, message `content: daily written articles YYYY-MM-DD`.
+5. `git pull --rebase origin main`, then `git push origin HEAD:main`. `finish-articles.yml` then
+   fills any language or motion cover still missing (with Gemini and ffmpeg), and the site is deployed.
+
+If an article keeps failing, drop it (its JSON and its clips) rather than publishing it broken.
+Finish with a short report: how many articles were published, their titles, categories, word counts
+and motion effects, which tool read the sources, and anything dropped and why.
