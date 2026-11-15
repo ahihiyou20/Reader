@@ -3,7 +3,7 @@ import { Download, Headphones, LogOut, RotateCcw, Sparkles, Trash2 } from 'lucid
 import { useEffect, useState } from 'react';
 import { exportMyData, setLanguage, signOut } from '@/lib/actions';
 import { LANG_NAME, LANGS, LOCALE } from '@/lib/content/types';
-import { canSpeak, restartSpeech, voicesFor } from '@/stores/audio';
+import { canSpeak, restartSpeech, voiceLabel, voicesFor } from '@/stores/audio';
 import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
@@ -38,7 +38,7 @@ export function SettingsPanel() {
     const u = new SpeechSynthesisUtterance(t('tagline'));
     u.lang = LOCALE[lang];
     u.rate = settings.rate;
-    const v = voices.find((x) => x.voiceURI === settings.voice[lang]);
+    const v = voices.find((x) => x.voiceURI === settings.voice[lang]) ?? voices[0];
     if (v) u.voice = v;
     speechSynthesis.speak(u);
   };
@@ -78,7 +78,7 @@ export function SettingsPanel() {
               <option value="">{t('voiceDefault')}</option>
               {voices.map((v) => (
                 <option key={v.voiceURI} value={v.voiceURI}>
-                  {v.name}
+                  {voiceLabel(v, lang)}
                 </option>
               ))}
             </select>

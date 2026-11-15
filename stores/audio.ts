@@ -45,9 +45,36 @@ export function trackFor(article: ArticleClient, lang: Lang): Track {
   return { slug: article.slug, title, lang: article.langs.includes(lang) ? lang : 'en', paras };
 }
 
+/**
+ * Novelty and robotic voices that ship with desktop systems (macOS's old MacinTalk set, the Eloquence
+ * set, eSpeak). Nobody listens to an article in them, so they are never offered.
+ */
+const NOVELTY =
+  /^(Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Wobble|Deranged|Fred|Good News|Jester|Hysterical|Junior|Kathy|Organ|Superstar|Princess|Ralph|Trinoids|Whisper|Zarvox|Eddy|Flo|Grandma|Grandpa|Reed|Rocko|Sandy|Shelley)\b/i;
+const isReal = (v: SpeechSynthesisVoice) =>
+  !/speech\.synthesis\.voice|eloquence|espeak/i.test(v.voiceURI) && !NOVELTY.test(v.name) && !/espeak/i.test(v.name);
+/** Better recordings first: premium and enhanced voices, then the network voices browsers add, then compact ones. */
+const quality = (v: SpeechSynthesisVoice) =>
+  /premium/i.test(v.voiceURI + v.name) ? 0 : /enhanced|natural|neural/i.test(v.voiceURI + v.name) ? 1 : !v.localService ? 2 : /super-compact/i.test(v.voiceURI) ? 4 : 3;
+
+/** Real voices for a language, best first; the reader's own region before other accents. */
 export function voicesFor(lang: Lang): SpeechSynthesisVoice[] {
   if (!canSpeak()) return [];
-  return speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().replace('_', '-').startsWith(lang));
+  const region = (typeof navigator !== 'undefined' ? navigator.language : '').split('-')[1]?.toUpperCase();
+  const all = speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().replace('_', '-').startsWith(lang));
+  const real = all.filter(isReal);
+  const local = (v: SpeechSynthesisVoice) => (region && v.lang.toUpperCase().endsWith(region) ? 0 : 1);
+  return (real.length ? real : all).sort((a, b) => quality(a) - quality(b) || local(a) - local(b) || a.name.localeCompare(b.name));
+}
+
+/** "Samantha · English (United States)": the accent matters when a language has several. */
+export function voiceLabel(v: SpeechSynthesisVoice, uiLang: Lang): string {
+  try {
+    const name = new Intl.DisplayNames([LOCALE[uiLang]], { type: 'language' }).of(v.lang.replace('_', '-'));
+    return name ? `${v.name} · ${name}` : v.name;
+  } catch {
+    return v.name;
+  }
 }
 
 /** Speaking pace at 1×, in characters per second (about 165 words a minute); used for the time readout. */
@@ -77,7 +104,9 @@ function speak(i: number, from = 0) {
   const u = new SpeechSynthesisUtterance(text.slice(from));
   u.lang = LOCALE[s.lang];
   u.rate = rate;
-  const chosen = voicesFor(s.lang).find((v) => v.voiceURI === voice[s.lang]);
+  // The reader's choice, else the best real voice: the engine's default can be a novelty one.
+  const voices = voicesFor(s.lang);
+  const chosen = voices.find((v) => v.voiceURI === voice[s.lang]) ?? voices[0];
   if (chosen) u.voice = chosen;
   u.onboundary = (e) => {
     if (id === run && e.name !== 'sentence') useAudio.setState({ offset: from + e.charIndex });
