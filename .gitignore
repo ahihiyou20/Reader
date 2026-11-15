@@ -1,6 +1,8 @@
 node_modules/
 .next/
 .next-dev/
+# Link-preview images made at build time (scripts/og.mjs)
+/public/og/
 out/
 next-env.d.ts
 *.tsbuildinfo

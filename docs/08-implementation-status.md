@@ -8,7 +8,7 @@
 - **Content model**: `lib/content/*` (types, markup parser, schema Zod, validate, transform, rank), `scripts/build-content.ts` sinh `public/data/*` (feed, bài, categories, search index MiniSearch, popular terms).
 - **Tầng dữ liệu**: `lib/backend/firebase.ts` (Anonymous + Google, link/merge, One Tap, redirect, like/save/share/comment, streak, submissions, xoá tài khoản, xuất dữ liệu) và `lib/backend/local.ts` (chế độ demo khi chưa cấu hình Firebase).
 - **Giao diện**: Feed 2 chiều (gesture, spring, rubber-band), Cover, Details, Comments & Apply, TopBar, BottomNav, LangMenu, Toast, panel Explore/Search/Messages/Notifications/Profile/Create, sheet Login/Sources/DeleteAccount, trang `/a/[slug]`, `/preview`, `/privacy`, `/terms`, 404. Đã soát trên viewport 390×844 và 375×667 (EN + VI).
-- **PWA**: `scripts/build-sw.ts` (precache 58 file, cache bài và ảnh), manifest, icon (`scripts/dev/make-icons.ts`).
+- **PWA**: `scripts/build-sw.ts` (precache 58 file, cache bài và ảnh), manifest, icon (logo Pagemoor trong `public/icons/`).
 - **Pipeline**: `scripts/pipeline/*` (import + adapters, bảng giấy phép, chọn đoạn, cover, Gemini tùy chọn, validate + Issue, submissions, daily, set-moderator, backup mã hoá, deploy-check). Sveltia CMS ghim 0.231.0 tại `/cms`.
 - **Hạ tầng**: Pages Function proxy `/__/auth`, `firestore.rules`, `firestore.indexes.json`, `firebase.json`, 9 workflow GitHub Actions.
 - **Nội dung ra mắt**: **30 bài** song ngữ EN + VI, 8 chủ đề (science 7, economics 4, health 4, history 3, psychology 3, productivity 3, society 3, technology 3), mỗi bài 700–950 từ, 7 section, KEY POINT, 3 bước Apply, nguồn có DOI đã kiểm tra trên Crossref, ảnh bìa webp tự host có ghi công. Tất cả có cờ `seed: true`.

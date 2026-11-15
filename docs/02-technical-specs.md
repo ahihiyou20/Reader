@@ -65,7 +65,7 @@ reader/
 │  ├─ build-sw.ts                # sinh out/sw.js
 │  ├─ serve.mjs                  # server tĩnh có clean URL (pnpm start, E2E)
 │  ├─ pipeline/                  # import, adapters, licenses, validate, submissions, daily, backup…
-│  └─ dev/                       # make-icons.ts, picsum-cover.ts
+│  └─ dev/                       # picsum-cover.ts
 ├─ functions/     Cloudflare Pages Functions (proxy /__/auth)
 ├─ .github/workflows/  ci, validate, import, ai-suggest, deploy, daily, submissions, set-moderator, backup
 ├─ firestore.rules, firestore.indexes.json, firebase.json
