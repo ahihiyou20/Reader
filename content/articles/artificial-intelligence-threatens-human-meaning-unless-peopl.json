@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Artificial Intelligence Threatens Human Meaning Unless People Keep Control",
-    "vi": "Trí tuệ nhân tạo đe dọa ý nghĩa cuộc sống trừ khi con người giữ quyền kiểm soát"
+    "vi": "Trí tuệ nhân tạo đe dọa ý nghĩa cuộc sống trừ khi con người giữ quyền kiểm soát",
+    "fr": "L’intelligence artificielle menace le sens humain sans un contrôle direct",
+    "de": "Künstliche Intelligenz bedroht den menschlichen Lebenssinn ohne menschliche Kontrolle",
+    "es": "La inteligencia artificial amenaza el sentido humano a menos que las personas mantengan el control"
   },
   "hook": {
     "en": "A national survey reveals that most Americans view artificial intelligence as a threat to personal meaning rather than a support. This perspective depends entirely on whether individuals expect technology to remain a human-directed tool or evolve into an autonomous entity.",
-    "vi": "Một khảo sát quốc gia cho thấy phần lớn người Mỹ xem trí tuệ nhân tạo là mối đe dọa đối với ý nghĩa cá nhân hơn là sự hỗ trợ. Góc nhìn này phụ thuộc hoàn toàn vào việc mọi người kỳ vọng công nghệ tiếp tục là công cụ do con người điều khiển hay tiến hóa thành một thực thể tự trị."
+    "vi": "Một khảo sát quốc gia cho thấy phần lớn người Mỹ xem trí tuệ nhân tạo là mối đe dọa đối với ý nghĩa cá nhân hơn là sự hỗ trợ. Góc nhìn này phụ thuộc hoàn toàn vào việc mọi người kỳ vọng công nghệ tiếp tục là công cụ do con người điều khiển hay tiến hóa thành một thực thể tự trị.",
+    "fr": "Une enquête nationale révèle qu’une majorité d’Américains perçoit l’intelligence artificielle comme une menace pour le sens de leur existence plutôt que comme un soutien. Cette perspective dépend entièrement de l’anticipation d’une technologie cantonnée au rôle d’outil guidé par l’humain ou vouée à devenir une entité autonome.",
+    "de": "Eine landesweite Umfrage zeigt, dass die Mehrheit der Amerikaner künstliche Intelligenz eher als Bedrohung für den persönlichen Lebenssinn statt als Unterstützung betrachtet. Diese Perspektive hängt vollkommen davon ab, ob Menschen erwarten, dass Technologie ein menschengeführtes Werkzeug bleibt oder sich zu einer autonomen Entität entwickelt.",
+    "es": "Una encuesta nacional revela que la mayoría de los estadounidenses considera que la inteligencia artificial representa una amenaza para el sentido personal en lugar de un apoyo. Esta perspectiva depende por completo de si las personas esperan que la tecnología siga siendo una herramienta dirigida por humanos o evolucione hacia una entidad autónoma."
   },
   "sections": [
     {
       "heading_en": "Public Survey Findings",
       "heading_vi": "Kết quả khảo sát công chúng",
       "body_en": "Researchers at the Archbridge Institute surveyed over 2,000 Americans about technology and purpose {source}. Fifty-six percent of respondents expect artificial intelligence to undermine human meaning, while forty-four percent believe it will support purpose. Women and older adults express the highest levels of concern regarding this psychological threat.",
-      "body_vi": "Các nhà nghiên cứu tại Viện Archbridge (*Archbridge Institute*) khảo sát hơn 2.000 người Mỹ về công nghệ và mục đích sống {source}. Năm mươi sáu phần trăm người tham gia kỳ vọng trí tuệ nhân tạo làm suy yếu ý nghĩa con người, trong khi bốn mươi bốn phần trăm tin rằng nó hỗ trợ mục đích sống. Phụ nữ và người lớn tuổi bày tỏ mức độ lo ngại cao nhất đối với mối đe dọa tâm lý này."
+      "body_vi": "Các nhà nghiên cứu tại Viện Archbridge (*Archbridge Institute*) khảo sát hơn 2.000 người Mỹ về công nghệ và mục đích sống {source}. Năm mươi sáu phần trăm người tham gia kỳ vọng trí tuệ nhân tạo làm suy yếu ý nghĩa con người, trong khi bốn mươi bốn phần trăm tin rằng nó hỗ trợ mục đích sống. Phụ nữ và người lớn tuổi bày tỏ mức độ lo ngại cao nhất đối với mối đe dọa tâm lý này.",
+      "heading_fr": "Résultats du sondage national",
+      "body_fr": "Des chercheurs de l’Archbridge Institute ont interrogé plus de 2 000 Américains sur la technologie et la quête de sens {source}. Cinquante-six pour cent des sondés craignent que l’intelligence artificielle n’érode le sens de la vie, tandis que quarante-quatre pour cent pensent qu’elle favorisera leur accomplissement personnel. Les femmes et les personnes âgées manifestent la plus vive inquiétude face à cette menace psychologique.",
+      "heading_de": "Ergebnisse der öffentlichen Umfrage",
+      "body_de": "Forscher am Archbridge Institute befragten über 2.000 Amerikaner zu Technologie und Sinnerfüllung {source}. Sechsundfünfzig Prozent der Befragten erwarten, dass künstliche Intelligenz den menschlichen Lebenssinn untergräbt, während vierundvierzig Prozent glauben, dass sie der Sinnstiftung dient. Frauen und ältere Erwachsene äußern die größte Besorgnis über diese psychologische Bedrohung.",
+      "heading_es": "Resultados de la encuesta pública",
+      "body_es": "Investigadores del Archbridge Institute encuestaron a más de 2000 estadounidenses sobre tecnología y propósito {source}. El cincuenta y seis por ciento de los encuestados prevé que la inteligencia artificial socavará el sentido humano, mientras que el cuarenta y cuatro por ciento cree que respaldará el propósito vital. Las mujeres y los adultos mayores expresan los niveles más altos de preocupación ante esta amenaza psicológica."
     },
     {
       "heading_en": "Control and Autonomy",
       "heading_vi": "Quyền kiểm soát và sự tự trị",
       "body_en": "Public opinion splits evenly on the nature of the technology. Forty-eight percent view the system as a standard tool directed by humans, comparable to electricity or the internet. Conversely, fifty-two percent consider it a distinct technology on a path toward full autonomy.",
-      "body_vi": "Dư luận chia đôi đều về bản chất của công nghệ. Bốn mươi tám phần trăm xem hệ thống này như một công cụ tiêu chuẩn do con người điều khiển, có thể so sánh với điện năng hoặc internet. Ngược lại, năm mươi hai phần trăm coi nó là một công nghệ khác biệt đang trên con đường hướng tới sự tự trị hoàn toàn."
+      "body_vi": "Dư luận chia đôi đều về bản chất của công nghệ. Bốn mươi tám phần trăm xem hệ thống này như một công cụ tiêu chuẩn do con người điều khiển, có thể so sánh với điện năng hoặc internet. Ngược lại, năm mươi hai phần trăm coi nó là một công nghệ khác biệt đang trên con đường hướng tới sự tự trị hoàn toàn.",
+      "heading_fr": "Contrôle et autonomie",
+      "body_fr": "L’opinion publique se divise équitablement sur la nature de cette technologie. Quarante-huit pour cent perçoivent le système comme un outil classique supervisé par l’humain, comparable à l’électricité ou à Internet. À l’inverse, cinquante-deux pour cent y voient une technologie distincte en route vers une autonomie complète.",
+      "heading_de": "Kontrolle und Autonomie",
+      "body_de": "Die öffentliche Meinung über das Wesen der Technologie ist geteilt. Achtundvierzig Prozent betrachten das System als gewöhnliches Werkzeug unter menschlicher Kontrolle, vergleichbar mit Elektrizität oder dem Internet. Umgekehrt stufen zweiundfünfzig Prozent sie als eigenständige Technologie auf dem Weg zu vollständiger Autonomie ein.",
+      "heading_es": "Control y autonomía",
+      "body_es": "La opinión pública se divide por igual respecto a la naturaleza de la tecnología. El cuarenta y ocho por ciento considera el sistema como una herramienta convencional dirigida por humanos, comparable a la electricidad o internet. Por el contrario, el cincuenta y dos por ciento la considera una tecnología singular en camino hacia la plena autonomía."
     },
     {
       "heading_en": "The Core Connection",
       "heading_vi": "Mối liên hệ cốt lõi",
       "body_en": "Views on autonomy directly shape beliefs about personal significance. Among participants expecting human direction, sixty-three percent believe the technology supports meaningful lives. Among those expecting autonomy, seventy-three percent believe it undermines personal significance.",
-      "body_vi": "Quan điểm về sự tự trị định hình trực tiếp niềm tin về ý nghĩa cá nhân. Trong số những người kỳ vọng sự định hướng của con người, sáu mươi ba phần trăm tin rằng công nghệ hỗ trợ cuộc sống có ý nghĩa. Trong số những người kỳ vọng sự tự trị, bảy mươi ba phần trăm tin rằng nó làm suy yếu ý nghĩa cá nhân."
+      "body_vi": "Quan điểm về sự tự trị định hình trực tiếp niềm tin về ý nghĩa cá nhân. Trong số những người kỳ vọng sự định hướng của con người, sáu mươi ba phần trăm tin rằng công nghệ hỗ trợ cuộc sống có ý nghĩa. Trong số những người kỳ vọng sự tự trị, bảy mươi ba phần trăm tin rằng nó làm suy yếu ý nghĩa cá nhân.",
+      "heading_fr": "Le lien fondamental",
+      "body_fr": "La perception de l’autonomie détermine directement la foi en son utilité personnelle. Parmi les participants qui anticipent un pilotage humain, soixante-trois pour cent estiment que la technologie favorise une vie féconde. Chez ceux qui prévoient une autonomie, soixante-treize pour cent jugent qu’elle affaiblit le sens de l’existence.",
+      "heading_de": "Der zentrale Zusammenhang",
+      "body_de": "Auffassungen über Autonomie prägen die Vorstellungen über die persönliche Bedeutsamkeit unmittelbar. Unter den Befragten, die eine menschliche Steuerung erwarten, glauben dreiundsechzig Prozent, dass die Technologie ein erfülltes Leben fördert. Unter jenen, die Autonomie erwarten, meinen dreiundsiebzig Prozent, dass sie die persönliche Bedeutung untergräbt.",
+      "heading_es": "La conexión fundamental",
+      "body_es": "Las opiniones sobre la autonomía influyen de manera directa en las convicciones sobre el significado personal. Entre los participantes que anticipan una dirección humana, el sesenta y tres por ciento cree que la tecnología fomenta una vida con sentido. Entre quienes prevén autonomía, el setenta y tres por ciento cree que socava el significado personal."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/373/1080/1920",
+    "url": "https://images.unsplash.com/39/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjUwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Jay Wennington",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/i8CYGnoerR0"
+    "sourceUrl": "https://unsplash.com/photos/i8CYGnoerR0",
+    "wide": "https://images.unsplash.com/39/tU3ptNgGSP6U2fE67Gvy_SYDNEY-162.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjUwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jaywennington?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -76,6 +102,21 @@
       "Xác định một nhiệm vụ sáng tạo mà bạn hiện đang giao phó hoàn toàn cho phần mềm.",
       "Thực hiện hoạt động cụ thể đó theo cách thủ công ngày hôm nay để duy trì quyền năng cá nhân.",
       "Suy ngẫm về việc sự tham gia trực tiếp thay đổi cảm giác hài lòng cá nhân của bạn ra sao."
+    ],
+    "fr": [
+      "Identifiez une tâche créative que vous déléguez aujourd’hui intégralement à un logiciel.",
+      "Exécutez cette tâche manuellement dès aujourd’hui afin de préserver votre pouvoir d’agir.",
+      "Analysez comment votre implication directe transforme votre sentiment de satisfaction personnelle."
+    ],
+    "de": [
+      "Identifiziere eine kreative Aufgabe, die du derzeit vollständig an Software delegierst.",
+      "Führe genau diese Tätigkeit heute manuell aus, um deine persönliche Handlungsfähigkeit zu bewahren.",
+      "Reflektiere darüber, wie deine direkte Beteiligung dein Gefühl persönlicher Zufriedenheit verändert."
+    ],
+    "es": [
+      "Identifique una tarea creativa que actualmente delegue por completo en un software.",
+      "Realice hoy esa actividad específica de forma manual para conservar su agencia personal.",
+      "Reflexione sobre cómo su implicación directa transforma su sensación de satisfacción personal."
     ]
   },
   "coverCandidates": [
@@ -112,9 +153,77 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "artificial intelligence": "Computer systems designed to perform tasks typically requiring human intelligence and reasoning.",
+      "personal meaning": "An individual's perceived sense of purpose, significance, and fulfillment in life.",
+      "human-directed tool": "An instrument or technology operated and controlled entirely under human guidance and decision-making.",
+      "autonomous entity": "A self-governing system capable of operating, learning, and acting without direct human control.",
+      "archbridge institute": "A non-profit research organization dedicated to investigating human flourishing, social mobility, and purpose.",
+      "psychological threat": "A perceived danger to a person's mental well-being, emotional security, or sense of identity.",
+      "autonomy": "The capacity of an automated system to function and make choices independently of human intervention.",
+      "personal significance": "The belief that one's own existence, actions, and contributions possess genuine importance and value.",
+      "human direction": "Active human governance, oversight, and operational command over machines or technological processes.",
+      "personal agency": "An individual's ability to exert intentional control over their choices, actions, and immediate environment."
+    },
+    "vi": {
+      "viện archbridge": "Tổ chức nghiên cứu tại Mỹ thực hiện cuộc khảo sát được trích dẫn trong bài viết.",
+      "archbridge institute": "Tên tiếng Anh của Viện Archbridge, tổ chức nghiên cứu được trích dẫn trong bài.",
+      "quyền kiểm soát": "Khả năng con người nắm quyền chỉ đạo, làm chủ và điều hành hệ thống công nghệ.",
+      "thực thể": "Một đối tượng tồn tại độc lập có khả năng hành động hoặc đưa ra quyết định riêng.",
+      "sự tự trị": "Khả năng công nghệ tự vận hành độc lập mà không cần sự điều khiển từ con người.",
+      "mục đích sống": "Ý nghĩa và lý do cốt lõi giúp con người cảm nhận cuộc đời có giá trị.",
+      "sự định hướng": "Vai trò dẫn dắt, thiết lập mục tiêu và kiểm soát của con người đối với máy móc.",
+      "quyền năng": "Năng lực làm chủ và khả năng tự quyết định hành động sáng tạo của bản thân.",
+      "thủ công": "Cách tự thực hiện trực tiếp bằng năng lực con người thay vì dựa vào phần mềm.",
+      "mối đe dọa": "Nguy cơ tiềm ẩn làm suy giảm ý nghĩa và giá trị đời sống của con người."
+    },
+    "fr": {
+      "intelligence artificielle": "Système informatique simulant des processus cognitifs humains pour accomplir des tâches complexes.",
+      "archbridge institute": "Organisation de recherche américaine étudiant les facteurs favorisant la mobilité sociale et l'épanouissement humain.",
+      "quête de sens": "Recherche intérieure visant à donner une signification, un but et une valeur à son existence.",
+      "accomplissement personnel": "Épanouissement résultant de la pleine réalisation de son potentiel et de ses projets de vie.",
+      "menace psychologique": "Risque perçu d'une déstabilisation du bien-être mental ou de la valeur attribuée à soi.",
+      "outil classique": "Dispositif technique subordonné à l'action humaine et dépourvu d'initiative propre, à l'instar d'Internet.",
+      "autonomie complète": "Capacité d'un système technique à opérer sans intervention, supervision ou décision de l'humain.",
+      "utilité personnelle": "Sentiment éprouvé par une personne de contribuer utilement et valablement au monde.",
+      "pilotage humain": "Contrôle et supervision constants exercés par des humains sur le fonctionnement d'une machine.",
+      "pouvoir d’agir": "Capacité d'un individu à agir de façon autonome et à influencer sa propre trajectoire.",
+      "implication directe": "Participation personnelle et concrète, sans recours exclusif à un logiciel intermédiaire."
+    },
+    "de": {
+      "künstliche intelligenz": "Technologische Systeme, die menschenähnliche kognitive Fähigkeiten und Lernprozesse imitieren.",
+      "lebenssinn": "Das subjektive Gefühl von Bedeutung, Zweck und Wert im eigenen Dasein.",
+      "autonomen entität": "Ein eigenständiges Wesen oder System, das unabhängig und selbstbestimmt agiert.",
+      "archbridge institute": "Amerikanische Denkfabrik, die sich mit gesellschaftlichem Aufstieg und menschlichem Wohlstand befasst.",
+      "sinnerfüllung": "Das tief empfundene Bewusstsein, ein zielgerichtetes und wertvolles Leben zu führen.",
+      "sinnstiftung": "Die bewusste Zuschreibung oder Schaffung von Bedeutung und Wert in Tätigkeiten.",
+      "psychologische bedrohung": "Wahrgenommene Gefahr für das seelische Gleichgewicht, das Selbstwertgefühl oder die Identität.",
+      "autonomie": "Zustand völliger Unabhängigkeit und Selbstbestimmung ohne äußere menschliche Eingriffe.",
+      "menschliche steuerung": "Führung, Begrenzung und Leitung technischer Prozesse durch menschliche Entscheidungen.",
+      "persönliche bedeutsamkeit": "Das individuelle Erleben, als eigenständige Person wichtig, wertvoll und wirksam zu sein.",
+      "handlungsfähigkeit": "Die praktische Fähigkeit, eigenständig zu handeln und eigene Entscheidungen wirksam umzusetzen."
+    },
+    "es": {
+      "inteligencia artificial": "Sistemas informáticos capaces de realizar tareas complejas que habitualmente requieren capacidades cognitivas humanas.",
+      "sentido humano": "Percepción de propósito, valor y significado fundamental en la existencia de las personas.",
+      "entidad autónoma": "Sistema tecnológico capaz de operar y tomar decisiones sin supervisión o intervención humana directa.",
+      "archbridge institute": "Organización de investigación estadounidense dedicada al estudio de la movilidad social y el florecimiento humano.",
+      "propósito vital": "Convicción profunda que orienta las metas y decisiones hacia una existencia valiosa y significativa.",
+      "amenaza psicológica": "Percepción de un riesgo que puede perjudicar el bienestar emocional, mental o existencial del individuo.",
+      "plena autonomía": "Capacidad de un sistema de funcionar enteramente por sí mismo sin depender del control humano.",
+      "significado personal": "Convicción de que la propia vida tiene trascendencia, relevancia y un propósito valioso individual.",
+      "agencia personal": "Capacidad de una persona para actuar intencionalmente, tomar decisiones propias y mantener control sobre su vida.",
+      "dirección humana": "Control, supervisión y guía activa ejercida por personas sobre el funcionamiento y fines tecnológicos."
+    }
   }
 }

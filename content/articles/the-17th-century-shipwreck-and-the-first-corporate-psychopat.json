@@ -52,11 +52,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/193/1080/1920",
+    "url": "https://images.unsplash.com/20/cambridge.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vadim Sherbakov",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/d6ebY-faOO0"
+    "sourceUrl": "https://unsplash.com/photos/d6ebY-faOO0",
+    "wide": "https://images.unsplash.com/20/cambridge.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@madebyvadim?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

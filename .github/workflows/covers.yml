@@ -1,0 +1,44 @@
+# Self-host cover images (portrait for phones, landscape for wide screens) for articles that still
+# point at a remote image or have no landscape file. Runs after the daily bots and on demand; an image
+# that cannot be fetched is tried again on the next run.
+name: Covers
+on:
+  schedule:
+    - cron: '47 1 * * *'
+  workflow_dispatch:
+    inputs:
+      limit: { description: 'Most articles in this run', required: false, default: '400' }
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: content-bot
+  cancel-in-progress: false
+jobs:
+  covers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm tsx scripts/pipeline/host-covers.ts --limit "${{ inputs.limit || '400' }}"
+        env:
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+      - run: pnpm tsx scripts/pipeline/validate.ts
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/articles public/covers
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "pipeline: self-hosted covers" && git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

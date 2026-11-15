@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "When Injury Forces Runners to Stop",
-    "vi": "Khi Chấn Thương Buộc Người Chạy Dừng Lại"
+    "vi": "Khi Chấn Thương Buộc Người Chạy Dừng Lại",
+    "fr": "Quand la blessure force les coureurs à l'arrêt",
+    "de": "Wenn Verletzungen Läufer ausbremsen",
+    "es": "Cuando una lesión obliga a los corredores a parar"
   },
   "hook": {
     "en": "An amateur runner named Richard Fisher faced an unexpected identity crisis after an ankle injury halted months of training {source}. Losing physical routines often triggers psychological distress among athletes at all levels. Research shows that maintaining diverse personal connections outside a single activity helps people anchor their self-worth when physical pursuits must pause.",
-    "vi": "Một người chạy bộ nghiệp dư tên là Richard Fisher đã đối mặt với cuộc khủng hoảng bản sắc bất ngờ sau một chấn thương mắt cá chân buộc anh phải dừng tập luyện trong nhiều tháng {source}. Việc mất đi các thói quen thể chất thường gây ra sự suy sụp tâm lý ở các vận động viên ở mọi cấp độ. Nghiên cứu chỉ ra rằng việc duy trì các mối quan hệ cá nhân đa dạng bên ngoài một hoạt động đơn lẻ giúp mọi người giữ vững giá trị bản thân khi phải tạm dừng các hoạt động thể chất."
+    "vi": "Một người chạy bộ nghiệp dư tên là Richard Fisher đã đối mặt với cuộc khủng hoảng bản sắc bất ngờ sau một chấn thương mắt cá chân buộc anh phải dừng tập luyện trong nhiều tháng {source}. Việc mất đi các thói quen thể chất thường gây ra sự suy sụp tâm lý ở các vận động viên ở mọi cấp độ. Nghiên cứu chỉ ra rằng việc duy trì các mối quan hệ cá nhân đa dạng bên ngoài một hoạt động đơn lẻ giúp mọi người giữ vững giá trị bản thân khi phải tạm dừng các hoạt động thể chất.",
+    "fr": "Un coureur amateur nommé Richard Fisher a traversé une crise identitaire inattendue après qu'une blessure à la cheville a interrompu des mois d'entraînement {source}. La perte des routines physiques déclenche souvent une détresse psychologique chez les sportifs de tous niveaux. Les recherches démontrent que le maintien de liens personnels variés en dehors d'une activité unique aide chacun à ancrer son estime de soi lorsque la pratique physique doit s'interrompre.",
+    "de": "Der Hobbyläufer Richard Fisher geriet in eine unerwartete Identitätskrise, als eine Knöchelverletzung sein monatelanges Training abrupt beendete {source}. Der Verlust körperlicher Routinen löst bei Sporttreibenden aller Leistungsstufen häufig psychische Belastungen aus. Studien belegen, dass vielfältige soziale Kontakte außerhalb einer einzelnen Sportart Menschen dabei helfen, ihren Selbstwert zu verankern, wenn sportliche Aktivitäten ruhen müssen.",
+    "es": "Un corredor aficionado llamado Richard Fisher afrontó una inesperada crisis de identidad luego de que una lesión de tobillo frenara meses de entrenamiento {source}. La pérdida de las rutinas físicas a menudo desencadena angustia psicológica en atletas de todos los niveles. Las investigaciones demuestran que mantener vínculos personales diversos fuera de una única actividad ayuda a las personas a afianzar su autoestima cuando la actividad física debe pausarse."
   },
   "sections": [
     {
       "heading_en": "The Identity Loss",
       "heading_vi": "Mất Mát Bản Sắc",
       "body_en": "An audible pop on a staircase led Fisher to the ground and a months-long running ban {source}. Physical recovery proved straightforward compared to the psychological impact of losing a primary personal identifier. Amateurs and professionals alike face similar mental health struggles when an injury abruptly halts their athletic routines and community roles.",
-      "body_vi": "Một tiếng nớp rõ trên bậc cầu thang khiến Fisher ngã xuống đất và phải cấm chạy trong nhiều tháng {source}. Quá trình phục hồi thể chất tỏ ra đơn giản hơn so với tác động tâm lý khi mất đi một định danh cá nhân chính. Cả vận động viên nghiệp dư lẫn chuyên nghiệp đều đối mặt với những vấn đề sức khỏe tinh thần tương tự khi chấn thương đột ngột chấm dứt các thói quen vận động và vai trò cộng đồng của họ."
+      "body_vi": "Một tiếng nớp rõ trên bậc cầu thang khiến Fisher ngã xuống đất và phải cấm chạy trong nhiều tháng {source}. Quá trình phục hồi thể chất tỏ ra đơn giản hơn so với tác động tâm lý khi mất đi một định danh cá nhân chính. Cả vận động viên nghiệp dư lẫn chuyên nghiệp đều đối mặt với những vấn đề sức khỏe tinh thần tương tự khi chấn thương đột ngột chấm dứt các thói quen vận động và vai trò cộng đồng của họ.",
+      "heading_fr": "La perte d'identité",
+      "body_fr": "Un craquement audible dans un escalier a projeté Fisher au sol et lui a valu plusieurs mois d'interdiction de courir {source}. La guérison physique s'est révélée simple en comparaison du choc psychologique lié à la perte d'un marqueur identitaire fondamental. Amateurs comme professionnels traversent des épreuves psychologiques similaires lorsqu'une blessure interrompt brutalement leurs habitudes sportives et leur rôle au sein de leur communauté.",
+      "heading_de": "Der Identitätsverlust",
+      "body_de": "Ein vernehmliches Knacken im Treppenhaus riss Fisher zu Boden und brachte ihm eine monatelange Laufpause ein {source}. Die körperliche Genesung verlief unkompliziert im Vergleich zu den seelischen Folgen, wenn ein zentrales Identifikationsmerkmal verloren geht. Freizeitsportler wie Profis stehen gleichermaßen vor psychischen Herausforderungen, wenn eine Verletzung ihre sportlichen Routinen und ihre Rolle in der Gemeinschaft jäh unterbricht.",
+      "heading_es": "La pérdida de identidad",
+      "body_es": "Un chasquido perceptible en una escalera hizo caer a Fisher y conllevó una prohibición de correr durante meses {source}. La recuperación física resultó sencilla en comparación con el impacto psicológico de perder una seña de identidad principal. Tanto aficionados como profesionales afrontan dificultades de salud mental similares cuando una lesión detiene abruptamente sus rutinas deportivas y sus roles comunitarios."
     },
     {
       "heading_en": "The Research Clue",
       "heading_vi": "Manh Mối Từ Nghiên Cứu",
       "body_en": "Studies on retiring athletes reveal that individuals whose entire social circle rests on one sport struggle most with the transition {source}. Researchers note that leaving a sport destroys both an individual sense of self and community connection. Athletes who rely solely on competition face severe distress when that structure disappears.",
-      "body_vi": "Các nghiên cứu về vận động viên giải nghệ cho thấy những cá nhân có toàn bộ vòng tròn xã hội dựa vào một môn thể thao duy nhất phải vật lộn nhiều nhất với quá trình chuyển đổi {source}. Các nhà nghiên cứu lưu ý rằng việc rời bỏ môn thể thao phá hủy cả ý thức cá nhân về bản thân lẫn sự kết nối cộng đồng. Những vận động viên chỉ dựa hoàn toàn vào thi đấu phải đối mặt với nỗi đau khổ dữ dội khi cấu trúc đó biến mất."
+      "body_vi": "Các nghiên cứu về vận động viên giải nghệ cho thấy những cá nhân có toàn bộ vòng tròn xã hội dựa vào một môn thể thao duy nhất phải vật lộn nhiều nhất với quá trình chuyển đổi {source}. Các nhà nghiên cứu lưu ý rằng việc rời bỏ môn thể thao phá hủy cả ý thức cá nhân về bản thân lẫn sự kết nối cộng đồng. Những vận động viên chỉ dựa hoàn toàn vào thi đấu phải đối mặt với nỗi đau khổ dữ dội khi cấu trúc đó biến mất.",
+      "heading_fr": "L'éclairage de la recherche",
+      "body_fr": "Les études menées sur les sportifs en fin de carrière révèlent que les personnes dont l'entourage social repose entièrement sur un seul sport éprouvent les plus grandes difficultés lors de cette transition {source}. Les chercheurs soulignent que l'abandon d'une discipline détruit à la fois le sentiment d'identité personnelle et l'ancrage communautaire. Les athlètes qui dépendent exclusivement de la compétition sombrent dans un profond désarroi dès lors que ce cadre s'effondre.",
+      "heading_de": "Hinweise aus der Forschung",
+      "body_de": "Untersuchungen an Athletinnen und Athleten im Ruhestand zeigen, dass Personen, deren gesamter Freundeskreis auf einer einzigen Sportart basiert, den Übergang am schwersten bewältigen {source}. Forschende betonen, dass der Abschied vom Sport sowohl das persönliche Selbstverständnis als auch die Verbundenheit zur Gemeinschaft beschädigen kann. Wer sich ausschließlich über den Wettkampf definiert, gerät in erhebliche seelische Not, sobald dieses Gefüge wegbricht.",
+      "heading_es": "La pista de la investigación",
+      "body_es": "Los estudios sobre deportistas en retiro revelan que las personas cuyo círculo social depende por completo de una sola disciplina sufren más durante la transición {source}. Los investigadores señalan que abandonar el deporte desmorona tanto el sentido de identidad individual como la conexión comunitaria. Los atletas que dependen exclusivamente de la competición afrontan una grave angustia cuando esa estructura desaparece."
     },
     {
       "heading_en": "Finding New Anchors",
       "heading_vi": "Tìm Kiếm Điểm Neo Mới",
       "body_en": "Athletes who maintain outside friendships and varied interests cope better with forced retirement {source}. These individuals successfully anchor their identity in new communities while keeping ties to their former teams through coaching or mentoring. Diversifying personal interests ensures that a single physical setback does not destroy a person's entire sense of worth.",
-      "body_vi": "Những vận động viên duy trì tình bạn bên ngoài và sở thích đa dạng đối phó tốt hơn với việc buộc phải giải nghệ {source}. Những cá nhân này neo đậu thành công bản sắc của mình trong các cộng đồng mới đồng thời duy trì mối liên kết với các đội cũ thông qua việc huấn luyện hoặc kèm cặp. Việc đa dạng hóa các sở thích cá nhân đảm bảo rằng một trở ngại thể chất duy nhất không phá hủy toàn bộ ý thức về giá trị của một người."
+      "body_vi": "Những vận động viên duy trì tình bạn bên ngoài và sở thích đa dạng đối phó tốt hơn với việc buộc phải giải nghệ {source}. Những cá nhân này neo đậu thành công bản sắc của mình trong các cộng đồng mới đồng thời duy trì mối liên kết với các đội cũ thông qua việc huấn luyện hoặc kèm cặp. Việc đa dạng hóa các sở thích cá nhân đảm bảo rằng một trở ngại thể chất duy nhất không phá hủy toàn bộ ý thức về giá trị của một người.",
+      "heading_fr": "Trouver de nouveaux points d'ancrage",
+      "body_fr": "Les athlètes qui préservent des amitiés extérieures et des centres d'intérêt variés surmontent mieux un arrêt forcé {source}. Ces sportifs parviennent à ancrer leur identité au sein de nouveaux groupes tout en gardant un lien avec leur ancienne équipe grâce à l'entraînement ou au mentorat. Diversifier ses activités garantit qu'un simple revers physique ne vienne pas anéantir toute l'estime de soi d'un individu.",
+      "heading_de": "Neue Anker finden",
+      "body_de": "Sportlerinnen und Sportler, die Freundschaften außerhalb ihres Sports pflegen und vielseitige Interessen verfolgen, kommen mit einem erzwungenen Karriereende besser zurecht {source}. Sie schaffen es, ihre Identität in neuen Gemeinschaften zu verankern, während sie durch Mentorentätigkeiten den Kontakt zu ihren früheren Teams aufrechterhalten. Eine gezielte Diversifizierung persönlicher Interessen stellt sicher, dass ein einzelner körperlicher Rückschlag nicht das gesamte Selbstwertgefühl zerstört.",
+      "heading_es": "Encontrar nuevos anclajes",
+      "body_es": "Los deportistas que conservan amistades externas e intereses variados sobrellevan mejor la retirada involuntaria {source}. Estas personas logran anclar su identidad en nuevas comunidades mientras mantienen lazos con sus antiguos equipos mediante el entrenamiento o la mentoría. Diversificar los intereses personales garantiza que un solo revés físico no destruya por completo la autoestima de una persona."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/661/1080/1920",
+    "url": "https://images.unsplash.com/photo-1422222948315-28aadb7a2cb8?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Jake Melara",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/bA68bHUS9mA"
+    "sourceUrl": "https://unsplash.com/photos/bA68bHUS9mA",
+    "wide": "https://images.unsplash.com/photo-1422222948315-28aadb7a2cb8?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jakemelara?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Identity is like a house with many rooms; if one door closes, you need others to enter. [p:What activities define you beyond your primary routine?]",
-    "vi": "Bản sắc giống như một ngôi nhà có nhiều phòng; nếu một cánh cửa đóng lại, bạn cần những cửa khác để bước vào. [p:Những hoạt động nào định nghĩa bạn ngoài thói quen chính của bạn?]"
+    "vi": "Bản sắc giống như một ngôi nhà có nhiều phòng; nếu một cánh cửa đóng lại, bạn cần những cửa khác để bước vào. [p:Những hoạt động nào định nghĩa bạn ngoài thói quen chính của bạn?]",
+    "fr": "L'identité ressemble à une maison comportant plusieurs pièces ; si une porte se ferme, il en faut d'autres pour entrer. [p:Quelles activités vous définissent au-delà de votre routine principale ?]",
+    "de": "Die Identität gleicht einem Haus mit vielen Zimmern; wenn sich eine Tür schließt, brauchst du andere, um einzutreten. [p:Welche Aktivitäten definieren dich jenseits deiner gewohnten Routine?]",
+    "es": "La identidad es como una casa con muchas habitaciones: si una puerta se cierra, necesitas otras por donde entrar. [p:¿Qué actividades te definen más allá de tu rutina principal?]"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Liệt kê ba sở thích cá nhân bên ngoài sở thích chính của bạn ngày hôm nay",
       "Liên hệ với một người bạn từ một cộng đồng khác trong tuần này",
       "Dành mười phút để khám phá một kỹ năng phụ hoặc chủ đề học tập"
+    ],
+    "fr": [
+      "Dressez aujourd'hui la liste de trois centres d'intérêt en dehors de votre passion principale",
+      "Prenez contact avec un ami issu d'un autre cercle cette semaine",
+      "Consacrez dix minutes à explorer une compétence secondaire ou un sujet d'étude"
+    ],
+    "de": [
+      "Notiere dir heute drei persönliche Interessen außerhalb deines Haupthobbys",
+      "Melde dich diese Woche bei einer befreundeten Person aus einem anderen Umfeld",
+      "Nimm dir zehn Minuten Zeit, um eine weitere Fertigkeit oder ein neues Lernthema zu erkunden"
+    ],
+    "es": [
+      "Enumera hoy tres intereses personales al margen de tu afición principal",
+      "Ponte en contacto esta semana con una amistad de una comunidad distinta",
+      "Dedica diez minutos a explorar una habilidad secundaria o un tema de estudio"
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,75 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "identity crisis": "A period of uncertainty and confusion about one's personal identity and sense of purpose.",
+      "psychological distress": "Emotional suffering, anxiety, or mental anguish triggered by a disruptive event or life change.",
+      "self-worth": "An individual's personal belief in their own value, dignity, and importance as a human being.",
+      "personal identifier": "A defining activity, label, or characteristic through which someone recognizes and expresses their identity.",
+      "mental health struggles": "Difficulties affecting an individual's emotional, psychological, or social well-being and daily functioning.",
+      "social circle": "The network of friends, teammates, and acquaintances that make up someone's regular social interactions.",
+      "sense of self": "An individual's awareness and understanding of who they are distinct from others.",
+      "community connection": "A feeling of belonging, membership, and bonding within a shared group or organization.",
+      "forced retirement": "The involuntary end of an athletic career or sport participation, typically due to injury.",
+      "physical setback": "A bodily injury or physical limitation that hinders training progress or routine activities."
+    },
+    "vi": {
+      "tiếng nớp": "Âm thanh gãy hoặc trật khớp đột ngột phát ra khi gặp chấn thương.",
+      "bản sắc": "Cảm nhận cốt lõi của một người về việc mình là ai.",
+      "định danh": "Vai trò hoặc tư cách giúp một người xác định bản thân.",
+      "neo đậu": "Gắn kết và tìm chỗ dựa vững chắc cho cảm xúc và nhận thức.",
+      "giải nghệ": "Việc từ bỏ hoàn toàn sự nghiệp thi đấu thể thao.",
+      "kèm cặp": "Hướng dẫn, hỗ trợ trực tiếp và truyền đạt kinh nghiệm cho người khác.",
+      "đa dạng hóa": "Mở rộng thêm nhiều mối quan tâm và hoạt động khác nhau.",
+      "cấu trúc": "Lối sống, thói quen sinh hoạt và lịch trình thi đấu quen thuộc.",
+      "chuyển đổi": "Quá trình thay đổi để thích nghi khi rời xa thể thao.",
+      "khủng hoảng": "Tình trạng hoang mang, mất thăng bằng tâm lý nghiêm trọng."
+    },
+    "fr": {
+      "crise identitaire": "Remise en question profonde de ses repères, de sa place et de sa propre définition personnelle.",
+      "détresse psychologique": "État de souffrance émotionnelle intense provoqué par un bouleversement majeur du quotidien.",
+      "estime de soi": "Valeur et considération globale qu'une personne s'accorde à elle-même.",
+      "marqueur identitaire": "Élément ou passion par lesquels un individu se définit socialement et personnellement.",
+      "fin de carrière": "Période d'arrêt définitif de la compétition sportive ou de la pratique de haut niveau.",
+      "ancrage communautaire": "Sentiment d'appartenance et d'intégration à une communauté partageant les mêmes centres d'intérêt.",
+      "arrêt forcé": "Cessation involontaire et brutale d'une pratique sportive consécutive à une blessure.",
+      "mentorat": "Accompagnement et transmission d'expérience auprès de sportifs moins aguerris.",
+      "revers physique": "Accident corporel ou traumatisme physique venant interrompre la pratique sportive habituelle.",
+      "routine principale": "Habitude structurante qui organise le quotidien et concentre l'essentiel de l'attention d'un individu."
+    },
+    "de": {
+      "identitätskrise": "Phase der Verunsicherung über das eigene Selbstbild, wenn gewohnte Rollen plötzlich wegbrechen.",
+      "selbstwert": "Die innere Anerkennung und Wertschätzung, die eine Person sich selbst zuschreibt.",
+      "laufpause": "Erzwungene Unterbrechung des Lauftrainings, meist verordnet zur Regeneration nach einer Verletzung.",
+      "identifikationsmerkmal": "Wesentlicher Bestandteil oder Rolle, worüber sich eine Person maßgeblich selbst wahrnimmt.",
+      "freizeitsportler": "Personen, die Sport primär zur Erholung oder Fitness betreiben, ohne Erwerbszweck.",
+      "selbstverständnis": "Das eigene Bild und Bewusstsein darüber, wer man ist und was einen ausmacht.",
+      "karriereende": "Der endgültige oder erzwungene Ausstieg aus dem aktiven Wettkampfgeschehen.",
+      "mentorentätigkeiten": "Aufgaben, bei denen erfahrene Personen ihr Wissen beratend an Jüngere weitergeben.",
+      "diversifizierung": "Die gezielte Auffächerung von Interessen und Hobbys auf unterschiedliche Lebensbereiche.",
+      "selbstwertgefühl": "Die emotionale Gesamteinschätzung des eigenen Wertes und der eigenen Fähigkeiten."
+    },
+    "es": {
+      "crisis de identidad": "Conflicto interno en el que una persona cuestiona quién es al perder su rol principal.",
+      "angustia psicológica": "Malestar emocional profundo provocado por la pérdida repentina de hábitos cotidianos y bienestar.",
+      "autoestima": "Sentimiento de valoración y aprecio que una persona tiene sobre su propia valía y dignidad.",
+      "chasquido": "Sonido seco y repentino en una articulación que suele señalar una lesión ligamentosa o tendinosa.",
+      "roles comunitarios": "Papeles de interacción y pertenencia que una persona desempeña dentro de un grupo social o deportivo.",
+      "deportistas en retiro": "Atletas que concluyen su etapa de competencia activa, ya sea de forma planificada o forzada.",
+      "conexión comunitaria": "Sensación de pertenencia e integración recíproca entre un individuo y su círculo social habitual.",
+      "retirada involuntaria": "Abandono forzado y definitivo del deporte ocasionado por lesiones u otras causas imprevistas.",
+      "mentoría": "Orientación y acompañamiento brindado a deportistas más noveles a partir de la propia experiencia.",
+      "revés físico": "Impedimento o daño corporal imprevisto que bloquea la práctica habitual de ejercicio."
+    }
   }
 }

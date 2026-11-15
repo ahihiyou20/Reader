@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Germany's 1923 hyperinflation: how a currency collapsed",
-    "vi": "Siêu lạm phát Đức 1923: một đồng tiền sụp đổ như thế nào"
+    "vi": "Siêu lạm phát Đức 1923: một đồng tiền sụp đổ như thế nào",
+    "fr": "L'hyperinflation allemande de 1923 : l'effondrement d'une monnaie",
+    "de": "Deutschlands Hyperinflation 1923: Wie eine Währung kollabierte",
+    "es": "La hiperinflación alemana de 1923: cómo colapsó una moneda"
   },
   "hook": {
     "en": "In mid-1922 a US dollar cost about 320 German marks. By November 1923 it cost 4.2105 trillion. A loaf of bread in Berlin that cost around 160 marks at the end of 1922 cost 200 billion marks a year later. The collapse had a debt, a foreign occupation and a printing press behind it, and [p:it ended within weeks] once the money supply was fixed.",
-    "vi": "Giữa năm 1922, một đô la Mỹ đổi được khoảng 320 mark Đức. Đến tháng 11 năm 1923, nó đổi được 4,2105 nghìn tỷ. Một ổ bánh mì ở Berlin giá khoảng 160 mark cuối năm 1922 thì một năm sau giá 200 tỷ mark. Sự sụp đổ có một món nợ, một cuộc chiếm đóng của nước ngoài và một máy in tiền đứng sau, và [p:nó chấm dứt trong vài tuần] khi lượng tiền được khóa lại."
+    "vi": "Giữa năm 1922, một đô la Mỹ đổi được khoảng 320 mark Đức. Đến tháng 11 năm 1923, nó đổi được 4,2105 nghìn tỷ. Một ổ bánh mì ở Berlin giá khoảng 160 mark cuối năm 1922 thì một năm sau giá 200 tỷ mark. Sự sụp đổ có một món nợ, một cuộc chiếm đóng của nước ngoài và một máy in tiền đứng sau, và [p:nó chấm dứt trong vài tuần] khi lượng tiền được khóa lại.",
+    "fr": "À la mi-1922, un dollar américain valait environ 320 marks allemands. En novembre 1923, il en valait 4,2105 billions. À Berlin, une miche de pain qui coûtait environ 160 marks à la fin de 1922 en coûtait 200 milliards un an plus tard. Cet effondrement trouvait son origine dans la dette, une occupation étrangère et la planche à billets, et [p:il prit fin en quelques semaines] dès lors que la masse monétaire fut stabilisée.",
+    "de": "Mitte 1922 kostete ein US-Dollar rund 320 deutsche Mark. Im November 1923 lag der Preis bei 4,2105 Billionen. Ein Laib Brot in Berlin, der Ende 1922 etwa 160 Mark kostete, schlug ein Jahr später mit 200 Milliarden Mark zu Buche. Hinter dem Zusammenbruch standen Schulden, eine ausländische Besatzung und die Notenpresse – und [p:er endete innerhalb weniger Wochen], sobald die Geldmenge begrenzt wurde.",
+    "es": "A mediados de 1922, un dólar estadounidense costaba unos 320 marcos alemanes. En noviembre de 1923 costaba 4.2105 billones. Una barra de pan en Berlín que a finales de 1922 costaba alrededor de 160 marcos, un año después costaba 200 mil millones de marcos. Detrás del colapso hubo una deuda, una ocupación extranjera y una máquina de imprimir billetes, y [p:terminó en cuestión de semanas] una vez que se estabilizó la masa monetaria."
   },
   "sections": [
     {
       "heading_en": "A war paid for by borrowing",
       "heading_vi": "Một cuộc chiến trả bằng đi vay",
       "body_en": "Germany suspended the gold standard when war broke out in 1914. Unlike France, which introduced its first income tax, the Emperor and the Reichstag chose to fund the war entirely through borrowing, rather than risk angering the public {wiki-weimar}. The plan assumed victory and reparations from the losers. Instead Germany lost, and the new Weimar Republic inherited a national debt of 156 billion marks in 1918. Even during the war the mark slid from 4.2 to 7.9 to the dollar. John Maynard Keynes wrote in 1919 that governments unable to raise loans or taxes had 'printed notes for the balance'.",
-      "body_vi": "Đức đình chỉ chế độ bản vị vàng khi chiến tranh nổ ra năm 1914. Khác với Pháp, nước đưa ra thuế thu nhập đầu tiên, Hoàng đế và Quốc hội Đức chọn tài trợ chiến tranh hoàn toàn bằng vay mượn, để khỏi làm công chúng phật ý {wiki-weimar}. Kế hoạch giả định chiến thắng và bồi thường từ bên thua. Thay vào đó Đức thua, và Cộng hòa Weimar non trẻ thừa hưởng khoản nợ quốc gia 156 tỷ mark vào năm 1918. Ngay trong chiến tranh, đồng mark đã trượt từ 4,2 xuống 7,9 mark đổi một đô la. John Maynard Keynes viết năm 1919 rằng các chính phủ không vay được hay thu được thuế đã 'in tiền cho phần còn thiếu'."
+      "body_vi": "Đức đình chỉ chế độ bản vị vàng khi chiến tranh nổ ra năm 1914. Khác với Pháp, nước đưa ra thuế thu nhập đầu tiên, Hoàng đế và Quốc hội Đức chọn tài trợ chiến tranh hoàn toàn bằng vay mượn, để khỏi làm công chúng phật ý {wiki-weimar}. Kế hoạch giả định chiến thắng và bồi thường từ bên thua. Thay vào đó Đức thua, và Cộng hòa Weimar non trẻ thừa hưởng khoản nợ quốc gia 156 tỷ mark vào năm 1918. Ngay trong chiến tranh, đồng mark đã trượt từ 4,2 xuống 7,9 mark đổi một đô la. John Maynard Keynes viết năm 1919 rằng các chính phủ không vay được hay thu được thuế đã 'in tiền cho phần còn thiếu'.",
+      "heading_fr": "Une guerre financée par l'emprunt",
+      "body_fr": "L'Allemagne suspendit l'étalon-or dès le déclenchement de la guerre en 1914. Contrairement à la France, qui instaura son premier impôt sur le revenu, l'Empereur et le Reichstag choisirent de financer le conflit exclusivement par l'emprunt, plutôt que de risquer de s'aliéner l'opinion publique {wiki-weimar}. Ce plan tablait sur une victoire et sur le paiement de réparations par les vaincus. Mais l'Allemagne fut vaincue, et la toute nouvelle république de Weimar hérita en 1918 d'une dette nationale de 156 milliards de marks. Dès la guerre, le mark glissa de 4,2 à 7,9 pour un dollar. John Maynard Keynes écrivit en 1919 que les gouvernements incapables d'emprunter ou de lever des impôts avaient « imprimé des billets pour solder le reste ».",
+      "heading_de": "Ein durch Schulden finanzierter Krieg",
+      "body_de": "Deutschland setzte bei Kriegsausbruch 1914 den Goldstandard aus. Anders als Frankreich, das seine erste Einkommensteuer einführte, entschieden sich Kaiser und Reichstag dafür, den Krieg vollständig über Kredite zu finanzieren, statt den Unmut der Bevölkerung zu riskieren {wiki-weimar}. Der Plan setzte auf einen Sieg und Reparationen der Verlierer. Stattdessen verlor Deutschland, und die neue Weimarer Republik erbte 1918 eine Staatsverschuldung von 156 Milliarden Mark. Bereits während des Krieges fiel die Mark von 4,2 auf 7,9 zum Dollar. John Maynard Keynes schrieb 1919, dass Regierungen, die weder Kredite noch Steuern einnehmen konnten, ‚für den Restbetrag Noten gedruckt‘ hätten.",
+      "heading_es": "Una guerra financiada con deuda",
+      "body_es": "Alemania suspendió el patrón oro cuando estalló la guerra en 1914. A diferencia de Francia, que introdujo su primer impuesto sobre la renta, el emperador y el Reichstag optaron por financiar la guerra íntegramente mediante deuda, antes que arriesgarse a enfurecer a la población {wiki-weimar}. El plan asumía la victoria y reparaciones de los perdedores. En cambio, Alemania perdió, y la nueva República de Weimar heredó una deuda nacional de 156 mil millones de marcos en 1918. Incluso durante la guerra, el marco cayó de 4.2 a 7.9 frente al dólar. John Maynard Keynes escribió en 1919 que los gobiernos incapaces de conseguir préstamos o recaudar impuestos habían 'impreso billetes para cubrir el saldo'."
     },
     {
       "heading_en": "Reparations and a central bank that bought dollars",
       "heading_vi": "Bồi thường và một ngân hàng trung ương đi mua đô la",
       "body_en": "In May 1921 the London Schedule of Payments fixed the total owed at 132 billion gold marks, of which 50 billion were due on quarterly deadlines {wiki-weimar}. From August 1921 the Reichsbank president, Rudolf Havenstein, bought foreign currency with marks at any price, which sped up the fall of the mark. German officials said this was to make cash payments. British and French experts suspected an effort to avoid paying. Historians and economists still disagree on how far reparations caused the hyperinflation, and the same account notes that inflation reduced domestic wartime debts relative to government revenue.",
-      "body_vi": "Tháng 5 năm 1921, Lịch trình thanh toán London ấn định tổng số nợ là 132 tỷ mark vàng, trong đó 50 tỷ đến hạn theo các kỳ hằng quý {wiki-weimar}. Từ tháng 8 năm 1921, chủ tịch Reichsbank Rudolf Havenstein mua ngoại tệ bằng mark với bất kỳ giá nào, khiến đồng mark rơi nhanh hơn. Quan chức Đức nói làm vậy để trả tiền mặt. Các chuyên gia Anh và Pháp ngờ rằng đó là nỗ lực để khỏi phải trả. Các sử gia và nhà kinh tế vẫn bất đồng việc bồi thường gây ra siêu lạm phát đến mức nào, và cùng nguồn ghi nhận lạm phát đã làm các khoản nợ chiến tranh trong nước giảm đi so với doanh thu chính phủ."
+      "body_vi": "Tháng 5 năm 1921, Lịch trình thanh toán London ấn định tổng số nợ là 132 tỷ mark vàng, trong đó 50 tỷ đến hạn theo các kỳ hằng quý {wiki-weimar}. Từ tháng 8 năm 1921, chủ tịch Reichsbank Rudolf Havenstein mua ngoại tệ bằng mark với bất kỳ giá nào, khiến đồng mark rơi nhanh hơn. Quan chức Đức nói làm vậy để trả tiền mặt. Các chuyên gia Anh và Pháp ngờ rằng đó là nỗ lực để khỏi phải trả. Các sử gia và nhà kinh tế vẫn bất đồng việc bồi thường gây ra siêu lạm phát đến mức nào, và cùng nguồn ghi nhận lạm phát đã làm các khoản nợ chiến tranh trong nước giảm đi so với doanh thu chính phủ.",
+      "heading_fr": "Les réparations et une banque centrale acheteuse de dollars",
+      "body_fr": "En mai 1921, l'état des paiements de Londres fixa le montant total dû à 132 milliards de marks-or, dont 50 milliards payables selon des échéances trimestrielles {wiki-weimar}. À partir d'août 1921, le président de la Reichsbank, Rudolf Havenstein, acheta des devises étrangères avec des marks à n'importe quel prix, ce qui précipita la chute du mark. Les responsables allemands affirmèrent agir ainsi pour assurer les règlements en espèces. Des experts britanniques et français y soupçonnèrent une manœuvre pour se soustraire aux paiements. Les historiens et les économistes s'opposent encore sur la mesure dans laquelle les réparations ont provoqué l'hyperinflation, et la même source souligne que l'inflation allégea la dette intérieure de guerre par rapport aux recettes publiques.",
+      "heading_de": "Reparationen und eine Zentralbank, die Dollar kaufte",
+      "body_de": "Im Mai 1921 legte der Londoner Zahlungsplan die Gesamtschuld auf 132 Milliarden Goldmark fest, von denen 50 Milliarden in vierteljährlichen Fristen fällig waren {wiki-weimar}. Ab August 1921 kaufte Reichsbankpräsident Rudolf Havenstein um jeden Preis Devisen gegen Mark, was den Verfall der Mark beschleunigte. Deutsche Regierungsvertreter erklärten, dies diene der Leistung von Barzahlungen. Britische und französische Experten vermuteten den Versuch, sich den Zahlungen zu entziehen. Historiker und Ökonomen sind bis heute uneins darüber, inwieweit die Reparationen die Hyperinflation verursachten, und derselbe Bericht verweist darauf, dass die Inflation die inländischen Kriegsschulden im Verhältnis zu den Staatseinnahmen verringerte.",
+      "heading_es": "Reparaciones y un banco central que compraba dólares",
+      "body_es": "En mayo de 1921, el Plan de Pagos de Londres fijó la deuda total en 132 mil millones de marcos de oro, de los cuales 50 mil millones debían abonarse en plazos trimestrales {wiki-weimar}. A partir de agosto de 1921, el presidente del Reichsbank, Rudolf Havenstein, compró divisas extranjeras con marcos a cualquier precio, lo que aceleró la caída del marco. Los funcionarios alemanes afirmaron que esto servía para realizar pagos en efectivo. Expertos británicos y franceses sospechaban que se trataba de un intento de evitar el pago. Historiadores y economistas todavía discrepan sobre hasta qué punto las reparaciones causaron la hiperinflación, y el mismo relato señala que la inflación redujo las deudas internas del tiempo de guerra en relación con los ingresos del gobierno."
     },
     {
       "heading_en": "From 320 to 7,400 marks per dollar",
       "heading_vi": "Từ 320 lên 7.400 mark đổi một đô la",
       "body_en": "In the first half of 1922 the mark held at about 320 per dollar, and international conferences, including one organised by the banker J. P. Morgan Jr., produced no workable plan {wiki-weimar}. Then the foreign minister Walther Rathenau was assassinated on 22 June. By December the mark stood at 7,400 to the dollar. The cost-of-living index went from 41 in June 1922 to 685 in December, a nearly 17-fold rise in six months. This is how a hyperinflation looks from inside: for a long stretch prices rise steadily, and then the pace itself speeds up as people try to spend money before it loses more value.",
-      "body_vi": "Nửa đầu năm 1922, đồng mark giữ ở khoảng 320 mark đổi một đô la, và các hội nghị quốc tế, trong đó có hội nghị do nhà ngân hàng J. P. Morgan Jr. tổ chức, không đưa ra được kế hoạch khả thi {wiki-weimar}. Rồi ngoại trưởng Walther Rathenau bị ám sát ngày 22 tháng 6. Đến tháng 12, đồng mark ở mức 7.400 đổi một đô la. Chỉ số giá sinh hoạt tăng từ 41 vào tháng 6 năm 1922 lên 685 vào tháng 12, gần 17 lần trong sáu tháng. Siêu lạm phát nhìn từ bên trong là như vậy: trong một thời gian dài giá cả tăng đều, rồi chính nhịp tăng nhanh lên khi người ta tìm cách tiêu tiền trước khi nó mất thêm giá trị."
+      "body_vi": "Nửa đầu năm 1922, đồng mark giữ ở khoảng 320 mark đổi một đô la, và các hội nghị quốc tế, trong đó có hội nghị do nhà ngân hàng J. P. Morgan Jr. tổ chức, không đưa ra được kế hoạch khả thi {wiki-weimar}. Rồi ngoại trưởng Walther Rathenau bị ám sát ngày 22 tháng 6. Đến tháng 12, đồng mark ở mức 7.400 đổi một đô la. Chỉ số giá sinh hoạt tăng từ 41 vào tháng 6 năm 1922 lên 685 vào tháng 12, gần 17 lần trong sáu tháng. Siêu lạm phát nhìn từ bên trong là như vậy: trong một thời gian dài giá cả tăng đều, rồi chính nhịp tăng nhanh lên khi người ta tìm cách tiêu tiền trước khi nó mất thêm giá trị.",
+      "heading_fr": "De 320 à 7 400 marks pour un dollar",
+      "body_fr": "Au premier semestre 1922, le mark se maintint autour de 320 pour un dollar, et les conférences internationales, dont une organisée par le banquier J. P. Morgan Jr., n'aboutirent à aucun plan viable {wiki-weimar}. Puis, le ministre des Affaires étrangères Walther Rathenau fut assassiné le 22 juin. En décembre, le mark s'établissait à 7 400 pour un dollar. L'indice du coût de la vie passa de 41 en juin 1922 à 685 en décembre, soit une multiplication par près de 17 en six mois. Voilà à quoi ressemble l'hyperinflation vue de l'intérieur : pendant une longue période, les prix augmentent régulièrement, puis le rythme s'accélère à mesure que chacun s'efforce de dépenser son argent avant qu'il ne perde encore de sa valeur.",
+      "heading_de": "Von 320 auf 7.400 Mark pro Dollar",
+      "body_de": "In der ersten Hälfte des Jahres 1922 hielt sich die Mark bei rund 320 pro Dollar, und internationale Konferenzen – darunter eine vom Bankier J. P. Morgan Jr. organisierte – brachten keinen tragfähigen Plan hervor {wiki-weimar}. Dann wurde am 22. Juni Außenminister Walther Rathenau ermordet. Bis Dezember stand die Mark bei 7.400 zum Dollar. Der Lebenshaltungskostenindex kletterte von 41 im Juni 1922 auf 685 im Dezember – ein fast 17-facher Anstieg in sechs Monaten. So sieht eine Hyperinflation von innen aus: Über eine lange Phase steigen die Preise stetig, und dann beschleunigt sich das Tempo selbst, da die Menschen versuchen, Geld auszugeben, bevor es weiter an Wert verliert.",
+      "heading_es": "De 320 a 7,400 marcos por dólar",
+      "body_es": "En el primer semestre de 1922, el marco se mantuvo en unos 320 por dólar, y las conferencias internacionales, incluida una organizada por el banquero J. P. Morgan Jr., no produjeron ningún plan viable {wiki-weimar}. Luego, el ministro de Asuntos Exteriores Walther Rathenau fue asesinado el 22 de junio. Para diciembre, el marco se situaba en 7,400 por dólar. El índice del costo de vida pasó de 41 en junio de 1922 a 685 en diciembre, un aumento de casi 17 veces en seis meses. Así se ve una hiperinflación desde dentro: durante un largo período los precios suben de forma constante, y luego el propio ritmo se acelera a medida que la gente intenta gastar el dinero antes de que pierda más valor."
     },
     {
       "heading_en": "The Ruhr occupation",
       "heading_vi": "Cuộc chiếm đóng vùng Ruhr",
       "body_en": "In January 1923, after Germany missed an in-kind reparations instalment of coal for the thirty-fourth time in thirty-six months, French and Belgian troops occupied the Ruhr valley, the main industrial region {wiki-weimar}. About 900 million gold marks of reparations were ultimately secured. Berlin ordered passive resistance, which amounted to a general strike. The strikers still needed wages, and the government paid them by printing more banknotes {wiki-renten}. Tax revenue fell with economic activity at the same time as spending rose, and money printing filled the gap. The mark went into freefall and foreign reserves dwindled.",
-      "body_vi": "Tháng 1 năm 1923, sau khi Đức lỡ một kỳ bồi thường bằng than lần thứ ba mươi tư trong ba mươi sáu tháng, quân Pháp và Bỉ chiếm thung lũng Ruhr, vùng công nghiệp chính {wiki-weimar}. Cuối cùng khoảng 900 triệu mark vàng tiền bồi thường được thu về. Berlin ra lệnh kháng cự thụ động, thực chất là một cuộc tổng đình công. Những người đình công vẫn cần lương, và chính phủ trả bằng cách in thêm tiền giấy {wiki-renten}. Doanh thu thuế giảm cùng với hoạt động kinh tế trong khi chi tiêu tăng, và việc in tiền lấp khoảng trống. Đồng mark rơi tự do và dự trữ ngoại tệ cạn dần."
+      "body_vi": "Tháng 1 năm 1923, sau khi Đức lỡ một kỳ bồi thường bằng than lần thứ ba mươi tư trong ba mươi sáu tháng, quân Pháp và Bỉ chiếm thung lũng Ruhr, vùng công nghiệp chính {wiki-weimar}. Cuối cùng khoảng 900 triệu mark vàng tiền bồi thường được thu về. Berlin ra lệnh kháng cự thụ động, thực chất là một cuộc tổng đình công. Những người đình công vẫn cần lương, và chính phủ trả bằng cách in thêm tiền giấy {wiki-renten}. Doanh thu thuế giảm cùng với hoạt động kinh tế trong khi chi tiêu tăng, và việc in tiền lấp khoảng trống. Đồng mark rơi tự do và dự trữ ngoại tệ cạn dần.",
+      "heading_fr": "L'occupation de la Ruhr",
+      "body_fr": "En janvier 1923, après que l'Allemagne eut manqué pour la trente-quatrième fois en trente-six mois une livraison de réparations en nature sous forme de charbon, les troupes françaises et belges occupèrent la vallée de la Ruhr, principal bassin industriel du pays {wiki-weimar}. Environ 900 millions de marks-or de réparations furent finalement recouvrés. Berlin ordonna la résistance passive, ce qui équivalait à une grève générale. Les grévistes devaient continuer à percevoir leur salaire, et le gouvernement les paya en imprimant davantage de billets de banque {wiki-renten}. Les rentrées fiscales s'effondrèrent avec le ralentissement économique tandis que les dépenses augmentaient, et l'émission monétaire combla le déficit. Le mark entra en chute libre et les réserves de devises fondirent.",
+      "heading_de": "Die Ruhrbesetzung",
+      "body_de": "Im Januar 1923, nachdem Deutschland zum 34. Mal in 36 Monaten mit einer Sachreparationslieferung von Kohle im Rückstand war, besetzten französische und belgische Truppen das Ruhrgebiet, das wichtigste Industriezentrum {wiki-weimar}. Rund 900 Millionen Goldmark an Reparationen wurden letztlich eingetrieben. Berlin ordnete passiven Widerstand an, was einem Generalstreik gleichkam. Die Streikenden benötigten dennoch Löhne, und die Regierung zahlte diese durch das Drucken weiterer Banknoten {wiki-renten}. Die Steuereinnahmen brachen mit der Wirtschaftsleistung ein, während die Ausgaben gleichzeitig stiegen, und das Gelddrucken schloss die Lücke. Die Mark stürzte ins Bodenlose und die Devisenreserven schwanden.",
+      "heading_es": "La ocupación del Ruhr",
+      "body_es": "En enero de 1923, después de que Alemania incumpliera por trigésima cuarta vez en treinta y seis meses una entrega en especie de carbón para las reparaciones, tropas francesas y belgas ocuparon la cuenca del Ruhr, la principal región industrial {wiki-weimar}. Al final se aseguraron unos 900 millones de marcos de oro en reparaciones. Berlín ordenó la resistencia pasiva, lo que equivalió a una huelga general. Los huelguistas aún necesitaban salarios, y el gobierno les pagó imprimiendo más billetes {wiki-renten}. La recaudación tributaria cayó junto con la actividad económica al mismo tiempo que aumentaba el gasto, y la emisión de dinero cubrió la brecha. El marco entró en caída libre y las reservas de divisas se agotaron."
     },
     {
       "heading_en": "Life with money that melted",
       "heading_vi": "Cuộc sống với đồng tiền tan chảy",
       "body_en": "By November 1923 one dollar was worth 4.2105 trillion marks, and bread that cost 160 marks the year before cost 200 billion {wiki-weimar}. People lost confidence in the currency and turned to other money. Cigarettes became widely accepted even though they were never legal tender: easily divisible and valued abroad, they bought goods that paper marks could not. People also held coins and tangible goods in expectation of a currency reform. In effect the public began to treat the mark as 'bad money' and the cigarette as 'good money', partly reversing Gresham's law.",
-      "body_vi": "Đến tháng 11 năm 1923, một đô la đáng giá 4,2105 nghìn tỷ mark, và ổ bánh mì giá 160 mark năm trước nay giá 200 tỷ {wiki-weimar}. Người dân mất niềm tin vào đồng tiền và chuyển sang các dạng tiền khác. Thuốc lá được chấp nhận rộng rãi dù chưa bao giờ là tiền pháp định: dễ chia nhỏ và có giá ở nước ngoài, nó mua được những thứ mà mark giấy không mua nổi. Người ta cũng giữ tiền xu và hàng hóa hữu hình để chờ cải cách tiền tệ. Thực chất công chúng bắt đầu coi đồng mark là 'tiền xấu' và điếu thuốc là 'tiền tốt', phần nào đảo ngược quy luật Gresham."
+      "body_vi": "Đến tháng 11 năm 1923, một đô la đáng giá 4,2105 nghìn tỷ mark, và ổ bánh mì giá 160 mark năm trước nay giá 200 tỷ {wiki-weimar}. Người dân mất niềm tin vào đồng tiền và chuyển sang các dạng tiền khác. Thuốc lá được chấp nhận rộng rãi dù chưa bao giờ là tiền pháp định: dễ chia nhỏ và có giá ở nước ngoài, nó mua được những thứ mà mark giấy không mua nổi. Người ta cũng giữ tiền xu và hàng hóa hữu hình để chờ cải cách tiền tệ. Thực chất công chúng bắt đầu coi đồng mark là 'tiền xấu' và điếu thuốc là 'tiền tốt', phần nào đảo ngược quy luật Gresham.",
+      "heading_fr": "Vivre avec une monnaie qui fondait",
+      "body_fr": "En novembre 1923, un dollar valait 4,2105 billions de marks, et le pain qui coûtait 160 marks l'année précédente en valait désormais 200 milliards {wiki-weimar}. La population perdit confiance dans la devise et se tourna vers d'autres moyens d'échange. Les cigarettes devinrent largement acceptées bien qu'elles n'eussent jamais cours légal : facilement divisibles et reconnues à l'étranger, elles permettaient d'acheter des biens inaccessibles aux marks papier. Les gens conservaient également des pièces de monnaie et des biens tangibles dans l'attente d'une réforme monétaire. En pratique, le public se mit à traiter le mark comme de la « mauvaise monnaie » et la cigarette comme de la « bonne monnaie », inversant en partie la loi de Gresham.",
+      "heading_de": "Leben mit schmelzendem Geld",
+      "body_de": "Im November 1923 war ein Dollar 4,2105 Billionen Mark wert, und Brot, das im Vorjahr 160 Mark gekostet hatte, kostete nun 200 Milliarden {wiki-weimar}. Die Menschen verloren das Vertrauen in die Währung und wichen auf andere Zahlungsmittel aus. Zigaretten fanden breite Akzeptanz, obwohl sie nie gesetzliches Zahlungsmittel waren: leicht teilbar und im Ausland geschätzt, kauften sie Waren, die man für Papiermark nicht mehr bekam. In Erwartung einer Währungsreform hielten die Menschen zudem Münzen und Sachwerte zurück. Praktisch begann die Öffentlichkeit, die Mark als ‚schlechtes Geld‘ und die Zigarette als ‚gutes Geld‘ zu behandeln, was Greshams Gesetz teilweise umkehrte.",
+      "heading_es": "La vida con dinero que se derretía",
+      "body_es": "Para noviembre de 1923, un dólar valía 4.2105 billones de marcos, y el pan que el año anterior costaba 160 marcos pasó a costar 200 mil millones {wiki-weimar}. La gente perdió la confianza en la moneda y recurrió a otros medios de pago. Los cigarrillos pasaron a ser ampliamente aceptados a pesar de que nunca fueron moneda de curso legal: fácilmente divisibles y valorados en el extranjero, compraban bienes que los marcos de papel no podían adquirir. La población también conservó monedas metálicas y bienes tangibles a la espera de una reforma monetaria. En la práctica, el público comenzó a tratar al marco como 'dinero malo' y al cigarrillo como 'dinero bueno', revirtiendo en parte la ley de Gresham."
     },
     {
       "heading_en": "The Rentenmark and the end",
       "heading_vi": "Đồng Rentenmark và hồi kết",
       "body_en": "The fix was fast. Finance Minister Hans Luther's plan created the Rentenmark, introduced in mid-November 1923 and backed by a mortgage on agricultural and business land, since there was no gold to back it {wiki-renten}. Hjalmar Schacht became currency commissioner on 12 November. One Rentenmark was set equal to one trillion old marks, or 4.2 to the dollar, which recalled the pre-war rate. The Reichsbank could no longer discount government Treasury bills, and the budget was balanced by January 1924 {wiki-renten}. Because the quantity was rigidly fixed, people accepted it and its value stayed relatively stable. Some debts were later partly reinstated, with certain mortgages restored at 25% of face value, which set off a wave of corporate bankruptcies {wiki-weimar}.",
-      "body_vi": "Cách chữa diễn ra nhanh. Kế hoạch của Bộ trưởng Tài chính Hans Luther tạo ra đồng Rentenmark, ra đời giữa tháng 11 năm 1923 và được bảo đảm bằng thế chấp đất nông nghiệp và đất kinh doanh, vì không có vàng để bảo đảm {wiki-renten}. Hjalmar Schacht trở thành ủy viên tiền tệ ngày 12 tháng 11. Một Rentenmark được ấn định bằng một nghìn tỷ mark cũ, tức 4,2 mark đổi một đô la, gợi lại tỷ giá trước chiến tranh. Reichsbank không còn được chiết khấu tín phiếu kho bạc của chính phủ, và ngân sách cân bằng vào tháng 1 năm 1924 {wiki-renten}. Vì số lượng bị cố định chặt, người dân chấp nhận nó và giá trị tương đối ổn định. Một số khoản nợ sau đó được khôi phục một phần, với một số khoản thế chấp được trả lại ở mức 25% mệnh giá, điều làm dấy lên một làn sóng phá sản doanh nghiệp {wiki-weimar}."
+      "body_vi": "Cách chữa diễn ra nhanh. Kế hoạch của Bộ trưởng Tài chính Hans Luther tạo ra đồng Rentenmark, ra đời giữa tháng 11 năm 1923 và được bảo đảm bằng thế chấp đất nông nghiệp và đất kinh doanh, vì không có vàng để bảo đảm {wiki-renten}. Hjalmar Schacht trở thành ủy viên tiền tệ ngày 12 tháng 11. Một Rentenmark được ấn định bằng một nghìn tỷ mark cũ, tức 4,2 mark đổi một đô la, gợi lại tỷ giá trước chiến tranh. Reichsbank không còn được chiết khấu tín phiếu kho bạc của chính phủ, và ngân sách cân bằng vào tháng 1 năm 1924 {wiki-renten}. Vì số lượng bị cố định chặt, người dân chấp nhận nó và giá trị tương đối ổn định. Một số khoản nợ sau đó được khôi phục một phần, với một số khoản thế chấp được trả lại ở mức 25% mệnh giá, điều làm dấy lên một làn sóng phá sản doanh nghiệp {wiki-weimar}.",
+      "heading_fr": "Le Rentenmark et le dénouement",
+      "body_fr": "Le redressement fut rapide. Le plan du ministre des Finances Hans Luther créa le Rentenmark, mis en circulation à la mi-novembre 1923 et garanti par une hypothèque sur les terres agricoles et les biens immobiliers industriels, faute d'or pour le gager {wiki-renten}. Hjalmar Schacht devint commissaire à la monnaie le 12 novembre. Un Rentenmark fut fixé à la valeur d'un billion d'anciens marks, soit 4,2 pour un dollar, ce qui rappelait la parité d'avant-guerre. La Reichsbank ne put plus escompter les bons du Trésor, et le budget fut équilibré dès janvier 1924 {wiki-renten}. La quantité émise étant strictement plafonnée, le public l'accepta et sa valeur demeura relativement stable. Certaines créances furent par la suite partiellement réévaluées, certaines hypothèques étant rétablies à 25 % de leur valeur nominale, ce qui déclencha une vague de faillites d'entreprises {wiki-weimar}.",
+      "heading_de": "Die Rentenmark und das Ende",
+      "body_de": "Die Wende kam schnell. Der Plan von Finanzminister Hans Luther schuf die Rentenmark, die Mitte November 1923 eingeführt wurde; da kein Gold zur Deckung vorhanden war, wurde sie durch eine Grundschuld auf landwirtschaftliche und gewerbliche Grundstücke besichert {wiki-renten}. Hjalmar Schacht wurde am 12. November Währungskommissar. Eine Rentenmark wurde einer Billion alter Mark gleichgesetzt, was 4,2 zum Dollar entsprach und an den Vorkriegskurs erinnerte. Die Reichsbank durfte keine Schatzwechsel des Reiches mehr diskontieren, und bis Januar 1924 war der Haushalt ausgeglichen {wiki-renten}. Weil die Geldmenge strikt begrenzt war, fasste die Bevölkerung Vertrauen und der Wert blieb relativ stabil. Einige Schulden wurden später teilweise wieder aufgewertet, wobei bestimmte Hypotheken auf 25 % des Nennwerts wiederhergestellt wurden, was eine Welle von Unternehmenspleiten auslöste {wiki-weimar}.",
+      "heading_es": "El Rentenmark y el final",
+      "body_es": "La solución fue rápida. El plan del ministro de Finanzas Hans Luther creó el Rentenmark, introducido a mediados de noviembre de 1923 y respaldado por una hipoteca sobre tierras agrícolas e industriales, ya que no había oro para respaldarlo {wiki-renten}. Hjalmar Schacht asumió como comisario de la moneda el 12 de noviembre. Se estableció que un Rentenmark equivalía a un billón de marcos antiguos, o 4.2 por dólar, lo que recordaba el tipo de cambio previo a la guerra. El Reichsbank ya no pudo descontar letras del Tesoro del gobierno, y el presupuesto quedó equilibrado para enero de 1924 {wiki-renten}. Dado que la cantidad estaba rígidamente fijada, el público la aceptó y su valor se mantuvo relativamente estable. Más tarde se restablecieron en parte algunas deudas, y ciertas hipotecas se revalorizaron al 25% de su valor nominal, lo que desencadenó una ola de quiebras corporativas {wiki-weimar}."
     }
   ],
   "keyPoint": {
     "en": "Germany's hyperinflation followed war debt, a refusal to tax, reparations and a government that paid for resistance by printing money. [p:It stopped when the supply of money was capped and the budget balanced.] The sources still disagree on how much reparations mattered.",
-    "vi": "Siêu lạm phát ở Đức theo sau nợ chiến tranh, việc né thuế, tiền bồi thường và một chính phủ trả cho cuộc kháng cự bằng cách in tiền. [p:Nó chấm dứt khi lượng tiền bị giới hạn và ngân sách cân bằng.] Các nguồn vẫn bất đồng việc bồi thường quan trọng đến đâu."
+    "vi": "Siêu lạm phát ở Đức theo sau nợ chiến tranh, việc né thuế, tiền bồi thường và một chính phủ trả cho cuộc kháng cự bằng cách in tiền. [p:Nó chấm dứt khi lượng tiền bị giới hạn và ngân sách cân bằng.] Các nguồn vẫn bất đồng việc bồi thường quan trọng đến đâu.",
+    "fr": "L'hyperinflation allemande résulta de la dette de guerre, du refus de recourir à l'impôt, des réparations et d'un gouvernement qui finança la résistance par la planche à billets. [p:Elle s'arrêta lorsque la masse monétaire fut plafonnée et le budget équilibré.] Les sources divergent toujours sur l'impact réel des réparations.",
+    "de": "Deutschlands Hyperinflation folgte auf Kriegsschulden, die Weigerung, Steuern zu erheben, Reparationen und eine Regierung, die den Widerstand über die Notenpresse finanzierte. [p:Sie stoppte, als die Geldmenge gedeckelt und der Haushalt ausgeglichen wurde.] Die Quellen sind sich bis heute uneins, welches Gewicht den Reparationen zukam.",
+    "es": "La hiperinflación alemana se debió a la deuda de guerra, a la negativa a cobrar impuestos, a las reparaciones y a un gobierno que financió la resistencia imprimiendo dinero. [p:Se detuvo cuando se limitó la oferta monetaria y se equilibró el presupuesto.] Las fuentes aún discrepan sobre qué tan determinantes fueron las reparaciones."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Tìm số liệu lạm phát hằng năm gần đây của nước bạn và so với mức tăng gần 17 lần trong sáu tháng của Đức năm 1922.",
       "Tìm hiểu ai quyết định lượng tiền ở nơi bạn sống và điều gì giới hạn cơ quan đó.",
       "Đọc một đoạn của nguồn gốc về thời kỳ này, như sách của Keynes năm 1919, và ghi lại điều nó nói về cách tài trợ chiến tranh."
+    ],
+    "fr": [
+      "Trouvez un chiffre récent d'inflation annuelle pour votre pays et comparez-le à la multiplication par 17 en six mois survenue en Allemagne en 1922.",
+      "Recherchez quelle institution fixe la masse monétaire dans votre pays et quelles limites encadrent son action.",
+      "Lisez un paragraphe d'une source primaire de l'époque, comme l'ouvrage de Keynes paru en 1919, et relevez ce qu'elle dit sur le financement de la guerre."
+    ],
+    "de": [
+      "Finde eine aktuelle jährliche Inflationsrate für dein Land und vergleiche sie mit dem 17-fachen Anstieg innerhalb von sechs Monaten im Deutschland des Jahres 1922.",
+      "Recherchiere, wer dort, wo du lebst, die Geldmenge steuert und welche Grenzen dieser Institution gesetzt sind.",
+      "Lies einen Absatz aus einer Primärquelle dieser Epoche, etwa aus dem Buch von Keynes aus dem Jahr 1919, und notiere, was dort über die Kriegsfinanzierung steht."
+    ],
+    "es": [
+      "Busque un dato reciente de inflación anual de su país y compárelo con el aumento de 17 veces en seis meses de la Alemania de 1922.",
+      "Averigüe quién determina la masa monetaria en su lugar de residencia y qué límites regulan a ese organismo.",
+      "Lea un párrafo de una fuente primaria de la época, como el libro de 1919 de Keynes, y anote lo que dice sobre la financiación de las guerras."
     ]
   },
   "references": [
@@ -93,12 +153,91 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/weimar-hyperinflation-1923.webp",
+    "url": "https://images.unsplash.com/14/unsplash_5244800b1ebf4_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODI2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Charlie Foster",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/Osl4I3IS9Cw"
+    "sourceUrl": "https://unsplash.com/photos/Osl4I3IS9Cw",
+    "wide": "https://images.unsplash.com/14/unsplash_5244800b1ebf4_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODI2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@charliefoster?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JYgAugD9ABcTP2sPy6Pn7Y7K19lAAAP7QkxbwjhjAOe9HFsGzu3L1Nlw1y5Sguqe0jBwAmBvpg1d4VxCcEtMLyAZtYiFXWXb2sG6mQEKMPFRTyxOuhNpnBtG8EN2ixWEqLtCJp/YrArxS065o65fj1N4pQmLFPh7+ZaLmLk800h2rCDDiloQLfovI8qHA8l6Xh6sJaopUt6+1moVTFE7g9PN9fDE+kEUqtIm6/E/VmRE29QUAAA==",
-  "dominant": "#4c473a"
+  "dominant": "#4c473a",
+  "glossary": {
+    "en": {
+      "gold standard": "A monetary system where a currency's value is directly linked to a specific amount of gold.",
+      "reichstag": "The national parliament of Germany during the imperial and Weimar periods.",
+      "reparations": "Compensation payments demanded from a defeated nation after a war to cover damages.",
+      "weimar republic": "The democratic German government established in 1919 following World War I.",
+      "gold marks": "A currency unit pegged to gold value, used to calculate stable reparation debts.",
+      "reichsbank": "The central bank of Germany responsible for issuing currency and managing monetary policy.",
+      "passive resistance": "A campaign of non-violent non-cooperation and general strikes by German workers in the Ruhr.",
+      "legal tender": "Currency officially recognized by law that must be accepted as payment for debts.",
+      "gresham's law": "An economic principle stating that lower-quality currency tends to drive higher-quality currency out of circulation.",
+      "rentenmark": "An interim German currency backed by mortgages on land and industrial goods, introduced in 1923.",
+      "treasury bills": "Short-term government debt instruments used to borrow money and finance public spending."
+    },
+    "vi": {
+      "bản vị vàng": "Hệ thống tiền tệ định giá đồng tiền quốc gia theo một lượng vàng cố định.",
+      "cộng hòa weimar": "Chính quyền cộng hòa tại Đức giai đoạn 1919–1933, sau Thế chiến thứ nhất.",
+      "mark vàng": "Đơn vị tiền tệ của Đức được bảo đảm bằng vàng trước năm 1914.",
+      "reichsbank": "Ngân hàng trung ương của Đức từ năm 1876 đến năm 1945.",
+      "siêu lạm phát": "Tình trạng giá cả tăng cực nhanh và đồng tiền mất giá hoàn toàn.",
+      "tổng đình công": "Hình thức đình công của toàn bộ công nhân nhằm làm tê liệt kinh tế.",
+      "tiền pháp định": "Đồng tiền được pháp luật công nhận làm phương tiện thanh toán chính thức.",
+      "quy luật gresham": "Quy luật kinh tế cho rằng tiền xấu sẽ đẩy tiền tốt ra khỏi lưu thông.",
+      "rentenmark": "Đồng tiền mới phát hành năm 1923 được bảo đảm bằng bất động sản.",
+      "chiết khấu": "Nghiệp vụ mua lại giấy tờ có giá trước hạn với giá thấp hơn mệnh giá.",
+      "mệnh giá": "Giá trị danh nghĩa ghi trên một đồng tiền, trái phiếu hoặc cổ phiếu."
+    },
+    "fr": {
+      "étalon-or": "Système monétaire où la valeur de la monnaie est directement adossée à une quantité fixe d'or.",
+      "reichstag": "Parlement allemand sous l'Empire et la république de Weimar.",
+      "république de weimar": "Régime démocratique instauré en Allemagne de 1918 à 1933, succédant à l'Empire.",
+      "marks-or": "Unité de compte basée sur une quantité fixe d'or, utilisée pour fixer les réparations de guerre.",
+      "reichsbank": "Banque centrale allemande de 1876 à 1945, responsable de l'émission monétaire.",
+      "résistance passive": "Grève générale ordonnée par Berlin pour refuser de collaborer avec l'occupant franco-belge dans la Ruhr.",
+      "cours légal": "Statut d'une monnaie que les créanciers sont légalement obligés d'accepter en paiement.",
+      "loi de gresham": "Principe économique selon lequel la mauvaise monnaie chasse la bonne de la circulation.",
+      "rentenmark": "Nouvelle monnaie temporaire gagée sur des terres et bâtiments, introduite fin 1923 pour stopper l'inflation.",
+      "escompter": "Acheter des effets financiers comme des bons du Trésor en avançant les fonds avant échéance.",
+      "bons du trésor": "Titres de créance émis par l'État pour financer ses dépenses à court ou moyen terme."
+    },
+    "de": {
+      "goldstandard": "Währungssystem, bei dem der Wert des Geldes direkt an eine feste Menge Gold gebunden ist.",
+      "londoner zahlungsplan": "Abkommen der Alliierten von 1921 über die Gesamthöhe und Raten der deutschen Reparationsforderungen.",
+      "goldmark": "Fiktive Rechnungswährung auf Goldbasis zur inflationssicheren Bezifferung von Schulden und Reparationen.",
+      "reichsbank": "Die damalige deutsche Notenbank, zuständig für Währungsausgabe und Geldpolitik des Reiches.",
+      "lebenshaltungskostenindex": "Statistische Kennzahl, die die durchschnittliche Preisentwicklung lebensnotwendiger Güter und Dienstleistungen misst.",
+      "ruhrbesetzung": "Militärische Besetzung des Ruhrgebiets durch französische und belgische Truppen 1923 zur Eintreibung von Reparationen.",
+      "gesetzliches zahlungsmittel": "Vom Gesetzgeber vorgeschriebenes Zahlungsmittel, das Gläubiger zur Begleichung von Geldschulden annehmen müssen.",
+      "greshams gesetz": "Ökonomische Regel, nach der schlechteres Geld gutes, wertstabiles Geld aus dem Umlauf verdrängt.",
+      "rentenmark": "1923 eingeführte Übergangswährung, besichert durch Grundschulden zur Überwindung der Hyperinflation.",
+      "währungskommissar": "Regierungsbeauftragter mit Sonderbefugnissen zur Stabilisierung der Währung und Währungsreform 1923.",
+      "schatzwechsel": "Kurzfristige staatliche Schuldtitel, mit denen das Reich Kredite aufnahm und die Notenpresse antrieb."
+    },
+    "es": {
+      "patrón oro": "Sistema monetario en que el valor de la moneda se fija y respalda con una cantidad de oro.",
+      "reichstag": "Parlamento de Alemania encargado de aprobar leyes y presupuestos en esa época.",
+      "república de weimar": "Régimen político democrático de Alemania entre el fin de la guerra en 1918 y 1933.",
+      "marcos de oro": "Unidad monetaria alemana teórica vinculada a un peso fijo de oro para calcular reparaciones.",
+      "reichsbank": "Banco central de Alemania responsable de emitir moneda en ese período histórico.",
+      "resistencia pasiva": "Campaña de no colaboración y huelga general convocada frente a la ocupación militar del Ruhr.",
+      "ley de gresham": "Principio económico que afirma que el dinero considerado malo suele expulsar de la circulación al bueno.",
+      "rentenmark": "Moneda provisional creada en 1923 para frenar la hiperinflación, respaldada con propiedades agrícolas e industriales.",
+      "letras del tesoro": "Títulos de deuda pública a corto plazo emitidos por el Estado para financiar gastos inmediatos.",
+      "masa monetaria": "Volumen total de dinero en circulación dentro de una economía nacional."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

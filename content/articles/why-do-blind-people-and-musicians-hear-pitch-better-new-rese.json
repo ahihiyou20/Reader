@@ -41,11 +41,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/473/1080/1920",
+    "url": "https://images.unsplash.com/uploads/14115120538776712c565/a699942a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Todd Quackenbush",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/Nk5rSNq13sM"
+    "sourceUrl": "https://unsplash.com/photos/Nk5rSNq13sM",
+    "wide": "https://images.unsplash.com/uploads/14115120538776712c565/a699942a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@toddquackenbush?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -90,7 +92,10 @@
     ]
   },
   "summary": {
-    "vi": "Nghiên cứu mới phát hiện rằng những người bị mù từ sớm và các nhạc sĩ có khả năng phân biệt cao độ tốt hơn nhờ hệ thống thính giác giảm thiểu nhiễu nội tại. Quá trình xử lý tín hiệu âm thanh trở nên ổn định và đáng tin cậy hơn. Điều này minh chứng cho tính dẻo của não bộ khi thích nghi với các trải nghiệm cảm giác khác nhau trong đời sống."
+    "vi": "Nghiên cứu mới phát hiện rằng những người bị mù từ sớm và các nhạc sĩ có khả năng phân biệt cao độ tốt hơn nhờ hệ thống thính giác giảm thiểu nhiễu nội tại. Quá trình xử lý tín hiệu âm thanh trở nên ổn định và đáng tin cậy hơn. Điều này minh chứng cho tính dẻo của não bộ khi thích nghi với các trải nghiệm cảm giác khác nhau trong đời sống.",
+    "fr": "Les personnes privées de la vue dès l’enfance ainsi que les musiciens voyants distinguent les hauteurs sonores avec une remarquable précision. Selon une étude récente, cette finesse auditive ne proviendrait pas de la sensibilité de l’oreille interne, mais d’une adaptation cérébrale singulière : la diminution du « bruit interne ». En traitant les stimuli acoustiques de manière plus stable et reproductible, le cerveau affine sa perception des nuances fréquentielles. Cette plasticité neuronale, stimulée par la pratique musicale ou la compensation sensorielle, illustre l’aptitude du système auditif à calibrer ses représentations internes pour optimiser la perception du monde sonore.",
+    "de": "Früh erblindete Menschen und sehende Musiker können Tonhöhen oft erstaunlich präzise unterscheiden. Eine im Journal of Neuroscience veröffentlichte Studie zeigt nun die neuronale Ursache: Nicht das Innenohr nimmt Töne schärfer wahr, sondern das Gehirn verarbeitet akustische Reize verlässlicher. Mithilfe eines mathematischen Modells wiesen Forscher nach, dass bei beiden Gruppen das sogenannte interne Rauschen reduziert ist. Das auditorische System reagiert dadurch über die Zeit hinweg stabiler auf dieselben Klänge. Diese gesteigerte Konsistenz belegt die enorme Plastizität des Gehirns, das sich durch sensorische Erfahrungen anpasst und Wahrnehmungsmuster schärft. Offen bleibt bislang, wie viel Training für solche Anpassungen nötig ist und welche Rolle das Lebensalter dabei spielt.",
+    "es": "¿A qué se debe que las personas con ceguera temprana y los músicos distingan mejor la altura de las notas? Una investigación revela que esta habilidad no proviene de los oídos, sino de la capacidad del cerebro para procesar sonidos con menor «ruido interno», respondiendo de forma más consistente y fiable ante estímulos acústicos. Esta ventaja evidencia la notable plasticidad cerebral: ante la privación visual o el entrenamiento musical prolongado, el cerebro optimiza sus modelos perceptivos para interpretar mejor la información relevante. En el futuro, los científicos esperan determinar si entrenamientos auditivos similares podrían potenciar estas capacidades perceptivas en cualquier persona."
   },
   "applySteps": {
     "en": [
@@ -107,10 +112,28 @@
   "ai": {
     "fields": [
       "summary",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-09T03:00:36.168Z"
+  "publishAt": "2026-11-09T03:00:36.168Z",
+  "glossary": {
+    "en": {
+      "internal noise": "Random variability in how the auditory system responds to identical sounds over time.",
+      "pitch discrimination": "The ability to distinguish between sounds that have different pitch frequencies.",
+      "cochlea": "A spiral inner ear structure that converts sound vibrations into neural signals.",
+      "brain plasticity": "The brain's capacity to adapt and rewire its neural connections based on experience.",
+      "perceptual template": "An internal mental model the brain builds to identify and interpret sensory information.",
+      "early-life blindness": "Severe or total loss of vision that begins in infancy or very early childhood.",
+      "auditory system": "The sensory organs and neural pathways involved in hearing and interpreting sounds.",
+      "sound frequencies": "The rates of sound wave vibration that determine how high or low sounds are.",
+      "mathematical model": "A computational simulation used to analyze and explain how the brain processes sounds.",
+      "journal of neuroscience": "A peer-reviewed scientific journal focusing on the nervous system and brain research."
+    }
+  }
 }

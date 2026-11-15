@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/331/1080/1920",
+    "url": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Thong Vo",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ"
+    "sourceUrl": "https://unsplash.com/photos/g28MgVK85bQ",
+    "wide": "https://images.unsplash.com/35/4fjHtYHdRlSemICxjjBu_IMG_8424.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@titi_wanderer?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -86,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết khảo sát trải nghiệm của những người nói tiếng xứ Wales ở Anh và tiếng Thụy Điển ở Phần Lan. Nghiên cứu chỉ ra rằng dù các ngôn ngữ thiểu số này nay đã nhận được nhiều sự hỗ trợ chính thức và sự kỳ thị cởi mở đã giảm bớt đối với thế hệ trẻ, định kiến xã hội vẫn tiếp tục tồn tại ở mức độ tinh vi hơn. Sự công nhận từ nhà nước giúp cải thiện vị thế ngôn ngữ, nhưng việc thay đổi hoàn toàn thái độ và sự chấp nhận trong đời sống hàng ngày đòi hỏi nhiều thời gian."
+    "vi": "Bài viết khảo sát trải nghiệm của những người nói tiếng xứ Wales ở Anh và tiếng Thụy Điển ở Phần Lan. Nghiên cứu chỉ ra rằng dù các ngôn ngữ thiểu số này nay đã nhận được nhiều sự hỗ trợ chính thức và sự kỳ thị cởi mở đã giảm bớt đối với thế hệ trẻ, định kiến xã hội vẫn tiếp tục tồn tại ở mức độ tinh vi hơn. Sự công nhận từ nhà nước giúp cải thiện vị thế ngôn ngữ, nhưng việc thay đổi hoàn toàn thái độ và sự chấp nhận trong đời sống hàng ngày đòi hỏi nhiều thời gian.",
+    "fr": "« Malgré une reconnaissance institutionnelle accrue et une visibilité renforcée au Pays de Galles comme en Finlande, les locuteurs de langues minoritaires se heurtent encore à des préjugés persistants. Si les jeunes générations subissent moins d’hostilité ouverte que leurs aînés des années 1970 ou 1980, les discriminations subsistent de façon plus subtile au quotidien. L’octroi d’un statut officiel ne suffit donc pas : la pérennité d’un idiome exige une véritable acceptation sociale pour que chacun puisse s’exprimer publiquement sans crainte ni malaise. »",
+    "de": "Obwohl Minderheitensprachen wie Walisisch in Wales oder Schwedisch in Finnland heute rechtlich geschützt und im öffentlichen Raum sichtbarer sind, stoßen ihre Sprecher nach wie vor auf Vorurteile. Eine Untersuchung zeigt jedoch einen deutlichen Generationswechsel: Während ältere Menschen von offener Anfeindung berichten, wachsen jüngere Generationen mit größerer Akzeptanz und besseren Fördermöglichkeiten auf. Dennoch halten sich subtile Vorbehalte im Alltag hartnäckig. Offizielle Anerkennung allein reicht daher nicht aus, um das Überleben einer Minderheitensprache zu sichern. Entscheidend ist vielmehr, dass Sprecher ihre Sprache im täglichen Leben selbstverständlich und ohne soziale Ausgrenzung anwenden können, da sich gesellschaftliche Einstellungen oft langsamer wandeln als Gesetze.",
+    "es": "¿Basta el amparo legal para erradicar la discriminación lingüística? A pesar del reconocimiento institucional y de una mayor presencia pública, los hablantes de lenguas minoritarias como el galés en Gales o el sueco en Finlandia todavía afrontan prejuicios sutiles en su vida diaria. Aunque las nuevas generaciones crecen en un clima más favorable que sus padres, persisten actitudes adversas en espacios comunes. Para asegurar la vitalidad de estos idiomas, no solo se requieren leyes y enseñanza formal, sino también una aceptación social auténtica que permita utilizarlos con plena libertad y dignidad."
   },
   "keyPoint": {
     "en": "A language is like a bridge that needs both a sturdy structure and welcoming traffic. [p:Official recognition opens the door, but social acceptance lets people cross freely.] How can you create a more welcoming environment for minority languages in your daily interactions?",
@@ -108,10 +113,28 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-09T02:57:36.168Z"
+  "publishAt": "2026-11-09T02:57:36.168Z",
+  "glossary": {
+    "en": {
+      "welsh not": "A wooden token historically hung around pupils' necks to punish and prevent speaking Welsh in school.",
+      "corporal punishment": "Physical punishment inflicted on pupils by educators to discipline or correct behavior.",
+      "linguistic prejudice": "Unfair negative biases, discrimination, or stereotypes directed against speakers of a particular language.",
+      "swedish-speaking minority": "A native population group in Finland whose primary language is Swedish.",
+      "welsh-medium": "An educational setting where subjects are taught primarily in the Welsh language.",
+      "national languages": "Languages officially recognized in a country's constitution for governance, education, and public use.",
+      "overt hostility": "Open, explicit, and undisguised antagonism or verbal abuse directed at people speaking a language.",
+      "minority languages": "Languages spoken by a smaller portion of a population compared to the dominant language.",
+      "institutional support": "Official backing, resources, policies, and protection provided by government or public bodies.",
+      "linguistic diversity": "The variety and presence of different spoken languages within a particular area or community."
+    }
+  }
 }

@@ -30,11 +30,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/700/1080/1920",
+    "url": "https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjM0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "John Cobb",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/6btEyS3AJrI"
+    "sourceUrl": "https://unsplash.com/photos/6btEyS3AJrI",
+    "wide": "https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjM0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@johncobb?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -79,7 +81,10 @@
     ]
   },
   "summary": {
-    "vi": "Nghiên cứu mới về một hóa thạch cá sấu cổ đại được tìm thấy trong lớp đá dùng để tạc Tượng Nhân Sư ở Ai Cập đang giúp giới khoa học giải mã cách mà loài cá sấu gavial từng sinh sống và phân bố khắp thế giới hàng chục triệu năm trước. Bằng cách sử dụng công nghệ quét CT, nhóm nghiên cứu nhận ra các loài gavial cổ đại có khả năng sống ở môi trường biển mặn mà các hậu duệ hiện đại của chúng đã đánh mất. Sự kiện biến đổi môi trường trong quá khứ, chẳng hạn như cuộc khủng hoảng độ mặn ở Địa Trung Hải, đã xóa sổ chúng khỏi khu vực này, mang lại bài học quan trọng về tác động lâu dài của biến đổi khí hậu đối với hệ sinh thái."
+    "vi": "Nghiên cứu mới về một hóa thạch cá sấu cổ đại được tìm thấy trong lớp đá dùng để tạc Tượng Nhân Sư ở Ai Cập đang giúp giới khoa học giải mã cách mà loài cá sấu gavial từng sinh sống và phân bố khắp thế giới hàng chục triệu năm trước. Bằng cách sử dụng công nghệ quét CT, nhóm nghiên cứu nhận ra các loài gavial cổ đại có khả năng sống ở môi trường biển mặn mà các hậu duệ hiện đại của chúng đã đánh mất. Sự kiện biến đổi môi trường trong quá khứ, chẳng hạn như cuộc khủng hoảng độ mặn ở Địa Trung Hải, đã xóa sổ chúng khỏi khu vực này, mang lại bài học quan trọng về tác động lâu dài của biến đổi khí hậu đối với hệ sinh thái.",
+    "fr": "L’analyse par tomodensitométrie d’un crâne fossilisé vieux de 45 millions d’années, extrait des roches ayant servi à sculpter le Sphinx de Gizeh, a permis d’identifier une nouvelle espèce de gavial : Herugavialis cairensis. Alors que les deux espèces actuelles sont cantonnées aux eaux douces d’Asie, leurs ancêtres ont jadis peuplé les mers grâce à des adaptations marines aujourd’hui perdues. Leur disparition régionale lors de la crise de salinité messinienne rappelle l’impact irrémédiable des bouleversements climatiques sur la biodiversité.",
+    "de": "Heutige Gaviale sind bedrohte Süßwasserreptilien, doch Fossilien belegen eine weltweite Verbreitung und enorme Vielfalt vor Jahrmillionen. Mithilfe moderner Computertomographie wiesen Forschende nach, dass ausgestorbene Arten einst im Meerwasser überleben und Ozeane überqueren konnten. Ein aus denselben Kalksteinschichten wie die Große Sphinx von Gizeh stammender Schädel wurde kürzlich als neue Art Herugavialis cairensis identifiziert. Vor rund sechs Millionen Jahren führte jedoch die Messinische Salinitätskrise, bei der das Mittelmeer weitgehend austrocknete und extrem versalzte, zum endgültigen Aussterben der Krokodile in dieser Region. Die Studie verdeutlicht, wie einschneidende Umwelt- und Klimaveränderungen die globale Artenvielfalt über Jahrmillionen hinweg nachhaltig prägen können.",
+    "es": "¿Cómo conquistaron los gaviales el planeta si hoy solo habitan aguas dulces? El hallazgo de Herugavialis cairensis, a partir de un fósil descubierto en las mismas calizas egipcias de la Gran Esfinge de Guiza, ofrece respuestas clave. Mediante tomografías computarizadas, los científicos identificaron adaptaciones marinas en cráneos ancestrales, confirmando que estos reptiles cruzaban océanos en el pasado. Sin embargo, hace unos seis millones de años, la crisis salina del Messiniense desecó el mar Mediterráneo y elevó la salinidad a niveles intolerables, extinguiendo a las poblaciones locales. Al perder estas facultades oceánicas, los parientes actuales quedaron restringidos y vulnerables a cambios ambientales extremos."
   },
   "keyPoint": {
     "en": "Ancient species are a bridge to understanding modern survival. Think of extinct animals as a library of lost survival manuals; what can you learn from past environmental shifts to better appreciate today's [p:ecosystems]?",
@@ -101,10 +106,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "fr",
+      "en",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-31T02:45:27.771Z"
+  "publishAt": "2026-10-31T02:45:27.771Z",
+  "glossary": {
+    "en": {
+      "gavial": "A type of long-snouted crocodile adapted primarily for catching fish.",
+      "gavialis gangeticus": "The scientific name for the gharial, a critically endangered freshwater crocodile native to northern South Asia.",
+      "tomistoma schlegelii": "The scientific name for the false gharial, an endangered freshwater crocodile native to Southeast Asia.",
+      "cosmopolitan distribution": "A geographic range extending across most parts of the world.",
+      "ct scans": "Three-dimensional X-ray imaging technology used to examine internal anatomical structures non-invasively.",
+      "tomistoma": "A genus of slender-snouted crocodiles including the living false gharial and extinct relatives.",
+      "mokattam formation": "An ancient Egyptian limestone rock layer rich in marine fossils and used to build the Sphinx.",
+      "herugavialis cairensis": "A newly named extinct marine crocodile species identified from a fossil skull found in Egypt.",
+      "mass extinction": "A catastrophic event in Earth's history causing the rapid loss of widespread plant and animal species.",
+      "messinian salinity crisis": "A period roughly six million years ago when the Mediterranean Sea largely dried up and became hypersaline.",
+      "aridification": "The process of a region gradually becoming drier and more arid over time.",
+      "biodiversity": "The variety and abundance of different living species within an ecosystem or on Earth."
+    }
+  }
 }

@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/700/1080/1920",
+    "url": "https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjM0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "John Cobb",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/6btEyS3AJrI"
+    "sourceUrl": "https://unsplash.com/photos/6btEyS3AJrI",
+    "wide": "https://images.unsplash.com/photo-1428542170253-0d2f063e92c2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjM0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@johncobb?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -86,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Nghiên cứu về mối quan hệ tình dục kỳ lạ giữa một chú bò đực và một chú lừa đực đặt ra câu hỏi lớn về các chuẩn mực sinh học. Hành vi đồng giới và khác loài ở động vật không phải là hiếm và thường phục vụ cho việc củng cố các mối quan hệ xã hội. Qua đó, các nhà khoa học nhận ra rằng chúng ta cần vượt qua những định kiến nhân bản để hiểu đúng hơn về sự đa dạng trong hành vi của thế giới tự nhiên."
+    "vi": "Nghiên cứu về mối quan hệ tình dục kỳ lạ giữa một chú bò đực và một chú lừa đực đặt ra câu hỏi lớn về các chuẩn mực sinh học. Hành vi đồng giới và khác loài ở động vật không phải là hiếm và thường phục vụ cho việc củng cố các mối quan hệ xã hội. Qua đó, các nhà khoa học nhận ra rằng chúng ta cần vượt qua những định kiến nhân bản để hiểu đúng hơn về sự đa dạng trong hành vi của thế giới tự nhiên.",
+    "fr": "En Éthiopie, la relation intime et affectueuse observée entre un taureau et un âne mâle illustre la diversité foisonnante de la sexualité animale. Si la biologie de l'évolution a longtemps abordé les comportements homosexuels ou interspécifiques comme des énigmes, cette liaison réciproque invite à revoir nos certitudes : l'activité sexuelle ne se résume pas à la procréation. Au sein du vivant, elle permet également de consolider des alliances, d'apaiser des conflits ou d'exprimer un attachement mutuel. L'adoption d'un regard queer incite ainsi les scientifiques à questionner leurs propres biais culturels sur ce qui est « naturel ».",
+    "de": "In Äthiopien beobachteten Forschende eine ungewöhnliche Beziehung zwischen einem Stier namens Achille und einem Eselhengst namens Patroclo. Die beiden Männchen unterschiedlicher Arten paarten sich wiederholt einvernehmlich und zeigten gegenseitige Zuneigung. Während die Evolutionsbiologie gleichgeschlechtliche oder artübergreifende Kontakte oft als evolutionäres Rätsel einstuft, eröffnet dieser Fund grundlegendere Perspektiven: Sexuelle Interaktionen stärken bei zahlreichen Spezies soziale Bindungen und regulieren Spannungen, ohne zwingend der Reproduktion zu dienen. Queere Ansätze ermutigen die Verhaltensforschung, menschliche Vorstellungen von Normen zu überdenken und die Vielfalt tierischer Sexualität unvoreingenommen zu betrachten.",
+    "es": "El vínculo afectivo y sexual observado en Etiopía entre un toro y un burro macho desafía las concepciones tradicionales sobre la conducta animal. Aunque las relaciones entre individuos del mismo sexo están ampliamente documentadas en cientos de especies, la interacción recíproca entre miembros de especies distintas resulta excepcional. Este fenómeno invita a la biología evolutiva a replantearse viejos paradigmas: ¿por qué asumir que cualquier comportamiento sexual debe responder únicamente a la reproducción? Al incorporar perspectivas más amplias, la ciencia puede comprender que la sexualidad no es un molde rígido, sino una manifestación diversa donde los lazos sociales y el bienestar también desempeñan un papel fundamental."
   },
   "keyPoint": {
     "en": "Think of animal sexuality as a vast, colorful mosaic rather than a rigid blueprint. How can you challenge your own hidden assumptions about what is natural today?",
@@ -108,10 +113,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-04T03:20:53.731Z"
+  "publishAt": "2026-11-04T03:20:53.731Z",
+  "glossary": {
+    "en": {
+      "current biology": "A peer-reviewed scientific journal publishing research across all areas of biology.",
+      "gelada monkeys": "A species of Old World monkey endemic to the Ethiopian highlands.",
+      "primatologist": "A scientist who specializes in the study of non-human primates.",
+      "bonobos": "A species of great ape closely related to chimpanzees, known for frequent sexual behaviors.",
+      "bottlenose dolphins": "A widely distributed species of marine mammal known for complex social behavior.",
+      "japanese macaques": "A monkey species native to Japan, observed displaying diverse same-sex and interspecies mounting behaviours.",
+      "sika deer": "A deer species native to East Asia, occasionally mounted by Japanese macaques.",
+      "natural selection": "The evolutionary process where traits increasing survival and reproductive success become more common across generations.",
+      "reproductive success": "The successful production of viable offspring that carry an organism's genes into subsequent generations.",
+      "evolutionary biology": "The biological discipline studying how organisms evolve, adapt, and diversify over time.",
+      "queer perspectives": "Analytical frameworks examining and questioning conventional assumptions about sex, gender, and sexuality.",
+      "adaptive benefits": "Evolutionary advantages that enhance an organism's chances of survival or reproductive capability."
+    }
+  }
 }

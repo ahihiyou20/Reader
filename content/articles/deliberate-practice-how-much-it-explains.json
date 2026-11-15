@@ -12,53 +12,98 @@
   ],
   "title": {
     "en": "Deliberate practice: how much of expertise does it explain?",
-    "vi": "Luyện tập có chủ đích: nó giải thích được bao nhiêu phần của chuyên môn?"
+    "vi": "Luyện tập có chủ đích: nó giải thích được bao nhiêu phần của chuyên môn?",
+    "fr": "Pratique délibérée : quelle part de l'expertise explique-t-elle ?",
+    "de": "Gezieltes Üben: Wie viel Expertise erklärt es?",
+    "es": "Práctica deliberada: ¿cuánto explica de la pericia?"
   },
   "hook": {
     "en": "A popular idea says that expert performance comes mostly from hours of the right kind of practice. A 2014 meta-analysis put that idea to the test across music, games, sports, education and professions. Practice explained [y:26%] of the differences in performance in games but less than [y:1%] in professions. It matters, the authors concluded, but not as much as has been argued.",
-    "vi": "Một quan niệm phổ biến cho rằng năng lực chuyên gia chủ yếu đến từ số giờ luyện tập đúng cách. Một phân tích gộp năm 2014 đã kiểm tra quan niệm đó trong âm nhạc, trò chơi, thể thao, giáo dục và các nghề nghiệp. Luyện tập giải thích [y:26%] sự khác biệt về thành tích ở các trò chơi nhưng dưới [y:1%] ở các nghề nghiệp. Các tác giả kết luận nó quan trọng, nhưng không quan trọng như người ta từng lập luận."
+    "vi": "Một quan niệm phổ biến cho rằng năng lực chuyên gia chủ yếu đến từ số giờ luyện tập đúng cách. Một phân tích gộp năm 2014 đã kiểm tra quan niệm đó trong âm nhạc, trò chơi, thể thao, giáo dục và các nghề nghiệp. Luyện tập giải thích [y:26%] sự khác biệt về thành tích ở các trò chơi nhưng dưới [y:1%] ở các nghề nghiệp. Các tác giả kết luận nó quan trọng, nhưng không quan trọng như người ta từng lập luận.",
+    "fr": "Une idée reçue affirme que la performance d'un expert découle principalement d'heures d'une pratique appropriée. En 2014, une méta-analyse a mis cette hypothèse à l'épreuve dans la musique, les jeux, le sport, l'éducation et les milieux professionnels. La pratique expliquait [y:26 %] des écarts de performance dans les jeux, mais moins de [y:1 %] dans les professions. Elle compte, concluent les auteurs, mais pas autant qu'on l'a prétendu.",
+    "de": "Eine verbreitete Annahme besagt, dass Spitzenleistungen vor allem durch stundenlanges, richtiges Üben entstehen. Eine Metaanalyse aus dem Jahr 2014 überprüfte diese These in den Bereichen Musik, Spiele, Sport, Bildung und Beruf. Übung erklärte [y:26%] der Leistungsunterschiede bei Spielen, aber weniger als [y:1%] in Berufen. Sie spielt eine Rolle, so das Fazit der Autoren, aber bei Weitem nicht so sehr wie behauptet.",
+    "es": "Una idea popular sostiene que el rendimiento experto proviene principalmente de horas del tipo adecuado de práctica. Un metanálisis de 2014 puso a prueba esa idea en la música, los juegos, los deportes, la educación y las profesiones. La práctica explicó el [y:26%] de las diferencias de rendimiento en los juegos, pero menos del [y:1%] en las profesiones. Es importante, concluyeron los autores, pero no tanto como se ha argumentado."
   },
   "sections": [
     {
       "heading_en": "How you practise, not only how long",
       "heading_vi": "Cách luyện, không chỉ luyện bao lâu",
       "body_en": "Anders Ericsson, a psychologist at Florida State University, was a pioneer in the study of deliberate practice. One of his core findings was that how expert a person becomes at a skill has more to do with how they practise than with how many times they simply perform it {wiki-practice}. An expert breaks the skill into smaller parts and works on improving those parts, often with immediate feedback from a coach. Playing a piece through a hundred times is performing. Isolating the hard bar and fixing it is practising.",
-      "body_vi": "Anders Ericsson, nhà tâm lý học tại Đại học Bang Florida, là người tiên phong nghiên cứu về luyện tập có chủ đích (*deliberate practice*). Một trong các phát hiện cốt lõi của ông là mức độ một người trở thành chuyên gia về một kỹ năng liên quan đến cách họ luyện nhiều hơn là số lần họ chỉ đơn thuần thực hiện nó {wiki-practice}. Chuyên gia chia kỹ năng thành những phần nhỏ và tập trung cải thiện các phần đó, thường có phản hồi tức thời từ huấn luyện viên. Chơi trọn một bản nhạc một trăm lần là biểu diễn. Tách ra ô nhịp khó và sửa nó mới là luyện tập."
+      "body_vi": "Anders Ericsson, nhà tâm lý học tại Đại học Bang Florida, là người tiên phong nghiên cứu về luyện tập có chủ đích (*deliberate practice*). Một trong các phát hiện cốt lõi của ông là mức độ một người trở thành chuyên gia về một kỹ năng liên quan đến cách họ luyện nhiều hơn là số lần họ chỉ đơn thuần thực hiện nó {wiki-practice}. Chuyên gia chia kỹ năng thành những phần nhỏ và tập trung cải thiện các phần đó, thường có phản hồi tức thời từ huấn luyện viên. Chơi trọn một bản nhạc một trăm lần là biểu diễn. Tách ra ô nhịp khó và sửa nó mới là luyện tập.",
+      "heading_fr": "La manière de pratiquer, pas seulement la durée",
+      "body_fr": "Anders Ericsson, psychologue à l'université d'État de Floride, a été un pionnier de l'étude de la pratique délibérée. L'une de ses conclusions majeures était que le niveau de maîtrise atteint dans une compétence dépend bien plus de la façon de s'exercer que du simple nombre d'exécutions {wiki-practice}. Un expert décompose la compétence en éléments plus petits et s'efforce de les perfectionner, souvent grâce au retour immédiat d'un entraîneur. Jouer un morceau cent fois de bout en bout relève de la simple exécution. Isoler la mesure difficile et la corriger relève de la pratique.",
+      "heading_de": "Wie du übst, nicht nur wie lange",
+      "body_de": "Anders Ericsson, Psychologe an der Florida State University, war ein Pionier in der Erforschung des gezielten Übens. Eine seiner zentralen Erkenntnisse war, dass das Können einer Person bei einer Fertigkeit mehr davon abhängt, wie sie übt, als davon, wie oft sie diese schlicht ausführt {wiki-practice}. Ein Experte zerlegt die Fertigkeit in kleinere Teile und arbeitet daran, diese Teile zu verbessern, oft mit unmittelbarem Feedback eines Trainers. Ein Musikstück hundertmal durchzuspielen ist bloßes Vorführen. Den schwierigen Takt zu isolieren und gezielt zu korrigieren, das ist echtes Üben.",
+      "heading_es": "Cómo se practica, no solo cuánto tiempo",
+      "body_es": "Anders Ericsson, psicólogo de la Universidad Estatal de Florida, fue un pionero en el estudio de la práctica deliberada. Uno de sus hallazgos fundamentales fue que el nivel de pericia que alcanza una persona en una habilidad depende más de cómo practica que de cuántas veces simplemente la ejecuta {wiki-practice}. Un experto descompone la habilidad en partes más pequeñas y trabaja en mejorar esas partes, a menudo con retroalimentación inmediata de un entrenador. Tocar una pieza cien veces es simplemente ejecutar. Aislar el compás difícil y corregirlo es practicar."
     },
     {
       "heading_en": "What makes practice deliberate",
       "heading_vi": "Điều gì làm việc luyện tập có chủ đích",
       "body_en": "According to Ericsson, a session counts as deliberate only if the task is well defined, has a clear goal and is fully understood by the learner. The learner also needs immediate feedback on performance, so that changes can be made right away {wiki-practice}. Feedback is the part people skip. Where it is missing or inappropriate, practice tends to be ineffective, or even harmful to learning. Ericsson also held that elite performance comes from maximal effort over at least a decade, a view known as the ten-year rule.",
-      "body_vi": "Theo Ericsson, một buổi luyện chỉ được xem là có chủ đích nếu nhiệm vụ được xác định rõ, có mục tiêu rõ ràng và người học hiểu đầy đủ. Người học cũng cần phản hồi tức thời về thành tích để có thể điều chỉnh ngay {wiki-practice}. Phản hồi là phần người ta hay bỏ qua. Khi nó thiếu hoặc không phù hợp, việc luyện tập có xu hướng kém hiệu quả, thậm chí gây hại cho việc học. Ericsson cũng cho rằng năng lực đỉnh cao đến từ nỗ lực tối đa trong ít nhất một thập kỷ, quan điểm được gọi là quy tắc mười năm."
+      "body_vi": "Theo Ericsson, một buổi luyện chỉ được xem là có chủ đích nếu nhiệm vụ được xác định rõ, có mục tiêu rõ ràng và người học hiểu đầy đủ. Người học cũng cần phản hồi tức thời về thành tích để có thể điều chỉnh ngay {wiki-practice}. Phản hồi là phần người ta hay bỏ qua. Khi nó thiếu hoặc không phù hợp, việc luyện tập có xu hướng kém hiệu quả, thậm chí gây hại cho việc học. Ericsson cũng cho rằng năng lực đỉnh cao đến từ nỗ lực tối đa trong ít nhất một thập kỷ, quan điểm được gọi là quy tắc mười năm.",
+      "heading_fr": "Ce qui rend la pratique délibérée",
+      "body_fr": "Selon Ericsson, une séance n'est qualifiée de délibérée que si la tâche est bien définie, vise un objectif clair et demeure parfaitement comprise par l'apprenant. Celui-ci doit également bénéficier d'un retour immédiat sur sa performance afin de procéder d'emblée à des ajustements {wiki-practice}. Ce retour d'information est pourtant l'étape la plus souvent négligée. Lorsqu'il fait défaut ou s'avère inadapté, l'entraînement tend à devenir inefficace, voire néfaste pour l'apprentissage. Ericsson soutenait en outre que la performance d'élite résulte d'un effort maximal déployé sur au moins une décennie, une thèse connue sous le nom de règle des dix ans.",
+      "heading_de": "Was gezieltes Üben ausmacht",
+      "body_de": "Laut Ericsson gilt eine Übungseinheit nur dann als bewusst, wenn die Aufgabe klar definiert ist, ein deutliches Ziel hat und von der lernenden Person vollständig verstanden wird. Zudem braucht die lernende Person unmittelbares Feedback zur Leistung, damit Anpassungen sofort vorgenommen werden können {wiki-practice}. Feedback ist der Schritt, den viele auslassen. Fehlt es oder ist es unpassend, erweist sich das Üben meist als wirkungslos oder hemmt sogar den Lernerfolg. Ericsson vertrat zudem die Ansicht, dass Spitzenleistungen aus maximaler Anstrengung über mindestens ein Jahrzehnt hinweg resultieren – eine Ansicht, die als Zehn-Jahres-Regel bekannt ist.",
+      "heading_es": "Qué hace que la práctica sea deliberada",
+      "body_es": "Según Ericsson, una sesión solo cuenta como deliberada si la tarea está bien definida, tiene un objetivo claro y es comprendida a fondo por el aprendiz. El aprendiz también necesita retroalimentación inmediata sobre su desempeño, de modo que puedan realizarse ajustes de inmediato {wiki-practice}. La retroalimentación es la parte que la gente pasa por alto. Cuando falta o es inadecuada, la práctica tiende a ser ineficaz, o incluso perjudicial para el aprendizaje. Ericsson también sostenía que el rendimiento de élite proviene del esfuerzo máximo durante al menos una década, una postura conocida como la regla de los diez años."
     },
     {
       "heading_en": "The 2014 meta-analysis",
       "heading_vi": "Phân tích gộp năm 2014",
       "body_en": "More than 20 years after the idea took hold, Brooke Macnamara, David Hambrick and Frederick Oswald asked whether the evidence supported it. They combined studies from all the major domains where deliberate practice has been measured, defining it as structured activity created specifically to improve performance. The share of performance differences it explained was 26 percent for games, 21 percent for music, 18 percent for sports, 4 percent for education and under 1 percent for professions {macnamara-2014}. Their conclusion: practice is important, though not as important as has been argued.",
-      "body_vi": "Hơn 20 năm sau khi ý tưởng này phổ biến, Brooke Macnamara, David Hambrick và Frederick Oswald đặt câu hỏi liệu bằng chứng có ủng hộ nó không. Họ gộp các nghiên cứu từ mọi lĩnh vực chính mà luyện tập có chủ đích đã được đo lường, định nghĩa nó là hoạt động có cấu trúc được tạo ra riêng để cải thiện thành tích. Phần chênh lệch thành tích mà nó giải thích là 26 phần trăm ở trò chơi, 21 phần trăm ở âm nhạc, 18 phần trăm ở thể thao, 4 phần trăm ở giáo dục và dưới 1 phần trăm ở các nghề nghiệp {macnamara-2014}. Kết luận của họ: luyện tập quan trọng, nhưng không quan trọng như người ta đã lập luận."
+      "body_vi": "Hơn 20 năm sau khi ý tưởng này phổ biến, Brooke Macnamara, David Hambrick và Frederick Oswald đặt câu hỏi liệu bằng chứng có ủng hộ nó không. Họ gộp các nghiên cứu từ mọi lĩnh vực chính mà luyện tập có chủ đích đã được đo lường, định nghĩa nó là hoạt động có cấu trúc được tạo ra riêng để cải thiện thành tích. Phần chênh lệch thành tích mà nó giải thích là 26 phần trăm ở trò chơi, 21 phần trăm ở âm nhạc, 18 phần trăm ở thể thao, 4 phần trăm ở giáo dục và dưới 1 phần trăm ở các nghề nghiệp {macnamara-2014}. Kết luận của họ: luyện tập quan trọng, nhưng không quan trọng như người ta đã lập luận.",
+      "heading_fr": "La méta-analyse de 2014",
+      "body_fr": "Plus de 20 ans après l'émergence de cette idée, Brooke Macnamara, David Hambrick et Frederick Oswald se sont demandé si les données empiriques la confirmaient. Ils ont combiné les études de tous les domaines majeurs où la pratique délibérée avait été évaluée, en la définissant comme une activité structurée conçue expressément pour perfectionner la performance. La proportion des écarts de performance expliquée était de 26 pour cent dans les jeux, 21 pour cent dans la musique, 18 pour cent dans le sport, 4 pour cent dans l'éducation et moins de 1 pour cent dans les professions {macnamara-2014}. Leur conclusion : la pratique est certes importante, mais pas autant qu'on a pu le prétendre.",
+      "heading_de": "Die Metaanalyse von 2014",
+      "body_de": "Mehr als 20 Jahre nachdem sich die Idee etabliert hatte, untersuchten Brooke Macnamara, David Hambrick und Frederick Oswald, ob die empirischen Belege sie stützten. Sie fassten Studien aus allen Hauptbereichen zusammen, in denen gezieltes Üben gemessen wurde, und definierten es als strukturierte Aktivität, die eigens zur Leistungssteigerung konzipiert ist. Der Anteil der dadurch erklärten Leistungsunterschiede lag bei 26 Prozent bei Spielen, 21 Prozent in der Musik, 18 Prozent im Sport, 4 Prozent im Bildungswesen und unter 1 Prozent im Berufsleben {macnamara-2014}. Ihr Fazit: Üben ist wichtig, aber nicht so wichtig wie lange behauptet.",
+      "heading_es": "El metanálisis de 2014",
+      "body_es": "Más de 20 años después de que la idea se consolidara, Brooke Macnamara, David Hambrick y Frederick Oswald se preguntaron si la evidencia la respaldaba. Combinaron estudios de todas las áreas principales donde se ha medido la práctica deliberada, definiéndola como una actividad estructurada creada específicamente para mejorar el rendimiento. La proporción de las diferencias de rendimiento que explicó fue del 26 por ciento en los juegos, el 21 por ciento en la música, el 18 por ciento en los deportes, el 4 por ciento en la educación y menos del 1 por ciento en las profesiones {macnamara-2014}. Su conclusión: la práctica es importante, aunque no tanto como se ha venido afirmando."
     },
     {
       "heading_en": "Reading the percentages",
       "heading_vi": "Đọc các con số phần trăm",
       "body_en": "These figures describe variance, meaning how much of the gap between people in a domain lines up with differences in practice. They do not say that practice has a small effect on any one person. In games, music and sports, practice accounts for a fifth to a quarter of what separates performers, and the rest comes from other things. The abstract does not say what those other things are, and the authors only conclude that practice [p:is not the whole story]. For professions, where the figure falls under 1 percent, the study offers no reason in its abstract.",
-      "body_vi": "Các con số này mô tả phương sai, tức phần chênh lệch giữa mọi người trong một lĩnh vực khớp với sự khác biệt về luyện tập. Chúng không nói rằng luyện tập có tác động nhỏ lên từng cá nhân. Ở trò chơi, âm nhạc và thể thao, luyện tập chiếm từ một phần năm đến một phần tư điều phân biệt những người thể hiện, và phần còn lại đến từ các yếu tố khác. Bản tóm tắt không nói những yếu tố đó là gì, và các tác giả chỉ kết luận rằng luyện tập [p:không phải là toàn bộ câu chuyện]. Với các nghề nghiệp, nơi con số rơi xuống dưới 1 phần trăm, phần tóm tắt của nghiên cứu không đưa ra lý do."
+      "body_vi": "Các con số này mô tả phương sai, tức phần chênh lệch giữa mọi người trong một lĩnh vực khớp với sự khác biệt về luyện tập. Chúng không nói rằng luyện tập có tác động nhỏ lên từng cá nhân. Ở trò chơi, âm nhạc và thể thao, luyện tập chiếm từ một phần năm đến một phần tư điều phân biệt những người thể hiện, và phần còn lại đến từ các yếu tố khác. Bản tóm tắt không nói những yếu tố đó là gì, và các tác giả chỉ kết luận rằng luyện tập [p:không phải là toàn bộ câu chuyện]. Với các nghề nghiệp, nơi con số rơi xuống dưới 1 phần trăm, phần tóm tắt của nghiên cứu không đưa ra lý do.",
+      "heading_fr": "Interpréter les pourcentages",
+      "body_fr": "Ces chiffres décrivent la variance, c'est-à-dire la part des écarts entre les individus d'un domaine qui correspond aux différences d'entraînement. Ils ne signifient nullement que la pratique a un impact négligeable sur une personne en particulier. Dans les jeux, la musique et le sport, la pratique représente entre un cinquième et un quart de ce qui distingue les intervenants, le reste provenant d'autres facteurs. Le résumé de l'étude ne précise pas la nature de ces autres facteurs, et les auteurs se contentent de conclure que la pratique [p:n'explique pas tout]. Quant aux professions, pour lesquelles le chiffre tombe en dessous de 1 pour cent, l'étude n'avance aucune explication dans son résumé.",
+      "heading_de": "Die Prozentwerte verstehen",
+      "body_de": "Diese Zahlen beschreiben die Varianz, also wie viel des Leistungsabstands zwischen verschiedenen Personen eines Bereichs mit unterschiedlichem Übungsumfang zusammenhängt. Sie besagen nicht, dass Üben bei einem einzelnen Menschen nur eine geringe Wirkung hat. Bei Spielen, Musik und Sport macht das Üben ein Fünftel bis ein Viertel dessen aus, was Könner voneinander unterscheidet; der Rest geht auf andere Faktoren zurück. Die Zusammenfassung verrät nicht, welche Faktoren das sind, und die Autoren schlussfolgern lediglich, dass Üben [p:nicht die ganze Geschichte ist]. Für das Berufsleben, wo der Wert unter 1 Prozent fällt, nennt die Studie im Abstract keinen Grund.",
+      "heading_es": "Cómo interpretar los porcentajes",
+      "body_es": "Estas cifras describen la varianza, es decir, qué parte de la brecha entre las personas dentro de un campo coincide con las diferencias en su práctica. No afirman que la práctica tenga un efecto reducido en una persona individual. En los juegos, la música y los deportes, la práctica explica entre una quinta y una cuarta parte de lo que distingue a quienes los practican, y el resto proviene de otros factores. El resumen del estudio no especifica cuáles son esos otros factores, y los autores solo concluyen que la práctica [p:no lo explica todo]. En el caso de las profesiones, donde la cifra no llega al 1 por ciento, el estudio no ofrece ninguna razón en su resumen."
     },
     {
       "heading_en": "Hard practice and soft practice",
       "heading_vi": "Luyện tập cứng và luyện tập mềm",
       "body_en": "The debate also has a popular side. Malcolm Gladwell's book Outliers is one of several popular books that discuss the idea, and he and Ericsson differ on emphasis. In a May 2016 interview Gladwell called Ericsson a 'hard practice guy' and himself a 'soft practice guy'. Gladwell argues that talent matters alongside dedicated practice, and that a supportive environment is vital to producing outstanding results. Ericsson's view is that methodical effort carries more of the weight {wiki-practice}.",
-      "body_vi": "Cuộc tranh luận cũng có một mặt đại chúng. Cuốn Outliers của Malcolm Gladwell là một trong nhiều cuốn sách phổ biến bàn về ý tưởng này, và ông cùng Ericsson khác nhau ở điểm nhấn. Trong một cuộc phỏng vấn tháng 5 năm 2016, Gladwell gọi Ericsson là người theo phái 'luyện cứng' còn mình là người theo phái 'luyện mềm'. Gladwell cho rằng tài năng quan trọng song song với luyện tập tận tâm, và một môi trường hỗ trợ là thiết yếu để tạo nên kết quả xuất sắc. Quan điểm của Ericsson là nỗ lực có phương pháp gánh phần nặng hơn {wiki-practice}."
+      "body_vi": "Cuộc tranh luận cũng có một mặt đại chúng. Cuốn Outliers của Malcolm Gladwell là một trong nhiều cuốn sách phổ biến bàn về ý tưởng này, và ông cùng Ericsson khác nhau ở điểm nhấn. Trong một cuộc phỏng vấn tháng 5 năm 2016, Gladwell gọi Ericsson là người theo phái 'luyện cứng' còn mình là người theo phái 'luyện mềm'. Gladwell cho rằng tài năng quan trọng song song với luyện tập tận tâm, và một môi trường hỗ trợ là thiết yếu để tạo nên kết quả xuất sắc. Quan điểm của Ericsson là nỗ lực có phương pháp gánh phần nặng hơn {wiki-practice}.",
+      "heading_fr": "Pratique dure et pratique douce",
+      "body_fr": "Le débat possède également un volet grand public. L'ouvrage Outliers de Malcolm Gladwell compte parmi plusieurs livres de vulgarisation abordant cette notion, et Gladwell et Ericsson divergent sur les priorités. Lors d'un entretien en mai 2016, Gladwell a qualifié Ericsson de « partisan de la pratique dure » et s'est lui-même qualifié d'« adepte de la pratique douce ». Gladwell soutient que le talent importe tout autant qu'un entraînement assidu, et qu'un environnement favorable est essentiel pour obtenir des résultats exceptionnels. Le point de vue d'Ericsson est que l'effort méthodique pèse bien davantage dans la balance {wiki-practice}.",
+      "heading_de": "Hartes und weiches Üben",
+      "body_de": "Die Debatte hat auch eine populäre Facette. Malcolm Gladwells Buch Outliers gehört zu mehreren bekannten Werken, die diese Idee aufgreifen, wobei Gladwell und Ericsson unterschiedliche Schwerpunkte setzen. In einem Interview im Mai 2016 nannte Gladwell Ericsson einen 'hard practice guy' und sich selbst einen 'soft practice guy'. Gladwell argumentiert, dass neben engagiertem Üben auch Talent zählt und ein förderndes Umfeld entscheidend ist, um herausragende Resultate zu erzielen. Ericssons Standpunkt lautet, dass methodische Anstrengung das weitaus größere Gewicht hat {wiki-practice}.",
+      "heading_es": "Práctica dura y práctica blanda",
+      "body_es": "El debate también tiene una vertiente popular. El libro Outliers, de Malcolm Gladwell, es una de varias obras de divulgación que analizan esta idea, y él y Ericsson difieren en el énfasis. En una entrevista de mayo de 2016, Gladwell calificó a Ericsson como un «defensor de la práctica dura» y a sí mismo como un «defensor de la práctica blanda». Gladwell sostiene que el talento importa tanto como la práctica dedicada, y que un entorno favorable es fundamental para alcanzar resultados sobresalientes. La postura de Ericsson es que el esfuerzo metódico tiene un peso mucho mayor {wiki-practice}."
     },
     {
       "heading_en": "What to take from it",
       "heading_vi": "Rút ra điều gì",
       "body_en": "The evidence does not show that practice is useless, and it does not show that practice is everything. It supports a narrower lesson about method. Define the part of the skill you want to improve, state the goal, and find a way to get immediate feedback, whether from a teacher, a recording or a score. [g:Repeat the weak part], not the whole performance. Then expect progress to depend on other factors as well, which the meta-analysis shows are real even if it does not name them.",
-      "body_vi": "Bằng chứng không cho thấy luyện tập vô ích, cũng không cho thấy luyện tập là tất cả. Nó ủng hộ một bài học hẹp hơn về phương pháp. Xác định phần kỹ năng bạn muốn cải thiện, nêu mục tiêu, và tìm cách có phản hồi tức thời, từ thầy cô, một bản ghi hình hoặc điểm số. [g:Lặp lại phần yếu], không phải cả màn trình diễn. Sau đó hãy chờ đợi rằng tiến bộ còn phụ thuộc vào các yếu tố khác, mà phân tích gộp cho thấy là có thật dù không gọi tên chúng."
+      "body_vi": "Bằng chứng không cho thấy luyện tập vô ích, cũng không cho thấy luyện tập là tất cả. Nó ủng hộ một bài học hẹp hơn về phương pháp. Xác định phần kỹ năng bạn muốn cải thiện, nêu mục tiêu, và tìm cách có phản hồi tức thời, từ thầy cô, một bản ghi hình hoặc điểm số. [g:Lặp lại phần yếu], không phải cả màn trình diễn. Sau đó hãy chờ đợi rằng tiến bộ còn phụ thuộc vào các yếu tố khác, mà phân tích gộp cho thấy là có thật dù không gọi tên chúng.",
+      "heading_fr": "Ce qu'il faut en retenir",
+      "body_fr": "Les données ne montrent pas que la pratique est inutile, pas plus qu'elles ne prouvent qu'elle fait tout. Elles confortent un enseignement plus ciblé sur la méthode. Définissez la facette de la compétence que vous souhaitez perfectionner, formulez l'objectif et trouvez un moyen d'obtenir un retour immédiat, qu'il provienne d'un professeur, d'un enregistrement ou d'une note. [g:Répétez la partie faible], pas l'ensemble de la prestation. Attendez-vous ensuite à ce que la progression dépende aussi d'autres facteurs qui, comme le démontre la méta-analyse, sont bien réels même s'ils ne sont pas nommés.",
+      "heading_de": "Was man daraus mitnimmt",
+      "body_de": "Die Belege zeigen weder, dass Üben nutzlos ist, noch dass Üben alles ist. Sie stützen eine konkretere Lehre über die Methode: Definiere den Teil der Fertigkeit, den du verbessern möchtest, formuliere das Ziel und finde einen Weg, um unmittelbares Feedback zu erhalten – sei es durch eine Lehrkraft, eine Aufnahme oder ein Testergebnis. [g:Wiederhole die Schwachstelle], nicht die gesamte Darbietung. Rechne dann damit, dass Fortschritt auch von anderen Faktoren abhängt, die laut Metaanalyse real existieren, selbst wenn sie diese nicht namentlich nennt.",
+      "heading_es": "Qué conclusiones extraer",
+      "body_es": "La evidencia no demuestra que la práctica sea inútil, ni tampoco que lo sea todo. Respalda una lección más acotada sobre el método. Define la parte de la habilidad que deseas mejorar, establece el objetivo y busca una manera de recibir retroalimentación inmediata, ya sea de un profesor, una grabación o una puntuación. [g:Repite la parte débil], no toda la ejecución. Luego, asume que el progreso dependerá también de otros factores, los cuales el metanálisis demuestra que son reales, aunque no los mencione."
     }
   ],
   "keyPoint": {
     "en": "Deliberate practice means working on a well-defined part of a skill with a clear goal and quick feedback. In a 2014 meta-analysis it explained about a fifth to a quarter of performance differences in games, music and sports, and far less in education and professions. Practise the weak part with feedback, and do not expect practice to explain everything.",
-    "vi": "Luyện tập có chủ đích nghĩa là làm việc trên một phần được xác định rõ của kỹ năng, với mục tiêu rõ và phản hồi nhanh. Trong một phân tích gộp năm 2014, nó giải thích khoảng một phần năm đến một phần tư chênh lệch thành tích ở trò chơi, âm nhạc và thể thao, và ít hơn nhiều ở giáo dục và các nghề nghiệp. Hãy luyện phần yếu cùng phản hồi, và đừng mong luyện tập giải thích mọi thứ."
+    "vi": "Luyện tập có chủ đích nghĩa là làm việc trên một phần được xác định rõ của kỹ năng, với mục tiêu rõ và phản hồi nhanh. Trong một phân tích gộp năm 2014, nó giải thích khoảng một phần năm đến một phần tư chênh lệch thành tích ở trò chơi, âm nhạc và thể thao, và ít hơn nhiều ở giáo dục và các nghề nghiệp. Hãy luyện phần yếu cùng phản hồi, và đừng mong luyện tập giải thích mọi thứ.",
+    "fr": "La pratique délibérée consiste à travailler un élément bien défini d'une compétence avec un objectif clair et un retour rapide. Dans une méta-analyse de 2014, elle expliquait environ un cinquième à un quart des écarts de performance dans les jeux, la musique et le sport, et bien moins dans l'éducation et les professions. Travaillez le point faible avec un retour d'information, sans vous attendre à ce que la pratique explique tout.",
+    "de": "Gezieltes Üben bedeutet, an einem klar umrissenen Teilbereich einer Fertigkeit mit deutlichem Ziel und schnellem Feedback zu arbeiten. In einer Metaanalyse von 2014 erklärte es etwa ein Fünftel bis ein Viertel der Leistungsunterschiede bei Spielen, Musik und Sport und weit weniger im Bildungswesen sowie im Berufsleben. Übe die Schwachstelle mit Feedback und erwarte nicht, dass Übung allein alles erklärt.",
+    "es": "La práctica deliberada consiste en trabajar en una parte bien definida de una habilidad con un objetivo claro y una retroalimentación rápida. En un metanálisis de 2014, explicó entre una quinta y una cuarta parte de las diferencias de rendimiento en juegos, música y deportes, y mucho menos en educación y profesiones. Practica la parte débil con retroalimentación y no esperes que la práctica lo explique todo."
   },
   "applySteps": {
     "en": [
@@ -70,6 +115,21 @@
       "Chọn một kỹ năng và gọi tên phần nhỏ nhất bạn làm tệ nhất trong đó.",
       "Đặt mục tiêu cho phần đó trong tuần này, và quyết định cách lấy phản hồi: thầy cô, bản ghi hình hoặc điểm số.",
       "Cuối tuần, so kết quả với mục tiêu và chọn phần nhỏ kế tiếp để làm."
+    ],
+    "fr": [
+      "Choisissez une compétence et identifiez le sous-élément précis où vos résultats sont les moins bons.",
+      "Fixez-vous un objectif pour cet élément cette semaine et déterminez le moyen d'obtenir un retour : un professeur, un enregistrement ou un score.",
+      "À la fin de la semaine, comparez le résultat à votre objectif et choisissez le sous-élément suivant à travailler."
+    ],
+    "de": [
+      "Wähle eine Fertigkeit und benenne den kleinsten Teilbereich davon, den du am schlechtesten beherrschst.",
+      "Setze dir für diesen Teilbereich ein Ziel für diese Woche und lege fest, wie du Feedback einholst: über eine Lehrkraft, eine Aufnahme oder ein Testergebnis.",
+      "Vergleiche am Ende der Woche das Ergebnis mit deinem Ziel und wähle den nächsten kleinen Teilbereich aus, an dem du arbeitest."
+    ],
+    "es": [
+      "Elige una habilidad e identifica la parte más pequeña de ella en la que tengas el peor desempeño.",
+      "Establece un objetivo para esa parte durante esta semana y decide cómo obtendrás retroalimentación: un profesor, una grabación o una puntuación.",
+      "Al final de la semana, compara el resultado con tu objetivo y selecciona la siguiente parte pequeña en la que trabajarás."
     ]
   },
   "references": [
@@ -94,12 +154,87 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/deliberate-practice-how-much-it-explains.webp",
+    "url": "https://images.unsplash.com/8/playball.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODc4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Jon Eckert",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/umLpP7uCZs0"
+    "sourceUrl": "https://unsplash.com/photos/umLpP7uCZs0",
+    "wide": "https://images.unsplash.com/8/playball.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODc4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@joneckert?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZgCdMoADg5RQCqEcZdnMYvPADQ+agAD+25L4hFMX/hkUaxh0N7EfX8QtvqKwppJ/aYOdiQglvKpMw3j7LdLJKYocHPhB56Nf0U5ZiA0aGErbf9M+wXPmufmYiTGPP0Mv6p6eRFcND3BOPhAw1NlT5AdUF2t+KubiXfeQ4AA=",
-  "dominant": "#5e4238"
+  "dominant": "#5e4238",
+  "glossary": {
+    "en": {
+      "deliberate practice": "Structured training focused on improving specific weaknesses with clear goals and prompt feedback.",
+      "expert performance": "Consistently superior execution and high skill achieved within a specific field or discipline.",
+      "meta-analysis": "A statistical study that combines and evaluates data from multiple existing research studies.",
+      "immediate feedback": "Information given directly after an action so the learner can correct errors right away.",
+      "ten-year rule": "The principle that achieving elite competence requires roughly a decade of intense, dedicated effort.",
+      "elite performance": "Exceptional mastery and achievement ranking among the very best in a domain.",
+      "variance": "A statistical measure of how much individual differences in performance correspond to differences in practice.",
+      "outliers": "A book examining factors like timing, culture, and opportunity that drive extraordinary success.",
+      "hard practice": "The view attributing elite achievement primarily to rigorous, methodical training rather than innate talent.",
+      "soft practice": "The perspective that natural ability and supportive surroundings matter greatly alongside dedicated practice."
+    },
+    "vi": {
+      "phân tích gộp": "Phương pháp thống kê tổng hợp kết quả từ nhiều nghiên cứu để đưa ra kết luận chung.",
+      "deliberate practice": "Thuật ngữ tiếng Anh chỉ việc luyện tập có chủ đích nhằm nâng cao kỹ năng.",
+      "chuyên gia": "Người đạt trình độ hiểu biết sâu sắc và kỹ năng điêu luyện trong một lĩnh vực.",
+      "phản hồi": "Nhận xét hoặc kết quả tức thời giúp người học nhận biết lỗi để điều chỉnh kịp thời.",
+      "ô nhịp": "Đơn vị phân chia thời gian cơ bản gồm một số phách nhất định trong bản nhạc.",
+      "biểu diễn": "Việc thực hiện hoàn chỉnh toàn bộ tác phẩm mà không tập trung sửa chữa từng lỗi nhỏ.",
+      "phương sai": "Khái niệm thống kê đo lường mức độ biến thiên hoặc chênh lệch giữa các đối tượng.",
+      "outliers": "Tên cuốn sách nổi tiếng bàn về các yếu tố mang lại thành công xuất chúng.",
+      "chuyên môn": "Kiến thức chuyên sâu và năng lực thực hành thành thạo trong một ngành nghề hay lĩnh vực.",
+      "huấn luyện viên": "Người trực tiếp chỉ dẫn, giám sát và đưa ra phản hồi giúp người học tiến bộ."
+    },
+    "fr": {
+      "pratique délibérée": "Entraînement structuré et méthodique visant à perfectionner un aspect précis avec un retour immédiat.",
+      "méta-analyse": "Démarche statistique combinant les résultats de plusieurs études indépendantes sur un sujet donné.",
+      "variance": "Indicateur statistique mesurant l'ampleur des écarts observés entre individus au sein d'un groupe.",
+      "retour immédiat": "Information communiquée sans délai après l'exécution pour permettre d'ajuster immédiatement sa pratique.",
+      "apprenant": "Personne qui s'exerce activement afin d'acquérir ou de perfectionner une compétence précise.",
+      "données empiriques": "Éléments d'information issus de l'observation rigoureuse, de tests pratiques ou de mesures scientifiques.",
+      "performance d'élite": "Niveau d'excellence remarquable atteint par les individus les plus accomplis dans un domaine.",
+      "outliers": "Livre à succès de Malcolm Gladwell explorant les raisons sous-jacentes des réussites exceptionnelles.",
+      "pratique dure": "Conception selon laquelle le travail acharné et méthodique prime sur le talent naturel.",
+      "pratique douce": "Vision accordant une importance majeure au talent inné et à un environnement favorable."
+    },
+    "de": {
+      "expertise": "Herausragendes Fachwissen und überdurchschnittliches praktisches Können auf einem bestimmten Gebiet.",
+      "metaanalyse": "Statistisches Verfahren, das die Ergebnisse mehrerer unabhängiger wissenschaftlicher Studien zu einer Forschungsfrage zusammenfassend auswertet.",
+      "gezieltes üben": "Strukturiertes Training einzelner Teilfertigkeiten mit klarem Ziel und unmittelbarem Feedback zur Leistungsverbesserung.",
+      "feedback": "Direkte Rückmeldung über die Ausführung einer Handlung, die sofortige Korrekturen und Anpassungen ermöglicht.",
+      "zehn-jahres-regel": "Hypothese, dass Spitzenleistungen mindestens ein Jahrzehnt intensiven, gezielten Übens erfordern.",
+      "varianz": "Statistische Kennzahl für die Streuung von Daten, hier für Unterschiede im Leistungsniveau zwischen Personen.",
+      "abstract": "Kurze Zusammenfassung einer wissenschaftlichen Veröffentlichung mit den wesentlichen Methoden, Resultaten und Schlussfolgerungen.",
+      "outliers": "Buch von Malcolm Gladwell über Ursachen und Begleitumstände außergewöhnlichen menschlichen Erfolgs.",
+      "hard practice guy": "Gladwells Bezeichnung für Personen, die Spitzenleistungen primär auf hartes, methodisches Üben zurückführen.",
+      "soft practice guy": "Gladwells Selbstbezeichnung als jemand, der neben Übung auch Begabung und das soziale Umfeld betont."
+    },
+    "es": {
+      "práctica deliberada": "Entrenamiento enfocado y estructurado para mejorar aspectos específicos de una habilidad mediante retroalimentación inmediata.",
+      "metanálisis": "Estudio estadístico que combina y analiza conjuntamente los resultados de múltiples investigaciones científicas independientes.",
+      "rendimiento experto": "Nivel superior y consistente de competencia demostrado por especialistas en un campo determinado.",
+      "retroalimentación": "Información sobre el desempeño que permite corregir errores y ajustar la ejecución al instante.",
+      "varianza": "Medida estadística que cuantifica cuánto difieren entre sí los resultados de varios individuos.",
+      "práctica dura": "Enfoque que considera el esfuerzo riguroso y metódico como el factor decisivo del éxito.",
+      "práctica blanda": "Postura que enfatiza la influencia del talento innato y el entorno junto con la práctica.",
+      "compás": "Unidad métrica que divide una pieza musical en fragmentos de igual duración temporal.",
+      "pericia": "Alto grado de habilidad y conocimiento práctico alcanzado en una disciplina específica.",
+      "diferencias de rendimiento": "Variaciones en la eficacia o calidad del desempeño observadas entre distintos participantes."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

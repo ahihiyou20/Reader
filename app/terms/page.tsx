@@ -8,14 +8,14 @@ export default function Terms() {
     <div className="doc">
       <main>
         <Link className="back" href="/">
-          ← Reader
+          ← Pagemoor
         </Link>
         <h1>Terms of use</h1>
-        <p>Reader is free. There are no paid plans, limits on reading, or ads. Tiếng Việt ở bên dưới.</p>
+        <p>Pagemoor is free. There are no paid plans, limits on reading, or ads. Tiếng Việt ở bên dưới.</p>
         <h2>Content</h2>
         <p>
-          Articles are adapted from openly licensed sources (such as CC BY and public-domain works) or written for Reader. Each article
-          names its source, licence and the changes made; tap <i>[Source · N]</i> at the end of an article. Reader&apos;s own text is
+          Articles are adapted from openly licensed sources (such as CC BY and public-domain works) or written for Pagemoor. Each article
+          names its source, licence and the changes made; tap <i>[Source · N]</i> at the end of an article. Pagemoor&apos;s own text is
           available under CC BY 4.0, and articles adapted from CC BY-SA sources stay under CC BY-SA 4.0. Cover photos keep the licence
           shown in their credit.
         </p>
@@ -35,11 +35,11 @@ export default function Terms() {
         <p>The service is provided as is. We may change or discontinue features.</p>
 
         <h1 style={{ marginTop: 56 }}>Điều khoản sử dụng</h1>
-        <p>Reader miễn phí: không có gói trả phí, không giới hạn số bài đọc, không quảng cáo.</p>
+        <p>Pagemoor miễn phí: không có gói trả phí, không giới hạn số bài đọc, không quảng cáo.</p>
         <h2>Nội dung</h2>
         <p>
-          Bài viết được phỏng theo các nguồn có giấy phép mở (như CC BY và tác phẩm thuộc phạm vi công cộng) hoặc được viết cho Reader. Mỗi
-          bài ghi rõ nguồn, giấy phép và các thay đổi; chạm <i>[Nguồn · N]</i> ở cuối bài để xem. Phần chữ của Reader dùng giấy phép CC BY
+          Bài viết được phỏng theo các nguồn có giấy phép mở (như CC BY và tác phẩm thuộc phạm vi công cộng) hoặc được viết cho Pagemoor. Mỗi
+          bài ghi rõ nguồn, giấy phép và các thay đổi; chạm <i>[Nguồn · N]</i> ở cuối bài để xem. Phần chữ của Pagemoor dùng giấy phép CC BY
           4.0; bài phỏng theo nguồn CC BY-SA giữ giấy phép CC BY-SA 4.0. Ảnh bìa theo giấy phép ghi trong phần ghi công.
         </p>
         <p>Bài viết mang tính kiến thức phổ thông, không phải lời khuyên y tế, pháp lý hay tài chính.</p>

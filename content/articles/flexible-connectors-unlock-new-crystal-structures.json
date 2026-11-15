@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Flexible Connectors Unlock New Crystal Structures",
-    "vi": "Các chất kết nối linh hoạt mở khóa cấu trúc tinh thể mới"
+    "vi": "Các chất kết nối linh hoạt mở khóa cấu trúc tinh thể mới",
+    "fr": "Des connecteurs flexibles révèlent de nouvelles structures cristallines",
+    "de": "Flexible Verbindungen eröffnen neuartige Kristallstrukturen",
+    "es": "Conectores flexibles habilitan nuevas estructuras cristalinas"
   },
   "hook": {
     "en": "Materials scientists at MIT have broken a twenty-year rule by showing that highly flexible molecular bonds can organize nanoparticles into entirely new crystal structures, reversing the traditional dogma that rigidity is required for precise assembly .",
-    "vi": "Các nhà khoa học vật liệu tại MIT đã phá vỡ quy tắc hai mươi năm bằng cách chứng minh rằng các liên kết phân tử có độ linh hoạt cao có thể sắp xếp các hạt nano thành các cấu trúc tinh thể hoàn toàn mới, đảo ngược giáo lý truyền thống rằng độ cứng là bắt buộc để lắp ráp chính xác ."
+    "vi": "Các nhà khoa học vật liệu tại MIT đã phá vỡ quy tắc hai mươi năm bằng cách chứng minh rằng các liên kết phân tử có độ linh hoạt cao có thể sắp xếp các hạt nano thành các cấu trúc tinh thể hoàn toàn mới, đảo ngược giáo lý truyền thống rằng độ cứng là bắt buộc để lắp ráp chính xác .",
+    "fr": "Des spécialistes en science des matériaux du MIT ont brisé une règle établie depuis vingt ans en démontrant que des liaisons moléculaires très flexibles peuvent organiser des nanoparticules en des structures cristallines totalement inédites, renversant le dogme traditionnel selon lequel la rigidité est indispensable à un assemblage précis.",
+    "de": "Materialwissenschaftler am MIT haben mit einer zwanzig Jahre alten Regel gebrochen: Sie wiesen nach, dass hochflexible molekulare Bindungen Nanopartikel zu völlig neuen Kristallstrukturen anordnen können – und widerlegten damit das traditionelle Dogma, dass für eine präzise Selbstorganisation zwingend Starrheit erforderlich ist.",
+    "es": "Científicos de materiales del MIT han roto una regla de veinte años al demostrar que enlaces moleculares sumamente flexibles pueden organizar nanopartículas en estructuras cristalinas totalmente nuevas, revirtiendo el dogma tradicional de que la rigidez es indispensable para un ensamblaje preciso."
   },
   "sections": [
     {
       "heading_en": "The Limits of Rigidity",
       "heading_vi": "Hạn chế của độ cứng",
       "body_en": "Researchers have long struggled to control how tiny particles connect because rigid connectors limit the variety of structures they can produce. Methods that change particle shapes or surface stickiness remain bespoke and difficult to scale. {source}",
-      "body_vi": "Các nhà nghiên cứu từ lâu đã chật vật trong việc kiểm soát cách các hạt nhỏ liên kết vì các chất kết nối cứng nhắc giới hạn sự đa dạng của cấu trúc. Các phương pháp thay đổi hình dạng hạt hoặc độ bám dính bề mặt vẫn mang tính thủ công và khó mở rộng quy mô."
+      "body_vi": "Các nhà nghiên cứu từ lâu đã chật vật trong việc kiểm soát cách các hạt nhỏ liên kết vì các chất kết nối cứng nhắc giới hạn sự đa dạng của cấu trúc. Các phương pháp thay đổi hình dạng hạt hoặc độ bám dính bề mặt vẫn mang tính thủ công và khó mở rộng quy mô.",
+      "heading_fr": "Les limites de la rigidité",
+      "body_fr": "Les chercheurs peinent depuis longtemps à contrôler la façon dont les particules minuscules s'assemblent, car des connecteurs rigides limitent la variété des structures réalisables. Les méthodes modifiant la forme des particules ou l'adhérence de leur surface restent artisanales et difficiles à transposer à grande échelle. {source}",
+      "heading_de": "Die Grenzen der Starrheit",
+      "body_de": "Forschende taten sich lange schwer damit zu steuern, wie sich winzige Partikel verbinden, da starre Verbindungselemente die Vielfalt der erzeugbaren Strukturen einschränken. Verfahren, welche die Partikelform oder die Oberflächenhaftung verändern, bleiben maßgeschneidert und lassen sich nur schwer skalieren. {source}",
+      "heading_es": "Los límites de la rigidez",
+      "body_es": "Durante mucho tiempo, los investigadores han intentado controlar cómo se conectan las partículas diminutas, ya que los conectores rígidos limitan la variedad de estructuras que pueden generar. Los métodos que modifican la forma de las partículas o su adherencia superficial siguen siendo artesanales y difíciles de escalar. {source}"
     },
     {
       "heading_en": "Bending Bonds Freely",
       "heading_vi": "Uốn cong liên kết tự do",
       "body_en": "The MIT team attached polymer chains with electrical charges at their ends to nanoparticles. Rather than forcing fixed angles, they let these connectors bend freely, allowing electrical attraction to guide how many neighbors each particle joins.",
-      "body_vi": "Nhóm nghiên cứu tại MIT đã gắn các chuỗi polymer mang điện tích ở đầu vào các hạt nano. Thay vì ép buộc các góc cố định, họ để các chất kết nối này uốn cong tự do, cho phép lực hút điện điện hướng dẫn số lượng hàng xóm mà mỗi hạt tham gia."
+      "body_vi": "Nhóm nghiên cứu tại MIT đã gắn các chuỗi polymer mang điện tích ở đầu vào các hạt nano. Thay vì ép buộc các góc cố định, họ để các chất kết nối này uốn cong tự do, cho phép lực hút điện điện hướng dẫn số lượng hàng xóm mà mỗi hạt tham gia.",
+      "heading_fr": "Fléchir librement les liaisons",
+      "body_fr": "L'équipe du MIT a fixé à des nanoparticules des chaînes de polymères dotées de charges électriques à leurs extrémités. Au lieu d'imposer des angles fixes, les chercheurs ont laissé ces connecteurs fléchir librement, permettant à l'attraction électrique de déterminer le nombre de voisines auxquelles chaque particule se lie.",
+      "heading_de": "Frei biegbare Bindungen",
+      "body_de": "Das Team am MIT befestigte Polymerketten mit elektrischen Ladungen an ihren Enden an Nanopartikeln. Statt feste Winkel zu erzwingen, ließen die Forschenden diese Verbindungselemente sich frei biegen, sodass die elektrostatische Anziehung steuert, mit wie vielen Nachbarn sich jedes Partikel verbindet.",
+      "heading_es": "Flexión libre de enlaces",
+      "body_es": "El equipo del MIT unió cadenas de polímeros con cargas eléctricas en sus extremos a nanopartículas. En lugar de forzar ángulos fijos, permitieron que estos conectores se doblaran libremente, dejando que la atracción eléctrica determinara a cuántos vecinos se une cada partícula."
     },
     {
       "heading_en": "Unseen Superlattices",
       "heading_vi": "Siêu mạng lưới chưa từng thấy",
       "body_en": "Adjusting particle sizes and chain lengths gave the team control over the number of bonds per particle. This approach produced open, previously unseen superlattices instead of densely packed arrangements.",
-      "body_vi": "Việc điều chỉnh kích thước hạt và chiều dài chuỗi mang lại cho nhóm khả năng kiểm soát số lượng liên kết trên mỗi hạt. Cách tiếp cận này tạo ra các siêu mạng lưới mở, chưa từng thấy trước đây thay vì các cấu trúc đóng gói dày đặc."
+      "body_vi": "Việc điều chỉnh kích thước hạt và chiều dài chuỗi mang lại cho nhóm khả năng kiểm soát số lượng liên kết trên mỗi hạt. Cách tiếp cận này tạo ra các siêu mạng lưới mở, chưa từng thấy trước đây thay vì các cấu trúc đóng gói dày đặc.",
+      "heading_fr": "Des super-réseaux inédits",
+      "body_fr": "En ajustant la taille des particules et la longueur des chaînes, l'équipe a pu contrôler le nombre de liaisons par particule. Cette approche a engendré des super-réseaux ouverts et jusqu'alors inédits, plutôt que des agencements denses et compacts.",
+      "heading_de": "Bislang ungesehene Übergitter",
+      "body_de": "Durch die Anpassung von Partikelgröße und Kettenlänge konnte das Team die Zahl der Bindungen pro Partikel steuern. Dieser Ansatz erzeugte offene, zuvor ungesehene Übergitter anstelle von dicht gepackten Anordnungen.",
+      "heading_es": "Superredes inéditas",
+      "body_es": "Ajustar el tamaño de las partículas y la longitud de las cadenas permitió al equipo controlar la cantidad de enlaces por partícula. Este enfoque produjo superredes abiertas e inéditas en lugar de disposiciones densamente empaquetadas."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1032/1080/1920",
+    "url": "https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA5fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "NASA",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/E7q00J_8N7A"
+    "sourceUrl": "https://unsplash.com/photos/E7q00J_8N7A",
+    "wide": "https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA5fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@nasa?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Like water finding its own level by flowing around obstacles rather than carving a straight channel, letting connectors bend freely creates order. [p:Can you apply flexible connections to your next design challenge?]",
-    "vi": "Giống như nước tìm thấy mực nước của riêng mình bằng cách chảy quanh các vật chướng ngại thay vì khoét một rãnh thẳng, việc để các chất kết nối uốn cong tự do sẽ tạo ra trật tự. [p:Bạn có thể áp dụng các kết nối linh hoạt cho thách thức thiết kế tiếp theo của mình không?]"
+    "vi": "Giống như nước tìm thấy mực nước của riêng mình bằng cách chảy quanh các vật chướng ngại thay vì khoét một rãnh thẳng, việc để các chất kết nối uốn cong tự do sẽ tạo ra trật tự. [p:Bạn có thể áp dụng các kết nối linh hoạt cho thách thức thiết kế tiếp theo của mình không?]",
+    "fr": "Tout comme l'eau trouve son niveau en contournant les obstacles au lieu de creuser un canal rectiligne, laisser les connecteurs fléchir librement engendre de l'ordre. [p:Pourriez-vous intégrer des liaisons flexibles à votre prochain défi de conception ?]",
+    "de": "So wie Wasser von selbst sein Niveau findet, indem es Hindernisse umfließt, statt einen geraden Kanal zu graben, schafft das freie Biegen von Verbindungen Ordnung. [p:Kannst du flexible Verbindungen bei deiner nächsten gestalterischen Herausforderung nutzen?]",
+    "es": "Al igual que el agua encuentra su propio nivel fluyendo alrededor de los obstáculos en lugar de excavar un canal recto, permitir que los conectores se doblen libremente genera orden. [p:¿Puede aplicar conexiones flexibles a su próximo desafío de diseño?]"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Xác định một hệ thống cứng nhắc mà bạn đang cố ép vào một hình dạng cố định.",
       "Cho phép các yếu tố kết nối hoàn toàn tự do điều chỉnh một cách tự nhiên.",
       "Quan sát cách các thành phần tự ổn định vào một sắp xếp ổn định."
+    ],
+    "fr": [
+      "Identifier un système rigide que vous tentez de forcer dans une forme figée.",
+      "Laisser aux éléments de liaison une liberté totale pour s'adapter naturellement.",
+      "Observer la manière dont les composants adoptent d'eux-mêmes une configuration stable."
+    ],
+    "de": [
+      "Identifiziere ein starres System, das du in eine feste Form zu zwingen versuchst.",
+      "Gewähre den Verbindungselementen die Freiheit, sich ganz natürlich auszurichten.",
+      "Beobachte, wie sich die Komponenten von selbst zu einer stabilen Anordnung zusammenfinden."
+    ],
+    "es": [
+      "Identifique un sistema rígido que esté intentando forzar hacia una forma fija.",
+      "Otorgue a los elementos de conexión total libertad para ajustarse de manera natural.",
+      "Observe cómo los componentes se asientan por sí solos en una disposición estable."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,75 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "materials scientists": "Researchers who study the properties, structure, and design of physical matter and materials.",
+      "molecular bonds": "Forces holding atoms or molecules together.",
+      "nanoparticles": "Tiny particles measured on a scale of billionths of a meter.",
+      "crystal structures": "Highly ordered, repeating geometric patterns formed by organized particles.",
+      "dogma": "A widely accepted belief or principle held without question.",
+      "bespoke": "Custom-made or individually designed for a specific purpose.",
+      "polymer chains": "Long molecular strands made of repeating units, used here as flexible connectors.",
+      "electrical charges": "Physical properties that cause particles to experience attractive or repulsive forces.",
+      "electrical attraction": "The pull between opposing charges that draws particles together.",
+      "superlattices": "Periodic, highly ordered structures formed from organized arrangements of nanoparticles."
+    },
+    "vi": {
+      "chất kết nối": "Phân tử liên kết dùng để gắn các hạt lại với nhau.",
+      "hạt nano": "Các hạt vật chất có kích thước siêu nhỏ ở quy mô nanomet.",
+      "mit": "Viện Công nghệ Massachusetts, viện đại học nghiên cứu công nghệ danh tiếng tại Mỹ.",
+      "chuỗi polymer": "Dãy phân tử dài gồm nhiều mắt xích lặp lại gắn với nhau.",
+      "điện tích": "Đặc tính điện của vật chất tạo ra lực hút hoặc lực đẩy.",
+      "siêu mạng lưới": "Cấu trúc trật tự tuần hoàn quy mô lớn tạo từ các hạt nano.",
+      "độ bám dính": "Lực tương tác giữ các phân tử hoặc bề mặt gắn chặt nhau.",
+      "tinh thể": "Cấu trúc vật chất có các hạt sắp xếp trật tự và tuần hoàn.",
+      "độ cứng": "Khả năng chống lại sự biến dạng hoặc uốn cong của vật liệu.",
+      "độ linh hoạt": "Khả năng uốn cong và thích ứng tự do của các phân tử nối."
+    },
+    "fr": {
+      "science des matériaux": "Discipline étudiant les propriétés, la structure et la conception des matières solides.",
+      "mit": "Prestigieuse université américaine de recherche spécialisée en sciences et technologies.",
+      "liaisons moléculaires": "Forces maintenant des atomes ou molécules ensemble pour former une structure chimique.",
+      "nanoparticules": "Particules microscopiques dont la dimension se mesure en milliardièmes de mètre.",
+      "structures cristallines": "Arrangement ordonné et géométrique d'atomes ou de particules dans un matériau solide.",
+      "chaînes de polymères": "Longues molécules composées de la répétition d'unités chimiques plus petites.",
+      "charges électriques": "Propriétés physiques de la matière provoquant des forces d'attraction ou de répulsion.",
+      "attraction électrique": "Force attirant mutuellement des particules porteuses de charges électriques de signes opposés.",
+      "super-réseaux": "Structures périodiques formées par l'assemblage régulier et ordonné de nanoparticules."
+    },
+    "de": {
+      "materialwissenschaftler": "Forschende, die Eigenschaften, Zusammensetzung und Entwicklung neuartiger Werkstoffe und Materialien untersuchen.",
+      "mit": "Das Massachusetts Institute of Technology, eine renommierte US-amerikanische Spitzenuniversität für Naturwissenschaften und Technik.",
+      "molekulare bindungen": "Chemische oder physikalische Wechselwirkungen, die Moleküle oder funktionelle Gruppen miteinander verknüpfen.",
+      "nanopartikel": "Extrem kleine Partikel im Nanometerbereich, die als grundlegende Bausteine für neue Werkstoffe dienen.",
+      "kristallstrukturen": "Hochgradig regelmäßige, periodisch wiederkehrende räumliche Anordnungen von Bausteinen in einem Festkörper.",
+      "dogma": "Ein etablierter wissenschaftlicher Lehrsatz oder Grundsatz, der lange als unumstößliche Tatsache galt.",
+      "selbstorganisation": "Der Vorgang, bei dem Teilchen ohne äußeren Zwang eigenständig geordnete Strukturen ausbilden.",
+      "oberflächenhaftung": "Die Eigenschaft von Materialoberflächen, durch zwischenmolekulare Kräfte aneinander haften zu bleiben.",
+      "polymerketten": "Aus vielen gleichen Bausteinen zusammengesetzte lange Molekülketten, die hier als flexible Verbindungselemente fungieren.",
+      "elektrischen ladungen": "Physikalische Ladungszustände an den Kettenenden, die durch elektrostatische Kräfte die Partikel anziehen.",
+      "übergitter": "Periodisch geordnete Überstrukturen, die aus Nanopartikeln anstelle einzelner Atome zusammengesetzt sind."
+    },
+    "es": {
+      "mit": "Prestigiosa universidad de investigación tecnológica estadounidense donde se desarrolló el estudio.",
+      "estructuras cristalinas": "Disposiciones geométricas altamente ordenadas y periódicas formadas por partículas organizadas en el espacio.",
+      "nanopartículas": "Partículas extremadamente diminutas que operan a escala nanométrica en ciencia de materiales.",
+      "enlaces moleculares": "Uniones químicas o interacciones que conectan partículas y permiten su articulación.",
+      "ensamblaje preciso": "Organización ordenada y milimétrica de componentes para construir una arquitectura definida.",
+      "adherencia superficial": "Propiedad física o química exterior que determina cómo se pegan las partículas entre sí.",
+      "cadenas de polímeros": "Macromoléculas alargadas formadas por unidades repetidas utilizadas aquí como conectores flexibles.",
+      "cargas eléctricas": "Propiedad física que determina fuerzas de repulsión o atracción mutua entre extremos moleculares.",
+      "atracción eléctrica": "Fuerza electrostática que aproxima polos opuestos y guía el ordenamiento natural de componentes.",
+      "superredes": "Estructuras periódicas y ordenadas constituidas por nanopartículas dispuestas en patrones tridimensionales complejos."
+    }
   }
 }

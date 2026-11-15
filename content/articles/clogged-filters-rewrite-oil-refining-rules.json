@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Clogged Filters Rewrite Oil Refining Rules",
-    "vi": "Bộ lọc bị tắc viết lại quy tắc lọc dầu"
+    "vi": "Bộ lọc bị tắc viết lại quy tắc lọc dầu",
+    "fr": "Des filtres colmatés réécrivent les règles du raffinage pétrolier",
+    "de": "Verstopfte Filter schreiben Regeln der Ölraffination neu",
+    "es": "Filtros obstruidos reescriben las reglas de la refinación de petróleo"
   },
   "hook": {
     "en": "Traditional oil refining relies on intense heat and consumes massive amounts of electricity. Now, researchers at the Korea Advanced Institute of Science and Technology and Georgia Tech have demonstrated that an uncoated porous filter can separate crude oil at room temperature. This unexpected finding could reduce refining energy demands significantly {source}.",
-    "vi": "Quá trình lọc dầu truyền thống phụ thuộc vào nhiệt độ khắc nghiệt và tiêu thụ lượng điện năng khổng lồ. Giờ đây, các nhà nghiên cứu tại Viện Khoa học và Công nghệ Tiên tiến Hàn Quốc cùng Georgia Tech đã chứng minh rằng một bộ lọc xốp không tráng phủ có thể tách dầu thô ở nhiệt độ phòng. Phát hiện bất ngờ này có thể làm giảm đáng kể nhu cầu năng lượng lọc dầu {source}."
+    "vi": "Quá trình lọc dầu truyền thống phụ thuộc vào nhiệt độ khắc nghiệt và tiêu thụ lượng điện năng khổng lồ. Giờ đây, các nhà nghiên cứu tại Viện Khoa học và Công nghệ Tiên tiến Hàn Quốc cùng Georgia Tech đã chứng minh rằng một bộ lọc xốp không tráng phủ có thể tách dầu thô ở nhiệt độ phòng. Phát hiện bất ngờ này có thể làm giảm đáng kể nhu cầu năng lượng lọc dầu {source}.",
+    "fr": "Le raffinage pétrolier traditionnel repose sur une chaleur intense et consomme d'énormes quantités d'électricité. Désormais, des chercheurs du Korea Advanced Institute of Science and Technology et de Georgia Tech ont démontré qu'un filtre poreux non revêtu peut séparer le pétrole brut à température ambiante. Cette découverte inattendue pourrait réduire considérablement la consommation énergétique du raffinage {source}.",
+    "de": "Die herkömmliche Erdölraffination beruht auf großer Hitze und verbraucht gewaltige Mengen an Strom. Nun haben Forschende am Korea Advanced Institute of Science and Technology und an der Georgia Tech gezeigt, dass ein unbeschichteter poröser Filter Rohöl bei Raumtemperatur trennen kann. Diese unerwartete Entdeckung könnte den Energiebedarf beim Raffinieren drastisch senken {source}.",
+    "es": "La refinación tradicional de petróleo depende de un calor intenso y consume enormes cantidades de electricidad. Ahora, investigadores del Korea Advanced Institute of Science and Technology y Georgia Tech han demostrado que un filtro poroso sin recubrimiento puede separar el petróleo crudo a temperatura ambiente. Este inesperado hallazgo podría reducir de forma significativa la demanda energética de la refinación {source}."
   },
   "sections": [
     {
       "heading_en": "High Energy Demand",
       "heading_vi": "Nhu cầu năng lượng lớn",
       "body_en": "Global crude oil distillation consumes roughly 1,100 terawatt-hours annually. This energy requirement is comparable to the yearly electricity production of about 130 nuclear power plants. Traditional methods heat oil above 350 degrees Celsius to vaporize and separate different fractions. This massive energy consumption makes the refining industry a major contributor to greenhouse gas emissions.",
-      "body_vi": "Quá trình chưng cất dầu thô toàn cầu tiêu thụ khoảng 1.100 terawatt-giờ mỗi năm. Nhu cầu năng lượng này tương đương với sản lượng điện hàng năm của khoảng 130 nhà máy điện hạt nhân. Các phương pháp truyền thống nung nóng dầu trên 350 độ C để bay hơi và tách các thành phần khác nhau. Mức tiêu thụ năng lượng khổng lồ này khiến ngành lọc dầu trở thành tác nhân chính phát thải khí nhà kính."
+      "body_vi": "Quá trình chưng cất dầu thô toàn cầu tiêu thụ khoảng 1.100 terawatt-giờ mỗi năm. Nhu cầu năng lượng này tương đương với sản lượng điện hàng năm của khoảng 130 nhà máy điện hạt nhân. Các phương pháp truyền thống nung nóng dầu trên 350 độ C để bay hơi và tách các thành phần khác nhau. Mức tiêu thụ năng lượng khổng lồ này khiến ngành lọc dầu trở thành tác nhân chính phát thải khí nhà kính.",
+      "heading_fr": "Forte demande énergétique",
+      "body_fr": "La distillation mondiale de pétrole brut consomme environ 1 100 térawattheures par an. Ce besoin énergétique équivaut à la production annuelle d'électricité d'environ 130 centrales nucléaires. Les procédés traditionnels chauffent le pétrole à plus de 350 degrés Celsius afin de vaporiser et d'isoler différentes fractions. Cette consommation d'énergie massive fait du secteur du raffinage l'un des principaux émetteurs de gaz à effet de serre.",
+      "heading_de": "Hoher Energiebedarf",
+      "body_de": "Die weltweite Rohöldestillation verbraucht jährlich rund 1.100 Terawattstunden. Dieser Energiebedarf ist vergleichbar mit der jährlichen Stromerzeugung von etwa 130 Kernkraftwerken. Bei herkömmlichen Verfahren wird Erdöl auf über 350 Grad Celsius erhitzt, um verschiedene Fraktionen zu verdampfen und voneinander zu trennen. Dieser enorme Energieverbrauch macht die Raffinerieindustrie zu einem wesentlichen Verursacher von Treibhausgasemissionen.",
+      "heading_es": "Alta demanda energética",
+      "body_es": "La destilación mundial de petróleo crudo consume aproximadamente 1,100 teravatios-hora al año. Este requerimiento energético equivale a la producción eléctrica anual de unas 130 centrales nucleares. Los métodos tradicionales calientan el petróleo por encima de los 350 grados Celsius para vaporizar y separar distintas fracciones. Este consumo masivo de energía convierte a la industria de la refinación en uno de los mayores emisores de gases de efecto invernadero."
     },
     {
       "heading_en": "Surprising Filtration",
       "heading_vi": "Bộ lọc bất ngờ",
       "body_en": "Scientists tested an inexpensive membrane made from porous polyacrylonitrile without adding a special surface coating. When crude oil flowed through, heavier hydrocarbon molecules accumulated along the inner walls. This buildup [p:narrowed the openings] to less than 2 nanometers across. The resulting microscopic pathways allowed lighter fractions like gasoline to pass through quickly while blocking heavier substances.",
-      "body_vi": "Các nhà khoa học đã thử nghiệm một màng lọc giá rẻ làm từ polyacrylonitrile xốp mà không cần thêm lớp phủ bề mặt đặc biệt. Khi dầu thô chảy qua, các phân tử hydrocarbon nặng hơn tích tụ dọc theo các thành bên trong. Sự tích tụ này [p:thu hẹp các lỗ mở] xuống dưới 2 nanômét. Các đường dẫn vi mô kết quả cho phép các phân phần nhẹ hơn như xăng đi qua nhanh chóng trong khi chặn các chất nặng hơn."
+      "body_vi": "Các nhà khoa học đã thử nghiệm một màng lọc giá rẻ làm từ polyacrylonitrile xốp mà không cần thêm lớp phủ bề mặt đặc biệt. Khi dầu thô chảy qua, các phân tử hydrocarbon nặng hơn tích tụ dọc theo các thành bên trong. Sự tích tụ này [p:thu hẹp các lỗ mở] xuống dưới 2 nanômét. Các đường dẫn vi mô kết quả cho phép các phân phần nhẹ hơn như xăng đi qua nhanh chóng trong khi chặn các chất nặng hơn.",
+      "heading_fr": "Une filtration surprenante",
+      "body_fr": "Des scientifiques ont testé une membrane peu coûteuse en polyacrylonitrile poreux sans y ajouter de revêtement de surface spécifique. Lors du passage du pétrole brut, les molécules d'hydrocarbures les plus lourdes se sont accumulées le long des parois internes. Cette accumulation [p:a rétréci les ouvertures] à moins de 2 nanomètres de large. Les canaux microscopiques ainsi formés ont permis aux fractions légères comme l'essence de passer rapidement, tout en bloquant les substances plus lourdes.",
+      "heading_de": "Überraschende Filtration",
+      "body_de": "Wissenschaftler testeten eine kostengünstige Membran aus porösem Polyacrylnitril ohne zusätzliche Spezialbeschichtung auf der Oberfläche. Als Rohöl hindurchfloss, lagerten sich schwerere Kohlenwasserstoffmoleküle an den Innenwänden ab. Diese Ablagerung [p:verengte die Öffnungen] auf einen Durchmesser von weniger als 2 Nanometern. Die entstandenen mikroskopischen Kanäle ließen leichtere Fraktionen wie Benzin rasch passieren, während schwerere Stoffe zurückgehalten wurden.",
+      "heading_es": "Una filtración sorprendente",
+      "body_es": "Un grupo de científicos probó una membrana económica fabricada con poliacrilonitrilo poroso sin añadir ningún recubrimiento superficial especial. Al fluir el petróleo crudo a través de ella, las moléculas de hidrocarburos más pesadas se acumularon a lo largo de las paredes internas. Esta acumulación [p:estrechó las aberturas] a menos de 2 nanómetros de diámetro. Los conductos microscópicos resultantes permitieron que fracciones más ligeras, como la gasolina, pasaran con rapidez mientras bloqueaban las sustancias más pesadas."
     },
     {
       "heading_en": "Projected Savings",
       "heading_vi": "Tiết kiệm dự kiến",
       "body_en": "Computer simulations suggest that integrating this modular filtration system before conventional distillation could reduce energy consumption by 31.6 percent. Carbon dioxide emissions could drop by 37.6 percent, alongside a 20.7 percent reduction in cooling water use. Furthermore, the uncoated membrane achieved permeation rates approximately 23 times higher than previous leading separation membranes during a 28-day test.",
-      "body_vi": "Các mô phỏng máy tính cho thấy việc tích hợp hệ thống lọc mô-đun này trước quá trình chưng cất thông thường có thể giảm 31,6 phần trăm tiêu thụ năng lượng. Lượng khí thải carbon dioxide có thể giảm 37,6 phần trăm, bên cạnh việc giảm 20,7 phần trăm lượng nước làm mát. Hơn nữa, màng không tráng phủ đã đạt tốc độ thẩm thấu cao gấp khoảng 23 lần so với các màng tách hàng đầu trước đó trong thử nghiệm kéo dài 28 ngày."
+      "body_vi": "Các mô phỏng máy tính cho thấy việc tích hợp hệ thống lọc mô-đun này trước quá trình chưng cất thông thường có thể giảm 31,6 phần trăm tiêu thụ năng lượng. Lượng khí thải carbon dioxide có thể giảm 37,6 phần trăm, bên cạnh việc giảm 20,7 phần trăm lượng nước làm mát. Hơn nữa, màng không tráng phủ đã đạt tốc độ thẩm thấu cao gấp khoảng 23 lần so với các màng tách hàng đầu trước đó trong thử nghiệm kéo dài 28 ngày.",
+      "heading_fr": "Économies anticipées",
+      "body_fr": "Des simulations informatiques indiquent que l'intégration de ce système de filtration modulaire en amont de la distillation conventionnelle pourrait réduire la consommation d'énergie de 31,6 pour cent. Les émissions de dioxyde de carbone diminueraient de 37,6 pour cent, de concert avec une réduction de 20,7 pour cent de l'utilisation d'eau de refroidissement. En outre, la membrane non revêtue a atteint des débits de perméation environ 23 fois supérieurs à ceux des meilleures membranes de séparation antérieures lors d'un test de 28 jours.",
+      "heading_de": "Prognostizierte Einsparungen",
+      "body_de": "Computersimulationen deuten darauf hin, dass die Integration dieses modularen Filtrationssystems vor der konventionellen Destillation den Energieverbrauch um 31,6 Prozent senken könnte. Die Kohlendioxidemissionen könnten um 37,6 Prozent sinken, einhergehend mit einer Verringerung des Kühlwasserverbrauchs um 20,7 Prozent. Zudem erzielte die unbeschichtete Membran während eines 28-tägigen Tests Permeationsraten, die etwa 23-mal höher lagen als bei bisher führenden Trennmembranen.",
+      "heading_es": "Ahorros proyectados",
+      "body_es": "Las simulaciones computacionales sugieren que integrar este sistema modular de filtración antes de la destilación convencional podría reducir el consumo de energía en un 31.6 por ciento. Las emisiones de dióxido de carbono podrían descender un 37.6 por ciento, junto con una reducción del 20.7 por ciento en el uso de agua de refrigeración. Además, la membrana sin recubrimiento alcanzó tasas de permeación aproximadamente 23 veces superiores a las de las membranas de separación líderes anteriores durante una prueba de 28 días."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/825/1080/1920",
+    "url": "https://images.unsplash.com/photo-1427501482951-3da9b725be23?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Michael Hull",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/UdvXJ95Yqt8"
+    "sourceUrl": "https://unsplash.com/photos/UdvXJ95Yqt8",
+    "wide": "https://images.unsplash.com/photo-1427501482951-3da9b725be23?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@michaelhull?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Like a coffee filter that traps grounds while letting liquid flow, this porous membrane uses the crude oil itself to build narrower channels. Could your industrial workflow benefit from replacing thermal separation with passive filtration?",
-    "vi": "Giống như một bộ lọc cà phê giữ lại bã trong khi để chất lỏng chảy qua, màng xốp này sử dụng chính dầu thô để tạo ra các kênh hẹp hơn. Liệu quy trình công nghiệp của bạn có thể hưởng lợi từ việc thay thế tách nhiệt bằng lọc thụ động?"
+    "vi": "Giống như một bộ lọc cà phê giữ lại bã trong khi để chất lỏng chảy qua, màng xốp này sử dụng chính dầu thô để tạo ra các kênh hẹp hơn. Liệu quy trình công nghiệp của bạn có thể hưởng lợi từ việc thay thế tách nhiệt bằng lọc thụ động?",
+    "fr": "À l'image d'un filtre à café retenant le marc tout en laissant s'écouler le liquide, cette membrane poreuse utilise le pétrole brut lui-même pour former des canaux plus étroits. Vos procédés industriels pourraient-ils tirer profit du remplacement de la séparation thermique par une filtration passive ?",
+    "de": "Ähnlich wie ein Kaffeefilter Kaffeesatz zurückhält, während die Flüssigkeit durchfließt, nutzt diese poröse Membran das Rohöl selbst, um engere Kanäle aufzubauen. Könnte dein industrieller Arbeitsablauf davon profitieren, die thermische Trennung durch passive Filtration zu ersetzen?",
+    "es": "Al igual que un filtro de café retiene los sedimentos mientras deja fluir el líquido, esta membrana porosa utiliza el propio petróleo crudo para formar canales más estrechos. ¿Podría su flujo de trabajo industrial beneficiarse al sustituir la separación térmica por una filtración pasiva?"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Xác định các quy trình lọc công nghiệp hiện đang dựa vào phương pháp tách nhiệt độ cao.",
       "Xem xét cơ sở hạ tầng của cơ sở để xác định vị trí có thể lắp đặt hệ thống màng mô-đun.",
       "Kiểm tra dữ liệu tiêu thụ năng lượng hiện tại để tính toán mức tăng hiệu quả tiềm năng từ việc tách lạnh."
+    ],
+    "fr": [
+      "Recenser les procédés de filtration industrielle qui reposent actuellement sur une séparation thermique à haute température.",
+      "Examiner les infrastructures des installations afin de déterminer où des systèmes membranaires modulaires pourraient être intégrés.",
+      "Analyser les données actuelles de consommation d'énergie pour calculer les gains potentiels d'efficacité apportés par la séparation à froid."
+    ],
+    "de": [
+      "Industrielle Filtrationsprozesse identifizieren, die derzeit auf thermischer Hochtemperaturtrennung beruhen.",
+      "Die Anlageninfrastruktur prüfen, um festzustellen, wo modulare Membransysteme installiert werden könnten.",
+      "Aktuelle Energieverbrauchsdaten analysieren, um potenzielle Effizienzgewinne durch kalte Trennung zu berechnen."
+    ],
+    "es": [
+      "Identificar los procesos de filtración industrial que actualmente dependen de la separación térmica a alta temperatura.",
+      "Revisar la infraestructura de las instalaciones para determinar dónde se podrían instalar sistemas modulares de membrana.",
+      "Examinar los datos de consumo de energía actuales para calcular las posibles ganancias de eficiencia derivadas de la separación en frío."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "crude oil": "Unrefined petroleum extracted from the ground consisting of various hydrocarbons.",
+      "distillation": "A refining process separating crude oil components by heating them to their boiling points.",
+      "terawatt-hours": "A unit of energy equal to one trillion watt-hours, measuring large electricity consumption.",
+      "fractions": "Distinct liquid components of crude oil separated based on different boiling temperatures.",
+      "greenhouse gas emissions": "Gases released into the atmosphere that trap heat and contribute to global climate change.",
+      "polyacrylonitrile": "A synthetic polymer resin used to make the experimental porous filter membrane.",
+      "hydrocarbon molecules": "Chemical compounds consisting entirely of hydrogen and carbon atoms found in petroleum.",
+      "nanometers": "Metric units of length equal to one-billionth of a meter, measuring tiny physical dimensions.",
+      "permeation rates": "Measures of how quickly substances flow or pass through a membrane filter.",
+      "thermal separation": "The process of separating chemical mixtures into components using high heat and evaporation.",
+      "passive filtration": "Filtering materials through physical pores without requiring heat, electricity, or added energy."
+    },
+    "vi": {
+      "chưng cất": "Phương pháp nung nóng dầu để tách các chất dựa trên nhiệt độ sôi khác nhau.",
+      "dầu thô": "Dầu mỏ tự nhiên chưa qua tinh chế hay xử lý để tách các thành phần.",
+      "terawatt-giờ": "Đơn vị đo lượng điện năng tiêu thụ quy mô lớn, bằng một tỷ kilowatt-giờ.",
+      "khí nhà kính": "Các chất khí giữ nhiệt trong khí quyển, góp phần gây nên hiện tượng nóng lên toàn cầu.",
+      "polyacrylonitrile": "Loại polyme hữu cơ tổng hợp dạng xốp được dùng làm màng lọc dầu thô.",
+      "hydrocarbon": "Hợp chất hữu cơ gồm hydro và carbon, thành phần cấu tạo chủ yếu của dầu mỏ.",
+      "nanômét": "Đơn vị đo chiều dài siêu nhỏ, tương đương một phần một tỷ của một mét.",
+      "phân phần": "Các nhóm hợp chất có nhiệt độ sôi gần nhau được tách ra từ dầu thô.",
+      "carbon dioxide": "Khí thải nhà kính sinh ra từ hoạt động tiêu thụ năng lượng và nung nóng dầu.",
+      "thẩm thấu": "Khả năng cho các phân tử chất lỏng đi xuyên qua các lỗ của màng lọc.",
+      "lọc thụ động": "Phương pháp tách các chất tự nhiên qua màng xốp mà không cần cung cấp nhiệt lượng."
+    },
+    "fr": {
+      "raffinage pétrolier": "Ensemble des opérations industrielles transformant le pétrole brut en carburants et dérivés.",
+      "pétrole brut": "Mélange naturel d'hydrocarbures extrait du sous-sol, n'ayant subi aucun traitement chimique.",
+      "distillation": "Technique de séparation thermique des constituants d'un liquide selon leurs différents points d'ébullition.",
+      "térawattheures": "Unité d'énergie valant un milliard de kilowattheures, servant à quantifier de grandes consommations.",
+      "fractions": "Sous-ensembles d'hydrocarbures séparés selon leur volatilité, comme l'essence ou le gazole.",
+      "polyacrylonitrile": "Polymère synthétique servant de matière première poreuse pour confectionner la membrane de filtration.",
+      "hydrocarbures": "Molécules organiques formées exclusivement de carbone et d'hydrogène, constituants majeurs du pétrole.",
+      "nanomètres": "Unités de longueur valant un milliardième de mètre, servant à mesurer les pores membranaires.",
+      "débits de perméation": "Vitesse et volume de liquide traversant une membrane par unité de surface et de temps.",
+      "filtration passive": "Séparation physique de molécules s'opérant sans apport externe de chaleur ou d'énergie intensive."
+    },
+    "de": {
+      "erdölraffination": "Industrielle Umwandlung und Aufspaltung von Rohöl in nutzbare Produkte wie Treibstoffe oder chemische Grundstoffe.",
+      "rohöldestillation": "Thermisches Trennverfahren zur Auftrennung von Rohöl in verschiedene Bestandteile anhand unterschiedlicher Siedepunkte.",
+      "terawattstunden": "Maßeinheit für sehr große Mengen elektrischer oder thermischer Energie, entsprechend einer Milliarde Kilowattstunden.",
+      "fraktionen": "Durch Destillation getrennte Teilmengen eines Stoffgemischs mit ähnlichen chemischen Eigenschaften oder Siedebereichen.",
+      "polyacrylnitril": "Ein synthetischer, robuster Kunststoff, der häufig zur Herstellung von Spezialfasern und Filterbelägen verwendet wird.",
+      "kohlenwasserstoffmoleküle": "Chemische Verbindungen aus Kohlenstoff und Wasserstoff, die den Hauptbestandteil von fossilem Erdöl bilden.",
+      "nanometern": "Milliardstel Teile eines Meters; eine Maßeinheit zur Beschreibung extrem kleiner atomarer und molekularer Strukturen.",
+      "permeationsraten": "Messgröße für die Durchflussgeschwindigkeit eines Stoffes durch ein filterndes oder trennendes Membranmaterial.",
+      "trennmembranen": "Halbdurchlässige Schichten, die bestimmte Moleküle passieren lassen und andere selektiv zurückhalten.",
+      "thermische trennung": "Trennung von Stoffgemischen durch Zufuhr von Wärmeenergie, typischerweise durch Verdampfung und Kondensation.",
+      "passive filtration": "Trennung von Bestandteilen allein durch Druck- oder Konzentrationsunterschiede ohne zusätzliche Wärmezufuhr."
+    },
+    "es": {
+      "destilación": "Proceso físico que separa componentes de una mezcla líquida aprovechando sus distintos puntos de ebullición.",
+      "teravatios-hora": "Unidad de energía equivalente a un billón de vatios hora, utilizada para cuantificar consumos a gran escala.",
+      "fracciones": "Grupos de compuestos de hidrocarburos con rangos de ebullición similares obtenidos al refinar el petróleo.",
+      "poliacrilonitrilo": "Polímero sintético empleado para fabricar fibras y membranas porosas de filtración de alta resistencia química.",
+      "hidrocarburos": "Compuestos químicos de carbono e hidrógeno que conforman el petróleo y sus derivados combustibles.",
+      "nanómetros": "Unidades de medida equivalentes a la milmillonésima parte de un metro, usadas a escala molecular.",
+      "tasas de permeación": "Medida del flujo o velocidad a la que un fluido atraviesa una membrana filtrante.",
+      "separación térmica": "Método industrial que aplica calor para evaporar y separar los diversos componentes de una mezcla.",
+      "filtración pasiva": "Proceso físico de separación que retiene componentes sin recurrir al calentamiento intensivo de la mezcla.",
+      "separación en frío": "Procedimiento para separar sustancias a temperatura ambiente evitando el gasto energético de hervirlas."
+    }
   }
 }

@@ -12,30 +12,54 @@
   ],
   "title": {
     "en": "Youth AI Chatbot Use Surges Along With Mental Health Concerns",
-    "vi": "Sự gia tăng sử dụng chatbot AI ở giới trẻ đi kèm lo ngại về sức khỏe tinh thần"
+    "vi": "Sự gia tăng sử dụng chatbot AI ở giới trẻ đi kèm lo ngại về sức khỏe tinh thần",
+    "fr": "L’essor des chatbots d’IA chez les jeunes s’accompagne d’inquiétudes pour la santé mentale",
+    "de": "KI-Chatbot-Nutzung bei Jugendlichen steigt parallel zu psychischen Bedenken",
+    "es": "El uso juvenil de chatbots de IA se dispara junto con inquietudes sobre salud mental"
   },
   "hook": {
     "en": "Recent surveys reveal that a vast majority of American children and teens regularly interact with [p:artificial intelligence] chatbots {source}. While many youth rely on these digital tools for academic assistance, companionship, and emotional comfort during stressful moments, researchers have uncovered a troubling correlation between heavy emotional reliance on chatbots and declining psychological well-being over time.",
-    "vi": "Các khảo sát gần đây tiết lộ rằng phần lớn trẻ em và thanh thiếu niên Mỹ thường xuyên tương tác với các chatbot trí tuệ nhân tạo {source}. Trong khi nhiều bạn trẻ dựa vào các công cụ kỹ thuật số này để hỗ trợ học tập, tìm kiếm sự đồng hành và an ủi cảm xúc trong những phút giây căng thẳng, các nhà nghiên cứu đã phát hiện ra mối tương quan đáng lo ngại giữa việc quá phụ thuộc vào chatbot và sự suy giảm phúc lợi tâm lý theo thời gian."
+    "vi": "Các khảo sát gần đây tiết lộ rằng phần lớn trẻ em và thanh thiếu niên Mỹ thường xuyên tương tác với các chatbot trí tuệ nhân tạo {source}. Trong khi nhiều bạn trẻ dựa vào các công cụ kỹ thuật số này để hỗ trợ học tập, tìm kiếm sự đồng hành và an ủi cảm xúc trong những phút giây căng thẳng, các nhà nghiên cứu đã phát hiện ra mối tương quan đáng lo ngại giữa việc quá phụ thuộc vào chatbot và sự suy giảm phúc lợi tâm lý theo thời gian.",
+    "fr": "De récentes enquêtes révèlent qu’une grande majorité d’enfants et d’adolescents américains interagissent régulièrement avec des chatbots d’[p:intelligence artificielle] {source}. Si de nombreux jeunes s’appuient sur ces outils numériques pour obtenir de l’aide scolaire, de la compagnie et un réconfort émotionnel dans les moments stressants, des chercheurs ont mis au jour une corrélation troublante entre une forte dépendance affective envers ces agents conversationnels et un déclin du bien-être psychologique au fil du temps.",
+    "de": "Jüngste Umfragen zeigen, dass eine große Mehrheit der US-amerikanischen Kinder und Jugendlichen regelmäßig mit Chatbots auf Basis [p:künstlicher Intelligenz] {source} interagiert. Während viele junge Menschen diese digitalen Werkzeuge für schulische Unterstützung, Gesellschaft und emotionalen Trost in stressigen Momenten nutzen, haben Forschende eine besorgniserregende Korrelation zwischen starker emotionaler Abhängigkeit von Chatbots und einem mit der Zeit sinkenden psychischen Wohlbefinden aufgedeckt.",
+    "es": "Encuestas recientes revelan que una gran mayoría de niños y adolescentes estadounidenses interactúa habitualmente con chatbots de [p:inteligencia artificial] {source}. Aunque muchos jóvenes confían en estas herramientas digitales como apoyo escolar, compañía y alivio emocional en momentos estresantes, diversos investigadores han descubierto una inquietante correlación entre una marcada dependencia afectiva hacia los chatbots y un deterioro progresivo del bienestar psicológico."
   },
   "sections": [
     {
       "heading_en": "Early Adoption Rates",
       "heading_vi": "Tỷ lệ tiếp cận sớm",
       "body_en": "Data from Common Sense Media indicates that chatbot adoption begins early in childhood. Nearly half of children aged nine to twelve have already experimented with these digital companions. By age thirteen, usage climbs to roughly three-quarters of youth. A separate nationwide study conducted by the JED Foundation shows even higher engagement, with ninety percent of surveyed students reporting chatbot use for schoolwork and stress relief.",
-      "body_vi": "Dữ liệu từ Common Sense Media cho thấy việc tiếp cận trợ lý ảo bắt đầu từ khi trẻ còn rất nhỏ. Gần một nửa số trẻ em từ chín đến mười hai tuổi đã từng sử dụng các công cụ trò chuyện này. Khi lên mười ba tuổi, tỷ lệ sử dụng tăng lên khoảng ba phần tư. Một nghiên cứu toàn quốc khác do Quỹ JED thực hiện cho thấy mức độ tham gia còn cao hơn, với chín mươi phần trăm học sinh tham gia khảo sát báo cáo việc dùng trợ lý ảo để làm bài tập và giảm bớt căng thẳng (*stress*)."
+      "body_vi": "Dữ liệu từ Common Sense Media cho thấy việc tiếp cận trợ lý ảo bắt đầu từ khi trẻ còn rất nhỏ. Gần một nửa số trẻ em từ chín đến mười hai tuổi đã từng sử dụng các công cụ trò chuyện này. Khi lên mười ba tuổi, tỷ lệ sử dụng tăng lên khoảng ba phần tư. Một nghiên cứu toàn quốc khác do Quỹ JED thực hiện cho thấy mức độ tham gia còn cao hơn, với chín mươi phần trăm học sinh tham gia khảo sát báo cáo việc dùng trợ lý ảo để làm bài tập và giảm bớt căng thẳng (*stress*).",
+      "heading_fr": "Taux d’adoption précoce",
+      "body_fr": "Les données de Common Sense Media indiquent que l’adoption des chatbots commence tôt dans l’enfance. Près de la moitié des enfants âgés de neuf à douze ans ont déjà expérimenté ces compagnons numériques. À l’âge de treize ans, l’usage concerne environ les trois quarts des jeunes. Une autre étude menée à l’échelle nationale par la JED Foundation montre un engagement encore supérieur : quatre-vingt-dix pour cent des élèves interrogés déclarent utiliser des chatbots pour leurs devoirs scolaires et pour soulager leur stress.",
+      "heading_de": "Frühe Nutzungsraten",
+      "body_de": "Daten von Common Sense Media deuten darauf hin, dass die Nutzung von Chatbots bereits früh in der Kindheit beginnt. Fast die Hälfte der Kinder im Alter von neun bis zwölf Jahren hat bereits mit diesen digitalen Begleitern experimentiert. Im Alter von dreizehn Jahren steigt die Nutzung auf rund drei Viertel der Jugendlichen. Eine separate landesweite Studie der JED Foundation zeigt ein noch höheres Engagement: Neunzig Prozent der befragten Schülerinnen und Schüler gaben an, Chatbots für Schularbeiten und zum Stressabbau zu nutzen.",
+      "heading_es": "Tasas de adopción temprana",
+      "body_es": "Los datos de Common Sense Media indican que la adopción de chatbots comienza a temprana edad. Casi la mitad de los niños de nueve a doce años ya ha experimentado con estos acompañantes digitales. Al alcanzar los trece años, su uso se extiende a cerca de tres cuartas partes de los jóvenes. Por otra parte, un estudio nacional llevado a cabo por la JED Foundation revela un nivel de participación aún más alto: el noventa por ciento de los estudiantes encuestados declara utilizar chatbots para deberes escolares y para aliviar el estrés."
     },
     {
       "heading_en": "Academic and Emotional Tools",
       "heading_vi": "Công cụ học tập và cảm xúc",
       "body_en": "Young people utilize these technologies in diverse ways for daily functioning. Students often turn to platforms such as ChatGPT and Gemini to practice academic concepts, manage heavy workloads, and organize upcoming assignments. Additionally, many teens seek comfort from chatbots when experiencing anxiety, loneliness, or academic pressure, treating the software as an accessible conversational partner during difficult moments.",
-      "body_vi": "Giới trẻ tận dụng những công nghệ này theo nhiều cách khác nhau trong sinh hoạt hàng ngày. Học sinh thường chuyển sang các nền tảng như ChatGPT và Gemini để ôn luyện các khái niệm học tập, quản lý khối lượng công việc lớn và sắp xếp các bài tập sắp tới. Thêm vào đó, nhiều thiếu niên tìm kiếm sự an ủi từ trợ lý ảo khi trải qua cảm giác lo âu (*anxiety*), cô đơn hoặc áp lực học tập, coi phần mềm này như một người bạn trò chuyện dễ tiếp cận trong những khoảnh khắc khó khăn."
+      "body_vi": "Giới trẻ tận dụng những công nghệ này theo nhiều cách khác nhau trong sinh hoạt hàng ngày. Học sinh thường chuyển sang các nền tảng như ChatGPT và Gemini để ôn luyện các khái niệm học tập, quản lý khối lượng công việc lớn và sắp xếp các bài tập sắp tới. Thêm vào đó, nhiều thiếu niên tìm kiếm sự an ủi từ trợ lý ảo khi trải qua cảm giác lo âu (*anxiety*), cô đơn hoặc áp lực học tập, coi phần mềm này như một người bạn trò chuyện dễ tiếp cận trong những khoảnh khắc khó khăn.",
+      "heading_fr": "Outils scolaires et affectifs",
+      "body_fr": "Les jeunes recourent à ces technologies de multiples façons dans leur vie quotidienne. Les élèves se tournent souvent vers des plateformes comme ChatGPT et Gemini pour réviser des notions scolaires, gérer de lourdes charges de travail et organiser leurs devoirs à venir. De plus, de nombreux adolescents cherchent du réconfort auprès des chatbots lorsqu’ils ressentent de l’anxiété, de la solitude ou une pression scolaire, traitant le logiciel comme un interlocuteur accessible lors des moments difficiles.",
+      "heading_de": "Schulische und emotionale Werkzeuge",
+      "body_de": "Junge Menschen setzen diese Technologien auf vielfältige Weise für ihren Alltag ein. Schülerinnen und Schüler greifen häufig auf Plattformen wie ChatGPT und Gemini zurück, um Lerninhalte zu vertiefen, hohe Arbeitsbelastungen zu bewältigen und anstehende Aufgaben zu strukturieren. Zudem suchen viele Jugendliche bei Angst, Einsamkeit oder schulischem Leistungsdruck Trost bei Chatbots und betrachten die Software in schwierigen Momenten als jederzeit erreichbaren Gesprächspartner.",
+      "heading_es": "Herramientas académicas y emocionales",
+      "body_es": "Los jóvenes recurren a estas tecnologías de múltiples maneras en su vida cotidiana. Los estudiantes suelen emplear plataformas como ChatGPT y Gemini para repasar conceptos académicos, gestionar elevadas cargas de trabajo y organizar entregas escolares. Además, muchos adolescentes buscan refugio en los chatbots ante episodios de ansiedad, soledad o presión académica, tratando este software como un interlocutor accesible durante momentos difíciles."
     },
     {
       "heading_en": "Mental Health Risks",
       "heading_vi": "Rủi ro sức khỏe tinh thần",
       "body_en": "Despite the utility for school and coping, experts express serious concern over mental health implications. Researchers note that students turning to AI during emotional distress frequently report poorer psychological well-being and higher rates of suicidal thoughts. Although causality remains unproven, longitudinal studies suggest that relying on chatbots for companionship may increase loneliness and hinder the development of essential coping skills.",
-      "body_vi": "Bất chấp tính hữu ích cho việc học tập và đối phó với khó khăn, các chuyên gia bày tỏ sự quan ngại sâu sắc về các hệ lụy đối với sức khỏe tinh thần (*mental health*). Các nhà nghiên cứu lưu ý rằng học sinh tìm đến trí tuệ nhân tạo trong lúc quẫn trí thường báo cáo tình trạng tâm lý kém hơn và có tỷ lệ suy nghĩ tự tử cao hơn. Mặc dù mối quan hệ nhân quả chưa được chứng minh hoàn toàn, các nghiên cứu theo chiều dọc cho thấy việc dựa dẫm vào trợ lý ảo để tìm kiếm sự đồng hành có thể làm gia tăng sự cô đơn."
+      "body_vi": "Bất chấp tính hữu ích cho việc học tập và đối phó với khó khăn, các chuyên gia bày tỏ sự quan ngại sâu sắc về các hệ lụy đối với sức khỏe tinh thần (*mental health*). Các nhà nghiên cứu lưu ý rằng học sinh tìm đến trí tuệ nhân tạo trong lúc quẫn trí thường báo cáo tình trạng tâm lý kém hơn và có tỷ lệ suy nghĩ tự tử cao hơn. Mặc dù mối quan hệ nhân quả chưa được chứng minh hoàn toàn, các nghiên cứu theo chiều dọc cho thấy việc dựa dẫm vào trợ lý ảo để tìm kiếm sự đồng hành có thể làm gia tăng sự cô đơn.",
+      "heading_fr": "Risques pour la santé mentale",
+      "body_fr": "Malgré leur utilité pour l’école et la gestion des épreuves, les spécialistes expriment de vives inquiétudes quant à leurs répercussions sur la santé mentale. Les chercheurs constatent que les élèves se tournant vers l’IA en période de détresse émotionnelle font fréquemment état d’un bien-être psychologique plus fragile et de taux plus élevés d’idées suicidaires. Bien que la causalité reste non démontrée, des études longitudinales suggèrent que s’en remettre aux chatbots pour combler un besoin de compagnie peut aggraver la solitude et entraver le développement d’essentiels mécanismes d’adaptation.",
+      "heading_de": "Risiken für die psychische Gesundheit",
+      "body_de": "Trotz des Nutzens für Schule und Stressbewältigung äußern Fachleute ernste Bedenken hinsichtlich der Folgen für die psychische Gesundheit. Forschende weisen darauf hin, dass Jugendliche, die sich bei seelischer Belastung an KI wenden, häufig über ein geringeres psychisches Wohlbefinden und höhere Raten suizidaler Gedanken berichten. Obwohl ein Kausalzusammenhang bisher nicht bewiesen ist, legen Längsschnittstudien nahe, dass die Suche nach sozialem Anschluss bei Chatbots die Einsamkeit verstärken und die Entwicklung wesentlicher Bewältigungsstrategien behindern könnte.",
+      "heading_es": "Riesgos para la salud mental",
+      "body_es": "A pesar de su provecho para el estudio y el desahogo personal, los especialistas muestran una profunda alarma ante sus repercusiones en la salud mental. Diversos investigadores observan que los estudiantes que acuden a la IA durante periodos de angustia emocional refieren con frecuencia un menor bienestar psicológico y mayores tasas de pensamientos suicidas. Aunque la causalidad todavía no se ha comprobado, los estudios longitudinales sugieren que recurrir a chatbots en busca de compañía puede acentuar la soledad y entorpecer el aprendizaje de habilidades de afrontamiento fundamentales."
     }
   ],
   "references": [
@@ -47,11 +71,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/839/1080/1920",
+    "url": "https://images.unsplash.com/photo-1437915015400-137312b61975?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Abigail  Keenan",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/8jqna7aA-vs"
+    "sourceUrl": "https://unsplash.com/photos/8jqna7aA-vs",
+    "wide": "https://images.unsplash.com/photo-1437915015400-137312b61975?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@akeenster?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -68,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Treating AI as an emotional crutch is like wearing a cast on a healthy arm—it provides immediate relief but weakens your natural strength over time. [p:Can you replace one chatbot chat today with a real conversation?] *Consider calling a friend instead.*",
-    "vi": "Coi trí tuệ nhân tạo như một điểm tựa cảm xúc cũng giống như việc đeo nẹp vào một cánh tay khỏe mạnh—nó mang lại sự hỗ trợ tức thời nhưng làm suy yếu sức mạnh tự nhiên của bạn theo thời gian. [p:Bạn có thể thay thế một cuộc trò chuyện với chatbot bằng một cuộc đối thoại thực tế hôm nay không?] *Hãy cân nhắc gọi điện cho một người bạn thay thế.*"
+    "vi": "Coi trí tuệ nhân tạo như một điểm tựa cảm xúc cũng giống như việc đeo nẹp vào một cánh tay khỏe mạnh—nó mang lại sự hỗ trợ tức thời nhưng làm suy yếu sức mạnh tự nhiên của bạn theo thời gian. [p:Bạn có thể thay thế một cuộc trò chuyện với chatbot bằng một cuộc đối thoại thực tế hôm nay không?] *Hãy cân nhắc gọi điện cho một người bạn thay thế.*",
+    "fr": "Considérer l’IA comme une béquille affective revient à porter un plâtre sur un bras sain — cela soulage sur le coup, mais affaiblit la force naturelle avec le temps. [p:Pouvez-vous remplacer aujourd’hui un échange avec un chatbot par une vraie conversation ?] *Songez plutôt à appeler un ami.*",
+    "de": "KI als emotionale Krücke zu behandeln, ist wie das Tragen eines Gipsverbands an einem gesunden Arm – es bringt sofortige Entlastung, schwächt jedoch mit der Zeit deine natürlichen Kräfte. [p:Kannst du heute einen Chatbot-Dialog durch ein echtes Gespräch ersetzen?] *Überlege, stattdessen eine Freundin oder einen Freund anzurufen.*",
+    "es": "Utilizar la IA como un apoyo emocional artificial es como llevar un yeso en un brazo sano: otorga alivio momentáneo, pero merma tu fuerza natural con el tiempo. [p:¿Podrías reemplazar hoy una conversación con un chatbot por una charla real?] *Considera llamar a un amigo en su lugar.*"
   },
   "applySteps": {
     "en": [
@@ -80,6 +109,21 @@
       "Theo dõi thời gian hàng ngày dành cho việc tương tác với trợ lý ảo.",
       "Thảo luận các bài tập ở trường với bạn bè cùng trang lứa thay vì phần mềm.",
       "Thực hành các kỹ thuật thư giãn ngoại tuyến khi cảm thấy quá tải."
+    ],
+    "fr": [
+      "Surveiller le temps quotidien passé à interagir avec des chatbots d’IA.",
+      "Discuter de ses devoirs avec des camarades plutôt qu’avec un logiciel.",
+      "Pratiquer des techniques de relaxation hors ligne en cas de submersion émotionnelle."
+    ],
+    "de": [
+      "Die tägliche Nutzungszeit bei der Interaktion mit KI-Chatbots im Blick behalten.",
+      "Schulaufgaben mit Mitschülerinnen und Mitschülern statt mit Software besprechen.",
+      "Bei Überlastung Entspannungstechniken abseits digitaler Medien anwenden."
+    ],
+    "es": [
+      "Monitorear el tiempo diario dedicado a interactuar con chatbots de IA.",
+      "Comentar las tareas escolares con compañeros humanos en lugar de recurrir al software.",
+      "Practicar técnicas de relajación sin conexión al experimentar sobrecarga emocional."
     ]
   },
   "coverCandidates": [
@@ -116,9 +160,80 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "artificial intelligence": "Computer systems designed to perform tasks that typically require human intelligence, such as conversing or problem-solving.",
+      "chatbots": "Software applications designed to simulate human conversation through text or voice interactions.",
+      "common sense media": "A nonprofit organization that reviews and researches digital media and technology for children and families.",
+      "jed foundation": "A nonprofit organization focused on emotional health and suicide prevention for teens and young adults.",
+      "chatgpt": "An artificial intelligence chatbot developed by OpenAI that generates human-like text responses.",
+      "gemini": "An artificial intelligence conversational tool developed by Google to assist with various tasks.",
+      "psychological well-being": "A person's overall emotional and mental health, happiness, and ability to function in daily life.",
+      "causality": "The direct relationship where one event or factor directly causes and is responsible for another.",
+      "longitudinal studies": "Scientific research that observes the same group of individuals repeatedly over an extended period of time.",
+      "coping skills": "Techniques and strategies people use to manage stress, painful emotions, and difficult situations."
+    },
+    "vi": {
+      "chatbot ai": "Chương trình trí tuệ nhân tạo có khả năng trò chuyện và tương tác với con người.",
+      "mối tương quan": "Mối liên hệ thống kê giữa hai yếu tố cùng biến đổi, chưa khẳng định quan hệ nhân quả.",
+      "common sense media": "Tổ chức phi lợi nhuận nghiên cứu và đánh giá tác động của truyền thông tới trẻ em.",
+      "trợ lý ảo": "Phần mềm ứng dụng trí tuệ nhân tạo hỗ trợ trả lời câu hỏi và thực hiện tác vụ.",
+      "quỹ jed": "Tổ chức phi lợi nhuận bảo vệ sức khỏe tinh thần và ngăn ngừa tự tử ở thanh thiếu niên.",
+      "stress": "Trạng thái căng thẳng thần kinh do áp lực từ học tập hoặc đời sống gây ra.",
+      "chatgpt": "Nền tảng chatbot trí tuệ nhân tạo do OpenAI phát triển, hỗ trợ tạo văn bản và học tập.",
+      "gemini": "Mô hình và dịch vụ chatbot trí tuệ nhân tạo đa phương thức do Google phát triển.",
+      "anxiety": "Cảm xúc lo âu, bồn chồn và bất an trước áp lực học tập hoặc cuộc sống.",
+      "hệ lụy": "Hậu quả tiêu cực hoặc tác động xấu kéo theo sau một hành động hay hiện tượng.",
+      "mental health": "Sức khỏe tinh thần, trạng thái ổn định và tích cực về cảm xúc, tâm lý con người.",
+      "quẫn trí": "Tình trạng khủng hoảng tâm lý nghiêm trọng, bế tắc và mất khả năng suy nghĩ sáng suốt.",
+      "ngoại tuyến": "Hoạt động thực tế ngoài đời, không kết nối internet hay tương tác qua thiết bị điện tử."
+    },
+    "fr": {
+      "chatbots": "Logiciels capables de simuler une conversation humaine par échange de messages automatisés.",
+      "intelligence artificielle": "Systèmes informatiques conçus pour exécuter des tâches cognitives simulant l’esprit humain.",
+      "agents conversationnels": "Programmes dialoguant automatiquement avec un utilisateur par écrit ou par oral.",
+      "common sense media": "Organisation américaine à but non lucratif qui étudie l’impact des technologies sur les jeunes.",
+      "jed foundation": "Organisation américaine dédiée à la prévention du suicide et à la santé mentale des étudiants.",
+      "chatgpt": "Modèle d’intelligence artificielle générative développé par OpenAI pour générer du texte conversationnel.",
+      "gemini": "Famille de modèles d’intelligence artificielle développée par Google pour diverses tâches numériques.",
+      "détresse émotionnelle": "État de profonde souffrance psychologique mêlant anxiété, tristesse et sentiment de submersion.",
+      "idées suicidaires": "Pensées ou considérations récurrentes relatives au suicide ou à la fin de sa vie.",
+      "causalité": "Lien direct établissant qu’un événement ou un facteur est la véritable cause d’un autre.",
+      "études longitudinales": "Recherches scientifiques observant l’évolution des mêmes sujets sur une durée étendue.",
+      "mécanismes d’adaptation": "Stratégies psychologiques et comportementales mises en œuvre pour faire face au stress."
+    },
+    "de": {
+      "künstlicher intelligenz": "Technologie, die menschliche kognitive Fähigkeiten wie Lernen, Verstehen und Problemlösen auf Computern nachbildet.",
+      "korrelation": "Statistischer Zusammenhang zwischen zwei Merkmalen, der jedoch nicht zwingend eine Ursache-Wirkung-Beziehung bedeutet.",
+      "common sense media": "US-amerikanische Non-Profit-Organisation, die Medienangebote und Technologie für Kinder und Familien bewertet.",
+      "jed foundation": "Gemeinnützige Organisation in den USA, die sich für psychische Gesundheit und Suizidprävention bei Jugendlichen einsetzt.",
+      "chatgpt": "Ein weit verbreitetes, dialogbasiertes KI-Sprachmodell des Unternehmens OpenAI.",
+      "gemini": "Ein multimodales KI-Modell und dialogbasiertes Sprachsystem des Unternehmens Google.",
+      "kausalzusammenhang": "Die direkte Beziehung zwischen Ursache und Wirkung, bei der ein Ereignis das andere hervorruft.",
+      "längsschnittstudien": "Wissenschaftliche Untersuchungen, die dieselben Probanden über einen längeren Zeitraum wiederholt beobachten.",
+      "suizidaler gedanken": "Gedankliche Beschäftigung mit der absichtlichen Beendigung des eigenen Lebens oder konkrete Selbsttötungsabsichten.",
+      "bewältigungsstrategien": "Psychologische Methoden und Verhaltensweisen zum Umgang mit Stress, Belastungen oder schwierigen Lebenssituationen."
+    },
+    "es": {
+      "chatbots": "Programas informáticos diseñados para simular conversaciones e interactuar de forma automatizada con usuarios.",
+      "inteligencia artificial": "Sistemas digitales que emulan procesos cognitivos humanos para procesar información y resolver tareas.",
+      "common sense media": "Organización sin fines de lucro que investiga y califica contenidos multimedia y tecnológicos para familias.",
+      "jed foundation": "Organización estadounidense orientada a la protección de la salud emocional y la prevención del suicidio juvenil.",
+      "chatgpt": "Plataforma de inteligencia artificial conversacional desarrollada por OpenAI para generar textos e interactuar.",
+      "gemini": "Sistema y modelo de lenguaje conversacional con inteligencia artificial desarrollado por Google.",
+      "causalidad": "Relación verificada de causa y efecto entre dos fenómenos, diferenciada de una simple correlación.",
+      "estudios longitudinales": "Investigaciones científicas que observan y miden las mismas variables a lo largo de un periodo extenso.",
+      "habilidades de afrontamiento": "Recursos y estrategias psicológicas que facilitan gestionar el estrés, la frustración y situaciones difíciles.",
+      "bienestar psicológico": "Estado de armonía emocional y mental que favorece el desarrollo personal y el equilibrio cotidiano."
+    }
   }
 }

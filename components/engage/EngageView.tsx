@@ -18,7 +18,6 @@ import { ApplyCard } from './ApplyCard';
 export function EngageView({ article, item, active, view }: { article: ArticleClient; item: FeedItem; active: boolean; view: number }) {
   const t = useT();
   const openOverlay = useUI((s) => s.openOverlay);
-  const startFeed = useUI((s) => s.startFeed);
   const [draft, setDraft] = useState('');
   const [newCommentId, setNewCommentId] = useState<string | null>(null);
   const input = useRef<HTMLInputElement>(null);
@@ -29,7 +28,7 @@ export function EngageView({ article, item, active, view }: { article: ArticleCl
 
   const reply = (name: string) => {
     setDraft((d) => (d.startsWith(`@${name} `) ? d : `@${name} ${d}`));
-    input.current?.focus();
+    input.current?.focus({ preventScroll: true });
   };
 
   return (
@@ -82,12 +81,6 @@ export function EngageView({ article, item, active, view }: { article: ArticleCl
             {t('exploreNow')}
             <CircleArrowRight className="ic" aria-hidden="true" />
           </button>
-          <button
-            className="ctaside"
-            type="button"
-            aria-label={t('related')}
-            onClick={() => startFeed({ category: article.category })}
-          />
         </div>
       </div>
     </>

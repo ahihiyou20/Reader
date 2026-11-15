@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Permanent Daylight Saving Time Risks Children's Morning Safety",
-    "vi": "Giờ Tiết Kiệm Ánh Sáng Ban Ngày Vĩnh Viễn Đe Dọa An Toàn Buổi Sáng Của Trẻ Em"
+    "vi": "Giờ Tiết Kiệm Ánh Sáng Ban Ngày Vĩnh Viễn Đe Dọa An Toàn Buổi Sáng Của Trẻ Em",
+    "fr": "L'heure d'été permanente menace la sécurité matinale des enfants",
+    "de": "Dauerhafte Sommerzeit gefährdet morgendliche Sicherheit von Kindern",
+    "es": "El horario de verano permanente pone en riesgo la seguridad matutina infantil"
   },
   "hook": {
     "en": "A nationwide shift to permanent daylight saving time could force millions of children to walk or ride to school in total darkness, raising safety hazards and cutting off vital morning light {source}.",
-    "vi": "Việc chuyển sang giờ tiết kiệm ánh sáng ban ngày vĩnh viễn trên toàn quốc có thể buộc hàng triệu trẻ em phải đi bộ hoặc đi học trong bóng tối hoàn toàn, làm tăng các mối nguy hiểm về an toàn và cắt đứt nguồn sáng buổi sáng quan trọng {source}."
+    "vi": "Việc chuyển sang giờ tiết kiệm ánh sáng ban ngày vĩnh viễn trên toàn quốc có thể buộc hàng triệu trẻ em phải đi bộ hoặc đi học trong bóng tối hoàn toàn, làm tăng các mối nguy hiểm về an toàn và cắt đứt nguồn sáng buổi sáng quan trọng {source}.",
+    "fr": "Le passage national à l'heure d'été permanente pourrait contraindre des millions d'enfants à se rendre à l'école dans l'obscurité totale, augmentant les risques d'accident et les privant d'une lumière matinale essentielle {source}.",
+    "de": "Eine landesweite Umstellung auf dauerhafte Sommerzeit könnte Millionen von Kindern dazu zwingen, ihren Schulweg in völliger Dunkelheit zurückzulegen – was Sicherheitsrisiken erhöht und ihnen lebenswichtiges Morgenlicht vorenthält {source}.",
+    "es": "Una transición a nivel nacional al horario de verano permanente podría obligar a millones de niños a caminar o trasladarse a la escuela en total oscuridad, lo que aumentaría los peligros para su seguridad y los privaría de la vital luz matutina {source}."
   },
   "sections": [
     {
       "heading_en": "Counting the Dark Trips",
       "heading_vi": "Đếm Các Chuyến Đi Trong Bóng Tối",
       "body_en": "Researchers at the University of Washington calculated that keeping clocks fixed all year would generate **at least two billion more dark school commutes** across the United States {source}. The team analyzed enrollment records, geographic coordinates, and individual start times across 14 states that already approved the measure. Washington state alone would face nearly 35 million additional trips before sunrise.",
-      "body_vi": "Các nhà nghiên cứu tại Đại học Tôn thất Thuyết (University of Washington) tính toán rằng việc giữ nguyên đồng hồ quanh năm sẽ tạo ra **ít nhất hai tỷ chuyến đi học trong bóng tối nhiều hơn** trên khắp nước Mỹ {source}. Nhóm nghiên cứu đã phân tích hồ sơ ghi danh, tọa độ địa lý và thời gian bắt đầu của từng trường ở 14 tiểu bang đã phê duyệt biện pháp này. Riêng tiểu bang Washington sẽ phải đối mặt với gần 35 triệu chuyến đi bổ sung trước khi mặt trời mọc."
+      "body_vi": "Các nhà nghiên cứu tại Đại học Tôn thất Thuyết (University of Washington) tính toán rằng việc giữ nguyên đồng hồ quanh năm sẽ tạo ra **ít nhất hai tỷ chuyến đi học trong bóng tối nhiều hơn** trên khắp nước Mỹ {source}. Nhóm nghiên cứu đã phân tích hồ sơ ghi danh, tọa độ địa lý và thời gian bắt đầu của từng trường ở 14 tiểu bang đã phê duyệt biện pháp này. Riêng tiểu bang Washington sẽ phải đối mặt với gần 35 triệu chuyến đi bổ sung trước khi mặt trời mọc.",
+      "heading_fr": "Le décompte des trajets dans le noir",
+      "body_fr": "Des chercheurs de l'Université de Washington ont calculé que le maintien de l'heure d'été toute l'année engendrerait **au moins deux milliards de trajets scolaires supplémentaires dans l'obscurité** à travers les États-Unis {source}. L'équipe a analysé les registres d'inscription, les coordonnées géographiques et les horaires individuels de début des cours dans 14 États ayant déjà approuvé la mesure. L'État de Washington ferait à lui seul face à près de 35 millions de déplacements supplémentaires avant le lever du soleil.",
+      "heading_de": "Schulwege im Dunkeln beziffert",
+      "body_de": "Forschende der University of Washington errechneten, dass eine ganzjährige Beibehaltung der Zeit in den Vereinigten Staaten zu **mindestens zwei Milliarden zusätzlichen Schulwegen im Dunkeln** führen würde {source}. Das Team analysierte Schülerverzeichnisse, geografische Koordinaten und individuelle Anfangszeiten von Schulen in 14 US-Bundesstaaten, die der Maßnahme bereits zugestimmt haben. Allein auf den Bundesstaat Washington würden fast 35 Millionen zusätzliche Schulwege vor Sonnenaufgang entfallen.",
+      "heading_es": "Cálculo de los trayectos a oscuras",
+      "body_es": "Investigadores de la Universidad de Washington calcularon que mantener los relojes fijos durante todo el año generaría **al menos dos mil millones más de trayectos escolares a oscuras** en todo Estados Unidos {source}. El equipo analizó registros de inscripción, coordenadas geográficas y horarios individuales de entrada en 14 estados que ya aprobaron la medida. Tan solo el estado de Washington enfrentaría casi 35 millones de viajes adicionales antes del amanecer."
     },
     {
       "heading_en": "Traffic Hazards and Regional Impact",
       "heading_vi": "Nguy Cơ Giao Thông Và Tác Động Khu Vực",
       "body_en": "Traffic collision records show that fatal pedestrian crashes involving school-aged children occur about twice as frequently in the dark {source}. Published October 29 in Current Biology, the study notes that districts near the western edges of time zones face the steepest jumps. In Mississippi and Alabama, early school start times before 8 a.m. would push dark trips from about 2 million each to over 20 million.",
-      "body_vi": "Hồ sơ tai nạn giao thông cho thấy các vụ tai nạn gây tử vong cho người đi bộ ở độ tuổi đi học xảy ra thường xuyên hơn khoảng gấp đôi trong bóng tối {source}. Được công bố vào ngày 29 tháng 10 trên tạp chí Current Biology, nghiên cứu lưu ý rằng các quận nằm gần ranh giới phía tây của các múi giờ phải đối mặt với mức tăng mạnh nhất. Tại Mississippi và Alabama, thời gian bắt đầu học sớm trước 8 giờ sáng sẽ đẩy các chuyến đi trong bóng tối từ khoảng 2 triệu chuyến mỗi bang lên hơn 20 triệu chuyến."
+      "body_vi": "Hồ sơ tai nạn giao thông cho thấy các vụ tai nạn gây tử vong cho người đi bộ ở độ tuổi đi học xảy ra thường xuyên hơn khoảng gấp đôi trong bóng tối {source}. Được công bố vào ngày 29 tháng 10 trên tạp chí Current Biology, nghiên cứu lưu ý rằng các quận nằm gần ranh giới phía tây của các múi giờ phải đối mặt với mức tăng mạnh nhất. Tại Mississippi và Alabama, thời gian bắt đầu học sớm trước 8 giờ sáng sẽ đẩy các chuyến đi trong bóng tối từ khoảng 2 triệu chuyến mỗi bang lên hơn 20 triệu chuyến.",
+      "heading_fr": "Dangers routiers et disparités régionales",
+      "body_fr": "Les registres des collisions routières montrent que les accidents mortels de piétons impliquant des enfants d'âge scolaire surviennent environ deux fois plus souvent dans l'obscurité {source}. Publiée le 29 octobre dans Current Biology, l'étude souligne que les districts scolaires situés aux extrémités occidentales des fuseaux horaires subiraient les hausses les plus marquées. Au Mississippi et en Alabama, les cours débutant avant 8 h feraient bondir les trajets dans le noir d'environ 2 millions chacun à plus de 20 millions.",
+      "heading_de": "Verkehrsgefahren und regionale Folgen",
+      "body_de": "Verkehrsunfallstatistiken belegen, dass tödliche Fußgängerunfälle mit Kindern im Schulalter bei Dunkelheit etwa doppelt so häufig vorkommen {source}. Die am 29. Oktober in Current Biology veröffentlichte Studie betont, dass Schulbezirke nahe den westlichen Rändern von Zeitzonen die stärksten Zuwächse verzeichnen. In Mississippi und Alabama würden frühe Schulbeginne vor 8 Uhr morgens die Zahl der Wege im Dunkeln von jeweils rund 2 Millionen auf über 20 Millionen ansteigen lassen.",
+      "heading_es": "Peligros viales e impacto regional",
+      "body_es": "Los registros de colisiones de tráfico demuestran que los accidentes peatonales mortales que involucran a niños en edad escolar ocurren con una frecuencia aproximadamente dos veces mayor en la oscuridad {source}. Publicado el 29 de octubre en Current Biology, el estudio señala que los distritos situados cerca de los límites occidentales de las zonas horarias afrontan los incrementos más drásticos. En Mississippi y Alabama, los horarios tempranos de entrada escolar antes de las 8 a. m. elevarían los trayectos a oscuras de unos 2 millones en cada uno a más de 20 millones."
     },
     {
       "heading_en": "The Cost to Circadian Rhythms",
       "heading_vi": "Cái Giá Phải Trả Cho Nhịp Điệu Sinh Học",
       "body_en": "Morning sunlight helps synchronize the human circadian clock, which regulates sleep, mood, and appetite {source}. Depriving children of this light interferes with natural biological rhythms. While proponents argue that year-round daylight hours extend evening leisure, biologists warn that the morning trade-off disrupts daily health routines and safety.",
-      "body_vi": "Ánh sáng mặt trời buổi sáng giúp đồng bộ hóa đồng hồ sinh học (*circadian clock*) của con người, cơ quan điều chỉnh giấc ngủ, tâm trạng và sự thèm ăn {source}. Việc tước đoạt ánh sáng này của trẻ em sẽ cản trở nhịp điệu sinh học tự nhiên. Mặc dù những người ủng hộ lập luận rằng giờ ban ngày quanh năm kéo dài thời gian giải trí buổi tối, các nhà sinh học cảnh báo rằng sự đánh đổi vào buổi sáng sẽ phá vỡ các thói quen sức khỏe và an toàn hàng ngày."
+      "body_vi": "Ánh sáng mặt trời buổi sáng giúp đồng bộ hóa đồng hồ sinh học (*circadian clock*) của con người, cơ quan điều chỉnh giấc ngủ, tâm trạng và sự thèm ăn {source}. Việc tước đoạt ánh sáng này của trẻ em sẽ cản trở nhịp điệu sinh học tự nhiên. Mặc dù những người ủng hộ lập luận rằng giờ ban ngày quanh năm kéo dài thời gian giải trí buổi tối, các nhà sinh học cảnh báo rằng sự đánh đổi vào buổi sáng sẽ phá vỡ các thói quen sức khỏe và an toàn hàng ngày.",
+      "heading_fr": "Le tribut payé par les rythmes circadiens",
+      "body_fr": "La lumière matinale contribue à synchroniser l'horloge circadienne humaine, qui régule le sommeil, l'humeur et l'appétit {source}. Priver les enfants de cette luminosité perturbe les rythmes biologiques naturels. Alors que les partisans de la mesure affirment que l'ensoleillement tout au long de l'année prolonge les loisirs du soir, les biologistes avertissent que ce compromis matinal compromet la santé quotidienne et la sécurité.",
+      "heading_de": "Folgen für den zirkadianen Rhythmus",
+      "body_de": "Morgendliches Sonnenlicht trägt dazu bei, die menschliche zirkadiane Uhr zu synchronisieren, die Schlaf, Gemütszustand und Appetit steuert {source}. Werden Kinder dieses Lichts beraubt, stört das natürliche biologische Rhythmen. Während Befürworter vorbringen, dass ganzjähriges Tageslicht die abendliche Freizeit verlängert, warnen Biologen, dass dieser morgendliche Kompromiss alltägliche Gesundheitsroutinen sowie die Sicherheit gefährdet.",
+      "heading_es": "El costo para los ritmos circadianos",
+      "body_es": "La luz solar matutina ayuda a sincronizar el reloj circadiano humano, el cual regula el sueño, el estado de ánimo y el apetito {source}. Privar a los niños de esta luz interfiere con los ritmos biológicos naturales. Si bien los defensores argumentan que disponer de luz diurna todo el año amplía el ocio vespertino, los biólogos advierten que este sacrificio matutino altera las rutinas diarias de salud y la seguridad."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1022/1080/1920",
+    "url": "https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vashishtha Jogi",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k",
+    "wide": "https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jogi?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Permanent daylight saving time is like [p:robbing Peter to pay Paul] by trading morning safety for evening sunshine. How will your community adapt to darker mornings?",
-    "vi": "Giờ tiết kiệm ánh sáng ban ngày vĩnh viễn giống như [p:được vỏ dưa mất vỏ dừa] khi đánh đổi sự an toàn buổi sáng lấy ánh nắng buổi chiều. Cộng đồng của bạn sẽ thích ứng như thế nào với những buổi sáng tối tăm hơn?"
+    "vi": "Giờ tiết kiệm ánh sáng ban ngày vĩnh viễn giống như [p:được vỏ dưa mất vỏ dừa] khi đánh đổi sự an toàn buổi sáng lấy ánh nắng buổi chiều. Cộng đồng của bạn sẽ thích ứng như thế nào với những buổi sáng tối tăm hơn?",
+    "fr": "L'heure d'été permanente revient à [p:déshabiller Pierre pour habiller Paul] en sacrifiant la sécurité matinale au profit d'un ensoleillement vespéral. Comment votre collectivité s'adaptera-t-elle à des matins plus sombres ?",
+    "de": "Dauerhafte Sommerzeit gleicht dem Prinzip, [p:Peter zu berauben, um Paul zu bezahlen], indem morgendliche Sicherheit gegen abendlichen Sonnenschein eingetauscht wird. Wie wird sich deine Gemeinde an dunklere Morgen anpassen?",
+    "es": "El horario de verano permanente es como [p:desvestir a un santo para vestir a otro] al cambiar la seguridad matutina por el sol vespertino. ¿Cómo se adaptará su comunidad a las mañanas más oscuras?"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Kiểm tra thời gian bắt đầu học của học khu địa phương và giờ mặt trời mọc vào mùa đông.",
       "Trang bị cho trẻ em thiết bị phản quang và quần áo sáng màu cho những chuyến đi buổi sáng.",
       "Liên hệ với đại diện địa phương để chia sẻ những lo ngại về an toàn liên quan đến việc thay đổi đồng hồ vĩnh viễn."
+    ],
+    "fr": [
+      "Vérifiez l'heure de rentrée de votre district scolaire et les heures de lever du soleil en hiver.",
+      "Équipez les enfants d'accessoires réfléchissants et de vêtements clairs pour leurs trajets matinaux.",
+      "Contactez vos représentants locaux afin de leur faire part de vos inquiétudes relatives au changement d'heure permanent."
+    ],
+    "de": [
+      "Prüfe die Anfangszeiten deines örtlichen Schulbezirks und die Zeiten des winterlichen Sonnenaufgangs.",
+      "Statte Kinder für den morgendlichen Schulweg mit Reflektoren und heller Kleidung aus.",
+      "Wende dich an örtliche Abgeordnete, um Sicherheitsbedenken bezüglich dauerhafter Zeitumstellungen mitzuteilen."
+    ],
+    "es": [
+      "Consulte el horario de entrada de su distrito escolar local y las horas del amanecer invernal.",
+      "Equipe a los niños con artículos reflectantes y ropa llamativa para los trayectos matutinos.",
+      "Comuníquese con sus representantes locales para compartir inquietudes de seguridad sobre los cambios de hora permanentes."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "daylight saving time": "Practice of advancing clocks forward in warmer months to extend evening daylight.",
+      "geographic coordinates": "Numerical values specifying exact locations on Earth, such as latitude and longitude.",
+      "university of washington": "A public research university in Seattle, Washington, that conducted the cited commute study.",
+      "current biology": "A peer-reviewed scientific journal covering all areas of biological research.",
+      "time zones": "Geographic regions that observe a uniform standard time for legal and social purposes.",
+      "pedestrian crashes": "Traffic collisions involving people traveling on foot and motor vehicles.",
+      "synchronize": "To align or coordinate internal physiological functions with external daily light cycles.",
+      "circadian clock": "An internal biochemical pacemaker regulating physical, mental, and behavioral cycles roughly every 24 hours.",
+      "biological rhythms": "Natural internal cycles of bodily processes that repeat at regular intervals.",
+      "proponents": "People who support or advocate for a specific policy or proposal.",
+      "reflective gear": "Materials and apparel designed to reflect light to increase visibility in low-light conditions."
+    },
+    "vi": {
+      "university of washington": "Đại học nghiên cứu công lập tại Mỹ thực hiện phân tích số liệu trong bài.",
+      "current biology": "Tạp chí khoa học quốc tế chuyên ngành sinh học đăng tải công trình nghiên cứu.",
+      "circadian clock": "Cơ chế sinh học nội sinh điều hòa chu kỳ thức ngủ 24 giờ của cơ thể.",
+      "múi giờ": "Khu vực địa lý áp dụng cùng một thời gian tiêu chuẩn theo quy ước.",
+      "đồng bộ hóa": "Quá trình điều chỉnh nhịp sinh học cơ thể ăn khớp với chu kỳ ánh sáng tự nhiên.",
+      "học khu": "Đơn vị hành chính quản lý các trường học công lập tại một địa phương.",
+      "phản quang": "Đặc tính phản xạ ánh sáng giúp người mặc dễ được nhìn thấy trong bóng tối.",
+      "nhà sinh học": "Các chuyên gia khoa học nghiên cứu về sự sống, sinh vật và cơ chế sinh học.",
+      "mississippi": "Tiểu bang ở miền nam nước Mỹ có trường học bắt đầu trước 8 giờ sáng.",
+      "alabama": "Tiểu bang miền nam nước Mỹ đối mặt sự gia tăng mạnh các chuyến đi học tối."
+    },
+    "fr": {
+      "heure d'été permanente": "Maintien de l'horaire estival toute l'année, supprimant le retour annuel à l'heure d'hiver.",
+      "horloge circadienne": "Cycle biologique interne régulant le sommeil et diverses fonctions vitales sur environ vingt-quatre heures.",
+      "rythmes biologiques": "Variations périodiques régulières des activités physiologiques des organismes vivants.",
+      "current biology": "Revue scientifique internationale publiant des travaux de recherche en sciences biologiques.",
+      "fuseaux horaires": "Bandes longitudinales de la Terre qui observent une heure légale identique.",
+      "districts scolaires": "Divisions administratives locales chargées de la gestion des établissements scolaires aux États-Unis.",
+      "coordonnées géographiques": "Valeurs de latitude et longitude déterminant l'emplacement exact d'un lieu sur Terre.",
+      "vespéral": "Qui se rapporte au soir ou se manifeste durant la soirée.",
+      "accessoires réfléchissants": "Dispositifs renvoyant la lumière pour rendre les piétons visibles des conducteurs la nuit.",
+      "université de washington": "Université publique de recherche américaine renommée située dans l'État de Washington."
+    },
+    "de": {
+      "dauerhafte sommerzeit": "Ganzjährige Beibehaltung der um eine Stunde vorgestellten Uhrzeit ohne herbstliche Rückstellung auf die Normalzeit.",
+      "university of washington": "Renommierte staatliche Forschungsuniversität in den USA, deren Wissenschaftler die Schulweg-Studie leiteten.",
+      "schülerverzeichnisse": "Offizielle behördliche Register über die an Schulen eines Bezirks angemeldeten Schülerinnen und Schüler.",
+      "geografische koordinaten": "Genaue Ortsangaben auf der Erdoberfläche durch Längen- und Breitengrade zur Berechnung lokaler Sonnenaufgänge.",
+      "verkehrsunfallstatistiken": "Systematisch erfasste behördliche Datensätze über Unfälle im Straßenverkehr sowie deren Ursachen und Folgen.",
+      "current biology": "Internationale wissenschaftliche Fachzeitschrift, die begutachtete Studien aus den Lebenswissenschaften veröffentlicht.",
+      "schulbezirke": "Lokale Verwaltungseinheiten in den USA, die für Schulorganisation und Unterrichtszeiten zuständig sind.",
+      "zeitzonen": "Geografische Abschnitte der Erde mit gleicher gesetzlicher Uhrzeit; im Westen dämmert es morgens später.",
+      "zirkadiane uhr": "Innere biologische Uhr, die physiologische Abläufe wie den Schlaf-Wach-Rhythmus im 24-Stunden-Takt steuert.",
+      "biologische rhythmen": "Wiederkehrende körpereigene Funktionszyklen, die durch äußere Taktgeber wie das Tageslicht reguliert werden.",
+      "reflektoren": "Licht zurückwerfende Elemente an Kleidung oder Schulranzen, die Kinder bei Dunkelheit sichtbar machen."
+    },
+    "es": {
+      "horario de verano": "Medida que adelanta los relojes una hora para aprovechar mejor la luz solar en las tardes.",
+      "coordenadas geográficas": "Valores que permiten determinar con exactitud matemática la posición de un punto sobre la Tierra.",
+      "colisiones de tráfico": "Accidentes o impactos en vías públicas que involucran vehículos en circulación.",
+      "current biology": "Reconocida revista científica internacional que publica estudios revisados por pares en biología.",
+      "zonas horarias": "Franjas geográficas del planeta que comparten una misma hora oficial regulada por ley.",
+      "reloj circadiano": "Mecanismo biológico interno que regula las funciones fisiológicas en ciclos de veinticuatro horas.",
+      "ritmos biológicos": "Ciclos periódicos de cambios fisiológicos, bioquímicos y conductuales en los seres vivos.",
+      "ocio vespertino": "Actividades de recreación o descanso que se llevan a cabo durante las horas de la tarde.",
+      "amanecer invernal": "Momento matutino durante el invierno en el que el sol empieza a iluminar el horizonte.",
+      "artículos reflectantes": "Elementos de seguridad que devuelven la luz facilitando la visibilidad de personas en la oscuridad.",
+      "distrito escolar": "Entidad administrativa local responsable de gestionar y organizar los centros educativos de una zona."
+    }
   }
 }

@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/390/1080/1920",
+    "url": "https://images.unsplash.com/40/10294420724_0300cf921d_o.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA3fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Brooklyn Morgan",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/vlSyS1VLCoQ"
+    "sourceUrl": "https://unsplash.com/photos/vlSyS1VLCoQ",
+    "wide": "https://images.unsplash.com/40/10294420724_0300cf921d_o.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA3fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@brooklynmorgan?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -86,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Hệ thống tín hiệu đường sắt lỗi thời tại Tây Ban Nha đang đối mặt với nhiều thách thức nghiêm trọng. Vụ tai nạn thảm khốc gần đây cho thấy sự nguy hiểm của các công nghệ cũ khi kết hợp cùng mật độ vận hành cao. Các chuyên gia nhấn mạnh rằng nhà quản lý cần ưu tiên bảo trì hệ thống hiện tại thay vì tiếp tục mở rộng mạng lưới để đảm bảo an toàn tuyệt đối cho hành khách."
+    "vi": "Hệ thống tín hiệu đường sắt lỗi thời tại Tây Ban Nha đang đối mặt với nhiều thách thức nghiêm trọng. Vụ tai nạn thảm khốc gần đây cho thấy sự nguy hiểm của các công nghệ cũ khi kết hợp cùng mật độ vận hành cao. Các chuyên gia nhấn mạnh rằng nhà quản lý cần ưu tiên bảo trì hệ thống hiện tại thay vì tiếp tục mở rộng mạng lưới để đảm bảo an toàn tuyệt đối cho hành khách.",
+    "fr": "Le 28 octobre, une collision meurtrière entre deux trains à grande vitesse reliant Madrid à Séville a fait 69 morts près d'Urda. Cette catastrophe met en lumière la vétusté du système de signalisation LZB, toujours exploité sur cette ligne historique alors que le standard européen ERTMS s'impose ailleurs. Répétées, les défaillances techniques ont immobilisé une rame au signal rouge ; le convoi suivant l'a pourtant percutée à vive allure, révélant de graves failles dans la régulation du trafic. L'accident souligne la détérioration du réseau ferroviaire espagnol : face à une expansion effrénée, les autorités doivent désormais privilégier l'entretien de l'existant.",
+    "de": "Ein schweres Zugunglück in Spanien mit 69 Todesopfern wirft ein Schlaglicht auf die Sicherheitsrisiken veralteter Bahntechnik. Auf der Hochgeschwindigkeitsstrecke zwischen Madrid und Sevilla kollidierten zwei Züge, nachdem das dort noch genutzte deutsche LZB-Sicherungssystem ausgefallen war. Ein Zug des privaten Betreibers Iryo hielt daraufhin vor einem roten Signal an. Ein nachfolgender Zug der staatlichen Renfe erhielt jedoch offenbar die Freigabe zur Weiterfahrt bei normaler Geschwindigkeit und prallte mit hohem Tempo auf das stehende Fahrzeug. Während modernere Strecken in Spanien bereits auf das europäische ERTMS-System setzen, verdeutlicht die Katastrophe die Gefahren mangelnder Infrastrukturwartung im expandierenden Netz.",
+    "es": "Un trágico choque entre dos trenes de alta velocidad en la ruta entre Madrid y Sevilla, que dejó 69 fallecidos, ha encendido las alarmas sobre la seguridad ferroviaria española. El siniestro se originó por fallas en el sistema LZB, una tecnología antigua aún pendiente de sustitución por el modelo europeo ERTMS. Pese a que los protocolos ordenan avanzar con cautela ante anomalías, un convoy circuló a gran velocidad e impactó contra otro detenido. El desastre subraya la urgencia de priorizar el mantenimiento y la protección de la red frente a su rápida expansión."
   },
   "keyPoint": {
     "en": "Like patching an old computer with modern software, outdated safety systems create hidden vulnerabilities. [p:Can you identify one outdated system in your daily routine that needs an urgent upgrade?]",
@@ -108,10 +113,31 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-30T02:50:29.258Z"
+  "publishAt": "2026-10-30T02:50:29.258Z",
+  "glossary": {
+    "en": {
+      "lzb system": "An older continuous train signalling and automatic speed control system used on the Madrid–Andalusia line.",
+      "crocodile": "A legacy French railway signalling and cab safety warning system.",
+      "bacc": "An Italian railway signalling and automatic train protection system.",
+      "asfa": "A traditional Spanish railway signalling and cab safety system.",
+      "blocks": "Track sections controlled so only one train can occupy each at any given time.",
+      "ertms": "A modern European standard system designed to unify railway signalling across the EU.",
+      "ouigo": "A French private rail company operating high-speed trains in Spain.",
+      "renfe": "Spain's state-owned national railway company operating high-speed trains.",
+      "iryo": "A private rail company operating high-speed train services in Spain.",
+      "trackside beacons": "Devices installed along tracks that transmit signalling and safety data to train drivers.",
+      "run on-sight": "Driving slowly, at at most 40km/h, to stop before any obstacle or hazard.",
+      "ave train": "A Spanish high-speed train service operated by Renfe.",
+      "adif": "The state-owned company that manages and maintains Spain's railway infrastructure."
+    }
+  }
 }

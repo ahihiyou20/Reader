@@ -1,11 +1,14 @@
 import en from '@/messages/en.json';
 import vi from '@/messages/vi.json';
-import type { Lang, Localized } from '@/lib/content/types';
+import fr from '@/messages/fr.json';
+import de from '@/messages/de.json';
+import es from '@/messages/es.json';
+import { LANGS, type Lang, type Localized } from '@/lib/content/types';
 
 type Keys = keyof typeof en;
 type PluralBase<K> = K extends `${infer B}_one` ? B : never;
 export type MessageKey = Keys | PluralBase<Keys>;
-const CATALOG: Record<Lang, Record<string, string>> = { en, vi };
+const CATALOG: Record<Lang, Record<string, string>> = { en, vi, fr, de, es };
 
 export type Vars = Record<string, string | number>;
 
@@ -24,22 +27,28 @@ export function translate(lang: Lang, key: MessageKey, vars?: Vars): string {
 /** Pick the requested language, falling back to English. */
 export function pick<T>(l: Localized<T> | undefined, lang: Lang): T | undefined {
   if (!l) return undefined;
-  return (lang === 'vi' ? l.vi : undefined) ?? l.en;
+  return (lang === 'en' ? undefined : l[lang]) ?? l.en;
 }
 
 export function isFallback(l: Localized<unknown> | undefined, lang: Lang): boolean {
-  return lang === 'vi' && !!l && l.vi === undefined;
+  return lang !== 'en' && !!l && l[lang] === undefined;
 }
+
+const isLang = (s: string | null | undefined): s is Lang => LANGS.includes(s as Lang);
 
 export function detectLang(): Lang {
   if (typeof window === 'undefined') return 'en';
   try {
     const saved = localStorage.getItem('reader.lang');
-    if (saved === 'en' || saved === 'vi') return saved;
+    if (isLang(saved)) return saved;
   } catch {}
-  const m = document.cookie.match(/(?:^|; )NEXT_LOCALE=(en|vi)/);
-  if (m) return m[1] as Lang;
-  return navigator.languages?.some((l) => l.toLowerCase().startsWith('vi')) ? 'vi' : 'en';
+  const m = document.cookie.match(/(?:^|; )NEXT_LOCALE=([a-z]{2})/);
+  if (isLang(m?.[1])) return m[1];
+  for (const l of navigator.languages ?? []) {
+    const code = l.slice(0, 2).toLowerCase();
+    if (isLang(code)) return code;
+  }
+  return 'en';
 }
 
 export function rememberLang(lang: Lang) {

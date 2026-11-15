@@ -116,6 +116,8 @@ export function Panel({
   const x = useMotionValue(10_000);
   const ref = useRef<HTMLDivElement>(null);
   const width = () => ref.current?.clientWidth ?? 400;
+  // The panel fades in as it slides, so it arrives instead of cutting across the screen.
+  const opacity = useTransform(x, (v) => clamp(1 - v / width(), 0, 1));
   useHistoryLayer(open, onClose);
 
   useEffect(() => {
@@ -171,7 +173,7 @@ export function Panel({
     <MDiv
       ref={setRef}
       className={`panel ${className}`}
-      style={{ x }}
+      style={{ x, opacity }}
       role="dialog"
       aria-modal="true"
       aria-label={label}

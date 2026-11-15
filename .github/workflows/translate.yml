@@ -1,0 +1,46 @@
+# Fill missing translations (vi, fr, de, es) and tap-to-understand glossaries with Gemini. New articles
+# are translated when the daily bot writes them; this job catches what the quota cut short and the
+# articles published before five languages existed. It resumes every 6 hours until nothing is pending.
+name: Translations
+on:
+  schedule:
+    - cron: '41 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      limit: { description: 'Most articles in this run', required: false, default: '25' }
+      slugs: { description: 'Article slugs, space separated (empty: whatever is pending)', required: false }
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: content-bot
+  cancel-in-progress: false
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22, cache: pnpm }
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm tsx scripts/pipeline/translate.ts --limit "${{ inputs.limit || '25' }}" ${{ inputs.slugs }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+      - run: pnpm tsx scripts/pipeline/validate.ts
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/articles
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "pipeline: translations" && git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

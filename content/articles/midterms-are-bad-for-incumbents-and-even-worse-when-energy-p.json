@@ -58,11 +58,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/729/1080/1920",
+    "url": "https://images.unsplash.com/photo-1427434846691-47fc561d1179?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vladimir Kudinov",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/OT5nbP2m24I"
+    "sourceUrl": "https://unsplash.com/photos/OT5nbP2m24I",
+    "wide": "https://images.unsplash.com/photo-1427434846691-47fc561d1179?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@madbyte?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -107,7 +109,10 @@
     ]
   },
   "summary": {
-    "vi": "Giá năng lượng và chi phí nhiên liệu đóng vai trò quyết định trong các cuộc bầu cử giữa nhiệm kỳ tại Mỹ từ trước đến nay. Khi giá xăng và lạm phát tăng cao do các cuộc khủng hoảng nguồn cung toàn cầu hoặc xung đột địa chính trị, các đảng cầm quyền thường phải đối mặt với sự bất mãn từ cử tri. Lịch sử qua nhiều đời tổng thống cho thấy cử tri thường trừng phạt các ứng cử viên đương nhiệm tại thùng phiếu khi họ cảm thấy bi quan về tình hình kinh tế."
+    "vi": "Giá năng lượng và chi phí nhiên liệu đóng vai trò quyết định trong các cuộc bầu cử giữa nhiệm kỳ tại Mỹ từ trước đến nay. Khi giá xăng và lạm phát tăng cao do các cuộc khủng hoảng nguồn cung toàn cầu hoặc xung đột địa chính trị, các đảng cầm quyền thường phải đối mặt với sự bất mãn từ cử tri. Lịch sử qua nhiều đời tổng thống cho thấy cử tri thường trừng phạt các ứng cử viên đương nhiệm tại thùng phiếu khi họ cảm thấy bi quan về tình hình kinh tế.",
+    "fr": "Aux États-Unis, les élections de mi-mandat sont historiquement redoutables pour le parti au pouvoir, et la cherté de l'énergie aggrave nettement cette vulnérabilité. Bien que les cours pétroliers dépendent des marchés mondiaux et de tensions géopolitiques échappant largement à la Maison-Blanche, le prix des carburants pèse lourdement sur l'inflation et le jugement des électeurs. De Gerald Ford à Donald Trump, l'histoire politique américaine illustre comment les flambées à la pompe sanctionnent les sortants. Le scrutin de 2026 le confirme : affaiblis par les répercussions du conflit iranien sur le coût de la vie, les républicains ont essuyé un revers électoral cinglant.",
+    "de": "Zwischenwahlen in den USA stellen traditionell eine schwere Hürde für amtierende Präsidenten dar. Steigende Energiepreise verschärfen diesen Trend erheblich: Da Rohöl- und Benzinpreise auf globalen Märkten entstehen, entziehen sie sich weitgehend politischer Kontrolle, treiben jedoch unmittelbar die Inflation an. Wähler spüren teuren Kraftstoff im Alltag und machen die Regierungspartei dafür verantwortlich. Historische Beispiele von Gerald Ford, Jimmy Carter und Donald Trump bis hin zu Joe Biden verdeutlichen dieses wiederkehrende Muster. Auch 2026 gerieten die Republikaner durch kriegsbedingte Preissprünge an den Zapfsäulen unter massiven Druck, da wirtschaftliche Unzufriedenheit Amtsinhabern an den Wahlurnen regelmäßig schadet.",
+    "es": "¿Hasta qué punto influye el precio del combustible en el destino de los gobernantes? Históricamente, las elecciones legislativas de mitad de mandato en Estados Unidos castigan con severidad al partido en el poder, una tendencia que se agrava cuando aumentan los costos energéticos. Aunque los mandatarios poseen escaso control sobre los mercados globales de crudo y las tensiones geopolíticas, como los recientes bloqueos en el estrecho de Ormuz, la ciudadanía suele responsabilizarlos por la inflación derivada del encarecimiento de la gasolina. Desde la década de 1970 hasta los comicios de 2026, el descontento ante el encarecimiento de la vida continúa precipitando derrotas decisivas para las administraciones de turno."
   },
   "keyPoint": {
     "en": "Energy prices act as a heavy anchor on a president's political survival during midterms. How do rising fuel costs change your own voting decisions?",
@@ -129,10 +134,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-06T03:31:57.521Z"
+  "publishAt": "2026-11-06T03:31:57.521Z",
+  "glossary": {
+    "en": {
+      "incumbents": "Officials currently holding political office who are seeking reelection.",
+      "strait of hormuz": "A strategic maritime passage connecting the Persian Gulf to the open ocean, crucial for oil transport.",
+      "oil embargo": "A government-ordered ban on exporting crude oil to specific targeted countries.",
+      "opec": "An intergovernmental group of oil-exporting nations that coordinates petroleum policies and production targets.",
+      "price controls": "Government-mandated maximum prices permitted to be charged for goods such as fuel.",
+      "iranian hostage crisis": "A 444-day standoff where American diplomats and citizens were held captive in Tehran.",
+      "reaganomics": "Economic policies focusing on cutting tax rates, decreasing regulation, and curbing domestic government spending.",
+      "monetary policy": "Central bank actions regulating interest rates and money supply to restrain inflation.",
+      "oil glut": "A massive excess of crude oil in the market that triggers substantial price decreases.",
+      "strategic petroleum reserve": "An emergency stockpile of government-owned petroleum used to mitigate energy supply shocks.",
+      "paris climate accord": "An international agreement committed to curbing global greenhouse gas emissions and fossil fuel consumption.",
+      "greenhouse gas emissions": "Gases released by fossil fuels that trap atmospheric heat and drive climate change."
+    }
+  }
 }

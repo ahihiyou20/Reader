@@ -1,7 +1,9 @@
 import { z } from 'zod';
-import { ALLOWED_LICENSES } from './types';
+import { ALLOWED_LICENSES, LANGS, TLANGS } from './types';
 
-const localized = <T extends z.ZodTypeAny>(t: T) => z.object({ en: t, vi: t.optional() });
+const perLang = <T extends z.ZodTypeAny>(t: T) => Object.fromEntries(TLANGS.map((l) => [l, t.optional()]));
+const localized = <T extends z.ZodTypeAny>(t: T) => z.object({ en: t, ...perLang(t) });
+const sectionExtras = Object.fromEntries(TLANGS.flatMap((l) => [`heading_${l}`, `body_${l}`]).map((k) => [k, z.string().optional()]));
 const nonEmpty = z.string().trim().min(1);
 
 export const coverSchema = z.object({
@@ -14,6 +16,8 @@ export const coverSchema = z.object({
   license: nonEmpty,
   sourceUrl: z.string().optional(),
   unsplashDownloadLocation: z.string().optional(),
+  wide: z.string().optional(),
+  video: z.object({ url: nonEmpty, wide: z.string().optional(), credit: z.string().optional() }).optional(),
 });
 
 export const articleSourceSchema = z.object({
@@ -28,15 +32,15 @@ export const articleSourceSchema = z.object({
     .array(
       z.object({
         heading_en: z.string().optional(),
-        heading_vi: z.string().optional(),
         body_en: nonEmpty,
-        body_vi: z.string().optional(),
+        ...sectionExtras,
       }),
     )
     .min(1),
   keyPoint: localized(z.string()).optional(),
-  applySteps: z.object({ en: z.array(z.string()), vi: z.array(z.string()).optional() }).optional(),
-  summary: z.object({ en: z.string().optional(), vi: z.string().optional() }).optional(),
+  applySteps: localized(z.array(z.string())).optional(),
+  summary: z.object(Object.fromEntries(LANGS.map((l) => [l, z.string().optional()]))).optional(),
+  glossary: z.object(Object.fromEntries(LANGS.map((l) => [l, z.record(z.string(), z.string()).optional()]))).optional(),
   references: z.array(z.object({ id: nonEmpty, label: nonEmpty, url: z.string() })).default([]),
   cover: coverSchema,
   coverCandidates: z.array(coverSchema).optional(),

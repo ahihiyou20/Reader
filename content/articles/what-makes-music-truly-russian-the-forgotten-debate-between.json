@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1040/1080/1920",
+    "url": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Rachel Davis",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/tn2rBnvIl9I"
+    "sourceUrl": "https://unsplash.com/photos/tn2rBnvIl9I",
+    "wide": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@rmaedavis?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -86,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết khám phá cuộc tranh luận lịch sử giữa nhà soạn nhạc Tchaikovsky và học trò Sergei Taneyev về bản chất của âm nhạc Nga vào thế kỷ 19. Trong khi Tchaikovsky xem âm nhạc Nga là một phần của khu vườn châu Âu rộng lớn, Taneyev tin rằng các nhà soạn nhạc cần học hỏi kỹ thuật đối điểm từ châu Âu để xây dựng nền móng riêng từ các giai điệu bản địa. Cả hai đều đồng ý rằng sự giao lưu quốc tế đóng vai trò quan trọng trong việc định hình bản sắc âm nhạc."
+    "vi": "Bài viết khám phá cuộc tranh luận lịch sử giữa nhà soạn nhạc Tchaikovsky và học trò Sergei Taneyev về bản chất của âm nhạc Nga vào thế kỷ 19. Trong khi Tchaikovsky xem âm nhạc Nga là một phần của khu vườn châu Âu rộng lớn, Taneyev tin rằng các nhà soạn nhạc cần học hỏi kỹ thuật đối điểm từ châu Âu để xây dựng nền móng riêng từ các giai điệu bản địa. Cả hai đều đồng ý rằng sự giao lưu quốc tế đóng vai trò quan trọng trong việc định hình bản sắc âm nhạc.",
+    "fr": "À la fin du XIXe siècle, Pyotr Tchaikovsky et son élève Sergei Taneyev débattent de la définition d’une identité musicale russe. Pour Taneyev, les compositeurs nationaux doivent maîtriser le contrepoint hérité de Bach afin de valoriser leurs propres mélodies traditionnelles. À l’inverse, Tchaikovsky perçoit la création comme un vaste « jardin » européen où les spécificités locales se développent naturellement ensemble. Si leurs approches divergent, tous deux s’accordent sur un point fondamental : loin de naître en vase clos, une tradition musicale distincte s’épanouit au confluent des échanges internationaux.",
+    "de": "Sergei Tanejew und sein Lehrer Pjotr Tschaikowski stritten im späten 19. Jahrhundert darüber, wie eine eigenständige russische Musikkultur entstehen solle. Während Tanejew forderte, heimische Melodien mithilfe europäischer Kompositionstechniken wie dem Kontrapunkt systematisch zu veredeln, sah Tschaikowski Russland bereits als festen Teil einer gemeinsamen europäischen Musiktradition. Ihre Auseinandersetzung verdeutlicht, dass nationale Identität in der Kunst nicht durch Abgrenzung entsteht. Vielmehr zeigt das Wirken beider Komponisten, wie ein unverwechselbarer Klang erst durch den offenen Dialog und die schöpferische Aneignung internationaler Einflüsse Gestalt annimmt.",
+    "es": "¿Qué define la identidad de una tradición musical? A finales del siglo XIX, Sergei Taneyev y su maestro Pyotr Ilyich Tchaikovsky discreparon sobre cómo consolidar una voz artística auténticamente rusa frente a Europa. Taneyev defendía el estudio riguroso de técnicas europeas avanzadas, como el contrapunto, para convertir los cantos vernáculos en obras complejas. En cambio, Tchaikovsky concebía la música rusa como parte intrínseca de un jardín europeo compartido, donde la esencia nacional emergía sin necesidad de una metodología forzada. Pese a sus discrepancias conceptuales, su intercambio evidenció que una identidad nacional no surge del aislamiento, sino de un fecundo diálogo cultural e internacional."
   },
   "applySteps": {
     "en": [
@@ -103,10 +108,28 @@
   "ai": {
     "fields": [
       "summary",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-07T03:08:04.007Z"
+  "publishAt": "2026-11-07T03:08:04.007Z",
+  "glossary": {
+    "en": {
+      "conservatoires": "Higher education institutions dedicated to professional training in classical music and performance.",
+      "the five": "A 19th-century circle of Russian composers dedicated to creating a distinct national musical style.",
+      "imperial court": "The royal household and governing circle of the Russian monarchy that historically patronized the arts.",
+      "national style": "A distinctive way of composing music that reflects the cultural heritage and character of a specific country.",
+      "operas": "Dramatic staged theatrical works where actors sing dialogue and poetry accompanied by an orchestra.",
+      "counterpoint": "The musical technique of weaving together multiple independent melodic lines into a harmonious composition.",
+      "piano concerto": "A large-scale classical composition featuring a solo piano accompanied by an orchestra.",
+      "cantata": "A multi-movement musical work written for vocal soloists or choir accompanied by an orchestra.",
+      "sacred music": "Religious music composed for use in church worship services or based on Christian liturgical traditions.",
+      "national identity": "A sense of cultural belonging that links artistic works to a particular country or people."
+    }
+  }
 }

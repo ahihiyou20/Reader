@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Alzheimer's Mutations May Affect Nerves Outside the Brain",
-    "vi": "Đột biến Alzheimer có thể tác động đến dây thần kinh ngoài não"
+    "vi": "Đột biến Alzheimer có thể tác động đến dây thần kinh ngoài não",
+    "fr": "Des mutations d'Alzheimer pourraient affecter les nerfs hors du cerveau",
+    "de": "Alzheimer-Mutationen beeinträchtigen möglicherweise Nerven außerhalb des Gehirns",
+    "es": "Las mutaciones del alzhéimer podrían afectar los nervios fuera del cerebro"
   },
   "hook": {
     "en": "Alzheimer's disease is traditionally viewed as a condition confined strictly to memory and cognitive function. However, new laboratory findings reveal that genetic mutations linked to the disease can directly disrupt nerve signals controlling muscle movement outside the central nervous system {source}.",
-    "vi": "Bệnh Alzheimer vốn được xem là một tình trạng giới hạn hoàn toàn trong trí nhớ và chức năng nhận thức. Tuy nhiên, các phát hiện mới trong phòng thí nghiệm cho thấy các đột biến gen liên quan đến căn bệnh này có thể trực tiếp làm gián đoạn tín hiệu thần kinh kiểm soát chuyển động cơ bên ngoài hệ thần kinh trung ương {source}."
+    "vi": "Bệnh Alzheimer vốn được xem là một tình trạng giới hạn hoàn toàn trong trí nhớ và chức năng nhận thức. Tuy nhiên, các phát hiện mới trong phòng thí nghiệm cho thấy các đột biến gen liên quan đến căn bệnh này có thể trực tiếp làm gián đoạn tín hiệu thần kinh kiểm soát chuyển động cơ bên ngoài hệ thần kinh trung ương {source}.",
+    "fr": "La maladie d'Alzheimer est traditionnellement considérée comme une affection strictement limitée à la mémoire et aux fonctions cognitives. Pourtant, de nouveaux résultats de laboratoire révèlent que des mutations génétiques associées à cette pathologie peuvent perturber directement les signaux nerveux régissant les mouvements musculaires en dehors du système nerveux central {source}.",
+    "de": "Die Alzheimer-Krankheit gilt klassischerweise als ein Leiden, das sich rein auf das Gedächtnis und kognitive Funktionen beschränkt. Neue Laborergebnisse zeigen jedoch, dass mit der Erkrankung verknüpfte Genmutationen die Nervensignale zur Steuerung von Muskelbewegungen auch außerhalb des zentralen Nervensystems direkt stören können {source}.",
+    "es": "Tradicionalmente, la enfermedad de Alzheimer se considera una afección limitada estrictamente a la memoria y la función cognitiva. Sin embargo, nuevos hallazgos de laboratorio revelan que las mutaciones genéticas vinculadas a esta patología pueden alterar de forma directa las señales nerviosas que controlan el movimiento muscular fuera del sistema nervioso central {source}."
   },
   "sections": [
     {
       "heading_en": "Unexpected Peripheral Effects",
       "heading_vi": "Tác động ngoại biên bất ngờ",
       "body_en": "Researchers at the University of Central Florida demonstrated that motor neurons carrying familial Alzheimer's mutations can impair connections with muscles even without a brain or spinal cord. Led by James Hickman and Xiufang Guo, the study highlights that physical symptoms like balance and gait changes may stem directly from peripheral nerve disruption.",
-      "body_vi": "Các nhà nghiên cứu tại Đại học Central Florida chứng minh rằng các tế bào thần kinh vận động mang đột biến Alzheimer gia đình có thể làm suy yếu các kết nối với cơ bắp ngay cả khi không có não hoặc tủy sống. Do James Hickman và Xiufang Guo dẫn dắt, nghiên cứu nhấn mạnh rằng các triệu chứng thể chất như thay đổi về thăng bằng và dáng đi có thể bắt nguồn trực tiếp từ sự gián đoạn thần kinh ngoại biên."
+      "body_vi": "Các nhà nghiên cứu tại Đại học Central Florida chứng minh rằng các tế bào thần kinh vận động mang đột biến Alzheimer gia đình có thể làm suy yếu các kết nối với cơ bắp ngay cả khi không có não hoặc tủy sống. Do James Hickman và Xiufang Guo dẫn dắt, nghiên cứu nhấn mạnh rằng các triệu chứng thể chất như thay đổi về thăng bằng và dáng đi có thể bắt nguồn trực tiếp từ sự gián đoạn thần kinh ngoại biên.",
+      "heading_fr": "Effets périphériques inattendus",
+      "body_fr": "Des chercheurs de l'University of Central Florida ont démontré que des motoneurones porteurs de mutations de la forme familiale d'Alzheimer peuvent altérer les connexions avec les muscles, même en l'absence de cerveau ou de moelle épinière. Menée par James Hickman et Xiufang Guo, l'étude souligne que des symptômes physiques comme les modifications de l'équilibre et de la démarche peuvent résulter directement d'une détérioration des nerfs périphériques.",
+      "heading_de": "Unerwartete periphere Effekte",
+      "body_de": "Forschende der University of Central Florida wiesen nach, dass Motoneuronen mit Mutationen der familiären Alzheimer-Krankheit die Verbindung zu Muskeln selbst ohne Gehirn oder Rückenmark beeinträchtigen können. Die von James Hickman und Xiufang Guo geleitete Studie verdeutlicht, dass körperliche Symptome wie Störungen des Gleichgewichts oder Veränderungen des Gangbilds unmittelbar auf Schäden an peripheren Nerven zurückgehen könnten.",
+      "heading_es": "Efectos periféricos inesperados",
+      "body_es": "Investigadores de la Universidad de Florida Central demostraron que las neuronas motoras portadoras de mutaciones del alzhéimer familiar pueden deteriorar las conexiones con los músculos incluso en ausencia de un cerebro o médula espinal. Dirigido por James Hickman y Xiufang Guo, el estudio destaca que síntomas físicos como las alteraciones del equilibrio y de la marcha podrían originarse de forma directa en el deterioro de los nervios periféricos."
     },
     {
       "heading_en": "Miniature Laboratory Systems",
       "heading_vi": "Hệ thống phòng thí nghiệm thu nhỏ",
       "body_en": "The team utilized human-on-a-chip technology developed by Hesperos to test these interactions. By combining healthy muscle cells with stem-cell-derived motor neurons containing the genetic mutations, the platform successfully replicated neuromuscular junctions in a controlled environment without central nervous system tissue.",
-      "body_vi": "Nhóm nghiên cứu đã sử dụng công nghệ hệ thống tế bào người trên vi mạch (*human-on-a-chip*) do công ty Hesperos phát triển để thử nghiệm các tương tác này. Bằng cách kết hợp các tế bào cơ khỏe mạnh với các tế bào thần kinh vận động bắt nguồn từ tế bào gốc mang đột biến gen, nền tảng này đã tái tạo thành công các khớp thần kinh cơ trong một môi trường được kiểm soát mà không có mô hệ thần kinh trung ương."
+      "body_vi": "Nhóm nghiên cứu đã sử dụng công nghệ hệ thống tế bào người trên vi mạch (*human-on-a-chip*) do công ty Hesperos phát triển để thử nghiệm các tương tác này. Bằng cách kết hợp các tế bào cơ khỏe mạnh với các tế bào thần kinh vận động bắt nguồn từ tế bào gốc mang đột biến gen, nền tảng này đã tái tạo thành công các khớp thần kinh cơ trong một môi trường được kiểm soát mà không có mô hệ thần kinh trung ương.",
+      "heading_fr": "Systèmes de laboratoire miniatures",
+      "body_fr": "L'équipe a eu recours à la technologie d'organe sur puce développée par Hesperos pour tester ces interactions. En associant des cellules musculaires saines à des motoneurones issus de cellules souches portant les mutations génétiques, le dispositif a reproduit avec succès des jonctions neuromusculaires dans un environnement contrôlé, sans tissu du système nerveux central.",
+      "heading_de": "Miniaturisierte Laborsysteme",
+      "body_de": "Das Forschungsteam nutzte eine von Hesperos entwickelte Human-on-a-Chip-Technologie, um diese Wechselwirkungen zu untersuchen. Durch die Kombination gesunder Muskelzellen mit aus Stammzellen gezüchteten Motoneuronen, welche die Genmutationen trugen, bildete die Plattform neuromuskuläre Synapsen in einer kontrollierten Umgebung ohne Gewebe des zentralen Nervensystems erfolgreich nach.",
+      "heading_es": "Sistemas de laboratorio en miniatura",
+      "body_es": "El equipo utilizó tecnología human-on-a-chip desarrollada por Hesperos para evaluar estas interacciones. Al combinar células musculares sanas con neuronas motoras derivadas de células madre que albergaban las mutaciones genéticas, la plataforma reprodujo con éxito uniones neuromusculares en un entorno controlado sin tejido del sistema nervioso central."
     },
     {
       "heading_en": "Implications for Future Treatments",
       "heading_vi": "Ý nghĩa đối với các phương pháp điều trị trong tương lai",
       "body_en": "These insights suggest that conventional therapies focused exclusively on the central nervous system might overlook important pathology elsewhere in the body. Preserving motor function could also support overall cognitive well-being, pointing toward broader treatment strategies that protect physical and mental health simultaneously.",
-      "body_vi": "Những hiểu biết này cho thấy các liệu pháp thông thường chỉ tập trung vào hệ thần kinh trung ương có thể bỏ sót bệnh lý quan trọng ở những nơi khác trong cơ thể. Việc bảo tồn chức năng vận động cũng có thể hỗ trợ sức khỏe nhận thức tổng thể, hướng tới các chiến lược điều trị rộng hơn nhằm bảo vệ sức khỏe thể chất và tinh thần cùng một lúc."
+      "body_vi": "Những hiểu biết này cho thấy các liệu pháp thông thường chỉ tập trung vào hệ thần kinh trung ương có thể bỏ sót bệnh lý quan trọng ở những nơi khác trong cơ thể. Việc bảo tồn chức năng vận động cũng có thể hỗ trợ sức khỏe nhận thức tổng thể, hướng tới các chiến lược điều trị rộng hơn nhằm bảo vệ sức khỏe thể chất và tinh thần cùng một lúc.",
+      "heading_fr": "Implications pour les futurs traitements",
+      "body_fr": "Ces observations suggèrent que les thérapies conventionnelles, ciblant exclusivement le système nerveux central, pourraient négliger d'importantes anomalies pathologiques ailleurs dans l'organisme. Préserver la motricité pourrait également soutenir le bien-être cognitif général, orientant vers des stratégies thérapeutiques plus globales qui protègent simultanément la santé physique et mentale.",
+      "heading_de": "Bedeutung für künftige Therapien",
+      "body_de": "Diese Erkenntnisse deuten darauf hin, dass herkömmliche Therapien, die sich ausschließlich auf das zentrale Nervensystem konzentrieren, wichtige krankhafte Veränderungen an anderen Stellen des Körpers übersehen könnten. Der Erhalt motorischer Funktionen könnte zudem das allgemeine kognitive Wohlbefinden fördern, was für ganzheitlichere Behandlungsstrategien spricht, die körperliche und geistige Gesundheit gleichermaßen schützen.",
+      "heading_es": "Implicaciones para tratamientos futuros",
+      "body_es": "Estos hallazgos sugieren que las terapias convencionales centradas exclusivamente en el sistema nervioso central podrían pasar por alto alteraciones patológicas importantes en otras partes del organismo. Preservar la función motora también podría favorecer el bienestar cognitivo general, lo que apunta a estrategias terapéuticas más amplias que protejan la salud física y mental al mismo tiempo."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1077/1080/1920",
+    "url": "https://images.unsplash.com/photo-1452573992436-6d508f200b30?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Maico Amorim",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/SJWPKMb9u-k"
+    "sourceUrl": "https://unsplash.com/photos/SJWPKMb9u-k",
+    "wide": "https://images.unsplash.com/photo-1452573992436-6d508f200b30?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@maicoamorim?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -75,6 +101,21 @@
       "Quan sát mọi thay đổi bất thường về khả năng thăng bằng hoặc dáng đi theo thời gian",
       "Tham khảo ý kiến bác sĩ nếu bạn nhận thấy khó khăn kéo dài trong việc phối hợp cơ bắp",
       "Duy trì hoạt động thể chất đều đặn để hỗ trợ cả sức khỏe vận động và sức khỏe não bộ"
+    ],
+    "fr": [
+      "Observez au fil du temps tout changement inhabituel dans votre équilibre ou votre démarche",
+      "Consultez un médecin si vous constatez des difficultés persistantes de coordination musculaire",
+      "Maintenez une activité physique régulière pour soutenir à la fois votre motricité et votre santé cérébrale"
+    ],
+    "de": [
+      "Beobachte über längere Zeit hinweg ungewöhnliche Veränderungen deines Gleichgewichts oder Gangbilds",
+      "Konsultiere einen Arzt, wenn du anhaltende Probleme bei der Muskelkoordination bemerkst",
+      "Achte auf regelmäßige körperliche Aktivität, um sowohl deine Beweglichkeit als auch deine geistige Gesundheit zu stärken"
+    ],
+    "es": [
+      "Observe cualquier cambio inusual en su equilibrio o en sus patrones de marcha a lo largo del tiempo",
+      "Consulte a un médico si nota dificultades persistentes en la coordinación muscular",
+      "Mantenga una actividad física regular para favorecer tanto el movimiento como la salud cerebral"
     ]
   },
   "coverCandidates": [
@@ -111,9 +152,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "cognitive function": "Mental abilities including memory, thinking, reasoning, and problem-solving.",
+      "central nervous system": "The primary control center comprising the brain and spinal cord.",
+      "motor neurons": "Nerve cells that transmit signals from the nervous system to control muscle movement.",
+      "spinal cord": "The cylindrical bundle of nerve fibers connecting the brain to the rest of the body.",
+      "gait": "A person's specific manner or pattern of walking.",
+      "peripheral nerve": "A nerve located outside the brain and spinal cord connecting limbs and organs.",
+      "neuromuscular junctions": "Synaptic connections where motor neurons transmit signals to muscle fibers to trigger movement.",
+      "pathology": "Disease processes, damage, or abnormal structural and functional changes in the body.",
+      "motor function": "The ability of the nervous and muscular systems to produce controlled physical movement.",
+      "muscle coordination": "The coordinated activation of muscles to produce smooth and accurate physical movements."
+    },
+    "vi": {
+      "bệnh alzheimer": "Bệnh thoái hóa thần kinh gây suy giảm trí nhớ, tư duy và chức năng vận động.",
+      "đột biến gen": "Những biến đổi bất thường trong cấu trúc gen liên quan đến sự phát triển của bệnh.",
+      "alzheimer gia đình": "Dạng bệnh Alzheimer do di truyền đột biến gen từ các thế hệ trước trong gia đình.",
+      "tủy sống": "Phần hệ thần kinh trung ương trong cột sống, kết nối não với các dây thần kinh.",
+      "ngoại biên": "Khu vực hoặc hệ thống thần kinh nằm bên ngoài não bộ và tủy sống.",
+      "vi mạch": "Thiết bị vi mô dùng để mô phỏng môi trường sinh học và nuôi cấy tế bào.",
+      "human-on-a-chip": "Hệ thống vi mạch nuôi cấy tế bào người mô phỏng hoạt động cơ quan sinh học.",
+      "hesperos": "Công ty công nghệ sinh học phát triển hệ thống tế bào người trên vi mạch.",
+      "tế bào gốc": "Tế bào nguyên thủy có khả năng phát triển thành các loại tế bào chuyên biệt.",
+      "bệnh lý": "Tình trạng tổn thương hoặc biến đổi chức năng bất thường do bệnh gây ra.",
+      "liệu pháp": "Phương pháp hoặc quy trình y khoa nhằm chữa trị bệnh tật hoặc giảm triệu chứng."
+    },
+    "fr": {
+      "fonctions cognitives": "Capacités cérébrales liées à la pensée, à la mémoire, au raisonnement et à l'apprentissage.",
+      "mutations génétiques": "Modifications permanentes de l'ADN pouvant altérer le fonctionnement normal des cellules nerveuses et musculaires.",
+      "système nerveux central": "Partie du système nerveux comprenant le cerveau et la moelle épinière, coordonnant l'ensemble de l'organisme.",
+      "motoneurones": "Cellules nerveuses transmettant les ordres du système nerveux aux fibres musculaires pour produire les mouvements.",
+      "moelle épinière": "Cordon nerveux logé dans la colonne vertébrale, reliant le cerveau aux différentes parties du corps.",
+      "nerfs périphériques": "Réseau de fibres nerveuses reliant le système nerveux central au reste du corps et aux membres.",
+      "organe sur puce": "Dispositif miniature de culture cellulaire reproduisant in vitro la physiologie et l'environnement d'un tissu vivant.",
+      "hesperos": "Entreprise de biotechnologie ayant conçu le système miniature sur puce utilisé pour les tests de l'étude.",
+      "cellules souches": "Cellules capables de s'auto-renouveler et de se différencier en divers types de cellules spécialisées.",
+      "jonctions neuromusculaires": "Zones de contact physiologique où les motoneurones transmettent leurs signaux aux cellules musculaires.",
+      "thérapies conventionnelles": "Traitements médicaux classiques ciblant principalement les symptômes cérébraux de la maladie d'Alzheimer.",
+      "motricité": "Capacité corporelle à effectuer des mouvements grâce à la coordination des nerfs et des muscles."
+    },
+    "de": {
+      "kognitive funktionen": "Geistige Prozesse wie Wahrnehmung, Denken, Erinnern und Verstehen von Informationen im menschlichen Gehirn.",
+      "zentralen nervensystems": "Der aus Gehirn und Rückenmark bestehende Hauptteil des menschlichen Nervensystems.",
+      "motoneuronen": "Nervenzellen, die Bewegungsimpulse aus dem Nervensystem direkt an die Muskulatur übermitteln.",
+      "familiären alzheimer-krankheit": "Erbliche, genetisch bedingte Form der Alzheimer-Erkrankung, die typischerweise in jüngerem Alter auftritt.",
+      "gangbilds": "Das charakteristische Bewegungsmuster und der typische Ablauf von Schritten beim Gehen.",
+      "peripheren nerven": "Nervenbahnen außerhalb des Gehirns und Rückenmarks, die Körperregionen mit Signalen versorgen.",
+      "human-on-a-chip-technologie": "Mikrochipsysteme mit lebenden menschlichen Zellen zur Nachbildung biologischer Organfunktionen im Laborversuch.",
+      "stammzellen": "Wandlungsfähige Zellen, die sich im Labor in spezialisierte Zelltypen wie Nervenzellen verwandeln lassen.",
+      "neuromuskuläre synapsen": "Verbindungsstellen zwischen Nervenendigungen und Muskelzellen zur Übertragung von Muskelkontraktionsbefehlen.",
+      "muskelkoordination": "Das harmonische Zusammenspiel verschiedener Muskeln zur Ausführung gezielter und stabiler Bewegungen."
+    },
+    "es": {
+      "función cognitiva": "Capacidad mental para procesar información, recordar, razonar y tomar decisiones.",
+      "sistema nervioso central": "Red formada por el encéfalo y la médula espinal que coordina y controla las funciones corporales.",
+      "neuronas motoras": "Células nerviosas encargadas de transmitir señales desde el sistema nervioso hacia los músculos para permitir el movimiento.",
+      "alzhéimer familiar": "Variante hereditaria del alzhéimer provocada por mutaciones genéticas específicas que suele manifestarse a edades tempranas.",
+      "nervios periféricos": "Ramificaciones nerviosas que conectan el encéfalo y la médula espinal con el resto del cuerpo.",
+      "human-on-a-chip": "Dispositivo microfluídico que simula la estructura celular y funciones de tejidos u órganos humanos en el laboratorio.",
+      "células madre": "Células maestras indiferenciadas capaces de transformarse y madurar en diversos tipos celulares especializados del cuerpo.",
+      "uniones neuromusculares": "Puntos de contacto donde las neuronas motoras se comunican con las fibras musculares para transmitir la contracción.",
+      "función motora": "Capacidad del organismo para coordinar los músculos y ejecutar movimientos corporales voluntarios e involuntarios.",
+      "coordinación muscular": "Capacidad del sistema neuromuscular para sincronizar los músculos y ejecutar movimientos precisos, fluidos y controlados."
+    }
   }
 }

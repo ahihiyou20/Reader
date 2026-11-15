@@ -1,0 +1,1574 @@
+/* Pagemoor additions: navigation drawer, library, reading stats, settings, audio bar, word meanings.
+   Same dark, cinematic material as the rest of the chrome (frosted glass over the cover). */
+
+/* Navigation drawer */
+.navbtn {
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  overflow: hidden;
+  pointer-events: auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform var(--dur-press) var(--ease-out);
+}
+.navbtn:active {
+  transform: scale(0.94);
+}
+.navbtn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.click-shield.dim {
+  z-index: 79;
+  background: rgba(0, 0, 0, 0.5);
+}
+.sidenav {
+  position: absolute;
+  z-index: 80;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: min(300px, 82%);
+  padding: calc(var(--sat) + 18px) 14px calc(var(--sab) + 18px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(14, 14, 20, 0.82);
+  border-right: 1px solid var(--stroke);
+  -webkit-backdrop-filter: blur(28px) saturate(140%);
+  backdrop-filter: blur(28px) saturate(140%);
+  transform: translateX(-104%);
+  visibility: hidden;
+  transition:
+    transform var(--dur-medium) var(--ease-drawer),
+    visibility 0s linear var(--dur-medium);
+}
+.sidenav.open {
+  transform: none;
+  visibility: visible;
+  transition: transform var(--dur-medium) var(--ease-drawer);
+}
+.sidenav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px 18px;
+  font: 500 24px/1 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.01em;
+}
+.sidenav-brand img {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.sidenav button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: 50px;
+  padding: 0 14px;
+  border-radius: 14px;
+  color: var(--fg2);
+  font: 600 16px var(--font-sans);
+  text-align: left;
+  transition:
+    background-color var(--dur-hover) var(--ease-out),
+    color var(--dur-hover) var(--ease-out);
+}
+.sidenav button .ic {
+  width: 22px;
+  height: 22px;
+}
+.sidenav button[aria-current='page'] {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+@media (hover: hover) {
+  .sidenav button:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: #fff;
+  }
+}
+.sidenav-foot {
+  margin: auto 8px 0;
+  color: var(--fg3);
+  font: italic 400 15px/21px 'Playfair Display', Georgia, serif;
+}
+
+/* Shared small pieces */
+.chip.solid[aria-pressed='true'] {
+  background: #fff;
+}
+.chip .ic {
+  width: 16px;
+  height: 16px;
+}
+.chip-n {
+  opacity: 0.6;
+  font-weight: 500;
+}
+.chips.wrap {
+  flex-wrap: wrap;
+}
+.pill.ghost {
+  height: 34px;
+  padding: 0 14px;
+  font-size: 14px;
+  background: transparent;
+}
+.pill.ghost .ic {
+  width: 16px;
+  height: 16px;
+}
+.namer {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 4px;
+}
+.namer .input {
+  flex: 1;
+  min-width: 0;
+}
+select.input {
+  width: 100%;
+  appearance: none;
+}
+.pbody .fine {
+  text-align: left;
+}
+
+/* Library */
+.lib-tools {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 2px;
+}
+.pbody .chips.scroll + .grid,
+.lib-tools + .grid,
+.namer + .grid {
+  margin-top: 12px;
+}
+.lib-item {
+  position: relative;
+  min-width: 0;
+}
+.lib-item .card {
+  width: 100%;
+}
+.lib-add {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(12, 12, 16, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.lib-add .ic {
+  width: 17px;
+  height: 17px;
+}
+.lib-meta {
+  display: block;
+  margin: 6px 2px 4px;
+  color: var(--fg3);
+  font: 500 12px/16px var(--font-sans);
+}
+
+/* Profile: stats and the interest score */
+.stats.four {
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 0;
+}
+.stats.four .stat b {
+  display: block;
+  font: 400 26px/1.1 'Anton', 'Oswald', Impact, sans-serif;
+  letter-spacing: 0.02em;
+}
+.stats.four .stat span {
+  font-size: 11px;
+}
+.why {
+  margin-top: 18px;
+  padding: 4px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.why summary {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font: 600 15px var(--font-sans);
+}
+.why-row {
+  display: grid;
+  grid-template-columns: 96px 1fr 34px;
+  align-items: center;
+  gap: 10px;
+  height: 26px;
+  font: 500 13px var(--font-sans);
+}
+.why-row > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.why-row > i {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.why-row > i > i {
+  display: block;
+  height: 100%;
+  background: var(--grad-brand);
+  transform-origin: left;
+}
+.why-row b {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg2);
+}
+.why ul {
+  margin: 12px 0;
+  padding-left: 18px;
+}
+
+/* Settings */
+.seg.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  border-radius: 20px;
+}
+.pbody > .seg {
+  margin-left: 0;
+}
+.range {
+  width: 100%;
+  accent-color: var(--pink);
+}
+.size-sample {
+  margin: 10px 0 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.5;
+  color: var(--fg2);
+}
+
+/* Audio reading: sized like the Details pill next to it */
+.pill.listen {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 15.5px;
+}
+.pill.listen .ic {
+  width: 17px;
+  height: 17px;
+}
+.pill.listen[aria-pressed='true'] {
+  background: #fff;
+  color: #111;
+}
+.audiobar {
+  position: absolute;
+  z-index: 44;
+  left: 50%;
+  bottom: calc(var(--sab) + 84px);
+  width: min(calc(100% - 24px), 520px);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 8px 16px 16px;
+  border-radius: 20px;
+  background: rgba(16, 16, 22, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(24px) saturate(140%);
+  backdrop-filter: blur(24px) saturate(140%);
+  box-shadow: var(--shadow-float);
+}
+.audiobar-text {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.audiobar-text b,
+.audiobar-text span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.audiobar-text b {
+  font: 600 14px var(--font-sans);
+}
+.audiobar-text span {
+  color: var(--fg3);
+  font: 500 12px var(--font-sans);
+}
+.audiobar .iconbtn:disabled {
+  opacity: 0.35;
+}
+.audiobar .iconbtn.main {
+  background: #fff;
+  color: #111;
+}
+.audiobar-rate {
+  min-width: 44px;
+  height: 40px;
+  border-radius: 999px;
+  font: 700 13px var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+.audiobar-seek {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 2px;
+  width: calc(100% - 28px);
+  height: 12px;
+  accent-color: var(--pink);
+}
+
+/* Tap to understand */
+.dscroll p,
+.dscroll h3 {
+  cursor: help;
+}
+.wordpop {
+  position: fixed;
+  z-index: 90;
+  width: 300px;
+  max-width: calc(100vw - 24px);
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(18, 18, 26, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  animation: wordpop-in var(--dur-small) var(--ease-out) both;
+}
+.wordpop b {
+  font: 500 19px/1.2 'Playfair Display', Georgia, serif;
+}
+.wordpop p {
+  margin: 6px 0 8px;
+  font: 400 14.5px/21px var(--font-sans);
+  color: var(--fg);
+}
+.wordpop-src,
+.wordpop-src a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--fg3);
+  font: 600 11px var(--font-sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.wordpop-src .ic {
+  width: 12px;
+  height: 12px;
+}
+@keyframes wordpop-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sidenav,
+  .sidenav.open {
+    transition: none;
+  }
+  .wordpop {
+    animation: none;
+  }
+}
+
+/* Reading text size chosen in Settings (set on <html> by the app shell) */
+.dscroll .sec p {
+  font-size: var(--read-size, inherit);
+  line-height: 1.6;
+}
+/* Narrow screens: the listen button keeps its icon only, so the row fits. */
+html[data-stage='compact-portrait'] .pill.listen {
+  padding: 0 12px;
+  font-size: 0;
+  gap: 0;
+}
+
+/* The old letter marks show the Pagemoor logo instead. */
+.splash-logo,
+.logo-mark,
+.endlogo {
+  background: #000 url('/icons/logo-120.png') center / cover;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 0;
+}
+
+/* Cover titles: one lettering style per category (lib/title.ts). Sizes are in em, so each stage's
+   .ctitle font-size scales the whole lockup. */
+.ctitle[class*='t-'] {
+  display: block;
+  -webkit-line-clamp: none;
+  letter-spacing: 0;
+  text-wrap: balance;
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.5);
+}
+.ctitle[class*='t-'] span {
+  display: block;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  text-shadow: inherit;
+  color: #fff;
+}
+.ctitle .ta {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ctitle .tb {
+  padding: 0.1em 0.2em 0.14em 0.04em !important;
+  margin-left: -0.04em;
+}
+.t-cosmos .ta {
+  font: italic 400 1.2em/1.08 var(--f-playfair), Georgia, serif;
+}
+.t-cosmos .tb {
+  font: 400 2.3em/0.95 var(--f-vibes), cursive;
+  color: #ffe9c7 !important;
+  text-shadow:
+    0 0 34px rgba(255, 140, 50, 0.55),
+    0 2px 14px rgba(0, 0, 0, 0.4) !important;
+}
+.t-press .ta {
+  font: 400 1.35em/1.05 var(--f-yeseva), Georgia, serif;
+}
+.t-press .tb {
+  font: 400 2.1em/0.95 var(--f-pinyon), cursive;
+  color: #f3d9a4 !important;
+}
+.t-poster .ta {
+  font: 400 1.3em/1.12 var(--f-anton), Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+.t-poster .tb {
+  font: 400 2.15em/1.1 var(--f-anton), Impact, sans-serif;
+  text-transform: uppercase;
+  color: #ffd43b !important;
+}
+.t-mag .ta {
+  font: 900 1.3em/1 var(--f-fraunces), Georgia, serif;
+  letter-spacing: -0.02em;
+}
+.t-mag .tb {
+  font: 400 2.2em/0.95 var(--f-allura), cursive;
+  color: #fff1c9 !important;
+  text-shadow:
+    0 0 26px rgba(255, 220, 140, 0.5),
+    0 2px 12px rgba(0, 0, 0, 0.45) !important;
+}
+.t-elegant .ta {
+  font: 300 1.35em/1.05 var(--f-cormorant), Georgia, serif;
+}
+.t-elegant .tb {
+  font: 700 2em/1 var(--f-dancing), cursive;
+  color: #ffe3a3 !important;
+}
+.t-stamp .ta {
+  font: 400 1.05em/1.2 var(--f-dela), sans-serif;
+}
+.t-stamp .tb {
+  font: 700 1.9em/1.1 var(--f-charm), cursive;
+  color: #ffd43b !important;
+}
+.ctitle.long .tb {
+  font-size: 1.7em;
+}
+
+/* Welcome (first visit) */
+.welcome {
+  position: absolute;
+  inset: 0;
+  z-index: 95;
+  display: flex;
+  flex-direction: column;
+  background: #0b0b0f;
+  color: #fff;
+  overflow: hidden;
+  animation: welcome-in 600ms var(--ease-out) both;
+}
+.welcome-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.welcome-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(8, 8, 12, 0.55) 0%, rgba(8, 8, 12, 0.15) 30%, rgba(8, 8, 12, 0.75) 100%),
+    linear-gradient(90deg, rgba(8, 8, 12, 0.6) 0%, rgba(8, 8, 12, 0) 60%);
+}
+.welcome-nav,
+.welcome-body {
+  position: relative;
+}
+.welcome-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: calc(var(--sat) + 18px) clamp(18px, 3vw, 44px) 0;
+  font: 500 22px/1 var(--f-playfair), Georgia, serif;
+}
+.welcome-nav img {
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.welcome-nav .wskip,
+.welcome-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font: 600 12px var(--font-sans);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.welcome-nav .wskip {
+  margin-left: auto;
+  min-height: 44px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.welcome-nav .wskip i,
+.welcome-start i {
+  width: 30px;
+  height: 1px;
+  background: currentColor;
+  transform-origin: left;
+  transition: transform var(--dur-medium) var(--ease-out);
+}
+.welcome-start {
+  margin-top: clamp(20px, 4dvh, 40px);
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+}
+@media (hover: hover) {
+  .welcome-nav .wskip:hover i,
+  .welcome-start:hover i {
+    transform: scaleX(1.6);
+  }
+}
+.welcome-body {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(240px, 22vw, 320px);
+  align-items: center;
+  gap: 32px;
+  padding: 0 clamp(18px, 3vw, 44px) calc(var(--sab) + 24px);
+}
+.welcome h1 {
+  margin: 0;
+  text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+}
+.welcome h1 span {
+  display: block;
+}
+.welcome .scr {
+  font: 400 clamp(64px, 9vw, 150px)/0.9 var(--f-vibes), cursive;
+  color: #ffe9d2;
+  animation: welcome-write 1300ms cubic-bezier(0.6, 0, 0.3, 1) 200ms both;
+}
+.welcome .scr small {
+  margin-left: 0.6em;
+  font: 500 clamp(10px, 0.9vw, 14px) var(--font-sans);
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  vertical-align: 1.6em;
+}
+.welcome .ser {
+  font: 400 clamp(64px, 11vw, 190px)/0.95 var(--f-playfair), Georgia, serif;
+  letter-spacing: -0.01em;
+  animation: welcome-rise 800ms var(--ease-out) 500ms both;
+}
+.welcome-tag {
+  max-width: 30ch;
+  margin: clamp(14px, 3dvh, 30px) 0 0;
+  font: italic 400 clamp(16px, 1.5vw, 22px)/1.45 var(--f-playfair), Georgia, serif;
+  color: rgba(255, 255, 255, 0.9);
+  animation: welcome-rise 800ms var(--ease-out) 650ms both;
+}
+.welcome-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px clamp(22px, 3.4vw, 56px);
+  margin: clamp(18px, 4dvh, 44px) 0 0;
+}
+.welcome-info div {
+  max-width: 17ch;
+  animation: welcome-rise 700ms var(--ease-out) calc(800ms + var(--d) * 90ms) both;
+}
+.welcome-info dt {
+  font: 700 14px var(--font-sans);
+}
+.welcome-info dd {
+  margin: 8px 0 0;
+  font: 400 14px/1.45 var(--font-sans);
+  color: rgba(255, 255, 255, 0.78);
+}
+.welcome-picks {
+  display: grid;
+  gap: 12px;
+}
+.welcome-picks button {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+  padding: 12px;
+  text-align: left;
+  background: var(--dominant, #1d1d24);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  animation: welcome-rise 800ms var(--ease-out) calc(700ms + var(--d) * 120ms) both;
+}
+.welcome-picks img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.welcome-picks button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.78) 100%);
+}
+.welcome-picks button > * {
+  position: relative;
+  z-index: 1;
+}
+.welcome-picks em {
+  position: absolute !important;
+  top: 10px;
+  right: 12px;
+  font: italic 400 12px var(--f-playfair), Georgia, serif;
+  opacity: 0.85;
+}
+.welcome-picks span {
+  font: 700 10px var(--font-sans);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.welcome-picks span i {
+  font: italic 400 13px var(--f-playfair), Georgia, serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.welcome-picks strong {
+  font: 500 13px/1.35 var(--font-sans);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+html[data-stage$='portrait'] .welcome-body {
+  grid-template-columns: 1fr;
+  align-content: end;
+  overflow-y: auto;
+}
+html[data-stage='compact-portrait'] .welcome-picks {
+  display: none;
+}
+html[data-stage='compact-portrait'] .welcome-nav .wskip {
+  font-size: 0;
+  gap: 0;
+}
+html[data-stage='compact-portrait'] .welcome-nav .wskip::before {
+  content: '✕';
+  font-size: 18px;
+  letter-spacing: 0;
+}
+html[data-stage='compact-portrait'] .welcome-nav .wskip i {
+  display: none;
+}
+html[data-stage='compact-landscape'] .welcome-info,
+html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
+  display: none;
+}
+@keyframes welcome-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes welcome-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+}
+@keyframes welcome-write {
+  from {
+    clip-path: inset(-20% 100% -30% 0);
+  }
+  to {
+    clip-path: inset(-20% 0 -30% 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .welcome,
+  .welcome * {
+    animation: none !important;
+  }
+}
+
+/* Cover clip: fades in over the still image once it has frames to show. */
+.media-clip {
+  animation: clip-in 600ms var(--ease-out) 200ms both;
+}
+@keyframes clip-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Welcome: three screens, one per scroll stop */
+.welcome {
+  display: block;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-snap-type: y proximity;
+  scrollbar-width: none;
+}
+.welcome > section {
+  position: relative;
+  height: 100%;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+.welcome-nav .wlink {
+  position: relative;
+  min-height: 44px;
+  margin-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
+  font: 600 12px var(--font-sans);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  transition: color var(--dur-hover) var(--ease-out);
+}
+.welcome-nav .wlink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0.24em;
+  bottom: 10px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--dur-medium) var(--ease-out);
+}
+/* The welcome sits on a film: the app-wide hover brightness filter re-rasterises text over it and
+   makes neighbouring links flicker, so these controls have their own hover. */
+.welcome button:hover {
+  filter: none !important;
+}
+@media (hover: hover) {
+  .welcome-nav .wlink:hover {
+    color: #fff;
+  }
+  .welcome-nav .wlink:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+html[data-stage='compact-portrait'] .welcome-nav .wlink {
+  display: none;
+}
+.wlabel {
+  position: relative;
+  margin: calc(var(--sat) + 26px) clamp(18px, 3vw, 44px) 0;
+  padding-left: 16px;
+  max-width: 9em;
+  border-left: 2px solid #ffd43b;
+  font: 400 clamp(26px, 3vw, 40px)/1 var(--f-anton), Impact, sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.wfx-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 900ms var(--ease-out);
+}
+.wfx-bg.on {
+  opacity: 0.55;
+}
+.wflow {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  perspective: 1400px;
+}
+.wflow > button {
+  grid-area: 1 / 1;
+  --w: clamp(220px, 24vw, 340px);
+  width: var(--w);
+  transform: translateX(calc(var(--o) * var(--w) * 0.86)) rotateY(calc(var(--o) * -14deg)) scale(calc(1 - var(--a) * 0.12));
+  opacity: calc(1 - var(--a) * 0.42);
+  z-index: calc(10 - var(--a));
+  transition:
+    transform 700ms var(--ease-out),
+    opacity 700ms var(--ease-out);
+  text-align: left;
+}
+.wfx-card {
+  aspect-ratio: 5 / 6;
+  padding: clamp(18px, 2vw, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 6px;
+  background: rgba(20, 20, 28, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.wfx-card .ic {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 50%;
+  background: #fff;
+  color: #111;
+}
+.wfx-card strong {
+  margin-top: auto;
+  font: 400 clamp(30px, 3.4vw, 50px)/1 var(--f-anton), Impact, sans-serif;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.wfx-card small {
+  font: 700 10px var(--font-sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+.wfx-card p {
+  margin: 6px 0 0;
+  font: 400 14px/1.5 var(--font-sans);
+  color: rgba(255, 255, 255, 0.86);
+  opacity: 0;
+  transition: opacity 500ms var(--ease-out);
+}
+.wfx-card[aria-current='true'] p {
+  opacity: 1;
+}
+.wfx-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 clamp(18px, 3vw, 44px) calc(var(--sab) + 22px);
+}
+.wfx-tick {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font: 600 11px var(--font-sans);
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.55);
+}
+.wfx-tick[aria-current='true'] {
+  color: #fff;
+}
+.wfx-tick > i {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.wfx-tick > i > i {
+  display: block;
+  height: 100%;
+  background: #fff;
+  transform-origin: left;
+  animation: wfx-fill linear both;
+}
+@keyframes wfx-fill {
+  from {
+    transform: scaleX(0);
+  }
+}
+.wcf-count {
+  position: absolute;
+  top: calc(var(--sat) + 26px);
+  right: clamp(18px, 3vw, 44px);
+  font: 400 clamp(22px, 2.4vw, 32px)/1 var(--f-anton), Impact, sans-serif;
+  letter-spacing: 0.06em;
+}
+.wcf-count i {
+  font-style: normal;
+  opacity: 0.55;
+}
+.wcf .wflow > button {
+  --w: clamp(200px, 23vw, 340px);
+  transform: translateX(calc(var(--o) * var(--w) * 0.8)) rotateY(calc(var(--o) * -12deg)) scale(calc(1 - var(--a) * 0.1));
+}
+.wcf-card {
+  position: relative;
+  aspect-ratio: 5 / 8;
+  max-height: 70dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px;
+  background: var(--dominant, #1d1d24);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+  text-align: center !important;
+}
+.wcf-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wcf-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.32);
+}
+.wcf-card > :not(img) {
+  position: relative;
+  z-index: 1;
+}
+.wcf-card em {
+  position: absolute !important;
+  top: 18px;
+  right: 18px;
+  font: 700 10px var(--font-sans);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+.wcf-card strong {
+  font: 600 clamp(18px, 1.9vw, 26px)/1.2 var(--font-sans);
+  text-wrap: balance;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.wcf-card span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font: 600 14px var(--font-sans);
+}
+.wcf-card span .ic {
+  width: 18px;
+  height: 18px;
+}
+.wcf-card:not([aria-current='true']) strong,
+.wcf-card:not([aria-current='true']) span {
+  visibility: hidden;
+}
+.wcf-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 20;
+  width: 48px;
+  height: 48px;
+}
+.wcf-arrow.prev {
+  left: 12px;
+}
+.wcf-arrow.next {
+  right: 12px;
+}
+.wcf-now {
+  position: relative;
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 48px;
+  margin: 0 clamp(18px, 3vw, 44px) calc(var(--sab) + 22px);
+  font: 600 12px var(--font-sans);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.wcf-now i {
+  width: 70px;
+  height: 1px;
+  background: currentColor;
+}
+html[data-stage='compact-portrait'] .wflow > button {
+  --w: min(70vw, 300px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .wflow > button,
+  .wfx-bg {
+    transition: none;
+  }
+}
+
+.wordpop-base {
+  color: var(--fg2);
+  font-style: italic;
+}
+
+/* Top bar icons answer the pointer: the bell swings on its hook when tapped, the compass turns. */
+.tb-ic .ic {
+  transition: transform var(--dur-medium) var(--ease-out);
+}
+.tb-ic.bell .ic {
+  transform-origin: 50% 8%;
+}
+.tb-ic.bell.ring .ic {
+  animation: bell-ring 650ms var(--ease-out);
+}
+@keyframes bell-ring {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(18deg);
+  }
+  32% {
+    transform: rotate(-15deg);
+  }
+  49% {
+    transform: rotate(10deg);
+  }
+  66% {
+    transform: rotate(-6deg);
+  }
+  83% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.tb-ic.compass:active .ic {
+  transform: rotate(-35deg);
+}
+@media (hover: hover) {
+  .tb-ic.bell:hover .ic {
+    transform: rotate(-12deg);
+  }
+  .tb-ic.compass:hover .ic {
+    transform: rotate(45deg);
+  }
+  .navbtn:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Notifications and messages: a sheet from the right edge on wide screens, not the whole screen. */
+html[data-stage$='landscape'] .panel.side {
+  left: auto;
+  width: min(420px, 100%);
+  border-left: 1px solid var(--stroke);
+  border-radius: 22px 0 0 22px;
+  box-shadow: -24px 0 60px rgba(0, 0, 0, 0.45);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tb-ic.bell.ring .ic {
+    animation: none;
+  }
+  .tb-ic .ic {
+    transition: none;
+  }
+}
+
+.sheet-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 44;
+  background: rgba(0, 0, 0, 0.4);
+  animation: shade-in var(--dur-medium) var(--ease-out) both;
+}
+@keyframes shade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Living covers: a slow, barely noticeable push-in and pan (composite-only), reversing at each end. */
+.media.drift {
+  animation: cover-drift 26s ease-in-out infinite alternate;
+}
+@keyframes cover-drift {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.1) translate3d(-1.6%, -1.2%, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .media.drift {
+    animation: none;
+  }
+}
+
+/* Leaving the welcome: it lifts and fades, uncovering the article already waiting in the feed. */
+.welcome.leaving {
+  pointer-events: none;
+  animation: welcome-out 650ms var(--ease-in-out) both;
+}
+@keyframes welcome-out {
+  to {
+    opacity: 0;
+    transform: scale(1.04);
+    filter: blur(6px);
+  }
+}
+
+/* Frames are never scroll boxes: an element scrolled into view (a focused field, a tapped control)
+   must not shift the app, the feed or a page (overflow: hidden still allows that; clip does not). */
+.app,
+.feed,
+.article,
+.bg {
+  overflow: clip;
+}
+
+/* Cover photo credit (Unsplash API guidelines), quiet in the corner under the top bar. */
+.ccredit {
+  position: absolute;
+  z-index: 3;
+  top: calc(var(--sat) + 58px);
+  right: 18px;
+  max-width: 60%;
+  margin: 0;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.62);
+  font: 500 11px/1.4 var(--font-sans);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+}
+.ccredit a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 2px;
+}
+@media (hover: hover) {
+  .ccredit a:hover {
+    color: #fff;
+  }
+}
+
+/* Cards arrive one after another (the first 16), whatever the list. */
+.card {
+  animation-delay: calc(var(--i, 0) * 28ms);
+}
+.card.wide {
+  aspect-ratio: 16 / 9;
+}
+.carousel .card.wide {
+  width: 78%;
+}
+
+/* Explore on wide screens: a full-width page, a centred column, as many covers per row as fit. */
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .pbody {
+  padding-left: max(clamp(20px, 3vw, 40px), calc((100% - 1360px) / 2));
+  padding-right: max(clamp(20px, 3vw, 40px), calc((100% - 1360px) / 2));
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .phead {
+  padding-left: max(clamp(12px, 2.4vw, 32px), calc((100% - 1376px) / 2));
+  padding-right: max(clamp(12px, 2.4vw, 32px), calc((100% - 1376px) / 2));
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .phead h2 {
+  font: 400 clamp(28px, 2.6vw, 38px)/1 var(--f-anton), Impact, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .chips.scroll {
+  flex-wrap: wrap;
+  overflow: visible;
+  margin: 0;
+  padding: 2px 0 6px;
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, calc((100% - 30px) / 4));
+  gap: 10px;
+  margin: 0;
+  padding: 0 0 6px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .carousel .card.wide {
+  width: auto;
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .grid {
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 12px;
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .card .ct {
+  font-size: 14px;
+  line-height: 18px;
+}
+html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .card.wide .ct {
+  font-size: 17px;
+  line-height: 22px;
+  -webkit-line-clamp: 2;
+}
+@media (hover: hover) {
+  .card img {
+    transition: transform 600ms var(--ease-out);
+  }
+  .card:hover img {
+    transform: scale(1.06);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    animation-delay: 0ms;
+  }
+  .card:hover img {
+    transform: none;
+  }
+}
+
+/* Long labels (German, French) shorten with an ellipsis instead of running into the text beside them. */
+.prow,
+.crow {
+  min-width: 0;
+}
+.prow .hint,
+.crow .hint {
+  min-width: 0;
+  flex: 0 1 auto;
+}
+.hint .hint-t {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hint .ic {
+  flex: none;
+}
+/* Phones: the avatar alone opens the account; its label does not fit beside the logo and icons. */
+html[data-stage='compact-portrait'] .uname {
+  display: none;
+}
+
+/* Reading header (stageshow spacing: a fixed 8-12px between controls, words never touching a
+   neighbour, the heading clear of the row above by at least the side inset). */
+.dhead .prow {
+  gap: 10px;
+}
+.dhead .prow .hint {
+  margin-left: auto;
+  padding-left: 2px;
+}
+.dhead .prow .hint[data-fit='icon'] {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(22, 22, 28, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.dhead .prow .hint[data-fit='icon'] .hint-t {
+  width: 0;
+}
+html[data-stage$='landscape'] .dhead .prow .hint[data-fit='icon'],
+html[data-stage='regular-portrait'] .dhead .prow .hint[data-fit='icon'] {
+  width: 44px;
+  height: 44px;
+}
+html[data-stage='compact-portrait'] .dhead .btitle {
+  margin-top: 6px;
+}
+
+/* Language change sweep (lib/wipe.ts): a dark curtain with a fine warm edge, the language named in
+   the serif italic of the welcome screen. */
+.lang-wipe {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 50% 45%, rgba(58, 46, 34, 0.55) 0%, rgba(11, 11, 15, 0) 70%),
+    linear-gradient(180deg, #121016 0%, #0a0a0d 100%);
+  transform: translateX(-102%);
+  will-change: transform;
+}
+/* The leading edge: a hairline of light the curtain draws across the screen. */
+.lang-wipe::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(232, 205, 160, 0) 0%, rgba(232, 205, 160, 0.85) 50%, rgba(232, 205, 160, 0) 100%);
+  box-shadow: 0 0 18px 2px rgba(232, 205, 160, 0.25);
+}
+.lang-wipe span {
+  opacity: 0;
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  color: #f1e7d6;
+  font: italic 400 clamp(48px, 7vw, 104px)/1 var(--f-playfair), Georgia, serif;
+  letter-spacing: 0.005em;
+}
+.lang-wipe span::before {
+  content: 'Pagemoor';
+  font: 500 11px/1 var(--font-sans);
+  font-style: normal;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: rgba(241, 231, 214, 0.55);
+}
+.lang-wipe span::after {
+  content: '';
+  width: 56px;
+  height: 1px;
+  background: rgba(232, 205, 160, 0.6);
+}
+
+/* Card image: blurred placeholder underneath, the photo fading in once decoded. */
+.card .cblur {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(14px);
+  transform: scale(1.15);
+}
+.card img {
+  opacity: 0;
+  transition:
+    opacity 380ms var(--ease-out),
+    transform 600ms var(--ease-out);
+}
+.card img.in {
+  opacity: 1;
+}
+/* The Listen pill matches the Details pill beside it on every stage. */
+html[data-stage='regular-landscape'] .pill.listen,
+html[data-stage='regular-portrait'] .pill.listen {
+  height: 44px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+html[data-stage='compact-landscape'] .dhead .pill.listen {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+/* Phones: the cover title shrinks with its length instead of being cut (a 90-character title is
+   about three quarters of the size of a 40-character one), and the accent stays within two lines. */
+html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
+  font-size: clamp(21px, calc(31px - (var(--n, 40) - 40) * 0.16px), 31px);
+  line-height: 1.2;
+}
+html[data-stage='compact-landscape'] .ctitle[class*='t-'] {
+  font-size: clamp(16px, calc(22px - (var(--n, 40) - 40) * 0.1px), 22px);
+  line-height: 1.2;
+  -webkit-line-clamp: none;
+  overflow: visible;
+}
+.ctitle[class*='t-'] .tb {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* Short phones (iPhone SE): less height to share between the title and the bottom bar. */
+@media (max-height: 700px) and (orientation: portrait) {
+  html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
+    font-size: clamp(19px, calc(27px - (var(--n, 40) - 40) * 0.15px), 27px);
+  }
+  html[data-stage='compact-portrait'] .ctitle[class*='t-'] .tb {
+    font-size: 1.8em;
+  }
+}
+/* Landscape phones: the swipe hint goes above the title's column instead of over it, and the photo
+   credit to the bottom corner, clear of the action rail. */
+html[data-stage='compact-landscape'] .crow {
+  top: calc(var(--sat) + 62px);
+  bottom: auto;
+}
+html[data-stage='compact-landscape'] .ccredit {
+  top: auto;
+  bottom: calc(var(--sab) + 8px);
+  right: calc(env(safe-area-inset-right, 0px) + 84px);
+}
+/* Small labels keep a finger-sized hit area without growing. */
+.streak,
+.crow .hint,
+.prow .hint {
+  position: relative;
+}
+.streak::after,
+.crow .hint::after {
+  content: '';
+  position: absolute;
+  inset: -12px -6px;
+}
+
+/* ---------- Phone pass (tests/qa/phone-tour.mjs) ---------- */
+/* Cover title: use the width up to the action rail, so long titles keep all their words. */
+html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
+  width: calc(100% - 100px);
+}
+html[data-stage='compact-portrait'] .ctitle .ta {
+  -webkit-line-clamp: 5;
+}
+/* Short phones: the swipe hint ends before the rail instead of running under the like button. */
+@media (max-height: 700px) and (orientation: portrait) {
+  html[data-stage='compact-portrait'] .crow {
+    right: 84px;
+  }
+}
+/* Audio bar on phones: title and times on their own line, controls under them, the seek bar last.
+   The reading view's next button and dots step aside while it is open. */
+html[data-stage='compact-portrait'] .audiobar {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, auto);
+  grid-template-areas: 'text text text text text text' '. prev play next rate close' 'seek seek seek seek seek seek';
+  row-gap: 6px;
+  padding: 12px 10px 10px 14px;
+}
+html[data-stage='compact-portrait'] .audiobar-text {
+  grid-area: text;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(1) {
+  grid-area: prev;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(2) {
+  grid-area: play;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(3) {
+  grid-area: next;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(4) {
+  grid-area: rate;
+}
+html[data-stage='compact-portrait'] .audiobar > button:nth-of-type(5) {
+  grid-area: close;
+}
+html[data-stage='compact-portrait'] .audiobar-seek {
+  grid-area: seek;
+  position: static;
+  width: 100%;
+}
+.app:has(.audiobar) .dfoot {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur-small) var(--ease-out);
+}
+/* Touch sizes: segmented choices and sliders a finger can hit. */
+.pbody .seg button {
+  height: 40px;
+  padding: 0 14px;
+}
+.range,
+.audiobar-seek {
+  height: 28px;
+  margin: 0;
+}
+.wordpop-src a {
+  padding: 8px 0;
+  margin: -8px 0;
+}
+/* Wider screens keep the one-line bar; the taller slider gets its own strip at the bottom. */
+html:not([data-stage='compact-portrait']) .audiobar {
+  padding-bottom: 26px;
+}
+html:not([data-stage='compact-portrait']) .audiobar-seek {
+  bottom: 0;
+  height: 24px;
+}
+/* Explore on landscape phones: the desktop grid, compacted to the short screen. */
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .phead h2 {
+  font-size: 24px;
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .chips.scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .chip {
+  height: 32px;
+  font-size: 13px;
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .label {
+  margin: 12px 0 8px;
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .carousel {
+  grid-auto-columns: minmax(180px, calc((100% - 40px) / 5));
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .grid {
+  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  gap: 10px;
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .card .ct,
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.library) .card.wide .ct {
+  font-size: 12.5px;
+  line-height: 16px;
+}
+
+/* Landscape phones: the audio bar sits under the reading column, clear of the title's action row. */
+html[data-stage='compact-landscape'] .audiobar {
+  left: auto;
+  right: calc(env(safe-area-inset-right, 0px) + 12px);
+  bottom: calc(var(--sab) + 10px);
+  width: min(460px, 52%);
+  transform: none;
+}

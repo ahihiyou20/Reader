@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Quantum Theorems Shatter Einstein's View of Reality",
-    "vi": "Các định lý lượng tử đập tan quan điểm về thực tại của Einstein"
+    "vi": "Các định lý lượng tử đập tan quan điểm về thực tại của Einstein",
+    "fr": "Des théorèmes quantiques ébranlent la vision de la réalité d'Einstein",
+    "de": "Quantentheoreme erschüttern Einsteins Realitätsbild",
+    "es": "Los teoremas cuánticos derrumban la visión de la realidad de Einstein"
   },
   "hook": {
     "en": "Albert Einstein spent decades defending an objective reality where everyday objects possess intrinsic properties regardless of observation. However, a century of quantum physics and radical theoretical proofs have dismantled his assumptions. Researchers now face a stark choice between a surreal universe and the total absence of objective truth {source}.",
-    "vi": "Albert Einstein đã dành nhiều thập kỷ bảo vệ một thực tại khách quan, nơi các vật thể hàng ngày sở hữu những tính chất nội tại bất kể việc quan sát. Tuy nhiên, một thế kỷ vật lý lượng tử và các chứng minh lý thuyết cực đoan đã phá vỡ các giả định của ông. Các nhà nghiên cứu hiện phải đối mặt với lựa chọn khắc nghiệt giữa một vũ trụ siêu thực và sự vắng bóng hoàn toàn của chân lý khách quan {source}."
+    "vi": "Albert Einstein đã dành nhiều thập kỷ bảo vệ một thực tại khách quan, nơi các vật thể hàng ngày sở hữu những tính chất nội tại bất kể việc quan sát. Tuy nhiên, một thế kỷ vật lý lượng tử và các chứng minh lý thuyết cực đoan đã phá vỡ các giả định của ông. Các nhà nghiên cứu hiện phải đối mặt với lựa chọn khắc nghiệt giữa một vũ trụ siêu thực và sự vắng bóng hoàn toàn của chân lý khách quan {source}.",
+    "fr": "Albert Einstein a passé des décennies à défendre une réalité objective dans laquelle les objets du quotidien possèdent des propriétés intrinsèques, indépendamment de toute observation. Pourtant, un siècle de physique quantique et des démonstrations théoriques radicales ont démantelé ses postulats. Les chercheurs se trouvent désormais confrontés à un choix sans appel entre un univers surréaliste et l'absence totale de vérité objective {source}.",
+    "de": "Albert Einstein verteidigte jahrzehntelang eine objektive Realität, in der alltägliche Objekte unabhängig von Beobachtung feste Eigenschaften besitzen. Doch ein Jahrhundert Quantenphysik und radikale theoretische Beweise haben seine Annahmen zerschlagen. Forschende stehen nun vor der harten Wahl zwischen einem surrealen Universum und dem völligen Fehlen objektiver Wahrheit {source}.",
+    "es": "Albert Einstein pasó décadas defendiendo una realidad objetiva en la que los objetos cotidianos poseen propiedades intrínsecas con independencia de la observación. Sin embargo, un siglo de física cuántica y radicales demostraciones teóricas han desmontado sus suposiciones. Los investigadores se enfrentan ahora a una cruda disyuntiva entre un universo surrealista y la ausencia total de verdad objetiva {source}."
   },
   "sections": [
     {
       "heading_en": "Einstein and Probabilities",
       "heading_vi": "Einstein và các xác suất",
       "body_en": "Einstein believed objects hold definite properties like position and velocity independent of human minds. Werner Heisenberg and Erwin Schrödinger formulated quantum mechanics using possibilities instead of facts. Their mathematical framework produced a wave function offering statistical odds for measurement outcomes rather than a single definitive state.",
-      "body_vi": "Einstein tin rằng các vật thể giữ các tính chất xác định như vị trí và vận tốc độc lập với tâm trí con người. Werner Heisenberg và Erwin Schrödinger đã xây dựng cơ học lượng tử bằng cách sử dụng các khả năng thay vì sự thật. Khung toán học của họ tạo ra một hàm sóng cung cấp các tỷ lệ thống kê cho kết quả đo lường thay vì một trạng thái duy nhất mang tính quyết định."
+      "body_vi": "Einstein tin rằng các vật thể giữ các tính chất xác định như vị trí và vận tốc độc lập với tâm trí con người. Werner Heisenberg và Erwin Schrödinger đã xây dựng cơ học lượng tử bằng cách sử dụng các khả năng thay vì sự thật. Khung toán học của họ tạo ra một hàm sóng cung cấp các tỷ lệ thống kê cho kết quả đo lường thay vì một trạng thái duy nhất mang tính quyết định.",
+      "heading_fr": "Einstein et les probabilités",
+      "body_fr": "Einstein croyait que les objets possédaient des propriétés bien définies, comme la position et la vitesse, indépendamment de l'esprit humain. Werner Heisenberg et Erwin Schrödinger ont formulé la mécanique quantique à partir de probabilités plutôt que de faits avérés. Leur cadre mathématique a produit une fonction d'onde offrant des probabilités statistiques pour les résultats de mesure, plutôt qu'un état unique et définitif.",
+      "heading_de": "Einstein und Wahrscheinlichkeiten",
+      "body_de": "Einstein glaubte, dass Objekte unabhängig vom menschlichen Geist feste Eigenschaften wie Ort und Geschwindigkeit besitzen. Werner Heisenberg und Erwin Schrödinger formulierten die Quantenmechanik anhand von Möglichkeiten statt Tatsachen. Ihr mathematisches Gerüst brachte eine Wellenfunktion hervor, die statistische Wahrscheinlichkeiten für Messergebnisse liefert, anstatt einen einzelnen definitiven Zustand.",
+      "heading_es": "Einstein y las probabilidades",
+      "body_es": "Einstein creía que los objetos poseen propiedades definidas, como la posición y la velocidad, con independencia de la mente humana. Werner Heisenberg y Erwin Schrödinger formularon la mecánica cuántica a partir de posibilidades en lugar de hechos consumados. Su marco matemático dio lugar a una función de onda que ofrece probabilidades estadísticas para los resultados de una medición, en vez de un único estado definitivo."
     },
     {
       "heading_en": "Bell Tests Reality",
       "heading_vi": "Bell kiểm chứng thực tại",
       "body_en": "John Stewart Bell devised a thought experiment in 1964 to test whether quantum mechanics could align with a real and local world. Subsequent laboratory experiments confirmed that particles match more frequently than Einsteinian assumptions permit. This outcome proved that the universe cannot simultaneously satisfy both objective reality and locality.",
-      "body_vi": "John Stewart Bell đã nghĩ ra một thí nghiệm tư duy vào năm 1964 để kiểm tra xem cơ học lượng tử có thể phù hợp với một thế giới thực và cục bộ hay không. Các thí nghiệm trong phòng thí nghiệm sau đó đã xác nhận rằng các hạt khớp nhau thường xuyên hơn mức cho phép của các giả định theo trường phái Einstein. Kết quả này chứng minh rằng vũ trụ không thể đồng thời thỏa mãn cả thực tại khách quan lẫn tính cục bộ."
+      "body_vi": "John Stewart Bell đã nghĩ ra một thí nghiệm tư duy vào năm 1964 để kiểm tra xem cơ học lượng tử có thể phù hợp với một thế giới thực và cục bộ hay không. Các thí nghiệm trong phòng thí nghiệm sau đó đã xác nhận rằng các hạt khớp nhau thường xuyên hơn mức cho phép của các giả định theo trường phái Einstein. Kết quả này chứng minh rằng vũ trụ không thể đồng thời thỏa mãn cả thực tại khách quan lẫn tính cục bộ.",
+      "heading_fr": "Bell met la réalité à l'épreuve",
+      "body_fr": "John Stewart Bell a conçu une expérience de pensée en 1964 afin de vérifier si la mécanique quantique pouvait s'accorder avec un monde réel et local. Des expériences ultérieures menées en laboratoire ont confirmé que les particules se corrèlent plus fréquemment que ne le permettent les hypothèses einsteiniennes. Ce résultat a prouvé que l'univers ne peut satisfaire simultanément la réalité objective et la localité.",
+      "heading_de": "Bell prüft die Realität",
+      "body_de": "John Stewart Bell entwickelte 1964 ein Gedankenexperiment, um zu prüfen, ob die Quantenmechanik mit einer realen und lokalen Welt vereinbar sein könnte. Nachfolgende Laborexperimente bestätigten, dass Teilchen häufiger übereinstimmen, als es Einsteins Annahmen erlauben. Dieses Ergebnis bewies, dass das Universum nicht gleichzeitig objektive Realität und Lokalität erfüllen kann.",
+      "heading_es": "Bell pone a prueba la realidad",
+      "body_es": "John Stewart Bell ideó un experimento mental en 1964 para comprobar si la mecánica cuántica podía conciliarse con un mundo real y local. Experimentos de laboratorio posteriores confirmaron que las partículas coinciden con mayor frecuencia de la que permiten las hipótesis einsteinianas. Este resultado demostró que el universo no puede satisfacer simultáneamente la realidad objetiva y la localidad."
     },
     {
       "heading_en": "The Final Theorem",
       "heading_vi": "Định lý cuối cùng",
       "body_en": "Matthew Pusey, Jonathan Barrett, and Terry Rudolph introduced a theorem in 2012 ruling out the idea that quantum states merely reflect incomplete knowledge. Laboratory tests validated the PBR theorem, establishing that quantum states act as scannable physical properties. Physicists must now either accept a bizarre objective reality or abandon objective reality completely.",
-      "body_vi": "Matthew Pusey, Jonathan Barrett và Terry Rudolph đã giới thiệu một định lý vào năm 2012 loại bỏ ý tưởng rằng các trạng thái lượng tử chỉ phản ánh kiến thức chưa hoàn chỉnh. Các thử nghiệm trong phòng thí nghiệm đã xác thực định lý PBR (*PBR theorem*), xác lập rằng các trạng thái lượng tử hoạt động như các tính chất vật lý có thể quét được. Các nhà nghiên cứu giờ đây phải chấp nhận một thực tại khách quan kỳ lạ hoặc từ bỏ hoàn toàn thực tại khách quan."
+      "body_vi": "Matthew Pusey, Jonathan Barrett và Terry Rudolph đã giới thiệu một định lý vào năm 2012 loại bỏ ý tưởng rằng các trạng thái lượng tử chỉ phản ánh kiến thức chưa hoàn chỉnh. Các thử nghiệm trong phòng thí nghiệm đã xác thực định lý PBR (*PBR theorem*), xác lập rằng các trạng thái lượng tử hoạt động như các tính chất vật lý có thể quét được. Các nhà nghiên cứu giờ đây phải chấp nhận một thực tại khách quan kỳ lạ hoặc từ bỏ hoàn toàn thực tại khách quan.",
+      "heading_fr": "Le théorème ultime",
+      "body_fr": "Matthew Pusey, Jonathan Barrett et Terry Rudolph ont présenté en 2012 un théorème réfutant l'idée selon laquelle les états quantiques ne refléteraient qu'une connaissance incomplète. Des tests en laboratoire ont validé le théorème PBR, établissant que les états quantiques agissent comme des propriétés physiques mesurables. Les physiciens doivent désormais soit admettre une réalité objective déconcertante, soit renoncer complètement à la réalité objective.",
+      "heading_de": "Das finale Theorem",
+      "body_de": "Matthew Pusey, Jonathan Barrett und Terry Rudolph stellten 2012 ein Theorem vor, das die Vorstellung ausschloss, Quantenzustände spiegelten bloß unvollständiges Wissen wider. Labortests bestätigten das PBR-Theorem und wiesen nach, dass Quantenzustände wie erfassbare physikalische Eigenschaften wirken. Physiker müssen nun entweder eine bizarre objektive Realität akzeptieren oder die objektive Realität vollends aufgeben.",
+      "heading_es": "El teorema definitivo",
+      "body_es": "Matthew Pusey, Jonathan Barrett y Terry Rudolph presentaron en 2012 un teorema que descartaba la idea de que los estados cuánticos solo reflejan un conocimiento incompleto. Pruebas de laboratorio validaron el teorema PBR, estableciendo que los estados cuánticos actúan como propiedades físicas medibles. Los físicos deben ahora aceptar una realidad objetiva insólita o renunciar por completo a la realidad objetiva."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/829/1080/1920",
+    "url": "https://images.unsplash.com/photo-1437240443155-612416af4d5a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Drew Hays",
+    "author": "Drew",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0",
+    "wide": "https://images.unsplash.com/photo-1437240443155-612416af4d5a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@dhproductions?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -76,6 +102,21 @@
       "Xem lại các nguyên lý cốt lõi của sự chồng chập lượng tử (*quantum superposition*) và sự suy sụp hàm sóng (*wave function collapse*).",
       "Nghiên cứu cách định lý PBR loại bỏ cách giải thích về tri thức của các trạng thái lượng tử.",
       "Đánh giá xem thế giới quan của bạn nghiêng về một thực tại siêu thực hay một vũ trụ chủ quan."
+    ],
+    "fr": [
+      "Revoir les principes fondamentaux de la superposition quantique et de l'effondrement de la fonction d'onde.",
+      "Examiner comment le théorème PBR élimine l'interprétation des états quantiques fondée sur la simple connaissance.",
+      "Déterminer si votre vision du monde privilégie une réalité surréaliste ou un univers subjectif."
+    ],
+    "de": [
+      "Wiederhole die Kernprinzipien von Quantensuperposition und Kollaps der Wellenfunktion.",
+      "Untersuche, wie das PBR-Theorem die Wissensinterpretation von Quantenzuständen widerlegt.",
+      "Bewerte, ob dein Weltbild eine surreale Realität oder ein subjektives Universum begünstigt."
+    ],
+    "es": [
+      "Repasar los principios fundamentales de la superposición cuántica y el colapso de la función de onda.",
+      "Examinar cómo el teorema PBR descarta la interpretación del conocimiento incompleto sobre los estados cuánticos.",
+      "Evaluar si su visión del mundo se inclina por una realidad insólita o por un universo subjetivo."
     ]
   },
   "coverCandidates": [
@@ -112,9 +153,77 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "objective reality": "The concept that physical things exist and possess specific traits independent of whether anyone observes them.",
+      "intrinsic properties": "Inherent physical characteristics belonging naturally to an object, such as its exact location or speed.",
+      "quantum physics": "The branch of physics exploring matter and energy at the fundamental atomic and subatomic scale.",
+      "quantum mechanics": "A mathematical theory describing the behavior and probabilistic nature of microscopic matter and energy.",
+      "wave function": "A mathematical equation describing the probabilities of finding a quantum particle in specific states.",
+      "thought experiment": "A hypothetical scenario analyzed in the mind to explore consequences without performing an immediate physical test.",
+      "locality": "The principle that an object is influenced directly only by its immediate surroundings.",
+      "pbr theorem": "A theoretical proof showing that quantum states correspond to real physical properties rather than mere statistical ignorance.",
+      "quantum states": "Mathematical descriptions containing all physical information and measurable possibilities of a quantum system.",
+      "quantum superposition": "The ability of a quantum particle to exist in multiple potential configurations simultaneously until observed.",
+      "wave function collapse": "The reduction of multiple probabilistic quantum possibilities to a single definite physical outcome upon measurement."
+    },
+    "vi": {
+      "định lý pbr": "Định lý khẳng định trạng thái lượng tử là thực tại vật lý khách quan, không phải tri thức.",
+      "hàm sóng": "Công cụ toán học biểu diễn xác suất đo được các kết quả của một hệ lượng tử.",
+      "tính cục bộ": "Nguyên lý cho rằng vật thể chỉ chịu ảnh hưởng trực tiếp từ môi trường lân cận nó.",
+      "tính quyết định": "Nguyên lý cho rằng mọi trạng thái tương lai đều được định đoạt chắc chắn từ quá khứ.",
+      "nội tại": "Tính chất vốn có của vật thể, tồn tại sẵn mà không phụ thuộc vào việc quan sát.",
+      "siêu thực": "Bản chất kỳ lạ, vượt xa logic thông thường của thế giới vật lý lượng tử.",
+      "thực tại": "Thế giới vật chất thực sự tồn tại khách quan bên ngoài ý thức con người.",
+      "khách quan": "Đặc tính tồn tại độc lập, không chịu ảnh hưởng từ ý thức hay hành động quan sát.",
+      "chủ quan": "Phụ thuộc vào người quan sát, không có tính chất thực tế nào tồn tại độc lập.",
+      "lượng tử": "Quy mô vi mô của vật chất với các tính chất vật lý gián đoạn và xác suất."
+    },
+    "fr": {
+      "réalité objective": "Principe affirmant que le monde physique existe indépendamment de la conscience et de l'observation humaine.",
+      "propriétés intrinsèques": "Caractéristiques fondamentales appartenant en propre à un objet, sans dépendre du regard d'un observateur extérieur.",
+      "mécanique quantique": "Discipline de la physique étudiant le comportement des particules et du rayonnement à l'échelle atomique.",
+      "fonction d'onde": "Entité mathématique quantique permettant de déterminer les probabilités d'obtenir différents résultats lors d'une mesure.",
+      "expérience de pensée": "Raisonnement logique explorant les conséquences d'une hypothèse théorique sans recourir à un test expérimental concret.",
+      "localité": "Règle physique interdisant à deux objets éloignés d'interagir plus vite que la vitesse de la lumière.",
+      "hypothèses einsteiniennes": "Conceptions d'Einstein supposant un univers gouverné simultanément par le réalisme physique et le principe de localité.",
+      "théorème pbr": "Résultat théorique établissant que l'état quantique correspond à une réalité physique et non à une ignorance.",
+      "états quantiques": "Descriptions mathématiques exhaustives de l'ensemble des caractéristiques physiques observables d'un système quantique.",
+      "superposition quantique": "Capacité d'un objet quantique à combiner simultanément plusieurs états distincts avant toute opération de mesure."
+    },
+    "de": {
+      "objektive realität": "Die Existenz einer vom Beobachter unabhängigen Welt mit festen physikalischen Eigenschaften.",
+      "quantenphysik": "Teilgebiet der Physik, das das Verhalten von Materie und Strahlung auf kleinsten Skalen erforscht.",
+      "quantenmechanik": "Physikalische Theorie zur Beschreibung von Phänomenen auf atomarer Ebene mithilfe von Wahrscheinlichkeiten.",
+      "wellenfunktion": "Mathematischer Ausdruck, der die Wahrscheinlichkeiten für mögliche Messergebnisse eines Quantensystems beschreibt.",
+      "gedankenexperiment": "Theoretisches Experiment zur Veranschaulichung oder logischen Überprüfung physikalischer Annahmen ohne reale Versuchsdurchführung.",
+      "lokalität": "Prinzip, nach dem Ereignisse nur durch ihre unmittelbare Umgebung und nicht mit Überlichtgeschwindigkeit beeinflusst werden können.",
+      "quantenzustände": "Vollständige physikalische Beschreibung der Eigenschaften und Verhaltensmöglichkeiten eines quantenmechanischen Systems.",
+      "pbr-theorem": "Quantenphysikalischer Lehrsatz, der belegt, dass Quantenzustände reale physikalische Eigenschaften sind und nicht bloß Wissen darstellen.",
+      "quantensuperposition": "Zustand, in dem sich ein Teilchen gleichzeitig in einer Überlagerung mehrerer möglicher Zustände befindet.",
+      "kollaps der wellenfunktion": "Übergang eines Systems aus einer quantenmechanischen Überlagerung in einen eindeutig gemessenen Zustand bei einer Messung.",
+      "wissensinterpretation": "Sichtweise, nach der Quantenzustände lediglich unvollständiges Wissen über verborgene Eigenschaften abbilden."
+    },
+    "es": {
+      "física cuántica": "Disciplina que estudia el comportamiento de la materia y la energía a escalas subatómicas.",
+      "realidad objetiva": "Existencia del mundo físico con propiedades intrínsecas e independientes de la mente o de la observación.",
+      "mecánica cuántica": "Marco teórico que describe la física a escala microscópica en términos de probabilidades en vez de certidumbres.",
+      "función de onda": "Entidad matemática que describe el abanico de probabilidades para los posibles resultados de un sistema cuántico.",
+      "experimento mental": "Simulación conceptual estructurada que permite analizar las consecuencias lógicas de una teoría científica sin ejecutarla físicamente.",
+      "hipótesis einsteinianas": "Supuestos de Albert Einstein que defendían el determinismo clásico y la existencia de propiedades físicas locales independientes.",
+      "localidad": "Principio según el cual un objeto solo puede ser influido por su entorno espacial y temporal inmediato.",
+      "estados cuánticos": "Configuraciones matemáticas que encapsulan toda la información física y las probabilidades medibles de una partícula.",
+      "teorema pbr": "Demostración de 2012 que establece que la función de onda representa una propiedad física real y medible.",
+      "superposición cuántica": "Fenómeno en el cual una entidad cuántica existe en múltiples configuraciones potenciales simultáneamente antes de ser medida."
+    }
   }
 }

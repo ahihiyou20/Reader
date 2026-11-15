@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Air Ambulance Services Rethink Medicine in the Sky",
-    "vi": "Dịch vụ cứu thương hàng không đổi mới y tế trên không"
+    "vi": "Dịch vụ cứu thương hàng không đổi mới y tế trên không",
+    "fr": "Les ambulances aériennes repensent la médecine du ciel",
+    "de": "Flugrettungsdienste überdenken die Medizin in der Luft",
+    "es": "Las ambulancias aéreas replantean la medicina en el cielo"
   },
   "hook": {
     "en": "Rural healthcare strains across the country as local hospitals close and demand for emergency flights surges. One nonprofit air ambulance provider in Maine tests new strategies to retain staff and keep critical care airborne when ground transit fails {source}.",
-    "vi": "Y tế nông thôn chịu nhiều áp lực khi các bệnh viện địa phương đóng cửa và nhu cầu bay cấp cứu tăng cao. Một đơn vị cứu thương hàng không phi lợi nhuận tại Maine thử nghiệm các chiến lược mới để giữ chân nhân sự và duy trì chăm sóc y tế trên không."
+    "vi": "Y tế nông thôn chịu nhiều áp lực khi các bệnh viện địa phương đóng cửa và nhu cầu bay cấp cứu tăng cao. Một đơn vị cứu thương hàng không phi lợi nhuận tại Maine thử nghiệm các chiến lược mới để giữ chân nhân sự và duy trì chăm sóc y tế trên không.",
+    "fr": "Le système de santé rural s'essouffle à travers le pays sous l'effet des fermetures d'hôpitaux de proximité et de l'explosion des demandes de vols d'urgence. Dans le Maine, un service d'ambulance aérienne à but non lucratif teste de nouvelles stratégies pour fidéliser son personnel et maintenir les soins critiques en vol lorsque le transport terrestre fait défaut {source}.",
+    "de": "Die ländliche Gesundheitsversorgung im ganzen Land gerät zunehmend unter Druck, da örtliche Krankenhäuser schließen und der Bedarf an Notfallflügen rasant steigt. Ein gemeinnütziger Flugrettungsanbieter in Maine erprobt neue Strategien, um Personal zu binden und die intensivmedizinische Versorgung in der Luft aufrechtzuerhalten, wenn der Bodentransport scheitert {source}.",
+    "es": "La atención médica rural se encuentra bajo una intensa presión en todo el país debido al cierre de hospitales locales y al aumento en la demanda de vuelos de emergencia. Un proveedor sin fines de lucro de ambulancias aéreas en Maine pone a prueba nuevas estrategias para retener al personal y mantener los cuidados críticos en el aire cuando el transporte terrestre falla {source}."
   },
   "sections": [
     {
       "heading_en": "Rising Demand",
       "heading_vi": "Nhu cầu gia tăng",
       "body_en": "Demand for medical flights in Maine doubled since 2015 with crews flying 3,031 missions in 2025. Across the country, air medical services fill gaps left as rural hospitals close or reduce unprofitable services. As ground ambulance stations struggle to meet needs, flight clinicians see more patients every day {source}.",
-      "body_vi": "Nhu cầu chuyến bay y tế tại Maine tăng gấp đôi kể từ năm 2015 với 3.031 chuyến trong năm 2025. Các dịch vụ y tế hàng không bù đắp khoảng trống do bệnh viện nông thôn đóng cửa. Khi trạm cứu thương mặt đất chật vật, nhân viên y tế bay xử lý nhiều ca bệnh hơn."
+      "body_vi": "Nhu cầu chuyến bay y tế tại Maine tăng gấp đôi kể từ năm 2015 với 3.031 chuyến trong năm 2025. Các dịch vụ y tế hàng không bù đắp khoảng trống do bệnh viện nông thôn đóng cửa. Khi trạm cứu thương mặt đất chật vật, nhân viên y tế bay xử lý nhiều ca bệnh hơn.",
+      "heading_fr": "Une demande croissante",
+      "body_fr": "La demande de vols sanitaires dans le Maine a doublé depuis 2015, les équipages ayant accompli 3 031 missions en 2025. À l'échelle nationale, les services médicaux aériens comblent les manques créés par la fermeture d'hôpitaux ruraux ou la réduction de prestations déficitaires. Alors que les services ambulanciers terrestres peinent à répondre aux besoins, les soignants navigants prennent en charge davantage de patients chaque jour {source}.",
+      "heading_de": "Steigende Nachfrage",
+      "body_de": "Die Nachfrage nach Ambulanzflügen in Maine hat sich seit 2015 verdoppelt; die Besatzungen absolvierten im Jahr 2025 insgesamt 3.031 Einsätze. Landesweit schließen Luftrettungsdienste Versorgungslücken, die durch die Schließung ländlicher Krankenhäuser oder die Streichung unrentabler Angebote entstehen. Da bodengebundene Rettungswachen kaum noch hinterherkommen, versorgen medizinische Flugteams täglich mehr Patienten {source}.",
+      "heading_es": "Demanda en aumento",
+      "body_es": "La demanda de vuelos médicos en Maine se duplicó desde 2015, con tripulaciones que realizaron 3,031 misiones en 2025. En todo el país, los servicios médicos aéreos cubren los vacíos que surgen conforme los hospitales rurales cierran o recortan servicios no rentables. A medida que las estaciones de ambulancias terrestres tienen dificultades para satisfacer las necesidades, el personal clínico de vuelo atiende a más pacientes cada día {source}."
     },
     {
       "heading_en": "Staffing Pressures",
       "heading_vi": "Áp lực nhân sự",
       "body_en": "Air medical teams face unique stresses including dangerous conditions, long shifts, and low pay. Nearly a quarter of ground-based emergency medical workers leave the field annually. LifeFlight of Maine previously retained only 60% to 70% of its workers due to the heavy toll of seeing people on their worst day {source}.",
-      "body_vi": "Các đội ngũ y tế hàng không đối mặt với căng thẳng đặc thù như điều kiện nguy hiểm, ca trực kéo dài và thu nhập thấp. Gần một phần tư nhân viên y tế mặt đất rời ngành mỗi năm trước gánh nặng tâm lý lớn."
+      "body_vi": "Các đội ngũ y tế hàng không đối mặt với căng thẳng đặc thù như điều kiện nguy hiểm, ca trực kéo dài và thu nhập thấp. Gần một phần tư nhân viên y tế mặt đất rời ngành mỗi năm trước gánh nặng tâm lý lớn.",
+      "heading_fr": "Tensions sur les effectifs",
+      "body_fr": "Les équipes médicales aéroportées font face à des facteurs de stress singuliers, notamment des conditions périlleuses, des gardes prolongées et de faibles rémunérations. Près d'un quart des professionnels des urgences médicales terrestres quittent la profession chaque année. LifeFlight of Maine ne parvenait auparavant à conserver que 60 % à 70 % de ses effectifs, en raison du lourd tribut psychologique qu'exige la confrontation quotidienne à la détresse humaine la plus aiguë {source}.",
+      "heading_de": "Personeller Druck",
+      "body_de": "Flugrettungsteams sind besonderen Belastungen ausgesetzt, darunter gefährliche Einsatzbedingungen, lange Schichten und geringe Bezahlung. Fast ein Viertel der bodengebundenen Notfallrettungskräfte verlässt jährlich die Branche. LifeFlight of Maine konnte früher nur 60% bis 70% der Beschäftigten halten, da es emotional schwer wiegt, Menschen an ihren schwersten Tagen zu erleben {source}.",
+      "heading_es": "Presiones de personal",
+      "body_es": "Los equipos médicos aéreos se enfrentan a factores de estrés singulares, entre ellos condiciones peligrosas, turnos prolongados y salarios bajos. Casi una cuarta parte de los trabajadores de emergencias médicas terrestres abandona el sector cada año. LifeFlight of Maine retenía anteriormente solo entre el 60% y el 70% de su personal debido al enorme desgaste emocional de atender a personas en sus peores momentos {source}."
     },
     {
       "heading_en": "Innovative Solutions",
       "heading_vi": "Giải pháp cải tiến",
       "body_en": "To combat retention problems, the nonprofit instituted an eight-month orientation program and raised paramedic pay to match flight nurses. The company also hired a full-time mental-health counselor to address post-traumatic stress rates that are five times higher than the national average {source}.",
-      "body_vi": "Để giải quyết vấn đề nhân sự, tổ chức phi lợi nhuận thiết lập chương trình đào tạo kéo dài tám tháng và nâng lương nhân viên y tế ngang bằng điều dưỡng bay. Công ty cũng tuyển dụng cố vấn sức khỏe tâm thần toàn thời gian."
+      "body_vi": "Để giải quyết vấn đề nhân sự, tổ chức phi lợi nhuận thiết lập chương trình đào tạo kéo dài tám tháng và nâng lương nhân viên y tế ngang bằng điều dưỡng bay. Công ty cũng tuyển dụng cố vấn sức khỏe tâm thần toàn thời gian.",
+      "heading_fr": "Des solutions novatrices",
+      "body_fr": "Pour remédier aux problèmes de fidélisation, l'organisation à but non lucratif a instauré un programme d'intégration de huit mois et revalorisé le salaire des ambulanciers paramédicaux pour l'aligner sur celui des infirmiers de bord. L'organisme a également recruté un conseiller en santé mentale à temps plein afin de traiter des taux de stress post-traumatique cinq fois supérieurs à la moyenne nationale {source}.",
+      "heading_de": "Innovative Lösungen",
+      "body_de": "Um die Abwanderung einzudämmen, führte die gemeinnützige Organisation ein achtmonatiges Einarbeitungsprogramm ein und glich das Gehalt der Notfallsanitäter an das der Flugkrankenpflegenden an. Zudem stellte das Unternehmen eine Vollzeitkraft für psychologische Beratung ein, um Raten posttraumatischer Belastungsstörungen zu begegnen, die fünfmal höher liegen als der landesweite Durchschnitt {source}.",
+      "heading_es": "Soluciones innovadoras",
+      "body_es": "Para combatir los problemas de retención, la organización sin fines de lucro implementó un programa de orientación de ocho meses e incrementó el sueldo de los paramédicos para igualarlo al de los enfermeros de vuelo. La entidad también contrató a un consejero de salud mental a tiempo completo para abordar tasas de estrés postraumático que son cinco veces más altas que el promedio nacional {source}."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/839/1080/1920",
+    "url": "https://images.unsplash.com/photo-1437915015400-137312b61975?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Abigail  Keenan",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/8jqna7aA-vs"
+    "sourceUrl": "https://unsplash.com/photos/8jqna7aA-vs",
+    "wide": "https://images.unsplash.com/photo-1437915015400-137312b61975?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@akeenster?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -75,6 +101,21 @@
       "Lên lịch kiểm tra sức khỏe tinh thần với đội ngũ.",
       "Xem xét cơ cấu đãi ngộ hiện tại để đảm bảo công bằng.",
       "Tạo mạng lưới hỗ trợ đồng đẳng cho các vị trí áp lực cao."
+    ],
+    "fr": [
+      "Planifiez dès aujourd'hui un point sur la santé mentale avec votre équipe.",
+      "Révisez les grilles de rémunération actuelles pour garantir l'équité.",
+      "Créez un réseau de soutien par les pairs pour les postes à fort niveau de stress."
+    ],
+    "de": [
+      "Plane heute einen Check-in zur psychischen Gesundheit mit deinem Team.",
+      "Bestehende Vergütungsstrukturen überprüfen, um Fairness zu gewährleisten.",
+      "Ein Peer-Support-Netzwerk für besonders belastende Rollen aufbauen."
+    ],
+    "es": [
+      "Programe hoy una sesión de control de salud mental con su equipo.",
+      "Revise las estructuras de compensación actuales para garantizar la equidad.",
+      "Cree una red de apoyo entre compañeros para las funciones de alto estrés."
     ]
   },
   "coverCandidates": [
@@ -111,9 +152,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "air ambulance": "An aircraft equipped with specialized medical staff and equipment to transport critically ill or injured patients.",
+      "critical care": "Specialized, intensive medical treatment given to patients experiencing life-threatening injuries or illnesses.",
+      "ground transit": "Emergency medical transport conducted on roads using traditional ambulances.",
+      "air medical services": "Healthcare operations providing emergency treatment and transportation to patients aboard aircraft.",
+      "flight clinicians": "Healthcare providers, such as nurses and paramedics, who treat patients aboard medical flights.",
+      "emergency medical workers": "First responders and healthcare professionals providing urgent medical care and transport.",
+      "lifeflight of maine": "A nonprofit air ambulance organization providing emergency critical care flights across Maine.",
+      "paramedic": "A healthcare provider trained to deliver advanced emergency medical care to critically ill patients.",
+      "flight nurses": "Registered nurses trained to deliver advanced emergency and critical care aboard medical aircraft.",
+      "mental-health counselor": "A licensed professional supporting workers dealing with psychological distress, trauma, and burnout.",
+      "post-traumatic stress": "A psychological condition caused by exposure to traumatic, life-threatening, or deeply distressing events."
+    },
+    "vi": {
+      "cứu thương": "Hoạt động hỗ trợ và vận chuyển người bệnh trong tình huống cấp cứu khẩn cấp.",
+      "bay cấp cứu": "Chuyến bay vận chuyển người bệnh cần can thiệp y tế khẩn cấp đến bệnh viện.",
+      "phi lợi nhuận": "Mô hình hoạt động phục vụ cộng đồng, không chia lợi nhuận cho các chủ sở hữu.",
+      "maine": "Tiểu bang tại vùng đông bắc nước Mỹ nơi tổ chức dịch vụ bay y tế.",
+      "đặc thù": "Tính chất riêng biệt và khác biệt của môi trường làm việc trên không.",
+      "ca trực": "Khoảng thời gian làm nhiệm vụ liên tục của nhân viên y tế theo lịch.",
+      "rời ngành": "Việc nhân viên bỏ hẳn công việc y tế để chuyển sang nghề khác.",
+      "điều dưỡng bay": "Nhân sự y tế chuyên trách chăm sóc người bệnh trên các chuyến bay cấp cứu.",
+      "đãi ngộ": "Chế độ tiền lương và các quyền lợi kinh tế dành cho người lao động.",
+      "đồng đẳng": "Sự hỗ trợ lẫn nhau giữa những người làm cùng vị trí hoặc hoàn cảnh."
+    },
+    "fr": {
+      "ambulance aérienne": "Service d'aéronef médicalisé pour transporter d'urgence des patients critiques.",
+      "soins critiques": "Prise en charge médicale intensive de patients présentant des défaillances vitales aiguës.",
+      "transport terrestre": "Acheminement des blessés ou malades par ambulance routière traditionnelle.",
+      "vols sanitaires": "Missions aéroportées assurant l'évacuation rapide de patients sous surveillance médicale continue.",
+      "services médicaux aériens": "Structures spécialisées dans les évacuations d'urgence et la réanimation en vol.",
+      "soignants navigants": "Professionnels de santé formés pour intervenir et dispenser des soins à bord d'aéronefs.",
+      "lifeflight of maine": "Organisation caritative assurant l'évacuation sanitaire par hélicoptère et avion dans le Maine.",
+      "ambulanciers paramédicaux": "Praticiens préhospitaliers habilités à effectuer des actes médicaux d'urgence avancés.",
+      "infirmiers de bord": "Infirmiers spécialisés dans la réanimation et la prise en charge clinique en vol.",
+      "stress post-traumatique": "Trouble anxieux sévère déclenché par l'exposition à des événements traumatisants ou dramatiques."
+    },
+    "de": {
+      "flugrettungsdienste": "Organisationen, die Patienten mit Rettungsflugzeugen oder Hubschraubern transportieren und notfallmedizinisch versorgen.",
+      "intensivmedizinische versorgung": "Umfassende medizinische Betreuung und Überwachung lebensbedrohlich erkrankter oder verletzter Patienten während des Transports.",
+      "bodentransport": "Beförderung von Notfallpatienten auf der Straße mittels Rettungs- oder Krankenwagen.",
+      "ambulanzflügen": "Medizinisch begleitete Transporte von Patienten per Flugzeug oder Helikopter zwischen Krankenhäusern.",
+      "luftrettungsdienste": "Notfallmedizinische Organisationen, die Patienten auf dem Luftweg transportieren und versorgen.",
+      "bodengebundene rettungswachen": "Stationäre Stützpunkte, von denen aus Einsatzfahrzeuge zur bodengebundenen Notfallrettung ausrücken.",
+      "medizinische flugteams": "Einsatzbesatzungen aus Fachpflegekräften und Sanitätern an Bord von Rettungsflugzeugen.",
+      "notfallrettungskräfte": "Einsatzpersonal des Rettungsdienstes, das akute medizinische Erstversorgung vor Ort leistet.",
+      "lifeflight of maine": "Gemeinnützige Organisation für Luftrettungsdienste im US-Bundesstaat Maine.",
+      "notfallsanitäter": "Fachpersonal im Rettungsdienst für eigenständige präklinische Notfallversorgung und medizinische Maßnahmen.",
+      "flugkrankenpflegenden": "Auf Flug- und Intensivmedizin spezialisierte Pflegefachpersonen an Bord von Rettungsflugzeugen.",
+      "posttraumatischer belastungsstörungen": "Verzögerte psychische Reaktionen auf extrem belastende oder traumatisierende Erlebnisse im Einsatz."
+    },
+    "es": {
+      "ambulancias aéreas": "Aeronaves equipadas para brindar asistencia médica avanzada y trasladar a pacientes en estado crítico.",
+      "maine": "Estado del noreste de Estados Unidos con amplias zonas rurales que dificultan el traslado terrestre rápido.",
+      "cuidados críticos": "Atención médica continua y de alta complejidad para personas con riesgo inminente de perder la vida.",
+      "servicios médicos aéreos": "Unidades de rescate que utilizan helicópteros y aviones para evacuar y estabilizar pacientes graves.",
+      "lifeflight of maine": "Organización sin fines de lucro encargada de las evacuaciones médicas por vía aérea en Maine.",
+      "desgaste emocional": "Fatiga psicológica provocada por la continua exposición al sufrimiento y dolor ajenos durante el trabajo.",
+      "paramédicos": "Especialistas en emergencias prehospitalarias capacitados para estabilizar a heridos y pacientes graves.",
+      "enfermeros de vuelo": "Profesionales de enfermería con entrenamiento especializado para brindar cuidados intensivos a bordo de aeronaves.",
+      "estrés postraumático": "Trastorno de salud mental provocado por presenciar o experimentar eventos profundamente angustiantes o traumáticos.",
+      "estructuras de compensación": "Políticas salariales y de beneficios económicos que una empresa establece para remunerar a sus empleados."
+    }
   }
 }

@@ -11,47 +11,86 @@
   ],
   "title": {
     "en": "Why unfinished tasks nag you, and what stops it",
-    "vi": "Vì sao việc dang dở cứ ám ảnh bạn, và điều gì làm nó dừng lại"
+    "vi": "Vì sao việc dang dở cứ ám ảnh bạn, và điều gì làm nó dừng lại",
+    "fr": "Pourquoi les tâches inachevées nous obsèdent et comment y remédier",
+    "de": "Warum unerledigte Aufgaben an dir nagen und was dagegen hilft",
+    "es": "Por qué te rondan las tareas pendientes y qué logra acallarlas"
   },
   "hook": {
     "en": "An unfinished task keeps tugging at your attention long after you stopped working on it. Psychologists have known this for nearly a century. A 2011 series of studies found something practical: [p:you do not have to finish the task to quiet it]. Making a specific plan for it was enough.",
-    "vi": "Một việc dang dở cứ kéo sự chú ý của bạn rất lâu sau khi bạn đã thôi làm nó. Các nhà tâm lý học biết điều này gần một thế kỷ nay. Một loạt nghiên cứu năm 2011 tìm ra điều thiết thực: [p:bạn không cần hoàn thành việc đó mới làm nó yên]. Chỉ cần lập một kế hoạch cụ thể cho nó là đủ."
+    "vi": "Một việc dang dở cứ kéo sự chú ý của bạn rất lâu sau khi bạn đã thôi làm nó. Các nhà tâm lý học biết điều này gần một thế kỷ nay. Một loạt nghiên cứu năm 2011 tìm ra điều thiết thực: [p:bạn không cần hoàn thành việc đó mới làm nó yên]. Chỉ cần lập một kế hoạch cụ thể cho nó là đủ.",
+    "fr": "Une tâche inachevée ne cesse de solliciter votre attention bien après que vous avez cessé d'y travailler. Les psychologues le savent depuis près d'un siècle. Une série d'études menée en 2011 a mis en lumière un résultat pratique : [p:il n'est pas nécessaire de terminer la tâche pour apaiser l'esprit]. Établir un plan précis s'avère suffisant.",
+    "de": "Eine unvollendete Aufgabe bindet deine Aufmerksamkeit noch lange, nachdem du aufgehört hast, daran zu arbeiten. Psychologen wissen das seit fast einem Jahrhundert. Eine Studienreihe aus dem Jahr 2011 lieferte ein praktisches Ergebnis: [p:du musst die Aufgabe nicht beenden, um sie zum Schweigen zu bringen]. Ein konkreter Plan dafür genügte bereits.",
+    "es": "Una tarea inconclusa sigue reclamando tu atención mucho después de que hayas dejado de trabajar en ella. La psicología lo sabe desde hace casi un siglo. Una serie de estudios de 2011 halló algo muy práctico: [p:no hace falta terminar la tarea para acallarla]. Elaborar un plan concreto fue suficiente."
   },
   "sections": [
     {
       "heading_en": "A waiter who forgot",
       "heading_vi": "Người phục vụ bàn quên mất",
       "body_en": "The idea began with an observation. The psychologist Kurt Lewin noticed that a waiter remembered orders that were still unpaid, but could recall almost nothing about them once everyone had paid. Bluma Zeigarnik then designed experiments to explain it and published her report in 1927 {wiki-zeigarnik}. The result is called the Zeigarnik effect: people remember unfinished or interrupted tasks better than completed ones.",
-      "body_vi": "Ý tưởng bắt đầu từ một quan sát. Nhà tâm lý học Kurt Lewin nhận thấy một người phục vụ bàn nhớ rõ các order chưa thanh toán, nhưng gần như không nhớ gì về chúng khi mọi người đã trả tiền. Bluma Zeigarnik sau đó thiết kế các thí nghiệm để giải thích và công bố báo cáo năm 1927 {wiki-zeigarnik}. Kết quả được gọi là hiệu ứng Zeigarnik: người ta nhớ những việc dang dở hoặc bị gián đoạn tốt hơn những việc đã xong."
+      "body_vi": "Ý tưởng bắt đầu từ một quan sát. Nhà tâm lý học Kurt Lewin nhận thấy một người phục vụ bàn nhớ rõ các order chưa thanh toán, nhưng gần như không nhớ gì về chúng khi mọi người đã trả tiền. Bluma Zeigarnik sau đó thiết kế các thí nghiệm để giải thích và công bố báo cáo năm 1927 {wiki-zeigarnik}. Kết quả được gọi là hiệu ứng Zeigarnik: người ta nhớ những việc dang dở hoặc bị gián đoạn tốt hơn những việc đã xong.",
+      "heading_fr": "Un serveur qui oubliait",
+      "body_fr": "L'idée est née d'une observation. Le psychologue Kurt Lewin a remarqué qu'un serveur se souvenait des commandes encore impayées, mais ne pouvait presque plus rien en rappeler dès lors que chaque client avait réglé l'addition. Bluma Zeigarnik a ensuite conçu des expériences pour élucider ce phénomène et a publié ses conclusions en 1927 {wiki-zeigarnik}. Ce résultat est connu sous le nom d'effet Zeigarnik : on retient bien mieux les tâches inachevées ou interrompues que celles menées à terme.",
+      "heading_de": "Ein Kellner, der vergaß",
+      "body_de": "Die Idee nahm ihren Anfang mit einer Beobachtung. Dem Psychologen Kurt Lewin fiel auf, dass sich ein Kellner an noch unbezahlte Bestellungen erinnerte, aber kaum noch etwas darüber wusste, sobald alle bezahlt hatten. Bluma Zeigarnik entwarf daraufhin Experimente, um dies zu erklären, und veröffentlichte ihren Bericht im Jahr 1927 {wiki-zeigarnik}. Das Ergebnis wird als Zeigarnik-Effekt bezeichnet: Menschen erinnern sich besser an unerledigte oder unterbrochene Aufgaben als an abgeschlossene.",
+      "heading_es": "Un camarero que olvidó",
+      "body_es": "La idea comenzó con una observación. El psicólogo Kurt Lewin notó que un camarero recordaba los pedidos aún impagos, pero apenas podía evocar nada sobre ellos una vez que todos habían pagado. Bluma Zeigarnik diseñó entonces experimentos para explicarlo y publicó su informe en 1927 {wiki-zeigarnik}. El resultado se denomina efecto Zeigarnik: las personas recuerdan mejor las tareas inconclusas o interrumpidas que las ya terminadas."
     },
     {
       "heading_en": "Tension that waits for completion",
       "heading_vi": "Sức căng chờ đến khi hoàn thành",
       "body_en": "Lewin's field theory offered an account. Starting a task creates a task-specific tension that makes related contents easier to reach in memory. Finishing releases the tension, while an interruption leaves it in place {wiki-zeigarnik}. A related finding by Zeigarnik's colleague Maria Ovsiankina is the urge to resume a task that was interrupted. The standard assumption that followed was that an unfinished goal stays active in your mind until you complete it.",
-      "body_vi": "Lý thuyết trường của Lewin đưa ra một cách giải thích. Bắt đầu một việc tạo ra sức căng riêng cho việc đó, khiến các nội dung liên quan dễ truy xuất trong trí nhớ hơn. Hoàn thành thì sức căng được giải tỏa, còn gián đoạn thì để nó lại {wiki-zeigarnik}. Một phát hiện liên quan của đồng nghiệp Maria Ovsiankina là thôi thúc quay lại làm tiếp việc bị gián đoạn. Giả định chuẩn sau đó là mục tiêu dang dở vẫn hoạt động trong đầu bạn cho đến khi bạn hoàn thành nó."
+      "body_vi": "Lý thuyết trường của Lewin đưa ra một cách giải thích. Bắt đầu một việc tạo ra sức căng riêng cho việc đó, khiến các nội dung liên quan dễ truy xuất trong trí nhớ hơn. Hoàn thành thì sức căng được giải tỏa, còn gián đoạn thì để nó lại {wiki-zeigarnik}. Một phát hiện liên quan của đồng nghiệp Maria Ovsiankina là thôi thúc quay lại làm tiếp việc bị gián đoạn. Giả định chuẩn sau đó là mục tiêu dang dở vẫn hoạt động trong đầu bạn cho đến khi bạn hoàn thành nó.",
+      "heading_fr": "Une tension en attente d'accomplissement",
+      "body_fr": "La théorie du champ de Lewin a fourni une première explication. Entreprendre une tâche génère une tension psychologique propre à celle-ci, facilitant l'accès en mémoire aux éléments qui lui sont liés. Mener la tâche à terme libère cette tension, tandis qu'une interruption la laisse intacte {wiki-zeigarnik}. Une découverte connexe de Maria Ovsiankina, collègue de Zeigarnik, met en évidence le besoin irrépressible de reprendre une activité interrompue. L'hypothèse standard qui en a découlé postulait qu'un objectif inachevé demeure actif dans l'esprit jusqu'à son accomplissement complet.",
+      "heading_de": "Spannung, die auf Vollendung wartet",
+      "body_de": "Lewins Feldtheorie lieferte eine Erklärung. Der Beginn einer Aufgabe erzeugt eine aufgabenspezifische Spannung, die zugehörige Inhalte im Gedächtnis leichter abrufbar macht. Die Erledigung löst die Spannung auf, während eine Unterbrechung sie aufrechterhält {wiki-zeigarnik}. Eine verwandte Erkenntnis von Zeigarniks Kollegin Maria Ovsiankina ist der Drang, eine unterbrochene Aufgabe wiederaufzunehmen. Die darauf folgende Standardannahme war, dass ein unerledigtes Ziel so lange in deinem Kopf aktiv bleibt, bis du es erreichst.",
+      "heading_es": "Tensión que espera completarse",
+      "body_es": "La teoría del campo de Lewin ofreció una explicación. Iniciar una tarea genera una tensión específica que facilita el acceso a los recuerdos vinculados a ella. Concluirla libera la tensión, mientras que una interrupción la deja intacta {wiki-zeigarnik}. Un hallazgo afín de Maria Ovsiankina, colega de Zeigarnik, es el impulso de reanudar una tarea interrumpida. El supuesto habitual a partir de entonces fue que un objetivo inconcluso permanece activo en la mente hasta que se completa."
     },
     {
       "heading_en": "What unfinished goals do to attention",
       "heading_vi": "Mục tiêu dang dở tác động thế nào lên sự chú ý",
       "body_en": "E. J. Masicampo and Roy Baumeister tested how far this goes. In their studies, activating an unfulfilled goal caused intrusive thoughts during an unrelated reading task, made goal-related words easier to bring to mind, and led to poorer performance on an unrelated anagram task {masicampo-2011}. So an open loop does more than sit in the background. It takes a share of the mental resources you need for whatever you are doing now.",
-      "body_vi": "E. J. Masicampo và Roy Baumeister kiểm tra xem điều này đi xa đến đâu. Trong các nghiên cứu của họ, việc kích hoạt một mục tiêu chưa hoàn thành gây ra những ý nghĩ xâm nhập trong lúc làm một bài đọc không liên quan, khiến các từ gắn với mục tiêu dễ hiện ra hơn, và làm kết quả bài xếp chữ không liên quan tệ đi {masicampo-2011}. Vậy một vòng lặp chưa đóng không chỉ nằm yên ở hậu trường. Nó lấy đi một phần tài nguyên tinh thần mà bạn cần cho việc đang làm."
+      "body_vi": "E. J. Masicampo và Roy Baumeister kiểm tra xem điều này đi xa đến đâu. Trong các nghiên cứu của họ, việc kích hoạt một mục tiêu chưa hoàn thành gây ra những ý nghĩ xâm nhập trong lúc làm một bài đọc không liên quan, khiến các từ gắn với mục tiêu dễ hiện ra hơn, và làm kết quả bài xếp chữ không liên quan tệ đi {masicampo-2011}. Vậy một vòng lặp chưa đóng không chỉ nằm yên ở hậu trường. Nó lấy đi một phần tài nguyên tinh thần mà bạn cần cho việc đang làm.",
+      "heading_fr": "L'impact des objectifs inachevés sur l'attention",
+      "body_fr": "E. J. Masicampo et Roy Baumeister ont voulu mesurer l'ampleur de ce phénomène. Dans leurs recherches, l'activation d'un objectif non atteint provoquait des pensées intrusives lors d'une tâche de lecture non liée, rendait les mots associés à l'objectif plus accessibles à l'esprit et détériorait les performances lors d'une tâche d'anagrammes sans rapport {masicampo-2011}. Ainsi, une boucle ouverte ne se contente pas de sommeiller en arrière-plan : elle accapare une part des ressources cognitives indispensables à ce que vous accomplissez à l'instant présent.",
+      "heading_de": "Was unerledigte Ziele mit der Aufmerksamkeit machen",
+      "body_de": "E. J. Masicampo und Roy Baumeister untersuchten, wie weit dies reicht. In ihren Studien löste die Aktivierung eines unerfüllten Ziels während einer themenfremden Leseaufgabe intrusive Gedanken aus, erleichterte den Abruf zielbezogener Wörter und führte zu schlechteren Leistungen bei einer separaten Anagramm-Aufgabe {masicampo-2011}. Eine offene Schleife tut also mehr, als nur im Hintergrund zu verharren. Sie beansprucht einen Teil der mentalen Ressourcen, die du für das benötigst, was du gerade tust.",
+      "heading_es": "Lo que las metas pendientes le hacen a la atención",
+      "body_es": "E. J. Masicampo y Roy Baumeister pusieron a prueba el alcance de este fenómeno. En sus investigaciones, activar una meta pendiente provocó pensamientos intrusivos durante una lectura no relacionada, facilitó la evocación de palabras asociadas a esa meta y redujo el rendimiento en una prueba de anagramas {masicampo-2011}. Por lo tanto, un bucle abierto hace más que quedarse en segundo plano: acapara una porción de los recursos mentales que necesitas para lo que estés haciendo ahora."
     },
     {
       "heading_en": "The plan that quiets the goal",
       "heading_vi": "Kế hoạch làm mục tiêu lắng xuống",
       "body_en": "The surprise came next. When participants were allowed to formulate specific plans for their unfulfilled goals, [p:the intrusions and the interference disappeared] {masicampo-2011}. The authors predicted this: making a plan contributes to goal pursuit enough to satisfy the mental processes that normally keep a goal alive. Once a plan exists, the drive to attain the goal is suspended, and attention is released for other things. The goal was not completed, only provided for.",
-      "body_vi": "Bất ngờ đến sau đó. Khi người tham gia được phép lập kế hoạch cụ thể cho các mục tiêu chưa hoàn thành, [p:những ý nghĩ xâm nhập và sự cản trở đều biến mất] {masicampo-2011}. Các tác giả đã dự đoán điều này: lập kế hoạch đóng góp đủ cho việc theo đuổi mục tiêu để thỏa mãn các quá trình tinh thần vốn giữ mục tiêu luôn hoạt động. Khi đã có kế hoạch, động lực đạt mục tiêu được tạm gác lại, và sự chú ý được giải phóng cho việc khác. Mục tiêu chưa được hoàn thành, chỉ là đã được lo liệu."
+      "body_vi": "Bất ngờ đến sau đó. Khi người tham gia được phép lập kế hoạch cụ thể cho các mục tiêu chưa hoàn thành, [p:những ý nghĩ xâm nhập và sự cản trở đều biến mất] {masicampo-2011}. Các tác giả đã dự đoán điều này: lập kế hoạch đóng góp đủ cho việc theo đuổi mục tiêu để thỏa mãn các quá trình tinh thần vốn giữ mục tiêu luôn hoạt động. Khi đã có kế hoạch, động lực đạt mục tiêu được tạm gác lại, và sự chú ý được giải phóng cho việc khác. Mục tiêu chưa được hoàn thành, chỉ là đã được lo liệu.",
+      "heading_fr": "Le plan qui apaise l'objectif",
+      "body_fr": "La surprise est venue ensuite. Lorsque les participants ont eu l'occasion d'élaborer des plans précis pour leurs objectifs non réalisés, [p:les intrusions et les interférences ont disparu] {masicampo-2011}. Les auteurs l'avaient anticipé : concevoir un plan participe suffisamment à la poursuite de l'objectif pour satisfaire les processus mentaux qui le maintiennent habituellement en éveil. Dès qu'un plan est établi, l'impulsion visant à atteindre le but est suspendue, libérant ainsi l'attention pour d'autres activités. L'objectif n'était pas achevé, mais simplement pris en charge.",
+      "heading_de": "Der Plan, der das Ziel beruhigt",
+      "body_de": "Die Überraschung folgte als Nächstes. Als die Teilnehmenden konkrete Pläne für ihre unerfüllten Ziele formulieren durften, [p:verschwanden die Intrusionen und die Interferenzen] {masicampo-2011}. Die Autoren hatten dies vorhergesagt: Das Schmieden eines Plans trägt ausreichend zur Zielverfolgung bei, um die mentalen Prozesse zu befriedigen, die ein Ziel normalerweise wachhalten. Sobald ein Plan existiert, wird das Streben nach dem Ziel ausgesetzt und Aufmerksamkeit für andere Dinge freigesetzt. Das Ziel wurde nicht abgeschlossen, es wurde lediglich dafür vorgesorgt.",
+      "heading_es": "El plan que acalla el objetivo",
+      "body_es": "La sorpresa llegó después. Cuando a los participantes se les permitió formular planes específicos para sus metas pendientes, [p:las intrusiones y la interferencia desaparecieron] {masicampo-2011}. Los autores habían previsto esto: trazar un plan contribuye a la búsqueda del objetivo lo suficiente como para satisfacer los procesos mentales que normalmente lo mantienen vivo. Una vez que existe un plan, el impulso por alcanzar la meta queda en suspenso y la atención se libera para otras cosas. El objetivo no se había completado, solo se había previsto."
     },
     {
       "heading_en": "It has to be a real plan",
       "heading_vi": "Phải là kế hoạch thật",
       "body_en": "The effect depended on how earnest the plan was. In one study, participants who ultimately carried out their plans were the ones who showed no more intrusions; plans that were not meant seriously did not show that benefit {masicampo-2011}. The authors also found that changes in goal-related emotions did not seem to be a necessary part of the effect, so the plan is doing mental work and not just making people feel better.",
-      "body_vi": "Hiệu ứng phụ thuộc vào mức độ nghiêm túc của kế hoạch. Trong một nghiên cứu, những người cuối cùng thực hiện kế hoạch của mình là những người không còn thêm ý nghĩ xâm nhập; kế hoạch không được đặt ra nghiêm túc thì không cho thấy lợi ích đó {masicampo-2011}. Các tác giả còn thấy thay đổi cảm xúc gắn với mục tiêu dường như không phải là phần cần thiết của hiệu ứng, nên kế hoạch đang làm việc cho trí óc chứ không chỉ khiến người ta thấy dễ chịu hơn."
+      "body_vi": "Hiệu ứng phụ thuộc vào mức độ nghiêm túc của kế hoạch. Trong một nghiên cứu, những người cuối cùng thực hiện kế hoạch của mình là những người không còn thêm ý nghĩ xâm nhập; kế hoạch không được đặt ra nghiêm túc thì không cho thấy lợi ích đó {masicampo-2011}. Các tác giả còn thấy thay đổi cảm xúc gắn với mục tiêu dường như không phải là phần cần thiết của hiệu ứng, nên kế hoạch đang làm việc cho trí óc chứ không chỉ khiến người ta thấy dễ chịu hơn.",
+      "heading_fr": "L'exigence d'un véritable plan",
+      "body_fr": "L'efficacité du procédé dépendait toutefois du sérieux accordé au plan. Dans une étude, les participants qui ont réellement mis leur plan à exécution par la suite étaient les seuls chez qui les intrusions avaient cessé ; les ébauches superficielles n'offraient aucun bénéfice comparable {masicampo-2011}. Les auteurs ont également constaté que les fluctuations émotionnelles liées à l'objectif ne semblaient pas déterminantes, preuve que le plan accomplit un véritable travail cognitif sans se limiter à procurer un simple soulagement passager.",
+      "heading_de": "Es muss ein echter Plan sein",
+      "body_de": "Der Effekt hing davon ab, wie ernsthaft der Plan war. In einer Studie zeigten diejenigen Teilnehmenden, die ihre Pläne letztlich in die Tat umsetzten, keine Intrusionen mehr; Pläne, die nicht ernst gemeint waren, brachten diesen Vorteil nicht {masicampo-2011}. Die Autoren stellten zudem fest, dass Veränderungen zielbezogener Emotionen keine notwendige Voraussetzung für den Effekt zu sein schienen; der Plan leistet also mentale Arbeit und sorgt nicht bloß dafür, dass sich die Menschen besser fühlen.",
+      "heading_es": "Tiene que ser un plan real",
+      "body_es": "El efecto dependía de cuán serio fuera el plan. En uno de los estudios, los participantes que finalmente llevaron a cabo sus planes fueron quienes no mostraron más intrusiones; los planes formulados sin seriedad no aportaron ese beneficio {masicampo-2011}. Los autores comprobaron también que los cambios en las emociones vinculadas al objetivo no parecían un factor indispensable del efecto, por lo que el plan realiza un trabajo mental y no solo hace que la gente se sienta mejor."
     }
   ],
   "keyPoint": {
     "en": "Unfinished goals stay active in your mind and can interfere with unrelated work. The 2011 studies suggest that [p:a specific plan for when and how you will do the task] switches off that interference, even though the task itself is still undone. Write the plan down before you move on.",
-    "vi": "Mục tiêu dang dở vẫn hoạt động trong đầu và có thể cản trở công việc không liên quan. Các nghiên cứu năm 2011 gợi ý rằng [p:một kế hoạch cụ thể về lúc nào và làm thế nào] sẽ tắt sự cản trở đó, dù bản thân việc vẫn chưa làm. Hãy viết kế hoạch ra trước khi chuyển sang việc khác."
+    "vi": "Mục tiêu dang dở vẫn hoạt động trong đầu và có thể cản trở công việc không liên quan. Các nghiên cứu năm 2011 gợi ý rằng [p:một kế hoạch cụ thể về lúc nào và làm thế nào] sẽ tắt sự cản trở đó, dù bản thân việc vẫn chưa làm. Hãy viết kế hoạch ra trước khi chuyển sang việc khác.",
+    "fr": "Les objectifs inachevés restent actifs dans votre esprit et peuvent parasiter un travail sans rapport. Les études de 2011 indiquent qu'[p:un plan précis définissant quand et comment vous accomplirez la tâche] désactive cette interférence, même si la tâche elle-même demeure inaccomplie. Notez ce plan par écrit avant de passer à la suite.",
+    "de": "Unerledigte Ziele bleiben in deinem Kopf aktiv und können andere Arbeiten beeinträchtigen. Die Studien aus dem Jahr 2011 legen nahe, dass [p:ein konkreter Plan dafür, wann und wie du die Aufgabe erledigen wirst,] diese Störung ausschaltet, obwohl die Aufgabe selbst noch unerledigt ist. Schreibe den Plan auf, bevor du weitermachst.",
+    "es": "Las metas inconclusas permanecen activas en tu mente y pueden interferir con tareas no relacionadas. Las investigaciones de 2011 sugieren que [p:un plan específico sobre cuándo y cómo harás la tarea] desactiva esa interferencia, aunque la tarea en sí continúe sin hacerse. Pon el plan por escrito antes de pasar a otra cosa."
   },
   "applySteps": {
     "en": [
@@ -63,6 +102,21 @@
       "Trước khi nghỉ cuối ngày, ghi hành động cụ thể tiếp theo cho mỗi việc còn mở và thời điểm bạn sẽ làm.",
       "Khi một việc cứ xâm nhập lúc bạn làm việc khác, dừng hai phút để lập kế hoạch cho nó.",
       "Giữ một danh sách việc còn mở ở ngoài đầu để kế hoạch có chỗ nằm."
+    ],
+    "fr": [
+      "Avant de terminer votre journée, notez la prochaine action concrète pour chaque tâche en cours ainsi que le moment où vous l'exécuterez.",
+      "Lorsqu'une tâche ne cesse de vous distraire pendant un autre travail, arrêtez-vous deux minutes pour concevoir un plan d'action.",
+      "Conservez une liste unique de vos tâches ouvertes en dehors de votre tête afin d'offrir un ancrage concret à vos plans."
+    ],
+    "de": [
+      "Notiere dir vor dem Feierabend für jede offene Aufgabe die nächste konkrete Handlung und den Zeitpunkt, an dem du sie ausführen wirst.",
+      "Wenn sich eine Aufgabe während einer anderen Arbeit immer wieder aufdrängt, halte für zwei Minuten inne und erstelle einen Plan für sie.",
+      "Führe eine Liste offener Aufgaben außerhalb deines Kopfes, damit ein Plan einen festen Ort hat."
+    ],
+    "es": [
+      "Antes de terminar tu jornada, escribe la siguiente acción concreta para cada tarea pendiente y cuándo la realizarás.",
+      "Cuando una tarea no deje de interrumpirte mientras trabajas en otra cosa, detente dos minutos y diseña un plan para ella.",
+      "Mantén una sola lista de tareas pendientes fuera de tu cabeza para que el plan tenga un lugar donde existir."
     ]
   },
   "references": [
@@ -87,12 +141,86 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/unfinished-tasks-and-making-a-plan.webp",
+    "url": "https://images.unsplash.com/3/doctype-hi-res.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Aleks Dorohovich",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/nJdwUHmaY8A"
+    "sourceUrl": "https://unsplash.com/photos/nJdwUHmaY8A",
+    "wide": "https://images.unsplash.com/3/doctype-hi-res.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@doctype?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoQABwAPu1kqk4ppaQiMAgBMB2JaACdMoACbQaRgSPqfNYpoQAA/uAAy+jq+3LHUQnrbN9VK5+OjqEDVmJvSAyuLemszmwjv6atXoL6LtTOvBwd783yh4/yK8mP5JsYPMynF3OTFrx3X2Hx8JM65G+QkdvuX3OY1tQUD+a0rihI0snf9/i/6d1vqVrV8eCqwButmQrDXoZmvhswoAA=",
-  "dominant": "#998a7f"
+  "dominant": "#998a7f",
+  "glossary": {
+    "en": {
+      "zeigarnik effect": "The psychological tendency to recall incomplete or interrupted tasks better than finished ones.",
+      "field theory": "A psychological framework explaining behavior through the system of forces acting on an individual.",
+      "task-specific tension": "Mental strain created when starting an activity, keeping related information accessible in memory until completed.",
+      "unfulfilled goal": "An intention or objective that has been initiated or activated but not yet completed.",
+      "intrusive thoughts": "Involuntary, spontaneous thoughts about an incomplete task that interrupt other ongoing mental activity.",
+      "anagram task": "A word puzzle test where scrambled letters must be rearranged into words.",
+      "open loop": "An unresolved commitment or unfinished task that continues to consume attention in the background.",
+      "mental resources": "Limited cognitive capacities such as attention and working memory required to perform tasks.",
+      "goal pursuit": "The ongoing effort and psychological engagement directed toward achieving an objective.",
+      "intrusions": "Unwanted, recurring appearances of thoughts about an incomplete task disrupting current focus.",
+      "interference": "The disruption of current performance or attention caused by competing thoughts about unfinished work."
+    },
+    "vi": {
+      "order": "Yêu cầu gọi món của khách tại bàn ăn.",
+      "hiệu ứng zeigarnik": "Hiện tượng nhớ việc dang dở tốt hơn việc đã xong.",
+      "lý thuyết trường": "Mô hình tâm lý giải thích hành vi con người qua môi trường.",
+      "sức căng": "Trạng thái tâm lý thôi thúc hoàn thành một nhiệm vụ.",
+      "truy xuất": "Tìm kiếm và lấy lại thông tin từ trí nhớ.",
+      "thôi thúc": "Động lực tâm lý thúc đẩy quay lại làm tiếp việc dở dang.",
+      "giả định chuẩn": "Quan niệm được giới chuyên môn mặc định công nhận.",
+      "bài xếp chữ": "Nhiệm vụ sắp xếp các ký tự thành từ có nghĩa.",
+      "vòng lặp": "Quá trình công việc chưa hoàn tất vẫn còn mở trong đầu.",
+      "hậu trường": "Vùng hoạt động ngầm của tâm trí dưới mức nhận thức."
+    },
+    "fr": {
+      "effet zeigarnik": "Phénomène selon lequel les tâches inachevées ou interrompues sont mieux mémorisées que les tâches accomplies.",
+      "théorie du champ": "Concept psychologique expliquant les comportements humains par la totalité des forces et tensions psychologiques coexistantes.",
+      "tension psychologique": "État interne suscité par l'amorce d'une tâche, maintenant ses détails actifs dans l'esprit jusqu'à son terme.",
+      "pensées intrusives": "Idées involontaires et récurrentes qui s'imposent à l'esprit, perturbant l'attention portée à l'activité courante.",
+      "tâche d'anagrammes": "Exercice consistant à former de nouveaux mots valides en permutant les lettres d'un mot donné.",
+      "boucle ouverte": "Engagement ou tâche commencé mais inachevé, continuant de solliciter l'attention en arrière-plan.",
+      "ressources cognitives": "Capacité attentionnelle et mentale limitée dont dispose l'individu pour accomplir des activités et réfléchir.",
+      "interférences": "Perturbations cognitives causées par des pensées parasites qui nuisent à l'exécution d'un autre travail.",
+      "processus mentaux": "Mécanismes cognitifs et neuronaux qui traitent, mémorisent et maintiennent activement les informations en mémoire."
+    },
+    "de": {
+      "zeigarnik-effekt": "Die psychologische Tendenz, sich an unerledigte oder unterbrochene Aufgaben besser zu erinnern als an abgeschlossene.",
+      "feldtheorie": "Kurt Lewins psychologisches Modell, das menschliches Verhalten durch das Zusammenspiel von Person und Umwelt erklärt.",
+      "aufgabenspezifische spannung": "Ein innerer mentaler Spannungszustand, der beim Beginnen einer Aufgabe entsteht und erst mit deren Vollendung abklingt.",
+      "intrusive gedanken": "Ungewollte, sich plötzlich aufdrängende Gedanken, die die aktuelle Konzentration stören.",
+      "anagramm-aufgabe": "Ein kognitiver Test, bei dem aus durcheinandergewürfelten Buchstaben sinnvolle Wörter gebildet werden müssen.",
+      "offene schleife": "Ein noch unvollendetes Vorhaben oder unerreichtes Ziel, das im Hinterkopf aktiv bleibt.",
+      "intrusionen": "Wiederkehrende, sich unwillkürlich aufdrängende kognitive Störgedanken oder Erinnerungen.",
+      "interferenzen": "Kognitive Störungen oder Überlagerungen, bei denen konkurrierende Informationen Denk- oder Leistungsprozesse behindern.",
+      "zielverfolgung": "Der zielgerichtete kognitive und verhaltensbezogene Prozess, ein beabsichtigtes Ergebnis zu erreichen."
+    },
+    "es": {
+      "kurt lewin": "Psicólogo pionero que investigó la dinámica de grupos y observó el recuerdo diferencial en camareros.",
+      "bluma zeigarnik": "Psicóloga soviética que demostró experimentalmente que las tareas interrumpidas se recuerdan mejor que las concluidas.",
+      "efecto zeigarnik": "Tendencia psicológica a recordar con mayor facilidad las tareas inconclusas o interrumpidas que las ya terminadas.",
+      "teoría del campo": "Modelo de Lewin que describe la conducta humana en función de las tensiones psicológicas y el entorno.",
+      "maria ovsiankina": "Psicóloga que identificó la inclinación espontánea de las personas a reanudar tareas que quedaron interrumpidas.",
+      "pensamientos intrusivos": "Ideas involuntarias y espontáneas que irrumpen en la consciencia y dificultan la concentración en otra actividad.",
+      "anagramas": "Pasatiempos de palabras consistentes en alterar el orden de las letras para formar vocablos distintos.",
+      "bucle abierto": "Compromiso o meta pendiente que permanece activo en la memoria y consume capacidad atencional.",
+      "recursos mentales": "Capacidad cognitiva limitada de la que dispone la mente para atender información y ejecutar tareas.",
+      "interferencia": "Distracción producida por una meta pendiente que deteriora el desempeño en la actividad actual."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

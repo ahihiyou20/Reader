@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Record life expectancy has risen about a year every four years",
-    "vi": "Tuổi thọ cao nhất ghi nhận tăng khoảng một năm sau mỗi bốn năm"
+    "vi": "Tuổi thọ cao nhất ghi nhận tăng khoảng một năm sau mỗi bốn năm",
+    "fr": "L'espérance de vie record progresse d'un an tous les quatre ans",
+    "de": "Rekord-Lebenserwartung stieg alle vier Jahre um etwa ein Jahr",
+    "es": "El récord de esperanza de vida ha aumentado cerca de un año cada cuatro años"
   },
   "hook": {
     "en": "The highest recorded female life expectancy has climbed by roughly one year every four years since 1840. Oeppen and Vaupel found that the climb was close to a straight line. Predictions of an upper limit on lifespan have been broken again and again, including a 1928 estimate of the maximum, made with US data, that proved too low.",
-    "vi": "Tuổi thọ nữ giới cao nhất từng được ghi nhận đã tăng khoảng một năm sau mỗi bốn năm kể từ năm 1840. Oeppen và Vaupel nhận thấy đường tăng này gần như là một đường thẳng. Các dự đoán về giới hạn trên của tuổi thọ liên tục bị phá vỡ, kể cả một ước tính năm 1928 về mức tối đa, dựa trên dữ liệu của Mỹ, mà về sau tỏ ra quá thấp."
+    "vi": "Tuổi thọ nữ giới cao nhất từng được ghi nhận đã tăng khoảng một năm sau mỗi bốn năm kể từ năm 1840. Oeppen và Vaupel nhận thấy đường tăng này gần như là một đường thẳng. Các dự đoán về giới hạn trên của tuổi thọ liên tục bị phá vỡ, kể cả một ước tính năm 1928 về mức tối đa, dựa trên dữ liệu của Mỹ, mà về sau tỏ ra quá thấp.",
+    "fr": "L'espérance de vie féminine record progresse d'environ un an tous les quatre ans depuis 1840. Oeppen et Vaupel ont montré que cette progression suivait une droite quasi parfaite. Les prédictions d'un plafond biologique ont été maintes fois démenties, notamment une estimation maximale établie en 1928 à partir de données américaines, qui s'est avérée bien trop basse.",
+    "de": "Die höchste erfasste Lebenserwartung von Frauen ist seit 1840 alle vier Jahre um etwa ein Jahr gestiegen. Oeppen und Vaupel stellten fest, dass dieser Anstieg nahezu einer geraden Linie folgte. Vorhersagen über eine Obergrenze der Lebensspanne wurden immer wieder widerlegt – darunter auch eine auf US-Daten basierende Schätzung des Maximums aus dem Jahr 1928, die sich als zu niedrig erwies.",
+    "es": "La esperanza de vida femenina más alta jamás registrada ha aumentado aproximadamente un año cada cuatro años desde 1840. Oeppen y Vaupel descubrieron que este incremento fue prácticamente una línea recta. Los pronósticos sobre un límite superior para la longevidad se han superado una y otra vez, incluido un cálculo del máximo realizado en 1928 con datos de Estados Unidos que resultó ser demasiado bajo."
   },
   "sections": [
     {
       "heading_en": "From 32 to 71 in a century",
       "heading_vi": "Từ 32 lên 71 trong một thế kỷ",
       "body_en": "In 1900 the average life expectancy of a newborn was 32 years. By 2021 it had more than doubled, to 71 years {owid-le}. In 1800, no world region had a life expectancy higher than 40 years {owid-le}. The average rose steadily across all regions, and the increase is the result of advances in medicine and public health, along with improvements in living standards {owid-le}.",
-      "body_vi": "Năm 1900, tuổi thọ trung bình của trẻ sơ sinh là 32 năm. Đến năm 2021, con số này đã hơn gấp đôi, đạt 71 năm {owid-le}. Năm 1800, không khu vực nào trên thế giới có tuổi thọ trung bình cao hơn 40 năm {owid-le}. Mức trung bình tăng đều ở mọi khu vực, và sự tăng này đến từ tiến bộ về y học, y tế công cộng cùng cải thiện đời sống {owid-le}."
+      "body_vi": "Năm 1900, tuổi thọ trung bình của trẻ sơ sinh là 32 năm. Đến năm 2021, con số này đã hơn gấp đôi, đạt 71 năm {owid-le}. Năm 1800, không khu vực nào trên thế giới có tuổi thọ trung bình cao hơn 40 năm {owid-le}. Mức trung bình tăng đều ở mọi khu vực, và sự tăng này đến từ tiến bộ về y học, y tế công cộng cùng cải thiện đời sống {owid-le}.",
+      "heading_fr": "De 32 à 71 ans en un siècle",
+      "body_fr": "En 1900, l'espérance de vie moyenne d'un nouveau-né était de 32 ans. En 2021, elle avait plus que doublé pour atteindre 71 ans {owid-le}. En 1800, aucune région du monde n'affichait une espérance de vie supérieure à 40 ans {owid-le}. La moyenne a augmenté régulièrement partout sur le globe, portée par les progrès de la médecine et de la santé publique, ainsi que par l'élévation des niveaux de vie {owid-le}.",
+      "heading_de": "Von 32 auf 71 in einem Jahrhundert",
+      "body_de": "Im Jahr 1900 lag die durchschnittliche Lebenserwartung eines Neugeborenen bei 32 Jahren. Bis 2021 hatte sie sich mit 71 Jahren mehr als verdoppelt {owid-le}. Im Jahr 1800 wies keine Weltregion eine Lebenserwartung von über 40 Jahren auf {owid-le}. Der Durchschnitt stieg in allen Regionen kontinuierlich an; dieser Zuwachs geht auf Fortschritte in Medizin und öffentlicher Gesundheit sowie einen verbesserten Lebensstandard zurück {owid-le}.",
+      "heading_es": "De 32 a 71 en un siglo",
+      "body_es": "En 1900, la esperanza de vida promedio de un recién nacido era de 32 años. Para 2021 se había más que duplicado, alcanzando los 71 años {owid-le}. En 1800, ninguna región del mundo tenía una esperanza de vida superior a los 40 años {owid-le}. El promedio aumentó de forma constante en todas las regiones, y este incremento es el resultado de los avances en la medicina y la salud pública, junto con las mejoras en el nivel de vida {owid-le}."
     },
     {
       "heading_en": "Not only fewer child deaths",
       "heading_vi": "Không chỉ là ít trẻ tử vong hơn",
       "body_en": "A common claim is that life expectancy rose only because child mortality fell. Child mortality did play a large part, but the gains extend to older ages {owid-le}. For example, 15-year-olds in France in 1816 could expect to live to 58 years on average. By 2021, the expectation for 15-year-olds had risen to 83 years. Someone who was 65 in 1816 could expect to live to 76 years, and by 2021 to 86 years {owid-le}.",
-      "body_vi": "Một cách nói phổ biến là tuổi thọ tăng chỉ vì tỷ lệ trẻ em tử vong giảm. Tỷ lệ tử vong ở trẻ em đóng một vai trò lớn, nhưng các cải thiện mở rộng đến cả tuổi cao hơn {owid-le}. Ví dụ, trẻ 15 tuổi ở Pháp năm 1816 có thể kỳ vọng sống trung bình tới 58 tuổi. Đến năm 2021, kỳ vọng của trẻ 15 tuổi đã tăng lên 83 tuổi. Một người 65 tuổi năm 1816 có thể kỳ vọng sống tới 76 tuổi, và đến năm 2021 là 86 tuổi {owid-le}."
+      "body_vi": "Một cách nói phổ biến là tuổi thọ tăng chỉ vì tỷ lệ trẻ em tử vong giảm. Tỷ lệ tử vong ở trẻ em đóng một vai trò lớn, nhưng các cải thiện mở rộng đến cả tuổi cao hơn {owid-le}. Ví dụ, trẻ 15 tuổi ở Pháp năm 1816 có thể kỳ vọng sống trung bình tới 58 tuổi. Đến năm 2021, kỳ vọng của trẻ 15 tuổi đã tăng lên 83 tuổi. Một người 65 tuổi năm 1816 có thể kỳ vọng sống tới 76 tuổi, và đến năm 2021 là 86 tuổi {owid-le}.",
+      "heading_fr": "Pas seulement un recul de la mortalité infantile",
+      "body_fr": "On entend souvent que l'espérance de vie n'a progressé que grâce à la chute de la mortalité infantile. Si celle-ci a joué un rôle majeur, les gains s'étendent aussi aux âges plus avancés {owid-le}. Par exemple, en France, un jeune de 15 ans pouvait espérer vivre jusqu'à 58 ans en moyenne en 1816. En 2021, cette perspective atteignait 83 ans. De même, une personne de 65 ans en 1816 pouvait espérer atteindre 76 ans, contre 86 ans en 2021 {owid-le}.",
+      "heading_de": "Nicht nur sinkende Kindersterblichkeit",
+      "body_de": "Häufig wird behauptet, die Lebenserwartung sei nur gestiegen, weil die Kindersterblichkeit zurückging. Die Kindersterblichkeit spielte zwar eine große Rolle, doch die Zugewinne reichen bis ins höhere Alter {owid-le}. So konnten 15-Jährige in Frankreich im Jahr 1816 im Schnitt damit rechnen, 58 Jahre alt zu werden. Bis 2021 stieg die Lebenserwartung für 15-Jährige auf 83 Jahre. Eine Person, die 1816 65 Jahre alt war, durfte hoffen, 76 Jahre zu erreichen, und im Jahr 2021 bereits 86 Jahre {owid-le}.",
+      "heading_es": "No solo menos muertes infantiles",
+      "body_es": "Suele afirmarse que la esperanza de vida aumentó únicamente porque cayó la mortalidad infantil. Si bien la mortalidad infantil desempeñó un papel importante, las ganancias se extienden a edades más avanzadas {owid-le}. Por ejemplo, los jóvenes de 15 años en Francia en 1816 podían esperar vivir hasta los 58 años en promedio. Para 2021, la expectativa para las personas de 15 años había subido a 83 años. Alguien que tenía 65 años en 1816 podía esperar vivir hasta los 76 años, y para 2021, hasta los 86 años {owid-le}."
     },
     {
       "heading_en": "A record that keeps moving",
       "heading_vi": "Một kỷ lục liên tục được đẩy lên",
       "body_en": "Oeppen and Vaupel compiled the highest female life expectancy in each year since 1840. They found that the record climbed at almost three months per year, and the linear fit to the record was very strong, with r² = 0.992 {oeppen-vaupel}. Our World in Data's update describes the same pattern as the record rising by around one year every four years, with Hong Kong at 88 years in 2021 {owid-le}.",
-      "body_vi": "Oeppen và Vaupel tổng hợp tuổi thọ nữ giới cao nhất trong từng năm kể từ 1840. Họ thấy kỷ lục tăng gần ba tháng mỗi năm, và đường khớp tuyến tính của kỷ lục rất chặt, với r² = 0,992 {oeppen-vaupel}. Bản cập nhật của Our World in Data mô tả mẫu hình tương tự: kỷ lục tăng khoảng một năm sau mỗi bốn năm, với Hồng Kông đạt 88 tuổi năm 2021 {owid-le}."
+      "body_vi": "Oeppen và Vaupel tổng hợp tuổi thọ nữ giới cao nhất trong từng năm kể từ 1840. Họ thấy kỷ lục tăng gần ba tháng mỗi năm, và đường khớp tuyến tính của kỷ lục rất chặt, với r² = 0,992 {oeppen-vaupel}. Bản cập nhật của Our World in Data mô tả mẫu hình tương tự: kỷ lục tăng khoảng một năm sau mỗi bốn năm, với Hồng Kông đạt 88 tuổi năm 2021 {owid-le}.",
+      "heading_fr": "Un record sans cesse repoussé",
+      "body_fr": "Oeppen et Vaupel ont compilé le record annuel de l'espérance de vie féminine depuis 1840. Ils ont constaté que ce record progressait de près de trois mois par an, avec un ajustement linéaire particulièrement robuste (r² = 0,992) {oeppen-vaupel}. L'actualisation publiée par Our World in Data confirme cette dynamique avec un gain d'environ un an tous les quatre ans, Hong Kong culminant à 88 ans en 2021 {owid-le}.",
+      "heading_de": "Ein Rekord, der sich ständig verschiebt",
+      "body_de": "Oeppen und Vaupel trugen für jedes Jahr seit 1840 die höchste Lebenserwartung von Frauen zusammen. Sie stellten fest, dass der Rekord um fast drei Monate pro Jahr anstieg und die lineare Anpassung an diesen Rekord mit r² = 0.992 sehr stark war {oeppen-vaupel}. Die Aktualisierung von Our World in Data beschreibt dasselbe Muster: Der Rekord klettert um rund ein Jahr alle vier Jahre, wobei Hongkong im Jahr 2021 88 Jahre erreichte {owid-le}.",
+      "heading_es": "Un récord en constante movimiento",
+      "body_es": "Oeppen y Vaupel recopilaron la mayor esperanza de vida femenina de cada año desde 1840. Descubrieron que el récord aumentaba a un ritmo de casi tres meses por año y que el ajuste lineal a dicho récord era sumamente sólido, con un r² = 0.992 {oeppen-vaupel}. La actualización de Our World in Data describe el mismo patrón: el récord sube en torno a un año cada cuatro años, situando a Hong Kong en 88 años en 2021 {owid-le}."
     },
     {
       "heading_en": "Limits that were broken",
       "heading_vi": "Những giới hạn đã bị phá vỡ",
       "body_en": "In 1928, the American statistician Louis Dublin used mortality data to estimate the maximum achievable life expectancy. US life expectancy was 57 years at the time, and his estimate for the maximum was 64.8 years {owid-le}. Because he lacked data from New Zealand, he did not know that the limit had already been exceeded there {owid-le}. Several later predictions of a ceiling were broken in the same way {owid-le}.",
-      "body_vi": "Năm 1928, nhà thống kê người Mỹ Louis Dublin dùng dữ liệu tử vong để ước tính tuổi thọ tối đa có thể đạt được. Tuổi thọ của người Mỹ lúc đó là 57 năm, còn ước tính của ông về mức tối đa là 64,8 năm {owid-le}. Vì thiếu dữ liệu của New Zealand, ông không biết giới hạn đã bị vượt qua ở đó {owid-le}. Một số dự đoán sau này về trần tuổi thọ cũng bị phá vỡ theo cách tương tự {owid-le}."
+      "body_vi": "Năm 1928, nhà thống kê người Mỹ Louis Dublin dùng dữ liệu tử vong để ước tính tuổi thọ tối đa có thể đạt được. Tuổi thọ của người Mỹ lúc đó là 57 năm, còn ước tính của ông về mức tối đa là 64,8 năm {owid-le}. Vì thiếu dữ liệu của New Zealand, ông không biết giới hạn đã bị vượt qua ở đó {owid-le}. Một số dự đoán sau này về trần tuổi thọ cũng bị phá vỡ theo cách tương tự {owid-le}.",
+      "heading_fr": "Des plafonds régulièrement franchis",
+      "body_fr": "En 1928, le statisticien américain Louis Dublin s'est appuyé sur les données de mortalité pour évaluer l'espérance de vie maximale atteignable. Elle s'élevait alors à 57 ans aux États-Unis, et son estimation la plafonnait à 64,8 ans {owid-le}. Faute de données néo-zélandaises, il ignorait que ce seuil y était déjà franchi {owid-le}. Plusieurs prédictions ultérieures d'un plafond théorique ont été invalidées de la même manière {owid-le}.",
+      "heading_de": "Grenzen, die gebrochen wurden",
+      "body_de": "Im Jahr 1928 nutzte der US-amerikanische Statistiker Louis Dublin Sterblichkeitsdaten, um die maximal erreichbare Lebenserwartung zu schätzen. Damals lag die Lebenserwartung in den USA bei 57 Jahren, und seine Schätzung für das Maximum betrug 64.8 Jahre {owid-le}. Da ihm Daten aus Neuseeland fehlten, wusste er nicht, dass dieser Grenzwert dort bereits überschritten worden war {owid-le}. Mehrere spätere Prognosen einer Obergrenze wurden auf die gleiche Weise widerlegt {owid-le}.",
+      "heading_es": "Límites que se superaron",
+      "body_es": "En 1928, el estadístico estadounidense Louis Dublin utilizó datos de mortalidad para estimar la esperanza de vida máxima alcanzable. La esperanza de vida en Estados Unidos era de 57 años en ese momento y su estimación del máximo fue de 64.8 años {owid-le}. Al carecer de datos de Nueva Zelanda, no sabía que ese límite ya se había superado allí {owid-le}. Varios pronósticos posteriores sobre un tope máximo corrieron la misma suerte {owid-le}."
     },
     {
       "heading_en": "Steady progress, not one breakthrough",
       "heading_vi": "Tiến bộ đều đặn, không phải một cú đột phá",
       "body_en": "Oeppen and Vaupel argue that improvements in life expectancy should not be seen as the result of one-off breakthroughs, but as a regular stream of continuing progress {oeppen-vaupel}. Our World in Data makes the same point: the record has risen steadily, not in bursts {owid-le}. A steady rate is harder to explain with a single cause, and easier to fit to a long-run trend.",
-      "body_vi": "Oeppen và Vaupel lập luận rằng cải thiện tuổi thọ không nên được xem là kết quả của những cú đột phá riêng lẻ, mà là một dòng tiến bộ liên tục và đều đặn {oeppen-vaupel}. Our World in Data nêu cùng ý: kỷ lục tăng đều đặn, không theo từng đợt {owid-le}. Một tốc độ đều khó giải thích bằng một nguyên nhân duy nhất, và dễ khớp với xu hướng dài hạn hơn."
+      "body_vi": "Oeppen và Vaupel lập luận rằng cải thiện tuổi thọ không nên được xem là kết quả của những cú đột phá riêng lẻ, mà là một dòng tiến bộ liên tục và đều đặn {oeppen-vaupel}. Our World in Data nêu cùng ý: kỷ lục tăng đều đặn, không theo từng đợt {owid-le}. Một tốc độ đều khó giải thích bằng một nguyên nhân duy nhất, và dễ khớp với xu hướng dài hạn hơn.",
+      "heading_fr": "Un progrès continu plutôt qu'une percée isolée",
+      "body_fr": "Selon Oeppen et Vaupel, les gains d'espérance de vie ne doivent pas être perçus comme le fruit de percées isolées, mais comme un flux ininterrompu d'avancées continues {oeppen-vaupel}. Our World in Data partage ce constat : le record a progressé de façon constante, sans à-coups {owid-le}. Une telle régularité s'explique difficilement par une cause unique et correspond davantage à une tendance de fond.",
+      "heading_de": "Stetiger Fortschritt statt einzelner Durchbrüche",
+      "body_de": "Oeppen und Vaupel argumentieren, dass Verbesserungen der Lebenserwartung nicht als Folge einmaliger Durchbrüche verstanden werden sollten, sondern als kontinuierlicher Strom stetigen Fortschritts {oeppen-vaupel}. Our World in Data vertritt denselben Standpunkt: Der Rekord stieg stetig und nicht schubweise an {owid-le}. Eine gleichmäßige Rate lässt sich schwerer mit einer einzelnen Ursache erklären, fügt sich aber leichter in einen langfristigen Trend ein.",
+      "heading_es": "Progreso continuo, no un único avance",
+      "body_es": "Oeppen y Vaupel sostienen que las mejoras en la esperanza de vida no deben considerarse el fruto de descubrimientos aislados, sino un flujo regular de progreso continuo {oeppen-vaupel}. Our World in Data señala lo mismo: el récord ha crecido de manera constante, no a saltos {owid-le}. Un ritmo constante resulta más difícil de explicar con una sola causa y más fácil de ajustar a una tendencia a largo plazo."
     },
     {
       "heading_en": "What a period figure assumes",
       "heading_vi": "Con số theo kỳ giả định điều gì",
       "body_en": "Period life expectancy summarises death rates across all age groups in one year. It represents the average lifespan of a hypothetical group that experienced those same age-specific death rates throughout its life {owid-le}. A record of the highest figure in a year is therefore a comparison of national snapshots, not a single life. It shows what the best-performing country achieved, not what any particular person will live to.",
-      "body_vi": "Tuổi thọ theo kỳ tổng hợp tỷ lệ tử vong ở mọi nhóm tuổi trong một năm. Nó biểu diễn tuổi thọ trung bình của một nhóm giả định trải qua cùng các tỷ lệ tử vong theo tuổi đó trong suốt cuộc đời {owid-le}. Vì vậy, kỷ lục về con số cao nhất trong một năm là so sánh các bức tranh quốc gia tại một thời điểm, không phải một cuộc đời cụ thể. Nó cho biết quốc gia tốt nhất đạt được gì, không cho biết một người cụ thể sẽ sống đến bao nhiêu tuổi."
+      "body_vi": "Tuổi thọ theo kỳ tổng hợp tỷ lệ tử vong ở mọi nhóm tuổi trong một năm. Nó biểu diễn tuổi thọ trung bình của một nhóm giả định trải qua cùng các tỷ lệ tử vong theo tuổi đó trong suốt cuộc đời {owid-le}. Vì vậy, kỷ lục về con số cao nhất trong một năm là so sánh các bức tranh quốc gia tại một thời điểm, không phải một cuộc đời cụ thể. Nó cho biết quốc gia tốt nhất đạt được gì, không cho biết một người cụ thể sẽ sống đến bao nhiêu tuổi.",
+      "heading_fr": "Ce qu'implique un indicateur conjoncturel",
+      "body_fr": "L'espérance de vie du moment résume les taux de mortalité observés pour chaque groupe d'âge sur une année précise. Elle correspond à la longévité moyenne d'une cohorte fictive qui subirait ces mêmes taux de mortalité par âge sa vie durant {owid-le}. Le record annuel constitue donc une comparaison d'instantanés nationaux, et non le suivi d'une existence individuelle. Il reflète la réussite du pays le plus performant, et non l'âge qu'atteindra un individu en particulier.",
+      "heading_de": "Was ein Periodenwert voraussetzt",
+      "body_de": "Die Periodenlebenserwartung fasst die Sterberaten aller Altersgruppen in einem einzelnen Jahr zusammen. Sie entspricht der durchschnittlichen Lebensspanne einer hypothetischen Gruppe, die während ihres gesamten Lebens denselben altersspezifischen Sterberaten ausgesetzt wäre {owid-le}. Ein Rekordwert des höchsten Jahreswerts ist daher ein Vergleich nationaler Momentaufnahmen und bildet kein individuelles Leben ab. Er zeigt, was das erfolgreichste Land erreicht hat, nicht aber, wie alt eine bestimmte Person tatsächlich werden wird.",
+      "heading_es": "Lo que presupone una cifra de periodo",
+      "body_es": "La esperanza de vida de periodo sintetiza las tasas de mortalidad de todos los grupos de edad en un año determinado. Representa la duración media de la vida de una cohorte hipotética que experimentase esas mismas tasas de mortalidad por edad a lo largo de toda su vida {owid-le}. Por tanto, el récord de la cifra más alta en un año constituye una comparación de instantáneas nacionales, no la trayectoria de una sola vida. Refleja lo que logró el país con mejor desempeño, no cuánto vivirá una persona en concreto."
     }
   ],
   "keyPoint": {
     "en": "The highest recorded female life expectancy has climbed about a year every four years, and each predicted ceiling has been passed. Read the record as a comparison of national snapshots, because the period measure assumes today's death rates hold for a whole lifetime.",
-    "vi": "Tuổi thọ nữ giới cao nhất từng ghi nhận đã tăng khoảng một năm sau mỗi bốn năm, và mọi trần dự đoán đều đã bị vượt qua. Hãy đọc kỷ lục như so sánh các bức tranh quốc gia, vì thước đo theo kỳ giả định tỷ lệ tử vong hiện nay giữ nguyên suốt cả đời."
+    "vi": "Tuổi thọ nữ giới cao nhất từng ghi nhận đã tăng khoảng một năm sau mỗi bốn năm, và mọi trần dự đoán đều đã bị vượt qua. Hãy đọc kỷ lục như so sánh các bức tranh quốc gia, vì thước đo theo kỳ giả định tỷ lệ tử vong hiện nay giữ nguyên suốt cả đời.",
+    "fr": "L'espérance de vie féminine record a augmenté d'environ un an tous les quatre ans, repoussant chaque plafond annoncé. Il convient d'interpréter ce record comme une comparaison d'instantanés nationaux, car cette mesure transversale suppose le maintien des taux de mortalité actuels durant toute une vie.",
+    "de": "Die höchste erfasste Lebenserwartung von Frauen stieg alle vier Jahre um etwa ein Jahr, und jede prognostizierte Obergrenze wurde übertroffen. Betrachte den Rekord als Vergleich nationaler Momentaufnahmen, denn das Periodenmaß unterstellt, dass heutige Sterberaten ein ganzes Leben lang unverändert bleiben.",
+    "es": "El récord de mayor esperanza de vida femenina ha aumentado cerca de un año cada cuatro años y cada tope pronosticado ha quedado atrás. Conviene entender este récord como una comparación de instantáneas nacionales, pues la medida de periodo asume que las tasas de mortalidad actuales se mantendrán durante toda una vida."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Tra tuổi thọ của nước bạn năm 1950 và năm mới nhất trong một bộ dữ liệu công khai, rồi chia mức thay đổi cho số năm.",
       "Kiểm tra xem con số đó là thước đo theo kỳ hay không, và ghi lại giả định nó đưa ra về tỷ lệ tử vong.",
       "So sánh con số của nước bạn với con số quốc gia cao nhất trong cùng năm, và ghi lại khoảng cách."
+    ],
+    "fr": [
+      "Consultez l'espérance de vie de votre pays en 1950 et pour l'année la plus récente dans un jeu de données publiques, puis divisez l'écart par le nombre d'années.",
+      "Vérifiez si ce chiffre constitue une mesure conjoncturelle et notez l'hypothèse qu'il formule sur les taux de mortalité.",
+      "Comparez la valeur de votre pays au record national le plus élevé de la même année et observez l'écart."
+    ],
+    "de": [
+      "Schlage die Lebenserwartung deines Landes für 1950 und das jüngste Jahr in einem öffentlichen Datensatz nach und teile die Veränderung durch die Anzahl der Jahre.",
+      "Finde heraus, ob es sich bei diesem Wert um ein Periodenmaß handelt, und notiere die Annahme, die es über Sterberaten trifft.",
+      "Vergleiche den Wert deines Landes mit dem höchsten nationalen Wert desselben Jahres und halte den Abstand fest."
+    ],
+    "es": [
+      "Busque la esperanza de vida de su país para 1950 y para el año más reciente en una base de datos pública, y divida la variación entre el número de años.",
+      "Averigüe si esa cifra corresponde a una medida de periodo y anote el supuesto que formula sobre las tasas de mortalidad.",
+      "Compare la cifra de su país con la marca nacional más alta de ese mismo año y observe la brecha existente."
     ]
   },
   "references": [
@@ -93,12 +153,87 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/record-life-expectancy-rises-a-year-every-four-years.webp",
+    "url": "https://images.unsplash.com/photo-1453282716202-de94e528067c?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Erez Attias",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/KqVHRmHVwwM"
+    "sourceUrl": "https://unsplash.com/photos/KqVHRmHVwwM",
+    "wide": "https://images.unsplash.com/photo-1453282716202-de94e528067c?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@erezattias?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQC7Ay6pwlk224CFEBLHYVOEAAD+v+hcocJkvvvEzVFVaA07Q86WwonrdcwMpUr0oHxD1hCIC6eQkOxadHZ1L0WBOWqj6w+1c/veih9UmZELcbUDbQFJ4DEiUUUPOah+X5kXE3BetTJB2KFOzc+ozwBmydrB4uK+6oRYBVMUFRj6gJsAAA==",
-  "dominant": "#303334"
+  "dominant": "#303334",
+  "glossary": {
+    "en": {
+      "life expectancy": "The average number of years a person is expected to live based on current mortality rates.",
+      "oeppen and vaupel": "Researchers who demonstrated that record female life expectancy has risen linearly since 1840.",
+      "public health": "Organized societal efforts to prevent disease, prolong life, and improve health across populations.",
+      "child mortality": "The rate or frequency of deaths occurring among children under a certain age.",
+      "linear fit": "A straight line drawn through data points showing a constant rate of change over time.",
+      "r²": "A statistical score showing how closely data align with a line, where 1 indicates perfect correlation.",
+      "louis dublin": "An American statistician who published an influential 1928 calculation of maximum achievable human life expectancy.",
+      "mortality data": "Statistical records documenting the frequency and distribution of deaths across different populations and times.",
+      "period life expectancy": "An estimate of average lifespan assuming today's age-specific death rates apply across an entire lifetime.",
+      "death rates": "The ratio of deaths to population in a specific group or time period."
+    },
+    "vi": {
+      "giới hạn trên": "Mức cao nhất được dự đoán mà tuổi thọ con người có thể đạt đến.",
+      "kỳ vọng sống": "Số năm bình quân một người ở độ tuổi nhất định dự kiến còn sống.",
+      "khớp tuyến tính": "Kỹ thuật toán học tìm đường thẳng mô tả sát nhất xu hướng dữ liệu.",
+      "r²": "Hệ số đo lường mức độ khớp giữa số liệu thực tế và mô hình.",
+      "mẫu hình": "Dạng thức diễn biến lặp lại hoặc có tính quy luật của số liệu.",
+      "louis dublin": "Nhà thống kê người Mỹ từng dự đoán giới hạn tối đa của tuổi thọ.",
+      "trần tuổi thọ": "Giới hạn tối đa giả định mà tuổi thọ con người không thể vượt qua.",
+      "oeppen và vaupel": "Hai nhà nghiên cứu phát hiện kỷ lục tuổi thọ nữ tăng tuyến tính liên tục.",
+      "theo kỳ": "Cách tính dựa trên tỷ lệ tử vong ở từng độ tuổi trong một năm.",
+      "nhóm giả định": "Nhóm người theo mô hình thống kê chịu cùng tỷ lệ tử vong cố định suốt đời."
+    },
+    "fr": {
+      "mortalité infantile": "Proportion de décès d'enfants avant l'âge d'un an au sein d'une population donnée.",
+      "ajustement linéaire": "Droite mathématique représentant au plus près la relation et la progression observées entre deux variables.",
+      "r²": "Coefficient statistique quantifiant la précision avec laquelle un modèle linéaire correspond aux observations.",
+      "louis dublin": "Statisticien américain ayant calculé en 1928 une estimation historique de la longévité humaine maximale.",
+      "plafond théorique": "Limite maximale supposée que la durée de vie humaine ne pourrait théoriquement jamais dépasser.",
+      "tendance de fond": "Mouvement régulier et structurel s'inscrivant sur le long terme sans interruption brutale.",
+      "cohorte fictive": "Groupe théorique subissant d'un bout à l'autre de sa vie les taux de mortalité d'une année donnée.",
+      "taux de mortalité": "Fréquence des décès enregistrés par rapport à l'effectif d'une tranche d'âge déterminée.",
+      "instantanés nationaux": "Photographies statistiques de la situation sanitaire d'États prises sur une année spécifique.",
+      "mesure conjoncturelle": "Calcul statistique fondé sur une période ponctuelle sans suivre une génération réelle dans le temps."
+    },
+    "de": {
+      "periodenlebenserwartung": "Statistisches Maß für die Lebenserwartung basierend auf den altersspezifischen Sterberaten eines einzigen Kalenderjahres.",
+      "periodenmaß": "Statistische Methode, die gegenwärtige Querschnittsdaten eines Jahres auf einen fiktiven gesamten Lebenslauf hochrechnet.",
+      "altersspezifischen sterberaten": "Wahrscheinlichkeit von Personen einer bestimmten Altersgruppe, innerhalb eines einzelnen Jahres zu versterben.",
+      "lineare anpassung": "Statistisches Regressionsmodell, das die Entwicklung eines Merkmals näherungsweise als gerade Linie darstellt.",
+      "kindersterblichkeit": "Anteil der Kinder, die vor dem Erreichen eines festgelegten Alters versterben.",
+      "öffentlicher gesundheit": "Organisierte gesellschaftliche Maßnahmen zur Verhütung von Krankheiten und Förderung der Bevölkerungsgesundheit.",
+      "louis dublin": "US-amerikanischer Statistiker, der 1928 eine historisch bedeutsame, aber bald widerlegte Obergrenze berechnete.",
+      "oeppen und vaupel": "Demografen, die den seit 1840 nahezu perfekt linearen Anstieg der weltweiten Rekordlebenserwartung aufzeigten.",
+      "our world in data": "Wissenschaftliche Online-Publikation, die empirische Daten zur globalen Entwicklung und menschlichen Gesundheit analysiert.",
+      "lebensspanne": "Tatsächliche oder biologisch maximal erreichbare zeitliche Dauer vom Beginn bis zum Ende des Lebens."
+    },
+    "es": {
+      "esperanza de vida": "Promedio de años que se proyecta que vivirá una persona según las tasas observadas.",
+      "salud pública": "Conjunto de medidas estatales para prevenir enfermedades y proteger el bienestar de la población.",
+      "mortalidad infantil": "Proporción de fallecimientos de niños antes de alcanzar una edad determinada, habitualmente un año.",
+      "ajuste lineal": "Modelo matemático que describe la relación entre dos variables a lo largo de una recta.",
+      "r²": "Medida estadística que refleja qué tan bien se adaptan los datos reales a la recta.",
+      "louis dublin": "Estadístico y demógrafo pionero en estimar límites biológicos teóricos para la longevidad humana.",
+      "cohorte hipotética": "Grupo teórico de individuos que sirve como modelo para simular probabilidades vitales a futuro.",
+      "instantáneas nacionales": "Registros fotográficos estadísticos del desempeño de un país en un momento temporal preciso.",
+      "medida de periodo": "Estimación demográfica basada en tasas de defunción observadas únicamente durante un año calendario determinado.",
+      "tasas de mortalidad": "Frecuencia de muertes registradas dentro de una población específica durante un periodo de tiempo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/425/1080/1920",
+    "url": "https://images.unsplash.com/44/E5KMvPp9SsCnqmEGUwAS_2014-08-10%2012.56.40%201.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Daniel Ruswick",
+    "author": "Dan Ruswick",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ"
+    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ",
+    "wide": "https://images.unsplash.com/44/E5KMvPp9SsCnqmEGUwAS_2014-08-10%2012.56.40%201.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@danielruswick?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -115,9 +117,26 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "mammalian meat allergy": "An allergic condition triggered by tick bites causing adverse immune reactions to meat from mammals.",
+      "ostriches": "Large, flightless African birds whose meat serves as a flavorful, safe substitute for beef.",
+      "trigger carbohydrate": "A specific sugar compound in mammalian meat that induces severe allergic immune reactions.",
+      "avian alternative": "Poultry or bird-derived meat options, such as ostrich, used to replace mammalian red meat.",
+      "essential amino acids": "Vital protein building blocks required by the human body that must be obtained from food.",
+      "sugar molecule": "The specific carbohydrate allergen found in mammals that tick-sensitized individuals must strictly avoid.",
+      "antibodies": "Proteins produced by the immune system that mistakenly target and react against mammalian carbohydrates.",
+      "carbohydrate compound": "The molecular sugar structure responsible for provoking allergic reactions in tick-bitten individuals.",
+      "kitchen protocols": "Specific safety procedures used by restaurants to prevent accidental allergen exposure during food preparation.",
+      "dietary restrictions": "Limitations on food intake required to protect allergic individuals from adverse health reactions.",
+      "alternative proteins": "Non-mammalian protein foods that provide safe nutrition for people with meat allergies.",
+      "cross-contamination": "The unintentional transfer of allergenic mammalian food particles into safe dishes during handling."
+    }
   }
 }

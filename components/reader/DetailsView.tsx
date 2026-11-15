@@ -2,7 +2,7 @@
 // SCR-02 Details: sections with focus/dim, collapsing header, KEY POINT, sources, dots (FR-05..FR-09).
 import { MDiv, MH2 } from '@/components/Motion';
 import { useMotionValue, useTransform } from 'framer-motion';
-import { ArrowUpRight, ChevronDown, ChevronsRight, Library } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, ChevronsRight, Headphones, Library } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
@@ -18,9 +18,14 @@ import { useT } from '../hooks';
 import { layout, setArticleView } from '../feed/nav';
 import { captureAnchor, restoreScrollTop, type BlockBox, type ReadingAnchor } from '@/lib/reading-anchor';
 import { CountRoll } from '@/components/ui/CountRoll';
+import { canSpeak, trackFor, useAudio } from '@/stores/audio';
+import { useTapToDefine } from './WordPop';
 
 const sweptSlugs = new Set<string>();
 
+/** Gap between the pills and the hint, and the room its arrow and spacing take (px). */
+const HINT_GAP = 12;
+const HINT_ICON = 26;
 const MAX_DOTS = 9;
 
 function getBlockBoxes(root: HTMLElement): BlockBox[] {
@@ -44,6 +49,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const kp = useRef<HTMLDivElement>(null);
   const latestAnchor = useRef<ReadingAnchor | null>(null);
   const [focus, setFocus] = useState(0);
+  const wide = useUI((s) => s.stage.endsWith('landscape'));
   const [current, setCurrent] = useState(0);
 
   const readingProgress = useMotionValue(0);
@@ -55,7 +61,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
 
   const blocks = article.sections.length + 2; // hook + sections + key point block
   const title = pick(article.title, lang) ?? '';
-  const fallback = lang === 'vi' && !article.hasVi;
+  const fallback = !article.langs.includes(lang);
 
   // Header collapse follows the scroll position directly (no timers).
   // Collapsed positions are fixed under the top bar; the expanded offset (gap) depends on screen height.
@@ -65,6 +71,15 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const prowY = useTransform(q, (v) => (reduced ? 0 : (1 - v) * (gap - 62)));
   const titleY = useTransform(q, (v) => (reduced ? 0 : -110 * v));
   const titleO = useTransform(q, (v) => clamp(1 - v * 1.6, 0, 1));
+  // A faded title must not take the taps meant for the pills it slides over.
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  useEffect(
+    () =>
+      titleO.on('change', (o) => {
+        if (titleRef.current) titleRef.current.style.visibility = o < 0.2 ? 'hidden' : '';
+      }),
+    [titleO],
+  );
   const stickyO = useTransform(q, (v) => clamp((v - 0.4) / 0.6, 0, 1));
   const rowY = useTransform(q, (v) => (reduced ? 0 : (1 - v) * (gap - 25)));
   const rowS = useTransform(q, (v) => (reduced ? 1 : 1 - 0.2 * v));
@@ -291,14 +306,44 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
 
   const dots = useMemo(() => Math.min(blocks, MAX_DOTS), [blocks]);
   const dotOn = blocks <= MAX_DOTS ? current : Math.round((current / (blocks - 1)) * (MAX_DOTS - 1));
-  const depth = (k: number) => (k === focus ? ' on' : Math.abs(k - focus) === 1 ? ' near' : '');
+  // Wide screens show much more text at once, and the block crossing the reading line is often the
+  // second one while the first is still in full view: keep two blocks in focus there.
+  const second = wide ? (focus === 0 ? 1 : focus - 1) : focus;
+  const lo = Math.min(focus, second);
+  const hi = Math.max(focus, second);
+  const depth = (k: number) => (k >= lo && k <= hi ? ' on' : k === lo - 1 || k === hi + 1 ? ' near' : '');
   const setRef = (k: number) => (el: HTMLDivElement | null) => {
     secs.current[k] = el;
   };
   const kpText = pick(article.keyPoint, lang);
+  const define = useTapToDefine(article, lang);
+  // The hint keeps its words only when they fit whole beside the pills (German and French run long);
+  // otherwise it becomes a round arrow button, as on small landscape phones.
+  const hintRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    const btn = hintRef.current;
+    const row = btn?.parentElement;
+    const label = btn?.querySelector<HTMLElement>('.hint-t');
+    if (!btn || !row || !label) return;
+    const fit = () => {
+      const before = btn.previousElementSibling?.getBoundingClientRect().right ?? row.getBoundingClientRect().left;
+      const room = row.getBoundingClientRect().right - before - HINT_GAP;
+      // scrollWidth is the label's full width even while it is clipped or collapsed.
+      btn.dataset.fit = label.scrollWidth + HINT_ICON <= room ? 'text' : 'icon';
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(row);
+    return () => ro.disconnect();
+  }, [lang]);
+  const listening = useAudio((s) => s.slug === slug);
+  const listen = () => {
+    if (listening) return useAudio.getState().toggle();
+    useAudio.getState().play(trackFor(article, lang));
+  };
   const o = article.origin;
   // Group 3 cannot be translated: Vietnamese readers get Reader's own summary above the original text.
-  const viSummary = lang === 'vi' && o.group === 3 ? article.summary?.vi : undefined;
+  const viSummary = lang !== 'en' && o.group === 3 ? article.summary?.[lang] : undefined;
   const publisher = o.publisher ?? (o.originalUrl ? new URL(o.originalUrl).hostname.replace(/^www\./, '') : '');
 
   return (
@@ -390,6 +435,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
         className="dscroll"
         ref={scroll}
         data-region="reading"
+        onClick={define.onClick}
         style={active && view === 1 ? { viewTransitionName: 'reading-col' } : undefined}
       >
         <div className={`sec hook${depth(0)}`} data-k={0} ref={setRef(0)} lang={isFallback(article.hook, lang) ? 'en' : undefined}>
@@ -520,12 +566,18 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
           <button className="pill dpill" type="button" onClick={() => scrollToBlock(0)}>
             {t('details')}
           </button>
-          <button className="hint" type="button" onClick={() => setArticleView(slug, 2)}>
-            {t('toEngage')}
+          {canSpeak() && (
+            <button className="pill listen" type="button" aria-pressed={listening} onClick={listen}>
+              <Headphones className="ic" aria-hidden="true" />
+              {t('listen')}
+            </button>
+          )}
+          <button className="hint" ref={hintRef} type="button" aria-label={t('toEngage')} title={t('toEngage')} onClick={() => setArticleView(slug, 2)}>
+            <span className="hint-t">{t('toEngage')}</span>
             <ChevronsRight className="ic" aria-hidden="true" />
           </button>
         </MDiv>
-        <MH2 className="btitle" style={{ y: titleY, opacity: titleO }}>
+        <MH2 className="btitle" ref={titleRef} style={{ y: titleY, opacity: titleO }}>
           {title}
           {fallback && <span className="enonly">{t('enOnly')}</span>}
         </MH2>
@@ -546,6 +598,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
         </MDiv>
       </div>
 
+      {define.pop}
       <div className="dfoot">
         <div data-region="details-foot" style={{ pointerEvents: 'auto' }}>
           <button className="cb nextbtn" type="button" aria-label={atEnd ? t('goEngage') : t('next')} onClick={next}>

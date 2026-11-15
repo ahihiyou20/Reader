@@ -45,11 +45,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/382/1080/1920",
+    "url": "https://images.unsplash.com/40/x6YzbWWRq2sRhAacMjnl_Bangkok_Indra_market.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "RayBay",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+    "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw",
+    "wide": "https://images.unsplash.com/40/x6YzbWWRq2sRhAacMjnl_Bangkok_Indra_market.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@raybay?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -94,7 +96,10 @@
     ]
   },
   "summary": {
-    "vi": "Cuộc khủng hoảng ngân hàng tại Paraguay bùng nổ khi ứng dụng thanh toán Ueno đóng băng giao dịch của hàng triệu khách hàng, dẫn đến việc tổng thống bị phế truất và điều tra tham nhũng. Sự việc phơi bày những lỗ hổng trong giám sát tài chính và mối quan hệ gắn bó giữa giới lãnh đạo chính trị với các tổ chức tín dụng nắm giữ vốn nhà nước. Dù tăng trưởng kinh tế ghi nhận những con số tích cực, hệ thống bảo hiểm và các quy định lỏng lẻo đối với tiền gửi công cộng tiếp tục đặt ra nhiều rủi ro lớn cho người gửi tiền và nền kinh tế."
+    "vi": "Cuộc khủng hoảng ngân hàng tại Paraguay bùng nổ khi ứng dụng thanh toán Ueno đóng băng giao dịch của hàng triệu khách hàng, dẫn đến việc tổng thống bị phế truất và điều tra tham nhũng. Sự việc phơi bày những lỗ hổng trong giám sát tài chính và mối quan hệ gắn bó giữa giới lãnh đạo chính trị với các tổ chức tín dụng nắm giữ vốn nhà nước. Dù tăng trưởng kinh tế ghi nhận những con số tích cực, hệ thống bảo hiểm và các quy định lỏng lẻo đối với tiền gửi công cộng tiếp tục đặt ra nhiều rủi ro lớn cho người gửi tiền và nền kinh tế.",
+    "fr": "En novembre 2026, la mise sous tutelle de la banque numérique Ueno a plongé le Paraguay dans une tourmente financière et politique majeure. Comptant près de trois millions d’usagers, l’établissement a brutalement gelé les avoirs de ses clients, provoquant d’importantes manifestations populaires. Ce naufrage a entraîné la démission puis l’assignation à résidence du président Santiago Peña, poursuivi pour corruption, ainsi que l’inculpation du gouverneur de la banque centrale.\n\nAu-delà de l’expansion rapide du crédit, le scandale met en lumière des collusions étroites entre élites dirigeantes et intérêts privés, illustrées par le placement massif de fonds publics de sécurité sociale dans cette banque privée. Ce séisme ébranle durablement le modèle économique paraguayen.",
+    "de": "Im November 2026 stürzte die Schieflage der paraguayischen Digitalbank Ueno das Land in eine schwere Finanz- und Staatskrise. Rund drei Millionen Kunden verloren den Zugriff auf ihre Ersparnisse, Gehälter und Renten. Präsident Santiago Peña trat nach massiven Protesten zurück, verlor seine Immunität und wurde wegen Korruptionsvorwürfen unter Hausarrest gestellt. Die Pleite offenbart fatale Verflechtungen zwischen Politik, Aufsichtsbehörden und Finanzelite: Trotz früher Warnzeichen flossen Hunderte Millionen Dollar an Staats- und Rentengeldern an das Institut. Die Krise entzaubert Paraguays Image als stabiles Wirtschaftswunderland und stellt die institutionelle Unabhängigkeit der Aufsicht grundlegend infrage.",
+    "es": "La repentina intervención del banco digital Ueno en noviembre de 2026 desencadenó una profunda crisis financiera y política en Paraguay. La entidad, que albergaba los ahorros de millones de ciudadanos e importantes fondos del sistema previsional público, congeló sus operaciones tras graves irregularidades y préstamos vinculados sin respaldo. El escándalo dejó al descubierto los estrechos nexos entre el poder político y los directivos bancarios. Como consecuencia directa, el presidente Santiago Peña renunció a su cargo y terminó bajo arresto domiciliario por presunta corrupción, al igual que las máximas autoridades reguladoras. ¿Podrán las instituciones depurar la supervisión financiera y devolver la credibilidad a un país antes elogiado por su estabilidad macroeconómica?"
   },
   "applySteps": {
     "en": [
@@ -111,10 +116,29 @@
   "ai": {
     "fields": [
       "summary",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-10T04:55:46.812Z"
+  "publishAt": "2026-11-10T04:55:46.812Z",
+  "glossary": {
+    "en": {
+      "solvency ratio": "A measure of a bank's financial health showing its ability to meet long-term debt and financial obligations.",
+      "collateral": "An asset pledged as security for repayment of a loan, to be forfeited in case of default.",
+      "resolution": "A government-managed process to restructure or wind down a failing bank while protecting vital financial services.",
+      "parliamentary immunity": "Legal protection granted to legislators shielding them from prosecution during their term in office.",
+      "regulatory capture": "When a regulatory agency acts in the commercial interest of the industry it oversees instead of the public.",
+      "ips": "Paraguay's social security institute that administers public healthcare and retirement pension funds.",
+      "investment-grade": "A credit rating indicating that government or corporate debt carries a relatively low risk of default.",
+      "pax silica declaration": "A multilateral agreement focusing on securing supply chains for critical minerals, hydropower, and advanced computing infrastructure.",
+      "political patronage": "The distribution of public resources, contracts, or government positions to reward political allies and maintain power.",
+      "connected lending": "A practice where banks extend loans to their own major shareholders, executives, or related business entities.",
+      "deposit guarantee": "A government safety net that reimburses bank customers up to a statutory limit if their bank fails."
+    }
+  }
 }

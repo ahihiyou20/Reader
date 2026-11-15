@@ -1,5 +1,6 @@
 'use client';
-import { ChevronsRight, Compass, LayoutGrid } from 'lucide-react';
+import { splitTitle, titleStyle } from '@/lib/title';
+import { ChevronsRight } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useCategories } from '@/lib/data';
@@ -9,7 +10,7 @@ import { useUI } from '@/stores/ui';
 import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { ActionButton } from '../ActionButton';
-import { preloadExplore } from '../overlays/preload';
+import { CoverCredit } from '../CoverCredit';
 import { useT } from '../hooks';
 import { setArticleView } from './nav';
 
@@ -30,7 +31,6 @@ export function CoverView({
 }) {
   const t = useT();
   const lang = useUI((s) => s.lang);
-  const openOverlay = useUI((s) => s.openOverlay);
   const liked = useUser((s) => Boolean(s.likes[item.slug]));
   const saved = useUser((s) => Boolean(s.saves[item.slug]));
   const counts = useUser(useShallow((s) => countsFor(s, item.slug, item.counts)));
@@ -50,50 +50,30 @@ export function CoverView({
       } catch {}
   }, [nudge]);
   const long = title.length > 70;
+  const { lead, accent } = splitTitle(title);
   const toDetails = () => setArticleView(item.slug, 1);
 
   return (
     <>
       <div className="scrim" />
+      <CoverCredit cover={item.cover} className="ccredit" />
       <div className="crow" data-region="cover-row">
-        <button
-          className="cb gridbtn"
-          type="button"
-          aria-label={t('exploreTitle')}
-          onClick={() => openOverlay('explore')}
-          onPointerDown={preloadExplore}
-          onMouseEnter={preloadExplore}
-          onFocus={preloadExplore}
-        >
-          <LayoutGrid className="ic" aria-hidden="true" />
-        </button>
-        <button
-          className="pill epill"
-          type="button"
-          onClick={() => openOverlay('explore')}
-          onPointerDown={preloadExplore}
-          onMouseEnter={preloadExplore}
-          onFocus={preloadExplore}
-        >
-          <span>{t('explore')}</span>
-          <span className="cmp">
-            <Compass className="ic" strokeWidth={1.8} aria-hidden="true" />
-            <i className="dot" />
-          </span>
-        </button>
         <button className={`hint${nudge ? ' nudge' : ''}`} type="button" onClick={toDetails} aria-label={t('toDetails')}>
           <span className="hint-t">{t('toDetails')}</span>
           <ChevronsRight className="ic" aria-hidden="true" />
         </button>
       </div>
       <h2
-        className={`ctitle${long ? ' long' : ''}`}
+        className={`ctitle t-${titleStyle(item.category)}${long ? ' long' : ''}`}
         id={titleId}
         onClick={toDetails}
         data-region="cover-title"
-        style={active ? { viewTransitionName: 'cover-title' } : undefined}
+        // Longer titles set smaller (CSS reads --n), so the whole title fits instead of losing words.
+        style={{ ['--n' as string]: title.length, ...(active ? { viewTransitionName: 'cover-title' } : {}) }}
       >
-        <span>{title}</span>
+        {/* The trailing space keeps the two lines one phrase for screen readers and text search. */}
+        {lead && <span className="ta">{`${lead} `}</span>}
+        <span className="tb">{accent}</span>
       </h2>
       {(active ?? true) && view === 0 && (
         <div className="rail" data-region="rail" style={active ? { viewTransitionName: 'action-rail' } : undefined}>

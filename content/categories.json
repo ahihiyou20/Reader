@@ -1,10 +1,10 @@
 [
-  { "id": "psychology", "name": { "en": "Psychology", "vi": "Tâm lý học" }, "emoji": "🧠", "order": 1 },
-  { "id": "science", "name": { "en": "Science", "vi": "Khoa học" }, "emoji": "🔬", "order": 2 },
-  { "id": "economics", "name": { "en": "Economics", "vi": "Kinh tế" }, "emoji": "📈", "order": 3 },
-  { "id": "society", "name": { "en": "Society", "vi": "Xã hội" }, "emoji": "🌍", "order": 4 },
-  { "id": "health", "name": { "en": "Health", "vi": "Sức khỏe" }, "emoji": "🫀", "order": 5 },
-  { "id": "productivity", "name": { "en": "Productivity", "vi": "Năng suất" }, "emoji": "⚡", "order": 6 },
-  { "id": "history", "name": { "en": "History", "vi": "Lịch sử" }, "emoji": "🏛️", "order": 7 },
-  { "id": "technology", "name": { "en": "Technology", "vi": "Công nghệ" }, "emoji": "💡", "order": 8 }
+  { "id": "psychology", "name": { "en": "Psychology", "vi": "Tâm lý học", "fr": "Psychologie", "de": "Psychologie", "es": "Psicología" }, "emoji": "🧠", "order": 1 },
+  { "id": "science", "name": { "en": "Science", "vi": "Khoa học", "fr": "Science", "de": "Wissenschaft", "es": "Ciencia" }, "emoji": "🔬", "order": 2 },
+  { "id": "economics", "name": { "en": "Economics", "vi": "Kinh tế", "fr": "Économie", "de": "Wirtschaft", "es": "Economía" }, "emoji": "📈", "order": 3 },
+  { "id": "society", "name": { "en": "Society", "vi": "Xã hội", "fr": "Société", "de": "Gesellschaft", "es": "Sociedad" }, "emoji": "🌍", "order": 4 },
+  { "id": "health", "name": { "en": "Health", "vi": "Sức khỏe", "fr": "Santé", "de": "Gesundheit", "es": "Salud" }, "emoji": "🫀", "order": 5 },
+  { "id": "productivity", "name": { "en": "Productivity", "vi": "Năng suất", "fr": "Productivité", "de": "Produktivität", "es": "Productividad" }, "emoji": "⚡", "order": 6 },
+  { "id": "history", "name": { "en": "History", "vi": "Lịch sử", "fr": "Histoire", "de": "Geschichte", "es": "Historia" }, "emoji": "🏛️", "order": 7 },
+  { "id": "technology", "name": { "en": "Technology", "vi": "Công nghệ", "fr": "Technologie", "de": "Technologie", "es": "Tecnología" }, "emoji": "💡", "order": 8 }
 ]

@@ -33,11 +33,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/819/1080/1920",
+    "url": "https://images.unsplash.com/photo-1435459025078-9857f8933bc9?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Verne Ho",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/tXICOsK8Duc"
+    "sourceUrl": "https://unsplash.com/photos/tXICOsK8Duc",
+    "wide": "https://images.unsplash.com/photo-1435459025078-9857f8933bc9?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@verneho?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -82,7 +84,10 @@
     ]
   },
   "summary": {
-    "vi": "Vào thời Trung Cổ, các câu chuyện ma kết hợp văn hóa dân gian với niềm tin vào luyện ngục và đạo đức tôn giáo. Người ta tin rằng linh hồn quay về để nhờ người sống cầu nguyện, giúp đỡ hoặc giải quyết các tranh chấp còn dang dở từ khi còn sống. Những giai thoại này mang ý nghĩa răn đe, nhắc nhở con người sống lương thiện và sửa đổi hành vi. Bên cạnh đó, các cộng đồng thời bấy giờ cũng thực hiện nhiều biện pháp thực tế như cắt xén thi thể để ngăn người chết trở về quấy phá."
+    "vi": "Vào thời Trung Cổ, các câu chuyện ma kết hợp văn hóa dân gian với niềm tin vào luyện ngục và đạo đức tôn giáo. Người ta tin rằng linh hồn quay về để nhờ người sống cầu nguyện, giúp đỡ hoặc giải quyết các tranh chấp còn dang dở từ khi còn sống. Những giai thoại này mang ý nghĩa răn đe, nhắc nhở con người sống lương thiện và sửa đổi hành vi. Bên cạnh đó, các cộng đồng thời bấy giờ cũng thực hiện nhiều biện pháp thực tế như cắt xén thi thể để ngăn người chết trở về quấy phá.",
+    "de": "Mittelalterliche Geisterberichte spiegelten den tief verankerten Glauben an das Fegefeuer sowie zeitgenössische moralische Pflichten wider. Wie Aufzeichnungen aus der Abtei Byland im nördlichen Yorkshire belegen, suchten ruhelose Verstorbene die Lebenden meist nicht auf, um ihnen zu schaden, sondern um Hilfe zu erbitten. Durch Gebete, Beichten oder die Wiedergutmachung irdischer Verfehlungen – etwa die Rückgabe gestohlener Güter – sollten ihre Qualen gelindert werden. Zugleich ermahnten die Erscheinungen die Hinterbliebenen zur sittlichen Umkehr. Neben diesen lehrreichen Begegnungen existierte jedoch auch die Furcht vor körperlich wiederkehrenden Toten, den Wiedergängern. Archäologische Funde entstellter Skelette in Wharram Percy zeigen, dass Gemeinden versuchten, solche unheimlichen Bedrohungen durch die Zerstörung der Leichname abzuwenden.",
+    "fr": "Au Moyen Âge, les récits de spectres et de « revenants » mêlaient traditions folkloriques et doctrine religieuse, notamment autour du purgatoire. Ces témoignages, à l'image des récits compilés au début du XVe siècle à l'abbaye de Byland, visaient à effrayer tout en délivrant une édifiante leçon morale : les défunts réclamaient l'aide des vivants — prières ou réparation de torts terrestres — pour abréger leurs tourments d'outre-tombe. D'autres récits reflétaient l'angoisse bien réelle des cadavres réanimés ; pour neutraliser ces menaces, les communautés recouraient parfois à l'exhumation et à la mutilation des corps, une pratique confirmée par l'archéologie.",
+    "es": "¿Qué revelan realmente los relatos de aparecidos en la Edad Media? Lejos de buscar únicamente espantar, estas historias combinaban el folclore con la doctrina del purgatorio para recordar a los vivos sus obligaciones morales, impulsándolos a orar por los difuntos o reparar faltas cometidas. Sin embargo, también existía un terror palpable hacia los muertos vivientes: cadáveres que regresaban físicamente y cuyos restos eran mutilados para impedir su retorno, como corroboran varios hallazgos arqueológicos. Así, estos testimonios funcionaban tanto como lecciones éticas como reflejo de profundas ansiedades colectivas ante el más allá."
   },
   "keyPoint": {
     "en": "Think of medieval ghost stories as a mirror reflecting moral duties and anxieties. What unsettled business from your past do you need to resolve right now to find peace?",
@@ -104,10 +109,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "de",
+      "en",
+      "fr",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-01T02:17:24.452Z"
+  "publishAt": "2026-11-01T02:17:24.452Z",
+  "glossary": {
+    "en": {
+      "purgatory": "A place where souls are cleansed of sin through suffering before entering heaven.",
+      "cistercian": "A Catholic religious order of monks following a strict monastic rule.",
+      "excommunicated": "Officially excluded from participation in the sacraments and services of the Church.",
+      "absolution": "Formal religious forgiveness and release from the guilt or penalty of sins.",
+      "spectral": "Relating to, characteristic of, or resembling a ghost.",
+      "mass": "The central Catholic religious service commemorating the Last Supper.",
+      "revenant": "A visible ghost or reanimated corpse returning from the grave.",
+      "rector": "A clergyman or parish priest in charge of a parish.",
+      "concubine": "A woman who lives with a man without being married to him.",
+      "mire": "An area of wet, swampy ground or bog.",
+      "post-mortem": "Occurring or done after death."
+    }
+  }
 }

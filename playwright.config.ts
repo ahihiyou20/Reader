@@ -19,6 +19,13 @@ export default defineConfig({
     },
   },
   snapshotPathTemplate: 'tests/e2e/__screenshots__/{arg}{ext}',
+  // Tests start as a returning reader: the first-visit welcome screen has already been seen.
+  use: {
+    storageState: {
+      cookies: [],
+      origins: [{ origin: 'http://localhost:4173', localStorage: [{ name: 'pagemoor.reading', value: JSON.stringify({ state: { welcomed: true }, version: 1 }) }] }],
+    },
+  },
   projects: [
     {
       name: 'iphone',

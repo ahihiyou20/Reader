@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "New Blood Tests Detect Alzheimer's Brain Changes",
-    "vi": "Xét nghiệm máu mới phát hiện thay đổi não bộ do Alzheimer"
+    "vi": "Xét nghiệm máu mới phát hiện thay đổi não bộ do Alzheimer",
+    "fr": "De nouveaux tests sanguins détectent les altérations cérébrales d'Alzheimer",
+    "de": "Neue Bluttests erkennen Hirnveränderungen bei Alzheimer",
+    "es": "Nuevos análisis de sangre detectan cambios cerebrales del alzhéimer"
   },
   "hook": {
     "en": "A new generation of blood tests can successfully spot biological signs of Alzheimer's disease {source}, sparking intense curiosity among patients. While these diagnostic tools offer unprecedented personal insight into brain health, medical experts urge caution as the science and regulatory approvals rapidly evolve.",
-    "vi": "Một thế hệ xét nghiệm máu mới có thể phát hiện thành công các dấu hiệu sinh học của bệnh Alzheimer {source}, thu hút sự tò mò mạnh mẽ từ phía bệnh nhân. Mặc dù các công cụ chẩn đoán này cung cấp cái nhìn sâu sắc chưa từng có về sức khỏe não bộ, các chuyên gia y tế vẫn thúc giục sự thận trọng khi khoa học và phê duyệt pháp lý phát triển nhanh chóng."
+    "vi": "Một thế hệ xét nghiệm máu mới có thể phát hiện thành công các dấu hiệu sinh học của bệnh Alzheimer {source}, thu hút sự tò mò mạnh mẽ từ phía bệnh nhân. Mặc dù các công cụ chẩn đoán này cung cấp cái nhìn sâu sắc chưa từng có về sức khỏe não bộ, các chuyên gia y tế vẫn thúc giục sự thận trọng khi khoa học và phê duyệt pháp lý phát triển nhanh chóng.",
+    "fr": "Une nouvelle génération de tests sanguins parvient à repérer les signes biologiques de la maladie d'Alzheimer {source}, suscitant une vive curiosité chez les patients. Si ces outils de diagnostic offrent un aperçu personnel inédit de la santé cérébrale, les experts médicaux appellent à la prudence face à l'évolution rapide de la science et des autorisations réglementaires.",
+    "de": "Eine neue Generation von Bluttests kann biologische Anzeichen der Alzheimer-Krankheit zuverlässig erkennen {source}, was bei Patienten auf großes Interesse stößt. Während diese Diagnosewerkzeuge beispiellose persönliche Einblicke in die Gehirngesundheit bieten, mahnen medizinische Experten zur Vorsicht, da sich Forschung und behördliche Zulassungen rasant weiterentwickeln.",
+    "es": "Una nueva generación de análisis de sangre permite detectar con éxito signos biológicos de la enfermedad de Alzheimer {source}, lo que suscita una intensa curiosidad entre los pacientes. Si bien estas herramientas diagnósticas ofrecen una perspectiva personal sin precedentes sobre la salud cerebral, los expertos médicos instan a la cautela a medida que la ciencia y las autorizaciones regulatorias evolucionan con rapidez."
   },
   "sections": [
     {
       "heading_en": "Personal Motivations for Testing",
       "heading_vi": "Động lực cá nhân khi xét nghiệm",
       "body_en": "Susan Dancer turned to an experimental blood test at age sixty after watching her mother and grandmother suffer from the condition {source}. Driven by family history and a desire to prepare for her future, she sought answers despite her daughter's initial reservations. The results provided significant personal reassurance, allowing her to feel more in control of her health journey.",
-      "body_vi": "Susan Dancer đã tìm đến một loại xét nghiệm máu (*blood test*) thử nghiệm ở tuổi sáu mươi sau khi chứng kiến mẹ và bà của mình chịu đựng căn bệnh này {source}. Thúc đẩy bởi tiền sử gia đình và mong muốn chuẩn bị cho tương lai, cô đã tìm kiếm câu trả lời bất chấp sự hoài nghi ban đầu của con gái. Kết quả mang lại sự yên tâm lớn về mặt cá nhân, giúp cô cảm thấy làm chủ hơn trong hành trình sức khỏe của mình."
+      "body_vi": "Susan Dancer đã tìm đến một loại xét nghiệm máu (*blood test*) thử nghiệm ở tuổi sáu mươi sau khi chứng kiến mẹ và bà của mình chịu đựng căn bệnh này {source}. Thúc đẩy bởi tiền sử gia đình và mong muốn chuẩn bị cho tương lai, cô đã tìm kiếm câu trả lời bất chấp sự hoài nghi ban đầu của con gái. Kết quả mang lại sự yên tâm lớn về mặt cá nhân, giúp cô cảm thấy làm chủ hơn trong hành trình sức khỏe của mình.",
+      "heading_fr": "Motivations personnelles face au dépistage",
+      "body_fr": "Susan Dancer s'est tournée vers un test sanguin expérimental à l'âge de soixante ans, après avoir vu sa mère et sa grand-mère souffrir de cette pathologie {source}. Motivée par ses antécédents familiaux et le désir de préparer son avenir, elle a cherché des réponses malgré les réserves initiales de sa fille. Les résultats lui ont apporté un réel réconfort personnel, lui permettant de se sentir davantage maîtresse de sa santé.",
+      "heading_de": "Persönliche Beweggründe für den Test",
+      "body_de": "Susan Dancer entschied sich im Alter von sechzig Jahren für einen experimentellen Bluttest, nachdem sie miterlebt hatte, wie ihre Mutter und Großmutter an der Krankheit litten {source}. Angetrieben von der familiären Vorgeschichte und dem Wunsch, für ihre Zukunft vorzusorgen, suchte sie trotz anfänglicher Bedenken ihrer Tochter nach Antworten. Das Ergebnis brachte ihr spürbare persönliche Beruhigung und das Gefühl, die eigene Gesundheit aktiver mitgestalten zu können.",
+      "heading_es": "Motivaciones personales para realizarse la prueba",
+      "body_es": "Susan Dancer recurrió a un análisis de sangre experimental a los sesenta años tras ver a su madre y a su abuela padecer esta afección {source}. Motivada por los antecedentes familiares y el deseo de prepararse para su futuro, buscó respuestas a pesar de las reservas iniciales de su hija. Los resultados le brindaron una gran tranquilidad personal, lo que le permitió sentir un mayor control sobre su trayectoria de salud."
     },
     {
       "heading_en": "The Science Behind the Test",
       "heading_vi": "Khoa học đằng sau xét nghiệm",
       "body_en": "The diagnostic method measures a specific protein known as p-tau217, successfully identifying [p:amyloid plaques] in the brain with high accuracy. According to Dr. David Holtzman, these tests perform similarly to traditional brain scans. Recent regulatory approvals mark a major milestone, though current usage is primarily intended for individuals who already exhibit cognitive symptoms.",
-      "body_vi": "Phương pháp chẩn đoán này đo lường một loại protein cụ thể gọi là p-tau217, [p:nhận diện thành công các mảng bám amyloid] trong não với độ chính xác cao. Theo Tiến sĩ David Holtzman, những xét nghiệm này hoạt động tương tự như các phương pháp chụp chiếu não truyền thống. Việc phê duyệt gần đây đánh dấu một cột mốc quan trọng, mặc dù việc sử dụng hiện tại chủ yếu dành cho những người đã biểu hiện triệu chứng nhận thức (*cognitive symptoms*)."
+      "body_vi": "Phương pháp chẩn đoán này đo lường một loại protein cụ thể gọi là p-tau217, [p:nhận diện thành công các mảng bám amyloid] trong não với độ chính xác cao. Theo Tiến sĩ David Holtzman, những xét nghiệm này hoạt động tương tự như các phương pháp chụp chiếu não truyền thống. Việc phê duyệt gần đây đánh dấu một cột mốc quan trọng, mặc dù việc sử dụng hiện tại chủ yếu dành cho những người đã biểu hiện triệu chứng nhận thức (*cognitive symptoms*).",
+      "heading_fr": "Les fondements scientifiques du test",
+      "body_fr": "Cette méthode diagnostique mesure une protéine spécifique appelée p-tau217 et parvient à identifier les [p:plaques amyloïdes] dans le cerveau avec une grande précision. Selon le Dr. David Holtzman, ces tests offrent des performances comparables à celles des examens d'imagerie cérébrale traditionnels. Les récentes autorisations réglementaires marquent une étape majeure, même si leur utilisation actuelle s'adresse principalement aux personnes présentant déjà des symptômes cognitifs.",
+      "heading_de": "Die Wissenschaft hinter dem Test",
+      "body_de": "Die diagnostische Methode misst ein spezifisches Protein namens p-tau217 und identifiziert mit hoher Genauigkeit [p:Amyloid-Plaques] im Gehirn. Laut Dr. David Holtzman liefern diese Tests ähnlich zuverlässige Ergebnisse wie herkömmliche Gehirnscans. Jüngste behördliche Zulassungen markieren einen wichtigen Meilenstein, wenngleich der aktuelle Einsatz vor allem für Personen gedacht ist, die bereits kognitive Symptome zeigen.",
+      "heading_es": "La ciencia detrás de la prueba",
+      "body_es": "El método diagnóstico mide una proteína específica conocida como p-tau217, identificando con gran precisión las [p:placas amiloides] en el cerebro. Según el Dr. David Holtzman, estas pruebas tienen un rendimiento similar al de los escáneres cerebrales tradicionales. Las recientes autorizaciones regulatorias marcan un hito importante, aunque el uso actual está destinado principalmente a personas que ya presentan síntomas cognitivos."
     },
     {
       "heading_en": "Benefits and Uncertainties",
       "heading_vi": "Lợi ích và những điều chưa chắc chắn",
       "body_en": "Experts warn that individuals without memory loss face potential anxiety since available treatments are currently limited to symptomatic patients. However, researcher Michael Malek-Ahmadi notes that elevated biomarker levels indicate a higher risk for future progression. Ongoing studies are actively investigating whether early intervention might eventually prevent or delay the onset of clinical symptoms.",
-      "body_vi": "Các chuyên gia cảnh báo rằng những người chưa mất trí nhớ phải đối mặt với sự lo lắng tiềm ẩn vì các phương pháp điều trị hiện có chỉ giới hạn ở bệnh nhân có triệu chứng. Tuy nhiên, nhà nghiên cứu Michael Malek-Ahmadi lưu ý rằng nồng độ sinh chất tăng cao cho thấy nguy cơ tiến triển trong tương lai lớn hơn. Các nghiên cứu đang diễn ra đang tích cực điều tra xem liệu can thiệp sớm có thể ngăn ngừa hoặc làm chậm sự khởi phát của các triệu chứng lâm sàng hay không."
+      "body_vi": "Các chuyên gia cảnh báo rằng những người chưa mất trí nhớ phải đối mặt với sự lo lắng tiềm ẩn vì các phương pháp điều trị hiện có chỉ giới hạn ở bệnh nhân có triệu chứng. Tuy nhiên, nhà nghiên cứu Michael Malek-Ahmadi lưu ý rằng nồng độ sinh chất tăng cao cho thấy nguy cơ tiến triển trong tương lai lớn hơn. Các nghiên cứu đang diễn ra đang tích cực điều tra xem liệu can thiệp sớm có thể ngăn ngừa hoặc làm chậm sự khởi phát của các triệu chứng lâm sàng hay không.",
+      "heading_fr": "Bénéfices et incertitudes",
+      "body_fr": "Les spécialistes préviennent que les personnes sans troubles de la mémoire s'exposent à une anxiété potentielle, dans la mesure où les traitements disponibles restent actuellement réservés aux patients symptomatiques. Néanmoins, le chercheur Michael Malek-Ahmadi souligne qu'un taux élevé de biomarqueurs signale un risque accru d'évolution future. Des études en cours cherchent activement à déterminer si une intervention précoce pourrait un jour prévenir ou retarder l'apparition des symptômes cliniques.",
+      "heading_de": "Chancen und Ungewissheiten",
+      "body_de": "Experten warnen davor, dass Personen ohne Gedächtnisverlust Verunsicherung oder Ängste entwickeln könnten, da verfügbare Therapien derzeit auf symptomatische Patienten beschränkt sind. Der Forscher Michael Malek-Ahmadi betont jedoch, dass erhöhte Biomarker-Werte auf ein höheres Risiko für ein späteres Fortschreiten hinweisen. Laufende Studien untersuchen intensiv, ob frühzeitige Interventionen den Ausbruch klinischer Symptome letztlich verhindern oder verzögern können.",
+      "heading_es": "Beneficios e incertidumbres",
+      "body_es": "Los expertos advierten de que las personas sin pérdida de memoria se enfrentan a una posible ansiedad, ya que los tratamientos disponibles se limitan por ahora a los pacientes sintomáticos. No obstante, el investigador Michael Malek-Ahmadi señala que los niveles elevados de biomarcadores indican un mayor riesgo de progresión en el futuro. Diversos estudios en curso investigan activamente si una intervención temprana podría prevenir o retrasar la aparición de los síntomas clínicos."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1077/1080/1920",
+    "url": "https://images.unsplash.com/photo-1452573992436-6d508f200b30?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Maico Amorim",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/SJWPKMb9u-k"
+    "sourceUrl": "https://unsplash.com/photos/SJWPKMb9u-k",
+    "wide": "https://images.unsplash.com/photo-1452573992436-6d508f200b30?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@maicoamorim?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of these tests as a weather forecast: seeing a storm approaching can help you prepare your umbrella, even if you cannot stop the rain yet. [p:How will you weigh emotional peace of mind against the uncertainty of knowing your biological risk?]",
-    "vi": "Hãy coi những xét nghiệm này như một dự báo thời tiết: nhìn thấy cơn bão đang đến có thể giúp bạn chuẩn bị ô, ngay cả khi bạn chưa thể ngăn cơn mưa lại. [p:Bạn sẽ cân nhắc sự bình yên trong tâm hồn như thế nào trước sự bất định khi biết rõ nguy cơ sinh học của mình?]"
+    "vi": "Hãy coi những xét nghiệm này như một dự báo thời tiết: nhìn thấy cơn bão đang đến có thể giúp bạn chuẩn bị ô, ngay cả khi bạn chưa thể ngăn cơn mưa lại. [p:Bạn sẽ cân nhắc sự bình yên trong tâm hồn như thế nào trước sự bất định khi biết rõ nguy cơ sinh học của mình?]",
+    "fr": "Considérez ces tests comme des prévisions météorologiques : voir une tempête approcher peut vous aider à préparer votre parapluie, même si vous ne pouvez pas encore empêcher la pluie de tomber. [p:Comment pèserez-vous votre tranquillité d'esprit face à l'incertitude de connaître votre risque biologique ?]",
+    "de": "Betrachte diese Tests wie eine Wettervorhersage: Zu sehen, dass ein Unwetter aufzieht, kann dir helfen, deinen Regenschirm bereitzuhalten – auch wenn du den Regen noch nicht aufhalten kannst. [p:Wie wirst du seelische Ruhe gegen die Ungewissheit abwägen, dein biologisches Risiko zu kennen?]",
+    "es": "Piense en estas pruebas como en un pronóstico del tiempo: ver que se aproxima una tormenta puede ayudar a preparar el paraguas, aunque todavía no se pueda detener la lluvia. [p:¿Cómo sopesará la tranquilidad emocional frente a la incertidumbre de conocer su riesgo biológico?]"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Tham khảo ý kiến bác sĩ chăm sóc sức khỏe chính của bạn để thảo luận về các yếu tố nguy cơ cá nhân đối với sự suy giảm nhận thức.",
       "Xem xét tiền sử bệnh gia đình về các rối loạn trí nhớ trước khi cân nhắc bất kỳ lựa chọn chẩn đoán mới nào.",
       "Nghiên cứu các hướng dẫn lâm sàng hiện tại để hiểu xem việc tầm soát không có triệu chứng có phù hợp với bạn hay không."
+    ],
+    "fr": [
+      "Consultez votre médecin traitant afin d'évoquer vos facteurs de risque personnels liés au déclin cognitif.",
+      "Faites le point sur vos antécédents médicaux familiaux concernant les troubles de la mémoire avant d'envisager de nouvelles options de diagnostic.",
+      "Renseignez-vous sur les recommandations cliniques actuelles afin de savoir si un dépistage sans symptômes est pertinent dans votre cas."
+    ],
+    "de": [
+      "Wende dich an deinen Hausarzt, um deine persönlichen Risikofaktoren für einen kognitiven Abbau zu besprechen.",
+      "Überprüfe deine familiäre Vorgeschichte bezüglich Gedächtnisstörungen, bevor du neue diagnostische Optionen in Erwägung ziehst.",
+      "Informiere dich über aktuelle klinische Leitlinien, um zu verstehen, ob Screenings ohne vorliegende Symptome für dich geeignet sind."
+    ],
+    "es": [
+      "Consulte a su médico de atención primaria para comentar sus factores de riesgo personales frente al deterioro cognitivo.",
+      "Revise sus antecedentes médicos familiares en relación con los trastornos de la memoria antes de considerar nuevas opciones diagnósticas.",
+      "Investigue las directrices clínicas actuales para comprender si las evaluaciones sin síntomas son adecuadas para usted."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "alzheimer's disease": "A progressive neurological disorder that causes brain cells to degenerate, leading to memory loss and cognitive decline.",
+      "diagnostic tools": "Medical instruments, tests, or techniques used to identify diseases or assess physiological health conditions.",
+      "p-tau217": "A phosphorylated tau protein blood biomarker indicating the presence of Alzheimer pathology in the brain.",
+      "amyloid plaques": "Abnormal protein aggregates that accumulate between nerve cells in the brain during Alzheimer disease.",
+      "brain scans": "Medical imaging techniques, such as PET or MRI, used to view brain structure and function.",
+      "regulatory approvals": "Official authorizations granted by government health agencies allowing clinical tests or treatments to be marketed.",
+      "cognitive symptoms": "Noticeable mental impairments affecting memory, thinking, reasoning, and daily decision-making abilities.",
+      "symptomatic patients": "Individuals who are actively experiencing and displaying measurable signs or symptoms of a medical condition.",
+      "biomarker levels": "Measurable concentrations of biological substances that indicate disease presence, severity, or progression risk.",
+      "early intervention": "Medical care or therapy initiated at initial disease stages to slow or alter disease progression.",
+      "cognitive decline": "A gradual worsening of intellectual abilities, particularly memory, judgment, and processing speed.",
+      "clinical guidelines": "Systematically developed medical recommendations helping clinicians and patients make decisions regarding specific health conditions."
+    },
+    "vi": {
+      "alzheimer": "Bệnh thoái hóa thần kinh tiến triển gây suy giảm trí nhớ và chức năng nhận thức.",
+      "p-tau217": "Dấu ấn sinh học protein trong máu giúp phát hiện mảng bám bệnh Alzheimer ở não.",
+      "mảng bám amyloid": "Khối tích tụ protein bất thường trong não, đặc trưng cho bệnh Alzheimer.",
+      "chẩn đoán": "Quá trình xác định bệnh hoặc tình trạng y tế thông qua các xét nghiệm, triệu chứng.",
+      "chụp chiếu não": "Kỹ thuật hình ảnh y khoa giúp quan sát cấu trúc và tổn thương bên trong não.",
+      "nhận thức": "Khả năng tư duy, ghi nhớ, hiểu biết và xử lý thông tin của bộ não.",
+      "sinh chất": "Các chất sinh học trong cơ thể dùng làm dấu hiệu đo lường tình trạng bệnh.",
+      "can thiệp sớm": "Hành động y tế điều trị hoặc phòng ngừa ngay từ giai đoạn đầu của bệnh.",
+      "lâm sàng": "Những biểu hiện, triệu chứng bệnh được quan sát trực tiếp trên người bệnh thực tế.",
+      "tầm soát": "Kiểm tra y tế định kỳ nhằm phát hiện sớm bệnh khi chưa có biểu hiện triệu chứng."
+    },
+    "fr": {
+      "maladie d'alzheimer": "Affection neurodégénérative progressive qui détruit la mémoire et d'autres fonctions cognitives essentielles.",
+      "outils de diagnostic": "Méthodes médicales permettant d'identifier la présence d'une maladie ou d'en évaluer la sévérité.",
+      "autorisations réglementaires": "Validations officielles accordées par les agences de santé pour l'usage clinique d'un test ou médicament.",
+      "p-tau217": "Biomarqueur protéique sanguin reflétant la présence et l'accumulation de lésions cérébrales d'Alzheimer.",
+      "plaques amyloïdes": "Dépôts anormaux de protéines entre les neurones, caractéristiques de la maladie d'Alzheimer.",
+      "imagerie cérébrale": "Examens visuels comme l'IRM explorant la structure ou l'activité du cerveau.",
+      "symptômes cognitifs": "Difficultés perceptibles touchant la mémoire, le raisonnement, le langage ou le jugement.",
+      "biomarqueurs": "Indicateurs biologiques mesurables dans l'organisme signalant un processus physiologique ou pathologique.",
+      "patients symptomatiques": "Personnes présentant des signes cliniques observables ou ressentis d'une affection médicale.",
+      "déclin cognitif": "Diminution anormale et progressive des capacités intellectuelles et de mémoire.",
+      "recommandations cliniques": "Directives médicales fondées sur des preuves guidant les praticiens dans leurs décisions."
+    },
+    "de": {
+      "alzheimer-krankheit": "Fortschreitende neurodegenerative Erkrankung des Gehirns, die zum Abbau von Nervenzellen und geistigen Fähigkeiten führt.",
+      "p-tau217": "Ein spezielles Eiweiß im Blut, das als biologischer Indikator für Alzheimer-typische Hirnveränderungen dient.",
+      "amyloid-plaques": "Proteinablagerungen im Gehirn, die Nervenzellverbindungen stören und charakteristisch für die Alzheimer-Krankheit sind.",
+      "gehirnscans": "Bildgebende Verfahren wie MRT oder PET zur visuellen Untersuchung und Darstellung von Hirnstrukturen.",
+      "kognitive symptome": "Merkbare Beeinträchtigungen geistiger Funktionen wie des Gedächtnisses, der Sprache oder des Denkvermögens.",
+      "biomarker-werte": "Messbare biologische Kennzahlen im Körper, die auf bestimmte Krankheitsrisiken oder Prozesse hinweisen.",
+      "interventionen": "Gezielte medizinische oder therapeutische Maßnahmen, um den Beginn oder das Fortschreiten einer Erkrankung zu beeinflussen.",
+      "gedächtnisstörungen": "Krankhafte Beeinträchtigungen des Erinnerungsvermögens oder des Abrufens gespeicherter Informationen.",
+      "screenings": "Systematische Reihenuntersuchungen zur Früherkennung von Erkrankungen bei Personen ohne bisherige Symptome.",
+      "klinische leitlinien": "Wissenschaftlich fundierte Handlungsempfehlungen für medizinisches Fachpersonal zur angemessenen Diagnostik und Therapie."
+    },
+    "es": {
+      "enfermedad de alzheimer": "Trastorno neurodegenerativo progresivo que afecta la memoria, el pensamiento y la conducta.",
+      "p-tau217": "Proteína plasmática utilizada como biomarcador para detectar tempranamente alteraciones del alzhéimer.",
+      "placas amiloides": "Depósitos anómalos de proteína en el tejido cerebral característicos de la patología de Alzheimer.",
+      "escáneres cerebrales": "Pruebas de imagen médica que permiten visualizar la anatomía y anomalías dentro del cerebro.",
+      "autorizaciones regulatorias": "Aprobaciones oficiales de agencias sanitarias para emplear legalmente una prueba o medicamento.",
+      "síntomas cognitivos": "Alteraciones observables en la memoria, el razonamiento, la atención o el lenguaje del paciente.",
+      "biomarcadores": "Moléculas o sustancias biológicas medibles que indican el estado de una enfermedad o proceso.",
+      "intervención temprana": "Tratamiento o abordaje clínico aplicado antes de que avance o se manifieste la enfermedad.",
+      "deterioro cognitivo": "Pérdida progresiva de capacidades mentales como la memoria, el juicio o la concentración.",
+      "directrices clínicas": "Pautas médicas oficiales basadas en evidencia que orientan sobre el diagnóstico y tratamiento apropiados."
+    }
   }
 }

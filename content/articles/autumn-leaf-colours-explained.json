@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Why leaves change colour in autumn",
-    "vi": "Vì sao lá đổi màu vào mùa thu"
+    "vi": "Vì sao lá đổi màu vào mùa thu",
+    "fr": "Pourquoi les feuilles changent de couleur en automne",
+    "de": "Warum sich Blätter im Herbst verfärben",
+    "es": "Por qué las hojas cambian de color en otoño"
   },
   "hook": {
     "en": "Autumn leaves do not so much change colour as lose one. The yellows and oranges were already inside the leaf all summer, hidden behind green chlorophyll. The reds are different: [p:the tree makes them on purpose, late in the season]. Researchers are still working out why, and new papers in 2026 show how a single gene and the structure of a leaf stalk fit in.",
-    "vi": "Lá mùa thu không hẳn đổi màu mà là mất đi một màu. Những sắc vàng và cam vốn nằm trong lá suốt mùa hè, bị diệp lục xanh che đi. Sắc đỏ thì khác: [p:cây chủ động tạo ra chúng vào cuối mùa]. Các nhà nghiên cứu vẫn đang tìm hiểu lý do, và những bài báo năm 2026 cho thấy một gen đơn lẻ và cấu trúc của cuống lá có vai trò ra sao."
+    "vi": "Lá mùa thu không hẳn đổi màu mà là mất đi một màu. Những sắc vàng và cam vốn nằm trong lá suốt mùa hè, bị diệp lục xanh che đi. Sắc đỏ thì khác: [p:cây chủ động tạo ra chúng vào cuối mùa]. Các nhà nghiên cứu vẫn đang tìm hiểu lý do, và những bài báo năm 2026 cho thấy một gen đơn lẻ và cấu trúc của cuống lá có vai trò ra sao.",
+    "fr": "En automne, les feuilles ne changent pas tant de couleur qu'elles en perdent une. Les teintes jaunes et orangées étaient déjà présentes tout l'été, dissimulées derrière le vert de la chlorophylle. Les rouges obéissent à une autre logique : [p:l'arbre les fabrique délibérément, tard dans la saison]. Les chercheurs tentent encore d'en percer les raisons, et de nouvelles publications en 2026 éclairent le rôle d'un gène unique et de la structure du pétiole.",
+    "de": "Herbstblätter verfärben sich eigentlich gar nicht so sehr – sie verlieren vielmehr eine Farbe. Das Gelb und Orange steckte schon den ganzen Sommer über im Blatt, verborgen hinter dem grünen Chlorophyll. Mit den Rottönen ist es anders: [p:Der Baum stellt sie spät in der Saison ganz gezielt her]. Forschende untersuchen noch immer die Gründe, und neue Arbeiten aus dem Jahr 2026 zeigen, wie ein einzelnes Gen und der Aufbau des Blattstiels dazu passen.",
+    "es": "En otoño, más que cambiar de color, las hojas pierden uno. Los amarillos y naranjas ya estaban dentro de la hoja durante todo el verano, ocultos tras el verde de la clorofila. Los rojos son distintos: [p:el árbol los produce a propósito, a finales de la temporada]. El personal investigador aún intenta averiguar por qué, y nuevos artículos de 2026 muestran cómo intervienen un solo gen y la estructura del pecíolo."
   },
   "sections": [
     {
       "heading_en": "Two changes, not one",
       "heading_vi": "Hai thay đổi, không phải một",
       "body_en": "The colour change in autumn has two components: the loss of the green of chlorophyll and the gain of the red of anthocyanins {wiki-autumn}. The yellow from carotenoids, the yellow xanthophylls and orange beta-carotene, is already in the leaf and only masked by summer's green. The breakdown of chlorophyll into colourless products is part of senescence. The production of anthocyanins, by contrast, is an active process. Some leaves look brown, which can come from green and red combining early in senescence, or from quinones polymerising when cells die late in it. Often the veins stay green after the tissue between them has almost completely changed colour {wiki-autumn}.",
-      "body_vi": "Sự đổi màu vào mùa thu có hai thành phần: mất màu xanh của diệp lục và thêm màu đỏ của anthocyanin {wiki-autumn}. Màu vàng từ carotenoid, gồm xanthophyll vàng và beta-carotene cam, vốn đã có trong lá và chỉ bị màu xanh mùa hè che đi. Sự phân hủy diệp lục thành các chất không màu là một phần của quá trình già hóa. Còn việc tạo anthocyanin thì ngược lại, là một quá trình chủ động. Một số lá trông nâu, có thể do xanh và đỏ trộn lại ở giai đoạn đầu của già hóa, hoặc do quinone trùng hợp khi tế bào chết ở giai đoạn muộn. Thường các gân lá vẫn xanh sau khi phần mô giữa chúng gần như đã đổi màu hoàn toàn {wiki-autumn}."
+      "body_vi": "Sự đổi màu vào mùa thu có hai thành phần: mất màu xanh của diệp lục và thêm màu đỏ của anthocyanin {wiki-autumn}. Màu vàng từ carotenoid, gồm xanthophyll vàng và beta-carotene cam, vốn đã có trong lá và chỉ bị màu xanh mùa hè che đi. Sự phân hủy diệp lục thành các chất không màu là một phần của quá trình già hóa. Còn việc tạo anthocyanin thì ngược lại, là một quá trình chủ động. Một số lá trông nâu, có thể do xanh và đỏ trộn lại ở giai đoạn đầu của già hóa, hoặc do quinone trùng hợp khi tế bào chết ở giai đoạn muộn. Thường các gân lá vẫn xanh sau khi phần mô giữa chúng gần như đã đổi màu hoàn toàn {wiki-autumn}.",
+      "heading_fr": "Deux changements, pas un seul",
+      "body_fr": "La métamorphose automnale repose sur deux mécanismes : la disparition du vert de la chlorophylle et l'apparition du rouge des anthocyanes {wiki-autumn}. Le jaune issu des caroténoïdes — les xanthophylles jaunes et le bêta-carotène orange — se trouve déjà dans la feuille, simplement masqué par la verdure estivale. La dégradation de la chlorophylle en composés incolores s'inscrit dans la sénescence. La synthèse des anthocyanes, en revanche, constitue un processus actif. Certaines feuilles virent au brun, ce qui résulte de la combinaison du vert et du rouge au début de la sénescence, ou de la polymérisation des quinones lors de la mort cellulaire à un stade plus avancé. Souvent, les nervures restent vertes alors que le tissu environnant a presque totalement changé de teinte {wiki-autumn}.",
+      "heading_de": "Zwei Veränderungen statt nur einer",
+      "body_de": "Die herbstliche Farbveränderung besteht aus zwei Komponenten: dem Verlust des Chlorophyll-Grüns und dem Hinzukommen des Anthocyan-Rots {wiki-autumn}. Das Gelb der Carotinoide – gelbe Xanthophylle und orangefarbenes Beta-Carotin – ist bereits im Blatt vorhanden und wird lediglich vom Sommergrün überdeckt. Der Abbau von Chlorophyll zu farblosen Abbauprodukten ist Teil der Seneszenz. Die Bildung von Anthocyanen ist dagegen ein aktiver Prozess. Manche Blätter wirken braun; dies kann daran liegen, dass sich Grün und Rot zu Beginn der Seneszenz mischen, oder daran, dass Chinone polymerisieren, wenn Zellen in einer späteren Phase absterben. Häufig bleiben die Blattadern noch grün, während das Gewebe dazwischen seine Farbe schon fast vollständig gewechselt hat {wiki-autumn}.",
+      "heading_es": "Dos cambios, no uno",
+      "body_es": "El cambio de color en otoño tiene dos componentes: la pérdida del verde de la clorofila y la ganancia del rojo de las antocianinas {wiki-autumn}. El amarillo procedente de los carotenoides —las xantofilas amarillas y el betacaroteno naranja— ya se encuentra en la hoja y solo está enmascarado por el verde del verano. La degradación de la clorofila en productos incoloros forma parte de la senescencia. La producción de antocianinas, en cambio, es un proceso activo. Algunas hojas adquieren un aspecto marrón, lo que puede deberse a la combinación del verde y el rojo en las primeras fases de la senescencia, o a la polimerización de quinonas cuando las células mueren en fases avanzadas. A menudo, los nervios permanecen verdes después de que el tejido situado entre ellos haya cambiado de color casi por completo {wiki-autumn}."
     },
     {
       "heading_en": "Chlorophyll gets recycled",
       "heading_vi": "Diệp lục được tái chế",
       "body_en": "In late summer, shorter days and cooler temperatures trigger senescence, and the plant starts recovering what it invested in the leaves {wiki-autumn}. The light-harvesting complex that holds chlorophyll is broken down, and so are other parts of the chloroplast such as the enzyme RubisCO. The leaf is not simply dying. The tree is taking nutrients back, and a layer of cork cells forms at the base of the stalk, the abscission layer, slowly closing the veins so that water and minerals enter less and less {wiki-autumn}. A 2026 study of fullmoon maple found that nitrogen resorption continued until the leaf fell {yazaki-2026}.",
-      "body_vi": "Cuối hè, ngày ngắn đi và nhiệt độ mát hơn kích hoạt sự già hóa, và cây bắt đầu thu hồi những gì đã đầu tư vào lá {wiki-autumn}. Phức hợp thu ánh sáng giữ diệp lục bị phân hủy, cùng các phần khác của lục lạp như enzyme RubisCO. Lá không chỉ đơn giản đang chết. Cây đang lấy lại chất dinh dưỡng, và một lớp tế bào bần hình thành ở gốc cuống, gọi là lớp rời, dần đóng các gân lại để nước và khoáng chất vào ít dần {wiki-autumn}. Một nghiên cứu năm 2026 trên cây phong mặt trăng thấy rằng sự thu hồi nitơ tiếp tục cho đến khi lá rụng {yazaki-2026}."
+      "body_vi": "Cuối hè, ngày ngắn đi và nhiệt độ mát hơn kích hoạt sự già hóa, và cây bắt đầu thu hồi những gì đã đầu tư vào lá {wiki-autumn}. Phức hợp thu ánh sáng giữ diệp lục bị phân hủy, cùng các phần khác của lục lạp như enzyme RubisCO. Lá không chỉ đơn giản đang chết. Cây đang lấy lại chất dinh dưỡng, và một lớp tế bào bần hình thành ở gốc cuống, gọi là lớp rời, dần đóng các gân lại để nước và khoáng chất vào ít dần {wiki-autumn}. Một nghiên cứu năm 2026 trên cây phong mặt trăng thấy rằng sự thu hồi nitơ tiếp tục cho đến khi lá rụng {yazaki-2026}.",
+      "heading_fr": "Le recyclage de la chlorophylle",
+      "body_fr": "À la fin de l'été, le raccourcissement des jours et la baisse des températures déclenchent la sénescence, incitant la plante à récupérer les ressources investies dans son feuillage {wiki-autumn}. Le complexe collecteur de lumière abritant la chlorophylle est démantelé, tout comme d'autres constituants du chloroplaste tels que l'enzyme RubisCO. La feuille ne se contente pas de mourir. L'arbre récupère ses nutriments, tandis qu'une couche de cellules de liège se forme à la base du pétiole, la couche d'abscission, obturant peu à peu les nervures afin que l'eau et les minéraux n'y pénètrent presque plus {wiki-autumn}. Une étude de 2026 sur l'érable pleine lune a révélé que la résorption de l'azote se poursuivait jusqu'à la chute de la feuille {yazaki-2026}.",
+      "heading_de": "Chlorophyll wird recycelt",
+      "body_de": "Im Spätsommer lösen kürzere Tage und kühlere Temperaturen die Seneszenz aus, und die Pflanze beginnt zurückzuholen, was sie in die Blätter investiert hat {wiki-autumn}. Der Lichtsammelkomplex, der das Chlorophyll bindet, wird abgebaut, ebenso wie andere Teile des Chloroplasten, etwa das Enzym RubisCO. Das Blatt stirbt nicht einfach ab: Der Baum zieht Nährstoffe ab, und an der Basis des Blattstiels bildet sich eine Schicht aus Korkzellen, die Trennzone, die die Leitbahnen allmählich verschließt, sodass immer weniger Wasser und Mineralien nachströmen {wiki-autumn}. Eine Studie am Japanischen Gold-Ahorn aus dem Jahr 2026 ergab, dass die Stickstoffresorption bis zum tatsächlichen Blattfall anhielt {yazaki-2026}.",
+      "heading_es": "La clorofila se recicla",
+      "body_es": "A finales del verano, el acortamiento de los días y el descenso de las temperaturas desencadenan la senescencia, y la planta comienza a recuperar lo invertido en las hojas {wiki-autumn}. El complejo recolector de luz que aloja la clorofila se descompone, al igual que otras partes del cloroplasto, como la enzima RubisCO. La hoja no se limita a morir. El árbol recupera nutrientes, y en la base del pecíolo se forma una capa de células de corcho —la capa de abscisión— que va cerrando lentamente los nervios para que el agua y los minerales entren cada vez menos {wiki-autumn}. Un estudio de 2026 sobre el arce luna llena constató que la reabsorción de nitrógeno continuaba hasta la caída de la hoja {yazaki-2026}."
     },
     {
       "heading_en": "The yellows were always there",
       "heading_vi": "Màu vàng vốn luôn ở đó",
       "body_en": "Carotenoids are present in leaves all year, packed in plastids next to the chlorophyll. As autumn nears, chlorophyll is replaced more slowly than it is used up, so the green mask fades {wiki-autumn}. The yellows, oranges and browns underneath then show through. Carotenoids are the dominant pigments in roughly 15% to 30% of tree species, among them hickories, ash, aspen, birch and sycamore. They also give colour to carrots, egg yolks and bananas. In these trees the colour is revealed rather than made.",
-      "body_vi": "Carotenoid có trong lá quanh năm, nằm trong các plastid cạnh diệp lục. Khi thu đến gần, diệp lục được thay chậm hơn tốc độ bị dùng hết, nên lớp che xanh phai dần {wiki-autumn}. Các màu vàng, cam và nâu bên dưới lộ ra. Carotenoid là sắc tố chiếm ưu thế ở khoảng 15% đến 30% số loài cây, trong đó có hồ đào, tần bì, dương, bạch dương và sung dâu. Chúng cũng tạo màu cho cà rốt, lòng đỏ trứng và chuối. Ở những cây này, màu sắc được phơi bày chứ không phải được tạo ra."
+      "body_vi": "Carotenoid có trong lá quanh năm, nằm trong các plastid cạnh diệp lục. Khi thu đến gần, diệp lục được thay chậm hơn tốc độ bị dùng hết, nên lớp che xanh phai dần {wiki-autumn}. Các màu vàng, cam và nâu bên dưới lộ ra. Carotenoid là sắc tố chiếm ưu thế ở khoảng 15% đến 30% số loài cây, trong đó có hồ đào, tần bì, dương, bạch dương và sung dâu. Chúng cũng tạo màu cho cà rốt, lòng đỏ trứng và chuối. Ở những cây này, màu sắc được phơi bày chứ không phải được tạo ra.",
+      "heading_fr": "Les jaunes ont toujours été là",
+      "body_fr": "Les caroténoïdes demeurent présents dans les feuilles tout au long de l'année, confinés dans des plastes aux côtés de la chlorophylle. À l'approche de l'automne, la chlorophylle est renouvelée plus lentement qu'elle n'est dégradée, si bien que le voile vert s'estompe {wiki-autumn}. Les teintes jaunes, orangées et brunes sous-jacentes se dévoilent alors. Les caroténoïdes constituent les pigments dominants chez environ 15 % à 30 % des espèces d'arbres, notamment les caryers, les frênes, les trembles, les bouleaux et les platanes. Ce sont eux qui colorent également les carottes, les jaunes d'œufs et les bananes. Chez ces arbres, la couleur n'est donc pas fabriquée, mais simplement révélée.",
+      "heading_de": "Die Gelbtöne waren schon immer da",
+      "body_de": "Carotinoide sind das ganze Jahr über in den Blättern vorhanden, dicht verpackt in Plastiden neben dem Chlorophyll. Wenn der Herbst naht, wird Chlorophyll langsamer ersetzt, als es abgebaut wird, sodass die grüne Maske verblasst {wiki-autumn}. Das darunterliegende Gelb, Orange und Braun tritt dann zutage. Carotinoide sind bei etwa 15 bis 30 Prozent der Baumarten die vorherrschenden Pigmente, darunter Hickory, Esche, Espe, Birke und Platane. Sie verleihen auch Karotten, Eigelb und Bananen ihre Farbe. Bei diesen Bäumen wird die Farbe somit nicht neu gebildet, sondern lediglich sichtbar gemacht.",
+      "heading_es": "Los amarillos siempre estuvieron ahí",
+      "body_es": "Los carotenoides están presentes en las hojas todo el año, empaquetados en plastidios junto a la clorofila. A medida que se acerca el otoño, la clorofila se reemplaza más despacio de lo que se consume, por lo que la máscara verde se desvanece {wiki-autumn}. Los amarillos, naranjas y marrones subyacentes quedan entonces a la vista. Los carotenoides son los pigmentos dominantes en aproximadamente el 15 % al 30 % de las especies arbóreas, entre ellas los carias, fresnos, álamos temblones, abedules y plátanos de sombra. También aportan color a las zanahorias, las yemas de huevo y los plátanos. En estos árboles, el color se revela en lugar de fabricarse."
     },
     {
       "heading_en": "The reds are manufactured",
       "heading_vi": "Sắc đỏ được chế tạo",
       "body_en": "Anthocyanins are produced actively towards the end of summer, from sugars in the sap {wiki-autumn}. They are not involved in leaf drop. Bright light increases production, and the best displays usually come when days are bright and cool and nights are chilly but not freezing. The same pigments colour cranberries, red apples and blueberries. Anthocyanins appear in around 10% of tree species in temperate regions, but in northern New England up to 70% may produce them. A 2026 study of the oak Quercus aliena found a 296 base pair insertion in the promoter of the DFR1 gene in a red-leaved cultivar, significantly associated with high anthocyanin build-up, which the ethylene-regulated protein EIN3 can switch on {pei-2026}.",
-      "body_vi": "Anthocyanin được tạo ra chủ động vào cuối hè, từ đường trong nhựa cây {wiki-autumn}. Chúng không liên quan đến việc rụng lá. Ánh sáng mạnh làm tăng sản xuất, và màn trình diễn đẹp nhất thường đến khi ngày sáng và mát, còn đêm lạnh nhưng không đóng băng. Cùng loại sắc tố này tạo màu cho nam việt quất, táo đỏ và việt quất. Anthocyanin có ở khoảng 10% số loài cây vùng ôn đới, nhưng ở phía bắc New England có thể tới 70% loài tạo ra chúng. Một nghiên cứu năm 2026 về cây sồi Quercus aliena tìm thấy một đoạn chèn 296 cặp base trong vùng khởi động của gen DFR1 ở giống lá đỏ, liên quan có ý nghĩa với sự tích lũy nhiều anthocyanin, mà protein EIN3 do ethylene điều hòa có thể bật lên {pei-2026}."
+      "body_vi": "Anthocyanin được tạo ra chủ động vào cuối hè, từ đường trong nhựa cây {wiki-autumn}. Chúng không liên quan đến việc rụng lá. Ánh sáng mạnh làm tăng sản xuất, và màn trình diễn đẹp nhất thường đến khi ngày sáng và mát, còn đêm lạnh nhưng không đóng băng. Cùng loại sắc tố này tạo màu cho nam việt quất, táo đỏ và việt quất. Anthocyanin có ở khoảng 10% số loài cây vùng ôn đới, nhưng ở phía bắc New England có thể tới 70% loài tạo ra chúng. Một nghiên cứu năm 2026 về cây sồi Quercus aliena tìm thấy một đoạn chèn 296 cặp base trong vùng khởi động của gen DFR1 ở giống lá đỏ, liên quan có ý nghĩa với sự tích lũy nhiều anthocyanin, mà protein EIN3 do ethylene điều hòa có thể bật lên {pei-2026}.",
+      "heading_fr": "Les rouges sont fabriqués",
+      "body_fr": "Les anthocyanes sont synthétisées activement vers la fin de l'été à partir des sucres de la sève {wiki-autumn}. Elles ne jouent aucun rôle dans la chute des feuilles. Une vive lumière stimule leur production, et les parures les plus éclatantes apparaissent en général lorsque les journées sont lumineuses et fraîches et les nuits froides, mais sans gel. Ces mêmes pigments colorent les canneberges, les pommes rouges et les myrtilles. Les anthocyanes s'observent chez environ 10 % des espèces d'arbres en zone tempérée, mais dans le nord de la Nouvelle-Angleterre, jusqu'à 70 % d'entre elles peuvent en produire. Une étude de 2026 sur le chêne Quercus aliena a identifié une insertion de 296 paires de bases dans le promoteur du gène DFR1 chez un cultivar à feuilles rouges, étroitement corrélée à une forte accumulation d'anthocyanes, que la protéine EIN3, régulée par l'éthylène, peut activer {pei-2026}.",
+      "heading_de": "Die Rottöne werden hergestellt",
+      "body_de": "Anthocyane werden gegen Ende des Sommers aktiv aus Zuckern im Pflanzensaft gebildet {wiki-autumn}. Am Blattfall sind sie nicht beteiligt. Helles Licht kurbelt die Produktion an, und die intensivste Färbung entsteht meist dann, wenn die Tage sonnig und kühl sind und die Nächte frisch, aber frostfrei. Dieselben Pigmente färben Cranberrys, rote Äpfel und Blaubeeren. Anthocyane kommen bei rund 10 Prozent der Baumarten in gemäßigten Breiten vor, im nördlichen Neuengland können es jedoch bis zu 70 Prozent sein. Eine Studie an der Eichenart Quercus aliena aus dem Jahr 2026 wies bei einer rotlaubigen Sorte eine 296-Basenpaar-Insertion im Promotor des DFR1-Gens nach, die signifikant mit einer starken Anthocyan-Anreicherung zusammenhing und durch das Ethylen-regulierte Protein EIN3 aktiviert werden kann {pei-2026}.",
+      "heading_es": "Los rojos se fabrican",
+      "body_es": "Las antocianinas se producen de forma activa hacia el final del verano, a partir de los azúcares de la savia {wiki-autumn}. No intervienen en la caída de las hojas. La luz intensa incrementa su producción, y las tonalidades más espectaculares suelen presentarse cuando los días son luminosos y frescos y las noches son frías pero sin heladas. Estos mismos pigmentos colorean los arándanos rojos, las manzanas rojas y los arándanos azules. Las antocianinas aparecen en alrededor del 10 % de las especies arbóreas de regiones templadas, pero en el norte de Nueva Inglaterra hasta un 70 % puede producirlas. Un estudio de 2026 sobre el roble Quercus aliena halló una inserción de 296 pares de bases en el promotor del gen DFR1 en un cultivar de hojas rojas, significativamente asociada con una alta acumulación de antocianinas, la cual puede ser activada por la proteína EIN3, regulada por etileno {pei-2026}."
     },
     {
       "heading_en": "Why make red at all?",
       "heading_vi": "Vì sao phải tạo màu đỏ?",
       "body_en": "The question is open. Under the photoprotection theory, anthocyanins shield the leaf from light at low temperatures, where photo-oxidation would make nutrient recovery less efficient, so the tree takes back more nitrogen before the leaf falls {wiki-autumn}. Under the coevolution theory, red leaves warn aphids that spend winter on trees. In apple trees, aphids that avoided red-leaved varieties developed better. The same source notes a trade-off: varieties with red leaves had smaller fruits, which suggests the colour has a cost. These ideas are not exclusive, and the sources present them as hypotheses.",
-      "body_vi": "Câu hỏi này còn bỏ ngỏ. Theo thuyết bảo vệ quang, anthocyanin che chắn lá khỏi ánh sáng ở nhiệt độ thấp, nơi quá trình oxy hóa do ánh sáng làm việc thu hồi dưỡng chất kém hiệu quả hơn, nên cây lấy lại được nhiều nitơ hơn trước khi lá rụng {wiki-autumn}. Theo thuyết đồng tiến hóa, lá đỏ cảnh báo rệp qua đông trên cây. Ở cây táo, rệp tránh các giống lá đỏ phát triển tốt hơn. Cùng nguồn ghi nhận một sự đánh đổi: các giống lá đỏ có quả nhỏ hơn, gợi ý màu sắc này có cái giá. Các ý tưởng này không loại trừ nhau, và các nguồn trình bày chúng như giả thuyết."
+      "body_vi": "Câu hỏi này còn bỏ ngỏ. Theo thuyết bảo vệ quang, anthocyanin che chắn lá khỏi ánh sáng ở nhiệt độ thấp, nơi quá trình oxy hóa do ánh sáng làm việc thu hồi dưỡng chất kém hiệu quả hơn, nên cây lấy lại được nhiều nitơ hơn trước khi lá rụng {wiki-autumn}. Theo thuyết đồng tiến hóa, lá đỏ cảnh báo rệp qua đông trên cây. Ở cây táo, rệp tránh các giống lá đỏ phát triển tốt hơn. Cùng nguồn ghi nhận một sự đánh đổi: các giống lá đỏ có quả nhỏ hơn, gợi ý màu sắc này có cái giá. Các ý tưởng này không loại trừ nhau, và các nguồn trình bày chúng như giả thuyết.",
+      "heading_fr": "Pourquoi produire du rouge ?",
+      "body_fr": "La question reste ouverte. Selon la théorie de la photoprotection, les anthocyanes protègent la feuille de la lumière aux températures fraîches, où la photo-oxydation réduirait l'efficacité de la récupération des nutriments ; l'arbre extrait ainsi davantage d'azote avant que la feuille ne tombe {wiki-autumn}. Selon la théorie de la coévolution, les feuilles rouges font office de signal d'avertissement pour les pucerons qui hivernent sur les arbres. Chez les pommiers, les pucerons ayant évité les variétés à feuillage rouge se sont mieux développés. La même source signale toutefois un compromis : les variétés à feuilles rouges portaient des fruits plus petits, ce qui donne à penser que cette coloration a un coût. Ces explications ne s'excluent pas mutuellement et les sources les avancent sous forme d'hypothèses.",
+      "heading_de": "Warum überhaupt Rot?",
+      "body_de": "Die Frage ist noch ungeklärt. Nach der Photoprotektions-Hypothese schirmen Anthocyane das Blatt bei niedrigen Temperaturen vor Licht ab, da Photooxidation die Nährstoffrückgewinnung beeinträchtigen würde; so kann der Baum mehr Stickstoff zurückziehen, bevor das Blatt fällt {wiki-autumn}. Nach der Koevolutionstheorie warnen rote Blätter Blattläuse, die auf Bäumen überwintern. Bei Apfelbäumen entwickelten sich Blattläuse besser, die rotlaubige Sorten mieden. Dieselbe Quelle weist auf einen evolutionären Kompromiss hin: Sorten mit roten Blättern trugen kleinere Früchte, was darauf hindeutet, dass die Färbung ihren Preis hat. Diese Erklärungsansätze schließen einander nicht aus, und die Quellen führen sie als Hypothesen an.",
+      "heading_es": "¿Por qué producir rojo?",
+      "body_es": "La pregunta sigue abierta. Según la teoría de la fotoprotección, las antocianinas protegen la hoja de la luz a bajas temperaturas, donde la fotooxidación reduciría la eficiencia en la recuperación de nutrientes, lo que permite al árbol reabsorber más nitrógeno antes de que la hoja caiga {wiki-autumn}. Según la teoría de la coevolución, las hojas rojas advierten a los pulgones que pasan el invierno en los árboles. En los manzanos, los pulgones que evitaban las variedades de hojas rojas se desarrollaban mejor. La misma fuente señala una contrapartida: las variedades con hojas rojas tenían frutos más pequeños, lo que sugiere que el color conlleva un coste. Estas ideas no son incompatibles, y las fuentes las presentan como hipótesis."
     },
     {
       "heading_en": "Reading the maple study carefully",
       "heading_vi": "Đọc kỹ nghiên cứu về cây phong",
       "body_en": "The textbook reason trees drop leaves, that upkeep costs outweigh winter photosynthesis, is considered oversimplified, since insect predation, water loss and wind or snow damage also matter {wiki-autumn}. One older guess was that colour is a by-product of the leaf stalk closing, with sugars trapped when phloem is blocked. The fullmoon maple study found no relationship between abscission-zone development and anthocyanin build-up. Nitrogen continued to leave the leaf, which suggests the phloem stayed functional {yazaki-2026}. It compared leaves in open and shaded positions, and it concerns one species. So the result rules out a single mechanism in that tree, and does not settle the question for every species or for the role of colour in the whole forest.",
-      "body_vi": "Lý do trong sách giáo khoa vì sao cây rụng lá, rằng chi phí duy trì lớn hơn quang hợp mùa đông, được xem là quá đơn giản, vì sâu bọ ăn lá, mất nước và gió hay tuyết làm hại cũng quan trọng {wiki-autumn}. Một phỏng đoán cũ cho rằng màu sắc là sản phẩm phụ của việc cuống lá đóng lại, khiến đường bị giữ khi mạch phloem tắc. Nghiên cứu về cây phong mặt trăng không thấy mối liên hệ giữa sự phát triển vùng rời và sự tích lũy anthocyanin. Nitơ vẫn tiếp tục rời lá, gợi ý mạch phloem vẫn hoạt động {yazaki-2026}. Nghiên cứu so sánh lá ở vị trí ngoài sáng và trong bóng, và chỉ xét một loài. Vì thế kết quả loại trừ một cơ chế đơn lẻ ở cây đó, chứ không giải quyết câu hỏi cho mọi loài hay vai trò của màu sắc trong cả khu rừng."
+      "body_vi": "Lý do trong sách giáo khoa vì sao cây rụng lá, rằng chi phí duy trì lớn hơn quang hợp mùa đông, được xem là quá đơn giản, vì sâu bọ ăn lá, mất nước và gió hay tuyết làm hại cũng quan trọng {wiki-autumn}. Một phỏng đoán cũ cho rằng màu sắc là sản phẩm phụ của việc cuống lá đóng lại, khiến đường bị giữ khi mạch phloem tắc. Nghiên cứu về cây phong mặt trăng không thấy mối liên hệ giữa sự phát triển vùng rời và sự tích lũy anthocyanin. Nitơ vẫn tiếp tục rời lá, gợi ý mạch phloem vẫn hoạt động {yazaki-2026}. Nghiên cứu so sánh lá ở vị trí ngoài sáng và trong bóng, và chỉ xét một loài. Vì thế kết quả loại trừ một cơ chế đơn lẻ ở cây đó, chứ không giải quyết câu hỏi cho mọi loài hay vai trò của màu sắc trong cả khu rừng.",
+      "heading_fr": "Une lecture attentive de l'étude sur l'érable",
+      "body_fr": "L'explication classique selon laquelle les arbres perdent leurs feuilles parce que leur coût d'entretien dépasse le rendement de la photosynthèse hivernale est jugée trop simpliste, car la prédation par les insectes, les pertes hydriques et les dégâts causés par le vent ou la neige pèsent également {wiki-autumn}. Une hypothèse plus ancienne supposait que la couleur était un sous-produit de l'obturation du pétiole, les sucres se retrouvant piégés lors du blocage du phloème. Or, l'étude sur l'érable pleine lune n'a établi aucun lien entre le développement de la zone d'abscission et l'accumulation d'anthocyanes. L'azote a continué d'être évacué de la feuille, ce qui suggère que le phloème est resté fonctionnel {yazaki-2026}. L'étude comparait des feuilles exposées et ombragées, et elle ne porte que sur une seule espèce. Ses conclusions écartent donc un mécanisme unique chez cet arbre, sans pour autant trancher la question pour toutes les essences ni déterminer le rôle de la couleur à l'échelle de la forêt entière.",
+      "heading_de": "Die Ahorn-Studie genau betrachtet",
+      "body_de": "Die typische Lehrbucherklärung für den Laubfall – dass die Erhaltungskosten den Nutzen der Photosynthese im Winter übersteigen – gilt inzwischen als stark vereinfacht, da auch Insektenfraß, Wasserverlust sowie Sturm- oder Schneeschäden eine Rolle spielen {wiki-autumn}. Eine ältere Vermutung besagte, die Färbung sei ein Nebenprodukt des Verschlusses am Blattstiel: Sobald das Phloem blockiert werde, stauten sich Zucker im Blatt. Die Studie am Japanischen Gold-Ahorn ergab jedoch keinen Zusammenhang zwischen der Ausbildung der Trennzone und der Anreicherung von Anthocyanen. Stickstoff wanderte weiterhin aus dem Blatt ab, was darauf hindeutet, dass das Phloem funktionstüchtig blieb {yazaki-2026}. Die Untersuchung verglich Blätter an sonnigen und schattigen Standorten und bezog sich auf eine einzelne Art. Das Ergebnis schließt also lediglich einen bestimmten Mechanismus bei diesem einen Baum aus und beantwortet die Frage weder für alle Baumarten noch für die Funktion der Laubfärbung im gesamten Wald.",
+      "heading_es": "Lectura atenta del estudio del arce",
+      "body_es": "La explicación clásica de los libros de texto para la caída de las hojas —que los costes de mantenimiento superan la fotosíntesis invernal— se considera excesivamente simplificada, ya que la depredación por insectos, la pérdida de agua y los daños por viento o nieve también influyen {wiki-autumn}. Una conjetura anterior sostenía que el color era un subproducto del cierre del pecíolo, al quedar atrapados los azúcares cuando se bloquea el floema. El estudio sobre el arce luna llena no halló ninguna relación entre el desarrollo de la zona de abscisión y la acumulación de antocianinas. El nitrógeno continuó saliendo de la hoja, lo que sugiere que el floema permaneció funcional {yazaki-2026}. El trabajo comparó hojas en posiciones expuestas y sombreadas, y atañe a una sola especie. Por tanto, el resultado descarta un mecanismo único en ese árbol, y no resuelve la cuestión para todas las especies ni aclara la función del color en el conjunto del bosque."
     }
   ],
   "keyPoint": {
     "en": "Autumn colour is two stories. Yellow and orange were in the leaf all along, revealed as chlorophyll is recycled. [p:Red is made on purpose,] and its job is still debated. Bright, cool days and chilly nights tend to give the strongest displays.",
-    "vi": "Màu thu là hai câu chuyện. Vàng và cam vốn có sẵn trong lá, lộ ra khi diệp lục được tái chế. [p:Đỏ được tạo ra có chủ đích,] và vai trò của nó vẫn còn tranh luận. Ngày sáng, mát và đêm lạnh thường cho màn trình diễn rực rỡ nhất."
+    "vi": "Màu thu là hai câu chuyện. Vàng và cam vốn có sẵn trong lá, lộ ra khi diệp lục được tái chế. [p:Đỏ được tạo ra có chủ đích,] và vai trò của nó vẫn còn tranh luận. Ngày sáng, mát và đêm lạnh thường cho màn trình diễn rực rỡ nhất.",
+    "fr": "La coloration automnale se déploie en deux temps. Le jaune et l'orange étaient présents depuis toujours, révélés à mesure que la chlorophylle est recyclée. [p:Le rouge est produit délibérément,] et sa fonction fait encore débat. Des journées lumineuses et fraîches suivies de nuits froides offrent généralement le spectacle le plus saisissant.",
+    "de": "Die Herbstfärbung erzählt zwei Geschichten. Gelb und Orange waren die ganze Zeit im Blatt vorhanden und treten zutage, während Chlorophyll recycelt wird. [p:Rot wird ganz gezielt gebildet,] und über seine Funktion wird noch debattiert. Helle, kühle Tage und frische Nächte bringen meist die intensivsten Farben hervor.",
+    "es": "El color otoñal tiene dos explicaciones. El amarillo y el naranja estuvieron en la hoja todo el tiempo, y se revelan a medida que la clorofila se recicla. [p:El rojo se fabrica a propósito,] y su función sigue debatiéndose. Los días luminosos y frescos junto con noches frías suelen propiciar las tonalidades más intensas."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Chọn một cây gần bạn và chụp cùng một cành mỗi tuần cho đến khi lá rụng.",
       "Nhặt một lá xanh và một lá vàng rồi so sánh dưới cùng ánh sáng.",
       "Kiểm tra cây nào trên phố bạn chuyển đỏ, và ghi lại mỗi cây nhận bao nhiêu nắng."
+    ],
+    "fr": [
+      "Choisissez un arbre près de chez vous et photographiez la même branche chaque semaine jusqu'à la chute des feuilles.",
+      "Ramassez une feuille verte et une feuille jaune, puis comparez-les sous un même éclairage.",
+      "Observez quels arbres de votre rue virent au rouge et notez leur degré d'exposition au soleil."
+    ],
+    "de": [
+      "Wähle einen Baum in deiner Nähe und fotografiere denselben Zweig wöchentlich, bis die Blätter fallen.",
+      "Sammle ein grünes sowie ein gelbes Blatt und vergleiche beide bei gleichem Licht.",
+      "Prüfe, welche der Bäume in deiner Straße sich rot verfärben, und notiere, wie viel Sonne die einzelnen Bäume bekommen."
+    ],
+    "es": [
+      "Elige un árbol cercano y fotografía la misma rama cada semana hasta que caigan las hojas.",
+      "Recoge una hoja verde y otra amarilla y compáralas bajo la misma luz.",
+      "Comprueba cuáles árboles de tu calle se vuelven rojos y anota cuánta luz solar recibe cada uno."
     ]
   },
   "references": [
@@ -98,12 +158,97 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/autumn-leaf-colours-explained.webp",
+    "url": "https://images.unsplash.com/18/leaves.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjUxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "petradr",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/WqK_xV_hbug"
+    "sourceUrl": "https://unsplash.com/photos/WqK_xV_hbug",
+    "wide": "https://images.unsplash.com/18/leaves.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjUxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@petradr?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAACQBQCdASoQABwAPu1kqU2ppaOiMAgBMB2JbACdMoR4G8AgwHWoPsZZTYLxYS5ZdmpRQqVRwAD6kcBTU7UAk0BF+6X0ZXF/34I0Usaq7pU9znORB4JNZm3xFhOHeiqMXVHmLAwPm4rA59j4J4hKCUQ/ItU0JxU8PCaIj7XRLxKi2KVgmHcl5OAn3Yfm4x+ibGTSPUi62SYYOjykkOVdnfnOYgVq8gzqZ8ACdjeVebAcyTY521XZMNKsl7VFdWtIUZ/8tbj5MbD7+B2eQtNG/eBFM0N8Pk4HohUGylkR/0hhgoa/KFhFUr7CzFchEG2cAAA=",
-  "dominant": "#6c4a20"
+  "dominant": "#6c4a20",
+  "glossary": {
+    "en": {
+      "chlorophyll": "Green pigment in leaves used to absorb sunlight during photosynthesis.",
+      "anthocyanins": "Red pigments produced in autumn leaves that help shield them from light.",
+      "carotenoids": "Yellow, orange, or brown pigments present in leaves throughout the year.",
+      "senescence": "The regulated biological aging process where plants recycle leaf nutrients before shedding.",
+      "quinones": "Organic compounds that polymerise when leaf cells die, producing brown colours.",
+      "rubisco": "A vital photosynthetic enzyme broken down for nutrient recovery in autumn.",
+      "abscission layer": "A protective boundary of cells forming at the leaf stalk base.",
+      "nitrogen resorption": "The recovery and transport of nitrogen from senescing leaves to the tree.",
+      "photoprotection theory": "The idea that red pigments shield leaves from light during nutrient recovery.",
+      "coevolution theory": "The idea that red leaves serve as a warning signal to insect pests.",
+      "phloem": "Vascular tissue in plants that transports sugars and nutrients out of leaves."
+    },
+    "vi": {
+      "diệp lục": "Sắc tố quang hợp màu xanh lục trong lá cây giúp hấp thụ ánh sáng mặt trời.",
+      "anthocyanin": "Sắc tố tạo màu đỏ hoặc tím, được cây chủ động tổng hợp vào cuối hè.",
+      "carotenoid": "Nhóm sắc tố màu vàng và cam luôn có sẵn trong lá suốt mùa hè.",
+      "xanthophyll": "Sắc tố thuộc nhóm carotenoid tạo nên màu vàng tự nhiên của lá cây.",
+      "beta-carotene": "Sắc tố thuộc nhóm carotenoid tạo ra màu cam ở lá cây và củ cà rốt.",
+      "già hóa": "Giai đoạn thoái hóa tự nhiên của lá trước khi rụng vào cuối chu kỳ sống.",
+      "quinone": "Hợp chất hữu cơ liên kết lại tạo nên màu nâu khi tế bào lá chết.",
+      "lục lạp": "Bào quan bên trong tế bào thực vật chứa diệp lục để thực hiện quang hợp.",
+      "rubisco": "Loại enzyme quan trọng trong lục lạp tham gia cố định carbon khi quang hợp.",
+      "lớp rời": "Lớp tế bào bần ở cuống lá giúp cắt đứt dòng dinh dưỡng để lá rụng.",
+      "plastid": "Nhóm bào quan thực vật chịu trách nhiệm tích trữ và tạo ra các sắc tố.",
+      "vùng khởi động": "Đoạn DNA nằm trước gen giúp điều hòa quá trình biểu hiện và bật gen.",
+      "mạch phloem": "Hệ thống mô dẫn truyền đường và dưỡng chất từ lá đến các bộ phận khác."
+    },
+    "fr": {
+      "anthocyanes": "Pigments végétaux produisant des teintes rouges, pourpres ou bleues, synthétisés en fin d'été.",
+      "caroténoïdes": "Pigments jaunes et orangés présents en permanence dans les feuilles, masqués par la chlorophylle.",
+      "xanthophylles": "Pigments caroténoïdes jaunes naturellement présents dans les chloroplastes des feuilles.",
+      "sénescence": "Processus biologique de vieillissement et de dégradation programmée des cellules de la feuille.",
+      "rubisco": "Enzyme végétale majeure de la photosynthèse, dégradée et récupérée lors de la sénescence.",
+      "couche d'abscission": "Zone cellulaire à la base du pétiole qui se fragmente pour détacher la feuille.",
+      "plastes": "Organites cellulaires végétaux renfermant des pigments comme la chlorophylle ou les caroténoïdes.",
+      "dfr1": "Gène végétal codant une enzyme clé pour la production d'anthocyanes.",
+      "ein3": "Facteur de transcription régulé par l'éthylène qui active l'expression de certains gènes.",
+      "photoprotection": "Mécanisme de défense protégeant les tissus végétaux contre un excès de lumière.",
+      "photo-oxydation": "Dégradation cellulaire nocive causée par l'interaction de la lumière et de l'oxygène à basse température.",
+      "phloème": "Tissu conducteur végétal qui achemine la sève nourricière et les nutriments recyclés."
+    },
+    "de": {
+      "chlorophyll": "Grüner Pflanzenfarbstoff in Chloroplasten, der für die Photosynthese unverzichtbar ist.",
+      "anthocyane": "Wasserlösliche Pflanzenfarbstoffe, die Blättern und Früchten eine rote bis bläuliche Färbung verleihen.",
+      "carotinoide": "Fettlösliche Pigmente, die Pflanzenteile gelb bis rot färben und bei der Lichtaufnahme helfen.",
+      "seneszenz": "Der genetisch gesteuerte Alterungsprozess von Pflanzenzellen vor dem Blattabfall.",
+      "xanthophylle": "Eine Untergruppe der Carotinoide, die für gelbe Färbungen in Blättern verantwortlich ist.",
+      "rubisco": "Zentrales Enzym der Photosynthese, das Kohlendioxid aus der Luft in organische Moleküle einbindet.",
+      "lichtsammelkomplex": "Proteinkomplex in Chloroplasten, der Sonnenlicht einfängt und an das Reaktionszentrum weiterleitet.",
+      "trennzone": "Zellschicht an der Basis des Blattstiels, die den Blattfall vorbereitet und das Blatt ablöst.",
+      "stickstoffresorption": "Der Rücktransport von wertvollem Stickstoff aus dem alternden Blatt in dauerhafte Pflanzenteile.",
+      "plastiden": "Zellorganellen in Pflanzen, zu denen Chloroplasten und andere pigmenthaltige Speicherstrukturen zählen.",
+      "photooxidation": "Lichtbedingte Zerstörung von Zellbestandteilen durch aggressive Sauerstoffverbindungen bei starker Einstrahlung.",
+      "phloem": "Das Leitgewebe von Gefäßpflanzen, das Nährstoffe und Zucker durch die Pflanze transportiert."
+    },
+    "es": {
+      "clorofila": "Pigmento verde que absorbe luz solar para la fotosíntesis y oculta otros colores en verano.",
+      "antocianinas": "Pigmentos producidos activamente hacia el final del verano que aportan tonos rojos a las hojas.",
+      "carotenoides": "Pigmentos presentes todo el año que generan coloraciones amarillas y anaranjadas en las hojas.",
+      "xantofilas": "Pigmentos carotenoides que aportan tonos amarillos a las hojas.",
+      "betacaroteno": "Pigmento carotenoide de color naranja presente de forma natural en las hojas.",
+      "senescencia": "Fase final del ciclo de la hoja en la que la planta degrada estructuras y recupera nutrientes.",
+      "quinonas": "Compuestos celulares cuya polimerización tardía da tonos marrones al morir las células foliares.",
+      "pecíolo": "Estructura o tallo delgado que une la lámina foliar con la rama.",
+      "capa de abscisión": "Estrato celular en la base foliar que bloquea el flujo vascular y facilita la caída.",
+      "reabsorción de nitrógeno": "Proceso por el cual la planta recupera nitrógeno foliar antes del desprendimiento de la hoja.",
+      "plastidios": "Orgánulos celulares vegetales donde se almacenan o sintetizan pigmentos como los carotenoides.",
+      "floema": "Tejido vascular vegetal que conduce azúcares y otros nutrientes orgánicos sintetizados."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

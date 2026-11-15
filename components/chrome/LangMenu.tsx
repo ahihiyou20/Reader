@@ -2,13 +2,16 @@
 import { Check } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 import { setLanguage } from '@/lib/actions';
-import type { Lang } from '@/lib/content/types';
+import { LANG_NAME, type Lang } from '@/lib/content/types';
 import { useUI } from '@/stores/ui';
 import { useT } from '../hooks';
 
-const OPTIONS: Array<{ lang: Lang; flag: string; name: string }> = [
-  { lang: 'vi', flag: '🇻🇳', name: 'Tiếng Việt' },
-  { lang: 'en', flag: '🇺🇸', name: 'English' },
+const OPTIONS: Array<{ lang: Lang; flag: string }> = [
+  { lang: 'vi', flag: '🇻🇳' },
+  { lang: 'en', flag: '🇺🇸' },
+  { lang: 'fr', flag: '🇫🇷' },
+  { lang: 'de', flag: '🇩🇪' },
+  { lang: 'es', flag: '🇪🇸' },
 ];
 
 /** CMP-03: grows from the trigger, closes the same way, closes on outside tap or Escape. */
@@ -48,7 +51,7 @@ export function LangMenu() {
               <Check className="ic" strokeWidth={2.6} aria-hidden="true" />
             </span>
             <span aria-hidden="true">{o.flag}</span>
-            {o.name}
+            {LANG_NAME[o.lang]}
           </button>
         ))}
       </div>

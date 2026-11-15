@@ -1,4 +1,4 @@
-import type { Lang } from '@/lib/content/types';
+import { LOCALE, type Lang } from '@/lib/content/types';
 import { translate } from '@/lib/i18n';
 
 /** FR-13: 999 · 1.2K · 12K · 1.2M */
@@ -21,7 +21,7 @@ export function timeAgo(date: Date | number, lang: Lang, now = Date.now()): stri
   if (s < 3600) return translate(lang, 'minutesAgo', { n: Math.floor(s / 60) });
   if (s < 86400) return translate(lang, 'hoursAgo', { n: Math.floor(s / 3600) });
   if (s < 7 * 86400) return translate(lang, 'daysAgo', { n: Math.floor(s / 86400) });
-  return new Date(date).toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US', { day: 'numeric', month: 'short' });
+  return new Date(date).toLocaleDateString(LOCALE[lang], { day: 'numeric', month: 'short' });
 }
 
 /** Extra darkening for bright covers, from the cover's average colour (0 for dark photos, up to 0.32). */

@@ -32,11 +32,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/596/1080/1920",
+    "url": "https://images.unsplash.com/reserve/unsplash_5288cc8f3571d_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE5fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Paul Proshin",
+    "author": "Pavel Proshin",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/0jgAnkgYwBE"
+    "sourceUrl": "https://unsplash.com/photos/0jgAnkgYwBE",
+    "wide": "https://images.unsplash.com/reserve/unsplash_5288cc8f3571d_1.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE5fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@soypablo?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -80,9 +82,37 @@
     "changes": []
   },
   "ai": {
-    "fields": [],
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
     "reviewed": false,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-31T02:36:27.771Z"
+  "publishAt": "2026-10-31T02:36:27.771Z",
+  "glossary": {
+    "en": {
+      "territoriality": "The defense of a bounded geographic area containing resources against individuals or groups outside the community.",
+      "okiek": "An indigenous hunter-gatherer ethnic group living in the mountain forests of Kenya.",
+      "quartz": "A hard mineral used by ancient foragers to manufacture sharp stone tools.",
+      "hearths": "Ancient fireplace pits used for cooking food, providing heat, and serving as activity areas.",
+      "hora 1": "An archaeological rock-shelter site situated on a granite mountain in northern Malawi.",
+      "archaeological deposits": "Accumulated layers of sediment, animal remains, and artifacts left behind by past human inhabitants.",
+      "phalanges": "The small bones that form the fingers and toes in human and animal skeletons.",
+      "marrow": "A nutrient-rich, fatty substance found inside the hollow interior cavities of bones.",
+      "game drives": "Coordinated communal hunting strategies to herd wild animals toward hunters, traps, or nets.",
+      "ancient dna": "Genetic material extracted and analyzed from preserved prehistoric human or animal skeletal remains.",
+      "funerary pyre": "A ceremonial structure made of wood used to cremate a deceased human body.",
+      "cremation": "The practice of burning a deceased human body as part of funeral rites."
+    }
+  },
+  "summary": {
+    "vi": "Phân tích gần 13.000 mảnh xương động vật tại di chỉ Hora 1 ở Malawi hé lộ đời sống xã hội của người săn bắt–hái lượm (*foraging*) cuối Kỷ Băng hà. Cư dân chủ yếu săn thú nhỏ quanh nơi ở và chắt chiu từng chút tủy xương do thực phẩm khan hiếm. Hoạt động này đòi hỏi sự hợp tác nội nhóm (*in-group cooperation*) chặt chẽ. Dữ liệu ADN cổ đại (*ancient DNA*) còn cho thấy các ranh giới văn hóa (*cultural boundaries*) đã sớm hình thành để phân tách cộng đồng mà không cần đến xung đột bạo lực bảo vệ lãnh thổ.",
+    "fr": "Au nord du Malawi, l'abri sous roche de Hora 1 dévoile les secrets des chasseurs-cueilleurs de la fin de l'ère glaciaire. L'analyse de milliers d'ossements montre que ces populations chassaient du petit gibier de proximité et exploitaient la moindre calorie. Une telle subsistance exigeait une entraide collective rigoureuse. Croisées avec l'ADN ancien, ces données révèlent l'émergence de frontières culturelles précoces : un sentiment d'appartenance partagé séparait le groupe de ses voisins, délimitant ainsi un « nous » et un « eux », sans conflit armé ni défense violente du territoire.",
+    "de": "Ausgrabungen im Felsüberhang Hora 1 im Norden Malawis geben faszinierende Einblicke in das Sozialleben früher Jäger und Sammler. Analysen von fast 13.000 Tierknochenfragmenten aus den letzten 21.000 Jahren zeigen, dass die Menschen fast ausschließlich kleine Tiere aus der unmittelbaren Umgebung jagten und selbst karge Knochen für Mark zerkleinerten. Obwohl die Ressourcen knapp waren, blieben sie vor Ort. Fossile DNA-Spuren belegen, dass bereits vor 19.000 Jahren deutliche soziale Grenzen zwischen Nachbargruppen entstanden. Diese Form des Zusammenlebens erforderte enge Kooperation nach innen, funktionierte jedoch offenbar ohne gewaltsame Gebietsverteidigung.",
+    "es": "El análisis de miles de huesos fósiles hallados en el refugio Hora 1, en Malaui, arroja luz sobre la organización social de los cazadores y recolectores del Pleistoceno tardío. Las presas pequeñas y fracturadas revelan una dieta basada en la recolección exhaustiva de recursos locales escasos, lo que exigió una estrecha cooperación comunitaria. ¿Cómo afectó esta dinámica a las relaciones con grupos vecinos? El ADN antiguo indica que, hace 19 000 años, surgieron fronteras culturales simbólicas que delimitaban territorios sin recurrir a la violencia organizada. Así, el interior africano demuestra que la identidad grupal y la territorialidad no dependieron exclusivamente de la abundancia costera ni de artefactos duraderos."
+  }
 }

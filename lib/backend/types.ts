@@ -1,5 +1,6 @@
 import type { Counts, Lang } from '@/lib/content/types';
 import type { Streak } from '@/lib/streak';
+import type { ReadingData } from '@/lib/reading-sync';
 
 export type Provider = 'anonymous' | 'google' | 'demo';
 
@@ -114,6 +115,9 @@ export interface Backend {
   updateProfile(patch: { displayName?: string; lang?: Lang; timezone?: string }): Promise<void>;
   submitPost(input: SubmissionInput): Promise<string>;
   listMySubmissions(): Promise<SubmissionDoc[]>;
+  /** Reading data kept with the account (stores/reading.ts); null when the account has none yet. */
+  loadReading(): Promise<ReadingData | null>;
+  saveReading(data: ReadingData): Promise<void>;
   exportData(): Promise<unknown>;
   deleteAccount(opts: { deleteComments: boolean }): Promise<void>;
 }

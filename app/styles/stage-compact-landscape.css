@@ -131,12 +131,6 @@ html[data-stage='compact-landscape'] .crow {
   gap: 12px;
 }
 
-html[data-stage='compact-landscape'] .crow .epill {
-  margin-left: 0;
-  height: 38px;
-  font-size: 15px;
-}
-
 html[data-stage='compact-landscape'] .ctitle {
   position: absolute;
   left: calc(env(safe-area-inset-left, 0px) + 64px);
@@ -417,13 +411,9 @@ html[data-stage='compact-landscape'] .ebottom .ctarow {
 
 html[data-stage='compact-landscape'] .ebottom .cta {
   height: 42px;
-  padding: 0 10px;
-  font-size: 12.5px;
+  padding: 0 16px;
+  font-size: 13px;
   gap: 5px;
   white-space: nowrap;
 }
 
-html[data-stage='compact-landscape'] .ebottom .ctaside {
-  width: 24px;
-  height: 42px;
-}

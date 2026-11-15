@@ -11,59 +11,110 @@
   ],
   "title": {
     "en": "The sunk cost fallacy: why we finish what we should drop",
-    "vi": "Ngụy biện chi phí chìm: vì sao ta cố hoàn thành điều nên bỏ"
+    "vi": "Ngụy biện chi phí chìm: vì sao ta cố hoàn thành điều nên bỏ",
+    "fr": "Le biais des coûts irrécupérables : pourquoi nous nous obstinons",
+    "de": "Die Sunk-Cost-Falle: Warum wir beenden, was wir abbrechen sollten",
+    "es": "La falacia del costo hundido: por qué terminamos lo que deberíamos abandonar"
   },
   "hook": {
     "en": "Economic theory has a blunt rule: money, time or effort already spent should not change what you do next, because nothing you decide now can get it back. People break the rule constantly. A 2026 experiment found that even [p:cognitive effort already spent] made volunteers more willing to spend more. This is the sunk cost effect, and it is easier to name than to resist.",
-    "vi": "Kinh tế học có một quy tắc phũ phàng: tiền bạc, thời gian hay công sức đã bỏ ra không nên ảnh hưởng đến việc bạn làm tiếp, vì không quyết định nào bây giờ lấy lại được chúng. Con người phá quy tắc ấy liên tục. Một thí nghiệm năm 2026 cho thấy ngay cả [p:nỗ lực trí óc đã tiêu tốn] cũng khiến người tham gia sẵn sàng bỏ thêm nữa. Đó là hiệu ứng chi phí chìm, dễ gọi tên hơn là dễ cưỡng lại."
+    "vi": "Kinh tế học có một quy tắc phũ phàng: tiền bạc, thời gian hay công sức đã bỏ ra không nên ảnh hưởng đến việc bạn làm tiếp, vì không quyết định nào bây giờ lấy lại được chúng. Con người phá quy tắc ấy liên tục. Một thí nghiệm năm 2026 cho thấy ngay cả [p:nỗ lực trí óc đã tiêu tốn] cũng khiến người tham gia sẵn sàng bỏ thêm nữa. Đó là hiệu ứng chi phí chìm, dễ gọi tên hơn là dễ cưỡng lại.",
+    "fr": "La théorie économique pose une règle sans détour : l'argent, le temps ou l'énergie déjà consentis ne devraient pas influencer vos décisions futures, car rien de ce que vous décidez maintenant ne permettra de les récupérer. Pourtant, cette règle est constamment enfreinte. Une expérience de 2026 a révélé que même [p:l'effort cognitif déjà consenti] rendait les volontaires plus enclins à en fournir davantage. C'est l'effet du coût irrécupérable, et il est bien plus facile à nommer qu'à surmonter.",
+    "de": "Die Wirtschaftstheorie kennt eine nüchterne Regel: Bereits investiertes Geld, investierte Zeit oder Mühe sollten nicht beeinflussen, was du als Nächstes tust, denn keine gegenwärtige Entscheidung kann sie dir zurückbringen. Dennoch verstoßen Menschen ständig dagegen. Ein Experiment aus dem Jahr 2026 ergab, dass schon [p:bereits aufgewendete kognitive Mühe] Freiwillige dazu brachte, noch mehr zu investieren. Dies ist der Sunk-Cost-Effekt – und er lässt sich leichter benennen als überwinden.",
+    "es": "La teoría económica tiene una regla tajante: el dinero, el tiempo o el esfuerzo ya invertidos no deberían cambiar lo que hagamos a continuación, pues ninguna decisión actual permitirá recuperarlos. La gente infringe esta regla de continuo. Un experimento de 2026 reveló que incluso [p:el esfuerzo cognitivo ya invertido] aumentaba la disposición de los voluntarios a gastar más. Este es el efecto del costo hundido, y resulta más fácil de nombrar que de resistir."
   },
   "sections": [
     {
       "heading_en": "What a sunk cost is",
       "heading_vi": "Chi phí chìm là gì",
       "body_en": "A sunk cost is a cost that has been incurred and cannot be recovered. Classical economics contrasts it with prospective costs, which can still be avoided by choosing differently {wiki-sunk}. The textbook conclusion is the bygones principle: only future consequences matter, so past spending is irrelevant to a rational decision. Economists sometimes call the sunk part 'water under the bridge'. The principle does not say the past was a mistake. It says that, at the moment of choosing, the past is the same whichever option you pick, so it cannot favour one option over another.",
-      "body_vi": "Chi phí chìm (*sunk cost*) là khoản chi đã phát sinh và không thể thu hồi. Kinh tế học cổ điển đặt nó đối lập với chi phí tương lai, thứ vẫn có thể tránh được nếu chọn khác đi {wiki-sunk}. Kết luận trong sách giáo khoa là nguyên tắc 'chuyện đã rồi' (*bygones principle*): chỉ hệ quả trong tương lai mới quan trọng, nên khoản đã tiêu không liên quan đến một quyết định hợp lý. Các nhà kinh tế đôi khi gọi phần chìm ấy là 'nước đã chảy qua cầu'. Nguyên tắc không nói quá khứ là sai lầm. Nó nói rằng ở thời điểm chọn lựa, quá khứ giống nhau dù bạn chọn phương án nào, nên nó không thể nghiêng cán cân về phía nào."
+      "body_vi": "Chi phí chìm (*sunk cost*) là khoản chi đã phát sinh và không thể thu hồi. Kinh tế học cổ điển đặt nó đối lập với chi phí tương lai, thứ vẫn có thể tránh được nếu chọn khác đi {wiki-sunk}. Kết luận trong sách giáo khoa là nguyên tắc 'chuyện đã rồi' (*bygones principle*): chỉ hệ quả trong tương lai mới quan trọng, nên khoản đã tiêu không liên quan đến một quyết định hợp lý. Các nhà kinh tế đôi khi gọi phần chìm ấy là 'nước đã chảy qua cầu'. Nguyên tắc không nói quá khứ là sai lầm. Nó nói rằng ở thời điểm chọn lựa, quá khứ giống nhau dù bạn chọn phương án nào, nên nó không thể nghiêng cán cân về phía nào.",
+      "heading_fr": "Ce qu'est un coût irrécupérable",
+      "body_fr": "Un coût irrécupérable est une dépense déjà engagée qui ne peut plus être recouvrée. L'économie classique l'oppose aux coûts prospectifs, qu'un choix différent permet encore d'éviter {wiki-sunk}. La conclusion des manuels repose sur le principe des coûts passés : seules les conséquences futures comptent, si bien que les dépenses antérieures n'ont aucune pertinence pour une décision rationnelle. Les économistes qualifient parfois cette part engloutie « d'eau passée sous les ponts ». Ce principe ne prétend pas que le passé était une erreur. Il rappelle simplement qu'au moment de choisir, le passé reste le même quelle que soit l'option retenue, et ne peut donc en favoriser une par rapport à une autre.",
+      "heading_de": "Was versunkene Kosten sind",
+      "body_de": "Als versunkene Kosten bezeichnet man Kosten, die bereits angefallen sind und sich nicht zurückholen lassen. Die klassische Volkswirtschaftslehre grenzt sie von künftigen Kosten ab, die sich durch eine andere Wahl noch vermeiden lassen {wiki-sunk}. Das Lehrbuchfazit lautet Bygones-Prinzip: Nur künftige Konsequenzen zählen, daher sind vergangene Ausgaben für eine rationale Entscheidung irrelevant. Ökonomen bezeichnen den versunkenen Anteil zuweilen als Schnee von gestern. Das Prinzip besagt nicht, dass die Vergangenheit ein Fehler war. Es besagt, dass im Moment der Wahl die Vergangenheit dieselbe bleibt, ganz gleich, welche Option du wählst, sodass sie keine Variante gegenüber einer anderen begünstigen kann.",
+      "heading_es": "Qué es un costo hundido",
+      "body_es": "Un costo hundido es un costo en el que ya se ha incurrido y no se puede recuperar. La economía clásica lo contrapone a los costos prospectivos, que aún pueden evitarse eligiendo de otra manera {wiki-sunk}. La conclusión clásica de los manuales es el principio de lo pasado, pasado: solo importan las consecuencias futuras, por lo que el gasto previo resulta irrelevante para tomar una decisión racional. Los economistas suelen describir la parte ya hundida como «agua pasada». Este principio no afirma que el pasado haya sido un error; señala que, en el instante de elegir, el pasado es idéntico con cualquier opción tomada, por lo que no puede favorecer a una sobre otra."
     },
     {
       "heading_en": "A worked example",
       "heading_vi": "Một ví dụ cụ thể",
       "body_en": "The standard example is a factory projected to cost $100 million and to be worth $120 million. After $30 million is spent, the projected value drops to $65 million {wiki-sunk}. Finishing needs $70 million more for a project now worth $65 million, so the company should stop. If the value had instead fallen to $75 million, finishing would still pay, because $75 million exceeds the remaining $70 million. The $30 million is gone in both cases. The decision comes from comparing what is still to be spent with what is still to be gained.",
-      "body_vi": "Ví dụ kinh điển là một nhà máy dự kiến tốn 100 triệu đô la và có giá trị 120 triệu đô la. Sau khi chi 30 triệu đô la, giá trị dự báo tụt xuống còn 65 triệu {wiki-sunk}. Hoàn thành cần thêm 70 triệu đô la cho một dự án nay chỉ đáng 65 triệu, nên công ty nên dừng. Nếu giá trị chỉ tụt xuống 75 triệu đô la thì hoàn thành vẫn có lợi, vì 75 triệu lớn hơn 70 triệu còn phải chi. Khoản 30 triệu đô la mất đi trong cả hai trường hợp. Quyết định đến từ việc so phần còn phải chi với phần còn có thể thu."
+      "body_vi": "Ví dụ kinh điển là một nhà máy dự kiến tốn 100 triệu đô la và có giá trị 120 triệu đô la. Sau khi chi 30 triệu đô la, giá trị dự báo tụt xuống còn 65 triệu {wiki-sunk}. Hoàn thành cần thêm 70 triệu đô la cho một dự án nay chỉ đáng 65 triệu, nên công ty nên dừng. Nếu giá trị chỉ tụt xuống 75 triệu đô la thì hoàn thành vẫn có lợi, vì 75 triệu lớn hơn 70 triệu còn phải chi. Khoản 30 triệu đô la mất đi trong cả hai trường hợp. Quyết định đến từ việc so phần còn phải chi với phần còn có thể thu.",
+      "heading_fr": "Un exemple concret",
+      "body_fr": "L'exemple classique est celui d'une usine dont le coût prévisionnel est de 100 millions de dollars et la valeur estimée à 120 millions. Après avoir dépensé 30 millions de dollars, la valeur projetée chute à 65 millions {wiki-sunk}. Achever la construction réclame 70 millions de dollars de plus pour un projet qui n'en vaut désormais que 65 : l'entreprise devrait donc renoncer. Si la valeur était plutôt tombée à 75 millions de dollars, terminer le chantier resterait rentable, puisque 75 millions dépassent les 70 millions restants. Dans les deux cas, les 30 millions de dollars ont disparu. La décision résulte de la comparaison entre ce qu'il reste à dépenser et ce qu'il reste à gagner.",
+      "heading_de": "Ein Rechenbeispiel",
+      "body_de": "Das Standardbeispiel ist eine Fabrik, deren Bau voraussichtlich 100 Millionen Dollar kosten und die einen Wert von 120 Millionen Dollar haben soll. Nachdem 30 Millionen Dollar investiert wurden, sinkt der prognostizierte Wert auf 65 Millionen Dollar {wiki-sunk}. Die Fertigstellung erfordert weitere 70 Millionen Dollar für ein Projekt, das nun 65 Millionen Dollar wert ist – das Unternehmen sollte also abbrechen. Wäre der Wert stattdessen auf 75 Millionen Dollar gefallen, würde sich die Fertigstellung weiterhin lohnen, da 75 Millionen Dollar die verbleibenden 70 Millionen Dollar übersteigen. Die 30 Millionen Dollar sind in beiden Fällen verloren. Die Entscheidung ergibt sich aus dem Vergleich zwischen dem, was noch auszugeben ist, und dem, was noch gewonnen werden kann.",
+      "heading_es": "Un ejemplo práctico",
+      "body_es": "El ejemplo clásico es el de una fábrica con un costo proyectado de $100 millones y un valor previsto de $120 millones. Tras gastar $30 millones, el valor proyectado cae a $65 millones {wiki-sunk}. Concluirla requiere $70 millones adicionales para un proyecto que ahora vale $65 millones, por lo que la empresa debería detenerse. Si el valor hubiese descendido en cambio a $75 millones, terminarla aún convendría, porque $75 millones superan los $70 millones restantes. Los $30 millones se han perdido en ambos casos. La decisión parte de comparar lo que todavía queda por gastar con lo que aún se puede ganar."
     },
     {
       "heading_en": "How the fallacy shows up",
       "heading_vi": "Ngụy biện này xuất hiện thế nào",
       "body_en": "People often reverse the logic and treat past investment as a reason to continue. The usual wording is 'throwing good money after bad' {wiki-sunk}. In experiments on committed relationships, people who had invested money or time in a relationship were more likely to keep it going and to put more time into it {wiki-sunk}. The same reasoning is used to argue that a war must go on so that earlier losses are not in vain, and it keeps people feeding scams they already doubt. In each case the investment is real, but it is not an argument about what comes next.",
-      "body_vi": "Con người thường đảo ngược logic ấy và coi khoản đầu tư trong quá khứ là lý do để tiếp tục. Cách nói quen thuộc là 'ném thêm tiền tốt vào món nợ xấu' {wiki-sunk}. Trong các thí nghiệm về những mối quan hệ gắn bó, người đã bỏ tiền hoặc thời gian vào quan hệ có xu hướng duy trì nó nhiều hơn và dành cho nó nhiều thời gian hơn {wiki-sunk}. Cách lập luận tương tự được dùng để nói rằng một cuộc chiến phải tiếp diễn để những mất mát trước đó không vô ích, và nó khiến người ta tiếp tục rót tiền vào những trò lừa đảo mà họ đã ngờ vực. Trường hợp nào khoản đầu tư cũng có thật, nhưng nó không phải là lập luận cho điều sẽ làm tiếp."
+      "body_vi": "Con người thường đảo ngược logic ấy và coi khoản đầu tư trong quá khứ là lý do để tiếp tục. Cách nói quen thuộc là 'ném thêm tiền tốt vào món nợ xấu' {wiki-sunk}. Trong các thí nghiệm về những mối quan hệ gắn bó, người đã bỏ tiền hoặc thời gian vào quan hệ có xu hướng duy trì nó nhiều hơn và dành cho nó nhiều thời gian hơn {wiki-sunk}. Cách lập luận tương tự được dùng để nói rằng một cuộc chiến phải tiếp diễn để những mất mát trước đó không vô ích, và nó khiến người ta tiếp tục rót tiền vào những trò lừa đảo mà họ đã ngờ vực. Trường hợp nào khoản đầu tư cũng có thật, nhưng nó không phải là lập luận cho điều sẽ làm tiếp.",
+      "heading_fr": "Comment se manifeste le piège",
+      "body_fr": "On inverse souvent cette logique en traitant l'investissement passé comme un motif pour persévérer. L'expression consacrée parle de « jeter de l'argent frais après de l'argent perdu » {wiki-sunk}. Dans des expériences portant sur des couples engagés, les personnes ayant investi de l'argent ou du temps dans leur relation étaient plus enclines à la prolonger et à lui consacrer encore plus de temps {wiki-sunk}. Le même raisonnement est invoqué pour affirmer qu'une guerre doit se poursuivre afin que les pertes passées n'aient pas été vaines, et il pousse des victimes à continuer d'alimenter des escroqueries dont elles doutent pourtant. Dans chaque cas, l'investissement est bien réel, mais il ne constitue nullement un argument quant à ce qui doit suivre.",
+      "heading_de": "Wie sich der Trugschluss zeigt",
+      "body_de": "Häufig kehren Menschen diese Logik um und betrachten vergangene Investitionen als Grund zum Weitermachen. Die gängige Redewendung lautet, schlechtem Geld gutes hinterherzuwerfen {wiki-sunk}. In Experimenten zu festen Partnerschaften hielten Personen, die Geld oder Zeit in eine Beziehung investiert hatten, eher daran fest und steckten noch mehr Zeit hinein {wiki-sunk}. Mit derselben Argumentation wird behauptet, ein Krieg müsse weitergeführt werden, damit frühere Opfer nicht umsonst waren, und sie verleitet Menschen dazu, Betrugsmaschen weiter zu finanzieren, an denen sie bereits zweifeln. In jedem dieser Fälle ist die Investition real, doch sie taugt nicht als Argument dafür, was als Nächstes geschehen soll.",
+      "heading_es": "Cómo se manifiesta la falacia",
+      "body_es": "Con frecuencia, las personas invierten esta lógica y consideran la inversión pasada como un motivo para seguir adelante. La expresión habitual es «tirar dinero bueno al malo» {wiki-sunk}. En experimentos sobre relaciones de pareja estables, quienes habían invertido dinero o tiempo en una relación mostraron mayor propensión a mantenerla y a dedicarle más tiempo {wiki-sunk}. Este mismo razonamiento se esgrime para sostener que una guerra debe continuar a fin de que las pérdidas previas no hayan sido en vano, y lleva a la gente a seguir alimentando estafas de las que ya sospecha. En todos los casos la inversión es real, pero no constituye un argumento sobre lo que depara el futuro."
     },
     {
       "heading_en": "It reaches beyond money",
       "heading_vi": "Hiệu ứng không dừng ở tiền",
       "body_en": "Evidence for sunk costs of money has long been solid, while evidence for non-monetary costs was mixed. Bogdanov and colleagues tested effort directly, in two experiments with 36 and 89 adults {bogdanov-2026}. Prior effort made people more willing to invest further effort, and the pull was stronger when the extra effort needed was high. Their conclusion is that past effort changes present choices and that models of effort-based decisions need to account for it. This matches everyday experience: the more hours a person has put into a degree or a draft, the harder it feels to walk away.",
-      "body_vi": "Bằng chứng về chi phí chìm bằng tiền từ lâu đã vững, còn bằng chứng về chi phí phi tiền tệ thì lẫn lộn. Bogdanov và cộng sự kiểm tra trực tiếp yếu tố công sức, qua hai thí nghiệm với 36 và 89 người trưởng thành {bogdanov-2026}. Công sức đã bỏ ra khiến người ta sẵn sàng đầu tư thêm công sức, và lực kéo mạnh hơn khi phần việc cần làm thêm lớn. Họ kết luận rằng công sức trong quá khứ làm thay đổi lựa chọn hiện tại, và các mô hình quyết định dựa trên công sức cần tính đến điều này. Điều đó khớp với trải nghiệm đời thường: càng dành nhiều giờ cho một tấm bằng hay một bản thảo, việc bỏ đi càng khó."
+      "body_vi": "Bằng chứng về chi phí chìm bằng tiền từ lâu đã vững, còn bằng chứng về chi phí phi tiền tệ thì lẫn lộn. Bogdanov và cộng sự kiểm tra trực tiếp yếu tố công sức, qua hai thí nghiệm với 36 và 89 người trưởng thành {bogdanov-2026}. Công sức đã bỏ ra khiến người ta sẵn sàng đầu tư thêm công sức, và lực kéo mạnh hơn khi phần việc cần làm thêm lớn. Họ kết luận rằng công sức trong quá khứ làm thay đổi lựa chọn hiện tại, và các mô hình quyết định dựa trên công sức cần tính đến điều này. Điều đó khớp với trải nghiệm đời thường: càng dành nhiều giờ cho một tấm bằng hay một bản thảo, việc bỏ đi càng khó.",
+      "heading_fr": "Un phénomène qui dépasse l'argent",
+      "body_fr": "Si les preuves empiriques d'un biais lié aux dépenses financières sont solides depuis longtemps, les données concernant les coûts non monétaires demeuraient plus mitigées. Bogdanov et ses collègues ont testé l'effort de manière directe, au travers de deux expériences auprès de 36 et 89 adultes {bogdanov-2026}. L'effort préalable a incité les participants à consentir un investissement supplémentaire, et cette attirance était d'autant plus marquée que l'effort requis était important. Leur conclusion est que l'effort passé modifie les choix présents et que les modèles de décision fondés sur l'effort doivent en tenir compte. Cela rejoint l'expérience du quotidien : plus on a consacré d'heures à un diplôme ou à un brouillon, plus il paraît difficile d'abandonner.",
+      "heading_de": "Es geht um mehr als Geld",
+      "body_de": "Während Belege für versunkene monetäre Kosten seit langem fundiert sind, war die Befundlage zu nicht-monetären Kosten uneinheitlich. Bogdanov und Kollegen untersuchten Anstrengung direkt in zwei Experimenten mit 36 und 89 Erwachsenen {bogdanov-2026}. Frühere Anstrengung steigerte die Bereitschaft, weiteren Aufwand zu investieren, und dieser Sog war umso stärker, je höher der zusätzlich erforderliche Aufwand war. Ihre Schlussfolgerung: Vergangene Mühe verändert gegenwärtige Entscheidungen, und Modelle anstrengungsbasierter Entscheidungen müssen dies berücksichtigen. Das deckt sich mit der Alltagserfahrung: Je mehr Stunden man in ein Studium oder einen Entwurf investiert hat, desto schwerer fällt der Ausstieg.",
+      "heading_es": "Va más allá del dinero",
+      "body_es": "Las pruebas sobre costos hundidos monetarios han sido sólidas desde hace mucho, mientras que la evidencia sobre costos no monetarios era dispar. Bogdanov y sus colaboradores evaluaron el esfuerzo de forma directa mediante dos experimentos con 36 y 89 adultos {bogdanov-2026}. El esfuerzo previo aumentó la disposición de las personas a invertir más esfuerzo, y la atracción fue más intensa cuando el esfuerzo adicional requerido era elevado. Su conclusión es que el esfuerzo pasado modifica las elecciones presentes y que los modelos de decisión basados en el esfuerzo deben considerarlo. Esto coincide con la experiencia cotidiana: cuantas más horas haya dedicado alguien a una carrera o a un borrador, más difícil le resulta dar un paso al costado."
     },
     {
       "heading_en": "Other people's effort counts too",
       "heading_vi": "Công sức của người khác cũng có tác dụng",
       "body_en": "A 2025 preprint, not yet peer reviewed, ran four pre-registered experiments with 1,481 participants {mattei-2025}. It found that another person's earlier effort increased commitment to a course of action, even when the effort was not wasted and could be put to a new use. In one experiment the other person's effort pulled harder than the participant's own. The authors suggest social expectations may drive this. Because the work has not been through review, treat it as an early signal that the fallacy is not only about wanting to avoid waste.",
-      "body_vi": "Một bản thảo tiền công bố năm 2025, chưa qua bình duyệt, thực hiện bốn thí nghiệm đăng ký trước với 1.481 người tham gia {mattei-2025}. Nó cho thấy công sức trước đó của người khác làm tăng cam kết theo đuổi một hướng đi, kể cả khi công sức ấy không bị lãng phí và có thể dùng cho mục đích mới. Ở một thí nghiệm, công sức của người khác kéo mạnh hơn công sức của chính người tham gia. Các tác giả gợi ý kỳ vọng xã hội có thể là nguyên nhân. Vì công trình chưa qua bình duyệt, hãy xem nó là tín hiệu ban đầu rằng ngụy biện này không chỉ xuất phát từ nỗi sợ lãng phí."
+      "body_vi": "Một bản thảo tiền công bố năm 2025, chưa qua bình duyệt, thực hiện bốn thí nghiệm đăng ký trước với 1.481 người tham gia {mattei-2025}. Nó cho thấy công sức trước đó của người khác làm tăng cam kết theo đuổi một hướng đi, kể cả khi công sức ấy không bị lãng phí và có thể dùng cho mục đích mới. Ở một thí nghiệm, công sức của người khác kéo mạnh hơn công sức của chính người tham gia. Các tác giả gợi ý kỳ vọng xã hội có thể là nguyên nhân. Vì công trình chưa qua bình duyệt, hãy xem nó là tín hiệu ban đầu rằng ngụy biện này không chỉ xuất phát từ nỗi sợ lãng phí.",
+      "heading_fr": "L'effort d'autrui entre aussi en compte",
+      "body_fr": "Un préprint de 2025, non encore évalué par les pairs, a mené quatre expériences préenregistrées réunissant 1 481 participants {mattei-2025}. Il a révélé que l'effort fourni au préalable par une autre personne renforçait l'engagement dans une ligne d'action, même lorsque cet effort n'était pas perdu et pouvait être réemployé. Dans une expérience, l'effort d'autrui a exercé une influence plus forte que le propre effort du participant. Les auteurs suggèrent que des attentes sociales pourraient expliquer ce comportement. Ces travaux n'ayant pas encore été validés par les pairs, il convient de les considérer comme un premier signal indiquant que ce biais ne se résume pas au simple refus du gaspillage.",
+      "heading_de": "Auch die Mühe anderer zählt",
+      "body_de": "Ein Preprint aus dem Jahr 2025, der noch kein Peer-Review durchlaufen hat, führte vier präregistrierte Experimente mit 1.481 Teilnehmenden durch {mattei-2025}. Er zeigte, dass die vorangegangene Anstrengung einer anderen Person die Bindung an ein Vorhaben verstärkte – selbst wenn die Mühe nicht vergeudet war und anderweitig genutzt werden konnte. In einem Experiment wirkte der Einsatz der anderen Person sogar stärker als der eigene. Die Autoren vermuten, dass soziale Erwartungen dahinterstecken könnten. Da die Arbeit noch nicht begutachtet wurde, sollte man sie als frühes Signal dafür werten, dass es bei dem Trugschluss nicht bloß darum geht, Verschwendung zu vermeiden.",
+      "heading_es": "El esfuerzo ajeno también cuenta",
+      "body_es": "Un preprint de 2025, aún no revisado por pares, llevó a cabo cuatro experimentos prerregistrados con 1481 participantes {mattei-2025}. Reveló que el esfuerzo previo realizado por otra persona aumentaba el compromiso con un curso de acción, incluso cuando dicho esfuerzo no se había desperdiciado y podía destinarse a un nuevo uso. En un experimento, el esfuerzo ajeno ejerció una atracción mayor que el propio. Los autores sugieren que esto podría obedecer a expectativas sociales. Dado que el estudio no ha pasado por revisión externa, conviene considerarlo una señal preliminar de que la falacia no se reduce al deseo de evitar el desperdicio."
     },
     {
       "heading_en": "A caution about the evidence",
       "heading_vi": "Một lưu ý về bằng chứng",
       "body_en": "Not every classic result is as firm as it sounds. Two experiments with 395 participants tested the well-known written scenarios used in sunk cost research, including ones from Arkes and Blumer in 1985 {bialek-2025}. Internal consistency was poor, with reliability coefficients between 0.14 and 0.57, and the scenarios correlated only weakly with each other. The authors conclude that the scenarios may not measure one single trait. The bias itself is well documented, but a person's score on a questionnaire is a weak guide to how they will behave when real money or effort is at stake.",
-      "body_vi": "Không phải kết quả kinh điển nào cũng chắc như người ta tưởng. Hai thí nghiệm với 395 người tham gia kiểm tra các tình huống viết sẵn quen thuộc trong nghiên cứu chi phí chìm, trong đó có những tình huống của Arkes và Blumer năm 1985 {bialek-2025}. Độ nhất quán nội tại kém, với hệ số tin cậy từ 0,14 đến 0,57, và các tình huống chỉ tương quan yếu với nhau. Các tác giả kết luận rằng những tình huống ấy có thể không đo cùng một đặc điểm. Bản thân thiên kiến được ghi nhận rõ, nhưng điểm của một người trên bảng câu hỏi là chỉ báo yếu cho cách họ hành xử khi có tiền hay công sức thật bị đặt cược."
+      "body_vi": "Không phải kết quả kinh điển nào cũng chắc như người ta tưởng. Hai thí nghiệm với 395 người tham gia kiểm tra các tình huống viết sẵn quen thuộc trong nghiên cứu chi phí chìm, trong đó có những tình huống của Arkes và Blumer năm 1985 {bialek-2025}. Độ nhất quán nội tại kém, với hệ số tin cậy từ 0,14 đến 0,57, và các tình huống chỉ tương quan yếu với nhau. Các tác giả kết luận rằng những tình huống ấy có thể không đo cùng một đặc điểm. Bản thân thiên kiến được ghi nhận rõ, nhưng điểm của một người trên bảng câu hỏi là chỉ báo yếu cho cách họ hành xử khi có tiền hay công sức thật bị đặt cược.",
+      "heading_fr": "Une mise en garde sur les preuves",
+      "body_fr": "Tous les résultats classiques ne sont pas aussi incontestables qu'il y paraît. Deux expériences menées auprès de 395 participants ont testé les scénarios écrits traditionnellement employés dans la recherche sur les coûts irrécupérables, notamment ceux d'Arkes et Blumer en 1985 {bialek-2025}. La cohérence interne s'est avérée médiocre, avec des coefficients de fiabilité oscillant entre 0,14 et 0,57, et les scénarios ne présentaient que de faibles corrélations entre eux. Les auteurs en concluent que ces scénarios ne mesurent peut-être pas un trait psychologique unique. Le biais en lui-même est amplement documenté, mais le score obtenu par un individu à un questionnaire prédit mal sa conduite réelle lorsque de l'argent ou des efforts sont véritablement en jeu.",
+      "heading_de": "Vorsicht bei den Belegen",
+      "body_de": "Nicht jedes klassische Ergebnis steht auf so sicherem Boden, wie es scheint. Zwei Experimente mit 395 Teilnehmenden überprüften die bekannten schriftlichen Szenarien aus der Sunk-Cost-Forschung, darunter solche von Arkes und Blumer aus dem Jahr 1985 {bialek-2025}. Die interne Konsistenz fiel gering aus, mit Reliabilitätskoeffizienten zwischen 0,14 und 0,57, und die Szenarien korrelierten nur schwach untereinander. Die Autoren folgern daraus, dass die Szenarien möglicherweise kein einzelnes Merkmal messen. Die kognitive Verzerrung an sich ist gut belegt, doch das Abschneiden einer Person in einem Fragebogen lässt kaum verlässliche Rückschlüsse darauf zu, wie sie sich verhält, wenn echtes Geld oder echte Anstrengung auf dem Spiel stehen.",
+      "heading_es": "Cautela ante la evidencia",
+      "body_es": "No todos los resultados clásicos son tan firmes como parecen. Dos experimentos con 395 participantes evaluaron los conocidos escenarios escritos empleados en la investigación sobre el costo hundido, incluidos los planteados por Arkes y Blumer en 1985 {bialek-2025}. La consistencia interna fue deficiente, con coeficientes de fiabilidad de entre 0,14 y 0,57, y los escenarios apenas se correlacionaron entre sí. Los autores concluyen que tales escenarios podrían no medir un único rasgo. Aunque el sesgo en sí está ampliamente documentado, la puntuación de una persona en un cuestionario constituye una guía poco fiable para anticipar cómo actuará cuando haya dinero o esfuerzo real en juego."
     },
     {
       "heading_en": "Using the idea in practice",
       "heading_vi": "Dùng ý tưởng này trong thực tế",
       "body_en": "The bygones principle gives a simple test: if you were starting from today with no history, would you choose this option? Economists note that continuing can be rational for reasons that sit outside the project itself, such as a manager's reputation for persistence or private information that outsiders lack {wiki-sunk}. That is a useful distinction. The error is not in finishing a project; it is in finishing it because of what it has already cost. When you can state a forward-looking reason, such as a payoff that still exceeds the remaining price, the fallacy is not at work.",
-      "body_vi": "Nguyên tắc 'chuyện đã rồi' cho một phép thử đơn giản: nếu bắt đầu từ hôm nay mà không có lịch sử, bạn có chọn phương án này không? Các nhà kinh tế lưu ý rằng tiếp tục đôi khi vẫn hợp lý vì những lý do nằm ngoài dự án, như danh tiếng kiên trì của một nhà quản lý hay thông tin riêng mà người ngoài không có {wiki-sunk}. Đó là một phân biệt hữu ích. Lỗi không nằm ở việc hoàn thành một dự án, mà ở việc hoàn thành nó vì nó đã tốn bao nhiêu. Khi bạn nêu được một lý do hướng về tương lai, như khoản lợi vẫn lớn hơn phần giá còn lại, thì ngụy biện không hoạt động."
+      "body_vi": "Nguyên tắc 'chuyện đã rồi' cho một phép thử đơn giản: nếu bắt đầu từ hôm nay mà không có lịch sử, bạn có chọn phương án này không? Các nhà kinh tế lưu ý rằng tiếp tục đôi khi vẫn hợp lý vì những lý do nằm ngoài dự án, như danh tiếng kiên trì của một nhà quản lý hay thông tin riêng mà người ngoài không có {wiki-sunk}. Đó là một phân biệt hữu ích. Lỗi không nằm ở việc hoàn thành một dự án, mà ở việc hoàn thành nó vì nó đã tốn bao nhiêu. Khi bạn nêu được một lý do hướng về tương lai, như khoản lợi vẫn lớn hơn phần giá còn lại, thì ngụy biện không hoạt động.",
+      "heading_fr": "Mettre l'idée en pratique",
+      "body_fr": "Le principe des coûts passés fournit un critère limpide : si vous partiez de zéro aujourd'hui, choisiriez-vous cette option ? Les économistes soulignent que persévérer peut être rationnel pour des motifs extérieurs au projet lui-même, comme la réputation de ténacité d'un dirigeant ou des informations privilégiées inaccessibles aux observateurs {wiki-sunk}. Cette distinction est salutaire. L'erreur ne consiste pas à terminer un projet, mais à le terminer en considération de ce qu'il a déjà coûté. Dès lors que vous disposez d'une justification prospective, comme un gain qui dépasse toujours le coût restant à payer, le biais n'est pas à l'œuvre.",
+      "heading_de": "Die Idee in der Praxis anwenden",
+      "body_de": "Das Bygones-Prinzip liefert einen einfachen Test: Wenn du heute ohne Vorgeschichte anfangen würdest, würdest du diese Option wählen? Ökonomen merken an, dass ein Weitermachen aus Gründen rational sein kann, die außerhalb des Projekts selbst liegen – etwa das Renommee einer Führungskraft für Beharrlichkeit oder Insiderinformationen, die Außenstehenden fehlen {wiki-sunk}. Das ist eine nützliche Unterscheidung. Der Fehler liegt nicht darin, ein Projekt abzuschließen, sondern darin, es wegen der bereits entstandenen Kosten zu tun. Wenn du einen zukunftsorientierten Grund nennen kannst, wie etwa einen Ertrag, der die verbleibenden Kosten übersteigt, liegt der Trugschluss nicht vor.",
+      "heading_es": "La idea en la práctica",
+      "body_es": "El principio de lo pasado, pasado ofrece una prueba sencilla: ¿si comenzara hoy desde cero, sin antecedentes, elegiría esta opción? Los economistas señalan que continuar puede ser racional por motivos ajenos al proyecto en sí, como la reputación de perseverancia de un directivo o información privada inaccesible para terceros {wiki-sunk}. Es una distinción valiosa. El error no radica en terminar un proyecto, sino en concluirlo debido a lo que ya ha costado. Cuando se puede argumentar una razón orientada al futuro, como un beneficio que aún supera el costo restante, la falacia no opera."
     }
   ],
   "keyPoint": {
     "en": "Money, time and effort already spent cannot be recovered, so they should not decide what you do next. [p:Judge the choice by what is still to be paid and gained.] Notice the pull toward finishing, ask whether you would start this today, and let a project end if the answer is no.",
-    "vi": "Tiền bạc, thời gian và công sức đã tiêu thì không thu hồi được, nên chúng không nên quyết định việc bạn làm tiếp. [p:Hãy đánh giá lựa chọn theo phần còn phải trả và phần còn được hưởng.] Nhận ra lực kéo muốn hoàn thành, tự hỏi hôm nay mình có bắt đầu việc này không, và nếu câu trả lời là không thì hãy để dự án kết thúc."
+    "vi": "Tiền bạc, thời gian và công sức đã tiêu thì không thu hồi được, nên chúng không nên quyết định việc bạn làm tiếp. [p:Hãy đánh giá lựa chọn theo phần còn phải trả và phần còn được hưởng.] Nhận ra lực kéo muốn hoàn thành, tự hỏi hôm nay mình có bắt đầu việc này không, và nếu câu trả lời là không thì hãy để dự án kết thúc.",
+    "fr": "L'argent, le temps et l'énergie déjà dépensés ne peuvent plus être récupérés, ils ne devraient donc pas dicter ce que vous faites ensuite. [p:Évaluez votre choix à l'aune de ce qu'il reste à payer et à gagner.] Prenez conscience de cette tentation d'aller au bout, demandez-vous si vous débuteriez ce projet aujourd'hui, et sachez y renoncer si la réponse est non.",
+    "de": "Bereits investiertes Geld, investierte Zeit und Mühe lassen sich nicht zurückholen und sollten daher nicht bestimmen, was du als Nächstes tust. [p:Beurteile die Entscheidung danach, was noch zu zahlen und zu gewinnen ist.] Spüre den Drang zum Beenden auf, frage dich, ob du heute damit anfangen würdest, und lass ein Projekt enden, wenn die Antwort Nein lautet.",
+    "es": "El dinero, el tiempo y el esfuerzo ya invertidos no pueden recuperarse, por lo que no deberían decidir los siguientes pasos. [p:Juzgue la elección en función de lo que aún resta por pagar y por ganar.] Advierta el impulso de concluir, pregúntese si empezaría esto hoy y deje que el proyecto termine si la respuesta es negativa."
   },
   "applySteps": {
     "en": [
@@ -75,6 +126,21 @@
       "Chọn một việc bạn chỉ đang làm tiếp vì đã lỡ bắt đầu, và tự hỏi hôm nay bạn có bắt đầu nó không.",
       "Liệt kê việc hoàn thành còn tốn gì và còn mang lại gì, bỏ qua mọi thứ đã tiêu.",
       "Đặt một điểm dừng trước khi bắt đầu dự án tiếp theo, chẳng hạn một ngày hoặc một ngân sách, và viết ra giấy."
+    ],
+    "fr": [
+      "Identifiez une activité que vous continuez uniquement parce que vous l'avez commencée, et demandez-vous si vous la débuteriez aujourd'hui.",
+      "Dressez la liste de ce que son achèvement vous coûtera et vous apportera encore, en excluant tout ce qui a déjà été dépensé.",
+      "Fixez un point d'arrêt explicite avant d'entamer votre prochain projet, comme une date butoir ou une limite budgétaire, et consignez-le par écrit."
+    ],
+    "de": [
+      "Wähle eine Sache aus, die du nur deshalb weiter tust, weil du damit begonnen hast, und frage dich, ob du sie heute anfangen würdest.",
+      "Liste auf, was die Fertigstellung noch kostet und was sie noch einbringt, und klammere dabei alles bisher Ausgegebene aus.",
+      "Lege vor Beginn deines nächsten Projekts eine Abbruchgrenze fest – etwa ein Datum oder ein Budget – und halte sie schriftlich fest."
+    ],
+    "es": [
+      "Elija una actividad que continúe haciendo solo porque ya la empezó y pregúntese si la iniciaría hoy.",
+      "Detalle lo que aún costará completarla y lo que todavía aportará, omitiendo todo lo invertido con anterioridad.",
+      "Fije un límite antes de iniciar su próximo proyecto, como una fecha o un presupuesto tope, y déjelo por escrito."
     ]
   },
   "references": [
@@ -109,12 +175,90 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/sunk-cost-fallacy-bygones.webp",
+    "url": "https://images.unsplash.com/21/rail.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE5fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Kholodnitskiy Maksim",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/n6TWNDfyPwk"
+    "sourceUrl": "https://unsplash.com/photos/n6TWNDfyPwk",
+    "wide": "https://images.unsplash.com/21/rail.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE5fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@kholodnitskiymaksim?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JQBdkGQQU6UdNZMtbGN+/Dptfx0AA/v4xpetseiDIWWxUwdK+H4Gbi/lCVc0x27LXriorma/fINr1hF772nuQa1iBeroOFV8BoiQXyHqlicCVSgkk7tjlyFbn88qjvTf7QVbhWIHSYJu2cwMrBCR/Z1tR5hZhneKwo+NFGImnJYanXPz2ppgn4AA=",
-  "dominant": "#6d6a65"
+  "dominant": "#6d6a65",
+  "glossary": {
+    "en": {
+      "sunk cost": "A cost already incurred that cannot be recovered by any future decision.",
+      "cognitive effort": "Mental exertion or brainpower spent on thinking, problem-solving, or decision-making.",
+      "sunk cost effect": "The tendency to continue an endeavor once an investment in money, effort, or time is made.",
+      "classical economics": "A school of economic thought emphasizing rational decision-making, market equilibrium, and forward-looking choices.",
+      "prospective costs": "Future expenses that can still be avoided by choosing a different course of action.",
+      "bygones principle": "The economic rule that past expenditures should be ignored when making present and future choices.",
+      "non-monetary costs": "Investments made in resources other than money, such as time, physical labor, or mental energy.",
+      "preprint": "A scientific manuscript shared publicly before formal evaluation and approval by independent academic peer reviewers.",
+      "peer reviewed": "Formally evaluated and vetted by independent expert scholars before being accepted for publication.",
+      "pre-registered": "Having experimental methods and analyses registered in advance to prevent bias and ensure research transparency.",
+      "internal consistency": "A measure of how closely different questions or scenarios in a test evaluate the same concept.",
+      "reliability coefficients": "Statistical values indicating how consistently a research tool or questionnaire measures what it intends to measure.",
+      "private information": "Facts or knowledge accessible only to certain insiders and unavailable to the general public."
+    },
+    "vi": {
+      "chi phí chìm": "Khoản nguồn lực đã bỏ ra trong quá khứ và không thể thu hồi lại được.",
+      "chuyện đã rồi": "Nguyên tắc cho rằng chỉ hệ quả tương lai mới quyết định hành động hợp lý.",
+      "phi tiền tệ": "Những tổn thất không tính bằng tiền mặt, ví dụ như thời gian hay công sức.",
+      "tiền công bố": "Bản thảo nghiên cứu được chia sẻ công khai trước khi có bình duyệt chính thức.",
+      "bình duyệt": "Quy trình các chuyên gia độc lập thẩm định chất lượng một bài báo khoa học.",
+      "đăng ký trước": "Việc công khai phương pháp nghiên cứu trước khi thực hiện nhằm tránh sai lệch kết quả.",
+      "thiên kiến": "Xu hướng nhận thức lệch lạc làm sai lệch khả năng phán đoán và quyết định.",
+      "tương quan": "Mối quan hệ thống kê thể hiện hai đại lượng cùng biến đổi với nhau.",
+      "chỉ báo": "Dấu hiệu thực nghiệm dùng để dự đoán hoặc phản ánh hành vi thực tế.",
+      "ngụy biện": "Lối suy luận sai sót dẫn đến quyết định không hợp lý về mặt logic."
+    },
+    "fr": {
+      "coût irrécupérable": "Dépense passée déjà engagée et impossible à recouvrer, qui ne devrait pas influencer les choix futurs.",
+      "effort cognitif": "Mobilisation des ressources mentales et intellectuelles nécessaire à la réalisation d'une tâche ou d'une décision.",
+      "coûts prospectifs": "Dépenses futures qui peuvent encore être évitées selon la décision que l'on choisit de prendre.",
+      "préprint": "Version préliminaire d'un article scientifique diffusée publiquement avant d'avoir été formellement évaluée par les pairs.",
+      "expériences préenregistrées": "Études scientifiques dont le protocole et les analyses sont déposés publiquement avant l'expérimentation pour éviter les biais.",
+      "cohérence interne": "Propriété statistique mesurant à quel point les différentes questions d'un test évaluent de manière homogène le même phénomène.",
+      "coefficients de fiabilité": "Valeurs numériques quantifiant le degré de précision et la constance des mesures fournies par un instrument de test.",
+      "faibles corrélations": "Relations statistiques ténues indiquant que deux mesures ou comportements évoluent de façon largement indépendante l'un de l'autre.",
+      "informations privilégiées": "Renseignements confidentiels ou exclusifs détenus par certains acteurs et inaccessibles au reste du public ou du marché.",
+      "justification prospective": "Argument décisionnel fondé uniquement sur l'estimation des coûts à venir et des bénéfices futurs attendus."
+    },
+    "de": {
+      "sunk-cost-effekt": "Neigung, ein Vorhaben fortzuführen, bloß weil bereits Ressourcen wie Geld oder Zeit investiert wurden.",
+      "versunkene kosten": "Bereits entstandene Kosten oder Vorleistungen, die endgültig verloren sind und sich nicht mehr rückgängig machen lassen.",
+      "bygones-prinzip": "Ökonomischer Grundsatz, nach dem vergangene Ausgaben für anstehende rationale Entscheidungen völlig irrelevant sind.",
+      "preprint": "Wissenschaftliche Vorabveröffentlichung eines Aufsatzes vor dem Abschluss des förmlichen Begutachtungsverfahrens.",
+      "peer-review": "Begutachtung wissenschaftlicher Arbeiten durch unabhängige Fachkollegen zur Qualitätssicherung vor der Veröffentlichung.",
+      "präregistrierte": "Vor Beginn der Untersuchung öffentlich dokumentierte Studienpläne zur Verhinderung nachträglicher Verzerrungen.",
+      "sunk-cost-forschung": "Wissenschaftliche Untersuchung darüber, wie Menschen mit bereits erbrachten Vorleistungen bei Entscheidungen umgehen.",
+      "interne konsistenz": "Statistisches Maß für den Grad, zu dem verschiedene Testaufgaben dasselbe Merkmal erfassen.",
+      "reliabilitätskoeffizienten": "Statistische Kennwerte, die angeben, wie zuverlässig und fehlerfrei ein Messinstrument Ergebnisse liefert.",
+      "kognitive verzerrung": "Systematische fehlerhafte Denkmuster, die menschliche Urteile und Entscheidungen unbewusst beeinflussen."
+    },
+    "es": {
+      "costo hundido": "Gasto de dinero, tiempo o esfuerzo ya realizado que resulta imposible de recuperar.",
+      "esfuerzo cognitivo": "Trabajo mental o recursos de atención y pensamiento dedicados a resolver una tarea.",
+      "costos prospectivos": "Gastos futuros que todavía pueden evitarse si se toma una decisión distinta.",
+      "decisión racional": "Elección lógica basada en la evaluación imparcial de consecuencias y beneficios futuros.",
+      "preprint": "Manuscrito científico publicado en línea antes de someterse a la revisión formal por pares.",
+      "revisado por pares": "Proceso de evaluación crítica de un estudio científico por parte de expertos externos independientes.",
+      "experimentos prerregistrados": "Estudios cuyas hipótesis, métodos y análisis fueron registrados formalmente antes de recopilar datos.",
+      "consistencia interna": "Medida estadística del grado en que diferentes preguntas de una prueba miden lo mismo.",
+      "coeficientes de fiabilidad": "Índices numéricos que indican la precisión y reproducibilidad de los resultados de una medición.",
+      "sesgo": "Tendencia o patrón de pensamiento sistemático que desvía el juicio de la estricta racionalidad."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

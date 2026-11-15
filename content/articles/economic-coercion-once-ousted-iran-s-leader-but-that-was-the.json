@@ -41,11 +41,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1040/1080/1920",
+    "url": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE0fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Rachel Davis",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/tn2rBnvIl9I"
+    "sourceUrl": "https://unsplash.com/photos/tn2rBnvIl9I",
+    "wide": "https://images.unsplash.com/photo-1449452198679-05c7fd30f416?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE0fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@rmaedavis?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -90,7 +92,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết phân tích chiến dịch phong tỏa kinh tế hiện tại của Mỹ đối với Iran và so sánh với sự kiện Anh cấm vận dầu mỏ thập niên 1950 dẫn đến việc lật đổ thủ tướng Mossadegh. Mặc dù Washington áp dụng các biện pháp tương tự để kiểm soát dầu mỏ và chính trị Tehran, Iran hiện nay sở hữu khả năng răn đe quân sự và mạng lưới đồng minh mạnh mẽ hơn nhiều. Nhờ đó, Tehran đã chống chịu tốt hơn trước sức ép ngoại lai và các lệnh trừng phạt kinh tế."
+    "vi": "Bài viết phân tích chiến dịch phong tỏa kinh tế hiện tại của Mỹ đối với Iran và so sánh với sự kiện Anh cấm vận dầu mỏ thập niên 1950 dẫn đến việc lật đổ thủ tướng Mossadegh. Mặc dù Washington áp dụng các biện pháp tương tự để kiểm soát dầu mỏ và chính trị Tehran, Iran hiện nay sở hữu khả năng răn đe quân sự và mạng lưới đồng minh mạnh mẽ hơn nhiều. Nhờ đó, Tehran đã chống chịu tốt hơn trước sức ép ngoại lai và các lệnh trừng phạt kinh tế.",
+    "fr": "Face aux tensions actuelles, Washington tente d'asphyxier l'Iran par un blocus naval et des sanctions économiques. Cette stratégie rappelle celle du Royaume-Uni dans les années 1950, lorsqu'un embargo pétrolier avait affaibli Mohammad Mossadegh jusqu'au coup d'État de 1953. Toutefois, une telle issue semble peu probable aujourd'hui. Téhéran dispose désormais de capacités de riposte asymétriques efficaces : drones, missiles et milices régionales capables de menacer les infrastructures du Golfe et le détroit d'Ormuz. Fort d'une résilience bâtie au fil de décennies d'isolement, le régime iranien paraît bien armé pour résister aux pressions étrangères.",
+    "de": "Die US-Regierung versucht derzeit, Iran durch Seeblockaden und wirtschaftliche Isolation zum Einlenken zu bewegen – eine Strategie, die an die britischen Maßnahmen nach der Verstaatlichung der Ölindustrie unter Mohammad Mossadegh in den 1950er-Jahren erinnert. Damals führten Embargo und Wirtschaftskrise zum Sturz des iranischen Premierministers im Rahmen der Operation Ajax. Heute greift diese historische Parallele jedoch zu kurz. Teheran hat über Jahrzehnte eine beachtliche Widerstandskraft aufgebaut. Mithilfe von Drohnen, Raketen, regionalen Milizen sowie Angriffen auf Schifffahrtswege und Energieinfrastrukturen im Persischen Golf verfügt das Regime über wirksame asymmetrische Vergeltungsmittel. Wirtschaftlicher Druck allein dürfte daher kaum ausreichen, um die Führung in Teheran zum Aufgeben zu zwingen.",
+    "es": "¿Podrá la presión económica doblegar nuevamente a Teherán como ocurrió en la década de 1950? Aunque el actual bloqueo naval y las sanciones estadounidenses contra Irán evocan la estrategia británica que culminó en el derrocamiento de Mohammad Mossadegh en 1953, el panorama actual es muy diferente. A diferencia de aquella época, la República Islámica ha forjado una notable resiliencia institucional tras décadas de aislamiento. Además, Teherán cuenta hoy con capacidades asimétricas —como misiles, drones y milicias aliadas en la región— capaces de perturbar el comercio energético global, lo que hace improbable que la coacción económica provoque un cambio de régimen."
   },
   "keyPoint": {
     "en": "Economic coercion is like a fragile bridge trying to cross a fortified river; despite severe sanctions and naval pressure, Iran has built strong regional and economic resilience. What strategies might Washington pursue next if blockades fail to force political change?",
@@ -112,10 +117,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-11T03:05:18.866Z"
+  "publishAt": "2026-11-11T03:05:18.866Z",
+  "glossary": {
+    "en": {
+      "mohammad mossadegh": "Iran's prime minister who nationalized the country's oil industry in 1951 before being overthrown in 1953.",
+      "asymmetric warfare": "Military tactics where a weaker force uses unconventional methods to counter a conventionally superior adversary.",
+      "nuclear nonproliferation": "International efforts to prevent the spread and development of nuclear weapons.",
+      "abadan": "An Iranian city that was home to major oil refineries and industrial installations.",
+      "operation ajax": "The 1953 British- and American-backed covert coup that overthrew Iranian Prime Minister Mohammad Mossadegh.",
+      "saudi aramco": "The national oil and petroleum company of Saudi Arabia.",
+      "mohammad reza pahlavi": "The monarch of Iran who consolidated power after the 1953 coup.",
+      "proxies": "Regional allied militia groups that fight on behalf of or with support from Iran.",
+      "choke points": "Strategic, narrow maritime waterways where shipping traffic can easily be obstructed.",
+      "strait of hormuz": "A vital narrow shipping channel between the Persian Gulf and Gulf of Oman.",
+      "houthis": "An Iranian-aligned militant and political movement operating in Yemen."
+    }
+  }
 }

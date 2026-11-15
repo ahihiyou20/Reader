@@ -4,9 +4,9 @@ export const dynamic = 'force-static';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Reader',
-    short_name: 'Reader',
-    description: 'Short, sourced articles you can swipe through, in English and Vietnamese.',
+    name: 'Pagemoor',
+    short_name: 'Pagemoor',
+    description: 'Short, sourced articles you can swipe through, in five languages.',
     id: '/',
     start_url: '/?source=pwa',
     scope: '/',

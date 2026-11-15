@@ -42,11 +42,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/193/1080/1920",
+    "url": "https://images.unsplash.com/20/cambridge.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vadim Sherbakov",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/d6ebY-faOO0"
+    "sourceUrl": "https://unsplash.com/photos/d6ebY-faOO0",
+    "wide": "https://images.unsplash.com/20/cambridge.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@madebyvadim?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -93,7 +95,10 @@
     ]
   },
   "summary": {
-    "vi": "Các nghiên cứu di truyền mới đây đã kết hợp ADN cổ đại với dữ liệu khảo cổ để tái dựng lịch sử phát tán của các nhánh ngôn ngữ lớn tại châu Âu. Kết quả cho thấy tiếng German xuất hiện tại Scandinavia trễ hơn dự đoán thông qua một làn sóng di cư thứ hai từ vùng thảo nguyên. Trong khi đó, các dòng di cư từ thời văn hóa Urnfield giải thích cho sự mở rộng của nhóm ngôn ngữ Celtic tại khu vực Tây Âu."
+    "vi": "Các nghiên cứu di truyền mới đây đã kết hợp ADN cổ đại với dữ liệu khảo cổ để tái dựng lịch sử phát tán của các nhánh ngôn ngữ lớn tại châu Âu. Kết quả cho thấy tiếng German xuất hiện tại Scandinavia trễ hơn dự đoán thông qua một làn sóng di cư thứ hai từ vùng thảo nguyên. Trong khi đó, các dòng di cư từ thời văn hóa Urnfield giải thích cho sự mở rộng của nhóm ngôn ngữ Celtic tại khu vực Tây Âu.",
+    "fr": "L’analyse de l’ADN ancien de milliers d'individus éclaire la diffusion des langues germaniques et celtiques en Europe. En Scandinavie, une migration venue des steppes il y a environ 4 000 ans aurait apporté les précurseurs du germanique, bien plus tard qu'estimé. Par ailleurs, les données génétiques appuient l’origine centre-européenne des langues celtiques, associée à la « culture des champs d'urnes », tout en révélant des flux atlantiques complémentaires. En croisant paléogénomique et archéologie, ces découvertes reconstituent la dynamique des populations anciennes avec une netteté inédite : les mouvements humains ont profondément sculpté le paysage linguistique européen.",
+    "de": "Mithilfe tausender alter Genome entschlüsselt ein internationales Forschungsteam die prähistorische Ausbreitung der germanischen und keltischen Sprachen in Europa. Entgegen bisherigen Annahmen gelangte der Vorläufer der germanischen Sprachen wohl erst vor rund 4000 Jahren durch eine neu identifizierte Steppengruppe nach Skandinavien – etwa 800 Jahre später als bislang vermutet. Die spätere Verbreitung des Altnordischen beruhte dabei neben Migrationen auch auf kulturellem Austausch. Für die keltischen Sprachen stützen die Genanalysen vor allem einen Ursprung in Mitteleuropa während der Urnenfelderkultur, wenngleich frühe atlantische Wanderungen auf vielschichtigere Prozesse hinweisen. Die Verknüpfung von Paläogenetik mit archäologischen und sprachwissenschaftlichen Daten zeichnet so ein präzises Bild der europäischen Vorgeschichte.",
+    "es": "¿Cómo llegaron las lenguas germánicas y celtas a distribuirse por Europa? El análisis de miles de genomas antiguos ha permitido reconstruir las migraciones prehistóricas vinculadas a su dispersión. Las evidencias genéticas revelan que una segunda oleada de población esteparia arribó a Escandinavia hace unos 4.000 años, introduciendo los precursores germánicos siglos después de lo previsto. Asimismo, la expansión de linajes de Europa central hacia el oeste respalda un origen centroeuropeo de las lenguas celtas durante la Edad del Bronce. Al contrastar el ADN con la arqueología y la lingüística, la ciencia esclarece cómo el mestizaje y los contactos culturales moldearon el mosaico lingüístico del continente."
   },
   "keyPoint": {
     "en": "Ancient DNA acts like a linguistic fossil brush, clearing away centuries of guesswork to reveal how human migrations shaped the words we speak. *What ancient population movements left a trace in your own regional dialect?*",
@@ -115,10 +120,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-06T03:30:57.521Z"
+  "publishAt": "2026-11-06T03:30:57.521Z",
+  "glossary": {
+    "en": {
+      "ancient dna": "Genetic material extracted and sequenced from historical human remains like bones and teeth.",
+      "proto-indo-european": "The prehistoric ancestral language from which modern Indo-European languages developed.",
+      "yamnaya culture": "A nomadic pastoral culture from the Pontic-Caspian steppe associated with early Indo-European migrations.",
+      "steppe ancestry": "Genetic heritage inherited from ancient nomadic populations of the Eurasian grasslands.",
+      "runic alphabet": "An early Germanic writing system used across Northern Europe before the Latin alphabet.",
+      "migration period": "A historical era around 400 AD marked by widespread movements of peoples across Europe.",
+      "anglo-saxons": "Germanic tribes who migrated from continental Europe to settle in England during early medieval times.",
+      "langobards": "A Germanic people who migrated southward across Europe and established a kingdom in Italy.",
+      "old norse": "The North Germanic language spoken by Scandinavian inhabitants and Vikings during the Middle Ages.",
+      "urnfield culture": "A Late Bronze Age Central European archaeological culture that cremated dead individuals in urns.",
+      "hallstatt": "An early Iron Age Central European archaeological culture widely associated with early Celtic development.",
+      "la tène": "A late Iron Age European archaeological culture strongly linked to Celtic populations and art."
+    }
+  }
 }

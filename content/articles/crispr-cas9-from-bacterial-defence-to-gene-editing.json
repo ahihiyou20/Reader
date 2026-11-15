@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "CRISPR-Cas9: how bacterial immunity became a gene-editing tool",
-    "vi": "CRISPR-Cas9: từ hệ miễn dịch của vi khuẩn đến công cụ chỉnh sửa gen"
+    "vi": "CRISPR-Cas9: từ hệ miễn dịch của vi khuẩn đến công cụ chỉnh sửa gen",
+    "fr": "CRISPR-Cas9 : comment l'immunité bactérienne est devenue un outil d'édition génomique",
+    "de": "CRISPR-Cas9: Wie aus bakterieller Immunabwehr ein Genwerkzeug wurde",
+    "es": "CRISPR-Cas9: cómo la inmunidad bacteriana se convirtió en una herramienta de edición genética"
   },
   "hook": {
     "en": "CRISPR-Cas9 began as part of how bacteria defend themselves against viruses. In 2012, Emmanuelle Charpentier and Jennifer Doudna showed that the system could cut targeted DNA, a discovery that earned them the 2020 Nobel Prize in Chemistry. Since then, the tool has spread through basic research, crop breeding and cancer work, although the hope of curing inherited disease is still a hope.",
-    "vi": "CRISPR-Cas9 bắt đầu như một phần trong cách vi khuẩn tự vệ trước virus. Năm 2012, Emmanuelle Charpentier và Jennifer Doudna cho thấy hệ thống này có thể cắt DNA theo đích định sẵn, phát hiện đưa họ tới Giải Nobel Hóa học 2020. Từ đó, công cụ này lan sang nghiên cứu cơ bản, chọn tạo giống cây trồng và nghiên cứu ung thư, dù hy vọng chữa các bệnh di truyền vẫn mới chỉ là hy vọng."
+    "vi": "CRISPR-Cas9 bắt đầu như một phần trong cách vi khuẩn tự vệ trước virus. Năm 2012, Emmanuelle Charpentier và Jennifer Doudna cho thấy hệ thống này có thể cắt DNA theo đích định sẵn, phát hiện đưa họ tới Giải Nobel Hóa học 2020. Từ đó, công cụ này lan sang nghiên cứu cơ bản, chọn tạo giống cây trồng và nghiên cứu ung thư, dù hy vọng chữa các bệnh di truyền vẫn mới chỉ là hy vọng.",
+    "fr": "CRISPR-Cas9 a d'abord fait partie des défenses développées par les bactéries contre les virus. En 2012, Emmanuelle Charpentier et Jennifer Doudna ont montré que ce système pouvait couper l'ADN de manière ciblée, une découverte qui leur a valu le prix Nobel de chimie en 2020. Depuis, l'outil s'est diffusé dans la recherche fondamentale, la sélection végétale et l'oncologie, même si l'espoir de guérir des maladies héréditaires reste pour l'instant un espoir.",
+    "de": "CRISPR-Cas9 entstand als Teil des Schutzmechanismus, mit dem sich Bakterien gegen Viren wehren. 2012 wiesen Emmanuelle Charpentier und Jennifer Doudna nach, dass das System gezielt DNA zerschneiden kann – eine Entdeckung, für die sie 2020 den Nobelpreis für Chemie erhielten. Seitdem hat sich das Werkzeug in der Grundlagenforschung, Pflanzenzüchtung und Krebsforschung verbreitet, wenngleich die Heilung von Erbkrankheiten noch immer vor allem eine Hoffnung ist.",
+    "es": "CRISPR-Cas9 comenzó como parte del mecanismo con el que las bacterias se defienden de los virus. En 2012, Emmanuelle Charpentier y Jennifer Doudna demostraron que el sistema podía cortar ADN dirigido, un descubrimiento que les valió el Premio Nobel de Química de 2020. Desde entonces, la herramienta se ha extendido por la investigación básica, la fitomejora y los estudios sobre el cáncer, aunque la esperanza de curar enfermedades hereditarias sigue siendo solo una esperanza."
   },
   "sections": [
     {
       "heading_en": "An immune system in bacteria",
       "heading_vi": "Một hệ miễn dịch trong vi khuẩn",
       "body_en": "The Nobel committee describes CRISPR/Cas as an ancient immune system in bacteria, one that disarms viruses by cleaving their DNA {nobel-press}. Charpentier's work showed that a molecule called tracrRNA is part of that bacterial immune system {nobel-press}.",
-      "body_vi": "Ủy ban Nobel mô tả CRISPR/Cas là một hệ miễn dịch cổ xưa của vi khuẩn, có khả năng vô hiệu hóa virus bằng cách cắt DNA của chúng {nobel-press}. Nghiên cứu của Charpentier cho thấy một phân tử gọi là tracrRNA là một phần của hệ miễn dịch đó {nobel-press}."
+      "body_vi": "Ủy ban Nobel mô tả CRISPR/Cas là một hệ miễn dịch cổ xưa của vi khuẩn, có khả năng vô hiệu hóa virus bằng cách cắt DNA của chúng {nobel-press}. Nghiên cứu của Charpentier cho thấy một phân tử gọi là tracrRNA là một phần của hệ miễn dịch đó {nobel-press}.",
+      "heading_fr": "Un système immunitaire chez les bactéries",
+      "body_fr": "Le comité Nobel décrit CRISPR/Cas comme un système immunitaire ancestral chez les bactéries, qui désarme les virus en clivant leur ADN {nobel-press}. Les travaux de Charpentier ont montré qu'une molécule appelée tracrRNA fait partie intégrante de ce système immunitaire bactérien {nobel-press}.",
+      "heading_de": "Ein Immunsystem bei Bakterien",
+      "body_de": "Das Nobelkomitee beschreibt CRISPR/Cas als ein uraltes Immunsystem bei Bakterien, das Viren unschädlich macht, indem es deren DNA spaltet {nobel-press}. Charpentiers Arbeit zeigte, dass ein Molekül namens tracrRNA Teil dieses bakteriellen Immunsystems ist {nobel-press}.",
+      "heading_es": "Un sistema inmunitario en las bacterias",
+      "body_es": "El comité Nobel describe CRISPR/Cas como un antiguo sistema inmunitario en las bacterias, capaz de desarmar virus mediante la escisión de su ADN {nobel-press}. El trabajo de Charpentier demostró que una molécula llamada tracrRNA forma parte de ese sistema inmunitario bacteriano {nobel-press}."
     },
     {
       "heading_en": "A cut that needed two parts",
       "heading_vi": "Một nhát cắt cần hai thành phần",
       "body_en": "Earlier, researchers believed that tracrRNA was needed only to help process the CRISPR RNA into its active form. Once the Cas9 protein had access to tracrRNA, the DNA molecule was cut into two parts. The Nobel background presents this as the result the researchers had been waiting for {nobel-popular}.",
-      "body_vi": "Trước đó, các nhà nghiên cứu cho rằng tracrRNA chỉ cần để giúp xử lý RNA của CRISPR thành dạng hoạt động. Khi protein Cas9 tiếp cận được tracrRNA, phân tử DNA bị cắt thành hai đoạn. Tài liệu phổ biến của Nobel coi đây là kết quả mà các nhà nghiên cứu đã chờ đợi {nobel-popular}."
+      "body_vi": "Trước đó, các nhà nghiên cứu cho rằng tracrRNA chỉ cần để giúp xử lý RNA của CRISPR thành dạng hoạt động. Khi protein Cas9 tiếp cận được tracrRNA, phân tử DNA bị cắt thành hai đoạn. Tài liệu phổ biến của Nobel coi đây là kết quả mà các nhà nghiên cứu đã chờ đợi {nobel-popular}.",
+      "heading_fr": "Une coupure nécessitant deux éléments",
+      "body_fr": "Auparavant, les chercheurs pensaient que le tracrRNA ne servait qu'à transformer l'ARN CRISPR en sa forme active. Dès lors que la protéine Cas9 a eu accès au tracrRNA, la molécule d'ADN a été coupée en deux parties. Le document de vulgarisation du Nobel présente cela comme le résultat que les chercheurs attendaient {nobel-popular}.",
+      "heading_de": "Ein Schnitt, der zwei Teile brauchte",
+      "body_de": "Zuvor nahmen Forschende an, tracrRNA werde lediglich benötigt, um die CRISPR-RNA in ihre aktive Form zu überführen. Sobald das Cas9-Protein Zugriff auf tracrRNA hatte, wurde das DNA-Molekül in zwei Teile zerschnitten. Die Hintergrundinformationen des Nobelkomitees beschreiben dies als genau das Ergebnis, auf das die Forschenden gewartet hatten {nobel-popular}.",
+      "heading_es": "Un corte que requería dos partes",
+      "body_es": "Con anterioridad, los investigadores creían que el tracrRNA solo era necesario para ayudar a procesar el ARN de CRISPR y llevarlo a su forma activa. Una vez que la proteína Cas9 tuvo acceso al tracrRNA, la molécula de ADN se escindió en dos partes. El documento divulgativo del Nobel presenta esto como el resultado que los investigadores habían estado esperando {nobel-popular}."
     },
     {
       "heading_en": "The 2012 evidence",
       "heading_vi": "Bằng chứng năm 2012",
       "body_en": "A review of the work notes that Doudna and Charpentier published the first evidence that the CRISPR system could cut targeted bacterial DNA in June 2012 {jci-review}. The finding was that the system could cut targeted DNA, which is the property that makes it usable as a tool.",
-      "body_vi": "Một bài tổng quan về công trình này ghi nhận rằng Doudna và Charpentier công bố bằng chứng đầu tiên cho thấy hệ thống CRISPR có thể cắt DNA vi khuẩn theo đích vào tháng 6 năm 2012 {jci-review}. Phát hiện này cho thấy hệ thống có thể cắt DNA theo đích, và đó là tính chất khiến nó dùng được như một công cụ."
+      "body_vi": "Một bài tổng quan về công trình này ghi nhận rằng Doudna và Charpentier công bố bằng chứng đầu tiên cho thấy hệ thống CRISPR có thể cắt DNA vi khuẩn theo đích vào tháng 6 năm 2012 {jci-review}. Phát hiện này cho thấy hệ thống có thể cắt DNA theo đích, và đó là tính chất khiến nó dùng được như một công cụ.",
+      "heading_fr": "La preuve apportée en 2012",
+      "body_fr": "Une revue de ces travaux indique que Doudna et Charpentier ont publié en juin 2012 la première preuve démontrant que le système CRISPR pouvait couper de l'ADN bactérien ciblé {jci-review}. La découverte résidait dans la capacité du système à couper un ADN ciblé, propriété qui le rend utilisable comme outil.",
+      "heading_de": "Der Beleg aus dem Jahr 2012",
+      "body_de": "Eine Übersichtsarbeit hält fest, dass Doudna und Charpentier im Juni 2012 den ersten Beleg dafür veröffentlichten, dass das CRISPR-System gezielt bakterielle DNA zerschneiden kann {jci-review}. Der entscheidende Befund war, dass das System DNA zielgerichtet schneiden kann – genau die Eigenschaft, die es als Werkzeug nutzbar macht.",
+      "heading_es": "Las pruebas de 2012",
+      "body_es": "Una revisión de los trabajos señala que Doudna y Charpentier publicaron en junio de 2012 las primeras pruebas de que el sistema CRISPR podía cortar ADN bacteriano dirigido {jci-review}. El hallazgo consistió en que el sistema podía cortar ADN de forma dirigida, una propiedad que permite utilizarlo como herramienta."
     },
     {
       "heading_en": "From scissors to everyday tools",
       "heading_vi": "Từ kéo cắt đến công cụ thường ngày",
       "body_en": "The Nobel committee says that the CRISPR/Cas9 genetic scissors have revolutionised molecular life sciences, and that their use has exploded since 2012 {nobel-press}. The popular background adds that the tool has brought new opportunities for plant breeding and is contributing to innovative cancer therapies {nobel-popular}. These are the areas where the tool already changes practice, rather than only promises to.",
-      "body_vi": "Ủy ban Nobel nói rằng kéo cắt gen CRISPR/Cas9 đã cách mạng hóa khoa học sự sống phân tử, và việc sử dụng nó bùng nổ kể từ năm 2012 {nobel-press}. Tài liệu phổ biến bổ sung rằng công cụ này mở ra cơ hội mới cho chọn tạo giống cây trồng và đang góp phần vào các liệu pháp ung thư mới {nobel-popular}. Đây là những lĩnh vực công cụ đã làm thay đổi thực hành, chứ không chỉ hứa hẹn."
+      "body_vi": "Ủy ban Nobel nói rằng kéo cắt gen CRISPR/Cas9 đã cách mạng hóa khoa học sự sống phân tử, và việc sử dụng nó bùng nổ kể từ năm 2012 {nobel-press}. Tài liệu phổ biến bổ sung rằng công cụ này mở ra cơ hội mới cho chọn tạo giống cây trồng và đang góp phần vào các liệu pháp ung thư mới {nobel-popular}. Đây là những lĩnh vực công cụ đã làm thay đổi thực hành, chứ không chỉ hứa hẹn.",
+      "heading_fr": "Des ciseaux moléculaires aux outils du quotidien",
+      "body_fr": "Le comité Nobel affirme que les ciseaux génétiques CRISPR/Cas9 ont révolutionné les sciences moléculaires du vivant et que leur utilisation a explosé depuis 2012 {nobel-press}. Le document de vulgarisation ajoute que l'outil a ouvert de nouvelles perspectives pour la sélection végétale et contribue à des thérapies innovantes contre le cancer {nobel-popular}. Ce sont des domaines dans lesquels l'outil transforme déjà les pratiques, au lieu de se borner à des promesses.",
+      "heading_de": "Von der Schere zum Alltagswerkzeug",
+      "body_de": "Laut dem Nobelkomitee hat die CRISPR/Cas9-Genschere die molekularen Lebenswissenschaften revolutioniert, und ihr Einsatz habe sich seit 2012 explosionsartig verbreitet {nobel-press}. Der populärwissenschaftliche Hintergrundbericht ergänzt, dass das Werkzeug neue Möglichkeiten für die Pflanzenzüchtung eröffnet hat und zu innovativen Krebstherapien beiträgt {nobel-popular}. Dies sind Bereiche, in denen das Werkzeug die Praxis bereits verändert, statt dies nur zu versprechen.",
+      "heading_es": "De tijeras a herramientas cotidianas",
+      "body_es": "El comité Nobel afirma que las tijeras genéticas CRISPR/Cas9 han revolucionado las ciencias de la vida a nivel molecular y que su uso se ha disparado desde 2012 {nobel-press}. El documento divulgativo añade que la herramienta ha abierto nuevas oportunidades para la fitomejora y está contribuyendo a terapias oncológicas innovadoras {nobel-popular}. Estas son las áreas donde la herramienta ya está transformando la práctica, en lugar de limitarse a prometerlo."
     },
     {
       "heading_en": "A promise still ahead",
       "heading_vi": "Một lời hứa vẫn còn ở phía trước",
       "body_en": "The popular background says the technology may make the dream of curing inherited diseases come true {nobel-popular}. Note the hedge: may. The claim describes a possibility the technology is aiming at, and the Nobel material does not say that it has been achieved for any particular disease. Readers should treat cure claims as statements about a goal until the evidence shows otherwise.",
-      "body_vi": "Tài liệu phổ biến nói công nghệ này có thể biến giấc mơ chữa các bệnh di truyền thành hiện thực {nobel-popular}. Hãy để ý từ \"có thể\". Đây là mô tả một khả năng mà công nghệ đang nhắm tới, và tài liệu Nobel không nói nó đã đạt được cho bệnh cụ thể nào. Người đọc nên coi các khẳng định về chữa khỏi là mục tiêu, cho đến khi bằng chứng cho thấy khác."
+      "body_vi": "Tài liệu phổ biến nói công nghệ này có thể biến giấc mơ chữa các bệnh di truyền thành hiện thực {nobel-popular}. Hãy để ý từ \"có thể\". Đây là mô tả một khả năng mà công nghệ đang nhắm tới, và tài liệu Nobel không nói nó đã đạt được cho bệnh cụ thể nào. Người đọc nên coi các khẳng định về chữa khỏi là mục tiêu, cho đến khi bằng chứng cho thấy khác.",
+      "heading_fr": "Une promesse encore à venir",
+      "body_fr": "Le document de vulgarisation indique que la technologie pourrait concrétiser le rêve de guérir des maladies héréditaires {nobel-popular}. Notez la nuance : « pourrait ». Cette affirmation décrit une éventualité visée par la technologie, et les documents du Nobel ne disent pas qu'elle a été obtenue pour une maladie particulière. Les lecteurs devraient considérer les allégations de guérison comme l'expression d'un objectif jusqu'à ce que les preuves démontrent le contraire.",
+      "heading_de": "Ein noch uneingelöstes Versprechen",
+      "body_de": "Dem populärwissenschaftlichen Hintergrundbericht zufolge könnte die Technologie den Traum erfüllen, Erbkrankheiten zu heilen {nobel-popular}. Zu beachten ist hier die Einschränkung: könnte. Die Aussage beschreibt eine Möglichkeit, die mit der Technologie angestrebt wird; die Nobel-Unterlagen besagen jedoch nicht, dass dies bereits für eine bestimmte Krankheit gelungen sei. Lesende sollten Aussagen über Heilungen als Zielvorstellungen betrachten, solange Belege nichts anderes zeigen.",
+      "heading_es": "Una promesa aún pendiente",
+      "body_es": "El documento divulgativo señala que la tecnología podría hacer realidad el sueño de curar enfermedades hereditarias {nobel-popular}. Nótese el matiz de cautela: «podría». La afirmación describe una posibilidad a la que aspira la tecnología, y el material del Nobel no afirma que ya se haya logrado para ninguna enfermedad en particular. Los lectores deben considerar las declaraciones de cura como metas u objetivos hasta que las pruebas demuestren lo contrario."
     },
     {
       "heading_en": "Reading a gene-editing claim",
       "heading_vi": "Đọc một khẳng định về chỉnh sửa gen",
       "body_en": "A claim about gene editing can describe a lab result, an animal study, or a human treatment, and the three carry very different weight. [g:Before you repeat a headline, check which of the three it describes, and whether the source is a trial report or a description of a goal.] That single check separates most of the confusion in public discussion of the technology.",
-      "body_vi": "Một khẳng định về chỉnh sửa gen có thể mô tả kết quả trong phòng thí nghiệm, nghiên cứu trên động vật, hoặc điều trị trên người, và ba loại này có trọng lượng rất khác nhau. [g:Trước khi lặp lại một tiêu đề, hãy kiểm tra nó mô tả loại nào trong ba loại đó, và nguồn là báo cáo thử nghiệm hay mô tả một mục tiêu.] Một kiểm tra đơn giản này cũng gỡ được phần lớn nhầm lẫn trong thảo luận công chúng về công nghệ."
+      "body_vi": "Một khẳng định về chỉnh sửa gen có thể mô tả kết quả trong phòng thí nghiệm, nghiên cứu trên động vật, hoặc điều trị trên người, và ba loại này có trọng lượng rất khác nhau. [g:Trước khi lặp lại một tiêu đề, hãy kiểm tra nó mô tả loại nào trong ba loại đó, và nguồn là báo cáo thử nghiệm hay mô tả một mục tiêu.] Một kiểm tra đơn giản này cũng gỡ được phần lớn nhầm lẫn trong thảo luận công chúng về công nghệ.",
+      "heading_fr": "Décrypter une annonce sur l'édition génomique",
+      "body_fr": "Une affirmation concernant l'édition génomique peut désigner un résultat de laboratoire, une étude sur l'animal ou un traitement chez l'humain, trois cas de figure qui n'ont pas du tout le même poids. [g:Avant de relayer un gros titre, vérifiez lequel des trois il décrit, et si la source est un compte rendu d'essai clinique ou la formulation d'un objectif.] Cette simple vérification dissipe l'essentiel de la confusion dans le débat public sur cette technologie.",
+      "heading_de": "Aussagen über Genom-Editierung einordnen",
+      "body_de": "Eine Behauptung über Genom-Editierung kann ein Laborergebnis, eine Tierstudie oder eine Behandlung am Menschen beschreiben – und diese drei Ebenen haben ein völlig unterschiedliches Gewicht. [g:Bevor du eine Schlagzeile wiedergibst, prüfe, welche der drei Varianten sie beschreibt und ob die Quelle ein Studienbericht oder die Formulierung eines Ziels ist.] Diese einzige Prüfung beseitigt den Großteil der Verwirrung in der öffentlichen Diskussion über die Technologie.",
+      "heading_es": "Cómo interpretar una afirmación sobre edición genética",
+      "body_es": "Una afirmación sobre la edición genética puede describir un resultado de laboratorio, un estudio en animales o un tratamiento en seres humanos, y los tres tienen un peso muy diferente. [g:Antes de difundir un titular, compruebe cuál de los tres describe y si la fuente es el informe de un ensayo o la descripción de un objetivo.] Esa simple comprobación disipa la mayor parte de la confusión en el debate público sobre esta tecnología."
     }
   ],
   "keyPoint": {
     "en": "CRISPR-Cas9 started as a bacterial defence that cuts viral DNA. Doudna and Charpentier showed in 2012 that the cut could be aimed, and the tool now shapes work in crops and medicine, though the promised cures are still a goal.",
-    "vi": "CRISPR-Cas9 bắt đầu như một cơ chế tự vệ của vi khuẩn, cắt DNA của virus. Doudna và Charpentier cho thấy năm 2012 nhát cắt có thể được nhắm định hướng, và công cụ này nay định hình công việc trong cây trồng và y học, dù các liệu pháp chữa khỏi được hứa hẹn vẫn là một mục tiêu."
+    "vi": "CRISPR-Cas9 bắt đầu như một cơ chế tự vệ của vi khuẩn, cắt DNA của virus. Doudna và Charpentier cho thấy năm 2012 nhát cắt có thể được nhắm định hướng, và công cụ này nay định hình công việc trong cây trồng và y học, dù các liệu pháp chữa khỏi được hứa hẹn vẫn là một mục tiêu.",
+    "fr": "CRISPR-Cas9 a débuté comme une défense bactérienne qui découpe l'ADN viral. Doudna et Charpentier ont montré en 2012 que la coupure pouvait être ciblée, et l'outil façonne aujourd'hui les travaux en agronomie et en médecine, bien que les guérisons promises restent un objectif.",
+    "de": "CRISPR-Cas9 begann als bakterielle Abwehr, die virale DNA spaltet. Doudna und Charpentier zeigten 2012, dass sich der Schnitt gezielt steuern lässt; heute prägt das Werkzeug die Arbeit an Nutzpflanzen und in der Medizin, wenngleich die versprochenen Heilungen noch ein Ziel sind.",
+    "es": "CRISPR-Cas9 comenzó como una defensa bacteriana que corta el ADN viral. En 2012, Doudna y Charpentier demostraron que el corte podía dirigirse, y la herramienta hoy define avances en cultivos y medicina, aunque las curas prometidas siguen siendo un objetivo."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Đọc đoạn đầu của thông cáo báo chí Nobel, và ghi lại ai đoạt giải năm 2020 và vì phát hiện nào.",
       "Tìm một báo cáo hiện tại về một liệu pháp chỉnh sửa gen, và ghi lại báo cáo đó mô tả một thử nghiệm, một sản phẩm đã được phê duyệt hay một kết quả trong phòng thí nghiệm.",
       "Giải thích cho người khác trong một câu sự khác nhau giữa CRISPR như cơ chế tự vệ của vi khuẩn và CRISPR như công cụ chỉnh sửa gen."
+    ],
+    "fr": [
+      "Lisez le premier paragraphe du communiqué de presse du Nobel et notez qui a remporté le prix 2020 et pour quelle découverte.",
+      "Trouvez un article récent sur un traitement par édition génomique et notez s'il décrit un essai clinique, un produit approuvé ou un résultat de laboratoire.",
+      "Expliquez en une phrase à quelqu'un la différence entre CRISPR en tant que défense bactérienne et CRISPR en tant qu'outil d'édition génomique."
+    ],
+    "de": [
+      "Lies den ersten Absatz der Nobelpreis-Pressemitteilung und notiere, wer den Preis 2020 für welche Entdeckung erhalten hat.",
+      "Finde einen aktuellen Bericht über eine geneditierende Behandlung und halte fest, ob er eine klinische Studie, ein zugelassenes Produkt oder ein Laborergebnis beschreibt.",
+      "Erkläre jemand anderem in einem Satz den Unterschied zwischen CRISPR als bakterieller Abwehr und CRISPR als Genwerkzeug."
+    ],
+    "es": [
+      "Lea el primer párrafo del comunicado de prensa del Nobel y anote quiénes ganaron el premio de 2020 y por qué descubrimiento.",
+      "Busque un informe actual sobre un tratamiento de edición genética y determine si describe un ensayo, un producto aprobado o un resultado de laboratorio.",
+      "Explique en una sola frase a otra persona la diferencia entre CRISPR como defensa bacteriana y CRISPR como herramienta de edición genética."
     ]
   },
   "references": [
@@ -98,12 +158,91 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/crispr-cas9-from-bacterial-defence-to-gene-editing.webp",
+    "url": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTEwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Mike Wilson",
+    "author": "Anirudh",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/rM7B4DheQc0"
+    "sourceUrl": "https://unsplash.com/photos/YQYacLW8o2U",
+    "wide": "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTEwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@lanirudhreddy?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoQABwAPu1krU2ppaSiMAgBMB2JZQABFblbMyM6Y5g0dFAAAP5kDeQrK/xMGetn5cPVg9KkApS2X1heTzjx96/U8J9/68n9HUCf9NooMv+TINq8VIPmHSN/CrczvEAA",
-  "dominant": "#57585b"
+  "dominant": "#57585b",
+  "glossary": {
+    "en": {
+      "crispr-cas9": "A bacterial defense system adapted as a tool to cut and edit specific target DNA.",
+      "dna": "The hereditary molecule carrying genetic instructions for the development and function of living organisms.",
+      "cleaving": "Cutting or splitting, specifically referring to breaking viral DNA molecules into pieces.",
+      "tracrrna": "A bacterial RNA molecule required alongside Cas9 protein to cut target DNA.",
+      "crispr rna": "RNA containing sequence guides that direct the cutting enzyme to matching target DNA.",
+      "cas9 protein": "An enzyme that acts as molecular scissors to cut target DNA at specific sites.",
+      "genetic scissors": "A popular term for molecular tools that cut DNA molecules at precise locations.",
+      "molecular life sciences": "Scientific disciplines studying biological processes and living systems at the molecular level.",
+      "plant breeding": "Modifying the genetic traits of agricultural plants to develop desired crop characteristics.",
+      "inherited diseases": "Genetic illnesses caused by DNA abnormalities transmitted from parents to their offspring.",
+      "gene editing": "Precise modification of an organism's genetic code by altering specific DNA sequences."
+    },
+    "vi": {
+      "crispr-cas9": "Công cụ sinh học giúp cắt và chỉnh sửa DNA chính xác tại vị trí định sẵn.",
+      "hệ miễn dịch": "Cơ chế tự vệ của sinh vật giúp vô hiệu hóa virus và các tác nhân gây hại.",
+      "chỉnh sửa gen": "Kỹ thuật can thiệp nhằm thay đổi, thêm hoặc loại bỏ các đoạn DNA trong hệ gen.",
+      "dna": "Phân tử mang thông tin di truyền chi phối cấu trúc và hoạt động của sinh vật.",
+      "crispr/cas": "Hệ thống miễn dịch tự nhiên của vi khuẩn dùng để chống lại virus xâm nhập.",
+      "tracrrna": "Phân tử RNA cần thiết để kích hoạt protein Cas9 thực hiện nhát cắt phân tử DNA.",
+      "protein cas9": "Loại enzyme đóng vai trò chiếc kéo sinh học cắt đứt chuỗi DNA tại vị trí mục tiêu.",
+      "rna": "Phân tử acid nucleic tham gia truyền đạt thông tin di truyền và điều hòa hoạt động gen.",
+      "kéo cắt gen": "Thuật ngữ ví von chỉ công cụ có khả năng cắt chính xác chuỗi DNA theo mục tiêu.",
+      "chọn tạo giống": "Hoạt động chọn lọc và cải biến giống cây trồng để đạt các đặc tính năng suất mong muốn.",
+      "bệnh di truyền": "Bệnh do những bất thường hoặc đột biến trong vật chất di truyền DNA gây ra."
+    },
+    "fr": {
+      "crispr-cas9": "Système moléculaire bactérien adapté pour couper et modifier précisément des séquences d'ADN ciblées.",
+      "édition génomique": "Technique permettant de modifier de manière ciblée et précise le matériel génétique d'une cellule.",
+      "adn": "Molécule biologique portant l'information génétique nécessaire au fonctionnement et au développement des êtres vivants.",
+      "sélection végétale": "Amélioration des variétés cultivées par croisement ou modification ciblée de leurs caractères génétiques.",
+      "maladies héréditaires": "Pathologies génétiques transmises des parents à leurs descendants par le génome.",
+      "clivant": "Coupant ou scindant une chaîne moléculaire d'ADN en fragments distincts.",
+      "tracrrna": "Petite molécule d'ARN nécessaire à l'activation et au guidage de l'enzyme Cas9.",
+      "arn crispr": "Séquence d'ARN servant de guide pour repérer l'ADN viral ou cible à découper.",
+      "ciseaux génétiques": "Outil moléculaire capable de sectionner l'ADN à un endroit précis du génome.",
+      "essai clinique": "Étude menée sur des patients pour évaluer l'efficacité et la sécurité d'un traitement."
+    },
+    "de": {
+      "crispr-cas9": "Molekulares Werkzeug zum gezielten Durchtrennen und Verändern von Erbgutsequenzen.",
+      "dna": "Desoxyribonukleinsäure, der chemische Träger der genetischen Erbinformation in Lebewesen.",
+      "tracrrna": "Ein RNA-Molekül, das zusammen mit Cas9 nötig ist, um Ziel-DNA zu spalten.",
+      "crispr/cas": "Ursprünglich ein bakterielles Abwehrsystem, das virale DNA erkennt und gezielt zerschneidet.",
+      "cas9-protein": "Ein bakterielles Enzym, das als molekulare Schere fungiert und DNA doppelsträngig schneidet.",
+      "crispr-rna": "Ribonukleinsäure, die dem Schneideenzym als molekularer Lotse zur passenden DNA-Stelle dient.",
+      "molekularen lebenswissenschaften": "Forschungsdisziplinen, die zelluläre und biochemische Abläufe in biologischen Systemen untersuchen.",
+      "pflanzenzüchtung": "Gezieltes Verändern genetischer Merkmale von Nutzpflanzen zur Steigerung von Ertrag oder Widerstandskraft.",
+      "krebstherapien": "Medizinische Behandlungsformen zur Bekämpfung von bösartigen Tumoren und Krebszellen.",
+      "erbkrankheiten": "Erkrankungen, die durch erbliche Genveränderungen ausgelöst und an Nachkommen weitergegeben werden können.",
+      "genom-editierung": "Präzise molekularbiologische Methoden zur gezielten Veränderung bestimmter Abschnitte der DNA.",
+      "tierstudie": "Wissenschaftliche Untersuchung an Tieren zur Erforschung biologischer Mechanismen oder Therapiewirkungen."
+    },
+    "es": {
+      "crispr-cas9": "Herramienta molecular que utiliza una proteína y ARN para cortar secuencias específicas de ADN.",
+      "edición genética": "Técnica biológica para modificar, insertar o eliminar secuencias concretas en el ADN de un organismo.",
+      "adn": "Molécula biológica portadora de las instrucciones genéticas de los seres vivos y de muchos virus.",
+      "crispr/cas": "Mecanismo inmunitario adaptativo de bacterias que corta el ADN de virus invasores para desarmarlos.",
+      "tracrrna": "Molécula de ARN bacteriano que participa en la activación del complejo Cas9 para cortar ADN.",
+      "cas9": "Proteína enzimática que funciona como una tijera molecular capaz de cortar fragmentos específicos de ADN.",
+      "tijeras genéticas": "Metáfora que alude a complejos moleculares capaces de cortar con precisión cadenas de material genético.",
+      "fitomejora": "Optimización y mejora de variedades vegetales para obtener cultivos con mejores características agronómicas.",
+      "enfermedades hereditarias": "Trastornos genéticos causados por alteraciones en el genoma que se transmiten entre generaciones.",
+      "ensayo": "Estudio científico diseñado para comprobar la seguridad y eficacia de una intervención o tratamiento médico."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

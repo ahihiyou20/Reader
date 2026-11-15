@@ -3,10 +3,12 @@ import { useMemo, useRef } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { useFeed } from '@/lib/data';
 import { useUI } from '@/stores/ui';
+import { rankForYou } from '@/lib/recommend';
+import { useReading } from '@/stores/reading';
 import { useUser } from '@/stores/user';
 
 /**
- * Feed order for this session: the build-time ranking, filtered by the chosen category, with
+ * Feed order for this session: the build-time ranking, personalised (lib/recommend) or filtered by the chosen category, with
  * articles already finished moved to the end, and an optional starting article first.
  * The list stays stable while reading (it does not re-sort when progress changes).
  */
@@ -26,6 +28,8 @@ export function useFeedList(override?: FeedItem[]): FeedItem[] | undefined {
     if (!data) return undefined;
     let items = data.items;
     if (category) items = items.filter((i) => i.category === category);
+    // For You: the reader's topics first. A chosen category keeps the editorial order.
+    else items = rankForYou(items, useReading.getState().signals, useReading.getState().topics);
     const progress = useUser.getState().progress;
     if (Object.keys(progress).length > 0) {
       const uncompleted: FeedItem[] = [];

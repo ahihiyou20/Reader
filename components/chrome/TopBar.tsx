@@ -23,6 +23,9 @@ export function TopBar() {
 
   return (
     <header className="topbar" data-region="topbar" style={{ viewTransitionName: 'top-bar' }}>
+      <button className="navbtn" type="button" aria-label={t('menu')} aria-haspopup="menu" onClick={() => useUI.setState({ navOpen: true, langMenu: false })}>
+        <img src="/icons/logo-120.png" alt="" width={34} height={34} draggable={false} />
+      </button>
       <button
         className="me"
         type="button"
@@ -58,7 +61,16 @@ export function TopBar() {
         className="tb-ic bell"
         type="button"
         aria-label={t('notifications')}
-        onClick={() => openOverlay('notifications')}
+        onClick={(e) => {
+          preloadSocial();
+          const el = e.currentTarget;
+          // Restart the ring on every tap; the panel follows once the swing has started.
+          el.classList.remove('ring');
+          void el.offsetWidth;
+          el.classList.add('ring');
+          setTimeout(() => openOverlay('notifications'), prefersReducedMotion() ? 0 : 220);
+        }}
+        onAnimationEnd={(e) => e.currentTarget.classList.remove('ring')}
         onPointerDown={preloadSocial}
         onMouseEnter={preloadSocial}
         onFocus={preloadSocial}
@@ -66,7 +78,7 @@ export function TopBar() {
         <BellRing className="ic" aria-hidden="true" />
       </button>
       <button
-        className="tb-ic"
+        className="tb-ic compass"
         type="button"
         aria-label={t('explore')}
         onClick={() => openOverlay('explore')}
@@ -107,7 +119,8 @@ function StreakBadge({ onPress, onPreload }: { onPress: () => void; onPreload?: 
     }
     if (prefersReducedMotion()) return;
     if (fire.current) {
-      animate(fire.current, { scale: [1, 1.35, 1] }, spring.pop);
+      // A spring takes two keyframes; three made framer-motion throw (and Next's dev overlay cover the page).
+      animate(fire.current, { scale: [1.35, 1] }, spring.pop);
     }
   }, [bump]);
 

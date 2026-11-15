@@ -4,12 +4,10 @@ import { fold, markMatches, SEARCH_OPTIONS, type SearchDoc } from '@/lib/search'
 import { rankFeed } from '@/lib/content/rank';
 import type { ArticleClient } from '@/lib/content/types';
 
-const doc = (id: string, title_vi: string, title_en = ''): SearchDoc => ({
+const doc = (id: string, title: string): SearchDoc => ({
   id,
-  title_en,
-  title_vi,
-  hook_en: '',
-  hook_vi: '',
+  title,
+  hook: '',
   headings: '',
   body: '',
   category: '',

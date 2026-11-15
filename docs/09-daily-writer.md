@@ -79,6 +79,10 @@ used by another article.
 
 ## 5. Check and publish
 
+0. Write `title`, `hook`, every section, `keyPoint` and `applySteps` in all five languages (en, vi, fr, de, es), and a
+   `glossary` per language: 8–14 terms copied exactly from that language's text, each with a meaning in context of at
+   most 20 words (see `scripts/pipeline/translate.ts` for the rules). Anything left out is filled later by the
+   Translations workflow.
 1. `pnpm validate` must report no errors for the new files; fix and re-run.
 2. `pnpm content` must succeed.
 3. Commit only `content/articles/*.json` and `public/covers/*.webp` for the new articles, as

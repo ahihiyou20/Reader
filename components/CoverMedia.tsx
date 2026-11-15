@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CoverClient } from '@/lib/content/types';
 import { COVER_SIZES, type OptCover } from '@/lib/covers';
+import { useUI } from '@/stores/ui';
+import { useReducedMotion } from './hooks';
 
 /** Full-bleed cover image or muted looping video (FR-02). */
 export function CoverMedia({
@@ -24,6 +26,11 @@ export function CoverMedia({
   const img = useRef<HTMLImageElement>(null);
 
   const shouldDecode = Boolean(priority || active || playing || blurred);
+  const landscape = useUI((s) => s.stage.endsWith('landscape'));
+  const still = useReducedMotion();
+  // The landscape file is sharp on wide screens; phones keep the smaller portrait one.
+  const wide = landscape ? cover.wide : undefined;
+  const clip = cover.video && !blurred && !still && (active || playing) && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
 
   useEffect(() => {
     if (!shouldDecode || decoded) return;
@@ -80,17 +87,18 @@ export function CoverMedia({
       </>
     );
   }
-  const src = opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
+  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
   if (!src) return placeholder;
   return (
     <>
       {placeholder}
       <img
         ref={img}
-        className={`media${decoded ? '' : ' loading'}`}
+        // Covers without a clip still move: a slow drift across the photo while the cover is on screen.
+        className={`media${decoded ? '' : ' loading'}${playing && !clip ? ' drift' : ''}`}
         src={src}
-        srcSet={opt?.srcSet}
-        sizes={opt ? COVER_SIZES : undefined}
+        srcSet={wide ? undefined : opt?.srcSet}
+        sizes={opt && !wide ? COVER_SIZES : undefined}
         alt=""
         decoding="async"
         draggable={false}
@@ -106,7 +114,10 @@ export function CoverMedia({
           }
         }}
       />
+      {clip && <video ref={video} key={clip} className="media media-clip" src={clip} muted loop playsInline autoPlay preload="auto" aria-hidden="true" />}
     </>
   );
 }
 
+/** The reader asked the browser to save data: keep to the still image. */
+const saveData = () => typeof navigator !== 'undefined' && Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);

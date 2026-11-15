@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Did Life Begin in an RNA World?",
-    "vi": "Sự sống có khởi nguồn từ một thế giới RNA không?"
+    "vi": "Sự sống có khởi nguồn từ một thế giới RNA không?",
+    "fr": "La vie a-t-elle commencé dans un monde à ARN ?",
+    "de": "Begann das Leben in einer RNA-Welt?",
+    "es": "¿Comenzó la vida en un mundo de ARN?"
   },
   "hook": {
     "en": "Life on Earth may have started about 4 billion years ago through self-replicating molecules {source}. Scientists long suspected that RNA played this foundational role because it stores genetic data and acts as a chemical catalyst. However, proving how these fragile chains arose and evolved remains a major scientific puzzle.",
-    "vi": "Sự sống trên Trái Đất có thể bắt đầu từ khoảng 4 tỷ năm trước nhờ các phân tử tự nhân bản {source}. Các nhà khoa học từng nghi ngờ RNA đóng vai trò nền tảng này vì nó lưu trữ dữ liệu di truyền và hoạt động như một chất xúc tác hóa học. Tuy nhiên, việc chứng minh các chuỗi mỏng manh này hình thành và tiến hóa ra sao vẫn là một bài toán khó."
+    "vi": "Sự sống trên Trái Đất có thể bắt đầu từ khoảng 4 tỷ năm trước nhờ các phân tử tự nhân bản {source}. Các nhà khoa học từng nghi ngờ RNA đóng vai trò nền tảng này vì nó lưu trữ dữ liệu di truyền và hoạt động như một chất xúc tác hóa học. Tuy nhiên, việc chứng minh các chuỗi mỏng manh này hình thành và tiến hóa ra sao vẫn là một bài toán khó.",
+    "fr": "La vie sur Terre est peut-être apparue il y a environ 4 milliards d'années grâce à des molécules autoréplicatives {source}. Les scientifiques ont longtemps soupçonné que l'ARN avait joué ce rôle fondateur, car il stocke l'information génétique tout en agissant comme catalyseur chimique. Néanmoins, prouver comment ces chaînes fragiles ont émergé et évolué demeure une énigme scientifique majeure.",
+    "de": "Das Leben auf der Erde entstand möglicherweise vor etwa 4 Milliarden Jahren durch selbstreplizierende Moleküle {source}. Wissenschaftler vermuteten lange, dass RNA diese grundlegende Rolle spielte, da sie genetische Daten speichert und als chemischer Katalysator wirkt. Doch der Nachweis, wie diese empfindlichen Ketten entstanden und sich weiterentwickelten, bleibt ein großes wissenschaftliches Rätsel.",
+    "es": "La vida en la Tierra pudo haber comenzado hace unos 4000 millones de años mediante moléculas autorreplicantes {source}. La comunidad científica sospechaba desde hacía tiempo que el ARN desempeñó este papel fundamental porque almacena información genética y actúa como catalizador químico. Sin embargo, demostrar cómo surgieron y evolucionaron estas frágiles cadenas sigue siendo un gran enigma científico."
   },
   "sections": [
     {
       "heading_en": "The Ribozyme Discovery",
       "heading_vi": "Khám phá về ribozyme",
       "body_en": "In the late 1980s, researchers discovered that certain RNAs can act as catalysts, which they named ribozymes {source}. This dual ability to carry genetic sequences and drive reactions led physicist Walter Gilbert to propose the RNA world hypothesis {source}. Later in 1996, scientists created a ribozyme that could stitch nucleotides together, raising hopes for self-sustaining molecular replication.",
-      "body_vi": "Vào cuối những năm 1980, các nhà nghiên cứu phát hiện ra một số RNA có thể đóng vai trò chất xúc tác, họ đặt tên chúng là ribozyme {source}. Khả năng kép này giúp mang trình tự di truyền và thúc đẩy các phản ứng, khiến nhà vật lý Walter Gilbert đề xuất giả thuyết thế giới RNA {source}. Sau đó vào năm 1996, các nhà khoa học tạo ra một ribozyme có thể khâu các nucleotide lại với nhau, thắp lên hy vọng về việc nhân bản phân tử tự duy trì."
+      "body_vi": "Vào cuối những năm 1980, các nhà nghiên cứu phát hiện ra một số RNA có thể đóng vai trò chất xúc tác, họ đặt tên chúng là ribozyme {source}. Khả năng kép này giúp mang trình tự di truyền và thúc đẩy các phản ứng, khiến nhà vật lý Walter Gilbert đề xuất giả thuyết thế giới RNA {source}. Sau đó vào năm 1996, các nhà khoa học tạo ra một ribozyme có thể khâu các nucleotide lại với nhau, thắp lên hy vọng về việc nhân bản phân tử tự duy trì.",
+      "heading_fr": "La découverte des ribozymes",
+      "body_fr": "À la fin des années 1980, des chercheurs ont découvert que certains ARN peuvent agir comme des catalyseurs, qu'ils ont baptisés ribozymes {source}. Cette double capacité à porter des séquences génétiques et à catalyser des réactions a conduit le physicien Walter Gilbert à proposer l'hypothèse du monde à ARN {source}. Plus tard, en 1996, des scientifiques ont créé un ribozyme capable d'assembler des nucléotides entre eux, suscitant l'espoir d'une réplication moléculaire autonome.",
+      "heading_de": "Die Entdeckung der Ribozyme",
+      "body_de": "In den späten 1980er-Jahren entdeckten Forscher, dass bestimmte RNAs als Katalysatoren wirken können, und bezeichneten sie als Ribozyme {source}. Diese doppelte Fähigkeit, genetische Sequenzen zu tragen und Reaktionen voranzutreiben, veranlasste den Physiker Walter Gilbert dazu, die RNA-Welt-Hypothese aufzustellen {source}. Später, im Jahr 1996, erzeugten Wissenschaftler ein Ribozym, das Nukleotide miteinander verbinden konnte, was Hoffnungen auf eine selbsterhaltende molekulare Replikation weckte.",
+      "heading_es": "El descubrimiento de las ribozimas",
+      "body_es": "A finales de la década de 1980, un grupo de investigadores descubrió que ciertos ARN pueden actuar como catalizadores, a los que llamaron ribozimas {source}. Esta doble capacidad para portar secuencias genéticas e impulsar reacciones llevó al físico Walter Gilbert a proponer la hipótesis del mundo de ARN {source}. Más tarde, en 1996, la comunidad científica creó una ribozima capaz de unir nucleótidos, lo que avivó las esperanzas de una replicación molecular autosostenible."
     },
     {
       "heading_en": "Mutations and Obstacles",
       "heading_vi": "Đột biến và trở ngại",
       "body_en": "Replication inevitably brings mutation errors, opening a path to Darwinian selection {source}. Yet in 2019, biologist Gerald Joyce found that evolving synthetic ribozymes usually lost their catalytic behavior after mutations {source}. Functional ribozymes typically span hundreds of nucleotides, whereas spontaneous assemblies on early Earth only yielded tiny chains of 10 to 15 nucleotides.",
-      "body_vi": "Quá trình nhân bản chắc chắn tạo ra lỗi đột biến, mở ra con đường cho chọn lọc tự nhiên (*Darwinian selection*) {source}. Dù vậy vào năm 2019, nhà sinh học Gerald Joyce nhận thấy các ribozyme tổng hợp đang tiến hóa thường mất đi hành vi xúc tác sau các đột biến {source}. Hơn nữa, các ribozyme chức năng thường kéo dài hàng trăm nucleotide, trong khi các sự hình thành tự phát trên Trái Đất nguyên thủy chỉ tạo ra các chuỗi rất nhỏ từ 10 đến 15 nucleotide."
+      "body_vi": "Quá trình nhân bản chắc chắn tạo ra lỗi đột biến, mở ra con đường cho chọn lọc tự nhiên (*Darwinian selection*) {source}. Dù vậy vào năm 2019, nhà sinh học Gerald Joyce nhận thấy các ribozyme tổng hợp đang tiến hóa thường mất đi hành vi xúc tác sau các đột biến {source}. Hơn nữa, các ribozyme chức năng thường kéo dài hàng trăm nucleotide, trong khi các sự hình thành tự phát trên Trái Đất nguyên thủy chỉ tạo ra các chuỗi rất nhỏ từ 10 đến 15 nucleotide.",
+      "heading_fr": "Mutations et obstacles",
+      "body_fr": "La réplication engendre inévitablement des erreurs de mutation, ouvrant la voie à la sélection darwinienne {source}. Pourtant, en 2019, le biologiste Gerald Joyce a découvert que les ribozymes synthétiques en évolution perdaient généralement leur activité catalytique après des mutations {source}. Les ribozymes fonctionnels comptent généralement des centaines de nucléotides, alors que les assemblages spontanés sur la Terre primitive ne produisaient que de minuscules chaînes de 10 à 15 nucléotides.",
+      "heading_de": "Mutationen und Hindernisse",
+      "body_de": "Die Replikation bringt unweigerlich Mutationsfehler mit sich und ebnet damit den Weg für die Darwin’sche Selektion {source}. Doch im Jahr 2019 stellte der Biologe Gerald Joyce fest, dass sich entwickelnde synthetische Ribozyme nach Mutationen gewöhnlich ihre katalytische Aktivität verloren {source}. Funktionelle Ribozyme umfassen typischerweise Hunderte von Nukleotiden, während spontane Zusammenschlüsse auf der frühen Erde nur winzige Ketten von 10 bis 15 Nukleotiden hervorbrachten.",
+      "heading_es": "Mutaciones y obstáculos",
+      "body_es": "La replicación conlleva inevitablemente errores de mutación, lo que abre una vía hacia la selección darwiniana {source}. Sin embargo, en 2019, el biólogo Gerald Joyce descubrió que las ribozimas sintéticas en evolución solían perder su comportamiento catalítico tras las mutaciones {source}. Las ribozimas funcionales suelen abarcar cientos de nucleótidos, mientras que los ensamblajes espontáneos en la Tierra primitiva solo producían cadenas diminutas de 10 a 15 nucleótidos."
     },
     {
       "heading_en": "Tiny Replicators",
       "heading_vi": "Những bản sao rất nhỏ",
       "body_en": "Recent work by biologist Philipp Holliger showed that self-replicating RNAs can be much smaller {source}. His team found a 45-nucleotide molecule named QT45 that can copy other strands {source}. Finding three such small RNAs among 10 trillion sequences suggests this copying ability might be common enough to appear in a primordial soup.",
-      "body_vi": "Công trình gần đây của nhà sinh học Philipp Holliger cho thấy các RNA tự nhân bản có thể nhỏ hơn nhiều {source}. Nhóm của ông tìm thấy một phân tử dài 45 nucleotide tên là QT45 có khả năng sao chép các sợi khác {source}. Việc tìm thấy ba RNA nhỏ như vậy trong số 10 nghìn tỷ trình tự cho thấy khả năng sao chép này có thể đủ phổ biến để xuất hiện trong một loại súp nguyên thủy."
+      "body_vi": "Công trình gần đây của nhà sinh học Philipp Holliger cho thấy các RNA tự nhân bản có thể nhỏ hơn nhiều {source}. Nhóm của ông tìm thấy một phân tử dài 45 nucleotide tên là QT45 có khả năng sao chép các sợi khác {source}. Việc tìm thấy ba RNA nhỏ như vậy trong số 10 nghìn tỷ trình tự cho thấy khả năng sao chép này có thể đủ phổ biến để xuất hiện trong một loại súp nguyên thủy.",
+      "heading_fr": "De minuscules réplicateurs",
+      "body_fr": "Des travaux récents menés par le biologiste Philipp Holliger ont montré que les ARN autoréplicateurs peuvent être bien plus courts {source}. Son équipe a identifié une molécule de 45 nucléotides baptisée QT45, capable de copier d'autres brins {source}. La découverte de trois ARN aussi courts parmi 10 000 milliards de séquences suggère que cette capacité de copie pourrait être suffisamment fréquente pour émerger au sein d'une soupe primordiale.",
+      "heading_de": "Winzige Replikatoren",
+      "body_de": "Neuere Arbeiten des Biologen Philipp Holliger zeigten, dass selbstreplizierende RNAs deutlich kleiner sein können {source}. Sein Team entdeckte ein Molekül aus 45 Nukleotiden namens QT45, das andere Stränge kopieren kann {source}. Der Fund dreier solch kleiner RNAs unter 10 Billionen Sequenzen legt nahe, dass diese Kopierfähigkeit häufig genug vorkommen könnte, um in einer Ursuppe zu entstehen.",
+      "heading_es": "Replicadores diminutos",
+      "body_es": "Un trabajo reciente del biólogo Philipp Holliger demostró que los ARN autorreplicantes pueden ser mucho más pequeños {source}. Su equipo halló una molécula de 45 nucleótidos llamada QT45 capaz de copiar otras cadenas {source}. Encontrar tres ARN tan pequeños entre 10 billones de secuencias sugiere que esta capacidad de copia podría ser lo bastante común como para surgir en una sopa primordial."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/384/1080/1920",
+    "url": "https://images.unsplash.com/40/rqZBrx1WRsCtkqGSVBK6_IMG_0063.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Griffin Keller",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE"
+    "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE",
+    "wide": "https://images.unsplash.com/40/rqZBrx1WRsCtkqGSVBK6_IMG_0063.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@griffinkeller?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -76,6 +102,21 @@
       "Xem xét sinh học cơ bản của RNA và các chức năng kép của nó.",
       "So sánh kích thước của ribozyme tổng hợp với ribozyme tự nhiên.",
       "Kiểm tra các điều kiện môi trường của Trái Đất thời kỳ đầu."
+    ],
+    "fr": [
+      "Revoir la biologie fondamentale de l'ARN et ses doubles fonctions.",
+      "Comparer la taille des ribozymes synthétiques à celle des ribozymes naturels.",
+      "Examiner les conditions environnementales de la Terre primitive."
+    ],
+    "de": [
+      "Die grundlegende Biologie der RNA und ihre Doppelfunktion nachvollziehen.",
+      "Die Größen synthetischer und natürlicher Ribozyme vergleichen.",
+      "Die Umweltbedingungen der frühen Erde untersuchen."
+    ],
+    "es": [
+      "Repasar la biología básica del ARN y sus funciones duales.",
+      "Comparar el tamaño de las ribozimas sintéticas frente al de las naturales.",
+      "Examinar las condiciones ambientales de la Tierra primitiva."
     ]
   },
   "coverCandidates": [
@@ -112,9 +153,76 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "rna": "A biological molecule that stores genetic information and can catalyze chemical reactions.",
+      "chemical catalyst": "A substance that speeds up or enables a chemical reaction without being consumed.",
+      "ribozymes": "RNA molecules capable of functioning as catalysts to accelerate biochemical reactions.",
+      "rna world hypothesis": "The theory that early Earth life was based entirely on self-replicating and catalytic RNA molecules.",
+      "nucleotides": "The basic chemical building blocks that link together to form RNA or DNA chains.",
+      "molecular replication": "The process by which a molecule makes an exact copy of itself.",
+      "darwinian selection": "Evolutionary process where advantageous mutations help organisms or molecules survive and reproduce more effectively.",
+      "synthetic ribozymes": "Artificially engineered RNA catalysts created in laboratories to study molecular evolution and replication.",
+      "qt45": "A compact synthetic 45-nucleotide RNA molecule capable of copying other RNA strands.",
+      "primordial soup": "The theoretical nutrient-rich fluid on early Earth where life may have first originated."
+    },
+    "vi": {
+      "rna": "Phân tử sinh học lưu trữ thông tin di truyền và có khả năng xúc tác phản ứng.",
+      "chất xúc tác": "Chất làm tăng tốc độ phản ứng hóa học mà không bị tiêu hao sau phản ứng.",
+      "ribozyme": "Phân tử RNA có khả năng hoạt động như một chất xúc tác hóa học.",
+      "thế giới rna": "Giả thuyết thời kỳ đầu sự sống dùng RNA làm vật liệu di truyền và xúc tác.",
+      "nucleotide": "Đơn vị cấu trúc cơ bản liên kết với nhau để tạo nên chuỗi RNA.",
+      "tự nhân bản": "Quá trình phân tử tự tạo ra bản sao giống hệt chính nó.",
+      "đột biến": "Sự biến đổi ngẫu nhiên trong trình tự di truyền trong quá trình sao chép.",
+      "ribozyme tổng hợp": "Phân tử ribozyme do con người nhân tạo trong phòng thí nghiệm, không tự nhiên.",
+      "qt45": "Một ribozyme ngắn gồm 45 nucleotide có khả năng sao chép chuỗi khác.",
+      "súp nguyên thủy": "Hỗn hợp giàu chất hữu cơ trên Trái Đất thuở sơ khai trước khi có sự sống."
+    },
+    "fr": {
+      "molécules autoréplicatives": "Structures chimiques capables de produire des copies conformes d'elles-mêmes de façon autonome.",
+      "arn": "Acide ribonucléique, molécule biologique assurant le stockage d'information et la catalyse de réactions chimiques.",
+      "catalyseur chimique": "Substance qui accélère une réaction chimique sans être consommée au cours du processus.",
+      "ribozymes": "Molécules d'ARN dotées de propriétés catalytiques similaires à celles des enzymes protéiques.",
+      "monde à arn": "Hypothèse selon laquelle la vie primitive reposait sur l'ARN pour l'information et la catalyse.",
+      "nucléotides": "Unités chimiques de base formant les chaînes d'acides nucléiques tels que l'ARN.",
+      "sélection darwinienne": "Mécanisme évolutif où les variantes moléculaires les plus efficaces prolifèrent préférentiellement.",
+      "ribozymes synthétiques": "Molécules d'ARN catalytiques conçues ou optimisées artificiellement en laboratoire.",
+      "terre primitive": "Environnement géologique et physico-chimique de notre planète peu après sa formation.",
+      "qt45": "Court ribozyme synthétique de 45 nucléotides capable de copier d'autres brins d'ARN.",
+      "soupe primordiale": "Milieu liquide originel enrichi en molécules prébiotiques propice à l'émergence du vivant."
+    },
+    "de": {
+      "selbstreplizierende moleküle": "Moleküle, die fähig sind, eigenständig Kopien von sich selbst herzustellen.",
+      "rna": "Ribonukleinsäure; ein Molekül, das genetische Information speichert und chemische Reaktionen katalysieren kann.",
+      "katalysator": "Ein Stoff, der chemische Reaktionen beschleunigt oder ermöglicht, ohne dabei selbst verbraucht zu werden.",
+      "ribozyme": "RNA-Moleküle, die wie Enzyme biochemische Reaktionen katalysieren können.",
+      "rna-welt-hypothese": "Theorie, nach der das frühe Leben auf RNA als Informationsspeicher und Katalysator basierte.",
+      "nukleotide": "Die molekularen Grundbausteine, aus denen Nukleinsäuren wie RNA und DNA zusammengesetzt sind.",
+      "replikation": "Der biologische Vorgang der Vervielfältigung von Erbmaterial oder Molekülen.",
+      "darwin’sche selektion": "Natürliche Auslese, bei der sich Moleküle oder Organismen mit vorteilhaften Mutationen durchsetzen.",
+      "qt45": "Ein künstlich hergestelltes, 45 Nukleotide langes RNA-Molekül, das andere Moleküle kopieren kann.",
+      "ursuppe": "Das hypothetische, an organischen Stoffen reiche Urmeer auf der frühen Erde, in dem Leben entstand."
+    },
+    "es": {
+      "arn": "Ácido ribonucleico; molécula que almacena información genética y actúa como catalizador químico.",
+      "catalizador químico": "Sustancia que acelera la velocidad de una reacción química sin consumirse en el proceso.",
+      "ribozimas": "Cadenas de ARN con propiedades catalíticas que facilitan y aceleran reacciones bioquímicas específicas.",
+      "mundo de arn": "Etapa prebiótica hipotética donde el ARN cumplía funciones tanto genéticas como de catálisis enzimática.",
+      "nucleótidos": "Unidades químicas estructurales que se enlazan consecutivamente para formar cadenas de ARN o ADN.",
+      "selección darwiniana": "Mecanismo evolutivo en el que proliferan las variantes moleculares con mayor eficacia de replicación.",
+      "comportamiento catalítico": "Habilidad de una molécula para desencadenar o agilizar reacciones químicas concretas.",
+      "tierra primitiva": "Estado geológico inicial del planeta antes de la aparición de los primeros organismos vivos.",
+      "qt45": "Molécula corta de ARN artificial capaz de sintetizar copias de otras cadenas genéticas.",
+      "sopa primordial": "Entorno acuoso primitivo rico en compuestos orgánicos donde habrían surgido las primeras biomoléculas."
+    }
   }
 }

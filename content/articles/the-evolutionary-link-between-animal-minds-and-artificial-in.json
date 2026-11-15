@@ -11,36 +11,66 @@
   ],
   "title": {
     "en": "The Evolutionary Link Between Animal Minds and Artificial Intelligence",
-    "vi": "Mối liên kết tiến hóa giữa tâm trí động vật và trí tuệ nhân tạo"
+    "vi": "Mối liên kết tiến hóa giữa tâm trí động vật và trí tuệ nhân tạo",
+    "fr": "Le lien évolutif entre l'esprit animal et l'intelligence artificielle",
+    "de": "Die evolutionäre Verbindung zwischen Tiergeist und künstlicher Intelligenz",
+    "es": "El vínculo evolutivo entre las mentes animales y la inteligencia artificial"
   },
   "hook": {
     "en": "Animals and machines share a surprising cognitive foundation. Researchers like Edward Wasserman argue that complex behaviors in pigeons and modern artificial intelligence stem from simple trial and error rather than inner subjective experience, challenging how we view consciousness across species.",
-    "vi": "Động vật và máy móc có chung một nền tảng nhận thức đáng ngạc nhiên. Các nhà nghiên cứu như Edward Wasserman lập luận rằng các hành vi phức tạp ở chim bồ câu và trí tuệ nhân tạo hiện đại bắt nguồn từ việc thử và sai đơn giản thay vì trải nghiệm chủ quan bên trong, qua đó thách thức cách chúng ta nhìn nhận ý thức giữa các loài."
+    "vi": "Động vật và máy móc có chung một nền tảng nhận thức đáng ngạc nhiên. Các nhà nghiên cứu như Edward Wasserman lập luận rằng các hành vi phức tạp ở chim bồ câu và trí tuệ nhân tạo hiện đại bắt nguồn từ việc thử và sai đơn giản thay vì trải nghiệm chủ quan bên trong, qua đó thách thức cách chúng ta nhìn nhận ý thức giữa các loài.",
+    "fr": "Les animaux et les machines partagent un socle cognitif surprenant. Des chercheurs comme Edward Wasserman soutiennent que les comportements complexes des pigeons et l'intelligence artificielle moderne découlent de simples tâtonnements par essais et erreurs plutôt que d'une expérience subjective intérieure, remettant ainsi en question notre conception de la conscience à travers les espèces.",
+    "de": "Tiere und Maschinen teilen ein überraschendes kognitives Fundament. Forscher wie Edward Wasserman argumentieren, dass komplexe Verhaltensweisen bei Tauben und moderner künstlicher Intelligenz auf einfachem Versuch und Irrtum beruhen statt auf innerem subjektivem Erleben – was unseren Blick auf das Bewusstsein über Arten hinweg herausfordert.",
+    "es": "Los animales y las máquinas comparten una base cognitiva sorprendente. Investigadores como Edward Wasserman sostienen que las conductas complejas en las palomas y en la inteligencia artificial moderna surgen del simple ensayo y error en lugar de una experiencia subjetiva interna, lo que cuestiona cómo entendemos la conciencia entre especies."
   },
   "sections": [
     {
       "heading_en": "The Power of Pigeon Learning",
       "heading_vi": "Sức mạnh học tập của bồ câu",
       "body_en": "Behavioral experiments with pigeons reveal surprising conceptual abilities. These birds learn through a mechanism where rewarded actions are repeated while unrewarded ones stop, a process known as the [p:law of effect] that was discovered by Thorndike around 1897 {source}.",
-      "body_vi": "Các thí nghiệm hành vi với chim bồ câu cho thấy khả năng nhận thức khái niệm đáng kinh ngạc. Những chú chim này học hỏi thông qua cơ chế trong đó các hành động được thưởng sẽ lặp lại còn những hành động không được thưởng sẽ dừng lại, quá trình gọi là *quy luật tác dụng* ([p:law of effect]) do Thorndike phát hiện vào khoảng năm 1897 {source}."
+      "body_vi": "Các thí nghiệm hành vi với chim bồ câu cho thấy khả năng nhận thức khái niệm đáng kinh ngạc. Những chú chim này học hỏi thông qua cơ chế trong đó các hành động được thưởng sẽ lặp lại còn những hành động không được thưởng sẽ dừng lại, quá trình gọi là *quy luật tác dụng* ([p:law of effect]) do Thorndike phát hiện vào khoảng năm 1897 {source}.",
+      "heading_fr": "La puissance de l'apprentissage chez le pigeon",
+      "body_fr": "Des expériences comportementales menées sur des pigeons révèlent d'étonnantes capacités conceptuelles. Ces oiseaux apprennent grâce à un mécanisme où les actions récompensées se répètent tandis que celles non récompensées cessent, un processus connu sous le nom de [p:loi de l'effet], découverte par Thorndike vers 1897 {source}.",
+      "heading_de": "Die Lernfähigkeit von Tauben",
+      "body_de": "Verhaltensexperimente mit Tauben offenbaren überraschende konzeptionelle Fähigkeiten. Diese Vögel lernen über einen Mechanismus, bei dem belohnte Aktionen wiederholt werden, während unbelohnte aufhören – ein als [p:Gesetz des Effekts] bekannter Prozess, der um 1897 von Thorndike entdeckt wurde {source}.",
+      "heading_es": "El poder del aprendizaje en las palomas",
+      "body_es": "Experimentos conductuales con palomas revelan sorprendentes habilidades conceptuales. Estas aves aprenden mediante un mecanismo en el que las acciones recompensadas se repiten mientras que las no recompensadas cesan, un proceso conocido como la [p:ley del efecto] que fue descubierta por Thorndike hacia 1897 {source}."
     },
     {
       "heading_en": "From Animals to Computers",
       "heading_vi": "Từ động vật đến máy tính",
       "body_en": "This fundamental trial-and-error mechanism powers modern artificial intelligence. Early computer models failed because programmers relied strictly on rigid rules, but machines eventually succeeded when trained using feedback signals analogous to animal learning {source}.",
-      "body_vi": "Cơ chế thử và sai cơ bản này tạo nên sức mạnh cho trí tuệ nhân tạo hiện đại. Các mô hình máy tính ban đầu thất bại vì lập trình viên phụ thuộc hoàn toàn vào các quy tắc cứng nhắc, nhưng máy móc cuối cùng đã thành công khi được huấn luyện bằng các tín hiệu phản hồi tương tự như quá trình học tập của động vật {source}."
+      "body_vi": "Cơ chế thử và sai cơ bản này tạo nên sức mạnh cho trí tuệ nhân tạo hiện đại. Các mô hình máy tính ban đầu thất bại vì lập trình viên phụ thuộc hoàn toàn vào các quy tắc cứng nhắc, nhưng máy móc cuối cùng đã thành công khi được huấn luyện bằng các tín hiệu phản hồi tương tự như quá trình học tập của động vật {source}.",
+      "heading_fr": "Des animaux aux ordinateurs",
+      "body_fr": "Ce mécanisme fondamental d'essais et d'erreurs alimente l'intelligence artificielle moderne. Les premiers modèles informatiques ont échoué parce que les programmeurs s'appuyaient strictement sur des règles rigides, mais les machines ont fini par réussir lorsqu'elles ont été entraînées au moyen de signaux de rétroaction analogues à l'apprentissage animal {source}.",
+      "heading_de": "Vom Tier zum Computer",
+      "body_de": "Dieser grundlegende Mechanismus von Versuch und Irrtum treibt auch die moderne künstliche Intelligenz an. Frühe Computermodelle scheiterten, weil Programmierer sich strikt auf starre Regeln verließen; letztlich waren Maschinen jedoch erfolgreich, als sie mithilfe von Feedbacksignalen trainiert wurden, die dem tierischen Lernen ähneln {source}.",
+      "heading_es": "De los animales a las computadoras",
+      "body_es": "Este mecanismo fundamental de ensayo y error impulsa la inteligencia artificial moderna. Los primeros modelos informáticos fracasaron porque los programadores dependían estrictamente de reglas rígidas, pero las máquinas finalmente tuvieron éxito cuando fueron entrenadas mediante señales de retroalimentación análogas al aprendizaje animal {source}."
     },
     {
       "heading_en": "The Necessity of Variation",
       "heading_vi": "Sự cần thiết của biến dị",
       "body_en": "Recent experiments show that pigeons rotate through many different action sequences instead of settling on just one. Computer scientists now apply this same principle of variation to artificial intelligence to prevent models from failing in novel situations {source}.",
-      "body_vi": "Các thí nghiệm gần đây chỉ ra rằng chim bồ câu luân phiên thực hiện nhiều chuỗi hành động khác nhau thay vì chỉ gắn bó với một chuỗi duy nhất. Các nhà khoa học máy tính giờ đây áp dụng chính nguyên tắc biến dị này vào trí tuệ nhân tạo để ngăn chặn các mô hình thất bại trong các tình huống mới lạ {source}."
+      "body_vi": "Các thí nghiệm gần đây chỉ ra rằng chim bồ câu luân phiên thực hiện nhiều chuỗi hành động khác nhau thay vì chỉ gắn bó với một chuỗi duy nhất. Các nhà khoa học máy tính giờ đây áp dụng chính nguyên tắc biến dị này vào trí tuệ nhân tạo để ngăn chặn các mô hình thất bại trong các tình huống mới lạ {source}.",
+      "heading_fr": "La nécessité de la variation",
+      "body_fr": "Des expériences récentes montrent que les pigeons alternent entre de nombreuses séquences d'actions distinctes au lieu de s'en tenir à une seule. Les informaticiens appliquent désormais ce même principe de variation à l'intelligence artificielle afin d'empêcher les modèles d'échouer face à des situations inédites {source}.",
+      "heading_de": "Die Notwendigkeit von Variation",
+      "body_de": "Neuere Experimente zeigen, dass Tauben zwischen vielen verschiedenen Handlungsabfolgen wechseln, anstatt sich auf eine einzige festzulegen. Informatiker wenden dieses Prinzip der Variation nun auf künstliche Intelligenz an, um zu verhindern, dass Modelle in neuartigen Situationen versagen {source}.",
+      "heading_es": "La necesidad de la variación",
+      "body_es": "Experimentos recientes demuestran que las palomas alternan entre muchas secuencias de acción distintas en vez de limitarse a una sola. Los científicos informáticos aplican ahora este mismo principio de variación a la inteligencia artificial para evitar que los modelos fallen ante situaciones inéditas {source}."
     },
     {
       "heading_en": "Skepticism on Consciousness",
       "heading_vi": "Sự hoài nghi về ý thức",
       "body_en": "Debates over animal consciousness often rely on mentalistic assumptions rather than testable evidence. Veterinarians can successfully address animal welfare and pain without needing to prove whether creatures possess inner subjective awareness {source}.",
-      "body_vi": "Các cuộc tranh luận về ý thức động vật thường dựa trên các giả định mang tính tinh thần hơn là bằng chứng có thể kiểm chứng. Các bác sĩ thú y có thể giải quyết thành công vấn đề phúc lợi và nỗi đau của động vật mà không cần phải chứng minh liệu các sinh vật này có nhận thức chủ quan bên trong hay không {source}."
+      "body_vi": "Các cuộc tranh luận về ý thức động vật thường dựa trên các giả định mang tính tinh thần hơn là bằng chứng có thể kiểm chứng. Các bác sĩ thú y có thể giải quyết thành công vấn đề phúc lợi và nỗi đau của động vật mà không cần phải chứng minh liệu các sinh vật này có nhận thức chủ quan bên trong hay không {source}.",
+      "heading_fr": "Le scepticisme face à la conscience",
+      "body_fr": "Les débats sur la conscience animale reposent souvent sur des postulats mentalistes plutôt que sur des preuves vérifiables. Les vétérinaires parviennent à traiter efficacement le bien-être et la douleur des animaux sans avoir besoin de prouver que ces créatures possèdent une conscience subjective intérieure {source}.",
+      "heading_de": "Skepsis gegenüber dem Bewusstsein",
+      "body_de": "Debatten über tierisches Bewusstsein stützen sich oft auf mentalistische Annahmen statt auf überprüfbare Belege. Tierärzte können Tierwohl und Schmerzen erfolgreich behandeln, ohne beweisen zu müssen, ob Lebewesen über ein inneres subjektives Bewusstsein verfügen {source}.",
+      "heading_es": "Escepticismo sobre la conciencia",
+      "body_es": "Los debates sobre la conciencia animal a menudo se basan en supuestos mentalistas y no en pruebas contrastables. Los veterinarios pueden abordar con éxito el bienestar y el dolor animal sin necesidad de demostrar si las criaturas poseen una conciencia subjetiva interna {source}."
     }
   ],
   "references": [
@@ -52,11 +82,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/903/1080/1920",
+    "url": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Greg Rakozy",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I",
+    "wide": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@grakozy?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -73,7 +105,10 @@
   },
   "keyPoint": {
     "en": "Animal minds and artificial intelligence are like complex buildings constructed using simple Lego bricks of trial and error. How can you apply this feedback mechanism to improve your own daily learning? [p:Use direct results to guide your next action.]",
-    "vi": "Tâm trí động vật và trí tuệ nhân tạo giống như những tòa nhà phức tạp được xây dựng từ những viên gạch Lego đơn giản của việc thử và sai. Làm thế nào bạn có thể áp dụng cơ chế phản hồi này để cải thiện việc học tập hàng ngày của chính mình? [p:Hãy sử dụng kết quả trực tiếp để định hướng cho hành động tiếp theo của bạn.]"
+    "vi": "Tâm trí động vật và trí tuệ nhân tạo giống như những tòa nhà phức tạp được xây dựng từ những viên gạch Lego đơn giản của việc thử và sai. Làm thế nào bạn có thể áp dụng cơ chế phản hồi này để cải thiện việc học tập hàng ngày của chính mình? [p:Hãy sử dụng kết quả trực tiếp để định hướng cho hành động tiếp theo của bạn.]",
+    "fr": "L'esprit animal et l'intelligence artificielle sont comparables à des édifices complexes construits à l'aide de simples briques Lego d'essais et d'erreurs. Comment pouvez-vous appliquer ce mécanisme de rétroaction pour améliorer votre propre apprentissage quotidien ? [p:Utilisez les résultats directs pour orienter votre action suivante.]",
+    "de": "Der Geist von Tieren und künstliche Intelligenz gleichen komplexen Gebäuden, die aus einfachen Lego-Bausteinen des Versuchs und Irrtums errichtet wurden. Wie kannst du diesen Feedback-Mechanismus nutzen, um dein eigenes tägliches Lernen zu verbessern? [p:Nutze direkte Ergebnisse, um deine nächste Handlung zu steuern.]",
+    "es": "Las mentes animales y la inteligencia artificial son como edificios complejos construidos con bloques simples de Lego de ensayo y error. ¿Cómo puedes aplicar este mecanismo de retroalimentación para mejorar tu propio aprendizaje diario? [p:Usa los resultados directos para guiar tu siguiente acción.]"
   },
   "applySteps": {
     "en": [
@@ -85,6 +120,21 @@
       "Quan sát một loài động vật hoặc công cụ số thực hiện một nhiệm vụ và ghi nhận cách chúng phản ứng với phản hồi.",
       "Đưa ra những biến đổi nhỏ trong một thói quen để xem sự linh hoạt cải thiện việc giải quyết vấn đề như thế nào.",
       "Tập trung vào các hành vi có thể đo lường được thay vì các trạng thái bên trong không thể chứng minh khi đánh giá hiệu suất."
+    ],
+    "fr": [
+      "Observez un animal ou un outil numérique accomplir une tâche et notez la façon dont il réagit aux retours d'information.",
+      "Introduisez de légères variations dans une routine pour constater comment la souplesse améliore la résolution de problèmes.",
+      "Concentrez-vous sur des comportements mesurables plutôt que sur des états internes indémontrables lors de l'évaluation des performances."
+    ],
+    "de": [
+      "Beobachte ein Tier oder ein digitales Werkzeug bei der Ausführung einer Aufgabe und notiere, wie es auf Feedback reagiert.",
+      "Baue leichte Variationen in eine Routine ein, um zu sehen, wie Flexibilität die Problemlösung verbessert.",
+      "Konzentriere dich bei der Leistungsbeurteilung auf messbare Verhaltensweisen statt auf unbeweisbare innere Zustände."
+    ],
+    "es": [
+      "Observa a un animal o una herramienta digital mientras realiza una tarea y nota cómo responde a la retroalimentación.",
+      "Introduce ligeras variaciones en una rutina para comprobar cómo la flexibilidad mejora la resolución de problemas.",
+      "Concéntrate en conductas medibles en lugar de estados internos indemostrables al evaluar el rendimiento."
     ]
   },
   "coverCandidates": [
@@ -121,9 +171,78 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "edward wasserman": "An experimental psychologist who investigates learning processes, comparative cognition, and intelligence in animals.",
+      "trial and error": "A learning process in which repeated attempts are made and adjusted until success is achieved.",
+      "consciousness": "The internal, subjective awareness of oneself and one's environment or experiences.",
+      "conceptual abilities": "The cognitive capacity to recognize abstract relationships and categorize different objects or stimuli.",
+      "law of effect": "The principle that rewarded behaviors tend to be repeated, while unrewarded ones are eliminated.",
+      "thorndike": "An influential psychologist who first described how animals learn through rewarded actions.",
+      "artificial intelligence": "Computer systems designed to perform complex tasks, recognize patterns, and learn from data.",
+      "feedback signals": "Information provided to a learning system indicating the outcome of its actions to guide adjustment.",
+      "principle of variation": "The practice of testing diverse actions to prevent systems from failing in unfamiliar situations.",
+      "mentalistic assumptions": "Unproven beliefs that attribute observed behaviors to hidden, internal mental thoughts or feelings.",
+      "animal welfare": "The physical and mental well-being of animals and the standards protecting their care.",
+      "subjective awareness": "The personal, first-person experience of sensations, perceptions, or internal states."
+    },
+    "vi": {
+      "thử và sai": "Phương pháp học tập bằng cách lặp lại hành vi thành công và loại bỏ hành vi thất bại.",
+      "law of effect": "Nguyên tắc hành động mang lại kết quả tốt sẽ lặp lại, kết quả xấu sẽ dừng lại.",
+      "biến dị": "Sự thay đổi hoặc đa dạng hóa các hành động để thích nghi với những tình huống mới lạ.",
+      "phản hồi": "Tín hiệu kết quả trả về từ môi trường giúp hệ thống hoặc sinh vật điều chỉnh hành vi.",
+      "chuỗi hành động": "Tập hợp các bước thao tác nối tiếp nhau nhằm hoàn thành một mục tiêu cụ thể.",
+      "nhận thức": "Khả năng tiếp nhận, xử lý thông tin và hình thành hiểu biết về môi trường xung quanh.",
+      "ý thức": "Trạng thái nhận biết và trải nghiệm tinh thần chủ quan của sinh vật về chính mình.",
+      "chủ quan": "Cảm nhận riêng biệt từ góc nhìn nội tâm bên trong của từng cá thể sinh vật.",
+      "kiểm chứng": "Việc xác minh tính xác thực của nhận định thông qua bằng chứng quan sát thực tế được.",
+      "phúc lợi": "Tình trạng sức khỏe, an toàn và điều kiện sống không phải chịu đau đớn của động vật."
+    },
+    "fr": {
+      "socle cognitif": "Ensemble des capacités intellectuelles de base communes au traitement de l'information.",
+      "loi de l'effet": "Principe voulant qu'un comportement récompensé tende à se répéter, contrairement à un comportement non récompensé.",
+      "thorndike": "Psychologue pionnier ayant formalisé la loi de l'effet et l'apprentissage par essais et erreurs.",
+      "essais et erreurs": "Méthode d'apprentissage reposant sur la répétition de tentatives et la correction progressive des échecs.",
+      "rétroaction": "Information en retour permettant d'ajuster un comportement ou d'optimiser le fonctionnement d'un système.",
+      "principe de variation": "Stratégie consistant à tester diverses options pour éviter de se figer dans une réponse unique.",
+      "postulats mentalistes": "Hypothèses attribuant des états mentaux internes subjectifs pour expliquer les comportements observés.",
+      "preuves vérifiables": "Données empiriques pouvant être soumises à des tests expérimentaux rigoureux et reproductibles.",
+      "conscience subjective": "Expérience vécue de l'intérieur par un individu, distincte de ses simples réactions mesurables.",
+      "bien-être": "État physique et mental optimal d'un animal, évalué selon des critères scientifiques mesurables."
+    },
+    "de": {
+      "kognitives fundament": "Die grundlegenden Denk- und Informationsverarbeitungsprozesse, auf denen komplexes Verhalten aufbaut.",
+      "edward wasserman": "US-amerikanischer Kognitionspsychologe und Verhaltensforscher, der Lernprozesse bei Tieren erforscht.",
+      "versuch und irrtum": "Ein Lernprinzip, bei dem erfolgreiche Handlungen beibehalten und erfolglose verworfen werden.",
+      "konzeptionelle fähigkeiten": "Die Fähigkeit, abstrakte Regeln oder Kategorien aus Erfahrungen abzuleiten und anzuwenden.",
+      "gesetz des effekts": "Prinzip der Lernpsychologie: Handlungen mit angenehmen Konsequenzen treten künftig häufiger auf.",
+      "thorndike": "Edward Thorndike, ein US-Psychologe und Pionier der Verhaltensforschung und des instrumentellen Konditionierens.",
+      "prinzip der variation": "Das Ausprobieren unterschiedlicher Verhaltensweisen, um flexibel auf neue Anforderungen zu reagieren.",
+      "mentalistische annahmen": "Hypothesen, die Verhalten durch nicht direkt beobachtbare geistige Vorgänge oder Absichten erklären.",
+      "subjektives bewusstsein": "Das persönliche, innere Erleben und Spüren von Empfindungen aus der Erste-Person-Perspektive.",
+      "tierwohl": "Das körperliche und psychische Wohlbefinden von Tieren, einschließlich Schmerzfreiheit und artgerechter Haltung.",
+      "feedback-mechanismus": "Ein Regelkreis, bei dem Ergebnisse früherer Aktionen zukünftiges Verhalten steuern und anpassen."
+    },
+    "es": {
+      "base cognitiva": "Conjunto de capacidades y procesos que sustentan el aprendizaje y el procesamiento de información.",
+      "ensayo y error": "Método de aprendizaje consistente en probar conductas hasta encontrar las que producen resultados exitosos.",
+      "experiencia subjetiva interna": "Vivencia íntima y consciente de un individuo que no puede ser observada directamente.",
+      "habilidades conceptuales": "Capacidad cognitiva para identificar patrones, relaciones y categorías abstractas en el entorno.",
+      "ley del efecto": "Principio conductual donde las acciones premiadas se repiten y las no recompensadas se extinguen.",
+      "inteligencia artificial": "Sistemas computacionales capaces de aprender y resolver problemas mediante entrenamiento con datos.",
+      "retroalimentación": "Señales o resultados que indican el éxito de una acción para guiar futuros comportamientos.",
+      "principio de variación": "Alternancia entre diversas secuencias de acción para facilitar la adaptación a escenarios novedosos.",
+      "supuestos mentalistas": "Creencias que asumen la existencia de procesos mentales internos sin respaldo en evidencias verificables.",
+      "pruebas contrastables": "Datos observables y medibles que pueden confirmarse o refutarse mediante el método científico."
+    }
   }
 }

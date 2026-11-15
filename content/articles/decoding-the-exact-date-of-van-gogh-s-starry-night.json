@@ -45,11 +45,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/819/1080/1920",
+    "url": "https://images.unsplash.com/photo-1435459025078-9857f8933bc9?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Verne Ho",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/tXICOsK8Duc"
+    "sourceUrl": "https://unsplash.com/photos/tXICOsK8Duc",
+    "wide": "https://images.unsplash.com/photo-1435459025078-9857f8933bc9?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@verneho?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

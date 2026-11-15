@@ -12,53 +12,98 @@
   ],
   "title": {
     "en": "How the Rosetta Stone unlocked Egyptian hieroglyphs",
-    "vi": "Phiến đá Rosetta đã mở khóa chữ tượng hình Ai Cập như thế nào"
+    "vi": "Phiến đá Rosetta đã mở khóa chữ tượng hình Ai Cập như thế nào",
+    "fr": "Comment la pierre de Rosette a permis de déchiffrer les hiéroglyphes égyptiens",
+    "de": "Wie der Stein von Rosetta die ägyptischen Hieroglyphen entschlüsselte",
+    "es": "Cómo la Piedra de Rosetta descifró los jeroglíficos egipcios"
   },
   "hook": {
     "en": "A slab of dark stone found in 1799 repeats one royal decree three times, in hieroglyphs, in everyday Egyptian script and in Greek. Scholars could read the Greek. The stone gave them a way to work toward the other two, but it took more than [y:two decades] before Jean-François Champollion announced his results in Paris in 1822, and longer before Egyptian texts could be read confidently.",
-    "vi": "Một phiến đá sẫm màu được tìm thấy năm 1799 lặp lại một sắc lệnh hoàng gia ba lần, bằng chữ tượng hình, bằng chữ Ai Cập thường dùng và bằng tiếng Hy Lạp. Các học giả đọc được tiếng Hy Lạp. Phiến đá cho họ cách tiến tới hai thứ còn lại, nhưng phải mất hơn [y:hai thập kỷ] trước khi Jean-François Champollion công bố kết quả tại Paris năm 1822, và còn lâu hơn nữa mới có thể đọc các văn bản Ai Cập một cách tự tin."
+    "vi": "Một phiến đá sẫm màu được tìm thấy năm 1799 lặp lại một sắc lệnh hoàng gia ba lần, bằng chữ tượng hình, bằng chữ Ai Cập thường dùng và bằng tiếng Hy Lạp. Các học giả đọc được tiếng Hy Lạp. Phiến đá cho họ cách tiến tới hai thứ còn lại, nhưng phải mất hơn [y:hai thập kỷ] trước khi Jean-François Champollion công bố kết quả tại Paris năm 1822, và còn lâu hơn nữa mới có thể đọc các văn bản Ai Cập một cách tự tin.",
+    "fr": "Une dalle de roche sombre découverte en 1799 répète un décret royal à trois reprises : en hiéroglyphes, en écriture égyptienne du quotidien et en grec. Les érudits savaient lire le grec. La pierre leur a fourni un point de départ pour aborder les deux autres écritures, mais il fallut plus de [y:deux décennies] avant que Jean-François Champollion ne présente ses résultats à Paris en 1822, et davantage encore pour déchiffrer les textes égyptiens avec certitude.",
+    "de": "Eine 1799 gefundene dunkle Steinplatte wiederholt ein königliches Dekret dreimal: in Hieroglyphen, in der ägyptischen Alltagsschrift und auf Griechisch. Gelehrte konnten das Griechische lesen. Der Stein bot ihnen einen Ansatzpunkt zur Entzifferung der beiden anderen Schriften, doch es vergingen mehr als [y:zwei Jahrzehnte], bis Jean-François Champollion 1822 in Paris seine Ergebnisse verkündete – und noch länger, bis sich ägyptische Texte verlässlich lesen ließen.",
+    "es": "Una losa de piedra oscura hallada en 1799 repite un decreto real tres veces: en jeroglíficos, en una escritura egipcia cotidiana y en griego. Los eruditos podían leer el griego. La piedra les abrió un camino hacia las otras dos escrituras, pero hicieron falta más de [y:dos décadas] para que Jean-François Champollion anunciara sus resultados en París en 1822, y aún más tiempo antes de que los textos egipcios pudieran leerse con seguridad."
   },
   "sections": [
     {
       "heading_en": "A stone in a wall",
       "heading_vi": "Phiến đá trong bức tường",
       "body_en": "French army officer Pierre-François Bouchard found the stone in July 1799, during France's invasion of Egypt. It had been built into an old wall that was being demolished as part of work on Fort Julien near the town of Rashid (Rosetta) in the Nile Delta {wiki-rosetta}. His commanding officer, General Menou, realised its importance and had it sent to Alexandria {worldhistory-rosetta}. It was surrendered to British troops in 1801 and has has been on display in the British Museum since 1802.",
-      "body_vi": "Sĩ quan quân đội Pháp Pierre-François Bouchard tìm thấy phiến đá vào tháng 7 năm 1799, trong cuộc xâm lược Ai Cập của Pháp. Nó được xây vào một bức tường cũ đang bị phá dỡ trong công việc xây Pháo đài Julien gần thị trấn Rashid (Rosetta) ở châu thổ sông Nile {wiki-rosetta}. Chỉ huy của ông, tướng Menou, nhận ra tầm quan trọng của nó và cho chuyển đến Alexandria {worldhistory-rosetta}. Nó được giao nộp cho quân Anh năm 1801 và được trưng bày ở Bảo tàng Anh từ năm 1802."
+      "body_vi": "Sĩ quan quân đội Pháp Pierre-François Bouchard tìm thấy phiến đá vào tháng 7 năm 1799, trong cuộc xâm lược Ai Cập của Pháp. Nó được xây vào một bức tường cũ đang bị phá dỡ trong công việc xây Pháo đài Julien gần thị trấn Rashid (Rosetta) ở châu thổ sông Nile {wiki-rosetta}. Chỉ huy của ông, tướng Menou, nhận ra tầm quan trọng của nó và cho chuyển đến Alexandria {worldhistory-rosetta}. Nó được giao nộp cho quân Anh năm 1801 và được trưng bày ở Bảo tàng Anh từ năm 1802.",
+      "heading_fr": "Une pierre dans un mur",
+      "body_fr": "L'officier de l'armée française Pierre-François Bouchard découvrit la pierre en juillet 1799, lors de la campagne d'Égypte menée par la France. Elle avait été intégrée dans un vieux mur en cours de démolition dans le cadre des travaux du fort Julien, près de la ville de Rachid (Rosette), dans le delta du Nil {wiki-rosetta}. Son supérieur, le général Menou, comprit son importance et la fit expédier à Alexandrie {worldhistory-rosetta}. Cédée aux troupes britanniques en 1801, elle est exposée au British Museum depuis 1802.",
+      "heading_de": "Ein Stein in einer Mauer",
+      "body_de": "Der französische Offizier Pierre-François Bouchard fand den Stein im Juli 1799 während des französischen Ägyptenfeldzugs. Er war in eine alte Mauer verbaut worden, die im Zuge von Arbeiten am Fort Julien nahe der Stadt Raschid (Rosetta) im Nildelta abgetragen wurde {wiki-rosetta}. Sein kommandierender Offizier, General Menou, erkannte dessen Bedeutung und ließ ihn nach Alexandria bringen {worldhistory-rosetta}. 1801 wurde er an britische Truppen übergeben und ist seit 1802 im British Museum ausgestellt.",
+      "heading_es": "Una piedra en un muro",
+      "body_es": "El oficial del ejército francés Pierre-François Bouchard halló la piedra en julio de 1799, durante la invasión francesa de Egipto. Había sido incorporada a un antiguo muro que estaba siendo demolido como parte de las obras en Fort Julien, cerca de la localidad de Rashid (Rosetta), en el delta del Nilo {wiki-rosetta}. Su oficial al mando, el general Menou, comprendió su importancia y ordenó enviarla a Alejandría {worldhistory-rosetta}. Fue entregada a las tropas británicas en 1801 y se exhibe en el Museo Británico desde 1802."
     },
     {
       "heading_en": "Three scripts, one decree",
       "heading_vi": "Ba hệ chữ, một sắc lệnh",
       "body_en": "The stone dates from 196 BC and carries a decree issued by a council of priests at Memphis in honour of King Ptolemy V, a year after his coronation. The top register is in hieroglyphs, the middle in Demotic and the third in Ancient Greek. It has 14 lines of hieroglyphs, 32 of Demotic and 54 of Greek {worldhistory-rosetta}. The three versions differ only slightly. That is what makes it the key to deciphering the Egyptian scripts {wiki-rosetta}. The hieroglyphs were the language of priests, Demotic was in common use, and Greek served administrators.",
-      "body_vi": "Phiến đá có niên đại 196 TCN và mang một sắc lệnh do hội đồng tu sĩ ở Memphis ban hành để tôn vinh vua Ptolemy V, một năm sau lễ đăng quang. Hàng trên cùng là chữ tượng hình, hàng giữa là chữ Demotic và hàng thứ ba là tiếng Hy Lạp cổ. Nó có 14 dòng chữ tượng hình, 32 dòng Demotic và 54 dòng Hy Lạp {worldhistory-rosetta}. Ba phiên bản chỉ khác nhau chút ít. Đó là điều làm nó trở thành chìa khóa để giải mã các hệ chữ Ai Cập {wiki-rosetta}. Chữ tượng hình là ngôn ngữ của các tu sĩ, Demotic được dùng phổ thông, còn tiếng Hy Lạp phục vụ giới hành chính."
+      "body_vi": "Phiến đá có niên đại 196 TCN và mang một sắc lệnh do hội đồng tu sĩ ở Memphis ban hành để tôn vinh vua Ptolemy V, một năm sau lễ đăng quang. Hàng trên cùng là chữ tượng hình, hàng giữa là chữ Demotic và hàng thứ ba là tiếng Hy Lạp cổ. Nó có 14 dòng chữ tượng hình, 32 dòng Demotic và 54 dòng Hy Lạp {worldhistory-rosetta}. Ba phiên bản chỉ khác nhau chút ít. Đó là điều làm nó trở thành chìa khóa để giải mã các hệ chữ Ai Cập {wiki-rosetta}. Chữ tượng hình là ngôn ngữ của các tu sĩ, Demotic được dùng phổ thông, còn tiếng Hy Lạp phục vụ giới hành chính.",
+      "heading_fr": "Trois écritures, un décret",
+      "body_fr": "La pierre date de 196 av. J.-C. et porte un décret promulgué par un collège de prêtres réunis à Memphis en l'honneur du roi Ptolémée V, un an après son couronnement. Le registre supérieur est en hiéroglyphes, le registre médian en démotique et le troisième en grec ancien. Elle compte 14 lignes de hiéroglyphes, 32 de démotique et 54 de grec {worldhistory-rosetta}. Les trois versions ne présentent que d'infimes variantes. C'est précisément ce qui en fait la clé du déchiffrement des écritures égyptiennes {wiki-rosetta}. Les hiéroglyphes étaient la langue des prêtres, le démotique servait pour l'usage courant et le grec était utilisé par l'administration.",
+      "heading_de": "Drei Schriften, ein Dekret",
+      "body_de": "Der Stein stammt aus dem Jahr 196 v. Chr. und trägt ein Dekret, das ein Priesterrat in Memphis zu Ehren von König Ptolemaios V. ein Jahr nach seiner Krönung erließ. Das oberste Register ist in Hieroglyphen verfasst, das mittlere in Demotisch und das dritte in Altgriechisch. Er umfasst 14 Zeilen in Hieroglyphen, 32 in Demotisch und 54 auf Griechisch {worldhistory-rosetta}. Die drei Fassungen weichen nur geringfügig voneinander ab. Genau das macht ihn zum Schlüssel für die Entzifferung der ägyptischen Schriften {wiki-rosetta}. Die Hieroglyphen dienten den Priestern, Demotisch war im Alltag gebräuchlich, und Griechisch nutzte die Verwaltung.",
+      "heading_es": "Tres escrituras, un decreto",
+      "body_es": "La piedra data del año 196 a. C. y contiene un decreto emitido por un consejo de sacerdotes en Menfis en honor al rey Ptolomeo V, un año después de su coronación. El registro superior está en jeroglíficos, el del medio en demótico y el tercero en griego antiguo. Consta de 14 líneas de jeroglíficos, 32 de demótico y 54 de griego {worldhistory-rosetta}. Las tres versiones difieren muy poco entre sí. Eso es lo que la convierte en la clave para descifrar las escrituras egipcias {wiki-rosetta}. Los jeroglíficos eran la lengua de los sacerdotes, el demótico era de uso corriente y el griego servía a los administradores."
     },
     {
       "heading_en": "Greek first",
       "heading_vi": "Tiếng Hy Lạp trước",
       "body_en": "Study of the decree was already under way when the first complete translation of the Greek text was published in 1803. It was the first Ancient Egyptian bilingual text recovered in modern times, and it aroused widespread public interest with its potential to decipher the hieroglyphic script {wiki-rosetta}. The Greek was the part scholars could already read. The Egyptian scripts took far longer.",
-      "body_vi": "Việc nghiên cứu sắc lệnh đã diễn ra khi bản dịch trọn vẹn đầu tiên của văn bản Hy Lạp được công bố năm 1803. Đây là văn bản song ngữ Ai Cập cổ đầu tiên được tìm lại trong thời hiện đại, và nó gây sự quan tâm rộng rãi của công chúng nhờ tiềm năng giải mã chữ tượng hình {wiki-rosetta}. Tiếng Hy Lạp là phần các học giả đã đọc được. Các hệ chữ Ai Cập mất lâu hơn nhiều."
+      "body_vi": "Việc nghiên cứu sắc lệnh đã diễn ra khi bản dịch trọn vẹn đầu tiên của văn bản Hy Lạp được công bố năm 1803. Đây là văn bản song ngữ Ai Cập cổ đầu tiên được tìm lại trong thời hiện đại, và nó gây sự quan tâm rộng rãi của công chúng nhờ tiềm năng giải mã chữ tượng hình {wiki-rosetta}. Tiếng Hy Lạp là phần các học giả đã đọc được. Các hệ chữ Ai Cập mất lâu hơn nhiều.",
+      "heading_fr": "Le grec d'abord",
+      "body_fr": "L'étude du décret était déjà bien entamée lorsque la première traduction intégrale du texte grec parut en 1803. C'était le premier texte bilingue de l'Égypte antique redécouvert à l'époque moderne, et il suscita un vif engouement auprès du public par son potentiel pour déchiffrer l'écriture hiéroglyphique {wiki-rosetta}. Le grec était la partie que les érudits savaient déjà lire. Les écritures égyptiennes exigèrent bien plus de temps.",
+      "heading_de": "Griechisch zuerst",
+      "body_de": "Die Untersuchung des Dekrets war bereits im Gange, als 1803 die erste vollständige Übersetzung des griechischen Textes veröffentlicht wurde. Es handelte sich um den ersten zweisprachigen altägyptischen Text, der in der Neuzeit geborgen wurde, und er weckte durch sein Potenzial zur Entzifferung der Hieroglyphenschrift breites öffentliches Interesse {wiki-rosetta}. Das Griechische war der Teil, den die Gelehrten bereits lesen konnten. Bei den ägyptischen Schriften dauerte es ungleich länger.",
+      "heading_es": "Primero el griego",
+      "body_es": "El estudio del decreto ya estaba en marcha cuando se publicó la primera traducción completa del texto griego en 1803. Fue el primer texto bilingüe del Antiguo Egipto recuperado en la era moderna y despertó un gran interés público por su potencial para descifrar la escritura jeroglífica {wiki-rosetta}. El griego era la parte que los eruditos ya sabían leer. Las escrituras egipcias requirieron mucho más tiempo."
     },
     {
       "heading_en": "Steps toward reading",
       "heading_vi": "Những bước tiến tới việc đọc",
       "body_en": "Wikipedia lists the major advances in order. In 1799 scholars recognised that the stone gave three versions of the same text. In 1802 the Demotic text was found to use phonetic characters to spell foreign names. In 1814 the hieroglyphic text was shown to do the same, and to resemble the Demotic closely. From 1822 to 1824 it was recognised that phonetic characters also spelled native Egyptian words {wiki-rosetta}. The Englishman Thomas Young identified some hieroglyphs relating to Ptolemy V and the direction in which the signs should be read {worldhistory-rosetta}.",
-      "body_vi": "Wikipedia liệt kê các tiến bộ chính theo thứ tự. Năm 1799, các học giả nhận ra phiến đá có ba phiên bản của cùng một văn bản. Năm 1802, người ta thấy văn bản Demotic dùng ký tự biểu âm để đánh vần tên nước ngoài. Năm 1814, văn bản chữ tượng hình được chỉ ra là cũng làm như vậy, và giống văn bản Demotic ở nhiều điểm. Từ 1822 đến 1824, người ta nhận ra ký tự biểu âm còn dùng để đánh vần các từ bản địa Ai Cập {wiki-rosetta}. Người Anh Thomas Young nhận diện được một số chữ tượng hình liên quan đến Ptolemy V và hướng đọc của các ký hiệu {worldhistory-rosetta}."
+      "body_vi": "Wikipedia liệt kê các tiến bộ chính theo thứ tự. Năm 1799, các học giả nhận ra phiến đá có ba phiên bản của cùng một văn bản. Năm 1802, người ta thấy văn bản Demotic dùng ký tự biểu âm để đánh vần tên nước ngoài. Năm 1814, văn bản chữ tượng hình được chỉ ra là cũng làm như vậy, và giống văn bản Demotic ở nhiều điểm. Từ 1822 đến 1824, người ta nhận ra ký tự biểu âm còn dùng để đánh vần các từ bản địa Ai Cập {wiki-rosetta}. Người Anh Thomas Young nhận diện được một số chữ tượng hình liên quan đến Ptolemy V và hướng đọc của các ký hiệu {worldhistory-rosetta}.",
+      "heading_fr": "Les étapes vers la lecture",
+      "body_fr": "Wikipédia recense les avancées majeures par ordre chronologique. En 1799, les savants comprirent que la pierre présentait trois versions du même texte. En 1802, il fut établi que le texte démotique utilisait des caractères phonétiques pour orthographier les noms étrangers. En 1814, il fut démontré que le texte hiéroglyphique fonctionnait de même et qu'il ressemblait étroitement au démotique. De 1822 à 1824, on admit que des caractères phonétiques servaient également à écrire des mots proprement égyptiens {wiki-rosetta}. L'Anglais Thomas Young identifia certains hiéroglyphes associés à Ptolémée V ainsi que le sens dans lequel les signes devaient être lus {worldhistory-rosetta}.",
+      "heading_de": "Schritte zur Entzifferung",
+      "body_de": "Wikipedia listet die wichtigsten Fortschritte in zeitlicher Reihenfolge auf. 1799 erkannten Gelehrte, dass der Stein drei Versionen desselben Textes wiedergibt. 1802 entdeckte man, dass der demotische Text phonetische Zeichen zur Schreibung fremder Namen nutzte. 1814 wurde nachgewiesen, dass dies auch für den hieroglyphischen Text galt und dieser dem Demotischen stark ähnelte. Von 1822 bis 1824 erkannte man, dass phonetische Zeichen ebenso einheimische ägyptische Wörter wiedergaben {wiki-rosetta}. Der Engländer Thomas Young identifizierte einige Hieroglyphen mit Bezug zu Ptolemaios V. sowie die Leserichtung der Zeichen {worldhistory-rosetta}.",
+      "heading_es": "Pasos hacia la lectura",
+      "body_es": "Wikipedia enumera los principales avances en orden cronológico. En 1799, los eruditos reconocieron que la piedra ofrecía tres versiones del mismo texto. En 1802, se descubrió que el texto demótico empleaba caracteres fonéticos para deletrear nombres extranjeros. En 1814, se demostró que el texto jeroglífico hacía lo mismo y que se asemejaba notablemente al demótico. Entre 1822 y 1824, se reconoció que los caracteres fonéticos también escribían palabras nativas egipcias {wiki-rosetta}. El erudito inglés Thomas Young identificó algunos jeroglíficos relativos a Ptolomeo V y la dirección en la que debían leerse los signos {worldhistory-rosetta}."
     },
     {
       "heading_en": "Champollion's breakthrough",
       "heading_vi": "Bước đột phá của Champollion",
       "body_en": "In the early 1820s the French scholar Jean-François Champollion fully deciphered the Egyptian-language text. He found that the hieroglyphs combined alphabetic, determinative and syllabic elements {worldhistory-rosetta}. He announced the transliteration of the Egyptian scripts in Paris in [y:1822] {wiki-rosetta}. Even then, it took longer for scholars to read Ancient Egyptian inscriptions and literature with confidence. The list shows decipherment as a sequence of steps taken over more than two decades.",
-      "body_vi": "Đầu thập niên 1820, học giả người Pháp Jean-François Champollion giải mã trọn vẹn văn bản tiếng Ai Cập. Ông phát hiện chữ tượng hình kết hợp các yếu tố mẫu tự, hạn định và âm tiết {worldhistory-rosetta}. Ông công bố bản chuyển tự các hệ chữ Ai Cập tại Paris năm [y:1822] {wiki-rosetta}. Ngay cả khi đó, các học giả vẫn mất thêm thời gian mới đọc được các bia ký và văn chương Ai Cập cổ một cách tự tin. Danh sách này cho thấy việc giải mã là một chuỗi bước kéo dài hơn hai thập kỷ."
+      "body_vi": "Đầu thập niên 1820, học giả người Pháp Jean-François Champollion giải mã trọn vẹn văn bản tiếng Ai Cập. Ông phát hiện chữ tượng hình kết hợp các yếu tố mẫu tự, hạn định và âm tiết {worldhistory-rosetta}. Ông công bố bản chuyển tự các hệ chữ Ai Cập tại Paris năm [y:1822] {wiki-rosetta}. Ngay cả khi đó, các học giả vẫn mất thêm thời gian mới đọc được các bia ký và văn chương Ai Cập cổ một cách tự tin. Danh sách này cho thấy việc giải mã là một chuỗi bước kéo dài hơn hai thập kỷ.",
+      "heading_fr": "La percée de Champollion",
+      "body_fr": "Au début des années 1820, l'érudit français Jean-François Champollion déchiffra entièrement le texte en langue égyptienne. Il découvrit que les hiéroglyphes combinaient des éléments alphabétiques, déterminatifs et syllabiques {worldhistory-rosetta}. Il annonça la translittération des écritures égyptiennes à Paris en [y:1822] {wiki-rosetta}. Même alors, il fallut encore du temps pour que les chercheurs puissent lire les inscriptions et la littérature de l'Égypte antique avec assurance. Cette chronologie montre que le déchiffrement fut une succession d'étapes franchies sur plus de deux décennies.",
+      "heading_de": "Champollions Durchbruch",
+      "body_de": "In den frühen 1820er Jahren gelang es dem französischen Gelehrten Jean-François Champollion, den ägyptischsprachigen Text vollständig zu entziffern. Er fand heraus, dass die Hieroglyphen alphabetische Zeichen, Determinative und Silbenzeichen kombinierten {worldhistory-rosetta}. Er gab die Transliteration der ägyptischen Schriften [y:1822] in Paris bekannt {wiki-rosetta}. Selbst danach dauerte es noch länger, bis Gelehrte altägyptische Inschriften und Literatur sicher lesen konnten. Die Chronologie zeigt die Entzifferung als eine Abfolge von Einzelschritten über mehr als zwei Jahrzehnte hinweg.",
+      "heading_es": "El gran avance de Champollion",
+      "body_es": "A principios de la década de 1820, el erudito francés Jean-François Champollion descifró por completo el texto en lengua egipcia. Descubrió que los jeroglíficos combinaban elementos alfabéticos, determinativos y silábicos {worldhistory-rosetta}. Anunció la transliteración de las escrituras egipcias en París en [y:1822] {wiki-rosetta}. Aun así, los especialistas tardaron más tiempo en leer las inscripciones y la literatura del Antiguo Egipto con total confianza. Esta cronología muestra el desciframiento como una secuencia de pasos dados a lo largo de más de dos décadas."
     },
     {
       "heading_en": "Not the only one",
       "heading_vi": "Không phải duy nhất",
       "body_en": "The Rosetta Stone is now known not to be unique. Three fragmentary copies of the same decree were found later, and similar bilingual or trilingual inscriptions are known, such as the Decree of Canopus of 238 BC {wiki-rosetta}. It remains the essential key to understanding ancient Egyptian literature and civilisation, and the most visited object in the British Museum. The phrase 'Rosetta Stone' is now used for the essential clue to any new field of knowledge. The stone measures 112.3 by 75.7 centimetres and is 28.4 centimetres thick.",
-      "body_vi": "Hiện nay người ta biết phiến đá Rosetta không phải duy nhất. Ba bản sao rời rạc của cùng sắc lệnh được tìm thấy về sau, và các bia ký song ngữ hoặc tam ngữ tương tự đã được biết đến, như Sắc lệnh Canopus năm 238 TCN {wiki-rosetta}. Nó vẫn là chìa khóa thiết yếu để hiểu văn chương và nền văn minh Ai Cập cổ, và là hiện vật có nhiều lượt xem nhất ở Bảo tàng Anh. Cụm từ 'Rosetta Stone' ngày nay được dùng để chỉ manh mối thiết yếu cho bất kỳ lĩnh vực tri thức mới nào. Phiến đá cao 112,3 cm, rộng 75,7 cm và dày 28,4 cm."
+      "body_vi": "Hiện nay người ta biết phiến đá Rosetta không phải duy nhất. Ba bản sao rời rạc của cùng sắc lệnh được tìm thấy về sau, và các bia ký song ngữ hoặc tam ngữ tương tự đã được biết đến, như Sắc lệnh Canopus năm 238 TCN {wiki-rosetta}. Nó vẫn là chìa khóa thiết yếu để hiểu văn chương và nền văn minh Ai Cập cổ, và là hiện vật có nhiều lượt xem nhất ở Bảo tàng Anh. Cụm từ 'Rosetta Stone' ngày nay được dùng để chỉ manh mối thiết yếu cho bất kỳ lĩnh vực tri thức mới nào. Phiến đá cao 112,3 cm, rộng 75,7 cm và dày 28,4 cm.",
+      "heading_fr": "Pas un cas unique",
+      "body_fr": "On sait aujourd'hui que la pierre de Rosette n'est pas un exemplaire unique. Trois copies fragmentaires du même décret ont été retrouvées par la suite, et d'autres inscriptions bilingues ou trilingues comparables sont connues, comme le décret de Canope de 238 av. J.-C. {wiki-rosetta}. Elle demeure la clé fondamentale pour comprendre la littérature et la civilisation de l'Égypte antique, ainsi que l'objet le plus visité du British Museum. L'expression « pierre de Rosette » s'emploie désormais pour désigner l'indice essentiel menant à un nouveau domaine du savoir. La pierre mesure 112,3 centimètres sur 75,7 et présente une épaisseur de 28,4 centimètres.",
+      "heading_de": "Nicht das einzige Exemplar",
+      "body_de": "Heute weiß man, dass der Stein von Rosetta kein Einzelstück ist. Später wurden drei fragmentarische Kopien desselben Dekrets gefunden, und auch ähnliche zweisprachige oder dreisprachige Inschriften sind bekannt, etwa das Kanopus-Dekret aus dem Jahr 238 v. Chr. {wiki-rosetta}. Er bleibt der maßgebliche Schlüssel zum Verständnis der altägyptischen Literatur und Zivilisation sowie das meistbesuchte Exponat im British Museum. Die Redewendung „Stein von Rosetta“ bezeichnet heute einen entscheidenden Schlüssel zu einem neuen Wissensgebiet. Der Stein misst 112,3 mal 75,7 Zentimeter und ist 28,4 Zentimeter dick.",
+      "heading_es": "No es la única",
+      "body_es": "Hoy se sabe que la Piedra de Rosetta no es única. Más tarde se encontraron tres copias fragmentarias del mismo decreto, y se conocen inscripciones bilingües o trilingües similares, como el Decreto de Canopo del 238 a. C. {wiki-rosetta}. Sigue siendo la pieza fundamental para comprender la literatura y la civilización del antiguo Egipto, y el objeto más visitado del Museo Británico. La expresión «Piedra de Rosetta» se utiliza hoy para aludir a la clave esencial de cualquier nuevo campo del saber. La piedra mide 112,3 por 75,7 centímetros y tiene un grosor de 28,4 centímetros."
     }
   ],
   "keyPoint": {
     "en": "The Rosetta Stone, found in 1799, repeats one decree of 196 BC in hieroglyphs, Demotic and Greek. The Greek gave scholars a way in, but decipherment took decades of steps by several people before Champollion announced his results in 1822. It was the essential clue to Egyptian writing, though not the only inscription of its kind.",
-    "vi": "Phiến đá Rosetta, được tìm thấy năm 1799, lặp lại một sắc lệnh năm 196 TCN bằng chữ tượng hình, Demotic và Hy Lạp. Tiếng Hy Lạp cho các học giả lối vào, nhưng việc giải mã mất hàng thập kỷ nhiều bước của nhiều người trước khi Champollion công bố kết quả năm 1822. Nó là manh mối thiết yếu cho chữ viết Ai Cập, dù không phải bia ký duy nhất cùng loại."
+    "vi": "Phiến đá Rosetta, được tìm thấy năm 1799, lặp lại một sắc lệnh năm 196 TCN bằng chữ tượng hình, Demotic và Hy Lạp. Tiếng Hy Lạp cho các học giả lối vào, nhưng việc giải mã mất hàng thập kỷ nhiều bước của nhiều người trước khi Champollion công bố kết quả năm 1822. Nó là manh mối thiết yếu cho chữ viết Ai Cập, dù không phải bia ký duy nhất cùng loại.",
+    "fr": "Découverte en 1799, la pierre de Rosette reproduit un décret de 196 av. J.-C. en hiéroglyphes, en démotique et en grec. Le grec a ouvert la voie aux savants, mais le déchiffrement a exigé des décennies d'efforts menés par plusieurs chercheurs avant que Champollion ne livre ses conclusions en 1822. Elle constitua la clé essentielle des écritures égyptiennes, bien qu'elle ne soit pas la seule inscription de ce genre.",
+    "de": "Der 1799 gefundene Stein von Rosetta wiederholt ein Dekret aus dem Jahr 196 v. Chr. in Hieroglyphen, Demotisch und Griechisch. Das Griechische verschaffte der Wissenschaft einen Zugang, doch bis Champollion 1822 seine Ergebnisse verkündete, erforderte die Entzifferung jahrzehntelange Schritte mehrerer Personen. Er war der entscheidende Schlüssel zur ägyptischen Schrift, wenn auch nicht die einzige Inschrift dieser Art.",
+    "es": "La Piedra de Rosetta, hallada en 1799, repite un decreto del 196 a. C. en jeroglíficos, demótico y griego. El griego brindó a los eruditos un punto de partida, pero el desciframiento requirió décadas de avances de varios estudiosos antes de que Champollion anunciara sus resultados en 1822. Fue la pista indispensable para comprender la escritura egipcia, aunque no la única inscripción de su tipo."
   },
   "applySteps": {
     "en": [
@@ -70,6 +115,21 @@
       "Tìm một bức ảnh phiến đá Rosetta và thử nhận ra ba dải chữ.",
       "Tìm một cartouche, vòng bầu dục bao quanh tên vua, trong ảnh một bia ký Ai Cập.",
       "Đọc về Sắc lệnh Canopus và so sánh hoàn cảnh của nó với phiến đá Rosetta."
+    ],
+    "fr": [
+      "Trouvez une photo de la pierre de Rosette et essayez de repérer les trois registres d'écriture.",
+      "Cherchez un cartouche, cet encadrement ovale entourant un nom royal, sur la photo d'une inscription égyptienne.",
+      "Renseignez-vous sur le décret de Canope et comparez son contexte à celui de la pierre de Rosette."
+    ],
+    "de": [
+      "Finde ein Foto des Steins von Rosetta und versuche, die drei Schriftbänder zu erkennen.",
+      "Suche auf einem Foto einer ägyptischen Inschrift nach einer Kartusche, dem ovalen Ring um einen Königsnamen.",
+      "Lies über das Kanopus-Dekret und vergleiche dessen Überlieferung mit jener des Steins von Rosetta."
+    ],
+    "es": [
+      "Busca una fotografía de la Piedra de Rosetta e intenta distinguir las tres franjas de escritura.",
+      "Busca un cartucho, el cerco ovalado que rodea un nombre real, en una foto de una inscripción egipcia.",
+      "Lee sobre el Decreto de Canopo y compara su contexto con el de la Piedra de Rosetta."
     ]
   },
   "references": [
@@ -94,12 +154,91 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/rosetta-stone-decipherment-hieroglyphs.webp",
+    "url": "https://images.unsplash.com/4/bench-hi-res.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Rodrigo Melo",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/eG3k60PrTGY"
+    "sourceUrl": "https://unsplash.com/photos/eG3k60PrTGY",
+    "wide": "https://images.unsplash.com/4/bench-hi-res.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@rodrigomelo?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoQABwAPu1Ct1apoqakGAEwHYlnAMssYhXNLVd+qahWgAD+9RooJxm811zY/NqCxku7DCRgARKSAY0ymsxa03j/IzgzgmSvIjVOZTbE2K1SFgPuTuhltPgAAXyjKWoyrPLEgG7egAA=",
-  "dominant": "#7b7a7a"
+  "dominant": "#7b7a7a",
+  "glossary": {
+    "en": {
+      "rosetta stone": "An ancient inscribed slab that enabled scholars to decipher Egyptian hieroglyphs.",
+      "hieroglyphs": "Ancient Egyptian picture-based writing system used especially by priests for formal inscriptions.",
+      "demotic": "An ancient Egyptian cursive script used for daily, common communication.",
+      "register": "A horizontal band or section of carved text on an ancient stone monument.",
+      "bilingual text": "An inscription or document written in two distinct languages.",
+      "phonetic characters": "Written symbols representing specific speech sounds rather than entire ideas or words.",
+      "determinative": "A hieroglyphic symbol clarifying a word's meaning without being pronounced.",
+      "syllabic": "Written symbols representing a complete syllable rather than an individual sound.",
+      "transliteration": "Converting signs from one writing system into corresponding letters of another alphabet.",
+      "decipherment": "The process of uncovering and understanding the meaning of an unknown writing system.",
+      "trilingual": "Written or inscribed in three different languages.",
+      "decree of canopus": "An ancient Egyptian three-language inscription similar to the Rosetta Stone."
+    },
+    "vi": {
+      "sắc lệnh": "Văn bản mệnh lệnh pháp lý chính thức do hoàng gia ban bố.",
+      "chữ tượng hình": "Hệ thống chữ viết cổ Ai Cập dùng hình vẽ biểu tượng để ghi lại ngôn ngữ.",
+      "demotic": "Hệ chữ viết Ai Cập cổ giản lược, từng dùng phổ biến trong đời sống hàng ngày.",
+      "tcn": "Viết tắt của Trước Công Nguyên, kỷ nguyên trước năm đầu tiên của Công lịch.",
+      "song ngữ": "Văn bản được ghi lại bằng hai ngôn ngữ hoặc hệ chữ viết khác nhau.",
+      "tam ngữ": "Văn bản được trình bày đồng thời bằng ba thứ tiếng hoặc hệ chữ khác nhau.",
+      "mẫu tự": "Các ký tự biểu thị âm đơn lẻ, tương tự như các chữ cái trong bảng chữ cái.",
+      "hạn định": "Ký hiệu phụ trong chữ Ai Cập giúp xác định rõ nhóm nghĩa của từ.",
+      "âm tiết": "Đơn vị phát âm trọn vẹn, dùng làm thành phần cấu tạo âm thanh của chữ viết.",
+      "chuyển tự": "Cách phiên âm hoặc chuyển đổi ký tự từ hệ chữ này sang hệ chữ khác.",
+      "bia ký": "Văn tự cổ được chạm khắc kiên cố trên bề mặt đá hoặc vách đá.",
+      "cartouche": "Khung hình bầu dục bao quanh tên của các vị vua Ai Cập cổ đại."
+    },
+    "fr": {
+      "hiéroglyphes": "Système d'écriture de l'Égypte antique combinant des signes figuratifs, phonétiques et symboliques.",
+      "démotique": "Écriture égyptienne cursive et simplifiée, employée pour les usages administratifs et courants.",
+      "registre supérieur": "Bande horizontale supérieure d'une stèle gravée, portant ici la version hiéroglyphique du texte.",
+      "déterminatifs": "Signes muets placés en fin de mot pour en préciser la catégorie de sens.",
+      "translittération": "Transcription d'un texte d'un système d'écriture vers un autre alphabet lettre par lettre.",
+      "caractères phonétiques": "Signes graphiques servant à noter les sons du langage parlé.",
+      "syllabiques": "Signes graphiques qui représentent une syllabe entière plutôt qu'un phonème isolé.",
+      "décret de canope": "Stèle trilingue ptolémaïque ayant permis de confirmer la méthode de déchiffrement de Champollion.",
+      "cartouche": "Anneau ovale enserrant le nom d'un souverain dans les inscriptions égyptiennes.",
+      "pierre de rosette": "Stèle gravée trilingue dont la découverte a permis de percer le mystère des écritures égyptiennes."
+    },
+    "de": {
+      "hieroglyphen": "Antike ägyptische Bilderschrift, die vor allem für monumentale und sakrale Inschriften genutzt wurde.",
+      "demotisch": "Späte kursive Schriftform der ägyptischen Sprache für den täglichen Gebrauch und die Verwaltung.",
+      "priesterrat": "Versammlung führender ägyptischer Priester, die offizielle religiöse und politische Beschlüsse fasste.",
+      "register": "Horizontale Text- oder Bildzone auf antiken Stelen und Reliefs.",
+      "phonetische zeichen": "Schriftzeichen, die Sprachlaute darstellen, anstatt ganze Begriffe oder Gegenstände abzubilden.",
+      "leserichtung": "Richtung, in der Texte gelesen werden; Hieroglyphen blicken stets zum Zeilenanfang.",
+      "transliteration": "Zeichengetreue Übertragung von Wörtern aus einem Schriftsystem in ein anderes.",
+      "determinative": "Stumme Hieroglyphenzeichen am Wortende, die die Bedeutungs- oder Sachgruppe des Wortes anzeigen.",
+      "kanopus-dekret": "Dreisprachige Steininschrift von 238 v. Chr., die wichtige Parallelen zum Stein von Rosetta bietet.",
+      "kartusche": "Ovale Umrahmung in Hieroglyphentexten, die Namen von Pharaonen hervorhebt und schützt."
+    },
+    "es": {
+      "jeroglíficos": "Sistema de escritura del antiguo Egipto compuesto por signos figurativos que representan sonidos o ideas.",
+      "demótico": "Escritura egipcia cursiva y simplificada, empleada comúnmente para asuntos cotidianos y administrativos en la época tardía.",
+      "registro superior": "Franja horizontal más alta en la superficie grabada de una estela o monumento.",
+      "texto bilingüe": "Documento o inscripción redactado en dos idiomas diferentes con el mismo contenido fundamental.",
+      "caracteres fonéticos": "Signos gráficos que representan sonidos del habla en lugar de conceptos o palabras completas.",
+      "determinativos": "Signos jeroglíficos sin valor fonético colocados al final de una palabra para aclarar su significado.",
+      "silábicos": "Signos de escritura que representan sílabas completas en vez de fonemas individuales aislados.",
+      "transliteración": "Representación de signos de una escritura mediante el sistema alfabético de otra lengua.",
+      "decreto de canopo": "Inscripción sacerdotal trilingüe del 238 a. C. similar en formato y contenido a la de Rosetta.",
+      "cartucho": "Contorno ovalado que encierra y distingue los nombres de reyes y reinas en las inscripciones egipcias."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

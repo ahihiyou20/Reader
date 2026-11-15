@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "How Reed–Solomon codes let a scratched CD still play",
-    "vi": "Mã Reed–Solomon giúp đĩa CD có vết xước vẫn phát được thế nào"
+    "vi": "Mã Reed–Solomon giúp đĩa CD có vết xước vẫn phát được thế nào",
+    "fr": "Comment les codes de Reed-Solomon permettent la lecture d'un CD rayé",
+    "de": "Wie Reed-Solomon-Codes eine zerkratzte CD abspielbar halten",
+    "es": "Cómo los códigos Reed–Solomon permiten reproducir un CD rayado"
   },
   "hook": {
     "en": "A compact disc can carry a scratch and still play without a glitch. The reason is error-correcting code, which adds extra symbols to the data so that a decoder can find and repair damage. One of the most widely used families, Reed–Solomon codes, is built for exactly the kind of damage a scratch causes: a run of errors in a row.",
-    "vi": "Một đĩa compact có thể có vết xước mà vẫn phát mượt. Lý do là mã sửa lỗi (*error-correcting code*), thêm các ký hiệu dư vào dữ liệu để bộ giải mã tìm và sửa hư hỏng. Một họ mã được dùng rộng rãi, mã Reed–Solomon, được thiết kế đúng cho loại hư hỏng do vết xước gây ra: một chuỗi lỗi liền nhau."
+    "vi": "Một đĩa compact có thể có vết xước mà vẫn phát mượt. Lý do là mã sửa lỗi (*error-correcting code*), thêm các ký hiệu dư vào dữ liệu để bộ giải mã tìm và sửa hư hỏng. Một họ mã được dùng rộng rãi, mã Reed–Solomon, được thiết kế đúng cho loại hư hỏng do vết xước gây ra: một chuỗi lỗi liền nhau.",
+    "fr": "Un disque compact peut comporter une rayure tout en continuant d'être lu sans le moindre accroc. La raison tient au code correcteur d'erreurs, qui ajoute des symboles supplémentaires aux données afin qu'un décodeur puisse repérer et réparer les dégâts. L'une des familles les plus répandues, les codes de Reed-Solomon, est conçue précisément pour le type de dommage causé par une rayure : une série d'erreurs consécutives.",
+    "de": "Eine Compact Disc kann Kratzer aufweisen und dennoch fehlerfrei abspielen. Der Grund dafür ist eine Fehlerkorrektur, die den Daten zusätzliche Symbole hinzufügt, damit ein Decoder Beschädigungen aufspüren und reparieren kann. Eine der am weitesten verbreiteten Codefamilien, die Reed-Solomon-Codes, ist genau für die Art von Schäden ausgelegt, die ein Kratzer verursacht: eine ununterbrochene Folge von Fehlern.",
+    "es": "Un disco compacto puede tener un rayón y seguir reproduciéndose sin fallos. La razón reside en los códigos de corrección de errores, que añaden símbolos adicionales a los datos para que un decodificador pueda localizar y reparar los daños. Una de las familias más utilizadas, los códigos Reed–Solomon, está diseñada precisamente para el tipo de daño que causa un rayón: una serie continua de errores."
   },
   "sections": [
     {
       "heading_en": "A margin of extra symbols",
       "heading_vi": "Một khoảng dư các ký hiệu",
       "body_en": "Reed–Solomon codes operate on a block of data treated as a set of symbols, which are elements of a finite field {rs-wiki}. A code described as RS(n, k) takes k symbols of data and produces n symbols in total. The difference, t = n − k, is the number of check symbols added as a margin {rs-wiki}. The check symbols carry no new information. They exist so that the decoder can test whether the received block still fits the code, and where it does not, locate and fix the damage.",
-      "body_vi": "Mã Reed–Solomon xử lý một khối dữ liệu được coi là tập các ký hiệu, tức là các phần tử của một [p:trường hữu hạn] (*finite field*) {rs-wiki}. Mã RS(n, k) lấy k ký hiệu dữ liệu và tạo ra tổng cộng n ký hiệu. Hiệu số t = n − k là số ký hiệu kiểm tra được thêm vào như một khoảng dự phòng {rs-wiki}. Các ký hiệu kiểm tra không mang thông tin mới. Chúng có mặt để bộ giải mã kiểm tra xem khối nhận được còn khớp với mã hay không, và nếu không khớp thì xác định vị trí và sửa hư hỏng."
+      "body_vi": "Mã Reed–Solomon xử lý một khối dữ liệu được coi là tập các ký hiệu, tức là các phần tử của một [p:trường hữu hạn] (*finite field*) {rs-wiki}. Mã RS(n, k) lấy k ký hiệu dữ liệu và tạo ra tổng cộng n ký hiệu. Hiệu số t = n − k là số ký hiệu kiểm tra được thêm vào như một khoảng dự phòng {rs-wiki}. Các ký hiệu kiểm tra không mang thông tin mới. Chúng có mặt để bộ giải mã kiểm tra xem khối nhận được còn khớp với mã hay không, và nếu không khớp thì xác định vị trí và sửa hư hỏng.",
+      "heading_fr": "Une marge de symboles supplémentaires",
+      "body_fr": "Les codes de Reed-Solomon opèrent sur un bloc de données traité comme un ensemble de symboles, qui sont des éléments d'un corps fini {rs-wiki}. Un code noté RS(n, k) prend k symboles de données et produit n symboles au total. La différence, t = n − k, correspond au nombre de symboles de contrôle ajoutés en guise de marge {rs-wiki}. Ces symboles de contrôle ne véhiculent aucune information nouvelle. Ils existent pour permettre au décodeur de vérifier si le bloc reçu respecte toujours le code et, le cas échéant, de localiser et corriger les altérations.",
+      "heading_de": "Eine Reserve an Zusatzsymbolen",
+      "body_de": "Reed-Solomon-Codes arbeiten auf einem Datenblock, der als Menge von Symbolen betrachtet wird; diese Symbole sind Elemente eines endlichen Körpers {rs-wiki}. Ein als RS(n, k) beschriebener Code nimmt k Datensymbole auf und erzeugt insgesamt n Symbole. Die Differenz, t = n − k, entspricht der Anzahl der Prüfsymbole, die als Reserve hinzugefügt werden {rs-wiki}. Diese Prüfsymbole enthalten keine neuen Informationen. Sie dienen dazu, dass der Decoder prüfen kann, ob der empfangene Block noch zum Code passt, und falls nicht, die Schadstelle zu lokalisieren und zu beheben.",
+      "heading_es": "Un margen de símbolos adicionales",
+      "body_es": "Los códigos Reed–Solomon operan sobre un bloque de datos tratado como un conjunto de símbolos, que son elementos de un cuerpo finito {rs-wiki}. Un código descrito como RS(n, k) toma k símbolos de datos y genera n símbolos en total. La diferencia, t = n − k, es la cantidad de símbolos de control añadidos como margen {rs-wiki}. Los símbolos de control no aportan información nueva. Existen para que el decodificador pueda comprobar si el bloque recibido aún se ajusta al código y, en caso contrario, localizar y corregir los daños."
     },
     {
       "heading_en": "Detecting versus correcting",
       "heading_vi": "Phát hiện khác với sửa",
       "body_en": "The margin can be spent in two ways. With t check symbols, the code can detect any combination of up to t wrong symbols, but it can correct only up to half that number, rounded down, when the positions of the errors are unknown {rs-wiki}. If the decoder is told which symbols are bad, the code acts as an erasure code and can correct up to t of them {rs-wiki}.",
-      "body_vi": "Khoảng dự phòng có thể dùng theo hai cách. Với t ký hiệu kiểm tra, mã có thể phát hiện mọi tổ hợp tối đa t ký hiệu sai, nhưng chỉ sửa được tối đa một nửa số đó, làm tròn xuống, khi vị trí lỗi chưa biết {rs-wiki}. Nếu bộ giải mã được báo ký hiệu nào hỏng, mã hoạt động như [p:mã xóa] (*erasure code*) và sửa được tối đa t ký hiệu {rs-wiki}."
+      "body_vi": "Khoảng dự phòng có thể dùng theo hai cách. Với t ký hiệu kiểm tra, mã có thể phát hiện mọi tổ hợp tối đa t ký hiệu sai, nhưng chỉ sửa được tối đa một nửa số đó, làm tròn xuống, khi vị trí lỗi chưa biết {rs-wiki}. Nếu bộ giải mã được báo ký hiệu nào hỏng, mã hoạt động như [p:mã xóa] (*erasure code*) và sửa được tối đa t ký hiệu {rs-wiki}.",
+      "heading_fr": "Détecter ou corriger",
+      "body_fr": "Cette marge peut être exploitée de deux manières. Avec t symboles de contrôle, le code peut détecter n'importe quelle combinaison comptant jusqu'à t symboles erronés, mais il ne peut en corriger qu'au maximum la moitié, arrondie à l'entier inférieur, lorsque l'emplacement des erreurs est inconnu {rs-wiki}. Si le décodeur sait précisément quels symboles sont corrompus, le code agit comme un code à effacement et peut en corriger jusqu'à t {rs-wiki}.",
+      "heading_de": "Erkennen versus Korrigieren",
+      "body_de": "Diese Reserve lässt sich auf zweierlei Weise nutzen. Mit t Prüfsymbolen kann der Code jede Kombination von bis zu t fehlerhaften Symbolen erkennen, aber nur bis zur Hälfte dieser Zahl (abgerundet) korrigieren, wenn die Fehlerpositionen unbekannt sind {rs-wiki}. Ist dem Decoder jedoch bekannt, welche Symbole beschädigt sind, fungiert der Code als Löschungscode und kann bis zu t dieser Symbole korrigieren {rs-wiki}.",
+      "heading_es": "Detección frente a corrección",
+      "body_es": "El margen puede aprovecharse de dos maneras. Con t símbolos de control, el código puede detectar cualquier combinación de hasta t símbolos erróneos, pero solo puede corregir hasta la mitad de esa cifra, redondeada hacia abajo, cuando se desconocen las posiciones de los errores {rs-wiki}. Si se indica al decodificador qué símbolos son defectuosos, el código actúa como un código de borrado y puede corregir hasta t de ellos {rs-wiki}."
     },
     {
       "heading_en": "Why bursts suit this code",
       "heading_vi": "Vì sao mã này hợp với lỗi thành chuỗi",
       "body_en": "A scratch does not flip single bits at random. It damages a stretch of track, so the errors come in a burst. Reed–Solomon codes handle this well because the symbols are groups of bits: a sequence of b + 1 consecutive bit errors can affect at most two symbols, where b is the symbol size {rs-wiki}. A long run of bad bits therefore spoils only a few symbols, and the code can repair those few if the margin is large enough.",
-      "body_vi": "Vết xước không lật ngẫu nhiên từng bit. Nó làm hỏng một đoạn rãnh, nên các lỗi đến thành chuỗi. Mã Reed–Solomon xử lý tốt điều này vì các ký hiệu là nhóm bit: một dãy b + 1 bit lỗi liền nhau có thể ảnh hưởng tới tối đa hai ký hiệu, với b là kích thước ký hiệu {rs-wiki}. Vì vậy, một đoạn dài bit hỏng chỉ làm hỏng vài ký hiệu, và mã có thể sửa các ký hiệu đó nếu khoảng dự phòng đủ lớn."
+      "body_vi": "Vết xước không lật ngẫu nhiên từng bit. Nó làm hỏng một đoạn rãnh, nên các lỗi đến thành chuỗi. Mã Reed–Solomon xử lý tốt điều này vì các ký hiệu là nhóm bit: một dãy b + 1 bit lỗi liền nhau có thể ảnh hưởng tới tối đa hai ký hiệu, với b là kích thước ký hiệu {rs-wiki}. Vì vậy, một đoạn dài bit hỏng chỉ làm hỏng vài ký hiệu, và mã có thể sửa các ký hiệu đó nếu khoảng dự phòng đủ lớn.",
+      "heading_fr": "L'efficacité face aux salves d'erreurs",
+      "body_fr": "Une rayure n'inverse pas des bits isolés au hasard. Elle endommage une portion continue de piste, provoquant ainsi une salve d'erreurs. Les codes de Reed-Solomon gèrent très bien cette situation car les symboles sont des groupes de bits : une suite de b + 1 erreurs consécutives sur les bits ne peut affecter au plus que deux symboles, où b représente la taille d'un symbole {rs-wiki}. Une longue séquence de bits défectueux ne corrompt donc qu'une poignée de symboles, et le code peut réparer ces derniers si la marge est suffisante.",
+      "heading_de": "Warum Bündelfehler dem Code liegen",
+      "body_de": "Ein Kratzer kippt nicht willkürlich einzelne Bits um. Er beschädigt einen ganzen Spurabschnitt, sodass die Fehler gebündelt als Burst auftreten. Reed-Solomon-Codes bewältigen dies hervorragend, da die Symbole aus Bitgruppen bestehen: Eine Folge von b + 1 aufeinanderfolgenden Bitfehlern kann höchstens zwei Symbole beeinträchtigen, wobei b für die Symbolgröße steht {rs-wiki}. Eine lange Kette fehlerhafter Bits verfälscht somit nur wenige Symbole, und der Code kann diese wenigen reparieren, sofern die Reserve groß genug ist.",
+      "heading_es": "Por qué las ráfagas se adaptan a este código",
+      "body_es": "Un rayón no altera bits individuales al azar. Daña un tramo de la pista, de modo que los errores se producen en ráfaga. Los códigos Reed–Solomon gestionan esto con eficacia porque los símbolos son grupos de bits: una secuencia de b + 1 errores de bit consecutivos puede afectar a lo sumo a dos símbolos, donde b representa el tamaño del símbolo {rs-wiki}. Por tanto, una larga cadena de bits defectuosos solo estropea unos pocos símbolos, y el código puede reparar esos pocos si el margen es suficiente."
     },
     {
       "heading_en": "Interleaving on the disc",
       "heading_vi": "Đan xen dữ liệu trên đĩa",
       "body_en": "The compact disc system does not rely on a single code. It uses two concatenated Reed–Solomon codes, interleaved cross-wise, with a 28-way convolutional interleaver between the two layers. The combined scheme is called cross-interleaved Reed–Solomon coding, or CIRC {circ-wiki}. The design spreads the effects of one damaged area across many code blocks, so that no single block receives more damage than its margin can repair {circ-wiki}.",
-      "body_vi": "Hệ thống đĩa compact không dựa vào một mã duy nhất. Nó dùng hai mã Reed–Solomon ghép nối, đan xen chéo, với một bộ đan xen tích chập 28 đường giữa hai lớp. Sơ đồ kết hợp này gọi là mã Reed–Solomon đan xen chéo (*CIRC*) {circ-wiki}. Thiết kế này trải hậu quả của một vùng hỏng ra nhiều khối mã, để không khối nào phải chịu hư hỏng vượt quá khoảng dự phòng {circ-wiki}."
+      "body_vi": "Hệ thống đĩa compact không dựa vào một mã duy nhất. Nó dùng hai mã Reed–Solomon ghép nối, đan xen chéo, với một bộ đan xen tích chập 28 đường giữa hai lớp. Sơ đồ kết hợp này gọi là mã Reed–Solomon đan xen chéo (*CIRC*) {circ-wiki}. Thiết kế này trải hậu quả của một vùng hỏng ra nhiều khối mã, để không khối nào phải chịu hư hỏng vượt quá khoảng dự phòng {circ-wiki}.",
+      "heading_fr": "L'entrelacement sur le disque",
+      "body_fr": "Le système du disque compact ne repose pas sur un code unique. Il utilise deux codes de Reed-Solomon concaténés, entrelacés en croix, avec un entrelaceur convolutionnel à 28 voies entre les deux couches. Ce schéma combiné s'appelle le codage Reed-Solomon à entrelacement croisé, ou CIRC {circ-wiki}. Cette conception disperse les effets d'une zone endommagée sur de nombreux blocs de code, de sorte qu'aucun bloc isolé ne subisse plus de dommages que sa marge ne peut en réparer {circ-wiki}.",
+      "heading_de": "Verschachtelung auf der Disc",
+      "body_de": "Das System der Compact Disc verlässt sich nicht auf einen einzelnen Code. Es nutzt zwei kaskadierte Reed-Solomon-Codes, die über Kreuz verschachtelt sind, mit einem 28-fachen Faltungs-Interleaver zwischen beiden Schichten. Dieses kombinierte Verfahren nennt sich Cross-Interleaved Reed-Solomon Code, kurz CIRC {circ-wiki}. Durch diesen Aufbau verteilen sich die Auswirkungen einer beschädigten Stelle auf viele Codeblöcke, sodass kein einzelner Block mehr Schaden nimmt, als seine Reserve reparieren kann {circ-wiki}.",
+      "heading_es": "Entrelazado en el disco",
+      "body_es": "El sistema del disco compacto no depende de un único código. Emplea dos códigos Reed–Solomon concatenados, entrelazados de manera cruzada, con un entrelazador convolucional de 28 vías entre ambas capas. El esquema combinado se denomina código Reed–Solomon de entrelazado cruzado, o CIRC {circ-wiki}. Este diseño distribuye los efectos de una zona dañada entre muchos bloques de código, de modo que ningún bloque reciba más daños de los que su margen puede reparar {circ-wiki}."
     },
     {
       "heading_en": "From a 1960 paper to consumer discs",
       "heading_vi": "Từ một bài báo năm 1960 đến đĩa tiêu dùng",
       "body_en": "Irving S. Reed and Gustave Solomon developed the codes in 1960 {rs-wiki}. Their applications later included consumer technologies such as MiniDiscs, CDs and DVDs {rs-wiki}. The same mathematics therefore protects a disc in a living room and data stored elsewhere.",
-      "body_vi": "Irving S. Reed và Gustave Solomon phát triển các mã này năm 1960 {rs-wiki}. Về sau, ứng dụng của chúng bao gồm các công nghệ tiêu dùng như MiniDisc, CD và DVD {rs-wiki}. Vì vậy, cùng một nền toán học bảo vệ một đĩa trong phòng khách cũng như dữ liệu được lưu ở nơi khác."
+      "body_vi": "Irving S. Reed và Gustave Solomon phát triển các mã này năm 1960 {rs-wiki}. Về sau, ứng dụng của chúng bao gồm các công nghệ tiêu dùng như MiniDisc, CD và DVD {rs-wiki}. Vì vậy, cùng một nền toán học bảo vệ một đĩa trong phòng khách cũng như dữ liệu được lưu ở nơi khác.",
+      "heading_fr": "D'un article de 1960 aux disques grand public",
+      "body_fr": "Irving S. Reed et Gustave Solomon ont développé ces codes en 1960 {rs-wiki}. Leurs applications ont plus tard englobé des technologies grand public telles que les MiniDiscs, les CD et les DVD {rs-wiki}. Les mêmes principes mathématiques protègent ainsi un disque dans un salon tout comme des données stockées ailleurs.",
+      "heading_de": "Vom Fachaufsatz von 1960 zu Konsumenten-Discs",
+      "body_de": "Irving S. Reed und Gustave Solomon entwickelten die Codes im Jahr 1960 {rs-wiki}. Zu ihren späteren Anwendungsbereichen zählten Verbrauchertechnologien wie MiniDiscs, CDs und DVDs {rs-wiki}. Dieselbe Mathematik schützt somit eine Disc im heimischen Wohnzimmer ebenso wie anderswo gespeicherte Daten.",
+      "heading_es": "De un artículo de 1960 a los discos de consumo",
+      "body_es": "Irving S. Reed y Gustave Solomon desarrollaron estos códigos en 1960 {rs-wiki}. Sus aplicaciones posteriores incluyeron tecnologías de consumo como MiniDiscs, CD y DVD {rs-wiki}. Por consiguiente, la misma matemática protege un disco en la sala de estar y los datos almacenados en cualquier otro lugar."
     },
     {
       "heading_en": "Where the margin runs out",
       "heading_vi": "Khi khoảng dự phòng cạn",
       "body_en": "The margin is finite. Once the damage in a block exceeds what the check symbols can handle, the code can no longer guarantee a correct repair. The protection is strong within its limits and gives no guarantee outside them.",
-      "body_vi": "Khoảng dự phòng là hữu hạn. Khi hư hỏng trong một khối vượt quá khả năng xử lý của các ký hiệu kiểm tra, mã không còn đảm bảo được việc sửa đúng. Sự bảo vệ mạnh trong giới hạn của nó và không đảm bảo gì bên ngoài giới hạn đó."
+      "body_vi": "Khoảng dự phòng là hữu hạn. Khi hư hỏng trong một khối vượt quá khả năng xử lý của các ký hiệu kiểm tra, mã không còn đảm bảo được việc sửa đúng. Sự bảo vệ mạnh trong giới hạn của nó và không đảm bảo gì bên ngoài giới hạn đó.",
+      "heading_fr": "Quand la marge s'épuise",
+      "body_fr": "La marge est limitée. Dès lors que les dégradations dans un bloc dépassent ce que les symboles de contrôle peuvent traiter, le code ne peut plus garantir une réparation adéquate. La protection s'avère robuste dans ses limites, mais n'offre aucune garantie au-delà.",
+      "heading_de": "Wo die Reserve endet",
+      "body_de": "Die Reserve ist begrenzt. Sobald der Schaden in einem Block das übersteigt, was die Prüfsymbole bewältigen können, lässt sich eine fehlerfreie Reparatur nicht mehr garantieren. Der Schutz ist innerhalb seiner Grenzen stark, bietet darüber hinaus jedoch keinerlei Garantie.",
+      "heading_es": "Cuando el margen se agota",
+      "body_es": "El margen es finito. Una vez que el daño en un bloque supera lo que pueden gestionar los símbolos de control, el código ya no puede garantizar una reparación correcta. La protección es sólida dentro de sus límites y no ofrece ninguna garantía fuera de ellos."
     }
   ],
   "keyPoint": {
     "en": "Reed–Solomon codes add a fixed margin of check symbols. That margin corrects half as many errors as it has check symbols, or all of them when their positions are known, and it handles bursts especially well. Past the limit, the protection stops.",
-    "vi": "Mã Reed–Solomon thêm một khoảng dự phòng cố định gồm các ký hiệu kiểm tra. Khoảng này sửa được một nửa số lỗi tương ứng với số ký hiệu kiểm tra, hoặc tất cả nếu biết vị trí lỗi, và xử lý đặc biệt tốt các chuỗi lỗi liền nhau. Vượt quá giới hạn, sự bảo vệ dừng lại."
+    "vi": "Mã Reed–Solomon thêm một khoảng dự phòng cố định gồm các ký hiệu kiểm tra. Khoảng này sửa được một nửa số lỗi tương ứng với số ký hiệu kiểm tra, hoặc tất cả nếu biết vị trí lỗi, và xử lý đặc biệt tốt các chuỗi lỗi liền nhau. Vượt quá giới hạn, sự bảo vệ dừng lại.",
+    "fr": "Les codes de Reed-Solomon ajoutent une marge fixe de symboles de contrôle. Cette marge corrige deux fois moins d'erreurs qu'elle ne compte de symboles de contrôle, ou la totalité lorsque leur emplacement est connu, tout en gérant particulièrement bien les salves. Au-delà de cette limite, la protection cesse d'opérer.",
+    "de": "Reed-Solomon-Codes fügen eine feste Reserve an Prüfsymbolen hinzu. Diese Reserve korrigiert halb so viele Fehler, wie Prüfsymbole vorhanden sind, oder alle Fehler, wenn deren Positionen bekannt sind, und bewältigt Bündelfehler besonders gut. Jenseits dieses Limits greift der Schutz nicht mehr.",
+    "es": "Los códigos Reed–Solomon añaden un margen fijo de símbolos de control. Dicho margen corrige la mitad de errores respecto al número de símbolos de control, o la totalidad de ellos cuando se conocen sus posiciones, y tolera las ráfagas con especial eficacia. Más allá de ese límite, la protección cesa."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Sao chép mọi tệp bạn không thể mất sang một nơi thứ hai, vì sửa lỗi chỉ khắc phục hư hỏng trong giới hạn của nó.",
       "Dùng một đĩa dự phòng để xem mức mòn nhìn thấy nào thì bắt đầu phát giật, và ghi lại việc hỏng có đột ngột không.",
       "Giải thích cho người khác sự khác nhau giữa phát hiện và sửa lỗi, dùng quy tắc một nửa số ký hiệu kiểm tra."
+    ],
+    "fr": [
+      "Copiez tout fichier indispensable sur un second support, car la correction d'erreurs ne répare les dégâts que dans la limite de sa capacité.",
+      "Utilisez un disque usagé pour observer à quel degré d'usure visible la lecture commence à saccader, et notez le caractère soudain de la panne.",
+      "Expliquez à quelqu'un la différence entre détecter et corriger une erreur, en vous appuyant sur la règle de la moitié des symboles de contrôle."
+    ],
+    "de": [
+      "Kopiere jede Datei, deren Verlust du dir nicht leisten kannst, an einen zweiten Speicherort, da die Fehlerkorrektur Schäden nur bis zu ihrem Limit repariert.",
+      "Nutze eine entbehrliche Disc, um zu beobachten, ab welchem Grad sichtbarer Abnutzung die Wiedergabe zu stottern beginnt, und achte darauf, wie abrupt der Ausfall eintritt.",
+      "Erkläre jemand anderem anhand der Regel der halben Prüfsymbolanzahl den Unterschied zwischen der Erkennung und der Korrektur eines Fehlers."
+    ],
+    "es": [
+      "Copie cualquier archivo que no pueda permitirse perder en una segunda ubicación, ya que la corrección de errores solo repara los daños hasta su límite.",
+      "Utilice un disco de repuesto para observar a partir de qué nivel de desgaste visible la reproducción empieza a fallar, y preste atención a lo repentina que resulta la avería.",
+      "Explique a otra persona la diferencia entre detectar y corregir un error recurriendo a la regla de la mitad de los símbolos de control."
     ]
   },
   "references": [
@@ -93,12 +153,89 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/how-reed-solomon-codes-keep-a-scratched-cd-playing.webp",
+    "url": "https://images.unsplash.com/photo-1452716726610-30ed68426a6b?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg3fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Frances Gunn",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/8BmNurlVR6M"
+    "sourceUrl": "https://unsplash.com/photos/8BmNurlVR6M",
+    "wide": "https://images.unsplash.com/photo-1452716726610-30ed68426a6b?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg3fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@francesgunn?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABQBACdASoQABwAPu1kqk2ppaQiMAgBMB2JaQABH6c26jDmub4A/QE96TqgAP6qHUoAB8HYRhMKZJRe+ACiE1oBnFWBTYto7RPd15a2EWOoEgKnpLvWAfMpKxOAIHj0HQ1vQCASOWoCkbWpvzaIlL4zAwAAAA==",
-  "dominant": "#606060"
+  "dominant": "#606060",
+  "glossary": {
+    "en": {
+      "error-correcting code": "An encoding system adding redundant symbols to data so damaged parts can be detected and repaired.",
+      "reed–solomon codes": "A family of error-correcting codes designed to detect and repair bursts of corrupted symbols.",
+      "finite field": "A mathematical system containing a limited set of elements used for calculation within the code.",
+      "check symbols": "Extra redundant symbols added to data to detect errors and locate and fix damage.",
+      "erasure code": "A code used to correct corrupted symbols whose exact positions are already known.",
+      "burst": "A contiguous sequence of consecutive errors, such as those caused by a physical disc scratch.",
+      "symbol size": "The fixed number of bits grouped together to form an individual symbol in the code.",
+      "concatenated": "Joined in a sequence so that the output of one error-correcting code feeds into another.",
+      "interleaved": "Rearranged in a non-consecutive order to spread localized errors across multiple separate blocks.",
+      "convolutional interleaver": "A mechanism that delays data across multiple paths to stagger consecutive symbols over time.",
+      "circ": "Cross-interleaved Reed–Solomon coding; the combined two-layer error-correcting scheme used on compact discs."
+    },
+    "vi": {
+      "đĩa compact": "Đĩa quang dùng để lưu trữ và phát dữ liệu kỹ thuật số bằng tia laser.",
+      "mã sửa lỗi": "Hệ thống bổ sung dữ liệu dư để phát hiện và tự động khắc phục các lỗi.",
+      "bộ giải mã": "Thành phần kiểm tra dữ liệu nhận được, xác định vị trí lỗi và sửa chữa hư hỏng.",
+      "ký hiệu": "Nhóm gồm một số bit cố định được xử lý như một đơn vị dữ liệu.",
+      "trường hữu hạn": "Hệ thống toán học có số phần tử hữu hạn dùng làm cơ sở tính toán mã.",
+      "khoảng dự phòng": "Lượng ký hiệu kiểm tra thêm vào để hỗ trợ tìm và sửa chữa dữ liệu hỏng.",
+      "mã xóa": "Chế độ sửa lỗi khi bộ giải mã đã được thông báo trước vị trí hư hỏng.",
+      "chuỗi lỗi": "Các lỗi xuất hiện liên tiếp nhau trên một đoạn dữ liệu do vết xước gây ra.",
+      "rãnh": "Đường ghi vật lý dạng xoắn ốc trên bề mặt đĩa chứa dữ liệu quang học.",
+      "đan xen chéo": "Cách sắp xếp phân tán dữ liệu để dàn đều hư hỏng cục bộ ra nhiều khối.",
+      "khối mã": "Đoạn dữ liệu hoàn chỉnh gồm các ký hiệu thông tin kết hợp cùng ký hiệu kiểm tra."
+    },
+    "fr": {
+      "codes de reed-solomon": "Famille de codes correcteurs d'erreurs linéaires par blocs utilisée pour détecter et réparer les données corrompues.",
+      "code correcteur d'erreurs": "Algorithme ajoutant des symboles redondants aux données pour détecter et corriger les altérations physiques ou logiques.",
+      "corps fini": "Structure algébrique contenant un nombre fini d'éléments sur laquelle opèrent les calculs du code.",
+      "symboles de contrôle": "Éléments redondants ajoutés aux données permettant de repérer et de réparer les erreurs éventuelles.",
+      "code à effacement": "Code correcteur capable de reconstituer des symboles perdus ou corrompus dont l'emplacement exact est déjà connu.",
+      "salve d'erreurs": "Groupe d'erreurs consécutives concentrées sur une même zone d'un support, comme une rayure sur un disque.",
+      "entrelaceur convolutionnel": "Dispositif réorganisant en continu le flux de données pour disperser les séquences d'erreurs consécutives.",
+      "circ": "Schéma combinant deux codes Reed-Solomon et un entrelacement pour fiabiliser la lecture des disques compacts.",
+      "entrelacés en croix": "Méthode agençant les données de manière croisée pour répartir les dégâts physiques sur plusieurs blocs.",
+      "bloc de données": "Groupe de symboles d'information soumis ensemble au traitement mathématique de codage et de décodage."
+    },
+    "de": {
+      "reed-solomon-codes": "Eine Familie fehlerkorrigierender Blockcodes, die besonders effektiv gegen gebündelte Datenfehler wirkt.",
+      "fehlerkorrektur": "Verfahren, um Übertragungs- oder Speicherfehler in digitalen Daten mithilfe redundanter Zusatzinformationen selbstständig zu beheben.",
+      "decoder": "Komponente, die codierte Daten liest, Fehler analysiert und anhand von Prüfsymbolen korrigiert.",
+      "endlichen körpers": "Mathematische algebraische Struktur mit endlich vielen Elementen, auf der die Berechnungen der Symbolwerte basieren.",
+      "prüfsymbole": "Zusätzliche Datenzeichen ohne eigenen Informationsgehalt, die ausschließlich zur Erkennung und Reparatur von Fehlern dienen.",
+      "löschungscode": "Codeverfahren zur Wiederherstellung von Daten, wenn bekannt ist, an welchen konkreten Stellen Fehler aufgetreten sind.",
+      "burst": "Ein plötzliches, gehäuftes Auftreten zusammenhängender Bitfehler über einen bestimmten Datenbereich.",
+      "faltungs-interleaver": "Baustein zur zeitlichen oder räumlichen Verschränkung von Datenströmen nach einem fortlaufenden Faltungsmuster.",
+      "circ": "Kombination zweier verschachtelter Reed-Solomon-Codes, die als Fehlerschutzstandard auf Audio-CDs eingesetzt wird.",
+      "codeblöcke": "Feste Einheiten aus Nutzdaten und Prüfsymbolen, die bei der Fehlerkorrektur gemeinsam verarbeitet werden."
+    },
+    "es": {
+      "códigos reed–solomon": "Clase de códigos correctores lineales que opera sobre bloques de símbolos de múltiples bits para reparar errores.",
+      "cuerpo finito": "Estructura algebraica con un número finito de elementos sobre la que se realizan las operaciones del código.",
+      "símbolos de control": "Símbolos redundantes añadidos a los datos para permitir la detección y corrección de alteraciones en el bloque.",
+      "decodificador": "Algoritmo o circuito encargado de interpretar los datos recibidos, detectar incongruencias y subsanar posibles errores.",
+      "código de borrado": "Tipo de código corrector utilizado cuando la posición de los símbolos dañados ya se conoce con exactitud.",
+      "ráfaga": "Secuencia agrupada y continua de errores provocada de manera localizada por un daño físico en el soporte.",
+      "errores de bit": "Alteraciones en los valores binarios fundamentales de información que componen los datos del disco.",
+      "entrelazador convolucional": "Dispositivo que dispersa los datos continuos entre capas para evitar que errores contiguos afecten al mismo bloque.",
+      "circ": "Acrónimo del sistema de codificación Reed-Solomon con entrelazado cruzado utilizado en el disco compacto.",
+      "bloques de código": "Segmentos que integran símbolos de datos y de control procesados como unidades de trabajo por el algoritmo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

@@ -1,6 +1,6 @@
-# Reader
+# Pagemoor
 
-Ứng dụng đọc kiểu TikTok: mỗi bài là một màn hình dọc, vuốt lên để sang bài mới, vuốt ngang để đọc chi tiết rồi bình luận và áp dụng. Bài viết song ngữ Anh–Việt, lấy từ nguồn có giấy phép mở (Our World in Data, Frontiers for Young Minds, NASA, CDC, NIST, Wikipedia…) hoặc do biên tập viên tự viết, luôn ghi công đầy đủ.
+Pagemoor (tên cũ: Reader) là ứng dụng đọc kiểu TikTok: mỗi bài là một màn hình dọc, vuốt lên để sang bài mới, vuốt ngang để đọc chi tiết rồi bình luận và áp dụng. Bài viết có năm ngôn ngữ (Việt, Anh, Pháp, Đức, Tây Ban Nha), lấy từ nguồn có giấy phép mở (Our World in Data, Frontiers for Young Minds, NASA, CDC, NIST, Wikipedia…) hoặc do biên tập viên tự viết, luôn ghi công đầy đủ.
 
 Chạy **100% miễn phí**: Next.js xuất tĩnh trên Cloudflare Pages, Firebase gói Spark (Auth + Firestore), GitHub Actions cho các tác vụ nền. Không dùng API AI trả phí; Gemini free tier là tùy chọn và chỉ gợi ý cho biên tập viên.
 
@@ -117,7 +117,7 @@ Settings → Secrets and variables → Actions:
 | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` | secret | Tải site lên Cloudflare Pages (`deploy.yml`) |
 | `CF_PAGES_DEPLOY_HOOK` | secret, thay thế | Chỉ khi project Pages nối Git |
 | `BACKUP_PASSPHRASE` | secret | Mật khẩu mã hoá bản sao lưu hằng tuần (bắt buộc nếu muốn chạy `backup.yml`; thiếu thì job dừng chứ không tải bản rõ lên) |
-| `GEMINI_API_KEY` | secret, nên có | Bản tiếng Việt, KEY POINT, Apply, highlight, bản tóm tắt cho bài tự động (không bao giờ gửi dữ liệu người dùng). Lấy miễn phí ở Google AI Studio |
+| `GEMINI_API_KEY` | secret, nên có | Bản dịch năm ngôn ngữ, bảng giải nghĩa từ, KEY POINT, Apply, highlight, bản tóm tắt cho bài tự động (không bao giờ gửi dữ liệu người dùng). Lấy miễn phí ở Google AI Studio |
 | `UNSPLASH_ACCESS_KEY`, `PEXELS_API_KEY` | secret, tùy chọn | Gợi ý ảnh bìa khi import |
 | `GEMINI_MODEL`, `SITE_URL`, `CF_PAGES_PROJECT` | variable | Tên model Gemini, địa chỉ site, tên project Pages (mặc định `reader`) |
 | `NEXT_PUBLIC_*` | variable | Cấu hình Firebase, OAuth, xác minh Google cho bản build (mục 3) |
@@ -139,6 +139,31 @@ Không bao giờ commit dữ liệu người dùng hay bản sao lưu vào repo.
 - **context-mode**: giữ output lớn ngoài ngữ cảnh và tìm kiếm FTS5. Các hook của nó (`.claude/hooks/context-mode.sh`) gắn vào PreToolUse, PostToolUse, PreCompact, UserPromptSubmit, SessionStart và Stop.
 
 Telemetry của codegraph bị tắt (`DO_NOT_TRACK=1`). Muốn tắt hook: `/hooks` trong Claude Code, hoặc xoá khối `hooks` trong `.claude/settings.json`.
+
+## Tính năng Pagemoor
+
+| Tính năng | Chạy thế nào | Mã |
+|-----------|--------------|----|
+| Dành cho bạn (Smart Feed) | Xếp lại feed theo điểm quan tâm từng chủ đề: chủ đề đã chọn, thời gian đọc, tỷ lệ đọc hết, lượt lưu, lượt lướt qua. Tính ngay trên trình duyệt, không gửi đi đâu | `lib/recommend.ts`, `stores/reading.ts`, `components/feed/useReadingSignals.ts` |
+| Khám phá và tìm kiếm | Lọc theo chủ đề, tìm trên tiêu đề của cả năm ngôn ngữ | `components/overlays/ExplorePanel.tsx`, `SearchPanel.tsx` |
+| Năm ngôn ngữ | Bot dịch từ bản tiếng Anh. Bài CC BY-ND giữ nguyên văn và chỉ có tóm tắt theo từng ngôn ngữ | `scripts/pipeline/translate.ts`, `.github/workflows/translate.yml` |
+| Chạm để hiểu từ | Từ nào bot đã giải nghĩa theo ngữ cảnh lúc soạn bài thì dùng nghĩa đó, còn lại tra Wiktionary | `lib/dictionary.ts`, `components/reader/WordPop.tsx` |
+| Sách nói | Giọng đọc có sẵn của trình duyệt (Web Speech), chọn giọng, tốc độ, tạm dừng, tua theo đoạn | `stores/audio.ts`, `components/chrome/AudioBar.tsx` |
+| Thư viện | Bài đã lưu, bộ sưu tập tự đặt tên, lịch sử đọc | `components/overlays/LibraryPanel.tsx` |
+| Hồ sơ | Thống kê đọc, chủ đề yêu thích, giải thích vì sao thấy bài | `components/overlays/ProfilePanel.tsx` |
+| Cài đặt | Ngôn ngữ, cỡ chữ, giọng và tốc độ đọc, dữ liệu | `components/overlays/SettingsPanel.tsx` |
+
+Bộ sưu tập, lịch sử, thống kê và cài đặt đọc hiện lưu trong trình duyệt (localStorage), chưa đồng bộ theo tài khoản.
+
+### Dịch bài
+
+Bài mới được dịch ngay khi bot viết (`create.ts`). Workflow **Translations** chạy 6 giờ một lần để dịch nốt phần còn thiếu bằng `GEMINI_API_KEY`. Muốn dịch hàng loạt trên máy bằng Antigravity CLI đã đăng nhập (không cần key):
+
+```bash
+GEMINI_VIA=agy GEMINI_MODEL=gemini-3.8-flash-medium pnpm tsx scripts/pipeline/translate.ts --jobs 6
+```
+
+Chạy lại lệnh là nó làm tiếp từ chỗ dừng.
 
 ## Cấu trúc
 

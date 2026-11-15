@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Zombie Bacteria Might Purify Future Sewers",
-    "vi": "Vi khuẩn thây ma có thể lọc sạch nước thải trong tương lai"
+    "vi": "Vi khuẩn thây ma có thể lọc sạch nước thải trong tương lai",
+    "fr": "Des bactéries zombies pourraient assainir les futurs égouts",
+    "de": "Zombie-Bakterien könnten künftig Abwässer reinigen",
+    "es": "Bacterias zombi podrían purificar las futuras alcantarillas"
   },
   "hook": {
     "en": "Halloween meets microbiology as scientists discover dead bacteria continuing to produce DNA inside sticky biofilms. Researchers from Aarhus University found that starving specific microbes triggers dormant viral DNA, causing them to burst while their internal machinery keeps running. This astonishing phenomenon could soon be harnessed to clean heavy metals from wastewater.",
-    "vi": "Halloween kết hợp với vi sinh học khi các nhà khoa học phát hiện vi khuẩn đã chết vẫn tiếp tục sản xuất DNA bên trong các màng sinh học dính. Các nhà nghiên cứu từ Đại học Aarhus phát hiện ra rằng việc làm cho các vi khuẩn cụ thể chết đói sẽ kích hoạt DNA virus ngủ đông, khiến chúng vỡ ra trong khi bộ máy bên trong vẫn hoạt động. Hiện tượng đáng kinh ngạc này có thể sớm được khai thác để làm sạch kim loại nặng khỏi nước thải."
+    "vi": "Halloween kết hợp với vi sinh học khi các nhà khoa học phát hiện vi khuẩn đã chết vẫn tiếp tục sản xuất DNA bên trong các màng sinh học dính. Các nhà nghiên cứu từ Đại học Aarhus phát hiện ra rằng việc làm cho các vi khuẩn cụ thể chết đói sẽ kích hoạt DNA virus ngủ đông, khiến chúng vỡ ra trong khi bộ máy bên trong vẫn hoạt động. Hiện tượng đáng kinh ngạc này có thể sớm được khai thác để làm sạch kim loại nặng khỏi nước thải.",
+    "fr": "Quand Halloween rencontre la microbiologie : des scientifiques ont découvert des bactéries mortes qui continuent de produire de l’ADN au sein de biofilms gluants. Des chercheurs de l’université d’Aarhus ont constaté que priver certains microbes de nutriments active de l’ADN viral dormant, provoquant leur éclatement tandis que leur machinerie interne continue de fonctionner. Cet étonnant phénomène pourrait bientôt être exploité pour éliminer les métaux lourds des eaux usées.",
+    "de": "Halloween trifft auf Mikrobiologie: Forschende haben entdeckt, dass abgestorbene Bakterien in klebrigen Biofilmen weiterhin DNA produzieren. Ein Team der Universität Aarhus fand heraus, dass das Aushungern bestimmter Mikroben schlummernde virale DNA aktiviert; die Zellen platzen zwar auf, doch ihre zelluläre Maschinerie läuft einfach weiter. Dieses erstaunliche Phänomen könnte bald genutzt werden, um Schwermetalle aus Abwässern zu entfernen.",
+    "es": "Halloween se da la mano con la microbiología tras el descubrimiento de bacterias muertas que continúan produciendo ADN dentro de biopelículas viscosas. Investigadores de la Universidad de Aarhus descubrieron que someter a inanición a ciertos microbios activa ADN viral latente, lo que provoca su ruptura mientras su maquinaria interna sigue funcionando. Este asombroso fenómeno pronto podría aprovecharse para eliminar metales pesados de las aguas residuales."
   },
   "sections": [
     {
       "heading_en": "Bacterial Biofilms and Dormant Phages",
       "heading_vi": "Màng sinh học và thể thực khuẩn ngủ đông",
       "body_en": "Bacterial communities often create a sticky protective layer known as a biofilm, functioning similarly to a slimy neighborhood of microscopic homes {source}. Inside these structures, numerous species harbor dormant viral DNA fragments called phages. These genetic elements remain completely inactive until specific environmental pressures, such as severe nutrient starvation, trigger them to awaken and begin replicating.",
-      "body_vi": "Các cộng đồng vi khuẩn thường tạo ra một lớp màng bảo vệ dính được gọi là màng sinh học (*biofilm*), hoạt động tương tự như một khu phố nhớp nháp gồm các ngôi nhà vi mô {source}. Bên trong những cấu trúc này, rất nhiều loài chứa các đoạn DNA virus ngủ đông được gọi là thể thực khuẩn (*phage*). Những yếu tố di truyền này hoàn toàn không hoạt động cho đến khi các áp lực môi trường cụ thể, chẳng hạn như thiếu hụt dinh dưỡng nghiêm trọng, kích hoạt chúng thức dậy và bắt đầu nhân bản."
+      "body_vi": "Các cộng đồng vi khuẩn thường tạo ra một lớp màng bảo vệ dính được gọi là màng sinh học (*biofilm*), hoạt động tương tự như một khu phố nhớp nháp gồm các ngôi nhà vi mô {source}. Bên trong những cấu trúc này, rất nhiều loài chứa các đoạn DNA virus ngủ đông được gọi là thể thực khuẩn (*phage*). Những yếu tố di truyền này hoàn toàn không hoạt động cho đến khi các áp lực môi trường cụ thể, chẳng hạn như thiếu hụt dinh dưỡng nghiêm trọng, kích hoạt chúng thức dậy và bắt đầu nhân bản.",
+      "heading_fr": "Biofilms bactériens et phages dormants",
+      "body_fr": "Les communautés bactériennes sécrètent souvent une couche protectrice visqueuse appelée biofilm, semblable à un quartier gluant d’habitations microscopiques {source}. Au sein de ces structures, de nombreuses espèces abritent des fragments dormants d’ADN viral appelés phages. Ces éléments génétiques demeurent totalement inactifs jusqu’à ce que des pressions environnementales ciblées, telle qu’une sévère carence en nutriments, les réveillent et déclenchent leur réplication.",
+      "heading_de": "Bakterielle Biofilme und schlummernde Phagen",
+      "body_de": "Bakteriengemeinschaften bilden häufig eine klebrige Schutzschicht, die als Biofilm bezeichnet wird und wie eine schleimige Nachbarschaft aus mikroskopischen Behausungen funktioniert {source}. In diesen Strukturen beherbergen zahlreiche Arten ruhende virale DNA-Fragmente, sogenannte Phagen. Diese genetischen Elemente bleiben vollkommen inaktiv, bis bestimmte Umweltbelastungen wie extremer Nährstoffmangel sie aufwecken und ihre Replikation in Gang setzen.",
+      "heading_es": "Biopelículas bacterianas y fagos latentes",
+      "body_es": "Las comunidades bacterianas suelen crear una capa protectora y pegajosa conocida como biopelícula, cuyo funcionamiento recuerda al de un vecindario viscoso de hogares microscópicos {source}. Dentro de estas estructuras, numerosas especies albergan fragmentos latentes de ADN viral denominados fagos. Estos elementos genéticos permanecen totalmente inactivos hasta que presiones ambientales específicas, como una grave privación de nutrientes, provocan que despierten y comiencen a multiplicarse."
     },
     {
       "heading_en": "Post-Mortem Replication in Starved Microbes",
       "heading_vi": "Sự nhân bản sau khi chết ở vi khuẩn đói",
       "body_en": "When researchers starved two distinct bacterial strains, the extreme hunger activated their dormant phage DNA. This process rapidly kickstarted replication and forced the bacterial cells to rupture. Remarkably, their internal cellular material spilled directly into the surrounding biofilm matrix and astonishingly continued to churn out fresh genetic material long after the original cells had perished.",
-      "body_vi": "Khi các nhà nghiên cứu làm cho hai chủng vi khuẩn khác nhau chết đói, tình trạng thiếu ăn cực độ đã kích hoạt DNA thể thực khuẩn đang ngủ đông của chúng. Quá trình này nhanh chóng thúc đẩy việc nhân bản và buộc các tế bào vi khuẩn phải vỡ ra. Điều đáng chú ý là vật chất tế bào bên trong của chúng đã tràn trực tiếp vào ma trận màng sinh học xung quanh và tiếp tục sản xuất ra vật liệu di truyền mới từ lâu sau khi các tế bào ban đầu đã chết."
+      "body_vi": "Khi các nhà nghiên cứu làm cho hai chủng vi khuẩn khác nhau chết đói, tình trạng thiếu ăn cực độ đã kích hoạt DNA thể thực khuẩn đang ngủ đông của chúng. Quá trình này nhanh chóng thúc đẩy việc nhân bản và buộc các tế bào vi khuẩn phải vỡ ra. Điều đáng chú ý là vật chất tế bào bên trong của chúng đã tràn trực tiếp vào ma trận màng sinh học xung quanh và tiếp tục sản xuất ra vật liệu di truyền mới từ lâu sau khi các tế bào ban đầu đã chết.",
+      "heading_fr": "Réplication post-mortem chez des microbes affamés",
+      "body_fr": "Lorsque les chercheurs ont privé deux souches bactériennes distinctes de nutriments, ce jeûne extrême a activé l’ADN dormant de leurs phages. Ce processus a rapidement enclenché la réplication et provoqué la rupture des cellules bactériennes. Fait remarquable, leur matériel cellulaire interne s’est déversé directement dans la matrice du biofilm environnant et a continué, de manière stupéfiante, à fabriquer du matériel génétique bien après la mort des cellules d’origine.",
+      "heading_de": "Postmortale Replikation bei ausgehungerten Mikroben",
+      "body_de": "Als Forschende zwei verschiedene Bakterienstämme aushungerten, aktivierte der extreme Nährstoffentzug die schlummernde Phagen-DNA. Dieser Prozess kurbelte die Replikation rasch an und brachte die Bakterienzellen zum Platzen. Bemerkenswerterweise ergoss sich ihr internes Zellmaterial direkt in die umgebende Biofilm-Matrix und produzierte erstaunlicherweise noch lange nach dem Absterben der ursprünglichen Zellen unentwegt neues Erbmaterial.",
+      "heading_es": "Replicación posmórtem en microbios sometidos a inanición",
+      "body_es": "Cuando los investigadores privaron de alimento a dos cepas bacterianas distintas, el hambre extrema activó su ADN fágico latente. Este proceso desencadenó rápidamente la replicación y forzó la ruptura de las células bacterianas. Sorprendentemente, su material celular interno se vertió de forma directa en la matriz circundante de la biopelícula y, de manera asombrosa, continuó generando material genético nuevo mucho después de que las células originales hubieran perecido."
     },
     {
       "heading_en": "Harnessing Zombie Microbes for Cleanup",
       "heading_vi": "Khai thác vi sinh vật thây ma để làm sạch",
       "body_en": "Scientists believe they can potentially hijack this bizarre biological pathway for practical environmental applications. By manipulating the microbes, the team successfully coaxed the dying cells into folding DNA into specialized structures that behave like enzymes. These engineered configurations can bind with other molecules and catalyze chemical reactions, suggesting future urban wastewater treatment facilities might rely on these microscopic zombies.",
-      "body_vi": "Các nhà khoa học tin rằng họ có thể khai thác con đường sinh học kỳ lạ này cho các ứng dụng thực tế về môi trường. Bằng cách thao túng vi sinh vật, nhóm nghiên cứu đã thành công trong việc thuyết phục các tế bào sắp chết gấp DNA thành các cấu trúc chuyên biệt hoạt động giống như các enzyme (*enzyme*). Những cấu hình được thiết kế này có thể liên kết với các phân tử khác và xúc tác các phản ứng hóa học, cho thấy các cơ sở xử lý nước thải đô thị trong tương lai có thể dựa vào những thây ma vi mô này."
+      "body_vi": "Các nhà khoa học tin rằng họ có thể khai thác con đường sinh học kỳ lạ này cho các ứng dụng thực tế về môi trường. Bằng cách thao túng vi sinh vật, nhóm nghiên cứu đã thành công trong việc thuyết phục các tế bào sắp chết gấp DNA thành các cấu trúc chuyên biệt hoạt động giống như các enzyme (*enzyme*). Những cấu hình được thiết kế này có thể liên kết với các phân tử khác và xúc tác các phản ứng hóa học, cho thấy các cơ sở xử lý nước thải đô thị trong tương lai có thể dựa vào những thây ma vi mô này.",
+      "heading_fr": "Exploiter des microbes zombies pour la dépollution",
+      "body_fr": "Les scientifiques estiment pouvoir détourner cette singulière voie biologique au profit d’applications environnementales concrètes. En manipulant ces microbes, l’équipe est parvenue à amener les cellules mourantes à replier l’ADN en structures spécialisées se comportant comme des enzymes. Ces configurations synthétiques peuvent se lier à d’autres molécules et catalyser des réactions chimiques, laissant penser que de futures stations d’épuration urbaines pourraient s’appuyer sur ces zombies microscopiques.",
+      "heading_de": "Zombie-Mikroben für die Reinigung nutzen",
+      "body_de": "Forschende gehen davon aus, dass sich dieser bizarre biologische Pfad für praktische Umweltanwendungen zweckentfremden lässt. Durch die gezielte Manipulation der Mikroben brachte das Team die absterbenden Zellen erfolgreich dazu, DNA zu spezialisierten Strukturen zu falten, die sich wie Enzyme verhalten. Diese künstlich herbeigeführten Konfigurationen können sich an andere Moleküle binden und chemische Reaktionen katalysieren – was nahelegt, dass städtische Kläranlagen künftig auf solche mikroskopischen Zombies setzen könnten.",
+      "heading_es": "Aprovechamiento de microbios zombi para la depuración",
+      "body_es": "La comunidad científica cree que podría aprovechar esta insólita vía biológica para aplicaciones medioambientales prácticas. Al manipular los microbios, el equipo logró inducir a las células moribundas a plegar ADN en estructuras especializadas que actúan como enzimas. Estas configuraciones diseñadas pueden unirse a otras moléculas y catalizar reacciones químicas, lo que sugiere que las futuras plantas de tratamiento de aguas residuales urbanas podrían valerse de estos zombis microscópicos."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/681/1080/1920",
+    "url": "https://images.unsplash.com/photo-1422640805998-18a4dd89bec2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAyfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Axel  Antas-Bergkvist",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+    "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE",
+    "wide": "https://images.unsplash.com/photo-1422640805998-18a4dd89bec2?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAyfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@aabergkvist?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -67,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Think of these bacteria as tiny automated factories that keep running on emergency generator power even after the main building collapses. [p:Could future municipal water filtration systems rely entirely on engineered dead microbes?]",
-    "vi": "Hãy coi những vi khuẩn này giống như các nhà máy tự động nhỏ tiếp tục hoạt động bằng nguồn điện máy phát khẩn cấp ngay cả sau khi tòa nhà chính sụp đổ. [p:Liệu hệ thống lọc nước đô thị trong tương lai có thể phụ thuộc hoàn toàn vào các vi sinh vật đã chết được thiết kế nhân tạo không?]"
+    "vi": "Hãy coi những vi khuẩn này giống như các nhà máy tự động nhỏ tiếp tục hoạt động bằng nguồn điện máy phát khẩn cấp ngay cả sau khi tòa nhà chính sụp đổ. [p:Liệu hệ thống lọc nước đô thị trong tương lai có thể phụ thuộc hoàn toàn vào các vi sinh vật đã chết được thiết kế nhân tạo không?]",
+    "fr": "Voyez ces bactéries comme de minuscules usines automatisées qui continuent de tourner grâce à un groupe électrogène de secours, même après l’effondrement du bâtiment principal. [p:Les futurs systèmes municipaux de filtration de l’eau pourraient-ils reposer entièrement sur des microbes morts modifiés ?]",
+    "de": "Man kann sich diese Bakterien wie winzige automatisierte Fabriken vorstellen, die selbst nach dem Einsturz des Hauptgebäudes mit Notstrom weiterlaufen. [p:Könnten künftige städtische Wasserfiltrationssysteme vollständig auf manipulierten abgestorbenen Mikroben basieren?]",
+    "es": "Piense en estas bacterias como diminutas fábricas automatizadas que continúan funcionando con la energía de generadores de emergencia incluso después de que el edificio principal se derrumbe. [p:¿Podrían los futuros sistemas municipales de filtración de agua depender por completo de microbios muertos modificados?]"
   },
   "applySteps": {
     "en": [
@@ -79,6 +108,21 @@
       "Đọc nghiên cứu gốc trên tạp chí Angewandte Chemie để hiểu rõ các chủng vi khuẩn cụ thể liên quan.",
       "Tìm hiểu cách màng sinh học bảo vệ và hỗ trợ các tập đoàn vi khuẩn trong môi trường tự nhiên.",
       "Khám phá các công nghệ xử lý nước thải sinh học hiện đại được sử dụng bởi các nhà khoa học môi trường."
+    ],
+    "fr": [
+      "Consulter l’étude originale parue dans Angewandte Chemie pour connaître les souches bactériennes exactes étudiées.",
+      "Se renseigner sur la manière dont les biofilms protègent et soutiennent les colonies bactériennes dans les milieux naturels.",
+      "Découvrir les technologies modernes de traitement biologique des eaux usées employées par les spécialistes de l’environnement."
+    ],
+    "de": [
+      "Die Originalstudie in Angewandte Chemie lesen, um die genauen beteiligten Bakterienstämme nachzuvollziehen.",
+      "Recherchieren, wie Biofilme Bakterienkolonien in natürlichen Umgebungen schützen und unterstützen.",
+      "Moderne biologische Abwasserreinigungstechnologien erkunden, die in der Umweltwissenschaft eingesetzt werden."
+    ],
+    "es": [
+      "Lea el estudio original de Angewandte Chemie para conocer las cepas bacterianas exactas implicadas.",
+      "Investigue cómo las biopelículas protegen y sustentan las colonias bacterianas en entornos naturales.",
+      "Explore las tecnologías biológicas modernas para el tratamiento de aguas residuales utilizadas por los científicos ambientales."
     ]
   },
   "coverCandidates": [
@@ -115,9 +159,76 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "microbiology": "The scientific study of microscopic organisms such as bacteria and viruses.",
+      "heavy metals": "Toxic metallic elements found in wastewater that require removal during purification.",
+      "biofilm": "A sticky protective layer produced by bacterial communities where microbes live together.",
+      "phages": "Viruses that infect bacteria, capable of remaining dormant inside their host.",
+      "dormant viral dna": "Inactive viral genetic instructions inside a bacterium that can awaken and replicate.",
+      "replication": "The biological process where genetic material creates copies of itself.",
+      "bacterial strains": "Specific genetic subtypes or variants within a species of bacteria.",
+      "biofilm matrix": "The protective extracellular substance and physical framework surrounding bacterial colonies.",
+      "biological pathway": "A series of molecular actions inside cells that lead to a specific biological change.",
+      "enzymes": "Proteins or biological molecules that speed up and drive specific chemical reactions.",
+      "catalyze": "To accelerate or trigger a chemical reaction without being used up."
+    },
+    "vi": {
+      "màng sinh học": "Lớp màng bảo vệ dính do vi khuẩn tạo ra để giữ vật chất tế bào.",
+      "thể thực khuẩn": "Virus ngủ đông bên trong vi khuẩn, thức dậy và nhân bản khi vi khuẩn chết đói.",
+      "dna": "Vật liệu di truyền chứa thông tin hướng dẫn hoạt động và phát triển của sinh vật.",
+      "nhân bản": "Quá trình sao chép tạo ra thêm nhiều bản sao vật liệu di truyền hoặc virus.",
+      "ma trận": "Mạng lưới liên kết nâng đỡ cấu trúc bên trong màng sinh học của vi khuẩn.",
+      "enzyme": "Cấu trúc sinh học đóng vai trò xúc tác các phản ứng hóa học cụ thể.",
+      "xúc tác": "Thúc đẩy hoặc làm tăng tốc độ diễn ra của một phản ứng hóa học.",
+      "kim loại nặng": "Các kim loại có độc tính cao trong nước thải cần được lọc sạch.",
+      "chủng vi khuẩn": "Quần thể vi khuẩn cụ thể cùng loài có các đặc tính di truyền đồng nhất.",
+      "vi sinh học": "Ngành khoa học chuyên nghiên cứu các vi sinh vật có kích thước hiển vi."
+    },
+    "fr": {
+      "biofilm": "Couche protectrice visqueuse sécrétée par des bactéries pour former une communauté organisée.",
+      "phages": "Virus ciblant spécifiquement les bactéries pour s'y multiplier.",
+      "adn viral": "Matériel génétique issu d'un virus, ici intégré de façon dormante dans une bactérie.",
+      "métaux lourds": "Éléments métalliques toxiques et polluants susceptibles de contaminer les eaux résiduaires.",
+      "eaux usées": "Eaux résiduaires polluées issues des activités humaines nécessitant un assainissement.",
+      "souches bactériennes": "Variantes génétiques précises d'une espèce de micro-organisme.",
+      "enzymes": "Molécules biologiques capables de catalyser et d'accélérer des réactions chimiques indispensables.",
+      "catalyser": "Accélérer ou faciliter une réaction chimique sans que le composé soit consommé.",
+      "réplication": "Processus de duplication à l'identique du matériel génétique.",
+      "angewandte chemie": "Revue scientifique internationale de référence spécialisée dans le domaine de la chimie."
+    },
+    "de": {
+      "biofilm": "Klebrige Schleimschicht, die von Mikroorganismen gebildet wird und ihnen als geschützter Lebensraum dient.",
+      "phagen": "Viren, die spezifisch Bakterien befallen und deren zelluläre Maschinerie zur eigenen Vermehrung nutzen.",
+      "replikation": "Der biologische Prozess der Vervielfältigung von genetischem Material wie DNA oder RNA.",
+      "biofilm-matrix": "Das klebrige äußere Gefüge aus Biopolymeren, das Mikroorganismen in einem Biofilm zusammenhält.",
+      "bakterienstämme": "Genetisch voneinander unterscheidbare Varianten oder Untergruppen innerhalb derselben Bakterienart.",
+      "enzyme": "Biologische Makromoleküle, die biochemische Reaktionen im Organismus beschleunigen und steuern.",
+      "katalysieren": "Eine chemische Reaktion durch Herabsetzen der benötigten Aktivierungsenergie einleiten oder beschleunigen.",
+      "schwermetalle": "Dichte metallische Elemente wie Blei oder Cadmium, die in Gewässern giftig und umweltschädlich sind.",
+      "angewandte chemie": "Eine renommierte wissenschaftliche Fachzeitschrift, in der bedeutende Forschungsergebnisse veröffentlicht werden.",
+      "kläranlagen": "Technische Anlagen zur Reinigung von verschmutztem Abwasser vor der Rückleitung in die Natur."
+    },
+    "es": {
+      "biopelícula": "Capa protectora mucosa formada por colonias bacterianas que se adhieren a diversas superficies.",
+      "adn viral": "Material genético propio de un virus capaz de multiplicarse en el interior celular.",
+      "fagos": "Virus que infectan exclusivamente a bacterias y pueden multiplicarse dentro de ellas.",
+      "inanición": "Privación prolongada o extrema de los nutrientes necesarios para el metabolismo celular.",
+      "cepas bacterianas": "Poblaciones o linajes específicos de bacterias que pertenecen a una misma especie.",
+      "replicación": "Mecanismo biológico mediante el cual una molécula de ADN genera copias idénticas.",
+      "matriz": "Estructura extracelular que envuelve, protege y proporciona soporte a una colonia bacteriana.",
+      "enzimas": "Moléculas biológicas que aceleran y facilitan reacciones químicas específicas en los organismos.",
+      "catalizar": "Aumentar notablemente la velocidad de una reacción química sin consumirse en ella.",
+      "aguas residuales": "Aguas contaminadas por desechos domésticos o industriales que requieren saneamiento previo a su vertido."
+    }
   }
 }

@@ -11,53 +11,98 @@
   ],
   "title": {
     "en": "Network effects: why the big network resists compatibility",
-    "vi": "Hiệu ứng mạng: vì sao mạng lớn chống lại khả năng tương thích"
+    "vi": "Hiệu ứng mạng: vì sao mạng lớn chống lại khả năng tương thích",
+    "fr": "Effets de réseau : pourquoi le grand réseau résiste à la compatibilité",
+    "de": "Netzwerkeffekte: Warum sich das große Netzwerk gegen Kompatibilität wehrt",
+    "es": "Efectos de red: por qué la gran red se resiste a la compatibilidad"
   },
   "hook": {
     "en": "For some products, the value to each user rises with the number of other users. In a 1985 paper, Michael Katz and Carl Shapiro showed that firms with large networks often oppose making their systems compatible with rivals, even when compatibility would raise total welfare. Smaller firms, in turn, may push for compatibility even when it costs society more than it gains.",
-    "vi": "Với một số sản phẩm, giá trị đối với mỗi người dùng tăng theo số người dùng khác. Trong một bài báo năm 1985, Michael Katz và Carl Shapiro chỉ ra rằng các hãng có mạng lớn thường phản đối việc làm hệ thống của họ tương thích với đối thủ, ngay cả khi tương thích sẽ làm tăng phúc lợi tổng thể. Ngược lại, các hãng nhỏ có thể đòi tương thích dù xét về tổng thể, nó tốn kém cho xã hội hơn lợi ích mang lại."
+    "vi": "Với một số sản phẩm, giá trị đối với mỗi người dùng tăng theo số người dùng khác. Trong một bài báo năm 1985, Michael Katz và Carl Shapiro chỉ ra rằng các hãng có mạng lớn thường phản đối việc làm hệ thống của họ tương thích với đối thủ, ngay cả khi tương thích sẽ làm tăng phúc lợi tổng thể. Ngược lại, các hãng nhỏ có thể đòi tương thích dù xét về tổng thể, nó tốn kém cho xã hội hơn lợi ích mang lại.",
+    "fr": "Pour certains produits, la valeur perçue par chaque utilisateur augmente avec le nombre d'autres utilisateurs. Dans un article de 1985, Michael Katz et Carl Shapiro ont montré que les entreprises disposant de grands réseaux s'opposent souvent à rendre leurs systèmes compatibles avec ceux de leurs rivaux, même lorsque la compatibilité accroîtrait le bien-être collectif. À l'inverse, les plus petites entreprises peuvent réclamer la compatibilité, même lorsqu'elle coûte à la société plus qu'elle ne lui rapporte.",
+    "de": "Bei manchen Produkten steigt der Wert für jeden einzelnen Nutzer mit der Zahl der anderen Nutzer. In einem Aufsatz von 1985 zeigten Michael Katz und Carl Shapiro, dass Unternehmen mit großen Netzwerken sich oft dagegen wehren, ihre Systeme mit denen von Konkurrenten kompatibel zu machen – selbst wenn Kompatibilität den Gesamtwohlstand steigern würde. Kleinere Firmen wiederum drängen womöglich selbst dann auf Kompatibilität, wenn sie die Gesellschaft mehr kostet, als sie ihr einbringt.",
+    "es": "En ciertos productos, el valor para cada usuario aumenta con la cantidad de otros usuarios. En un artículo de 1985, Michael Katz y Carl Shapiro demostraron que las empresas con grandes redes a menudo se oponen a hacer sus sistemas compatibles con los de sus rivales, incluso cuando la compatibilidad incrementaría el bienestar general. Las empresas más pequeñas, en cambio, pueden presionar a favor de la compatibilidad aun cuando le cueste a la sociedad más de lo que aporta."
   },
   "sections": [
     {
       "heading_en": "Value that depends on other users",
       "heading_vi": "Giá trị phụ thuộc vào người dùng khác",
       "body_en": "Katz and Shapiro describe products for which the utility a user derives from consumption increases with the number of other agents consuming the good {katz-shapiro-1985}. Their examples include car service networks, where foreign manufacturers' sales were initially held back by thinner networks of experienced service providers {katz-shapiro-1985}. The scope of the network varies. For a car, it may be one firm's sales. For computers that share an operating system, it can be a coalition of firms {katz-shapiro-1985}.",
-      "body_vi": "Katz và Shapiro mô tả các sản phẩm mà [p:lợi ích] người dùng nhận được tăng theo số người khác cùng tiêu dùng hàng hóa đó {katz-shapiro-1985}. Ví dụ của họ gồm mạng dịch vụ sửa xe, nơi doanh số của các hãng ô tô nước ngoài ban đầu bị kìm lại vì mạng lưới thợ có kinh nghiệm còn mỏng {katz-shapiro-1985}. Phạm vi của mạng khác nhau. Với ô tô, nó có thể chỉ là doanh số của một hãng. Với máy tính cùng dùng một hệ điều hành, nó có thể là một liên minh các hãng {katz-shapiro-1985}."
+      "body_vi": "Katz và Shapiro mô tả các sản phẩm mà [p:lợi ích] người dùng nhận được tăng theo số người khác cùng tiêu dùng hàng hóa đó {katz-shapiro-1985}. Ví dụ của họ gồm mạng dịch vụ sửa xe, nơi doanh số của các hãng ô tô nước ngoài ban đầu bị kìm lại vì mạng lưới thợ có kinh nghiệm còn mỏng {katz-shapiro-1985}. Phạm vi của mạng khác nhau. Với ô tô, nó có thể chỉ là doanh số của một hãng. Với máy tính cùng dùng một hệ điều hành, nó có thể là một liên minh các hãng {katz-shapiro-1985}.",
+      "heading_fr": "Une valeur qui dépend des autres utilisateurs",
+      "body_fr": "Katz et Shapiro décrivent des produits pour lesquels l'utilité qu'un usager retire de la consommation augmente avec le nombre d'autres agents qui consomment ce bien {katz-shapiro-1985}. Leurs exemples incluent les réseaux de réparation automobile, où les ventes des constructeurs étrangers ont d'abord été freinées par des réseaux plus restreints de réparateurs qualifiés {katz-shapiro-1985}. Le périmètre du réseau varie. Pour une voiture, il peut correspondre aux ventes d'une seule entreprise. Pour des ordinateurs partageant un même système d'exploitation, il peut s'agir d'une coalition d'entreprises {katz-shapiro-1985}.",
+      "heading_de": "Wert, der von anderen Nutzern abhängt",
+      "body_de": "Katz und Shapiro beschreiben Produkte, bei denen der Nutzen, den ein Anwender aus dem Konsum zieht, mit der Zahl anderer Akteure steigt, die das Gut ebenfalls nutzen {katz-shapiro-1985}. Zu ihren Beispielen zählen Werkstattnetze für Automobile, bei denen die Verkäufe ausländischer Hersteller anfangs durch dünnere Netze erfahrener Dienstleister gebremst wurden {katz-shapiro-1985}. Die Reichweite des Netzwerks variiert. Bei einem Pkw kann sie den Verkäufen eines einzelnen Unternehmens entsprechen. Bei Computern mit demselben Betriebssystem kann es sich um eine Koalition von Unternehmen handeln {katz-shapiro-1985}.",
+      "heading_es": "Valor que depende de otros usuarios",
+      "body_es": "Katz y Shapiro describen productos en los que la utilidad que un usuario obtiene del consumo aumenta con el número de otros agentes que consumen el bien {katz-shapiro-1985}. Entre sus ejemplos figuran las redes de servicio para automóviles, donde las ventas de fabricantes extranjeros se vieron limitadas al principio por redes más reducidas de proveedores de servicio experimentados {katz-shapiro-1985}. El alcance de la red varía. En el caso de un automóvil, puede tratarse de las ventas de una sola empresa. En el de computadoras que comparten un sistema operativo, puede ser una coalición de empresas {katz-shapiro-1985}."
     },
     {
       "heading_en": "Expectations decide the market",
       "heading_vi": "Kỳ vọng quyết định thị trường",
       "body_en": "Consumers must decide what to buy before the final size of each network is known, so they form expectations about it {katz-shapiro-1985}. If the expectations are fulfilled, the expected network size equals the actual one. The paper shows that network effects give rise to demand-side economies of scale, and that these depend on consumer expectations. Several sets of fulfilled expectations can be consistent with the market, so a market with network effects can have more than one outcome {katz-shapiro-1985}.",
-      "body_vi": "Người tiêu dùng phải quyết định mua trước khi biết quy mô cuối cùng của mỗi mạng, nên họ hình thành kỳ vọng về nó {katz-shapiro-1985}. Nếu kỳ vọng được ứng nghiệm, quy mô mạng kỳ vọng bằng quy mô thực tế. Bài báo cho thấy hiệu ứng mạng tạo ra [p:lợi thế quy mô phía cầu] (*demand-side economies of scale*), và lợi thế này phụ thuộc vào kỳ vọng của người tiêu dùng. Nhiều bộ kỳ vọng được ứng nghiệm có thể cùng tồn tại trên thị trường, nên một thị trường có hiệu ứng mạng có thể có hơn một kết cục {katz-shapiro-1985}."
+      "body_vi": "Người tiêu dùng phải quyết định mua trước khi biết quy mô cuối cùng của mỗi mạng, nên họ hình thành kỳ vọng về nó {katz-shapiro-1985}. Nếu kỳ vọng được ứng nghiệm, quy mô mạng kỳ vọng bằng quy mô thực tế. Bài báo cho thấy hiệu ứng mạng tạo ra [p:lợi thế quy mô phía cầu] (*demand-side economies of scale*), và lợi thế này phụ thuộc vào kỳ vọng của người tiêu dùng. Nhiều bộ kỳ vọng được ứng nghiệm có thể cùng tồn tại trên thị trường, nên một thị trường có hiệu ứng mạng có thể có hơn một kết cục {katz-shapiro-1985}.",
+      "heading_fr": "Les anticipations déterminent le marché",
+      "body_fr": "Les consommateurs doivent décider de leur achat avant de connaître la taille définitive de chaque réseau ; ils forment donc des anticipations à ce sujet {katz-shapiro-1985}. Si ces anticipations se réalisent, la taille attendue du réseau équivaut à sa taille réelle. L'article démontre que les effets de réseau engendrent des économies d'échelle du côté de la demande, et que celles-ci dépendent des prévisions des consommateurs. Plusieurs ensembles d'anticipations auto-réalisatrices peuvent être compatibles avec l'état du marché, si bien qu'un marché soumis à des effets de réseau peut connaître plus d'une issue {katz-shapiro-1985}.",
+      "heading_de": "Erwartungen entscheiden über den Markt",
+      "body_de": "Verbraucher müssen Kaufentscheidungen treffen, bevor die endgültige Größe der jeweiligen Netzwerke feststeht; daher bilden sie entsprechende Erwartungen aus {katz-shapiro-1985}. Erfüllen sich diese Erwartungen, entspricht die erwartete Netzwerkgröße der tatsächlichen. Die Untersuchung zeigt, dass Netzwerkeffekte nachfrageseitige Skaleneffekte hervorrufen und diese von den Verbrauchererwartungen abhängen. Da mehrere Konstellationen erfüllter Erwartungen mit dem Markt vereinbar sein können, kann ein Markt mit Netzwerkeffekten mehr als ein Gleichgewicht aufweisen {katz-shapiro-1985}.",
+      "heading_es": "Las expectativas deciden el mercado",
+      "body_es": "Los consumidores deben decidir qué comprar antes de conocer el tamaño definitivo de cada red, por lo que generan expectativas al respecto {katz-shapiro-1985}. Si las expectativas se cumplen, el tamaño previsto de la red coincide con el real. El artículo demuestra que los efectos de red generan economías de escala por el lado de la demanda, y que estas dependen de las expectativas de los consumidores. Diversos conjuntos de expectativas cumplidas pueden ser compatibles con el mercado, de modo que un mercado con efectos de red puede tener más de un resultado {katz-shapiro-1985}."
     },
     {
       "heading_en": "Compatibility sets the network's edge",
       "heading_vi": "Tương thích quyết định biên của mạng",
       "body_en": "The key question is which products count as one network. If two firms' systems are interlinked, or compatible, the aggregate number of subscribers forms the relevant network. If they are incompatible, as with Telex and cable in the paper's example, each firm's own subscriber base is the network {katz-shapiro-1985}. Compatibility is therefore a decision that firms can make, and it changes the size of the network each customer joins.",
-      "body_vi": "Câu hỏi then chốt là những sản phẩm nào được tính là một mạng. Nếu hệ thống của hai hãng liên kết được, hay tương thích, thì tổng số thuê bao tạo thành mạng liên quan. Nếu không tương thích, như Telex và cáp (*cable*) trong ví dụ của bài báo, thì mạng của mỗi hãng chỉ là nhóm thuê bao riêng của hãng đó {katz-shapiro-1985}. Vì vậy, tương thích là một quyết định mà các hãng có thể đưa ra, và nó thay đổi quy mô mạng mà mỗi khách hàng tham gia."
+      "body_vi": "Câu hỏi then chốt là những sản phẩm nào được tính là một mạng. Nếu hệ thống của hai hãng liên kết được, hay tương thích, thì tổng số thuê bao tạo thành mạng liên quan. Nếu không tương thích, như Telex và cáp (*cable*) trong ví dụ của bài báo, thì mạng của mỗi hãng chỉ là nhóm thuê bao riêng của hãng đó {katz-shapiro-1985}. Vì vậy, tương thích là một quyết định mà các hãng có thể đưa ra, và nó thay đổi quy mô mạng mà mỗi khách hàng tham gia.",
+      "heading_fr": "La compatibilité délimite le réseau",
+      "body_fr": "La question centrale est de savoir quels produits forment un seul et même réseau. Si les systèmes de deux entreprises sont interconnectés, ou compatibles, le nombre cumulé d'abonnés constitue le réseau pertinent. S'ils sont incompatibles, comme le Telex et le câble dans l'exemple de l'article, la base d'abonnés propre à chaque entreprise constitue le réseau {katz-shapiro-1985}. La compatibilité relève donc d'un choix stratégique des entreprises, et elle modifie l'ampleur du réseau auquel chaque client s'associe.",
+      "heading_de": "Kompatibilität bestimmt die Grenzen des Netzwerks",
+      "body_de": "Die entscheidende Frage lautet, welche Produkte als ein gemeinsames Netzwerk zählen. Sind die Systeme zweier Unternehmen miteinander verknüpft oder kompatibel, bildet die Gesamtzahl der Teilnehmer das relevante Netzwerk. Sind sie inkompatibel, wie im Beispiel des Aufsatzes von Telex und Überseekabeln, bildet jeweils der eigene Kundenstamm das Netzwerk {katz-shapiro-1985}. Kompatibilität ist somit eine unternehmerische Entscheidung, welche die Größe des Netzwerks verändert, dem ein Kunde beitritt.",
+      "heading_es": "La compatibilidad define el límite de la red",
+      "body_es": "La cuestión clave reside en qué productos conforman una misma red. Si los sistemas de dos empresas están interconectados, o son compatibles, el número agregado de suscriptores constituye la red relevante. Si son incompatibles, como ocurría con el télex y el cable en el ejemplo del artículo, la base de suscriptores de cada empresa constituye la red {katz-shapiro-1985}. Por tanto, la compatibilidad es una decisión que las empresas pueden adoptar, y modifica el tamaño de la red a la que se incorpora cada cliente."
     },
     {
       "heading_en": "Who gains from connecting",
       "heading_vi": "Ai được lợi khi kết nối",
       "body_en": "The paper's central finding concerns incentives. Firms with good reputations or large existing networks tend to oppose compatibility, even when welfare increases because of it. Firms with small networks or weak reputations tend to favour compatibility, even in some cases where its social costs exceed its benefits {katz-shapiro-1985}. Overall, the firms' joint incentive to produce compatible goods is lower than the social incentive {katz-shapiro-1985}.",
-      "body_vi": "Phát hiện trung tâm của bài báo nói về động cơ. Các hãng có uy tín tốt hoặc mạng hiện có lớn thường phản đối tương thích, ngay cả khi phúc lợi tăng nhờ điều đó. Các hãng có mạng nhỏ hoặc uy tín yếu thường ủng hộ tương thích, thậm chí trong một số trường hợp chi phí xã hội của nó lớn hơn lợi ích {katz-shapiro-1985}. Nhìn chung, động cơ chung của các hãng để sản xuất hàng hóa tương thích thấp hơn động cơ xã hội {katz-shapiro-1985}."
+      "body_vi": "Phát hiện trung tâm của bài báo nói về động cơ. Các hãng có uy tín tốt hoặc mạng hiện có lớn thường phản đối tương thích, ngay cả khi phúc lợi tăng nhờ điều đó. Các hãng có mạng nhỏ hoặc uy tín yếu thường ủng hộ tương thích, thậm chí trong một số trường hợp chi phí xã hội của nó lớn hơn lợi ích {katz-shapiro-1985}. Nhìn chung, động cơ chung của các hãng để sản xuất hàng hóa tương thích thấp hơn động cơ xã hội {katz-shapiro-1985}.",
+      "heading_fr": "Qui gagne à se connecter",
+      "body_fr": "La principale conclusion de l'article porte sur les incitations. Les entreprises jouissant d'une solide réputation ou disposant déjà d'un grand réseau ont tendance à s'opposer à la compatibilité, même lorsque le bien-être général en bénéficierait. À l'inverse, les entreprises dotées d'un réseau réduit ou d'une faible réputation tendent à privilégier la compatibilité, y compris dans certains cas où ses coûts sociaux surpassent ses gains collectifs {katz-shapiro-1985}. Dans l'ensemble, l'incitation conjointe des entreprises à concevoir des biens compatibles demeure inférieure à l'incitation sociale globale {katz-shapiro-1985}.",
+      "heading_de": "Wer von der Verknüpfung profitiert",
+      "body_de": "Das zentrale Ergebnis der Arbeit betrifft Anreize. Unternehmen mit gutem Ruf oder großen bestehenden Netzwerken neigen dazu, Kompatibilität abzulehnen, selbst wenn die gesellschaftliche Wohlfahrt dadurch steigen würde. Firmen mit kleinen Netzwerken oder schwächerem Ruf bevorzugen dagegen meist Kompatibilität – in manchen Fällen selbst dann, wenn ihre gesellschaftlichen Kosten den Nutzen übersteigen {katz-shapiro-1985}. Insgesamt ist der gemeinsame Anreiz der Unternehmen zur Herstellung kompatibler Güter geringer als der gesellschaftliche Anreiz {katz-shapiro-1985}.",
+      "heading_es": "¿Quién gana al conectarse?",
+      "body_es": "El hallazgo central del artículo atañe a los incentivos. Las empresas con buena reputación o con redes existentes de gran tamaño suelen oponerse a la compatibilidad, aun cuando el bienestar aumente gracias a ella. Las empresas con redes pequeñas o reputación débil tienden a favorecer la compatibilidad, incluso en ciertos casos en que los costos sociales superan sus beneficios {katz-shapiro-1985}. En conjunto, el incentivo conjunto de las empresas para fabricar bienes compatibles es menor que el incentivo social {katz-shapiro-1985}."
     },
     {
       "heading_en": "An example from computing",
       "heading_vi": "Một ví dụ từ máy tính",
       "body_en": "The paper contrasts two cases. Personal computers that share the CP/M operating system could run common programs across several brands, so the relevant network for a program spans the market {katz-shapiro-1985}. Quadraphonic audio discs were different: records made for one player type could not be played on another, so the network for a given brand covered only the brands that used the same technology {katz-shapiro-1985}. The difference between a common standard and a split market is exactly the compatibility choice the model studies.",
-      "body_vi": "Bài báo đối chiếu hai trường hợp. Máy tính cá nhân dùng chung hệ điều hành CP/M có thể chạy các chương trình chung trên nhiều thương hiệu, nên mạng liên quan của một chương trình trải rộng khắp thị trường {katz-shapiro-1985}. Đĩa âm thanh bốn kênh thì khác: đĩa làm cho loại máy này không chơi được trên loại máy khác, nên mạng của một thương hiệu chỉ gồm các thương hiệu dùng cùng công nghệ {katz-shapiro-1985}. Khác biệt giữa một chuẩn chung và một thị trường bị chia cắt chính là lựa chọn tương thích mà mô hình nghiên cứu."
+      "body_vi": "Bài báo đối chiếu hai trường hợp. Máy tính cá nhân dùng chung hệ điều hành CP/M có thể chạy các chương trình chung trên nhiều thương hiệu, nên mạng liên quan của một chương trình trải rộng khắp thị trường {katz-shapiro-1985}. Đĩa âm thanh bốn kênh thì khác: đĩa làm cho loại máy này không chơi được trên loại máy khác, nên mạng của một thương hiệu chỉ gồm các thương hiệu dùng cùng công nghệ {katz-shapiro-1985}. Khác biệt giữa một chuẩn chung và một thị trường bị chia cắt chính là lựa chọn tương thích mà mô hình nghiên cứu.",
+      "heading_fr": "Un exemple tiré de l'informatique",
+      "body_fr": "L'article met en contraste deux situations. Les micro-ordinateurs partageant le système d'exploitation CP/M pouvaient exécuter des programmes communs entre plusieurs marques ; le réseau pertinent pour un logiciel s'étendait donc à l'ensemble du marché {katz-shapiro-1985}. Le cas des disques audio quadriphoniques était tout autre : les disques enregistrés pour un type d'appareil ne pouvaient pas être lus sur un autre, si bien que le réseau d'une marque donnée ne regroupait que les fabricants recourant à la même technologie {katz-shapiro-1985}. La différence entre un standard commun et un marché fragmenté résume précisément le choix de compatibilité qu'analyse ce modèle.",
+      "heading_de": "Ein Beispiel aus der Computertechnik",
+      "body_de": "Die Autoren stellen zwei Fälle gegenüber. Personal Computer, die das Betriebssystem CP/M nutzten, konnten gemeinsame Programme über mehrere Marken hinweg ausführen; das relevante Netzwerk für ein Programm umspannte somit den gesamten Markt {katz-shapiro-1985}. Bei quadrofonischen Schallplatten verhielt es sich anders: Für einen bestimmten Abspieltyp gepresste Platten ließen sich auf einem anderen nicht abspielen, sodass das Netzwerk einer Marke nur diejenigen Hersteller umfasste, welche dieselbe Technologie verwendeten {katz-shapiro-1985}. Der Unterschied zwischen einem einheitlichen Standard und einem gespaltenen Markt beschreibt exakt jene Kompatibilitätsentscheidung, die das Modell untersucht.",
+      "heading_es": "Un ejemplo de la informática",
+      "body_es": "El artículo contrasta dos casos. Las computadoras personales que compartían el sistema operativo CP/M podían ejecutar programas comunes entre diversas marcas, por lo que la red relevante para un programa abarcaba el mercado {katz-shapiro-1985}. Los discos de audio cuadrafónicos eran distintos: las grabaciones hechas para un tipo de reproductor no podían reproducirse en otro, de modo que la red de una marca determinada solo abarcaba las marcas que empleaban la misma tecnología {katz-shapiro-1985}. La diferencia entre un estándar común y un mercado fragmentado es con exactitud la elección de compatibilidad que analiza el modelo."
     },
     {
       "heading_en": "What the model leaves out",
       "heading_vi": "Mô hình bỏ qua điều gì",
       "body_en": "The model is a partial equilibrium, with no income effects and consumers who buy at most one unit of one brand {katz-shapiro-1985}. It is static, so it does not show how network sizes grow over time. The authors note that the qualitative results hold if firms can commit to network sizes before consumers buy, which is a useful check on how much the timing assumption matters {katz-shapiro-1985}.",
-      "body_vi": "Mô hình là cân bằng từng phần, không có hiệu ứng thu nhập, và người tiêu dùng mua nhiều nhất một đơn vị của một thương hiệu {katz-shapiro-1985}. Nó là mô hình tĩnh, nên không cho thấy quy mô mạng tăng theo thời gian thế nào. Các tác giả ghi nhận rằng các kết quả định tính vẫn đúng nếu các hãng có thể cam kết quy mô mạng trước khi người tiêu dùng mua, một kiểm tra hữu ích về mức độ quan trọng của giả định thời điểm {katz-shapiro-1985}."
+      "body_vi": "Mô hình là cân bằng từng phần, không có hiệu ứng thu nhập, và người tiêu dùng mua nhiều nhất một đơn vị của một thương hiệu {katz-shapiro-1985}. Nó là mô hình tĩnh, nên không cho thấy quy mô mạng tăng theo thời gian thế nào. Các tác giả ghi nhận rằng các kết quả định tính vẫn đúng nếu các hãng có thể cam kết quy mô mạng trước khi người tiêu dùng mua, một kiểm tra hữu ích về mức độ quan trọng của giả định thời điểm {katz-shapiro-1985}.",
+      "heading_fr": "Ce que le modèle laisse de côté",
+      "body_fr": "Le modèle s'inscrit dans un équilibre partiel, sans effets de revenu et avec des consommateurs qui n'achètent au maximum qu'une seule unité d'une marque {katz-shapiro-1985}. Il est statique et n'illustre donc pas l'évolution de la taille des réseaux dans le temps. Les auteurs soulignent que les conclusions qualitatives restent valables si les entreprises peuvent s'engager sur la taille de leur réseau avant que les consommateurs n'achètent, ce qui offre une vérification précieuse de la portée de l'hypothèse chronologique {katz-shapiro-1985}.",
+      "heading_de": "Was das Modell ausblendet",
+      "body_de": "Das Modell ist ein partielles Gleichgewicht ohne Einkommenseffekte, bei dem Verbraucher höchstens eine Einheit einer Marke erwerben {katz-shapiro-1985}. Es ist statisch angelegt und zeigt daher nicht, wie Netzwerke im Zeitverlauf wachsen. Die Autoren halten fest, dass die qualitativen Ergebnisse auch dann Bestand haben, wenn sich Unternehmen vor den Kaufentscheidungen der Verbraucher auf Netzwerkgrößen festlegen können – eine wertvolle Überprüfung, wie stark die Annahme über die zeitliche Abfolge ins Gewicht fällt {katz-shapiro-1985}.",
+      "heading_es": "Lo que el modelo deja fuera",
+      "body_es": "El modelo es de equilibrio parcial, sin efectos ingreso y con consumidores que adquieren a lo sumo una unidad de una sola marca {katz-shapiro-1985}. Es estático, por lo que no muestra cómo crece el tamaño de las redes a lo largo del tiempo. Los autores señalan que los resultados cualitativos se mantienen si las empresas pueden comprometerse con ciertos tamaños de red antes de que los consumidores compren, lo cual constituye una comprobación útil de la relevancia del supuesto temporal {katz-shapiro-1985}."
     }
   ],
   "keyPoint": {
     "en": "A product can gain value as more people use it, and under those conditions the firm with the largest network may gain by staying incompatible, even when connecting everyone would make society better off. Ask who a standard helps before assuming it is neutral.",
-    "vi": "Một sản phẩm có thể tăng giá trị khi có nhiều người dùng hơn, và trong điều kiện đó, hãng có mạng lớn nhất có thể được lợi khi giữ tính không tương thích, ngay cả khi kết nối tất cả mọi người sẽ khiến xã hội tốt hơn. Trước khi cho rằng một chuẩn là trung lập, hãy hỏi nó có lợi cho ai."
+    "vi": "Một sản phẩm có thể tăng giá trị khi có nhiều người dùng hơn, và trong điều kiện đó, hãng có mạng lớn nhất có thể được lợi khi giữ tính không tương thích, ngay cả khi kết nối tất cả mọi người sẽ khiến xã hội tốt hơn. Trước khi cho rằng một chuẩn là trung lập, hãy hỏi nó có lợi cho ai.",
+    "fr": "Un produit peut gagner en valeur à mesure que le nombre d'utilisateurs augmente, et dans ces conditions, l'entreprise possédant le plus vaste réseau a souvent intérêt à rester incompatible, même si l'interconnexion globale profiterait à l'ensemble de la société. Demandez-vous à qui profite une norme avant de présumer de sa neutralité.",
+    "de": "Ein Produkt kann an Wert gewinnen, je mehr Menschen es nutzen. Unter diesen Bedingungen profitiert das Unternehmen mit dem größten Netzwerk oft davon, inkompatibel zu bleiben – selbst wenn eine universelle Vernetzung die Gesellschaft besserstellen würde. Frage dich, wem ein Standard nützt, bevor du davon ausgehst, dass er neutral ist.",
+    "es": "Un producto puede ganar valor a medida que más personas lo utilizan y, bajo tales condiciones, la empresa con la red más grande puede beneficiarse al mantenerse incompatible, aun cuando conectar a todos beneficiaría a la sociedad. Pregúntese a quién favorece un estándar antes de asumir que es neutral."
   },
   "applySteps": {
     "en": [
@@ -69,6 +114,21 @@
       "Nêu một sản phẩm bạn dùng mà giá trị phụ thuộc vào người khác cũng dùng nó, và xác định mạng mà nó thuộc về.",
       "Kiểm tra xem sản phẩm đó có làm việc được với phiên bản của đối thủ không, và ghi lại câu trả lời gợi ý điều gì về động cơ của chủ sở hữu.",
       "Trước khi chọn giữa hai nền tảng, đếm xem bạn cần liên lạc với bao nhiêu người và họ đang dùng nền tảng nào."
+    ],
+    "fr": [
+      "Nommez un produit que vous utilisez dont l'utilité dépend de son adoption par d'autres personnes, et identifiez le réseau auquel il appartient.",
+      "Vérifiez si ce produit fonctionne avec la version d'un concurrent, et observez ce que la réponse révèle sur les motivations de son propriétaire.",
+      "Avant de choisir entre deux plateformes, évaluez le nombre de personnes que vous devez joindre et la plateforme qu'elles emploient déjà."
+    ],
+    "de": [
+      "Nenne ein Produkt, das du nutzt und dessen Nutzen davon abhängt, dass andere es ebenfalls verwenden, und bestimme das Netzwerk, zu dem es gehört.",
+      "Prüfe, ob dieses Produkt mit der Version eines Konkurrenten kompatibel ist, und halte fest, was das Ergebnis über die Anreize des Anbieters aussagt.",
+      "Zähle vor der Entscheidung zwischen zwei Plattformen, wie viele Personen du erreichen musst und welche Plattform diese bereits nutzen."
+    ],
+    "es": [
+      "Identifique un producto que utilice cuya utilidad dependa de que otras personas también lo usen y reconozca la red a la que pertenece.",
+      "Compruebe si ese producto funciona con la versión de un competidor y observe lo que dicha respuesta sugiere sobre los incentivos del propietario.",
+      "Antes de elegir entre dos plataformas, evalúe a cuántas personas necesita llegar y qué plataforma utilizan ya."
     ]
   },
   "references": [
@@ -93,12 +153,92 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/network-effects-why-large-networks-resist-compatibility.webp",
+    "url": "https://images.unsplash.com/photo-1453170804045-277782641dca?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTE3fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "William Hook",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/93Ep1dhTd2s"
+    "sourceUrl": "https://unsplash.com/photos/93Ep1dhTd2s",
+    "wide": "https://images.unsplash.com/photo-1453170804045-277782641dca?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NTE3fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@williamtm?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQAwCdASoQABwAPu1kqU4ppaOiMAgBMB2JZVefTKATi47OgSdBiQAA/uj3ItPvk8aDdYY+WYLDHiikjW98i8JFQHDq6SHMbLHFeCcmdPDs0wo3yXNIkNA+ruo4bqBTqpOJoK6gWyv2pKBgAAA=",
-  "dominant": "#283b2b"
+  "dominant": "#283b2b",
+  "glossary": {
+    "en": {
+      "network effects": "When the value of a product or service increases as more people use it.",
+      "utility": "The economic measure of satisfaction or benefit a consumer gets from using a good.",
+      "agents": "Economic decision-makers, such as individuals or firms, who act within a market.",
+      "economies of scale": "Advantages where the average cost drops or value expands as scale increases.",
+      "compatibility": "The ability of different systems or products to work together seamlessly within one network.",
+      "telex": "A historic international teleprinter network used for sending text messages over telegraph lines.",
+      "cp/m": "An early microcomputer operating system that allowed software to run across different computer models.",
+      "quadraphonic audio discs": "Vinyl records engineered with four independent audio channels, requiring specialized playback equipment.",
+      "partial equilibrium": "An economic model that analyzes a specific market in isolation from the rest of the economy.",
+      "income effects": "How changes in purchasing power or real income influence the quantity demanded of a good.",
+      "static": "Analyzing a single fixed point in time rather than dynamic changes over time."
+    },
+    "vi": {
+      "hiệu ứng mạng": "Hiện tượng giá trị của sản phẩm tăng lên khi có thêm nhiều người cùng sử dụng.",
+      "tương thích": "Khả năng các hệ thống khác nhau có thể kết nối và hoạt động cùng nhau.",
+      "phúc lợi": "Tổng mức lợi ích và sự hài lòng mà toàn thể xã hội nhận được.",
+      "kỳ vọng": "Dự đoán của người tiêu dùng về quy mô mạng lưới trong tương lai trước khi mua.",
+      "quy mô mạng": "Tổng số lượng người dùng hoặc khách hàng tham gia vào một hệ thống mạng lưới.",
+      "thuê bao": "Người dùng đăng ký sử dụng một dịch vụ hoặc mạng lưới viễn thông.",
+      "telex": "Mạng lưới điện báo truyền tin nhắn văn bản phổ biến trước thời Internet.",
+      "động cơ": "Lý do hoặc lợi ích thúc đẩy doanh nghiệp đưa ra quyết định hành động.",
+      "cp/m": "Một hệ điều hành máy tính cá nhân phổ biến vào cuối thập niên 1970.",
+      "chuẩn chung": "Quy chuẩn kỹ thuật thống nhất giúp các sản phẩm khác nhau có thể tương thích.",
+      "mô hình tĩnh": "Mô hình kinh tế phân tích trạng thái tại một thời điểm, không xét yếu tố thời gian."
+    },
+    "fr": {
+      "effets de réseau": "Gain d'utilité ou de valeur qu'un usager retire d'un bien lorsque d'autres personnes l'utilisent également.",
+      "bien-être collectif": "Somme globale des avantages économiques et de la satisfaction obtenus par l'ensemble des consommateurs et des entreprises.",
+      "économies d'échelle": "Diminution relative des coûts ou augmentation de l'attrait d'un produit à mesure que sa production ou diffusion croît.",
+      "anticipations": "Prévisions des consommateurs quant à la taille future d'un réseau avant d'effectuer leur choix d'achat.",
+      "réseau pertinent": "Ensemble effectif des usagers ou produits interconnectés qui déterminent la valeur réelle du service pour le consommateur.",
+      "coûts sociaux": "Pertes ou désagréments économiques globaux subis par la collectivité du fait d'une décision de marché.",
+      "incitation conjointe": "Intérêt économique partagé de l'ensemble des entreprises concurrentes à adopter une stratégie commune de compatibilité.",
+      "cp/m": "Ancien système d'exploitation pour micro-ordinateurs ayant permis une compatibilité logicielle entre différents constructeurs.",
+      "quadriphoniques": "Format d'enregistrement sonore à quatre canaux distincts, confronté historiquement à des technologies concurrentes et incompatibles.",
+      "équilibre partiel": "Analyse économique restreinte à un marché spécifique, isolée des répercussions sur les autres secteurs économiques.",
+      "effets de revenu": "Variation de la demande d'un bien induite par l'évolution du pouvoir d'achat réel des consommateurs."
+    },
+    "de": {
+      "netzwerkeffekte": "Phänomen, bei dem der Nutzen eines Guts mit der Anzahl anderer Nutzer steigt.",
+      "gesamtwohlstand": "Gesamter ökonomischer Nutzen einer Gesellschaft aus Konsumentenrente und Unternehmensgewinnen.",
+      "nachfrageseitige skaleneffekte": "Kostenvorteile oder Nutzensteigerungen auf Käuferseite durch eine wachsende Nutzerbasis.",
+      "verbrauchererwartungen": "Annahmen von Konsumenten über die künftige Größe und Verbreitung eines Netzwerks vor dem Kauf.",
+      "kompatibilität": "Fähigkeit verschiedener technischer Systeme, nahtlos zusammenzuarbeiten und Nutzer miteinander zu verbinden.",
+      "telex": "Früheres weltweites Fernschreibnetz zur Übertragung von Textnachrichten über ein eigenes Leitungsnetz.",
+      "gesellschaftliche wohlfahrt": "Die Summe des Nutzens aller Konsumenten und Produzenten in einer Volkswirtschaft.",
+      "cp/m": "Frühes standardisiertes Betriebssystem für Personal Computer vor dem Aufkommen von MS-DOS.",
+      "partielles gleichgewicht": "Ökonomisches Modell, das einen Markt isoliert betrachtet und Rückwirkungen anderer Märkte ausblendet.",
+      "einkommenseffekte": "Veränderungen der Nachfrage, die durch eine veränderte reale Kaufkraft der Verbraucher entstehen."
+    },
+    "es": {
+      "efectos de red": "Fenómeno en el que un bien gana valor para cada usuario conforme más personas lo utilizan.",
+      "bienestar general": "Nivel total de beneficio económico y satisfacción acumulado por la sociedad en un mercado.",
+      "utilidad": "Medida de la satisfacción o provecho que un consumidor obtiene al utilizar un producto.",
+      "economías de escala": "Ventajas en las que la eficiencia o el valor aumentan al crecer la escala del sistema.",
+      "red relevante": "Conjunto total de usuarios interconectados que determina directamente el valor práctico del servicio.",
+      "télex": "Red pionera de comunicación que transmitía mensajes escritos mediante líneas telegráficas conectadas.",
+      "incentivo social": "Motivación para tomar decisiones orientadas a maximizar el bienestar colectivo de toda la comunidad.",
+      "cp/m": "Sistema operativo temprano para microcomputadoras que permitió compatibilidad de programas entre diversos fabricantes.",
+      "cuadrafónicos": "Formato de grabación que utiliza cuatro canales de audio para crear una experiencia sonora envolvente.",
+      "equilibrio parcial": "Análisis económico centrado en un solo mercado, considerando constantes las condiciones del resto.",
+      "efectos ingreso": "Cambio en el consumo derivado de la alteración en el poder adquisitivo real del comprador.",
+      "estándar común": "Norma técnica compartida que posibilita la interoperabilidad entre productos de diferentes marcas."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

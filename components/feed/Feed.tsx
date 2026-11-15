@@ -7,7 +7,7 @@ import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
-import { pickPage, rubberClamp, sampleVelocity } from '@/lib/motion';
+import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { useUI } from '@/stores/ui';
 import { useSize, useT } from '../hooks';
@@ -65,9 +65,18 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     relayout(w, h);
   }, [w, h]);
   useEffect(() => {
-    // A new feed (Explore, deep link) starts at the top without animating.
+    // A new feed (Explore, Library, the menu) starts at the top without sliding there; the new first
+    // article comes into focus instead of cutting in.
     feedP.stop();
     feedP.set(useUI.getState().index);
+    if (version > 0 && !prefersReducedMotion())
+      ref.current?.animate(
+        [
+          { opacity: 0, transform: 'scale(1.035)', filter: 'blur(10px)' },
+          { opacity: 1, transform: 'none', filter: 'blur(0)' },
+        ],
+        { duration: 560, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' },
+      );
   }, [version]);
 
   // The chrome (bottom nav, language pill) follows the active article's horizontal position.
@@ -286,7 +295,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     };
   }, []);
 
-  // ---------- Keyboard (NFR-04): instant, no animation ----------
+  // ---------- Keyboard: the same spring as a swipe (instant when the reader asks for reduced motion) ----------
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       const target = e.target as Element | null;
@@ -299,16 +308,16 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       const view = slug ? targetView(slug) : 0;
       if (e.key === 'ArrowDown' && view === 0) {
         e.preventDefault();
-        goToArticle(index + 1, 0, true);
+        goToArticle(index + 1);
       } else if (e.key === 'ArrowUp' && view === 0) {
         e.preventDefault();
-        goToArticle(index - 1, 0, true);
+        goToArticle(index - 1);
       } else if (e.key === 'ArrowRight' && slug) {
         e.preventDefault();
-        setArticleView(slug, view + 1, 0, true);
+        setArticleView(slug, view + 1);
       } else if (e.key === 'ArrowLeft' && slug) {
         e.preventDefault();
-        setArticleView(slug, view - 1, 0, true);
+        setArticleView(slug, view - 1);
       } else if ((e.key === 'l' || e.key === 'L') && slug) toggleLike(slug);
       else if ((e.key === 's' || e.key === 'S') && slug) toggleSave(slug);
     };

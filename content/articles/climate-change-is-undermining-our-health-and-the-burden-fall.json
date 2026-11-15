@@ -37,11 +37,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/425/1080/1920",
+    "url": "https://images.unsplash.com/44/E5KMvPp9SsCnqmEGUwAS_2014-08-10%2012.56.40%201.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Daniel Ruswick",
+    "author": "Dan Ruswick",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ"
+    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ",
+    "wide": "https://images.unsplash.com/44/E5KMvPp9SsCnqmEGUwAS_2014-08-10%2012.56.40%201.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjA4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@danielruswick?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -87,7 +89,10 @@
     ]
   },
   "summary": {
-    "vi": "Biến đổi khí hậu đang làm suy giảm nguồn cung cấp nước và lương thực tại Thái Bình Dương, dẫn đến tỷ lệ mắc bệnh mãn tính gia tăng. Phụ nữ chịu gánh nặng lớn nhất trong việc chăm sóc gia đình và khắc phục hậu quả thiên tai. Tại các cuộc họp chuẩn bị cho hội nghị COP31, các nhà lãnh đạo khu vực nhấn mạnh rằng các chính sách khí hậu phải tích hợp vấn đề y tế và thúc đẩy vai trò lãnh đạo của phụ nữ."
+    "vi": "Biến đổi khí hậu đang làm suy giảm nguồn cung cấp nước và lương thực tại Thái Bình Dương, dẫn đến tỷ lệ mắc bệnh mãn tính gia tăng. Phụ nữ chịu gánh nặng lớn nhất trong việc chăm sóc gia đình và khắc phục hậu quả thiên tai. Tại các cuộc họp chuẩn bị cho hội nghị COP31, các nhà lãnh đạo khu vực nhấn mạnh rằng các chính sách khí hậu phải tích hợp vấn đề y tế và thúc đẩy vai trò lãnh đạo của phụ nữ.",
+    "fr": "Dans les îles du Pacifique, la crise environnementale fragilise gravement la santé publique : la salinisation des terres et le réchauffement marin contraignent les habitants à consommer des produits importés peu nutritifs, ce qui provoque une explosion des maladies cardiovasculaires et du diabète. En première ligne face à l'insécurité alimentaire et hydrique, les femmes assument une charge domestique et mentale disproportionnée. Alors que se profile la COP31, les nations insulaires rappellent une urgence vitale : la finance climatique doit impérativement intégrer les soins de santé primaires et s'appuyer sur le leadership féminin.",
+    "de": "Der Klimawandel gefährdet zunehmend die Gesundheit der Bevölkerung im Pazifik, wobei Frauen die Hauptlast tragen. Steigende Meeresspiegel und Ozeanerwärmung zerstören Böden, Korallenriffe und Trinkwasserquellen, was die Abhängigkeit von nährstoffarmen Importlebensmitteln verstärkt und chronische Erkrankungen wie Diabetes und Herzleiden antreibt. Zudem belastet die wachsende Versorgungs- und Pflegearbeit insbesondere Frauen physisch wie psychisch. Vor der UN-Klimakonferenz COP31 fordern pazifische Vertreter daher, Gesundheit und Geschlechtergerechtigkeit fest in der internationalen Klimafinanzierung zu verankern. Lokale, von Frauen geleitete Initiativen – etwa zur Trinkwasserversorgung – belegen bereits wirksame Anpassungsstrategien. Neben rascheren Emissionsminderungen verlangt die Region einen Ausbau der primären Gesundheitsversorgung und eine stärkere Berücksichtigung chronischer Leiden in globalen Klimaschutzplänen.",
+    "es": "El cambio climático intensifica las crisis de salud en el Pacífico al deteriorar fuentes de agua y tierras agrícolas, lo que fomenta el consumo de alimentos procesados y eleva las enfermedades crónicas. Las mujeres asumen la mayor carga de esta emergencia, enfrentando el agotamiento físico, la inseguridad alimentaria y riesgos prenatales agravados por el calor extremo. Pese a estos desafíos, lideran iniciativas locales de adaptación con notable resiliencia. Ante la proximidad de la COP31, los líderes regionales exigen que el financiamiento climático integre con urgencia la equidad de género y la atención médica primaria, garantizando que el bienestar comunitario sea una prioridad global inaplazable."
   },
   "keyPoint": {
     "en": "Think of climate change as a leaking roof that slowly damages the foundation of health while everyone watches the storm outside. How can local community leaders ensure that daily health needs are funded alongside major infrastructure projects at the upcoming climate summit?",
@@ -109,10 +114,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-08T02:46:52.716Z"
+  "publishAt": "2026-11-08T02:46:52.716Z",
+  "glossary": {
+    "en": {
+      "salinity": "The concentration of dissolved salt in water or soil.",
+      "cardiovascular disease": "Diseases affecting the heart and blood vessels, such as heart attacks and strokes.",
+      "cop31": "The 31st United Nations annual climate change conference.",
+      "pre-cop": "Preparatory talks held before the main United Nations climate conference.",
+      "climate finance": "Funding allocated to support climate change mitigation and adaptation projects.",
+      "mitigate": "To reduce or prevent the severity of climate change impacts.",
+      "western pacific region": "A World Health Organization administrative region covering parts of Oceania and Asia.",
+      "pacific resilience facility": "A regional, Pacific-led financing fund supporting community climate and resilience projects.",
+      "climate adaptation": "Adjustments made to ecological, social, or economic systems in response to climate effects.",
+      "primary health care": "Essential, accessible community healthcare addressing everyday medical needs and illness prevention.",
+      "gender-responsive": "Policies or actions that consider and address the specific needs of all genders.",
+      "health equity": "The fair distribution of healthcare access and outcomes across all communities."
+    }
+  }
 }

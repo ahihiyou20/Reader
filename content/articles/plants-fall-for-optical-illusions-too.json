@@ -11,36 +11,66 @@
   ],
   "title": {
     "en": "Plants Fall for Optical Illusions Too",
-    "vi": "Thực vật cũng mắc lừa ảo ảnh quang học"
+    "vi": "Thực vật cũng mắc lừa ảo ảnh quang học",
+    "fr": "Les plantes aussi succombent aux illusions d'optique",
+    "de": "Auch Pflanzen erliegen optischen Täuschungen",
+    "es": "Las plantas también caen en ilusiones ópticas"
   },
   "hook": {
     "en": "You might feel frustrated when your brain fails to see through a trick, but you are not alone. Recent research reveals that even organisms completely devoid of a nervous system can experience visual deception {source}. Scientists have discovered that sunflowers process light cues in ways that mimic how human brains get fooled by sensory tricks, revealing surprising similarities across living kingdoms.",
-    "vi": "Bạn có thể cảm thấy thất bại khi bộ não không nhìn thấu được một thủ thuật thị giác, nhưng bạn không cô độc. Nghiên cứu gần đây cho thấy ngay cả những sinh vật hoàn toàn không có hệ thần kinh cũng có thể trải qua sự lừa dối thị giác {source}. Các nhà khoa học đã phát hiện ra rằng hoa hướng dương xử lý tín hiệu ánh sáng theo những cách bắt chước cách bộ não con người bị đánh lừa bởi các mẹo giác quan, hé lộ những điểm tương đồng đáng kinh ngạc giữa các giới sinh vật."
+    "vi": "Bạn có thể cảm thấy thất bại khi bộ não không nhìn thấu được một thủ thuật thị giác, nhưng bạn không cô độc. Nghiên cứu gần đây cho thấy ngay cả những sinh vật hoàn toàn không có hệ thần kinh cũng có thể trải qua sự lừa dối thị giác {source}. Các nhà khoa học đã phát hiện ra rằng hoa hướng dương xử lý tín hiệu ánh sáng theo những cách bắt chước cách bộ não con người bị đánh lừa bởi các mẹo giác quan, hé lộ những điểm tương đồng đáng kinh ngạc giữa các giới sinh vật.",
+    "fr": "Il est parfois frustrant de voir son cerveau se faire duper par un leurre, mais vous n'êtes pas seul. Des recherches récentes révèlent que même des organismes totalement dépourvus de système nerveux peuvent être victimes d'illusions visuelles {source}. Des scientifiques ont découvert que les tournesols traitent les signaux lumineux d'une manière qui rappelle la façon dont le cerveau humain est trompé par des pièges sensoriels, mettant en lumière de surprenantes similitudes entre les règnes du vivant.",
+    "de": "Du bist vielleicht frustriert, wenn dein Gehirn einen Trick nicht durchschaut, doch du bist damit nicht allein. Jüngste Forschungen zeigen, dass selbst Organismen, die über keinerlei Nervensystem verfügen, optische Täuschungen erleben können {source}. Forschende haben herausgefunden, dass Sonnenblumen Lichtreize auf eine Weise verarbeiten, die verblüffend daran erinnert, wie das menschliche Gehirn von Sinnesreizen getäuscht wird – und so überraschende Parallelen über die Reiche der Lebewesen hinweg offenbart.",
+    "es": "Quizá resulte frustrante cuando el cerebro no logra descifrar un truco, pero usted no está solo. Investigaciones recientes revelan que incluso organismos completamente desprovistos de sistema nervioso pueden experimentar engaños visuales {source}. Científicos han descubierto que los girasoles procesan las señales lumínicas de maneras que imitan cómo el cerebro humano es engañado por trucos sensoriales, revelando similitudes sorprendentes entre los reinos de los seres vivos."
   },
   "sections": [
     {
       "heading_en": "Scattered Sensors",
       "heading_vi": "Cảm biến phân tán",
       "body_en": "A group of researchers at Tel Aviv University explored how flora interpret visual cues. Unlike humans who rely on facial eyes, these organisms possess a dispersed network of light receptors distributed across their entire body, particularly along their stems. This decentralized sensory structure gathers data from the surroundings differently, yet it still encounters processing quirks reminiscent of neurological blind spots.",
-      "body_vi": "Một nhóm các nhà nghiên cứu tại Đại học Tel Aviv đã khám phá cách thực vật diễn giải các tín hiệu thị giác. Khác với con người dựa vào mắt trên khuôn mặt, những sinh vật này sở hữu mạng lưới thụ thể ánh sáng phân bố khắp cơ thể, đặc biệt dọc theo thân cây. Cấu trúc cảm giác phi tập trung này thu thập dữ liệu từ môi trường xung quanh theo cách khác, nhưng vẫn gặp phải những điểm kỳ lạ trong xử lý gợi nhớ đến các điểm mù thần kinh."
+      "body_vi": "Một nhóm các nhà nghiên cứu tại Đại học Tel Aviv đã khám phá cách thực vật diễn giải các tín hiệu thị giác. Khác với con người dựa vào mắt trên khuôn mặt, những sinh vật này sở hữu mạng lưới thụ thể ánh sáng phân bố khắp cơ thể, đặc biệt dọc theo thân cây. Cấu trúc cảm giác phi tập trung này thu thập dữ liệu từ môi trường xung quanh theo cách khác, nhưng vẫn gặp phải những điểm kỳ lạ trong xử lý gợi nhớ đến các điểm mù thần kinh.",
+      "heading_fr": "Des capteurs dispersés",
+      "body_fr": "Une équipe de chercheurs de l'université de Tel-Aviv s'est penchée sur la façon dont les végétaux interprètent les signaux visuels. Contrairement aux humains qui dépendent d'yeux situés sur leur visage, ces organismes disposent d'un réseau diffus de photorécepteurs répartis sur l'ensemble de leur corps, en particulier le long de leurs tiges. Cette structure sensorielle décentralisée recueille les données de l'environnement différemment, tout en présentant des bizarreries de traitement qui rappellent les angles morts neurologiques.",
+      "heading_de": "Verstreute Sensoren",
+      "body_de": "Ein Forschungsteam der Universität Tel Aviv untersuchte, wie die Pflanzenwelt visuelle Reize interpretiert. Anders als der Mensch, der auf Augen im Gesicht angewiesen ist, besitzen diese Organismen ein weit verzweigtes Netz von Lichtrezeptoren, die über ihren gesamten Körper verteilt sind – insbesondere entlang der Stängel. Diese dezentrale sensorische Struktur erfasst Umgebungsinformationen auf eine völlig andere Art und Weise, stößt jedoch dennoch auf Verarbeitungseigenheiten, die an neurologische blinde Flecken erinnern.",
+      "heading_es": "Sensores dispersos",
+      "body_es": "Un grupo de investigadores de la Universidad de Tel Aviv exploró cómo la flora interpreta las señales visuales. A diferencia de los humanos, que dependen de ojos faciales, estos organismos poseen una red dispersa de fotorreceptores distribuidos por todo su cuerpo, particularmente a lo largo de sus tallos. Esta estructura sensorial descentralizada recopila datos del entorno de forma diferente, pero aun así experimenta peculiaridades de procesamiento que recuerdan a los puntos ciegos neurológicos."
     },
     {
       "heading_en": "Conflicting Beams",
       "heading_vi": "Chùm sáng xung đột",
       "body_en": "To test how these organisms handle directional signals, botanists experimented with sunflowers exposed to various illumination setups. When subjected to two opposing beams of identical brightness alongside a third weaker perpendicular source, an unexpected reaction occurred. The specimen remarkably leaned toward the weaker illumination, as if the two brighter opposing signals completely neutralized each other's influence.",
-      "body_vi": "Để kiểm tra cách các sinh vật này xử lý tín hiệu định hướng, các nhà thực vật học đã thí nghiệm với hoa hướng dương tiếp xúc với các thiết lập chiếu sáng khác nhau. Khi chịu tác động của hai chùm sáng đối diện có độ sáng giống nhau cùng với nguồn thứ ba yếu hơn vuông góc, một phản ứng bất ngờ đã xảy ra. Mẫu vật đáng chú ý đã nghiêng về phía ánh sáng yếu hơn, như thể hai tín hiệu sáng đối diện hoàn toàn triệt tiêu ảnh hưởng lẫn nhau."
+      "body_vi": "Để kiểm tra cách các sinh vật này xử lý tín hiệu định hướng, các nhà thực vật học đã thí nghiệm với hoa hướng dương tiếp xúc với các thiết lập chiếu sáng khác nhau. Khi chịu tác động của hai chùm sáng đối diện có độ sáng giống nhau cùng với nguồn thứ ba yếu hơn vuông góc, một phản ứng bất ngờ đã xảy ra. Mẫu vật đáng chú ý đã nghiêng về phía ánh sáng yếu hơn, như thể hai tín hiệu sáng đối diện hoàn toàn triệt tiêu ảnh hưởng lẫn nhau.",
+      "heading_fr": "Faisceaux contradictoires",
+      "body_fr": "Afin de tester la manière dont ces organismes traitent les signaux directionnels, des botanistes ont mené des expériences sur des tournesols soumis à divers dispositifs d'éclairage. Exposé à deux faisceaux opposés d'intensité identique ainsi qu'à une troisième source perpendiculaire plus faible, le végétal a eu une réaction inattendue. Le spécimen s'est étonnamment incliné vers la lumière la plus faible, comme si les deux faisceaux opposés plus intenses neutralisaient totalement leur influence respective.",
+      "heading_de": "Widersprüchliche Strahlen",
+      "body_de": "Um zu testen, wie diese Organismen Richtungssignale verarbeiten, experimentierten Botaniker mit Sonnenblumen unter verschiedenen Beleuchtungsanordnungen. Als die Pflanzen zwei entgegengesetzten Lichtstrahlen identischer Helligkeit und zugleich einer dritten, schwächeren, senkrecht dazu stehenden Lichtquelle ausgesetzt wurden, zeigte sich eine unerwartete Reaktion: Das Exemplar neigte sich bemerkenswerterweise zur schwächeren Lichtquelle hin – ganz so, als hätten sich die beiden helleren, gegensätzlichen Signale in ihrer Wirkung gegenseitig vollständig neutralisiert.",
+      "heading_es": "Haces en conflicto",
+      "body_es": "Para evaluar cómo estos organismos gestionan las señales direccionales, un grupo de botánicos experimentó con girasoles expuestos a diversas configuraciones de iluminación. Al someterlos a dos haces opuestos de idéntico brillo junto con una tercera fuente perpendicular más débil, ocurrió una reacción inesperada. El espécimen se inclinó sorprendentemente hacia la iluminación más tenue, como si las dos señales opuestas más brillantes anularan por completo la influencia mutua."
     },
     {
       "heading_en": "Mathematical Missteps",
       "heading_vi": "Sai số toán học",
       "body_en": "The root cause lies in how light signals get converted internally. Rather than calculating raw brightness directly, the organism sums up directional vectors after conversion occurs. Because this translation operates non-linearly, opposing forces can cancel one another out, triggering a misinterpretation of the environment {p:that mirrors our own visual tricks}.",
-      "body_vi": "Nguyên nhân gốc rễ nằm ở cách các tín hiệu ánh sáng được chuyển đổi bên trong. Thay vì tính toán trực tiếp độ sáng thô, sinh vật tổng hợp các véc-tơ hướng sau khi quá trình chuyển đổi diễn ra. Vì sự dịch chuyển này hoạt động phi tuyến tính, các lực đối lập có thể triệt tiêu lẫn nhau, kích hoạt sự hiểu lầm về môi trường {p:phản chiếu các mẹo thị giác của chính chúng ta}."
+      "body_vi": "Nguyên nhân gốc rễ nằm ở cách các tín hiệu ánh sáng được chuyển đổi bên trong. Thay vì tính toán trực tiếp độ sáng thô, sinh vật tổng hợp các véc-tơ hướng sau khi quá trình chuyển đổi diễn ra. Vì sự dịch chuyển này hoạt động phi tuyến tính, các lực đối lập có thể triệt tiêu lẫn nhau, kích hoạt sự hiểu lầm về môi trường {p:phản chiếu các mẹo thị giác của chính chúng ta}.",
+      "heading_fr": "Faux pas mathématiques",
+      "body_fr": "L'origine du phénomène réside dans la conversion interne des signaux lumineux. Plutôt que de calculer directement l'intensité lumineuse brute, l'organisme additionne des vecteurs directionnels après cette conversion. Comme cette traduction s'effectue de manière non linéaire, des forces opposées peuvent s'annuler, déclenchant une interprétation erronée de l'environnement {p:qui fait écho à nos propres illusions visuelles}.",
+      "heading_de": "Mathematische Fehltritte",
+      "body_de": "Die eigentliche Ursache liegt darin, wie Lichtsignale intern umgewandelt werden. Anstatt die reine Helligkeit direkt zu berechnen, summiert der Organismus nach der Umwandlung Richtungsvektoren auf. Weil diese Übertragung nichtlinear verläuft, können sich entgegengesetzte Kräfte gegenseitig aufheben, was zu einer Fehlinterpretation der Umgebung führt {p:die unseren eigenen optischen Täuschungen gleicht}.",
+      "heading_es": "Tropiezos matemáticos",
+      "body_es": "La causa fundamental radica en cómo las señales lumínicas se transforman internamente. En lugar de calcular el brillo bruto directamente, el organismo suma vectores direccionales tras producirse la conversión. Debido a que esta conversión opera de manera no lineal, las fuerzas opuestas pueden anularse mutuamente, provocando una interpretación errónea del entorno {p:que refleja nuestros propios engaños visuales}."
     },
     {
       "heading_en": "Broader Implications",
       "heading_vi": "Ý nghĩa rộng hơn",
       "body_en": "This discovery suggests that physical layout alone shapes perception. Study author Yasmine Meroz notes that decentralized sensory architecture dictates how living systems react to their surroundings. This foundational rule likely extends far beyond flora, potentially applying to single cells and bacteria that similarly rely on distributed sensory frameworks.",
-      "body_vi": "Khám phá này cho thấy bố cục vật lý đơn thuần định hình nhận thức. Tác giả nghiên cứu Yasmine Meroz lưu ý rằng kiến trúc cảm giác phi tập trung quyết định cách các hệ thống sống phản ứng với môi trường xung quanh. Quy tắc nền tảng này có thể mở rộng vượt xa thực vật, có khả năng áp dụng cho các tế bào đơn và vi khuẩn cũng phụ thuộc vào các khung cảm giác phân tán tương tự."
+      "body_vi": "Khám phá này cho thấy bố cục vật lý đơn thuần định hình nhận thức. Tác giả nghiên cứu Yasmine Meroz lưu ý rằng kiến trúc cảm giác phi tập trung quyết định cách các hệ thống sống phản ứng với môi trường xung quanh. Quy tắc nền tảng này có thể mở rộng vượt xa thực vật, có khả năng áp dụng cho các tế bào đơn và vi khuẩn cũng phụ thuộc vào các khung cảm giác phân tán tương tự.",
+      "heading_fr": "Des implications plus vastes",
+      "body_fr": "Cette découverte suggère que la disposition physique détermine à elle seule la perception. Yasmine Meroz, autrice de l'étude, souligne qu'une architecture sensorielle décentralisée régit la manière dont les systèmes vivants réagissent à leur milieu. Cette règle fondamentale s'étend sans doute bien au-delà des végétaux et pourrait s'appliquer à des organismes unicellulaires et à des bactéries qui reposent sur des schémas sensoriels distribués analogues.",
+      "heading_de": "Breitere Tragweite",
+      "body_de": "Diese Entdeckung legt nahe, dass die physische Anordnung allein die Wahrnehmung prägt. Die Studienautorin Yasmine Meroz stellt fest, dass eine dezentrale sensorische Architektur bestimmt, wie lebende Systeme auf ihre Umgebung reagieren. Diese Grundregel reicht wahrscheinlich weit über die Pflanzenwelt hinaus und könnte auch für Einzelzellen und Bakterien gelten, die auf ähnliche Weise auf verteilte sensorische Netzwerke angewiesen sind.",
+      "heading_es": "Implicaciones más amplias",
+      "body_es": "Este descubrimiento sugiere que la sola disposición física moldea la percepción. La autora del estudio, Yasmine Meroz, señala que la arquitectura sensorial descentralizada determina cómo los sistemas vivos reaccionan ante su entorno. Es muy probable que esta regla fundamental se extienda mucho más allá de la flora, aplicándose potencialmente a células individuales y bacterias que dependen de marcos sensoriales distribuidos de forma similar."
     }
   ],
   "references": [
@@ -52,11 +82,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/974/1080/1920",
+    "url": "https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIwfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Greg Rakozy",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM"
+    "sourceUrl": "https://unsplash.com/photos/0LU4vO5iFpM",
+    "wide": "https://images.unsplash.com/photo-1450849608880-6f787542c88a?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIwfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@grakozy?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -73,7 +105,10 @@
   },
   "keyPoint": {
     "en": "Like a compass needle spinning wildly between competing magnets, living systems process environmental signals through geometry rather than raw math. [p:Can the physical layout of your own sensory organs trick your understanding of reality just as easily?]",
-    "vi": "Giống như kim la bàn quay cuồng giữa các nam châm cạnh tranh, các hệ thống sống xử lý tín hiệu môi trường thông qua hình học thay vì toán học thô. [p:Liệu bố cục vật lý của các cơ quan cảm giác của chính bạn có thể đánh lừa sự hiểu biết của bạn về thực tế một cách dễ dàng như vậy không?]"
+    "vi": "Giống như kim la bàn quay cuồng giữa các nam châm cạnh tranh, các hệ thống sống xử lý tín hiệu môi trường thông qua hình học thay vì toán học thô. [p:Liệu bố cục vật lý của các cơ quan cảm giác của chính bạn có thể đánh lừa sự hiểu biết của bạn về thực tế một cách dễ dàng như vậy không?]",
+    "fr": "Telle l'aiguille d'une boussole oscillant follement entre deux aimants rivaux, les systèmes vivants traitent les signaux environnementaux par la géométrie plutôt que par le calcul pur. [p:La disposition physique de vos propres organes sensoriels pourrait-elle tout aussi aisément tromper votre perception de la réalité ?]",
+    "de": "Wie eine Kompassnadel, die sich zwischen konkurrierenden Magneten wild dreht, verarbeiten lebende Systeme Umweltsignale über Geometrie statt über reine Mathematik. [p:Kann die physische Anordnung deiner eigenen Sinnesorgane dein Verständnis der Realität genauso leicht täuschen?]",
+    "es": "Como la aguja de una brújula que gira descontrolada entre imanes opuestos, los sistemas vivos procesan las señales del entorno mediante la geometría y no a través de cálculos matemáticos puros. [p:¿Acaso la disposición física de nuestros propios órganos sensoriales podría engañar con la misma facilidad nuestra comprensión de la realidad?]"
   },
   "applySteps": {
     "en": [
@@ -85,6 +120,21 @@
       "Quan sát một chậu cây gần cửa sổ để nhận thấy thân cây nghiêng về phía ánh sáng chiếu vào.",
       "Thay đổi góc chiếu sáng bằng cách xoay nhẹ chậu cây để xem thân cây điều chỉnh lại.",
       "So sánh chuyển động vật lý chậm này với cách mắt bạn tự điều chỉnh trước những thay đổi độ sáng đột ngột."
+    ],
+    "fr": [
+      "Observez une plante en pot près d'une fenêtre pour remarquer la manière dont ses tiges s'inclinent vers la lumière incidente.",
+      "Modifiez l'angle d'éclairage en faisant légèrement pivoter le pot afin d'observer le réajustement des tiges.",
+      "Comparez ce lent mouvement physique à la vitesse d'adaptation de vos yeux lors d'un brusque changement de luminosité."
+    ],
+    "de": [
+      "Beobachte eine Topfpflanze in der Nähe eines Fensters, um zu sehen, wie sich ihre Stängel dem einfallenden Licht zuneigen.",
+      "Verändere den Lichteinfallswinkel, indem du den Topf leicht drehst, um die Neuausrichtung der Stängel zu verfolgen.",
+      "Vergleiche diese langsame physische Bewegung damit, wie sich deine eigenen Augen an plötzliche Helligkeitswechsel anpassen."
+    ],
+    "es": [
+      "Observe una planta en maceta cerca de una ventana para notar cómo sus tallos se inclinan hacia la luz entrante.",
+      "Modifique el ángulo de la luz girando ligeramente la maceta para observar el reajuste del tallo.",
+      "Compare este lento movimiento físico con la forma en que sus propios ojos se adaptan a cambios repentinos de brillo."
     ]
   },
   "coverCandidates": [
@@ -121,9 +171,76 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "visual deception": "A misleading sensory effect where perceived light or images differ from physical reality.",
+      "nervous system": "The biological network of nerve cells transmitting signals throughout an animal's body.",
+      "flora": "Plant life or plants considered as a group.",
+      "light receptors": "Specialized cellular structures that detect and absorb incoming light.",
+      "neurological blind spots": "Failures or gaps in sensory processing where visual information cannot be perceived.",
+      "botanists": "Scientists who study plant biology and behavior.",
+      "perpendicular": "Positioned at a ninety-degree angle relative to another line or direction.",
+      "directional vectors": "Mathematical quantities representing both the physical direction and strength of light.",
+      "non-linearly": "In a way where the output does not change proportionally to the input.",
+      "decentralized sensory architecture": "A sensing system distributed across an entire body rather than concentrated in one organ."
+    },
+    "vi": {
+      "hệ thần kinh": "Mạng lưới tế bào chuyên biệt truyền dẫn và xử lý thông tin trong cơ thể.",
+      "giới sinh vật": "Các nhóm phân loại sinh học lớn nhất phân chia các dạng sống.",
+      "phi tập trung": "Cấu trúc phân bố rải rác, không phụ thuộc vào một cơ quan điều khiển trung tâm.",
+      "thực vật học": "Ngành khoa học nghiên cứu chuyên sâu về cấu tạo và sự sống của thực vật.",
+      "triệt tiêu": "Làm mất hoàn toàn tác dụng hoặc ảnh hưởng của các lực đối kháng nhau.",
+      "độ sáng thô": "Cường độ ánh sáng ban đầu nhận được trước khi qua xử lý hoặc biến đổi.",
+      "véc-tơ hướng": "Đại lượng toán học biểu diễn phương hướng và độ mạnh của kích thích ánh sáng.",
+      "phi tuyến tính": "Mối quan hệ mà kết quả không thay đổi theo tỷ lệ thuận với tác động.",
+      "tế bào đơn": "Dạng sinh vật chỉ bao gồm một tế bào duy nhất hoạt động độc lập.",
+      "vi khuẩn": "Nhóm vi sinh vật đơn bào có cấu trúc tế bào nhân sơ đơn giản.",
+      "hệ thống sống": "Các thực thể sinh học có khả năng tự duy trì và phản ứng với môi trường."
+    },
+    "fr": {
+      "système nerveux": "Réseau biologique coordonnant les mouvements et les sensations grâce à la transmission de signaux électriques.",
+      "photorécepteurs": "Capteurs biologiques spécialisés dans la détection des ondes lumineuses et des variations d'intensité.",
+      "réseau diffus": "Ensemble dispersé de capteurs répartis sur l'organisme sans organe centralisateur.",
+      "angles morts neurologiques": "Défauts temporaires de traitement de l'information conduisant le système nerveux à ignorer certains stimuli.",
+      "signaux directionnels": "Indications sensorielles permettant à un organisme de déterminer la provenance spatiale d'un stimulus.",
+      "vecteurs directionnels": "Représentations mathématiques combinant une orientation et une intensité pour modéliser le flux lumineux.",
+      "non linéaire": "Propriété d'une transformation dont le résultat n'est pas strictement proportionnel au signal d'origine.",
+      "structure sensorielle décentralisée": "Organisation biologique où le traitement des stimuli s'effectue sans cerveau ni centre de contrôle unique.",
+      "organismes unicellulaires": "Formes de vie composées d'une seule cellule capable d'assurer de façon autonome toutes ses fonctions vitales.",
+      "lumière incidente": "Rayonnement lumineux qui frappe directement la surface d'un corps ou d'un végétal."
+    },
+    "de": {
+      "optische täuschungen": "Wahrnehmungsfehler, bei denen visuelle Reize vom Gehirn oder System falsch interpretiert werden.",
+      "lichtrezeptoren": "Spezialisierte Zellen oder Moleküle, die Licht wahrnehmen und in biochemische Signale umwandeln.",
+      "neurologische blinde flecken": "Phänomene, bei denen Informationen von der sensorischen Verarbeitung nicht erfasst oder verzerrt werden.",
+      "richtungssignale": "Informationen über den räumlichen Ursprung oder Einfallswinkel eines äußeren Reizes.",
+      "richtungsvektoren": "Mathematische Größen, die sowohl eine Richtung als auch eine Stärke im Raum beschreiben.",
+      "nichtlinear": "Eigenschaft eines Prozesses, bei dem das Ergebnis nicht proportional zum Ausgangswert ist.",
+      "sensorische architektur": "Die räumliche und funktionelle Anordnung von Sinnesorganen oder Rezeptoren in einem Organismus.",
+      "lebende systeme": "Biologische Einheiten wie Zellen, Pflanzen oder Tiere, die aktiv mit ihrer Umwelt interagieren.",
+      "einzelzellen": "Mikroskopische Lebewesen oder biologische Strukturen, die aus nur einer einzigen Zelle bestehen.",
+      "neuausrichtung": "Die Anpassung der Wachstumsrichtung einer Pflanze an veränderte Umwelt- oder Lichtbedingungen."
+    },
+    "es": {
+      "ilusiones ópticas": "Percepciones visuales engañosas que interpretan la realidad de forma distinta a la configuración física de los estímulos.",
+      "fotorreceptores": "Receptores biológicos celulares especializados en captar estímulos luminosos distribuidos en el organismo vegetal.",
+      "estructura sensorial descentralizada": "Red de sensores dispersos por todo el cuerpo del organismo sin un órgano de control central.",
+      "puntos ciegos": "Fallos o zonas de omisión en el procesamiento de información perceptiva del entorno.",
+      "señales direccionales": "Estímulos que indican la trayectoria y orientación espacial desde donde incide la luz.",
+      "fuente perpendicular": "Haz lumínico que incide en un ángulo recto respecto a la línea de los otros haces.",
+      "vectores direccionales": "Valores matemáticos que representan la intensidad y dirección espacial de la luz que recibe la planta.",
+      "no lineal": "Comportamiento matemático donde la respuesta no es proporcional ni una simple suma directa de las entradas.",
+      "arquitectura sensorial": "Distribución física y funcional de los receptores que captan información del entorno en un organismo.",
+      "marcos sensoriales": "Sistemas organizados que permiten a células u organismos captar y procesar datos del medio que habitan."
+    }
   }
 }

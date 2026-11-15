@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/661/1080/1920",
+    "url": "https://images.unsplash.com/photo-1422222948315-28aadb7a2cb8?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Jake Melara",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/bA68bHUS9mA"
+    "sourceUrl": "https://unsplash.com/photos/bA68bHUS9mA",
+    "wide": "https://images.unsplash.com/photo-1422222948315-28aadb7a2cb8?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQ1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jakemelara?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

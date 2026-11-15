@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Why most people eat too much salt, and how to cut it",
-    "vi": "Vì sao phần lớn mọi người ăn quá nhiều muối, và cách giảm"
+    "vi": "Vì sao phần lớn mọi người ăn quá nhiều muối, và cách giảm",
+    "fr": "Pourquoi nous consommons trop de sel, et comment le réduire",
+    "de": "Warum die meisten Menschen zu viel Salz essen und wie man es reduziert",
+    "es": "Por qué la mayoría consume demasiada sal y cómo reducirla"
   },
   "hook": {
     "en": "The average adult eats about 11 grams of salt a day, more than double the World Health Organization's limit. Excess sodium is a well-established cause of raised blood pressure, and the WHO estimates it was associated with [y:1.7 million deaths] in 2023. Much of the problem sits in packaged food, not in the salt shaker, which is why [p:the habit is hard to see and easy to miss].",
-    "vi": "Người trưởng thành trung bình ăn khoảng 11 gam muối mỗi ngày, gấp hơn hai lần giới hạn của Tổ chức Y tế Thế giới. Natri dư thừa là nguyên nhân đã được xác lập của huyết áp cao, và WHO ước tính nó liên quan tới [y:1,7 triệu ca tử vong] năm 2023. Phần lớn vấn đề nằm ở thực phẩm đóng gói, chứ không nằm ở lọ muối trên bàn, nên [p:thói quen này khó nhận ra và dễ bị bỏ qua]."
+    "vi": "Người trưởng thành trung bình ăn khoảng 11 gam muối mỗi ngày, gấp hơn hai lần giới hạn của Tổ chức Y tế Thế giới. Natri dư thừa là nguyên nhân đã được xác lập của huyết áp cao, và WHO ước tính nó liên quan tới [y:1,7 triệu ca tử vong] năm 2023. Phần lớn vấn đề nằm ở thực phẩm đóng gói, chứ không nằm ở lọ muối trên bàn, nên [p:thói quen này khó nhận ra và dễ bị bỏ qua].",
+    "fr": "En moyenne, un adulte consomme environ 11 grammes de sel par jour, soit plus du double de la limite recommandée par l’Organisation mondiale de la santé. L’excès de sodium est une cause avérée d’hypertension artérielle, et l’OMS estime qu’il a été associé à [y:1,7 million de décès] en 2023. L’essentiel du problème se trouve dans les aliments transformés plutôt que dans la salière, ce qui explique pourquoi [p:cette habitude est difficile à percevoir et passe facilement inaperçue].",
+    "de": "Ein durchschnittlicher Erwachsener nimmt täglich etwa 11 Gramm Salz zu sich – mehr als das Doppelte des Grenzwerts der Weltgesundheitsorganisation. Ein Natriumüberschuss ist eine erwiesene Ursache für Bluthochdruck, und laut Schätzungen der WHO stand er 2023 mit [y:1,7 Millionen Todesfällen] in Verbindung. Ein Großteil des Problems steckt in verpackten Lebensmitteln und nicht im Salzstreuer, weshalb [p:die Gewohnheit schwer zu erkennen und leicht zu übersehen ist].",
+    "es": "Un adulto promedio consume unos 11 gramos de sal al día, más del doble del límite fijado por la Organización Mundial de la Salud. El exceso de sodio es una causa bien comprobada de hipertensión arterial, y la OMS calcula que estuvo vinculado con [y:1,7 millones de muertes] en 2023. Gran parte del problema reside en los alimentos envasados, no en el salero, razón por la cual [p:el hábito resulta difícil de percibir y pasa inadvertido con facilidad]."
   },
   "sections": [
     {
       "heading_en": "What sodium does",
       "heading_vi": "Natri có vai trò gì",
       "body_en": "Sodium is essential. It helps maintain plasma volume and acid-base balance, supports nerve impulses and keeps cells working normally. Deficiency is extremely unlikely in healthy people {who-sodium}. The trouble is excess. The primary effect linked to high-sodium diets is raised blood pressure, which raises the risk of cardiovascular disease. It is also linked to gastric cancer, obesity, osteoporosis, Ménière's disease and kidney disease {who-sodium}.",
-      "body_vi": "Natri là chất dinh dưỡng thiết yếu. Nó giúp duy trì thể tích huyết tương và cân bằng acid-base, hỗ trợ dẫn truyền xung thần kinh và giữ tế bào hoạt động bình thường. Thiếu natri hầu như không xảy ra ở người khỏe mạnh {who-sodium}. Vấn đề nằm ở mức dư thừa. Tác động chính được gắn với chế độ ăn nhiều natri là huyết áp cao, làm tăng nguy cơ bệnh tim mạch. Natri dư thừa cũng liên quan tới ung thư dạ dày, béo phì, loãng xương, bệnh Ménière và bệnh thận {who-sodium}."
+      "body_vi": "Natri là chất dinh dưỡng thiết yếu. Nó giúp duy trì thể tích huyết tương và cân bằng acid-base, hỗ trợ dẫn truyền xung thần kinh và giữ tế bào hoạt động bình thường. Thiếu natri hầu như không xảy ra ở người khỏe mạnh {who-sodium}. Vấn đề nằm ở mức dư thừa. Tác động chính được gắn với chế độ ăn nhiều natri là huyết áp cao, làm tăng nguy cơ bệnh tim mạch. Natri dư thừa cũng liên quan tới ung thư dạ dày, béo phì, loãng xương, bệnh Ménière và bệnh thận {who-sodium}.",
+      "heading_fr": "Le rôle du sodium",
+      "body_fr": "Le sodium est un nutriment essentiel. Il aide à maintenir le volume plasmatique ainsi que l’équilibre acido-basique, participe à la transmission de l’influx nerveux et assure le bon fonctionnement cellulaire. Une carence est extrêmement improbable chez les personnes en bonne santé {who-sodium}. Le problème réside dans l’excès. Le principal effet associé à une alimentation trop riche en sodium est l’élévation de la tension artérielle, ce qui accroît le risque de maladies cardiovasculaires. Cet excès est également associé au cancer gastrique, à l’obésité, à l’ostéoporose, à la maladie de Ménière et aux affections rénales {who-sodium}.",
+      "heading_de": "Was Natrium bewirkt",
+      "body_de": "Natrium ist lebensnotwendig. Es trägt zur Aufrechterhaltung von Plasmavolumen und Säure-Basen-Haushalt bei, unterstützt Nervenimpulse und sorgt für eine normale Zellfunktion. Ein Mangel ist bei gesunden Menschen extrem unwahrscheinlich {who-sodium}. Das Problem liegt im Übermaß. Die wichtigste Folge einer natriumreichen Ernährung ist Bluthochdruck, der das Risiko für Herz-Kreislauf-Erkrankungen erhöht. Zudem wird sie mit Magenkrebs, Adipositas, Osteoporose, Morbus Menière und Nierenerkrankungen in Verbindung gebracht {who-sodium}.",
+      "heading_es": "La función del sodio",
+      "body_es": "El sodio es indispensable. Ayuda a mantener el volumen plasmático y el equilibrio acidobásico, favorece los impulsos nerviosos y preserva el funcionamiento celular normal. La deficiencia es sumamente improbable en personas sanas {who-sodium}. El inconveniente reside en su exceso. El principal efecto vinculado a dietas ricas en sodio es la hipertensión arterial, que incrementa el riesgo de sufrir enfermedades cardiovasculares. También se asocia con el cáncer gástrico, la obesidad, la osteoporosis, la enfermedad de Ménière y las nefropatías {who-sodium}."
     },
     {
       "heading_en": "Where the sodium comes from",
       "heading_vi": "Natri đến từ đâu",
       "body_en": "Table salt is sodium and chloride, but sodium also occurs naturally in foods such as milk, meat and shellfish. The WHO says breads, processed meat, snack foods and condiments such as soy and fish sauce often contain high amounts {who-sodium}. In many high-income countries, and increasingly in low- and middle-income countries, a significant share of dietary sodium comes from processed foods {who-sodium}. [g:Reading the sodium line on labels] shows more than the salt shaker does.",
-      "body_vi": "Muối ăn gồm natri và clo, nhưng natri cũng có tự nhiên trong các thực phẩm như sữa, thịt và động vật có vỏ. WHO cho biết bánh mì, thịt chế biến, đồ ăn vặt và gia vị như nước tương, nước mắm thường chứa nhiều natri {who-sodium}. Ở nhiều nước thu nhập cao, và ngày càng nhiều ở các nước thu nhập thấp và trung bình, một phần đáng kể lượng natri trong khẩu phần đến từ thực phẩm chế biến {who-sodium}. [g:Đọc dòng natri trên nhãn] cho bạn biết nhiều hơn là chỉ nhìn lọ muối."
+      "body_vi": "Muối ăn gồm natri và clo, nhưng natri cũng có tự nhiên trong các thực phẩm như sữa, thịt và động vật có vỏ. WHO cho biết bánh mì, thịt chế biến, đồ ăn vặt và gia vị như nước tương, nước mắm thường chứa nhiều natri {who-sodium}. Ở nhiều nước thu nhập cao, và ngày càng nhiều ở các nước thu nhập thấp và trung bình, một phần đáng kể lượng natri trong khẩu phần đến từ thực phẩm chế biến {who-sodium}. [g:Đọc dòng natri trên nhãn] cho bạn biết nhiều hơn là chỉ nhìn lọ muối.",
+      "heading_fr": "D’où provient le sodium",
+      "body_fr": "Le sel de table est composé de sodium et de chlorure, mais le sodium est également présent à l’état naturel dans des aliments comme le lait, la viande et les crustacés. Selon l’OMS, les pains, la viande transformée, les en-cas industriels et les condiments comme la sauce soja ou la sauce de poisson en renferment souvent des quantités élevées {who-sodium}. Dans de nombreux pays à revenu élevé, et de plus en plus dans les pays à revenu faible ou intermédiaire, une part importante du sodium alimentaire provient des aliments transformés {who-sodium}. [g:Lire la ligne réservée au sodium sur les étiquettes] est bien plus révélateur que regarder la salière.",
+      "heading_de": "Woher das Natrium stammt",
+      "body_de": "Speisesalz besteht aus Natrium und Chlorid, doch Natrium kommt auch natürlicherweise in Lebensmitteln wie Milch, Fleisch und Schalentieren vor. Laut WHO enthalten Brot, verarbeitetes Fleisch, Knabbergebäck und Würzmittel wie Soja- und Fischsauce oft hohe Mengen {who-sodium}. In vielen einkommensstarken Ländern und zunehmend auch in Ländern mit niedrigem und mittlerem Einkommen stammt ein beträchtlicher Teil des aufgenommenen Natriums aus verarbeiteten Lebensmitteln {who-sodium}. [g:Der Blick auf die Natriumzeile von Etiketten] verrät mehr als der Salzstreuer.",
+      "heading_es": "De dónde proviene el sodio",
+      "body_es": "La sal de mesa está compuesta por sodio y cloro, aunque el sodio también se encuentra de forma natural en alimentos como la leche, la carne y los mariscos. Según la OMS, el pan, las carnes procesadas, los aperitivos y condimentos como las salsas de soja y de pescado suelen contener cantidades elevadas {who-sodium}. En muchos países de ingresos altos, y cada vez más en los de ingresos bajos y medianos, una proporción significativa del sodio dietético procede de alimentos procesados {who-sodium}. [g:Leer la línea del sodio en las etiquetas] aporta mucha más información que el salero."
     },
     {
       "heading_en": "The limit and the conversion",
       "heading_vi": "Giới hạn và cách quy đổi",
       "body_en": "The WHO recommends less than 2,000 mg of sodium a day for adults, which equals less than 5 grams of salt, or just under a teaspoon {who-sodium}. The World Hypertension League's 2014 salt fact sheet gives the same figures for healthy adults, and lower amounts for children, based on their lower energy needs {campbell-2014}. The conversion is simple: one gram of salt equals 400 mg of sodium {who-sodium}. A food label that lists sodium in milligrams therefore tells you the salt in grams by dividing by 400.",
-      "body_vi": "WHO khuyến nghị người trưởng thành ăn ít hơn 2.000 mg natri mỗi ngày, tương đương dưới 5 gam muối, khoảng dưới một thìa cà phê {who-sodium}. Bản tin muối năm 2014 của Liên đoàn Tăng huyết áp Thế giới đưa ra cùng mức cho người trưởng thành khỏe mạnh, và mức thấp hơn cho trẻ em theo nhu cầu năng lượng của các em {campbell-2014}. Cách quy đổi đơn giản: một gam muối tương đương 400 mg natri {who-sodium}. Vì vậy, nhãn ghi natri bằng miligam sẽ cho biết lượng muối bằng gam nếu chia cho 400."
+      "body_vi": "WHO khuyến nghị người trưởng thành ăn ít hơn 2.000 mg natri mỗi ngày, tương đương dưới 5 gam muối, khoảng dưới một thìa cà phê {who-sodium}. Bản tin muối năm 2014 của Liên đoàn Tăng huyết áp Thế giới đưa ra cùng mức cho người trưởng thành khỏe mạnh, và mức thấp hơn cho trẻ em theo nhu cầu năng lượng của các em {campbell-2014}. Cách quy đổi đơn giản: một gam muối tương đương 400 mg natri {who-sodium}. Vì vậy, nhãn ghi natri bằng miligam sẽ cho biết lượng muối bằng gam nếu chia cho 400.",
+      "heading_fr": "La limite recommandée et la conversion",
+      "body_fr": "L’OMS préconise moins de 2 000 mg de sodium par jour pour les adultes, ce qui équivaut à moins de 5 grammes de sel, soit un peu moins d’une cuillère à café {who-sodium}. La fiche d’information sur le sel publiée en 2014 par la World Hypertension League avance les mêmes chiffres pour les adultes en bonne santé, et des quantités moindres pour les enfants en raison de leurs besoins énergétiques plus faibles {campbell-2014}. La conversion est simple : un gramme de sel équivaut à 400 mg de sodium {who-sodium}. Une étiquette nutritionnelle qui indique le sodium en milligrammes permet donc d’obtenir la quantité de sel en grammes en divisant par 400.",
+      "heading_de": "Richtwert und Umrechnung",
+      "body_de": "Die WHO empfiehlt Erwachsenen weniger als 2.000 mg Natrium pro Tag, was weniger als 5 Gramm Salz oder knapp einem Teelöffel entspricht {who-sodium}. Das Faktenblatt zu Salz der World Hypertension League aus dem Jahr 2014 nennt dieselben Zahlen für gesunde Erwachsene und geringere Mengen für Kinder aufgrund ihres niedrigeren Energiebedarfs {campbell-2014}. Die Umrechnung ist einfach: Ein Gramm Salz entspricht 400 mg Natrium {who-sodium}. Ein Lebensmitteletikett, das Natrium in Milligramm angibt, verrät dir somit den Salzgehalt in Gramm, indem du den Wert durch 400 teilst.",
+      "heading_es": "El límite y la equivalencia",
+      "body_es": "La OMS recomienda menos de 2000 mg de sodio al día para adultos, lo que equivale a menos de 5 gramos de sal, o un poco menos de una cucharadita {who-sodium}. La ficha informativa sobre la sal publicada en 2014 por la Liga Mundial contra la Hipertensión ofrece las mismas cifras para adultos sanos y cantidades menores para niños, en función de sus menores necesidades energéticas {campbell-2014}. La conversión es sencilla: un gramo de sal equivale a 400 mg de sodio {who-sodium}. Por tanto, una etiqueta nutricional que indique el sodio en miligramos permite calcular los gramos de sal dividiendo esa cifra entre 400."
     },
     {
       "heading_en": "Cutting it in practice",
       "heading_vi": "Giảm muối trong thực tế",
       "body_en": "The WHO's everyday advice is concrete. Eat more fresh, minimally processed food. Take the saltshaker off the table, and cook with little or no added salt. Use herbs and spices for flavour. [g:If you use salt, choose a lower-sodium substitute that contains potassium] {who-sodium}. Limit commercial sauces, dressings and instant products. Iodine matters too: all salt should be iodized, because iodine is essential for healthy brain development in the foetus and young child {who-sodium}.",
-      "body_vi": "Lời khuyên hằng ngày của WHO khá cụ thể. Ăn nhiều thực phẩm tươi ít chế biến. Đưa lọ muối khỏi bàn ăn, nấu với ít muối hoặc không thêm muối. Dùng thảo mộc và gia vị để tạo hương vị. [g:Nếu dùng muối, hãy chọn loại muối thay thế ít natri có chứa kali] {who-sodium}. Hạn chế nước sốt, nước xốt đóng sẵn và các sản phẩm ăn liền. Iốt cũng quan trọng: mọi loại muối nên được bổ sung iốt, vì iốt cần cho sự phát triển não bộ của thai nhi và trẻ nhỏ {who-sodium}."
+      "body_vi": "Lời khuyên hằng ngày của WHO khá cụ thể. Ăn nhiều thực phẩm tươi ít chế biến. Đưa lọ muối khỏi bàn ăn, nấu với ít muối hoặc không thêm muối. Dùng thảo mộc và gia vị để tạo hương vị. [g:Nếu dùng muối, hãy chọn loại muối thay thế ít natri có chứa kali] {who-sodium}. Hạn chế nước sốt, nước xốt đóng sẵn và các sản phẩm ăn liền. Iốt cũng quan trọng: mọi loại muối nên được bổ sung iốt, vì iốt cần cho sự phát triển não bộ của thai nhi và trẻ nhỏ {who-sodium}.",
+      "heading_fr": "Réduire sa consommation en pratique",
+      "body_fr": "Les recommandations quotidiennes de l’OMS sont concrètes. Mangez davantage d’aliments frais et peu transformés. Retirez la salière de la table et cuisinez avec peu ou pas de sel ajouté. Rehaussez les saveurs à l’aide d’herbes aromatiques et d’épices. [g:Si vous utilisez du sel, optez pour un substitut pauvre en sodium contenant du potassium] {who-sodium}. Limitez les sauces industrielles, les vinaigrettes prêtes à l’emploi et les produits instantanés. L’iode compte également : tout le sel devrait être iodé, car l’iode est indispensable au bon développement cérébral du fœtus et du jeune enfant {who-sodium}.",
+      "heading_de": "Salz sparen in der Praxis",
+      "body_de": "Die Alltagsempfehlungen der WHO sind konkret: Mehr frische, minimal verarbeitete Lebensmittel essen. Den Salzstreuer vom Tisch nehmen und mit wenig oder gar keinem Salzzusatz kochen. Kräuter und Gewürze für den Geschmack nutzen. [g:Wenn du Salz verwendest, wähle einen natriumärmeren Ersatz, der Kalium enthält] {who-sodium}. Fertigsaucen, Dressings und Instantprodukte einschränken. Auch Jod ist wichtig: Speisesalz sollte durchgehend jodiert sein, da Jod für eine gesunde Gehirnentwicklung beim Fötus und Kleinkind unerlässlich ist {who-sodium}.",
+      "heading_es": "Cómo reducirlo en la práctica",
+      "body_es": "Las recomendaciones cotidianas de la OMS son concretas: consumir más alimentos frescos y mínimamente procesados, retirar el salero de la mesa y cocinar con poca o ninguna sal añadida. Conviene recurrir a hierbas y especias para dar sabor. [g:Si usa sal, elija un sustituto bajo en sodio que contenga potasio] {who-sodium}. Asimismo, conviene limitar las salsas comerciales, los aderezos y los productos instantáneos. El yodo también reviste importancia: toda la sal debería ser yodada, ya que el yodo resulta indispensable para el adecuado desarrollo cerebral del feto y del niño pequeño {who-sodium}."
     },
     {
       "heading_en": "Why this is a policy problem",
       "heading_vi": "Vì sao đây là bài toán chính sách",
       "body_en": "Personal choices only go so far when much of the salt is already in packaged food. The WHO lists reformulating products to contain less sodium, supportive environments in hospitals, schools and workplaces, front-of-pack labelling, and mass media campaigns as its best-buy measures {who-sodium}. It also says that for every US$1 invested in sodium reduction, the return is at least US$12 {who-sodium}. The global target was a [y:30% relative cut] in salt intake by 2025, with the timeline later extended to 2030 {who-sodium}.",
-      "body_vi": "Lựa chọn cá nhân chỉ giải quyết được một phần khi nhiều muối đã nằm sẵn trong thực phẩm đóng gói. WHO liệt kê các biện pháp hiệu quả nhất gồm điều chỉnh công thức sản phẩm để giảm natri, môi trường hỗ trợ ở bệnh viện, trường học và nơi làm việc, ghi nhãn mặt trước bao bì, và chiến dịch truyền thông đại chúng {who-sodium}. Tổ chức này cũng cho biết cứ mỗi 1 USD đầu tư vào giảm natri, lợi ích thu về ít nhất là 12 USD {who-sodium}. Mục tiêu toàn cầu là [y:giảm 30% tương đối] lượng muối ăn vào năm 2025, sau đó được kéo dài đến năm 2030 {who-sodium}."
+      "body_vi": "Lựa chọn cá nhân chỉ giải quyết được một phần khi nhiều muối đã nằm sẵn trong thực phẩm đóng gói. WHO liệt kê các biện pháp hiệu quả nhất gồm điều chỉnh công thức sản phẩm để giảm natri, môi trường hỗ trợ ở bệnh viện, trường học và nơi làm việc, ghi nhãn mặt trước bao bì, và chiến dịch truyền thông đại chúng {who-sodium}. Tổ chức này cũng cho biết cứ mỗi 1 USD đầu tư vào giảm natri, lợi ích thu về ít nhất là 12 USD {who-sodium}. Mục tiêu toàn cầu là [y:giảm 30% tương đối] lượng muối ăn vào năm 2025, sau đó được kéo dài đến năm 2030 {who-sodium}.",
+      "heading_fr": "Pourquoi il s’agit d’un enjeu politique",
+      "body_fr": "Les choix individuels atteignent vite leurs limites lorsqu’une grande partie du sel est déjà présente dans les aliments préemballés. L’OMS classe parmi ses interventions les plus rentables la reformulation des produits pour en abaisser la teneur en sodium, la création d’environnements favorables dans les hôpitaux, les écoles et les lieux de travail, l’étiquetage nutritionnel sur la face avant des emballages, ainsi que des campagnes médiatiques de grande envergure {who-sodium}. Elle indique également que pour chaque dollar US investi dans la réduction du sodium, le retour sur investissement est d’au moins 12 dollars US {who-sodium}. L’objectif mondial prévoyait une [y:réduction relative de 30 %] de l’apport en sel d’ici 2025, une échéance qui a ensuite été repoussée à 2030 {who-sodium}.",
+      "heading_de": "Warum dies ein politisches Problem ist",
+      "body_de": "Individuelle Entscheidungen stoßen an Grenzen, wenn ein Großteil des Salzes bereits in verpackten Lebensmitteln steckt. Die WHO führt die Reformulierung von Produkten zur Senkung des Natriumgehalts, ein gesundheitsförderndes Umfeld in Krankenhäusern, Schulen und am Arbeitsplatz, Nährwertkennzeichnungen auf der Packungsvorderseite sowie Massenmedienkampagnen als besonders kosteneffiziente Best-Buy-Maßnahmen an {who-sodium}. Zudem zahle sich jeder in die Natriumreduktion investierte US-Dollar mit einem Ertrag von mindestens 12 US-Dollar aus {who-sodium}. Das globale Ziel sah eine [y:relative Senkung um 30 %] des Salzkonsums bis 2025 vor, wobei der Zeitrahmen später bis 2030 verlängert wurde {who-sodium}.",
+      "heading_es": "Por qué es un problema de salud pública",
+      "body_es": "Las decisiones individuales tienen un alcance limitado cuando la mayor parte de la sal ya está incorporada en los alimentos envasados. La OMS señala como medidas más costoefectivas la reformulación de productos para que contengan menos sodio, la creación de entornos favorables en hospitales, escuelas y lugares de trabajo, el etiquetado frontal en los envases y las campañas en medios de comunicación {who-sodium}. Además, afirma que por cada US$ 1 invertido en la reducción de sodio, el retorno es de al menos US$ 12 {who-sodium}. La meta mundial consistía en una [y:reducción relativa del 30 %] en el consumo de sal para 2025, plazo que posteriormente se prorrogó hasta 2030 {who-sodium}."
     },
     {
       "heading_en": "What countries are asked to do",
       "heading_vi": "Các quốc gia được khuyến nghị làm gì",
       "body_en": "The WHO says sodium reduction should be government-led and safeguarded against conflicts of interest {who-sodium}. It tracks national progress with a Sodium Country Score Card, and its first global report on sodium intake reduction was published in 2023 {who-sodium}. Food makers can reformulate products to meet lower sodium targets, and public institutions can offer lower-sodium options {who-sodium}. Sodium glutamate, a food additive used in many parts of the world, also contains sodium, so reading labels means checking additives as well as salt {who-sodium}.",
-      "body_vi": "WHO cho rằng việc giảm natri cần do chính phủ dẫn dắt và được bảo vệ khỏi xung đột lợi ích {who-sodium}. Tổ chức theo dõi tiến độ của từng nước bằng Thẻ điểm natri quốc gia, và báo cáo toàn cầu đầu tiên về giảm lượng natri đưa vào cơ thể được công bố năm 2023 {who-sodium}. Nhà sản xuất thực phẩm có thể điều chỉnh công thức để đạt mục tiêu natri thấp hơn, còn các cơ sở công có thể cung cấp lựa chọn ít natri hơn {who-sodium}. Bột ngọt, một phụ gia thực phẩm dùng ở nhiều nơi trên thế giới, cũng chứa natri, nên đọc nhãn cần xem cả phụ gia chứ không chỉ muối {who-sodium}."
+      "body_vi": "WHO cho rằng việc giảm natri cần do chính phủ dẫn dắt và được bảo vệ khỏi xung đột lợi ích {who-sodium}. Tổ chức theo dõi tiến độ của từng nước bằng Thẻ điểm natri quốc gia, và báo cáo toàn cầu đầu tiên về giảm lượng natri đưa vào cơ thể được công bố năm 2023 {who-sodium}. Nhà sản xuất thực phẩm có thể điều chỉnh công thức để đạt mục tiêu natri thấp hơn, còn các cơ sở công có thể cung cấp lựa chọn ít natri hơn {who-sodium}. Bột ngọt, một phụ gia thực phẩm dùng ở nhiều nơi trên thế giới, cũng chứa natri, nên đọc nhãn cần xem cả phụ gia chứ không chỉ muối {who-sodium}.",
+      "heading_fr": "Ce qui est attendu des États",
+      "body_fr": "Selon l’OMS, la réduction du sodium doit être menée par les gouvernements et protégée de tout conflit d’intérêts {who-sodium}. L’organisation évalue les progrès nationaux grâce à des fiches de pointage par pays (« Sodium Country Score Card »), et son premier rapport mondial sur la réduction de l’apport en sodium a paru en 2023 {who-sodium}. Les fabricants de produits alimentaires peuvent reformuler leurs recettes afin d’atteindre des cibles plus basses en sodium, et les institutions publiques peuvent proposer des options à teneur réduite en sel {who-sodium}. Le glutamate de sodium, un additif alimentaire très employé à travers le monde, contient lui aussi du sodium : lire les étiquettes suppose donc de vérifier les additifs au même titre que le sel {who-sodium}.",
+      "heading_de": "Was die Staaten tun sollen",
+      "body_de": "Laut WHO sollte die Natriumreduktion staatlich gelenkt und vor Interessenskonflikten geschützt werden {who-sodium}. Sie erfasst nationale Fortschritte mit einer Sodium Country Score Card, und ihr erster weltweiter Bericht zur Reduzierung der Natriumaufnahme erschien 2023 {who-sodium}. Lebensmittelhersteller können Rezepturen anpassen, um niedrigere Natriumziele zu erreichen, und öffentliche Einrichtungen können natriumärmere Alternativen anbieten {who-sodium}. Natriumglutamat, ein in vielen Teilen der Welt verwendeter Zusatzstoff, enthält ebenfalls Natrium – Etiketten zu lesen bedeutet daher, neben Salz auch auf Zusatzstoffe zu achten {who-sodium}.",
+      "heading_es": "Lo que se solicita a los países",
+      "body_es": "La OMS sostiene que la reducción del sodio debe estar liderada por los gobiernos y protegida contra conflictos de intereses {who-sodium}. Evalúa el avance nacional mediante una ficha de puntuación por país sobre el sodio (Sodium Country Score Card), y publicó su primer informe mundial sobre la reducción del consumo de sodio en 2023 {who-sodium}. La industria alimentaria puede reformular productos para cumplir metas más bajas de sodio, y las instituciones públicas pueden ofrecer opciones con menor contenido de este mineral {who-sodium}. El glutamato de sodio, un aditivo alimentario empleado en muchas partes del mundo, también contiene sodio, por lo que revisar las etiquetas exige verificar tanto los aditivos como la sal {who-sodium}."
     },
     {
       "heading_en": "Habits differ by place",
       "heading_vi": "Thói quen khác nhau theo nơi",
       "body_en": "The main sources of sodium depend on a population's culture and eating habits, so they differ between countries {who-sodium}. Breads, processed meat, snack foods and condiments are all common high-sodium foods, and which one matters most depends on the local diet {who-sodium}. WHO says almost all populations consume too much sodium, and the global mean intake of adults was 4,278 mg a day in 2021 {who-sodium}.",
-      "body_vi": "Nguồn natri chính phụ thuộc vào văn hóa và thói quen ăn uống của mỗi cộng đồng, nên khác nhau giữa các nước {who-sodium}. Bánh mì, thịt chế biến, đồ ăn vặt và gia vị đều là những thực phẩm nhiều natri phổ biến, và loại nào quan trọng nhất tùy thuộc vào khẩu phần địa phương {who-sodium}. WHO cho biết hầu hết mọi quần thể đều ăn quá nhiều natri, và lượng natri trung bình của người trưởng thành toàn cầu là 4.278 mg mỗi ngày vào năm 2021 {who-sodium}."
+      "body_vi": "Nguồn natri chính phụ thuộc vào văn hóa và thói quen ăn uống của mỗi cộng đồng, nên khác nhau giữa các nước {who-sodium}. Bánh mì, thịt chế biến, đồ ăn vặt và gia vị đều là những thực phẩm nhiều natri phổ biến, và loại nào quan trọng nhất tùy thuộc vào khẩu phần địa phương {who-sodium}. WHO cho biết hầu hết mọi quần thể đều ăn quá nhiều natri, và lượng natri trung bình của người trưởng thành toàn cầu là 4.278 mg mỗi ngày vào năm 2021 {who-sodium}.",
+      "heading_fr": "Des habitudes qui varient selon les pays",
+      "body_fr": "Les principales sources de sodium dépendent de la culture et des habitudes alimentaires des populations, variant ainsi d’un pays à l’autre {who-sodium}. Les pains, la viande transformée, les en-cas industriels et les condiments constituent tous des aliments courants à forte teneur en sodium, et l’aliment prédominant dépend du régime alimentaire local {who-sodium}. L’OMS souligne que la quasi-totalité des populations consomme trop de sodium, la consommation moyenne mondiale chez les adultes s’élevant à 4 278 mg par jour en 2021 {who-sodium}.",
+      "heading_de": "Regionale Unterschiede bei den Gewohnheiten",
+      "body_de": "Die Hauptquellen für Natrium hängen von der Kultur und den Ernährungsgewohnheiten einer Bevölkerung ab und unterscheiden sich daher von Land zu Land {who-sodium}. Brot, verarbeitetes Fleisch, Knabbergebäck und Würzmittel zählen überall zu den gängigen natriumreichen Lebensmitteln; welche davon am stärksten ins Gewicht fallen, hängt von der lokalen Ernährungsweise ab {who-sodium}. Laut WHO nehmen fast alle Bevölkerungen zu viel Natrium zu sich, und die weltweite durchschnittliche Aufnahme bei Erwachsenen lag 2021 bei 4.278 mg pro Tag {who-sodium}.",
+      "heading_es": "Hábitos que varían según la región",
+      "body_es": "Las principales fuentes de sodio dependen de la cultura y de las costumbres dietéticas de cada población, por lo que varían según el país {who-sodium}. El pan, las carnes procesadas, los aperitivos y los condimentos son alimentos que suelen concentrar mucho sodio, y cuál de ellos tiene mayor impacto depende de la dieta local {who-sodium}. La OMS señala que casi todas las poblaciones consumen sodio en exceso, y que la ingesta media mundial en adultos fue de 4278 mg diarios en 2021 {who-sodium}."
     }
   ],
   "keyPoint": {
     "en": "[p:Much of the salt adults eat comes from processed food, so reading labels matters as much as the salt shaker.] The WHO advice for adults is under 2,000 mg of sodium a day, which is under 5 grams of salt.",
-    "vi": "[p:Phần lớn muối người lớn ăn vào đến từ thực phẩm chế biến, nên đọc nhãn cũng quan trọng không kém lọ muối.] Khuyến nghị của WHO cho người lớn là dưới 2.000 mg natri mỗi ngày, tức dưới 5 gam muối."
+    "vi": "[p:Phần lớn muối người lớn ăn vào đến từ thực phẩm chế biến, nên đọc nhãn cũng quan trọng không kém lọ muối.] Khuyến nghị của WHO cho người lớn là dưới 2.000 mg natri mỗi ngày, tức dưới 5 gam muối.",
+    "fr": "[p:Une grande partie du sel consommé par les adultes provient des aliments transformés ; lire les étiquettes est donc tout aussi important que surveiller la salière.] L’OMS recommande aux adultes de consommer moins de 2 000 mg de sodium par jour, soit moins de 5 grammes de sel.",
+    "de": "[p:Ein Großteil des von Erwachsenen verzehrten Salzes stammt aus verarbeiteten Lebensmitteln, daher ist das Lesen von Etiketten genauso wichtig wie der Salzstreuer.] Die Empfehlung der WHO für Erwachsene liegt bei unter 2.000 mg Natrium pro Tag, was weniger als 5 Gramm Salz entspricht.",
+    "es": "[p:Gran parte de la sal que consumen los adultos procede de alimentos procesados, por lo que revisar las etiquetas importa tanto como el salero.] La recomendación de la OMS para adultos es de menos de 2000 mg de sodio al día, lo que equivale a menos de 5 gramos de sal."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Kiểm tra dòng natri trên nhãn của ba thực phẩm đóng gói bạn ăn nhiều nhất, và ghi lại số miligam mỗi khẩu phần.",
       "Dùng cách quy đổi 400 mg natri tương đương 1 gam muối để đổi lượng natri trên một nhãn sang gam muối.",
       "Cất lọ muối khỏi tầm mắt trong một tuần và nêm bằng thảo mộc hoặc gia vị."
+    ],
+    "fr": [
+      "Vérifiez la ligne réservée au sodium sur l’étiquette de vos trois aliments préemballés les plus consommés, et notez le nombre de milligrammes par portion.",
+      "Appliquez l’équivalence de 400 mg de sodium pour 1 gramme de sel afin de convertir en grammes de sel la teneur en sodium figurant sur l’une des étiquettes.",
+      "Éloignez la salière de votre vue pendant une semaine et assaisonnez plutôt vos plats avec des herbes ou des épices."
+    ],
+    "de": [
+      "Die Natriumangabe auf den Etiketten deiner drei meistverzehrten verpackten Lebensmittel prüfen und die Milligramm pro Portion notieren.",
+      "Die Umrechnung von 400 mg Natrium auf 1 Gramm Salz anwenden, um den Natriumwert eines Etiketts in Gramm Salz umzurechnen.",
+      "Den Salzstreuer für eine Woche außer Sichtweite stellen und stattdessen mit Kräutern oder Gewürzen abschmecken."
+    ],
+    "es": [
+      "Revise la línea del sodio en las etiquetas de los tres alimentos envasados que consuma con mayor frecuencia y anote los miligramos por porción.",
+      "Utilice la equivalencia de 400 mg de sodio por cada 1 gramo de sal para convertir a gramos de sal el sodio indicado en una etiqueta.",
+      "Retire el salero de la vista durante una semana y sazone sus platos con hierbas o especias en su lugar."
     ]
   },
   "references": [
@@ -100,12 +166,91 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/sodium-salt-intake-who.webp",
+    "url": "https://images.unsplash.com/2/08.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE3fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Paul Jarvis",
+    "author": "p j",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/IQ1kOQTJrOQ"
+    "sourceUrl": "https://unsplash.com/photos/IQ1kOQTJrOQ",
+    "wide": "https://images.unsplash.com/2/08.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ3ODE3fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@pjrvs?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoQABwAPu1iqU2ppaQiMAgBMB2JZQABHus5JG/A/r5hVAQAAP78e4bbixkMqCLKVlD36WNTmmYMyL5Ya4BZ1dlHbYWeQ+A+QxbDE7SZr7Z7nkSvQAWrLcMKSgVrrEMdb3vIfrAA",
-  "dominant": "#797774"
+  "dominant": "#797774",
+  "glossary": {
+    "en": {
+      "plasma volume": "The liquid portion of blood that circulates through the body's blood vessels.",
+      "acid-base balance": "The regulation of acidity and alkalinity in bodily fluids necessary for normal cellular function.",
+      "cardiovascular disease": "A group of disorders affecting the heart and blood vessels, including stroke and heart attack.",
+      "gastric cancer": "Cancer that develops in the inner lining of the stomach.",
+      "osteoporosis": "A medical condition where bones become brittle, fragile, and prone to breaking.",
+      "ménière's disease": "An inner-ear disorder causing severe dizziness, ringing sounds, and hearing problems.",
+      "potassium": "A mineral nutrient that helps balance sodium levels and lower blood pressure.",
+      "iodized": "Enriched with iodine, an essential element needed for healthy thyroid and brain development.",
+      "front-of-pack labelling": "Nutritional information or warning symbols placed visibly on the front of food packages.",
+      "best-buy measures": "Highly cost-effective public health interventions recommended by the World Health Organization.",
+      "sodium glutamate": "A savory flavor-enhancing food additive containing sodium, commonly known as MSG."
+    },
+    "vi": {
+      "natri": "Khoáng chất thiết yếu trong muối ăn, khi tiêu thụ dư thừa sẽ gây tăng huyết áp.",
+      "huyết tương": "Thành phần chất lỏng trong máu giúp duy trì thể tích tuần hoàn và vận chuyển dinh dưỡng.",
+      "acid-base": "Trạng thái cân bằng giữa nồng độ axit và kiềm trong dịch cơ thể.",
+      "xung thần kinh": "Tín hiệu điện sinh học truyền dọc tế bào thần kinh để điều khiển hoạt động cơ thể.",
+      "bệnh tim mạch": "Các bệnh liên quan đến tổn thương hoặc rối loạn chức năng của tim và mạch máu.",
+      "bệnh ménière": "Rối loạn tai trong gây ra chóng mặt, ù tai và suy giảm thính lực.",
+      "loãng xương": "Tình trạng mật độ xương giảm sút khiến xương trở nên giòn, yếu và dễ gãy.",
+      "clo": "Nguyên tố hóa học cấu thành muối ăn khi kết hợp với natri.",
+      "who": "Tổ chức Y tế Thế giới, cơ quan chuyên môn y tế toàn cầu của Liên Hợp Quốc.",
+      "kali": "Khoáng chất thiết yếu giúp hạ huyết áp và giảm tác hại của natri trong cơ thể.",
+      "iốt": "Vi chất dinh dưỡng thiết yếu cho sự phát triển não bộ của thai nhi và trẻ nhỏ.",
+      "bột ngọt": "Phụ gia thực phẩm tạo vị ngọt thịt, có chứa natri và thường dùng trong nấu ăn."
+    },
+    "fr": {
+      "oms": "Organisation mondiale de la santé, agence de l’ONU spécialisée dans la santé publique internationale.",
+      "volume plasmatique": "Partie liquide du sang circulant dans les vaisseaux sanguins de l’organisme.",
+      "équilibre acido-basique": "Maintien du pH corporel à un niveau physiologique stable et optimal.",
+      "maladie de ménière": "Affection de l’oreille interne provoquant des vertiges, des acouphènes et des troubles auditifs.",
+      "ostéoporose": "Maladie caractérisée par une fragilisation des os et une baisse de leur densité.",
+      "world hypertension league": "Organisation internationale dédiée à la prévention et au contrôle de l’hypertension artérielle.",
+      "potassium": "Minéral utilisé comme substitut au sodium pour abaisser la tension artérielle.",
+      "iode": "Oligoélément essentiel au bon développement cérébral du fœtus et au système hormonal.",
+      "glutamate de sodium": "Additif alimentaire rehausseur de goût, apportant du sodium dans de nombreux produits transformés.",
+      "chlorure": "Composant minéral du sel de table qui s’associe au sodium pour former le sel."
+    },
+    "de": {
+      "plasmavolumen": "Flüssigkeitsmenge des Blutes außerhalb der Blutzellen, wichtig für den Blutkreislauf und den Blutdruck.",
+      "säure-basen-haushalt": "Physiologisches Gleichgewicht zwischen sauren und basischen Verbindungen zur Stabilisierung des pH-Werts im Körper.",
+      "adipositas": "Starkes Übergewicht durch krankhaft vermehrte Fettansammlung im Körper mit gesundheitlichen Folgerisiken.",
+      "osteoporose": "Chronische Skeletterkrankung mit abnehmender Knochendichte und erhöhter Anfälligkeit für Knochenbrüche.",
+      "morbus menière": "Erkrankung des Innenohrs, die zu wiederkehrenden Schwindelanfällen, Hörverlust und Ohrengeräuschen führt.",
+      "chlorid": "Lebenswichtiger Mineralstoff, der zusammen mit Natrium Kochsalz bildet und den Wasserhaushalt mitsteuert.",
+      "world hypertension league": "Internationaler Dachverband von Fachgesellschaften zur weltweiten Vorbeugung und Beherrschung von Bluthochdruck.",
+      "jodiert": "Mit dem essenziellen Spurenelement Jod angereichert, um Kropfbildung und Entwicklungsstörungen zu verhindern.",
+      "reformulierung": "Industrielle Anpassung von Lebensmittelrezepturen, um ungesunde Bestandteile wie Natrium planvoll zu verringern.",
+      "best-buy-maßnahmen": "Von der WHO empfohlene, besonders kosteneffiziente und wirksame gesundheitspolitische Maßnahmen zur Prävention.",
+      "natriumglutamat": "Natriumsalz der Glutaminsäure, das als Geschmacksverstärker vielen Fertiggerichten und Würzmitteln beigemischt wird."
+    },
+    "es": {
+      "volumen plasmático": "Volumen de líquido contenido en el compartimento intravascular de la sangre que asegura una adecuada circulación.",
+      "equilibrio acidobásico": "Equilibrio químico preciso entre acidez y alcalinidad en los fluidos corporales para el correcto funcionamiento celular.",
+      "enfermedad de ménière": "Afección del oído interno que suele provocar episodios recurrentes de vértigo, pérdida auditiva y zumbidos.",
+      "nefropatías": "Término general que designa cualquier enfermedad o daño que afecte la estructura y función de los riñones.",
+      "oms": "Sigla de la Organización Mundial de la Salud, agencia internacional responsable de las políticas sanitarias globales.",
+      "etiquetado frontal": "Sellos gráficos de advertencia ubicados en la cara delantera de los envases sobre nutrientes críticos.",
+      "glutamato de sodio": "Aditivo utilizado para potenciar el sabor de los alimentos que aporta sodio a la dieta diaria.",
+      "yodo": "Micronutriente esencial para la producción de hormonas tiroideas y el adecuado desarrollo del cerebro infantil.",
+      "hipertensión arterial": "Elevación persistente de la tensión sanguínea en las arterias que incrementa el riesgo cardiovascular.",
+      "potasio": "Mineral que ayuda a regular la presión arterial y contrarresta los efectos adversos del exceso de sodio."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

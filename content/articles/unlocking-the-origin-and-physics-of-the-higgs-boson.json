@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Unlocking the Origin and Physics of the Higgs Boson",
-    "vi": "Khám phá Nguồn gốc và Vật lý của Hạt Higgs"
+    "vi": "Khám phá Nguồn gốc và Vật lý của Hạt Higgs",
+    "fr": "Comprendre l'origine et la physique du boson de Higgs",
+    "de": "Ursprung und Physik des Higgs-Bosons entschlüsseln",
+    "es": "Descifrando el origen y la física del bosón de Higgs"
   },
   "hook": {
     "en": "The Higgs boson stands as the final puzzle piece of the Standard Model of particle physics {source}. Found at CERN in 2012, this unique particle emerges from a fundamental field that shapes the mass of the Universe. Understanding its origins requires looking back to the hot Big Bang.",
-    "vi": "Hạt Higgs là mảnh ghép cuối cùng của Mô hình Chuẩn trong vật lý hạt {source}. Được phát hiện tại CERN vào năm 2012, hạt độc đáo này xuất hiện từ một trường cơ bản định hình khối lượng của Vũ trụ. Việc hiểu rõ nguồn gốc của nó đòi hỏi phải nhìn lại Vụ nổ Lớn nóng bỏng."
+    "vi": "Hạt Higgs là mảnh ghép cuối cùng của Mô hình Chuẩn trong vật lý hạt {source}. Được phát hiện tại CERN vào năm 2012, hạt độc đáo này xuất hiện từ một trường cơ bản định hình khối lượng của Vũ trụ. Việc hiểu rõ nguồn gốc của nó đòi hỏi phải nhìn lại Vụ nổ Lớn nóng bỏng.",
+    "fr": "Le boson de Higgs constitue la pièce finale du puzzle du modèle standard de la physique des particules {source}. Découverte au CERN en 2012, cette particule unique émerge d'un champ fondamental qui façonne la masse de l'Univers. Comprendre ses origines exige de remonter jusqu'au Big Bang chaud.",
+    "de": "Das Higgs-Boson gilt als das letzte Puzzleteil des Standardmodells der Teilchenphysik {source}. Dieses 2012 am CERN entdeckte, einzigartige Teilchen geht aus einem fundamentalen Feld hervor, das die Masse des Universums prägt. Um seinen Ursprung zu verstehen, ist ein Blick zurück auf den heißen Urknall erforderlich.",
+    "es": "El bosón de Higgs representa la última pieza del rompecabezas del Modelo Estándar de la física de partículas {source}. Descubierta en el CERN en 2012, esta partícula única surge de un campo fundamental que determina la masa del universo. Comprender sus orígenes exige retroceder hasta el Big Bang caliente."
   },
   "sections": [
     {
       "heading_en": "Early Universe and Symmetry",
       "heading_vi": "Vũ trụ Sơ khai và Tính đối xứng",
       "body_en": "During the early stages of the hot Big Bang, the Universe possessed massless fermions alongside four massless bosons known as the W1, W2, W3, and B. The Higgs field existed in a restored symmetry state resembling the peak of a hat, where all directions appeared equivalent.",
-      "body_vi": "Trong giai đoạn đầu của Vụ nổ Lớn nóng bỏng, Vũ trụ sở hữu các fermion không có khối lượng cùng với bốn boson không có khối lượng được gọi là W1, W2, W3 và B. Trường Higgs tồn tại ở trạng thái đối xứng được khôi phục giống như đỉnh của một chiếc mũ, nơi mọi hướng đều trông tương đương."
+      "body_vi": "Trong giai đoạn đầu của Vụ nổ Lớn nóng bỏng, Vũ trụ sở hữu các fermion không có khối lượng cùng với bốn boson không có khối lượng được gọi là W1, W2, W3 và B. Trường Higgs tồn tại ở trạng thái đối xứng được khôi phục giống như đỉnh của một chiếc mũ, nơi mọi hướng đều trông tương đương.",
+      "heading_fr": "L'Univers primordial et la symétrie",
+      "body_fr": "Au cours des premières étapes du Big Bang chaud, l'Univers abritait des fermions sans masse aux côtés de quatre bosons sans masse appelés W1, W2, W3 et B. Le champ de Higgs se trouvait alors dans un état de symétrie restaurée rappelant le sommet d'un chapeau, où toutes les directions apparaissaient équivalentes.",
+      "heading_de": "Frühes Universum und Symmetrie",
+      "body_de": "In den frühen Phasen des heißen Urknalls besaß das Universum masselose Fermionen sowie vier masselose Bosonen, die als W1, W2, W3 und B bekannt sind. Das Higgs-Feld befand sich in einem Zustand wiederhergestellter Symmetrie, der der Spitze eines Hutes glich, an der alle Richtungen gleichwertig erschienen.",
+      "heading_es": "El universo primitivo y la simetría",
+      "body_es": "Durante las etapas iniciales del Big Bang caliente, el universo poseía fermiones sin masa junto a cuatro bosones sin masa conocidos como W1, W2, W3 y B. El campo de Higgs existía en un estado de simetría restaurada similar a la cima de un sombrero, donde todas las direcciones parecían equivalentes."
     },
     {
       "heading_en": "The Electroweak Transition",
       "heading_vi": "Chuyển pha Điện yếu",
       "body_en": "A critical transition occurred when the Universe cooled through an energy-equivalent of about 250 GeV, roughly a picosecond after the start of the hot Big Bang. This electroweak phase transition caused the Higgs mechanism to spontaneously break the unified electroweak force into separate electromagnetic and weak nuclear forces.",
-      "body_vi": "Một chuyển đổi quan trọng xảy ra khi Vũ trụ nguội đi qua mức năng lượng tương đương khoảng 250 GeV, khoảng một picosecond sau khi Vụ nổ Lớn bắt đầu. Chuyển pha điện yếu này khiến cơ chế Higgs tự động phá vỡ lực điện yếu thống nhất thành các lực điện từ và lực hạt nhân yếu riêng biệt."
+      "body_vi": "Một chuyển đổi quan trọng xảy ra khi Vũ trụ nguội đi qua mức năng lượng tương đương khoảng 250 GeV, khoảng một picosecond sau khi Vụ nổ Lớn bắt đầu. Chuyển pha điện yếu này khiến cơ chế Higgs tự động phá vỡ lực điện yếu thống nhất thành các lực điện từ và lực hạt nhân yếu riêng biệt.",
+      "heading_fr": "La transition électrofaible",
+      "body_fr": "Une transition critique s'est produite lorsque l'Univers s'est refroidi pour atteindre un équivalent énergétique d'environ 250 GeV, soit à peu près une picoseconde après le début du Big Bang chaud. Cette transition de phase électrofaible a conduit le mécanisme de Higgs à briser spontanément la force électrofaible unifiée en deux forces distinctes : la force électromagnétique et la force nucléaire faible.",
+      "heading_de": "Der elektroschwache Übergang",
+      "body_de": "Ein entscheidender Übergang vollzog sich, als das Universum rund eine Pikosekunde nach Beginn des heißen Urknalls auf ein Energieäquivalent von etwa 250 GeV abkühlte. Dieser elektroschwache Phasenübergang führte dazu, dass der Higgs-Mechanismus die vereinte elektroschwache Kraft spontan in separate elektromagnetische und schwache Kernkräfte aufspaltete.",
+      "heading_es": "La transición electrodébil",
+      "body_es": "Ocurrió una transición crítica cuando el universo se enfrió por debajo de un equivalente energético de unos 250 GeV, cerca de un picosegundo después del inicio del Big Bang caliente. Esta transición de fase electrodébil provocó que el mecanismo de Higgs rompiera espontáneamente la fuerza electrodébil unificada en fuerzas electromagnéticas y nucleares débiles independientes."
     },
     {
       "heading_en": "Birth of the Higgs Boson",
       "heading_vi": "Sự ra đời của Hạt Higgs",
       "body_en": "Symmetry breaking produced four scalar components. Three combined with electroweak bosons to form massive W-and-Z bosons while leaving one combination as the massless photon. The final remaining degree of freedom oscillated radially to create the massive Higgs boson {source}.",
-      "body_vi": "Sự phá vỡ đối xứng tạo ra bốn thành phần vô hướng. Ba thành phần kết hợp với các boson điện yếu để tạo thành các boson W và Z có khối lượng trong khi để lại một tổ hợp làm photon không có khối lượng. Bậc tự do cuối cùng còn lại dao động theo hướng bán kính để tạo ra hạt Higgs có khối lượng {source}."
+      "body_vi": "Sự phá vỡ đối xứng tạo ra bốn thành phần vô hướng. Ba thành phần kết hợp với các boson điện yếu để tạo thành các boson W và Z có khối lượng trong khi để lại một tổ hợp làm photon không có khối lượng. Bậc tự do cuối cùng còn lại dao động theo hướng bán kính để tạo ra hạt Higgs có khối lượng {source}.",
+      "heading_fr": "Naissance du boson de Higgs",
+      "body_fr": "La brisure de symétrie a engendré quatre composantes scalaires. Trois d'entre elles se sont combinées avec des bosons électrofaibles pour former des bosons W et Z massifs, tout en laissant une combinaison sous la forme du photon sans masse. Le dernier degré de liberté restant a oscillé radialement pour donner naissance au boson de Higgs massif {source}.",
+      "heading_de": "Geburt des Higgs-Bosons",
+      "body_de": "Die Symmetriebrechung brachte vier skalare Komponenten hervor. Drei davon verbanden sich mit elektroschwachen Bosonen zu massereichen W- und Z-Bosonen, während eine Kombination als masseloses Photon verblieb. Der letzte verbleibende Freiheitsgrad oszillierte radial und erzeugte so das massereiche Higgs-Boson {source}.",
+      "heading_es": "El nacimiento del bosón de Higgs",
+      "body_es": "La ruptura de simetría generó cuatro componentes escalares. Tres de ellos se combinaron con bosones electrodébiles para formar bosones masivos W y Z, dejando una combinación como el fotón sin masa. El último grado de libertad restante osciló radialmente para dar lugar al masivo bosón de Higgs {source}."
     }
   ],
   "references": [
@@ -46,11 +70,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/903/1080/1920",
+    "url": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE4fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Greg Rakozy",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I"
+    "sourceUrl": "https://unsplash.com/photos/oMpAz-DN-9I",
+    "wide": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE4fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@grakozy?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,
@@ -75,6 +101,21 @@
       "Xem lại các hạt cơ bản được liệt kê trong Mô hình Chuẩn.",
       "Nhớ lại rằng khối lượng phát sinh từ sự tương tác trường thay vì việc cắt nhỏ đơn giản.",
       "Đọc thêm sách về các trường lượng tử để đào sâu kiến thức của bạn."
+    ],
+    "fr": [
+      "Examiner les particules élémentaires répertoriées dans le modèle standard.",
+      "Se rappeler que la masse provient d'interactions de champs plutôt que d'une simple division.",
+      "Consulter d'autres ouvrages sur les champs quantiques afin d'approfondir vos connaissances."
+    ],
+    "de": [
+      "Die im Standardmodell aufgeführten Elementarteilchen wiederholen.",
+      "Sich in Erinnerung rufen, dass Masse aus Feldwechselwirkungen und nicht durch bloßes Zerteilen entsteht.",
+      "Weiterführende Bücher über Quantenfelder lesen, um dein Wissen zu vertiefen."
+    ],
+    "es": [
+      "Repase las partículas elementales descritas en el Modelo Estándar.",
+      "Recuerde que la masa surge de interacciones de campos y no de una simple división.",
+      "Lea más libros sobre campos cuánticos para profundizar sus conocimientos."
     ]
   },
   "coverCandidates": [
@@ -111,9 +152,83 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
+  },
+  "glossary": {
+    "en": {
+      "higgs boson": "A massive elementary particle produced by oscillations of the Higgs field that confirms how particles acquire mass.",
+      "standard model": "The fundamental theory in physics describing all known elementary particles and three of the four fundamental forces.",
+      "cern": "The European research organization operating the world's largest particle physics laboratory where the Higgs boson was discovered.",
+      "fermions": "Matter particles that were massless in the early Universe before interacting with the Higgs field.",
+      "bosons": "Force-carrying particles that were originally massless before the electroweak symmetry broke in the early Universe.",
+      "higgs field": "An energy field spanning the Universe that gives mass to elementary particles through spontaneous symmetry breaking.",
+      "gev": "Gigaelectronvolt, a unit of energy and mass commonly used in high-energy particle physics.",
+      "electroweak phase transition": "The cosmic event when cooling caused the unified electroweak force to split into electromagnetism and weak force.",
+      "higgs mechanism": "The physical process where gauge bosons acquire mass through spontaneous symmetry breaking of the Higgs field.",
+      "electroweak force": "The single unified force combining electromagnetism and the weak nuclear force in the early high-energy Universe.",
+      "photon": "The massless gauge boson that mediates electromagnetism, remaining massless after electroweak symmetry breaking.",
+      "degree of freedom": "An independent mode of oscillation in a quantum field, which here forms the massive Higgs boson."
+    },
+    "vi": {
+      "hạt higgs": "Hạt cơ bản tạo ra khối lượng cho các hạt khác thông qua tương tác với trường Higgs.",
+      "mô hình chuẩn": "Lý thuyết mô tả các hạt cơ bản và các lực tương tác cơ bản trong vũ trụ.",
+      "cern": "Tổ chức Nghiên cứu Hạt nhân Châu Âu, nơi đặt máy gia tốc hạt lớn phát hiện hạt Higgs.",
+      "fermion": "Nhóm hạt vật chất cơ bản cấu tạo nên vật chất, bao gồm quark và lepton.",
+      "boson": "Hạt mang lực, truyền các tương tác cơ bản giữa các hạt vật chất.",
+      "trường higgs": "Trường năng lượng vô hướng lượng tử bao trùm vũ trụ, truyền khối lượng cho các hạt.",
+      "gev": "Đơn vị đo năng lượng và khối lượng phổ biến trong vật lý hạt.",
+      "picosecond": "Đơn vị thời gian cực ngắn, tương đương một phần nghìn tỷ giây.",
+      "cơ chế higgs": "Quá trình phá vỡ đối xứng tự phát mang lại khối lượng cho các boson chuẩn.",
+      "lực điện yếu": "Lực thống nhất giữa tương tác điện từ và tương tác yếu ở mức năng lượng cao.",
+      "lực điện từ": "Tương tác cơ bản giữa các hạt mang điện tích, được truyền bởi photon.",
+      "photon": "Hạt ánh sáng không có khối lượng, là hạt truyền tương tác của lực điện từ."
+    },
+    "fr": {
+      "boson de higgs": "Particule élémentaire liée au champ fondamental conférant leur masse à plusieurs particules élémentaires du modèle standard.",
+      "modèle standard": "Théorie décrivant les constituants élémentaires de la matière et leurs interactions électromagnétique, faible et forte.",
+      "cern": "Laboratoire européen de physique des particules abritant le Grand collisionneur de hadrons ayant découvert le boson.",
+      "big bang chaud": "Modèle cosmologique décrivant l'expansion précoce de l'Univers à partir d'un état extrêmement dense et chaud.",
+      "fermions": "Famille de particules de matière, comprenant notamment les quarks et les leptons, obéissant au principe d'exclusion.",
+      "gev": "Gigaélectronvolt, unité d'énergie valant un milliard d'électronvolts, employée pour caractériser les particules élémentaires.",
+      "force électrofaible": "Interaction unifiée regroupant l'électromagnétisme et l'interaction nucléaire faible aux énergies élevées de l'Univers primordial.",
+      "brisure de symétrie": "Phénomène physique où un état perd sa symétrie initiale, séparant les forces et générant des masses.",
+      "composantes scalaires": "Champs quantiques à spin nul sans direction spatiale privilégiée, constitutifs du champ de Higgs complexe.",
+      "photon": "Boson de jauge de masse nulle agissant comme médiateur de la force électromagnétique.",
+      "degré de liberté": "Variable indépendante décrivant un état physique ou une oscillation possible d'un système quantique."
+    },
+    "de": {
+      "higgs-boson": "Elementarteilchen, das durch Anregung des Higgs-Feldes entsteht und anderen Teilchen Masse verleiht.",
+      "standardmodells": "Physikalische Theorie, die alle bekannten Elementarteilchen und drei der vier fundamentalen Naturkräfte beschreibt.",
+      "teilchenphysik": "Teilgebiet der Physik, das die kleinsten Bausteine der Materie und deren Wechselwirkungen erforscht.",
+      "cern": "Europäische Organisation für Kernforschung bei Genf, an der fundamentale Teilchen experimentell erforscht werden.",
+      "fermionen": "Teilchen mit halbzahligem Eigendrehimpuls, aus denen die materielle Substanz des Universums besteht.",
+      "bosonen": "Teilchen mit ganzzahligem Spin, die als Trägerteilchen fundamentale Kräfte zwischen Materieteilchen vermitteln.",
+      "higgs-feld": "Fundamentales skalares Quantenfeld, dessen Wechselwirkung mit anderen Teilchen deren Masse verursacht.",
+      "gev": "Gigaelektronenvolt, eine in der Hochenergiephysik übliche Maßeinheit für Energie und Masse.",
+      "pikosekunde": "Zeiteinheit von einem Billionstel einer Sekunde (10⁻¹² Sekunden).",
+      "higgs-mechanismus": "Vorgang, bei dem Eichbosonen durch spontane Brechung der elektroschwachen Symmetrie Masse erhalten.",
+      "symmetriebrechung": "Übergang eines Systems in einen Zustand, der weniger symmetrisch ist als seine Grundgleichungen.",
+      "photon": "Das masselose Eichboson, das die elektromagnetische Kraft überträgt, auch bekannt als Lichtquant."
+    },
+    "es": {
+      "bosón de higgs": "Partícula elemental asociada al campo cuántico fundamental que confiere masa a otras partículas en el Modelo Estándar.",
+      "modelo estándar": "Teoría marco que describe las partículas elementales conocidas y tres de las cuatro fuerzas fundamentales del universo.",
+      "cern": "Laboratorio europeo de física de partículas donde se confirmó experimentalmente la existencia del bosón de Higgs en 2012.",
+      "big bang caliente": "Modelo cosmológico que describe el universo primigenio en un estado inicial extraordinariamente caliente, denso y en expansión.",
+      "fermiones": "Partículas elementales con espín semientero que componen la materia ordinaria, tales como los quarks y los leptones.",
+      "bosones": "Partículas mediadoras de interacciones fundamentales o asociadas a campos cuánticos que presentan espín entero.",
+      "gev": "Gigaelectronvoltio, unidad estándar de energía empleada en física subatómica equivalente a mil millones de electronvoltios.",
+      "mecanismo de higgs": "Proceso por el cual la ruptura espontánea de simetría electrodébil otorga masa a los bosones intermediarios.",
+      "fuerza electrodébil": "Interacción fundamental unificada que integra el electromagnetismo y la fuerza nuclear débil a temperaturas y energías extremas.",
+      "fotón": "Bosón gauge sin masa responsable de mediar la interacción electromagnética en la naturaleza.",
+      "grado de libertad": "Dirección o parámetro independiente en el que un sistema o campo físico puede oscilar o transformarse."
+    }
   }
 }

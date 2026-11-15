@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/564/1080/1920",
+    "url": "https://images.unsplash.com/photo-1416949929422-a1d9c8fe84af?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "Sebastian Boguszewicz",
+    "author": "Hikersbay Hikersbay",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg"
+    "sourceUrl": "https://unsplash.com/photos/YG_Fxyqz9xg",
+    "wide": "https://images.unsplash.com/photo-1416949929422-a1d9c8fe84af?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzMzMjQzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@hikersbay?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

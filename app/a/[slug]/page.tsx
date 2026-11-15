@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const a = readArticle(slug);
-  if (!a) return { title: 'Reader' };
+  if (!a) return { title: 'Pagemoor' };
   const description = richToText(a.hook.en).slice(0, 180);
   const image = a.cover.type === 'video' ? a.cover.poster : a.cover.url;
   return {

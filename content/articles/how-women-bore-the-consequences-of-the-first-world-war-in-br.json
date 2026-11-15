@@ -41,11 +41,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/442/1080/1920",
+    "url": "https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Sylwia Bartyzel",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/D2K1UZr4vxk"
+    "sourceUrl": "https://unsplash.com/photos/D2K1UZr4vxk",
+    "wide": "https://images.unsplash.com/45/eDLHCtzRR0yfFtU0BQar_sylwiabartyzel_themap.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@sylwiabartyzel?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -90,7 +92,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết khám phá những tác động chưa được kể của Thế chiến thứ nhất đối với phụ nữ tại Punjab thuộc địa. Trong khi phần lớn lịch sử tập trung vào nam binh sĩ, phụ nữ ở hậu phương phải đối mặt với nghèo đói, gánh nặng kinh tế và sự gia tăng của hệ thống phân tộc phụ hệ. Nhiều người đã tìm cách chống lại lệnh tòng quân bằng cách ca hát, gửi thư chỉ trích chính quyền và cản trở việc tuyển quân, cho thấy phản ứng phức tạp trước cuộc chiến của đế quốc."
+    "vi": "Bài viết khám phá những tác động chưa được kể của Thế chiến thứ nhất đối với phụ nữ tại Punjab thuộc địa. Trong khi phần lớn lịch sử tập trung vào nam binh sĩ, phụ nữ ở hậu phương phải đối mặt với nghèo đói, gánh nặng kinh tế và sự gia tăng của hệ thống phân tộc phụ hệ. Nhiều người đã tìm cách chống lại lệnh tòng quân bằng cách ca hát, gửi thư chỉ trích chính quyền và cản trở việc tuyển quân, cho thấy phản ứng phức tạp trước cuộc chiến của đế quốc.",
+    "fr": "Si la mémoire de la Première Guerre mondiale valorise surtout les soldats indiens, les femmes du Pendjab en ont durement subi les répercussions à l'arrière. Confrontées au militarisme de l'Empire britannique, qui a renforcé les hiérarchies patriarcales locales, beaucoup ont contesté la conscription : loin de se résigner, des paysannes ont perturbé les recrutements et composé des chants critiques envers la Couronne. Abandonnées dans une extrême précarité financière et matérielle, elles ont exigé des comptes de leurs époux partis au front. Leurs témoignages révèlent ainsi la face cachée et intime de la guerre.",
+    "de": "Während die Erinnerung an den Ersten Weltkrieg meist männliche Soldaten hervorhebt, litten im kolonialen Indien vor allem die zurückgebliebenen Frauen unter den verheerenden Folgen des Konflikts. Durch die britische Rekrutierungspolitik im Punjab, der rund sechzig Prozent der Armee stellte, verfestigten sich bestehende patriarchalische Strukturen. Die Frauen blieben jedoch nicht passiv: Viele wehrten sich aktiv gegen die Einberufung ihrer Ehemänner und Söhne, indem sie Rekrutierungstrupps behinderten und in kritischen Liedern die Kolonialmacht anprangerten. Neben dem emotionalen Verlust kämpften sie zu Hause gegen akute Armut, ausbleibende Soldzahlungen und Hunger, während sie gleichzeitig das Überleben ihrer Familien sichern mussten.",
+    "es": "Durante la Primera Guerra Mundial, el reclutamiento masivo en Punjab intensificó las jerarquías patriarcales bajo el dominio británico. Mientras la memoria oficial suele priorizar los frentes de combate, las mujeres asumieron los costos invisibles de la contienda. Lejos de resignarse, muchas campesinas obstaculizaron activamente el alistamiento de sus hijos y esposos, además de entonar canciones de protesta contra las autoridades coloniales. Al mismo tiempo, sobrellevaron severas privaciones económicas, hambrunas y la falta de subsidios. ¿Cómo valorar el impacto en el hogar? Estas cartas y testimonios revelan su activa resistencia ante un conflicto devastador."
   },
   "keyPoint": {
     "en": "Think of the war front as a distant shadow that reshaped every corner of the home. [p:How do we measure the unseen costs carried by those left behind in wartime?] Examine a family archive or historical letters from your region to uncover the hidden labor behind major conflicts.",
@@ -112,10 +117,28 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-10T04:54:46.812Z"
+  "publishAt": "2026-11-10T04:54:46.812Z",
+  "glossary": {
+    "en": {
+      "risaldars": "Officers or commanders in Indian cavalry units under the British Indian Army.",
+      "raj": "The period of direct British colonial rule over the Indian subcontinent.",
+      "non-combatants": "People serving in support roles, such as cooks and labourers, rather than direct fighting.",
+      "western front": "The primary theater of fighting in Western Europe during the First World War.",
+      "east india company": "The British commercial enterprise that conquered and governed parts of the Indian subcontinent.",
+      "customary law": "Traditional community practices and unwritten customs codified into official legal rules.",
+      "martial race theory": "A colonial ideology claiming certain ethnic groups were inherently warlike and suited for military service.",
+      "izzat": "A cultural concept of personal, family, and community honour in South Asian society.",
+      "firangi": "A South Asian term referring to a foreigner, specifically a European colonizer.",
+      "remittances": "Money sent back home by deployed soldiers to financially support their families."
+    }
+  }
 }

@@ -33,11 +33,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/193/1080/1920",
+    "url": "https://images.unsplash.com/20/cambridge.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAxfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vadim Sherbakov",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/d6ebY-faOO0"
+    "sourceUrl": "https://unsplash.com/photos/d6ebY-faOO0",
+    "wide": "https://images.unsplash.com/20/cambridge.JPG?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@madebyvadim?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -82,7 +84,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết phân tích sự tương đồng giữa cuộc khủng hoảng kênh đào Suez năm 1956 và tình hình căng thẳng hiện nay liên quan đến Iran. Tác giả chỉ ra cách các cuộc xung đột này phơi bày những giới hạn kinh tế đằng sau quyền lực quân sự của các siêu cường. Sự suy giảm tương đối về kinh tế và áp lực tài chính có thể kìm hãm tham vọng địa chính trị của một quốc gia lớn, tương tự như cách Anh quốc mất đi vị thế sau sự kiện Suez."
+    "vi": "Bài viết phân tích sự tương đồng giữa cuộc khủng hoảng kênh đào Suez năm 1956 và tình hình căng thẳng hiện nay liên quan đến Iran. Tác giả chỉ ra cách các cuộc xung đột này phơi bày những giới hạn kinh tế đằng sau quyền lực quân sự của các siêu cường. Sự suy giảm tương đối về kinh tế và áp lực tài chính có thể kìm hãm tham vọng địa chính trị của một quốc gia lớn, tương tự như cách Anh quốc mất đi vị thế sau sự kiện Suez.",
+    "fr": "Soixante-dix ans après la crise de Suez, qui avait révélé le déclin britannique face à ses contraintes financières, le conflit actuel entre les États-Unis et l'Iran interroge la pérennité de l'hégémonie américaine. Alors que le détroit d'Ormuz demeure bloqué, Washington voit ses capacités militaires et budgétaires mises à l'épreuve, dans un contexte marqué par l'ascension économique de la Chine. À l'instar de l'échec de 1956 pour Londres, ces tensions rappellent une réalité fondamentale : la puissance géopolitique d'une nation ne peut s'exercer durablement au-delà de ses forces économiques réelles.",
+    "de": "Der Iran-Konflikt offenbart wie einst die Suezkrise 1956 die Grenzen einer weltpolitischen Vormachtstellung. Damals verdeutlichte das militärische Scheitern in Ägypten Großbritanniens schwindenden Großmachtstatus, da finanzielle Schwächen und die Abhängigkeit von den USA den Handlungsspielraum einengten. Heute sieht sich die US-Regierung mit ähnlichen Herausforderungen konfrontiert: Neben schwindenden Munitionsbeständen und wachsender wirtschaftlicher Konkurrenz durch China belasten geopolitische Spannungen die Vormacht der Vereinigten Staaten. Beide Krisen verdeutlichen, dass militärischer Einfluss letztlich durch ökonomische Leistungsfähigkeit begrenzt wird. Während Washingtons weltweite Verpflichtungen zunehmen, werfen die Ereignisse im Nahen Osten dringende Fragen über die Belastbarkeit der amerikanischen Führungskraft auf.",
+    "es": "El actual conflicto con Irán y el cierre del estrecho de Ormuz evocan paralelismos con la crisis de Suez de 1956, un episodio que evidenció el declive del poderío británico. En aquel momento, la vulnerabilidad financiera y las restricciones económicas limitaron las ambiciones geopolíticas del Reino Unido frente a las exigencias internacionales. Hoy en día, Estados Unidos enfrenta tensiones comparables, marcadas por el agotamiento de sus suministros militares y la creciente competencia económica global. Ambos acontecimientos plantean un dilema crucial: ¿hasta qué punto la proyección geopolítica de una superpotencia puede sostenerse cuando su fortaleza económica empieza a erosionarse?"
   },
   "keyPoint": {
     "en": "Geopolitical power is like a heavy vehicle whose speed is ultimately limited by the fuel of economic strength. [p:Are your personal financial plans prepared for broader economic ripples from global conflicts?]",
@@ -104,10 +109,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-01T02:35:24.452Z"
+  "publishAt": "2026-11-01T02:35:24.452Z",
+  "glossary": {
+    "en": {
+      "strait of hormuz": "A strategic narrow waterway between the Persian Gulf and the Gulf of Oman, critical for global oil shipments.",
+      "nationalised": "Transferred ownership and control of privately or foreign-held assets to the state government.",
+      "suez crisis": "A 1956 conflict after Egypt took control of the Suez Canal, prompting an invasion by Britain, France, and Israel.",
+      "exorbitant privilege": "Economic advantage of a global reserve currency, allowing easy borrowing at favourable interest rates.",
+      "cold war": "Post-World War II period of geopolitical rivalry and tension between the United States and the Soviet Union.",
+      "preventative war": "A war initiated to prevent an adversary from acquiring the capability or opportunity to attack later.",
+      "aswan dam": "A major infrastructure project on Egypt’s River Nile designed to control flooding and generate hydroelectricity.",
+      "geoeconomics": "The interplay of economic factors and international politics, using economic tools to achieve geopolitical goals.",
+      "fuel rationing": "Government-enforced limits on the quantity of fuel individuals and businesses are allowed to buy.",
+      "cold war ii": "Modern geopolitical rivalry and proxy conflicts, primarily between the US and powers like China and Russia.",
+      "proxy wars": "Wars where opposing major powers support competing third parties instead of fighting each other directly."
+    }
+  }
 }

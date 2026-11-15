@@ -42,11 +42,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/382/1080/1920",
+    "url": "https://images.unsplash.com/40/x6YzbWWRq2sRhAacMjnl_Bangkok_Indra_market.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "RayBay",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw"
+    "sourceUrl": "https://unsplash.com/photos/kG71BXh8KFw",
+    "wide": "https://images.unsplash.com/40/x6YzbWWRq2sRhAacMjnl_Bangkok_Indra_market.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@raybay?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -91,7 +93,10 @@
     ]
   },
   "summary": {
-    "vi": "Chiến lược Bắc Cực mới của Liên minh Châu Âu phản ánh sự chuyển dịch rõ rệt trong tư duy địa chính trị, trong đó các mối quan tâm về an ninh và quốc phòng dần lấn át vấn đề biến đổi khí hậu và hợp tác đa phương do ảnh hưởng từ cuộc xung đột với Nga. Khối này chú trọng hơn đến năng lực thực tế, xây dựng khuôn khổ hợp tác mới mang tên vùng lân cận phía bắc loại trừ Nga, đồng thời định hình lại các mối quan hệ đối tác nhằm đối phó với cảnh quan khu vực đầy biến động."
+    "vi": "Chiến lược Bắc Cực mới của Liên minh Châu Âu phản ánh sự chuyển dịch rõ rệt trong tư duy địa chính trị, trong đó các mối quan tâm về an ninh và quốc phòng dần lấn át vấn đề biến đổi khí hậu và hợp tác đa phương do ảnh hưởng từ cuộc xung đột với Nga. Khối này chú trọng hơn đến năng lực thực tế, xây dựng khuôn khổ hợp tác mới mang tên vùng lân cận phía bắc loại trừ Nga, đồng thời định hình lại các mối quan hệ đối tác nhằm đối phó với cảnh quan khu vực đầy biến động.",
+    "fr": "Face aux tensions géopolitiques et aux menaces hybrides russes accentuées par le conflit en Ukraine, l’Union européenne révise sa stratégie arctique : la sécurité et la défense supplantent désormais la coopération environnementale. Le changement climatique n’est plus le pilier central, mais un amplificateur de menaces. Délaissant le multilatéralisme historique, Bruxelles propose un « voisinage septentrional » réservé aux partenaires alignés, excluant Moscou. En développant ses propres capacités d’action, le bloc européen amorce une mutation majeure de sa posture géopolitique.",
+    "de": "Die Europäische Union vollzieht mit ihrer neuesten Arktisstrategie eine geopolitische Neuausrichtung. Angesichts wachsender Bedrohungen durch Russland und der Lähmung des Arktischen Rates rücken Verteidigung und Sicherheit in den Vordergrund, während Klimaschutz und Multilateralismus an Bedeutung verlieren. Umweltfragen werden nun vorwiegend als sicherheitsrelevante Risiken wahrgenommen. Gleichzeitig etabliert die EU das Konzept einer „nördlichen Nachbarschaft“, um die Kooperation mit gleichgesinnten Partnern wie Grönland oder Norwegen zu vertiefen und Russland gezielt auszuschließen. Statt rein multilateraler Foren setzt Brüssel verstärkt auf strategische Eigenständigkeit und materielle Kapazitäten wie eigene Eisbrecher. Dennoch bleiben ökologische und soziale Belange für die lokale Bevölkerung unverzichtbar.",
+    "es": "¿Hacia dónde se orienta la presencia europea en el Ártico tras la invasión rusa de Ucrania? La nueva estrategia de la Unión Europea marca un giro geopolítico determinante: las prioridades de cooperación multilateral y lucha climática han quedado subordinadas a la defensa y la seguridad regional. Frente a crecientes amenazas híbridas, Bruselas promueve una «vecindad septentrional» que excluye a Moscú y refuerza la alianza con socios afines. Asimismo, el bloque busca robustecer sus capacidades materiales y proteger infraestructuras críticas, sin descuidar a las comunidades locales. Este cambio redefine el papel comunitario, priorizando la disuasión estratégica sobre los acuerdos globales en una región cada vez más polarizada."
   },
   "keyPoint": {
     "en": "Like a ship shifting its course away from melting ice to navigate stormy waters, European policy now prioritizes defense over environmental cooperation. [p:How can your organization adapt when safety concerns suddenly overshadow long-term sustainability?] *Examine your current strategic priorities today.*",
@@ -113,10 +118,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-10-29T02:39:30.299Z"
+  "publishAt": "2026-10-29T02:39:30.299Z",
+  "glossary": {
+    "en": {
+      "arctic council": "Leading intergovernmental forum promoting cooperation and coordination among Arctic states and Indigenous communities.",
+      "hybrid activities": "Hostile actions combining non-traditional methods like disinformation, cyber operations, and sabotage below open military conflict.",
+      "gps jamming": "Deliberate transmission of radio signals to block or disrupt satellite navigation and positioning systems.",
+      "undersea cables": "Submerged communication lines resting on the ocean floor that transmit digital telecommunication data globally.",
+      "arctic security conference": "An annual regional forum launched in 2024 to examine security issues and trends in the Arctic.",
+      "saami council": "A non-governmental organization representing the Indigenous Sámi people across Northern European countries.",
+      "sámi": "An Indigenous Finno-Ugric people inhabiting the northern regions of Norway, Sweden, Finland, and Russia.",
+      "northern neighbourhood": "An EU diplomatic framework proposed to facilitate regional cooperation with like-minded northern partners excluding Russia.",
+      "european neighbourhood policy": "An EU foreign policy initiated in 2004 to build closer ties with eastern and southern neighbours.",
+      "multilateralism": "An alliance or diplomatic approach where multiple nations cooperate on shared international rules and policies.",
+      "icebreaker vessels": "Specially reinforced ships designed to navigate through and carve navigation paths across frozen sea ice."
+    }
+  }
 }

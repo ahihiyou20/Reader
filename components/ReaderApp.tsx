@@ -12,6 +12,7 @@ import { Ambient } from './chrome/Ambient';
 import { BottomNav } from './chrome/BottomNav';
 import { KeyHints } from './chrome/KeyHints';
 import { LangMenu } from './chrome/LangMenu';
+import { SideNav } from './chrome/SideNav';
 import { Toast } from './chrome/Toast';
 import { TopBar } from './chrome/TopBar';
 import { Feed } from './feed/Feed';
@@ -19,12 +20,20 @@ import { Poster, type PosterProps } from './feed/Poster';
 import { setOptCovers, type OptCovers } from '@/lib/covers';
 import { chromeP } from './feed/nav';
 import { useFeedList } from './feed/useFeedList';
-import { preloadOverlays } from './overlays/preload';
+import { useReadingSignals } from './feed/useReadingSignals';
+import { useReading } from '@/stores/reading';
+import { startReadingSync } from '@/lib/reading-sync';
+import { preloadOverlays, warmCovers } from './overlays/preload';
+import { coverThumb } from './overlays/ArticleCard';
 import { useMounted, useStageSync } from './hooks';
 
 const BigHeart = dynamic(() => import('./chrome/BigHeart').then((m) => m.BigHeart), { ssr: false });
 const CreatePanel = dynamic(() => import('./overlays/CreatePanel').then((m) => m.CreatePanel), { ssr: false });
 const ExplorePanel = dynamic(() => import('./overlays/ExplorePanel').then((m) => m.ExplorePanel), { ssr: false });
+const LibraryPanel = dynamic(() => import('./overlays/LibraryPanel').then((m) => m.LibraryPanel), { ssr: false });
+const SettingsPanel = dynamic(() => import('./overlays/SettingsPanel').then((m) => m.SettingsPanel), { ssr: false });
+const Welcome = dynamic(() => import('./chrome/Welcome').then((m) => m.Welcome), { ssr: false });
+const AudioBar = dynamic(() => import('./chrome/AudioBar').then((m) => m.AudioBar), { ssr: false });
 const ProfilePanel = dynamic(() => import('./overlays/ProfilePanel').then((m) => m.ProfilePanel), { ssr: false });
 const SearchPanel = dynamic(() => import('./overlays/SearchPanel').then((m) => m.SearchPanel), { ssr: false });
 const Sheets = dynamic(() => import('./overlays/Sheets').then((m) => m.Sheets), { ssr: false });
@@ -33,6 +42,7 @@ const NotificationsPanel = dynamic(() => import('./overlays/SocialPanels').then(
 /** Long enough to stay clear of loading and the first swipes; a reader's tap starts it sooner.
  *  The hidden panels are mounted at the same moment. */
 const BACKEND_IDLE_START_MS = 8000;
+const SIDE_SHEETS: Array<string | undefined> = ['notifications', 'messages'];
 const motionFeatures = () => import('@/lib/motion-features').then((m) => m.default);
 
 export interface PreviewData {
@@ -83,7 +93,9 @@ function Shell({
   // finger on a bar button starts loading that panel); opening one mounts them at once.
   const [panelsReady, setPanelsReady] = useState(false);
   const hasOverlay = useUI((s) => s.overlays.length > 0 || s.sheet !== null || s.langMenu);
-  const hasPanel = useUI((s) => s.overlays.length > 0);
+  // Notifications and messages open as a side sheet on wide screens: the feed stays visible beside it.
+  const sideSheet = useUI((s) => s.stage.endsWith('landscape') && SIDE_SHEETS.includes(s.overlays[s.overlays.length - 1]));
+  const hasPanel = useUI((s) => s.overlays.length > 0) && !sideSheet;
   const shouldMountDeferred = deferred || hasOverlay;
   const shouldMountPanels = panelsReady || hasOverlay;
   const previewItems = useRef<FeedItem[] | undefined>(undefined);
@@ -92,6 +104,16 @@ function Shell({
     previewItems.current = [preview.item];
   }
   const items = useFeedList(preview ? previewItems.current : undefined);
+  const itemsRef = useRef(items);
+  itemsRef.current = items;
+  useReadingSignals(preview ? undefined : items);
+  const readSize = useReading((s) => s.settings.fontSize);
+  useEffect(() => (preview ? undefined : startReadingSync()), [preview]);
+  // A reader who followed a link to an article came for that article, not for the introduction.
+  const showWelcome = useReading((s) => !s.welcomed) && !initialSlug && !preview;
+  useEffect(() => {
+    document.documentElement.style.setProperty('--read-size', `${readSize}px`);
+  }, [readSize]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -137,6 +159,9 @@ function Shell({
           getBackend();
           preloadOverlays();
           setPanelsReady(true);
+          const list = itemsRef.current ?? [];
+          // Explore shows the first cards of the whole list and its trending row: warm those first.
+          warmCovers([...list.slice(0, 60).map((i) => coverThumb(i)), ...list.slice(0, 30).map((i) => coverThumb(i, true))]);
         }),
       BACKEND_IDLE_START_MS,
     );
@@ -253,12 +278,15 @@ function Shell({
         <Feed items={items} onDoubleTap={onDoubleTap} />
         {heart && <BigHeart key={heart.id} x={heart.x} y={heart.y} onDone={clearHeart} />}
         <BottomNav />
+        <SideNav />
+        {sideSheet && <div className="sheet-shade" onPointerDown={() => useUI.getState().closeOverlay()} />}
         {shouldMountDeferred && (
           <>
             <KeyHints />
             <LangMenu />
             <Sheets />
             <Toast />
+            <AudioBar />
           </>
         )}
         {shouldMountPanels && (
@@ -268,9 +296,12 @@ function Shell({
             <MessagesPanel />
             <NotificationsPanel />
             <ProfilePanel />
+            <LibraryPanel />
+            <SettingsPanel />
             <CreatePanel />
           </>
         )}
+        {showWelcome && <Welcome items={items} />}
         {children}
       </div>
       {shouldMountDeferred && <Ambient items={items} />}

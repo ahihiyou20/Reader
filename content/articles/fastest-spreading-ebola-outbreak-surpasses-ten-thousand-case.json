@@ -47,11 +47,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1080/1080/1920",
+    "url": "https://images.unsplash.com/photo-1707862159339-241f390c0c80?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NDk1fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
-    "author": "veeterzy",
+    "author": "National Institute of Allergy and Infectious Diseases",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/OJJIaFZOeX4"
+    "sourceUrl": "https://unsplash.com/photos/RyFsO7rSEts",
+    "wide": "https://images.unsplash.com/photo-1707862159339-241f390c0c80?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzQ1NDk1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@niaid?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

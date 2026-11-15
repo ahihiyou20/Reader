@@ -46,11 +46,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/384/1080/1920",
+    "url": "https://images.unsplash.com/40/rqZBrx1WRsCtkqGSVBK6_IMG_0063.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Griffin Keller",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE"
+    "sourceUrl": "https://unsplash.com/photos/-mNvCsNlsSE",
+    "wide": "https://images.unsplash.com/40/rqZBrx1WRsCtkqGSVBK6_IMG_0063.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjEzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@griffinkeller?utm_source=pagemoor&utm_medium=referral"
   },
   "origin": {
     "group": 5,

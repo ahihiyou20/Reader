@@ -54,6 +54,7 @@ import {
   type WriteBatch,
 } from 'firebase/firestore';
 import type { Counts, Lang } from '@/lib/content/types';
+import type { ReadingData } from '@/lib/reading-sync';
 import { env } from '@/lib/env';
 import { EMPTY_STREAK, localDate, streakFromDays, type Streak } from '@/lib/streak';
 import type {
@@ -706,11 +707,24 @@ export function createFirebaseBackend(): Backend {
       }
     },
 
+    async loadReading() {
+      const u = me();
+      const snap = await getDoc(sub(u.uid, 'reading', 'state')).catch(() => null);
+      return (snap?.data() as ReadingData | undefined) ?? null;
+    },
+
+    async saveReading(data) {
+      const u = me();
+      await setDoc(sub(u.uid, 'reading', 'state'), { ...data, updatedAt: serverTimestamp() }).catch((e) => {
+        throw mapError(e);
+      });
+    },
+
     async exportData() {
       const u = me();
       const dump = async (name: string) =>
         Object.fromEntries((await getDocs(collection(db, 'users', u.uid, name))).docs.map((d) => [d.id, d.data()]));
-      const [profile, likes, saves, shares, progress, readDays, commentLikes, comments, submissions] = await Promise.all([
+      const [profile, likes, saves, shares, progress, readDays, commentLikes, reading, comments, submissions] = await Promise.all([
         getDoc(userRef(u.uid)),
         dump('likes'),
         dump('saves'),
@@ -718,6 +732,7 @@ export function createFirebaseBackend(): Backend {
         dump('progress'),
         dump('readDays'),
         dump('commentLikes'),
+        dump('reading'),
         u.isAnonymous ? Promise.resolve(null) : getDocs(query(collectionGroup(db, 'items'), where('uid', '==', u.uid))),
         u.isAnonymous ? Promise.resolve(null) : getDocs(query(collection(db, 'submissions'), where('uid', '==', u.uid))),
       ]);
@@ -731,6 +746,7 @@ export function createFirebaseBackend(): Backend {
         progress,
         readDays,
         commentLikes,
+        reading,
         comments: comments?.docs.map((d) => ({ path: d.ref.path, ...d.data() })) ?? [],
         submissions: submissions?.docs.map((d) => ({ id: d.id, ...d.data() })) ?? [],
       };
@@ -755,7 +771,7 @@ export function createFirebaseBackend(): Backend {
         // Each counter write costs the Rules one document read and a batch may use 20 (21 pairs are
         // refused): 9 pairs per batch.
         const pairs = new Batcher(db, 18);
-        const names = ['likes', 'saves', 'shares', 'progress', 'readDays', 'commentLikes'] as const;
+        const names = ['likes', 'saves', 'shares', 'progress', 'readDays', 'commentLikes', 'reading'] as const;
         const snaps = await Promise.all(names.map((n) => getDocs(collection(db, 'users', uid, n))));
         snaps.forEach((snap, i) => {
           for (const d of snap.docs) {

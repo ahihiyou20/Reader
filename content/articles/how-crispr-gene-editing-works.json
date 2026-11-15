@@ -12,53 +12,98 @@
   ],
   "title": {
     "en": "How CRISPR gene editing works, from bacterial defence to lab tool",
-    "vi": "CRISPR chỉnh sửa gen thế nào: từ phòng thủ của vi khuẩn đến công cụ phòng thí nghiệm"
+    "vi": "CRISPR chỉnh sửa gen thế nào: từ phòng thủ của vi khuẩn đến công cụ phòng thí nghiệm",
+    "fr": "Comment fonctionne l'édition génomique CRISPR, de la défense bactérienne à l'outil de laboratoire",
+    "de": "Wie CRISPR-Gen-Editing funktioniert: von der Bakterienabwehr zum Laborwerkzeug",
+    "es": "Cómo funciona la edición genética CRISPR, de defensa bacteriana a herramienta de laboratorio"
   },
   "hook": {
     "en": "Bacteria get infected by viruses too, and some of them keep a record of past attacks in their own DNA. When the same virus returns, they use that record to find its genes and cut them apart. In 2020 the Nobel Prize in Chemistry went to two researchers who turned this defence into [p:a programmable pair of genetic scissors].",
-    "vi": "Vi khuẩn cũng bị virus tấn công, và một số loài giữ bản ghi về các cuộc tấn công cũ ngay trong DNA của mình. Khi virus ấy quay lại, chúng dùng bản ghi đó để tìm gen của virus và cắt rời. Năm 2020, giải Nobel Hóa học được trao cho hai nhà nghiên cứu đã biến cơ chế phòng thủ này thành [p:một cặp kéo di truyền có thể lập trình]."
+    "vi": "Vi khuẩn cũng bị virus tấn công, và một số loài giữ bản ghi về các cuộc tấn công cũ ngay trong DNA của mình. Khi virus ấy quay lại, chúng dùng bản ghi đó để tìm gen của virus và cắt rời. Năm 2020, giải Nobel Hóa học được trao cho hai nhà nghiên cứu đã biến cơ chế phòng thủ này thành [p:một cặp kéo di truyền có thể lập trình].",
+    "fr": "Les bactéries peuvent elles aussi être infectées par des virus, et certaines conservent une trace des attaques passées dans leur propre ADN. Lorsque le même virus réapparaît, elles utilisent cette mémoire pour repérer ses gènes et les découper. En 2020, le prix Nobel de chimie a récompensé deux chercheuses qui ont transformé cette défense en [p:une paire de ciseaux génétiques programmables].",
+    "de": "Auch Bakterien werden von Viren infiziert, und einige von ihnen speichern ein Protokoll vergangener Angriffe in ihrer eigenen DNA. Kehrt dasselbe Virus zurück, nutzen sie diese Aufzeichnung, um dessen Gene aufzuspüren und zu zerschneiden. 2020 ging der Nobelpreis für Chemie an zwei Forscherinnen, die diesen Abwehrmechanismus in [p:eine programmierbare Genschere] verwandelten.",
+    "es": "Las bacterias también son infectadas por virus, y algunas guardan un registro de ataques pasados en su propio ADN. Cuando el mismo virus regresa, utilizan ese registro para encontrar sus genes y destruirlos cortándolos. En 2020, el Premio Nobel de Química se otorgó a dos investigadoras que convirtieron esta defensa en [p:unas tijeras genéticas programables]."
   },
   "sections": [
     {
       "heading_en": "A memory built into bacteria",
       "heading_vi": "Bộ nhớ có sẵn trong vi khuẩn",
       "body_en": "CRISPR-Cas9 was adapted from a natural system that bacteria use as an immune defence. When a virus infects a bacterium, the bacterium captures small pieces of the virus's DNA and inserts them into its own DNA in a particular pattern, forming segments called CRISPR arrays {medline-crispr}. The arrays let the bacterium remember the virus, or close relatives of it. The name is short for clustered regularly interspaced short palindromic repeats, plus the enzyme that does the cutting: CRISPR-associated protein 9.",
-      "body_vi": "CRISPR-Cas9 được phát triển từ một hệ thống tự nhiên mà vi khuẩn dùng làm hàng rào miễn dịch. Khi virus nhiễm vào vi khuẩn, vi khuẩn bắt lấy những mảnh DNA nhỏ của virus và chèn vào DNA của mình theo một khuôn mẫu nhất định, tạo thành các đoạn gọi là dãy CRISPR {medline-crispr}. Các dãy này giúp vi khuẩn ghi nhớ virus đó hoặc họ hàng gần của nó. Tên gọi là viết tắt của chuỗi lặp đối xứng ngắn xen cách đều đặn thành cụm (*clustered regularly interspaced short palindromic repeats*), cộng với enzyme thực hiện việc cắt: protein 9 liên kết CRISPR."
+      "body_vi": "CRISPR-Cas9 được phát triển từ một hệ thống tự nhiên mà vi khuẩn dùng làm hàng rào miễn dịch. Khi virus nhiễm vào vi khuẩn, vi khuẩn bắt lấy những mảnh DNA nhỏ của virus và chèn vào DNA của mình theo một khuôn mẫu nhất định, tạo thành các đoạn gọi là dãy CRISPR {medline-crispr}. Các dãy này giúp vi khuẩn ghi nhớ virus đó hoặc họ hàng gần của nó. Tên gọi là viết tắt của chuỗi lặp đối xứng ngắn xen cách đều đặn thành cụm (*clustered regularly interspaced short palindromic repeats*), cộng với enzyme thực hiện việc cắt: protein 9 liên kết CRISPR.",
+      "heading_fr": "Une mémoire intégrée aux bactéries",
+      "body_fr": "CRISPR-Cas9 a été adapté d'un système naturel que les bactéries emploient comme défense immunitaire. Lorsqu'un virus infecte une bactérie, celle-ci capture de petits fragments de l'ADN viral et les insère dans son propre ADN selon une structure particulière, formant des segments appelés réseaux CRISPR {medline-crispr}. Ces réseaux permettent à la bactérie de se souvenir du virus ou de ses proches parents. Ce nom est l'acronyme de clustered regularly interspaced short palindromic repeats, auquel s'ajoute l'enzyme qui effectue la coupure : la protéine 9 associée à CRISPR.",
+      "heading_de": "Ein bakterielles Gedächtnis",
+      "body_de": "CRISPR-Cas9 wurde aus einem natürlichen System übernommen, das Bakterien zur Immunabwehr nutzen. Infiziert ein Virus ein Bakterium, fängt dieses kleine Abschnitte der Virus-DNA ein und fügt sie nach einem bestimmten Muster in seine eigene DNA ein, wodurch sogenannte CRISPR-Arrays entstehen {medline-crispr}. Anhand dieser Arrays kann sich das Bakterium an das Virus oder nahe Verwandte davon erinnern. Der Name ist die Abkürzung für clustered regularly interspaced short palindromic repeats, ergänzt um das schneidende Enzym: CRISPR-assoziiertes Protein 9.",
+      "heading_es": "Una memoria integrada en las bacterias",
+      "body_es": "El sistema CRISPR-Cas9 se adaptó a partir de un mecanismo natural que las bacterias utilizan como defensa inmunitaria. Cuando un virus infecta a una bacteria, esta captura pequeños fragmentos del ADN viral y los inserta en su propio ADN siguiendo un patrón particular, formando segmentos denominados matrices CRISPR {medline-crispr}. Estas matrices permiten que la bacteria recuerde al virus o a parientes cercanos de este. El nombre es la abreviatura en inglés de repeticiones palindrómicas cortas agrupadas y regularmente interespaciadas, sumado a la enzima que realiza el corte: la proteína 9 asociada a CRISPR."
     },
     {
       "heading_en": "How the bacterial defence runs",
       "heading_vi": "Hàng rào phòng thủ vận hành thế nào",
       "body_en": "If the same virus attacks again, the bacterium makes RNA segments from its CRISPR arrays. These segments recognise and attach to specific regions of the virus's DNA. The bacterium then uses Cas9, or a similar enzyme, to cut the viral DNA apart, which disables the virus {medline-crispr}. The key point is that the RNA is [p:the address] and the enzyme is the blade. Change the address, and the same blade can be sent to a different place in a genome.",
-      "body_vi": "Nếu cùng loại virus tấn công lần nữa, vi khuẩn tạo ra các đoạn RNA từ dãy CRISPR của mình. Các đoạn này nhận ra và bám vào những vùng cụ thể trong DNA của virus. Sau đó vi khuẩn dùng Cas9, hoặc một enzyme tương tự, để cắt rời DNA virus, làm virus mất khả năng gây hại {medline-crispr}. Điểm mấu chốt là RNA đóng vai [p:địa chỉ] còn enzyme là lưỡi dao. Đổi địa chỉ, cùng một lưỡi dao có thể được gửi tới một chỗ khác trong bộ gen."
+      "body_vi": "Nếu cùng loại virus tấn công lần nữa, vi khuẩn tạo ra các đoạn RNA từ dãy CRISPR của mình. Các đoạn này nhận ra và bám vào những vùng cụ thể trong DNA của virus. Sau đó vi khuẩn dùng Cas9, hoặc một enzyme tương tự, để cắt rời DNA virus, làm virus mất khả năng gây hại {medline-crispr}. Điểm mấu chốt là RNA đóng vai [p:địa chỉ] còn enzyme là lưỡi dao. Đổi địa chỉ, cùng một lưỡi dao có thể được gửi tới một chỗ khác trong bộ gen.",
+      "heading_fr": "Le fonctionnement de la défense bactérienne",
+      "body_fr": "Si le même virus attaque à nouveau, la bactérie fabrique des fragments d'ARN à partir de ses réseaux CRISPR. Ces segments reconnaissent des régions spécifiques de l'ADN viral et s'y fixent. La bactérie utilise ensuite Cas9, ou une enzyme semblable, pour découper l'ADN viral, ce qui neutralise le virus {medline-crispr}. L'élément clé est que l'ARN constitue [p:l'adresse] et l'enzyme la lame. Changez l'adresse, et la même lame peut être envoyée vers un autre endroit d'un génome.",
+      "heading_de": "Wie die bakterielle Abwehr abläuft",
+      "body_de": "Greift dasselbe Virus erneut an, stellt das Bakterium RNA-Abschnitte aus seinen CRISPR-Arrays her. Diese Abschnitte erkennen spezifische Regionen der Virus-DNA und binden sich an sie. Anschließend nutzt das Bakterium Cas9 oder ein ähnliches Enzym, um die virale DNA zu zerschneiden, wodurch das Virus ausgeschaltet wird {medline-crispr}. Der entscheidende Punkt ist, dass die RNA [p:die Adresse] darstellt und das Enzym die Klinge ist. Ändert man die Adresse, lässt sich dieselbe Klinge an eine andere Stelle im Genom steuern.",
+      "heading_es": "Cómo opera la defensa bacteriana",
+      "body_es": "Si el mismo virus ataca de nuevo, la bacteria genera segmentos de ARN a partir de sus matrices CRISPR. Estos segmentos reconocen regiones específicas del ADN del virus y se unen a ellas. Luego, la bacteria utiliza Cas9, o una enzima similar, para cortar y fragmentar el ADN viral, lo que desactiva al virus {medline-crispr}. El punto clave es que el ARN es [p:la dirección] y la enzima es la cuchilla. Al cambiar la dirección, la misma cuchilla puede enviarse a un lugar diferente del genoma."
     },
     {
       "heading_en": "A surprise in a harmful bacterium",
       "heading_vi": "Bất ngờ từ một loài vi khuẩn có hại",
       "body_en": "The Royal Swedish Academy of Sciences describes the discovery as unexpected. Emmanuelle Charpentier was studying Streptococcus pyogenes, one of the bacteria that cause the most harm to humanity, when she found a previously unknown molecule called tracrRNA. Her work showed it is part of the ancient bacterial immune system known as CRISPR/Cas, which disarms viruses by cleaving their DNA. She published the finding in [y:2011] and began working with biochemist Jennifer Doudna in the same year {nobel-2020}.",
-      "body_vi": "Viện Hàn lâm Khoa học Hoàng gia Thụy Điển mô tả phát hiện này là điều bất ngờ. Emmanuelle Charpentier đang nghiên cứu Streptococcus pyogenes, một trong những loài vi khuẩn gây hại nhiều nhất cho nhân loại, thì tìm ra một phân tử chưa từng biết gọi là tracrRNA. Công trình của bà cho thấy đó là một phần của hệ miễn dịch cổ xưa của vi khuẩn mang tên CRISPR/Cas, vô hiệu hóa virus bằng cách cắt DNA của chúng. Bà công bố phát hiện vào năm [y:2011] và cùng năm đó bắt đầu hợp tác với nhà hóa sinh Jennifer Doudna {nobel-2020}."
+      "body_vi": "Viện Hàn lâm Khoa học Hoàng gia Thụy Điển mô tả phát hiện này là điều bất ngờ. Emmanuelle Charpentier đang nghiên cứu Streptococcus pyogenes, một trong những loài vi khuẩn gây hại nhiều nhất cho nhân loại, thì tìm ra một phân tử chưa từng biết gọi là tracrRNA. Công trình của bà cho thấy đó là một phần của hệ miễn dịch cổ xưa của vi khuẩn mang tên CRISPR/Cas, vô hiệu hóa virus bằng cách cắt DNA của chúng. Bà công bố phát hiện vào năm [y:2011] và cùng năm đó bắt đầu hợp tác với nhà hóa sinh Jennifer Doudna {nobel-2020}.",
+      "heading_fr": "Une découverte inattendue chez une bactérie pathogène",
+      "body_fr": "L'Académie royale des sciences de Suède qualifie cette découverte d'inattendue. Emmanuelle Charpentier étudiait Streptococcus pyogenes, l'une des bactéries les plus nocives pour l'humanité, lorsqu'elle a identifié une molécule jusqu'alors inconnue appelée tracrRNA. Ses travaux ont démontré qu'elle faisait partie du système immunitaire bactérien ancestral connu sous le nom de CRISPR/Cas, qui désarme les virus en clivant leur ADN. Elle a publié cette découverte en [y:2011] et a commencé à travailler avec la biochimiste Jennifer Doudna la même année {nobel-2020}.",
+      "heading_de": "Eine Überraschung in einem schädlichen Bakterium",
+      "body_de": "Die Königlich Schwedische Akademie der Wissenschaften bezeichnete die Entdeckung als unerwartet. Emmanuelle Charpentier untersuchte Streptococcus pyogenes, eines der für den Menschen gefährlichsten Bakterien, als sie auf ein zuvor unbekanntes Molekül namens tracrRNA stieß. Ihre Arbeit zeigte, dass es Teil des uralten bakteriellen Immunsystems namens CRISPR/Cas ist, das Viren durch das Spalten ihrer DNA unschädlich macht. Sie veröffentlichte die Entdeckung im Jahr [y:2011] und begann noch im selben Jahr die Zusammenarbeit mit der Biochemikerin Jennifer Doudna {nobel-2020}.",
+      "heading_es": "Una sorpresa en una bacteria dañina",
+      "body_es": "La Real Academia de las Ciencias de Suecia describe el descubrimiento como inesperado. Emmanuelle Charpentier estaba estudiando Streptococcus pyogenes, una de las bacterias que más daño causan a la humanidad, cuando halló una molécula antes desconocida llamada tracrRNA. Su trabajo demostró que forma parte del antiguo sistema inmunitario bacteriano conocido como CRISPR/Cas, que desarma a los virus escindiendo su ADN. Publicó el hallazgo en [y:2011] y comenzó a trabajar con la bioquímica Jennifer Doudna ese mismo año {nobel-2020}."
     },
     {
       "heading_en": "Turning it into a tool",
       "heading_vi": "Biến nó thành công cụ",
       "body_en": "Charpentier and Doudna recreated the bacterial scissors in a test tube and simplified their molecular parts so that they were easier to use. They then reprogrammed the scissors {nobel-2020}. Researchers now build a small piece of RNA with a short guide sequence that binds to a chosen target in a cell's DNA, and attach it to the Cas9 enzyme. In the cell, the guide finds the intended sequence and Cas9 cuts the DNA at that spot, mirroring the bacterial process {medline-crispr}. Other enzymes, such as Cpf1, can be used in place of Cas9.",
-      "body_vi": "Charpentier và Doudna tái tạo cặp kéo của vi khuẩn trong ống nghiệm và đơn giản hóa các thành phần phân tử để dễ sử dụng hơn. Sau đó họ lập trình lại cặp kéo {nobel-2020}. Giờ đây các nhà nghiên cứu tạo một đoạn RNA nhỏ có chuỗi dẫn đường ngắn bám vào một mục tiêu đã chọn trong DNA của tế bào, rồi gắn nó với enzyme Cas9. Trong tế bào, chuỗi dẫn đường tìm đúng trình tự mong muốn và Cas9 cắt DNA tại điểm đó, tái hiện quá trình ở vi khuẩn {medline-crispr}. Các enzyme khác, như Cpf1, cũng có thể dùng thay Cas9."
+      "body_vi": "Charpentier và Doudna tái tạo cặp kéo của vi khuẩn trong ống nghiệm và đơn giản hóa các thành phần phân tử để dễ sử dụng hơn. Sau đó họ lập trình lại cặp kéo {nobel-2020}. Giờ đây các nhà nghiên cứu tạo một đoạn RNA nhỏ có chuỗi dẫn đường ngắn bám vào một mục tiêu đã chọn trong DNA của tế bào, rồi gắn nó với enzyme Cas9. Trong tế bào, chuỗi dẫn đường tìm đúng trình tự mong muốn và Cas9 cắt DNA tại điểm đó, tái hiện quá trình ở vi khuẩn {medline-crispr}. Các enzyme khác, như Cpf1, cũng có thể dùng thay Cas9.",
+      "heading_fr": "La transformation en un outil",
+      "body_fr": "Charpentier et Doudna ont recréé les ciseaux bactériens dans une éprouvette et ont simplifié leurs composants moléculaires pour les rendre plus faciles à utiliser. Elles ont ensuite reprogrammé les ciseaux {nobel-2020}. Les chercheurs fabriquent aujourd'hui un petit fragment d'ARN doté d'une courte séquence guide qui se lie à une cible précise dans l'ADN d'une cellule, puis le fixent à l'enzyme Cas9. Dans la cellule, le guide localise la séquence ciblée et Cas9 coupe l'ADN à cet endroit précis, reproduisant ainsi le mécanisme bactérien {medline-crispr}. D'autres enzymes, comme Cpf1, peuvent être utilisées à la place de Cas9.",
+      "heading_de": "Die Verwandlung in ein Werkzeug",
+      "body_de": "Charpentier und Doudna bauten die bakterielle Schere im Reagenzglas nach und vereinfachten ihre molekularen Bestandteile, sodass sie leichter zu handhaben waren. Anschließend programmierten sie die Schere um {nobel-2020}. Forschende stellen heute ein kurzes RNA-Molekül mit einer Leitsequenz her, die an ein ausgewähltes Ziel in der Zell-DNA bindet, und verknüpfen es mit dem Cas9-Enzym. In der Zelle spürt diese Leitsequenz die vorgesehene Stelle auf, und Cas9 schneidet die DNA genau dort – ganz nach dem Vorbild des bakteriellen Vorgangs {medline-crispr}. Anstelle von Cas9 können auch andere Enzyme wie Cpf1 eingesetzt werden.",
+      "heading_es": "Convertirlo en una herramienta",
+      "body_es": "Charpentier y Doudna recrearon las tijeras bacterianas en un tubo de ensayo y simplificaron sus componentes moleculares para facilitar su uso. Luego, reprogramaron las tijeras {nobel-2020}. En la actualidad, los investigadores sintetizan un pequeño fragmento de ARN con una breve secuencia guía que se une a un objetivo específico en el ADN de la célula, y lo acoplan a la enzima Cas9. Dentro de la célula, la guía localiza la secuencia deseada y Cas9 corta el ADN en ese punto exacto, reproduciendo el proceso bacteriano {medline-crispr}. En lugar de Cas9, también pueden utilizarse otras enzimas, como Cpf1."
     },
     {
       "heading_en": "What happens after the cut",
       "heading_vi": "Chuyện gì xảy ra sau nhát cắt",
       "body_en": "The cut is only the first step. After the DNA is cut, researchers rely on the cell's own DNA repair system to add, remove or change genetic material at that location {medline-crispr}. MedlinePlus says CRISPR-Cas9 has drawn excitement because it is faster, cheaper, more accurate and more efficient than other genome editing methods. The Nobel announcement states it makes it possible to change the code of life [y:over a few weeks]. Possible uses include treating conditions such as sickle cell disease, and researchers hope it may help with cancer, heart disease and HIV.",
-      "body_vi": "Nhát cắt chỉ là bước đầu. Sau khi DNA bị cắt, các nhà nghiên cứu dựa vào hệ thống sửa chữa DNA của chính tế bào để thêm, bớt hoặc thay đổi vật liệu di truyền tại vị trí đó {medline-crispr}. MedlinePlus cho biết CRISPR-Cas9 gây hào hứng vì nhanh hơn, rẻ hơn, chính xác hơn và hiệu quả hơn các phương pháp chỉnh sửa bộ gen khác. Thông báo giải Nobel nêu rằng nó giúp thay đổi mã của sự sống [y:trong vài tuần]. Các ứng dụng có thể gồm điều trị những bệnh như bệnh hồng cầu hình liềm, và các nhà nghiên cứu hy vọng nó có thể hỗ trợ cả ung thư, bệnh tim và HIV."
+      "body_vi": "Nhát cắt chỉ là bước đầu. Sau khi DNA bị cắt, các nhà nghiên cứu dựa vào hệ thống sửa chữa DNA của chính tế bào để thêm, bớt hoặc thay đổi vật liệu di truyền tại vị trí đó {medline-crispr}. MedlinePlus cho biết CRISPR-Cas9 gây hào hứng vì nhanh hơn, rẻ hơn, chính xác hơn và hiệu quả hơn các phương pháp chỉnh sửa bộ gen khác. Thông báo giải Nobel nêu rằng nó giúp thay đổi mã của sự sống [y:trong vài tuần]. Các ứng dụng có thể gồm điều trị những bệnh như bệnh hồng cầu hình liềm, và các nhà nghiên cứu hy vọng nó có thể hỗ trợ cả ung thư, bệnh tim và HIV.",
+      "heading_fr": "Ce qui se passe après la coupure",
+      "body_fr": "La coupure n'est que la première étape. Une fois l'ADN sectionné, les chercheurs s'appuient sur le système de réparation de l'ADN propre à la cellule pour ajouter, retirer ou modifier du matériel génétique à cet endroit {medline-crispr}. MedlinePlus souligne que CRISPR-Cas9 suscite un grand enthousiasme car cette méthode est plus rapide, moins coûteuse, plus précise et plus efficace que les autres techniques d'édition du génome. Le communiqué du prix Nobel indique qu'il est désormais possible de modifier le code de la vie [y:en quelques semaines]. Parmi les applications potentielles figure le traitement de maladies comme la drépanocytose, et les chercheurs espèrent qu'elle pourra contribuer à lutter contre le cancer, les maladies cardiaques et le VIH.",
+      "heading_de": "Was nach dem Schnitt geschieht",
+      "body_de": "Der Schnitt ist nur der erste Schritt. Nachdem die DNA durchtrennt wurde, nutzen Forschende das zelleigene DNA-Reparatursystem, um an dieser Stelle genetisches Material einzufügen, zu entfernen oder zu verändern {medline-crispr}. Laut MedlinePlus sorgt CRISPR-Cas9 für große Begeisterung, weil es schneller, günstiger, präziser und effizienter ist als andere Methoden der Genom-Editierung. In der Nobelpreis-Mitteilung heißt es, die Methode erlaube es, den Code des Lebens [y:innerhalb weniger Wochen] zu verändern. Zu den potenziellen Anwendungen gehört die Behandlung von Krankheiten wie der Sichelzellkrankheit, und Forschende hoffen, dass sie bei Krebs, Herzerkrankungen und HIV helfen kann.",
+      "heading_es": "Qué ocurre tras el corte",
+      "body_es": "El corte es solo el primer paso. Tras cortar el ADN, los investigadores aprovechan el propio sistema de reparación del ADN de la célula para añadir, eliminar o modificar material genético en esa ubicación {medline-crispr}. Según MedlinePlus, CRISPR-Cas9 ha generado gran entusiasmo por ser más rápido, económico, preciso y eficiente que otros métodos de edición genómica. El anuncio del Nobel señala que hace posible modificar el código de la vida [y:en cuestión de semanas]. Entre sus posibles aplicaciones se incluye el tratamiento de afecciones como la anemia de células falciformes, y los investigadores esperan que pueda ayudar contra el cáncer, las enfermedades cardíacas y el VIH."
     },
     {
       "heading_en": "Edits that stay, and edits that are inherited",
       "heading_vi": "Chỉnh sửa ở lại và chỉnh sửa di truyền",
       "body_en": "Most genome edits are made in somatic cells, which are all cells except eggs and sperm. Those changes stay in particular tissues and are not passed to the next generation. Changes to egg, sperm or embryo genes could be inherited, and that raises ethical questions, including whether the technology should be used to enhance normal traits such as height or intelligence. Because of ethical and safety concerns, editing germline cells and embryos is [y:currently illegal] in the United States and many other countries {medline-crispr}.",
-      "body_vi": "Phần lớn các chỉnh sửa bộ gen được thực hiện ở tế bào soma, tức mọi tế bào trừ trứng và tinh trùng. Những thay đổi ấy nằm trong các mô nhất định và không truyền sang thế hệ sau. Thay đổi ở gen của trứng, tinh trùng hoặc phôi có thể được di truyền, và điều đó đặt ra các câu hỏi đạo đức, trong đó có việc có nên dùng công nghệ này để tăng cường những đặc điểm bình thường như chiều cao hay trí thông minh hay không. Vì các lo ngại về đạo đức và an toàn, việc chỉnh sửa tế bào dòng mầm và phôi hiện [y:là bất hợp pháp] ở Hoa Kỳ và nhiều nước khác {medline-crispr}."
+      "body_vi": "Phần lớn các chỉnh sửa bộ gen được thực hiện ở tế bào soma, tức mọi tế bào trừ trứng và tinh trùng. Những thay đổi ấy nằm trong các mô nhất định và không truyền sang thế hệ sau. Thay đổi ở gen của trứng, tinh trùng hoặc phôi có thể được di truyền, và điều đó đặt ra các câu hỏi đạo đức, trong đó có việc có nên dùng công nghệ này để tăng cường những đặc điểm bình thường như chiều cao hay trí thông minh hay không. Vì các lo ngại về đạo đức và an toàn, việc chỉnh sửa tế bào dòng mầm và phôi hiện [y:là bất hợp pháp] ở Hoa Kỳ và nhiều nước khác {medline-crispr}.",
+      "heading_fr": "Modifications non transmissibles et modifications héréditaires",
+      "body_fr": "La plupart des modifications génomiques sont effectuées dans des cellules somatiques, qui regroupent toutes les cellules à l'exception des ovules et des spermatozoïdes. Ces altérations restent cantonnées à des tissus particuliers et ne sont pas transmises à la génération suivante. En revanche, les modifications apportées aux gènes des ovules, des spermatozoïdes ou des embryons pourraient être transmises, ce qui soulève des interrogations éthiques, notamment quant à l'opportunité d'utiliser cette technologie pour améliorer des traits normaux comme la taille ou l'intelligence. En raison de considérations éthiques et de sécurité, la modification des cellules germinales et des embryons est [y:actuellement illégale] aux États-Unis et dans de nombreux autres pays {medline-crispr}.",
+      "heading_de": "Eingriffe, die bleiben, und vererbbare Veränderungen",
+      "body_de": "Die meisten Genom-Editierungen werden in somatischen Zellen vorgenommen, also in allen Zellen mit Ausnahme von Eizellen und Spermien. Diese Veränderungen verbleiben in bestimmten Geweben und werden nicht an die nächste Generation weitergegeben. Veränderungen an Genen von Eizellen, Spermien oder Embryonen könnten hingegen vererbt werden. Dies wirft ethische Fragen auf – unter anderem, ob die Technologie genutzt werden sollte, um normale Merkmale wie Körpergröße oder Intelligenz zu steigern. Wegen ethischer Bedenken und Sicherheitsrisiken ist die Veränderung von Keimbahnzellen und Embryonen in den Vereinigten Staaten und vielen anderen Ländern [y:derzeit illegal] {medline-crispr}.",
+      "heading_es": "Ediciones que permanecen y ediciones hereditarias",
+      "body_es": "La mayoría de las ediciones genómicas se realizan en células somáticas, que abarcan todas las células excepto los óvulos y los espermatozoides. Esos cambios se limitan a tejidos específicos y no se transmiten a la siguiente generación. En cambio, las modificaciones en los genes de óvulos, espermatozoides o embriones podrían heredarse, lo que plantea dilemas éticos, como si la tecnología debería utilizarse para potenciar rasgos normales como la estatura o la inteligencia. Debido a preocupaciones éticas y de seguridad, la edición de células de la línea germinal y embriones es [y:actualmente ilegal] en los Estados Unidos y en muchos otros países {medline-crispr}."
     }
   ],
   "keyPoint": {
     "en": "CRISPR-Cas9 is a bacterial immune defence turned into a laboratory tool. A short guide RNA finds a chosen DNA sequence, the Cas9 enzyme cuts it, and the cell's own repair system makes the change. Edits to ordinary body cells stay with one person, while edits to eggs, sperm or embryos raise ethical limits.",
-    "vi": "CRISPR-Cas9 là hàng rào miễn dịch của vi khuẩn được biến thành công cụ phòng thí nghiệm. Một RNA dẫn đường ngắn tìm trình tự DNA đã chọn, enzyme Cas9 cắt nó, và hệ thống sửa chữa của tế bào thực hiện thay đổi. Chỉnh sửa ở tế bào cơ thể thông thường chỉ ở lại với một người, còn chỉnh sửa ở trứng, tinh trùng hoặc phôi đặt ra những giới hạn đạo đức."
+    "vi": "CRISPR-Cas9 là hàng rào miễn dịch của vi khuẩn được biến thành công cụ phòng thí nghiệm. Một RNA dẫn đường ngắn tìm trình tự DNA đã chọn, enzyme Cas9 cắt nó, và hệ thống sửa chữa của tế bào thực hiện thay đổi. Chỉnh sửa ở tế bào cơ thể thông thường chỉ ở lại với một người, còn chỉnh sửa ở trứng, tinh trùng hoặc phôi đặt ra những giới hạn đạo đức.",
+    "fr": "CRISPR-Cas9 est une défense immunitaire bactérienne transformée en outil de laboratoire. Un court ARN guide repère une séquence d'ADN choisie, l'enzyme Cas9 la coupe, et le propre système de réparation de la cellule opère la modification. Les retouches apportées aux cellules ordinaires de l'organisme restent limitées à un seul individu, tandis que celles apportées aux ovules, aux spermatozoïdes ou aux embryons se heurtent à des limites éthiques.",
+    "de": "CRISPR-Cas9 ist eine bakterielle Immunabwehr, die zu einem Laborwerkzeug weiterentwickelt wurde. Eine kurze Leit-RNA findet eine ausgewählte DNA-Sequenz, das Cas9-Enzym schneidet sie, und das zelleigene Reparatursystem nimmt die Veränderung vor. Eingriffe in gewöhnliche Körperzellen verbleiben bei einem Menschen, während Eingriffe in Eizellen, Spermien oder Embryonen an ethische Grenzen stoßen.",
+    "es": "CRISPR-Cas9 es una defensa inmunitaria bacteriana transformada en herramienta de laboratorio. Un breve ARN guía localiza una secuencia de ADN determinada, la enzima Cas9 la corta y el propio sistema de reparación celular realiza la modificación. Las ediciones en células corporales ordinarias permanecen en un solo individuo, mientras que las ediciones en óvulos, espermatozoides o embriones plantean límites éticos."
   },
   "applySteps": {
     "en": [
@@ -70,6 +115,21 @@
       "Đọc trang MedlinePlus về chỉnh sửa bộ gen và ghi lại sự khác nhau giữa chỉnh sửa tế bào soma và tế bào dòng mầm.",
       "Tìm thông báo giải Nobel Hóa học 2020 và tìm câu mô tả cặp kéo di truyền.",
       "Tự hỏi bạn ủng hộ những ứng dụng chỉnh sửa gen nào, muốn giới hạn những ứng dụng nào, và viết ra lý do."
+    ],
+    "fr": [
+      "Lisez la page de MedlinePlus consacrée à l'édition génomique et notez la différence entre modifications somatiques et germinales.",
+      "Consultez le communiqué du prix Nobel de chimie 2020 et repérez la phrase qui décrit les ciseaux génétiques.",
+      "Demandez-vous quelles applications de l'édition génique vous soutiendriez et lesquelles vous limiteriez, en expliquant vos raisons par écrit."
+    ],
+    "de": [
+      "Die MedlinePlus-Seite zur Genom-Editierung lesen und den Unterschied zwischen somatischen Eingriffen und Keimbahneingriffen erfassen.",
+      "Die Mitteilung zum Chemienobelpreis 2020 aufrufen und den Satz suchen, der die Genschere beschreibt.",
+      "Frage dich selbst, welche Anwendungen der Genom-Editierung du befürworten und welche du begrenzen würdest, und schreibe auf, warum."
+    ],
+    "es": [
+      "Lea la página de MedlinePlus sobre edición genómica y tome nota de la diferencia entre ediciones somáticas y germinales.",
+      "Busque el anuncio del Premio Nobel de Química de 2020 y localice la frase que describe las tijeras genéticas.",
+      "Pregúntese qué aplicaciones de la edición genética apoyaría y cuáles limitaría, y anote sus motivos."
     ]
   },
   "references": [
@@ -94,12 +154,89 @@
   },
   "cover": {
     "type": "image",
-    "url": "/covers/how-crispr-gene-editing-works.webp",
+    "url": "https://images.unsplash.com/5/rain.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg2fA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Nithya Ramanujam",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/fTKetYpEKNQ"
+    "sourceUrl": "https://unsplash.com/photos/fTKetYpEKNQ",
+    "wide": "https://images.unsplash.com/5/rain.jpg?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzM2ODg2fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@nithyaramanujam?utm_source=pagemoor&utm_medium=referral"
   },
   "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAADQAwCdASoQABwAPu1kqU2ppaQiMAgBMB2JZQCuHYvg3pDLaNO6Q8AA/Mt2XONde+he3C7SE4axqZZJbn3vi6U5pJFb5rDdZvrFPP8YvTIOCn13mIfNZCjwTr2zOaYSrWpy+fkni0GSkTXV4tn9UDzjAeHZXu0vRv1/8/5m8/9CVY3q1Me/HuYejwAd3FrEgMRrDwAA",
-  "dominant": "#63615f"
+  "dominant": "#63615f",
+  "glossary": {
+    "en": {
+      "crispr-cas9": "A molecular tool adapted from bacteria used to cut and edit specific DNA sequences.",
+      "crispr arrays": "Segments of bacterial DNA that store snippets of past viral genetic material.",
+      "cas9": "A bacterial enzyme that acts like molecular scissors to cut targeted viral or cellular DNA.",
+      "genome": "The complete set of genetic instructions contained in a cell or organism.",
+      "streptococcus pyogenes": "A harmful bacterial species in which key components of CRISPR were discovered.",
+      "tracrrna": "An RNA molecule involved in the bacterial immune system that helps Cas9 target viruses.",
+      "cleaving": "Cutting or slicing DNA strands to disable a virus or modify a gene.",
+      "guide sequence": "A piece of RNA that directs the Cas9 enzyme to a matching target sequence.",
+      "cpf1": "An alternative cutting enzyme that can replace Cas9 in gene editing systems.",
+      "somatic cells": "Non-reproductive body cells whose genetic changes are not passed on to offspring.",
+      "germline cells": "Reproductive cells, such as eggs and sperm, that pass their genetic material to future generations."
+    },
+    "vi": {
+      "crispr-cas9": "Công cụ sinh học kết hợp RNA dẫn đường và enzyme Cas9 để cắt và sửa đổi DNA.",
+      "dãy crispr": "Các đoạn DNA chứa chuỗi lặp lại xen kẽ các đoạn vật liệu di truyền của virus.",
+      "cas9": "Enzyme hoạt động như chiếc kéo phân tử để cắt đứt chuỗi DNA tại vị trí mong muốn.",
+      "bộ gen": "Toàn bộ tập hợp vật liệu di truyền hoặc thông tin DNA của một sinh vật.",
+      "streptococcus pyogenes": "Loài vi khuẩn gây hại cho người, nơi các nhà khoa học phát hiện cơ chế tracrRNA.",
+      "tracrrna": "Phân tử RNA tham gia kích hoạt và hướng dẫn hệ thống cắt DNA của vi khuẩn.",
+      "crispr/cas": "Hệ thống miễn dịch cổ xưa ở vi khuẩn giúp chống lại virus bằng cách cắt DNA lạ.",
+      "chuỗi dẫn đường": "Đoạn RNA ngắn có nhiệm vụ định vị chính xác vị trí DNA mục tiêu cần cắt.",
+      "cpf1": "Một loại enzyme cắt DNA khác có thể thay thế Cas9 trong chỉnh sửa bộ gen.",
+      "tế bào soma": "Mọi tế bào trong cơ thể sinh vật ngoại trừ tế bào sinh dục là trứng và tinh trùng.",
+      "phôi": "Giai đoạn phát triển sớm của sinh vật hình thành sau khi trứng được thụ tinh."
+    },
+    "fr": {
+      "crispr-cas9": "Outil d'édition génomique composé d'un ARN guide et d'une enzyme coupant l'ADN.",
+      "réseaux crispr": "Segments d'ADN bactérien contenant des fragments de virus passés pour les mémoriser.",
+      "cas9": "Enzyme bactérienne qui découpe l'ADN viral ou cellulaire à un endroit précis.",
+      "arn": "Molécule servant de guide pour orienter l'enzyme vers la séquence d'ADN ciblée.",
+      "tracrrna": "Molécule d'ARN essentielle au fonctionnement du système de défense CRISPR chez certaines bactéries.",
+      "séquence guide": "Courte chaîne d'ARN conçue pour cibler un emplacement précis de l'ADN cellulaire.",
+      "cpf1": "Enzyme de coupure de l'ADN pouvant remplacer Cas9 lors d'une édition génomique.",
+      "cellules somatiques": "Cellules du corps hors cellules reproductrices, dont les altérations génétiques ne sont pas transmises.",
+      "cellules germinales": "Cellules reproductrices dont les modifications génétiques sont transmissibles à la descendance.",
+      "drépanocytose": "Maladie génétique héréditaire du sang que l'édition génomique pourrait aider à traiter."
+    },
+    "de": {
+      "crispr-cas9": "Molekulares Werkzeug aus RNA und Schneideenzym zur gezielten Veränderung von DNA-Sequenzen.",
+      "crispr-arrays": "Bakterielle DNA-Abschnitte mit gespeicherten Schnipseln früherer Virus-DNA zur späteren Erkennung von Eindringlingen.",
+      "cas9": "Bakterielles Enzym, das wie eine molekulare Klinge die DNA an festgelegten Stellen durchtrennt.",
+      "rna": "Einsträngiges Erbmolekül, das hier als Zielsucher dient, um das Schneideenzym zur richtigen Stelle zu leiten.",
+      "streptococcus pyogenes": "Für Menschen gefährliches Bakterium, an dem die entscheidenden Bausteine des CRISPR-Systems entdeckt wurden.",
+      "tracrrna": "RNA-Molekül, das von Charpentier entdeckt wurde und für die Funktion des bakteriellen Abwehrsystems unerlässlich ist.",
+      "cpf1": "Alternatives Schneideenzym, das anstelle von Cas9 für die Genom-Editierung verwendet werden kann.",
+      "dna-reparatursystem": "Zelleigener Mechanismus, der Brüche in der DNA schließt und dabei gewünschte Genveränderungen dauerhaft einbaut.",
+      "somatischen zellen": "Körperzellen mit Ausnahme von Ei- und Samenzellen; ihre genetischen Veränderungen werden nicht weitervererbt.",
+      "keimbahnzellen": "Zellen der Fortpflanzungslinie wie Eizellen und Spermien, deren genetische Veränderungen an Nachkommen vererbt werden."
+    },
+    "es": {
+      "crispr-cas9": "Herramienta molecular que permite cortar y editar secuencias específicas de ADN inspirada en un sistema bacteriano.",
+      "matrices crispr": "Segmentos del ADN bacteriano que almacenan fragmentos genéticos de virus invasores previos.",
+      "cas9": "Enzima que actúa como tijera molecular cortando el ADN en la ubicación indicada por el ARN.",
+      "tracrrna": "Molécula de ARN indispensable para activar y orientar el complejo enzimático cortador en bacterias.",
+      "streptococcus pyogenes": "Bacteria patógena humana en la que se identificó el componente tracrRNA del sistema CRISPR.",
+      "cpf1": "Enzima alternativa a Cas9 utilizada para cortar ADN en procedimientos de edición genética.",
+      "células somáticas": "Células del organismo distintas a las reproductoras cuyas modificaciones no se heredan.",
+      "línea germinal": "Células reproductoras como óvulos o espermatozoides cuyos cambios genéticos se transmiten a la descendencia.",
+      "edición genómica": "Conjunto de técnicas para añadir, eliminar o alterar secuencias de ADN en un organismo.",
+      "arn": "Ácido nucleico que en este sistema actúa como guía para dirigir la enzima al objetivo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-medium"
+  }
 }

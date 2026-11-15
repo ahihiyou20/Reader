@@ -41,11 +41,13 @@
   ],
   "cover": {
     "type": "image",
-    "url": "https://picsum.photos/id/1022/1080/1920",
+    "url": "https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
     "provider": "unsplash",
     "author": "Vashishtha Jogi",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k"
+    "sourceUrl": "https://unsplash.com/photos/bClr95glx6k",
+    "wide": "https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "authorUrl": "https://unsplash.com/@jogi?utm_source=pagemoor&utm_medium=referral"
   },
   "coverCandidates": [
     {
@@ -91,7 +93,10 @@
     ]
   },
   "summary": {
-    "vi": "Hiện tượng El Niño lịch sử năm 2026 đang gây ra các vụ cháy rừng và đất than bùn thảm khốc tại Indonesia, tạo ra khói mù độc hại bao trùm nhiều nước Đông Nam Á. Nồng độ bụi mịn PM2.5 vượt xa giới hạn an toàn, đe dọa sức khỏe của hàng triệu người. Những đám cháy này không chỉ tàn phá môi trường mà còn giải phóng lượng lớn carbon cổ đại bị chôn vùi hàng thế kỷ vào bầu khí quyển, làm suy giảm các nỗ lực bảo vệ khí hậu trước đây và đòi hỏi các biện pháp phục hồi đất than bùn khẩn cấp."
+    "vi": "Hiện tượng El Niño lịch sử năm 2026 đang gây ra các vụ cháy rừng và đất than bùn thảm khốc tại Indonesia, tạo ra khói mù độc hại bao trùm nhiều nước Đông Nam Á. Nồng độ bụi mịn PM2.5 vượt xa giới hạn an toàn, đe dọa sức khỏe của hàng triệu người. Những đám cháy này không chỉ tàn phá môi trường mà còn giải phóng lượng lớn carbon cổ đại bị chôn vùi hàng thế kỷ vào bầu khí quyển, làm suy giảm các nỗ lực bảo vệ khí hậu trước đây và đòi hỏi các biện pháp phục hồi đất than bùn khẩn cấp.",
+    "fr": "En Indonésie, l’intensification d’El Niño en 2026 aggrave une sécheresse historique qui embrase des tourbières fragilisées par la déforestation et le drainage agricole. En se consumant sous terre durant des mois, ces brasiers libèrent des millions de tonnes d’un carbone piégé depuis des siècles : une catastrophe climatique majeure qui anéantit les progrès récents. Le nuage toxique asphyxie l’Asie du Sud-Est, où les particules fines atteignent des niveaux critiques pour des millions d’habitants. Alors que les feux souterrains demeurent presque impossibles à maîtriser, seule une réhabilitation durable des zones humides permettra de prévenir de tels désastres.",
+    "de": "Ein historisch starkes El-Niño-Ereignis hat 2026 in Indonesien verheerende Brände ausgelöst, die weite Teile Südostasiens in giftigen Rauch hüllen. Durch jahrzehntelange Abholzung und Entwässerung sind die ehemals feuchten Torfmoore hochentzündlich geworden. Wenn diese tief in den Boden reichenden Schwelbrände ausbrechen, setzen sie enorme Mengen an über Jahrhunderte gespeichertem Kohlenstoff unwiederbringlich frei – allein in diesem Jahr mehr als Großbritannien und Frankreich zusammen ausstoßen. Die extreme Feinstaubbelastung bedroht Millionen Menschenleben und macht jüngste Erfolge bei der Wiedervernässung zunichte. Um künftige Katastrophen abzuwenden, bleibt die konsequente Renaturierung und der Schutz der gefährdeten Torfböden die einzig wirksame Maßnahme.",
+    "es": "El intenso fenómeno de El Niño en 2026 ha agravado los incendios en las turberas de Indonesia, provocando una grave crisis sanitaria y ambiental. Décadas de deforestación y drenaje han transformado estos ecosistemas húmedos en terrenos altamente inflamables. Al arder, el fuego subterráneo libera millones de toneladas de carbono milenario almacenado en el suelo, lo que incrementa las emisiones globales y propaga una densa nube de humo tóxico por el sudeste asiático. Aunque el uso de tecnologías avanzadas promete optimizar la detección temprana de estos focos, mitigar futuras catástrofes exige priorizar la restauración hidrológica y la conservación integral de estos valiosos humedales."
   },
   "keyPoint": {
     "en": "Think of peatlands as an ancient carbon vault; once unlocked by drought and fire, that stored history escapes forever. *How can global communities better support the restoration of these fragile landscapes before the next intense El Niño strikes?*",
@@ -113,10 +118,29 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-medium"
   },
-  "publishAt": "2026-11-02T02:52:37.461Z"
+  "publishAt": "2026-11-02T02:52:37.461Z",
+  "glossary": {
+    "en": {
+      "el niño": "A periodic climatic phenomenon that alters global weather patterns, causing severe droughts in parts of Southeast Asia.",
+      "pm2.5": "Extremely fine inhalable particles 2.5 micrometres or smaller in diameter that pose severe health risks.",
+      "particulate matter": "Microscopic solid particles and liquid droplets suspended in the air that can harm human health.",
+      "haze": "An atmospheric concentration of smoke, dust, and toxic pollutants that reduces visibility and endangers health.",
+      "peat soils": "Waterlogged, carbon-dense earth formed by partially decayed organic vegetation over hundreds of years.",
+      "forest fragmentation": "The breaking of continuous forest into smaller, isolated parcels, reducing moisture and increasing flammability.",
+      "peatland drainage": "The artificial removal of water from wetland soils, drying them out and making them combustible.",
+      "ancient carbon": "Centuries-old organic matter stored safely underground that releases carbon dioxide when burned.",
+      "hotspot detections": "Satellite observations identifying high thermal anomalies on the ground that signify active fires.",
+      "fire suppression": "Emergency firefighting operations and tactics aimed at controlling, containing, or extinguishing active fires.",
+      "mangrove": "Tidal wetland trees and shrubs that stabilize shorelines, protect coastal ecosystems, and sequester carbon."
+    }
+  }
 }

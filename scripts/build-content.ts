@@ -8,7 +8,7 @@ import { plainText } from '../lib/content/markup';
 import { rankFeed } from '../lib/content/rank';
 import { toClient, toFeedItem } from '../lib/content/transform';
 import type { ArticleClient, ArticleSource, Category, Counts } from '../lib/content/types';
-import { ZERO_COUNTS } from '../lib/content/types';
+import { LANGS, ZERO_COUNTS } from '../lib/content/types';
 import { validateArticle } from '../lib/content/validate';
 import { SEARCH_OPTIONS, type SearchDoc } from '../lib/search';
 import { mediaInfo } from './lib/media';
@@ -82,7 +82,8 @@ async function main() {
   }
 
   const ranked = rankFeed(published, now);
-  await fs.rm(OUT, { recursive: true, force: true });
+  // Files are written over the old ones instead of emptying the folder first: a dev server reading
+  // public/data during a rebuild must never find it missing (and covers.json from scripts/covers.mjs stays).
   await fs.mkdir(path.join(OUT, 'articles'), { recursive: true });
   const builtAt = new Date(now).toISOString();
   const items = ranked.map(toFeedItem);
@@ -91,6 +92,8 @@ async function main() {
   await fs.writeFile(path.join(OUT, 'feed.json'), JSON.stringify({ builtAt, total: items.length, items }));
   await fs.writeFile(path.join(OUT, 'categories.json'), JSON.stringify(categories));
   for (const c of ranked) await fs.writeFile(path.join(OUT, 'articles', `${c.slug}.json`), JSON.stringify(c));
+  const live = new Set(ranked.map((c) => `${c.slug}.json`));
+  for (const f of await fs.readdir(path.join(OUT, 'articles'))) if (!live.has(f)) await fs.rm(path.join(OUT, 'articles', f));
 
   const ms = new MiniSearch<SearchDoc>(SEARCH_OPTIONS);
   ms.addAll(
@@ -100,17 +103,16 @@ async function main() {
       const cat = categories.find((x) => x.id === c.category);
       return {
         id: c.slug,
-        title_en: a.title.en,
-        title_vi: a.title.vi ?? '',
-        hook_en: plainText(a.hook.en, refs),
-        hook_vi: plainText(a.hook.vi, refs),
-        headings: a.sections.flatMap((s) => [s.heading_en, s.heading_vi]).filter(Boolean).join(' · '),
+        title: LANGS.map((l) => a.title[l]).filter(Boolean).join(' · '),
+        hook: LANGS.map((l) => plainText(a.hook[l], refs)).join(' '),
+        headings: a.sections.flatMap((s) => LANGS.map((l) => s[`heading_${l}`])).filter(Boolean).join(' · '),
+        // shortcut: only English and Vietnamese bodies are indexed to keep search-index.json small; titles, hooks and headings cover all five languages.
         body: a.sections
           .flatMap((s) => [s.body_en, s.body_vi])
           .map((s) => plainText(s, refs))
           .join(' ')
           .slice(0, 6000),
-        category: cat ? `${cat.name.en} ${cat.name.vi ?? ''}` : c.category,
+        category: cat ? LANGS.map((l) => cat.name[l]).filter(Boolean).join(' ') : c.category,
         tags: (a.tags ?? []).join(' '),
       };
     }),

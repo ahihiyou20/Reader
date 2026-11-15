@@ -1,4 +1,4 @@
-// Build step (after `pnpm content`): self-host the first feed covers so the first screen does not wait
+// Build step (after `pnpm content`): self-host the first feed covers (Unsplash ones get CDN sizes instead) so the first screen does not wait
 // on a third-party redirect. Writes WebP variants to public/covers/opt and public/data/covers.json.
 // A failed download leaves that item on its remote URL; this step never fails the build.
 import fs from 'node:fs';
@@ -16,6 +16,17 @@ const covers = {};
 for (const item of feed.items.slice(0, COUNT)) {
   const remote = item.cover.type === 'video' ? item.cover.poster : item.cover.url;
   if (!remote || !/^https?:/.test(remote)) continue;
+  // Unsplash covers stay on Unsplash's CDN (their API guidelines ask for hotlinking); it resizes on request.
+  if (new URL(remote, 'https://x').hostname === 'images.unsplash.com') {
+    const at = (w) => {
+      const u = new URL(remote);
+      u.searchParams.set('w', String(w));
+      u.searchParams.set('h', String(Math.round((w * 16) / 9)));
+      return u.toString();
+    };
+    covers[item.slug] = { src: at(768), srcSet: WIDTHS.map((w) => `${at(w)} ${w}w`).join(', '), width: 768, height: 1365 };
+    continue;
+  }
   const file = (w) => path.join(OUT, `${item.slug}-${w}.webp`);
   try {
     if (!WIDTHS.every((w) => fs.existsSync(file(w)))) {
