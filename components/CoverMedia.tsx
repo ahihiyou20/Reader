@@ -23,7 +23,28 @@ export function CoverMedia({
   active?: boolean;
 }) {
   const landscape = useUI((s) => s.stage.endsWith('landscape'));
-  const source = coverSource(cover, opt, landscape);
+  const wanted = coverSource(cover, opt, landscape);
+  // Turning the phone swaps in the other shape of the cover: keep showing the current file until the
+  // new one is decoded, so the screen never goes dark while it loads.
+  const [source, setSource] = useState(wanted);
+  useEffect(() => {
+    if (wanted.src === source.src) return;
+    let live = true;
+    const next = new Image();
+    if (wanted.srcSet) {
+      next.sizes = wanted.sizes ?? '';
+      next.srcset = wanted.srcSet;
+    }
+    next.src = wanted.src ?? '';
+    next
+      .decode()
+      .catch(() => {})
+      .then(() => live && setSource(wanted));
+    return () => {
+      live = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- wanted is rebuilt each render; its src is what changes
+  }, [wanted.src, source.src]);
   // A cover the feed already preloaded shows at once instead of fading in.
   const [decoded, setDecoded] = useState(() => Boolean(priority) || isDecoded(source.src));
   const video = useRef<HTMLVideoElement>(null);
