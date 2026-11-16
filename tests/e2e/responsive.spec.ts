@@ -335,7 +335,8 @@ for (const vp of MATRIX) {
                 document.querySelector('section.article[data-active="true"]') ||
                 document.querySelector('.view.details') ||
                 document;
-              const p = art.querySelector('.sec p');
+              // Body copy: the hook is set larger, as a standfirst, so it holds fewer characters a line.
+              const p = art.querySelector('.sec:not(.hook) p');
               if (!p) return null;
               const text = (p.textContent || '').trim();
               const range = document.createRange();

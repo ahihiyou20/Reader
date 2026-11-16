@@ -4,7 +4,7 @@
 // velocity handoff, rubber-band at the edges, interruptible at any time.
 
 import { m, useTransform } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useSyncExternalStore } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
 import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
@@ -19,10 +19,12 @@ import {
   feedP,
   goToArticle,
   layout,
+  onSlideReach,
   registerFade,
   relayout,
   setArticleView,
   setFeedSlugs,
+  slideReach,
   targetArticle,
   targetView,
   viewP,
@@ -325,8 +327,9 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     return () => window.removeEventListener('keydown', key);
   }, [items]);
 
-  const windowStart = Math.max(0, index - 1);
-  const windowEnd = Math.min(total - 1, index + 1);
+  const reach = useSyncExternalStore(onSlideReach, slideReach, () => null);
+  const windowStart = Math.max(0, Math.min(index, reach ?? index) - 1);
+  const windowEnd = Math.min(total - 1, Math.max(index, reach ?? index) + 1);
   const pages: number[] = [];
   for (let i = windowStart; i <= windowEnd; i++) pages.push(i);
 

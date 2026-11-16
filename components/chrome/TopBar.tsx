@@ -64,11 +64,11 @@ export function TopBar() {
         onClick={(e) => {
           preloadSocial();
           const el = e.currentTarget;
-          // Restart the ring on every tap; the panel follows once the swing has started.
+          // Restart the ring on every tap; the panel opens at once and the bell swings while it slides in.
           el.classList.remove('ring');
           void el.offsetWidth;
           el.classList.add('ring');
-          setTimeout(() => openOverlay('notifications'), prefersReducedMotion() ? 0 : 220);
+          openOverlay('notifications');
         }}
         onAnimationEnd={(e) => e.currentTarget.classList.remove('ring')}
         onPointerDown={preloadSocial}

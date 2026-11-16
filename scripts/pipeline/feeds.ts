@@ -15,8 +15,8 @@ import { firecrawlPagesUsed } from './firecrawl';
 import { GeminiSetupError, QuotaError, hasGemini, requestsUsed } from './gemini';
 import { ideaKey, proposeIdeas } from './ideas';
 import { lintProse, plainFieldsOf, proseFields, type ProseFinding } from './prose-lint';
-import { type Candidate, triage } from './triage';
-import { CONTENT, dirs, httpText, jobSummary, listJson, readJson, setOutput, writeJson } from './lib';
+import { type Candidate, titleSimilarity, triage } from './triage';
+import { CONTENT, ROOT, dirs, httpText, jobSummary, listJson, readJson, setOutput, writeJson } from './lib';
 
 export interface FeedSource {
   id: string;
@@ -262,6 +262,31 @@ export function reportTable(rows: Created[]): string {
   ].join('\n');
 }
 
+/** Sources two articles on one subject share; the page that suggested a topic is not one of them. */
+async function storySources(slug: string): Promise<string[]> {
+  const a = await readJson<ArticleSource>(path.join(dirs.articles, `${slug}.json`));
+  return a.references.filter((r) => r.id !== 'source').map((r) => normalizeUrl(r.url));
+}
+
+/** The slug of an article written earlier in this run on the same subject, if any. */
+async function sameStory(slug: string, earlier: Created[]): Promise<string | undefined> {
+  const title = (await readJson<ArticleSource>(path.join(dirs.articles, `${slug}.json`))).title.en;
+  const mine = new Set(await storySources(slug));
+  for (const c of earlier) {
+    if (titleSimilarity(title, c.title) >= 0.45) return c.slug;
+    if ((await storySources(c.slug)).some((u) => mine.has(u))) return c.slug;
+  }
+  return undefined;
+}
+
+async function dropArticle(slug: string) {
+  await Promise.all(
+    [path.join(dirs.articles, `${slug}.json`), path.join(ROOT, 'public', 'covers', 'video', `${slug}.mp4`), path.join(ROOT, 'public', 'covers', 'video', `${slug}-wide.mp4`)].map((f) =>
+      fs.rm(f, { force: true }),
+    ),
+  );
+}
+
 interface Job {
   /** Feed-state key: the normalised link, or ideaKey() for an idea. */
   key: string;
@@ -358,6 +383,14 @@ async function main() {
         const publishAt = new Date(start - seq++ * 60_000).toISOString();
         try {
           const c = await createArticle({ ...job.input, publishAt });
+          const twin = await sameStory(c.slug, created);
+          if (twin) {
+            // A feed story and an idea, or two feeds, can lead to the same subject in one run.
+            await dropArticle(c.slug);
+            state.seen[job.key] = { at: new Date().toISOString(), feed: job.feedId, error: `same story as ${twin}` };
+            console.log(`– ${c.slug}: same story as ${twin}, dropped`);
+            continue;
+          }
           for (const note of await checkProse(c.slug)) c.issues.push({ level: 'warning', field: 'prose', message: `kept in review: ${note}` });
           created.push(c);
           state.seen[job.key] = { at: new Date().toISOString(), feed: job.feedId, slug: c.slug };

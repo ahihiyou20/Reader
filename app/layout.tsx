@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Allura, Anton, Charm, Cormorant_Garamond, Dancing_Script, Dela_Gothic_One, Fraunces, Great_Vibes, Inter, Pinyon_Script, Playfair_Display, Yeseva_One } from 'next/font/google';
+import localFont from 'next/font/local';
 import Script from 'next/script';
 import { stageScript } from '@/lib/stage';
 import { env } from '@/lib/env';
@@ -10,27 +10,113 @@ import './styles/stage-regular-portrait.css';
 import './styles/stage-regular-landscape.css';
 import './styles/pagemoor.css';
 
-const inter = Inter({
-  subsets: ['latin', 'vietnamese'],
+// Fonts are kept in the repository (app/fonts: the Google Fonts files cut to Latin and Vietnamese)
+// instead of fetched from Google Fonts at build time, which failed the deploy whenever Google answered
+// with a font URL next/font did not expect.
+const inter = localFont({
+  src: './fonts/inter-var.woff2',
+  weight: '100 900',
   display: 'swap',
   variable: '--font-inter',
-  axes: ['opsz'],
 });
 
 // Cover title faces (lib/title.ts). Not preloaded: a cover needs two of them, and the browser fetches
 // only the ones the visible title uses.
-const playfair = Playfair_Display({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, style: ['normal', 'italic'], variable: '--f-playfair' });
-const vibes = Great_Vibes({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '400', variable: '--f-vibes' });
-const yeseva = Yeseva_One({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '400', variable: '--f-yeseva' });
-const pinyon = Pinyon_Script({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '400', variable: '--f-pinyon' });
-const anton = Anton({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '400', variable: '--f-anton' });
-const fraunces = Fraunces({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '900', variable: '--f-fraunces' });
-const allura = Allura({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '400', variable: '--f-allura' });
-const cormorant = Cormorant_Garamond({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: ['300', '600'], variable: '--f-cormorant' });
-const dancing = Dancing_Script({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '700', variable: '--f-dancing' });
-const dela = Dela_Gothic_One({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '400', variable: '--f-dela' });
-const charm = Charm({ subsets: ['latin', 'vietnamese'], display: 'swap', preload: false, weight: '700', variable: '--f-charm' });
-const fontVars = [inter, playfair, vibes, yeseva, pinyon, anton, fraunces, allura, cormorant, dancing, dela, charm].map((f) => f.variable).join(' ');
+const playfair = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: [
+    { path: './fonts/playfair-var.woff2', weight: '400 900', style: 'normal' },
+    { path: './fonts/playfair-italic-var.woff2', weight: '400 900', style: 'italic' },
+  ],
+  variable: '--f-playfair',
+});
+const vibes = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/great-vibes-400.woff2',
+  weight: '400',
+  variable: '--f-vibes',
+});
+const yeseva = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/yeseva-one-400.woff2',
+  weight: '400',
+  variable: '--f-yeseva',
+});
+const pinyon = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/pinyon-script-400.woff2',
+  weight: '400',
+  variable: '--f-pinyon',
+});
+const anton = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Arial',
+  src: './fonts/anton-400.woff2',
+  weight: '400',
+  variable: '--f-anton',
+});
+const fraunces = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/fraunces-900.woff2',
+  weight: '900',
+  variable: '--f-fraunces',
+});
+const allura = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/allura-400.woff2',
+  weight: '400',
+  variable: '--f-allura',
+});
+const cormorant = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: [
+    { path: './fonts/cormorant-garamond-300.woff2', weight: '300', style: 'normal' },
+    { path: './fonts/cormorant-garamond-600.woff2', weight: '600', style: 'normal' },
+  ],
+  variable: '--f-cormorant',
+});
+const dancing = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/dancing-script-700.woff2',
+  weight: '700',
+  variable: '--f-dancing',
+});
+const dela = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Arial',
+  src: './fonts/dela-gothic-one-400.woff2',
+  weight: '400',
+  variable: '--f-dela',
+});
+const charm = localFont({
+  display: 'swap',
+  preload: false,
+  adjustFontFallback: 'Times New Roman',
+  src: './fonts/charm-700.woff2',
+  weight: '700',
+  variable: '--f-charm',
+});
+const fontVars = [inter, playfair, vibes, yeseva, pinyon, anton, fraunces, allura, cormorant, dancing, dela, charm]
+  .map((f) => f.variable)
+  .join(' ');
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.siteUrl),

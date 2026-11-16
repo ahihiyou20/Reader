@@ -416,9 +416,29 @@ export async function writeResearched(b: ResearchBrief): Promise<Written> {
   w.hook_en = known(w.hook_en);
   // translate.ts writes every other language from the English, so a stray _vi field is not kept.
   w.sections = w.sections.map((x) => ({ ...(x.heading_en ? { heading_en: x.heading_en } : {}), body_en: known(x.body_en) }));
+  // The whole article in one reply often loses the KEY POINT or the steps to their length rules: ask for them on their own.
+  if (!w.keyPoint_en || w.applySteps_en?.length !== 3) Object.assign(w, await closingParts(w));
   if (w.keyPoint_en) w.keyPoint_en = known(w.keyPoint_en);
   const { title_vi: _t, hook_vi: _h, keyPoint_vi: _k, applySteps_vi: _a, ...en } = w;
   return en;
+}
+
+/** KEY POINT and Apply steps for a written article, in a request of their own. */
+async function closingParts(w: Written): Promise<Pick<Written, 'keyPoint_en' | 'applySteps_en'>> {
+  const schema = z.object({ keyPoint_en: wordRange(35, 70, 'keyPoint_en').optional(), applySteps_en: threeSteps.optional() });
+  const prompt = [
+    'You help the editors of Pagemoor, a free app of in-depth, sourced articles. Read the article below and write the two parts readers see at its end.',
+    WRITING_RULES,
+    `keyPoint_en: about 50 words (never under 40 or over 60): ${KEY_POINT.replace(/^keyPoint_en \(40–60 words\): /, '').replace('; keyPoint_vi is its Vietnamese version', '')}`,
+    `Write ${APPLY.replace('; applySteps_vi in the same order', '')}`,
+    'Article JSON:',
+    JSON.stringify({ title: w.title_en, hook: w.hook_en, sections: w.sections.map((x) => ({ heading: x.heading_en, body: x.body_en })) }),
+  ].join('\n\n');
+  const { value } = await geminiStructured({ prompt, schema, temperature: 0.3 });
+  return {
+    ...(w.keyPoint_en ? {} : value.keyPoint_en ? { keyPoint_en: value.keyPoint_en } : {}),
+    ...(w.applySteps_en?.length === 3 ? {} : value.applySteps_en ? { applySteps_en: value.applySteps_en } : {}),
+  };
 }
 
 /** Read or write an article prose field by its proseFields() path, e.g. `sections.2.body_vi`. */

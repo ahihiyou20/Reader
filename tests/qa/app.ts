@@ -69,6 +69,12 @@ export async function newQaContext(
  * Opens the feed, waits for section.article[data-active="true"],
  * waits for document.fonts.ready, then waits 2 animation frames.
  */
+/**
+ * A published seed article with every block (hook, sections, highlights, KEY POINT, Apply steps).
+ * Tests about a block open it instead of whatever article the daily writers put first in the feed.
+ */
+export const FULL_ARTICLE = '/a/how-habits-form';
+
 export async function openFeed(page: Page, pathUrl = '/'): Promise<void> {
   await page.goto(pathUrl);
   await page.waitForSelector('section.article[data-active="true"]');

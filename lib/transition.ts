@@ -42,12 +42,16 @@ export async function withStageTransition(update: () => void): Promise<void> {
   const reduce = prefersReducedMotion();
 
   if (hasVT && !reduce) {
-    let vt: { finished: Promise<unknown>; skipTransition(): void } | null = null;
+    let vt: ViewTransition | null = null;
     try {
       vt = document.startViewTransition(() => {
         update();
       });
       activeTransition = vt;
+      // A skipped transition (a rotation that arrives mid-morph) rejects `ready` and
+      // `updateCallbackDone` as well: left unhandled they reach the console as errors.
+      vt.ready.catch(() => {});
+      vt.updateCallbackDone.catch(() => {});
       await vt.finished.catch(() => {});
       return;
     } catch {

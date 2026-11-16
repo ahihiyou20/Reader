@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { translate, type MessageKey, type Vars } from '@/lib/i18n';
+import { prefersReducedMotion, stagger } from '@/lib/motion';
 import { isLandscape, stageOf, STAGES, type Stage } from '@/lib/stage';
 import { withStageTransition } from '@/lib/transition';
 import { useUI } from '@/stores/ui';
@@ -132,4 +133,30 @@ export function useStageSync() {
       vv?.removeEventListener('resize', sync);
     };
   }, []);
+}
+
+/**
+ * How many items of a list to render while it arrives: the first `first` one after another,
+ * `stagger.list` ms apart, then the rest at once. Starts again each time `active` turns on or `key`
+ * changes; while inactive it keeps its count, so a closing panel does not empty itself.
+ */
+export function useStaggeredCount(total: number, active: boolean, key: unknown, first = 8): number {
+  const [n, setN] = useState(0);
+  useIsoLayoutEffect(() => {
+    if (!active) return;
+    if (!total || prefersReducedMotion()) {
+      setN(total);
+      return;
+    }
+    let shown = 1;
+    setN(1);
+    const id = setInterval(() => {
+      shown++;
+      const done = shown >= Math.min(first, total);
+      setN(done ? total : shown);
+      if (done) clearInterval(id);
+    }, stagger.list);
+    return () => clearInterval(id);
+  }, [total, active, key, first]);
+  return n;
 }

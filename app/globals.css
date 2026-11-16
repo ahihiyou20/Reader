@@ -1732,8 +1732,9 @@ select {
   visibility: visible;
   transform: scale(1);
   pointer-events: auto;
+  /* Opacity rises more evenly than the scale, so the menu is seen growing from the button. */
   transition:
-    opacity 200ms cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 200ms ease-out,
     transform 200ms cubic-bezier(0.32, 0.72, 0, 1),
     visibility 0s linear 0s;
 }

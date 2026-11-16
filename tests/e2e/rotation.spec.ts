@@ -180,6 +180,14 @@ function countWrongFrames(
   return targetSamples.filter((s) => isWrong(s.data)).length + nullCount;
 }
 
+/**
+ * The feed commits the active article and view only once the slide has landed (components/feed/nav.ts:
+ * committing mid-slide stalls iOS Safari), so a test reads the starting state after the slide settles.
+ */
+async function settleNavigation(page: Page): Promise<void> {
+  await page.waitForTimeout(900);
+}
+
 async function getActiveSlug(page: Page): Promise<string | null> {
   return await page.evaluate(() => {
     const active =
@@ -326,7 +334,7 @@ test.describe('rotation tests', () => {
       await nextFrames(page, 2);
       await page.keyboard.press('ArrowDown');
       await nextFrames(page, 2);
-      await page.waitForTimeout(300);
+      await settleNavigation(page);
 
       const initialSlug = await getActiveSlug(page);
       const initialView = await getActiveViewIndex(page);
@@ -395,7 +403,7 @@ test.describe('rotation tests', () => {
 
       await page.keyboard.press('ArrowRight');
       await page.waitForSelector('.dscroll', { timeout: 10_000 });
-      await nextFrames(page, 2);
+      await settleNavigation(page);
 
       await page.evaluate(() => {
         const art =
