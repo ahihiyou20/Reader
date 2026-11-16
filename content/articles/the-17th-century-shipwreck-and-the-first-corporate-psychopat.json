@@ -123,9 +123,26 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
+  },
+  "glossary": {
+    "en": {
+      "corporate psychopath": "A ruthless, self-serving person within an organization who manipulates others and abuses power for total control.",
+      "power vacuum": "A chaotic absence of recognized leadership or authority, creating an opportunity for someone to seize control.",
+      "junior merchant": "A mid-level trading official in the Dutch East India Company ranking below senior merchants.",
+      "reign of terror": "A period during which a ruler maintains power through brutal violence, fear, and oppression.",
+      "toxic leadership": "A harmful management style characterized by manipulation, intimidation, and the exploitation of subordinates.",
+      "batavia": "The Dutch East India Company ship wrecked off Australia's coast in 1629, stranding hundreds of survivors.",
+      "superficial charm": "An insincere outward friendliness used by manipulative individuals to deceive others and quickly gain trust.",
+      "climates of fear": "Work environments where intimidation and threat prevent followers from dissenting or speaking out.",
+      "resource conservation": "Preserving limited food and water supplies, used by the mutineers to justify murdering survivors.",
+      "subjugation": "Forcibly bringing people under complete domination, control, or servitude.",
+      "underlings": "Subordinates of lower rank who execute orders for a superior.",
+      "blame-shifting": "The practice of deflecting responsibility or fault for failures onto other people."
+    }
   }
 }

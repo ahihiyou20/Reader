@@ -134,5 +134,28 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZAABHtprKAowfrMRTy5zkZgA/vhNVjf6rpmWm/ayrjQX1P2QhQ9Okb0PzmVAI2+RmlyRmJjLJ7hQFikkzEBwG1sPOF4nFH9TqzrSWOoBkwJ1kUH+cHcdE1jMzSnUz/50chykWWfDnCvuBnub5fc3K/yXtPVhUjAd1BPGXuD1tfoAdAsAAA==",
-  "dominant": "#4b4250"
+  "dominant": "#4b4250",
+  "glossary": {
+    "en": {
+      "goal-directed behaviour": "Actions chosen to achieve a desired outcome that change when that outcome is no longer wanted.",
+      "cause–effect principle": "The understanding that a specific action directly leads to a particular consequence or result.",
+      "reflex": "An automatic, involuntary reaction that continues regardless of whether its result is still useful.",
+      "outcome-devaluation test": "An experiment testing if animals stop an action after its food reward is made unappealing.",
+      "larvae": "The young, immature wingless form of insects before they transform into adult beetles.",
+      "wheat bran": "The hard outer layer of wheat grain, used as food and bedding to raise mealworms.",
+      "y-shaped maze": "A branching experimental track with two paths used to test an animal's memory and navigation choices.",
+      "flexible decisions": "Choices that adjust to changing circumstances and goals, rather than rigid, automatic reactions.",
+      "trade-offs": "Balancing competing needs, such as risking danger to feed versus staying safe and going hungry.",
+      "invertebrates": "Animals that lack a backbone or spinal column, including insects, worms, and octopuses.",
+      "vertebrates": "Animals that possess a backbone or spinal column, such as mammals, birds, reptiles, and fish.",
+      "cephalopods": "A class of marine invertebrates with large heads and tentacles, such as octopuses."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

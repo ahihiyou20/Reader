@@ -133,10 +133,27 @@
       "highlights",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
   },
-  "publishAt": "2026-10-24T01:46:51.275Z"
+  "publishAt": "2026-10-24T01:46:51.275Z",
+  "glossary": {
+    "en": {
+      "riddims": "Instrumental rhythm tracks in Jamaican music shared and reused by multiple artists to create different songs.",
+      "statutory damages": "Fixed legal monetary compensation set by law that copyright holders can claim without proving actual financial loss.",
+      "intertextuality": "The practice of creating new artistic works by referencing, borrowing from, or echoing existing works.",
+      "diwali riddim": "A famous 2002 dancehall rhythm track produced by Steven Marsden that served as the instrumental for Get Busy.",
+      "passa passa": "A renowned weekly Kingston street dance party celebrating dancehall music, community, and acrobatic dance styles.",
+      "dancehall queens": "Highly skilled, acrobatic female dancers who command dancehall street parties and lead street fashion and choreography.",
+      "imf": "International Monetary Fund, a global financial body that imposed strict economic conditions and legal reforms on Jamaica.",
+      "handshake agreements": "Informal, unwritten commercial understandings between artists and producers based on mutual trust rather than formal legal copyright.",
+      "reggaeton": "A Latin urban musical genre originating in Panama and Puerto Rico, heavily built on Jamaican dancehall rhythms.",
+      "selection and arrangement": "A legal copyright standard protecting how uncopyrightable musical elements are specifically compiled, ordered, and structured together.",
+      "skidmore": "A legal precedent establishing that combining unprotectable musical elements does not automatically make a work copyrightable.",
+      "dembow": "A Dominican fast-paced musical genre and percussive rhythm derived from Jamaican dancehall beats."
+    }
+  }
 }

@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Artificial Intelligence Achieves Breakthrough on Major Mathematical Problem",
-    "vi": "Trí tuệ nhân tạo đạt đột phá về bài toán toán học lớn"
+    "vi": "Trí tuệ nhân tạo đạt đột phá về bài toán toán học lớn",
+    "fr": "L’intelligence artificielle réalise une avancée sur un problème mathématique majeur",
+    "de": "Künstliche Intelligenz erzielt Durchbruch bei bedeutendem mathematischem Problem",
+    "es": "La inteligencia artificial logra un gran avance en un problema matemático clave"
   },
   "hook": {
     "en": "OpenAI recently announced a milestone in mathematics that tackles a weakened version of a famous 160-year-old puzzle. Experts call this achievement the most significant artificial intelligence contribution to mathematics so far, opening up surprising connections between established concepts without needing brand-new theories {source}.",
-    "vi": "OpenAI gần đây đã công bố một cột mốc quan trọng trong toán học, giải quyết một phiên bản yếu hơn của bài toán 160 năm tuổi nổi tiếng. Các chuyên gia gọi thành tựu này là đóng góp trí tuệ nhân tạo đáng kể nhất cho toán học cho đến nay, mở ra các mối liên hệ bất ngờ giữa các khái niệm đã có mà không cần lý thuyết hoàn toàn mới {source}."
+    "vi": "OpenAI gần đây đã công bố một cột mốc quan trọng trong toán học, giải quyết một phiên bản yếu hơn của bài toán 160 năm tuổi nổi tiếng. Các chuyên gia gọi thành tựu này là đóng góp trí tuệ nhân tạo đáng kể nhất cho toán học cho đến nay, mở ra các mối liên hệ bất ngờ giữa các khái niệm đã có mà không cần lý thuyết hoàn toàn mới {source}.",
+    "fr": "OpenAI a récemment annoncé une avancée majeure en mathématiques, s’attaquant à une version affaiblie d’une célèbre énigme vieille de 160 ans. Les experts qualifient cette réussite de contribution la plus significative de l’intelligence artificielle aux mathématiques à ce jour, ouvrant des passerelles inattendues entre des concepts établis sans nécessiter de théories inédites {source}.",
+    "de": "OpenAI hat kürzlich einen Meilenstein in der Mathematik bekannt gegeben, der eine abgeschwächte Version eines berühmten, 160 Jahre alten Rätsels in Angriff nimmt. Fachleute bezeichnen diesen Erfolg als den bislang bedeutendsten Beitrag der künstlichen Intelligenz zur Mathematik, da er überraschende Verbindungen zwischen etablierten Konzepten herstellt, ohne völlig neue Theorien zu erfordern {source}.",
+    "es": "OpenAI anunció recientemente un hito matemático que aborda una versión atenuada de un célebre enigma de 160 años. La comunidad experta califica este logro como la contribución más significativa de la inteligencia artificial a las matemáticas hasta la fecha, pues revela conexiones sorprendentes entre conceptos consolidados sin recurrir a teorías inéditas {source}."
   },
   "sections": [
     {
       "heading_en": "The Century-Old Puzzle",
       "heading_vi": "Bài toán thế kỷ",
       "body_en": "The Riemann hypothesis centers on the behavior of a specific mathematical function involving complex numbers. Introduced by Bernhard Riemann in 1859, this conjecture connects directly to how prime numbers distribute along the number line. While mathematicians have numerically checked trillions of zeros, proving the full hypothesis remains an elusive goal.",
-      "body_vi": "Giả thuyết Riemann tập trung vào hành vi của một hàm toán học cụ thể liên quan đến số phức (*complex numbers*). Được giới thiệu bởi Bernhard Riemann vào năm 1859, phỏng đoán này kết nối trực tiếp với cách các số nguyên tố phân bố trên trục số. Mặc dù các nhà toán học đã kiểm tra bằng số hàng nghìn tỷ nghiệm số không (*zeros*), việc chứng minh toàn bộ giả thuyết vẫn là một mục tiêu khó nắm bắt."
+      "body_vi": "Giả thuyết Riemann tập trung vào hành vi của một hàm toán học cụ thể liên quan đến số phức (*complex numbers*). Được giới thiệu bởi Bernhard Riemann vào năm 1859, phỏng đoán này kết nối trực tiếp với cách các số nguyên tố phân bố trên trục số. Mặc dù các nhà toán học đã kiểm tra bằng số hàng nghìn tỷ nghiệm số không (*zeros*), việc chứng minh toàn bộ giả thuyết vẫn là một mục tiêu khó nắm bắt.",
+      "heading_fr": "Une énigme séculaire",
+      "body_fr": "L’hypothèse de Riemann porte sur le comportement d’une fonction mathématique spécifique faisant intervenir les nombres complexes. Énoncée par Bernhard Riemann en 1859, cette conjecture est directement liée à la manière dont les nombres premiers se répartissent le long de la droite numérique. Bien que les mathématiciens aient vérifié par le calcul des milliers de milliards de zéros, démontrer l’hypothèse dans sa totalité reste un objectif insaisissable.",
+      "heading_de": "Das jahrhundertealte Rätsel",
+      "body_de": "Die Riemannsche Vermutung dreht sich um das Verhalten einer bestimmten mathematischen Funktion mit komplexen Zahlen. Diese 1859 von Bernhard Riemann aufgestellte Hypothese steht in direktem Zusammenhang damit, wie sich Primzahlen auf dem Zahlenstrahl verteilen. Obwohl Mathematiker bereits Billionen von Nullstellen numerisch überprüft haben, bleibt der vollständige Beweis der Vermutung ein schwer fassbares Ziel.",
+      "heading_es": "El enigma centenario",
+      "body_es": "La hipótesis de Riemann se centra en el comportamiento de una función matemática específica que involucra números complejos. Formulada por Bernhard Riemann en 1859, esta conjetura se vincula directamente con la distribución de los números primos en la recta numérica. Aunque los matemáticos han verificado numéricamente billones de ceros, demostrar la hipótesis completa sigue siendo un objetivo esquivo."
     },
     {
       "heading_en": "A Narrower Strip",
       "heading_vi": "Một dải hẹp hơn",
       "body_en": "A breakthrough arrived when an artificial intelligence system claimed to resolve the quasi-Riemann hypothesis. This weaker version asks whether the nontrivial zeros stay within a narrower vertical strip than previously known. Narrowing this region helps researchers understand prime number distribution with much greater precision.",
-      "body_vi": "Một bước đột phá xuất hiện khi một hệ thống trí tuệ nhân tạo tuyên bố giải quyết được giả thuyết chuẩn Riemann (*quasi-Riemann hypothesis*). Phiên bản yếu hơn này đặt câu hỏi liệu các nghiệm số không không tầm thường (*nervous zeros*) có nằm trong một dải dọc hẹp hơn so với trước đây hay không. Việc thu hẹp vùng này giúp các nhà nghiên cứu hiểu sự phân bố số nguyên tố với độ chính xác cao hơn nhiều."
+      "body_vi": "Một bước đột phá xuất hiện khi một hệ thống trí tuệ nhân tạo tuyên bố giải quyết được giả thuyết chuẩn Riemann (*quasi-Riemann hypothesis*). Phiên bản yếu hơn này đặt câu hỏi liệu các nghiệm số không không tầm thường (*nervous zeros*) có nằm trong một dải dọc hẹp hơn so với trước đây hay không. Việc thu hẹp vùng này giúp các nhà nghiên cứu hiểu sự phân bố số nguyên tố với độ chính xác cao hơn nhiều.",
+      "heading_fr": "Une bande plus étroite",
+      "body_fr": "Une percée a eu lieu lorsqu’un système d’intelligence artificielle a affirmé avoir résolu l’hypothèse de quasi-Riemann. Cette version affaiblie cherche à déterminer si les zéros non triviaux se situent dans une bande verticale plus étroite que celle établie jusqu’alors. Réduire cette région aide les chercheurs à comprendre la distribution des nombres premiers avec une précision bien supérieure.",
+      "heading_de": "Ein schmalerer Streifen",
+      "body_de": "Ein Durchbruch gelang, als ein System der künstlichen Intelligenz beanspruchte, die Quasi-Riemannsche Vermutung zu lösen. Diese schwächere Variante fragt danach, ob die nichttrivialen Nullstellen innerhalb eines schmaleren vertikalen Streifens liegen als bisher bekannt. Die Verengung dieses Bereichs hilft Forschenden, die Verteilung der Primzahlen mit deutlich höherer Genauigkeit zu verstehen.",
+      "heading_es": "Una franja más estrecha",
+      "body_es": "El avance se produjo cuando un sistema de inteligencia artificial afirmó haber resuelto la hipótesis cuasi-Riemann. Esta versión atenuada plantea si los ceros no triviales permanecen confinados en una franja vertical más estrecha de lo conocido hasta ahora. Delimitar mejor dicha región ayuda a los investigadores a comprender la distribución de los números primos con una precisión mucho mayor."
     },
     {
       "heading_en": "Navigating the Proofs",
       "heading_vi": "Điều hướng các chứng minh",
       "body_en": "OpenAI released two versions of the proof, featuring varying strip widths and paper lengths. Because the first document spans nearly two hundred pages and both are poorly written, number theorists chose to focus on the shorter forty-nine-page version. It relies on well-known ideas synthesized in surprising ways.",
-      "body_vi": "OpenAI đã phát hành hai phiên bản của chứng minh, với các độ rộng dải và độ dài bài báo khác nhau. Vì tài liệu đầu tiên kéo dài gần hai trăm trang và cả hai đều được viết kém, các nhà lý thuyết số đã chọn tập trung vào phiên bản ngắn hơn dài bốn mươi chín trang. Nó dựa trên các ý tưởng nổi tiếng được tổng hợp theo những cách đáng ngạc nhiên."
+      "body_vi": "OpenAI đã phát hành hai phiên bản của chứng minh, với các độ rộng dải và độ dài bài báo khác nhau. Vì tài liệu đầu tiên kéo dài gần hai trăm trang và cả hai đều được viết kém, các nhà lý thuyết số đã chọn tập trung vào phiên bản ngắn hơn dài bốn mươi chín trang. Nó dựa trên các ý tưởng nổi tiếng được tổng hợp theo những cách đáng ngạc nhiên.",
+      "heading_fr": "L’examen des preuves",
+      "body_fr": "OpenAI a publié deux versions de la démonstration, qui présentent des largeurs de bande et des longueurs d’article différentes. Dans la mesure où le premier document compte près de deux cents pages et que les deux sont mal rédigés, les théoriciens des nombres ont préféré se concentrer sur la version plus courte de quarante-neuf pages. Elle s’appuie sur des idées bien connues, combinées de manière surprenante.",
+      "heading_de": "Orientierung in den Beweisen",
+      "body_de": "OpenAI veröffentlichte zwei Versionen des Beweises mit unterschiedlichen Streifenbreiten und Seitenumfängen. Da das erste Dokument fast zweihundert Seiten umfasst und beide schlecht geschrieben sind, konzentrierten sich Zahlentheoretiker auf die kürzere, neunundvierzigseitige Fassung. Sie stützt sich auf bekannte Ideen, die auf überraschende Weise miteinander verknüpft werden.",
+      "heading_es": "Navegar las demostraciones",
+      "body_es": "OpenAI publicó dos versiones de la demostración, que presentan distintos anchos de franja y extensiones de texto. Dado que el primer documento abarca casi doscientas páginas y ambos adolecen de una redacción deficiente, los expertos en teoría de números prefirieron centrarse en la versión más breve de cuarenta y nueve páginas. Esta se apoya en conceptos bien conocidos, sintetizados de maneras sorprendentes."
     }
   ],
   "references": [
@@ -70,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Like unearthing hidden paths through a dense forest using an unconventional map, this breakthrough connects old mathematical concepts in surprising ways. Can you explore how modern technology reshapes traditional academic fields?",
-    "vi": "Giống như việc khai quật những con đường ẩn giấu qua một khu rừng rậm rạp bằng một bản đồ kỳ lạ, bước đột phá này kết nối các khái niệm toán học cũ theo những cách đáng ngạc nhiên. [p:Bạn có thể khám phá cách công nghệ hiện đại định hình lại các lĩnh vực học thuật truyền thống không?]"
+    "vi": "Giống như việc khai quật những con đường ẩn giấu qua một khu rừng rậm rạp bằng một bản đồ kỳ lạ, bước đột phá này kết nối các khái niệm toán học cũ theo những cách đáng ngạc nhiên. [p:Bạn có thể khám phá cách công nghệ hiện đại định hình lại các lĩnh vực học thuật truyền thống không?]",
+    "fr": "À l’image de sentiers cachés que l’on découvrirait au cœur d’une forêt dense grâce à une carte atypique, cette avancée relie d’anciens concepts mathématiques de façon surprenante. Pourriez-vous explorer la manière dont les technologies modernes transforment les disciplines universitaires traditionnelles ?",
+    "de": "Wie das Freilegen verborgener Pfade in einem dichten Wald mithilfe einer ungewöhnlichen Karte verknüpft dieser Durchbruch alte mathematische Konzepte auf überraschende Weise. Kannst du erkunden, wie moderne Technologie traditionelle wissenschaftliche Fachbereiche verändert?",
+    "es": "Al igual que descubrir senderos ocultos en un bosque denso mediante un mapa poco convencional, este avance conecta conceptos matemáticos tradicionales de formas sorprendentes. ¿Puede explorar cómo la tecnología moderna transforma las disciplinas académicas tradicionales?"
   },
   "applySteps": {
     "en": [
@@ -82,6 +109,21 @@
       "Đọc tài liệu giới thiệu về số phức và số nguyên tố để xây dựng nền tảng kiến thức toán học.",
       "Khám phá các bài viết tổng quan thảo luận về lịch sử giả thuyết Riemann và các bài toán giải thưởng thiên niên kỷ.",
       "Tìm kiếm bình luận học thuật về các ứng dụng trí tuệ nhân tạo trong nghiên cứu toán học hiện đại."
+    ],
+    "fr": [
+      "Lire des documents d’introduction sur les nombres complexes et les nombres premiers afin d’acquérir des connaissances mathématiques fondamentales.",
+      "Consulter des articles de synthèse sur l’histoire de l’hypothèse de Riemann et les problèmes du prix du millénaire.",
+      "Rechercher des commentaires universitaires sur les applications de l’intelligence artificielle dans la recherche mathématique contemporaine."
+    ],
+    "de": [
+      "Einführende Texte über komplexe Zahlen und Primzahlen lesen, um mathematisches Grundlagenwissen aufzubauen.",
+      "Übersichtsartikel zur Geschichte der Riemannschen Vermutung und den Millennium-Problemen erkunden.",
+      "Nach wissenschaftlichen Kommentaren zum Einsatz künstlicher Intelligenz in der modernen Mathematikforschung suchen."
+    ],
+    "es": [
+      "Lea materiales introductorios sobre números complejos y números primos para afianzar los fundamentos matemáticos.",
+      "Explore artículos divulgativos que analicen la historia de la hipótesis de Riemann y los Problemas del Milenio.",
+      "Busque comentarios académicos sobre la aplicación de la inteligencia artificial en la investigación matemática actual."
     ]
   },
   "coverCandidates": [
@@ -118,9 +160,81 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
+  },
+  "glossary": {
+    "en": {
+      "openai": "An artificial intelligence research company that announced a mathematical proof tackling a relaxed version of the Riemann hypothesis.",
+      "riemann hypothesis": "A famous unsolved mathematical conjecture about the distribution of zeros of a complex function, related to prime numbers.",
+      "complex numbers": "Numbers that extend the real numbers by including an imaginary unit, used in the mathematical function discussed.",
+      "bernhard riemann": "The German mathematician who introduced the famous conjecture concerning prime number distribution in 1859.",
+      "conjecture": "An unproven mathematical proposition or hypothesis proposed as true but requiring rigorous formal proof.",
+      "prime numbers": "Whole numbers greater than one divisible only by one and themselves, whose distribution connects to the hypothesis.",
+      "number line": "A one-dimensional coordinate line where real numbers and prime numbers are arranged in order.",
+      "quasi-riemann hypothesis": "A weakened mathematical variation of the Riemann hypothesis that restricts zeros to a narrower vertical strip.",
+      "nontrivial zeros": "Key values where the mathematical function equals zero, critical to determining prime number distribution.",
+      "vertical strip": "A geometric region in the complex coordinate plane where nontrivial zeros of the function are located.",
+      "number theorists": "Mathematicians who study the properties of integers and evaluated the validity of the released proofs."
+    },
+    "vi": {
+      "openai": "Tổ chức nghiên cứu trí tuệ nhân tạo đã công bố bước đột phá toán học này.",
+      "giả thuyết riemann": "Bài toán toán học nổi tiếng kết nối hàm số với sự phân bố số nguyên tố.",
+      "hàm toán học": "Quy tắc toán học gán mỗi giá trị đầu vào với một giá trị đầu ra.",
+      "số phức": "Tập hợp số bao gồm phần thực và phần ảo.",
+      "bernhard riemann": "Nhà toán học người Đức đưa ra giả thuyết nổi tiếng vào năm 1859.",
+      "phỏng đoán": "Mệnh đề toán học được cho là đúng nhưng chưa có chứng minh đầy đủ.",
+      "số nguyên tố": "Số tự nhiên lớn hơn 1 chỉ chia hết cho 1 và chính nó.",
+      "trục số": "Đường thẳng biểu diễn vị trí và thứ tự của các số theo độ lớn.",
+      "nghiệm số không": "Các giá trị đầu vào làm cho hàm toán học nhận kết quả bằng không.",
+      "dải dọc": "Khu vực giới hạn trên mặt phẳng phức chứa các nghiệm số được nghiên cứu.",
+      "lý thuyết số": "Ngành toán học chuyên nghiên cứu về các tính chất của các số nguyên."
+    },
+    "fr": {
+      "openai": "Entreprise de recherche en intelligence artificielle ayant développé le système et publié les démonstrations mathématiques.",
+      "hypothèse de riemann": "Conjecture historique reliant les zéros d'une fonction mathématique à la distribution des nombres premiers.",
+      "nombres complexes": "Nombres formés d'une partie réelle et imaginaire, nécessaires pour analyser la fonction étudiée.",
+      "conjecture": "Énoncé mathématique fortement présumé vrai mais qui n'a pas encore été formellement démontré.",
+      "nombres premiers": "Nombres entiers supérieurs à un qui ne sont divisibles que par un et par eux-mêmes.",
+      "droite numérique": "Axe géométrique continu permettant de visualiser l'ensemble ordonné de tous les nombres réels.",
+      "hypothèse de quasi-riemann": "Version affaiblie de la conjecture de Riemann restreignant les zéros à une bande plus étroite.",
+      "zéros non triviaux": "Solutions complexes qui annulent la fonction de Riemann au sein de la région critique étudiée.",
+      "bande verticale": "Zone du plan complexe délimitée par deux droites verticales dans laquelle se situent les zéros.",
+      "théoriciens des nombres": "Mathématiciens spécialistes de l'arithmétique et des propriétés des entiers, notamment des nombres premiers.",
+      "prix du millénaire": "Défis mathématiques fondamentaux récompensés chacun d'un million de dollars par l'Institut Clay."
+    },
+    "de": {
+      "openai": "US-amerikanisches Unternehmen, das Modelle und Systeme der künstlichen Intelligenz erforscht und entwickelt.",
+      "riemannsche vermutung": "Berühmtes ungelöstes mathematisches Problem über das Verhalten einer speziellen Funktion und die Verteilung von Primzahlen.",
+      "komplexen zahlen": "Zahlenbereich, der die reellen Zahlen erweitert und Wurzeln aus negativen Zahlen umfasst.",
+      "bernhard riemann": "Deutscher Mathematiker des 19. Jahrhunderts, der grundlegende Theorien zur Analysis und Geometrie schuf.",
+      "primzahlen": "Ganze Zahlen größer als eins, die ausschließlich durch eins und sich selbst teilbar sind.",
+      "nullstellen": "Werte, für die eine mathematische Funktion das Ergebnis null liefert.",
+      "quasi-riemannsche vermutung": "Abgeschwächte Variante der Riemannschen Vermutung, die den Bereich möglicher Nullstellen eingrenzt.",
+      "nichttrivialen nullstellen": "Spezifische Nullstellen der Riemannschen Zeta-Funktion, die für das Verständnis der Primzahlen entscheidend sind.",
+      "zahlentheoretiker": "Mathematiker, die sich mit den Gesetzmäßigkeiten und Eigenschaften ganzer Zahlen befassen.",
+      "millennium-problemen": "Sieben berühmte ungelöste mathematische Probleme, für deren Lösung Preisgelder ausgelobt wurden."
+    },
+    "es": {
+      "openai": "Empresa de investigación en inteligencia artificial creadora del sistema que desarrolló las demostraciones analizadas.",
+      "hipótesis de riemann": "Célebre conjetura matemática sobre los ceros de la función zeta y la distribución de los números primos.",
+      "función matemática": "Relación que asigna a cada elemento de un conjunto un único valor en otro conjunto.",
+      "números complejos": "Valores numéricos formados por una parte real y una parte imaginaria.",
+      "bernhard riemann": "Matemático alemán del siglo XIX que formuló la hipótesis sobre la distribución de números primos.",
+      "conjetura": "Afirmación matemática que se supone cierta pero que todavía carece de una demostración rigurosa.",
+      "números primos": "Números enteros mayores que uno divisibles únicamente por sí mismos y por la unidad.",
+      "recta numérica": "Línea unidimensional continua en la que cada punto representa un número real determinado.",
+      "hipótesis cuasi-riemann": "Variante menos restrictiva de la conjetura de Riemann que limita los ceros a cierta franja.",
+      "ceros no triviales": "Soluciones complejas de la función zeta que no son enteros negativos pares y determinan la conjetura.",
+      "franja vertical": "Zona geométrica del plano complejo limitada por dos líneas verticales paralelas.",
+      "teoría de números": "Disciplina matemática enfocada en las propiedades de los números enteros y sus relaciones.",
+      "problemas del milenio": "Conjunto de siete enigmas matemáticos clave catalogados en el año 2000 por el Instituto Clay."
+    }
   }
 }

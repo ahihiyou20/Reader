@@ -132,5 +132,27 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JYwCdMoAKSFwJMGle9jwneogAAP773RAQaBMse8sDTsKMkpePQoRoQT9htMrBnXx6z8H2Zxac7YhwCtwMsB8VGTqIqnDSwpjQAAAA",
-  "dominant": "#3a3133"
+  "dominant": "#3a3133",
+  "glossary": {
+    "en": {
+      "galileo galilei": "An Italian astronomer who in 1610 discovered four moons orbiting Jupiter.",
+      "luna": "The ancient Latin name for Earth's Moon, the origin of the word lunar.",
+      "phases": "The recurring cycle of different shapes of the sunlit side of the Moon seen from Earth.",
+      "magma ocean": "A deep layer of molten rock that covered the newly formed Moon before cooling into crust.",
+      "maria": "Dark, flat plains on the Moon formed by ancient volcanic basins flooded with lava.",
+      "regolith": "A blanket of fine dust and broken rock fragments covering the Moon's surface.",
+      "apollo": "An American spaceflight program that landed the first humans on the Moon.",
+      "chandrayaan-1": "An Indian lunar orbiter mission that first definitively detected water molecules across the Moon's surface in 2008.",
+      "sofia": "An airborne astronomical observatory that discovered water molecules in sunlight on the Moon's surface.",
+      "clavius crater": "A prominent sunlit lunar crater where water molecules were confirmed by NASA in 2020.",
+      "nasa": "The United States government agency responsible for civilian space exploration and aerospace research."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

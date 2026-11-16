@@ -137,5 +137,27 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JbACdL1yFpcZLEAlX9dRH7Lfd5wAA/v4b11EflK2V8xhRlHzLvQIlsIOu2XN14KFpJxrrdeR7ZxhogoXI7UKCaS6F2hfkxKCnPhCpKfCUh5T8hBRwnUSfeKaqOgAA",
-  "dominant": "#51382f"
+  "dominant": "#51382f",
+  "glossary": {
+    "en": {
+      "event horizon": "The boundary around a black hole beyond which nothing, not even light, can escape its gravitational pull.",
+      "accretion disk": "A rapidly spinning, glowing disk of gas spiraling inward toward a black hole before falling in.",
+      "accretion": "The process by which a black hole grows by pulling in and consuming surrounding matter.",
+      "gravitational lensing": "The bending of light around a massive object due to the warping of space-time by gravity.",
+      "event horizon shadow": "The dark central zone created because a black hole captures passing light and bends other light away.",
+      "event horizon telescope": "A global network of telescopes that captured the first direct image of a black hole shadow.",
+      "doppler beaming": "An effect where matter moving toward us appears brighter and bluer, while matter moving away appears dimmer.",
+      "corona": "A turbulent, billion-degree cloud of particles above the inner accretion disk that emits powerful X-rays.",
+      "jets": "Beams of matter blasted away from near a black hole in opposite directions at near-light speed.",
+      "general relativity": "Einstein's theory describing gravity as the warping of space-time by matter and energy.",
+      "singularity": "A theoretical point at a black hole's center where matter is crushed to infinite density."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }
