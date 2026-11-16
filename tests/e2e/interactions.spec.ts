@@ -292,6 +292,8 @@ async function runPressCensusOnSurface(
 }
 
 test('press census across all surfaces in touch contexts', async ({ browser }) => {
+  // Every surface in two viewports: about 80 s on a hosted runner, too close to the 90 s default.
+  test.setTimeout(240_000);
   const viewports = MATRIX.filter(
     (v) =>
       (v.width === 390 && v.height === 844 && v.hasTouch) ||
