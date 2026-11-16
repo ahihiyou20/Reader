@@ -120,8 +120,8 @@
     "sourceUrl": "https://unsplash.com/photos/jRRdvTBotuE",
     "unsplashDownloadLocation": "https://api.unsplash.com/photos/jRRdvTBotuE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8cmVuYWlzc2FuY2UlMjB3b29kY3V0JTIwZW5ncmF2aW5nJTIwYXJ0fGVufDF8MXx8fDE3OTQ3ODYwMTN8MA",
     "video": {
-      "url": "/covers/video/urs-graf-grotesque-warfare-visions.mp4",
-      "wide": "/covers/video/urs-graf-grotesque-warfare-visions-wide.mp4",
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790671/pagemoor/covers/urs-graf-grotesque-warfare-visions.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790672/pagemoor/covers/urs-graf-grotesque-warfare-visions-wide.mp4",
       "credit": "Pixabay",
       "source": "https://pixabay.com/videos/id-3068/"
     }

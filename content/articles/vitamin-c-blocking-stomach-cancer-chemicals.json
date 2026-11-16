@@ -135,8 +135,8 @@
     "sourceUrl": "https://unsplash.com/photos/fQYnG57D_ms",
     "unsplashDownloadLocation": "https://api.unsplash.com/photos/fQYnG57D_ms/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8Y2l0cnVzJTIwZnJ1aXQlMjBzbGljZXMlMjBtYWNyb3xlbnwxfDF8fHwxNzk0Nzg1NjQyfDA",
     "video": {
-      "url": "/covers/video/vitamin-c-blocking-stomach-cancer-chemicals.mp4",
-      "wide": "/covers/video/vitamin-c-blocking-stomach-cancer-chemicals-wide.mp4",
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790673/pagemoor/covers/vitamin-c-blocking-stomach-cancer-chemicals.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790673/pagemoor/covers/vitamin-c-blocking-stomach-cancer-chemicals-wide.mp4",
       "credit": "Pixabay",
       "source": "https://pixabay.com/videos/id-54942/"
     }

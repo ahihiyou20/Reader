@@ -115,8 +115,8 @@
     "sourceUrl": "https://unsplash.com/photos/265UjRsLgd8",
     "unsplashDownloadLocation": "https://api.unsplash.com/photos/265UjRsLgd8/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8bmV1dHJvbiUyMHN0YXIlMjBzcGFjZSUyMHRlbGVzY29wZXxlbnwxfDF8fHwxNzk0Nzg1OTAyfDA",
     "video": {
-      "url": "/covers/video/magnetars-the-extreme-cosmic-magnets.mp4",
-      "wide": "/covers/video/magnetars-the-extreme-cosmic-magnets-wide.mp4",
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790658/pagemoor/covers/magnetars-the-extreme-cosmic-magnets.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790659/pagemoor/covers/magnetars-the-extreme-cosmic-magnets-wide.mp4",
       "credit": "Pixabay",
       "source": "https://pixabay.com/videos/id-44350/"
     }

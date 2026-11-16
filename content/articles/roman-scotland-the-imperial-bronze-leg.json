@@ -103,8 +103,8 @@
     "sourceUrl": "https://unsplash.com/photos/oa60z8_QE-E",
     "unsplashDownloadLocation": "https://api.unsplash.com/photos/oa60z8_QE-E/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8YnJvbnplJTIwc2N1bHB0dXJlJTIwbGVnJTIwbXVzZXVtJTIwZXhoaWJpdHxlbnwxfDF8fHwxNzk0Nzg2MDY1fDA",
     "video": {
-      "url": "/covers/video/roman-scotland-the-imperial-bronze-leg.mp4",
-      "wide": "/covers/video/roman-scotland-the-imperial-bronze-leg-wide.mp4",
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790664/pagemoor/covers/roman-scotland-the-imperial-bronze-leg.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1794790665/pagemoor/covers/roman-scotland-the-imperial-bronze-leg-wide.mp4",
       "credit": "Pixabay",
       "source": "https://pixabay.com/videos/id-130294/"
     }
