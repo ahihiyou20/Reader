@@ -52,7 +52,13 @@ export function CoverMedia({
 
   const shouldDecode = Boolean(priority || active || playing || blurred);
   const still = useReducedMotion();
-  const clip = cover.video && !blurred && !still && (active || playing) && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
+  const wantClip = cover.video && !blurred && !still && (active || playing) && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
+  // The clip's shape is chosen when it starts: swapping it on rotation would remount the <video>, and
+  // the new one fades in from nothing over a frame or two of bare background.
+  const chosen = useRef<string | undefined>(undefined);
+  if (!wantClip) chosen.current = undefined;
+  else if (!chosen.current || ![cover.video?.url, cover.video?.wide].includes(chosen.current)) chosen.current = wantClip;
+  const clip = chosen.current;
 
   useEffect(() => {
     if (decoded) return;
