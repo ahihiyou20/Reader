@@ -249,6 +249,7 @@ html[data-stage='regular-landscape'] .dscroll {
   right: 0;
   width: 62%;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: calc(var(--sat) + 84px) 48px 180px 28px;
   display: flex;
   flex-direction: column;
@@ -322,6 +323,7 @@ html[data-stage='regular-landscape'] .eleft {
   left: 0;
   width: 38%;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: calc(var(--sat) + 84px) 24px calc(var(--sab) + 40px) 48px;
   box-sizing: border-box;
   scrollbar-width: none;
@@ -355,6 +357,7 @@ html[data-stage='regular-landscape'] .eright {
   right: 0;
   width: 62%;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: calc(var(--sat) + 84px) 48px 24px 28px;
   box-sizing: border-box;
   scrollbar-width: none;

@@ -752,6 +752,7 @@ select {
   position: absolute;
   inset: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   scrollbar-width: none;
   padding: calc(var(--sat) + var(--d-gap) + 211px) 16px 360px;
@@ -844,8 +845,11 @@ select {
   font-weight: 500;
   cursor: pointer;
   /* A source label ("ScienceDaily (2026)") reads as one token: split over two lines it is hard to
-     read and to tap. */
-  white-space: nowrap;
+     read and to tap. A label wider than the column still wraps inside its own box instead of
+     pushing past the screen edge. */
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 /* An inline span ignores transform, so the shared press scale never shows here: answer with the tint. */
 .cite:active,
@@ -1148,6 +1152,7 @@ select {
   right: 0;
   bottom: calc(var(--sab) + 124px);
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   scrollbar-width: none;
   padding: calc(var(--sat) + 74px) 16px 28px;
@@ -1825,6 +1830,7 @@ select {
 .pbody {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   padding: 4px 16px calc(var(--sab) + 28px);
   scrollbar-width: none;
@@ -1925,6 +1931,7 @@ select {
 }
 .sbody {
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   padding: 4px 18px calc(var(--sab) + 22px);
 }
@@ -2702,6 +2709,7 @@ select {
   position: fixed;
   inset: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   background: var(--bg);
 }
 .doc main {

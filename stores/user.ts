@@ -7,6 +7,8 @@ export interface UserState {
   ready: boolean;
   backend: 'firebase' | 'local';
   user: AuthUser | null;
+  /** This device's last session was a Google account: show it as signed in before Firebase starts. */
+  cachedSignedIn: boolean;
   displayName: string | null;
   photoURL: string | null;
   likes: Record<string, true>;
@@ -30,6 +32,7 @@ export const useUser = create<UserState>(() => ({
   ready: false,
   backend: 'local',
   user: null,
+  cachedSignedIn: false,
   displayName: null,
   photoURL: null,
   likes: {},

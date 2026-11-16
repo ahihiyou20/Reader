@@ -11,6 +11,8 @@ import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/l
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { preloadTitleFaces } from '@/lib/title';
 import { useUI } from '@/stores/ui';
+import { optCover } from '@/lib/covers';
+import { coverSource } from '../CoverMedia';
 import { useSize, useT } from '../hooks';
 import { ArticlePage } from './ArticlePage';
 import { EndCard } from './EndCard';
@@ -105,6 +107,17 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       for (let k = -1; k <= 5; k++) if (items[index + k]) preloadTitleFaces(items[index + k].category);
     };
 
+    // The same file the cover's <img> will ask for, so the swipe lands on a decoded image.
+    const landscape = useUI.getState().stage.endsWith('landscape');
+    const warm = (k: number) => {
+      const it = items[index + k];
+      if (!it) return;
+      prefetchArticle(it.slug);
+      const { src, srcSet, sizes } = coverSource(it.cover, optCover(it.slug), landscape);
+      preloadImage(src, srcSet, sizes);
+    };
+    // The next cover cannot wait for idle time: a quick swipe reaches it within a second.
+    warm(1);
     if (typeof window === 'undefined') return;
     if ('requestIdleCallback' in window) {
       const handle = (
@@ -114,12 +127,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       ).requestIdleCallback(
         () => {
           ahead();
-          for (const k of [1, 2, -1]) {
-            const it = items[index + k];
-            if (!it) continue;
-            prefetchArticle(it.slug);
-            preloadImage(it.cover.type === 'video' ? it.cover.poster : it.cover.url);
-          }
+          for (const k of [2, 3, -1]) warm(k);
         },
         { timeout: 2000 },
       );
@@ -131,12 +139,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     }
     const timer = setTimeout(() => {
       ahead();
-      for (const k of [1, 2, -1]) {
-        const it = items[index + k];
-        if (!it) continue;
-        prefetchArticle(it.slug);
-        preloadImage(it.cover.type === 'video' ? it.cover.poster : it.cover.url);
-      }
+      for (const k of [2, 3, -1]) warm(k);
     }, 500);
     return () => clearTimeout(timer);
   }, [index, items]);

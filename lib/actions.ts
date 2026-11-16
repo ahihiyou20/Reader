@@ -69,10 +69,11 @@ function snapshotData(): UserData {
 }
 
 function persistCache() {
-  const uid = useUser.getState().user?.uid;
+  const user = useUser.getState().user;
+  const uid = user?.uid;
   if (!uid) return;
   try {
-    localStorage.setItem(CACHE(uid), JSON.stringify({ at: Date.now(), data: snapshotData() }));
+    localStorage.setItem(CACHE(uid), JSON.stringify({ at: Date.now(), data: snapshotData(), google: !user.isAnonymous }));
     localStorage.setItem(LAST_UID, uid);
   } catch {}
 }
@@ -81,13 +82,18 @@ function persistCache() {
  * Show this device's last known reading data (progress, streak, likes) at load, before the backend
  * starts: the feed can put finished articles last and the header can show the streak without Firebase.
  */
-export function restoreCachedUser() {
+export function restoreCachedUser(): boolean {
   useUser.setState({ backend: backendKind });
   try {
     const uid = localStorage.getItem(LAST_UID);
-    const cached = uid ? (JSON.parse(localStorage.getItem(CACHE(uid)) ?? 'null') as { data: UserData } | null) : null;
-    if (cached && !useUser.getState().user) applyData(cached.data);
+    const cached = uid ? (JSON.parse(localStorage.getItem(CACHE(uid)) ?? 'null') as { data: UserData; google?: boolean } | null) : null;
+    if (cached && !useUser.getState().user) {
+      applyData(cached.data);
+      useUser.setState({ cachedSignedIn: Boolean(cached.google) });
+      return Boolean(cached.google);
+    }
   } catch {}
+  return false;
 }
 
 async function refreshUserData(force = false) {
@@ -390,6 +396,7 @@ export async function signOut() {
       localStorage.removeItem(CACHE(uid));
     } catch {}
   useUser.setState({
+    cachedSignedIn: false,
     likes: {},
     saves: {},
     progress: {},
