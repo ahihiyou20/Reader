@@ -14,6 +14,7 @@ import { useT } from '../hooks';
 import { ArticleCard } from './ArticleCard';
 import { Panel } from './Layer';
 import { LOCALE } from '@/lib/content/types';
+import { BooksGlyph, FlameGlyph, TopicGlyph, TrophyGlyph } from '../icons';
 
 type Tab = 'saved' | 'liked' | 'posts';
 
@@ -113,15 +114,21 @@ export function ProfilePanel() {
 
         <div className="stats">
           <div className="stat">
-            <b>🔥 {current}</b>
+            <b>
+              <FlameGlyph /> {current}
+            </b>
             <span>{t('currentStreak')}</span>
           </div>
           <div className="stat">
-            <b>🏆 {streak.longest}</b>
+            <b>
+              <TrophyGlyph /> {streak.longest}
+            </b>
             <span>{t('longestStreak')}</span>
           </div>
           <div className="stat">
-            <b>📚 {articlesRead}</b>
+            <b>
+              <BooksGlyph /> {articlesRead}
+            </b>
             <span>{t('articlesRead')}</span>
           </div>
         </div>
@@ -130,7 +137,7 @@ export function ProfilePanel() {
         <div className="week">
           {days.map((d) => (
             <div key={d} className={`day${read.has(d) ? ' on' : ''}${d === today ? ' today' : ''}`}>
-              <i aria-hidden="true">{read.has(d) ? '🔥' : ''}</i>
+              <i aria-hidden="true">{read.has(d) ? <FlameGlyph size={18} /> : null}</i>
               <span>{weekday(d)}</span>
             </div>
           ))}
@@ -225,7 +232,7 @@ function ReadingStats() {
       <div className="chips wrap">
         {cats?.map((c) => (
           <button key={c.id} className="chip solid" type="button" aria-pressed={topics.includes(c.id)} onClick={() => toggleTopic(c.id)}>
-            <span aria-hidden="true">{c.emoji}</span>
+            <TopicGlyph id={c.id} emoji={c.emoji} />
             {pick(c.name, lang)}
           </button>
         ))}

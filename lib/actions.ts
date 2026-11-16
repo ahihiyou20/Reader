@@ -320,7 +320,7 @@ export async function completeArticle(slug: string) {
   }));
   track('article_complete', { articleId: slug });
   if (next.changed) {
-    toast(t('streakUp', { n: next.current }));
+    useUI.getState().showToast(t('streakUp', { n: next.current }), true);
     track('streak_up', { value: next.current });
     try {
       navigator.vibrate?.(10);

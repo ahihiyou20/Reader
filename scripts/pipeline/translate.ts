@@ -160,9 +160,9 @@ export async function translateFull(a: ArticleSource, lang: Lang): Promise<boole
   let changed = await translateInto(a, lang);
   for (let i = 0; i < 2 && Object.keys(a.glossary?.[lang] ?? {}).length < GLOSSARY_MIN && fullLangs(a).includes(lang); i++) {
     const kept = a.glossary?.[lang];
-    delete a.glossary![lang];
+    if (a.glossary) delete a.glossary[lang];
     if (await translateInto(a, lang)) changed = true;
-    if (Object.keys(a.glossary?.[lang] ?? {}).length < Object.keys(kept ?? {}).length) a.glossary![lang] = kept!;
+    if (kept && Object.keys(a.glossary?.[lang] ?? {}).length < Object.keys(kept).length) a.glossary = { ...a.glossary, [lang]: kept };
   }
   return changed;
 }

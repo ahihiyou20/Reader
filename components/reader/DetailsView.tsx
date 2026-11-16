@@ -20,6 +20,7 @@ import { captureAnchor, restoreScrollTop, type BlockBox, type ReadingAnchor } fr
 import { CountRoll } from '@/components/ui/CountRoll';
 import { canSpeak, trackFor, useAudio } from '@/stores/audio';
 import { useTapToDefine } from './WordPop';
+import { BulbGlyph } from '../icons';
 
 const sweptSlugs = new Set<string>();
 
@@ -474,7 +475,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             >
               <div className={`kp-glow${kpSwept ? ' on' : ''}`} />
               <div className="kp-l">
-                <span aria-hidden="true">💡</span>
+                <BulbGlyph size={16} />
                 {t('keyPoint')}
               </div>
               <RichText rich={kpText} onCite={cite} />

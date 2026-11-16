@@ -3,8 +3,6 @@
 //   summary          — any other page: Reader's own short summary plus a link (group 5). The page text
 //                      is sent to Gemini only, never stored in the repo.
 //   text             — the editor's own writing (group 4).
-//   write            — Reader's own in-depth article (group 4) on the topic of a link or an idea, written
-//                      from several sources (research.ts): the page, Wikipedia, Europe PMC, a web search.
 // Articles are written as "published": they reach the site only when the bot's pull request is merged.
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -12,27 +10,16 @@ import type { ArticleSource, ContentGroup, CoverSource } from '../../lib/content
 import { citedIds } from '../../lib/content/markup';
 import { type Issue, totalWords, validateArticle } from '../../lib/content/validate';
 import { readPage } from './adapters/readability';
-import { RESEARCHED_WORDS, applyWritten, enrich, fromText, summarize, writeResearched, writtenWords } from './compose';
+import { applyWritten, enrich, fromText, summarize } from './compose';
 import { translateAll } from './translate';
 import { claimCover, findCovers, remotePlaceholder } from './cover';
-import { VIDEO_DIR, autoMotion, hasFfmpeg, hasPixabay } from './motion';
-import { gather, materialWords } from './research';
+import { VIDEO_DIR } from './motion';
 import { MODEL, hasGemini } from './gemini';
 import { importSource } from './import';
 import { ruleFor } from './licenses';
 import { CONTENT, dirs, previewUrl, readJson, uniqueSlug, wordCount, writeJson } from './lib';
 
-export type Mode = 'auto' | 'adapt' | 'verbatim' | 'summary' | 'write';
-
-/** What triage (or the idea step) worked out about a topic, for the research and writing steps. */
-export interface TopicHints {
-  summary?: string;
-  angle?: string;
-  kind?: string;
-  wiki?: string[];
-  paper?: string;
-  photo?: string;
-}
+export type Mode = 'auto' | 'adapt' | 'verbatim' | 'summary';
 
 export interface CreateInput {
   url?: string;
@@ -44,7 +31,6 @@ export interface CreateInput {
   author?: string;
   /** Verbatim (group 3) texts cannot be shortened: skip those longer than this. */
   maxWords?: number;
-  hints?: TopicHints;
 }
 
 export interface Created {
@@ -87,8 +73,7 @@ export function trimToFit(a: ArticleSource, max = 950): boolean {
 
 export function modeFor(url: string, mode: Mode = 'auto'): Exclude<Mode, 'auto'> {
   const rule = ruleFor(url);
-  // Reader's own article cites the page like any other source, whatever its licence.
-  if (mode === 'summary' || mode === 'write') return mode;
+  if (mode === 'summary') return mode;
   if (!rule) {
     if (mode !== 'auto') throw new Error(`${new URL(url).hostname} is not in the licence table: only summary mode is possible`);
     return 'summary';
@@ -181,40 +166,6 @@ async function fromSummary(url: string, category: string, categories?: string[])
   return { a, ai: ['summary', 'vi', 'keyPoint', 'applySteps'] };
 }
 
-/** Group 4: Reader's own in-depth article on a topic, from a link that suggested it or from an idea. */
-async function fromResearch(input: CreateInput, categories?: string[]): Promise<{ a: ArticleSource; ai: string[] }> {
-  if (!hasGemini()) throw new SkipError('Writing articles needs GEMINI_API_KEY');
-  const category = input.category === AUTO ? FALLBACK_CATEGORY : input.category;
-  const h = input.hints ?? {};
-  const title = input.title?.trim() || h.angle || '';
-  if (!title) throw new Error('A researched article needs a topic');
-  const sources = await gather({ title, summary: h.summary, url: input.url, wiki: h.wiki, paper: h.paper, category });
-  const material = materialWords(sources);
-  if (sources.length < 2 || material < 900) throw new Error(`Not enough source material (${sources.length} sources, ${material} words)`);
-  const w = await writeResearched({ title, angle: h.angle, kind: h.kind, sources, categories });
-  const words = writtenWords(w);
-  // A little under the minimum is still a full article; much less means the model gave up.
-  if (words < RESEARCHED_WORDS.min * 0.95) throw new Error(`Too short: ${words} words written (minimum ${RESEARCHED_WORDS.min})`);
-  const cited = new Set([w.hook_en, w.keyPoint_en, ...w.sections.map((x) => x.body_en)].flatMap((t) => citedIds(t)));
-  const references = sources.filter((d) => cited.has(d.id)).map(({ id, label, url }) => ({ id, label, url }));
-  // The Pagemoor standard asks for two sources; an article resting on one page is a summary of it.
-  if (references.length < 2) throw new Error(`Cites ${references.length} source (minimum 2)`);
-  const origin: ArticleSource['origin'] = { group: 4, license: 'Reader-CC-BY-4.0', authors: ['Pagemoor editors'], changes: [] };
-  const a = skeleton(await uniqueSlug(w.title_en), category, origin, references);
-  applyWritten(a, w, categories);
-  Object.assign(a, await covers(a.title.en, a.category, w.photo ?? h.photo));
-  // Motion covers add two clips to the repository per article, so the Gemini writer makes them only when asked.
-  if (process.env.MOTION_COVERS === 'true' && hasPixabay() && (await hasFfmpeg())) {
-    try {
-      const video = await autoMotion(a, [w.video ?? '', w.photo ?? h.photo ?? '', ...(a.tags ?? []).slice(0, 2)]);
-      if (video) a.cover.video = video;
-    } catch (e) {
-      console.warn(`${a.slug}: no motion cover (${(e as Error).message.slice(0, 160)})`);
-    }
-  }
-  return { a, ai: ['written', 'keyPoint', 'applySteps'] };
-}
-
 async function fromOwnText(input: CreateInput, categories?: string[]): Promise<{ a: ArticleSource; ai: string[] }> {
   const text = input.text!.trim();
   const category = input.category === AUTO ? FALLBACK_CATEGORY : input.category;
@@ -249,8 +200,7 @@ async function fromOwnText(input: CreateInput, categories?: string[]): Promise<{
 export async function createArticle(input: CreateInput): Promise<Created> {
   let made: { a: ArticleSource; ai: string[] };
   const categories = input.category === AUTO && hasGemini() ? await categoryIds() : undefined;
-  if (input.mode === 'write') made = await fromResearch(input, categories);
-  else if (input.url) {
+  if (input.url) {
     const mode = modeFor(input.url, input.mode);
     made = mode === 'summary' ? await fromSummary(input.url, input.category, categories) : await fromLicensed(input.url, input.category, categories, input.maxWords);
   } else if (input.text?.trim()) made = await fromOwnText(input, categories);

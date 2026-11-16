@@ -10,6 +10,7 @@ import { useUser } from '@/stores/user';
 import { preloadExplore, preloadProfile, preloadSheets, preloadSocial } from '../overlays/preload';
 import { useT } from '../hooks';
 import { Avatar } from './Avatar';
+import { FlameGlyph } from '../icons';
 
 export function TopBar() {
   const t = useT();
@@ -104,7 +105,7 @@ export function TopBar() {
   );
 }
 
-/** CMP-02: 🔥 + count; grey until today's reading is done; pops when the streak grows. */
+/** CMP-02: flame + count; grey until today's reading is done; pops when the streak grows. */
 function StreakBadge({ onPress, onPreload }: { onPress: () => void; onPreload?: () => void }) {
   const t = useT();
   const streak = useUser((s) => s.streak);
@@ -136,7 +137,7 @@ function StreakBadge({ onPress, onPreload }: { onPress: () => void; onPreload?: 
       aria-label={`${t('streakAria', { n: value })}${readToday ? '' : `. ${t('streakPending')}`}`}
     >
       <span className="fire" ref={fire} aria-hidden="true">
-        🔥
+        <FlameGlyph size={22} />
       </span>
       <span className="snum" aria-hidden="true">
         <CountRoll value={value} />

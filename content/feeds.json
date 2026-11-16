@@ -3,10 +3,8 @@
   "maxPerDay": 0,
   "maxAgeDays": 14,
   "triage": { "minScore": 6, "perCategory": 6, "dupThreshold": 0.6 },
-  "ideas": { "enabled": false, "extra": 4 },
   "feeds": [
     { "id": "nasa-science", "name": "NASA Science", "url": "https://science.nasa.gov/feed/", "category": "science", "mode": "auto", "max": 3, "exclude": "^APOD|proposer|solicitation|ROSES|opportunit|funding|job", "enabled": true },
-    { "id": "esa-space", "name": "ESA Space Science", "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science", "category": "science", "mode": "summary", "max": 2, "enabled": true },
     { "id": "usgs", "name": "U.S. Geological Survey", "url": "https://www.usgs.gov/news/all/feed", "category": "science", "mode": "auto", "max": 2, "enabled": true },
     { "id": "quanta", "name": "Quanta Magazine", "url": "https://www.quantamagazine.org/feed/", "category": "science", "mode": "summary", "max": 2, "enabled": true },
     { "id": "sciencedaily", "name": "ScienceDaily", "url": "https://www.sciencedaily.com/rss/top/science.xml", "category": "science", "mode": "summary", "max": 3, "enabled": true },
@@ -23,7 +21,6 @@
     { "id": "who-news", "name": "World Health Organization", "url": "https://www.who.int/rss-feeds/news-english.xml", "category": "health", "mode": "summary", "max": 2, "exclude": "Director-General|appoint|statement|visit|meeting|summit|award", "enabled": true },
     { "id": "owid", "name": "Our World in Data", "url": "https://ourworldindata.org/atom.xml", "category": "auto", "mode": "auto", "max": 3, "enabled": true },
     { "id": "liberty-street", "name": "Liberty Street Economics", "url": "https://libertystreeteconomics.newyorkfed.org/feed/", "category": "economics", "mode": "summary", "max": 2, "enabled": true },
-    { "id": "imf-blog", "name": "IMF Blog", "url": "https://www.imf.org/en/Blogs/rss", "category": "economics", "mode": "summary", "max": 2, "enabled": true },
     { "id": "npr-economy", "name": "NPR Economy", "url": "https://feeds.npr.org/1017/rss.xml", "category": "economics", "mode": "summary", "max": 2, "enabled": true },
     { "id": "mit-news", "name": "MIT News", "url": "https://news.mit.edu/rss/feed", "category": "auto", "mode": "summary", "max": 3, "enabled": true },
     { "id": "ieee-spectrum", "name": "IEEE Spectrum", "url": "https://spectrum.ieee.org/feeds/feed.rss", "category": "technology", "mode": "summary", "max": 2, "enabled": true },
