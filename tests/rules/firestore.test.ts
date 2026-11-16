@@ -98,6 +98,33 @@ describe('counters', () => {
     again.set(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true });
     await assertFails(again.commit());
   });
+  it('a like cannot be deleted on its own to be counted again', async () => {
+    const db = guest();
+    const like = writeBatch(db);
+    like.set(doc(db, 'users/guest/likes/a1'), { slug: 'a1', createdAt: serverTimestamp() });
+    like.set(doc(db, 'counters/a1'), { likes: increment(1) }, { merge: true });
+    await assertSucceeds(like.commit());
+    await assertFails(deleteDoc(doc(db, 'users/guest/likes/a1')));
+  });
+  it('a save whose counter is already at zero can be deleted alone', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      await setDoc(doc(ctx.firestore(), 'users/guest/saves/a1'), { slug: 'a1', createdAt: new Date() });
+      await setDoc(doc(ctx.firestore(), 'counters/a1'), { saves: 0 });
+    });
+    await assertSucceeds(deleteDoc(doc(guest(), 'users/guest/saves/a1')));
+  });
+  it('a comment like is deleted only with one off its comment', async () => {
+    await env.withSecurityRulesDisabled(async (ctx) => {
+      await setDoc(doc(ctx.firestore(), 'users/alice/commentLikes/a1__c1'), { slug: 'a1', id: 'c1', createdAt: new Date() });
+      await updateDoc(doc(ctx.firestore(), 'comments/a1/items/c1'), { likeCount: 1 });
+    });
+    const db = alice();
+    await assertFails(deleteDoc(doc(db, 'users/alice/commentLikes/a1__c1')));
+    const b = writeBatch(db);
+    b.delete(doc(db, 'users/alice/commentLikes/a1__c1'));
+    b.update(doc(db, 'comments/a1/items/c1'), { likeCount: increment(-1) });
+    await assertSucceeds(b.commit());
+  });
   it("cannot take away other readers' likes", async () => {
     await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { likes: 5 }));
     await assertFails(setDoc(doc(guest(), 'counters/a1'), { likes: increment(-1) }, { merge: true }));

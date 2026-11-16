@@ -3,7 +3,6 @@
   "maxPerDay": 0,
   "maxAgeDays": 14,
   "triage": { "minScore": 6, "perCategory": 6, "dupThreshold": 0.6 },
-  "ideas": { "enabled": false, "extra": 4 },
   "feeds": [
     { "id": "nasa-science", "name": "NASA Science", "url": "https://science.nasa.gov/feed/", "category": "science", "mode": "auto", "max": 3, "exclude": "^APOD|proposer|solicitation|ROSES|opportunit|funding|job", "enabled": true },
     { "id": "usgs", "name": "U.S. Geological Survey", "url": "https://www.usgs.gov/news/all/feed", "category": "science", "mode": "auto", "max": 2, "enabled": true },

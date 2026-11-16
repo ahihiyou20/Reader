@@ -22,6 +22,14 @@ service cloud.firestore {
     // (existsAfter on a document written in the same batch is free), so clients send at most 9 pairs.
     function added(sub, id) { return !exists(myDoc(sub, id)) && existsAfter(myDoc(sub, id)); }
     function removed(sub, id) { return exists(myDoc(sub, id)) && !existsAfter(myDoc(sub, id)); }
+    // The other half: a like or save is deleted only in the write that takes its count back down, so
+    // like, delete the like alone, like again cannot raise the count. A counter that is gone or already
+    // at zero has nothing to take back.
+    function counted(c, field) {
+      return !exists(c) || get(c).data.get(field, 0) == 0
+        || (existsAfter(c) && getAfter(c).data.get(field, 0) == get(c).data.get(field, 0) - 1);
+    }
+    function undone(field, slug) { return counted(/databases/$(db)/documents/counters/$(slug), field); }
     // The comment counter counts visible comments. Each write that moves it names the comment in
     // `lastComment`: +1 when that comment is created in the same write, -1 when a visible one is
     // deleted or hidden in it.
@@ -69,11 +77,13 @@ service cloud.firestore {
             || request.resource.data.streak.current == 1);
 
       match /likes/{slug} {
-        allow read, delete: if isMe(uid);
+        allow read: if isMe(uid);
+        allow delete: if isMe(uid) && undone('likes', slug);
         allow create, update: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
       }
       match /saves/{slug} {
-        allow read, delete: if isMe(uid);
+        allow read: if isMe(uid);
+        allow delete: if isMe(uid) && undone('saves', slug);
         allow create, update: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
       }
       // One per article the reader has shared: the share counter counts readers, not taps.
@@ -106,7 +116,10 @@ service cloud.firestore {
           && request.resource.data.settings is map;
       }
       match /commentLikes/{key} {
-        allow read, delete: if isMe(uid);
+        allow read: if isMe(uid);
+        // A hidden comment's count is not shown (and the reader may not read it to take one off).
+        allow delete: if isMe(uid) && (counted(commentDoc(resource.data.slug, resource.data.id), 'likeCount')
+          || get(commentDoc(resource.data.slug, resource.data.id)).data.status != 'visible');
         allow create: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'id', 'createdAt'])
           && key == request.resource.data.slug + '__' + request.resource.data.id;
       }
