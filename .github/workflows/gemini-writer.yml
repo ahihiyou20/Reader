@@ -114,7 +114,7 @@ jobs:
           PR: ${{ steps.branch.outputs.pr }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: |
-          git add -A content public/covers/video
+          git add -A content $(ls -d public/covers/video 2>/dev/null)
           if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
           git commit -q -m "content: Gemini articles $(date -u +%F)"
           if [ "$AUTO_PUBLISH" = "true" ]; then
