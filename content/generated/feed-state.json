@@ -5,6 +5,11 @@
       "feed": "aeon",
       "error": "triage: score 4: This is a journalistic commentary piece on celebrity fashion and garment worker conditions rather than deep history."
     },
+    "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause": {
+      "at": "2026-11-16T13:15:17.854Z",
+      "feed": "ars-science",
+      "slug": "global-fires-when-humanity-paused"
+    },
     "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "ars-science",
@@ -935,6 +940,11 @@
       "feed": "owid",
       "slug": "when-do-people-experience-mental-health-conditions-for-the-f"
     },
+    "https://phys.org/news/2026-11-ai-job-universities.html": {
+      "at": "2026-11-16T13:00:11.960Z",
+      "feed": "phys-org",
+      "error": "triage: score 4: Opinion and speculation on how universities should adapt to AI job markets."
+    },
     "https://phys.org/news/2026-11-foster-placement-american-indian-alaska.html": {
       "at": "2026-11-16T12:33:13.241Z",
       "feed": "phys-org",
@@ -1099,6 +1109,11 @@
       "at": "2026-11-15T23:38:00.881Z",
       "feed": "public-domain-review",
       "error": "Too short: 611 words written (minimum 1000)"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-coffee-3-dec-2026": {
+      "at": "2026-11-16T13:00:11.960Z",
+      "feed": "nasa-science",
+      "error": "triage: score 2: Internal NASA meeting announcement of no general interest."
     },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/agn-sig-spotlight-series-17-nov-2026": {
       "at": "2026-11-07T02:51:04.007Z",
@@ -2155,6 +2170,11 @@
       "feed": "npr-science",
       "error": "triage: score 4: This is a breaking news report about a rocket launch event rather than an explanatory piece."
     },
+    "https://www.npr.org/2026/11/14/nx-s1-6038958/spacex-deploys-starlink-satellites-in-starship-test-but-booster-crashes-into-gulf": {
+      "at": "2026-11-16T13:00:11.960Z",
+      "feed": "npr-science",
+      "error": "triage: score 3: Daily news report on a rocket test launch and booster crash."
+    },
     "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-health",
@@ -2249,6 +2269,11 @@
       "at": "2026-11-11T02:49:43.960Z",
       "feed": "quanta",
       "slug": "did-cell-membranes-spark-the-origin-of-life"
+    },
+    "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112": {
+      "at": "2026-11-16T13:11:21.437Z",
+      "feed": "quanta",
+      "error": "Gemini gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     "https://www.sciencedaily.com/releases/2026/10/261022081312.htm": {
       "at": "2026-10-24T01:44:34.074Z",
@@ -2506,9 +2531,9 @@
       "slug": "vitamin-c-blocking-stomach-cancer-chemicals"
     },
     "https://www.sciencedaily.com/releases/2026/11/261115085549.htm": {
-      "at": "2026-11-16T12:33:50.808Z",
+      "at": "2026-11-16T13:11:45.347Z",
       "feed": "sciencedaily",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+      "error": "Gemini gemini-flash-latest 0: The operation was aborted due to timeout"
     },
     "https://www.sciencenews.org/article/hell-chicken-dinosaur-terror-fruit-eat": {
       "at": "2026-11-16T12:34:31.810Z",
@@ -2634,6 +2659,11 @@
       "at": "2026-11-07T02:51:04.007Z",
       "feed": "usgs",
       "error": "triage: score 1: This is a routine media alert about upcoming airplane flights for geological surveying."
+    },
+    "https://www.usgs.gov/news/state-news-release/media-alert-low-level-flights-image-geology-over-us-virgin-islands": {
+      "at": "2026-11-16T13:00:11.960Z",
+      "feed": "usgs",
+      "error": "triage: score 1: Routine geological survey flight media alert."
     },
     "https://www.usgs.gov/news/state-news-release/media-alert-low-level-flights-image-geology-over-western-idaho": {
       "at": "2026-10-27T02:13:19.817Z",
@@ -2769,6 +2799,11 @@
       "at": "2026-11-16T12:36:11.158Z",
       "feed": "ideas",
       "error": "Too short: 697 words written (minimum 1000)"
+    },
+    "idea:why-the-pomodoro-technique-fails-under-heavy-cognitive-load": {
+      "at": "2026-11-16T13:21:42.300Z",
+      "feed": "ideas",
+      "slug": "timer-limits-how-rigid-blocks-fail-under-heavy-loads"
     },
     "idea:why-the-spacing-effect-beats-cramming-for-long-term-memory": {
       "at": "2026-11-16T12:35:27.580Z",
