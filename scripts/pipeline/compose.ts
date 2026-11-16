@@ -8,7 +8,7 @@ import type { ArticleSource, HlColor } from '../../lib/content/types';
 import { z } from 'zod';
 import { citedIds, countWords, highlightCount, parseRich, plainText } from '../../lib/content/markup';
 import { isCleanLine } from '../../lib/content/validate';
-import { MARKUP_RULES, MODEL, VI_STYLE, WRITING_RULES, geminiStructured } from './gemini';
+import { GeminiSetupError, MARKUP_RULES, MODEL, QuotaError, VI_STYLE, WRITING_RULES, geminiStructured } from './gemini';
 import type { SourceDoc } from './research';
 
 /** A Vietnamese title or heading from Gemini is kept only when it is one clean line. */
@@ -419,8 +419,31 @@ export async function writeResearched(b: ResearchBrief): Promise<Written> {
   // The whole article in one reply often loses the KEY POINT or the steps to their length rules: ask for them on their own.
   if (!w.keyPoint_en || w.applySteps_en?.length !== 3) Object.assign(w, await closingParts(w));
   if (w.keyPoint_en) w.keyPoint_en = known(w.keyPoint_en);
+  // The model often leaves a few sections without the highlight the standard asks for: pick them in a request of their own.
+  if (w.sections.some((x) => countHl(x.body_en) === 0)) await fillHighlights(w);
   const { title_vi: _t, hook_vi: _h, keyPoint_vi: _k, applySteps_vi: _a, ...en } = w;
   return en;
+}
+
+/** Highlight 1–2 phrases in every section of `w` that has none, copied exactly from its body. */
+async function fillHighlights(w: Written): Promise<void> {
+  const bare = w.sections.map((x, i) => ({ index: i, body: x.body_en })).filter((x) => countHl(x.body) === 0);
+  const schema = z.object({ highlights: z.array(z.object({ section: z.number().int().min(0), text: z.string().min(3).max(80), color: z.enum(['yellow', 'pink', 'green']).optional() })) });
+  const prompt = [
+    'You help the editors of Pagemoor. For each section below, pick 1 or 2 short phrases (2–7 words) a skimming reader must not miss: a key number, a surprising finding, a term. Copy each phrase EXACTLY as it appears in that section body (same characters, outside any [..] or {..} markup), with the section index given; color yellow for facts and numbers, pink for the main idea, green for a practical tip.',
+    'Sections JSON:',
+    JSON.stringify(bare),
+  ].join('\n\n');
+  try {
+    const { value } = await geminiStructured({ prompt, schema, temperature: 0.2 });
+    for (const h of value.highlights ?? []) {
+      const sec = w.sections[h.section];
+      if (sec && countHl(sec.body_en) < 2) sec.body_en = addHighlight(sec.body_en, h.text, h.color ?? 'yellow');
+    }
+  } catch (e) {
+    if (e instanceof QuotaError || e instanceof GeminiSetupError) throw e;
+    console.warn(`highlights: ${(e as Error).message.slice(0, 160)}`);
+  }
 }
 
 /** KEY POINT and Apply steps for a written article, in a request of their own. */

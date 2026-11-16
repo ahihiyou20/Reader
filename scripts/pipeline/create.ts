@@ -196,6 +196,8 @@ async function fromResearch(input: CreateInput, categories?: string[]): Promise<
   if (words < RESEARCHED_WORDS.min * 0.95) throw new Error(`Too short: ${words} words written (minimum ${RESEARCHED_WORDS.min})`);
   const cited = new Set([w.hook_en, w.keyPoint_en, ...w.sections.map((x) => x.body_en)].flatMap((t) => citedIds(t)));
   const references = sources.filter((d) => cited.has(d.id)).map(({ id, label, url }) => ({ id, label, url }));
+  // The Pagemoor standard asks for two sources; an article resting on one page is a summary of it.
+  if (references.length < 2) throw new Error(`Cites ${references.length} source (minimum 2)`);
   const origin: ArticleSource['origin'] = { group: 4, license: 'Reader-CC-BY-4.0', authors: ['Pagemoor editors'], changes: [] };
   const a = skeleton(await uniqueSlug(w.title_en), category, origin, references);
   applyWritten(a, w, categories);
