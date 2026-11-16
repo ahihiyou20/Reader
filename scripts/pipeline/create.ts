@@ -69,7 +69,8 @@ async function categoryIds(): Promise<string[]> {
   const cats = await readJson<Array<{ id: string }> | { categories: Array<{ id: string }> }>(path.join(CONTENT, 'categories.json'));
   return (Array.isArray(cats) ? cats : cats.categories).map((c) => c.id);
 }
-const MIN_WORDS = { adapt: 250, summary: 200 };
+// An article taken from an open page is published as the page gives it, never padded: 700 words is the floor.
+const MIN_WORDS = { adapt: 700, summary: 200 };
 
 /** Trim an adapted draft from the end until it fits Reader's length (keeps whole paragraphs). */
 export function trimToFit(a: ArticleSource, max = 950): boolean {

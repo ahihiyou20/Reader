@@ -35,7 +35,7 @@ async function main() {
   for (const slug of slugs) {
     const file = path.join(dirs.articles, `${slug}.json`);
     const a = await readJson<ArticleSource>(file);
-    if (a.origin.group !== 4) continue;
+    const own = a.origin.group === 4;
     const done: string[] = [];
     if (translating) {
       try {
@@ -47,7 +47,7 @@ async function main() {
       }
     }
     // A clip the writer chose (coverClip) always; a search on the article's tags where the standard asks for one.
-    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || process.env.MOTION_COVERS === 'true';
+    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || (own && process.env.MOTION_COVERS === 'true');
     if (wantsMotion && !a.cover.video && ffmpeg && hasPixabay()) {
       try {
         const video = await autoMotion(a, [...(a.tags ?? []).slice(0, 3), a.title.en.split(/[:–—]/)[0]]);
@@ -61,9 +61,10 @@ async function main() {
       }
     }
     if (done.length) await writeJson(file, a);
-    const problems = standardProblems(a, byClaude(a) ? STANDARDS.claude : STANDARDS.gemini);
+    // The Pagemoor standard applies to articles Reader writes; one taken from a page keeps the page's length.
+    const problems = own ? standardProblems(a, byClaude(a) ? STANDARDS.claude : STANDARDS.gemini) : [];
     console.log(`${slug}: ${done.join('; ') || 'nothing to add'}${problems.length ? ` — still: ${problems.join('; ')}` : ''}`);
-    rows.push(`| ${slug} | ${byClaude(a) ? 'Claude' : 'Gemini'} | ${articleWords(a)} | ${done.join('; ') || '—'} | ${problems.join('; ').replace(/\|/g, '/') || '✓'} |`);
+    rows.push(`| ${slug} | ${byClaude(a) ? 'Claude' : own ? 'Gemini' : `nhóm ${a.origin.group}`} | ${articleWords(a)} | ${done.join('; ') || '—'} | ${problems.join('; ').replace(/\|/g, '/') || '✓'} |`);
   }
   if (images.length) await jobSummary(`Chuyển ảnh bìa của ${images.length} bài lên Cloudinary: ${images.join(', ')}`);
   if (moved.length) await jobSummary(`Chuyển bìa động của ${moved.length} bài lên Cloudinary: ${moved.join(', ')}`);
