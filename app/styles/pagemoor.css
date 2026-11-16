@@ -504,6 +504,28 @@ html[data-stage='compact-portrait'] .pill.listen {
 .ctitle.long .tb {
   font-size: 1.7em;
 }
+/* Vietnamese stacks a tone mark over a vowel mark (ấ, ở, ặ): the poster line heights above make those
+   marks touch the line before and the clamp crops them on the first line. Open the lines, leave room
+   above the first one, and set the stressed phrase in Dancing Script, whose marks stay legible where
+   the hairline scripts (Great Vibes, Pinyon, Allura) draw them as specks. */
+.ctitle[class*='t-']:lang(vi) .ta {
+  line-height: 1.3;
+  padding-top: 0.14em;
+}
+.ctitle[class*='t-']:lang(vi) .tb {
+  line-height: 1.25;
+  padding-top: 0.22em !important;
+}
+.t-cosmos:lang(vi) .tb,
+.t-press:lang(vi) .tb,
+.t-mag:lang(vi) .tb {
+  font-family: var(--f-dancing), cursive;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+.ctitle.long:lang(vi) .tb {
+  font-size: 1.5em;
+}
 
 /* Welcome (first visit) */
 .welcome {
@@ -705,6 +727,7 @@ html[data-stage$='portrait'] .welcome-body {
   grid-template-columns: 1fr;
   align-content: end;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 html[data-stage='compact-portrait'] .welcome-picks {
   display: none;
@@ -753,7 +776,7 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
 
 /* Cover clip: fades in over the still image once it has frames to show. */
 .media-clip {
-  animation: clip-in 600ms var(--ease-out) 200ms both;
+  animation: clip-in 480ms var(--ease-out) 200ms both;
 }
 @keyframes clip-in {
   from {
@@ -765,6 +788,7 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
 .welcome {
   display: block;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   scroll-snap-type: y proximity;
   scrollbar-width: none;

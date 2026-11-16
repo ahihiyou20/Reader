@@ -162,8 +162,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={fontVars} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: stageScript }} />
-        <link rel="preconnect" href="https://picsum.photos" />
-        <link rel="preconnect" href="https://fastly.picsum.photos" />
+        {/* Where the covers live (data/feed.json): almost all on Unsplash, the rest on Cloudinary. */}
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://res.cloudinary.com" />
         <link rel="preload" href="/data/feed-head.json" as="fetch" crossOrigin="anonymous" />
         <link rel="preload" href="/data/categories.json" as="fetch" crossOrigin="anonymous" />
       </head>

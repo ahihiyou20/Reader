@@ -165,8 +165,10 @@ function Shell({
         }),
       BACKEND_IDLE_START_MS,
     );
+    // A returning Google reader sees their profile from the cache at once, and Firebase starts at the
+    // first idle moment instead of after BACKEND_IDLE_START_MS, so the real session follows quickly.
+    if (restoreCachedUser()) runIdle(() => getBackend());
     runIdle(() => {
-      restoreCachedUser();
       if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production' && !preview) {
         navigator.serviceWorker.register('/sw.js').catch(() => {});
       }
