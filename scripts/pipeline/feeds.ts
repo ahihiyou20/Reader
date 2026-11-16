@@ -1,6 +1,6 @@
 // Daily articles (docs/05 §9): read the RSS/Atom feeds in content/feeds.json, keep unseen recent items,
 // let triage.ts choose the ones worth an article (rules, then Gemini scoring), turn each into Reader's
-// own in-depth article with scripts/pipeline/create.ts (research, writing, cover, five languages), and
+// article with scripts/pipeline/create.ts (taken from an open page, or a short summary of a copyrighted one), and
 // check its prose (prose-lint.ts, one revision pass). When the feeds bring fewer than `minPerDay`,
 // ideas.ts proposes evergreen topics to make up the rest. There is no upper limit unless one is given.
 // The workflow puts the result in one pull request (or on main, when auto-publishing); merging publishes.
@@ -23,7 +23,8 @@ export interface FeedSource {
   name: string;
   url: string;
   category: string;
-  mode: Exclude<Mode, 'auto'>;
+  /** auto: taken from the page as its licence allows (adapt, or verbatim for CC BY-ND); summary: a short summary of a copyrighted page. */
+  mode: Mode;
   /** Most items taken from this feed per run (default 3). */
   max?: number;
   /** Only items whose title matches (case-insensitive regular expression). */

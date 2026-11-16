@@ -26,6 +26,8 @@ export const SOURCES: Record<string, SourceRule> = {
   'kids.frontiersin.org': { adapter: 'readability', group: 1, license: 'CC-BY-4.0', publisher: 'Frontiers for Young Minds' },
   'science.nasa.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NASA' },
   'www.nasa.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NASA' },
+  'earthobservatory.nasa.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NASA Earth Observatory' },
+  'www.nsf.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'U.S. National Science Foundation' },
   'spaceplace.nasa.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NASA Space Place' },
   'oceanservice.noaa.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NOAA' },
   'www.noaa.gov': { adapter: 'readability', group: 1, license: 'PD', publisher: 'NOAA' },
