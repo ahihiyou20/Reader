@@ -46,11 +46,11 @@ describe('lintProse', () => {
   });
   it('is silent on good group-4 articles', () => {
     for (const slug of [
-      'antikythera-mechanism-ancient-computer',
-      'semmelweis-handwashing-vienna-1847',
-      'comparative-advantage-ricardo-example',
+      'hedonic-adaptation-lottery-winners',
+      'dancing-plague-strasbourg-1518',
+      'packet-switching-origin-of-internet',
       'talking-to-strangers',
-      'who-physical-activity-150-minutes',
+      'sunk-cost-fallacy-bygones',
     ]) {
       const a = JSON.parse(fs.readFileSync(`content/articles/${slug}.json`, 'utf8'));
       for (const lang of ['en', 'vi'] as const) {
