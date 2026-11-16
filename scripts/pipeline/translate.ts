@@ -150,10 +150,27 @@ export async function translateInto(a: ArticleSource, lang: Lang): Promise<boole
   return changed;
 }
 
+const GLOSSARY_MIN = 8;
+
+/**
+ * translateInto, then up to two glossary-only requests when the glossary came back short: terms the
+ * model did not copy exactly from the text are dropped, and a short glossary would otherwise stay.
+ */
+export async function translateFull(a: ArticleSource, lang: Lang): Promise<boolean> {
+  let changed = await translateInto(a, lang);
+  for (let i = 0; i < 2 && Object.keys(a.glossary?.[lang] ?? {}).length < GLOSSARY_MIN && fullLangs(a).includes(lang); i++) {
+    const kept = a.glossary?.[lang];
+    delete a.glossary![lang];
+    if (await translateInto(a, lang)) changed = true;
+    if (Object.keys(a.glossary?.[lang] ?? {}).length < Object.keys(kept ?? {}).length) a.glossary![lang] = kept!;
+  }
+  return changed;
+}
+
 /** Every language in turn; a quota error passes through so the caller can stop and resume later. */
 export async function translateAll(a: ArticleSource, langs: Lang[] = LANGS): Promise<Lang[]> {
   const done: Lang[] = [];
-  for (const l of langs) if (await translateInto(a, l)) done.push(l);
+  for (const l of langs) if (await translateFull(a, l)) done.push(l);
   return done;
 }
 
@@ -185,7 +202,7 @@ async function main() {
       const { f, a } = next;
       try {
         // Saved after every language, so an interrupted run loses at most one request.
-        for (const l of langs) if (await translateInto(a, l)) await writeJson(f, a);
+        for (const l of langs) if (await translateFull(a, l)) await writeJson(f, a);
         ok++;
         console.log(`${ok}/${todo.length} ${a.slug}: ${fullLangs(a).join(' ')}`);
       } catch (e) {
