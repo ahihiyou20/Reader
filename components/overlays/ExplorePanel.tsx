@@ -8,6 +8,7 @@ import { useStaggeredCount, useT } from '../hooks';
 import { ArticleCard } from './ArticleCard';
 import { Panel } from './Layer';
 import { Indicator } from '@/components/ui/Indicator';
+import { TopicGlyph } from '../icons';
 
 /** SCR-04 Explore: category chips, trending row, and a grid that fits as many covers as the screen allows (FR-22). */
 export function ExplorePanel() {
@@ -76,7 +77,7 @@ export function ExplorePanel() {
               style={!counts.get(c.id) ? { opacity: 0.45 } : undefined}
             >
               {cat === c.id && <Indicator layoutId="explore-chips" />}
-              <span aria-hidden="true">{c.emoji}</span>
+              <TopicGlyph id={c.id} emoji={c.emoji} />
               {pick(c.name, lang)}
             </button>
           ))}

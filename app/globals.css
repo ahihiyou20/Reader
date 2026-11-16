@@ -1570,13 +1570,13 @@ select {
   font-variant-numeric: tabular-nums;
 }
 .streak .fire {
-  font-size: 21px;
-  line-height: 1;
+  line-height: 0;
   display: inline-block;
+  filter: drop-shadow(0 0 6px rgba(255, 106, 43, 0.45));
   transition: filter 300ms var(--ease-out);
 }
 .streak.pending .fire {
-  filter: grayscale(0.6);
+  filter: grayscale(0.85);
   opacity: 0.7;
 }
 .snum {
@@ -2361,7 +2361,10 @@ select {
   text-align: center;
 }
 .stat b {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   font: 800 22px/28px var(--font-sans);
   font-variant-numeric: tabular-nums;
 }
@@ -2888,4 +2891,16 @@ select {
     opacity: 0;
     transform: translateY(8px);
   }
+}
+
+/* Drawn glyphs (components/icons.tsx) sit on the text baseline like the emoji they replace. */
+.toast-glyph {
+  vertical-align: -3px;
+  margin-right: 6px;
+}
+.mempty span svg {
+  margin: 0 0 0 4px;
+}
+.day:not(.on) i svg {
+  display: none;
 }

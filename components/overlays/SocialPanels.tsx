@@ -3,6 +3,7 @@ import { BellRing, UserRound, Users } from 'lucide-react';
 import { useUI } from '@/stores/ui';
 import { useT } from '../hooks';
 import { Panel } from './Layer';
+import { SparkleGlyph } from '../icons';
 
 /** SCR-06 / CMP-21: Messages, like the original app's MVP — the panel and its empty state. */
 export function MessagesPanel() {
@@ -48,7 +49,9 @@ export function NotificationsPanel() {
           <div className="mav" aria-hidden="true">
             <BellRing className="ic" />
           </div>
-          <span>{t('caughtUp')}</span>
+          <span>
+            {t('caughtUp')} <SparkleGlyph size={16} />
+          </span>
           <small>{t('caughtUpSub')}</small>
         </div>
       </div>
