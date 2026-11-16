@@ -32,7 +32,8 @@
       "heading_de": "Der planetarische Hinweis",
       "body_de": "Gelehrte nahmen lange an, die Leinwand sei rein imaginär, bis ein Brief Venus erwähnte und bewies, dass mindestens ein leuchtender Himmelskörper real war. In den 1980er Jahren ordnete ein Kunsthistoriker den Planeten und drei Sterne dem Sternbild Widder zu und schloss daraus, dass das Kunstwerk am 19. Juni 1889 festgehalten wurde.",
       "heading_es": "La pista planetaria",
-      "body_es": "Los académicos asumieron durante mucho tiempo que el lienzo era puramente imaginativo hasta que una carta mencionó a Venus, lo que demostró que al menos un orbe brillante era real. En la década de 1980, un historiador del arte relacionó el planeta y tres estrellas con la constelación de Aries, y concluyó que la obra de arte fue capturada el 19 de junio de 1889."
+      "body_es": "Los académicos asumieron durante mucho tiempo que el lienzo era puramente imaginativo hasta que una carta mencionó a Venus, lo que demostró que al menos un orbe brillante era real. En la década de 1980, un historiador del arte relacionó el planeta y tres estrellas con la constelación de Aries, y concluyó que la obra de arte fue capturada el 19 de junio de 1889.",
+      "heading_fr": "L'indice planétaire"
     },
     {
       "heading_en": "A New Astronomical Match",
@@ -43,7 +44,8 @@
       "heading_de": "Eine neue astronomische Übereinstimmung",
       "body_de": "Eine auffällige Abweichung stellte diesen Zeitplan infrage, da der abgebildete Sichelmond dem tatsächlichen abnehmenden Mond widersprach, der Ende Juni sichtbar war. Eine neue Untersuchung ficht die frühere astrale Identifizierung an und argumentiert, dass die gehäuften Sterne tatsächlich die Hyaden im Sternbild Stier statt des Widders darstellen.",
       "heading_es": "Una nueva coincidencia astronómica",
-      "body_es": "Una discrepancia flagrante desafió esa cronología porque la luna creciente representada contradecía la menguante gibosa real visible a finales de junio. Una nueva investigación desafía la identificación astral anterior, argumentando que las estrellas agrupadas representan en realidad las Híades dentro de Tauro en lugar de Aries."
+      "body_es": "Una discrepancia flagrante desafió esa cronología porque la luna creciente representada contradecía la menguante gibosa real visible a finales de junio. Una nueva investigación desafía la identificación astral anterior, argumentando que las estrellas agrupadas representan en realidad las Híades dentro de Tauro en lugar de Aries.",
+      "heading_fr": "Une nouvelle concordance astronomique"
     },
     {
       "heading_en": "Weather and Wildlife",
@@ -54,7 +56,8 @@
       "heading_de": "Wetter und Tierwelt",
       "body_de": "Das Forschungsteam schlug den 22. Juli 1889 vor, was einen Sichelmond und Venus mit dem Hyaden-Sternhaufen in Einklang bringt. Obwohl ein Anfall Mitte Juli diesem Zeitplan zu widersprechen schien, bestätigen Wetterprotokolle starker Winde und historische Temperaturaufzeichnungen, die Zikadenaktivität belegen, eine Beobachtung Ende Juli.",
       "heading_es": "Clima y vida silvestre",
-      "body_es": "El equipo de investigación propuso el 22 de julio de 1889, haciendo coincidir una luna creciente y a Venus con el cúmulo de las Híades. Aunque una crisis a mediados de julio parecía entrar en conflicto con este cronología, los registros meteorológicos de vientos fuertes y los registros históricos de temperatura que confirman la actividad de las cigarras validan una observación de finales de julio."
+      "body_es": "El equipo de investigación propuso el 22 de julio de 1889, haciendo coincidir una luna creciente y a Venus con el cúmulo de las Híades. Aunque una crisis a mediados de julio parecía entrar en conflicto con este cronología, los registros meteorológicos de vientos fuertes y los registros históricos de temperatura que confirman la actividad de las cigarras validan una observación de finales de julio.",
+      "heading_fr": "Météo et faune locale"
     }
   ],
   "references": [
@@ -162,7 +165,7 @@
       "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
   },
   "glossary": {
     "en": {

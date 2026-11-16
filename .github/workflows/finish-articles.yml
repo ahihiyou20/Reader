@@ -72,7 +72,7 @@ jobs:
         run: |
           git config user.name "reader-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A content/articles public/covers
+          git add -A content/articles $(ls -d public/covers 2>/dev/null)
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -q -m "pipeline: finish new articles, clips on Cloudinary"
           # Back to the branch it ran on: main normally, a pull request's branch when tried there by hand.

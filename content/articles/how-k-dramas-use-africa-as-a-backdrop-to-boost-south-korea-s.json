@@ -97,7 +97,9 @@
     ]
   },
   "summary": {
-    "vi": "Các bộ phim truyền hình Hàn Quốc nổi tiếng thường sử dụng Châu Phi như một phông nền rập khuôn, khắc họa lục địa này là nơi nguy hiểm, hoang dã hoặc là điểm đến từ thiện nhằm làm nổi bật sự phát triển của Hàn Quốc. Nghiên cứu truyền thông cho thấy việc xây dựng hình ảnh này giúp củng cố sức mạnh mềm và vị thế toàn cầu của Seoul. Tuy nhiên, cách biểu đạt này khiến khán giả châu Phi chỉ hiện lên như một biểu tượng của sự thiếu thốn dưới góc nhìn thực dân."
+    "vi": "Các bộ phim truyền hình Hàn Quốc nổi tiếng thường sử dụng Châu Phi như một phông nền rập khuôn, khắc họa lục địa này là nơi nguy hiểm, hoang dã hoặc là điểm đến từ thiện nhằm làm nổi bật sự phát triển của Hàn Quốc. Nghiên cứu truyền thông cho thấy việc xây dựng hình ảnh này giúp củng cố sức mạnh mềm và vị thế toàn cầu của Seoul. Tuy nhiên, cách biểu đạt này khiến khán giả châu Phi chỉ hiện lên như một biểu tượng của sự thiếu thốn dưới góc nhìn thực dân.",
+    "de": "Südkoreanische K-Dramas nutzen Darstellungen Afrikas zunehmend, um den eigenen Status als entwickelte Kulturnation zu betonen. Anhand von Produktionen wie *Queen of Tears* oder *Shooting Stars* zeigt eine medienwissenschaftliche Analyse, wie der Kontinent auf altbekannte Stereotype reduziert wird: Er fungiert entweder als hilfsbedürftige Kulisse für koreanische Wohltätigkeit oder als gesetzloser Raum fernab moderner Zivilisation. Ähnlich wie einst westliche Kolonialmächte bedient sich Südkoreas aufstrebende Popkultur eines kolonialen Blicks, um den eigenen zivilisatorischen Fortschritt durch den Kontrast zu einer vermeintlich primitiven Welt zu definieren. Für das wachsende afrikanische Publikum festigen diese Erzählungen jedoch einseitige Klischees und degradieren den Kontinent zum bloßen Symbol des Mangels.",
+    "es": "¿Cómo afianza el drama surcoreano su prestigio internacional? Diversas producciones contemporáneas recurren a representaciones reduccionistas de África para ensalzar el desarrollo y civismo de Corea del Sur. En lugar de reflejar la complejidad del continente, varios melodramas exitosos lo presentan como un territorio caótico o dependiente de la caridad extranjera. Esta contraposición permite legitimar el poder blando surcoreano y posicionar al país como una potencia generosa y moderna. No obstante, dicho relato reproduce estereotipos coloniales que reducen la diversidad africana a un simple símbolo de carencia frente al espectador global."
   },
   "keyPoint": {
     "en": "Media acts as a funhouse mirror, distorting distant lands to make the home nation look taller. [p:When you watch popular international shows, ask yourself whose image is really being polished in the background.]",
@@ -119,10 +121,12 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
   },
   "publishAt": "2026-10-23T17:02:57.037Z"
 }

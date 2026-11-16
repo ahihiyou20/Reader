@@ -89,7 +89,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết phân tích sự gia tăng trở lại của các vụ hành quyết tại Hoa Kỳ trong những năm gần đây, đi kèm với những tranh cãi xoay quanh phương pháp thi hành án. Chuyên gia lịch sử chỉ ra rằng các tranh cãi hiện nay có nhiều tiền lệ trong quá khứ, khi các nhà nước luôn cố gắng tạo vẻ ngoài nhân đạo cho hình phạt này. Sự khác biệt lớn giữa các tiểu bang cho thấy chính sách tử hình bị chia rẽ sâu sắc. Cuối cùng, lịch sử cho thấy án tử hình chủ yếu phục vụ cho mục đích chính trị hơn là hướng tới sự công bằng tuyệt đối."
+    "vi": "Bài viết phân tích sự gia tăng trở lại của các vụ hành quyết tại Hoa Kỳ trong những năm gần đây, đi kèm với những tranh cãi xoay quanh phương pháp thi hành án. Chuyên gia lịch sử chỉ ra rằng các tranh cãi hiện nay có nhiều tiền lệ trong quá khứ, khi các nhà nước luôn cố gắng tạo vẻ ngoài nhân đạo cho hình phạt này. Sự khác biệt lớn giữa các tiểu bang cho thấy chính sách tử hình bị chia rẽ sâu sắc. Cuối cùng, lịch sử cho thấy án tử hình chủ yếu phục vụ cho mục đích chính trị hơn là hướng tới sự công bằng tuyệt đối.",
+    "fr": "Après deux décennies de déclin, les exécutions ont fortement augmenté aux États-Unis en 2025 et 2026, ravivant les controverses autour de la peine capitale. Des incidents récents, comme l’exécution ratée de Christa Pike, rappellent les précédents historiques étudiés par Carolyn Strange : la quête de méthodes prétendument plus humaines, de la chaise électrique à l’injection létale, dissimule mal leurs défaillances. Cette recrudescence s’explique aussi par de fortes disparités régionales, la Floride de Ron DeSantis concentrant une large part des exécutions. Selon l’historienne, la peine de mort relève ainsi de calculs politiques plutôt que d’un idéal de justice.",
+    "de": "Nach zwei Jahrzehnten des Rückgangs verzeichnen die Vereinigten Staaten seit 2025 wieder einen deutlichen Anstieg der Hinrichtungen. Vor allem Bundesstaaten wie Florida treiben diesen Trend maßgeblich voran, während andere die Todesstrafe längst abgeschafft haben. Aktuelle Debatten über fehlgeschlagene Exekutionen und vermeintlich humanere Hinrichtungsmethoden wie die Giftspritze reihen sich in eine lange historische Tradition ein. Für die Historikerin Carolyn Strange verdeutlicht diese Entwicklung den zersplitterten Charakter der US-Justiz: Die Todesstrafe spiegelt letztlich weniger das Streben nach echter Gerechtigkeit wider als vielmehr die politischen Strömungen und Machtverhältnisse der einzelnen Bundesstaaten.",
+    "es": "Tras dos décadas de descenso, las ejecuciones en Estados Unidos han aumentado notablemente desde 2025, reavivando intensos debates éticos y legales. Episodios recientes e intentos fallidos evidencian una constante histórica: los esfuerzos por presentar métodos letales más humanos e indoloros. Asimismo, su aplicación no es uniforme, ya que mientras diversas jurisdicciones la abolieron, estados como Florida impulsan gran parte del incremento actual. ¿Responde esta tendencia a una verdadera justicia? Los precedentes sugieren que la pena capital sigue estando dictada principalmente por intereses e inclinaciones políticas."
   },
   "keyPoint": {
     "en": "The death penalty operates like a weather vane, shifting wherever political winds blow rather than pointing toward a steady north of true justice. *How can understanding its historical precedents change your view on modern legal debates?*",
@@ -111,10 +114,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
   },
-  "publishAt": "2026-10-23T16:58:57.037Z"
+  "publishAt": "2026-10-23T16:58:57.037Z",
+  "glossary": {
+    "en": {
+      "capital punishment": "The state-sanctioned execution of an individual as a legal punishment for a crime.",
+      "resurgence": "A significant increase or revival in executions after decades of steady decline.",
+      "emeritus professor": "An honorary title granted to a retired university professor who retains their rank.",
+      "precedents": "Earlier historical events or legal decisions that serve as examples for current situations.",
+      "electric chair": "An execution device that kills a condemned prisoner by administering a lethal electric current.",
+      "legal challenge": "A formal lawsuit or petition disputing the legality or constitutionality of a state action.",
+      "lethal injections": "An execution method delivering a fatal combination of intravenous drugs to induce death.",
+      "disunited states": "A play on words describing America divided by sharply conflicting state policies on executions.",
+      "abolished": "Formally and legally eliminated a law or practice, specifically the death penalty.",
+      "affiliations": "Commercial, political, or institutional relationships that could indicate potential conflicts of interest.",
+      "rss feed": "A web technology allowing users to receive automatic podcast episode updates directly.",
+      "weather vane": "A device indicating wind direction, used here to show capital punishment follows shifting political currents."
+    }
+  }
 }

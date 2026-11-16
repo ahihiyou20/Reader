@@ -81,7 +81,9 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết khám phá chuỗi tranh Phong cảnh núi Phú Sĩ của danh họa Hokusai thông qua góc nhìn của một nhà tâm lý học nghệ thuật. Việc chiêm ngưỡng toàn bộ các tác phẩm đặt cạnh nhau giúp thay đổi hoàn toàn cách nhìn nhận về bức tranh biểu tượng Sóng lở tại Kanagawa. Qua đó, tác giả bàn luận về cách con người thường vội vàng áp đặt định kiến lên người khác và việc mở rộng góc nhìn có thể giúp chúng ta thấu hiểu, kết nối với thế giới xung quanh tốt hơn."
+    "vi": "Bài viết khám phá chuỗi tranh Phong cảnh núi Phú Sĩ của danh họa Hokusai thông qua góc nhìn của một nhà tâm lý học nghệ thuật. Việc chiêm ngưỡng toàn bộ các tác phẩm đặt cạnh nhau giúp thay đổi hoàn toàn cách nhìn nhận về bức tranh biểu tượng Sóng lở tại Kanagawa. Qua đó, tác giả bàn luận về cách con người thường vội vàng áp đặt định kiến lên người khác và việc mở rộng góc nhìn có thể giúp chúng ta thấu hiểu, kết nối với thế giới xung quanh tốt hơn.",
+    "fr": "La Dulwich Picture Gallery réunit l’intégralité des Trente-six vues du mont Fuji de Katsushika Hokusai, offrant un éclairage inédit sur des chefs-d’œuvre comme « La Grande Vague ». Replacée au sein de ce vaste ensemble conçu dans les années 1830, la montagne sacrée n’apparaît plus comme un symbole isolé, mais comme un repère dialoguant avec le labeur paysan, les paysages changeants et les pèlerins en ascension. Pour l’auteur, psychothérapeute par l’art, cette multiplicité de perspectives illustre la mentalisation : une invitation à dépasser nos certitudes immédiates pour observer le monde et autrui avec humilité et curiosité.",
+    "de": "Die Londoner Dulwich Picture Gallery zeigt erstmals alle Drucke aus Katsushika Hokusais berühmter Serie über den Berg Fuji. Im Gesamtkontext verliert das weltbekannte Motiv der Großen Welle seine isolierte Stellung: Fuji erscheint in zahllosen Facetten, umgeben von arbeitenden Menschen, Reisenden und Pilgern. Aus kunstpsychotherapeutischer Sicht verdeutlicht diese Bilderreise eine wesentliche Erkenntnis unseres Miteinanders: Statt voreilige Annahmen über andere zu treffen, sollten wir ihnen mit offener Neugier begegnen. Das Eintauchen in ein größeres Ganzes lässt eigene Denkmuster zurücktreten und schafft Raum für Empathie sowie neue Perspektiven."
   },
   "keyPoint": {
     "en": "Like a single wave in a vast ocean of prints, our personal perspective is only one small part of a much larger landscape. What assumptions about someone in your life can you replace with pure curiosity today?",
@@ -103,10 +105,30 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
   },
-  "publishAt": "2026-10-24T01:47:51.275Z"
+  "publishAt": "2026-10-24T01:47:51.275Z",
+  "glossary": {
+    "en": {
+      "dulwich picture gallery": "A historic public art gallery in London hosting the complete exhibition of Hokusai’s Mount Fuji prints.",
+      "edo": "The historic name for Tokyo during the rule of the Tokugawa shogunate from 1603 to 1867.",
+      "the great wave": "Hokusai’s iconic woodblock print depicting towering ocean waves framing a distant Mount Fuji.",
+      "red fuji": "The popular name for Hokusai’s famous woodblock print Clear Day with a Southern Breeze.",
+      "indigo": "A deep blue natural dye or pigment used in traditional Japanese woodblock printing.",
+      "prussian blue": "A synthetic dark blue pigment imported into Japan and used extensively in Hokusai’s landscapes.",
+      "mishima pass": "A mountain pass in Japan depicted in one of Hokusai’s thirty-six views of Mount Fuji.",
+      "kai province": "A historical province of Japan, corresponding to modern-day Yamanashi Prefecture.",
+      "girth": "The measurement of the distance around the trunk of a tree; its circumference.",
+      "art psychotherapist": "A mental health practitioner who uses art-making and creative expression to support psychological therapy.",
+      "mentalising": "The psychological ability to understand and interpret the mental states, thoughts, and feelings of others.",
+      "curation": "The selection, organization, and presentation of artworks and exhibition spaces in a gallery.",
+      "iuchi collection": "A notable private collection of Hokusai’s prints featured in the Dulwich Picture Gallery exhibition."
+    }
+  }
 }

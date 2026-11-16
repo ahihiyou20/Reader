@@ -127,5 +127,28 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQAwCdASoQABwAPu1iqU2ppaQiMAgBMB2JQBdgAdkljbo0xtWJtIAA/tYUag2YxxvQ04Wi5Vod0lUUceN0aMM7D5IAk3o0wVT/Qu9aJZzTihyl9F6zgyW8YkoY0WzbVIRZOlJ6xJzwIZ1lpZhkfZaemKqIQBqM4l448zJfsYxlEJf2LsAAAA==",
-  "dominant": "#4c4435"
+  "dominant": "#4c4435",
+  "glossary": {
+    "en": {
+      "biomass": "The total weight or mass of living organisms of a given type in an area.",
+      "ecological pyramid": "A model showing how energy or mass flows from many producers to fewer organisms higher up.",
+      "tonnes": "Metric units of mass, each equal to 1,000 kilograms or about 2,205 pounds.",
+      "body mass": "The total weight of an individual person or animal.",
+      "livestock": "Domesticated animals raised on farms for food, milk, leather, or labor.",
+      "cattle": "Domesticated bovine animals, such as cows and bulls, raised as farm livestock.",
+      "orcas": "Large, predatory marine mammals belonging to the oceanic dolphin family, also called killer whales.",
+      "poultry": "Domesticated birds raised for meat or eggs, such as chickens and turkeys.",
+      "agriculture": "The practice of farming, including cultivating soil, producing crops, and raising livestock.",
+      "fossil fuels": "Carbon-based energy sources such as coal, oil, and gas, formed from ancient decayed organisms.",
+      "synthetic fertilisers": "Artificially manufactured chemical nutrients added to soil to promote faster crop growth.",
+      "diversity": "The variety and abundance of different biological species inhabiting an ecosystem."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

@@ -117,9 +117,24 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.5-flash-lite"
+    "model": "gemini-3.8-flash-high"
+  },
+  "glossary": {
+    "en": {
+      "goal management training": "A structured cognitive training method designed to help individuals overcome distractions and achieve goals using executive control.",
+      "task paralysis": "A state of feeling completely frozen and unable to start tasks despite a genuine desire to work.",
+      "executive functions": "Mental processes that manage planning, working memory, attention, and the ability to carry out intended actions.",
+      "prefrontal cortex": "The front part of the brain responsible for complex thinking, decision-making, attention, and self-regulation.",
+      "working memory": "The cognitive system responsible for temporarily holding and manipulating information during thought and task execution.",
+      "autopilot": "A state of acting automatically through ingrained habits without conscious thought, active intention, or deliberate guidance.",
+      "nervous system": "The biological network of nerves and cells regulating the body's stress responses, alertness, and physical reactions.",
+      "mental blackboard": "A cognitive metaphor for visualizing and holding your current goal actively in conscious working memory.",
+      "external cues": "Sensory prompts or physical reminders outside the mind that trigger awareness, focus, or timely action.",
+      "body doubling": "A technique where working in the presence of another person provides accountability and eases task initiation."
+    }
   }
 }

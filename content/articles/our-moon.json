@@ -132,5 +132,42 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAABQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JYwCdMoAKSFwJMGle9jwneogAAP773RAQaBMse8sDTsKMkpePQoRoQT9htMrBnXx6z8H2Zxac7YhwCtwMsB8VGTqIqnDSwpjQAAAA",
-  "dominant": "#3a3133"
+  "dominant": "#3a3133",
+  "glossary": {
+    "en": {
+      "galileo galilei": "An Italian astronomer who in 1610 discovered four moons orbiting Jupiter.",
+      "luna": "The ancient Latin name for Earth's Moon, the origin of the word lunar.",
+      "phases": "The recurring cycle of different shapes of the sunlit side of the Moon seen from Earth.",
+      "magma ocean": "A deep layer of molten rock that covered the newly formed Moon before cooling into crust.",
+      "maria": "Dark, flat plains on the Moon formed by ancient volcanic basins flooded with lava.",
+      "regolith": "A blanket of fine dust and broken rock fragments covering the Moon's surface.",
+      "apollo": "An American spaceflight program that landed the first humans on the Moon.",
+      "chandrayaan-1": "An Indian lunar orbiter mission that first definitively detected water molecules across the Moon's surface in 2008.",
+      "sofia": "An airborne astronomical observatory that discovered water molecules in sunlight on the Moon's surface.",
+      "clavius crater": "A prominent sunlit lunar crater where water molecules were confirmed by NASA in 2020.",
+      "nasa": "The United States government agency responsible for civilian space exploration and aerospace research."
+    },
+    "vi": {
+      "nasa": "Cơ quan Hàng không và Vũ trụ Hoa Kỳ.",
+      "galileo galilei": "Nhà thiên văn học người Ý phát hiện các mặt trăng của Sao Mộc năm 1610.",
+      "tuần trăng": "Các giai đoạn thay đổi phần được chiếu sáng của Mặt Trăng trong một chu kỳ.",
+      "quỹ đạo": "Đường đi của Mặt Trăng khi quay quanh Trái Đất trong không gian.",
+      "vệ tinh tự nhiên": "Thiên thể trong vũ trụ quay quanh một hành tinh, ở đây là Mặt Trăng.",
+      "đại dương magma": "Lớp đá nóng chảy khổng lồ từng bao phủ bề mặt Mặt Trăng thời sơ khai.",
+      "maria": "Những vùng lòng chảo tối màu trên Mặt Trăng từng bị dung nham tràn ngập.",
+      "regolith": "Lớp bụi đá vụn màu xám bao phủ phần lớn bề mặt của Mặt Trăng.",
+      "lực hấp dẫn": "Lực hút giữa các vật thể, trên Mặt Trăng yếu hơn nhiều so với Trái Đất.",
+      "chandrayaan-1": "Tàu thám hiểm của Ấn Độ phát hiện phân tử nước trên Mặt Trăng năm 2008.",
+      "sofia": "Đài quan sát thiên văn đặt trên máy bay do NASA vận hành.",
+      "clavius": "Một miệng hố lớn trên Mặt Trăng nơi kính SOFIA phát hiện ra phân tử nước."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Is there really a loneliness epidemic?",
-    "vi": "Có thật đang có một 'đại dịch cô đơn'?"
+    "vi": "Có thật đang có một 'đại dịch cô đơn'?",
+    "fr": "Y a-t-il vraiment une épidémie de solitude ?",
+    "de": "Gibt es wirklich eine Einsamkeitsepidemie?",
+    "es": "¿Existe realmente una epidemia de soledad?"
   },
   "hook": {
     "en": "Thousands of newspaper articles agree that rich countries are living through a 'loneliness epidemic'. The word *epidemic* suggests that things are getting rapidly worse. But what happens when you actually check the surveys that have asked people, year after year and generation after generation, how lonely they feel? The answer is surprisingly different from the headlines.",
-    "vi": "Hàng nghìn bài báo cùng khẳng định các nước giàu đang trải qua một 'đại dịch cô đơn'. Từ *đại dịch* gợi ý rằng tình hình đang xấu đi rất nhanh. Nhưng điều gì xảy ra khi ta thật sự kiểm tra các cuộc khảo sát đã hỏi mọi người, năm này qua năm khác và thế hệ này qua thế hệ khác, rằng họ cô đơn đến mức nào? Câu trả lời khác xa các dòng tít một cách bất ngờ."
+    "vi": "Hàng nghìn bài báo cùng khẳng định các nước giàu đang trải qua một 'đại dịch cô đơn'. Từ *đại dịch* gợi ý rằng tình hình đang xấu đi rất nhanh. Nhưng điều gì xảy ra khi ta thật sự kiểm tra các cuộc khảo sát đã hỏi mọi người, năm này qua năm khác và thế hệ này qua thế hệ khác, rằng họ cô đơn đến mức nào? Câu trả lời khác xa các dòng tít một cách bất ngờ.",
+    "fr": "Des milliers d'articles de presse s'accordent à dire que les pays riches traversent une « épidémie de solitude ». Le mot *épidémie* suggère que la situation s'aggrave rapidement. Mais que découvre-t-on si l'on examine les enquêtes ayant interrogé la population, année après année et génération après génération, sur son sentiment de solitude ? La réponse est étonnamment différente des gros titres.",
+    "de": "Tausende Zeitungsartikel sind sich einig, dass wohlhabende Länder eine „Einsamkeitsepidemie“ durchleben. Das Wort *Epidemie* legt nahe, dass sich die Lage rapide verschlimmert. Doch was passiert, wenn du dir tatsächlich die Umfragen ansiehst, in denen Menschen Jahr für Jahr und Generation für Generation gefragt wurden, wie einsam sie sich fühlen? Die Antwort unterscheidet sich überraschend deutlich von den Schlagzeilen.",
+    "es": "Miles de artículos de prensa coinciden en que los países ricos atraviesan una «epidemia de soledad». La palabra *epidemia* sugiere que la situación está empeorando con rapidez. Pero ¿qué sucede cuando se consultan realmente las encuestas que han preguntado a las personas, año tras año y generación tras generación, hasta qué punto se sienten solas? La respuesta es sorprendentemente distinta de los titulares."
   },
   "sections": [
     {
       "heading_en": "Alone is not the same as lonely",
       "heading_vi": "Ở một mình không giống với cô đơn",
       "body_en": "It is true that more people around the world now live alone. But researcher **Esteban Ortiz-Ospina** points out that [p:aloneness and loneliness are not the same] {owid-2019}. How much time someone spends alone is not a good predictor of whether they feel lonely or have weak social support. Social connections with friends and family matter for our health, emotional welfare and even material well-being, so loneliness is a real problem. That is exactly why, he argues, the conversation about it should rest on [g:facts rather than slogans]. Headlines about an 'epidemic', in his words, are both wrong and unhelpful.",
-      "body_vi": "Đúng là ngày càng nhiều người trên thế giới sống một mình. Nhưng nhà nghiên cứu **Esteban Ortiz-Ospina** chỉ ra rằng [p:ở một mình và cô đơn không phải là một] {owid-2019}. Thời gian một người ở một mình không dự báo tốt việc họ có thấy cô đơn hay thiếu chỗ dựa hay không. Mối liên hệ với bạn bè và gia đình quan trọng cho sức khoẻ, cảm xúc và cả đời sống vật chất của chúng ta, nên cô đơn là vấn đề thật. Chính vì vậy, theo ông, cuộc trò chuyện về nó cần dựa trên [g:sự thật thay vì khẩu hiệu]. Theo lời ông, những tiêu đề về 'đại dịch' vừa sai vừa vô ích."
+      "body_vi": "Đúng là ngày càng nhiều người trên thế giới sống một mình. Nhưng nhà nghiên cứu **Esteban Ortiz-Ospina** chỉ ra rằng [p:ở một mình và cô đơn không phải là một] {owid-2019}. Thời gian một người ở một mình không dự báo tốt việc họ có thấy cô đơn hay thiếu chỗ dựa hay không. Mối liên hệ với bạn bè và gia đình quan trọng cho sức khoẻ, cảm xúc và cả đời sống vật chất của chúng ta, nên cô đơn là vấn đề thật. Chính vì vậy, theo ông, cuộc trò chuyện về nó cần dựa trên [g:sự thật thay vì khẩu hiệu]. Theo lời ông, những tiêu đề về 'đại dịch' vừa sai vừa vô ích.",
+      "heading_fr": "Être seul n'est pas se sentir seul",
+      "body_fr": "Il est vrai que davantage de personnes dans le monde vivent aujourd'hui seules. Mais le chercheur **Esteban Ortiz-Ospina** souligne que [p:le fait d'être seul et le sentiment de solitude ne sont pas la même chose] {owid-2019}. Le temps passé seul ne permet pas de prédire fidèlement si une personne se sent seule ou si elle manque de soutien social. Les liens sociaux avec les amis et la famille comptent pour notre santé, notre bien-être émotionnel et même notre prospérité matérielle ; la solitude est donc un réel problème. C'est précisément pourquoi, affirme-t-il, le débat à ce sujet devrait reposer sur [g:des faits plutôt que des slogans]. Les gros titres évoquant une « épidémie » sont, selon lui, à la fois faux et contre-productifs.",
+      "heading_de": "Allein ist nicht dasselbe wie einsam",
+      "body_de": "Es stimmt, dass heute weltweit mehr Menschen allein leben. Doch der Forscher **Esteban Ortiz-Ospina** gibt zu bedenken, dass [p:Alleinsein und Einsamkeit nicht dasselbe sind] {owid-2019}. Wie viel Zeit jemand allein verbringt, ist kein verlässlicher Indikator dafür, ob sich die Person einsam fühlt oder kaum soziale Unterstützung erfährt. Soziale Bindungen zu Freunden und Familie sind wesentlich für unsere Gesundheit, unser seelisches Wohlbefinden und sogar unseren materiellen Wohlstand; Einsamkeit ist also ein echtes Problem. Genau deshalb, so argumentiert er, sollte die Debatte darüber auf [g:Fakten statt Parolen] beruhen. Schlagzeilen über eine „Epidemie“ seien, so seine Worte, sowohl falsch als auch wenig hilfreich.",
+      "heading_es": "Estar solo no es lo mismo que sentirse solo",
+      "body_es": "Es cierto que hoy en día más personas en todo el mundo viven solas. Sin embargo, el investigador **Esteban Ortiz-Ospina** señala que [p:estar solo y sentirse solo no son lo mismo] {owid-2019}. La cantidad de tiempo que alguien pasa a solas no es un buen indicador de si se siente solo o si cuenta con poco apoyo social. Los vínculos sociales con amigos y familiares son importantes para nuestra salud, nuestro bienestar emocional e incluso nuestro bienestar material, por lo que la soledad es un problema real. Por eso mismo sostiene que el debate debería basarse en [g:hechos en lugar de consignas]. Los titulares sobre una «epidemia», en sus palabras, son tanto erróneos como perjudiciales."
     },
     {
       "heading_en": "Young people say they are lonelier",
       "heading_vi": "Người trẻ nói họ cô đơn hơn",
       "body_en": "One statistic is often used as evidence. In England's **Community Life Survey** {ons}, people aged 16 to 24 are the most likely to feel lonely, with [p:10% feeling lonely 'often or always'], compared with [p:3%] of those aged 65 and over. Many people link loneliness with old age, so this may seem surprising, but surveys in New Zealand, Japan and the US show the same pattern. So yes: in rich countries, younger people are more likely to report feeling lonely. Does that mean loneliness is rising?",
-      "body_vi": "Một con số thường được dùng làm bằng chứng. Trong **Khảo sát Đời sống Cộng đồng** của Anh {ons}, người từ 16 đến 24 tuổi là nhóm hay thấy cô đơn nhất, với [p:10% cảm thấy cô đơn 'thường xuyên hoặc luôn luôn'], so với [p:3%] ở người từ 65 tuổi trở lên. Nhiều người gắn cô đơn với tuổi già nên điều này có vẻ bất ngờ, nhưng các khảo sát ở New Zealand, Nhật Bản và Mỹ cho thấy cùng một xu hướng. Vậy đúng là ở các nước giàu, người trẻ dễ nói mình cô đơn hơn. Nhưng điều đó có nghĩa cô đơn đang gia tăng không?"
+      "body_vi": "Một con số thường được dùng làm bằng chứng. Trong **Khảo sát Đời sống Cộng đồng** của Anh {ons}, người từ 16 đến 24 tuổi là nhóm hay thấy cô đơn nhất, với [p:10% cảm thấy cô đơn 'thường xuyên hoặc luôn luôn'], so với [p:3%] ở người từ 65 tuổi trở lên. Nhiều người gắn cô đơn với tuổi già nên điều này có vẻ bất ngờ, nhưng các khảo sát ở New Zealand, Nhật Bản và Mỹ cho thấy cùng một xu hướng. Vậy đúng là ở các nước giàu, người trẻ dễ nói mình cô đơn hơn. Nhưng điều đó có nghĩa cô đơn đang gia tăng không?",
+      "heading_fr": "Les jeunes se disent plus seuls",
+      "body_fr": "Une statistique est souvent citée comme preuve. Dans l'enquête anglaise **Community Life Survey** {ons}, les 16-24 ans sont les plus susceptibles de se sentir seuls, [p:10 % déclarant se sentir seuls « souvent ou toujours »], contre [p:3 %] des personnes âgées de 65 ans et plus. Beaucoup associent la solitude au grand âge, ce qui peut rendre ce résultat surprenant, mais des enquêtes en Nouvelle-Zélande, au Japon et aux États-Unis révèlent la même tendance. Alors oui : dans les pays riches, les plus jeunes sont effectivement plus enclins à déclarer souffrir de solitude. Cela signifie-t-il pour autant que la solitude progresse ?",
+      "heading_de": "Junge Menschen sagen, sie seien einsamer",
+      "body_de": "Eine Statistik wird besonders häufig als Beleg angeführt. Im englischen **Community Life Survey** {ons} fühlen sich Menschen im Alter von 16 bis 24 Jahren am ehesten einsam: [p:10 % gaben an, sich „oft oder immer“ einsam zu fühlen], verglichen mit [p:3 %] bei den 65-Jährigen und Älteren. Viele Menschen verbinden Einsamkeit mit hohem Alter, daher mag dies überraschen; doch Umfragen in Neuseeland, Japan und den USA zeigen dasselbe Muster. Es stimmt also: In wohlhabenden Ländern berichten jüngere Menschen eher über Einsamkeit. Bedeutet das nun, dass Einsamkeit zunimmt?",
+      "heading_es": "Los jóvenes dicen sentirse más solos",
+      "body_es": "A menudo se utiliza una estadística como prueba. En la **Community Life Survey** de Inglaterra {ons}, las personas de 16 a 24 años son las más propensas a sentirse solas, con un [p:10 % que afirma sentirse sola «a menudo o siempre»], en comparación con el [p:3 %] de quienes tienen 65 años o más. Muchas personas asocian la soledad con la vejez, por lo que esto puede parecer sorprendente, pero las encuestas en Nueva Zelanda, Japón y Estados Unidos muestran el mismo patrón. Así que sí: en los países ricos, los más jóvenes son más propensos a declarar que se sienten solos. ¿Significa eso que la soledad va en aumento?"
     },
     {
       "heading_en": "A snapshot cannot show a trend",
       "heading_vi": "Một bức ảnh chụp không cho thấy xu hướng",
       "body_en": "The answer is no. Comparing young and old people at one moment, a **cross-sectional** comparison, says nothing about change over time, because loneliness is not constant across a lifetime. To know whether loneliness is growing, we must separate two questions. First, do people become lonelier [y:as they age]? Second, are people of the same age lonelier [y:today than in the past]? Only data that follows the same people for years, or that asks successive generations the same question, can answer them, and only then can we say anything meaningful about change.",
-      "body_vi": "Câu trả lời là không. So sánh người trẻ và người già tại một thời điểm, tức phép so sánh **cắt ngang** (*cross-sectional*), không nói gì về sự thay đổi theo thời gian, vì mức độ cô đơn không cố định suốt đời người. Muốn biết cô đơn có đang tăng hay không, ta phải tách thành hai câu hỏi. Thứ nhất, con người có cô đơn hơn [y:khi già đi] không? Thứ hai, những người cùng độ tuổi có cô đơn [y:hơn ngày xưa] không? Chỉ dữ liệu theo dõi cùng một nhóm người trong nhiều năm, hoặc hỏi các thế hệ kế tiếp cùng một câu, mới trả lời được, và chỉ khi đó ta mới nói được điều gì có ý nghĩa về sự thay đổi."
+      "body_vi": "Câu trả lời là không. So sánh người trẻ và người già tại một thời điểm, tức phép so sánh **cắt ngang** (*cross-sectional*), không nói gì về sự thay đổi theo thời gian, vì mức độ cô đơn không cố định suốt đời người. Muốn biết cô đơn có đang tăng hay không, ta phải tách thành hai câu hỏi. Thứ nhất, con người có cô đơn hơn [y:khi già đi] không? Thứ hai, những người cùng độ tuổi có cô đơn [y:hơn ngày xưa] không? Chỉ dữ liệu theo dõi cùng một nhóm người trong nhiều năm, hoặc hỏi các thế hệ kế tiếp cùng một câu, mới trả lời được, và chỉ khi đó ta mới nói được điều gì có ý nghĩa về sự thay đổi.",
+      "heading_fr": "Un instantané ne montre pas une tendance",
+      "body_fr": "La réponse est non. Comparer des jeunes et des personnes âgées à un moment précis, soit une comparaison **transversale**, ne dit rien de l'évolution dans le temps, car la solitude n'est pas constante au cours d'une vie. Pour savoir si la solitude augmente, nous devons dissocier deux questions. Premièrement, les individus deviennent-ils plus seuls [y:en vieillissant] ? Deuxièmement, les personnes d'un même âge sont-elles plus seules [y:aujourd'hui que par le passé] ? Seules des données qui suivent les mêmes personnes pendant des années, ou qui posent la même question à des générations successives, peuvent y répondre, et ce n'est qu'alors que l'on peut affirmer quoi que ce soit de pertinent sur une évolution.",
+      "heading_de": "Eine Momentaufnahme zeigt keinen Trend",
+      "body_de": "Die Antwort lautet Nein. Der Vergleich von Jung und Alt zu einem einzigen Zeitpunkt – ein **Querschnittsvergleich** – sagt nichts über Veränderungen im Zeitverlauf aus, da Einsamkeit über eine Lebensspanne hinweg nicht konstant ist. Um zu wissen, ob Einsamkeit zunimmt, müssen wir zwei Fragen trennen. Erstens: Werden Menschen einsamer, [y:wenn sie altern]? Zweitens: Sind Menschen gleichen Alters einsamer [y:heute als früher]? Nur Daten, die dieselben Personen über Jahre hinweg begleiten oder aufeinanderfolgenden Generationen dieselbe Frage stellen, können sie beantworten – und erst dann lässt sich etwas Gehaltvolles über Veränderungen sagen.",
+      "heading_es": "Una instantánea no puede mostrar una tendencia",
+      "body_es": "La respuesta es no. Comparar a jóvenes y ancianos en un solo momento —una comparación **transversal**— no dice nada sobre el cambio a lo largo del tiempo, porque la soledad no es constante a lo largo de la vida. Para saber si la soledad está aumentando, debemos separar dos preguntas. En primer lugar, ¿las personas se sienten más solas [y:a medida que envejecen]? En segundo lugar, ¿las personas de la misma edad se sienten más solas [y:hoy que en el pasado]? Solo los datos que siguen a las mismas personas durante años, o que plantean la misma pregunta a generaciones sucesivas, pueden responderlas, y solo entonces podremos decir algo significativo sobre el cambio."
     },
     {
       "heading_en": "Loneliness across a lifetime",
       "heading_vi": "Cô đơn qua một đời người",
       "body_en": "Psychologist [y:Louise Hawkley] and colleagues followed Americans over 50 for years {hawkley-2019}. Loneliness tended to [g:decrease from 50 until about 75], then rose again. The rise after 75 was explained by declining health and the loss of a partner; once these were taken into account, loneliness kept falling into the oldest ages. Two forces seem to be at work. As we age, our expectations adapt and we choose company that makes us feel good. But illness and loss push the other way, and in advanced old age they win.",
-      "body_vi": "Nhà tâm lý học [y:Louise Hawkley] và cộng sự theo dõi người Mỹ trên 50 tuổi trong nhiều năm {hawkley-2019}. Mức độ cô đơn có xu hướng [g:giảm từ 50 đến khoảng 75 tuổi], rồi tăng trở lại. Sự gia tăng sau 75 tuổi được giải thích bởi sức khoẻ suy giảm và việc mất người bạn đời; khi tính đến các yếu tố này, cô đơn vẫn tiếp tục giảm tới những năm cuối đời. Dường như có hai lực cùng tác động. Khi già đi, kỳ vọng của ta thay đổi và ta chọn những người khiến mình thấy dễ chịu. Nhưng bệnh tật và mất mát kéo theo hướng ngược lại, và ở tuổi rất cao, chúng chiếm ưu thế."
+      "body_vi": "Nhà tâm lý học [y:Louise Hawkley] và cộng sự theo dõi người Mỹ trên 50 tuổi trong nhiều năm {hawkley-2019}. Mức độ cô đơn có xu hướng [g:giảm từ 50 đến khoảng 75 tuổi], rồi tăng trở lại. Sự gia tăng sau 75 tuổi được giải thích bởi sức khoẻ suy giảm và việc mất người bạn đời; khi tính đến các yếu tố này, cô đơn vẫn tiếp tục giảm tới những năm cuối đời. Dường như có hai lực cùng tác động. Khi già đi, kỳ vọng của ta thay đổi và ta chọn những người khiến mình thấy dễ chịu. Nhưng bệnh tật và mất mát kéo theo hướng ngược lại, và ở tuổi rất cao, chúng chiếm ưu thế.",
+      "heading_fr": "La solitude au fil de la vie",
+      "body_fr": "La psychologue [y:Louise Hawkley] et ses collègues ont suivi des Américains de plus de 50 ans pendant des années {hawkley-2019}. La solitude avait tendance à [g:diminuer de 50 ans jusqu'à environ 75 ans], avant de remonter. La hausse après 75 ans s'expliquait par le déclin de la santé et la perte d'un conjoint ; une fois ces facteurs pris en compte, la solitude continuait de baisser jusqu'aux âges les plus avancés. Deux forces semblent à l'œuvre. En vieillissant, nos attentes s'adaptent et nous choisissons un entourage qui nous fait du bien. Mais la maladie et le deuil jouent en sens inverse, et finissent par l'emporter dans le grand âge.",
+      "heading_de": "Einsamkeit im Verlauf eines Lebens",
+      "body_de": "Die Psychologin [y:Louise Hawkley] und ihr Team begleiteten über Jahre hinweg US-Amerikaner ab 50 Jahren {hawkley-2019}. Die Einsamkeit neigte dazu, [g:von 50 bis etwa 75 Jahren zu sinken], und stieg danach wieder an. Der Anstieg nach 75 ließ sich durch nachlassende Gesundheit und den Verlust des Partners erklären; wurden diese Faktoren berücksichtigt, sank die Einsamkeit bis ins höchste Alter weiter. Zwei Kräfte scheinen hier am Werk zu sein. Mit zunehmendem Alter passen sich unsere Erwartungen an und wir wählen Gesellschaft, die uns guttut. Doch Krankheit und Verlust wirken in die entgegengesetzte Richtung – und im hohen Alter behalten sie die Oberhand.",
+      "heading_es": "La soledad a lo largo de la vida",
+      "body_es": "La psicóloga [y:Louise Hawkley] y su equipo siguieron durante años a estadounidenses mayores de 50 años {hawkley-2019}. La soledad tendía a [g:disminuir desde los 50 hasta alrededor de los 75 años], para luego volver a subir. El aumento después de los 75 se explicaba por el deterioro de la salud y la pérdida de la pareja; una vez tenidos en cuenta estos factores, la soledad continuaba descendiendo hasta las edades más avanzadas. Dos fuerzas parecen intervenir. A medida que envejecemos, nuestras expectativas se adaptan y elegimos compañías que nos hacen sentir bien. Pero la enfermedad y el duelo empujan en sentido contrario, y en la vejez avanzada terminan imponiéndose."
     },
     {
       "heading_en": "No lonelier than their parents",
       "heading_vi": "Không cô đơn hơn thế hệ cha mẹ",
       "body_en": "Hawkley's team also compared generations. Americans born in 1948–1965 were [p:no more likely to feel lonely] than those born in 1920–1947 at the same age, and older adults did not become lonelier between 2005 and 2016. In Sweden, surveys of people aged 85, 90 and 95 found no rise in loneliness over ten years, and surveys of older adults in Finland, Germany and England point the same way. The idea that each new generation is lonelier than the last, perhaps because more people live alone, simply does not show up in these data.",
-      "body_vi": "Nhóm của Hawkley cũng so sánh giữa các thế hệ. Người Mỹ sinh năm 1948–1965 [p:không hề dễ cô đơn hơn] những người sinh năm 1920–1947 khi ở cùng độ tuổi, và người cao tuổi cũng không cô đơn hơn trong giai đoạn 2005–2016. Ở Thuỵ Điển, các khảo sát với người 85, 90 và 95 tuổi không thấy cô đơn tăng lên trong mười năm, và các khảo sát người cao tuổi ở Phần Lan, Đức và Anh cũng cho kết quả tương tự. Ý tưởng rằng mỗi thế hệ mới lại cô đơn hơn thế hệ trước, có lẽ vì nhiều người sống một mình hơn, đơn giản là không xuất hiện trong các dữ liệu này."
+      "body_vi": "Nhóm của Hawkley cũng so sánh giữa các thế hệ. Người Mỹ sinh năm 1948–1965 [p:không hề dễ cô đơn hơn] những người sinh năm 1920–1947 khi ở cùng độ tuổi, và người cao tuổi cũng không cô đơn hơn trong giai đoạn 2005–2016. Ở Thuỵ Điển, các khảo sát với người 85, 90 và 95 tuổi không thấy cô đơn tăng lên trong mười năm, và các khảo sát người cao tuổi ở Phần Lan, Đức và Anh cũng cho kết quả tương tự. Ý tưởng rằng mỗi thế hệ mới lại cô đơn hơn thế hệ trước, có lẽ vì nhiều người sống một mình hơn, đơn giản là không xuất hiện trong các dữ liệu này.",
+      "heading_fr": "Pas plus seuls que leurs parents",
+      "body_fr": "L'équipe de Hawkley a également comparé les générations. Les Américains nés en 1948–1965 n'étaient [p:pas plus susceptibles de se sentir seuls] que ceux nés en 1920–1947 au même âge, et les adultes âgés ne sont pas devenus plus seuls entre 2005 et 2016. En Suède, des enquêtes menées auprès de personnes de 85, 90 et 95 ans n'ont révélé aucune hausse de la solitude sur dix ans, et des enquêtes auprès d'adultes âgés en Finlande, en Allemagne et en Angleterre vont dans le même sens. L'idée selon laquelle chaque nouvelle génération serait plus seule que la précédente, peut-être parce que davantage de personnes vivent seules, n'apparaît tout simplement pas dans ces données.",
+      "heading_de": "Nicht einsamer als ihre Eltern",
+      "body_de": "Hawkleys Team verglich auch Generationen miteinander. In den Jahren 1948–1965 geborene US-Amerikaner fühlten sich im selben Alter [p:nicht mit höherer Wahrscheinlichkeit einsam] als jene der Jahrgänge 1920–1947, und ältere Erwachsene wurden zwischen 2005 und 2016 nicht einsamer. In Schweden ergaben Befragungen von 85-, 90- und 95-Jährigen über zehn Jahre hinweg keinen Anstieg der Einsamkeit, und Erhebungen unter älteren Erwachsenen in Finnland, Deutschland und England weisen in dieselbe Richtung. Die Vorstellung, jede neue Generation sei einsamer als die vorherige – vielleicht weil mehr Menschen allein leben –, spiegelt sich in diesen Daten schlichtweg nicht wider.",
+      "heading_es": "No más solos que sus padres",
+      "body_es": "El equipo de Hawkley también comparó generaciones. Los estadounidenses nacidos en 1948–1965 [p:no eran más propensos a sentirse solos] que los nacidos en 1920–1947 a la misma edad, y los adultos mayores no se sintieron más solos entre 2005 y 2016. En Suecia, las encuestas a personas de 85, 90 y 95 años no hallaron ningún aumento de la soledad a lo largo de diez años, y los sondeos a adultos mayores en Finlandia, Alemania e Inglaterra apuntan en la misma dirección. La idea de que cada nueva generación se siente más sola que la anterior, tal vez porque más personas viven solas, sencillamente no aparece en estos datos."
     },
     {
       "heading_en": "What about teenagers?",
       "heading_vi": "Còn thanh thiếu niên thì sao?",
       "body_en": "Psychologists [y:Kali Trzesniewski] and [y:Brent Donnellan] studied surveys of American high-school seniors from 1976 to 2006 {trzesniewski-2010}. Newer classes were not more likely to report loneliness than earlier ones. A later analysis of the same survey, covering all age groups, found [g:no sign of rising loneliness] and even a very small decline among high-school students {clark-2014}. The change was so small that the trend is effectively flat. In 2018 *The Economist* reasoned that isolation seemed to be increasing, 'so loneliness may be too'. The evidence suggests that this reasoning is wrong.",
-      "body_vi": "Hai nhà tâm lý học [y:Kali Trzesniewski] và [y:Brent Donnellan] phân tích các khảo sát học sinh năm cuối trung học ở Mỹ từ 1976 đến 2006 {trzesniewski-2010}. Các khoá sau không dễ nói mình cô đơn hơn các khoá trước. Một phân tích sau này trên cùng bộ khảo sát, bao gồm mọi lứa tuổi, [g:không thấy dấu hiệu cô đơn gia tăng] và thậm chí ghi nhận mức giảm rất nhỏ ở học sinh trung học {clark-2014}. Thay đổi nhỏ đến mức xu hướng gần như đi ngang. Năm 2018, tạp chí *The Economist* lập luận rằng sự cô lập có vẻ đang tăng, 'nên cô đơn có lẽ cũng vậy'. Bằng chứng cho thấy lập luận đó sai."
+      "body_vi": "Hai nhà tâm lý học [y:Kali Trzesniewski] và [y:Brent Donnellan] phân tích các khảo sát học sinh năm cuối trung học ở Mỹ từ 1976 đến 2006 {trzesniewski-2010}. Các khoá sau không dễ nói mình cô đơn hơn các khoá trước. Một phân tích sau này trên cùng bộ khảo sát, bao gồm mọi lứa tuổi, [g:không thấy dấu hiệu cô đơn gia tăng] và thậm chí ghi nhận mức giảm rất nhỏ ở học sinh trung học {clark-2014}. Thay đổi nhỏ đến mức xu hướng gần như đi ngang. Năm 2018, tạp chí *The Economist* lập luận rằng sự cô lập có vẻ đang tăng, 'nên cô đơn có lẽ cũng vậy'. Bằng chứng cho thấy lập luận đó sai.",
+      "heading_fr": "Et les adolescents ?",
+      "body_fr": "Les psychologues [y:Kali Trzesniewski] et [y:Brent Donnellan] ont étudié des enquêtes menées auprès d'élèves de terminale américains entre 1976 et 2006 {trzesniewski-2010}. Les promotions les plus récentes n'étaient pas plus susceptibles de faire état de solitude que les plus anciennes. Une analyse ultérieure de la même enquête, englobant toutes les tranches d'âge, n'a trouvé [g:aucun signe de hausse de la solitude] et même un très léger recul chez les lycéens {clark-2014}. Cette évolution était si minime que la tendance est en pratique plate. En 2018, *The Economist* estimait que l'isolement semblait progresser, « la solitude pourrait donc l'être aussi ». Les faits suggèrent pourtant que ce raisonnement est erroné.",
+      "heading_de": "Wie steht es um Jugendliche?",
+      "body_de": "Die Psychologen [y:Kali Trzesniewski] und [y:Brent Donnellan] untersuchten Umfragen unter US-amerikanischen Highschool-Absolventen aus den Jahren 1976 bis 2006 {trzesniewski-2010}. Jüngere Jahrgänge berichteten nicht häufiger über Einsamkeit als frühere. Eine spätere Analyse derselben Umfrage, die alle Altersgruppen einbezog, fand [g:keine Anzeichen für zunehmende Einsamkeit] und sogar einen minimalen Rückgang bei Highschool-Schülern {clark-2014}. Die Veränderung war so geringfügig, dass der Trend praktisch unverändert verläuft. 2018 schlussfolgerte *The Economist*, die Isolation scheine zuzunehmen, „weshalb dies auch für die Einsamkeit gelten könnte“. Die Belege deuten darauf hin, dass dieser Schluss verfehlt ist.",
+      "heading_es": "¿Qué hay de los adolescentes?",
+      "body_es": "Los psicólogos [y:Kali Trzesniewski] y [y:Brent Donnellan] estudiaron encuestas a estudiantes del último año de secundaria en Estados Unidos entre 1976 y 2006 {trzesniewski-2010}. Las promociones más recientes no mostraron mayor propensión a manifestar soledad que las anteriores. Un análisis posterior de la misma encuesta, que abarcó a todos los grupos de edad, no halló [g:ningún indicio de aumento de la soledad] e incluso detectó una disminución mínima entre los estudiantes de secundaria {clark-2014}. El cambio fue tan pequeño que la tendencia es prácticamente plana. En 2018, *The Economist* razonó que el aislamiento parecía estar aumentando, «por lo que la soledad también podría hacerlo». La evidencia sugiere que este razonamiento es erróneo."
     },
     {
       "heading_en": "Real problem, wrong headline",
       "heading_vi": "Vấn đề có thật, tiêu đề thì sai",
       "body_en": "None of this means loneliness should be ignored. People who suffer from it need support, and large social changes such as the rise of living alone raise real policy questions. But Ortiz-Ospina argues that inaccurate, over-simplified stories make these challenges harder to understand. As he puts it, there is an [p:epidemic of headlines] about a loneliness epidemic, yet no empirical support for the claim that loneliness is increasing, let alone [g:spreading at epidemic rates]. Clear thinking about loneliness starts with looking at good data first.",
-      "body_vi": "Điều này không có nghĩa nên phớt lờ chuyện cô đơn. Những người đang chịu đựng nó cần được hỗ trợ, và những thay đổi xã hội lớn như việc nhiều người sống một mình đặt ra các câu hỏi chính sách thật sự. Nhưng Ortiz-Ospina cho rằng những câu chuyện thiếu chính xác và quá đơn giản khiến các thách thức này khó hiểu hơn. Như ông viết, đang có một [p:đại dịch tiêu đề] về đại dịch cô đơn, trong khi không có bằng chứng thực nghiệm nào cho thấy cô đơn đang tăng, càng không phải [g:lây lan như một đại dịch]. Muốn suy nghĩ thấu đáo về sự cô đơn, trước hết cần nhìn vào dữ liệu đáng tin cậy."
+      "body_vi": "Điều này không có nghĩa nên phớt lờ chuyện cô đơn. Những người đang chịu đựng nó cần được hỗ trợ, và những thay đổi xã hội lớn như việc nhiều người sống một mình đặt ra các câu hỏi chính sách thật sự. Nhưng Ortiz-Ospina cho rằng những câu chuyện thiếu chính xác và quá đơn giản khiến các thách thức này khó hiểu hơn. Như ông viết, đang có một [p:đại dịch tiêu đề] về đại dịch cô đơn, trong khi không có bằng chứng thực nghiệm nào cho thấy cô đơn đang tăng, càng không phải [g:lây lan như một đại dịch]. Muốn suy nghĩ thấu đáo về sự cô đơn, trước hết cần nhìn vào dữ liệu đáng tin cậy.",
+      "heading_fr": "Vrai problème, mauvais titre",
+      "body_fr": "Rien de tout cela ne signifie que la solitude doive être ignorée. Les personnes qui en souffrent ont besoin de soutien, et des mutations sociales majeures comme la hausse du nombre de personnes vivant seules soulèvent de véritables questions de politique publique. Mais Ortiz-Ospina soutient que des récits inexacts et simplistes rendent ces défis plus difficiles à appréhender. Comme il le formule, il existe une [p:épidémie de gros titres] sur l'épidémie de solitude, sans aucun fondement empirique étayant l'affirmation selon laquelle la solitude augmenterait, et encore moins qu'elle [g:se propagerait à un rythme épidémique]. Pour réfléchir avec lucidité à la solitude, il faut d'abord examiner des données de qualité.",
+      "heading_de": "Echtes Problem, falsche Schlagzeile",
+      "body_de": "Nichts davon bedeutet, dass Einsamkeit ignoriert werden sollte. Menschen, die darunter leiden, brauchen Unterstützung, und tiefgreifende gesellschaftliche Veränderungen wie die Zunahme von Einpersonenhaushalten werfen reale politische Fragen auf. Ortiz-Ospina argumentiert jedoch, dass ungenaue, stark vereinfachte Darstellungen das Verständnis dieser Herausforderungen erschweren. Wie er es formuliert, gibt es eine [p:Epidemie von Schlagzeilen] über eine Einsamkeitsepidemie, jedoch keinerlei empirische Belege für die Behauptung, dass Einsamkeit zunimmt – geschweige denn [g:sich in epidemischem Ausmaß ausbreitet]. Ein klarer Blick auf das Thema Einsamkeit beginnt damit, sich zuerst verlässliche Daten anzusehen.",
+      "heading_es": "Un problema real, un titular equivocado",
+      "body_es": "Nada de esto significa que deba ignorarse la soledad. Quienes la padecen necesitan apoyo, y los grandes cambios sociales, como el aumento del número de personas que viven solas, plantean verdaderas cuestiones de política pública. Sin embargo, Ortiz-Ospina sostiene que los relatos inexactos y simplistas dificultan la comprensión de estos desafíos. Como él mismo señala, existe una [p:epidemia de titulares] sobre una epidemia de soledad, pero ningún respaldo empírico para la afirmación de que la soledad va en aumento, y mucho menos de que [g:se propague a ritmos epidémicos]. Pensar con claridad sobre la soledad comienza por examinar primero datos rigurosos."
     }
   ],
   "keyPoint": {
     "en": "A single survey is like a [p:photo of a crowd]: it shows who is standing where, not who is moving. Before believing that something is 'on the rise', ask *does this data follow the same people or the same age group over time, or is it just one snapshot?*",
-    "vi": "Một cuộc khảo sát đơn lẻ giống như [p:bức ảnh chụp đám đông]: nó cho thấy ai đang đứng ở đâu, chứ không cho thấy ai đang di chuyển. Trước khi tin rằng điều gì đó 'đang gia tăng', hãy hỏi *dữ liệu này có theo dõi cùng một nhóm người hoặc cùng độ tuổi qua thời gian không, hay chỉ là một bức ảnh chụp?*"
+    "vi": "Một cuộc khảo sát đơn lẻ giống như [p:bức ảnh chụp đám đông]: nó cho thấy ai đang đứng ở đâu, chứ không cho thấy ai đang di chuyển. Trước khi tin rằng điều gì đó 'đang gia tăng', hãy hỏi *dữ liệu này có theo dõi cùng một nhóm người hoặc cùng độ tuổi qua thời gian không, hay chỉ là một bức ảnh chụp?*",
+    "fr": "Une enquête isolée ressemble à une [p:photo d'une foule] : elle montre qui se trouve où, et non qui est en mouvement. Avant de croire qu'un phénomène est « en hausse », demandez-vous : *ces données suivent-elles les mêmes personnes ou la même classe d'âge au fil du temps, ou s'agit-il simplement d'un instantané ?*",
+    "de": "Eine einzelne Befragung gleicht dem [p:Foto einer Menschenmenge]: Sie zeigt, wer wo steht, nicht aber, wer sich bewegt. Bevor du glaubst, dass etwas „auf dem Vormarsch“ ist, frage dich: *Folgen diese Daten denselben Personen oder derselben Altersgruppe im Zeitverlauf, oder handelt es sich bloß um eine Momentaufnahme?*",
+    "es": "Una sola encuesta es como una [p:foto de una multitud]: muestra quién está en cada lugar, no quién se está moviendo. Antes de creer que algo va «en aumento», pregúntese: *¿estos datos siguen a las mismas personas o al mismo grupo de edad a lo largo del tiempo, o son solo una instantánea?*"
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Lần tới khi một tiêu đề nói điều gì đó 'đang tăng', hãy tìm hiểu xem dữ liệu có so sánh cùng một nhóm qua thời gian không.",
       "Hôm nay, nhắn tin cho một người bạn đã lâu không trò chuyện.",
       "Để ý sự khác nhau giữa lúc bạn chủ động ở một mình và lúc bạn thấy cô đơn, rồi ghi lại một khoảnh khắc."
+    ],
+    "fr": [
+      "La prochaine fois qu'un gros titre annonce qu'un phénomène est « en hausse », vérifiez si les données comparent le même groupe au fil du temps.",
+      "Envoyez aujourd'hui un message à une personne à qui vous n'avez pas parlé depuis longtemps.",
+      "Observez la différence entre le temps passé seul par choix et les moments où vous ressentez de la solitude, puis notez-en un exemple."
+    ],
+    "de": [
+      "Wenn eine Schlagzeile das nächste Mal behauptet, etwas sei „im Steigen begriffen“, finde heraus, ob die Daten dieselbe Gruppe im Zeitverlauf vergleichen.",
+      "Schicke heute einer Person, mit der du schon länger nicht mehr gesprochen hast, eine Nachricht.",
+      "Achte auf den Unterschied zwischen Zeit, die du freiwillig allein verbringst, und Momenten, in denen du dich einsam fühlst, und notiere dir ein Beispiel."
+    ],
+    "es": [
+      "La próxima vez que un titular afirme que algo va «en aumento», averigüe si los datos comparan al mismo grupo a lo largo del tiempo.",
+      "Envíe hoy un mensaje a una persona con la que no haya hablado desde hace tiempo.",
+      "Observe la diferencia entre el tiempo que pasa a solas por elección propia y los momentos en que se siente solo, y anote un ejemplo."
     ]
   },
   "references": [
@@ -136,5 +202,80 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAADQAwCdASoQABwAPu1orU6ppiSiMAgBMB2JZQDG9GlhShFmcdjvwAAA/vuv5Lybu160s67Uogg1K3KFXDkUFZp3uA/kUusWW7ZZ8LV+SZvMWLokGMcx0NnR/6Io0nwwAo2CpD6CRbCB6IxXbjmR3KqU9hi3qdQAAAA=",
-  "dominant": "#7c7672"
+  "dominant": "#7c7672",
+  "glossary": {
+    "en": {
+      "loneliness epidemic": "The widespread claim that modern society is experiencing a rapid, dangerous rise in loneliness.",
+      "aloneness": "The objective physical state of being alone, as opposed to the emotional feeling of loneliness.",
+      "social support": "Practical and emotional care, help, or companionship provided by friends, family, and communities.",
+      "emotional welfare": "A person's psychological health, happiness, and emotional stability.",
+      "material well-being": "Access to physical necessities, economic resources, and comfortable living conditions.",
+      "community life survey": "An official government survey in England measuring social relationships, community participation, and well-being.",
+      "cross-sectional": "An observational study comparing different groups or ages at one single point in time.",
+      "predictor": "A factor or variable used in statistics to forecast or estimate an outcome.",
+      "isolation": "The physical separation of an individual from others, distinct from feeling lonely.",
+      "high-school seniors": "Students in their final twelfth-grade year of secondary school in the United States.",
+      "empirical support": "Evidence and validation derived from direct observation, objective measurement, or scientific data."
+    },
+    "vi": {
+      "đại dịch": "Sự bùng phát và lây lan nhanh chóng của một hiện tượng tiêu cực trên diện rộng.",
+      "cắt ngang": "Phương pháp nghiên cứu so sánh các nhóm đối tượng khác nhau tại cùng một thời điểm.",
+      "cross-sectional": "Thuật ngữ tiếng Anh chỉ phương pháp nghiên cứu cắt ngang tại một thời điểm nhất định.",
+      "bức ảnh chụp": "Ẩn dụ chỉ dữ liệu tại một thời điểm tĩnh, không cho thấy sự biến đổi.",
+      "xu hướng": "Chiều hướng vận động hoặc thay đổi của một hiện tượng theo dòng thời gian.",
+      "đi ngang": "Trạng thái số liệu duy trì mức ổn định, hầu như không tăng và không giảm.",
+      "cô lập": "Tình trạng bị tách biệt về mặt xã hội hoặc thiếu tiếp xúc với người khác.",
+      "thực nghiệm": "Dựa trên quan sát và đo lường thực tế, thay vì giả định hay suy đoán.",
+      "khẩu hiệu": "Những tuyên bố mang tính cổ động hoặc giật gân, thiếu cơ sở dữ liệu xác thực.",
+      "chính sách": "Chủ trương và biện pháp của cơ quan quản lý nhằm xử lý các vấn đề xã hội.",
+      "khảo sát": "Phương pháp thu thập thông tin qua bảng hỏi để nghiên cứu một nhóm người."
+    },
+    "fr": {
+      "community life survey": "Enquête officielle britannique mesurant les relations sociales et le bien-être au sein de la population.",
+      "transversale": "Étude comparant différents groupes d'individus à un instant donné, sans suivi temporel des mêmes personnes.",
+      "sentiment de solitude": "Souffrance subjective causée par un décalage perçu entre les relations souhaitées et les liens effectifs.",
+      "soutien social": "Ressources affectives, matérielles ou pratiques apportées par l'entourage pour aider un individu au quotidien.",
+      "fondement empirique": "Appui sur des données concrètes, observables et mesurables scientifiquement, plutôt que sur des suppositions.",
+      "politique publique": "Actions, orientations et mesures menées par les pouvoirs publics pour répondre aux défis d'une société.",
+      "the economist": "Célèbre publication britannique traitant de l'actualité économique, politique et sociale internationale.",
+      "élèves de terminale": "Élèves accomplissant leur dernière année d'enseignement secondaire avant d'accéder aux études supérieures.",
+      "instantané": "Observation ponctuelle d'une situation à un moment précis, incapable de révéler une évolution temporelle.",
+      "rythme épidémique": "Vitesse de propagation foudroyante et généralisée au sein d'une population sur une courte période."
+    },
+    "de": {
+      "einsamkeitsepidemie": "Schlagwort für die Annahme, Einsamkeit nehme in der modernen Gesellschaft rasant und bedrohlich zu.",
+      "alleinsein": "Der objektive Zustand des Alleinlebens oder Alleinseins, unabhängig vom subjektiven Befinden.",
+      "einsamkeit": "Das subjektiv empfundene, schmerzhafte Gefühl, zu wenig oder unzureichende soziale Beziehungen zu haben.",
+      "community life survey": "Eine staatliche Erhebung im Vereinigten Königreich zu sozialem Zusammenhalt, Wohlbefinden und gesellschaftlichem Engagement.",
+      "querschnittsvergleich": "Eine wissenschaftliche Erhebung, die unterschiedliche Personengruppen zu einem einzigen Zeitpunkt miteinander vergleicht.",
+      "momentaufnahme": "Ein zeitlich begrenzter Datenüberblick, der keine Rückschlüsse auf dynamische Entwicklungen zulässt.",
+      "highschool-absolventen": "Schüler in den USA, die sich im letzten Jahr der sekundären Schulbildung befinden.",
+      "the economist": "Ein einflussreiches britisches Wochenmagazin für globale Wirtschaft, Politik und gesellschaftliche Fragen.",
+      "einpersonenhaushalten": "Haushalte, die aus nur einer Person bestehen; sie sind nicht gleichbedeutend mit Einsamkeit.",
+      "empirische belege": "Durch systematische wissenschaftliche Beobachtungen oder Messungen gewonnene Nachweise."
+    },
+    "es": {
+      "epidemia": "Propagación rápida de un problema o enfermedad que afecta de manera súbita a una población.",
+      "community life survey": "Estudio estadístico gubernamental del Reino Unido sobre relaciones sociales, bienestar y comunidad.",
+      "patrón": "Pauta regular o tendencia común identificada en observaciones o conjuntos de datos estadísticos.",
+      "transversal": "Método de investigación que observa a distintos grupos en un mismo instante para compararlos.",
+      "instantánea": "Registro de una situación en un momento puntual que no permite seguir cambios temporales.",
+      "vejez avanzada": "Etapa tardía de la vida donde suelen aumentar el deterioro físico y el duelo.",
+      "the economist": "Publicación semanal británica enfocada en política, economía y asuntos globales.",
+      "aislamiento": "Situación objetiva de tener escaso o nulo contacto social con otras personas.",
+      "política pública": "Conjunto de medidas y decisiones diseñadas por un gobierno para resolver necesidades sociales.",
+      "respaldo empírico": "Demostración sustentada en datos observables y medibles, no en conjeturas ni impresiones."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }
