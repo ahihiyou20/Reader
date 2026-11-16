@@ -45,6 +45,10 @@ export function CoverMedia({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- wanted is rebuilt each render; its src is what changes
   }, [wanted.src, source.src]);
+  // With a srcset, a resize or rotation makes the browser pick another file, and the <img> is empty
+  // while it loads (it happens before React hears of the resize). The last file it showed stays
+  // underneath: it is in the cache, so this costs no download.
+  const [backdrop, setBackdrop] = useState<string>();
   // A cover the feed already preloaded shows at once instead of fading in.
   const [decoded, setDecoded] = useState(() => Boolean(priority) || isDecoded(source.src));
   const video = useRef<HTMLVideoElement>(null);
@@ -120,6 +124,7 @@ export function CoverMedia({
   return (
     <>
       {placeholder}
+      {backdrop && <img className="media" src={backdrop} alt="" aria-hidden="true" draggable={false} />}
       <img
         ref={img}
         // Covers without a clip still move: a slow drift across the photo while the cover is on screen.
@@ -135,6 +140,8 @@ export function CoverMedia({
         fetchPriority={priority ? 'high' : 'auto'}
         onLoad={() => {
           const el = img.current;
+          // Not under the blurred layer: a second 24px blur costs more than a frame of it is worth.
+          if (el?.currentSrc && srcSet && !blurred) setBackdrop(el.currentSrc);
           if (el && 'decode' in el) {
             el.decode().then(() => setDecoded(true)).catch(() => setDecoded(true));
           } else {
