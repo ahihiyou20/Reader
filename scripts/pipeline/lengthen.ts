@@ -64,7 +64,9 @@ async function translateWithRetry(a: ArticleSource, lang: (typeof LANGS)[number]
   for (let i = 0; i < 3; i++) {
     try {
       await translateInto(a, lang);
-      return true;
+      // A glossary whose terms do not appear in the text is cut short: ask again for a full one.
+      if (Object.keys(a.glossary?.[lang] ?? {}).length >= 8) return true;
+      if (a.glossary) delete a.glossary[lang];
     } catch (e) {
       if (e instanceof QuotaError || e instanceof GeminiSetupError) throw e;
     }
