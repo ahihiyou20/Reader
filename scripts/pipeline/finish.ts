@@ -10,6 +10,7 @@ import path from 'node:path';
 import type { ArticleSource } from '../../lib/content/types';
 import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
 import { dirs, jobSummary, readJson, writeJson } from './lib';
+import { hasCloudinary } from './cloudinary';
 import { autoMotion, hasFfmpeg, hasPixabay, moveClipsOffRepo } from './motion';
 import { STANDARDS, articleWords, standardProblems } from './standard';
 import { translateAll } from './translate';
@@ -21,6 +22,7 @@ async function main() {
   const at = args.indexOf('--report');
   const reportFile = at >= 0 ? args.splice(at, 2)[1] : undefined;
   const slugs = args.map((s) => path.basename(s, '.json'));
+  console.log(hasCloudinary() ? 'Cloudinary: on' : 'Cloudinary: not configured, clips stay in public/covers/video');
   const moved = await moveClipsOffRepo();
   if (moved.length) console.log(`Moved the motion covers of ${moved.length} articles to Cloudinary: ${moved.join(', ')}`);
   const ffmpeg = await hasFfmpeg();

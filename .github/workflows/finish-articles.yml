@@ -23,6 +23,9 @@ concurrency:
 env:
   # Motion-cover clips go to Cloudinary (scripts/pipeline/cloudinary.ts); without it, into public/covers/video/.
   CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+  CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+  CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+  CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
 jobs:
   finish:
     runs-on: ubuntu-latest

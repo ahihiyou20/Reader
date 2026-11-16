@@ -1,13 +1,24 @@
 // Cloudinary (free plan) for media that would weigh the repository down: motion-cover clips. Uploads
 // are signed here (https://cloudinary.com/documentation/authentication_signatures), so no SDK is
 // needed, and clips are served from Cloudinary's CDN with the right video type for every browser.
-// Configuration: CLOUDINARY_URL, as the dashboard shows it (cloudinary://<api_key>:<api_secret>@<cloud_name>).
-// Without it, callers keep files in public/ as before.
+// Configuration: CLOUDINARY_URL, as the dashboard shows it (cloudinary://<api_key>:<api_secret>@<cloud_name>),
+// or CLOUDINARY_CLOUD_NAME + CLOUDINARY_API_KEY + CLOUDINARY_API_SECRET. Without any, callers keep files in
+// public/ as before; a CLOUDINARY_URL that cannot be read stops the run instead of silently doing nothing.
 import crypto from 'node:crypto';
 
+/**
+ * The account, from CLOUDINARY_URL as the dashboard shows it (also when pasted with its
+ * `CLOUDINARY_URL=` prefix, quotes or spaces), or from CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY and
+ * CLOUDINARY_API_SECRET.
+ */
 function config() {
-  const m = (process.env.CLOUDINARY_URL || '').match(/^cloudinary:\/\/([^:]+):([^@]+)@([^/?]+)/);
-  return m ? { key: m[1], secret: m[2], cloud: m[3] } : undefined;
+  const raw = (process.env.CLOUDINARY_URL || '').trim().replace(/^CLOUDINARY_URL\s*=\s*/i, '').replace(/^["']|["']$/g, '').trim();
+  const m = raw.match(/^cloudinary:\/\/([^:\s]+):([^@\s]+)@([^/?\s]+)/);
+  if (m) return { key: m[1], secret: m[2], cloud: m[3] };
+  const { CLOUDINARY_CLOUD_NAME: cloud, CLOUDINARY_API_KEY: key, CLOUDINARY_API_SECRET: secret } = process.env;
+  if (cloud && key && secret) return { key: key.trim(), secret: secret.trim(), cloud: cloud.trim() };
+  if (raw) throw new Error('CLOUDINARY_URL is set but is not cloudinary://<api_key>:<api_secret>@<cloud_name>: copy it again from the Cloudinary dashboard');
+  return undefined;
 }
 
 export const hasCloudinary = () => Boolean(config());

@@ -31,6 +31,9 @@ env:
   MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS != 'false' }}
   # Motion-cover clips go to Cloudinary (scripts/pipeline/cloudinary.ts); without it, into public/covers/video/.
   CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+  CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+  CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+  CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
 jobs:
   write:
     runs-on: ubuntu-latest

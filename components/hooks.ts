@@ -149,14 +149,24 @@ export function useStaggeredCount(total: number, active: boolean, key: unknown, 
       return;
     }
     let shown = 1;
+    // From when the first item is put up, not from the first frame after it: opening a panel can delay
+    // that frame by a good part of the interval.
+    let last = performance.now();
+    let raf = 0;
     setN(1);
-    const id = setInterval(() => {
-      shown++;
-      const done = shown >= Math.min(first, total);
-      setN(done ? total : shown);
-      if (done) clearInterval(id);
-    }, stagger.list);
-    return () => clearInterval(id);
+    // Timed on animation frames, as search results are: a busy main thread delays an interval and
+    // then fires two of them back to back.
+    const step = (now: number) => {
+      if (now - last >= stagger.list) {
+        last = now;
+        shown++;
+        if (shown >= Math.min(first, total)) return setN(total);
+        setN(shown);
+      }
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
   }, [total, active, key, first]);
   return n;
 }
