@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Common Anti-Inflammatory Medications May Help Dangerous Viruses Spread",
-    "vi": "Thuốc kháng viêm phổ biến có thể giúp virus nguy hiểm lây lan"
+    "vi": "Thuốc kháng viêm phổ biến có thể giúp virus nguy hiểm lây lan",
+    "fr": "Des médicaments anti-inflammatoires courants peuvent faciliter la propagation de virus dangereux",
+    "de": "Gängige Entzündungshemmer könnten die Ausbreitung gefährlicher Viren begünstigen",
+    "es": "Los medicamentos antiinflamatorios comunes pueden ayudar a propagar virus peligrosos"
   },
   "hook": {
     "en": "Researchers at the Norwegian University of Science and Technology discovered that certain medications prescribed for inflammation can weaken the body against viral threats {source}. These treatments may unintentionally assist pathogens like influenza and SARS-CoV-2 in infecting healthy cells more easily.",
-    "vi": "Các nhà nghiên cứu tại Đại học Khoa học và Công nghệ Na Uy phát hiện ra rằng một số loại thuốc trị viêm có thể làm cơ thể suy yếu trước các mối đe dọa từ virus {source}. Các phương pháp điều trị này có thể vô tình hỗ trợ mầm bệnh như cúm và SARS-CoV-2 lây nhiễm tế bào lành dễ dàng hơn."
+    "vi": "Các nhà nghiên cứu tại Đại học Khoa học và Công nghệ Na Uy phát hiện ra rằng một số loại thuốc trị viêm có thể làm cơ thể suy yếu trước các mối đe dọa từ virus {source}. Các phương pháp điều trị này có thể vô tình hỗ trợ mầm bệnh như cúm và SARS-CoV-2 lây nhiễm tế bào lành dễ dàng hơn.",
+    "fr": "Des chercheurs de l'Université norvégienne de science et technologie ont découvert que certains médicaments prescrits contre l'inflammation peuvent affaiblir le corps face aux menaces virales {source}. Ces traitements risquent d'aider involontairement des agents pathogènes tels que la grippe et le SRAS-CoV-2 à infecter plus facilement des cellules saines.",
+    "de": "Forscher an der Technisch-Naturwissenschaftlichen Universität Norwegens entdeckten, dass bestimmte entzündungshemmende Medikamente den Körper gegenüber viralen Bedrohungen schwächen können {source}. Diese Behandlungen könnten unbeabsichtigt Erregern wie Influenza und SARS-CoV-2 dabei helfen, gesunde Zellen leichter zu infizieren.",
+    "es": "Investigadores de la Universidad Noruega de Ciencia y Tecnología descubrieron que ciertos medicamentos recetados para la inflamación pueden debilitar el cuerpo frente a amenazas virales {source}. Estos tratamientos pueden ayudar sin pretenderlo a patógenos como la gripe y el SARS-CoV-2 a infectar células sanas con mayor facilidad."
   },
   "sections": [
     {
       "heading_en": "Immune Suppression Risks",
       "heading_vi": "Rủi ro ức chế miễn dịch",
       "body_en": "Widely used treatments known as Janus kinase inhibitors help manage conditions like rheumatoid arthritis by calming the immune system. However, this suppression also interferes with vital signaling pathways that normally shield healthy tissue from invading pathogens, creating an unexpected vulnerability in patients.",
-      "body_vi": "Các phương pháp điều trị phổ biến gọi là chất ức chế Janus kinase (*Janus kinase inhibitors*) giúp quản lý các tình trạng như viêm khớp dạng thấp bằng cách làm dịu hệ thống miễn dịch. Tuy nhiên, sự ức chế này cũng cản trở các con đường truyền tín hiệu quan trọng vốn thường bảo vệ mô lành khỏi các mầm bệnh xâm nhập."
+      "body_vi": "Các phương pháp điều trị phổ biến gọi là chất ức chế Janus kinase (*Janus kinase inhibitors*) giúp quản lý các tình trạng như viêm khớp dạng thấp bằng cách làm dịu hệ thống miễn dịch. Tuy nhiên, sự ức chế này cũng cản trở các con đường truyền tín hiệu quan trọng vốn thường bảo vệ mô lành khỏi các mầm bệnh xâm nhập.",
+      "heading_fr": "Risques d'immunosuppression",
+      "body_fr": "Les traitements largement utilisés connus sous le nom d'inhibiteurs de Janus kinase aident à gérer des affections telles que la polyarthrite rhumatoïde en apaisant le système immunitaire. Cependant, cette suppression interfère également avec des voies de signalisation vitales qui protègent normalement les tissus sains contre les agents pathogènes envahissants, créant une vulnérabilité inattendue chez les patients.",
+      "heading_de": "Risiken der Immunsuppression",
+      "body_de": "Weit verbreitete Behandlungen, die als Januskinase-Inhibitoren bekannt sind, helfen bei der Bewältigung von Erkrankungen wie rheumatoider Arthritis, indem sie das Immunsystem beruhigen. Diese Unterdrückung stört jedoch auch lebenswichtige Signalwege, die gesundes Gewebe normalerweise vor eindringenden Erregern schützen, wodurch eine unerwartete Anfälligkeit bei Patienten entsteht.",
+      "heading_es": "Riesgos de supresión inmunológica",
+      "body_es": "Los tratamientos ampliamente utilizados conocidos como inhibidores de la cinasa Janus ayudan a controlar afecciones como la artritis reumatoide al calmar el sistema inmunológico. Sin embargo, esta supresión también interfiere con vías de señalización vitales que normalmente protegen el tejido sano de patógenos invasores, creando una vulnerabilidad inesperada en los pacientes."
     },
     {
       "heading_en": "Weakened Antiviral Defenses",
       "heading_vi": "Hàng rào kháng virus suy yếu",
       "body_en": "Laboratory experiments using advanced cellular models revealed that these drugs reduce the activity of specific genes responsible for fighting viral attacks. Without this natural defense layer, dangerous agents such as the coronavirus and Rift Valley fever can establish infections much faster.",
-      "body_vi": "Các thí nghiệm trong phòng thí nghiệm sử dụng các mô hình tế bào tiên tiến cho thấy các loại thuốc này làm giảm hoạt động của các gen cụ thể chịu trách nhiệm chống lại các cuộc tấn công của virus. Không có lớp phòng thủ tự nhiên này, các tác nhân nguy hiểm có thể thiết lập nhiễm trùng nhanh hơn nhiều."
+      "body_vi": "Các thí nghiệm trong phòng thí nghiệm sử dụng các mô hình tế bào tiên tiến cho thấy các loại thuốc này làm giảm hoạt động của các gen cụ thể chịu trách nhiệm chống lại các cuộc tấn công của virus. Không có lớp phòng thủ tự nhiên này, các tác nhân nguy hiểm có thể thiết lập nhiễm trùng nhanh hơn nhiều.",
+      "heading_fr": "Défenses antivirales affaiblies",
+      "body_fr": "Des expériences en laboratoire utilisant des modèles cellulaires avancés ont révélé que ces médicaments réduisent l'activité de gènes spécifiques responsables de la lutte contre les attaques virales. Sans cette couche de défense naturelle, des agents dangereux tels que le coronavirus et la fièvre de la Vallée du Rift peuvent établir des infections beaucoup plus rapidement.",
+      "heading_de": "Geschwächte antivirale Abwehrkräfte",
+      "body_de": "Laborexperimente mit fortschrittlichen zellulären Modellen zeigten, dass diese Medikamente die Aktivität spezifischer Gene verringern, die für die Bekämpfung von viralen Angriffen verantwortlich sind. Ohne diese natürliche Verteidigungsschicht können sich gefährliche Erreger wie das Coronavirus und das Rifttal-Fieber viel schneller einnisten.",
+      "heading_es": "Defensas antivirales debilitadas",
+      "body_es": "Experimentos de laboratorio con modelos celulares avanzados revelaron que estos fármacos reducen la actividad de genes específicos responsables de combatir los ataques virales. Sin esta capa de defensa natural, agentes peligrosos como el coronavirus y la fiebre del Valle del Rift pueden establecer infecciones mucho más rápido."
     },
     {
       "heading_en": "Caution During Outbreaks",
       "heading_vi": "Thận trọng trong dịch bệnh",
       "body_en": "Scientists emphasize that doctors should carefully weigh these hidden risks, especially during active viral outbreaks. While these pharmaceutical tools remain valuable for treating inflammatory diseases, understanding their unintended consequences helps ensure safer patient care during periods of high transmission.",
-      "body_vi": "Các nhà khoa học nhấn mạnh rằng các bác sĩ nên cân nhắc kỹ lưỡng những rủi ro ẩn giấu này, đặc biệt trong các đợt bùng phát virus hoạt động. Mặc dù các công cụ dược phẩm này vẫn có giá trị, việc hiểu rõ các hậu quả ngoài ý muốn giúp đảm bảo chăm sóc bệnh nhân an toàn hơn."
+      "body_vi": "Các nhà khoa học nhấn mạnh rằng các bác sĩ nên cân nhắc kỹ lưỡng những rủi ro ẩn giấu này, đặc biệt trong các đợt bùng phát virus hoạt động. Mặc dù các công cụ dược phẩm này vẫn có giá trị, việc hiểu rõ các hậu quả ngoài ý muốn giúp đảm bảo chăm sóc bệnh nhân an toàn hơn.",
+      "heading_fr": "Prudence lors des épidémies",
+      "body_fr": "Les scientifiques soulignent que les médecins doivent peser soigneusement ces risques cachés, en particulier lors d'épidémies virales actives. Bien que ces outils pharmaceutiques restent précieux pour traiter les maladies inflammatoires, la compréhension de leurs conséquences involontaires contribue à garantir des soins plus sûrs aux patients pendant les périodes de forte transmission.",
+      "heading_de": "Vorsicht bei Ausbrüchen",
+      "body_de": "Wissenschaftler betonen, dass Ärzte diese versteckten Risiken sorgfältig abwägen sollten, insbesondere während aktiver viralen Ausbrüche. Obwohl diese pharmazeutischen Mittel wertvoll für die Behandlung entzündlicher Erkrankungen bleiben, hilft das Verständnis ihrer unbeabsichtigten Folgen dabei, eine sicherere Patientenversorgung in Zeiten hoher Übertragung zu gewährleisten.",
+      "heading_es": "Precaución durante los brotes",
+      "body_es": "Los científicos enfatizan que los médicos deben sopesar cuidadosamente estos riesgos ocultos, especialmente durante brotes virales activos. Si bien estas herramientas farmacéuticas siguen siendo valiosas para tratar enfermedades inflamatorias, comprender sus consecuencias imprevistas ayuda a garantizar una atención al paciente más segura durante periodos de alta transmisión."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Like a security system with its alarms temporarily disabled, these anti-inflammatory drugs leave cells exposed to intruders. [p:Are you aware of potential medication side effects before starting a new prescription?]",
-    "vi": "Giống như hệ thống an ninh bị tắt báo động tạm thời, các loại thuốc kháng viêm này khiến tế bào phơi bày trước kẻ xâm nhập. [p:Bạn có nắm rõ các tác dụng phụ tiềm ẩn của thuốc trước khi bắt đầu đơn thuốc mới không?]"
+    "vi": "Giống như hệ thống an ninh bị tắt báo động tạm thời, các loại thuốc kháng viêm này khiến tế bào phơi bày trước kẻ xâm nhập. [p:Bạn có nắm rõ các tác dụng phụ tiềm ẩn của thuốc trước khi bắt đầu đơn thuốc mới không?]",
+    "fr": "À l'image d'un système de sécurité dont les alarmes sont temporairement désactivées, ces médicaments anti-inflammatoires laissent les cellules exposées aux intrus. [p:Êtes-vous conscient des effets secondaires potentiels des médicaments avant de commencer une nouvelle ordonnance ?]",
+    "de": "Wie ein Sicherheitssystem mit vorübergehend deaktivierten Alarmen lassen diese Entzündungshemmer Zellen für Eindringlinge ungeschützt. [p:Bist du dir möglicher Nebenwirkungen von Medikamenten bewusst, bevor du ein neues Rezept beginnst?]",
+    "es": "Al igual que un sistema de seguridad con las alarmas desactivadas temporalmente, estos medicamentos antiinflamatorios dejan las células expuestas a los intrusos. [p:¿Está usted al tanto de los posibles efectos secundarios de los medicamentos antes de iniciar una nueva receta?]"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Tham khảo ý kiến bác sĩ về bất kỳ loại thuốc kê đơn nào.",
       "Xem xét rủi ro nhiễm trùng tiềm ẩn trong các đợt bùng phát virus.",
       "Thảo luận cởi mở về sức khỏe hệ miễn dịch với nhà cung cấp dịch vụ y tế."
+    ],
+    "fr": [
+      "Consultez votre médecin concernant tout médicament sur ordonnance en cours.",
+      "Examinez les risques d'infection potentiels lors d'épidémies virales régionales.",
+      "Discutez ouvertement de la santé de votre système immunitaire avec votre prestataire de soins de santé."
+    ],
+    "de": [
+      "Konsultiere deinen Arzt bezüglich aller aktiven verschriebenen Medikamente.",
+      "Überprüfe mögliche Infektionsrisiken während regionaler viraler Ausbrüche.",
+      "Besprich die Gesundheit deines Immunsystems offen mit deinem Gesundheitsdienstleister."
+    ],
+    "es": [
+      "Consulte a su médico con respecto a cualquier medicamento recetado activo.",
+      "Revise los posibles riesgos de infección durante los brotes virales regionales.",
+      "Hable abiertamente sobre la salud de su sistema inmunológico con su proveedor de atención médica."
     ]
   },
   "coverCandidates": [
@@ -118,10 +160,13 @@
       "vi",
       "keyPoint",
       "applySteps",
-      "en"
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-medium"
+    "model": "gemini-3.5-flash-lite"
   },
   "glossary": {
     "en": {
@@ -149,6 +194,35 @@
       "gen": "Đoạn vật chất di truyền mang chỉ dẫn tạo ra các phân tử bảo vệ cơ thể.",
       "nhiễm trùng": "Sự xâm nhập và phát triển của các vi sinh vật gây hại trong mô sống.",
       "tác dụng phụ": "Những hiệu ứng không mong muốn xảy ra ngoài tác dụng điều trị chính của thuốc."
+    },
+    "fr": {
+      "janus kinase": "Famille d'enzymes intracellulaires jouant un rôle clé dans la transmission des signaux du système immunitaire.",
+      "immunosuppression": "Diminution volontaire ou involontaire de l'efficacité du système immunitaire de l'organisme.",
+      "pathogènes": "Agents biologiques transmissibles pouvant provoquer des maladies chez l'hôte.",
+      "polyarthrite rhumatoïde": "Maladie inflammatoire chronique des articulations d'origine auto-immune.",
+      "sras-cov-2": "Coronavirus responsable de la pandémie de la maladie à coronavirus 2019.",
+      "fièvre de la vallée du rift": "Maladie virale animale transmissible à l'homme et causée par un phlébovirus.",
+      "antivirales": "Se dit de substances ou de mécanismes capables de lutter contre les infections virales.",
+      "cellulaires": "Relatif aux cellules, les unités de base constituant tous les organismes vivants."
+    },
+    "de": {
+      "januskinase-inhibitoren": "Medikamente, die das Immunsystem beruhigen und bei Erkrankungen wie rheumatoider Arthritis eingesetzt werden.",
+      "immunsuppression": "Die künstliche Unterdrückung oder Dämpfung der körpereigenen Immunabwehr durch Medikamente.",
+      "signalwege": "Biochemische Kettenreaktionen in Zellen, die Informationen weiterleiten und Körperprozesse steuern.",
+      "influenza": "Eine durch Viren verursachte Infektionskrankheit, die umgangssprachlich als echte Grippe bezeichnet wird.",
+      "sars-cov-2": "Das neuartige Coronavirus, das die Atemwegserkrankung COVID-19 auslöst.",
+      "rifttal-fieber": "Eine Viruserkrankung, die von Tieren auf Menschen übertragen werden kann.",
+      "pharmazeutisch": "Die Herstellung, Entwicklung und Anwendung von Medikamenten und Heilmitteln betreffend."
+    },
+    "es": {
+      "antiinflamatorios": "Medicamentos diseñados para reducir la inflamación y calmar el sistema inmunitario.",
+      "patógenos": "Agentes biológicos que pueden enfermar la salud, como virus y bacterias.",
+      "inhibidores de la cinasa janus": "Fármacos que bloquean ciertas enzimas para tratar la inflamación y la artritis.",
+      "artritis reumatoide": "Enfermedad inflamatoria crónica que afecta principalmente a las articulaciones.",
+      "señalización": "Proceso mediante el cual las células se comunican para coordinar respuestas.",
+      "sars-cov-2": "El virus responsable de la enfermedad respiratoria conocida como COVID-19.",
+      "antivirales": "Mecanismos o sustancias diseñadas para combatir infecciones causadas por virus.",
+      "farmacéuticas": "Empresas o productos relacionados con el desarrollo y venta de medicamentos."
     }
   }
 }

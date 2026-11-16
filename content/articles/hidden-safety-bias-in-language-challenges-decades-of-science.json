@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Hidden Safety Bias in Language Challenges Decades of Science",
-    "vi": "Thiên kiến an toàn ẩn giấu trong ngôn ngữ thách thức nhiều thập kỷ khoa học"
+    "vi": "Thiên kiến an toàn ẩn giấu trong ngôn ngữ thách thức nhiều thập kỷ khoa học",
+    "fr": "Un biais de sécurité caché dans le langage contredit des décennies de science",
+    "de": "Versteckte Sicherheitsverzerrung in der Sprache widerlegt Jahrzehnte der Wissenschaft",
+    "es": "El sesgo de seguridad oculto en el lenguaje desafía décadas de ciencia"
   },
   "hook": {
     "en": "Researchers have uncovered a surprising pattern in human language that challenges a scientific theory accepted for over seventy years. This discovery suggests that word meanings are driven by core priorities like safety rather than just emotion {source}.",
-    "vi": "Các nhà nghiên cứu đã phát hiện ra một mô hình đáng ngạc nhiên trong ngôn ngữ loài người, thách thức một lý thuyết khoa học được chấp nhận trong hơn bảy mươi năm qua. Khám phá này cho thấy ý nghĩa của từ ngữ được thúc đẩy bởi các ưu tiên cốt lõi như sự an toàn hơn là chỉ cảm xúc {source}."
+    "vi": "Các nhà nghiên cứu đã phát hiện ra một mô hình đáng ngạc nhiên trong ngôn ngữ loài người, thách thức một lý thuyết khoa học được chấp nhận trong hơn bảy mươi năm qua. Khám phá này cho thấy ý nghĩa của từ ngữ được thúc đẩy bởi các ưu tiên cốt lõi như sự an toàn hơn là chỉ cảm xúc {source}.",
+    "fr": "Des chercheurs ont découvert un schéma surprenant dans le langage humain qui contredit une théorie scientifique admise depuis plus de soixante-dix ans. Cette découverte suggère que le sens des mots est guidé par des priorités fondamentales telles que la sécurité plutôt que par la simple émotion {source}.",
+    "de": "Forscher haben ein überraschendes Muster in der menschlichen Sprache entdeckt, das eine seit über siebzig Jahren anerkannte wissenschaftliche Theorie in Frage stellt. Diese Entdeckung legt nahe, dass Wortbedeutungen eher von Kernprioritäten wie Sicherheit als von reinen Emotionen angetrieben werden {source}.",
+    "es": "Investigadores han descubierto un patrón sorprendente en el lenguaje humano que desafía una teoría científica aceptada durante más de setenta años. Este descubrimiento sugiere que el significado de las palabras está impulsado por prioridades fundamentales como la seguridad en lugar de solo por la emoción {source}."
   },
   "sections": [
     {
       "heading_en": "Challenging the Traditional Model",
       "heading_vi": "Thách thức mô hình truyền thống",
       "body_en": "Since the nineteen-fifties, science has relied on a three-dimensional framework to measure word meaning through emotion. However, a recent analysis of billions of words revealed a different structure. Instead of traditional emotional dimensions, researchers found that power, danger, and structure better explain how language is organized.",
-      "body_vi": "Kể từ thập niên 1950, khoa học đã dựa trên khung ba chiều để đo lường nghĩa của từ thông qua cảm xúc. Tuy nhiên, một phân tích gần đây về hàng tỷ từ đã tiết lộ một cấu trúc khác. Thay vì các chiều cảm xúc truyền thống, các nhà nghiên cứu thấy rằng quyền lực, sự nguy hiểm và cấu trúc giải thích tốt hơn cách ngôn ngữ được tổ chức."
+      "body_vi": "Kể từ thập niên 1950, khoa học đã dựa trên khung ba chiều để đo lường nghĩa của từ thông qua cảm xúc. Tuy nhiên, một phân tích gần đây về hàng tỷ từ đã tiết lộ một cấu trúc khác. Thay vì các chiều cảm xúc truyền thống, các nhà nghiên cứu thấy rằng quyền lực, sự nguy hiểm và cấu trúc giải thích tốt hơn cách ngôn ngữ được tổ chức.",
+      "heading_fr": "Remise en cause du modèle traditionnel",
+      "body_fr": "Depuis les années cinquante, la science s'appuie sur un cadre tridimensionnel pour mesurer le sens des mots par le biais de l'émotion. Cependant, une analyse récente portant sur des milliards de mots a révélé une structure différente. Au lieu des dimensions émotionnelles traditionnelles, les chercheurs ont constaté que le pouvoir, le danger et la structure expliquent mieux la manière dont le langage est organisé.",
+      "heading_de": "Herausforderung für das traditionelle Modell",
+      "body_de": "Seit den fünfziger Jahren stützt sich die Wissenschaft auf einen dreidimensionalen Rahmen, um die Bedeutung von Wörtern durch Emotionen zu messen. Eine aktuelle Analyse von Milliarden von Wörtern ergab jedoch eine andere Struktur. Anstelle traditioneller emotionaler Dimensionen fanden Forscher heraus, dass Macht, Gefahr und Struktur erklären, wie Sprache organisiert ist.",
+      "heading_es": "Desafiar el modelo tradicional",
+      "body_es": "Desde la década de mil novecientos cincuenta, la ciencia se ha apoyado en un marco tridimensional para medir el significado de las palabras a través de la emoción. Sin embargo, un análisis reciente de miles de millones de palabras reveló una estructura diferente. En lugar de las dimensiones emocionales tradicionales, los investigadores descubrieron que el poder, el peligro y la estructura explican mejor cómo se organiza el lenguaje."
     },
     {
       "heading_en": "The Prevalence of Safety",
       "heading_vi": "Sự phổ biến của tính an toàn",
       "body_en": "The study introduced a measurement tool to analyze essential word meanings across various real-world texts. Results showed that terms associated with safety appeared much more frequently than those tied to danger. This widespread preference offers a new explanation for why human language leans toward positive expressions.",
-      "body_vi": "Nghiên cứu đã giới thiệu một công cụ đo lường để phân tích ý nghĩa cốt lõi của từ qua nhiều văn bản thực tế. Kết quả cho thấy các thuật ngữ liên quan đến sự an toàn xuất hiện thường xuyên hơn nhiều so với những từ gắn liền với sự nguy hiểm. Sự ưu tiên phổ biến này mang đến một lời giải thích mới cho việc vì sao ngôn ngữ loài người nghiêng về các biểu đạt tích cực."
+      "body_vi": "Nghiên cứu đã giới thiệu một công cụ đo lường để phân tích ý nghĩa cốt lõi của từ qua nhiều văn bản thực tế. Kết quả cho thấy các thuật ngữ liên quan đến sự an toàn xuất hiện thường xuyên hơn nhiều so với những từ gắn liền với sự nguy hiểm. Sự ưu tiên phổ biến này mang đến một lời giải thích mới cho việc vì sao ngôn ngữ loài người nghiêng về các biểu đạt tích cực.",
+      "heading_fr": "La prévalence de la sécurité",
+      "body_fr": "L'étude a introduit un outil de mesure pour analyser les significations essentielles des mots dans divers textes du monde réel. Les résultats ont montré que les termes associés à la sécurité apparaissent beaucoup plus fréquemment que ceux liés au danger. Cette préférence généralisée offre une nouvelle explication quant à la tendance du langage humain à privilégier des expressions positives.",
+      "heading_de": "Die Vorherrschaft der Sicherheit",
+      "body_de": "Die Studie stellte ein Messinstrument vor, um wesentliche Wortbedeutungen in verschiedenen Texten der realen Welt zu analysieren. Die Ergebnisse zeigten, dass Begriffe im Zusammenhang mit Sicherheit viel häufiger auftraten als solche, die mit Gefahr verbunden sind. Diese weit verbreitete Präferenz bietet eine neue Erklärung dafür, warum die menschliche Sprache zu positiven Ausdrücken tendiert.",
+      "heading_es": "La prevalencia de la seguridad",
+      "body_es": "El estudio introdujo una herramienta de medición para analizar los significados esenciales de las palabras en varios textos del mundo real. Los resultados mostraron que los términos asociados con la seguridad aparecían con mucha más frecuencia que los vinculados con el peligro. Esta preferencia generalizada ofrece una nueva explicación de por qué el lenguaje humano se inclina hacia las expresiones positivas."
     },
     {
       "heading_en": "Implications for AI and Beyond",
       "heading_vi": "Ý nghĩa đối với trí tuệ nhân tạo và hơn thế nữa",
       "body_en": "This newly identified linguistic bias could transform multiple fields, including artificial intelligence and psychology. Advanced AI systems currently depend on sentiment analysis to interpret communication. Incorporating these new dimensions might help machines evaluate human language more accurately and explain their assessments more clearly.",
-      "body_vi": "Thiên kiến ngôn ngữ mới được xác định này có thể biến đổi nhiều lĩnh vực, bao gồm trí tuệ nhân tạo (*artificial intelligence*) và tâm lý học. Các hệ thống AI tiên tiến hiện đang phụ thuộc vào phân tích cảm xúc (*sentiment analysis*) để diễn giải giao tiếp. Việc kết hợp các chiều không gian mới này có thể giúp máy móc đánh giá ngôn ngữ con người chính xác hơn."
+      "body_vi": "Thiên kiến ngôn ngữ mới được xác định này có thể biến đổi nhiều lĩnh vực, bao gồm trí tuệ nhân tạo (*artificial intelligence*) và tâm lý học. Các hệ thống AI tiên tiến hiện đang phụ thuộc vào phân tích cảm xúc (*sentiment analysis*) để diễn giải giao tiếp. Việc kết hợp các chiều không gian mới này có thể giúp máy móc đánh giá ngôn ngữ con người chính xác hơn.",
+      "heading_fr": "Conséquences pour l'IA et au-delà",
+      "body_fr": "Ce biais linguistique nouvellement identifié pourrait transformer de nombreux domaines, notamment l'intelligence artificielle et la psychologie. Les systèmes d'IA avancés dépendent actuellement de l'analyse des sentiments pour interpréter la communication. Intégrer ces nouvelles dimensions pourrait aider les machines à évaluer le langage humain avec plus de précision et à expliciter leurs évaluations plus clairement.",
+      "heading_de": "Auswirkungen auf KI und darüber hinaus",
+      "body_de": "Diese neu identifizierte sprachliche Verzerrung könnte mehrere Bereiche verändern, darunter künstliche Intelligenz und Psychologie. Fortschrittliche KI-Systeme hängen derzeit von der Stimmungsanalyse ab, um Kommunikation zu interpretieren. Die Einbeziehung dieser neuen Dimensionen könnte Maschinen helfen, die menschliche Sprache genauer auszuwerten und ihre Einschätzungen klarer zu erklären.",
+      "heading_es": "Implicaciones para la inteligencia artificial y más allá",
+      "body_es": "Este sesgo lingüístico recién identificado podría transformar múltiples campos, incluidas la inteligencia artificial y la psicología. Los sistemas avanzados de inteligencia artificial dependen actualmente del análisis de sentimientos para interpretar la comunicación. Incorporar estas nuevas dimensiones podría ayudar a las máquinas a evaluar el lenguaje humano con mayor precisión y a explicar sus valoraciones con mayor claridad."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Like an invisible current guiding a boat, a hidden safety bias steers our daily choice of words. *Can you identify three words you use today that signal safety?*",
-    "vi": "Giống như một dòng chảy vô hình dẫn đường cho con chiếc thuyền, thiên kiến an toàn ẩn giấu chi phối lựa chọn từ ngữ hàng ngày của chúng ta. *Bạn có thể nhận ra ba từ mình sử dụng hôm nay báo hiệu sự an toàn không?*"
+    "vi": "Giống như một dòng chảy vô hình dẫn đường cho con chiếc thuyền, thiên kiến an toàn ẩn giấu chi phối lựa chọn từ ngữ hàng ngày của chúng ta. *Bạn có thể nhận ra ba từ mình sử dụng hôm nay báo hiệu sự an toàn không?*",
+    "fr": "Tel un courant invisible guidant un bateau, un biais de sécurité caché oriente notre choix quotidien de mots. *Pouvez-vous identifier trois mots que vous utilisez aujourd'hui qui signalent la sécurité ?*",
+    "de": "Wie eine unsichtbare Strömung, die ein Boot lenkt, steuert eine versteckte Sicherheitsverzerrung unsere tägliche Wortwahl. *Kannst du drei Wörter benennen, die du heute verwendest und die Sicherheit signalisieren?*",
+    "es": "Como una corriente invisible que guía un barco, un sesgo de seguridad oculto dirige nuestra elección diaria de palabras. *¿Puedes identificar tres palabras que uses hoy que señalen seguridad?*"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Xem xét một đoạn văn bản để phát hiện các từ phản ánh sự an toàn hoặc nguy hiểm.",
       "Cân nhắc cách quyền lực và cấu trúc định hình giao tiếp.",
       "Suy ngẫm về việc các ưu tiên an toàn này ảnh hưởng như thế nào đến bài viết của chính bạn."
+    ],
+    "fr": [
+      "Examiner un texte pour repérer les mots qui reflètent la sécurité ou le danger.",
+      "Considérer la manière dont le pouvoir et la structure façonnent la communication.",
+      "Réfléchir à la façon dont ces priorités de sécurité influencent votre propre écriture."
+    ],
+    "de": [
+      "Untersuche einen Text, um Wörter zu entdecken, die Sicherheit oder Gefahr widerspiegeln.",
+      "Überlege, wie Macht und Struktur die Kommunikation prägen.",
+      "Reflektiere, wie diese Sicherheitsprioritäten dein eigenes Schreiben beeinflussen."
+    ],
+    "es": [
+      "Examinar un texto para detectar palabras que reflejen seguridad o peligro.",
+      "Considerar cómo el poder y la estructura moldean la comunicación.",
+      "Reflexionar sobre cómo estas prioridades de seguridad influyen en tu propia escritura."
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,63 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
+  },
+  "glossary": {
+    "en": {
+      "hidden safety bias": "The underlying tendency of language to prioritize safety over danger.",
+      "scientific theory": "An established framework accepted for over seventy years.",
+      "three-dimensional framework": "A traditional scientific model used to measure word meaning.",
+      "sentiment analysis": "A method advanced AI systems use to interpret human communication.",
+      "artificial intelligence": "Technology fields that could be transformed by this new linguistic insight.",
+      "measurement tool": "An instrument introduced in the study to analyze essential word meanings.",
+      "linguistic bias": "A newly identified pattern that could transform multiple fields.",
+      "psychology": "A field that could be transformed by incorporating new dimensions."
+    },
+    "vi": {
+      "thiên kiến": "Sự nghiêng về một bên hoặc quan điểm nhất định khi đánh giá sự việc.",
+      "khung ba chiều": "Hệ thống gồm ba hướng hoặc yếu tố để đo lường và phân tích sự vật.",
+      "phân tích": "Quá trình chia nhỏ dữ liệu để nghiên cứu chi tiết bản chất của chúng.",
+      "trí tuệ nhân tạo": "Khả năng của máy móc mô phỏng tư duy và hành vi của con người.",
+      "phân tích cảm xúc": "Kỹ thuật dùng máy tính để xác định thái độ tích cực hay tiêu cực trong văn bản.",
+      "tâm lý học": "Khoa học nghiên cứu về tâm trí và hành vi của con người.",
+      "hệ thống ai": "Tập hợp công nghệ máy tính hoạt động dựa trên trí tuệ nhân tạo.",
+      "diễn giải": "Hành động giải thích và làm rõ ý nghĩa của thông tin."
+    },
+    "fr": {
+      "biais de sécurité": "Tendance inconsciente à privilégier les mots liés à la sécurité dans le langage.",
+      "cadre tridimensionnel": "Modèle théorique basé sur trois dimensions pour évaluer le sens des mots.",
+      "analyse des sentiments": "Méthode informatique pour déterminer la polarité émotionnelle d'un texte.",
+      "intelligence artificielle": "Technologie permettant aux machines de simuler l'intelligence humaine.",
+      "biais linguistique": "Déformation systématique observée dans l'utilisation ou la structure des langues.",
+      "outil de mesure": "Instrument scientifique conçu pour quantifier des caractéristiques précises.",
+      "dimensions émotionnelles": "Axe d'évaluation lié aux sentiments et aux émotions dans les mots.",
+      "priorités fondamentales": "Éléments essentiels qui guident en premier les actions ou les choix."
+    },
+    "de": {
+      "wortbedeutungen": "Die inhaltliche Bedeutung von Begriffen in einer Sprache.",
+      "dreidimensionalen rahmen": "Ein theoretisches Modell mit drei Achsen zur Messung von Eigenschaften.",
+      "stimmungsanalyse": "Automatische Erkennung von Emotionen und Haltungen in Texten durch Computer.",
+      "künstliche intelligenz": "Nachahmung menschlicher Intelligenz durch Computersysteme und Maschinen.",
+      "sprachliche verzerrung": "Eine systematische Abweichung oder Neigung in der sprachlichen Struktur.",
+      "messinstrument": "Ein wissenschaftliches Werkzeug zur Erfassung von Messdaten.",
+      "psychologie": "Die Wissenschaft vom menschlichen Verhalten und Erleben.",
+      "dimensionen": "Messbare Aspekte oder Richtungen eines theoretischen Raumes."
+    },
+    "es": {
+      "sesgo": "Inclinación o tendencia hacia algo que puede alterar un resultado o análisis.",
+      "marco tridimensional": "Estructura conceptual basada en tres dimensiones utilizada para medir fenómenos.",
+      "análisis de sentimientos": "Técnica computacional para determinar la actitud o emoción expresada en un texto.",
+      "prevalencia": "Condición de estar muy extendido o presentarse con mayor frecuencia.",
+      "inteligencia artificial": "Simulación de procesos de inteligencia humana por parte de sistemas máquinas.",
+      "psicología": "Ciencia que estudia los procesos mentales y el comportamiento humano."
+    }
   }
 }

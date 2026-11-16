@@ -12,12 +12,16 @@
   "title": {
     "en": "Common Pesticide Linked to Significantly Higher Parkinson's Risk",
     "vi": "Thuốc trừ sâu phổ biến liên quan đến nguy cơ mắc bệnh Parkinson cao hơn đáng kể",
-    "fr": "Un pesticide courant associé à un risque nettement accru de Parkinson"
+    "fr": "Un pesticide courant associé à un risque nettement accru de Parkinson",
+    "de": "Häufiges Pestizid mit deutlich höherem Parkinson-Risiko verbunden",
+    "es": "Vincular un pesticida común a un riesgo mucho mayor de Parkinson"
   },
   "hook": {
     "en": "Recent research reveals that long-term exposure to a widely used agricultural chemical dramatically increases the likelihood of developing a progressive neurological disorder. Scientists have uncovered the exact biological mechanism inside brain cells that explains this dangerous connection, opening potential pathways for future protective treatments.",
     "vi": "Nghiên cứu gần đây tiết lộ rằng việc tiếp xúc lâu dài với một loại hóa chất nông nghiệp được sử dụng rộng rãi làm tăng đáng kể khả năng phát triển chứng rối loạn thần kinh tiến triển. Các nhà khoa học đã phát hiện ra cơ chế sinh học chính xác bên trong các tế bào não giải thích mối bağlantı nguy hiểm này, mở ra các con đường tiềm năng cho các phương pháp điều trị bảo vệ trong tương lai.",
-    "fr": "De récents travaux révèlent qu'une exposition prolongée à un produit chimique agricole très répandu augmente considérablement le risque de développer un trouble neurologique évolutif. Des scientifiques ont mis au jour le mécanisme biologique précis au sein des cellules cérébrales expliquant cette dangereuse corrélation, ouvrant ainsi de nouvelles pistes vers de futurs traitements préventifs."
+    "fr": "De récents travaux révèlent qu'une exposition prolongée à un produit chimique agricole très répandu augmente considérablement le risque de développer un trouble neurologique évolutif. Des scientifiques ont mis au jour le mécanisme biologique précis au sein des cellules cérébrales expliquant cette dangereuse corrélation, ouvrant ainsi de nouvelles pistes vers de futurs traitements préventifs.",
+    "de": "Aktuelle Forschungen zeigen, dass eine langfristige Belastung durch eine weit verbreitete Agrarchemie die Wahrscheinlichkeit der Entwicklung einer progressiven neurologischen Erkrankung drastisch erhöht. Wissenschaftler haben den genauen biologischen Mechanismus in Gehirnzellen aufgedeckt, der diese gefährliche Verbindung erklärt, und damit potenzielle Wege für künftige Schutzbehandlungen eröffnet.",
+    "es": "Una investigación reciente revela que la exposición prolongada a un producto químico agrícola muy utilizado aumenta drásticamente la probabilidad de desarrollar un trastorno neurológico progresivo. Los científicos han descubierto el mecanismo biológico exacto dentro de las células cerebrales que explica esta peligrosa conexión, lo que abre posibles vías para futuros tratamientos protectores."
   },
   "sections": [
     {
@@ -26,7 +30,11 @@
       "body_en": "Researchers at UCLA Health examined residential address histories alongside agricultural application records to evaluate environmental factors. They discovered that individuals with prolonged exposure to chlorpyrifos faced more than 2.5 times the likelihood of developing Parkinson's disease compared to unexposed groups {source}. Although population data alone cannot prove direct causation, additional laboratory tests on animals helped validate the strong association.",
       "body_vi": "Các nhà nghiên cứu tại Y khoa UCLA (*UCLA Health*) đã xem xét lịch sử địa chỉ nhà ở kết hợp với hồ sơ ứng dụng nông nghiệp để đánh giá các yếu tố môi trường. Họ phát hiện ra rằng những cá nhân tiếp xúc kéo dài với chất chlorpyrifos phải đối mặt với khả năng mắc bệnh Parkinson cao hơn gấp 2,5 lần so với các nhóm không tiếp xúc {source}. Mặc dù dữ liệu dân số đơn thuần không thể chứng minh nguyên nhân trực tiếp, nhưng các thử nghiệm trong phòng thí nghiệm trên động vật đã giúp xác thực mối liên hệ mạnh mẽ này.",
       "heading_fr": "Enquêter sur le lien",
-      "body_fr": "Des chercheurs de UCLA Health ont analysé les historiques d'adresses résidentielles parallèlement aux registres d'épandage agricole afin d'évaluer les facteurs environnementaux. Ils ont découvert que les personnes exposées durablement au chlorpyrifos présentaient un risque plus de 2,5 fois supérieur de développer la maladie de Parkinson par rapport aux groupes non exposés {source}. Si les seules données épidémiologiques ne peuvent prouver une causalité directe, des essais complémentaires en laboratoire sur des modèles animaux ont permis de valider cette forte association."
+      "body_fr": "Des chercheurs de UCLA Health ont analysé les historiques d'adresses résidentielles parallèlement aux registres d'épandage agricole afin d'évaluer les facteurs environnementaux. Ils ont découvert que les personnes exposées durablement au chlorpyrifos présentaient un risque plus de 2,5 fois supérieur de développer la maladie de Parkinson par rapport aux groupes non exposés {source}. Si les seules données épidémiologiques ne peuvent prouver une causalité directe, des essais complémentaires en laboratoire sur des modèles animaux ont permis de valider cette forte association.",
+      "heading_de": "Untersuchung des Zusammenhangs",
+      "body_de": "Forscher von UCLA Health untersuchten Wohnadressenverläufe zusammen mit landwirtschaftlichen Anwendungsaufzeichnungen, um Umweltfaktoren zu bewerten. Sie entdeckten, dass Personen mit längerer Exposition gegenüber Chlorpyrifos ein mehr als 2,5-mal so hohes Risiko hatten, an Parkinson zu erkranken, verglichen mit nicht exponierten Gruppen {source}. Obwohl Bevölke- rungsdaten allein keine direkte Kausalität beweisen können, trugen zusätzliche Labortests an Tieren dazu bei, die starke Verbindung zu validieren.",
+      "heading_es": "Investigación de la conexión",
+      "body_es": "Investigadores de UCLA Health examinaron historiales de direcciones residenciales junto con registros de aplicación agrícola para evaluar factores ambientales. Descubrieron que las personas con exposición prolongada al clorpirifos enfrentaban más de 2.5 veces la probabilidad de desarrollar la enfermedad de Parkinson en comparación con los grupos no expuestos {source}. Aunque los datos de la población por sí solos no pueden probar una causalidad directa, pruebas de laboratorio adicionales en animales ayudaron a validar la fuerte asociación."
     },
     {
       "heading_en": "Cellular Damage in Models",
@@ -34,7 +42,11 @@
       "body_en": "Experiments involving mice exposed to aerosolized chemical droplets demonstrated movement difficulties and a notable loss of dopamine-producing neurons. Scientists also detected brain inflammation alongside abnormal accumulations of a specific protein. These characteristic changes closely mirror the core features observed in human patients suffering from the progressive movement condition.",
       "body_vi": "Các thí nghiệm liên quan đến chuột được tiếp xúc với các giọt hóa chất dạng xông (*aerosol*) đã chứng minh các khó khăn về vận động và sự suy giảm đáng kể các tế bào thần kinh sản xuất dopamine. Các nhà khoa học cũng phát hiện tình trạng viêm não đi kèm với sự tích tụ bất thường của một loại protein cụ thể. Những thay đổi đặc trưng này phản ánh rất sát các đặc điểm cốt lõi quan sát thấy ở bệnh nhân người lớn mắc chứng rối loạn vận động tiến triển này.",
       "heading_fr": "Lésions cellulaires sur modèles",
-      "body_fr": "Des expériences menées sur des souris exposées à des microgouttelettes chimiques en aérosol ont révélé des troubles moteurs ainsi qu'une perte notable de neurones dopaminergiques. Les scientifiques ont également détecté une inflammation cérébrale accompagnée d'accumulations anormales d'une protéine spécifique. Ces altérations caractéristiques reproduisent fidèlement les principales manifestations observées chez les patients souffrant de cette affection motrice évolutive."
+      "body_fr": "Des expériences menées sur des souris exposées à des microgouttelettes chimiques en aérosol ont révélé des troubles moteurs ainsi qu'une perte notable de neurones dopaminergiques. Les scientifiques ont également détecté une inflammation cérébrale accompagnée d'accumulations anormales d'une protéine spécifique. Ces altérations caractéristiques reproduisent fidèlement les principales manifestations observées chez les patients souffrant de cette affection motrice évolutive.",
+      "heading_de": "Zelluläre Schäden in Modellen",
+      "body_de": "Experimente mit Mäusen, die aerosolisierten chemischen Tröpfchen ausgesetzt waren, zeigten Bewegungsschwierigkeiten und einen deutlichen Verlust von Dopamin produzierenden Neuronen. Wissenschaftler entdeckten zudem Gehirnentzündungen neben abnormalen Ansammlungen eines spezifischen Proteins. Diese charakteristischen Veränderungen spiegeln stark die Kernmerkmale wider, die bei menschlichen Patienten mit der progressiven Bewegungserkrankung beobachtet werden.",
+      "heading_es": "Daño celular en modelos",
+      "body_es": "Experimentos con ratones expuestos a gotitas químicas en aerosol demostraron dificultades de movimiento y una notable pérdida de neuronas productoras de dopamina. Los científicos también detectaron inflamación cerebral junto con acumulaciones anormales de una proteína específica. Estos cambios característicos reflejan fielmente las características principales observadas en pacientes humanos que padecen la afección progresiva del movimiento."
     },
     {
       "heading_en": "Disrupted Cleanup Systems",
@@ -42,7 +54,11 @@
       "body_en": "Further investigations utilizing zebrafish pointed to a severe disruption within autophagy, the natural cellular recycling system responsible for clearing defective proteins. When this essential cleanup process fails, harmful material builds up and damages neurons over time. Importantly, laboratory restoration of this cellular cleanup successfully shielded neurons from toxic injury.",
       "body_vi": "Các nghiên cứu xa hơn sử dụng cá ngựa vằn (*zebrafish*) đã chỉ ra sự gián đoạn nghiêm trọng bên trong quá trình tự thực (*autophagy*), hệ thống tái chế tế bào tự nhiên chịu trách nhiệm dọn dẹp các protein lỗi. Khi quá trình làm sạch thiết yếu này thất bại, các chất có hại sẽ tích lũy và làm hỏng các tế bào thần kinh theo thời gian. Quan trọng là, việc khôi phục quá trình dọn dẹp tế bào này trong phòng thí nghiệm đã bảo vệ thành công các tế bào thần kinh khỏi tổn thương độc hại.",
       "heading_fr": "Un système de nettoyage perturbé",
-      "body_fr": "D'autres investigations menées chez le poisson-zèbre ont mis en évidence une grave perturbation de l'autophagie, le système naturel de recyclage cellulaire chargé d'éliminer les protéines défectueuses. Lorsque ce processus de nettoyage essentiel s'enraye, des substances nocives s'accumulent et endommagent progressivement les neurones. Fait notable, la restauration de cette élimination cellulaire en laboratoire a permis de protéger efficacement les neurones contre ces atteintes toxiques."
+      "body_fr": "D'autres investigations menées chez le poisson-zèbre ont mis en évidence une grave perturbation de l'autophagie, le système naturel de recyclage cellulaire chargé d'éliminer les protéines défectueuses. Lorsque ce processus de nettoyage essentiel s'enraye, des substances nocives s'accumulent et endommagent progressivement les neurones. Fait notable, la restauration de cette élimination cellulaire en laboratoire a permis de protéger efficacement les neurones contre ces atteintes toxiques.",
+      "heading_de": "Gestörte Aufräum-Systeme",
+      "body_de": "Weitere Untersuchungen an Zebrafischen wiesen auf eine schwerwiegende Störung der Autophagie hin, des natürlichen zellulären Recyclingsystems, das für die Beseitigung defekter Proteine verantwortlich ist. Wenn dieser essenzielle Aufräumprozess versagt, häuft sich schädliches Material an und schädigt Neuronen im Laufe der Zeit. Wichtig ist, dass die Wiederherstellung dieses zellulären Aufräumens im Labor Neuronen erfolgreich vor toxischen Schäden schützte.",
+      "heading_es": "Sistemas de limpieza interrumpidos",
+      "body_es": "Otras investigaciones que utilizaron peces cebra señalaron una grave alteración dentro de la autofagia, el sistema natural de reciclaje celular responsable de eliminar las proteínas defectuosas. Cuando este proceso de limpieza esencial falla, el material nocivo se acumula y daña las neuronas con el tiempo. Es importante destacar que la restauración en laboratorio de esta limpieza celular protegió con éxito a las neuronas de lesiones tóxicas."
     }
   ],
   "references": [
@@ -78,7 +94,9 @@
   "keyPoint": {
     "en": "Think of your brain cells as a busy kitchen where an [p:efficient dishwasher] keeps counters clean; when toxic chemicals break that dishwasher, garbage piles up. How can you minimize your exposure to agricultural chemicals in your daily environment?",
     "vi": "Hãy coi các tế bào não của bạn giống như một nhà bếp bận rộn nơi [p:máy rửa bát hiệu quả] giữ cho quầy luôn sạch sẽ; khi hóa chất độc hại làm hỏng chiếc máy đó, rác sẽ chất đống. Làm thế nào bạn có thể giảm thiểu việc tiếp xúc với hóa chất nông nghiệp trong môi trường hàng ngày?",
-    "fr": "Imaginez vos cellules cérébrales comme une cuisine animée où un [p:lave-vaisselle efficace] maintient les plans de travail propres ; lorsque des produits toxiques endommagent cette machine, les déchets s'accumulent. Comment pouvez-vous limiter votre exposition aux produits chimiques agricoles dans votre environnement quotidien ?"
+    "fr": "Imaginez vos cellules cérébrales comme une cuisine animée où un [p:lave-vaisselle efficace] maintient les plans de travail propres ; lorsque des produits toxiques endommagent cette machine, les déchets s'accumulent. Comment pouvez-vous limiter votre exposition aux produits chimiques agricoles dans votre environnement quotidien ?",
+    "de": "Stell dir deine Gehirnzellen wie eine geschäftige Küche vor, in der ein [p:efficient dishwasher] die Arbeitsflächen sauber hält; wenn giftige Chemikalien diesen Geschirrspüler kaputtmachen, türmt sich Müll auf. Wie kannst du deine Belastung durch Agrarchemikalien in deiner täglichen Umgebung minimieren?",
+    "es": "Imagina que tus células cerebrales son una cocina ajetreada donde un [p:lavavajillas eficiente] mantiene los mostradores limpios; cuando los químicos tóxicos rompen ese lavavajillas, la basura se acumula. ¿Cómo puedes minimizar tu exposición a los químicos agrícolas en tu entorno diario?"
   },
   "applySteps": {
     "en": [
@@ -95,6 +113,16 @@
       "Passez en revue vos anciens lieux de résidence afin de repérer toute proximité passée avec des zones agricoles soumises à d'importants épandages de pesticides.",
       "Évoquez vos expositions environnementales passées à des produits chimiques avec un neurologue lors de vos bilans de santé réguliers.",
       "Surveillez attentivement l'apparition de signes précoces de raideur motrice ou de tremblements si vous présentez des antécédents connus d'exposition."
+    ],
+    "de": [
+      "Überprüfe deine Wohnbiografie auf frühehre Nähe zu landwirtschaftlichen Gebieten, in denen Pestizide stark versprüht wurden.",
+      "Bespreche frühere Belastungen durch Umweltchemikalien bei routinemäßigen Gesundheitsuntersuchungen mit einem Neurologen.",
+      "Achte genau auf frühe Anzeichen von Bewegungsschwierigkeiten oder Zittern, wenn eine bekannte Expositionshistorie vorliegt."
+    ],
+    "es": [
+      "Revisa tu historial residencial para detectar proximidad pasada a zonas agrícolas donde se rociaron pesticidas intensamente.",
+      "Discute exposiciones previas a químicos ambientales con un neurólogo durante los chequeos médicos de rutina.",
+      "Vigila de cerca los primeros signos de dificultades de movimiento o temores si tienes un historial conocido de exposición."
     ]
   },
   "coverCandidates": [
@@ -133,10 +161,12 @@
       "keyPoint",
       "applySteps",
       "en",
-      "fr"
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-medium"
+    "model": "gemini-3.5-flash-lite"
   },
   "glossary": {
     "en": {
@@ -177,6 +207,26 @@
       "autophagie": "Processus cellulaire naturel d'élimination et de recyclage des composants ou protéines défectueux.",
       "aérosol": "Suspension de particules ou microgouttelettes liquides diffusées dans l'air ambiant.",
       "épandage agricole": "Dispersion ou pulvérisation de produits de traitement sur des parcelles cultivées."
+    },
+    "de": {
+      "chlorpyrifos": "Ein weit verbreitetes Agrar-Pestizid, das mit einem erhöhten Parkinson-Risiko in Verbindung gebracht wird.",
+      "autophagie": "Das natürliche zelluläre Recyclingsystem, das für die Beseitigung defekter Proteine verantwortlich ist.",
+      "dopamin": "Ein wichtiger Botenstoff im Gehirn, dessen Mangel typisch für Parkinson-Patienten ist.",
+      "neurologisch": "Das Nervensystem und das Gehirn betreffend.",
+      "kausalität": "Ein nachgewiesener direkter ursächlicher Zusammenhang zwischen zwei Ereignissen.",
+      "zebrafische": "Modellorganismen in der biologischen Forschung zur Untersuchung von Krankheitsmechanismen.",
+      "neuronen": "Nervenzellen, die Informationen im Gehirn weiterleiten und verarbeiten.",
+      "exposition": "Die Einwirkung von Umwelteinflüssen oder Chemikalien auf den Körper."
+    },
+    "es": {
+      "clorpirifos": "Producto químico agrícola e insecticida vinculado en estudios a un mayor riesgo de desarrollar la enfermedad de Parkinson.",
+      "trastorno neurológico": "Afección médica que afecta al sistema nervioso y altera funciones cerebrales o corporales esenciales de forma progresiva.",
+      "dopamina": "Neurotransmisor clave en el cerebro que regula el movimiento, la motivación y el control muscular.",
+      "neuronas": "Células fundamentales del sistema nervioso encargadas de transmitir información mediante impulsos eléctricos y químicos.",
+      "autofagia": "Sistema natural de reciclaje celular responsable de eliminar componentes defectuosos o dañados dentro de las células.",
+      "proteína": "Molécula grande y compleja esencial para múltiples funciones biológicas y estructurales en los seres vivos.",
+      "peces cebra": "Organismo modelo utilizado frecuentemente en investigaciones científicas para estudiar procesos biológicos y enfermedades humanas.",
+      "lesiones tóxicas": "Daño tisular o celular provocado por la acción directa de sustancias nocivas o venenosas en el organismo."
     }
   }
 }

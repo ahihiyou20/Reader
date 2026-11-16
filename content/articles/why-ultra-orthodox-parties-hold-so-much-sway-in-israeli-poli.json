@@ -94,10 +94,14 @@
   },
   "ai": {
     "fields": [
-      "en"
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": false,
-    "model": "gemini-3.8-flash-medium"
+    "model": "gemini-3.5-flash-lite"
   },
   "publishAt": "2026-10-28T02:31:51.028Z",
   "glossary": {
@@ -116,5 +120,11 @@
       "reservists": "Citizens who have completed regular military service and remain subject to call-up for duty.",
       "kahanist": "Far-right, extremist Jewish nationalist groups associated with the ideology of Meir Kahane."
     }
+  },
+  "summary": {
+    "vi": "Cộng đồng người Do Thái siêu chính thống (*Haredi*) tại Israel đang nắm giữ quyền lực chính trị đáng kể dù chiếm tỷ trọng dân số nhỏ. Các đảng phái đại diện cho nhóm này là đồng minh quan trọng trong liên minh cầm quyền của Thủ tướng Benjamin Netanyahu. Vấn đề tranh cãi lớn nhất hiện nay là việc miễn nghĩa vụ quân sự cho nam giới *Haredi*, điều gây bức xúc cho phần lớn cử tri trong bối cảnh chiến sự gia tăng. Phán quyết của tòa án yêu cầu nhập ngũ đã dẫn đến các cuộc khủng hoảng chính trị và rạn nứt liên minh.",
+    "fr": "Cette analyse examine le rôle crucial des partis ultra-orthodoxes dans le paysage politique israélien. Bien que minoritaires, ils exercent une influence majeure grâce au système de représentation proportionnelle et à leur statut d'alliés indispensables pour former des coalitions gouvernementales. Toutefois, l'exemption historique de service militaire accordée à leur communauté susmet de vives tensions, particulièrement dans le contexte de conflits armés récents. Alors que la population ultra-orthodoxe augmente rapidement, la question de l'égalité devant le service militaire demeure un défi politique majeur pour le futur du pays.",
+    "de": "Ultra-orthodoxe Parteien spielen in Israels Politik eine entscheidende Rolle, weil sie unverzichtbare Partner für Regierungsbündnisse sind. Obwohl die überwältigende Mehrheit der jüdischen Bevölkerung fordert, dass auch ultra-orthodoxe Männer den Militärdienst ableisten, genießen sie traditionell weitreichende Ausnahmen. Angesichts anhaltender Konflikte und einer wachsenden Bevölkerung führt diese Ungleichbehandlung zu erheblichen Spannungen in der israelischen Gesellschaft.",
+    "es": "Las comunidades ultraortodoxas en Israel poseen una gran influencia política a pesar de ser una minoría demográfica. Sus partidos son aliados clave en las coaliciones gubernamentales de Benjamin Netanyahu. El principal conflicto surge porque los varones ultraortodoxos han estado exentos del servicio militar obligatorio, algo que genera un creciente resentimiento en la sociedad israelí. Aunque los tribunales dictaminaron que estas exenciones son ilegales, los partidos religiosos exigen mantenerlas para formar parte de cualquier gobierno."
   }
 }

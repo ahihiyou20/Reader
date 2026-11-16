@@ -136,10 +136,38 @@
       "highlights",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
   },
-  "publishAt": "2026-10-25T01:19:59.042Z"
+  "publishAt": "2026-10-25T01:19:59.042Z",
+  "glossary": {
+    "en": {
+      "doxology": "A liturgical formula of praise to God.",
+      "wild rue": "A Mediterranean and Asian plant.",
+      "lexicographer": "A person who compiles dictionaries.",
+      "etymology": "The historical origin and development of a word.",
+      "phonology": "The system of contrastive sounds in a language.",
+      "phonetics": "The physical production and perception of speech sounds.",
+      "lexicon": "The vocabulary of a language.",
+      "extinct": "No longer in use or having living speakers."
+    },
+    "vi": {
+      "giáo phụ cappadocia": "Các nhà thần học Cơ đốc giáo lớn sống tại vùng Cappadocia trong thế kỷ thứ tư.",
+      "peganum harmala": "Tên khoa học của loài thực vật được gọi là cây tầm ma dại.",
+      "luwian": "Một ngôn ngữ thuộc ngữ hệ Ấn-Âu từng được nói tại Tiểu Á thời cổ đại.",
+      "chrysippus xứ tyana": "Tác giả của một chuyên luận cổ đại về nghệ thuật làm bánh ngọt.",
+      "eleanor dickey": "Nhà ngôn ngữ học nghiên cứu về các nguồn văn bản cổ đại.",
+      "julius pollux": "Nhà từ điển học cổ đại, tác giả của tác phẩm Onomasticon nổi tiếng.",
+      "onomasticon": "Bộ bách khoa toàn thư hoặc từ điển phân loại thuật ngữ tiếng Hy Lạp cổ.",
+      "oswald szemerényi": "Nhà ngôn ngữ học có các nghiên cứu so sánh về từ vựng cổ đại.",
+      "hesychius xứ alexandria": "Nhà từ điển học nổi tiếng với các ghi chép về tiếng Hy Lạp cổ.",
+      "etymologicum genuinum": "Bộ bách khoa toàn thư thời kỳ Byzantine chuyên giải thích từ nguyên.",
+      "commagene": "Tên gọi của một vương quốc cổ đại tại khu vực Tiểu Á.",
+      "olivier casabonne": "Nhà sử học nghiên cứu về lịch sử và ngôn ngữ vùng Tiểu Á cổ đại.",
+      "speros vryonis": "Nhà sử học chuyên nghiên cứu về sự thay đổi ngôn ngữ tại vùng Tiểu Á."
+    }
+  }
 }

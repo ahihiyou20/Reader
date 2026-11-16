@@ -90,7 +90,8 @@
   "summary": {
     "vi": "Nga đã thay đổi chiến lược phá hoại bằng cách chuyển từ các điệp viên ưu tú sang sử dụng các điệp viên thời vụ giá rẻ, tuyển dụng qua mạng và trả bằng tiền mã hóa. Các chiến dịch này bao gồm các vụ đốt phá, tấn công mạng và quấy rối cơ sở hạ tầng nhằm gây ra sự hoảng loạn tâm lý và làm kiệt quệ lực lượng an ninh phương Tây. Mặc dù nhiều âm mưu tỏ ra vụng về và thất bại ở cấp độ cá nhân, nhưng tác động tổng thể của chúng vẫn tạo ra mối đe dọa bất ổn lớn.",
     "fr": "Face à l'expulsion massive de ses diplomates après 2022, Moscou a profondément transformé sa stratégie d'ingérence. La Russie délaisse les officiers chevronnés au profit d'agents « ubérisés », recrutés sur des messageries chiffrées et rétribués en cryptomonnaies pour commettre incendies, dégradations ou cyberattaques. Même si ces opérations à bas coût échouent fréquemment sur le plan technique, elles privilégient délibérément le nombre : chaque incident alimente l'inquiétude médiatique et épuise les services de sécurité occidentaux. Du sabotage sous-marin aux intrusions aériennes, cette guerre d'usure érige le désordre psychologique en arme stratégique.",
-    "de": "Russland hat seine Sabotagestrategie gegen den Westen grundlegend verändert. Statt elitärer Geheimdienstoffiziere setzt Moskau zunehmend auf kostengünstige, austauschbare Gelegenheitsakteure, die über Messenger rekrutiert und mit Kryptowährungen bezahlt werden. Zwar scheitern viele Brandstiftungen, Drohnenangriffe oder Sabotageakte an kritischer Infrastruktur auf operativer Ebene, doch das Kalkül geht dennoch auf: Die schiere Masse an Vorfällen bindet Sicherheitskräfte, schürt Verunsicherung in der Bevölkerung und erzeugt mediale Panik. Auch im Cyberraum zielt der Kreml vor allem auf Einschüchterung ab. Westliche Staaten können sich daher nicht auf die Inkompetenz einzelner Täter verlassen."
+    "de": "Russland hat seine Sabotagestrategie gegen den Westen grundlegend verändert. Statt elitärer Geheimdienstoffiziere setzt Moskau zunehmend auf kostengünstige, austauschbare Gelegenheitsakteure, die über Messenger rekrutiert und mit Kryptowährungen bezahlt werden. Zwar scheitern viele Brandstiftungen, Drohnenangriffe oder Sabotageakte an kritischer Infrastruktur auf operativer Ebene, doch das Kalkül geht dennoch auf: Die schiere Masse an Vorfällen bindet Sicherheitskräfte, schürt Verunsicherung in der Bevölkerung und erzeugt mediale Panik. Auch im Cyberraum zielt der Kreml vor allem auf Einschüchterung ab. Westliche Staaten können sich daher nicht auf die Inkompetenz einzelner Täter verlassen.",
+    "es": "La expulsión masiva de oficiales de inteligencia rusos en Europa provocó un cambio drástico en las operaciones de Moscú. En lugar de espías profesionales, los servicios rusos recurren ahora a reclutas eventuales contratados mediante aplicaciones de mensajería y pagados en criptomonedas. Esta red de agentes desechables ejecuta sabotajes físicos, ciberataques y actos intimidatorios de menor coste. Aunque muchos planes fracasan por su baja calidad operativa, el objetivo principal sigue cumpliéndose al generar alarma social, desestabilizar la seguridad occidental y saturar la respuesta de los gobiernos europeos afectados."
   },
   "keyPoint": {
     "en": "Think of this new sabotage model like a swarm of low-cost drones: individual failures do not stop the broader psychological campaign of intimidation. What steps can your local community take to improve resilience against unexpected infrastructure disruptions? [p:Hope is not a strategy.]",
@@ -115,10 +116,11 @@
       "applySteps",
       "en",
       "fr",
-      "de"
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-medium"
+    "model": "gemini-3.5-flash-lite"
   },
   "publishAt": "2026-10-25T01:32:59.042Z",
   "glossary": {

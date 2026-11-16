@@ -11,36 +11,66 @@
   ],
   "title": {
     "en": "Simple Ways to Relieve Desk Job Discomfort",
-    "vi": "Cách đơn giản để giảm khó chịu khi làm việc văn phòng"
+    "vi": "Cách đơn giản để giảm khó chịu khi làm việc văn phòng",
+    "fr": "Moyens simples de soulager l'inconfort lié au travail de bureau",
+    "de": "Einfache Wege gegen Beschwerden bei der Bürotarbeit",
+    "es": "Formas sencillas de aliviar la incomodidad del trabajo de escritorio"
   },
   "hook": {
     "en": "Spending hours at a desk often triggers physical discomfort, from aching backs and strained eyes to deep fatigue. Fortunately, simple lifestyle adjustments and targeted movements can significantly reduce these risks. Discover practical strategies from experts to help your body feel better during long work hours {source}.",
-    "vi": "Dành nhiều giờ làm việc bên bàn làm việc thường gây ra khó chịu thể chất, từ đau lưng, mỏi mắt đến kiệt sức. May mắn thay, các điều chỉnh lối sống đơn giản và bài tập mục tiêu có thể giảm thiểu đáng kể những rủi ro này. Khám phá các chiến lược thực tế từ chuyên gia giúp cơ thể thoải mái hơn trong giờ làm việc {source}."
+    "vi": "Dành nhiều giờ làm việc bên bàn làm việc thường gây ra khó chịu thể chất, từ đau lưng, mỏi mắt đến kiệt sức. May mắn thay, các điều chỉnh lối sống đơn giản và bài tập mục tiêu có thể giảm thiểu đáng kể những rủi ro này. Khám phá các chiến lược thực tế từ chuyên gia giúp cơ thể thoải mái hơn trong giờ làm việc {source}.",
+    "fr": "Passer des heures à un bureau déclenche souvent des inconforts physiques, allant du mal de dos et de la fatigue oculaire à une profonde fatigue. Heureusement, des ajustements simples du mode de vie et des mouvements ciblés peuvent réduire considérablement ces risques. Découvrez des stratégies pratiques d'experts pour aider votre corps à se sentir mieux pendant de longues heures de travail {source}.",
+    "de": "Stundenlanges Sitzen am Schreibtisch führt oft zu körperlichem Unbehagen, von schmerzenden Rücken und angestrengten Augen bis hin zu tiefem Erschöpfung. Zum Glück können einfache Lebensstiländerungen und gezielte Bewegungen diese Risiken erheblich verringern. Entdecke praktische Strategien von Experten, damit sich dein Körper während langer Arbeitsstunden besser fühlt {source}.",
+    "es": "Pasar horas en un escritorio suele desencadenar malestar físico, desde dolores de espalda y vista cansada hasta fatiga profunda. Afortunadamente, ajustes sencillos en el estilo de vida y movimientos específicos pueden reducir significativamente estos riesgos. Descubre estrategias prácticas de expertos para ayudar a tu cuerpo a sentirse mejor durante las largas horas de trabajo {source}."
   },
   "sections": [
     {
       "heading_en": "Take Short Walking Breaks",
       "heading_vi": "Nghỉ giải lao đi bộ ngắn",
       "body_en": "Sitting for long periods harms health, but [p:researchers found a simple fix]. In 2023, scientists at Columbia University Medical Center discovered that walking for *five minutes every half hour* effectively combats sedentary risks. A massive challenge involving over twenty thousand listeners showed this routine successfully lowered fatigue while boosting overall daily productivity.",
-      "body_vi": "Ngồi lâu gây hại cho sức khỏe, nhưng [p:các nhà nghiên cứu đã tìm ra giải pháp đơn giản]. Vào năm 2023, các nhà khoa học tại Trung tâm Y tế Đại học Columbia phát hiện ra việc đi bộ *năm phút mỗi nửa tiếng* giúp chống lại các rủi ro do ít vận động (*sedentary lifestyle*). Một thử thách lớn với hơn hai mươi nghìn thính giả cho thấy thói quen này làm giảm mệt mỏi và tăng năng suất."
+      "body_vi": "Ngồi lâu gây hại cho sức khỏe, nhưng [p:các nhà nghiên cứu đã tìm ra giải pháp đơn giản]. Vào năm 2023, các nhà khoa học tại Trung tâm Y tế Đại học Columbia phát hiện ra việc đi bộ *năm phút mỗi nửa tiếng* giúp chống lại các rủi ro do ít vận động (*sedentary lifestyle*). Một thử thách lớn với hơn hai mươi nghìn thính giả cho thấy thói quen này làm giảm mệt mỏi và tăng năng suất.",
+      "heading_fr": "Faites de courtes pauses marche",
+      "body_fr": "Rester assis pendant de longues périodes nuit à la santé, mais [p:des chercheurs ont trouvé une solution simple]. En 2023, des scientifiques du Columbia University Medical Center ont découvert que marcher *cinq minutes toutes les demi-heures* combat efficacement les risques de la sédentarité. Un défi d'envergure impliquant plus de vingt mille auditeurs a montré que cette routine réduisait efficacement la fatigue tout en stimulant la productivité quotidienne globale.",
+      "heading_de": "Kurze Gehpausen einlegen",
+      "body_de": "Langes Sitzen schadet der Gesundheit, aber [p:Forscher fanden eine einfache Lösung]. Im Jahr 2023 entdeckten Wissenschaftler des Columbia University Medical Center, dass ein *fünfminütiger Spaziergang alle halbe Stunde* den Risiken des Sitzens wirksam entgegenwirkt. Eine umfangreiche Untersuchung mit über zwanzigtausend Teilnehmenden zeigte, dass diese Routine erfolgreich die Ermüdung senkte und gleichzeitig die tägliche Gesamtproduktivität steigerte.",
+      "heading_es": "Toma breves descansos para caminar",
+      "body_es": "Sentarse durante períodos prolongados perjudica la salud, pero [p:los investigadores encontraron una solución sencilla]. En 2023, científicos del Centro Médico de la Universidad de Columbia descubrieron que caminar durante *cinco minutos cada media hora* combate eficazmente los riesgos del sedentarismo. Un gran desafío que involucró a más de veinte mil participantes demostró que esta rutina redujo con éxito la fatiga a la vez que aumentó la productividad diaria general."
     },
     {
       "heading_en": "Rotate Your Spine",
       "heading_vi": "Xoay cột sống của bạn",
       "body_en": "Slouching at a desk creates tension in the middle of the spine. Physical therapists recommend specific spinal rotations to restore flexibility and ease stiffness. By shifting your legs and gently twisting your torso, you prepare your body to handle natural physical motions without experiencing sharp pain or ongoing muscular strain.",
-      "body_vi": "Việc còng lưng tại bàn làm việc tạo ra căng thẳng ở phần giữa cột sống. Các nhà vật lý trị liệu (*physical therapists*) khuyên nên xoay cột sống cụ thể để khôi phục độ linh hoạt và giảm cứng cơ. Bằng cách đổi chân và xoay người nhẹ nhàng, bạn giúp cơ thể chịu đựng các chuyển động tự nhiên mà không bị đau."
+      "body_vi": "Việc còng lưng tại bàn làm việc tạo ra căng thẳng ở phần giữa cột sống. Các nhà vật lý trị liệu (*physical therapists*) khuyên nên xoay cột sống cụ thể để khôi phục độ linh hoạt và giảm cứng cơ. Bằng cách đổi chân và xoay người nhẹ nhàng, bạn giúp cơ thể chịu đựng các chuyển động tự nhiên mà không bị đau.",
+      "heading_fr": "Faites pivoter votre colonne vertébrale",
+      "body_fr": "S'avachir à un bureau crée des tensions au milieu de la colonne vertébrale. Des physiothérapeutes recommandent des rotations vertébrales spécifiques pour restaurer la flexibilité et apaiser la raideur. En déplaçant vos jambes et en tordant doucement votre torse, vous préparez votre corps à gérer les mouvements physiques naturels sans ressentir de douleur aiguë ou de tension musculaire continue.",
+      "heading_de": "Die Wirbelsäule rotieren",
+      "body_de": "Das Hocken am Schreibtisch erzeugt Spannungen in der mittleren Wirbelsäule. Physiotherapeuten empfehlen spezifische Wirbelsäulenrotationen, um die Flexibilität wiederherzustellen und Steifheit zu lindern. Durch das Verschieben der Beine und das sanfte Drehen des Oberkörpers bereitest du deinen Körper darauf vor, natürliche körperliche Bewegungen ohne starke Schmerzen oder anhaltende Muskelüberlastung auszuführen.",
+      "heading_es": "Rota tu columna",
+      "body_es": "Encorvarse en un escritorio crea tensión en la parte media de la columna. Los fisioterapeutas recomiendan rotaciones espinales específicas para restaurar la flexibilidad y aliviar la rigidez. Al mover las piernas y girar suavemente el torso, preparas tu cuerpo para manejar movimientos físicos naturales sin experimentar dolores intensos ni tensión muscular continua."
     },
     {
       "heading_en": "Relieve Eyes and Vary Posture",
       "heading_vi": "Thư giãn mắt và thay đổi tư thế",
       "body_en": "Staring at digital screens forces eye muscles to work overtime, often leading to annoying headaches and blurry vision. Experts also note that [p:fidgeting signals a need for postural variety]. Instead of worrying about a single correct posture, frequently alternate between sitting, standing, and moving to keep your muscles adaptable and dynamic.",
-      "body_vi": "Nhìn chằm chằm vào màn hình kỹ thuật số khiến cơ mắt phải làm việc quá sức, thường dẫn đến đau đầu và mờ mắt. Các chuyên gia cũng lưu ý rằng [p:cử động bồn chồn là tín hiệu cần thay đổi tư thế]. Thay vì lo lắng về một tư thế chuẩn, hãy luân phiên ngồi, đứng và di chuyển để cơ thể linh hoạt."
+      "body_vi": "Nhìn chằm chằm vào màn hình kỹ thuật số khiến cơ mắt phải làm việc quá sức, thường dẫn đến đau đầu và mờ mắt. Các chuyên gia cũng lưu ý rằng [p:cử động bồn chồn là tín hiệu cần thay đổi tư thế]. Thay vì lo lắng về một tư thế chuẩn, hãy luân phiên ngồi, đứng và di chuyển để cơ thể linh hoạt.",
+      "heading_fr": "Soulagez vos yeux et variez votre posture",
+      "body_fr": "Fixer des écrans numériques force les muscles oculaires à faire des heures supplémentaires, menant souvent à des maux de tête agaçants et à une vision floue. Les experts notent également que [p:le fait de bouger indique un besoin de variété posturale]. Au lieu de vous soucier d'une seule bonne posture, alternez fréquemment entre la position assise, debout et le mouvement pour garder vos muscles adaptables et dynamiques.",
+      "heading_de": "Augen entlasten und Haltung variieren",
+      "body_de": "Das Starren auf digitale Bildschirme zwingt die Augenmuskeln zu Überstunden, was oft zu lästigen Kopfschmerzen und verschwommenem Sehen führt. Experten weisen zudem darauf hin, dass [p:Zappeln ein Bedürfnis nach Haltungswechseln signalisiert]. Anstatt sich Sorgen um eine einzige korrekte Haltung zu machen, wechsle häufig zwischen Sitzen, Stehen und Bewegen ab, um deine Muskeln anpassungsfähig und dynamisch zu halten.",
+      "heading_es": "Alivia los ojos y varía la postura",
+      "body_es": "Mirar fijamente pantallas digitales fuerza los músculos oculares a trabajar horas extra, lo que a menudo provoca molestos dolores de cabeza y visión borrosa. Los expertos también señalan que [p:moverse inquieto indica la necesidad de variedad postural]. En lugar de preocuparte por una única postura correcta, alterna frecuentemente entre estar sentado, de pie y en movimiento para mantener tus músculos adaptables y dinámicos."
     },
     {
       "heading_en": "Adjust Your Workspace",
       "heading_vi": "Điều chỉnh không gian làm việc",
       "body_en": "Poor workstation setups force awkward physical habits like craning the neck downward and shrugging shoulders. Professional ergonomists suggest raising your monitor to eye level and lowering your keyboard. Using external accessories prevents chronic upper body soreness and keeps your arms comfortable while working.",
-      "body_vi": "Thiết lập bàn làm việc kém tối ưu buộc cơ thể phải cúi đầu và rụt vai. Các chuyên gia côngο học (*ergonomists*) đề xuất nâng màn hình ngang tầm mắt và hạ bàn phím xuống. Việc sử dụng phụ kiện ngoài giúp ngăn ngừa đau mỏi phần thân trên và giữ cho tay thoải mái."
+      "body_vi": "Thiết lập bàn làm việc kém tối ưu buộc cơ thể phải cúi đầu và rụt vai. Các chuyên gia côngο học (*ergonomists*) đề xuất nâng màn hình ngang tầm mắt và hạ bàn phím xuống. Việc sử dụng phụ kiện ngoài giúp ngăn ngừa đau mỏi phần thân trên và giữ cho tay thoải mái.",
+      "heading_fr": "Ajustez votre espace de travail",
+      "body_fr": "De mauvaises installations de poste de travail forcent des habitudes physiques maladroites comme tendre le cou vers le bas et hausser les épaules. Des ergonomes professionnels suggèrent de surélever votre moniteur au niveau des yeux et d'abaisser votre clavier. L'utilisation d'accessoires externes évite les douleurs chroniques du haut du corps et maintient vos bras confortables pendant le travail.",
+      "heading_de": "Den Arbeitsplatz anpassen",
+      "body_de": "Ungünstige Arbeitsplatzgestaltungen erzwingen unangenehme körperliche Gewohnheiten wie das Vorstrecken des Nacks und das Hochziehen der Schultern. Professionelle Ergonomen schlagen vor, den Monitor auf Augenhöhe zu bringen und die Tastatur abzusenken. Die Verwendung externer Zubehörteile verhindert chronische Schmerzen im Oberkörper und hält deine Arme während der Arbeit komfortabel.",
+      "heading_es": "Ajusta tu espacio de trabajo",
+      "body_es": "Una mala colocación del espacio de trabajo obliga a adoptar hábitos físicos incómodos como estirar el cuello hacia abajo y encoger los hombros. Los ergonomistas profesionales sugieren elevar el monitor a la altura de los ojos y bajar el teclado. El uso de accesorios externos previene el dolor crónico en la parte superior del cuerpo y mantiene tus brazos cómodos mientras trabajas."
     }
   ],
   "references": [
@@ -75,7 +105,10 @@
   },
   "keyPoint": {
     "en": "Your body is like a finely tuned machine that rusts when left idle. Can you stand up right now and walk for five minutes? [p:Motion is lotion for stiff joints.]",
-    "vi": "Cơ thể bạn giống như cỗ máy tinh xảo sẽ rỉ sét khi để yên bất động. Bạn có thể đứng dậy ngay bây giờ và đi bộ trong năm phút không? [p:Vận động là chất bôi trơn cho các khớp cứng.]"
+    "vi": "Cơ thể bạn giống như cỗ máy tinh xảo sẽ rỉ sét khi để yên bất động. Bạn có thể đứng dậy ngay bây giờ và đi bộ trong năm phút không? [p:Vận động là chất bôi trơn cho các khớp cứng.]",
+    "fr": "Votre corps est comme une machine finement réglée qui rouille lorsqu'elle reste inactive. Pouvez-vous vous lever dès maintenant et marcher pendant cinq minutes ? [p:Le mouvement est la lotion des articulations raides.]",
+    "de": "Dein Körper ist wie eine fein abgestimmte Maschine, die bei Inaktivität rostet. Kannst du jetzt sofort aufstehen und fünf Minuten lang gehen? [p:Bewegung ist Balsam für steife Gelenke.]",
+    "es": "Tu cuerpo es como una máquina afinada que se oxida cuando se deja inactiva. ¿Puedes levantarte ahora mismo y caminar durante cinco minutos? [p:El movimiento es loción para las articulaciones rígidas.]"
   },
   "applySteps": {
     "en": [
@@ -87,6 +120,21 @@
       "Đi bộ năm phút cứ sau mỗi ba mươi phút.",
       "Nâng màn hình máy tính lên ngang tầm mắt.",
       "Xoay cột sống để giảm căng thẳng vùng lưng."
+    ],
+    "fr": [
+      "Marchez pendant cinq minutes toutes les trente minutes.",
+      "Surélevez votre moniteur d'ordinateur au niveau des yeux.",
+      "Faites pivoter votre colonne vertébrale pour soulager la tension dorsale."
+    ],
+    "de": [
+      "Gehe alle dreißig Minuten fünf Minuten lang spazieren.",
+      "Bringe deinen Computermonitor auf Augenhöhe.",
+      "Rotiere deine Wirbelsäule, um Rückenpannungen zu lösen."
+    ],
+    "es": [
+      "Camina durante cinco minutos cada treinta minutos.",
+      "Eleva el monitor de tu computadora a la altura de los ojos.",
+      "Rota tu columna para aliviar la tensión en la espalda."
     ]
   },
   "coverCandidates": [
@@ -123,9 +171,66 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
+  },
+  "glossary": {
+    "en": {
+      "sedentary": "Involving much sitting and little physical activity.",
+      "columbia university medical center": "A prominent medical research and educational institution.",
+      "spinal rotations": "Gentle twisting movements designed to restore flexibility to the back.",
+      "postural variety": "Changing physical positions frequently instead of staying in one pose.",
+      "ergonomists": "Experts in designing workspaces to fit human physical needs.",
+      "monitor": "A computer screen used to display visual information.",
+      "keyboard": "An input device with keys used to type on a computer.",
+      "chronic": "Persisting for a long time or constantly recurring."
+    },
+    "vi": {
+      "sedentary lifestyle": "Lối sống ít vận động, ngồi nhiều.",
+      "physical therapists": "Các nhà vật lý trị liệu chuyên phục hồi chức năng.",
+      "ergonomists": "Chuyên gia công học về thiết kế không gian làm việc.",
+      "cột sống": "Trục xương chính nâng đỡ cơ thể.",
+      "vật lý trị liệu": "Phương pháp chữa bệnh bằng vận động và tác động cơ học.",
+      "màn hình kỹ thuật số": "Thiết bị hiển thị điện tử như máy tính, điện thoại.",
+      "cơ mắt": "Cơ quan giúp mắt điều tiết và chuyển động.",
+      "không gian làm việc": "Khu vực bố trí bàn ghế và thiết bị làm việc.",
+      "bàn phím": "Thiết bị nhập liệu dùng tay để đánh máy."
+    },
+    "fr": {
+      "sédentarité": "Mode de vie caractérisé par une absence d'activité physique régulière.",
+      "physiothérapeutes": "Professionnels de santé qui préviennent et traitent les troubles du mouvement physique.",
+      "ergonomes": "Spécialistes de l'adaptation de l'environnement de travail aux capacités humaines.",
+      "moniteur": "Écran d'ordinateur affichant les données visuelles.",
+      "posturale": "Relatif à la posture et à la position du corps.",
+      "torse": "Partie supérieure du corps humain, du cou à l'abdomen.",
+      "tension": "État de contraction musculaire ou de pression physique.",
+      "productivité": "Mesure de l'efficacité et du rendement dans une activité."
+    },
+    "de": {
+      "physiotherapeuten": "Fachkräfte für die Behandlung von Bewegungsstörungen durch gezielte Übungen und manuelle Therapien.",
+      "wirbelsäulenrotationen": "Drehbewegungen der Wirbelsäule zur Verbesserung von Beweglichkeit und Entlastung.",
+      "ergonomen": "Fachleute für die Anpassung von Arbeitsbedingungen an die körperlichen Bedürfnisse.",
+      "monitor": "Bildschirm zur Darstellung von Computerinhalten am Arbeitsplatz.",
+      "produktivität": "Maß für die Leistungsfähigkeit und das Arbeitsergebnis in einer bestimmten Zeit.",
+      "ermüdung": "Zustand körperlicher oder geistiger Erschöpfung nach Anstrengung.",
+      "muskelüberlastung": "Überbeanspruchung der Muskulatur durch falsche Haltung oder zu langes Sitzen.",
+      "zubehörteile": "Ergänzende Geräte oder Hilfsmittel wie Tastaturen oder Mäuse."
+    },
+    "es": {
+      "sedentarismo": "Estilo de vida con poca actividad física que puede dañar la salud.",
+      "fisioterapeutas": "Especialistas en la salud que tratan lesiones y dolores mediante ejercicio físico.",
+      "torso": "Parte central del cuerpo humano que abarca el pecho y el abdomen.",
+      "visión borrosa": "Falta de nitidez o claridad al ver los objetos.",
+      "postura": "Posición en la que se mantiene el cuerpo humano.",
+      "ergonomistas": "Expertos en adaptar el entorno laboral a las capacidades del trabajador.",
+      "monitor": "Pantalla que muestra información de una computadora.",
+      "articulaciones": "Puntos donde se unen dos o más huesos del cuerpo."
+    }
   }
 }

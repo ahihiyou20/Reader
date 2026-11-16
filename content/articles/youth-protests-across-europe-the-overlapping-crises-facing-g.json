@@ -88,7 +88,10 @@
     ]
   },
   "summary": {
-    "vi": "Thế hệ Z đang phải đối mặt với một loạt áp lực chưa từng có, từ khủng hoảng khí hậu, chi phí sinh hoạt đắt đỏ đến sự bất ổn về kinh tế và sức khỏe tinh thần. Khác với quan niệm xem tuổi thiếu niên chỉ là giai đoạn khủng hoảng tâm lý cá nhân, những khó khăn này thực chất xuất phát từ các vấn đề xã hội mang tính hệ thống. Dù vậy, thay vì tỏ ra thờ ơ hay bi quan, giới trẻ ngày nay đang thể hiện rõ tính chủ động, khả năng tổ chức và mong muốn kiến tạo một tương lai tốt đẹp hơn thông qua các hoạt động biểu thị chính kiến và sự tham gia xã hội."
+    "vi": "Thế hệ Z đang phải đối mặt với một loạt áp lực chưa từng có, từ khủng hoảng khí hậu, chi phí sinh hoạt đắt đỏ đến sự bất ổn về kinh tế và sức khỏe tinh thần. Khác với quan niệm xem tuổi thiếu niên chỉ là giai đoạn khủng hoảng tâm lý cá nhân, những khó khăn này thực chất xuất phát từ các vấn đề xã hội mang tính hệ thống. Dù vậy, thay vì tỏ ra thờ ơ hay bi quan, giới trẻ ngày nay đang thể hiện rõ tính chủ động, khả năng tổ chức và mong muốn kiến tạo một tương lai tốt đẹp hơn thông qua các hoạt động biểu thị chính kiến và sự tham gia xã hội.",
+    "fr": "La génération Z subit des pressions inédites, combinant difficultés économiques, crise climatique et exigences scolaires accrues. Loin d'être passive, la jeunesse manifeste son désarroi mais aussi sa volonté d'agir pour façonner l'avenir. Face à cette détresse, les difficultés mentales ne relèvent pas seulement de causes individuelles, elles traduisent un malaise sociétal global.",
+    "de": "Die sogenannte Generation Z steht heute vor massiven gesellschaftlichen Herausforderungen. Neben schulischem Leistungsdruck und finanziellen Sorgen durch steigende Lebenshaltungskosten belasten vor allem die Klimakrise und eine ungewisse Zukunft viele Jugendliche stark. Dennoch zeigen Proteste und Umfragen, dass sich junge Menschen keineswegs aus der Gesellschaft zurückziehen, sondern aktiv mitgestalten wollen. Psychische Belastungen dürfen daher nicht nur als persönliches Problem verstanden werden, sondern sind oft eine direkte Reaktion auf schwierige gesellschaftliche Rahmenbedingungen.",
+    "es": "La generación Z enfrenta una serie de desafíos sin precedentes que combinan la crisis climática, la inestabilidad económica y una creciente presión académica y social. Lejos de ser una generación pasiva o desentendida, los jóvenes europeos alzan la voz a través de protestas y demuestran una gran capacidad de organización frente a un futuro incierto."
   },
   "keyPoint": {
     "en": "Gen Z navigates a stormy ocean where multiple crises—economic, environmental, and social—converge at once. Like sailors weathering a relentless gale, their [p:struggles stem from systemic pressures] rather than personal weakness. What is one supportive action you can take today to help alleviate stress for a young person in your community?",
@@ -110,10 +113,26 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
   },
-  "publishAt": "2026-10-24T01:57:51.275Z"
+  "publishAt": "2026-10-24T01:57:51.275Z",
+  "glossary": {
+    "en": {
+      "gen z": "The generation born between 1997 and 2012.",
+      "storm and stress": "A period of universal and inevitable emotional turmoil during adolescence.",
+      "world health organization": "A specialized agency of the United Nations responsible for international public health.",
+      "social media": "Digital platforms that enable users to create and share content or participate in social networking.",
+      "tertiary education": "Higher education at colleges or universities after secondary school.",
+      "eu": "The European Union, a political and economic union of European member states.",
+      "intergenerational injustice": "unfairness between different generations, particularly regarding decisions affecting the future.",
+      "mental health": "A person's condition with regard to their psychological and emotional well-being."
+    }
+  }
 }

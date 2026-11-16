@@ -96,7 +96,10 @@
     ]
   },
   "summary": {
-    "vi": "Một lỗ hổng nghiêm trọng trong ngôn ngữ lập trình PHP ảnh hưởng đến hơn 70% trang web toàn cầu vừa bị phát hiện, có nguy cơ cho phép tin tặc kiểm soát các hệ thống. Nhiều chính phủ và tổ chức quốc tế đã đưa ra cảnh báo khẩn cấp yêu cầu các nhà phát triển cập nhật hệ thống ngay lập tức. Sự cố này xuất phát từ việc các công nghệ nền tảng cốt lõi của internet thường được duy trì bởi tình nguyện viên, thiếu nguồn tài trợ và sự quan tâm đúng mức đến bảo trì từ các doanh nghiệp."
+    "vi": "Một lỗ hổng nghiêm trọng trong ngôn ngữ lập trình PHP ảnh hưởng đến hơn 70% trang web toàn cầu vừa bị phát hiện, có nguy cơ cho phép tin tặc kiểm soát các hệ thống. Nhiều chính phủ và tổ chức quốc tế đã đưa ra cảnh báo khẩn cấp yêu cầu các nhà phát triển cập nhật hệ thống ngay lập tức. Sự cố này xuất phát từ việc các công nghệ nền tảng cốt lõi của internet thường được duy trì bởi tình nguyện viên, thiếu nguồn tài trợ và sự quan tâm đúng mức đến bảo trì từ các doanh nghiệp.",
+    "fr": "Une importante vulnérabilité a été découverte dans le langage de programmation PHP, menaçant des millions de sites web à travers le monde. Des chercheurs ont identifié cette faille critique qui permettrait à des pirates informatiques de prendre le contrôle de serveurs. Face à ce risque majeur, les autorités et plusieurs organisations ont réagi en urgence. Les correctifs nécessaires sont complexes à déployer, car de nombreux services reposent sur ce code ancien et bénévole. Les administrateurs doivent impérativement mettre à jour leurs systèmes pour sécuriser l'écosystème numérique.",
+    "de": "Ein kritisches Sicherheitsrisiko in der weit verbreiteten Programmiersprache PHP gefährdet Millionen von Webseiten weltweit. Sicherheitsforscher entdeckten die Schwachstelle, welche nach einem vorzeitigen Leak öffentlich wurde. Nun reagieren Behörden und Unternehmen weltweit mit Notfall-Updates und Abschaltungen. Da viele digitale Grundlagen auf ehrenamtlicher Arbeit basieren, offenbart der Vorfall fundamentale Probleme in der Absicherung moderner Software-Lieferketten und digitaler Infrastrukturen.",
+    "es": "Un fallo crítico de seguridad en PHP, el lenguaje que sustenta la gran mayoría de los sitios web, ha obligado a gobiernos y empresas de todo el mundo a tomar medidas urgentes. Descubierto inicialmente por investigadores y filtrado de forma prematura, este problema expone millones de servidores a ataques informáticos. La situación pone en evidencia la fragilidad de la infraestructura digital global y la escasa financiación que reciben muchas herramientas fundamentales de código abierto."
   },
   "keyPoint": {
     "en": "Like a weak foundation beneath a skyscraper, hidden vulnerabilities in foundational code can threaten entire digital structures. [p:Are you certain your digital service providers have updated their systems?] Inspect your dependencies and apply security patches today.",
@@ -118,10 +121,26 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
   },
-  "publishAt": "2026-10-25T01:23:59.042Z"
+  "publishAt": "2026-10-25T01:23:59.042Z",
+  "glossary": {
+    "en": {
+      "php": "A popular programming language used to build and manage the backend of most websites.",
+      "open-source": "Software whose source code is freely available for anyone to inspect, modify, and distribute.",
+      "codebase": "The complete collection of source code used to build a software application or program.",
+      "drupal": "A widely used content management system for building websites.",
+      "wordpress": "A very popular platform used to create and manage blogs and websites.",
+      "patch": "A quick software fix designed to update and correct security vulnerabilities or bugs.",
+      "plugins": "Software add-ons that give websites extra features and functionality.",
+      "frameworks": "Foundational software platforms that developers use to build applications more easily."
+    }
+  }
 }
