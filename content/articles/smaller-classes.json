@@ -126,5 +126,27 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoQABwAPu1kqk4ppaQiMAgBMB2JYwCdMoAB82nisH/zjlpP0AD81oHGlL+W58PRcqvGVobqontligGF+NTM1pX6s1v2xWHaUfvwiVfgi51+KLSnLk3LnPTgjsZ3A3n4GW0eE1v/5gt5dKjToM+SwPIB7yyF0tE+YEC4GnPrdb5ClEQVf2efwAAA",
-  "dominant": "#79695f"
+  "dominant": "#79695f",
+  "glossary": {
+    "en": {
+      "econometrics": "The branch of economics that uses statistical data to test theories and find cause-and-effect relationships.",
+      "econometricians": "Researchers who use statistical techniques and mathematics to analyze economic data and identify causal relationships.",
+      "omitted variables bias": "A statistical distortion caused by leaving out an important factor that influences the results.",
+      "randomised trial": "An experiment where participants are assigned to different groups entirely by chance to ensure fair comparison.",
+      "natural experiments": "Real-world situations that naturally divide people into comparable groups, mimicking randomized laboratory trials.",
+      "maimonides' rule": "An Israeli education guideline capping class size at forty students before requiring a class to split.",
+      "cut-off": "A strict threshold or boundary number that determines whether a group or condition changes.",
+      "blueprint labs": "A research initiative at MIT that uses data and economic tools to evaluate education systems.",
+      "phd": "A Doctor of Philosophy, an advanced university research degree pursued after undergraduate studies.",
+      "cause and effect": "A relationship where one action or condition directly makes another specific outcome happen.",
+      "nobel prize": "An esteemed international award honoring groundbreaking contributions in fields including economic sciences."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

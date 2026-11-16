@@ -126,5 +126,42 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoQABwAPu1kqU2ppaQiMAgBMB2JaQABHvtqu3uCc9TSF70aAAD++IpZWRGLjCH7YR64M7BTPBdLezB09D0XNYK43+O27mdyoLETyp9C5yf+VjlipND7ktCeiWBPIfmsJuihVJ6uglHY5HcH0NNitqrdfavUMPdKt7oNL7UCAAA=",
-  "dominant": "#5c5c5c"
+  "dominant": "#5c5c5c",
+  "glossary": {
+    "en": {
+      "economic growth": "An increase in the total amount of goods and services produced by an economy over time.",
+      "gross domestic product": "A measurement of the total value of all goods and services produced by a country.",
+      "gdp": "The standard abbreviation for gross domestic product, measuring a country's total economic output over time.",
+      "anaesthesia": "Medical treatment using drugs to prevent patients from feeling pain during surgery or procedures.",
+      "innovation": "Finding better ways to produce things or developing entirely new products and technologies.",
+      "product innovation": "Creating an entirely new good or device that did not previously exist.",
+      "process innovation": "Making the same product using fewer resources, standard parts, or more efficient production methods.",
+      "quality innovation": "Improving an existing product with better features, greater safety, enhanced reliability, or superior performance.",
+      "institutions": "The established rules, laws, and organizations that structure human interactions and help societies operate.",
+      "climate change": "Long-term shifts in global temperatures and weather patterns caused by human activity.",
+      "carbon dioxide": "A greenhouse gas in the atmosphere that traps heat and drives global warming.",
+      "automation": "Using machines, computers, or software to perform tasks previously handled by human labor."
+    },
+    "vi": {
+      "gdp": "Tổng giá trị hàng hoá và dịch vụ mà một quốc gia sản xuất theo thời gian.",
+      "đổi mới": "Tìm cách tốt hơn để làm ra mọi thứ hoặc tạo ra những sản phẩm mới.",
+      "tổng sản lượng": "Toàn bộ lượng hàng hoá và dịch vụ được tạo ra trên quy mô kinh tế.",
+      "thuốc gây mê": "Thuốc giúp bệnh nhân mất cảm giác đau đớn trong các ca phẫu thuật y tế.",
+      "chất lượng sống": "Mức độ an toàn, tiện nghi, sức khoẻ và hạnh phúc trong đời sống con người.",
+      "phanh tự động": "Tính năng an toàn giúp phương tiện tự hãm tốc độ để ngăn ngừa tai nạn.",
+      "thể chế": "Các quy tắc, chuẩn mực và tổ chức giúp một xã hội vận hành trật tự.",
+      "mạng xã hội": "Nền tảng trực tuyến cho phép chia sẻ thông tin, nội dung và tương tác qua Internet.",
+      "già hoá": "Xu hướng dân số có tỷ lệ người cao tuổi tăng trong khi người trẻ giảm.",
+      "carbon dioxide": "Khí gây hiệu ứng nhà kính và biến đổi khí hậu cần được thu giữ lưu trữ.",
+      "tự động hoá": "Ứng dụng máy móc và công nghệ để thực hiện công việc thay cho con người."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

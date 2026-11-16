@@ -137,5 +137,24 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAwCdASoQABwAPu1krU2ppaSiMAgBMB2JYwCdAGlfit5SOdXpQAD++2a72ZsqPdJ+qBAFJxBSW6XMTc8mVk5k9SgAAA==",
-  "dominant": "#192532"
+  "dominant": "#192532",
+  "glossary": {
+    "en": {
+      "nrem sleep": "The sleep you enter first at bedtime, consisting of three increasingly deep stages.",
+      "slow-wave sleep": "The deepest stage of NREM sleep, which supports memory, the immune system, and feeling refreshed.",
+      "rem sleep": "A sleep stage with intense brain activity, dreaming, and rapid eye movements, important for emotional processing.",
+      "thermal environment": "The combined surrounding conditions of temperature, airflow, bedding, and clothing that affect warmth during sleep.",
+      "sleep onset latency": "The scientific term for the amount of time it takes to fall asleep.",
+      "sleep efficiency": "The proportion of total time in bed that a person actually spends asleep.",
+      "atonia": "The temporary paralysis of muscles during REM sleep that prevents people from acting out dreams.",
+      "hypothalamus": "The region of the brain that controls sleep and regulates body temperature."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }
