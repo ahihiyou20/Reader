@@ -12,6 +12,9 @@ permissions:
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
+env:
+  # Timing, motion and screenshot checks: run in the advisory step, never block.
+  POLISH: 'frame continuity|Motion Quality|visual screenshots|census|stagger|rotation tests|decode fade|hover: fine pointer|count roll|indicator:|popover:|modal sheet|toast:|comment: newly|checklist:|interruptible'
 jobs:
   test:
     # Pinned: ubuntu-latest is moving to Ubuntu 26, which Playwright 1.56 (--with-deps) does not support.
@@ -35,14 +38,14 @@ jobs:
       - run: pnpm exec playwright install --with-deps chromium
       # What blocks a merge: the app works (navigation, reading, sign-in, layout, loading).
       - name: End-to-end (Playwright)
-        run: pnpm test:e2e --project iphone --project qa --project continuity --grep-invert "frame continuity|Motion Quality|visual screenshots|census|stagger|rotation tests|decode fade"
+        run: pnpm test:e2e --project iphone --project qa --project continuity --grep-invert "$POLISH"
       # Frame timing, motion curves and pixel screenshots depend on the runner's CPU and fonts: reported, never blocking.
       # The p95 frame interval needs a GPU and is measured on real hardware (tests/qa/edge-perf.mjs).
       - name: Motion and visual checks (advisory)
         id: advisory
         if: (success() || failure()) && steps.build.outcome == 'success'
         continue-on-error: true
-        run: pnpm test:e2e --project qa --project continuity --grep "frame continuity|Motion Quality|visual screenshots|census|stagger|rotation tests|decode fade"
+        run: pnpm test:e2e --project qa --project continuity --grep "$POLISH"
       - uses: actions/upload-artifact@v6
         if: failure() || steps.advisory.outcome == 'failure'
         with: { name: playwright-report, path: playwright-report, retention-days: 7 }
