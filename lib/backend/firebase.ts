@@ -768,9 +768,9 @@ export function createFirebaseBackend(): Backend {
       const uid = u.uid;
       try {
         const b = new Batcher(db);
-        // Each counter write costs the Rules one document read and a batch may use 20 (21 pairs are
-        // refused): 9 pairs per batch.
-        const pairs = new Batcher(db, 18);
+        // A batch may make 20 Rules document reads; each pair (the like and its counter) reads up to
+        // four (the like, the counter before and after): 5 pairs per batch.
+        const pairs = new Batcher(db, 10);
         const names = ['likes', 'saves', 'shares', 'progress', 'readDays', 'commentLikes', 'reading'] as const;
         const snaps = await Promise.all(names.map((n) => getDocs(collection(db, 'users', uid, n))));
         snaps.forEach((snap, i) => {

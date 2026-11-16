@@ -129,16 +129,16 @@ describe('counters', () => {
     await env.withSecurityRulesDisabled((ctx) => setDoc(doc(ctx.firestore(), 'counters/a1'), { likes: 5 }));
     await assertFails(setDoc(doc(guest(), 'counters/a1'), { likes: increment(-1) }, { merge: true }));
   });
-  it('account deletion: 9 unlikes with their counters fit in one batch', async () => {
+  it('account deletion: 5 unlikes with their counters fit in one batch', async () => {
     await env.withSecurityRulesDisabled(async (ctx) => {
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 5; i++) {
         await setDoc(doc(ctx.firestore(), `users/guest/likes/s${i}`), { slug: `s${i}`, createdAt: new Date() });
         await setDoc(doc(ctx.firestore(), `counters/s${i}`), { likes: 1 });
       }
     });
     const db = guest();
     const b = writeBatch(db);
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 5; i++) {
       b.delete(doc(db, `users/guest/likes/s${i}`));
       b.set(doc(db, `counters/s${i}`), { likes: increment(-1) }, { merge: true });
     }
