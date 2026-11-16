@@ -610,11 +610,6 @@
       "feed": "global-voices",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
-    "https://globalvoices.org/2026/11/15/madagascar-aims-to-support-biodiversity-by-protecting-marine-areas": {
-      "at": "2026-11-15T23:40:17.694Z",
-      "feed": "global-voices",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
-    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -940,6 +935,11 @@
       "feed": "owid",
       "slug": "when-do-people-experience-mental-health-conditions-for-the-f"
     },
+    "https://phys.org/news/2026-11-foster-placement-american-indian-alaska.html": {
+      "at": "2026-11-16T12:33:13.241Z",
+      "feed": "phys-org",
+      "error": "triage: score 4: A study on foster care compliance with federal law is too legal and policy-focused for Reader."
+    },
     "https://phys.org/news/2026-11-saudi-green-year-lakeside-reveals.html": {
       "at": "2026-11-15T23:36:49.359Z",
       "feed": "phys-org",
@@ -1119,6 +1119,11 @@
       "at": "2026-10-25T01:13:02.013Z",
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-30-nov-2026": {
+      "at": "2026-11-16T12:33:13.241Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: This is an announcement for an academic lecture rather than a substantive article."
     },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-9-nov-2026": {
       "at": "2026-11-07T02:51:04.007Z",
@@ -2145,6 +2150,11 @@
       "feed": "npr-health",
       "error": "triage: score 2: Pure breaking disease statistics update without a deep explanatory mechanism."
     },
+    "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history": {
+      "at": "2026-11-16T12:33:13.241Z",
+      "feed": "npr-science",
+      "error": "triage: score 4: This is a breaking news report about a rocket launch event rather than an explanatory piece."
+    },
     "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-health",
@@ -2159,6 +2169,11 @@
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-economy",
       "error": "triage: score 2: An announcement about a specific student winning a scholarship award."
+    },
+    "https://www.quantamagazine.org/a-new-era-for-the-dawn-of-life-20261112": {
+      "at": "2026-11-16T12:33:41.742Z",
+      "feed": "quanta",
+      "error": "Too short: 939 words written (minimum 1000)"
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -2490,6 +2505,16 @@
       "feed": "sciencedaily",
       "slug": "vitamin-c-blocking-stomach-cancer-chemicals"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261115085549.htm": {
+      "at": "2026-11-16T12:33:50.808Z",
+      "feed": "sciencedaily",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+    },
+    "https://www.sciencenews.org/article/hell-chicken-dinosaur-terror-fruit-eat": {
+      "at": "2026-11-16T12:34:31.810Z",
+      "feed": "sciencenews",
+      "error": "Cites 0 source (minimum 2)"
+    },
     "https://www.sciencenews.org/article/nat-geo-saving-our-seas-documentary": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "sciencenews",
@@ -2685,6 +2710,11 @@
       "feed": "usgs",
       "slug": "picturing-the-unimaginable-two-artists-early-journey-into-ye"
     },
+    "https://www.usgs.gov/observatories/yvo/news/spectacular-springs-black-sand-basin": {
+      "at": "2026-11-16T12:33:13.241Z",
+      "feed": "usgs",
+      "error": "triage: score 4: This is a promotional travel blurb about a geothermal basin rather than an in-depth scientific study."
+    },
     "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come": {
       "at": "2026-11-10T04:40:16.944Z",
       "feed": "usgs",
@@ -2719,6 +2749,31 @@
       "at": "2026-10-31T02:30:44.026Z",
       "feed": "usgs",
       "slug": "webinar-series-fueling-discovery-with-usgs-wildland-fire-sci"
+    },
+    "idea:how-sleep-deprivation-impairs-cellular-metabolic-clearance": {
+      "at": "2026-11-16T12:36:37.711Z",
+      "feed": "ideas",
+      "error": "Too short: 868 words written (minimum 1000)"
+    },
+    "idea:the-behavioral-economics-of-nudges-in-public-policy": {
+      "at": "2026-11-16T12:35:32.844Z",
+      "feed": "ideas",
+      "error": "Too short: 838 words written (minimum 1000)"
+    },
+    "idea:the-rise-and-fall-of-the-hanseatic-league-trade-monopoly": {
+      "at": "2026-11-16T12:37:18.987Z",
+      "feed": "ideas",
+      "slug": "hanseatic-league-medieval-trading-empire"
+    },
+    "idea:why-objective-emotional-regulation-fortifies-resilience": {
+      "at": "2026-11-16T12:36:11.158Z",
+      "feed": "ideas",
+      "error": "Too short: 697 words written (minimum 1000)"
+    },
+    "idea:why-the-spacing-effect-beats-cramming-for-long-term-memory": {
+      "at": "2026-11-16T12:35:27.580Z",
+      "feed": "ideas",
+      "error": "Cites 1 source (minimum 2)"
     }
   }
 }
