@@ -610,11 +610,6 @@
       "feed": "global-voices",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
-    "https://globalvoices.org/2026/11/15/madagascar-aims-to-support-biodiversity-by-protecting-marine-areas": {
-      "at": "2026-11-15T23:40:17.694Z",
-      "feed": "global-voices",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
-    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -1174,6 +1169,11 @@
       "at": "2026-10-30T02:45:34.533Z",
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/gr-sig-seminar-20-nov-2026": {
+      "at": "2026-11-16T12:03:10.515Z",
+      "feed": "nasa-science",
+      "error": "triage: event notice"
     },
     "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/gr-sig-seminar-30-oct-2026": {
       "at": "2026-10-26T01:15:07.775Z",
@@ -2145,6 +2145,11 @@
       "feed": "npr-health",
       "error": "triage: score 2: Pure breaking disease statistics update without a deep explanatory mechanism."
     },
+    "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history": {
+      "at": "2026-11-16T12:03:10.515Z",
+      "feed": "npr-science",
+      "error": "triage: score 4: This is a breaking news event about a rocket launch success rather than an in-depth explanatory topic."
+    },
     "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-health",
@@ -2159,6 +2164,11 @@
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-economy",
       "error": "triage: score 2: An announcement about a specific student winning a scholarship award."
+    },
+    "https://www.quantamagazine.org/a-new-era-for-the-dawn-of-life-20261112": {
+      "at": "2026-11-16T12:07:36.993Z",
+      "feed": "quanta",
+      "slug": "origin-of-life-the-rna-spark"
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -2490,6 +2500,11 @@
       "feed": "sciencedaily",
       "slug": "vitamin-c-blocking-stomach-cancer-chemicals"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261115085549.htm": {
+      "at": "2026-11-16T12:07:51.714Z",
+      "feed": "sciencedaily",
+      "slug": "moon-bases-emergency-blanket-thermal-secret"
+    },
     "https://www.sciencenews.org/article/nat-geo-saving-our-seas-documentary": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "sciencenews",
@@ -2684,6 +2699,11 @@
       "at": "2026-11-04T03:10:41.270Z",
       "feed": "usgs",
       "slug": "picturing-the-unimaginable-two-artists-early-journey-into-ye"
+    },
+    "https://www.usgs.gov/observatories/yvo/news/spectacular-springs-black-sand-basin": {
+      "at": "2026-11-16T12:03:10.515Z",
+      "feed": "usgs",
+      "error": "triage: score 3: This is a brief promotional overview of a geothermal basin without deep scientific explanation."
     },
     "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come": {
       "at": "2026-11-10T04:40:16.944Z",
