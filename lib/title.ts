@@ -52,7 +52,9 @@ export function preloadTitleFaces(category: string) {
   if (requested.has(style)) return;
   requested.add(style);
   const vars = getComputedStyle(document.documentElement);
-  for (const [face, variable] of FACES[style]) {
+  // Vietnamese titles set the stressed phrase in Dancing Script (app/styles/pagemoor.css).
+  const faces = document.documentElement.lang === 'vi' ? [...FACES[style], FACES.elegant[1]] : FACES[style];
+  for (const [face, variable] of faces) {
     const family = vars.getPropertyValue(variable).trim();
     if (family) document.fonts.load(`${face} 32px ${family}`).catch(() => requested.delete(style));
   }
