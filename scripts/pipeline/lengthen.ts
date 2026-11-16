@@ -14,7 +14,7 @@ import { lintProse, plainFieldsOf, proseFields } from './prose-lint';
 import { gather, materialWords } from './research';
 import { shortArticles } from './short-articles';
 import { STANDARDS, articleWords, standardProblems } from './standard';
-import { translateInto } from './translate';
+import { translateFull } from './translate';
 import { LANGS } from '../../lib/content/types';
 
 /** Everything the reader saw in English, so the longer article keeps the short one's points. */
@@ -63,7 +63,7 @@ export async function lengthen(a: ArticleSource): Promise<string> {
 async function translateWithRetry(a: ArticleSource, lang: (typeof LANGS)[number]): Promise<boolean> {
   for (let i = 0; i < 3; i++) {
     try {
-      await translateInto(a, lang);
+      await translateFull(a, lang);
       return true;
     } catch (e) {
       if (e instanceof QuotaError || e instanceof GeminiSetupError) throw e;
