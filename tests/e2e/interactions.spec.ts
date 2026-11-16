@@ -526,6 +526,12 @@ test('hover: fine pointer reveals hover feedback on interactive elements', async
         const cx = box.x + box.width / 2;
         const cy = box.y + box.height / 2;
         if (cx < 0 || cx > vp.width || cy < 0 || cy > vp.height) continue;
+        // Under a floating control (bottom bar, scroll chevron) the pointer reaches that control instead.
+        const reachable = await el.evaluate((node, [x, y]) => {
+          const hit = document.elementFromPoint(x, y);
+          return Boolean(hit && (hit === node || node.contains(hit)));
+        }, [cx, cy]);
+        if (!reachable) continue;
 
         // Move away first
         await page.mouse.move(0, 0);
