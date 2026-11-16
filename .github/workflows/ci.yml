@@ -35,8 +35,6 @@ jobs:
         run: pnpm test:rules
       - name: Build
         run: pnpm build
-      # Frame timing needs a GPU; hosted runners have none, so it is measured on real hardware
-      # (tests/qa/edge-perf.mjs) instead.
       - name: Record visual baselines
         if: inputs.update_snapshots
         run: |
@@ -48,6 +46,8 @@ jobs:
           if git diff --cached --quiet; then echo "Baselines unchanged"; exit 0; fi
           git commit -m "test: visual baselines recorded on the CI runner"
           git push origin "HEAD:$GITHUB_REF_NAME"
+      # Frame timing needs a GPU; hosted runners have none, so it is measured on real hardware
+      # (tests/qa/edge-perf.mjs) instead.
       - name: End-to-end (Playwright)
         if: ${{ !inputs.update_snapshots }}
         run: |
