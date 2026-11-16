@@ -19,7 +19,8 @@ export function TopBar() {
   const langMenu = useUI((s) => s.langMenu);
   const user = useUser((s) => s.user);
   const name = useUser((s) => s.displayName ?? s.user?.displayName);
-  const signedIn = !!user && !user.isAnonymous;
+  const cachedSignedIn = useUser((s) => s.cachedSignedIn);
+  const signedIn = user ? !user.isAnonymous : cachedSignedIn;
 
   return (
     <header className="topbar" data-region="topbar" style={{ viewTransitionName: 'top-bar' }}>

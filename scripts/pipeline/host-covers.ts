@@ -154,7 +154,8 @@ export async function moveCoversOffRepo(limit: number): Promise<string[]> {
       console.warn(`${a.slug}: cover stays in the repo (${(e as Error).message.slice(0, 160)})`);
     }
   }
-  for (const f of await fs.readdir(OUT, { withFileTypes: true }))
+  // public/covers/ is gone from a fresh checkout once every cover lives on Cloudinary.
+  for (const f of await fs.readdir(OUT, { withFileTypes: true }).catch(() => []))
     if (f.isFile() && f.name.endsWith('.webp') && !kept.has(`/covers/${f.name}`)) await fs.rm(path.join(OUT, f.name));
   return moved;
 }

@@ -705,6 +705,7 @@ html[data-stage$='portrait'] .welcome-body {
   grid-template-columns: 1fr;
   align-content: end;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 html[data-stage='compact-portrait'] .welcome-picks {
   display: none;
@@ -753,7 +754,7 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
 
 /* Cover clip: fades in over the still image once it has frames to show. */
 .media-clip {
-  animation: clip-in 600ms var(--ease-out) 200ms both;
+  animation: clip-in 480ms var(--ease-out) 200ms both;
 }
 @keyframes clip-in {
   from {
@@ -765,6 +766,7 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
 .welcome {
   display: block;
   overflow-y: auto;
+  overflow-x: hidden;
   overscroll-behavior: contain;
   scroll-snap-type: y proximity;
   scrollbar-width: none;

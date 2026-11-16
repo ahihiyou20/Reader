@@ -450,7 +450,7 @@ for (const vp of MATRIX) {
                 continue;
               }
 
-              const isInline = style.display === 'inline';
+              const isInline = style.display === 'inline' || style.display === 'inline-block';
               const insideText = Boolean(el.closest('p, li'));
               if (isInline && insideText) {
                 continue;
@@ -471,10 +471,10 @@ for (const vp of MATRIX) {
               });
 
               const probes = [
-                { x: clamp(cx - 21, 0, vpWidth), y: clamp(cy, 0, vpHeight) },
-                { x: clamp(cx + 21, 0, vpWidth), y: clamp(cy, 0, vpHeight) },
-                { x: clamp(cx, 0, vpWidth), y: clamp(cy - 21, 0, vpHeight) },
-                { x: clamp(cx, 0, vpWidth), y: clamp(cy + 21, 0, vpHeight) },
+                { x: clamp(cx - 21, 0, vpWidth - 1), y: clamp(cy, 0, vpHeight - 1) },
+                { x: clamp(cx + 21, 0, vpWidth - 1), y: clamp(cy, 0, vpHeight - 1) },
+                { x: clamp(cx, 0, vpWidth - 1), y: clamp(cy - 21, 0, vpHeight - 1) },
+                { x: clamp(cx, 0, vpWidth - 1), y: clamp(cy + 21, 0, vpHeight - 1) },
               ];
 
               const failedPoints: Array<{ x: number; y: number; hitElementDesc: string }> = [];

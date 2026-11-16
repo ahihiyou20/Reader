@@ -123,12 +123,25 @@ export function loadSearch(): Promise<MiniSearch<SearchDoc>> {
 
 /** Warm the image cache for a cover so the next article paints instantly (FR-04). */
 const warmed = new Set<string>();
-export function preloadImage(url: string | undefined) {
+/** Covers already fetched and decoded: CoverMedia shows these at once, without the fade-in. */
+const decoded = new Set<string>();
+export const isDecoded = (url: string | undefined) => Boolean(url && decoded.has(url));
+
+/** Fetch and decode a cover with the same src/srcset/sizes the <img> will use, so the browser picks the same file. */
+export function preloadImage(url: string | undefined, srcSet?: string, sizes?: string) {
   if (!url || warmed.has(url) || typeof window === 'undefined') return;
   warmed.add(url);
   const img = new Image();
   img.decoding = 'async';
+  if (srcSet) {
+    img.sizes = sizes ?? '';
+    img.srcset = srcSet;
+  }
   img.src = url;
+  img
+    .decode()
+    .then(() => decoded.add(url))
+    .catch(() => warmed.delete(url));
 }
 
 export function decodeImage(src: string): Promise<void> {

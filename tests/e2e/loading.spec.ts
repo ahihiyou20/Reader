@@ -184,12 +184,18 @@ test.describe('TESTSPEC §10 / ACCEPTANCE 17–20: Loading', () => {
     });
     const page = await context.newPage();
 
+    // Covers are preloaded and show without a fade once ready; the fade is for a cover still on its
+    // way when it comes on screen, so hold every image until the reader has moved to the second one.
+    let release!: () => void;
+    const held = new Promise<void>((r) => (release = r));
     await page.route(/(covers|\.webp|\.png|\.jpe?g)/, async (route) => {
-      await new Promise((r) => setTimeout(r, 700));
+      await held;
       await route.continue();
     });
 
-    await openFeed(page);
+    // Not openFeed: its goto waits for the load event, which waits for the held images.
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    await page.waitForSelector('section.article[data-active="true"]');
     await nextFrames(page, 2);
 
     const samplingPromise = page.evaluate(() => {
@@ -222,6 +228,8 @@ test.describe('TESTSPEC §10 / ACCEPTANCE 17–20: Loading', () => {
     });
 
     await page.keyboard.press('ArrowDown');
+    await page.waitForTimeout(300);
+    release();
     const samples = await samplingPromise;
 
     const intermediates = new Set(

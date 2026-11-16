@@ -322,6 +322,7 @@ html[data-stage='compact-landscape'] .eleft {
   bottom: 0;
   width: calc(38% - env(safe-area-inset-left, 0px) - 20px);
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 12px 0 calc(var(--sab) + 24px);
   box-sizing: border-box;
 }
@@ -359,6 +360,7 @@ html[data-stage='compact-landscape'] .eright {
   top: 0;
   bottom: 58px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 12px 0 16px;
   box-sizing: border-box;
 }

@@ -18,7 +18,8 @@ export default defineConfig({
       caret: 'hide',
     },
   },
-  snapshotPathTemplate: 'tests/e2e/__screenshots__/{arg}{ext}',
+  // Fonts render differently on macOS and the Linux CI runner, so each keeps its own baselines.
+  snapshotPathTemplate: 'tests/e2e/__screenshots__/{arg}-{platform}{ext}',
   // Tests start as a returning reader: the first-visit welcome screen has already been seen.
   use: {
     storageState: {

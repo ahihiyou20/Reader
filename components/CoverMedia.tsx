@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import type { CoverClient } from '@/lib/content/types';
 import { COVER_SIZES, type OptCover } from '@/lib/covers';
+import { isDecoded } from '@/lib/data';
 import { useUI } from '@/stores/ui';
 import { useReducedMotion } from './hooks';
 
@@ -21,19 +22,19 @@ export function CoverMedia({
   blurred?: boolean;
   active?: boolean;
 }) {
-  const [decoded, setDecoded] = useState(Boolean(priority));
+  const landscape = useUI((s) => s.stage.endsWith('landscape'));
+  const source = coverSource(cover, opt, landscape);
+  // A cover the feed already preloaded shows at once instead of fading in.
+  const [decoded, setDecoded] = useState(() => Boolean(priority) || isDecoded(source.src));
   const video = useRef<HTMLVideoElement>(null);
   const img = useRef<HTMLImageElement>(null);
 
   const shouldDecode = Boolean(priority || active || playing || blurred);
-  const landscape = useUI((s) => s.stage.endsWith('landscape'));
   const still = useReducedMotion();
-  // The landscape file is sharp on wide screens; phones keep the smaller portrait one.
-  const wide = landscape ? cover.wide : undefined;
   const clip = cover.video && !blurred && !still && (active || playing) && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
 
   useEffect(() => {
-    if (!shouldDecode || decoded) return;
+    if (decoded) return;
     const el = img.current;
     if (!el) return;
 
@@ -52,7 +53,7 @@ export function CoverMedia({
     return () => {
       cancelled = true;
     };
-  }, [shouldDecode, decoded]);
+  }, [decoded]);
 
   useEffect(() => {
     const v = video.current;
@@ -87,7 +88,7 @@ export function CoverMedia({
       </>
     );
   }
-  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
+  const { src, srcSet, sizes } = source;
   if (!src) return placeholder;
   return (
     <>
@@ -97,15 +98,15 @@ export function CoverMedia({
         // Covers without a clip still move: a slow drift across the photo while the cover is on screen.
         className={`media${decoded ? '' : ' loading'}${playing && !clip ? ' drift' : ''}`}
         src={src}
-        srcSet={wide ? undefined : opt?.srcSet}
-        sizes={opt && !wide ? COVER_SIZES : undefined}
+        srcSet={srcSet}
+        sizes={sizes}
         alt=""
         decoding="async"
         draggable={false}
-        loading={priority ? 'eager' : 'lazy'}
+        // Only the pages next to the current one are mounted, and they must be ready before the swipe lands.
+        loading="eager"
         fetchPriority={priority ? 'high' : 'auto'}
         onLoad={() => {
-          if (!shouldDecode) return;
           const el = img.current;
           if (el && 'decode' in el) {
             el.decode().then(() => setDecoded(true)).catch(() => setDecoded(true));
@@ -117,6 +118,14 @@ export function CoverMedia({
       {clip && <video ref={video} key={clip} className="media media-clip" src={clip} muted loop playsInline autoPlay preload="auto" aria-hidden="true" />}
     </>
   );
+}
+
+/** The file an <img> cover loads, shared with the feed's preloading so both fetch the same URL. */
+export function coverSource(cover: CoverClient, opt: OptCover | undefined, landscape: boolean) {
+  // The landscape file is sharp on wide screens; phones keep the smaller portrait one.
+  const wide = landscape ? cover.wide : undefined;
+  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
+  return { src, srcSet: wide ? undefined : opt?.srcSet, sizes: opt && !wide ? COVER_SIZES : undefined };
 }
 
 /** The reader asked the browser to save data: keep to the still image. */

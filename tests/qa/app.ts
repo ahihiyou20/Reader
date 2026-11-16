@@ -129,6 +129,11 @@ export async function goToView(page: Page, v: FeedView): Promise<void> {
       await page.waitForTimeout(50);
     }
   }
+  // The view index settles a little after the keys; callers read it straight away.
+  const name = ['cover', 'details', 'engage'][targetIdx];
+  await page
+    .waitForFunction((n) => document.querySelector(`section.article[data-active="true"] [data-view="${n}"]`), name, { timeout: 3000 })
+    .catch(() => {});
   await nextFrames(page, 2);
 }
 
