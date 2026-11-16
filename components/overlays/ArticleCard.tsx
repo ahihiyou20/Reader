@@ -1,6 +1,7 @@
 'use client';
 import { Heart } from 'lucide-react';
 import type { FeedItem } from '@/lib/content/types';
+import { cloudinarySized, isCloudinaryImage } from '@/lib/cloudinary';
 import { formatCount } from '@/lib/format';
 import { pick } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
@@ -10,6 +11,7 @@ import { useCategoryName } from '../feed/CoverView';
 
 /** Ask an image CDN for a smaller file: a card does not need the full-screen cover. */
 export function sized(url: string, w: number, h: number): string {
+  if (isCloudinaryImage(url)) return cloudinarySized(url, w, h);
   if (!url.startsWith('https://images.unsplash.com/')) return url;
   const u = new URL(url);
   u.searchParams.set('w', String(w));

@@ -3,7 +3,8 @@
 # (Gemini), cut the Pixabay clip a writer queued (coverClip) or find one where the Pagemoor standard
 # asks for a motion cover and none is there yet, report every new article against the standard, and
 # deploy. Clips are stored on Cloudinary, and any clip still kept in public/covers/video/ is moved
-# there (run this workflow by hand with no slugs to do only that). Needs GEMINI_API_KEY, PIXABAY_API_KEY
+# there, with the cover images of up to COVER_MOVES (repository variable, default 10) articles still
+# kept in public/covers/ (run this workflow by hand with no slugs to do only that). Needs GEMINI_API_KEY, PIXABAY_API_KEY
 # and CLOUDINARY_URL. Pushes made here use GITHUB_TOKEN, so they do not
 # start this workflow again.
 name: Finish new articles
@@ -13,7 +14,7 @@ on:
     paths: ['content/articles/**']
   workflow_dispatch:
     inputs:
-      slugs: { description: 'Article slugs, space separated (empty: only move clips to Cloudinary)', required: false }
+      slugs: { description: 'Article slugs, space separated (empty: only move clips and cover images to Cloudinary)', required: false }
 permissions:
   contents: write
   actions: write
@@ -60,6 +61,7 @@ jobs:
           GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS != 'false' }}
+          COVER_MOVES: ${{ vars.COVER_MOVES }}
         run: pnpm tsx scripts/pipeline/finish.ts ${{ steps.new.outputs.slugs }}
       - name: Check
         if: steps.new.outputs.slugs != '' || github.event_name == 'workflow_dispatch'
@@ -70,7 +72,7 @@ jobs:
         run: |
           git config user.name "reader-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A content/articles public/covers/video
+          git add -A content/articles public/covers
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -q -m "pipeline: finish new articles, clips on Cloudinary"
           # Back to the branch it ran on: main normally, a pull request's branch when tried there by hand.

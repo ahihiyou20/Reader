@@ -1,6 +1,6 @@
-// Cloudinary (free plan) for media that would weigh the repository down: motion-cover clips. Uploads
+// Cloudinary (free plan) for media that would weigh the repository down: motion-cover clips and cover images. Uploads
 // are signed here (https://cloudinary.com/documentation/authentication_signatures), so no SDK is
-// needed, and clips are served from Cloudinary's CDN with the right video type for every browser.
+// needed, and media is served from Cloudinary's CDN, which also resizes it on request (lib/cloudinary.ts).
 // Configuration: CLOUDINARY_URL, as the dashboard shows it (cloudinary://<api_key>:<api_secret>@<cloud_name>),
 // or CLOUDINARY_CLOUD_NAME + CLOUDINARY_API_KEY + CLOUDINARY_API_SECRET. Without any, callers keep files in
 // public/ as before; a CLOUDINARY_URL that cannot be read stops the run instead of silently doing nothing.
@@ -38,18 +38,21 @@ export function signParams(params: Record<string, string | number>, secret: stri
   return crypto.createHash('sha1').update(query + secret).digest('hex');
 }
 
-/** Upload a video under `publicId` (a path without extension) and return its HTTPS URL. */
-export async function uploadVideo(body: Buffer, publicId: string): Promise<string> {
+/** Upload a file under `publicId` (a path without extension) and return its HTTPS URL. */
+async function upload(kind: 'video' | 'image', body: Buffer, publicId: string, type: string): Promise<string> {
   const c = config();
-  if (!c) throw new Error('CLOUDINARY_URL is not set');
+  if (!c) throw new Error('Cloudinary is not configured');
   const params = { overwrite: 'true', public_id: publicId, timestamp: Math.floor(Date.now() / 1000) };
   const form = new FormData();
   for (const [k, v] of Object.entries(params)) form.append(k, String(v));
   form.append('api_key', c.key);
   form.append('signature', signParams(params, c.secret));
-  form.append('file', new Blob([new Uint8Array(body)], { type: 'video/mp4' }), `${publicId.split('/').pop()}.mp4`);
-  const res = await fetch(`https://api.cloudinary.com/v1_1/${c.cloud}/video/upload`, { method: 'POST', body: form, signal: AbortSignal.timeout(180_000) });
+  form.append('file', new Blob([new Uint8Array(body)], { type }), publicId.split('/').pop());
+  const res = await fetch(`https://api.cloudinary.com/v1_1/${c.cloud}/${kind}/upload`, { method: 'POST', body: form, signal: AbortSignal.timeout(180_000) });
   const out = (await res.json().catch(() => ({}))) as { secure_url?: string; error?: { message?: string } };
   if (!res.ok || !out.secure_url) throw new Error(`Cloudinary upload ${publicId}: HTTP ${res.status} ${out.error?.message ?? ''}`.trim());
   return out.secure_url;
 }
+
+export const uploadVideo = (body: Buffer, publicId: string) => upload('video', body, publicId, 'video/mp4');
+export const uploadImage = (body: Buffer, publicId: string, type = 'image/webp') => upload('image', body, publicId, type);

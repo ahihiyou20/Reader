@@ -278,6 +278,7 @@ Pagemoor có hai quy trình viết bài riêng, cùng một chuẩn (`scripts/pi
 - **Bổ sung bài ngắn** (Claude, `docs/10-expand-articles.md`): mỗi ngày 25 bài dưới 1.000 chữ (`scripts/pipeline/short-articles.ts`), bổ sung từ chính nguồn gốc và nguồn tham khảo của bài, không viết lại; nhóm 3 không được sửa.
 - **Chuẩn Pagemoor** cho bài nhóm 4: ≥ 1.000 từ tiếng Anh (Gemini chấp nhận từ 950), 6–8 section có heading, 1–2 highlight và chip nguồn trong mọi section, ≥ 3 nguồn (Gemini ≥ 2), đủ 5 ngôn ngữ, glossary ≥ 8 từ mỗi ngôn ngữ, ảnh Unsplash có bản ngang, và bìa động (bắt buộc với Claude).
 - **Bìa động** (`scripts/pipeline/motion.ts`, CLI `scripts/dev/motion-cover.ts`): clip **video Pixabay** (miễn phí; Pixabay không cho hotlink nên clip được tải về), cắt thành clip 6 giây lặp liền mạch (nối nửa giây cuối vào đầu), dọc 720×1280 cho điện thoại và ngang 1280×720 cho màn rộng, khoảng 0,3–0,6 MB mỗi clip, ghi công "Video: Pixabay", mỗi clip chỉ dùng cho một bài. Không tự sinh. Clip được lưu trên **Cloudinary** (gói miễn phí: 25 credit/tháng, mỗi credit = 1 GB lưu trữ hoặc 1 GB băng thông; `scripts/pipeline/cloudinary.ts`, ký upload SHA-1, không cần SDK), phát từ CDN của Cloudinary với đúng định dạng video cho mọi trình duyệt, nên repo không phình theo số bài; chưa cấu hình thì lưu tạm trong `public/covers/video/`, và lần chạy `finish-articles.yml` sau đó sẽ chuyển chúng lên. Claude chỉ chọn clip (`coverClip`), không commit video; `finish-articles.yml` cắt và upload. Cần `PIXABAY_API_KEY`, ffmpeg, và secret `CLOUDINARY_URL` (dạng `cloudinary://<api_key>:<api_secret>@<cloud_name>`, lấy ở trang Dashboard của Cloudinary). App phát clip đè lên ảnh tĩnh, bỏ qua khi người đọc bật giảm chuyển động hoặc tiết kiệm dữ liệu.
+- **Ảnh bìa trên Cloudinary**: ảnh bìa nào còn nằm trong `public/covers/` được `finish-articles.yml` chuyển dần lên Cloudinary (`moveCoversOffRepo` trong `scripts/pipeline/host-covers.ts`, mỗi lần chạy tối đa `COVER_MOVES` bài, mặc định 10), rồi xoá mọi file trong `public/covers/` không còn bài nào dùng. `covers.yml` cũng lưu bản sao ảnh mới lên Cloudinary thay vì vào repo. App xin CDN của Cloudinary cắt đúng cỡ (`lib/cloudinary.ts`): thẻ bài, ảnh bìa màn đầu (`scripts/covers.mjs`) và ảnh chia sẻ 1200×630 JPEG (`lib/share-image.ts`).
 
 #### Gemini writer (`gemini-writer.yml`, cron 23:17 UTC = 06:17 giờ Việt Nam)
 
@@ -329,7 +330,7 @@ scripts/pipeline/
 ├─ research.ts    # nguồn cho bài tự viết: trang gợi ý, Wikipedia, Europe PMC, Firecrawl search
 ├─ ideas.ts       # chủ đề nền tảng do Gemini đề xuất khi feed không đủ 20 bài
 ├─ motion.ts      # bìa động: tìm, tải và cắt clip video Pixabay (ffmpeg), lưu lên Cloudinary
-├─ cloudinary.ts  # upload video lên Cloudinary (ký SHA-1)
+├─ cloudinary.ts  # upload video và ảnh lên Cloudinary (ký SHA-1)
 ├─ short-articles.ts # danh sách bài dưới 1.000 chữ cần bổ sung (docs/10)
 ├─ standard.ts    # chuẩn Pagemoor cho bài nhóm 4 (standard-cli.ts để kiểm tra)
 ├─ finish.ts      # hoàn thiện bài mới trên main: dịch nốt, bìa động, báo cáo chuẩn

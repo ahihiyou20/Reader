@@ -1,6 +1,8 @@
 // Link previews (Open Graph, Twitter, Discord, Messenger, Zalo): every shared page gets a 1200×630 JPEG.
-// Unsplash covers are cropped to that size by Unsplash's CDN; covers kept in the repo get a file made
+// Unsplash and Cloudinary covers are cropped to that size by their CDN; covers kept in the repo get a file made
 // at build time by scripts/og.mjs; anything else falls back to the Pagemoor card.
+
+import { cloudinarySized, isCloudinaryImage } from './cloudinary';
 
 export const SHARE_SIZE = { width: 1200, height: 630 };
 export const SITE_IMAGE = '/icons/og-pagemoor.jpg';
@@ -17,6 +19,8 @@ export function shareImage(a: { slug: string; cover: { type: 'image' | 'video'; 
     u.searchParams.set('fm', 'jpg');
     return u.toString();
   }
+  // JPEG, as for Unsplash: some messengers still cannot show WebP.
+  if (isCloudinaryImage(src)) return cloudinarySized(src!, SHARE_SIZE.width, SHARE_SIZE.height, 'jpg');
   if (src?.startsWith('/')) return `/og/${a.slug}.jpg`;
   return SITE_IMAGE;
 }
