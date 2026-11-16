@@ -5,6 +5,16 @@
       "feed": "aeon",
       "error": "triage: score 4: This is a journalistic commentary piece on celebrity fashion and garment worker conditions rather than deep history."
     },
+    "https://aeon.co/videos/how-a-texas-community-chose-to-transform-a-former-klan-headquarters": {
+      "at": "2026-11-16T14:55:58.886Z",
+      "feed": "aeon",
+      "error": "triage: score 2: This video piece covers local historical preservation and architecture rather than a broader historical mechanism."
+    },
+    "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause": {
+      "at": "2026-11-16T15:03:18.760Z",
+      "feed": "ars-science",
+      "error": "Gemini: every model is overloaded; try again later"
+    },
     "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "ars-science",
@@ -610,11 +620,6 @@
       "feed": "global-voices",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
     },
-    "https://globalvoices.org/2026/11/15/madagascar-aims-to-support-biodiversity-by-protecting-marine-areas": {
-      "at": "2026-11-15T23:40:17.694Z",
-      "feed": "global-voices",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
-    },
     "https://knowablemagazine.org/content/article/health-disease/2026/can-non-drug-approaches-ease-lives-dementia-patients": {
       "at": "2026-10-27T02:10:03.993Z",
       "feed": "knowable",
@@ -940,6 +945,11 @@
       "feed": "owid",
       "slug": "when-do-people-experience-mental-health-conditions-for-the-f"
     },
+    "https://phys.org/news/2026-11-powerful-el-nio-trigger-global.html": {
+      "at": "2026-11-16T15:04:57.675Z",
+      "feed": "phys-org",
+      "error": "Gemini gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+    },
     "https://phys.org/news/2026-11-saudi-green-year-lakeside-reveals.html": {
       "at": "2026-11-15T23:36:49.359Z",
       "feed": "phys-org",
@@ -1080,6 +1090,11 @@
       "feed": "psyche",
       "error": "Only 153 words readable (paywall or script-only page?)"
     },
+    "https://psyche.co/videos/the-trade-offs-of-life-in-a-remote-off-the-grid-island-community": {
+      "at": "2026-11-16T14:55:58.886Z",
+      "feed": "psyche",
+      "error": "triage: score 2: This is a personal documentary film about an individual relocation rather than a widely applicable research topic."
+    },
     "https://psyche.co/videos/to-break-a-bad-habit-try-telling-yourself-a-different-story": {
       "at": "2026-11-08T02:32:02.842Z",
       "feed": "psyche",
@@ -1119,6 +1134,11 @@
       "at": "2026-10-25T01:13:02.013Z",
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
+    },
+    "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-30-nov-2026": {
+      "at": "2026-11-16T14:55:58.886Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: This is an announcement for an academic lecture rather than an in-depth article."
     },
     "https://science.nasa.gov/astrophysics/programs/cosmic-origins/community/ai-ml-stig-lecture-series-9-nov-2026": {
       "at": "2026-11-07T02:51:04.007Z",
@@ -2145,6 +2165,11 @@
       "feed": "npr-health",
       "error": "triage: score 2: Pure breaking disease statistics update without a deep explanatory mechanism."
     },
+    "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history": {
+      "at": "2026-11-16T14:55:58.886Z",
+      "feed": "npr-science",
+      "error": "triage: score 6: SpaceX's catch mechanism is a major engineering feat, though primarily a news event with narrow technical reporting value."
+    },
     "https://www.npr.org/2026/11/15/nx-s1-6013327/sydney-sweeney-jeans-american-eagle-garment-industry": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-health",
@@ -2159,6 +2184,11 @@
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "npr-economy",
       "error": "triage: score 2: An announcement about a specific student winning a scholarship award."
+    },
+    "https://www.quantamagazine.org/a-new-era-for-the-dawn-of-life-20261112": {
+      "at": "2026-11-16T14:55:59.784Z",
+      "feed": "quanta",
+      "error": "Only 160 words readable (paywall or script-only page?)"
     },
     "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030": {
       "at": "2026-10-31T02:27:00.772Z",
@@ -2490,6 +2520,21 @@
       "feed": "sciencedaily",
       "slug": "vitamin-c-blocking-stomach-cancer-chemicals"
     },
+    "https://www.sciencedaily.com/releases/2026/11/261116014842.htm": {
+      "at": "2026-11-16T15:03:52.393Z",
+      "feed": "sd-mind-brain",
+      "slug": "wearable-ultrasound-patch-boosts-rem-sleep"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261116023351.htm": {
+      "at": "2026-11-16T15:03:18.243Z",
+      "feed": "sciencedaily",
+      "error": "Gemini: every model is overloaded; try again later"
+    },
+    "https://www.sciencenews.org/article/hormone-therapy-transgender-youth": {
+      "at": "2026-11-16T14:55:58.886Z",
+      "feed": "sciencenews",
+      "error": "triage: score 3: This study addresses ongoing political debates surrounding youth healthcare rather than exploring a timeless scientific mechanism."
+    },
     "https://www.sciencenews.org/article/nat-geo-saving-our-seas-documentary": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "sciencenews",
@@ -2684,6 +2729,11 @@
       "at": "2026-11-04T03:10:41.270Z",
       "feed": "usgs",
       "slug": "picturing-the-unimaginable-two-artists-early-journey-into-ye"
+    },
+    "https://www.usgs.gov/observatories/yvo/news/spectacular-springs-black-sand-basin": {
+      "at": "2026-11-16T15:03:17.739Z",
+      "feed": "usgs",
+      "error": "Gemini gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come": {
       "at": "2026-11-10T04:40:16.944Z",
