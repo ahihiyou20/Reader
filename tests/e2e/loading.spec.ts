@@ -249,8 +249,10 @@ test.describe('TESTSPEC §10 / ACCEPTANCE 17–20: Loading', () => {
       await openFeed(page);
       await page.keyboard.press('ArrowRight');
 
-      // Record bounding rects of [data-skeleton] [data-skel-block="k"] while loading
-      await page.waitForTimeout(200);
+      // Record bounding rects of [data-skeleton] [data-skel-block="k"] while loading, once the
+      // Cover → Details transition (a scale-in of about 450 ms) has settled; the article data is held
+      // back 1.5 s, so the skeleton is still the one on screen.
+      await page.waitForTimeout(700);
       const skelRects = await page.evaluate(() => {
         const result: Record<string, RectSimple> = {};
         const elements = document.querySelectorAll('[data-skeleton] [data-skel-block]');

@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { translate, type MessageKey, type Vars } from '@/lib/i18n';
+import { prefersReducedMotion, stagger } from '@/lib/motion';
 import { isLandscape, stageOf, STAGES, type Stage } from '@/lib/stage';
 import { withStageTransition } from '@/lib/transition';
 import { useUI } from '@/stores/ui';
@@ -132,4 +133,40 @@ export function useStageSync() {
       vv?.removeEventListener('resize', sync);
     };
   }, []);
+}
+
+/**
+ * How many items of a list to render while it arrives: the first `first` one after another,
+ * `stagger.list` ms apart, then the rest at once. Starts again each time `active` turns on or `key`
+ * changes; while inactive it keeps its count, so a closing panel does not empty itself.
+ */
+export function useStaggeredCount(total: number, active: boolean, key: unknown, first = 8): number {
+  const [n, setN] = useState(0);
+  useIsoLayoutEffect(() => {
+    if (!active) return;
+    if (!total || prefersReducedMotion()) {
+      setN(total);
+      return;
+    }
+    let shown = 1;
+    // From when the first item is put up, not from the first frame after it: opening a panel can delay
+    // that frame by a good part of the interval.
+    let last = performance.now();
+    let raf = 0;
+    setN(1);
+    // Timed on animation frames, as search results are: a busy main thread delays an interval and
+    // then fires two of them back to back.
+    const step = (now: number) => {
+      if (now - last >= stagger.list) {
+        last = now;
+        shown++;
+        if (shown >= Math.min(first, total)) return setN(total);
+        setN(shown);
+      }
+      raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [total, active, key, first]);
+  return n;
 }

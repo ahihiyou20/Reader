@@ -1,17 +1,17 @@
-// Gives an article a motion cover from Pixabay: the muted loop the app plays over its cover photo
-// (cover.video), as a portrait clip for phones and a landscape one for wide screens in
-// public/covers/video/.
-//   pnpm tsx scripts/dev/motion-cover.ts --search "<words>"                 list unused Pixabay clips (needs PIXABAY_API_KEY)
-//   pnpm tsx scripts/dev/motion-cover.ts <slug> <Pixabay video URL or id> [--start <s>] [--preview]
-// With PIXABAY_API_KEY the clip is downloaded and cut at once; --preview also writes
-// <slug>-motion.png (three frames of each clip) to the system temp folder and prints its path.
-// Without the key the chosen clip is recorded in the article (`coverClip`), and finish-articles.yml
-// cuts it once the article reaches main.
+// Chooses the Pixabay video for an article's motion cover: the muted loop the app plays over its cover
+// photo. The choice is recorded in the article (`coverClip`); finish-articles.yml downloads it, cuts a
+// portrait and a landscape loop and stores them on Cloudinary once the article is on main, so no
+// video file is ever committed.
+//   pnpm tsx scripts/dev/motion-cover.ts --search "<words>"                  list unused Pixabay clips (needs PIXABAY_API_KEY)
+//   pnpm tsx scripts/dev/motion-cover.ts <slug> <Pixabay video URL or id> [--preview] [--start <s>]
+// --preview (needs PIXABAY_API_KEY and ffmpeg) cuts the clip in a temporary folder and writes
+// <slug>-motion.png, three frames of each shape, to the system temp folder so it can be looked at.
+import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import type { ArticleSource } from '../../lib/content/types';
 import { dirs, readJson, writeJson } from '../pipeline/lib';
-import { VIDEO_DIR, clipById, hasFfmpeg, hasPixabay, motionCover, pixabayId, previewSheet, searchClips } from '../pipeline/motion';
+import { clipById, cutClip, hasFfmpeg, hasPixabay, pixabayId, previewSheet, searchClips } from '../pipeline/motion';
 
 async function main() {
   const args = process.argv.slice(2);
@@ -35,23 +35,22 @@ async function main() {
   const preview = flag('preview');
   const [slug, clip] = args;
   const id = clip ? pixabayId(clip) : NaN;
-  if (!slug || !Number.isFinite(id)) throw new Error('usage: motion-cover.ts <slug> <Pixabay video URL or id> [--start <s>] [--preview] | --search "<words>"');
+  if (!slug || !Number.isFinite(id)) throw new Error('usage: motion-cover.ts <slug> <Pixabay video URL or id> [--preview] [--start <s>] | --search "<words>"');
   const file = path.join(dirs.articles, `${slug}.json`);
   const a = await readJson<ArticleSource>(file);
-  if (!hasPixabay() || !(await hasFfmpeg())) {
-    a.coverClip = /^https?:/.test(clip) ? clip : `https://pixabay.com/videos/id-${id}/`;
-    await writeJson(file, a);
-    console.log(`${slug}: Pixabay video ${id} queued (${hasPixabay() ? 'ffmpeg is not installed' : 'no PIXABAY_API_KEY'}); finish-articles.yml will add it on main.`);
-    return;
-  }
-  a.cover.video = await motionCover(a, await clipById(id), start);
-  delete a.coverClip;
+  a.coverClip = /^https?:/.test(clip) ? clip : `https://pixabay.com/videos/id-${id}/`;
   await writeJson(file, a);
-  console.log(`${slug}: ${a.cover.video.url}, ${a.cover.video.wide} (Pixabay ${id})`);
-  if (preview) {
+  console.log(`${slug}: Pixabay video ${id} chosen; finish-articles.yml cuts it and stores it on Cloudinary once the article is on main.`);
+  if (!preview) return;
+  if (!hasPixabay() || !(await hasFfmpeg())) return console.log('No preview: it needs PIXABAY_API_KEY and ffmpeg.');
+  const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'preview-'));
+  try {
+    await cutClip(await clipById(id), tmp, start);
     const out = path.join(os.tmpdir(), `${slug}-motion.png`);
-    await previewSheet([path.join(VIDEO_DIR, `${slug}.mp4`), path.join(VIDEO_DIR, `${slug}-wide.mp4`)], out);
+    await previewSheet([path.join(tmp, 'portrait.mp4'), path.join(tmp, 'wide.mp4')], out);
     console.log(`preview: ${out}`);
+  } finally {
+    await fs.rm(tmp, { recursive: true, force: true });
   }
 }
 

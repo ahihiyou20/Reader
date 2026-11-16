@@ -1,4 +1,4 @@
-// Build step (after `pnpm content`): self-host the first feed covers (Unsplash ones get CDN sizes instead) so the first screen does not wait
+// Build step (after `pnpm content`): self-host the first feed covers (Unsplash and Cloudinary ones get CDN sizes instead) so the first screen does not wait
 // on a third-party redirect. Writes WebP variants to public/covers/opt and public/data/covers.json.
 // A failed download leaves that item on its remote URL; this step never fails the build.
 import fs from 'node:fs';
@@ -24,6 +24,13 @@ for (const item of feed.items.slice(0, COUNT)) {
       u.searchParams.set('h', String(Math.round((w * 16) / 9)));
       return u.toString();
     };
+    covers[item.slug] = { src: at(768), srcSet: WIDTHS.map((w) => `${at(w)} ${w}w`).join(', '), width: 768, height: 1365 };
+    continue;
+  }
+  // Cloudinary covers (moved there by the pipeline) are resized by Cloudinary's CDN the same way.
+  const cloudinary = remote.match(/^(https:\/\/res\.cloudinary\.com\/[^/]+\/image\/upload\/)(.*)$/);
+  if (cloudinary) {
+    const at = (w) => `${cloudinary[1]}c_fill,g_auto,w_${w},h_${Math.round((w * 16) / 9)},f_auto,q_auto/${cloudinary[2]}`;
     covers[item.slug] = { src: at(768), srcSet: WIDTHS.map((w) => `${at(w)} ${w}w`).join(', '), width: 768, height: 1365 };
     continue;
   }

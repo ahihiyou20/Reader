@@ -3,13 +3,17 @@
 // clip a writer queued in `coverClip`, find one where the Claude writer's standard asks for a motion
 // cover (and the Gemini writer's when MOTION_COVERS=true), then report each article against the
 // Pagemoor standard.
-//   pnpm tsx scripts/pipeline/finish.ts [--report report.md] <slug>...
+// With CLOUDINARY_URL set it first moves any clip still kept in public/covers/video/ to Cloudinary, and
+// the cover images of COVER_MOVES articles (default 10) still kept in public/covers/.
+//   pnpm tsx scripts/pipeline/finish.ts [--report report.md] [<slug>...]
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import type { ArticleSource } from '../../lib/content/types';
 import { GeminiSetupError, QuotaError, hasGemini } from './gemini';
 import { dirs, jobSummary, readJson, writeJson } from './lib';
-import { autoMotion, hasFfmpeg, hasPixabay } from './motion';
+import { hasCloudinary } from './cloudinary';
+import { moveCoversOffRepo } from './host-covers';
+import { autoMotion, hasFfmpeg, hasPixabay, moveClipsOffRepo } from './motion';
 import { STANDARDS, articleWords, standardProblems } from './standard';
 import { translateAll } from './translate';
 
@@ -20,6 +24,11 @@ async function main() {
   const at = args.indexOf('--report');
   const reportFile = at >= 0 ? args.splice(at, 2)[1] : undefined;
   const slugs = args.map((s) => path.basename(s, '.json'));
+  console.log(hasCloudinary() ? 'Cloudinary: on' : 'Cloudinary: not configured, clips stay in public/covers/video');
+  const moved = await moveClipsOffRepo();
+  if (moved.length) console.log(`Moved the motion covers of ${moved.length} articles to Cloudinary: ${moved.join(', ')}`);
+  const images = await moveCoversOffRepo(Number(process.env.COVER_MOVES || 10));
+  if (images.length) console.log(`Moved the cover images of ${images.length} articles to Cloudinary: ${images.join(', ')}`);
   const ffmpeg = await hasFfmpeg();
   let translating = hasGemini();
   const rows: string[] = [];
@@ -56,6 +65,8 @@ async function main() {
     console.log(`${slug}: ${done.join('; ') || 'nothing to add'}${problems.length ? ` — still: ${problems.join('; ')}` : ''}`);
     rows.push(`| ${slug} | ${byClaude(a) ? 'Claude' : 'Gemini'} | ${articleWords(a)} | ${done.join('; ') || '—'} | ${problems.join('; ').replace(/\|/g, '/') || '✓'} |`);
   }
+  if (images.length) await jobSummary(`Chuyển ảnh bìa của ${images.length} bài lên Cloudinary: ${images.join(', ')}`);
+  if (moved.length) await jobSummary(`Chuyển bìa động của ${moved.length} bài lên Cloudinary: ${moved.join(', ')}`);
   if (!rows.length) return;
   const report = [`### Hoàn thiện ${rows.length} bài mới`, '', '| Bài | Người viết | Từ | Đã thêm | Còn thiếu |', '|-----|-----------|----|---------|-----------|', ...rows].join('\n');
   await jobSummary(report);

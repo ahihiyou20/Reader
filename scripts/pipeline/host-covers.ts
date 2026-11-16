@@ -3,12 +3,13 @@
 //   pnpm tsx --env-file-if-exists=.env.local scripts/pipeline/host-covers.ts [--limit N] [slug…]
 // With UNSPLASH_ACCESS_KEY, Unsplash photos are served from Unsplash's own image CDN, cropped to each
 // shape there (the API guidelines ask apps to hotlink and to report each use). Without a key, remote
-// covers are copied into public/covers. picsum.photos, which served the stock covers, has gone dark
+// covers are copied to Cloudinary (CLOUDINARY_URL), or into public/covers without it. picsum.photos, which served the stock covers, has gone dark
 // before; nothing points at it once this has run.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import type { ArticleSource } from '../../lib/content/types';
+import { hasCloudinary, onCloudinary, uploadImage } from './cloudinary';
 import { CONTENT, ROOT, USER_AGENT, dirs, exists, listJson, readJson, writeJson } from './lib';
 
 const OUT = path.join(ROOT, 'public', 'covers');
@@ -92,24 +93,70 @@ const baseName = (a: ArticleSource) => {
 };
 
 async function selfHost(a: ArticleSource): Promise<boolean> {
-  const remote = /^https?:/.test(a.cover.url);
+  const remote = /^https?:/.test(a.cover.url) && !onCloudinary(a.cover.url);
   const name = baseName(a);
   const portrait = path.join(OUT, `${name}.webp`);
   const wide = path.join(OUT, `${name}-wide.webp`);
-  if (!(await exists(wide)) || (remote && !(await exists(portrait)))) {
+  const cloud = hasCloudinary();
+  if (cloud || !(await exists(wide)) || (remote && !(await exists(portrait)))) {
     const stock = picsumId(a.cover.url);
     const src = stock ? `https://picsum.photos/id/${stock}/3200/2400` : remote ? a.cover.url : undefined;
     if (!src) return false;
     const image = await download(src);
     // A source smaller than the target is kept at its own size rather than blown up.
-    const fit = (box: { width: number; height: number }) => sharp(image).rotate().resize({ ...box, fit: 'cover', position: 'attention', withoutEnlargement: true });
+    const fit = (box: typeof PORTRAIT) =>
+      sharp(image).rotate().resize({ ...box, fit: 'cover', position: 'attention', withoutEnlargement: true }).webp({ quality: box.quality });
+    if (cloud) {
+      if (remote) a.cover.url = await uploadImage(await fit(PORTRAIT).toBuffer(), `pagemoor/covers/${name}`);
+      a.cover.wide = await uploadImage(await fit(WIDE).toBuffer(), `pagemoor/covers/${name}-wide`);
+      return true;
+    }
     await fs.mkdir(OUT, { recursive: true });
-    if (remote) await fit(PORTRAIT).webp({ quality: PORTRAIT.quality }).toFile(portrait);
-    await fit(WIDE).webp({ quality: WIDE.quality }).toFile(wide);
+    if (remote) await fit(PORTRAIT).toFile(portrait);
+    await fit(WIDE).toFile(wide);
   }
   if (remote) a.cover.url = `/covers/${name}.webp`;
   a.cover.wide = `/covers/${name}-wide.webp`;
   return true;
+}
+
+const LOCAL_COVER = /^\/covers\/[^/]+\.webp$/;
+
+/**
+ * Move up to `limit` articles' cover images from public/covers/ to Cloudinary and point the articles at
+ * them, then delete every file in public/covers/ no article points at any more. Returns the slugs moved.
+ * A few articles per run keeps each run short and its commit easy to check.
+ */
+export async function moveCoversOffRepo(limit: number): Promise<string[]> {
+  if (!hasCloudinary()) return [];
+  const files = await listJson(dirs.articles);
+  const moved: string[] = [];
+  const kept = new Set<string>();
+  for (const f of files) {
+    const file = path.join(dirs.articles, f);
+    const a = await readJson<ArticleSource>(file);
+    const keys = (['url', 'wide', 'poster'] as const).filter((k) => LOCAL_COVER.test(a.cover[k] ?? ''));
+    if (!keys.length) continue;
+    if (moved.length >= limit) {
+      for (const k of keys) kept.add(a.cover[k]!);
+      continue;
+    }
+    const locals = keys.map((k) => a.cover[k]!);
+    try {
+      for (const k of keys) {
+        const local = a.cover[k]!;
+        a.cover[k] = await uploadImage(await fs.readFile(path.join(ROOT, 'public', local)), `pagemoor/covers/${path.basename(local, '.webp')}`);
+      }
+      await writeJson(file, a);
+      moved.push(a.slug);
+    } catch (e) {
+      for (const l of locals) kept.add(l);
+      console.warn(`${a.slug}: cover stays in the repo (${(e as Error).message.slice(0, 160)})`);
+    }
+  }
+  for (const f of await fs.readdir(OUT, { withFileTypes: true }))
+    if (f.isFile() && f.name.endsWith('.webp') && !kept.has(`/covers/${f.name}`)) await fs.rm(path.join(OUT, f.name));
+  return moved;
 }
 
 /** Returns true when the article file changed. */

@@ -43,20 +43,26 @@ function report(rows: Row[]) {
   const warns = rows.filter((r) => !errs.includes(r) && r.issues.some((i) => i.level === 'warning'));
   const repo = process.env.GITHUB_REPOSITORY;
   const cms = `${SITE_URL}/cms/#/collections/articles/entries/`;
-  const lines = [
+  const head = [
     `**${rows.length} articles** · ${errs.length} with errors · ${warns.length} with warnings · ${rows.filter((r) => r.status === 'published').length} published`,
     '',
     'Errors keep an article out of the app (published articles with errors are skipped at build time). Warnings are advice.',
     '',
   ];
-  for (const r of [...errs, ...warns]) {
-    lines.push(`### ${r.issues.some((i) => i.level === 'error') ? '✗' : '⚠'} \`${r.slug}\` (${r.status})`);
-    lines.push(`[Edit in CMS](${cms}${r.slug}) · [Preview](${SITE_URL}/preview?slug=${r.slug})${repo ? ` · [File](https://github.com/${repo}/blob/main/content/articles/${r.file})` : ''}`);
-    for (const i of r.issues.filter((x) => x.level !== 'info')) lines.push(`- **${i.level}** \`${i.field}\`: ${i.message}`);
-    lines.push('');
-  }
-  return { md: lines.join('\n'), errors: errs.length };
+  const section = (r: Row, levels: string[]) => [
+    `### ${r.issues.some((i) => i.level === 'error') ? '✗' : '⚠'} \`${r.slug}\` (${r.status})`,
+    `[Edit in CMS](${cms}${r.slug}) · [Preview](${SITE_URL}/preview?slug=${r.slug})${repo ? ` · [File](https://github.com/${repo}/blob/main/content/articles/${r.file})` : ''}`,
+    ...r.issues.filter((x) => levels.includes(x.level)).map((i) => `- **${i.level}** \`${i.field}\`: ${i.message}`),
+    '',
+  ];
+  const md = [...head, ...[...errs, ...warns].flatMap((r) => section(r, ['error', 'warning']))].join('\n');
+  // The issue lists errors only: with warnings it outgrew GitHub's 65,536-character limit on issue bodies.
+  let issue = [...head, ...errs.flatMap((r) => section(r, ['error'])), `_${warns.length} articles have warnings only: see the workflow's job summary._`].join('\n');
+  if (issue.length > ISSUE_MAX) issue = `${issue.slice(0, ISSUE_MAX)}\n\n_Cut short: the full list is in the workflow's job summary._`;
+  return { md, issue, errors: errs.length };
 }
+
+const ISSUE_MAX = 60_000;
 
 async function gh<T>(method: string, url: string, body?: unknown): Promise<T> {
   const res = await fetch(`https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}${url}`, {
@@ -87,10 +93,10 @@ async function syncIssue(md: string, errors: number) {
 
 async function main() {
   const rows = await checkAll();
-  const { md, errors } = report(rows);
+  const { md, issue, errors } = report(rows);
   console.log(md);
   await jobSummary(`## Content checks\n\n${md}`);
-  if (process.argv.includes('--issue') && process.env.GITHUB_TOKEN && process.env.GITHUB_REPOSITORY) await syncIssue(md, errors);
+  if (process.argv.includes('--issue') && process.env.GITHUB_TOKEN && process.env.GITHUB_REPOSITORY) await syncIssue(issue, errors);
   if (errors && process.argv.includes('--strict')) process.exit(1);
 }
 

@@ -1,5 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
-import { goToView, newQaContext, nextFrames, openFeed } from '../qa/app';
+import { FULL_ARTICLE, goToView, newQaContext, nextFrames, openFeed } from '../qa/app';
 import {
   getTweenedProperties,
   startSampling,
@@ -79,7 +79,7 @@ test.describe('TESTSPEC §10 / ACCEPTANCE 21–24: Reading', () => {
     });
     const page = await context.newPage();
 
-    await openFeed(page);
+    await openFeed(page, FULL_ARTICLE);
     await goToView(page, 'details');
     await page.waitForSelector('.dscroll');
 
@@ -216,7 +216,7 @@ test.describe('TESTSPEC §10 / ACCEPTANCE 21–24: Reading', () => {
     );
     const page = await context.newPage();
 
-    await openFeed(page);
+    await openFeed(page, FULL_ARTICLE);
     await startSampling(page);
 
     // 1. feed swipe

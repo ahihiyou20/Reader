@@ -42,7 +42,7 @@ const MEDIA = 'reader-media';
 const PRECACHE = ${JSON.stringify(shell.map((f) => (f === '/index.html' ? '/' : f.replace(/\.html$/, ''))))};
 const MAX_ARTICLES = 20;
 const MAX_MEDIA = 60;
-const MEDIA_HOSTS = ['images.unsplash.com', 'images.pexels.com', 'videos.pexels.com', 'upload.wikimedia.org', 'images-assets.nasa.gov', 'picsum.photos', 'fastly.picsum.photos'];
+const MEDIA_HOSTS = ['images.unsplash.com', 'res.cloudinary.com', 'images.pexels.com', 'videos.pexels.com', 'upload.wikimedia.org', 'images-assets.nasa.gov', 'picsum.photos', 'fastly.picsum.photos'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(SHELL).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));

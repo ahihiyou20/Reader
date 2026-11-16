@@ -128,11 +128,11 @@ photographer; the download is reported to Unsplash when the article is deployed.
 ## 6. Motion cover (Pixabay)
 
 Every article gets a short muted loop that the app plays over its cover photo (`cover.video`), cut
-from a **Pixabay video** (free to use; Pixabay does not allow hotlinking, so the clip is downloaded):
-a portrait clip for phones and a landscape one for wide screens in `public/covers/video/`. Look at
-`black-hole-anatomy`, `the-1952-london-smog-counting-the-dead` and `body-clock-nobel-2017-period-gene`
-for the feel: one slow movement that fits the subject, never busy. Do not generate or animate
-anything yourself.
+from a **Pixabay video** (free to use). Look at `black-hole-anatomy`,
+`the-1952-london-smog-counting-the-dead` and `body-clock-nobel-2017-period-gene` for the feel: one
+slow movement that fits the subject, never busy. Do not generate or animate anything yourself, and
+never commit a video file: you choose the clip, and `finish-articles.yml` downloads it, cuts a
+portrait and a landscape loop and stores them on Cloudinary once the article is on `main`.
 
 1. Choose 1–3 words for something that moves on camera and fits the article (e.g. "ocean waves",
    "clock gears", "smoke chimney", "neurons animation").
@@ -142,13 +142,10 @@ anything yourself.
      open a clip page (`https://pixabay.com/videos/<name>-<id>/`).
    Prefer calm clips longer than 7 seconds with one clear subject and room for the title; skip clips
    with text, logos or faces as the subject.
-3. Run `pnpm tsx scripts/dev/motion-cover.ts <slug> <clip page URL> --preview` (`--start <s>` to skip
-   into the clip). With the key it downloads the clip, cuts both shapes, loops them with a half-second
-   cross-fade, credits "Video: Pixabay" and prints a preview image of three frames per clip: open it
-   and look. Without the key it records the clip in the article (`coverClip`) and
-   `finish-articles.yml` cuts it once the article is on `main`.
-
-Each clip is about 0.3–0.6 MB.
+3. Run `pnpm tsx scripts/dev/motion-cover.ts <slug> <clip page URL>`. It records the clip in the
+   article (`coverClip`). With `PIXABAY_API_KEY` and ffmpeg, add `--preview` (and `--start <s>` to
+   skip into the clip): it cuts the clip in a temporary folder and prints a preview image of three
+   frames per shape; open it and look.
 
 ## 7. Check and publish
 
@@ -160,11 +157,12 @@ Each clip is about 0.3–0.6 MB.
 2. `pnpm validate` must report no errors for the new files; the length warning for group 4 is
    1,000–1,800 words.
 3. `pnpm content` must succeed.
-4. Commit only the new `content/articles/*.json` and `public/covers/video/*.mp4` files, as
+4. Commit only the new `content/articles/*.json` files (never a video), as
    `reader-writer <noreply@anthropic.com>`, message `content: daily written articles YYYY-MM-DD`.
 5. `git pull --rebase origin main`, then `git push origin HEAD:main`. `finish-articles.yml` then
-   fills any language still missing (Gemini), cuts queued Pixabay clips, and the site is deployed.
+   fills any language still missing (Gemini), cuts the queued Pixabay clips onto Cloudinary, and the site is
+   deployed.
 
-If an article keeps failing, drop it (its JSON and its clips) rather than publishing it broken.
+If an article keeps failing, drop it rather than publishing it broken.
 Finish with a short report: how many articles were published, their titles, categories, word counts
 and Pixabay clips, which tool read the sources, and anything dropped and why.

@@ -1,0 +1,58 @@
+// Cloudinary (free plan) for media that would weigh the repository down: motion-cover clips and cover images. Uploads
+// are signed here (https://cloudinary.com/documentation/authentication_signatures), so no SDK is
+// needed, and media is served from Cloudinary's CDN, which also resizes it on request (lib/cloudinary.ts).
+// Configuration: CLOUDINARY_URL, as the dashboard shows it (cloudinary://<api_key>:<api_secret>@<cloud_name>),
+// or CLOUDINARY_CLOUD_NAME + CLOUDINARY_API_KEY + CLOUDINARY_API_SECRET. Without any, callers keep files in
+// public/ as before; a CLOUDINARY_URL that cannot be read stops the run instead of silently doing nothing.
+import crypto from 'node:crypto';
+
+/**
+ * The account, from CLOUDINARY_URL as the dashboard shows it (also when pasted with its
+ * `CLOUDINARY_URL=` prefix, quotes or spaces), or from CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY and
+ * CLOUDINARY_API_SECRET.
+ */
+function config() {
+  const raw = (process.env.CLOUDINARY_URL || '').trim().replace(/^CLOUDINARY_URL\s*=\s*/i, '').replace(/^["']|["']$/g, '').trim();
+  const m = raw.match(/^cloudinary:\/\/([^:\s]+):([^@\s]+)@([^/?\s]+)/);
+  if (m) return { key: m[1], secret: m[2], cloud: m[3] };
+  const { CLOUDINARY_CLOUD_NAME: cloud, CLOUDINARY_API_KEY: key, CLOUDINARY_API_SECRET: secret } = process.env;
+  if (cloud && key && secret) return { key: key.trim(), secret: secret.trim(), cloud: cloud.trim() };
+  if (raw) throw new Error('CLOUDINARY_URL is set but is not cloudinary://<api_key>:<api_secret>@<cloud_name>: copy it again from the Cloudinary dashboard');
+  return undefined;
+}
+
+export const hasCloudinary = () => Boolean(config());
+
+/** True for a URL served from the configured Cloudinary account. */
+export const onCloudinary = (url: string | undefined) => {
+  const c = config();
+  return Boolean(c && url?.startsWith(`https://res.cloudinary.com/${c.cloud}/`));
+};
+
+/** Signature of upload parameters: sorted `key=value` pairs joined by `&`, the API secret appended, SHA-1. */
+export function signParams(params: Record<string, string | number>, secret: string): string {
+  const query = Object.keys(params)
+    .sort()
+    .map((k) => `${k}=${params[k]}`)
+    .join('&');
+  return crypto.createHash('sha1').update(query + secret).digest('hex');
+}
+
+/** Upload a file under `publicId` (a path without extension) and return its HTTPS URL. */
+async function upload(kind: 'video' | 'image', body: Buffer, publicId: string, type: string): Promise<string> {
+  const c = config();
+  if (!c) throw new Error('Cloudinary is not configured');
+  const params = { overwrite: 'true', public_id: publicId, timestamp: Math.floor(Date.now() / 1000) };
+  const form = new FormData();
+  for (const [k, v] of Object.entries(params)) form.append(k, String(v));
+  form.append('api_key', c.key);
+  form.append('signature', signParams(params, c.secret));
+  form.append('file', new Blob([new Uint8Array(body)], { type }), publicId.split('/').pop());
+  const res = await fetch(`https://api.cloudinary.com/v1_1/${c.cloud}/${kind}/upload`, { method: 'POST', body: form, signal: AbortSignal.timeout(180_000) });
+  const out = (await res.json().catch(() => ({}))) as { secure_url?: string; error?: { message?: string } };
+  if (!res.ok || !out.secure_url) throw new Error(`Cloudinary upload ${publicId}: HTTP ${res.status} ${out.error?.message ?? ''}`.trim());
+  return out.secure_url;
+}
+
+export const uploadVideo = (body: Buffer, publicId: string) => upload('video', body, publicId, 'video/mp4');
+export const uploadImage = (body: Buffer, publicId: string, type = 'image/webp') => upload('image', body, publicId, type);

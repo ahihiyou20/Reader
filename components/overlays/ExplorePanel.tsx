@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useCategories, useFeed } from '@/lib/data';
 import { pick } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
-import { useT } from '../hooks';
+import { useStaggeredCount, useT } from '../hooks';
 import { ArticleCard } from './ArticleCard';
 import { Panel } from './Layer';
 import { Indicator } from '@/components/ui/Indicator';
@@ -41,6 +41,8 @@ export function ExplorePanel() {
     return [...items].sort((a, b) => score(b) - score(a)).slice(0, 6);
   }, [items]);
   const grid = cat ? items.filter((i) => i.category === cat) : items;
+  // The first covers arrive one after another, as search results do.
+  const shown = useStaggeredCount(grid.length, open, cat);
 
   return (
     <Panel
@@ -92,8 +94,8 @@ export function ExplorePanel() {
         <div className="label">{cat ? pick(cats?.find((c) => c.id === cat)?.name, lang) : t('allArticles')}</div>
         {grid.length ? (
           <div className="grid">
-            {grid.map((i, n) => (
-              <ArticleCard key={`${cat}:${i.slug}`} item={i} index={n} showCategory={!cat} onOpen={() => startFeed({ category: cat, slug: i.slug })} />
+            {grid.slice(0, shown).map((i) => (
+              <ArticleCard key={`${cat}:${i.slug}`} item={i} showCategory={!cat} onOpen={() => startFeed({ category: cat, slug: i.slug })} />
             ))}
           </div>
         ) : (

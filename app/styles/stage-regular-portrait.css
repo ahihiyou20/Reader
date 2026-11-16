@@ -94,10 +94,11 @@ html[data-stage='regular-portrait'] .cmeta {
 }
 
 /* Details view */
+/* 58ch of the digit 0 is about 70 average characters of body text: the comfortable 45–75 measure. */
 html[data-stage='regular-portrait'] .dhead {
   left: 32px;
   right: 32px;
-  max-width: 66ch;
+  max-width: 58ch;
   margin-inline: auto;
 }
 
@@ -109,7 +110,7 @@ html[data-stage='regular-portrait'] .dscroll {
 }
 
 html[data-stage='regular-portrait'] .sec {
-  max-width: 66ch;
+  max-width: 58ch;
   width: 100%;
   margin-inline: auto;
 }

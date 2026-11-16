@@ -70,9 +70,12 @@ function checkDuration(anim: QaAnimationRecord): string | null {
   const isSkeleton =
     dataAttrs.includes('data-skeleton') ||
     dataAttrs.includes('data-skel-block');
+  // Pagemoor's cover drift: a slow pan across a still cover while it is on screen, stopped for reduced
+  // motion and replaced by the clip on covers that have one. Ambient, like the skeleton shimmer.
+  const isCoverDrift = classes.includes('media') && classes.includes('drift');
 
   if (isInfinite) {
-    if (!isSkeleton) {
+    if (!isSkeleton && !isCoverDrift) {
       return `Disallowed infinite animation on target "${anim.target}" (pseudo: "${anim.pseudoElement}")`;
     }
     return null;

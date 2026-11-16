@@ -1,6 +1,7 @@
 # Self-host cover images (portrait for phones, landscape for wide screens) for articles that still
 # point at a remote image or have no landscape file. Runs after the daily bots and on demand; an image
-# that cannot be fetched is tried again on the next run.
+# that cannot be fetched is tried again on the next run. With the Cloudinary secrets, copies go to
+# Cloudinary instead of public/covers.
 name: Covers
 on:
   schedule:
@@ -27,6 +28,10 @@ jobs:
       - run: pnpm tsx scripts/pipeline/host-covers.ts --limit "${{ inputs.limit || '400' }}"
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
       - run: pnpm tsx scripts/pipeline/validate.ts
       - name: Commit
         id: commit

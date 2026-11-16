@@ -269,8 +269,9 @@ html[data-stage='regular-landscape'] .dscroll {
   );
 }
 
+/* About 70 average characters of body text a line (58 widths of the digit 0). */
 html[data-stage='regular-landscape'] .sec {
-  max-width: 64ch;
+  max-width: 58ch;
   width: 100%;
 }
 

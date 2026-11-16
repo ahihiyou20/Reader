@@ -1,14 +1,16 @@
 // Motion covers: the short muted loop the app plays over a cover photo (cover.video), taken from
 // Pixabay's free videos (like the first three, e.g. black-hole-anatomy). Pixabay does not allow
 // hotlinking, so each clip is downloaded, cropped to a portrait clip for phones and a landscape one
-// for wide screens, its last half second cross-faded into its start so it loops, and stored in
-// public/covers/video/. The API needs PIXABAY_API_KEY; ffmpeg must be on the PATH.
+// for wide screens, its last half second cross-faded into its start so it loops, and stored on
+// Cloudinary (cloudinary.ts) so the repository does not grow with every article; without
+// CLOUDINARY_URL the clips go to public/covers/video/ instead. The API needs PIXABAY_API_KEY; ffmpeg must be on the PATH.
 import { execFile } from 'node:child_process';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import type { ArticleSource, CoverVideo } from '../../lib/content/types';
-import { ROOT, USER_AGENT, dirs, listJson, readJson } from './lib';
+import { ROOT, USER_AGENT, dirs, listJson, readJson, writeJson } from './lib';
+import { hasCloudinary, onCloudinary, uploadVideo } from './cloudinary';
 
 const SECONDS = 6;
 const FPS = 24;
@@ -113,22 +115,66 @@ export async function clipById(id: number): Promise<PixabayClip> {
   return clip;
 }
 
-/** Download a Pixabay clip, make both shapes for the article and return its `cover.video` entry. */
+/** Download a Pixabay clip and cut both shapes into `dir` as portrait.mp4 and wide.mp4. */
+export async function cutClip(clip: PixabayClip, dir: string, start = 0) {
+  const input = path.join(dir, 'in.mp4');
+  const res = await fetch(clip.file, { headers: { 'user-agent': USER_AGENT }, signal: AbortSignal.timeout(120_000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status} downloading Pixabay video ${clip.id}`);
+  await fs.writeFile(input, Buffer.from(await res.arrayBuffer()));
+  const from = Math.max(0, Math.min(start, clip.seconds - SECONDS - 0.6));
+  await fromClip(input, 'portrait', path.join(dir, 'portrait.mp4'), from);
+  await fromClip(input, 'wide', path.join(dir, 'wide.mp4'), from);
+}
+
+/** Store a cut clip: on Cloudinary under a name naming the clip, or in public/covers/video/ without it. */
+async function store(file: string, name: string): Promise<string> {
+  if (hasCloudinary()) return uploadVideo(await fs.readFile(file), `pagemoor/covers/${name.replace(/\.mp4$/, '')}`);
+  await fs.mkdir(VIDEO_DIR, { recursive: true });
+  await fs.copyFile(file, path.join(VIDEO_DIR, name));
+  return `/covers/video/${name}`;
+}
+
+/** Download a Pixabay clip, make both shapes for the article, store them and return its `cover.video` entry. */
 export async function motionCover(a: ArticleSource, clip: PixabayClip, start = 0): Promise<CoverVideo> {
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'clip-'));
   try {
-    const input = path.join(tmp, 'in.mp4');
-    const res = await fetch(clip.file, { headers: { 'user-agent': USER_AGENT }, signal: AbortSignal.timeout(120_000) });
-    if (!res.ok) throw new Error(`HTTP ${res.status} downloading Pixabay video ${clip.id}`);
-    await fs.writeFile(input, Buffer.from(await res.arrayBuffer()));
-    const from = Math.max(0, Math.min(start, clip.seconds - SECONDS - 0.6));
-    await fromClip(input, 'portrait', path.join(VIDEO_DIR, `${a.slug}.mp4`), from);
-    await fromClip(input, 'wide', path.join(VIDEO_DIR, `${a.slug}-wide.mp4`), from);
+    await cutClip(clip, tmp, start);
+    // The clip id in the name keeps a re-cut from reusing a URL readers may have cached.
+    const base = hasCloudinary() ? `${a.slug}-${clip.id}` : a.slug;
+    const url = await store(path.join(tmp, 'portrait.mp4'), `${base}.mp4`);
+    const wide = await store(path.join(tmp, 'wide.mp4'), `${base}-wide.mp4`);
+    (await clipsInUse()).add(clip.id);
+    return { url, wide, credit: 'Pixabay', source: clip.page };
   } finally {
     await fs.rm(tmp, { recursive: true, force: true });
   }
-  (await clipsInUse()).add(clip.id);
-  return { url: `/covers/video/${a.slug}.mp4`, wide: `/covers/video/${a.slug}-wide.mp4`, credit: 'Pixabay', source: clip.page };
+}
+
+/**
+ * Move motion-cover clips still kept in public/covers/video/ to Cloudinary and point their articles at it.
+ * Returns the slugs it changed; the local files are deleted once the article file is written.
+ */
+export async function moveClipsOffRepo(): Promise<string[]> {
+  if (!hasCloudinary()) return [];
+  const moved: string[] = [];
+  for (const f of await listJson(dirs.articles)) {
+    const file = path.join(dirs.articles, f);
+    const a = await readJson<ArticleSource>(file);
+    const v = a.cover.video;
+    if (!v || [v.url, v.wide].every((u) => !u?.startsWith('/covers/video/'))) continue;
+    const local: string[] = [];
+    const up = async (u: string | undefined) => {
+      if (!u?.startsWith('/covers/video/') || onCloudinary(u)) return u;
+      const src = path.join(ROOT, 'public', u);
+      local.push(src);
+      return uploadVideo(await fs.readFile(src), `pagemoor/covers/${path.basename(u, '.mp4')}`);
+    };
+    a.cover.video = { ...v, url: (await up(v.url))!, ...(v.wide ? { wide: await up(v.wide) } : {}) };
+    await writeJson(file, a);
+    await Promise.all(local.map((p) => fs.rm(p, { force: true })));
+    moved.push(a.slug);
+  }
+  return moved;
 }
 
 /**

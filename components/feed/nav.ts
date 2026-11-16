@@ -49,6 +49,25 @@ export function commitInFlight() {
   const t = inFlightTarget;
   inFlightTarget = null;
   useUI.getState().setIndex(t);
+  setReach(null);
+}
+
+// A slide further than the next page (keys pressed in quick succession) passes pages that are not
+// mounted around the committed index, and the screen would show nothing there. The feed reads how far
+// the slide reaches and mounts the pages on the way; a one-page slide still mounts nothing new.
+let reach: number | null = null;
+const reachListeners = new Set<() => void>();
+export const slideReach = () => reach;
+export function onSlideReach(listener: () => void) {
+  reachListeners.add(listener);
+  return () => {
+    reachListeners.delete(listener);
+  };
+}
+function setReach(next: number | null) {
+  if (reach === next) return;
+  reach = next;
+  reachListeners.forEach((l) => l());
 }
 
 const viewTargets = new Map<string, View>();
@@ -63,6 +82,7 @@ export function goToArticle(target: number, velocity = 0, instant = false) {
   const velocityInPages = -velocity / Math.max(1, layout.h);
   if (instant || prefersReducedMotion()) {
     inFlightTarget = null;
+    setReach(null);
     feedP.stop();
     feedP.set(t);
     if (changed) ui.setIndex(t);
@@ -70,10 +90,12 @@ export function goToArticle(target: number, velocity = 0, instant = false) {
     return;
   }
   inFlightTarget = t;
+  setReach(Math.abs(t - ui.index) > 1 ? t : null);
   animate(feedP, t, { ...springFor(velocity), velocity: velocityInPages }).then(() => {
     if (inFlightTarget !== t) return;
     inFlightTarget = null;
     useUI.getState().setIndex(t);
+    setReach(null);
   });
 }
 

@@ -843,6 +843,9 @@ select {
   font-size: 0.9em;
   font-weight: 500;
   cursor: pointer;
+  /* A source label ("ScienceDaily (2026)") reads as one token: split over two lines it is hard to
+     read and to tap. */
+  white-space: nowrap;
 }
 /* An inline span ignores transform, so the shared press scale never shows here: answer with the tint. */
 .cite:active,
@@ -1732,8 +1735,9 @@ select {
   visibility: visible;
   transform: scale(1);
   pointer-events: auto;
+  /* Opacity rises more evenly than the scale, so the menu is seen growing from the button. */
   transition:
-    opacity 200ms cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 200ms ease-out,
     transform 200ms cubic-bezier(0.32, 0.72, 0, 1),
     visibility 0s linear 0s;
 }
@@ -2762,6 +2766,10 @@ select {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  /* A source chip lightens under the pointer, as it does when pressed. */
+  .cite:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
   /* Desktop / mouse hover: +6% surface lightness (COMMIT-SHEET.md); only cards also lift 1px */
   button:hover:not(:active):not([data-pressed]),
   a[href]:hover:not(:active):not([data-pressed]),
