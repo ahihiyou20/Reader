@@ -126,5 +126,41 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQAIEDIFdCdhBkQkZGHuWdsAAP2YVii2h0g1PLilpmuvcpiWQqoIyD2Fe0njsj2g51+aSxm+Exq/YK5bdvYzdPWp/eTO+H1GgPRHa/VbLaFTZVZNtZJyEcHy8FknM/74rD7PdHGbsVG4JMbeY0rYrkZRNqeQJRpWk76OsW0Oij7PvqCABLvqr3i4dav78WuKLkY0boAAAJaDjRflNIfAAArVMigEAAA=",
-  "dominant": "#3e4443"
+  "dominant": "#3e4443",
+  "glossary": {
+    "en": {
+      "plough": "An agricultural tool used to turn over and prepare soil before planting seeds.",
+      "printing press": "A machine for mass-producing text and images by pressing inked plates onto paper.",
+      "telegraph": "An early communication device that transmitted electrical signals and coded messages over long distances through wires.",
+      "smallpox": "A deadly, contagious infectious disease eradicated globally through modern vaccination campaigns.",
+      "nuclear bombs": "Weapons of mass destruction that release immense energy through nuclear reactions, threatening global safety.",
+      "life expectancy": "The average number of years a newborn or individual is expected to live.",
+      "low-carbon energy": "Power generated with minimal release of carbon dioxide or other greenhouse gases.",
+      "artificial intelligence": "Computer systems designed to perform complex cognitive tasks typically requiring human intelligence.",
+      "human-level ai": "Artificial intelligence capable of matching human cognitive abilities across virtually all intellectual tasks.",
+      "antibiotics": "Medicines used to treat infections by killing bacteria or stopping their growth.",
+      "international space station": "A habitable research satellite orbiting Earth, maintained through cooperation among multiple nations.",
+      "technologists": "Scientists, engineers, and technical experts who invent, develop, and manage technology."
+    },
+    "vi": {
+      "điện báo": "Thiết bị truyền tin tức bằng tín hiệu điện qua đường dây theo hệ thống mã quy ước.",
+      "radio": "Thiết bị nhận và phát lại âm thanh được truyền qua sóng vô tuyến điện từ xa.",
+      "vắc-xin": "Chế phẩm sinh học giúp cơ thể tạo khả năng miễn dịch chống lại bệnh truyền nhiễm.",
+      "bệnh đậu mùa": "Bệnh truyền nhiễm nguy hiểm do vi-rút gây ra, từng cướp đi sinh mạng của nhiều người.",
+      "bom hạt nhân": "Vũ khí hủy diệt hàng loạt giải phóng năng lượng khổng lồ từ phản ứng hạt nhân.",
+      "chỉnh sửa gen": "Kỹ thuật can thiệp chính xác nhằm thay đổi trực tiếp chuỗi ADN của sinh vật sống.",
+      "năng lượng sạch": "Nguồn năng lượng được tạo ra từ tự nhiên mà không gây ô nhiễm môi trường.",
+      "ai": "Viết tắt của trí tuệ nhân tạo, công nghệ mô phỏng năng lực nhận thức của con người.",
+      "kháng sinh": "Thuốc dùng để tiêu diệt hoặc kìm hãm sự phát triển của vi khuẩn gây bệnh.",
+      "internet": "Hệ thống mạng toàn cầu kết nối các thiết bị để trao đổi thông tin dữ liệu."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }

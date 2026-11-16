@@ -126,5 +126,28 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAADwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQCdBazlASQsXMMtvvDDPb9kHGD8oQAA/uqjFeVO76xot6yyZNNooIDr4S3G0tGZUl4x8flejxCwQ68hsbYOoMXPZjEIV3vHrXeosyaIEzPapPh+qs+CKQXzzqINZKsHEy5E8R9EjwjJP/1j1GBHFS+HGKjuJBAcj/Ba4NFnNvTRuWTIVkEXfsY1K4LjfKGe50wfnoW+XQyRI388oAq0gBR+uAAA",
-  "dominant": "#686461"
+  "dominant": "#686461",
+  "glossary": {
+    "en": {
+      "parish registers": "Church record books documenting local births, baptisms, marriages, and deaths used by historians to track mortality.",
+      "tabellverket": "Sweden's historical government agency founded in 1749 to collect population statistics and mortality records.",
+      "iron age": "A prehistoric era characterized by iron tools and weapons, spanning several centuries before the Common Era.",
+      "hunter-gatherer": "Societies that obtain sustenance by foraging wild plants and hunting animals rather than through agriculture.",
+      "indian knoll": "A significant prehistoric archaeological site in Kentucky representing an ancient hunter-gatherer community from around 2,500 BCE.",
+      "bce": "Before Common Era, an abbreviation designating calendar years prior to year 1 of the Gregorian calendar.",
+      "pre-columbian": "Referring to the history and cultures of the Americas before the arrival of Christopher Columbus.",
+      "bloodletting": "A historical surgical practice of withdrawing blood from patients, mistakenly believed to cure illness.",
+      "conservative": "Cautiously estimated on the lower side, likely understating rather than exaggerating true historical mortality rates.",
+      "infant mortality": "The proportion or rate of newborn babies who die within their first year of life.",
+      "neanderthals": "An extinct species of archaic humans closely related to modern humans that lived in Eurasia.",
+      "child mortality": "The proportion of children who die before reaching adulthood or a specified age such as five."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.8-flash-high"
+  }
 }
