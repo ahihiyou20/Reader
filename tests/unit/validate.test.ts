@@ -77,7 +77,8 @@ describe('validateArticle (docs/05 step 7)', () => {
 describe('toClient', () => {
   it('parses markup and builds attribution', () => {
     const c = toClient(seed);
-    expect(c.langs).toEqual(['en', 'vi']);
+    // The seed is a published article: the finish workflow may have added French, German and Spanish since.
+    expect(c.langs.slice(0, 2)).toEqual(['en', 'vi']);
     expect(c.sections[0].heading?.vi).toBeTruthy();
     expect(c.attribution.en).toMatch(/Pagemoor/);
     expect(c.attribution.fr).toMatch(/Pagemoor/);
