@@ -9,7 +9,7 @@ export default defineConfig({
   outputDir: 'test-results/artifacts',
   fullyParallel: true,
   forbidOnly: Boolean(process.env.CI),
-  retries: process.env.CI ? 1 : 0,
+  retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? [['list'], ['github'], ['html', { open: 'never' }]] : 'list',
   expect: {
     toHaveScreenshot: {

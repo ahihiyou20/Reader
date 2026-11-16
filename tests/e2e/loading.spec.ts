@@ -206,7 +206,7 @@ test.describe('TESTSPEC §10 / ACCEPTANCE 17–20: Loading', () => {
           count++;
           const articles = document.querySelectorAll('section.article');
           const second = articles[1];
-          const media = second?.querySelector('.media');
+          const media = second?.querySelector('.layer.sharp img.media:not(.media-backdrop)');
           if (media) {
             const op = parseFloat(window.getComputedStyle(media).opacity);
             if (!Number.isNaN(op)) {
