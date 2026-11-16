@@ -470,11 +470,15 @@ for (const vp of MATRIX) {
                 size: { width: rect.width, height: rect.height },
               });
 
+              // The last pixel row and column are at width - 1 and height - 1: elementFromPoint returns
+              // null for a point on the far edge itself.
+              const maxX = vpWidth - 1;
+              const maxY = vpHeight - 1;
               const probes = [
-                { x: clamp(cx - 21, 0, vpWidth), y: clamp(cy, 0, vpHeight) },
-                { x: clamp(cx + 21, 0, vpWidth), y: clamp(cy, 0, vpHeight) },
-                { x: clamp(cx, 0, vpWidth), y: clamp(cy - 21, 0, vpHeight) },
-                { x: clamp(cx, 0, vpWidth), y: clamp(cy + 21, 0, vpHeight) },
+                { x: clamp(cx - 21, 0, maxX), y: clamp(cy, 0, maxY) },
+                { x: clamp(cx + 21, 0, maxX), y: clamp(cy, 0, maxY) },
+                { x: clamp(cx, 0, maxX), y: clamp(cy - 21, 0, maxY) },
+                { x: clamp(cx, 0, maxX), y: clamp(cy + 21, 0, maxY) },
               ];
 
               const failedPoints: Array<{ x: number; y: number; hitElementDesc: string }> = [];

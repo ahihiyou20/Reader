@@ -1,5 +1,7 @@
 # Code checks on pull requests and pushes that touch code. The bot's own pull requests do not start
 # pull_request runs (events made with GITHUB_TOKEN never do), so gemini-writer.yml dispatches this workflow.
+# Run by hand with "Record visual baselines" after an intended visual change: text is drawn a little
+# differently on each machine, so baselines recorded anywhere but this runner fail the 2 % pixel check.
 name: CI
 on:
   pull_request:
@@ -7,8 +9,10 @@ on:
     branches: [main]
     paths-ignore: ['content/**', 'docs/**', '**/*.md']
   workflow_dispatch:
+    inputs:
+      update_snapshots: { description: 'Record visual baselines and commit them to this branch', type: boolean, default: false }
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
@@ -33,7 +37,19 @@ jobs:
         run: pnpm build
       # Frame timing needs a GPU; hosted runners have none, so it is measured on real hardware
       # (tests/qa/edge-perf.mjs) instead.
+      - name: Record visual baselines
+        if: inputs.update_snapshots
+        run: |
+          pnpm exec playwright install --with-deps chromium
+          pnpm exec playwright test tests/e2e/visual.spec.ts --project=qa --update-snapshots --trace off
+          git config user.name "reader-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/e2e/__screenshots__
+          if git diff --cached --quiet; then echo "Baselines unchanged"; exit 0; fi
+          git commit -m "test: visual baselines recorded on the CI runner"
+          git push origin "HEAD:$GITHUB_REF_NAME"
       - name: End-to-end (Playwright)
+        if: ${{ !inputs.update_snapshots }}
         run: |
           pnpm exec playwright install --with-deps chromium
           pnpm test:e2e --grep-invert "frame intervals p95"
