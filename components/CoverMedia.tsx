@@ -124,7 +124,7 @@ export function CoverMedia({
   return (
     <>
       {placeholder}
-      {backdrop && <img className="media" src={backdrop} alt="" aria-hidden="true" draggable={false} />}
+      {backdrop && <img className="media media-backdrop" src={backdrop} alt="" aria-hidden="true" draggable={false} />}
       <img
         ref={img}
         // Covers without a clip still move: a slow drift across the photo while the cover is on screen.
