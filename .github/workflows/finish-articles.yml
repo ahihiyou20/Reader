@@ -70,13 +70,14 @@ jobs:
           git add -A content/articles public/covers/video
           if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           git commit -q -m "pipeline: finish new articles, clips on Cloudinary"
+          # Back to the branch it ran on: main normally, a pull request's branch when tried there by hand.
           for i in 1 2 3 4; do
-            git pull --rebase -q origin main && git push origin HEAD:main && break
+            git pull --rebase -q origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && break
             sleep $((i * 10))
           done
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Rebuild
-        if: steps.commit.outputs.changed == 'true'
+        if: steps.commit.outputs.changed == 'true' && github.ref_name == 'main'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main

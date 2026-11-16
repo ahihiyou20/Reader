@@ -9,6 +9,7 @@ import type { FeedItem } from '@/lib/content/types';
 import { preloadImage, prefetchArticle } from '@/lib/data';
 import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
 import { toggleLike, toggleSave } from '@/lib/actions';
+import { preloadTitleFaces } from '@/lib/title';
 import { useUI } from '@/stores/ui';
 import { useSize, useT } from '../hooks';
 import { ArticlePage } from './ArticlePage';
@@ -97,6 +98,12 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   // FR-04: prefetch the next two articles and their covers (deferred to idle to protect hydration & first paint).
   useEffect(() => {
     if (items[index]) prefetchArticle(items[index].slug);
+    if (items[index]) preloadTitleFaces(items[index].category);
+    // Title faces are small and shared by a whole category: fetch them a few covers ahead, so a cover
+    // never arrives before its lettering (keys or a hard flick can pass several covers in a second).
+    const ahead = () => {
+      for (let k = -1; k <= 5; k++) if (items[index + k]) preloadTitleFaces(items[index + k].category);
+    };
 
     if (typeof window === 'undefined') return;
     if ('requestIdleCallback' in window) {
@@ -106,6 +113,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
         }
       ).requestIdleCallback(
         () => {
+          ahead();
           for (const k of [1, 2, -1]) {
             const it = items[index + k];
             if (!it) continue;
@@ -122,6 +130,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       };
     }
     const timer = setTimeout(() => {
+      ahead();
       for (const k of [1, 2, -1]) {
         const it = items[index + k];
         if (!it) continue;

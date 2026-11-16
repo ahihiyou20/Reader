@@ -29,3 +29,31 @@ export function splitTitle(title: string): { lead: string; accent: string } {
   while (n < words.length - 1 && n < 3 && words.slice(-(n + 1)).join(' ').length <= ACCENT_MAX) n++;
   return { lead: words.slice(0, -n).join(' '), accent: words.slice(-n).join(' ') };
 }
+
+/** The two faces each lettering style sets (app/styles/pagemoor.css), as `font` shorthands without the family. */
+const FACES: Record<TitleStyle, Array<[string, string]>> = {
+  cosmos: [['italic 400', '--f-playfair'], ['400', '--f-vibes']],
+  press: [['400', '--f-yeseva'], ['400', '--f-pinyon']],
+  poster: [['400', '--f-anton']],
+  mag: [['900', '--f-fraunces'], ['400', '--f-allura']],
+  elegant: [['300', '--f-cormorant'], ['700', '--f-dancing']],
+  stamp: [['400', '--f-dela'], ['700', '--f-charm']],
+};
+const requested = new Set<TitleStyle>();
+
+/**
+ * Fetch the faces a category's cover title uses before the cover reaches the screen. The faces are not
+ * preloaded with the page (a cover needs two of twelve); fetched on sight, the title is drawn in the
+ * fallback first and jumps when the face arrives, which shows as a layout shift when covers pass by quickly.
+ */
+export function preloadTitleFaces(category: string) {
+  if (typeof document === 'undefined' || !document.fonts) return;
+  const style = titleStyle(category);
+  if (requested.has(style)) return;
+  requested.add(style);
+  const vars = getComputedStyle(document.documentElement);
+  for (const [face, variable] of FACES[style]) {
+    const family = vars.getPropertyValue(variable).trim();
+    if (family) document.fonts.load(`${face} 32px ${family}`).catch(() => requested.delete(style));
+  }
+}
