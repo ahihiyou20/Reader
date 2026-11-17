@@ -21,7 +21,7 @@ export default function Home() {
       {posterCoverSrc && (
         <link rel="preload" as="image" href={posterCoverSrc} imageSrcSet={opt?.srcSet} imageSizes={opt ? COVER_SIZES : undefined} fetchPriority="high" />
       )}
-      <ReaderApp covers={covers} poster={posterCoverSrc ? { coverSrc: posterCoverSrc, srcSet: opt?.srcSet, title, slug } : undefined} />
+      <ReaderApp covers={covers} poster={posterCoverSrc ? { coverSrc: posterCoverSrc, srcSet: opt?.srcSet, title, category: first?.category ?? '', slug } : undefined} />
     </>
   );
 }

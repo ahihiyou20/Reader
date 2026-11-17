@@ -51,7 +51,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {posterCoverSrc && (
         <link rel="preload" as="image" href={posterCoverSrc} imageSrcSet={opt?.srcSet} imageSizes={opt ? COVER_SIZES : undefined} fetchPriority="high" />
       )}
-      <ReaderApp initialSlug={slug} covers={covers} poster={posterCoverSrc ? { coverSrc: posterCoverSrc, srcSet: opt?.srcSet, title, slug } : undefined}>
+      <ReaderApp initialSlug={slug} covers={covers} poster={posterCoverSrc ? { coverSrc: posterCoverSrc, srcSet: opt?.srcSet, title, category: a.category, slug } : undefined}>
         <article id="seo" className="sr-only">
           <h1>{a.title.en}</h1>
           <p>{richToText(a.hook.en)}</p>
