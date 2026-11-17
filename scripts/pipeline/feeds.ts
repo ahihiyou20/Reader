@@ -298,7 +298,7 @@ async function main() {
     return i >= 0 ? args[i + 1] : undefined;
   };
   const config = await readJson<FeedConfig>(CONFIG_FILE);
-  const minPerDay = Number(flag('min') || config.minPerDay || 20);
+  const minPerDay = Number(flag('min') || config.minPerDay || 5);
   const capArg = Number(flag('limit') || config.maxPerDay || 0);
   const cap = capArg > 0 ? capArg : Infinity;
   const deadline = Date.now() + Number(flag('minutes') || 170) * 60_000;

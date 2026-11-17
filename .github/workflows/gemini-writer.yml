@@ -16,7 +16,7 @@ on:
     - cron: '17 23 * * *'
   workflow_dispatch:
     inputs:
-      min: { description: 'Keep writing until at least this many articles (feeds, then topic ideas)', required: false, default: '20' }
+      min: { description: 'Articles the report expects at least', required: false, default: '5' }
       limit: { description: 'Most articles in this run (0: no limit)', required: false, default: '0' }
 permissions:
   contents: write
@@ -92,7 +92,7 @@ jobs:
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
           FIRECRAWL_MAX_PER_RUN: ${{ vars.FIRECRAWL_MAX_PER_RUN }}
           SITE_URL: ${{ vars.SITE_URL }}
-          MIN: ${{ inputs.min || '20' }}
+          MIN: ${{ inputs.min || '5' }}
           LIMIT: ${{ inputs.limit || '0' }}
         run: pnpm tsx scripts/pipeline/feeds.ts --min "$MIN" --limit "$LIMIT" --minutes 170 --jobs 3 --report "$RUNNER_TEMP/report.md"
       - name: Finish this run's articles

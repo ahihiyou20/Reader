@@ -1,5 +1,5 @@
 {
-  "minPerDay": 20,
+  "minPerDay": 5,
   "maxPerDay": 0,
   "maxAgeDays": 14,
   "triage": { "minScore": 6, "perCategory": 6, "dupThreshold": 0.6 },

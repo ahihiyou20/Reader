@@ -14,6 +14,7 @@ import { fullLangs, isCleanLine } from '../../lib/content/validate';
 import { safeMarkup } from './compose';
 import { GeminiSetupError, MARKUP_RULES, MODEL, QuotaError, VI_STYLE, geminiStructured, hasGemini } from './gemini';
 import { dirs, jobSummary, listJson, readJson, writeJson } from './lib';
+import { GLOSSARY_MIN } from './standard';
 
 const STYLE: Record<TLang, string> = {
   vi: VI_STYLE,
@@ -149,8 +150,6 @@ export async function translateInto(a: ArticleSource, lang: Lang): Promise<boole
   if (changed) a.ai = { fields: [...new Set([...(a.ai?.fields ?? []), lang])], reviewed: a.ai?.reviewed ?? true, model: MODEL };
   return changed;
 }
-
-const GLOSSARY_MIN = 8;
 
 /**
  * translateInto, then up to two glossary-only requests when the glossary came back short: terms the
