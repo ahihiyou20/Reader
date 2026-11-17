@@ -47,8 +47,10 @@ export function CoverMedia({
   }, [wanted.src, source.src]);
   // With a srcset, a resize or rotation makes the browser pick another file, and the <img> is empty
   // while it loads (it happens before React hears of the resize). The last file it showed stays
-  // underneath: it is in the cache, so this costs no download.
+  // underneath: it is in the cache, so this costs no download. Only the cover on screen keeps one.
   const [backdrop, setBackdrop] = useState<string>();
+  const keepsBackdrop = Boolean(playing && source.srcSet && !blurred);
+  useEffect(() => setBackdrop(keepsBackdrop ? img.current?.currentSrc || undefined : undefined), [keepsBackdrop]);
   // A cover the feed already preloaded shows at once instead of fading in.
   const [decoded, setDecoded] = useState(() => Boolean(priority) || isDecoded(source.src));
   const video = useRef<HTMLVideoElement>(null);
@@ -127,8 +129,10 @@ export function CoverMedia({
       {backdrop && <img className="media media-backdrop" src={backdrop} alt="" aria-hidden="true" draggable={false} />}
       <img
         ref={img}
-        // Covers without a clip still move: a slow drift across the photo while the cover is on screen.
-        className={`media${decoded ? '' : ' loading'}${playing && !clip ? ' drift' : ''}`}
+        // Covers without a clip drift slowly while on screen. The animation stays on and only pauses
+        // off screen: adding or removing it made the picture jump in scale as a swipe landed.
+        className={`media${decoded ? '' : ' loading'}${!clip && !blurred ? ' drift' : ''}`}
+        style={!clip && !blurred ? { animationPlayState: playing ? 'running' : 'paused' } : undefined}
         src={src}
         srcSet={srcSet}
         sizes={sizes}
@@ -140,8 +144,7 @@ export function CoverMedia({
         fetchPriority={priority ? 'high' : 'auto'}
         onLoad={() => {
           const el = img.current;
-          // Not under the blurred layer: a second 24px blur costs more than a frame of it is worth.
-          if (el?.currentSrc && srcSet && !blurred) setBackdrop(el.currentSrc);
+          if (el?.currentSrc && keepsBackdrop) setBackdrop(el.currentSrc);
           if (el && 'decode' in el) {
             el.decode().then(() => setDecoded(true)).catch(() => setDecoded(true));
           } else {

@@ -3,11 +3,13 @@ import { useEffect, useRef, useState } from 'react';
 import { useUI } from '@/stores/ui';
 import { animate, useMotionValue } from 'framer-motion';
 import { sampleVelocity, spring } from '@/lib/motion';
+import { FlameGlyph } from '../icons';
 
 export function Toast() {
   const toast = useUI((s) => s.toast);
   const [show, setShow] = useState(false);
   const [text, setText] = useState('');
+  const [flame, setFlame] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const y = useMotionValue(120);
   const opacity = useMotionValue(0);
@@ -30,6 +32,7 @@ export function Toast() {
   useEffect(() => {
     if (!toast?.text) return;
     setText(toast.text);
+    setFlame(Boolean(toast.flame));
     setShow(true);
     y.set(120);
     opacity.set(1);
@@ -109,6 +112,7 @@ export function Toast() {
         opacity: opacity.get(),
       }}
     >
+      {flame && <FlameGlyph size={18} className="toast-glyph" />}
       {text}
     </div>
   );

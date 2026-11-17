@@ -14,6 +14,7 @@ import { fullLangs, isCleanLine } from '../../lib/content/validate';
 import { safeMarkup } from './compose';
 import { GeminiSetupError, MARKUP_RULES, MODEL, QuotaError, VI_STYLE, geminiStructured, hasGemini } from './gemini';
 import { dirs, jobSummary, listJson, readJson, writeJson } from './lib';
+import { GLOSSARY_MIN } from './standard';
 
 const STYLE: Record<TLang, string> = {
   vi: VI_STYLE,
@@ -150,8 +151,6 @@ export async function translateInto(a: ArticleSource, lang: Lang): Promise<boole
   return changed;
 }
 
-const GLOSSARY_MIN = 8;
-
 /**
  * translateInto, then up to two glossary-only requests when the glossary came back short: terms the
  * model did not copy exactly from the text are dropped, and a short glossary would otherwise stay.
@@ -160,9 +159,9 @@ export async function translateFull(a: ArticleSource, lang: Lang): Promise<boole
   let changed = await translateInto(a, lang);
   for (let i = 0; i < 2 && Object.keys(a.glossary?.[lang] ?? {}).length < GLOSSARY_MIN && fullLangs(a).includes(lang); i++) {
     const kept = a.glossary?.[lang];
-    delete a.glossary![lang];
+    if (a.glossary) delete a.glossary[lang];
     if (await translateInto(a, lang)) changed = true;
-    if (Object.keys(a.glossary?.[lang] ?? {}).length < Object.keys(kept ?? {}).length) a.glossary![lang] = kept!;
+    if (kept && Object.keys(a.glossary?.[lang] ?? {}).length < Object.keys(kept).length) a.glossary = { ...a.glossary, [lang]: kept };
   }
   return changed;
 }

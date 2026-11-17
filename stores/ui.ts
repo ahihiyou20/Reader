@@ -25,7 +25,7 @@ interface UIState {
   category: string | null;
   startSlug: string | null;
   feedVersion: number;
-  toast: { id: number; text: string } | null;
+  toast: { id: number; text: string; flame?: boolean } | null;
   stage: Stage;
   setLang(lang: Lang): void;
   setIndex(i: number): void;
@@ -37,7 +37,7 @@ interface UIState {
   closeSheet(): void;
   setLangMenu(open: boolean): void;
   startFeed(opts: { category: string | null; slug?: string | null }): void;
-  showToast(text: string): void;
+  showToast(text: string, flame?: boolean): void;
   setStage(stage: Stage): void;
 }
 
@@ -69,6 +69,6 @@ export const useUI = create<UIState>((set) => ({
   setLangMenu: (langMenu) => set({ langMenu }),
   startFeed: ({ category, slug = null }) =>
     set((s) => ({ category, startSlug: slug, index: 0, feedVersion: s.feedVersion + 1, overlays: [] })),
-  showToast: (text) => set({ toast: { id: ++toastId, text } }),
+  showToast: (text, flame) => set({ toast: { id: ++toastId, text, flame } }),
   setStage: (stage) => set((s) => (s.stage === stage ? s : { stage })),
 }));

@@ -1,8 +1,7 @@
 // Daily articles (docs/05 §9): read the RSS/Atom feeds in content/feeds.json, keep unseen recent items,
 // let triage.ts choose the ones worth an article (rules, then Gemini scoring), turn each into Reader's
 // article with scripts/pipeline/create.ts (taken from an open page, or a short summary of a copyrighted one), and
-// check its prose (prose-lint.ts, one revision pass). When the feeds bring fewer than `minPerDay`,
-// ideas.ts proposes evergreen topics to make up the rest. There is no upper limit unless one is given.
+// check its prose (prose-lint.ts, one revision pass). There is no upper limit unless one is given.
 // The workflow puts the result in one pull request (or on main, when auto-publishing); merging publishes.
 //   pnpm tsx scripts/pipeline/feeds.ts [--min 20] [--limit 0] [--minutes 170] [--jobs 3] [--dry-run] [--report report.md]
 import fs from 'node:fs/promises';
@@ -13,7 +12,6 @@ import { type CreateInput, type Created, type Mode, SkipError, createArticle, mo
 import { reviseProse } from './compose';
 import { firecrawlPagesUsed } from './firecrawl';
 import { GeminiSetupError, QuotaError, hasGemini, requestsUsed } from './gemini';
-import { ideaKey, proposeIdeas } from './ideas';
 import { lintProse, plainFieldsOf, proseFields, type ProseFinding } from './prose-lint';
 import { type Candidate, titleSimilarity, triage } from './triage';
 import { CONTENT, ROOT, dirs, httpText, jobSummary, listJson, readJson, setOutput, writeJson } from './lib';
@@ -39,12 +37,10 @@ export interface FeedSource {
   minScore?: number;
 }
 export interface FeedConfig {
-  /** A run keeps going (feeds, then ideas) until at least this many articles are written, when it can. */
+  /** The report says when a run gave fewer articles than this. */
   minPerDay?: number;
   /** Upper bound for one run; 0 or absent: no limit. */
   maxPerDay?: number;
-  /** Evergreen topics proposed by Gemini when the feeds fall short of minPerDay; `extra` covers failures. */
-  ideas?: { enabled?: boolean; extra?: number };
   /** Items older than this are ignored (default 14 days). */
   maxAgeDays?: number;
   triage?: { minScore?: number; perCategory?: number; dupThreshold?: number };
@@ -175,10 +171,9 @@ export function pickRoundRobin(
   return picked;
 }
 
-async function knownArticles(): Promise<{ urls: Set<string>; titles: string[]; counts: Record<string, number> }> {
+async function knownArticles(): Promise<{ urls: Set<string>; titles: string[] }> {
   const urls = new Set<string>();
   const titles: string[] = [];
-  const counts: Record<string, number> = {};
   for (const f of await listJson(dirs.articles)) {
     const a = await readJson<ArticleSource>(path.join(dirs.articles, f));
     if (a.origin.originalUrl) urls.add(normalizeUrl(a.origin.originalUrl));
@@ -186,9 +181,8 @@ async function knownArticles(): Promise<{ urls: Set<string>; titles: string[]; c
     const seed = a.references.find((r) => r.id === 'source')?.url;
     if (seed) urls.add(normalizeUrl(seed));
     titles.push(a.title.en);
-    counts[a.category] = (counts[a.category] ?? 0) + 1;
   }
-  return { urls, titles, counts };
+  return { urls, titles };
 }
 
 const lintArticleProse = (a: ArticleSource): ProseFinding[] =>
@@ -243,7 +237,6 @@ export async function selectArticles(
       ...byUrl.get(s.url)!,
       category: s.category,
       why: `${s.score}/10 ${s.kind}: ${s.reason}`,
-      hints: { angle: s.angle, kind: s.kind, wiki: s.wiki, paper: s.paper, photo: s.photo },
     })),
     rejected,
   };
@@ -296,8 +289,7 @@ interface Job {
   input: Omit<CreateInput, 'publishAt'>;
 }
 
-const plain = (html?: string) => html?.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 600);
-const needsModel = (mode: Mode) => mode === 'summary' || mode === 'write';
+const needsModel = (mode: Mode) => mode === 'summary';
 
 async function main() {
   const args = process.argv.slice(2);
@@ -306,7 +298,7 @@ async function main() {
     return i >= 0 ? args[i + 1] : undefined;
   };
   const config = await readJson<FeedConfig>(CONFIG_FILE);
-  const minPerDay = Number(flag('min') || config.minPerDay || 20);
+  const minPerDay = Number(flag('min') || config.minPerDay || 5);
   const capArg = Number(flag('limit') || config.maxPerDay || 0);
   const cap = capArg > 0 ? capArg : Infinity;
   const deadline = Date.now() + Number(flag('minutes') || 170) * 60_000;
@@ -315,7 +307,7 @@ async function main() {
   const state = await readJson<State>(STATE_FILE, { seen: {} });
   forgetGeminiFailures(state.seen);
   const cutoff = Date.now() - (config.maxAgeDays ?? 14) * 86400_000;
-  const { urls: known, titles, counts } = await knownArticles();
+  const { urls: known, titles } = await knownArticles();
   const categories = (await readJson<Array<{ id: string }>>(path.join(CONTENT, 'categories.json'))).map((c) => c.id);
 
   const feeds = config.feeds.filter((f) => f.enabled !== false && (!needsModel(f.mode) || hasGemini()));
@@ -417,38 +409,14 @@ async function main() {
   };
 
   await run(
-    picked.map(({ feed, item, category, hints }) => ({
+    picked.map(({ feed, item, category }) => ({
       key: item.url,
       feedId: feed.id,
       label: item.title,
-      input: { url: item.url, title: item.title, category, mode: feed.mode, maxWords: feed.maxWords, hints: { ...hints, summary: plain(item.summary) } },
+      input: { url: item.url, title: item.title, category, mode: feed.mode, maxWords: feed.maxWords },
     })),
   );
 
-  const want = Math.min(cap, minPerDay) - created.length;
-  if (want > 0 && !stopped && Date.now() < deadline && hasGemini() && config.ideas?.enabled !== false) {
-    try {
-      const ideas = await proposeIdeas(want + (config.ideas?.extra ?? 4), {
-        categories,
-        counts,
-        existingTitles: [...titles, ...created.map((c) => c.title), ...picked.map((p) => p.item.title)],
-        seen: new Set(Object.keys(state.seen)),
-        dupThreshold: config.triage?.dupThreshold ?? 0.6,
-      });
-      console.log(`Feeds gave ${created.length}; writing up to ${ideas.length} articles from topic ideas.`);
-      await run(
-        ideas.map((i) => ({
-          key: ideaKey(i.title),
-          feedId: 'ideas',
-          label: i.title,
-          input: { title: i.title, category: i.category, mode: 'write', hints: { angle: i.angle, kind: i.kind, wiki: i.wiki, paper: i.paper, photo: i.photo } },
-        })),
-      );
-    } catch (e) {
-      if (e instanceof GeminiSetupError) setupError = e;
-      stopped = (e as Error).message;
-    }
-  }
   if (stopped) console.log(`Stopped: ${stopped}`);
 
   const keepAfter = Date.now() - KEEP_SEEN_DAYS * 86400_000;

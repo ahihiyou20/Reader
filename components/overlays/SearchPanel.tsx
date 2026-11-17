@@ -3,7 +3,6 @@ import { Search, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { loadSearch, useFeed, useTerms } from '@/lib/data';
-import { track } from '@/lib/analytics';
 import { pick } from '@/lib/i18n';
 import { prefersReducedMotion } from '@/lib/motion';
 import { markMatches } from '@/lib/search';
@@ -115,7 +114,6 @@ export function SearchPanel() {
     const next = [v, ...readRecent().filter((x) => x.toLowerCase() !== v.toLowerCase())];
     writeRecent(next);
     setRecent(next.slice(0, 10));
-    track('search', { q: v.slice(0, 40) });
   };
   const openItem = (i: FeedItem) => {
     remember(q);

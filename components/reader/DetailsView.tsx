@@ -6,7 +6,6 @@ import { ArrowUpRight, ChevronDown, ChevronsRight, Headphones, Library } from 'l
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
-import { track } from '@/lib/analytics';
 import { isFallback, pick } from '@/lib/i18n';
 import { clamp, prefersReducedMotion } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
@@ -20,6 +19,7 @@ import { captureAnchor, restoreScrollTop, type BlockBox, type ReadingAnchor } fr
 import { CountRoll } from '@/components/ui/CountRoll';
 import { canSpeak, trackFor, useAudio } from '@/stores/audio';
 import { useTapToDefine } from './WordPop';
+import { BulbGlyph } from '../icons';
 
 const sweptSlugs = new Set<string>();
 
@@ -71,15 +71,16 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const prowY = useTransform(q, (v) => (reduced ? 0 : (1 - v) * (gap - 62)));
   const titleY = useTransform(q, (v) => (reduced ? 0 : -110 * v));
   const titleO = useTransform(q, (v) => clamp(1 - v * 1.6, 0, 1));
-  // A faded title must not take the taps meant for the pills it slides over.
+  // A faded title must not take the taps meant for the pills it slides over. In landscape the header
+  // is a column beside the text and never collapses, so the title stays.
   const titleRef = useRef<HTMLHeadingElement>(null);
-  useEffect(
-    () =>
-      titleO.on('change', (o) => {
-        if (titleRef.current) titleRef.current.style.visibility = o < 0.2 ? 'hidden' : '';
-      }),
-    [titleO],
-  );
+  useEffect(() => {
+    const show = (o: number) => {
+      if (titleRef.current) titleRef.current.style.visibility = !wide && o < 0.2 ? 'hidden' : '';
+    };
+    show(titleO.get());
+    return titleO.on('change', show);
+  }, [titleO, wide]);
   const stickyO = useTransform(q, (v) => clamp((v - 0.4) / 0.6, 0, 1));
   const rowY = useTransform(q, (v) => (reduced ? 0 : (1 - v) * (gap - 25)));
   const rowS = useTransform(q, (v) => (reduced ? 1 : 1 - 0.2 * v));
@@ -237,7 +238,6 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   useEffect(() => {
     if (!active || view !== 1) return;
     rememberSection(slug, current);
-    track('section_view', { articleId: slug, sectionIndex: current, lang });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, active, view]);
 
@@ -245,11 +245,6 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   useEffect(() => {
     if (active && view === 1) loadLiveCounts(slug);
   }, [active, view, slug]);
-
-  useEffect(() => {
-    if (active && view === 1) track('article_view', { articleId: slug, lang, view: 'details' });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [active, view === 1]);
 
   // FR-08/FR-09: KEY POINT visible ≥ 40% for 2 s completes the article.
   useEffect(() => {
@@ -474,7 +469,7 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
             >
               <div className={`kp-glow${kpSwept ? ' on' : ''}`} />
               <div className="kp-l">
-                <span aria-hidden="true">💡</span>
+                <BulbGlyph size={16} />
                 {t('keyPoint')}
               </div>
               <RichText rich={kpText} onCite={cite} />

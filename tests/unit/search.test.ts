@@ -28,6 +28,12 @@ describe('search (FR-23)', () => {
       { v: ' kiến xác nhận', hit: false },
     ]);
   });
+  it('marks the right letters in decomposed (NFD) text', () => {
+    expect(markMatches('Thiên kiến'.normalize('NFD'), 'kien')).toEqual([
+      { v: 'Thiên ', hit: false },
+      { v: 'kiến', hit: true },
+    ]);
+  });
 });
 
 describe('rankFeed', () => {

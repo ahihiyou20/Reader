@@ -1,6 +1,13 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import type { ArticleSource } from '@/lib/content/types';
-import { cleanGlossary, missing } from '@/scripts/pipeline/translate';
+
+// Gemini replies with the text but no glossary, the reply that used to crash translateFull.
+vi.mock('@/scripts/pipeline/gemini', async (orig) => ({
+  ...(await orig<typeof import('@/scripts/pipeline/gemini')>()),
+  hasGemini: () => true,
+  geminiStructured: async () => ({ value: { title: 'Trous noirs', hook: 'Accroche.', sections: [{ body: 'Corps.' }] }, dropped: [] }),
+}));
+const { cleanGlossary, missing, translateFull } = await import('@/scripts/pipeline/translate');
 
 const base = (group: 1 | 3): ArticleSource => ({
   slug: 'x',
@@ -36,5 +43,11 @@ describe('translate', () => {
       'Past the event horizon, mass only falls inward.',
     );
     expect(g).toEqual({ 'event horizon': 'the edge of a black hole' });
+  });
+  it('survives a reply without a glossary', async () => {
+    const a = base(1);
+    await expect(translateFull(a, 'fr')).resolves.toBe(true);
+    expect(a.title.fr).toBe('Trous noirs');
+    expect(a.glossary?.fr).toBeUndefined();
   });
 });

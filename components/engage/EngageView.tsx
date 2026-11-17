@@ -6,7 +6,6 @@ import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { getBackend } from '@/lib/backend';
 import type { CommentDoc } from '@/lib/backend/types';
 import { errorMessage, needsGoogle } from '@/lib/actions';
-import { track } from '@/lib/analytics';
 import { timeAgo } from '@/lib/format';
 import { prefersReducedMotion } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
@@ -356,7 +355,6 @@ function CommentForm({
       useUser.setState((s) => ({ deltas: { ...s.deltas, [slug]: { ...s.deltas[slug], comments: (s.deltas[slug]?.comments ?? 0) + 1 } } }));
       setDraft('');
       inputRef.current?.blur();
-      track('comment', { articleId: slug, lang });
     } catch (err) {
       toast(errorMessage(err) || t('signInFailed'));
     } finally {

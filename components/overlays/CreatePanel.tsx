@@ -3,7 +3,6 @@ import { Plus, X } from 'lucide-react';
 import { useState } from 'react';
 import { getBackend } from '@/lib/backend';
 import { errorMessage, loadSubmissions } from '@/lib/actions';
-import { track } from '@/lib/analytics';
 import type { Lang } from '@/lib/content/types';
 import { useUI } from '@/stores/ui';
 import { useT } from '../hooks';
@@ -65,7 +64,6 @@ export function CreatePanel() {
         coverUrl: d.coverUrl.trim() || undefined,
         lang: d.lang,
       });
-      track('submit_post', { lang: d.lang });
       toast(t('submitted'));
       try {
         localStorage.removeItem(KEY);

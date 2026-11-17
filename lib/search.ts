@@ -39,6 +39,8 @@ export const SEARCH_OPTIONS: Options<SearchDoc> = {
 
 /** Wrap the parts of `text` that match any query token (accent-insensitive). */
 export function markMatches(text: string, query: string): Array<{ v: string; hit: boolean }> {
+  // fold() keeps one character per character only for composed (NFC) text: decomposed accents would shift every mark.
+  text = text.normalize('NFC');
   const tokens = fold(query)
     .split(/\s+/)
     .filter((t) => t.length > 1);

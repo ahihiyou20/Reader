@@ -163,7 +163,6 @@ export function createFirebaseBackend(): Backend {
     authDomain: env.firebase.authDomain,
     projectId: env.firebase.projectId,
     appId: env.firebase.appId,
-    ...(env.firebase.measurementId ? { measurementId: env.firebase.measurementId } : {}),
   });
   const auth: Auth = getAuth(app);
   const db: Firestore = initializeFirestore(app, {
@@ -768,9 +767,9 @@ export function createFirebaseBackend(): Backend {
       const uid = u.uid;
       try {
         const b = new Batcher(db);
-        // Each counter write costs the Rules one document read and a batch may use 20 (21 pairs are
-        // refused): 9 pairs per batch.
-        const pairs = new Batcher(db, 18);
+        // A batch may make 20 Rules document reads; each pair (the like and its counter) reads up to
+        // four (the like, the counter before and after): 5 pairs per batch.
+        const pairs = new Batcher(db, 10);
         const names = ['likes', 'saves', 'shares', 'progress', 'readDays', 'commentLikes', 'reading'] as const;
         const snaps = await Promise.all(names.map((n) => getDocs(collection(db, 'users', uid, n))));
         snaps.forEach((snap, i) => {
@@ -780,9 +779,21 @@ export function createFirebaseBackend(): Backend {
               const batch = pairs.take(2);
               batch.delete(d.ref);
               batch.set(counterRef(d.id), { [name]: increment(-1) }, { merge: true });
-            } else b.take().delete(d.ref);
+            } else if (name !== 'commentLikes') b.take().delete(d.ref);
           }
         });
+        // A comment like goes with one off its comment's count (the Rules ask for both), unless the
+        // comment is gone or its count is already zero.
+        for (const d of snaps[names.indexOf('commentLikes')].docs) {
+          const { slug, id } = d.data() as { slug: string; id: string };
+          const comment = doc(db, 'comments', slug, 'items', id);
+          const count = (await getDoc(comment).catch(() => null))?.data()?.likeCount ?? 0;
+          if (count > 0) {
+            const batch = pairs.take(2);
+            batch.delete(d.ref);
+            batch.update(comment, { likeCount: increment(-1) });
+          } else b.take().delete(d.ref);
+        }
         await pairs.commit();
         await b.commit();
         if (!u.isAnonymous) {

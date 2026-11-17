@@ -22,11 +22,9 @@ export interface Standard {
 export const STANDARDS = {
   gemini: { groups: [4], minWords: 950, minRefs: 2, motion: false },
   claude: { groups: [4], minWords: 1000, minRefs: 3, motion: true },
-  /** A short article lengthened from its sources (docs/10): adapted ones keep their own licence group. */
-  expanded: { groups: [1, 2, 4], minWords: 1000, minRefs: 1, motion: false },
 } satisfies Record<string, Standard>;
 
-const GLOSSARY_MIN = 8;
+export const GLOSSARY_MIN = 8;
 /** A clip on Cloudinary (an absolute URL) or a file in public/. */
 const clipThere = (url: string | undefined) => Boolean(url && (/^https?:/.test(url) || (url.startsWith('/') && fs.existsSync(path.join(ROOT, 'public', url)))));
 
