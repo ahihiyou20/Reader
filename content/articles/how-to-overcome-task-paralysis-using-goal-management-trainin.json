@@ -121,7 +121,7 @@
       "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   },
   "glossary": {
     "en": {
@@ -135,6 +135,18 @@
       "mental blackboard": "A cognitive metaphor for visualizing and holding your current goal actively in conscious working memory.",
       "external cues": "Sensory prompts or physical reminders outside the mind that trigger awareness, focus, or timely action.",
       "body doubling": "A technique where working in the presence of another person provides accountability and eases task initiation."
+    },
+    "vi": {
+      "body doubling": "Kỹ thuật cùng làm việc với người khác nhằm giảm sự trì hoãn.",
+      "đồng hành ảo": "Hình thức kết nối trực tuyến cùng làm việc để tăng độ tập trung.",
+      "prefrontal cortex": "Vùng não trước chịu trách nhiệm lập kế hoạch và điều phối hành vi.",
+      "vỏ não": "Lớp ngoài của não bộ, xử lý các chức năng nhận thức phức tạp.",
+      "hệ thần kinh": "Mạng lưới kiểm soát cảm xúc, nhận thức và phản ứng của cơ thể.",
+      "điều hòa": "Quá trình làm dịu căng thẳng và lấy lại sự cân bằng tâm lý.",
+      "tê liệt": "Trạng thái đóng băng nhận thức, không thể khởi động một hành vi nào.",
+      "kháng cự": "Cảm giác e ngại, né tránh hoặc ngập ngừng trước một nhiệm vụ khó.",
+      "bộ đếm ngược": "Thiết bị đo lường giúp trực quan hóa thời gian làm việc còn lại.",
+      "bảng đen": "Ẩn dụ về không gian tâm trí dùng để ghi nhớ mục tiêu trước mắt."
     }
   }
 }
