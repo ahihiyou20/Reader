@@ -1460,13 +1460,15 @@ html[data-stage='compact-landscape'] .ctitle[class*='t-'] {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* At 2.2em a three-word accent needs three lines on a 390px phone and lost its last word to the
+   two-line clamp: phones set it at 1.8em, long titles keep their own smaller size. */
+html[data-stage='compact-portrait'] .ctitle[class*='t-']:not(.long) .tb {
+  font-size: 1.8em;
+}
 /* Short phones (iPhone SE): less height to share between the title and the bottom bar. */
 @media (max-height: 700px) and (orientation: portrait) {
   html[data-stage='compact-portrait'] .ctitle[class*='t-'] {
     font-size: clamp(19px, calc(27px - (var(--n, 40) - 40) * 0.15px), 27px);
-  }
-  html[data-stage='compact-portrait'] .ctitle[class*='t-'] .tb {
-    font-size: 1.8em;
   }
 }
 /* Landscape phones: the swipe hint goes above the title's column instead of over it, and the photo

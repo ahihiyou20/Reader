@@ -150,6 +150,8 @@ html[data-stage='regular-portrait'] .btitle {
   margin-inline: 0;
   font-size: 26px;
   line-height: 34px;
+  /* The 44px pills and a two-line 34px title need more room than the phone's offsets give. */
+  top: calc(var(--sat) + var(--d-gap) + 60px);
 }
 
 html[data-stage='regular-portrait'] .stitle {
@@ -160,6 +162,7 @@ html[data-stage='regular-portrait'] .stitle {
 html[data-stage='regular-portrait'] .arow {
   left: 0;
   right: auto;
+  top: calc(var(--sat) + 165px);
 }
 
 html[data-stage='regular-portrait'] [data-region='details-head'] {
