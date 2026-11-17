@@ -23,7 +23,7 @@ permissions:
   pull-requests: write
   actions: write
 concurrency:
-  group: content-bot
+  group: ${{ github.workflow }}  # one run per job; a push that meets a moved main rebases and retries
   cancel-in-progress: false
 env:
   BRANCH: bot/new-articles
