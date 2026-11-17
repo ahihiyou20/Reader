@@ -42,7 +42,8 @@ export function Poster({ coverSrc, srcSet, title, category, slug: _slug, fading 
           <div className="scrim" />
           {/* The same lockup as CoverView, so the hand-over from this poster to the live cover is invisible. */}
           <h2
-            className={`${fading ? 'poster-title ' : ''}ctitle t-${titleStyle(category)}${title.length > 70 ? ' long' : ''}`}
+            // Once faded the poster stays only to keep its image; its title must not count as the cover's.
+            className={fading ? 'poster-title' : `ctitle t-${titleStyle(category)}${title.length > 70 ? ' long' : ''}`}
             data-region="cover-title"
             style={{ ['--n' as string]: title.length }}
           >
