@@ -10,11 +10,6 @@
       "feed": "aeon",
       "error": "triage: score 2: This video piece covers local historical preservation and architecture rather than a broader historical mechanism."
     },
-    "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause": {
-      "at": "2026-11-16T15:03:18.760Z",
-      "feed": "ars-science",
-      "error": "Gemini: every model is overloaded; try again later"
-    },
     "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "ars-science",
@@ -945,11 +940,6 @@
       "feed": "owid",
       "slug": "when-do-people-experience-mental-health-conditions-for-the-f"
     },
-    "https://phys.org/news/2026-11-powerful-el-nio-trigger-global.html": {
-      "at": "2026-11-16T15:04:57.675Z",
-      "feed": "phys-org",
-      "error": "Gemini gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
-    },
     "https://phys.org/news/2026-11-saudi-green-year-lakeside-reveals.html": {
       "at": "2026-11-15T23:36:49.359Z",
       "feed": "phys-org",
@@ -1229,6 +1219,11 @@
       "at": "2026-11-12T03:49:45.854Z",
       "feed": "nasa-science",
       "error": "triage: score 2: Routine rover operational blog post meant for mission logs rather than general readers."
+    },
+    "https://science.nasa.gov/blog/perseverance-update-the-ghostly-rocks-of-idubi-bright-remnants-of-aqueous-systems-from-long-ago": {
+      "at": "2026-11-17T04:21:15.604Z",
+      "feed": "nasa-science",
+      "error": "Only 274 words of text found"
     },
     "https://science.nasa.gov/blog/tingas-tale": {
       "at": "2026-10-27T02:12:58.138Z",
@@ -2526,7 +2521,7 @@
       "slug": "wearable-ultrasound-patch-boosts-rem-sleep"
     },
     "https://www.sciencedaily.com/releases/2026/11/261116023351.htm": {
-      "at": "2026-11-16T15:03:18.243Z",
+      "at": "2026-11-17T04:21:16.049Z",
       "feed": "sciencedaily",
       "error": "Gemini: every model is overloaded; try again later"
     },
@@ -2660,6 +2655,11 @@
       "feed": "usgs",
       "slug": "media-alert-low-level-flights-to-image-geology-over-western"
     },
+    "https://www.usgs.gov/observatories/hvo/news/announcing-volcano-awareness-month-programs-january-2027": {
+      "at": "2026-11-17T04:21:17.763Z",
+      "feed": "usgs",
+      "error": "Gemini: every model is overloaded; try again later"
+    },
     "https://www.usgs.gov/observatories/hvo/news/new-publication-geochemistry-kilauea-lava-fountains": {
       "at": "2026-10-28T02:25:33.599Z",
       "feed": "usgs",
@@ -2729,11 +2729,6 @@
       "at": "2026-11-04T03:10:41.270Z",
       "feed": "usgs",
       "slug": "picturing-the-unimaginable-two-artists-early-journey-into-ye"
-    },
-    "https://www.usgs.gov/observatories/yvo/news/spectacular-springs-black-sand-basin": {
-      "at": "2026-11-16T15:03:17.739Z",
-      "feed": "usgs",
-      "error": "Gemini gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
     },
     "https://www.usgs.gov/observatories/yvo/news/where-do-those-mesmerizing-beautiful-blue-colors-yellowstones-pools-come": {
       "at": "2026-11-10T04:40:16.944Z",
