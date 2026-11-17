@@ -3,7 +3,6 @@
 import { backendKind, backendStarted, getBackend, isInAppBrowser, onBackendStart, preferRedirect } from '@/lib/backend';
 import { BackendError, type AuthUser, type UserData } from '@/lib/backend/types';
 import type { Counts, Lang } from '@/lib/content/types';
-import { track } from '@/lib/analytics';
 import { translate, type MessageKey } from '@/lib/i18n';
 import { localDate, nextStreak } from '@/lib/streak';
 import { useUI } from '@/stores/ui';
@@ -210,7 +209,6 @@ async function toggle(key: 'likes' | 'saves', slug: string, force?: boolean) {
   if (Boolean(useUser.getState()[key][slug]) === on) return;
   flip(key, slug, on);
   bump(slug, key, on ? 1 : -1);
-  track(key === 'likes' ? 'like' : 'save', { articleId: slug, on });
   pending[key].set(slug, on);
   try {
     await whenUser();
@@ -257,7 +255,6 @@ export async function shareArticle(slug: string, title: string) {
   }
   if (!shared) return;
   bump(slug, 'shares', 1);
-  track('share', { articleId: slug });
   try {
     await whenUser();
     // A reader's shares of one article count once; take back the optimistic +1 for a repeat.
@@ -318,10 +315,8 @@ export async function completeArticle(slug: string) {
     progress: { ...st.progress, [slug]: { ...st.progress[slug], completed: true, completedAt: Date.now() } },
     streakBump: next.changed ? st.streakBump + 1 : st.streakBump,
   }));
-  track('article_complete', { articleId: slug });
   if (next.changed) {
     useUI.getState().showToast(t('streakUp', { n: next.current }), true);
-    track('streak_up', { value: next.current });
     try {
       navigator.vibrate?.(10);
     } catch {}
@@ -342,7 +337,6 @@ export async function setApplyStep(slug: string, index: number, done: boolean) {
   useUser.setState((s) => ({ progress: { ...s.progress, [slug]: { ...s.progress[slug], applyDone: next } } }));
   if (all) {
     toast(t('appliedToast'));
-    track('apply_done', { articleId: slug });
   }
   persistCache();
   try {
@@ -376,7 +370,6 @@ export async function signInWithGoogle(idToken?: string): Promise<boolean> {
     if (res.kind === 'merged') toast(t('merged', { name: res.user.displayName ?? '' }));
     else toast(t('signedInAs', { name: res.user.displayName ?? '' }));
     useUser.setState({ user: res.user, displayName: res.user.displayName ?? useUser.getState().displayName });
-    track('sign_in', { method: idToken ? 'one_tap' : 'google', merged: res.kind === 'merged' });
     await refreshUserData(true);
     return true;
   } catch (e) {
@@ -436,7 +429,6 @@ export async function setLanguage(lang: Lang) {
   // Every label changes at once, under a band of colour that sweeps across the screen.
   const [{ flushSync }, { wipe }, { LANG_NAME }] = await Promise.all([import('react-dom'), import('@/lib/wipe'), import('@/lib/content/types')]);
   await wipe(LANG_NAME[lang], () => flushSync(() => useUI.getState().setLang(lang)));
-  track('lang_switch', { lang });
   if (useUser.getState().user) (await getBackend()).updateProfile({ lang }).catch(() => {});
 }
 

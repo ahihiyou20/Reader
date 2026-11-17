@@ -6,7 +6,6 @@ import { ArrowUpRight, ChevronDown, ChevronsRight, Headphones, Library } from 'l
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
-import { track } from '@/lib/analytics';
 import { isFallback, pick } from '@/lib/i18n';
 import { clamp, prefersReducedMotion } from '@/lib/motion';
 import { useUI } from '@/stores/ui';
@@ -239,7 +238,6 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   useEffect(() => {
     if (!active || view !== 1) return;
     rememberSection(slug, current);
-    track('section_view', { articleId: slug, sectionIndex: current, lang });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, active, view]);
 
@@ -247,11 +245,6 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   useEffect(() => {
     if (active && view === 1) loadLiveCounts(slug);
   }, [active, view, slug]);
-
-  useEffect(() => {
-    if (active && view === 1) track('article_view', { articleId: slug, lang, view: 'details' });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [active, view === 1]);
 
   // FR-08/FR-09: KEY POINT visible ≥ 40% for 2 s completes the article.
   useEffect(() => {
