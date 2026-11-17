@@ -1,0 +1,239 @@
+{
+  "slug": "physicists-control-the-magnetic-heart-of-a-single-atom",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=physicists-control-the-magnetic-heart-of-a-single-atom",
+  "category": "science",
+  "tags": [
+    "quantum physics",
+    "atomic magnetism",
+    "nuclear spin",
+    "delft university"
+  ],
+  "title": {
+    "en": "Physicists Control the Magnetic Heart of a Single Atom",
+    "vi": "Các nhà vật lý điều khiển thành công tâm từ tính của một nguyên tử duy nhất",
+    "fr": "Des physiciens contrôlent le cœur magnétique d'un seul atome",
+    "de": "Physiker kontrollieren das magnetische Herz eines einzelnen Atoms",
+    "es": "Físicos controlan el corazón magnético de un solo átomo"
+  },
+  "hook": {
+    "en": "Researchers at Delft University of Technology used radio waves to directly control the magnetic spin of a single atomic nucleus {source}. This unexpected breakthrough challenges long-held assumptions about quantum behavior and opens new paths for storing quantum data.",
+    "vi": "Các nhà nghiên cứu tại Đại học Công nghệ Delft đã sử dụng sóng vô tuyến để điều khiển trực tiếp spin từ tính bên trong hạt nhân nguyên tử duy nhất {source}. Bước đột phá bất ngờ này thách thức các giả định lâu nay về hành vi lượng tử và mở ra hướng mới để lưu trữ dữ liệu.",
+    "fr": "Des chercheurs de l'Université de technologie de Delft ont utilisé des ondes radio pour contrôler directement le spin magnétique d'un seul noyau atomique {source}. Cette percée inattendue remet en question des hypothèses de longue date sur le comportement quantique et ouvre de nouvelles voies pour le stockage de données quantiques.",
+    "de": "Forscher der Technischen Universität Delft nutzten Radiowellen, um den magnetischen Spin eines einzelnen Atomkerns direkt zu kontrollieren {source}. Dieser unerwartete Durchbruch stellt lang gehegte Annahmen über das Quantenverhalten infrage und eröffnet neue Wege zum Speichern von Quantendaten.",
+    "es": "Investigadores de la Universidad Tecnológica de Delft utilizaron ondas de radio para controlar directamente el espín magnético de un solo núcleo atómico {source}. Este avance inesperado desafía suposiciones arraigadas sobre el comportamiento cuántico y abre nuevos caminos para almacenar datos cuánticos."
+  },
+  "sections": [
+    {
+      "heading_en": "The Hidden Magnetism",
+      "heading_vi": "Từ tính ẩn giấu",
+      "body_en": "Atoms in magnetic metals contain electrons and nuclei with a quantum property named [y:spin]. Lead researcher Sander Otte explains that electron magnetism dominates, while nuclear spin remains much weaker yet better shielded from external interference {source}.",
+      "body_vi": "Các nguyên tử trong kim loại từ tính chứa các electron và hạt nhân mang tính chất lượng tử gọi là spin (*spin*). Nhà nghiên cứu trưởng Sander Otte giải thích rằng từ tính của electron chiếm ưu thế, trong khi spin hạt nhân yếu hơn nhiều nhưng được bảo vệ tốt hơn khỏi nhiễu động bên ngoài {source}.",
+      "heading_fr": "Le magnétisme caché",
+      "body_fr": "Les atomes dans les métaux magnétiques contiennent des électrons et des noyaux dotés d'une propriété quantique appelée [y:spin]. Le chercheur principal Sander Otte explique que le magnétisme des électrons domine, tandis que le spin nucléaire reste beaucoup plus faible mais mieux protégé des interférences externes {source}.",
+      "heading_de": "Der verborgene Magnetismus",
+      "body_de": "Atome in magnetischen Metallen enthalten Elektronen und Kerne mit einer Quanteneigenschaft namens [y:spin]. Der leitende Forscher Sander Otte erklärt, dass der Elektronenmagnetismus dominiert, während der Kernspin viel schwächer und dennoch besser vor äußeren Störungen abgeschirmt bleibt {source}.",
+      "heading_es": "El magnetismo oculto",
+      "body_es": "Los átomos en los metales magnéticos contienen electrones y núcleos con una propiedad cuántica llamada [y:espín]. El investigador principal, Sander Otte, explica que el magnetismo de los electrones domina, mientras que el espín nuclear sigue siendo mucho más débil pero está mejor protegido contra interferencias externas {source}."
+    },
+    {
+      "heading_en": "An Unexpected Result",
+      "heading_vi": "Kết quả bất ngờ",
+      "body_en": "Lead author Hester Vennema applied two separate signals to one atom simultaneously {source}. Even when electron and nuclear spins remained largely disentangled, the team successfully flipped the orientation of the nucleus's magnetic spin contrary to prior expectations.",
+      "body_vi": "Tác giả chính Hester Vennema đã đồng thời áp dụng hai tín hiệu riêng biệt lên một nguyên tử {source}. Ngay cả khi spin của electron và hạt nhân tách rời nhau, nhóm nghiên cứu vẫn lật thành công hướng của spin hạt nhân, trái với dự đoán trước đây.",
+      "heading_fr": "Un résultat inattendu",
+      "body_fr": "L'auteure principale Hester Vennema a appliqué simultanément deux signaux distincts à un seul atome {source}. Même lorsque les spins électroniques et nucléaires sont restés largement intriqués, l'équipe a réussi à inverser l'orientation du spin magnétique du noyau, contrairement aux attentes antérieures.",
+      "heading_de": "Ein unerwartetes Ergebnis",
+      "body_de": "Die Erstautorin Hester Vennema setzte gleichzeitig zwei separate Signale auf ein einzelnes Atom an {source}. Selbst als Elektronen- und Kernspins weitgehend entkoppelt blieben, gelang es dem Team entgegen vorherigen Erwartungen, die Ausrichtung des magnetischen Spins des Kerns umzukehren.",
+      "heading_es": "Un resultado inesperado",
+      "body_es": "La autora principal, Hester Vennema, aplicó dos señales separadas a un átomo simultáneamente {source}. Incluso cuando los espines de los electrones y del núcleo permanecieron en gran medida desencantados, el equipo logró invertir la orientación del espín magnético del núcleo, contrary a las expectativas previas."
+    },
+    {
+      "heading_en": "Tuning the Frequencies",
+      "heading_vi": "Điều chỉnh tần số",
+      "body_en": "The team adapted double magnetic resonance for a single atom by matching specific signal frequencies. Vennema compares this precision to playing distinct musical strings because nuclear spin notes run much lower than electron notes {source}.",
+      "body_vi": "Nhóm nghiên cứu đã điều chỉnh phương pháp cộng hưởng từ kép cho một nguyên tử bằng cách khớp các tần số tín hiệu cụ thể. Vennema so sánh độ chính xác này với việc gảy các dây đàn khác nhau vì tần số spin hạt nhân thấp hơn nhiều so với electron {source}.",
+      "heading_fr": "L'ajustement des fréquences",
+      "body_fr": "L'équipe a adapté la résonance magnétique double pour un seul atome en faisant correspondre des fréquences de signal spécifiques. Vennema compare cette précision à celle de jouer de différentes cordes musicales, car les notes du spin nucléaire sont beaucoup plus basses que celles des électrons {source}.",
+      "heading_de": "Die Frequenzen abstimmen",
+      "body_de": "Das Team passte die doppelte Magnetresonanz für ein einzelnes Atom an, indem es spezifische Signalfrequenzen aufeinander abstimmte. Vennema vergleicht diese Präzision mit dem Spielen verschiedener Musikseiten, da die Noten des Kernspins viel tiefer verlaufen als die Elektronennoten {source}.",
+      "heading_es": "Sintonización de las frecuencias",
+      "body_es": "El equipo adaptó la resonancia magnética doble para un solo átomo haciendo coincidir frecuencias de señal específicas. Vennema compara esta precisión con tocar distintas cuerdas musicales porque las notas del espín nuclear son mucho más bajas que las de los electrones {source}."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261114202232.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1576319155264-99536e0be1ee?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1576319155264-99536e0be1ee?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Karlis Reimanis",
+    "authorUrl": "https://unsplash.com/@reims?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/Y31Z6Mf7rys",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/Y31Z6Mf7rys/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Physicists defy expectations by controlling the magnetic heart of a single atom",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261114202232.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review current research papers on atomic nuclear spin.",
+      "Identify frequency differences between electrons and nuclei.",
+      "Discuss quantum memory applications with peers."
+    ],
+    "vi": [
+      "Xem xét các bài báo nghiên cứu hiện tại về spin hạt nhân nguyên tử.",
+      "Xác định sự khác biệt về tần số giữa electron và hạt nhân.",
+      "Thảo luận về các ứng dụng bộ nhớ lượng tử với đồng nghiệp."
+    ],
+    "fr": [
+      "Examiner les articles de recherche actuels sur le spin nucléaire atomique.",
+      "Identifier les différences de fréquence entre les électrons et les noyaux.",
+      "Discuter des applications de la mémoire quantique avec des pairs."
+    ],
+    "de": [
+      "Aktuelle Forschungspapiere zum atomaren Kernspin prüfen.",
+      "Frequenzunterschiede zwischen Elektronen und Kernen identifizieren.",
+      "Anwendungen des Quantengedächtnisses mit Kollegen diskutieren."
+    ],
+    "es": [
+      "Revisar artículos de investigación actuales sobre el espín nuclear atómico.",
+      "Identificar las diferencias de frecuencia entre electrones y núcleos.",
+      "Discutir las aplicaciones de memoria cuántica con colegas."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1576319155264-99536e0be1ee?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1576319155264-99536e0be1ee?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Karlis Reimanis",
+      "authorUrl": "https://unsplash.com/@reims?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Y31Z6Mf7rys",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Y31Z6Mf7rys/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1727773377690-57b51d0c6193?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1727773377690-57b51d0c6193?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "TSD Studio",
+      "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8HDw8LoLUyw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/8HDw8LoLUyw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1673245886405-e33aa93b0de3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1673245886405-e33aa93b0de3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "TSD Studio",
+      "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Ch9tZOTIKb4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Ch9tZOTIKb4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1618601594436-0cb2d38cbb3c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1618601594436-0cb2d38cbb3c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Annie Spratt",
+      "authorUrl": "https://unsplash.com/@anniespratt?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/d6jXJOKyEHo",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/d6jXJOKyEHo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UGh5c2ljaXN0cyUyMENvbnRyb2wlMjB0aGUlMjBNYWduZXRpYyUyMEhlYXJ0JTIwb2YlMjBhJTIwU2luZ2xlJTIwQXRvbSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NDg5MjEzNXww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZAC7AGlgJhep+tHTfe2cEAD+/Z0+BoRXqJ2NEsesAPXESoKRZlRyjVXdghDfku0vtg0kNip+2zrblBwIPqBeZXBnmfZsAD/JkvQ/0QAMZOGPG1V5NA1xGctYfW6lQH1IIGgA",
+  "dominant": "#13151a",
+  "glossary": {
+    "en": {
+      "delft university of technology": "A Dutch university where the research team conducted this atomic experiment.",
+      "atomic nucleus": "The dense center of an atom containing protons and neutrons.",
+      "quantum behavior": "The unusual physical rules that govern matter at microscopic atomic scales.",
+      "quantum data": "Information stored using the principles of quantum mechanics.",
+      "spin": "A fundamental quantum property of particles similar to angular momentum.",
+      "sander otte": "The lead researcher who explained the dynamics of electron and nuclear magnetism.",
+      "hester vennema": "The lead author who applied the simultaneous signals to a single atom.",
+      "disentangled": "Separated so that the quantum states no longer directly influence each other.",
+      "double magnetic resonance": "A specialized technique using matched signal frequencies to control atomic states.",
+      "nuclear spin notes": "The specific lower frequency characteristics associated with atomic nuclei."
+    },
+    "vi": {
+      "spin từ tính": "Tính chất lượng tử của hạt mang điện thể hiện momen động lượng nội tại.",
+      "hạt nhân nguyên tử": "Phần trung tâm của nguyên tử chứa proton và neutron.",
+      "đại học công nghệ delft": "Viện đại học kỹ thuật nằm tại Hà Lan.",
+      "sander otte": "Nhà nghiên cứu trưởng trong dự án khoa học này.",
+      "hester vennema": "Tác giả chính của nghiên cứu khoa học.",
+      "cộng hưởng từ kép": "Phương pháp áp dụng đồng thời hai tín hiệu riêng biệt.",
+      "spin hạt nhân": "Tính chất lượng tử của hạt nhân nguyên tử.",
+      "bộ nhớ lượng tử": "Hệ thống lưu trữ dữ liệu dựa trên cơ học lượng tử."
+    },
+    "fr": {
+      "spin": "Propriété quantique fondamentale décrivant le moment cinétique intrinsèque des particules subatomiques.",
+      "noyau atomique": "La partie centrale dense d'un atome, composée de protons et de neutrons.",
+      "électrons": "Particules subatomiques chargées négativement qui orbitent autour du noyau atomique.",
+      "résonance magnétique": "Phénomène physique où un système absorbe sélectivement de l'énergie à une fréquence spécifique.",
+      "intriqués": "État quantique où deux ou plusieurs particules sont interconnectées malgré la distance.",
+      "mémoire quantique": "Technologie de stockage d'informations basée sur les principes de la mécanique quantique.",
+      "fréquences": "Nombre de cycles par seconde d'une onde électromagnétique ou acoustique.",
+      "physiciens": "Scientifiques spécialistes de la physique, l'étude des lois fondamentales de la nature."
+    },
+    "de": {
+      "spin": "Ein quantenmechanischer Eigendrehimpuls von Elementarteilchen und Atomkernen.",
+      "quanteneigenschaft": "Eine physikalische Eigenschaft von Materie auf subatomarer Ebene.",
+      "elektronenmagnetismus": "Magnetische Eigenschaften, die durch Elektronen erzeugt werden.",
+      "atomkern": "Das schwere, positiv geladene Zentrum eines Atoms aus Protonen und Neutronen.",
+      "entkoppelt": "Zustand, in dem zuvor verbundene physikalische Systeme unabhängig voneinander agieren.",
+      "magnetresonanz": "Ein physikalisches Verfahren zur Untersuchung von Atomkernen mittels Magnetfeldern.",
+      "signalfrequenzen": "Die Schwingungszahlen von übertragenen elektromagnetischen Signalen.",
+      "kernspins": "Die Spinausrichtung von Atomkernen."
+    },
+    "es": {
+      "espín": "Propiedad física cuántica fundamental de las partículas subatómicas relacionada con el momento angular intrínseco.",
+      "núcleo atómico": "La parte central de un átomo, compuesta por protones y neutrones, que concentra casi toda su masa.",
+      "electrones": "Partículas subatómicas con carga eléctrica negativa que giran alrededor del núcleo del átomo.",
+      "resonancia magnética": "Fenómeno en el cual un sistema absorbe selectivamente energía de radiofrecuencia bajo un campo magnético.",
+      "datos cuánticos": "Información codificada utilizando las leyes de la mecánica cuántica para su procesamiento y almacenamiento.",
+      "frecuencias": "Número de oscilaciones o ciclos por unidad de tiempo en una onda electromagnética.",
+      "desencantados": "Estado en el que dos sistemas cuánticos dejan de estar fuertemente correlacionados entre sí.",
+      "memoria cuántica": "Dispositivo teórico o experimental diseñado para almacenar y recuperar información en forma de estados cuánticos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "summary",
+      "keyPoint",
+      "applySteps",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-17T05:07:37.193Z"
+}
