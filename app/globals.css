@@ -39,8 +39,11 @@
   --hl-g: rgba(52, 150, 82, 0.5);
   --hl-c: rgba(255, 255, 255, 0.15);
   --grad-brand: linear-gradient(135deg, #ff3d8b 0%, #8b5cf6 55%, #60a5fa 100%); /* auteur-allow: P1 -- brand gradient */
-  --grad-cta: linear-gradient(90deg, #f472b6 0%, #a78bfa 55%, #6366f1 100%); /* auteur-allow: P1 -- brand gradient */
-  --grad-engage: linear-gradient(180deg, #da4690 0%, #c34bb0 36%, #9d5be0 70%, #6f7df2 100%); /* auteur-allow: P1 -- brand gradient */
+  /* Warm cream, the colour of the cover titles' accent lettering: the one light thing on a dark screen. */
+  --grad-cta: linear-gradient(90deg, #f7e2b8 0%, #ebbd78 100%);
+  --cta-ink: #1b140a;
+  /* Comments & Apply: the article's own colour darkened over its blurred cover, as Details is. */
+  --grad-engage: linear-gradient(180deg, color-mix(in srgb, var(--dominant, #1a1a22) 38%, rgba(11, 11, 15, 0.55)) 0%, rgba(11, 11, 15, 0.9) 70%);
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
@@ -473,7 +476,6 @@ select {
 }
 .layer.eng {
   background:
-    radial-gradient(70% 30% at 80% 8%, rgba(255, 140, 200, 0.35), transparent 70%),
     var(--grad-engage);
 }
 .grain {
@@ -756,19 +758,20 @@ select {
   overscroll-behavior: contain;
   scrollbar-width: none;
   padding: calc(var(--sat) + var(--d-gap) + 211px) 16px 360px;
+  /* Text fades out before the scroll button, the section dots and the bottom bar, never under them. */
   -webkit-mask-image: linear-gradient(
     180deg,
     transparent calc(var(--sat) + 190px),
     #000 calc(var(--sat) + 226px),
-    #000 calc(100% - 200px),
-    rgba(0, 0, 0, 0.3) calc(100% - 120px)
+    #000 calc(100% - 230px),
+    transparent calc(100% - 130px)
   );
   mask-image: linear-gradient(
     180deg,
     transparent calc(var(--sat) + 190px),
     #000 calc(var(--sat) + 226px),
-    #000 calc(100% - 200px),
-    rgba(0, 0, 0, 0.3) calc(100% - 120px)
+    #000 calc(100% - 230px),
+    transparent calc(100% - 130px)
   );
 }
 .dscroll::-webkit-scrollbar {
@@ -923,7 +926,7 @@ select {
   min-height: 56px;
   border-radius: 999px;
   background: var(--grad-cta);
-  color: #fff;
+  color: var(--cta-ink);
   font: 700 15px/1.2 var(--font-sans);
   text-decoration: none;
   transition: transform var(--dur-press) var(--ease-out);
@@ -1452,12 +1455,13 @@ select {
   white-space: nowrap;
   border-radius: 999px;
   background: var(--grad-cta);
+  color: var(--cta-ink);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   font: 600 16.5px var(--font-sans);
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 6px 20px rgba(235, 189, 120, 0.22);
   transition:
     transform var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
     box-shadow var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1);
@@ -1475,15 +1479,13 @@ select {
 }
 @keyframes cta-glow {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 61, 139, 0.7);
+    box-shadow: 0 0 0 0 rgba(235, 189, 120, 0.6);
   }
   50% {
-    box-shadow:
-      0 0 24px 6px rgba(255, 61, 139, 0.8),
-      0 0 40px 12px rgba(139, 92, 246, 0.6);
+    box-shadow: 0 0 28px 8px rgba(235, 189, 120, 0.45);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 61, 139, 0);
+    box-shadow: 0 0 0 0 rgba(235, 189, 120, 0);
   }
 }
 .cta.glow,
@@ -1626,9 +1628,6 @@ select {
 .lang .ic {
   width: 16px;
   height: 16px;
-}
-.app[data-engage='true'] .lang {
-  background: rgba(80, 10, 56, 0.6);
 }
 .bnav {
   position: absolute;
