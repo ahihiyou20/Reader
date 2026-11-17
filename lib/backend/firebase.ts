@@ -163,7 +163,6 @@ export function createFirebaseBackend(): Backend {
     authDomain: env.firebase.authDomain,
     projectId: env.firebase.projectId,
     appId: env.firebase.appId,
-    ...(env.firebase.measurementId ? { measurementId: env.firebase.measurementId } : {}),
   });
   const auth: Auth = getAuth(app);
   const db: Firestore = initializeFirestore(app, {
