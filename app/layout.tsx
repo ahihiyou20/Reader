@@ -21,9 +21,10 @@ const inter = localFont({
 });
 
 // Cover title faces (lib/title.ts). Not preloaded: a cover needs two of them, and the browser fetches
-// only the ones the visible title uses.
+// only the ones the visible title uses. 'block', not 'swap': a cover title drawn in the fallback serif
+// and then redrawn read as a flash of the old design; the files are local and small.
 const playfair = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: [
@@ -33,7 +34,7 @@ const playfair = localFont({
   variable: '--f-playfair',
 });
 const vibes = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/great-vibes-400.woff2',
@@ -41,7 +42,7 @@ const vibes = localFont({
   variable: '--f-vibes',
 });
 const yeseva = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/yeseva-one-400.woff2',
@@ -49,7 +50,7 @@ const yeseva = localFont({
   variable: '--f-yeseva',
 });
 const pinyon = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/pinyon-script-400.woff2',
@@ -57,7 +58,7 @@ const pinyon = localFont({
   variable: '--f-pinyon',
 });
 const anton = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Arial',
   src: './fonts/anton-400.woff2',
@@ -65,7 +66,7 @@ const anton = localFont({
   variable: '--f-anton',
 });
 const fraunces = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/fraunces-900.woff2',
@@ -73,7 +74,7 @@ const fraunces = localFont({
   variable: '--f-fraunces',
 });
 const allura = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/allura-400.woff2',
@@ -81,7 +82,7 @@ const allura = localFont({
   variable: '--f-allura',
 });
 const cormorant = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: [
@@ -91,7 +92,7 @@ const cormorant = localFont({
   variable: '--f-cormorant',
 });
 const dancing = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/dancing-script-700.woff2',
@@ -99,7 +100,7 @@ const dancing = localFont({
   variable: '--f-dancing',
 });
 const dela = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Arial',
   src: './fonts/dela-gothic-one-400.woff2',
@@ -107,7 +108,7 @@ const dela = localFont({
   variable: '--f-dela',
 });
 const charm = localFont({
-  display: 'swap',
+  display: 'block',
   preload: false,
   adjustFontFallback: 'Times New Roman',
   src: './fonts/charm-700.woff2',
