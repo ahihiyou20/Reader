@@ -70,8 +70,12 @@ html[data-stage='regular-landscape'] .crow {
   top: calc(41.8% - 22px);
 }
 
+/* The hint sits on the title's left edge, right above it, as the way into the article; pushed to
+   the right it floated in the middle of a wide screen, tied to nothing. */
 html[data-stage='regular-landscape'] .crow .hint {
   font-size: 15px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 html[data-stage='regular-landscape'] .ctitle {

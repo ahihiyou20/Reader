@@ -24,7 +24,7 @@ export const STANDARDS = {
   claude: { groups: [4], minWords: 1000, minRefs: 3, motion: true },
 } satisfies Record<string, Standard>;
 
-const GLOSSARY_MIN = 8;
+export const GLOSSARY_MIN = 8;
 /** A clip on Cloudinary (an absolute URL) or a file in public/. */
 const clipThere = (url: string | undefined) => Boolean(url && (/^https?:/.test(url) || (url.startsWith('/') && fs.existsSync(path.join(ROOT, 'public', url)))));
 
