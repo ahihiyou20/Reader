@@ -1,0 +1,214 @@
+{
+  "slug": "ai-copilot-improves-structural-engineering-design",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=ai-copilot-improves-structural-engineering-design",
+  "category": "technology",
+  "tags": [
+    "structural engineering",
+    "topology optimization",
+    "machine learning",
+    "mit research"
+  ],
+  "title": {
+    "en": "AI Copilot Improves Structural Engineering Design",
+    "vi": "Trợ lý trí tuệ nhân tạo cải thiện thiết kế kết cấu kỹ thuật",
+    "fr": "L'IA copilote améliore la conception en génie civil",
+    "de": "KI-Copilot verbessert Tragwerksplanung",
+    "es": "La IA Copiloto Mejora el Diseño de Ingeniería Estructural"
+  },
+  "hook": {
+    "en": "Traditional algorithmic design tools often produce impractical structures and leave engineers with no control until the process finishes. Researchers at the Massachusetts Institute of Technology have built a collaborative system that allows human experts to guide the computer {source}, improving both trust and manufacturability without extending design times.",
+    "vi": "Các công cụ thiết kế thuật toán truyền thống thường tạo ra cấu trúc kém thực tế và không cho phép kỹ sư can thiệp cho đến khi quá trình kết thúc. Các nhà nghiên cứu tại Học viện Công nghệ Massachusetts đã xây dựng một hệ thống cộng tác cho phép các chuyên gia con người hướng dẫn máy tính {source}, nâng cao độ tin cậy và khả năng sản xuất mà không kéo dài thời gian thiết kế.",
+    "fr": "Les outils de conception algorithmique traditionnels produisent souvent des structures peu pratiques et laissent les ingénieurs sans contrôle jusqu'à la fin du processus. Des chercheurs du Massachusetts Institute of Technology ont créé un système collaboratif qui permet aux experts humains de guider l'ordinateur {source}, améliorant ainsi la confiance et la fabricabilité sans allonger les délais de conception.",
+    "de": "Traditionelle algorithmische Designwerkzeuge erzeugen oft unpraktische Strukturen und lassen Ingenieuren keine Kontrolle, bis der Prozess abgeschlossen ist {source}. Forscher des Massachusetts Institute of Technology haben ein kollaboratives System entwickelt, das menschlichen Experten erlaubt, den Computer zu steuern, wodurch sowohl das Vertrauen als auch die Herstellbarkeit verbessert werden, ohne die Designzeiten zu verlängern.",
+    "es": "Las herramientas de diseño algorítmico tradicionales suelen producir estructuras poco prácticas y dejan a los ingenieros sin control hasta que finaliza el proceso. Investigadores del Instituto Tecnológico de Massachusetts han construido un sistema colaborativo que permite a los expertos humanos guiar a la computadora {source}, mejorando tanto la confianza como la fabricabilidad sin extender los tiempos de diseño."
+  },
+  "sections": [
+    {
+      "heading_en": "Human-in-the-Loop Design",
+      "heading_vi": "Thiết kế có sự tham gia của con người",
+      "body_en": "Topology optimization creates high-performing shapes through iterative computer calculations. However, the finished blueprints frequently contain flaws like complex beam connections that are nearly impossible to build in the real world. Engineers often distrust these black-box results because they lack any agency to alter undesirable features while the computer works.",
+      "body_vi": "Phương pháp tối ưu hóa cấu trúc tạo ra các hình dạng hiệu suất cao thông qua các phép tính lặp đi lặp lại của máy tính. Tuy nhiên, các bản vẽ hoàn chỉnh thường chứa các lỗi như mối nối dầm phức tạp gần như không thể thi công trong thế giới thực. Các kỹ sư thường không tin tưởng kết quả từ hộp đen này vì họ thiếu quyền kiểm soát để chỉnh sửa các đặc điểm không mong muốn trong khi máy tính đang hoạt động.",
+      "heading_fr": "Conception avec l'humain dans la boucle",
+      "body_fr": "L'optimisation topologique crée des formes très performantes grâce à des calculs informatiques itératifs. Cependant, les plans finaux contiennent souvent des défauts tels que des connexions de poutres complexes qui sont presque impossibles à construire dans le monde réel. Les ingénieurs se méfient souvent de ces résultats de type boîte noire parce qu'ils n'ont aucun moyen de modifier les caractéristiques indésirables pendant que l'ordinateur travaille.",
+      "heading_de": "Mensch-im-Kreis-Design",
+      "body_de": "Topologieoptimierung erzeugt durch iterative Computerberechnungen leistungsstarke Formen. Die fertigen Baupläne enthalten jedoch häufig Mängel wie komplexe Trägerverbindungen, die in der realen Welt nahezu unmöglich zu bauen sind. Ingenieure misstrauen diesen Black-Box-Ergebnissen oft, da ihnen jegliche Handlungsfähigkeit fehlt, unerwünschte Merkmale zu ändern, während der Computer arbeitet.",
+      "heading_es": "Diseño con Humano en el Bucle",
+      "body_es": "La optimización de topología crea formas de alto rendimiento mediante cálculos informáticos iterativos. Sin embargo, los planos terminados a menudo contienen defectos como conexiones de vigas complejas que son casi imposibles de construir en el mundo real. Los ingenieros suelen desconfiar de estos resultados de caja negra porque carecen de cualquier capacidad para alterar características indeseables mientras la computadora trabaja."
+    },
+    {
+      "heading_en": "Machine Learning Prediction",
+      "heading_vi": "Dự đoán bằng học máy",
+      "body_en": "To solve this problem, researchers trained a machine-learning model on thousands of simulated human critiques covering aesthetics and performance. This model rapidly identifies the exact areas where a human designer is most likely to intervene. The software then pauses to present those specific regions for feedback.",
+      "body_vi": "Để giải quyết vấn đề này, các nhà nghiên cứu đã huấn luyện một mô hình học máy dựa trên hàng nghìn đánh giá giả lập của con người về tính thẩm mỹ và hiệu suất. Mô hình này nhanh chóng xác định các khu vực chính xác mà nhà thiết kế con người có khả năng can thiệp cao nhất. Sau đó, phần mềm tạm dừng để trình bày các vùng cụ thể đó nhằm nhận phản hồi.",
+      "heading_fr": "Prédiction par apprentissage automatique",
+      "body_fr": "Pour résoudre ce problème, des chercheurs ont entraîné un modèle d'apprentissage automatique sur des milliers de critiques humaines simulées portant sur l'esthétique et la performance. Ce modèle identifie rapidement les zones exactes où un concepteur humain est le plus susceptible d'intervenir. Le logiciel fait ensuite une pause pour présenter ces régions spécifiques afin d'obtenir des commentaires.",
+      "heading_de": "Maschinelles Lernen zur Vorhersage",
+      "body_de": "Um dieses Problem zu lösen, trainierten Forscher ein Modell des maschinellen Lernens mit Tausenden simulierter menschlicher Kritiken zu Ästhetik und Leistung. Dieses Modell identifiziert schnell die genauen Bereiche, in denen ein menschlicher Designer am ehesten eingreift. Die Software hält dann an, um diese spezifischen Regionen zur Rückmeldung zu präsentieren.",
+      "heading_es": "Predicción de Aprendizaje Automático",
+      "body_es": "Para resolver este problema, los investigadores entrenaron un modelo de aprendizaje automático con miles de críticas humanas simuladas que cubren la estética y el rendimiento. Este modelo identifica rápidamente las áreas exactas donde es más probable que intervenga un diseñador humano. El software luego se pausa para presentar esas regiones específicas para recibir comentarios."
+    },
+    {
+      "heading_en": "Improved Results",
+      "heading_vi": "Kết quả được cải thiện",
+      "body_en": "In recent tests described in Communications Engineering, this collaborative approach increased linear buckling loads and manufacturability by 39 percent. The extra feedback step added only 15 seconds to total processing times. Users can currently adjust specific regions to be thicker or thinner, with more modification options planned for future updates.",
+      "body_vi": "Trong các thử nghiệm gần đây được mô tả trên tạp chí Communications Engineering, phương pháp cộng tác này đã làm tăng tải trọng uốn tuyến tính và khả năng sản xuất thêm 39 phần trăm. Bước phản hồi bổ sung chỉ mất thêm 15 giây vào tổng thời gian xử lý. Hiện tại, người dùng có thể điều chỉnh các vùng cụ thể dày hơn hoặc mỏng hơn, với nhiều tùy chọn chỉnh sửa hơn được lên kế hoạch cho các bản cập nhật trong tương lai.",
+      "heading_fr": "Résultats améliorés",
+      "body_fr": "Lors de tests récents décrits dans Communications Engineering, cette approche collaborative a augmenté les charges de flambement linéaire et la fabricabilité de 39 pour cent. L'étape de rétroaction supplémentaire n'a ajouté que 15 secondes aux temps de traitement totaux. Les utilisateurs peuvent actuellement ajuster des régions spécifiques pour qu'elles soient plus épaisses ou plus minces, d'autres options de modification étant prévues pour les futures mises à jour.",
+      "heading_de": "Verbesserte Ergebnisse",
+      "body_de": "In kürzlich in Communications Engineering beschriebenen Tests erhöhte dieser kollaborative Ansatz lineare Knicklasten und die Herstellbarkeit um 39 Prozent. Der zusätzliche Feedback-Schritt fügte der Gesamtbearbeitungszeit nur 15 Sekunden hinzu. Benutzer können derzeit bestimmte Bereiche dicker oder dünner einstellen, wobei für zukünftige Updates weitere Modifikationsoptionen geplant sind.",
+      "heading_es": "Resultados Mejorados",
+      "body_es": "En pruebas recientes descritas en Communications Engineering, este enfoque colaborativo aumentó las cargas de pandeo lineal y la fabricabilidad en un 39 por ciento. El paso de comentarios adicionales agregó solo 15 segundos a los tiempos totales de procesamiento. Los usuarios actualmente pueden ajustar regiones específicas para que sean más gruesas o más delgadas, con más opciones de modificación planeadas para futuras actualizaciones."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/373/1080/1920",
+    "provider": "unsplash",
+    "author": "Jay Wennington",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/i8CYGnoerR0"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Zach Winn | MIT News"
+    ],
+    "originalTitle": "New AI “copilot” helps engineers design better structures",
+    "originalUrl": "https://news.mit.edu/2026/new-ai-copilot-helps-engineers-design-better-structures-1113",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify current design bottlenecks where software outputs require manual corrections.",
+      "Review structural blueprints early in the computational generation phase.",
+      "Adjust critical component thicknesses based on practical manufacturing constraints."
+    ],
+    "vi": [
+      "Xác định các điểm nghẽn thiết kế hiện tại nơi đầu ra của phần mềm đòi hỏi phải sửa đổi thủ công.",
+      "Xem xét các bản vẽ kết cấu từ sớm trong giai đoạn tạo ra bằng máy tính.",
+      "Điều chỉnh độ dày của các bộ phận quan trọng dựa trên các ràng buộc sản xuất thực tế."
+    ],
+    "fr": [
+      "Identifiez les goulets d'étranglement actuels de la conception où les sorties logicielles nécessitent des corrections manuelles.",
+      "Examinez les plans structurels au début de la phase de génération computationnelle.",
+      "Ajustez l'épaisseur des composants critiques en fonction des contraintes de fabrication pratiques."
+    ],
+    "de": [
+      "Identifiziere aktuelle Design-Engpässe, bei denen Softwareausgaben manuelle Korrekturen erfordern.",
+      "Überprüfe strukturelle Baupläne früh in der computergestützten Erzeugungsphase.",
+      "Passe die Dicken kritischer Komponenten basierend auf praktischen Fertigungsbeschränkungen an."
+    ],
+    "es": [
+      "Identifique los cuellos de botella actuales en el diseño donde las salidas del software requieren correcciones manuales.",
+      "Revise los planos estructurales temprano en la fase de generación computacional.",
+      "Ajuste los grosores de los componentes críticos basándose en restricciones prácticas de fabricación."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/373/1080/1920",
+      "provider": "unsplash",
+      "author": "Jay Wennington",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/i8CYGnoerR0"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/182/1080/1920",
+      "provider": "unsplash",
+      "author": "Andrea Boldizsar",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BwgKUh9tN84"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/403/1080/1920",
+      "provider": "unsplash",
+      "author": "Sergey Zolkin",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdIIkDgBShqf9RhgxaxYcjAACgumxRlF1DMtSAxaeQ9SN0nA8Cb6BtbPZgDHLn+AkPBMbQ7Ix5LR24C3wvphvxJIu+Ao1nbwM65KvozDjpk3XXOKowZ1hjVqEMHepBqPksCE2s4/853Z8wmH3qzgx5J0I5tu5iB1Q8R1Lb13d+pzYNpfQb0skq56PjOge5UXcAAAA=",
+  "dominant": "#32454a",
+  "glossary": {
+    "en": {
+      "topology optimization": "An iterative computational method used to create high-performing shapes for structures.",
+      "black-box": "A system whose internal workings are hidden or opaque to the user.",
+      "machine-learning model": "Software trained on data to recognize patterns and make predictions automatically.",
+      "communications engineering": "An academic journal where the recent test results were described.",
+      "linear buckling loads": "Critical force thresholds where structural components begin to bend or fail.",
+      "manufacturability": "The ease with which a designed structure can be built in the real world.",
+      "algorithmic design tools": "Computer programs that generate designs using automated mathematical rules.",
+      "collaborative system": "An interactive setup combining human expertise with computer processing."
+    },
+    "vi": {
+      "thiết kế thuật toán": "Quy trình sử dụng các thuật toán máy tính để tự động tạo ra hình dạng kết cấu.",
+      "tối ưu hóa cấu trúc": "Phương pháp toán học tìm kiếm hình dạng kết cấu đạt hiệu suất cao nhất.",
+      "hộp đen": "Hệ thống máy tính hoạt động nội bộ mà người dùng không thể quan sát hoặc can thiệp.",
+      "học máy": "Lĩnh vực trí tuệ nhân tạo giúp máy tính tự học từ dữ liệu mà không cần lập trình rõ ràng.",
+      "đánh giá giả lập": "Quá trình mô phỏng các đánh giá của con người bằng các mô hình máy tính.",
+      "tải trọng uốn": "Lực tác động làm cong cấu trúc kỹ thuật trong quá trình chịu lực.",
+      "tuyến tính": "Mối quan hệ tỷ lệ thuận theo đường thẳng giữa các đại lượng.",
+      "thời gian xử lý": "Khoảng thời gian máy tính cần để hoàn thành một tác vụ tính toán."
+    },
+    "fr": {
+      "optimisation topologique": "Méthode mathématique pour trouver la disposition optimale des matériaux dans un volume donné.",
+      "boîte noire": "Système dont les entrées et les sorties sont connues, mais dont le fonctionnement interne est opaque.",
+      "apprentissage automatique": "Domaine de l'intelligence artificielle permettant aux ordinateurs d'apprendre à partir de données.",
+      "flambement": "Phénomène d'instabilité élastique provoquant une déformation soudaine sous charge compressive.",
+      "fabricabilité": "Aptitude d'un produit à être fabriqué facilement et économiquement à grande échelle.",
+      "génie civil": "Branche de l'ingénierie englobant la conception et la construction de structures.",
+      "rétroaction": "Action en retour d'un effet sur la cause qui l'a produit, souvent utilisée pour l'amélioration.",
+      "itératif": "Caractérisé par la répétition d'un processus pour se rapprocher progressivement d'un résultat."
+    },
+    "de": {
+      "topologieoptimierung": "Mathematisches Verfahren zur Findung der optimalen Materialverteilung in einem Bauraum.",
+      "iterative": "Wiederholend, sich schrittweise einem Ergebnis annähernd.",
+      "black-box-ergebnissen": "Resultate von Systemen, deren interner Weg nicht nachvollziehbar ist.",
+      "maschinellen lernens": "Teilgebiet der künstlichen Intelligenz zur Erstellung statistischer Modelle.",
+      "communications engineering": "Fachzeitschrift für Ingenieurwissenschaften und Kommunikation.",
+      "knicklasten": "Maximale Druckkraft, die ein stabförmiges Bauteil aushält, bevor es ausknickt.",
+      "herstellbarkeit": "Eignung eines Entwurfs für die praktische Produktion.",
+      "modifikationsoptionen": "Möglichkeiten zur nachträglichen Änderung und Anpassung."
+    },
+    "es": {
+      "topología": "Estudio de las propiedades geométricas y espaciales de las estructuras.",
+      "caja negra": "Sistema cuyo funcionamiento interno es oculto o desconocido para el usuario.",
+      "aprendizaje automático": "Rama de la inteligencia artificial que permite a las computadoras aprender de los datos.",
+      "pandeo": "Deformación por flexión que sufre un elemento estructural bajo presión.",
+      "fabricabilidad": "Facilidad con la que un diseño puede ser construido en la realidad.",
+      "iterativos": "Procesos que se repiten varias veces para alcanzar un resultado óptimo.",
+      "algorítmico": "Basado en un conjunto ordenado de operaciones sistemáticas.",
+      "simuladas": "Representaciones artificiales creadas para imitar situaciones reales."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-18T03:43:39.787Z"
+}
