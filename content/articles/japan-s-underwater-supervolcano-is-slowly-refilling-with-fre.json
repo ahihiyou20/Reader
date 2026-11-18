@@ -162,10 +162,11 @@
       "applySteps",
       "fr",
       "de",
-      "es"
+      "es",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   },
   "glossary": {
     "fr": {
@@ -205,6 +206,26 @@
       "cámaras magmáticas": "Depósitos subterráneos de roca fundida ubicados bajo la superficie de la corteza volcánica.",
       "actividad tectónica": "Movimientos y deformaciones de las placas de la litosfera que configuran la estructura geológica terrestre.",
       "magma fresco": "Roca fundida recién inyectada desde el manto terrestre hacia una cámara magmática."
+    },
+    "en": {
+      "caldera": "A large volcanic crater formed by the collapse of a volcano.",
+      "seismometers": "Instruments that measure and record motions of the ground.",
+      "kikai": "A massive underwater caldera located in Japan.",
+      "yellowstone": "A famous global supervolcano system located in the United States.",
+      "kobe university": "The institution whose researchers conducted extensive geological surveys.",
+      "magma": "Molten rock located beneath the surface of the Earth.",
+      "seismic waves": "Waves of energy traveling through the Earth's crust.",
+      "crust": "The outermost solid shell of a rocky planet."
+    },
+    "vi": {
+      "hõm chảo": "Trũng địa hình lớn hình thành sau một vụ phun trào núi lửa thảm khốc.",
+      "caldera": "Thuật ngữ tiếng nước ngoài chỉ hõm chảo núi lửa lớn.",
+      "magma": "Đá nóng chảy nằm sâu dưới bề mặt Trái Đất.",
+      "địa chất": "Khoa học nghiên cứu về cấu trúc và lịch sử của Trái Đất.",
+      "địa chấn": "Liên quan đến các sóng rung chuyển lan truyền qua lớp vỏ Trái Đất.",
+      "dung nham": "Đá nóng chảy phun trào ra khỏi bề mặt hành tinh.",
+      "kiến tạo": "Quá trình chuyển động của các mảng vỏ lớn trên Trái Đất.",
+      "khảo sát": "Hành động đo đạc và thu thập dữ liệu thực tế tại hiện trường."
     }
   }
 }

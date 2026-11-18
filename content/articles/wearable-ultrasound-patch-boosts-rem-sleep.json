@@ -10,30 +10,54 @@
   ],
   "title": {
     "en": "Wearable Ultrasound Patch Boosts REM Sleep",
-    "vi": "Miếng dán siêu âm đeo người tăng cường giấc ngủ REM"
+    "vi": "Miếng dán siêu âm đeo người tăng cường giấc ngủ REM",
+    "fr": "Un patch à ultrasons portable stimule le sommeil paradoxal",
+    "de": "Tragbares Ultraschallpflaster fördert den REM-Schlaf",
+    "es": "Parche de ultrasonido portátil impulsa el sueño REM"
   },
   "hook": {
     "en": "A new wearable device uses gentle sound waves to stimulate deep brain regions without medication or surgery. Researchers found the technology helps people enter REM sleep faster and stay in that restorative stage longer, opening new possibilities for treating sleep disorders and supporting emotional health {source}.",
-    "vi": "Một thiết bị đeo mới sử dụng sóng âm nhẹ nhàng để kích thích các vùng não sâu mà không cần dùng thuốc hoặc phẫu thuật. Các nhà nghiên cứu phát hiện công nghệ này giúp con người bước vào giấc ngủ REM nhanh hơn và ở lại giai đoạn phục hồi đó lâu hơn, mở ra những khả năng mới trong việc điều trị rối loạn giấc ngủ và hỗ trợ sức khỏe cảm xúc {source}."
+    "vi": "Một thiết bị đeo mới sử dụng sóng âm nhẹ nhàng để kích thích các vùng não sâu mà không cần dùng thuốc hoặc phẫu thuật. Các nhà nghiên cứu phát hiện công nghệ này giúp con người bước vào giấc ngủ REM nhanh hơn và ở lại giai đoạn phục hồi đó lâu hơn, mở ra những khả năng mới trong việc điều trị rối loạn giấc ngủ và hỗ trợ sức khỏe cảm xúc {source}.",
+    "fr": "Un nouvel appareil portable utilise de douces ondes sonores pour stimuler les régions profondes du cerveau sans médicament ni chirurgie. Des chercheurs ont découvert que cette technologie aide les individus à entrer plus rapidement en sommeil paradoxal et à y rester plus longtemps, ouvrant de nouvelles perspectives pour traiter les troubles du sommeil et soutenir la santé émotionnelle {source}.",
+    "de": "Ein neues tragbares Gerät nutzt sanfte Schallwellen, um tiefe Hirnregionen ohne Medikamente oder Operationen zu stimulieren. Forscher fanden heraus, dass die Technologie Menschen hilft, schneller in den REM-Schlaf zu gelangen und länger in dieser erholsamen Phase zu verweilen, was neue Möglichkeiten zur Behandlung von Schlafstörungen und zur Unterstützung der emotionalen Gesundheit eröffnet {source}.",
+    "es": "Un nuevo dispositivo portátil utiliza ondas sonoras suaves para estimular regiones profundas del cerebro sin medicamentos ni cirugía. Los investigadores descubrieron que la tecnología ayuda a las personas a entrar en el sueño REM más rápido y a permanecer en esa etapa restauradora por más tiempo, abriendo nuevas posibilidades para tratar los trastornos del sueño y apoyar la salud emocional {source}."
   },
   "sections": [
     {
       "heading_en": "Targeting Deep Brain Activity",
       "heading_vi": "Nhắm mục tiêu hoạt động não sâu",
       "body_en": "Researchers at the University of Texas at Austin developed a soft skin patch named NEUSLeeP. The device combines ultrasound stimulation with electrodes to monitor brain activity in real time. Kai Wing Kevin Tang noted that this is the first time scientists can noninvasively target deep brain regions involved in sleep while simultaneously tracking responses.",
-      "body_vi": "Các nhà nghiên cứu tại Đại học Texas tại Austin đã phát triển một miếng dán da mềm có tên là NEUSLeeP. Thiết bị này kết hợp kích thích siêu âm với các điện cực để theo dõi hoạt động não theo thời gian thực. Kai Wing Kevin Tang lưu ý rằng đây là lần đầu tiên các nhà khoa học có thể nhắm mục tiêu không xâm lấn vào các vùng não sâu liên quan đến giấc ngủ đồng thời theo dõi các phản ứng."
+      "body_vi": "Các nhà nghiên cứu tại Đại học Texas tại Austin đã phát triển một miếng dán da mềm có tên là NEUSLeeP. Thiết bị này kết hợp kích thích siêu âm với các điện cực để theo dõi hoạt động não theo thời gian thực. Kai Wing Kevin Tang lưu ý rằng đây là lần đầu tiên các nhà khoa học có thể nhắm mục tiêu không xâm lấn vào các vùng não sâu liên quan đến giấc ngủ đồng thời theo dõi các phản ứng.",
+      "heading_fr": "Cibler l'activité cérébrale profonde",
+      "body_fr": "Des chercheurs de l'Université du Texas à Austin ont développé un patch cutané souple nommé NEUSLeeP. L'appareil combine une stimulation par ultrasons et des électrodes pour surveiller l'activité cérébrale en temps réel. Kai Wing Kevin Tang a souligné qu'il s'agit de la première fois que des scientifiques peuvent cibler de manière non invasive des régions cérébrales profondes impliquées dans le sommeil tout en suivant simultanément les réponses.",
+      "heading_de": "Ansteuerung tiefer Hirnaktivität",
+      "body_de": "Forscher der University of Texas at Austin entwickelten ein weiches Hautpflaster namens NEUSLeeP. Das Gerät kombiniert Ultraschallstimulation mit Elektroden, um die Gehirnaktivität in Echtzeit zu überwachen. Kai Wing Kevin Tang wies darauf hin, dass dies das erste Mal ist, dass Wissenschaftler nicht-invasiv tiefe, am Schlaf beteiligte Hirnregionen anvisieren und gleichzeitig Reaktionen verfolgen können.",
+      "heading_es": "Dirigido a la actividad cerebral profunda",
+      "body_es": "Investigadores de la Universidad de Texas en Austin desarrollaron un parche cutáneo suave llamado NEUSLeeP. El dispositivo combina estimulación por ultrasonido con electrodos para monitorear la actividad cerebral en tiempo real. Kai Wing Kevin Tang señaló que esta es la primera vez que los científicos pueden apuntar de forma no invasiva a regiones cerebrales profundas involucradas en el sueño mientras rastrean simultáneamente las respuestas."
     },
     {
       "heading_en": "Faster Entry Into REM Sleep",
       "heading_vi": "Vào giấc ngủ REM nhanh hơn",
       "body_en": "In a study published in Nature Communications, twenty-eight participants used the patch during rest. Volunteers entered REM sleep an average of forty-three minutes sooner and spent approximately sixteen additional minutes in that stage. Huiliang Evan Wang explained that the skin-attached patch opens new possibilities for understanding sleep and treating disorders at home.",
-      "body_vi": "Trong một nghiên cứu được công bố trên tạp chí Nature Communications, hai mươi tám người tham gia đã sử dụng miếng dán trong khi nghỉ ngơi. Các tình nguyện viên bước vào giấc ngủ REM trung bình sớm hơn bốn mươi ba phút và dành thêm khoảng mười sáu phút trong giai đoạn đó. Huiliang Evan Wang giải thích rằng miếng dán gắn trên da mở ra những khả năng mới trong việc hiểu về giấc ngủ và điều trị các chứng rối loạn tại nhà."
+      "body_vi": "Trong một nghiên cứu được công bố trên tạp chí Nature Communications, hai mươi tám người tham gia đã sử dụng miếng dán trong khi nghỉ ngơi. Các tình nguyện viên bước vào giấc ngủ REM trung bình sớm hơn bốn mươi ba phút và dành thêm khoảng mười sáu phút trong giai đoạn đó. Huiliang Evan Wang giải thích rằng miếng dán gắn trên da mở ra những khả năng mới trong việc hiểu về giấc ngủ và điều trị các chứng rối loạn tại nhà.",
+      "heading_fr": "Entrée plus rapide en sommeil paradoxal",
+      "body_fr": "Dans une étude publiée dans Nature Communications, vingt-huit participants ont utilisé le patch pendant le repos. Les volontaires sont entrés en sommeil paradoxal en moyenne quarante-trois minutes plus tôt et ont passé environ seize minutes supplémentaires dans cette phase. Huiliang Evan Wang a expliqué que le patch fixé sur la peau ouvre de nouvelles possibilités pour comprendre le sommeil et traiter les troubles à domicile.",
+      "heading_de": "Schnellerer Eintritt in den REM-Schlaf",
+      "body_de": "In einer in Nature Communications veröffentlichten Studie nutzten achtundzwanzig Teilnehmer das Pflaster während der Ruhephase. Freiwillige gelangten im Durchschnitt dreiundvierzig Minuten früher in den REM-Schlaf und verbrachten etwa sechzehn zusätzliche Minuten in dieser Phase. Huiliang Evan Wang erklärte, dass das auf der Haut befestigte Pflaster neue Möglichkeiten zum Verständnis von Schlaf und zur Behandlung von Störungen zu Hause eröffnet.",
+      "heading_es": "Entrada más rápida al sueño REM",
+      "body_es": "En un estudio publicado en Nature Communications, veintiocho participantes usaron el parche durante el descanso. Los voluntarios entraron en el sueño REM un promedio de cuarenta y tres minutos antes y pasaron aproximadamente dieciséis minutos adicionales en esa etapa. Huiliang Evan Wang explicó que el parche adherido a la piel abre nuevas posibilidades para comprender el sueño y tratar trastornos en casa."
     },
     {
       "heading_en": "Broader Health Implications",
       "heading_vi": "Ý nghĩa sức khỏe rộng hơn",
       "body_en": "Beyond sleep duration, stimulation improved heart rate variability among healthy participants. Gregory Fonzo noted that enhancing REM sleep may help people better cope with stress. Because sleep disturbances link to depression and anxiety, the team plans larger clinical trials to investigate potential uses for patients with chronic insomnia and post-traumatic stress disorder.",
-      "body_vi": "Ngoài thời lượng giấc ngủ, việc kích thích đã cải thiện sự biến thiên nhịp tim ở những người tham gia khỏe mạnh. Gregory Fonzo lưu ý rằng việc tăng cường giấc ngủ REM có thể giúp con người đối phó tốt hơn với căng thẳng. Do các rối loạn giấc ngủ liên quan đến trầm cảm và lo âu, nhóm nghiên cứu lên kế hoạch cho các thử nghiệm lâm sàng lớn hơn để tìm hiểu các ứng dụng tiềm năng cho bệnh nhân mắc chứng mất ngủ mãn tính và rối loạn căng thẳng sau sang chấn."
+      "body_vi": "Ngoài thời lượng giấc ngủ, việc kích thích đã cải thiện sự biến thiên nhịp tim ở những người tham gia khỏe mạnh. Gregory Fonzo lưu ý rằng việc tăng cường giấc ngủ REM có thể giúp con người đối phó tốt hơn với căng thẳng. Do các rối loạn giấc ngủ liên quan đến trầm cảm và lo âu, nhóm nghiên cứu lên kế hoạch cho các thử nghiệm lâm sàng lớn hơn để tìm hiểu các ứng dụng tiềm năng cho bệnh nhân mắc chứng mất ngủ mãn tính và rối loạn căng thẳng sau sang chấn.",
+      "heading_fr": "Larges implications pour la santé",
+      "body_fr": "Au-delà de la durée du sommeil, la stimulation a amélioré la variabilité de la fréquence cardiaque chez les participants en bonne santé. Gregory Fonzo a noté que l'amélioration du sommeil paradoxal peut aider les gens à mieux faire face au stress. Les troubles du sommeil étant liés à la dépression et à l'anxiété, l'équipe prévoit des essais cliniques plus vastes pour étudier les utilisations potentielles chez les patients souffrant d'insomnie chronique et de trouble de stress post-traumatique.",
+      "heading_de": "Breitere gesundheitliche Auswirkungen",
+      "body_de": "Über die Schlafdauer hinaus verbesserte die Stimulation die Herzratenvariabilität bei gesunden Teilnehmern. Gregory Fonzo merkte an, dass die Förderung des REM-Schlafs Menschen helfen kann, besser mit Stress umzugehen. Da Schlafstörungen mit Depressionen und Angstzuständen zusammenhängen, plant das Team größere klinische Studien, um potenzielle Anwendungen für Patienten mit chronischer Insomnie und posttraumatischer Belastungsstörung zu untersuchen.",
+      "heading_es": "Implicaciones de salud más amplias",
+      "body_es": "Más allá de la duración del sueño, la estimulación mejoró la variabilidad de la frecuencia cardíaca entre los participantes sanos. Gregory Fonzo señaló que mejorar el sueño REM puede ayudar a las personas a sobrellevar mejor el estrés. Debido a que las alteraciones del sueño se vinculan con la depresión y la ansiedad, el equipo planea ensayos clínicos más amplios para investigar usos potenciales en pacientes con insomnio crónico y trastorno de estrés postraumático."
     }
   ],
   "references": [
@@ -74,6 +98,21 @@
       "Tham khảo ý kiến chuyên gia giấc ngủ về các khó khăn về giấc ngủ kéo dài",
       "Theo dõi các mẫu nghỉ ngơi hàng ngày bằng các công cụ theo dõi giấc ngủ tiêu chuẩn",
       "Xem xét các cập nhật nghiên cứu hiện tại về liệu pháp kích thích não không xâm lấn"
+    ],
+    "fr": [
+      "Consulter un spécialiste du sommeil en cas de difficultés persistantes",
+      "Surveiller les habitudes de repos quotidiennes à l'aide d'outils de suivi",
+      "Examiner les dernières recherches sur les thérapies de stimulation cérébrale non invasive"
+    ],
+    "de": [
+      "Konsultieren Sie bei anhaltenden Schlafproblemen einen Schlafspezialisten",
+      "Überwachen Sie tägliche Ruhemuster mit Standard-Schlaftracking-Tools",
+      "Aktuelle Forschungsupdates zu nicht-invasiven Hirnstimulations therapien überprüfen"
+    ],
+    "es": [
+      "Consulte a un especialista en sueño respecto a dificultades persistentes para dormir",
+      "Monitoree los patrones de descanso diario utilizando herramientas estándar de seguimiento del sueño",
+      "Revise las actualizaciones de investigación actuales sobre terapias de estimulación cerebral no invasivas"
     ]
   },
   "coverCandidates": [
@@ -110,9 +149,68 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
+  },
+  "glossary": {
+    "en": {
+      "rem sleep": "A restorative stage of sleep associated with dreaming and emotional health.",
+      "neusleep": "The soft skin patch developed by researchers to stimulate deep brain regions.",
+      "ultrasound stimulation": "The use of gentle sound waves to target deep brain areas.",
+      "electrodes": "Components used to monitor brain activity in real time.",
+      "noninvasively": "Achieved without the need for surgery or breaking the skin.",
+      "nature communications": "The publication where the study on the patch was published.",
+      "heart rate variability": "A metric that improved among healthy participants following stimulation.",
+      "chronic insomnia": "A persistent sleep disorder that the research team plans to investigate.",
+      "post-traumatic stress disorder": "A condition involving severe stress that researchers aim to study."
+    },
+    "vi": {
+      "giấc ngủ rem": "Giai đoạn giấc ngủ có chuyển động mắt nhanh, liên quan đến việc phục hồi tinh thần và mơ.",
+      "neusleep": "Tên của miếng dán da mềm tích hợp siêu âm và điện cực để theo dõi và kích thích não.",
+      "kích thích siêu âm": "Phương pháp dùng sóng âm tần số cao để tác động lên các tế bào thần kinh trong não.",
+      "không xâm lấn": "Phương pháp y tế không cần phẫu thuật hay rạch da, không gây tổn thương mô cơ thể.",
+      "nature communications": "Tạp chí khoa học uy tín chuyên công bố các nghiên cứu quan trọng trong nhiều lĩnh vực.",
+      "biến thiên nhịp tim": "Sự thay đổi về khoảng thời gian giữa các nhịp tim liên tiếp, phản ánh sức khỏe tim mạch.",
+      "thử nghiệm lâm sàng": "Quá trình nghiên cứu thử nghiệm y tế trên con người để đánh giá độ an toàn và hiệu quả.",
+      "mất ngủ mãn tính": "Tình trạng khó ngủ hoặc không duy trì được giấc ngủ kéo dài trong thời gian dài.",
+      "rối loạn căng thẳng sau sang chấn": "Tình trạng tâm lý xuất hiện sau khi trải qua hoặc chứng kiến một sự kiện cực kỳ đáng sợ."
+    },
+    "fr": {
+      "sommeil paradoxal": "Phase du sommeil caractérisée par une activité cérébrale intense et des rêves.",
+      "ultrasons": "Ondes sonores de haute fréquence inaudibles pour l'oreille humaine.",
+      "non invasive": "Méthode médicale qui ne nécessite aucune effraction corporelle ni chirurgie.",
+      "électrodes": "Capteurs conducteurs permettant de mesurer l'activité électrique biologique.",
+      "variabilité de la fréquence cardiaque": "Variation du temps écoulé entre chaque battement de cœur consécutif.",
+      "essais cliniques": "Études scientifiques menées sur des volontaires pour tester un traitement.",
+      "insomnie chronique": "Difficultés de sommeil persistantes et régulières sur une longue période.",
+      "trouble de stress post-traumatique": "Trouble anxieux sévère survenant après un événement traumatisant."
+    },
+    "de": {
+      "rem-schlaf": "Eine wichtige Schlafphase, die für Erholung und emotionale Gesundheit sorgt.",
+      "neusleep": "Das entwickelte weiche Hautpflaster zur Ultraschallstimulation.",
+      "ultraschallstimulation": "Reizung durch sanfte Schallwellen zur Beeinflussung der Gehirnaktivität.",
+      "elektroden": "Sensoren zur Überwachung der Gehirnaktivität in Echtzeit.",
+      "nicht-invasiv": "Medizinische Verfahren ohne Eingriff in den Körper oder Operationen.",
+      "nature communications": "Eine wissenschaftliche Fachzeitschrift, in der die Studie veröffentlicht wurde.",
+      "herzratenvariabilität": "Die Schwankung der Zeitabstände aufeinanderfolgender Herzschläge.",
+      "insomnie": "Eine anhaltende Störung des Ein- und Durchschlafens.",
+      "posttraumatischer belastungsstörung": "Eine psychische Erkrankung als Folge schwerer traumatischer Erlebnisse."
+    },
+    "es": {
+      "sueño rem": "Fase del sueño caracterizada por movimientos rápidos de los ojos y actividad cerebral intensa.",
+      "ultrasonido": "Ondas sonoras de alta frecuencia utilizadas en medicina para diagnóstico y estimulación.",
+      "electrodos": "Conductores eléctricos utilizados para establecer contacto con una parte del cuerpo.",
+      "no invasiva": "Procedimiento médico que no requiere incisiones quirúrgicas ni introducir instrumentos.",
+      "variabilidad": "Medida de la variación en el tiempo entre cada latido cardíaco consecutivo.",
+      "insomnio crónico": "Dificultad persistente para conciliar o mantener el sueño durante un tiempo prolongado.",
+      "estrés postraumático": "Trastorno de salud mental desencadenado por un evento aterrador o traumático.",
+      "ensayos clínicos": "Estudios de investigación realizados en humanos para evaluar la eficacia de tratamientos."
+    }
   }
 }

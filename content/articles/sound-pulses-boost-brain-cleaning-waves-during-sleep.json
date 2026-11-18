@@ -13,13 +13,15 @@
     "en": "Sound Pulses Boost Brain Cleaning Waves During Sleep",
     "vi": "Xung âm thanh tăng cường sóng làm sạch não bộ khi ngủ",
     "fr": "Des impulsions sonores stimulent le nettoyage du cerveau pendant le sommeil",
-    "de": "Schallimpulse verstärken nächtliche Gehirnreinigungs-Wellen"
+    "de": "Schallimpulse verstärken nächtliche Gehirnreinigungs-Wellen",
+    "es": "Pulsos de sonido potencian las ondas de limpieza cerebral durante el sueño"
   },
   "hook": {
     "en": "MIT scientists discovered that brief pulses of sound can amplify the brain's natural nighttime cleaning system. By synchronizing gentle audio cues with slow electrical brain waves during sleep, researchers successfully increased the movement of fluid that washes away cellular waste {source}.",
     "vi": "Các nhà khoa học tại MIT phát hiện ra rằng những xung âm thanh ngắn có thể khuếch đại hệ thống làm sạch tự nhiên của não bộ khi ngủ. Bằng cách đồng bộ hóa tín hiệu âm thanh nhẹ nhàng với sóng điện não chậm trong lúc ngủ, các nhà nghiên cứu đã gia tăng thành công chuyển động của chất lỏng cuốn trôi chất thải tế bào {source}.",
     "fr": "Des scientifiques du MIT ont découvert que de brèves impulsions sonores peuvent amplifier le système naturel de nettoyage nocturne du cerveau. En synchronisant de doux signaux audio avec les ondes cérébrales électriques lentes pendant le sommeil, les chercheurs ont réussi à accroître le mouvement du fluide qui élimine les déchets cellulaires {source}.",
-    "de": "MIT-Wissenschaftler haben entdeckt, dass kurze Schallimpulse das natürliche nächtliche Reinigungssystem des Gehirns verstärken können. Indem sie sanfte Tonsignale mit langsamen elektrischen Gehirnwellen während des Schlafs synchronisierten, steigerten Forscher erfolgreich die Bewegung von Flüssigkeit, die zellulären Abfall abtransportiert {source}."
+    "de": "MIT-Wissenschaftler haben entdeckt, dass kurze Schallimpulse das natürliche nächtliche Reinigungssystem des Gehirns verstärken können. Indem sie sanfte Tonsignale mit langsamen elektrischen Gehirnwellen während des Schlafs synchronisierten, steigerten Forscher erfolgreich die Bewegung von Flüssigkeit, die zellulären Abfall abtransportiert {source}.",
+    "es": "Científicos del MIT descubrieron que breves pulsos de sonido pueden amplificar el sistema natural de limpieza nocturna del cerebro. Al sincronizar suaves señales de audio con ondas cerebrales eléctricas lentas durante el sueño, los investigadores lograron aumentar el movimiento del fluido que elimina los desechos celulares {source}."
   },
   "sections": [
     {
@@ -30,7 +32,9 @@
       "heading_fr": "Comment le cerveau se nettoie",
       "body_fr": "Pendant le repos, des vagues de liquide céphalorachidien traversent le cerveau pour éliminer les sous-produits métaboliques comme l'acide lactique. Laura Lewis a démontré en 2019 que ce mouvement de liquide suit de près les ondes cérébrales électriques lentes qui se produisent pendant le sommeil profond. En s'appuyant sur cette base, les chercheurs ont examiné si le renforcement délibéré de ces signaux électriques augmenterait également le flux de liquide.",
       "heading_de": "Wie sich das Gehirn reinigt",
-      "body_de": "Während der Ruhephase bewegen sich Wellen von Gehirn-Rückenmark-Flüssigkeit durch das Gehirn, um metabolische Abfallprodukte wie Milchsäure abzutransportieren. Laura Lewis zeigte 2019, dass diese Flüssigkeitsbewegung eng den langsamen elektrischen Gehirnwellen folgt, die im Tiefschlaf auftreten. Auf dieser Grundlage untersuchten Forscher, ob ein gezieltes Verstärken dieser elektrischen Signale auch den Flüssigkeitsfluss erhöht."
+      "body_de": "Während der Ruhephase bewegen sich Wellen von Gehirn-Rückenmark-Flüssigkeit durch das Gehirn, um metabolische Abfallprodukte wie Milchsäure abzutransportieren. Laura Lewis zeigte 2019, dass diese Flüssigkeitsbewegung eng den langsamen elektrischen Gehirnwellen folgt, die im Tiefschlaf auftreten. Auf dieser Grundlage untersuchten Forscher, ob ein gezieltes Verstärken dieser elektrischen Signale auch den Flüssigkeitsfluss erhöht.",
+      "heading_es": "Cómo se limpia el cerebro",
+      "body_es": "Durante el descanso, ondas de líquido cefalorraquídeo se mueven a través del cerebro para eliminar subproductos metabólicos como el ácido láctico. Laura Lewis demostró en 2019 que este movimiento de fluidos sigue de cerca las ondas eléctricas cerebrales lentas que ocurren en el sueño profundo. Basándose en ese fundamento, los investigadores investigaron si fortalecer deliberadamente esas señales eléctricas también aumentaría el flujo de líquido."
     },
     {
       "heading_en": "Using Pink Noise to Amplify Waves",
@@ -40,7 +44,9 @@
       "heading_fr": "Utiliser le bruit rose pour amplifier les ondes",
       "body_fr": "L'équipe a testé de courtes rafales de bruit rose sur 14 volontaires en bonne santé. En combinant des mesures d'EEG et d'IRMf, un algorithme a prédit les pics d'ondes lentes et a diffusé le son sans réveiller les participants. Le stimulus acoustique synchronisé a réussi à augmenter à la fois les ondes électriques cérébrales et le mouvement de liquide associé.",
       "heading_de": "Rosa Rauschen zur Wellenverstärkung",
-      "body_de": "Das Team testete kurze Bursts von rosa Rauschen an 14 gesunden Freiwilligen. Durch die Kombination von EEG- und fMRI-Messungen sagte ein Algorithmus die Höhepunkte langsamer Wellen voraus und spielte den Ton ab, ohne die Teilnehmer aufzuwecken. Der zeitlich abgestimmte akustische Reiz steigerte erfolgreich sowohl die elektrischen Gehirnwellen als auch die begleitende Flüssigkeitsbewegung."
+      "body_de": "Das Team testete kurze Bursts von rosa Rauschen an 14 gesunden Freiwilligen. Durch die Kombination von EEG- und fMRI-Messungen sagte ein Algorithmus die Höhepunkte langsamer Wellen voraus und spielte den Ton ab, ohne die Teilnehmer aufzuwecken. Der zeitlich abgestimmte akustische Reiz steigerte erfolgreich sowohl die elektrischen Gehirnwellen als auch die begleitende Flüssigkeitsbewegung.",
+      "heading_es": "El uso de ruido rosa para amplificar ondas",
+      "body_es": "El equipo probó breves ráfagas de ruido rosa en 14 voluntarios sanos. Al combinar mediciones de EEG y fMRI, un algoritmo predijo los picos de ondas lentas y emitió el sonido sin despertar a los participantes. El estímulo acústico sincronizado aumentó con éxito tanto las ondas eléctricas cerebrales como el movimiento de fluido acompañante."
     },
     {
       "heading_en": "Potential Medical Applications",
@@ -50,7 +56,9 @@
       "heading_fr": "Applications médicales potentielles",
       "body_fr": "Les chercheurs veulent déterminer si un mouvement de fluide amélioré peut éliminer les protéines nocives liées à des affections neurodégénératives comme la maladie d'Alzheimer. Joshua Levitt a noté que l'amélioration de l'élimination des déchets peut aider à prévenir de dangereux amassements moléculaires. Des études futures exploreront si la technique peut également améliorer la mémoire ou la qualité du sommeil.",
       "heading_de": "Mögliche medizinische Anwendungen",
-      "body_de": "Forscher möchten herausfinden, ob eine verstärkte Flüssigkeitsbewegung schädliche Proteine beseitigen kann, die mit neurodegenerativen Erkrankungen wie der Alzheimer-Krankheit in Verbindung stehen. Joshua Levitt wies darauf hin, dass die Verbesserung des Abfalltransports helfen kann, gefährliche molekulare Ablagerungen zu verhindern. Zukünftige Studien werden untersuchen, ob die Technik auch das Gedächtnis oder die Schlafqualität verbessern kann."
+      "body_de": "Forscher möchten herausfinden, ob eine verstärkte Flüssigkeitsbewegung schädliche Proteine beseitigen kann, die mit neurodegenerativen Erkrankungen wie der Alzheimer-Krankheit in Verbindung stehen. Joshua Levitt wies darauf hin, dass die Verbesserung des Abfalltransports helfen kann, gefährliche molekulare Ablagerungen zu verhindern. Zukünftige Studien werden untersuchen, ob die Technik auch das Gedächtnis oder die Schlafqualität verbessern kann.",
+      "heading_es": "Aplicaciones médicas potenciales",
+      "body_es": "Los investigadores quieren determinar si un movimiento de fluidos mejorado puede eliminar proteínas dañinas vinculadas a afecciones neurodegenerativas como la enfermedad de Alzheimer. Joshua Levitt señaló que mejorar la eliminación de desechos puede ayudar a prevenir acumulaciones moleculares peligrosas. Futuros estudios explorarán si la técnica también puede mejorar la memoria o la calidad del sueño."
     }
   ],
   "references": [
@@ -88,7 +96,8 @@
     "en": "Just as pushing a child on a swing at the exact right moment makes it go higher, playing precise sound pulses during deep sleep amplifies the brain's cleaning waves [p:without waking the sleeper]. Could a home headband utilizing this technology help protect your long-term cognitive health?",
     "vi": "Giống như việc đẩy một đứa trẻ trên xích đu vào đúng thời điểm giúp xích đu bay cao hơn, việc phát các xung âm thanh chính xác trong giấc ngủ sâu sẽ khuếch đại sóng làm sạch của não bộ [p:mà không làm người ngủ thức giấc]. Liệu một chiếc băng đô tại nhà ứng dụng công nghệ này có thể giúp bảo vệ sức khỏe nhận thức lâu dài của bạn?",
     "fr": "De même que pousser un enfant sur une balançoire au moment exact la fait aller plus haut, la diffusion d'impulsions sonores précises pendant le sommeil profond amplifie les ondes de nettoyage du cerveau [p:sans réveiller le dormeur]. Un bandeau de nuit utilisant cette technologie pourrait-il contribuer à protéger votre santé cognitive à long terme ?",
-    "de": "Genau wie das Anschubsen eines Kindes auf einer Schaukel im exakt richtigen Moment diese höher fliegen lässt, verstärkt das Abspielen präziser Schallimpulse während des Tiefschlafs die Reinigungswellen des Gehirns [p:ohne den Schlafenden aufzuwecken]. Könnte ein für zu Hause bestimmtes Stirnband mit dieser Technologie helfen, deine langfristige kognitive Gesundheit zu schützen?"
+    "de": "Genau wie das Anschubsen eines Kindes auf einer Schaukel im exakt richtigen Moment diese höher fliegen lässt, verstärkt das Abspielen präziser Schallimpulse während des Tiefschlafs die Reinigungswellen des Gehirns [p:ohne den Schlafenden aufzuwecken]. Könnte ein für zu Hause bestimmtes Stirnband mit dieser Technologie helfen, deine langfristige kognitive Gesundheit zu schützen?",
+    "es": "Así como empujar a un niño en un columpio en el momento exacto hace que llegue más alto, reproducir precisos pulsos de sonido durante el sueño profundo amplifica las ondas de limpieza del cerebro [p:sin despertar al durmiente]. ¿Podría una diadema casera que utilice esta tecnología ayudar a proteger su salud cognitiva a largo plazo?"
   },
   "applySteps": {
     "en": [
@@ -110,6 +119,11 @@
       "Einen konsistenten Schlafrhythmus beibehalten, um die natürliche Aktivität langsamer Wellen zu unterstützen",
       "Die Schlafzimmerumgebung optimieren, um störende Hintergrundgeräusche zu eliminieren",
       "Laufende wissenschaftliche Aktualisierungen bezüglich Heim-Schlautechnologie-Geräten verfolgen"
+    ],
+    "es": [
+      "Mantenga un horario de sueño constante para apoyar la actividad natural de ondas lentas",
+      "Optimice el entorno de su dormitorio para eliminar ruidos de fondo disruptivos",
+      "Supervise las actualizaciones científicas continuas sobre dispositivos de tecnología para el sueño en el hogar"
     ]
   },
   "coverCandidates": [
@@ -207,6 +221,16 @@
       "algorithmus": "Eine eindeutige Handlungsanweisung zur Lösung von Problemen durch einen Computer.",
       "neurodegenerativen erkrankungen": "Krankheiten, bei denen Nervenzellen im Gehirn schrittweise absterben.",
       "alzheimer-krankheit": "Eine häufige Form von Demenz, die das Gedächtnis und die Denkfähigkeit stark beeinträchtigt."
+    },
+    "es": {
+      "líquido cefalorraquídeo": "Fluido transparente que rodea el cerebro y la médula espinal.",
+      "ácido láctico": "Subproducto metabólico generado durante la actividad celular.",
+      "ruido rosa": "Señal acústica con energía distribuida que imita patrones naturales de sonido.",
+      "eeg": "Técnica para registrar la actividad eléctrica del cerebro.",
+      "fmri": "Resonancia magnética funcional para medir la actividad cerebral.",
+      "algoritmo": "Conjunto ordenado de operaciones sistemáticas para cálculos computacionales.",
+      "neurodegenerativas": "Enfermedades caracterizadas por el deterioro progresivo del sistema nervioso.",
+      "proteínas": "Macromoléculas esenciales formadas por cadenas de aminoácidos."
     }
   },
   "ai": {
@@ -217,7 +241,8 @@
       "keyPoint",
       "applySteps",
       "fr",
-      "de"
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"

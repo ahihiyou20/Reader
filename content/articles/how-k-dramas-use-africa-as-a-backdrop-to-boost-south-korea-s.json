@@ -99,7 +99,8 @@
   "summary": {
     "vi": "Các bộ phim truyền hình Hàn Quốc nổi tiếng thường sử dụng Châu Phi như một phông nền rập khuôn, khắc họa lục địa này là nơi nguy hiểm, hoang dã hoặc là điểm đến từ thiện nhằm làm nổi bật sự phát triển của Hàn Quốc. Nghiên cứu truyền thông cho thấy việc xây dựng hình ảnh này giúp củng cố sức mạnh mềm và vị thế toàn cầu của Seoul. Tuy nhiên, cách biểu đạt này khiến khán giả châu Phi chỉ hiện lên như một biểu tượng của sự thiếu thốn dưới góc nhìn thực dân.",
     "de": "Südkoreanische K-Dramas nutzen Darstellungen Afrikas zunehmend, um den eigenen Status als entwickelte Kulturnation zu betonen. Anhand von Produktionen wie *Queen of Tears* oder *Shooting Stars* zeigt eine medienwissenschaftliche Analyse, wie der Kontinent auf altbekannte Stereotype reduziert wird: Er fungiert entweder als hilfsbedürftige Kulisse für koreanische Wohltätigkeit oder als gesetzloser Raum fernab moderner Zivilisation. Ähnlich wie einst westliche Kolonialmächte bedient sich Südkoreas aufstrebende Popkultur eines kolonialen Blicks, um den eigenen zivilisatorischen Fortschritt durch den Kontrast zu einer vermeintlich primitiven Welt zu definieren. Für das wachsende afrikanische Publikum festigen diese Erzählungen jedoch einseitige Klischees und degradieren den Kontinent zum bloßen Symbol des Mangels.",
-    "es": "¿Cómo afianza el drama surcoreano su prestigio internacional? Diversas producciones contemporáneas recurren a representaciones reduccionistas de África para ensalzar el desarrollo y civismo de Corea del Sur. En lugar de reflejar la complejidad del continente, varios melodramas exitosos lo presentan como un territorio caótico o dependiente de la caridad extranjera. Esta contraposición permite legitimar el poder blando surcoreano y posicionar al país como una potencia generosa y moderna. No obstante, dicho relato reproduce estereotipos coloniales que reducen la diversidad africana a un simple símbolo de carencia frente al espectador global."
+    "es": "¿Cómo afianza el drama surcoreano su prestigio internacional? Diversas producciones contemporáneas recurren a representaciones reduccionistas de África para ensalzar el desarrollo y civismo de Corea del Sur. En lugar de reflejar la complejidad del continente, varios melodramas exitosos lo presentan como un territorio caótico o dependiente de la caridad extranjera. Esta contraposición permite legitimar el poder blando surcoreano y posicionar al país como una potencia generosa y moderna. No obstante, dicho relato reproduce estereotipos coloniales que reducen la diversidad africana a un simple símbolo de carencia frente al espectador global.",
+    "fr": "Ce texte analyse la manière dont les séries sud-coréennes, ou K-dramas, utilisent le continent africain comme un simple faire-valoir. À travers l'étude de plusieurs fictions populaires, l'auteur démontre que l'Afrique y est constamment réduite à des clichés archaïques, qu'il s'agisse d'un espace de rédemption humanitaire ou d'une zone de non-droit. Cette mise en scène répétée permet à la Corée du Sud de mettre en valeur sa propre modernité et de renforcer son influence culturelle mondiale au détriment d'une représentation juste et nuancée du continent."
   },
   "keyPoint": {
     "en": "Media acts as a funhouse mirror, distorting distant lands to make the home nation look taller. [p:When you watch popular international shows, ask yourself whose image is really being polished in the background.]",
@@ -123,10 +124,28 @@
       "keyPoint",
       "applySteps",
       "de",
-      "es"
+      "es",
+      "en",
+      "fr"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   },
-  "publishAt": "2026-10-23T17:02:57.037Z"
+  "publishAt": "2026-10-23T17:02:57.037Z",
+  "glossary": {
+    "en": {
+      "k-pop": "South Korean popular music.",
+      "hallyu wave": "The global obsession with South Korea's pop culture production.",
+      "k-drama": "TV series originating from South Korea.",
+      "melodrama": "A sensational dramatic piece with exaggerated appeal to the emotions.",
+      "achille mbembe": "A Cameroonian philosopher.",
+      "ngo": "Non-governmental organization.",
+      "shooting stars": "A K-drama released in 2022.",
+      "marry my husband": "A K-drama released in 2024.",
+      "queen of tears": "A melodrama series released in 2024.",
+      "sam okyere": "An African immigrant and media personality living in South Korea.",
+      "jonathan yiombi": "An African immigrant and media personality living in South Korea.",
+      "drc": "Democratic Republic of the Congo."
+    }
+  }
 }

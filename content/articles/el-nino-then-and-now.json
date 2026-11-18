@@ -186,10 +186,11 @@
       "applySteps",
       "fr",
       "de",
-      "es"
+      "es",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   },
   "publishAt": "2026-10-23T17:03:57.037Z",
   "glossary": {
@@ -232,6 +233,28 @@
       "jason-2": "Misión satelital de altimetría oceánica operativa entre 2008 y 2019 para el estudio del clima global.",
       "noaa": "Oficina Nacional de Administración Oceánica y Atmosférica de Estados Unidos, responsable del monitoreo y pronósticos climáticos.",
       "nasa-ssh": "Registros de la NASA sobre la altura de la superficie del mar obtenidos mediante altimetría satelital."
+    },
+    "en": {
+      "el niño": "A natural climate pattern bringing warmer-than-normal water to parts of the equatorial Pacific.",
+      "jet propulsion laboratory": "A NASA research center that manages robotic space probes and Earth science missions.",
+      "altimetry satellites": "Spacecraft that measure the height of the sea surface using radar instruments.",
+      "topex/poseidon": "An early joint satellite mission launched to map ocean surface topography.",
+      "sentinel-6 michael freilich": "An Earth-observing satellite dedicated to measuring global sea level rise.",
+      "jason-2": "An oceanography satellite used to monitor global sea surface height.",
+      "noaa": "The United States federal agency focused on weather forecasting and oceanic research.",
+      "trade winds": "Permanent east-to-west prevailing winds that blow in the Earth's equatorial region."
+    },
+    "vi": {
+      "satellite altimetry": "Công nghệ đo đạc chiều cao mặt biển bằng vệ tinh trong không gian.",
+      "el niño": "Hiện tượng nước biển ấm lên bất thường ở xích đạo Thái Bình Dương.",
+      "feedback loop": "Vòng lặp phản hồi, quá trình các yếu tố tương tác làm gia tăng thay đổi.",
+      "gió tín phong": "Hệ thống gió thổi thường xuyên từ các vùng áp cao cận nhiệt về xích đạo.",
+      "jpl": "Phòng thí nghiệm Sức đẩy Phản lực thuộc NASA.",
+      "nasa": "Cơ quan Hàng không và Không gian Quốc gia Mỹ.",
+      "topex/poseidon": "Tên một vệ tinh đo cao độ mặt biển hợp tác giữa Mỹ và Pháp.",
+      "sentinel-6 michael freilich": "Vệ tinh chuyên dụng theo dõi mực nước biển toàn cầu.",
+      "jason-2": "Vệ tinh nghiên cứu đại dương và đo cao mặt biển.",
+      "noaa": "Cơ quan Quản lý Khí quyển và Đại dương Quốc gia Mỹ."
     }
   }
 }

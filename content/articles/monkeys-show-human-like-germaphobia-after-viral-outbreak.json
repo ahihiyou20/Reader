@@ -162,10 +162,11 @@
       "applySteps",
       "fr",
       "de",
-      "es"
+      "es",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   },
   "glossary": {
     "fr": {
@@ -204,6 +205,30 @@
       "veteranos del brote": "Monos que sobrevivieron al episodio infeccioso previo tras haber experimentado la enfermedad.",
       "no expuestos": "Animales que no estuvieron en contacto con el virus ni padecieron la infección previa.",
       "mecanismo evolutivo": "Rasgo o proceso biológico adaptativo preservado por la selección natural para asegurar la supervivencia."
+    },
+    "en": {
+      "germaphobia": "An extreme aversion to germs and contamination.",
+      "primates": "A group of mammals including monkeys, apes, and humans.",
+      "airborne": "Carried transported or transmitted through the air.",
+      "macaques": "A type of Old World monkey frequently used in research.",
+      "sanctuary": "A protected safe haven for rescued or studied animals.",
+      "synthetic": "Made by chemical synthesis rather than being natural.",
+      "resin-coated": "Covered in a sticky plant-based or synthetic plastic substance.",
+      "feces": "Waste matter eliminated from the bowels; poop.",
+      "naive monkeys": "Monkeys that had no prior exposure to the viral outbreak.",
+      "evolutionary": "Relating to the gradual development of species over time."
+    },
+    "vi": {
+      "hội chứng sợ vi trùng": "Sự sợ hãi ám ảnh đối với vi trùng và ô nhiễm.",
+      "linh trưởng": "Bộ động vật có vú bao gồm khỉ, vượn và con người.",
+      "ác cảm": "Cảm giác ghét hoặc không muốn tiếp xúc.",
+      "khu bảo tồn": "Nơi được bảo vệ để chăm sóc và bảo tồn động vật.",
+      "đại dịch": "Sự bùng phát bệnh truyền nhiễm trên diện rộng lớn.",
+      "nhiễm trùng": "Sự xâm nhập của vi sinh vật gây bệnh vào cơ thể.",
+      "macaque": "Một chi khỉ cựu thế có đuôi.",
+      "cơ chế sinh tồn": "Hệ thống phản ứng giúp sinh vật sống sót trước nguy hiểm.",
+      "tiến hóa": "Quá trình biến đổi đặc điểm sinh học qua các thế hệ.",
+      "chấn thương": "Tổn thương tâm lý hoặc thể chất nghiêm trọng."
     }
   }
 }

@@ -89,7 +89,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết phân tích vở kịch nổi tiếng The Crucible của Arthur Miller về các phiên tòa phù thủy Salem. Tác giả chỉ ra rằng vở kịch này chứa đựng nhiều sai lệch lịch sử nghiêm trọng khi mô tả phóng đại mối tình giữa John Proctor và Abigail Williams. Thực tế, Miller đã sử dụng tác phẩm để phản chiếu những rạn nứt trong cuộc hôn nhân và sự tội lỗi của chính ông, đồng thời vô tình gán ghép định kiến ác ý lên các nhân vật lịch sử thực tế."
+    "vi": "Bài viết phân tích vở kịch nổi tiếng The Crucible của Arthur Miller về các phiên tòa phù thủy Salem. Tác giả chỉ ra rằng vở kịch này chứa đựng nhiều sai lệch lịch sử nghiêm trọng khi mô tả phóng đại mối tình giữa John Proctor và Abigail Williams. Thực tế, Miller đã sử dụng tác phẩm để phản chiếu những rạn nứt trong cuộc hôn nhân và sự tội lỗi của chính ông, đồng thời vô tình gán ghép định kiến ác ý lên các nhân vật lịch sử thực tế.",
+    "fr": "La célèbre pièce de théâtre d'Arthur Miller s'inspire des procès de Salem, mais prend de grandes libertés avec l'histoire réelle. L'auteur a transformé les faits pour apaiser sa propre culpabilité conjugale et donner une image biaisée des événements. En faisant d'une jeune fille le bouc émissaire principal, l'œuvre véhicule également une vision problématique. Ce texte démontre comment l'art reflète souvent les anxiétés personnelles de son créateur plutôt que la vérité historique objective.",
+    "de": "Arthur Millers berühmtes Theaterstück The Crucible verknüpft die Hexenprozesse von Salem mit der McCarthy-Ära. Der Autor nahm sich jedoch große historische Freiheiten heraus. Tatsächlich spiegeln die Handlung und die angebliche Affäre zwischen John Proctor und der jungen Abigail Williams vor allem Millers eigene Ehekrise und persönliche Schuldgefühle wider. Historiker kritisieren das Werk daher als irreführend, da es reale historischen Hintergründe stark verzerrt, um eine persönliche Vergebung zu inszenieren.",
+    "es": "El famoso autor Arthur Miller escribió esta obra inspirándose en los juicios históricos de Salem, pero alteró los hechos para reflejar sus propias vivencias y su matrimonio en crisis. Al transformar a los personajes reales en figuras heroicas o villanas según su conveniencia personal, la pieza distorsionó la historia real de la época. Lejos de ser un registro fiel del pasado, este drama revela sobre todo las tensiones y prejuicios personales de su creador durante el siglo veinte."
   },
   "keyPoint": {
     "en": "Art is a lens that bends reality to fit the artist's inner mirror. [p:When consuming historical fiction, ask yourself:] Whose personal guilt or hidden agenda is truly shaping the narrative you are being asked to believe?",
@@ -111,10 +114,27 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
   },
-  "publishAt": "2026-10-23T17:12:57.037Z"
+  "publishAt": "2026-10-23T17:12:57.037Z",
+  "glossary": {
+    "en": {
+      "the crucible": "Arthur Miller's famous 1952 play about the Salem witch trials.",
+      "salem witch trials": "A series of hearings and prosecutions of people accused of witchcraft in colonial Massachusetts between 1692 and 1693.",
+      "allegory": "A story that can be interpreted to reveal a hidden meaning, typically a moral or political one.",
+      "red scare": "A period of intense fear of communist subversion in American society during the mid-20th century.",
+      "john proctor": "A historical farmer and victim of the Salem witch trials portrayed as the tragic hero in Miller's play.",
+      "abigail williams": "One of the primary accusers in the Salem witch trials, depicted as Proctor's former lover in the play.",
+      "spectral evidence": "Testimony that digital or spiritual spectres of accused individuals caused harm, used during the Salem trials.",
+      "timebends": "Arthur Miller's 1987 autobiography detailing his life and creative processes.",
+      "artistic licence": "Freedom to depart from the facts of a matter for artistic effect in a creative work."
+    }
+  }
 }

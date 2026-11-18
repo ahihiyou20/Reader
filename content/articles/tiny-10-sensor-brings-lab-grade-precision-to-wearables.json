@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Tiny $10 Sensor Brings Lab-Grade Precision to Wearables",
-    "vi": "Cảm biến 10 USD mang độ chính xác cấp phòng thí nghiệm lên thiết bị đeo"
+    "vi": "Cảm biến 10 USD mang độ chính xác cấp phòng thí nghiệm lên thiết bị đeo",
+    "fr": "Un minuscule capteur à 10 $ apporte une précision de laboratoire aux objets connectés",
+    "de": "Winziger 10-Dollar-Sensor bringt Laborpräzision in Wearables",
+    "es": "Pequeño sensor de $10 aporta precisión de laboratorio a dispositivos portátiles"
   },
   "hook": {
     "en": "Scientists have developed an inexpensive optical sensor [y:that could revolutionize wearable health monitors] and everyday technology. By rethinking how light is analyzed mathematically, this compact device achieves laboratory-level accuracy at a fraction of the usual cost and size, paving the way for needle-free glucose tracking and advanced mobile diagnostics {source}.",
-    "vi": "Các nhà khoa học đã phát triển một cảm biến quang học giá rẻ [y:có thể cách mạng hóa các thiết bị theo dõi sức khỏe đeo tay] và công nghệ hàng ngày. Bằng cách tư duy lại cách phân tích ánh sáng về mặt toán học, thiết bị nhỏ gọn này đạt được độ accuracy ở mức phòng thí nghiệm với chi phí và kích thước thấp hơn nhiều, mở đường cho việc theo dõi đường huyết không cần kim tiêm và chẩn đoán di động tiên tiến {source}."
+    "vi": "Các nhà khoa học đã phát triển một cảm biến quang học giá rẻ [y:có thể cách mạng hóa các thiết bị theo dõi sức khỏe đeo tay] và công nghệ hàng ngày. Bằng cách tư duy lại cách phân tích ánh sáng về mặt toán học, thiết bị nhỏ gọn này đạt được độ accuracy ở mức phòng thí nghiệm với chi phí và kích thước thấp hơn nhiều, mở đường cho việc theo dõi đường huyết không cần kim tiêm và chẩn đoán di động tiên tiến {source}.",
+    "fr": "Des scientifiques ont mis au point un capteur optique bon marché [y:qui pourrait révolutionner les moniteurs de santé portables] et la technologie du quotidien. En repensant la manière d'analyser mathématiquement la lumière, cet appareil compact atteint une précision de niveau laboratoire pour une fraction du coût et de la taille habituels, ouvrant la voie au suivi du glucose sans aiguille et au diagnostic mobile avancé {source}.",
+    "de": "Wissenschaftler haben einen kostengünstigen optischen Sensor entwickelt, [y:der tragbare Gesundheitsmonitore] und alltägliche Technologien revolutionieren könnte. Durch ein neues mathematisches Verständnis der Lichtanalyse erreicht dieses kompakte Gerät Laborgenauigkeit zu einem Bruchteil der üblichen Kosten und Größe, was den Weg für nadelfreie Blutzuckermessungen und fortschrittliche mobile Diagnostik ebnet {source}.",
+    "es": "Científicos han desarrollado un sensor óptico económico [y:que podría revolucionar los monitores de salud portátiles] y la tecnología cotidiana. Al replantear cómo se analiza la luz matemáticamente, este dispositivo compacto logra una precisión de nivel de laboratorio a una fracción del costo y tamaño habituales, abriendo el camino hacia el control de glucosa sin agujas y diagnósticos móviles avanzados {source}."
   },
   "sections": [
     {
       "heading_en": "A New Mathematical Approach",
       "heading_vi": "Phương pháp toán học mới",
       "body_en": "Traditional spectrometers usually require bulky equipment to split light into wavelengths or perform complex calculations. Researchers solved this by applying a mathematical concept known as the convolution theorem directly in the optical domain. This approach utilizes repeating optical components to process incoming light efficiently, delivering high precision without the usual performance compromises associated with miniaturized instruments.",
-      "body_vi": "Các máy quang phổ truyền thống thường đòi hỏi thiết bị cồng kềnh để tách ánh sáng thành các bước sóng hoặc thực hiện các phép tính phức tạp. Các nhà nghiên cứu đã giải quyết vấn đề này bằng cách áp dụng một khái niệm toán học gọi là định lý tích chập (*convolution theorem*) trực tiếp trong miền quang học. Phương pháp này tận dụng các thành phần quang học lặp lại để xử lý ánh sáng tới một cách hiệu quả, mang lại độ chính xác cao mà không gặp phải các thỏa hiệp về hiệu suất thường thấy ở các dụng cụ thu nhỏ."
+      "body_vi": "Các máy quang phổ truyền thống thường đòi hỏi thiết bị cồng kềnh để tách ánh sáng thành các bước sóng hoặc thực hiện các phép tính phức tạp. Các nhà nghiên cứu đã giải quyết vấn đề này bằng cách áp dụng một khái niệm toán học gọi là định lý tích chập (*convolution theorem*) trực tiếp trong miền quang học. Phương pháp này tận dụng các thành phần quang học lặp lại để xử lý ánh sáng tới một cách hiệu quả, mang lại độ chính xác cao mà không gặp phải các thỏa hiệp về hiệu suất thường thấy ở các dụng cụ thu nhỏ.",
+      "heading_fr": "Une nouvelle approche mathématique",
+      "body_fr": "Les spectromètres traditionnels nécessitent généralement des équipements volumineux pour diviser la lumière en longueurs d'onde ou effectuer des calculs complexes. Les chercheurs ont résolu ce problème en appliquant un concept mathématique connu sous le nom de théorème de convolution directement dans le domaine optique. Cette approche utilise des composants optiques répétés pour traiter efficacement la lumière entrante, offrant une haute précision sans les compromis de performance habituels associés aux instruments miniaturisés.",
+      "heading_de": "Ein neuer mathematischer Ansatz",
+      "body_de": "Herkömmliche Spektrometer erfordern meist sperrige Geräte, um Licht in Wellenlängen aufzuteilen oder komplexe Berechnungen durchzuführen. Forscher lösten dies, indem sie ein mathematisches Konzept namens Faltungssatz direkt im optischen Bereich anwandten. Dieser Ansatz nutzt sich wiederholende optische Komponenten zur effizienten Verarbeitung einfallenden Lichts und liefert hohe Präzision ohne die üblichen Leistungseinbußen miniaturisierter Instrumente.",
+      "heading_es": "Un nuevo enfoque matemático",
+      "body_es": "Los espectrómetros tradicionales suelen requerir equipos voluminosos para dividir la luz en longitudes de onda o realizar cálculos complejos. Los investigadores resolvieron esto aplicando un concepto matemático conocido como el teorema de convolución directamente en el dominio óptico. Este enfoque utiliza componentes ópticos repetitivos para procesar la luz entrante de manera eficiente, brindando alta precisión sin los compromisos de rendimiento habituales asociados con instrumentos miniaturizados."
     },
     {
       "heading_en": "Exceptional Real-World Performance",
       "heading_vi": "Hiệu suất thực tế vượt trội",
       "body_en": "During practical tests, the tiny device demonstrated remarkable capabilities across various materials and substances. It successfully classified plastics, pharmaceuticals, and everyday beverages with flawless accuracy. Furthermore, it measured organic solutions and water-based concentrations with extreme precision, outperforming many commercial benchtop instruments normally restricted to specialized laboratory environments.",
-      "body_vi": "Trong các thử nghiệm thực tế, thiết bị nhỏ bé này đã thể hiện năng lực đáng chú ý trên nhiều loại vật liệu và chất khác nhau. Nó đã phân loại thành công các loại nhựa, dược phẩm và đồ uống hàng ngày với độ chính xác hoàn hảo. Hơn thế nữa, nó đo lường các dung dịch hữu cơ và nồng độ gốc nước với độ chính xác cực cao, vượt trội hơn nhiều dụng cụ để bàn thương mại thường bị giới hạn trong các phòng thí nghiệm chuyên dụng."
+      "body_vi": "Trong các thử nghiệm thực tế, thiết bị nhỏ bé này đã thể hiện năng lực đáng chú ý trên nhiều loại vật liệu và chất khác nhau. Nó đã phân loại thành công các loại nhựa, dược phẩm và đồ uống hàng ngày với độ chính xác hoàn hảo. Hơn thế nữa, nó đo lường các dung dịch hữu cơ và nồng độ gốc nước với độ chính xác cực cao, vượt trội hơn nhiều dụng cụ để bàn thương mại thường bị giới hạn trong các phòng thí nghiệm chuyên dụng.",
+      "heading_fr": "Des performances réelles exceptionnelles",
+      "body_fr": "Lors de tests pratiques, le minuscule appareil a démontré des capacités remarquables sur divers matériaux et substances. Il a classé avec succès des plastiques, des produits pharmaceutiques et des boissons du quotidien avec une précision irréprochable. De plus, il a mesuré des solutions organiques et des concentrations aqueuses avec une extrême précision, surpassant de nombreux instruments de laboratoire commerciaux normalement réservés à des environnements spécialisés.",
+      "heading_de": "Außergewöhnliche Leistung in der Praxis",
+      "body_de": "Bei Praxistests zeigte das winzige Gerät bemerkenswerte Fähigkeiten bei verschiedenen Materialien und Substanzen. Es klassifizierte Kunststoffe, Pharmazeutika und Alltagsgetränke fehlerfrei. Darüber hinaus maß es organische Lösungen und wässrige Konzentrationen mit extremer Präzision und übertraf dabei viele kommerzielle Tischgeräte, die sonst spezialisierten Laboratorien vorbehalten sind.",
+      "heading_es": "Rendimiento excepcional en el mundo real",
+      "body_es": "Durante las pruebas prácticas, el pequeño dispositivo demostró capacidades notables en diversos materiales y sustancias. Clasificó con éxito plásticos, productos farmacéuticos y bebidas cotidianas con precisión impecable. Además, midió soluciones orgánicas y concentraciones acuosas con extrema precisión, superando a muchos instrumentos comerciales de sobremesa normalmente limitados a entornos de laboratorio especializados."
     },
     {
       "heading_en": "Transforming Healthcare Diagnostics",
       "heading_vi": "Chuyển đổi chẩn đoán y tế",
       "body_en": "The biomedical trials yielded particularly promising outcomes for noninvasive health monitoring. Under simulated physiological conditions, the sensor accurately tracked several human biomarkers, including skin moisture and blood sugar levels. Although additional research remains necessary, this breakthrough suggests a viable pathway toward monitoring glucose continuously without repeatedly piercing the skin for blood samples.",
-      "body_vi": "Các thử nghiệm y y sinh đã mang lại kết quả đặc biệt hứa hẹn cho việc theo dõi sức khỏe không xâm lấn (*noninvasive health monitoring*). Dưới các điều kiện sinh lý mô phỏng, cảm biến đã theo dõi chính xác một số dấu ấn sinh học (*biomarkers*) của con người, bao gồm độ ẩm da và nồng độ đường trong máu. Mặc dù vẫn cần thêm nhiều nghiên cứu, bước đột phá này gợi ý một con đường khả thi hướng tới việc theo dõi lượng đường huyết liên tục mà không cần đâm thủng da nhiều lần để lấy mẫu máu."
+      "body_vi": "Các thử nghiệm y y sinh đã mang lại kết quả đặc biệt hứa hẹn cho việc theo dõi sức khỏe không xâm lấn (*noninvasive health monitoring*). Dưới các điều kiện sinh lý mô phỏng, cảm biến đã theo dõi chính xác một số dấu ấn sinh học (*biomarkers*) của con người, bao gồm độ ẩm da và nồng độ đường trong máu. Mặc dù vẫn cần thêm nhiều nghiên cứu, bước đột phá này gợi ý một con đường khả thi hướng tới việc theo dõi lượng đường huyết liên tục mà không cần đâm thủng da nhiều lần để lấy mẫu máu.",
+      "heading_fr": "Transformer le diagnostic de santé",
+      "body_fr": "Les essais biomédicaux ont produit des résultats particulièrement prometteurs pour la surveillance non invasive de la santé. Dans des conditions physiologiques simulées, le capteur a suivi avec précision plusieurs biomarqueurs humains, notamment l'humidité de la peau et la glycémie. Bien que des recherches supplémentaires restent nécessaires, cette percée suggère une voie viable vers la surveillance continue du glucose sans piquer la peau de manière répétée pour des échantillons de sang.",
+      "heading_de": "Transformation der Gesundheitsdiagnostik",
+      "body_de": "Die biomedizinischen Versuche lieferten besonders vielversprechende Ergebnisse für die nicht-invasive Gesundheitsüberwachung. Unter simulierten physiologischen Bedingungen verfolgte der Sensor präzise mehrere menschliche Biomarker, darunter Hautfeuchtigkeit und Blutzuckerwerte. Obwohl weitere Forschung nötig ist, weist dieser Durchbruch den Weg zu einer kontinuierlichen Glukoseüberwachung ohne wiederholtes Stechen der Haut für Blutproben.",
+      "heading_es": "Transformación del diagnóstico médico",
+      "body_es": "Los ensayos biomédicos arrojaron resultados particularmente prometedores para el control de la salud no invasivo. Bajo condiciones fisiológicas simuladas, el sensor rastreó con precisión varios biomarcadores humanos, incluida la humedad de la piel y los niveles de azúcar en sangre. Aunque se necesita investigación adicional, este avance sugiere un camino viable hacia el control continuo de la glucosa sin perforar repetidamente la piel para obtener muestras de sangre."
     }
   ],
   "references": [
@@ -69,7 +93,10 @@
   },
   "keyPoint": {
     "en": "Like having a miniature chemistry lab [p:hidden inside your everyday accessories], this sensor brings hidden data to light. How might your daily routines change if you could instantly measure your body's vital chemistry anytime?",
-    "vi": "Giống như việc sở hữu một phòng thí nghiệm hóa học thu nhỏ [p:ẩn bên trong các phụ kiện hàng ngày của bạn], cảm biến này đưa dữ liệu ẩn ra ánh sáng. Thói quen hàng ngày của bạn có thể thay đổi như thế nào nếu bạn có thể ngay lập tức đo lường hóa học quan trọng của cơ thể bất cứ lúc nào?"
+    "vi": "Giống như việc sở hữu một phòng thí nghiệm hóa học thu nhỏ [p:ẩn bên trong các phụ kiện hàng ngày của bạn], cảm biến này đưa dữ liệu ẩn ra ánh sáng. Thói quen hàng ngày của bạn có thể thay đổi như thế nào nếu bạn có thể ngay lập tức đo lường hóa học quan trọng của cơ thể bất cứ lúc nào?",
+    "fr": "Semblable à un laboratoire de chimie miniature [p:dissimulé dans vos accessoires de tous les jours], ce capteur met en lumière des données cachées. Comment vos routines quotidiennes changeraient-elles si vous pouviez mesurer instantanément la chimie vitale de votre corps à tout moment ?",
+    "de": "Wie ein winziges Chemielabor, [p:das in deinen Alltagsaccessoires verborgen ist], bringt dieser Sensor unsichtbare Daten ans Licht. Wie könnte sich dein Alltag verändern, wenn du jederzeit sofort die lebenswichtige Chemie deines Körpers messen könntest?",
+    "es": "Como tener un laboratorio de química en miniatura [p:oculto dentro de tus accesorios cotidianos], este sensor saca a la luz datos ocultos. ¿Cómo podrían cambiar tus rutinas diarias si pudieras medir instantáneamente la química vital de tu cuerpo en cualquier momento?"
   },
   "applySteps": {
     "en": [
@@ -81,6 +108,21 @@
       "Xác định một chỉ số sức khỏe hàng ngày mà bạn muốn theo dõi một cách dễ dàng.",
       "Nghiên cứu các thiết bị đeo sắp ra mắt sử dụng cảm biến quang học tiên tiến.",
       "Tham khảo ý kiến chuyên gia y tế về các công cụ theo dõi không xâm lấn trong tương lai."
+    ],
+    "fr": [
+      "Identifiez une mesure de santé quotidienne que vous souhaitez suivre sans effort.",
+      "Recherchez les futurs appareils portables utilisant des capteurs optiques avancés.",
+      "Consultez un professionnel de la santé concernant les futurs outils de surveillance non invasive."
+    ],
+    "de": [
+      "Identifiziere eine tägliche Gesundheitsmetrik, die du mühelos verfolgen möchtest.",
+      "Informiere dich über kommende Wearables mit fortschrittlichen optischen Sensoren.",
+      "Konsultiere medizinisches Fachpersonal bezüglich zukünftiger nicht-invasiver Überwachungswerkzeuge."
+    ],
+    "es": [
+      "Identifica una métrica de salud diaria que desees rastrear sin esfuerzo.",
+      "Investiga los próximos dispositivos portátiles que utilicen sensores ópticos avanzados.",
+      "Consulta a un profesional de la salud sobre futuras herramientas de control no invasivo."
     ]
   },
   "coverCandidates": [
@@ -117,9 +159,69 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
+  },
+  "glossary": {
+    "en": {
+      "optical sensor": "A device that uses light to detect and measure physical properties.",
+      "spectrometers": "Instruments used to measure properties of light across a specific portion of the electromagnetic spectrum.",
+      "wavelengths": "Distances between successive crests of a wave, especially points in a sound wave or light wave.",
+      "convolution theorem": "A mathematical principle relating the Fourier transform of a convolution to the product of Fourier transforms.",
+      "optical domain": "The realm of light-based processing and phenomena.",
+      "miniaturized instruments": "Devices that have been made significantly smaller in scale.",
+      "pharmaceuticals": "Compound mixtures manufactured for use as medicinal drugs.",
+      "benchtop instruments": "Laboratory equipment designed to be placed on a table or workbench.",
+      "biomedical trials": "Testing phases focused on biological and medical applications.",
+      "physiological conditions": "The normal functional states of a living organism.",
+      "biomarkers": "Measurable indicators of a biological state or condition.",
+      "noninvasive": "Medical procedures that do not require entering the body via breaks in the skin."
+    },
+    "vi": {
+      "máy quang phổ": "Thiết bị dùng để phân tích ánh sáng",
+      "định lý tích chập": "Khái niệm toán học áp dụng vào quang học",
+      "dung dịch hữu cơ": "Hợp chất chứa carbon hòa tan",
+      "dấu ấn sinh học": "Chỉ số đo lường trạng thái cơ thể",
+      "không xâm lấn": "Theo dõi không cần đâm thủng da",
+      "độ ẩm da": "Lượng nước có trên bề mặt da",
+      "đường huyết": "Nồng độ đường có trong máu con người",
+      "chẩn đoán y tế": "Quy trình xác định bệnh lý cơ thể"
+    },
+    "fr": {
+      "spectromètres": "Instruments mesurant les propriétés de la lumière sur une portion du spectre électromagnétique.",
+      "théorème de convolution": "Concept mathématique utilisé ici pour simplifier et accélérer le traitement du signal lumineux.",
+      "domaine optique": "Domaine physique lié à la lumière et aux phénomènes de sa propagation.",
+      "biomarqueurs": "Indicateurs biologiques mesurables d'un état ou d'une condition médicale.",
+      "glycémie": "Taux de glucose présent dans le sang humain.",
+      "non invasive": "Méthode médicale qui ne nécessite aucune effraction cutanée ni introduction d'instruments.",
+      "solutions organiques": "Mélanges liquides contenant des composés à base de carbone.",
+      "concentrations aqueuses": "Mesures de la quantité de substance dissoute dans de l'eau."
+    },
+    "de": {
+      "spektrometer": "Ein Gerät zur Messung von Lichtwellenlängen und deren Intensität.",
+      "faltungssatz": "Ein mathematisches Konzept zur effizienten Signal- und Datenverarbeitung.",
+      "pharmazeutika": "Medikamente und pharmazeutische Wirkstoffe.",
+      "biomarker": "Messbare biologische Indikatoren für physiologische Zustände.",
+      "nicht-invasive": "Medizinische Methoden ohne Verletzung der Haut oder das Eindringen in den Körper.",
+      "glukoseüberwachung": "Die regelmäßige Messung des Blutzuckerspiegels.",
+      "optischen sensor": "Ein Sensor zur Erfassung von Lichtsignalen.",
+      "miniaturisierter": "Stark verkleinert in Bauweise und Format."
+    },
+    "es": {
+      "espectrómetros": "Instrumentos científicos que miden propiedades de la luz en distintas longitudes de onda.",
+      "teorema de convolución": "Principio matemático que simplifica cálculos complejos combinando dos funciones.",
+      "dominio óptico": "Campo de trabajo donde las señales se procesan mediante luz física.",
+      "biomarcadores": "Indicadores biológicos medibles de un estado o condición médica.",
+      "no invasivo": "Método médico que no requiere penetrar la piel ni insertar instrumentos.",
+      "glucosa": "Azúcar simple presente en la sangre que sirve como fuente principal de energía.",
+      "dispositivos portátiles": "Aparatos electrónicos que se llevan puestos en el cuerpo como accesorios.",
+      "concentraciones acuosas": "Proporciones de sustancias disueltas en agua."
+    }
   }
 }

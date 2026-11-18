@@ -244,6 +244,14 @@
       "phd": "Abreviatura de doctorado, el grado académico más alto otorgado por una universidad.",
       "causa y efecto": "Vínculo en el que un hecho provoca directamente la aparición de otro.",
       "premio nobel": "Distinción internacional anual concedida por logros excepcionales en disciplinas específicas."
+    },
+    "vi": {
+      "kinh tế lượng": "Ngành sử dụng toán học và thống kê để phân tích dữ liệu kinh tế thực tế.",
+      "quan hệ nhân quả": "Mối liên hệ khi một hành động thực sự tạo ra kết quả cụ thể.",
+      "sai lệch do biến bị bỏ sót": "Lỗi phân tích khi quên tính đến yếu tố quan trọng dẫn đến hiểu sai lầm.",
+      "thử nghiệm ngẫu nhiên": "Phương pháp chia nhóm tình cờ để so sánh khách quan và chính xác.",
+      "thí nghiệm tự nhiên": "Tình huống thực tế tình cờ tạo ra điều kiện giống như thử nghiệm khoa học.",
+      "blueprint labs": "Trung tâm nghiên cứu thuộc MIT chuyên ứng dụng dữ liệu để cải thiện giáo dục."
     }
   },
   "ai": {
@@ -251,9 +259,10 @@
       "en",
       "fr",
       "de",
-      "es"
+      "es",
+      "vi"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   }
 }

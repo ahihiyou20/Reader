@@ -11,30 +11,54 @@
   ],
   "title": {
     "en": "Why Artificial Intelligence Benchmarks Are Broken and How to Fix Them",
-    "vi": "Lý do các bộ chuẩn đánh giá trí tuệ nhân tạo bị lỗi và cách khắc phục"
+    "vi": "Lý do các bộ chuẩn đánh giá trí tuệ nhân tạo bị lỗi và cách khắc phục",
+    "fr": "Pourquoi les repères d'intelligence artificielle sont défectueux et comment les corriger",
+    "de": "Warum Künstliche-Intelligenz-Benchmarks fehlerhaft sind und wie man sie repariert",
+    "es": "Por qué las pruebas de inteligencia artificial están rotas y cómo arreglarlas"
   },
   "hook": {
     "en": "Standardized tests designed to measure artificial intelligence are fundamentally flawed, according to computer scientist Moritz Hardt {source}. While these measuring sticks historically drove decades of progress purely by accident, modern large language models can easily game the system. Experts now warn that the entire ecosystem needs a complete scientific overhaul before it loses all credibility completely.",
-    "vi": "Các bài kiểm tra tiêu chuẩn hóa được thiết kế để đo lường trí tuệ nhân tạo đang gặp lỗi cơ bản, theo nhà khoa học máy tính Moritz Hardt. Mặc dù những thước đo này trong lịch sử đã thúc đẩy sự tiến bộ trong nhiều thập kỷ một cách tình cờ, các mô hình ngôn ngữ lớn hiện đại có thể dễ dàng gian lận hệ thống. Các chuyên gia hiện cảnh báo rằng toàn bộ hệ sinh thái cần một cuộc đại tu khoa học toàn diện trước khi nó hoàn toàn mất đi uy tín."
+    "vi": "Các bài kiểm tra tiêu chuẩn hóa được thiết kế để đo lường trí tuệ nhân tạo đang gặp lỗi cơ bản, theo nhà khoa học máy tính Moritz Hardt. Mặc dù những thước đo này trong lịch sử đã thúc đẩy sự tiến bộ trong nhiều thập kỷ một cách tình cờ, các mô hình ngôn ngữ lớn hiện đại có thể dễ dàng gian lận hệ thống. Các chuyên gia hiện cảnh báo rằng toàn bộ hệ sinh thái cần một cuộc đại tu khoa học toàn diện trước khi nó hoàn toàn mất đi uy tín.",
+    "fr": "Les tests standardisés conçus pour mesurer l'intelligence artificielle présentent des défauts fondamentaux, selon l'informaticien Moritz Hardt {source}. Alors que ces outils de mesure ont historiquement stimulé des décennies de progrès par pur hasard, les grands modèles de langage modernes peuvent facilement contourner le système. Les experts avertissent désormais que l'ensemble de l'écosystème nécessite une refonte scientifique complète avant de perdre totalement toute crédibilité.",
+    "de": "Standardisierte Tests zur Messung künstlicher Intelligenz sind grundlegend fehlerhaft, wie der Informatiker Moritz Hardt {source} darlegt. Während diese Messlatten historisch gesehen jahrzehntelang rein zufällig den Fortschritt vorantrieben, können moderne große Sprachmodelle das System leicht austricksen. Experten warnen nun, dass das gesamte Ökosystem eine komplette wissenschaftliche Überholung benötigt, bevor es jegliche Glaubwürdigkeit gänzlich verliert.",
+    "es": "Las pruebas estandarizadas diseñadas para medir la inteligencia artificial tienen fallos fundamentales, según el informático Moritz Hardt {source}. Si bien estos métodos impulsaron históricamente décadas de progreso por pura coincidencia, los modelos de lenguaje modernos pueden engañar al sistema fácilmente. Los expertos advierten ahora que todo el ecosistema necesita una renovación científica completa antes de perder toda su credibilidad."
   },
   "sections": [
     {
       "heading_en": "The Flawed Logic of Testing",
       "heading_vi": "Lô-gic kiểm tra đầy sai sót",
       "body_en": "Artificial intelligence benchmarks function much like standardized tests, comparing different algorithms through structured data splits. Historically, developers kept test sets hidden to objectively rank models on leaderboards. While these metrics successfully powered decades of technological growth, researchers largely ignored critical methodological warnings, freely publishing test data across the internet and allowing developers to continuously train models on evaluation materials.",
-      "body_vi": "Các bộ chuẩn đánh giá trí tuệ nhân tạo hoạt động giống như các bài kiểm tra tiêu chuẩn hóa, so sánh các thuật toán khác nhau thông qua việc phân chia dữ liệu có cấu trúc. Về mặt lịch sử, các nhà phát triển giữ bí mật các tập kiểm thử để xếp hạng mô hình một cách khách quan trên bảng xếp hạng (*leaderboard*). Mặc dù các số đo này đã thúc đẩy sự phát triển công nghệ trong nhiều thập kỷ, các nhà nghiên cứu phần lớn đã phớt lờ các cảnh báo về phương pháp luận, tự do xuất bản dữ liệu kiểm thử trên internet và cho phép các nhà phát triển liên tục huấn luyện mô hình dựa trên tài liệu đánh giá."
+      "body_vi": "Các bộ chuẩn đánh giá trí tuệ nhân tạo hoạt động giống như các bài kiểm tra tiêu chuẩn hóa, so sánh các thuật toán khác nhau thông qua việc phân chia dữ liệu có cấu trúc. Về mặt lịch sử, các nhà phát triển giữ bí mật các tập kiểm thử để xếp hạng mô hình một cách khách quan trên bảng xếp hạng (*leaderboard*). Mặc dù các số đo này đã thúc đẩy sự phát triển công nghệ trong nhiều thập kỷ, các nhà nghiên cứu phần lớn đã phớt lờ các cảnh báo về phương pháp luận, tự do xuất bản dữ liệu kiểm thử trên internet và cho phép các nhà phát triển liên tục huấn luyện mô hình dựa trên tài liệu đánh giá.",
+      "heading_fr": "La logique défectueuse des tests",
+      "body_fr": "Les repères d'intelligence artificielle fonctionnent un peu comme des tests standardisés, comparant différents algorithmes grâce à des divisions de données structurées. Historiquement, les développeurs gardaient les ensembles de test cachés pour classer objectivement les modèles sur des tableaux de bord. Bien que ces mesures aient alimenté avec succès des décennies de croissance technologique, les chercheurs ont largement ignoré les avertissements méthodologiques critiques, publiant librement des données de test sur Internet et permettant aux développeurs d'entraîner continuellement des modèles sur le matériel d'évaluation.",
+      "heading_de": "Die fehlerhafte Logik des Testens",
+      "body_de": "Benchmarks für künstliche Intelligenz funktionieren ähnlich wie standardisierte Tests und vergleichen verschiedene Algorithmen durch strukturierte Datenaufteilungen. Historisch hielten Entwickler Testsätze verborgen, um Modelle auf Bestenlisten objektiv zu bewerten. Obwohl diese Metriken jahrzehntelang das technologische Wachstum erfolgreich angetrieben haben, ignorierten Forscher kritische methodische Warnungen weitgehend, veröffentlichten Testdaten frei im Internet und erlaubten Entwicklern, Modelle kontinuierlich mit Evaluationsmaterial zu trainieren.",
+      "heading_es": "La lógica defectuosa de las pruebas",
+      "body_es": "Las pruebas de inteligencia artificial funcionan de forma muy parecida a los exámenes estandarizados, comparando diferentes algoritmos mediante datos estructurados. Históricamente, los desarrolladores mantenían los conjuntos de prueba ocultos para clasificar objetivamente los modelos en listas de rendimiento. Aunque estas métricas impulsaron con éxito décadas de crecimiento tecnológico, los investigadores ignoraron en gran medida las advertencias metodológicas críticas, publicando libremente datos de prueba en internet y permitiendo que los desarrolladores entrenaran continuamente los modelos con el material de evaluación."
     },
     {
       "heading_en": "Absolute Scores Versus Rankings",
       "heading_vi": "Điểm số tuyệt đối và bảng xếp hạng",
       "body_en": "Absolute scores generated by these evaluations often mislead the public about actual capabilities. When an algorithm achieves high accuracy on a specific math test, observers incorrectly assume it matches human expert levels. However, shifting evaluation datasets slightly yields radically different outcomes, rendering absolute numbers meaningless. Only relative rankings between competing models remain stable and useful for predicting real world performance.",
-      "body_vi": "Điểm số tuyệt đối được tạo ra từ các đánh giá này thường làm công chúng hiểu lầm về năng lực thực tế. Khi một thuật toán đạt độ chính xác cao trong một bài kiểm tra toán học cụ thể, người quan sát sẽ nhầm tưởng rằng nó ngang bằng với trình độ chuyên gia con người. Tuy nhiên, việc thay đổi nhẹ các tập dữ liệu đánh giá sẽ mang lại kết quả hoàn toàn khác nhau, khiến các con số tuyệt đối trở nên vô nghĩa. Chỉ có các thứ hạng tương đối giữa các mô hình cạnh tranh là vẫn ổn định và hữu ích để dự đoán hiệu suất trong thế giới thực."
+      "body_vi": "Điểm số tuyệt đối được tạo ra từ các đánh giá này thường làm công chúng hiểu lầm về năng lực thực tế. Khi một thuật toán đạt độ chính xác cao trong một bài kiểm tra toán học cụ thể, người quan sát sẽ nhầm tưởng rằng nó ngang bằng với trình độ chuyên gia con người. Tuy nhiên, việc thay đổi nhẹ các tập dữ liệu đánh giá sẽ mang lại kết quả hoàn toàn khác nhau, khiến các con số tuyệt đối trở nên vô nghĩa. Chỉ có các thứ hạng tương đối giữa các mô hình cạnh tranh là vẫn ổn định và hữu ích để dự đoán hiệu suất trong thế giới thực.",
+      "heading_fr": "Scores absolus contre classements",
+      "body_fr": "Les scores absolus générés par ces évaluations trompent souvent le public sur les capacités réelles. Lorsqu'un algorithme atteint une précision élevée sur un test de mathématiques spécifique, les observateurs supposent à tort qu'il égale les niveaux d'experts humains. Cependant, modifier légèrement les ensembles de données d'évaluation produit des résultats radicalement différents, rendant les chiffres absolus dénués de sens. Seuls les classements relatifs entre les modèles concurrents restent stables et utiles pour prédire les performances dans le monde réel.",
+      "heading_de": "Absolute Punktzahlen im Vergleich zu Ranglisten",
+      "body_de": "Absolute Punktzahlen aus diesen Evaluationen täuschen die Öffentlichkeit oft über tatsächliche Fähigkeiten hinweg. Wenn ein Algorithmus bei einem spezifischen Mathetest eine hohe Genauigkeit erreicht, nehmen Beobachter fälschlicherweise an, er erreiche menschliches Expertenniveau. Eine geringfügige Verschiebung der Evaluationsdatensätze liefert jedoch radikal unterschiedliche Ergebnisse, wodurch absolute Zahlen bedeutungslos werden. Nur relative Ranglisten zwischen konkurrierenden Modellen bleiben stabil und nützlich, um die reale Leistung vorherzusagen.",
+      "heading_es": "Puntuaciones absolutas frente a clasificaciones",
+      "body_es": "Las puntuaciones absolutas generadas por estas evaluaciones suelen engañar al público sobre las capacidades reales. Cuando un algoritmo alcanza una gran precisión en una prueba matemática específica, los observadores asumen erróneamente que iguala los niveles de expertos humanos. Sin embargo, cambiar ligeramente los conjuntos de datos de evaluación produce resultados radicalmente distintos, lo que hace que los números absolutos pierdan sentido. Solo las clasificaciones relativas entre modelos competidores siguen siendo estables y útiles para predecir el rendimiento en el mundo real."
     },
     {
       "heading_en": "Restoring Fairness to Rankings",
       "heading_vi": "Khôi phục sự công bằng cho bảng xếp hạng",
       "body_en": "In the modern era of large language models, even relative rankings are losing stability because creators secretly optimize their systems specifically for known exams. This practice destroys fair competition since worse models can artificially boost scores through targeted preparation. To restore validity, researchers suggest leveling the playing field by letting every competing model undergo standardized pre training on relevant evaluation data beforehand.",
-      "body_vi": "Trong kỷ nguyên hiện đại của các mô hình ngôn ngữ lớn (*large language models*), ngay cả các thứ hạng tương đối cũng đang mất đi sự ổn định vì những người tạo ra chúng lén lút tối ưu hóa hệ thống của họ dành riêng cho các kỳ thi đã biết. Thói quen này phá hủy sự cạnh tranh công bằng vì các mô hình kém hơn có thể nâng điểm số một cách nhân tạo thông qua việc chuẩn bị có mục tiêu. Để khôi phục tính hợp lệ, các nhà nghiên cứu đề xuất tạo ra một sân chơi bình đẳng bằng cách cho phép mọi mô hình cạnh tranh trải qua quá trình huấn luyện trước tiêu chuẩn hóa trên dữ liệu đánh giá liên quan trước đó."
+      "body_vi": "Trong kỷ nguyên hiện đại của các mô hình ngôn ngữ lớn (*large language models*), ngay cả các thứ hạng tương đối cũng đang mất đi sự ổn định vì những người tạo ra chúng lén lút tối ưu hóa hệ thống của họ dành riêng cho các kỳ thi đã biết. Thói quen này phá hủy sự cạnh tranh công bằng vì các mô hình kém hơn có thể nâng điểm số một cách nhân tạo thông qua việc chuẩn bị có mục tiêu. Để khôi phục tính hợp lệ, các nhà nghiên cứu đề xuất tạo ra một sân chơi bình đẳng bằng cách cho phép mọi mô hình cạnh tranh trải qua quá trình huấn luyện trước tiêu chuẩn hóa trên dữ liệu đánh giá liên quan trước đó.",
+      "heading_fr": "Restaurer l'équité dans les classements",
+      "body_fr": "À l'ère moderne des grands modèles de langage, même les classements relatifs perdent en stabilité parce que les créateurs optimisent secrètement leurs systèmes spécifiquement pour des examens connus. Cette pratique détruit la concurrence loyale puisque des modèles moins performants peuvent artificiellement gonfler leurs scores grâce à une préparation ciblée. Pour restaurer la validité, les chercheurs suggèrent d'égaliser les chances en permettant à chaque modèle concurrent de subir au préalable un pré-entraînement standardisé sur les données d'évaluation pertinentes.",
+      "heading_de": "Fairness in Ranglisten wiederherstellen",
+      "body_de": "In der modernen Ära großer Sprachmodelle verlieren selbst relative Ranglisten an Stabilität, da Schöpfer ihre Systeme heimlich gezielt für bekannte Prüfungen optimieren. Diese Praxis zerstört den fairen Wettbewerb, da schlechtere Modelle ihre Punktzahlen durch gezielte Vorbereitung künstlich steigern können. Um die Gültigkeit wiederherzustellen, schlagen Forscher vor, gleiche Wettbewerbsbedingungen zu schaffen, indem jedes konkurrierende Modell im Vorfeld ein standardisiertes Vortraining mit relevanten Evaluationsdaten durchläuft.",
+      "heading_es": "Restaurar la justicia en las clasificaciones",
+      "body_es": "En la era moderna de los grandes modelos de lenguaje, incluso las clasificaciones relativas están perdiendo estabilidad porque los creadores optimizan en secreto sus sistemas específicamente para exámenes conocidos. Esta práctica destruye la competencia justa, ya que los modelos peores pueden inflar artificialmente sus puntuaciones mediante una preparación dirigida. Para restaurar la validez, los investigadores sugieren nivelar el terreno de juego permitiendo que cada modelo competidor se someta de antemano a un entrenamiento previo estandarizado con los datos de evaluación pertinentes."
     }
   ],
   "references": [
@@ -70,7 +94,10 @@
   },
   "keyPoint": {
     "en": "Benchmarks are like fitness trackers that only measure what you specifically practice for. Are you relying too much on single leaderboard scores without verifying real world capabilities?",
-    "vi": "Các bộ chuẩn đánh giá giống như thiết bị theo dõi thể dục chỉ đo lường những gì bạn luyện tập cụ thể. [p:Bạn có đang quá phụ thuộc vào điểm số đơn lẻ trên bảng xếp hạng mà không xác minh năng lực thực tế không?]"
+    "vi": "Các bộ chuẩn đánh giá giống như thiết bị theo dõi thể dục chỉ đo lường những gì bạn luyện tập cụ thể. [p:Bạn có đang quá phụ thuộc vào điểm số đơn lẻ trên bảng xếp hạng mà không xác minh năng lực thực tế không?]",
+    "fr": "Les repères sont comme des traceurs de fitness qui ne mesurent que ce que vous pratiquez spécifiquement. Vous fiez-vous trop aux scores uniques des tableaux de bord sans vérifier les capacités dans le monde réel ?",
+    "de": "Benchmarks sind wie Fitness-Tracker, die nur das messen, worauf man gezielt trainiert. Verlässt du dich zu sehr auf einzelne Bestenlisten-Punktzahlen, ohne reale Fähigkeiten zu überprüfen?",
+    "es": "Las pruebas de referencia son como rastreadores de forma física que solo miden aquello para lo que practicas específicamente. ¿Confías demasiado en las puntuaciones individuales de las listas sin verificar las capacidades en el mundo real?"
   },
   "applySteps": {
     "en": [
@@ -82,6 +109,21 @@
       "Xem xét điểm chuẩn của mô hình một cách thận trọng thay vì tin tưởng hoàn toàn vào các con số tuyệt đối.",
       "So sánh thứ hạng tương đối của các mô hình thay vì chỉ tập trung vào tỷ lệ chính xác cá nhân.",
       "Tính đến khả năng tối ưu hóa có mục tiêu khi đánh giá các hệ thống trí tuệ nhân tạo mới ra mắt."
+    ],
+    "fr": [
+      "Examinez les scores des repères de modèles avec prudence au lieu de prendre les chiffres absolus pour argent comptant.",
+      "Comparez les classements relatifs des modèles plutôt que de vous concentrer uniquement sur les pourcentages de précision individuels.",
+      "Tenez compte d'une optimisation ciblée potentielle lors de l'évaluation de systèmes d'intelligence artificielle nouvellement publiés."
+    ],
+    "de": [
+      "Betrachte Modell-Benchmark-Werte mit Vorsicht, statt absolute Zahlen für bare Münze zu nehmen.",
+      "Vergleiche relative Modell-Ranglisten, anstatt dich nur auf individuelle Genauigkeitsprozentsätze zu konzentrieren.",
+      "Berücksichtige potenziell gezielte Optimierungen bei der Bewertung neu veröffentlichter künstlicher-Intelligenz-Systeme."
+    ],
+    "es": [
+      "Examina las puntuaciones de referencia de los modelos con cautela en lugar de tomar las cifras absolutas al pie de la letra.",
+      "Compara las clasificaciones relativas de los modelos en lugar de centrarte únicamente en los porcentajes de precisión individual.",
+      "Ten en cuenta la posible optimización dirigida al evaluar sistemas de inteligencia artificial recién lanzados."
     ]
   },
   "coverCandidates": [
@@ -118,9 +160,70 @@
       "summary",
       "vi",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
+  },
+  "glossary": {
+    "en": {
+      "moritz hardt": "Computer scientist who claims standardized tests for artificial intelligence are fundamentally flawed.",
+      "large language models": "Advanced artificial intelligence systems that can easily game the benchmark system.",
+      "data splits": "Structured data used to compare different algorithms.",
+      "leaderboards": "Public rankings used to objectively evaluate algorithms.",
+      "evaluation materials": "Test data that developers continuously train models on.",
+      "absolute scores": "Specific numerical results that often mislead the public about actual capabilities.",
+      "evaluation datasets": "Data collections that, when shifted slightly, yield radically different outcomes.",
+      "relative rankings": "Stable comparisons between competing models that help predict real world performance.",
+      "targeted preparation": "Practice used by creators to artificially boost scores on known exams.",
+      "pre training": "Standardized preparation process suggested to level the playing field for competing models."
+    },
+    "vi": {
+      "moritz hardt": "Nhà khoa học máy tính cảnh báo về lỗi cơ bản trong các bài kiểm tra trí tuệ nhân tạo.",
+      "mô hình ngôn ngữ lớn": "Hệ thống trí tuệ nhân tạo hiện đại có khả năng xử lý và tạo văn bản phức tạp.",
+      "bộ chuẩn đánh giá": "Các bài kiểm tra tiêu chuẩn hóa dùng để đo lường năng lực của trí tuệ nhân tạo.",
+      "thuật toán": "Tập hợp các quy tắc hoặc hướng dẫn từng bước để máy tính giải quyết vấn đề.",
+      "dữ liệu": "Thông tin được thu thập và có cấu trúc để phục vụ cho việc huấn luyện máy tính.",
+      "leaderboard": "Bảng xếp hạng công khai mức độ hoạt động và hiệu suất của các mô hình.",
+      "phương pháp luận": "Hệ thống các phương pháp và nguyên tắc được áp dụng trong nghiên cứu khoa học.",
+      "điểm số tuyệt đối": "Con số cụ thể phản ánh kết quả đơn lẻ của một mô hình trong bài kiểm tra.",
+      "thứ hạng tương đối": "Vị trí so sánh giữa các mô hình cạnh tranh với nhau trên cùng một hệ thống.",
+      "large language models": "Thuật ngữ tiếng Anh chỉ các mô hình ngôn ngữ lớn với quy mô dữ liệu khổng lồ.",
+      "huấn luyện trước": "Giai đoạn đầu cung cấp dữ liệu cơ bản để mô hình hình thành năng lực xử lý."
+    },
+    "fr": {
+      "algorithmes": "Ensembles de règles et d'instructions informatiques permettant de résoudre un problème ou d'exécuter une tâche.",
+      "tableaux de bord": "Classements publics affichant les performances comparatives de différents modèles d'intelligence artificielle.",
+      "grands modèles de langage": "Systèmes d'intelligence artificielle avancés formés pour comprendre et générer du texte semblable à celui des humains.",
+      "pré-entraînement": "Phase initiale où un modèle apprend à partir d'un vaste ensemble de données avant d'être affiné.",
+      "données": "Informations quantitatives ou textuelles utilisées pour alimenter, tester ou entraîner les systèmes informatiques.",
+      "précision": "Mesure du taux de réussite ou d'exactitude d'un modèle lors de la résolution de tâches spécifiques.",
+      "scores absolus": "Résultats chiffrés bruts obtenus par un modèle unique lors d'une évaluation standardisée.",
+      "classements relatifs": "Position d'un modèle par rapport aux autres concurrents plutôt que sa note brute isolée."
+    },
+    "de": {
+      "algorithmen": "Rechenvorschriften zur automatisierten Lösung von Problemen.",
+      "metriken": "Messwerte zur Bewertung von Leistungen.",
+      "datensätze": "Sammlungen strukturierter Daten für Analysen.",
+      "modelle": "Trainierte Systeme der künstlichen Intelligenz.",
+      "evaluationsdaten": "Daten zur Überprüfung von Modellleistungen.",
+      "vortraining": "Initiales Training von Modellen vor dem Einsatz.",
+      "ranglisten": "Listen zur relativen Platzierung von Modellen.",
+      "optimierung": "Anpassung zur Leistungsverbesserung eines Systems."
+    },
+    "es": {
+      "informático": "Persona especializada en informática o ciencias de la computación.",
+      "algoritmos": "Conjunto ordenado de operaciones sistemáticas que permite hacer un cálculo y hallar la solución de un tipo de problemas.",
+      "métricas": "Medidas cuantitativas utilizadas para evaluar o comparar el rendimiento.",
+      "metodológica": "Relativo al método o conjunto de procedimientos utilizados en una investigación.",
+      "precisión": "Cercanía del resultado de una medición con el valor real.",
+      "datos": "Información dispuesta de manera adecuada para su tratamiento por un sistema.",
+      "entrenamiento": "Proceso mediante el cual un sistema aprende a partir de datos.",
+      "optimización": "Acción de desarrollar un sistema para que funcione de la mejor manera posible."
+    }
   }
 }

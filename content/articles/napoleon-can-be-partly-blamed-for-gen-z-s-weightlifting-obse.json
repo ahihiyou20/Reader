@@ -98,7 +98,10 @@
     ]
   },
   "summary": {
-    "vi": "Bài viết khám phá lịch sử hình thành và phát triển của ngành công nghiệp thể dục hiện đại, cho thấy các xu hướng tập luyện qua các thời kỳ không chỉ vì sức khỏe mà còn chịu ảnh hưởng từ các yếu tố chính trị, xã hội và công nghệ. Từ phòng tập ngoài trời của Napoleon nhằm nâng cao thể chất binh lính Phổ, phong trào thể hình thời Victoria, sự bùng nổ aerobics hậu chiến, cho đến văn hóa tập tạ của thế hệ trẻ ngày nay chịu sự chi phối của mạng xã hội và các thuật toán trực tuyến."
+    "vi": "Bài viết khám phá lịch sử hình thành và phát triển của ngành công nghiệp thể dục hiện đại, cho thấy các xu hướng tập luyện qua các thời kỳ không chỉ vì sức khỏe mà còn chịu ảnh hưởng từ các yếu tố chính trị, xã hội và công nghệ. Từ phòng tập ngoài trời của Napoleon nhằm nâng cao thể chất binh lính Phổ, phong trào thể hình thời Victoria, sự bùng nổ aerobics hậu chiến, cho đến văn hóa tập tạ của thế hệ trẻ ngày nay chịu sự chi phối của mạng xã hội và các thuật toán trực tuyến.",
+    "fr": "L'article explore l'évolution de la culture physique à travers les siècles. De la gymnastique militaire prussienne aux spectacles de culturisme victorien, les pratiques sportives ont constamment répondu aux préoccupations de chaque époque. Si l'exercice a d'abord servi les intérêts de la nation, il a ensuite évolué vers la forme esthétique, l'aérobic télévisé, pour enfin céder aux tendances des réseaux sociaux actuels.",
+    "de": "Fitness-Trends haben sich im Laufe der Jahrhunderte stark gewandelt. Während Napoleon einst das Turnen förderte, um wehrhafte Soldaten heranzubilden, entwickelte sich im Viktorianischen Zeitalter durch Eugen Sandow ein neues Ideal des geformten Körpers. Später sorgten Bewegungsmangel und die Postmoderne für Aerobic-Wellen und den Siegeszug des Bodybuildings durch Filme mit Arnold Schwarzenegger. Heute prägen vor allem soziale Medien und digitale Algorithmen den Fokus der Generation Z auf Krafttraining und Fitness.",
+    "es": "La cultura del ejercicio ha evolucionado notablemente a lo largo de los siglos, transformándose en un reflejo de las demandas sociales de cada época. Desde la preparación militar en la Prusia del siglo XIX hasta las rutinas aeróbicas de la posguerra y el auge actual del entrenamiento de fuerza impulsado por las redes sociales, mantenerse en forma ha respondido a distintas motivaciones humanas. Hoy en día, las nuevas generaciones priorizan el levantamiento de pesas guiadas por las tendencias digitales y la búsqueda del bienestar personal."
   },
   "keyPoint": {
     "en": "Fitness is like a mirror reflecting the demands of each era, shifting from national defense to modern algorithms. How can you align your fitness routine with your personal well-being today? [p:Focus on what makes you feel strong rather than chasing trends.]",
@@ -120,10 +123,26 @@
     "fields": [
       "summary",
       "keyPoint",
-      "applySteps"
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
     "model": "gemini-3.5-flash-lite"
   },
-  "publishAt": "2026-10-24T01:44:51.275Z"
+  "publishAt": "2026-10-24T01:44:51.275Z",
+  "glossary": {
+    "en": {
+      "turnplatz": "An open-air gymnasium established in Prussia for physical training.",
+      "calisthenic": "Gymnastic exercises designed to achieve bodily fitness and grace.",
+      "epidemiologist": "A scientist who studies the incidence and causes of diseases in populations.",
+      "aerobics": "Fitness exercises combining stretching and calisthenics with rhythm.",
+      "physical culturists": "Early enthusiasts who trained their bodies using weights for health.",
+      "bodybuilding": "The use of progressive resistance exercise to control and develop muscles.",
+      "physique": "The form or overall structure of a person's body.",
+      "dumbbell": "A short heavy bar with weights at each end used for exercise."
+    }
+  }
 }

@@ -258,6 +258,18 @@
       "relatividad general": "Teoría física propuesta por Albert Einstein donde la gravedad se describe como curvatura del espacio-tiempo.",
       "singularidad": "Punto central de densidad infinita predicho donde fallan las leyes conocidas de la física.",
       "agujero negro supermasivo": "Agujero negro con una masa colosal equivalente a millones o miles de millones de soles."
+    },
+    "vi": {
+      "hố đen": "Vùng không gian có lực hấp dẫn cực lớn khiến không gì có thể thoát ra.",
+      "lỗ sâu đục": "Lối tắt giả định trong không-thời gian nối liền hai điểm khác nhau trong vũ trụ.",
+      "chân trời sự kiện": "Ranh giới bao quanh hố đen mà từ đó không ánh sáng nào có thể quay ra.",
+      "đĩa bồi tụ": "Vòng khí và bụi nóng sáng quay xung quanh và rơi vào hố đen.",
+      "thấu kính hấp dẫn": "Hiện tượng lực hấp dẫn bẻ cong đường đi của ánh sáng từ vật thể phía sau.",
+      "bóng chân trời sự kiện": "Vùng tối lớn hơn hố đen được tạo ra do sự uốn cong ánh sáng.",
+      "quầng corona": "Đám mây khí hỗn loạn, cực nóng nằm phía trên đĩa bồi tụ của hố đen.",
+      "luồng phun": "Dòng vật chất năng lượng cao bị đẩy bắn ra từ hai cực của hố đen.",
+      "thuyết tương đối rộng": "Lý thuyết của Einstein mô tả lực hấp dẫn là độ cong của không-thời gian.",
+      "điểm kỳ dị": "Điểm tâm hố đen nơi vật chất bị nén đến mật độ vô hạn."
     }
   },
   "ai": {
@@ -265,9 +277,10 @@
       "en",
       "fr",
       "de",
-      "es"
+      "es",
+      "vi"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   }
 }

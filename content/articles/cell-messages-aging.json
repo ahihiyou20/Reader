@@ -251,6 +251,16 @@
       "biomarcadores": "Indicadores biológicos cuantificables, como la presión o glucosa, que revelan el estado de salud de una persona.",
       "gemelo digital": "Modelo computacional que simula partes de la biología de un paciente para evaluar terapias médicas personalizadas.",
       "glucemia": "Nivel de concentración de azúcar o glucosa presente en la sangre de una persona."
+    },
+    "en": {
+      "chronic disease": "An illness that lasts a long time and requires ongoing medical care.",
+      "inflammation": "The body's natural response to injury or infection.",
+      "receptors": "Proteins that sit on cells and recognise specific message molecules.",
+      "g protein-coupled receptors": "A large family of cell surface receptors that cross the membrane seven times.",
+      "g protein": "A helper molecule inside the cell that passes signals along a protein chain.",
+      "gpcr networks": "Interconnected signalling pathways formed by overlapping receptor functions.",
+      "alphafold": "A computer tool used to predict the 3D shapes of proteins.",
+      "biomarkers": "Measurable biological indicators such as blood pressure or blood sugar levels."
     }
   },
   "ai": {
@@ -258,9 +268,10 @@
       "vi",
       "fr",
       "de",
-      "es"
+      "es",
+      "en"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   }
 }
