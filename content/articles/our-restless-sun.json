@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Our restless Sun and the storms it sends to Earth",
-    "vi": "Mặt Trời không yên và những cơn bão nó gửi tới Trái Đất"
+    "vi": "Mặt Trời không yên và những cơn bão nó gửi tới Trái Đất",
+    "fr": "Notre Soleil agité et les tempêtes qu'il envoie vers la Terre",
+    "de": "Unsere unruhige Sonne und die Stürme, die sie zur Erde schickt",
+    "es": "Nuestro Sol inquieto y las tormentas que envía a la Tierra"
   },
   "hook": {
     "en": "From Earth, the Sun looks calm and unchanging, rising and setting every day. In reality it is a restless ball of plasma with a heart hotter than 15 million degrees, explosions that can reach our planet and an atmosphere that we actually [y:live inside]. When the Sun sneezes, our satellites, power grids and GPS can catch a cold.",
-    "vi": "Nhìn từ Trái Đất, Mặt Trời có vẻ điềm tĩnh và bất biến, ngày ngày mọc rồi lặn. Thực tế, nó là một quả cầu plasma không ngừng biến động, với lõi nóng hơn 15 triệu độ, những vụ nổ có thể vươn tới hành tinh chúng ta và một bầu khí quyển mà ta thực ra đang [y:sống bên trong]. Khi Mặt Trời 'hắt hơi', vệ tinh, lưới điện và GPS của chúng ta có thể bị 'cảm lạnh'."
+    "vi": "Nhìn từ Trái Đất, Mặt Trời có vẻ điềm tĩnh và bất biến, ngày ngày mọc rồi lặn. Thực tế, nó là một quả cầu plasma không ngừng biến động, với lõi nóng hơn 15 triệu độ, những vụ nổ có thể vươn tới hành tinh chúng ta và một bầu khí quyển mà ta thực ra đang [y:sống bên trong]. Khi Mặt Trời 'hắt hơi', vệ tinh, lưới điện và GPS của chúng ta có thể bị 'cảm lạnh'.",
+    "fr": "Depuis la Terre, le Soleil semble calme et immuable, se levant et se couchant chaque jour. En réalité, c'est une boule de plasma agitée avec un cœur plus chaud que 15 millions de degrés, des explosions qui peuvent atteindre notre planète et une atmosphère [y:au sein de laquelle nous vivons réellement]. Lorsque le Soleil éternue, nos satellites, nos réseaux électriques et notre GPS peuvent attraper un rhume.",
+    "de": "Von der Erde aus wirkt die Sonne ruhig und unveränderlich, sie geht jeden Tag auf und unter. In Wirklichkeit ist sie eine unruhige Plasmakugel mit einem über 15 Millionen Grad heißen Kern, Explosionen, die unseren Planeten erreichen können, und einer Atmosphäre, in der wir tatsächlich [y:leben]. Wenn die Sonne niest, können sich unsere Satelliten, Stromnetze und GPS-Systeme erkälten.",
+    "es": "Desde la Tierra, el Sol parece calmado y constante, saliendo y poniéndose todos los días. En realidad es una bola inquieta de plasma con un corazón más caliente que 15 millones de grados, explosiones que pueden alcanzar nuestro planeta y una atmósfera en la que de verdad [y:vivimos dentro]. Cuando el Sol estornuda, nuestros satélites, redes eléctricas y el GPS pueden resfriarse."
   },
   "sections": [
     {
       "heading_en": "An average star that rules everything",
       "heading_vi": "Một ngôi sao bình thường thống trị mọi thứ",
       "body_en": "Our Sun is a 4.6 billion-year-old **yellow dwarf** star, a hot, glowing ball of hydrogen and helium about 150 million kilometres from Earth {nasa-sun}. It is the largest object in the solar system: about 100 times wider than Earth, it would take more than [y:330,000 Earths] to match its mass. It holds 99.8% of all the mass in the solar system, and its gravity keeps everything, from giant planets to tiny bits of dust, in orbit. Yet among stars it is only average. Stars up to 100 times larger exist, and many systems have more than one sun.",
-      "body_vi": "Mặt Trời của chúng ta là một ngôi sao **lùn vàng** 4,6 tỷ tuổi, quả cầu khí hydro và heli nóng rực, cách Trái Đất khoảng 150 triệu km {nasa-sun}. Nó là vật thể lớn nhất trong Hệ Mặt Trời: rộng gấp khoảng 100 lần Trái Đất, và phải cần hơn [y:330.000 Trái Đất] mới bằng khối lượng của nó. Nó chiếm 99,8% toàn bộ khối lượng của Hệ Mặt Trời, và lực hấp dẫn của nó giữ mọi thứ, từ hành tinh khổng lồ đến những hạt bụi nhỏ, trên quỹ đạo. Thế nhưng giữa các vì sao, nó chỉ là một ngôi sao bình thường. Có những ngôi sao lớn gấp 100 lần, và nhiều hệ có nhiều hơn một mặt trời."
+      "body_vi": "Mặt Trời của chúng ta là một ngôi sao **lùn vàng** 4,6 tỷ tuổi, quả cầu khí hydro và heli nóng rực, cách Trái Đất khoảng 150 triệu km {nasa-sun}. Nó là vật thể lớn nhất trong Hệ Mặt Trời: rộng gấp khoảng 100 lần Trái Đất, và phải cần hơn [y:330.000 Trái Đất] mới bằng khối lượng của nó. Nó chiếm 99,8% toàn bộ khối lượng của Hệ Mặt Trời, và lực hấp dẫn của nó giữ mọi thứ, từ hành tinh khổng lồ đến những hạt bụi nhỏ, trên quỹ đạo. Thế nhưng giữa các vì sao, nó chỉ là một ngôi sao bình thường. Có những ngôi sao lớn gấp 100 lần, và nhiều hệ có nhiều hơn một mặt trời.",
+      "heading_fr": "Une étoile moyenne qui gouverne tout",
+      "body_fr": "Notre Soleil est une étoile **naine jaune** âgée de 4,6 milliards d'années, une boule chaude et incandescente d'hydrogène et d'hélium située à environ 150 millions de kilomètres de la Terre {nasa-sun}. C'est le plus grand objet du système solaire : environ 100 fois plus large que la Terre, il faudrait plus de [y:330 000 Terres] pour égaler sa masse. Il détient 99,8 % de toute la masse du système solaire, et sa gravité maintient tout en orbite, des planètes géantes aux minuscules grains de poussière. Pourtant, parmi les étoiles, il n'est que moyen. Il existe des étoiles jusqu'à 100 fois plus grandes, et de nombreux systèmes comptent plus d'un soleil.",
+      "heading_de": "Ein durchschnittlicher Stern, der alles beherrscht",
+      "body_de": "Unsere Sonne ist ein 4,6 Milliarden Jahre alter **gelber Zwerg**, ein heißer, leuchtender Ball aus Wasserstoff und Helium in etwa 150 Millionen Kilometern Entfernung von der Erde {nasa-sun}. Sie ist das größte Objekt im Sonnensystem: Etwa 100 Mal breiter als die Erde, würde sie mehr als [y:330.000 Erden] benötigen, um ihre Masse zu erreichen. Sie vereint 99,8 Prozent der gesamten Masse des Sonnensystems auf sich, und ihre Schwerkraft hält alles, von riesigen Planeten bis zu winzigen Staubpartikeln, auf seiner Umlaufbahn. Dennoch ist sie unter den Sternen nur Durchschnitt. Es gibt Sterne, die bis zu 100 Mal größer sind, und viele Systeme haben mehr als eine Sonne.",
+      "heading_es": "Una estrella promedio que lo rige todo",
+      "body_es": "Nuestro Sol es una estrella **enana amarilla** de 4.600 millones de años, una bola caliente y brillante de hidrógeno y helio a unos 150 millones de kilómetros de la Tierra {nasa-sun}. Es el objeto más grande del sistema solar: unas 100 veces más ancho que la Tierra, se necesitarían más de [y:330.000 Tierras] para igualar su masa. Contiene el 99,8 % de toda la masa del sistema solar, y su gravedad mantiene todo en órbita. Sin embargo, entre las estrellas es solo una mediana."
     },
     {
       "heading_en": "A journey of 170,000 years",
       "heading_vi": "Hành trình 170.000 năm",
       "body_en": "At the Sun's **core**, temperatures reach about 15 million °C, and hydrogen is fused into helium. These nuclear reactions power all of its heat and light. The core is incredibly dense, about eight times denser than gold. The energy made there does not escape quickly. It bounces around the *radiative zone* for about [p:170,000 years] before reaching the *convection zone*, where huge bubbles of hot plasma carry it up to the surface. The light that warms your face today began its journey out of the Sun's interior long before humans built the first cities.",
-      "body_vi": "Ở **lõi** Mặt Trời, nhiệt độ lên tới khoảng 15 triệu °C, và hydro được tổng hợp thành heli. Các phản ứng hạt nhân này cung cấp toàn bộ nhiệt và ánh sáng của nó. Lõi đặc đến khó tin, đặc hơn vàng khoảng tám lần. Năng lượng sinh ra ở đó không thoát ra nhanh chóng. Nó nảy qua lại trong *vùng bức xạ* khoảng [p:170.000 năm] trước khi tới *vùng đối lưu*, nơi những bong bóng plasma nóng khổng lồ mang nó lên bề mặt. Ánh sáng sưởi ấm gương mặt bạn hôm nay đã bắt đầu hành trình rời khỏi lòng Mặt Trời từ rất lâu trước khi loài người xây những thành phố đầu tiên."
+      "body_vi": "Ở **lõi** Mặt Trời, nhiệt độ lên tới khoảng 15 triệu °C, và hydro được tổng hợp thành heli. Các phản ứng hạt nhân này cung cấp toàn bộ nhiệt và ánh sáng của nó. Lõi đặc đến khó tin, đặc hơn vàng khoảng tám lần. Năng lượng sinh ra ở đó không thoát ra nhanh chóng. Nó nảy qua lại trong *vùng bức xạ* khoảng [p:170.000 năm] trước khi tới *vùng đối lưu*, nơi những bong bóng plasma nóng khổng lồ mang nó lên bề mặt. Ánh sáng sưởi ấm gương mặt bạn hôm nay đã bắt đầu hành trình rời khỏi lòng Mặt Trời từ rất lâu trước khi loài người xây những thành phố đầu tiên.",
+      "heading_fr": "Un voyage de 170 000 ans",
+      "body_fr": "Au **cœur** du Soleil, les températures atteignent environ 15 millions de °C, et l'hydrogène fusionne en hélium. Ces réactions nucléaires alimentent toute sa chaleur et sa lumière. Le noyau est incroyablement dense, environ huit fois plus dense que l'or. L'énergie qui y est produite ne s'échappe pas rapidement. Elle rebondit dans la *zone radiative* pendant environ [p:170 000 ans] avant d'atteindre la *zone convective*, où d'immenses bulles de plasma chaud la transportent jusqu'à la surface. La lumière qui réchauffe votre visage aujourd'hui a commencé son voyage hors de l'intérieur du Soleil bien avant que les humains ne construisent les premières villes.",
+      "heading_de": "Eine Reise von 170.000 Jahren",
+      "body_de": "Im **Kern** der Sonne erreichen die Temperaturen etwa 15 Millionen °C, und Wasserstoff wird zu Helium fusioniert. Diese Kernreaktionen treiben all ihre Wärme und ihr Licht an. Der Kern ist unglaublich dicht, etwa achtmal denser als Gold. Die dort erzeugte Energie entweicht nicht schnell. Sie prallt etwa [p:170.000 Jahre] lang durch die *Strahlungszone*, bevor sie die *Konvektionszone* erreicht, wo riesige Blasen aus heißem plasma sie an die Oberfläche tragen. Das Licht, das heute dein Gesicht wärmt, begann seine Reise aus dem Inneren der Sonne lange bevor Menschen die ersten Städte bauten.",
+      "heading_es": "Un viaje de 170.000 años",
+      "body_es": "En el **núcleo** del Sol, las temperaturas alcanzan unos 15 millones de °C y el hidrógeno se fusiona en helio. Estas reacciones nucleares generan todo su calor y luz. El núcleo es increíblemente denso. La energía creada allí no escapa rápido; rebota en la *zona radiativa* durante unos [p:170.000 años] antes de llegar a la *zona de convección*, donde enormes burbujas de plasma caliente la llevan a la superficie."
     },
     {
       "heading_en": "Hotter as you move away",
       "heading_vi": "Càng ra xa càng nóng",
       "body_en": "The Sun has no solid surface. What we call its surface is the **photosphere**, the layer that gives off most visible light, at about 5,500 °C, hot enough to make diamonds boil. Above it lie the chromosphere and the **corona**, the Sun's outer atmosphere, normally visible only during a total eclipse as a white crown. Here lies one of the Sun's biggest mysteries. The corona reaches about [y:2 million °C], far hotter than the surface below it. Imagine walking away from a bonfire and getting warmer. Explaining this is still a major unsolved puzzle.",
-      "body_vi": "Mặt Trời không có bề mặt rắn. Thứ ta gọi là bề mặt là **quang quyển**, lớp phát ra phần lớn ánh sáng nhìn thấy, nóng khoảng 5.500 °C, đủ để làm kim cương sôi. Phía trên là sắc quyển và **nhật hoa** (*corona*), lớp khí quyển ngoài của Mặt Trời, thường chỉ thấy được trong nhật thực toàn phần dưới dạng một vương miện trắng. Đây là nơi ẩn chứa một trong những bí ẩn lớn nhất của Mặt Trời. Nhật hoa nóng tới khoảng [y:2 triệu °C], nóng hơn nhiều so với bề mặt bên dưới. Hãy tưởng tượng bạn đi ra xa đống lửa mà lại thấy nóng hơn. Giải thích điều này vẫn là một câu đố lớn chưa có lời giải."
+      "body_vi": "Mặt Trời không có bề mặt rắn. Thứ ta gọi là bề mặt là **quang quyển**, lớp phát ra phần lớn ánh sáng nhìn thấy, nóng khoảng 5.500 °C, đủ để làm kim cương sôi. Phía trên là sắc quyển và **nhật hoa** (*corona*), lớp khí quyển ngoài của Mặt Trời, thường chỉ thấy được trong nhật thực toàn phần dưới dạng một vương miện trắng. Đây là nơi ẩn chứa một trong những bí ẩn lớn nhất của Mặt Trời. Nhật hoa nóng tới khoảng [y:2 triệu °C], nóng hơn nhiều so với bề mặt bên dưới. Hãy tưởng tượng bạn đi ra xa đống lửa mà lại thấy nóng hơn. Giải thích điều này vẫn là một câu đố lớn chưa có lời giải.",
+      "heading_fr": "Plus chaud à mesure qu'on s'éloigne",
+      "body_fr": "Le Soleil n'a pas de surface solide. Ce que nous appelons sa surface est la **photosphère**, la couche qui émet la plus grande partie de la lumière visible, à environ 5 500 °C, soit assez chaud pour faire bouillir les diamants. Au-dessus se trouvent la chromosphère et la **corona**, l'atmosphère externe du Soleil, normalement visible uniquement lors d'une éclipse totale sous la forme d'une couronne blanche. C'est là que réside l'un des plus grands mystères du Soleil. La corona atteint environ [y:2 millions de °C], ce qui est bien plus chaud que la surface située en dessous. Imaginez vous éloigner d'un feu de camp et avoir de plus en plus chaud. Expliquer cela reste une énigme majeure non résolue.",
+      "heading_de": "Heißer, je weiter man sich entfernt",
+      "body_de": "Die Sonne hat keine feste Oberfläche. Was wir als ihre Oberfläche bezeichnen, ist die **Photosphäre**, die Schicht, die das meiste sichtbare Licht abgibt, bei etwa 5.500 °C, heiß genug, um Diamanten zum Kochen zu bringen. Darüber liegen die Chromosphäre und die **Korona**, die äußere Atmosphäre der Sonne, die normalerweise nur während einer totalen Finsternis als weiße Krone sichtbar ist. Hier liegt eines der größten Geheimnisse der Sonne. Die Korona erreicht etwa [y:2 Millionen °C], was weit heißer ist als die Oberfläche darunter. Stell dir vor, du gehst von einem Lagerfeuer weg und wirst wärmer. Dies zu erklären ist nach wie vor ein ungelöstes Haupträtsel.",
+      "heading_es": "Más caliente a medida que te alejas",
+      "body_es": "El Sol no tiene superficie sólida. Lo que llamamos su superficie es la **fotosfera**, la capa que emite la mayor parte de la luz visible a unos 5.500 °C. Arriba se encuentran la cromosfera y la **corona**, la atmósfera exterior del Sol, normalmente visible solo durante un eclipse total. Aquí se halla uno de los mayores misterios: la corona alcanza unos [y:2 millones de °C], mucho más caliente que la superficie inferior."
     },
     {
       "heading_en": "We live inside the Sun's atmosphere",
       "heading_vi": "Ta đang sống trong khí quyển Mặt Trời",
       "body_en": "Material leaving the corona at supersonic speeds becomes the **solar wind**, a stream of charged gas blowing out in all directions. It carries the Sun's magnetic field with it, creating a huge bubble called the *heliosphere* that reaches beyond the orbits of all the planets. That means Earth exists [g:inside the Sun's atmosphere]. Because the Sun rotates, its magnetic field is twisted into a spiral, like water from a spinning garden sprinkler. Every 11 years or so, the Sun's magnetic north and south poles swap places, as part of a cycle of quiet and active periods.",
-      "body_vi": "Vật chất rời nhật hoa với tốc độ siêu thanh trở thành **gió Mặt Trời**, một dòng khí tích điện thổi ra mọi hướng. Nó mang theo từ trường của Mặt Trời, tạo nên một bong bóng khổng lồ gọi là *nhật quyển*, vươn xa hơn quỹ đạo của mọi hành tinh. Điều đó có nghĩa là Trái Đất tồn tại [g:bên trong khí quyển của Mặt Trời]. Vì Mặt Trời tự quay, từ trường của nó bị xoắn thành hình xoắn ốc, giống tia nước từ vòi tưới cây đang xoay. Khoảng 11 năm một lần, cực từ bắc và nam của Mặt Trời đổi chỗ cho nhau, trong một chu kỳ xen kẽ giai đoạn yên tĩnh và sôi động."
+      "body_vi": "Vật chất rời nhật hoa với tốc độ siêu thanh trở thành **gió Mặt Trời**, một dòng khí tích điện thổi ra mọi hướng. Nó mang theo từ trường của Mặt Trời, tạo nên một bong bóng khổng lồ gọi là *nhật quyển*, vươn xa hơn quỹ đạo của mọi hành tinh. Điều đó có nghĩa là Trái Đất tồn tại [g:bên trong khí quyển của Mặt Trời]. Vì Mặt Trời tự quay, từ trường của nó bị xoắn thành hình xoắn ốc, giống tia nước từ vòi tưới cây đang xoay. Khoảng 11 năm một lần, cực từ bắc và nam của Mặt Trời đổi chỗ cho nhau, trong một chu kỳ xen kẽ giai đoạn yên tĩnh và sôi động.",
+      "heading_fr": "Nous vivons dans l'atmosphère du Soleil",
+      "body_fr": "La matière quittant la corona à des vitesses supersoniques devient le **vent solaire**, un flux de gaz chargé soufflant dans toutes les directions. Il transporte le champ magnétique du Soleil avec lui, créant une immense bulle appelée *héliosphère* qui s'étend au-delà des orbites de toutes les planètes. Cela signifie que la Terre existe [g:à l'intérieur de l'atmosphère du Soleil]. Comme le Soleil tourne, son champ magnétique est torsadé en spirale, à la manière de l'eau d'un arroseur de jardin rotatif. Tous les 11 ans environ, les pôles magnétiques nord et sud du Soleil inversent leurs rôles, dans le cadre d'un cycle de périodes calmes et actives.",
+      "heading_de": "Wir leben in der Atmosphäre der Sonne",
+      "body_de": "Material, das die Korona mit Überschallgeschwindigkeit verlässt, wird zum **Sonnenwind**, einem Strom aus geladenen Gasen, der in alle Richtungen weht. Er trägt das Magnetfeld der Sonne mit sich und erzeugt eine riesige Blase, die als *Heliosphäre* bezeichnet wird und über die Umlaufbahnen aller Planeten hinausreicht. Das bedeutet, dass die Erde [g:in der Atmosphäre der Sonne] existiert. Da sich die Sonne dreht, ist ihr Magnetfeld spiralförmig verdreht, wie Wasser aus einem sich drehenden Rasensprenger. Etwa alle 11 Jahre tauschen die magnetischen Nord- und Südpole der Sonne im Rahmen eines Zyklus aus ruhigen und aktiven Phasen ihre Plätze.",
+      "heading_es": "Vivimos dentro de la atmósfera del Sol",
+      "body_es": "El material que sale de la corona a velocidades supersónicas se convierte en el **viento solar**, una corriente de gas cargado que sopla en todas direcciones. Transporta el campo magnético del Sol y crea una enorme burbuja llamada *heliosfera* que va más allá de los planetas. Eso significa que la Tierra existe [g:inside the Sun's atmosphere]. Cada 11 años más o menos, los polos magnéticos del Sol intercambian sus lugares."
     },
     {
       "heading_en": "Storms in space",
       "heading_vi": "Bão trong không gian",
       "body_en": "At the peak of this cycle, called **solar maximum**, the Sun produces more sunspots, *solar flares* and *coronal mass ejections*, giant explosions of energy and particles that can reach Earth. Like weather on Earth, conditions in space keep changing, and scientists call them **space weather**. Strong space weather can disturb satellites, GPS and radio communications. It can even [p:damage power grids] and corrode pipelines. In March 1989, a solar storm knocked out the Hydro-Québec power system in Canada, leaving 6 million people without electricity for 9 hours, and power surges melted transformers in New Jersey.",
-      "body_vi": "Ở đỉnh của chu kỳ này, gọi là **cực đại Mặt Trời**, Mặt Trời tạo ra nhiều vết đen, *bùng nổ Mặt Trời* và *phóng xạ vật chất vành nhật hoa*, những vụ nổ khổng lồ giải phóng năng lượng và hạt có thể tới được Trái Đất. Giống như thời tiết trên Trái Đất, điều kiện trong không gian luôn thay đổi, và các nhà khoa học gọi đó là **thời tiết không gian**. Thời tiết không gian mạnh có thể làm nhiễu vệ tinh, GPS và liên lạc vô tuyến. Nó thậm chí có thể [p:làm hỏng lưới điện] và ăn mòn đường ống dẫn dầu khí. Tháng 3 năm 1989, một cơn bão Mặt Trời đã làm sập hệ thống điện Hydro-Québec ở Canada, khiến 6 triệu người mất điện trong 9 giờ, và các đợt tăng áp làm chảy máy biến áp ở New Jersey."
+      "body_vi": "Ở đỉnh của chu kỳ này, gọi là **cực đại Mặt Trời**, Mặt Trời tạo ra nhiều vết đen, *bùng nổ Mặt Trời* và *phóng xạ vật chất vành nhật hoa*, những vụ nổ khổng lồ giải phóng năng lượng và hạt có thể tới được Trái Đất. Giống như thời tiết trên Trái Đất, điều kiện trong không gian luôn thay đổi, và các nhà khoa học gọi đó là **thời tiết không gian**. Thời tiết không gian mạnh có thể làm nhiễu vệ tinh, GPS và liên lạc vô tuyến. Nó thậm chí có thể [p:làm hỏng lưới điện] và ăn mòn đường ống dẫn dầu khí. Tháng 3 năm 1989, một cơn bão Mặt Trời đã làm sập hệ thống điện Hydro-Québec ở Canada, khiến 6 triệu người mất điện trong 9 giờ, và các đợt tăng áp làm chảy máy biến áp ở New Jersey.",
+      "heading_fr": "Des tempêtes dans l'espace",
+      "body_fr": "Au plus fort de ce cycle, appelé **maximum solaire**, le Soleil produit davantage de taches solaires, d'*éruptions solaires* et d'**éjections de masse coronale**, de géantes explosions d'énergie et de particules qui peuvent atteindre la Terre. Tout comme la météo sur Terre, les conditions dans l'espace ne cessent de changer, et les scientifiques appellent cela la **météo spatiale**. Une météo spatiale forte peut perturber les satellites, le GPS et les communications radio. Elle peut même [p:endommager les réseaux électriques] et corroder les pipelines. En mars 1989, une tempête solaire a mis hors service le réseau électrique d'Hydro-Québec au Canada, laissant 6 millions de personnes sans électricité pendant 9 heures, et des surtensions ont fait fondre des transformateurs dans le New Jersey.",
+      "heading_de": "Stürme im All",
+      "body_de": "Auf dem Höhepunkt dieses Zyklus, dem **Solarmaximum**, produziert die Sonne mehr Sonnenflecken, *Sonneneruptionen* und *koronale Massenauswürfe*, also riesige Explosionen von Energie und Teilchen, die die Erde erreichen können. Ähnlich wie das Wetter auf der Erde verändern sich auch die Bedingungen im Weltraum ständig, weshalb Wissenschaftler von **Weltraumwetter** sprechen. Starkes Weltraumwetter kann Satelliten, GPS und den Funkverkehr stören. Es kann sogar [p:Stromnetze beschädigen] und Pipelines korrodieren lassen. Im März 1989 legte ein Sonnensturm das Stromnetz von Hydro-Québec in Kanada lahm, sodass 6 Millionen Menschen 9 Stunden lang ohne Strom waren, und Stromstöße schmolzen Transformatoren in New Jersey.",
+      "heading_es": "Tormentas en el espacio",
+      "body_es": "En el pico de este ciclo, llamado **máximo solar**, el Sol produce más manchas solares, *llamaradas solares* y *eyecciones de masa coronal*, gigantescas explosiones de energía que pueden llegar a la Tierra. Los científicos llaman a esto **clima espacial**. Un clima espacial fuerte puede perturbar satélites, el GPS y las comunicaciones de radio. Incluso puede [p:dañar redes eléctricas] y corroer tuberías."
     },
     {
       "heading_en": "The night the sky caught fire",
       "heading_vi": "Đêm bầu trời bốc cháy",
       "body_en": "The strongest geomagnetic storm on record is the **Carrington Event** of September 1859, named after the British astronomer Richard Carrington, who saw the solar flare that triggered it {cliver-2004}. Telegraph systems around the world went haywire. Sparks shocked telegraph operators and set their paper on fire. Before dawn the next day, skies all over Earth glowed with red, green and purple **auroras**, reportedly bright enough to read a newspaper by, and visible as far south as Cuba and Hawaii. A storm of that size today, in a world that depends on electricity and satellites, could be [p:far more costly].",
-      "body_vi": "Cơn bão địa từ mạnh nhất từng được ghi nhận là **Sự kiện Carrington** tháng 9 năm 1859, đặt theo tên nhà thiên văn người Anh Richard Carrington, người đã quan sát vụ bùng nổ Mặt Trời gây ra nó {cliver-2004}. Hệ thống điện báo khắp thế giới rối loạn. Tia lửa điện giật các nhân viên điện báo và làm cháy giấy của họ. Trước bình minh hôm sau, bầu trời khắp Trái Đất rực sáng **cực quang** đỏ, xanh lục và tím, tương truyền sáng đến mức đọc được báo, và nhìn thấy tận Cuba và Hawaii. Một cơn bão cỡ đó ngày nay, trong một thế giới phụ thuộc vào điện và vệ tinh, có thể gây thiệt hại [p:lớn hơn rất nhiều]."
+      "body_vi": "Cơn bão địa từ mạnh nhất từng được ghi nhận là **Sự kiện Carrington** tháng 9 năm 1859, đặt theo tên nhà thiên văn người Anh Richard Carrington, người đã quan sát vụ bùng nổ Mặt Trời gây ra nó {cliver-2004}. Hệ thống điện báo khắp thế giới rối loạn. Tia lửa điện giật các nhân viên điện báo và làm cháy giấy của họ. Trước bình minh hôm sau, bầu trời khắp Trái Đất rực sáng **cực quang** đỏ, xanh lục và tím, tương truyền sáng đến mức đọc được báo, và nhìn thấy tận Cuba và Hawaii. Một cơn bão cỡ đó ngày nay, trong một thế giới phụ thuộc vào điện và vệ tinh, có thể gây thiệt hại [p:lớn hơn rất nhiều].",
+      "heading_fr": "La nuit où le ciel a pris feu",
+      "body_fr": "La plus forte tempête géomagnétique enregistrée est l'**événement de Carrington** de septembre 1859, nommé d'après l'astronome britannique Richard Carrington, qui a vu l'éruption solaire qu'il a déclenchée {cliver-2004}. Les systèmes télégraphiques du monde entier sont devenus fous. Des étincelles ont secoué les télégraphistes et ont enflammé leur papier. Avant l'aube du lendemain, le ciel du monde entier s'est illuminé d'**aurores** rouges, vertes et violettes, suffisamment brillantes, selon les rapports, pour lire un journal, et visibles jusqu'au sud de Cuba et d'Hawaï. Une tempête de cette ampleur aujourd'hui, dans un monde qui dépend de l'électricité et des satellites, pourrait être [p:bien plus coûteuse].",
+      "heading_de": "Die Nacht, in der der Himmel brannte",
+      "body_de": "Der stärkste jemals aufgezeichnete geomagnetische Sturm ist das **Carrington-Ereignis** vom September 1859, benannt nach dem britischen Astronomen Richard Carrington, der die Sonneneruption beobachtete, die es auslöste {cliver-2004}. Telegrafensysteme auf der ganzen Welt spielten verrückt. Funken versetzten Telegrafisten Elektroschocks und setzten ihr Papier in Brand. Vor der Morgendämmerung des nächsten Tages leuchteten die Himmel auf der ganzen Welt in roten, grünen und violetten **Polarlichtern**, die Berichten zufolge hell genug waren, um Zeitung zu lesen, und selbst in Kuba und Hawaii sichtbar waren. Ein Sturm dieser Größenordnung könnte heute in einer Welt, die von Elektrizität und Satelliten abhängt, [p:viel teurer sein].",
+      "heading_es": "La noche en que el cielo se prendió fuego",
+      "body_es": "La tormenta geomagnética más fuerte registrada es el **Evento Carrington** de septiembre de 1859, nombrado así por el astrónomo británico Richard Carrington {cliver-2004}. Los sistemas de telégrafo en todo el mundo fallaron. Chispas sorprendieron a los operadores y prendieron fuego a su papel. Antes del amanecer del día siguiente, los cielos brillaron con **auroras** rojas, verdes y púrpuras, visibles incluso tan al sur como Cuba y Hawái."
     },
     {
       "heading_en": "Watching our star",
       "heading_vi": "Theo dõi ngôi sao của chúng ta",
       "body_en": "That is why scientists watch the Sun closely. A fleet of spacecraft, including NASA's **Parker Solar Probe**, Solar Orbiter, SOHO and the Solar Dynamics Observatory, studies it from space. On the ground, NOAA's Space Weather Prediction Center tracks active regions and issues watches and warnings for dangerous events {noaa-swpc}, giving power companies and satellite operators time to prepare. The Sun is a little less than halfway through its life. In about [g:5 billion years] it will swell into a red giant, then shrink into a white dwarf. Until then, learning to read its moods keeps our technology safe.",
-      "body_vi": "Đó là lý do các nhà khoa học theo dõi Mặt Trời sát sao. Một đội tàu vũ trụ, gồm **tàu thăm dò Mặt Trời Parker** của NASA, Solar Orbiter, SOHO và Đài quan sát Động lực học Mặt Trời, nghiên cứu nó từ không gian. Dưới mặt đất, Trung tâm Dự báo Thời tiết Không gian của NOAA theo dõi các vùng hoạt động và phát cảnh báo về những sự kiện nguy hiểm {noaa-swpc}, giúp các công ty điện lực và nhà vận hành vệ tinh có thời gian chuẩn bị. Mặt Trời mới đi được gần nửa cuộc đời. Khoảng [g:5 tỷ năm] nữa, nó sẽ phình to thành sao khổng lồ đỏ, rồi co lại thành sao lùn trắng. Cho tới lúc đó, hiểu được 'tâm trạng' của nó giúp công nghệ của chúng ta an toàn."
+      "body_vi": "Đó là lý do các nhà khoa học theo dõi Mặt Trời sát sao. Một đội tàu vũ trụ, gồm **tàu thăm dò Mặt Trời Parker** của NASA, Solar Orbiter, SOHO và Đài quan sát Động lực học Mặt Trời, nghiên cứu nó từ không gian. Dưới mặt đất, Trung tâm Dự báo Thời tiết Không gian của NOAA theo dõi các vùng hoạt động và phát cảnh báo về những sự kiện nguy hiểm {noaa-swpc}, giúp các công ty điện lực và nhà vận hành vệ tinh có thời gian chuẩn bị. Mặt Trời mới đi được gần nửa cuộc đời. Khoảng [g:5 tỷ năm] nữa, nó sẽ phình to thành sao khổng lồ đỏ, rồi co lại thành sao lùn trắng. Cho tới lúc đó, hiểu được 'tâm trạng' của nó giúp công nghệ của chúng ta an toàn.",
+      "heading_fr": "Surveiller notre étoile",
+      "body_fr": "C'est pourquoi les scientifiques surveillent de près le Soleil. Une flotte de vaisseaux spatiaux, comprenant la **sonde Parker Solar Probe** de la NASA, Solar Orbiter, SOHO et l'Observatoire de la dynamique solaire, l'étudie depuis l'espace. Au sol, le Centre de prévision de la météo spatiale de la NOAA suit les régions actives et émet des veilles et des avertissements pour les événements dangereux {noaa-swpc}, donnant aux compagnies d'électricité et aux opérateurs de satellites le temps de se préparer. Le Soleil est un peu moins qu'à mi-chemin de sa vie. Dans environ [g:5 milliards d'années], il se gonflera en géante rouge, puis se contractera en naine blanche. D'ici là, apprendre à lire ses humeurs assure la sécurité de notre technologie.",
+      "heading_de": "Unseren Stern beobachten",
+      "body_de": "Aus diesem Grund beobachten Wissenschaftler die Sonne genau. Eine Flotte von Raumfahrzeugen, darunter die **Parker Solar Probe** der NASA, der Solar Orbiter, SOHO und das Solar Dynamics Observatory, untersucht sie aus dem All. Am Boden verfolgt das Space Weather Prediction Center der NOAA aktive Regionen und gibt Beobachtungen sowie Warnungen für gefährliche Ereignisse heraus {noaa-swpc}, was Stromversorgern und Betreibern von Satelliten Zeit gibt, sich vorzubereiten. Die Sonne hat etwas weniger als die Hälfte ihres Lebens hinter sich. In etwa [g:5 Milliarden Jahren] wird sie sich zu einem roten Riesen aufblähen und danach zu einem weißen Zwerg schrumpfen. Bis dahin hilft uns das Erlernen ihrer Launen dabei, unsere Technologie zu schützen.",
+      "heading_es": "Vigilando nuestra estrella",
+      "body_es": "Por eso los científicos vigilan de cerca al Sol. Una flota de naves espaciales, incluida la **Sonda Solar Parker** de la NASA, Solar Orbiter, SOHO y el Observatorio de Dinámica Solar, lo estudia desde el espacio. En tierra, el Centro de Predicción del Clima Espacial de la NOAA rastrea regiones activas y emite alertas {noaa-swpc}. El Sol está a poco menos de la mitad de su vida; en unos [g:5 billion years] se convertirá en una gigante roja."
     }
   ],
   "keyPoint": {
     "en": "The Sun is like [p:a calm-looking neighbour with a temper]: steady most days, but capable of storms that reach our doorstep. Systems we depend on, from power to GPS, stay safe not by luck but by *watching early and preparing before the storm arrives*.",
-    "vi": "Mặt Trời giống như [p:một người hàng xóm trông hiền lành nhưng nóng tính]: phần lớn thời gian ổn định, nhưng có thể nổi những cơn bão ập tới tận cửa nhà ta. Những hệ thống ta phụ thuộc, từ điện đến GPS, được an toàn không nhờ may mắn mà nhờ *theo dõi sớm và chuẩn bị trước khi bão tới*."
+    "vi": "Mặt Trời giống như [p:một người hàng xóm trông hiền lành nhưng nóng tính]: phần lớn thời gian ổn định, nhưng có thể nổi những cơn bão ập tới tận cửa nhà ta. Những hệ thống ta phụ thuộc, từ điện đến GPS, được an toàn không nhờ may mắn mà nhờ *theo dõi sớm và chuẩn bị trước khi bão tới*.",
+    "fr": "Le Soleil est comme [p:un voisin d'apparence calme doté d'un fort caractère] : stable la plupart des jours, mais capable de tempêtes qui atteignent notre seuil. Les systèmes dont nous dépendons, de l'électricité au GPS, restent sûrs non par chance mais en *observant tôt et en se préparant avant l'arrivée de la tempête*.",
+    "de": "Die Sonne gleicht [p:einem friedlich wirkenden Nachbarn mit Jähzorn]: An den meisten Tagen beständig, aber fähig zu Stürmen, die unsere Haustür erreichen. Systeme, von denen wir abhängen, von Strom bis GPS, bleiben nicht durch Glück geschützt, sondern dadurch, dass man *frühzeitig hinschaut und sich vorbereitet, bevor der Sturm eintrifft*.",
+    "es": "El Sol es como [p:un vecino tranquilo de temperamento fuerte]: estable la mayoría de los días, pero capaz de generar tormentas que llegan a nuestra puerta. Los sistemas de los que dependemos se mantienen seguros no por suerte, sino por *observar con anticipación y prepararse antes de que llegue la tormenta*."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Hôm nay hãy vào trang của Trung tâm Dự báo Thời tiết Không gian NOAA và xem mức thời tiết không gian hiện tại.",
       "Tra cứu những địa điểm và thời điểm tốt nhất để ngắm cực quang trong chu kỳ Mặt Trời hiện nay.",
       "Chuẩn bị một bộ đồ dùng nhỏ cho lúc mất điện, gồm đèn pin, pin và một sạc dự phòng đầy."
+    ],
+    "fr": [
+      "Consultez le Centre de prévision de la météo spatiale de la NOAA aujourd'hui et trouvez le niveau actuel de météo spatiale.",
+      "Recherchez les meilleurs endroits et moments pour observer les aurores durant le cycle solaire actuel.",
+      "Préparez un petit kit domestique pour une coupure de courant, comprenant une lampe torche, des piles et une batterie externe chargée."
+    ],
+    "de": [
+      "Besuche heute die Website des Space Weather Prediction Center der NOAA und finde das aktuelle Weltraumwetter-Niveau heraus.",
+      "Informiere dich über die besten Orte und Zeiten, um während des aktuellen Sonnenzyklus Polarlichter zu sehen.",
+      "Stelle einen kleinen Notvorrat für einen Stromausfall zu Hause zusammen, mit einer Taschenlampe, Batterien und einer aufgeladenen Powerbank."
+    ],
+    "es": [
+      "Consulta hoy el Centro de Predicción del Clima Espacial de la NOAA para conocer el nivel actual del clima espacial.",
+      "Busca los mejores lugares y horarios para ver auroras durante el ciclo solar actual.",
+      "Prepara un pequeño kit casero para un corte de energía con una linterna, pilas y una batería externa cargada."
     ]
   },
   "references": [
@@ -126,5 +192,81 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JbACdOQAAeqvXh2k+RDKdAAD++SsyWiXgnJ2aTsn8UA5WZ60j59hd9Wv8lNREtGb9G+ZEBtFymm8t4Cxn8rAZKugAAA==",
-  "dominant": "#043814"
+  "dominant": "#043814",
+  "glossary": {
+    "en": {
+      "yellow dwarf": "An average-sized, main-sequence star that fuses hydrogen into helium and emits yellowish light.",
+      "core": "The extremely dense and hot central region of the Sun where nuclear reactions take place.",
+      "photosphere": "The visible surface layer of the Sun that emits most of its light.",
+      "corona": "The outermost atmosphere of the Sun, visible as a white crown during eclipses.",
+      "solar wind": "A continuous supersonic stream of charged particles blowing outward from the Sun.",
+      "solar maximum": "The peak period of magnetic activity in the Sun's 11-year cycle.",
+      "space weather": "Environmental conditions in space driven by solar activity that affect Earth and technology.",
+      "carrington event": "The most powerful recorded geomagnetic storm in history, occurring in September 1859.",
+      "auroras": "Natural light displays in Earth's sky caused by solar particles interacting with the atmosphere.",
+      "parker solar probe": "A NASA spacecraft designed to study the Sun's outer corona up close."
+    },
+    "vi": {
+      "lùn vàng": "Loại ngôi sao thuộc dãy chính, có khối lượng vừa phải và phát ra ánh sáng vàng.",
+      "lõi": "Vung trung tâm của Mặt Trời nơi diễn ra các phản ứng tổng hợp hạt nhân.",
+      "quang quyển": "Lớp bề mặt của Mặt Trời phát ra phần lớn ánh sáng mà chúng ta nhìn thấy.",
+      "nhật hoa": "Lớp khí quyển ngoài cùng của Mặt Trời, tỏa sáng rực rỡ trong các kỳ nhật thực.",
+      "gió mặt trời": "Dòng hạt tích điện thổi liên tục từ nhật hoa ra mọi hướng trong không gian.",
+      "cực đại mặt trời": "Giai đoạn trong chu kỳ 11 năm khi Mặt Trời hoạt động mạnh mẽ và sôi động nhất.",
+      "thời tiết không gian": "Điều kiện biến động trong không gian do hoạt động của Mặt Trời gây ra.",
+      "sự kiện carrington": "Cơn bão Mặt Trời mạnh nhất từng được ghi nhận trong lịch sử vào tháng 9 năm 1859.",
+      "cực quang": "Hiện tượng ánh sáng rực rỡ đầy màu sắc trên bầu trời đêm ở các vùng vĩ độ cao.",
+      "tàu thăm dò mặt trời parker": "Con tàu vũ trụ của NASA được phóng để nghiên cứu cận cảnh bầu khí quyển Mặt Trời."
+    },
+    "fr": {
+      "naine jaune": "Type d'étoile de taille moyenne qui brûle de l'hydrogène en son cœur.",
+      "zone radiative": "Couche interne du Soleil où l'énergie se déplace par rebonds constants.",
+      "zone convective": "Région où la chaleur monte par de grandes bulles de plasma.",
+      "photosphère": "Couche visible externe du Soleil agissant comme sa surface apparente.",
+      "corona": "Atmosphère externe extrêmement chaude entourant le Soleil.",
+      "vent solaire": "Flux continu de gaz chargé propulsé à grande vitesse depuis la corona.",
+      "héliosphère": "Immense bulle magnétique créée par le vent solaire autour du système.",
+      "maximum solaire": "Période du cycle où l'activité magnétique et les taches solaires culminent.",
+      "éjections de masse coronale": "Gigantesques explosions de plasma et de champs magnétiques envoyées dans l'espace.",
+      "météo spatiale": "Conditions changeantes dans l'espace sous l'influence de l'activité solaire.",
+      "événement de carrington": "Tempête géomagnétique extrême survenue en 1859 et ayant perturbé les télégraphes.",
+      "aurores": "Lueurs colorées dans le ciel causées par des particules solaires dans l'atmosphère.",
+      "sonde parker solar probe": "Vaisseau spatial de la NASA conçu pour étudier de très près le Soleil."
+    },
+    "de": {
+      "gelber zwerg": "Ein Hauptreihenstern der Spektralklasse G, zu dem auch unsere Sonne gehört.",
+      "kern": "Das heißeste und dichteste Zentrum der Sonne, in dem Kernfusion stattfindet.",
+      "photosphäre": "Die sichtbare untere Atmosphärenschicht der Sonne, die das meiste Licht abstrahlt.",
+      "korona": "Die extrem heiße äußere Atmosphäre der Sonne, die sich weit in den Weltraum erstreckt.",
+      "sonnenwind": "Ein ständiger Strom geladener Teilchen, der von der Sonne ins Sonnensystem strömt.",
+      "solarmaximum": "Der Höhepunkt des elfjährigen Sonnenzyklus mit besonders vielen Sonnenflecken und Stürmen.",
+      "weltraumwetter": "Die wechselhaften Bedingungen im All, die durch solare Aktivität beeinflusst werden.",
+      "carrington-ereignis": "Der stärkste historisch dokumentierte geomagnetische Sturm im Jahr 1859.",
+      "polarlichtern": "Leuchtende Himmelserscheinungen in den Polarregionen, verursacht durch eintreffende Sonnenpartikel.",
+      "parker solar probe": "Eine NASA-Raumsonde zur Erforschung der äußeren Sonnenatmosphäre."
+    },
+    "es": {
+      "enana amarilla": "Tipo de estrella de tamaño medio y color amarillo que fusiona hidrógeno en su núcleo.",
+      "núcleo": "Centro denso y extremadamente caliente del Sol donde ocurren las reacciones de fusión nuclear.",
+      "fotosfera": "Capa superficial visible del Sol que emite la mayor parte de la luz y el calor.",
+      "corona": "Atmósfera exterior del Sol, extremadamente caliente y visible durante los eclipses totales.",
+      "viento solar": "Corriente continua de partículas cargadas que fluye desde el Sol hacia todo el sistema solar.",
+      "máximo solar": "Periodo de máxima actividad magnética y de manchas en el ciclo de once años del Sol.",
+      "clima espacial": "Condiciones cambiantes en el espacio influenciadas por la actividad y el viento solar.",
+      "evento carrington": "Tormenta solar extrema ocurrida en 1859 que causó fallas mundiales en el telégrafo y auroras brillantes.",
+      "auroras": "Espléndidos brillos luminosos en el cielo nocturno causados por partículas solares en los polos.",
+      "sonda solar parker": "Nave espacial de la NASA diseñada para estudiar la corona solar de cerca."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

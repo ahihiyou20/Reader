@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "How the world learned to read",
-    "vi": "Thế giới đã học đọc như thế nào"
+    "vi": "Thế giới đã học đọc như thế nào",
+    "fr": "Comment le monde a appris à lire",
+    "de": "Wie die Welt lesen lernte",
+    "es": "Cómo el mundo aprendió a leer"
   },
   "hook": {
     "en": "You are reading this sentence without effort, so it is easy to forget how rare that skill once was. In 1820, only about [p:one in ten people] in the world could read and write. Today the share has reversed: only about one in ten cannot. How did a skill once reserved for priests and rulers become ordinary?",
-    "vi": "Bạn đang đọc câu này mà chẳng tốn chút sức nào, nên rất dễ quên rằng kỹ năng ấy từng hiếm hoi đến mức nào. Năm 1820, chỉ khoảng [p:một trong mười người] trên thế giới biết đọc và viết. Ngày nay tỷ lệ đã đảo ngược: chỉ khoảng một trong mười người là không biết. Làm sao một kỹ năng từng dành riêng cho giới tu sĩ và cầm quyền lại trở nên bình thường như vậy?"
+    "vi": "Bạn đang đọc câu này mà chẳng tốn chút sức nào, nên rất dễ quên rằng kỹ năng ấy từng hiếm hoi đến mức nào. Năm 1820, chỉ khoảng [p:một trong mười người] trên thế giới biết đọc và viết. Ngày nay tỷ lệ đã đảo ngược: chỉ khoảng một trong mười người là không biết. Làm sao một kỹ năng từng dành riêng cho giới tu sĩ và cầm quyền lại trở nên bình thường như vậy?",
+    "fr": "Vous lisez cette phrase sans effort, il est donc facile d'oublier à quel point cette compétence fut rare autrefois. En 1820, seulement environ [p:un dixième de la population] mondiale savait lire et écrire. Aujourd'hui, la proportion s'est inversée : seulement environ un dixième ne le sait pas. Comment une compétence jadis réservée aux prêtres et aux dirigeants est-elle devenue ordinaire ?",
+    "de": "Du liest diesen Satz mühelos, deshalb vergisst man leicht, wie selten diese Fähigkeit einst war. Im Jahr 1820 konnten weltweit nur etwa [p:zehn Prozent der Menschen] lesen und schreiben. Heute hat sich das Verhältnis umgekehrt: Nur noch etwa einer von zehn kann es nicht. Wie wurde aus einer Fähigkeit, die einst Priestern und Herrschern vorbehalten war, eine Selbstverständlichkeit?",
+    "es": "Estás leyendo esta oración sin esfuerzo, por lo que es fácil olvidar lo rara que fue alguna vez esa habilidad. En 1820, solo alrededor de [p:una de cada diez personas] en el mundo sabía leer y escribir. Hoy la proporción se ha invertido: solo alrededor de una de cada diez no sabe. ¿Cómo se convirtió en algo común una habilidad alguna vez reservada para sacerdotes y gobernantes?"
   },
   "sections": [
     {
       "heading_en": "A technology of power",
       "heading_vi": "Một công nghệ của quyền lực",
       "body_en": "The earliest forms of written communication date back to about 3,500 to 3,000 BCE. Yet for many centuries, literacy remained a [y:very restricted technology], closely tied to the exercise of power. Scribes, priests and officials could read; almost everyone else could not. Only during the **Middle Ages** did book production start to grow, and reading slowly began to matter for the general population in the Western world {buringh-2009}. Even then, most people lived their whole lives without ever writing their own name.",
-      "body_vi": "Những hình thức giao tiếp bằng chữ viết sớm nhất xuất hiện vào khoảng năm 3.500 đến 3.000 TCN. Thế nhưng trong nhiều thế kỷ, biết chữ vẫn là [y:một công nghệ cực kỳ hạn chế], gắn chặt với việc nắm giữ quyền lực. Thư lại, tu sĩ và quan chức thì đọc được; gần như tất cả những người còn lại thì không. Chỉ đến **thời Trung cổ**, việc sản xuất sách mới bắt đầu tăng, và việc đọc dần trở nên quan trọng với người dân thường ở thế giới phương Tây {buringh-2009}. Ngay cả khi đó, phần lớn mọi người sống trọn đời mà chưa từng viết được tên mình."
+      "body_vi": "Những hình thức giao tiếp bằng chữ viết sớm nhất xuất hiện vào khoảng năm 3.500 đến 3.000 TCN. Thế nhưng trong nhiều thế kỷ, biết chữ vẫn là [y:một công nghệ cực kỳ hạn chế], gắn chặt với việc nắm giữ quyền lực. Thư lại, tu sĩ và quan chức thì đọc được; gần như tất cả những người còn lại thì không. Chỉ đến **thời Trung cổ**, việc sản xuất sách mới bắt đầu tăng, và việc đọc dần trở nên quan trọng với người dân thường ở thế giới phương Tây {buringh-2009}. Ngay cả khi đó, phần lớn mọi người sống trọn đời mà chưa từng viết được tên mình.",
+      "heading_fr": "Une technologie du pouvoir",
+      "body_fr": "Les plus anciennes formes de communication écrite remontent à environ 3500 ou 3000 avant notre ère. Pourtant, pendant de nombreux siècles, l'alphabétisation est restée une [y:technologie très restreinte], étroitement liée à l'exercice du pouvoir. Les scribes, les prêtres et les fonctionnaires savaient lire ; presque tous les autres l'ignoraient. Ce n'est qu'au cours du **Moyen Âge** que la production de livres a commencé à croître, et que la lecture a lentement commencé à compter pour la population générale dans le monde occidental {buringh-2009}. Même alors, la plupart des gens ont vécu toute leur vie sans jamais écrire leur propre nom.",
+      "heading_de": "Eine Technologie der Macht",
+      "body_de": "Die frühesten Formen schriftlicher Kommunikation gehen auf die Zeit zwischen 3.500 und 3.000 v. Chr. zurück. Doch über viele Jahrhunderte hinweg blieb die Alphabetisierung eine [y:streng begrenzte Technologie], die eng mit der Ausübung von Macht verknüpft war. Schreiber, Priester und Beamte konnten lesen; fast alle anderen nicht. Erst im **Mittelalter** begann die Buchproduktion zu wachsen, und das Lesen gewann in der westlichen Welt langsam an Bedeutung für die Allgemeinbevölkerung {buringh-2009}. Selbst damals lebten die meisten Menschen ihr gesamtes Leben, ohne jemals ihren eigenen Namen aufzuschreiben.",
+      "heading_es": "Una tecnología de poder",
+      "body_es": "Las formas más tempranas de comunicación escrita se remontan a entre 3.500 y 3.000 años antes de nuestra era. Sin embargo, durante muchos siglos, la alfabetización siguió siendo una [y:tecnología muy restringida], estrechamente ligada al ejercicio del poder. Escribas, sacerdotes y funcionarios sabían leer; casi todos los demás no. Solo durante la **Edad Media** la producción de libros comenzó a crecer, y la lectura empezó a importar lentamente para la población general en el mundo occidental {buringh-2009}. Incluso entonces, la mayoría de las personas vivían toda su vida sin llegar a escribir su propio nombre."
     },
     {
       "heading_en": "Counting signatures",
       "heading_vi": "Đếm chữ ký",
       "body_en": "How can we know who could read centuries ago? Historians often use a simple test: the share of men and women who could **sign documents** such as marriage registers. It is a very basic definition of literacy, since someone might draw a familiar shape without really writing, but it can be counted. In the diocese of Norwich, northeast of London, the majority of men, about [p:61%], could not write their names in the late 16th century, and for women the share who could was much lower {owid-literacy}. These signatures let us follow the slow spread of reading across generations.",
-      "body_vi": "Làm sao ta biết ai biết đọc từ nhiều thế kỷ trước? Các nhà sử học thường dùng một phép thử đơn giản: tỷ lệ đàn ông và phụ nữ có thể **ký tên vào giấy tờ**, chẳng hạn sổ đăng ký kết hôn. Đó là một định nghĩa rất cơ bản về biết chữ, vì có người chỉ vẽ lại một hình quen thuộc chứ chưa thật sự viết, nhưng nó đếm được. Ở giáo phận Norwich, phía đông bắc London, phần lớn đàn ông, khoảng [p:61%], không viết nổi tên mình vào cuối thế kỷ 16, còn tỷ lệ phụ nữ viết được thì thấp hơn nhiều {owid-literacy}. Những chữ ký này cho phép ta lần theo sự lan toả chậm rãi của việc đọc qua nhiều thế hệ."
+      "body_vi": "Làm sao ta biết ai biết đọc từ nhiều thế kỷ trước? Các nhà sử học thường dùng một phép thử đơn giản: tỷ lệ đàn ông và phụ nữ có thể **ký tên vào giấy tờ**, chẳng hạn sổ đăng ký kết hôn. Đó là một định nghĩa rất cơ bản về biết chữ, vì có người chỉ vẽ lại một hình quen thuộc chứ chưa thật sự viết, nhưng nó đếm được. Ở giáo phận Norwich, phía đông bắc London, phần lớn đàn ông, khoảng [p:61%], không viết nổi tên mình vào cuối thế kỷ 16, còn tỷ lệ phụ nữ viết được thì thấp hơn nhiều {owid-literacy}. Những chữ ký này cho phép ta lần theo sự lan toả chậm rãi của việc đọc qua nhiều thế hệ.",
+      "heading_fr": "Compter les signatures",
+      "body_fr": "Comment pouvons-nous savoir qui savait lire il y a des siècles ? Les historiens utilisent souvent un test simple : la proportion d'hommes et de femmes qui pouvaient **signer des documents** tels que des registres de mariage. C'est une définition très rudimentaire de l'alphabétisation, car quelqu'un pouvait tracer une forme familière sans vraiment savoir écrire, mais cela peut être compté. Dans le diocèse de Norwich, au nord-est de Londres, la majorité des hommes, soit environ [p:61 %], ne savaient pas signer leur nom à la fin du XVIe siècle, et pour les femmes, la proportion était bien plus faible {owid-literacy}. Ces signatures nous permettent de suivre la lente diffusion de la lecture à travers les générations.",
+      "heading_de": "Signaturen zählen",
+      "body_de": "Woher wissen wir, wer vor Jahrhunderten lesen konnte? Historiker nutzen oft einen einfachen Test: den Anteil von Männern und Frauen, die Dokumente wie Heiratsregister **unterschreiben** konnten. Das ist eine sehr grundlegende Definition von Alphabetisierung, da jemand einfach eine vertraute Form zeichnen kann, ohne wirklich zu schreiben, aber es lässt sich zählen. In der Diözese Norwich nordöstlich von London konnte im späten 16. Jahrhundert die Mehrheit der Männer, etwa [p:61 Prozent], ihren Namen nicht schreiben, und bei den Frauen war der Anteil noch viel geringer {owid-literacy}. Diese Unterschriften erlauben es uns, die langsame Verbreitung des Lesens über Generationen hinweg zu verfolgen.",
+      "heading_es": "Contar firmas",
+      "body_es": "¿Cómo podemos saber quién sabía leer hace siglos? Los historiadores suelen utilizar una prueba sencilla: la proporción de hombres y mujeres que podían **firmar documentos** como los registros matrimoniales. Es una definición muy básica de alfabetización, ya que alguien podría dibujar una forma familiar sin saber escribir realmente, pero se puede contar. En la diócesis de Norwich, al noreste de Londres, la mayoría de los hombres, alrededor del [p:61%], no sabían escribir sus nombres a finales del siglo XVI, y en el caso de las mujeres la proporción que podía hacerlo era mucho menor {owid-literacy}. Estas firmas nos permiten seguir la lenta expansión de la lectura a través de las generaciones."
     },
     {
       "heading_en": "An idea from the Enlightenment",
       "heading_vi": "Một ý tưởng từ thời Khai sáng",
       "body_en": "The ambition of **universal literacy** in Europe was a reform born of the Enlightenment, and it took centuries to achieve. Literacy grew especially fast across Northwest Europe between 1600 and 1800. In England, by 1840, about two-thirds of men and half of women were literate. Towards the end of the 19th century, the share reached almost [g:three-quarters for both sexes], so the gender gap had almost closed. Only in the 19th and 20th centuries did early-industrialised countries come close to everyone being able to read. In the **United States**, near-universal literacy also required closing a large gap between races, which happened only around 1980.",
-      "body_vi": "Khát vọng **phổ cập biết chữ** ở châu Âu là một cuộc cải cách ra đời từ thời Khai sáng, và phải mất nhiều thế kỷ mới thành hiện thực. Tỷ lệ biết chữ tăng đặc biệt nhanh ở Tây Bắc Âu trong khoảng 1600 đến 1800. Ở Anh, đến năm 1840, khoảng hai phần ba đàn ông và một nửa phụ nữ biết chữ. Đến cuối thế kỷ 19, tỷ lệ này đạt gần [g:ba phần tư ở cả hai giới], nghĩa là khoảng cách giới gần như đã được xoá bỏ. Chỉ trong thế kỷ 19 và 20, các nước công nghiệp hoá sớm mới tiến gần tới mức ai cũng biết đọc. Ở **Hoa Kỳ**, để gần như ai cũng biết chữ, nước này còn phải thu hẹp khoảng cách lớn giữa các chủng tộc, điều chỉ đạt được vào khoảng năm 1980."
+      "body_vi": "Khát vọng **phổ cập biết chữ** ở châu Âu là một cuộc cải cách ra đời từ thời Khai sáng, và phải mất nhiều thế kỷ mới thành hiện thực. Tỷ lệ biết chữ tăng đặc biệt nhanh ở Tây Bắc Âu trong khoảng 1600 đến 1800. Ở Anh, đến năm 1840, khoảng hai phần ba đàn ông và một nửa phụ nữ biết chữ. Đến cuối thế kỷ 19, tỷ lệ này đạt gần [g:ba phần tư ở cả hai giới], nghĩa là khoảng cách giới gần như đã được xoá bỏ. Chỉ trong thế kỷ 19 và 20, các nước công nghiệp hoá sớm mới tiến gần tới mức ai cũng biết đọc. Ở **Hoa Kỳ**, để gần như ai cũng biết chữ, nước này còn phải thu hẹp khoảng cách lớn giữa các chủng tộc, điều chỉ đạt được vào khoảng năm 1980.",
+      "heading_fr": "Une idée des Lumières",
+      "body_fr": "L'ambition d'une **alphabétisation universelle** en Europe fut une réforme née des Lumières, et il a fallu des siècles pour y parvenir. L'alphabétisation a progressé particulièrement vite en Europe du Nord-Ouest entre 1600 et 1800. En Angleterre, vers 1840, environ les deux tiers des hommes et la moitié des femmes savaient lire et écrire. Vers la fin du XIXe siècle, la proportion a atteint près de [g:les trois quarts pour les deux sexes], de sorte que l'écart entre les genres s'était presque refermé. Ce n'est qu'aux XIXe et XXe siècles que les pays industrialisés précoces se sont approchés d'une population entièrement alphabétisée. Aux **États-Unis**, l'alphabétisation quasi universelle a également exigé la réduction d'un fossé important entre les races, ce qui ne s'est produit qu'vers 1980.",
+      "heading_de": "Eine Idee der Aufklärung",
+      "body_de": "Das Ziel der **universellen Alphabetisierung** in Europa war eine Reform, die der Aufklärung entsprang, und ihre Verwirklichung dauerte Jahrhunderte. Zwischen 1600 und 1800 breitete sich die Alphabetisierung in Nordwesteuropa besonders schnell aus. In England konnten um 1840 etwa zwei Drittel der Männer und die Hälfte der Frauen lesen und schreiben. Gegen Ende des 19. Jahrhunderts erreichte der Anteil bei [g:beiden Geschlechtern fast drei Viertel], sodass sich die Kluft zwischen den Geschlechtern fast geschlossen hatte. Erst im 19. und 20. Jahrhundert näherten sich die frühindustrialisierten Länder dem Zustand an, dass jeder lesen konnte. In den **Vereinigten Staaten** erforderte die fast vollständige Alphabetisierung zudem die Überwindung einer großen Kluft zwischen den Rassen, was erst um 1980 geschah.",
+      "heading_es": "Una idea de la Ilustración",
+      "body_es": "La ambición de la **alfabetización universal** en Europa fue una reforma nacida de la Ilustración, y tardó siglos en lograrse. La alfabetización creció especialmente rápido en el noroeste de Europa entre 1600 y 1800. En Inglaterra, hacia 1840, cerca de dos tercios de los hombres y la mitad de las mujeres sabían leer y escribir. Hacia finales del siglo XIX, la proporción alcanzó casi [g:las tres cuartas partes para ambos sexos], por lo que la brecha de género casi se había cerrado. Solo en los siglos XIX y XX los países industrializados tempranos se acercaron a que todos supieran leer. En los **Estados Unidos**, la alfabetización casi universal también requirió cerrar una gran brecha entre razas, lo cual ocurrió recién alrededor de 1980."
     },
     {
       "heading_en": "Reading came before growth",
       "heading_vi": "Biết chữ đi trước tăng trưởng",
       "body_en": "England was the centre of the Industrial Revolution, and the data shows that rising literacy [y:came before] it, not after. Roser and Ortiz-Ospina argue that higher living standards became possible partly thanks to an increasingly educated public. Economic growth depends on understanding better how to produce the things we need and turning that knowledge into new technology. Both inventing new technologies and using them in factories and farms relied on people who could read instructions, keep records and learn from what others had written down.",
-      "body_vi": "Nước Anh là trung tâm của Cách mạng Công nghiệp, và dữ liệu cho thấy tỷ lệ biết chữ tăng lên [y:trước] cuộc cách mạng ấy, chứ không phải sau. Roser và Ortiz-Ospina cho rằng mức sống cao hơn trở nên khả thi một phần nhờ công chúng ngày càng có học. Tăng trưởng kinh tế dựa vào việc hiểu rõ hơn cách sản xuất những thứ ta cần và biến hiểu biết ấy thành công nghệ mới. Cả việc phát minh công nghệ lẫn việc ứng dụng chúng trong nhà máy, trang trại đều cần những người đọc được hướng dẫn, ghi chép sổ sách và học hỏi từ những gì người khác đã viết ra."
+      "body_vi": "Nước Anh là trung tâm của Cách mạng Công nghiệp, và dữ liệu cho thấy tỷ lệ biết chữ tăng lên [y:trước] cuộc cách mạng ấy, chứ không phải sau. Roser và Ortiz-Ospina cho rằng mức sống cao hơn trở nên khả thi một phần nhờ công chúng ngày càng có học. Tăng trưởng kinh tế dựa vào việc hiểu rõ hơn cách sản xuất những thứ ta cần và biến hiểu biết ấy thành công nghệ mới. Cả việc phát minh công nghệ lẫn việc ứng dụng chúng trong nhà máy, trang trại đều cần những người đọc được hướng dẫn, ghi chép sổ sách và học hỏi từ những gì người khác đã viết ra.",
+      "heading_fr": "La lecture a précédé la croissance",
+      "body_fr": "L'Angleterre a été le foyer de la révolution industrielle, et les données montrent que la hausse de l'alphabétisation [y:l'a précédée], et non l'inverse. Roser et Ortiz-Ospina soutiennent que l'élévation du niveau de vie est devenue possible en partie grâce à un public de plus en plus éduqué. La croissance économique dépend d'une meilleure compréhension de la manière de produire ce dont nous avons besoin et de la transformation de ce savoir en nouvelle technologie. Tant l'invention de nouvelles technologies que leur utilisation dans les usines et les fermes reposaient sur des personnes capables de lire des instructions, de tenir des registres et d'apprendre de ce que d'autres avaient consigné par écrit.",
+      "heading_de": "Lesen kam vor dem Wachstum",
+      "body_de": "England war das Zentrum der Industriellen Revolution, und die Daten zeigen, dass eine steigende Alphabetisierung [y:vorherging], nicht erst danach kam. Roser und Ortiz-Ospina argumentieren, dass höhere Lebensstandards teilweise dank einer zunehmend gebildeten Öffentlichkeit möglich wurden. Wirtschaftliches Wachstum hängt davon ab, besser zu verstehen, wie man die Dinge herstellt, die wir brauchen, und dieses Wissen in neue Technologie umzuwandeln. Sowohl die Erfindung neuer Technologien als auch deren Nutzung in Fabriken und auf Bauernhöfen waren auf Menschen angewiesen, die Anweisungen lesen, Buchhaltung führen und aus dem lernen konnten, was andere aufgeschrieben hatten.",
+      "heading_es": "La lectura precedió al crecimiento",
+      "body_es": "Inglaterra fue el centro de la Revolución Industrial, y los datos muestran que el aumento de la alfabetización [y:se produjo antes] de esta, no después. Roser y Ortiz-Ospina argumentan que niveles de vida más altos fueron posibles en parte gracias a un público cada vez más educado. El crecimiento económico depende de comprender mejor cómo producir las cosas que necesitamos y convertir ese conocimiento en nueva tecnología. Tanto la invención de nuevas tecnologías como su uso en fábricas y granjas dependían de personas que pudieran leer instrucciones, llevar registros y aprender de lo que otros habían escrito."
     },
     {
       "heading_en": "The great expansion",
       "heading_vi": "Cuộc mở rộng vĩ đại",
       "body_en": "Two centuries ago, the best estimate is that only [p:12% of the world] could read. In 1870, only one in four people attended school, and only one in five could read. Over the 19th century, global literacy more than doubled, but the real acceleration came after the middle of the 20th century, when basic education became a **global priority**. Today, literacy and school attendance are both above 80%, and the gaps between world regions, while still real, are much smaller. In **Latin America**, many nations gained 40 to 50 percentage points in a single century.",
-      "body_vi": "Hai thế kỷ trước, ước tính tốt nhất cho thấy chỉ [p:12% dân số thế giới] biết đọc. Năm 1870, chỉ một trong bốn người được đi học, và chỉ một trong năm người đọc được. Trong thế kỷ 19, tỷ lệ biết chữ toàn cầu tăng hơn gấp đôi, nhưng sự tăng tốc thật sự đến sau giữa thế kỷ 20, khi giáo dục cơ bản trở thành **ưu tiên toàn cầu**. Ngày nay, tỷ lệ biết chữ và tỷ lệ đi học đều trên 80%, và khoảng cách giữa các khu vực, dù vẫn còn, đã nhỏ hơn nhiều. Ở **Mỹ Latinh**, nhiều quốc gia tăng thêm 40 đến 50 điểm phần trăm chỉ trong một thế kỷ."
+      "body_vi": "Hai thế kỷ trước, ước tính tốt nhất cho thấy chỉ [p:12% dân số thế giới] biết đọc. Năm 1870, chỉ một trong bốn người được đi học, và chỉ một trong năm người đọc được. Trong thế kỷ 19, tỷ lệ biết chữ toàn cầu tăng hơn gấp đôi, nhưng sự tăng tốc thật sự đến sau giữa thế kỷ 20, khi giáo dục cơ bản trở thành **ưu tiên toàn cầu**. Ngày nay, tỷ lệ biết chữ và tỷ lệ đi học đều trên 80%, và khoảng cách giữa các khu vực, dù vẫn còn, đã nhỏ hơn nhiều. Ở **Mỹ Latinh**, nhiều quốc gia tăng thêm 40 đến 50 điểm phần trăm chỉ trong một thế kỷ.",
+      "heading_fr": "La grande expansion",
+      "body_fr": "Il y a deux siècles, la meilleure estimation est que seulement [p:12 % du monde] savait lire. En 1870, seulement une personne sur quatre allait à l'école, et seulement une sur cinq savait lire. Au cours du XIXe siècle, l'alphabétisation mondiale a plus que doublé, mais la véritable accélération est intervenue après le milieu du XXe siècle, lorsque l'éducation de base est devenue une **priorité mondiale**. Aujourd'hui, l'alphabétisation et la scolarisation dépassent toutes deux 80 %, et les écarts entre les régions du monde, bien qu'encore réels, sont beaucoup plus réduits. En **Amérique latine**, de nombreuses nations ont gagné 40 à 50 points de pourcentage en un seul siècle.",
+      "heading_de": "Die große Expansion",
+      "body_de": "Vor zwei Jahrhunderten lag die beste Schätzung zufolge der Anteil der Weltbevölkerung, der lesen konnte, bei nur [p:zwölf Prozent]. Im Jahr 1870 besaß nur jeder vierte Mensch eine Schule, und nur jeder fünfte konnte lesen. Im Laufe des 19. Jahrhunderts verdoppelte sich die globale Alphabetisierung mehr als, aber die eigentliche Beschleunigung setzte nach der Mitte des 20. Jahrhunderts ein, als die Grundbildung zu einer **globalen Priorität** wurde. Heute liegen sowohl die Alphabetisierung als auch der Schulbesuch bei über 80 Prozent, und die Unterschiede zwischen den Weltregionen sind, wenngleich sie noch real sind, viel geringer. In **Lateinamerika** machten viele Nationen in einem einzigen Jahrhundert Fortschritte von 40 bis 50 Prozentpunkten.",
+      "heading_es": "La gran expansión",
+      "body_es": "Hace dos siglos, la mejor estimación es que solo el [p:12% del mundo] sabía leer. En 1870, solo una de cada cuatro personas iba a la escuela y solo una de cada cinco sabía leer. A lo largo del siglo XIX, la alfabetización mundial se más que duplicó, pero la verdadera aceleración llegó después de mediados del siglo XX, cuando la educación básica se convirtió en una **prioridad mundial**. Hoy en día, la alfabetización y la asistencia escolar están ambas por encima del 80%, y las brechas entre las regiones del mundo, aunque siguen siendo reales, son mucho menores. En **América Latina**, muchas naciones ganaron de 40 a 50 puntos porcentuales en un solo siglo."
     },
     {
       "heading_en": "One generation, a different world",
       "heading_vi": "Một thế hệ, một thế giới khác",
       "body_en": "A useful way to see where literacy is heading is to compare age groups. In most countries, young people are much more likely to read than their grandparents. The gap is most dramatic in **Northern Africa and the Middle East**: in many countries there, [p:less than a third] of the older generation is literate, while [g:more than 90%] of young people are {unesco-uis}. Because today's young adults will be tomorrow's older adults, these gaps tell us that literacy rates will keep rising for decades to come.",
-      "body_vi": "Một cách hữu ích để thấy tỷ lệ biết chữ đang đi về đâu là so sánh các nhóm tuổi. Ở hầu hết các nước, người trẻ biết đọc nhiều hơn hẳn ông bà mình. Khoảng cách rõ rệt nhất ở **Bắc Phi và Trung Đông**: tại nhiều nước ở đây, [p:chưa đến một phần ba] thế hệ lớn tuổi biết chữ, trong khi [g:hơn 90%] người trẻ biết chữ {unesco-uis}. Vì thanh niên hôm nay sẽ là người cao tuổi ngày mai, những khoảng cách này cho thấy tỷ lệ biết chữ sẽ còn tiếp tục tăng trong nhiều thập kỷ tới."
+      "body_vi": "Một cách hữu ích để thấy tỷ lệ biết chữ đang đi về đâu là so sánh các nhóm tuổi. Ở hầu hết các nước, người trẻ biết đọc nhiều hơn hẳn ông bà mình. Khoảng cách rõ rệt nhất ở **Bắc Phi và Trung Đông**: tại nhiều nước ở đây, [p:chưa đến một phần ba] thế hệ lớn tuổi biết chữ, trong khi [g:hơn 90%] người trẻ biết chữ {unesco-uis}. Vì thanh niên hôm nay sẽ là người cao tuổi ngày mai, những khoảng cách này cho thấy tỷ lệ biết chữ sẽ còn tiếp tục tăng trong nhiều thập kỷ tới.",
+      "heading_fr": "Une génération, un monde différent",
+      "body_fr": "Une manière utile de voir où va l'alphabétisation est de comparer les groupes d'âge. Dans la plupart des pays, les jeunes sont beaucoup plus susceptibles de savoir lire que leurs grands-parents. L'écart est le plus spectaculaire en **Afrique du Nord et au Moyen-Orient** : dans de nombreux pays là-bas, [p:moins d'un tiers] de la génération plus âgée sait lire et écrire, tandis que [g:plus de 90 %] des jeunes le savent {unesco-uis}. Parce que les jeunes adultes d'aujourd'hui seront les adultes plus âgés de demain, ces écarts nous indiquent que les taux d'alphabétisation continueront d'augmenter pendant des décennies.",
+      "heading_de": "Eine Generation, eine andere Welt",
+      "body_de": "Ein nützlicher Weg, um zu sehen, wohin sich die Alphabetisierung entwickelt, ist der Vergleich von Altersgruppen. In den meisten Ländern lesen junge Menschen mit viel höherer Wahrscheinlichkeit als ihre Großeltern. Am dramatischsten ist dieser Unterschied in **Nordafrika und dem Nahen Osten**: In vielen Ländern dort ist [p:weniger als ein Drittel] der älteren Generation alphabetisiert, während [g:mehr als 90 Prozent] der jungen Menschen es sind {unesco-uis}. Da die heutigen jungen Erwachsenen die älteren Erwachsenen von morgen sein werden, zeigen uns diese Unterschiede, dass die Alphabetisierungsraten noch jahrzehntelang steigen werden.",
+      "heading_es": "Una generación, un mundo diferente",
+      "body_es": "Una forma útil de ver hacia dónde se dirige la alfabetización es comparar los grupos de edad. En la mayoría de los países, los jóvenes son mucho más propensos a leer que sus abuelos. La brecha es más drástica en **el Norte de África y Oriente Medio**: en muchos países allí, [p:menos de un tercio] de la generación mayor sabe leer y escribir, mientras que [g:más del 90%] de los jóvenes lo hace {unesco-uis}. Debido a que los jóvenes adultos de hoy serán los adultos mayores de mañana, estas brechas nos indican que las tasas de alfabetización seguirán subiendo durante las próximas décadas."
     },
     {
       "heading_en": "The work that remains",
       "heading_vi": "Phần việc còn lại",
       "body_en": "In many countries today, more than 95% of adults have basic literacy skills. Yet large inequalities remain. In some countries in **sub-Saharan Africa**, fewer than [p:one in three adults] can both read and write, and these are exactly the places where education is most likely to hold back development. The numbers can also flatter: in many low-income countries, tests show that a large share of second-grade pupils [y:cannot read a single word] of a short text. Going to school is not the same as learning to read.",
-      "body_vi": "Ở nhiều nước hiện nay, hơn 95% người trưởng thành có kỹ năng đọc viết cơ bản. Tuy vậy, bất bình đẳng vẫn còn lớn. Tại một số nước ở **châu Phi cận Sahara**, chưa đến [p:một phần ba người lớn] vừa đọc vừa viết được, và đó chính là những nơi mà giáo dục dễ kìm hãm phát triển nhất. Các con số cũng có thể đẹp hơn thực tế: ở nhiều nước thu nhập thấp, các bài kiểm tra cho thấy một tỷ lệ lớn học sinh lớp hai [y:không đọc nổi một từ nào] trong một đoạn văn ngắn. Đi học không đồng nghĩa với biết đọc."
+      "body_vi": "Ở nhiều nước hiện nay, hơn 95% người trưởng thành có kỹ năng đọc viết cơ bản. Tuy vậy, bất bình đẳng vẫn còn lớn. Tại một số nước ở **châu Phi cận Sahara**, chưa đến [p:một phần ba người lớn] vừa đọc vừa viết được, và đó chính là những nơi mà giáo dục dễ kìm hãm phát triển nhất. Các con số cũng có thể đẹp hơn thực tế: ở nhiều nước thu nhập thấp, các bài kiểm tra cho thấy một tỷ lệ lớn học sinh lớp hai [y:không đọc nổi một từ nào] trong một đoạn văn ngắn. Đi học không đồng nghĩa với biết đọc.",
+      "heading_fr": "Le travail qui reste à accomplir",
+      "body_fr": "Dans de nombreux pays aujourd'hui, plus de 95 % des adultes possèdent des compétences de base en lecture et écriture. Pourtant, de grandes inégalités persistent. Dans certains pays d'**Afrique subsaharienne**, moins de [p:un adulte sur trois] sait à la fois lire et écrire, et ce sont précisément les endroits où l'éducation risque le plus de freiner le développement. Les chiffres peuvent aussi embellir la réalité : dans beaucoup de pays à faible revenu, des tests montrent qu'une large part des élèves de deuxième année [y:ne savent pas lire un seul mot] d'un texte court. Aller à l'école ne revient pas au même que d'apprendre à lire.",
+      "heading_de": "Die Arbeit, die bleibt",
+      "body_de": "In vielen Ländern verfügen heute mehr als 95 Prozent der Erwachsenen über grundlegende Lese- und Schreibkompetenzen. Dennoch bestehen weiterhin große Ungleichheiten. In einigen Ländern in **Subsahara-Afrika** können weniger als [p:jeder dritte Erwachsene] lesen und schreiben, und genau das sind die Orte, an denen Bildung am ehesten die Entwicklung hemmt. Die Zahlen können zudem trügen: In vielen einkommensschwachen Ländern zeigen Tests, dass ein großer Teil der Schüler der zweiten Klasse [y:kein einziges Wort] eines kurzen Textes lesen kann. Zur Schule zu gehen ist eben nicht dasselbe wie Lesen zu lernen.",
+      "heading_es": "El trabajo que queda",
+      "body_es": "En muchos países hoy en día, más del 95% de los adultos tienen habilidades básicas de alfabetización. Sin embargo, persisten grandes desigualdades. En algunos países del **África subsahariana**, menos de [p:uno de cada tres adultos] sabe leer y escribir, y estos son exactamente los lugares donde es más probable que la educación frene el desarrollo. Las cifras también pueden engañar: en muchos países de bajos ingresos, las pruebas muestran que una gran proporción de los alumnos de segundo grado [y:no pueden leer ni una sola palabra] de un texto corto. Ir a la escuela no es lo mismo que aprender a leer."
     }
   ],
   "keyPoint": {
     "en": "Literacy is like [p:electricity for the mind]: once it reaches almost everyone, we stop noticing it, yet almost everything else runs on it. It did not spread by itself. It took centuries of deliberate effort to *put schools and books within everyone's reach*, and that work is not finished.",
-    "vi": "Biết chữ giống như [p:dòng điện của trí óc]: khi đã đến với gần như mọi người, ta không còn để ý tới nó, nhưng gần như mọi thứ khác đều vận hành nhờ nó. Nó không tự lan toả. Phải mất nhiều thế kỷ nỗ lực có chủ đích để *đưa trường học và sách vở đến tầm tay mọi người*, và công việc ấy vẫn chưa xong."
+    "vi": "Biết chữ giống như [p:dòng điện của trí óc]: khi đã đến với gần như mọi người, ta không còn để ý tới nó, nhưng gần như mọi thứ khác đều vận hành nhờ nó. Nó không tự lan toả. Phải mất nhiều thế kỷ nỗ lực có chủ đích để *đưa trường học và sách vở đến tầm tay mọi người*, và công việc ấy vẫn chưa xong.",
+    "fr": "L'alphabétisation est comme [p:l'électricité de l'esprit] : une fois qu'elle atteint presque tout le monde, nous cessons de la remarquer, pourtant presque tout le reste fonctionne grâce à elle. Elle ne s'est pas propagée d'elle-même. Il a fallu des siècles d'efforts délibérés pour *mettre les écoles et les livres à la portée de tous*, et ce travail n'est pas terminé.",
+    "de": "Alphabetisierung ist wie [p:Elektrizität für den Geist]: Sobald sie fast jeden erreicht, hören wir auf, sie zu bemerkt, doch fast alles andere läuft mit ihr. Sie hat sich nicht von selbst verbreitet. Es brauchte Jahrhunderte zielgerichteter Anstrengungen, um *Schulen und Bücher in die Reichweite aller zu bringen*, und diese Arbeit ist noch nicht abgeschlossen.",
+    "es": "La alfabetización es como [p:la electricidad para la mente]: una vez que llega a casi todos, dejamos de notarla, pero casi todo lo demás funciona gracias a ella. No se extendió sola. Requirió siglos de esfuerzo deliberado para *poner las escuelas y los libros al alcance de todos*, y esa tarea no ha terminado."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Hỏi người lớn tuổi nhất mà bạn quen xem họ học đọc khi nào và bằng cách nào.",
       "Tra tỷ lệ biết chữ của người trẻ và người cao tuổi ở nước bạn, rồi so sánh hai con số.",
       "Tặng một cuốn sách bạn đã đọc xong cho một người khó có điều kiện mua sách."
+    ],
+    "fr": [
+      "Demandez à la personne la plus âgée que vous connaissez quand et comment elle a appris à lire.",
+      "Recherchez le taux d'alphabétisation des jeunes et des personnes plus âgées dans votre pays et comparez-les.",
+      "Offrez un livre que vous avez terminé à quelqu'un qui ne l'achèterait pas facilement."
+    ],
+    "de": [
+      "Frage die älteste Person, die du kennst, wann und wie sie lesen gelernt hat.",
+      "Schlage die Alphabetisierungsrate von jungen und älteren Menschen in deinem Land nach und vergleiche sie.",
+      "Gib ein Buch, das du ausgelesen hast, jemandem, der es sich nicht so leicht kaufen würde."
+    ],
+    "es": [
+      "Pregúntale a la persona más anciana que conozcas cuándo y cómo aprendió a leer.",
+      "Busca la tasa de alfabetización de los jóvenes y de las personas mayores en tu país y compáralas.",
+      "Regala un libro que hayas terminado a alguien que no lo compraría fácilmente."
     ]
   },
   "references": [
@@ -127,5 +193,67 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoQABwAPu1iqk2ppaQiMAgBMB2JZACdAGlgNoA8CgE5W1UIAP735pGBdZ0W8sfA81ZQ/yq77soIfiSSPDu+jRitx7eKPeb1SvGIyDmicqBBbGLM4EqLsyLUyh2lXdgAAAA=",
-  "dominant": "#746958"
+  "dominant": "#746958",
+  "glossary": {
+    "en": {
+      "middle ages": "A period in European history lasting from the fifth to the fifteenth century.",
+      "sign documents": "To write one's name on official papers as proof of agreement or presence.",
+      "universal literacy": "The ability of all people in a population to read and write.",
+      "united states": "A country in North America consisting of fifty states.",
+      "global priority": "An objective considered extremely important worldwide.",
+      "latin america": "Regions of the Americas where Romance languages are predominantly spoken.",
+      "northern africa and the middle east": "A vast transcontinental region spanning North Africa and Western Asia.",
+      "sub-saharan africa": "The area of the African continent south of the Sahara desert."
+    },
+    "vi": {
+      "thời trung cổ": "Thời kỳ lịch sử châu Âu kéo dài từ thế kỷ thứ 5 đến thế kỷ 15.",
+      "ký tên vào giấy tờ": "Viết tên của mình lên văn bản để xác nhận hoặc làm bằng chứng pháp lý.",
+      "phổ cập biết chữ": "Làm cho toàn bộ người dân đều có thể đọc và viết được.",
+      "hoa kỳ": "Quốc gia lớn nằm ở khu vực Bắc Mỹ.",
+      "ưu tiên toàn cầu": "Mục tiêu quan trọng được quan tâm và thực hiện trên phạm vi toàn thế giới.",
+      "mỹ latinh": "Khu vực gồm các quốc gia châu Mỹ sử dụng tiếng Tây Ban Nha và Bồ Đào Nha.",
+      "bắc phi và trung đông": "Vùng địa lý gồm phía bắc châu Phi và khu vực Tây Nam Á.",
+      "châu phi cận sahara": "Khu vực châu Phi nằm ở phía nam sa mạc Sahara."
+    },
+    "fr": {
+      "moyen âge": "Période de l'histoire européenne allant du Ve au XVe siècle.",
+      "alphabétisation universelle": "Objectif selon lequel chaque personne sait lire et écrire.",
+      "révolution industrielle": "Période de transition vers des procédés de fabrication mécanisés aux XVIIIe et XIXe siècles.",
+      "priorité mondiale": "Enjeu jugé primordial à l'échelle de la planète entière.",
+      "afrique subsaharienne": "Région du continent africain située au sud du désert du Sahara.",
+      "diocèse": "Circonscription administrative placée sous l'autorité d'un évêque.",
+      "registres de mariage": "Livres officiels où étaient consignés les mariages civils ou religieux.",
+      "siècle": "Période de cent années consécutives."
+    },
+    "de": {
+      "alphabetisierung": "Die Fähigkeit von Menschen, lesen und schreiben zu können.",
+      "diözese": "Ein kirchlicher Verwaltungsbezirk, der von einem Bischof geleitet wird.",
+      "aufklärung": "Eine europäische Epoche, die Vernunft und Bildung in den Mittelpunkt stellte.",
+      "buchhaltung": "Das lückenlose Aufzeichnen von finanziellen Transaktionen und Geschäften.",
+      "subsahara-afrika": "Der geografische Raum afrikanischer Staaten südlich der Sahara-Wüste.",
+      "kompetenzen": "Fähigkeiten und Fertigkeiten zur Bewältigung bestimmter Aufgaben.",
+      "generation": "Eine Gruppe von Menschen ähnlichen Alters mit gemeinsamen Erfahrungen."
+    },
+    "es": {
+      "alfabetización": "Habilidad de saber leer y escribir textos de manera comprensiva.",
+      "edad media": "Periodo histórico europeo comprendido entre los siglos V y XV.",
+      "firmar documentos": "Acción de estampar una rúbrica personal para validar papeles legales.",
+      "alfabetización universal": "Meta social para que la totalidad de la población adulta sepa leer.",
+      "revolución industrial": "Transformación económica y tecnológica iniciada en Inglaterra hacia 1760.",
+      "prioridad mundial": "Objetivo principal compartido por múltiples naciones a nivel internacional.",
+      "áfrica subsahariana": "Región del continente africano situada al sur del desierto del Sahara.",
+      "ilustración": "Movimiento cultural e intelectual del siglo XVIII enfocado en la razón."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

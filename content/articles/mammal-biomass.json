@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Wild mammals are just 5% of all mammals on Earth",
-    "vi": "Thú hoang dã chỉ chiếm 5% khối lượng loài thú trên Trái Đất"
+    "vi": "Thú hoang dã chỉ chiếm 5% khối lượng loài thú trên Trái Đất",
+    "fr": "Les mammifères sauvages ne représentent que 5 % de tous les mammifères sur Terre",
+    "de": "Wild Säugetiere sind nur 5% aller Säugetiere auf der Erde",
+    "es": "Los mamíferos salvajes son solo el 5% de todos los mamíferos de la Tierra"
   },
   "hook": {
     "en": "Picture all the mammals on Earth on one giant scale: every elephant, whale, lion and deer, every person, cow and pig. Which side would weigh the most? The answer surprises most people. Humans and our livestock make up about [p:95% of all mammal weight]. Every wild mammal species together accounts for just 5%.",
-    "vi": "Hãy hình dung toàn bộ loài thú trên Trái Đất được đặt lên một chiếc cân khổng lồ: mọi con voi, cá voi, sư tử và hươu nai, mọi con người, bò và lợn. Bên nào sẽ nặng nhất? Câu trả lời khiến phần lớn mọi người bất ngờ. Con người và gia súc của chúng ta chiếm khoảng [p:95% tổng khối lượng loài thú]. Tất cả các loài thú hoang dã cộng lại chỉ chiếm 5%."
+    "vi": "Hãy hình dung toàn bộ loài thú trên Trái Đất được đặt lên một chiếc cân khổng lồ: mọi con voi, cá voi, sư tử và hươu nai, mọi con người, bò và lợn. Bên nào sẽ nặng nhất? Câu trả lời khiến phần lớn mọi người bất ngờ. Con người và gia súc của chúng ta chiếm khoảng [p:95% tổng khối lượng loài thú]. Tất cả các loài thú hoang dã cộng lại chỉ chiếm 5%.",
+    "fr": "Imaginez tous les mammifères de la Terre sur une seule balance géante : chaque éléphant, baleine, lion et cerf, chaque personne, vache et cochon. Quel côté pèserait le plus lourd ? La réponse surprend la plupart des gens. Les humains et notre bétail représentent environ [p:95 % du poids total des mammifères]. Toutes les espèces de mammifères sauvages réunies n'en pèsent que 5 %.",
+    "de": "Stell dir alle Säugetiere der Erde auf einer riesigen Waage vor: jeden Elefanten, Wal, Löwen und Hirsch, jeden Menschen, jede Kuh und jedes Schwein. Welche Seite würde am meisten wiegen? Die Antwort überrascht die meisten Menschen. Menschen und unsere Nutztiere machen etwa [p:95% des gesamten Säugetiergewichts] aus. Alle wildlebenden Säugetierarten zusammen machen gerade einmal 5% aus.",
+    "es": "Imagina a todos los mamíferos de la Tierra en una sola balanza gigante: cada elefante, ballena, león y ciervo, cada persona, vaca y cerdo. ¿Qué lado pesaría más? La respuesta sorprende a la mayoría. Los seres humanos y nuestro ganado representan alrededor del [p:95% de todo el peso de los mamíferos]. Todas las especies de mamíferos salvajes juntas suman apenas un 5%."
   },
   "sections": [
     {
       "heading_en": "Weighing life",
       "heading_vi": "Cân đo sự sống",
       "body_en": "There are several ways to compare animals. One is to count individuals, but then tiny creatures vastly outnumber large ones, which says little about how much of the planet's resources each group uses. Ecologists therefore often use **biomass**: the total weight of all animals of a given kind. It accounts for both the number of animals and their size {owid-biomass}. Biomass gives more weight to large animals near the top of the ecological pyramid, which depend on a healthy base below them. On this measure, the mammal kingdom looks very different from what most of us imagine.",
-      "body_vi": "Có nhiều cách để so sánh các loài động vật. Một cách là đếm số cá thể, nhưng khi đó những sinh vật tí hon áp đảo hoàn toàn các loài lớn, và điều này nói rất ít về lượng tài nguyên mà mỗi nhóm sử dụng. Vì thế, các nhà sinh thái học thường dùng **sinh khối** (*biomass*): tổng khối lượng của mọi cá thể thuộc một loài. Sinh khối tính đến cả số lượng lẫn kích thước của con vật {owid-biomass}. Nó đặt trọng số lớn hơn cho các loài to lớn ở gần đỉnh tháp sinh thái, vốn phụ thuộc vào một nền tảng khoẻ mạnh bên dưới. Theo thước đo này, vương quốc loài thú trông rất khác với hình dung của đa số chúng ta."
+      "body_vi": "Có nhiều cách để so sánh các loài động vật. Một cách là đếm số cá thể, nhưng khi đó những sinh vật tí hon áp đảo hoàn toàn các loài lớn, và điều này nói rất ít về lượng tài nguyên mà mỗi nhóm sử dụng. Vì thế, các nhà sinh thái học thường dùng **sinh khối** (*biomass*): tổng khối lượng của mọi cá thể thuộc một loài. Sinh khối tính đến cả số lượng lẫn kích thước của con vật {owid-biomass}. Nó đặt trọng số lớn hơn cho các loài to lớn ở gần đỉnh tháp sinh thái, vốn phụ thuộc vào một nền tảng khoẻ mạnh bên dưới. Theo thước đo này, vương quốc loài thú trông rất khác với hình dung của đa số chúng ta.",
+      "heading_fr": "Peser le vivant",
+      "body_fr": "Il existe plusieurs façons de comparer les animaux. L'une d'elles consiste à compter les individus, mais les créatures minuscules surpassent alors largement les grandes, ce qui dit peu de choses sur la part des ressources de la planète qu'utilise chaque groupe. Les écologues utilisent donc souvent la **biomasse** : le poids total de tous les animaux d'un type donné. Elle tient compte à la fois du nombre d'animaux et de leur taille {owid-biomass}. La biomasse donne plus de poids aux grands animaux proches du sommet de la pyramide écologique, qui dépendent d'une base saine en dessous d'eux. Selon cette mesure, le règne des mammifères paraît bien différent de ce que la plupart d'entre nous imaginent.",
+      "heading_de": "Das Gewicht des Lebens",
+      "body_de": "Es gibt verschiedene Möglichkeiten, Tiere zu vergleichen. Eine besteht darin, die Individuen zu zählen, aber dann übertreffen winzige Kreaturen große bei Weitem, was wenig darüber aussagt, wie viel von den Ressourcen des Planeten jede Gruppe verbraucht. Ökologen verwenden daher oft **Biomasse**: das Gesamtgewicht aller Tiere einer bestimmten Art. Sie berücksichtigt sowohl die Anzahl der Tiere als auch ihre Größe {owid-biomass}. Biomasse gibt großen Tieren nahe der Spitze der ökologischen Pyramide, die von einer gesunden Basis unter ihnen abhängen, mehr Gewicht. Nach diesem Maßstab sieht das Säugetierreich ganz anders aus, als die meisten von uns sich das vorstellen.",
+      "heading_es": "Pesando la vida",
+      "body_es": "Existen varias formas de comparar animales. Una es contar a los individuos, pero entonces las criaturas diminutas superan por mucho a las grandes, lo cual dice poco sobre cuántos recursos del planeta consume cada grupo. Por eso, los ecologistas suelen usar la **biomasa**: el peso total de todos los animales de un tipo determinado. Esta medida tiene en cuenta tanto el número de animales como su tamaño {owid-biomass}. La biomasa da más peso a los animales grandes situados en la cúspide de la pirámide ecológica, los cuales dependen de una base saludable inferior. Bajo este criterio, el reino de los mamíferos se ve muy diferente de lo que la mayoría imagina."
     },
     {
       "heading_en": "Humans: a third of the scale",
       "heading_vi": "Con người: một phần ba bàn cân",
       "body_en": "The study behind these numbers, by Lior Greenspoon and colleagues, splits all mammal biomass into small squares of 1%, each equal to about 11 million tonnes {greenspoon-2023}. The dominance of humans is clear. We account for [p:more than one-third] of all mammal biomass. To estimate it, the authors multiplied the 2021 world population of about 7.95 billion by an average body mass of 50 kilograms, which is low for an adult but reasonable once children are included. That gives roughly 398 million tonnes of people, [y:more than seven times] the weight of all wild mammals combined.",
-      "body_vi": "Nghiên cứu đứng sau những con số này, của Lior Greenspoon và cộng sự, chia toàn bộ sinh khối loài thú thành các ô nhỏ 1%, mỗi ô tương đương khoảng 11 triệu tấn {greenspoon-2023}. Sự thống trị của con người hiện rõ. Chúng ta chiếm [p:hơn một phần ba] tổng sinh khối loài thú. Để ước tính, các tác giả nhân dân số thế giới năm 2021, khoảng 7,95 tỷ người, với khối lượng cơ thể trung bình 50 kg, con số thấp so với người lớn nhưng hợp lý khi tính cả trẻ em. Kết quả là khoảng 398 triệu tấn người, [y:nặng hơn bảy lần] toàn bộ thú hoang dã cộng lại."
+      "body_vi": "Nghiên cứu đứng sau những con số này, của Lior Greenspoon và cộng sự, chia toàn bộ sinh khối loài thú thành các ô nhỏ 1%, mỗi ô tương đương khoảng 11 triệu tấn {greenspoon-2023}. Sự thống trị của con người hiện rõ. Chúng ta chiếm [p:hơn một phần ba] tổng sinh khối loài thú. Để ước tính, các tác giả nhân dân số thế giới năm 2021, khoảng 7,95 tỷ người, với khối lượng cơ thể trung bình 50 kg, con số thấp so với người lớn nhưng hợp lý khi tính cả trẻ em. Kết quả là khoảng 398 triệu tấn người, [y:nặng hơn bảy lần] toàn bộ thú hoang dã cộng lại.",
+      "heading_fr": "Humains : un tiers de la balance",
+      "body_fr": "L'étude à l'origine de ces chiffres, menée par Lior Greenspoon et ses collègues, divise toute la biomasse des mammifères en petits carrés de 1 %, chacun équivalant à environ 11 millions de tonnes {greenspoon-2023}. La domination des humains est évidente. Nous représentons [p:plus d'un tiers] de toute la biomasse des mammifères. Pour l'estimer, les auteurs ont multiplié la population mondiale de 2021 d'environ 7,95 milliards par une masse corporelle moyenne de 50 kilogrammes, ce qui est faible pour un adulte mais raisonnable une fois les enfants inclus. Cela donne environ 398 millions de tonnes de personnes, soit [y:plus de sept fois] le poids de tous les mammifères sauvages réunis.",
+      "heading_de": "Menschen: ein Drittel der Waage",
+      "body_de": "Die Studie hinter diesen Zahlen von Lior Greenspoon und Kollegen unterteilt die gesamte Säugetierbiomasse in kleine Quadrate von je 1%, von denen jedes etwa 11 Millionen Tonnen entspricht {greenspoon-2023}. Die Dominanz des Menschen ist deutlich. Wir machen [p:mehr als ein Drittel] der gesamten Säugetierbiomasse aus. Um dies zu schätzen, multiplizierten die Autoren die Weltbevölkerung von 2021 von etwa 7,95 Milliarden mit einem durchschnittlichen Körpergewicht von 50 Kilogramm, was für einen Erwachsenen niedrig, aber vernünftig ist, sobald Kinder einbezogen werden. Das ergibt grob 398 Millionen Tonnen Menschen, [y:mehr als das Siebenfache] des Gewichts aller wildlebenden Säugetiere zusammen.",
+      "heading_es": "Humanos: un tercio de la balanza",
+      "body_es": "El estudio detrás de estas cifras, elaborado por Lior Greenspoon y sus colegas, divide toda la biomasa de mamíferos en pequeños cuadros del 1%, cada uno equivalente a unos 11 millones de toneladas {greenspoon-2023}. El dominio humano es evidente. Representamos [p:más de un tercio] de toda la biomasa de mamíferos. Para calcularlo, los autores multiplicaron la población mundial de 2021, de unos 7.950 millones de personas, por una masa corporal media de 50 kilogramos, cifra baja para un adulto pero razonable al incluir a los niños. Esto da unos 398 millones de toneladas de personas, [y:más de siete veces] el peso de todos los mamíferos salvajes juntos."
     },
     {
       "heading_en": "Cattle, pigs and a few surprises",
       "heading_vi": "Bò, lợn và vài điều bất ngờ",
       "body_en": "Our livestock and pets, mostly **cattle**, make up about [p:59%] of mammal biomass. That leaves just 5% for wild mammals, which includes thousands of species, from elephants and deer to lions and whales. The researchers found some striking comparisons. Farmed pigs weigh as much as [y:all the world's whales], orcas, sea otters, seals and dolphins combined. And all the dogs in the world, pets and strays together, weigh about as much as all wild land mammals. Cats, by contrast, at around 2.3 million tonnes, are too light to show up in the main chart.",
-      "body_vi": "Gia súc và vật nuôi của chúng ta, chủ yếu là **bò**, chiếm khoảng [p:59%] sinh khối loài thú. Phần còn lại cho thú hoang dã chỉ là 5%, bao gồm hàng nghìn loài, từ voi, hươu đến sư tử và cá voi. Các nhà nghiên cứu tìm thấy vài phép so sánh đáng kinh ngạc. Lợn nuôi nặng ngang [y:toàn bộ cá voi trên thế giới], cộng thêm cá voi sát thủ, rái cá biển, hải cẩu và cá heo. Còn tất cả chó trên thế giới, cả chó nhà lẫn chó hoang, nặng xấp xỉ toàn bộ thú hoang trên cạn. Ngược lại, mèo, với khoảng 2,3 triệu tấn, nhẹ đến mức không hiện lên trong biểu đồ chính."
+      "body_vi": "Gia súc và vật nuôi của chúng ta, chủ yếu là **bò**, chiếm khoảng [p:59%] sinh khối loài thú. Phần còn lại cho thú hoang dã chỉ là 5%, bao gồm hàng nghìn loài, từ voi, hươu đến sư tử và cá voi. Các nhà nghiên cứu tìm thấy vài phép so sánh đáng kinh ngạc. Lợn nuôi nặng ngang [y:toàn bộ cá voi trên thế giới], cộng thêm cá voi sát thủ, rái cá biển, hải cẩu và cá heo. Còn tất cả chó trên thế giới, cả chó nhà lẫn chó hoang, nặng xấp xỉ toàn bộ thú hoang trên cạn. Ngược lại, mèo, với khoảng 2,3 triệu tấn, nhẹ đến mức không hiện lên trong biểu đồ chính.",
+      "heading_fr": "Bétail, porcs et quelques surprises",
+      "body_fr": "Notre bétail et nos animaux de compagnie, principalement des **bovins**, constituent environ [p:59 %] de la biomasse des mammifères. Il ne reste donc que 5 % pour les mammifères sauvages, ce qui inclut des milliers d'espèces, des éléphants et cerfs aux lions et baleines. Les chercheurs ont fait des comparaisons frappantes. Les porcs d'élevage pèsent autant que [y:toutes les baleines du monde], orques, loutres de mer, phoques et dauphins réunis. Et tous les chiens de la planète, animaux de compagnie et errants confondus, pèsent à peu près autant que tous les mammifères terrestres sauvages. Les chats, en revanche, avec environ 2,3 millions de tonnes, sont trop légers pour figurer dans le graphique principal.",
+      "heading_de": "Rinder, Schweine und ein paar Überraschungen",
+      "body_de": "Unsere Nutztiere und Haustiere, hauptsächlich **Rinder**, machen etwa [p:59%] der Säugetierbiomasse aus. Das lässt gerade einmal 5% für Wildtiere, was Tausende von Arten umfasst, von Elefanten und Hirschen bis hin zu Löwen und Walen. Die Forscher fanden einige auffällige Vergleiche. Zucht-Schweine wiegen so viel wie [y:alle Wale der Welt], Orcas, Seeotter, Robben und Delfine zusammen. Und alle Hunde der Welt, Haustiere und Streuner zusammen, wiegen ungefähr so viel wie alle wildlebenden Land-Säugetiere. Katzen hingegen sind mit rund 2,3 Millionen Tonnen zu leicht, um in der Hauptgrafik aufzutauchen.",
+      "heading_es": "Ganado, cerdos y algunas sorpresas",
+      "body_es": "Nuestro ganado y nuestras mascotas, principalmente **ganado**, representan alrededor del [p:59%] de la biomasa de mamíferos. Eso deja solo un 5% para los mamíferos salvajes, que incluyen a miles de especies, desde elefantes y ciervos hasta leones y ballenas. Los investigadores hallaron comparaciones llamativas. Los cerdos de granja pesan tanto como [y:todas las ballenas del mundo], orcas, nutrias marinas, focas y delfines juntos. Y todos los perros del mundo, mascotas y callejeros por igual, pesan casi lo mismo que todos los mamíferos terrestres salvajes. Los gatos, en cambio, con unos 2.300 millones de kilogramos, son demasiado ligeros para aparecer en el gráfico principal."
     },
     {
       "heading_en": "Birds tell a similar story",
       "heading_vi": "Loài chim cũng kể câu chuyện tương tự",
       "body_en": "Chickens are not mammals, but a similar comparison works for birds. **Poultry**, at around 30 million tonnes, weighs more than all the world's wild birds {bar-on-2018}. Here the size of the gap is much less certain, because estimates of wild birds vary a lot: one method gives 5 million tonnes, another 24 million. Researchers took a middle value of about 11 million tonnes, which suggests poultry outweighs wild birds by more than two to one. Whichever method you choose, though, the direction is the same: [y:farmed birds outweigh their wild cousins].",
-      "body_vi": "Gà không phải là thú, nhưng phép so sánh tương tự cũng áp dụng được cho chim. **Gia cầm**, với khoảng 30 triệu tấn, nặng hơn toàn bộ chim hoang dã trên thế giới {bar-on-2018}. Ở đây, mức chênh lệch kém chắc chắn hơn nhiều, vì các ước tính về chim hoang dã dao động rất lớn: một phương pháp cho ra 5 triệu tấn, phương pháp khác là 24 triệu tấn. Các nhà nghiên cứu lấy một giá trị ở giữa, khoảng 11 triệu tấn, cho thấy gia cầm nặng gấp hơn hai lần chim hoang dã. Dù chọn phương pháp nào, xu hướng vẫn như nhau: [y:chim nuôi nặng hơn họ hàng hoang dã của chúng]."
+      "body_vi": "Gà không phải là thú, nhưng phép so sánh tương tự cũng áp dụng được cho chim. **Gia cầm**, với khoảng 30 triệu tấn, nặng hơn toàn bộ chim hoang dã trên thế giới {bar-on-2018}. Ở đây, mức chênh lệch kém chắc chắn hơn nhiều, vì các ước tính về chim hoang dã dao động rất lớn: một phương pháp cho ra 5 triệu tấn, phương pháp khác là 24 triệu tấn. Các nhà nghiên cứu lấy một giá trị ở giữa, khoảng 11 triệu tấn, cho thấy gia cầm nặng gấp hơn hai lần chim hoang dã. Dù chọn phương pháp nào, xu hướng vẫn như nhau: [y:chim nuôi nặng hơn họ hàng hoang dã của chúng].",
+      "heading_fr": "Les oiseaux racontent une histoire similaire",
+      "body_fr": "Les poulets ne sont pas des mammifères, mais une comparaison semblable fonctionne pour les oiseaux. La **volaille**, avec environ 30 millions de tonnes, pèse plus que tous les oiseaux sauvages de la planète {bar-on-2018}. Ici, l'ampleur de l'écart est bien moins certaine, car les estimations sur les oiseaux sauvages varient beaucoup : une méthode donne 5 millions de tonnes, une autre 24 millions. Les chercheurs ont retenu une valeur intermédiaire d'environ 11 millions de tonnes, ce qui suggère que la volaille dépasse les oiseaux sauvages de plus du double. Quelle que soit la méthode choisie, la direction reste la même : [y:les oiseaux d'élevage surpassent en poids leurs cousins sauvages].",
+      "heading_de": "Vögel erzählen eine ähnliche Geschichte",
+      "body_de": "Hühner sind keine Säugetiere, aber ein ähnlicher Vergleich funktioniert für Vögel. **Geflügel** wiegt mit rund 30 Millionen Tonnen mehr als alle wildlebenden Vögel der Welt {bar-on-2018}. Hier ist die Größe der Lücke viel unsicherer, da Schätzungen über Wildvögel stark variieren: Eine Methode ergibt 5 Millionen Tonnen, eine andere 24 Millionen. Forscher nahmen einen Mittelwert von etwa 11 Millionen Tonnen, was nahelegt, dass Geflügel Wildvögel im Verhältnis von mehr als zwei zu eins überwiegt. Welche Methode du auch wählst, die Richtung ist dieselbe: [y:Zuchtvögel überwiegen ihre wilden Verwandten].",
+      "heading_es": "Las aves cuentan una historia similar",
+      "body_es": "Las gallinas no son mamíferos, pero se puede hacer una comparación similar con las aves. La **avicultura**, con unos 30 millones de toneladas, pesa más que todas las aves salvajes del mundo {bar-on-2018}. Aquí la magnitud de la brecha es mucho menos cierta, porque las estimaciones sobre aves silvestres varían mucho: un método da 5 millones de toneladas y otro 24 millones. Los investigadores tomaron un valor intermedio de unos 11 millones de toneladas, lo que sugiere que las aves de granja superan a las salvajes en más de dos a uno. Elijas el método que elijas, la dirección es la misma: [y:las aves de granja superan en peso a sus parientes silvestres]."
     },
     {
       "heading_en": "How wild mammals declined",
       "heading_vi": "Thú hoang dã đã suy giảm ra sao",
       "body_en": "How did humans come to dominate the mammal kingdom? A huge decline in wild mammals is part of the answer. Estimates suggest that the biomass of wild mammals has fallen by roughly [p:85% over the last 100,000 years], especially as humans spread across the planet. About 100,000 years ago, land mammals weighed around 120 million tonnes, almost all of it wild. By 10,000 years ago, this had fallen to 90 million tonnes. The most dramatic changes followed the start of **agriculture**: wild populations kept shrinking, while humans and livestock slowly grew.",
-      "body_vi": "Làm thế nào con người lại thống trị vương quốc loài thú? Sự suy giảm mạnh của thú hoang dã là một phần câu trả lời. Các ước tính cho thấy sinh khối thú hoang dã đã giảm khoảng [p:85% trong 100.000 năm qua], nhất là khi con người lan ra khắp hành tinh. Khoảng 100.000 năm trước, thú trên cạn nặng khoảng 120 triệu tấn, gần như toàn bộ là thú hoang. Đến 10.000 năm trước, con số này giảm còn 90 triệu tấn. Những thay đổi mạnh mẽ nhất đến sau khi **nông nghiệp** ra đời: quần thể hoang dã tiếp tục thu hẹp, trong khi con người và gia súc dần tăng lên."
+      "body_vi": "Làm thế nào con người lại thống trị vương quốc loài thú? Sự suy giảm mạnh của thú hoang dã là một phần câu trả lời. Các ước tính cho thấy sinh khối thú hoang dã đã giảm khoảng [p:85% trong 100.000 năm qua], nhất là khi con người lan ra khắp hành tinh. Khoảng 100.000 năm trước, thú trên cạn nặng khoảng 120 triệu tấn, gần như toàn bộ là thú hoang. Đến 10.000 năm trước, con số này giảm còn 90 triệu tấn. Những thay đổi mạnh mẽ nhất đến sau khi **nông nghiệp** ra đời: quần thể hoang dã tiếp tục thu hẹp, trong khi con người và gia súc dần tăng lên.",
+      "heading_fr": "Comment les mammifères sauvages ont décliné",
+      "body_fr": "Comment les humains en sont-ils arrivés à dominer le règne des mammifères ? Un déclin massif des mammifères sauvages fait partie de la réponse. Les estimations indiquent que la biomasse des mammifères sauvages a chuté d'environ [p:85 % au cours des 100 000 dernières années], en particulier à mesure que les humains se répandaient sur la planète. Il y a environ 100 000 ans, les mammifères terrestres pesaient près de 120 millions de tonnes, presque entièrement sauvages. Il y a 10 000 ans, ce chiffre était tombé à 90 millions de tonnes. Les changements les plus spectaculaires ont suivi les débuts de l'**agriculture** : les populations sauvages ont continuellement rétréci, tandis que les humains et le bétail augmentaient lentement.",
+      "heading_de": "Wie wildlebende Säugetiere zurückgingen",
+      "body_de": "Wie kam es dazu, dass der Mensch das Säugetierreich dominiert? Ein massiver Rückgang der wildlebenden Säugetiere ist Teil der Antwort. Schätzungen legen nahe, dass die Biomasse der Wildsäugetiere [p:in den letzten 100.000 Jahren um etwa 85%] zurückgegangen ist, insbesondere als sich der Mensch über den Planeten ausbreitete. Vor etwa 100.000 Jahren wogen Landsäugetiere rund 120 Millionen Tonnen, fast alles davon wild. Vor 10.000 Jahren war dies auf 90 Millionen Tonnen geschrumpft. Die dramatischsten Veränderungen folgten dem Beginn der **Landwirtschaft**: Wildpopulationen schrumpften weiter, während Menschen und Nutztiere langsam wuchsen.",
+      "heading_es": "Cómo declinaron los mamíferos salvajes",
+      "body_es": "¿Cómo llegaron los humanos a dominar el reino de los mamíferos? Un declive masivo de los animales salvajes forma parte de la respuesta. Las estimaciones sugieren que la biomasa de mamíferos salvajes ha disminuido en torno a un [p:85% en los últimos 100.000 años], especialmente a medida que los humanos se extendían por el planeta. Hace unos 100.000 años, los mamíferos terrestres pesaban unos 120 millones de toneladas, casi todo en estado salvaje. Hace 10.000 años, esta cifra había bajado a 90 millones de toneladas. Los cambios más drásticos vinieron tras el inicio de la **agricultura**: las poblaciones salvajes siguieron contrayéndose mientras los humanos y el ganado crecían lentamente."
     },
     {
       "heading_en": "A heavier planet",
       "heading_vi": "Một hành tinh nặng hơn",
       "body_en": "Humans did not simply replace wild animals one for one. In fact, we have [y:greatly increased] the total weight of mammals on Earth. By 1850, land mammals, including humans and livestock, weighed an estimated 250 million tonnes. Today, mammals weigh roughly 1,100 million tonnes, a fourfold increase since 1850. We did this by adding energy the wild never had: **fossil fuels**, synthetic fertilisers, crop varieties that grow much faster, and cleared land where livestock are raised far more densely than animals live in nature. Wild mammals shrank, but farmed ones grew far more.",
-      "body_vi": "Con người không đơn giản là thay thế từng con thú hoang. Trên thực tế, chúng ta đã [y:làm tăng mạnh] tổng khối lượng loài thú trên Trái Đất. Đến năm 1850, thú trên cạn, kể cả người và gia súc, nặng ước tính 250 triệu tấn. Ngày nay, loài thú nặng khoảng 1.100 triệu tấn, gấp bốn lần so với năm 1850. Chúng ta làm được điều đó bằng cách bổ sung nguồn năng lượng mà thiên nhiên hoang dã chưa từng có: **nhiên liệu hoá thạch**, phân bón tổng hợp, giống cây trồng lớn nhanh hơn nhiều, và đất được khai hoang để chăn nuôi gia súc với mật độ dày hơn hẳn mật độ động vật sống trong tự nhiên. Thú hoang co lại, nhưng thú nuôi tăng lên nhiều hơn thế."
+      "body_vi": "Con người không đơn giản là thay thế từng con thú hoang. Trên thực tế, chúng ta đã [y:làm tăng mạnh] tổng khối lượng loài thú trên Trái Đất. Đến năm 1850, thú trên cạn, kể cả người và gia súc, nặng ước tính 250 triệu tấn. Ngày nay, loài thú nặng khoảng 1.100 triệu tấn, gấp bốn lần so với năm 1850. Chúng ta làm được điều đó bằng cách bổ sung nguồn năng lượng mà thiên nhiên hoang dã chưa từng có: **nhiên liệu hoá thạch**, phân bón tổng hợp, giống cây trồng lớn nhanh hơn nhiều, và đất được khai hoang để chăn nuôi gia súc với mật độ dày hơn hẳn mật độ động vật sống trong tự nhiên. Thú hoang co lại, nhưng thú nuôi tăng lên nhiều hơn thế.",
+      "heading_fr": "Une planète plus lourde",
+      "body_fr": "Les humains n'ont pas simplement remplacé les animaux sauvages un par un. En fait, nous avons [y:fortement augmenté] le poids total des mammifères sur Terre. Vers 1850, les mammifères terrestres, y compris les humains et le bétail, pesaient environ 250 millions de tonnes. Aujourd'hui, les mammifères pèsent près de 1 100 millions de tonnes, soit une multiplication par quatre depuis 1850. Nous y sommes parvenus en ajoutant une énergie que la nature n'a jamais eue : les **combustibles fossiles**, les engrais de synthèse, des variétés de cultures qui poussent beaucoup plus vite, et des terres défrichées où le bétail est élevé de manière bien plus dense que les animaux ne vivent à l'état sauvage. Les mammifères sauvages ont diminué, mais les animaux d'élevage ont largement pris le relais.",
+      "heading_de": "Ein schwererer Planet",
+      "body_de": "Der Mensch hat die wilden Tiere nicht einfach eins zu eins ersetzt. Tatsächlich haben wir das Gesamtgewicht der Säugetiere auf der Erde [y:stark erhöht]. Bis 1850 wogen Landsäugetiere, einschließlich Mensch und Vieh, schätzungsweise 250 Millionen Tonnen. Heute wiegen Säugetiere grob 1.100 Millionen Tonnen, eine Vervierfachung seit 1850. Wir taten dies, indem wir Energie hinzufügten, die die Wildnis nie hatte: **fossile Brennstoffe**, synthetische Düngemittel, viel schneller wachsende Pflanzensorten und gerodetes Land, auf dem Nutztiere viel dichter gehalten werden, als Tiere in der Natur leben. Wildsäugetiere schrumpften, aber Nutztiere wuchsen weit mehr.",
+      "heading_es": "Un planeta más pesado",
+      "body_es": "Los humanos no nos limitamos a sustituir a los animales salvajes uno por uno. De hecho, hemos [y:aumentado considerablemente] el peso total de los mamíferos en la Tierra. Hacia 1850, los mamíferos terrestres, incluidos humanos y ganado, pesaban unos 250 millones de toneladas estimadas. Hoy en día, los mamíferos pesan aproximadamente 1.100 millones de toneladas, lo que supone un incremento de cuatro veces desde 1850. Lo logramos añadiendo energía que la naturaleza nunca tuvo: **combustibles fósiles**, fertilizantes sintéticos, variedades de cultivos de crecimiento mucho más rápido y tierras despejadas donde el ganado se cría con una densidad muy superior a la natural. Los mamíferos salvajes se encogieron, pero los de granja crecieron mucho más."
     },
     {
       "heading_en": "Bigger, but less diverse",
       "heading_vi": "To hơn, nhưng kém đa dạng",
       "body_en": "So the mammal kingdom is more vast than ever before, but so far this has come [p:at the cost of diversity]. Wild mammals have shrunk not just as a share of the total, but in absolute terms. The figures are uncertain: wild mammals are the hardest group to count, and the authors estimated most species with a model. Yet the main conclusion holds under different assumptions. Wild mammals might be a few percentage points more or less, but they still make up [g:far less than 10%] of the total. The question for this century is whether we can feed ourselves and leave more room for the wild.",
-      "body_vi": "Như vậy, vương quốc loài thú rộng lớn hơn bao giờ hết, nhưng cho đến nay điều đó [p:phải trả giá bằng sự đa dạng]. Thú hoang dã không chỉ thu hẹp về tỷ lệ mà còn giảm về số lượng tuyệt đối. Các con số vẫn còn bất định: thú hoang là nhóm khó đếm nhất, và các tác giả phải ước tính phần lớn các loài bằng mô hình. Dù vậy, kết luận chính vẫn đứng vững dưới nhiều giả định khác nhau. Tỷ lệ thú hoang có thể chênh vài điểm phần trăm, nhưng vẫn [g:thấp hơn 10% rất nhiều]. Câu hỏi của thế kỷ này là liệu chúng ta có thể nuôi sống chính mình mà vẫn chừa thêm chỗ cho thiên nhiên hoang dã hay không."
+      "body_vi": "Như vậy, vương quốc loài thú rộng lớn hơn bao giờ hết, nhưng cho đến nay điều đó [p:phải trả giá bằng sự đa dạng]. Thú hoang dã không chỉ thu hẹp về tỷ lệ mà còn giảm về số lượng tuyệt đối. Các con số vẫn còn bất định: thú hoang là nhóm khó đếm nhất, và các tác giả phải ước tính phần lớn các loài bằng mô hình. Dù vậy, kết luận chính vẫn đứng vững dưới nhiều giả định khác nhau. Tỷ lệ thú hoang có thể chênh vài điểm phần trăm, nhưng vẫn [g:thấp hơn 10% rất nhiều]. Câu hỏi của thế kỷ này là liệu chúng ta có thể nuôi sống chính mình mà vẫn chừa thêm chỗ cho thiên nhiên hoang dã hay không.",
+      "heading_fr": "Plus grands, mais moins diversifiés",
+      "body_fr": "Le règne des mammifères est donc plus vaste que jamais, mais cela s'est fait jusqu'à présent [p:au détriment de la diversité]. Les mammifères sauvages ont diminué non seulement en tant que part du total, mais aussi en termes absolus. Les chiffres sont incertains : les mammifères sauvages constituent le groupe le plus difficile à dénombrer, et les auteurs ont estimé la plupart des espèces à l'aide d'un modèle. Pourtant, la conclusion principale tient bon malgré différentes hypothèses. Les mammifères sauvages pèsent peut-être quelques points de pourcentage de plus ou de moins, mais ils représentent toujours [g:bien moins de 10 %] du total. La question pour ce siècle est de savoir si nous pourrons nous nourrir tout en laissant davantage de place à la vie sauvage.",
+      "heading_de": "Größer, aber weniger vielfältig",
+      "body_de": "Das Säugetierreich ist also gewaltiger denn je, aber bisher geschah dies [p:auf Kosten der Vielfalt]. Wildlebende Säugetiere sind nicht nur als Anteil am Gesamten geschrumpft, sondern auch absolut gesehen. Die Zahlen sind unsicher: Wildsäugetiere sind die am schwersten zu zählende Gruppe, und die Autoren schätzten die meisten Arten mit einem Modell. Dennoch hält die Hauptschlussfolgerung verschiedenen Annahmen stand. Wildsäugetiere machen vielleicht ein paar Prozentpunkte mehr oder weniger aus, aber sie stellen nach wie vor [g:weit weniger als 10%] des Gesamten dar. Die Frage für dieses Jahrhundert ist, ob wir uns selbst ernähren und gleichzeitig mehr Raum für die Wildnis lassen können.",
+      "heading_es": "Más grandes, pero menos diversos",
+      "body_es": "Así pues, el reino de los mamíferos es más vasto que nunca, pero hasta ahora esto se ha producido [p:a costa de la diversidad]. Los mamíferos salvajes se han reducido no solo como porcentaje del total, sino en términos absolutos. Las cifras son inciertas: los mamíferos salvajes son el grupo más difícil de contar, y los autores estimaron la mayoría de las especies mediante un modelo. Aun así, la conclusión principal se mantiene bajo diferentes supuestos. Los mamíferos salvajes podrían variar en unos pocos puntos porcentuales, pero siguen representando [g:mucho menos del 10%] del total. La pregunta para este siglo es si podremos alimentarnos y dejar más espacio para la vida salvaje."
     }
   ],
   "keyPoint": {
     "en": "The living world is like [p:a house we slowly filled with our own furniture]: it is fuller than ever, yet there is less room for anyone else. Changes in *how we produce food*, especially meat, decide how much space is left for wild animals.",
-    "vi": "Thế giới sống giống như [p:một ngôi nhà ta dần lấp đầy bằng đồ đạc của mình]: nó chật hơn bao giờ hết, nhưng chỗ cho người khác lại ít đi. Những thay đổi trong *cách chúng ta sản xuất thực phẩm*, nhất là thịt, quyết định còn bao nhiêu không gian cho động vật hoang dã."
+    "vi": "Thế giới sống giống như [p:một ngôi nhà ta dần lấp đầy bằng đồ đạc của mình]: nó chật hơn bao giờ hết, nhưng chỗ cho người khác lại ít đi. Những thay đổi trong *cách chúng ta sản xuất thực phẩm*, nhất là thịt, quyết định còn bao nhiêu không gian cho động vật hoang dã.",
+    "fr": "Le monde vivant est comparable à [p:une maison que nous aurions lentement remplie de nos propres meubles] : il est plus plein que jamais, et pourtant il y a moins de place pour les autres. Les changements dans *notre manière de produire notre nourriture*, en particulier la viande, décident de l'espace qu'il reste pour les animaux sauvages.",
+    "de": "Die lebendige Welt ist wie [p:ein Haus, das wir langsam mit unseren eigenen Möbeln gefüllt haben]: Sie ist voller denn je, und dennoch bleibt weniger Platz für alle anderen. Veränderungen in *wie wir Nahrung produzieren*, insbesondere Fleisch, bestimmen, wie viel Raum für Wildtiere übrig bleibt.",
+    "es": "El mundo viviente es como [p:una casa que poco a poco llenamos con nuestros propios muebles]: está más lleno que nunca, pero hay menos espacio para los demás. Los cambios en *cómo producimos alimentos*, especialmente la carne, determinan cuánto espacio queda para los animales salvajes."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Đố một người bạn đoán tỷ lệ thú hoang dã trước khi cho họ biết con số này, xem họ đoán sát đến đâu.",
       "Thử mỗi tuần một bữa thay thịt bò bằng đậu, đậu lăng hoặc thịt gà, và để ý cảm nhận của bạn.",
       "Tìm một tổ chức ở địa phương đang bảo vệ môi trường sống của động vật hoang dã và đọc xem họ làm gì."
+    ],
+    "fr": [
+      "Devinez la part des mammifères sauvages avant de présenter ce fait à un proche, puis observez à quel point sa réponse s'en approche.",
+      "Essayez de remplacer le bœuf par des haricots, des lentilles ou du poulet lors d'un repas par semaine, et remarquez ce que cela fait.",
+      "Trouvez un groupe local de protection de l'habitat faunique près de chez vous et lisez ce qu'il fait."
+    ],
+    "de": [
+      "Rate den Anteil der Wildtiere, bevor du einem Freund diesen Fakt erzählst, und schau, wie nah er herankommt.",
+      "Probiere eine Mahlzeit pro Woche aus, die Rindfleisch durch Bohnen, Linsen oder Hühnchen ersetzt, und achte darauf, wie sich das anfühlt.",
+      "Finde eine lokale Gruppe, die den Lebensraum von Wildtieren in deiner Nähe schützt, und lies, was sie tut."
+    ],
+    "es": [
+      "Adivina la proporción de mamíferos salvajes antes de compartir este dato con un amigo para ver qué tan cerca se queda.",
+      "Prueba a hacer una comida a la semana sustituyendo la carne de res por alubias, lentejas o pollo, y observa cómo te sientas.",
+      "Busca un grupo local que proteja el hábitat de la fauna cerca de ti y lee sobre lo que hace."
     ]
   },
   "references": [
@@ -142,13 +208,55 @@
       "fossil fuels": "Carbon-based energy sources such as coal, oil, and gas, formed from ancient decayed organisms.",
       "synthetic fertilisers": "Artificially manufactured chemical nutrients added to soil to promote faster crop growth.",
       "diversity": "The variety and abundance of different biological species inhabiting an ecosystem."
+    },
+    "vi": {
+      "sinh khối": "Tổng khối lượng của mọi cá thể sinh vật thuộc một loài hoặc một nhóm.",
+      "biomass": "Thuật ngữ tiếng Anh chỉ tổng khối lượng của sinh vật.",
+      "bò": "Loài gia súc nuôi lấy thịt và sữa, chiếm phần lớn sinh khối thú.",
+      "gia cầm": "Các loài chim được con người nuôi lấy thịt và trứng như gà, vịt.",
+      "nông nghiệp": "Ngành sản xuất bao gồm trồng trọt và chăn nuôi.",
+      "nhiên liệu hoá thạch": "Năng lượng hình thành từ di vật sinh vật cổ đại như than đá và dầu mỏ.",
+      "phân bón tổng hợp": "Chất hóa học bón cho cây trồng để tăng năng suất.",
+      "đa dạng": "Sự phong phú và nhiều loài khác nhau trong tự nhiên."
+    },
+    "fr": {
+      "biomasse": "Poids total de tous les animaux d'un type donné.",
+      "bovins": "Animaux de la famille des bœufs, vaches et taureaux.",
+      "volaille": "Oiseaux d'élevage élevés pour leur chair ou leurs œufs.",
+      "agriculture": "Ensemble des activités pour cultiver la terre et élever des animaux.",
+      "combustibles fossiles": "Énergies issues de la décomposition de matières organiques fossilisées.",
+      "mammifères": "Classe d'animaux vertébrés caractérisée par l'allaitement des petits.",
+      "espèces": "Groupes d'individus capables de se reproduire entre eux."
+    },
+    "de": {
+      "biomasse": "Das Gesamtgewicht aller Lebewesen einer bestimmten Art.",
+      "rinder": "Große Nutztiere wie Kühe und Stiere, die gehalten werden.",
+      "geflügel": "Vögel wie Hühner und Enten, die als Nutztiere gehalten werden.",
+      "landwirtschaft": "Die Bewirtschaftung von Boden zur Erzeugung von Nahrung.",
+      "fossile brennstoffe": "Energieträger wie Kohle, Erdöl und Erdgas.",
+      "ökologen": "Wissenschaftler, die Wechselwirkungen in der Natur erforschen.",
+      "wildpopulationen": "Gruppen von frei in der Natur lebenden Tieren."
+    },
+    "es": {
+      "biomasa": "Peso total de todos los organismos vivos de un tipo o grupo determinado.",
+      "ganado": "Conjunto de animales de granja criados para la producción de carne, leche o trabajo.",
+      "avicultura": "Cría y explotación de aves domésticas, como gallinas, para su consumo.",
+      "agricultura": "Conjunto de actividades económicas y técnicas para cultivar la tierra.",
+      "combustibles fósiles": "Fuentes de energía como el carbón, el petróleo y el gas natural.",
+      "ecologistas": "Personas que estudian o defienden la conservación del medio ambiente.",
+      "masa corporal": "Cantidad total de materia que compone el cuerpo de un individuo.",
+      "fertilizantes sintéticos": "Sustancias químicas artificiales añadidas al suelo para mejorar el crecimiento vegetal."
     }
   },
   "ai": {
     "fields": [
-      "en"
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
     ],
     "reviewed": true,
-    "model": "gemini-3.8-flash-high"
+    "model": "gemini-3.5-flash-lite"
   }
 }

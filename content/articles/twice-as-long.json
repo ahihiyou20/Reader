@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Twice as long: how life expectancy doubled everywhere",
-    "vi": "Dài gấp đôi: tuổi thọ đã tăng gấp đôi ở khắp nơi ra sao"
+    "vi": "Dài gấp đôi: tuổi thọ đã tăng gấp đôi ở khắp nơi ra sao",
+    "fr": "Deux fois plus long : comment l’espérance de vie a doublé partout",
+    "de": "Zweimal so lange: Wie sich die Lebenserwartung überall verdoppelte",
+    "es": "El doble de tiempo: cómo la esperanza de vida se duplicó en todas partes"
   },
   "hook": {
     "en": "Imagine a world map coloured red wherever people could expect to live fewer than 40 years. In 1800, that map would be [p:red everywhere]. No country, rich or poor, had escaped early death. Two centuries later, a newborn anywhere in the world can expect to live more than twice as long. How did that happen, and what does it tell us?",
-    "vi": "Hãy hình dung một tấm bản đồ thế giới tô đỏ ở bất cứ nơi nào người dân chỉ có thể sống dưới 40 năm. Năm 1800, tấm bản đồ ấy sẽ [p:đỏ rực ở mọi nơi]. Không quốc gia nào, giàu hay nghèo, thoát được cái chết sớm. Hai thế kỷ sau, một em bé sinh ra ở bất cứ đâu trên thế giới có thể sống lâu hơn gấp đôi. Điều đó đã xảy ra như thế nào, và nó cho ta biết gì?"
+    "vi": "Hãy hình dung một tấm bản đồ thế giới tô đỏ ở bất cứ nơi nào người dân chỉ có thể sống dưới 40 năm. Năm 1800, tấm bản đồ ấy sẽ [p:đỏ rực ở mọi nơi]. Không quốc gia nào, giàu hay nghèo, thoát được cái chết sớm. Hai thế kỷ sau, một em bé sinh ra ở bất cứ đâu trên thế giới có thể sống lâu hơn gấp đôi. Điều đó đã xảy ra như thế nào, và nó cho ta biết gì?",
+    "fr": "Imaginez une carte du monde colorée en rouge partout où l’on pouvait espérer vivre moins de 40 ans. En 1800, cette carte aurait été [p:rouge partout]. Aucun pays, riche ou pauvre, n’avait échappé à une mort précoce. Deux siècles plus tard, un nouveau-né n’importe où dans le monde peut espérer vivre plus de deux fois plus longtemps. Comment cela s’est-il produit et qu’est-ce que cela nous apprend ?",
+    "de": "Stell dir eine Weltkarte vor, die überall dort rot gefärbt ist, wo Menschen weniger als 40 Jahre erwarten konnten zu leben. Im Jahr 1800 wäre diese Karte [p:überall rot] gewesen. Kein Land, ob reich oder arm, war dem frühen Tod entkommen. Zwei Jahrhunderte später kann ein Neugeborener irgendwo auf der Welt erwarten, mehr als doppelt so lange zu leben. Wie ist das passiert, und was sagt uns das?",
+    "es": "Imagina un mapa del mundo coloreado de rojo donde la gente pudiera esperar vivir menos de 40 años. En 1800, ese mapa habría estado [p:rojo en todas partes]. Ningún país, rico o pobre, se había salvado de la muerte prematura. Dos siglos después, un recién nacido en cualquier lugar del mundo puede esperar vivir más del doble de tiempo. ¿Cómo ocurrió eso y qué nos dice?"
   },
   "sections": [
     {
       "heading_en": "A red map in 1800",
       "heading_vi": "Tấm bản đồ đỏ năm 1800",
       "body_en": "Demographic research suggests that at the beginning of the 19th century, [p:no country in the world] had a life expectancy longer than 40 years {riley-2005}. Almost everyone lived in **extreme poverty**, medical knowledge was very limited, and in every country our ancestors had to prepare for an early death. Globally, a newborn could expect to live [y:less than 30 years] on average. This was not the misfortune of a few unlucky places. It was the normal human condition, shared by farmers and kings, in Europe, Asia, Africa and the Americas alike.",
-      "body_vi": "Các nghiên cứu nhân khẩu học cho thấy vào đầu thế kỷ 19, [p:không quốc gia nào trên thế giới] có tuổi thọ trung bình quá 40 năm {riley-2005}. Gần như mọi người sống trong **nghèo cùng cực**, hiểu biết y khoa còn rất hạn chế, và ở mọi nước, tổ tiên chúng ta phải chuẩn bị cho một cái chết sớm. Trên toàn cầu, một em bé sơ sinh trung bình chỉ có thể sống [y:chưa tới 30 năm]. Đây không phải nỗi bất hạnh của vài nơi kém may mắn. Đó là thân phận bình thường của con người, chung cho cả nông dân lẫn vua chúa, ở châu Âu, châu Á, châu Phi cũng như châu Mỹ."
+      "body_vi": "Các nghiên cứu nhân khẩu học cho thấy vào đầu thế kỷ 19, [p:không quốc gia nào trên thế giới] có tuổi thọ trung bình quá 40 năm {riley-2005}. Gần như mọi người sống trong **nghèo cùng cực**, hiểu biết y khoa còn rất hạn chế, và ở mọi nước, tổ tiên chúng ta phải chuẩn bị cho một cái chết sớm. Trên toàn cầu, một em bé sơ sinh trung bình chỉ có thể sống [y:chưa tới 30 năm]. Đây không phải nỗi bất hạnh của vài nơi kém may mắn. Đó là thân phận bình thường của con người, chung cho cả nông dân lẫn vua chúa, ở châu Âu, châu Á, châu Phi cũng như châu Mỹ.",
+      "heading_fr": "Une carte rouge en 1800",
+      "body_fr": "La recherche démographique suggère qu'au début du XIXe siècle, [p:aucun pays au monde] n'avait une espérance de vie supérieure à 40 ans {riley-2005}. Presque tout le monde vivait dans la **pauvreté extrême**, les connaissances médicales étaient très limitées et, dans chaque pays, nos ancêtres devaient se préparer à une mort précoce. Globalement, un nouveau-né pouvait espérer vivre [y:moins de 30 ans] en moyenne. Ce n'était pas le malheur de quelques endroits malchanceux. C'était la condition humaine normale, partagée par les agriculteurs et les rois, en Europe, en Asie, en Afrique et dans les Amériques.",
+      "heading_de": "Eine rote Karte im Jahr 1800",
+      "body_de": "Demografische Forschungen legen nahe, dass zu Beginn des 19. Jahrhunderts [p:kein Land der Welt] eine höhere Lebenserwartung als 40 Jahre hatte {riley-2005}. Fast jeder lebte in **extremen Armut**, das medizinische Wissen war sehr begrenzt, und in jedem Land mussten sich unsere Vorfahren auf einen frühen Tod einstellen. Weltweit konnte ein Neugeborenes im Durchschnitt [y:weniger als 30 Jahre] zu leben erwarten. Dies war nicht das Unglück einiger weniger unglücklicher Orte. Es war der normale menschliche Zustand, den Bauern und Könige in Europa, Asien, Afrika und Amerika gleichermaßen teilten.",
+      "heading_es": "Un mapa rojo en 1800",
+      "body_es": "La investigación demográfica sugiere que a principios del siglo XIX, [p:ningún país del mundo] tenía una esperanza de vida superior a 40 años {riley-2005}. Casi todo el mundo vivía en **pobreza extrema**, el conocimiento médico era muy limitado y en todos los países nuestros antepasados debían prepararse para una muerte prematura. A nivel mundial, un recién nacido podía esperar vivir [y:menos de 30 años] en promedio. Esta no era la desgracia de unos pocos lugares desafortunados. Era la condición humana normal, compartida por agricultores y reyes, tanto en Europa, Asia, África como en las Américas."
     },
     {
       "heading_en": "What the number really means",
       "heading_vi": "Con số ấy thực sự có nghĩa là gì",
       "body_en": "A **life expectancy** of 30 does not mean that most adults died at 30. It is an average across everyone born, and in the past it was pulled down by the huge number of children who died very young. Many people who survived childhood went on to live into their fifties or sixties. That is why falling child mortality mattered so much for the rise in life expectancy. But Roser stresses that the story was [g:not only about children]: as health improved, life expectancy increased at all ages, for the young, the middle-aged and the old.",
-      "body_vi": "**Tuổi thọ trung bình** (*life expectancy*) 30 năm không có nghĩa là phần lớn người lớn qua đời ở tuổi 30. Đó là con số trung bình của tất cả những người được sinh ra, và trong quá khứ nó bị kéo xuống bởi số trẻ em chết yểu rất lớn. Nhiều người sống sót qua tuổi thơ vẫn sống tới tuổi năm mươi hay sáu mươi. Vì thế, việc giảm tử vong trẻ em có ý nghĩa rất lớn với sự gia tăng tuổi thọ. Nhưng Roser nhấn mạnh rằng câu chuyện [g:không chỉ xoay quanh trẻ em]: khi sức khoẻ được cải thiện, tuổi thọ tăng lên ở mọi lứa tuổi, từ người trẻ, người trung niên đến người già."
+      "body_vi": "**Tuổi thọ trung bình** (*life expectancy*) 30 năm không có nghĩa là phần lớn người lớn qua đời ở tuổi 30. Đó là con số trung bình của tất cả những người được sinh ra, và trong quá khứ nó bị kéo xuống bởi số trẻ em chết yểu rất lớn. Nhiều người sống sót qua tuổi thơ vẫn sống tới tuổi năm mươi hay sáu mươi. Vì thế, việc giảm tử vong trẻ em có ý nghĩa rất lớn với sự gia tăng tuổi thọ. Nhưng Roser nhấn mạnh rằng câu chuyện [g:không chỉ xoay quanh trẻ em]: khi sức khoẻ được cải thiện, tuổi thọ tăng lên ở mọi lứa tuổi, từ người trẻ, người trung niên đến người già.",
+      "heading_fr": "Ce que le chiffre signifie réellement",
+      "body_fr": "Une **espérance de vie** de 30 ans ne signifie pas que la plupart des adultes mouraient à 30 ans. C'est une moyenne calculée sur l'ensemble des naissances, et autrefois elle était abaissée par le nombre énorme d'enfants morts très jeunes. Beaucoup de ceux qui ont survécu à l'enfance ont atteint la cinquantaine ou la soixantaine. C'est pourquoi la baisse de la mortalité infantile a tant compté pour la hausse de l'espérance de vie. Mais Roser souligne que l'histoire ne se résumait [g:pas seulement aux enfants] : à mesure que la santé s'améliorait, l'espérance de vie augmentait à tous les âges, pour les jeunes, les adultes et les personnes âgées.",
+      "heading_de": "Was die Zahl wirklich bedeutet",
+      "body_de": "Eine **Lebenserwartung** von 30 bedeutet nicht, dass die meisten Erwachsenen mit 30 starben. Sie ist ein Durchschnitt über alle Geborenen und wurde in der Vergangenheit durch die enorme Zahl an Kindern nach unten gezogen, die sehr jung starben. Viele Menschen, die ihre Kindheit überlebten, lebten weiter bis in ihre Fünfziger oder Sechziger. Deshalb war die sinkende Kindersterblichkeit für den Anstieg der Lebenserwartung so wichtig. Aber Roser betont, dass die Geschichte [g:nicht nur von Kindern handelte]: Mit verbesserter Gesundheit stieg die Lebenserwartung in allen Altersgruppen, bei Jungen, Menschen im mittleren Alter und Alten.",
+      "heading_es": "Qué significa realmente el número",
+      "body_es": "Una **esperanza de vida** de 30 no significa que la mayoría de los adultos murieran a los 30. Es un promedio de todos los nacidos, y en el pasado se veía arrastrado a la baja por la enorme cantidad de niños que morían muy jóvenes. Muchas personas que sobrevivieron a la infancia llegaron a vivir hasta los cincuenta o sesenta años. Es por eso que la caída de la mortalidad infantil importó tanto para el aumento de la esperanza de vida. Pero Roser subraya que la historia [g:no trataba solo de los niños]: a medida que la salud mejoraba, la esperanza de vida aumentaba a todas las edades, para los jóvenes, los de mediana edad y los ancianos."
     },
     {
       "heading_en": "The seal is broken",
       "heading_vi": "Phong ấn bị phá vỡ",
       "body_en": "Over the next 150 years, *some* parts of the world achieved substantial health improvements. In Roser's view, this was a landmark: it was the [g:first time in human history] that entire populations enjoyed sustained improvements in health {owid-twice}. After millennia of stagnation in terrible health conditions, the seal was finally broken. Better food, cleaner water, sanitation, vaccines and, later, antibiotics all played a part. Yet these gains were not shared evenly. For a long time, they stayed in the countries that had started to grow richer first.",
-      "body_vi": "Trong 150 năm tiếp theo, *một số* nơi trên thế giới đạt được những cải thiện lớn về sức khoẻ. Theo Roser, đây là một cột mốc: lần [g:đầu tiên trong lịch sử loài người], cả một cộng đồng dân cư được hưởng sự cải thiện sức khoẻ bền vững {owid-twice}. Sau hàng thiên niên kỷ trì trệ trong điều kiện sức khoẻ tồi tệ, phong ấn cuối cùng đã bị phá vỡ. Thực phẩm tốt hơn, nước sạch hơn, vệ sinh, vắc-xin và về sau là kháng sinh đều góp phần. Tuy vậy, thành quả không được chia đều. Trong một thời gian dài, chúng chỉ ở lại những nước bắt đầu giàu lên trước."
+      "body_vi": "Trong 150 năm tiếp theo, *một số* nơi trên thế giới đạt được những cải thiện lớn về sức khoẻ. Theo Roser, đây là một cột mốc: lần [g:đầu tiên trong lịch sử loài người], cả một cộng đồng dân cư được hưởng sự cải thiện sức khoẻ bền vững {owid-twice}. Sau hàng thiên niên kỷ trì trệ trong điều kiện sức khoẻ tồi tệ, phong ấn cuối cùng đã bị phá vỡ. Thực phẩm tốt hơn, nước sạch hơn, vệ sinh, vắc-xin và về sau là kháng sinh đều góp phần. Tuy vậy, thành quả không được chia đều. Trong một thời gian dài, chúng chỉ ở lại những nước bắt đầu giàu lên trước.",
+      "heading_fr": "Le sceau est brisé",
+      "body_fr": "Au cours des 150 années suivantes, *certaines* régions du monde ont réalisé des progrès sanitaires substantiels. De l'avis de Roser, il s'agit d'un événement marquant : c'était la [g:première fois de l'histoire humaine] que des populations entières bénéficiaient d'améliorations durables de leur santé {owid-twice}. Après des millénaires de stagnation dans des conditions sanitaires terribles, le sceau était enfin brisé. Une meilleure alimentation, une eau plus propre, l'assainissement, les vaccins et, plus tard, les antibiotiques ont tous joué un rôle. Pourtant, ces gains n'ont pas été répartis uniformément. Pendant longtemps, ils sont restés dans les pays qui avaient commencé à s'enrichir en premier.",
+      "heading_de": "Das Siegel ist gebrochen",
+      "body_de": "In den nächsten 150 Jahren erzielten *einige* Teile der Welt erhebliche gesundheitliche Verbesserungen. Aus Rosers Sicht war dies ein Meilenstein: Es war das [g:erste Mal in der Menschheitsgeschichte], dass ganze Bevölkerungen dauerhafte gesundheitliche Verbesserungen genossen {owid-twice}. Nach Jahrtausenden der Stagnation unter schrecklichen Gesundheitsbedingungen wurde das Siegel schließlich gebrochen. Besseres Essen, sauberes Wasser, Hygiene, Impfstoffe und später Antibiotika trugen alle dazu bei. Dennoch waren diese Gewinne nicht gleichmäßig verteilt. Lange Zeit blieben sie in den Ländern, die zuerst reich geworden waren.",
+      "heading_es": "Se rompe el sello",
+      "body_es": "Durante los siguientes 150 años, *algunas* partes del mundo lograron mejoras sustanciales en la salud. En opinión de Roser, esto fue un hito: fue la [g:primera vez en la historia humana] que poblaciones enteros disfrutaron de mejoras sostenidas en la salud {owid-twice}. Tras milenios de estancamiento en condiciones de salud terribles, el sello se rompió finalmente. Mejor comida, agua más limpia, saneamiento, vacunas y, más tarde, antibióticos contribuyeron a ello. Sin embargo, estos logros no se compartieron de manera uniforme. Durante mucho tiempo, se mantuvieron en los países que habían comenzado a enriquecerse primero."
     },
     {
       "heading_en": "The divided world of 1950",
       "heading_vi": "Thế giới chia cắt năm 1950",
       "body_en": "By 1950, a [p:global divide] had opened. The life expectancy of newborns was already over 60 years in Europe, North America, Oceania, Japan and parts of South America. Elsewhere, a newborn could expect to live only around 30 years. The inequality was enormous: people in **Norway** had a life expectancy of 72 years, while in **Mali** it was 26. Africa as a whole averaged only 36 years, while people in other regions could expect to live more than twice as long. Where you were born decided, more than anything else, how long you would live.",
-      "body_vi": "Đến năm 1950, một [p:hố sâu toàn cầu] đã mở ra. Tuổi thọ của trẻ sơ sinh đã vượt 60 năm ở châu Âu, Bắc Mỹ, châu Đại Dương, Nhật Bản và một phần Nam Mỹ. Ở những nơi khác, một em bé chỉ có thể sống khoảng 30 năm. Bất bình đẳng vô cùng lớn: người dân **Na Uy** có tuổi thọ 72 năm, trong khi ở **Mali** con số này là 26. Châu Phi nói chung chỉ đạt trung bình 36 năm, trong khi người dân ở các khu vực khác có thể sống lâu hơn gấp đôi. Nơi bạn được sinh ra quyết định, hơn mọi thứ khác, việc bạn sống được bao lâu."
+      "body_vi": "Đến năm 1950, một [p:hố sâu toàn cầu] đã mở ra. Tuổi thọ của trẻ sơ sinh đã vượt 60 năm ở châu Âu, Bắc Mỹ, châu Đại Dương, Nhật Bản và một phần Nam Mỹ. Ở những nơi khác, một em bé chỉ có thể sống khoảng 30 năm. Bất bình đẳng vô cùng lớn: người dân **Na Uy** có tuổi thọ 72 năm, trong khi ở **Mali** con số này là 26. Châu Phi nói chung chỉ đạt trung bình 36 năm, trong khi người dân ở các khu vực khác có thể sống lâu hơn gấp đôi. Nơi bạn được sinh ra quyết định, hơn mọi thứ khác, việc bạn sống được bao lâu.",
+      "heading_fr": "Le monde divisé de 1950",
+      "body_fr": "Vers 1950, une [p:fracture mondiale] était apparue. L'espérance de vie des nouveau-nés dépassait déjà 60 ans en Europe, en Amérique du Nord, en Océanie, au Japon et dans certaines parties d'Amérique du Sud. Ailleurs, un nouveau-né ne pouvait espérer vivre qu'environ 30 ans. L'inégalité était énorme : les habitants de la **Norvège** avaient une espérance de vie de 72 ans, tandis qu'au **Mali** elle était de 26 ans. L'Afrique dans son ensemble n'affichait qu'une moyenne de 36 ans, alors que les habitants d'autres régions pouvaient espérer vivre plus de deux fois plus longtemps. L'endroit où vous étiez né déterminait, plus que tout autre facteur, combien de temps vous vivriez.",
+      "heading_de": "Die geteilte Welt von 1950",
+      "body_de": "Um 1950 hatte sich eine [p:globale Kluft] aufgetan. Die Lebenserwartung von Neugeborenen lag in Europa, Nordamerika, Ozeanien, Japan und Teilen Südamerikas bereits über 60 Jahren. Andernorts konnte ein Neugeborenes erwarten, nur etwa 30 Jahre zu leben. Die Ungleichheit war enorm: Menschen in **Norwegen** hatten eine Lebenserwartung von 72 Jahren, während sie in **Mali** bei 26 lag. Afrika als Ganzes lag im Schnitt bei nur 36 Jahren, während Menschen in anderen Regionen mehr als doppelt so lange leben konnten. Wo du geboren wurdest, bestimmte mehr als alles andere, wie lange du leben würdest.",
+      "heading_es": "El mundo dividido de 1950",
+      "body_es": "Hacia 1950, se había abierto una [p:brecha global]. La esperanza de vida de los recién nacidos ya superaba los 60 años en Europa, América del Norte, Oceanía, Japón y partes de América del Sur. En otros lugares, un recién nacido solo podía esperar vivir unos 30 años. La desigualdad era enorme: las personas en **Noruega** tenían una esperanza de vida de 72 años, mientras que en **Mali** era de 26. África en su conjunto promediaba solo 36 años, mientras que las personas en otras regiones podían esperar vivir más del doble de tiempo. El lugar donde nacías decidía, más que cualquier otra cosa, cuánto tiempo vivirías."
     },
     {
       "heading_en": "An outdated picture",
       "heading_vi": "Một bức tranh đã lỗi thời",
       "body_en": "Many of us still picture the world as divided as it was in 1950. But in health, the world has changed fast. Today, most people can expect to live as long as those in the very richest countries in 1950. The United Nations estimated a global average life expectancy of [g:72.6 years] in 2019 {un-wpp}. That is higher than in any country in 1950: the healthiest country then was Norway, at 72.3 years. In other words, the average person on Earth today can expect a longer life than someone born in the best place in the world just a few generations ago.",
-      "body_vi": "Nhiều người trong chúng ta vẫn hình dung thế giới bị chia cắt như năm 1950. Nhưng về sức khoẻ, thế giới đã thay đổi rất nhanh. Ngày nay, phần lớn mọi người có thể sống lâu bằng người dân ở những nước giàu nhất năm 1950. Liên Hợp Quốc ước tính tuổi thọ trung bình toàn cầu năm 2019 là [g:72,6 năm] {un-wpp}. Con số này cao hơn bất kỳ quốc gia nào vào năm 1950: nước có sức khoẻ tốt nhất khi đó là Na Uy, với 72,3 năm. Nói cách khác, một người bình thường trên Trái Đất hôm nay có thể sống lâu hơn người sinh ra ở nơi tốt nhất thế giới chỉ vài thế hệ trước."
+      "body_vi": "Nhiều người trong chúng ta vẫn hình dung thế giới bị chia cắt như năm 1950. Nhưng về sức khoẻ, thế giới đã thay đổi rất nhanh. Ngày nay, phần lớn mọi người có thể sống lâu bằng người dân ở những nước giàu nhất năm 1950. Liên Hợp Quốc ước tính tuổi thọ trung bình toàn cầu năm 2019 là [g:72,6 năm] {un-wpp}. Con số này cao hơn bất kỳ quốc gia nào vào năm 1950: nước có sức khoẻ tốt nhất khi đó là Na Uy, với 72,3 năm. Nói cách khác, một người bình thường trên Trái Đất hôm nay có thể sống lâu hơn người sinh ra ở nơi tốt nhất thế giới chỉ vài thế hệ trước.",
+      "heading_fr": "Une image dépassée",
+      "body_fr": "Beaucoup d'entre nous imaginent encore le monde tel qu'il était divisé en 1950. Mais en matière de santé, le monde a changé rapidement. Aujourd'hui, la plupart des gens peuvent espérer vivre aussi longtemps que ceux des pays les plus riches en 1950. Les Nations unies ont estimé l'espérance de vie moyenne mondiale à [g:72,6 ans] en 2019 {un-wpp}. C'est plus que dans n'importe quel pays en 1950 : le pays le plus sain était alors la Norvège, avec 72,3 ans. En d'autres termes, la personne moyenne sur Terre aujourd'hui peut espérer une vie plus longue que quelqu'un né au meilleur endroit du monde il y a seulement quelques générations.",
+      "heading_de": "Ein veraltetes Bild",
+      "body_de": "Viele von uns stellen sich die Welt immer noch so geteilt vor wie 1950. Aber in der Gesundheit hat sich die Welt schnell verändert. Heute können die meisten Menschen erwarten, so lange zu leben wie die Menschen in den reichsten Ländern des Jahres 1950. Die Vereinten Nationen schätzten eine globale durchschnittliche Lebenserwartung von [g:72,6 Jahren] im Jahr 2019 {un-wpp}. Das ist höher als in jedem Land im Jahr 1950: Das gesündeste Land damals war Norwegen mit 72,3 Jahren. Mit anderen Worten: Der durchschnittliche Mensch auf der Erde kann heute ein längeres Leben erwarten als jemand, der vor wenigen Generationen am besten Ort der Welt geboren wurde.",
+      "heading_es": "Una imagen desactualizada",
+      "body_es": "Muchos de nosotros todavía imaginamos el mundo tan dividido como estaba en 1950. Pero en materia de salud, el mundo ha cambiado rápidamente. Hoy en día, la mayoría de la gente puede esperar vivir tanto como los habitantes de los países más ricos en 1950. Las Naciones Unidas estimaron una esperanza de vida promedio mundial de [g:72.6 años] en 2019 {un-wpp}. Eso es más alto que en cualquier país en 1950: el país más saludable entonces era Noruega, con 72.3 años. En otras palabras, la persona promedio en la Tierra hoy en día puede esperar una vida más larga que alguien nacido en el mejor lugar del mundo hace apenas unas pocas generaciones."
     },
     {
       "heading_en": "The biggest gains for the worst off",
       "heading_vi": "Người thiệt thòi nhất tiến xa nhất",
       "body_en": "In recent decades, every region of the world has made substantial progress, and it was the regions [y:worst off in 1950] that achieved the biggest gains. The divided world has been narrowing. Globally, life expectancy rose from less than 30 years to over 72, so after two centuries of progress we can expect to live [g:more than twice as long] as our ancestors. And this was not achieved in a few places only. In **every world region**, people today can expect to live more than twice as long as people there did two hundred years ago.",
-      "body_vi": "Trong những thập kỷ gần đây, mọi khu vực trên thế giới đều tiến bộ đáng kể, và chính những khu vực [y:khó khăn nhất năm 1950] lại đạt được bước tiến lớn nhất. Thế giới chia cắt đang dần thu hẹp khoảng cách. Trên toàn cầu, tuổi thọ tăng từ dưới 30 lên trên 72 năm, nên sau hai thế kỷ tiến bộ, chúng ta có thể sống [g:lâu hơn gấp đôi] tổ tiên mình. Và điều đó không chỉ đạt được ở vài nơi. Ở **mọi khu vực trên thế giới**, người dân ngày nay có thể sống lâu hơn gấp đôi so với người ở chính nơi đó hai trăm năm trước."
+      "body_vi": "Trong những thập kỷ gần đây, mọi khu vực trên thế giới đều tiến bộ đáng kể, và chính những khu vực [y:khó khăn nhất năm 1950] lại đạt được bước tiến lớn nhất. Thế giới chia cắt đang dần thu hẹp khoảng cách. Trên toàn cầu, tuổi thọ tăng từ dưới 30 lên trên 72 năm, nên sau hai thế kỷ tiến bộ, chúng ta có thể sống [g:lâu hơn gấp đôi] tổ tiên mình. Và điều đó không chỉ đạt được ở vài nơi. Ở **mọi khu vực trên thế giới**, người dân ngày nay có thể sống lâu hơn gấp đôi so với người ở chính nơi đó hai trăm năm trước.",
+      "heading_fr": "Les plus grands gains pour les plus défavorisés",
+      "body_fr": "Au cours des dernières décennies, toutes les régions du monde ont accompli des progrès substantiels, et ce sont les régions [y:les plus défavorisées en 1950] qui ont réalisé les plus grands gains. Le monde divisé s'est resserré. Globalement, l'espérance de vie est passée de moins de 30 ans à plus de 72 ans, de sorte qu'après deux siècles de progrès, nous pouvons espérer vivre [g:plus de deux fois plus longtemps] que nos ancêtres. Et cela n'a pas été réalisé dans quelques endroits seulement. Dans **toutes les régions du monde**, les gens peuvent aujourd'hui espérer vivre plus de deux fois plus longtemps qu'il y a deux cents ans.",
+      "heading_de": "Die größten Gewinne für die am stärksten Benachteiligten",
+      "body_de": "In den letzten Jahrzehnten hat jede Weltregion erhebliche Fortschritte gemacht, und es waren die Regionen, die [y:1950 am schlechtesten dasteckten], die die größten Zuwächse erzielten. Die geteilte Welt ist schmaler geworden. Weltweit stieg die Lebenserwartung von weniger als 30 Jahren auf über 72, sodass wir nach zwei Jahrhunderten des Fortschritts erwarten können, [g:mehr als doppelt so lange] zu leben wie unsere Vorfahren. Und dies wurde nicht nur an wenigen Orten erreicht. In **jeder Weltregion** können Menschen heute erwarten, mehr als doppelt so lange zu leben wie die Menschen dort vor zweihundert Jahren.",
+      "heading_es": "Los mayores avances para los más desfavorecidos",
+      "body_es": "En las últimas décadas, todas las regiones del mundo han logrado un progreso sustancial, y fueron las regiones [y:peores paradas en 1950] las que lograron los mayores avances. El mundo dividido se ha ido reduciendo. A nivel mundial, la esperanza de vida aumentó de menos de 30 años a más de 72, por lo que después de dos siglos de progreso podemos esperar vivir [g:más del doble de tiempo] que nuestros antepasados. Y esto no se logró solo en unos pocos lugares. En **todas las regiones del mundo**, la gente hoy en día puede esperar vivir más del doble de tiempo que las personas allí hace doscientos años."
     },
     {
       "heading_en": "Proof of what is possible",
       "heading_vi": "Bằng chứng cho điều có thể làm được",
       "body_en": "None of this means the job is done. The large health inequalities that remain today show that we can still do [y:much better]. A child born in the countries with the lowest life expectancy can still expect a much shorter life than a child born in the healthiest ones. But Roser draws an encouraging lesson: the almost unbelievable progress of the last two centuries, achieved by the entire world, should be [g:encouragement enough] to see what is possible. Long lives were once a privilege of no one, then of a few. They can become the norm for everyone.",
-      "body_vi": "Không có điều nào ở trên nghĩa là công việc đã xong. Những bất bình đẳng lớn về sức khoẻ còn tồn tại hôm nay cho thấy chúng ta vẫn có thể làm [y:tốt hơn nhiều]. Một đứa trẻ sinh ra ở những nước có tuổi thọ thấp nhất vẫn có thể sống ngắn hơn nhiều so với một đứa trẻ ở những nước khoẻ mạnh nhất. Nhưng Roser rút ra một bài học đáng khích lệ: tiến bộ gần như khó tin mà cả thế giới đạt được trong hai thế kỷ qua [g:đủ để khích lệ] chúng ta thấy điều gì là khả thi. Sống lâu từng không phải đặc quyền của ai, rồi trở thành đặc quyền của số ít. Nó có thể trở thành điều bình thường với mọi người."
+      "body_vi": "Không có điều nào ở trên nghĩa là công việc đã xong. Những bất bình đẳng lớn về sức khoẻ còn tồn tại hôm nay cho thấy chúng ta vẫn có thể làm [y:tốt hơn nhiều]. Một đứa trẻ sinh ra ở những nước có tuổi thọ thấp nhất vẫn có thể sống ngắn hơn nhiều so với một đứa trẻ ở những nước khoẻ mạnh nhất. Nhưng Roser rút ra một bài học đáng khích lệ: tiến bộ gần như khó tin mà cả thế giới đạt được trong hai thế kỷ qua [g:đủ để khích lệ] chúng ta thấy điều gì là khả thi. Sống lâu từng không phải đặc quyền của ai, rồi trở thành đặc quyền của số ít. Nó có thể trở thành điều bình thường với mọi người.",
+      "heading_fr": "La preuve de ce qui est possible",
+      "body_fr": "Rien de tout cela ne signifie que le travail est terminé. Les grandes inégalités de santé qui subsistent aujourd'hui montrent que nous pouvons encore faire [y:beaucoup mieux]. Un enfant né dans les pays où l'espérance de vie est la plus faible peut encore s'attendre à une vie beaucoup plus courte qu'un enfant né dans les pays les plus sains. Mais Roser en tire une leçon encourageante : les progrès presque incroyables des deux derniers siècles, réalisés par le monde entier, devraient être [g:un encouragement suffisant] pour voir ce qui est possible. Les longues vies ont été autrefois le privilège de personne, puis de quelques-uns. Elles peuvent devenir la norme pour tout le monde.",
+      "heading_de": "Beweis für das Mögliche",
+      "body_de": "Nichts davon bedeutet, dass die Arbeit getan ist. Die großen gesundheitlichen Ungleichheiten, die heute fortbestehen, zeigen, dass wir immer noch [y:viel besser] werden können. Ein Kind, das in Ländern mit der niedrigsten Lebenserwartung geboren wird, kann immer noch ein viel kürzeres Leben erwarten als ein Kind in den gesündesten Ländern. Aber Roser zieht eine ermutigende Lehre: Der fast unglaubliche Fortschritt der letzten zwei Jahrhunderte, den die gesamte Menschheit errungen hat, sollte [g:ermutigend genug] sein, um zu sehen, was möglich ist. Ein langes Leben war einst das Privileg von niemandem, dann von wenigen. Es kann für alle zur Norm werden.",
+      "heading_es": "Prueba de lo que es posible",
+      "body_es": "Nada de esto significa que el trabajo esté hecho. Las grandes desigualdades en salud que aún persisten hoy demuestran que todavía podemos hacerlo [y:mucho mejor]. Un niño nacido en los países con menor esperanza de vida aún puede esperar una vida mucho más corta que un niño nacido en los más saludables. Pero Roser extrae una lección alentadora: el progreso casi increíble de los últimos dos siglos, logrado por todo el mundo, debería ser [g:suficiente estímulo] para ver lo que es posible. Las vidas largas fueron alguna vez un privilegio de nadie, luego de unos pocos. Pueden convertirse en la norma para todos."
     }
   ],
   "keyPoint": {
     "en": "Our picture of the world often lags behind reality, like [p:starlight from a star that has already changed]. Before you judge a country or a region, check *recent data* rather than the image you formed years ago. The biggest progress often happens exactly where we expect it least.",
-    "vi": "Hình dung của chúng ta về thế giới thường đi sau thực tế, giống như [p:ánh sáng từ một ngôi sao đã đổi khác từ lâu]. Trước khi đánh giá một quốc gia hay khu vực, hãy kiểm tra *dữ liệu gần đây* thay vì hình ảnh bạn hình thành từ nhiều năm trước. Tiến bộ lớn nhất thường xảy ra đúng ở nơi ta ít ngờ nhất."
+    "vi": "Hình dung của chúng ta về thế giới thường đi sau thực tế, giống như [p:ánh sáng từ một ngôi sao đã đổi khác từ lâu]. Trước khi đánh giá một quốc gia hay khu vực, hãy kiểm tra *dữ liệu gần đây* thay vì hình ảnh bạn hình thành từ nhiều năm trước. Tiến bộ lớn nhất thường xảy ra đúng ở nơi ta ít ngờ nhất.",
+    "fr": "Notre image du monde est souvent en décalage avec la réalité, comme [p:la lumière d'une étoile qui a déjà changé]. Avant de juger un pays ou une région, vérifiez les *données récentes* plutôt que l'image que vous vous êtes forgée il y a des années. Les plus grands progrès se produisent souvent là où on les attend le moins.",
+    "de": "Unser Bild der Welt hinkt oft der Realität hinterher, wie [p:das Sternenlicht eines Sterns, der sich längst verändert hat]. Bevor du ein Land oder eine Region beurteilst, prüfe *aktuelle Daten* statt des Bildes, das du dir vor Jahren gemacht hast. Der größte Fortschritt findet oft genau dort statt, wo wir ihn am wenigsten erwarten.",
+    "es": "Nuestra imagen del mundo suele ir a la zaga de la realidad, como [p:la luz estelar de una estrella que ya ha cambiado]. Antes de juzgar a un país o una región, consulta los *datos recientes* en lugar de la imagen que te formaste hace años. El mayor progreso suele ocurrir exactamente donde menos lo esperamos."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Đoán tuổi thọ trung bình ở ba quốc gia bạn biết, rồi tra con số thật để xem mình lệch bao nhiêu.",
       "Hỏi ông bà xem họ từng biết bao nhiêu người qua đời khi còn trẻ, rồi so sánh với cuộc sống của bạn.",
       "Chọn một khu vực bạn vẫn nghĩ là 'nghèo' và tra xem tuổi thọ ở đó đã thay đổi thế nào từ năm 1950."
+    ],
+    "fr": [
+      "Devinez l'espérance de vie dans trois pays que vous connaissez, puis vérifiez les chiffres réels et voyez à quel point vous étiez loin du compte.",
+      "Demandez à vos grands-parents combien de personnes ils ont connues qui sont mortes jeunes, et comparez avec votre propre vie.",
+      "Choisissez une région que vous considérez comme « pauvre » et cherchez comment son espérance de vie a évolué depuis 1950."
+    ],
+    "de": [
+      "Schätze die Lebenserwartung in drei Ländern, die du kennst, überprüfe dann die realen Zahlen und sieh nach, wie weit du daneben lagst.",
+      "Frage deine Großeltern, wie viele Menschen sie kannten, die jung starben, und vergleiche es mit deinem eigenen Leben.",
+      "Wähle eine Region aus, die du als ,arm' betrachtest, und schlage nach, wie sich ihre Lebenserwartung seit 1950 verändert hat."
+    ],
+    "es": [
+      "Adivina la esperanza de vida en tres países que conozcas, luego consulta las cifras reales y mira qué tan alejado estabas.",
+      "Pregunta a tus abuelos a cuántas personas conocieron que murieron jóvenes y compáralo con tu propia vida.",
+      "Elige una región que consideres 'pobre' y busca cómo ha cambiado su esperanza de vida desde 1950."
     ]
   },
   "references": [
@@ -127,5 +193,70 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABwAPu1qrU8ppiQiMAgBMB2JQBdmUABpoRrP/ttUzEgkJYdYAP7Dg2wUd3VNOJOOO9KC3TaaDVGgucvYfrVDSH/s58evfNeXz4Ijex24YB9GTvUn0s9flCqr50HyA+5Uw0l/lK/vlSxZC0iBJOfFKLIYyvsz/ce3XXLlsxy8Iqqix4QYhZx4PAA=",
-  "dominant": "#625d5c"
+  "dominant": "#625d5c",
+  "glossary": {
+    "en": {
+      "life expectancy": "The average period that a person may expect to live from birth.",
+      "extreme poverty": "A severe condition characterized by a lack of basic human needs.",
+      "child mortality": "The death of young children under the age of five.",
+      "sanitation": "Conditions relating to public health, especially the provision of clean drinking water and adequate sewage disposal.",
+      "vaccines": "Substances used to stimulate the production of antibodies and provide immunity against diseases.",
+      "antibiotics": "Medicines that destroy or slow down the growth of bacteria.",
+      "inequality": "Disparity in distribution of economic or social benefits and health outcomes.",
+      "demographic": "Relating to the structure of human populations."
+    },
+    "vi": {
+      "nhân khẩu học": "Khoa học nghiên cứu về dân số và sự biến động của dân cư.",
+      "tuổi thọ trung bình": "Số năm dự tính mà một người có thể sống kể từ khi sinh ra.",
+      "chết yểu": "Tình trạng tử vong khi còn rất nhỏ hoặc khi còn trẻ tuổi.",
+      "kháng sinh": "Loại thuốc dùng để tiêu diệt hoặc ức chế sự phát triển của vi khuẩn.",
+      "châu đại dương": "Châu lục bao gồm Úc và các đảo quốc lân cận ở Thái Bình Dương.",
+      "dữ liệu gần đây": "Các thông tin và số liệu mới nhất được cập nhật từ thực tế.",
+      "tổ tiên": "Những người thuộc các thế hệ đi trước trong dòng họ hay loài người.",
+      "liên hợp quốc": "Tổ chức quốc tế lớn nhất nhằm duy trì hòa bình và hợp tác toàn cầu."
+    },
+    "fr": {
+      "espérance de vie": "Nombre moyen d'années qu'un nouveau-né peut s'attendre à vivre dans les conditions de mortalité actuelles.",
+      "pauvreté extrême": "État de privation sévère des besoins humains de base, incluant la nourriture, l'eau et les soins.",
+      "mortalité infantile": "Nombre d'enfants décédés avant d'atteindre l'âge d'un an pour mille naissances vivantes.",
+      "fracture mondiale": "Inégalité prononcée en matière de développement et de santé entre les différentes régions du globe.",
+      "vaccins": "Préparations biologiques destinées à acquérir une immunité contre une maladie infectieuse spécifique.",
+      "antibiotiques": "Médicaments utilisés pour traiter les infections causées par des bactéries.",
+      "données récentes": "Informations factuelles les plus à jour disponibles concernant une situation ou un pays.",
+      "inégalités de santé": "Disparités évitables en matière de santé observées entre différents groupes de population."
+    },
+    "de": {
+      "lebenserwartung": "Die durchschnittliche Anzahl von Jahren, die ein Neugeborenes zu leben erwarten kann.",
+      "kindersterblichkeit": "Die Anzahl von Kindern, die im ersten Lebensjahr sterben.",
+      "impfstoffe": "Präparate, die einen Körper gegen bestimmte Infektionskrankheiten immun machen.",
+      "antibiotika": "Medikamente zur Bekämpfung von bakteriellen Infektionen.",
+      "vereinten nationen": "Ein weltweiter Zusammenschluss von Staaten zur Sicherung des Friedens und der Zusammenarbeit.",
+      "demografische forschungen": "Wissenschaftliche Untersuchung von Bevölkerungswachstum, -struktur und -entwicklung.",
+      "ozeanien": "Eine geografische Region, die Australien und Inselstaaten im Pazifischen Ozean umfasst.",
+      "norwegen": "Ein skandinavisches Land in Nordeuropa.",
+      "mali": "Ein Binnenstaat in Westafrika.",
+      "roser": "Ein Forscher oder Autor, der sich mit globalen Daten und Fortschritten beschäftigt."
+    },
+    "es": {
+      "esperanza de vida": "Número medio de años que se esperaría que viviera un recién nacido.",
+      "pobreza extrema": "Condición de carencia severa de recursos básicos para la subsistencia humana.",
+      "mortalidad infantil": "Cantidad de muertes de niños menores de una edad determinada por cada mil nacidos.",
+      "saneamiento": "Conjunto de medidas para mantener condiciones higiénicas en el agua y los espacios.",
+      "antibióticos": "Medicamentos diseñados para combatir infecciones bacterianas en el organismo.",
+      "brecha global": "Diferencia o desigualdad significativa entre distintas regiones o países del mundo.",
+      "naciones unidas": "Organización internacional formada por gobiernos para fomentar la cooperación mundial.",
+      "datos recientes": "Información estadística o factual actualizada sobre un tema o situación concreta."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

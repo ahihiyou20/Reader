@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "The brief history of artificial intelligence",
-    "vi": "Lịch sử ngắn ngủi của trí tuệ nhân tạo"
+    "vi": "Lịch sử ngắn ngủi của trí tuệ nhân tạo",
+    "fr": "Une brève histoire de l'intelligence artificielle",
+    "de": "Die kurze Geschichte der künstlichen Intelligenz",
+    "es": "Breve historia de la inteligencia artificial"
   },
   "hook": {
     "en": "Mobile phones in the 1990s were bricks with tiny green screens, and two decades earlier computers stored data on punch cards. Today, AI systems recognise faces, translate languages and create pictures from a sentence. In an essay written in late 2022, Max Roser traced how fast this happened, and why [p:the most profound changes may still be ahead].",
-    "vi": "Điện thoại di động thập niên 1990 to như cục gạch với màn hình xanh tí hon, và hai thập kỷ trước đó, máy tính lưu dữ liệu trên thẻ đục lỗ. Ngày nay, các hệ thống AI nhận diện khuôn mặt, dịch ngôn ngữ và vẽ tranh từ một câu mô tả. Trong một bài luận viết cuối năm 2022, Max Roser lần lại tốc độ của những thay đổi ấy, và giải thích vì sao [p:những biến đổi sâu sắc nhất có thể vẫn còn ở phía trước]."
+    "vi": "Điện thoại di động thập niên 1990 to như cục gạch với màn hình xanh tí hon, và hai thập kỷ trước đó, máy tính lưu dữ liệu trên thẻ đục lỗ. Ngày nay, các hệ thống AI nhận diện khuôn mặt, dịch ngôn ngữ và vẽ tranh từ một câu mô tả. Trong một bài luận viết cuối năm 2022, Max Roser lần lại tốc độ của những thay đổi ấy, và giải thích vì sao [p:những biến đổi sâu sắc nhất có thể vẫn còn ở phía trước].",
+    "fr": "Les téléphones portables dans les années 1990 étaient des briques dotées de minuscules écrans verts, et deux décennies plus tôt, les ordinateurs stockaient les données sur des cartes perforées. Aujourd'hui, les systèmes d'IA reconnaissent les visages, traduisent des langues et créent des images à partir d'une simple phrase. Dans un essai rédigé fin 2022, Max Roser a retracé la rapidité de cette évolution et les raisons pour lesquelles [p:les changements les plus profonds sont peut-être encore à venir].",
+    "de": "Handys in den 1990er-Jahren waren Ziegelsteine mit winzigen grünen Bildschirmen, und zwei Jahrzehnte zuvor speicherten Computer Daten auf Lochkarten. Heute erkennen KI-Systeme Gesichter, übersetzen Sprachen und erstellen Bilder aus einem Satz. In einem Aufsatz aus dem Spätjahr 2022 zeichnete Max Roser nach, wie schnell dies geschah und warum [p:die tiefgreifendsten Veränderungen möglicherweise noch bevorstehen].",
+    "es": "Los teléfonos móviles en la década de 1990 eran ladrillos con pantallas verdes diminutas, y dos décadas antes las computadoras almacenaban datos en tarjetas perforadas. Hoy en día, los sistemas de inteligencia artificial reconocen rostros, traducen idiomas y crean imágenes a partir de una frase. En un ensayo escrito a finales de 2022, Max Roser rastreó la rapidez con la que ocurrió esto y por qué [p:los cambios más profundos aún podrían estar por venir]."
   },
   "sections": [
     {
       "heading_en": "A mouse in a maze",
       "heading_vi": "Chú chuột trong mê cung",
       "body_en": "Computers have become so much part of daily life that it is easy to forget how new they are. The first digital computers were invented only [y:about eight decades ago] {owid-ai}. From the start, some computer scientists wanted to make machines as intelligent as humans. One early example was **Theseus**, built by Claude Shannon in 1950: a remote-controlled mouse that could find its way out of a maze and remember the route. It was a clever toy with very limited abilities. Within one human lifetime, its descendants would learn to see, listen, write and draw.",
-      "body_vi": "Máy tính đã trở thành một phần quen thuộc của đời sống đến mức ta dễ quên rằng chúng còn rất mới. Những chiếc máy tính số đầu tiên chỉ mới ra đời [y:khoảng tám thập kỷ trước] {owid-ai}. Ngay từ đầu, một số nhà khoa học máy tính đã muốn tạo ra những cỗ máy thông minh như con người. Một ví dụ sớm là **Theseus**, do Claude Shannon chế tạo năm 1950: một chú chuột điều khiển từ xa có thể tìm đường ra khỏi mê cung và ghi nhớ lộ trình. Đó là một món đồ chơi thông minh nhưng khả năng rất hạn chế. Chỉ trong một đời người, những 'hậu duệ' của nó đã học được cách nhìn, nghe, viết và vẽ."
+      "body_vi": "Máy tính đã trở thành một phần quen thuộc của đời sống đến mức ta dễ quên rằng chúng còn rất mới. Những chiếc máy tính số đầu tiên chỉ mới ra đời [y:khoảng tám thập kỷ trước] {owid-ai}. Ngay từ đầu, một số nhà khoa học máy tính đã muốn tạo ra những cỗ máy thông minh như con người. Một ví dụ sớm là **Theseus**, do Claude Shannon chế tạo năm 1950: một chú chuột điều khiển từ xa có thể tìm đường ra khỏi mê cung và ghi nhớ lộ trình. Đó là một món đồ chơi thông minh nhưng khả năng rất hạn chế. Chỉ trong một đời người, những 'hậu duệ' của nó đã học được cách nhìn, nghe, viết và vẽ.",
+      "heading_fr": "Une souris dans un labyrinthe",
+      "body_fr": "Les ordinateurs font tellement partie du quotidien qu'il est facile d'oublier leur nouveauté. Les premiers ordinateurs numériques ont été inventés il y a seulement [y:environ huit décennies] {owid-ai}. Dès le départ, certains informaticiens ont voulu créer des machines aussi intelligentes que les humains. **Theseus**, construit par Claude Shannon en 1950, en est un premier exemple : une souris télécommandée capable de trouver la sortie d'un labyrinthe et de retenir son chemin. C'était un jouet ingénieux aux capacités très limitées. En l'espace d'une seule vie humaine, ses descendants allaient apprendre à voir, écouter, écrire et dessiner.",
+      "heading_de": "Eine Maus im Labyrinth",
+      "body_de": "Computer sind so sehr Teil des täglichen Lebens geworden, dass man leicht vergisst, wie neu sie sind. Die ersten Digitalcomputer wurden erst [y:vor etwa acht Jahrzehnten] erfunden {owid-ai}. Von Anfang an wollten einige Informatiker Maschinen so intelligent machen wie Menschen. Ein frühes Beispiel war **Theseus**, 1950 von Claude Shannon gebaut: eine ferngesteuerte Maus, die ihren Weg aus einem Labyrinth finden und sich den Weg merken konnte. Es war ein cleveres Spielzeug mit sehr begrenzten Fähigkeiten. Innerhalb eines Menschenlebens würden ihre Nachkommen lernen, zu sehen, zu hören, zu schreiben und zu zeichnen.",
+      "heading_es": "Un ratón en un laberinto",
+      "body_es": "Las computadoras se han vuelto tan parte de la vida diaria que es fácil olvidar cuán nuevas son. Las primeras computadoras digitales se inventaron hace apenas [y:cerca de ocho décadas] {owid-ai}. Desde el principio, algunos científicos informáticos quisieron hacer máquinas tan inteligentes como los humanos. Un ejemplo temprano fue **Theseus**, construido por Claude Shannon en 1950: un ratón controlado por remoto que podía encontrar la salida de un laberinto y recordar la ruta. Era un juguete ingenioso con habilidades muy limitadas. Dentro de una sola vida humana, sus descendientes aprenderían a ver, escuchar, escribir y dibujar."
     },
     {
       "heading_en": "Catching up with humans on tests",
       "heading_vi": "Bắt kịp con người trong các bài kiểm tra",
       "body_en": "Researchers track progress with standard tests in areas such as handwriting recognition, speech recognition and reading comprehension. In Roser's chart, each AI system starts at -100 and human performance is set at zero {kiela-2021}. Around 2012, no machine could reliably recognise language or images at a human level. A decade later, AI systems [g:beat humans] on the tests in all of these areas. Roser adds an important warning: outside standardised tests, performance was mixed, and in some real situations AI still did much worse than people. Even so, image and speech recognition became cheap enough to run on ordinary phones.",
-      "body_vi": "Các nhà nghiên cứu theo dõi tiến bộ bằng những bài kiểm tra chuẩn trong các lĩnh vực như nhận dạng chữ viết tay, nhận dạng giọng nói và đọc hiểu. Trong biểu đồ của Roser, mỗi hệ thống AI bắt đầu ở mức -100 và năng lực của con người được đặt ở mức 0 {kiela-2021}. Khoảng năm 2012, chưa máy nào nhận dạng ngôn ngữ hay hình ảnh ở mức con người một cách đáng tin cậy. Một thập kỷ sau, các hệ thống AI đã [g:vượt con người] trong các bài kiểm tra ở tất cả những lĩnh vực đó. Roser thêm một lời cảnh báo quan trọng: ngoài các bài kiểm tra chuẩn, kết quả không đồng đều, và trong một số tình huống thực tế, AI vẫn kém con người nhiều. Dù vậy, nhận dạng hình ảnh và giọng nói đã rẻ đến mức chạy được trên điện thoại thông thường."
+      "body_vi": "Các nhà nghiên cứu theo dõi tiến bộ bằng những bài kiểm tra chuẩn trong các lĩnh vực như nhận dạng chữ viết tay, nhận dạng giọng nói và đọc hiểu. Trong biểu đồ của Roser, mỗi hệ thống AI bắt đầu ở mức -100 và năng lực của con người được đặt ở mức 0 {kiela-2021}. Khoảng năm 2012, chưa máy nào nhận dạng ngôn ngữ hay hình ảnh ở mức con người một cách đáng tin cậy. Một thập kỷ sau, các hệ thống AI đã [g:vượt con người] trong các bài kiểm tra ở tất cả những lĩnh vực đó. Roser thêm một lời cảnh báo quan trọng: ngoài các bài kiểm tra chuẩn, kết quả không đồng đều, và trong một số tình huống thực tế, AI vẫn kém con người nhiều. Dù vậy, nhận dạng hình ảnh và giọng nói đã rẻ đến mức chạy được trên điện thoại thông thường.",
+      "heading_fr": "Rattraper les humains lors des tests",
+      "body_fr": "Les chercheurs suivent les progrès grâce à des tests standardisés dans des domaines tels que la reconnaissance de l'écriture manuscrite, la reconnaissance vocale et la compréhension de texte. Dans le graphique de Roser, chaque système d'IA commence à -100 et la performance humaine est fixée à zéro {kiela-2021}. Vers 2012, aucune machine ne pouvait reconnaître de manière fiable le langage ou les images au niveau humain. Une décennie plus tard, les systèmes d'IA [g:surpassaient les humains] lors de ces tests dans tous ces domaines. Roser ajoute un avertissement important : en dehors des tests standardisés, les performances étaient mitigées et, dans certaines situations réelles, l'IA obtenait encore de bien moins bons résultats que les gens. Malgré tout, la reconnaissance d'images et de la parole est devenue suffisamment bon marché pour fonctionner sur des téléphones ordinaires.",
+      "heading_de": "Menschen in Tests einholen",
+      "body_de": "Forscher verfolgen Fortschritte mit Standardtests in Bereichen wie Handschrifterkennung, Spracherkennung und Leseverständnis. In Rosers Diagramm startet jedes KI-System bei -100 und die menschliche Leistung ist auf Null gesetzt {kiela-2021}. Um 2012 konnte keine Maschine Sprache oder Bilder zuverlässig auf menschlichem Niveau erkennen. Ein Jahrzehnt später [g:schlagen KI-Systeme Menschen] in den Tests in all diesen Bereichen. Roser fügt eine wichtige Warnung hinzu: Außerhalb standardisierter Tests war die Leistung durchwachsen, und in einigen realen Situationen schnitt KI immer noch viel schlechter ab als Menschen. Dennoch wurden Bild- und Spracherkennung billig genug, um auf gewöhnlichen Handys zu laufen.",
+      "heading_es": "Alcanzando a los humanos en pruebas",
+      "body_es": "Los investigadores rastrean el progreso con pruebas estándar en áreas como el reconocimiento de escritura a mano, el reconocimiento de voz y la comprensión lectora. En el gráfico de Roser, cada sistema de IA comienza en -100 y el rendimiento humano se fija en cero {kiela-2021}. Alrededor de 2012, ninguna máquina podía reconocer de manera fiable el lenguaje o las imágenes a nivel humano. Una década después, los sistemas de IA [g:superaron a los humanos] en las pruebas de todas estas áreas. Roser añade una advertencia importante: fuera de las pruebas estandarizadas, el rendimiento era mixto y en algunas situaciones reales la IA seguía haciéndolo mucho peor que las personas. Aun así, el reconocimiento de imágenes y voz se volvió lo suficientemente barato como para ejecutarse en teléfonos comunes."
     },
     {
       "heading_en": "From blurry faces to any picture",
       "heading_vi": "Từ khuôn mặt mờ nhoè đến bất kỳ bức tranh nào",
       "body_en": "AI also learned to create images. In 2014, the best AI-generated face was a small, pixelated black-and-white image. Just [y:three years later], AI systems could produce faces that were hard to tell apart from photographs, of people who do not exist. Newer models went further, turning almost any written description into a picture. Roser's example was the prompt 'A Pomeranian is sitting on the King's throne wearing a crown. Two tiger soldiers are standing next to the throne.' Within seconds, an AI produced a photorealistic image of exactly that scene.",
-      "body_vi": "AI cũng học được cách tạo ra hình ảnh. Năm 2014, khuôn mặt tốt nhất do AI tạo ra chỉ là một bức ảnh đen trắng nhỏ, vỡ hạt. Chỉ [y:ba năm sau], các hệ thống AI đã có thể tạo ra những khuôn mặt khó phân biệt với ảnh chụp, của những người không hề tồn tại. Các mô hình mới hơn còn tiến xa hơn, biến gần như mọi đoạn mô tả bằng chữ thành tranh. Ví dụ của Roser là câu lệnh 'Một chú chó Pomeranian đội vương miện ngồi trên ngai vua. Hai người lính hổ đứng cạnh ngai.' Chỉ trong vài giây, AI đã tạo ra một bức ảnh như thật về đúng cảnh ấy."
+      "body_vi": "AI cũng học được cách tạo ra hình ảnh. Năm 2014, khuôn mặt tốt nhất do AI tạo ra chỉ là một bức ảnh đen trắng nhỏ, vỡ hạt. Chỉ [y:ba năm sau], các hệ thống AI đã có thể tạo ra những khuôn mặt khó phân biệt với ảnh chụp, của những người không hề tồn tại. Các mô hình mới hơn còn tiến xa hơn, biến gần như mọi đoạn mô tả bằng chữ thành tranh. Ví dụ của Roser là câu lệnh 'Một chú chó Pomeranian đội vương miện ngồi trên ngai vua. Hai người lính hổ đứng cạnh ngai.' Chỉ trong vài giây, AI đã tạo ra một bức ảnh như thật về đúng cảnh ấy.",
+      "heading_fr": "De visages flous à n'importe quelle image",
+      "body_fr": "L'IA a également appris à générer des images. En 2014, le meilleur visage généré par l'IA était une petite image en noir et blanc pixélisée. À peine [y:trois ans plus tard], les systèmes d'IA pouvaient produire des visages impossibles à distinguer de photographies, représentant des personnes qui n'existent pas. Des modèles plus récents sont allés plus loin, transformant presque n'importe quelle description écrite en image. L'exemple de Roser était la consigne suivante : « Un poméranien est assis sur le trône du roi en portant une couronne. Deux soldats tigres se tiennent à côté du trône. » En quelques secondes, une IA a produit une image photoréaliste correspondant exactement à cette scène.",
+      "heading_de": "Von verschwommenen Gesichtern zu jedem Bild",
+      "body_de": "KI lernte auch, Bilder zu erstellen. Im Jahr 2014 war das beste KI-generierte Gesicht ein kleines, verpixeltes Schwarz-Weiß-Bild. Nur [y:drei Jahre später] konnten KI-Systeme Gesichter von Personen, die nicht existieren, produzieren, die kaum von Fotografien zu unterscheiden waren. Neuere Modelle gingen weiter und verwandelten fast jede schriftliche Beschreibung in ein Bild. Rosers Beispiel war die Aufforderung 'Ein Pommerscher Zwergspitz sitzt auf dem Thron des Königs und trägt eine Krone. Zwei Tigersoldaten stehen neben dem Thron.' Innerhalb von Sekundenschnelle erzeugte eine KI ein fotorealistisches Bild genau dieser Szene.",
+      "heading_es": "De rostros borrosos a cualquier imagen",
+      "body_es": "La IA también aprendió a crear imágenes. En 2014, el mejor rostro generado por IA era una imagen pequeña, pixelada en blanco y negro. Apenas [y:tres años después], los sistemas de IA podían producir rostros que eran difíciles de distinguir de las fotografías, de personas que no existen. Los modelos más nuevos fueron más allá, convirtiendo casi cualquier descripción escrita en una imagen. El ejemplo de Roser fue la indicación 'Un pomerania está sentado en el trono del rey usando una corona. Dos soldados tigre están de pie junto al trono'. En segundos, una IA produjo una imagen fotorrealista exactamente de esa escena."
     },
     {
       "heading_en": "Machines that use language",
       "heading_vi": "Những cỗ máy biết dùng ngôn ngữ",
       "body_en": "Progress in language was just as striking. Roser showed how Google's **PaLM** system could explain jokes, including an anti-joke designed to confuse the listener. Language AI had already entered daily life: emails were auto-completed, huge amounts of text were translated, videos were transcribed automatically and students used language models for homework. When Roser wrote in 2022, he noted that AI could [y:not yet produce long, coherent texts] and wondered whether progress would slow. Soon afterwards, chatbots built on large language models became used by millions of people, a reminder of how quickly forecasts in this field can age.",
-      "body_vi": "Tiến bộ về ngôn ngữ cũng đáng kinh ngạc không kém. Roser cho thấy hệ thống **PaLM** của Google có thể giải thích những câu đùa, kể cả một câu 'phản đùa' được tạo ra để làm người nghe bối rối. AI ngôn ngữ đã đi vào đời sống hằng ngày: email được tự động gợi ý, khối lượng văn bản khổng lồ được dịch, video được chép lời tự động và học sinh dùng mô hình ngôn ngữ để làm bài tập. Khi viết vào năm 2022, Roser nhận xét rằng AI [y:chưa viết được văn bản dài và mạch lạc], và tự hỏi liệu tiến bộ có chậm lại không. Không lâu sau, các chatbot dựa trên mô hình ngôn ngữ lớn đã được hàng triệu người sử dụng, lời nhắc rằng các dự báo trong lĩnh vực này có thể lỗi thời nhanh đến mức nào."
+      "body_vi": "Tiến bộ về ngôn ngữ cũng đáng kinh ngạc không kém. Roser cho thấy hệ thống **PaLM** của Google có thể giải thích những câu đùa, kể cả một câu 'phản đùa' được tạo ra để làm người nghe bối rối. AI ngôn ngữ đã đi vào đời sống hằng ngày: email được tự động gợi ý, khối lượng văn bản khổng lồ được dịch, video được chép lời tự động và học sinh dùng mô hình ngôn ngữ để làm bài tập. Khi viết vào năm 2022, Roser nhận xét rằng AI [y:chưa viết được văn bản dài và mạch lạc], và tự hỏi liệu tiến bộ có chậm lại không. Không lâu sau, các chatbot dựa trên mô hình ngôn ngữ lớn đã được hàng triệu người sử dụng, lời nhắc rằng các dự báo trong lĩnh vực này có thể lỗi thời nhanh đến mức nào.",
+      "heading_fr": "Des machines qui utilisent le langage",
+      "body_fr": "Les progrès dans le domaine du langage ont été tout aussi saisissants. Roser a montré comment le système **PaLM** de Google pouvait expliquer des blagues, y compris une anti-blague conçue pour embrouiller l'auditeur. L'IA linguistique était déjà entrée dans la vie quotidienne : les e-mails étaient auto-complétés, d'énormes quantités de texte étaient traduites, les vidéos étaient transcrites automatiquement et les étudiants utilisaient des modèles de langage pour leurs devoirs. Lorsque Roser a écrit en 2022, il a noté que l'IA ne pouvait [y:pas encore produire de textes longs et cohérents] et s'est demandé si le progrès allait ralentir. Peu après, les robots conversationnels basés sur de grands modèles de langage ont été utilisés par des millions de personnes, rappelant à quel point les prévisions dans ce domaine vieillissent vite.",
+      "heading_de": "Maschinen, die Sprache nutzen",
+      "body_de": "Der Fortschritt bei der Sprache war ebenso auffällig. Roser zeigte, wie Googles **PaLM**-System Witze erklären konnte, einschließlich eines Antiwitzes, der den Zuhörer verwirren sollte. Sprach-KI hatte bereits das tägliche Leben betreten: E-Mails wurden automatisch vervollständigt, riesige Textmengen übersetzt, Videos automatisch transkribiert und Studenten nutzten Sprachmodelle für Hausaufgaben. Als Roser 2022 schrieb, merkte er an, dass KI [y:noch keine langen, zusammenhängenden Texte produzieren] könne, und fragte sich, ob sich der Fortschritt verlangsamen würde. Kurz darauf wurden Chatbots, die auf großen Sprachmodellen basieren, von Millionen Menschen genutzt, eine Erinnerung daran, wie schnell Prognosen in diesem Feld altern.",
+      "heading_es": "Máquinas que usan el lenguaje",
+      "body_es": "El progreso en el lenguaje fue igual de llamativo. Roser mostró cómo el sistema **PaLM** de Google podía explicar chistes, incluido un antichiste diseñado para confundir al oyente. La IA del lenguaje ya había entrado en la vida diaria: los correos electrónicos se autocompletaban, grandes cantidades de texto se traducían, los vídeos se transcribían automáticamente y los estudiantes usaban modelos de lenguaje para los deberes. Cuando Roser escribió en 2022, señaló que la IA [y:todavía no podía producir textos largos y coherentes] y se preguntó si el progreso se desaceleraría. Poco después, los chatbots construidos sobre grandes modelos de lenguaje empezaron a ser utilizados por millones de personas, un recordatorio de lo rápido que pueden envejecer las previsiones en este campo."
     },
     {
       "heading_en": "AI is already here",
       "heading_vi": "AI đã ở đây rồi",
       "body_en": "Roser's list of everyday uses is long. When you book a flight, an algorithm often decides the price; at the airport, AI systems monitor activity; on the plane, they help the pilot. AI increasingly helps decide who gets a loan, welfare or a job, and even who is released from jail. **Recommender systems** choose what we see on social media and online shops. Some governments use AI for surveillance, and some have bought autonomous weapons. AI is a [p:dual-use technology]: it can serve extremely good goals and extraordinarily bad ones, so everyone needs to understand what is happening.",
-      "body_vi": "Danh sách ứng dụng hằng ngày của Roser rất dài. Khi bạn đặt vé máy bay, một thuật toán thường quyết định giá vé; ở sân bay, hệ thống AI giám sát hoạt động; trên máy bay, chúng hỗ trợ phi công. AI ngày càng góp phần quyết định ai được vay tiền, nhận trợ cấp hay được tuyển dụng, thậm chí ai được ra tù. **Hệ thống gợi ý** chọn những gì ta thấy trên mạng xã hội và cửa hàng trực tuyến. Một số chính phủ dùng AI để giám sát, và một số đã mua vũ khí tự hành. AI là [p:công nghệ lưỡng dụng]: nó có thể phục vụ những mục tiêu cực kỳ tốt đẹp lẫn cực kỳ tồi tệ, nên ai cũng cần hiểu điều gì đang diễn ra."
+      "body_vi": "Danh sách ứng dụng hằng ngày của Roser rất dài. Khi bạn đặt vé máy bay, một thuật toán thường quyết định giá vé; ở sân bay, hệ thống AI giám sát hoạt động; trên máy bay, chúng hỗ trợ phi công. AI ngày càng góp phần quyết định ai được vay tiền, nhận trợ cấp hay được tuyển dụng, thậm chí ai được ra tù. **Hệ thống gợi ý** chọn những gì ta thấy trên mạng xã hội và cửa hàng trực tuyến. Một số chính phủ dùng AI để giám sát, và một số đã mua vũ khí tự hành. AI là [p:công nghệ lưỡng dụng]: nó có thể phục vụ những mục tiêu cực kỳ tốt đẹp lẫn cực kỳ tồi tệ, nên ai cũng cần hiểu điều gì đang diễn ra.",
+      "heading_fr": "L'IA est déjà là",
+      "body_fr": "La liste des utilisations quotidiennes dressée par Roser est longue. Lorsque vous réservez un vol, un algorithme décide souvent du prix ; à l'aéroport, des systèmes d'IA surveillent l'activité ; à bord de l'avion, ils aident le pilote. L'IA aide de plus en plus à décider qui obtient un prêt, une aide sociale ou un emploi, et même qui est libéré de prison. Les **systèmes de recommandation** choisissent ce que nous voyons sur les réseaux sociaux et les boutiques en ligne. Certains gouvernements utilisent l'IA pour la surveillance et d'autres ont acheté des armes autonomes. L'IA est une [p:technologie à double usage] : elle peut servir des objectifs extrêmement louables et d'autres extraordinaires par leur dangerosité, ce qui oblige chacun à comprendre ce qui se passe.",
+      "heading_de": "KI ist bereits da",
+      "body_de": "Rosers Liste der alltäglichen Verwendungen ist lang. Wenn du einen Flug buchst, entscheidet oft ein Algorithmus über den Preis; am Flughafen überwachen KI-Systeme die Aktivität; im Flugzeug helfen sie dem Pilot. KI hilft zunehmend bei der Entscheidung, wer einen Kredit, Sozialhilfe oder einen Job bekommt und sogar wer aus dem Gefängnis entlassen wird. **Empfehlungssysteme** wählen aus, was wir in sozialen Medien und Online-Shops sehen. Einige Regierungen nutzen KI zur Überwachung, und einige haben autonome Waffen gekauft. KI ist eine [p:Technologie mit dualer Nutzung]: Sie kann extrem guten und ausserordentlich schlechten Zielen dienen, weshalb jeder verstehen muss, was passiert.",
+      "heading_es": "La IA ya está aquí",
+      "body_es": "La lista de usos cotidianos de Roser es larga. Cuando reservas un vuelo, un algoritmo a menudo decide el precio; en el aeropuerto, los sistemas de IA monitorizan la actividad; en el avión, ayudan al piloto. La IA ayuda cada vez más a decidir quién recibe un préstamo, un subsidio o un empleo, e incluso quién sale de prisión. Los **sistemas de recomendación** eligen lo que vemos en las redes sociales y tiendas en línea. Algunos gobiernos utilizan la IA para la vigilancia y algunos han comprado armas autónomas. La IA es una [p:tecnología de doble uso]: puede servir para fines extremadamente buenos y extraordinariamente malos, por lo que todos deben entender lo que está pasando."
     },
     {
       "heading_en": "The engine: more and more computation",
       "heading_vi": "Động cơ: sức tính toán ngày càng lớn",
       "body_en": "What drove this progress? Three ingredients matter for systems that learn from data: algorithms, training data and **training computation**, measured in FLOP, where one FLOP is a single addition or multiplication of two decimal numbers. For about six decades, the computation used to train AI doubled roughly [y:every 20 months], in line with Moore's Law. Since about 2010, it has doubled roughly [p:every six months] {sevilla-2022}. The results add up quickly: PaLM's training used more than five million times the computation of AlexNet, the record holder just ten years earlier.",
-      "body_vi": "Điều gì thúc đẩy tiến bộ này? Với các hệ thống học từ dữ liệu, có ba thành phần quan trọng: thuật toán, dữ liệu huấn luyện và **sức tính toán dùng để huấn luyện**, đo bằng FLOP, trong đó một FLOP là một phép cộng hoặc nhân hai số thập phân. Trong khoảng sáu thập kỷ, sức tính toán dùng để huấn luyện AI tăng gấp đôi khoảng [y:mỗi 20 tháng], khớp với định luật Moore. Từ khoảng năm 2010, nó tăng gấp đôi khoảng [p:mỗi sáu tháng] {sevilla-2022}. Kết quả cộng dồn rất nhanh: việc huấn luyện PaLM dùng sức tính toán gấp hơn năm triệu lần AlexNet, hệ thống giữ kỷ lục chỉ mười năm trước đó."
+      "body_vi": "Điều gì thúc đẩy tiến bộ này? Với các hệ thống học từ dữ liệu, có ba thành phần quan trọng: thuật toán, dữ liệu huấn luyện và **sức tính toán dùng để huấn luyện**, đo bằng FLOP, trong đó một FLOP là một phép cộng hoặc nhân hai số thập phân. Trong khoảng sáu thập kỷ, sức tính toán dùng để huấn luyện AI tăng gấp đôi khoảng [y:mỗi 20 tháng], khớp với định luật Moore. Từ khoảng năm 2010, nó tăng gấp đôi khoảng [p:mỗi sáu tháng] {sevilla-2022}. Kết quả cộng dồn rất nhanh: việc huấn luyện PaLM dùng sức tính toán gấp hơn năm triệu lần AlexNet, hệ thống giữ kỷ lục chỉ mười năm trước đó.",
+      "heading_fr": "Le moteur : toujours plus de calculs",
+      "body_fr": "Qu'est-ce qui a propulsé ce progrès ? Trois ingrédients comptent pour les systèmes qui apprennent à partir de données : les algorithmes, les données d'entraînement et le **calcul d'entraînement**, mesuré en FLOP, où un FLOP représente une simple addition ou multiplication de deux nombres décimaux. Pendant environ six décennies, la puissance de calcul utilisée pour entraîner l'IA a doublé approximativement [y:tous les 20 mois], conformément à la loi de Moore. Depuis environ 2010, elle double environ [p:tous les six mois] {sevilla-2022}. Les résultats s'accumulent rapidement : l'entraînement de PaLM a nécessité plus de cinq millions de fois la puissance de calcul d'AlexNet, pourtant détenteur du record à peine dix ans plus tôt.",
+      "heading_de": "Der Motor: immer mehr Rechenleistung",
+      "body_de": "Was trieb diesen Fortschritt an? Drei Zutaten sind wichtig für Systeme, die aus Daten lernen: Algorithmen, Trainingsdaten und **Trainingsrechenleistung**, gemessen in FLOP, wobei ein FLOP eine einzelne Addition oder Multiplikation zweier Dezimalzahlen ist. Etwa sechs Jahrzehnte lang verdoppelte sich die für das Training von KI verwendete Rechenleistung grob [y:alle 20 Monate], im Einklang mit dem Mooreschen Gesetz. Seit etwa 2010 hat sie sich grob [p:alle sechs Monate] verdoppelt {sevilla-2022}. Die Ergebnisse summieren sich schnell: PaLMs Training nutzte mehr als die fünfmillionenfache Rechenleistung von AlexNet, dem Rekordhalter nur zehn Jahre zuvor.",
+      "heading_es": "El motor: cada vez más computación",
+      "body_es": "¿Qué impulsó este progreso? Tres ingredientes importan para los sistemas que aprenden a partir de datos: algoritmos, datos de entrenamiento y **computación de entrenamiento**, medida en FLOP, donde un FLOP es una sola suma o multiplicación de dos números decimales. Durante unas seis décadas, la computación utilizada para entrenar a la IA se duplicó aproximadamente [y:cada 20 meses], en línea con la ley de Moore. Desde alrededor de 2010, se ha duplicado aproximadamente [p:cada seis meses] {sevilla-2022}. Los resultados se acumulan rápidamente: el entrenamiento de PaLM utilizó más de cinco millones de veces la computación de AlexNet, el poseedor del récord apenas diez años antes."
     },
     {
       "heading_en": "What might come next",
       "heading_vi": "Điều gì có thể đến tiếp theo",
       "body_en": "Researchers study these trends to think about the future. AI researcher Ajeya Cotra asked when the computation used to train an AI might match that of the human brain. In 2022, she estimated a [p:50% chance] that such 'transformative AI' would be developed by 2040. Other forecasters, using different methods, reached broadly similar conclusions, though such predictions are highly uncertain. Roser's conclusion is not a forecast but a call: a technology this powerful should not be left to experts alone. Because it will shape our lives, we should all try to understand where it is heading and [g:take part in the debate] about how it is used.",
-      "body_vi": "Các nhà nghiên cứu phân tích những xu hướng này để suy nghĩ về tương lai. Nhà nghiên cứu AI Ajeya Cotra đặt câu hỏi khi nào sức tính toán dùng để huấn luyện một AI có thể ngang với bộ não con người. Năm 2022, bà ước tính có [p:50% khả năng] loại 'AI mang tính chuyển đổi' như vậy sẽ ra đời trước năm 2040. Những nhà dự báo khác, dùng phương pháp khác, đưa ra kết luận nhìn chung tương tự, dù các dự báo như thế rất bất định. Kết luận của Roser không phải một lời tiên đoán mà là một lời kêu gọi: một công nghệ mạnh mẽ như vậy không nên chỉ để cho giới chuyên gia. Vì nó sẽ định hình cuộc sống của chúng ta, tất cả chúng ta nên cố hiểu nó đang đi về đâu và [g:tham gia cuộc thảo luận] về cách sử dụng nó."
+      "body_vi": "Các nhà nghiên cứu phân tích những xu hướng này để suy nghĩ về tương lai. Nhà nghiên cứu AI Ajeya Cotra đặt câu hỏi khi nào sức tính toán dùng để huấn luyện một AI có thể ngang với bộ não con người. Năm 2022, bà ước tính có [p:50% khả năng] loại 'AI mang tính chuyển đổi' như vậy sẽ ra đời trước năm 2040. Những nhà dự báo khác, dùng phương pháp khác, đưa ra kết luận nhìn chung tương tự, dù các dự báo như thế rất bất định. Kết luận của Roser không phải một lời tiên đoán mà là một lời kêu gọi: một công nghệ mạnh mẽ như vậy không nên chỉ để cho giới chuyên gia. Vì nó sẽ định hình cuộc sống của chúng ta, tất cả chúng ta nên cố hiểu nó đang đi về đâu và [g:tham gia cuộc thảo luận] về cách sử dụng nó.",
+      "heading_fr": "Ce qui pourrait arriver ensuite",
+      "body_fr": "Les chercheurs étudient ces tendances pour réfléchir à l'avenir. La chercheuse en IA Ajeya Cotra a cherché à savoir quand la puissance de calcul employée pour entraîner une IA pourrait égaler celle du cerveau humain. En 2022, elle a estimé qu'il y avait une [p:chance sur deux (50 %)] qu'une telle « IA transformative » voie le jour d'ici 2040. D'autres prévisionnistes, utilisant des méthodes différentes, sont parvenus à des conclusions globalement similaires, bien que ces prédictions restent hautement incertaines. La conclusion de Roser n'est pas une prévision mais un appel : une technologie aussi puissante ne doit pas être laissée aux seuls experts. Puisqu'elle façonnera nos vies, nous devrions tous essayer de comprendre où elle nous mène et [g:participer au débat] sur son utilisation.",
+      "heading_de": "Was als Nächstes kommen könnte",
+      "body_de": "Forscher untersuchen diese Trends, um über die Zukunft nachzudenken. Die KI-Forscherin Ajeya Cotra fragte, wann die zum Training einer KI verwendete Rechenleistung der des menschlichen Gehirns entsprechen könnte. Im Jahr 2022 schätzte sie eine [p:50-prozentige Chance], dass eine solche 'transformative KI' bis 2040 entwickelt sein wird. Andere Prognostiker, die andere Methoden verwendeten, kamen zu im Wesentlichen ähnlichen Schlüssen, obwohl solche Vorhersagen äußerst unsicher sind. Rosers Fazit ist keine Prognose, sondern ein Aufruf: Eine Technologie, die so mächtig ist, sollte nicht allein Experten überlassen werden. Da sie unser Leben prägen wird, sollten wir alle versuchen zu verstehen, wohin sie steuert, und [g:an der Debatte teilnehmen], wie sie genutzt wird.",
+      "heading_es": "Lo que podría venir después",
+      "body_es": "Los investigadores estudian estas tendencias para pensar en el futuro. La investigadora de IA Ajeya Cotra preguntó cuándo la computación utilizada para entrenar una IA podría igualar a la del cerebro humano. En 2022, estimó una [p:probabilidad del 50%] de que tal 'IA transformativa' se desarrollara para 2040. Otros pronosticadores, utilizando diferentes métodos, llegaron a conclusiones ampliamente similares, aunque tales predicciones son altamente inciertas. La conclusión de Roser no es un pronóstico sino un llamado: una tecnología tan poderosa no debe dejarse solo en manos de los expertos. Debido a que dará forma a nuestras vidas, todos deberíamos intentar comprender hacia dónde se dirige y [g:participar en el debate] sobre cómo se utiliza."
     }
   ],
   "keyPoint": {
     "en": "AI's progress is like [p:compound interest]: doubling every few months looks slow at first and then suddenly enormous. Do not judge the future by today's tools. Try new AI tools *with curiosity and a critical eye*, and form your own view about how they should be used.",
-    "vi": "Tiến bộ của AI giống như [p:lãi kép]: tăng gấp đôi sau mỗi vài tháng, ban đầu trông chậm rồi bỗng trở nên khổng lồ. Đừng đánh giá tương lai bằng công cụ của hôm nay. Hãy thử các công cụ AI mới *với sự tò mò và con mắt phản biện*, và tự hình thành quan điểm về cách chúng nên được sử dụng."
+    "vi": "Tiến bộ của AI giống như [p:lãi kép]: tăng gấp đôi sau mỗi vài tháng, ban đầu trông chậm rồi bỗng trở nên khổng lồ. Đừng đánh giá tương lai bằng công cụ của hôm nay. Hãy thử các công cụ AI mới *với sự tò mò và con mắt phản biện*, và tự hình thành quan điểm về cách chúng nên được sử dụng.",
+    "fr": "Les progrès de l'intelligence artificielle s'apparentent à [p:des intérêts composés] : doubler tous les quelques mois semble lent au début, puis devient soudainement colossal. Ne jugez pas l'avenir à l'aune des outils d'aujourd'hui. Essayez les nouveaux outils d'IA *avec curiosité et un esprit critique*, et forgez votre propre opinion sur la manière dont ils devraient être employés.",
+    "de": "Der Fortschritt der KI gleicht dem [p:Zinseszins]: Eine Verdopplung alle paar Monate sieht anfangs langsam und dann plötzlich enorm aus. Beurteile die Zukunft nicht nach den heutigen Werkzeugen. Probiere neue KI-Werkzeuge *mit Neugier und einem kritischen Blick* aus und bilde dir deine eigene Meinung darüber, wie sie genutzt werden sollten.",
+    "es": "El progreso de la IA es como [p:el interés compuesto]: duplicarse cada pocos meses parece lento al principio y luego de repente enorme. No juzgues el futuro con las herramientas de hoy. Prueba nuevas herramientas de IA *con curiosidad y ojo crítico*, y forma tu propia opinión sobre cómo deben utilizarse."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Liệt kê ba khoảnh khắc trong hôm nay mà một thuật toán có thể đã lựa chọn thay bạn, như bảng tin hay giá cả.",
       "Hỏi một công cụ AI một câu mà bạn đã biết rõ và kiểm tra kỹ câu trả lời xem có sai sót không.",
       "Bàn với một người bạn về một ứng dụng AI bạn hoan nghênh và một ứng dụng bạn muốn bị hạn chế."
+    ],
+    "fr": [
+      "Listez trois moments aujourd'hui où un algorithme a pu faire un choix pour vous, comme un fil d'actualité ou un prix.",
+      "Posez à un outil d'IA une question que vous connaissez déjà très bien et vérifiez attentivement sa réponse à la recherche d'erreurs.",
+      "Discutez avec un ami d'une utilisation de l'IA que vous approuvez et d'une autre que vous aimeriez voir limitée."
+    ],
+    "de": [
+      "Zähle drei Momente heute auf, in denen ein Algorithmus eine Wahl für dich getroffen haben könnte, wie etwa ein Feed oder ein Preis.",
+      "Frage ein KI-Werkzeug nach einer Frage, die du bereits gut kennst, und überprüfe seine Antwort sorgfältig auf Fehler.",
+      "Diskutiere mit einem Freund über eine Nutzung von KI, die du begrüßt, und eine, die deiner Meinung nach eingeschränkt werden sollte."
+    ],
+    "es": [
+      "Enumera tres momentos de hoy en día en los que un algoritmo puede haber tomado una decisión por ti, como un feed o un precio.",
+      "Hazle a una herramienta de IA una pregunta que ya conozcas bien y revisa su respuesta cuidadosamente en busca de errores.",
+      "Discute con un amigo un uso de la IA que veas con buenos ojos y otro que quisieras que se limitara."
     ]
   },
   "references": [
@@ -127,5 +193,75 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoQABwAPu1orU6ppiSiMAgBMB2JaQAAW+92v8GTMNVuphf0AP7qgkYpw/ae6VPK84gTXeFVqpjYZSj9BCXuf8scezX7cND/CdhpjryH5BTBlE3Tf4dKCkdb3gAAAA==",
-  "dominant": "#8c8c8c"
+  "dominant": "#8c8c8c",
+  "glossary": {
+    "en": {
+      "theseus": "An early remote-controlled mouse built in 1950 that could find its way out of a maze.",
+      "palm": "Google's language system capable of explaining complex jokes and text.",
+      "recommender systems": "Algorithms that choose what content we see on social media and online shops.",
+      "dual-use technology": "Technology that can serve both extremely good goals and extraordinarily bad ones.",
+      "training computation": "The computing power used to train artificial intelligence, measured in FLOP.",
+      "flop": "A single addition or multiplication of two decimal numbers used to measure computer performance.",
+      "moore's law": "The observation that computing power doubles roughly every two years.",
+      "alexnet": "A record-holding AI system known for image recognition breakthroughs."
+    },
+    "vi": {
+      "theseus": "Chuột điều khiển từ xa do Claude Shannon chế tạo năm 1950.",
+      "palm": "Hệ thống ngôn ngữ của Google có khả năng giải thích câu đùa.",
+      "hệ thống gợi ý": "Công cụ chọn nội dung hiển thị trên mạng xã hội và cửa hàng.",
+      "công nghệ lưỡng dụng": "Công nghệ phục vụ cả mục tiêu tốt đẹp lẫn tồi tệ.",
+      "sức tính toán dùng để huấn luyện": "Năng lực tính toán dùng để đào tạo hệ thống AI, đo bằng FLOP.",
+      "flop": "Đơn vị đo một phép cộng hoặc nhân hai số thập phân.",
+      "định luật moore": "Quy luật về tốc độ tăng trưởng sức mạnh tính toán.",
+      "alexnet": "Hệ thống AI từng giữ kỷ lục về sức tính toán mười năm trước.",
+      "ajeya cotra": "Nhà nghiên cứu AI đưa ra dự báo về mốc thời gian của AI.",
+      "ai mang tính chuyển đổi": "Hệ thống AI có sức tính toán ngang với bộ não con người."
+    },
+    "fr": {
+      "theseus": "Souris télécommandée construite en 1950 par Claude Shannon pour trouver la sortie d'un labyrinthe.",
+      "palm": "Système d'intelligence artificielle de Google capable de comprendre le langage et d'expliquer des blagues.",
+      "systèmes de recommandation": "Algorithmes qui sélectionnent les contenus affichés sur les réseaux sociaux et les boutiques en ligne.",
+      "technologie à double usage": "Technologie pouvant servir à la fois à des fins extrêmement positives et extrêmement néfastes.",
+      "calcul d'entraînement": "Puissance de calcul nécessaire pour enseigner des données à un système d'intelligence artificielle.",
+      "flop": "Unité de mesure correspondant à une seule addition ou multiplication de deux nombres décimaux.",
+      "loi de moore": "Observation selon laquelle la puissance des microprocesseurs double régulièrement à coût constant.",
+      "ia transformative": "Intelligence artificielle hypothétique dont la puissance de calcul égalerait celle du cerveau humain."
+    },
+    "de": {
+      "ki": "Künstliche Intelligenz, Maschinen, die menschenähnliche Aufgaben lösen.",
+      "digitalcomputer": "Elektronische Rechenanlage zur digitalen Datenverarbeitung.",
+      "lochkarten": "Frühes Medium zur Speicherung von Daten durch Stanzen.",
+      "handschrifterkennung": "Automatisches Lesen und Verstehen handschriftlicher Texte.",
+      "spracherkennung": "Umwandlung gesprochener Sprache in geschriebenen Text durch Computer.",
+      "leseverständnis": "Fähigkeit von Systemen, Texte inhaltlich zu erfassen.",
+      "palm": "Großes Sprachmodell von Google zur Textverarbeitung.",
+      "chatbots": "Dialogsysteme auf Basis von künstlicher Intelligenz.",
+      "algorithmus": "Eindeutige Rechenvorschrift zur Lösung von Problemen.",
+      "empfehlungssysteme": "Software, die Inhalte passend für Nutzer auswählt.",
+      "flop": "Maßeinheit für Rechenoperationen pro Sekunde.",
+      "mooreschen gesetz": "Beobachtung zur schnellen Verdopplung der Rechenleistung."
+    },
+    "es": {
+      "theseus": "Primer ratón controlado por remoto construido en 1950 para encontrar la salida de un laberinto.",
+      "palm": "Sistema avanzado de lenguaje de Google capaz de explicar chistes y procesar textos.",
+      "sistemas de recomendación": "Algoritmos que eligen contenidos y productos para mostrar en redes sociales y tiendas online.",
+      "tecnología de doble uso": "Innovación que puede servir tanto para fines extremadamente buenos como extraordinariamente malos.",
+      "computación de entrenamiento": "Poder de cálculo empleado para entrenar sistemas de inteligencia artificial medido en FLOP.",
+      "flop": "Operación matemática individual consistente en una suma o multiplicación de números decimales.",
+      "ley de moore": "Observación sobre la duplicación regular de la capacidad de procesamiento en la tecnología.",
+      "alexnet": "Modelo pionero de inteligencia artificial superado años más tarde por sistemas más potentes.",
+      "ia transformativa": "Sistema avanzado hipotético cuya capacidad de cálculo igualaría la del cerebro humano."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }
