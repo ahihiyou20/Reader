@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "What moving more does for your body and brain",
-    "vi": "Vận động nhiều hơn mang lại gì cho cơ thể và bộ não"
+    "vi": "Vận động nhiều hơn mang lại gì cho cơ thể và bộ não",
+    "fr": "Les bienfaits du mouvement sur le corps et l'esprit",
+    "de": "Was mehr Bewegung für deinen Körper und dein Gehirn bewirkt",
+    "es": "Lo que moverse más hace por tu cuerpo y tu cerebro"
   },
   "hook": {
     "en": "You do not need a gym membership or a marathon to benefit from exercise. According to the US Centers for Disease Control and Prevention, some benefits start [g:right after a single session], and adults who simply sit less and move a bit more gain something. Here is what regular activity does, from your mood and sleep to your heart, bones and lifespan.",
-    "vi": "Bạn không cần thẻ tập gym hay chạy marathon mới hưởng lợi từ vận động. Theo Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC), một số lợi ích bắt đầu [g:ngay sau một buổi tập], và người trưởng thành chỉ cần ngồi ít đi, vận động thêm chút ít là đã được lợi. Dưới đây là những gì hoạt động thể chất đều đặn mang lại, từ tâm trạng, giấc ngủ đến tim mạch, xương khớp và tuổi thọ."
+    "vi": "Bạn không cần thẻ tập gym hay chạy marathon mới hưởng lợi từ vận động. Theo Trung tâm Kiểm soát và Phòng ngừa Dịch bệnh Hoa Kỳ (CDC), một số lợi ích bắt đầu [g:ngay sau một buổi tập], và người trưởng thành chỉ cần ngồi ít đi, vận động thêm chút ít là đã được lợi. Dưới đây là những gì hoạt động thể chất đều đặn mang lại, từ tâm trạng, giấc ngủ đến tim mạch, xương khớp và tuổi thọ.",
+    "fr": "Pas besoin d'abonnement en salle de sport ni de marathon pour profiter de l'exercice. Selon les Centres pour le contrôle et la prévention des maladies aux États-Unis, certains bienfaits se manifestent [g:dès la toute première séance], et les adultes qui bougent un peu plus en s'asseyant moins en tirent des avantages. Voici ce que l'activité régulière apporte, de l'humeur et du sommeil jusqu'au cœur, aux os et à l'espérance de vie.",
+    "de": "Du brauchst weder eine Mitgliedschaft im Fitnessstudio noch einen Marathon, um von körperlicher Betätigung zu profitieren. Laut den US-amerikanischen Zentren für Seuchenkontrolle und Prävention (CDC) setzen manche Effekte [g:direkt nach einer einzigen Einheit] ein, und Erwachsene, die einfach weniger sitzen und sich ein wenig mehr bewegen, gewinnen spürbar an Gesundheit. Hier erfährst du, was regelmäßige Aktivität bewirkt – von Stimmung und Schlaf bis hin zu Herz, Knochen und Lebenserwartung.",
+    "es": "No necesitas un gimnasio ni correr un maratón para aprovechar los beneficios del ejercicio. Según los Centros para el Control y la Prevención de Enfermedades de EE. UU., algunos beneficios comienzan [g:inmediatamente después de una sola sesión], y los adultos que simplemente se sientan menos y se mueven un poco más obtienen resultados positivos. Esto es lo que la actividad regular aporta, desde tu estado de ánimo y tu sueño hasta tu corazón, tus huesos y tu esperanza de vida."
   },
   "sections": [
     {
       "heading_en": "Benefits that start today",
       "heading_vi": "Lợi ích bắt đầu ngay hôm nay",
       "body_en": "Some benefits of physical activity for the brain appear [g:right after] a session of moderate-to-vigorous activity. For children aged 6 to 13, thinking skills improve; for adults, short-term feelings of anxiety go down {cdc-pa}. Over time, regular activity helps keep thinking, learning and judgement sharp as we age. It can also lower the risk of **depression and anxiety** and help us sleep better. Moderate activity means you breathe harder and your heart beats faster, but you can still talk. Brisk walking, dancing and yard work all count.",
-      "body_vi": "Một số lợi ích của vận động đối với não bộ xuất hiện [g:ngay sau] một buổi tập ở cường độ vừa đến mạnh. Với trẻ từ 6 đến 13 tuổi, khả năng tư duy được cải thiện; với người lớn, cảm giác lo âu tức thời giảm xuống {cdc-pa}. Về lâu dài, vận động đều đặn giúp duy trì sự minh mẫn trong suy nghĩ, học hỏi và phán đoán khi ta có tuổi. Nó cũng có thể giảm nguy cơ **trầm cảm và lo âu** và giúp ta ngủ ngon hơn. Cường độ vừa nghĩa là bạn thở mạnh hơn và tim đập nhanh hơn, nhưng vẫn nói chuyện được. Đi bộ nhanh, nhảy múa hay làm vườn đều được tính."
+      "body_vi": "Một số lợi ích của vận động đối với não bộ xuất hiện [g:ngay sau] một buổi tập ở cường độ vừa đến mạnh. Với trẻ từ 6 đến 13 tuổi, khả năng tư duy được cải thiện; với người lớn, cảm giác lo âu tức thời giảm xuống {cdc-pa}. Về lâu dài, vận động đều đặn giúp duy trì sự minh mẫn trong suy nghĩ, học hỏi và phán đoán khi ta có tuổi. Nó cũng có thể giảm nguy cơ **trầm cảm và lo âu** và giúp ta ngủ ngon hơn. Cường độ vừa nghĩa là bạn thở mạnh hơn và tim đập nhanh hơn, nhưng vẫn nói chuyện được. Đi bộ nhanh, nhảy múa hay làm vườn đều được tính.",
+      "heading_fr": "Des bienfaits qui commencent aujourd'hui",
+      "body_fr": "Certains bienfaits de l'activité physique sur le cerveau apparaissent [g:immédiatement après] une séance d'activité modérée à vigoureuse. Chez les enfants de 6 à 13 ans, les facultés intellectuelles s'améliorent ; chez les adultes, les sentiments passagers d'anxiété diminuent {cdc-pa}. Avec le temps, une activité régulière aide à maintenir l'acuité mentale, l'apprentissage et le jugement en vieillissant. Elle peut également réduire le risque de **dépression et d'anxiété** et favoriser un meilleur sommeil. Une activité modérée signifie que vous respirez plus fort et que votre cœur bat plus vite, tout en pouvant encore parler. La marche rapide, la danse et le jardinage comptent tous.",
+      "heading_de": "Vorteile, die heute beginnen",
+      "body_de": "Einige positive Effekte körperlicher Aktivität auf das Gehirn zeigen sich [g:direkt nach] einer moderaten bis intensiven Belastung. Bei Kindern im Alter von 6 bis 13 Jahren verbessern sich die kognitiven Fähigkeiten; bei Erwachsenen gehen kurzfristige Angstgefühle zurück {cdc-pa}. Mit der Zeit hilft regelmäßige Bewegung dabei, das Denken, Lernen und Urteilsvermögen im Alter scharf zu halten. Sie kann zudem das Risiko von **Depressionen und Angstzuständen** senken und uns helfen, besser zu schlafen. Moderate Aktivität bedeutet, dass du schwerer atmest und dein Herz schneller schlägt, du dich aber immer noch unterhalten kannst. Zügiges Gehen, Tanzen und Gartenarbeit zählen alle dazu.",
+      "heading_es": "Beneficios que empiezan hoy",
+      "body_es": "Algunos beneficios de la actividad física para el cerebro aparecen [g:inmediatamente después] de una sesión de actividad moderada a vigorosa. En los niños de 6 a 13 años, mejoran las habilidades de pensamiento; en los adultos, los sentimientos a corto plazo de ansiedad disminuyen {cdc-pa}. Con el tiempo, la actividad regular ayuda a mantener agudos el pensamiento, el aprendizaje y el juicio a medida que envejecemos. También puede reducir el riesgo de **depresión y ansiedad** y ayudar a dormir mejor. La actividad moderada significa que respiras con más fuerza y tu corazón late más rápido, pero aún puedes hablar. Caminar a paso ligero, bailar y las labores de jardinería cuentan."
     },
     {
       "heading_en": "The 150-minute target",
       "heading_vi": "Mục tiêu 150 phút",
       "body_en": "US guidelines recommend that adults aim for at least [p:150 minutes a week] of moderate-intensity activity, plus muscle-strengthening activities on two days {piercy-2018}. That can sound like a lot, but it can be split however suits you: 30 minutes a day on five days, about 22 minutes every day, or shorter bouts. If you are inactive now, the advice is to work your way up gradually. Weight is shaped by both eating and moving, and people vary a lot in how much activity they need. To lose weight and keep it off, most people need to combine activity with healthier eating.",
-      "body_vi": "Hướng dẫn của Hoa Kỳ khuyến nghị người trưởng thành nên đạt ít nhất [p:150 phút mỗi tuần] vận động cường độ vừa, cộng thêm hai ngày tập tăng cường cơ bắp {piercy-2018}. Nghe có vẻ nhiều, nhưng bạn có thể chia theo cách phù hợp với mình: 30 phút mỗi ngày trong năm ngày, khoảng 22 phút mỗi ngày, hoặc nhiều đợt ngắn hơn. Nếu hiện bạn ít vận động, lời khuyên là hãy tăng dần. Cân nặng chịu ảnh hưởng của cả việc ăn lẫn vận động, và nhu cầu vận động của mỗi người rất khác nhau. Để giảm cân và giữ được cân nặng, phần lớn mọi người cần kết hợp vận động với ăn uống lành mạnh hơn."
+      "body_vi": "Hướng dẫn của Hoa Kỳ khuyến nghị người trưởng thành nên đạt ít nhất [p:150 phút mỗi tuần] vận động cường độ vừa, cộng thêm hai ngày tập tăng cường cơ bắp {piercy-2018}. Nghe có vẻ nhiều, nhưng bạn có thể chia theo cách phù hợp với mình: 30 phút mỗi ngày trong năm ngày, khoảng 22 phút mỗi ngày, hoặc nhiều đợt ngắn hơn. Nếu hiện bạn ít vận động, lời khuyên là hãy tăng dần. Cân nặng chịu ảnh hưởng của cả việc ăn lẫn vận động, và nhu cầu vận động của mỗi người rất khác nhau. Để giảm cân và giữ được cân nặng, phần lớn mọi người cần kết hợp vận động với ăn uống lành mạnh hơn.",
+      "heading_fr": "L'objectif de 150 minutes",
+      "body_fr": "Les recommandations américaines conseillent aux adultes de viser au moins [p:150 minutes par semaine] d'activité d'intensité modérée, ainsi que des activités de renforcement musculaire deux jours par semaine {piercy-2018}. Cela peut sembler beaucoup, mais l'effort se répartit selon vos préférences : 30 minutes par jour sur cinq jours, environ 22 minutes quotidiennes, ou des sessions plus courtes. Si vous êtes actuellement sédentaire, le conseil est d'augmenter progressivement la cadence. Le poids dépend à la fois de l'alimentation et du mouvement, et les besoins varient grandement d'une personne à l'autre. Pour perdre du poids et le stabiliser, la plupart des gens doivent associer l'activité à une meilleure alimentation.",
+      "heading_de": "Das 150-Minuten-Ziel",
+      "body_de": "US-Richtlinien empfehlen, dass Erwachsene mindestens [p:150 Minuten pro Woche] moderate Aktivität anstreben sollten, ergänzt durch muskelstärkende Aktivitäten an zwei Tagen {piercy-2018}. Das mag nach viel klingen, lässt sich aber beliebig aufteilen: 30 Minuten an fünf Tagen, etwa 22 Minuten jeden Tag oder kürzere Einheiten. Wenn du derzeit inaktiv bist, lautet der Rat, sich schrittweise zu steigern. Das Gewicht wird sowohl durch Ernährung als auch durch Bewegung beeinflusst, und der individuelle Bedarf an Aktivität variiert stark. Um Gewicht zu verlieren und zu halten, müssen die meisten Menschen Aktivität mit einer gesünderen Ernährung kombinieren.",
+      "heading_es": "La meta de los 150 minutos",
+      "body_es": "Las pautas de EE. UU. recomiendan que los adultos aspiren a un mínimo de [p:150 minutos a la semana] de actividad de intensidad moderada, además de actividades de fortalecimiento muscular dos días a la semana {piercy-2018}. Puede parecer mucho, pero se puede dividir según te convenga: 30 minutos al día durante cinco días, unos 22 minutos cada día o sesiones más cortas. Si ahora eres inactivo, el consejo es aumentar el ritmo de forma gradual. El peso está determinado tanto por la alimentación como por el movimiento, y las personas varían mucho en la cantidad de actividad que necesitan. Para perder peso y mantenerlo, la mayoría debe combinar la actividad con una alimentación más saludable."
     },
     {
       "heading_en": "Heart, blood sugar and blood pressure",
       "heading_vi": "Tim, đường huyết và huyết áp",
       "body_en": "**Heart disease and stroke** are two of the leading causes of death in the United States. Getting at least 150 minutes a week of moderate activity lowers the risk of both, and more activity lowers it further. Regular activity can also reduce blood pressure and improve cholesterol levels. It lowers the risk of **type 2 diabetes** and *metabolic syndrome*, a combination of problems such as too much fat around the waist, high blood pressure and high blood sugar. Here is the encouraging part: people start to benefit from [g:even less than 150 minutes] a week, as long as they keep a regular schedule.",
-      "body_vi": "**Bệnh tim và đột quỵ** là hai trong những nguyên nhân gây tử vong hàng đầu ở Hoa Kỳ. Vận động cường độ vừa ít nhất 150 phút mỗi tuần làm giảm nguy cơ của cả hai, và vận động nhiều hơn còn giảm thêm nữa. Vận động đều đặn cũng có thể hạ huyết áp và cải thiện chỉ số cholesterol. Nó giảm nguy cơ **tiểu đường type 2** và *hội chứng chuyển hoá*, một tổ hợp các vấn đề như mỡ bụng quá nhiều, huyết áp cao và đường huyết cao. Điều đáng khích lệ là: người ta bắt đầu hưởng lợi [g:ngay cả khi tập dưới 150 phút] mỗi tuần, miễn là duy trì lịch tập đều đặn."
+      "body_vi": "**Bệnh tim và đột quỵ** là hai trong những nguyên nhân gây tử vong hàng đầu ở Hoa Kỳ. Vận động cường độ vừa ít nhất 150 phút mỗi tuần làm giảm nguy cơ của cả hai, và vận động nhiều hơn còn giảm thêm nữa. Vận động đều đặn cũng có thể hạ huyết áp và cải thiện chỉ số cholesterol. Nó giảm nguy cơ **tiểu đường type 2** và *hội chứng chuyển hoá*, một tổ hợp các vấn đề như mỡ bụng quá nhiều, huyết áp cao và đường huyết cao. Điều đáng khích lệ là: người ta bắt đầu hưởng lợi [g:ngay cả khi tập dưới 150 phút] mỗi tuần, miễn là duy trì lịch tập đều đặn.",
+      "heading_fr": "Cœur, glycémie et tension artérielle",
+      "body_fr": "Les **maladies cardiaques et les accidents vasculaires cérébraux** comptent parmi les principales causes de décès aux États-Unis. Pratiquer au moins 150 minutes par semaine d'activité modérée réduit ces deux risques, et un volume accru les diminue encore davantage. Une activité régulière peut également faire baisser la tension artérielle et améliorer le taux de cholestérol. Elle réduit le risque de **diabète de type 2** et de *syndrome métabolique*, une association de troubles tels qu'un excès de graisse abdominale, une tension élevée et une glycémie anormale. Chose encourageante : on commence à en tirer profit [g:avec moins de 150 minutes] hebdomadaires, pourvu que la régularité soit maintenue.",
+      "heading_de": "Herz, Blutzucker und Blutdruck",
+      "body_de": "**Herzerkrankungen und Schlaganfälle** gehören in den Vereinigten Staaten zu den häufigsten Todesursachen. Mindestens 150 Minuten moderate Aktivität pro Woche senken das Risiko für beide, und noch mehr Aktivität verringert es weiter. Regelmäßige Bewegung kann zudem den Blutdruck senken und die Cholesterinwerte verbessern. Sie verringert das Risiko für **Typ-2-Diabetes** und das *metabolische Syndrom*, einer Kombination aus Beschwerden wie zu viel Bauchfett, hohem Blutdruck und erhöhtem Blutzucker. Das Ermutigende ist: Menschen profitieren bereits von [g:sogar weniger als 150 Minuten] pro Woche, solange sie einen regelmäßigen Zeitplan einhalten.",
+      "heading_es": "Corazón, azúcar en sangre y presión arterial",
+      "body_es": "Las **enfermedades cardíacas y los accidentes cerebrovasculares** son dos de las principales causas de muerte en los Estados Unidos. Obtener al menos 150 minutos a la semana de actividad moderada reduce el riesgo de ambas, y una mayor actividad lo reduce aún más. La actividad regular también puede disminuir la presión arterial y mejorar los niveles de colesterol. Reduce el riesgo de **diabetes tipo 2** y de *síndrome metabólico*, una combinación de problemas como exceso de grasa en la cintura, presión arterial alta y azúcar alta en sangre. Lo alentador es que las personas empiezan a beneficiarse con [g:incluso menos de 150 minutos] semanales, siempre que mantengan un horario regular."
     },
     {
       "heading_en": "Protection against illness",
       "heading_vi": "Bảo vệ trước bệnh tật",
       "body_en": "Physical activity may also reduce the risk of serious outcomes from infections such as **COVID-19, flu and pneumonia**. In a CDC review, activity was linked to fewer COVID-19 hospitalisations and deaths, while inactivity raised the risk. In one study, adults who met both the aerobic and muscle-strengthening guidelines were [y:about half as likely] to die from flu and pneumonia as adults who met neither. Being active also lowers the risk of at least **eight types of cancer**, and for cancer survivors, regular activity improves fitness and quality of life.",
-      "body_vi": "Vận động cũng có thể giảm nguy cơ diễn tiến nặng khi mắc các bệnh nhiễm trùng như **COVID-19, cúm và viêm phổi**. Trong một đánh giá của CDC, vận động gắn với ít ca nhập viện và tử vong do COVID-19 hơn, còn lối sống ít vận động làm tăng nguy cơ. Trong một nghiên cứu, người trưởng thành đáp ứng cả hướng dẫn về vận động hiếu khí lẫn tập cơ bắp có khả năng tử vong vì cúm và viêm phổi [y:chỉ bằng khoảng một nửa] so với người không đáp ứng hướng dẫn nào. Năng động còn giảm nguy cơ mắc ít nhất **tám loại ung thư**, và với người từng mắc ung thư, vận động đều đặn giúp cải thiện thể lực và chất lượng sống."
+      "body_vi": "Vận động cũng có thể giảm nguy cơ diễn tiến nặng khi mắc các bệnh nhiễm trùng như **COVID-19, cúm và viêm phổi**. Trong một đánh giá của CDC, vận động gắn với ít ca nhập viện và tử vong do COVID-19 hơn, còn lối sống ít vận động làm tăng nguy cơ. Trong một nghiên cứu, người trưởng thành đáp ứng cả hướng dẫn về vận động hiếu khí lẫn tập cơ bắp có khả năng tử vong vì cúm và viêm phổi [y:chỉ bằng khoảng một nửa] so với người không đáp ứng hướng dẫn nào. Năng động còn giảm nguy cơ mắc ít nhất **tám loại ung thư**, và với người từng mắc ung thư, vận động đều đặn giúp cải thiện thể lực và chất lượng sống.",
+      "heading_fr": "Protection contre la maladie",
+      "body_fr": "L'activité physique peut aussi atténuer la gravité des complications liées à des infections telles que **la COVID-19, la grippe et la pneumonie**. D'après une étude du CDC, l'exercice a été associé à une baisse des hospitalisations et des décès dus à la COVID-19, tandis que la sédentarité accroissait le risque. Selon une recherche, les adultes respectant les consignes d'endurance et de renforcement musculaire présentaient [y:deux fois moins de risques] de succomber à la grippe ou à une pneumonie que ceux ne respectant aucune des deux. Bouger réduit également le risque d'au moins **huit types de cancer**, et améliore la condition physique ainsi que la qualité de vie des personnes en rémission.",
+      "heading_de": "Schutz vor Krankheiten",
+      "body_de": "Körperliche Aktivität kann zudem das Risiko schwerer Verläufe bei Infektionen wie **COVID-19, Grippe und Lungenentzündung** verringern. In einer CDC-Untersuchung wurde Bewegung mit weniger Krankenhausaufenthalten und Todesfällen durch COVID-19 in Verbindung gebracht, während Inaktivität das Risiko erhöhte. In einer Studie hatten Erwachsene, die sowohl die Richtlinien für Ausdauer als auch für Krafttraining erfüllten, eine [y:etwa halb so hohe Wahrscheinlichkeit], an Grippe und Lungenentzündung zu sterben, wie Erwachsene, die keine davon erfüllten. Aktivsein senkt außerdem das Risiko für mindestens **acht Krebsarten**, und für Krebspatienten nach der Behandlung verbessert regelmäßige Bewegung die Fitness und Lebensqualität.",
+      "heading_es": "Protección contra enfermedades",
+      "body_es": "La actividad física también puede reducir el riesgo de resultados graves por infecciones como **COVID-19, gripe y neumonía**. En una revisión de los CDC, la actividad se relacionó con menos hospitalizaciones y muertes por COVID-19, mientras que la inactividad aumentó el riesgo. En un estudio, los adultos que cumplieron con las pautas aeróbicas y de fortalecimiento muscular tuvieron [y:aproximadamente la mitad de probabilidades] de morir por gripe y neumonía que los adultos que no cumplieron ninguna. Estar activo también disminuye el riesgo de al menos **ocho tipos de cáncer**, y para quienes han superado la enfermedad, la actividad regular mejora su condición física y su calidad de vida."
     },
     {
       "heading_en": "Strong bones, steady steps",
       "heading_vi": "Xương chắc, bước vững",
       "body_en": "As we age, protecting our bones, joints and muscles helps us keep doing everyday things like climbing stairs, shopping and cleaning. Being unable to do them is called a **functional limitation**, and active middle-aged and older adults are less likely to develop one. Lifting weights is a good example of muscle-strengthening activity, which matters because muscle mass and strength fall with age; slowly adding weight and repetitions brings more benefits [g:at any age]. For older adults, mixing aerobic, strength and **balance** activities lowers the risk of falls, and active people have a lower risk of breaking a hip.",
-      "body_vi": "Khi có tuổi, bảo vệ xương, khớp và cơ bắp giúp ta tiếp tục làm những việc hằng ngày như leo cầu thang, đi chợ và dọn dẹp. Việc không thể tự làm những điều đó gọi là **hạn chế chức năng**, và người trung niên, cao tuổi năng động ít gặp tình trạng này hơn. Nâng tạ là ví dụ điển hình của bài tập tăng cường cơ bắp, điều quan trọng vì khối lượng và sức mạnh cơ giảm dần theo tuổi; tăng dần mức tạ và số lần lặp lại sẽ mang lại nhiều lợi ích hơn [g:ở mọi lứa tuổi]. Với người cao tuổi, kết hợp các bài tập hiếu khí, sức mạnh và **thăng bằng** giúp giảm nguy cơ té ngã, và người năng động ít bị gãy xương hông hơn."
+      "body_vi": "Khi có tuổi, bảo vệ xương, khớp và cơ bắp giúp ta tiếp tục làm những việc hằng ngày như leo cầu thang, đi chợ và dọn dẹp. Việc không thể tự làm những điều đó gọi là **hạn chế chức năng**, và người trung niên, cao tuổi năng động ít gặp tình trạng này hơn. Nâng tạ là ví dụ điển hình của bài tập tăng cường cơ bắp, điều quan trọng vì khối lượng và sức mạnh cơ giảm dần theo tuổi; tăng dần mức tạ và số lần lặp lại sẽ mang lại nhiều lợi ích hơn [g:ở mọi lứa tuổi]. Với người cao tuổi, kết hợp các bài tập hiếu khí, sức mạnh và **thăng bằng** giúp giảm nguy cơ té ngã, và người năng động ít bị gãy xương hông hơn.",
+      "heading_fr": "Os solides et pas assurés",
+      "body_fr": "En vieillissant, la protection de nos os, articulations et muscles nous aide à accomplir les gestes du quotidien comme monter les escaliers, faire les courses et le ménage. L'incapacité à réaliser ces tâches constitue une **limitation fonctionnelle**, à laquelle les adultes d'âge mûr et les seniors actifs échappent plus facilement. Le soulèvement de charges illustre bien le renforcement musculaire, crucial puisque la masse et la force musculaires diminuent avec l'âge ; ajouter lentement du poids et des répétitions apporte davantage de bienfaits [g:à tout âge]. Pour les personnes âgées, associer des exercices d'aérobie, de force et **d'équilibre** réduit le risque de chute, tout en diminuant la probabilité de fracture de la hanche.",
+      "heading_de": "Starke Knochen, sicherer Tritt",
+      "body_de": "Mit zunehmendem Alter hilft der Schutz unserer Knochen, Gelenke und Muskeln dabei, alltägliche Dinge wie Treppensteigen, Einkaufen und Putzen beizubehalten. Die Unfähigkeit dazu wird als **funktionelle Einschränkung** bezeichnet, und aktive Menschen mittleren und höheren Alters entwickeln seltener eine solche. Das Heben von Gewichten ist ein gutes Beispiel für muskelstärkende Aktivitäten, was wichtig ist, da Muskelmasse und -kraft mit dem Alter abnehmen; das langsame Hinzufügen von Gewicht und Wiederholungen bringt [g:in jedem Alter] mehr Vorteile. Für ältere Menschen verringert die Kombination aus Ausdauer-, Kraft- und **Gleichgewichtsübungen** das Sturzrisiko, und aktive Menschen haben ein geringeres Risiko für einen Hüftbruch.",
+      "heading_es": "Huesos fuertes y pasos firmes",
+      "body_es": "A medida que envejecemos, proteger nuestros huesos, articulaciones y músculos nos ayuda a seguir realizando tareas cotidianas como subir escaleras, hacer compras y limpiar. No poder hacerlas se denomina **limitación funcional**, y los adultos de mediana edad y mayores que son activos tienen menos probabilidad de desarrollarla. Levantar pesas es un buen ejemplo de actividad de fortalecimiento muscular, algo importante porque la masa y la fuerza muscular disminuyen con la edad; añadir peso y repeticiones lentamente aporta más beneficios [g:a cualquier edad]. Para los adultos mayores, combinar actividades aeróbicas, de fuerza y de **equilibrio** reduce el riesgo de caídas, y las personas activas tienen menor riesgo de fracturarse la cadera."
     },
     {
       "heading_en": "More steps, longer life",
       "heading_vi": "Nhiều bước chân hơn, sống lâu hơn",
       "body_en": "Researchers estimate that about [p:110,000 deaths a year] could be prevented if US adults aged 40 and over increased their moderate-to-vigorous activity, and even [g:10 extra minutes a day] would make a difference {saint-maurice-2022}. Steps count too. A large analysis of 15 studies found that more daily steps meant a lower risk of early death, up to a point {paluch-2022}. For adults under 60, the benefit levelled off at about 8,000 to 10,000 steps a day; for adults 60 and older, at about 6,000 to 8,000. You do not need endless steps, but most of us could use more than we take.",
-      "body_vi": "Các nhà nghiên cứu ước tính khoảng [p:110.000 ca tử vong mỗi năm] có thể được ngăn ngừa nếu người Mỹ từ 40 tuổi trở lên tăng mức vận động vừa đến mạnh, và ngay cả [g:thêm 10 phút mỗi ngày] cũng tạo ra khác biệt {saint-maurice-2022}. Số bước chân cũng quan trọng. Một phân tích lớn gộp 15 nghiên cứu cho thấy đi bộ nhiều bước hơn mỗi ngày đi kèm nguy cơ tử vong sớm thấp hơn, đến một ngưỡng nhất định {paluch-2022}. Với người dưới 60 tuổi, lợi ích chững lại ở khoảng 8.000 đến 10.000 bước mỗi ngày; với người từ 60 tuổi trở lên, ở khoảng 6.000 đến 8.000 bước. Bạn không cần đi bộ vô tận, nhưng phần lớn chúng ta có thể đi nhiều hơn hiện tại."
+      "body_vi": "Các nhà nghiên cứu ước tính khoảng [p:110.000 ca tử vong mỗi năm] có thể được ngăn ngừa nếu người Mỹ từ 40 tuổi trở lên tăng mức vận động vừa đến mạnh, và ngay cả [g:thêm 10 phút mỗi ngày] cũng tạo ra khác biệt {saint-maurice-2022}. Số bước chân cũng quan trọng. Một phân tích lớn gộp 15 nghiên cứu cho thấy đi bộ nhiều bước hơn mỗi ngày đi kèm nguy cơ tử vong sớm thấp hơn, đến một ngưỡng nhất định {paluch-2022}. Với người dưới 60 tuổi, lợi ích chững lại ở khoảng 8.000 đến 10.000 bước mỗi ngày; với người từ 60 tuổi trở lên, ở khoảng 6.000 đến 8.000 bước. Bạn không cần đi bộ vô tận, nhưng phần lớn chúng ta có thể đi nhiều hơn hiện tại.",
+      "heading_fr": "Plus de pas, une vie plus longue",
+      "body_fr": "Les chercheurs estiment qu'environ [p:110 000 décès par an] pourraient être évités si les Américains de 40 ans et plus intensifiaient leur activité modérée à vigoureuse, et même [g:10 minutes supplémentaires par jour] changeraient la donne {saint-maurice-2022}. Le nombre de pas compte également. Une vaste méta-analyse portant sur 15 études a révélé qu'un plus grand nombre de pas quotidiens réduisait le risque de mortalité précoce, jusqu'à un certain seuil {paluch-2022}. Chez les moins de 60 ans, ce bienfait se stabilise entre 8 000 et 10 000 pas par jour ; chez les 60 ans et plus, entre 6 000 et 8 000. Point n'est besoin de marcher sans fin, mais la plupart d'entre nous gagneraient à augmenter leur volume actuel.",
+      "heading_de": "Mehr Schritte, längeres Leben",
+      "body_de": "Forschende schätzen, dass etwa [p:110.000 Todesfälle pro Jahr] verhindert werden könnten, wenn US-Erwachsene ab 40 Jahren ihre moderate bis intensive Aktivität steigern würden, und selbst [g:10 zusätzliche Minuten pro Tag] würden einen Unterschied machen {saint-maurice-2022}. Auch Schritte zählen. Eine große Analyse von 15 Studien ergab, dass mehr tägliche Schritte bis zu einem gewissen Punkt ein geringeres Risiko für einen frühen Tod bedeuteten {paluch-2022}. Bei Erwachsenen unter 60 Jahren pendelte sich der Nutzen bei etwa 8.000 bis 10.000 Schritten pro Tag ein; bei Erwachsenen ab 60 Jahren bei etwa 6.000 bis 8.000. Du brauchst keine endlosen Schritte, aber die meisten von uns könnten mehr gebrauchen, als wir machen.",
+      "heading_es": "Más pasos, vida más larga",
+      "body_es": "Los investigadores calculan que se podrían prevenir unos [p:110,000 muertes al año] si los adultos estadounidenses de 40 años o más aumentaran su actividad de moderada a vigorosa, y hasta [g:10 minutos adicionales al día] marcarían una diferencia {saint-maurice-2022}. Los pasos también cuentan. Un gran análisis de 15 estudios descubrió que más pasos diarios implicaban un menor riesgo de muerte prematura, hasta cierto punto {paluch-2022}. Para los adultos menores de 60 años, el beneficio se estabilizaba entre 8,000 y 10,000 pasos diarios; para los de 60 o más, entre 6,000 y 8,000. No hacen falta pasos infinitos, pero la mayoría de nosotros podríamos aprovechar dar más de los que damos."
     },
     {
       "heading_en": "Safe, and never too late",
       "heading_vi": "An toàn, và không bao giờ là quá muộn",
       "body_en": "Many people worry about getting hurt. The good news is that moderate activity, such as **brisk walking**, is generally safe for most people. The key is to start where you are and build up slowly, rather than doing too much too soon. People with chronic conditions can usually still be active, and should talk with a health professional about what suits them. The message from the evidence is simple and hopeful: [g:some activity is better than none], more is better than some, and it is never too late to start feeling the benefits.",
-      "body_vi": "Nhiều người lo bị chấn thương. Tin tốt là vận động cường độ vừa, như **đi bộ nhanh**, nhìn chung an toàn với phần lớn mọi người. Điều quan trọng là bắt đầu từ thể trạng hiện tại và tăng dần, thay vì làm quá nhiều quá sớm. Người có bệnh mạn tính thường vẫn có thể vận động, và nên trao đổi với nhân viên y tế về hình thức phù hợp. Thông điệp từ các bằng chứng vừa đơn giản vừa đầy hy vọng: [g:vận động một chút còn hơn không], nhiều hơn thì càng tốt, và không bao giờ là quá muộn để bắt đầu cảm nhận lợi ích."
+      "body_vi": "Nhiều người lo bị chấn thương. Tin tốt là vận động cường độ vừa, như **đi bộ nhanh**, nhìn chung an toàn với phần lớn mọi người. Điều quan trọng là bắt đầu từ thể trạng hiện tại và tăng dần, thay vì làm quá nhiều quá sớm. Người có bệnh mạn tính thường vẫn có thể vận động, và nên trao đổi với nhân viên y tế về hình thức phù hợp. Thông điệp từ các bằng chứng vừa đơn giản vừa đầy hy vọng: [g:vận động một chút còn hơn không], nhiều hơn thì càng tốt, và không bao giờ là quá muộn để bắt đầu cảm nhận lợi ích.",
+      "heading_fr": "Sans danger et jamais trop tard",
+      "body_fr": "Beaucoup redoutent de se blesser. Heureusement, une activité modérée telle que **la marche rapide** reste généralement sans danger pour la majorité des gens. L'essentiel est de commencer là où l'on est et d'évoluer progressivement, plutôt que de brûler les étapes. Les personnes souffrant de maladies chroniques peuvent généralement rester actives et devraient consulter un professionnel de santé pour identifier ce qui leur convient. Le message des données scientifiques se veut simple et porteur d'espoir : [g:un peu d'activité vaut mieux que rien], plus c'est mieux qu'un peu, et il n'est jamais trop tard pour en ressentir les fruits.",
+      "heading_de": "Sicher und niemals zu spät",
+      "body_de": "Viele Menschen machen sich Sorgen, sich zu verletzen. Die gute Nachricht ist, dass moderate Aktivität, wie **zügiges Gehen**, für die meisten Menschen im Allgemeinen sicher ist. Der Schlüssel liegt darin, dort zu beginnen, wo du stehst, und sich langsam zu steigern, statt zu viel auf einmal zu wollen. Menschen mit chronischen Erkrankungen können meist dennoch aktiv sein und sollten mit medizinischem Fachpersonal darüber sprechen, was zu ihnen passt. Die Botschaft der Belege ist einfach und hoffnungsvoll: [g:Etwas Aktivität ist besser als keine], mehr ist besser als etwas, und es ist nie zu spät, die Vorteile zu spüren.",
+      "heading_es": "Seguro y nunca es tarde",
+      "body_es": "Muchas personas se preocupan por lastimarse. La buena noticia es que la actividad moderada, como **caminar a paso ligero**, es generalmente segura para la mayoría. La clave es empezar desde donde estás y avanzar con lentitud, en lugar de hacer demasiado en poco tiempo. Las personas con afecciones crónicas por lo general pueden mantenerse activas y deben consultar a un profesional de la salud sobre lo que les conviene. El mensaje de la evidencia es simple y esperanzador: [g:cierta actividad es mejor que ninguna], más es mejor que cierta cantidad, y nunca es tarde para empezar a sentir los beneficios."
     }
   ],
   "keyPoint": {
     "en": "Exercise works less like [p:a single big medicine] and more like a daily vitamin: small, regular doses add up across your heart, brain, bones and mood. Do not wait for the perfect plan. Find *ten more minutes of movement today*, then make it a habit.",
-    "vi": "Vận động không giống [p:một liều thuốc lớn duy nhất] mà giống viên vitamin hằng ngày hơn: những liều nhỏ, đều đặn cộng dồn lại cho tim, não, xương và tâm trạng. Đừng chờ một kế hoạch hoàn hảo. Hãy tìm *thêm mười phút vận động ngay hôm nay*, rồi biến nó thành thói quen."
+    "vi": "Vận động không giống [p:một liều thuốc lớn duy nhất] mà giống viên vitamin hằng ngày hơn: những liều nhỏ, đều đặn cộng dồn lại cho tim, não, xương và tâm trạng. Đừng chờ một kế hoạch hoàn hảo. Hãy tìm *thêm mười phút vận động ngay hôm nay*, rồi biến nó thành thói quen.",
+    "fr": "L'exercice agit moins comme [p:un médicament unique et puissant] que comme une vitamine quotidienne : de petites doses régulières agissent en synergie sur le cœur, le cerveau, les os et l'humeur. N'attendez pas le plan parfait. Trouvez *dix minutes de mouvement de plus aujourd'hui*, puis ancrez cette habitude.",
+    "de": "Bewegung wirkt weniger wie [p:eine einzelne große Medizin] und eher wie ein tägliches Vitamin: kleine, regelmäßige Dosen summieren sich positiv für Herz, Gehirn, Knochen und Stimmung. Warte nicht auf den perfekten Plan. Finde *heute zehn Minuten mehr Bewegung* und mach es zu einer Gewohnheit.",
+    "es": "El ejercicio funciona menos como [p:un gran medicamento único] y más como una vitamina diaria: las dosis pequeñas y regulares se acumulan en tu corazón, cerebro, huesos y estado de ánimo. No esperes el plan perfecto. Encuentra *diez minutos más de movimiento hoy* y conviértelo en un hábito."
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Thêm một lần đi bộ nhanh 10 phút vào ngày của bạn, chẳng hạn sau bữa trưa.",
       "Theo dõi số bước chân trên điện thoại trong một tuần để biết mức trung bình mỗi ngày của bạn.",
       "Tập hai buổi tăng cường cơ bắp ngắn trong tuần này, như squat và hít đất tại nhà."
+    ],
+    "fr": [
+      "Ajoutez une marche rapide de 10 minutes à votre journée, par exemple après le déjeuner.",
+      "Consultez le nombre de pas de votre téléphone pendant une semaine pour connaître votre moyenne quotidienne habituelle.",
+      "Réalisez deux courtes séances de renforcement musculaire cette semaine, telles que des squats et des pompes à la maison."
+    ],
+    "de": [
+      "Füge deinem Tag einen 10-minütigen zügigen Spaziergang hinzu, zum Beispiel nach dem Mittagessen.",
+      "Überprüfe eine Woche lang die Schrittzahl auf deinem Smartphone, um deinen normalen täglichen Durchschnitt zu finden.",
+      "Mache diese Woche zwei kurze muskelstärkende Einheiten wie Kniebeugen und Liegestütze zu Hause."
+    ],
+    "es": [
+      "Añade una caminata rápida de 10 minutos a tu día, por ejemplo, después del almuerzo.",
+      "Consulta el conteo de pasos de tu teléfono durante una semana para hallar tu promedio diario normal.",
+      "Realiza dos breves sesiones de fortalecimiento muscular esta semana, como sentadillas y flexiones en casa."
     ]
   },
   "references": [
@@ -132,5 +198,69 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoQABwAPu1orU6ppiSiMAgBMB2JaQABJNr2B8W7GpqrN52hAAD89yeBQ+5/vJCykiLeYELZ9Fnx6NVK01W+Oh+5sWC5sFuOEqMLFNFwqhnt74ps4Qm1k44Bphv1K9tXQoGo47ue0F7h+p57xJDGlee/Q7ejwiFr4NkAAA==",
-  "dominant": "#414141"
+  "dominant": "#414141",
+  "glossary": {
+    "en": {
+      "metabolic syndrome": "A combination of health issues including excess waist fat, high blood pressure and high blood sugar.",
+      "functional limitation": "An inability to perform everyday physical tasks such as climbing stairs or cleaning.",
+      "balance": "The ability to maintain an upright posture and steady control of your body.",
+      "brisk walking": "Walking at a fast, energetic pace that increases your heart rate.",
+      "aerobic": "Physical exercise that increases heart and breathing rates.",
+      "muscle mass": "The total amount of muscle tissue in the human body.",
+      "pneumonia": "An infection that inflames the air sacs in one or both lungs.",
+      "cholesterol": "A waxy substance found in your blood that can affect heart health."
+    },
+    "vi": {
+      "hội chứng chuyển hoá": "Tập hợp các yếu tố nguy cơ như béo bụng, huyết áp cao và đường huyết cao làm tăng nguy cơ bệnh tim.",
+      "tiểu đường type 2": "Bệnh mạn tính đặc trưng bởi tình trạng kháng insulin, khiến cơ thể không sử dụng đường hiệu quả.",
+      "hạn chế chức năng": "Sự suy giảm khả năng thực hiện các sinh hoạt và vận động cơ bản hằng ngày.",
+      "thăng bằng": "Khả năng duy trì tư thế và kiểm soát trọng tâm cơ thể để tránh té ngã.",
+      "đi bộ nhanh": "Hình thức đi bộ với tốc độ cao hơn bình thường, giúp nâng nhịp tim và xếp vào nhóm vận động vừa.",
+      "covid-19": "Bệnh truyền nhiễm do virus SARS-CoV-2 gây ra, ảnh hưởng chủ yếu đến hệ hô hấp.",
+      "trầm cảm và lo âu": "Các rối loạn tâm lý phổ biến gây buồn chán kéo dài hoặc căng thẳng, lo lắng quá mức.",
+      "bệnh tim và đột quỵ": "Các biến cố tim mạch nguy hiểm liên quan đến tắc nghẽn mạch máu hoặc suy giảm chức năng tim."
+    },
+    "fr": {
+      "dépression et d'anxiété": "Troubles de la santé mentale affectant l'humeur et le bien-être émotionnel.",
+      "maladies cardiaques et les accidents vasculaires cérébraux": "Affections graves touchant le cœur et la circulation sanguine dans le cerveau.",
+      "diabète de type 2": "Maladie chronique caractérisée par un excès de sucre dans le sang.",
+      "syndrome métabolique": "Ensemble de troubles augmentant le risque de maladies cardiovasculaires et de diabète.",
+      "la covid-19, la grippe et la pneumonie": "Infections respiratoires virales ou bactériennes touchant les poumons.",
+      "huit types de cancer": "Diverses formes de tumeurs malignes pouvant toucher différents organes.",
+      "limitation fonctionnelle": "Difficulté ou incapacité à accomplir les gestes essentiels du quotidien.",
+      "d'équilibre": "Capacité du corps à maintenir sa stabilité et à éviter les chutes.",
+      "la marche rapide": "Activité physique d'intensité modérée consistant à marcher à allure soutenue."
+    },
+    "de": {
+      "metabolische syndrom": "Eine Kombination aus gesundheitlichen Problemen wie Bauchfett, Bluthochdruck und erhöhtem Blutzucker.",
+      "typ-2-diabetes": "Eine chronische Stoffwechselkrankheit, bei der der Blutzuckerspiegel dauerhaft erhöht ist.",
+      "funktionelle einschränkung": "Die Unfähigkeit, alltägliche körperliche Aufgaben wie Treppensteigen oder Einkaufen selbstständig auszuführen.",
+      "gleichgewichtsübungen": "Trainingseinheiten, die dazu dienen, die Stabilität des Körpers zu verbessern und Stürze zu verhindern.",
+      "zügiges gehen": "Eine Form moderater körperlicher Aktivität mit schnellerem Schrittempo, die den Puls erhöht.",
+      "cdc": "Die US-amerikanischen Zentren für Seuchenkontrolle und Prävention.",
+      "krebspatienten": "Menschen, die an Krebs erkrankt sind oder die Krankheit überstanden haben.",
+      "muskelmasse": "Der relative Anteil des Muskelgewebes am Gesamtkörpergewicht."
+    },
+    "es": {
+      "síndrome metabólico": "Combinación de problemas médicos como exceso de grasa abdominal y presión alta.",
+      "diabetes tipo 2": "Enfermedad crónica caracterizada por niveles elevados de azúcar en la sangre.",
+      "limitación funcional": "Dificultad para realizar tareas cotidianas esenciales debido a la pérdida física.",
+      "equilibrio": "Habilidad para mantener la estabilidad corporal y evitar caídas.",
+      "caminar a paso ligero": "Marcha a velocidad moderada que eleva el ritmo cardíaco sin impedir hablar.",
+      "covid-19": "Infección respiratoria viral grave causada por el coronavirus SARS-CoV-2.",
+      "neumonía": "Infección que inflama los sacos de aire de uno o ambos pulmones.",
+      "depresión y ansiedad": "Trastornos comunes de salud mental que afectan el estado de ánimo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }

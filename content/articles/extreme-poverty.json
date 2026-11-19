@@ -12,59 +12,110 @@
   ],
   "title": {
     "en": "Extreme poverty: how far have we come, how far to go?",
-    "vi": "Nghèo cùng cực: ta đã đi bao xa, còn bao xa nữa?"
+    "vi": "Nghèo cùng cực: ta đã đi bao xa, còn bao xa nữa?",
+    "fr": "Pauvreté extrême : où en sommes-nous, quel chemin reste-t-il à parcourir ?",
+    "de": "Extreme Armut: Wie weit sind wir gekommen, wie weit ist der Weg?",
+    "es": "Pobreza extrema: ¿hasta dónde hemos llegado y cuánto falta por recorrer?"
   },
   "hook": {
     "en": "Two centuries ago, most people on Earth were extremely poor, and almost everyone believed that this was simply the human condition. That belief turned out to be wrong. Economic growth is possible and poverty can fall. Yet, after two hundred years of progress, extreme poverty is still the daily reality for roughly one person in ten.",
-    "vi": "Hai thế kỷ trước, phần lớn người trên Trái Đất nghèo cùng cực, và hầu như ai cũng tin đó là thân phận tất yếu của con người. Niềm tin ấy hoá ra sai. Tăng trưởng kinh tế là điều có thể, và nghèo đói có thể giảm. Vậy mà sau hai trăm năm tiến bộ, nghèo cùng cực vẫn là thực tế hằng ngày của khoảng một trong mười người."
+    "vi": "Hai thế kỷ trước, phần lớn người trên Trái Đất nghèo cùng cực, và hầu như ai cũng tin đó là thân phận tất yếu của con người. Niềm tin ấy hoá ra sai. Tăng trưởng kinh tế là điều có thể, và nghèo đói có thể giảm. Vậy mà sau hai trăm năm tiến bộ, nghèo cùng cực vẫn là thực tế hằng ngày của khoảng một trong mười người.",
+    "fr": "Il y a deux siècles, la plupart des habitants de la Terre étaient extrêmement pauvres, et presque tout le monde croyait que c'était simplement la condition humaine. Cette croyance s'est révélée fausse. La croissance économique est possible et la pauvreté peut reculer. Pourtant, après deux cents ans de progrès, l'extrême pauvreté reste la réalité quotidienne d'environ une personne sur dix.",
+    "de": "Vor zwei Jahrhunderten war die Mehrheit der Menschen auf der Erde extrem arm, und fast jeder glaubte, dies sei einfach der Zustand des Menschen. Dieser Glaube erwies sich als falsch. Wirtschaftswachstum ist möglich und Armut kann sinken. Doch nach zweihundert Jahren des Fortschritts ist extreme Armut immer noch die tägliche Realität für etwa jeden zehnten Menschen.",
+    "es": "Hace dos siglos, la mayoría de las personas en la Tierra eran extremadamente pobres y casi todos creían que esta era simplemente la condición humana. Esa creencia resultó ser errónea. El crecimiento económico es posible y la pobreza puede disminuir. Sin embargo, tras dos años de progreso, la pobreza extrema sigue siendo la realidad diaria para aproximadamente una de cada diez personas."
   },
   "sections": [
     {
       "heading_en": "Poverty exists in every country",
       "heading_vi": "Nước nào cũng có người nghèo",
       "body_en": "Every country has people who struggle to afford heating, transport or healthy food. In high-income countries, the poverty line is about [p:$30 a day], and even there between a tenth and a fifth of people fall below it {roser-2023}. Measured by that same yardstick, [p:84% of the world's population], about 6.7 billion people, live on less than $30 a day. To compare fairly, statisticians count the value of food people grow themselves and adjust for price differences, using *international dollars* that buy the same goods everywhere. None of these adjustments is perfect, but in a world of large price differences it matters to account for them as well as possible.",
-      "body_vi": "Quốc gia nào cũng có những người khó khăn để chi trả tiền sưởi, đi lại hay thức ăn lành mạnh. Ở các nước thu nhập cao, chuẩn nghèo vào khoảng [p:30 đô la mỗi ngày], và ngay cả ở đó, từ một phần mười đến một phần năm dân số sống dưới mức này {roser-2023}. Đo bằng cùng thước đo ấy, [p:84% dân số thế giới], khoảng 6,7 tỷ người, sống với dưới 30 đô la mỗi ngày. Để so sánh công bằng, các nhà thống kê tính cả giá trị lương thực người dân tự trồng và điều chỉnh theo chênh lệch giá cả, bằng *đô la quốc tế* (*international dollars*) có sức mua như nhau ở mọi nơi. Không phép điều chỉnh nào hoàn hảo, nhưng trong một thế giới chênh lệch giá cả lớn, việc tính đến chúng tốt nhất có thể là rất quan trọng."
+      "body_vi": "Quốc gia nào cũng có những người khó khăn để chi trả tiền sưởi, đi lại hay thức ăn lành mạnh. Ở các nước thu nhập cao, chuẩn nghèo vào khoảng [p:30 đô la mỗi ngày], và ngay cả ở đó, từ một phần mười đến một phần năm dân số sống dưới mức này {roser-2023}. Đo bằng cùng thước đo ấy, [p:84% dân số thế giới], khoảng 6,7 tỷ người, sống với dưới 30 đô la mỗi ngày. Để so sánh công bằng, các nhà thống kê tính cả giá trị lương thực người dân tự trồng và điều chỉnh theo chênh lệch giá cả, bằng *đô la quốc tế* (*international dollars*) có sức mua như nhau ở mọi nơi. Không phép điều chỉnh nào hoàn hảo, nhưng trong một thế giới chênh lệch giá cả lớn, việc tính đến chúng tốt nhất có thể là rất quan trọng.",
+      "heading_fr": "La pauvreté existe dans tous les pays",
+      "body_fr": "Chaque pays compte des personnes qui ont du mal à payer leur chauffage, leurs transports ou une alimentation saine. Dans les pays à revenu élevé, le seuil de pauvreté est d'environ [p:30 dollars par jour], et même là, entre un dixième et un cinquantaine de personnes se situent en dessous {roser-2023}. Mesurée avec ce même étalon, [p:84 % de la population mondiale], soit environ 6,7 milliards de personnes, vit avec moins de 30 dollars par jour. Pour comparer équitablement, les statisticiens comptabilisent la valeur de la nourriture que les gens cultivent eux-mêmes et ajustent les différences de prix en utilisant des *dollars internationaux* qui achètent les mêmes biens partout. Aucun de ces ajustements n'est parfait, mais dans un monde de grandes différences de prix, il est important d'en tenir compte aussi bien que possible.",
+      "heading_de": "Armut existiert in jedem Land",
+      "body_de": "In jedem Land gibt es Menschen, die Schwierigkeiten haben, sich Heizung, Transport oder gesunde Ernährung leisten zu können. In Ländern mit hohem Einkommen liegt die Armutsgrenze bei etwa [p:$30 am Tag], und selbst dort fallen zwischen ein Zehntel und ein Fünftel der Menschen darunter {roser-2023}. Gemessen an demselben Maßstab leben [p:84% der Weltbevölkerung], etwa 6,7 Milliarden Menschen, von weniger als $30 am Tag. Zum fairen Vergleich berechnen Statisten den Wert von Lebensmitteln, die die Menschen selbst anbauen, und gleichen Preisunterschiede aus, indem sie *internationale Dollar* verwenden, die überall dieselbe Menge an Gütern kaufen. Keine dieser Anpassungen ist perfekt, aber in einer Welt mit großen Preisunterschieden ist es wichtig, sie so gut wie möglich zu berücksichtigen.",
+      "heading_es": "La pobreza existe en todos los países",
+      "body_es": "Todos los países tienen personas que luchan por pagar la calefacción, el transporte o una alimentación saludable. En los países de ingresos altos, la línea de pobreza es de aproximadamente [p:$30 al día], e incluso allí entre una décima y una quinta parte de las personas se ubican por debajo de ella {roser-2023}. Medido con ese mismo parámetro, [p:el 84% de la población mundial], unos 6.700 millones de personas, viven con menos de $30 al día. Para comparar de manera justa, los estadísticos calculan el valor de los alimentos que las personas cultivan por sí mismas y ajustan las diferencias de precios utilizando *dólares internacionales* que compran los mismos bienes en todas partes. Ninguno de estos ajustes es perfecto, pero en un mundo con grandes diferencias de precios es importante tenerlos en cuenta de la mejor manera posible."
     },
     {
       "heading_en": "Why a very low line is needed",
       "heading_vi": "Vì sao cần một chuẩn nghèo rất thấp",
       "body_en": "The United Nations defines **extreme poverty** as living on less than [p:$3 a day] {world-bank-pip}. Why use a line so low? If we only used the $30 line of rich countries, someone living on almost $30 a day and someone living on thirty times less would both simply be 'poor'. The extremely low line reveals the depth of deprivation that a single higher line would hide. By this measure, close to [p:one in ten people] worldwide is extremely poor, and the line has succeeded in focusing attention on the very poorest.",
-      "body_vi": "Liên Hợp Quốc định nghĩa **nghèo cùng cực** (*extreme poverty*) là sống với dưới [p:3 đô la mỗi ngày] {world-bank-pip}. Vì sao phải dùng một ngưỡng thấp như vậy? Nếu chỉ dùng mức 30 đô la của các nước giàu, người sống với gần 30 đô la mỗi ngày và người sống với ít hơn ba mươi lần đều chỉ được gọi chung là 'nghèo'. Ngưỡng cực thấp cho thấy độ sâu của sự thiếu thốn mà một ngưỡng cao duy nhất sẽ che mất. Theo thước đo này, gần [p:một trong mười người] trên thế giới nghèo cùng cực, và ngưỡng này đã thành công trong việc hướng sự chú ý tới những người nghèo nhất."
+      "body_vi": "Liên Hợp Quốc định nghĩa **nghèo cùng cực** (*extreme poverty*) là sống với dưới [p:3 đô la mỗi ngày] {world-bank-pip}. Vì sao phải dùng một ngưỡng thấp như vậy? Nếu chỉ dùng mức 30 đô la của các nước giàu, người sống với gần 30 đô la mỗi ngày và người sống với ít hơn ba mươi lần đều chỉ được gọi chung là 'nghèo'. Ngưỡng cực thấp cho thấy độ sâu của sự thiếu thốn mà một ngưỡng cao duy nhất sẽ che mất. Theo thước đo này, gần [p:một trong mười người] trên thế giới nghèo cùng cực, và ngưỡng này đã thành công trong việc hướng sự chú ý tới những người nghèo nhất.",
+      "heading_fr": "Pourquoi un seuil très bas est nécessaire",
+      "body_fr": "Les Nations unies définissent **l'extrême pauvreté** comme le fait de vivre avec moins de [p:3 dollars par jour] {world-bank-pip}. Pourquoi utiliser un seuil si bas ? Si nous n'utilisions que le seuil de 30 dollars des pays riches, une personne vivant avec près de 30 dollars par jour et une autre vivant avec trente fois moins seraient toutes deux simplement qualifiées de « pauvres ». Ce seuil extrêmement bas révèle la profondeur du dénuement qu'un seul seuil plus élevé masquerait. Selon cette mesure, près de [p:une personne sur dix] dans le monde est extrêmement pauvre, et ce seuil a réussi à attirer l'attention sur les plus démunis.",
+      "heading_de": "Warum eine sehr niedrige Grenze nötig ist",
+      "body_de": "Die Vereinten Nationen definieren **extreme Armut** als ein Leben von weniger als [p:$3 am Tag] {world-bank-pip}. Warum eine so niedrige Grenze verwenden? Wenn wir nur die $30-Grenze reicher Länder anwenden würden, würden jemand, der von fast $30 am Tag lebt, und jemand, der von dreißigmal weniger lebt, beide einfach als „arm“ gelten. Die extrem niedrige Grenze offenbart das Ausmaß der Entbehrung, das eine einzige höhere Grenze verbergen würde. Nach diesem Maßstab ist fast [p:jeder zehnte Mensch] weltweit extrem arm, und die Grenze hat dazu beigetragen, die Aufmerksamkeit auf die Allerärmsten zu lenken.",
+      "heading_es": "Por qué se necesita una línea muy baja",
+      "body_es": "Las Naciones Unidas definen la **pobreza extrema** como vivir con menos de [p:$3 al día] {world-bank-pip}. ¿Por qué utilizar una línea tan baja? Si solo usáramos la línea de $30 de los países ricos, alguien que vive con casi $30 al día y alguien que vive con treinta veces menos serían considerados simplemente 'pobres'. La línea extremadamente baja revela la profundidad de la privación que una sola línea más alta ocultaría. Con esta medida, cerca de [p:una de cada diez personas] en todo el mundo es extremadamente pobre, y la línea ha tenido éxito en enfocar la atención en los más pobres."
     },
     {
       "heading_en": "What needs explaining is prosperity",
       "heading_vi": "Điều cần lý giải là sự thịnh vượng",
       "body_en": "Deep poverty was the condition in which most of humanity always lived. In pre-modern times hunger was widespread, and every second child died, wherever it was born. Using two centuries of historical research, economic historian [y:Michail Moatsos] estimates that [p:three-quarters of the world] lived in extreme poverty in 1820 {moatsos-2021}. These people could not afford a tiny space to live, some minimum heating and food that would not cause malnutrition. The chart looks simple, but behind it lies careful historical work reconstructing who could afford a basic set of goods. Seen this way, the question is not why poverty exists, but how so many escaped it.",
-      "body_vi": "Nghèo đói sâu sắc từng là hoàn cảnh sống của phần lớn nhân loại. Thời tiền hiện đại, nạn đói lan rộng, và cứ hai đứa trẻ thì có một đứa chết yểu, dù sinh ra ở đâu. Dựa trên hai thế kỷ nghiên cứu lịch sử, nhà sử học kinh tế [y:Michail Moatsos] ước tính [p:ba phần tư thế giới] sống trong nghèo cùng cực vào năm 1820 {moatsos-2021}. Những người này không đủ tiền cho một chỗ ở nhỏ, chút sưởi ấm tối thiểu và lượng thức ăn đủ để không suy dinh dưỡng. Biểu đồ trông đơn giản, nhưng đằng sau là công trình lịch sử công phu nhằm tái dựng xem ai đủ khả năng chi trả cho một nhóm nhu yếu phẩm cơ bản. Nhìn như vậy, câu hỏi không phải vì sao có nghèo đói, mà vì sao nhiều người đến thế đã thoát khỏi nó."
+      "body_vi": "Nghèo đói sâu sắc từng là hoàn cảnh sống của phần lớn nhân loại. Thời tiền hiện đại, nạn đói lan rộng, và cứ hai đứa trẻ thì có một đứa chết yểu, dù sinh ra ở đâu. Dựa trên hai thế kỷ nghiên cứu lịch sử, nhà sử học kinh tế [y:Michail Moatsos] ước tính [p:ba phần tư thế giới] sống trong nghèo cùng cực vào năm 1820 {moatsos-2021}. Những người này không đủ tiền cho một chỗ ở nhỏ, chút sưởi ấm tối thiểu và lượng thức ăn đủ để không suy dinh dưỡng. Biểu đồ trông đơn giản, nhưng đằng sau là công trình lịch sử công phu nhằm tái dựng xem ai đủ khả năng chi trả cho một nhóm nhu yếu phẩm cơ bản. Nhìn như vậy, câu hỏi không phải vì sao có nghèo đói, mà vì sao nhiều người đến thế đã thoát khỏi nó.",
+      "heading_fr": "Ce qui demande une explication, c'est la prospérité",
+      "body_fr": "La pauvreté profonde a été la condition dans laquelle l'essentiel de l'humanité a toujours vécu. À l'époque prémoderne, la faim était généralisée et un enfant sur deux mourait, peu importe son lieu de naissance. En s'appuyant sur deux siècles de recherche historique, l'historien de l'économie [y:Michail Moatsos] estime que [p:les trois quarts du monde] vivaient dans l'extrême pauvreté en 1820 {moatsos-2021}. Ces personnes ne pouvaient pas s'offrir un petit espace pour vivre, un minimum de chauffage et une nourriture qui n'entraînait pas de malnutrition. Le graphique a l'air simple, mais derrière lui se cache un travail historique minutieux pour reconstituer qui pouvait s'offrir un ensemble de biens de base. Vu sous cet angle, la question n'est pas de savoir pourquoi la pauvreté existe, mais comment tant de gens ont réussi à y échapper.",
+      "heading_de": "Was erklärt werden muss, ist der Wohlstand",
+      "body_de": "Tiefe Armut war der Zustand, in dem die Menschheit seit jeher lebte. In vorklapprigen Zeiten war Hunger weit verbreitet, und jedes zweite Kind starb, egal wo es geboren wurde. Anhand von zwei Jahrhunderten historischer Forschung schätzt der Wirtschaftshistoriker [y:Michail Moatsos], dass [p:drei Viertel der Welt] im Jahr 1820 in extremer Armut lebten {moatsos-2021}. Diese Menschen konnten sich keinen winzigen Wohnraum, etwas Mindestheizung und Nahrung leisten, die keine Unterernährung verursachte. Das Diagramm sieht einfach aus, aber dahinter verbirgt sich sorgfältige historische Arbeit, die rekonstruiert, wer sich eine Grundausstattung an Gütern leisten konnte. So gesehen ist die Frage nicht, warum Armut existiert, sondern wie so viele ihr entkommen konnten.",
+      "heading_es": "Lo que necesita explicación es la prosperidad",
+      "body_es": "La pobreza profunda fue la condición en la que siempre vivió la mayor parte de la humanidad. En los tiempos premodernos el hambre estaba muy extendida y cada segundo niño moría, sin importar dónde naciera. Utilizando dos siglos de investigación histórica, el historiador económico [y:Michail Moatsos] estima que [p:tres cuartas partes del mundo] vivían en la pobreza extrema en 1820 {moatsos-2021}. Estas personas no podían permitirse un espacio diminuto para vivir, un mínimo de calefacción y alimentos que no causaran desnutrición. El gráfico parece simple, pero detrás de él hay un cuidadoso trabajo histórico que reconstruye quién podía permitirse un conjunto básico de bienes. Visto así, la pregunta no es por qué existe la pobreza, sino cómo tantos lograron escapar de ella."
     },
     {
       "heading_en": "Growth made the difference",
       "heading_vi": "Tăng trưởng tạo nên khác biệt",
       "body_en": "The answer is **economic growth**: a society producing more and better goods and services. Its key is technology that raises **productivity**, the amount people can produce with their time. Because everyone's spending is someone else's income, a country's total income grows at the same rate as its production. Starting in 1820, every region of the world achieved growth, and in every region the share living in extreme poverty fell. Growth separated societies where most people lacked food, decent housing and healthcare from those where these became [g:widely available].",
-      "body_vi": "Câu trả lời là **tăng trưởng kinh tế** (*economic growth*): một xã hội sản xuất ngày càng nhiều hàng hoá và dịch vụ tốt hơn. Chìa khoá của nó là công nghệ giúp nâng **năng suất**, tức lượng của cải con người làm ra trong cùng một thời gian. Vì khoản chi tiêu của người này là thu nhập của người khác, tổng thu nhập của một quốc gia tăng cùng tốc độ với sản lượng. Kể từ năm 1820, mọi khu vực trên thế giới đều tăng trưởng, và ở mọi khu vực tỷ lệ người nghèo cùng cực đều giảm. Tăng trưởng là ranh giới giữa xã hội mà phần lớn người dân thiếu ăn, thiếu nhà tử tế và y tế, với xã hội nơi những thứ ấy trở nên [g:phổ biến]."
+      "body_vi": "Câu trả lời là **tăng trưởng kinh tế** (*economic growth*): một xã hội sản xuất ngày càng nhiều hàng hoá và dịch vụ tốt hơn. Chìa khoá của nó là công nghệ giúp nâng **năng suất**, tức lượng của cải con người làm ra trong cùng một thời gian. Vì khoản chi tiêu của người này là thu nhập của người khác, tổng thu nhập của một quốc gia tăng cùng tốc độ với sản lượng. Kể từ năm 1820, mọi khu vực trên thế giới đều tăng trưởng, và ở mọi khu vực tỷ lệ người nghèo cùng cực đều giảm. Tăng trưởng là ranh giới giữa xã hội mà phần lớn người dân thiếu ăn, thiếu nhà tử tế và y tế, với xã hội nơi những thứ ấy trở nên [g:phổ biến].",
+      "heading_fr": "La croissance a fait la différence",
+      "body_fr": "La réponse réside dans la **croissance économique** : une société qui produit davantage et de meilleurs biens et services. Sa clé est la technologie qui augmente la **productivité**, c'est-à-dire ce que les gens peuvent produire avec leur temps. Étant donné que les dépenses de chacun constituent le revenu d'un autre, le revenu total d'un pays croît au même rythme que sa production. À partir de 1820, chaque région du monde a enregistré de la croissance, et dans chaque région la part vivant dans l'extrême pauvreté a diminué. La croissance a séparé les sociétés où la plupart des gens manquaient de nourriture, de logements décents et de soins de santé de celles où ces éléments sont devenus [g:largement accessibles].",
+      "heading_de": "Wachstum machte den Unterschied",
+      "body_de": "Die Antwort ist **Wirtschaftswachstum**: eine Gesellschaft, die mehr und bessere Güter und Dienstleistungen produziert. Dessen Schlüssel ist Technologie, die die **Produktivität** steigert, also die Menge, die Menschen mit ihrer Zeit produzieren können. Da die Ausgaben jedes Einzelnen das Einkommen eines anderen sind, wächst das Gesamteinkommen eines Landes mit derselben Rate wie seine Produktion. Beginnend im Jahr 1820 erreichte jede Region der Welt Wachstum, und in jeder Region sank der Anteil der Menschen in extremer Armut. Wachstum trennte Gesellschaften, in denen den meisten Menschen Nahrung, anständiger Wohnraum und Gesundheitsversorgung fehlten, von jenen, in denen diese [g:breit verfügbar] wurden.",
+      "heading_es": "El crecimiento marcó la diferencia",
+      "body_es": "La respuesta es el **crecimiento económico**: una sociedad que produce más y mejores bienes y servicios. Su clave es la tecnología que eleva la **productividad**, la cantidad que las personas pueden producir con su tiempo. Debido a que el gasto de cada uno es el ingreso de otro, el ingreso total de un país crece al mismo ritmo que su producción. A partir de 1820, todas las regiones del mundo lograron crecimiento, y en cada región la proporción que vivía en la pobreza extrema disminuyó. El crecimiento separó a las sociedades donde la mayoría carecía de alimentos, vivienda digna y atención médica de aquellas donde estos elementos se volvieron [g:ampliamente accesibles]."
     },
     {
       "heading_en": "Where poverty remains",
       "heading_vi": "Nghèo đói còn lại ở đâu",
       "body_en": "Today, **Sub-Saharan Africa** is the poorest region, with almost [p:40% of its population] in extreme poverty. Most African economies have grown since the end of oppressive colonial rule, but in some countries incomes have stagnated or even fallen. **Madagascar** is a stark example: much like the world in 1820, about three-quarters of its people still live in extreme poverty. Compare that with the UK, where two centuries of growth lifted the majority out of the deep poverty that once looked very similar.",
-      "body_vi": "Ngày nay, **châu Phi hạ Sahara** là khu vực nghèo nhất, với gần [p:40% dân số] sống trong nghèo cùng cực. Phần lớn nền kinh tế châu Phi đã tăng trưởng kể từ khi chế độ thực dân áp bức chấm dứt, nhưng ở một số nước, thu nhập đứng yên hoặc thậm chí giảm. **Madagascar** là ví dụ rõ rệt: giống như thế giới năm 1820, khoảng ba phần tư dân số nước này vẫn nghèo cùng cực. Hãy so với nước Anh, nơi hai thế kỷ tăng trưởng đã đưa phần lớn người dân thoát khỏi cảnh nghèo đói sâu sắc từng rất giống như vậy."
+      "body_vi": "Ngày nay, **châu Phi hạ Sahara** là khu vực nghèo nhất, với gần [p:40% dân số] sống trong nghèo cùng cực. Phần lớn nền kinh tế châu Phi đã tăng trưởng kể từ khi chế độ thực dân áp bức chấm dứt, nhưng ở một số nước, thu nhập đứng yên hoặc thậm chí giảm. **Madagascar** là ví dụ rõ rệt: giống như thế giới năm 1820, khoảng ba phần tư dân số nước này vẫn nghèo cùng cực. Hãy so với nước Anh, nơi hai thế kỷ tăng trưởng đã đưa phần lớn người dân thoát khỏi cảnh nghèo đói sâu sắc từng rất giống như vậy.",
+      "heading_fr": "Là où la pauvreté subsiste",
+      "body_fr": "Aujourd'hui, l'**Afrique subsaharienne** est la région la plus pauvre, avec près de [p:40 % de sa population] vivant dans l'extrême pauvreté. La plupart des économies africaines ont connu une croissance depuis la fin de la domination coloniale oppressive, mais dans certains pays, les revenus ont stagné ou ont même chuté. **Madagascar** en est un exemple frappant : un peu comme le monde en 1820, environ les trois quarts de ses habitants vivent encore dans l'extrême pauvreté. Comparez cela avec le Royaume-Uni, où deux siècles de croissance ont sorti la majorité de la pauvreté profonde qui semblait autrefois très similaire.",
+      "heading_de": "Wo Armut verbleibt",
+      "body_de": "Heute ist **Subsahara-Afrika** die ärmste Region, in der fast [p:40% der Bevölkerung] in extremer Armut leben. Die meisten afrikanischen Volkswirtschaften sind seit dem Ende der unterdrückerischen Kolonialherrschaft gewachsen, aber in einigen Ländern sind die Einkommen stagniert oder sogar gesunken. **Madagaskar** ist ein krasses Beispiel: Ähnlich wie die Welt im Jahr 1820 leben dort noch immer etwa drei Viertel der Menschen in extremer Armut. Vergleichen Sie das mit Großbritannien, wo zwei Jahrhunderte Wachstum die Mehrheit aus der tiefen Armut befreiten, die einst sehr ähnlich aussah.",
+      "heading_es": "Donde persiste la pobreza",
+      "body_es": "Hoy en día, **África subsahariana** es la región más pobre, con casi [p:el 40% de su población] en la pobreza extrema. La mayoría de las economías africanas han crecido desde el final del opresivo dominio colonial, pero en algunos países los ingresos se han estancado o incluso han caído. **Madagascar** es un ejemplo claro: al igual que el mundo en 1820, aproximadamente tres cuartas partes de su población aún viven en la pobreza extrema. Compárese eso con el Reino Unido, donde dos siglos de crecimiento sacaron a la mayoría de la pobreza profunda que alguna vez lució muy similar."
     },
     {
       "heading_en": "Sharing more is not enough",
       "heading_vi": "Chia đều thôi là chưa đủ",
       "body_en": "How growth is shared matters: if inequality rises, the poorest can be left behind. But Roser stresses that in a very poor country, redistribution alone cannot end poverty. If inequality in Madagascar disappeared completely, everyone would live on the average income, and that average is itself below the extreme poverty line. [g:For poor countries, the only way out is rising incomes]. This is why the stagnation of the poorest economies, rather than inequality alone, is one of the largest problems of our time.",
-      "body_vi": "Cách chia sẻ thành quả tăng trưởng cũng quan trọng: nếu bất bình đẳng tăng, người nghèo nhất có thể bị bỏ lại. Nhưng Roser nhấn mạnh rằng ở một nước rất nghèo, chỉ phân phối lại thì không thể xoá nghèo. Nếu bất bình đẳng ở Madagascar biến mất hoàn toàn, mọi người sẽ sống với thu nhập trung bình, mà chính mức trung bình ấy còn thấp hơn chuẩn nghèo cùng cực. [g:Với các nước nghèo, lối thoát duy nhất là thu nhập tăng lên]. Đó là lý do sự trì trệ của những nền kinh tế nghèo nhất, chứ không riêng bất bình đẳng, là một trong những vấn đề lớn nhất của thời đại."
+      "body_vi": "Cách chia sẻ thành quả tăng trưởng cũng quan trọng: nếu bất bình đẳng tăng, người nghèo nhất có thể bị bỏ lại. Nhưng Roser nhấn mạnh rằng ở một nước rất nghèo, chỉ phân phối lại thì không thể xoá nghèo. Nếu bất bình đẳng ở Madagascar biến mất hoàn toàn, mọi người sẽ sống với thu nhập trung bình, mà chính mức trung bình ấy còn thấp hơn chuẩn nghèo cùng cực. [g:Với các nước nghèo, lối thoát duy nhất là thu nhập tăng lên]. Đó là lý do sự trì trệ của những nền kinh tế nghèo nhất, chứ không riêng bất bình đẳng, là một trong những vấn đề lớn nhất của thời đại.",
+      "heading_fr": "Partager davantage ne suffit pas",
+      "body_fr": "La manière dont la croissance est partagée a son importance : si les inégalités augmentent, les plus pauvres peuvent être laissés pour compte. Mais Roser souligne que dans un pays très pauvre, la redistribution seule ne peut éliminer la pauvreté. Si les inégalités à Madagascar disparaissaient totalement, tout le monde vivrait avec le revenu moyen, et cette moyenne est elle-même inférieure au seuil de l'extrême pauvreté. [g:Pour les pays pauvres, la seule issue est l'augmentation des revenus]. C'est pourquoi la stagnation des économies les plus pauvres, plutôt que les seules inégalités, constitue l'un des plus grands problèmes de notre époque.",
+      "heading_de": "Mehr zu teilen reicht nicht aus",
+      "body_de": "Wie Wachstum geteilt wird, ist wichtig: Wenn die Ungleichheit steigt, können die Ärmsten zurückbleiben. Roser betont jedoch, dass in einem sehr armen Land die Umverteilung allein die Armut nicht beenden kann. Wenn die Ungleichheit in Madagaskar völlig verschwinden würde, würde jeder vom Durchschnittseinkommen leben, und dieser Durchschnitt liegt selbst unter der Grenze der extremen Armut. [g:Für arme Länder ist der einzige Ausweg steigende Einkommen]. Deshalb ist die Stagnation der ärmsten Volkswirtschaften und nicht allein die Ungleichheit eines der größten Probleme unserer Zeit.",
+      "heading_es": "Compartir más no es suficiente",
+      "body_es": "Cómo se comparte el crecimiento importa: si la desigualdad aumenta, los más pobres pueden quedarse atrás. Pero Roser enfatiza que en un país muy pobre, la redistribución por sí sola no puede acabar con la pobreza. Si la desigualdad en Madagascar desapareciera por completo, todos vivirían con el ingreso promedio, y ese promedio está por debajo de la línea de pobreza extrema. [g:Para los países pobres, la única salida es el aumento de los ingresos]. Es por esto que el estancamiento de las economías más pobres, más que la desigualdad por sí sola, es uno de los mayores problemas de nuestro tiempo."
     },
     {
       "heading_en": "A great achievement, and a failure",
       "heading_vi": "Một thành tựu lớn, và một thất bại",
       "body_en": "The history of extreme poverty is at once one of humanity's greatest achievements and one of its failures. Most of the world has left it behind; almost one in ten people has not. Even before the pandemic, researchers expected about [p:half a billion people] to remain extremely poor by 2030, and the recession that followed made things worse. Roser also worries about climate change, because the poorest will be hit hardest. Whether the poorest countries start growing, he argues, will decide whether humanity [g:wins its long fight] against extreme poverty.",
-      "body_vi": "Lịch sử nghèo cùng cực vừa là một trong những thành tựu lớn nhất, vừa là một thất bại của nhân loại. Phần lớn thế giới đã bỏ nó lại phía sau; gần một trong mười người thì chưa. Ngay cả trước đại dịch, các nhà nghiên cứu đã dự báo khoảng [p:nửa tỷ người] vẫn nghèo cùng cực vào năm 2030, và cuộc suy thoái sau đó khiến tình hình tệ hơn. Roser cũng lo ngại về biến đổi khí hậu, vì người nghèo nhất sẽ chịu ảnh hưởng nặng nề nhất. Theo ông, việc các nước nghèo nhất có bắt đầu tăng trưởng hay không sẽ quyết định nhân loại có [g:thắng cuộc chiến dài] chống lại nghèo cùng cực hay không."
+      "body_vi": "Lịch sử nghèo cùng cực vừa là một trong những thành tựu lớn nhất, vừa là một thất bại của nhân loại. Phần lớn thế giới đã bỏ nó lại phía sau; gần một trong mười người thì chưa. Ngay cả trước đại dịch, các nhà nghiên cứu đã dự báo khoảng [p:nửa tỷ người] vẫn nghèo cùng cực vào năm 2030, và cuộc suy thoái sau đó khiến tình hình tệ hơn. Roser cũng lo ngại về biến đổi khí hậu, vì người nghèo nhất sẽ chịu ảnh hưởng nặng nề nhất. Theo ông, việc các nước nghèo nhất có bắt đầu tăng trưởng hay không sẽ quyết định nhân loại có [g:thắng cuộc chiến dài] chống lại nghèo cùng cực hay không.",
+      "heading_fr": "Une grande réussite et un échec",
+      "body_fr": "L'histoire de l'extrême pauvreté est à la fois l'une des plus grandes réussites de l'humanité et l'un de ses échecs. La majeure partie du monde l'a dépassée ; près d'une personne sur dix ne l'a pas fait. Même avant la pandémie, les chercheurs prévoyaient qu'environ [p:un demi-milliard de personnes] resteraient extrêmement pauvres d'ici 2030, et la récession qui a suivi a aggravé la situation. Roser s'inquiète également du changement climatique, car les plus pauvres seront frappés de plein fouet. Il soutient que la question de savoir si les pays les plus pauvres amorcent une croissance déterminera si l'humanité [g:remporte son long combat] contre l'extrême pauvreté.",
+      "heading_de": "Eine große Leistung und ein Versagen",
+      "body_de": "Die Geschichte der extreme Armut ist zugleich eine der größten Errungenschaften der Menschheit und eines ihrer Versagen. Der größte Teil der Welt hat sie hinter sich gelassen; fast jeder zehnte Mensch hat das nicht. Schon vor der Pandemie erwarteten Forscher, dass bis 2030 etwa [p:eine halbe Milliarden Menschen] extrem arm bleiben würden, und die darauf folgende Rezession machte die Dinge noch schlimmer. Roser sorgt sich zudem um den Klimawandel, da die Ärmsten am härtesten getroffen werden. Ob die ärmsten Länder beginnen zu wachsen, wird, so argumentiert er, darüber entscheiden, ob die Menschheit ihren [g:langen Kampf] gegen die extreme Armut gewinnt.",
+      "heading_es": "Un gran logro y un fracaso",
+      "body_es": "La historia de la pobreza extrema es a la vez uno de los mayores logros de la humanidad y uno de sus fracasos. La mayor parte del mundo la ha dejado atrás; casi una de cada diez personas no lo ha hecho. Incluso antes de la pandemia, los investigadores esperaban que alrededor de [p:medio billón de personas] siguieran siendo extremadamente pobres para 2030, y la recesión posterior empeoró las cosas. Roser también se preocupa por el cambio climático, porque los más pobres serán los más golpeados. Si los países más pobres comienzan a crecer, argumenta, se decidirá si la humanidad [g:gana su larga lucha] contra la pobreza extrema."
     }
   ],
   "keyPoint": {
     "en": "Fighting poverty with redistribution alone is like [p:slicing a tiny cake] into fairer pieces: it helps, but nobody gets enough until the cake grows. When you read about poverty, ask *is the economy here growing, and who is getting the new slices?*",
-    "vi": "Chống nghèo chỉ bằng phân phối lại giống như [p:chia một chiếc bánh quá nhỏ] cho công bằng hơn: có ích, nhưng không ai đủ ăn cho tới khi chiếc bánh lớn lên. Khi đọc về nghèo đói, hãy hỏi *nền kinh tế ở đó có đang tăng trưởng không, và ai đang nhận được những miếng bánh mới?*"
+    "vi": "Chống nghèo chỉ bằng phân phối lại giống như [p:chia một chiếc bánh quá nhỏ] cho công bằng hơn: có ích, nhưng không ai đủ ăn cho tới khi chiếc bánh lớn lên. Khi đọc về nghèo đói, hãy hỏi *nền kinh tế ở đó có đang tăng trưởng không, và ai đang nhận được những miếng bánh mới?*",
+    "fr": "Lutter contre la pauvreté par la seule redistribution revient à [p:couper un tout petit gâteau] en parts plus équitables : cela aide, mais personne n'en a assez tant que le gâteau ne grossit pas. Lorsque vous lisez des articles sur la pauvreté, demandez-vous *si l'économie locale est en croissance et qui obtient les nouvelles parts.*",
+    "de": "Armut allein durch Umverteilung zu bekämpfen gleicht dem [p:Aufteilen eines winzigen Kuchens] in gerechtere Stücke: Es hilft, aber niemand bekommt genug, bis der Kuchen wächst. Wenn du über Armut liest, frage dich: *Wächst hier die Wirtschaft, und wer bekommt die neuen Stücke?*",
+    "es": "Combatir la pobreza solo con redistribución es como [p:partir un pastel diminuto] en porciones más justas: ayuda, pero nadie recibe lo suficiente hasta que el pastel crece. Cuando leas sobre la pobreza, pregúntate *¿está creciendo la economía aquí y quién está recibiendo las nuevas porciones?*"
   },
   "applySteps": {
     "en": [
@@ -76,6 +127,21 @@
       "Tra tỷ lệ người sống với dưới 3 đô la mỗi ngày ở nước bạn, và con số đó đã thay đổi thế nào từ năm 1990.",
       "So sánh hai nước láng giềng có thu nhập rất khác nhau và ghi lại một lý do khiến tăng trưởng của họ khác biệt.",
       "Trước khi ủng hộ một tổ chức từ thiện, hãy xem đánh giá độc lập về hiệu quả của mỗi khoản đóng góp."
+    ],
+    "fr": [
+      "Recherchez la part des personnes vivant avec moins de 3 dollars par jour dans votre pays et la façon dont elle a évolué depuis 1990.",
+      "Comparez deux pays voisins aux revenus très différents et notez une raison pour laquelle leur croissance a différé.",
+      "Avant de soutenir une organisation caritative, consultez l'estimation d'un évaluateur indépendant sur l'efficacité de chaque don."
+    ],
+    "de": [
+      "Schlage nach, wie hoch der Anteil der Menschen in deinem Land ist, die von weniger als $3 a $3 am Tag leben, und wie sich dieser seit 1990 verändert hat.",
+      "Vergleiche zwei benachbarte Länder mit sehr unterschiedlichen Einkommen und nenne einen Grund für den Unterschied in ihrem Wachstum.",
+      "Bevor du eine Wohltätigkeitsorganisation unterstützt, prüfe die Schätzung eines unabhängigen Evaluators darüber, wie viel Gutes jede Spende bewirkt."
+    ],
+    "es": [
+      "Busca la proporción de personas que viven con menos de $3 al día en tu país y cómo ha cambiado desde 1990.",
+      "Compara dos países vecinos con ingresos muy diferentes y anota una razón por la cual su crecimiento diferenció.",
+      "Antes de apoyar a una organización benéfica, consulta la estimación de un evaluador independiente sobre cuánto bien hace cada donación."
     ]
   },
   "references": [
@@ -126,5 +192,68 @@
   },
   "seed": true,
   "blurDataURL": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBQCdASoQABwAPu1iqU2ppaOiMAgBMB2JZAC7MoKP+PoFzb/ABMQtjTF4Qh9Vz36dcJ6AAP59y5EESTLReCYVi10ahSrjMDgUiNlGvlmAAQbxNa+e3bXTl5o3Yn3vCtBMIC0KRD/rAF9+iokh7NHRsKmqmRawhB3LL6SSaVSEtwFlaRw6GE54ZSNsqkRJugvBk2z9JCz6o9/Nevca2sdD4rA9VB2XYNcO9ix5CHnCsGxTnZpiInQMGV5iHwA0AAA=",
-  "dominant": "#413e23"
+  "dominant": "#413e23",
+  "glossary": {
+    "en": {
+      "international dollars": "A hypothetical currency used to compare living standards across countries by eliminating price level differences.",
+      "extreme poverty": "Living on less than three dollars a day, representing a severe depth of deprivation.",
+      "economic growth": "An increase in the production of goods and services within a society over time.",
+      "productivity": "The amount of goods and services that people can produce with a given amount of time.",
+      "sub-saharan africa": "The geographic region south of the Sahara desert, currently the poorest region globally.",
+      "madagascar": "An island nation off the southeastern coast of Africa with high rates of extreme poverty.",
+      "redistribution": "The transfer of income and wealth from some individuals to others within a society.",
+      "recession": "A period of temporary economic decline during which trade and industrial activity reduce."
+    },
+    "vi": {
+      "đô la quốc tế": "Đơn vị tiền tệ giả định có sức mua tương đương nhau ở mọi quốc gia trên thế giới.",
+      "nghèo cùng cực": "Tình trạng sống với mức thu nhập dưới ba đô la mỗi ngày.",
+      "tăng trưởng kinh tế": "Sự gia tăng về lượng hàng hoá và dịch vụ mà một xã hội sản xuất ra.",
+      "năng suất": "Lượng của cải hoặc sản phẩm mà con người làm ra trong cùng một khoảng thời gian.",
+      "châu phi hạ sahara": "Khu vực địa lý nằm ở phía nam sa mạc Sahara của châu Phi.",
+      "madagascar": "Một quốc gia đảo nằm ngoài khơi bờ biển phía đông nam của châu Phi.",
+      "michail moatsos": "Nhà sử học kinh tế nghiên cứu về lịch sử mức sống và nghèo đói.",
+      "roser": "Tác giả và nhà nghiên cứu chuyên phân tích các dữ liệu về tiến bộ loài người."
+    },
+    "fr": {
+      "dollars internationaux": "Unité hypothétique qui ajuste les différences de pouvoir d'achat entre les pays pour comparer les prix équitablement.",
+      "l'extrême pauvreté": "État de privation sévère défini par un niveau de vie inférieur à trois dollars par jour.",
+      "croissance économique": "Augmentation de la production de biens et de services dans une société sur une période donnée.",
+      "productivité": "Mesure de l'efficacité avec laquelle les ressources, notamment le temps, sont utilisées pour produire.",
+      "afrique subsaharienne": "Région du continent africain située au sud du désert du Sahara, actuellement la plus touchée par la pauvreté.",
+      "madagascar": "État insulaire africain où environ les trois quarts de la population vivent encore dans l'extrême pauvreté.",
+      "redistribution": "Action de répartir différemment les richesses existantes au sein d'une population par le biais de politiques.",
+      "inégalités": "Disparités de revenus ou de conditions de vie entre les différents individus ou groupes d'une société."
+    },
+    "de": {
+      "extreme armut": "Das Leben von weniger als 3 Dollar am Tag.",
+      "internationale dollar": "Fiktive Währung zum Ausgleich von Preisunterschieden zwischen Ländern.",
+      "wirtschaftswachstum": "Die gesteigerte Produktion von mehr Gütern und Dienstleistungen in einer Gesellschaft.",
+      "produktivität": "Die Menge an Gütern, die Menschen mit ihrer Arbeitszeit produzieren.",
+      "subsahara-afrika": "Die Region afrikanischer Länder südlich der Sahara.",
+      "madagaskar": "Ein ostafrikanischer Inselstaat mit sehr hoher Armutsquote.",
+      "rezession": "Eine wirtschaftliche Schrumpfungsphase mit sinkender Produktion.",
+      "klimawandel": "Die globale Erwärmung und Veränderung der weltweiten Wetterverhältnisse."
+    },
+    "es": {
+      "pobreza extrema": "Vivir con menos de tres dólares al día según la definición de las Naciones Unidas.",
+      "productividad": "La cantidad de bienes y servicios que las personas pueden producir con su tiempo de trabajo.",
+      "crecimiento económico": "Aumento sostenido en la producción de bienes y servicios dentro de una sociedad a lo largo del tiempo.",
+      "áfrica subsahariana": "Región geográfica situada al sur del desierto del Sahara, actualmente considerada la más pobre del mundo.",
+      "madagascar": "País insular africano que sirve como ejemplo de estancamiento económico y alta pobreza extrema actual.",
+      "dólares internacionales": "Unidad monetaria hipotética ajustada por el poder adquisitivo para comparar precios de manera justa entre países.",
+      "desigualdad": "Disparidad en la distribución de los ingresos o recursos económicos entre los miembros de una sociedad.",
+      "redistribución": "Acción de volver a repartir la riqueza o los ingresos existentes dentro de una población."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  }
 }
