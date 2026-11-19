@@ -1,0 +1,241 @@
+{
+  "slug": "ai-discovers-28-zero-day-flaws-in-robotics-software",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=ai-discovers-28-zero-day-flaws-in-robotics-software",
+  "category": "technology",
+  "tags": [
+    "robotics",
+    "cybersecurity",
+    "artificial intelligence",
+    "vulnerabilities"
+  ],
+  "title": {
+    "en": "AI Discovers 28 Zero-Day Flaws in Robotics Software",
+    "vi": "Trí tuệ nhân tạo phát hiện 28 lỗi bảo mật chưa từng biết trong phần mềm robot",
+    "fr": "L'IA découvre 28 failles zero-day dans les logiciels de robotique",
+    "de": "KI entdeckt 28 Zero-Day-Schwachstellen in Robotik-Software",
+    "es": "La inteligencia artificial descubre 28 fallas de día cero en software de robótica"
+  },
+  "hook": {
+    "en": "Researchers found 28 new vulnerabilities in physical robotics tools in under two days using artificial intelligence {source}. These security gaps affect systems from developers like Google, NVIDIA, and Meta, threatening how robots are trained, tested, and operated.",
+    "vi": "Các nhà nghiên cứu đã tìm thấy 28 lỗ hổng bảo mật mới trong các công cụ robot vật lý trong vòng chưa đầy hai ngày bằng cách sử dụng trí tuệ nhân tạo {source}. Những khoảng trống bảo mật này ảnh hưởng đến các hệ thống từ các nhà phát triển như Google, NVIDIA và Meta, đe dọa cách robot được đào tạo, kiểm thử và vận hành.",
+    "fr": "Des chercheurs ont trouvé 28 nouvelles vulnérabilités dans des outils de robotique physique en moins de deux jours grâce à l'intelligence artificielle {source}. Ces failles de sécurité touchent des systèmes de développeurs tels que Google, NVIDIA et Meta, menaçant la manière dont les robots sont entraînés, testés et exploités.",
+    "de": "Forschende haben mithilfe von künstlicher Intelligenz in weniger als zwei Tagen 28 neue Schwachstellen in physischen Robotik-Werkzeugen entdeckt {source}. Diese Sicherheitslücken betreffen Systeme von Entwicklern wie Google, NVIDIA und Meta und gefährden die Art und Weise, wie Roboter trainiert, getestet und betrieben werden.",
+    "es": "Investigadores encontraron 28 nuevas vulnerabilidades en herramientas de robótica física en menos de dos días utilizando inteligencia artificial {source}. Estas brechas de seguridad afectan sistemas de desarrolladores como Google, NVIDIA y Meta, amenazando la forma en que los robots se entrenan, prueban y operan."
+  },
+  "sections": [
+    {
+      "heading_en": "Accelerated Vulnerability Discovery",
+      "heading_vi": "Phát hiện lỗ hổng được tăng tốc",
+      "body_en": "Analyzing code and testing communication lines usually demands extensive manual effort. Artificial intelligence accelerates this process by examining large volumes of software quickly. When discoveries involve previously unknown security gaps, response windows shrink significantly for engineering teams.",
+      "body_vi": "Phân tích mã nguồn và kiểm tra đường truyền thông tin thường đòi hỏi nhiều công sức thủ công. Trí tuệ nhân tạo (*artificial intelligence*) đẩy nhanh quá trình này bằng cách kiểm tra lượng lớn phần mềm một cách nhanh chóng. Khi các phát hiện liên quan đến các khoảng trống bảo mật chưa từng biết trước đây, thời gian phản hồi sẽ thu hẹp đáng kể đối với các nhóm kỹ thuật.",
+      "heading_fr": "Découverte accélérée de vulnérabilités",
+      "body_fr": "L'analyse de code et le test des lignes de communication exigent généralement un effort manuel considérable. L'intelligence artificielle accélère ce processus en examinant rapidement de grands volumes de logiciels. Lorsque les découvertes impliquent des failles de sécurité jusqu'alors inconnues, les délais de réponse se réduisent considérablement pour les équipes d'ingénierie.",
+      "heading_de": "Beschleunigte Schwachstellen-Entdeckung",
+      "body_de": "Die Analyse von Code und das Testen von Kommunikationswegen erfordern normalerweise einen enormen manuellen Aufwand. Künstliche Intelligenz beschleunigt diesen Prozess, indem sie große Softwaremengen schnell untersucht. Wenn es sich dabei um bisher unbekannte Sicherheitslücken handelt, schrumpfen die Reaktionszeiten für Ingenieurteams erheblich.",
+      "heading_es": "Descubrimiento acelerado de vulnerabilidades",
+      "body_es": "Analizar código y probar líneas de comunicación suele requerir un gran esfuerzo manual. La inteligencia artificial acelera este proceso examinando rápidamente grandes volúmenes de software. Cuando los descubrimientos involucran brechas de seguridad previamente desconocidas, las ventanas de respuesta se reducen significativamente para los equipos de ingeniería."
+    },
+    {
+      "heading_en": "Lifecycle Vulnerabilities",
+      "heading_vi": "Lỗ hổng trong vòng đời robot",
+      "body_en": "The discovered flaws span training, simulation, and runtime operations. A compromised training file can alter model behavior before deployment. Similarly, manipulated simulation environments can produce false test confidence, leading teams to approve unsafe systems for real-world tasks.",
+      "body_vi": "Các lỗi được phát hiện kéo dài từ giai đoạn huấn luyện, mô phỏng cho đến vận hành thời gian thực (*runtime*). Tệp huấn luyện bị xâm nhập có thể làm thay đổi hành vi của mô hình trước khi triển khai. Tương tự, môi trường mô phỏng bị can thiệp có thể tạo ra sự tự tin sai lầm khi kiểm thử, khiến các nhóm phê duyệt các hệ thống không an toàn cho các tác vụ thực tế.",
+      "heading_fr": "Vulnérabilités du cycle de vie",
+      "body_fr": "Les failles découvertes englobent l'entraînement, la simulation et les opérations à l'exécution. Un fichier d'entraînement compromis peut altérer le comportement du modèle avant son déploiement. De même, des environnements de simulation manipulés peuvent produire une fausse confiance dans les tests, conduisant les équipes à approuver des systèmes dangereux pour des tâches réelles.",
+      "heading_de": "Schwachstellen im Lebenszyklus",
+      "body_de": "Die entdeckten Mängel erstrecken sich über das Training, die Simulation und den laufenden Betrieb. Eine kompromittierte Trainingsdatei kann das Verhalten des Modells vor der Bereitstellung verändern. Ähnlich können manipulierte Simulationsumgebungen ein falsches Testvertrauen erzeugen, was Teams dazu verleitet, unsichere Systeme für reale Aufgaben freizugeben.",
+      "heading_es": "Vulnerabilidades en el ciclo de vida",
+      "body_es": "Las fallas descubiertas abarcan el entrenamiento, la simulación y las operaciones en tiempo de ejecución. Un archivo de entrenamiento comprometido puede alterar el comportamiento del modelo antes de su implementación. De manera similar, los entornos de simulación manipulados pueden producir una falsa confianza en las pruebas, lo que lleva a los equipos a aprobar sistemas inseguros para tareas del mundo real."
+    },
+    {
+      "heading_en": "Verifying Software Fixes",
+      "heading_vi": "Xác minh các bản vá phần mềm",
+      "body_en": "Releasing a software patch does not immediately guarantee safety. Teams must verify that updates preserve intended functions without introducing new risks. When immediate patching is impossible, temporary access restrictions help protect vulnerable services during operations.",
+      "body_vi": "Việc phát hành bản vá phần mềm không đảm bảo an toàn ngay lập tức. Các nhóm phải xác minh rằng các bản cập nhật bảo toàn các chức năng dự định mà không mang lại rủi ro mới. Khi việc vá lỗi ngay lập tức là không thể, các hạn chế truy cập tạm thời giúp bảo vệ các dịch vụ dễ bị tổn thương trong quá trình hoạt động.",
+      "heading_fr": "Vérification des correctifs logiciels",
+      "body_fr": "La publication d'un correctif logiciel ne garantit pas immédiatement la sécurité. Les équipes doivent vérifier que les mises à jour préservent les fonctions prévues sans introduire de nouveaux risques. Lorsqu'un correctif immédiat s'avère impossible, des restrictions d'accès temporaires contribuent à protéger les services vulnérables pendant les opérations.",
+      "heading_de": "Überprüfung von Software-Korrekturen",
+      "body_de": "Die Veröffentlichung eines Software-Patches garantiert nicht sofortige Sicherheit. Teams müssen überprüfen, ob Aktualisierungen die beabsichtigten Funktionen erhalten, ohne neue Risiken einzuführen. Wenn eine sofortige Patch-Installation unmöglich ist, helfen temporäre Zugriffsbeschränkungen dabei, gefährdete Dienste während des Betriebs zu schützen.",
+      "heading_es": "Verificación de correcciones de software",
+      "body_es": "Lanzar un parche de software no garantiza la seguridad de inmediato. Los equipos deben verificar que las actualizaciones preserven las funciones previstas sin introducir nuevos riesgos. Cuando un parche inmediato es imposible, las restricciones temporales de acceso ayudan a proteger los servicios vulnerables durante las operaciones."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "IEEE Spectrum (2026)",
+      "url": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1597782664777-50632b0a6290?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1597782664777-50632b0a6290?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "lilartsy",
+    "authorUrl": "https://unsplash.com/@lilartsy?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/t-KXUfkIyrY",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/t-KXUfkIyrY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "VicOne"
+    ],
+    "originalTitle": "AI Finds 28 Zero-Day Flaws In Physical Robotics Software",
+    "originalUrl": "https://spectrum.ieee.org/zero-day-robotics-vulnerabilities-vicone-security",
+    "publisher": "IEEE Spectrum",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Locate all third-party software used in your robotics training and simulation.",
+      "Assess whether any identified vulnerabilities affect your robot models or test results.",
+      "Confirm that applied software patches preserve intended safety functions."
+    ],
+    "vi": [
+      "Xác định tất cả phần mềm của bên thứ ba được sử dụng trong quá trình huấn luyện và mô phỏng robot của bạn.",
+      "Đánh giá xem bất kỳ lỗ hổng nào được xác định có ảnh hưởng đến các mô hình robot hoặc kết quả kiểm thử của bạn hay không.",
+      "Xác nhận rằng các bản vá phần mềm được áp dụng bảo toàn các chức năng an toàn dự định."
+    ],
+    "fr": [
+      "Localisez tous les logiciels tiers utilisés dans l'entraînement et la simulation de vos robots.",
+      "Évaluez si des vulnérabilités identifiées affectent vos modèles de robots ou vos résultats de test.",
+      "Confirmez que les correctifs logiciels appliqués préservent les fonctions de sécurité prévues."
+    ],
+    "de": [
+      "Identifiziere alle Drittanbieter-Software, die beim Robotik-Training und in der Simulation verwendet wird.",
+      "Prüfe, ob identifizierte Schwachstellen deine Roboter-Modelle oder Testergebnisse beeinflussen.",
+      "Stelle sicher, dass angewendete Software-Patches die vorgesehenen Sicherheitsfunktionen bewahren."
+    ],
+    "es": [
+      "Localice todo el software de terceros utilizado en su entrenamiento y simulación de robótica.",
+      "Evalúe si alguna vulnerabilidad identificada afecta sus modelos de robots o resultados de pruebas.",
+      "Confirme que los parches de software aplicados preserven las funciones de seguridad previstas."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1597782664777-50632b0a6290?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1597782664777-50632b0a6290?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "lilartsy",
+      "authorUrl": "https://unsplash.com/@lilartsy?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/t-KXUfkIyrY",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/t-KXUfkIyrY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/fwbUN8IYvQY",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/fwbUN8IYvQY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1596648568250-75769da61a59?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1596648568250-75769da61a59?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "buian_photos",
+      "authorUrl": "https://unsplash.com/@buian_photos?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/ixY8abe8Eig",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/ixY8abe8Eig/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1750365920056-d4b4ca73fbaa?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1750365920056-d4b4ca73fbaa?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Omar:. Lopez-Rincon",
+      "authorUrl": "https://unsplash.com/@procopiopi?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8i9dzwZ_O4I",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/8i9dzwZ_O4I/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8QUklMjBEaXNjb3ZlcnMlMjAyOCUyMFplcm8lMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjI2MDJ8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JYgC/OYtKtji+OBYRH6z7jcAA/vDeM8mATBnkGyNFK0jmOPCFjv7HVvJxHR/PPIvsj24WTUOLU8rl5YkPZHrLI6KNBDcZ7YqYUGXdkbZBqVSciNNzchA7KP1sK+vAOALRSJrMb3lnbVi7dBg5VVmtIbocOxgZf2gAAA==",
+  "dominant": "#12241b",
+  "glossary": {
+    "en": {
+      "zero-day": "A previously unknown security flaw in software that leaves systems vulnerable until discovered and patched.",
+      "vulnerabilities": "Weaknesses or security gaps in software that can be exploited by malicious actors.",
+      "artificial intelligence": "Computer systems designed to perform tasks that typically require human intelligence.",
+      "google": "A major technology company developing software and systems.",
+      "nvidia": "A technology company known for hardware and software used in AI and robotics.",
+      "meta": "A technology company developing software platforms and tools.",
+      "simulation": "An imitation of a real-world process or environment used for testing.",
+      "runtime": "The period of time when a program is running.",
+      "model": "An AI framework or representation trained to perform specific tasks.",
+      "patch": "A software update designed to fix security flaws or improve performance."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Hệ thống máy tính mô phỏng khả năng tư duy và học tập của con người.",
+      "lỗ hổng bảo mật": "Điểm yếu trong phần mềm cho phép kẻ xấu xâm nhập hoặc phá hoại.",
+      "robot vật lý": "Các thiết bị robot có thể chuyển động và tác động trong thế giới thực.",
+      "google": "Công ty công nghệ đa quốc gia nổi tiếng với các dịch vụ trực tuyến.",
+      "nvidia": "Tập đoàn công nghệ chuyên sản xuất chip xử lý đồ họa và trí tuệ nhân tạo.",
+      "meta": "Tập đoàn công nghệ sở hữu mạng xã hội Facebook và các nền tảng thực tế ảo.",
+      "artificial intelligence": "Thuật ngữ tiếng Anh chỉ trí tuệ nhân tạo.",
+      "runtime": "Giai đoạn mà chương trình máy tính đang được thực thi hoặc chạy thực tế.",
+      "mô phỏng": "Quá trình tái tạo môi trường hoặc hoạt động trên máy tính để thử nghiệm.",
+      "bản vá phần mềm": "Đoạn mã được thiết kế để sửa chữa lỗi hoặc lỗ hổng trong chương trình."
+    },
+    "fr": {
+      "zero-day": "Faille de sécurité informatique inédite et inconnue du concepteur, pour laquelle aucun correctif n'existe encore.",
+      "intelligence artificielle": "Technologie permettant aux machines d'imiter l'intelligence humaine pour résoudre des problèmes complexes.",
+      "vulnérabilités": "Faiblesses ou failles dans un système informatique pouvant être exploitées par des menaces.",
+      "simulation": "Imitation virtuelle d'un environnement ou d'un processus physique à des fins de test.",
+      "modèle": "Représentation mathématique ou algorithmique entraînée sur des données pour accomplir une tâche.",
+      "déploiement": "Mise en service d'un logiciel ou d'un système dans son environnement opérationnel final.",
+      "correctif": "Mise à jour logicielle destinée à corriger un bogue ou une faille de sécurité.",
+      "ingénierie": "Ensemble des applications scientifiques et techniques visant à concevoir des systèmes."
+    },
+    "de": {
+      "zero-day-schwachstellen": "Bisher unbekannte Sicherheitslücken in Software, für die es noch keine offiziellen Korrekturen gibt.",
+      "künstlicher intelligenz": "Maschinelle Systeme, die komplexe Aufgaben durch Datenanalyse und Mustererkennung eigenständig bearbeiten.",
+      "schwachstellen": "Sicherheitslücken oder Mängel in Software, die von Angreifern ausgenutzt werden können.",
+      "simulation": "Die computergestützte Nachbildung realer Umgebungen zum Testen von Systemen.",
+      "modell": "Eine mathematische Darstellung, die von KI-Systemen zum Treffen von Entscheidungen genutzt wird.",
+      "patches": "Software-Aktualisierungen zur Behebung von Fehlern oder Sicherheitslücken.",
+      "drittanbieter-software": "Programmpakete, die von externen Unternehmen entwickelt und in eigene Systeme integriert werden.",
+      "ingenieurteams": "Fachleute, die für die Entwicklung, Testung und Wartung technischer Systeme verantwortlich sind."
+    },
+    "es": {
+      "inteligencia artificial": "Tecnología que permite a las máquinas imitar funciones cognitivas humanas para analizar datos y resolver problemas.",
+      "vulnerabilidades": "Debilidades o fallas en un sistema informático que pueden ser explotadas por atacantes.",
+      "fallas de día cero": "Vulnerabilidades de software desconocidas para los creadores y para las cuales no existe solución oficial.",
+      "simulación": "Entorno virtual que imita condiciones del mundo real para probar sistemas robóticos antes de usarlos.",
+      "parche": "Pieza de código diseñada para corregir errores o vulnerabilidades de seguridad en un programa.",
+      "tiempo de ejecución": "Periodo durante el cual un programa de computadora se está ejecutando activamente.",
+      "modelo": "Representación matemática o algorítmica utilizada para que un sistema tome decisiones automatizadas.",
+      "ingeniería": "Aplicación de ciencias y matemáticas para diseñar, construir y probar sistemas tecnológicos complejos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T03:41:42.757Z"
+}

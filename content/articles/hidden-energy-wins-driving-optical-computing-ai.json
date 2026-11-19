@@ -1,0 +1,231 @@
+{
+  "slug": "hidden-energy-wins-driving-optical-computing-ai",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=hidden-energy-wins-driving-optical-computing-ai",
+  "category": "technology",
+  "tags": [
+    "optical computing",
+    "artificial intelligence",
+    "hardware",
+    "photonics"
+  ],
+  "title": {
+    "en": "Hidden Energy Wins Driving Optical Computing AI",
+    "vi": "Năng lượng ẩn thúc đẩy trí tuệ nhân tạo tính toán quang học",
+    "fr": "L'énergie cachée fait gagner l'IA optique",
+    "de": "Optische Computer-KI durch versteckte Energie",
+    "es": "La energía oculta impulsa la inteligencia artificial óptica"
+  },
+  "hook": {
+    "en": "Data centers face severe power limits as artificial intelligence inference workloads expand. Startups now develop optical computing systems that use light instead of electricity to perform heavy math at a fraction of the energy cost, potentially reshaping the hardware foundation of modern data centers.",
+    "vi": "Các trung tâm dữ liệu đối mặt với giới hạn điện năng nghiêm trọng khi khối lượng công việc suy luận trí tuệ nhân tạo mở rộng. Các công ty khởi nghiệp nay phát triển hệ thống tính toán quang học sử dụng ánh sáng thay vì điện năng để thực hiện các phép toán nặng với chi phí năng lượng rất thấp.",
+    "fr": "Les centres de données font face à de sévères limites énergétiques alors que les charges de travail d'inférence en intelligence artificielle s'étendent. Des startups développent désormais des systèmes de calcul optique qui utilisent la lumière plutôt que l'électricité pour effectuer des calculs lourds à une fraction du coût énergétique, remodelant potentiellement la fondation matérielle des centres de données modernes.",
+    "de": "Rechenzentren stehen vor massiven Stromgrenzen, da KI-Inferenz-Workloads wachsen. Start-ups entwickeln nun optische Systeme, die Licht statt Elektrizität nutzen, um schwere Mathematik zu einem Bruchteil der Energiekosten auszuführen.",
+    "es": "Los centros de datos enfrentan graves límites de energía a medida que se expanden las cargas de trabajo de inferencia de inteligencia artificial. Las empresas emergentes ahora desarrollan sistemas de computación óptica que usan luz en lugar de electricidad para realizar cálculos pesados a una fracción del costo energético, lo que podría remodelar la base de hardware de los centros de datos modernos."
+  },
+  "sections": [
+    {
+      "heading_en": "The Power Crisis",
+      "heading_vi": "Cuộc khủng hoảng năng lượng",
+      "body_en": "Artificial intelligence inference operations consume massive amounts of electrical power in large data centers. Peter McMahon at Cornell University notes that power limits now restrict inference performance severely {source}.",
+      "body_vi": "Các hoạt động suy luận trí tuệ nhân tạo tiêu thụ lượng điện năng khổng lồ trong các trung tâm dữ liệu lớn. Peter McMahon tại Đại học Cornell lưu ý rằng giới hạn năng lượng nay hạn chế nghiêm trọng hiệu suất suy luận {source}.",
+      "heading_fr": "La crise énergétique",
+      "body_fr": "Les opérations d'inférence en intelligence artificielle consomment des quantités massives d'énergie électrique dans les grands centres de données. Peter McMahon de l'Université Cornell note que les limites de puissance restreignent désormais sévèrement les performances d'inférence {source}.",
+      "heading_de": "Die Energiekrise",
+      "body_de": "Künstliche-Intelligenz-Inferenzoperationen verbrauchen enorme Mengen an elektrischem Strom in großen Rechenzentren. Peter McMahon von der Cornell University merkt an, dass Leistungsgrenzen die Inferenzleistung nun stark einschränken {source}.",
+      "heading_es": "La crisis energética",
+      "body_es": "Las operaciones de inferencia de inteligencia artificial consumen enormes cantidades de energía eléctrica en los grandes centros de datos. Peter McMahon, de la Universidad de Cornell, señala que los límites de energía ahora restringen gravemente el rendimiento de la inferencia {source}."
+    },
+    {
+      "heading_en": "Free-Space Optics",
+      "heading_vi": "Quang học không gian tự do",
+      "body_en": "Startups like Lumai and Neurophos route light through air or small metamaterials to complete matrix multiplications in a single optical cycle. Patrick Bowen states that Neurophos targets speeds fifty times faster than specific graphics hardware.",
+      "body_vi": "Các công ty khởi nghiệp như Lumai và Neurophos truyền ánh sáng qua không khí hoặc vật liệu siêu nhỏ để hoàn thành phép nhân ma trận trong một chu kỳ quang học duy nhất.",
+      "heading_fr": "L'optique en espace libre",
+      "body_fr": "Des startups comme Lumai et Neurophos acheminent la lumière à travers l'air ou de petits métamatériaux pour achever des multiplications de matrices en un seul cycle optique. Patrick Bowen déclare que Neurophos vise des vitesses cinquante fois plus rapides que certains matériels graphiques spécifiques.",
+      "heading_de": "Freistrahl-Optik",
+      "body_de": "Start-ups wie Lumai und Neurophos leiten Licht durch Luft oder kleine Metamaterialien, um Matrixmultiplikationen in einem einzigen optischen Zyklus abzuschließen. Patrick Bowen erklärt, dass Neurophos Geschwindigkeiten anpeilt, die fünfzigmal schneller sind als bestimmte Grafik-Hardware.",
+      "heading_es": "Óptica de espacio libre",
+      "body_es": "Empresas emergentes como Lumai y Neurophos dirigen la luz a través del aire o pequeños metamateriales para completar multiplicaciones de matrices en un solo ciclo óptico. Patrick Bowen afirma que Neurophos apunta a velocidades cincuenta veces más rápidas que el hardware gráfico específico."
+    },
+    {
+      "heading_en": "Integrated Photonics",
+      "heading_vi": "Quang tử tích hợp",
+      "body_en": "Firms such as Q.ANT and Lightelligence embed optical circuits directly onto silicon chips for easier manufacturing. Michael Förtsch explains that semiconductor-compatible integrated photonic circuits offer a clearer path to high-volume production.",
+      "body_vi": "Các hãng như Q.ANT và Lightelligence tích hợp trực tiếp mạch quang học lên chip silicon để dễ chế tạo hơn. Michael Förtsch giải thích rằng các mạch quang tử tích hợp tương thích với chất bán dẫn mang lại con đường rõ ràng hơn.",
+      "heading_fr": "La photonique intégrée",
+      "body_fr": "Des entreprises telles que Q.ANT et Lightelligence intègrent des circuits optiques directement sur des puces en silicium pour faciliter la fabrication. Michael Förtsch explique que les circuits photoniques intégrés compatibles avec les semi-conducteurs offrent une voie plus claire vers une production à grand volume.",
+      "heading_de": "Integrierte Photonik",
+      "body_de": "Firmen wie Q.ANT und Lightelligence betten optische Schaltkreise direkt auf Siliziumchips ein, um die Herstellung zu erleichtern. Michael Förtsch erklärt, dass halbleiterkompatible integrierte photonische Schaltkreise einen klareren Weg zur Großserienfertigung bieten.",
+      "heading_es": "Fotónica integrada",
+      "body_es": "Firmas como Q.ANT y Lightelligence incrustan circuitos ópticos directamente en chips de silicio para facilitar la fabricación. Michael Förtsch explica que los circuitos fotónicos integrados compatibles con semiconductores ofrecen un camino más claro hacia la producción en gran volumen."
+    },
+    {
+      "heading_en": "In-Transit Computing",
+      "heading_vi": "Tính toán đang truyền tải",
+      "body_en": "Optalysys adds passive optical processing components directly into data center networking paths. Nick New points out that this approach performs necessary mathematical operations while data moves between memory and processors.",
+      "body_vi": "Optalysys bổ sung các linh kiện xử lý quang học thụ động trực tiếp vào đường dẫn mạng của trung tâm dữ liệu. Nick New chỉ ra rằng phương pháp này thực hiện các phép toán cần thiết trong lúc dữ liệu di chuyển.",
+      "heading_fr": "Le calcul en transit",
+      "body_fr": "Optalysys ajoute des composants de traitement optique passifs directement dans les chemins de réseau des centres de données. Nick New souligne que cette approche effectue les opérations mathématiques nécessaires pendant que les données se déplacent entre la mémoire et les processeurs.",
+      "heading_de": "Computing im Transit",
+      "body_de": "Optalysys fügt passive optische Verarbeitungskomponenten direkt in die Netzwerkpfade von Rechenzentren ein. Nick New weist darauf hin, dass dieser Ansatz notwendige mathematische Operationen ausführt, während sich Daten zwischen Speicher und Prozessoren bewegen.",
+      "heading_es": "Computación en tránsito",
+      "body_es": "Optalysys agrega componentes de procesamiento óptico pasivo directamente en las rutas de red de los centros de datos. Nick New señala que este enfoque realiza las operaciones matemáticas necesarias mientras los datos se mueven entre la memoria y los procesadores."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "IEEE Spectrum (2026)",
+      "url": "https://spectrum.ieee.org/optical-computing-ai"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/486/1080/1920",
+    "provider": "unsplash",
+    "author": "Florian Klauer",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Dina Genkina"
+    ],
+    "originalTitle": "Hidden Energy Wins Driving Optical Computing AI",
+    "originalUrl": "https://spectrum.ieee.org/optical-computing-ai",
+    "publisher": "IEEE Spectrum",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify current power bottlenecks in your artificial intelligence workloads.",
+      "Evaluate whether prefill or decode phases consume more energy.",
+      "Monitor commercial availability dates for emerging photonic servers."
+    ],
+    "vi": [
+      "Xác định các điểm nghẽn năng lượng hiện tại trong khối lượng công việc trí tuệ nhân tạo của bạn.",
+      "Đánh giá xem giai đoạn tiền điền hay giải mã tiêu thụ nhiều năng lượng hơn.",
+      "Theo dõi ngày cung cấp thương mại cho các máy chủ quang tử mới nổi."
+    ],
+    "fr": [
+      "Identifiez les goulets d'étranglement énergétiques actuels dans vos charges de travail d'intelligence artificielle.",
+      "Évaluez si les phases de pré-remplissage ou de décodage consomment le plus d'énergie.",
+      "Surveillez les dates de disponibilité commerciale des serveurs photoniques émergents."
+    ],
+    "de": [
+      "Identifiziere aktuelle Leistungsengpässe in deinen KI-Workloads.",
+      "Evaluiere, ob Prefill- oder Decode-Phasen mehr Energie verbrauchen.",
+      "Überwache kommerzielle Verfügbarkeitsdaten für aufstrebende photonische Server."
+    ],
+    "es": [
+      "Identifique los cuellos de botella de energía actuales en sus cargas de trabajo de inteligencia artificial.",
+      "Evalúe si las fases de relleno o decodificación consumen más energía.",
+      "Monitoree las fechas de disponibilidad comercial de los servidores fotónicos emergentes."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/486/1080/1920",
+      "provider": "unsplash",
+      "author": "Florian Klauer",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/366/1080/1920",
+      "provider": "unsplash",
+      "author": "Rayi Christian Wicaksono",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/6PF6DaiWz48"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/504/1080/1920",
+      "provider": "unsplash",
+      "author": "Jonathan Velasquez",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/4mta-DkJUAg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoQABwAPu1orU6ppiSiMAgBMB2JaQAAW+95mrKjUCbYto4AAP7qgkYpxD5y3XSVMnYu73cC/yK8BN+8s50vLkj8Gc1XpEtLh7WiRzHy3mlRhEd9fz/1lqApf2mdZAe+XNZOiAAA",
+  "dominant": "#8c8c8c",
+  "glossary": {
+    "en": {
+      "artificial intelligence": "Computer systems designed to perform tasks that typically require human cognition.",
+      "inference": "The phase where a trained artificial intelligence model generates predictions.",
+      "optical computing": "Computing systems that use light instead of electricity for math.",
+      "hardware": "The physical components of a computer system or data center.",
+      "matrix multiplications": "Complex mathematical operations fundamental to neural network computations.",
+      "graphics hardware": "Specialized processing units originally designed for rendering images.",
+      "integrated photonics": "Optical circuits embedded directly onto semiconductor silicon chips.",
+      "semiconductor": "Material used to manufacture computer chips and electronic circuits.",
+      "mathematical operations": "Calculations performed by processors during data processing.",
+      "memory": "Digital storage components that hold data within computer systems."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Công nghệ mô phỏng trí thông minh con người trên máy tính.",
+      "tính toán quang học": "Phương pháp dùng ánh sáng thay cho điện để thực hiện tính toán.",
+      "suy luận": "Quá trình mô hình trí tuệ nhân tạo đưa ra dự đoán hoặc kết quả.",
+      "phép nhân ma trận": "Phép toán nền tảng trong xử lý dữ liệu của trí tuệ nhân tạo.",
+      "vật liệu siêu nhỏ": "Vật liệu nhân tạo có cấu trúc đặc biệt để điều khiển ánh sáng.",
+      "quang tử tích hợp": "Công nghệ kết hợp mạch quang học trực tiếp lên bề mặt chip.",
+      "chất bán dẫn": "Vật liệu dùng làm nền tảng để chế tạo vi mạch điện tử.",
+      "linh kiện xử lý quang học": "Các bộ phận phần cứng dùng ánh sáng để xử lý thông tin."
+    },
+    "fr": {
+      "inférence": "Processus d'exécution d'un modèle d'intelligence artificielle entraîné pour faire des prédictions.",
+      "calcul optique": "Technologie utilisant la lumière au lieu de l'électricité pour effectuer des calculs.",
+      "peter mcmahon": "Chercheur de l'Université Cornell commentant les limites de puissance.",
+      "lumai": "Startup développant des systèmes de calcul optique en espace libre.",
+      "neurophos": "Startup visant des vitesses élevées grâce à des métamatériaux.",
+      "multiplications de matrices": "Opérations mathématiques lourdes fondamentales pour le traitement informatique.",
+      "matériels graphiques": "Processeur spécialisé souvent abrégé en GPU utilisé pour les calculs.",
+      "photonique intégrée": "Technique combinant des circuits optiques directement sur des puces en silicium.",
+      "q.ant": "Entreprise travaillant sur l'intégration de circuits optiques sur silicium.",
+      "lightelligence": "Entreprise développant des puces photoniques intégrées.",
+      "optalysys": "Entreprise intégrant des composants de traitement optique dans les réseaux."
+    },
+    "de": {
+      "inferenz": "Die Ausführung eines trainierten KI-Modells zur Erzeugung von Vorhersagen oder Antworten.",
+      "metamaterialien": "Künstlich hergestellte Materialien mit maßgeschneiderten optischen Eigenschaften.",
+      "matrixmultiplikationen": "Grundlegende mathematische Operationen, die intensiv in neuronalen Netzen verwendet werden.",
+      "integrierte photonik": "Technologie zur Integration optischer Schaltkreise auf Halbleiterchips.",
+      "siliziumchips": "Mikrochips auf Basis von Silizium als Grundmaterial für die Halbleiterfertigung.",
+      "photonische schaltkreise": "Schaltungen, die Lichtsignale anstelle von elektrischen Strömen zur Datenverarbeitung nutzen.",
+      "netzwerkpfade": "Wege, über die Daten zwischen verschiedenen Systemen im Rechenzentrum übertragen werden.",
+      "prozessoren": "Hauptrecheneinheiten zur Ausführung von Programmen und mathematischen Aufgaben."
+    },
+    "es": {
+      "inferencia": "Proceso en el que un modelo de inteligencia artificial aplica lo aprendido para hacer predicciones.",
+      "metamateriales": "Materiales artificiales diseñados con propiedades únicas no encontradas en la naturaleza.",
+      "matrices": "Arreglos rectangulares de números utilizados para realizar operaciones matemáticas complejas.",
+      "fotónica": "Ciencia y tecnología que genera, controla y detecta fotones o partículas de luz.",
+      "semiconductores": "Materiales con conductividad eléctrica variable, fundamentales para fabricar chips electrónicos.",
+      "procesadores": "Componentes principales que ejecutan las instrucciones de los programas informáticos.",
+      "hardware": "Conjunto de elementos físicos o materiales que componen una computadora.",
+      "circuitos": "Rutas interconectadas por donde fluyen señales eléctricas u ópticas."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-18T04:05:39.787Z"
+}

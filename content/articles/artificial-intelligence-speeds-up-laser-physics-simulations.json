@@ -1,0 +1,245 @@
+{
+  "slug": "artificial-intelligence-speeds-up-laser-physics-simulations",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=artificial-intelligence-speeds-up-laser-physics-simulations",
+  "category": "technology",
+  "tags": [
+    "artificial intelligence",
+    "laser physics",
+    "optics",
+    "neural networks"
+  ],
+  "title": {
+    "en": "Artificial Intelligence Speeds Up Laser Physics Simulations",
+    "vi": "Trí tuệ nhân tạo tăng tốc mô phỏng vật lý laser",
+    "fr": "L'intelligence artificielle accélère les simulations en physique des lasers",
+    "de": "Künstliche Intelligenz beschleunigt laserphysikalische Simulationen",
+    "es": "La inteligencia artificial acelera las simulaciones de física láser"
+  },
+  "hook": {
+    "en": "Researchers have built an artificial intelligence model that accelerates laser physics calculations by a factor of two hundred and fifty. Scientists at Stanford University, the University of California, Los Angeles, and SLAC National Accelerator Laboratory designed the system to predict how light waves interact inside optical crystals with high accuracy {source}.",
+    "vi": "Các nhà nghiên cứu đã xây dựng một mô hình trí tuệ nhân tạo giúp đẩy nhanh các tính toán vật lý laser lên gấp hai trăm năm mươi lần. Các nhà khoa học tại Đại học Stanford, Đại học California tại Los Angeles và Phòng thí nghiệm Máy gia tốc Quốc gia SLAC đã thiết kế hệ thống này để dự đoán cách các sóng ánh sáng tương tác bên trong các tinh thể quang học với độ chính xác cao {source}.",
+    "fr": "Des chercheurs ont conçu un modèle d'intelligence artificielle qui accélère les calculs de physique des lasers d'un facteur deux cent cinquante. Des scientifiques de l'Université Stanford, de l'Université de Californie à Los Angeles et du SLAC National Accelerator Laboratory ont créé ce système pour prédire avec une grande précision comment les ondes lumineuses interagissent à l'intérieur de cristaux optiques {source}.",
+    "de": "Forscher haben ein Modell der künstlichen Intelligenz entwickelt, das laserphysikalische Berechnungen um das Zweihundertfünffache beschleunigt. Wissenschaftler der Stanford University, der University of California in Los Angeles und des SLAC National Accelerator Laboratory entwarfen das System, um vorherzusagen, wie Lichtwellen in optischen Kristallen mit hoher Genauigkeit interagieren {source}.",
+    "es": "Un grupo de investigadores ha creado un modelo de inteligencia artificial que acelera los cálculos de física láser por un factor de doscientos cincuenta. Científicos de la Universidad de Stanford, la Universidad de California en Los Ángeles y el Laboratorio Nacional Acelerador SLAC diseñaron el sistema para predecir con gran precisión cómo interactúan las ondas de luz dentro de los cristales ópticos {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Managing Laser Frequency Conversions",
+      "heading_vi": "Quản lý việc chuyển đổi tần số laser",
+      "body_en": "At SLAC's upgraded Linac Coherent Light Source, infrared light transforms into green light and then into ultraviolet light before striking a cathode to release electrons. The precise timing and shape of the ultraviolet pulse determine the quality of the resulting X-rays. Predicting these frequency conversions is essential for optimizing the system, though traditional software requires massive computing resources.",
+      "body_vi": "Tại nguồn sáng kết hợp tuyến tính nâng cấp của SLAC, ánh sáng hồng ngoại chuyển hóa thành ánh sáng xanh lá rồi thành ánh sáng tử ngoại trước khi chạm vào cathode để giải phóng các điện tử. Thời điểm chính xác và hình dạng của xung tử ngoại quyết định chất lượng của tia X tạo ra. Việc dự đoán các quá trình chuyển đổi tần số này là điều thiết yếu để tối ưu hóa hệ thống, dù phần mềm truyền thống đòi hỏi nguồn tài nguyên máy tính khổng lồ.",
+      "heading_fr": "Gestion des conversions de fréquence laser",
+      "body_fr": "Au sein du Linac Coherent Light Source amélioré du SLAC, la lumière infrarouge se transforme en lumière verte puis en ultraviolet avant de frapper une cathode pour libérer des électrons. Le minutage précis et la forme de l'impulsion ultraviolette déterminent la qualité des rayons X obtenus. Prédire ces conversions de fréquence est essentiel pour optimiser le système, bien que les logiciels traditionnels exigent des ressources informatiques massives.",
+      "heading_de": "Steuerung von Laserfrequenzumwandlungen",
+      "body_de": "Am aufgerüsteten Linac Coherent Light Source des SLAC wandelt sich Infrarotlicht in grünes und anschließend in ultraviolettes Licht um, bevor es auf eine Kathode trifft, um Elektronen freizusetzen. Die präzise Timing und Form des ultravioletten Impulses bestimmen die Qualität der resultierenden Röntgenstrahlen. Die Vorhersage dieser Frequenzumwandlungen ist für die Optimierung des Systems unerlässlich, obwohl herkömmliche Software enorme Rechenressourcen erfordert.",
+      "heading_es": "La gestión de las conversiones de frecuencia láser",
+      "body_es": "En el *Linac Coherent Light Source* actualizado de SLAC, la luz infrarroja se transforma en luz verde y luego en luz ultravioleta antes de incidir en un cátodo para liberar electrones. La sincronización y la forma precisas del pulso ultravioleta determinan la calidad de los rayos X resultantes. Predecir estas conversiones de frecuencia es esencial para optimizar el sistema, aunque el software tradicional requiere enormes recursos informáticos."
+    },
+    {
+      "heading_en": "Overcoming Computing Bottlenecks",
+      "heading_vi": "Vượt qua nút thắt tính toán",
+      "body_en": "Conventional simulations solve the nonlinear Schrödinger equation using the split-step Fourier method, which accounts for roughly ninety-five percent of total processing time. To remove this bottleneck, the team developed a recurrent neural network based on long short-term memory. This network works entirely with a compressed representation of frequency characteristics instead of repeatedly converting between time and frequency.",
+      "body_vi": "Các mô phỏng thông thường giải phương trình phi tuyến tính Schrödinger bằng phương pháp Fourier bước chia, chiếm khoảng chín mươi lăm phần trăm tổng thời gian xử lý. Để loại bỏ nút thắt này, nhóm nghiên cứu đã phát triển một mạng thần kinh hồi tiếp dựa trên bộ nhớ dài ngắn hạn (*long short-term memory*). Mạng này hoạt động hoàn toàn với một biểu diễn nén của các đặc trưng tần số thay vì liên tục chuyển đổi giữa thời gian và tần số.",
+      "heading_fr": "Surmonter les goulets d'étranglement informatiques",
+      "body_fr": "Les simulations conventionnelles résolvent l'équation de Schrödinger non linéaire à l'aide de la méthode de Fourier par pas fractionnés, qui représente environ quatre-vingt-quinze pour cent du temps de traitement total. Pour supprimer ce goulet d'étranglement, l'équipe a développé un réseau de neurones récurrents basé sur la mémoire à long terme et à court terme. Ce réseau fonctionne entièrement avec une représentation compressée des caractéristiques de fréquence au lieu de convertir sans cesse entre le temps et la fréquence.",
+      "heading_de": "Überwindung von Rechenengpässen",
+      "body_de": "Herkömmliche Simulationen lösen die nichtlineare Schrödinger-Gleichung mithilfe der Split-Step-Fourier-Methode, die etwa fünfundneunzig Prozent der gesamten Verarbeitungszeit ausmacht. Um diesen Engpass zu beseitigen, entwickelte das Team ein rekurrentes neuronales Netz auf Basis von Long Short-Term Memory. Dieses Netz arbeitet ausschließlich mit einer komprimierten Darstellung der Frequenzeigenschaften, anstatt wiederholt zwischen Zeit und Frequenz zu konvertieren.",
+      "heading_es": "La superación de los cuellos de botella informáticos",
+      "body_es": "Las simulaciones convencionales resuelven la ecuación de Schrödinger no lineal mediante el método de Fourier de pasos divididos, que representa aproximadamente el noventa y cinco por ciento del tiempo total de procesamiento. Para eliminar este cuello de botella, el equipo desarrolló una red neuronal recurrente basada en memoria a corto y largo plazo. Esta red trabaja enteramente con una representación comprimida de las características de frecuencia en lugar de convertir repetidamente entre tiempo y frecuencia."
+    },
+    {
+      "heading_en": "Achieving Millisecond Predictions",
+      "heading_vi": "Đạt được dự đoán trong tích tắc mili-giây",
+      "body_en": "When tested on noncollinear sum frequency generation, the model accurately reproduced how laser pulses changed over time and across different frequencies. Processing multiple simulations with graphics processing units reduced the average calculation time to just a few milliseconds. [p:This dramatic speed increase allows researchers to obtain predictions] without sacrificing precision.",
+      "body_vi": "Khi thử nghiệm trên quá trình tạo tần số tổng không thẳng hàng (*noncollinear sum frequency generation*), mô hình tái tạo chính xác cách các xung laser thay đổi theo thời gian và qua các tần số khác nhau. Việc xử lý nhiều mô phỏng bằng các đơn vị xử lý đồ họa đã giảm thời gian tính toán trung bình xuống chỉ còn vài mili-giây. [p:Sự gia tăng tốc độ đáng kinh ngạc này cho phép các nhà nghiên cứu thu được kết quả dự đoán] mà không phải hy sinh độ chính xác.",
+      "heading_fr": "Atteindre des prédictions en millisecondes",
+      "body_fr": "Lors de tests sur la génération de somme de fréquences non colinéaires, le modèle a reproduit avec précision l'évolution des impulsions laser dans le temps et selon différentes fréquences. Le traitement de plusieurs simulations à l'aide d'unités de traitement graphique a réduit le temps de calcul moyen à quelques millisecondes seulement. [p:Cette augmentation spectaculaire de la vitesse permet aux chercheurs d'obtenir des prédictions] sans sacrifier la précision.",
+      "heading_de": "Erzielung von Millisekunden-Vorhersagen",
+      "body_de": "Beim Test an der nichtkollinearen Summenfrequenzgeneration gab das Modell genau wieder, wie sich Laserimpulse im Laufe der Zeit und über verschiedene Frequenzen hinweg veränderten. Die Verarbeitung mehrerer Simulationen mit Grafikprozessoren reduzierte die durchschnittliche Berechnungszeit auf nur wenige Millisekunden. [p:Dieser dramatische Geschwindigkeitszuwachs ermöglicht es Forschern, Vorhersagen zu erhalten], ohne Präzision einzubüßen.",
+      "heading_es": "La obtención de predicciones en milisegundos",
+      "body_es": "Al probarse en la generación de suma de frecuencias no colineales, el modelo reprodujo con precisión cómo cambiaban los pulsos láser a lo largo del tiempo y en diferentes frecuencias. El procesamiento de múltiples simulaciones con unidades de procesamiento gráfico redujo el tiempo medio de cálculo a solo unos pocos milisegundos. [p:Este dramático aumento de velocidad permite a los investigadores obtener predicciones] sin sacrificar la precisión."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261111005913.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1530447920184-b88c8872?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1530447920184-b88c8872?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Bill Jelen",
+    "authorUrl": "https://unsplash.com/@billjelen?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/m010U75wdxE",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/m010U75wdxE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "AI supercharges laser physics with a stunning 250x speed boost",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261111005913.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of this AI model as an instant translator that skips repetitive dictionary checks to understand a complex conversation in milliseconds. You can test similar predictive models in your own data workflows by replacing redundant computational loops with compressed representations.",
+    "vi": "Hãy hình dung mô hình trí tuệ nhân tạo này giống như một thông dịch viên tức thời, bỏ qua việc tra từ điển lặp đi lặp lại để hiểu một cuộc trò chuyện phức tạp chỉ trong tích tắc mili-giây. Bạn có thể thử nghiệm các mô hình dự đoán tương tự trong quy trình dữ liệu của mình bằng cách thay thế các vòng lặp tính toán dư thừa bằng các biểu diễn nén.",
+    "fr": "Considérez ce modèle d'IA comme un traducteur instantané qui évite les vérifications répétitives dans le dictionnaire pour comprendre une conversation complexe en quelques millisecondes. Vous pouvez tester des modèles prédictifs similaires dans vos propres flux de données en remplaçant les boucles de calcul redondantes par des représentations compressées.",
+    "de": "Stell dir dieses KI-Modell wie einen Sofortübersetzer vor, der wiederholte Wörterbuchprüfungen überspringt, um ein komplexes Gespräch in Millisekunden zu verstehen. Du kannst ähnliche Vorhersagemodelle in deinen eigenen Daten-Workflows testen, indem du redundante Rechenschleifen durch komprimierte Darstellungen ersetzt.",
+    "es": "Piense en este modelo de IA como un traductor instantáneo que omite las consultas repetitivas en el diccionario para comprender una conversación compleja en milisegundos. Puede probar modelos predictivos similares en sus propios flujos de datos sustituyendo los bucles computacionales redundantes por representaciones comprimidas."
+  },
+  "applySteps": {
+    "en": [
+      "Identify computational bottlenecks in your current simulation workflow.",
+      "Replace redundant data transformation steps with a compressed format.",
+      "Run benchmark tests to measure processing time improvements."
+    ],
+    "vi": [
+      "Xác định các nút thắt tính toán trong quy trình mô phỏng hiện tại của bạn.",
+      "Thay thế các bước chuyển đổi dữ liệu dư thừa bằng một định dạng nén.",
+      "Chạy các bài kiểm tra chuẩn để đo lường mức độ cải thiện thời gian xử lý."
+    ],
+    "fr": [
+      "Identifiez les goulets d'étranglement informatiques dans votre flux de simulation actuel.",
+      "Remplacez les étapes de transformation de données redondantes par un format compressé.",
+      "Exécutez des tests de référence pour mesurer les améliorations du temps de traitement."
+    ],
+    "de": [
+      "Identifiziere Rechenengpässe in deinem aktuellen Simulations-Workflow.",
+      "Ersetze redundante Datentransformationsschritte durch ein komprimiertes Format.",
+      "Führe Benchmark-Tests durch, um Verbesserungen der Verarbeitungszeit zu messen."
+    ],
+    "es": [
+      "Identifique los cuellos de botella informáticos en su flujo de trabajo de simulación actual.",
+      "Reemplace los pasos redundantes de transformación de datos con un formato comprimido.",
+      "Ejecute pruebas de referencia para medir las mejoras en el tiempo de procesamiento."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1530447920184-b88c8872?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1530447920184-b88c8872?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Bill Jelen",
+      "authorUrl": "https://unsplash.com/@billjelen?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/m010U75wdxE",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/m010U75wdxE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/EYm7NP5KsZw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/EYm7NP5KsZw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1667482699490-fc439db2cfd6?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1667482699490-fc439db2cfd6?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Daniele Levis Pelusi",
+      "authorUrl": "https://unsplash.com/@yogidan2012?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/QcQxZcUwuso",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/QcQxZcUwuso/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1745591915039-d2b1962483d4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1745591915039-d2b1962483d4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Logan Voss",
+      "authorUrl": "https://unsplash.com/@loganvoss?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/eFy1oAV2CxQ",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/eFy1oAV2CxQ/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMFNwZWVkcyUyMFVwJTIwTGFzZXIlMjBQaHlzaWNzJTIwU2ltdWxhdGlvbnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjE2NjV8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACsAGlgUPIrEBBNB4As78gA/v5uFdR441w1Q3XptrUbtPbgMqvp8uN3njj1JUdoOOxhETlVZAh95khfMDOLEGr7LeGV1dvDt/GRiYJrEcqgWjDbUmk6L0HcBIyQMN3qV/lTf316N9prXm0FeIwTE7995rEpG2VGzllmai48mkAA",
+  "dominant": "#1f2633",
+  "glossary": {
+    "en": {
+      "linac coherent light source": "An upgraded facility at SLAC used for generating high-energy X-ray pulses.",
+      "cathode": "An electrode that releases electrons when struck by ultraviolet light pulses.",
+      "nonlinear schrödinger equation": "A complex mathematical formula solved in conventional laser simulations.",
+      "split-step fourier method": "A traditional computational technique that accounts for most processing time.",
+      "recurrent neural network": "An artificial intelligence architecture designed to process sequential data.",
+      "long short-term memory": "A type of recurrent neural network capable of learning long-term dependencies.",
+      "noncollinear sum frequency generation": "A specific optical process used to test the artificial intelligence model.",
+      "graphics processing units": "Specialized electronic circuits that accelerate the processing of multiple simulations."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Hệ thống máy tính mô phỏng khả năng tư duy và học tập của con người.",
+      "phòng thí nghiệm máy gia tốc quốc gia slac": "Trung tâm nghiên cứu khoa học lớn của Mỹ chuyên về vật lý hạt và công nghệ gia tốc.",
+      "tinh thể quang học": "Vật liệu rắn có cấu trúc tinh thể dùng để điều khiển và biến đổi ánh sáng laser.",
+      "nguồn sáng kết hợp tuyến tính": "Thiết bị phát ra chùm tia sáng có pha ổn định và bước sóng đồng nhất phục vụ nghiên cứu.",
+      "cathode": "Điện cực âm có chức năng phát ra các hạt điện tử khi được kích thích.",
+      "phương trình phi tuyến tính schrödinger": "Phương trình toán học mô tả sự thay đổi trạng thái lượng tử theo thời gian.",
+      "mạng thần kinh hồi tiếp": "Mô hình học máy xử lý dữ liệu tuần tự bằng cách lưu giữ thông tin từ các bước trước.",
+      "bộ nhớ dài ngắn hạn": "Kiến trúc mạng thần kinh chuyên xử lý và dự đoán dữ liệu chuỗi thời gian dài.",
+      "đơn vị xử lý đồ họa": "Vi mạch chuyên dụng được thiết kế để tính toán song song tốc độ cao."
+    },
+    "fr": {
+      "cathode": "Électrode par laquelle un courant électrique entre dans un dispositif ou par laquelle des électrons sortent.",
+      "équation de schrödinger": "Équation fondamentale de la mécanique quantique décrivant l'évolution temporelle d'un système physique.",
+      "réseau de neurones récurrents": "Architecture de réseau de neurones artificielle adaptée au traitement de données séquentielles.",
+      "mémoire à long terme et à court terme": "Type spécifique de réseau de neurones récurrents capable d'apprendre des dépendances à long terme.",
+      "génération de somme de fréquences": "Processus d'optique non linéaire où deux photons de fréquences différentes se combinent pour en former un nouveau.",
+      "unités de traitement graphique": "Processeur spécialisé conçu pour accélérer le rendu visuel et le calcul parallèle massif.",
+      "cristaux optiques": "Matériaux cristallins utilisés pour manipuler les faisceaux lumineux et modifier leurs propriétés.",
+      "flux de données": "Ensemble des étapes successives de transmission et de traitement automatisé d'informations numériques."
+    },
+    "de": {
+      "infrarotlicht": "Unsichtbare elektromagnetische Strahlung mit längeren Wellenjängen als sichtbares Licht.",
+      "kathode": "Negative Elektrode, die Elektronen freisetzt, wenn Licht auf sie trifft.",
+      "nichtlineare schrödinger-gleichung": "Mathematische Formel zur Beschreibung der Ausbreitung von Lichtwellen.",
+      "split-step-fourier-methode": "Rechenverfahren zur Lösung komplexer Wellengleichungen.",
+      "rekurrentes neuronales netz": "Künstliche Intelligenz, die sich für sequenzielle Daten eignet.",
+      "long short-term memory": "Spezielle Architektur für neuronale Netze zur Verarbeitung von Sequenzen.",
+      "grafikprozessoren": "Spezialisierte Prozessoren für parallele Berechnungen.",
+      "benchmark-tests": "Vergleichstests zur Messung von Leistung und Geschwindigkeit."
+    },
+    "es": {
+      "cátodo": "Electrodo de un tubo o dispositivo electrónico que emite electrones.",
+      "ecuación de schrödinger no lineal": "Fórmula matemática utilizada en física para describir el comportamiento de las ondas.",
+      "red neuronal recurrente": "Modelo de inteligencia artificial diseñado para procesar datos secuenciales.",
+      "memoria a corto y largo plazo": "Arquitectura de red neuronal especializada en aprender dependencias a largo plazo.",
+      "frecuencias": "Número de oscilaciones de una onda por unidad de tiempo.",
+      "unidades de procesamiento gráfico": "Circuitos electrónicos especializados en acelerar el cálculo de datos.",
+      "pulsos": "Breves ráfagas de energía electromagnética.",
+      "cristales ópticos": "Materiales estructurados utilizados para manipular haces de luz."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T04:06:42.757Z"
+}

@@ -1,0 +1,259 @@
+{
+  "slug": "remote-stroke-care-robots",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=remote-stroke-care-robots",
+  "category": "technology",
+  "tags": [
+    "stroke",
+    "robotics",
+    "telesurgery",
+    "medicine"
+  ],
+  "title": {
+    "en": "Remote Stroke Care Robots",
+    "vi": "Robot Chăm Sóc Đột Quỵ Từ Xa",
+    "fr": "Robots de soins de l'AVC à distance",
+    "de": "Robotergestützte Schlaganfallversorgung aus der Ferne",
+    "es": "Robots de Atención Remota para Accidentes Cerebrovasculares"
+  },
+  "hook": {
+    "en": "Remedy Robotics developed a steerable catheter and software system to perform thrombectomies for ischemic stroke patients in remote areas {source}. In 2025 tests in Toronto, neurosurgeons completed procedures nearly twice as fast as the standard method, bringing remote vascular surgery closer to clinical reality.",
+    "vi": "Remedy Robotics phát triển một ống thông có thể điều hướng và hệ thống phần mềm để thực hiện thủ thuật lấy huyết khối cho bệnh nhân đột quỵ thiếu máu cục bộ ở vùng sâu vùng xa {source}. Trong các thử nghiệm năm 2025 tại Toronto, các bác sĩ phẫu thuật thần kinh đã hoàn thành các thủ thuật nhanh gấp gần hai lần so với phương pháp tiêu chuẩn.",
+    "fr": "Remedy Robotics a développé un cathéter orientable et un système logiciel pour réaliser des thrombectomies chez des patients victimes d'un AVC ischémique dans des zones isolées {source}. Lors de tests menés en 2025 à Toronto, des neurochirurgiens ont achevé les interventions presque deux fois plus vite que la méthode standard, rapprochant la chirurgie vasculaire à distance de la réalité clinique.",
+    "de": "Remedy Robotics hat einen steuerbaren Katheter und ein Softwaresystem entwickelt, um Thrombektomien bei Patienten mit ischämischem Schlaganfall in abgelegenen Gebieten durchzuführen {source}. Bei Tests in Toronto im Jahr 2025 schlossen Neurochirurgen Eingriffe fast doppelt so schnell ab wie mit der Standardmethode, womit die vaskuläre Chirurgie aus der Ferne der klinischen Realität näher rückt.",
+    "es": "Remedy Robotics desarrolló un catéter dirigible y un sistema de software para realizar trombectomías en pacientes con infarto cerebral en zonas remotas {source}. En pruebas de 2025 en Toronto, los neurocirujanos completaron procedimientos casi el doble de rápido que el método estándar, acercando la cirugía vascular remota a la realidad clínica."
+  },
+  "sections": [
+    {
+      "heading_en": "The Stroke Gap",
+      "heading_vi": "Khoảng Trống Điều Trị Đột Quỵ",
+      "body_en": "According to 2025 data, at least 5 million people suffer ischemic strokes annually. Only about 1 in 10 eligible patients receive a thrombectomy. Remedy cofounders David Bell and Jake Sganga designed a robotic system to close this gap by reaching patients who cannot reach a hospital in time.",
+      "body_vi": "Theo dữ liệu năm 2025, ít nhất 5 triệu người bị đột quỵ thiếu máu cục bộ hàng năm. Chỉ khoảng 1 trong số 10 bệnh nhân đủ điều kiện được lấy huyết khối. Những người đồng sáng lập Remedy là David Bell và Jake Sganga đã thiết kế một hệ thống robot để thu hẹp khoảng cách này bằng cách tiếp cận những bệnh nhân không thể đến bệnh viện kịp thời.",
+      "heading_fr": "Le fossé des AVC",
+      "body_fr": "Selon des données de 2025, au moins 5 millions de personnes subissent un AVC ischémique chaque année. Seul 1 patient éligible sur 10 environ bénéficie d'une thrombectomie. Les cofondateurs de Remedy, David Bell et Jake Sganga, ont conçu un système robotique pour combler ce fossé en atteignant les patients qui ne peuvent pas rejoindre un hôpital à temps.",
+      "heading_de": "Die Versorgungslücke",
+      "body_de": "Aktuellen Daten zufolge erleiden jährlich mindestens 5 Millionen Menschen einen ischämischen Schlaganfall. Nur etwa 1 von 10 infrage kommenden Patienten erhält eine Thrombektomie. Die Remedy-Mitgründer David Bell und Jake Sganga entwarfen ein Robotersystem, um diese Lücke zu schließen, indem sie Patienten erreichen, die nicht rechtzeitig ein Krankenhaus aufsuchen können.",
+      "heading_es": "La Brecha del Accidente Cerebrovascular",
+      "body_es": "Según datos de 2025, al menos 5 millones de personas sufren infartos cerebrales al año. Solo alrededor de 1 de cada 10 pacientes elegibles recibe una trombectomía. Los cofundadores de Remedy, David Bell y Jake Sganga, diseñaron un sistema robótico para cerrar esta brecha llegando a pacientes que no pueden llegar a un hospital a tiempo."
+    },
+    {
+      "heading_en": "Robotic Navigation",
+      "heading_vi": "Điều Hướng Bằng Robot",
+      "body_en": "The Remedy N1 robot uses a steerable catheter that avoids the need for a traditional guide wire. A computer-vision algorithm overlays CT scans onto X-ray feeds, automatically translating the surgeon's intended direction into correct physical movements inside the blood vessels.",
+      "body_vi": "Robot Remedy N1 sử dụng một ống thông có thể điều hướng giúp loại bỏ nhu cầu dùng dây dẫn truyền thống. Thuật toán thị giác máy tính (*computer vision*) chồng hình ảnh chụp cắt lớp vi tính (*CT scan*) lên nguồn hình ảnh X-quang, tự động chuyển đổi hướng dự định của bác sĩ phẫu thuật thành các chuyển động vật lý chính xác bên trong mạch máu.",
+      "heading_fr": "Navigation robotique",
+      "body_fr": "Le robot Remedy N1 utilise un cathéter orientable qui évite le besoin d'un fil-guide traditionnel. Un algorithme de vision par ordinateur superpose des scanners tomodensitométriques à des flux de rayons X, traduisant automatiquement la direction voulue par le chirurgien en mouvements physiques corrects à l'intérieur des vaisseaux sanguins.",
+      "heading_de": "Robotische Navigation",
+      "body_de": "Der Remedy-N1-Roboter verwendet einen steuerbaren Katheter, der einen herkömmlichen Führungsdraht überflüssig macht. Ein Algorithmus für Computer Vision legt CT-Scans über Röntgenbilder und übersetzt die beabsichtigte Richtung des Chirurgen automatisch in korrekte physische Bewegungen in den Blutgefäßen.",
+      "heading_es": "Navegación Robótica",
+      "body_es": "El robot Remedy N1 utiliza un catéter dirigible que evita la necesidad de una guía tradicional. Un algoritmo de visión artificial superpone tomografías computarizadas en las transmisiones de rayos X, traduciendo automáticamente la dirección prevista del cirujano en movimientos físicos correctos dentro de los vasos sanguíneos."
+    },
+    {
+      "heading_en": "Network Limits",
+      "heading_vi": "Giới Hạn Mạng Lưới",
+      "body_en": "Telesurgery depends on stable network connections. While researchers note that surgeons adapt well to latency, rural areas often struggle to meet safe speed thresholds. Remedy targets a round-trip latency of no more than 150 milliseconds, pausing all action if lag exceeds this limit.",
+      "body_vi": "Phẫu thuật từ xa phụ thuộc vào các kết nối mạng ổn định. Mặc dù các nhà nghiên cứu lưu ý rằng bác sĩ thích ứng tốt với độ trễ (*latency*), các vùng nông thôn thường gặp khó khăn trong việc đáp ứng các ngưỡng tốc độ an toàn. Remedy đặt mục tiêu độ trễ khứ hồi không quá 150 mili giây, tạm dừng mọi thao tác nếu độ trễ vượt quá giới hạn này.",
+      "heading_fr": "Limites des réseaux",
+      "body_fr": "La téléchirurgie dépend de connexions réseau stables. Bien que les chercheurs notent que les chirurgiens s'adaptent bien à la latence, les zones rurales peinent souvent à atteindre les seuils de vitesse sécuritaires. Remedy vise une latence aller-retour maximale de 150 millisecondes, suspendant toute action si le décalage dépasse cette limite.",
+      "heading_de": "Netzwerkgrenzen",
+      "body_de": "Teleschirurgie hängt von stabilen Netzwerkverbindungen ab. Während Forscher feststellen, dass Chirurgen sich gut an Latenzen anpassen, haben ländliche Gebiete oft Schwierigkeiten, sichere Geschwindigkeitsschwellenwerte einzuhalten. Remedy strebt eine Hin- und Rücklauflatenz von maximal 150 Millisekunden an und pausiert alle Aktionen, wenn diese Verzögerung überschritten wird.",
+      "heading_es": "Límites de la Red",
+      "body_es": "La telecirugía depende de conexiones de red estables. Si bien los investigadores señalan que los cirujanos se adaptan bien a la latencia, las zonas rurales a menudo luchan por cumplir con los umbrales de velocidad seguros. Remedy apunta a una latencia de ida y vuelta de no más de 150 milisegundos, pausando toda acción si el retraso supera este límite."
+    },
+    {
+      "heading_en": "Human Trials",
+      "heading_vi": "Thử Nghiệm Trên Con Người",
+      "body_en": "In September 2025, neurosurgeon Vitor Mendes Pereira and his team at Unity Health Toronto performed the first fully remote robotic neurointerventional procedures on 10 consenting patients. Remedy announced 62 million US dollars in new funding to support upcoming clinical trials near the end of 2027.",
+      "body_vi": "Vào tháng 9 năm 2025, bác sĩ phẫu thuật thần kinh Vitor Mendes Pereira và nhóm của ông tại Unity Health Toronto đã thực hiện các thủ thuật can thiệp thần kinh bằng robot từ xa hoàn toàn đầu tiên trên 10 bệnh nhân đồng ý. Remedy công bố khoản tài trợ mới trị giá 62 triệu đô la Mỹ để hỗ trợ các thử nghiệm lâm sàng sắp tới vào cuối năm 2027.",
+      "heading_fr": "Essais sur l'humain",
+      "body_fr": "En septembre 2025, le neurochirurgien Vitor Mendes Pereira et son équipe d'Unity Health Toronto ont réalisé les premières interventions neuro-interventionnelles robotiques entièrement à distance sur 10 patients consentants. Remedy a annoncé un nouveau financement de 62 millions de dollars américains pour soutenir les essais cliniques à venir vers la fin de 2027.",
+      "heading_de": "Humanstudien",
+      "body_de": "Im September 2025 führten der Neurochirurg Vitor Mendes Pereira und sein Team bei Unity Health Toronto die ersten vollständig fernbedienten robotischen neurointerventionellen Eingriffe an 10 einwilligenden Patienten durch. Remedy kündigte 62 Millionen US-Dollar an neuen Finanzmitteln an, um bevorstehende klinische Studien Ende 2027 zu unterstützen.",
+      "heading_es": "Ensayos Humanos",
+      "body_es": "En septiembre de 2025, el neurocirujano Vitor Mendes Pereira y su equipo en Unity Health Toronto realizaron los primeros procedimientos neurointervencionistas robóticos totalmente remotos en 10 pacientes que dieron su consentimiento. Remedy anunció 62 millones de dólares estadounidenses en nuevos financiamientos para respaldar los próximos ensayos clínicos cerca de finales de 2027."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "IEEE Spectrum (2026)",
+      "url": "https://spectrum.ieee.org/innomotics-electric-motors-drive-systems"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1581090465357-c8a1f71f0407?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1581090465357-c8a1f71f0407?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "ThisisEngineering",
+    "authorUrl": "https://unsplash.com/@thisisengineering?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/4w0XkDe2Ee8",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/4w0XkDe2Ee8/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Innomotics"
+    ],
+    "originalTitle": "Dynamo-Electric Principle: 160 Years Still Running",
+    "originalUrl": "https://spectrum.ieee.org/innomotics-electric-motors-drive-systems",
+    "publisher": "IEEE Spectrum",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Much like a driver relying on a GPS navigation system to safely steer through unfamiliar roads, a surgeon uses robotic software to navigate complex blood vessels. [p:Can remote robotics successfully bring emergency stroke care to every isolated community worldwide?] Try testing connection speeds before planning any telemedicine procedures.",
+    "vi": "Giống như tài xetí dựa vào hệ thống định vị GPS để lái xe an toàn qua các con đường xa lạ, bác sĩ phẫu thuật sử dụng phần mềm robot để định hướng các mạch máu phức tạp. [p:Liệu robot từ xa có thể mang lại dịch vụ chăm sóc đột quỵ khẩn cấp thành công cho mọi cộng đồng cô lập trên toàn thế giới?] Hãy kiểm tra tốc độ kết nối trước khi lên kế hoạch cho bất kỳ thủ thuật y tế từ xa nào.",
+    "fr": "Tout comme un conducteur s'appuyant sur un système de navigation GPS pour se diriger en toute sécurité sur des routes inconnues, un chirurgien utilise un logiciel robotique pour naviguer dans des vaisseaux sanguins complexes. [p:La robotique à distance peut-elle apporter avec succès des soins d'urgence en cas d'AVC à chaque communauté isolée du monde ?] Essayez de tester les vitesses de connexion avant de planifier toute intervention de télémédecine.",
+    "de": "Ähnlich wie ein Autofahrer, der sich auf ein GPS-Navigationssystem verlässt, um sicher durch unbekannte Straßen zu steuern, nutzt ein Chirurg Robotersoftware, um durch komplexe Blutgefäße zu navigieren. [p:Kann die Robotik aus der Ferne die Notfall-Schlaganfallversorgung erfolgreich in jede isolierte Gemeinde weltweit bringen?] Versuche, die Verbindungsgeschwindigkeiten zu testen, bevor du Telemedizin-Eingriffe planst.",
+    "es": "Al igual que un conductor que confía en un sistema de navegación GPS para conducir con seguridad por carreteras desconocidas, un cirujano utiliza software robótico para navegar por vasos sanguíneos complejos. [p:¿Puede la robótica remota llevar con éxito la atención de emergencia para accidentes cerebrovasculares a todas las comunidades aisladas del mundo?] Intente probar las velocidades de conexión antes de planificar cualquier procedimiento de telemedicina."
+  },
+  "applySteps": {
+    "en": [
+      "Identify local hospitals offering stroke thrombectomy services.",
+      "Measure internet connection latency using an online tool.",
+      "Review emergency stroke response protocols for your area."
+    ],
+    "vi": [
+      "Xác định các bệnh viện địa phương cung cấp dịch vụ lấy huyết khối đột quỵ.",
+      "Đo độ trễ kết nối internet bằng một công cụ trực tuyến.",
+      "Xem xét các quy trình ứng phó đột quỵ khẩn cấp cho khu vực của bạn."
+    ],
+    "fr": [
+      "Identifier les hôpitaux locaux proposant des services de thrombectomie pour AVC.",
+      "Mesurer la latence de la connexion Internet à l'aide d'un outil en ligne.",
+      "Examiner les protocoles d'intervention d'urgence en cas d'AVC pour votre région."
+    ],
+    "de": [
+      "Identifiziere lokale Krankenhäuser, die Schlaganfall-Thrombektomien anbieten.",
+      "Messe die Latenz der Internetverbindung mit einem Online-Tool.",
+      "Überprüfe die Notfallprotokolle für Schlaganfälle in deiner Region."
+    ],
+    "es": [
+      "Identifique los hospitales locales que ofrecen servicios de trombectomía para accidentes cerebrovasculares.",
+      "Mida la latencia de la conexión a internet utilizando una herramienta en línea.",
+      "Revise los protocolos de respuesta de emergencia para accidentes cerebrovasculares en su área."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1581090465357-c8a1f71f0407?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1581090465357-c8a1f71f0407?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "ThisisEngineering",
+      "authorUrl": "https://unsplash.com/@thisisengineering?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/4w0XkDe2Ee8",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/4w0XkDe2Ee8/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1652127691413-6cb8c0304aba?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFJlbW90ZSUyMFN0cm9rZSUyMENhcmUlMjBSb2JvdHMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjIwMDB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1652127691413-6cb8c0304aba?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFJlbW90ZSUyMFN0cm9rZSUyMENhcmUlMjBSb2JvdHMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjIwMDB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Andrea De Santis",
+      "authorUrl": "https://unsplash.com/@santesson89?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/UrW0_hewv_Q",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/UrW0_hewv_Q/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFJlbW90ZSUyMFN0cm9rZSUyMENhcmUlMjBSb2JvdHMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUwNjIwMDB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1667986292516-f27450ae75a9?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1667986292516-f27450ae75a9?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Sven Mieke",
+      "authorUrl": "https://unsplash.com/@sxoxm?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/KxEBySpHZA4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/KxEBySpHZA4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1612886649688-ef2912f17921?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1612886649688-ef2912f17921?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Tom Claes",
+      "authorUrl": "https://unsplash.com/@tomspentys?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/G8EfpFaGBWM",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/G8EfpFaGBWM/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UmVtb3RlJTIwU3Ryb2tlJTIwQ2FyZSUyMFJvYm90cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjAwMHww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAwBQCdASoQABwAPu1iqU2ppaQiMAgBMB2JYgCdMoGsAZIAfgLo2Z2Qr55Ie/3noucMAAD+01f/vavfGQToKe3gtGkhnz2kn4D+OSAOYhe52E1JlAlew43ZiTCbyImC92H1vXcVGpRORiEhTY3kvKwec9D00fMBWykfXYPnlD8bZ9gTXMqpQM6rnNL+JAVpq0OAJPIVuQLXko59x8Rjxg2QOoWHcFWnC4QSR83BnRtzf0LAAAA=",
+  "dominant": "#515050",
+  "glossary": {
+    "en": {
+      "thrombectomies": "Surgical procedures to remove blood clots from blood vessels.",
+      "ischemic stroke": "A stroke caused by a blocked blood vessel in the brain.",
+      "vascular": "Relating to the blood vessels of the body.",
+      "catheter": "A thin, flexible tube inserted into the body to treat diseases.",
+      "computer-vision": "Technology that enables computers to interpret visual information.",
+      "ct scans": "Imaging methods that use X-rays to create detailed body cross-sections.",
+      "telesurgery": "Surgery performed by a surgeon who is in a different location.",
+      "latency": "The delay before a transfer of data begins following an instruction.",
+      "neurointerventional": "Minimally invasive catheter-based procedures of the brain and spine."
+    },
+    "vi": {
+      "lấy huyết khối": "Thủ thuật y tế nhằm loại bỏ cục máu đông gây tắc nghẽn mạch máu não.",
+      "đột quỵ thiếu máu cục bộ": "Tình trạng dòng máu lên não bị gián đoạn do tắc nghẽn mạch máu.",
+      "ống thông": "Ống y tế mỏng và dẻo được luồn vào mạch máu để điều trị.",
+      "thị giác máy tính": "Công nghệ giúp máy tính hiểu và xử lý hình ảnh kỹ thuật số.",
+      "chụp cắt lớp vi tính": "Phương pháp dùng tia X tạo ra hình ảnh chi tiết bên trong cơ thể.",
+      "độ trễ": "Thời gian trễ trong việc truyền dữ liệu qua mạng internet.",
+      "can thiệp thần kinh": "Lĩnh vực y học chuyên điều trị các bệnh lý hệ thần kinh bằng hình ảnh.",
+      "thử nghiệm lâm sàng": "Quá trình nghiên cứu y học được thực hiện trên cơ thể người."
+    },
+    "fr": {
+      "thrombectomies": "Intervention chirurgicale visant à retirer un caillot sanguin d'une artère.",
+      "avc ischémique": "Type d'accident vasculaire cérébral causé par l'obstruction d'un vaisseau sanguin dans le cerveau.",
+      "cathéter": "Tube fin et souple inséré dans un vaisseau sanguin pour des soins médicaux.",
+      "fil-guide": "Fin fil métallique utilisé pour guider les cathéters dans les vaisseaux.",
+      "vision par ordinateur": "Technologie informatique permettant aux machines d'interpréter des images médicales.",
+      "latence": "Délai de transmission des données sur un réseau informatique mesuré en millisecondes.",
+      "neuro-interventionnelles": "Interventions chirurgicales mini-invasives ciblant le système nerveux central.",
+      "télémédecine": "Pratique médicale exercée à distance grâce aux technologies de l'information."
+    },
+    "de": {
+      "thrombektomien": "Operationen zur operativen Entfernung von Blutgerinnseln aus Blutgefäßen.",
+      "ischämischem": "Durch verminderte Durchblutung verursacht, meist infolge eines Gefäßverschlusses.",
+      "katheter": "Ein dünner, flexibler Schlauch zur Einführung in Blutgefäße oder Organe.",
+      "computer vision": "Ein Bereich der Informatik, der Computern das Verstehen von Bildern ermöglicht.",
+      "ct-scans": "Schnittbildverfahren der Radiologie zur Erzeugung detaillierter Körperansichten.",
+      "teleschirurgie": "Chirurgische Eingriffe, die von einem Arzt ferngesteuert über Netzwerke durchgeführt werden.",
+      "latenz": "Die Verzögerung bei der Datenübertragung über ein Netzwerk.",
+      "neurointerventionellen": "Minimalinvasive Eingriffe am Nervensystem und an Blutgefäßen des Gehirns."
+    },
+    "es": {
+      "trombectomías": "Procedimientos quirúrgicos para extraer coágulos sanguíneos de las arterias.",
+      "infarto cerebral": "Muerte de tejido cerebral debido a la falta de flujo sanguíneo.",
+      "catéter": "Tubo delgado y flexible que se introduce en los vasos sanguíneos.",
+      "visión artificial": "Tecnología de computación que permite procesar e interpretar imágenes médicas.",
+      "tomografías computarizadas": "Pruebas de diagnóstico por imagen que usan rayos X para crear cortes transversales.",
+      "telecirugía": "Cirugía realizada a distancia mediante el uso de tecnología robótica y redes.",
+      "latencia": "Retardo temporal en la transmisión de datos a través de una red.",
+      "milisegundos": "Unidades de tiempo equivalentes a la milésima parte de un segundo.",
+      "neurointervencionistas": "Procedimientos médicos mínimamente invasivos orientados al sistema nervioso central.",
+      "ensayos clínicos": "Estudios científicos realizados en humanos para evaluar tratamientos médicos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T03:56:42.757Z"
+}

@@ -1,0 +1,242 @@
+{
+  "slug": "why-math-muscles-still-matter-in-the-ai-era",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=why-math-muscles-still-matter-in-the-ai-era",
+  "category": "productivity",
+  "tags": [
+    "mathematics",
+    "artificial intelligence",
+    "education",
+    "mit"
+  ],
+  "title": {
+    "en": "Why Math Muscles Still Matter in the AI Era",
+    "vi": "Vì sao việc rèn luyện tư duy toán học vẫn quan trọng trong kỷ nguyên trí tuệ nhân tạo",
+    "fr": "Pourquoi les muscles mathématiques comptent encore à l'ère de l'IA",
+    "de": "Warum mathematische Muskeln im Zeitalter der KI wichtig bleiben",
+    "es": "Por qué los músculos matemáticos importan en la era de la IA"
+  },
+  "hook": {
+    "en": "John Urschel, a former professional football player turned MIT mathematics professor, recently used artificial intelligence to help solve two complex mathematical proofs. He explains why human problem-solving skills and residential college education remain essential even as machines perform calculations faster than ever.",
+    "vi": "John Urschel, cựu cầu thủ bóng đá chuyên nghiệp nay là giáo sư toán học tại Viện Công nghệ Massachusetts [p:MIT], gần đây đã sử dụng trí tuệ nhân tạo để giải hai bài toán phức tạp. Ông giải thích lý do tại sao kỹ năng giải quyết vấn đề của con người và giáo dục đại học trực tiếp vẫn thiết yếu ngay cả khi máy móc tính toán nhanh hơn trước.",
+    "fr": "John Urschel, ancien joueur professionnel de football américain devenu professeur de mathématiques au MIT, a récemment utilisé l'intelligence artificielle pour l'aider à résoudre deux preuves mathématiques complexes. Il explique pourquoi les compétences de résolution de problèmes par l'humain et l'éducation universitaire en présentiel restent essentielles alors même que les machines effectuent des calculs plus vite que jamais.",
+    "de": "John Urschel, ein ehemaliger Profi-Footballspieler und heutiger Mathematikprofessor am MIT, nutzte kürzlich künstliche Intelligenz, um zwei komplexe mathematische Beweise zu lösen. Er erklärt, warum menschliche Fähigkeiten zur Problemlösung und eine Präsenzuniversität unerlässlich bleiben, selbst wenn Maschinen Berechnungen schneller denn je durchführen.",
+    "es": "John Urschel, exjugador profesional de fútbol americano convertido en profesor de matemáticas del MIT, usó recientemente la inteligencia artificial para ayudar a resolver dos demostraciones matemáticas complejas. Explica por qué las habilidades de resolución de problemas humanos y la educación universitaria presencial siguen siendo esenciales, incluso cuando las máquinas realizan cálculos más rápido que nunca."
+  },
+  "sections": [
+    {
+      "heading_en": "Using AI as a Collaborator",
+      "heading_vi": "Sử dụng trí tuệ nhân tạo làm cộng sự",
+      "body_en": "Urschel published two preprints on arXiv regarding the growth factor of random matrices and worst-case behavior in Gaussian elimination. He combined human insight with artificial intelligence to solve problems that stumped mathematicians for decades. He describes the machine as a collaborator with unlimited resources that completes certain tasks much faster than humans {source}.",
+      "body_vi": "Urschel đã công bố hai bản in trước trên *arXiv* về hệ số tăng trưởng của ma trận ngẫu nhiên và hành vi trường hợp xấu nhất trong phép khử Gaussian. Ông kết hợp sự nhạy bén của con người với trí tuệ nhân tạo (*artificial intelligence*) để giải quyết những bài toán khiến các nhà toán học bối rối trong nhiều thập kỷ. Ông mô tả cỗ máy như một cộng sự có nguồn lực vô tận hoàn thành một số nhiệm vụ nhanh hơn nhiều so với con người {source}.",
+      "heading_fr": "Utiliser l'IA comme collaborateur",
+      "body_fr": "Urschel a publié deux prépublications sur arXiv concernant le facteur de croissance des matrices aléatoires et le comportement dans le pire des cas lors de l'élimination de Gauss. Il a combiné l'intuition humaine et l'intelligence artificielle pour résoudre des problèmes qui ont déconcerté les mathématiciens pendant des décennies. Il décrit la machine comme un collaborateur disposant de ressources illimitées qui accomplit certaines tâches beaucoup plus rapidement que les humains {source}.",
+      "heading_de": "KI als Kollaborateur nutzen",
+      "body_de": "Urschel veröffentlichte zwei Vorabpublikationen auf arXiv zum Wachstumsfaktor zufälliger Matrizen und zum Worst-Case-Verhalten bei der Gauß-Elimination. Er kombinierte menschliche Intuition mit künstlicher Intelligenz, um Probleme zu lösen, die Mathematiker jahrzehntelang vor ein Rätsel stellten. Er beschreibt die Maschine als einen Kollaborateur mit unbegrenzten Ressourcen, der bestimmte Aufgaben viel schneller erledigt als Menschen {source}.",
+      "heading_es": "El uso de la IA como colaborador",
+      "body_es": "Urschel publicó dos artículos preliminares en arXiv sobre el factor de crecimiento de matrices aleatorias y el comportamiento en el peor de los casos en la eliminación gaussiana. Combinó la intuición humana con la inteligencia artificial para resolver problemas que desconcertaron a los matemáticos durante décadas. Describe a la máquina como un colaborador con recursos ilimitados que completa ciertas tareas mucho más rápido que los humanos {source}."
+    },
+    {
+      "heading_en": "The Value of Personal Struggle",
+      "heading_vi": "Giá trị của sự nỗ lực cá nhân",
+      "body_en": "Solving problems independently brings the greatest joy. When students rely on technology to finish homework instantly, they risk gaining a false impression of understanding. Pushing through difficult material without automated assistance builds essential cognitive skills and deeper comprehension.",
+      "body_vi": "Việc tự mình giải quyết các vấn đề mang lại niềm vui lớn nhất. Khi sinh viên dựa vào công nghệ để hoàn thành bài tập ngay lập tức, họ có nguy cơ hiểu lầm rằng mình đã nắm vững kiến thức. Việc vượt qua tài liệu khó khăn mà không có sự trợ giúp tự động sẽ xây dựng các kỹ năng nhận thức thiết yếu và sự hiểu biết sâu sắc hơn.",
+      "heading_fr": "La valeur de l'effort personnel",
+      "body_fr": "Résoudre des problèmes de manière autonome apporte la plus grande joie. Lorsque les étudiants s'appuient sur la technologie pour terminer leurs devoirs instantanément, ils risquent d'avoir une fausse impression de compréhension. Surmonter des difficultés sans aide automatisée développe des compétences cognitives essentielles et une compréhension plus profonde.",
+      "heading_de": "Der Wert des persönlichen Ringens",
+      "body_de": "Das eigenständige Lösen von Problemen bringt die größte Freude. Wenn sich Schüler und Studenten auf Technologie verlassen, um Hausaufgaben sofort zu erledigen, riskieren sie einen falschen Eindruck von Verständnis. Sich ohne automatisierte Unterstützung durch schwieriges Material zu kämpfen, baut wesentliche kognitive Fähigkeiten und ein tieferes Verständnis auf.",
+      "heading_es": "El valor del esfuerzo personal",
+      "body_es": "Resolver problemas de forma independiente aporta la mayor alegría. Cuando los estudiantes confían en la tecnología para terminar los deberes al instante, corren el riesgo de obtener una falsa impresión de comprensión. Avanzar a través de material difícil sin asistencia automatizada desarrolla habilidades cognitivas esenciales y una comprensión más profunda."
+    },
+    {
+      "heading_en": "The Future of Mathematical Education",
+      "heading_vi": "Tương lai của giáo dục toán học",
+      "body_en": "Independent thinking and peer community form the core reasons to study quantitative sciences today. While technology provides vast knowledge access, educational institutions must adapt to ensure students develop reasoning abilities rather than merely retrieving readily available facts.",
+      "body_vi": "Tư duy độc lập và cộng đồng bạn học tạo thành những lý do cốt lõi để nghiên cứu các môn khoa học định lượng ngày nay. Mặc dù công nghệ cung cấp quyền truy cập kiến thức rộng lớn, các cơ sở giáo dục phải thích ứng để đảm bảo sinh viên phát triển khả năng lập luận thay vì chỉ truy xuất các sự thật có sẵn.",
+      "heading_fr": "L'avenir de l'éducation mathématique",
+      "body_fr": "La pensée indépendante et la communauté des pairs constituent les raisons fondamentales d'étudier les sciences quantitatives aujourd'hui. Bien que la technologie offre un vaste accès à la connaissance, les établissements d'enseignement doivent s'adapter pour s'assurer que les étudiants développent des capacités de raisonnement plutôt que de se contenter de récupérer des faits facilement accessibles.",
+      "heading_de": "Die Zukunft der mathematischen Bildung",
+      "body_de": "Eigenständiges Denken und eine Gemeinschaft von Gleichgesinnten bilden heute die Kernmotive für das Studium quantitativer Wissenschaften. Während Technologie einen riesigen Zugang zu Wissen bietet, müssen sich Bildungseinrichtungen anpassen, um sicherzustellen, dass Lernende Argumentationsfähigkeiten entwickeln, anstatt nur leicht verfügbare Fakten abzurufen.",
+      "heading_es": "El futuro de la educación matemática",
+      "body_es": "El pensamiento independiente y la comunidad de pares forman las razones principales para estudiar ciencias cuantitativas hoy en día. Si bien la tecnología proporciona un vasto acceso al conocimiento, las instituciones educativas deben adaptarse para garantizar que los estudiantes desarrollen habilidades de razonamiento en lugar de limitarse a recuperar datos fácilmente disponibles."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Andrea De Santis",
+    "authorUrl": "https://unsplash.com/@santesson89?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/zwd435-ewb4",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/zwd435-ewb4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Abby Abazorius | MIT News"
+    ],
+    "originalTitle": "Q&A: Why building math muscles remains important in the AI era",
+    "originalUrl": "https://news.mit.edu/2026/qa-why-building-math-muscles-remains-important-ai-era-1117",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify a complex problem in your current studies.",
+      "Attempt to solve the problem completely without digital tools.",
+      "Reflect on your personal understanding after finding the solution."
+    ],
+    "vi": [
+      "Xác định một vấn đề phức tạp trong quá trình học tập hiện tại của bạn.",
+      "Cố gắng giải quyết vấn đề hoàn toàn mà không dùng công cụ kỹ thuật số.",
+      "Chiêm nghiệm lại sự hiểu biết cá nhân của bạn sau khi tìm ra giải pháp."
+    ],
+    "fr": [
+      "Identifiez un problème complexe dans vos études actuelles.",
+      "Essayez de résoudre le problème entièrement sans outils numériques.",
+      "Réfléchissez à votre compréhension personnelle après avoir trouvé la solution."
+    ],
+    "de": [
+      "Identifiziere ein komplexes Problem in deinen aktuellen Studien.",
+      "Versuche, das Problem vollständig ohne digitale Werkzeuge zu lösen.",
+      "Reflektiere dein persönliches Verständnis, nachdem du die Lösung gefunden hast."
+    ],
+    "es": [
+      "Identifica un problema complejo en tus estudios actuales.",
+      "Intenta resolver el problema por completo sin herramientas digitales.",
+      "Reflexiona sobre tu comprensión personal después de encontrar la solución."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Andrea De Santis",
+      "authorUrl": "https://unsplash.com/@santesson89?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/zwd435-ewb4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/zwd435-ewb4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Chris Liverani",
+      "authorUrl": "https://unsplash.com/@chrisliverani?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/ViEBSoZH6M4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/ViEBSoZH6M4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1518133835878-5a93cc3f89e5?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1518133835878-5a93cc3f89e5?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Chris Liverani",
+      "authorUrl": "https://unsplash.com/@chrisliverani?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/rD2dc_2S3i0",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/rD2dc_2S3i0/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8V2h5JTIwTWF0aCUyME11c2NsZXMlMjBTdGlsbCUyME1hdHRlciUyMGluJTIwdGhlJTIwQUklMjBFcmElMjBwcm9kdWN0aXZpdHl8ZW58MXwxfHx8MTc5NDk3NTg5OXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1585679593638-85b81cb6ffe8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFdoeSUyME1hdGglMjBNdXNjbGVzJTIwU3RpbGwlMjBNYXR0ZXIlMjBpbiUyMHRoZSUyMEFJJTIwRXJhJTIwcHJvZHVjdGl2aXR5fGVufDF8MXx8fDE3OTQ5NzU4OTl8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1585679593638-85b81cb6ffe8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFdoeSUyME1hdGglMjBNdXNjbGVzJTIwU3RpbGwlMjBNYXR0ZXIlMjBpbiUyMHRoZSUyMEFJJTIwRXJhJTIwcHJvZHVjdGl2aXR5fGVufDF8MXx8fDE3OTQ5NzU4OTl8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Sven Vahaja",
+      "authorUrl": "https://unsplash.com/@yakfarmer?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/1hZjJh-mGeA",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/1hZjJh-mGeA/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFdoeSUyME1hdGglMjBNdXNjbGVzJTIwU3RpbGwlMjBNYXR0ZXIlMjBpbiUyMHRoZSUyMEFJJTIwRXJhJTIwcHJvZHVjdGl2aXR5fGVufDF8MXx8fDE3OTQ5NzU4OTl8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JZAC7AdwLhAS0TPfNaByppAacTQAA4AwAW4quvdkZMhxmh64ledFuA7hOEX/Gl7/8rAIpfQX+5uXFbAPVnk6VPuqAB5twFq0l4hL/gYwgw7bEFAdJpacgCBRmjA7RBKUwXfczVoz29NUW+HnemasU0FEWemaXMjy+2TCNfML0rhwfGomVCr+wJJaBAfV+2CgTKCXFc3kwJgoAAAA=",
+  "dominant": "#534c49",
+  "glossary": {
+    "en": {
+      "john urschel": "A former professional football player and MIT mathematics professor.",
+      "mit": "The Massachusetts Institute of Technology, a prestigious university.",
+      "preprints": "Preliminary scholarly articles shared publicly before formal peer review.",
+      "arxiv": "An online repository for electronic preprints of scientific papers.",
+      "growth factor": "A mathematical term related to matrix properties.",
+      "random matrices": "Matrices valued by random elements, studied in advanced mathematics.",
+      "gaussian elimination": "An algorithm for solving systems of linear equations.",
+      "cognitive skills": "Mental abilities needed for thinking, learning, and reasoning.",
+      "quantitative sciences": "Fields of study relying heavily on numbers and mathematical analysis."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Hệ thống máy móc có khả năng mô phỏng trí thông minh của con người.",
+      "bản in trước": "Bài báo khoa học chưa qua bình duyệt chính thức được công bố trực tuyến.",
+      "arxiv": "Kho lưu trữ trực tuyến các bản in trước của các bài báo khoa học.",
+      "hệ số tăng trưởng": "Đại lượng đo lường mức độ gia tăng của một giá trị trong toán học.",
+      "ma trận ngẫu nhiên": "Mảng các số có các phần tử là biến ngẫu nhiên.",
+      "khử gaussian": "Phương pháp đại số tuyến tính dùng để giải hệ phương trình tuyến tính.",
+      "nhạy bén": "Khả năng nhận thức và xử lý vấn đề nhanh nhạy, sắc sảo.",
+      "nhận thức": "Quá trình thu nhận và xử lý thông tin để hiểu biết.",
+      "định lượng": "Phương pháp nghiên cứu dựa trên đo lường bằng số liệu và toán học.",
+      "truy xuất": "Hành động tìm kiếm và lấy lại thông tin từ hệ thống dữ liệu."
+    },
+    "fr": {
+      "mit": "Prestigieuse université américaine de recherche.",
+      "prépublications": "Articles scientifiques partagés avant leur reévaluation par les pairs.",
+      "arxiv": "Archive en ligne de prépublications scientifiques.",
+      "matrices": "Tableaux de nombres utilisés en mathématiques.",
+      "élimination de gauss": "Méthode algorithmique pour résoudre des systèmes d'équations linéaires.",
+      "compétences cognitives": "Aptitudes mentales liées à la pensée et au raisonnement.",
+      "sciences quantitatives": "Disciplines fondées sur la mesure et le calcul numérique.",
+      "raisonnement": "Action de réfléchir logiquement pour tirer des conclusions."
+    },
+    "de": {
+      "john urschel": "Ehemaliger Profi-Footballspieler und Mathematikprofessor am MIT.",
+      "künstliche intelligenz": "Von Maschinen ausgeführte Prozesse, die menschliches Denken imitieren.",
+      "mathematikprofessor": "Wissenschaftler, der Mathematik an einer Hochschule lehrt und erforscht.",
+      "mit": "Das Massachusetts Institute of Technology, eine US-amerikanische Universität.",
+      "präsenzuniversität": "Eine Hochschule mit direktem Unterricht vor Ort.",
+      "vorabpublikationen": "Noch nicht offiziell begutachtete wissenschaftliche Artikel.",
+      "arxiv": "Ein Online-Archiv für Vorabpublikationen wissenschaftlicher Arbeiten.",
+      "wachstumsfaktor": "Mathematischer Wert, der eine Zunahme beschreibt.",
+      "gauß-elimination": "Ein mathematisches Verfahren zum Lösen von Gleichungssystemen.",
+      "kognitive fähigkeiten": "Mentale Kompetenzen wie Denken, Erinnern und Problemlösen."
+    },
+    "es": {
+      "inteligencia artificial": "Tecnología que simula procesos cognitivos humanos mediante sistemas informáticos.",
+      "demostraciones": "Pruebas lógicas que establecen la verdad de un teorema matemático.",
+      "matrices": "Conjuntos ordenados de números dispuestos en filas y columnas.",
+      "eliminación gaussiana": "Método algorítmico para resolver sistemas de ecuaciones lineales.",
+      "arxiv": "Repositorio digital de artículos científicos de acceso libre.",
+      "cognitivas": "Relativas a los procesos mentales de adquisición de conocimiento.",
+      "cuantitativas": "Disciplinas basadas fundamentalmente en el cálculo y la medición numérica.",
+      "pares": "Compañeros del mismo grupo social, académico o profesional."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-18T04:06:39.787Z"
+}

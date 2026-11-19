@@ -1,0 +1,251 @@
+{
+  "slug": "measuring-uncertainty-in-advanced-quantum-computers",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=measuring-uncertainty-in-advanced-quantum-computers",
+  "category": "technology",
+  "tags": [
+    "quantum computing",
+    "physics",
+    "simulation",
+    "technology"
+  ],
+  "title": {
+    "en": "Measuring Uncertainty in Advanced Quantum Computers",
+    "vi": "Đo Lường Độ Không Chắc Chắn Trong Máy Tính Lượng Tử Nâng Cao",
+    "fr": "Mesurer l'incertitude dans les ordinateurs quantiques avancés",
+    "de": "Messung von Unsicherheiten in modernen Quantencomputern",
+    "es": "Medición de la incertidumbre en computadoras cuánticas avanzadas"
+  },
+  "hook": {
+    "en": "Researchers have developed a method to verify quantum computer results when traditional machines can no longer check them. Led by Tristan Kraft and Peter Zoller, the team uses experimental data to calculate error margins for quantum simulations, successfully testing the approach on a fifty-one qubit system in Innsbruck.",
+    "vi": "Các nhà nghiên cứu đã phát triển một phương pháp xác minh kết quả của máy tính lượng tử khi các cỗ máy truyền thống không thể kiểm tra được nữa. Dẫn đầu bởi Tristan Kraft và Peter Zoller, nhóm nghiên cứu sử dụng dữ liệu thực nghiệm để tính toán biên độ sai số cho các mô phỏng lượng tử, thử nghiệm thành công phương pháp này trên hệ thống năm mươi mốt qubit ở Innsbruck.",
+    "fr": "Des chercheurs ont mis au point une méthode pour vérifier les résultats d'un ordinateur quantique lorsque les machines traditionnelles ne peuvent plus les contrôler. Menée par Tristan Kraft et Peter Zoller, l'équipe utilise des données expérimentales pour calculer les marges d'erreur des simulations quantiques, testant avec succès l'approche sur un système de cinquante et un qubits à Innsbruck.",
+    "de": "Forscher haben eine Methode entwickelt, um die Ergebnisse von Quantencomputern zu verifizieren, wenn herkömmliche Maschinen diese nicht mehr überprüfen können. Unter der Leitung von Tristan Kraft und Peter Zoller nutzt das Team experimentelle Daten zur Berechnung von Fehlertoleranzen für Quantensimulationen und testete diesen Ansatz erfolgreich an einem System mit einundfünfzig Qubits in Innsbruck.",
+    "es": "Los investigadores han desarrollado un método para verificar los resultados de las computadoras cuánticas cuando las máquinas tradicionales ya no pueden comprobarlos. Liderado por Tristan Kraft y Peter Zoller, el equipo utiliza datos experimentales para calcular los márgenes de error de las simulaciones cuánticas, probando con éxito el enfoque en un sistema de cincuenta y un cúbits en Innsbruck."
+  },
+  "sections": [
+    {
+      "heading_en": "The Verification Challenge",
+      "heading_vi": "Thử Thách Xác Minh",
+      "body_en": "Quantum systems solve complex problems beyond the reach of conventional computers. Traditional verification fails as these quantum devices grow larger because direct comparisons become impractical. A new technique addresses this by reconstructing how a quantum system behaves from experimental measurements . {source}",
+      "body_vi": "Các hệ thống lượng tử giải quyết những bài toán phức tạp vượt quá tầm với của máy tính thông thường. Việc xác minh truyền thống thất bại khi các thiết bị lượng tử này lớn lên vì việc so sánh trực tiếp trở nên không thực tế. Một kỹ thuật mới giải quyết vấn đề này bằng cách tái tạo cách một hệ thống lượng tử hoạt động từ các đo đạc thực nghiệm .",
+      "heading_fr": "Le défi de la vérification",
+      "body_fr": "Les systèmes quantiques résolvent des problèmes complexes hors de portée des ordinateurs conventionnels. La vérification traditionnelle échoue à mesure que ces dispositifs quantiques grandissent, car les comparaisons directes deviennent impraticables. Une nouvelle technique résout ce problème en reconstituant le comportement d'un système quantique à partir de mesures expérimentales . {source}",
+      "heading_de": "Die Verifikationsherausforderung",
+      "body_de": "Quantensysteme lösen komplexe Probleme, die für herkömmliche Computer unerreichbar sind. Die traditionelle Überprüfung versagt, wenn diese Quantengeräte wachsen, da direkte Vergleiche unpraktikabel werden. Eine neue Technik begegnet diesem Problem, indem sie das Verhalten eines Quantensystems aus experimentellen Messungen rekonstruiert . {source}",
+      "heading_es": "El desafío de la verificación",
+      "body_es": "Los sistemas cuánticos resuelven problemas complejos que escapan al alcance de las computadoras convencionales. La verificación tradicional falla a medida que estos dispositivos cuánticos crecen porque las comparaciones directas se vuelven impracticables. Una nueva técnica aborda esto reconstruyendo cómo se comporta un sistema cuántico a partir de mediciones experimentales . {source}"
+    },
+    {
+      "heading_en": "Testing the Method",
+      "heading_vi": "Thử Nghiệm Phương Pháp",
+      "body_en": "Real experiments contain noise and environmental disturbances. Researchers examine data to identify these influences and calculate how uncertainties affect simulation results. The team initially validated the approach on a ten trapped ion system, then scaled it to a chain of fifty-one ions in Innsbruck.",
+      "body_vi": "Các thí nghiệm thực tế chứa đựng nhiễu và các tác động từ môi trường. Các nhà nghiên cứu kiểm tra dữ liệu để xác định những ảnh hưởng này và tính toán mức độ ảnh hưởng của các bất định đến kết quả mô phỏng. Nhóm nghiên cứu ban đầu đã kiểm chứng phương pháp này trên một hệ thống mười ion bẫy, sau đó mở rộng lên chuỗi năm mươi mốt ion ở Innsbruck.",
+      "heading_fr": "Tester la méthode",
+      "body_fr": "Les expériences réelles contiennent du bruit et des perturbations environnementales. Les chercheurs examinent les données pour identifier ces influences et calculent comment les incertitudes affectent les résultats de simulation. L'équipe a initialement validé l'approche sur un système de dix ions piégés, puis l'a mise à l'échelle sur une chaîne de cinquante et un ions à Innsbruck.",
+      "heading_de": "Test der Methode",
+      "body_de": "Echte Experimente beinhalten Rauschen und Umweltstörungen. Forscher untersuchen Daten, um diese Einflüsse zu identifizieren und zu berechnen, wie sich Unsicherheiten auf Simulationsergebnisse auswirken. Das Team validierte den Ansatz zunächst an einem System mit zehn Ionenfallen und skalierte ihn dann auf eine Kette von einundfünfzig Ionen in Innsbruck.",
+      "heading_es": "Prueba del método",
+      "body_es": "Los experimentos reales contienen ruido y perturbaciones ambientales. Los investigadores examinan los datos para identificar estas influencias y calcular cómo las incertidumbres afectan los resultados de las simulaciones. El equipo validó inicialmente el enfoque en un sistema de diez iones atrapados, para luego escalarlo a una cadena de cincuenta y un iones en Innsbruck."
+    },
+    {
+      "heading_en": "Future Applications",
+      "heading_vi": "Ứng Dụng Tương Lai",
+      "body_en": "The team is adapting the method for two-dimensional quantum simulators that model complicated particle interactions. Peter Zoller notes that evaluating systems by their verifiable margin of error could change how researchers measure quantum advantage, shifting focus from mere speed to demonstrable reliability.",
+      "body_vi": "Nhóm nghiên cứu đang thích ứng phương pháp này cho các mô phỏng lượng tử hai chiều mô phỏng các tương tác hạt phức tạp. Peter Zoller lưu ý rằng việc đánh giá các hệ thống bằng biên độ sai số có thể xác minh của chúng có thể thay đổi cách các nhà nghiên cứu đo lường lợi thế lượng tử, chuyển trọng tâm từ tốc độ đơn thuần sang độ tin cậy có thể chứng minh.",
+      "heading_fr": "Applications futures",
+      "body_fr": "L'équipe adapte la méthode pour des simulateurs quantiques bidimensionnels qui modélisent des interactions de particules compliquées. Peter Zoller note que l'évaluation des systèmes par leur marge d'erreur vérifiable pourrait changer la façon dont les chercheurs mesurent l'avantage quantique, déplaçant l'attention de la simple vitesse vers une fiabilité démontrable.",
+      "heading_de": "Zukünftige Anwendungen",
+      "body_de": "Das Team passt die Methode für zweidimensionale Quantensimulatoren an, die komplizierte Teilchenwechselwirkungen modellieren. Peter Zoller merkt an, dass die Bewertung von Systemen anhand ihrer verifizierbaren Fehlertoleranz die Art und Weise verändern könnte, wie Forscher den Quantenvorteil messen, wobei sich der Fokus von bloßer Geschwindigkeit auf nachweisbare Zuverlässigkeit verlagert.",
+      "heading_es": "Aplicaciones futuras",
+      "body_es": "El equipo está adaptando el método para simuladores cuánticos bidimensionales que modelan interacciones de partículas complicadas. Peter Zoller señala que evaluar los sistemas mediante su margen de error verificable podría cambiar la forma en que los investigadores miden la ventaja cuántica, desplazando el enfoque de la mera velocidad hacia una fiabilidad demostrable."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261115085557.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1597207837475-ea1f19435b50?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1597207837475-ea1f19435b50?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Laura Ockel",
+    "authorUrl": "https://unsplash.com/@viazavier?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/RoZWxeFL27k",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/RoZWxeFL27k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Quantum computers are getting too powerful to check. Scientists have a solution",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261115085557.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of a quantum simulator as a master chef cooking a massive feast without a recipe book. By checking the taste of individual ingredients and measuring the heat of the oven, the chef can determine how much the final dish might deviate from perfection. Can you identify the main source of error in your own daily projects?",
+    "vi": "Hãy coi bộ giả lập lượng tử giống như một đầu bếp bậc thầy nấu một bữa tiệc lớn mà không có sách công thức. Bằng cách kiểm tra hương vị của từng nguyên liệu và đo nhiệt độ lò, đầu bếp có thể xác định món ăn cuối cùng có thể lệch khỏi độ hoàn hảo bao nhiêu. Bạn có thể xác định nguồn lỗi chính trong các dự án hàng ngày của mình không?",
+    "fr": "Imaginez un simulateur quantique comme un chef cuisinier préparant un immense festin sans livre de recettes. En vérifiant le goût des ingrédients individuels et en mesurant la chaleur du four, le chef peut déterminer dans quelle mesure le plat final pourrait s'écarter de la perfection. Pouvez-vous identifier la source principale d'erreur dans vos propres projets quotidiens ?",
+    "de": "Stelle dir einen Quantensimulator wie einen Küchenchef vor, der ein riesiges Festmahl ohne Rezept kocht. Durch das Probieren einzelner Zutaten und das Messen der Ofenhitze kann der Chef bestimmen, wie stark das fertige Gericht von der Perfektion abweichen könnte. Kannst du die Hauptfehlerquelle in deinen eigenen täglichen Projekten identifizieren?",
+    "es": "Piense en un simulador cuántico como un chef maestro que cocina un banquete masivo sin un libro de recetas. Al comprobar el sabor de los ingredientes individuales y medir el calor del horno, el chef puede determinar cuánto podría desviarse el plato final de la perfección. ¿Puede identificar la principal fuente de error en sus propios proyectos diarios?"
+  },
+  "applySteps": {
+    "en": [
+      "Identify a complex project where checking your final result is difficult.",
+      "List the specific sources of uncertainty or error in your process.",
+      "Calculate an estimated margin of error for your final outcome."
+    ],
+    "vi": [
+      "Xác định một dự án phức tạp mà việc kiểm tra kết quả cuối cùng của bạn rất khó khăn.",
+      "Liệt kê các nguồn cụ thể gây ra sự không chắc chắn hoặc lỗi trong quy trình của bạn.",
+      "Tính toán biên độ sai số ước tính cho kết quả cuối cùng của bạn."
+    ],
+    "fr": [
+      "Identifiez un projet complexe où la vérification de votre résultat final est difficile.",
+      "Listez les sources spécifiques d'incertitude ou d'erreur dans votre processus.",
+      "Calculez une marge d'erreur estimée pour votre résultat final."
+    ],
+    "de": [
+      "Identifiziere ein komplexes Projekt, bei dem die Überprüfung deines Endergebnisses schwierig ist.",
+      "Liste die spezifischen Quellen von Unsicherheiten oder Fehlern in deinem Prozess auf.",
+      "Berechne eine geschätzte Fehlertoleranz für dein Endergebnis."
+    ],
+    "es": [
+      "Identifique un proyecto complejo donde comprobar su resultado final sea difícil.",
+      "Enumere las fuentes específicas de incertidumbre o error en su proceso.",
+      "Calcule un margen de error estimado para su resultado final."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1597207837475-ea1f19435b50?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1597207837475-ea1f19435b50?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Laura Ockel",
+      "authorUrl": "https://unsplash.com/@viazavier?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/RoZWxeFL27k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/RoZWxeFL27k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1572282431238-bd1d44df8550?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1572282431238-bd1d44df8550?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Randall Meng",
+      "authorUrl": "https://unsplash.com/@randall_y_m?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/oGNMozgV38M",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/oGNMozgV38M/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1681908571122-97f349e1ace0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1681908571122-97f349e1ace0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Planet Volumes",
+      "authorUrl": "https://unsplash.com/@planetvolumes?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/7dRmpT3vxV8",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/7dRmpT3vxV8/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1730578726760-bd351ae7070d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1730578726760-bd351ae7070d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Jason Leung",
+      "authorUrl": "https://unsplash.com/@ninjason?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/j8Tc1rV-gUw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/j8Tc1rV-gUw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8TWVhc3VyaW5nJTIwVW5jZXJ0YWludHklMjBpbiUyMEFkdmFuY2VkJTIwUXVhbnR1bSUyMENvbXB1dGVycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NDk3NTczNnww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQBOmUABWn/7JDh/ZWuctW8xgAP7fcWKwzFA38wYVG2OuH+KP5AQ0Q4WhO67s6LLuzz+yMgO3YdOGhL5ClrrBOkkYXc05czFxQ3e0sk2WxMZnJKKjuNFIBZymWVTI1y+rjFKWZWoJdvFfAAA=",
+  "dominant": "#483d30",
+  "glossary": {
+    "en": {
+      "quantum computer": "A machine using quantum mechanics principles to solve complex problems.",
+      "tristan kraft": "A researcher who led the team developing the verification method.",
+      "peter zoller": "A researcher co-leading the team that tested the new approach.",
+      "qubit": "The basic unit of information in a quantum computer.",
+      "innsbruck": "The location where the fifty-one qubit system was tested.",
+      "conventional computers": "Traditional electronic computers that process information in binary bits.",
+      "experimental measurements": "Data gathered from physical tests conducted in a laboratory.",
+      "trapped ion system": "A setup using confined ions to process quantum information.",
+      "quantum simulators": "Specialized quantum devices designed to model complex particle interactions.",
+      "quantum advantage": "The point where quantum computers outperform classical computers."
+    },
+    "vi": {
+      "máy tính lượng tử": "Thiết bị tính toán sử dụng cơ học lượng tử để giải quyết các bài toán phức tạp vượt tầm máy tính thông thường.",
+      "tristan kraft": "Nhà nghiên cứu dẫn đầu nhóm phát triển phương pháp đo lường độ không chắc chắn.",
+      "peter zoller": "Nhà khoa học đồng dẫn đầu nghiên cứu về hệ thống máy tính lượng tử.",
+      "qubit": "Đơn vị thông tin lượng tử cơ bản trong máy tính lượng tử.",
+      "innsbruck": "Địa điểm diễn ra các thí nghiệm thử nghiệm hệ thống qubit.",
+      "hệ thống lượng tử": "Hệ thống vật lý tuân theo các định luật cơ học lượng tử.",
+      "đo đạc thực nghiệm": "Quá trình thu thập dữ liệu từ các thí nghiệm thực tế trong phòng thí nghiệm.",
+      "biên độ sai số": "Khoảng giá trị ước tính cho thấy mức độ sai lệch của kết quả.",
+      "mô phỏng lượng tử": "Quá trình sử dụng hệ thống lượng tử để mô phỏng các hiện tượng phức tạp.",
+      "ion bẫy": "Các ion mang điện tích được giữ cố định bằng điện từ trường để làm qubit.",
+      "lợi thế lượng tử": "Khả năng máy tính lượng tử vượt trội hơn máy tính cổ điển."
+    },
+    "fr": {
+      "qubits": "Unités fondamentales d'information quantique, analogues aux bits classiques.",
+      "simulations quantiques": "Modélisations de systèmes physiques complexes à l'aide de principes quantiques.",
+      "bruit": "Perturbations aléatoires et indésirables qui altèrent les mesures et les calculs.",
+      "ions piégés": "Technologie utilisant des ions confinés par des champs électromagnétiques pour le calcul.",
+      "avantage quantique": "Capacité d'un ordinateur quantique à résoudre des problèmes impossibles pour les classiques.",
+      "incertitude": "Manque de précision ou doute inévitable sur la valeur d'une mesure.",
+      "marge d'erreur": "Intervalle estimé dans lequel la valeur réelle peut s'écarter du résultat.",
+      "systèmes quantiques": "Ensembles physiques régis par les lois de la mécanique quantique."
+    },
+    "de": {
+      "quantencomputern": "Fortschrittliche Rechner, die quantenmechanische Zustände für komplexe Berechnungen nutzen.",
+      "tristan kraft": "Ein beteiligter Forscher bei der Entwicklung der neuen Verifikationsmethode.",
+      "peter zoller": "Ein leitender Wissenschaftler und Experte im Bereich der Quantensimulation.",
+      "fehlertoleranzen": "Das zulässige Maß an Abweichungen oder Fehlern in einem System.",
+      "quantensimulationen": "Simulationen von Quantensystemen mithilfe spezieller physikalischer Apparate.",
+      "qubits": "Die grundlegenden Informationseinheiten in Quantencomputern.",
+      "verifikationsherausforderung": "Das Problem, die Korrektheit von unüberprüfbaren Quantenergebnissen sicherzustellen.",
+      "rauschen": "Störende Umwelteinflüsse, die physikalische Messungen verfälschen können.",
+      "ionenfallen": "Apparaturen zum Festhalten geladener Teilchen für Quantenexperimente.",
+      "quantenvorteil": "Die Überlegenheit von Quantencomputern gegenüber klassischen Rechenmaschinen."
+    },
+    "es": {
+      "cúbits": "Unidades básicas de información en la computación cuántica.",
+      "simulaciones": "Representaciones digitales de sistemas físicos complejos.",
+      "ruido": "Perturbaciones no deseadas que afectan las señales experimentales.",
+      "iones": "Átomos o moléculas con carga eléctrica neta.",
+      "simuladores": "Dispositivos diseñados para imitar fenómenos físicos.",
+      "ventaja": "Superación de las computadoras clásicas por las cuánticas.",
+      "incertidumbre": "Grado de duda en las mediciones y resultados.",
+      "verificación": "Comprobación de la validez de un resultado."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-18T04:11:39.787Z"
+}
