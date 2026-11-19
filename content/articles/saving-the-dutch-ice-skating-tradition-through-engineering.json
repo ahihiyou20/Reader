@@ -1,0 +1,245 @@
+{
+  "slug": "saving-the-dutch-ice-skating-tradition-through-engineering",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=saving-the-dutch-ice-skating-tradition-through-engineering",
+  "category": "society",
+  "tags": [
+    "climate change",
+    "netherlands",
+    "ice skating",
+    "renewable energy"
+  ],
+  "title": {
+    "en": "Saving the Dutch Ice Skating Tradition Through Engineering",
+    "vi": "Cứu vãn truyền thống trượt băng Hà Lan bằng kỹ thuật",
+    "fr": "Sauver la tradition du patinage sur glace hollandais grâce à l'ingénierie",
+    "de": "Die Rettung der niederländischen Eislauftradition durch Ingenieurskunst",
+    "es": "Salvando la tradición del patinaje sobre hielo neerlandés mediante la ingeniería"
+  },
+  "hook": {
+    "en": "Climate change threatens the historic Elfstedentocht ice skating race in the Netherlands, as warming winters make natural ice increasingly rare. Dutch scientists now propose ingenious engineering solutions to preserve the beloved cultural tradition, balancing technological intervention with ecological realities and philosophical debates about human interference in nature.",
+    "vi": "Biến đổi khí hậu đang đe dọa giải trượt băng lịch sử Elfstedentocht tại Hà Lan, khi mùa đông ấm lên khiến băng tự nhiên ngày càng khan hiếm. Các nhà khoa học Hà Lan hiện đề xuất các giải pháp kỹ thuật thông minh nhằm bảo tồn truyền thống văn hóa được yêu mến này, cân bằng giữa can thiệp công nghệ và thực tế sinh thái cùng những tranh cãi triết học về sự can thiệp của con người vào tự nhiên.",
+    "fr": "Le changement climatique menace la course historique de patinage Elfstedentocht aux Pays-Bas, car les hivers plus doux rendent la glace naturelle de plus en plus rare. Des scientifiques néerlandais proposent désormais des solutions d'ingénierie ingénieuses pour préserver cette tradition culturelle bien-aimée, en conciliant intervention technologique, réalités écologiques et débats philosophiques sur l'interférence humaine dans la nature.",
+    "de": "Der Klimawandel gefährdet das historische Eislaufrennen Elfstedentocht in den Niederlanden, da wärmer werdende Winter natürliches Eis immer seltener machen. Niederländische Wissenschaftler schlagen nun [y:geniale ingenieurtechnische Lösungen] vor, um die geliebte [p:kulturelle Tradition] zu bewahren, und bringen dabei technologische Eingriffe, ökologische Realitäten und philosophische Debatten über den menschlichen Eingriff in die Natur in Einklang.",
+    "es": "El cambio climático amenaza la histórica carrera de patinaje sobre hielo Elfstedentocht en los Países Bajos, ya que los inviernos más cálidos hacen que el hielo natural sea cada vez más escaso. Los científicos neerlandeses proponen ahora ingeniosas soluciones de ingeniería para preservar esta querida tradición cultural, equilibrando la intervención tecnológica con las realidades ecológicas y los debates filosóficos sobre la intervención humana en la naturaleza."
+  },
+  "sections": [
+    {
+      "heading_en": "The Declining Ice",
+      "heading_vi": "Sự suy giảm của băng",
+      "body_en": "The Elfstedentocht covers a 125-mile course across Friesland lakes and canals {source}. First held in 1909, the race last occurred in 1997 because global warming has caused ice days to drop significantly. According to the Royal Netherlands Meteorological Institute, 24-hour periods with temperatures below 32 degrees Fahrenheit fell from an average of 11 per year to just three since the 1960s.",
+      "body_vi": "Cuộc đua Elfstedentocht kéo dài 125 dặm qua các hồ và kênh rạch ở Friesland {source}. Được tổ chức lần đầu tiên vào năm 1909, giải đấu diễn ra lần cuối vào năm 1997 do hiện trạng ấm lên toàn cầu khiến số ngày có băng giảm mạnh. Theo Viện Khí tượng Hoàng gia Hà Lan, những khoảng thời gian 24 giờ có nhiệt độ dưới 32 độ F đã giảm từ mức trung bình 11 ngày mỗi năm xuống chỉ còn 3 ngày kể từ thập niên 1960.",
+      "heading_fr": "Le déclin de la glace",
+      "body_fr": "L'Elfstedentocht couvre un parcours de 125 miles à travers les lacs et canaux de la Frise {source}. Organisée pour la première fois en 1909, la course a eu lieu pour la dernière fois en 1997, car le réchauffement climatique a entraîné une baisse significative des jours de gel. Selon l'Institut royal météorologique des Pays-Bas, les périodes de 24 heures avec des températures inférieures à 32 degrés Fahrenheit sont passées d'une moyenne de 11 par an à seulement trois depuis les années 1960.",
+      "heading_de": "Das schrumpfende Eis",
+      "body_de": "Die Elfstedentocht führt über eine Strecke von 125 Meilen durch friesische Seen und Kanäle {source}. Das Rennen, das 1909 zum ersten Mal ausgetragen wurde, fand zuletzt 1997 statt, da die globale Erwärmung die Eistage drastisch sinken ließ. Laut dem Königlich Niederländischen Meteorologischen Institut sank die Zahl der 24-Stunden-Perioden mit Temperaturen unter 32 Grad Fahrenheit seit den 1960er Jahren von durchschnittlich 11 auf nur noch drei pro Jahr.",
+      "heading_es": "El hielo en declive",
+      "body_es": "La Elfstedentocht cubre un recorrido de 125 millas a través de los lagos y canales de Frisia {source}. Celebrada por primera vez en 1909, la carrera tuvo lugar por última vez en 1997 debido a que el calentamiento global ha provocado una caída significativa en los días de hielo. Según el Real Instituto Meteorológico de los Países Bajos, los períodos de 24 horas con temperaturas por debajo de los 32 grados Fahrenheit cayeron de un promedio de 11 por año a solo tres desde la década de 1960."
+    },
+    {
+      "heading_en": "Cooling Film Limitations",
+      "heading_vi": "Hạn chế của màng làm mát",
+      "body_en": "Researchers explored using passive radiative cooling film, inspired by Saharan silver ants, to reflect sunlight and emit infrared radiation without external energy. However, Nick van de Giesen found that cloudy and humid conditions in Friesland prevent this material from working effectively, though it could still protect ice under bridges.",
+      "body_vi": "Các nhà nghiên cứu đã khám phá việc sử dụng màng làm mát bức xạ thụ động, lấy cảm hứng từ kiến bạc Sahara (*Saharan silver ants*), để phản chiếu ánh sáng mặt trời và phát ra bức xạ hồng ngoại mà không cần năng lượng ngoài. Tuy nhiên, Nick van de Giesen nhận thấy điều kiện mây mù và ẩm ướt ở Friesland cản trở vật liệu này hoạt động hiệu quả, dù nó vẫn có thể bảo vệ lớp băng dưới các cây cầu.",
+      "heading_fr": "Les limites du film de refroidissement",
+      "body_fr": "Les chercheurs ont exploré l'utilisation d'un film de refroidissement radiatif passif, inspiré des fourmis argentées du Sahara, pour réfléchir la lumière du soleil et émettre un rayonnement infrarouge sans énergie externe. Cependant, Nick van de Giesen a découvert que les conditions nuageuses et humides en Frise empêchent ce matériau de fonctionner efficacement, bien qu'il puisse encore protéger la glace sous les ponts.",
+      "heading_de": "Grenzen der Kühlfolie",
+      "body_de": "Forscher untersuchten den Einsatz passiver strahlungskühlender Folien, inspiriert von saharischen Silberameisen, um Sonnenlicht zu reflektieren und Infrarotstrahlung ohne externe Energie abzugeben. Nick van de Giesen stellte jedoch fest, dass bewölkte und feuchte Bedingungen in Friesland verhindern, dass dieses Material effektiv funktioniert, auch wenn es Eis unter Brücken weiterhin schützen könnte.",
+      "heading_es": "Limitaciones de las películas de enfriamiento",
+      "body_es": "Los investigadores exploraron el uso de una película de enfriamiento radiativo pasivo, inspirada en las hormigas plateadas del Sahara, para reflejar la luz solar y emitir radiación infrarroja sin energía externa. Sin embargo, Nick van de Giesen descubrió que las condiciones nubladas y húmedas en Frisia impiden que este material funcione eficazmente, aunque aún podría proteger el hielo bajo los puentes."
+    },
+    {
+      "heading_en": "The Heat Pump Proposal",
+      "heading_vi": "Đề xuất bơm nhiệt",
+      "body_en": "Andy van den Dobbelsteen proposed installing 10,000 aquathermal energy heat pumps along the route to cool surface water and generate ice. While this plan requires substantial infrastructure and faces insulation challenges in Frisian homes, it would simultaneously advance regional carbon neutrality goals and warm local buildings during winter.",
+      "body_vi": "Andy van den Dobbelsteen đề xuất lắp đặt 10.000 máy bơm năng lượng nhiệt dưới nước (*aquathermal energy*) dọc theo tuyến đường để làm mát nước mặt và tạo ra băng. Mặc dù kế hoạch này đòi hỏi cơ sở hạ tầng đáng kể và gặp các thách thức về cách nhiệt tại những ngôi nhà ở Friesland, nó đồng thời thúc đẩy các mục tiêu trung hòa carbon khu vực và sưởi ấm các tòa nhà địa phương trong mùa đông.",
+      "heading_fr": "La proposition de pompe à chaleur",
+      "body_fr": "Andy van den Dobbelsteen a proposé d'installer 10 000 pompes à chaleur à énergie aquathermique le long du parcours pour refroidir l'eau de surface et générer de la glace. Bien que ce plan nécessite des infrastructures substantielles et se heurte à des défis d'isolation dans les foyers frisons, il ferait progresser simultanément les objectifs de neutralité carbone régionale et chaufferait les bâtiments locaux pendant l'hiver.",
+      "heading_de": "Der Vorschlag mit der Wärmepumpe",
+      "body_de": "Andy van den Dobbelsteen schlug vor, 10.000 aquathermische Wärmepumpen entlang der Strecke zu installieren, um Oberflächenwasser zu kühlen und Eis zu erzeugen. Zwar erfordert dieser Plan eine erhebliche Infrastruktur und stößt auf Dämmungsprobleme in friesischen Häusern, doch würde er gleichzeitig die regionalen Ziele zur CO2-Neutralität vorantreiben und im Winter lokale Gebäude wärmen.",
+      "heading_es": "La propuesta de la bomba de calor",
+      "body_es": "Andy van den Dobbelsteen propuso instalar 10,000 bombas de calor de energía acuatermal a lo largo de la ruta para enfriar el agua superficial y generar hielo. Si bien este plan requiere una infraestructura sustancial y se enfrenta a desafíos de aislamiento en los hogares frisones, avanzaría simultáneamente hacia las objetivos regionales de neutralidad de carbono y calentaría los edificios locales durante el invierno."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "nautil.us (2026)",
+      "url": "https://nautil.us/can-science-save-the-ice-skaters-1286773"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1520277513529-5c5f30718663?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1520277513529-5c5f30718663?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Robbert Esser",
+    "authorUrl": "https://unsplash.com/@iamrobbert?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/0qbUHzgxwBU",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/0qbUHzgxwBU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Tim Brinkhof"
+    ],
+    "originalTitle": "Can Science Save the Ice Skaters?",
+    "originalUrl": "https://nautil.us/can-science-save-the-ice-skaters-1286773",
+    "publisher": "nautil.us",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review local energy transition goals and heat pump viability for regional water bodies.",
+      "Examine home insulation standards before implementing advanced heating systems.",
+      "Assess ecological impacts on local flora and fauna when altering water temperatures."
+    ],
+    "vi": [
+      "Xem xét các mục tiêu chuyển đổi năng lượng địa phương và tính khả thi của bơm nhiệt đối với các vực nước trong vùng.",
+      "Kiểm tra các tiêu chuẩn cách nhiệt của ngôi nhà trước khi triển khai hệ thống sưởi tiên tiến.",
+      "Đánh giá các tác động sinh thái đối với hệ flora và fauna địa phương khi thay đổi nhiệt độ nước."
+    ],
+    "fr": [
+      "Examiner les objectifs locaux de transition énergétique et la viabilité des pompes à chaleur pour les plans d'eau régionaux.",
+      "Analyser les normes d'isolation des habitations avant de mettre en œuvre des systèmes de chauffage avancés.",
+      "Évaluer les impacts écologiques sur la flore et la faune locales lors de la modification des températures de l'eau."
+    ],
+    "de": [
+      "Überprüfe lokale Energiewendeverzichte und die Machbarkeit von Wärmepumpen für regionale Gewässer.",
+      "Untersuche die Standards für die Hausdämmung vor der Implementierung fortschrittlicher Heizsysteme.",
+      "Beurteile die ökologischen Auswirkungen auf die lokale Flora und Fauna bei der Veränderung von Wassertemperaturen."
+    ],
+    "es": [
+      "Revisa las metas locales de transición energética y la viabilidad de las bombas de calor para los cuerpos de agua regionales.",
+      "Examina los estándares de aislamiento de los hogares antes de implementar sistemas de calefacción avanzados.",
+      "Evalúa los impactos ecológicos en la flora y fauna locales al alterar las temperaturas del agua."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1520277513529-5c5f30718663?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1520277513529-5c5f30718663?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Robbert Esser",
+      "authorUrl": "https://unsplash.com/@iamrobbert?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/0qbUHzgxwBU",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/0qbUHzgxwBU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1614766067096-e786917b44b4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1614766067096-e786917b44b4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Max van den Oetelaar",
+      "authorUrl": "https://unsplash.com/@maxvdo?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Cy2awWbECkI",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Cy2awWbECkI/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1548044792-c05cb81e637f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1548044792-c05cb81e637f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Joseph Costa",
+      "authorUrl": "https://unsplash.com/@josephcosta?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OcbZXVd0PIM",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/OcbZXVd0PIM/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1667847988796-74c9067756e4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1667847988796-74c9067756e4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Anita Austvika",
+      "authorUrl": "https://unsplash.com/@anitaaustvika?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8KWN-TIZBO8",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/8KWN-TIZBO8/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8U2F2aW5nJTIwdGhlJTIwRHV0Y2glMjBJY2UlMjBTa2F0aW5nJTIwVHJhZGl0aW9uJTIwVGhyb3VnaCUyMEVuZ2luZWVyaW5nJTIwc29jaWV0eXxlbnwxfDF8fHwxNzk1MDYyNzE0fDA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoQABwAPu1mq04ppaQiMAgBMB2JQBUeg9JYmT47U3LTr6cc8gAA/uDJO7WTQ6PaEYScAuMpAk3r8aCcQBnZbFYkTbY0GW2J6a6he/iHcS+g2J5X6ypcbjB7GOEpo+taSEriBu2wk2OQT3i+pIdSBPiC+Cbg5PG82L6ghYAA",
+  "dominant": "#5e6671",
+  "glossary": {
+    "en": {
+      "elfstedentocht": "A historic 125-mile ice skating race in the Netherlands.",
+      "royal netherlands meteorological institute": "The official Dutch weather and climate research organization.",
+      "fahrenheit": "A temperature scale where water freezes at thirty-two degrees.",
+      "passive radiative cooling film": "A material reflecting sunlight and emitting infrared radiation without power.",
+      "saharan silver ants": "Insects inspiring cooling technology through their reflective properties.",
+      "infrared radiation": "Invisible radiant energy emitted by warm surfaces.",
+      "nick van de giesen": "A researcher studying the limitations of cooling films.",
+      "friesland": "A northern province in the Netherlands hosting the race.",
+      "andy van den dobbelsteen": "A proposer of the heat pump infrastructure plan.",
+      "aquathermal energy heat pumps": "Devices utilizing water thermal energy for cooling and heating.",
+      "carbon neutrality": "Achieving net zero carbon dioxide emissions globally."
+    },
+    "vi": {
+      "elfstedentocht": "Giải trượt băng lịch sử nổi tiếng kéo dài 125 dặm tại Hà Lan.",
+      "friesland": "Tỉnh thuộc Hà Lan nơi diễn ra cuộc đua trượt băng truyền thống.",
+      "viện khí tượng hoàng gia hà lan": "Tổ chức nghiên cứu thời tiết và khí hậu chính thức của quốc gia này.",
+      "màng làm mát bức xạ thụ động": "Vật liệu phản chiếu ánh sáng và bức xạ hồng ngoại mà không cần năng lượng ngoài.",
+      "saharan silver ants": "Loài kiến bạc sa mạc truyền cảm hứng cho công nghệ làm mát.",
+      "nick van de giesen": "Nhà nghiên cứu nhận định về hạn chế của vật liệu làm mát tại địa phương.",
+      "aquathermal energy": "Năng lượng nhiệt từ nước được sử dụng để làm mát và tạo băng.",
+      "andy van den dobbelsteen": "Chuyên gia đề xuất lắp đặt hệ thống máy bơm năng lượng nhiệt dưới nước.",
+      "trung hòa carbon": "Mục tiêu giảm thiểu lượng khí thải nhà kính ròng về mức bằng không.",
+      "flora": "Hệ thực vật sinh sống tại một khu vực địa lý cụ thể.",
+      "fauna": "Hệ động vật sinh sống tại một khu vực địa lý cụ thể."
+    },
+    "fr": {
+      "elfstedentocht": "Célèbre course historique de patinage sur glace organisée à travers les onze villes de la province de Frise.",
+      "frise": "Province néerlandaise traversée par le parcours traditionnel de la course de patinage.",
+      "refroidissement radiatif passif": "Technologie qui réfléchit la lumière solaire et émet de l'infrarouge sans consommer d'énergie externe.",
+      "rayonnement infrarouge": "Forme d'énergie thermique émise par les surfaces vers le ciel pour dissiper la chaleur.",
+      "pompe à chaleur": "Appareil thermodynamique utilisé pour transférer de la chaleur d'un milieu à un autre.",
+      "énergie aquathermique": "Énergie renouvelable extraite de l'eau des rivières, des lacs ou de la mer pour chauffer ou refroidir.",
+      "neutralité carbone": "État d'équilibre où les émissions de gaz à effet de serre sont réduites ou compensées.",
+      "infrastructures": "Ensemble des installations matérielles et techniques nécessaires au fonctionnement d'un système."
+    },
+    "de": {
+      "elfstedentocht": "Traditionelles niederländisches Eislaufrennen über elf friesische Städte.",
+      "klimawandel": "Langfristige Veränderung der globalen oder regionalen Wetter- und Temperaturmuster.",
+      "ingenieurtechnische": "Auf technischen und wissenschaftlichen Methoden basierende Planungs- und Bauweisen.",
+      "meteorologischen": "Die Meteorologie, also die Wissenschaft der Erdatmosphäre und des Wetters, betreffend.",
+      "fahrenheit": "Eine angelsächsische Skala zur Messung von Temperaturen.",
+      "strahlungskühlender": "Technologie, die Wärme durch Infrarotstrahlung in den Weltraum abgibt.",
+      "aquathermische": "Nutzen von thermischer Energie aus Gewässern zum Heizen oder Kühlen.",
+      "wärmepumpen": "Geräte, die thermische Energie aus einer Umweltquelle auf ein höheres Temperaturniveau bringen.",
+      "co2-neutralität": "Zustand, in dem durch menschliches Handeln keine Netto-Kohlenstoffdioxid-Emissionen entstehen.",
+      "flora und fauna": "Die Gesamtheit aller Pflanzen und Tiere in einer bestimmten Region."
+    },
+    "es": {
+      "elfstedentocht": "Histórica carrera de patinaje sobre hielo celebrada en la provincia de Frisia.",
+      "radiación infrarroja": "Tipo de radiación electromagnética invisible asociada con la emisión de calor.",
+      "acuatermal": "Relativo al aprovechamiento de la energía térmica contenida en el agua.",
+      "neutralidad de carbono": "Estado en el que las emisiones netas de dióxido de carbono son iguales a cero.",
+      "bombas de calor": "Dispositivos que transfieren energía térmica desde una fuente de calor hacia otro espacio.",
+      "frisia": "Provincia situada en el norte de los Países Bajos.",
+      "fahrenheit": "Escala termométrica utilizada para medir la temperatura.",
+      "ecológicas": "Relativas a la ecología y la interacción entre los organismos y su entorno."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T03:38:42.757Z"
+}

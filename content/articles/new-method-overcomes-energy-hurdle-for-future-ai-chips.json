@@ -1,0 +1,237 @@
+{
+  "slug": "new-method-overcomes-energy-hurdle-for-future-ai-chips",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=new-method-overcomes-energy-hurdle-for-future-ai-chips",
+  "category": "technology",
+  "tags": [
+    "ai chips",
+    "magnetism",
+    "materials science",
+    "electronics"
+  ],
+  "title": {
+    "en": "New Method Overcomes Energy Hurdle for Future AI Chips",
+    "vi": "Phương pháp mới vượt qua rào cản năng lượng cho chip AI tương lai",
+    "fr": "Une nouvelle méthode surmonte un obstacle énergétique pour les futurs puces d'IA",
+    "de": "Neue Methode überwindet Energiehürde für künftige KI-Chips",
+    "es": "Un nuevo método supera el obstáculo energético para los futuros chips de IA"
+  },
+  "hook": {
+    "en": "Researchers have bypassed a long-standing physical barrier in computer chip design {source}. By shrinking bismuth ferrite films without losing their core capabilities, the team opens a path toward drastically lower energy consumption for artificial intelligence hardware.",
+    "vi": "Các nhà nghiên cứu đã vượt qua rào cản vật lý lâu năm trong thiết kế chip máy tính {source}. Bằng cách thu nhỏ các màng bismuth ferrite mà không làm mất đi năng lực cốt lõi, nhóm nghiên cứu mở ra con đường giảm mạnh tiêu thụ năng lượng cho phần cứng trí tuệ nhân tạo.",
+    "fr": "Des chercheurs ont contourné un obstacle physique de longue date dans la conception des puces informatiques {source}. En réduisant des films de ferrite de bismuth sans perdre leurs capacités fondamentales, l'équipe ouvre la voie à une réduction drastique de la consommation d'énergie pour le matériel d'intelligence artificielle.",
+    "de": "Forscher haben eine langjährige physikalische Barriere im Computerchip-Design umgangen {source}. Indem das Team Bismutferrit-Schichten verkleinerte, ohne ihre Kernfähigkeiten zu verlieren, ebnet es den Weg zu drastisch geringerem Energieverbrauch für Hardware der künstlichen Intelligenz.",
+    "es": "Unos investigadores han evitado una barrera física de larga data en el diseño de chips informáticos {source}. Al reducir las películas de ferrita de bismuto sin perder sus capacidades principales, el equipo abre un camino hacia un consumo de energía drásticamente menor para el hardware de inteligencia artificial."
+  },
+  "sections": [
+    {
+      "heading_en": "The Dead Layer Problem",
+      "heading_vi": "Vấn đề lớp chết",
+      "body_en": "Multiferroic materials combine electrical and magnetic traits controlled by tiny voltages. However, thinning them for computer chips destroys these properties through an issue called the dead layer effect. Distortion in atomic structures and internal electric fields cause this breakdown.",
+      "body_vi": "Vật liệu đa thiết điện từ (*multiferroics*) kết hợp các đặc tính điện và từ được kiểm soát bằng điện áp nhỏ. Tuy nhiên, việc làm mỏng chúng cho chip máy tính phá hủy các đặc tính này thông qua hiện tượng được gọi là hiệu ứng lớp chết (*dead layer effect*). Sự biến dạng cấu trúc nguyên tử và điện trường nội bộ gây ra sự sụp đổ này.",
+      "heading_fr": "Le problème de la couche morte",
+      "body_fr": "Les matériaux multiferroïques combinent des traits électriques et magnétiques contrôlés par de de faibles tensions. Cependant, leur amincissement pour les puces informatiques détruit ces propriétés en raison d'un phénomène appelé l'effet de couche morte. Des distorsions dans les structures atomiques et des champs électriques internes provoquent cette dégradation.",
+      "heading_de": "Das Problem der Toten Schicht",
+      "body_de": "Multiferroische Materialien vereinen elektrische und magnetische Eigenschaften, die durch winzige Spannungen gesteuert werden. Das Verdünnen für Computerchips zerstört diese Eigenschaften jedoch durch einen Effekt, der als tote Schicht bezeichnet wird. Verzerrungen in Atomstrukturen und interne elektrische Felder verursachen diesen Zusammenbruch.",
+      "heading_es": "El problema de la capa muerta",
+      "body_es": "Los materiales multiferroicos combinan rasgos eléctricos y magnéticos controlados por voltajes diminutos. Sin embargo, adelgazarlos para chips informáticos destruye estas propiedades a través de un problema llamado efecto de capa muerta. La distorsión en las estructuras atómicas y los campos eléctricos internos causan este colapso."
+    },
+    {
+      "heading_en": "Engineering a Solution",
+      "heading_vi": "Thiết kế giải pháp",
+      "body_en": "A team at Brown University deposited bismuth ferrite onto a dysprosium scandate foundation. This mismatch compresses the material to preserve its atomic arrangement. [p:A secondary metallic layer counters unwanted electric fields], keeping the film functional at a thickness of just a few angstroms.",
+      "body_vi": "Nhóm nghiên cứu tại Đại học Brown lắng đọng bismuth ferrite lên nền tảng dysprosium scandate. Sự sai lệch này nén vật liệu để bảo tồn sự sắp xếp nguyên tử. [p:Một lớp kim loại thứ cấp chống lại các điện trường không mong muốn], giữ cho màng hoạt động ở độ dày chỉ vài angstrom.",
+      "heading_fr": "Concevoir une solution",
+      "body_fr": "Une équipe de l'Université Brown a déposé du ferrite de bismuth sur une base de scandate de dysprosium. Cette incompatibilité comprime le matériau pour préserver son agencement atomique. [p:Une couche métallique secondaire contrebalance les champs électriques indésirables], ce qui maintient le film fonctionnel à une épaisseur de seulement quelques angströms.",
+      "heading_de": "Entwicklung einer Lösung",
+      "body_de": "Ein Team der Brown University schied Bismutferrit auf einem Dysprosiumskandat-Fundament ab. Diese Fehlanpassung komprimiert das Material, um seine atomare Anordnung zu bewahren. [p:Eine sekundäre metallische Schicht wirkt unerwünschten elektrischen Feldern entgegen], wodurch der Film bei einer Dicke von nur wenigen Angström funktionsfähig bleibt.",
+      "heading_es": "Ingeniería de una solución",
+      "body_es": "Un equipo de la Universidad Brown depositó ferrita de bismuto sobre una base de escandato de disprosio. Esta disparidad comprime el material para preservar su disposición atómica. [p:Una capa metálica secundaria contrasta los campos eléctricos no deseados], manteniendo la película funcional a un grosor de solo unos pocos angstroms."
+    },
+    {
+      "heading_en": "Discovering Altermagnetism",
+      "heading_vi": "Khám phá từ tính xen kẽ",
+      "body_en": "The engineered films exhibited altermagnetism, blending benefits of ferromagnetism and antiferromagnetism. This unique state provides strong readable signals alongside high operational speed. Engineers can pack components densely without facing the usual magnetic interference.",
+      "body_vi": "Các màng được thiết kế thể hiện từ tính xen kẽ (*altermagnetism*), kết hợp lợi ích của sắt từ (*ferromagnetism*) và phản sắt từ (*antiferromagnetism*). Trạng thái độc đáo này mang lại tín hiệu đọc mạnh mẽ bên cạnh tốc độ vận hành cao.",
+      "heading_fr": "Découvrir l'alternmagnétisme",
+      "body_fr": "Les films conçus ont fait preuve d'alternmagnétisme, associant les avantages du ferromagnétisme et de l'antiferromagnétisme. Cet état unique fournit de forts signaux lisibles ainsi qu'une vitesse opérationnelle élevée. Les ingénieurs peuvent entasser les composants densément sans affronter les interférences magnétiques habituelles.",
+      "heading_de": "Entdeckung des Altermagnetismus",
+      "body_de": "Die konstruierten Filme zeigten Altermagnetismus und verbanden die Vorteile von Ferromagnetismus und Antiferromagnetismus. Dieser einzigartige Zustand liefert starke lesbare Signale bei hoher Arbeitsgeschwindigkeit. Ingenieure können Komponenten dicht packen, ohne mit den üblichen magnetischen Störungen konfrontiert zu werden.",
+      "heading_es": "Descubrimiento del altermagnetismo",
+      "body_es": "Las películas diseñadas exhibieron altermagnetismo, combinando beneficios del ferromagnetismo y el antiferromagnetismo. Este estado único proporciona señales legibles fuertes junto con una alta velocidad operativa. Los ingenieros pueden empaquetar componentes densamente sin enfrentar la interferencia magnética habitual."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261111005853.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "8machine _",
+    "authorUrl": "https://unsplash.com/@8machine_?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/Jw7p2A369As",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/Jw7p2A369As/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "A breakthrough in magnetism could make AI chips use dramatically less energy",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261111005853.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review current energy demands in your AI hardware setups.",
+      "Read the published study in Nature Materials for technical details.",
+      "Examine how thin-film engineering applies to your projects."
+    ],
+    "vi": [
+      "Xem xét nhu cầu năng lượng hiện tại trong các thiết lập phần cứng AI của bạn.",
+      "Đọc nghiên cứu được công bố trên tạp chí Nature Materials để biết chi tiết kỹ thuật.",
+      "Kiểm tra cách kỹ thuật màng mỏng áp dụng cho các dự án của bạn."
+    ],
+    "fr": [
+      "Examinez les exigences énergétiques actuelles de vos installations de matériel d'IA.",
+      "Lisez l'étude publiée dans Nature Materials pour obtenir les détails techniques.",
+      "Analysez la manière dont l'ingénierie des films minces s'applique à vos projets."
+    ],
+    "de": [
+      "Überprüfe den aktuellen Energiebedarf in deinen KI-Hardware-Setups.",
+      "Lies die veröffentlichte Studie in Nature Materials für technische Details.",
+      "Untersuche, wie Dünnschichttechnik auf deine Projekte angewendet werden kann."
+    ],
+    "es": [
+      "Revisa las demandas energéticas actuales en tus configuraciones de hardware de IA.",
+      "Lee el estudio publicado en Nature Materials para obtener detalles técnicos.",
+      "Examina cómo se aplica la ingeniería de película delgada a tus proyectos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "8machine _",
+      "authorUrl": "https://unsplash.com/@8machine_?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Jw7p2A369As",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Jw7p2A369As/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1665725045018-d734fe11e46d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1665725045018-d734fe11e46d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Pramod Tiwari",
+      "authorUrl": "https://unsplash.com/@pramodtiwari?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/vuN2nAQCg3k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/vuN2nAQCg3k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1730578726760-bd351ae7070d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1730578726760-bd351ae7070d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Jason Leung",
+      "authorUrl": "https://unsplash.com/@ninjason?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/j8Tc1rV-gUw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/j8Tc1rV-gUw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1750365920056-d4b4ca73fbaa?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1750365920056-d4b4ca73fbaa?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Omar:. Lopez-Rincon",
+      "authorUrl": "https://unsplash.com/@procopiopi?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8i9dzwZ_O4I",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/8i9dzwZ_O4I/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8TmV3JTIwTWV0aG9kJTIwT3ZlcmNvbWVzJTIwRW5lcmd5JTIwSHVyZGxlJTIwZm9yJTIwRnV0dXJlJTIwQUklMjBDaGlwcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MTc3M3ww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoQABwAPu1iqk2ppaQiMAgBMB2JZQC7ACHgb75HjioMikEMnAAA/u513G3f8OVoAYueuPxgKWNo3GbeTPRk5BxcTAw13ytzV3d4pnsD3U8X2eQOxdvDUwIP7+kdyJQGkzQSx+9f8LwsAAAA",
+  "dominant": "#171d21",
+  "glossary": {
+    "en": {
+      "bismuth ferrite": "A multiferroic material combined to create energy-efficient films for future AI hardware.",
+      "dead layer effect": "A physical issue where thinning materials destroys their core electrical and magnetic properties.",
+      "dysprosium scandate": "A foundational material used to compress and preserve the atomic arrangement of films.",
+      "angstroms": "Units of length used to measure extremely thin material layers.",
+      "altermagnetism": "A unique magnetic state blending the benefits of ferromagnetism and antiferromagnetism.",
+      "ferromagnetism": "A type of magnetism characterized by strong magnetic moments and readable signals.",
+      "antiferromagnetism": "A magnetic state providing operational speed without usual magnetic interference.",
+      "nature materials": "The scientific journal where the technical study was published."
+    },
+    "vi": {
+      "bismuth ferrite": "Vật liệu đa thiết điện từ dùng để chế tạo chip máy tính tiết kiệm năng lượng.",
+      "multiferroics": "Vật liệu kết hợp các đặc tính điện và từ được kiểm soát bằng điện áp nhỏ.",
+      "dead layer effect": "Hiện tượng phá hủy các đặc tính điện từ khi làm mỏng vật liệu đa thiết điện từ.",
+      "angstrom": "Đơn vị đo chiều dài rất nhỏ, tương đương một phần mười nanomet.",
+      "altermagnetism": "Từ tính xen kẽ kết hợp lợi ích của sắt từ và phản sắt từ.",
+      "ferromagnetism": "Hiện tượng vật lý mang lại từ tính mạnh cho các vật liệu như sắt.",
+      "antiferromagnetism": "Trạng thái từ tính trong đó các mô-men từ sắp xếp theo hướng ngược nhau.",
+      "nature materials": "Tạp chí khoa học uy tín nơi nghiên cứu được công bố."
+    },
+    "fr": {
+      "multiferroïques": "Matériaux combinant des propriétés électriques et magnétiques.",
+      "ferrite de bismuth": "Matériau multiferroïque utilisé pour fabriquer des puces innovantes.",
+      "couche morte": "Zone où les propriétés d'un matériau fin sont détruites.",
+      "angströms": "Unité de mesure de longueur très petite.",
+      "alternmagnétisme": "État magnétique combinant ferromagnétisme et antiferromagnétisme.",
+      "ferromagnétisme": "Phénomène où les matériaux s'aimantent fortement.",
+      "antiferromagnétisme": "Propriété magnétique où les moments s'annulent mutuellement.",
+      "ingénierie": "Ensemble des méthodes de conception et de fabrication."
+    },
+    "de": {
+      "bismutferrit": "Ein multiferroisches Material, das elektrische und magnetische Eigenschaften kombiniert.",
+      "angström": "Eine Maßeinheit für sehr kleine Längen im atomaren Bereich.",
+      "altermagnetismus": "Ein magnetischer Zustand, der Vorteile von Ferromagnetismus und Antiferromagnetismus verbindet.",
+      "multiferroische": "Materialien, die gleichzeitig mehrere ferroische Ordnungen wie Magnetismus und Elektrizität aufweisen.",
+      "ferromagnetismus": "Form des Magnetismus, bei der die magnetischen Momente gleichgerichtet sind.",
+      "antiferromagnetismus": "Magnetismus, bei dem sich benachbarte magnetische Momente gegenseitig aufheben.",
+      "dünnschichttechnik": "Verfahren zum Aufbringen hauchdünner Schichten auf Trägermaterialien.",
+      "fehlanpassung": "Unterschied in den Gitterkonstanten zweier verbundener Materialien."
+    },
+    "es": {
+      "ferrita de bismuto": "Material multiferroico clave utilizado en la investigación para mejorar la eficiencia energética.",
+      "multiferroicos": "Materiales que combinan propiedades eléctricas y magnéticas controlables.",
+      "efecto de capa muerta": "Problema físico donde se destruyen las propiedades del material al reducirlo.",
+      "angstroms": "Unidad de longitud extremadamente pequeña usada para medir grosores atómicos.",
+      "altermagnetism": "Estado magnético único que combina ferromagnetismo y antiferromagnetismo.",
+      "ferromagnetism": "Fenómeno físico en el que ciertos materiales muestran un fuerte magnetismo.",
+      "antiferromagnetism": "Propiedad magnética donde los momentos magnéticos se alinean en direcciones opuestas.",
+      "escandato de disprosio": "Sustancia base utilizada como cimiento para comprimir y preservar el material."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T04:03:42.757Z"
+}

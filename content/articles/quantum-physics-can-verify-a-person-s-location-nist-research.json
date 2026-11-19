@@ -1,0 +1,252 @@
+{
+  "slug": "quantum-physics-can-verify-a-person-s-location-nist-research",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=quantum-physics-can-verify-a-person-s-location-nist-research",
+  "category": "technology",
+  "tags": [
+    "quantum physics",
+    "digital security",
+    "nist",
+    "entanglement"
+  ],
+  "title": {
+    "en": "Quantum Physics Can Verify a Person’s Location, NIST Researchers Show",
+    "vi": "Vật lý lượng tử có thể xác thực vị trí của một người, nghiên cứu của NIST cho thấy",
+    "fr": "La physique quantique peut vérifier la localisation d'une personne, démontrent des chercheurs du NIST",
+    "de": "Quantenphysik kann den Standort einer Person überprüfen, wie NIST-Forscher zeigen",
+    "es": "La física cuántica puede verificar la ubicación de una persona, según muestran investigadores del NIST"
+  },
+  "hook": {
+    "en": "Imagine a corporate treasurer directing her company’s financial network to make a $50 million wire transfer. How can the network be certain the command is coming from a secure terminal in the company’s headquarters, and not a hacker’s laptop across the globe?",
+    "vi": "Hãy tưởng tượng một thủ quỹ doanh nghiệp đang chỉ đạo mạng lưới tài chính của công ty thực hiện lệnh chuyển khoản trị giá 50 triệu đô la. Làm thế nào mạng lưới có thể chắc chắn lệnh này xuất phát từ một thiết bị đầu cuối an toàn tại trụ sở công ty chứ không phải máy tính xách tay của tin tặc ở nửa vòng trái đất?",
+    "fr": "Imaginez une trésorière d'entreprise ordonnant au réseau financier de sa société d'effectuer un virement de 50 millions de dollars. Comment le réseau peut-il être certain que l'ordre provient d'un terminal sécurisé au siège de l'entreprise, et non de l'ordinateur portable d'un pirate de l'autre côté de la planète ?",
+    "de": "Stell dir vor, eine Finanzchefin weist das Finanznetzwerk ihres Unternehmens an, eine Überweisung über 50 Millionen Dollar zu tätigen. Wie kann das Netzwerk sicher sein, dass der Befehl von einem sicheren Terminal in der Firmenzentrale kommt und nicht vom Laptop eines Hackers am anderen Ende der Welt?",
+    "es": "¿Imagine a una tesorera corporativa ordenando a la red financiera de su empresa realizar una transferencia bancaria de 50 millones de dólares. ¿Cómo puede estar segura la red de que la orden proviene de una terminal segura en la sede de la compañía y no de la computadora portátil de un pirata informático al otro lado del mundo?"
+  },
+  "sections": [
+    {
+      "body_en": "In a first-of-its-kind experiment, scientists at the National Institute of Standards and Technology (NIST) and their colleagues have demonstrated that the quirks of quantum mechanics can definitively confirm the location of a person. Using exquisitely sensitive quantum sensors and quantum technologies developed at NIST, physicist Krister Shalm and an international team of collaborators eliminated loopholes that had left other quantum-based verification strategies vulnerable to fraudsters.\n\nThe researchers reported their findings this week in *Nature**.*\n\nApplying the technique to a real-life situation may be more than a decade away, noted NIST physicist Scott Glancy, a study collaborator. That’s because researchers are still developing the tools that will allow quantum computers and sensors to accurately share quantum information in large-scale networks.",
+      "body_vi": "Trong một thí nghiệm lần đầu tiên được thực hiện, các nhà khoa học tại Viện Tiêu chuẩn và Công nghệ Quốc gia (*National Institute of Standards and Technology*) và các đồng nghiệp đã chứng minh rằng các đặc tính kỳ lạ của cơ học lượng tử (*quantum mechanics*) có thể xác nhận dứt khoát vị trí của một người. Sử dụng các cảm biến lượng tử cực kỳ nhạy bén và công nghệ lượng tử được phát triển tại NIST, nhà vật lý học Krister Shalm cùng một nhóm cộng tác viên quốc tế đã loại bỏ các lỗ hổng từng khiến các chiến lược xác thực dựa trên lượng tử khác dễ bị kẻ gian lợi dụng. Các nhà nghiên cứu đã báo cáo phát hiện của họ trên tạp chí *Nature*. Việc áp dụng kỹ thuật này vào tình huống thực tế có thể còn cách xa hơn một thập kỷ, theo lưu ý của nhà vật lý học Scott Glancy tại NIST, một cộng tác viên nghiên cứu. Điều đó xảy ra vì các nhà nghiên cứu vẫn đang phát triển các công cụ cho phép máy tính và cảm biến lượng tử chia sẻ thông tin lượng tử một cách chính xác trong các mạng lưới quy mô lớn.",
+      "body_fr": "Dans le cadre d'une expérience inédite, des scientifiques du National Institute of Standards and Technology (NIST) et leurs collègues ont démontré que les bizarreries de la mécanique quantique peuvent confirmer de manière définitive l'emplacement d'une personne. En utilisant des capteurs quantiques d'une sensibilité exquise et des technologies quantiques développées au NIST, le physicien Krister Shalm et une équipe internationale de collaborateurs ont éliminé les failles qui rendaient d'autres stratégies de vérification quantique vulnérables aux fraudeurs.\n\nLes chercheurs ont publié leurs conclusions cette semaine dans *Nature*.\n\nL'application de cette technique à une situation réelle pourrait prendre plus d'une décennie, a noté le physicien du NIST Scott Glancy, collaborateur de l'étude. En effet, les chercheurs développent encore les outils qui permettront aux ordinateurs et aux capteurs quantiques de partager avec précision des informations quantiques dans des réseaux à grande échelle.",
+      "body_de": "In einem neuartigen Experiment haben Wissenschaftler des National Institute of Standards and Technology (NIST) und ihre Kollegen gezeigt, dass die Eigenheiten der Quantenmechanik den Standort einer Person definitiv bestätigen können. Unter Verwendung äußerst empfindlicher Quantensensoren und am NIST entwickelter Quantentechnologien beseitigten der Physiker Krister Shalm und ein internationales Kollaborationsteam Schlupflöcher, die andere quantenbasierte Verifikationsstrategien für Betrüger anfällig gemacht hatten.\n\nDie Forscher berichteten diese Woche über ihre Ergebnisse in Nature.\n\nDie Anwendung der Technik auf eine reale Situation könnte noch mehr als ein Jahrzehnt entfernt sein, bemerkte der NIST-Physiker und Studienmitautor Scott Glancy. Das liegt daran, dass Forscher immer noch die Werkzeuge entwickeln, die es Quantencomputern und -sensoren ermöglichen werden, Quanteninformationen in groß angelegten Netzwerken präzise auszutauschen.",
+      "body_es": "En un experimento pionero, científicos del Instituto Nacional de Estándares y Tecnología (NIST) y sus colegas han demostrado que las rarezas de la mecánica cuántica pueden confirmar definitivamente la ubicación de una persona. Utilizando sensores cuánticos exquisitamente sensibles y tecnologías desarrolladas en el NIST, el físico Krister Shalm y un equipo internacional de colaboradores eliminaron los vacíos legales que dejaban vulnerables a los estafadores en otras estrategias de verificación basadas en la *cuántica*.\n\nLos investigadores publicaron sus hallazgos esta semana en *Nature*.\n\nAplicar la técnica a una situación de la vida real podría tardar más de una década, señaló el físico del NIST Scott Glancy, colaborador del estudio. Esto se debe a que los investigadores aún están desarrollando las herramientas que permitirán a las computadoras y sensores cuánticos compartir información cuántica con precisión en redes a gran escala."
+    },
+    {
+      "body_en": "By preventing people outside a specific location from accessing data, the technique has the potential to:\n\n• Safeguard healthcare records and other private information.\n\n• Prevent remote adversaries from issuing commands to critical infrastructure such as nuclear plants, power grids and water treatment facilities.\n\n• Stop hackers from making unauthorized stock transactions in a firm’s trading account.\n\n• Thwart phishing attacks based on video or phone calls from unknown locations.\n\n• Cybercrimes cost U.S. citizens more than $16 billion in 2024. Far fewer than 1% of cybercriminals are caught, in part because many of the thieves operate from outside the country.",
+      "body_vi": "Bằng cách ngăn chặn những người bên ngoài một vị trí cụ thể truy cập dữ liệu, kỹ thuật này có tiềm năng bảo vệ hồ sơ chăm sóc sức khỏe và thông tin riêng tư khác. Kỹ thuật này cũng ngăn chặn những kẻ tấn công từ xa đưa ra lệnh cho các cơ sở hạ tầng trọng yếu như nhà máy hạt nhân, lưới điện và cơ sở xử lý nước. Ngoài ra, giải pháp này dừng các hành vi gian lận giao dịch chứng khoán của tin tặc trong tài khoản giao dịch của một công ty. Hơn nữa, nó cản trở các cuộc tấn công lừa đảo (*phishing*) dựa trên các cuộc gọi video hoặc cuộc gọi điện thoại từ các vị trí không xác định. Tội phạm mạng đã gây tổn thất cho công dân Hoa Kỳ hơn 16 tỷ đô la vào năm 2024. Rất ít tin tặc bị bắt, một phần vì nhiều kẻ trộm hoạt động từ bên ngoài quốc gia.",
+      "body_fr": "En empêchant des personnes situées hors d'un lieu spécifique d'accéder aux données, la technique a le potentiel de :\n\n• Protéger les dossiers médicaux et autres informations privées.\n\n• Empêcher des adversaires distants d'émettre des commandes vers des infrastructures critiques telles que les centrales nucléaires, les réseaux électriques et les installations de traitement de l'eau.\n\n• Stopper les pirates qui effectuent des transactions boursières non autorisées sur le compte de trading d'une entreprise.\n\n• Contrer les attaques par hameçonnage basées sur des appels vidéo ou téléphoniques provenant d'inconnus.\n\n• Les cybercrimes ont coûté aux citoyens américains plus de 16 milliards de dollars en 2024. Bien moins de 1 % des cybercriminels sont attrapés, en partie parce que nombre d'entre eux opèrent depuis l'étranger.",
+      "body_de": "Indem verhindert wird, dass Personen außerhalb eines bestimmten Standorts auf Daten zugreifen, hat die Technik das Potenzial:\n\n• Gesundheitsakten und andere private Informationen zu schützen.\n\n• Zu verhindern, dass entfernte Angreifer Befehle an kritische Infrastrukturen wie Kernkraftwerke, Stromnetze und Wasseraufbereitungsanlagen senden.\n\n• Zu stoppen, dass Hacker unbefugte Aktientransaktionen im Handelskonto einer Firma tätigen.\n\n• Phishing-Angriffe zu vereiteln, die auf Video- oder Telefonanrufen von unbekannten Standorten basieren.\n\n• Cyberkriminalität kostete US-Bürger im Jahr 2024 mehr als 16 Milliarden US-Dollar. Weit weniger als 1 % der Cyberkriminellen werden gefasst, auch weil viele der Diebe aus dem Ausland operieren.",
+      "body_es": "Al impedir que personas fuera de una ubicación específica accedan a los datos, la técnica tiene el potencial de:\n\n• [p:Proteger los registros médicos] y otra información privada.\n\n• Evitar que adversarios remotos emitan comandos a infraestructura crítica como plantas nucleares, redes eléctricas e instalaciones de tratamiento de agua.\n\n• Detener a los piratas informáticos para que no realicen transacciones bursátiles no autorizadas en la cuenta de operaciones de una empresa.\n\n• Frustrar ataques de *phishing* basados en videollamadas o llamadas telefónicas desde ubicaciones desconocidas.\n\n• Los ciberdelitos les costaron a los ciudadanos estadounidenses más de 16 mil millones de dólares en 2024. Mucho menos del 1 % de los ciberdelincuentes son atrapados, en parte porque muchos de los ladrones operan desde fuera del país."
+    },
+    {
+      "body_en": "Our results show how digital security can instead be anchored to the physical world, said Shalm. Gaining access to a system can only be done by someone who can prove they are in a particular location, such as a bank, thwarting remote would-be hackers. Shalm and his collaborators employed a procedure known as quantum position verification, in which two trustworthy parties, called the verifiers, seek to confirm the location of a third person, dubbed the prover. To make that determination, the verifiers task the prover with measuring a particular property of a photon, a particle of light, and then reporting back the results.",
+      "body_vi": "Kết quả của nhóm cho thấy bảo mật kỹ thuật số có thể được neo giữ vào thế giới vật lý thay vì cách truyền thống. Việc truy cập vào một hệ thống chỉ có thể được thực hiện bởi người chứng minh họ đang ở một vị trí cụ thể, chẳng hạn như ngân hàng, qua đó ngăn chặn những kẻ tấn công từ xa. Shalm và các cộng tác viên đã sử dụng một quy trình được gọi là xác thực vị trí lượng tử (*quantum position verification*), trong đó hai bên đáng tin cậy gọi là người xác thực tìm cách xác nhận vị trí của người thứ ba được gọi là người chứng minh. Để đưa ra quyết định đó, những người xác thực giao nhiệm vụ cho người chứng minh đo lường một đặc tính cụ thể của hạt quang tử (*photon*), tức hạt ánh sáng, và sau đó báo cáo lại kết quả.",
+      "body_fr": "« Nos résultats montrent comment la sécurité numérique peut à la place être ancrée dans le monde physique », a déclaré Shalm. « L'accès à un système ne peut être obtenu que par quelqu'un qui peut prouver qu'il se trouve dans un endroit particulier — comme une banque —, contrecarrant ainsi d'éventuels pirates à distance. »\n\nShalm et ses collaborateurs ont employé une procédure connue sous le nom de vérification de position quantique (VPQ), dans laquelle deux parties dignes de confiance, appelées les vérificateurs, cherchent à confirmer l'emplacement d'une troisième personne, surnommée le prouveur. Pour y parvenir, les vérificateurs chargent le prouveur de mesurer une propriété particulière d'un photon — une particule de lumière — puis de rapporter les résultats.",
+      "body_de": "„Unsere Ergebnisse zeigen, wie digitale Sicherheit stattdessen in der physischen Welt verankert werden kann“, sagte Shalm. „Zugriff auf ein System kann nur von jemandem erlangt werden, der nachweisen kann, dass er sich an einem bestimmten Ort befindet – wie etwa einer Bank –, womit potenzielle Fernhacker vereitelt werden.“\n\nShalm und seine Mitarbeiter setzten ein Verfahren ein, das als Quantenstandortverifikation (QPV) bekannt ist, bei dem zwei vertrauenswürdige Parteien, die Verifizierer genannt werden, versuchen, den Standort einer dritten Person zu bestätigen, die als Proband bezeichnet wird. Um dies festzustellen, beauftragen die Verifizierer den Probanden, eine bestimmte Eigenschaft eines Photons – eines Lichtteilchens – zu messen und anschließend die Ergebnisse zurückzumelden.",
+      "body_es": "“Nuestros resultados muestran cómo la seguridad digital puede anclarse en su lugar al mundo físico”, dijo Shalm. “Obtener acceso a un sistema solo puede ser realizado por alguien que pueda demostrar que se encuentra en un lugar en particular, como un banco, lo que frustra a los posibles piratas informáticos remotos”.\n\nShalm y sus colaboradores emplearon un procedimiento conocido como verificación de posición cuántica (QPV), en el cual dos partes confiables, llamadas verificadores, buscan confirmar la ubicación de una tercera persona, denominada probador. Para hacer esa determinación, los verificadores le encargan al probador medir una propiedad particular de un fotón —una partícula de luz— y luego informar los resultados."
+    },
+    {
+      "body_en": "On the NIST campus in Boulder, Colorado, the team built two verifying stations 195 meters apart, connected by electrical cables and ultrathin optical fibers threaded through the corridors of a research building. The purported location of the prover resided somewhere in between them.\n\nIn the first step of the experiment, one of the verifiers creates a pair of photons that possess a uniquely quantum property known as entanglement. Entangled particles are so inextricably linked that measuring a property of one particle automatically reveals the property of the other — even if the two particles lie on opposite sides of the galaxy.",
+      "body_vi": "Trên khuôn viên của NIST ở Boulder, Colorado, nhóm nghiên cứu đã xây dựng hai trạm xác thực cách nhau 195 mét, được kết nối bằng cáp điện và các sợi quang siêu mỏng luồn qua hành lang của một tòa nhà nghiên cứu. Vị trí được cho là của người chứng minh nằm ở đâu đó ở giữa chúng. Trong bước đầu tiên của thí nghiệm, một trong những người xác thực tạo ra một cặp hạt quang tử sở hữu một đặc tính thuần túy lượng tử được gọi là sự vướng víu (*entanglement*). Các hạt vướng víu gắn kết chặt chẽ đến mức việc đo lường một đặc tính của hạt này sẽ tự động tiết lộ đặc tính của hạt kia, ngay cả khi hai hạt nằm ở hai phía đối diện của thiên hà.",
+      "body_fr": "Sur le campus du NIST à Boulder, dans le Colorado, l'équipe a construit deux stations de vérification distantes de 195 mètres, reliées par des câbles électriques et des fibres optiques ultra-minces filant dans les couloirs d'un bâtiment de recherche. L'emplacement supposé du prouveur se trouvait quelque part entre elles.\n\nDans la première étape de l'expérience, l'un des vérificateurs crée une paire de photons qui possèdent une propriété purement quantique connue sous le nom d'intrication. Les particules intriquées sont si inextricablement liées que la mesure d'une propriété de l'une révèle automatiquement la propriété de l'autre — même si les deux particules se trouvent aux antipodes de la galaxie.",
+      "body_de": "Auf dem NIST-Campus in Boulder, Colorado, baute das Team zwei Verifizierungsstationen im Abstand von 195 Metern, die durch elektrische Kabel und ultradünne Glasfasern verbunden waren, die durch die Flure eines Forschungsgebäudes verliefen. Der angeblich vom Probanden eingenommene Standort befand sich irgendwo dazwischen.\n\nIm ersten Schritt des Experiments erzeugt einer der Verifizierer ein Paar Photonen, die eine einzigartige quantenmechanische Eigenschaft besitzen, die als Verschränkung bekannt ist. Verschränkte Teilchen sind so untrennbar miteinander verbunden, dass die Messung einer Eigenschaft eines Teilchens automatisch die Eigenschaft des anderen offenbart – selbst wenn sich die beiden Teilchen auf gegenüberliegenden Seiten der Galaxie befinden.",
+      "body_es": "En el campus del NIST en Boulder, Colorado, el equipo construyó dos estaciones de verificación separadas por 195 metros, conectadas por cables eléctricos y fibras ópticas ultrafinas enhebradas a través de los pasillos de un edificio de investigación. La supuesta ubicación del probador residía en algún lugar entre ellas.\n\nEn el primer paso del experimento, uno de los verificadores crea un par de fotones que poseen una propiedad exclusivamente cuántica conocida como *entrelazamiento*. Las partículas entrelazadas están tan inextricablemente vinculadas que medir una propiedad de una partícula revela automáticamente la propiedad de la otra, incluso si las dos partículas se encuentran en lados opuestos de la galaxia."
+    },
+    {
+      "body_en": "In the team’s plan, the verifier keeps one of the entangled photons and sends the other to the prover. The verifiers each send random numbers timed to arrive simultaneously at the prover’s assumed location. The prover uses the random numbers to compute how to measure a particular property of the entangled photon — its polarization, or the direction in which the electric field of the particle wiggles as it travels through space.\n\nThe prover then sends their measurement to the verifiers. Based on how much time elapsed from the moment the verifiers sent the random bits to the prover to when they received the response back, the verifiers can work together to triangulate where the prover is located.",
+      "body_vi": "Trong kế hoạch của nhóm, người xác thực giữ lại một hạt quang tử vướng víu và gửi hạt còn lại cho người chứng minh. Mỗi người xác thực gửi các số ngẫu nhiên được định thời gian để đến cùng một lúc tại vị trí giả định của người chứng minh. Người chứng minh sử dụng các số ngẫu nhiên để tính toán cách đo lường một đặc tính cụ thể của hạt quang tử vướng víu, đó là độ phân cực (*polarization*) hoặc hướng mà trường điện của hạt uốn lượn khi di chuyển trong không gian. Người chứng minh sau đó gửi kết quả đo lường của họ cho những người xác thực. Dựa trên khoảng thời gian trôi qua từ lúc người xác thực gửi các bit ngẫu nhiên đến khi nhận lại phản hồi, họ có thể phối hợp để định vị tam giác nơi người chứng minh đang đứng.",
+      "body_fr": "Dans le plan de l'équipe, le vérificateur garde l'un des photons intriqués et envoie l'autre au prouveur. Les vérificateurs envoient chacun des nombres aléatoires programmés pour arriver simultanément à l'emplacement supposé du prouveur. Ce dernier utilise ces nombres aléatoires pour calculer comment mesurer une propriété particulière du photon intriqué : sa polarisation, c'est-à-dire la direction dans laquelle le champ électrique de la particule oscille lors de son voyage dans l'espace.\n\nLe prouveur transmet ensuite sa mesure aux vérificateurs. En se basant sur le temps écoulé entre le moment où les vérificateurs ont envoyé les bits aléatoires au prouveur et celui où ils ont reçu la réponse, ils peuvent coopérer pour trianguler l'emplacement du prouveur.",
+      "body_de": "Nach dem Plan des Teams behält der Verifizierer eines der verschränkten Photonen und sendet das andere an den Probanden. Die Verifizierer senden jeweils Zufallszahlen, deren Timing so gewählt ist, dass sie gleichzeitig am vermuteten Standort des Probanden eintreffen. Der Proband verwendet die Zufallszahlen, um zu berechnen, wie eine bestimmte Eigenschaft des verschränkten Photons zu messen ist – seine Polarisation oder die Richtung, in der das elektrische Feld des Teilchens schwingt, während es sich durch den Raum bewegt.\n\nDer Proband sendet seine Messung dann an die Verifizierer. Basierend auf der verstrichenen Zeit von dem Moment, in dem die Verifizierer die Zufallsbits an den Probanden sendeten, bis zum Empfang der Antwort können die Verifizierer zusammenarbeiten, um den Standort des Probanden zu triangulieren.",
+      "body_es": "En el plan del equipo, el verificador se queda con uno de los fotones entrelazados y le envía el otro al probador. Los verificadores envían números aleatorios cronometrados para llegar simultáneamente a la ubicación supuesta del probador. El probador utiliza los números aleatorios para calcular cómo medir una propiedad particular del fotón entrelazado: su polarización, o la dirección en la que el campo eléctrico de la partícula oscila a medida que viaja por el espacio.\n\nLuego, el probador envía su medición a los verificadores. Según el tiempo transcurrido desde el momento en que los verificadores enviaron los bits aleatorios al probador hasta que recibieron la respuesta, los verificadores pueden trabajar juntos para triangular dónde se encuentra ubicado el probador."
+    },
+    {
+      "body_en": "This procedure is repeated millions of times over the course of a few minutes. The verifiers then look at how often the polarization measurements they made on their entangled photon match those of the entangled photon sent to the prover. A quantum principle known as the no-cloning theorem dictates that these correlations are destroyed by anyone attempting to copy and distribute the information to colluding partners.\n\nBy passing a test known as a loophole-free Bell test, which proves that the entangled photons are more closely correlated than classical physics allows, the verifiers can be certain that the prover is really in the targeted location and not just pretending to be in that place.",
+      "body_vi": "[p:Quy trình này được lặp lại hàng triệu lần] trong khoảng thời gian vài phút. Những người xác thực sau đó xem xét mức độ trùng khớp giữa các phép đo độ phân cực trên hạt quang tử của họ với hạt được gửi cho người chứng minh. Định lý không sao chép (*no-cloning theorem*) trong vật lý lượng tử quy định rằng các mối tương quan này bị phá hủy bởi bất kỳ ai cố gắng sao chép và phân phối thông tin cho các đối tác đồng lõa. Bằng cách vượt qua một bài kiểm tra không có lỗ hổng (*loophole-free Bell test*), bài kiểm tra chứng minh các hạt vướng víu tương quan chặt chẽ hơn mức vật lý cổ điển cho phép, người xác thực có thể chắc chắn người chứng minh thực sự ở đúng vị trí mục tiêu.",
+      "body_fr": "Cette procédure est répétée des millions de fois en l'espace de quelques minutes. Les vérificateurs examinent ensuite la fréquence à laquelle les mesures de polarisation de leur photon intriqué coïncident avec celles du photon envoyé au prouveur. Un principe quantique connu sous le nom de théorème de non-clonage dicte que ces corrélations sont détruites par quiconque tente de copier et de distribuer l'information à des partenaires complices.\n\nEn réussissant un test sans faille de Bell, qui prouve que les photons intriqués sont plus étroitement corrélés que ne le permet la physique classique, les vérificateurs ont la certitude que le prouveur se trouve réellement à l'endroit cibler et ne fait pas que prétendre y être.",
+      "body_de": "Dieses Verfahren wird im Laufe weniger Minuten millionenfach wiederholt. Die Verifizierer prüfen dann, wie oft die Polarisationsmessungen an ihrem verschränkten Photon mit denen des an den Probanden gesendeten verschränkten Photons übereinstimmen. Ein als No-Cloning-Theorem bekanntes Quantenprinzip besagt, dass diese Korrelationen von jedem zerstört werden, der versucht, die Information zu kopieren und an konspirierende Partner zu verteilen.\n\nDurch das Bestehen eines Tests, der als schlupflochfreier Bell-Test bekannt ist und beweist, dass die verschränkten Photonen enger korreliert sind, als es die klassische Physik erlaubt, können die Verifizierer sicher sein, dass der Proband sich tatsächlich am Zielort befindet und diesen Ort nicht nur vortäuscht.",
+      "body_es": "Este procedimiento se repite millones de veces en el transcurso de unos pocos minutos. Los verificadores observan con qué frecuencia las mediciones de polarización realizadas en su fotón entrelazado coinciden con las del fotón entrelazado enviado al probador. Un principio cuántico conocido como teorema de no clonación dicta que estas correlaciones son destruidas por cualquiera que intente copiar y distribuir la información a socios coludidos.\n\nAl superar una prueba conocida como prueba de Bell libre de resquicios, que demuestra que los fotones entrelazados están más estrechamente correlacionados de lo que permite la física clásica, los verificadores pueden estar seguros de que el probador está realmente en la ubicación objetivo y no solo fingiendo estar en ese lugar."
+    },
+    {
+      "body_en": "The Bell test can be passed only if the prover consistently measures the entangled photon according to the instructions specified by the verifiers’ random numbers. Because those instructions are random, fraudsters cannot predict them and use the predictions to send early responses back to the verifiers, confounding their ability to determine the true location of the prover.\n\nAny experimental error or manipulation of the quantum devices by adversaries will cause the Bell test to fail, exposing the cheater. If the Bell test succeeds, the verifiers can be certain that the prover is in the correct location and that the quantum devices functioned correctly.",
+      "body_vi": "Bài kiểm tra Bell chỉ có thể vượt qua nếu người chứng minh đo lường nhất quán hạt quang tử theo hướng dẫn từ các số ngẫu nhiên của người xác thực. Vì các hướng dẫn đó mang tính ngẫu nhiên, những kẻ gian lận không thể dự đoán và dùng dự đoán đó để gửi phản hồi sớm cho người xác thực, qua đó làm nhiễu loạn khả năng xác định vị trí thực sự của người chứng minh. Bất kỳ lỗi thí nghiệm hoặc sự thao túng thiết bị lượng tử nào từ đối thủ sẽ khiến bài kiểm tra Bell thất bại, qua đó vạch trần kẻ gian lận. Nếu bài kiểm tra thành công, người xác thực có thể chắc chắn người chứng minh ở đúng vị trí và thiết bị lượng tử hoạt động chính xác.",
+      "body_fr": "Le test de Bell ne peut être réussi que si le prouveur mesure systématiquement le photon intriqué selon les instructions dictées par les nombres aléatoires des vérificateurs. Ces instructions étant aléatoires, les fraudeurs ne peuvent pas les prédire ni les utiliser pour renvoyer des réponses anticipées aux vérificateurs, ce qui compromettrait leur capacité à déterminer la véritable position du prouveur.\n\nToute erreur expérimentale ou manipulation des dispositifs quantiques par des adversaires entraînera l'échec du test de Bell, exposant ainsi le tricheur. Si le test réussit, les vérificateurs ont la certitude que le prouveur est au bon endroit et que les dispositifs quantiques ont fonctionné correctement.",
+      "body_de": "Der Bell-Test kann nur bestanden werden, wenn der Proband das verschränkte Photon konsequent gemäß den Anweisungen der Zufallszahlen der Verifizierer misst. Da diese Anweisungen zufällig sind, können Betrüger sie nicht vorhersagen und die Vorhersagen nutzen, um frühe Antworten an die Verifizierer zurückzusenden, wodurch deren Fähigkeit, den wahren Standort des Probanden zu bestimmen, zunichte gemacht wird.\n\nJeder experimentelle Fehler oder jede Manipulation der Quantengeräte durch Angreifer führt zum Fehlschlagen des Bell-Tests und entlarvt den Betrüger. Wenn der Bell-Test erfolgreich ist, können sich die Verifizierer sicher sein, dass der Proband am richtigen Ort ist und die Quantengeräte korrekt funktioniert haben.",
+      "body_es": "La prueba de Bell solo se puede superar si el probador mide consistentemente el fotón entrelazado de acuerdo con las instrucciones especificadas por los números aleatorios de los verificadores. Debido a que esas instrucciones son aleatorias, los estafadores no pueden predecirlas ni utilizarlas para enviar respuestas tempranas a los verificadores, lo que confundiría su capacidad para determinar la verdadera ubicación del probador.\n\nCualquier error experimental o manipulación de los dispositivos cuánticos por parte de adversarios hará que la prueba de Bell falle, exponiendo al tramposo. Si la prueba de Bell tiene éxito, los verificadores pueden estar seguros de que el probador está en la ubicación correcta y que los dispositivos cuánticos funcionaron correctamente."
+    },
+    {
+      "body_en": "The cosmic speed limit, that nothing can travel faster than the speed of light, also played a role in the experiment. If the prover were located outside the region in which he professes to reside, the person would take longer than expected to report his measurements to the verifiers. That delay would expose the prover as an imposter. Although scientists have been trying to demonstrate QPV for decades, our experiment is the first complete demonstration of such a protocol, Shalm said. Using QPV to assure a customer that they are truly communicating with someone in their bank building will require high-fidelity quantum communication networks, added Glancy. Such networks will share entangled photons between the customer and their bank.",
+      "body_vi": "Giới hạn tốc độ vũ trụ, quy định không có gì di chuyển nhanh hơn tốc độ ánh sáng, cũng đóng một vai trò trong thí nghiệm. Nếu người chứng minh ở bên ngoài vùng cư trú tuyên bố, người đó sẽ mất nhiều thời gian hơn dự kiến để báo cáo các phép đo của mình. Sự chậm trễ đó sẽ vạch trần người chứng minh là kẻ giả mạo. Mặc dù các nhà khoa học đã cố gắng chứng minh xác thực vị trí lượng tử trong nhiều thập kỷ, thí nghiệm này là bản trình bày hoàn chỉnh đầu tiên của một giao thức như vậy, theo Shalm. Glancy cho biết việc sử dụng xác thực vị trí lượng tử để đảm bảo khách hàng thực sự giao tiếp với ai đó trong tòa nhà ngân hàng sẽ đòi hỏi các mạng lưới truyền thông lượng tử độ trung thực cao (*high-fidelity*).",
+      "body_fr": "La limite de vitesse cosmique — selon laquelle rien ne peut voyager plus vite que la lumière — a également joué un rôle dans l'expérience. Si le prouveur se trouvait en dehors de la région où il prétend résider, il mettrait plus de temps que prévu à communiquer ses mesures aux vérificateurs. Ce délai démasquerait le prouveur en tant qu'imposteur.\n\nBien que les scientifiques essaient de démontrer la VPQ depuis des décennies, « notre expérience est la première démonstration complète d'un tel protocole », a déclaré Shalm.\n\nUtiliser la VPQ pour garantir à un client qu'il communique véritablement avec une personne se trouvant dans les locaux de sa banque nécessitera des réseaux de communication quantique à haute fidélité, a ajouté Glancy. De tels réseaux partageront des photons intriqués entre le client et sa banque.",
+      "body_de": "Auch das kosmische Tempolimit – dass nichts schneller als mit Lichtgeschwindigkeit reisen kann – spielte eine Rolle im Experiment. Befänge sich der Proband außerhalb der Region, in der er vorgibt zu leben, würde die Person länger als erwartet brauchen, um ihre Messungen an die Verifizierer zu übermitteln. Diese Verzögerung würde den Probanden als Hochstapler entlarven.\n\nObwohl Wissenschaftler seit Jahrzehnten versuchen, QPV zu demonstrieren, „ist unser Experiment die erste vollständige Demonstration eines solchen Protokolls“, sagte Shalm.\n\nUm Kunden mithilfe von QPV zu versichern, dass sie wirklich mit jemandem im Gebäude ihrer Bank kommunizieren, werden Quantenkommunikationsnetzwerke mit hoher Wiedergabetreue erforderlich sein, fügte Glancy hinzu. Solche Netzwerke werden verschränkte Photonen zwischen dem Kunden und seiner Bank austauschen.",
+      "body_es": "El límite de velocidad cósmica —que nada puede viajar más rápido que la velocidad de la luz— también jugó un papel en el experimento. Si el probador estuviera ubicado fuera de la región en la que afirma residir, le tomaría más tiempo del esperado informar sus mediciones a los verificadores. Esa demora expondría al probador como un impostor.\n\nAunque los científicos han estado tratando de demostrar la QPV durante décadas, “nuestro experimento es la primera demostración completa de dicho protocolo”, dijo Shalm.\n\nUtilizar la QPV para asegurar a un cliente que realmente se está comunicando con alguien en el edificio de su banco requerirá redes de comunicación cuántica de alta fidelidad, agregó Glancy. Dichas redes compartirán fotones entrelazados entre el cliente y su banco."
+    },
+    {
+      "body_en": "“NIST and many other research organizations and companies are developing the technologies that will support such a quantum network,” he said.",
+      "body_vi": "[y:NIST và nhiều tổ chức nghiên cứu] cùng các công ty đang phát triển các công nghệ hỗ trợ mạng lưới lượng tử như vậy, ông cho biết thêm.",
+      "body_fr": "« Le NIST, ainsi que de nombreuses autres organisations de recherche et entreprises, développent les technologies qui soutiendront un tel réseau quantique », a-t-il déclaré.",
+      "body_de": "„Das NIST und viele andere Forschungsorganisationen und Unternehmen entwickeln die Technologien, die ein solches Quantennetzwerk unterstützen werden“, sagte er.",
+      "body_es": "“El NIST y muchas otras organizaciones de investigación y empresas están desarrollando las tecnologías que respaldarán dicha red cuántica”, afirmó."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "NIST (2026)",
+      "url": "https://www.nist.gov/news-events/news/2026/11/quantum-physics-can-verify-persons-location-nist-researchers-show"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/403/1080/1920",
+    "provider": "unsplash",
+    "author": "Sergey Zolkin",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/403/1080/1920",
+      "provider": "unsplash",
+      "author": "Sergey Zolkin",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/885/1080/1920",
+      "provider": "unsplash",
+      "author": "Dustin Lee",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/jLwVAUtLOAQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/486/1080/1920",
+      "provider": "unsplash",
+      "author": "Florian Klauer",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/mk7D-4UCfmg"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAAAQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwAIEC5mzNNDAaLmWd8aAAD+P3ZAsKafM/eXldNS1aBiQz4yZHx0u8HNgMYg5h2TZ2KAwqBlZLa0XxElHm0rldr7DFItHtKh3B8xDpfPp69NIDankDyfn+vJy2IgKNfZsVK5/jK0McN9XEZS91d95NoyRV7DgMt/zNTqB/x37Oo3Xp5sdbJ8je2Gqh2mLjVKrUTB5N7rpso/gAASJPtYIRHwDoACGGsu4Swa0AA=",
+  "dominant": "#3f4443",
+  "origin": {
+    "group": 1,
+    "sourceId": "nist-gov-quantum-physics-can-verify-a-person-s-location-nist-researchers-show",
+    "license": "PD",
+    "authors": [
+      "Ron Cowen"
+    ],
+    "originalTitle": "Quantum Physics Can Verify a Person’s Location, NIST Researchers Show",
+    "originalUrl": "https://www.nist.gov/news-events/news/2026/11/quantum-physics-can-verify-persons-location-nist-researchers-show",
+    "publisher": "NIST",
+    "changes": [
+      "divided into sections",
+      "shortened",
+      "translated to Vietnamese",
+      "key point and apply steps added"
+    ]
+  },
+  "keyPoint": {
+    "en": "Quantum physics can now verify a person's exact physical location by using entangled particles, closing the loopholes that fraudsters exploit. [p:Digital security] can finally be anchored directly to the physical world. Consider how your future financial transactions might depend on these quantum verification networks.",
+    "vi": "Vật lý lượng tử giờ đây có thể xác thực vị trí vật lý chính xác của một người bằng cách sử dụng các hạt vướng víu, bịt kín các lỗ hổng mà kẻ gian lợi dụng. [p:Bảo mật kỹ thuật số] cuối cùng có thể được neo giữ trực tiếp vào thế giới vật lý. Hãy cân nhắc xem các giao dịch tài chính trong tương lai của bạn có thể phụ thuộc vào các mạng lưới xác thực lượng tử này như thế nào.",
+    "fr": "La physique quantique peut désormais vérifier l'emplacement physique exact d'une personne en utilisant des particules intriquées, éliminant les failles exploitées par les fraudeurs. [p:La sécurité numérique] peut enfin être ancrée directement dans le monde physique. Considérez la manière dont vos futures transactions financières pourraient dépendre de ces réseaux de vérification quantique.",
+    "de": "Die Quantenphysik kann nun den genauen physischen Standort einer Person mithilfe verschränkter Teilchen verifizieren und so die von Betrügern ausgenutzten Schlupflöcher schließen. [p:Digitale Sicherheit] kann endlich direkt in der physischen Welt verankert werden. Überlege, wie deine zukünftigen Finanztransaktionen von diesen Quantenverifikationsnetzwerken abhängen könnten.",
+    "es": "La física cuántica ahora puede verificar la ubicación física exacta de una persona mediante el uso de partículas entrelazadas, cerrando los resquicios que explotan los estafadores. [p:La seguridad digital] finalmente puede anclarse directamente al mundo físico. Considere cómo sus futuras transacciones financieras podrían depender de estas redes de verificación cuántica."
+  },
+  "applySteps": {
+    "en": [
+      "Review current digital security methods used by your organization.",
+      "Identify critical infrastructure points requiring strict location verification.",
+      "Monitor advancements in quantum communication networks for future deployment."
+    ],
+    "vi": [
+      "Xem xét các phương pháp bảo mật kỹ thuật số hiện tại mà tổ chức của bạn đang sử dụng.",
+      "Xác định các điểm cơ sở hạ tầng quan trọng đòi hỏi phải xác minh vị trí nghiêm ngặt.",
+      "Theo dõi các tiến bộ trong mạng lưới truyền thông lượng tử để triển khai trong tương lai."
+    ],
+    "fr": [
+      "Examiner les méthodes de sécurité numérique actuelles utilisées par votre organisation.",
+      "Identifier les points d'infrastructure critique nécessitant une vérification stricte de l'emplacement.",
+      "Surveiller les avancées des réseaux de communication quantique en vue d'un futur déploiement."
+    ],
+    "de": [
+      "Überprüfe die aktuellen Methoden zur digitalen Sicherheit, die von deiner Organisation verwendet werden.",
+      "Identifiziere Punkte kritischer Infrastrukturen, die eine strenge Standortverifikation erfordern.",
+      "Beobachte Fortschritte bei Quantenkommunikationsnetzwerken für einen zukünftigen Einsatz."
+    ],
+    "es": [
+      "Revise los métodos actuales de seguridad digital utilizados por su organización.",
+      "Identifique los puntos de infraestructura crítica que requieren una verificación estricta de la ubicación.",
+      "Monitoree los avances en las redes de comunicación cuántica para su futura implementación."
+    ]
+  },
+  "ai": {
+    "fields": [
+      "vi",
+      "keyPoint",
+      "applySteps",
+      "en",
+      "fr",
+      "de",
+      "es"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "glossary": {
+    "en": {
+      "quantum mechanics": "The branch of physics that studies matter and energy at the most microscopic scale.",
+      "entanglement": "A quantum phenomenon where two particles remain deeply linked regardless of distance.",
+      "photon": "A fundamental particle representing a quantum of light or other electromagnetic radiation.",
+      "polarization": "The direction in which the electric field of a light particle oscillates.",
+      "no-cloning theorem": "A principle stating it is impossible to create an identical copy of an unknown quantum state.",
+      "bell test": "An experimental test used to determine if quantum mechanics applies over classical physics.",
+      "quantum position verification": "A cryptographic procedure used to securely confirm the exact physical location of a person.",
+      "prover": "The third person whose exact physical location verifiers are trying to confirm.",
+      "verifiers": "Trustworthy parties who seek to confirm the location of another person."
+    },
+    "vi": {
+      "cơ học lượng tử": "Ngành vật lý nghiên cứu các hiện tượng ở cấp độ nguyên tử và hạ nguyên tử.",
+      "hạt quang tử": "Hạt cơ bản cấu thành ánh sáng và mang bức xạ điện từ.",
+      "sự vướng víu": "Hiện tượng hai hạt liên kết chặt chẽ dù cách xa nhau trong vũ trụ.",
+      "độ phân cực": "Hướng mà trường điện của hạt uốn lượn khi di chuyển trong không gian.",
+      "định lý không sao chép": "Quy định vật lý không thể tạo ra bản sao chính xác của một trạng thái lượng tử.",
+      "phishing": "Hành vi lừa đảo trực tuyến để đánh cắp thông tin nhạy cảm của người dùng.",
+      "nist": "Viện Tiêu chuẩn và Công nghệ Quốc gia thuộc Hoa Kỳ.",
+      "quantum mechanics": "Thuật ngữ tiếng Anh chỉ cơ học lượng tử trong văn bản gốc."
+    },
+    "fr": {
+      "nist": "Institut national des normes et de la technologie américain menant des recherches scientifiques avancées.",
+      "photons": "Particules élémentaires constituant la lumière et porteuses du rayonnement électromagnétique.",
+      "intrication": "Phénomène quantique où deux particules sont liées de sorte que l'état de l'une influence instantanément l'autre.",
+      "polarisation": "Direction dans laquelle le champ électrique d'une onde lumineuse oscille lors de son déplacement.",
+      "théorème de non-clonage": "Principe quantique interdisant la création d'une copie identique d'un état quantique inconnu.",
+      "test de bell": "Expérience validant que la réalité physique obéit à l'intrication quantique plutôt qu'à la physique classique.",
+      "vérification de position quantique": "Protocole cryptographique utilisant la mécanique quantique pour certifier la position géographique exacte d'un utilisateur.",
+      "bits": "Unités fondamentales d'information informatique prenant la valeur de zéro ou de un."
+    },
+    "de": {
+      "quantenmechanik": "Physikalische Theorie, die das Verhalten von Materie und Strahlung im atomaren und subatomaren Bereich beschreibt.",
+      "nist": "Das Nationale Institut für Standards und Technology ist eine US-amerikanische Bundesbehörde für Messtechnik und Forschung.",
+      "photon": "Ein Elementarteilchen, das als Lichtquant die Grundeinheit des Lichts und anderer elektromagnetischer Strahlung bildet.",
+      "verschränkung": "Quantenmechanisches Phänomen, bei dem Teilchen untrennbar miteinander verknüpft sind, unabhängig von der Entfernung.",
+      "polarisation": "Eigenschaft von Lichtwellen, die die Schwingungsrichtung des elektrischen Feldes beschreibt.",
+      "triangulieren": "Standortbestimmung durch Messung von Winkeln und Entfernungen zu bekannten Punkten.",
+      "no-cloning-theorem": "Grundsatz der Quantenphysik, der besagt, dass unbekannte Quantenzustände nicht perfekt kopiert werden können.",
+      "bell-test": "Ein physikalischer Test zur Überprüfung, ob Quantenverschränkung vorliegt und klassische Erklärungen ausgeschlossen sind."
+    },
+    "es": {
+      "nist": "Instituto Nacional de Estándares y Tecnología de Estados Unidos.",
+      "cuántica": "Rama de la física que estudia la materia y la energía a escala atómica.",
+      "fotón": "Partícula fundamental que constituye la luz y otras radiaciones electromagnéticas.",
+      "entrelazamiento": "Conexión cuántica profunda donde dos partículas comparten un destino común instantáneamente.",
+      "polarización": "Dirección en la que oscila el campo eléctrico de una partícula luminosa.",
+      "teorema de no clonación": "Principio cuántico que prohíbe crear copias idénticas de un estado desconocido.",
+      "prueba de bell": "Experimento que demuestra que el entrelazamiento cuántico supera a la física clásica.",
+      "qpv": "Verificación de posición cuántica para confirmar el lugar exacto de alguien."
+    }
+  },
+  "publishAt": "2026-11-19T03:43:42.757Z"
+}

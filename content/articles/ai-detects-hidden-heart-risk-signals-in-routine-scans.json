@@ -1,0 +1,241 @@
+{
+  "slug": "ai-detects-hidden-heart-risk-signals-in-routine-scans",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=ai-detects-hidden-heart-risk-signals-in-routine-scans",
+  "category": "health",
+  "tags": [
+    "cardiology",
+    "artificial intelligence",
+    "health",
+    "research"
+  ],
+  "title": {
+    "en": "AI Detects Hidden Heart Risk Signals in Routine Scans",
+    "vi": "Trí tuệ nhân tạo phát hiện tín hiệu nguy cơ tim ẩn trong các bản quét thông thường",
+    "fr": "L'IA détecte des signaux de risque cardiaque cachés dans les examens de routine",
+    "de": "KI erkennt versteckte Risikosignale des Herzens bei Routineuntersuchungen",
+    "es": "La IA detecta señales ocultas de riesgo cardíaco en exámenes rutinarios"
+  },
+  "hook": {
+    "en": "Sudden cardiac arrest kills hundreds of thousands of people every year by stopping the heart unexpectedly. Researchers at UC Berkeley trained an artificial intelligence system on hundreds of thousands of electrocardiograms to find subtle warning signs that standard medical tests miss {source}.",
+    "vi": "Chứng ngừng tim đột ngột cướp đi sinh mạng của hàng trăm nghìn người mỗi năm khi tim ngừng đập bất ngờ. Các nhà nghiên cứu tại Đại học California, Berkeley đã huấn luyện hệ thống trí tuệ nhân tạo (*artificial intelligence*) trên hàng trăm nghìn điện tâm đồ để tìm ra các dấu hiệu cảnh báo tinh tế mà các xét nghiệm y tế tiêu chuẩn bỏ sót {source}.",
+    "fr": "L'arrêt cardiaque subit tue des centaines de milliers de personnes chaque année en arrêtant le cœur de manière imprévue. Des chercheurs de l'Université de Californie à Berkeley ont entraîné un système d'intelligence artificielle sur des centaines de milliers d'électrocardiogrammes pour repérer des signes d'alerte subtils que les examens médicaux standard manquent {source}.",
+    "de": "Der plötzliche Herztod tötet jedes Jahr Hunderttausende Menschen, indem er das Herz unerwartet stoppen lässt. Forscher der UC Berkeley trainierten ein System der künstlichen Intelligenz mit Hunderttausenden Elektrokardiogrammen, um subtile Warnzeichen zu finden, die standardmäßige medizinische Tests übersehen {source}.",
+    "es": "El paro cardíaco repentino mata a cientos de miles de personas cada año al detener el corazón de forma inesperada. Investigadores de la Universidad de Berkeley entrenaron un sistema de inteligencia artificial con cientos de miles de electrocardiogramas para encontrar sutiles señales de advertencia que las pruebas médicas estándar pasan por alto {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Outperforming Traditional Screenings",
+      "heading_vi": "Vượt trội hơn sàng lọc truyền thống",
+      "body_en": "Current medical guidelines focus primarily on measuring how much blood the heart pumps during each contraction. Traditional methods identify patients facing an annual death rate of 4.6% from sudden cardiac arrest. The new algorithm spotted a group with a 7% annual death rate, proving a superior ability to find individuals in serious danger.",
+      "body_vi": "Các hướng dẫn y tế hiện tại tập trung chủ yếu vào việc đo lượng máu tim bơm ra trong mỗi lần co bóp. Các phương pháp truyền thống xác định những bệnh nhân đối mặt với tỷ lệ tử vong do ngừng tim đột ngột là 4.6% hàng năm. Thuật toán mới đã phát hiện một nhóm có tỷ lệ tử vong hàng năm là 7%, chứng minh khả năng vượt trội trong việc tìm ra những cá nhân đang gặp nguy hiểm nghiêm trọng.",
+      "heading_fr": "Surpasser les dépistages traditionnels",
+      "body_fr": "Les directives médicales actuelles se concentrent principalement sur la mesure du volume de sang pompé par le cœur lors de chaque contraction. Les méthodes traditionnelles identifient les patients confrontés à un taux de mortalité annuel de 4,6 % lié à l'arrêt cardiaque subit. Le nouvel algorithme a repéré un groupe affichant un taux de moralité annuel de 7 %, prouvant une capacité supérieure à déceler les individus en grave danger.",
+      "heading_de": "Traditionelle Untersuchungen übertreffen",
+      "body_de": "Aktuelle medizinische Leitlinien konzentrieren sich primär darauf, zu messen, wie viel Blut das Herzen bei jeder Kontraktion pumpt. Traditionelle Methoden identifizieren Patienten, die einer jährlichen Sterblichkeitsrate von 4,6 % durch plötzlichen Herztod ausgesetzt sind. Der neue Algorithmus entdeckte eine Gruppe mit einer jährlichen Sterblichkeitsrate von 7 %, was eine überlegene Fähigkeit beweist, Personen in ernsthafter Gefahr zu finden.",
+      "heading_es": "Superando las evaluaciones tradicionales",
+      "body_es": "Las directrices médicas actuales se centran principalmente en medir cuánta sangre bombea el corazón durante cada contracción. Los métodos tradicionales identifican a pacientes que enfrentan una tasa de mortalidad anual del 4,6% por paro cardíaco repentino. El nuevo algoritmo detectó a un grupo con una tasa de mortalidad anual del 7%, demostrando una capacidad superior para encontrar a personas en grave peligro."
+    },
+    {
+      "heading_en": "Utilizing Existing Medical Data",
+      "heading_vi": "Tận dụng dữ liệu y tế sẵn có",
+      "body_en": "Building the technology required training the software on records gathered from Sweden, the United States, and Taiwan. The system analyzes ordinary electrocardiograms (*electrocardiograms*), which hospitals already collect routinely. This means the approach could improve patient screening without requiring entirely new diagnostic procedures.",
+      "body_vi": "Việc xây dựng công nghệ này đòi hỏi phải huấn luyện phần mềm trên các hồ sơ được thu thập từ Thụy Điển, Hoa Kỳ và Đài Loan. Hệ thống phân tích các điện tâm đồ thông thường mà các bệnh viện đã thu thập thường xuyên. Điều này có nghĩa là phương pháp này có thể cải thiện việc sàng lọc bệnh nhân mà không cần các quy trình chẩn đoán hoàn toàn mới.",
+      "heading_fr": "Utiliser les données médicales existantes",
+      "body_fr": "La conception de cette technologie a nécessité l'entraînement du logiciel sur des dossiers recueillis en Suède, aux États-Unis et à Taïwan. Le système analyse des électrocardiogrammes ordinaires (*électrocardiogrammes*), que les hôpitaux collectent déjà de manière routinière. Cela signifie que cette approche pourrait améliorer le dépistage des patients sans nécessiter de procédures diagnostiques entièrement nouvelles.",
+      "heading_de": "Nutzung bestehender medizinischer Daten",
+      "body_de": "Der Aufbau der Technologie erforderte das Training der Software mit Aufzeichnungen, die in Schweden, den Vereinigten Staaten und Taiwan gesammelt wurden. Das System analysiert gewöhnliche Elektrokardiogramme (*Elektrokardiogramme*), die Krankenhäuser bereits routinemäßig erheben. Dies bedeutet, dass der Ansatz das Patientenscreening verbessern könnte, ohne völlig neue Diagnoseverfahren zu erfordern.",
+      "heading_es": "Utilizando datos médicos existentes",
+      "body_es": "Construir la tecnología requirió entrenar el software con registros recopilados en Suecia, Estados Unidos y Taiwán. El sistema analiza electrocardiogramas ordinarios (*electrocardiogramas*), que los hospitales ya recopilan de forma rutinaria. Esto significa que el enfoque podría mejorar la detección de pacientes sin requerir procedimientos diagnósticos completamente nuevos."
+    },
+    {
+      "heading_en": "Next Steps for Prevention",
+      "heading_vi": "Các bước tiếp theo để phòng ngừa",
+      "body_en": "Scientists are now working to integrate the software into hospital databases in multiple countries. Physicians can then contact patients identified as high risk and offer them continuous monitoring patches. These extended recordings may help doctors decide who should receive an implanted defibrillator (*implanted defibrillator*).",
+      "body_vi": "Các nhà khoa học hiện đang làm việc để tích hợp phần mềm vào cơ sở dữ liệu bệnh viện ở nhiều quốc gia. Các bác sĩ sau đó có thể liên hệ với những bệnh nhân được xác định có nguy cơ cao và cung cấp cho họ các miếng dán theo dõi liên tục. Những bản ghi kéo dài này có thể giúp các bác sĩ quyết định ai nên nhận thiết bị khử rung tim cấy ghép (*implanted defibrillator*).",
+      "heading_fr": "Prochaines étapes pour la prévention",
+      "body_fr": "Les scientifiques travaillent actuellement à l'intégration du logiciel dans les bases de données hospitalières de plusieurs pays. Les médecins pourront alors contacter les patients identifiés comme étant à haut risque et leur proposer des patchs de surveillance continue. Ces enregistrements prolongés pourraient aider les médecins à décider qui devrait recevoir un défibrillateur implanté (*défibrillateur implanté*).",
+      "heading_de": "Nächste Schritte zur Prävention",
+      "body_de": "Wissenschaftler arbeiten nun daran, die Software in Krankenhäuseinrichtungen in mehreren Ländern zu integrieren. Ärzte können daraufhin als Hochrisiko-Patienten identifizierte Personen kontaktieren und ihnen kontinuierliche Überwachungspatches anbieten. Diese erweiterten Aufzeichnungen können Ärzten helfen zu entscheiden, wer einen implantierten Defibrillator (*implantierten Defibrillator*) erhalten sollte.",
+      "heading_es": "Próximos pasos para la prevención",
+      "body_es": "Los científicos ahora trabajan para integrar el software en las bases de datos de hospitales en varios países. Los médicos podrán entonces contactar a los pacientes identificados como de alto riesgo y ofrecerles parches de monitorización continua. Estas grabaciones extendidas pueden ayudar a los médicos a decidir quién debe recibir un desfibrilador implantado (*desfibrilador implantado*)."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261112230456.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1727773377690-57b51d0c6193?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1727773377690-57b51d0c6193?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "TSD Studio",
+    "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/8HDw8LoLUyw",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/8HDw8LoLUyw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "AI discovers a hidden heart signal that could predict sudden death",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261112230456.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review your medical history for past heart tests.",
+      "Ask your doctor about your current heart screening results.",
+      "Check online resources for upcoming availability of the AI screening tool."
+    ],
+    "vi": [
+      "Xem lại tiền sử y tế của bạn về các xét nghiệm tim trước đây.",
+      "Hỏi bác sĩ về kết quả sàng lọc tim hiện tại của bạn.",
+      "Kiểm tra các nguồn trực tuyến về thời gian có sẵn của công cụ sàng lọc trí tuệ nhân tạo."
+    ],
+    "fr": [
+      "Vérifiez vos antécédents médicaux pour les tests cardiaques passés.",
+      "Interrogez votre médecin concernant vos résultats actuels de dépistage cardiaque.",
+      "Consultez les ressources en ligne pour connaître la disponibilité future de l'outil de dépistage par IA."
+    ],
+    "de": [
+      "Überprüfe deine Krankengeschichte auf vergangene Herstests.",
+      "Frage deinen Arzt nach deinen aktuellen Ergebnissen des Herz-Screenings.",
+      "Überprüfe Online-Ressourcen auf die kommende Verfügbarkeit des KI-Screening-Tools."
+    ],
+    "es": [
+      "Revise su historial médico en busca de pruebas cardíacas anteriores.",
+      "Consulte a su médico sobre los resultados actuales de sus exámenes cardíacos.",
+      "Revise recursos en línea para conocer la próxima disponibilidad de la herramienta de detección por IA."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1727773377690-57b51d0c6193?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1727773377690-57b51d0c6193?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "TSD Studio",
+      "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8HDw8LoLUyw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/8HDw8LoLUyw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1574717025179-0b6d03d4d86f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1574717025179-0b6d03d4d86f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Peter Stumpf",
+      "authorUrl": "https://unsplash.com/@peter_s?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/i1_xsS9fBRc",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/i1_xsS9fBRc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1630531210974-dab9b07c4eff?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1630531210974-dab9b07c4eff?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Stephen Andrews",
+      "authorUrl": "https://unsplash.com/@porkbellysteve?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/7P1KdY9wZjA",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/7P1KdY9wZjA/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1666214277767-b8c2a7b4c064?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1666214277767-b8c2a7b4c064?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Accuray",
+      "authorUrl": "https://unsplash.com/@accuray?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/36i9vuZrVjc",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/36i9vuZrVjc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBEZXRlY3RzJTIwSGlkZGVuJTIwSGVhcnQlMjBSaXNrJTIwU2lnbmFscyUyMGluJTIwUm91dGluZSUyMFNjYW5zJTIwaGVhbHRofGVufDF8MXx8fDE3OTUwNjE1MzB8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoQABwAPu1kq04ppaQiMAgBMB2JZgC7AYvstW1FyiBedgF7LvgA/v1R578i2R3lYyLLjnvZbbdMZww5kwfBJnWM5v3I0nLox1Q+SNODgCB5p6KWe39+6hTQRSuXuEpEygzXW7RoKwt1ZRs3ZatYycTkeGzv6mwa2/SLfUm91zBwAA==",
+  "dominant": "#251814",
+  "glossary": {
+    "en": {
+      "electrocardiograms": "Medical tests that record the electrical activity of the heart.",
+      "implanted defibrillator": "A medical device placed inside the body to correct dangerous heart rhythms.",
+      "artificial intelligence": "Computer systems able to perform tasks that typically require human intelligence.",
+      "sudden cardiac arrest": "An unexpected stopping of the heart that causes death rapidly.",
+      "algorithm": "A set of instructions followed by a computer to solve a problem.",
+      "screening": "Testing people for diseases before they show symptoms.",
+      "diagnostic procedures": "Methods used by doctors to identify a disease or condition.",
+      "continuous monitoring": "Tracking a patient's vital signs without interruption over time."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Hệ thống máy tính mô phỏng khả năng tư duy của con người.",
+      "điện tâm đồ": "Bản ghi hoạt động điện của tim qua các chu kỳ đập.",
+      "hướng dẫn y tế": "Các quy chuẩn chuyên môn dùng làm căn cứ trong y khoa.",
+      "tỷ lệ tử vong": "Xác suất hoặc tần suất người chết do một bệnh cụ thể.",
+      "thuật toán": "Tập hợp các quy tắc tính toán để giải quyết bài toán.",
+      "hồ sơ": "Tập hợp dữ liệu thông tin y tế được lưu trữ.",
+      "quy trình chẩn đoán": "Các bước kiểm tra để xác định bệnh lý của người bệnh.",
+      "cơ sở dữ liệu": "Kho lưu trữ thông tin có tổ chức trên hệ thống.",
+      "thiết bị khử rung tim cấy ghép": "Thiết bị y tế đặt trong cơ thể để kiểm soát nhịp tim."
+    },
+    "fr": {
+      "arrêt cardiaque subit": "Mort subite causée par l'arrêt imprévu de l'activité cardiaque.",
+      "intelligence artificielle": "Système informatique capable d'imiter l'intelligence humaine pour analyser des données.",
+      "électrocardiogrammes": "Examen médical enregistrant l'activité électrique du cœur.",
+      "algorithme": "Suite d'instructions informatiques permettant de résoudre un problème.",
+      "défibrillateur implanté": "Appareil placé sous la peau pour corriger les troubles du rythme cardiaque.",
+      "directives médicales": "Recommandations officielles guidant la pratique des professionnels de santé.",
+      "dépistage": "Recherche de maladies chez des personnes qui ne présentent pas encore de symptômes.",
+      "logiciel": "Programme informatique exécuté par un système."
+    },
+    "de": {
+      "herztod": "Plötzliches und unerwartetes Versagen der Herzfunktion mit tödlichem Ausgang.",
+      "künstlichen intelligenz": "Von Maschinen ausgeführte Prozesse, die menschliches Denken und Lernen nachahmen.",
+      "elektrokardiogrammen": "Aufzeichnungen der elektrischen Aktivitäten des Herzens zu Diagnosezwecken.",
+      "leitlinien": "Medizinische Richtlinien zur Standardisierung von Behandlungen und Diagnosen.",
+      "sterblichkeitsrate": "Prozentualer Anteil der Todesfälle in einer bestimmten Gruppe pro Jahr.",
+      "algorithmus": "Ein computergestützter Rechenbefehl zur automatisierten Datenanalyse.",
+      "patientenscreening": "Systematische Untersuchung von Patienten auf bestimmte gesundheitliche Risiken.",
+      "diagnoseverfahren": "Methoden zur Erkennung und Bestimmung von Krankheiten.",
+      "krankenhäuseinrichtungen": "Infrastrukturen und Gebäude, die für die medizinische Versorgung genutzt werden.",
+      "überwachungspatches": "Kleine Pflaster zur kontinuierlichen Messung wichtiger Körperfunktionen.",
+      "implantierten defibrillator": "Ein chirurgisch eingesetztes Gerät zur Behebung gefährlicher Herzrhythmusstörungen."
+    },
+    "es": {
+      "electrocardiogramas": "Pruebas médicas que registran la actividad eléctrica del corazón.",
+      "desfibrilador implantado": "Dispositivo médico colocado quirúrgicamente para corregir ritmos cardíacos peligrosos.",
+      "algoritmo": "Conjunto de instrucciones informáticas para resolver problemas de forma automatizada.",
+      "inteligencia artificial": "Simulación de procesos de inteligencia humana por parte de sistemas computacionales.",
+      "mortalidad": "Cantidad de muertes en un lugar y período determinados.",
+      "diagnósticos": "Procedimientos para identificar una enfermedad o condición médica.",
+      "monitorización": "Acción de observar y registrar continuamente constantes vitales.",
+      "prevención": "Medidas tomadas para evitar que ocurra un problema o enfermedad."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T04:09:42.757Z"
+}

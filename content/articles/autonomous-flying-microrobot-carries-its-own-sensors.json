@@ -1,0 +1,241 @@
+{
+  "slug": "autonomous-flying-microrobot-carries-its-own-sensors",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=autonomous-flying-microrobot-carries-its-own-sensors",
+  "category": "technology",
+  "tags": [
+    "microrobot",
+    "mit",
+    "robotics",
+    "sensors"
+  ],
+  "title": {
+    "en": "Autonomous Flying Microrobot Carries Its Own Sensors",
+    "vi": "Robot bay siêu nhỏ tự chủ mang theo cảm biến riêng",
+    "fr": "Un microrobot volant autonome transporte ses propres capteurs",
+    "de": "Autonomer fliegender Mikroroboter trägt eigene Sensoren",
+    "es": "Un microrobot volador autónomo transporta sus propios sensores"
+  },
+  "hook": {
+    "en": "Researchers have built a flapping-wing microrobot capable of carrying onboard sensors and computation. Led by Kevin Chen {source}, the team expanded the artificial muscles to increase payload capacity, allowing the tiny device to follow complex paths and land precisely without external lab cameras.",
+    "vi": "Các nhà nghiên cứu đã chế tạo một robot vỗ cánh siêu nhỏ có khả năng mang theo cảm biến và bộ xử lý trên bo mạch. Dưới sự dẫn dắt của Kevin Chen {source}, nhóm đã mở rộng các cơ nhân tạo để tăng khả năng tải trọng, cho phép thiết bị nhỏ bé này bay theo quỹ đạo phức tạp và hạ cánh chính xác.",
+    "fr": "Des chercheurs ont construit un microrobot à ailes battantes capable de transporter des capteurs et des calculs embarqués. Menée par Kevin Chen {source}, l'équipe a élargi les muscles artificiels pour augmenter la capacité de charge utile, permettant au minuscule appareil de suivre des trajectoires complexes et d'atterrir avec précision sans caméras de laboratoire externes.",
+    "de": "Forscher haben einen schlagflügelfähigen Mikroroboter entwickelt, der integrierte Sensoren und Recheneinheit tragen kann. Unter der Leitung von Kevin Chen {source} erweiterte das Team die künstlichen Muskeln zur Erhöhung der Nutzlast, wodurch das winzige Gerät komplexen Bahnen folgen und ohne externe Laborkameras präzise landen kann.",
+    "es": "Unos investigadores han construido un microrobot de alas batientes capaz de transportar sensores y capacidad de cómputo integrados. Liderado por Kevin Chen {source}, el equipo amplió los músculos artificiales para aumentar la capacidad de carga útil, lo que permite al diminuto dispositivo seguir trayectorias complejas y aterrizar con precisión sin cámaras externas de laboratorio."
+  },
+  "sections": [
+    {
+      "heading_en": "Expanding the Payload",
+      "heading_vi": "Mở rộng tải trọng",
+      "body_en": "Engineers tuned the geometry of soft actuators to increase lift forces. By expanding the artificial muscles by 50 percent, the microrobot achieved a lift-to-weight ratio of 1.9. This extra lift supports a 244-milligram electronics package containing necessary sensors and a microcontroller for flight control.",
+      "body_vi": "Các kỹ sư đã tinh chỉnh hình học của bộ truyền động mềm (*soft actuators*) để tăng lực nâng. Bằng cách mở rộng cơ nhân tạo thêm 50 phần trăm, robot siêu nhỏ đạt tỷ lệ lực nâng trên trọng lượng là 1,9. Lực nâng bổ sung này hỗ trợ gói điện tử nặng 244 miligam chứa các cảm biến và vi điều khiển (*microcontroller*) cần thiết.",
+      "heading_fr": "Augmenter la charge utile",
+      "body_fr": "Les ingénieurs ont optimisé la géométrie des actionneurs souples pour accroître les forces de portance. En élargissant les muscles artificiels de 50 pour cent, le microrobot a atteint un rapport portance/poids de 1,9. Cette portance supplémentaire soutient un bloc électronique de 244 milligrammes contenant les capteurs nécessaires et un microcontrôleur pour le contrôle du vol.",
+      "heading_de": "Erweiterung der Nutzlast",
+      "body_de": "Ingenieure passten die Geometrie weicher Aktoren an, um die Auftriebskräfte zu steigern. Durch eine Vergrößerung der künstlichen Muskeln um 50 Prozent erreichte der Mikroroboter ein Verhältnis von Auftrieb zu Gewicht von 1,9. Dieser zusätzliche Auftrieb trägt ein 244 Milligramm schweres Elektronikpaket mit notwendigen Sensoren und einem Mikrocontroller für die Flugsteuerung.",
+      "heading_es": "Ampliación de la carga útil",
+      "body_es": "Los ingenieros ajustaron la geometría de los actuadores blandos para incrementar las fuerzas de sustentación. Al expandir los músculos artificiales en un 50 por ciento, el microrobot alcanzó una relación de sustentación a peso de 1.9. Esta sustentación adicional admite un paquete electrónico de 244 miligramos que contiene los sensores necesarios y un microcontrolador para el control de vuelo."
+    },
+    {
+      "heading_en": "Speedy Sensing",
+      "heading_vi": "Cảm biến tốc độ cao",
+      "body_en": "The team designed an efficient sensing algorithm to calculate position and orientation rapidly. Continuous estimation at a faster rate yielded higher stability than slower, more accurate methods. Yi-Hsuan Hsiao noted that this approach kept positional drift remarkably low during flights outside the lab setup.",
+      "body_vi": "Nhóm đã thiết kế một thuật toán cảm biến hiệu quả để tính toán vị trí và hướng đi một cách nhanh chóng. Việc ước tính liên tục ở tốc độ cao hơn mang lại độ ổn định tốt hơn so với các phương pháp chậm hơn. Yi-Hsuan Hsiao lưu ý rằng phương pháp này giữ cho độ lệch vị trí ở mức rất thấp trong các chuyến bay bên ngoài phòng thí nghiệm.",
+      "heading_fr": "Détection rapide",
+      "body_fr": "L'équipe a conçu un algorithme de détection efficace pour calculer rapidement la position et l'orientation. Une estimation continue à un rythme plus rapide a donné une plus grande stabilité que des méthodes plus lentes et plus précises. Yi-Hsuan Hsiao a souligné que cette approche maintenait la dérive positionnelle remarquablement basse lors de vols hors du dispositif de laboratoire.",
+      "heading_de": "Schnelle Sensorik",
+      "body_de": "Das Team entwarf einen effizienten Sensorikalgorithmus zur schnellen Berechnung von Position und Ausrichtung. Eine kontinuierliche Schätzung mit höherer Frequenz brachte mehr Stabilität als langsamere, präzisere Methoden. Yi-Hsuan Hsiao stellte fest, dass dieser Ansatz die Positionsabweichung bei Flügen außerhalb des Laboraufbaus bemerkenswert gering hielt.",
+      "heading_es": "Detección rápida",
+      "body_es": "El equipo diseñó un algoritmo de detección eficiente para calcular la posición y la orientación rápidamente. La estimación continua a mayor velocidad produjo una mayor estabilidad que los métodos más lentos y precisos. Yi-Hsuan Hsiao señaló que este enfoque mantuvo la deriva posicional notablemente baja durante los vuelos fuera del entorno de laboratorio."
+    },
+    {
+      "heading_en": "Future Applications",
+      "heading_vi": "Ứng dụng trong tương lai",
+      "body_en": "Flight tests showed positional errors of only a few centimeters during point-to-point maneuvers. Researchers used a joystick to guide the vehicle around plants and land on a sunflower. Next steps involve adding a camera for obstacle avoidance and integrating batteries for fully untethered outdoor operation.",
+      "body_vi": "Các bài kiểm tra chuyến bay cho thấy sai số vị trí chỉ vài centimet trong các thao tác từ điểm này sang điểm khác. Các nhà nghiên cứu đã dùng cần điều khiển (*joystick*) để dẫn đường xe vượt qua các cây và hạ cánh trên một bông hướng dương. Các bước tiếp theo bao gồm việc lắp camera để tránh chướng ngại vật.",
+      "heading_fr": "Applications futures",
+      "body_fr": "Les essais en vol ont montré des erreurs de position de seulement quelques centimètres lors de manœuvres de point à point. Les chercheurs ont utilisé un joystick pour guider le véhicule autour de plantes et atterrir sur un tournesol. Les prochaines étapes impliquent l'ajout d'une caméra pour l'évitement d'obstacles et l'intégration de batteries pour un fonctionnement extérieur totalement libéré des câbles.",
+      "heading_de": "Zukünftige Anwendungen",
+      "body_de": "Flugtests zeigten Positionsfehler von nur wenigen Zentimetern bei Manövern von Punkt zu Punkt. Forscher nutzten einen Joystick, um das Gefährt um Pflanzen zu steuern und auf einer Sonnenblume zu landen. Nächste Schritte umfassen das Hinzufügen einer Kamera zur Hindernisvermeidung und die Integration von Batterien für einen vollständig kabellosen Betrieb im Freien.",
+      "heading_es": "Aplicaciones futuras",
+      "body_es": "Las pruebas de vuelo mostraron errores de posición de tan solo unos pocos centímetros durante las maniobras de punto a punto. Los investigadores utilizaron un *joystick* para guiar el vehículo alrededor de plantas y aterrizar en un girasol. Los próximos pasos implican añadir una cámara para evitar obstáculos e integrar baterías para un funcionamiento completamente libre de cables al aire libre."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1487219116710-23ffcb172b2b?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1487219116710-23ffcb172b2b?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Kaleb Kendall",
+    "authorUrl": "https://unsplash.com/@kalebkendall?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/6nRjHtBDk4o",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/6nRjHtBDk4o/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Adam Zewe | MIT News"
+    ],
+    "originalTitle": "This featherweight, flying robot carries its own sensors and computers",
+    "originalUrl": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review the MIT research paper published in Science Robotics",
+      "Examine the weight limits of soft actuators for microrobots",
+      "Identify potential tasks for untethered agricultural drones"
+    ],
+    "vi": [
+      "Xem lại bài báo nghiên cứu của MIT được xuất bản trên Science Robotics",
+      "Kiểm tra giới hạn trọng lượng của bộ truyền động mềm cho robot siêu nhỏ",
+      "Xác định các nhiệm vụ tiềm năng cho drone nông nghiệp không dây"
+    ],
+    "fr": [
+      "Consulter l'article de recherche du MIT publié dans Science Robotics",
+      "Examiner les limites de poids des actionneurs souples pour microrobots",
+      "Identifier des tâches potentielles pour des drones agricoles sans fil"
+    ],
+    "de": [
+      "Die in Science Robotics veröffentlichte MIT-Forschungsarbeit überprüfen",
+      "Die Gewichtsgrenzen weicher Aktoren für Mikroroboter untersuchen",
+      "Mögliche Aufgaben für kabellose Agrardrohnen identifizieren"
+    ],
+    "es": [
+      "Revisa el artículo de investigación del MIT publicado en Science Robotics",
+      "Examina los límites de peso de los actuadores blandos para microrobots",
+      "Identifica tareas potenciales para drones agrícolas inalámbricos"
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1487219116710-23ffcb172b2b?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1487219116710-23ffcb172b2b?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Kaleb Kendall",
+      "authorUrl": "https://unsplash.com/@kalebkendall?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/6nRjHtBDk4o",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/6nRjHtBDk4o/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1543766248-c595e4f52df3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1543766248-c595e4f52df3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Micah Boswell",
+      "authorUrl": "https://unsplash.com/@micahboswell?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/uqduo6sm3CM",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/uqduo6sm3CM/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1624903164200-ef655836a5ac?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1624903164200-ef655836a5ac?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Nathanaël Desmeules",
+      "authorUrl": "https://unsplash.com/@nathanael240606?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/uo-cV4r6-cs",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/uo-cV4r6-cs/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1609828161761-466cbde6178c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1609828161761-466cbde6178c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Dileep M",
+      "authorUrl": "https://unsplash.com/@dileepphoto?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/lCj9ebqIWGs",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/lCj9ebqIWGs/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8QXV0b25vbW91cyUyMEZseWluZyUyME1pY3Jvcm9ib3QlMjBDYXJyaWVzJTIwSXRzJTIwT3duJTIwU2Vuc29ycyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTA2MjQxN3ww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQAgCdASoQABwAA4BaJZQDCgEO/hEeDFDH2DXQAAD+77TwZNtEFYndtc4g/l/gT/AJSbZteiAxbr88H7GetL683yBLy6RcrbMnBWYmGhXMBpbjgha8CJsR3cHKkPw7ZO+qHiGsjo4JAQJvvJYpcMEAAAA=",
+  "dominant": "#828b8c",
+  "glossary": {
+    "en": {
+      "microrobot": "An extremely small robotic device capable of autonomous or controlled movement.",
+      "sensors": "Devices that detect physical environmental data like position and orientation.",
+      "soft actuators": "Flexible artificial muscles used to generate mechanical lift and movement.",
+      "lift-to-weight ratio": "The proportion of upward lifting force compared to the total mass.",
+      "electronics package": "The onboard collection of circuits, sensors, and microcontrollers.",
+      "microcontroller": "A compact integrated circuit designed to govern specific operations.",
+      "sensing algorithm": "A computational procedure used to calculate position and orientation rapidly.",
+      "positional drift": "The gradual unintended deviation from a set coordinate or path.",
+      "point-to-point maneuvers": "Controlled movements traveling directly from one specific location to another.",
+      "untethered": "Operating completely free of external physical connections or power wires."
+    },
+    "vi": {
+      "soft actuators": "Bộ truyền động mềm, thiết bị chuyển động mô phỏng cơ bắp sinh học.",
+      "microcontroller": "Vi điều khiển, mạch tích hợp nhỏ gọn dùng để điều khiển hệ thống.",
+      "joystick": "Cần điều khiển cầm tay dùng để định hướng thiết bị từ xa.",
+      "science robotics": "Tạp chí khoa học uy tín chuyên công bố các nghiên cứu về robot học.",
+      "mit": "Viện Công nghệ Massachusetts, trường đại học hàng đầu về kỹ thuật và công nghệ.",
+      "drone nông nghiệp": "Thiết bị bay không người lái được ứng dụng trong lĩnh vực sản xuất nông nghiệp.",
+      "cơ nhân tạo": "Hệ thống mô phỏng cơ bắp sinh học giúp tạo ra lực chuyển động.",
+      "bộ xử lý trên bo mạch": "Mạch xử lý thông tin được tích hợp trực tiếp ngay trên thiết bị bay."
+    },
+    "fr": {
+      "microrobot": "Robot de taille minuscule doté ici d'ailes battantes pour se déplacer de manière autonome.",
+      "actionneurs souples": "Composants artificiels flexibles qui agissent comme des muscles pour générer du mouvement.",
+      "portance": "Force aérodynamique qui permet à l'appareil de s'élever et de se maintenir en l'air.",
+      "microcontrôleur": "Petit circuit intégré servant à piloter et contrôler les fonctions de vol de l'appareil.",
+      "algorithme": "Suite d'instructions logiques permettant de calculer rapidement la position et l'orientation.",
+      "dérive positionnelle": "Écart progressif entre la position réelle de l'appareil et sa position théorique.",
+      "manœuvres": "Déplacements précis et contrôlés effectués par le véhicule volant d'un point à un autre.",
+      "drones": "Véhicules volants autonomes ou télécommandés utilisés pour diverses missions aériennes."
+    },
+    "de": {
+      "mikroroboter": "Ein extrem kleiner Roboter, der für spezialisierte Aufgaben entwickelt wurde.",
+      "sensoren": "Bauteile zur Erfassung physikalischer Eigenschaften und Umgebungsdaten.",
+      "recheneinheit": "Elektronisches System zur Verarbeitung von Daten und Steuerung.",
+      "nutzlast": "Das zusätzliche Gewicht, das ein Fluggerät transportieren kann.",
+      "aktoren": "Antriebselemente, die Signale in mechanische Bewegung umsetzen.",
+      "auftriebskräfte": "Kräfte, die ein Objekt entgegen der Schwerkraft in der Luft halten.",
+      "elektronikpaket": "Kompakte Einheit aus elektronischen Bauteilen und Schaltungen.",
+      "mikrocontroller": "Ein kleiner integrierter Schaltkreis, der als Steuerungsrechner dient.",
+      "sensorikalgorithmus": "Rechenvorschrift zur Auswertung von Sensordaten.",
+      "positionsabweichung": "Die Abweichung zwischen tatsächlicher und gewünschter Position."
+    },
+    "es": {
+      "microrobot": "Robot de tamaño diminuto diseñado para realizar tareas específicas.",
+      "actuadores blandos": "Dispositivos flexibles que imitan músculos biológicos para generar movimiento.",
+      "sustentación": "Fuerza aerodinámica que permite a un objeto mantenerse en vuelo.",
+      "microcontrolador": "Circuito integrado compacto que actúa como el cerebro computacional.",
+      "algoritmo": "Conjunto ordenado de operaciones sistemáticas para resolver un cálculo.",
+      "deriva": "Desviación involuntaria de la trayectoria o posición prevista.",
+      "maniobras": "Movimientos coordinados para dirigir la trayectoria del vehículo.",
+      "drones": "Vehículos aéreos no tripulados controlados de forma remota o autónoma."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-19T03:45:42.757Z"
+}
