@@ -138,6 +138,8 @@ async function store(file: string, name: string): Promise<string> {
 
 /** Download a Pixabay clip, make both shapes for the article, store them and return its `cover.video` entry. */
 export async function motionCover(a: ArticleSource, clip: PixabayClip, start = 0): Promise<CoverVideo> {
+  // Taken now, so the next article in this run does not get the same clip.
+  (await clipsInUse()).add(clip.id);
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'clip-'));
   try {
     await cutClip(clip, tmp, start);
