@@ -32,9 +32,11 @@ jobs:
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
       # The Firestore Rules go out before the site, so the app never makes writes the live Rules refuse.
-      # A failure stops the deploy and the current site stays up.
+      # A failure stops the deploy and the current site stays up. Opt-in (variable DEPLOY_RULES=true):
+      # the service account needs the Firebase Rules Admin and Service Usage Consumer roles first;
+      # until then deploy the rules by hand (`pnpm exec firebase deploy --only firestore:rules`).
       - name: Firestore rules
-        if: hashFiles('firestore.rules') != ''
+        if: vars.DEPLOY_RULES == 'true'
         env:
           SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
         run: |
