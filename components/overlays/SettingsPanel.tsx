@@ -113,7 +113,7 @@ export function SettingsPanel() {
           type="button"
           onClick={() => {
             useReading.getState().setWelcomed(false);
-            useUI.setState({ overlays: [] });
+            useUI.setState({ overlays: [], introAsked: true });
           }}
         >
           <Sparkles className="ic" aria-hidden="true" />

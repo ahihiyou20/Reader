@@ -3,6 +3,7 @@ import { Compass, Home, LibraryBig, Settings, UserRound } from 'lucide-react';
 import { useEffect } from 'react';
 import type { Overlay } from '@/stores/ui';
 import { useUI } from '@/stores/ui';
+import { useReading } from '@/stores/reading';
 import { preloadExplore, preloadLibrary, preloadProfile, preloadSettings } from '../overlays/preload';
 import { useT } from '../hooks';
 
@@ -36,10 +37,18 @@ export function SideNav() {
     <>
       {open && <div className="click-shield dim" onPointerDown={close} />}
       <nav className={`sidenav${open ? ' open' : ''}`} aria-label={t('menu')} inert={!open || undefined}>
-        <div className="sidenav-brand">
+        <button
+          className="sidenav-brand"
+          type="button"
+          aria-label={t('intro')}
+          onClick={() => {
+            useReading.getState().setWelcomed(false);
+            useUI.setState({ overlays: [], navOpen: false, introAsked: true });
+          }}
+        >
           <img src="/icons/logo-120.png" alt="" width={44} height={44} draggable={false} />
           <span>Pagemoor</span>
-        </div>
+        </button>
         {ITEMS.map(({ id, icon: Icon, label, preload }) => (
           <button key={id} type="button" aria-current={(id === 'home' ? !top : top === id) ? 'page' : undefined} onClick={() => go(id)} onPointerDown={preload} onMouseEnter={preload} onFocus={preload}>
             <Icon className="ic" aria-hidden="true" />

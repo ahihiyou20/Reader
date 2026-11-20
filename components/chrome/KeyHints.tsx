@@ -4,16 +4,18 @@ import { chromeP } from '../feed/nav';
 import { useT } from '../hooks';
 
 const HINTS = [
-  { key: '↑', labelKey: 'keyHintUp' as const },
-  { key: '↓', labelKey: 'keyHintDown' as const },
-  { key: '←', labelKey: 'keyHintPrev' as const },
-  { key: '→', labelKey: 'keyHintNext' as const },
-  { key: 'L', labelKey: 'keyHintLike' as const },
-  { key: 'S', labelKey: 'keyHintSave' as const },
+  { key: '↑', code: 'ArrowUp', labelKey: 'keyHintUp' as const },
+  { key: '↓', code: 'ArrowDown', labelKey: 'keyHintDown' as const },
+  { key: '←', code: 'ArrowLeft', labelKey: 'keyHintPrev' as const },
+  { key: '→', code: 'ArrowRight', labelKey: 'keyHintNext' as const },
+  { key: 'L', code: 'l', labelKey: 'keyHintLike' as const },
+  { key: 'S', code: 's', labelKey: 'keyHintSave' as const },
 ];
+// A click does what the key does: the feed's keyboard handler is the one place these actions live.
+const press = (key: string) => window.dispatchEvent(new KeyboardEvent('keydown', { key }));
 
 /**
- * Visual chips indicating keyboard navigation shortcuts.
+ * Keyboard shortcut chips, also clickable with the mouse.
  * Rendered in Cover view on fine-pointer desktop screens.
  */
 export function KeyHints() {
@@ -32,12 +34,12 @@ export function KeyHints() {
   if (view !== 0) return null;
 
   return (
-    <div className="key-hints" data-region="key-hints" aria-hidden="true">
+    <div className="key-hints" data-region="key-hints">
       {HINTS.map((h) => (
-        <div key={h.key} className="key-chip">
-          <kbd className="key-cap">{h.key}</kbd>
+        <button key={h.key} type="button" className="key-chip" onClick={() => press(h.code)}>
+          <kbd className="key-cap" aria-hidden="true">{h.key}</kbd>
           <span className="key-text">{t(h.labelKey)}</span>
-        </div>
+        </button>
       ))}
     </div>
   );

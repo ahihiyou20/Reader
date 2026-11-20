@@ -22,6 +22,8 @@ interface UIState {
   langMenu: boolean;
   /** The main navigation drawer. */
   navOpen: boolean;
+  /** The reader asked to see the welcome again (Settings, the menu's logo): shown even on an article link. */
+  introAsked: boolean;
   category: string | null;
   startSlug: string | null;
   feedVersion: number;
@@ -52,6 +54,7 @@ export const useUI = create<UIState>((set) => ({
   sheet: null,
   langMenu: false,
   navOpen: false,
+  introAsked: false,
   category: null,
   startSlug: null,
   feedVersion: 0,
