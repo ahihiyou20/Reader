@@ -317,8 +317,22 @@ describe('submissions (FR-25)', () => {
   it('guests cannot submit', async () => {
     await assertFails(addDoc(collection(guest(), 'submissions'), post('guest')));
   });
-  it('Google users submit pending posts', async () => {
-    await assertSucceeds(addDoc(collection(alice(), 'submissions'), post('alice')));
+  const send = (stamp = true) => {
+    const db = alice();
+    const b = writeBatch(db);
+    b.set(doc(collection(db, 'submissions')), post('alice'));
+    if (stamp) b.update(doc(db, 'users/alice'), { lastPostAt: serverTimestamp() });
+    return b.commit();
+  };
+  it('Google users submit pending posts, stamped on their profile', async () => {
+    await assertFails(send(false));
+    await assertSucceeds(send());
+  });
+  it('one post per 10 minutes', async () => {
+    await assertSucceeds(send());
+    await assertFails(send());
+    await env.withSecurityRulesDisabled((ctx) => updateDoc(doc(ctx.firestore(), 'users/alice'), { lastPostAt: new Date(Date.now() - 601_000) }));
+    await assertSucceeds(send());
   });
   it('titles are 120 characters at most and status starts pending', async () => {
     await assertFails(addDoc(collection(alice(), 'submissions'), post('alice', 'x'.repeat(121))));

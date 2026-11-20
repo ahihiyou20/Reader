@@ -54,7 +54,7 @@ service cloud.firestore {
         && (s.lastReadDate == null || (s.lastReadDate is string && s.lastReadDate.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')));
     }
     function validProfile(d) {
-      return d.keys().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'createdAt', 'lastActiveAt', 'lastCommentAt'])
+      return d.keys().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'createdAt', 'lastActiveAt', 'lastCommentAt', 'lastPostAt'])
         && (d.displayName == null || isString(d.displayName, 1, 60))
         && (d.photoURL == null || isString(d.photoURL, 1, 1000))
         && d.isAnonymous == !isGoogle()
@@ -67,12 +67,13 @@ service cloud.firestore {
 
     match /users/{uid} {
       allow read, delete: if isMe(uid);
-      allow create: if isMe(uid) && validProfile(request.resource.data) && !('lastCommentAt' in request.resource.data)
+      allow create: if isMe(uid) && validProfile(request.resource.data) && !('lastCommentAt' in request.resource.data) && !('lastPostAt' in request.resource.data)
         && request.resource.data.streak.current == 0 && request.resource.data.stats.articlesRead == 0
         && request.resource.data.createdAt == request.time;
       allow update: if isMe(uid) && validProfile(request.resource.data)
-        && changed().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'lastActiveAt', 'lastCommentAt'])
+        && changed().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'lastActiveAt', 'lastCommentAt', 'lastPostAt'])
         && (!changed().hasAny(['lastCommentAt']) || request.resource.data.lastCommentAt == request.time)
+        && (!changed().hasAny(['lastPostAt']) || request.resource.data.lastPostAt == request.time)
         && (request.resource.data.streak.current == resource.data.streak.current
             || request.resource.data.streak.current == resource.data.streak.current + 1
             || request.resource.data.streak.current == 1);
@@ -156,10 +157,12 @@ service cloud.firestore {
     // lastCommentAt, and the stamp before it must be older. Keeps a script from flooding a thread or
     // spending the project's daily write quota.
     function me() { return /databases/$(db)/documents/users/$(request.auth.uid); }
-    function paced() {
-      return existsAfter(me()) && getAfter(me()).data.get('lastCommentAt', null) == request.time
-        && (!exists(me()) || get(me()).data.get('lastCommentAt', null) == null
-          || get(me()).data.lastCommentAt < request.time - duration.value(15, 's'));
+    function paced() { return stamped('lastCommentAt', 15); }
+    // The write stamps users/{uid}.<field> with its own time, and the stamp before it is `secs` old.
+    function stamped(field, secs) {
+      return existsAfter(me()) && getAfter(me()).data.get(field, null) == request.time
+        && (!exists(me()) || get(me()).data.get(field, null) == null
+          || get(me()).data[field] < request.time - duration.value(secs, 's'));
     }
     match /comments/{slug}/items/{id} {
       allow read: if resource.data.status == 'visible' || isMod() || (signedIn() && resource.data.uid == request.auth.uid);
@@ -205,7 +208,9 @@ service cloud.firestore {
         && request.resource.data.references is list && request.resource.data.references.size() <= 20
         && request.resource.data.coverUrl is string && request.resource.data.coverUrl.size() <= 500
         && request.resource.data.lang in ['en', 'vi', 'fr', 'de', 'es']
-        && request.resource.data.createdAt == request.time;
+        && request.resource.data.createdAt == request.time
+        // One post per 10 minutes per reader, like comments (stamped on the profile in the same write).
+        && stamped('lastPostAt', 600);
     }
 
     match /moderators/{uid} {

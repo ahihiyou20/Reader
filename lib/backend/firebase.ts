@@ -23,7 +23,6 @@ import {
   type User,
 } from 'firebase/auth';
 import {
-  addDoc,
   arrayUnion,
   collection,
   collectionGroup,
@@ -681,7 +680,11 @@ export function createFirebaseBackend(): Backend {
       const profile = await getDoc(userRef(u.uid)).catch(() => null);
       const name = (profile?.data()?.displayName as string) || u.displayName || 'Reader';
       try {
-        const ref = await addDoc(collection(db, 'submissions'), {
+        const ref = doc(collection(db, 'submissions'));
+        const b = writeBatch(db);
+        // The Rules allow one post per 10 minutes, stamped on the profile in the same write.
+        b.update(userRef(u.uid), { lastPostAt: serverTimestamp() });
+        b.set(ref, {
           uid: u.uid,
           displayName: name,
           title: input.title.slice(0, 120),
@@ -693,6 +696,7 @@ export function createFirebaseBackend(): Backend {
           status: 'pending',
           createdAt: serverTimestamp(),
         });
+        await b.commit();
         return ref.id;
       } catch (e) {
         throw mapError(e);
