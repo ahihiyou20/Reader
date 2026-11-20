@@ -15,6 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       slugs: { description: 'Article slugs, space separated (empty: only move clips and cover images to Cloudinary)', required: false }
+      motion: { description: 'JSON {"slug": "pixabay search words"}: give these articles a motion cover', required: false }
 permissions:
   contents: write
   actions: write
@@ -61,6 +62,7 @@ jobs:
           GEMINI_FALLBACK_MODELS: ${{ vars.GEMINI_FALLBACK_MODELS }}
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
           MOTION_COVERS: ${{ vars.GEMINI_MOTION_COVERS != 'false' }}
+          MOTION_QUERIES: ${{ inputs.motion }}
           COVER_MOVES: ${{ vars.COVER_MOVES }}
         run: pnpm tsx scripts/pipeline/finish.ts ${{ steps.new.outputs.slugs }}
       - name: Check

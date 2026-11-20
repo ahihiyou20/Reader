@@ -31,6 +31,8 @@ async function main() {
   if (images.length) console.log(`Moved the cover images of ${images.length} articles to Cloudinary: ${images.join(', ')}`);
   const ffmpeg = await hasFfmpeg();
   let translating = hasGemini();
+  // An editor's pick: these articles get a motion cover from these search words, whatever their group.
+  const motionQueries: Record<string, string> = JSON.parse(process.env.MOTION_QUERIES || '{}');
   const rows: string[] = [];
   for (const slug of slugs) {
     const file = path.join(dirs.articles, `${slug}.json`);
@@ -47,10 +49,10 @@ async function main() {
       }
     }
     // A clip the writer chose (coverClip) always; a search on the article's tags where the standard asks for one.
-    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || (own && process.env.MOTION_COVERS === 'true');
+    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || Boolean(motionQueries[slug]) || (own && process.env.MOTION_COVERS === 'true');
     if (wantsMotion && !a.cover.video && ffmpeg && hasPixabay()) {
       try {
-        const video = await autoMotion(a, [...(a.tags ?? []).slice(0, 3), a.title.en.split(/[:–—]/)[0]]);
+        const video = await autoMotion(a, [motionQueries[slug], ...(a.tags ?? []).slice(0, 3), a.title.en.split(/[:–—]/)[0]]);
         if (video) {
           a.cover.video = video;
           delete a.coverClip;
