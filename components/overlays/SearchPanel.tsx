@@ -9,6 +9,7 @@ import { markMatches } from '@/lib/search';
 import { useUI } from '@/stores/ui';
 import { useCategoryName } from '../feed/CoverView';
 import { useDebounced, useT } from '../hooks';
+import { zoomOpen } from './zoom';
 import { CardMedia } from './ArticleCard';
 import { Panel } from './Layer';
 
@@ -126,6 +127,7 @@ export function SearchPanel() {
       open={open}
       onClose={() => closeOverlay('search')}
       label={t('search')}
+      className="search"
       closeIcon="none"
       header={
         <>
@@ -246,7 +248,15 @@ function ResultItem({ item, q, onOpen }: { item: FeedItem; q: string; onOpen: ()
   const cat = useCategoryName(item.category);
   const title = pick(item.title, lang) ?? '';
   return (
-    <button className="ritem" type="button" onClick={onOpen}>
+    <button
+      className="ritem"
+      type="button"
+      onClick={(e) => {
+        const thumb = e.currentTarget.querySelector<HTMLElement>('.thumb');
+        if (thumb) zoomOpen(thumb, item.slug);
+        onOpen();
+      }}
+    >
       <span className="thumb" style={{ ['--dominant' as string]: item.cover.dominant }}>
         <CardMedia item={item} />
       </span>

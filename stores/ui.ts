@@ -44,6 +44,16 @@ interface UIState {
 }
 
 let toastId = 0;
+let switchedAt = -1;
+/**
+ * Go to a tab from the navigation. Tabs are peers, not a stack, so the panel on screen fades back and
+ * the new one grows in on the spot (iOS tab switching) instead of both sliding across (Panel).
+ */
+export function switchTab(id: Overlay) {
+  if (useUI.getState().overlays.length) switchedAt = performance.now();
+  useUI.setState({ overlays: [id] });
+}
+export const tabSwitching = () => performance.now() - switchedAt < 150;
 
 export const useUI = create<UIState>((set) => ({
   lang: 'en',

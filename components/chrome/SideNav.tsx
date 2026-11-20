@@ -2,7 +2,7 @@
 import { Compass, Home, LibraryBig, Settings, UserRound } from 'lucide-react';
 import { useEffect } from 'react';
 import type { Overlay } from '@/stores/ui';
-import { useUI } from '@/stores/ui';
+import { switchTab, useUI } from '@/stores/ui';
 import { useReading } from '@/stores/reading';
 import { preloadExplore, preloadLibrary, preloadProfile, preloadSettings } from '../overlays/preload';
 import { useT } from '../hooks';
@@ -24,7 +24,7 @@ export function SideNav() {
   const go = (id: 'home' | Overlay) => {
     // One destination at a time: the menu switches screens, it does not stack them.
     if (id === 'home') useUI.getState().startFeed({ category: null });
-    else useUI.setState({ overlays: [id] });
+    else switchTab(id);
     close();
   };
   useEffect(() => {

@@ -347,7 +347,8 @@ async function main() {
   );
 
   // Without a cap, triage still balances categories (perCategory) so one busy feed cannot fill the day.
-  const pool = Number.isFinite(cap) ? cap : 200;
+  // Spares: a pick whose page cannot be read or written up is replaced by the next one.
+  const pool = Number.isFinite(cap) ? cap * 3 : 200;
   const { picked, rejected } = await selectArticles(feeds, candidates, { limit: pool, existingTitles: titles, categories, triage: config.triage });
   const feedOf = new Map(feeds.flatMap((f) => (candidates.get(f.id) ?? []).map((it) => [it.url, f.id] as const)));
   for (const r of rejected) state.seen[r.url] = { at: new Date().toISOString(), feed: feedOf.get(r.url) ?? '?', error: `triage: ${r.reason}` };

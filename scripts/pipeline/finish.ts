@@ -48,8 +48,8 @@ async function main() {
         console.warn(`${slug}: translation stopped (${(e as Error).message.slice(0, 160)})`);
       }
     }
-    // A clip the writer chose (coverClip) always; a search on the article's tags where the standard asks for one.
-    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || Boolean(motionQueries[slug]) || (own && process.env.MOTION_COVERS === 'true');
+    // A clip the writer chose (coverClip) always; otherwise Gemini picks one when the run asks for motion covers.
+    const wantsMotion = Boolean(a.coverClip) || byClaude(a) || Boolean(motionQueries[slug]) || process.env.MOTION_COVERS === 'true';
     if (wantsMotion && !a.cover.video && ffmpeg && hasPixabay()) {
       try {
         const video = await autoMotion(a, [motionQueries[slug], ...(a.tags ?? []).slice(0, 3), a.title.en.split(/[:–—]/)[0]]);
