@@ -95,6 +95,21 @@
     color: #fff;
   }
 }
+/* The brand opens the welcome: it keeps the brand's look, not a menu row's. */
+.sidenav button.sidenav-brand {
+  height: auto;
+  padding: 0 8px 18px;
+  border-radius: 0;
+  color: #fff;
+  font: 500 24px/1 'Playfair Display', Georgia, serif;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .sidenav button.sidenav-brand:hover {
+    background: none;
+    opacity: 0.85;
+  }
+}
 .sidenav-foot {
   margin: auto 8px 0;
   color: var(--fg3);
@@ -774,15 +789,6 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
   }
 }
 
-/* Cover clip: fades in over the still image once it has frames to show. */
-.media-clip {
-  animation: clip-in 480ms var(--ease-out) 200ms both;
-}
-@keyframes clip-in {
-  from {
-    opacity: 0;
-  }
-}
 
 /* Welcome: three screens, one per scroll stop */
 .welcome {

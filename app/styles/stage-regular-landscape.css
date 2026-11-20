@@ -144,7 +144,6 @@ html[data-stage='regular-landscape'] .key-hints {
     left: 48px;
     bottom: calc(var(--sab) + 24px);
     z-index: 25;
-    pointer-events: none;
     flex-wrap: wrap;
     gap: 8px;
     max-width: 440px;
@@ -155,14 +154,17 @@ html[data-stage='regular-landscape'] .key-chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 4px 8px 4px 6px;
-  border-radius: 6px;
+  /* Clickable now: a 44px target, as every control. */
+  min-height: 44px;
+  padding: 0 12px 0 10px;
+  border-radius: 10px;
   background: rgba(18, 18, 24, 0.7);
   border: 1px solid rgba(255, 255, 255, 0.12);
   -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
   backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
-  font: 500 12px var(--font-sans);
+  font: 500 13px var(--font-sans);
   color: var(--fg2);
+  cursor: pointer;
 }
 
 html[data-stage='regular-landscape'] .key-cap {

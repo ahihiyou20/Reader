@@ -110,7 +110,8 @@ function Shell({
   const readSize = useReading((s) => s.settings.fontSize);
   useEffect(() => (preview ? undefined : startReadingSync()), [preview]);
   // A reader who followed a link to an article came for that article, not for the introduction.
-  const showWelcome = useReading((s) => !s.welcomed) && !initialSlug && !preview;
+  const introAsked = useUI((s) => s.introAsked);
+  const showWelcome = useReading((s) => !s.welcomed) && (!initialSlug || introAsked) && !preview;
   useEffect(() => {
     document.documentElement.style.setProperty('--read-size', `${readSize}px`);
   }, [readSize]);
@@ -227,6 +228,11 @@ function Shell({
   // The feed mounts as a transition: React renders it in slices, so the poster keeps painting and no
   // single long task blocks the first screen.
   const [ready, setReady] = useState(false);
+  // The head script hid the feed for a first-visit welcome: let it out once it is clear none will show
+  // (Welcome itself lets it out when it mounts over it).
+  useEffect(() => {
+    if (ready && !showWelcome) document.documentElement.removeAttribute('data-welcome');
+  }, [ready, showWelcome]);
 
   useEffect(() => {
     const el = app.current;

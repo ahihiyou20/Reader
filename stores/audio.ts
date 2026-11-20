@@ -12,6 +12,8 @@ export interface Track {
   title: string;
   lang: Lang;
   paras: string[];
+  /** The language the reader asked for, when this device has no voice for it. */
+  missingVoice?: Lang;
 }
 
 interface AudioState extends Track {
@@ -34,15 +36,20 @@ export const speakable = (r: Rich | undefined): string[] =>
 
 /** What is read for an article in a language: title, hook, each heading and body, the key point. */
 export function trackFor(article: ArticleClient, lang: Lang): Track {
-  const title = pick(article.title, lang) ?? '';
+  // Untranslated blocks fall back to English text, so a partly translated article is read in English.
+  // A device with no voice for the language would read it with an English voice, which is gibberish:
+  // it reads the English text instead (voices not loaded yet count as present).
+  const missing = lang !== 'en' && canSpeak() && speechSynthesis.getVoices().length > 0 && !voicesFor(lang).length;
+  const spoken: Lang = article.langs.includes(lang) && !missing ? lang : 'en';
+  const at = missing ? 'en' : lang;
+  const title = pick(article.title, at) ?? '';
   const paras = [
     title,
-    ...speakable(pick(article.hook, lang)),
-    ...article.sections.flatMap((s) => [pick(s.heading, lang) ?? '', ...speakable(pick(s.body, lang))]),
-    ...speakable(pick(article.keyPoint, lang)),
+    ...speakable(pick(article.hook, at)),
+    ...article.sections.flatMap((s) => [pick(s.heading, at) ?? '', ...speakable(pick(s.body, at))]),
+    ...speakable(pick(article.keyPoint, at)),
   ].filter(Boolean);
-  // Untranslated blocks fall back to English text, so a partly translated article is read in English.
-  return { slug: article.slug, title, lang: article.langs.includes(lang) ? lang : 'en', paras };
+  return { slug: article.slug, title, lang: spoken, paras, ...(missing ? { missingVoice: lang } : {}) };
 }
 
 /**
