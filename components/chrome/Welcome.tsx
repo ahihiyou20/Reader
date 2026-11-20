@@ -8,7 +8,7 @@ import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useCategoryName } from '../feed/CoverView';
 import { useReducedMotion, useT } from '../hooks';
-import { coverThumb } from '../overlays/ArticleCard';
+import { CardMedia, coverThumb } from '../overlays/ArticleCard';
 
 const FEATURES = [
   { key: 'wF1', icon: Globe },
@@ -175,7 +175,7 @@ function Pick({ item, n, title, label, onOpen }: { item: FeedItem; n: number; ti
   const cat = useCategoryName(item.category);
   return (
     <button type="button" onClick={onOpen} style={{ ['--d' as string]: n, ['--dominant' as string]: item.cover.dominant }}>
-      <img src={coverThumb(item)} alt="" loading="lazy" decoding="async" draggable={false} onError={hideBroken} />
+      <CardMedia item={item} />
       <em>No. 0{n}</em>
       <span>
         <b>{label}</b> · <i>{cat}</i>
@@ -269,7 +269,7 @@ function FeaturedCard({ item, title, style, on, onPick }: { item: FeedItem; titl
   const cat = useCategoryName(item.category);
   return (
     <button type="button" className="wcf-card" style={{ ...style, ['--dominant' as string]: item.cover.dominant }} aria-current={on} onClick={onPick}>
-      <img src={coverThumb(item)} alt="" loading="lazy" decoding="async" draggable={false} onError={hideBroken} />
+      <CardMedia item={item} />
       <em>{cat}</em>
       <strong>{title}</strong>
       <span>

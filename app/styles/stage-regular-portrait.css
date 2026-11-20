@@ -51,13 +51,13 @@ html[data-stage='regular-portrait'] .lang {
   font-size: 17px;
 }
 
-/* Dock / BottomNav */
+/* Navigation: the glass bar a little larger on a tablet */
 html[data-stage='regular-portrait'] .bnav {
-  left: calc(50% - 130px);
-  right: auto;
-  width: 260px;
-  bottom: calc(var(--sab) + 16px);
-  height: 66px;
+  bottom: calc(var(--sab) + 18px);
+}
+html[data-stage='regular-portrait'] .nb.tab {
+  width: 68px;
+  height: 58px;
 }
 
 /* Cover view */

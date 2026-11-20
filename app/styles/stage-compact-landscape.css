@@ -28,79 +28,38 @@ html[data-stage='compact-landscape'] .topbar {
   box-sizing: border-box;
 }
 
-/* Chrome: BottomNav (Dock) */
+/* Navigation: the glass bar stands upright at the left edge, centred, labels hidden */
 html[data-stage='compact-landscape'] .bnav {
-  position: absolute;
-  left: env(safe-area-inset-left, 0px);
+  left: calc(env(safe-area-inset-left, 0px) + 4px);
   right: auto;
-  bottom: auto;
-  top: 50%;
-  transform: translateY(-50%) !important;
-  width: 56px;
-  height: auto;
-  display: flex;
+  top: 44px;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-radius: 28px;
-  background: rgba(22, 22, 26, 0.74);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
-  pointer-events: auto;
-  z-index: 30;
-  box-sizing: border-box;
+  gap: 8px;
 }
-
-html[data-stage='compact-landscape'] .bnav .plusw {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  inset: auto !important;
-  margin: 0 !important;
-  width: 44px !important;
-  height: 44px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex: none !important;
+html[data-stage='compact-landscape'] .gtabs {
+  flex-direction: column;
+  padding: 4px;
+}
+html[data-stage='compact-landscape'] .nb.tab {
+  width: 44px;
+  height: 44px;
+}
+html[data-stage='compact-landscape'] .nb.tab .ic {
+  width: 21px;
+  height: 21px;
+}
+html[data-stage='compact-landscape'] .nb.tab .lbl {
+  display: none;
+}
+html[data-stage='compact-landscape'] .plusw,
+html[data-stage='compact-landscape'] .nb.plus {
+  width: 46px;
+  height: 46px;
+}
+/* Already small here: the + keeps its size while reading. */
+html[data-stage='compact-landscape'] .plusw {
   transform: none !important;
-}
-
-html[data-stage='compact-landscape'] .bnav .nb,
-html[data-stage='compact-landscape'] .bnav .nb.side,
-html[data-stage='compact-landscape'] .bnav .nb.search,
-html[data-stage='compact-landscape'] .bnav .nb.chat,
-html[data-stage='compact-landscape'] .bnav .nb.plus {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  inset: auto !important;
-  margin: 0 !important;
-  width: 44px !important;
-  height: 44px !important;
-  flex: none !important;
-}
-
-html[data-stage='compact-landscape'] .bnav .nb.side {
-  background: transparent;
-  border: none;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-}
-
-/* Hide dock when viewing Engage (Comments & Apply) */
-html[data-stage='compact-landscape'] .app[data-engage='true'] .bnav {
-  opacity: 0 !important;
-  pointer-events: none !important;
-  visibility: hidden !important;
-  transform: translateY(-50%) translateX(-120px) !important;
 }
 
 /* Cover View: Rail */
