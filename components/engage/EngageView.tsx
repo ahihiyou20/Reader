@@ -14,6 +14,10 @@ import { avatarColor, initials } from '../icons';
 import { useT } from '../hooks';
 import { ApplyCard } from './ApplyCard';
 
+let lastPosted = 0;
+/** Comment avatars come from Google sign-in; the Rules accept no other host. */
+const GOOGLE_AVATAR = /^https:\/\/lh\d+\.googleusercontent\.com\//;
+
 export function EngageView({ article, item, active, view }: { article: ArticleClient; item: FeedItem; active: boolean; view: number }) {
   const t = useT();
   const openOverlay = useUI((s) => s.openOverlay);
@@ -277,7 +281,7 @@ function CommentList({
             onAnimationEnd={isNew ? () => onNewCommentSettled?.(c.id) : undefined}
           >
             <div className="cav" style={{ background: avatarColor(c.uid) }} aria-hidden="true">
-              {c.photoURL ? <img src={c.photoURL} alt="" referrerPolicy="no-referrer" /> : initials(c.displayName)}
+              {c.photoURL && GOOGLE_AVATAR.test(c.photoURL) ? <img src={c.photoURL} alt="" referrerPolicy="no-referrer" /> : initials(c.displayName)}
             </div>
             <div className="cbody">
               <div className="cname">
@@ -348,9 +352,12 @@ function CommentForm({
     if (!text || sending) return;
     if (text.length > 500) return toast(t('commentTooLong'));
     if (needsGoogle('comment')) return;
+    // The Rules refuse a second comment within 15 s (firestore.rules, paced()).
+    if (Date.now() - lastPosted < 15_000) return toast(t('commentTooFast'));
     setSending(true);
     try {
       const c = await (await getBackend()).addComment(slug, text, lang);
+      lastPosted = Date.now();
       onPosted({ ...c, pending: true });
       useUser.setState((s) => ({ deltas: { ...s.deltas, [slug]: { ...s.deltas[slug], comments: (s.deltas[slug]?.comments ?? 0) + 1 } } }));
       setDraft('');

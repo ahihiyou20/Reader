@@ -186,13 +186,29 @@ export async function moveClipsOffRepo(): Promise<string[]> {
  * search hit for each query in turn. Returns undefined when nothing fits.
  */
 const searchSchema = z.object({ queries: z.array(z.string().min(2).max(60)).min(1).max(4) });
+const shortlistSchema = z.object({ ids: z.array(z.number().int()).max(3) });
 const pickSchema = z.object({ id: z.number().int(), why: z.string().max(200) });
 
+/** One frame from the middle of a clip, small, for Gemini to look at. Undefined when ffmpeg cannot read it. */
+async function frameOf(clip: PixabayClip): Promise<Buffer | undefined> {
+  const out = path.join(await fs.mkdtemp(path.join(os.tmpdir(), 'frame-')), 'f.jpg');
+  try {
+    await ffmpeg(['-ss', String(Math.min(3, clip.seconds / 2)), '-i', clip.file, '-frames:v', '1', '-vf', 'scale=512:-2', '-q:v', '5', out]);
+    return await fs.readFile(out);
+  } catch {
+    return undefined;
+  } finally {
+    await fs.rm(path.dirname(out), { recursive: true, force: true });
+  }
+}
+
 /**
- * Gemini as the picture editor: it names footage that fits the article, then picks one clip from what
- * Pixabay returns by its tags, or none (id 0) when nothing fits. A wrong clip is worse than a photo.
+ * Gemini as the picture editor: it names footage that fits the article, shortlists up to three clips
+ * from what Pixabay returns by their tags, then looks at a frame of each and keeps one, or none (id 0)
+ * when nothing fits. A wrong clip is worse than a photo. Without frames (no ffmpeg, or the agy CLI,
+ * which takes no pictures) the shortlist's first clip is the pick.
  */
-async function geminiClip(a: ArticleSource, hints: string[]): Promise<PixabayClip | undefined> {
+export async function geminiClip(a: ArticleSource, hints: string[]): Promise<PixabayClip | undefined> {
   const about = `Title: ${a.title.en}\nHook: ${a.hook.en}\nTags: ${(a.tags ?? []).join(', ')}`;
   const { value: s } = await geminiStructured({
     schema: searchSchema,
@@ -207,12 +223,23 @@ async function geminiClip(a: ArticleSource, hints: string[]): Promise<PixabayCli
         pool.push(c);
       }
   if (!pool.length) return undefined;
+  const { value: l } = await geminiStructured({
+    schema: shortlistSchema,
+    temperature: 0.1,
+    prompt: `${about}\n\nCandidate Pixabay clips (id: tags):\n${pool.map((c) => `${c.id}: ${c.tags}`).join('\n')}\n\nList up to 3 clip ids, best first, whose tags show what this article is about, so a reader would see the link at a glance. Leave out clips of people's faces, text, logos or cartoons and clips that only fit loosely. An empty list when none fits.`,
+  });
+  const short = (l.ids ?? []).map((id) => pool.find((c) => c.id === id)).filter((c): c is PixabayClip => c !== undefined);
+  if (!short.length) return undefined;
+  const frames = process.env.GEMINI_VIA === 'agy' || !(await hasFfmpeg()) ? [] : await Promise.all(short.map(frameOf));
+  const seenClips = short.filter((_, i) => frames[i]);
+  if (!seenClips.length) return short[0];
   const { value: p } = await geminiStructured({
     schema: pickSchema,
     temperature: 0.1,
-    prompt: `${about}\n\nCandidate Pixabay clips (id: tags):\n${pool.map((c) => `${c.id}: ${c.tags}`).join('\n')}\n\nPick the one clip whose tags show what this article is about, so a reader would see the link at a glance. Avoid people's faces, text, logos, cartoons and clips that only fit loosely. If none fits well, answer id 0.`,
+    images: frames.filter((f): f is Buffer => f !== undefined),
+    prompt: `${about}\n\nThe pictures are one frame from each candidate clip, in this order: ${seenClips.map((c) => c.id).join(', ')}.\nPick the clip a reader would connect with this article at a glance, that looks good full screen behind white text, with no faces, text, logos or cartoon look. If none of them does, answer id 0.`,
   });
-  return pool.find((c) => c.id === p.id);
+  return seenClips.find((c) => c.id === p.id);
 }
 
 export async function autoMotion(a: ArticleSource, queries: string[]): Promise<CoverVideo | undefined> {

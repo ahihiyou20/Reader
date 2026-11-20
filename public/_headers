@@ -3,6 +3,9 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
   Cross-Origin-Opener-Policy: same-origin-allow-popups
+  # No other site may frame Pagemoor (clickjacking); no plugins; no <base> pointing elsewhere.
+  Content-Security-Policy: frame-ancestors 'self'; object-src 'none'; base-uri 'self'
+  X-Frame-Options: SAMEORIGIN
 
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable

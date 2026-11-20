@@ -580,6 +580,8 @@ export function createFirebaseBackend(): Backend {
       const data = { uid: u.uid, displayName: name, photoURL: u.photoURL ?? null, text, lang, status: 'visible', likeCount: 0, createdAt: serverTimestamp() };
       b.set(ref, data);
       b.set(counterRef(slug), { comments: increment(1), lastComment: ref.id }, { merge: true });
+      // The Rules allow one comment per 15 s, stamped on the profile in the same write.
+      b.update(userRef(u.uid), { lastCommentAt: serverTimestamp() });
       await b.commit().catch((e) => {
         throw mapError(e);
       });
@@ -775,7 +777,7 @@ export function createFirebaseBackend(): Backend {
         snaps.forEach((snap, i) => {
           for (const d of snap.docs) {
             const name = names[i];
-            if (name === 'likes' || name === 'saves') {
+            if (name === 'likes' || name === 'saves' || name === 'shares') {
               const batch = pairs.take(2);
               batch.delete(d.ref);
               batch.set(counterRef(d.id), { [name]: increment(-1) }, { merge: true });

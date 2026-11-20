@@ -5,6 +5,8 @@ const perLang = <T extends z.ZodTypeAny>(t: T) => Object.fromEntries(TLANGS.map(
 const localized = <T extends z.ZodTypeAny>(t: T) => z.object({ en: t, ...perLang(t) });
 const sectionExtras = Object.fromEntries(TLANGS.flatMap((l) => [`heading_${l}`, `body_${l}`]).map((k) => [k, z.string().optional()]));
 const nonEmpty = z.string().trim().min(1);
+/** A link readers follow: web pages only, never javascript: or data: (the text comes from pages and submissions). */
+const webUrl = z.string().regex(/^https?:\/\/[^\s]+$/, 'must be an http(s) URL');
 
 export const coverSchema = z.object({
   type: z.enum(['image', 'video']),
@@ -12,9 +14,9 @@ export const coverSchema = z.object({
   poster: z.string().optional(),
   provider: z.enum(['unsplash', 'pexels', 'wikimedia', 'nasa', 'openverse', 'source', 'own']),
   author: nonEmpty,
-  authorUrl: z.string().optional(),
+  authorUrl: webUrl.optional(),
   license: nonEmpty,
-  sourceUrl: z.string().optional(),
+  sourceUrl: webUrl.optional(),
   unsplashDownloadLocation: z.string().optional(),
   wide: z.string().optional(),
   video: z.object({ url: nonEmpty, wide: z.string().optional(), credit: z.string().optional(), source: z.string().optional() }).optional(),
@@ -41,7 +43,7 @@ export const articleSourceSchema = z.object({
   applySteps: localized(z.array(z.string())).optional(),
   summary: z.object(Object.fromEntries(LANGS.map((l) => [l, z.string().optional()]))).optional(),
   glossary: z.object(Object.fromEntries(LANGS.map((l) => [l, z.record(z.string(), z.string()).optional()]))).optional(),
-  references: z.array(z.object({ id: nonEmpty, label: nonEmpty, url: z.string() })).default([]),
+  references: z.array(z.object({ id: nonEmpty, label: nonEmpty, url: webUrl })).default([]),
   cover: coverSchema,
   coverCandidates: z.array(coverSchema).optional(),
   coverClip: z.string().optional(),
@@ -54,7 +56,7 @@ export const articleSourceSchema = z.object({
     license: z.enum(ALLOWED_LICENSES as [string, ...string[]]),
     authors: z.array(nonEmpty).min(1),
     originalTitle: z.string().optional(),
-    originalUrl: z.string().optional(),
+    originalUrl: webUrl.optional(),
     publisher: z.string().optional(),
     changes: z.array(z.string()),
     permission: z.string().optional(),
