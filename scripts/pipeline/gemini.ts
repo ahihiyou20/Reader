@@ -97,7 +97,7 @@ const restingUntil = new Map<string, number>();
 const REST_MS = 10 * 60_000;
 
 /** One request to one model. `retry` means the same model may answer if asked again later. */
-async function callModel(model: string, text: string, jsonSchema: object, temperature: number): Promise<{ ok: true; value: unknown } | { ok: false; retry: boolean; status: number; body: string }> {
+async function callModel(model: string, text: string, jsonSchema: object, temperature: number, images: Buffer[] = []): Promise<{ ok: true; value: unknown } | { ok: false; retry: boolean; status: number; body: string }> {
   await pace();
   used++;
   const schemaField = jsonSchemaRejected ? { responseSchema: toOpenApi(jsonSchema) } : { responseJsonSchema: jsonSchema };
@@ -109,7 +109,7 @@ async function callModel(model: string, text: string, jsonSchema: object, temper
         method: 'POST',
         headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY! },
         body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text }] }],
+          contents: [{ role: 'user', parts: [{ text }, ...images.map((b) => ({ inlineData: { mimeType: 'image/jpeg', data: b.toString('base64') } }))] }],
           generationConfig: { temperature, responseMimeType: 'application/json', ...schemaField },
         }),
       },
@@ -123,7 +123,7 @@ async function callModel(model: string, text: string, jsonSchema: object, temper
     const body = await res.text();
     if (!jsonSchemaRejected && res.status === 400 && /response_?json_?schema/i.test(body)) {
       jsonSchemaRejected = true;
-      return callModel(model, text, jsonSchema, temperature);
+      return callModel(model, text, jsonSchema, temperature, images);
     }
     return { ok: false, retry: res.status >= 500, status: res.status, body };
   }
@@ -142,14 +142,15 @@ async function callModel(model: string, text: string, jsonSchema: object, temper
  * a model out of quota or unusable is skipped for the rest of the run. Quota on every model ends the
  * run (QuotaError); every model unusable is a setup problem (GeminiSetupError).
  */
-async function generate(text: string, jsonSchema: object, temperature: number): Promise<unknown> {
+/** `images` (JPEG) go with the prompt on the API; the agy CLI takes text only, so it answers without them. */
+async function generate(text: string, jsonSchema: object, temperature: number, images: Buffer[] = []): Promise<unknown> {
   if (VIA_AGY) return viaAgy(text, jsonSchema);
   if (!process.env.GEMINI_API_KEY) throw new Error('GEMINI_API_KEY is not set');
   let lastError = '';
   for (const model of [MODEL, ...FALLBACK_MODELS]) {
     if (outOfQuota.has(model) || unusable.has(model) || (restingUntil.get(model) ?? 0) > Date.now()) continue;
     for (let attempt = 0; attempt < 3; attempt++) {
-      const r = await callModel(model, text, jsonSchema, temperature);
+      const r = await callModel(model, text, jsonSchema, temperature, images);
       if (r.ok) return r.value;
       lastError = `Gemini ${model} ${r.status}: ${r.body.slice(0, 300)}`;
       if (r.status === 429) {
@@ -231,16 +232,19 @@ export async function geminiStructured<T>(args: {
   schema: z.ZodType<T>;
   jsonSchema?: object;
   temperature?: number;
+  /** JPEG pictures sent with the prompt (API only). */
+  images?: Buffer[];
 }): Promise<StructuredResult<T>> {
   const { $schema: _drop, ...jsonSchema } = (args.jsonSchema ?? z.toJSONSchema(args.schema)) as Record<string, unknown>;
   const temperature = args.temperature ?? 0.3;
-  const first = await generate(args.prompt, jsonSchema, temperature);
+  const first = await generate(args.prompt, jsonSchema, temperature, args.images);
   const r1 = args.schema.safeParse(first);
   if (r1.success) return { value: r1.data, retried: false, dropped: [] };
   const second = await generate(
     `${args.prompt}\n\nYour previous reply broke these rules. Return the whole JSON again with them fixed:\n${issueList(r1.error.issues)}`,
     jsonSchema,
     temperature,
+    args.images,
   );
   const r2 = args.schema.safeParse(second);
   if (r2.success) return { value: r2.data, retried: true, dropped: [] };

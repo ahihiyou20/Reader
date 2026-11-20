@@ -31,6 +31,16 @@ jobs:
         run: pnpm tsx scripts/pipeline/deploy-check.ts "${{ github.event.before }}" "${{ github.sha }}"
         env:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+      # The Firestore Rules go out before the site, so the app never makes writes the live Rules refuse.
+      # A failure stops the deploy and the current site stays up.
+      - name: Firestore rules
+        if: hashFiles('firestore.rules') != ''
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          printf '%s' "$SA" > "$RUNNER_TEMP/sa.json"
+          GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json" npx -y firebase-tools@15.37.0 deploy --only firestore:rules --project reader-app-512514 --non-interactive
+          rm -f "$RUNNER_TEMP/sa.json"
       # Public Firebase web config (project reader-app-512514); it ships in the JS bundle by design.
       # Repository variables of the same name override these defaults.
       - name: Build
