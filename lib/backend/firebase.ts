@@ -801,8 +801,9 @@ export function createFirebaseBackend(): Backend {
         if (!u.isAnonymous) {
           const mine = await getDocs(query(collectionGroup(db, 'items'), where('uid', '==', uid)));
           const c = new Batcher(db);
-          // Like the unlike pairs above: each counter write reads its comment, 9 pairs per batch.
-          const commentPairs = new Batcher(db, 18);
+          // Like the unlike pairs above: the counter write reads its comment and the delete reads the
+          // counter, before and after, so 5 pairs per batch.
+          const commentPairs = new Batcher(db, 10);
           for (const d of mine.docs) {
             const slug = d.ref.parent.parent?.id;
             if (!deleteComments) c.take().update(d.ref, { displayName: 'Deleted user', photoURL: null });

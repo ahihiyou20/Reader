@@ -260,16 +260,16 @@ describe('comments', () => {
     await assertFails(del.commit());
     await assertSucceeds(deleteDoc(doc(db, 'comments/a1/items/c1')));
   });
-  it('account deletion: 9 comments with their counters fit in one batch', async () => {
+  it('account deletion: 5 comments with their counters fit in one batch', async () => {
     await env.withSecurityRulesDisabled(async (ctx) => {
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 5; i++) {
         await setDoc(doc(ctx.firestore(), `comments/s${i}/items/x${i}`), { ...comment('alice'), createdAt: new Date() });
         await setDoc(doc(ctx.firestore(), `counters/s${i}`), { comments: 1 });
       }
     });
     const db = alice();
     const b = writeBatch(db);
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 5; i++) {
       b.delete(doc(db, `comments/s${i}/items/x${i}`));
       b.set(doc(db, `counters/s${i}`), { comments: increment(-1), lastComment: `x${i}` }, { merge: true });
     }
