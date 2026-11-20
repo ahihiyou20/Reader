@@ -5,7 +5,7 @@ import { translate, type MessageKey, type Vars } from '@/lib/i18n';
 import { prefersReducedMotion, stagger } from '@/lib/motion';
 import { isLandscape, stageOf, STAGES, type Stage } from '@/lib/stage';
 import { withStageTransition } from '@/lib/transition';
-import { useUI } from '@/stores/ui';
+import { tabSwitching, useUI } from '@/stores/ui';
 
 export const useIsoLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect;
 
@@ -53,7 +53,10 @@ export function useHistoryLayer(open: boolean, onClose: () => void) {
     if (!open) return;
     const my = ++layerSeq;
     id.current = my;
-    history.pushState({ ...(history.state ?? {}), readerLayer: my }, '');
+    // A tab switch hands the old tab's history entry to the new one, so Back still leaves the tabs
+    // in one step (and the old tab's `history.back()` cannot land after this push and close it).
+    const handover = tabSwitching() && history.state?.readerLayer;
+    history[handover ? 'replaceState' : 'pushState']({ ...(history.state ?? {}), readerLayer: my }, '');
     const onPop = (e: PopStateEvent) => {
       const top = (e.state?.readerLayer as number | undefined) ?? 0;
       if (top < my && id.current === my) {
@@ -66,7 +69,7 @@ export function useHistoryLayer(open: boolean, onClose: () => void) {
       window.removeEventListener('popstate', onPop);
       if (id.current === my) {
         id.current = null;
-        if (history.state?.readerLayer === my) history.back();
+        if (history.state?.readerLayer === my && !tabSwitching()) history.back();
       }
     };
   }, [open]);

@@ -2,8 +2,8 @@
 # when the feeds fall short, are researched (the page, Wikipedia, Europe PMC, Firecrawl) and written as
 # Pagemoor's own articles of 1,000+ words, with highlights and source chips in every section, all five
 # languages with glossaries, an Unsplash cover in portrait and landscape, and a motion cover cut from a
-# Pixabay video (set the variable GEMINI_MOTION_COVERS to "false" to skip those). At least 20 a day,
-# no upper limit.
+# Pixabay video that Gemini picks (set the variable GEMINI_MOTION_COVERS to "false" to skip those).
+# 5 to 10 a day, so each one gets checked.
 # The articles wait in one rolling pull request from bot/new-articles until it is merged (merging starts
 # finish-articles.yml), or go straight to main when the variable GEMINI_AUTO_PUBLISH is "true".
 # Secrets: GEMINI_API_KEY, UNSPLASH_ACCESS_KEY, PIXABAY_API_KEY, CLOUDINARY_URL (FIRECRAWL_API_KEY
@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       min: { description: 'Articles the report expects at least', required: false, default: '5' }
-      limit: { description: 'Most articles in this run (0: no limit)', required: false, default: '0' }
+      limit: { description: 'Most articles in this run (0: no limit)', required: false, default: '10' }
 permissions:
   contents: write
   pull-requests: write
@@ -93,7 +93,7 @@ jobs:
           FIRECRAWL_MAX_PER_RUN: ${{ vars.FIRECRAWL_MAX_PER_RUN }}
           SITE_URL: ${{ vars.SITE_URL }}
           MIN: ${{ inputs.min || '5' }}
-          LIMIT: ${{ inputs.limit || '0' }}
+          LIMIT: ${{ inputs.limit || '10' }}
         run: pnpm tsx scripts/pipeline/feeds.ts --min "$MIN" --limit "$LIMIT" --minutes 170 --jobs 3 --report "$RUNNER_TEMP/report.md"
       - name: Finish this run's articles
         env:

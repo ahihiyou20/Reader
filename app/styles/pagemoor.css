@@ -1616,3 +1616,23 @@ html[data-stage='compact-landscape'] .audiobar {
   width: min(460px, 52%);
   transform: none;
 }
+
+/* The title of the article that has just come on screen settles into place, line after line, coming
+   into focus as it rises. No fade: the words are readable from the first frame. */
+section.article[data-active='true'] .ctitle > span {
+  animation: title-rise 700ms var(--ease-out) both;
+}
+section.article[data-active='true'] .ctitle > .tb {
+  animation-delay: 70ms;
+}
+@keyframes title-rise {
+  from {
+    transform: translateY(14px);
+    filter: blur(6px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  section.article[data-active='true'] .ctitle > span {
+    animation: none;
+  }
+}

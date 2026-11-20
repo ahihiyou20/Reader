@@ -1,12 +1,14 @@
 'use client';
 // Panels slide in from the right and close back to the right; sheets rise from the bottom.
 // Both track the finger 1:1 when dragged to dismiss and hand the release velocity to the spring.
+// Switching tabs is different: the panels trade places where they stand (switchTab).
 import { MDiv } from '@/components/Motion';
 import { animate, useMotionValue, useTransform, type MotionValue } from 'framer-motion';
 import { X, ChevronLeft } from 'lucide-react';
 import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import { clamp, prefersReducedMotion, project, rubberband, sampleVelocity, spring } from '@/lib/motion';
 import { useHistoryLayer, useT } from '../hooks';
+import { tabSwitching as switching } from '@/stores/ui';
 
 function useDismissDrag(
   mv: MotionValue<number>,
@@ -117,7 +119,10 @@ export function Panel({
   const ref = useRef<HTMLDivElement>(null);
   const width = () => ref.current?.clientWidth ?? 400;
   // The panel fades in as it slides, so it arrives instead of cutting across the screen.
-  const opacity = useTransform(x, (v) => clamp(1 - v / width(), 0, 1));
+  const slid = useTransform(x, (v) => clamp(1 - v / width(), 0, 1));
+  const fade = useMotionValue(1);
+  const scale = useMotionValue(1);
+  const opacity = useTransform([slid, fade], ([a, b]: number[]) => a * b);
   useHistoryLayer(open, onClose);
 
   useEffect(() => {
@@ -126,6 +131,12 @@ export function Panel({
     if (open) {
       if (prefersReducedMotion()) {
         x.set(0);
+      } else if (switching()) {
+        x.set(0);
+        fade.set(0);
+        scale.set(0.96);
+        animate(fade, 1, { duration: 0.22, ease: 'easeOut' });
+        animate(scale, 1, spring.flick);
       } else {
         if (x.get() > w) x.set(w);
         animate(x, 0, spring.default);
@@ -133,6 +144,9 @@ export function Panel({
     } else {
       if (prefersReducedMotion()) {
         unmount();
+      } else if (switching()) {
+        animate(scale, 0.97, spring.default);
+        animate(fade, 0, { duration: 0.16, ease: 'easeOut', onComplete: unmount });
       } else {
         animate(x, w, { ...spring.default, onComplete: unmount });
       }
@@ -173,7 +187,7 @@ export function Panel({
     <MDiv
       ref={setRef}
       className={`panel ${className}`}
-      style={{ x, opacity }}
+      style={{ x, opacity, scale }}
       role="dialog"
       aria-modal="true"
       aria-label={label}

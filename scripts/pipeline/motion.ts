@@ -11,6 +11,8 @@ import path from 'node:path';
 import type { ArticleSource, CoverVideo } from '../../lib/content/types';
 import { ROOT, USER_AGENT, dirs, listJson, readJson, writeJson } from './lib';
 import { hasCloudinary, onCloudinary, uploadVideo } from './cloudinary';
+import { z } from 'zod';
+import { geminiStructured, hasGemini } from './gemini';
 
 const SECONDS = 6;
 const FPS = 24;
@@ -181,8 +183,42 @@ export async function moveClipsOffRepo(): Promise<string[]> {
  * A motion cover without a person choosing: the clip queued in `coverClip`, else the first unused
  * search hit for each query in turn. Returns undefined when nothing fits.
  */
+const searchSchema = z.object({ queries: z.array(z.string().min(2).max(60)).min(1).max(4) });
+const pickSchema = z.object({ id: z.number().int(), why: z.string().max(200) });
+
+/**
+ * Gemini as the picture editor: it names footage that fits the article, then picks one clip from what
+ * Pixabay returns by its tags, or none (id 0) when nothing fits. A wrong clip is worse than a photo.
+ */
+async function geminiClip(a: ArticleSource, hints: string[]): Promise<PixabayClip | undefined> {
+  const about = `Title: ${a.title.en}\nHook: ${a.hook.en}\nTags: ${(a.tags ?? []).join(', ')}`;
+  const { value: s } = await geminiStructured({
+    schema: searchSchema,
+    prompt: `You choose a looping background video for a reading app's article cover.\n${about}\n\nGive up to 4 short Pixabay video search phrases (2 to 4 English words each) for real footage of what the article is about: the place, object or phenomenon itself, filmed, not an abstract concept. Most specific first.${hints.length ? ` An editor suggested: ${hints.join('; ')}.` : ''}`,
+  });
+  const seen = new Set<number>();
+  const pool: PixabayClip[] = [];
+  for (const q of [...(s.queries ?? []), ...hints].slice(0, 5))
+    for (const c of await searchClips(q, 5))
+      if (!seen.has(c.id) && pool.length < 16) {
+        seen.add(c.id);
+        pool.push(c);
+      }
+  if (!pool.length) return undefined;
+  const { value: p } = await geminiStructured({
+    schema: pickSchema,
+    temperature: 0.1,
+    prompt: `${about}\n\nCandidate Pixabay clips (id: tags):\n${pool.map((c) => `${c.id}: ${c.tags}`).join('\n')}\n\nPick the one clip whose tags show what this article is about, so a reader would see the link at a glance. Avoid people's faces, text, logos, cartoons and clips that only fit loosely. If none fits well, answer id 0.`,
+  });
+  return pool.find((c) => c.id === p.id);
+}
+
 export async function autoMotion(a: ArticleSource, queries: string[]): Promise<CoverVideo | undefined> {
   if (a.coverClip) return motionCover(a, await clipById(pixabayId(a.coverClip)));
+  if (hasGemini()) {
+    const clip = await geminiClip(a, queries.filter(Boolean).slice(0, 1));
+    return clip && motionCover(a, clip);
+  }
   for (const q of queries.filter(Boolean)) {
     const [clip] = await searchClips(q, 6);
     if (clip) return motionCover(a, clip);

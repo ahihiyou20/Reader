@@ -10,6 +10,7 @@ import { useUI } from '@/stores/ui';
 import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { useCategoryName } from '../feed/CoverView';
+import { zoomOpen } from './zoom';
 
 /** Ask an image CDN for a smaller file: a card does not need the full-screen cover. */
 export function sized(url: string, w: number, h: number): string {
@@ -90,7 +91,10 @@ export function ArticleCard({
     <button
       className={`card${wide ? ' wide' : ''}`}
       type="button"
-      onClick={onOpen}
+      onClick={(e) => {
+        zoomOpen(e.currentTarget, item.slug);
+        onOpen();
+      }}
       style={{ ['--dominant' as string]: item.cover.dominant, ['--i' as string]: Math.min(index, 16) }}
     >
       {/* The tiny blurred cover shows at once; the photo fades in over it, or never replaces it if it fails. */}
