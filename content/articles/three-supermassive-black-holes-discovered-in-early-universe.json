@@ -76,7 +76,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/x7HJdJZqplo",
     "wide": "https://images.unsplash.com/photo-1452110040644-6751c0c95836?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjIxfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@and_her_eyes_were_wild?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@and_her_eyes_were_wild?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795186610/pagemoor/covers/three-supermassive-black-holes-discovered-in-early-universe-6044.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795186611/pagemoor/covers/three-supermassive-black-holes-discovered-in-early-universe-6044-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-6044/"
+    }
   },
   "origin": {
     "group": 5,

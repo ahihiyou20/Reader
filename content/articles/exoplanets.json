@@ -169,7 +169,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/55xd_uiUYEE",
     "wide": "https://images.unsplash.com/photo-1425036458755-dc303a604201?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjE1fA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@ahmadreza_sajadi?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@ahmadreza_sajadi?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795186533/pagemoor/covers/exoplanets-369563.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795186535/pagemoor/covers/exoplanets-369563-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-369563/"
+    }
   },
   "origin": {
     "group": 1,

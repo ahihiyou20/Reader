@@ -169,7 +169,13 @@
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/bClr95glx6k",
     "wide": "https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?ixid=M3wxMTM0MzIzfDB8MXxhbGx8fHx8fHx8fHwxNzk0NzI5NjAzfA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
-    "authorUrl": "https://unsplash.com/@jogi?utm_source=pagemoor&utm_medium=referral"
+    "authorUrl": "https://unsplash.com/@jogi?utm_source=pagemoor&utm_medium=referral",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795186573/pagemoor/covers/our-restless-sun-2172.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795186574/pagemoor/covers/our-restless-sun-2172-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-2172/"
+    }
   },
   "origin": {
     "group": 1,
