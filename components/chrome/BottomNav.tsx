@@ -1,66 +1,102 @@
 'use client';
 import { MDiv, MNav } from '@/components/Motion';
 import { useTransform } from 'framer-motion';
-import { MessageCircleMore, Plus, Search } from 'lucide-react';
+import { Compass, Home, LibraryBig, MessageCircleMore, Plus, Search } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { needsGoogle } from '@/lib/actions';
 import { clamp } from '@/lib/motion';
+import type { Overlay } from '@/stores/ui';
 import { useUI } from '@/stores/ui';
 import { Indicator } from '@/components/ui/Indicator';
-import { preloadCreate, preloadSearch, preloadSocial } from '../overlays/preload';
-import { useT } from '../hooks';
+import { preloadCreate, preloadExplore, preloadLibrary, preloadSearch, preloadSocial } from '../overlays/preload';
+import { useReducedMotion, useT } from '../hooks';
 import { chromeP } from '../feed/nav';
 
-/** CMP-14: three floating buttons; hidden on Comments & Apply and while the keyboard is open. */
+const TABS: Array<{ id: 'home' | Overlay; cls: string; icon: typeof Home; label: 'home' | 'exploreTitle' | 'search' | 'library' | 'messages'; short: 'tabHome' | 'tabExplore' | 'tabSearch' | 'tabLibrary' | 'tabChats'; preload?: () => unknown }> = [
+  { id: 'home', cls: 'home', icon: Home, label: 'home', short: 'tabHome' },
+  { id: 'explore', cls: 'explore', icon: Compass, label: 'exploreTitle', short: 'tabExplore', preload: preloadExplore },
+  { id: 'search', cls: 'search', icon: Search, label: 'search', short: 'tabSearch', preload: preloadSearch },
+  { id: 'library', cls: 'library', icon: LibraryBig, label: 'library', short: 'tabLibrary', preload: preloadLibrary },
+  { id: 'messages', cls: 'chat', icon: MessageCircleMore, label: 'messages', short: 'tabChats', preload: preloadSocial },
+];
+
+/**
+ * CMP-14: the app's navigation as one liquid-glass bar. Phones: a floating capsule of tabs at the foot
+ * with the + button beside it. Wide screens: the same bar standing upright at the right edge, above the
+ * like/save/share rail. The selected tab carries a lens of brighter glass that slides between tabs.
+ * It leaves on Comments & Apply and while the keyboard is open.
+ */
 export function BottomNav() {
   const t = useT();
-  const openOverlay = useUI((s) => s.openOverlay);
-  const isSearch = useUI((s) => s.overlays.includes('search'));
-  const isChat = useUI((s) => s.overlays.includes('messages'));
-  const y = useTransform(chromeP, (p) => clamp(p - 1, 0, 1) * 140);
-  const plusScale = useTransform(chromeP, (p) => 1 - 0.22 * clamp(p, 0, 1));
+  const top = useUI((s) => s.overlays[s.overlays.length - 1]);
+  const stage = useUI((s) => s.stage);
+  const upright = stage.endsWith('landscape');
+  // Off towards its own edge: down on phones, left or right when the bar stands at a side.
+  const edge = stage === 'compact-landscape' ? -1 : 1;
+  const away = useTransform(chromeP, (p) => clamp(p - 1, 0, 1) * 160 * edge);
+  const plusScale = useTransform(chromeP, (p) => 1 - 0.18 * clamp(p, 0, 1));
   const keyboard = useKeyboardOpen();
+  const still = useReducedMotion();
+  // While reading, the bar folds to icons only and gives the text more room, as iOS tab bars do on scroll.
+  const [mini, setMini] = useState(false);
+  // On Comments & Apply the bar has slid away: hidden, so nothing behind its old place takes a tap.
+  const [gone, setGone] = useState(false);
+  useEffect(
+    () =>
+      chromeP.on('change', (p) => {
+        setMini(p > 0.5);
+        setGone(p > 1.5);
+      }),
+    [],
+  );
+  const go = (id: 'home' | Overlay) => {
+    if (id === 'home') useUI.getState().startFeed({ category: null });
+    // One destination at a time: a tab switches screens, it does not stack them.
+    else useUI.setState({ overlays: [id] });
+  };
+  const offset = keyboard ? 200 * edge : away;
   return (
-    <MNav className="bnav" data-region="dock" style={{ y: keyboard ? 160 : y, viewTransitionName: 'dock' }} aria-label={t('home')}>
-      <button
-        className="nb side search"
-        type="button"
-        aria-label={t('search')}
-        onClick={() => openOverlay('search')}
-        onPointerDown={preloadSearch}
-        onMouseEnter={preloadSearch}
-        onFocus={preloadSearch}
-      >
-        {isSearch && <Indicator layoutId="bnav-dock" />}
-        <Search className="ic" strokeWidth={2.4} aria-hidden="true" />
-      </button>
+    <MNav className="bnav" data-mini={mini || undefined} data-gone={gone || keyboard || undefined} inert={gone || undefined} data-region="dock" style={upright ? { x: offset } : { y: offset }} aria-label={t('menu')}>
+      <div className="gtabs glass">
+        {TABS.map(({ id, cls, icon: Icon, label, short, preload }) => {
+          const on = id === 'home' ? !top : top === id;
+          return (
+            <button
+              key={id}
+              className={`nb tab ${cls}`}
+              type="button"
+              aria-label={t(label)}
+              aria-current={on ? 'page' : undefined}
+              onClick={() => go(id)}
+              onPointerDown={preload}
+              onMouseEnter={preload}
+              onFocus={preload}
+            >
+              {/* The lens slides between tabs; with reduced motion it simply appears on the new one. */}
+              {on && (still ? <span className="indicator lens" aria-hidden="true" /> : <Indicator layoutId="glass-tab" className="lens" />)}
+              <Icon className="ic" strokeWidth={on ? 2.4 : 2} aria-hidden="true" />
+              <span className="lbl" aria-hidden="true">
+                {t(short)}
+              </span>
+            </button>
+          );
+        })}
+      </div>
       <MDiv className="plusw" style={{ scale: plusScale }}>
         <button
           className="nb plus"
           type="button"
           aria-label={t('createTitle')}
           onClick={() => {
-            if (!needsGoogle('create')) openOverlay('create');
+            if (!needsGoogle('create')) useUI.getState().openOverlay('create');
           }}
           onPointerDown={preloadCreate}
           onMouseEnter={preloadCreate}
           onFocus={preloadCreate}
         >
-          <Plus className="ic" strokeWidth={2.8} aria-hidden="true" />
+          <Plus className="ic" strokeWidth={2.6} aria-hidden="true" />
         </button>
       </MDiv>
-      <button
-        className="nb side chat"
-        type="button"
-        aria-label={t('messages')}
-        onClick={() => openOverlay('messages')}
-        onPointerDown={preloadSocial}
-        onMouseEnter={preloadSocial}
-        onFocus={preloadSocial}
-      >
-        {isChat && <Indicator layoutId="bnav-dock" />}
-        <MessageCircleMore className="ic" aria-hidden="true" />
-      </button>
     </MNav>
   );
 }

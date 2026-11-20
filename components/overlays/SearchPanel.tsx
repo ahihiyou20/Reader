@@ -9,7 +9,7 @@ import { markMatches } from '@/lib/search';
 import { useUI } from '@/stores/ui';
 import { useCategoryName } from '../feed/CoverView';
 import { useDebounced, useT } from '../hooks';
-import { coverThumb } from './ArticleCard';
+import { CardMedia } from './ArticleCard';
 import { Panel } from './Layer';
 
 const RECENT = 'reader.recent';
@@ -248,7 +248,7 @@ function ResultItem({ item, q, onOpen }: { item: FeedItem; q: string; onOpen: ()
   return (
     <button className="ritem" type="button" onClick={onOpen}>
       <span className="thumb" style={{ ['--dominant' as string]: item.cover.dominant }}>
-        <img src={coverThumb(item)} alt="" loading="lazy" decoding="async" />
+        <CardMedia item={item} />
       </span>
       <span style={{ minWidth: 0 }}>
         <span className="rtitle">

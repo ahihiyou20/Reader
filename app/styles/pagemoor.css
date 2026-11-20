@@ -697,7 +697,8 @@ html[data-stage='compact-portrait'] .pill.listen {
   border: 1px solid rgba(255, 255, 255, 0.22);
   animation: welcome-rise 800ms var(--ease-out) calc(700ms + var(--d) * 120ms) both;
 }
-.welcome-picks img {
+.welcome-picks img,
+.welcome-picks video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -998,7 +999,8 @@ html[data-stage='compact-portrait'] .welcome-nav .wlink {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   text-align: center !important;
 }
-.wcf-card img {
+.wcf-card img,
+.wcf-card video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1295,7 +1297,8 @@ html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .card.wide .ct
   -webkit-line-clamp: 2;
 }
 @media (hover: hover) {
-  .card img {
+  .card img,
+  .card video {
     transition: transform 600ms var(--ease-out);
   }
   .card:hover img {
@@ -1426,13 +1429,15 @@ html[data-stage='compact-portrait'] .dhead .btitle {
   filter: blur(14px);
   transform: scale(1.15);
 }
-.card img {
+.card img,
+.card video {
   opacity: 0;
   transition:
     opacity 380ms var(--ease-out),
     transform 600ms var(--ease-out);
 }
-.card img.in {
+.card img.in,
+.card video.in {
   opacity: 1;
 }
 /* The Listen pill matches the Details pill beside it on every stage. */
