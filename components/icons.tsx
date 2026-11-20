@@ -146,3 +146,28 @@ export function TopicGlyph({ id, emoji }: { id: string; emoji: string }) {
   const [Icon, color] = t;
   return <Icon className="topic-glyph" size={17} strokeWidth={2.2} color={color} aria-hidden="true" />;
 }
+
+/** A streak freeze: a faceted ice cube, lit from the top left. `empty` draws the slot it fills. */
+export function IceGlyph({ size = 22, className, empty = false }: GlyphProps & { empty?: boolean }) {
+  if (empty)
+    return (
+      <svg className={className} width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="rgba(255,255,255,.22)" strokeWidth="1.4" strokeDasharray="3 2.4" />
+      </svg>
+    );
+  return (
+    <svg className={className} width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+      <defs>
+        <linearGradient id="pm-ice-body" x1="4" y1="3" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#e6f7ff" />
+          <stop offset=".45" stopColor="#8fd3ff" />
+          <stop offset="1" stopColor="#3f8fd8" />
+        </linearGradient>
+      </defs>
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#pm-ice-body)" />
+      <path d="M7 6.5h6.5a1 1 0 0 1 .7 1.7L8.7 13.7A1 1 0 0 1 7 13V7.5a1 1 0 0 1 1-1Z" fill="rgba(255,255,255,.55)" />
+      <path d="M17.2 11.5v4.7a1.8 1.8 0 0 1-1.8 1.8h-4.6" fill="none" stroke="rgba(18,60,110,.35)" strokeWidth="1.3" strokeLinecap="round" />
+      <circle cx="16.4" cy="7.6" r="1.1" fill="#fff" />
+    </svg>
+  );
+}

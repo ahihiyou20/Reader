@@ -206,6 +206,10 @@ export function createLocalBackend(): Backend {
       if (!wasDone) s.profile.articlesRead += 1;
       save();
     },
+    async setStreak(streak) {
+      s.profile.streak = { current: streak.current, longest: streak.longest, lastReadDate: streak.lastReadDate };
+      save();
+    },
     async setApplyDone(slug, done) {
       s.progress[slug] = { ...s.progress[slug], applyDone: done };
       save();
