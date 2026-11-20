@@ -2,7 +2,7 @@
 // and settings follow the reader to another device. The browser copy stays the working copy: reads
 // never wait for the network, and a guest keeps everything locally until they sign in.
 import { getBackend } from '@/lib/backend';
-import { useReading, type Collection, type HistoryEntry, type ReadingSettings, type Signal } from '@/stores/reading';
+import { useReading, type Collection, type Freeze, type HistoryEntry, type ReadingSettings, type Signal } from '@/stores/reading';
 import { useUser } from '@/stores/user';
 
 export interface ReadingData {
@@ -11,6 +11,8 @@ export interface ReadingData {
   history: HistoryEntry[];
   collections: Collection[];
   settings: ReadingSettings;
+  /** Absent in data saved before freezes existed. */
+  freeze?: Freeze;
 }
 
 const HISTORY_MAX = 300;
@@ -45,13 +47,15 @@ export function mergeReading(local: ReadingData, remote: ReadingData): ReadingDa
     collections: [...collections.values()],
     // Settings are per reader, not per device: the account's choice applies everywhere.
     settings: { ...local.settings, ...remote.settings, voice: { ...local.settings.voice, ...remote.settings.voice } },
+    // Freezes are spent and claimed as events, so the newer copy is the true one.
+    freeze: (remote.freeze?.at ?? 0) > (local.freeze?.at ?? 0) ? remote.freeze : local.freeze,
   };
 }
 
 const snapshot = (): ReadingData => {
-  const { topics, signals, history, collections, settings } = useReading.getState();
+  const { topics, signals, history, collections, settings, freeze } = useReading.getState();
   // Firestore refuses `undefined`; a JSON round trip drops it.
-  return JSON.parse(JSON.stringify({ topics, signals, history, collections, settings })) as ReadingData;
+  return JSON.parse(JSON.stringify({ topics, signals, history, collections, settings, freeze })) as ReadingData;
 };
 
 const SAVE_DELAY_MS = 4000;

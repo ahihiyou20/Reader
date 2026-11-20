@@ -14,6 +14,7 @@ import { KeyHints } from './chrome/KeyHints';
 import { LangMenu } from './chrome/LangMenu';
 import { SideNav } from './chrome/SideNav';
 import { Toast } from './chrome/Toast';
+import { FreezeClaim } from './chrome/FreezeClaim';
 import { TopBar } from './chrome/TopBar';
 import { Feed } from './feed/Feed';
 import { Poster, type PosterProps } from './feed/Poster';
@@ -294,6 +295,7 @@ function Shell({
             <LangMenu />
             <Sheets />
             <Toast />
+            <FreezeClaim />
             <AudioBar />
           </>
         )}

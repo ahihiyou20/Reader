@@ -647,6 +647,13 @@ export function createFirebaseBackend(): Backend {
       });
     },
 
+    async setStreak(streak) {
+      const u = me();
+      await updateDoc(userRef(u.uid), { streak: { current: streak.current, longest: streak.longest, lastReadDate: streak.lastReadDate } }).catch((e) => {
+        throw mapError(e);
+      });
+    },
+
     async setApplyDone(slug, done) {
       const u = me();
       await setDoc(sub(u.uid, 'progress', slug), { applyDone: done }, { merge: true }).catch((e) => {

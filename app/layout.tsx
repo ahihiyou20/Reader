@@ -9,6 +9,7 @@ import './styles/stage-compact-landscape.css';
 import './styles/stage-regular-portrait.css';
 import './styles/stage-regular-landscape.css';
 import './styles/pagemoor.css';
+import './styles/profile.css';
 
 // Fonts are kept in the repository (app/fonts: the Google Fonts files cut to Latin and Vietnamese)
 // instead of fetched from Google Fonts at build time, which failed the deploy whenever Google answered

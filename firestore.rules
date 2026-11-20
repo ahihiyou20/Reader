@@ -111,12 +111,15 @@ service cloud.firestore {
       match /reading/{id} {
         allow read, delete: if isMe(uid);
         allow create, update: if isMe(uid) && id == 'state'
-          && request.resource.data.keys().hasOnly(['topics', 'signals', 'history', 'collections', 'settings', 'updatedAt'])
+          && request.resource.data.keys().hasOnly(['topics', 'signals', 'history', 'collections', 'settings', 'freeze', 'updatedAt'])
           && request.resource.data.topics is list && request.resource.data.topics.size() <= 50
           && request.resource.data.signals is map && request.resource.data.signals.size() <= 50
           && request.resource.data.history is list && request.resource.data.history.size() <= 300
           && request.resource.data.collections is list && request.resource.data.collections.size() <= 100
-          && request.resource.data.settings is map;
+          && request.resource.data.settings is map
+          && (!('freeze' in request.resource.data) || (request.resource.data.freeze is map
+            && request.resource.data.freeze.count is int && request.resource.data.freeze.count >= 0 && request.resource.data.freeze.count <= 2
+            && request.resource.data.freeze.covered is list && request.resource.data.freeze.covered.size() <= 60));
       }
       match /commentLikes/{key} {
         allow read: if isMe(uid);
