@@ -1,0 +1,244 @@
+{
+  "slug": "data-centers-drive-distant-air-pollution-and-health-risks",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=data-centers-drive-distant-air-pollution-and-health-risks",
+  "category": "society",
+  "tags": [
+    "data centers",
+    "air pollution",
+    "public health",
+    "energy grid"
+  ],
+  "title": {
+    "en": "Data centers drive distant air pollution and health risks",
+    "vi": "Trung tâm dữ liệu gây ô nhiễm không khí và rủi ro sức khỏe ở xa",
+    "fr": "Les centres de données provoquent pollution de l'air et risques sanitaires à distance",
+    "de": "Rechenzentren verursachen ferne Luftverschmutzung und Gesundheitsrisiken",
+    "es": "Los centros de datos impulsan la contaminación del aire distante y riesgos para la salud"
+  },
+  "hook": {
+    "en": "Artificial intelligence infrastructure creates hidden health hazards far beyond its physical locations. A new study links power demands from server facilities to premature deaths across distant states through interconnected electrical networks. [p:Researchers trace how regional energy use generates airborne toxins]{source}.",
+    "vi": "Cơ sở hạ tầng trí tuệ nhân tạo tạo ra các mối nguy hại sức khỏe ẩn giấu ở xa các vị trí đặt máy chủ. Một nghiên cứu mới liên kết nhu cầu điện năng từ các cơ sở máy chủ với các ca tử vong sớm trên các tiểu bang xa xôi thông qua các mạng lưới điện kết nối. [p:Các nhà nghiên cứu truy vết cách năng lượng khu vực sinh ra các độc tố trong không khí]{source}.",
+    "fr": "L'infrastructure de l'intelligence artificielle engendre des dangers sanitaires cachés bien au-delà de ses emplacements physiques. Une nouvelle étude relie les demandes énergétiques des installations de serveurs à des décès prématurés dans des États lointains via des réseaux électriques interconnectés. [p:Les chercheurs retracent comment la consommation énergétique régionale génère des toxines aéroportées]{source}.",
+    "de": "Die Infrastruktur für künstliche Intelligenz erzeugt versteckte Gesundheitsgefahren weit über ihre physischen Standorte hinaus. Eine neue Studie bringt den Strombedarf von Serveranlagen über vernetzte Stromnetze mit vorzeitigen Todesfällen in entfernten Bundesstaaten in Verbindung. [p:Forscher verfolgen, wie regionaler Energieverbrauch luftgetragene Toxine erzeugt]{source}.",
+    "es": "La infraestructura de inteligencia artificial genera peligros ocultos para la salud mucho más allá de sus ubicaciones físicas. Un nuevo estudio vincula las demandas de energía de las instalaciones de servidores con muertes prematuras en estados distantes a través de redes eléctricas interconectadas. [p:Los investigadores rastrean cómo el uso regional de energía genera toxinas en el aire]{source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Widespread Mortality Impacts",
+      "heading_vi": "Tác động tử vong rộng khắp",
+      "body_en": "Electricity consumption by server complexes in 2023 caused an estimated [p:650 premature deaths] nationwide. Midwestern states experienced the highest per capita mortality rates despite heavy energy usage concentrating in Virginia and Texas.",
+      "body_vi": "Mức tiêu thụ điện của các tổ hợp máy chủ vào năm 2023 gây ra ước tính [p:650 ca tử vong sớm] trên toàn quốc. Các tiểu bang miền Trung Tây ghi nhận tỷ lệ tử vong bình quân đầu người cao nhất dù việc sử dụng năng lượng tập trung nhiều ở Virginia và Texas.",
+      "heading_fr": "Impacts de mortalité généralisés",
+      "body_fr": "La consommation d'électricité des complexes de serveurs en 2023 a causé environ [p:650 décès prématurés] à l'échelle nationale. Les États du Midwest ont enregistré les taux de mortalité par habitant les plus élevés, malgré une forte concentration de la consommation énergétique en Virginie et au Texas.",
+      "heading_de": "Weitreichende Sterblichkeitsfolgen",
+      "body_de": "Der Stromverbrauch von Serverkomplexen verursachte 2023 landesweit schätzungsweise [p:650 vorzeitige Todesfälle]. Die Bundesstaaten im Mittleren Westen verzeichneten die höchsten Sterblichkeitsraten pro Kopf, obwohl sich der Energieverbrauch stark auf Virginia und Texas konzentriert.",
+      "heading_es": "Impactos generalizados de mortalidad",
+      "body_es": "El consumo de electricidad de los complejos de servidores en 2023 causó un estimado de [p:650 muertes prematuras] a nivel nacional. Los estados del Medio Oeste experimentaron las tasas de mortalidad per cápita más altas, a pesar de que el uso intensivo de energía se concentra en Virginia y Texas."
+    },
+    {
+      "heading_en": "Grid Propagation and Emissions",
+      "heading_vi": "Sự lan truyền qua lưới điện và phát thải",
+      "body_en": "Investigators built a system model to track how power demands travel across the national grid. Responding generators, primarily natural gas and coal facilities, release nitrogen oxides and sulfur dioxide that transform into fine particulate matter and smog.",
+      "body_vi": "Các nhà điều tra đã xây dựng một mô hình hệ thống để theo dõi cách nhu cầu điện năng di chuyển qua lưới điện quốc gia. Các nhà máy phát điện phản hồi, chủ yếu là cơ sở khí tự nhiên và than đá, thải ra các oxit nitơ và sulfur dioxide chuyển hóa thành hạt vật chất mịn (*fine particulate matter*) và khói mù (*smog*).",
+      "heading_fr": "Propagation sur le réseau et émissions",
+      "body_fr": "Les enquêteurs ont conçu un modèle de système pour suivre la manière dont les demandes d'énergie se propagent sur le réseau national. Les générateurs sollicités, principalement des installations fonctionnant au gaz naturel et au charbon, libèrent des oxydes d'azote et du dioxyde de soufre qui se transforment en particules fines et en smog.",
+      "heading_de": "Netzfortleitung und Emissionen",
+      "body_de": "Wissenschaftler entwickelten ein Systemmodell, um zu verfolgen, wie sich der Strombedarf im nationalen Netz ausbreitet. Reagierende Kraftwerke, hauptsächlich Erdgas- und Kohleanlagen, setzen Stickoxide und Schwefeldioxid frei, die sich in Feinstaub und Smog umwandeln.",
+      "heading_es": "Propagación de la red y emisiones",
+      "body_es": "Los investigadores construyeron un modelo de sistema para rastrear cómo las demandas de energía viajan a través de la red nacional. Los generadores de respuesta, principalmente instalaciones de gas natural y carbón, liberan óxidos de nitrógeno y dióxido de azufre que se transforman en partículas finas y smog."
+    },
+    {
+      "heading_en": "Geographic Mismatch",
+      "heading_vi": "Sự lệch pha địa lý",
+      "body_en": "Energy pulled by servers in Virginia often triggers older Ohio Valley coal plants to ramp up production. Atmospheric conditions and agricultural ammonia in downwind agricultural states further accelerate particulate formation in rural areas.",
+      "body_vi": "Năng lượng được kéo bởi các máy chủ ở Virginia thường kích hoạt các nhà máy than cũ ở Thung lũng Ohio gia tăng sản xuất. Các điều kiện khí quyển và amoniac nông nghiệp ở các tiểu bang nông nghiệp phía hạ phong tiếp tục đẩy nhanh sự hình thành hạt vật chất ở vùng nông thôn.",
+      "heading_fr": "Désajustement géographique",
+      "body_fr": "L'énergie appelée par les serveurs en Virginie pousse souvent des centrales au charbon plus anciennes de la vallée de l'Ohio à intensifier leur production. Les conditions atmosphériques et l'ammoniac agricole dans les États sous le vent accélèrent encore la formation de particules dans les zones rurales.",
+      "heading_de": "Geografisches Ungleichgewicht",
+      "body_de": "Die von Servern in Virginia abgerufene Energie veranlasst oft ältere Kohlekraftwerke im Ohio-Tal dazu, ihre Produktion hochzufahren. Atmosphärische Bedingungen und landwirtschaftliches Ammoniak in abgewandten Agrarregionen beschleunigen die Partikelbildung in ländlichen Gebieten zusätzlich.",
+      "heading_es": "Desajuste geográfico",
+      "body_es": "La energía demandada por los servidores en Virginia a menudo hace que las plantas de carbón más antiguas del valle de Ohio aumenten su producción. Las condiciones atmosféricas y el amoníaco agrícola en los estados agrícolas a sotavento aceleran aún más la formación de partículas en áreas rurales."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1611270418597-a6c77f4b7271?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1611270418597-a6c77f4b7271?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Chris LeBoutillier",
+    "authorUrl": "https://unsplash.com/@chrisleboutillier?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/c7RWVGL8lPA",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/c7RWVGL8lPA/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Adam Zewe | MIT News"
+    ],
+    "originalTitle": "Study reveals data centers’ long-distance damage to air quality",
+    "originalUrl": "https://news.mit.edu/2026/study-reveals-data-centers-long-distance-damage-air-quality-1119",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review local energy sources supporting digital infrastructure.",
+      "Examine regional air quality reports regarding distant emissions.",
+      "Incorporate public health metrics into digital facility planning."
+    ],
+    "vi": [
+      "Xem xét các nguồn năng lượng địa phương hỗ trợ cơ sở hạ tầng kỹ thuật số.",
+      "Kiểm tra các báo cáo chất lượng không khí khu vực liên quan đến lượng phát thải từ xa.",
+      "Kết hợp các chỉ số sức khỏe cộng đồng vào việc lập kế hoạch cơ sở kỹ thuật số."
+    ],
+    "fr": [
+      "Examiner les sources d'énergie locales soutenant l'infrastructure numérique.",
+      "Analyser les rapports régionaux sur la qualité de l'air concernant les émissions lointaines.",
+      "Intégrer les mesures de santé publique dans la planification des installations numériques."
+    ],
+    "de": [
+      "Überprüfe lokale Energiequellen, die digitale Infrastrukturen unterstützen.",
+      "Untersuche regionale Berichte zur Luftqualität hinsichtlich entfernter Emissionen.",
+      "Integriere Metriken zur öffentlichen Gesundheit in die Planung digitaler Einrichtungen."
+    ],
+    "es": [
+      "Revisar las fuentes de energía locales que respaldan la infraestructura digital.",
+      "Examinar los informes regionales de calidad del aire sobre emisiones distantes.",
+      "Incorporar métricas de salud pública en la planificación de instalaciones digitales."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1611270418597-a6c77f4b7271?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1611270418597-a6c77f4b7271?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Chris LeBoutillier",
+      "authorUrl": "https://unsplash.com/@chrisleboutillier?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/c7RWVGL8lPA",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/c7RWVGL8lPA/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1564608938148-e3c5325907ee?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1564608938148-e3c5325907ee?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Thijs Stoop",
+      "authorUrl": "https://unsplash.com/@thijsstoop?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/A_AQxGz9z5I",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/A_AQxGz9z5I/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1554110527-5bbdb0fbf249?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1554110527-5bbdb0fbf249?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Octavian Catană",
+      "authorUrl": "https://unsplash.com/@iisus_d_costea?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/dwxemkUW_us",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/dwxemkUW_us/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1569410593054-c37f3c20c52d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1569410593054-c37f3c20c52d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Jan Antonin Kolar",
+      "authorUrl": "https://unsplash.com/@jankolar?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Px1DLXKhzNc",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Px1DLXKhzNc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8RGF0YSUyMGNlbnRlcnMlMjBkcml2ZSUyMGRpc3RhbnQlMjBhaXIlMjBwb2xsdXRpb24lMjBhbmQlMjBoZWFsdGglMjByaXNrcyUyMHNvY2lldHl8ZW58MXwxfHx8MTc5NTE0ODIwM3ww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdL1yrgAyQQay/SlnD6ogITAD+7tx6Sa/FMIaZr3kVX8sM7WetUmMenuObTkroRRxHgGJ7Tnx+/EosZFtTtsD/W+agGIA4bGicSNdU4LVdM0ypunLIpZ5DZ+hrVipaxOnDu3UBouVIGqEsoJly+mUDbQZgDI99N0jICgHW2s4iFbXbKWFuOCQJNMnB/WOQAA==",
+  "dominant": "#3b2a15",
+  "glossary": {
+    "en": {
+      "artificial intelligence": "Computer systems designed to perform tasks requiring human intelligence.",
+      "server facilities": "Large buildings housing computer servers for data processing and storage.",
+      "premature deaths": "Deaths that occur before the average expected age.",
+      "per capita": "Calculated or distributed per person.",
+      "nitrogen oxides": "Gases produced from combustion that contribute to air pollution.",
+      "sulfur dioxide": "A toxic gas released by burning fossil fuels like coal.",
+      "particulate matter": "Tiny solid or liquid particles suspended in the air.",
+      "smog": "Fog or haze combined with atmospheric pollutants.",
+      "ohio valley": "A geographical region surrounding the Ohio River in the United States.",
+      "agricultural ammonia": "Ammonia compounds commonly used or produced in farming activities."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Công nghệ mô phỏng trí thông minh con người trên máy móc",
+      "tử vong sớm": "Cái chết xảy ra trước tuổi thọ trung bình do tác nhân môi trường",
+      "miền trung tây": "Khu vực địa lý ở Hoa Kỳ chịu ảnh hưởng ô nhiễm nặng",
+      "khí tự nhiên": "Nguồn nhiên liệu hóa thạch dùng để phát điện",
+      "than đá": "Nhiên liệu hóa thạch gây phát thải lớn khi đốt cháy",
+      "oxit nitơ": "Chất ô nhiễm không khí phát sinh từ quá trình đốt cháy",
+      "sulfur dioxide": "Khí độc hại góp phần hình thành hạt vật chất mịn",
+      "hạt vật chất mịn": "Bụi mịn lơ lửng trong không khí gây hại đường hô hấp",
+      "khói mù": "Hiện tượng ô nhiễm không khí tạo ra lớp sương độc",
+      "thung lũng ohio": "Khu vực đặt các nhà máy phát điện cũ gia tăng sản xuất"
+    },
+    "fr": {
+      "intelligence artificielle": "Technologie simulant l'intelligence humaine pour effectuer des tâches complexes.",
+      "oxydes d'azote": "Gaz polluants émis par la combustion contribuant à la formation de smog.",
+      "dioxyde de soufre": "Gaz irritant libéré par la combustion de combustibles fossiles.",
+      "particules fines": "Polluants microscopiques en suspension dans l'air nocifs pour la santé.",
+      "smog": "Brouillard polluant formé par le mélange de fumée et de particules.",
+      "réseau national": "Système interconnecté de production et de distribution d'électricité.",
+      "centrales au charbon": "Installations industrielles produisant de l'électricité à partir de charbon.",
+      "ammoniac agricole": "Composé chimique issu de l'agriculture favorisant la formation de particules."
+    },
+    "de": {
+      "serverkomplexen": "Großanlagen zur Datenverarbeitung mit hohem Strombedarf.",
+      "stickoxide": "Umweltschädliche Gase aus Verbrennungsprozessen.",
+      "schwefeldioxid": "Ein stechend riechendes Gas, das zur Luftverschmutzung beiträgt.",
+      "feinstaub": "Winzige Schwebeteilchen in der Luft, die gesundheitsschädlich sind.",
+      "smog": "Durch Luftverschmutzung verursachter Nebel.",
+      "ammoniak": "Eine chemische Verbindung, die in der Landwirtschaft vorkommt.",
+      "metriken": "Messwerte zur Quantifizierung bestimmter Eigenschaften.",
+      "infrastruktur": "Die zugrundeliegende technische und organisatorische Struktur."
+    },
+    "es": {
+      "inteligencia artificial": "Tecnología que simula la inteligencia humana en máquinas.",
+      "instalaciones de servidores": "Edificios que albergan computadoras potentes para procesar datos.",
+      "redes eléctricas": "Sistema interconectado para suministrar electricidad a gran escala.",
+      "muertes prematuras": "Fallecimientos que ocurren antes de la esperanza de vida normal.",
+      "gas natural": "Combustible fósil utilizado para generar energía.",
+      "carbón": "Combustible fósil sólido altamente contaminante.",
+      "óxidos de nitrógeno": "Gases contaminantes emitidos por la combustión.",
+      "dióxido de azufre": "Gas tóxico derivado de la quema de combustibles fósiles.",
+      "partículas finas": "Pequeños contaminantes en el aire dañinos para los pulmones.",
+      "smog": "Niebla tóxica formada por contaminación atmosférica.",
+      "amoníaco agrícola": "Compuesto químico liberado en actividades agropecuarias."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:28:08.899Z"
+}

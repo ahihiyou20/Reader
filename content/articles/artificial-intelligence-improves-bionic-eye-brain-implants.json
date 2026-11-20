@@ -1,0 +1,240 @@
+{
+  "slug": "artificial-intelligence-improves-bionic-eye-brain-implants",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=artificial-intelligence-improves-bionic-eye-brain-implants",
+  "category": "technology",
+  "tags": [
+    "bionic eye",
+    "artificial intelligence",
+    "visual prosthesis",
+    "brain implant"
+  ],
+  "title": {
+    "en": "Artificial Intelligence Improves Bionic Eye Brain Implants",
+    "vi": "Trí tuệ nhân tạo cải thiện cấy ghép não mắt sinh học",
+    "fr": "L'intelligence artificielle améliore les implants cérébraux pour œil bionique",
+    "de": "Künstliche Intelligenz verbessert Hirnimplantate für bionische Augen",
+    "es": "La inteligencia artificial mejora los implantes cerebrales para ojos biónicos"
+  },
+  "hook": {
+    "en": "Researchers have demonstrated that artificial intelligence can improve how precisely an experimental visual prosthesis stimulates the brain and predicts visual perceptions {source}. This breakthrough may help overcome one of the biggest challenges in restoring vision to people who are blind by making brain implants more reliable.",
+    "vi": "Các nhà nghiên cứu đã chứng minh rằng trí tuệ nhân tạo có thể cải thiện độ chính xác của các thiết bị giả thị giác (*visual prosthesis*) thử nghiệm khi kích thích não bộ và dự đoán trải nghiệm thị giác {source}. Bước đột phá này có thể giúp vượt qua một trong những thử thách lớn nhất trong việc khôi phục thị lực cho người mù.",
+    "fr": "Des chercheurs ont démontré que l'intelligence artificielle peut améliorer la précision avec laquelle une prothèse visuelle expérimentale stimule le cerveau et prédit les perceptions visuelles {source}. Cette avancée pourrait aider à surmonter l'un des plus grands défis de la restauration de la vision chez les personnes aveugles en rendant les implants cérébraux plus fiables.",
+    "de": "Forscher haben gezeigt, dass künstliche Intelligenz die Präzision verbessern kann, mit der eine experimentelle Sehhilfe das Gehirn stimuliert und visuelle Wahrnehmungen vorhersagt {source}. Dieser Durchbruch könnte helfen, eine der größten Herausforderungen bei der Wiederherstellung des Sehvermögens von blinden Menschen zu bewältigen, indem Hirnimplantate zuverlässiger werden.",
+    "es": "Unos investigadores han demostrado que la inteligencia artificial puede mejorar la precisión con la que una prótesis visual experimental estimula el cerebro y predice las percepciones visuales {source}. Este avance puede ayudar a superar uno de los mayores desafíos para restaurar la visión en personas ciegas al hacer que los implantes cerebrales sean más confiables."
+  },
+  "sections": [
+    {
+      "heading_en": "Testing Implants in Spain",
+      "heading_vi": "Thử nghiệm thiết bị tại Tây Ban Nha",
+      "body_en": "In 2024, researchers from the Bionic Vision Lab at UC Santa Barbara traveled to Hospital IMED Elche in Spain. They worked with a twenty-seven-year-old man who became blind after a traumatic brain injury and received an implant with ninety-six electrodes in his visual cortex.",
+      "body_vi": "Vào năm 2024, các nhà nghiên cứu từ Phòng thí nghiệm Thị giác Sinh học tại Đại học California tại Santa Barbara đã tới Bệnh viện IMED Elche ở Tây Ban Nha. Họ làm việc cùng một người đàn ông hai mươi bảy tuổi bị mù sau chấn thương sọ não, người được cấy thiết bị gồm chín mươi sáu điện cực (*electrode*) vào vỏ não thị giác (*visual cortex*).",
+      "heading_fr": "Tests d'implants en Espagne",
+      "body_fr": "En 2024, des chercheurs du laboratoire de vision bionique de l'UC Santa Barbara se sont rendus à l'hôpital IMED Elche en Espagne. Ils ont collaboré avec un homme de vingt-sept ans devenu aveugle à la suite d'un traumatisme crânien, qui a reçu un implant doté de quatre-vingt-seize électrodes dans son cortex visuel.",
+      "heading_de": "Tests von Implantaten in Spanien",
+      "body_de": "Im Jahr 2024 reisten Forscher des Bionic Vision Lab der UC Santa Barbara an das Hospital IMED Elche in Spanien. Sie arbeiteten mit einem siebenundzwanzigjährigen Mann zusammen, der nach einer traumatischen Hirnverletzung erblindet war und ein Implantat mit sechsundneunzig Elektroden in seiner Sehrinde erhalten hatte.",
+      "heading_es": "Pruebas de implantes en España",
+      "body_es": "En 2024, investigadores del Bionic Vision Lab de la Universidad de California en Santa Bárbara viajaron al Hospital IMED Elche en España. Trabajaron con un hombre de veintisiete años que quedó ciego tras una lesión cerebral traumática y recibió un implante con noventa y seis electrodos en su corteza visual."
+    },
+    {
+      "heading_en": "Training Neural Networks",
+      "heading_vi": "Đào tạo mạng lưới thần kinh",
+      "body_en": "The team trained a deep neural network to predict how the visual cortex would respond to different electrical settings. This model considered the brain activity immediately before stimulation, helping researchers identify signals that produced specific patterns.",
+      "body_vi": "Nhóm nghiên cứu đã đào tạo một mạng lưới thần kinh sâu (*deep neural network*) để dự đoán phản ứng của vỏ não thị giác trước các cài đặt điện khác nhau. Mô hình này xem xét hoạt động não bộ ngay trước khi kích thích, giúp họ xác định các tín hiệu tạo ra những mẫu cụ thể.",
+      "heading_fr": "Entraînement de réseaux de neurones",
+      "body_fr": "L'équipe a entraîné un réseau de neurones profonds pour prédire comment le cortex visuel réagirait à différents réglages électriques. Ce modèle a pris en compte l'activité cérébrale immédiatement avant la stimulation, aidant les chercheurs à identifier les signaux produisant des motifs spécifiques.",
+      "heading_de": "Training von neuronalen Netzen",
+      "body_de": "Das Team trainierte ein tiefes neuronales Netz, um vorherzusagen, wie die Sehrinde auf verschiedene elektrische Einstellungen reagieren würde. Dieses Modell berücksichtigte die Hirnaktivität unmittelbar vor der Stimulation und half Forschern dabei, Signale zu identifizieren, die bestimmte Muster erzeugten.",
+      "heading_es": "Entrenamiento de redes neuronales",
+      "body_es": "El equipo entrenó una red neuronal profunda para predecir cómo respondería la corteza visual a diferentes configuraciones eléctricas. Este modelo consideró la actividad cerebral inmediatamente anterior a la estimulación, lo que ayudó a los investigadores a identificar señales que producían patrones específicos."
+    },
+    {
+      "heading_en": "Precise Brain Responses",
+      "heading_vi": "Phản ứng não bộ chính xác",
+      "body_en": "When tested, the artificial intelligence approach generated intended neural activity more accurately while requiring less electrical current. Recorded brain patterns proved to be better predictors of what the participant perceived than the stimulation settings alone.",
+      "body_vi": "Khi thử nghiệm, phương pháp trí tuệ nhân tạo tạo ra hoạt động thần kinh mong muốn chính xác hơn nhưng lại tiêu tốn ít dòng điện hơn. Các mẫu hoạt động não được ghi nhận cho thấy khả năng dự đoán nhận thức của người tham gia tốt hơn so với chỉ dựa vào cài đặt kích thích.",
+      "heading_fr": "Réponses cérébrales précises",
+      "body_fr": "Lors des tests, l'approche par intelligence artificielle a généré l'activité neurale voulue avec plus de précision tout en nécessitant moins de courant électrique. Les schémas cérébraux enregistrés se sont avérés être de meilleurs prédicteurs de ce que le participant percevait que les seuls paramètres de stimulation.",
+      "heading_de": "Präzise Gehirnreaktionen",
+      "body_de": "Beim Testen erzeugte der Ansatz der künstlichen Intelligenz die gewünschte neuronale Aktivität genauer und erforderte gleichzeitig weniger elektrischen Strom. Aufgezeichnete Gehirnmuster erwiesen sich als bessere Vorhersagen für das, was der Teilnehmer wahrnahm, als die Stimulationseinstellungen allein.",
+      "heading_es": "Respuestas cerebrales precisas",
+      "body_es": "Al realizar las pruebas, el enfoque de inteligencia artificial generó la actividad neural deseada con mayor precisión y requirió menos corriente eléctrica. Los patrones cerebrales registrados demostraron ser mejores predictores de lo que el participante percibía que las configuraciones de estimulación por sí solas."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261110042553.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1503500684848-e0b13e4781eb?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1503500684848-e0b13e4781eb?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Hannah Gibbs",
+    "authorUrl": "https://unsplash.com/@hannahmgibbs?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/xIZLNnxVqoc",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/xIZLNnxVqoc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "AI-powered bionic eye breakthrough could help the blind see again",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261110042553.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review the article about bionic eye research and artificial intelligence.",
+      "Identify how deep learning models help interpret brain signals.",
+      "Discuss the potential benefits of personalized medical implants."
+    ],
+    "vi": [
+      "Xem lại bài viết về nghiên cứu mắt sinh học và trí tuệ nhân tạo.",
+      "Xác định cách các mô hình học sâu hỗ trợ diễn giải tín hiệu não.",
+      "Thảo luận về những lợi ích tiềm năng của thiết bị y tế cá nhân hóa."
+    ],
+    "fr": [
+      "Examiner l'article sur la recherche sur les yeux bioniques et l'intelligence artificielle.",
+      "Identifier comment les modèles d'apprentissage profond aident à interpréter les signaux cérébraux.",
+      "Discuter des avantages potentiels des implants médicaux personnalisés."
+    ],
+    "de": [
+      "Lies den Artikel über die Forschung zu bionischen Augen und künstlicher Intelligenz.",
+      "Erkenne, wie Deep-Learning-Modelle helfen, Gehirnsignale zu interpretieren.",
+      "Diskutiere die potenziellen Vorteile personalisierter medizinischer Implantate."
+    ],
+    "es": [
+      "Revisa el artículo sobre la investigación de ojos biónicos y la inteligencia artificial.",
+      "Identifica cómo los modelos de aprendizaje profundo ayudan a interpretar las señales cerebrales.",
+      "Discute los beneficios potenciales de los implantes médicos personalizados."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1503500684848-e0b13e4781eb?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1503500684848-e0b13e4781eb?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Hannah Gibbs",
+      "authorUrl": "https://unsplash.com/@hannahmgibbs?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/xIZLNnxVqoc",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/xIZLNnxVqoc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1592401521348-9f238fd24a23?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1592401521348-9f238fd24a23?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Beel coor",
+      "authorUrl": "https://unsplash.com/@beelcoor?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/1AIHIjtuNCI",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/1AIHIjtuNCI/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1761857352384-aaae23a714a4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1761857352384-aaae23a714a4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Resource Database",
+      "authorUrl": "https://unsplash.com/@resourcedatabase?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OobcCeOAH1k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/OobcCeOAH1k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZSUyMEltcHJvdmVzJTIwQmlvbmljJTIwRXllJTIwQnJhaW4lMjBJbXBsYW50cyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0ODAzN3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1714939926476-3a24d04197bb?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTJ8fEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBJbXByb3ZlcyUyMEJpb25pYyUyMEV5ZSUyMEJyYWluJTIwSW1wbGFudHMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDgwMzd8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1714939926476-3a24d04197bb?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTJ8fEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBJbXByb3ZlcyUyMEJpb25pYyUyMEV5ZSUyMEJyYWluJTIwSW1wbGFudHMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDgwMzd8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Europeana",
+      "authorUrl": "https://unsplash.com/@europeana?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/0D3WFE7TAxE",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/0D3WFE7TAxE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTJ8fEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBJbXByb3ZlcyUyMEJpb25pYyUyMEV5ZSUyMEJyYWluJTIwSW1wbGFudHMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDgwMzd8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JQAB8P0Xvtn0iCCsqxgDXT8+cAAD2cpJ1n+vtNZ4SgXbyh8OBNR56Q945JDh1N2Oby3os/b2n9PMCWu3KX9cs6ThfJ3V3833pzUxJxfnbftT42DXhsJs9QikL+VG1BKMjbzStluGg7L/v/i1OsfqMQxmR9jBbewutpNVju2L/wwaA90eGjPdPVR/H+cGnrhv6UGWxIBFeZbP7FaRFhcAA",
+  "dominant": "#3b3b33",
+  "glossary": {
+    "en": {
+      "artificial intelligence": "Computer systems designed to perform tasks that typically require human intelligence.",
+      "bionic eye": "An experimental electronic device intended to restore functional vision.",
+      "visual prosthesis": "An artificial device implanted to replace lost visual function.",
+      "electrodes": "Small conductors used to pass electrical current into tissue.",
+      "visual cortex": "The part of the brain that processes visual information.",
+      "deep neural network": "A multi-layered computer model inspired by the human brain.",
+      "electrical current": "A flow of electric charge through a medium.",
+      "neural activity": "Electrical and chemical signals passing between brain cells."
+    },
+    "vi": {
+      "thiết bị giả thị giác": "Thiết bị hỗ trợ khôi phục thị lực cho người khiếm thị.",
+      "visual prosthesis": "Thuật ngữ tiếng Anh chỉ thiết bị giả thị giác.",
+      "điện cực": "Bộ phận dẫn điện dùng để kích thích hoặc đo lường tín hiệu não.",
+      "electrode": "Thuật ngữ tiếng Anh chỉ điện cực.",
+      "vỏ não thị giác": "Vùng não chịu trách nhiệm xử lý thông tin thị giác.",
+      "visual cortex": "Thuật ngữ tiếng Anh chỉ vỏ não thị giác.",
+      "mạng lưới thần kinh sâu": "Mô hình trí tuệ nhân tạo mô phỏng mạng lưới thần kinh sinh học.",
+      "deep neural network": "Thuật ngữ tiếng Anh chỉ mạng lưới thần kinh sâu.",
+      "hoạt động thần kinh": "Sự truyền tín hiệu điện và hóa học giữa các tế bào thần kinh.",
+      "trí tuệ nhân tạo": "Công nghệ mô phỏng trí thông minh của con người trên máy móc."
+    },
+    "fr": {
+      "prothèse visuelle": "Dispositif technologique destiné à restaurer partiellement la vision chez les malvoyants ou les aveugles.",
+      "cortex visuel": "Région du cerveau responsable du traitement des informations visuelles provenant des yeux.",
+      "électrodes": "Petits conducteurs électriques utilisés pour stimuler ou enregistrer l'activité des cellules nerveuses.",
+      "réseau de neurones profonds": "Modèle informatique inspiré du cerveau humain capable d'apprendre à partir de grandes quantités de données.",
+      "courant électrique": "Flux d'électrons utilisé pour stimuler directement les tissus neuronaux de l'implant.",
+      "activité neurale": "Ensemble des signaux électriques et chimiques échangés par les cellules du système nerveux.",
+      "traumatisme crânien": "Blessure à la tête ayant endommagé le cerveau et provoqué la cécité du patient.",
+      "paramètres de stimulation": "Réglages techniques contrôlant l'intensité et la fréquence des impulsions électriques appliquées."
+    },
+    "de": {
+      "künstliche intelligenz": "Technologie, die Maschinen befähigt, menschenähnliche Problemlösungen zu zeigen.",
+      "hirnimplantate": "Operativ eingesetzte elektronische Geräte, die direkt mit dem Gehirn interagieren.",
+      "bionische augen": "Technische Sehhilfen, die beschädigte biologische Augen ersetzen oder unterstützen.",
+      "sehhilfe": "Gerät zur Verbesserung oder Wiederherstellung des menschlichen Sehvermögens.",
+      "elektroden": "Leiter zur Übertragung von elektrischem Strom in das Gewebe.",
+      "sehrinde": "Hirnbereich, der visuelle Informationen verarbeitet.",
+      "neuronale aktivität": "Elektrische und chemische Signale im Nervensystem.",
+      "elektrischen strom": "Gezielter Fluss von elektrischen Ladungsträgern zur Stimulation.",
+      "gehirnmuster": "Spezifische Abfolgen von Signalen und Aktivitäten im Gehirn."
+    },
+    "es": {
+      "inteligencia artificial": "Campo informático que imita la inteligencia humana para resolver problemas y aprender.",
+      "prótesis visual": "Dispositivo artificial diseñado para reemplazar total o parcialmente la función visual perdida.",
+      "corteza visual": "Área del cerebro situada en el lóbulo occipital que procesa la información visual.",
+      "electrodos": "Conductores eléctricos utilizados para establecer contacto con una parte del cuerpo.",
+      "red neuronal profunda": "Sistema informático inspirado en el cerebro humano con múltiples capas de procesamiento.",
+      "estimulación": "Aplicación de un estímulo físico o eléctrico sobre un tejido biológico.",
+      "corriente eléctrica": "Flujo de carga eléctrica que circula a través de un conductor.",
+      "implantes médicos": "Dispositivos colocados quirúrgicamente dentro del cuerpo para realizar una función terapéutica."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:31:08.899Z"
+}

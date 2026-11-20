@@ -1,0 +1,245 @@
+{
+  "slug": "quantum-computer-memory-vibrates-like-a-guitar-string",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=quantum-computer-memory-vibrates-like-a-guitar-string",
+  "category": "technology",
+  "tags": [
+    "quantum computing",
+    "physics",
+    "technology",
+    "eth zurich"
+  ],
+  "title": {
+    "en": "Quantum Computer Memory Vibrates Like a Guitar String",
+    "vi": "Bộ nhớ máy tính lượng tử dao động như dây đàn guitar",
+    "fr": "La mémoire d'un ordinateur quantique vibre comme une corde de guitare",
+    "de": "Quantencomputerspeicher vibriert wie eine Gitarrensaite",
+    "es": "La memoria de las computadoras cuánticas vibra como una cuerda de guitarra"
+  },
+  "hook": {
+    "en": "Researchers at ETH Zurich have developed a quantum system that uses microscopic mechanical vibrations to store data {source}. Led by physicist Yiwen Chu, the team built an architecture inspired by conventional computers, separating the processor from working memory to achieve efficient quantum calculations.",
+    "vi": "Các nhà nghiên cứu tại ETH Zurich phát triển một hệ thống lượng tử sử dụng dao động cơ học vi mô để lưu trữ dữ liệu {source}. Dưới sự dẫn dắt của nhà vật lý Yiwen Chu, nhóm xây dựng kiến trúc lấy cảm hứng từ máy tính thông thường, tách biệt bộ xử lý khỏi bộ nhớ làm việc.",
+    "fr": "Des chercheurs de l'ETH Zurich ont mis au point un système quantique qui utilise des vibrations mécaniques microscopiques pour stocker des données {source}. Dirigée par le physicien Yiwen Chu, l'équipe a conçu une architecture inspirée des ordinateurs classiques, séparant le processeur de la mémoire vive pour réaliser des calculs quantiques efficaces.",
+    "de": "Forschende der ETH Zürich haben ein Quantensystem entwickelt, das mikroskopische mechanische Schwingungen zur Datenspeicherung nutzt {source}. Unter der Leitung der Physikerin Yiwen Chu entwarf das Team eine an herkömmliche Computer angelehnte Architektur, die den Prozessor vom Arbeitsspeicher trennt, um effiziente Quantenberechnungen zu ermöglichen.",
+    "es": "Un grupo de investigadores de ETH Zúrich desarrolló un sistema cuántico que utiliza vibraciones mecánicas microscópicas para almacenar datos {source}. Liderado por el físico Yiwen Chu, el equipo construyó una arquitectura inspirada en las computadoras convencionales, separando el procesador de la memoria de trabajo para lograr cálculos cuánticos eficientes."
+  },
+  "sections": [
+    {
+      "heading_en": "Computer Architecture Inspiration",
+      "heading_vi": "Cảm hứng kiến trúc máy tính",
+      "body_en": "Conventional digital computers separate the central processing unit from working memory known as random access memory. Chu's quantum system follows this exact principle. A superconducting qubit acts as the processing unit, while a separate quantum memory temporarily holds information during calculations. Information in this working memory is stored as mechanical vibrations rather than electromagnetic signals.",
+      "body_vi": "Máy tính kỹ thuật số thông thường tách biệt bộ xử lý trung tâm khỏi bộ nhớ làm việc (*random access memory*). Hệ thống lượng tử của Chu tuân theo nguyên lý này. Qubit siêu dẫn đóng vai trò bộ xử lý, trong khi bộ nhớ lượng tử riêng biệt giữ thông tin tạm thời. Thông tin lưu trữ dưới dạng dao động cơ học thay vì tín hiệu điện từ.",
+      "heading_fr": "Inspiration de l'architecture informatique",
+      "body_fr": "Les ordinateurs numériques classiques séparent l'unité centrale de traitement de la mémoire vive appelée mémoire à accès aléatoire. Le système quantique de Chu suit exactement ce principe. Un qubit supraconducteur agit comme unité de traitement, tandis qu'une mémoire quantique séparée retient temporairement les informations pendant les calculs. L'information dans cette mémoire de travail est stockée sous forme de vibrations mécaniques plutôt que de signaux électromagnétiques.",
+      "heading_de": "Inspiration durch Computerarchitektur",
+      "body_de": "Herkömmliche Digitalcomputer trennen die Zentraleinheit vom Arbeitsspeicher, der als RAM bekannt ist. Chus Quantensystem folgt genau diesem Prinzip. Ein supraleitendes Qubit fungiert als Recheneinheit, während ein separater Quantenspeicher Informationen während der Berechnungen zwischenspeichert. Informationen in diesem Arbeitsspeicher werden als mechanische Schwingungen anstelle von elektromagnetischen Signalen gespeichert.",
+      "heading_es": "Inspiración en la arquitectura de computadoras",
+      "body_es": "Las computadoras digitales convencionales separan la unidad central de procesamiento de la memoria de trabajo conocida como memoria de acceso aleatorio. El sistema cuántico de Chu sigue este principio exacto. Un cúbit superconductor actúa como la unidad de procesamiento, mientras que una memoria cuántica separada retiene temporalmente la información durante los cálculos. La información en esta memoria de trabajo se almacena como vibraciones mecánicas en lugar de señales electromagnéticas."
+    },
+    {
+      "heading_en": "Advantages of Mechanical Resonators",
+      "heading_vi": "Ưu điểm của cộng hưởng cơ học",
+      "body_en": "Electromagnetic memory systems often occupy substantial space, limiting scalability in quantum devices. Microscopic mechanical resonators offer a compact alternative that supports multiple vibration patterns simultaneously. These vibrations also preserve quantum states for longer periods than standard methods, which helps the system handle complicated calculations requiring extended data retention across multiple processing steps.",
+      "body_vi": "Hệ thống bộ nhớ điện từ chiếm nhiều không gian, hạn chế khả năng mở rộng. Bộ cộng hưởng cơ học vi mô mang lại giải pháp nhỏ gọn hỗ trợ nhiều mẫu dao động. Những dao động này duy trì trạng thái lượng tử lâu hơn, giúp xử lý các phép tính phức tạp.",
+      "heading_fr": "Avantages des résonateurs mécaniques",
+      "body_fr": "Les systèmes de mémoire électromagnétique occupent souvent un espace considérable, ce qui limite l'évolutivité des appareils quantiques. Les résonateurs mécaniques microscopiques offrent une alternative compacte qui prend en charge plusieurs modes de vibration simultanément. Ces vibrations préservent également les états quantiques plus longtemps que les méthodes standard, aidant le système à gérer des calculs complexes nécessitant une conservation prolongée des données sur plusieurs étapes de traitement.",
+      "heading_de": "Vorteile mechanischer Resonatoren",
+      "body_de": "Elektromagnetische Speichersysteme nehmen oft viel Platz ein, was die Skalierbarkeit in Quantengeräten einschränkt. Mikroskopische mechanische Resonatoren bieten eine kompakte Alternative, die mehrere Schwingungsmuster gleichzeitig unterstützt. Diese Schwingungen bewahren Quantenzustände auch länger als Standardmethoden, was dem System hilft, komplizierte Berechnungen zu bewältigen, die eine längere Datenspeicherung über mehrere Verarbeitungsschritte hinweg erfordern.",
+      "heading_es": "Ventajas de los resonadores mecánicos",
+      "body_es": "Los sistemas de memoria electromagnética a menudo ocupan un espacio considerable, lo que limita la escalabilidad en los dispositivos cuánticos. Los resonadores mecánicos microscópicos ofrecen una alternativa compacta que admite múltiples patrones de vibración simultáneamente. Estas vibraciones también preservan los estados cuánticos durante períodos más largos que los métodos estándar, lo que ayuda al sistema a gestionar cálculos complicados que requieren una retención de datos prolongada en múltiples pasos de procesamiento."
+    },
+    {
+      "heading_en": "Successful Computational Tests",
+      "heading_vi": "Thử nghiệm tính toán thành công",
+      "body_en": "The research team evaluated the system by testing the quantum Fourier transform and period finding. Doctoral student Igor Kladaric noted that these fundamental procedures require coordinating multiple quantum states with high precision. The experiments proved that the vibration-based architecture can meet these strict requirements.",
+      "body_vi": "Nhóm nghiên cứu đánh giá hệ thống qua phép biến đổi Fourier lượng tử và tìm chu kỳ. Nghiên cứu sinh tiến sĩ Igor Kladaric lưu ý các quy trình này đòi hỏi độ chính xác cao. Thử nghiệm chứng minh kiến trúc dựa trên dao động đáp ứng tốt yêu cầu.",
+      "heading_fr": "Tests de calcul réussis",
+      "body_fr": "L'équipe de recherche a évalué le système en testant la transformée de Fourier quantique et la recherche de période. Le doctorant Igor Kladaric a souligné que ces procédures fondamentales nécessitent la coordination de plusieurs états quantiques avec une grande précision. Les expériences ont prouvé que l'architecture basée sur les vibrations peut répondre à ces exigences strictes.",
+      "heading_de": "Erfolgreiche Rechentests",
+      "body_de": "Das Forschungsteam bewertete das System durch Tests der Quanten-Fouriertransformation und der Periodenfindung. Der Doktorand Igor Kladaric wies darauf hin, dass diese grundlegenden Verfahren die Koordination mehrerer Quantenzustände mit hoher Präzision erfordern. Die Experimente bewiesen, dass die schwingungsbasierte Architektur diese strengen Anforderungen erfüllen kann.",
+      "heading_es": "Pruebas computacionales exitosas",
+      "body_es": "El equipo de investigación evaluó el sistema probando la transformada de Fourier cuántica y la búsqueda de períodos. El estudiante de doctorado Igor Kladaric señaló que estos procedimientos fundamentales requieren coordinar múltiples estados cuánticos con alta precisión. Los experimentos demostraron que la arquitectura basada en vibraciones puede cumplir con estos estrictos requisitos."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261109205416.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Annie Spratt",
+    "authorUrl": "https://unsplash.com/@anniespratt?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/4Hpljf9Y1ko",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/4Hpljf9Y1ko/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Inside this quantum computer, memory vibrates like a guitar string",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261109205416.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of the quantum memory as a vibrating guitar string that holds distinct musical notes for the processor to use. How might smaller memory components change the future design of consumer electronics? [p:Mechanical vibrations store quantum states efficiently while saving valuable chip space.]",
+    "vi": "Hãy hình dung bộ nhớ lượng tử như dây đàn guitar rung động giữ các nốt nhạc cho bộ xử lý. Những linh kiện nhỏ hơn có thể thay đổi thiết kế điện tử ra sao? [p:Dao động cơ học lưu trữ trạng thái lượng tử hiệu quả.]",
+    "fr": "Considérez la mémoire quantique comme une corde de guitare vibrante qui retient des notes de musique distinctes pour le processeur. Comment des composants de mémoire plus petits pourraient-ils transformer la conception future de l'électronique grand public ? [p:Les vibrations mécaniques stockent efficacement les états quantiques tout en économisant un espace précieux sur les puces.]",
+    "de": "Stell dir den Quantenspeicher wie eine vibrierende Gitarrensaite vor, die verschiedene Noten für den Prozessor bereithält. Wie könnten kleinere Speicherelemente das zukünftige Design von Unterhaltungselektronik verändern? [p:Mechanische Schwingungen speichern Quantenzustände effizient und sparen wertvollen Platz auf dem Chip.]",
+    "es": "Piense en la memoria cuántica como una cuerda de guitarra vibrante que sostiene notas musicales distintas para que el procesador las utilice. ¿Cómo podrían los componentes de memoria más pequeños cambiar el diseño futuro de la electrónica de consumo? [p:Las vibraciones mecánicas almacenan estados cuánticos de manera eficiente mientras ahorran un espacio valioso en el chip.]"
+  },
+  "applySteps": {
+    "en": [
+      "Read the original research article published in the journal Science.",
+      "List the differences between electromagnetic and mechanical quantum memory.",
+      "Review how superconducting qubits interact with mechanical resonators."
+    ],
+    "vi": [
+      "Đọc bài báo nghiên cứu gốc được xuất bản trên tạp chí Science.",
+      "Liệt kê sự khác biệt giữa bộ nhớ lượng tử điện từ và cơ học.",
+      "Xem xét cách qubit siêu dẫn tương tác với bộ cộng hưởng cơ học."
+    ],
+    "fr": [
+      "Lire l'article de recherche original publié dans la revue Science.",
+      "Lister les différences entre la mémoire quantique électromagnétique et mécanique.",
+      "Examiner comment les qubits supraconducteurs interagissent avec les résonateurs mécaniques."
+    ],
+    "de": [
+      "Lies den Original-Forschungsartikel, der in der Fachzeitschrift Science veröffentlicht wurde.",
+      "Zähle die Unterschiede zwischen elektromagnetischem und mechanischem Quantenspeicher auf.",
+      "Überprüfe, wie supraleitende Qubits mit mechanischen Resonatoren interagieren."
+    ],
+    "es": [
+      "Lea el artículo de investigación original publicado en la revista Science.",
+      "Enumere las diferencias entre la memoria cuántica electromagnética y la mecánica.",
+      "Revise cómo interactúan los cúbits superconductores con los resonadores mecánicos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1541689592655-f5f52825a3b8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Annie Spratt",
+      "authorUrl": "https://unsplash.com/@anniespratt?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/4Hpljf9Y1ko",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/4Hpljf9Y1ko/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1522008224169-e5992bed5fae?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1522008224169-e5992bed5fae?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Derek Story",
+      "authorUrl": "https://unsplash.com/@derekstory?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/1Pzhr6XPl6k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/1Pzhr6XPl6k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1543945696-4f1116f30c03?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1543945696-4f1116f30c03?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Lucas  Leon",
+      "authorUrl": "https://unsplash.com/@lucasleon?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/IsS7vIQa898",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/IsS7vIQa898/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1607560105214-0aaa5f8fcba4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1607560105214-0aaa5f8fcba4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Leutrim Fetahu",
+      "authorUrl": "https://unsplash.com/@leotrimfetahu?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/USOqMHpBl5Q",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/USOqMHpBl5Q/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UXVhbnR1bSUyMENvbXB1dGVyJTIwTWVtb3J5JTIwVmlicmF0ZXMlMjBMaWtlJTIwYSUyMEd1aXRhciUyMFN0cmluZyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTE0NzM0N3ww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoQABwAPu1iqU2ppaOiMAgBMB2JQBgbjRvLm+oMCI5LAAD+8HbXu3z0d8ExPzDIOybOAi20cp7raWUKw+cL9U5oBQl7UYpzM5z0xDtfWw80Vv34OqGInG0rre0JBJwy8Ud2fSBQAAA=",
+  "dominant": "#68605a",
+  "glossary": {
+    "en": {
+      "quantum system": "A system governed by the laws of quantum mechanics for advanced processing.",
+      "yiwen chu": "The physicist who led the ETH Zurich research team.",
+      "superconducting qubit": "A quantum bit operating at very low temperatures to act as a processor.",
+      "electromagnetic signals": "Signals formed by electric and magnetic fields used in standard memory.",
+      "mechanical resonators": "Microscopic physical structures that vibrate to store information compactly.",
+      "quantum states": "The specific condition or value of a quantum system.",
+      "quantum fourier transform": "A fundamental mathematical procedure tested in the quantum system experiments.",
+      "period finding": "A computational algorithm used to evaluate quantum capability.",
+      "igor kladaric": "A doctoral student involved in evaluating the quantum architecture."
+    },
+    "vi": {
+      "eth zurich": "Viện Đại học Công nghệ Liên bang Thụy Sĩ, nơi thực hiện nghiên cứu.",
+      "yiwen chu": "Nhà vật lý dẫn dắt nhóm nghiên cứu tại ETH Zurich.",
+      "random access memory": "Bộ nhớ truy cập ngẫu nhiên, hay bộ nhớ làm việc của máy tính.",
+      "qubit siêu dẫn": "Đơn vị thông tin lượng tử hoạt động ở trạng thái siêu dẫn.",
+      "dao động cơ học": "Sự chuyển động qua lại của vật thể vi mô dùng để lưu trữ dữ liệu.",
+      "bộ cộng hưởng cơ học vi mô": "Linh kiện nhỏ gọn hỗ trợ các mẫu dao động để giữ trạng thái lượng tử lâu hơn.",
+      "igor kladaric": "Nghiên cứu sinh tiến sĩ tham gia đánh giá hệ thống.",
+      "biến đổi fourier lượng tử": "Thuật toán toán học dùng trong tính toán lượng tử."
+    },
+    "fr": {
+      "eth zurich": "Institut fédéral de technologie de Zurich, une université de recherche publique en Suisse.",
+      "yiwen chu": "Physicien dirigeant l'équipe de recherche sur le système de mémoire quantique.",
+      "qubit supraconducteur": "Unité de information quantique fonctionnant dans des conditions de supraconductivité.",
+      "résonateurs mécaniques": "Composants microscopiques qui vibrent à des fréquences spécifiques pour stocker l'information.",
+      "états quantiques": "Conditions ou configurations fondamentales d'un système physique dans la mécanique quantique.",
+      "transformée de fourier": "Algorithme mathématique fondamental utilisé ici pour le traitement de données quantiques.",
+      "igor kladaric": "Étudiant au doctorat ayant participé aux expériences sur le système quantique.",
+      "mémoire vive": "Mémoire temporaire utilisée par l'ordinateur pour exécuter les calculs en cours."
+    },
+    "de": {
+      "quantensystem": "Ein physikalisches System, das den Gesetzen der Quantenmechanik gehorcht.",
+      "supraleitendes qubit": "Die Basiseinheit der Quanteninformation, die verlustfrei Strom leitet.",
+      "arbeitsspeicher": "Ein temporärer Speicher, der Daten für laufende Berechnungen bereithält.",
+      "mechanische schwingungen": "Physikalische Bewegungen von Materie hin und her.",
+      "resonatoren": "Bauteile, die Schwingungen bei bestimmten Frequenzen verstärken.",
+      "quantenzustände": "Der mathematisch beschreibbare Zustand eines Quantensystems.",
+      "quanten-fouriertransformation": "Ein wichtiger mathematischer Algorithmus für Quantencomputer.",
+      "periodenfindung": "Die Bestimmung wiederkehrender Muster in mathematischen Funktionen."
+    },
+    "es": {
+      "cúbit": "Unidad básica de información en la computación cuántica.",
+      "resonadores mecánicos": "Dispositivos microscópicos que vibran para almacenar información de forma estable.",
+      "estados cuánticos": "Condiciones físicas en las que opera la información a escala atómica.",
+      "transformada de fourier": "Algoritmo matemático fundamental utilizado para analizar frecuencias en los cálculos.",
+      "arquitectura": "Diseño y organización estructural de un sistema informático o cuántico.",
+      "escalabilidad": "Capacidad de un sistema para crecer y manejar mayor carga o tamaño.",
+      "superconductor": "Material que conduce electricidad sin resistencia a temperaturas muy bajas.",
+      "vibraciones": "Movimientos oscilatorios utilizados en este sistema para representar datos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:51:08.899Z"
+}
