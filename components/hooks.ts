@@ -173,3 +173,26 @@ export function useStaggeredCount(total: number, active: boolean, key: unknown, 
   }, [total, active, key, first]);
   return n;
 }
+
+/**
+ * How many of a long card grid to render: `page` at first, a page more each time the sentinel (put it
+ * after the last card) comes within 600 px. Rendering 300 cards at once took a phone a long frame and
+ * fetched every picture. `key` starts over (another category or tab).
+ */
+export function usePaged(total: number, page: number, key: unknown) {
+  const [pages, setPages] = useState(1);
+  useEffect(() => setPages(1), [key]);
+  const limit = Math.min(total, pages * page);
+  // A new observer per page: one still in view after a page is added reports it again only when new.
+  const sentinel = useCallback(
+    (el: HTMLDivElement | null) => {
+      if (!el) return;
+      const io = new IntersectionObserver(([e]) => e.isIntersecting && setPages((p) => p + 1), { rootMargin: '600px' });
+      io.observe(el);
+      return () => io.disconnect();
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- limit is the point: re-observe after each page
+    [limit],
+  );
+  return { limit, sentinel, more: limit < total };
+}
