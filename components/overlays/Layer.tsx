@@ -128,6 +128,9 @@ export function Panel({
   useEffect(() => {
     if (!mounted) return;
     const w = width();
+    // A panel left by a tab switch kept its faded, shrunk state: every open starts from whole.
+    fade.set(1);
+    scale.set(1);
     if (open) {
       if (prefersReducedMotion()) {
         x.set(0);

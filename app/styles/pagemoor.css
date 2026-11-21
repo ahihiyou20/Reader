@@ -1148,9 +1148,19 @@ html[data-stage='compact-portrait'] .wflow > button {
 html[data-stage$='landscape'] .panel.side {
   left: auto;
   width: min(420px, 100%);
+  background: var(--panel);
   border-left: 1px solid var(--stroke);
   border-radius: 22px 0 0 22px;
   box-shadow: -24px 0 60px rgba(0, 0, 0, 0.45);
+}
+/* The navigation stands at the right edge on wide screens: the sheet stops short of it. */
+html[data-stage='regular-landscape'] .panel.side {
+  right: 92px;
+  top: 12px;
+  bottom: 12px;
+  height: auto;
+  border: 1px solid var(--stroke);
+  border-radius: 22px;
 }
 @media (prefers-reduced-motion: reduce) {
   .tb-ic.bell.ring .ic {
@@ -1277,6 +1287,7 @@ html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .carousel {
   gap: 10px;
   margin: 0;
   padding: 0 0 6px;
+  scroll-padding-inline: 0;
   overflow-x: auto;
   scroll-snap-type: x proximity;
 }
@@ -1615,24 +1626,4 @@ html[data-stage='compact-landscape'] .audiobar {
   bottom: calc(var(--sab) + 10px);
   width: min(460px, 52%);
   transform: none;
-}
-
-/* The title of the article that has just come on screen settles into place, line after line, coming
-   into focus as it rises. No fade: the words are readable from the first frame. */
-section.article[data-active='true'] .ctitle > span {
-  animation: title-rise 700ms var(--ease-out) both;
-}
-section.article[data-active='true'] .ctitle > .tb {
-  animation-delay: 70ms;
-}
-@keyframes title-rise {
-  from {
-    transform: translateY(14px);
-    filter: blur(6px);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  section.article[data-active='true'] .ctitle > span {
-    animation: none;
-  }
 }

@@ -20,7 +20,7 @@ const TABS: Array<{ id: 'home' | Overlay; cls: string; icon: typeof Home; label:
 ];
 
 /** Tabs the bar stays visible over. */
-const OVER: Overlay[] = ['explore', 'search', 'library'];
+const OVER: Overlay[] = ['explore', 'search', 'library', 'messages'];
 
 /**
  * CMP-14: the app's navigation as one liquid-glass bar. Phones: a floating capsule of tabs at the foot

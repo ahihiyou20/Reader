@@ -136,7 +136,7 @@ html[data-stage='regular-landscape'] .ctitle {
   line-height: 50px;
 }
 
-html[data-stage='regular-landscape'] .rail {
+html[data-stage='regular-landscape'] :is(.rail, .rail-peek) {
   right: 36px;
   bottom: calc(var(--sab) + 24px);
   gap: 22px;

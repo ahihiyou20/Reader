@@ -81,7 +81,7 @@ html[data-stage='regular-portrait'] .crow .hint {
   font-size: 15px;
 }
 
-html[data-stage='regular-portrait'] .rail {
+html[data-stage='regular-portrait'] :is(.rail, .rail-peek) {
   right: 28px;
   bottom: calc(var(--sab) + 110px);
   gap: 22px;

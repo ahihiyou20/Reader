@@ -701,7 +701,7 @@ select {
   font-size: 27px;
   line-height: 34px;
 }
-.rail {
+:is(.rail, .rail-peek) {
   position: absolute;
   right: 14px;
   bottom: calc(var(--sab) + 104px);
@@ -1662,7 +1662,8 @@ select {
 .bnav[data-over] {
   z-index: 50;
 }
-html[data-stage$='portrait'] :is(.panel.explore, .panel.search, .panel.library) .pbody {
+html[data-stage$='portrait'] :is(.panel.explore, .panel.search, .panel.library) .pbody,
+html[data-stage$='portrait'] .panel.msgs {
   padding-bottom: calc(var(--sab) + 104px);
 }
 html[data-stage='regular-landscape'] :is(.panel.explore, .panel.search, .panel.library) {
@@ -2488,6 +2489,8 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
   overflow-x: auto;
   margin: 0 -16px;
   padding: 0 16px 4px;
+  /* Snapping lines cards up with the padding, not the scroller's edge (else the first card loads flush left). */
+  scroll-padding-inline: 16px;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
@@ -3106,4 +3109,9 @@ html[data-welcome='pending'] .app > :not(.welcome) {
   .nb.tab {
     transition: none;
   }
+}
+/* A cover is swiped, not read: dragging across it with a mouse must not select its title. */
+.view.cover {
+  user-select: none;
+  -webkit-user-select: none;
 }
