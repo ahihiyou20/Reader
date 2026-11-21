@@ -26,8 +26,9 @@ export function errorMessage(e: unknown): string {
 const CACHE = (uid: string) => `reader.userdata.${uid}`;
 const LAST_UID = 'reader.lastUid';
 // The account changes on other devices too: a copy older than this is fetched again at load and when
-// the app comes back to the screen (a phone keeps the page alive for days).
-const REFRESH_AFTER = 60_000;
+// the app comes back to the screen (a phone keeps the page alive for days). Not shorter: a fetch reads
+// every like, save and progress document, and the free plan allows 50k reads a day for everyone.
+const REFRESH_AFTER = 10 * 60_000;
 let started = false;
 let currentUid: string | null = null;
 const userWaiters: Array<(u: AuthUser) => void> = [];
