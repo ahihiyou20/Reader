@@ -35,6 +35,11 @@ describe('reading sync merge', () => {
     expect(m.collections).toHaveLength(2);
     expect(m.settings).toEqual({ fontSize: 21, rate: 1.25, voice: { fr: 'Amelie' } });
   });
+  it('keeps the latest day an article was read on either device', () => {
+    const h = (viewedOn?: string) => ({ slug: 'a', category: 'x', at: 1, ms: 1, done: false, ...(viewedOn ? { viewedOn } : {}) });
+    expect(mergeReading(base({ history: [h('2026-11-21')] }), base({ history: [h('2026-11-20')] })).history[0].viewedOn).toBe('2026-11-21');
+    expect(mergeReading(base({ history: [h()] }), base({ history: [h('2026-11-20')] })).history[0].viewedOn).toBe('2026-11-20');
+  });
   it('is stable when merged with itself', () => {
     const d = base({ topics: ['x'], signals: { x: sig(2) }, history: [{ slug: 'a', category: 'x', at: 1, ms: 1, done: true }], collections: [{ id: 'c', name: 'n', slugs: ['a'] }] });
     expect(mergeReading(d, d)).toEqual(d);

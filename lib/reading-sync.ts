@@ -32,7 +32,8 @@ export function mergeReading(local: ReadingData, remote: ReadingData): ReadingDa
   const history = new Map<string, HistoryEntry>();
   for (const h of [...remote.history, ...local.history]) {
     const o = history.get(h.slug);
-    history.set(h.slug, o ? { ...h, at: Math.max(o.at, h.at), ms: Math.max(o.ms, h.ms), done: o.done || h.done } : h);
+    const viewedOn = [o?.viewedOn, h.viewedOn].filter(Boolean).sort().at(-1);
+    history.set(h.slug, o ? { ...h, at: Math.max(o.at, h.at), ms: Math.max(o.ms, h.ms), done: o.done || h.done, ...(viewedOn ? { viewedOn } : {}) } : h);
   }
   const collections = new Map<string, Collection>();
   for (const c of [...remote.collections, ...local.collections]) {

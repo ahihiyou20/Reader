@@ -7,7 +7,9 @@ import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef, useSyncExternalStore } from 'react';
 import type { FeedItem } from '@/lib/content/types';
 import { preloadImages, prefetchArticle, usePageLoaded } from '@/lib/data';
-import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
+import { clamp, pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
+import { tap as haptic } from '@/lib/haptics';
+import { RotateCw } from 'lucide-react';
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { preloadTitleFaces } from '@/lib/title';
 import { useUI } from '@/stores/ui';
@@ -22,6 +24,7 @@ import {
   feedP,
   goToArticle,
   layout,
+  moreArticles,
   onSlideReach,
   registerFade,
   relayout,
@@ -47,7 +50,13 @@ interface Gesture {
   samples: Array<{ t: number; x: number; y: number }>;
   target: Element;
   blockX: boolean;
+  /** Pulled down far enough on the first For You cover to refresh it on release. */
+  armed?: boolean;
 }
+
+/** How far the first cover must be pulled down (px) to load a new For You batch. */
+const PULL_PX = 72;
+const pulled = () => -feedP.get() * layout.h;
 
 export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (x: number, y: number) => void }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -57,6 +66,10 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   const t = useT();
   const total = items.length + 1;
   const y = useTransform(feedP, (p) => `${-p * 100}%`);
+  const category = useUI((s) => s.category);
+  // Pull to refresh: the arrow shows and turns as the first cover is pulled down.
+  const pull = useTransform(feedP, (p) => clamp((-p * layout.h) / PULL_PX, 0, 1));
+  const spin = useTransform(pull, (v) => v * 270);
   const loaded = usePageLoaded();
 
   // Keep the shared layout in sync with the measured size and the list. The gesture handlers read
@@ -73,8 +86,9 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   useEffect(() => {
     // A new feed (Explore, Library, the menu) starts at the top without sliding there; the new first
     // article comes into focus instead of cutting in.
-    feedP.stop();
-    feedP.set(useUI.getState().index);
+    // At once, dropping any slide in flight: the tap that restarted the feed (See more) also settled
+    // the old page, and that slide landing afterwards put the reader back on it.
+    goToArticle(useUI.getState().index, 0, true);
     if (version > 0 && !prefersReducedMotion())
       ref.current?.animate(
         [
@@ -175,7 +189,14 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       const dxPages = dx / g.w0;
       const dyPages = dy / g.h0;
       if (g.axis === 'x' && g.slug) viewP(g.slug).set(rubberClamp(g.vp - dxPages, 0, 2, 1));
-      else if (g.axis === 'y') feedP.set(rubberClamp(g.fp - dyPages, 0, layout.total - 1, 1));
+      else if (g.axis === 'y') {
+        feedP.set(rubberClamp(g.fp - dyPages, 0, layout.total - 1, 1));
+        const armed = useUI.getState().category === null && pulled() >= PULL_PX;
+        if (armed !== Boolean(g.armed)) {
+          g.armed = armed;
+          if (armed) haptic();
+        }
+      }
     };
 
     const abandon = () => {
@@ -221,6 +242,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
               sampleNow,
             )
           : 0;
+        if (G.armed && pulled() >= PULL_PX) return moreArticles();
         const i = targetArticle();
         const page = pickPage(-(feedP.get() * layout.h), v, layout.h, i, 0, layout.total - 1);
         goToArticle(page, v);
@@ -320,6 +342,11 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
 
   return (
     <div className="feed" ref={ref} role="feed" aria-busy={false} aria-label={t('appName')}>
+      {!category && (
+        <m.div className="ptr" style={{ opacity: pull, rotate: spin }} aria-hidden="true">
+          <RotateCw className="ic" />
+        </m.div>
+      )}
       <m.div className="track" style={{ y }} ref={(el) => registerFade('feed', el)}>
         {pages.map((i) =>
           i < items.length ? (
