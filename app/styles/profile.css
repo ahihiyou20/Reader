@@ -453,6 +453,12 @@ html[data-stage$='landscape'] :is(.panel.profile, .panel.library) .card .ct {
   font-size: 13px;
   line-height: 17px;
 }
+/* Under ~1280 px the main column cannot hold the month and the stats side by side. */
+@media (max-width: 1279px) {
+  html[data-stage$='landscape'] .panel.profile .pf-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
 html[data-stage='compact-landscape'] .panel.profile .pf {
   grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
 }

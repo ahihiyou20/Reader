@@ -20,7 +20,7 @@ const TABS: Array<{ id: 'home' | Overlay; cls: string; icon: typeof Home; label:
 ];
 
 /** Tabs the bar stays visible over. */
-const OVER: Overlay[] = ['explore', 'search', 'library'];
+const OVER: Overlay[] = ['explore', 'search', 'library', 'messages'];
 
 /**
  * CMP-14: the app's navigation as one liquid-glass bar. Phones: a floating capsule of tabs at the foot
@@ -62,7 +62,7 @@ export function BottomNav() {
   const folded = mini && !over;
   const hidden = gone && !over;
   const active = TABS.findIndex(({ id }) => (id === 'home' ? !top : top === id));
-  const lens = useLens(active, upright, folded, still, (i) => go(TABS[i].id));
+  const lens = useLens(active, folded, still, (i) => go(TABS[i].id));
   const offset = keyboard ? 200 * edge : over ? 0 : away;
   return (
     <MNav className="bnav" data-over={over || undefined} data-mini={folded || undefined} data-gone={hidden || keyboard || undefined} inert={hidden || undefined} data-region="dock" style={upright ? { x: offset } : { y: offset }} aria-label={t('menu')}>
@@ -120,7 +120,7 @@ export function BottomNav() {
  * draggable. A press that moves 8 px along the bar, or stays down 220 ms, lifts it; from then the lens
  * chases the finger on a stiff spring, rubber-banding past the first and last tab.
  */
-function useLens(active: number, upright: boolean, mini: boolean, still: boolean, choose: (i: number) => void) {
+function useLens(active: number, mini: boolean, still: boolean, choose: (i: number) => void) {
   const bar = useRef<HTMLDivElement>(null);
   const tabs = useRef<Array<HTMLButtonElement | null>>([]);
   const x = useMotionValue(0);
@@ -161,6 +161,8 @@ function useLens(active: number, upright: boolean, mini: boolean, still: boolean
 
   const follow = (cx: number, cy: number) => {
     const g = bar.current!.getBoundingClientRect();
+    // The bar's own layout says which way it runs (short laptop screens lay the upright bar flat).
+    const upright = getComputedStyle(bar.current!).flexDirection === 'column';
     const along = upright ? cy - g.top : cx - g.left;
     const size = upright ? height.get() : width.get();
     const first = tabs.current[0]!;
@@ -220,7 +222,7 @@ function useLens(active: number, upright: boolean, mini: boolean, still: boolean
       p.x = e.clientX;
       p.y = e.clientY;
       if (p.on) follow(p.x, p.y);
-      else if (Math.abs(upright ? p.y - p.y0 : p.x - p.x0) > 8) lift();
+      else if (Math.hypot(p.x - p.x0, p.y - p.y0) > 8) lift();
     },
     onPointerUp: () => end(true),
     onPointerCancel: () => end(false),
