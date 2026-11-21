@@ -1,0 +1,256 @@
+{
+  "slug": "tiny-diamond-imperfections-could-power-future-quantum-comput",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=tiny-diamond-imperfections-could-power-future-quantum-comput",
+  "category": "technology",
+  "tags": [
+    "quantum computing",
+    "diamonds",
+    "physics",
+    "chemistry"
+  ],
+  "title": {
+    "en": "Tiny Diamond Imperfections Could Power Future Quantum Computers",
+    "vi": "Những khiếm khuyết nhỏ trong kim cương có thể thúc đẩy máy tính lượng tử",
+    "fr": "De minuscules imperfections du diamant pour alimenter les futurs ordinateurs quantiques",
+    "de": "Winzige Diamantfehler könnten zukünftige Quantencomputer antreiben",
+    "es": "Pequeñas imperfecciones en el diamante podrían impulsar futuros ordenadores cuánticos"
+  },
+  "hook": {
+    "en": "A new computational technique accelerates the search for diamond materials capable of powering future quantum computers and sensitive sensors. Developed by Mark Martirez at the Princeton Plasma Physics Laboratory, the method simplifies how scientists identify promising quantum candidates.",
+    "vi": "Một kỹ thuật tính toán mới thúc đẩy quá trình tìm kiếm vật liệu kim cương có khả năng vận hành máy tính lượng tử và cảm biến nhạy bén trong tương lai. Được phát triển bởi Mark Martirez tại Phòng thí nghiệm Vật lý Plasma Princeton, phương pháp này đơn giản hóa cách các nhà khoa học xác định ứng cử viên lượng tử tiềm năng.",
+    "fr": "Une nouvelle technique de calcul accélère la recherche de matériaux diamantés capables d'alimenter les futurs ordinateurs quantiques et des capteurs sensibles. Développée par Mark Martirez au Princeton Plasma Physics Laboratory, la méthode simplifie la façon dont les scientifiques identifient des candidats quantiques prometteurs.",
+    "de": "Eine neue Rechentechnik beschleunigt die Suche nach Diamantmaterialien, die künftige Quantencomputer und empfindliche Sensoren antreiben können. Die von Mark Martirez am Princeton Plasma Physics Laboratory entwickelte Methode vereinfacht die Identifizierung vielversprechender Quantenkandidaten durch Wissenschaftler.",
+    "es": "Una nueva técnica computacional acelera la búsqueda de materiales de diamante capaces de impulsar futuros ordenadores cuánticos y sensores sensibles. Desarrollado por Mark Martirez en el Laboratorio de Física de Plasmas de Princeton, el método simplifica cómo los científicos identifican candidatos cuánticos prometedores."
+  },
+  "sections": [
+    {
+      "heading_en": "Isolating Atomic Clusters",
+      "heading_vi": "Cô lập cụm nguyên tử",
+      "body_en": "Researchers struggle to model the quantum behavior of diamond defects because full simulations demand enormous computational resources. Mark Martirez solved this by isolating a small region containing sixteen to thirty atoms around a defect {source}. Treating this tiny atomic cluster like a separate molecule allows the use of established chemistry methods.",
+      "body_vi": "Các nhà nghiên cứu gặp khó khăn khi mô phỏng hành vi lượng tử của các khiếm khuyết kim cương vì mô phỏng toàn diện đòi hỏi nguồn lực tính toán khổng lồ. Mark Martirez đã giải quyết vấn đề này bằng cách cô lập một vùng nhỏ chứa mười sáu đến ba mươi nguyên tử xung quanh một khiếm khuyết {source}. Việc coi cụm nguyên tử nhỏ bé này như một phân tử riêng biệt cho phép sử dụng các phương pháp hóa học đã được thiết lập sẵn.",
+      "heading_fr": "Isoloir des amas atomiques",
+      "body_fr": "Les chercheurs peinent à modéliser le comportement quantique des défauts du diamant car les simulations complètes exigent d'énormes ressources de calcul. Mark Martirez a résolu ce problème en isolant une petite région contenant seize à trente atomes autour d'un défaut {source}. Traiter ce minuscule amas atomique comme une molécule distincte permet d'utiliser des méthodes de chimie établies.",
+      "heading_de": "Isolierung von Atomclustern",
+      "body_de": "Forscher haben Schwierigkeiten, das Quantenverhalten von Diamantdefekten zu modellieren, da vollständige Simulationen enorme Rechenressourcen erfordern. Mark Martirez löste dies, indem er eine kleine Region mit sechzehn bis dreißig Atomen um einen Defekt herum isolierte {source}. Die Behandlung dieses winzigen Atomclusters wie ein separates Molekül ermöglicht die Nutzung etablierter Chemiemethoden.",
+      "heading_es": "Aislamiento de cúmulos atómicos",
+      "body_es": "Los investigadores luchan por modelar el comportamiento cuántico de los defectos del diamante porque las simulaciones completas exigen recursos computacionales enormes. Mark Martirez resolvió esto aislando una pequeña región que contiene entre dieciséis y treinta átomos alrededor de un defecto {source}. Tratar este diminuto cúmulo atómico como una molécula separada permite utilizar métodos químicos establecidos."
+    },
+    {
+      "heading_en": "Discovering New Qubits",
+      "heading_vi": "Khám phá qubit mới",
+      "body_en": "The technique enables rapid calculation of how different qubits respond to laser light and microwave pulses. Using this approach, the research team identified promising defects involving boron and oxygen. These newly investigated defects offer distinct optical properties, as oxygen defects produce blue light while boron defects emit ultraviolet light.",
+      "body_vi": "Kỹ thuật này cho phép tính toán nhanh chóng cách các qubit khác nhau phản ứng với ánh sáng laser và xung vi sóng. Sử dụng phương pháp này, nhóm nghiên cứu đã xác định các khiếm khuyết tiềm năng liên quan đến boron và oxy. Những khiếm khuyết mới được nghiên cứu này mang lại các tính chất quang học khác biệt, khi khiếm khuyết oxy tạo ra ánh sáng xanh lam trong khi khiếm khuyết boron phát ra tia cực tím (*ultraviolet light*).",
+      "heading_fr": "Découvrir de nouveaux qubits",
+      "body_fr": "La technique permet un calcul rapide de la façon dont différents qubits réagissent à la lumière laser et aux impulsions micro-ondes. En utilisant cette approche, l'équipe de recherche a identifié des défauts prometteurs impliquant le bore et l'oxygène. Ces défauts nouvellement étudiés offrent des propriétés optiques distinctes, les défauts d'oxygène produisant de la lumière bleue tandis que les défauts de bore émettent de la lumière ultraviolette.",
+      "heading_de": "Entdeckung neuer Qubits",
+      "body_de": "Die Technik ermöglicht die schnelle Berechnung, wie verschiedene Qubits auf Laserlicht und Mikrowellenimpulse reagieren. Mit diesem Ansatz identifizierte das Forschungsteam vielversprechende Defekte mit Bor und Sauerstoff. Diese neu untersuchten Defekte bieten unterschiedliche optische Eigenschaften, da Sauerstoffdefekte blaues Licht erzeugen, während Bordefekte ultraviolettes Licht aussenden.",
+      "heading_es": "Descubrimiento de nuevos cúbits",
+      "body_es": "La técnica permite un cálculo rápido de cómo responden los diferentes cúbits a la luz láser y a los pulsos de microondas. Utilizando este enfoque, el equipo de investigación identificó defectos prometedores que involucran boro y oxígeno. Estos defectos investigados recientemente ofrecen propiedades ópticas distintas, ya que los defectos de oxígeno producen luz azul mientras que los defectos de boro emiten luz ultravioleta."
+    },
+    {
+      "heading_en": "Bridging Chemistry and Physics",
+      "heading_vi": "Kết nối hóa học và vật lý",
+      "body_en": "The findings suggest a broader change in how researchers approach quantum technology by applying chemical principles to solid-state physics. Martirez argues that chemists possess decades of developed intuition about molecular systems that can translate directly into understanding defects in solids. This cross-disciplinary effort may accelerate progress significantly.",
+      "body_vi": "Những phát hiện này cho thấy sự thay đổi rộng lớn hơn trong cách các nhà nghiên cứu tiếp cận công nghệ lượng tử bằng cách áp dụng các nguyên tắc hóa học vào vật lý chất rắn (*solid-state physics*). Martirez lập luận rằng các nhà hóa học sở hữu trực giác phát triển trong nhiều thập kỷ về các hệ thống phân tử có thể chuyển đổi trực tiếp thành việc hiểu các khiếm khuyết trong chất rắn. Nỗ lực liên ngành này có thể đẩy nhanh tiến độ đáng kể.",
+      "heading_fr": "Relier chimie et physique",
+      "body_fr": "Les résultats suggèrent un changement plus large dans la façon dont les chercheurs abordent la technologie quantique en appliquant des principes chimiques à la physique de l'état solide. Martirez soutient que les chimistes possèdent des décennies d'intuition développée sur les systèmes moléculaires qui peuvent se traduire directement par la compréhension des défauts dans les solides. Cet effort interdisciplinaire pourrait accélérer considérablement les progrès.",
+      "heading_de": "Verbindung von Chemie und Physik",
+      "body_de": "Die Ergebnisse legen einen umfassenderen Wandel darin nahe, wie sich Forscher der Quantentechnologie nähern, indem sie chemische Prinzipien auf Festkörperphysik anwenden. Martirez argumentiert, dass Chemiker über jahrzehntelang entwickelte Intuition bezüglich molekularer Systeme verfügen, die sich direkt auf das Verständnis von Defekten in Festkörpern übertragen lässt. Diese disziplinübergreifende Anstrengung könnte den Fortschritt erheblich beschleunigen.",
+      "heading_es": "Puente entre la química y la física",
+      "body_es": "Los hallazgos sugieren un cambio más amplio en la forma en que los investigadores abordan la tecnología cuántica al aplicar principios químicos a la física del estado sólido. Martirez sostiene que los químicos poseen décadas de intuición desarrollada sobre sistemas moleculares que puede traducirse directamente en la comprensión de defectos en sólidos. Este esfuerzo interdisciplinario puede acelerar el progreso significativamente."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261111005855.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1677342073477-3cb56e6201af?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1677342073477-3cb56e6201af?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Shubham Dhage",
+    "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/TeAev-gzja0",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/TeAev-gzja0/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Tiny flaws in diamonds could unlock a quantum computing revolution",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261111005855.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of finding quantum defects like searching for rare gems in a vast quarry by examining only the most promising rocks instead of digging up the entire mountain. How might combining chemistry expertise with physics accelerate your own complex technical problem-solving today?",
+    "vi": "Hãy coi việc tìm kiếm khiếm khuyết lượng tử giống như việc tìm kiếm những viên ngọc quý hiếm trong một mỏ đá lớn bằng cách chỉ kiểm tra những tảng đá có triển vọng nhất thay vì đào bới toàn bộ quả núi. Việc kết hợp chuyên môn hóa học với vật lý có thể thúc đẩy việc giải quyết vấn đề kỹ thuật phức tạp của bạn như thế nào?",
+    "fr": "Pensez à la recherche de défauts quantiques comme à la quête de pierres rares dans une immense carrière en n'examinant que les roches les plus prometteuses au lieu de creuser toute la montagne. Comment la combinaison de l'expertise en chimie et en physique pourrait-elle accélérer votre propre résolution de problèmes techniques complexes aujourd'hui ?",
+    "de": "Stelle dir die Suche nach Quantendefekten wie die Suche nach seltenen Edelsteinen in einem riesigen Steinbruch vor, indem du nur die vielversprechendsten Gesteine untersuchst, anstatt den ganzen Berg umzugraben. Wie könnte die Kombination von Chemie-Expertenwissen mit Physik heute deine eigene komplexe technische Problemlösung beschleunigen?",
+    "es": "Piense en encontrar defectos cuánticos como buscar gemas raras en una vasta cantera examinando solo las rocas más prometedoras en lugar de excavar toda la montaña. ¿Cómo podría combinar la experiencia en química con la física para acelerar hoy su propia resolución de problemas técnicos complejos?"
+  },
+  "applySteps": {
+    "en": [
+      "Isolate a small manageable subset of a complex problem",
+      "Apply established foundational principles to analyze the isolated part",
+      "Consult expertise from an adjacent academic or professional discipline"
+    ],
+    "vi": [
+      "Cô lập một tập hợp con nhỏ có thể quản lý được của một vấn đề phức tạp",
+      "Áp dụng các nguyên tắc cơ bản đã được thiết lập để phân tích phần được cô lập",
+      "Tham khảo chuyên môn từ một ngành học thuật hoặc nghề nghiệp lân cận"
+    ],
+    "fr": [
+      "Isoler un petit sous-ensemble gérable d'un problème complexe",
+      "Appliquer des principes fondamentaux établis pour analyser la partie isolée",
+      "Consulter l'expertise d'une discipline académique ou professionnelle adjacente"
+    ],
+    "de": [
+      "Isoliere eine kleine, überschaubare Teilmenge eines komplexen Problems",
+      "Wende etablierte Grundprinzipien an, um den isolierten Teil zu analysieren",
+      "Konsultiere Fachwissen aus einer benachbarten akademischen oder beruflichen Disziplin"
+    ],
+    "es": [
+      "Aislar un subconjunto pequeño y manejable de un problema complejo",
+      "Aplicar principios fundamentales establecidos para analizar la parte aislada",
+      "Consultar la experiencia de una disciplina académica o profesional adyacente"
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1677342073477-3cb56e6201af?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1677342073477-3cb56e6201af?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/TeAev-gzja0",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/TeAev-gzja0/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1590570894869-f6947be08e16?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1590570894869-f6947be08e16?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "hanny hilary",
+      "authorUrl": "https://unsplash.com/@hannyhilary?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/RD5GI4A4bu4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/RD5GI4A4bu4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1581093579426-d2c4b74bf1a8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFRpbnklMjBEaWFtb25kJTIwSW1wZXJmZWN0aW9ucyUyMENvdWxkJTIwUG93ZXIlMjBGdXR1cmUlMjBRdWFudHVtJTIwQ29tcHV0ZXJzJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MTQ3OTU1fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1581093579426-d2c4b74bf1a8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFRpbnklMjBEaWFtb25kJTIwSW1wZXJmZWN0aW9ucyUyMENvdWxkJTIwUG93ZXIlMjBGdXR1cmUlMjBRdWFudHVtJTIwQ29tcHV0ZXJzJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MTQ3OTU1fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "ThisisEngineering",
+      "authorUrl": "https://unsplash.com/@thisisengineering?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/rJWUwl16QY0",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/rJWUwl16QY0/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFRpbnklMjBEaWFtb25kJTIwSW1wZXJmZWN0aW9ucyUyMENvdWxkJTIwUG93ZXIlMjBGdXR1cmUlMjBRdWFudHVtJTIwQ29tcHV0ZXJzJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MTQ3OTU1fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1736889098611-533cad3638ff?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1736889098611-533cad3638ff?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Erwann Stephanne",
+      "authorUrl": "https://unsplash.com/@imisso?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/arONCYv50dU",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/arONCYv50dU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8VGlueSUyMERpYW1vbmQlMjBJbXBlcmZlY3Rpb25zJTIwQ291bGQlMjBQb3dlciUyMEZ1dHVyZSUyMFF1YW50dW0lMjBDb21wdXRlcnMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDc5NTV8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRgIBAABXRUJQVlA4IPYAAADQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYgC7MoAlsRIUi8bnfg+46tHRyKsfsAD9xvTnmcN3VhF549/uqIawUb5c2r+MMm7oEutNnqJUuy+qU9Dsh42y5JfFlPSPzWne78sGUAZcBGAwL3TXrYPAa+CiilQWiNgdzzJdy4LbwVV6yGFLN6bBSKRKxIIQqWdvuccpWqr5n9O6mvJAlXrNXD90ZhnFZMtTyjrmP/6kNs4WL6N5Dtt1t6mxd80kWO0vPGeDPW7DbCHRsD7Uihfr+IEE6uJ4XTH4B3e+TQOlew1E4D4yqMh/kvqbyQDK1aDs38QAAAA=",
+  "dominant": "#5e504a",
+  "glossary": {
+    "en": {
+      "quantum computers": "Advanced computing systems using quantum mechanics to process information exponentially faster than classical computers.",
+      "mark martirez": "The researcher at the Princeton Plasma Physics Laboratory who developed the new computational technique.",
+      "princeton plasma physics laboratory": "A collaborative national research facility managed by Princeton University for the Department of Energy.",
+      "quantum behavior": "The unique physical characteristics of matter and energy at atomic and subatomic scales.",
+      "diamond defects": "Imperfections or foreign atoms within the crystal lattice structure of a diamond.",
+      "atomic cluster": "A small, discrete group of atoms bound together that can be modeled like an independent molecule.",
+      "qubits": "The basic units of quantum information analogous to classical computing bits.",
+      "boron": "A chemical element used in creating specific defects that emit ultraviolet light.",
+      "oxygen": "A chemical element utilized in defects that produce blue light.",
+      "ultraviolet light": "Electromagnetic radiation with a wavelength shorter than that of visible light.",
+      "solid-state physics": "The branch of physics that studies solid materials through quantum mechanics and electromagnetism."
+    },
+    "vi": {
+      "máy tính lượng tử": "Hệ thống tính toán sử dụng cơ học lượng tử để xử lý thông tin với tốc độ vượt trội.",
+      "cảm biến nhạy bén": "Thiết bị đo lường cực kỳ chính xác các thay đổi nhỏ từ môi trường xung quanh.",
+      "khiếm khuyết kim cương": "Các điểm sai hỏng trong cấu trúc tinh thể kim cương có tiềm năng làm qubit.",
+      "qubit": "Đơn vị thông tin lượng tử cơ bản trong máy tính lượng tử.",
+      "ánh sáng laser": "Chùm ánh sáng đơn sắc có độ tập trung và năng lượng cao.",
+      "xung vi sóng": "Tín hiệu điện từ dạng xung ngắn dùng để điều khiển trạng thái lượng tử.",
+      "tính chất quang học": "Đặc điểm phản ứng của vật liệu khi tiếp xúc với ánh sáng.",
+      "tia cực tím": "Bức xạ điện từ có bước sóng ngắn hơn ánh sáng nhìn thấy.",
+      "vật lý chất rắn": "Nhánh vật lý nghiên cứu các đặc tính của vật chất ở trạng thái rắn.",
+      "hệ thống phân tử": "Tập hợp các nguyên tử liên kết hóa học với nhau theo cấu trúc xác định."
+    },
+    "fr": {
+      "défauts du diamant": "Imperfections structurelles dans le réseau cristallin du diamant utilisées pour la recherche quantique.",
+      "princeton plasma physics laboratory": "Laboratoire de recherche américain où la nouvelle méthode de modélisation a été développée.",
+      "amas atomique": "Petit groupe d'atomes isolés autour d'une imperfection pour faciliter les simulations.",
+      "chimie établie": "Ensemble de méthodes scientifiques traditionnelles appliquées ici à l'échelle moléculaire.",
+      "qubits": "Unités fondamentales d'information dans le calcul et les ordinateurs quantiques.",
+      "lumière laser": "Faisceau lumineux cohérent utilisé pour tester la réaction des qubits étudiés.",
+      "impulsions micro-ondes": "Signaux électromagnétiques appliqués pour observer le comportement des défauts atomiques.",
+      "bore": "Élément chimique impliqué dans les nouveaux défauts identifiés émettant de la lumière ultraviolette.",
+      "oxygène": "Élément chimique formant des défauts spécifiques produisant de la lumière bleue.",
+      "physique de l'état solide": "Branche de la physique étudiant les propriétés physiques de la matière solide."
+    },
+    "de": {
+      "quantencomputer": "Neuartige Rechenmaschine, die auf den Gesetzen der Quantenmechanik basiert.",
+      "quantenkandidaten": "Mögliche Materialien oder Systeme für die Quantenforschung.",
+      "atomclusters": "Eine Gruppe von mehreren Atomen, die zusammenhängen.",
+      "chemiemethoden": "Wissenschaftliche Verfahren und Arbeitstechniken aus der Chemie.",
+      "qubits": "Die grundlegende Informationseinheit eines Quantencomputers.",
+      "mikrowellenimpulse": "Kurze Signale im Bereich der Mikrowellenstrahlung.",
+      "bordefekte": "Fehlstellen in einem Material, die durch das Element Bor entstehen.",
+      "sauerstoffdefekte": "Fehlstellen in einem Material, die durch das Element Sauerstoff verursacht werden.",
+      "festkörperphysik": "Teilgebiet der Physik, das die Eigenschaften fester Materie untersucht."
+    },
+    "es": {
+      "ordenadores cuánticos": "Dispositivos de computación avanzados basados en la mecánica cuántica para procesar información compleja.",
+      "sensores sensibles": "Instrumentos de alta precisión capaces de detectar variaciones físicas mínimas.",
+      "cúmulos atómicos": "Agrupaciones reducidas de átomos analizadas de forma independiente.",
+      "defecto": "Alteración o imperfección en la estructura cristalina del diamante.",
+      "cúbits": "Unidades básicas de información en la computación cuántica.",
+      "luz láser": "Haz de luz coherente utilizado para estimular los cúbits.",
+      "pulsos de microondas": "Ondas electromagnéticas empleadas para controlar estados cuánticos.",
+      "boro": "Elemento químico utilizado para identificar nuevos defectos emisores.",
+      "oxígeno": "Elemento químico que genera propiedades ópticas distintas en el diamante.",
+      "propiedades ópticas": "Características relacionadas con la emisión y comportamiento de la luz.",
+      "física del estado sólido": "Rama de la física que estudia la materia sólida.",
+      "sistemas moleculares": "Conjuntos de átomos unidos mediante enlaces químicos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:33:08.899Z"
+}
