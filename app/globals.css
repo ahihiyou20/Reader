@@ -1246,27 +1246,19 @@ select {
   stroke-dashoffset: 0;
 }
 .step .stx {
-  position: relative;
-  display: inline-block;
-  transition: opacity var(--dur-draw, 220ms) var(--ease-out);
-}
-.step .stx::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1.5px;
-  background: rgba(255, 255, 255, 0.5);
-  transform-origin: left center;
-  transform: scaleX(0);
-  transition: transform var(--dur-draw, 220ms) cubic-bezier(0.23, 1, 0.32, 1);
+  /* Inline inside its wrapper (a flex item is always a block), so the strike, a background, is drawn
+     on every line of a step that wraps, left to right. */
+  display: inline;
+  background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)) no-repeat 0 58% / 0% 1.5px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition:
+    opacity var(--dur-draw, 220ms) var(--ease-out),
+    background-size var(--dur-draw, 220ms) cubic-bezier(0.23, 1, 0.32, 1);
 }
 .step[aria-pressed='true'] .stx {
   opacity: 0.72;
-}
-.step[aria-pressed='true'] .stx::after {
-  transform: scaleX(1);
+  background-size: 100% 1.5px;
 }
 .abadge {
   display: inline-flex;
@@ -1769,6 +1761,7 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab {
   height: 44px;
 }
 html[data-stage$='portrait'] .bnav[data-mini] .nb.tab:not([aria-current]) {
+  overflow: hidden;
   width: 0;
   opacity: 0;
   pointer-events: none;
@@ -1783,7 +1776,6 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
   display: none;
 }
 .nb.tab {
-  overflow: hidden;
   transition:
     width 360ms var(--ease-out),
     height 360ms var(--ease-out),

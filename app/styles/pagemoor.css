@@ -309,7 +309,9 @@ select.input {
   gap: 2px;
   padding: 8px 8px 16px 16px;
   border-radius: 20px;
-  background: rgba(16, 16, 22, 0.82);
+  /* Nearly opaque: Safari does not blur the reading column (a masked layer) behind it, and the
+     paragraph under the bar read through it. */
+  background: rgba(16, 16, 22, 0.96);
   border: 1px solid rgba(255, 255, 255, 0.14);
   -webkit-backdrop-filter: blur(24px) saturate(140%);
   backdrop-filter: blur(24px) saturate(140%);
