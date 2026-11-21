@@ -9,7 +9,7 @@ import type { Overlay } from '@/stores/ui';
 import { switchTab, useUI } from '@/stores/ui';
 import { preloadCreate, preloadExplore, preloadLibrary, preloadSearch, preloadSocial } from '../overlays/preload';
 import { useReducedMotion, useT } from '../hooks';
-import { chromeP } from '../feed/nav';
+import { chromeP, goHome } from '../feed/nav';
 
 const TABS: Array<{ id: 'home' | Overlay; cls: string; icon: typeof Home; label: 'home' | 'exploreTitle' | 'search' | 'library' | 'messages'; short: 'tabHome' | 'tabExplore' | 'tabSearch' | 'tabLibrary' | 'tabChats'; preload?: () => unknown }> = [
   { id: 'home', cls: 'home', icon: Home, label: 'home', short: 'tabHome' },
@@ -53,7 +53,7 @@ export function BottomNav() {
     [],
   );
   const go = (id: 'home' | Overlay) => {
-    if (id === 'home') useUI.getState().startFeed({ category: null });
+    if (id === 'home') goHome();
     // One destination at a time: a tab switches screens, it does not stack them.
     else switchTab(id);
   };
@@ -152,12 +152,15 @@ function useLens(active: number, mini: boolean, still: boolean, choose: (i: numb
     [x, y, width, height, opacity, still],
   );
   useLayoutEffect(() => place(active, true), [active, place]);
-  // Tabs change size when the bar folds or the stage changes: keep the lens on its tab.
+  const activeNow = useRef(active);
+  activeNow.current = active;
+  // Tabs change size when the bar folds or the stage changes: keep the lens on its tab. One observer for
+  // the bar's life: a new one per tab change reported every size at once and cut the slide to a jump.
   useEffect(() => {
-    const ro = new ResizeObserver(() => !press.current?.on && place(active, false));
+    const ro = new ResizeObserver(() => !press.current?.on && place(activeNow.current, false));
     for (const t of tabs.current) if (t) ro.observe(t);
     return () => ro.disconnect();
-  }, [active, place]);
+  }, [place]);
 
   const follow = (cx: number, cy: number) => {
     const g = bar.current!.getBoundingClientRect();

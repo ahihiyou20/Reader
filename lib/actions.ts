@@ -25,7 +25,9 @@ export function errorMessage(e: unknown): string {
 
 const CACHE = (uid: string) => `reader.userdata.${uid}`;
 const LAST_UID = 'reader.lastUid';
-const REFRESH_AFTER = 30 * 60_000;
+// The account changes on other devices too: a copy older than this is fetched again at load and when
+// the app comes back to the screen (a phone keeps the page alive for days).
+const REFRESH_AFTER = 60_000;
 let started = false;
 let currentUid: string | null = null;
 const userWaiters: Array<(u: AuthUser) => void> = [];
@@ -106,6 +108,10 @@ async function refreshUserData(force = false) {
   } catch {}
   if (cached) applyData(cached.data);
   if (!force && cached && Date.now() - cached.at < REFRESH_AFTER) return void guardStreak();
+  await reloadUserData(b, uid);
+}
+
+async function reloadUserData(b: Awaited<ReturnType<typeof getBackend>>, uid: string) {
   try {
     const fresh = await b.loadUserData();
     if (useUser.getState().user?.uid !== uid) return;
@@ -117,11 +123,24 @@ async function refreshUserData(force = false) {
   }
 }
 
+// Back on screen: likes, saves, progress and the streak may have changed on another device meanwhile.
+// The store is not overlaid with the cache here: it is already the newest copy on this device.
+function onResume() {
+  const user = useUser.getState().user;
+  if (document.visibilityState !== 'visible' || !user || user.isAnonymous) return;
+  let at = 0;
+  try {
+    at = (JSON.parse(localStorage.getItem(CACHE(user.uid)) ?? 'null') as { at: number } | null)?.at ?? 0;
+  } catch {}
+  if (Date.now() - at >= REFRESH_AFTER) void getBackend().then((b) => reloadUserData(b, user.uid));
+}
+
 onBackendStart(startSession);
 
 function startSession() {
   if (started) return;
   started = true;
+  document.addEventListener('visibilitychange', onResume);
   useUser.setState({ backend: backendKind });
   getBackend().then((b) => {
     b.start(async (u) => {
