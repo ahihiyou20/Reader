@@ -9,6 +9,7 @@ import './styles/stage-compact-landscape.css';
 import './styles/stage-regular-portrait.css';
 import './styles/stage-regular-landscape.css';
 import './styles/pagemoor.css';
+import './styles/profile.css';
 
 // Fonts are kept in the repository (app/fonts: the Google Fonts files cut to Latin and Vietnamese)
 // instead of fetched from Google Fonts at build time, which failed the deploy whenever Google answered
@@ -163,6 +164,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={fontVars} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: stageScript }} />
+        {/* A first visit to the home page opens on the welcome: keep the feed hidden until it mounts,
+            or the first article shows for a moment before it. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var r=JSON.parse(localStorage.getItem('pagemoor.reading')||'{}');if(location.pathname==='/'&&!(r.state&&r.state.welcomed))document.documentElement.setAttribute('data-welcome','pending')}catch(e){}`,
+          }}
+        />
         {/* Where the covers live (data/feed.json): almost all on Unsplash, the rest on Cloudinary. */}
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://res.cloudinary.com" />

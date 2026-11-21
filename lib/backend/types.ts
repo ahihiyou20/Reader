@@ -111,6 +111,8 @@ export interface Backend {
   setCommentLike(slug: string, id: string, on: boolean): Promise<void>;
   saveProgress(slug: string, lastSection: number): Promise<void>;
   completeArticle(slug: string, today: string, streak: Streak): Promise<void>;
+  /** The same streak carried over missed days by freezes (lib/streak applyFreezes). */
+  setStreak(streak: Streak): Promise<void>;
   setApplyDone(slug: string, done: boolean[]): Promise<void>;
   updateProfile(patch: { displayName?: string; lang?: Lang; timezone?: string }): Promise<void>;
   submitPost(input: SubmissionInput): Promise<string>;

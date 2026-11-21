@@ -23,7 +23,6 @@ import {
   type User,
 } from 'firebase/auth';
 import {
-  addDoc,
   arrayUnion,
   collection,
   collectionGroup,
@@ -580,6 +579,8 @@ export function createFirebaseBackend(): Backend {
       const data = { uid: u.uid, displayName: name, photoURL: u.photoURL ?? null, text, lang, status: 'visible', likeCount: 0, createdAt: serverTimestamp() };
       b.set(ref, data);
       b.set(counterRef(slug), { comments: increment(1), lastComment: ref.id }, { merge: true });
+      // The Rules allow one comment per 15 s, stamped on the profile in the same write.
+      b.update(userRef(u.uid), { lastCommentAt: serverTimestamp() });
       await b.commit().catch((e) => {
         throw mapError(e);
       });
@@ -645,6 +646,13 @@ export function createFirebaseBackend(): Backend {
       });
     },
 
+    async setStreak(streak) {
+      const u = me();
+      await updateDoc(userRef(u.uid), { streak: { current: streak.current, longest: streak.longest, lastReadDate: streak.lastReadDate } }).catch((e) => {
+        throw mapError(e);
+      });
+    },
+
     async setApplyDone(slug, done) {
       const u = me();
       await setDoc(sub(u.uid, 'progress', slug), { applyDone: done }, { merge: true }).catch((e) => {
@@ -672,7 +680,11 @@ export function createFirebaseBackend(): Backend {
       const profile = await getDoc(userRef(u.uid)).catch(() => null);
       const name = (profile?.data()?.displayName as string) || u.displayName || 'Reader';
       try {
-        const ref = await addDoc(collection(db, 'submissions'), {
+        const ref = doc(collection(db, 'submissions'));
+        const b = writeBatch(db);
+        // The Rules allow one post per 10 minutes, stamped on the profile in the same write.
+        b.update(userRef(u.uid), { lastPostAt: serverTimestamp() });
+        b.set(ref, {
           uid: u.uid,
           displayName: name,
           title: input.title.slice(0, 120),
@@ -684,6 +696,7 @@ export function createFirebaseBackend(): Backend {
           status: 'pending',
           createdAt: serverTimestamp(),
         });
+        await b.commit();
         return ref.id;
       } catch (e) {
         throw mapError(e);
@@ -775,7 +788,7 @@ export function createFirebaseBackend(): Backend {
         snaps.forEach((snap, i) => {
           for (const d of snap.docs) {
             const name = names[i];
-            if (name === 'likes' || name === 'saves') {
+            if (name === 'likes' || name === 'saves' || name === 'shares') {
               const batch = pairs.take(2);
               batch.delete(d.ref);
               batch.set(counterRef(d.id), { [name]: increment(-1) }, { merge: true });
@@ -799,8 +812,9 @@ export function createFirebaseBackend(): Backend {
         if (!u.isAnonymous) {
           const mine = await getDocs(query(collectionGroup(db, 'items'), where('uid', '==', uid)));
           const c = new Batcher(db);
-          // Like the unlike pairs above: each counter write reads its comment, 9 pairs per batch.
-          const commentPairs = new Batcher(db, 18);
+          // Like the unlike pairs above: the counter write reads its comment and the delete reads the
+          // counter, before and after, so 5 pairs per batch.
+          const commentPairs = new Batcher(db, 10);
           for (const d of mine.docs) {
             const slug = d.ref.parent.parent?.id;
             if (!deleteComments) c.take().update(d.ref, { displayName: 'Deleted user', photoURL: null });

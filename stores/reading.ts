@@ -4,6 +4,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Lang } from '@/lib/content/types';
+import { FREEZE_GOAL_MS, FREEZE_MAX } from '@/lib/streak';
 
 /** Per category: what the reader did with its articles. */
 export interface Signal {
@@ -39,6 +40,15 @@ export interface ReadingSettings {
   voice: Partial<Record<Lang, string>>;
 }
 
+/** Streak freezes held, the day one was last claimed, and the days they have covered. */
+export interface Freeze {
+  count: number;
+  claimed: string | null;
+  covered: string[];
+  /** Last change (epoch ms): the newer copy wins when two devices meet. */
+  at: number;
+}
+
 interface ReadingState {
   topics: string[];
   signals: Record<string, Signal>;
@@ -47,6 +57,13 @@ interface ReadingState {
   settings: ReadingSettings;
   /** The welcome screen has been seen. */
   welcomed: boolean;
+  freeze: Freeze;
+  /** Reading time today on this device, toward the day's freeze. Not synced: it changes every few seconds. */
+  today: { day: string; ms: number };
+  addReadingTime(day: string, ms: number): void;
+  /** Take the day's freeze; false when it is not earned yet, already taken, or the store is full. */
+  claimFreeze(day: string): boolean;
+  spendFreezes(days: string[]): void;
   toggleTopic(id: string): void;
   record(category: string, patch: Partial<Signal>): void;
   visit(slug: string, category: string, ms: number, done?: boolean): void;
@@ -68,7 +85,13 @@ const INITIAL = {
   collections: [] as Collection[],
   settings: { fontSize: 18, rate: 1, voice: {} } as ReadingSettings,
   welcomed: false,
+  freeze: { count: 0, claimed: null, covered: [], at: 0 } as Freeze,
+  today: { day: '', ms: 0 },
 };
+
+/** The day's freeze can be taken: 5 minutes read, not taken today, room in the store. */
+export const canClaimFreeze = (s: Pick<ReadingState, 'freeze' | 'today'>, day: string) =>
+  s.today.day === day && s.today.ms >= FREEZE_GOAL_MS && s.freeze.claimed !== day && s.freeze.count < FREEZE_MAX;
 
 export const useReading = create<ReadingState>()(
   persist(
@@ -101,6 +124,17 @@ export const useReading = create<ReadingState>()(
         })),
       setSettings: (patch) => set((s) => ({ settings: { ...s.settings, ...patch } })),
       setWelcomed: (welcomed) => set({ welcomed }),
+      addReadingTime: (day, ms) => set((s) => ({ today: { day, ms: (s.today.day === day ? s.today.ms : 0) + ms } })),
+      claimFreeze: (day) => {
+        const s = useReading.getState();
+        if (!canClaimFreeze(s, day)) return false;
+        set({ freeze: { ...s.freeze, count: s.freeze.count + 1, claimed: day, at: Date.now() } });
+        return true;
+      },
+      spendFreezes: (days) =>
+        set((s) => ({
+          freeze: { ...s.freeze, count: Math.max(0, s.freeze.count - days.length), covered: [...new Set([...s.freeze.covered, ...days])].slice(-60), at: Date.now() },
+        })),
       // Reading data only: the reader keeps their settings and does not see the welcome again.
       reset: () => set((s) => ({ ...INITIAL, settings: s.settings, welcomed: s.welcomed })),
     }),

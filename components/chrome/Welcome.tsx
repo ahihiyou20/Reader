@@ -8,7 +8,7 @@ import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useCategoryName } from '../feed/CoverView';
 import { useReducedMotion, useT } from '../hooks';
-import { coverThumb } from '../overlays/ArticleCard';
+import { CardMedia, coverThumb } from '../overlays/ArticleCard';
 
 const FEATURES = [
   { key: 'wF1', icon: Globe },
@@ -20,6 +20,27 @@ const FEATURES = [
 const FEATURE_MS = 6000;
 
 const hideBroken = (e: React.SyntheticEvent<HTMLImageElement>) => (e.currentTarget.hidden = true);
+/**
+ * A two-finger sideways swipe on a touchpad moves a row of cards one step. A trackpad sends a stream of
+ * wheel events with momentum: the step fires once the swipe passes a threshold, then waits for the
+ * stream to stop.
+ */
+function useSwipeStep(step: (d: 1 | -1) => void) {
+  const acc = useRef(0);
+  const quiet = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const fired = useRef(false);
+  return (e: React.WheelEvent) => {
+    if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
+    clearTimeout(quiet.current);
+    quiet.current = setTimeout(() => ((acc.current = 0), (fired.current = false)), 220);
+    if (fired.current) return;
+    acc.current += e.deltaX;
+    if (Math.abs(acc.current) < 40) return;
+    fired.current = true;
+    step(acc.current > 0 ? 1 : -1);
+  };
+}
+
 /** Place of a card in a row of cards turned towards the middle one. */
 const flow = (i: number, active: number) => ({ ['--o' as string]: i - active, ['--a' as string]: Math.abs(i - active) });
 
@@ -45,6 +66,7 @@ export function Welcome({ items }: { items: FeedItem[] }) {
   const doneRef = useRef(done);
   doneRef.current = done;
   useEffect(() => {
+    document.documentElement.removeAttribute('data-welcome');
     start.current?.focus({ preventScroll: true });
     const key = (e: KeyboardEvent) => e.key === 'Escape' && doneRef.current();
     window.addEventListener('keydown', key);
@@ -66,7 +88,12 @@ export function Welcome({ items }: { items: FeedItem[] }) {
   };
   // Covers kept in the repo come first: they show even when a remote image host is slow or down.
   const featured = [...items.filter((i) => coverThumb(i).startsWith('/')), ...items.filter((i) => !coverThumb(i).startsWith('/'))].slice(0, 6);
-  const src = portrait ? '/welcome/rain-v' : '/welcome/rain';
+  // The film behind the greeting changes every day: one of the articles' motion covers, rain without one.
+  const films = items.filter((i) => i.cover.video);
+  const film = films[Math.floor(Date.now() / 86_400_000) % (films.length || 1)];
+  const rain = portrait ? '/welcome/rain-v' : '/welcome/rain';
+  const clip = film?.cover.video ? (!portrait && film.cover.video.wide) || film.cover.video.url : `${rain}.mp4`;
+  const poster = film ? (portrait ? coverThumb(film) : coverWide(film)) : `${rain}-poster.webp`;
   return (
     <div
       className={`welcome${leaving ? ' leaving' : ''}`}
@@ -78,9 +105,9 @@ export function Welcome({ items }: { items: FeedItem[] }) {
     >
       <section className="welcome-top">
         {still ? (
-          <img className="welcome-bg" src={`${src}-poster.webp`} alt="" />
+          <img className="welcome-bg" src={poster} alt="" />
         ) : (
-          <video className="welcome-bg" key={src} src={`${src}.mp4`} poster={`${src}-poster.webp`} muted loop playsInline autoPlay />
+          <video className="welcome-bg" key={clip} src={clip} poster={poster} muted loop playsInline autoPlay />
         )}
         <div className="welcome-shade" />
         <header className="welcome-nav">
@@ -148,7 +175,7 @@ function Pick({ item, n, title, label, onOpen }: { item: FeedItem; n: number; ti
   const cat = useCategoryName(item.category);
   return (
     <button type="button" onClick={onOpen} style={{ ['--d' as string]: n, ['--dominant' as string]: item.cover.dominant }}>
-      <img src={coverThumb(item)} alt="" loading="lazy" decoding="async" draggable={false} onError={hideBroken} />
+      <CardMedia item={item} />
       <em>No. 0{n}</em>
       <span>
         <b>{label}</b> · <i>{cat}</i>
@@ -163,6 +190,7 @@ function What({ backgrounds, still }: { backgrounds: string[]; still: boolean })
   const t = useT();
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(still);
+  const swipe = useSwipeStep((d) => setActive((i) => (i + d + FEATURES.length) % FEATURES.length));
   useEffect(() => {
     if (paused) return;
     const id = setTimeout(() => setActive((i) => (i + 1) % FEATURES.length), FEATURE_MS);
@@ -175,7 +203,7 @@ function What({ backgrounds, still }: { backgrounds: string[]; still: boolean })
       ))}
       <div className="welcome-shade" />
       <h2 className="wlabel">{t('wWhat')}</h2>
-      <div className="wflow" aria-live="polite">
+      <div className="wflow" aria-live="polite" onWheel={swipe}>
         {FEATURES.map(({ key, icon: Icon }, i) => (
           <button key={key} type="button" className="wfx-card" style={flow(i, active)} aria-current={i === active} onClick={() => setActive(i)}>
             <Icon className="ic" aria-hidden="true" />
@@ -206,6 +234,7 @@ function Featured({ items, onOpen }: { items: FeedItem[]; onOpen: (slug?: string
   const lang = useUI((s) => s.lang);
   const [active, setActive] = useState(Math.min(2, items.length - 1));
   const go = (d: number) => setActive((i) => (i + d + items.length) % items.length);
+  const swipe = useSwipeStep(go);
   if (!items.length) return null;
   const n = (i: number) => String(i).padStart(2, '0');
   return (
@@ -216,7 +245,7 @@ function Featured({ items, onOpen }: { items: FeedItem[]; onOpen: (slug?: string
       <span className="wcf-count">
         {n(active + 1)} <i>/ {n(items.length)}</i>
       </span>
-      <div className="wflow">
+      <div className="wflow" onWheel={swipe}>
         {items.map((item, i) => (
           <FeaturedCard key={item.slug} item={item} title={pick(item.title, lang) ?? ''} style={flow(i, active)} on={i === active} onPick={() => (i === active ? onOpen(item.slug) : setActive(i))} />
         ))}
@@ -240,7 +269,7 @@ function FeaturedCard({ item, title, style, on, onPick }: { item: FeedItem; titl
   const cat = useCategoryName(item.category);
   return (
     <button type="button" className="wcf-card" style={{ ...style, ['--dominant' as string]: item.cover.dominant }} aria-current={on} onClick={onPick}>
-      <img src={coverThumb(item)} alt="" loading="lazy" decoding="async" draggable={false} onError={hideBroken} />
+      <CardMedia item={item} />
       <em>{cat}</em>
       <strong>{title}</strong>
       <span>

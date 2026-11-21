@@ -22,6 +22,8 @@ interface UIState {
   langMenu: boolean;
   /** The main navigation drawer. */
   navOpen: boolean;
+  /** The reader asked to see the welcome again (Settings, the menu's logo): shown even on an article link. */
+  introAsked: boolean;
   category: string | null;
   startSlug: string | null;
   feedVersion: number;
@@ -42,6 +44,16 @@ interface UIState {
 }
 
 let toastId = 0;
+let switchedAt = -1;
+/**
+ * Go to a tab from the navigation. Tabs are peers, not a stack, so the panel on screen fades back and
+ * the new one grows in on the spot (iOS tab switching) instead of both sliding across (Panel).
+ */
+export function switchTab(id: Overlay) {
+  if (useUI.getState().overlays.length) switchedAt = performance.now();
+  useUI.setState({ overlays: [id] });
+}
+export const tabSwitching = () => performance.now() - switchedAt < 150;
 
 export const useUI = create<UIState>((set) => ({
   lang: 'en',
@@ -52,6 +64,7 @@ export const useUI = create<UIState>((set) => ({
   sheet: null,
   langMenu: false,
   navOpen: false,
+  introAsked: false,
   category: null,
   startSlug: null,
   feedVersion: 0,

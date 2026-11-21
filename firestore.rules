@@ -54,7 +54,7 @@ service cloud.firestore {
         && (s.lastReadDate == null || (s.lastReadDate is string && s.lastReadDate.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')));
     }
     function validProfile(d) {
-      return d.keys().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'createdAt', 'lastActiveAt'])
+      return d.keys().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'createdAt', 'lastActiveAt', 'lastCommentAt', 'lastPostAt'])
         && (d.displayName == null || isString(d.displayName, 1, 60))
         && (d.photoURL == null || isString(d.photoURL, 1, 1000))
         && d.isAnonymous == !isGoogle()
@@ -67,11 +67,13 @@ service cloud.firestore {
 
     match /users/{uid} {
       allow read, delete: if isMe(uid);
-      allow create: if isMe(uid) && validProfile(request.resource.data)
+      allow create: if isMe(uid) && validProfile(request.resource.data) && !('lastCommentAt' in request.resource.data) && !('lastPostAt' in request.resource.data)
         && request.resource.data.streak.current == 0 && request.resource.data.stats.articlesRead == 0
         && request.resource.data.createdAt == request.time;
       allow update: if isMe(uid) && validProfile(request.resource.data)
-        && changed().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'lastActiveAt'])
+        && changed().hasOnly(['displayName', 'photoURL', 'isAnonymous', 'lang', 'timezone', 'streak', 'stats', 'lastActiveAt', 'lastCommentAt', 'lastPostAt'])
+        && (!changed().hasAny(['lastCommentAt']) || request.resource.data.lastCommentAt == request.time)
+        && (!changed().hasAny(['lastPostAt']) || request.resource.data.lastPostAt == request.time)
         && (request.resource.data.streak.current == resource.data.streak.current
             || request.resource.data.streak.current == resource.data.streak.current + 1
             || request.resource.data.streak.current == 1);
@@ -88,7 +90,9 @@ service cloud.firestore {
       }
       // One per article the reader has shared: the share counter counts readers, not taps.
       match /shares/{slug} {
-        allow read, delete: if isMe(uid);
+        allow read: if isMe(uid);
+        // Deleted only with one off the counter, so delete-and-share-again cannot raise it.
+        allow delete: if isMe(uid) && undone('shares', slug);
         allow create: if isMe(uid) && request.resource.data.keys().hasOnly(['slug', 'createdAt']) && request.resource.data.slug == slug;
       }
       match /progress/{slug} {
@@ -108,12 +112,15 @@ service cloud.firestore {
       match /reading/{id} {
         allow read, delete: if isMe(uid);
         allow create, update: if isMe(uid) && id == 'state'
-          && request.resource.data.keys().hasOnly(['topics', 'signals', 'history', 'collections', 'settings', 'updatedAt'])
+          && request.resource.data.keys().hasOnly(['topics', 'signals', 'history', 'collections', 'settings', 'freeze', 'updatedAt'])
           && request.resource.data.topics is list && request.resource.data.topics.size() <= 50
           && request.resource.data.signals is map && request.resource.data.signals.size() <= 50
           && request.resource.data.history is list && request.resource.data.history.size() <= 300
           && request.resource.data.collections is list && request.resource.data.collections.size() <= 100
-          && request.resource.data.settings is map;
+          && request.resource.data.settings is map
+          && (!('freeze' in request.resource.data) || (request.resource.data.freeze is map
+            && request.resource.data.freeze.count is int && request.resource.data.freeze.count >= 0 && request.resource.data.freeze.count <= 2
+            && request.resource.data.freeze.covered is list && request.resource.data.freeze.covered.size() <= 60));
       }
       match /commentLikes/{key} {
         allow read: if isMe(uid);
@@ -140,29 +147,47 @@ service cloud.firestore {
         || (delta('saves', 1) && added('saves', slug))
         || (delta('saves', -1) && removed('saves', slug))
         || (delta('shares', 1) && added('shares', slug))
+        || (delta('shares', -1) && removed('shares', slug))
         || commentDelta(slug, 1)
         || commentDelta(slug, -1));
     }
 
     // ---------- Comments ----------
+    // One comment per 15 s per reader: the write that creates a comment stamps the profile's
+    // lastCommentAt, and the stamp before it must be older. Keeps a script from flooding a thread or
+    // spending the project's daily write quota.
+    function me() { return /databases/$(db)/documents/users/$(request.auth.uid); }
+    function paced() { return stamped('lastCommentAt', 15); }
+    // The write stamps users/{uid}.<field> with its own time, and the stamp before it is `secs` old.
+    function stamped(field, secs) {
+      return existsAfter(me()) && getAfter(me()).data.get(field, null) == request.time
+        && (!exists(me()) || get(me()).data.get(field, null) == null
+          || get(me()).data[field] < request.time - duration.value(secs, 's'));
+    }
     match /comments/{slug}/items/{id} {
       allow read: if resource.data.status == 'visible' || isMod() || (signedIn() && resource.data.uid == request.auth.uid);
       allow create: if isGoogle()
         && request.resource.data.keys().hasOnly(['uid', 'displayName', 'photoURL', 'text', 'lang', 'status', 'likeCount', 'createdAt'])
         && request.resource.data.uid == request.auth.uid
         && isString(request.resource.data.displayName, 1, 60)
-        && (request.resource.data.photoURL == null || isString(request.resource.data.photoURL, 1, 1000))
+        // Everyone who reads the thread loads this picture: a Google avatar only, never a server of the
+        // commenter's choosing that would see each reader's address.
+        && (request.resource.data.photoURL == null || (isString(request.resource.data.photoURL, 1, 1000)
+          && request.resource.data.photoURL.matches('^https://lh[0-9]+[.]googleusercontent[.]com/.*')))
         && isString(request.resource.data.text, 1, 500)
         && request.resource.data.lang in ['en', 'vi', 'fr', 'de', 'es']
         && request.resource.data.status == 'visible'
         && request.resource.data.likeCount == 0
-        && request.resource.data.createdAt == request.time;
+        && request.resource.data.createdAt == request.time
+        && paced();
       allow update: if (isMod() && changed().hasOnly(['status']) && request.resource.data.status in ['visible', 'hidden'])
         || (signedIn() && resource.data.uid == request.auth.uid && changed().hasOnly(['displayName', 'photoURL'])
             && request.resource.data.displayName == 'Deleted user' && request.resource.data.photoURL == null)
         || (signedIn() && delta('likeCount', 1) && added('commentLikes', slug + '__' + id))
         || (signedIn() && delta('likeCount', -1) && removed('commentLikes', slug + '__' + id));
-      allow delete: if (signedIn() && resource.data.uid == request.auth.uid) || isMod();
+      // A visible comment goes with one off the counter, in the same write.
+      allow delete: if ((signedIn() && resource.data.uid == request.auth.uid) || isMod())
+        && (resource.data.status != 'visible' || counted(/databases/$(db)/documents/counters/$(slug), 'comments'));
     }
     // Your own comments across all articles (export and account deletion).
     match /{path=**}/items/{id} {
@@ -183,7 +208,9 @@ service cloud.firestore {
         && request.resource.data.references is list && request.resource.data.references.size() <= 20
         && request.resource.data.coverUrl is string && request.resource.data.coverUrl.size() <= 500
         && request.resource.data.lang in ['en', 'vi', 'fr', 'de', 'es']
-        && request.resource.data.createdAt == request.time;
+        && request.resource.data.createdAt == request.time
+        // One post per 10 minutes per reader, like comments (stamped on the profile in the same write).
+        && stamped('lastPostAt', 600);
     }
 
     match /moderators/{uid} {

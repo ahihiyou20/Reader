@@ -11,6 +11,8 @@ import path from 'node:path';
 import type { ArticleSource, CoverVideo } from '../../lib/content/types';
 import { ROOT, USER_AGENT, dirs, listJson, readJson, writeJson } from './lib';
 import { hasCloudinary, onCloudinary, uploadVideo } from './cloudinary';
+import { z } from 'zod';
+import { geminiStructured, hasGemini } from './gemini';
 
 const SECONDS = 6;
 const FPS = 24;
@@ -136,6 +138,8 @@ async function store(file: string, name: string): Promise<string> {
 
 /** Download a Pixabay clip, make both shapes for the article, store them and return its `cover.video` entry. */
 export async function motionCover(a: ArticleSource, clip: PixabayClip, start = 0): Promise<CoverVideo> {
+  // Taken now, so the next article in this run does not get the same clip.
+  (await clipsInUse()).add(clip.id);
   const tmp = await fs.mkdtemp(path.join(os.tmpdir(), 'clip-'));
   try {
     await cutClip(clip, tmp, start);
@@ -181,8 +185,69 @@ export async function moveClipsOffRepo(): Promise<string[]> {
  * A motion cover without a person choosing: the clip queued in `coverClip`, else the first unused
  * search hit for each query in turn. Returns undefined when nothing fits.
  */
+const searchSchema = z.object({ queries: z.array(z.string().min(2).max(60)).min(1).max(4) });
+const shortlistSchema = z.object({ ids: z.array(z.number().int()).max(3) });
+const pickSchema = z.object({ id: z.number().int(), why: z.string().max(200) });
+
+/** One frame from the middle of a clip, small, for Gemini to look at. Undefined when ffmpeg cannot read it. */
+async function frameOf(clip: PixabayClip): Promise<Buffer | undefined> {
+  const out = path.join(await fs.mkdtemp(path.join(os.tmpdir(), 'frame-')), 'f.jpg');
+  try {
+    await ffmpeg(['-ss', String(Math.min(3, clip.seconds / 2)), '-i', clip.file, '-frames:v', '1', '-vf', 'scale=512:-2', '-q:v', '5', out]);
+    return await fs.readFile(out);
+  } catch {
+    return undefined;
+  } finally {
+    await fs.rm(path.dirname(out), { recursive: true, force: true });
+  }
+}
+
+/**
+ * Gemini as the picture editor: it names footage that fits the article, shortlists up to three clips
+ * from what Pixabay returns by their tags, then looks at a frame of each and keeps one, or none (id 0)
+ * when nothing fits. A wrong clip is worse than a photo. Without frames (no ffmpeg, or the agy CLI,
+ * which takes no pictures) the shortlist's first clip is the pick.
+ */
+export async function geminiClip(a: ArticleSource, hints: string[]): Promise<PixabayClip | undefined> {
+  const about = `Title: ${a.title.en}\nHook: ${a.hook.en}\nTags: ${(a.tags ?? []).join(', ')}`;
+  const { value: s } = await geminiStructured({
+    schema: searchSchema,
+    prompt: `You choose a looping background video for a reading app's article cover.\n${about}\n\nGive up to 4 short Pixabay video search phrases (2 to 4 English words each) for real footage of what the article is about: the place, object or phenomenon itself, filmed, not an abstract concept. Most specific first.${hints.length ? ` An editor suggested: ${hints.join('; ')}.` : ''}`,
+  });
+  const seen = new Set<number>();
+  const pool: PixabayClip[] = [];
+  for (const q of [...(s.queries ?? []), ...hints].slice(0, 5))
+    for (const c of await searchClips(q, 5))
+      if (!seen.has(c.id) && pool.length < 16) {
+        seen.add(c.id);
+        pool.push(c);
+      }
+  if (!pool.length) return undefined;
+  const { value: l } = await geminiStructured({
+    schema: shortlistSchema,
+    temperature: 0.1,
+    prompt: `${about}\n\nCandidate Pixabay clips (id: tags):\n${pool.map((c) => `${c.id}: ${c.tags}`).join('\n')}\n\nList up to 3 clip ids, best first, whose tags show what this article is about, so a reader would see the link at a glance. Leave out clips of people's faces, text, logos or cartoons and clips that only fit loosely. An empty list when none fits.`,
+  });
+  const short = (l.ids ?? []).map((id) => pool.find((c) => c.id === id)).filter((c): c is PixabayClip => c !== undefined);
+  if (!short.length) return undefined;
+  const frames = process.env.GEMINI_VIA === 'agy' || !(await hasFfmpeg()) ? [] : await Promise.all(short.map(frameOf));
+  const seenClips = short.filter((_, i) => frames[i]);
+  if (!seenClips.length) return short[0];
+  const { value: p } = await geminiStructured({
+    schema: pickSchema,
+    temperature: 0.1,
+    images: frames.filter((f): f is Buffer => f !== undefined),
+    prompt: `${about}\n\nThe pictures are one frame from each candidate clip, in this order: ${seenClips.map((c) => c.id).join(', ')}.\nPick the clip a reader would connect with this article at a glance, that looks good full screen behind white text, with no faces, text, logos or cartoon look. If none of them does, answer id 0.`,
+  });
+  return seenClips.find((c) => c.id === p.id);
+}
+
 export async function autoMotion(a: ArticleSource, queries: string[]): Promise<CoverVideo | undefined> {
   if (a.coverClip) return motionCover(a, await clipById(pixabayId(a.coverClip)));
+  if (hasGemini()) {
+    const clip = await geminiClip(a, queries.filter(Boolean).slice(0, 1));
+    return clip && motionCover(a, clip);
+  }
   for (const q of queries.filter(Boolean)) {
     const [clip] = await searchClips(q, 6);
     if (clip) return motionCover(a, clip);

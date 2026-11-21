@@ -47,6 +47,9 @@
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
   --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  /* A spring with a little bounce (damping ratio 0.62, response 0.42 s) over 600 ms: what a pressed
+     control does when let go, overshooting its rest size a hair before settling. */
+  --ease-bounce: linear(0 0%, 0.06 4.2%, 0.201 8.3%, 0.378 12.5%, 0.559 16.7%, 0.721 20.8%, 0.854 25%, 0.954 29.2%, 1.021 33.3%, 1.062 37.5%, 1.08 41.7%, 1.083 45.8%, 1.076 50%, 1.063 54.2%, 1.047 58.3%, 1.033 62.5%, 1.02 66.7%, 1.009 70.8%, 1.002 75%, 0.997 79.2%, 0.994 83.3%, 0.993 87.5%, 0.993 91.7%, 0.994 95.8%, 1 100%);
   --ease-spring: linear(0 0%, 0.065 6.3%, 0.2 12.5%, 0.351 18.8%, 0.491 25%, 0.61 31.3%, 0.707 37.5%, 0.783 43.8%, 0.841 50%, 0.885 56.3%, 0.917 62.5%, 0.941 68.8%, 0.958 75%, 0.97 81.3%, 0.979 87.5%, 0.985 93.8%, 1 100%);
   --dur-press: 120ms;
   --dur-release: 200ms;
@@ -185,7 +188,7 @@ a,
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   transition:
-    transform var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
+    transform 600ms var(--ease-bounce),
     filter var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
     opacity var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
     background-color var(--dur-release, 200ms) cubic-bezier(0.23, 1, 0.32, 1),
@@ -217,9 +220,12 @@ input[type='checkbox'][data-pressed='true'] {
 .tb-ic[data-pressed='true'],
 .iconbtn:active,
 .iconbtn[data-pressed='true'],
-.nb.side:active,
-.nb.side[data-pressed='true'] {
+.nb.plus[data-pressed='true'] {
   transform: scale(0.92);
+  transition-duration: 0ms;
+}
+.nb.tab[data-pressed='true'] .ic {
+  transform: scale(0.86);
   transition-duration: 0ms;
 }
 
@@ -803,6 +809,12 @@ select {
   text-shadow:
     0 1px 2px rgba(0, 0, 0, 0.35),
     0 4px 18px rgba(0, 0, 0, 0.45);
+}
+.sec.on p {
+  transition: opacity 300ms var(--ease-out);
+}
+.sec.on p.p-dim {
+  opacity: 0.45;
 }
 .sec h3 {
   margin: 0 0 10px;
@@ -1629,76 +1641,241 @@ select {
   width: 16px;
   height: 16px;
 }
+/* ---------- Liquid glass navigation (BottomNav) ----------
+   Glass: a thin tinted body, a strong blur with extra saturation so the cover's colour comes through,
+   a bright rim on top and a darker one below (light from above), and a soft shadow lifting it off the
+   picture. The selected tab is a lens of brighter glass that slides between tabs on a spring. */
 .bnav {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: calc(var(--sab) + 6px);
-  height: 66px;
+  bottom: calc(var(--sab) + 8px);
   z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+/* On Explore, Search and Library the bar stays over the page, as a tab bar does; other panels
+   (settings, a profile, chats, creating a post) cover it. */
+.bnav[data-over] {
+  z-index: 50;
+}
+html[data-stage$='portrait'] :is(.panel.explore, .panel.search, .panel.library) .pbody {
+  padding-bottom: calc(var(--sab) + 104px);
+}
+html[data-stage='regular-landscape'] :is(.panel.explore, .panel.search, .panel.library) {
+  padding-right: 92px;
+}
+html[data-stage='compact-landscape'] :is(.panel.explore, .panel.search, .panel.library) {
+  padding-left: calc(env(safe-area-inset-left) + 60px);
+}
+.bnav[data-gone] {
+  visibility: hidden;
+  transition: visibility 0s 320ms;
+}
+.glass {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.05) 46%, rgba(255, 255, 255, 0.09));
+  -webkit-backdrop-filter: blur(22px) saturate(1.9); /* auteur-allow: G1 -- liquid glass chrome material */
+  backdrop-filter: blur(22px) saturate(1.9); /* auteur-allow: G1 -- liquid glass chrome material */
+  box-shadow:
+    inset 0 1px 0.5px rgba(255, 255, 255, 0.34),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.28),
+    inset 0 0 22px rgba(255, 255, 255, 0.05),
+    0 14px 34px rgba(0, 0, 0, 0.42),
+    0 2px 6px rgba(0, 0, 0, 0.28);
+}
+/* The rim: a hairline that catches the light at the top-left and fades round the sides. */
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.08) 38%, rgba(255, 255, 255, 0.04) 62%, rgba(255, 255, 255, 0.3));
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+.gtabs {
+  display: flex;
+  gap: 2px;
+  padding: 5px;
+  border-radius: 999px;
+  pointer-events: auto;
+  /* The lens can be dragged along the bar: the browser must not take the gesture for a scroll. */
+  touch-action: none;
+}
+/* Sheen: light pooled along the top of the glass, behind the icons. */
+.glass::after {
+  content: '';
+  position: absolute;
+  inset: 1px 1px 45% 1px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0));
   pointer-events: none;
 }
 .nb {
-  position: absolute;
-  top: 50%;
+  position: relative;
   pointer-events: auto;
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  transition: transform var(--dur-press) var(--ease-out);
+  color: rgba(255, 255, 255, 0.82);
+  transition: transform var(--dur-press) var(--ease-out), color 200ms var(--ease-out);
 }
-.nb.side {
-  width: 50px;
-  height: 50px;
-  margin-top: -25px;
-  background: rgba(22, 22, 26, 0.74);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
+.nb.tab {
+  isolation: isolate;
+  grid-template-rows: auto auto;
+  align-content: center;
+  gap: 3px;
+  /* Five tabs, the + and both margins share the phone's width. */
+  width: clamp(48px, calc((100vw - 120px) / 5), 62px);
+  height: 54px;
+  border-radius: 999px;
 }
-.nb.side:active {
-  transform: scale(0.95);
+.nb.tab .ic {
+  width: 23px;
+  height: 23px;
+  transition: transform 260ms var(--ease-out);
 }
-.nb.search {
-  left: calc(50% - 120px);
+.nb.tab .lbl {
+  max-width: calc(100% - 4px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: 600 10px/1 var(--font-sans);
+  letter-spacing: 0.01em;
 }
-.nb.chat {
-  left: calc(50% + 70px);
+.nb.tab[aria-current='page'] {
+  color: #fff;
 }
-.nb.chat .ic {
-  width: 26px;
-  height: 26px;
+.nb.tab:active .ic {
+  transform: scale(0.86);
+  transition-duration: 0ms;
+}
+/* The lens: brighter glass with its own rim, sliding to the selected tab (Indicator). */
+/* Folded while reading (phones held upright), as iOS tab bars minimise on scroll: only the current
+   tab stays, as a small glass button beside the +, and the text gets the width back. */
+html[data-stage$='portrait'] .bnav[data-mini] .nb.tab {
+  height: 44px;
+}
+html[data-stage$='portrait'] .bnav[data-mini] .nb.tab:not([aria-current]) {
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+html[data-stage$='portrait'] .bnav[data-mini] .nb.tab[aria-current] {
+  width: 44px;
+}
+html[data-stage$='portrait'] .bnav[data-mini] .gtabs {
+  gap: 0;
+}
+html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
+  display: none;
+}
+.nb.tab {
+  overflow: hidden;
+  transition:
+    width 360ms var(--ease-out),
+    height 360ms var(--ease-out),
+    opacity 220ms var(--ease-out),
+    color 200ms var(--ease-out);
+}
+/* The lens: a bead of brighter glass on the selected tab, lit from above, with a glint at its top. */
+.lens {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 999px;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.06) 62%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.16));
+  box-shadow:
+    inset 0 1px 0.5px rgba(255, 255, 255, 0.7),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.16),
+    inset 0 0 14px rgba(255, 255, 255, 0.08),
+    0 6px 16px rgba(0, 0, 0, 0.26);
+  transition:
+    background-color 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out);
+}
+.lens::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 22%;
+  right: 22%;
+  height: 34%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0));
+}
+/* Held: the bead lifts off the bar and clears, a drop of water over the icons. */
+.gtabs[data-lifted] .lens {
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02) 70%),
+    rgba(255, 255, 255, 0.04);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55),
+    inset 0 2px 10px rgba(255, 255, 255, 0.28),
+    inset 0 -3px 8px rgba(0, 0, 0, 0.18),
+    0 16px 34px rgba(0, 0, 0, 0.4);
+}
+.nb.tab[data-under] {
+  color: #fff;
+}
+.nb.tab[data-under] .ic {
+  transform: scale(1.12);
+  transition: transform 600ms var(--ease-bounce);
 }
 .plusw {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 66px;
-  height: 66px;
-  margin: -33px 0 0 -33px;
+  flex: none;
+  width: 58px;
+  height: 58px;
   pointer-events: auto;
 }
 .nb.plus {
-  inset: 0;
-  top: 0;
-  width: 66px;
-  height: 66px;
-  color: #111;
-  border: 3.5px solid transparent;
-  background:
-    linear-gradient(#fff, #fff) padding-box,
-    var(--grad-brand) border-box;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: var(--cta-ink);
+  background: var(--grad-cta);
   box-shadow:
-    0 0 18px rgba(255, 61, 139, 0.45),
-    0 0 32px rgba(139, 92, 246, 0.35);
+    inset 0 1px 0.5px rgba(255, 255, 255, 0.7),
+    inset 0 -2px 4px rgba(120, 80, 20, 0.25),
+    0 10px 28px rgba(235, 189, 120, 0.28),
+    0 2px 6px rgba(0, 0, 0, 0.3);
 }
 .nb.plus:active {
-  transform: scale(0.95);
-  filter: brightness(1.08);
+  transform: scale(0.92);
 }
 .nb.plus .ic {
-  width: 32px;
-  height: 32px;
+  position: relative;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+}
+/* A glossy dome: the top half of the + catches the light. */
+.nb.plus::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 14%;
+  right: 14%;
+  height: 46%;
+  border-radius: 999px 999px 60% 60% / 100% 100% 50% 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  pointer-events: none;
 }
 .badge-dot {
   position: absolute;
@@ -2206,7 +2383,8 @@ select {
   overflow: hidden;
   background: var(--dominant, #222);
 }
-.thumb img {
+.thumb img,
+.thumb video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2259,7 +2437,8 @@ select {
 .card:active {
   transform: scale(0.97);
 }
-.card img {
+.card img,
+.card video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2753,9 +2932,6 @@ select {
   position: relative;
   isolation: isolate;
 }
-.nb.side {
-  isolation: isolate;
-}
 .indicator {
   position: absolute;
   inset: 0;
@@ -2771,7 +2947,7 @@ select {
 }
 .app[data-has-panel='true'] .feed,
 .app[data-has-panel='true'] .topbar,
-.app[data-has-panel='true'] .bnav {
+.app[data-has-panel='true'] .bnav:not([data-over]) {
   visibility: hidden;
 }
 
@@ -2855,7 +3031,7 @@ select {
 @media (prefers-reduced-transparency: reduce) {
   .pill,
   .cb,
-  .nb.side,
+  .glass,
   .lang,
   .kp,
   .lmenu,
@@ -2867,7 +3043,7 @@ select {
   .cb,
   .pill,
   .lang,
-  .nb.side {
+  .glass {
     background-color: rgba(20, 20, 28, 0.95);
   }
 }
@@ -2875,7 +3051,7 @@ select {
   .cb,
   .pill,
   .lang,
-  .nb.side {
+  .glass {
     background-color: rgba(10, 10, 14, 0.96);
     border-color: rgba(255, 255, 255, 0.4);
   }
@@ -2902,4 +3078,32 @@ select {
 }
 .day:not(.on) i svg {
   display: none;
+}
+
+/* First visit: the feed stays hidden until the welcome covers it (head script in app/layout.tsx). */
+html[data-welcome='pending'] .app > :not(.welcome) {
+  visibility: hidden;
+}
+
+/* The picture of a card on its way to becoming the article's cover (components/overlays/zoom.ts). */
+.zoom-ghost {
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: none;
+  transform-origin: center;
+  will-change: transform, clip-path;
+  background: #000;
+}
+.zoom-ghost > * {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (prefers-reduced-motion: reduce) {
+  /* The bar folds and unfolds at once, and the lens with it. */
+  .nb.tab {
+    transition: none;
+  }
 }

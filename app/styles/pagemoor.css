@@ -95,6 +95,21 @@
     color: #fff;
   }
 }
+/* The brand opens the welcome: it keeps the brand's look, not a menu row's. */
+.sidenav button.sidenav-brand {
+  height: auto;
+  padding: 0 8px 18px;
+  border-radius: 0;
+  color: #fff;
+  font: 500 24px/1 'Playfair Display', Georgia, serif;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .sidenav button.sidenav-brand:hover {
+    background: none;
+    opacity: 0.85;
+  }
+}
 .sidenav-foot {
   margin: auto 8px 0;
   color: var(--fg3);
@@ -682,7 +697,8 @@ html[data-stage='compact-portrait'] .pill.listen {
   border: 1px solid rgba(255, 255, 255, 0.22);
   animation: welcome-rise 800ms var(--ease-out) calc(700ms + var(--d) * 120ms) both;
 }
-.welcome-picks img {
+.welcome-picks img,
+.welcome-picks video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -774,15 +790,6 @@ html[data-stage='compact-landscape'] .welcome-picks button:nth-child(3) {
   }
 }
 
-/* Cover clip: fades in over the still image once it has frames to show. */
-.media-clip {
-  animation: clip-in 480ms var(--ease-out) 200ms both;
-}
-@keyframes clip-in {
-  from {
-    opacity: 0;
-  }
-}
 
 /* Welcome: three screens, one per scroll stop */
 .welcome {
@@ -992,7 +999,8 @@ html[data-stage='compact-portrait'] .welcome-nav .wlink {
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
   text-align: center !important;
 }
-.wcf-card img {
+.wcf-card img,
+.wcf-card video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1289,7 +1297,8 @@ html[data-stage$='landscape'] :is(.panel.explore, .panel.library) .card.wide .ct
   -webkit-line-clamp: 2;
 }
 @media (hover: hover) {
-  .card img {
+  .card img,
+  .card video {
     transition: transform 600ms var(--ease-out);
   }
   .card:hover img {
@@ -1420,13 +1429,15 @@ html[data-stage='compact-portrait'] .dhead .btitle {
   filter: blur(14px);
   transform: scale(1.15);
 }
-.card img {
+.card img,
+.card video {
   opacity: 0;
   transition:
     opacity 380ms var(--ease-out),
     transform 600ms var(--ease-out);
 }
-.card img.in {
+.card img.in,
+.card video.in {
   opacity: 1;
 }
 /* The Listen pill matches the Details pill beside it on every stage. */
@@ -1604,4 +1615,24 @@ html[data-stage='compact-landscape'] .audiobar {
   bottom: calc(var(--sab) + 10px);
   width: min(460px, 52%);
   transform: none;
+}
+
+/* The title of the article that has just come on screen settles into place, line after line, coming
+   into focus as it rises. No fade: the words are readable from the first frame. */
+section.article[data-active='true'] .ctitle > span {
+  animation: title-rise 700ms var(--ease-out) both;
+}
+section.article[data-active='true'] .ctitle > .tb {
+  animation-delay: 70ms;
+}
+@keyframes title-rise {
+  from {
+    transform: translateY(14px);
+    filter: blur(6px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  section.article[data-active='true'] .ctitle > span {
+    animation: none;
+  }
 }

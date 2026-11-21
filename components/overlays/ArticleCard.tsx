@@ -1,13 +1,16 @@
 'use client';
 import { Heart } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 import type { FeedItem } from '@/lib/content/types';
-import { cloudinarySized, isCloudinaryImage } from '@/lib/cloudinary';
+import { cloudinarySized, cloudinaryVideoSized, isCloudinaryImage } from '@/lib/cloudinary';
+import { useReducedMotion } from '../hooks';
 import { formatCount } from '@/lib/format';
 import { pick } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
 import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
 import { useCategoryName } from '../feed/CoverView';
+import { zoomOpen } from './zoom';
 
 /** Ask an image CDN for a smaller file: a card does not need the full-screen cover. */
 export function sized(url: string, w: number, h: number): string {
@@ -22,6 +25,48 @@ export function sized(url: string, w: number, h: number): string {
 export function coverThumb(item: FeedItem, wide = false) {
   if (wide && item.cover.wide) return sized(item.cover.wide, 720, 405);
   return sized(item.cover.type === 'video' ? item.cover.poster ?? '' : item.cover.url, 480, 640);
+}
+
+/**
+ * A card's picture: the article's clip when it has one, as on its cover, playing only while the card is
+ * on screen (a grid of moving cards would spend the battery on ones nobody sees); otherwise its photo.
+ */
+export function CardMedia({ item, wide = false }: { item: FeedItem; wide?: boolean }) {
+  const still = useReducedMotion();
+  const ref = useRef<HTMLVideoElement>(null);
+  const clip = item.cover.video && !still ? (wide && item.cover.video.wide) || item.cover.video.url : undefined;
+  useEffect(() => {
+    const v = ref.current;
+    if (!v) return;
+    const io = new IntersectionObserver(([e]) => (e.isIntersecting ? v.play().catch(() => {}) : v.pause()), { threshold: 0.35 });
+    io.observe(v);
+    return () => io.disconnect();
+  }, [clip]);
+  if (clip)
+    return (
+      <video
+        ref={ref}
+        key={clip}
+        src={wide ? cloudinaryVideoSized(clip, 720, 405) : cloudinaryVideoSized(clip, 480, 640)}
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+        onLoadedData={(e) => e.currentTarget.classList.add('in')}
+      />
+    );
+  return (
+    <img
+      src={coverThumb(item, wide)}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      draggable={false}
+      onLoad={(e) => e.currentTarget.classList.add('in')}
+      onError={(e) => (e.currentTarget.hidden = true)}
+    />
+  );
 }
 
 export function ArticleCard({
@@ -46,20 +91,15 @@ export function ArticleCard({
     <button
       className={`card${wide ? ' wide' : ''}`}
       type="button"
-      onClick={onOpen}
+      onClick={(e) => {
+        zoomOpen(e.currentTarget, item.slug);
+        onOpen();
+      }}
       style={{ ['--dominant' as string]: item.cover.dominant, ['--i' as string]: Math.min(index, 16) }}
     >
       {/* The tiny blurred cover shows at once; the photo fades in over it, or never replaces it if it fails. */}
       {item.cover.blurDataURL && <span className="cblur" style={{ backgroundImage: `url(${item.cover.blurDataURL})` }} />}
-      <img
-        src={coverThumb(item, wide)}
-        alt=""
-        loading="lazy"
-        decoding="async"
-        draggable={false}
-        onLoad={(e) => e.currentTarget.classList.add('in')}
-        onError={(e) => (e.currentTarget.hidden = true)}
-      />
+      <CardMedia item={item} wide={wide} />
       <span className="shade" />
       <span className="ct">{pick(item.title, lang)}</span>
       <span className="cl">

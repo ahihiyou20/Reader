@@ -12,3 +12,11 @@ export function cloudinarySized(url: string, w: number, h: number, format: 'auto
   if (!m) return url;
   return `${m[1]}c_fill,g_auto,w_${w},h_${h},f_${format},q_auto/${m[2]}`;
 }
+
+const VIDEO = /^(https:\/\/res\.cloudinary\.com\/[^/]+\/video\/upload\/)(.*)$/;
+
+/** A clip scaled down for a card: the full-screen cover clip is several times the pixels a card needs. */
+export function cloudinaryVideoSized(url: string, w: number, h: number): string {
+  const m = url.match(VIDEO);
+  return m ? `${m[1]}c_fill,w_${w},h_${h},q_auto/${m[2]}` : url;
+}

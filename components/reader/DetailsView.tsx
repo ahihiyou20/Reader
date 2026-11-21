@@ -4,7 +4,7 @@ import { MDiv, MH2 } from '@/components/Motion';
 import { useMotionValue, useTransform } from 'framer-motion';
 import { ArrowUpRight, ChevronDown, ChevronsRight, Headphones, Library } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { ArticleClient, FeedItem } from '@/lib/content/types';
+import { LANG_NAME, type ArticleClient, type FeedItem } from '@/lib/content/types';
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
 import { isFallback, pick } from '@/lib/i18n';
 import { clamp, prefersReducedMotion } from '@/lib/motion';
@@ -172,6 +172,16 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
       if (atBottom) k = secs.current.length - 1;
       setFocus(k);
       setCurrent(k);
+      // A long section is several paragraphs: within it only the paragraph at the reading line is in
+      // full focus (set on the DOM directly, as it moves on every scroll).
+      secs.current.forEach((sec, i) => {
+        const paras = sec ? Array.from(sec.querySelectorAll<HTMLElement>(':scope > p')) : [];
+        let on = -1;
+        if (i === k && paras.length > 1) paras.forEach((p, j) => p.offsetTop <= line && (on = j));
+        if (i === k && paras.length > 1 && on < 0) on = 0;
+        if (atBottom && i === k) on = paras.length - 1;
+        paras.forEach((p, j) => p.classList.toggle('p-dim', on >= 0 && j !== on));
+      });
       if (!isRestoring) {
         latestAnchor.current = captureAnchor(getBlockBoxes(root), root.scrollTop, lineY);
       }
@@ -334,7 +344,9 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
   const listening = useAudio((s) => s.slug === slug);
   const listen = () => {
     if (listening) return useAudio.getState().toggle();
-    useAudio.getState().play(trackFor(article, lang));
+    const track = trackFor(article, lang);
+    if (track.missingVoice) useUI.getState().showToast(t('noVoiceFallback', { lang: LANG_NAME[track.missingVoice] }));
+    useAudio.getState().play(track);
   };
   const o = article.origin;
   // Group 3 cannot be translated: Vietnamese readers get Reader's own summary above the original text.

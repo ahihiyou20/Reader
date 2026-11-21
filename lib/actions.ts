@@ -4,7 +4,8 @@ import { backendKind, backendStarted, getBackend, isInAppBrowser, onBackendStart
 import { BackendError, type AuthUser, type UserData } from '@/lib/backend/types';
 import type { Counts, Lang } from '@/lib/content/types';
 import { translate, type MessageKey } from '@/lib/i18n';
-import { localDate, nextStreak } from '@/lib/streak';
+import { applyFreezes, localDate, nextStreak, type Streak } from '@/lib/streak';
+import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
 
@@ -104,12 +105,13 @@ async function refreshUserData(force = false) {
     cached = JSON.parse(localStorage.getItem(CACHE(uid)) ?? 'null');
   } catch {}
   if (cached) applyData(cached.data);
-  if (!force && cached && Date.now() - cached.at < REFRESH_AFTER) return;
+  if (!force && cached && Date.now() - cached.at < REFRESH_AFTER) return void guardStreak();
   try {
     const fresh = await b.loadUserData();
     if (useUser.getState().user?.uid !== uid) return;
     applyData(fresh);
     persistCache();
+    void guardStreak();
   } catch {
     /* offline: keep the cached copy */
   }
@@ -299,8 +301,41 @@ async function saveProgressNow() {
   } catch {}
 }
 
+/**
+ * A day was missed and freezes are held: spend them on the missed days so the streak lives on, and
+ * tell the account (its Rules accept the same streak with a later lastReadDate).
+ */
+export async function guardStreak() {
+  const today = localDate();
+  const { freeze, spendFreezes } = useReading.getState();
+  const { streak, covered } = applyFreezes(useUser.getState().streak, today, freeze.count);
+  if (!covered.length) return;
+  spendFreezes(covered);
+  useUser.setState({ streak });
+  persistCache();
+  toast(t('freezeUsed', { n: covered.length }));
+  await saveStreak(streak);
+}
+
+/** Take the day's streak freeze (5 minutes read today). */
+export function claimFreeze() {
+  if (!useReading.getState().claimFreeze(localDate())) return;
+  toast(t('freezeGot'));
+  try {
+    navigator.vibrate?.(12);
+  } catch {}
+}
+
+async function saveStreak(streak: Streak) {
+  try {
+    await whenUser();
+    await (await getBackend()).setStreak(streak);
+  } catch {}
+}
+
 const completedToday = new Set<string>();
 export async function completeArticle(slug: string) {
+  void guardStreak();
   const today = localDate();
   const key = `${slug}@${today}`;
   if (completedToday.has(key)) return;

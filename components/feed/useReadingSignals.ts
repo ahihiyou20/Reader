@@ -4,11 +4,13 @@ import type { FeedItem } from '@/lib/content/types';
 import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
+import { localDate } from '@/lib/streak';
 
 /** A cover left sooner than this without opening the article counts as "not interested". */
 const SKIP_MS = 2000;
 /** Time away from the page (tab hidden, phone locked) is not reading time. */
 const MAX_SPAN_MS = 5 * 60_000;
+const TICK_MS = 5000;
 
 /**
  * Feeds stores/reading.ts from what happens in the feed: skips, opens, reading time, finished
@@ -42,7 +44,12 @@ export function useReadingSignals(items: FeedItem[] | undefined) {
     opened.current = true;
     const from = Date.now();
     visit(slug, category, 0);
+    // Today's reading time, toward the day's streak freeze: counted in 5 s steps while the page is seen.
+    const tick = window.setInterval(() => {
+      if (document.visibilityState === 'visible') useReading.getState().addReadingTime(localDate(), TICK_MS);
+    }, TICK_MS);
     return () => {
+      window.clearInterval(tick);
       const ms = Math.min(MAX_SPAN_MS, Date.now() - from);
       record(category, { ms });
       visit(slug, category, ms);

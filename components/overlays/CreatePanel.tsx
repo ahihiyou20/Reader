@@ -18,6 +18,9 @@ interface Draft {
 }
 const EMPTY = (lang: Lang): Draft => ({ title: '', hook: '', sections: [{ heading: '', body: '' }], sources: '', coverUrl: '', lang });
 const KEY = 'reader.createDraft';
+/** The Rules allow one post per 10 minutes (firestore.rules, stamped('lastPostAt')). */
+const POST_GAP_MS = 10 * 60_000;
+let lastPosted = 0;
 
 /** FR-25 Create post: a signed-in reader submits a post for editors to review (docs/05 step 10). */
 export function CreatePanel() {
@@ -49,6 +52,7 @@ export function CreatePanel() {
     e.preventDefault();
     const sections = d.sections.filter((s) => s.body.trim());
     if (!d.title.trim() || !d.hook.trim() || !sections.length) return toast(t('formIncomplete'));
+    if (Date.now() - lastPosted < POST_GAP_MS) return toast(t('postTooFast'));
     setSending(true);
     try {
       await (
@@ -64,6 +68,7 @@ export function CreatePanel() {
         coverUrl: d.coverUrl.trim() || undefined,
         lang: d.lang,
       });
+      lastPosted = Date.now();
       toast(t('submitted'));
       try {
         localStorage.removeItem(KEY);

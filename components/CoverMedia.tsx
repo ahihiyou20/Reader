@@ -58,13 +58,17 @@ export function CoverMedia({
 
   const shouldDecode = Boolean(priority || active || playing || blurred);
   const still = useReducedMotion();
-  const wantClip = cover.video && !blurred && !still && (active || playing) && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
+  // A cover with a clip shows only the clip, never its photo first: the pages next to the current one
+  // are the only ones mounted, so the clip of the next article is already loading before the swipe.
+  const wantClip = cover.video && !blurred && !still && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
+  const [clipReady, setClipReady] = useState(false);
+  const [clipFailed, setClipFailed] = useState(false);
   // The clip's shape is chosen when it starts: swapping it on rotation would remount the <video>, and
   // the new one fades in from nothing over a frame or two of bare background.
   const chosen = useRef<string | undefined>(undefined);
   if (!wantClip) chosen.current = undefined;
   else if (!chosen.current || ![cover.video?.url, cover.video?.wide].includes(chosen.current)) chosen.current = wantClip;
-  const clip = chosen.current;
+  const clip = clipFailed ? undefined : chosen.current;
 
   useEffect(() => {
     if (decoded) return;
@@ -93,7 +97,7 @@ export function CoverMedia({
     if (!v) return;
     if (playing) v.play().catch(() => {});
     else v.pause();
-  }, [playing]);
+  }, [playing, clip]);
 
   const placeholder = cover.blurDataURL ? (
     <div className="media-blur" style={{ backgroundImage: `url(${cover.blurDataURL})` }} aria-hidden="true" />
@@ -121,6 +125,23 @@ export function CoverMedia({
       </>
     );
   }
+  if (clip)
+    return (
+      <video
+        ref={video}
+        key={clip}
+        className={`media media-clip${clipReady ? '' : ' loading'}`}
+        src={clip}
+        muted
+        loop
+        playsInline
+        preload="auto"
+        onLoadedData={() => setClipReady(true)}
+        // A clip that cannot load falls back to the photo.
+        onError={() => setClipFailed(true)}
+        aria-hidden="true"
+      />
+    );
   const { src, srcSet, sizes } = source;
   if (!src) return placeholder;
   return (
@@ -131,8 +152,8 @@ export function CoverMedia({
         ref={img}
         // Covers without a clip drift slowly while on screen. The animation stays on and only pauses
         // off screen: adding or removing it made the picture jump in scale as a swipe landed.
-        className={`media${decoded ? '' : ' loading'}${!clip && !blurred ? ' drift' : ''}`}
-        style={!clip && !blurred ? { animationPlayState: playing ? 'running' : 'paused' } : undefined}
+        className={`media${decoded ? '' : ' loading'}${!blurred ? ' drift' : ''}`}
+        style={!blurred ? { animationPlayState: playing ? 'running' : 'paused' } : undefined}
         src={src}
         srcSet={srcSet}
         sizes={sizes}
@@ -152,7 +173,6 @@ export function CoverMedia({
           }
         }}
       />
-      {clip && <video ref={video} key={clip} className="media media-clip" src={clip} muted loop playsInline autoPlay preload="auto" aria-hidden="true" />}
     </>
   );
 }

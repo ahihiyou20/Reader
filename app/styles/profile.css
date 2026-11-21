@@ -1,0 +1,510 @@
+/* Profile (components/overlays/ProfilePanel.tsx, Streak.tsx).
+   Phones: one column, the streak first, then the month, the shelf and the reading stats.
+   Wide screens: a page of its own, not a stretched phone: the reader and their streak pinned on the
+   left, their month, reading and shelf on the right. One warm light (the flame, amber) and one cool
+   one (ice, for freezes); everything else is the app's quiet greys. */
+
+.pf {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.pf-side,
+.pf-main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+.pf-row {
+  display: contents;
+}
+/* Phones: the month, then what the reader kept, then how they read. */
+.pf-main > .pf-row > .cal {
+  order: 1;
+}
+.pf-main > .pf-shelf {
+  order: 2;
+}
+.pf-main > .pf-row > .pf-reading {
+  order: 3;
+}
+.pf-main > :not(.pf-row):not(.pf-shelf) {
+  order: 4;
+}
+
+.pf-card {
+  position: relative;
+  isolation: isolate;
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--stroke);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.pf .prof {
+  padding: 6px 0 2px;
+}
+
+/* ---------- Streak hero ---------- */
+.sh {
+  overflow: hidden;
+  padding: 20px 20px 0;
+}
+/* The flame lights the card from its corner; dimmer while today's reading is still to do. */
+.sh::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(70% 80% at 12% 0%, rgba(255, 122, 26, 0.24), rgba(255, 122, 26, 0) 70%);
+  opacity: 0.55;
+  transition: opacity 400ms var(--ease-out);
+}
+.sh[data-lit]::before {
+  opacity: 1;
+}
+.sh-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.sh-flame {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 22px;
+  background: radial-gradient(circle at 50% 62%, rgba(255, 140, 40, 0.3), rgba(255, 140, 40, 0) 70%);
+}
+.sh:not([data-lit]) .sh-flame svg {
+  filter: grayscale(0.7) brightness(0.85);
+}
+.sh-count {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.sh-n {
+  font: 800 60px/1 var(--font-sans);
+  letter-spacing: -0.035em;
+  font-variant-numeric: tabular-nums;
+}
+.sh-unit {
+  font: 600 16px/1.2 var(--font-sans);
+  color: var(--fg2);
+}
+.sh-status {
+  margin: 12px 0 0;
+  font: 500 14px/20px var(--font-sans);
+  color: var(--fg2);
+}
+.sh-track {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.sh-end {
+  min-width: 20px;
+  text-align: center;
+  font: 700 12px/1 var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  color: var(--fg3);
+}
+.sh-goal {
+  padding: 6px 9px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--fg);
+}
+.sh-rail {
+  position: relative;
+  height: 8px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.sh-fill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff8a2a, #ffc46b);
+  transform-origin: left center;
+}
+.sh-beadway {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.sh-bead {
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: #fff4dc;
+  box-shadow:
+    0 0 0 3px rgba(255, 154, 61, 0.35),
+    0 0 18px rgba(255, 154, 61, 0.75);
+}
+.sh-next {
+  margin: 10px 0 0;
+  font: 500 13px/18px var(--font-sans);
+  color: var(--fg3);
+}
+.sh-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 18px -20px 0;
+  border-top: 1px solid var(--stroke);
+}
+.sh-ledger > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 6px 16px;
+}
+.sh-ledger > div + div {
+  border-left: 1px solid var(--stroke);
+}
+.sh-ledger dt {
+  font: 500 12px/16px var(--font-sans);
+  color: var(--fg3);
+  text-align: center;
+}
+.sh-ledger dd {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font: 800 22px/1 var(--font-sans);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Streak freeze ---------- */
+.fz {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px 14px;
+}
+.fz[data-ready] {
+  border-color: rgba(143, 211, 255, 0.4);
+  background:
+    radial-gradient(80% 120% at 0% 50%, rgba(143, 211, 255, 0.16), rgba(143, 211, 255, 0) 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02));
+}
+.fz-slots {
+  display: flex;
+  gap: 2px;
+}
+.fz-slots > span {
+  display: grid;
+}
+.fz-text {
+  min-width: 0;
+}
+.fz-text h3 {
+  margin: 0;
+  font: 700 15px/20px var(--font-sans);
+}
+.fz-text p {
+  margin: 2px 0 0;
+  font: 500 13px/18px var(--font-sans);
+  color: var(--fg2);
+}
+.fz-bar {
+  display: block;
+  height: 4px;
+  margin-top: 9px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+.fz-bar > i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7cc4f2, #e6f7ff);
+  transform-origin: left center;
+  transition: transform 600ms var(--ease-out);
+}
+.fz-claim {
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 99px;
+  background: var(--grad-cta);
+  color: var(--cta-ink);
+  font: 700 14px/1 var(--font-sans);
+  box-shadow: 0 8px 22px rgba(235, 189, 120, 0.22);
+}
+.fz-how {
+  grid-column: 1 / -1;
+  margin: 4px 0 0;
+  font: 500 12px/17px var(--font-sans);
+  color: var(--fg3);
+}
+
+/* ---------- Month ---------- */
+.cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -6px -6px 4px;
+}
+.cal-head h3 {
+  margin: 0;
+  font: 700 17px/1.2 var(--font-sans);
+  text-transform: capitalize;
+}
+.cal-head .iconbtn:disabled {
+  opacity: 0.3;
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+}
+.cal-wd span {
+  padding: 8px 0 4px;
+  font: 600 11px/1 var(--font-sans);
+  text-transform: uppercase;
+  color: var(--fg3);
+}
+.cal-day {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 42px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  font: 600 14px/1 var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  color: var(--fg2);
+}
+.cal-day[data-state='read'] {
+  background: radial-gradient(circle at 35% 30%, #ffd391, #ff8a2a 72%);
+  color: #2a1404;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(255, 122, 26, 0.28);
+}
+.cal-day[data-state='kept'] {
+  background: radial-gradient(circle at 35% 30%, #eef9ff, #7cc4f2 75%);
+  color: #0b2740;
+  font-weight: 800;
+}
+.cal-day[data-state='later'] {
+  color: var(--fg4);
+}
+.cal-day[data-today] {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 2px;
+}
+/* A new month slides in from the side it was asked for. */
+.cal-days[data-dir='-1'] {
+  animation: cal-from-left 380ms var(--ease-out) both;
+}
+.cal-days[data-dir='1'] {
+  animation: cal-from-right 380ms var(--ease-out) both;
+}
+@keyframes cal-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+}
+@keyframes cal-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+}
+.cal-key {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+  font: 500 12px/1 var(--font-sans);
+  color: var(--fg3);
+}
+.cal-key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.cal-key i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.k-read {
+  background: #ff9a3d;
+}
+.k-kept {
+  background: #8fd3ff;
+}
+
+/* ---------- Reading and shelf ---------- */
+.pf-reading > .label:first-child {
+  margin-top: 0;
+}
+.pf-shelf .tabs {
+  margin-top: 4px;
+}
+
+/* Saved, liked, history: small tiles, many to a row, as on Explore. */
+:is(.panel.profile, .panel.library) .grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+:is(.panel.profile, .panel.library) .card {
+  border-radius: 12px;
+}
+:is(.panel.profile, .panel.library) .card .ct {
+  left: 8px;
+  right: 8px;
+  bottom: 24px;
+  font-size: 12px;
+  line-height: 15px;
+  -webkit-line-clamp: 3;
+}
+:is(.panel.profile, .panel.library) .card .cl {
+  left: 8px;
+  right: 8px;
+  bottom: 7px;
+  font-size: 10px;
+}
+:is(.panel.profile, .panel.library) .card .cl .cat {
+  display: none;
+}
+
+/* ---------- Entrance: the streak arrives as a plane, the rest rises in turn ---------- */
+.panel.profile .sh {
+  animation: pf-plane 520ms var(--ease-out) both;
+}
+.panel.profile :is(.fz, .cal, .pf-reading, .pf-shelf) {
+  animation: pf-rise 460ms var(--ease-out) both;
+}
+.panel.profile .fz {
+  animation-delay: 60ms;
+}
+.panel.profile .cal {
+  animation-delay: 110ms;
+}
+.panel.profile .pf-reading {
+  animation-delay: 160ms;
+}
+.panel.profile .pf-shelf {
+  animation-delay: 200ms;
+}
+@keyframes pf-plane {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+@keyframes pf-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* ---------- Wide screens: a page, two columns ---------- */
+html[data-stage$='landscape'] .panel.profile .pf {
+  display: grid;
+  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px clamp(20px, 3vw, 40px) 48px;
+}
+html[data-stage$='landscape'] .panel.profile .pf-side {
+  position: sticky;
+  top: 8px;
+}
+html[data-stage$='landscape'] .panel.profile .pf .prof {
+  align-items: flex-start;
+  text-align: left;
+}
+html[data-stage$='landscape'] .panel.profile .pf-row {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+html[data-stage$='landscape'] .panel.profile .pf-main > * {
+  order: 0;
+}
+html[data-stage$='landscape'] :is(.panel.profile, .panel.library) .grid {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+html[data-stage$='landscape'] :is(.panel.profile, .panel.library) .card .ct {
+  font-size: 13px;
+  line-height: 17px;
+}
+html[data-stage='compact-landscape'] .panel.profile .pf {
+  grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
+}
+html[data-stage='compact-landscape'] .panel.profile .pf-row {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* ---------- The day's freeze, offered while reading (FreezeClaim) ---------- */
+.fclaim {
+  position: absolute;
+  top: calc(var(--sat) + 64px);
+  right: 0;
+  left: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  margin: 0 auto;
+  padding: 8px 6px 8px 12px;
+  border-radius: 999px;
+}
+.fclaim > svg {
+  flex: none;
+}
+.fclaim-t {
+  display: grid;
+  min-width: 0;
+  line-height: 1.2;
+}
+.fclaim-t b {
+  font: 700 14px/18px var(--font-sans);
+}
+.fclaim-t span {
+  overflow: hidden;
+  font: 500 12px/16px var(--font-sans);
+  color: var(--fg2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fclaim .fz-claim {
+  flex: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel.profile :is(.sh, .fz, .cal, .pf-reading, .pf-shelf),
+  .cal-days {
+    animation: none !important;
+  }
+  .sh::before,
+  .fz-bar > i {
+    transition: none;
+  }
+}
