@@ -1,0 +1,245 @@
+{
+  "slug": "quantum-software-matches-classical-benchmark-for-molecular-i",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=quantum-software-matches-classical-benchmark-for-molecular-i",
+  "category": "technology",
+  "tags": [
+    "quantum computing",
+    "drug discovery",
+    "molecular interactions",
+    "algorithm"
+  ],
+  "title": {
+    "en": "Quantum Software Matches Classical Benchmark for Molecular Interaction",
+    "vi": "Phần mềm lượng tử đạt chuẩn tham chiếu cổ điển cho tương tác phân tử",
+    "fr": "Le logiciel quantique égale la référence classique pour l'interaction moléculaire",
+    "de": "Quantensoftware erreicht klassischen Maßstab für molekulare Wechselwirkungen",
+    "es": "El software cuántico iguala la referencia clásica en la interacción molecular"
+  },
+  "hook": {
+    "en": "Predicting how molecules interact helps design new drugs and understand side effects without costly lab work. Classical computers struggle with these calculations due to complex electron behavior. Now, researchers have tested a new quantum algorithm {source} that matches traditional standards while using fewer resources.",
+    "vi": "Dự đoán cách các phân tử tương tác giúp thiết kế thuốc mới và hiểu rõ tác dụng phụ mà không cần tốn kém thí nghiệm. Máy tính cổ điển gặp khó khăn với các phép tính này do hành vi điện tử phức tạp. Giờ đây, các nhà nghiên cứu đã thử nghiệm một thuật toán lượng tử mới {source} đạt được độ chính xác tương đương tiêu chuẩn truyền thống trong khi dùng ít tài nguyên hơn.",
+    "fr": "Prédire l'interaction des molécules aide à concevoir de nouveaux médicaments et à comprendre les effets secondaires sans travaux de laboratoire coûteux. Les ordinateurs classiques peignent face à ces calculs en raison du comportement complexe des électrons. Désormais, des chercheurs ont testé un nouvel algorithme quantique {source} qui égale les normes traditionnelles tout en utilisant moins de ressources.",
+    "de": "Die Vorhersage von Molekülwechselwirkungen hilft bei der Entwicklung neuer Medikamente und dem Verständnis von Nebenwirkungen ohne teure Laborexperimente. Klassische Computer kämpfen mit diesen Berechnungen aufgrund komplexen Elektronenverhaltens. Nun haben Forscher einen neuen Quantenalgorithmus {source} getestet, der herkömmliche Standards erfüllt und dabei weniger Ressourcen verbraucht.",
+    "es": "Predecir cómo interactúan las moléculas ayuda a diseñar nuevos fármacos y a comprender los efectos secundarios sin costosos trabajos de laboratorio. Los ordenadores clásicos se esfuerzan con estos cálculos debido al complejo comportamiento de los electrones. Ahora, los investigadores han probado un nuevo algoritmo cuántico {source} que iguala los estándares tradicionales a la vez que utiliza menos recursos."
+  },
+  "sections": [
+    {
+      "heading_en": "The Challenge of Dispersion",
+      "heading_vi": "Thử thách của lực phân tán",
+      "body_en": "[y:Dispersion interactions] stabilize biological structures like DNA and proteins while shaping how molecules bind. Describing these subtle forces demands enormous computational power because tracking electron behavior requires tracking vast numbers of variables.",
+      "body_vi": "[y:Tương tác phân tán] ổn định các cấu trúc sinh học như DNA và protein đồng thời định hình cách các phân tử liên kết. Việc mô tả các lực tinh tế này đòi hỏi năng lượng tính toán khổng lồ vì việc theo dõi hành vi điện tử yêu cầu xử lý vô số biến số.",
+      "heading_fr": "Le défi de la dispersion",
+      "body_fr": "[y:Les interactions de dispersion] stabilisent les structures biologiques comme l'ADN et les protéines tout en façonnant la liaison des molécules. Décrire ces forces subtiles exige une puissance de calcul énorme car le suivi du comportement des électrons nécessite de suivre un vaste nombre de variables.",
+      "heading_de": "Die Herausforderung der Dispersion",
+      "body_de": "[y:Dispersionswechselwirkungen] stabilisieren biologische Strukturen wie DNA und Proteine und prägen die Art und Weise, wie Moleküle binden. Die Beschreibung dieser subtilen Kräfte erfordert enorme Rechenleistung, da die Nachverfolgung des Elektronenverhaltens die Überwachung riesiger Variablenzahlen verlangt.",
+      "heading_es": "El desafío de la dispersión",
+      "body_es": "[y:Las interacciones de dispersión] estabilizan estructuras biológicas como el ADN y las proteínas a la vez que configuran cómo se unen las moléculas. Describir estas fuerzas sutiles exige un enorme poder computacional porque el seguimiento del comportamiento de los electrones requiere rastrear una gran cantidad de variables."
+    },
+    {
+      "heading_en": "New Algorithm and Tests",
+      "heading_vi": "Thuật toán mới và các thử nghiệm",
+      "body_en": "The Danish software firm Kvantify applied its algorithm BEAST-VQE alongside simulation tools on Quantinuum's System Model H2 quantum computer. Researchers tested a pair of DNA-derived molecules to see how their interaction shifts over distance.",
+      "body_vi": "Công ty phần mềm Đan Mạch Kvantify đã áp dụng thuật toán BEAST-VQE của mình cùng các công cụ mô phỏng trên máy tính lượng tử System Model H2 của Quantinuum. Các nhà nghiên cứu đã thử nghiệm một cặp phân tử có nguồn gốc từ DNA để xem cách tương tác của chúng thay đổi theo khoảng cách.",
+      "heading_fr": "Nouvel algorithme et tests",
+      "body_fr": "L'entreprise logicielle danoise Kvantify a appliqué son algorithme BEAST-VQE ainsi que des outils de simulation sur l'ordinateur quantique System Model H2 de Quantinuum. Des chercheurs ont testé une paire de molécules dérivées de l'ADN pour voir comment leur interaction évolue avec la distance.",
+      "heading_de": "Neuer Algorithmus und Tests",
+      "body_de": "Die dänische Softwarefirma Kvantify setzte ihren Algorithmus BEAST-VQE zusammen mit Simulationswerkzeugen auf dem Quantencomputer System Model H2 von Quantinuum ein. Forscher testeten ein Paar DNA-stämmiger Moleküle, um zu sehen, wie sich deren Wechselwirkung über die Distanz verschiebt.",
+      "heading_es": "Nuevo algoritmo y pruebas",
+      "body_es": "La empresa de software danesa Kvantify aplicó su algoritmo BEAST-VQE junto con herramientas de simulación en el ordenador cuántico System Model H2 de Quantinuum. Los investigadores probaron un par de moléculas derivadas del ADN para comprobar cómo cambia su interacción a lo largo de la distancia."
+    },
+    {
+      "heading_en": "Efficiency Gains",
+      "heading_vi": "Hiệu suất được cải thiện",
+      "body_en": "[g:The team matched accuracy levels] of the established CCSD(T) method while dropping the required active orbitals from 236 to 53. Hardware calculations on two geometries produced outcomes nearly identical to ideal simulations.",
+      "body_vi": "[g:Nhóm nghiên cứu đạt được độ chính xác] tương đương phương pháp CCSD(T) đã thiết lập trong khi giảm số lượng orbital hoạt động cần thiết từ 236 xuống còn 53. Các tính toán trên phần cứng tại hai hình học cho ra kết quả gần như y hệt mô phỏng lý tưởng.",
+      "heading_fr": "Gains d'efficacité",
+      "body_fr": "[g:L'équipe a égalé les niveaux de précision] de la méthode établie CCSD(T) tout en réduisant les orbitales actives requises de 236 à 53. Les calculs matériels sur deux géométries ont produit des résultats presque identiques à des simulations idéales.",
+      "heading_de": "Effizienzgewinne",
+      "body_de": "[g:Das Team erreichte die Genauigkeitsniveaus] der etablierten CCSD(T)-Methode, während es die erforderlichen aktiven Orbitale von 236 auf 53 reduzierte. Hardware-Berechnungen an zwei Geometrien lieferten Ergebnisse, die fast identisch mit idealen Simulationen waren.",
+      "heading_es": "Aumentos de eficiencia",
+      "body_es": "[g:El equipo igualó los niveles de precisión] del método establecido CCSD(T) a la vez que redujo los orbitales activos necesarios de 236 a 53. Los cálculos de hardware en dos geometrías produjeron resultados casi idénticos a las simulaciones ideales."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Phys.org (2026)",
+      "url": "https://phys.org/news/2026-11-quantum-software-classical-benchmark-molecular.html"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1674897507017-f6c1527356de?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1674897507017-f6c1527356de?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Brew Cat",
+    "authorUrl": "https://unsplash.com/@brewcat?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/lcWj276XAfc",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/lcWj276XAfc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234231/pagemoor/covers/quantum-software-matches-classical-benchmark-for-molecular-i-337005.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234232/pagemoor/covers/quantum-software-matches-classical-benchmark-for-molecular-i-337005-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-337005/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Anke Piontek"
+    ],
+    "originalTitle": "Quantum software matches classical benchmark for a molecular interaction",
+    "originalUrl": "https://phys.org/news/2026-11-quantum-software-classical-benchmark-molecular.html",
+    "publisher": "Phys.org",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review current computational limits in your structural biology workflow",
+      "Identify molecular interactions that require excessive orbital counts",
+      "Explore hybrid classical and quantum methods for small benchmarks"
+    ],
+    "vi": [
+      "Xem lại các giới hạn tính toán hiện tại trong quy trình sinh học cấu trúc của bạn",
+      "Xác định các tương tác phân tử đòi hỏi số lượng orbital quá mức",
+      "Khám phá các phương pháp kết hợp cổ điển và lượng tử cho các bài toán chuẩn nhỏ"
+    ],
+    "fr": [
+      "Examiner les limites de calcul actuelles dans votre flux de travail en biologie structurale",
+      "Identifier les interactions moléculaires qui nécessitent un nombre excessif d'orbitales",
+      "Explorer des méthodes hybrides classiques et quantiques pour de petits bancs d'essai"
+    ],
+    "de": [
+      "Überprüfe aktuelle Rechengrenzen im eigenen Strukturbiologie-Workflow",
+      "Identifiziere molekulare Wechselwirkungen, die übermäßige Orbitalanzahlen erfordern",
+      "Erkunde hybride klassische und Quantenmethoden für kleine Benchmarks"
+    ],
+    "es": [
+      "Revisa los límites computacionales actuales en tu flujo de trabajo de biología estructural",
+      "Identifica las interacciones moleculares que requieren un recuento excesivo de orbitales",
+      "Explora métodos clásicos y cuánticos híbridos para puntos de referencia pequeños"
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1674897507017-f6c1527356de?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1674897507017-f6c1527356de?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Brew Cat",
+      "authorUrl": "https://unsplash.com/@brewcat?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/lcWj276XAfc",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/lcWj276XAfc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1675636999373-5a3ddbd3921a?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1675636999373-5a3ddbd3921a?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/tQ0es0SwYd4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/tQ0es0SwYd4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1676206584892-c5e08cc47354?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTF8fFF1YW50dW0lMjBTb2Z0d2FyZSUyME1hdGNoZXMlMjBDbGFzc2ljYWwlMjBCZW5jaG1hcmslMjBmb3IlMjBNb2xlY3VsYXIlMjBJbnRlcmFjdGlvbiUyMHRlY2hub2xvZ3xlbnwxfDF8fHwxNzk1MjMzODQ4fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1676206584892-c5e08cc47354?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTF8fFF1YW50dW0lMjBTb2Z0d2FyZSUyME1hdGNoZXMlMjBDbGFzc2ljYWwlMjBCZW5jaG1hcmslMjBmb3IlMjBNb2xlY3VsYXIlMjBJbnRlcmFjdGlvbiUyMHRlY2hub2xvZ3xlbnwxfDF8fHwxNzk1MjMzODQ4fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OPWpI0IZZ_Q",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/OPWpI0IZZ_Q/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTF8fFF1YW50dW0lMjBTb2Z0d2FyZSUyME1hdGNoZXMlMjBDbGFzc2ljYWwlMjBCZW5jaG1hcmslMjBmb3IlMjBNb2xlY3VsYXIlMjBJbnRlcmFjdGlvbiUyMHRlY2hub2xvZ3xlbnwxfDF8fHwxNzk1MjMzODQ4fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1676836957195-eea3d257713c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1676836957195-eea3d257713c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/-JKIOby9C-k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/-JKIOby9C-k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8UXVhbnR1bSUyMFNvZnR3YXJlJTIwTWF0Y2hlcyUyMENsYXNzaWNhbCUyMEJlbmNobWFyayUyMGZvciUyME1vbGVjdWxhciUyMEludGVyYWN0aW9uJTIwdGVjaG5vbG9nfGVufDF8MXx8fDE3OTUyMzM4NDh8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAADQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZQAFEB7ZkO09hXpJgIgBI3ZV4wIAAAD+0qb/n+zOk2mO0Tg82r7J8GZiKkcIluEyu7FbqVEYZw2A1OqAFP56PCrxxqCsDy/YPicKCSv92akz0hInMW3YVOT0VX8fL1vHJKPCryWcrvljjjpzTEveDf519peRWhX6/7dy0/KyLy3mR6dpqMUx8/v3Xtwo3t2nN1EIruleamKxxgtWAYCo0pR3bgE/Sk56b8WhAAA=",
+  "dominant": "#342e33",
+  "glossary": {
+    "en": {
+      "quantum algorithm": "A step-by-step problem-solving procedure designed to run on a quantum computer.",
+      "dispersion interactions": "Subtle forces that stabilize biological structures like DNA and proteins.",
+      "computational power": "The processing capability required to perform complex calculations.",
+      "kvantify": "A Danish software firm that developed the quantum algorithm.",
+      "beast-vqe": "A specific new quantum algorithm tested by researchers.",
+      "quantinuum": "The company providing the quantum computer hardware used in the tests.",
+      "system model h2": "A specific quantum computer model used for running hardware calculations.",
+      "ccsd(t)": "An established traditional computational method used as a accuracy standard.",
+      "active orbitals": "Mathematical regions representing electron behavior utilized in calculations.",
+      "geometries": "Specific spatial arrangements of molecules tested during the research."
+    },
+    "vi": {
+      "phần mềm lượng tử": "Ứng dụng chạy trên hoặc mô phỏng máy tính lượng tử để giải quyết bài toán phức tạp.",
+      "tương tác phân tử": "Sự tác động qua lại giữa các phân tử ảnh hưởng đến cấu trúc và liên kết.",
+      "máy tính cổ điển": "Hệ thống máy tính truyền thống dựa trên các bit nhị phân để xử lý thông tin.",
+      "thuật toán lượng tử": "Tập hợp các hướng dẫn từng bước để máy tính lượng tử thực hiện tính toán.",
+      "tương tác phân tán": "Lực yếu giúp ổn định cấu trúc sinh học như DNA và protein.",
+      "sinh học cấu trúc": "Lĩnh vực nghiên cứu cấu trúc đại phân tử sinh học.",
+      "orbital": "Vùng không gian quanh hạt nhân nguyên tử có xác suất tìm thấy điện tử cao.",
+      "ccsd(t)": "Phương pháp chuẩn truyền thống có độ chính xác cao trong tính toán hóa học lượng tử."
+    },
+    "fr": {
+      "dispersion": "Forces intermoléculaires subtiles qui stabilisent les structures biologiques comme l'ADN.",
+      "beast-vqe": "Algorithme quantique appliqué par la firme Kvantify pour les simulations moléculaires.",
+      "quantinuum": "Entreprise fournissant l'ordinateur quantique utilisé pour ces tests.",
+      "orbitales": "Régions de l'espace autour du noyau où se trouvent les électrons.",
+      "géométries": "Configurations spatiales des molécules testées lors de l'expérience.",
+      "algorithme": "Suite d'instructions ou de règles pour résoudre un problème informatique.",
+      "simulations": "Modélisations informatiques imitant un processus réel ou idéal.",
+      "molécules": "Assemblages d'atomes liés chimiquement entre eux."
+    },
+    "de": {
+      "dispersionswechselwirkungen": "Schwache intermolekulare Kräfte, die biologische Strukturen wie DNA und Proteine stabilisieren.",
+      "quantenalgorithmus": "Ein Rechenverfahren, das auf den Prinzipien der Quantenmechanik beruht.",
+      "kvantify": "Eine dänische Softwarefirma, die an Quantenlösungen für chemische Probleme arbeitet.",
+      "quantinuum": "Ein Unternehmen, das Quantencomputer wie das System Model H2 herstellt.",
+      "dna": "Das Molekül, das die genetische Information in lebenden Organismen trägt.",
+      "orbitale": "Mathematische Funktionen, die den Aufenthaltsort von Elektronen in Molekülen beschreiben.",
+      "geometrien": "Die räumliche Anordnung von Atomen innerhalb eines Moleküls.",
+      "simulationen": "Die Nachahmung realer Prozesse mithilfe von Computerprogrammen."
+    },
+    "es": {
+      "interacciones de dispersión": "Fuerzas débiles que estabilizan estructuras biológicas y configuran la unión molecular.",
+      "algoritmo cuántico": "Conjunto de instrucciones diseñado para ejecutarse en un ordenador cuántico.",
+      "ordenador cuántico": "Dispositivo de cálculo que aprovecha la mecánica cuántica para procesar información compleja.",
+      "orbitales": "Regiones alrededor del núcleo atómico donde es probable encontrar electrones.",
+      "geometrías": "Disposiciones espaciales tridimensionales de los átomos en una molécula.",
+      "simulaciones": "Imitaciones por ordenador de procesos reales para estudiar su comportamiento.",
+      "precisión": "Grado de exactitud de un resultado en comparación con el valor real.",
+      "hardware": "Conjunto de elementos físicos que componen un sistema informático."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-21T03:48:40.341Z"
+}

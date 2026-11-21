@@ -1,0 +1,264 @@
+{
+  "slug": "decades-old-light-mystery-solved-for-faster-internet",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=decades-old-light-mystery-solved-for-faster-internet",
+  "category": "technology",
+  "tags": [
+    "barium titanate",
+    "optics",
+    "kaist",
+    "research"
+  ],
+  "title": {
+    "en": "Decades-Old Light Mystery Solved for Faster Internet",
+    "vi": "Giải mã bí ẩn về ánh sáng giúp internet nhanh hơn",
+    "fr": "Un mystère lumineux vieux de plusieurs décennies résolu pour un Internet plus rapide",
+    "de": "Jahrzehntealtes Lichträtsel gelöst für schnelleres Internet",
+    "es": "Misterio de la luz resuelto para internet más rápido"
+  },
+  "hook": {
+    "en": "Researchers have mapped how barium titanate interacts with light across a broad spectrum {source}. This breakthrough resolves conflicting data from past decades, offering engineers a reliable foundation to design optical devices with minimal signal loss and support rapid data transmission.",
+    "vi": "Các nhà nghiên cứu đã lập bản đồ cách barium titanate tương tác với ánh sáng trên một phổ rộng {source}. Bước đột phá này giải quyết những dữ liệu mâu thuẫn từ nhiều thập kỷ qua, cung cấp cho các kỹ sư nền tảng đáng tin cậy để thiết kế thiết bị quang học.",
+    "fr": "Des chercheurs ont cartographié la façon dont le titanate de baryum interagit avec la lumière sur un large spectre {source}. Cette avancée résout des données contradictoires issues des décennies passées, offrant aux ingénieurs une base fiable pour concevoir des dispositifs optiques avec une perte de signal minimale et pour prendre en charge une transmission rapide des données.",
+    "de": "Forscher haben kartiert, wie Bariumtitanat über ein breites Spektrum mit Licht interagiert {source}. Dieser Durchbruch klärt widersprüchliche Daten aus vergangenen Jahrzehnten und bietet Ingenieuren eine verlässliche Grundlage, um optische Geräte mit minimalem Signalverlust zu entwickeln und die schnelle Datenübertragung zu unterstützen.",
+    "es": "Los investigadores han mapeado cómo el titanato de bario interactúa con la luz en un amplio espectro {source}. Este avance resuelve datos contradictorios de décadas pasadas, ofreciendo a los ingenieros una base confiable para diseñar dispositivos ópticos con una pérdida de señal mínima y apoyar la transmisión rápida de datos."
+  },
+  "sections": [
+    {
+      "heading_en": "Measuring Complex Crystals",
+      "heading_vi": "Đo lường tinh thể phức tạp",
+      "body_en": "Barium titanate changes how it affects light when electricity is applied, making it valuable for optical modulators. Measuring these properties proved difficult because microscopic regions within the crystal point in different directions. A team led by KAIST used [y:Mueller matrix spectroscopic ellipsometry] on single-crystal samples to isolate consistent domain orientations across ultraviolet to far-infrared wavelengths.",
+      "body_vi": "Barium titanate thay đổi cách nó tác động đến ánh sáng khi có dòng điện, rất có giá trị cho các bộ điều chế quang (*optical modulators*). Việc đo lường các đặc tính này rất khó khăn vì các vùng kính hiển vi bên trong tinh thể hướng theo các hướng khác nhau. Nhóm nghiên cứu từ KAIST đã sử dụng phép đo elip quang phổ ma trận Mueller trên các mẫu tinh thể đơn để cô lập hướng miền.",
+      "heading_fr": "Mesure de cristaux complexes",
+      "body_fr": "Le titanate de baryum modifie son influence sur la lumière lorsqu'un courant électrique lui est appliqué, ce qui le rend précieux pour les modulateurs optiques. La mesure de ces propriétés s'est avérée difficile car des régions microscopiques à l'intérieur du cristal pointent dans des directions différentes. Une équipe dirigée par le KAIST a utilisé [y:l'ellipsométrie spectroscopique à matrice de Müller] sur des échantillons monocristallins pour isoler des orientations de domaines cohérentes sur des longueurs d'onde allant de l'ultraviolet à l'infrarouge lointain.",
+      "heading_de": "Komplexe Kristalle messen",
+      "body_de": "Bariumtitanat verändert seine Lichtbeeinflussung unter Strom, was es wertvoll für optische Modulatoren macht. Die Messung dieser Eigenschaften erwies sich als schwierig, da mikroskopische Bereiche im Kristall in unterschiedliche Richtungen zeigen. Ein Team unter Leitung des KAIST nutzte [y:Mueller-Matrix-spektroskopische Ellipsometrie] an Einkristallproben, um konsistente Domänenorientierungen über ultraviolette bis ferninfrarote Wellenlängen zu isolieren.",
+      "heading_es": "Medición de cristales complejos",
+      "body_es": "El titanato de bario cambia su efecto sobre la luz al aplicarle electricidad, lo que lo hace valioso para moduladores ópticos. Medir estas propiedades resultó difícil porque regiones microscópicas dentro del cristal apuntan en distintas direcciones. Un equipo liderado por KAIST utilizó [y:elipsometría espectroscópica de matriz de Mueller] en muestras monocristalinas para aislar orientaciones de dominios consistentes en longitudes de onda desde el ultravioleta hasta el infrarrojo lejano."
+    },
+    {
+      "heading_en": "Predicting Light Behavior",
+      "heading_vi": "Dự đoán hành vi ánh sáng",
+      "body_en": "The team detected exceptionally low absorption values in the two to ten micrometer wavelength range. [p:Engineers can now calculate overall responses] using crystal domain proportions. This precision helps predict how light travels through waveguides and reduces the need for repeated prototypes during manufacturing.",
+      "body_vi": "Nhóm nghiên cứu đã phát hiện ra mức độ hấp thụ cực kỳ thấp trong dải bước sóng từ hai đến mười micrometer. [p:Các kỹ sư giờ đây có thể tính toán phản응] tổng thể bằng cách sử dụng tỷ lệ miền tinh thể. Độ chính xác này giúp dự đoán cách ánh sáng truyền qua ống dẫn sóng (*waveguides*) và giảm nhu cầu chế tạo mẫu thử.",
+      "heading_fr": "Prévision du comportement de la lumière",
+      "body_fr": "L'équipe a détecté des valeurs d'absorption exceptionnellement faibles dans la plage de longueurs d'onde comprise entre deux et dix micromètres. [p:Les ingénieurs peuvent désormais calculer les réponses globales] en utilisant les proportions des domaines cristallins. Cette précision aide à prédire la façon dont la lumière se propage à travers les guides d'ondes et réduit le besoin de prototypes répétés lors de la fabrication.",
+      "heading_de": "Lichtverhalten vorhersagen",
+      "body_de": "Das Team wies im Wellenlängenbereich von zwei bis zehn Mikrometern außergewöhnlich niedrige Absorptionswerte nach. [p:Ingenieure können nun Gesamtreaktionen berechnen] unter Verwendung von Kristalldomänenanteilen. Diese Präzision hilft vorherzusagen, wie Licht durch Wellenleiter reist, und verringert die Notwendigkeit wiederholter Prototypen während der Herstellung.",
+      "heading_es": "Predicción del comportamiento de la luz",
+      "body_es": "El equipo detectó valores de absorción excepcionalmente bajos en el rango de longitud de onda de dos a diez micrómetros. [p:Los ingenieros ahora pueden calcular las respuestas generales] utilizando proporciones de dominios cristalinos. Esta precisión ayuda a predecir cómo viaja la luz a través de guías de onda y reduce la necesidad de prototipos repetidos durante la fabricación."
+    },
+    {
+      "heading_en": "Advancing Future Technologies",
+      "heading_vi": "Thúc đẩy công nghệ tương lai",
+      "body_en": "Published on October 20, 2026, in ACS Photonics, the findings support quantum photonic circuits and devices producing light at distinct wavelengths. Professor Min Seok Jang noted that precise light manipulation enables faster data transmission with reduced signal loss for future communication systems.",
+      "body_vi": "Được công bố vào ngày 20 tháng 10 năm 2026 trên tạp chí ACS Photonics, các phát hiện hỗ trợ mạch quang tử lượng tử (*quantum photonic circuits*) và các thiết bị tạo ra ánh sáng ở các bước sóng khác nhau. Giáo sư Min Seok Jang lưu ý rằng việc thao tác ánh sáng chính xác cho phép truyền dữ liệu nhanh hơn.",
+      "heading_fr": "Faire progresser les technologies futures",
+      "body_fr": "Publiés le 20 octobre 2026 dans ACS Photonics, les résultats soutiennent les circuits photoniques quantiques et les dispositifs produisant de la lumière à des longueurs d'onde distinctes. Le professeur Min Seok Jang a noté qu'une manipulation précise de la lumière permet une transmission de données plus rapide avec une perte de signal réduite pour les futurs systèmes de communication.",
+      "heading_de": "Zukunftstechnologien voranbringen",
+      "body_de": "Am 20. Oktober 2026 in ACS Photonics veröffentlicht, unterstützen die Ergebnisse quantenphotonische Schaltkreise und Geräte, die Licht bei bestimmten Wellenlängen erzeugen. Professor Min Seok Jang wies darauf hin, dass präzise Lichtmanipulation eine schnellere Datenübertragung mit reduziertem Signalverlust für zukünftige Kommunikationssysteme ermöglicht.",
+      "heading_es": "Avanzando en tecnologías futuras",
+      "body_es": "Publicado el 20 de octubre de 2026 en ACS Photonics, los hallazgos respaldan circuitos fotónicos cuánticos y dispositivos que producen luz en longitudes de onda distintas. El profesor Min Seok Jang señaló que la manipulación precisa de la luz permite una transmisión de datos más rápida con menor pérdida de señal para futuros sistemas de comunicación."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261119194544.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1766941234613-db2d25e443cf?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1766941234613-db2d25e443cf?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Niklas König",
+    "authorUrl": "https://unsplash.com/@nottwentyseven?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/M2Oqk5fendo",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/M2Oqk5fendo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234140/pagemoor/covers/decades-old-light-mystery-solved-for-faster-internet-55557.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234141/pagemoor/covers/decades-old-light-mystery-solved-for-faster-internet-55557-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-55557/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "A decades-old mystery about light could hold the key to faster internet",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261119194544.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Examine optical component specifications",
+      "Calculate domain proportions for materials",
+      "Model light transmission paths"
+    ],
+    "vi": [
+      "Kiểm tra thông số kỹ thuật linh kiện quang học",
+      "Tính toán tỷ lệ miền cho vật liệu",
+      "Mô hình hóa đường truyền ánh sáng"
+    ],
+    "fr": [
+      "Examiner les spécifications des composants optiques",
+      "Calculer les proportions des domaines pour les matériaux",
+      "Modéliser les chemins de transmission de la lumière"
+    ],
+    "de": [
+      "Spezifikationen optischer Komponenten untersuchen",
+      "Domänenanteile für Materialien berechnen",
+      "Lichtübertragungspfade modellieren"
+    ],
+    "es": [
+      "Examina las especificaciones de los componentes ópticos",
+      "Calcula las proporciones de dominios para los materiales",
+      "Modelar las rutas de transmisión de luz"
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1766941234613-db2d25e443cf?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1766941234613-db2d25e443cf?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Niklas König",
+      "authorUrl": "https://unsplash.com/@nottwentyseven?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/M2Oqk5fendo",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/M2Oqk5fendo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1758159234917-0c76ccd29051?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1758159234917-0c76ccd29051?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "KC Shum",
+      "authorUrl": "https://unsplash.com/@kcshum?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/c4APKapfE1I",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/c4APKapfE1I/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1765073689417-85386bd96097?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1765073689417-85386bd96097?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Yuky Y",
+      "authorUrl": "https://unsplash.com/@yuky0326?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/LrbJIMqmwGo",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/LrbJIMqmwGo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1782945217386-300f33f22069?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1782945217386-300f33f22069?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Tetiana Sapon",
+      "authorUrl": "https://unsplash.com/@ttnspn?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/h-g51nVu9U4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/h-g51nVu9U4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RGVjYWRlcyUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzc1MXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/KSC-04pd0029/KSC-04pd0029~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA KSC",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/KSC-04pd0029"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/AFRC2019-0242-17/AFRC2019-0242-17~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA/Lauren Hughes",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/AFRC2019-0242-17"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JZwAD5aIaXFyES+9PMGL69YwqvAAA/tcO48Q0wKPm/ZvYeymc4qrpzBI8XR1/PpwS3ySruGYjBvzwPNIBCHKdCJtSjZrVqtkAk9H7O9KUf/NzNX1/etVeCZl0x+bBeiVuR/P8FsfsjxRQ7/ZisHevXBf5/v5b2aZ8dnapofebr3H2djqtshJG7TO1SZmM2aSOK+hf2ESfL6FhR8v87VI5pgA=",
+  "dominant": "#535557",
+  "glossary": {
+    "en": {
+      "barium titanate": "A crystalline material that changes how it affects light when electricity is applied.",
+      "optical modulators": "Devices that alter properties of a light beam.",
+      "kaist": "The research university whose team led the study.",
+      "mueller matrix spectroscopic ellipsometry": "An advanced optical measurement technique used on single-crystal samples.",
+      "domain orientations": "The directions in which microscopic regions within the crystal point.",
+      "ultraviolet": "A portion of the light spectrum beyond violet light.",
+      "far-infrared": "Wavelengths of light longer than those of red light.",
+      "waveguides": "Structures designed to guide waves such as light.",
+      "acs photonics": "The scientific journal where the findings were published.",
+      "quantum photonic circuits": "Advanced circuits that manipulate light at the quantum level."
+    },
+    "vi": {
+      "barium titanate": "Vật liệu tinh thể thay đổi cách tương tác với ánh sáng khi có dòng điện.",
+      "bộ điều chế quang": "Thiết bị sử dụng vật liệu để kiểm soát và điều chỉnh ánh sáng.",
+      "phép đo elip quang phổ ma trận mueller": "Phương pháp đo lường phức tạp dùng để phân tích cách ánh sáng tương tác với mẫu.",
+      "tinh thể đơn": "Mẫu vật liệu có cấu trúc tinh thể đồng nhất không bị đứt gãy vùng.",
+      "micrometer": "Đơn vị đo chiều dài bằng một phần triệu mét.",
+      "tỷ lệ miền": "Tương quan giữa các vùng hướng khác nhau bên trong cấu trúc tinh thể.",
+      "ống dẫn sóng": "Cấu trúc vật lý dẫn truyền sóng ánh sáng theo hướng định sẵn.",
+      "acs photonics": "Tạp chí khoa học chuyên ngành về quang học và quang tử.",
+      "mạch quang tử lượng tử": "Mạch vi điện tử sử dụng ánh sáng và cơ học lượng tử để xử lý thông tin."
+    },
+    "fr": {
+      "titanate de baryum": "Matériau cristallin utilisé dans les modulateurs optiques pour sa réaction aux champs électriques.",
+      "modulateurs optiques": "Dispositifs qui modifient les propriétés d'un faisceau lumineux pour transporter des informations.",
+      "spectroscopique": "Relatif à l'étude de la lumière et de ses interactions avec la matière.",
+      "ellipsométrie": "Technique optique mesurant les modifications de polarisation de la lumière réfléchie.",
+      "infrarouge lointain": "Rayonnement thermique dont les longueurs d'onde sont supérieures à celles de l'infrarouge proche.",
+      "micromètre": "Unité de mesure de longueur équivalant à un millionième de mètre.",
+      "guides d'ondes": "Structures physiques qui guident les ondes électromagnétiques d'un point à un autre.",
+      "photoniques": "Relatif à l'utilisation des photons pour traiter et transmettre des données."
+    },
+    "de": {
+      "bariumtitanat": "Ein kristallines Material, das seine Lichtbeeinflussung unter Strom verändert.",
+      "optische modulatoren": "Geräte zur Steuerung und Beeinflussung von Lichtwellen.",
+      "einkristallproben": "Materialproben mit einer durchgehend einheitlichen Kristallstruktur ohne Korngrenzen.",
+      "absorptionswerte": "Werte, die angeben, wie stark Licht im Material verschluckt wird.",
+      "wellenleiter": "Strukturen, die elektromagnetische Wellen in eine bestimmte Richtung lenken.",
+      "acs photonics": "Eine wissenschaftliche Fachzeitschrift für optische und photonische Forschung.",
+      "quantenphotonische schaltkreise": "Schaltungen, die Lichtteilchen für komplexe Rechenvorgänge nutzen.",
+      "signalverlust": "Schwächung oder Verlust von Daten bei der Übertragung."
+    },
+    "es": {
+      "titanato de bario": "Compuesto químico cristalino usado en dispositivos ópticos por sus propiedades moduladoras.",
+      "moduladores ópticos": "Dispositivos que alteran las propiedades de un haz de luz mediante señales eléctricas.",
+      "elipsometría espectroscópica de matriz de mueller": "Técnica óptica avanzada para medir las propiedades de los materiales mediante polarización.",
+      "monocristalinas": "Muestras formadas por un solo cristal continuo sin límites de grano internos.",
+      "ultravioleta": "Radiación electromagnética con menor longitud de onda que la luz visible.",
+      "infrarrojo lejano": "Región del espectro infrarrojo cercana a las microondas y con mayor longitud de onda.",
+      "micrómetros": "Unidades de longitud equivalentes a la milésima parte de un milímetro.",
+      "guías de onda": "Estructuras físicas que guían las ondas electromagnéticas con mínima pérdida de energía.",
+      "fotónicos": "Relativo a los fotones y al uso de la luz para procesar y transmitir información.",
+      "circuitos": "Trayectorias interconectadas por donde fluyen señales o energía para cumplir una función."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-21T03:52:40.341Z"
+}
