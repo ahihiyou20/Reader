@@ -774,29 +774,26 @@ select {
 .dscroll::-webkit-scrollbar {
   display: none;
 }
-/* Depth of field (CMP-09): the block being read sits in front, sharp and lifted off the cover image;
-   its neighbours recede a little, the rest further. Only opacity, transform and a small blur animate
-   (composite-only; blur stays ≤ 1.2px for Safari). Scaling from the left edge keeps lines aligned. */
+/* Depth of field (CMP-09): the block being read sits in front, lifted off the cover image; its
+   neighbours recede a little, the rest further. Only opacity and transform animate. No blur: every
+   blurred block was a live filter layer a phone redrew on each frame of the scroll.
+   Scaling from the left edge keeps lines aligned. */
 .sec {
   margin-bottom: 28px;
   opacity: 0.26;
   transform: scale(0.955);
   transform-origin: 0 50%;
-  filter: blur(1.2px);
   transition:
     opacity 300ms var(--ease-out),
-    transform 400ms var(--ease-out),
-    filter 300ms var(--ease-out);
+    transform 400ms var(--ease-out);
 }
 .sec.near {
   opacity: 0.36;
   transform: scale(0.97);
-  filter: blur(0.6px);
 }
 .sec.on {
   opacity: 1;
   transform: none;
-  filter: none;
   text-shadow:
     0 1px 2px rgba(0, 0, 0, 0.35),
     0 4px 18px rgba(0, 0, 0, 0.45);
