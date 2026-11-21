@@ -3,6 +3,7 @@ import { ArrowRight, BookMarked, ChevronLeft, ChevronRight, Globe, Headphones, P
 import { animate } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
+import { usePageLoaded } from '@/lib/data';
 import { pick } from '@/lib/i18n';
 import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
@@ -53,6 +54,8 @@ export function Welcome({ items }: { items: FeedItem[] }) {
   const lang = useUI((s) => s.lang);
   const portrait = useUI((s) => s.stage.endsWith('portrait'));
   const still = useReducedMotion();
+  // The poster first: the clip waits until the page has loaded, so it does not slow the first screen.
+  const loaded = usePageLoaded();
   const start = useRef<HTMLButtonElement>(null);
   const root = useRef<HTMLDivElement>(null);
   const [leaving, setLeaving] = useState(false);
@@ -104,7 +107,7 @@ export function Welcome({ items }: { items: FeedItem[] }) {
       onAnimationEnd={(e) => e.target === e.currentTarget && leaving && useReading.getState().setWelcomed(true)}
     >
       <section className="welcome-top">
-        {still ? (
+        {still || !loaded ? (
           <img className="welcome-bg" src={poster} alt="" />
         ) : (
           <video className="welcome-bg" key={clip} src={clip} poster={poster} muted loop playsInline autoPlay />

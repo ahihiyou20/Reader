@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import type { CoverClient } from '@/lib/content/types';
-import { COVER_SIZES, type OptCover } from '@/lib/covers';
+import { COVER_SIZES, lighterCover, type OptCover } from '@/lib/covers';
 import { isDecoded } from '@/lib/data';
 import { useUI } from '@/stores/ui';
 import { useReducedMotion } from './hooks';
@@ -181,7 +181,7 @@ export function CoverMedia({
 export function coverSource(cover: CoverClient, opt: OptCover | undefined, landscape: boolean) {
   // The landscape file is sharp on wide screens; phones keep the smaller portrait one.
   const wide = landscape ? cover.wide : undefined;
-  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
+  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : lighterCover(cover.url));
   return { src, srcSet: wide ? undefined : opt?.srcSet, sizes: opt && !wide ? COVER_SIZES : undefined };
 }
 

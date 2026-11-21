@@ -129,3 +129,18 @@ export function activeSlug(): string | undefined {
   const item = currentItems[useUI.getState().index];
   return typeof item === 'string' ? item : item?.slug;
 }
+
+/**
+ * The Home tab. Over a panel it closes the panel and shows the feed where the reader left it; while
+ * reading (the bar folded to this one tab) it slides the article back to its cover. Only on a cover
+ * already does it start the feed again from the top. Restarting from a panel or mid-article lost the
+ * reader's place and, pressed twice, only replayed the feed's fade-in over the same page.
+ */
+export function goHome() {
+  const ui = useUI.getState();
+  const slug = activeSlug();
+  if (ui.category !== null) ui.startFeed({ category: null });
+  else if (ui.overlays.length) useUI.setState({ overlays: [] });
+  else if (slug && targetView(slug) > 0) setArticleView(slug, 0);
+  else if (targetArticle() > 0) ui.startFeed({ category: null });
+}

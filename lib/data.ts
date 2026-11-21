@@ -77,22 +77,40 @@ const fetchFeedHead = () => getJson<FeedFile>('/data/feed-head.json');
 export const fetchArticle = (slug: string) => getJson<ArticleClient>(`/data/articles/${encodeURIComponent(slug)}.json`);
 
 /**
+ * True once the page's own files have loaded (the first cover, its title faces, the code). Prefetches
+ * wait for it: started earlier, they took a phone's bandwidth from the first cover and doubled its wait.
+ */
+export function usePageLoaded() {
+  // Starts false even when the page has loaded already: the server's render must match the first one.
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    if (loaded) return;
+    const on = () => setLoaded(true);
+    if (document.readyState === 'complete') on();
+    else window.addEventListener('load', on, { once: true });
+    return () => window.removeEventListener('load', on);
+  }, [loaded]);
+  return loaded;
+}
+
+/**
  * The feed: the small head file first (the first ranked items, preloaded in the HTML), then the full
  * list once the browser is idle. The full list starts with the same items, so nothing on screen moves.
  */
 export function useFeed(needSlug?: string | null) {
   const head = useResource('feed-head', fetchFeedHead);
   const [wantFull, setWantFull] = useState(() => cache.get('feed')?.status === 'success');
+  const loaded = usePageLoaded();
   const headComplete = head.data !== undefined && (head.data.total ?? head.data.items.length) <= head.data.items.length;
   // A link to an article outside the head needs the full list before anything is shown, or the
   // feed would open on another article and jump.
   const missing = Boolean(needSlug && head.data && !headComplete && !head.data.items.some((i) => i.slug === needSlug));
   useEffect(() => {
-    if (wantFull || !head.data || headComplete) return;
+    if (wantFull || !head.data || headComplete || !loaded) return;
     const idle = (window as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
     const id = idle ? idle(() => setWantFull(true), { timeout: 3000 }) : window.setTimeout(() => setWantFull(true), 1500);
     return () => (idle ? (window as unknown as { cancelIdleCallback: (n: number) => void }).cancelIdleCallback(id) : clearTimeout(id));
-  }, [wantFull, head.data, headComplete]);
+  }, [wantFull, head.data, headComplete, loaded]);
   const full = useResource(wantFull || missing ? 'feed' : null, fetchFeed);
   if (missing && !full.data) return { ...full, data: undefined };
   return full.data ? full : head;

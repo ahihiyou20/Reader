@@ -120,7 +120,9 @@ function Shell({
   useEffect(() => {
     if (typeof window === 'undefined') return;
     if (hasOverlay) {
+      // Kept mounted from here on: unmounted with the last overlay, a panel vanished instead of sliding out.
       setDeferred(true);
+      setPanelsReady(true);
       return;
     }
     if ('requestIdleCallback' in window) {

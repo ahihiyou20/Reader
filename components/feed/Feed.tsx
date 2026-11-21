@@ -6,7 +6,7 @@
 import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef, useSyncExternalStore } from 'react';
 import type { FeedItem } from '@/lib/content/types';
-import { preloadImage, prefetchArticle } from '@/lib/data';
+import { preloadImage, prefetchArticle, usePageLoaded } from '@/lib/data';
 import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { preloadTitleFaces } from '@/lib/title';
@@ -57,6 +57,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   const t = useT();
   const total = items.length + 1;
   const y = useTransform(feedP, (p) => `${-p * 100}%`);
+  const loaded = usePageLoaded();
 
   // Keep the shared layout in sync with the measured size and the list. The gesture handlers read
   // the list through a ref: re-binding them when the full feed replaces the head would drop a drag
@@ -116,9 +117,10 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       const { src, srcSet, sizes } = coverSource(it.cover, optCover(it.slug), landscape);
       preloadImage(src, srcSet, sizes);
     };
-    // The next cover cannot wait for idle time: a quick swipe reaches it within a second.
+    // Until the page has loaded the first cover has the bandwidth to itself. After that the next cover
+    // cannot wait for idle time: a quick swipe reaches it within a second.
+    if (!loaded) return;
     warm(1);
-    if (typeof window === 'undefined') return;
     if ('requestIdleCallback' in window) {
       const handle = (
         window as unknown as {
@@ -142,7 +144,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       for (const k of [2, 3, -1]) warm(k);
     }, 500);
     return () => clearTimeout(timer);
-  }, [index, items]);
+  }, [index, items, loaded]);
 
   // ---------- Pointer gestures ----------
   useEffect(() => {

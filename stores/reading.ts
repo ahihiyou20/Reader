@@ -1,6 +1,5 @@
 // What the reader does, kept to personalise the feed and to show history, stats and collections.
-// shortcut: stored in this browser only (localStorage), so it does not follow the account to another
-// device; move it behind lib/backend when cross-device sync is wanted.
+// The browser keeps the working copy; lib/reading-sync.ts keeps it with the Google account.
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Lang } from '@/lib/content/types';

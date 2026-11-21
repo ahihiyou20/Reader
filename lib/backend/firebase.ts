@@ -721,8 +721,11 @@ export function createFirebaseBackend(): Backend {
 
     async loadReading() {
       const u = me();
-      const snap = await getDoc(sub(u.uid, 'reading', 'state')).catch(() => null);
-      return (snap?.data() as ReadingData | undefined) ?? null;
+      // A failed read throws: taken for "no data yet", it let this device's copy overwrite the account's.
+      const snap = await getDoc(sub(u.uid, 'reading', 'state')).catch((e) => {
+        throw mapError(e);
+      });
+      return (snap.data() as ReadingData | undefined) ?? null;
     },
 
     async saveReading(data) {
