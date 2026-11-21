@@ -78,8 +78,9 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     if (version > 0 && !prefersReducedMotion())
       ref.current?.animate(
         [
-          { opacity: 0, transform: 'scale(1.035)', filter: 'blur(10px)' },
-          { opacity: 1, transform: 'none', filter: 'blur(0)' },
+          // No blur: a full-screen blur, while the panel slides away, is more than a phone draws in a frame.
+          { opacity: 0, transform: 'scale(1.035)' },
+          { opacity: 1, transform: 'none' },
         ],
         { duration: 560, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' },
       );
