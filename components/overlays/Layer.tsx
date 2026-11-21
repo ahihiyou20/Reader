@@ -10,6 +10,26 @@ import { clamp, prefersReducedMotion, project, rubberband, sampleVelocity, sprin
 import { useHistoryLayer, useT } from '../hooks';
 import { tabSwitching as switching } from '@/stores/ui';
 
+/** Layers open now, oldest first: Escape closes only the newest (a sheet over a panel, Settings over Profile). */
+const escapeStack: Array<{ close: () => void }> = [];
+function useEscape(open: boolean, onClose: () => void) {
+  const close = useRef(onClose);
+  close.current = onClose;
+  useEffect(() => {
+    if (!open) return;
+    const me = { close: () => close.current() };
+    escapeStack.push(me);
+    const key = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && escapeStack[escapeStack.length - 1] === me) me.close();
+    };
+    window.addEventListener('keydown', key);
+    return () => {
+      window.removeEventListener('keydown', key);
+      escapeStack.splice(escapeStack.indexOf(me), 1);
+    };
+  }, [open]);
+}
+
 function useDismissDrag(
   mv: MotionValue<number>,
   axis: 'x' | 'y',
@@ -157,12 +177,7 @@ export function Panel({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, mounted]);
 
-  useEffect(() => {
-    if (!open) return;
-    const key = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
-    window.addEventListener('keydown', key);
-    return () => window.removeEventListener('keydown', key);
-  }, [open, onClose]);
+  useEscape(open, onClose);
 
   const drag = useDismissDrag(
     x,
@@ -265,12 +280,7 @@ export function Sheet({ open, onClose, label, children }: { open: boolean; onClo
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, mounted]);
 
-  useEffect(() => {
-    if (!open) return;
-    const key = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
-    window.addEventListener('keydown', key);
-    return () => window.removeEventListener('keydown', key);
-  }, [open, onClose]);
+  useEscape(open, onClose);
 
   const drag = useDismissDrag(
     y,
