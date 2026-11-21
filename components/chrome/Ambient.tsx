@@ -1,7 +1,9 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
+import { optCover } from '@/lib/covers';
 import { useUI } from '@/stores/ui';
+import { coverSource } from '../CoverMedia';
 
 /**
  * Ambient backdrop: displays the active article cover blurred and dimmed
@@ -10,11 +12,9 @@ import { useUI } from '@/stores/ui';
 export function Ambient({ items }: { items?: FeedItem[] }) {
   const index = useUI((s) => s.index);
   const activeItem = items?.[index];
-  const coverUrl = activeItem?.cover
-    ? activeItem.cover.type === 'video'
-      ? activeItem.cover.poster || activeItem.cover.url
-      : activeItem.cover.url
-    : '';
+  // The file the cover on screen already shows (the backdrop only appears on wide screens), so the
+  // backdrop costs no second download.
+  const coverUrl = (activeItem && coverSource(activeItem.cover, optCover(activeItem.slug), true).src) ?? '';
 
   const [layers, setLayers] = useState<{
     front: 'a' | 'b';

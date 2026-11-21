@@ -22,6 +22,17 @@ export function sized(url: string, w: number, h: number): string {
   return u.toString();
 }
 
+/** Cards a grid shows at first, and adds as the reader scrolls near its end. */
+export const CARD_PAGE = 24;
+
+/** Explore's trending row: what readers liked, saved and shared most, with a lift for this week's. */
+export function trending(items: FeedItem[]): FeedItem[] {
+  const weekAgo = Date.now() - 7 * 86_400_000;
+  const score = (i: FeedItem) =>
+    i.counts.likes + 2 * i.counts.saves + 3 * i.counts.shares + 2 * i.counts.comments + (Date.parse(i.publishedAt) > weekAgo ? 5 : 0);
+  return [...items].sort((a, b) => score(b) - score(a)).slice(0, 6);
+}
+
 export function coverThumb(item: FeedItem, wide = false) {
   if (wide && item.cover.wide) return sized(item.cover.wide, 720, 405);
   return sized(item.cover.type === 'video' ? item.cover.poster ?? '' : item.cover.url, 480, 640);
@@ -51,7 +62,7 @@ export function CardMedia({ item, wide = false }: { item: FeedItem; wide?: boole
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         aria-hidden="true"
         onLoadedData={(e) => e.currentTarget.classList.add('in')}
       />

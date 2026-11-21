@@ -3,7 +3,7 @@ import { startTransition, useCallback, useEffect, useRef, useState } from 'react
 import dynamic from 'next/dynamic';
 import { LazyMotion } from 'framer-motion';
 import type { ArticleClient, FeedItem } from '@/lib/content/types';
-import { setArticleData } from '@/lib/data';
+import { preloadImages, setArticleData } from '@/lib/data';
 import { restoreCachedUser } from '@/lib/actions';
 import { getBackend } from '@/lib/backend';
 import { detectLang, translate } from '@/lib/i18n';
@@ -24,8 +24,8 @@ import { useFeedList } from './feed/useFeedList';
 import { useReadingSignals } from './feed/useReadingSignals';
 import { useReading } from '@/stores/reading';
 import { startReadingSync } from '@/lib/reading-sync';
-import { preloadOverlays, warmCovers } from './overlays/preload';
-import { coverThumb } from './overlays/ArticleCard';
+import { preloadOverlays } from './overlays/preload';
+import { CARD_PAGE, coverThumb, trending } from './overlays/ArticleCard';
 import { useMounted, useStageSync } from './hooks';
 
 const BigHeart = dynamic(() => import('./chrome/BigHeart').then((m) => m.BigHeart), { ssr: false });
@@ -164,8 +164,8 @@ function Shell({
           preloadOverlays();
           setPanelsReady(true);
           const list = itemsRef.current ?? [];
-          // Explore shows the first cards of the whole list and its trending row: warm those first.
-          warmCovers([...list.slice(0, 60).map((i) => coverThumb(i)), ...list.slice(0, 30).map((i) => coverThumb(i, true))]);
+          // Explore opens on its trending row and the first page of cards: fetch those, behind the covers.
+          preloadImages([...trending(list).map((i) => ({ src: coverThumb(i, true) })), ...list.slice(0, CARD_PAGE).map((i) => ({ src: coverThumb(i) }))], true);
         }),
       BACKEND_IDLE_START_MS,
     );

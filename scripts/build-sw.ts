@@ -41,7 +41,9 @@ const ARTICLES = 'reader-articles';
 const MEDIA = 'reader-media';
 const PRECACHE = ${JSON.stringify(shell.map((f) => (f === '/index.html' ? '/' : f.replace(/\.html$/, ''))))};
 const MAX_ARTICLES = 20;
-const MAX_MEDIA = 60;
+// Covers and card pictures (300 articles, a portrait and a wide card each): with room for only 60,
+// Explore pushed the covers out and fetched its own pictures again on every visit.
+const MAX_MEDIA = 600;
 const MEDIA_HOSTS = ['images.unsplash.com', 'res.cloudinary.com', 'images.pexels.com', 'videos.pexels.com', 'upload.wikimedia.org', 'images-assets.nasa.gov', 'picsum.photos', 'fastly.picsum.photos'];
 
 self.addEventListener('install', (event) => {
@@ -91,14 +93,27 @@ async function staleWhileRevalidate(req, cacheName, max) {
   return hit || update;
 }
 
-async function cacheFirst(req, cacheName, max) {
+let puts = 0;
+const noCors = new Set();
+async function cacheFirst(req, cacheName, max, cors) {
   const cache = await caches.open(cacheName);
   const hit = await cache.match(req);
   if (hit) return hit;
-  const res = await fetch(req);
-  if (res.ok || res.type === 'opaque') {
+  // Image hosts are asked with CORS: an opaque response counts as megabytes against the storage quota,
+  // and the browser can drop the whole origin's storage for it. A host that refuses is asked once, then
+  // answered plainly and not cached.
+  const host = new URL(req.url).hostname;
+  const res =
+    cors && !noCors.has(host)
+      ? await fetch(req.url, { mode: 'cors', credentials: 'omit' }).catch(() => {
+          noCors.add(host);
+          return fetch(req);
+        })
+      : await fetch(req);
+  if (res.ok) {
     cache.put(req, res.clone());
-    trim(cacheName, max);
+    // Trimming lists every entry: once every 20 new files is enough.
+    if (++puts % 20 === 0) trim(cacheName, max);
   }
   return res;
 }
@@ -113,10 +128,10 @@ self.addEventListener('fetch', (event) => {
     if (url.pathname.startsWith('/_next/static/') || url.pathname.startsWith('/icons/')) return event.respondWith(cacheFirst(req, SHELL, 500));
     if (url.pathname.startsWith('/data/articles/')) return event.respondWith(staleWhileRevalidate(req, ARTICLES, MAX_ARTICLES));
     if (url.pathname.startsWith('/data/')) return event.respondWith(networkFirst(req, DATA));
-    if (url.pathname.startsWith('/covers/')) return event.respondWith(cacheFirst(req, MEDIA, MAX_MEDIA));
+    if (url.pathname.startsWith('/covers/')) return event.respondWith(cacheFirst(req, MEDIA, MAX_MEDIA, true));
     return;
   }
-  if (MEDIA_HOSTS.includes(url.hostname) && req.destination === 'image') return event.respondWith(cacheFirst(req, MEDIA, MAX_MEDIA));
+  if (MEDIA_HOSTS.includes(url.hostname) && req.destination === 'image') return event.respondWith(cacheFirst(req, MEDIA, MAX_MEDIA, true));
 });
 `;
   await fs.writeFile(path.join(OUT, 'sw.js'), sw);

@@ -14,6 +14,8 @@ import './styles/profile.css';
 // Fonts are kept in the repository (app/fonts: the Google Fonts files cut to Latin and Vietnamese)
 // instead of fetched from Google Fonts at build time, which failed the deploy whenever Google answered
 // with a font URL next/font did not expect.
+// Inter with its weight axis only: the optical-size axis is pinned at text size (14), which cut the
+// file from 118 to 78 KB, all of it on the first screen's critical path.
 const inter = localFont({
   src: './fonts/inter-var.woff2',
   weight: '100 900',

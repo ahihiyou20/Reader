@@ -6,7 +6,7 @@
 import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef, useSyncExternalStore } from 'react';
 import type { FeedItem } from '@/lib/content/types';
-import { preloadImage, prefetchArticle, usePageLoaded } from '@/lib/data';
+import { preloadImages, prefetchArticle, usePageLoaded } from '@/lib/data';
 import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { preloadTitleFaces } from '@/lib/title';
@@ -98,52 +98,22 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     return p.on('change', sync);
   }, [activeSlug]);
 
-  // FR-04: prefetch the next two articles and their covers (deferred to idle to protect hydration & first paint).
+  // FR-04: the article text and title faces now, then the covers in the order a swipe reaches them.
   useEffect(() => {
-    if (items[index]) prefetchArticle(items[index].slug);
-    if (items[index]) preloadTitleFaces(items[index].category);
-    // Title faces are small and shared by a whole category: fetch them a few covers ahead, so a cover
-    // never arrives before its lettering (keys or a hard flick can pass several covers in a second).
-    const ahead = () => {
-      for (let k = -1; k <= 5; k++) if (items[index + k]) preloadTitleFaces(items[index + k].category);
-    };
-
-    // The same file the cover's <img> will ask for, so the swipe lands on a decoded image.
-    const landscape = useUI.getState().stage.endsWith('landscape');
-    const warm = (k: number) => {
-      const it = items[index + k];
-      if (!it) return;
-      prefetchArticle(it.slug);
-      const { src, srcSet, sizes } = coverSource(it.cover, optCover(it.slug), landscape);
-      preloadImage(src, srcSet, sizes);
-    };
-    // Until the page has loaded the first cover has the bandwidth to itself. After that the next cover
-    // cannot wait for idle time: a quick swipe reaches it within a second.
+    const item = items[index];
+    if (item) prefetchArticle(item.slug);
+    if (item) preloadTitleFaces(item.category);
+    // Until the page has loaded, the cover on screen has the bandwidth to itself.
     if (!loaded) return;
-    warm(1);
-    if ('requestIdleCallback' in window) {
-      const handle = (
-        window as unknown as {
-          requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number;
-        }
-      ).requestIdleCallback(
-        () => {
-          ahead();
-          for (const k of [2, 3, -1]) warm(k);
-        },
-        { timeout: 2000 },
-      );
-      return () => {
-        if ('cancelIdleCallback' in window) {
-          (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(handle);
-        }
-      };
+    const landscape = useUI.getState().stage.endsWith('landscape');
+    const near = [1, 2, -1, 3, 4].map((k) => items[index + k]).filter(Boolean);
+    // Title faces are small and shared by a whole category: fetched ahead, a cover never arrives before
+    // its lettering (keys or a hard flick can pass several covers in a second).
+    for (const it of near) {
+      prefetchArticle(it.slug);
+      preloadTitleFaces(it.category);
     }
-    const timer = setTimeout(() => {
-      ahead();
-      for (const k of [2, 3, -1]) warm(k);
-    }, 500);
-    return () => clearTimeout(timer);
+    preloadImages(near.map((it) => coverSource(it.cover, optCover(it.slug), landscape)));
   }, [index, items, loaded]);
 
   // ---------- Pointer gestures ----------

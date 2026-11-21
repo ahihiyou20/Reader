@@ -7,8 +7,8 @@ import { timeAgo } from '@/lib/format';
 import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useUser } from '@/stores/user';
-import { useT } from '../hooks';
-import { ArticleCard } from './ArticleCard';
+import { usePaged, useT } from '../hooks';
+import { ArticleCard, CARD_PAGE } from './ArticleCard';
 import { Panel } from './Layer';
 
 const ALL = 'all';
@@ -40,6 +40,7 @@ export function LibraryPanel() {
     return tab === ALL ? (feed?.items ?? []).filter((i) => saves[i.slug]) : items;
   }, [tab, history, current, saves, bySlug, feed]);
   const seen = useMemo(() => new Map(history.map((h) => [h.slug, h])), [history]);
+  const { limit, sentinel, more } = usePaged(list.length, CARD_PAGE, tab);
 
   const submitName = (e: React.FormEvent) => {
     e.preventDefault();
@@ -115,7 +116,7 @@ export function LibraryPanel() {
 
         {list.length ? (
           <div className="grid">
-            {list.map((i) => (
+            {list.slice(0, limit).map((i) => (
               <div key={i.slug} className="lib-item">
                 <ArticleCard item={i} onOpen={() => startFeed({ category: null, slug: i.slug })} />
                 {tab === HISTORY ? (
@@ -129,6 +130,7 @@ export function LibraryPanel() {
                 )}
               </div>
             ))}
+            {more && <div ref={sentinel} aria-hidden="true" />}
           </div>
         ) : (
           <div className="empty-note">{tab === HISTORY ? t('libNoHistory') : current ? t('libEmptyCollection') : t('nothingSaved')}</div>
