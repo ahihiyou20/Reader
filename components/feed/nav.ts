@@ -3,6 +3,8 @@
 // Offsets live in motion values, never in React state, so dragging does not re-render.
 import { animate, motionValue, type MotionValue } from 'framer-motion';
 import { clamp, prefersReducedMotion, springFor } from '@/lib/motion';
+import { localDate } from '@/lib/streak';
+import { useReading } from '@/stores/reading';
 import { useUI, type View } from '@/stores/ui';
 
 export const layout = { w: 390, h: 844, total: 1 };
@@ -143,4 +145,15 @@ export function goHome() {
   else if (ui.overlays.length) useUI.setState({ overlays: [] });
   else if (slug && targetView(slug) > 0) setArticleView(slug, 0);
   else if (targetArticle() > 0) ui.startFeed({ category: null });
+}
+
+/**
+ * See more and pull to refresh: a new For You batch from the top, leaving out what was read today and
+ * everything today's batches already held, read or not.
+ */
+export function moreArticles() {
+  const day = localDate();
+  const { daily, setDaily } = useReading.getState();
+  setDaily({ day, batch: [], shown: daily.day === day ? [...new Set([...daily.shown, ...daily.batch])] : [] });
+  useUI.getState().startFeed({ category: null });
 }

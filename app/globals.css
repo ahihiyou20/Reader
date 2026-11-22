@@ -406,6 +406,26 @@ select {
   inset: 0;
   will-change: transform;
 }
+/* Pull to refresh: sits in the gap the first cover leaves when pulled down, behind nothing. */
+.ptr {
+  position: absolute;
+  top: calc(var(--sat) + 14px);
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(28, 28, 34, 0.7);
+  color: var(--fg);
+  opacity: 0;
+  pointer-events: none;
+}
+.ptr .ic {
+  width: 20px;
+  height: 20px;
+}
 .article {
   position: absolute;
   left: 0;

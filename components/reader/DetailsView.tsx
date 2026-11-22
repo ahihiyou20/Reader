@@ -8,6 +8,9 @@ import { LANG_NAME, type ArticleClient, type FeedItem } from '@/lib/content/type
 import { completeArticle, loadLiveCounts, rememberSection, shareArticle, toggleLike, toggleSave } from '@/lib/actions';
 import { isFallback, pick } from '@/lib/i18n';
 import { clamp, prefersReducedMotion } from '@/lib/motion';
+import { isViewed } from '@/lib/recommend';
+import { localDate } from '@/lib/streak';
+import { useReading } from '@/stores/reading';
 import { useUI } from '@/stores/ui';
 import { useShallow } from 'zustand/react/shallow';
 import { countsFor, useUser } from '@/stores/user';
@@ -281,6 +284,25 @@ export function DetailsView({ article, item, active, view }: { article: ArticleC
       io.disconnect();
       clearTimeout(timer);
     };
+  }, [active, view, slug]);
+
+  // Read today, for the For You feed (lib/recommend isViewed): time at the reading line per block,
+  // counted while Details is on screen, kept across leaving and coming back to it.
+  const focusNow = useRef(0);
+  focusNow.current = focus;
+  const dwell = useRef<number[]>([]);
+  useEffect(() => {
+    if (!active || view !== 1) return;
+    const id = setInterval(() => {
+      if (document.hidden) return;
+      dwell.current[focusNow.current] = (dwell.current[focusNow.current] ?? 0) + 0.5;
+      const words = secs.current.map((s) => s?.textContent?.split(/\s+/).filter(Boolean).length ?? 0);
+      if (isViewed(words, dwell.current)) {
+        clearInterval(id);
+        useReading.getState().markViewed(slug, localDate());
+      }
+    }, 500);
+    return () => clearInterval(id);
   }, [active, view, slug]);
 
   // ...or spending 60% of the estimated reading time in Details.
