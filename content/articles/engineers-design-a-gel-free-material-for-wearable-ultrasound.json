@@ -1,0 +1,245 @@
+{
+  "slug": "engineers-design-a-gel-free-material-for-wearable-ultrasound",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=engineers-design-a-gel-free-material-for-wearable-ultrasound",
+  "category": "technology",
+  "tags": [
+    "ultrasound",
+    "wearable tech",
+    "biomedical engineering",
+    "mit"
+  ],
+  "title": {
+    "en": "Engineers Design a Gel-Free Material for Wearable Ultrasound",
+    "vi": "Các kỹ sư chế tạo vật liệu không dùng gel cho siêu âm đeo trên người",
+    "fr": "Des ingénieurs conçoivent un matériau sans gel pour les ultrasons portables",
+    "de": "Ingenieure entwickeln gel-freies Material für tragbaren Ultraschall",
+    "es": "Ingenieros diseñan un material sin gel para ultrasonido portátil"
+  },
+  "hook": {
+    "en": "Traditional ultrasound imaging requires a sticky fluid to transmit sound waves cleanly between the probe and human skin. Researchers at the Massachusetts Institute of Technology have now invented a dry, elastic substance that replaces this wet requirement. This innovation may support continuous, long-term health monitoring outside clinical offices {source}.",
+    "vi": "Chụp ảnh siêu âm truyền thống đòi hỏi một lớp chất lỏng dính để truyền sóng âm rõ ràng giữa đầu dò và da người. Các nhà nghiên cứu tại Viện Công nghệ Massachusetts vừa phát minh ra một chất khô và đàn hồi nhằm thay thế nhu cầu ẩm ướt này. Cải tiến này có thể hỗ trợ việc theo dõi sức khỏe liên tục, dài hạn bên ngoài các phòng khám {source}.",
+    "fr": "L'imagerie ultrasonore traditionnelle nécessite un fluide visqueux pour transmettre proprement les ondes sonores entre la sonde et la peau humaine. Des chercheurs du Massachusetts Institute of Technology ont inventé une substance sèche et élastique qui remplace cette exigence humide. Cette innovation pourrait favoriser un suivi de santé continu et à long terme en dehors des cabinets cliniques {source}.",
+    "de": "Herkömmliche Ultraschallbildgebung erfordert eine klebrige Flüssigkeit, um Schallwellen sauber zwischen dem Schallkopf und der menschlichen Haut zu übertragen. Forscher des Massachusetts Institute of Technology haben nun eine trockene, elastische Substanz erfunden, die diese nasse Anforderung ersetzt. Diese Innovation könnte eine kontinuierliche, langfristige Gesundheitsüberwachung außerhalb klinischer Praxen unterstützen {source}.",
+    "es": "La imagen de ultrasonido tradicional requiere un fluido pegajoso para transmitir ondas sonoras claramente entre la sonda y la piel humana. Investigadores del Instituto Tecnológico de Massachusetts han inventado ahora una sustancia seca y elástica que reemplaza este requisito húmedo. Esta innovación puede respaldar el monitoreo de salud continuo y a largo plazo fuera de los consultorios clínicos {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Eliminating the Gel Requirement",
+      "heading_vi": "Loại bỏ yêu cầu về gel",
+      "body_en": "Technicians typically apply a cold fluid to fill microscopic gaps between skin and devices. While effective in clinics, this liquid dries out within days and limits wearable devices. Xuanhe Zhao and colleagues created a dry alternative published in Science. Their rubbery medium maintains stable performance during nine days of continuous testing.",
+      "body_vi": "Các kỹ thuật viên thường bôi một lớp chất lỏng lạnh để lấp đầy các khoảng trống nhỏ giữa da và thiết bị. Mặc dù hiệu quả tại phòng khám, chất lỏng này sẽ khô đi trong vòng vài ngày và hạn chế các thiết bị đeo. Xuanhe Zhao cùng các đồng nghiệp đã tạo ra một giải pháp thay thế khô được công bố trên tạp chí Science. Môi trường giống cao su của họ duy trì hiệu suất ổn định trong suốt chín ngày thử nghiệm liên tục.",
+      "heading_fr": "Éliminer l'exigence du gel",
+      "body_fr": "Les techniciens appliquent généralement un liquide froid pour combler les micro-interstices entre la peau et les appareils. Bien qu'efficace en clinique, ce liquide s'assèche en quelques jours et limite les dispositifs portables. Xuanhe Zhao et ses collègues ont créé une alternative sèche publiée dans Science. Leur milieu caoutchouteux maintient des performances stables pendant neuf jours d'essais continus.",
+      "heading_de": "Beseitigung der Gel-Anforderung",
+      "body_de": "Techniker tragen typischerweise eine kalte Flüssigkeit auf, um mikroskopische Lücken zwischen Haut und Geräten zu füllen. Obwohl diese Flüssigkeit in Kliniken wirksam ist, trocknet sie innerhalb von Tagen aus und schränkt tragbare Geräte ein. Xuanhe Zhao und Kollegen haben eine trockene Alternative entwickelt, die in Science veröffentlicht wurde. Ihr gummiartiges Medium behält während neuntägiger Dauertests eine stabile Leistung bei.",
+      "heading_es": "Eliminando el requisito del gel",
+      "body_es": "Los técnicos suelen aplicar un fluido frío para llenar los huecos microscópicos entre la piel y los dispositivos. Aunque es eficaz en clínicas, este líquido se seca en pocos días y limita los dispositivos portátiles. Xuanhe Zhao y sus colegas crearon una alternativa seca publicada en Science. Su medio cauchoso mantiene un rendimiento estable durante nueve días de pruebas continuas."
+    },
+    {
+      "heading_en": "Molecular Bottlebrush Design",
+      "heading_vi": "Thiết kế bàn chải phân tử",
+      "body_en": "Liquids transmit sound well because loosely connected molecules slide easily with little friction. Solid polymers normally cause sound waves to dissipate through dense, tangled structures. To solve this, the team used a bottlebrush molecular configuration. Short side chains sprout from a main backbone, moving freely at ultrasound frequencies to reduce internal friction.",
+      "body_vi": "Chất lỏng truyền âm thanh tốt vì các phân tử liên kết lỏng lẻo trượt dễ dàng với ít ma sát. Các polymer rắn thông thường khiến sóng âm tiêu tan qua các cấu trúc dày đặc và rối ren. Để giải quyết vấn đề này, nhóm nghiên cứu đã sử dụng cấu hình phân tử dạng bàn chải (*bottlebrush*). Các chuỗi nhánh ngắn mọc ra từ khung chính, di chuyển tự do ở tần số siêu âm nhằm giảm ma sát nội tại.",
+      "heading_fr": "Conception moléculaire en goupillon",
+      "body_fr": "Les liquides transmettent bien le son car des molécules faiblement reliées glissent facilement avec peu de friction. Les polymères solides provoquent normalement la dissipation des ondes sonores à travers des structures denses et emmêlées. Pour résoudre ce problème, l'équipe a utilisé une configuration moléculaire en goupillon. De courtes chaînes latérales poussent à partir d'un squelette principal, se déplaçant librement aux fréquences ultrasonores pour réduire la friction interne.",
+      "heading_de": "Molekulares Flaschenbürsten-Design",
+      "body_de": "Flüssigkeiten übertragen Schall gut, weil sich lose verbundene Moleküle leicht und mit geringer Reibung verschieben. Feste Polymere lassen Schallwellen normalerweise durch dichte, verhedderte Strukturen abklingen. Um dieses Problem zu lösen, verwendete das Team eine flaschenbürstenartige molekulare Konfiguration. Kurze Seitenketten entspringen einem Hauptrückgrat und bewegen sich bei Ultraschallfrequenzen frei, um die innere Reibung zu reduzieren.",
+      "heading_es": "Diseño molecular de cepillo de botella",
+      "body_es": "Los líquidos transmiten bien el sonido porque las moléculas vagamente conectadas se deslizan fácilmente con poca fricción. Los polímeros sólidos normalmente hacen que las ondas sonoras se disipen a través de estructuras densas y enredadas. Para resolver esto, el equipo utilizó una configuración molecular de cepillo de botella. Cadenas laterales cortas brotan de una columna vertebral principal, moviéndose libremente a frecuencias de ultrasonido para reducir la fricción interna."
+    },
+    {
+      "heading_en": "Testing During Physical Activity",
+      "heading_vi": "Thử nghiệm trong hoạt động thể chất",
+      "body_en": "Initial samples broke easily under their own weight, so researchers reinforced the material by fusing a second molecular network. The final substance stretches repeatedly without tearing. During field trials, a key-fob-sized patch monitored blood flow on a volunteer during a thirty-minute bicycle ride across town.",
+      "body_vi": "Các mẫu ban đầu dễ bị vỡ dưới trọng lượng của chính chúng, vì vậy các nhà nghiên cứu đã gia cố vật liệu bằng cách dung hợp mạng lưới phân tử thứ hai. Chất cuối cùng có thể kéo giãn lặp đi lặp lại mà không bị rách. Trong các thử nghiệm thực tế, một miếng dán kích cỡ móc khóa đã theo dõi lưu lượng máu của tình nguyện viên trong chuyến đạp xe ba mươi phút qua thành phố.",
+      "heading_fr": "Tests pendant l'activité physique",
+      "body_fr": "Les premiers échantillons se brisaient facilement sous leur propre poids, les chercheurs ont donc renforcé le matériau en fusionnant un deuxième réseau moléculaire. La substance finale s'étire de manière répétée sans se déchirer. Lors d'essais sur le terrain, un patch de la taille d'une télécommande a surveillé le flux sanguin d'un volontaire lors d'une balade à vélo de trente minutes à travers la ville.",
+      "heading_de": "Tests während körperlicher Aktivität",
+      "body_de": "Erste Proben brachen unter ihrem Eigengewicht leicht, weshalb Forscher das Material durch Verschmelzen eines zweiten molekularen Netzwerks verstärkten. Die endgültige Substanz lässt sich wiederholt dehnen, ohne zu reißen. Während Praxistests überwachte ein schlüsselanhängergroßes Pflaster den Blutfluss eines Freiwilligen während einer dreißigminütigen Fahrradfahrt durch die Stadt.",
+      "heading_es": "Pruebas durante la actividad física",
+      "body_es": "Las muestras iniciales se rompían fácilmente bajo su propio peso, por lo que los investigadores reforzaron el material fusionando una segunda red molecular. La sustancia final se estira repetidamente sin romperse. Durante las pruebas de campo, un parche del tamaño de un llavero monitoreó el flujo sanguíneo en un voluntario durante un paseo en bicicleta de treinta minutos por la ciudad."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/ultrasound-imaging-without-gel-1119"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1673715852601-987ac8f3b9ce?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1673715852601-987ac8f3b9ce?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "TSD Studio",
+    "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/NPdDEGpenF4",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/NPdDEGpenF4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795317671/pagemoor/covers/engineers-design-a-gel-free-material-for-wearable-ultrasound-130780.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795317672/pagemoor/covers/engineers-design-a-gel-free-material-for-wearable-ultrasound-130780-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-130780/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Jennifer Chu | MIT News"
+    ],
+    "originalTitle": "Ultrasound imaging without the gel",
+    "originalUrl": "https://news.mit.edu/2026/ultrasound-imaging-without-gel-1119",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify a health metric you want to monitor over time.",
+      "Research current wearable devices available for home use.",
+      "Consult a physician about integrating continuous tracking into your care."
+    ],
+    "vi": [
+      "Xác định chỉ số sức khỏe bạn muốn theo dõi theo thời gian.",
+      "Nghiên cứu các thiết bị đeo hiện có sẵn để sử dụng tại nhà.",
+      "Tham khảo ý kiến bác sĩ về việc tích hợp theo dõi liên tục vào quá trình chăm sóc của bạn."
+    ],
+    "fr": [
+      "Identifier un indicateur de santé à surveiller dans le temps.",
+      "Rechercher les appareils portables actuels disponibles pour un usage domestique.",
+      "Consulter un médecin pour intégrer un suivi continu dans vos soins."
+    ],
+    "de": [
+      "Identifiziere eine Gesundheitsmetrik, die du im Laufe der Zeit überwachen möchtest.",
+      "Erkunde aktuell verfügbare tragbare Geräte für den Heimgebrauch.",
+      "Konsultiere einen Arzt bezüglich der Integration eines kontinuierlichen Trackings in deine Pflege."
+    ],
+    "es": [
+      "Identifica una métrica de salud que desees monitorear a lo largo del tiempo.",
+      "Investiga los dispositivos portátiles actuales disponibles para uso doméstico.",
+      "Consulta a un médico sobre la integración del seguimiento continuo en tu cuidado."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1673715852601-987ac8f3b9ce?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1673715852601-987ac8f3b9ce?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "TSD Studio",
+      "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/NPdDEGpenF4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/NPdDEGpenF4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1707651385168-c9869776921a?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1707651385168-c9869776921a?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Vadim Bogulov",
+      "authorUrl": "https://unsplash.com/@franku84?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/ORTKjnE9rIo",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/ORTKjnE9rIo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1697301439949-798044084e15?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1697301439949-798044084e15?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Harshit Suryawanshi",
+      "authorUrl": "https://unsplash.com/@harshit_suryawanshi?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/B1MoRBrsOEc",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/B1MoRBrsOEc/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1685290334023-7771bfd0ef9c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1685290334023-7771bfd0ef9c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Toru Wa",
+      "authorUrl": "https://unsplash.com/@toruwa?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/ITxAx8_iEdA",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/ITxAx8_iEdA/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8RW5naW5lZXJzJTIwRGVzaWduJTIwYSUyMEdlbCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTMxNzUzNHww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JYwCw7YyK27Nj3SaxBsZe1cRq0AD+694nR28O3k8XSh7n5lasWfakkaEzfgpz/99dvPrCx87sU5nliHxbPL5iVfBKH/H1LBdemIYzGJYF05trbpOvR0jxUsmeNLJkoxN5YJgJ4H/zdhcqvvNewIATIMh4qYDbbVb7MQ5OdlgRfrR+u30P8WanN4mstX7HwM4N52HAcY3AAA==",
+  "dominant": "#3c464f",
+  "glossary": {
+    "en": {
+      "ultrasound": "Imaging using high-frequency sound waves.",
+      "massachusetts institute of technology": "A prominent research university.",
+      "xuanhe zhao": "A researcher who led the study.",
+      "science": "An academic journal where the study was published.",
+      "bottlebrush molecular configuration": "A molecular structure with short side chains sprouting from a backbone.",
+      "polymers": "Large molecules composed of many repeated subunits.",
+      "friction": "Resistance encountered when two surfaces slide against each other.",
+      "molecular network": "An interconnected web of molecules.",
+      "field trials": "Tests conducted in real-world environments."
+    },
+    "vi": {
+      "siêu âm": "Kỹ thuật dùng sóng âm tần số cao để tạo hình ảnh bên trong cơ thể con người.",
+      "đầu dò": "Thiết bị y tế tiếp xúc với da để phát và thu nhận sóng siêu âm.",
+      "xuanhe zhao": "Nhà nghiên cứu đứng đầu công trình phát triển vật liệu khô thay thế gel siêu âm.",
+      "science": "Tạp chí khoa học uy tín nơi nghiên cứu về vật liệu mới được công bố.",
+      "polymer": "Hợp chất gồm các phân tử lớn với nhiều mắt xích liên kết với nhau.",
+      "bottlebrush": "Cấu hình phân tử dạng bàn chải giúp giảm ma sát nội tại khi truyền sóng.",
+      "tần số siêu âm": "Mức dao động sóng âm vượt quá ngưỡng nghe thấy của tai người.",
+      "ma sát nội tại": "Lực cản sinh ra bên trong vật liệu khi các thành phần chuyển động.",
+      "mạng lưới phân tử": "Cấu trúc liên kết chặt chẽ của các phân tử tạo độ bền cho vật liệu."
+    },
+    "fr": {
+      "imagerie ultrasonore": "Technique médicale utilisant des ondes sonores pour visualiser l'intérieur du corps.",
+      "sonde": "Appareil tenu à la main qui envoie et reçoit les ondes sonores.",
+      "massachusetts institute of technology": "Célèbre université américaine de recherche.",
+      "xuanhe zhao": "Chercheur principal ayant dirigé la création du nouveau matériau.",
+      "science": "Revue scientifique internationale de premier plan.",
+      "polymères": "Grandes molécules constituées de sous-unités répétées.",
+      "fréquences ultrasonores": "Vibrations sonores trop élevées pour l'oreille humaine.",
+      "réseau moléculaire": "Structure interconnectée de molécules formant un matériau."
+    },
+    "de": {
+      "ultraschallbildgebung": "Ein medizinisches Verfahren zur Erzeugung von Bildern innerer Organe mithilfe von Schallwellen.",
+      "schallkopf": "Ein Gerät, das Ultraschallwellen aussendet und empfängt.",
+      "massachusetts institute of technology": "Eine weltberühmte Universität und Forschungseinrichtung in den USA.",
+      "polymere": "Große Moleküle, die aus vielen chemisch gebundenen Wiederholungseinheiten bestehen.",
+      "flaschenbürsten-design": "Eine spezielle molekulare Struktur, die ähnlich wie eine Flaschenbürste aufgebaut ist.",
+      "ultraschallfrequenzen": "Schwingungsfrequenzen, die über dem Bereich des menschlichen Hörvermögens liegen.",
+      "netzwerks": "Eine eng verknüpfte molekulare Struktur innerhalb eines Materials.",
+      "gesundheitsmetrik": "Ein messbarer Wert zur Beurteilung des körperlichen Gesundheitszustands."
+    },
+    "es": {
+      "ultrasonido": "Técnica de imagen médica que utiliza ondas sonoras de alta frecuencia para visualizar el interior del cuerpo.",
+      "sonda": "Dispositivo manual que se coloca sobre la piel para emitir y recibir ondas sonoras.",
+      "polímeros": "Grandes moléculas compuestas por la unión de unidades químicas más pequeñas repetidas.",
+      "frecuencias": "Número de ciclos por segundo que ocurren en las ondas sonoras.",
+      "fricción": "Resistencia al movimiento entre dos superficies en contacto.",
+      "red molecular": "Estructura interconectada formada por múltiples moléculas unidas.",
+      "voluntario": "Persona que participa de forma libre en una prueba científica.",
+      "clínicas": "Establecimientos sanitarios dedicados a la atención médica de pacientes."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-22T02:50:27.144Z"
+}
