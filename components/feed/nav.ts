@@ -3,6 +3,8 @@
 // Offsets live in motion values, never in React state, so dragging does not re-render.
 import { animate, motionValue, type MotionValue } from 'framer-motion';
 import { clamp, prefersReducedMotion, springFor } from '@/lib/motion';
+import { localDate } from '@/lib/streak';
+import { useReading } from '@/stores/reading';
 import { useUI, type View } from '@/stores/ui';
 
 export const layout = { w: 390, h: 844, total: 1 };
@@ -128,4 +130,30 @@ export function setFeedSlugs(items: string[] | readonly { slug: string }[]) {
 export function activeSlug(): string | undefined {
   const item = currentItems[useUI.getState().index];
   return typeof item === 'string' ? item : item?.slug;
+}
+
+/**
+ * The Home tab. Over a panel it closes the panel and shows the feed where the reader left it; while
+ * reading (the bar folded to this one tab) it slides the article back to its cover. Only on a cover
+ * already does it start the feed again from the top. Restarting from a panel or mid-article lost the
+ * reader's place and, pressed twice, only replayed the feed's fade-in over the same page.
+ */
+export function goHome() {
+  const ui = useUI.getState();
+  const slug = activeSlug();
+  if (ui.category !== null) ui.startFeed({ category: null });
+  else if (ui.overlays.length) useUI.setState({ overlays: [] });
+  else if (slug && targetView(slug) > 0) setArticleView(slug, 0);
+  else if (targetArticle() > 0) ui.startFeed({ category: null });
+}
+
+/**
+ * See more and pull to refresh: a new For You batch from the top, leaving out what was read today and
+ * everything today's batches already held, read or not.
+ */
+export function moreArticles() {
+  const day = localDate();
+  const { daily, setDaily } = useReading.getState();
+  setDaily({ day, batch: [], shown: daily.day === day ? [...new Set([...daily.shown, ...daily.batch])] : [] });
+  useUI.getState().startFeed({ category: null });
 }

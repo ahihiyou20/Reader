@@ -1,11 +1,11 @@
 import { ReaderApp } from '@/components/ReaderApp';
-import { COVER_SIZES } from '@/lib/covers';
+import { COVER_SIZES, lighterCover } from '@/lib/covers';
 import { readOptCovers } from '@/lib/covers-server';
 import { readFeed } from '@/lib/server/content';
 
 function posterVariant(url: string): string {
   const match = url.match(/\/id\/(\d+)/);
-  return match ? `https://picsum.photos/id/${match[1]}/540/960` : url;
+  return match ? `https://picsum.photos/id/${match[1]}/540/960` : lighterCover(url);
 }
 
 export default function Home() {

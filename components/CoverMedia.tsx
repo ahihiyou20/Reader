@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import type { CoverClient } from '@/lib/content/types';
-import { COVER_SIZES, type OptCover } from '@/lib/covers';
+import { COVER_SIZES, lighterCover, type OptCover } from '@/lib/covers';
 import { isDecoded } from '@/lib/data';
 import { useUI } from '@/stores/ui';
 import { useReducedMotion } from './hooks';
@@ -11,16 +11,12 @@ export function CoverMedia({
   cover,
   playing,
   priority,
-  blurred,
-  active,
   opt,
 }: {
   cover: CoverClient;
   opt?: OptCover;
   playing?: boolean;
   priority?: boolean;
-  blurred?: boolean;
-  active?: boolean;
 }) {
   const landscape = useUI((s) => s.stage.endsWith('landscape'));
   const wanted = coverSource(cover, opt, landscape);
@@ -49,18 +45,18 @@ export function CoverMedia({
   // while it loads (it happens before React hears of the resize). The last file it showed stays
   // underneath: it is in the cache, so this costs no download. Only the cover on screen keeps one.
   const [backdrop, setBackdrop] = useState<string>();
-  const keepsBackdrop = Boolean(playing && source.srcSet && !blurred);
+  const keepsBackdrop = Boolean(playing && source.srcSet);
   useEffect(() => setBackdrop(keepsBackdrop ? img.current?.currentSrc || undefined : undefined), [keepsBackdrop]);
   // A cover the feed already preloaded shows at once instead of fading in.
   const [decoded, setDecoded] = useState(() => Boolean(priority) || isDecoded(source.src));
   const video = useRef<HTMLVideoElement>(null);
   const img = useRef<HTMLImageElement>(null);
 
-  const shouldDecode = Boolean(priority || active || playing || blurred);
+  const shouldDecode = Boolean(priority || playing);
   const still = useReducedMotion();
   // A cover with a clip shows only the clip, never its photo first: the pages next to the current one
   // are the only ones mounted, so the clip of the next article is already loading before the swipe.
-  const wantClip = cover.video && !blurred && !still && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
+  const wantClip = cover.video && !still && !saveData() ? (landscape && cover.video.wide) || cover.video.url : undefined;
   const [clipReady, setClipReady] = useState(false);
   const [clipFailed, setClipFailed] = useState(false);
   // The clip's shape is chosen when it starts: swapping it on rotation would remount the <video>, and
@@ -103,8 +99,7 @@ export function CoverMedia({
     <div className="media-blur" style={{ backgroundImage: `url(${cover.blurDataURL})` }} aria-hidden="true" />
   ) : null;
 
-  // The blurred Details layer reuses the poster/image (already cached) instead of decoding the video twice.
-  if (cover.type === 'video' && !blurred) {
+  if (cover.type === 'video') {
     return (
       <>
         {placeholder}
@@ -150,10 +145,7 @@ export function CoverMedia({
       {backdrop && <img className="media media-backdrop" src={backdrop} alt="" aria-hidden="true" draggable={false} />}
       <img
         ref={img}
-        // Covers without a clip drift slowly while on screen. The animation stays on and only pauses
-        // off screen: adding or removing it made the picture jump in scale as a swipe landed.
-        className={`media${decoded ? '' : ' loading'}${!blurred ? ' drift' : ''}`}
-        style={!blurred ? { animationPlayState: playing ? 'running' : 'paused' } : undefined}
+        className={`media${decoded ? '' : ' loading'}`}
         src={src}
         srcSet={srcSet}
         sizes={sizes}
@@ -161,8 +153,9 @@ export function CoverMedia({
         decoding="async"
         draggable={false}
         // Only the pages next to the current one are mounted, and they must be ready before the swipe lands.
+        // The one on screen comes first: a fast swipe can land on a cover still loading.
         loading="eager"
-        fetchPriority={priority ? 'high' : 'auto'}
+        fetchPriority={priority || playing ? 'high' : 'low'}
         onLoad={() => {
           const el = img.current;
           if (el?.currentSrc && keepsBackdrop) setBackdrop(el.currentSrc);
@@ -181,7 +174,7 @@ export function CoverMedia({
 export function coverSource(cover: CoverClient, opt: OptCover | undefined, landscape: boolean) {
   // The landscape file is sharp on wide screens; phones keep the smaller portrait one.
   const wide = landscape ? cover.wide : undefined;
-  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : cover.url);
+  const src = wide ?? opt?.src ?? (cover.type === 'video' ? cover.poster ?? cover.blurDataURL : lighterCover(cover.url));
   return { src, srcSet: wide ? undefined : opt?.srcSet, sizes: opt && !wide ? COVER_SIZES : undefined };
 }
 

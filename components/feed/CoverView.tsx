@@ -58,7 +58,12 @@ export function CoverView({
       <div className="scrim" />
       <CoverCredit cover={item.cover} className="ccredit" />
       <div className="crow" data-region="cover-row">
-        <button className={`hint${nudge ? ' nudge' : ''}`} type="button" onClick={toDetails} aria-label={t('toDetails')}>
+        <button
+          className={`hint${nudge ? ' nudge' : ''}`}
+          type="button"
+          onClick={toDetails}
+          aria-label={t('toDetails')}
+        >
           <span className="hint-t">{t('toDetails')}</span>
           <ChevronsRight className="ic" aria-hidden="true" />
         </button>
@@ -75,10 +80,31 @@ export function CoverView({
         {lead && <span className="ta">{`${lead} `}</span>}
         <span className="tb">{accent}</span>
       </h2>
-      {(active ?? true) && view === 0 && (
-        <div className="rail" data-region="rail" style={active ? { viewTransitionName: 'action-rail' } : undefined}>
-          <ActionButton kind="like" size="lg" count={counts.likes} on={liked} label={t('likeAria', { n: counts.likes })} onPress={() => toggleLike(item.slug)} />
-          <ActionButton kind="save" size="lg" count={counts.saves} on={saved} label={t('saveAria', { n: counts.saves })} onPress={() => toggleSave(item.slug)} />
+      {/* Every cover carries its rail, so the buttons travel with the article during a swipe instead of
+          appearing once it settles. */}
+      {view === 0 && (
+        <div
+          // The article on screen owns "the rail"; its neighbours carry a look-alike (inert) until they arrive.
+          className={active ? 'rail' : 'rail-peek'}
+          data-region={active ? 'rail' : undefined}
+          style={active ? { viewTransitionName: 'action-rail' } : undefined}
+        >
+          <ActionButton
+            kind="like"
+            size="lg"
+            count={counts.likes}
+            on={liked}
+            label={t('likeAria', { n: counts.likes })}
+            onPress={() => toggleLike(item.slug)}
+          />
+          <ActionButton
+            kind="save"
+            size="lg"
+            count={counts.saves}
+            on={saved}
+            label={t('saveAria', { n: counts.saves })}
+            onPress={() => toggleSave(item.slug)}
+          />
           <ActionButton
             kind="share"
             size="lg"

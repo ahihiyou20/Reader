@@ -6,8 +6,10 @@
 import { m, useTransform } from 'framer-motion';
 import { useEffect, useRef, useSyncExternalStore } from 'react';
 import type { FeedItem } from '@/lib/content/types';
-import { preloadImage, prefetchArticle } from '@/lib/data';
-import { pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
+import { preloadImages, prefetchArticle, usePageLoaded } from '@/lib/data';
+import { clamp, pickPage, prefersReducedMotion, rubberClamp, sampleVelocity } from '@/lib/motion';
+import { tap as haptic } from '@/lib/haptics';
+import { RotateCw } from 'lucide-react';
 import { toggleLike, toggleSave } from '@/lib/actions';
 import { preloadTitleFaces } from '@/lib/title';
 import { useUI } from '@/stores/ui';
@@ -22,6 +24,7 @@ import {
   feedP,
   goToArticle,
   layout,
+  moreArticles,
   onSlideReach,
   registerFade,
   relayout,
@@ -47,7 +50,13 @@ interface Gesture {
   samples: Array<{ t: number; x: number; y: number }>;
   target: Element;
   blockX: boolean;
+  /** Pulled down far enough on the first For You cover to refresh it on release. */
+  armed?: boolean;
 }
+
+/** How far the first cover must be pulled down (px) to load a new For You batch. */
+const PULL_PX = 72;
+const pulled = () => -feedP.get() * layout.h;
 
 export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (x: number, y: number) => void }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -57,6 +66,11 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   const t = useT();
   const total = items.length + 1;
   const y = useTransform(feedP, (p) => `${-p * 100}%`);
+  const category = useUI((s) => s.category);
+  // Pull to refresh: the arrow shows and turns as the first cover is pulled down.
+  const pull = useTransform(feedP, (p) => clamp((-p * layout.h) / PULL_PX, 0, 1));
+  const spin = useTransform(pull, (v) => v * 270);
+  const loaded = usePageLoaded();
 
   // Keep the shared layout in sync with the measured size and the list. The gesture handlers read
   // the list through a ref: re-binding them when the full feed replaces the head would drop a drag
@@ -72,13 +86,15 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
   useEffect(() => {
     // A new feed (Explore, Library, the menu) starts at the top without sliding there; the new first
     // article comes into focus instead of cutting in.
-    feedP.stop();
-    feedP.set(useUI.getState().index);
+    // At once, dropping any slide in flight: the tap that restarted the feed (See more) also settled
+    // the old page, and that slide landing afterwards put the reader back on it.
+    goToArticle(useUI.getState().index, 0, true);
     if (version > 0 && !prefersReducedMotion())
       ref.current?.animate(
         [
-          { opacity: 0, transform: 'scale(1.035)', filter: 'blur(10px)' },
-          { opacity: 1, transform: 'none', filter: 'blur(0)' },
+          // No blur: a full-screen blur, while the panel slides away, is more than a phone draws in a frame.
+          { opacity: 0, transform: 'scale(1.035)' },
+          { opacity: 1, transform: 'none' },
         ],
         { duration: 560, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' },
       );
@@ -97,52 +113,23 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
     return p.on('change', sync);
   }, [activeSlug]);
 
-  // FR-04: prefetch the next two articles and their covers (deferred to idle to protect hydration & first paint).
+  // FR-04: the article text and title faces now, then the covers in the order a swipe reaches them.
   useEffect(() => {
-    if (items[index]) prefetchArticle(items[index].slug);
-    if (items[index]) preloadTitleFaces(items[index].category);
-    // Title faces are small and shared by a whole category: fetch them a few covers ahead, so a cover
-    // never arrives before its lettering (keys or a hard flick can pass several covers in a second).
-    const ahead = () => {
-      for (let k = -1; k <= 5; k++) if (items[index + k]) preloadTitleFaces(items[index + k].category);
-    };
-
-    // The same file the cover's <img> will ask for, so the swipe lands on a decoded image.
+    const item = items[index];
+    if (item) prefetchArticle(item.slug);
+    if (item) preloadTitleFaces(item.category);
+    // Until the page has loaded, the cover on screen has the bandwidth to itself.
+    if (!loaded) return;
     const landscape = useUI.getState().stage.endsWith('landscape');
-    const warm = (k: number) => {
-      const it = items[index + k];
-      if (!it) return;
+    const near = [1, 2, -1, 3, 4].map((k) => items[index + k]).filter(Boolean);
+    // Title faces are small and shared by a whole category: fetched ahead, a cover never arrives before
+    // its lettering (keys or a hard flick can pass several covers in a second).
+    for (const it of near) {
       prefetchArticle(it.slug);
-      const { src, srcSet, sizes } = coverSource(it.cover, optCover(it.slug), landscape);
-      preloadImage(src, srcSet, sizes);
-    };
-    // The next cover cannot wait for idle time: a quick swipe reaches it within a second.
-    warm(1);
-    if (typeof window === 'undefined') return;
-    if ('requestIdleCallback' in window) {
-      const handle = (
-        window as unknown as {
-          requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number;
-        }
-      ).requestIdleCallback(
-        () => {
-          ahead();
-          for (const k of [2, 3, -1]) warm(k);
-        },
-        { timeout: 2000 },
-      );
-      return () => {
-        if ('cancelIdleCallback' in window) {
-          (window as unknown as { cancelIdleCallback: (id: number) => void }).cancelIdleCallback(handle);
-        }
-      };
+      preloadTitleFaces(it.category);
     }
-    const timer = setTimeout(() => {
-      ahead();
-      for (const k of [2, 3, -1]) warm(k);
-    }, 500);
-    return () => clearTimeout(timer);
-  }, [index, items]);
+    preloadImages(near.map((it) => coverSource(it.cover, optCover(it.slug), landscape)));
+  }, [index, items, loaded]);
 
   // ---------- Pointer gestures ----------
   useEffect(() => {
@@ -202,7 +189,14 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
       const dxPages = dx / g.w0;
       const dyPages = dy / g.h0;
       if (g.axis === 'x' && g.slug) viewP(g.slug).set(rubberClamp(g.vp - dxPages, 0, 2, 1));
-      else if (g.axis === 'y') feedP.set(rubberClamp(g.fp - dyPages, 0, layout.total - 1, 1));
+      else if (g.axis === 'y') {
+        feedP.set(rubberClamp(g.fp - dyPages, 0, layout.total - 1, 1));
+        const armed = useUI.getState().category === null && pulled() >= PULL_PX;
+        if (armed !== Boolean(g.armed)) {
+          g.armed = armed;
+          if (armed) haptic();
+        }
+      }
     };
 
     const abandon = () => {
@@ -248,6 +242,7 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
               sampleNow,
             )
           : 0;
+        if (G.armed && pulled() >= PULL_PX) return moreArticles();
         const i = targetArticle();
         const page = pickPage(-(feedP.get() * layout.h), v, layout.h, i, 0, layout.total - 1);
         goToArticle(page, v);
@@ -347,6 +342,11 @@ export function Feed({ items, onDoubleTap }: { items: FeedItem[]; onDoubleTap: (
 
   return (
     <div className="feed" ref={ref} role="feed" aria-busy={false} aria-label={t('appName')}>
+      {!category && (
+        <m.div className="ptr" style={{ opacity: pull, rotate: spin }} aria-hidden="true">
+          <RotateCw className="ic" />
+        </m.div>
+      )}
       <m.div className="track" style={{ y }} ref={(el) => registerFade('feed', el)}>
         {pages.map((i) =>
           i < items.length ? (

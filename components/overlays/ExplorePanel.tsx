@@ -4,8 +4,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { useCategories, useFeed } from '@/lib/data';
 import { pick } from '@/lib/i18n';
 import { useUI } from '@/stores/ui';
-import { useStaggeredCount, useT } from '../hooks';
-import { ArticleCard } from './ArticleCard';
+import { usePaged, useStaggeredCount, useT } from '../hooks';
+import { ArticleCard, CARD_PAGE, trending } from './ArticleCard';
 import { Panel } from './Layer';
 import { Indicator } from '@/components/ui/Indicator';
 import { TopicGlyph } from '../icons';
@@ -35,15 +35,12 @@ export function ExplorePanel() {
     for (const i of items) m.set(i.category, (m.get(i.category) ?? 0) + 1);
     return m;
   }, [items]);
-  const trending = useMemo(() => {
-    const weekAgo = Date.now() - 7 * 86_400_000;
-    const score = (i: (typeof items)[number]) =>
-      i.counts.likes + 2 * i.counts.saves + 3 * i.counts.shares + 2 * i.counts.comments + (Date.parse(i.publishedAt) > weekAgo ? 5 : 0);
-    return [...items].sort((a, b) => score(b) - score(a)).slice(0, 6);
-  }, [items]);
+  const top = useMemo(() => trending(items), [items]);
   const grid = cat ? items.filter((i) => i.category === cat) : items;
-  // The first covers arrive one after another, as search results do.
-  const shown = useStaggeredCount(grid.length, open, cat);
+  // The first cards arrive one after another, as search results do; the rest a page at a time.
+  const shown = useStaggeredCount(Math.min(grid.length, CARD_PAGE), open, cat);
+  const { limit, sentinel, more } = usePaged(grid.length, CARD_PAGE, cat);
+  const staggering = shown < Math.min(grid.length, CARD_PAGE);
 
   return (
     <Panel
@@ -82,11 +79,11 @@ export function ExplorePanel() {
             </button>
           ))}
         </div>
-        {!cat && trending.length > 2 && (
+        {!cat && top.length > 2 && (
           <>
             <div className="label">{t('trending')}</div>
             <div className="carousel">
-              {trending.map((i, n) => (
+              {top.map((i, n) => (
                 <ArticleCard key={i.slug} item={i} index={n} wide onOpen={() => startFeed({ category: null, slug: i.slug })} />
               ))}
             </div>
@@ -95,9 +92,10 @@ export function ExplorePanel() {
         <div className="label">{cat ? pick(cats?.find((c) => c.id === cat)?.name, lang) : t('allArticles')}</div>
         {grid.length ? (
           <div className="grid">
-            {grid.slice(0, shown).map((i) => (
+            {grid.slice(0, staggering ? shown : limit).map((i) => (
               <ArticleCard key={`${cat}:${i.slug}`} item={i} showCategory={!cat} onOpen={() => startFeed({ category: cat, slug: i.slug })} />
             ))}
+            {more && !staggering && <div ref={sentinel} aria-hidden="true" />}
           </div>
         ) : (
           <div className="empty-note">{t('noArticlesInCategory')}</div>

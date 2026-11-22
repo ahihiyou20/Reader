@@ -31,6 +31,8 @@ export function useReadingSignals(items: FeedItem[] | undefined) {
     if (!slug || !category) return;
     arrived.current = Date.now();
     opened.current = false;
+    // Shown: For You keeps it behind unseen articles for a week (lib/recommend pickBatch).
+    useReading.getState().markServed(slug, localDate());
     return () => {
       if (!opened.current && Date.now() - arrived.current < SKIP_MS) useReading.getState().record(category, { skips: 1 });
     };

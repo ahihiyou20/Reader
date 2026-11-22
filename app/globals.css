@@ -155,7 +155,6 @@ body {
 }
 body {
   font-family: var(--font-sans);
-  font-optical-sizing: auto;
   font-feature-settings: 'cv11', 'ss01';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -407,6 +406,26 @@ select {
   inset: 0;
   will-change: transform;
 }
+/* Pull to refresh: sits in the gap the first cover leaves when pulled down, behind nothing. */
+.ptr {
+  position: absolute;
+  top: calc(var(--sat) + 14px);
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(28, 28, 34, 0.7);
+  color: var(--fg);
+  opacity: 0;
+  pointer-events: none;
+}
+.ptr .ic {
+  width: 20px;
+  height: 20px;
+}
 .article {
   position: absolute;
   left: 0;
@@ -463,17 +482,13 @@ select {
 .layer.eng {
   opacity: 0;
 }
-.layer.blur .media,
+/* Painted once: a layer of its own (will-change) made the phone blur it again on every frame of a swipe. */
 .layer.blur .media-blur {
   filter: blur(24px) brightness(0.55) saturate(1.1);
   transform: scale(1.12);
 }
 .article[data-active='true'] .layer.blur {
   will-change: opacity;
-}
-.article[data-active='true'] .layer.blur .media,
-.article[data-active='true'] .layer.blur .media-blur {
-  will-change: transform;
 }
 .layer.blur .dim {
   position: absolute;
@@ -518,14 +533,14 @@ select {
 }
 
 /* ---------- Shared controls ---------- */
+/* The small controls over a cover are tinted, not frosted: a phone blurs the picture behind every
+   frosted one again on each frame of a swipe, a dozen of them at once. The nav bar keeps its glass. */
 .cb {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: rgba(28, 28, 34, 0.38);
+  background: rgba(28, 28, 34, 0.55);
   border: 1.5px solid rgba(255, 255, 255, 0.28);
-  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
   color: var(--fg);
   transition:
     transform var(--dur-press) var(--ease-out),
@@ -542,10 +557,8 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(22, 22, 28, 0.45);
+  background: rgba(22, 22, 28, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(20px); /* auteur-allow: G1 -- frosted glass chrome material */
   font: 600 16px var(--font-sans);
   white-space: nowrap;
   transition: transform var(--dur-press) var(--ease-out);
@@ -701,7 +714,7 @@ select {
   font-size: 27px;
   line-height: 34px;
 }
-.rail {
+:is(.rail, .rail-peek) {
   position: absolute;
   right: 14px;
   bottom: calc(var(--sab) + 104px);
@@ -723,10 +736,8 @@ select {
 .cmeta .tag {
   padding: 3px 9px;
   border-radius: 999px;
-  background: rgba(20, 20, 26, 0.45);
+  background: rgba(20, 20, 26, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .bigheart {
   position: absolute;
@@ -783,29 +794,26 @@ select {
 .dscroll::-webkit-scrollbar {
   display: none;
 }
-/* Depth of field (CMP-09): the block being read sits in front, sharp and lifted off the cover image;
-   its neighbours recede a little, the rest further. Only opacity, transform and a small blur animate
-   (composite-only; blur stays ≤ 1.2px for Safari). Scaling from the left edge keeps lines aligned. */
+/* Depth of field (CMP-09): the block being read sits in front, lifted off the cover image; its
+   neighbours recede a little, the rest further. Only opacity and transform animate. No blur: every
+   blurred block was a live filter layer a phone redrew on each frame of the scroll.
+   Scaling from the left edge keeps lines aligned. */
 .sec {
   margin-bottom: 28px;
   opacity: 0.26;
   transform: scale(0.955);
   transform-origin: 0 50%;
-  filter: blur(1.2px);
   transition:
     opacity 300ms var(--ease-out),
-    transform 400ms var(--ease-out),
-    filter 300ms var(--ease-out);
+    transform 400ms var(--ease-out);
 }
 .sec.near {
   opacity: 0.36;
   transform: scale(0.97);
-  filter: blur(0.6px);
 }
 .sec.on {
   opacity: 1;
   transform: none;
-  filter: none;
   text-shadow:
     0 1px 2px rgba(0, 0, 0, 0.35),
     0 4px 18px rgba(0, 0, 0, 0.45);
@@ -1246,27 +1254,19 @@ select {
   stroke-dashoffset: 0;
 }
 .step .stx {
-  position: relative;
-  display: inline-block;
-  transition: opacity var(--dur-draw, 220ms) var(--ease-out);
-}
-.step .stx::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1.5px;
-  background: rgba(255, 255, 255, 0.5);
-  transform-origin: left center;
-  transform: scaleX(0);
-  transition: transform var(--dur-draw, 220ms) cubic-bezier(0.23, 1, 0.32, 1);
+  /* Inline inside its wrapper (a flex item is always a block), so the strike, a background, is drawn
+     on every line of a step that wraps, left to right. */
+  display: inline;
+  background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)) no-repeat 0 58% / 0% 1.5px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition:
+    opacity var(--dur-draw, 220ms) var(--ease-out),
+    background-size var(--dur-draw, 220ms) cubic-bezier(0.23, 1, 0.32, 1);
 }
 .step[aria-pressed='true'] .stx {
   opacity: 0.72;
-}
-.step[aria-pressed='true'] .stx::after {
-  transform: scaleX(1);
+  background-size: 100% 1.5px;
 }
 .abadge {
   display: inline-flex;
@@ -1548,10 +1548,8 @@ select {
   object-fit: cover;
 }
 .avatar.guest {
-  background: rgba(28, 28, 34, 0.5);
+  background: rgba(28, 28, 34, 0.62);
   color: #fff;
-  -webkit-backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(12px); /* auteur-allow: G1 -- frosted glass chrome material */
 }
 .avatar.guest .ic {
   width: 20px;
@@ -1625,10 +1623,8 @@ select {
   align-items: center;
   gap: 6px;
   border-radius: 999px;
-  background: rgba(18, 18, 24, 0.38);
+  background: rgba(18, 18, 24, 0.55);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  -webkit-backdrop-filter: blur(16px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(16px); /* auteur-allow: G1 -- frosted glass chrome material */
   font: 600 17px var(--font-sans);
   transition:
     background-color 200ms var(--ease-out),
@@ -1662,7 +1658,8 @@ select {
 .bnav[data-over] {
   z-index: 50;
 }
-html[data-stage$='portrait'] :is(.panel.explore, .panel.search, .panel.library) .pbody {
+html[data-stage$='portrait'] :is(.panel.explore, .panel.search, .panel.library) .pbody,
+html[data-stage$='portrait'] .panel.msgs {
   padding-bottom: calc(var(--sab) + 104px);
 }
 html[data-stage='regular-landscape'] :is(.panel.explore, .panel.search, .panel.library) {
@@ -1768,6 +1765,7 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab {
   height: 44px;
 }
 html[data-stage$='portrait'] .bnav[data-mini] .nb.tab:not([aria-current]) {
+  overflow: hidden;
   width: 0;
   opacity: 0;
   pointer-events: none;
@@ -1782,7 +1780,6 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
   display: none;
 }
 .nb.tab {
-  overflow: hidden;
   transition:
     width 360ms var(--ease-out),
     height 360ms var(--ease-out),
@@ -1965,10 +1962,10 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
   touch-action: pan-y;
   box-shadow: -18px 0 40px rgba(0, 0, 0, 0.35);
 }
+/* No backdrop blur: the panel slides over a playing cover, and a phone redrew the blur every frame of
+   the slide, so the panel stuttered in and out. A denser top keeps the feed from showing through. */
 .panel.msgs {
-  background: linear-gradient(180deg, rgba(16, 16, 20, 0.62) 0, rgba(28, 28, 33, 0.97) calc(var(--sat) + 150px), #1c1c21 100%);
-  -webkit-backdrop-filter: blur(8px); /* auteur-allow: G1 -- frosted glass chrome material */
-  backdrop-filter: blur(8px); /* auteur-allow: G1 -- frosted glass chrome material */
+  background: linear-gradient(180deg, rgba(16, 16, 20, 0.9) 0, rgba(28, 28, 33, 0.98) calc(var(--sat) + 150px), #1c1c21 100%);
 }
 .phead {
   flex: none;
@@ -2488,6 +2485,8 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
   overflow-x: auto;
   margin: 0 -16px;
   padding: 0 16px 4px;
+  /* Snapping lines cards up with the padding, not the scroller's edge (else the first card loads flush left). */
+  scroll-padding-inline: 16px;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
@@ -3029,14 +3028,9 @@ html[data-stage$='portrait'] .bnav[data-mini] .nb.tab .lbl {
   }
 }
 @media (prefers-reduced-transparency: reduce) {
-  .pill,
-  .cb,
   .glass,
-  .lang,
   .kp,
-  .lmenu,
-  .cmeta .tag,
-  .panel.msgs {
+  .lmenu {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
@@ -3106,4 +3100,9 @@ html[data-welcome='pending'] .app > :not(.welcome) {
   .nb.tab {
     transition: none;
   }
+}
+/* A cover is swiped, not read: dragging across it with a mouse must not select its title. */
+.view.cover {
+  user-select: none;
+  -webkit-user-select: none;
 }

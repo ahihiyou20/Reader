@@ -2,7 +2,7 @@
 import { Search, X } from 'lucide-react';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { FeedItem } from '@/lib/content/types';
-import { loadSearch, useFeed, useTerms } from '@/lib/data';
+import { searchSlugs, useFeed, useTerms } from '@/lib/data';
 import { pick } from '@/lib/i18n';
 import { prefersReducedMotion } from '@/lib/motion';
 import { markMatches } from '@/lib/search';
@@ -85,7 +85,7 @@ export function SearchPanel() {
   useEffect(() => {
     if (!open) return;
     setRecent(readRecent());
-    loadSearch().catch(() => {});
+    searchSlugs('').catch(() => {});
     const id = setTimeout(() => input.current?.focus({ preventScroll: true }), 80);
     return () => clearTimeout(id);
   }, [open]);
@@ -96,12 +96,10 @@ export function SearchPanel() {
       return;
     }
     let cancelled = false;
-    loadSearch()
-      .then((ms) => {
+    searchSlugs(dq)
+      .then((ids) => {
         if (cancelled) return;
-        let res = ms.search(dq);
-        if (!res.length) res = ms.search(dq, { combineWith: 'OR' });
-        setHits(res.map((r) => bySlug.get(String(r.id))).filter(Boolean) as FeedItem[]);
+        setHits(ids.map((id) => bySlug.get(id)).filter(Boolean) as FeedItem[]);
       })
       .catch(() => setHits([]));
     return () => {

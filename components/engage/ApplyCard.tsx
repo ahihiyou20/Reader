@@ -63,7 +63,9 @@ export function ApplyCard({ article }: { article: ArticleClient }) {
               <path d="M20 6 9 17l-5-5" pathLength="24" />
             </svg>
           </span>
-          <span className="stx">{s}</span>
+          <span className="stw">
+            <span className="stx">{s}</span>
+          </span>
         </button>
       ))}
       {all && (
@@ -89,7 +91,10 @@ function Confetti() {
       p.animate(
         [
           { opacity: 1, transform: 'translate(0,0) rotate(0deg)' },
-          { opacity: 0, transform: `translate(${Math.cos(a) * d}px, ${Math.sin(a) * d + 40}px) rotate(${Math.random() * 540}deg)` },
+          {
+            opacity: 0,
+            transform: `translate(${Math.cos(a) * d}px, ${Math.sin(a) * d + 40}px) rotate(${Math.random() * 540}deg)`,
+          },
         ],
         { duration: 600, easing: 'cubic-bezier(.23,1,.32,1)', fill: 'forwards' },
       );

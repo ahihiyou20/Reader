@@ -1,8 +1,8 @@
 'use client';
-import { Compass } from 'lucide-react';
+import { Compass, RotateCw } from 'lucide-react';
 import { useUI } from '@/stores/ui';
 import { useT } from '../hooks';
-import { goToArticle } from './nav';
+import { moreArticles } from './nav';
 
 export function EndCard({
   top,
@@ -39,18 +39,28 @@ export function EndCard({
           R
         </div>
         <h2>{t('endTitle')}</h2>
-        <p>{t('endSub')}</p>
-        <button className="cta" type="button" onClick={() => openOverlay('explore')}>
-          {t('exploreNow')}
-          <Compass className="ic" aria-hidden="true" />
-        </button>
-        <button
-          className="textbtn"
-          type="button"
-          onClick={() => (category ? startFeed({ category: null }) : goToArticle(0, 0, false))}
-        >
-          {category ? t('allArticles') : t('backToTop')}
-        </button>
+        <p>{category ? t('endSub') : t('endSubToday')}</p>
+        {category ? (
+          <>
+            <button className="cta" type="button" onClick={() => openOverlay('explore')}>
+              {t('exploreNow')}
+              <Compass className="ic" aria-hidden="true" />
+            </button>
+            <button className="textbtn" type="button" onClick={() => startFeed({ category: null })}>
+              {t('allArticles')}
+            </button>
+          </>
+        ) : (
+          <>
+            <button className="cta" type="button" onClick={moreArticles}>
+              {t('seeMore')}
+              <RotateCw className="ic" aria-hidden="true" />
+            </button>
+            <button className="textbtn" type="button" onClick={() => openOverlay('explore')}>
+              {t('exploreNow')}
+            </button>
+          </>
+        )}
       </div>
     </section>
   );

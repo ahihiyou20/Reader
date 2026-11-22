@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { SHARE_SIZE, shareImage } from '@/lib/share-image';
 import { notFound } from 'next/navigation';
 import { ReaderApp } from '@/components/ReaderApp';
-import { COVER_SIZES } from '@/lib/covers';
+import { COVER_SIZES, lighterCover } from '@/lib/covers';
 import { readOptCovers } from '@/lib/covers-server';
 import { richToText } from '@/lib/content/markup';
 import { readArticle, readFeed } from '@/lib/server/content';
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 function posterVariant(url: string): string {
   const match = url.match(/\/id\/(\d+)/);
-  return match ? `https://picsum.photos/id/${match[1]}/540/960` : url;
+  return match ? `https://picsum.photos/id/${match[1]}/540/960` : lighterCover(url);
 }
 
 /** Deep link: the feed starts with this article. The text is also rendered for crawlers and no-JS readers. */

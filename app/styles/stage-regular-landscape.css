@@ -136,7 +136,7 @@ html[data-stage='regular-landscape'] .ctitle {
   line-height: 50px;
 }
 
-html[data-stage='regular-landscape'] .rail {
+html[data-stage='regular-landscape'] :is(.rail, .rail-peek) {
   right: 36px;
   bottom: calc(var(--sab) + 24px);
   gap: 22px;
@@ -469,4 +469,54 @@ html[data-stage='regular-landscape'] .ebottom .ctarow {
   gap: 12px;
   align-items: center;
   flex: none;
+}
+
+/* Short laptop screens (under 760 px tall): the upright bar and the like/save/share rail do not fit
+   one above the other, so the bar lies flat in the top right corner, beside the language pill, and
+   the keyboard hints give the title its room. */
+@media (max-height: 759px) {
+  html[data-stage='regular-landscape'] .bnav {
+    top: calc(var(--sat) + 12px);
+    right: 120px;
+    flex-direction: row;
+    gap: 8px;
+  }
+  html[data-stage='regular-landscape'] .gtabs {
+    flex-direction: row;
+    padding: 4px;
+  }
+  html[data-stage='regular-landscape'] .nb.tab {
+    width: 42px;
+    height: 42px;
+  }
+  html[data-stage='regular-landscape'] :is(.plusw, .nb.plus) {
+    width: 50px;
+    height: 50px;
+  }
+  html[data-stage='regular-landscape'] .nb.tab .lbl {
+    left: 50%;
+    right: auto;
+    top: calc(100% + 8px);
+    transform: translate(-50%, -4px);
+  }
+  html[data-stage='regular-landscape'] .nb.tab:focus-visible .lbl {
+    transform: translate(-50%, 0);
+  }
+  html[data-stage='regular-landscape'] .key-hints {
+    display: none !important;
+  }
+  html[data-stage='regular-landscape'] :is(.panel.explore, .panel.search, .panel.library) {
+    padding-right: 0;
+  }
+  html[data-stage='regular-landscape'] .panel.side {
+    top: 72px;
+  }
+  html[data-stage='regular-landscape'] .ccredit {
+    top: calc(var(--sat) + 66px);
+  }
+}
+@media (max-height: 759px) and (hover: hover) {
+  html[data-stage='regular-landscape'] .nb.tab:hover .lbl {
+    transform: translate(-50%, 0);
+  }
 }

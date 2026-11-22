@@ -22,6 +22,8 @@ for (const item of feed.items.slice(0, COUNT)) {
       const u = new URL(remote);
       u.searchParams.set('w', String(w));
       u.searchParams.set('h', String(Math.round((w * 16) / 9)));
+      // As lib/covers.ts lighterCover: the 1080 px file at quality 60 is a quarter lighter.
+      if (w >= 1080) u.searchParams.set('q', '60');
       return u.toString();
     };
     covers[item.slug] = { src: at(768), srcSet: WIDTHS.map((w) => `${at(w)} ${w}w`).join(', '), width: 768, height: 1365 };

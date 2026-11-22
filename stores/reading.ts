@@ -1,6 +1,5 @@
 // What the reader does, kept to personalise the feed and to show history, stats and collections.
-// shortcut: stored in this browser only (localStorage), so it does not follow the account to another
-// device; move it behind lib/backend when cross-device sync is wanted.
+// The browser keeps the working copy; lib/reading-sync.ts keeps it with the Google account.
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Lang } from '@/lib/content/types';
@@ -23,6 +22,15 @@ export interface HistoryEntry {
   at: number;
   ms: number;
   done: boolean;
+  /** Last day (YYYY-MM-DD) the reader really read it (DetailsView): kept out of For You that day. */
+  viewedOn?: string;
+}
+
+/** Today's For You: the batch on screen, and every article any batch has held today. */
+export interface Daily {
+  day: string;
+  batch: string[];
+  shown: string[];
 }
 
 export interface Collection {
@@ -58,6 +66,12 @@ interface ReadingState {
   /** The welcome screen has been seen. */
   welcomed: boolean;
   freeze: Freeze;
+  daily: Daily;
+  /** Day each article's cover was last on screen; older than two weeks is dropped. */
+  served: Record<string, string>;
+  setDaily(d: Daily): void;
+  markServed(slug: string, day: string): void;
+  markViewed(slug: string, day: string): void;
   /** Reading time today on this device, toward the day's freeze. Not synced: it changes every few seconds. */
   today: { day: string; ms: number };
   addReadingTime(day: string, ms: number): void;
@@ -87,6 +101,8 @@ const INITIAL = {
   welcomed: false,
   freeze: { count: 0, claimed: null, covered: [], at: 0 } as Freeze,
   today: { day: '', ms: 0 },
+  daily: { day: '', batch: [], shown: [] } as Daily,
+  served: {} as Record<string, string>,
 };
 
 /** The day's freeze can be taken: 5 minutes read, not taken today, room in the store. */
@@ -108,7 +124,7 @@ export const useReading = create<ReadingState>()(
       visit: (slug, category, ms, done) =>
         set((s) => {
           const old = s.history.find((h) => h.slug === slug);
-          const entry: HistoryEntry = { slug, category, at: Date.now(), ms: (old?.ms ?? 0) + ms, done: done || old?.done || false };
+          const entry: HistoryEntry = { ...old, slug, category, at: Date.now(), ms: (old?.ms ?? 0) + ms, done: done || old?.done || false };
           return { history: [entry, ...s.history.filter((h) => h.slug !== slug)].slice(0, HISTORY_MAX) };
         }),
       addCollection: (name) => {
@@ -122,6 +138,17 @@ export const useReading = create<ReadingState>()(
         set((s) => ({
           collections: s.collections.map((c) => (c.id !== id ? c : { ...c, slugs: c.slugs.includes(slug) ? c.slugs.filter((x) => x !== slug) : [slug, ...c.slugs] })),
         })),
+      setDaily: (daily) => set({ daily }),
+      markServed: (slug, day) =>
+        set((s) => {
+          if (s.served[slug] === day) return s;
+          const cutoff = new Date(Date.parse(day) - 14 * 86_400_000).toISOString().slice(0, 10);
+          const served: Record<string, string> = { [slug]: day };
+          for (const [k, d] of Object.entries(s.served)) if (d >= cutoff && k !== slug) served[k] = d;
+          return { served };
+        }),
+      markViewed: (slug, day) =>
+        set((s) => ({ history: s.history.map((h) => (h.slug === slug && h.viewedOn !== day ? { ...h, viewedOn: day } : h)) })),
       setSettings: (patch) => set((s) => ({ settings: { ...s.settings, ...patch } })),
       setWelcomed: (welcomed) => set({ welcomed }),
       addReadingTime: (day, ms) => set((s) => ({ today: { day, ms: (s.today.day === day ? s.today.ms : 0) + ms } })),

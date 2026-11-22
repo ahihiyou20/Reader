@@ -90,7 +90,9 @@ export function ArticlePage({
             <CoverMedia cover={item.cover} opt={optCover(item.slug)} priority={priority} playing={active && view < 2 && visible} />
           </div>
           <MDiv className="layer blur" style={{ opacity: blur }}>
-            {(built || active) && <CoverMedia cover={item.cover} opt={optCover(item.slug)} blurred />}
+            {/* The tiny placeholder, scaled up, is already a blur: no second full-size cover to fetch,
+                decode and blur on every frame of the swipe to Details. */}
+            {item.cover.blurDataURL && <div className="media-blur" style={{ backgroundImage: `url(${item.cover.blurDataURL})` }} />}
             <div className="dim" />
           </MDiv>
           <MDiv className="layer eng" style={{ opacity: eng }} />
