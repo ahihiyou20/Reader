@@ -1,0 +1,214 @@
+{
+  "slug": "artificial-intelligence-spots-bladder-cancer-years-before-fo",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=artificial-intelligence-spots-bladder-cancer-years-before-fo",
+  "category": "health",
+  "tags": [
+    "artificial intelligence",
+    "bladder cancer",
+    "healthcare",
+    "early detection"
+  ],
+  "title": {
+    "en": "Artificial intelligence spots bladder cancer years before formal diagnosis",
+    "vi": "Trí tuệ nhân tạo phát hiện ung thư bàng quang nhiều năm trước khi chẩn đoán",
+    "fr": "L'intelligence artificielle détecte le cancer de la vessie des années avant le diagnostic formel",
+    "de": "Künstliche Intelligenz erkennt Blasenkrebs Jahre vor offizieller Diagnose",
+    "es": "La inteligencia artificial detecta el cáncer de vejiga años antes del diagnóstico formal"
+  },
+  "hook": {
+    "en": "Researchers developed a new intelligence tool to examine routine health files and spot subtle warning signals. This technology detected risk patterns up to five years before doctors traditionally identified the disease, offering new ways to improve early detection.",
+    "vi": "Các nhà nghiên cứu phát triển một công cụ trí tuệ nhân tạo để kiểm tra hồ sơ sức khỏe định kỳ và phát hiện các dấu hiệu cảnh báo tinh tế. Công nghệ này nhận diện các mẫu rủi ro tới năm năm trước khi bác sĩ chẩn đoán bệnh theo cách thông thường, mang lại phương pháp mới để cải thiện việc phát hiện sớm.",
+    "fr": "Des chercheurs ont développé un nouvel outil d'intelligence artificielle pour examiner les dossiers de santé de routine et repérer des signaux d'alerte subtils. Cette technologie a détecté des schémas de risque jusqu'à cinq ans avant que les médecins n'identifient traditionnellement la maladie, offrant de nouvelles voies pour améliorer la détection précoce.",
+    "de": "Forschende entwickelten ein neues Intelligenzwerkzeug, um routinemäßige Gesundheitsakten zu untersuchen und subtile Warnsignale zu erkennen. Diese Technologie spürte Risikomuster bis zu fünf Jahre vor der herkömmlichen Diagnose der Krankheit auf und bietet neue Wege zur Verbesserung der Früherkennung.",
+    "es": "Investigadores desarrollaron una nueva herramienta de inteligencia para examinar expedientes médicos rutinarios y detectar señales de alerta sutiles. Esta tecnología identificó patrones de riesgo hasta cinco años antes de que los médicos identificaran tradicionalmente la enfermedad, ofreciendo nuevas formas de mejorar la detección temprana."
+  },
+  "sections": [
+    {
+      "heading_en": "Uncovering hidden patterns",
+      "heading_vi": "Phát hiện các mẫu ẩn",
+      "body_en": "A team led by Professor Shang-Ming Zhou at the University of Plymouth studied electronic medical records from nearly 70,000 patients spanning 1995 through 2020 {source}. The team created a model named PRECISE-AGZ to investigate 48,261 health indicators. The system narrowed these choices to 38 useful features for predicting risk.",
+      "body_vi": "Một nhóm do Giáo sư Shang-Ming Zhou tại Đại học Plymouth dẫn dắt đã nghiên cứu hồ sơ y tế điện tử từ gần 70.000 bệnh nhân trong giai đoạn từ 1995 đến 2020 {source}. Nhóm tạo ra một mô hình mang tên PRECISE-AGZ để khảo sát 48.261 chỉ số sức khỏe. Hệ thống thu hẹp các lựa chọn này xuống còn 38 đặc điểm hữu ích để dự đoán rủi ro.",
+      "heading_fr": "Découverte de schémas cachés",
+      "body_fr": "Une équipe dirigée par le professeur Shang-Ming Zhou à l'Université de Plymouth a étendu son étude aux dossiers médicaux électroniques de près de 70 000 patients entre 1995 et 2020 {source}. L'équipe a créé un modèle nommé PRECISE-AGZ pour analyser 48 261 indicateurs de santé. Le système a réduit ces choix à 38 caractéristiques utiles pour prédire le risque.",
+      "heading_de": "Versteckte Muster aufdecken",
+      "body_de": "Ein Team unter Leitung von Professor Shang-Ming Zhou an der University of Plymouth untersuchte elektronische Krankenakten von fast 70.000 Patientinnen und Patienten aus den Jahren 1995 bis 2020 {source}. Das Team entwickelte ein Modell namens PRECISE-AGZ, um 48.261 Gesundheitsindikatoren zu untersuchen. Das System schränkte diese Auswahl auf 38 nützliche Merkmale zur Risikovorhersage ein.",
+      "heading_es": "Descubriendo patrones ocultos",
+      "body_es": "Un equipo dirigido por el profesor Shang-Ming Zhou en la Universidad de Plymouth estudió expedientes médicos electrónicos de casi 70.000 pacientes entre 1995 y 2020 {source}. El equipo creó un modelo llamado PRECISE-AGZ para investigar 48.261 indicadores de salud. El sistema redujo estas opciones a 38 características útiles para predecir el riesgo."
+    },
+    {
+      "heading_en": "Accuracy in detection",
+      "heading_vi": "Độ chính xác trong việc phát hiện",
+      "body_en": "The model correctly identified 85% of patients who had bladder cancer and accurately classified 91% of healthy individuals. It performed better at detecting the disease than existing referral guidelines. Some warning signals appeared in records up to five years prior to confirmation.",
+      "body_vi": "Mô hình xác định chính xác 85% bệnh nhân mắc ung thư bàng quang và phân loại chính xác 91% cá nhân khỏe mạnh. Mô hình thể hiện hiệu quả phát hiện bệnh tốt hơn các hướng dẫn giới thiệu hiện hành. Một số tín hiệu cảnh báo xuất hiện trong hồ sơ tới năm năm trước khi được xác nhận.",
+      "heading_fr": "Précision de la détection",
+      "body_fr": "Le modèle a identifié correctement 85 % des patients atteints d'un cancer de la vessie et a classé avec précision 91 % des individus sains. Ses performances pour détecter la maladie ont dépassé celles des directives d'orientation existantes. Certains signaux d'alerte sont apparus dans les dossiers jusqu'à cinq ans avant la confirmation.",
+      "heading_de": "Genauigkeit bei der Erkennung",
+      "body_de": "Das Modell identifizierte 85% der Patientinnen und Patienten mit Blasenkrebs korrekt und klassifizierte 91% der gesunden Personen genau. Es schnitt bei der Erkennung der Krankheit besser ab als bestehende Überweisungsgrichtlinien. Einige Warnsignale tauchten in den Akten bis zu fünf Jahre vor der Bestätigung auf.",
+      "heading_es": "Precisión en la detección",
+      "body_es": "El modelo identificó correctamente al 85% de los pacientes que tenían cáncer de vejiga y clasificó con precisión al 91% de los individuos sanos. Su desempeño fue mejor para detectar la enfermedad que las directrices de derivación existentes. Algunas señales de advertencia aparecieron en los expedientes hasta cinco años antes de la confirmación."
+    },
+    {
+      "heading_en": "Categorizing risk levels",
+      "heading_vi": "Phân loại các mức độ rủi ro",
+      "body_en": "Beyond finding signs, the system divides patients into three groups based on estimated likelihood. Low-risk patients fall below 7% probability, uncertain cases span 7% to 55%, and high-risk instances exceed 55%. This strategy helps doctors decide which individuals need urgent investigation and which may avoid invasive testing.",
+      "body_vi": "Ngoài việc tìm kiếm dấu hiệu, hệ thống chia bệnh nhân thành ba nhóm dựa trên xác suất ước tính. Bệnh nhân rủi ro thấp có xác suất dưới 7%, các trường hợp không chắc chắn dao động từ 7% đến 55% và các trường hợp rủi ro cao vượt quá 55%. Chiến lược này giúp bác sĩ quyết định cá nhân nào cần kiểm tra khẩn cấp và ai có thể tránh xét nghiệm xâm lấn (*invasive testing*).",
+      "heading_fr": "Catégorisation des niveaux de risque",
+      "body_fr": "Au-delà de la recherche de signes, le système divise les patients en trois groupes selon la probabilité estimée. Les patients à faible risque se situent sous la barre des 7 % de probabilité, les cas incertains s'étendent de 7 % à 55 %, et les cas à haut risque dépassent 55 %. Cette stratégie aide les médecins à décider quelles personnes nécessitent une investigation urgente et lesquelles peuvent éviter des examens invasifs.",
+      "heading_de": "Kategorisierung von Risikostufen",
+      "body_de": "Über das Finden von Anzeichen hinaus unterteilt das System Patientinnen und Patienten basierend auf der geschätzten Wahrscheinlichkeit in drei Gruppen. Das Risiko bei niedrigen Risiken liegt unter 7%, unklare Fälle umfassen 7% bis 55% und Hochrisikofälle überschreiten 55%. Diese Strategie hilft Ärzten zu entscheiden, wer dringende Untersuchungen benötigt und wer invasive Tests vermeiden kann.",
+      "heading_es": "Categorización de niveles de riesgo",
+      "body_es": "Más allá de encontrar signos, el sistema divide a los pacientes en tres grupos según la probabilidad estimada. Los pacientes de bajo riesgo caen por debajo del 7% de probabilidad, los casos inciertos abarcan del 7% al 55% y las instancias de alto riesgo superan el 55%. Esta estrategia ayuda a los médicos a decidir qué individuos necesitan una investigación urgente y cuáles pueden evitar pruebas invasivas."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120075604.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/425/1080/1920",
+    "provider": "unsplash",
+    "author": "Daniel Ruswick",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "AI uncovers hidden bladder cancer warning signs years before diagnosis",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261120075604.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review your recent electronic health records for any recurring symptoms.",
+      "List all long-term medications and previous diagnoses to share with your physician.",
+      "Ask your doctor if your routine checkup schedule aligns with your personal risk factors."
+    ],
+    "vi": [
+      "Kiểm tra hồ sơ sức khỏe điện tử gần đây của bạn để tìm các triệu chứng tái diễn.",
+      "Liệt kê tất cả các loại thuốc dài hạn và chẩn đoán trước đây để chia sẻ với bác sĩ của bạn.",
+      "Hỏi bác sĩ xem lịch khám sức khỏe định kỳ của bạn có phù hợp với các yếu tố rủi ro cá nhân không."
+    ],
+    "fr": [
+      "Examinez vos dossiers médicaux électroniques récents pour y repérer d'éventuels symptômes récurrents.",
+      "Listez tous vos médicaments de long terme et vos diagnostics antérieurs pour en discuter avec votre médecin.",
+      "Demandez à votre médecin si votre calendrier de bilans de santé réguliers correspond à vos facteurs de risque personnels."
+    ],
+    "de": [
+      "Überprüfe deine jüngsten elektronischen Krankenakten auf wiederkehrende Symptome.",
+      "Liste alle langfristigen Medikamente und vorherigen Diagnosen auf, um sie mit deinem Arzt zu teilen.",
+      "Frage deinen Arzt, ob dein Routineuntersuchungsplan mit deinen persönlichen Risikofaktoren übereinstimmt."
+    ],
+    "es": [
+      "Revisa tus expedientes médicos electrónicos recientes en busca de cualquier síntoma recurrente.",
+      "Enumera todos los medicamentos a largo plazo y diagnósticos previos para compartirlos con tu médico.",
+      "Pregunta a tu médico si tu calendario de revisiones rutinarias se alinea con tus factores de riesgo personal."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/425/1080/1920",
+      "provider": "unsplash",
+      "author": "Daniel Ruswick",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/766/1080/1920",
+      "provider": "unsplash",
+      "author": "Padurariu Alexandru",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/mqyMjCTWJyQ"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/488/1080/1920",
+      "provider": "unsplash",
+      "author": "Monstruo Estudio",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/lQy6mHZ7fYk"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAAAQBACdASoQABwALrV2u12jqampiYC0SygAKJY2lwZjy0itttCpKy0yAAD+9NAKFc1AUcivlUcK7DUPYsjTbPz+bE7r+9NMoOllhFGeOC7v1UjPph5l2EVyDzz1L0Nx+AF9fPEmWJAKmm+ZRlwpx4rEIXFvWNlG/vvflT9mFo3dvrQ9qt+qJqYqnGL1M1KUGpIz8/f7cpt6XnDO7mS1FQ6Zlr4eW5gTGKZPZc8mrDKeygwZj0AAAA==",
+  "dominant": "#756f65",
+  "glossary": {
+    "en": {
+      "artificial intelligence": "Computer systems designed to perform tasks that typically require human intellect.",
+      "bladder cancer": "A disease in which abnormal cells multiply unchecked in the bladder tissue.",
+      "university of plymouth": "The academic institution where the research team led the study.",
+      "electronic medical records": "Digital versions of patient charts containing their medical and treatment history.",
+      "precise-agz": "The specific machine learning model created to investigate health indicators.",
+      "health indicators": "Specific clinical markers and measurements used to assess health status.",
+      "referral guidelines": "Standard medical rules used to decide when to send patients to specialists.",
+      "invasive testing": "Medical procedures that involve entering the body, such as through surgery."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Công nghệ mô phỏng quá trình suy nghĩ và học tập của con người bằng máy tính.",
+      "hồ sơ sức khỏe": "Tập hợp tài liệu ghi nhận toàn bộ thông tin y tế và lịch sử khám chữa bệnh.",
+      "hồ sơ y tế điện tử": "Phiên bản số hóa của hồ sơ bệnh án giúp lưu trữ và tra cứu thuận tiện.",
+      "chỉ số sức khỏe": "Các thông số đo lường tình trạng sinh học và chức năng cơ thể con người.",
+      "ung thư bàng quang": "Bệnh lý ác tính phát triển từ các tế bào mô bên trong bàng quang.",
+      "xác suất": "Thước đo khả năng xảy ra của một sự việc hoặc một kết quả cụ thể.",
+      "xét nghiệm xâm lấn": "Phương pháp kiểm tra y tế có can thiệp hoặc tác động trực tiếp vào cơ thể.",
+      "bác sĩ": "Người hành nghề y khoa có chuyên môn chẩn đoán và điều trị bệnh."
+    },
+    "fr": {
+      "dossiers médicaux électroniques": "Version numérique des antécédents médicaux d'un patient.",
+      "precise-agz": "Nom du modèle d'intelligence artificielle développé pour l'étude.",
+      "indicateurs de santé": "Données mesurables utilisées pour évaluer l'état de santé.",
+      "directives d'orientation": "Recommandations guidant les médecins pour orienter les patients.",
+      "cancer de la vessie": "Tumeur maligne se développant dans la paroi de la vessie.",
+      "examens invasifs": "Actes médicaux qui pénètrent dans le corps du patient.",
+      "probabilité": "Mesure mathématique de la chance qu'un événement se produise.",
+      "diagnostic": "Identification d'une maladie par ses symptômes et signes."
+    },
+    "de": {
+      "blasenkrebs": "Eine Krebserkrankung, die in der Harnblase entsteht und frühzeitig oft schwer zu erkennen ist.",
+      "precise-agz": "Ein speziell entwickeltes KI-Modell zur Analyse von Gesundheitsdaten und Risikovorhersage.",
+      "gesundheitsindikatoren": "Messbare Merkmale oder Datenpunkte zur Beurteilung des gesundheitlichen Zustands einer Person.",
+      "risikomuster": "Wiederkehrende Datenkombinationen, die auf eine erhöhte Wahrscheinlichkeit für eine Erkrankung hinweisen.",
+      "klassifizierte": "Personen oder Daten, die anhand bestimmter Kriterien in Gruppen eingeteilt wurden.",
+      "überweisungsgrichtlinien": "Bestehende medizinische Vorgaben dafür, wann Patienten an Fachärzte überwiesen werden.",
+      "invasive tests": "Medizinische Untersuchungen, bei denen in den Körper eingedrungen wird.",
+      "elektronische krankenakten": "Digital gespeicherte Dokumente über die gesundheitliche Historie von Patienten."
+    },
+    "es": {
+      "inteligencia artificial": "Tecnología informática que simula procesos de inteligencia humana mediante algoritmos avanzados.",
+      "expedientes médicos": "Documentos digitales que registran el historial clínico y los tratamientos de un paciente.",
+      "precise-agz": "Modelo computacional específico creado para investigar indicadores de salud y predecir riesgos.",
+      "indicadores de salud": "Datos clínicos utilizados para medir y evaluar el estado de bienestar de una persona.",
+      "derivación": "Proceso médico de remitir a un paciente hacia un especialista o nivel asistencial superior.",
+      "probabilidad": "Medida matemática de la posibilidad de que ocurra un evento o enfermedad específica.",
+      "pruebas invasivas": "Procedimientos médicos que requieren la introducción de instrumentos en el cuerpo del paciente.",
+      "diagnóstico": "Identificación formal de una enfermedad o condición médica a partir de sus síntomas."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-23T03:40:11.175Z"
+}

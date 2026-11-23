@@ -1,0 +1,254 @@
+{
+  "slug": "atomic-clocks-may-reveal-the-quantum-nature-of-time",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=atomic-clocks-may-reveal-the-quantum-nature-of-time",
+  "category": "science",
+  "tags": [
+    "physics",
+    "quantum",
+    "time",
+    "relativity"
+  ],
+  "title": {
+    "en": "Atomic Clocks May Reveal the Quantum Nature of Time",
+    "vi": "Đồng hồ nguyên tử có thể hé lộ bản chất lượng tử của thời gian",
+    "fr": "Les horloges atomiques pourraient révéler la nature quantique du temps",
+    "de": "Atomuhren könnten die Quantennatur der Zeit enthüllen",
+    "es": "Los relojes atómicos podrían revelar la naturaleza cuántica del tiempo"
+  },
+  "hook": {
+    "en": "Physicists are closing in on a strange intersection between quantum mechanics and general relativity. An international team of researchers proposes using advanced trapped-ion atomic clocks to detect the quantum superposition of time, a phenomenon where different rates of time coexist simultaneously {source}.",
+    "vi": "Các nhà vật lý học đang tiến gần hơn đến giao điểm kỳ lạ giữa cơ học lượng tử và thuyết tương đối rộng. Một nhóm nghiên cứu quốc tế đề xuất sử dụng đồng hồ nguyên tử ion bẫy tiên tiến để phát hiện chồng chập lượng tử của thời gian, hiện tượng các tốc độ thời gian khác nhau cùng tồn tại đồng thời {source}.",
+    "fr": "Les physiciens s'approchent d'une étrange intersection entre la mécanique quantique et la relativité générale. Une équipe internationale de chercheurs propose d'utiliser des horloges atomiques à ions piégés de pointe pour détecter la superposition quantique du temps, un phénomène où différents rythmes temporels coexistent simultanément {source}.",
+    "de": "Physiker nähern uns einer seltsamen Schnittstelle zwischen Quantenmechanik und Allgemeiner Relativitätstheorie. Ein internationales Forscherteam schlägt vor, fortschrittliche Atomuhren mit gefangenen Ionen zu nutzen, um die Quantenüberlagerung der Zeit nachzuweisen, ein Phänomen, bei dem verschiedene Zeitraten gleichzeitig existieren {source}.",
+    "es": "Los físicos se acercan a una extraña intersección entre la mecánica cuántica y la relatividad general. Un equipo internacional de investigadores propone utilizar relojes atómicos avanzados de iones atrapados para detectar la superposición cuántica del tiempo, un fenómeno donde diferentes tasas de tiempo coexisten simultáneamente {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Relativity and Superposition",
+      "heading_vi": "Thuyết tương đối và chồng chập",
+      "body_en": "Einstein showed that time moves at different rates depending on speed and gravity. Quantum mechanics adds that a clock can exist in a superposition of multiple motion states. Researchers from Kyushu University and partner institutions realized this means multiple rates of time could theoretically coexist in a single quantum state.",
+      "body_vi": "Einstein đã chỉ ra rằng thời gian trôi qua với tốc độ khác nhau tùy thuộc vào tốc độ và trọng lực. Cơ học lượng tử bổ sung rằng một đồng hồ có thể tồn tại ở trạng thái chồng chập (*superposition*) của nhiều trạng thái chuyển động. Các nhà nghiên cứu từ Đại học Kyushu và các đối tác nhận ra điều này có nghĩa là nhiều tốc độ thời gian có thể tồn tại đồng thời trong một trạng thái lượng tử.",
+      "heading_fr": "Relativité et superposition",
+      "body_fr": "Einstein a montré que le temps s'écoule à des rythmes différents selon la vitesse et la gravité. La mécanique quantique ajoute qu'une horloge peut exister dans une superposition de plusieurs états de mouvement. Des chercheurs de l'Université de Kyushu et d'institutions partenaires ont compris que cela signifie que plusieurs rythmes temporels pourraient théoriquement coexister dans un seul état quantique.",
+      "heading_de": "Relativität und Superposition",
+      "body_de": "Einstein zeigte, dass sich die Zeit je nach Geschwindigkeit und Schwerkraft mit unterschiedlichen Raten bewegt. Die Quantenmechanik fügt hinzu, dass sich eine Uhr in einer Superposition mehrerer Bewegungszustände befinden kann. Forscher der Kyushu University und Partnerinstitutionen erkannten, dass dies bedeutet, dass theoretisch mehrere Zeitraten in einem einzigen Quantenzustand koexistieren können.",
+      "heading_es": "Relatividad y superposición",
+      "body_es": "Einstein demostró que el tiempo transcurre a diferentes velocidades según la velocidad y la gravedad. La mecánica cuántica añade que un reloj puede existir en una superposición de múltiples estados de movimiento. Investigadores de la Universidad de Kyushu y de instituciones asociadas se dieron cuenta de que esto significa que múltiples tasas de tiempo podrían teóricamente coexistir en un único estado cuántico."
+    },
+    {
+      "heading_en": "Boosting Clock Sensitivity",
+      "heading_vi": "Nâng cao độ nhạy của đồng hồ",
+      "body_en": "Modern atomic clocks measure time using atomic frequencies with extreme precision. They already detect tiny time shifts across vertical distances of mere millimeters. The research team discovered that a clock's motion links to its internal energy through entanglement, and they developed a technique that improves sensitivity by up to 1,000 times.",
+      "body_vi": "Đồng hồ nguyên tử hiện đại đo thời gian bằng tần số nguyên tử với độ chính xác cực kỳ cao. Chúng đã có thể phát hiện sự thay đổi thời gian nhỏ qua khoảng cách theo chiều dọc chỉ vài milimét. Nhóm nghiên cứu phát hiện ra rằng chuyển động của đồng hồ liên kết với năng lượng bên trong thông qua sự vướng víu (*entanglement*), và họ đã phát triển một kỹ thuật cải thiện độ nhạy lên đến 1.000 lần.",
+      "heading_fr": "Amélioration de la sensibilité des horloges",
+      "body_fr": "Les horloges atomiques modernes mesurent le temps à l'aide de fréquences atomiques avec une précision extrême. Elles détectent déjà de minuscules décalages temporels sur des distances verticales de quelques millimètres seulement. L'équipe de recherche a découvert que le mouvement d'une horloge est lié à son énergie interne par l'intrication, et elle a développé une technique qui améliore la sensibilité jusqu'à 1 000 fois.",
+      "heading_de": "Erhöhung der Uhrenempfindlichkeit",
+      "body_de": "Moderne Atomuhren messen die Zeit mit extrem hoher Präzision anhand von Atomfrequenzen. Sie erkennen bereits winzige Zeitverschiebungen über vertikale Distanzen von wenigen Millimetern. Das Forschungsteam entdeckte, dass die Bewegung einer Uhr über Verschränkung mit ihrer inneren Energie verknüpft ist, und entwickelte eine Technik, die die Empfindlichkeit um das bis zu 1.000-fache verbessert.",
+      "heading_es": "Aumento de la sensibilidad del reloj",
+      "body_es": "Los relojes atómicos modernos miden el tiempo utilizando frecuencias atómicas con extrema precisión. Ya detectan pequeños cambios temporales a través de distancias verticales de apenas milímetros. El equipo de investigación descubrió que el movimiento de un reloj se vincula con su energía interna mediante el entrelazamiento, y desarrollaron una técnica que mejora la sensibilidad hasta 1.000 veces."
+    },
+    {
+      "heading_en": "Next Experimental Steps",
+      "heading_vi": "Các bước thực nghiệm tiếp theo",
+      "body_en": "Lead author Joshua Foo notes that bringing the theoretical model into reality is the next major hurdle. Scientists must design a working experiment that accounts for real-world laboratory disturbances. Success could offer new clues about quantum gravity and how quantum mechanics unites with relativity.",
+      "body_vi": "Tác giả chính Joshua Foo lưu ý rằng việc đưa mô hình lý thuyết vào thực tế là rào cản lớn tiếp theo. Các nhà khoa học phải thiết kế một thí nghiệm khả thi có tính đến các nhiễu loạn trong phòng thí nghiệm thực tế. Thành công có thể mang lại những manh mối mới về hấp dẫn lượng tử (*quantum gravity*) và cách cơ học lượng tử kết hợp với thuyết tương đối.",
+      "heading_fr": "Prochaines étapes expérimentales",
+      "body_fr": "L'auteur principal Joshua Foo note que concrétiser le modèle théorique constitue le prochain obstacle majeur. Les scientifiques doivent concevoir une expérience fonctionnelle qui tient compte des perturbations du monde réel en laboratoire. Le succès pourrait offrir de nouveaux indices sur la gravité quantique et sur la manière dont la mécanique quantique s'unit à la relativité.",
+      "heading_de": "Nächste experimentelle Schritte",
+      "body_de": "Der Hauptautor Joshua Foo merkt an, dass die Überführung des theoretischen Modells in die Realität die nächste große Hürde darstellt. Wissenschaftler müssen ein funktionierendes Experiment entwerfen, das Störungen im realen Labor berücksichtigt. Ein Erfolg könnte neue Hinweise auf die Quantengravitation liefern und darauf, wie die Quantenmechanik mit der Relativitätstheorie verschmilzt.",
+      "heading_es": "Próximos pasos experimentales",
+      "body_es": "El autor principal, Joshua Foo, señala que llevar el modelo teórico a la realidad es el próximo gran obstáculo. Los científicos deben diseñar un experimento funcional que tenga en cuenta las perturbaciones del mundo real en el laboratorio. El éxito podría ofrecer nuevas pistas sobre la gravedad cuántica y cómo la mecánica cuántica se une con la relatividad."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1533749047139-189de3cf06d3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1533749047139-189de3cf06d3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Jon Tyson",
+    "authorUrl": "https://unsplash.com/@jontyson?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/FlHdnPO6dlw",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/FlHdnPO6dlw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795405939/pagemoor/covers/atomic-clocks-may-reveal-the-quantum-nature-of-time-8579.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795405940/pagemoor/covers/atomic-clocks-may-reveal-the-quantum-nature-of-time-8579-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-8579/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Time may be far stranger than we realize. Scientists have a way to test it",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "Think of a clock as a dancer moving to two different songs at once. [p:Can we tune our instruments to catch the exact moment the music splits?] Try reading about atomic clocks to understand how precision measurement drives modern physics forward.",
+    "vi": "Hãy coi chiếc đồng hồ như một vũ công đang nhảy theo hai bài hát cùng một lúc. [p:Liệu chúng ta có thể điều chỉnh các dụng cụ để bắt lấy khoảnh khắc âm nhạc tách đôi?] Hãy thử tìm hiểu về đồng hồ nguyên tử để hiểu cách đo lường chính xác thúc đẩy vật lý hiện đại tiến lên.",
+    "fr": "Imaginez une horloge comme un danseur évoluant sur deux chansons différentes en même temps. [p:Pouvons-nous accorder nos instruments pour saisir le moment exact où la musique se sépare ?] Essayez de lire des articles sur les horloges atomiques pour comprendre comment la mesure de précision fait progresser la physique moderne.",
+    "de": "Stell dir eine Uhr wie eine Tänzerin vor, die zu zwei verschiedenen Liedern gleichzeitig tanzt. [p:Können wir unsere Instrumente so stimmen, dass wir genau den Moment einfangen, in dem sich die Musik teilt?] Versuche, etwas über Atomuhren zu lesen, um zu verstehen, wie Präzisionsmessung die moderne Physik vorantreibt.",
+    "es": "Imagina un reloj como un bailarín que se mueve al ritmo de dos canciones al mismo tiempo. [p:¿Podemos afinar nuestros instrumentos para captar el momento exacto en que la música se divide?] Intenta leer sobre relojes atómicos para comprender cómo la medición de precisión impulsa la física moderna."
+  },
+  "applySteps": {
+    "en": [
+      "Read the Physical Review Letters study abstract on atomic clock superposition.",
+      "List the participating institutions involved in the international research collaboration.",
+      "Search for recent updates regarding trapped-ion technology and quantum sensors."
+    ],
+    "vi": [
+      "Đọc bản tóm tắt nghiên cứu trên tạp chí Physical Review Letters về chồng chập đồng hồ nguyên tử.",
+      "Liệt kê các tổ chức tham gia vào sự hợp tác nghiên cứu quốc tế.",
+      "Tìm kiếm các cập nhật gần đây liên quan đến công nghệ ion bẫy và cảm biến lượng tử."
+    ],
+    "fr": [
+      "Lisez le résumé de l'étude Physical Review Letters sur la superposition des horloges atomiques.",
+      "Listez les institutions participantes impliquées dans la collaboration de recherche internationale.",
+      "Recherchez les mises à jour récentes concernant la technologie des ions piégés et les capteurs quantiques."
+    ],
+    "de": [
+      "Lese das Studien-Abstract in den Physical Review Letters zur Superposition von Atomuhren.",
+      "Liste die beteiligten Institutionen der internationalen Forschungszusammenarbeit auf.",
+      "Suche nach aktuellen Neuigkeiten zur Technologie gefangener Ionen und Quantensensoren."
+    ],
+    "es": [
+      "Lee el resumen del estudio de Physical Review Letters sobre la superposición en relojes atómicos.",
+      "Enumera las instituciones participantes involucradas en la colaboración de investigación internacional.",
+      "Busca actualizaciones recientes sobre la tecnología de iones atrapados y sensores cuánticos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1533749047139-189de3cf06d3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1533749047139-189de3cf06d3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Jon Tyson",
+      "authorUrl": "https://unsplash.com/@jontyson?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/FlHdnPO6dlw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/FlHdnPO6dlw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1508030592112-5b1661446db8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1508030592112-5b1661446db8?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "David Kennedy",
+      "authorUrl": "https://unsplash.com/@dlewiskennedy?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/hLhG0EyHS_0",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/hLhG0EyHS_0/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1600373240065-4572ee4a9a8e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1600373240065-4572ee4a9a8e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "k",
+      "authorUrl": "https://unsplash.com/@k0?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Ppfeovtpc2s",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Ppfeovtpc2s/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1639255711703-3663b4b51753?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1639255711703-3663b4b51753?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Meghan Hessler",
+      "authorUrl": "https://unsplash.com/@meghankix?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/Bn3GRSXWp3A",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/Bn3GRSXWp3A/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8QXRvbWljJTIwQ2xvY2tzJTIwTWF5JTIwUmV2ZWFsJTIwdGhlJTIwUXVhbnR1bSUyME5hdHVyZSUyMG9mJTIwVGltZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTU5OHww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAACwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JYwC/OYtKrSj8Yu2jSU0nLAPSP5wAAP7U54dUjBUKG1w9ChyL9JIQjfKEzQuvNY/WIzCruUGunycSYSE35t2qPlWnv1MujZ6ujRPWATu1sajOOnJWL7cbvxm0o4RKDJ2cK8ki7eH6x7eK96fzdK9JF/sM1E35x78zxCVFXIFjUImQOzoB/iLzsqGjq7c39oTO9dgYWpG6ONfFqGZeO7bnQtr6m9H25/COVvItjcw3QKYNU2XT5zO8cIbh52xw8anhQRGlEaTWthCEClN2SAAA",
+  "dominant": "#575455",
+  "glossary": {
+    "en": {
+      "quantum mechanics": "The branch of physics that studies matter and energy at the most microscopic scales.",
+      "general relativity": "Einstein's theory explaining gravity as the bending of space and time by mass.",
+      "trapped-ion atomic clocks": "High-precision timekeeping devices that use confined charged atoms to measure frequency.",
+      "quantum superposition": "A fundamental principle where a physical system exists in multiple states at once.",
+      "kyushu university": "A major research institution involved in the collaborative study.",
+      "atomic frequencies": "The stable oscillation rates of atoms used as a standard for measuring time.",
+      "entanglement": "A quantum phenomenon where particles become interconnected so one affects the other.",
+      "joshua foo": "The lead author of the research study.",
+      "quantum gravity": "A theoretical framework uniting quantum mechanics with general relativity."
+    },
+    "vi": {
+      "cơ học lượng tử": "Lĩnh vực vật lý nghiên cứu các hiện tượng ở quy mô nguyên tử và hạ nguyên tử.",
+      "thuyết tương đối rộng": "Lý thuyết của Einstein mô tả trọng lực là độ cong của không-thời gian.",
+      "đồng hồ nguyên tử": "Thiết bị đo thời gian cực kỳ chính xác dựa trên tần số bức xạ của nguyên tử.",
+      "ion bẫy": "Công nghệ giam giữ các ion tích điện bằng trường điện từ để thực hiện thí nghiệm.",
+      "chồng chập lượng tử": "Trạng thái một hệ thống vật lý tồn tại đồng thời ở nhiều khả năng.",
+      "đại học kyushu": "Tổ chức giáo dục đại học tham gia vào nhóm nghiên cứu quốc tế trong bài.",
+      "tần số nguyên tử": "Tần số bức xạ đặc trưng dùng làm chuẩn đo thời gian trong đồng hồ nguyên tử.",
+      "vướng víu": "Hiện tượng lượng tử liên kết sâu sắc trạng thái của các hạt với nhau.",
+      "hấp dẫn lượng tử": "Lý thuyết giả định hợp nhất lực hấp dẫn với cơ học lượng tử.",
+      "joshua foo": "Tác giả chính của nghiên cứu về đồng hồ nguyên tử và chồng chập thời gian."
+    },
+    "fr": {
+      "mécanique quantique": "Branche de la physique décrivant la matière et le rayonnement à l'échelle atomique et subatomique.",
+      "relativité générale": "Théorie d'Einstein expliquant la gravitation comme une courbure de l'espace-temps causée par la masse.",
+      "superposition quantique": "Principe selon lequel un système physique peut exister simultanément dans plusieurs états différents.",
+      "ions piégés": "Technologie utilisant des champs électromagnétiques pour retenir des ions isolés dans le vide.",
+      "fréquences atomiques": "Osciliations périodiques stables propres aux atomes, utilisées comme référence universelle pour mesurer le temps.",
+      "intrication": "Phénomène quantique où deux particules ou plus sont liées, partageant un état global indépendant de la distance.",
+      "gravité quantique": "Domaine théorique cherchant à unifier la physique quantique et la relativité générale.",
+      "joshua foo": "Chercheur et auteur principal de l'étude scientifique mentionnée dans l'article."
+    },
+    "de": {
+      "quantenmechanik": "Physikalische Theorie der Materie im atomaren und subatomaren Bereich.",
+      "atomuhren": "Höchstpräzise Uhren, die Schwingungen von Atomen als Taktgeber nutzen.",
+      "gefangenen ionen": "Elektrisch geladene Atome, die in elektromagnetischen Feldern festgehalten werden.",
+      "quantenüberlagerung": "Zustand, in dem ein System gleichzeitig mehrere Eigenschaften besitzt.",
+      "superposition": "Gleichzeitiges Vorhandensein mehrerer physikalischer Zustände.",
+      "quantenzustand": "Vollständige physikalische Beschreibung eines Quantensystems.",
+      "atomfrequenzen": "Charakteristische Schwingungsfrequenzen von Atomen für Zeitmessungen.",
+      "verschränkung": "Quantenphysikalischer Zustand, bei dem Teilchen untrennbar miteinander verknüpft sind.",
+      "quantengravitation": "Gesuchter Theorieansatz zur Vereinigung von Quantenmechanik und Gravitation."
+    },
+    "es": {
+      "relojes atómicos": "Dispositivos de alta precisión que miden el tiempo utilizando frecuencias atómicas.",
+      "superposición cuántica": "Principio en el que un sistema físico existe en múltiples estados simultáneamente.",
+      "relatividad general": "Teoría de Einstein que describe la gravedad como la curvatura del espacio-tiempo.",
+      "iones atrapados": "Partículas cargadas retenidas en el espacio mediante campos electromagnéticos.",
+      "entrelazamiento": "Fenómeno en el que las partículas quedan conectadas independientemente de la distancia.",
+      "gravedad cuántica": "Campo de la física que busca unificar la relatividad general y la mecánica cuántica.",
+      "frecuencias atómicas": "Oscilaciones estables asociadas a las transiciones de energía en los átomos.",
+      "modelo teórico": "Representación matemática que describe fenómenos físicos antes de ser comprobados."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-23T03:36:11.175Z"
+}
