@@ -74,7 +74,13 @@
     "provider": "unsplash",
     "author": "Daniel Ruswick",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ"
+    "sourceUrl": "https://unsplash.com/photos/MHM_al3KqIQ",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795455311/pagemoor/covers/artificial-intelligence-spots-bladder-cancer-years-before-fo-76395.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795455311/pagemoor/covers/artificial-intelligence-spots-bladder-cancer-years-before-fo-76395-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-76395/"
+    }
   },
   "origin": {
     "group": 5,

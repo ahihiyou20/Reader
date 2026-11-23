@@ -74,7 +74,13 @@
     "provider": "unsplash",
     "author": "Drew Hays",
     "license": "Unsplash License",
-    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795455610/pagemoor/covers/growing-potatoes-in-moon-dirt-188454.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795455611/pagemoor/covers/growing-potatoes-in-moon-dirt-188454-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-188454/"
+    }
   },
   "origin": {
     "group": 5,

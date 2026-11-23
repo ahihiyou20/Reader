@@ -77,7 +77,13 @@
     "authorUrl": "https://unsplash.com/@matheo_jbt?utm_source=pagemoor&utm_medium=referral",
     "license": "Unsplash License",
     "sourceUrl": "https://unsplash.com/photos/yqIFxfERlpU",
-    "unsplashDownloadLocation": "https://api.unsplash.com/photos/yqIFxfERlpU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SGlkZGVuJTIwTWljcm9iZSUyMERpc2NvdmVyZWQlMjBJbnNpZGUlMjBEZWVwJTIwc2NpZW5jZXxlbnwxfDF8fHwxNzk1MTQ3NTI4fDA"
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/yqIFxfERlpU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SGlkZGVuJTIwTWljcm9iZSUyMERpc2NvdmVyZWQlMjBJbnNpZGUlMjBEZWVwJTIwc2NpZW5jZXxlbnwxfDF8fHwxNzk1MTQ3NTI4fDA",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795455849/pagemoor/covers/hidden-microbe-discovered-inside-deep-sea-pigs-37712.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795455849/pagemoor/covers/hidden-microbe-discovered-inside-deep-sea-pigs-37712-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-37712/"
+    }
   },
   "origin": {
     "group": 5,
