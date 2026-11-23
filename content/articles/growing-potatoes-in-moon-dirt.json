@@ -1,0 +1,216 @@
+{
+  "slug": "growing-potatoes-in-moon-dirt",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=growing-potatoes-in-moon-dirt",
+  "category": "science",
+  "tags": [
+    "space farming",
+    "lunar agriculture",
+    "potatoes",
+    "regolith"
+  ],
+  "title": {
+    "en": "Growing Potatoes in Moon Dirt",
+    "vi": "Trồng khoai tây trên đất mặt trăng",
+    "fr": "Cultiver des pommes de terre dans la poussière lunaire",
+    "de": "Kartoffelanbau in Monderde",
+    "es": "Cultivando papas en tierra lunar"
+  },
+  "hook": {
+    "en": "Future space travelers may sustain themselves by growing crops directly on the lunar surface. A new study shows that potatoes can thrive in simulated moon dirt when mixed with the right organic fertilizer, offering a practical path toward long-term habitation {source}.",
+    "vi": "Những nhà thám hiểm không gian tương lai có thể tự nuôi sống bản thân bằng cách trồng trọt trực tiếp trên bề mặt mặt trăng. Một nghiên cứu mới cho thấy khoai tây có thể phát triển tốt trên đất mặt trăng giả lập khi được trộn với phân bón hữu cơ phù hợp, mang lại con đường thiết thực hướng tới việc sinh sống lâu dài {source}.",
+    "fr": "Les futurs voyageurs de l'espace pourraient subvenir à leurs besoins en cultivant directement sur la surface lunaire. Une nouvelle étude montre que les pommes de terre peuvent prospérer dans de la poussière lunaire simulée lorsqu'elle est mélangée au bon engrais organique, offrant ainsi une voie pratique vers une habitation à long terme {source}.",
+    "de": "Zukünftige Raumreisende könnten sich ernähren, indem sie Nutzpflanzen direkt auf der Mondoberfläche anbauen. Eine neue Studie zeigt, dass Kartoffeln in simulierter Monderde gedeihen können, wenn diese mit dem richtigen Bio-Dünger gemischt wird, was einen praktikablen Weg zu einer langfristigen Besiedlung bietet {source}.",
+    "es": "Los futuros viajeros espaciales podrán sostenerse cultivando directamente en la superficie lunar. Un nuevo estudio muestra que las papas pueden prosperar en tierra lunar simulada al mezclarla con el fertilizante orgánico adecuado, ofreciendo un camino práctico hacia la habitación a largo plazo {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "Testing Simulated Dirt",
+      "heading_vi": "Thử nghiệm đất giả lập",
+      "body_en": "Moon dirt lacks vital nutrients and contains toxic heavy metals. To test farming methods, researchers at Oregon State University used simulated regolith. They mixed this lunar material with organic fertilizer produced by red wiggler worms, alongside extra nitrogen, to improve growing conditions.",
+      "body_vi": "Đất mặt trăng thiếu các chất dinh dưỡng thiết yếu và chứa kim loại nặng độc hại. Để thử nghiệm các phương pháp canh tác, các nhà nghiên cứu tại Đại học Tiểu bang Oregon đã sử dụng lớp đất phủ giả lập (*regolith*). Họ đã trộn vật liệu mặt trăng này với phân bón hữu cơ do giun đỏ tạo ra, bên cạnh lượng nitơ bổ sung, nhằm cải thiện điều kiện sinh trưởng.",
+      "heading_fr": "Tester de la terre simulée",
+      "body_fr": "La poussière lunaire manque de nutriments essentiels et contient des métaux lourds toxiques. Pour tester des méthodes agricoles, des chercheurs de l'Université d'État de l'Oregon ont utilisé du régolithe simulé. Ils ont mélangé ce matériau lunaire avec de l'engrais organique produit par des vers de fumier rouge, ainsi qu'avec de l'azote supplémentaire, pour améliorer les conditions de culture.",
+      "heading_de": "Test an simulierter Erde",
+      "body_de": "Monderde fehlen lebenswichtige Nährstoffe und sie enthält giftige Schwermetalle. Um Anbaumethoden zu testen, verwendeten Forscher der Oregon State University simulierten Regolith. Sie mischten dieses Mondmaterial mit Bio-Dünger von roten Kompostwürmern sowie zusätzlichem Stickstoff, um die Wachstumsbedingungen zu verbessern.",
+      "heading_es": "Pruebas con tierra simulada",
+      "body_es": "La tierra lunar carece de nutrientes vitales y contiene metales pesados tóxicos. Para probar métodos agrícolas, investigadores de la Universidad Estatal de Oregón utilizaron regolito simulado. Mezclaron este material lunar con fertilizante orgánico producido por lombrices rojas californianas, junto con nitrógeno adicional, para mejorar las condiciones de cultivo."
+    },
+    {
+      "heading_en": "Finding the Optimal Mix",
+      "heading_vi": "Tìm tỷ lệ pha trộn tối ưu",
+      "body_en": "The team tested five variations of simulated lunar soil alongside a control group from Hermiston, Oregon. They found that a blend of thirty percent worm compost and seventy percent regolith produced the best results. Lower amounts of fertilizer resulted in stunted tubers and shriveled roots.",
+      "body_vi": "Nhóm nghiên cứu đã thử nghiệm năm biến thể đất mặt trăng giả lập bên cạnh một nhóm đối chứng đến từ Hermiston, Oregon. Họ phát hiện ra rằng hỗn hợp gồm ba mươi phần trăm phân trùn quế và bảy mươi phần trăm đất phủ mang lại kết quả tốt nhất. Lượng phân bón thấp hơn dẫn đến củ còi cọc và rễ teo tóp.",
+      "heading_fr": "Trouver le mélange optimal",
+      "body_fr": "L'équipe a testé cinq variations de sol lunaire simulé ainsi qu'un groupe témoin provenant de Hermiston, dans l'Oregon. Ils ont découvert qu'un mélange de trente pour cent de compost de vers et de soixante-dix pour cent de régolithe donnait les meilleurs résultats. Des quantités d'engrais inférieures ont entraîné des tubercules chétifs et des racines ratatinées.",
+      "heading_de": "Finden der optimalen Mischung",
+      "body_de": "Das Team testete fünf Varianten simulierter Monderde zusammen mit einer Kontrollgruppe aus Hermiston, Oregon. Sie fanden heraus, dass eine Mischung aus dreißig Prozent Wurmkompost und siebzig Prozent Regolith die besten Ergebnisse lieferte. Geringere Düngermengen führten zu verkümmerten Knollen und verschrumpelten Wurzeln.",
+      "heading_es": "Hallando la mezcla óptima",
+      "body_es": "El equipo probó cinco variantes de suelo lunar simulado junto con un grupo de control procedente de Hermiston, Oregón. Descubrieron que una mezcla de treinta por ciento de compost de lombriz y setenta por ciento de regolito producía los mejores resultados. Cantidades menores de fertilizante dieron lugar a tubérculos atrofiados y raíces marchitas."
+    },
+    {
+      "heading_en": "Nutritional Value",
+      "heading_vi": "Giá trị dinh dưỡng",
+      "body_en": "Chemical analysis revealed that tubers grown in the optimal lunar mix matched the nutritional profile of Earth-grown crops. The organic fertilizer also appeared to shield the plants from toxic copper present in the regolith, according to study author Aymeric Goyer.",
+      "body_vi": "Phân tích hóa học cho thấy củ khoai trồng trong hỗn hợp mặt trăng tối ưu có thành phần dinh dưỡng tương đương với cây trồng trên Trái Đất. Phân bón hữu cơ dường như cũng bảo vệ thực vật khỏi chất đồng độc hại có trong đất phủ, theo tác giả nghiên cứu Aymeric Goyer.",
+      "heading_fr": "Valeur nutritionnelle",
+      "body_fr": "Une analyse chimique a révélé que les tubercules cultivés dans le mélange lunaire optimal correspondaient au profil nutritionnel des cultures cultivées sur Terre. L'engrais organique semblait également protéger les plantes du cuivre toxique présent dans le régolithe, selon l'auteur de l'étude Aymeric Goyer.",
+      "heading_de": "Nährwert",
+      "body_de": "Eine chemische Analyse ergab, dass Knollen, die in der optimalen Mondmischung wuchsen, dem Nährwertprofil von auf der Erde angebauten Pflanzen entsprachen. Der Bio-Dünger schien die Pflanzen laut Studienautor Aymeric Goyer auch vor dem im Regolith vorhandenen giftigen Kupfer zu schützen.",
+      "heading_es": "Valor nutricional",
+      "body_es": "El análisis químico reveló que los tubérculos cultivados en la mezcla lunar óptima igualaron el perfil nutricional de los cultivos terrestres. El fertilizante orgánico también pareció proteger a las plantas del cobre tóxico presente en el regolito, según el autor del estudio Aymeric Goyer."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "nautil.us (2026)",
+      "url": "https://nautil.us/how-future-lunar-colonists-can-farm-potatoes-on-the-moon-1286857"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/829/1080/1920",
+    "provider": "unsplash",
+    "author": "Drew Hays",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Jake Currie"
+    ],
+    "originalTitle": "How Future Lunar Colonists Can Farm Potatoes on the Moon",
+    "originalUrl": "https://nautil.us/how-future-lunar-colonists-can-farm-potatoes-on-the-moon-1286857",
+    "publisher": "nautil.us",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review organic fertilizer requirements for specific vegetable crops.",
+      "Calculate exact soil mixture ratios for small indoor planters.",
+      "Monitor plant root health regularly under controlled nutrient conditions."
+    ],
+    "vi": [
+      "Xem xét các yêu cầu về phân bón hữu cơ cho các loại rau cụ thể.",
+      "Tính toán tỷ lệ pha trộn đất chính xác cho các chậu cây trồng trong nhà nhỏ.",
+      "Theo dõi sức khỏe rễ cây thường xuyên trong điều kiện dinh dưỡng được kiểm soát."
+    ],
+    "fr": [
+      "Examiner les besoins en engrais organique pour des cultures de légumes spécifiques.",
+      "Calculer les ratios exacts de mélange de sol pour de petits pots d'intérieur.",
+      "Surveiller régulièrement la santé des racines des plantes dans des conditions de nutriments contrôlées."
+    ],
+    "de": [
+      "Überprüfe den Bio-Dünger-Bedarf für bestimmte Gemüsepulzen.",
+      "Berechne genaue Bodenmischungsverhältnisse für kleine Pflanzkübel.",
+      "Überwache die Wurzelgesundheit der Pflanzen regelmäßig unter kontrollierten Nährstoffbedingungen."
+    ],
+    "es": [
+      "Revisa los requisitos de fertilizante orgánico para cultivos de hortalizas específicos.",
+      "Calcula las proporciones exactas de la mezcla de suelo para pequeñas macetas de interior.",
+      "Monitorea regularmente la salud de las raíces de las plantas bajo condiciones de nutrientes controladas."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/829/1080/1920",
+      "provider": "unsplash",
+      "author": "Drew Hays",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/e6Fi_FBMfY0"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/681/1080/1920",
+      "provider": "unsplash",
+      "author": "Axel  Antas-Bergkvist",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/OAVRFaEo8qE"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/683/1080/1920",
+      "provider": "unsplash",
+      "author": "ahmadreza sajadi",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/55xd_uiUYEE"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACdMoMYDiABY84xGckqKME7HjgA/oMqcT7vaQbiGn1XEWa497v8qCnA/gFSAbtFfgc4LOBbJDpqvKtvnZx/S4sc4m67xNMmEJ33/rXFXU/digg+C6iVrvntugwLUAHq7GCVghUdS80r9UhY779MdjXx68k+o+q1ZMrmBfk+WTofzBA1l92lgU4L/0ve0g2HGXfX6xkRYAAA",
+  "dominant": "#514c4d",
+  "glossary": {
+    "en": {
+      "lunar": "Relating to or belonging to the moon.",
+      "regolith": "The layer of loose, heterogeneous material covering solid rock on the moon.",
+      "nitrogen": "A chemical element used here as a nutrient to improve plant growing conditions.",
+      "tubers": "Much-thickened underground parts of a stem or rhizome, such as potatoes.",
+      "control group": "A standard group used for comparison in an experimental study.",
+      "compost": "Decayed organic material used as a plant fertilizer.",
+      "chemical analysis": "The process of determining the chemical composition of a substance.",
+      "nutritional profile": "A breakdown of the nutrients contained within a food crop."
+    },
+    "vi": {
+      "đất mặt trăng giả lập": "Vật liệu nhân tạo mô phỏng tính chất vật lý và hóa học của đất trên mặt trăng.",
+      "regolith": "Lớp bụi và đá vụn phủ trên bề mặt các hành tinh hoặc mặt trăng.",
+      "phân bón hữu cơ": "Chất dinh dưỡng tự nhiên nguồn gốc động vật hoặc thực vật giúp cải tạo đất.",
+      "giun đỏ": "Loài giun được sử dụng để phân hủy chất thải thành phân bón hữu cơ chất lượng cao.",
+      "nitơ": "Nguyên tố hóa học thiết yếu giúp thực vật phát triển thân lá và xanh tốt.",
+      "phân trùn quế": "Phân hữu cơ giàu dinh dưỡng do trùn quế tạo ra sau khi tiêu hóa chất hữu cơ.",
+      "kim loại nặng độc hại": "Các nguyên tố kim loại có hại cho sinh vật khi tích tụ ở nồng độ cao.",
+      "nhóm đối chứng": "Mẫu chuẩn dùng để so sánh kết quả với các mẫu thử nghiệm trong nghiên cứu.",
+      "đồng độc hại": "Hợp chất đồng gây tổn hại cho sự phát triển của thực vật nếu vượt ngưỡng."
+    },
+    "fr": {
+      "régolithe": "Couche de roche meuble et de poussière qui recouvre la surface de la Lune.",
+      "tubercules": "Organes souterrains renflés de certaines plantes, comme la pomme de terre.",
+      "vers de fumier rouge": "Vers utilisés pour transformer les déchets organiques en compost fertile.",
+      "azote": "Élément chimique essentiel à la croissance des plantes et présent dans les engrais.",
+      "groupe témoin": "Groupe de référence utilisé dans une expérience pour comparer les résultats.",
+      "compost": "Mélange de matières organiques décomposées utilisé comme fertilisant naturel.",
+      "analyse chimique": "Étude de la composition chimique d'une substance pour en déterminer les éléments.",
+      "profil nutritionnel": "Ensemble des nutriments et des valeurs nutritives contenus dans un aliment."
+    },
+    "de": {
+      "mondoberfläche": "Die äußere Schicht des Mondes, auf der geforscht wurde.",
+      "regolith": "Das simulierte Mondmaterial, das für die Tests verwendet wurde.",
+      "bio-dünger": "Organischer Dünger von roten Kompostwürmern zur Nährstoffanreicherung.",
+      "stickstoff": "Ein zusätzlicher Stoff zur Verbesserung der Wachstumsbedingungen.",
+      "wurmkompost": "Kompost von roten Würmern, der in der optimalen Mischung eingesetzt wurde.",
+      "knollen": "Die unterirdischen Teile der Kartoffelpflanzen, die wuchsen.",
+      "nährwertprofil": "Die Zusammensetzung der Nährstoffe in den geernteten Pflanzen.",
+      "aymeric goyer": "Der namentlich genannte Studienautor der wissenschaftlichen Untersuchung.",
+      "kupfer": "Ein giftiges Schwermetall, das im Regolith vorhanden ist."
+    },
+    "es": {
+      "regolito": "Capa de material fragmentado y suelto que cubre la roca sólida en la Luna.",
+      "tubérculos": "Tallos subterráneos modificados y engrosados que acumulan nutrientes, como la papa.",
+      "compost": "Abono orgánico obtenido de la descomposición de materia orgánica por microorganismos.",
+      "perfil nutricional": "Conjunto de nutrientes y componentes químicos que determinan el valor alimentario.",
+      "metales pesados": "Elementos químicos de alta densidad que pueden resultar tóxicos para los seres vivos.",
+      "nitrógeno": "Elemento químico gaseoso esencial para el crecimiento y desarrollo de las plantas.",
+      "control": "Grupo de referencia en un experimento que no recibe el tratamiento evaluado.",
+      "análisis químico": "Estudio de la composición de una sustancia mediante diversos métodos técnicos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:45:08.899Z"
+}

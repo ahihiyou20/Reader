@@ -1,0 +1,240 @@
+{
+  "slug": "how-to-pause-artificial-intelligence-before-it-spirals-out-o",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=how-to-pause-artificial-intelligence-before-it-spirals-out-o",
+  "category": "technology",
+  "tags": [
+    "artificial intelligence",
+    "microchips",
+    "technology regulation"
+  ],
+  "title": {
+    "en": "How to Pause Artificial Intelligence Before It Spirals Out of Control",
+    "vi": "Cách tạm dừng trí tuệ nhân tạo trước khi vượt khỏi tầm kiểm soát",
+    "fr": "Comment suspendre l'intelligence artificielle avant qu'elle ne devienne incontrôlable",
+    "de": "Wie man Künstliche Intelligenz stoppt, bevor sie außer Kontrolle gerät",
+    "es": "Cómo pausar la inteligencia artificial antes de que se salga de control"
+  },
+  "hook": {
+    "en": "As artificial intelligence systems trigger sudden network outages and sophisticated cyberattacks, tech leaders and researchers are urgently seeking ways to slow down development. A group of university academics has proposed a physical solution: halting the production of training hardware and mandating specialized chips that only run existing models without building new ones, offering a pathway to safety.",
+    "vi": "Khi hệ thống trí tuệ nhân tạo gây ra sự cố mạng đột ngột và các vụ tấn công mạng tinh vi, các nhà lãnh đạo công nghệ cùng nhiều nhà nghiên cứu đang ráo riết tìm cách kìm hãm tốc độ phát triển. Một nhóm học giả đại học vừa đề xuất giải pháp vật lý: ngưng sản xuất phần cứng huấn luyện và bắt buộc dùng chip chuyên dụng chỉ chạy các mô hình hiện có mà không thể xây dựng mô hình mới.",
+    "fr": "Alors que les systèmes d'intelligence artificielle provoquent des pannes de réseau soudaines et des cyberattaques sophistiquées, les leaders technologiques et les chercheurs cherchent d'urgence des moyens de ralentir le développement. Un groupe d'universitaires a proposé une solution physique : stopper la production de matériel d'entraînement et imposer des puces spécialisées qui font seulement tourner les modèles existants sans en construire de nouveaux, offrant ainsi une voie vers la sécurité.",
+    "de": "Da Systeme der Künstlichen Intelligenz plötzliche Netzwerkausfälle und ausgefeilte Cyberangriffe auslösen, suchen Tech-Führungskräfte und Forschende dringend nach Wegen, die Entwicklung zu verlangsamen. Eine Gruppe von Universitätsakademikern hat eine physische Lösung vorgeschlagen: die Produktion von Trainings-Hardware zu stoppen und spezialisierte Chips vorzuschreiben, die nur bestehende Modelle ausführen, ohne neue zu bauen, was einen Weg zur Sicherheit eröffnet.",
+    "es": "Mientras los sistemas de inteligencia artificial provocan interrupciones repentinas en las redes y sofisticados ciberataques, los líderes tecnológicos y los investigadores buscan urgentemente formas de frenar el desarrollo. Un grupo de académicos universitarios ha propuesto una solución física: detener la producción de hardware de entrenamiento y exigir chips especializados que solo ejecuten modelos existentes sin construir otros nuevos, ofreciendo un camino hacia la seguridad."
+  },
+  "sections": [
+    {
+      "heading_en": "The Hardware Solution",
+      "heading_vi": "Giải pháp phần cứng",
+      "body_en": "Researchers from institutions including The University of California, Berkeley, and Stanford suggest a durable stop on training frontier models lasting roughly a decade. Writing in an October working paper, the authors argue this requires halting the manufacture of training-capable hardware, such as the processors made by Nvidia used in massive facilities like the Stargate center in Texas {source}. Instead, factories would produce inference-only chips optimized solely to answer user questions efficiently.",
+      "body_vi": "Các nhà nghiên cứu từ Đại học California, Berkeley và Stanford đề xuất một lệnh dừng bền vững đối với việc huấn luyện các mô hình tiên tiến trong khoảng một thập kỷ. Trong một bài báo thảo luận xuất bản tháng mười, nhóm tác giả cho rằng điều này đòi hỏi việc ngừng chế tạo phần cứng có khả năng huấn luyện, chẳng hạn các bộ vi xử lý do Nvidia sản xuất được dùng trong những cơ sở khổng lồ như trung tâm Stargate ở Texas {source}. Thay vào đó, các nhà máy sẽ sản xuất loại chip chuyên biệt cho suy luận (*inference-only chips*) để trả lời câu hỏi của người dùng một cách hiệu quả.",
+      "heading_fr": "La solution matérielle",
+      "body_fr": "Des chercheurs d'institutions telles que l'Université de Californie à Berkeley et Stanford suggèrent un arrêt durable de l'entraînement des modèles de frontières durant environ une décennie. Dans un document de travail d'octobre, les auteurs affirment que cela nécessite d'interrompre la fabrication de matériel capable d'entraîner, tel que les processeurs fabriqués par Nvidia utilisés dans des installations massives comme le centre Stargate au Texas {source}. À la place, les usines produiraient des puces dédiées uniquement à l'inférence, optimisées pour répondre efficacement aux questions des utilisateurs.",
+      "heading_de": "Die Hardware-Lösung",
+      "body_de": "Forschende von Institutionen wie der University of California, Berkeley, und Stanford schlagen einen dauerhaften Stopp des Trainings von Grenzmodellen von etwa einem Jahrzehnt vor. In einem Arbeitspapier vom Oktober argumentieren die Autoren, dass dies die Einstellung der Herstellung von trainingsfähiger Hardware erfordert, wie etwa den von Nvidia hergestellten Prozessoren, die in riesigen Anlagen wie dem Stargate-Zentrum in Texas verwendet werden {source}. Stattdessen würden Fabriken ausschließlich Inferenz-Chips produzieren, die darauf optimiert sind, Benutzeranfragen effizient zu beantworten.",
+      "heading_es": "La solución de hardware",
+      "body_es": "Investigadores de instituciones como la Universidad de California en Berkeley y Stanford sugieren una pausa duradera en el entrenamiento de modelos frontera que dure aproximadamente una década. En un documento de trabajo de octubre, los autores argumentan que esto requiere detener la fabricación de hardware capaz de entrenar, como los procesadores fabricados por Nvidia utilizados en instalaciones masivas como el centro Stargate en Texas {source}. En su lugar, las fábricas producirían chips exclusivos para inferencia optimizados únicamente para responder a las preguntas de los usuarios de manera eficiente."
+    },
+    {
+      "heading_en": "Enforcing the Ban",
+      "heading_vi": "Thực thi lệnh cấm",
+      "body_en": "The global semiconductor supply chain is remarkably concentrated, featuring a tiny number of critical vendors. For example, a single Dutch enterprise builds the extreme ultraviolet lithography machines necessary to print these processors. Because these capital goods generate massive paper trails through manufacturing records and tax filings, governments can effectively monitor their distribution. Training advanced systems requires vast arrays exceeding one hundred thousand processors over many months, making covert operations exceptionally difficult.",
+      "body_vi": "Chuỗi cung ứng chất bán dẫn toàn cầu tập trung ở mức đáng kinh ngạc, với một số ít nhà cung cấp cốt lõi. Chẳng hạn, duy nhất một doanh nghiệp Hà Lan chế tạo các máy quang khắc cực tím (*extreme ultraviolet lithography*) cần thiết để in các bộ vi xử lý này. Vì những hàng hóa tư bản này tạo ra lượng hồ sơ giấy tờ khổng lồ qua hồ sơ sản xuất và khai thuế, các chính phủ có thể kiểm soát hiệu quả việc phân phối chúng.",
+      "heading_fr": "Faire respecter l'interdiction",
+      "body_fr": "La chaîne d'approvisionnement mondiale des semi-conducteurs est remarquablement concentrée et ne compte qu'un tout petit nombre de fournisseurs essentiels. Par exemple, une seule entreprise néerlandaise fabrique les machines de lithographie dans l'extrême ultraviolet nécessaires pour imprimer ces processeurs. Comme ces biens d'équipement laissent d'importantes traces écrites à travers les dossiers de fabrication et les déclarations fiscales, les gouvernements peuvent surveiller efficacement leur distribution. De plus, l'entraînement de systèmes avancés exige de vastes réseaux dépassant cent mille processeurs pendant de nombreux mois, rendant les opérations clandestines exceptionnellement difficiles.",
+      "heading_de": "Durchsetzung des Verbots",
+      "body_de": "Die globale Halbleiter-Lieferkette ist remarkably konzentriert und weist nur eine winzige Anzahl kritischer Anbieter auf. Beispielsweise baut ein einziges niederländisches Unternehmen die Maschinen für extreme Ultraviolett-Lithographie, die notwendig sind, um diese Prozessoren zu drucken. Da diese Investitionsgüter durch Fertigungsunterlagen und Steuererklärungen riesige Papierspuren erzeugen, können Regierungen ihre Verteilung effektiv überwachen. Darüber hinaus erfordert das Training fortschrittlicher Systeme riesige Arrays von über einhunderttausend Prozessoren über viele Monate hinweg, was verdeckte Operationen außergewöhnlich schwierig macht.",
+      "heading_es": "La aplicación de la prohibición",
+      "body_es": "La cadena de suministro mundial de semiconductores está notablemente concentrada y cuenta con un número muy reducido de proveedores críticos. Por ejemplo, una sola empresa holandesa fabrica las máquinas de litografía ultravioleta extrema necesarias para imprimir estos procesadores. Debido a que estos bienes de capital generan un enorme rastro documental a través de registros de fabricación y declaraciones de impuestos, los gobiernos pueden supervisar eficazmente su distribución. Además, el entrenamiento de sistemas avanzados requiere vastas matrices que superen los cien mil procesadores durante muchos meses, lo que hace que las operaciones encubiertas sean excepcionalmente difíciles."
+    },
+    {
+      "heading_en": "Economic Stability",
+      "heading_vi": "Ổn định kinh tế",
+      "body_en": "A development freeze would not crash the economy because current models already offer vast productivity boosts across businesses if deployed widely. The proposal directs talent and financial resources toward applying existing technology to fields like medical research rather than constantly chasing larger capabilities. Scaling inference operations downward and outward allows companies to continue serving customers profitably without creating systems that surpass human oversight.",
+      "body_vi": "Việc đóng băng phát triển sẽ không làm sụp đổ nền kinh tế vì các mô hình hiện tại đã mang lại những bước nhảy vọt đáng kể về năng suất cho các doanh nghiệp nếu được triển khai rộng rãi. Hơn nữa, đề xuất này chuyển hướng nhân tài và nguồn lực tài chính sang ứng dụng công nghệ sẵn có vào các lĩnh vực như y học thay vì liên tục theo đuổi năng lực lớn hơn.",
+      "heading_fr": "Stabilité économique",
+      "body_fr": "Un gel du développement ne ferait pas s'effondrer l'économie, car les modèles actuels offrent déjà d'immenses gains de productivité dans les entreprises s'ils sont déployés à grande échelle. En outre, la proposition réoriente les talents et les ressources financières vers l'application de la technologie existante dans des domaines tels que la recherche médicale, plutôt que de courir sans cesse après de plus grandes capacités. Surtout, adapter les opérations d'inférence vers le bas et vers l'extérieur permet aux entreprises de continuer à servir leurs clients de manière rentable sans créer de systèmes qui dépassent la surveillance humaine.",
+      "heading_de": "Wirtschaftliche Stabilität",
+      "body_de": "Ein Entwicklungsstopp würde die Wirtschaft nicht zum Absturz bringen, da aktuelle Modelle bereits enorme Produktivitätssteigerungen in Unternehmen bieten, wenn sie breit eingesetzt werden. Darüber hinaus lenkt der Vorschlag Talente und finanzielle Ressourcen auf die Anwendung bestehender Technologie in Bereichen wie der medizinischen Forschung, anstatt ständig größeren Fähigkeiten hinterherzulaufen. Entscheidend ist, dass die Skalierung von Inferenzoperationen nach unten und außen es Unternehmen ermöglicht, Kunden weiterhin profitabel zu bedienen, ohne Systeme zu schaffen, die die menschliche Kontrolle übertreffen.",
+      "heading_es": "Estabilidad económica",
+      "body_es": "Una congelación del desarrollo no colapsaría la economía porque los modelos actuales ya ofrecen enormes aumentos de productividad en todas las empresas si se despliegan ampliamente. Además, la propuesta dirige el talento y los recursos financieros hacia la aplicación de la tecnología existente a campos como la investigación médica en lugar de perseguir constantemente mayores capacidades. Fundamentalmente, reducir la escala de las operaciones de inferencia hacia abajo y hacia afuera permite a las empresas seguir atendiendo a los clientes de manera rentable sin crear sistemas que superen la supervisión humana."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "nautil.us (2026)",
+      "url": "https://nautil.us/there-is-still-time-to-stall-the-ai-apocalypse-1286812"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Shubham Dhage",
+    "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/EYm7NP5KsZw",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/EYm7NP5KsZw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Kristen French"
+    ],
+    "originalTitle": "There is Still Time to Stall the AI Apocalypse",
+    "originalUrl": "https://nautil.us/there-is-still-time-to-stall-the-ai-apocalypse-1286812",
+    "publisher": "nautil.us",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Audit existing software tools within your organization to maximize current productivity.",
+      "Review internal data security measures to prevent unauthorized model access.",
+      "Explore deployment methods for specialized inference tasks using current models."
+    ],
+    "vi": [
+      "Kiểm toán các công cụ phần mềm hiện có trong tổ chức để tối đa hóa năng suất hiện tại.",
+      "Xem xét các biện pháp bảo mật dữ liệu nội bộ để ngăn chặn quyền truy cập mô hình trái phép.",
+      "Khám phá các phương pháp triển khai cho tác vụ suy luận chuyên biệt bằng những mô hình hiện hành."
+    ],
+    "fr": [
+      "Auditez les outils logiciels existants au sein de votre organisation pour maximiser la productivité actuelle.",
+      "Examinez les mesures de sécurité des données internes pour empêcher tout accès non autorisé aux modèles.",
+      "Explorez les méthodes de déploiement pour des tâches d'inférence spécialisées en utilisant les modèles actuels."
+    ],
+    "de": [
+      "Überprüfe bestehende Software-Werkzeuge in deiner Organisation, um die aktuelle Produktivität zu maximieren.",
+      "Überprüfe interne Datensicherheitsmaßnahmen, um unbefugten Modellzugriff zu verhindern.",
+      "Erforsche Bereitstellungsmethoden für spezialisierte Inferenzaufgaben unter Verwendung aktueller Modelle."
+    ],
+    "es": [
+      "Audite las herramientas de software existentes dentro de su organización para maximizar la productividad actual.",
+      "Revise las medidas de seguridad de datos internos para evitar el acceso no autorizado a los modelos.",
+      "Explore métodos de implementación para tareas de inferencia especializadas utilizando los modelos actuales."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1750096319146-6310519b5af2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/EYm7NP5KsZw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/EYm7NP5KsZw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/fwbUN8IYvQY",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/fwbUN8IYvQY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1716637644831-e046c73be197?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1716637644831-e046c73be197?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Aidin Geranrekab",
+      "authorUrl": "https://unsplash.com/@aidingeranrekab?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/bV_P23FXxhI",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/bV_P23FXxhI/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1665725045018-d734fe11e46d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1665725045018-d734fe11e46d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Pramod Tiwari",
+      "authorUrl": "https://unsplash.com/@pramodtiwari?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/vuN2nAQCg3k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/vuN2nAQCg3k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8SG93JTIwdG8lMjBQYXVzZSUyMEFydGlmaWNpYWwlMjBJbnRlbGxpZ2VuY2UlMjBCZWZvcmUlMjBJdCUyMFNwaXJhbHMlMjBPdXQlMjBvZiUyMENvbnRyb2wlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcxNjh8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdOUAA4q3Z4QsWjc9eGZZCXAD9zn3lqXeBv0Wfbc2FU8zJ4hkx56MjnNCc0+irpLP7ZHE/Hn7Vzt7a8hOFlDjWVsqbjNxMbE66bIdlvr+wr5jSgd5HC7MEoBtXl93Nm46Noku1sUM5w2u9488mlFAAAA==",
+  "dominant": "#3d6073",
+  "glossary": {
+    "en": {
+      "frontier models": "Advanced artificial intelligence systems that push the boundaries of current technological capabilities.",
+      "nvidia": "A major technology company that produces processors used for computing and training.",
+      "stargate center": "A massive facility located in Texas used for large-scale data and processing operations.",
+      "inference-only chips": "Specialized computer processors optimized solely to answer user questions efficiently.",
+      "semiconductor supply chain": "The global network of manufacturing and distribution for microchips and processors.",
+      "extreme ultraviolet lithography": "A high-precision manufacturing technology necessary to print advanced processors.",
+      "capital goods": "Physical assets used in the manufacturing of other goods and products.",
+      "covert operations": "Secret or hidden activities conducted without public or regulatory knowledge.",
+      "development freeze": "A temporary halt on creating new and more powerful artificial intelligence models.",
+      "human oversight": "Direct monitoring and control of technology by people to ensure safety."
+    },
+    "vi": {
+      "trí tuệ nhân tạo": "Công nghệ mô phỏng trí thông minh con người bằng máy tính.",
+      "phần cứng huấn luyện": "Thiết bị điện tử dùng để tạo ra và phát triển mô hình mới.",
+      "chip chuyên dụng": "Bộ vi xử lý được thiết kế riêng cho một tác vụ cụ thể.",
+      "chip chuyên biệt cho suy luận": "Loại chip chỉ chạy mô hình có sẵn để trả lời câu hỏi.",
+      "chuỗi cung ứng chất bán dẫn": "Hệ thống sản xuất và phân phối vi mạch trên toàn cầu.",
+      "máy quang khắc cực tím": "Thiết bị tiên tiến dùng ánh sáng để in vi mạch siêu nhỏ.",
+      "hàng hóa tư bản": "Tài sản vật chất được dùng để sản xuất hàng hóa và dịch vụ.",
+      "mô hình hiện tại": "Các hệ thống công nghệ đã được phát triển và hoàn thiện sẵn sàng."
+    },
+    "fr": {
+      "intelligence artificielle": "Domaine informatique visant à créer des systèmes capables d'accomplir des tâches réservées aux humains.",
+      "puces": "Circuits électroniques intégrés gravés sur du silicium pour traiter des données.",
+      "modèles": "Structures mathématiques entraînées sur des données pour accomplir des tâches spécifiques.",
+      "nvidia": "Entreprise technologique majeure spécialisée dans la fabrication de processeurs graphiques.",
+      "inférence": "Phase où un modèle d'intelligence artificielle utilise ses connaissances pour répondre à une requête.",
+      "semi-conducteurs": "Matériaux indispensables à la fabrication des composants électroniques et microprocesseurs.",
+      "lithographie": "Technique de fabrication avancée utilisée pour graver de minuscules motifs sur les puces.",
+      "productivité": "Rapport entre une production et les ressources nécessaires pour l'obtenir."
+    },
+    "de": {
+      "künstliche intelligenz": "Von Maschinen simulierte menschliche Intelligenz.",
+      "grenzmodelle": "Fortschrittlichste KI-Modelle an der Leistungsspitze.",
+      "arbeitspapier": "Wissenschaftlicher Text vor offizieller Veröffentlichung.",
+      "inferenz-chips": "Prozessoren optimiert für die Anwendung fertiger Modelle.",
+      "halbleiter": "Grundmaterial für Computerchips und Elektronik.",
+      "lieferkette": "Netzwerk von der Herstellung bis zum Endkunden.",
+      "lithographie": "Belichtungsverfahren zur Chip-Herstellung.",
+      "investitionsgüter": "Langlebige Güter zur Produktion weiterer Güter.",
+      "steuererklärungen": "Behördliche Meldungen über finanzielle Einkünfte.",
+      "inferenzoperationen": "Ausführung bereits trainierter KI-Modelle."
+    },
+    "es": {
+      "hardware": "Conjunto de elementos físicos o materiales que constituyen una computadora o un sistema informático.",
+      "nvidia": "Empresa tecnológica multinacional conocida por el diseño de unidades de procesamiento gráfico.",
+      "inferencia": "Fase en la que un modelo de inteligencia artificial ya entrenado responde a consultas de usuarios.",
+      "semiconductores": "Materiales sólidos cuyas propiedades eléctricas permiten fabricar los chips y procesadores modernos.",
+      "litografía": "Tecnología avanzada utilizada para imprimir circuitos microscópicos en placas de silicio.",
+      "procesadores": "Componentes electrónicos clave que ejecutan las instrucciones de los programas informáticos.",
+      "bienes de capital": "Activos físicos duraderos utilizados para producir otros bienes o servicios económicos.",
+      "supervisión humana": "Control y seguimiento constante ejercido por personas sobre sistemas automatizados complejos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:56:08.899Z"
+}

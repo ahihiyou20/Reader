@@ -1,0 +1,267 @@
+{
+  "slug": "first-whole-body-cell-atlas-built-for-an-adult-vertebrate",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=first-whole-body-cell-atlas-built-for-an-adult-vertebrate",
+  "category": "science",
+  "tags": [
+    "cell biology",
+    "genetics",
+    "regenerative medicine"
+  ],
+  "title": {
+    "en": "First Whole-Body Cell Atlas Built for an Adult Vertebrate",
+    "vi": "Bản đồ tế bào toàn thân đầu tiên được xây dựng cho động vật có xương sống trưởng thành",
+    "fr": "Premier atlas cellulaire du corps entier construit pour un vertébré adulte",
+    "de": "Erster Ganzkörper-Zellatlas für ein erwachsenes Wirbeltier erstellt",
+    "es": "Crean el primer atlas celular de cuerpo entero para un vertebrado adulto"
+  },
+  "hook": {
+    "en": "Researchers mapped more than six hundred thousand cells across the tiny transparent fish Danionella cerebrum {source}. This first complete cellular blueprint of an adult vertebrate reveals active genes and cellular neighbors, offering scientists a baseline to track how aging, injury, or drugs affect tissues throughout the entire body.",
+    "vi": "Các nhà nghiên cứu đã lập bản đồ hơn sáu trăm nghìn tế bào trên loài cá trong suốt nhỏ bé Danionella cerebrum {source}. Bản thiết kế tế bào hoàn chỉnh đầu tiên này của một loài động vật có xương sống trưởng thành tiết lộ các gen hoạt động và các tế bào lân cận, cung cấp cho các nhà khoa học một cơ sở để theo dõi cách quá trình lão hóa, chấn thương hoặc thuốc ảnh hưởng đến các mô trên toàn bộ cơ thể.",
+    "fr": "Des chercheurs ont cartographié plus de six cent mille cellules chez le petit poisson transparent Danionella cerebrum {source}. Ce premier plan cellulaire complet d'un vertébré adulte révèle les gènes actifs et les voisins cellulaires, offrant aux scientifiques une base de référence pour suivre comment le vieillissement, les blessures ou les médicaments affectent les tissus dans l'ensemble du corps.",
+    "de": "Forscher kartierten mehr als sechshunderttausend Zellen des winzigen, transparenten Fisches Danionella cerebrum {source}. Diese erste vollständige zelluläre Blaupause eines erwachsenen Wirbeltiers zeigt aktive Gene und zelluläre Nachbarn und bietet Wissenschaftlern eine Basislinie, um zu verfolgen, wie Alterung, Verletzungen oder Medikamente das Gewebe im gesamten Körper beeinflussen.",
+    "es": "Los investigadores mapearon más de seiscientos mil células en el diminuto y transparente pez Danionella cerebrum {source}. Este primer plano celular completo de un vertebrado adulto revela genes activos y vecinos celulares, lo que ofrece a los científicos una base para rastrear cómo el envejecimiento, las lesiones o los fármacos afectan a los tejidos en todo el cuerpo."
+  },
+  "sections": [
+    {
+      "heading_en": "Mapping the Fish",
+      "heading_vi": "Lập bản đồ loài cá",
+      "body_en": "The team collected cells from the brain, spinal cord, internal organs, and fins. By combining single-cell RNA sequencing with spatial methods, they measured gene activity and pinpointed cell locations {source}. Measuring over six hundred thousand cells allowed the team to capture rare cell populations across the one-centimeter adult vertebrate.",
+      "body_vi": "Nhóm nghiên cứu đã thu thập các tế bào từ não, tủy sống, các cơ quan nội tạng và vây. Bằng cách kết hợp giải trình tự RNA đơn tế bào (*single-cell RNA sequencing*) với các phương pháp không gian, họ đã đo lường hoạt động của gen và xác định vị trí của tế bào {source}. Việc đo lường hơn sáu trăm nghìn tế bào đã cho phép nhóm nắm bắt các quần thể tế bào hiếm trên loài động vật có xương sống trưởng thành dài một centimet.",
+      "heading_fr": "Cartographier le poisson",
+      "body_fr": "L'équipe a collecté des cellules du cerveau, de la moelle épinière, des organes internes et des nageoires. En combinant le séquençage d'ARN monocellulaire avec des méthodes spatiales, ils ont mesuré l'activité des gènes et localisé les emplacements cellulaires {source}. Mesurer plus de six cent mille cellules a permis à l'équipe de capturer des populations cellulaires rares à travers ce vertébré adulte d'un centimètre.",
+      "heading_de": "Kartierung des Fisches",
+      "body_de": "Das Team sammelte Zellen aus dem Gehirn, dem Rückenmark, inneren Organen und Flossen. Durch die Kombination von Einzelzell-RNA-Sequenzierung mit räumlichen Methoden messeten sie die Genaktivität und bestimmten die genauen Zellstandorte {source}. Die Messung von über sechshunderttausend Zellen ermöglichte es dem Team, seltene Zellpopulationen im ein Zentimeter großen erwachsenen Wirbeltier zu erfassen.",
+      "heading_es": "Mapeo del pez",
+      "body_es": "El equipo recolectó células del cerebro, la médula espinal, los órganos internos y las aletas. Al combinar la secuenciación de ARN de célula única con métodos espaciales, midieron la actividad genética y señalaron las ubicaciones celulares {source}. Medir más de seiscientos mil células permitió al equipo capturar poblaciones celulares raras en el vertebrado adulto de un centímetro."
+    },
+    {
+      "heading_en": "Regional Identity",
+      "heading_vi": "Đặc điểm vùng",
+      "body_en": "Neurons from the same brain region displayed similar gene activity patterns even when using different neurotransmitters {source}. Fibroblasts in the fins also retained regional gene programs linked to limb development. These persistent molecular signals may help adult tissues maintain and rebuild proper structures.",
+      "body_vi": "Các tế bào thần kinh từ cùng một vùng não hiển thị các mẫu hoạt động gen tương chất ngay cả khi sử dụng các chất dẫn truyền thần kinh (*neurotransmitters*) khác nhau {source}. Các nguyên bào sợi (*fibroblasts*) trong vây cũng giữ lại các chương trình gen theo vùng liên quan đến sự phát triển chi. Những tín hiệu phân tử tồn tại dai dẳng này có thể giúp các tế bào trưởng thành duy trì và xây dựng lại các cấu trúc phù hợp.",
+      "heading_fr": "Identité régionale",
+      "body_fr": "Les neurones d'une même région cérébrale ont affiché des profils d'activité génique similaires, même en utilisant différents neurotransmetteurs {source}. Les fibroblastes des nageoires ont également conservé des programmes géniques régionaux liés au développement des membres. Ces signaux moléculaires persistants peuvent aider les tissus adultes à maintenir et à reconstruire des structures appropriées.",
+      "heading_de": "Regionale Identität",
+      "body_de": "Neuronen aus derselben Gehirnregion zeigten ähnliche Genaktivitätsmuster, selbst wenn sie unterschiedliche Neurotransmitter verwendeten {source}. Fibroblasten in den Flossen behielten ebenfalls regionale Genprogramme bei, die mit der Gliedmaßenentwicklung verknüpft sind. Diese anhaltenden molekularen Signale können erwachsenem Gewebe helfen, korrekte Strukturen aufrechtzuerhalten und wiederaufzubauen.",
+      "heading_es": "Identidad regional",
+      "body_es": "Las neuronas de la misma región cerebral mostraron patrones de actividad genética similares incluso al utilizar diferentes neurotransmisores {source}. Los fibroblastos en las aletas también retuvieron programas genéticos regionales vinculados al desarrollo de las extremidades. Estas señales moleculares persistentes pueden ayudar a los tejidos adultos a mantener y reconstruir estructuras adecuadas."
+    },
+    {
+      "heading_en": "Tracking Regeneration",
+      "heading_vi": "Theo dõi khả năng tái tạo",
+      "body_en": "The researchers used the new atlas to study brain repair after injuring the forebrain. They tracked the process from the initial wound response to neural stem cell activity and the birth of new neurons {source}. The interactive public resource named DigiFish now lets other researchers explore these cell types and gene activities freely.",
+      "body_vi": "Các nhà nghiên cứu đã sử dụng bản đồ mới để nghiên cứu việc sửa chữa não sau khi làm tổn thương phần não trước. Họ theo dõi quá trình từ phản ứng vết thương ban đầu đến hoạt động của tế bào gốc thần kinh (*neural stem cells*) và sự hình thành các tế bào thần kinh mới {source}. Tài nguyên công cộng tương tác có tên là DigiFish giờ đây cho phép các nhà nghiên cứu khác khám phá các loại tế bào và hoạt động gen này một cách tự do.",
+      "heading_fr": "Suivre la régénération",
+      "body_fr": "Les chercheurs ont utilisé le nouvel atlas pour étudier la réparation cérébrale après une lésion du prosencéphale. Ils ont suivi le processus, de la réponse initiale à la blessure jusqu'à l'activité des cellules souches neurales et la naissance de nouveaux neurones {source}. La ressource publique interactive nommée DigiFish permet désormais à d'autres chercheurs d'explorer librement ces types cellulaires et ces activités géniques.",
+      "heading_de": "Regeneration verfolgen",
+      "body_de": "Die Forscher nutzten den neuen Atlas, um die Hinhirnreparatur nach einer Verletzung des Vorderhirns zu untersuchen. Sie verfolgten den Prozess von der anfänglichen Wundreaktion über die Aktivität neuraler Stammzellen bis hin zur Entstehung neuer Neuronen {source}. Die interaktive öffentliche Ressource namens DigiFish ermöglicht es anderen Forschern nun, diese Zelltypen und Genaktivitäten frei zu erkunden.",
+      "heading_es": "Rastreo de la regeneración",
+      "body_es": "Los investigadores utilizaron el nuevo atlas para estudiar la reparación cerebral tras lesionar el cerebro anterior. Rastrearon el proceso desde la respuesta inicial a la herida hasta la actividad de las células madre neurales y el nacimiento de nuevas neuronas {source}. El recurso público interactivo llamado DigiFish permite ahora a otros investigadores explorar estos tipos celulares y actividades genéticas libremente."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/first-whole-body-single-cell-atlas-adult-vertebrate-1119"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1580130579792-c4f6ce908069?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1580130579792-c4f6ce908069?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Library of Congress",
+    "authorUrl": "https://unsplash.com/@libraryofcongress?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/ngyHhFNgIZw",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/ngyHhFNgIZw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795405992/pagemoor/covers/first-whole-body-cell-atlas-built-for-an-adult-vertebrate-54087.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795405993/pagemoor/covers/first-whole-body-cell-atlas-built-for-an-adult-vertebrate-54087-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-54087/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Mackenzie White | Whitehead Institute"
+    ],
+    "originalTitle": "Scientists create the first whole-body single-cell atlas of an adult vertebrate",
+    "originalUrl": "https://news.mit.edu/2026/first-whole-body-single-cell-atlas-adult-vertebrate-1119",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "keyPoint": {
+    "en": "A cellular atlas acts like a detailed city map where every resident and building is labeled by job and address. [p:Researchers can now observe how distant neighborhoods coordinate responses to local injuries.] What specific cell changes occur in your own tissues during daily stress?",
+    "vi": "Bản đồ tế bào hoạt động giống như một sơ đồ thành phố chi tiết nơi mọi cư dân và tòa nhà được dán nhãn theo công việc và địa chỉ. [p:Các nhà nghiên cứu giờ đây có thể quan sát cách các khu vực lân cận ở xa điều phối phản ứng đối với các tổn thương cục bộ.] Những thay đổi tế bào cụ thể nào xảy ra trong các mô của chính bạn trong căng thẳng hàng ngày?",
+    "fr": "Un atlas cellulaire agit comme une carte détaillée d'une ville où chaque résident et bâtiment est étiqueté par son métier et son adresse. [p:Les chercheurs peuvent désormais observer comment des quartiers distants coordonnent leurs réponses à des blessures locales.] Quels changements cellulaires spécifiques se produisent dans vos propres tissus lors du stress quotidien ?",
+    "de": "Ein Zellatlas fungiert wie ein detaillierter Stadtplan, auf dem jeder Bewohner und jedes Gebäude nach Job und Adresse beschriftet ist. [p:Forscher können nun beobachten, wie entfernte Nachbarschaften Reaktionen auf lokale Verletzungen koordinieren.] Welche spezifischen Zellveränderungen treten während des täglichen Stresses in deinem eigenen Gewebe auf?",
+    "es": "Un atlas celular actúa como un mapa urbano detallado donde cada residente y edificio está etiquetado por oficio y dirección. [p:Los investigadores ahora pueden observar cómo vecindarios distantes coordinan respuestas a lesiones locales.] ¿Qué cambios celulares específicos ocurren en tus propios tejidos durante el estrés diario?"
+  },
+  "applySteps": {
+    "en": [
+      "Browse the DigiFish online platform to view the adult vertebrate cell types.",
+      "Compare regional gene activity patterns across the brain and fins.",
+      "Examine the documented stages of neural regeneration after forebrain injury."
+    ],
+    "vi": [
+      "Duyệt qua nền tảng trực tuyến DigiFish để xem các loại tế bào động vật có xương sống trưởng thành.",
+      "So sánh các mẫu hoạt động gen theo vùng trên não và vây.",
+      "Kiểm tra các giai đoạn tái tạo thần kinh được ghi lại sau chấn thương não trước."
+    ],
+    "fr": [
+      "Parcourir la plateforme en ligne DigiFish pour visualiser les types cellulaires du vertébré adulte.",
+      "Comparer les profils d'activité génique régionale entre le cerveau et les nageoires.",
+      "Examiner les étapes documentées de la régénération neurale après une lésion du prosencéphale."
+    ],
+    "de": [
+      "Durchstöbere die Online-Plattform DigiFish, um die Zelltypen des erwachsenen Wirbeltiers anzusehen.",
+      "Vergleiche regionale Genaktivitätsmuster im Gehirn und in den Flossen.",
+      "Untersuche die dokumentierten Stadien der neuralen Regeneration nach einer Vorderhirnverletzung."
+    ],
+    "es": [
+      "Explora la plataforma en línea DigiFish para ver los tipos celulares del vertebrado adulto.",
+      "Compara los patrones de actividad genética regional en el cerebro y las aletas.",
+      "Examina las etapas documentadas de la regeneración neural tras una lesión en el cerebro anterior."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1580130579792-c4f6ce908069?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1580130579792-c4f6ce908069?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Library of Congress",
+      "authorUrl": "https://unsplash.com/@libraryofcongress?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/ngyHhFNgIZw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/ngyHhFNgIZw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "National Cancer Institute",
+      "authorUrl": "https://unsplash.com/@nci?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/PP5nO5gcLdA",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/PP5nO5gcLdA/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1628864005140-7770b9b8e7dd?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1628864005140-7770b9b8e7dd?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Vedrana Filipović",
+      "authorUrl": "https://unsplash.com/@vedranafilipovic?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/ohrhLVISJ1o",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/ohrhLVISJ1o/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1589829068083-7cbcc8f6eed4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1589829068083-7cbcc8f6eed4?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Matt Ridley",
+      "authorUrl": "https://unsplash.com/@mattwridley?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/-25h6ZmstiY",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/-25h6ZmstiY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8Rmlyc3QlMjBXaG9sZSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTQwNTQwOXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/iss037-s-001/iss037-s-001~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA JSC",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/iss037-s-001"
+    },
+    {
+      "type": "image",
+      "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000258/GSFC_20171208_Archive_e000258~medium.jpg",
+      "provider": "nasa",
+      "author": "NASA GSFC",
+      "license": "Public domain (NASA)",
+      "sourceUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000258"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoQABwAPu1kqU2ppaQiMAgBMB2JaACw7Glwo6mTVEtihj2V9+F/gAD+9Von7kF0Ahcy+IwWXOziYnvRCfjgamLrl8Opjotz3fekNdruGw/DRqMpTcs57Zes5FLan4Bjbl4ORe19mzs3atO+kz9JLKouNnj8S403Hr5X+bk/wy4qvsB9wbMUlJE5LBVVFU3Heq5wO9mX+aknPjwmAAA=",
+  "dominant": "#767162",
+  "glossary": {
+    "en": {
+      "danionella cerebrum": "A tiny transparent fish species used in this scientific study.",
+      "cellular blueprint": "A comprehensive map detailing the types and locations of cells in an organism.",
+      "single-cell rna sequencing": "A laboratory technique used to measure gene activity within individual cells.",
+      "spatial methods": "Techniques used to pinpoint the exact physical locations of cells within tissues.",
+      "neurons": "Nerve cells that transmit electrical and chemical signals throughout the body.",
+      "neurotransmitters": "Chemical messengers that transmit signals across a chemical synapse from one neuron to another.",
+      "fibroblasts": "Cells that contribute to the formation of connective tissue and help rebuild structures.",
+      "neural stem cell": "A specialized cell capable of dividing and developing into new neurons.",
+      "digifish": "An interactive public online resource for exploring cell types and gene activities."
+    },
+    "vi": {
+      "danionella cerebrum": "Loài cá trong suốt nhỏ bé được dùng để lập bản đồ tế bào toàn thân.",
+      "giải trình tự rna đơn tế bào": "Phương pháp đo lường hoạt động của gen ở cấp độ từng tế bào riêng lẻ.",
+      "chất dẫn truyền thần kinh": "Các chất hóa học giúp tế bào thần kinh truyền tín hiệu cho nhau.",
+      "nguyên bào sợi": "Loại tế bào tạo ra khung nâng đỡ và các mô liên kết.",
+      "tế bào gốc thần kinh": "Tế bào có khả năng phát triển thành các tế bào thần kinh mới.",
+      "digifish": "Tài nguyên công cộng trực tuyến cho phép khám phá các loại tế bào.",
+      "động vật có xương sống": "Nhóm động vật có cột sống và bộ xương bên trong.",
+      "tế bào thần kinh": "Tế bào chuyên chở thông tin điện và hóa học trong cơ thể.",
+      "tái tạo": "Quá trình phục hồi hoặc mọc lại các mô, cơ quan bị tổn thương."
+    },
+    "fr": {
+      "danionella cerebrum": "Petit poisson transparent utilisé ici comme modèle pour cartographier les cellules.",
+      "séquençage d'arn": "Technique de laboratoire pour mesurer l'activité des gènes dans des cellules individuelles.",
+      "cellules souches": "Cellules capables de se diviser et de se différencier en plusieurs types cellulaires.",
+      "prosencéphale": "Région antérieure du cerveau chez les vertébrés.",
+      "fibroblastes": "Cellules tissulaires jouant un rôle clé dans le soutien structurel et la cicatrisation.",
+      "neurotransmetteurs": "Molécules chimiques qui transmettent des signaux entre les neurones.",
+      "digifish": "Ressource publique interactive en ligne explorant ces données cellulaires.",
+      "régénération": "Processus biologique de reconstruction des tissus ou des organes endommagés."
+    },
+    "de": {
+      "zellatlas": "Eine umfassende Karte aller Zelltypen und ihrer Standorte in einem Organismus.",
+      "danionella cerebrum": "Ein winziger, transparenter Fisch, der als Modellorganismus in der Forschung dient.",
+      "einzelzell-rna-sequenzierung": "Eine Methode zur Analyse der Genaktivität einzelner Zellen.",
+      "neuronen": "Nervenzellen zur Übertragung von Signalen im Körper.",
+      "neurotransmitter": "Chemische Botenstoffe zur Signalübertragung zwischen Nervenzellen.",
+      "fibroblasten": "Zellen des Bindegewebes, die für Struktur und Wundheilung wichtig sind.",
+      "stammzellen": "Unspezialisierte Zellen, die sich in verschiedene Zelltypen entwickeln können.",
+      "digifish": "Eine interaktive öffentliche Online-Ressource zur Erkundung von Zelltypen und Genaktivitäten."
+    },
+    "es": {
+      "danionella cerebrum": "Especie de pez diminuto y transparente utilizada como organismo modelo en la investigación científica.",
+      "secuenciación de arn": "Técnica de laboratorio para medir la actividad y presencia de moléculas de ARN en células.",
+      "neurotransmisores": "Sustancias químicas usadas por las neuronas para comunicarse entre sí en el sistema nervioso.",
+      "fibroblastos": "Células del tejido conjuntivo que sintetizan colágeno y ayudan en el mantenimiento estructural.",
+      "células madre": "Células con la capacidad de dividirse y diferenciarse en diversos tipos celulares especializados.",
+      "digifish": "Recurso público interactivo en línea que permite explorar tipos celulares y actividad genética.",
+      "atlas celular": "Mapa integral que cataloga la ubicación y función de las células en un organismo.",
+      "cerebro anterior": "Región anterior del encéfalo que participa en funciones cognitivas y motoras complejas."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-23T03:41:11.175Z"
+}

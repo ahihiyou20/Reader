@@ -1,0 +1,247 @@
+{
+  "slug": "new-method-keeps-ai-models-of-chaotic-systems-physically-rea",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=new-method-keeps-ai-models-of-chaotic-systems-physically-rea",
+  "category": "technology",
+  "tags": [
+    "artificial intelligence",
+    "chaos theory",
+    "machine learning",
+    "physics"
+  ],
+  "title": {
+    "en": "New Method Keeps AI Models of Chaotic Systems Physically Realistic",
+    "vi": "Phương pháp mới giữ cho các mô hình AI hệ hỗn loạn tuân thủ vật lý",
+    "fr": "Une nouvelle méthode maintient les modèles d'IA de systèmes chaotiques physiquement réalistes",
+    "de": "Neue Methode hält KI-Modelle chaotischer Systeme physikalisch realistisch",
+    "es": "Nuevo método mantiene modelos de IA de sistemas caóticos físicamente realistas"
+  },
+  "hook": {
+    "en": "Machine learning models struggle to predict chaotic systems like weather patterns or fluid dynamics without drifting into physically impossible outcomes. Researchers at the Massachusetts Institute of Technology developed a technique that guarantees these models stay within realistic bounds by enforcing strict energy-based constraints {source}.",
+    "vi": "Các mô hình học máy gặp khó khăn trong việc dự đoán hệ hỗn loạn như thời tiết hay động lực học chất lưu mà không đi chệch hướng sang kết quả phi lý về mặt vật lý. Các nhà nghiên cứu tại Viện Công nghệ Massachusetts đã phát triển một kỹ thuật đảm bảo các mô hình này nằm trong giới hạn thực tế bằng cách áp dụng các ràng buộc nghiêm ngặt dựa trên năng lượng {source}.",
+    "fr": "Les modèles d'apprentissage automatique ont du mal à prédire les systèmes chaotiques comme les régimes météorologiques ou la dynamique des fluides sans dériver vers des résultats physiquement impossibles. Des chercheurs du Massachusetts Institute of Technology ont développé une technique qui garantit que ces modèles restent dans des limites réalistes en imposant des contraintes strictes basées sur l'énergie {source}.",
+    "de": "Modelle des maschinellen Lernens tun sich schwer damit, chaotische Systeme wie Wetteruster oder die Strömungslehre vorherzusagen, ohne in physikalisch unmögliche Ergebnisse abzudriften. Forschende des Massachusetts Institute of Technology haben eine Technik entwickelt, die sicherstellt, dass diese Modelle innerhalb realistischer Grenzen bleiben, indem sie strenge energiebasierte Einschränkungen erzwingen {source}.",
+    "es": "Los modelos de aprendizaje automático batallan para predecir sistemas caóticos como patrones meteorológicos o dinámica de fluidos sin derivar en resultados físicamente imposibles. Investigadores del Instituto Tecnológico de Massachusetts desarrollaron una técnica que garantiza que estos modelos permanezcan dentro de límites realistas aplicando estrictos restricciones basadas en energía {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "The Problem of Drift",
+      "heading_vi": "Vấn đề trôi dạt",
+      "body_en": "Complex processes like weather forecasting and ocean currents depend on starting conditions that create large downstream differences. Standard neural networks match data over short intervals yet fail during long simulations. Small errors accumulate over time until the simulation produces values that grow without limit. [y:Previous attempts relied on training penalties] that offered no guarantees once the models encountered new inputs.",
+      "body_vi": "Các quá trình phức tạp như dự báo thời tiết và dòng hải lưu phụ thuộc vào điều kiện ban đầu tạo ra sự khác biệt lớn ở hạ lưu. Các mạng thần kinh tiêu chuẩn khớp dữ liệu trong khoảng thời gian ngắn nhưng thất bại trong quá trình mô phỏng dài. Các lỗi nhỏ tích tụ theo thời gian cho đến khi mô phỏng tạo ra các giá trị tăng lên vô hạn. [y:Các nỗ lực trước đây dựa vào hình phạt huấn luyện] không đưa ra đảm bảo nào khi các mô hình gặp đầu vào mới.",
+      "heading_fr": "Le problème de la dérive",
+      "body_fr": "Les processus complexes tels que la prévision météorologique et les courants océaniques dépendent de conditions initiales qui créent de grandes différences en aval. Les réseaux de neurones standard correspondent aux données sur de courts intervalles mais échouent lors de simulations longues. De petites erreurs s'accumulent au fil du temps jusqu'à ce que la simulation produise des valeurs qui croissent sans limite. [y:Les tentatives précédentes reposaient sur des pénalités d'entraînement] qui n'offraient aucune garantie une fois que les modèles rencontraient de nouvelles entrées.",
+      "heading_de": "Das Problem des Abdriftens",
+      "body_de": "Komplexe Prozesse wie die Wettervorhersage und Meeresströmungen hängen von Anfangsbedingungen ab, die große nachgelagerte Unterschiede erzeugen. Standard-Neuronennetze stimmen zwar über kurze Intervalle mit Daten überein, versagen jedoch bei Langzeitsimulationen. Kleine Fehler häufen sich mit der Zeit an, bis die Simulation Werte liefert, die unbegrenzt wachsen. [y:Frühere Versuche stützten sich auf Trainingsstrafen], die keinerlei Garantien boten, sobald die Modelle auf neue Eingaben trafen.",
+      "heading_es": "El problema de la deriva",
+      "body_es": "Procesos complejos como la predicción meteorológica y las corrientes oceánicas dependen de condiciones iniciales que generan grandes diferencias posteriores. Las redes neuronales estándar ajustan datos en intervalos cortos, pero fallan durante simulaciones largas. Los pequeños errores se acumulan con el tiempo hasta que la simulación produce valores que crecen sin límite. [y:Los intentos anteriores se basaban en penalizaciones de entrenamiento] que no ofrecían garantías una vez que los modelos encontraban nuevas entradas."
+    },
+    {
+      "heading_en": "Energy-Based Boundaries",
+      "heading_vi": "Ranh giới dựa trên năng lượng",
+      "body_en": "Sunbochen Tang, Navid Azizan, and Themistoklis Sapsis published their findings in the Proceedings of the National Academy of Sciences. Their approach lets the model learn an energy-like function mirroring real-world chaotic systems. A [p:projection layer] adjusts predictions to enforce energy dissipation as a hard constraint. Outside the defined boundary, this quantity decreases and draws the simulated system back toward the permitted region.",
+      "body_vi": "Sunbochen Tang, Navid Azizan và Themistoklis Sapsis đã công bố phát hiện của họ trên Proceedings of the National Academy of Sciences. Phương pháp của họ cho phép mô hình học một hàm số giống như năng lượng phản ánh các hệ hỗn loạn trong thế giới thực. Một [p:lớp chiếu] điều chỉnh các dự đoán để thực thi sự tiêu散 năng lượng như một ràng buộc cứng. Bên ngoài ranh giới xác định, đại lượng này giảm xuống và kéo hệ thống được mô phỏng trở lại vùng cho phép.",
+      "heading_fr": "Limites basées sur l'énergie",
+      "body_fr": "Sunbochen Tang, Navid Azizan et Themistoklis Sapsis ont publié leurs conclusions dans les Proceedings of the National Academy of Sciences. Leur approche permet au modèle d'apprendre une fonction semblable à l'énergie reflétant les systèmes chaotiques du monde réel. Une [p:couche de projection] ajuste les prévisions pour imposer la dissipation d'énergie comme une contrainte stricte. En dehors de la limite définie, cette quantité diminue et ramène le système simulé vers la région permise.",
+      "heading_de": "Energiebasierte Grenzen",
+      "body_de": "Sunbochen Tang, Navid Azizan und Themistoklis Sapsis veröffentlichten ihre Erkenntnisse in den Proceedings of the National Academy of Sciences. Ihr Ansatz ermöglicht es dem Modell, eine energieähnliche Funktion zu erlernen, die realweltliche chaotische Systeme widerspiegelt. Eine [p:Projektionsschicht] passt Vorhersagen an, um die Energiedissipation als harte Nebenbedingung durchzusetzen. Außerhalb der definierten Grenze nimmt diese Größe ab und zieht das simulierte System in den zulässigen Bereich zurück.",
+      "heading_es": "Límites basados en energía",
+      "body_es": "Sunbochen Tang, Navid Azizan y Themistoklis Sapsis publicaron sus hallazgos en las Actas de la Academia Nacional de Ciencias. Su enfoque permite que el modelo aprenda una función similar a la energía que refleja los sistemas caóticos del mundo real. Una [p:capa de proyección] ajusta las predicciones para imponer la disipación de energía como una restricción estricta. Fuera del límite definido, esta cantidad disminuye y atrae al sistema simulado de vuelta hacia la región permitida."
+    },
+    {
+      "heading_en": "Broader Applications",
+      "heading_vi": "Ứng dụng rộng rãi hơn",
+      "body_en": "The modular projection layer works across different neural network architectures and handles scenarios where data remains limited. The team tested the method on textbook cases and multidimensional systems. The approach successfully matched true outcomes while conventional setups deviated into impossible predictions. The researchers released their code online to help others test larger problems.",
+      "body_vi": "Lớp chiếu mô đun hoạt động trên các kiến trúc mạng thần kinh khác nhau và xử lý các kịch bản mà dữ liệu còn hạn chế. Nhóm nghiên cứu đã thử nghiệm phương pháp này trên các trường hợp trong sách giáo khoa và các hệ thống đa chiều. Phương pháp này đã khớp thành công với kết quả thực tế trong khi các thiết lập thông thường đi chệch hướng sang các dự đoán bất khả thi. Các nhà nghiên cứu đã phát hành mã nguồn của họ trực tuyến để giúp những người khác kiểm tra các bài toán lớn hơn.",
+      "heading_fr": "Applications plus larges",
+      "body_fr": "La couche de projection modulaire fonctionne sur différentes architectures de réseaux de neurones et gère les scénarios où les données restent limitées. L'équipe a testé la méthode sur des cas classiques et des systèmes multidimensionnels. L'approche a réussi à correspondre aux résultats réels tandis que les configurations conventionnelles ont dévié vers des prévisions impossibles. Les chercheurs ont publié leur code en ligne pour aider d'autres personnes à tester des problèmes plus vastes.",
+      "heading_de": "Breitere Anwendungen",
+      "body_de": "Die modulare Projektionsschicht funktioniert über verschiedene Architekturen neuronaler Netze hinweg und bewältigt Szenarien, in denen Daten begrenzt bleiben. Das Team testete die Methode an Lehrbuchfällen und mehrdimensionalen Systemen. Der Ansatz stimmte erfolgreich mit echten Ergebnissen überein, während herkömmliche Aufbauten in unmögliche Vorhersagen abwichen. Die Forschenden veröffentlichten ihren Code online, um anderen bei der Prüfung größerer Probleme zu helfen.",
+      "heading_es": "Aplicaciones más amplias",
+      "body_es": "La capa de proyección modular funciona en diferentes arquitecturas de redes neuronales y maneja escenarios donde los datos siguen siendo limitados. El equipo probó el método en casos de estudio y sistemas multidimensionales. El enfoque coincidió exitosamente con los resultados reales, mientras que las configuraciones convencionales se desviaron hacia predicciones imposibles. Los investigadores publicaron su código en línea para ayudar a otros a probar problemas más grandes."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1655635949384-f737c5133dfe?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1655635949384-f737c5133dfe?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Google DeepMind",
+    "authorUrl": "https://unsplash.com/@googledeepmind?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/2EpKCoEgKZo",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/2EpKCoEgKZo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234217/pagemoor/covers/new-method-keeps-ai-models-of-chaotic-systems-physically-rea-27803.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234218/pagemoor/covers/new-method-keeps-ai-models-of-chaotic-systems-physically-rea-27803-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-27803/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "David Chandler | Laboratory for Information",
+      "Decision Systems"
+    ],
+    "originalTitle": "New approach enables physically consistent AI models of chaotic systems",
+    "originalUrl": "https://news.mit.edu/new-approach-enables-physically-consistent-ai-models-chaotic-systems-1120",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify the physical constraints and conservation laws governing your specific chaotic dataset.",
+      "Design an energy-like function that defines the allowable boundary states for the system.",
+      "Implement a projection layer to enforce hard constraints on model outputs during testing."
+    ],
+    "vi": [
+      "Xác định các ràng buộc vật lý và định luật bảo toàn chi phối tập dữ liệu hỗn loạn cụ thể của bạn.",
+      "Thiết kế hàm số giống như năng lượng xác định trạng thái ranh giới cho phép đối với hệ thống.",
+      "Triển khai lớp chiếu để thực thi các ràng buộc cứng đối với đầu ra của mô hình trong quá trình kiểm tra."
+    ],
+    "fr": [
+      "Identifiez les contraintes physiques et les lois de conservation régissant votre ensemble de données chaotiques spécifique.",
+      "Concevez une fonction semblable à l'énergie qui définit les états limites autorisés pour le système.",
+      "Implémentez une couche de projection pour imposer des contraintes strictes sur les sorties du modèle pendant les tests."
+    ],
+    "de": [
+      "Identifiziere die physikalischen Einschränkungen und Erhaltungsgesetze, die deinen spezifischen chaotischen Datensatz steuern.",
+      "Entwirft eine energieähnliche Funktion, die die zulässigen Grenzwerte des Systems definiert.",
+      "Implementiere eine Projektionsschicht, um während des Testens harte Nebenbedingungen für die Modellausgaben durchzusetzen."
+    ],
+    "es": [
+      "Identifique las restricciones físicas y las leyes de conservación que rigen su conjunto de datos caóticos específico.",
+      "Diseñe una función similar a la energía que defina los estados límite permitidos para el sistema.",
+      "Implemente una capa de proyección para imponer restricciones estrictas en las salidas del modelo durante las pruebas."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1655635949384-f737c5133dfe?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1655635949384-f737c5133dfe?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Google DeepMind",
+      "authorUrl": "https://unsplash.com/@googledeepmind?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/2EpKCoEgKZo",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/2EpKCoEgKZo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1659959103888-ea4ab754e6f6?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1659959103888-ea4ab754e6f6?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Max Petrunin",
+      "authorUrl": "https://unsplash.com/@mvogulov?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/n5GgAs1_RXQ",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/n5GgAs1_RXQ/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1663941842420-8f8e27ccf882?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1663941842420-8f8e27ccf882?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Steve A Johnson",
+      "authorUrl": "https://unsplash.com/@steve_j?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/LjQUkJbWMl8",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/LjQUkJbWMl8/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1752350434927-3eda302a522e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1752350434927-3eda302a522e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Max Petrunin",
+      "authorUrl": "https://unsplash.com/@mvogulov?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/fkVThT6LzRU",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/fkVThT6LzRU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8TmV3JTIwTWV0aG9kJTIwS2VlcHMlMjBBSSUyME1vZGVscyUyMG9mJTIwQ2hhb3RpYyUyMFN5c3RlbXMlMjBQaHlzaWNhbGx5JTIwUmVhbGlzdGljJTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1MjMzOTU3fDA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoQABwAPu1kqk2ppaQiMAgBMB2JbACxDExJW1A/IGhnDmMBsAD++qaaACZ1cGdUMH3b8XTPLt4oZqidaF6CNSzI/4HjuyYeddXJQ7FGDe64DsN5cctPVHeapaVeTgQMxietOxnWlhimFj01O8M4Vrgragnsj4DSfhcgAA==",
+  "dominant": "#96868c",
+  "glossary": {
+    "en": {
+      "chaotic systems": "Complex processes whose starting conditions create large downstream differences.",
+      "fluid dynamics": "The branch of physics concerned with the mechanics of fluids.",
+      "energy-based constraints": "Rules enforcing strict limits based on physical energy principles.",
+      "neural networks": "Computing systems inspired by biological neural networks.",
+      "energy-like function": "A mathematical function mirroring real-world chaotic systems.",
+      "projection layer": "A structural component that adjusts predictions to enforce hard constraints.",
+      "energy dissipation": "The process where energy decreases within the simulated system.",
+      "hard constraint": "A strict limitation that must be satisfied by the model outputs.",
+      "modular projection layer": "A flexible projection layer working across different neural network architectures."
+    },
+    "vi": {
+      "hệ hỗn loạn": "Hệ thống có trạng thái thay đổi rất nhạy cảm với điều kiện ban đầu.",
+      "động lực học chất lưu": "Ngành khoa học nghiên cứu chuyển động của chất lỏng và chất khí.",
+      "mạng thần kinh": "Mô hình tính toán lấy cảm hứng từ hệ thần kinh sinh học.",
+      "hình phạt huấn luyện": "Kỹ thuật điều chỉnh quá trình học của máy tính bằng cách thêm chi phí cho lỗi.",
+      "hàm số": "Quan hệ toán học trong đó mỗi giá trị đầu vào ứng với một đầu ra.",
+      "lớp chiếu": "Thành phần toán học điều chỉnh dữ liệu để thỏa mãn các điều kiện cho trước.",
+      "ràng buộc cứng": "Điều kiện bắt buộc phải được thỏa mãn tuyệt đối mà không có ngoại lệ.",
+      "kiến trúc": "Cấu trúc thiết kế tổng thể của một hệ thống mạng thần kinh.",
+      "hệ thống đa chiều": "Hệ thống được mô tả bằng nhiều biến số và không gian phức tạp.",
+      "mã nguồn": "Tập hợp các câu lệnh lập trình do con người viết ra."
+    },
+    "fr": {
+      "systèmes chaotiques": "Systèmes dynamiques extrêmement sensibles aux conditions initiales, rendant toute prédiction à long terme difficile.",
+      "réseaux de neurones": "Modèles informatiques inspirés du cerveau humain utilisés pour l'apprentissage automatique.",
+      "couche de projection": "Composant mathématique ajustant les résultats d'un modèle pour respecter des limites prédéfinies.",
+      "dissipation d'énergie": "Processus par lequel l'énergie d'un système physique diminue au fil du temps.",
+      "dynamique des fluides": "Étude du comportement des fluides en mouvement et des forces qui agissent sur eux.",
+      "contraintes": "Règles mathématiques strictes que le modèle doit respecter lors de ses calculs.",
+      "architectures": "Conception structurelle et organisation des couches d'un réseau de neurones.",
+      "simulations": "Représentation informatique d'un processus réel pour étudier son comportement futur."
+    },
+    "de": {
+      "chaotische systeme": "Komplexe Prozesse, deren Verhalten extrem empfindlich auf die Anfangsbedingungen reagiert und sich langfristig kaum vorhersagen lässt.",
+      "strömungslehre": "Teilgebiet der Mechanik, das das Verhalten von fließenden Gasen und Flüssigkeiten untersucht.",
+      "neuronennetze": "Rechenmodelle des maschinellen Lernens, die nach dem Vorbild des menschlichen Gehirns aufgebaut sind.",
+      "projektionsschicht": "Eine algorithmische Komponente im Modell, die Vorhersagen mathematisch in einen zulässigen Bereich überführt.",
+      "energiedissipation": "Der Prozess, bei dem Energie in einem System abgebaut oder in eine andere Form umgewandelt wird.",
+      "nebenbedingung": "Eine mathematische Einschränkung, die bei der Lösungsfindung zwingend eingehalten werden muss.",
+      "architekturen": "Der strukturelle Aufbau und die Anordnung von Komponenten in einem künstlichen neuronalen Netz.",
+      "datensatz": "Eine strukturierte Sammlung von zusammengehörenden Datenpunkten, die zum Training von KI verwendet wird."
+    },
+    "es": {
+      "sistemas caóticos": "Sistemas dinámicos altamente sensibles a las condiciones iniciales donde pequeños cambios generan grandes diferencias.",
+      "redes neuronales": "Modelos computacionales inspirados en el cerebro humano utilizados para reconocer patrones complejos en datos.",
+      "capa de proyección": "Componente modular que ajusta las predicciones del modelo para cumplir estrictamente con límites físicos definidos.",
+      "disipación de energía": "Proceso físico mediante el cual la energía disminuye o se pierde dentro de un sistema dinámico.",
+      "aprendizaje automático": "Rama de la inteligencia artificial que permite a los sistemas aprender y mejorar a partir de datos.",
+      "dinámica de fluidos": "Estudio del movimiento de los fluidos, incluidos líquidos y gases, bajo la influencia de fuerzas.",
+      "arquitecturas": "Estructuras organizativas y de diseño subyacentes de los modelos de redes neuronales.",
+      "simulaciones": "Representaciones computacionales del comportamiento de un sistema complejo a lo largo del tiempo."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-21T03:46:40.341Z"
+}

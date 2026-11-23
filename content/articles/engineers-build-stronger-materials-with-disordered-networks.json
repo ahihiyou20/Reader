@@ -1,0 +1,247 @@
+{
+  "slug": "engineers-build-stronger-materials-with-disordered-networks",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=engineers-build-stronger-materials-with-disordered-networks",
+  "category": "technology",
+  "tags": [
+    "metamaterials",
+    "network science",
+    "materials science",
+    "mit"
+  ],
+  "title": {
+    "en": "Engineers build stronger materials with disordered networks",
+    "vi": "Kỹ sư tạo ra vật liệu bền hơn nhờ mạng lưới hỗn loạn",
+    "fr": "Des ingénieurs créent des matériaux plus résistants grâce à des réseaux désordonnés",
+    "de": "Ingenieure bauen stärkere Materialien mit ungeordneten Netzwerken",
+    "es": "Ingenieros construyen materiales más fuertes con redes desordenadas"
+  },
+  "hook": {
+    "en": "Traditional artificial materials rely on rigid, repeating geometric blocks that fail easily under localized stress. Researchers at MIT and Northeastern University now show that introducing controlled disorder into internal microstructures makes synthetic materials significantly more resilient against sudden impacts and severe compression.",
+    "vi": "Vật liệu nhân tạo truyền thống dựa vào các khối hình học lặp đi lặp lại dễ hỏng hóc dưới áp lực cục bộ. Các nhà nghiên cứu tại MIT và Đại học Northeastern nay cho thấy việc đưa sự hỗn loạn có kiểm soát vào cấu trúc vi mô giúp vật liệu nhân tạo chống chịu tốt hơn đáng kể trước các tác động đột ngột và lực nén mạnh.",
+    "fr": "Les matériaux artificiels traditionnels reposent sur des blocs géométriques rigides et répétitifs qui cèdent facilement sous une contrainte localisée. Des chercheurs du MIT et de l'Université Northeastern démontrent aujourd'hui que l'introduction d'un désordre contrôlé dans les microstructures internes rend les matériaux synthétiques nettement plus résistants aux impacts soudains et aux compressions sévères.",
+    "de": "Traditionelle künstliche Materialien stützen sich auf starre, sich wiederholende geometrische Blöcke, die bei lokalisierter Belastung leicht versagen. Forscher des MIT und der Northeastern University zeigen nun, dass die Einführung kontrollierter Unordnung in interne Mikrostrukturen synthetische Materialien wesentlich widerstandsfähiger gegen plötzliche Stöße und starke Kompression macht.",
+    "es": "Los materiales artificiales tradicionales dependen de bloques geométricos rígidos y repetitivos que fallan fácilmente bajo estrés localizado. Investigadores del MIT y de la Northeastern University demuestran ahora que introducir un desorden controlado en las microestructuras internas hace que los materiales sintéticos sean mucho más resistentes frente a impactos repentinos y compresiones severas."
+  },
+  "sections": [
+    {
+      "heading_en": "Natural Inspiration",
+      "heading_vi": "Cảm hứng tự nhiên",
+      "body_en": "Engineers traditionally design synthetic metamaterials by repeating a single basic building unit. A team led by Carlos Portela and Albert-László Barabási introduced an alternative approach inspired by biological networks such as leaf veins and dragonfly wings {source}. These scale-rich metamaterials use interconnected support beams of varying sizes instead of uniform unit cells.",
+      "body_vi": "Các kỹ sư thường thiết kế vật liệu siêu cấu trúc (*metamaterials*) bằng cách lặp lại một đơn vị xây dựng cơ bản. Nhóm do Carlos Portela và Albert-László Barabási dẫn dắt đã giới thiệu một phương pháp thay thế lấy cảm hứng từ các mạng lưới sinh học như gân lá và cánh chuồn chuồn {source}. Những vật liệu siêu cấu trúc giàu quy mô (*scale-rich metamaterials*) này sử dụng các thanh đỡ liên kết có kích thước khác nhau thay vì các ô đơn vị đồng nhất.",
+      "heading_fr": "Inspiration naturelle",
+      "body_fr": "Les ingénieurs conçoivent traditionnellement des métamatériaux synthétiques en répétant une seule unité de construction de base. Une équipe dirigée par Carlos Portela et Albert-László Barabási a présenté une autre approche inspirée par des réseaux biologiques tels que les nervures de feuilles et les ailes de libellule {source}. Ces métamatériaux riches en échelles utilisent des poutres de support interconnectées de tailles variables au lieu de cellules unitaires uniformes.",
+      "heading_de": "Natürliche Inspiration",
+      "body_de": "Ingenieure entwerfen synthetische Metamaterialien traditionell durch die Wiederholung einer einzigen Grundbaueinheit. Ein Team unter der Leitung von Carlos Portela und Albert-László Barabási stellte einen alternativen Ansatz vor, der von biologischen Netzwerken wie Blattadern und Libellenflügeln inspiriert ist {source}. Diese skalenreichen Metamaterialien verwenden miteinander verbundene Trägerbalken unterschiedlicher Größe anstelle von einheitlichen Einheitszellen.",
+      "heading_es": "Inspiración natural",
+      "body_es": "Tradicionalmente, los ingenieros diseñan metamateriales sintéticos repitiendo una única unidad constructiva básica. Un equipo dirigido por Carlos Portela y Albert-László Barabási introdujo un enfoque alternativo inspirado en redes biológicas como las venas de las hojas y las alas de las libélulas {source}. Estos metamateriales ricos en escalas utilizan vigas de soporte interconectadas de diferentes tamaños en lugar de celdas unitarias uniformes."
+    },
+    {
+      "heading_en": "Algorithmic Design",
+      "heading_vi": "Thiết kế bằng thuật toán",
+      "body_en": "The researchers developed an algorithm to generate physical network geometries with variable line thicknesses. By tuning parameters that control how quickly line dimensions decrease during generation, the team produced diverse microstructures. Subsequent physical testing demonstrated that these disordered networks distribute damage more efficiently than conventional periodic designs.",
+      "body_vi": "Các nhà nghiên cứu phát triển một thuật toán để tạo ra hình học mạng lưới vật lý với độ dày đường nét biến đổi. Bằng cách điều chỉnh các thông số kiểm soát tốc độ giảm kích thước đường trong quá trình tạo, nhóm đã sản xuất ra nhiều cấu trúc vi mô đa dạng. Thử nghiệm vật lý sau đó chứng minh các mạng lưới hỗn loạn này phân tán thiệt hại hiệu quả hơn các thiết kế định kỳ thông thường.",
+      "heading_fr": "Conception algorithmique",
+      "body_fr": "Les chercheurs ont développé un algorithme pour générer des géométries de réseaux physiques avec des épaisseurs de lignes variables. En ajustant les paramètres qui contrôlent la rapidité avec laquelle les dimensions des lignes diminuent lors de la génération, l'équipe a produit diverses microstructures. Des tests physiques ultérieurs ont démontré que ces réseaux désordonnés répartissent les dommages plus efficacement que les conceptions périodiques conventionnelles.",
+      "heading_de": "Algorithmiches Design",
+      "body_de": "Die Forscher entwickelten einen Algorithmus zur Erzeugung physischer Netzwerkgeometrien mit variablen Linienstärken. Durch die Abstimmung von Parametern, die steuern, wie schnell die Linienabmessungen während der Generierung abnehmen, produzierte das Team verschiedene Mikrostrukturen. Nachfolgende physikalische Tests zeigten, dass diese ungeordneten Netzwerke Schäden effizienter verteilen als herkömmliche periodische Designs.",
+      "heading_es": "Diseño algorítmico",
+      "body_es": "Los investigadores desarrollaron un algoritmo para generar geometrías de redes físicas con grosores de línea variables. Al ajustar los parámetros que controlan la rapidez con la que disminuyen las dimensiones de las líneas durante la generación, el equipo produjo diversas microestructuras. Las pruebas físicas posteriores demostraron que estas redes desordenadas distribuyen los daños de forma más eficiente que los diseños periódicos convencionales."
+    },
+    {
+      "heading_en": "Impact Resistance",
+      "heading_vi": "Khả năng chống va đập",
+      "body_en": "When subjected to dropping weights and compression tests, the networked polymer samples absorbed energy exceptionally well. If one specific region experienced deformation, surrounding structural webs prevented catastrophic failure across the entire sample. This architecture successfully cushioned fragile objects embedded securely at the center.",
+      "body_vi": "Khi chịu các thử nghiệm thả vật nặng và nén, các mẫu polymer dạng mạng lưới hấp thụ năng lượng cực kỳ tốt. Nếu một vùng cụ thể chịu biến dạng, các mạng lưới cấu trúc xung quanh sẽ ngăn chặn sự hỏng hóc lan rộng trên toàn bộ mẫu. Kiến trúc này bảo vệ thành công các vật thể dễ vỡ được đặt an toàn ở trung tâm.",
+      "heading_fr": "Résistance aux impacts",
+      "body_fr": "Lorsqu'ils ont été soumis à des tests de chute de poids et de compression, les échantillons de polymères en réseau ont exceptionnellement bien absorbé l'énergie. Si une région spécifique subissait une déformation, les toiles structurelles environnantes empêchaient une défaillance catastrophique dans l'ensemble de l'échantillon. Cette architecture a amorti avec succès des objets fragiles insérés solidement en son centre.",
+      "heading_de": "Stoßfestigkeit",
+      "body_de": "Bei Fallgewichts- und Kompressionstests absorbierten die vernetzten Polymerproben Energie außergewöhnlich gut. Wenn ein bestimmter Bereich eine Verformung erfuhr, verhinderten umliegende Strukturstege ein katastrophales Versagen der gesamten Probe. Diese Architektur polsterte zerbrechliche Gegenstände, die sicher in der Mitte eingebettet waren, erfolgreich ab.",
+      "heading_es": "Resistencia al impacto",
+      "body_es": "Al someterse a pruebas de caída de pesos y compresión, las muestras de polímeros en red absorbieron energía de forma excepcional. Si una región específica sufría deformación, las mallas estructurales circundantes evitaban un fallo catastrófico en toda la muestra. Esta arquitectura amortiguó con éxito objetos frágiles incrustados de forma segura en el centro."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/engineers-design-stronger-resilient-nature-inspired-metamaterials-1111"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1659974708151-e90f42518dd0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1659974708151-e90f42518dd0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Resource Database",
+    "authorUrl": "https://unsplash.com/@resourcedatabase?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/F_z2cHsOXnM",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/F_z2cHsOXnM/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795405973/pagemoor/covers/engineers-build-stronger-materials-with-disordered-networks-5373.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795405974/pagemoor/covers/engineers-build-stronger-materials-with-disordered-networks-5373-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-5373/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Jennifer Chu | MIT News"
+    ],
+    "originalTitle": "Inspired by networks found in nature, engineers design stronger, more resilient “metamaterials”",
+    "originalUrl": "https://news.mit.edu/2026/engineers-design-stronger-resilient-nature-inspired-metamaterials-1111",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify a component that currently fails under localized stress in your design.",
+      "Replace uniform repeating patterns with variable intersecting support elements.",
+      "Test the modified structure against sudden impact to observe energy distribution."
+    ],
+    "vi": [
+      "Xác định một linh kiện hiện đang hỏng dưới ứng suất cục bộ trong thiết kế của bạn.",
+      "Thay thế các mẫu lặp lại đồng nhất bằng các phần tử hỗ trợ giao nhau biến đổi.",
+      "Kiểm tra cấu trúc đã chỉnh sửa trước tác động đột ngột để quan sát sự phân bố năng lượng."
+    ],
+    "fr": [
+      "Identifiez un composant qui cède actuellement sous une contrainte localisée dans votre conception.",
+      "Remplacez les motifs répétitifs uniformes par des éléments de support variables et sécants.",
+      "Testez la structure modifiée face à un impact soudain pour observer la distribution de l'énergie."
+    ],
+    "de": [
+      "Identifiziere eine Komponente, die in deinem Design derzeit bei lokalisierter Belastung versagt.",
+      "Ersetze gleichförmige, sich wiederholende Muster durch variable, sich kreuzende Stützelemente.",
+      "Teste die modifizierte Struktur gegen plötzliche Stöße, um die Energieverteilung zu beobachten."
+    ],
+    "es": [
+      "Identifica un componente que actualmente falle bajo estrés localizado en tu diseño.",
+      "Reemplaza los patrones repetitivos uniformes por elementos de soporte variables que se crucen.",
+      "Prueba la estructura modificada contra impactos repentinos para observar la distribución de energía."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1659974708151-e90f42518dd0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1659974708151-e90f42518dd0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Resource Database",
+      "authorUrl": "https://unsplash.com/@resourcedatabase?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/F_z2cHsOXnM",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/F_z2cHsOXnM/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OHx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1677138963397-fa2d54dd1f2f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1677138963397-fa2d54dd1f2f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/gjKJclE5Shk",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/gjKJclE5Shk/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1676836957195-eea3d257713c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1676836957195-eea3d257713c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/-JKIOby9C-k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/-JKIOby9C-k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1673245886452-cd1192862de2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1673245886452-cd1192862de2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "TSD Studio",
+      "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/1f97uj7Pltw",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/1f97uj7Pltw/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8RW5naW5lZXJzJTIwYnVpbGQlMjBzdHJvbmdlciUyMG1hdGVyaWFscyUyMHdpdGglMjBkaXNvcmRlcmVkJTIwbmV0d29ya3MlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTU0MDU4NTB8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAADwAwCdASoQABwAPu1iqk2ppaQiMAgBMB2JaQAD4coMTX8DVhOXqJAAAP7vvA/L2PsqGM+jhbPTblVk9YWbfY4+kEvzOHmbG1Osh9RIhI1ENZkIK9uOCNZHKd+JOT08ORgKs1WYJ7wVmFbDkrn8612tL7MJTm3u+728yzcBXsz3rpXfX/7UeHDpaMvaobdvX56oIs09bUYcn8eR8vUBlpyZdp4mm4N8QAA=",
+  "dominant": "#7f7f7f",
+  "glossary": {
+    "en": {
+      "metamaterials": "Synthetic materials engineered to have properties not typically found in nature.",
+      "carlos portela": "Lead researcher from MIT working on advanced structural materials.",
+      "albert-lászló barabási": "Researcher collaborating on the development of scale-rich metamaterials.",
+      "scale-rich metamaterials": "Advanced structures using interconnected support beams of varying sizes.",
+      "algorithm": "A set of rules used to generate physical network geometries.",
+      "microstructures": "The very small internal structural features of the synthetic materials.",
+      "periodic designs": "Conventional designs repeating a single basic building unit uniformly.",
+      "polymer": "A substance composed of large molecules used for testing network samples.",
+      "deformation": "A change in shape caused by external stress or pressure.",
+      "catastrophic failure": "Complete and sudden structural collapse of the entire material sample."
+    },
+    "vi": {
+      "metamaterials": "Vật liệu nhân tạo được thiết kế có tính chất đặc biệt không tìm thấy trong tự nhiên.",
+      "scale-rich metamaterials": "Vật liệu siêu cấu trúc giàu quy mô sử dụng các thành phần kích thước khác nhau.",
+      "mit": "Viện Công nghệ Massachusetts, một trường đại học hàng đầu về kỹ thuật và công nghệ.",
+      "polymer": "Chất dẻo gồm các phân tử lớn gắn kết với nhau.",
+      "thuật toán": "Tập hợp các bước có logic để máy tính thực hiện tính toán hoặc giải quyết vấn đề.",
+      "cấu trúc vi mô": "Cấu trúc chi tiết bên trong vật liệu chỉ nhìn thấy được ở kích thước rất nhỏ.",
+      "ứng suất": "Lực tác dụng trên một đơn vị diện tích gây ra biến dạng vật liệu.",
+      "biến dạng": "Sự thay đổi hình dáng hoặc kích thước của vật thể dưới tác dụng của lực."
+    },
+    "fr": {
+      "métamatériaux": "Matériaux artificiels dotés de propriétés absentes dans la nature, conçus pour manipuler les ondes ou les forces.",
+      "réseaux": "Structures composées d'éléments interconnectés formant une toile de soutien.",
+      "microstructures": "Arrangements internes à très petite échelle qui déterminent les propriétés globales d'un matériau.",
+      "algorithme": "Suite d'instructions informatiques permettant de résoudre un problème ou de générer des données.",
+      "polymères": "Matériaux composés de grandes molécules formées par l'enchaînement de sous-unités.",
+      "déformation": "Modification de la forme d'un objet sous l'effet d'une force extérieure.",
+      "architecture": "Organisation structurelle et agencement des composants d'un système.",
+      "contrainte": "Force interne exercée par unité de surface au sein d'un matériau soumis à une charge."
+    },
+    "de": {
+      "metamaterialien": "Künstlich hergestellte Materialien mit maßgeschneiderten physikalischen Eigenschaften.",
+      "carlos portela": "Wissenschaftler und Leiter des Forschungsteams.",
+      "albert-lászló barabási": "Mitglied des forschenden Wissenschaftler-Teams.",
+      "trägerbalken": "Strukturelle Bauelemente zur Lastenverteilung in Netzwerken.",
+      "einheitszellen": "Sich wiederholende Grundbaueinheiten in traditionellen Materialien.",
+      "algorithmus": "Rechenvorschrift zur automatisierten Erzeugung von Geometrien.",
+      "mikrostrukturen": "Fein strukturierte innere Aufbauten von Materialien.",
+      "polymerproben": "Probestücke aus künstlichen Kunststoff-Materialien.",
+      "kompressionstests": "Prüfungen der Materialfestigkeit unter hohem Druck.",
+      "strukturstege": "Verbindende Elemente innerhalb des stützenden Netzwerks."
+    },
+    "es": {
+      "metamateriales": "Materiales artificiales diseñados con propiedades que no se encuentran en la naturaleza.",
+      "celdas unitarias": "Unidades estructurales básicas que se repiten para formar una red cristalina.",
+      "algoritmo": "Conjunto de instrucciones detalladas para resolver un problema mediante un ordenador.",
+      "microestructuras": "Estructuras a escala microscópica que componen la arquitectura interna de un material.",
+      "polímeros": "Compuestos químicos formados por macromoléculas unidas mediante enlaces covalentes.",
+      "deformación": "Cambio en la forma o tamaño de un objeto debido a fuerzas externas.",
+      "arquitectura": "Disposición y diseño estructural de los componentes internos de un material.",
+      "componente": "Parte elemental que forma parte de un sistema o diseño más grande."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-23T03:29:11.175Z"
+}

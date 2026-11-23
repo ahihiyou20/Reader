@@ -1,0 +1,246 @@
+{
+  "slug": "researchers-find-what-makes-networks-unbreakable",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=researchers-find-what-makes-networks-unbreakable",
+  "category": "technology",
+  "tags": [
+    "networks",
+    "algorithms",
+    "computers",
+    "theory"
+  ],
+  "title": {
+    "en": "Researchers Find What Makes Networks Unbreakable",
+    "vi": "Các nhà nghiên cứu tìm ra yếu tố giúp mạng máy tính bền vững hoàn hảo",
+    "fr": "Des chercheurs découvrent ce qui rend les réseaux incassables",
+    "de": "Forscher finden heraus, was Netzwerke ausbruchssicher macht",
+    "es": "Investigadores descubren qué hace que las redes sean inquebrantables"
+  },
+  "hook": {
+    "en": "Computer networks must withstand constant link failures without global coordination. For over ten years, scientists sought to understand which network designs permit flawless packet delivery {source}. Now, two researchers have proved that [p:four minimal structures] prevent this property, resolving a long-standing question in computer science.",
+    "vi": "Mạng máy tính phải chịu được tình trạng đứt kết nối liên tục mà không cần điều phối toàn cục. Trong hơn mười năm, các nhà khoa học đã tìm cách hiểu thiết kế mạng nào cho phép truyền gói tin hoàn hảo {source}. Giờ đây, hai nhà nghiên cứu đã chứng minh rằng [p:bốn cấu trúc tối thiểu] ngăn cản đặc tính này, giải quyết một câu hỏi lâu năm trong khoa học máy tính.",
+    "fr": "Les réseaux informatiques doivent tolérer des pannes de liens constantes sans coordination globale. Pendant plus de dix ans, des scientifiques ont cherché à comprendre quelles conceptions de réseau permettent une livraison de paquets irréprochable {source}. Aujourd'hui, deux chercheurs ont prouvé que [p:quatre structures minimales] empêchent cette propriété, résolvant ainsi une question de longue date en informatique.",
+    "de": "Computernetzwerke müssen ständigen Verbindungsausfällen ohne globale Koordination standhalten. Seit über zehn Jahren versuchten Wissenschaftler zu verstehen, welche Netzwerkdesigns eine fehlerfreie Paketzustellung ermöglichen {source}. Nun haben zwei Forscher bewiesen, dass [p:vier minimale Strukturen] diese Eigenschaft verhindern, womit eine langjährige Frage der Informatik gelöst ist.",
+    "es": "Las redes informáticas deben soportar fallos constantes de enlaces sin coordinación global. Durante más de diez años, los científicos buscaron comprender qué diseños de red permiten la entrega impecable de paquetes {source}. Ahora, dos investigadores han demostrado que [p:cuatro estructuras mínimas] impiden esta propiedad, resolviendo una pregunta de larga data en la informática."
+  },
+  "sections": [
+    {
+      "heading_en": "Local Rules",
+      "heading_vi": "Quy tắc cục bộ",
+      "body_en": "Routers must direct data packets in a fraction of a millisecond. They cannot calculate paths across the entire network in real time. Instead, each device relies only on local information, such as the status of links to immediate neighbors. This restriction creates a risk of packets getting trapped in endless loops.",
+      "body_vi": "Các bộ định tuyến phải điều hướng các gói dữ liệu trong phần nghìn giây. Chúng không thể tính toán đường đi trên toàn bộ mạng trong thời gian thực. Thay vào đó, mỗi thiết bị chỉ dựa vào thông tin cục bộ, chẳng hạn như trạng thái liên kết với các hàng xóm trực tiếp. Hạn chế này tạo ra nguy cơ các gói tin bị kẹt trong vòng lặp vô tận.",
+      "heading_fr": "Règles locales",
+      "body_fr": "Les routeurs doivent acheminer les paquets de données en une fraction de milliseconde. Ils ne peuvent pas calculer de chemins à travers tout le réseau en temps réel. Chaque appareil s'appuie donc uniquement sur des informations locales, telles que l'état des liens vers ses voisins immédiats. Cette restriction crée un risque de voir les paquets piégés dans des boucles sans fin.",
+      "heading_de": "Lokale Regeln",
+      "body_de": "Router müssen Datenpakete in Bruchteilen einer Millisekunde weiterleiten. Sie können nicht in Echtzeit Pfade über das gesamte Netzwerk berechnen. Stattdessen verlässt sich jedes Gerät nur auf lokale Informationen, wie etwa den Status von Verbindungen zu direkten Nachbarn. Diese Einschränkung birgt das Risiko, dass sich Pakete in endlosen Schleifen verfangen.",
+      "heading_es": "Reglas locales",
+      "body_es": "Los enrutadores deben dirigir paquetes de datos en una fracción de milisegundo. No pueden calcular rutas en toda la red en tiempo real. En su lugar, cada dispositivo depende únicamente de información local, como el estado de los enlaces con los vecinos inmediatos. Esta restricción crea el riesgo de que los paquetes queden atrapados en bucles interminables."
+    },
+    {
+      "heading_en": "Graph Minors",
+      "heading_vi": "Đồ thị con nhỏ",
+      "body_en": "In 2020, Stefan Schmid and his colleagues connected the problem to a mathematical topic called the theory of graph minors. Researchers model networks as graphs. They simplify graphs by deleting nodes, deleting edges, or merging connected nodes to study their underlying structural properties.",
+      "body_vi": "Vào năm 2020, Stefan Schmid và các đồng nghiệp đã liên kết vấn đề này với một chủ đề toán học gọi là lý thuyết đồ thị con nhỏ (*theory of graph minors*). Các nhà nghiên cứu mô hình hóa các mạng lưới dưới dạng đồ thị. Họ đơn giản hóa đồ thị bằng cách xóa các nút, xóa cạnh hoặc hợp nhất các nút được kết nối để nghiên cứu các đặc tính cấu trúc cơ bản của chúng.",
+      "heading_fr": "Mineurs de graphes",
+      "body_fr": "En 2020, Stefan Schmid et ses collègues ont relié le problème à un domaine mathématique appelé la théorie des mineurs de graphes. Les chercheurs modélisent les réseaux sous forme de graphes. Ils simplifient ces graphes en supprimant des nœuds, des arêtes ou en fusionnant des nœuds connectés pour étudier leurs propriétés structurelles fondamentales.",
+      "heading_de": "Graphminoren",
+      "body_de": "Im Jahr 2020 verknüpften Stefan Schmid und seine Kollegen das Problem mit einem mathematischen Thema namens Graphminor-Theorie. Forscher modellieren Netzwerke als Graphen. Sie vereinfachen Graphen, indem sie Knoten löschen, Kanten löschen oder verbundene Knoten zusammenführen, um deren zugrundeliegende strukturelle Eigenschaften zu untersuchen.",
+      "heading_es": "Menores de grafos",
+      "body_es": "En 2020, Stefan Schmid y sus colegas conectaron el problema con un tema matemático llamado la teoría de menores de grafos. Los investigadores modelan las redes como grafos. Simplifican los grafos eliminando nodos, eliminando aristas o fusionando nodos conectados para estudiar sus propiedades estructurales subyacentes."
+    },
+    {
+      "heading_en": "Four Forbidden Structures",
+      "heading_vi": "Bốn cấu trúc bị cấm",
+      "body_en": "In a paper presented at the Symposium on Theory of Computing in June 2026, researchers proved that exactly four minimal network structures thwart perfect resilience. Networks lacking these four structures can always achieve reliable packet delivery, regardless of link failures.",
+      "body_vi": "Trong một bài báo trình bày tại Hội nghị Chuyên đề về Lý thuyết Điện toán vào tháng 6 năm 2026, các nhà nghiên cứu đã chứng minh rằng đúng bốn cấu trúc mạng tối thiểu cản trở tính bền vững hoàn hảo. Các mạng thiếu bốn cấu trúc này luôn có thể đạt được việc phân phối gói tin đáng tin cậy, bất kể lỗi liên kết.",
+      "heading_fr": "Quatre structures interdites",
+      "body_fr": "Dans un article présenté au Symposium sur la théorie de l'informatique en juin 2026, des chercheurs ont prouvé que exactement quatre structures de réseau minimales empêchent une résilience parfaite. Les réseaux dépourvus de ces quatre structures peuvent toujours garantir une livraison fiable des paquets, quelles que soient les pannes de liens.",
+      "heading_de": "Vier verbotene Strukturen",
+      "body_de": "In einem im Juni 2026 auf dem Symposium on Theory of Computing vorgestellten Papier bewiesen Forscher, dass exakt vier minimale Netzwerkstrukturen eine perfekte Ausfallsicherheit verhindern. Netzwerke, denen diese vier Strukturen fehlen, können immer eine zuverlässige Paketzustellung erreichen, ungeachtet von Verbindungsausfällen.",
+      "heading_es": "Cuatro estructuras prohibidas",
+      "body_es": "En un artículo presentado en el Simposio sobre la Teoría de la Computación en junio de 2026, los investigadores demostraron que exactamente cuatro estructuras de red mínimas frustran la resiliencia perfecta. Las redes que carecen de estas cuatro estructuras siempre pueden lograr una entrega confiable de paquetes, independientemente de los fallos de los enlaces."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Quanta Magazine (2026)",
+      "url": "https://www.quantamagazine.org/network-researchers-nail-down-theory-of-perfect-resilience-20261120"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1664854953181-b12e6dda8b7c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1664854953181-b12e6dda8b7c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Resource Database",
+    "authorUrl": "https://unsplash.com/@resourcedatabase?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/TIUyoNGM0no",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/TIUyoNGM0no/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234465/pagemoor/covers/researchers-find-what-makes-networks-unbreakable-14900.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795234465/pagemoor/covers/researchers-find-what-makes-networks-unbreakable-14900-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-14900/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Ben Brubaker November 20",
+      "2026"
+    ],
+    "originalTitle": "Network Researchers Nail Down Theory of ‘Perfect Resilience’",
+    "originalUrl": "https://www.quantamagazine.org/network-researchers-nail-down-theory-of-perfect-resilience-20261120",
+    "publisher": "Quanta Magazine",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify a local network bottleneck in your home or office setup.",
+      "Restart your primary router to clear active routing loops.",
+      "Test connection speeds across different immediate neighbor devices."
+    ],
+    "vi": [
+      "Xác định một nút thắt cổ chai mạng cục bộ trong thiết lập gia đình hoặc văn phòng của bạn.",
+      "Khởi động lại bộ định tuyến chính của bạn để xóa các vòng lặp định tuyến đang hoạt động.",
+      "Kiểm tra tốc độ kết nối trên các thiết bị lân cận trực tiếp khác nhau."
+    ],
+    "fr": [
+      "Identifiez un goulet d'étranglement réseau local dans votre installation domestique ou professionnelle.",
+      "Redémarrez votre routeur principal pour effacer les boucles de routage actives.",
+      "Testez les vitesses de connexion entre différents appareils voisins immédiats."
+    ],
+    "de": [
+      "Identifiziere einen lokalen Netzwerk-Engpass in deinem Heim- oder Büro-Setup.",
+      "Starte deinen Hauptrouter neu, um aktive Routing-Schleifen zu bereinigen.",
+      "Teste die Verbindungsgeschwindigkeiten über verschiedene direkte Nachbargeräte hinweg"
+    ],
+    "es": [
+      "Identifique un cuello de botella en la red local de su hogar u oficina.",
+      "Reinicie su enrutador principal para borrar los bucles de enrutamiento activos.",
+      "Pruebe las velocidades de conexión en diferentes dispositivos vecinos inmediatos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1664854953181-b12e6dda8b7c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1664854953181-b12e6dda8b7c?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Resource Database",
+      "authorUrl": "https://unsplash.com/@resourcedatabase?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/TIUyoNGM0no",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/TIUyoNGM0no/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1659974708151-e90f42518dd0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFJlc2VhcmNoZXJzJTIwRmluZCUyMFdoYXQlMjBNYWtlcyUyME5ldHdvcmtzJTIwVW5icmVha2FibGUlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUyMzM1NjF8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1659974708151-e90f42518dd0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFJlc2VhcmNoZXJzJTIwRmluZCUyMFdoYXQlMjBNYWtlcyUyME5ldHdvcmtzJTIwVW5icmVha2FibGUlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUyMzM1NjF8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Resource Database",
+      "authorUrl": "https://unsplash.com/@resourcedatabase?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/F_z2cHsOXnM",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/F_z2cHsOXnM/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fFJlc2VhcmNoZXJzJTIwRmluZCUyMFdoYXQlMjBNYWtlcyUyME5ldHdvcmtzJTIwVW5icmVha2FibGUlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUyMzM1NjF8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1653549893012-b8b4fbe97630?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1653549893012-b8b4fbe97630?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Enis Can Ceyhan",
+      "authorUrl": "https://unsplash.com/@enisvisuals?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/vDTeJabev7c",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/vDTeJabev7c/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1624965439943-09e0238644e2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1624965439943-09e0238644e2?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Patrick Turner",
+      "authorUrl": "https://unsplash.com/@redgreenblue?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/YEoF12PgTtQ",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/YEoF12PgTtQ/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8UmVzZWFyY2hlcnMlMjBGaW5kJTIwV2hhdCUyME1ha2VzJTIwTmV0d29ya3MlMjBVbmJyZWFrYWJsZSUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTIzMzU2MXww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JaQAD5RIR+88cHtOfLZZv76YAAP70Knj2JHyOgxEF3xNonmQjF1YgyxDiEKL0+SPdxIy8xSpFwVS5phGtcCl9lJEe6YhZrp5tsVG7AA1Cd7NlxUHChTzvFepTxREU8Ne649GRPb5QAAAA",
+  "dominant": "#121212",
+  "glossary": {
+    "en": {
+      "packet": "A unit of data routed between an origin and a destination on the internet or any packet-switched network.",
+      "router": "A networking device that forwards data packets between computer networks.",
+      "millisecond": "One thousandth of a second, used to measure extremely fast computer processing times.",
+      "graph minors": "A subfield of mathematics studying graphs formed by deleting nodes or edges from a larger graph.",
+      "nodes": "Fundamental units or intersection points in a network graph representing devices or computers.",
+      "edges": "Connections or links between nodes within a graph representing communication pathways.",
+      "resilience": "The capacity of a computer network to recover from failures and maintain continuous service.",
+      "symposium on theory of computing": "An academic conference covering theoretical computer science research and discoveries."
+    },
+    "vi": {
+      "bộ định tuyến": "Thiết bị phần cứng chuyển tiếp các gói dữ liệu giữa các mạng máy tính khác nhau.",
+      "gói dữ liệu": "Đơn vị dữ liệu cơ bản được định dạng để truyền qua mạng máy tính.",
+      "thông tin cục bộ": "Dữ liệu hạn chế chỉ có sẵn tại một thiết bị hoặc nút mạng cụ thể.",
+      "vòng lặp vô tận": "Tình trạng các gói tin luân chuyển mãi giữa các thiết bị mà không tới đích.",
+      "đồ thị con nhỏ": "Khái niệm toán học nghiên cứu cấu trúc mạng bằng cách loại bỏ bớt nút và cạnh.",
+      "lý thuyết đồ thị": "Nhánh toán học nghiên cứu các mối quan hệ thông qua các nút và cạnh nối liền.",
+      "cấu trúc tối thiểu": "Hình thái cơ bản nhỏ nhất gây ra một đặc tính cụ thể trong mạng lưới.",
+      "lỗi liên kết": "Sự cố đứt gãy hoặc mất kết nối giữa các đường truyền trong mạng."
+    },
+    "fr": {
+      "réseaux informatiques": "Ensembles d'appareils interconnectés pour échanger des données.",
+      "paquets": "Blocs de données transmis sur un réseau informatique.",
+      "routeurs": "Appareils qui dirigent les paquets de données entre les réseaux.",
+      "liens": "Connexions de communication entre les différents appareils du réseau.",
+      "boucles": "Circuits fermés où les paquets tournent sans fin.",
+      "théorie des mineurs de graphes": "Branche des mathématiques étudiant les structures de graphes.",
+      "graphes": "Modèles mathématiques formés de nœuds et d'arêtes.",
+      "nœuds": "Points de connexion fondamentaux au sein d'un graphe.",
+      "arêtes": "Lignes reliant les nœuds dans un graphe mathématique.",
+      "symposium sur la théorie de l'informatique": "Conférence scientifique internationale dédiée à l'informatique théorique."
+    },
+    "de": {
+      "paketzustellung": "Das Übertragen von Datenpaketen von einem Sender zum Empfänger im Netzwerk.",
+      "routing-schleifen": "Fehlerhafte Pfade, bei denen Datenpakete endlos im Kreis geleitet werden.",
+      "graphminor-theorie": "Mathematischer Teilbereich zur Untersuchung von Strukturmustern durch Vereinfachung von Graphen.",
+      "knoten": "Verbindungspunkte in einem als Graph dargestellten Computernetzwerk.",
+      "ausfallsicherheit": "Fähigkeit eines Netzwerks, trotz technischer Defekte fehlerfrei zu funktionieren.",
+      "engpass": "Eine Stelle im Netzwerk mit reduzierter Leistungsfähigkeit oder Überlastung.",
+      "netzwerkdesigns": "Die architektonische Struktur und Verschaltung von Geräten in einem Netzwerk.",
+      "nachbargeräte": "Direkt miteinander verbundene Geräte ohne dazwischenliegende Router."
+    },
+    "es": {
+      "enrutadores": "Dispositivos que dirigen el tráfico de datos entre diferentes redes informáticas.",
+      "paquetes": "Bloques de datos formateados para su transmisión a través de una red.",
+      "grafos": "Estructuras matemáticas compuestas por nodos y aristas para representar relaciones.",
+      "nodos": "Puntos de intersección o conexión dentro de una red o grafo.",
+      "aristas": "Líneas que conectan los nodos en una representación gráfica.",
+      "resiliencia": "Capacidad de un sistema para resistir y recuperarse de fallos.",
+      "stefan schmid": "Investigador destacado en el estudio de la teoría de redes.",
+      "simposio": "Conferencia académica donde se presentan importantes avances científicos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-21T03:58:40.341Z"
+}

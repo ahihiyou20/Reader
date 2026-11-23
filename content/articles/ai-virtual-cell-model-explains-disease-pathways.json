@@ -1,0 +1,240 @@
+{
+  "slug": "ai-virtual-cell-model-explains-disease-pathways",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=ai-virtual-cell-model-explains-disease-pathways",
+  "category": "technology",
+  "tags": [
+    "artificial intelligence",
+    "cell biology",
+    "drug discovery",
+    "genetics"
+  ],
+  "title": {
+    "en": "AI Virtual Cell Model Explains Disease Pathways",
+    "vi": "Mô hình tế bào ảo AI giải thích cơ chế bệnh lý",
+    "fr": "Un modèle de cellule virtuelle de l'IA explique les mécanismes des maladies",
+    "de": "KI-Modell einer virtuellen Zelle erklärt Krankheitswege",
+    "es": "Un modelo de célula virtual de IA explica las vías de las enfermedades"
+  },
+  "hook": {
+    "en": "Current artificial intelligence predicts disease risks from genetic mutations, but fails to explain the underlying causes or treatment designs. Researchers at Texas A&M University have developed a new system to trace how drugs and genes alter cellular networks, paving the way for targeted therapies and personalized medicine.",
+    "vi": "Trí tuệ nhân tạo hiện tại dự đoán nguy cơ bệnh từ các đột biến gen, nhưng không giải thích được nguyên nhân cốt lõi hay cách thiết kế điều trị. Các nhà nghiên cứu tại Đại học Texas A&M đã phát triển một hệ thống mới để theo dõi cách thuốc và gen làm thay đổi mạng lưới tế bào, mở đường cho các liệu pháp điều trị trúng đích và y học cá nhân hóa.",
+    "fr": "L'intelligence artificielle actuelle prédit les risques de maladie à partir de mutations génétiques, mais n'explique pas les causes sous-jacentes ni la conception des traitements. Des chercheurs de l'Université Texas A&M ont développé un nouveau système pour tracer la manière dont les médicaments et les gènes altèrent les réseaux cellulaires, ouvrant la voie à des thérapies ciblées et à la médecine personnalisée.",
+    "de": "Aktuelle künstliche Intelligenz sagt Krankheitsrisiken aufgrund genetischer Mutationen voraus, erklärt jedoch weder die zugrunde liegenden Ursachen noch das Design von Behandlungen. Forscher der Texas A&M University haben ein neues System entwickelt, um nachzuvollziehen, wie Medikamente und Gene zelluläre Netzwerke verändern, was den Weg für zielgerichtete Therapien und personalisierte Medizin ebnet.",
+    "es": "La inteligencia artificial actual predice los riesgos de enfermedad a partir de mutaciones genéticas, pero no logra explicar las causas subyacentes ni el diseño de tratamientos. Investigadores de la Universidad A&M de Texas han desarrollado un nuevo sistema para rastrear cómo los fármacos y los genes alteran las redes celulares, abriendo el camino hacia terapias dirigidas y medicina personalizada."
+  },
+  "sections": [
+    {
+      "heading_en": "Tracing Cellular Changes",
+      "heading_vi": "Theo dõi thay đổi tế bào",
+      "body_en": "Led by Dr. Yang Shen, the team created a model named PertReason {source} that evaluates cellular responses to genetic alterations and medications. Traditional methods focus on individual molecules like proteins, but this approach tracks entire genetic cellular networks to uncover disease mechanisms. The paper has been accepted for presentation at the Conference on Neural Information Processing Systems.",
+      "body_vi": "Dưới sự dẫn dắt của Tiến sĩ Yang Shen, nhóm nghiên cứu đã tạo ra một mô hình mang tên PertReason {source} để đánh giá phản ứng của tế bào đối với các biến đổi di truyền và dược phẩm. Các phương pháp truyền thống tập trung vào các phân tử riêng lẻ như protein, nhưng cách tiếp cận này theo dõi toàn bộ mạng lưới tế bào di truyền để làm sáng tỏ cơ chế bệnh. Bài nghiên cứu đã được chấp nhận trình bày tại Hội nghị về Hệ thống Xử lý Thông tin Nơ-ron (*Conference on Neural Information Processing Systems*).",
+      "heading_fr": "Traçage des changements cellulaires",
+      "body_fr": "Dirigée par le Dr Yang Shen, l'équipe a créé un modèle nommé PertReason {source} qui évalue les réponses cellulaires aux altérations génétiques et aux médicaments. Les méthodes traditionnelles se concentrent sur des molécules individuelles comme les protéines, mais cette approche suit des réseaux cellulaires génétiques entiers pour découvrir les mécanismes des maladies. L'article a été accepté pour présentation à la Conference on Neural Information Processing Systems.",
+      "heading_de": "Zelluläre Veränderungen nachvollziehen",
+      "body_de": "Unter der Leitung von Dr. Yang Shen hat das Team ein Modell namens PertReason {source} entwickelt, das zelluläre Reaktionen auf genetische Veränderungen und Medikamente bewertet. Herkömmliche Methoden konzentrieren sich auf einzelne Moleküle wie Proteine, aber dieser Ansatz verfolgt ganze genetische zelluläre Netzwerke, um Krankheitsmechanismen aufzudecken. Die Arbeit wurde zur Präsentation auf der Konferenz über neuronale Informationsverarbeitungssysteme angenommen.",
+      "heading_es": "Rastreo de cambios celulares",
+      "body_es": "Bajo la dirección del Dr. Yang Shen, el equipo creó un modelo llamado PertReason {source} que evalúa las respuestas celulares a las alteraciones genéticas y a los medicamentos. Los métodos tradicionales se enfocan en moléculas individuales como las proteínas, pero este enfoque rastrea redes celulares genéticas completas para descubrir los mecanismos de las enfermedades. El artículo ha sido aceptado para su presentación en la Conferencia sobre Sistemas de Procesamiento de Información Neural."
+    },
+    {
+      "heading_en": "Verifying Model Reasoning",
+      "heading_vi": "Kiểm chứng lập luận của mô hình",
+      "body_en": "To ensure trustworthy predictions, the researchers designed a benchmark called PertReasonQA. This evaluation tool checks whether artificial intelligence models use correct data to reach their conclusions, rather than simply stumbling onto correct answers. By reasoning through biological pathways, the system helps scientists prioritize promising therapeutic targets and reduce experimental trial and error.",
+      "body_vi": "Để đảm bảo các dự đoán đáng tin cậy, các nhà nghiên cứu đã thiết kế một bộ chuẩn đánh giá gọi là PertReasonQA. Công cụ đánh giá này kiểm tra xem các mô hình trí tuệ nhân tạo có sử dụng dữ liệu chính xác để đi đến kết luận hay không, thay vì chỉ tình cờ đưa ra đáp án đúng. Bằng cách suy luận qua các con đường sinh học, hệ thống giúp các nhà khoa học ưu tiên các mục tiêu điều trị triển vọng và giảm thiểu sai sót trong thực nghiệm.",
+      "heading_fr": "Vérification du raisonnement du modèle",
+      "body_fr": "Pour garantir des prédictions fiables, les chercheurs ont conçu un banc d'essai appelé PertReasonQA. Cet outil d'évaluation vérifie si les modèles d'intelligence artificielle utilisent des données correctes pour tirer leurs conclusions, plutôt que de simplement tomber par hasard sur de bonnes réponses. En raisonnant à travers les voies biologiques, le système aide les scientifiques à prioriser des cibles thérapeutiques prometteuses et à réduire les essais et erreurs expérimentaux.",
+      "heading_de": "Modellüberlegung verifizieren",
+      "body_de": "Um vertrauenswürdige Vorhersagen sicherzustellen, entwickelten die Forscher einen Benchmark namens PertReasonQA. Dieses Evaluierungstool überprüft, ob Modelle der künstlichen Intelligenz die richtigen Daten verwenden, um zu ihren Schlussfolgerungen zu gelangen, anstatt nur zufällig auf richtige Antworten zu stoßen. Durch das Durchdenken biologischer Signalwege hilft das System Wissenschaftlern, vielversprechende therapeutische Ziele zu priorisieren und experimentelles Ausprobieren zu reduzieren.",
+      "heading_es": "Verificación del razonamiento del modelo",
+      "body_es": "Para garantizar predicciones confiables, los investigadores diseñaron una prueba de referencia llamada PertReasonQA. Esta herramienta de evaluación comprueba si los modelos de inteligencia artificial usan datos correctos para llegar a sus conclusiones, en lugar de simplemente dar con respuestas acertadas por casualidad. Al razonar a través de las vías biológicas, el sistema ayuda a los científicos a priorizar blancos terapéuticos prometedores y a reducir la prueba y error experimental."
+    },
+    {
+      "heading_en": "Towards Digital Twins",
+      "heading_vi": "Hướng tới bản sao kỹ thuật số",
+      "body_en": "Following the team's collaboration with clinical breast cancer researchers, the work aims to construct multiscale digital replicas of the human body. Utilizing the new supercomputer VISION on campus, Shen intends to advance these virtual cell technologies into personalized digital twins to support medical decision making and patient outcomes.",
+      "body_vi": "Tiếp nối sự hợp tác giữa nhóm nghiên cứu với các bác sĩ ung thư vú lâm sàng, công việc này hướng tới việc xây dựng các bản sao kỹ thuật số đa tỷ lệ của cơ thể con người. Sử dụng siêu máy tính VISION mới tại trường, Shen dự định phát triển các công nghệ tế bào ảo này thành bản sao kỹ thuật số cá nhân hóa (*digital twins*) nhằm hỗ trợ quá trình ra quyết định y tế và cải thiện kết quả điều trị cho bệnh nhân.",
+      "heading_fr": "Vers des jumeaux numériques",
+      "body_fr": "Suite à la collaboration de l'équipe avec des chercheurs cliniciens sur le cancer du sein, les travaux visent à construire des réplicas numériques multichelles du corps humain. En utilisant le nouveau superordinateur VISION sur le campus, Shen a l'intention de faire progresser ces technologies de cellules virtuelles en jumeaux numériques personnalisés pour soutenir la prise de décision médicale et les résultats des patients.",
+      "heading_de": "Auf dem Weg zu digitalen Zwillingen",
+      "body_de": "Im Anschluss an die Zusammenarbeit des Teams mit klinischen Brustkrebsforschern zielt die Arbeit darauf ab, multiskalige digitale Nachbildungen des menschlichen Körpers zu konstruieren. Unter Verwendung des neuen Supercomputers VISION auf dem Campus beabsichtigt Shen, diese virtuellen Zelltechnologien zu personalisierten digitalen Zwillingen weiterzuentwickeln, um medizinische Entscheidungen und Patientenergebnisse zu unterstützen.",
+      "heading_es": "Hacia los gemelos digitales",
+      "body_es": "Tras la colaboración del equipo con investigadores clínicos de cáncer de mama, el trabajo apunta a construir réplicas digitales multiescala del cuerpo humano. Utilizando la nueva supercomputadora VISION en el campus, Shen pretende avanzar estas tecnologías de células virtuales hacia gemelos digitales personalizados para respaldar la toma de decisiones médicas y los resultados de los pacientes."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Phys.org (2026)",
+      "url": "https://phys.org/news/2026-11-ai-virtual-cell-technology-reveal.html"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1529333623786-819aee61ae44?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1529333623786-819aee61ae44?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "David von Diemar",
+    "authorUrl": "https://unsplash.com/@davidvondiemar?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/M2i83vaw-_A",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/M2i83vaw-_A/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Amy Leifeste"
+    ],
+    "originalTitle": "AI virtual cell technology could reveal how genetic changes and drugs alter cells",
+    "originalUrl": "https://phys.org/news/2026-11-ai-virtual-cell-technology-reveal.html",
+    "publisher": "Phys.org",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review current literature on cellular network alterations caused by genetic changes.",
+      "Access preprint servers to examine the methodology behind PertReason models.",
+      "Examine biological pathways to identify promising targets for drug discovery."
+    ],
+    "vi": [
+      "Xem xét tài liệu hiện tại về các thay đổi mạng lưới tế bào do biến đổi di truyền.",
+      "Truy cập các máy chủ bản in trước để tìm hiểu phương pháp đằng sau các mô hình PertReason.",
+      "Khảo sát các con đường sinh học để xác định các mục tiêu triển vọng cho việc phát hiện thuốc."
+    ],
+    "fr": [
+      "Examiner la littérature actuelle sur les altérations des réseaux cellulaires causées par les changements génétiques.",
+      "Accéder aux serveurs de prépublications pour examiner la méthodologie derrière les modèles PertReason.",
+      "Examiner les voies biologiques pour identifier des cibles prometteuses pour la découverte de médicaments."
+    ],
+    "de": [
+      "Überprüfe aktuelle Fachliteratur zu Veränderungen zellulärer Netzwerke durch genetische Veränderungen.",
+      "Greife auf Preprint-Server zu, um die Methodik hinter PertReason-Modellen zu untersuchen.",
+      "Untersuche biologische Signalwege, um vielversprechende Ziele für die Wirkstoffforschung zu identifizieren."
+    ],
+    "es": [
+      "Revisar la literatura actual sobre las alteraciones en las redes celulares causadas por cambios genéticos.",
+      "Acceder a servidores de prepublicación para examinar la metodología detrás de los modelos PertReason.",
+      "Examinar las vías biológicas para identificar blancos prometedores en el descubrimiento de fármacos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1529333623786-819aee61ae44?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1529333623786-819aee61ae44?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "David von Diemar",
+      "authorUrl": "https://unsplash.com/@davidvondiemar?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/M2i83vaw-_A",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/M2i83vaw-_A/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1739403386250-080677ac4c53?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1739403386250-080677ac4c53?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Maxim Berg",
+      "authorUrl": "https://unsplash.com/@maxberg?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/a3g0YX3h6-M",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/a3g0YX3h6-M/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Nnx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1677138963397-fa2d54dd1f2f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1677138963397-fa2d54dd1f2f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/gjKJclE5Shk",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/gjKJclE5Shk/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1649414858381-e0fc52b6f045?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1649414858381-e0fc52b6f045?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Vincentiu Solomon",
+      "authorUrl": "https://unsplash.com/@vincentiu?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/U4uHdpJeuKo",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/U4uHdpJeuKo/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8QUklMjBWaXJ0dWFsJTIwQ2VsbCUyME1vZGVsJTIwRXhwbGFpbnMlMjBEaXNlYXNlJTIwUGF0aHdheXMlMjB0ZWNobm9sb2d5fGVufDF8MXx8fDE3OTUxNDcyNDB8MA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAABQBACdASoQABwAPu1iqU2ppaOiMAgBMB2JYwCdACHekLQrbxZg+pyu6vAAAP7ukhQmqWNLXZ92o7DZ9/h6ff/IPiauCSzHHpx2rsF6nifE0oSRcdfLwAAA",
+  "dominant": "#203436",
+  "glossary": {
+    "en": {
+      "genetic mutations": "Changes in DNA sequences that can lead to various diseases and health conditions.",
+      "cellular networks": "Complex interconnected biological systems of molecules and genes inside cells.",
+      "targeted therapies": "Medical treatments designed to treat specific molecular targets of diseases.",
+      "personalized medicine": "Medical care customized to individual patient characteristics and genetic profiles.",
+      "pertreason": "A new artificial intelligence model created to evaluate cellular responses to alterations.",
+      "disease mechanisms": "The fundamental biological processes and causes that drive the development of diseases.",
+      "pertreasonqa": "A benchmark evaluation tool designed to ensure trustworthy artificial intelligence predictions.",
+      "biological pathways": "Series of actions among molecules in a cell that lead to a specific cellular product.",
+      "therapeutic targets": "Specific cellular molecules addressed by medications to produce a desired effect.",
+      "digital twins": "Multiscale virtual replicas of the human body used for medical decisions.",
+      "supercomputer vision": "A high-performance computing resource utilized to advance virtual cell technologies."
+    },
+    "vi": {
+      "pertreason": "Mô hình trí tuệ nhân tạo dùng để đánh giá phản ứng của tế bào đối với biến đổi di truyền và dược phẩm.",
+      "pertreasonqa": "Bộ chuẩn đánh giá kiểm tra tính chính xác trong dữ liệu lập luận của các mô hình trí tuệ nhân tạo.",
+      "digital twins": "Bản sao kỹ thuật số cá nhân hóa của cơ thể con người hỗ trợ y học.",
+      "mạng lưới tế bào": "Hệ thống liên kết phức tạp gồm nhiều thành phần bên trong tế bào sinh học.",
+      "y học cá nhân hóa": "Phương pháp điều trị y tế được thiết kế riêng biệt cho từng bệnh nhân cụ thể.",
+      "đột biến gen": "Sự thay đổi trong cấu trúc vật liệu di truyền của tế bào sinh vật.",
+      "siêu máy tính": "Máy tính có năng lực tính toán và xử lý dữ liệu cực kỳ mạnh mẽ.",
+      "ung thư vú lâm sàng": "Lĩnh vực y tế thực hành chuyên điều trị bệnh ung thư vú ở người."
+    },
+    "fr": {
+      "intelligence artificielle": "Domaine scientifique visant à créer des machines capables de simuler l'intelligence humaine.",
+      "mutations génétiques": "Modifications de la séquence d'ADN qui constituent la base des variations génétiques.",
+      "réseaux cellulaires": "Ensembles d'interactions moléculaires et biochimiques régissant la vie à l'intérieur des cellules.",
+      "thérapies ciblées": "Traitements médicaux conçus pour agir spécifiquement sur des mécanismes moléculaires précis.",
+      "protéines": "Grandes biomolécules essentielles jouant un rôle central dans la structure et la fonction cellulaire.",
+      "voies biologiques": "Séries d'actions entre molécules cellulaires menant à un changement ou à un effet spécifique.",
+      "jumeaux numériques": "Répliques virtuelles dynamiques de systèmes biologiques complexes facilitant la simulation et l'analyse.",
+      "superordinateur": "Ordinateur extrêmement puissant conçu pour traiter des volumes massifs de calculs complexes."
+    },
+    "de": {
+      "pertreason": "Ein KI-Modell zur Bewertung zellulärer Reaktionen auf genetische Veränderungen und Medikamente.",
+      "pertreasonqa": "Ein Benchmark-Evaluierungstool zur Überprüfung von KI-Schlussfolgerungen.",
+      "vision": "Ein neuer Supercomputer auf dem Campus der Universität.",
+      "benchmark": "Ein standardisierter Maßstab zum Testen und Vergleichen von Leistungen.",
+      "signalwege": "Biochemische Kettenreaktionen innerhalb von Zellen.",
+      "mutationen": "Dauerhafte Veränderungen des genetischen Materials.",
+      "moleküle": "Aus Atomen zusammengesetzte Teilchen.",
+      "proteine": "Komplexe Makromoleküle aus Aminosäuren."
+    },
+    "es": {
+      "mutaciones genéticas": "Cambios en la secuencia del ADN que pueden alterar la función celular y causar enfermedades.",
+      "redes celulares": "Conjuntos complejos de interacciones moleculares dentro de una célula viva.",
+      "proteínas": "Macromoléculas esenciales formadas por aminoácidos que realizan diversas funciones biológicas.",
+      "vías biológicas": "Series de acciones entre moléculas en una célula que conducen a un resultado específico.",
+      "blancos terapéuticos": "Moléculas biológicas sobre las cuales puede actuar un medicamento para tratar una enfermedad.",
+      "gemelos digitales": "Réplicas virtuales de sistemas biológicos reales utilizadas para simulaciones y análisis.",
+      "supercomputadora": "Computadora con capacidades de cálculo muy superiores a las de uso común.",
+      "inteligencia artificial": "Simulación de procesos de inteligencia humana por parte de sistemas informáticos."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-20T03:54:08.899Z"
+}
