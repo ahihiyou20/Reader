@@ -1,0 +1,220 @@
+{
+  "slug": "ibm-quantum-computer-solves-complex-problem-in-minutes",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=ibm-quantum-computer-solves-complex-problem-in-minutes",
+  "category": "technology",
+  "tags": [
+    "quantum computing",
+    "ibm",
+    "physics"
+  ],
+  "title": {
+    "en": "IBM Quantum Computer Solves Complex Problem in Minutes",
+    "vi": "Máy tính lượng tử IBM giải quyết bài toán phức tạp trong vài phút",
+    "fr": "Un ordinateur quantique d'IBM résout un problème complexe en quelques minutes",
+    "de": "IBM-Quantencomputer löst komplexes Problem in Minuten",
+    "es": "Computadora cuántica de IBM resuelve un problema complejo en minutos"
+  },
+  "hook": {
+    "en": "An IBM quantum computer finished a highly complex task in just 15 minutes {source}, while conventional computers would need impractically long periods to simulate the calculation. Researchers also established statistical confidence in the accuracy of the output, overcoming a major obstacle in the field.",
+    "vi": "Một máy tính lượng tử của IBM đã hoàn thành một tác vụ phức tạp trong vỏn vẹn 15 phút {source}, trong khi các máy tính truyền thống cần thời gian chạy cực kỳ dài để mô phỏng phép tính này. Các nhà nghiên cứu cũng thiết lập được độ tin cậy thống kê cho kết quả đầu ra.",
+    "fr": "Un ordinateur quantique d'IBM a accompli une tâche hautement complexe en seulement 15 minutes {source}, tandis que les ordinateurs conventionnels nécessiteraient des durées imp pratiques pour simuler ce calcul. Les chercheurs ont également établi une confiance statistique dans l'exactitude du résultat, surmontant un obstacle majeur dans ce domaine.",
+    "de": "Ein IBM-Quantencomputer hat eine hochkomplexe Aufgabe in nur 15 Minuten erledigt {source}, während herkömmliche Computer unpraktisch lange Zeiträume benötigen würden, um die Berechnung zu simulieren. Forscher ermittelten zudem statistische Sicherheit für die Genauigkeit des Ergebnisses und überwanden damit ein großes Hindernis auf diesem Gebiet.",
+    "es": "Una computadora cuántica de IBM completó una tarea altamente compleja en solo 15 minutos {source}, mientras que las computadoras convencionales necesitarían periodos poco prácticos para simular el cálculo. Los investigadores también establecieron confianza estadística en la precisión del resultado, superando un obstáculo importante en el campo."
+  },
+  "sections": [
+    {
+      "heading_en": "Verifying Quantum Advantage",
+      "heading_vi": "Xác thực lợi thế lượng tử",
+      "body_en": "Led by IBM and the University of Chicago, the experiment met criteria for **quantum advantage**, occurring when a quantum computer performs a task beyond conventional capabilities while producing trustworthy results. Scientists previously struggled to verify outputs of complex circuits without relying on strong assumptions about hardware accuracy.",
+      "body_vi": "Do IBM và Đại học Chicago dẫn đầu, thí nghiệm đã đạt các tiêu chuẩn về **lợi thế lượng tử** (*quantum advantage*), khi máy tính lượng tử thực hiện một tác vụ vượt ngoài năng lực truyền thống nhưng vẫn tạo ra kết quả đáng tin cậy.",
+      "heading_fr": "Vérification de l'avantage quantique",
+      "body_fr": "Dirigée par IBM et l'Université de Chicago, l'expérience a satisfait aux critères de **l'avantage quantique**, qui se produit lorsqu'un ordinateur quantique exécute une tâche au-delà des capacités conventionnelles tout en produisant des résultats fiables. Auparavant, les scientifiques avaient du mal à vérifier les sorties de circuits complexes sans s'appuyer sur de fortes hypothèses concernant la précision du matériel.",
+      "heading_de": "Quantenvorteil überprüfen",
+      "body_de": "Unter der Leitung von IBM und der University of Chicago erfüllte das Experiment die Kriterien für den **Quantenvorteil**, der eintritt, wenn ein Quantencomputer eine Aufgabe jenseits herkömmlicher Fähigkeiten ausführt und dabei verlässliche Ergebnisse liefert. Wissenschaftler hatten zuvor Schwierigkeiten, die Ausgaben komplexer Schaltkreise zu überprüfen, ohne sich auf starke Annahmen über die Hardwaregenauigkeit zu verlassen.",
+      "heading_es": "Verificando la ventaja cuántica",
+      "body_es": "Dirigido por IBM y la Universidad de Chicago, el experimento cumplió con los criterios de **ventaja cuántica**, que ocurre cuando una computadora cuántica realiza una tarea más allá de las capacidades convencionales mientras produce resultados confiables. Los científicos anteriormente luchaban por verificar los resultados de circuitos complejos sin depender de suposiciones sólidas sobre la precisión del hardware."
+    },
+    {
+      "heading_en": "Logical Qubits and Error Control",
+      "heading_vi": "Qubit logic và kiểm soát lỗi",
+      "body_en": "Quantum information easily suffers disruption from environmental disturbances and hardware imperfections. Researchers used quantum error correction to encode information across physical qubits, creating 70 protected logical qubits and performing 2,415 logical two-qubit operations alongside 468 logical T gates.",
+      "body_vi": "Thông tin lượng tử dễ bị nhiễu loạn bởi các tác động từ môi trường và sự bất hoàn hảo của phần cứng. Các nhà nghiên cứu đã dùng phương pháp sửa lỗi lượng tử (*quantum error correction*) để mã hóa thông tin.",
+      "heading_fr": "Qubits logiques et contrôle des erreurs",
+      "body_fr": "L'information quantique subit facilement des perturbations dues à l'environnement et aux imperfections du matériel. Les chercheurs ont utilisé la correction d'erreurs quantiques pour coder l'information sur des qubits physiques, créant 70 qubits logiques protégés et effectuant 2 415 opérations logiques à deux qubits ainsi que 468 portes T logiques.",
+      "heading_de": "Logische Qubits und Fehlerkontrolle",
+      "body_de": "Quanteninformation leidet leicht unter Störungen durch Umwelteinflüsse und Hardwareunvollkommenheiten. Forscher nutzten Quantenfehlerkorrektur, um Informationen über physische Qubits zu kodieren, erstellten 70 geschützte logische Qubits und führten 2.415 logische Zwei-Qubit-Operationen neben 468 logischen T-Gattern aus.",
+      "heading_es": "Qubits lógicos y control de errores",
+      "body_es": "La información cuántica sufre fácilmente interrupciones por perturbaciones ambientales e imperfecciones del hardware. Los investigadores utilizaron corrección de errores cuánticos para codificar información a través de qubits físicos, creando 70 qubits lógicos protegidos y realizando 2415 operaciones lógicas de dos qubits junto con 468 puertas T lógicas."
+    },
+    {
+      "heading_en": "Lower Error Rates",
+      "heading_vi": "Tỷ lệ lỗi thấp hơn",
+      "body_en": "The encoding strategy allowed effective logical error rates 10 times lower than underlying physical error rates. This reduction helped the machine maintain high fidelity despite executing thousands of complex operations during the test.",
+      "body_vi": "Chiến lược mã hóa này mang lại tỷ lệ lỗi logic thấp hơn 10 lần so với tỷ lệ lỗi vật lý ban đầu. Sự sụt giảm này giúp cỗ máy duy trì độ chính xác cao dù phải thực hiện hàng nghìn thao tác phức tạp.",
+      "heading_fr": "Taux d'erreur réduits",
+      "body_fr": "La stratégie de codage a permis d'obtenir des taux d'erreur logiques effectifs 10 fois inférieurs aux taux d'erreur physiques sous-jacents. Cette réduction a aidé la machine à maintenir une haute fidélité malgré l'exécution de milliers d'opérations complexes pendant le test.",
+      "heading_de": "Geringere Fehlerraten",
+      "body_de": "Die Kodierungsstrategie ermöglichte effektive logische Fehlerraten, die zehnmal niedriger waren als die zugrundeliegenden physischen Fehlerraten. Diese Reduzierung half der Maschine, eine hohe Datentreue aufrechtzuerhalten, obwohl sie während des Tests Tausende komplexer Operationen ausführte.",
+      "heading_es": "Tasas de error más bajas",
+      "body_es": "La estrategia de codificación permitió tasas de error lógicas efectivas 10 veces más bajas que las tasas de error físicas subyacentes. Esta reducción ayudó a la máquina a mantener una alta fidelidad a pesar de ejecutar miles de operaciones intrincadas durante la prueba."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261123231244.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/182/1080/1920",
+    "provider": "unsplash",
+    "author": "Andrea Boldizsar",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/BwgKUh9tN84",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795585360/pagemoor/covers/ibm-quantum-computer-solves-complex-problem-in-minutes-321537.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795585362/pagemoor/covers/ibm-quantum-computer-solves-complex-problem-in-minutes-321537-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-321537/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "IBM quantum computer solves problem classical computers can’t in just 15 minutes",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261123231244.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Read the research paper titled Sampling hard circuits with verifiably high fidelity.",
+      "Access the Quantum Advantage Tracker to review experimental results.",
+      "Examine the described logical qubit error correction methods."
+    ],
+    "vi": [
+      "Đọc bài báo nghiên cứu có tựa đề Sampling hard circuits with verifiably high fidelity.",
+      "Truy cập Quantum Advantage Tracker để xem lại các kết quả thực nghiệm.",
+      "Nghiên cứu các phương pháp sửa lỗi qubit logic được mô tả."
+    ],
+    "fr": [
+      "Lire l'article de recherche intitulé Sampling hard circuits with verifiably high fidelity.",
+      "Accéder au Quantum Advantage Tracker pour examiner les résultats expérimentaux.",
+      "Analyser les méthodes de correction d'erreurs des qubits logiques décrites."
+    ],
+    "de": [
+      "Lesen Sie das Forschungspapier mit dem Titel Sampling hard circuits with verifiably high fidelity.",
+      "Greifen Sie auf den Quantum Advantage Tracker zu, um die experimentellen Ergebnisse zu überprüfen.",
+      "Untersuchen Sie die beschriebenen Methoden zur Fehlerkorrektur logischer Qubits."
+    ],
+    "es": [
+      "Lea el artículo de investigación titulado Sampling hard circuits with verifiably high fidelity.",
+      "Acceda al Quantum Advantage Tracker para revisar los resultados experimentales.",
+      "Examine los métodos descritos de corrección de errores de qubits lógicos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/182/1080/1920",
+      "provider": "unsplash",
+      "author": "Andrea Boldizsar",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BwgKUh9tN84"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/403/1080/1920",
+      "provider": "unsplash",
+      "author": "Sergey Zolkin",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/E0Spm6XXn2Y"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/885/1080/1920",
+      "provider": "unsplash",
+      "author": "Dustin Lee",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/jLwVAUtLOAQ"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoQABwAPu1orU2ppqSiMAgBMB2JZACdLwAB04p851TpgsiXD9AA/ni52ejFXOO8V8BTg73Yxhke9bZozC/gOx2dC23yeIclLWOpnMbNW9c6WAcT4fLflM02LL+zWIJ1S70S/eATu59j9/OXXei3QpKY8ahdtravebj+2UxAAAA=",
+  "dominant": "#4e6070",
+  "glossary": {
+    "en": {
+      "quantum advantage": "When a quantum computer performs a task beyond conventional capabilities while producing trustworthy results.",
+      "qubits": "The basic units of quantum information, analogous to classical bits.",
+      "quantum error correction": "Methods used to protect quantum information from errors due to decoherence and noise.",
+      "physical qubits": "The actual underlying hardware implementations of qubits in a quantum computer.",
+      "logical qubits": "Protected error-corrected qubits created by encoding data across multiple physical qubits.",
+      "t gates": "A specific type of single-qubit quantum logic gate used in quantum computing.",
+      "logical error rates": "The frequency of errors occurring in logical qubits during quantum operations.",
+      "physical error rates": "The frequency of errors occurring in underlying physical hardware components.",
+      "fidelity": "A measure of how closely the actual output of a quantum operation matches the intended output."
+    },
+    "vi": {
+      "máy tính lượng tử": "Hệ thống tính toán sử dụng cơ học lượng tử để xử lý thông tin phức tạp.",
+      "lợi thế lượng tử": "Khả năng máy tính lượng tử thực hiện tác vụ vượt ngoài năng lực truyền thống.",
+      "qubit logic": "Đơn vị thông tin lượng tử được bảo vệ bởi các phương pháp sửa lỗi.",
+      "sửa lỗi lượng tử": "Phương pháp mã hóa giúp giảm tỷ lệ lỗi trong các tính toán lượng tử.",
+      "tỷ lệ lỗi vật lý": "Mức độ sai sót ban đầu của các thành phần phần cứng lượng tử.",
+      "thao tác phức tạp": "Các bước tính toán đòi hỏi năng lực xử lý cao của hệ thống.",
+      "thống kê": "Phương pháp xác định độ tin cậy của kết quả đầu ra thực nghiệm.",
+      "mô phỏng": "Quá trình tái hiện phép tính trên hệ thống máy tính truyền thống."
+    },
+    "fr": {
+      "ordinateur quantique": "Machine utilisant les lois de la physique quantique pour effectuer des calculs complexes bien plus rapidement.",
+      "avantage quantique": "Capacité d'un ordinateur quantique à réaliser une tâche impossible pour un ordinateur classique.",
+      "qubits logiques": "Unités d'information quantique protégées contre les erreurs par regroupement de plusieurs qubits physiques.",
+      "correction d'erreurs": "Méthode pour détecter et corriger les perturbations dans les données quantiques.",
+      "qubits physiques": "Supports matériels de base pour stocker l'information quantique, sensibles au bruit ambiant.",
+      "portes t": "Opérations logiques spécifiques utilisées dans les circuits quantiques universels.",
+      "fidélité": "Mesure de la précision avec laquelle un état ou une opération quantique est exécuté.",
+      "circuits": "Ensembles d'instructions et de portes quantiques appliquées pour traiter l'information."
+    },
+    "de": {
+      "quantencomputer": "Ein fortschrittlicher Computer, der Quantenmechanik nutzt, um komplexe Probleme extrem schnell zu berechnen.",
+      "quantenvorteil": "Der Nachweis, dass ein Quantencomputer Aufgaben bewältigt, die für klassische Computer unpraktikabel sind.",
+      "fehlerkorrektur": "Techniken zum Schutz von Quanteninformationen vor Störungen und hardwarebedingten Datenverlusten.",
+      "logische qubits": "Aus mehreren physischen Qubits zusammengesetzte Einheiten zur fehlertoleranten Speicherung von Quanteninformation.",
+      "t-gatter": "Eine fundamentale logische Operation, die in Quantenstromkreisen zur Informationsverarbeitung eingesetzt wird.",
+      "datentreue": "Ein Maß dafür, wie genau ein Quantenzustand oder Rechenergebnis dem theoretischen Ideal entspricht.",
+      "physische qubits": "Die tatsächlichen, hardwarebasierten Grundbausteine eines Quantencomputers zur Informationsspeicherung.",
+      "schaltkreise": "Logische Netzwerke aus Quantengattern, die Quanteninformationen in einem Computer gezielt verarbeiten."
+    },
+    "es": {
+      "ventaja cuántica": "Hitos donde una computadora cuántica supera las capacidades de los sistemas convencionales.",
+      "qubits": "Unidades básicas de información cuántica, equivalentes a los bits tradicionales.",
+      "corrección de errores": "Métodos para proteger la información cuántica contra perturbaciones del entorno y fallas.",
+      "qubits lógicos": "Unidades de información protegidas mediante múltiples qubits físicos para evitar errores.",
+      "puertas t": "Operaciones lógicas fundamentales utilizadas en los circuitos de computación cuántica.",
+      "fidelidad": "Grado de precisión con el que un sistema cuántico ejecuta las operaciones previstas.",
+      "circuitos": "Conjuntos interconectados de operaciones y compuertas cuánticas que procesan información.",
+      "hardware": "Componentes físicos tangibles que componen la infraestructura de la computadora cuántica."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-25T05:24:56.157Z"
+}

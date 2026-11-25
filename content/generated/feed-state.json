@@ -5,6 +5,11 @@
       "feed": "aeon",
       "slug": "why-existence-may-be-simpler-than-nothingness"
     },
+    "https://aeon.co/essays/are-mental-illnesses-universal-or-are-they-culturally-specific": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "aeon",
+      "error": "triage: score 6: Cultural differences in mental distress are fascinating but require more concrete empirical anchoring."
+    },
     "https://aeon.co/essays/do-you-have-a-selkie-or-a-seal-in-the-family": {
       "at": "2026-11-21T03:58:40.341Z",
       "feed": "aeon",
@@ -70,10 +75,25 @@
       "feed": "aeon",
       "error": "triage: score 4: This is a short video showcase of early modern curiosity cabinets without deep explanatory analysis."
     },
+    "https://aeon.co/videos/what-does-it-mean-when-humans-and-technology-become-indistinguishable": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "aeon",
+      "error": "triage: score 3: Short film explores human identity alongside increasingly human-like artificial intelligence."
+    },
     "https://arstechnica.com/gadgets/2026/11/netflix-ceo-admits-app-may-bury-stuff-you-want-to-watch-under-stuff-you-dont": {
       "at": "2026-11-19T04:11:42.757Z",
       "feed": "ars-science",
       "error": "triage: score 2: Corporate executive interview about streaming recommendations."
+    },
+    "https://arstechnica.com/science/2026/11/cop31-ends-in-failure-as-countries-split-over-fossil-fuels-climate-finance": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "ars-science",
+      "error": "triage: score 2: COP31 climate summit concluded without a consensus agreement."
+    },
+    "https://arstechnica.com/science/2026/11/how-brewers-can-protect-beers-from-smoke-tainted-hops": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "ars-science",
+      "error": "triage: score 6: Practical agricultural advice for brewing hop selection is too narrow for general readers."
     },
     "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause": {
       "at": "2026-11-19T04:11:42.757Z",
@@ -114,6 +134,11 @@
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "ars-science",
       "error": "triage: score 5: Vineyards are finding that ecological conservation and healthy soils improve business resilience."
+    },
+    "https://arstechnica.com/space/2026/11/half-of-nasas-aging-mars-fleet-knocked-offline-by-technical-issues": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "ars-science",
+      "error": "triage: score 3: Routine satellite technical glitches are temporary news events rather than timeless explanations."
     },
     "https://arstechnica.com/space/2026/11/nasas-new-moon-plan-is-taking-shape-but-some-big-questions-remain": {
       "at": "2026-11-21T03:58:40.341Z",
@@ -179,6 +204,11 @@
       "at": "2026-11-10T04:38:46.812Z",
       "feed": "big-think",
       "error": "triage: score 4: Musings on legacy and succession tied broadly to an artistic project."
+    },
+    "https://bigthink.com/history-society/what-happens-when-ai-splits-up-your-friend-group": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "big-think",
+      "error": "triage: score 5: The rise of generative artificial intelligence creates ideological divides within friend groups."
     },
     "https://bigthink.com/mind-behavior/the-most-important-sleep-metric-isnt-hours-slept": {
       "at": "2026-11-15T23:33:36.400Z",
@@ -250,6 +280,11 @@
       "feed": "big-think",
       "error": "triage: score 3: This is a promotional summary for a live magazine conversation event."
     },
+    "https://bigthink.com/series/conversations/why-neutrality-is-worth-chasing-even-if-no-one-gets-there": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "big-think",
+      "error": "triage: score 7: Philosophical perspectives on neutrality and trust provide good conceptual framing but read like interviews."
+    },
     "https://bigthink.com/series/full-interview/black-holes-greene": {
       "at": "2026-11-21T04:03:40.292Z",
       "feed": "big-think",
@@ -290,10 +325,25 @@
       "feed": "big-think",
       "error": "Only 96 words readable (paywall or script-only page?)"
     },
+    "https://bigthink.com/series/the-big-think-interview/telescopes-universe-past": {
+      "at": "2026-11-25T05:34:24.690Z",
+      "feed": "big-think",
+      "slug": "how-looking-at-space-is-looking-back-in-time"
+    },
     "https://bigthink.com/series/the-big-think-interview/universe-dark-energy": {
       "at": "2026-10-23T16:57:10.539Z",
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/series/the-big-think-interview/universe-dark-energy"
+    },
+    "https://bigthink.com/starts-with-a-bang/3-keys-next-level-how-universe-began": {
+      "at": "2026-11-25T05:33:21.416Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/starts-with-a-bang/3-keys-next-level-how-universe-began"
+    },
+    "https://bigthink.com/starts-with-a-bang/euclid-release-cosmic-treasure": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "big-think",
+      "error": "triage: score 7: The Euclid space telescope releases its initial cosmic imaging data in a sweeping map of the universe."
     },
     "https://bigthink.com/starts-with-a-bang/explain-higgs-boson-in-depth": {
       "at": "2026-11-07T02:51:27.399Z",
@@ -385,6 +435,11 @@
       "feed": "big-think",
       "error": "403 Forbidden — https://bigthink.com/strange-maps/roman-road-networks"
     },
+    "https://bigthink.com/the-learning-curve/niksen": {
+      "at": "2026-11-25T05:31:06.181Z",
+      "feed": "big-think",
+      "error": "403 Forbidden — https://bigthink.com/the-learning-curve/niksen"
+    },
     "https://bigthink.com/the-well/how-to-navigate-the-world-with-two-halves-of-one-brain": {
       "at": "2026-11-19T04:12:01.079Z",
       "feed": "big-think",
@@ -410,10 +465,20 @@
       "feed": "cal-newport",
       "error": "triage: score 3: Personal essay style reflections on lifestyle changes."
     },
+    "https://calnewport.com/the-anthropic-ipo-concerns-me": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "cal-newport",
+      "error": "triage: score 4: Analyst discusses financial market implications of Anthropic's public stock offering."
+    },
     "https://content.knowledgehub.wiley.com/5g-nr-ntn-design-and-test-challenges-for-satellite-connected-iot": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "ieee-spectrum",
       "error": "triage: score 5: 3GPP releases integrate satellite links into 5G networks for IoT device connectivity."
+    },
+    "https://content.knowledgehub.wiley.com/5g-ntn-takes-flight-a-deep-dive-into-nr-ntn-technology-and-testing-aspects": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "ieee-spectrum",
+      "error": "triage: score 7: Non-terrestrial network architectures extend 5G and 6G cellular coverage via satellites."
     },
     "https://content.knowledgehub.wiley.com/engineering-overhead-electric-lines-for-ice-wind-and-freezing-rain": {
       "at": "2026-11-17T05:08:37.193Z",
@@ -479,6 +544,16 @@
       "at": "2026-11-18T04:39:00.737Z",
       "feed": "jstor-daily",
       "slug": "reclaiming-gender-diversity-vocabulary-in-zulu-culture"
+    },
+    "https://daily.jstor.org/union-veterans-and-the-bitter-aftermath-of-the-civil-war": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "jstor-daily",
+      "error": "triage: score 7: Post-Civil War veteran disillusionment is a solid historical slice but somewhat niche."
+    },
+    "https://daily.jstor.org/when-colorado-closed-its-border-to-new-mexico": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "jstor-daily",
+      "error": "triage: score 6: Colorado's 1936 border blockade against New Mexico migrants was a politically motivated stunt."
     },
     "https://daily.jstor.org/why-ancient-doctors-prescribed-disgusting-remedies": {
       "at": "2026-11-18T04:28:10.376Z",
@@ -574,6 +649,11 @@
       "at": "2026-11-04T03:01:19.482Z",
       "feed": "wikipedia-featured",
       "slug": "ich-geh-und-suche-mit-verlangen-bwv-49"
+    },
+    "https://en.wikipedia.org/wiki/Infancy_Gospel_of_Thomas": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "wikipedia-featured",
+      "error": "triage: score 7: Apocryphal infancy gospels provide interesting early Christian historical context."
     },
     "https://en.wikipedia.org/wiki/Iron_Gate_(Antioch)": {
       "at": "2026-11-19T04:26:31.917Z",
@@ -935,6 +1015,11 @@
       "feed": "global-voices",
       "error": "triage: score 3: Opinion piece on legal systems and human rights in Israel."
     },
+    "https://globalvoices.org/2026/11/17/in-win-against-impunity-indonesian-court-orders-the-reform-of-military-justice-law": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "global-voices",
+      "error": "triage: score 2: Legal news about an Indonesian court ruling on military justice."
+    },
     "https://globalvoices.org/2026/11/17/street-medicine-vendors-are-dangerously-filling-haitis-healthcare-gaps": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "global-voices",
@@ -994,6 +1079,16 @@
       "at": "2026-11-23T03:43:11.175Z",
       "feed": "global-voices",
       "error": "triage: score 2: Personal profile of an activist overcoming childhood trauma in South Asia."
+    },
+    "https://globalvoices.org/2026/11/23/nigerien-women-lose-their-rights-before-ever-reaching-a-courtroom": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "global-voices",
+      "error": "triage: score 6: Systemic legal barriers for women in rural Niger highlight important societal inequities but remain localized reportage."
+    },
+    "https://globalvoices.org/2026/11/24/in-kyrgyzstan-public-meetings-with-the-president-turn-into-a-quest-to-seek-justice": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "global-voices",
+      "error": "triage: score 2: Kyrgyzstan citizens seek presidential help due to widespread distrust in local police and courts."
     },
     "https://knowablemagazine.org/content/article/food-environment/2026/secrets-superfruit-acai-genome-gets-decoded": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -1075,6 +1170,11 @@
       "feed": "liberty-street",
       "error": "triage: score 7: Analysis of credit card delinquency increases among lower-income neighborhoods."
     },
+    "https://libertystreeteconomics.newyorkfed.org/2026/11/as-corporate-bond-markets-grow-is-bank-lending-shrinking": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "liberty-street",
+      "error": "triage: score 6: Shifts in corporate bond markets are timely financial trends that lack broader conceptual takeaways."
+    },
     "https://libertystreeteconomics.newyorkfed.org/2026/11/banking-system-vulnerability-2026-update": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "liberty-street",
@@ -1099,6 +1199,11 @@
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "liberty-street",
       "error": "triage: score 4: The U.S. oil sector helped restrain price spikes during the 2026 Middle East conflict."
+    },
+    "https://libertystreeteconomics.newyorkfed.org/2026/11/what-do-foreign-trends-tell-us-about-future-u-s-labor-force-dynamics": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "liberty-street",
+      "error": "triage: score 6: Declining net immigration points toward a shrinking US labor supply similar to other advanced economies."
     },
     "https://nautil.us/a-dead-star-is-flashing-radio-waves-every-8-minutes-1286645": {
       "at": "2026-11-15T23:41:19.015Z",
@@ -1169,6 +1274,16 @@
       "at": "2026-11-08T02:32:13.543Z",
       "feed": "nautilus",
       "slug": "earth-s-missing-rock-layers-explained-by-deep-mantle-process"
+    },
+    "https://nautil.us/earths-water-may-have-formed-in-this-fiery-furnace-1287019": {
+      "at": "2026-11-25T05:35:53.382Z",
+      "feed": "nautilus",
+      "slug": "earth-water-may-have-originated-from-molten-rock-reactions"
+    },
+    "https://nautil.us/even-tiny-bits-of-exercise-may-help-regulate-blood-sugar-1287062": {
+      "at": "2026-11-25T05:32:32.113Z",
+      "feed": "nautilus",
+      "slug": "short-hourly-walks-may-control-blood-sugar-better-than-long"
     },
     "https://nautil.us/famous-fossil-could-be-rosetta-stone-for-hidden-hominin-diversity-1286535": {
       "at": "2026-11-11T02:50:47.504Z",
@@ -1245,6 +1360,11 @@
       "feed": "nautilus",
       "slug": "how-lsd-speeds-up-brain-rhythms-and-creates-fractal-patterns"
     },
+    "https://nautil.us/meet-the-bugs-that-live-in-your-home-1286978": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "nautilus",
+      "error": "triage: score 7: Biologists conduct citizen science surveys to document the diverse arthropod ecosystems inside typical homes."
+    },
     "https://nautil.us/men-who-eat-more-plant-based-protein-have-higher-testosterone-levels-1286187": {
       "at": "2026-10-30T02:45:12.009Z",
       "feed": "nautilus",
@@ -1254,6 +1374,11 @@
       "at": "2026-10-24T01:40:42.837Z",
       "feed": "nautilus",
       "slug": "mother-bats-experience-rapid-heart-rate-increases-upon-heari"
+    },
+    "https://nautil.us/no-pumbaa-needed-meerkats-are-great-solo-navigators-1286989": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nautilus",
+      "error": "triage: score 5: Behavioral study showing meerkats can navigate alone despite social preferences."
     },
     "https://nautil.us/our-planets-lungs-are-suffering-1286196": {
       "at": "2026-10-30T02:41:49.723Z",
@@ -1395,11 +1520,6 @@
       "feed": "nautilus",
       "error": "triage: score 7: Extreme boredom can impair sleep and relates to psychological self-control mechanisms."
     },
-    "https://nautil.us/you-likely-have-genes-that-affect-how-well-your-medications-work-testing-for-them-could-improve-treatment-1286903": {
-      "at": "2026-11-23T03:48:51.863Z",
-      "feed": "nautilus",
-      "error": "Gemini reply unusable after a retry (hook_en)"
-    },
     "https://nautil.us/zombie-bacteria-might-one-day-lurk-in-the-sewers-1286253": {
       "at": "2026-10-31T02:27:07.162Z",
       "feed": "nautilus",
@@ -1409,6 +1529,11 @@
       "at": "2026-11-22T03:09:27.144Z",
       "feed": "harvard-gazette",
       "error": "triage: score 6: Prolonged daily sitting significantly elevates health risks like heart disease and cancer."
+    },
+    "https://news.harvard.edu/gazette/story/2026/11/a-nice-orderly-festival-of-drunkenness": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "harvard-gazette",
+      "error": "triage: score 6: Egyptological look at ritual drinking at the Temple of Mut."
     },
     "https://news.harvard.edu/gazette/story/2026/11/are-you-ready-for-the-game": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -1450,6 +1575,26 @@
       "feed": "harvard-gazette",
       "error": "triage: score 3: This is a profile of a physician and a book release, lacking broad scientific mechanisms."
     },
+    "https://news.harvard.edu/gazette/story/2026/11/how-to-reject-mediocrity": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "harvard-gazette",
+      "error": "triage: score 3: An academic initiative offers human-centered alternatives to automated technology."
+    },
+    "https://news.harvard.edu/gazette/story/2026/11/is-headlight-glare-getting-worse": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "harvard-gazette",
+      "error": "triage: score 3: Opinion piece rejecting headlight glare without concrete experimental data."
+    },
+    "https://news.harvard.edu/gazette/story/2026/11/its-official-for-the-first-time-in-decades-u-s-is-sick-with-measles": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "harvard-gazette",
+      "error": "triage: score 4: Pediatricians urge respectful vaccine dialogues following a resurgence of measles cases."
+    },
+    "https://news.harvard.edu/gazette/story/2026/11/mental-health-chatbots-for-kids-parents-narrow-eyes": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "harvard-gazette",
+      "error": "triage: score 5: Survey data showing parental skepticism toward mental health chatbots for children."
+    },
     "https://news.harvard.edu/gazette/story/2026/11/mourning-manny-the-yards-go-to-guy-for-just-about-everything": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "harvard-gazette",
@@ -1459,6 +1604,11 @@
       "at": "2026-11-15T23:40:41.188Z",
       "feed": "harvard-gazette",
       "error": "Too short: 581 words written (minimum 1000)"
+    },
+    "https://news.harvard.edu/gazette/story/2026/11/rules-of-engagement-have-changed": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "harvard-gazette",
+      "error": "triage: score 4: New novel releases and cultural commentary are current affairs entertainment reviews."
     },
     "https://news.harvard.edu/gazette/story/2026/11/schools-that-ban-cellphones-see-uptick-in-test-scores": {
       "at": "2026-11-22T03:15:26.358Z",
@@ -1470,6 +1620,11 @@
       "feed": "harvard-gazette",
       "error": "triage: score 3: Students in a university grief course report feeling emotional relief."
     },
+    "https://news.mit.edu/2026/3-questions-tackling-energy-challenges-changing-world-1124": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "mit-news",
+      "error": "triage: score 4: Institutional anniversary reflections are academic promotional summaries."
+    },
     "https://news.mit.edu/2026/ai-helps-researchers-investigate-how-medical-studies-share-code-1119": {
       "at": "2026-11-20T03:59:08.899Z",
       "feed": "mit-news",
@@ -1479,6 +1634,11 @@
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "mit-news",
       "error": "triage: score 5: A brief look at how microcredentials help engineering teams tackle AI compliance issues."
+    },
+    "https://news.mit.edu/2026/arianna-doss-prescribes-change-1124": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "mit-news",
+      "error": "triage: score 2: An MIT student and athlete aims for a career in health equity and medicine."
     },
     "https://news.mit.edu/2026/building-blocks-for-greener-skyline-miana-smith-1118": {
       "at": "2026-11-22T03:09:27.144Z",
@@ -1490,10 +1650,20 @@
       "feed": "mit-news",
       "slug": "when-stats-need-sales-why-people-use-words-instead-of-number"
     },
+    "https://news.mit.edu/2026/electric-seaglider-from-mit-alumni-takes-flight-1125": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "mit-news",
+      "error": "triage: score 7: Electric seagliders combine maritime and aviation engineering but remain early-stage commercial news."
+    },
     "https://news.mit.edu/2026/engineers-design-stronger-resilient-nature-inspired-metamaterials-1111": {
       "at": "2026-11-23T03:51:44.435Z",
       "feed": "mit-news",
       "slug": "engineers-build-stronger-materials-with-disordered-networks"
+    },
+    "https://news.mit.edu/2026/excess-renewable-energy-could-power-new-industrial-processes-1124": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "mit-news",
+      "error": "triage: score 6: Explainer on utilizing excess renewable energy for industrial material manufacturing."
     },
     "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118": {
       "at": "2026-11-19T04:29:06.919Z",
@@ -1529,6 +1699,11 @@
       "at": "2026-11-20T04:04:54.401Z",
       "feed": "mit-news",
       "slug": "how-to-find-primordial-black-holes-inside-stars"
+    },
+    "https://news.mit.edu/2026/j-pal-north-america-launches-medicaid-learning-lab-1123": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "mit-news",
+      "error": "triage: score 3: This announcement about a Medicaid learning lab is institutional promotion and administrative policy news."
     },
     "https://news.mit.edu/2026/joe-higgins-to-step-down-vp-campus-services-stewardship-1118": {
       "at": "2026-11-19T04:11:42.757Z",
@@ -1574,6 +1749,11 @@
       "at": "2026-11-20T04:18:08.894Z",
       "feed": "mit-news",
       "slug": "data-centers-drive-distant-air-pollution-and-health-risks"
+    },
+    "https://news.mit.edu/2026/tangimap-agentic-system-personalizes-physical-controls-help-users-dj-their-art-1124": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "mit-news",
+      "error": "triage: score 6: AI agent system personalizes physical interface controls for tactile media creation."
     },
     "https://news.mit.edu/2026/ultrasound-imaging-without-gel-1119": {
       "at": "2026-11-22T03:19:47.208Z",
@@ -1630,6 +1810,11 @@
       "feed": "phys-org",
       "error": "triage: score 7: Evolutionary origins of avian migration patterns in historical bird lineages."
     },
+    "https://phys.org/news/2026-11-centers-community.html": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "phys-org",
+      "error": "triage: score 4: Local real estate and economic study on data center siting factors in Oklahoma."
+    },
     "https://phys.org/news/2026-11-climate-habitat-loss-fuel-deadly.html": {
       "at": "2026-11-19T04:23:33.449Z",
       "feed": "phys-org",
@@ -1644,6 +1829,11 @@
       "at": "2026-11-21T03:58:40.341Z",
       "feed": "phys-org",
       "error": "triage: score 3: University of Queensland students built a tool to measure strawberry skin strength for breeders."
+    },
+    "https://phys.org/news/2026-11-eu-bureaucracy-index-law.html": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "phys-org",
+      "error": "triage: score 2: This administrative EU bureaucracy update lacks enduring educational value for a general reader."
     },
     "https://phys.org/news/2026-11-extreme-weather-poses-global-oil.html": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -1660,10 +1850,10 @@
       "feed": "phys-org",
       "error": "triage: score 7: Consumer confusion over organic food labels and varying standards."
     },
-    "https://phys.org/news/2026-11-jwst-black-hole-grew-faster.html": {
-      "at": "2026-11-23T03:46:10.417Z",
+    "https://phys.org/news/2026-11-funding-smes-tackle-energy.html": {
+      "at": "2026-11-24T07:08:14.447Z",
       "feed": "phys-org",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+      "error": "triage: score 4: Small Scottish food companies struggle with financial barriers to cut emissions."
     },
     "https://phys.org/news/2026-11-nature-based-solutions-settlements.html": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -1685,6 +1875,11 @@
       "feed": "phys-org",
       "slug": "quantum-software-matches-classical-benchmark-for-molecular-i"
     },
+    "https://phys.org/news/2026-11-queensland-disaster-lessons.html": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "phys-org",
+      "error": "triage: score 3: Regional disaster preparedness commentary is recurring news journalism."
+    },
     "https://phys.org/news/2026-11-reliance-technology-eroding-ability-real.html": {
       "at": "2026-11-23T03:48:46.110Z",
       "feed": "phys-org",
@@ -1694,6 +1889,16 @@
       "at": "2026-11-15T23:36:49.359Z",
       "feed": "phys-org",
       "slug": "green-arabia-a-125-000-year-old-lakeside"
+    },
+    "https://phys.org/news/2026-11-star-obliquity-impact-planet-habitability.html": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "phys-org",
+      "error": "triage: score 4: Astrophysical modeling study on stellar obliquity and planetary habitability."
+    },
+    "https://phys.org/news/2026-11-workplace-absenteeism-temporary-disability-expense.html": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "phys-org",
+      "error": "triage: score 5: Temporary disability benefits serve as a vital social security right protecting ill workers."
     },
     "https://psyche.co/guides/how-to-help-someone-whose-thinking-seems-delusional": {
       "at": "2026-11-12T03:50:15.182Z",
@@ -1719,6 +1924,11 @@
       "at": "2026-10-27T02:09:58.798Z",
       "feed": "psyche",
       "slug": "everyday-anxiety-versus-clinical-illness"
+    },
+    "https://psyche.co/ideas/feeling-at-home-in-a-new-country-makes-you-a-stranger-in-the-old": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "psyche",
+      "error": "triage: score 6: Personal migration essays offer engaging perspective but lean heavily on subjective narrative."
     },
     "https://psyche.co/ideas/how-mental-disorders-play-havoc-with-our-motivation": {
       "at": "2026-10-27T02:12:53.403Z",
@@ -1810,6 +2020,11 @@
       "feed": "psyche",
       "slug": "reframing-delusions-and-identity"
     },
+    "https://psyche.co/turning-points/my-dog-had-separation-anxiety-i-had-ptsd-how-did-we-cope": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "psyche",
+      "error": "triage: score 5: Overcoming a pet's separation anxiety helped an owner confront personal fears."
+    },
     "https://psyche.co/turning-points/my-er-regulars-spat-at-me-and-opened-my-mind": {
       "at": "2026-10-31T02:29:18.111Z",
       "feed": "psyche",
@@ -1900,6 +2115,11 @@
       "feed": "public-domain-review",
       "error": "triage: score 4: An analysis of a silent short film is too narrow for a general readership article."
     },
+    "https://publicdomainreview.org/collection/anti-metric-cartoon": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "public-domain-review",
+      "error": "triage: score 7: Early 20th-century anti-metric cartoons offer amusing cultural history but are too brief."
+    },
     "https://publicdomainreview.org/collection/epistle-of-othea": {
       "at": "2026-11-19T04:11:42.757Z",
       "feed": "public-domain-review",
@@ -1914,6 +2134,11 @@
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "public-domain-review",
       "error": "triage: score 2: This is a short archival overview of socialist illustrations from the late 19th century."
+    },
+    "https://publicdomainreview.org/essay/bickering-buildings": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "public-domain-review",
+      "error": "triage: score 6: Nineteenth-century architectural satire from Athens is entertaining yet hyper-local."
     },
     "https://publicdomainreview.org/essay/soldiers-of-misfortune": {
       "at": "2026-11-15T23:38:00.881Z",
@@ -2040,6 +2265,11 @@
       "feed": "nasa-science",
       "error": "triage: event notice"
     },
+    "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/roman-space-telescope-cycle-2-call-for-proposals-open": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "nasa-science",
+      "error": "triage: call for proposals"
+    },
     "https://science.nasa.gov/blog/curiosity-blog-sols-5050-5055-its-nazca-our-49th-drill-hole": {
       "at": "2026-11-10T04:38:46.812Z",
       "feed": "nasa-science",
@@ -2100,6 +2330,11 @@
       "feed": "nasa-news",
       "error": "triage: score 3: This is a student contest announcement rather than a deep scientific finding or historical explainer."
     },
+    "https://science.nasa.gov/earth/agu-hyperwall-schedule": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-news",
+      "error": "triage: score 2: Conference presentation schedule listing for an AGU hyperwall event."
+    },
     "https://science.nasa.gov/earth/earth-observatory/a-global-rebound-for-mangroves": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "nasa-earth-observatory",
@@ -2119,6 +2354,21 @@
       "at": "2026-10-23T16:57:59.314Z",
       "feed": "nasa-science",
       "slug": "el-nino-then-and-now"
+    },
+    "https://science.nasa.gov/earth/earth-observatory/eruption-extends-iwo-jimas-beach": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "nasa-earth-observatory",
+      "error": "triage: score 3: Volcanic activity has temporarily expanded the coastline of Iwo Jima."
+    },
+    "https://science.nasa.gov/earth/earth-observatory/georgias-pecan-belt": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-earth-observatory",
+      "error": "triage: score 3: This local agriculture history piece is too thin for an in-depth Reader article."
+    },
+    "https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-earth-observatory",
+      "error": "triage: score 3: Installation report of a geodetic instrument in Svalbard."
     },
     "https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum": {
       "at": "2026-11-19T04:11:42.757Z",
@@ -2235,6 +2485,11 @@
       "feed": "nasa-science",
       "error": "Only 23 words of text found"
     },
+    "https://science.nasa.gov/get-involved/citizen-science/amateur-astronomer-be-a-kilonova-catcher": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-news",
+      "error": "triage: score 6: Call to action for amateur astronomers to spot fast-fading kilonovas."
+    },
     "https://science.nasa.gov/get-involved/citizen-science/thank-you-for-doing-nasa-science": {
       "at": "2026-11-19T04:11:42.757Z",
       "feed": "nasa-news",
@@ -2265,10 +2520,25 @@
       "feed": "nasa-news",
       "error": "triage: score 2: Astronomy picture of the day caption for Jupiter."
     },
+    "https://science.nasa.gov/image-article/apod-2026-november-24-galaxies-battle-in-the-ngc-7771-group": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "nasa-news",
+      "error": "triage: score 7: Astronomers capture a detailed image of interacting galaxies in the NGC 7771 group."
+    },
     "https://science.nasa.gov/mission/crave": {
       "at": "2026-11-01T02:15:27.594Z",
       "feed": "nasa-science",
       "error": "Only 182 words of text found"
+    },
+    "https://science.nasa.gov/mission/nisar-handbook": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "nasa-science",
+      "error": "triage: score 6: The updated NISAR handbook guides scientists using synthetic aperture radar data for Earth observation."
+    },
+    "https://science.nasa.gov/mission/roman-space-telescope/roman-vision": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-science",
+      "error": "triage: score 3: This is a product promotion for a NASA outreach tool rather than a major scientific breakthrough."
     },
     "https://science.nasa.gov/mission/voyager/voyager-1/shine-bright-for-voyagers-light-day": {
       "at": "2026-11-05T03:33:27.407Z",
@@ -2279,6 +2549,11 @@
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "nasa-news",
       "error": "triage: score 5: NASA's Chandra X-ray Observatory converted X-ray telescope data of baby stars into audible sonifications."
+    },
+    "https://science.nasa.gov/missions/dragonfly/nasas-titan-bound-dragonfly-rotorcraft-gets-its-eyes": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-news",
+      "error": "triage: score 4: This is a mission preparation update about instrument delivery rather than completed scientific findings."
     },
     "https://science.nasa.gov/multimedia/2027-nasa-science-calendar": {
       "at": "2026-11-15T23:33:36.400Z",
@@ -2359,6 +2634,11 @@
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "ieee-spectrum",
       "error": "triage: score 2: A daily technology newsletter overview and commentary on current tech industry blind spots."
+    },
+    "https://spectrum.ieee.org/mitsubishi-electric-research-lab-ceo": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "ieee-spectrum",
+      "error": "triage: score 2: Corporate executive career trajectories are professional profiles lacking broad reader curiosity."
     },
     "https://spectrum.ieee.org/optical-computing-ai": {
       "at": "2026-11-18T04:26:48.999Z",
@@ -2590,6 +2870,11 @@
       "feed": "conversation",
       "slug": "hokusai-s-great-wave-is-one-of-46-prints-of-mount-fuji-seein"
     },
+    "https://theconversation.com/how-did-the-cop31-climate-agreement-fall-apart-and-what-happens-now-296994": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "conversation",
+      "error": "triage: score 3: Disagreements over fossil fuels caused the collapse of the COP31 climate negotiations."
+    },
     "https://theconversation.com/how-groomers-operate-and-why-victims-become-trapped-296535": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "conversation",
@@ -2665,6 +2950,11 @@
       "feed": "conversation",
       "error": "triage: score 3: This is a legal and cultural news piece about a specific verdict rather than an enduring scientific or historical explainer."
     },
+    "https://theconversation.com/justice-is-elusive-for-the-rohingya-even-after-the-icjs-landmark-genocide-ruling-against-myanmar-297125": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "conversation",
+      "error": "triage: score 5: Ongoing legal barriers for the Rohingya are tragic international news with limited novel explanatory science."
+    },
     "https://theconversation.com/king-arthur-and-ramayana-ancient-stories-that-speak-to-the-moral-dilemmas-of-todays-leaders-294175": {
       "at": "2026-11-08T02:33:23.783Z",
       "feed": "conversation",
@@ -2689,6 +2979,11 @@
       "at": "2026-11-06T03:37:56.016Z",
       "feed": "conversation",
       "slug": "midterms-are-bad-for-incumbents-and-even-worse-when-energy-p"
+    },
+    "https://theconversation.com/mother-tongue-language-rights-dont-implement-themselves-lessons-from-nepals-classrooms-292724": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "conversation",
+      "error": "triage: score 6: Implementation hurdles for mother-tongue education policies in Nepal are important local education challenges."
     },
     "https://theconversation.com/myanmar-genocide-ruling-is-a-watershed-moment-in-international-justice-with-huge-ramifications-for-other-cases-296987": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -2865,6 +3160,11 @@
       "feed": "conversation",
       "slug": "why-do-blind-people-and-musicians-hear-pitch-better-new-rese"
     },
+    "https://theconversation.com/why-fossil-fuel-producing-countries-are-stalling-this-crucial-climate-report-296997": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "conversation",
+      "error": "triage: score 3: Fossil fuel-producing nations are delaying crucial independent climate science reports."
+    },
     "https://theconversation.com/why-is-nvidia-so-powerful-in-the-ai-world-and-what-could-jensen-huangs-scandal-really-cost-296257": {
       "at": "2026-11-12T03:49:45.854Z",
       "feed": "conversation",
@@ -2910,6 +3210,11 @@
       "feed": "atlas-obscura",
       "error": "triage: score 5: Architectural profile of the Binh Lam Champa Tower in Vietnam."
     },
+    "https://www.atlasobscura.com/places/bolsover-town-earthworks": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "atlas-obscura",
+      "error": "triage: score 2: Local architectural description of a single English building."
+    },
     "https://www.atlasobscura.com/places/cigoc-stork-village": {
       "at": "2026-11-20T04:10:50.446Z",
       "feed": "atlas-obscura",
@@ -2920,10 +3225,25 @@
       "feed": "atlas-obscura",
       "error": "triage: score 2: Local museum profile in New York City."
     },
+    "https://www.atlasobscura.com/places/dinosaur-pulpit-at-wat-that-phra-aram": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "atlas-obscura",
+      "error": "triage: score 3: A unique temple pulpit featuring dinosaur murals is a quirky tourist curiosity rather than deep history."
+    },
+    "https://www.atlasobscura.com/places/el-vagamundos": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "atlas-obscura",
+      "error": "triage: score 5: A bronze sculpture at Madrid's airport commemorates travelers suspended between destinations."
+    },
     "https://www.atlasobscura.com/places/hoang-de-citadel-thanh-hoang-d": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "atlas-obscura",
       "error": "triage: score 4: This is a travel blurb about an ancient citadel in Vietnam."
+    },
+    "https://www.atlasobscura.com/places/indianola": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "atlas-obscura",
+      "error": "triage: score 6: Indianola, Texas was once a major port before being devastated by disasters and receiving experimental camels."
     },
     "https://www.atlasobscura.com/places/national-underground-railroad-freedom-center": {
       "at": "2026-11-19T04:11:42.757Z",
@@ -3080,6 +3400,11 @@
       "feed": "nasa-science",
       "error": "Only 201 words of text found"
     },
+    "https://www.nasa.gov/general/nasa-locks-in-sr1-freedom-mission-architecture": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-news",
+      "error": "triage: score 3: NASA engineering milestone for a specific upcoming space reactor mission."
+    },
     "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "nasa-news",
@@ -3170,6 +3495,11 @@
       "feed": "nasa-science",
       "slug": "nasa-s-artemis-iii-mission-to-test-future-moon-lander-operat"
     },
+    "https://www.nasa.gov/missions/station/nasas-northrop-grumman-crs-25-mission-overview": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-news",
+      "error": "triage: score 3: Cargo resupply mission logistics update for the International Space Station."
+    },
     "https://www.nasa.gov/missions/station/nicer-status-updates": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "nasa-news",
@@ -3184,6 +3514,11 @@
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "nasa-science",
       "error": "triage: score 2: NASA provides educational resources and STEM opportunities for students."
+    },
+    "https://www.nasa.gov/nasa/nasa-content-coming-to-big-screen-at-greenbelt-maryland-cinema": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "nasa-news",
+      "error": "triage: score 2: Local cinema screening announcements are institutional promotions."
     },
     "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge": {
       "at": "2026-11-09T02:41:36.168Z",
@@ -3360,6 +3695,16 @@
       "feed": "nist",
       "slug": "quantum-physics-can-verify-a-person-s-location-nist-research"
     },
+    "https://www.noaa.gov/acquisition-grants/protech/news/protechnology-innovation-showcase-from-surface-of-sun-to-depths-of-ocean-use-cases-in-display-and": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "noaa",
+      "error": "triage: score 5: NOAA showcase highlights innovative methods for displaying complex solar and ocean data."
+    },
+    "https://www.noaa.gov/news-release/hurricane-season-wrap-up-el-nino-fueled-record-number-of-pacific-storms-but-calmed-atlantic": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "noaa",
+      "error": "triage: score 3: Seasonal weather roundup of the 2026 hurricane season."
+    },
     "https://www.noaa.gov/news-release/noaa-weather-modeling-hits-key-milestone-with-rapid-refresh-forecast-system-debut": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "noaa",
@@ -3374,6 +3719,11 @@
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "noaa",
       "error": "triage: score 2: An archive partnership expands access to digital oral histories from Alaska."
+    },
+    "https://www.noaa.gov/news/thanksgiving-week-weather-potent-coastal-storms-rain-and-snow-to-impact-travel": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "noaa",
+      "error": "triage: score 2: Holiday travel weather forecasts are short-term news bulletins."
     },
     "https://www.noaa.gov/stories/california-coastal-water-levels-break-records": {
       "at": "2026-11-18T04:18:39.787Z",
@@ -3394,6 +3744,11 @@
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "noaa",
       "error": "triage: score 2: Maine agencies updated shoreline maps to assist with coastal planning."
+    },
+    "https://www.noaa.gov/stories/move-over-turkey-weve-got-seafood-dishes-to-add-to-your-thanksgiving-table": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "noaa",
+      "error": "triage: score 2: Holiday seafood recipe recommendation."
     },
     "https://www.noaa.gov/stories/noaa-fisheries-releases-three-flagship-reports-2025-status-of-stocks-2024-fisheries-of-united-states": {
       "at": "2026-11-17T05:08:37.193Z",
@@ -3810,6 +4165,56 @@
       "feed": "npr-economy",
       "error": "triage: score 1: Temporary news report about Thanksgiving turkey and grocery price inflation."
     },
+    "https://www.npr.org/2026/11/23/nx-s1-6037814/invading-armies-subterfuge-and-conquest-how-fire-ant-wars-affect-ecosystems": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-science",
+      "error": "triage: score 4: General ecological impacts of invasive ants are standard textbook ecology without a novel angle."
+    },
+    "https://www.npr.org/2026/11/23/nx-s1-6047706/health-medicare-for-all-chances": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "npr-health",
+      "error": "triage: score 3: New US senators are reviving proposals for Medicare for All legislation."
+    },
+    "https://www.npr.org/2026/11/23/nx-s1-6048611/chief-economist-for-moodys-analytics-on-why-anthropics-ipo-caused-market-volatility": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "npr-economy",
+      "error": "triage: score 4: Economist Mark Zandi analyzes the market volatility triggered by Anthropic's IPO."
+    },
+    "https://www.npr.org/2026/11/23/nx-s1-6048624/ai-is-making-it-hard-for-young-people-to-find-work-report-says": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-economy",
+      "error": "triage: score 4: Employment trend report on AI impact on entry-level job markets."
+    },
+    "https://www.npr.org/2026/11/23/nx-s1-6048690/from-wall-street-to-main-street-how-artificial-intelligence-is-affecting-the-economy": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "npr-economy",
+      "error": "triage: score 5: Artificial intelligence creates stock market volatility and mixed business adoption results."
+    },
+    "https://www.npr.org/2026/11/24/nx-s1-6001723/vitamin-k-deficiency-refusal-vaccine-misinformation-newborn-bleeding": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-health",
+      "error": "triage: score 6: Medical reporting on parental hesitancy regarding routine newborn vitamin K shots."
+    },
+    "https://www.npr.org/2026/11/24/nx-s1-6042912/drc-congo-mining-china-copper-colbalt-critical-minerals": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-health",
+      "error": "triage: court case"
+    },
+    "https://www.npr.org/2026/11/24/nx-s1-6044239-e1/this-group-of-seamstresses-mends-shirts-to-make-chemo-easier-for-cancer-patients": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-health",
+      "error": "triage: score 3: Local charity garment sewing is a heartwarming community story rather than a global explanatory piece."
+    },
+    "https://www.npr.org/2026/11/24/nx-s1-6047499/many-families-are-cutting-corners-at-the-grocery-store-to-pay-their-other-bills": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-economy",
+      "error": "triage: score 3: Household grocery budgeting adjustments represent standard cost-of-living news rather than deep science."
+    },
+    "https://www.npr.org/2026/11/24/nx-s1-6052351/heres-the-public-health-guidance-for-possible-lead-exposure-in-iowa": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-health",
+      "error": "triage: score 2: Local toxicological public health bulletins are emergency news announcements."
+    },
     "https://www.npr.org/sections/planet-money/2026/11/10/g-s1-152755/why-did-californias-billionaire-tax-fail-to-surf-the-blue-wave": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "npr-economy",
@@ -3829,6 +4234,16 @@
       "at": "2026-11-21T03:58:40.341Z",
       "feed": "npr-economy",
       "error": "triage: score 3: Discussion on cyberattack vulnerabilities in old software and AI-powered threats."
+    },
+    "https://www.npr.org/sections/planet-money/2026/11/24/g-s1-154477/what-should-it-cost-to-insure-a-home-in-wildfire-country": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "npr-economy",
+      "error": "triage: score 5: Wildfire insurance pricing debates are localized regulatory news."
+    },
+    "https://www.nsf.gov/news/podcast-helping-doctors-save-lives-its-too-late": {
+      "at": "2026-11-24T07:08:18.113Z",
+      "feed": "nsf",
+      "error": "Only 51 words of text found"
     },
     "https://www.quantamagazine.org/a-new-era-for-the-dawn-of-life-20261112": {
       "at": "2026-11-16T14:55:59.784Z",
@@ -3924,6 +4339,11 @@
       "at": "2026-11-18T04:20:25.298Z",
       "feed": "quanta",
       "slug": "revisiting-how-chemistry-ignited-life"
+    },
+    "https://www.quantamagazine.org/the-incredible-elegant-dna-repair-system-makes-gene-editing-work-20261123": {
+      "at": "2026-11-25T05:29:20.270Z",
+      "feed": "quanta",
+      "slug": "the-natural-dna-repair-system-powering-gene-editing"
     },
     "https://www.quantamagazine.org/what-makes-up-the-cosmos-a-20-year-survey-hints-that-something-is-missing-20261116": {
       "at": "2026-11-18T04:20:36.181Z",
@@ -4430,11 +4850,6 @@
       "feed": "sciencedaily",
       "slug": "atomic-clocks-may-reveal-the-quantum-nature-of-time"
     },
-    "https://www.sciencedaily.com/releases/2026/11/261120075602.htm": {
-      "at": "2026-11-23T03:45:42.928Z",
-      "feed": "sciencedaily",
-      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
-    },
     "https://www.sciencedaily.com/releases/2026/11/261120075604.htm": {
       "at": "2026-11-23T03:45:47.540Z",
       "feed": "sd-computers",
@@ -4445,10 +4860,50 @@
       "feed": "sciencedaily",
       "slug": "how-dna-s-building-block-survived-early-earth-radiation"
     },
-    "https://www.sciencedaily.com/releases/2026/11/261121221130.htm": {
-      "at": "2026-11-23T03:43:34.118Z",
+    "https://www.sciencedaily.com/releases/2026/11/261121221134.htm": {
+      "at": "2026-11-25T05:39:37.538Z",
+      "feed": "sd-mind-brain",
+      "slug": "depression-may-signal-early-alzheimer-s-brain-changes"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261122060323.htm": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "sd-society",
+      "error": "triage: score 4: Current public health statistics on measles elimination status in the US."
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261122060336.htm": {
+      "at": "2026-11-25T05:39:57.295Z",
+      "feed": "sd-mind-brain",
+      "slug": "brain-cells-found-to-drive-sleep-pressure"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261123005337.htm": {
+      "at": "2026-11-25T05:36:56.960Z",
       "feed": "sciencedaily",
+      "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en, video)"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261123005341.htm": {
+      "at": "2026-11-25T05:36:20.857Z",
+      "feed": "sd-computers",
       "error": "Gemini reply unusable after a retry (hook_en, keyPoint_en)"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261123005346.htm": {
+      "at": "2026-11-25T05:37:25.542Z",
+      "feed": "sd-mind-brain",
+      "slug": "cannabis-linked-to-earlier-psychosis-across-adulthood"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261123005350.htm": {
+      "at": "2026-11-25T05:34:04.678Z",
+      "feed": "sciencedaily",
+      "error": "Gemini reply unusable after a retry (hook_en)"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261123005352.htm": {
+      "at": "2026-11-25T05:31:05.932Z",
+      "feed": "sd-mind-brain",
+      "slug": "new-subtype-of-depression-linked-to-biological-clock"
+    },
+    "https://www.sciencedaily.com/releases/2026/11/261123231244.htm": {
+      "at": "2026-11-25T05:33:21.169Z",
+      "feed": "sd-computers",
+      "slug": "ibm-quantum-computer-solves-complex-problem-in-minutes"
     },
     "https://www.sciencenews.org/article/books-favorite-read-holiday-2026-review": {
       "at": "2026-11-21T03:58:40.341Z",
@@ -4490,15 +4945,30 @@
       "feed": "sciencenews",
       "error": "triage: score 7.5: Off-label testosterone use for female libido is rising while clinical research lags behind demand."
     },
+    "https://www.sciencenews.org/article/man-cats-eyes-faces-brain": {
+      "at": "2026-11-25T05:36:10.500Z",
+      "feed": "sciencenews",
+      "slug": "brain-surgery-left-a-man-seeing-cat-eyes-on-people"
+    },
     "https://www.sciencenews.org/article/measles-us-elimination-status-vaccine": {
       "at": "2026-11-18T04:18:39.787Z",
       "feed": "sciencenews",
       "error": "triage: score 3: This is a breaking public health news report on measles tracking."
     },
+    "https://www.sciencenews.org/article/mitt-and-ted-healthcare-podcast": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "sciencenews",
+      "error": "triage: score 4: Podcast review covering bipartisan healthcare reform efforts by Romney and Kennedy."
+    },
     "https://www.sciencenews.org/article/nat-geo-saving-our-seas-documentary": {
       "at": "2026-11-15T23:33:36.400Z",
       "feed": "sciencenews",
       "error": "triage: score 3: This is a promotional announcement for a television documentary about ocean exploration."
+    },
+    "https://www.sciencenews.org/article/positive-masculinity-male-studies-field": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "sciencenews",
+      "error": "triage: score 6: Researchers debate the concept of positive masculinity and its impact on men's well-being."
     },
     "https://www.sciencenews.org/article/public-health-2026-outbreaks-measles": {
       "at": "2026-11-19T04:11:42.757Z",
@@ -4550,6 +5020,11 @@
       "feed": "smithsonian",
       "slug": "a-stray-data-point-restores-hope-for-dark-matter-physics"
     },
+    "https://www.smithsonianmag.com/science-nature/the-six-biggest-takeaways-from-cop31-which-ended-without-an-agreement-after-talks-broke-down-180989933": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "smithsonian",
+      "error": "triage: score 3: Conference summary and breakdown of political stalemates at COP31."
+    },
     "https://www.smithsonianmag.com/smart-news/a-french-court-annuls-the-sale-of-this-camille-pissarro-painting-allegedly-looted-during-world-war-ii-180989875": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "smithsonian",
@@ -4569,6 +5044,11 @@
       "at": "2026-11-21T03:58:40.341Z",
       "feed": "smithsonian",
       "error": "triage: score 3: This is a short news report about an isolated Amazonian tribe emerging from the rainforest."
+    },
+    "https://www.smithsonianmag.com/smart-news/biologists-discovere-a-one-in-a-million-bright-yellow-burbot-fish-in-new-yorks-oswego-harbor-180989928": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "smithsonian",
+      "error": "triage: score 4: This is a brief news report about an unusual individual animal finding rather than a broad scientific mechanism."
     },
     "https://www.smithsonianmag.com/smart-news/europes-hera-spacecraft-has-begun-its-close-up-investigation-of-the-asteroid-system-nasa-intentionally-hit-in-2022-180989871": {
       "at": "2026-11-17T05:08:37.193Z",
@@ -4595,6 +5075,16 @@
       "feed": "smithsonian",
       "error": "triage: score 3: A Frida Kahlo painting disappeared from her house-museum ahead of an auction."
     },
+    "https://www.smithsonianmag.com/smart-news/in-the-heart-of-harlem-a-new-museum-tells-the-overlooked-story-of-civil-rights-movement-in-the-north-180989934": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "smithsonian",
+      "error": "triage: score 3: Museum opening announcement in Harlem."
+    },
+    "https://www.smithsonianmag.com/smart-news/look-up-this-week-to-see-novembers-full-beaver-moon-the-first-of-four-back-to-back-supermoons-over-the-coming-months-180989927": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "smithsonian",
+      "error": "triage: score 6: Stargazers prepare to view November's full Beaver Moon, the first in a series of back-to-back supermoons."
+    },
     "https://www.smithsonianmag.com/smart-news/medieval-readers-saw-floods-plagues-and-comets-as-omens-of-doom-so-they-created-a-mysterious-manuscript-of-apocalyptic-artworks-to-peruse-at-will-180989891": {
       "at": "2026-11-19T04:23:13.876Z",
       "feed": "smithsonian",
@@ -4604,6 +5094,11 @@
       "at": "2026-11-21T03:58:40.341Z",
       "feed": "smithsonian",
       "error": "triage: score 3: An abstract painting by Hilma af Klint sold at auction for a record price."
+    },
+    "https://www.smithsonianmag.com/smart-news/peggy-guggenheims-first-art-gallery-lasted-just-18-months-but-its-21-exhibitions-showed-a-multitude-of-modern-art-masterpieces-180989930": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "smithsonian",
+      "error": "triage: score 6: Peggy Guggenheim's short-lived London gallery introduced surrealism to a skeptical public."
     },
     "https://www.smithsonianmag.com/smart-news/see-the-rare-baby-rhinoceros-born-in-englands-chester-zoo-an-adorable-addition-to-its-species-numbers-180989902": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -4624,6 +5119,11 @@
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "smithsonian",
       "error": "triage: score 7: Discovery of a final deathbed sketch between Bloomsbury Group artists Vanessa Bell and Duncan Grant."
+    },
+    "https://www.smithsonianmag.com/smart-news/the-first-ever-childrens-booker-prize-revealed-its-eight-shortlisted-finalists-meet-the-four-young-judges-deciding-the-winner-180989940": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "smithsonian",
+      "error": "triage: score 3: Children's literary award shortlists are timely cultural announcements without explanatory depth."
     },
     "https://www.smithsonianmag.com/smart-news/the-nih-has-decided-to-move-its-last-group-of-retired-research-chimpanzees-to-an-animal-sanctuary-next-year-180989907": {
       "at": "2026-11-20T03:59:08.899Z",
@@ -4735,6 +5235,26 @@
       "feed": "tech-review",
       "error": "triage: score 6: Updates to AI capability evaluation graphs offer interesting trends but remain report-based."
     },
+    "https://www.technologyreview.com/2026/11/23/1149548/the-download-ai-judgment-problem-carbon-removal-crop-threat": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "tech-review",
+      "error": "triage: court case"
+    },
+    "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument": {
+      "at": "2026-11-24T07:08:14.447Z",
+      "feed": "tech-review",
+      "error": "triage: score 7: Anthropic's public filing highlights machine consciousness as a novel risk factor."
+    },
+    "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "tech-review",
+      "error": "triage: score 7: Agentic AI network traffic loads are a noteworthy engineering hurdle but heavily tied to immediate tech cycles."
+    },
+    "https://www.technologyreview.com/2026/11/24/1149669/the-download-data-centers-gas-ai-consciousness": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "tech-review",
+      "error": "triage: score 6: Data centers powering themselves with natural gas is an interesting tech trend but lacks deeper conceptual novelty."
+    },
     "https://www.usgs.gov/3d-elevation-program/news/mapping-potomac-new-model-merges-land-and-river-depths-one-3d-surface": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "usgs",
@@ -4789,6 +5309,11 @@
       "at": "2026-10-25T01:15:24.175Z",
       "feed": "usgs",
       "slug": "the-global-food-and-water-security-support-analysis-data-gfs"
+    },
+    "https://www.usgs.gov/international-programs/news/usgs-leverages-si-science-diplomacy-mission-lesotho": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "usgs",
+      "error": "triage: score 3: USGS science diplomacy mission introduction in Lesotho."
     },
     "https://www.usgs.gov/landsat-missions/news/landsat-science-team-dead-vegetation-tells-a-story": {
       "at": "2026-11-02T02:34:11.783Z",
@@ -4900,6 +5425,11 @@
       "feed": "usgs",
       "error": "triage: event notice"
     },
+    "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-kilauea-summit-overflight-1": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "usgs",
+      "error": "triage: event notice"
+    },
     "https://www.usgs.gov/observatories/hvo/news/photo-video-chronology-kilauea-summit-satellite-images": {
       "at": "2026-11-17T05:08:37.193Z",
       "feed": "usgs",
@@ -4994,6 +5524,11 @@
       "at": "2026-11-12T03:50:37.450Z",
       "feed": "usgs",
       "error": "503 https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+    },
+    "https://www.usgs.gov/programs/cmhrp/news/rising-seas-and-coastal-erosion-threaten-sea-turtle-nesting-beaches-around": {
+      "at": "2026-11-25T05:27:56.157Z",
+      "feed": "usgs",
+      "error": "triage: score 7: Global sea turtle nesting vulnerabilities to rising seas are clear ecological data points."
     },
     "https://www.usgs.gov/programs/cmhrp/news/usgs-coastcam-captures-stranding-55-foot-fin-whale-santa-cruz": {
       "at": "2026-11-18T04:18:39.787Z",
