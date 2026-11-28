@@ -1,0 +1,222 @@
+{
+  "slug": "superconducting-sandwich-offers-energy-efficient-computer-me",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=superconducting-sandwich-offers-energy-efficient-computer-me",
+  "category": "technology",
+  "tags": [
+    "superconductivity",
+    "cryogenic memory",
+    "quantum computing",
+    "mit research"
+  ],
+  "title": {
+    "en": "Superconducting Sandwich Offers Energy-Efficient Computer Memory",
+    "vi": "Cấu trúc siêu dẫn mỏng giúp máy tính tiết kiệm năng lượng",
+    "fr": "Un sandwich supraconducteur offre une mémoire informatique écoénergétique",
+    "de": "Supraleitendes Sandwich bietet energieeffiziente Computerspeicher",
+    "es": "Un sándwich superconductor ofrece memoria informática eficiente"
+  },
+  "hook": {
+    "en": "MIT researchers have built a tiny superconducting device that may help future computers store and process data using significantly less energy. Published in Physical Review Letters, this cryogenic memory cell overcomes longstanding hurdles in running high-speed computer processors efficiently at very low temperatures {source}.",
+    "vi": "Các nhà nghiên cứu tại MIT đã chế tạo một thiết bị siêu dẫn nhỏ gọn có thể giúp máy tính tương lai lưu trữ và xử lý dữ liệu với mức năng lượng thấp hơn đáng kể. Được công bố trên tạp chí Physical Review Letters, ô nhớ lạnh này khắc phục những rào cản lâu năm trong việc vận hành bộ xử lý máy tính tốc độ cao ở nhiệt độ rất thấp {source}.",
+    "fr": "Des chercheurs du MIT ont construit un minuscule dispositif supraconducteur qui pourrait aider les futurs ordinateurs à stocker et à traiter des données en utilisant nettement moins d'énergie. Publié dans Physical Review Letters, cette cellule mémoire cryogénique surmonte des obstacles de longue date pour faire fonctionner efficacement des processeurs informatiques à haute vitesse à de très basses températures {source}.",
+    "de": "MIT-Forscher haben ein winziges supraleitendes Gerät entwickelt, das zukünftigen Computern helfen könnte, Daten mit erheblich geringerem Energieaufwand zu speichern und zu verarbeiten. Diese in Physical Review Letters veröffentlichte kryogene Speicherzelle überwindet langjährige Hürden beim effizienten Betrieb von Hochgeschwindigkeits-Rechenprozessoren bei sehr niedrigen Temperaturen {source}.",
+    "es": "Investigadores del MIT han construido un diminuto dispositivo superconductor que puede ayudar a las futuras computadoras a almacenar y procesar datos utilizando mucha menos energía. Publicada en Physical Review Letters, esta celda de memoria criogénica supera obstáculos de larga data para hacer funcionar procesadores informáticos de alta velocidad de manera eficiente a temperaturas muy bajas {source}."
+  },
+  "sections": [
+    {
+      "heading_en": "The Cryogenic Challenge",
+      "heading_vi": "Thử thách nhiệt độ cực thấp",
+      "body_en": "Superconducting computers process information quickly and emit less heat than traditional machines. Yet, matching them with fast, high-capacity memory operating at ultra-cold temperatures has proven difficult. Most standard random access memory loses data when powered off, while nonvolatile memory wears out over time.",
+      "body_vi": "Máy tính siêu dẫn xử lý thông tin nhanh và phát ra ít nhiệt hơn các máy tính truyền thống. Tuy nhiên, việc kết hợp chúng với bộ nhớ dung lượng cao, tốc độ nhanh hoạt động ở nhiệt độ cực lạnh rất khó khăn. Hầu hết bộ nhớ truy cập ngẫu nhiên tiêu chuẩn mất dữ liệu khi tắt nguồn, trong khi bộ nhớ không bay hơi (*nonvolatile memory*) bị hao mòn theo thời gian.",
+      "heading_fr": "Le défi cryogénique",
+      "body_fr": "Les ordinateurs supraconducteurs traitent l'information rapidement et émettent moins de chaleur que les machines traditionnelles. Pourtant, les associer à une mémoire rapide et de grande capacité fonctionnant à des températures ultra-froides s'est avéré difficile. La plupart des mémoires vives standard perdent leurs données lorsqu'elles sont hors tension, tandis que la mémoire non volatile s'use avec le temps.",
+      "heading_de": "Die kryogene Herausforderung",
+      "body_de": "Supraleitende Computer verarbeiten Informationen schnell und geben weniger Wärme ab als herkömmliche Maschinen. Dennoch hat sich ihre Kombination mit schnellen, speicherstarken Einheiten, die bei ultratiefen Temperaturen arbeiten, als schwierig erwiesen. Die meisten standardmäßigen Arbeitsspeicher verlieren beim Abschalten ihre Daten, während nichtflüchtige Speicher mit der Zeit verschleißen.",
+      "heading_es": "El desafío criogénico",
+      "body_es": "Las computadoras superconductoras procesan información rápidamente y emiten menos calor que las máquinas tradicionales. Sin embargo, combinarlas con una memoria rápida y de gran capacidad que funcione a temperaturas ultrasfrías ha resultado difícil. La mayor parte de la memoria de acceso aleatorio estándar pierde datos al apagarse, mientras que la memoria no volátil se desgasta con el tiempo."
+    },
+    {
+      "heading_en": "A Layered Solution",
+      "heading_vi": "Giải pháp cấu trúc lớp",
+      "body_en": "Senior research scientist Jagadeesh Moodera and first author Josep Ingla-Aynés designed a microscopic sandwich containing an ultrathin superconducting film between two magnetic layers. The magnets control whether the film exhibits superconductivity, acting as a nonvolatile memory cell that retains data without a continuous power supply.",
+      "body_vi": "Nhà khoa học nghiên cứu cao cấp Jagadeesh Moodera và tác giả chính Josep Ingla-Aynés đã thiết kế một cấu trúc vi mô gồm một màng siêu dẫn cực mỏng kẹp giữa hai lớp từ tính. Các nam châm kiểm soát khả năng siêu dẫn của màng, đóng vai trò như một ô nhớ không bay hơi giữ lại dữ liệu mà không cần nguồn điện liên tục.",
+      "heading_fr": "Une solution en couches",
+      "body_fr": "Le chercheur principal Jagadeesh Moodera et le premier auteur Josep Ingla-Aynés ont conçu un sandwich microscopique contenant un film supraconducteur ultraminc entre deux couches magnétiques. Les aimants contrôlent si le film présente ou non de la supraconductivité, agissant comme une cellule mémoire non volatile qui conserve les données sans alimentation électrique continue.",
+      "heading_de": "Eine geschichtete Lösung",
+      "body_de": "Der leitende Wissenschaftler Jagadeesh Moodera und der Erstautor Josep Ingla-Aynés entwarfen ein mikroskopisches Sandwich, das einen ultradünnen supraleitenden Film zwischen zwei magnetischen Schichten enthält. Die Magnete steuern, ob der Film Supraleitung zeigt, und fungieren als nichtflüchtige Speicherzelle, die Daten ohne dauerhafte Stromversorgung behält.",
+      "heading_es": "Una solución en capas",
+      "body_es": "El científico investigador sénior Jagadeesh Moodera y el primer autor Josep Ingla-Aynés diseñaron un sándwich microscópico que contiene una película superconductora ultradelgada entre dos capas magnéticas. Los imanes controlan si la película exhibe superconductividad, actuando como una celda de memoria no volátil que retiene datos sin un suministro de energía continuo."
+    },
+    {
+      "heading_en": "Switching Bits and Directing Signals",
+      "heading_vi": "Chuyển đổi dữ liệu và điều hướng tín hiệu",
+      "body_en": "Writing a bit requires applying a tiny magnetic field and an electrical pulse to shift the magnetic alignment. The team successfully switched an individual cell without disturbing neighboring data. At lower temperatures, the device also functions as a superconducting diode, controlling the direction of electrical signals within circuits.",
+      "body_vi": "Việc ghi một bit dữ liệu đòi hỏi phải áp dụng một từ trường nhỏ và một xung điện để thay đổi sự sắp xếp từ tính. Nhóm nghiên cứu đã chuyển đổi thành công một ô riêng lẻ mà không làm xáo trộn dữ liệu xung quanh. Ở nhiệt độ thấp hơn, thiết bị này còn hoạt động như một điốt siêu dẫn (*superconducting diode*), điều khiển hướng tín hiệu điện trong mạch.",
+      "heading_fr": "Commutation de bits et direction des signaux",
+      "body_fr": "L'écriture d'un bit nécessite l'application d'un minuscule champ magnétique et d'une impulsion électrique pour modifier l'alignement magnétique. L'équipe a réussi à commuter une cellule individuelle sans perturber les données voisines. À plus basse température, le dispositif fonctionne également comme une diode supraconductrice, contrôlant la direction des signaux électriques au sein des circuits.",
+      "heading_de": "Bits schalten und Signale leiten",
+      "body_de": "Das Schreiben eines Bits erfordert ein winziges Magnetfeld und einen elektrischen Impuls, um die magnetische Ausrichtung zu verschieben. Dem Team gelang es erfolgreich, eine einzelne Zelle zu schalten, ohne benachbarte Daten zu stören. Bei niedrigeren Temperaturen fungiert das Gerät zudem als supraleitende Diode, die die Richtung elektrischer Signale in Schaltkreisen steuert.",
+      "heading_es": "Conmutación de bits y direccionamiento de señales",
+      "body_es": "Escribir un bit requiere aplicar un campo magnético diminuto y un pulso eléctrico para cambiar la alineación magnética. El equipo cambió con éxito una celda individual sin perturbar los datos vecinos. A temperaturas más bajas, el dispositivo también funciona como un diodo superconductor, controlando la dirección de las señales eléctricas dentro de los circuitos."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "MIT News | Massachusetts Institute of Technology (2026)",
+      "url": "https://news.mit.edu/2026/tiny-superconducting-sandwich-could-help-computers-use-less-energy-1120"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://picsum.photos/id/816/1080/1920",
+    "provider": "unsplash",
+    "author": "Jordan McQueen",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/1eWaod96d3k",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795756434/pagemoor/covers/superconducting-sandwich-offers-energy-efficient-computer-me-311619.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795756435/pagemoor/covers/superconducting-sandwich-offers-energy-efficient-computer-me-311619-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-311619/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Julianna Mullen | Plasma Science",
+      "Fusion Center"
+    ],
+    "originalTitle": "A tiny superconducting sandwich could help computers use less energy",
+    "originalUrl": "https://news.mit.edu/2026/tiny-superconducting-sandwich-could-help-computers-use-less-energy-1120",
+    "publisher": "MIT News | Massachusetts Institute of Technology",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Read the physical review letters paper by the MIT team for exact device measurements.",
+      "Review current cryogenic computing architectures to identify thermal management bottlenecks.",
+      "Calculate the theoretical energy savings of implementing nonvolatile memory in data centers."
+    ],
+    "vi": [
+      "Đọc bài nghiên cứu trên Physical Review Letters của nhóm MIT để nắm kích thước thiết bị chính xác.",
+      "Xem xét các kiến trúc điện toán lạnh hiện tại để xác định điểm nghẽn quản lý nhiệt.",
+      "Tính toán mức tiết kiệm năng lượng lý thuyết khi áp dụng bộ nhớ không bay hơi trong trung tâm dữ liệu."
+    ],
+    "fr": [
+      "Lisez l'article de physical review letters par l'équipe du MIT pour connaître les mesures exactes du dispositif.",
+      "Examinez les architectures informatiques cryogéniques actuelles pour identifier les goulots d'étranglement de la gestion thermique.",
+      "Calculez les économies d'énergie théoriques liées à l'implantation d'une mémoire non volatile dans les centres de données."
+    ],
+    "de": [
+      "Lies das Paper des MIT-Teams in Physical Review Letters für genaue Gerätemessungen.",
+      "Überprüfe aktuelle kryogene Rechnerarchitekturen, um thermische Engpässe zu identifizieren.",
+      "Berechne die theoretischen Energieeinsparungen beim Einsatz nichtflüchtiger Speicher in Rechenzentren."
+    ],
+    "es": [
+      "Lea el artículo de physical review letters del equipo del MIT para obtener las medidas exactas del dispositivo.",
+      "Revise las arquitecturas informáticas criogénicas actuales para identificar cuellos de botella en la gestión térmica.",
+      "Calcule el ahorro energético teórico de implementar memoria no volátil en centros de datos."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/816/1080/1920",
+      "provider": "unsplash",
+      "author": "Jordan McQueen",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/1eWaod96d3k"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/373/1080/1920",
+      "provider": "unsplash",
+      "author": "Jay Wennington",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/i8CYGnoerR0"
+    },
+    {
+      "type": "image",
+      "url": "https://picsum.photos/id/182/1080/1920",
+      "provider": "unsplash",
+      "author": "Andrea Boldizsar",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BwgKUh9tN84"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoQABwAPu1iqk2ppaQiMAgBMB2JZQABFjxIKQOW3x5zWheOJTgAAP79v54P0MfEFPvwLPGW2KrpKsC5cTEidES18IWJfj6m7/suc6Lvl9FgZNnu0j4bpu0IfJ05VoaGQ77Z4Nnfy+35rDAOefCqRVlYQvlviaw/v0Hy4DXn8GW3OR2e20sSU91jh+ive5oeV1+F02Jcj2+MgelNOME+3TPIAAA=",
+  "dominant": "#7a6d65",
+  "glossary": {
+    "en": {
+      "superconducting": "Able to conduct electricity with zero resistance at very low temperatures.",
+      "cryogenic": "Relating to extremely low temperatures near absolute zero.",
+      "physical review letters": "A prominent peer-reviewed scientific journal publishing short physics papers.",
+      "random access memory": "Computer memory that temporarily stores working data for quick access.",
+      "nonvolatile memory": "Computer memory that retains stored data even when powered off.",
+      "superconductivity": "The physical property of zero electrical resistance in certain materials.",
+      "superconducting diode": "A device that allows electrical signals to flow in one direction only.",
+      "circuits": "Complete paths through which electricity can flow to perform tasks."
+    },
+    "vi": {
+      "siêu dẫn": "Hiện tượng vật liệu dẫn điện hoàn toàn không có điện trở ở nhiệt độ rất thấp.",
+      "physical review letters": "Tạp chí khoa học uy tín chuyên công bố các nghiên cứu vật lý quan trọng.",
+      "ô nhớ lạnh": "Thiết bị lưu trữ dữ liệu hoạt động hiệu quả ở nhiệt độ cực kỳ thấp.",
+      "bộ nhớ không bay hơi": "Loại bộ nhớ giữ nguyên được dữ liệu ngay cả khi đã tắt nguồn điện.",
+      "nonvolatile memory": "Thuật ngữ tiếng Anh chỉ bộ nhớ không bị mất dữ liệu khi mất nguồn điện.",
+      "cấu trúc vi mô": "Cấu trúc vật lý được thiết kế ở kích thước vô cùng nhỏ.",
+      "màng siêu dẫn": "Lớp vật liệu mỏng có tính chất siêu dẫn được ứng dụng trong thiết bị.",
+      "điốt siêu dẫn": "Linh kiện cho dòng điện siêu dẫn chạy theo một hướng duy nhất.",
+      "superconducting diode": "Tên tiếng Anh của linh kiện điều khiển hướng dòng điện siêu dẫn."
+    },
+    "fr": {
+      "supraconducteur": "Matériau conduisant l'électricité sans résistance ni perte d'énergie à des températures très basses.",
+      "cryogénique": "Relatif aux très basses températures proches du zéro absolu.",
+      "mémoire non volatile": "Mémoire informatique conservant ses données même en l'absence d'alimentation électrique.",
+      "supraconductivité": "État physique caractérisé par une résistance électrique nulle et l'expulsion du champ magnétique.",
+      "champ magnétique": "Zone de l'espace où s'exercent des forces magnétiques provenant d'aimants ou de courants.",
+      "diode supraconductrice": "Composant électronique guidant le signal électrique dans une seule direction dans un milieu supraconducteur.",
+      "bit": "Plus petite unité d'information stockée dans un ordinateur, valant zéro ou un.",
+      "commutation": "Action de faire basculer un système d'un état ou d'une valeur à un autre."
+    },
+    "de": {
+      "supraleitende": "Materialien, die bei extrem niedrigen Temperaturen Strom ohne elektrischen Widerstand leiten.",
+      "kryogene": "Bei sehr niedrigen Temperaturen in der Nähe des absoluten Nullpunkts stattfindend.",
+      "speicherzelle": "Eine grundlegende elektronische Einheit zur Speicherung eines einzelnen Datenbits.",
+      "nichtflüchtige": "Speicherarten, die gespeicherte Daten auch nach dem Abschalten der Stromversorgung dauerhaft behalten.",
+      "supraleitung": "Der physikalische Zustand völligen Verlusts des elektrischen Widerstands in bestimmten Materialien.",
+      "diode": "Ein elektronisches Bauelement, das den Stromfluss in nur eine Richtung steuert.",
+      "schaltkreisen": "Geschlossene elektrische Bahnen aus Leitern zur Weiterleitung von Signalen und Energie.",
+      "magnetfeld": "Ein physikalisches Feld, das magnetische Kräfte auf bewegte Ladungen und Magneten ausübt."
+    },
+    "es": {
+      "superconductor": "Material que conduce la electricidad sin resistencia ni pérdida de energía a temperaturas muy bajas.",
+      "criogénica": "Rama de la física que estudia el comportamiento de la materia a temperaturas cercanas al cero absoluto.",
+      "memoria no volátil": "Tipo de memoria informática que retiene los datos almacenados incluso cuando se apaga el dispositivo.",
+      "superconductividad": "Propiedad de ciertos materiales de conducir corriente eléctrica sin resistencia por debajo de cierta temperatura.",
+      "diodo": "Componente electrónico que permite el flujo de corriente eléctrica en una sola dirección.",
+      "campo magnético": "Región del espacio donde se manifiestan las fuerzas magnéticas ejercidas por imanes o corrientes.",
+      "pulso eléctrico": "Breve variación transitoria de la tensión o corriente eléctrica en un circuito.",
+      "arquitecturas": "Diseño y estructura organizativa de los componentes de un sistema informático."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-27T04:56:43.869Z"
+}

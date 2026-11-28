@@ -1,0 +1,257 @@
+{
+  "slug": "ai-helps-solve-century-old-riemann-hypothesis",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=ai-helps-solve-century-old-riemann-hypothesis",
+  "category": "science",
+  "tags": [
+    "mathematics",
+    "riemann hypothesis",
+    "artificial intelligence",
+    "prime numbers"
+  ],
+  "title": {
+    "en": "AI Helps Solve Century-Old Riemann Hypothesis",
+    "vi": "Trí tuệ nhân tạo giúp giải quyết giả thuyết Riemann thế kỷ",
+    "fr": "L'IA aide à résoudre l'hypothèse de Riemann",
+    "de": "KI hilft bei Lösung des jahrhundertealten Riemann-Hypothese",
+    "es": "La IA ayuda a resolver la secular hipótesis de Riemann"
+  },
+  "hook": {
+    "en": "A human mathematician working alongside an artificial intelligence tool has apparently solved the Riemann hypothesis, the most famous puzzle in mathematics {source}. This century-old problem connects directly to prime numbers and has resisted repeated attempts at solution until now. Independent researchers confirmed the result quickly, marking a massive shift in how complex mathematical proofs are constructed.",
+    "vi": "Một nhà toán học làm việc cùng công cụ trí tuệ nhân tạo vừa giải quyết giả thuyết Riemann, bài toán nổi tiếng nhất trong toán học {source}. Thử thách kéo dài hơn một thế kỷ này liên kết trực tiếp với các số nguyên tố và đã kháng cự mọi nỗ lực giải quyết cho đến nay. Các nhà nghiên cứu độc lập đã xác nhận kết quả một cách nhanh chóng, đánh dấu bước chuyển lớn trong cách xây dựng các chứng minh toán học phức tạp.",
+    "fr": "Un mathématicien travaillant aux côtés d'un outil d'intelligence artificielle a apparemment résolu l'hypothèse de Riemann, le casse-tête le plus célèbre des mathématiques {source}. Ce problème centenaire est directement lié aux nombres premiers et a résisté à des tentatives répétées de résolution jusqu'à présent. Des chercheurs indépendants ont rapidement confirmé le résultat, marquant un changement majeur dans la manière dont les preuves mathématiques complexes sont construites.",
+    "de": "Ein menschlicher Mathematiker hat im Team mit einem Werkzeug der künstlichen Intelligenz offenbar die Riemann-Hypothese gelöst, das berühmteste Rätsel der Mathematik {source}. Dieses jahrhundertealte Problem ist direkt mit Primzahlen verbunden und leistete wiederholten Lösungsversuchen bis jetzt Widerstand. Unabhängige Forscher bestätigten das Ergebnis rasch, was einen massiven Wandel markiert, wie komplexe mathematische Beweise konstruiert werden.",
+    "es": "Un matemático humano que trabaja junto con una herramienta de inteligencia artificial aparentemente ha resuelto la hipótesis de Riemann, el enigma más famoso de las matemáticas {source}. Este problema centenario se conecta directamente con los números primos y se ha resistido a repetidos intentos de solución hasta ahora. Investigadores independientes confirmaron el resultado rápidamente, lo que marca un cambio masivo en la forma en que se construyen las demostraciones matemáticas complejas."
+  },
+  "sections": [
+    {
+      "heading_en": "The Proof and Confirmation",
+      "heading_vi": "Chứng minh và xác nhận",
+      "body_en": "Levent Alpöge, a mathematician at Anthropic, posted the proof on November 20 after developing it alongside the AI tool Claude {source}. By the next day, independent researchers at Lean Focused Research Organization and Mathlib Initiative confirmed the result in a joint statement. The final output spans 250,000 pages of dense mathematics, and researchers are currently working to translate it into readable language.",
+      "body_vi": "Levent Alpöge, nhà toán học tại [p:Anthropic], đăng tải bài chứng minh vào ngày 20 tháng 11 sau khi phát triển nó cùng công cụ trí tuệ nhân tạo Claude {source}. Đến ngày hôm sau, các nhà nghiên cứu độc lập tại Lean Focused Research Organization và Mathlib Initiative đã xác nhận kết quả qua tuyên bố chung. Sản phẩm hoàn chỉnh kéo dài 250.000 trang toán học dày đặc, và các nhà nghiên cứu đang nỗ lực dịch nó sang ngôn ngữ dễ hiểu.",
+      "heading_fr": "La preuve et la confirmation",
+      "body_fr": "Levent Alpöge, mathématicien chez Anthropic, a publié la preuve le 20 novembre après l'avoir élaborée avec l'aide de l'outil d'IA Claude {source}. Dès le lendemain, des chercheurs indépendants de Lean Focused Research Organization et de Mathlib Initiative ont confirmé le résultat dans une déclaration conjointe. Le résultat final s'étend sur 250 000 pages de mathématiques denses, et les chercheurs s'efforcent actuellement de le traduire en un langage lisible.",
+      "heading_de": "Der Beweis und die Bestätigung",
+      "body_de": "Levent Alpöge, ein Mathematiker bei Anthropic, veröffentlichte den Beweis am 20. November, nachdem er ihn gemeinsam mit dem KI-Werkzeug Claude entwickelt hatte {source}. Bis zum nächsten Tag bestätigten unabhängige Forscher der Lean Focused Research Organization und der Mathlib Initiative das Ergebnis in einer gemeinsamen Erklärung. Das endgültige Ergebnis umfasst 250.000 Seiten dichter Mathematik, und Forscher arbeiten derzeit daran, es in lesbare Sprache zu übersetzen.",
+      "heading_es": "La demostración y la confirmación",
+      "body_es": "Levent Alpöge, matemático de Anthropic, publicó la demostración el 20 de noviembre tras desarrollarla junto con la herramienta de inteligencia artificial Claude {source}. Al día siguiente, investigadores independientes de Lean Focused Research Organization y Mathlib Initiative confirmaron el resultado en una declaración conjunta. El producto final abarca 250.000 páginas de matemáticas densas, y los investigadores trabajan actualmente para traducirlo a un lenguaje legible."
+    },
+    {
+      "heading_en": "Collaboration Method",
+      "heading_vi": "Phương pháp hợp tác",
+      "body_en": "Alpöge did not simply request a proof and wait for the system to finish {source}. He spent six weeks working back and forth with the AI. Claude checked its own work using Lean, which is software that converts mathematical arguments into code to ensure logical consistency. The system also accessed Mathlib, a library of established arguments already converted into Lean, while building on training data from thousands of human mathematicians.",
+      "body_vi": "Alpöge không đơn thuần yêu cầu một lời giải rồi chờ đợi hệ thống hoàn tất {source}. Ông dành sáu tuần làm việc qua lại với trí tuệ nhân tạo. Claude tự kiểm tra công việc bằng phần mềm Lean nhằm chuyển đổi các luận điểm toán học thành mã để đảm bảo tính nhất quán logic. Hệ thống này cũng truy cập thư viện Mathlib gồm các luận điểm đã được chuyển đổi sẵn.",
+      "heading_fr": "Méthode de collaboration",
+      "body_fr": "Alpöge n'a pas simplement demandé une preuve et attendu que le système ait fini {source}. Il a passé six semaines à faire des allers-retours avec l'IA. Claude a vérifié son propre travail à l'aide de Lean, un logiciel qui convertit les arguments mathématiques en code pour garantir la cohérence logique. Le système a également accédé à Mathlib, une bibliothèque d'arguments établis déjà convertis en Lean, tout en s'appuyant sur des données d'entraînement provenant de milliers de mathématiciens humains.",
+      "heading_de": "Methode der Zusammenarbeit",
+      "body_de": "Alpöge hat nicht einfach einen Beweis angefordert und gewartet, bis das System fertig war {source}. Er verbrachte sechs Wochen damit, im Hin und Her mit der KI zu arbeiten. Claude überprüfte seine eigene Arbeit mit Lean, einer Software, die mathematische Argumente in Code umwandelt, um logische Konsistenz sicherzustellen. Das System griff auch auf Mathlib zu, eine Bibliothek bereits in Lean konvertierter etablierter Argumente, während es auf Trainingsdaten von Tausenden menschlichen Mathematikern aufbaute.",
+      "heading_es": "Método de colaboración",
+      "body_es": "Alpöge no se limitó a solicitar una demostración y esperar a que el sistema terminara {source}. Pasó seis semanas trabajando de ida y vuelta con la IA. Claude verificó su propio trabajo utilizando Lean, un software que convierte argumentos matemáticos en código para garantizar la consistencia lógica. El sistema también accedió a Mathlib, una biblioteca de argumentos establecidos ya convertidos en Lean, mientras aprovechaba datos de entrenamiento de miles de matemáticos humanos."
+    },
+    {
+      "heading_en": "Broader Implications",
+      "heading_vi": "Ý nghĩa rộng hơn",
+      "body_en": "The Riemann hypothesis dates back to 1859 and reveals a hidden order among prime numbers through the Riemann zeta function {source}. Because many mathematical statements rely on this hypothesis, the new proof creates wide effects across the field. Ken Ono of the University of Virginia calls the event an earthquake in mathematics, while Alpöge notes that he solved a more general form of the hypothesis as well.",
+      "body_vi": "Giả thuyết Riemann có từ năm 1859 và tiết lộ trật tự ẩn giấu giữa các số nguyên tố thông qua hàm zeta Riemann {source}. Vì nhiều mệnh đề toán học phụ thuộc vào giả thuyết này, chứng minh mới tạo ra tác động rộng lớn trong lĩnh vực này. Ken Ono từ Đại học Virginia gọi sự kiện này là một trận động đất trong toán học, trong khi Alpöge lưu ý rằng ông đã giải quyết cả dạng tổng quát hơn của giả thuyết.",
+      "heading_fr": "Implications plus larges",
+      "body_fr": "L'hypothèse de Riemann remonte à 1859 et révèle un ordre caché parmi les nombres premiers grâce à la fonction zêta de Riemann {source}. Étant donné que de nombreux énoncés mathématiques reposent sur cette hypothèse, la nouvelle preuve engendre de vastes répercussions dans tout le domaine. Ken Ono, de l'Université de Virginie, qualifie cet événement de séisme en mathématiques, tandis qu'Alpöge note qu'il a également résolu une forme plus générale de l'hypothèse.",
+      "heading_de": "Breitere Implikationen",
+      "body_de": "Die Riemann-Hypothese geht auf das Jahr 1859 zurück und offenbart durch die Riemannsche Zeta-Funktion eine verborgene Ordnung unter Primzahlen {source}. Da viele mathematische Aussagen auf dieser Hypothese beruhen, erzeugt der neue Beweis weitreichende Effekte im gesamten Fachgebiet. Ken Ono von der University of Virginia nennt das Ereignis ein Erdbeben in der Mathematik, während Alpöge anmerkt, dass er zudem eine allgemeinere Form der Hypothese gelöst hat.",
+      "heading_es": "Implicaciones más amplias",
+      "body_es": "La hipótesis de Riemann data de 1859 y revela un orden oculto entre los números primos a través de la función zeta de Riemann {source}. Como muchas afirmaciones matemáticas dependen de esta hipótesis, la nueva demostración genera amplios efectos en todo el campo. Ken Ono, de la Universidad de Virginia, califica el acontecimiento de terremoto en las matemáticas, mientras que Alpöge señala que también resolvió una forma más general de la hipótesis."
+    },
+    {
+      "heading_en": "Criticism and Debate",
+      "heading_vi": "Chỉ trích và tranh luận",
+      "body_en": "Cognitive scientist Gary Marcus of New York University argues that this mathematical genius will not automatically transfer to open-ended problems in biology or business {source}. The Association for Human Mathematics stated that no single human can claim full responsibility for the proof. Bryna Kra of Northwestern University remains hopeful, however, viewing the milestone as a beginning that opens up fresh questions.",
+      "body_vi": "Nhà khoa học nhận thức Gary Marcus từ Đại học New York lập luận rằng thiên tài toán học này sẽ không tự động chuyển dịch sang các vấn đề mở trong sinh học hoặc kinh doanh {source}. Thêm vào đó, Hiệp hội Toán học Con người tuyên bố không con người đơn lẻ nào có thể nhận toàn bộ trách nhiệm về chứng minh. Dù vậy, Bryna Kra từ Đại học Northwestern vẫn giữ hy vọng, xem cột mốc này là điểm khởi đầu mở ra nhiều câu hỏi mới.",
+      "heading_fr": "Critiques et débat",
+      "body_fr": "Le spécialiste des sciences cognitives Gary Marcus, de l'Université de New York, soutient que ce génie mathématique ne se transmettra pas automatiquement à des problèmes ouverts en biologie ou en affaires {source}. De plus, l'Association for Human Mathematics a déclaré qu'aucun humain ne pouvait revendiquer l'entière responsabilité de la preuve. Bryna Kra, de l'Université Northwestern, reste toutefois optimiste et considère cette étape comme un début qui ouvre de nouvelles perspectives.",
+      "heading_de": "Kritik und Debatte",
+      "body_de": "Der Kognitionswissenschaftler Gary Marcus von der New York University argumentiert, dass dieses mathematische Genie nicht automatisch auf offene Probleme in Biologie oder Wirtschaft übertragbar ist {source}. Zudem erklärte die Association for Human Mathematics, dass kein einzelner Mensch die alleinige Verantwortung für den Beweis beanspruchen kann. Bryna Kra von Northwestern University bleibt jedoch zuversichtlich und betrachtet den Meilenstein als einen Anfang, der neue Fragen aufwirft.",
+      "heading_es": "Crítica y debate",
+      "body_es": "El científico cognitivo Gary Marcus, de la Universidad de Nueva York, sostiene que este genio matemático no se trasladará automáticamente a problemas abiertos en biología o negocios {source}. Además, la Asociación para Matemáticas Humanas afirmó que ningún ser humano en solitario puede reclamar toda la responsabilidad de la demostración. No obstante, Bryna Kra, de la Universidad Northwestern, mantiene la esperanza y ve el hito como un comienzo que abre nuevas preguntas."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Science News (2026)",
+      "url": "https://www.sciencenews.org/article/riemann-hypothesis-solved-math-ai"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Shubham Dhage",
+    "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/fwbUN8IYvQY",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/fwbUN8IYvQY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795756295/pagemoor/covers/ai-helps-solve-century-old-riemann-hypothesis-5088.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795756297/pagemoor/covers/ai-helps-solve-century-old-riemann-hypothesis-5088-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-5088/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Emily Conover"
+    ],
+    "originalTitle": "Math’s holy grail, the Riemann hypothesis, appears solved with AI’s help",
+    "originalUrl": "https://www.sciencenews.org/article/riemann-hypothesis-solved-math-ai",
+    "publisher": "Science News",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Break down your complex project into smaller logical components.",
+      "Test each logical link using an external verification tool or trusted software.",
+      "Collaborate with automated systems iteratively rather than demanding a single final answer."
+    ],
+    "vi": [
+      "Chia nhỏ dự án phức tạp của bạn thành các thành phần logic nhỏ hơn.",
+      "Kiểm tra từng liên kết logic bằng công cụ xác minh bên ngoài hoặc phần mềm đáng tin cậy.",
+      "Hợp tác với các hệ thống tự động theo chu kỳ thay vì đòi hỏi một câu trả lời cuối cùng duy nhất."
+    ],
+    "fr": [
+      "Décomposez votre projet complexe en composants logiques plus petits.",
+      "Testez chaque lien logique à l'aide d'un outil de vérification externe ou d'un logiciel de confiance.",
+      "Collaborez avec des systèmes automatisés de manière itérative plutôt que d'exiger une seule réponse finale."
+    ],
+    "de": [
+      "Zerlege dein komplexes Projekt in kleinere logische Komponenten.",
+      "Teste jede logische Verknüpfung mit einem externen Überprüfungswerkzeug oder vertrauenswürdiger Software.",
+      "Arbeite iterativ mit automatisierten Systemen zusammen, anstatt eine einzige finale Antwort zu fordern."
+    ],
+    "es": [
+      "Desglose su proyecto complejo en componentes lógicos más pequeños.",
+      "Pruebe cada enlace lógico utilizando una herramienta de verificación externa o un software de confianza.",
+      "Colabore con sistemas automatizados de forma iterativa en lugar de exigir una única respuesta final."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/fwbUN8IYvQY",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/fwbUN8IYvQY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1665725045018-d734fe11e46d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fEFJJTIwSGVscHMlMjBTb2x2ZSUyMENlbnR1cnklMjBzY2llbmNlfGVufDF8MXx8fDE3OTU3NTU3OTJ8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1665725045018-d734fe11e46d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fEFJJTIwSGVscHMlMjBTb2x2ZSUyMENlbnR1cnklMjBzY2llbmNlfGVufDF8MXx8fDE3OTU3NTU3OTJ8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Pramod Tiwari",
+      "authorUrl": "https://unsplash.com/@pramodtiwari?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/vuN2nAQCg3k",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/vuN2nAQCg3k/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fEFJJTIwSGVscHMlMjBTb2x2ZSUyMENlbnR1cnklMjBzY2llbmNlfGVufDF8MXx8fDE3OTU3NTU3OTJ8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1727773377683-c199bc6fa9d3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1727773377683-c199bc6fa9d3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "TSD Studio",
+      "authorUrl": "https://unsplash.com/@tsd_studio?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/s4AhHQmvai4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/s4AhHQmvai4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1750365920056-d4b4ca73fbaa?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1750365920056-d4b4ca73fbaa?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Omar:. Lopez-Rincon",
+      "authorUrl": "https://unsplash.com/@procopiopi?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/8i9dzwZ_O4I",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/8i9dzwZ_O4I/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8Mnx8QUklMjBIZWxwcyUyMFNvbHZlJTIwQ2VudHVyeSUyMHNjaWVuY2V8ZW58MXwxfHx8MTc5NTc1NTc5Mnww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABwBACdASoQABwAPu1iqU2ppaQiMAgBMB2JbACdAYwAtWvBIbPpfZW/86iiAAD+5wYSHjfBTP7zPyo65ftNz+Qgs/f6pgriHiT8WEm0sGVGwlX57dnxsdx/8hqev5HifN6a044wtFxzmHTNBYElY3fd/cH65QAFtP+I8CfCO/Z+2pZyzCQUQ3aRev3LJnWQF1/AXMuThtkETPmb3fWLKvQFUpEyZZZseYJsjwrYzxdaSZTV7FHRQAAA",
+  "dominant": "#675469",
+  "glossary": {
+    "en": {
+      "riemann hypothesis": "A famous century-old mathematical puzzle connecting directly to prime numbers.",
+      "anthropic": "The organization where mathematician Levent Alpöge works.",
+      "claude": "The artificial intelligence tool used alongside a human mathematician.",
+      "lean": "Software that converts mathematical arguments into code to ensure logical consistency.",
+      "mathlib": "A library of established mathematical arguments converted into code.",
+      "riemann zeta function": "A mathematical function revealing hidden order among prime numbers.",
+      "ken ono": "A researcher from the University of Virginia commenting on the mathematical breakthrough.",
+      "gary marcus": "A cognitive scientist from New York University discussing limitations of the proof.",
+      "association for human mathematics": "An organization noting that no single human claims full responsibility for the proof.",
+      "bryna kra": "A researcher from Northwestern University viewing the milestone hopefully."
+    },
+    "vi": {
+      "giả thuyết riemann": "Bài toán toán học nổi tiếng từ năm 1859 liên kết trực tiếp với các số nguyên tố.",
+      "anthropic": "Công ty phát triển công nghệ trí tuệ nhân tạo, nơi nhà toán học Levent Alpöge làm việc.",
+      "claude": "Công cụ trí tuệ nhân tạo được sử dụng để phát triển và kiểm tra bài chứng minh toán học.",
+      "lean": "Phần mềm dùng để tự kiểm tra công việc và chuyển đổi luận điểm toán học thành mã.",
+      "mathlib": "Thư viện chứa các luận điểm toán học đã được chuyển đổi sẵn.",
+      "hàm zeta riemann": "Hàm toán học tiết lộ trật tự ẩn giấu giữa các số nguyên tố.",
+      "số nguyên tố": "Các số tự nhiên lớn hơn 1 chỉ chia hết cho 1 và chính nó.",
+      "mệnh đề": "Khẳng định toán học có tính đúng hoặc sai."
+    },
+    "fr": {
+      "hypothèse de riemann": "célèbre problème mathématique formulé en 1859 concernant la distribution des zéros de la fonction zêta de Riemann.",
+      "nombres premiers": "nombres entiers supérieurs à 1 qui ne sont divisibles que par 1 et par eux-mêmes.",
+      "lean": "logiciel qui convertit les arguments mathématiques en code informatique pour garantir leur rigueur logique.",
+      "mathlib": "bibliothèque d'arguments mathématiques pré-convertis utilisable par le logiciel Lean.",
+      "fonction zêta de riemann": "fonction mathématique complexe jouant un rôle central dans l'étude de la répartition des nombres premiers.",
+      "anthropic": "entreprise spécialisée dans le développement de technologies d'intelligence artificielle.",
+      "intelligence artificielle": "ensemble de techniques permettant à des machines de simuler l'intelligence humaine et de résoudre des tâches complexes.",
+      "chercheurs indépendants": "scientifiques extérieurs au projet initial qui vérifient et valident de manière autonome les résultats obtenus."
+    },
+    "de": {
+      "riemann-hypothese": "Berühmtes mathematisches Problem, das eine verborgene Ordnung unter Primzahlen über die Riemannsche Zeta-Funktion beschreibt.",
+      "anthropic": "Unternehmen für künstliche Intelligenz, das an der Entwicklung fortschrittlicher Sprachmodelle wie Claude beteiligt ist.",
+      "claude": "Ein von Anthropic entwickeltes Werkzeug der künstlichen Intelligenz, das bei der Erstellung des Beweises half.",
+      "lean": "Software zur Umwandlung mathematischer Argumente in Programmcode zur Sicherung logischer Konsistenz.",
+      "mathlib": "Bibliothek bereits in Lean konvertierter mathematischer Argumente und Sätze.",
+      "riemannsche zeta-funktion": "Komplexe mathematische Funktion, die zur Untersuchung der Verteilung von Primzahlen herangezogen wird.",
+      "primzahlen": "Zahlen größer als eins, die nur durch sich selbst und durch eins ganzzahlig teilbar sind.",
+      "kognitionswissenschaftler": "Wissenschaftler, der geistige Prozesse wie Denken, Lernen und Wahrnehmung erforscht."
+    },
+    "es": {
+      "hipótesis de riemann": "Famoso problema matemático centenario sobre la distribución de los ceros de la función zeta de Riemann.",
+      "números primos": "Números enteros mayores que uno que solo son divisibles por sí mismos y por el uno.",
+      "claude": "Herramienta de inteligencia artificial avanzada desarrollada por la empresa Anthropic.",
+      "lean": "Software que convierte argumentos matemáticos en código para asegurar la consistencia lógica.",
+      "mathlib": "Biblioteca de argumentos matemáticos establecidos que han sido convertidos previamente a Lean.",
+      "función zeta de riemann": "Función matemática compleja vinculada estrechamente con la distribución de los números primos.",
+      "demostración": "Argumento lógico riguroso que establece la verdad de una afirmación matemática de manera indiscutible.",
+      "iterativa": "Metodología basada en la repetición de procesos para alcanzar una mejora o solución progresiva."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-27T05:02:43.869Z"
+}

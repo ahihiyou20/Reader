@@ -1,0 +1,243 @@
+{
+  "slug": "the-natural-dna-repair-system-powering-gene-editing",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=the-natural-dna-repair-system-powering-gene-editing",
+  "category": "science",
+  "tags": [
+    "dna repair",
+    "gene editing",
+    "crispr",
+    "molecular biology"
+  ],
+  "title": {
+    "en": "The Natural DNA Repair System Powering Gene Editing",
+    "vi": "Hệ Thống Sửa Chữa DNA Tự Nhiên Cung Cấp Năng Lực Cho Chỉnh Sửa Gene",
+    "fr": "Le système de réparation naturelle de l'ADN au cœur de l'édition génétique",
+    "de": "Das natürliche DNA-Reparatursystem hinter der Genbearbeitung",
+    "es": "El sistema natural de reparación del ADN que impulsa la edición genética"
+  },
+  "hook": {
+    "en": "Cells face thousands of DNA injuries every day because the genetic code must remain accessible to function {source}. While this constant exposure causes damage, it also relies on native repair mechanisms that scientists now harness to treat genetic diseases.",
+    "vi": "Tế bào đối mặt với hàng nghìn tổn thương DNA mỗi ngày vì mã di truyền phải luôn mở để hoạt động {source}. Dù việc tiếp xúc liên tục này gây ra hư hại, cơ thể vẫn nhờ cậy các cơ chế sửa chữa tự nhiên mà các nhà khoa học đang tận dụng để điều trị bệnh di truyền.",
+    "fr": "Les cellules font face à des milliers de lésions de l'ADN chaque jour, car le code génétique doit rester accessible pour fonctionner {source}. Bien que cette exposition constante provoque des dommages, elle s'appuie également sur des mécanismes de réparation natifs que les scientifiques exploitent désormais pour traiter des maladies génétiques.",
+    "de": "Zellen erleiden jeden Tag Tausende von DNA-Schäden, da der genetische Code zugänglich bleiben muss, um zu funktionieren {source}. Diese ständige Belastung führt zwar zu Schäden, stützt sich aber auch auf natürliche Reparaturmechanismen, die Wissenschaftler heute zur Behandlung genetischer Erkrankungen nutzen.",
+    "es": "Las células se enfrentan a miles de lesiones de ADN cada día porque el código genético debe seguir accesible para funcionar {source}. Aunque esta exposición constante causa daños, también depende de mecanismos de reparación nativos que los científicos aprovechan hoy para tratar enfermedades genéticas."
+  },
+  "sections": [
+    {
+      "heading_en": "Constant Damage",
+      "heading_vi": "Tổn Thương Liên Tục",
+      "body_en": "Molecular biologist Björn Schumacher estimates that individual cells endure up to 100,000 damage events daily. Environmental factors and normal metabolism constantly assault the delicate double helix. Without rapid intervention, these injuries disrupt essential instructions and cause cell death or cancer.",
+      "body_vi": "Nhà sinh học phân tử Björn Schumacher ước tính mỗi tế bào chịu tới 100.000 sự kiện hư hại mỗi ngày. Các yếu tố môi trường và quá trình trao đổi chất bình thường liên tục tấn công cấu trúc chuỗi xoắn kép mỏng manh. Nếu không có sự can thiệp nhanh chóng, những tổn thương này làm gián đoạn các hướng dẫn thiết yếu và gây ra cái chết tế bào hoặc bệnh ung thư.",
+      "heading_fr": "Dommages constants",
+      "body_fr": "Le biologiste moléculaire Björn Schumacher estime que les cellules individuelles subissent jusqu'à 100 000 événements de dommages par jour. Les facteurs environnementaux et le métabolisme normal agressent constamment la fragile double hélice. Sans intervention rapide, ces lésions perturbent des instructions essentielles et provoquent la mort cellulaire ou le cancer.",
+      "heading_de": "Ständige Schäden",
+      "body_de": "Der Molekularbiologe Björn Schumacher schätzt, dass einzelne Zellen täglich bis zu 100.000 Schadensereignisse überstehen müssen. Umweltfaktoren und der normale Stoffwechsel greifen die empfindliche Doppelhelix ununterbrochen an. Ohne schnelles Eingreifen stören diese Verletzungen lebenswichtige Anweisungen und führen zum Zelltod oder zu Krebs.",
+      "heading_es": "Daño constante",
+      "body_es": "El biólogo molecular Björn Schumacher calcula que cada célula soporta hasta 100.000 eventos de daño al día. Los factores ambientales y el metabolismo normal agreden de forma constante la delicada doble hélice. Sin una intervención rápida, estas lesiones interrumpen instrucciones esenciales y provocan la muerte celular o cáncer."
+    },
+    {
+      "heading_en": "Repair Pathways",
+      "heading_vi": "Con Đường Sửa Chữa",
+      "body_en": "Cells deploy specialized enzymes to fix single-base errors through [p:base excision repair]. When ultraviolet radiation creates bulky distortions, nucleotide excision repair replaces entire chunks. For severe double-strand breaks, cells use nonhomologous end joining or homologous recombination to restore the severed code.",
+      "body_vi": "Tế bào triển khai các enzyme chuyên biệt để khắc phục lỗi đơn bazơ thông qua sửa chữa cắt bỏ bazơ (*base excision repair*). Khi bức xạ cực tím tạo ra các biến dạng cồng kềnh, cơ chế sửa chữa cắt bỏ nucleotide sẽ thay thế toàn bộ đoạn. Đối với các đứt gãy sợi kép nghiêm trọng, tế bào dùng phương pháp nối đầu không tương đồng (*nonhomologous end joining*) hoặc tái tổ hợp tương đồng (*homologous recombination*) để khôi phục mã bị cắt đứt.",
+      "heading_fr": "Voies de réparation",
+      "body_fr": "Les cellules déploient des enzymes spécialisées pour corriger les erreurs d'une seule base grâce à la [p:réparation par excision de base]. Lorsque le rayonnement ultraviolet crée des distorsions volumineuses, la réparation par excision de nucléotides remplace des blocs entiers. Pour les cassures double brin graves, les cellules utilisent la jonction d'extrémités non homologues ou la recombinaison homologue pour restaurer le code sectionné.",
+      "heading_de": "Reparaturwege",
+      "body_de": "Zellen setzen spezialisierte Enzyme ein, um Einzelbasenfehler durch [p:Basenexzisionsreparatur] zu beheben. Wenn ultraviolette Strahlung sperrige Verzerrungen erzeugt, ersetzt die Nukleotidexzisionsreparatur ganze Abschnitte. Bei schwerwiegenden Doppelstrangbrüchen nutzen Zellen das nicht-homologe Endjoining oder die homologe Rekombination, um den getrennten Code wiederherzustellen.",
+      "heading_es": "Vías de reparación",
+      "body_es": "Las células despliegan enzimas especializadas para corregir errores de una sola base mediante [p:la reparación por escisión de bases]. Cuando la radiación ultravioleta crea distorsiones voluminosas, la reparación por escisión de nucleótidos reemplaza fragmentos enteros. Para roturas graves de doble cadena, las células utilizan la unión de extremos no homólogos o la recombinación homóloga para restaurar el código roto."
+    },
+    {
+      "heading_en": "Gene Editing",
+      "heading_vi": "Chỉnh Sửa Gene",
+      "body_en": "In 1994, Maria Jasin showed that intentionally breaking DNA strands makes homologous recombination vastly more efficient for inserting new genes. The discovery of CRISPR-Cas later allowed researchers to make cuts anywhere in the genome using guiding RNA. More recently, base editing lets scientists alter single nucleotides without breaking the strand.",
+      "body_vi": "Vào năm 1994, Maria Jasin chứng minh rằng việc chủ động bẻ gãy các sợi DNA giúp quá trình tái tổ hợp tương đồng hiệu quả hơn nhiều khi chèn gene mới. Phát hiện về CRISPR-Cas sau đó cho phép các nhà nghiên cứu cắt ở bất kỳ đâu trong bộ gene nhờ RNA dẫn đường. Gần đây hơn, chỉnh sửa bazơ (*base editing*) giúp các nhà khoa học thay đổi từng nucleotide đơn lẻ mà không cần bẻ gãy sợi.",
+      "heading_fr": "Édition génétique",
+      "body_fr": "En 1994, Maria Jasin a démontré que casser intentionnellement les brins d'ADN rend la recombinaison homologue beaucoup plus efficace pour insérer de nouveaux gènes. La découverte de CRISPR-Cas a ensuite permis aux chercheurs de couper n'importe où dans le génome à l'aide d'ARN guide. Plus récemment, l'édition de bases permet aux scientifiques de modifier des nucléotides uniques sans casser le brin.",
+      "heading_de": "Genbearbeitung",
+      "body_de": "Im Jahr 1994 zeigte Maria Jasin, dass das gezielte Aufbrechen von DNA-Strängen die homologe Rekombination zum Einfügen neuer Gene enorm effizient macht. Die Entdeckung von CRISPR-Cas ermöglichte es Forschern später, mithilfe von steuernder RNA Schnitte an beliebigen Stellen des Genoms vorzunehmen. In jüngerer Zeit ermöglicht die Basenbearbeitung Wissenschaftlern, einzelne Nukleotide zu verändern, ohne den Strang zu durchtrennen.",
+      "heading_es": "Edición genética",
+      "body_es": "En 1994, Maria Jasin demostró que romper intencionalmente las cadenas de ADN hace que la recombinación homóloga sea mucho más eficiente para insertar nuevos genes. El posterior descubrimiento de CRISPR-Cas permitió a los investigadores hacer cortes en cualquier parte del genoma utilizando ARN guía. Más recientemente, la edición de bases permite a los científicos alterar nucleótidos individuales sin romper la cadena."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "Quanta Magazine (2026)",
+      "url": "https://www.quantamagazine.org/the-incredible-elegant-dna-repair-system-makes-gene-editing-work-20261123"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1675636999417-316a0954a7f0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1675636999417-316a0954a7f0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "Shubham Dhage",
+    "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/pU5l7stLmno",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/pU5l7stLmno/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA"
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "Annie Melchor November 23",
+      "2026"
+    ],
+    "originalTitle": "The Incredible, Elegant DNA Repair System Makes Gene Editing Work",
+    "originalUrl": "https://www.quantamagazine.org/the-incredible-elegant-dna-repair-system-makes-gene-editing-work-20261123",
+    "publisher": "Quanta Magazine",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Identify a target genetic disease discussed in recent scientific literature",
+      "Research which specific DNA repair pathway the mutation affects",
+      "Examine how current gene editing tools approach that specific repair mechanism"
+    ],
+    "vi": [
+      "Xác định một bệnh di truyền mục tiêu được thảo luận trong tài liệu khoa học gần đây",
+      "Nghiên cứu xem đột biến ảnh hưởng đến con đường sửa chữa DNA cụ thể nào",
+      "Khám phá cách các công cụ chỉnh sửa gene hiện tại tiếp cận cơ chế sửa chữa đặc thù đó"
+    ],
+    "fr": [
+      "Identifier une maladie génétique cible abordée dans la littérature scientifique récente",
+      "Rechercher quelle voie spécifique de réparation de l'ADN la mutation affecte",
+      "Examiner comment les outils actuels d'édition génétique abordent ce mécanisme de réparation spécifique"
+    ],
+    "de": [
+      "Identifiziere eine genetische Zielkrankheit aus der aktuellen wissenschaftlichen Literatur",
+      "Erforsche, welchen spezifischen DNA-Reparaturweg die Mutation betrifft",
+      "Untersuche, wie aktuelle Genbearbeitungswerkzeuge diesen spezifischen Reparaturmechanismus nutzen"
+    ],
+    "es": [
+      "Identifica una enfermedad genética objetivo analizada en la literatura científica reciente",
+      "Investiga qué vía específica de reparación del ADN afecta la mutación",
+      "Examina cómo las herramientas actuales de edición genética abordan ese mecanismo de reparación específico"
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1675636999417-316a0954a7f0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1675636999417-316a0954a7f0?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/pU5l7stLmno",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/pU5l7stLmno/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NHx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1644378128776-8c41838abc7e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1644378128776-8c41838abc7e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "8machine _",
+      "authorUrl": "https://unsplash.com/@8machine_?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/6eTpcfFzJjE",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/6eTpcfFzJjE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1675636999409-b9cbdf84448f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1675636999409-b9cbdf84448f?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/zJkWDcbHli0",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/zJkWDcbHli0/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8M3x8VGhlJTIwTmF0dXJhbCUyMEROQSUyMFJlcGFpciUyMFN5c3RlbSUyMFBvd2VyaW5nJTIwR2VuZSUyMEVkaXRpbmclMjBzY2llbmNlfGVufDF8MXx8fDE3OTU1ODQ0OTh8MA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1675636999517-b79d764a459e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTF8fFRoZSUyME5hdHVyYWwlMjBETkElMjBSZXBhaXIlMjBTeXN0ZW0lMjBQb3dlcmluZyUyMEdlbmUlMjBFZGl0aW5nJTIwc2NpZW5jZXxlbnwxfDF8fHwxNzk1NTg0NDk4fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1675636999517-b79d764a459e?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTF8fFRoZSUyME5hdHVyYWwlMjBETkElMjBSZXBhaXIlMjBTeXN0ZW0lMjBQb3dlcmluZyUyMEdlbmUlMjBFZGl0aW5nJTIwc2NpZW5jZXxlbnwxfDF8fHwxNzk1NTg0NDk4fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Shubham Dhage",
+      "authorUrl": "https://unsplash.com/@theshubhamdhage?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/CGgWMNvhtj4",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/CGgWMNvhtj4/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTF8fFRoZSUyME5hdHVyYWwlMjBETkElMjBSZXBhaXIlMjBTeXN0ZW0lMjBQb3dlcmluZyUyMEdlbmUlMjBFZGl0aW5nJTIwc2NpZW5jZXxlbnwxfDF8fHwxNzk1NTg0NDk4fDA"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAADwAwCdASoQABwAPu1iqk2ppaQiMAgBMB2JaAABHuqz8/QCzDOj4xbyAP7+SE53uj9tqXeKr+I6SpaqoEy1/c/2WMzV1WCOb+gwz5XJa+vKJe9bPinxxkysMMHZ11h/97+RVLNIhg9eiZ+ARgRl7xJkNNheRcySaKM1Edg4KlBAAA==",
+  "dominant": "#171e2b",
+  "glossary": {
+    "en": {
+      "dna": "The molecule containing genetic instructions for living organisms.",
+      "double helix": "The twisted ladder structure of DNA.",
+      "molecular biologist": "A scientist studying biological activity at the molecular level.",
+      "enzymes": "Proteins that speed up chemical reactions in the body.",
+      "base excision repair": "A cellular pathway fixing single-base errors in DNA.",
+      "ultraviolet radiation": "Invisible rays from the sun that can damage skin cells.",
+      "nucleotide excision repair": "A pathway replacing bulky DNA distortions caused by UV light.",
+      "homologous recombination": "A mechanism repairing severe double-strand breaks in DNA.",
+      "crispr-cas": "A technology used to edit genes by cutting DNA precisely.",
+      "genome": "The complete set of genetic material in an organism.",
+      "base editing": "A technique altering single nucleotides without breaking the strand."
+    },
+    "vi": {
+      "dna": "Phân tử mang mã di truyền của mọi sinh vật sống.",
+      "tế bào": "Đơn vị cấu tạo cơ bản của mọi sinh vật.",
+      "sinh học phân tử": "Ngành khoa học nghiên cứu các cơ sở phân tử của sinh học.",
+      "enzyme": "Chất xúc tác sinh học thúc đẩy các phản ứng hóa học.",
+      "bức xạ cực tím": "Tia sáng mặt trời có thể gây hại cho DNA tế bào.",
+      "nucleotide": "Đơn vị cơ bản cấu thành nên phân tử DNA.",
+      "crispr-cas": "Công nghệ cắt và chỉnh sửa gene đột phá.",
+      "rna": "Phân tử quan trọng tham gia vào quá trình tổng hợp protein.",
+      "chỉnh sửa bazơ": "Kỹ thuật thay đổi từng nucleotide đơn lẻ trên DNA.",
+      "gene": "Đoạn DNA mang thông tin di truyền."
+    },
+    "fr": {
+      "adn": "Molécule portant l'information génétique des êtres vivants.",
+      "biologiste moléculaire": "Scientifique étudiant la biologie au niveau moléculaire.",
+      "double hélice": "Structure tridimensionnelle caractéristique de la molécule d'ADN.",
+      "enzymes": "Protéines catalysant des réactions biochimiques dans les cellules.",
+      "rayonnement ultraviolet": "Rayonnement électromagnétique nocif pour l'ADN.",
+      "recombinaison homologue": "Mécanisme de réparation et d'échange d'ADN entre chromosomes.",
+      "génome": "Ensemble du matériel génétique d'un organisme.",
+      "nucléotides": "Unités de base constituant les acides nucléiques ADN et ARN."
+    },
+    "de": {
+      "doppelhelix": "Die spiralförmige Struktur der DNA.",
+      "enzyme": "Proteine, die biochemische Reaktionen in Zellen steuern.",
+      "nukleotidexzisionsreparatur": "Ein Reparaturmechanismus für große DNA-Schäden.",
+      "doppelstrangbrüche": "Schäden, bei denen beide Stränge der DNA durchtrennt sind.",
+      "homologe rekombination": "Ein präziser Weg zur Reparatur von DNA-Doppelstrangbrüchen.",
+      "crispr-cas": "Ein Werkzeug zur präzisen Veränderung des Genoms.",
+      "rna": "Eine Nukleinsäure, die genetische Information überträgt.",
+      "basenbearbeitung": "Methode zur Änderung einzelner Nukleotide ohne Strangbruch."
+    },
+    "es": {
+      "biólogo molecular": "Científico que estudia los procesos biológicos a nivel molecular.",
+      "doble hélice": "Estructura en forma de espiral doble que adopta la molécula de ADN.",
+      "enzimas": "Proteínas que actúan como catalizadores acelerando reacciones químicas en las células.",
+      "reparación por escisión de bases": "Mecanismo celular que corrige daños menores en bases individuales del ADN.",
+      "radiación ultravioleta": "Tipo de energía electromagnética invisible que proviene del sol y daña el ADN.",
+      "recombinación homóloga": "Proceso de intercambio de material genético entre secuencias de ADN similares.",
+      "crispr-cas": "Tecnología precisa que permite cortar y modificar secuencias de ADN.",
+      "arn guía": "Molécula de ARN que dirige la enzima de corte hacia una secuencia concreta."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-25T05:27:56.157Z"
+}
