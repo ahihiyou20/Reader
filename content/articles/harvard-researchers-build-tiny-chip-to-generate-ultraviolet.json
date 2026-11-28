@@ -1,0 +1,249 @@
+{
+  "slug": "harvard-researchers-build-tiny-chip-to-generate-ultraviolet",
+  "status": "published",
+  "previewUrl": "https://reader-xtm.pages.dev/preview?slug=harvard-researchers-build-tiny-chip-to-generate-ultraviolet",
+  "category": "technology",
+  "tags": [
+    "quantum computing",
+    "optics",
+    "nanotechnology",
+    "physics"
+  ],
+  "title": {
+    "en": "Harvard researchers build tiny chip to generate ultraviolet light",
+    "vi": "Nhóm nghiên cứu Harvard chế tạo chip nhỏ tạo ra tia cực tím",
+    "fr": "Des chercheurs de Harvard créent une puce miniature pour générer de la lumière ultraviolette",
+    "de": "Harvard-Forscher bauen winzigen Chip zur Erzeugung von ultraviolettem Licht",
+    "es": "Investigadores de Harvard construyen un diminuto chip para generar luz ultravioleta"
+  },
+  "hook": {
+    "en": "Ultraviolet light powers disinfection and computer chip manufacturing. Shrinking these light sources onto a chip has challenged scientists due to severe power loss inside optical channels. Now, a Harvard-led team has built a microscopic photonic device {source} that produces significantly more ultraviolet power than older comparable designs.",
+    "vi": "Tia cực tím là yếu tố cốt lõi trong việc khử trùng và sản xuất chip máy tính. Việc thu nhỏ các nguồn sáng này lên một con chip từng là thách thức lớn đối với các nhà khoa học do tổn thất năng lượng nghiêm trọng trong các kênh quang học. Giờ đây, một nhóm do Harvard dẫn đầu đã chế tạo một thiết bị quang tử vi mô {source} tạo ra lượng năng lượng tia cực tím lớn hơn nhiều so với các thiết kế tương đương trước đây.",
+    "fr": "La lumière ultraviolette alimente la désinfection et la fabrication de puces informatiques. Réduire ces sources lumineuses sur une puce a posé un défi aux scientifiques en raison de pertes de puissance sévères dans les canaux optiques. Désormais, une équipe dirigée par Harvard a construit un dispositif photonique microscopique {source} qui produit nettement plus de puissance ultraviolette que les anciens modèles comparables.",
+    "de": "Ultraviolettes Licht treibt Desinfektion und Computerchip-Fertigung an. Diese Lichtquellen auf einen Chip zu verkleinern, stellte Wissenschaftler aufgrund massiver Leistungsverluste in optischen Kanälen vor große Herausforderungen. Nun hat ein von Harvard geleitetes Team ein mikroskopisches photonisches Gerät {source} gebaut, das deutlich mehr Ultraviolettleistung erzeugt als vergleichbare ältere Designs.",
+    "es": "La luz ultravioleta alimenta la desinfección y la fabricación de chips informáticos. Reducir estas fuentes de luz en un chip ha desafiado a los científicos debido a la severa pérdida de potencia dentro de los canales ópticos. Ahora, un equipo liderado por Harvard ha construido un dispositivo fotónico microscópico {source} que produce mucha más potencia ultravioleta que diseños comparables anteriores."
+  },
+  "sections": [
+    {
+      "heading_en": "Turning red light into ultraviolet",
+      "heading_vi": "Biến đổi ánh sáng đỏ thành tia cực tím",
+      "body_en": "Instead of pushing ultraviolet light directly through microscopic channels, researchers designed a device that generates ultraviolet light from red light inside the chip. This relies on frequency upconversion within a thin-film lithium niobate crystal. Two photons of red light combine to form a single ultraviolet photon with higher energy, as the material changes light frequencies effectively.",
+      "body_vi": "Thay vì truyền trực tiếp tia cực tím qua các kênh vi mô, các nhà nghiên cứu đã thiết kế một thiết bị tạo ra tia cực tím từ ánh sáng đỏ ngay bên trong con chip. Quá trình này dựa trên sự chuyển đổi tần số (*frequency upconversion*) bên trong một tinh thể lithium niobate màng mỏng. Hai photon ánh sáng đỏ kết hợp lại để tạo thành một photon tia cực tím duy nhất có năng lượng cao hơn, do vật liệu này thay đổi tần số ánh sáng rất hiệu quả.",
+      "heading_fr": "Transformer la lumière rouge en ultraviolet",
+      "body_fr": "Au lieu de faire passer la lumière ultraviolette directement à travers des canaux microscopiques, les chercheurs ont conçu un dispositif qui génère de la lumière ultraviolette à partir de lumière rouge à l'intérieur de la puce. Cela repose sur la conversion ascendante de fréquence dans un cristal de niobate de lithium en couche mince. Deux photons de lumière rouge se combinent pour former un unique photon ultraviolet doté d'une énergie supérieure, à mesure que le matériau modifie efficacement les fréquences lumineuses.",
+      "heading_de": "Rotes Licht in Ultraviolett umwandeln",
+      "body_de": "Anstatt ultraviolettes Licht direkt durch mikroskopische Kanäle zu leiten, entwarfen Forscher ein Gerät, das ultraviolettes Licht im Inneren des Chips aus rotem Licht erzeugt. Dies beruht auf Frequenzkonversion in einem Dünnschicht-Lithiumniobat-Kristall. Zwei Photonen roten Lichts verbinden sich zu einem einzigen ultravioletten Photon mit höherer Energie, da das Material Lichtfrequenzen effektiv verändert.",
+      "heading_es": "Convertir luz roja en ultravioleta",
+      "body_es": "En lugar de empujar la luz ultravioleta directamente a través de canales microscópicos, los investigadores diseñaron un dispositivo que genera luz ultravioleta a partir de luz roja dentro del chip. Esto se basa en la conversión ascendente de frecuencia dentro de un cristal de niobio de litio en película delgada. Dos fotones de luz roja se combinan para formar un solo fotón ultravioleta con mayor energía, ya que el material cambia las frecuencias de la luz de manera efectiva."
+    },
+    {
+      "heading_en": "Overcoming manufacturing barriers",
+      "heading_vi": "Vượt qua rào cản sản xuất",
+      "body_en": "For efficient conversion, crystal domains must be repeatedly reversed at precise intervals along the waveguide. Previous methods forced a compromise between poling the film beforehand and etching waveguides first. To eliminate this tradeoff, the team developed sidewall poling, placing metal structures like tiny fingers directly alongside the etched waveguide with about 50-nanometer accuracy.",
+      "body_vi": "Để chuyển đổi hiệu quả, các miền tinh thể phải được đảo chiều liên tục ở các khoảng cách chính xác dọc theo ống dẫn sóng. Các phương pháp trước đây buộc phải thỏa hiệp giữa việc phân cực màng trước và khắc ống dẫn sóng trước. Để loại bỏ sự đánh đổi này, nhóm nghiên cứu đã phát triển kỹ thuật phân cực thành bên (*sidewall poling*), đặt các cấu trúc kim loại giống như ngón tay nhỏ trực tiếp dọc theo ống dẫn sóng đã khắc với độ chính xác khoảng 50 nanomet.",
+      "heading_fr": "Surmonter les obstacles de fabrication",
+      "body_fr": "Pour une conversion efficace, les domaines cristallins doivent être inversés de manière répétée à des intervalles précis le long du guide d'ondes. Les méthodes précédentes imposaient un compromis entre la polarisation préalable du film et la gravure des guides d'ondes. Pour éliminer ce compromis, l'équipe a mis au point la polarisation par les flancs, plaçant des structures métalliques telles de minuscules doigts directement le long du guide d'ondes gravé avec une précision d'environ 50 nanomètres.",
+      "heading_de": "Fertigungshindernisse überwinden",
+      "body_de": "Für eine effiziente Konversion müssen Kristalldomänen entlang des Wellenleiters in präzisen Abständen wiederholt umgepolt werden. Bisherige Methoden erzwangen einen Kompromiss zwischen dem vorherigen Umpolen des Films und dem anschließenden Ätzen von Wellenleitern. Um diesen Konflikt zu beseitigen, entwickelte das Team die Seitenwandpolung, bei der Metallstrukturen wie winzige Finger direkt neben dem geätzten Wellenleiter mit einer Genauigkeit von etwa 50 Nanometern platziert werden.",
+      "heading_es": "Superar las barreras de fabricación",
+      "body_es": "Para una conversión eficiente, los dominios cristalinos deben invertirse repetidamente a intervalos precisos a lo largo de la guía de onda. Los métodos anteriores obligaban a un compromiso entre polar la película de antemano y grabar las guías de onda primero. Para eliminar este dilema, el equipo desarrolló la polarización lateral, colocando estructuras metálicas como pequeños dedos directamente junto a la guía de onda grabada con una precisión de unos 50 nanómetros."
+    },
+    {
+      "heading_en": "Powering quantum computers",
+      "heading_vi": "Cung cấp năng lượng cho máy tính lượng tử",
+      "body_en": "The resulting device generated 4.2 milliwatts of ultraviolet power at a wavelength of 390 nanometers, representing approximately 120 times the output power of previous devices. This milliwatt-level output supports trapped-ion quantum computers, which use charged atoms and require near-ultraviolet light. The technology also benefits ultra-precise atomic clocks and greenhouse gas sensors.",
+      "body_vi": "Thiết bị tạo ra 4,2 milliwatt công suất tia cực tím ở bước sóng 390 nanomet, tương đương khoảng 120 lần công suất đầu ra của các thiết bị trước đó. Mức công suất này hỗ trợ máy tính lượng tử ion bẫy (*trapped-ion quantum computers*), vốn sử dụng các nguyên tử mang điện và cần ánh sáng gần vùng cực tím. Công nghệ này cũng mang lại lợi ích cho đồng hồ nguyên tử cực kỳ chính xác và cảm biến khí nhà kính.",
+      "heading_fr": "Alimenter les ordinateurs quantiques",
+      "body_fr": "Le dispositif obtenu a généré 4,2 milliwatts de puissance ultraviolette à une longueur d'onde de 390 nanomètres, ce qui représente environ 120 fois la puissance de sortie des dispositifs précédents. Cette sortie au niveau du milliwatt prend en charge les ordinateurs quantiques à ions piégés, qui utilisent des atomes chargés et nécessitent de la lumière proche des ultraviolets. Cette technologie profite également aux horloges atomiques ultra-précises et aux capteurs de gaz à effet de serre.",
+      "heading_de": "Quantencomputer mit Energie versorgen",
+      "body_de": "Das resultierende Gerät erzeugte 4,2 Milliwatt Ultraviolettleistung bei einer Wellenlänge von 390 Nanometern, was etwa dem 120-fachen der Ausgangsleistung früherer Geräte entspricht. Diese Ausgabe im Milliwatt-Bereich unterstützt Ionenfallen-Quantencomputer, die geladene Atome verwenden und nahes ultraviolettes Licht benötigen. Die Technologie kommt zudem ultrapräzisen Atomuhren und Treibhausgassensoren zugute.",
+      "heading_es": "Potenciar computadoras cuánticas",
+      "body_es": "El dispositivo resultante generó 4,2 miliwatios de potencia ultravioleta a una longitud de onda de 390 nanómetros, lo que representa aproximadamente 120 veces la potencia de salida de dispositivos anteriores. Esta producción a nivel de miliwatios admite computadoras cuánticas de iones atrapados, que utilizan átomos cargados y requieren luz cercana al ultravioleta. La tecnología también beneficia a los relojes atómicos ultraprecisos y a los sensores de gases de efecto invernadero."
+    }
+  ],
+  "references": [
+    {
+      "id": "source",
+      "label": "ScienceDaily (2026)",
+      "url": "https://www.sciencedaily.com/releases/2026/11/261126063333.htm"
+    }
+  ],
+  "cover": {
+    "type": "image",
+    "url": "https://images.unsplash.com/photo-1574342117909-171cd306938d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+    "wide": "https://images.unsplash.com/photo-1574342117909-171cd306938d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+    "provider": "unsplash",
+    "author": "CDC",
+    "authorUrl": "https://unsplash.com/@cdc?utm_source=pagemoor&utm_medium=referral",
+    "license": "Unsplash License",
+    "sourceUrl": "https://unsplash.com/photos/dJj4EyMGupE",
+    "unsplashDownloadLocation": "https://api.unsplash.com/photos/dJj4EyMGupE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA",
+    "video": {
+      "url": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795841642/pagemoor/covers/harvard-researchers-build-tiny-chip-to-generate-ultraviolet-84086.mp4",
+      "wide": "https://res.cloudinary.com/qra2rnyh/video/upload/v1795841643/pagemoor/covers/harvard-researchers-build-tiny-chip-to-generate-ultraviolet-84086-wide.mp4",
+      "credit": "Pixabay",
+      "source": "https://pixabay.com/videos/id-84086/"
+    }
+  },
+  "origin": {
+    "group": 5,
+    "license": "Copyright",
+    "authors": [
+      "ScienceDaily"
+    ],
+    "originalTitle": "Harvard’s tiny UV light chip could help shrink quantum computers",
+    "originalUrl": "https://www.sciencedaily.com/releases/2026/11/261126063333.htm",
+    "publisher": "ScienceDaily",
+    "changes": [
+      "summarised by Reader"
+    ]
+  },
+  "applySteps": {
+    "en": [
+      "Review current limitations in optical waveguide power loss.",
+      "Examine thin-film lithium niobate properties for frequency conversion.",
+      "Assess potential applications in trapped-ion quantum computing."
+    ],
+    "vi": [
+      "Xem xét các hạn chế hiện tại về tổn thất năng lượng trong ống dẫn sóng quang học.",
+      "Kiểm tra các đặc tính của lithium niobate màng mỏng đối với quá trình chuyển đổi tần số.",
+      "Đánh giá các ứng dụng tiềm năng trong điện toán lượng tử ion bẫy."
+    ],
+    "fr": [
+      "Examiner les limites actuelles des pertes de puissance dans les guides d'ondes optiques.",
+      "Étudier les propriétés du niobate de lithium en couche mince pour la conversion de fréquence.",
+      "Évaluer les applications potentielles dans l'informatique quantique à ions piégés."
+    ],
+    "de": [
+      "Aktuelle Einschränkungen bei Leistungsverlusten in optischen Wellenleitern überprüfen.",
+      "Eigenschaften von Dünnschicht-Lithiumniobat für die Frequenzkonversion untersuchen.",
+      "Mögliche Anwendungen in der Ionenfallen-Quantenverarbeitung bewerten."
+    ],
+    "es": [
+      "Revisar las limitaciones actuales en la pérdida de potencia de las guías de onda ópticas.",
+      "Examinar las propiedades del niobio de litio en película delgada para la conversión de frecuencia.",
+      "Evaluar aplicaciones potenciales en la computación cuántica de iones atrapados."
+    ]
+  },
+  "coverCandidates": [
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1574342117909-171cd306938d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1574342117909-171cd306938d?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "CDC",
+      "authorUrl": "https://unsplash.com/@cdc?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/dJj4EyMGupE",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/dJj4EyMGupE/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8N3x8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1621075019692-77dae7e382b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1621075019692-77dae7e382b3?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "FlyD",
+      "authorUrl": "https://unsplash.com/@flyd2069?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/BOlXftwQTvU",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/BOlXftwQTvU/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8NXx8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1606329287454-bb0c3526731b?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1606329287454-bb0c3526731b?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "mohsen ameri",
+      "authorUrl": "https://unsplash.com/@mohsenamerri?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/hCEyr22iHxY",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/hCEyr22iHxY/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8OXx8SGFydmFyZCUyMHJlc2VhcmNoZXJzJTIwYnVpbGQlMjB0aW55JTIwY2hpcCUyMHRvJTIwZ2VuZXJhdGUlMjB1bHRyYXZpb2xldCUyMGxpZ2h0JTIwdGVjaG5vbG9neXxlbnwxfDF8fHwxNzk1ODQxMDk1fDA"
+    },
+    {
+      "type": "image",
+      "url": "https://images.unsplash.com/photo-1692440356236-65b7646c9c32?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fEhhcnZhcmQlMjByZXNlYXJjaGVycyUyMGJ1aWxkJTIwdGlueSUyMGNoaXAlMjB0byUyMGdlbmVyYXRlJTIwdWx0cmF2aW9sZXQlMjBsaWdodCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTg0MTA5NXww&ixlib=rb-4.1.0&w=1080&h=1920&fit=crop&crop=entropy&q=74&fm=webp",
+      "wide": "https://images.unsplash.com/photo-1692440356236-65b7646c9c32?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fEhhcnZhcmQlMjByZXNlYXJjaGVycyUyMGJ1aWxkJTIwdGlueSUyMGNoaXAlMjB0byUyMGdlbmVyYXRlJTIwdWx0cmF2aW9sZXQlMjBsaWdodCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTg0MTA5NXww&ixlib=rb-4.1.0&w=2560&h=1440&fit=crop&crop=entropy&q=80&fm=webp",
+      "provider": "unsplash",
+      "author": "Cai Fang",
+      "authorUrl": "https://unsplash.com/@caipod?utm_source=pagemoor&utm_medium=referral",
+      "license": "Unsplash License",
+      "sourceUrl": "https://unsplash.com/photos/PO8BqIFZp5I",
+      "unsplashDownloadLocation": "https://api.unsplash.com/photos/PO8BqIFZp5I/download?ixid=M3wxMTM0MzIzfDB8MXxzZWFyY2h8MTB8fEhhcnZhcmQlMjByZXNlYXJjaGVycyUyMGJ1aWxkJTIwdGlueSUyMGNoaXAlMjB0byUyMGdlbmVyYXRlJTIwdWx0cmF2aW9sZXQlMjBsaWdodCUyMHRlY2hub2xvZ3l8ZW58MXwxfHx8MTc5NTg0MTA5NXww"
+    }
+  ],
+  "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwBACdASoQABwAPu1iqU2ppaOiMAgBMB2JbACdMoAlrBObE/mQrfjrklsXxywAAP7tCEysNspO+uLXA955kA+KOGRQnKvV7xKv0M2OIsvHiObiILczdefoydvGA3vvYxdolLr2RZcvtL2Qy9wFPj1YegDU1e4KtuGkRqM8mCyYlihPnBDPn2Mxlwe2GNilgmwqvYUAYfgK/gS1+9pFDK3UlNF6QjKYFeffprGKym7KD2Wp93+FUMZtAAA=",
+  "dominant": "#213c4c",
+  "glossary": {
+    "en": {
+      "ultraviolet": "Invisible light with wavelengths shorter than visible light.",
+      "photonic device": "A component that generates and manipulates light waves.",
+      "frequency upconversion": "Process combining two photons to create one higher-energy photon.",
+      "thin-film lithium niobate": "A crystalline material used for efficient optical frequency conversion.",
+      "photons": "Elementary particles representing the basic unit of light.",
+      "waveguide": "A microscopic channel designed to direct light waves.",
+      "sidewall poling": "A novel manufacturing technique placing metal fingers beside waveguides.",
+      "nanometers": "Units of length equal to one billionth of a meter.",
+      "wavelength": "The spatial period of a periodic wave in light.",
+      "trapped-ion quantum computers": "Advanced computers utilizing charged atoms controlled by lasers.",
+      "atomic clocks": "Extremely precise clocks regulated by atomic frequency standards."
+    },
+    "vi": {
+      "tia cực tím": "Bức xạ điện từ có bước sóng ngắn hơn ánh sáng nhìn thấy, dùng để khử trùng và sản xuất chip.",
+      "quang tử vi mô": "Lĩnh vực hoặc thiết bị nghiên cứu quang học kích thước vi mô tích hợp trên chip.",
+      "frequency upconversion": "Quá trình chuyển đổi tần số ánh sáng thấp thành tần số cao hơn.",
+      "lithium niobate": "Vật liệu tinh thể có tính chất quang học đặc biệt dùng trong chế tạo thiết bị quang tử.",
+      "photon": "Hạt cơ bản tạo ra ánh sáng và mang năng lượng điện từ.",
+      "ống dẫn sóng": "Cấu trúc vật lý dẫn truyền sóng điện từ hoặc ánh sáng theo một hướng nhất định.",
+      "sidewall poling": "Kỹ thuật phân cực thành bên giúp tối ưu hóa quá trình biến đổi ánh sáng.",
+      "nanomet": "Đơn vị đo chiều dài bằng một phần tỷ mét.",
+      "milliwatt": "Đơn vị đo công suất bằng một phần nghìn watt.",
+      "trapped-ion quantum computers": "Máy tính lượng tử sử dụng các ion bị bẫy bởi điện trường để tính toán.",
+      "đồng hồ nguyên tử": "Thiết bị đo thời gian cực kỳ chính xác dựa trên tần số cộng hưởng của nguyên tử."
+    },
+    "fr": {
+      "ultraviolette": "Rayonnement électromagnétique dont la longueur d'onde est plus courte que celle de la lumière visible.",
+      "photonique": "Domaine scientifique et technique qui traite de la génération et du contrôle de la lumière.",
+      "niobate de lithium": "Matériau cristallin utilisé en optique pour ses propriétés électro-optiques et non linéaires.",
+      "photons": "Particules élémentaires constituant la lumière et porteuses de l'énergie électromagnétique.",
+      "guide d'ondes": "Structure physique qui guide les ondes électromagnétiques avec de faibles pertes.",
+      "nanomètres": "Unités de mesure de longueur équivalentes à un milliardième de mètre.",
+      "milliwatts": "Unités de mesure de puissance électrique équivalentes à un millième de watt.",
+      "ions piégés": "Atomes chargés électriquement et maintenus dans un espace restreint par des champs électromagnétiques."
+    },
+    "de": {
+      "lithiumniobat": "Ein synthetischer Kristall mit besonderen optischen Eigenschaften, der hier für die Frequenzkonversion genutzt wird.",
+      "frequenzkonversion": "Die Umwandlung von Lichtfrequenzen, bei der aus zwei Photonen niedrigerer Energie ein Photon höherer Energie entsteht.",
+      "photonen": "Lichtteilchen, die als elementare Einheiten des Lichts und der elektromagnetischen Strahlung gelten.",
+      "wellenleiter": "Eine mikroskopische Struktur zur gezielten Führung von Lichtwellen auf dem optischen Chip.",
+      "seitenwandpolung": "Ein präzises Herstellungsverfahren, bei dem Metallstrukturen direkt neben dem geätzten Wellenleiter angebracht werden.",
+      "ionenfallen-quantencomputer": "Fortschrittliche Computer, die geladene Atome in Fallen festhalten und für Quantenberechnungen nahes Ultraviolettlicht benötigen.",
+      "nanometer": "Eine Maßeinheit für Länge, die einem Milliardstel Meter entspricht und hier für Wellenlängen genutzt wird.",
+      "milliwatt": "Eine Maßeinheit für elektrische oder optische Leistung, die einem Tausendstel Watt entspricht."
+    },
+    "es": {
+      "ultravioleta": "Radiación electromagnética con una longitud de onda más corta que la luz visible.",
+      "dispositivo fotónico": "Componente físico que genera, guía y manipula la luz a nivel microscópico.",
+      "conversión ascendente": "Proceso óptico donde se combinan fotones de menor energía para crear fotones de mayor energía.",
+      "niobio de litio": "Material cristalino ferroeléctrico empleado frecuentemente en aplicaciones ópticas y láseres avanzados.",
+      "guía de onda": "Estructura física que guía ondas electromagnéticas con una mínima pérdida de energía.",
+      "nanómetros": "Unidad de medida de longitud equivalente a la milmillonésima parte de un metro.",
+      "iones atrapados": "Tecnología de computación cuántica que confina partículas cargadas mediante campos electromagnéticos.",
+      "relojes atómicos": "Dispositivos de medición del tiempo extremadamente precisos basados en transiciones atómicas."
+    }
+  },
+  "ai": {
+    "fields": [
+      "en",
+      "vi",
+      "fr",
+      "de",
+      "es",
+      "summary",
+      "keyPoint",
+      "applySteps"
+    ],
+    "reviewed": true,
+    "model": "gemini-3.5-flash-lite"
+  },
+  "publishAt": "2026-11-28T04:41:28.680Z"
+}
